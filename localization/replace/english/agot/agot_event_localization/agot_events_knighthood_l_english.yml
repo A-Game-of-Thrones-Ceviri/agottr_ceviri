@@ -64,7 +64,7 @@
  agot_knighthood.0320.t: "[ROOT.Char.Custom2('RelationToMe', SCOPE.sC('my_relation'))|U]'ım Şövalye ilan edildi!"
  agot_knighthood.0320.desc_same_house: "[ROOT.Char.Custom2('RelationToMe', SCOPE.sC('my_relation'))], [my_relation.GetTitledFirstName]'imin şövalye yapıldığı haberi bana ulaştı! [my_relation.GetSheHe|U], [ROOT.GetCharacter.GetHouse.GetName] Evi'ni çok gururlandırdı."
  agot_knighthood.0320.desc_not_same_house: "[ROOT.Char.Custom2('RelationToMe', SCOPE.sC('my_relation'))], [my_relation.GetTitledFirstName]'imin şövalye ilan edildiği haberi bana ulaştı! [my_relation.GetSheHe|U] hepimizi çok gururlandırdı."
- agot_knighthood.0320.a: "[my_relation.GetHerHim] için iyi!"
+ agot_knighthood.0320.a: "Tebrikler!"
   
   ################## 
   # Toast Tooltips # 
@@ -74,15 +74,15 @@
  agot_knighthood.decrease_progtoknighthood_toast.tt: "Şövalyelik ilerlemeniz azalır."
   
  agot_knighthood.0021.a_toast: "Beylik Verildi"
- agot_knighthood.0021.a_toast.tt: "[potential_knight.GetNamePossessive] beyefendisi oldun."
+ agot_knighthood.0021.a_toast.tt: "[potential_knight.GetNamePossessive] yaveri oldun."
  agot_knighthood.0021.b_toast: "[nearby_knight.GetName] Yanıtlıyor"
  agot_knighthood.0021.b_toast.tt: "[nearby_knight.GetName] isteğinizi reddetti."
   
   ##Used in the Squire Interaction (Via char menu) 
- agot_knighthood_squire_offer_accept_toast: "Squirehood Teklifi Kabul Edildi"
- agot_knighthood_squire_offer_accept_toast.tt: "Bir Squire kazandınız!"
- agot_knighthood_squire_offer_reject_toast: "Squirehood Teklifi Reddedildi"
- agot_knighthood_squire_offer_reject_toast.tt: "Beyefendilik teklifiniz #N reddedildi!#!"
+ agot_knighthood_squire_offer_accept_toast: "Yaverlik Teklifi Kabul Edildi"
+ agot_knighthood_squire_offer_accept_toast.tt: "Bir Yaver kazandınız!"
+ agot_knighthood_squire_offer_reject_toast: "Yaverlik Teklifi Reddedildi"
+ agot_knighthood_squire_offer_reject_toast.tt: "Yaverlik teklifiniz #N reddedildi!#!"
   
   ##Used In the Knighting Interactions (Via char menu) 
  agot_knighthood_made_a_knight_toast: "Birini Şövalye ilan ettin!"
@@ -101,12 +101,12 @@
   # Tournament Events/Promotions # 
   ################################ 
   
- agot_knighthood.0500.t: "Benim Squire'ım, Bir Kazanan"
- agot_knighthood.0500.desc: "Uşağım, [winning_squire.GetName] bir turnuva kazandı! Diğer katılımcılara karşı, [winning_squire.GetSheHe] zirveye [winning_squire.GetHerHis] kadar savaştı ve kazandı.\n\nBöyle bir başarı gerçekten olağanüstü. Sadece #italic uşağın#! şövalyeleri ve diyarın diğer savaşçılarını yenmesi duyulmamış bir şey.\n\nBöyle bir başarı, birinin şövalye olması için yeterli bir sebeptir, bazıları şöyle diyebilir..."
+ agot_knighthood.0500.t: "Yaverim Bir Kazanan"
+ agot_knighthood.0500.desc: "Yaverim, [winning_squire.GetName] bir turnuva kazandı! Diğer katılımcılara karşı, [winning_squire.GetSheHe] zirveye [winning_squire.GetHerHis] kadar savaştı ve kazandı.\n\nBöyle bir başarı gerçekten olağanüstü. Sadece #italic uşağın#! şövalyeleri ve diyarın diğer savaşçılarını yenmesi duyulmamış bir şey.\n\nBöyle bir başarı, birinin şövalye olması için yeterli bir sebeptir, bazıları şöyle diyebilir..."
  agot_knighthood.0500.a: "Evet, [winning_squire.GetNameNoTooltip]'ı şövalye yapacağım!"
- agot_knighthood.0500.a.tt: "Silahtarını şövalye ilan edeceksin."
+ agot_knighthood.0500.a.tt: "Yaverini şövalye ilan edeceksin."
  agot_knighthood.0500.b: "Hayır, kendimizi kaptırmayalım."
- agot_knighthood.0500.b.tt: "Sen, uşağına şövalyelik unvanı vermeyeceksin."
+ agot_knighthood.0500.b.tt: "Sen, yaverine şövalyelik unvanı vermeyeceksin."
   
  agot_knighthood.0501.t: "Şövalyelik"
  agot_knighthood.0501.desc:0 "As I am basking in the glory of being declared the winner of [host.GetNamePossessive] tournament, [my_knight.GetTitledFirstName] approaches me and tells me to kneel.\n\n[my_knight.GetSheHe|U] solemnly draws [my_knight.GetHerHis] sword. As [my_knight.GetSheHe] places [my_knight.GetHerHis] sword on my right shoulder, the cacophony of the tournament celebration subsides. All eyes are on us.\n\n[my_knight.GetSheHe] dutifully begins to speak: "[host.GetNamePossessive] turnuvasının galibi ilan edilmenin ihtişamı içinde güneşlenirken, [my_knight.GetTitledFirstName] yanıma yaklaşıp diz çökmemi söylüyor.\n\n[my_knight.GetSheHe|U] ciddiyetle [my_knight.GetHerHis] kılıcını çekiyor. [my_knight.GetSheHe] [my_knight.GetHerHis] kılıcını sağ omzuma koyduğunda, turnuva kutlamasının kakofonisi diniyor. Tüm gözler üzerimizde.\n\n[my_knight.GetSheHe] görev bilinciyle konuşmaya başlıyor: "[ROOT.GetCharacter.GetFirstNameNoTooltip|V] [ROOT.GetCharacter.GetHouse.GetNameNoTooltip|V], tanrıların ve insanların gözleri önünde, kendilerini savunamayanları savunacağına, tüm kadınları ve çocukları koruyacağına, kaptanlarına, hükümdarına ve kralına itaat edeceğine, gerektiğinde cesurca savaşacağına ve sana verilen diğer görevleri, ne kadar zor, mütevazı veya tehlikeli olursa olsun, yapacağına yemin ediyor musun?"" #NT!

@@ -1,7 +1,7 @@
 ﻿l_english:
   
   # Taming 
- tame_dragon_interaction: "Evcil ejderha" #NT!
+ tame_dragon_interaction: "Evcil Ejderha" #NT!
  tame_dragon_interaction_desc: "[recipient.GetNameNoTooltip]'ı evcilleştirmeye çalışacaksın" #NT!
  tame_dragon_interaction_desc_warning: "[recipient.GetNameNoTooltip]'ı evcilleştirmeye çalışacaksın.\n\n@warning_icon! #warning Bir ejderhayı bağlamadan önce evcilleştirmek son derece risklidir.#!" #NT!
  tame_dragon_no_active_bond_schemes: "[GetScheme('bond_with_dragon_scheme').GetTypeName] [scheme|e]'e sahip değilsiniz" #NT!
@@ -24,7 +24,7 @@
  dragon_beyond_the_wall: "Ejderhalar Duvar'ın ötesine geçmeyecek" #NT!
   
   # Dragon slaying 
- slay_dragon_interaction: "Ejderhayı öldür" #NT!
+ slay_dragon_interaction: "Ejderhayı Öldür" #NT!
  slay_dragon_interaction_desc: "[recipient.GetNameNicknamed]'ı öldürmeye çalışacaksın.\n\n@warning_icon! #warning Bir ejderhayı öldürmeye çalışmak inanılmaz derecede tehlikelidir#!" #NT!
  slay_dragon_notification: "Ejderhayı Öldürme Girişimi" #NT!
  slay_dragon_interaction.found_cave: "[recipient.GetNamePossessiveNoTooltip] inini buldun" #NT!
@@ -36,7 +36,7 @@
   
   # Schemes 
  bond_with_dragon_scheme: "Bu Ejderhayla Bağ Kur" #NT!
- bond_with_dragon_scheme_action: "Bağ ile" #NT!
+ bond_with_dragon_scheme_action: "Bağ kur" #NT!
  bond_with_dragon_scheme_desc: "Bu ejderhayla bağ kurmayı deneyebilirsin" #NT!
  bond_with_dragon_scheme_desc_general: "Bir karakter bu ejderhayla bağını derinleştirmeye çalışabilir" #NT!
  deepen_bond_with_dragon_scheme: "Ejderhanızla Bağınızı Derinleştirin" #NT!
@@ -60,7 +60,7 @@
  SCHEME_BOND_DRAGON_TAMING_CHANCE: "[target.GetFirstNamePossessive] [taming_chance|E]: $VALUE|+0=-+$" #NT!
  BOND_DRAGON_SUCCESS_DESC: "Bu [dragon|E] ile bağ kuracaksınız" #NT!
  DEEPEN_BOND_DRAGON_SUCCESS_DESC: "[GetTrait('dragonrider').GetName(GetNullCharacter)] bağınızın deneyimini #P artıracaksınız#!" #NT!
- SCHEME_BOND_VALYRIAN_BLOOD: "Dragonblood'unuz var: $VALUE|+0=-+$" #NT!
+ SCHEME_BOND_VALYRIAN_BLOOD: "Ejderha Kanı Taşıyorsunuz: $VALUE|+0=-+$" #NT!
  SCHEME_BOND_DYNASTY_LEGACY: "[GetDynastyPerk( 'dragonrider_dynasty_legacy_2' ).GetName]: $VALUE|+0=-+$" #NT!
  SCHEME_EX_DRAGONRIDER: "Zaten bir tane bağladın [dragon|E]: $VALUE|+0=-+$" #NT!
  bonded_with_me: "Benimle bağ kurdu" #NT!
@@ -83,7 +83,7 @@
  gave_egg_for_cradling_notification_desc: "[recipient.GetFirstName]'e [target.GetName] verdiniz." #NT!
  received_egg_for_cradling_notification_title: "[actor.GetTitledFirstName]'dan Ejderha Yumurtası alındı" #NT!
  received_egg_for_cradling_notification_desc: "[actor.GetFirstName] tarafından sana [target.GetName] verildi! Şu anda bu yumurtayı kucağında tutuyorsun." #NT!
- taught_dragonlore_title: "Dragonlore'u öğretti" #NT!
+ taught_dragonlore_title: "Ejderha İlmi'u öğretti" #NT!
  taught_dragonlore_desc: "[recipient.GetName]'a ejderha bilgisini sen öğrettin." #NT!
  taught_dragonlore_received_desc: "Ejderha bilgisini sana [actor.GetFirstName] öğretti." #NT!
  has_no_dragons: "[actor.GetFirstName]'da evcilleştirilmiş veya bağlanmış bir ejderha yok" #NT!
@@ -92,7 +92,7 @@
  agot_instruct_to_conduct_terror_campaign: "Terör Kampanyası Yürüt" #NT!
  agot_instruct_to_conduct_terror_campaign_desc: "[recipient.GetName]'a [recipient.MakeScope.Var('current_dragon').GetCharacter.GetName]'i kullanarak bir Terör Kampanyası yürütmesini söyleyin.\n$conduct_terror_campaign_tooltip$" #NT!
   
- agot_stop_conducting_terror_campaign: "Teröre Son Kampanyası" #NT!
+ agot_stop_conducting_terror_campaign: "Terör Kampanyasını Sonlandır" #NT!
  agot_stop_conducting_terror_campaign_desc: "[recipient.GetName]'a [recipient.GetHerHis] Terör Kampanyasını durdurmasını söyleyin" #NT!
   
  agot_refusing_stop_conducting_terror_campaign_tt: "[recipient.GetFirstName] [recipient.GetHerHis] Terör Kampanyasını durdurmayı çoktan reddetti" #NT!
@@ -101,47 +101,47 @@
  agot_dragon.imprisoned_on_terror_campaign.desc: "[ROOT.Char.GetFirstName] hapsedildi ve artık düşmanlarınızın topraklarını yakmayacak." #NT!
   
   # Teach dragon lore 
- agot_teach_dragonlore: "Dragonlore'u öğret" #NT!
+ agot_teach_dragonlore: "Ejderha İlmi'ni Öğret" #NT!
  agot_teach_dragonlore_desc: "[GetCourtPositionType('head_dragonkeeper_court_position').GetName()]'ınızın yardımıyla, [recipient.GetName]'e ejderha evcilleştirme için hayati önem taşıyan ejderha bilgisini öğreteceksiniz" #NT!
- scheme_taught_dragonlore: "Dragonlore'u öğretti: $VALUE|+0=-+$" #NT!
+ scheme_taught_dragonlore: "Ejderha İlmi'ni öğretti: $VALUE|+0=-+$" #NT!
  scheme_dragonkeeper: "Baş Ejderha Bekçisi: $VALUE|+0=-+$" #NT!
- scheme_pitted_dragon: "[dragonpit|e]'da kafeslenmiş: $VALUE|+0=-+$" #NT!
+ scheme_pitted_dragon: "[dragonpit|e]'nda kafeslenmiş: $VALUE|+0=-+$" #NT!
  scheme_wild_dragon: "[wild_dragon|E]: $VALUE|+0=-+$" #NT!
- agot_teach_dragonlore_increased_dragonlore_preview_tt: "[recipient.GetName], [recipient.GetHerHis] dragonlore'u #P [TopScope.GetValue('hdk_aptitude')]#! artıracaktır" #NT!
- agot_teach_dragonlore_increased_dragonlore_interface_tt: "[recipient.GetName] [recipient.GetHerHis] dragonlore #P [TopScope.GetValue('hdk_aptitude')]#! arttı" #NT!
+ agot_teach_dragonlore_increased_dragonlore_preview_tt: "[recipient.GetName], [recipient.GetHerHis] ejderha ilmini #P [TopScope.GetValue('hdk_aptitude')]#! artıracaktır" #NT!
+ agot_teach_dragonlore_increased_dragonlore_interface_tt: "[recipient.GetName] [recipient.GetHerHis] ejderha ilmi #P [TopScope.GetValue('hdk_aptitude')]#! arttı" #NT!
   
- agot_send_to_dragonpit: "AI Dragonpit'e Gönder" #NT!
+ agot_send_to_dragonpit: "AI Ejderha Çukuru'na Gönder" #NT!
  agot_send_to_dragonpit_desc: "AI [recipient.GetName]'dan [recipient.GetHerHis]'e [dragonpit|E] gönderecek" #NT!
   
- agot_remove_from_dragonpit: "AI Dragonpit'ten kaldırıldı" #NT!
+ agot_remove_from_dragonpit: "AI Ejderha Çukuru'ten kaldırıldı" #NT!
  agot_remove_from_dragonpit_desc: "AI [recipient.GetName]'ı [recipient.GetHerHis]'den [dragonpit|E]'ye çıkaracak" #NT!
   
- agot_grant_dragonpit_permission: "Dragonpit'e Erişim İzni Verin" #NT!
- agot_grant_dragonpit_permission_desc: "[recipient.GetName]'a [dragonpit|e]'inize ve içinde kilitli olan herhangi bir [dragons|e]'ye erişim izni verin. Bu, [recipient.GetNameNoTooltip]'ü o ejderha çukurunun [authorized_tamer|e]'ü yapacaktır." #NT!
+ agot_grant_dragonpit_permission: "Ejderha Çukuru'na Erişim İzni Verin" #NT!
+ agot_grant_dragonpit_permission_desc: "[recipient.GetName]'a [dragonpit|e]'nuza ve içinde kilitli olan herhangi bir [dragons|e]'ye erişim izni verin. Bu, [recipient.GetNameNoTooltip]'ü o ejderha çukurunun [authorized_tamer|e]'ü yapacaktır." #NT!
  agot_grant_dragonpit_permission_effect_tt: "[recipient.GetName], [dragon_pit_location.GetNameNoTier] [dragonpit|e]'ün [authorized_tamer|e]'i olacak." #NT!
   
- agot_ban_from_dragonpit: "Dragonpit'e Erişimi Yasakla" #NT!
- agot_ban_from_dragonpit_desc: "[recipient.GetName] şu anda ejderha çukurunuz [laws|e] nedeniyle [dragonpit|e]'inize erişebiliyor. Bu, belirtilen ejderha çukuruna erişimlerini kaldıracak." #NT!
- agot_banned_from_dragonpit_permission_effect_tt: "[recipient.GetName], [dragon_pit_location.GetNameNoTier] [dragonpit|e]'den yasaklanacak." #NT!
- agot_banned_from_dragonpit_interface_tt: "[recipient.GetName], [dragon_pit_location.GetNameNoTier]'deki [dragonpit|e]'inize erişimden yasaklandı." #NT!
+ agot_ban_from_dragonpit: "Ejderha Çukuru'na Erişimi Yasakla" #NT!
+ agot_ban_from_dragonpit_desc: "[recipient.GetName] şu anda ejderha çukurunuz [laws|e] nedeniyle [dragonpit|e]'nuza erişebiliyor. Bu, belirtilen ejderha çukuruna erişimlerini kaldıracak." #NT!
+ agot_banned_from_dragonpit_permission_effect_tt: "[recipient.GetName], [dragon_pit_location.GetNameNoTier] [dragonpit|e]'ndan yasaklanacak." #NT!
+ agot_banned_from_dragonpit_interface_tt: "[recipient.GetName], [dragon_pit_location.GetNameNoTier]'deki [dragonpit|e]'nuza erişimden yasaklandı." #NT!
   
- agot_reverse_dragonpit_ban: "Dragonpit Yasağını Kaldır" #NT!
+ agot_reverse_dragonpit_ban: "Ejderha Çukuru Yasağını Kaldır" #NT!
  agot_reverse_dragonpit_ban_desc: "[recipient.GetName] şu anda [domain|e]'nizdeki [dragonpit|e]'den yasaklanmış durumda, bu eylem o yasağı kaldıracaktır." #NT!
  agot_reversed_ban_from_dragonpit_interface_tt: "[recipient.GetNamePossessive] [dragonpit|e] hesabınıza erişim yasağı kaldırıldı." #NT!
  agot_ban_lifted_from_dragonpit_effect_tt: "[recipient.GetNamePossessive]'ın [target.GetNameNoTier]'den [dragonpit|e]'den yasağı kaldırılacak." #NT!
   
- agot_request_dragonpit_permission: "Dragonpit'e Erişim Talebinde Bulunun" #NT!
+ agot_request_dragonpit_permission: "Ejderha Çukuru'na Erişim Talebinde Bulunun" #NT!
  agot_request_dragonpit_permission_desc: "[recipient.GetShortUINamePossessive] [dragonpit|e]'e erişim izni isteyebilirsiniz." #NT!
  agot_request_dragonpit_permission_effect_tt: "[actor.GetShortUIName], [dragon_pit_location.GetNameNoTier] [dragonpit|e]'ün [authorized_tamer|e]'i olacak." #NT!
   
- agot_dragonpit_access_gained: "Dragonpit Erişimi Verildi" #NT!
- agot_dragonpit_access_gained_interface_tt: "[actor.GetShortUIName] seni [actor.GetHerHis] [dragonpit|E]'ten [authorized_tamer|E] yaptı!" #NT!
- agot_dragonpit_access_denied: "Dragonpit Erişimi Engellendi" #NT!
+ agot_dragonpit_access_gained: "Ejderha Çukuru Erişimi Verildi" #NT!
+ agot_dragonpit_access_gained_interface_tt: "[actor.GetShortUIName] seni [actor.GetHerHis] [dragonpit|E]'ndan [authorized_tamer|E] yaptı!" #NT!
+ agot_dragonpit_access_denied: "Ejderha Çukuru Erişimi Engellendi" #NT!
  agot_dragonpit_access_denied_interface_tt: "[recipient.GetShortUIName], [recipient.GetHerHis] [dragonpit|E]'ye erişiminizi reddetti!" #NT!
  agot_request_dragonpit_permission_ai_modifier_i_am_blood_of_the_dragon: "Ejderhalarının önemini anlar" #NT!
   
- agot_send_egg_to_pit: "Yumurtayı Dragonpit'e gönder" #NT!
+ agot_send_egg_to_pit: "Yumurtayı Ejderha Çukuru'na gönder" #NT!
  agot_send_egg_to_pit_desc: "Yumurtadan çıkması için ejderha yumurtalarından birini [dragonpit|e]'a gönder" #NT!
   
- agot_retrieve_egg_from_pit: "Dragonpit'ten Yumurtayı Al" #NT!
+ agot_retrieve_egg_from_pit: "Ejderha Çukuru'ndan Yumurtayı Al" #NT!
  agot_retrieve_egg_from_pit_desc: "[dragonpits|e]'larınızdan birinde saklanan bir yumurtayı alın" #NT!
