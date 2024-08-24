@@ -1,0 +1,47 @@
+﻿l_english:
+ FP2_BORDER_RAID_CB_NAME: "[border_raid|E]'a karşı [DEFENDER.GetPrimaryTitle.GetNameNoTier]"
+ FP2_BORDER_RAID_CB_SPECIFIC_NAME: "[border_raid|E] / [TITLE.GetBaseNameNoTier]"
+ FP2_BORDER_RAID_WAR_NAME: "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjective] [border_raid|E] / [TITLE.GetBaseNameNoTier]"
+ FP2_BORDER_RAID_WAR_NAME_BASE: "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
+ fp2_border_raid: "[border_raid|E]"
+  
+ border_raid_cb_desc_victory_attacker: "Hedef [county|E]'nin [development|E]'ine orantılı olarak [gold|E] kazanırsınız, bu da azalacaktır.\n$border_raid_building_tt$\n$border_raid_warning_tt$"
+ border_raid_cb_desc_victory_defender: "[attacker.GetName], hedef [county|E]'ün [development|E]'sine orantılı olarak [gold|E] kazanır ve bu da azalacaktır.\n$border_raid_building_tt$\n$border_raid_warning_tt$"
+ border_raid_cb_desc_white_peace_attacker: "Baskınınızı tamamlayamazsınız."
+ border_raid_cb_desc_white_peace_defender: "[attacker.GetName], [attacker.GetHerHis] baskınını tamamlayamadı."
+ border_raid_cb_desc_defeat_attacker: "Baskın girişiminde bulunmanız durumunda [gold|E] tazminat ödemeniz gerekir."
+ border_raid_cb_desc_defeat_defender: "[attacker.GetName] baskın girişiminde bulunan kişi [gold|E] tazminat ödemelidir."
+ destroy_random_building_tt: "[raid_county.GetName]'deki rastgele bir [building|E] yok edilir ve ekstra [gold_i] kazanılır"
+ border_raid_building_tt: "[building|E] da yok edilebilir."
+ border_raid_warning_tt: "@warning_icon! #X Hayır [titles|E] el değiştirmeyecek.#!"
+ border_raid_message_title: "Sınır İlçesine Baskın"
+  
+  #AGOT Modified 
+ #FP2_EXPEL_INTERLOPER_CB_NAME: "[iberian_reclamation|E]'a karşı [DEFENDER.GetPrimaryTitle.GetNameNoTier]"
+ FP2_EXPEL_INTERLOPER_CB_NAME: "[btw_reclamation|E], [DEFENDER.GetPrimaryTitle.GetNameNoTier]'e karşı"
+  #AGOT Modified 
+ #FP2_EXPEL_INTERLOPER_CB_SPECIFIC_NAME: "[iberian_reclamation|E] / [TITLE.GetBaseNameNoTier]"
+ FP2_EXPEL_INTERLOPER_CB_SPECIFIC_NAME: "[btw_reclamation|E] / [TITLE.GetBaseNameNoTier]"
+  #AGOT Modified 
+ #FP2_EXPEL_INTERLOPER_WAR_NAME: "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjectiveNoTooltip] [iberian_reclamation|E] / [TITLE.GetBaseNameNoTier]"
+ FP2_EXPEL_INTERLOPER_WAR_NAME: "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjectiveNoTooltip] [btw_reclamation|E] / [TITLE.GetBaseNameNoTier]"
+ FP2_EXPEL_INTERLOPER_WAR_NAME_BASE: "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
+  
+ iberian_reclamation_cb_victory_desc_attacker_vassalize: "Sen vasallaştırıyorsun [defender.GetShortUIName|U]"
+ iberian_reclamation_cb_victory_desc_defender_vassalize: "[attacker.GetShortUIName|U] seni vasallaştırır"
+ iberian_reclamation_cb_victory_desc_attacker_conquer_1: "$EFFECT_LIST_BULLET$Hedefteki [defender.GetShortUINamePossessive|U]'den [liege|E] [struggle_involved|E] daha düşük [rank|E] [vassals|E] olursunuz [duchy|E]"
+ iberian_reclamation_cb_victory_desc_attacker_conquer_2: "$EFFECT_LIST_BULLET$Tartışmalı [struggle_uninvolved|E]'i elde tuttunuz [counties|E] ve [holders|E]'ün [duchy|E]\n dışındaki arazileri var"
+ iberian_reclamation_cb_victory_desc_defender_conquer_1: "$EFFECT_LIST_BULLET$[attacker.GetShortUIName|U] hedefteki [defender.GetShortUINamePossessive|U]'ün [liege|E]'si olur [struggle_involved|E] daha düşük [rank|E] [vassals|E] [duchy|E]"
+ iberian_reclamation_cb_victory_desc_defender_conquer_2: "$EFFECT_LIST_BULLET$[attacker.GetShortUIName|U] kazanımlar itiraz edilen un-[struggle_involved|E] tutulan [counties|E] ve [holders|E]'ün [duchy|E]\n dışındaki arazileri olanlar"
+  #AGOT Modified 
+ #fp2_expel_interloper: "[iberian_reclamation|E]"
+ fp2_expel_interloper: "[btw_reclamation|E]"
+  
+  
+ iberian_reclamation_cb_white_peace_desc_vassalize: "[defender.GetShortUIName|U] kalacak [independent|E]"
+ iberian_reclamation_cb_white_peace_desc_conquer: "[defender.GetShortUIName|U] tartışmalı olanı koruyacak [titles|E]"
+ iberian_reclamation_cb_defeat_desc_vassalize: "$iberian_reclamation_cb_white_peace_desc_vassalize$"
+ iberian_reclamation_cb_defeat_desc_conquer: "$iberian_reclamation_cb_white_peace_desc_conquer$"
+ iberian_reclamation_cb_defeat_desc: "$iberian_reclamation_cb_white_peace_desc$"
+  
+ CB_COST_IBERIAN_RECLAMATION: "Maliyetler [SCOPE.ScriptValue('fp2_expel_interloper_county_cost_value')] [prestige|E] başına-[county|E]"
