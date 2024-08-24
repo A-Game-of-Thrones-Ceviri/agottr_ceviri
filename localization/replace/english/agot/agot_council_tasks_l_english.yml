@@ -1,0 +1,138 @@
+﻿l_english:
+ #Personal Steward 
+ personal_steward_task_diplomacy_good_skilled_notification_tooltip: "Kişisel kahyanızın [councillor.Custom('diplomacy_skill_level')] diplomasi becerisi bu beklenmedik sonuca yol açtı."
+ personal_steward_task_diplomacy_good_unskilled_notification_tooltip: "Bu, kişisel hizmetkarınızın [councillor.Custom('diplomacy_skill_level')] diplomasi becerisine rağmen gerçekleşti."
+ personal_steward_task_martial_good_unskilled_notification_tooltip: "Bu, kişisel hizmetkarınızın [councillor.Custom('martial_skill_level')] dövüş becerisine rağmen gerçekleşti."
+ personal_steward_task_martial_good_skilled_notification_tooltip: "Kişisel hizmetkarınızın [councillor.Custom('martial_skill_level')] dövüş becerisi bu beklenmedik kazancı elde etmenize yol açtı."
+ personal_steward_task_stewardship_good_skilled_notification_tooltip: "Kişisel hizmetkarınızın [councillor.Custom('stewardship_skill_level')] hizmetkarlık becerisi bu beklenmedik servete yol açtı."
+ personal_steward_task_stewardship_good_unskilled_notification_tooltip: "Bu, kişisel kahyanızın [councillor.Custom('stewardship_skill_level')] idarecilik becerisine rağmen gerçekleşti."
+ personal_steward_task_intrigue_good_unskilled_notification_tooltip: "Bu, kişisel hizmetkarınızın [councillor.Custom('intrigue_skill_level')] entrika becerisine rağmen gerçekleşti."
+ personal_steward_task_intrigue_good_skilled_notification_tooltip: "Kişisel kahyanızın [councillor.Custom('intrigue_skill_level')] entrika becerisi bu beklenmedik sonuca yol açtı."
+ personal_steward_task_learning_good_unskilled_notification_tooltip: "Bu, kişisel hizmetkarınızın [councillor.Custom('learning_skill_level')] öğrenme becerisine rağmen gerçekleşti."
+ personal_steward_task_learning_good_skilled_notification_tooltip: "Kişisel hizmetkarınızın [councillor.Custom('learning_skill_level')] öğrenme becerisi bu beklenmedik kazancı elde etmenize yol açtı."
+  
+  #Personal Steward Tasks 
+ task_personal_steward_default: "Lord Komutan Yardımcısı"
+ task_personal_steward_default_effect_desc: "[councillor.GetShortUINameNoTooltip] Gece Nöbetçileri'ni yönetme günlük işinizde size yardımcı olur\n\n[councillor.GetHerHis|U] destek size şunları sağlar:\n[councillor.GetModifierDescForTask('task_personal_steward_default')]"
+ task_personal_steward_court_politics: "Etki Oluşturun"
+ task_personal_steward_court_politics_effect_desc: "[councillor.GetShortUINameNoTooltip] Gece Nöbeti politikalarına ve Kara Kardeşler arasındaki ilişkileri iyileştirmeye odaklanır\n\n[councillor.GetHerHis|U] destek size şunları sağlar:\n[councillor.GetModifierDescForTask('task_personal_steward_court_politics')]"
+ task_personal_steward_chivalry: "Saati Eğitin"
+ task_personal_steward_chivalry_effect_desc: "[councillor.GetShortUINameNoTooltip] Gece Nöbetçileri'nin eğitimine odaklanır\n\n[councillor.GetHerHis|U] destek size şunları sağlar:\n[councillor.GetModifierDescForTask('task_personal_steward_chivalry')]"
+ task_personal_steward_court_intrigue: "Kulağınızı Açık Tutun"
+ task_personal_steward_court_intrigue_effect_desc: "[councillor.GetShortUINameNoTooltip], sarayınızdaki Kara Kardeşler hakkındaki söylentilere ve fısıltılara odaklanır\n\n[councillor.GetHerHis|U] destek size şunları sağlar:\n[councillor.GetModifierDescForTask('task_personal_steward_court_intrigue')]"
+ task_personal_steward_manage_domain: "Hediyeyi Yönet"
+ task_personal_steward_manage_domain_effect_desc: "[councillor.GetShortUINameNoTooltip] Hediyeyi yönetmeye ve Saat'in varlıklarını artırmaya odaklanır\n\n[councillor.GetHerHis|U] destek size şunları sağlar:\n[councillor.GetModifierDescForTask('task_personal_steward_manage_domain')]"
+ task_personal_steward_patronage: "Saati Eğit"
+ task_personal_steward_patronage_effect_desc: "[councillor.GetShortUINameNoTooltip] Watch'ta kültür, din ve eğitim konularına odaklanır\n\n[councillor.GetHerHis|U] desteği size şunları sağlar:\n[councillor.GetModifierDescForTask('task_personal_steward_patronage')]"
+ councillor_personal_steward_background.0001.diplomacy_notification: "Deneyimle birlikte diplomasi becerisi [councillor.GetShortUINamePossessive] arttı."
+ councillor_personal_steward_background.0001.martial_notification: "Deneyimle birlikte [councillor.GetShortUINamePossessive]'ın savaş anlayışı arttı."
+ councillor_personal_steward_background.0001.stewardship_notification: "Deneyimle birlikte [councillor.GetShortUINamePossessive] idari yetenek arttı."
+ councillor_personal_steward_background.0001.intrigue_notification: "Deneyimle birlikte [councillor.GetShortUINamePossessive] entrika yeteneği arttı."
+ councillor_personal_steward_background.0001.learning_notification: "Deneyimle birlikte [councillor.GetShortUINamePossessive] akademik anlayış arttı."
+  
+ councillor_personal_steward_background.0001.title: "Kişisel Vekil Becerileri"
+  
+ task_promote_culture_effect_desc_wv_override: "#S #V'de %100#!#!:\n$TAB$The [county|E] [culture|E]'ü [councillor_liege.GetCulture.MakeScope.Var('wv_culture').Culture.GetName]'e değiştirir"
+ task_promote_culture_effect_desc_ev_override: "#S #V'de %100#!#!:\n$TAB$The [county|E] [culture|E]'ü [councillor_liege.GetCulture.MakeScope.Var('ev_culture').Culture.GetName]'e değiştirir"
+ task_promote_culture_effect_desc_ironborn_override_coastal: "#S #V 100%#!#!:\n$TAB$The [county|E] değişiklikleri [culture|E] aşağıdaki\n$TAB$kültürlerden birine: \n#S $TAB$ 80%#! [councillor_liege.GetCulture.GetName]\n#S $TAB$ 20%#! #V3"
+ task_promote_culture_effect_desc_ironborn_override_coastal_county_duchy: "#S #V 100%#!#!:\n$TAB$The [county|E] değişiklikleri [culture|E] aşağıdaki\n$TAB$kültürlerden birine: \n#S $TAB$ 60%#! [councillor_liege.GetCulture.GetName]\n#S $TAB$ 40%#! #V3"
+ task_promote_culture_effect_desc_ironborn_override_inland: "#S #V 100%#!#!:\n$TAB$The [county|E] değişiklikleri [culture|E] aşağıdaki\n$TAB$kültürlerden birine: \n#S $TAB$ 20%#! [councillor_liege.GetCulture.GetName]\n#S $TAB$ 80%#! #V3"
+ task_promote_culture_effect_desc_ironborn_override_smt_broke: "#R #L (AGOT HATASI)#!#!: Demirdoğumlu kültür dönüşümünde bir sorun var, Tipik'e bildirin"
+ task_promote_culture_effect_desc_greenborn_override_coastal: "#S #V 100%#!#!:\n$TAB$The [county|E] değişiklikleri [culture|E] aşağıdaki\n$TAB$kültürlerden birine: \n#S $TAB$ 80%#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName]\n#S $TAB$ 20%#! #V3"
+ task_promote_culture_effect_desc_greenborn_override_coastal_county_duchy: "#S #V %100#!#!:\n$TAB$The [county|E]'te [culture|E]'ü aşağıdaki\n$TAB$kültürlerden birine değiştirir:: \n#S $TAB$ %60#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName]\n#S $TAB$ %40#! #V3"
+ task_promote_culture_effect_desc_greenborn_override_inland: "#S #V 100%#!#!:\n$TAB$The [county|E] değişiklikleri [culture|E] aşağıdaki\n$TAB$kültürlerden birine: \n#S $TAB$ 20%#! [councillor_liege.GetCulture.MakeScope.Var('ironborn_culture').Culture.GetName]\n#S $TAB$ 80%#! #V3"
+ task_promote_culture_effect_desc_greenborn_override_smt_broke: "#R #L (AGOT HATASI)#!#!: Greenborn kültür dönüşümünde bir sorun var, Tipik'e bildirin"
+  
+  
+  #Castellan Tasks 
+ task_castellan_default_1: "Bölgeyi Denetle"
+ task_castellan_default_effect_desc_1: "[councillor.GetShortUINameNoTooltip]'ın savaş konularındaki deneyimi bu topraklardaki hakimiyetinizi daha da sıkılaştıracaktır. \n\n[councillor.GetHerHis|U] desteği size şunları sağlar:\n[councillor.GetModifierDescForTask('task_castellan_default_1')]"
+  
+ task_castellan_default_2: "Bölgeyi Denetle"
+ task_castellan_default_effect_desc_2: "[councillor.GetShortUINameNoTooltip]'ın bilge ve bilgili zihninin tavsiyesiyle bilgece yöneteceksin. \n\n[councillor.GetHerHis|U] desteği sana şunları sağlar:\n[councillor.GetModifierDescForTask('task_castellan_default_2')]"
+  
+ task_castellan_default_3: "Bölgeyi Denetle"
+ task_castellan_default_effect_desc_3: "[councillor.GetShortUINameNoTooltip] çoğu kişi tarafından görülmeyen daireler çizerek hareket eder ve diyarınızın gölgelerinde size bir avantaj sağlar. \n\n[councillor.GetHerHis|U] destek size şunları sağlar:\n[councillor.GetModifierDescForTask('task_castellan_default_3')]"
+  
+ task_castellan_default_4: "Bölgeyi Denetle"
+ task_castellan_default_effect_desc_4: "[councillor.GetShortUINameNoTooltip], alanınızın yönetimine yardımcı olmak için idari becerilerini kullanacaktır. \n\n[councillor.GetHerHis|U] desteği size şunları sağlar:\n[councillor.GetModifierDescForTask('task_castellan_default_4')]"
+  
+ task_castellan_default_5: "Bölgeyi Denetle"
+ task_castellan_default_effect_desc_5: "[councillor.GetShortUINameNoTooltip] yetenekli bir politikacıdır ve devlet yönetiminde istikrarlı bir el, yönetimde olmazsa olmazdır. \n\n[councillor.GetHerHis|U] desteği size şunları sağlar:\n[councillor.GetModifierDescForTask('task_castellan_default_5')]"
+  
+  
+ task_castellan_default_hodor: "Ellerinden Gelenin En İyisini Yapıyorlar"
+ task_castellan_default_hodor_effect_desc: "[councillor.GetShortUINameNoTooltip] buraya nasıl geldiklerini bilmiyor ama ellerinden geleni yapıyorlar."
+  
+ task_castellan_court: "Konsey Başkanlığı"
+ task_castellan_court_desc: "\n[councillor.GetModifierDescForTask('task_castellan_court')]"
+  
+ task_castellan_fortify: "Savunmaları Güçlendirin"
+ task_castellan_fortify_desc: "\n[councillor.GetModifierDescForTask('task_castellan_fortify')]"
+  
+ castellan_fortify_province_modifier: "$task_castellan_fortify$"
+  
+ castellan_fortify_county_modifier: "Savunmaları Güçlendirmek"
+  
+ castellan_court_opinion_modifier: "Castellan konseye başkanlık ediyor"
+  
+ task_train_commanders_maa_effect_desc: "Yer tutucu"
+ task_train_commanders_maa_erudition_bonus_desc: "Yer tutucu"
+  
+ task_castellan_organise: "Vassallarla pazarlık yapın"
+ task_castellan_organise_desc: "\n[councillor.GetModifierDescForTask('task_castellan_organise')]"
+ task_castellan_organise_modifier: "Konsey $councillor_castellan$"
+  
+ task_castellan_scheme: "Planları Düzenle"
+ task_castellan_scheme_desc: "\n[councillor.GetModifierDescForTask('task_castellan_scheme')]"
+ task_castellan_scheme_modifier: "Konsey $councillor_castellan$"
+  
+ task_castellan_clergy: "Din adamlarını topla"
+ task_castellan_clergy_desc: "\n[councillor.GetModifierDescForTask('task_castellan_clergy')]"
+ task_castellan_clergy_modifier: "Konsey $councillor_castellan$"
+  
+  #Admiral 
+  
+ task_admiral_fleet: "Dağınık Filolar"
+  
+ task_admiral_fleet_modifier: "Konsey $councillor_admiral$"
+  
+ task_admiral_fleet_effect_desc: "[supply|E] Süre: #P +[SCOPE.ScriptValue('task_admiral_fleet_modifier_value')]%#!\n$TAB$Base: #P +[SCOPE.ScriptValue('task_admiral_fleet_base')]%#!\n$TAB$Councillor's [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%#P0 \n #P1 Hareket Hızı: #P +[SCOPE.ScriptValue('task_admiral_fleet_modifier_value')]%#!\n$TAB$Base: #P +[SCOPE.ScriptValue('task_admiral_fleet_base')]%#!\n$TAB$Councillor's [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_fleet_skill_base')]%#P0"
+  
+ task_admiral_fleet_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]: #P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]%#!\n"
+  
+ task_admiral_fleet_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$: #P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]%#!"
+  
+ task_admiral_raid: "Raiders'ı cesaretlendirin"
+  
+ cannot_raid: "#X Baskın yapabilirsiniz!#!"
+  
+ NOT_cannot_raid: "#X Baskın yapamazsın!#!"
+  
+ task_admiral_raid_modifier: "Konsey $councillor_admiral$"
+  
+  
+ task_admiral_raid_effect_desc: "[raid|E] Hız: #P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n$TAB$Base: #P +[SCOPE.ScriptValue('task_admiral_raid_base')]%#!\n$TAB$Councillor's [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_raid_skill_base')]%#P0 \n #P1 Kapasite: #P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n$TAB$Base: #P +[SCOPE.ScriptValue('task_admiral_raid_base')]%#!\n$TAB$Councillor's [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]0%#P0 \n Hareket Hızı: #P +[SCOPE.ScriptValue('task_admiral_raid_modifier_value')]%#!\n$TAB$Base: #P +[SCOPE.ScriptValue('task_admiral_raid_base')]%#!\n$TAB$Councillor's [martial_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_raid_skill_base')]%#P0"
+  
+ task_admiral_raid_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]: #P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]%#!\n"
+  
+ task_admiral_raid_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$: #P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]%#!"
+  
+ task_admiral_maritime: "Ticareti Koruyun"
+  
+ task_admiral_maritime_modifier: "Konsey $councillor_admiral$"
+  
+ task_admiral_maritime_tax_modifier: "Konsey $councillor_admiral$"
+  
+ task_admiral_maritime_effect_desc: "[domain|E] Vergi: #P +[SCOPE.ScriptValue('task_admiral_maritime_tax_modifier_value')]%#!\n$TAB$Base: #P +[SCOPE.ScriptValue('task_admiral_maritime_base')]%#!\n$TAB$Councillor's [stewardship_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_maritime_skill_tax_base')]%#P0 \n #P1 Kapasite: #P +#P3%#!\n$TAB$Base: #P +[SCOPE.ScriptValue('task_admiral_maritime_base')]%#!\n$TAB$Councillor's [stewardship_skill|E]: #P +[SCOPE.ScriptValue('task_admiral_maritime_tax_modifier_value')]0%#P0"
+  
+ task_admiral_maritime_erudition_bonus: "\n$TAB$[GetDynastyPerk('erudition_legacy_5').GetName]: #P +[SCOPE.ScriptValue('task_admiral_fleet_erudition_bonus')]%#!\n"
+  
+ task_admiral_maritime_family_business_bonus: "\n$TAB$$tradition_family_entrepreneurship_name$: #P +[SCOPE.ScriptValue('task_admiral_fleet_family_business_bonus')|1]%#!"
+  
+  # Court Chaplain 
+ COURT_CHAPLAIN_SHATTERED_WORLD: "Shattered World Başlangıç ​​Bonusu"
+  
+  # Spymaster 
+ agot_task_disrupt_schemes_discover_spies: "Sarayınızda yabancı casuslar keşfedebilirsiniz \n"
+ agot_task_disrupt_schemes_recruit_spies: "Hedef sarayda casuslar toplayabilir \n"

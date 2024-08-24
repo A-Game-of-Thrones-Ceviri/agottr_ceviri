@@ -1,0 +1,258 @@
+﻿l_english:
+  ################################ 
+  ### WAR OF SUCCESSION EVENTS ### 
+  ################################ 
+  
+  #USURPER CAN DECIDE TO USURP 
+ agot_crown_theft.0100.t: "Taht" #NT!
+  #King dies in trial by combat 
+ agot_crown_theft.0100.desc.tbc: "[SCOPE.sC('crown_thief').Custom2('RelationToMeShort', SCOPE.sC('crown_theft_king'))]'ım, [Select_CString(crown_theft_king.IsFemale,'queen','king')]'im, dövüş arenasında [crown_theft_king.GetHerHis] son nefesini verirken," #NT!
+ agot_crown_theft.0200.desc.tbc: "[Select_CString(crown_theft_king.IsFemale,'queen','king')], dövüş arenasında [crown_theft_king.GetHerHis] son nefesini verirken," #NT!
+  #King dies in battle 
+ agot_crown_theft.0100.desc.battle: "[SCOPE.sC('crown_thief').Custom2('RelationToMeShort', SCOPE.sC('crown_theft_king'))]'ım, [Select_CString(crown_theft_king.IsFemale,'queen','king')]'im savaş meydanında [crown_theft_king.GetHerHis] yaraya yenik düşerken," #NT!
+ agot_crown_theft.0200.desc.battle: "[Select_CString(crown_theft_king.IsFemale,'queen','king')], savaş meydanında [crown_theft_king.GetHerHis] yaraya yenik düşerken," #NT!
+  #King dies in illness 
+ agot_crown_theft.0100.desc.illness: "[SCOPE.sC('crown_thief').Custom2('RelationToMeShort', SCOPE.sC('crown_theft_king'))]'ım, [Select_CString(crown_theft_king.IsFemale,'queen','king')]'im, [crown_theft_king.GetHerHis] ölüm döşeğinde yatarken," #NT!
+ agot_crown_theft.0200.desc.illness: "[Select_CString(crown_theft_king.IsFemale,'queen','king')], [crown_theft_king.GetHerHis] ölüm döşeğinde yatarken," #NT!
+  #King dies in siege 
+ agot_crown_theft.0100.desc.siege: "[SCOPE.sC('crown_thief').Custom2('RelationToMeShort', SCOPE.sC('crown_theft_king'))]'ım, [Select_CString(crown_theft_king.IsFemale,'queen','king')]'im kuşatılmış kalenin duvarları içinde yok olurken," #NT!
+ agot_crown_theft.0200.desc.siege: "[Select_CString(crown_theft_king.IsFemale,'queen','king')] kuşatılmış kalenin duvarları içinde yok olurken," #NT!
+  
+ #desc 
+ agot_crown_theft.0100.desc: "[crown_theft_king.GetHerHis] tacının ağırlığı havada ağır bir şekilde yükseliyor. Uzun zamandır krallığı yönetme hırslarım olsa da, haklı varisim, [SCOPE.sC('crown_thief').Custom2('RelationToMeShort', SCOPE.sC('crown_theft_king_legit_heir'))], [crown_theft_king_legit_heir.GetTitledFirstName], şu anda başkentte yok.\n\nTahtı kendim için ele geçirme fırsatı beni çağırıyor, ölçülemeyecek güç ve otorite vaat ediyor." #NT!
+ agot_crown_theft.0200.desc: "[crown_theft_king.GetHerHis] tacının ağırlığı havada ağır bir şekilde yükseliyor. Uzun zamandır krallıkta güç elde etme hırslarım olmasına rağmen, haklı varis [crown_theft_king_legit_heir.GetTitledFirstName] şu anda başkentte yok.\n\nKorkusuz [crown_thief.GetTitledFirstName] için tahtı ele geçirme fırsatı beni çağırıyor, ölçülemeyecek güç ve otorite vaat ediyor." #NT!
+ agot_crown_theft.0300.desc: "[crown_theft_king.GetHerHis] tacının ağırlığı havada ağır bir şekilde yükseliyor. Buna rağmen, gelenekler bir piçin unvanları miras alamayacağını söylüyor, ancak ben uzun zamandır krallığı yönetme hırsları besliyorum. Haklı varisim, [SCOPE.sC('crown_thief').Custom2('RelationToMeShort', SCOPE.sC('crown_theft_king_legit_heir'))], [crown_theft_king_legit_heir.GetTitledFirstName], şu anda başkentte yok.\n\nTahtı kendim için ele geçirme fırsatı beni çağırıyor, ölçülemeyecek güç ve otorite vaat ediyor." #NT!
+ agot_crown_theft.0400.desc: "[crown_theft_king.GetHerHis] tacının ağırlığı havada ağır bir şekilde yükseliyor. Buna rağmen, mirasım elinden alındı ​​ve unvanları miras alamıyorum, ancak uzun zamandır krallığı yönetme hırslarım var. Haklı varisim, [SCOPE.sC('crown_thief').Custom2('RelationToMeShort', SCOPE.sC('crown_theft_king_legit_heir'))], [crown_theft_king_legit_heir.GetTitledFirstName], şu anda başkentte yok.\n\nTahtı kendim için ele geçirme fırsatı beni çağırıyor, ölçülemeyecek kadar güç ve otorite vaat ediyor." #NT!
+ agot_crown_theft.0500.desc: "[crown_theft_king.GetHerHis] tacının ağırlığı havada ağır bir şekilde yükseliyor. Uzun zamandır krallığı yönetme hırslarım olsa da, haklı varisim, [SCOPE.sC('crown_thief').Custom2('RelationToMeShort', SCOPE.sC('crown_theft_king_legit_heir'))], [crown_theft_king_legit_heir.GetTitledFirstName], tahta geçmeye layık değil.\n\nTahtı kendim için ele geçirme fırsatı beni çağırıyor, ölçülemeyecek güç ve otorite vaat ediyor." #NT!
+  
+ agot_crown_theft.0100.a: "Taht benimdir!" #NT!
+ agot_crown_theft.0200.a: "Taht [crown_thief.GetTitledFirstNamePossessiveNoTooltip]!" #NT!
+ agot_crown_theft.0100.b: "Hayır, veraset sırasına saygı göstermeliyim." #NT!
+  
+  #KING DECIDES WHO TO CONTINUE AS 
+ agot_crown_theft.0102.t: "Ölüm döşeği" #NT!
+  #King dies in trial by combat 
+ agot_crown_theft.0102.desc.tbc: "Savaş meydanında son nefeslerimi verirken," #NT!
+  #King dies in battle 
+ agot_crown_theft.0102.desc.battle: "Savaş meydanında sonumla karşılaştığımda, çelik çarpışmaları ve savaşçıların çığlıkları arasında," #NT!
+  #King dies in illness 
+ agot_crown_theft.0102.desc.illness: "Ölüm döşeğimde yatarken," #NT!
+  #King dies in siege 
+ agot_crown_theft.0102.desc.siege: "Kuşatılmış kalenin surları içinde yok olurken, son anlarım kuşatma makinelerinin çarpışma sesleriyle dolu," #NT!
+  #desc 
+ agot_crown_theft.0102.desc: "zihnim krallığın kaderi üzerine düşüncelerle dolu. [SCOPE.sC('crown_theft_king').Custom2('RelationToMeShort', SCOPE.sC('crown_thief'))], [crown_thief.GetTitledFirstName]'im tahtı ele geçirmeye hazır duruyor, içimde bir umut ve korku karışımı uyandırıyor.\n\nBarış için dua ediyorum, ancak yaklaşan çatışma ihtimali son anlarımın üzerine karanlık bir gölge düşürüyor." #NT!
+ agot_crown_theft.0202.desc: "zihnim krallığın kaderi üzerine düşüncelerle dolu. [crown_thief.GetTitledFirstNameNoTooltip], [usurper_guardian.GetTitledFirstName]'in koruyucusu, [SCOPE.sC('crown_theft_king').Custom2('RelationToMeShort', SCOPE.sC('crown_thief'))]'im için tahtı ele geçirmeye hazır duruyor, içimde umut ve korkunun bir karışımını uyandırıyor.\n\nBarış için dua ediyorum, ancak yaklaşan çatışma ihtimali son anlarımın üzerine karanlık bir gölge düşürüyor." #NT!
+ agot_crown_theft.0302.desc: "aklım krallığın kaderi üzerine düşüncelerle dolu. Piçim [SCOPE.sC('crown_theft_king').Custom2('RelationToMeShort', SCOPE.sC('crown_thief'))], [crown_thief.GetTitledFirstName], tahtı ele geçirmeye hazır duruyor, içimde bir umut ve korku karışımı uyandırıyor.\n\nBarış için dua ediyorum, ancak yaklaşan çatışma ihtimali son anlarımın üzerine karanlık bir gölge düşürüyor." #NT!
+ agot_crown_theft.0402.desc: "zihnim krallığın kaderi üzerine düşüncelerle dolu. Mirasımdan mahrum bırakılmış [SCOPE.sC('crown_theft_king').Custom2('RelationToMeShort', SCOPE.sC('crown_thief'))], [crown_thief.GetTitledFirstName], tahtı ele geçirmeye hazır duruyor, içimde bir umut ve korku karışımı uyandırıyor.\n\nBarış için dua ediyorum, ancak yaklaşan çatışma ihtimali son anlarımın üzerine karanlık bir gölge düşürüyor." #NT!
+  
+ agot_crown_theft.0102.a: "Keşke [crown_thief.GetHerHis] saltanatında [crown_thief.GetTitledFirstNameNoTooltip]'a yardım edebilseydim." #NT!
+ agot_crown_theft.0102.b: "Benim halefim [crown_theft_king_legit_heir.GetTitledFirstNameNoTooltip] olmalıydı." #NT!
+ agot_crown_theft.0502.b: "[landed_helper.GetTitledFirstNameNoTooltip] benim [SCOPE.sC('crown_theft_king').Custom2('RelationToMeShort', SCOPE.sC('crown_theft_king_legit_heir'))]'ime yardım etmeli." #NT!
+  
+  #LEGITIMATE HEIR DECIDES TO PUSH CLAIMS OR ACCEPT THEIR FATE 
+ agot_crown_theft.0110.t: "Varisin Kararı" #NT!
+ agot_crown_theft.0110.desc: "Tahtı ele geçirmemdeki [SCOPE.sC('crown_theft_king_legit_heir').Custom2('RelationToMeShort', SCOPE.sC('crown_thief'))] [crown_thief.GetFirstNamePossessive] ihanetimin haberi kulağıma ulaştığında, göğsümde çatışan duyguların fırtınası kopuyor.\n\nDoğuştan gelen hakkımın ağırlığı üzerime çöküyor, ayağa kalkmam ve hakkım olanı talep etmem için beni zorluyor. Yine de, kargaşanın ortasında, bir ihtiyat fısıltısı vicdanımı sızlatıyor, belirsizlik karşısında kendimi dizginlemem için beni teşvik ediyor." #NT!
+ agot_crown_theft.0210.desc: "[SCOPE.sC('crown_theft_king_legit_heir').Custom2('RelationToMeShort', SCOPE.sC('crown_thief'))], [crown_thief.GetFirstName]'im için tahtı ele geçirmenin [usurper_guardian.GetTitledFirstNamePossessive] ihaneti olduğu kulağıma ulaştığında, göğsümde çatışan duyguların fırtınası kopuyor.\n\nDoğuştan hakkımın ağırlığı üzerime çöküyor, ayağa kalkmam ve hakkım olanı talep etmem için beni zorluyor. Yine de, kargaşanın ortasında, bir ihtiyat fısıltısı vicdanımı sızlatıyor, belirsizlik karşısında kendimi sınırlamamı istiyor." #NT!
+ agot_crown_theft.0310.desc: "Piçimin [SCOPE.sC('crown_theft_king_legit_heir').Custom2('RelationToMeShort', SCOPE.sC('crown_thief'))] [crown_thief.GetFirstNamePossessive] tahtı ele geçirmedeki ihanetinin haberi kulağıma ulaştığında, göğsümde çatışan duyguların fırtınası kopuyor.\n\nDoğuştan hakkımın ağırlığı üzerime çöküyor, ayağa kalkmam ve hakkım olanı talep etmem için beni zorluyor. Yine de, kargaşanın ortasında, bir ihtiyat fısıltısı vicdanımı sızlatıyor, belirsizlik karşısında kendimi dizginlemem için beni teşvik ediyor." #NT!
+ agot_crown_theft.0410.desc: "Tahtı ele geçirmemdeki mirastan mahrum bırakıldığım [SCOPE.sC('crown_theft_king_legit_heir').Custom2('RelationToMeShort', SCOPE.sC('crown_thief'))] [crown_thief.GetFirstNamePossessive] ihanetimin haberi kulağıma ulaştığında, göğsümde çatışan duyguların fırtınası kopuyor.\n\nDoğuştan hakkımın ağırlığı üzerime çöküyor, ayağa kalkmam ve hakkım olanı talep etmem için beni zorluyor. Yine de, kargaşanın ortasında, bir ihtiyat fısıltısı vicdanımı sızlatıyor, belirsizlik karşısında kendimi dizginlemem için beni teşvik ediyor." #NT!
+ agot_crown_theft.0510.desc: "Tahtı ele geçirmemle ilgili [SCOPE.sC('crown_theft_king_legit_heir').Custom2('RelationToMeShort', SCOPE.sC('crown_thief'))] [crown_thief.GetFirstNamePossessive] ihanet haberi kulağıma ulaştığında, göğsümde çatışan duyguların fırtınası kopuyor.\n\nDoğuştan hakkım olan şeyin ağırlığı üzerime çöküyor, ayağa kalkıp hakkım olanı talep etmem için beni zorluyor.\n\n[landed_helper.GetTitledFirstPossessive] sarayına sığınmak için acele ederken, yaklaşan kararımın ağırlığını düşünürken buluyorum kendimi." #NT!
+  
+ agot_crown_theft.0110.a: "Ben doğuştan hakkımı kullanmak zorundayım!" #NT!
+ agot_crown_theft.0110.a.tt: "Savaşa bir adım daha yakınız.." #NT!
+ agot_crown_theft.0110.b: "Yeni [Select_CString(crown_thief.IsFemale,'queen','king')]'ı kışkırtmamalıyım." #NT!
+  
+  #USURPER RECEIVES LETTER FROM LEGITIMATE HEIR: TO STEP DOWN, USURPER OFFERS SOME ARTIFACT OR LAND, OR NOTHING FOR LEGITIMATE HEIR AS A PRICE OF PEACE 
+ agot_crown_theft.0111.opening: "Gaspçıya [Select_CString(crown_thief.IsFemale,'queen','king')]," #NT!
+ agot_crown_theft.0211.opening: "Hain [usurper_guardian.GetTitledFirstNameNoTooltip]'a," #NT!
+ agot_crown_theft.0311.opening: "Piç kurusuna [Select_CString(crown_thief.IsFemale,'queen','king')]," #NT!
+ agot_crown_theft.0411.opening: "Gayri meşru [Select_CString(crown_thief.IsFemale,'queen','king')]'a," #NT!
+  
+ agot_crown_theft.0111.desc: "Acilen yazıyorum, çünkü krallık sizin haksız yönetiminiz altında çürüyor. Tahtın meşru varisi olarak, şimdi istifa etmenizi ve topraklarımızı daha fazla kargaşadan kurtarmanızı talep ediyorum. Bu taht sizin korumanız gereken bir taht değil." #NT!
+ agot_crown_theft.0211.desc: "Acil yazıyorum, çünkü krallık sizin haksız yönetiminiz altında çürüyor. Tahtın meşru varisi olarak, sizden ve [SCOPE.sC('crown_theft_king_legit_heir').Custom2('RelationToMeShort', SCOPE.sC('crown_thief'))]'ımdan şimdi istifa etmenizi ve topraklarımızı daha fazla kargaşadan kurtarmanızı talep ediyorum. Bu taht sizin korumanız gereken bir taht değil." #NT!
+ agot_crown_theft.0111.a: "Lütfen aile yadigarımızı kabul edin." #NT!
+ agot_crown_theft.0111.a.tt: "[random_artifact_one.GetName]'ı [crown_theft_king_legit_heir.GetTitledFirstNamePossessiveNoTooltip] barışını güvence altına almak için bir jest olarak öneriyorsunuz" #NT!
+ agot_crown_theft.0111.b: "Belki egzotik bir şey?" #NT!
+ agot_crown_theft.0111.b.tt: "[crown_theft_king_legit_heir.GetTitledFirstNamePossessiveNoTooltip] huzur için [random_artifact_two.GetName] teklif ediyorsunuz" #NT!
+ agot_crown_theft.0111.c: "Belki bir toprak parçası seni susturur." #NT!
+ agot_crown_theft.0111.c.tt: "Barışı korumak için [random_giveaway_title.GetName] teklif ediyorsunuz" #NT!
+ agot_crown_theft.0111.d: "Zarifçe geri çekilmenin zamanı geldi." #NT!
+  
+  #USURPER RECEIVES LETTER FROM LEGITIMATE HEIR: ABOUT THEIR PEACE DECISION 
+ agot_crown_theft.0112.opening: "[crown_thief.GetFirstNameNoTooltip]'a," #NT!
+ agot_crown_theft.0112.desc: "Sizin mütevazı vasalınız olarak, saltanatınızın adil ve müreffeh olmasını diliyorum. Krallığın sizin yönetiminiz altında barış ve istikrar bulmasını dilerim." #NT!
+ agot_crown_theft.0112.a: "[crown_theft_king_legit_heir.GetSheHe|U]'ın asla [Select_CString(crown_theft_king_legit_heir.IsFemale,'queen','king')] olması amaçlanmamıştı." #NT!
+  
+  #LEGITIMATE HEIR RECEIVES LETTER FROM USURPER: ACCEPT GIFT OR SEND ULTIMATUM 
+ agot_crown_theft.0113.opening: "[crown_theft_king_legit_heir.GetTitledFirstNameNoTooltip]'a," #NT!
+ agot_crown_theft.0113.desc.artifact_one: "Elimden gelen bir teklifi taşıyan bu mektubu gönderiyorum. Aramızda barışı sağlama umuduyla iyi niyet göstergesi olarak hediye edilen bir yadigar, [random_artifact_one.GetName]. Bunun bir uzlaşma jesti olarak görülmesine izin verin ve bizim için uyumun yolunu açmasına izin verin." #NT!
+ agot_crown_theft.0113.desc.artifact_two: "Elimden gelen bir teklifi taşıyan bu mektubu gönderiyorum. Aramızda barışı sağlama umuduyla iyi niyet göstergesi olarak hediye edilen bir yadigar, [random_artifact_two.GetName]. Bunun bir uzlaşma jesti olarak görülmesine izin verin ve bizim için uyumun yolunu açmasına izin verin." #NT!
+ agot_crown_theft.0113.desc.duchy: "Elimden gelen bir teklifi taşıyan bu mektubu gönderiyorum. [random_giveaway_title.GetName], aramızda barışı sağlama umuduyla iyi niyet göstergesi olarak hediye edilen bir toprağım. Bunun bir uzlaşma jesti olarak görülmesine izin verin ve bizim için uyumun yolunu açmasına izin verin." #NT!
+ agot_crown_theft.0113.desc.nothing: "Mektubunuzu aldım ve taleplerinizi gerektiği gibi not ettim. Ancak tahttan çekilme talebinizi kabul edemem. Krallığın istikrarı ve refahı en önemli şeydir ve benim sürekli yönetimimin gerekliliğini anladığınıza inanıyorum." #NT!
+ agot_crown_theft.0213.desc.nothing: "Mektubunuzu aldım ve taleplerinizi gerektiği gibi not ettim. Ancak tahttan çekilme isteğinizi kabul edemem. Krallığın istikrarı ve refahı en önemli şeydir ve [crown_thief.GetFirstNamePossessive] sürekli yönetimin gerekliliğini anlayacağınıza inanıyorum." #NT!
+ agot_crown_theft.0113.a: "Adil bir değişim." #NT!
+ agot_crown_theft.0113.b: "İstifa edin ya da savaşla karşı karşıya kalın!" #NT!
+  
+  #USURPER RECEIVES LETTER FROM LEGITIMATE HEIR: ULTIMATUM RECEIVED: WAR OR ABDICATION 
+ agot_crown_theft.0114.opening: "Gaspçıya," #NT!
+ agot_crown_theft.0114.desc: "Geri çekilin, yoksa savaşın ateşlerinin sizi ve hırslarınızı tüketeceğini bilin. Akıllıca seçin, bu benim son uyarım." #NT!
+ agot_crown_theft.0114.a: "O zaman savaşa." #NT!
+ agot_crown_theft.0114.b: "Bedeli ne olursa olsun barışı korumak zorundayım." #NT!
+ agot_crown_theft.0114.b.tt: "Tüm unvanlarımı [crown_theft_king_legit_heir.GetTitledFirstNameNoTooltip]'a devredeceğim" #NT!
+  
+  #USURPER RECEIVES LETTER FROM LEGITIMATE HEIR: THEY ACCEPTED THE GIFT 
+ agot_crown_theft.0115.opening: "[crown_thief.GetFirstNameNoTooltip]'a," #NT!
+ agot_crown_theft.0115.desc: "Cömert hediyenizi aldığımı bildirmek için size yazıyorum. Bu jestiniz barış arzunuzu çok iyi anlatıyor, ben de tüm kalbimle karşılık veriyorum. Krallığın iyiliği için aramızdaki dostluğu sürdürmeye çalışalım." #NT!
+ agot_crown_theft.0115.a: "Yapmalıyız." #NT!
+ agot_crown_theft.0215.a: "İyi de, hangi hediyeden bahsediyorsun?" #NT!
+ agot_crown_theft.0215.a.tt: "[usurper_guardian.GetTitledFirstName], sizin adınıza [random_artifact_one.GetName]'i [crown_theft_king_legit_heir.GetTitledFirstName]'ye hediye etti" #NT!
+  
+  #LEGITIMATE HEIR RECEIVES LETTER FROM USURPER: WAR 
+ agot_crown_theft.0116.opening: "[crown_theft_king_legit_heir.GetTitledFirstNameNoTooltip]'a," #NT!
+ agot_crown_theft.0116.desc: "Size ağır bir kalple yazıyorum, çünkü kararlılığınızı etkilemek için yapılan tüm girişimlere rağmen, çabalarımızın boşuna olduğu anlaşılıyor. Ortak bir zemin bulmak için her yolu denediğimi bilin, ancak ne yazık ki bir çıkmazda duruyoruz. Taleplerinize boyun eğemem, çünkü bunu yapmak krallığın güvenine ve istikrarına ihanet etmek olurdu. Belki zaman uzlaşmaya giden bir yol sunacaktır, ancak şimdilik, mevcut durumu kabul etmemiz gerektiğinden korkuyorum." #NT!
+ agot_crown_theft.0216.desc: "Size ağır bir kalple yazıyorum, çünkü kararlılığınızı etkilemek için yapılan tüm girişimlere rağmen, çabalarımızın boşuna olduğu anlaşılıyor. Ortak bir zemin bulmak için her yolu denediğimi bilin, ancak ne yazık ki, bir çıkmazda duruyoruz. Taleplerinize boyun eğemeyiz, çünkü bunu yapmak krallığın güvenine ve istikrarına ihanet etmek anlamına gelir. Belki zaman uzlaşmaya giden bir yol sunacaktır, ancak şimdilik, mevcut durumu kabul etmemiz gerektiğinden korkuyorum." #NT!
+ agot_crown_theft.0116.a: "Haydi savaşa!" #NT!
+  
+  #LEGITIMATE HEIR RECEIVES LETTER FROM USURPER: ABDICATION 
+ agot_crown_theft.0117.t: "[crown_theft_king_legit_heir.GetTitledFirstNameNoTooltip]'a," #NT!
+ agot_crown_theft.0117.desc: "Bu sözleri ağır bir yürekle yazıyorum, ama aynı zamanda krallık için bir umut ışığıyla. Uzun uzun düşündükten ve düşündükten sonra, talebinizi yerine getirmek için ciddi bir karara vardım. Taht benim elimden sizin ellerinize geçecek, bu hareketin barış ve refaha giden yolu açması umuduyla. Krallığın kaderini size emanet ediyorum, bilgelik ve iyilikseverlikle yöneteceğinizi biliyorum. Hükümdarlığınız herkes için birlik ve refahla işaretlensin." #NT!
+ agot_crown_theft.0117.a: "Akıllıca bir karar." #NT!
+  
+  #REALM NOTIFIED ABOUT THE CONFLICT: WAR 
+ agot_crown_theft.0120.t: "[crown_theft_king_legit_heir.Custom('WarOfSuccessionNumbers')] [crown_theft_king_legit_heir.Custom('WarOfSuccessionNames')]" #NT!
+ agot_crown_theft.0120.desc: "Kuzgunlar göklerde dolaşıyor ve diyarın her köşesine uğursuz haberler getiriyor. Savaş davulları yankılanırken ufukta bir fırtına kopuyor ve rakip hak sahipleri [crown_thief.GetTitledFirstName] ve [crown_theft_king_legit_heir.GetTitledFirstName] arasında bir çatışmanın patlak vereceğini haber veriyor.\n\nFısıltılar her kalenin salonlarında yankılanıyor ve gasp hikayesini anlatıyor, [crown_thief.GetTitledFirstNameNoTooltip] tacı ele geçirirken [crown_theft_king.GetTitledFirstNameNoTooltip] [crown_theft_king.GetHerHis] ölüm döşeğinde yatıyor. Şimdi, haklı varis [crown_theft_king_legit_heir.GetTitledFirstNameNoTooltip], haklı olarak [crown_theft_king_legit_heir.GetHersHis] olanı geri almak için savaş ilan ederek açık çağrıyı yaptı." #NT!
+ agot_crown_theft.0220.desc: "Kuzgunlar gökyüzünde dolaşıyor ve diyarın her köşesine uğursuz haberler getiriyor. Savaş davulları yankılanırken ufukta bir fırtına kopuyor ve rakip iddiacılar [crown_thief.GetTitledFirstName], [usurper_guardian.GetTitledFirstName] tarafından destekleniyor ve [crown_theft_king_legit_heir.GetTitledFirstName] arasında bir çatışmanın patlak vereceğini haber veriyor.\n\nFısıltılar her kalenin salonlarında yankılanıyor ve gasp hikayesini anlatıyor, [crown_thief.GetTitledFirstNameNoTooltip] tacı ele geçirirken [crown_theft_king.GetTitledFirstName] [crown_theft_king.GetHerHis] ölüm döşeğinde yatıyor. Şimdi, haklı varis [crown_theft_king_legit_heir.GetTitledFirstNameNoTooltip], haklı olarak [crown_theft_king_legit_heir.GetHersHis] olanı geri almak için savaş ilan ederek açık çağrıyı yaptı." #NT!
+ agot_crown_theft.0320.desc: "Kuzgunlar göklerde dolaşıyor ve diyarın her köşesine uğursuz haberler getiriyor. Savaş davulları yankılanırken ufukta bir fırtına kopuyor ve rakip hak sahipleri piç [crown_thief.GetTitledFirstName] ve [crown_theft_king_legit_heir.GetTitledFirstName] arasında bir çatışmanın patlak vereceğini haber veriyor.\n\nFısıltılar her kalenin salonlarında yankılanıyor ve gasp hikayesini anlatıyor, [crown_thief.GetTitledFirstNameNoTooltip] tacı ele geçirirken [crown_theft_king.GetTitledFirstName] [crown_theft_king.GetHerHis] ölüm döşeğinde yatıyor. Şimdi, haklı varis [crown_theft_king_legit_heir.GetTitledFirstNameNoTooltip], haklı olarak [crown_theft_king_legit_heir.GetHersHis] olanı geri almak için savaş ilan ederek açık çağrıyı yaptı." #NT!
+ agot_crown_theft.0420.desc: "Kuzgunlar göklerde dolaşıyor ve diyarın her köşesine uğursuz haberler getiriyor. Savaş davulları yankılanırken ufukta bir fırtına kopuyor ve rakip hak sahipleri, mirastan mahrum bırakılmış [crown_thief.GetTitledFirstName] ve [crown_theft_king_legit_heir.GetTitledFirstName] arasında bir çatışmanın patlak vereceğini haber veriyor.\n\nFısıltılar her kalenin salonlarında yankılanıyor ve gasp hikayesini anlatıyor, [crown_thief.GetTitledFirstNameNoTooltip] tacı ele geçirirken [crown_theft_king.GetTitledFirstName] [crown_theft_king.GetHerHis] ölüm döşeğinde yatıyor. Şimdi, haklı mirasçı [crown_theft_king_legit_heir.GetTitledFirstNameNoTooltip], haklı olarak [crown_theft_king_legit_heir.GetHersHis] olanı geri almak için savaş ilan ederek açık çağrıyı yaptı." #NT!
+  
+ agot_crown_theft.0120.a: "Bu endişe verici." #NT!
+  
+  #REALM NOTIFIED ABOUT THE CONFLICT: RESOLUTION 
+ agot_crown_theft.0121.t: "Çözülen Bir Çatışma" #NT!
+ agot_crown_theft.0121.desc.usurper: "Bir zamanlar diyarı parçalamakla tehdit eden çatışma, bir zamanlar gaspçı olan [Select_CString(crown_thief.IsFemale,'queen','king')] olan [crown_thief.GetTitledFirstName]'ın artık taht üzerindeki [crown_thief.GetHerHis] iddiasından vazgeçmesiyle sona erdi.\n\nToz duman yatışırken krallık, acımasız rekabetin ardından şekillenen ve yenilenen birlik vaadiyle şekillenen yeni bir döneme hazırlanıyor." #NT!
+ agot_crown_theft.0121.desc.legit: "Bir zamanlar diyarı parçalamakla tehdit eden çatışma, tahtın meşru varisi olan [crown_theft_king_legit_heir.GetTitledFirstName]'ın artık taht üzerindeki iddiasını [crown_theft_king_legit_heir.GetHerHis]'e bırakmasıyla sona erdi.\n\nToz dağılırken krallık, acımasız rekabetin ardından şekillenen ve yenilenen birlik vaadiyle şekillenen yeni bir döneme hazırlanıyor." #NT!
+ agot_crown_theft.0321.desc.usurper: "Bir zamanlar diyarı parçalamakla tehdit eden çatışma, bir zamanlar piç olan [Select_CString(crown_thief.IsFemale,'queen','king')] olan [crown_thief.GetTitledFirstName]'ın artık tahttaki [crown_thief.GetHerHis] iddiasından vazgeçmesiyle sona erdi.\n\nToz duman yatışırken krallık, acımasız rekabetin sonuçları ve yenilenen birlik vaadiyle şekillenen yeni bir döneme hazırlanıyor." #NT!
+ agot_crown_theft.0421.desc.usurper: "Bir zamanlar diyarı parçalamakla tehdit eden çatışma, bir zamanlar gayri meşru olan [Select_CString(crown_thief.IsFemale,'queen','king')] olan [crown_thief.GetTitledFirstName]'ın artık taht üzerindeki [crown_thief.GetHerHis] iddiasından vazgeçmesiyle sona erdi.\n\nToz duman yatışırken krallık, acımasız rekabetin ardından şekillenen ve yenilenen birlik vaadiyle şekillenen yeni bir döneme hazırlanıyor." #NT!
+  
+ agot_crown_theft.0121.a: "Barış devam etsin." #NT!
+  
+  ################### 
+  ### MISC EVENTS ### 
+  ################### 
+  
+  #USURPER GUARDIAN RECEIVES LETTER FROM LEGITIMATE HEIR: ABOUT THEIR PEACE DECISION 
+ agot_crown_theft.0222.opening: "[usurper_guardian.GetTitledFirstNameNoTooltip]'a," #NT!
+ agot_crown_theft.0222.desc: "[Select_CString(crown_thief.IsFemale,'queen','king')]'ımın mütevazı vasalı olarak, [crown_thief.GetHerHis] saltanatının adil ve müreffeh olmasını diliyorum. Diyarın [crown_thief.GetHerHis] yönetimi altında barış ve istikrar bulmasını dilerim." #NT!
+ agot_crown_theft.0222.a: "[crown_theft_king_legit_heir.GetSheHe|U]'ın asla [Select_CString(crown_theft_king_legit_heir.IsFemale,'queen','king')] olması amaçlanmamıştı." #NT!
+  
+  #USURPER GUARDIAN RECEIVES LETTER FROM LEGITIMATE HEIR: ULTIMATUM RECEIVED: WAR OR ABDICATION 
+ agot_crown_theft.0223.opening: "Hain [usurper_guardian.GetTitledFirstNameNoTooltip]'a," #NT!
+ agot_crown_theft.0223.desc: "Geri çekilin, yoksa savaşın ateşlerinin sizi ve [Select_CString(crown_thief.IsFemale,'queen','king')]'ınızı tüketeceğini bilin. Akıllıca seçin, bu benim son uyarım." #NT!
+ agot_crown_theft.0223.a: "Endişe verici." #NT!
+  
+  #KINGMAKER 
+ agot_crown_theft.0224.t: "Sahte Taç Giyme" #NT!
+ agot_crown_theft.0224.desc.you: "Açıkça bir ihanet gösterisinde bulunan [usurper_guardian.GetTitledFirstName], büyük bir meclis önünde [crown_thief.GetFirstName]'i [crown_thief.GetCapitalLocation.GetName]'de taçlandırarak, hakkım olan tahtı gasp etti.\n\nİddialarıma yapılan bu hakaret cevapsız kalamaz." #NT!
+ agot_crown_theft.0224.desc.notyou: "Açıkça bir ihanet örneği sergileyen [usurper_guardian.GetTitledFirstName], [crown_thief.GetTitledFirstName]'i [crown_thief.GetCapitalLocation.GetName]'de büyük bir meclisin önünde taçlandırarak, [crown_theft_king_legit_heir.GetTitledFirstName]'e ait olan tahtı gasp etti." #NT!
+ agot_crown_theft.0224.a: "Öfkeme hazır ol, Kral Yaratıcı." #NT!
+ agot_crown_theft.0224.queen.a: "Öfkeme hazır ol, Kraliçe Yaratıcı." #NT!
+ agot_crown_theft.0224.b: "İlginç." #NT!
+  
+  #KINGMAKER followup 
+ agot_crown_theft.0225.t: "Kral Yapıcı" #NT!
+ agot_crown_theft.0225.queen.t: "Kraliçe Yapıcı" #NT!
+ agot_crown_theft.0225.desc.king: "Koruyucum [usurper_guardian.GetTitledFirstName], büyük bir meclis önünde beni [crown_thief.GetCapitalLocation.GetName] taçlandırdı.\n\nBu günden itibaren, ben haklı [Select_CString(crown_thief.IsFemale,'queen','king')]'yim." #NT!
+ agot_crown_theft.0225.desc.guardian: "Büyük bir meclis önünde [crown_thief.GetCapitalLocation.GetName]'de [crown_thief.GetTitledFirstName]'ı taçlandırdım.\n\nBu günden itibaren [crown_thief.GetSheHe] haklı [Select_CString(crown_thief.IsFemale,'queen','king')]'tür." #NT!
+ agot_crown_theft.0225.a: "Saltanat bizimdir." #NT!
+  
+  #BASTARD CAN LEGIZIMIZE 
+ agot_crown_theft.0318.t: "Piç Kralın Yükselişi" #NT!
+ agot_crown_theft.0318.desc: "Doğuştan gelen hakkım olmasına rağmen tahtı ele geçirdiğimden, şimdi kritik bir anda duruyorum. Kendimi meşrulaştırma ve tacı tartışmasız bir yetkiyle talep etme şansına erişebiliyorum.\n\nYine de, soru şu: Meşruiyeti ve getirdiği tam gücü kucaklamalı mıyım, yoksa gölgelerde, tek başına güçle hükmeden bir piç kral olarak mı kalmalıyım?" #NT!
+ agot_crown_theft.0318.a: "Doğuştan gelen hakkımı talep etmeliyim." #NT!
+ agot_crown_theft.0318.b: "Ben ne olduğumu asla unutmayacağım, çünkü dünya da unutmayacak." #NT!
+ agot_crown_theft.0318.b.tt: "Sen gayri meşru bir piç olarak kalıyorsun" #NT!
+  
+  #REALM NOTIFIED: BASTARD KING 
+ agot_crown_theft.0322.t: "Gölgedeki Bir Taht" #NT!
+ agot_crown_theft.0322.desc: "Rüzgarda bir bayrak gibi açılan şaşırtıcı gerçekle birlikte diyar fısıltılarla çalkalanıyor, bir piç [crown_thief.GetHerselfHimself] için tahtı ele geçirmiş, asil doğuştan gelen haklara meydan okumuş.\n\nŞok saray çevrelerinde yankılanıyor ve sıradan insanların kulağına ulaşıyor, tartışmaları ateşliyor ve yeni hükümdarın saltanatının meşruiyetine dair şüpheler yaratıyor." #NT!
+ agot_crown_theft.0322.a: "Piç kurusu [Select_CString(crown_thief.IsFemale,'queen','king')]?" #NT!
+  
+  #BASTARD CAN LEGIZIMIZE 
+ agot_crown_theft.0418.t: "Doğuştan Hakkımı Geri Almak" #NT!
+ agot_crown_theft.0418.desc: "Asil geleneklerin kurallarına meydan okuyarak, miras hakkım elinden alınmış olmasına rağmen tahtı ele geçirdim.\n\nŞimdi, haklı statümü geri kazandırmak için adımlar attım, miras hakkımın elinden alınmasını kaldırdım ve taç üzerindeki iddiamı teyit ettim." #NT!
+ agot_crown_theft.0418.a: "Taht benimdir." #NT!
+  
+  #REALM NOTIFIED: BASTARD KING 
+ agot_crown_theft.0422.t: "Gaspçı" #NT!
+ agot_crown_theft.0422.desc: "Rüzgarda bir bayrak gibi açılan çarpıcı gerçekle birlikte diyar fısıltılarla çalkalanıyor; kraliyet ailesinin mirasından mahrum bırakılmış bir üyesi, asil doğuştan gelen haklar geleneğine meydan okuyarak [crown_thief.GetHerselfHimself] karşılığında tahtı ele geçiriyor.\n\nŞok, saray çevrelerinde yankılanıyor ve sıradan insanların kulağına ulaşıyor, tartışmaları ateşliyor ve yeni hükümdarın saltanatının meşruiyetine dair şüpheler yaratıyor." #NT!
+ agot_crown_theft.0422.a: "Gayri meşru bir [Select_CString(crown_thief.IsFemale,'queen','king')] mı?" #NT!
+  
+  #The prince arrives 
+ agot_crown_theft.0523.t: "Düşmüş Varisin Tapınağı" #NT!
+ agot_crown_theft.0523.desc: "[crown_theft_king_legit_heir.GetTitledFirstName] ve [crown_theft_king_legit_heir.GetHerHis] eşi, [legit_spouse.GetTitledFirstName], başkentten kaçmış, yorgun ve yoksul bir şekilde sarayıma varıyorlar. Gaspçı tahtı ele geçirmiş ve onları sürgüne göndermiş.\n\nŞimdi, haklı olarak kendilerine ait olanı geri almak için destek toplamayı umarak, benim tavsiyemi ve yardımımı istiyorlar." #NT!
+ agot_crown_theft.0523.a: "Artık güvendeler." #NT!
+  
+  #Spouse's House Head decides about support 
+ agot_crown_theft.0518.t: "Silahlara Çağrı" #NT!
+ agot_crown_theft.0518.desc: "Gasp edilen varis ve [crown_theft_king_legit_heir.GetHerHis] eş benim sarayımda sığınma ararken, [crown_theft_king_legit_heir.GetSheHe] tahtı geri alma [crown_theft_king_legit_heir.GetHerHis] arzusunu bana [crown_theft_king_legit_heir.GetHerHis] itiraf ediyor. Krallığın geleceğinin ağırlığı artık omuzlarımda.\n\nBenim desteğim olmadan, [crown_theft_king_legit_heir.GetHerHis] dava mahkûm görünüyor. Gücümü [crown_theft_king_legit_heir.GetHerHim] ödünç verip topraklarımın istikrarını mı riske atayım, yoksa reddedip kendi krallığımın huzurunu mu koruyayım?" #NT!
+ agot_crown_theft.0518.desc.already_here: "Gasp edilen varis benim sarayımda sığınak ararken, [crown_theft_king_legit_heir.GetSheHe] bana tahtı geri alma [crown_theft_king_legit_heir.GetHerHis] arzusunu itiraf ediyor. Krallığın geleceğinin ağırlığı artık omuzlarımda.\n\nBenim desteğim olmadan, [crown_theft_king_legit_heir.GetHerHis] dava mahkûm görünüyor. Gücümü [crown_theft_king_legit_heir.GetHerHim] ödünç verip topraklarımın istikrarını mı riske atayım, yoksa reddedip kendi krallığımın huzurunu mu koruyayım?" #NT!
+ agot_crown_theft.0518.a: "Ben bu savaşı desteklemeyeceğim." #NT!
+ agot_crown_theft.0518.b: "Yardım etmem lazım [crown_theft_king_legit_heir.GetHerHim]." #NT!
+ agot_crown_theft.0518.b.tt: "Eğer [crown_theft_king_legit_heir.GetTitledFirstNameNoTooltip], [Select_CString(crown_thief.IsFemale,'queen','king')]'e savaş açmaya karar verirse, sen savaş lideri olacaksın." #NT!
+  
+  #No Support 
+ agot_crown_theft.0519.t: "Bir Umut Söndü" #NT!
+ agot_crown_theft.0519.desc: "[landed_helper.GetTitledFirstName] tahtı geri almak için yardım talebimi reddettiğinde kalbim sızlıyor. Reddedilmem, gaspçının krallık üzerindeki hakimiyetine meydan okumak için gereken desteği bana bırakıyor.\n\nHak ettiğim koltuğa giden yol artık tıkalı görünüyor ve bu aksilik bana ağır geliyor. Adalet ve doğuştan hakkımı geri alma hayali şimdilik bir kenara bırakılmalı." #NT!
+ agot_crown_theft.0519.a: "Ben sabredeceğim." #NT!
+  
+  #Usurper Won 
+ agot_crown_theft.0522.t: "Güvence Altına Alınan Bir Krallık" #NT!
+ agot_crown_theft.0522.desc: "Devrik varis [crown_theft_king_legit_heir.GetTitledFirstName]'ın, saltanatımla mücadele etmek için gereken desteğe sahip olmadığı haberi bana ulaşıyor. [crown_theft_king_legit_heir.GetHerHis] Bu mücadeledeki yalnızlık, konumumu güçlendiriyor ve tahttaki tutunumu sağlamlaştırıyor.\n\nHer geçen an, yönetimim daha da sağlamlaşıyor, [crown_theft_king_legit_heir.GetTitledFirstNamePossessive] ise [crown_theft_king_legit_heir.GetHerHis] doğuştan gelen hakkını geri alma umutları yalnızlık içinde azalıyor." #NT!
+ agot_crown_theft.0522.a: "Ve şimdi benim hükümdarlığım başlıyor." #NT!
+  
+  #REALM NOTIFIED ABOUT THE CONFLICT: WAR 
+ agot_crown_theft.0520.t: "Veraset Savaşı" #NT!
+ agot_crown_theft.0520.desc: "Kuzgunlar göklerde dolaşıyor ve diyarın her köşesine uğursuz haberler getiriyor. Savaş davulları yankılanırken ufukta bir fırtına kopuyor ve rakip hak sahipleri [crown_thief.GetTitledFirstName] ve [crown_theft_king_legit_heir.GetTitledFirstName] arasında bir çatışmanın patlak vereceğini haber veriyor.\n\nFısıltılar her kalenin salonlarında yankılanıyor ve gasp hikayesini anlatıyor, [crown_thief.GetTitledFirstNameNoTooltip] tacı ele geçirirken [crown_theft_king.GetTitledFirstName] ölüm döşeğinde yatıyor. Şimdi, haklı varis [crown_theft_king_legit_heir.GetTitledFirstNameNoTooltip], [landed_helper.GetTitledFirstName]'in yardımıyla, haklı olarak [crown_theft_king_legit_heir.GetHersHis] olanı geri almak için savaş ilan ederek açık çağrıyı yaptı." #NT!
+  
+ agot_crown_theft.0623.desc: "[crown_theft_king_legit_heir.GetTitledFirstName] yorgun ve yoksul bir şekilde başkentten kaçarak sarayıma geldi. Gaspçı tahtı ele geçirdi ve [crown_theft_king_legit_heir.GetHerHis]'i sürgüne gönderdi.\n\nŞimdi, [crown_theft_king_legit_heir.GetSheHe] haklı olarak [crown_theft_king_legit_heir.GetHersHis] olanı geri almak için destek toplamayı umarak benim tavsiyemi ve yardımımı istiyor." #NT!
+ agot_crown_theft.0623.a: "[crown_theft_king_legit_heir.GetSheHe|U] artık güvende." #NT!
+  
+ agot_crown_theft.0618.desc: "Gasp edilen varis benim sarayımda sığınak ararken, [crown_theft_king_legit_heir.GetSheHe] bana tahtı geri alma [crown_theft_king_legit_heir.GetHerHis] arzusunu itiraf ediyor. Krallığın geleceğinin ağırlığı artık omuzlarımda.\n\nBenim desteğim olmadan, [crown_theft_king_legit_heir.GetHerHis] dava mahkûm görünüyor. Gücümü [crown_theft_king_legit_heir.GetHerHim] ödünç verip topraklarımın istikrarını mı riske atayım, yoksa reddedip kendi krallığımın huzurunu mu koruyayım?" #NT!
+  
+ agot_crown_theft.0722.desc.guardian: "Devrik varis [crown_theft_king_legit_heir.GetTitledFirstName]'ın, saltanatımla mücadele edebilecek gerekli desteğe sahip olmadığı haberi bana ulaştı. [crown_theft_king_legit_heir.GetHerHis] Bu mücadeledeki yalnızlık, pozisyonumu güçlendiriyor." #NT!
+ agot_crown_theft.0722.b: "Ve şimdi benim saltanatım başlıyor." #NT!
+  
+ agot_crown_theft.0720.desc: "Kuzgunlar gökyüzünden geçerek diyarın her köşesine uğursuz haberler getiriyor. Savaş davulları yankılanırken ufukta bir fırtına kopuyor ve rakip iddiacılar [crown_thief.GetTitledFirstName], [usurper_guardian.GetTitledFirstName] tarafından destekleniyor ve [crown_theft_king_legit_heir.GetTitledFirstName] arasında bir çatışmanın patlak vereceğini haber veriyor.\n\nFısıltılar her kalenin salonlarında yankılanıyor ve gasp hikayesini anlatıyor, [crown_thief.GetTitledFirstNameNoTooltip] tacı ele geçirirken [crown_theft_king.GetTitledFirstName] ölüm döşeğinde yatıyor. Şimdi, haklı mirasçı [crown_theft_king_legit_heir.GetTitledFirstNameNoTooltip], [landed_helper.GetTitledFirstName]'nın yardımıyla, haklı olarak [crown_theft_king_legit_heir.GetHersHis] olanı geri almak için savaş ilan ediyor." #NT!
+  
+  ####################### 
+  ### POST-WAR EVENTS ### 
+  ####################### 
+ agot_crown_theft.9966.t: "Yaklaşan Bir Savaş" #NT!
+ agot_crown_theft.9966.legit.desc: "Yaklaşan bir savaş haberi bana ulaştığında, diyarda bir huzursuzluk hissi hakim oluyor. Gaspçı [crown_thief.GetTitledFirstName], tahtı haklı varis [crown_theft_king_legit_heir.GetTitledFirstName]'den ele geçirdi ve şimdi krallık çatışmanın eşiğinde.\n\nBir vasal olarak, sadakatlerimi gözden geçirmeli ve yaklaşan savaşta kimi destekleyeceğime karar vermeliyim. Mevcut hükümdar [crown_thief.GetTitledFirstName]'ın yanında mı durmalıyım yoksa tahtın gerçek varisi [crown_theft_king_legit_heir.GetTitledFirstNameNoTooltip]'ü mü desteklemeliyim?" #NT!
+ agot_crown_theft.9966.helper.desc: "Yaklaşan bir savaş haberi bana ulaştığında, diyarda bir huzursuzluk hissi hakim oluyor. Gaspçı [crown_thief.GetTitledFirstName] tahtı haklı varis [crown_theft_king_legit_heir.GetTitledFirstName]'den ele geçirdi ve şimdi krallık çatışmanın eşiğinde.\n\nBir vasal olarak, sadakatlerimi gözden geçirmeli ve yaklaşan savaşta kimi destekleyeceğime karar vermeliyim. Mevcut hükümdar [crown_thief.GetTitledFirstNameNoTooltip]'nin yanında mı durmalıyım yoksa gerçek varis [crown_thief.GetTitledFirstNamePossessive] sadık müttefik [landed_helper.GetTitledFirstName]'ü mü desteklemeliyim?" #NT!
+ agot_crown_theft.9966.a: "İsyanın davası haklıdır!" #NT!
+ agot_crown_theft.9966.a.tt: "Eğer bir veraset savaşı çıkarsa, [main_attacker.GetFullName] tarafında isyana katılacaksın." #NT!
+ agot_crown_theft.9966.b: "İsyancılar bunun bedelini çok ağır ödeyecekler." #NT!
+ agot_crown_theft.9966.b.tt: "Eğer bir veraset savaşı çıkarsa, [crown_thief.GetFullName] tarafında savunucu olarak savaşa katılacaksın." #NT!
+ agot_crown_theft.9966.c: "Karışmak için hiçbir neden göremiyorum." #NT!
+  
+ agot_crown_theft.9977.t: "Gücün Pekiştirilmesi" #NT!
+ agot_crown_theft.9977.desc: "Zaferim güvence altına alındıktan ve yönetimim sağlam bir şekilde kurulduktan sonra, krallığın tam kontrolünü ele geçirme zamanı geldi. Ancak, [attacker.GetTitledFirstName] hala haklı iddiayla bana ait olan unvanlara ve topraklara tutunuyor.\n\nBunların [attacker.GetTitledFirstNameNoTooltip]'den iadesini talep etmek ve bu topraklar üzerindeki hakimiyetimi iddia etmek benim gücüm dahilinde." #NT!
+ agot_crown_theft.9977.a: "[attacker.GetTitledFirstNameNoTooltip], [attacker.GetHerHis] topraklarının tamamını teslim etmelidir." #NT!
+ agot_crown_theft.9977.b: "[attacker.GetSheHe|U] şimdilik bunları saklayabilir." #NT!
+  
+ agot_crown_theft.9978.t: "Teslim olmak" #NT!
+ agot_crown_theft.9978.desc: "Gaspçı [defender.GetTitledFirstName] zaferle ortaya çıktı ve şimdi [defender.GetSheHe] tüm topraklarımın teslim edilmesini istiyor.\n\nBu toprakları [defender.GetHerHis]'nin gücüne karşı savunacak hiçbir yolum olmadığından, teslim olmak zorundayım." #NT!
+ agot_crown_theft.9978.a: "Dünya ne kadar düştü..." #NT!
+  
+ agot_crown_theft.9990.t: "Hak Edilen Toprakların Geri Alınması" #NT!
+ agot_crown_theft.9990.desc: "Gaspçı yenilmiş ve iddiam kesin olarak belirlenmişken, haklı olarak benim olanı geri verme zamanı geldi. Ancak, bir zamanlar gaspçıya sadakat yemini eden lordlar hala doğuştan evime ait olan unvanlara ve topraklara tutunuyorlar.\n\n[unlawful_ruler.GetTitledFirstName]'dan geri dönmelerini talep etmek ve bu topraklar üzerindeki hakimiyetimi bir kez daha iddia etmek benim gücüm dahilinde." #NT!
+ agot_crown_theft.9990.a: "Unvanlarımı derhal iade edin." #NT!
+ agot_crown_theft.9990.b: "[unlawful_ruler.GetSheHe|U] şimdilik bunları saklayabilir." #NT!
+  
+ agot_crown_theft.9991.t: "Gasp Edilen Toprakların Teslimi" #NT!
+ agot_crown_theft.9991.desc: "[legitimate_king.GetTitledFirstName] galip geldi ve şimdi [legitimate_king.GetSheHe] gaspçı tarafından bana hukuka aykırı olarak verilen toprakların iadesini talep ediyor.\n\nBu toprakları [legitimate_king.GetHerHis] gücüne karşı savunacak hiçbir yolum olmadığından, hakkım olmayan şeyleri kabul edip vazgeçmeliyim." #NT!
+ agot_crown_theft.9991.a: "[legitimate_king.GetHerHis] toprağı iade edeceğim." #NT!
+  
+ agot_crown_theft.9992.t: "Düzenin Yeniden Sağlanması" #NT!
+ agot_crown_theft.9992.desc: "[unlawful_ruler.GetTitledFirstName], haklı olarak bana ait olan toprakları geri vermeyi akıllıca seçti ve eski düzeni geri getirme yolunda önemli bir adım attı. Her geri almayla, bir zamanlar krallığımızı tanımlayan istikrara ve birliğe daha da yaklaşıyoruz." #NT!
+ agot_crown_theft.9992.a: "[unlawful_ruler.GetSheHe|U] adaletli davranmıştır." #NT!

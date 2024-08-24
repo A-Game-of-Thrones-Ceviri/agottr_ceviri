@@ -1,0 +1,41 @@
+﻿l_english:
+  ## Night's Watch Struggle Loc ## 
+ GREAT_RANGING_WAR_NAME: "Büyük Menzil"
+ GREAT_RANGING_WAR_NAME_BASE: "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
+ GREAT_RANGING_CB: "Büyük Menzil"
+ great_ranging_defeat_desc: "Yabanıllar artık Gece Nöbetçileri'nin eski halinin gölgesi olduğunu biliyorlar."
+ great_ranging_victory_desc: "Yabanıllar, insan aleminin güvenliğini sağlamak için kendi aralarında çekişmeye devam edecekler."
+  
+  #AGOT TODO 
+ great_ranging_white_peace_desc: "Yer tutucu Beyaz Barış Metni"
+ great_ranging_invalidated_desc: "Yer tutucu geçersiz kılınan metin"
+  
+ GENERIC_RANGING_WAR_NAME: "Duvarın Ötesindeki Menzil"
+ GENERIC_RANGING_NAME_BASE: "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
+ GENERIC_RANGING_CB: "Duvarın Ötesindeki Menzil"
+  
+ nw_generic_ranging_cb_desc_victory_attacker: "Hedef [county|E]'nin [development|E]'ine orantılı olarak [gold|E] kazanırsınız, bu da azalacaktır.\n$border_raid_building_tt$\n$border_raid_warning_tt$"
+ nw_generic_ranging_cb_desc_victory_defender: "[attacker.GetName], hedef [county|E]'ün [development|E]'sine orantılı olarak [gold|E] kazanır ve bu da azalacaktır.\n$border_raid_building_tt$\n$border_raid_warning_tt$"
+ nw_generic_ranging_cb_desc_white_peace_attacker: "Keşif girişiminizden vazgeçmeyi tercih ediyorsunuz."
+ nw_generic_ranging_cb_desc_white_peace_defender: "[attacker.GetName], [attacker.GetHerHis] menzilli seferi terk etti."
+ nw_generic_ranging_cb_desc_defeat_attacker: "Menzil keşif seferiniz muhteşem bir şekilde başarısız oluyor ve geride [gold|E] değerinde silah ve malzeme bırakıyor."
+ nw_generic_ranging_cb_desc_defeat_defender: "[attacker.GetName] felaketle sonuçlanan keşif gezisinde [gold|E] silah ve erzak bırakır."
+ destroy_random_building_tt: "[raid_county.GetName]'deki rastgele bir [building|E] yok edilir ve ekstra [gold_i] kazanılır"
+ border_raid_building_tt: "[building|E] da yok edilebilir."
+ border_raid_warning_tt: "@warning_icon! #X Hayır [titles|E] el değiştirmeyecek.#!"
+ nw_generic_ranging_message_title: "Gece Nöbeti Menzili"
+  
+ btw_reclamation_cb_victory_desc_attacker_vassalize: "Sen vasallaştırıyorsun [defender.GetShortUIName|U]"
+ btw_reclamation_cb_victory_desc_defender_vassalize: "[attacker.GetShortUIName|U] sizi vasallaştırıyor"
+ btw_reclamation_cb_victory_desc_attacker_conquer_1: "$EFFECT_LIST_BULLET$Hedefteki [defender.GetShortUINamePossessive|U]'den [liege|E] [struggle_involved|E] daha düşük [rank|E] [vassals|E] olursunuz [duchy|E]"
+ btw_reclamation_cb_victory_desc_attacker_conquer_2: "$EFFECT_LIST_BULLET$Tartışmalı [struggle_uninvolved|E]'i elde tuttunuz [counties|E] ve [holders|E]'ün [duchy|E]\n dışındaki arazileri var"
+ btw_reclamation_cb_victory_desc_defender_conquer_1: "$EFFECT_LIST_BULLET$[attacker.GetShortUIName|U] hedefteki [defender.GetShortUINamePossessive|U]'ün [liege|E]'si olur [struggle_involved|E] daha düşük [rank|E] [vassals|E] [duchy|E]"
+ btw_reclamation_cb_victory_desc_defender_conquer_2: "$EFFECT_LIST_BULLET$[attacker.GetShortUIName|U] kazanımlar itiraz edilen un-[struggle_involved|E] tutulan [counties|E] ve [holders|E]'ün [duchy|E]\n dışındaki arazileri olanlar"
+  
+ btw_reclamation_cb_white_peace_desc_vassalize: "[defender.GetShortUIName|U] kalacak [independent|E]"
+ btw_reclamation_cb_white_peace_desc_conquer: "[defender.GetShortUIName|U] tartışmalı olanı koruyacak [titles|E]"
+ btw_reclamation_cb_defeat_desc_vassalize: "$btw_reclamation_cb_white_peace_desc_vassalize$"
+ btw_reclamation_cb_defeat_desc_conquer: "$btw_reclamation_cb_white_peace_desc_conquer$"
+ btw_reclamation_cb_defeat_desc: "$btw_reclamation_cb_white_peace_desc$"
+  
+ CB_COST_BTW_RECLAMATION: "Maliyetler [SCOPE.ScriptValue('fp2_expel_interloper_county_cost_value')] [prestige|E] başına-[county|E]"

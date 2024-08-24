@@ -1,0 +1,76 @@
+﻿l_english:
+ small_councillor: "Küçük Meclis Üyesi"
+ invite_to_small_council: "Küçük Konsey'e Davet"
+ invite_to_small_council_prompt: "Bu vesileyle sizden [recipient.Custom2('RelationToMe',SCOPE.sC('secondary_recipient'))], [secondary_recipient.GetName]'inizi Küçük Konseyimde hizmet etmek üzere serbest bırakmanızı rica ediyorum. Geçici bir akran vasal olarak, elbette bir müttefik olarak size bağlı kalacaklar."
+ recipient_secondary_invite_to_small_council: "Küçük Meclis Üyesi"
+ invite_to_small_council_accepted: "[secondary_recipient.GetShortUIName|U] konseyinize katılabilmek için doğrudan vasalınız olacak."
+ invite_to_small_council_declined: "[secondary_recipient.GetShortUIName|U] konseyinize katılmaz."
+  
+ small_council_vassal_retained_desc: "Zaten [TARGET_CHARACTER.GetShortUIName] Vasal'dan birini kullanıyorsunuz."
+  
+  
+ demanded_my_vassal_opinion: "Vassalımı İstedim"
+ refused_vassal_appointment_opinion: "Vassal'dan vazgeçmeyi reddetti"
+  
+  
+ SMALL_COUNCIL_ON_THE_COUNCIL: "[secondary_recipient.GetShortUIName] benim Danışmanım: $VALUE|=+0$"
+ SMALL_COUNCIL_MY_KNIGHT: "[secondary_recipient.GetShortUIName] benim [recipient.GetLiege.Custom('KnightCulture')]'im olarak hizmet ediyor: $VALUE|=+0$"
+ SMALL_COUNCIL_THEIR_RELATIVE: "[secondary_recipient.GetShortUIName] benim akrabam: $VALUE|=+0$"
+  
+ small_councillor_custom: "[CHARACTER.Custom('small_councillor_custom')]"
+ small_councillor_custom_input: "[ROOT.Char.GetLocalizedText('small_council_title')]"
+  
+ set_relation_small_councillor: "[TARGET_CHARACTER.GetTitledFirstName|V] küçük konseyinizde hizmet vermeye başlar."
+  
+ ### MODIFIERS ### 
+  
+ small_council_vassal_repatriation: "Vasal Geri Dönüşü"
+ small_council_vassal_repatriation_desc: "Bu karakterin vasallarından biri, hükümdarının konseyinde görev yapıyor, ancak onlara vergi ve harç göndermeye devam ediyor."
+  
+ small_council_vassal_low_tax_low_levies_modifier: "$small_council_vassal_repatriation$"
+ small_council_vassal_low_tax_low_levies_modifier_desc: "$small_council_vassal_repatriation_desc$"
+  
+ small_council_vassal_low_tax_normal_levies_modifier: "$small_council_vassal_repatriation$"
+ small_council_vassal_low_tax_normal_levies_modifier_desc: "$small_council_vassal_repatriation_desc$"
+  
+ small_council_vassal_low_tax_high_levies_modifier: "$small_council_vassal_repatriation$"
+ small_council_vassal_low_tax_high_levies_modifier_desc: "$small_council_vassal_repatriation_desc$"
+  
+ small_council_vassal_low_tax_extortionate_levies_modifier: "$small_council_vassal_repatriation$"
+ small_council_vassal_low_tax_extortionate_levies_modifier_desc: "$small_council_vassal_repatriation_desc$"
+  
+ small_council_vassal_normal_tax_low_levies_modifier: "$small_council_vassal_repatriation$"
+ small_council_vassal_normal_tax_low_levies_modifier_desc: "$small_council_vassal_repatriation_desc$"
+  
+ small_council_vassal_normal_tax_normal_levies_modifier: "$small_council_vassal_repatriation$"
+ small_council_vassal_normal_tax_normal_levies_modifier_desc: "$small_council_vassal_repatriation_desc$"
+  
+ small_council_vassal_normal_tax_high_levies_modifier: "$small_council_vassal_repatriation$"
+ small_council_vassal_normal_tax_high_levies_modifier_desc: "$small_council_vassal_repatriation_desc$"
+  
+ small_council_vassal_normal_tax_extortionate_levies_modifier: "$small_council_vassal_repatriation$"
+ small_council_vassal_normal_tax_extortionate_levies_modifier_desc: "$small_council_vassal_repatriation_desc$"
+  
+ small_council_vassal_high_tax_low_levies_modifier: "$small_council_vassal_repatriation$"
+ small_council_vassal_high_tax_low_levies_modifier_desc: "$small_council_vassal_repatriation_desc$"
+  
+ small_council_vassal_high_tax_normal_levies_modifier: "$small_council_vassal_repatriation$"
+ small_council_vassal_high_tax_normal_levies_modifier_desc: "$small_council_vassal_repatriation_desc$"
+  
+ small_council_vassal_high_tax_high_levies_modifier: "$small_council_vassal_repatriation$"
+ small_council_vassal_high_tax_high_levies_modifier_desc: "$small_council_vassal_repatriation_desc$"
+  
+ small_council_vassal_high_tax_extortionate_levies_modifier: "$small_council_vassal_repatriation$"
+ small_council_vassal_high_tax_extortionate_levies_modifier_desc: "$small_council_vassal_repatriation_desc$"
+  
+ small_council_vassal_extortionate_tax_low_levies_modifier: "$small_council_vassal_repatriation$"
+ small_council_vassal_extortionate_tax_low_levies_modifier_desc: "$small_council_vassal_repatriation_desc$"
+  
+ small_council_vassal_extortionate_tax_normal_levies_modifier: "$small_council_vassal_repatriation$"
+ small_council_vassal_extortionate_tax_normal_levies_modifier_desc: "$small_council_vassal_repatriation_desc$"
+  
+ small_council_vassal_extortionate_tax_high_levies_modifier: "$small_council_vassal_repatriation$"
+ small_council_vassal_extortionate_tax_high_levies_modifier_desc: "$small_council_vassal_repatriation_desc$"
+  
+ small_council_vassal_extortionate_tax_extortionate_levies_modifier: "$small_council_vassal_repatriation$"
+ small_council_vassal_extortionate_tax_extortionate_levies_modifier_desc: "$small_council_vassal_repatriation_desc$"

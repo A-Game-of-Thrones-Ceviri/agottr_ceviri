@@ -1,0 +1,95 @@
+﻿l_english:
+  
+  ### Declare Private War 
+ rv_declare_private_war_interaction: "Özel Savaş İlan Et"
+ rv_liege_warning: "Defender'ın [liege|E]'ı savaşa katılacak"
+  ### Rescue CB 
+ RESCUE_WAR_NAME: "Özgür Tutsakları"
+ CB_RESCUE_COST: "Hedeflenen Esir Sayısı"
+ CB_RESCUE_CRIMINAL_COST: "Hedeflenen Suçluların Sayısı"
+ rv_release_effect: "• [Scope.GetCharacter.GetShortUIName|U] serbest bırakılacak"
+ rv_other_effect: "• Müttefikleriniz, katkılarına göre [prestige_i][EmptyScope.ScriptValue('medium_prestige_value')|+0] paylaşır \n• [Scope.GetCharacter.GetImprisonedBy.GetUIName|U]:\n • Müttefikleriniz, katkılarına göre [prestige_i][EmptyScope.ScriptValue('medium_prestige_value')|V0] paylaşır\n • [Scope.GetCharacter.GetImprisonedBy.GetHerHis] müttefikinizin katkılarına göre [Scope.GetCharacter.GetImprisonedBy.GetHerHis] görüşünü artırır"
+ rescue_war_victory_desc: "[defender.GetShortUINamePossessive] zindanda seçilen tüm [prisoners|E]'ı serbest bırakırsın."
+ rescue_war_victory_desc_defender: "[attacker.GetShortUIName|U] Zindanınızdaki listelenenlerin hepsini serbest bırakın [prisoners|E]."
+ rv_failed_rescue: "Başarısız Kurtarma"
+ rv_rescue_war_invalidated_desc: "Esirleri Özgürleştirme Savaşı geçersiz kılındı!"
+ rv_rescue_war_white_peace_desc: "Hayır [prisoner|E] serbest bırakılmadı."
+ rv_rescue_war_defeat_desc: "$rv_rescue_war_white_peace_desc$"
+ rv_failed_rescue_desc_1: "[rescue_target_killer.GetName] tarafından öldürülen [rescue_target_dead.GetName]'ı kurtarmayı başaramadım"
+ rv_failed_rescue_desc_second_perspective_1: "[owner.GetName], [rescue_target_killer.GetName] tarafından öldürülen [rescue_target_dead.GetName]'i kurtarmayı başaramadı"
+ rv_failed_rescue_desc_third_perspective_1: "[owner.GetName], [rescue_target_killer.GetName] tarafından öldürülen [rescue_target_dead.GetName]'i kurtaramadı"
+ RV_IS_CRIMINAL: "Bu karakter [crime|E]'ine karşılık [imprisoned|E]'dır. Onları kurtarmak ek [prestige|E] maliyete neden olacak ve sizi ve tutsağını [rivals|E] olmaya itecektir."
+  
+  ### Rescue_Opinions 
+ rv_rescued_me: "Beni kurtardı"
+ rv_rescued_family: "Kurtarıldı [family_member|E]"
+ rv_rescued_former_spouse: "Beni [concubinage|E]'dan eski [spouse|E] olarak kurtardı"
+ rv_rescued_close_relation: "Kurtarılan Yakın Akraba"
+ rv_rescued_very_close: "Kurtarıldı [best_friend|E] veya [soulmate|E]"
+ rv_rescued_rival: "Kurtarıldı [rival|E]"
+ rv_rescued_nemesis: "Kurtarıldı [nemesis|E]"
+ rv_attempt_free_my_criminal: "[criminal|E]'ı Kurtarmaya Çalıştım"
+ rv_attempted_rescuing_me: "Beni kurtarmaya çalıştı"
+ rv_attempted_rescuing_family: "Kurtarmaya Çalışıldı [family_member|E]"
+ rv_attempted_rescuing_close_relation: "Yakın Akrabasını Kurtarmaya Çalıştı"
+ rv_attempted_rescuing_very_close: "Kurtarma girişimi [best_friend|E] veya [soulmate|E]"
+ rv_attempted_rescuing_rival: "Kurtarmaya Çalışıldı [rival|E]"
+ rv_attempted_rescuing_nemesis: "Kurtarmaya Çalışıldı [nemesis|E]"
+ rv_avenged_family: "İntikam Alındı ​​[family_member|E]"
+ rv_avenged_close_relation: "İntikam Alınmış Yakın İlişki"
+ rv_avenged_very_close: "İntikam alındı ​​[best_friend|E] veya [soulmate|E]"
+  
+  ### Revenge CB 
+ REVENGE_WAR_NAME: "İntikam Savaşı"
+ rv_revenge_war: "İntikam Savaşı"
+ CB_REVENGE_COST: "İntikam Alınacak Kurbanlar"
+ REVENGE_LABEL: "İntikam Alınacak Kurbanlar"
+ rv_no_revenge_target_trigger: "rv_intikam_hedefi_yok"
+ rv_no_revenge_target: "İntikam alınacak kimse yok"
+ revenge_war_victory_desc: "Yakınlarınıza karşı işlenen [defender.GetShortUINamePossessive] suçun intikamını alırsınız."
+ revenge_war_victory_desc_defender: "[attacker.GetShortUIName|U], [attacker.GetHerHim]'e yakın olanlara karşı işlediğiniz suçların intikamını alır."
+ rv_revenge_war_white_peace_desc: "[defender.GetShortUIName|U] tarafından işlenen suçların intikamı alınmadı."
+ rv_revenge_war_defeat_desc: "[defender.GetShortUIName|U] tarafından işlenen suçların intikamı alınmadı. [attacker.GetShortUIName|U] Savaş Tazminatı ödeyecek, [attacker.GetShortUIName|U] [prestige_i][EmptyScope.ScriptValue('major_prestige_value')|-0] kaybedecek, [defender.GetShortUIName|U] [attacker.GetShortUIName|U]'e [imprisonment_reason|E] kazanacak."
+ rv_revenge_war_invalidated_desc: "İntikam savaşı geçersizdir!"
+  
+  # Successfule revenge memory 
+ rv_successful_revenged_lover: "Başarılı İntikam"
+ rv_revenged_lover_desc_1: "[target_killer.GetName] tarafından öldürülen sevgilim [target_revenged.GetName]'ın intikamını aldım"
+ rv_revenged_lover_desc_second_perspective_1: "[target_killer.GetName] tarafından öldürülen sevgilin [target_revenged.GetName]'ın intikamını aldın"
+ rv_revenged_lover_desc_third_perspective_1: "[owner.GetName], [target_killer.GetName] tarafından öldürülen [owner.GetHerHis] sevgilisi [target_revenged.GetName]'nin intikamını aldı"
+  
+ rv_successful_revenged_soulmate: "Başarılı İntikam"
+ rv_revenged_soulmate_desc_1: "[target_killer.GetName] tarafından öldürülen ruh eşim [target_revenged.GetName]'ın intikamını aldım"
+ rv_revenged_soulmate_desc_second_perspective_1: "[target_killer.GetName] tarafından öldürülen ruh eşiniz [target_revenged.GetName]'ın intikamını aldınız"
+ rv_revenged_soulmate_desc_third_perspective_1: "[owner.GetName], [target_killer.GetName] tarafından öldürülen [owner.GetHerHis] ruh eşi [target_revenged.GetName]'nin ölümünün intikamını aldı"
+  
+ rv_successful_revenged_friend: "Başarılı İntikam"
+ rv_revenged_friend_desc_1: "[target_killer.GetName] tarafından öldürülen arkadaşım [target_revenged.GetName]'ın intikamını aldım"
+ rv_revenged_friend_desc_second_perspective_1: "[target_killer.GetName] tarafından öldürülen arkadaşın [target_revenged.GetName]'ın intikamını aldın"
+ rv_revenged_friend_desc_third_perspective_1: "[owner.GetName], [target_killer.GetName] tarafından öldürülen [owner.GetHerHis] arkadaşının [target_revenged.GetName] ölümünün intikamını aldı"
+  
+ rv_successful_revenged_best_friend: "Başarılı İntikam"
+ rv_revenged_best_friend_desc_1: "En iyi arkadaşım [target_revenged.GetName]'ın [target_killer.GetName] tarafından öldürülmesinin intikamını aldım"
+ rv_revenged_best_friend_desc_second_perspective_1: "[target_killer.GetName] tarafından öldürülen en iyi arkadaşın [target_revenged.GetName]'ın intikamını aldın"
+ rv_revenged_best_friend_desc_third_perspective_1: "[owner.GetName], [target_killer.GetName] tarafından öldürülen [owner.GetHerHis] en iyi arkadaşı [target_revenged.GetName]'nin intikamını aldı"
+  
+ rv_successful_revenged_spouse: "Başarılı İntikam"
+ rv_revenged_spouse_desc_1: "[target_killer.GetName] tarafından öldürülen eşim [target_revenged.GetName]'ın intikamını aldım"
+ rv_revenged_spouse_desc_second_perspective_1: "[target_killer.GetName] tarafından öldürülen eşiniz [target_revenged.GetName]'ın intikamını aldınız"
+ rv_revenged_spouse_desc_third_perspective_1: "[owner.GetName], [target_killer.GetName] tarafından öldürülen [owner.GetHerHis] eşinin [target_revenged.GetName] ölümünün intikamını aldı"
+  
+ rv_successful_revenged_family: "Başarılı İntikam"
+ rv_revenged_family_desc_1: "[target_killer.GetName] tarafından öldürülen aile üyem [target_revenged.GetName]'ın intikamını aldım"
+ rv_revenged_family_desc_second_perspective_1: "[target_killer.GetName] tarafından öldürülen aile üyeniz [target_revenged.GetName]'ın ölümünün intikamını aldınız"
+ rv_revenged_family_desc_third_perspective_1: "[owner.GetName], [target_killer.GetName] tarafından öldürülen [owner.GetHerHis] aile üyesinin [target_revenged.GetName] ölümünün intikamını aldı"
+  
+ rv_was_revenged: "İntikam Alındı"
+ rv_was_revenged_desc_1: "[target_killer.GetName]'ın neden olduğu ölümüm [target_revenger.GetName] tarafından intikam alındı ​​(Postmortem)"
+ rv_was_revenged_desc_second_perspective_1: "[target_killer.GetName]'ın sebep olduğu ölümünüz [target_revenger.GetName] tarafından intikam alındı ​​(Postmortem)"
+ rv_was_revenged_desc_third_perspective_1: "[owner.GetName]'ın [target_killer.GetName]'in neden olduğu ölümünün intikamı [target_revenger.GetName] tarafından alındı ​​(Ölüm Sonrası)"
+  
+ #Failed Revenge Story 
+ rv_failed_revenge_desc_1: "[target_killer.GetName]'dan intikam almayı başaramadım."
+ rv_failed_revenge_desc_second_perspective_1: "[target_killer.GetName]'dan intikam almayı başaramadın."
+ rv_failed_revenge_desc_third_perspective_1: "[owner.GetName], [target_killer.GetName]'den intikam almayı başaramadı."
+ rv_failed_revenge: "Başarısız İntikam"

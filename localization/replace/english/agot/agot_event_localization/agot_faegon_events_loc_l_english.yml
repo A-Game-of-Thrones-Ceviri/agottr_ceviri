@@ -1,0 +1,67 @@
+﻿l_english:
+  #Those clearly are placeholders for now, please send loc help - Typical 
+  
+ faegon_landing.0002.opening: "[faegon.Custom2('AppropriateGreeting', ROOT.Char)]"
+ faegon_landing.0002.d: "[ROOT.Char.GetLadyLord]'ım, senin bilge ve asil bir [ROOT.Char.GetLadyLord] olduğunu biliyorum. Benim adım [faegon.GetTitledFirstName], [faegon.Custom('GetDaughterSon')]/[rogort.GetTitledFirstName] ve Demir Taht hakkımdır. Sancaklarını davam için adayıp tahtı gaspçılardan geri almama yardım eder misin?"
+ faegon_landing.0002.opt.a: "Size sadakatle hizmet edeceğim. Çok yaşa Targaryen Hanesi!"
+ faegon_landing.0002.opt.b: "Hayır, defol git, Dilenci [faegon.GetTitleTierName]."
+  
+  #This event states character thoughts about landing in westeros again, their hopes dreams and ambitions after taking the throne also it includes some short banter with Captain General of Golden Company (only if they dont land after losing throne to blackfyres) and Jon Con (Faegon and Jae only) 
+  #saved scopes faegon_loc, faegon_story_loc (variable agot_faegon_landing_title stored on this story holds value of county in which Faegon landed), strickland and, jon_con 
+ faegon_landing.0003.t: "Ejderhanın İnişi"
+ faegon_landing.0003.d.faegon: "Ben Targaryen Hanesi'nden [faegon_loc.GetTitledFirstNameNicknamed]'ım, adımın altıncısı ve Ejderha Kayası Prensi [rogort.GetFirstName]'in ilk oğluyum. Andallar, Rhoynarlar ve İlk İnsanlar Kralı, Yedi Krallığın Lordu ve Diyarın Koruyucusuyum. Babamın ölümünün intikamını alacağım ve hanem ve diyar uğruna Demir Taht'ı geri alacağım."
+  #Aegon "Young Griff" Targaryen "Genç Griff" #NT!
+ faegon_landing.0003.d.dany: "Ben [faegon_loc.GetTitledFirstNameNicknamed] Targaryen Hanesi'ndenim, ilk adım, Kral Aerys II'nin kızı, Andallar'ın, Rhoynar'ın ve İlk İnsanların Kraliçesi, Yedi Krallığın Hanımı ve Diyar'ın Koruyucusuyum. Demir Taht'ı ateş ve kanla geri alacağım."
+ faegon_landing.0003.d.viserys: "Ben Targaryen Hanesi'nden [faegon_loc.GetTitledFirstName]'ım, adımın üçüncüsü ve Kral Aerys II'nin hayatta kalan son oğluyum! Yedi Krallığın haklı Lorduyum, Andallar, Rhoynarlar ve İlk İnsanlar'ın Kralıyım, Ejderha Kayası Prensiyim ve Diyar'ın Koruyucusuyum! Ben ejderhayım ve Demir Taht'ı geri alacağım!"
+ faegon_landing.0004.d.jae: "[faegon_loc.GetTitledFirstName], bir Targaryen taliplisi, Altın Mürettebat'ın [strickland.GetTitledFirstName] komutasındaki on bin adamla [faegon_story_loc.MakeScope.Var('agot_faegon_landing_title').Title.GetName]'e indi. Fatih Aegon'un tahttan indirilen hanedanının hatırası yeniden canlanırken, Westeros bir kez daha savaşta. Yabancı Yedi Krallığa dönerken bayraklar çağrılacak, kılıçlar yemin edilecek ve yeminler edilecek."
+ faegon_landing.0003.d.post_blackfyre_win: "Ben [faegon_loc.GetHouse.GetName] Evi'nin [faegon_loc.GetTitledFirstNameNicknamed]'ıyım, [faegon_loc.GetFather.GetTitledFirstName] Evi'nin [faegon_loc.Custom('GetDaughterSon')]'siyim. Andallar, Rhoynarlar ve İlk İnsanlar'ın [faegon_loc.GetTitleTierName]'üyüm, Yedi Krallık'ın [faegon_loc.GetLadyLord]'iyim ve Diyar'ın Koruyucusuyum. Sahte ejderhalardan Demir Taht'ı ele geçireceğim ve aileme karşı çıkan herkese adalet getireceğim."
+ faegon_landing.0003.opt: "Ejderha indi"
+  
+ faegon_landing.0004.t: "[faegon.GetFirstName]'ın İstilası"
+ faegon_landing.0004.d.faegon: "[faegon_loc.GetTitledFirstName], bir Targaryen taliplisi, sürgündeki [jon_con.GetTitledFirstName] ve Altın Mürettebat'ın [strickland.GetTitledFirstName] komutasındaki on bin adamla birlikte [faegon_story_loc.MakeScope.Var('agot_faegon_landing_title').Title.GetName]'e indi. Fatih Aegon'un tahttan indirilen hanedanının hatırası yeniden canlanırken, Westeros bir kez daha savaşta. Yabancı Yedi Krallığa dönerken bayraklar çağrılacak, kılıçlar yemin edilecek ve yeminler edilecek."
+ faegon_landing.0004.d.dany: "[faegon_loc.GetTitledFirstName], bir Targaryen taliplisi, Altın Mürettebat'ın [strickland.GetTitledFirstName] komutasındaki on bin adamla [faegon_story_loc.MakeScope.Var('agot_faegon_landing_title').Title.GetName]'e indi. Fatih Aegon'un tahttan indirilen hanedanının hatırası yeniden canlanırken, Westeros bir kez daha savaşta. Yabancı Yedi Krallığa dönerken bayraklar çağrılacak, kılıçlar yemin edilecek ve yeminler edilecek."
+ faegon_landing.0004.d.viserys: "[faegon_loc.GetTitledFirstName], bir Targaryen taliplisi, Altın Mürettebat'ın [strickland.GetTitledFirstName] komutasındaki on bin adamla [faegon_story_loc.MakeScope.Var('agot_faegon_landing_title').Title.GetName]'e indi. Fatih Aegon'un tahttan indirilen hanedanının hatırası yeniden canlanırken, Westeros bir kez daha savaşta. Yabancı Yedi Krallığa dönerken bayraklar çağrılacak, kılıçlar yemin edilecek ve yeminler edilecek."
+ faegon_landing.0004.d.jae: "[faegon_loc.GetTitledFirstName], bir Targaryen taliplisi, Altın Mürettebat'ın [strickland.GetTitledFirstName] komutasındaki on bin adamla [faegon_story_loc.MakeScope.Var('agot_faegon_landing_title').Title.GetName]'e indi. Fatih Aegon'un tahttan indirilen hanedanının hatırası yeniden canlanırken, Westeros bir kez daha savaşta. Yabancı Yedi Krallığa dönerken bayraklar çağrılacak, kılıçlar yemin edilecek ve yeminler edilecek."
+ faegon_landing.0004.d.post_blackfyre_win: "[faegon_loc.GetTitledFirstName], bir Targaryen taliplisi, gaspçıları devirmeye yemin etmiş on bin kişilik bir orduyla [faegon_story_loc.MakeScope.Var('agot_faegon_landing_title').Title.GetName]'e indi. Fatih Aegon'un tahttan indirilen hanedanının hatırası yeniden canlanırken, Westeros bir kez daha savaşta. Yabancı Yedi Krallığa geri dönerken bayraklar çağrılacak, kılıçlar yemin edilecek ve yeminler edilecek."
+ faegon_landing.0004.opt.a: "Ejderhanın üç başı mı var? Hadi keselim onları!"
+ faegon_landing.0004.opt.b: "Belki bu avantajlı olabilir"
+ faegon_landing.0004.opt.c: "Ne sunduklarına bir bakalım"
+  
+ faegon_landing.0006.t: "Altıncı Blackfyre İsyanı"
+ faegon_landing.0006.d: "Westeros için vahim bir haber, hain Blackfyre Hanesi'nin uzun zamandır unutulmuş bir varisi olan [faegon_fyre_loc.GetTitledFirstName], [strickland.GetTitledFirstName] komutasındaki on bin kişilik bir ordunun başında [faegon_fyre_loc.GetHerHim] ile birlikte [faegon_fyre_story_loc.MakeScope.Var('agot_faegon_landing_title').Title.GetName]'e indi. Diyarın yaralarının iyileştiği düşünülürken, Yedi Krallık bir kez daha savaşta."
+  
+ faegon_landing.0006.opt.a: "Silahlara! Bu kara ejderhayı ezmek gerek."
+ faegon_landing.0006.opt.b: "Belki bu avantajlı olabilir"
+ faegon_landing.0006.opt.c: "Acaba ben de bu kara ejderhaya katılmalı mıyım?"
+  
+ faegon_landing.0007.t: "Kara Ejderha Muzaffer"
+ faegon_landing.0007.d: "[faegon_fyre_loc.GetTitledFirstName] Demir Taht'ı ele geçirdi. Kızıl Kale Blackfyres'ın eline geçti ve şimdi bir kara ejderha kırmızı hain kanının havuzunda oturuyor. Sahte [former_king.GetTitledFirstName] kara hücrelerde hapis yatıyor ve [former_king.GetHerHis] ailesi Dar Deniz'e sürgüne gönderildi. Dorne'dan Duvar'a kadar, Gerçek Doğumlu Daemon'un intikamının alındığını duyurun!"
+ faegon_landing.0007.opt: "Benim kuralım başlıyor..."
+ agot_6th_blackfyre_targs_flee: "[former_king.GetHouse.GetName]'ın kalan tüm üyeleri Essos'a kaçar"
+  
+ faegon_landing.0008.t: "Ejderhanın Kökeni"
+ faegon_landing.0008.d: "Savaş kazanıldı ve ben Demir Taht'ın tepesinde oturuyorum. Yine de, yakıcı bir soru hala beni rahatsız ediyor. Ben kimim, gerçekten? Rhaegar Targaryen'ın uzun zamandır kayıp olan oğlu muyum? Ya da belki de bu, çok daha acı verici bir gerçeği gizleyen bir hikayedir?"
+ faegon_landing.0008.opt.a: "Ben [blackfyre_parent.GetFirstNameNicknamed]'ın oğluyum"
+ faegon_landing.0008.opt.b: "Ben aslında [rodgir_father.GetFirstNameNicknamed]'ın oğluyum"
+ faegon_landing.0008.opt.c: "Ben [brightonion_father.GetNickname] soyundanım"
+ faegon_landing.0008.opt.d: "Ben önemli biri değilim"
+  
+ faegon_landing.0009.t: "Kızıl Ejder Muzaffer"
+ faegon_landing.0009.d: "Galip geldim! Lordlar ve savaşçılar evlerine dönüyor ve sahte [former_king.GetTitledFirstName]'in gitmesiyle artık barış ve refah dolu uzun bir saltanat için yeni [faegon_loc.GetTitleTierName]'larına bakıyorlar. Yedi Krallığın haklı yöneticileri, Fatih Aegon'un soyu geri döndü!"
+ faegon_landing.0009.opt: "Hükümranlığım başlıyor!"
+  
+ faegon_landing.0010.opening: "[sender.Custom2('AppropriateGreeting', ROOT.Char)]"
+ faegon_landing.0010.d: "Majesteleri. Evimi ve sancaklarını size yemin ederim."
+ faegon_landing.0010.opt: "Harika"
+ faegon_landing.0011.opening: "[sender.Custom2('AppropriateGreeting', ROOT.Char)]"
+ faegon_landing.0011.d: "Targaryen'ları çoktan kovduk. [ROOT.Char.GetFaith.DevilName] seni de alalım!"
+ faegon_landing.0011.opt: "Gelecek savaşlarda size bol şans diliyorum ki, bize boyun eğecek kadar uzun süre hayatta kalabilesiniz."
+  
+ faegon_landing.1000.t: "Savaşın Sonrası"
+ faegon_landing.1000.d: "Şimdi savaş sona erdiğine göre, fethimi sahnelemek için ödünç aldığım toprak meselesi var."
+ faegon_landing.1000.a: "Toprağı iade edeceğim"
+ faegon_landing.1000.b: "[old_holder.GetSheHe|U] adil bir şekilde tazmin edilecektir"
+ faegon_landing.1000.c: "Bunu saklayacağım"
+  
+ the_golden_company_name: "Altın Şirket"
+ targaryen_host: "Targaryen Sunucusu"

@@ -1,0 +1,282 @@
+﻿l_english:
+  
+  ################################################ 
+  #   agot_nights_watch.0000 - NIGHTSWATCHMAN ARRIVES  # 
+  ################################################ 
+  
+ nightswatch_arrived.title: "Yeni Bir Gece Bekçisi"
+ nightswatch_arrived.desc: "[nightswatch_candidate.GetShortUIName|U] yeminli kardeş olarak Gece Nöbetçileri'ne katıldı."
+  
+  
+  ################################################ 
+  #   agot_nights_watch.0001 - MULE SHORTAGE (SETUP)  # 
+  ################################################ 
+  
+ agot_filler_nights_watch.0001.message.t: "$c_eastwatch$'da Katır Sıkıntısı"
+ agot_filler_nights_watch.0001.message.tt: "$c_eastwatch$'da Duvar'ı devriye gezmek için eğitilen katırların sayısı son zamanlarda yetersiz kalıyor."
+  
+  ######################################## 
+  #   agot_nights_watch.0002 - MULE SHORTAGE  # 
+  ######################################## 
+  
+ agot_filler_nights_watch.0002.t: "Katır Sıkıntısı"
+ agot_filler_nights_watch.0002.opening: "[teller.Custom2('MyCharacterIntroduction', ROOT.Char)|U] önümde duruyor"
+ agot_filler_nights_watch.0002.bold: "vurucu [teller.GetHerHis] göğüs."
+ agot_filler_nights_watch.0002.anger: "homurdanan ve öfkelenen."
+ agot_filler_nights_watch.0002.paranoia: "[teller.GetHerHis]'ın gözlerinde acımasız, sevgisiz bir bakışla."
+ agot_filler_nights_watch.0002.fallback: "tam bir inanmazlıkla."
+ agot_filler_nights_watch.0002.middle: "\n\n"[fallguy.Custom2('YourCharacterIntroduction', ROOT.Char)|U] katırlarımızı satıyor," [teller.GetSheHe] iğrenerek söylüyor. "Duvarı devriye gezmek için kullandığımız sürü geçen yıl azaldı, bu yüzden sebebini ortaya çıkarmayı kendime görev edindim ve [fallguy.GetSheHe]'nin onları sattığından eminim. [fallguy.GetSheHe|U] iki yüz altın ejderha kadar üretebilirdi!""
+ agot_filler_nights_watch.0002.special.less_than.learning: "\n\n[teller.GetFirstNameNoTooltip]'a baktığımda, kalbimde [teller.GetSheHe]'in iyi öğrenilmiş olduğunu biliyorum, ancak"
+ agot_filler_nights_watch.0002.special.less_than.stewardship: "\n\n[teller.GetSheHe|U] hesapları yeterince iyi idare ediyor olabilir, [teller.GetHerHim]'e baktığımda öyle düşünüyorum, ama [teller.GetSheHe] burada gerçekten neyin en iyi olduğunu biliyor mu?"
+ agot_filler_nights_watch.0002.special.less_than.learning.humble: "\n\n[teller.GetSheHe] çok iyi öğrenilmişken [teller.GetTitledFirstName|U]'ı tamamen göz ardı edemem ama"
+ agot_filler_nights_watch.0002.special.less_than.stewardship.humble: "\n\n[teller.GetTitledFirstName] kadar iyi olmasam da, defterleri yönetmede"
+ agot_filler_nights_watch.0002.special.greater_than.learning: "\n\nAma elbette, [teller.GetTitledFirstNameNoTooltip]'dan daha bilgiliyim ve biliyorum ki"
+ agot_filler_nights_watch.0002.special.greater_than.stewardship: "\n\nYine de, [teller.GetHerHim]'a bakarken, finans konusunda [teller.GetTitledFirstNameNoTooltip]'in asla bilemeyeceğinden daha fazlasını bildiğimin ve"
+ agot_filler_nights_watch.0002.special.greater_than.learning.arrogant: "\n\n[teller.GetHerHim]'a bakıyorum, bu konularda [teller.GetSheHe]'in asla bilemeyeceğinden çok daha fazlasını bildiğimi ve"
+ agot_filler_nights_watch.0002.special.greater_than.stewardship.arrogant: "\n\nOna bakıyorum, mali durumumuz hakkında bu [teller.Custom('InsultNoun')]'dan [teller.GetWomanMan]'den daha fazlasını bildiğimden eminim ve biliyorum ki"
+ agot_filler_nights_watch.0002.special.stupid: "[fallguy.GetTitledFirstNameNoTooltip] böyle bir planı yönetemeyecek kadar aptaldır."
+ agot_filler_nights_watch.0002.special.cowardly: "[fallguy.GetTitledFirstNameNoTooltip] böyle bir plan için fazlasıyla korkaktır."
+ agot_filler_nights_watch.0002.special.fallback: "[fallguy.GetTitledFirstNameNoTooltip]'ın böyle bir planı yönetmesi çok düşük bir ihtimal."
+ agot_filler_nights_watch.0002.special.closing: "Katırlarımızı satarak kar edenin [undercutter.GetTitledFirstName] olması çok daha olasıdır."
+ agot_filler_nights_watch.0002.a.greedy: "[undercutter.GetTitledFirstNameNoTooltip]'ın sizi de plana dahil etmesini sağlayın"
+ agot_filler_nights_watch.0002.a.fallback: "[undercutter.GetTitledFirstNameNoTooltip]'ın [undercutter.GetSheHe]'in çaldığını geri ödemesini sağla"
+ agot_filler_nights_watch.0002.a.random_1.desc: "[undercutter.GetTitledFirstNameNoTooltip], [undercutter.GetSheHe]'in çaldığını geri öder"
+ agot_filler_nights_watch.0002.a.random_2.desc: "[undercutter.GetTitledFirstNameNoTooltip] Duvar'dan kaçıyor"
+ agot_filler_nights_watch.0002.a.message.t: "Sen Yürüt [undercutter.GetTitledFirstNameNoTooltip]"
+ agot_filler_nights_watch.0002.b.banish: "Gözcülere karşı işlenen suçlar için [undercutter.GetTitledFirstNameNoTooltip]'ı [undercutter.GetHerHis]'e karşı sürgün et"
+ agot_filler_nights_watch.0002.b.execute: "Watch'a karşı işlenen [undercutter.GetHerHis] suç için [undercutter.GetTitledFirstNameNoTooltip]'ı idam et"
+ agot_filler_nights_watch.0002.c: "[fallguy.GetTitledFirstNameNoTooltip]'ın [fallguy.GetSheHe]'in çaldığını geri ödemesini sağla"
+ agot_filler_nights_watch.0002.c.random_1.desc: "[fallguy.GetTitledFirstNameNoTooltip] Duvar'dan kaçıyor"
+ agot_filler_nights_watch.0002.c.random_2.desc: "[fallguy.GetTitledFirstNameNoTooltip], [fallguy.GetSheHe]'in çaldığı iddia edilen şeyi geri öder"
+ agot_filler_nights_watch.0002.c.toast.t: "[fallguy.GetTitledFirstName] Duvardan Kaçıyor"
+ agot_filler_nights_watch.0002.c.toast.tt: "[fallguy.GetTitledFirstNameNoTooltip], Watch'tan çalmakla suçlandıktan sonra [fallguy.GetHerHis] gönderisinden kaçtı"
+ agot_filler_nights_watch.0002.c.random_2.tt: "Eğer [fallguy.GetSheHe] çalınan şeyi geri ödemezse, [fallguy.GetHerHim]'i cezalandırmak için haklı gerekçeniz olacak"
+ agot_filler_nights_watch.0002.d.banish: "Gözcülere karşı işlenen suçlar için [fallguy.GetTitledFirstNameNoTooltip]'ı [fallguy.GetHerHis]'e karşı sürgün et"
+ agot_filler_nights_watch.0002.d.execute: "Watch'a karşı işlenen [fallguy.GetHerHis] suç için [fallguy.GetTitledFirstNameNoTooltip]'ı idam et"
+ agot_filler_nights_watch.0002.d.message.t: "Sen Yürüt [fallguy.GetTitledFirstName]"
+ agot_filler_nights_watch.0002.e.arrogant: "$c_eastwatch$'da olup bitenleri senden daha iyi biliyorum."
+ agot_filler_nights_watch.0002.e.arbitrary: "Katırlara pek aldırış etmiyorum, [teller.GetFirstNameNoTooltip]"
+ agot_filler_nights_watch.0002.e.just: "Bana şüpheden fazlasını getirin, konuşalım."
+ agot_filler_nights_watch.0002.e.fallback: "Beni bu saçmalıklarla mı rahatsız ediyorsun? Defol git, [teller.GetFirstNameNoTooltip]."
+ every_member_of_nights_watch: "Gece Nöbeti'nin her üyesi"
+ every_close_relation: "İnfaz edilenlerin her yakın akrabası"
+  
+  ############################################ 
+  #   agot_nights_watch.0003 - GOLD REINVESTMENT  # 
+  ############################################ 
+  
+ agot_filler_nights_watch.0003.t: "Yeniden yatırım"
+ agot_filler_nights_watch.0003.desc: "[teller.Custom2('MyCharacterIntroduction', ROOT.Char)|U] beni konsey odalarında buluyor ve [teller.GetHerHis] öfkesini gizlemek için hiçbir çaba göstermiyor.\n\n"[undercutter.GetTitledFirstNamePossessive] planından ele geçirdiğin altın, Nöbetçi'ye yeniden yatırılmalı." [teller.GetSheHe|U] odada volta atıyor, ellerini savuruyor. "O altını saklaman hırsızlıkla eşdeğer, [ROOT.Char.GetLadyLord]. Sen #EMP onu Nöbetçi'ye geri vermelisin.""
+ agot_filler_nights_watch.0003.a.wrathful: "Yapmalıyım? #EMP Yapmalıyım?#! Bu senin bir emrin mi?"
+ agot_filler_nights_watch.0003.a.calm: "Boş zamanımda [teller.GetFirstNameNoTooltip], daha önce değil."
+ agot_filler_nights_watch.0003.a.cynical: "Ve bunu sana mı bırakayım? Sanmıyorum."
+ agot_filler_nights_watch.0003.a.vengeful: "Yeter. Bir daha bahsetme."
+ agot_filler_nights_watch.0003.a.zealous: "Eski ve yeni tanrılar adına, bırakın onu."
+ agot_filler_nights_watch.0003.a.fallback: "Altını kendine sakla"
+ agot_filler_nights_watch.0003.a.cynical.tt: "Gece Nöbeti'nin her üyesi, sözlerinizin [teller.GetFirstNameNoTooltip]'ı sahtekâr olarak gösterdiğine inanırsa #N 10#! [opinion|E] ile [teller.GetHerHim] kaybedecek"
+ agot_filler_nights_watch.0003.a.tt: "Altını sen sakla"
+ agot_filler_nights_watch.0003.b.impatient: "Evet, evet — al o zaman."
+ agot_filler_nights_watch.0003.b.content: "Evet, ama vazgeçilecek kadar büyük bir altın değil, değil mi?"
+ agot_filler_nights_watch.0003.b.forgiving: "Bana olduğundan daha nazik davranacağına inanıyorum."
+ agot_filler_nights_watch.0003.b.fallback: "Altını Saat'e hediye edin"
+ agot_filler_nights_watch_0003_b_content: "Biraz fakir olan her vasal"
+ agot_filler_nights_watch.0003.b.forgiving.tt: "[teller.GetTitledFirstName] seninle bu kadar sert davrandığı için kendini kötü hissediyor"
+ agot_filler_nights_watch.0003.b.tt: "Altını Nöbetçiye teslim ediyorsun"
+  
+  ############################################ 
+  #   agot_nights_watch.0004 - BEGGING FOR MERCY  # 
+  ############################################ 
+  
+ agot_filler_nights_watch.0004.t: "Merhamet İçin Bir Yalvarış"
+ agot_filler_nights_watch.0004.opening: "[fallguy.Custom2('MyCharacterIntroduction', ROOT.Char)|U] son zamanlarda benden kaçınmak için büyük çaba sarf etti. [fallguy.GetHerHis]'in başının üstünde asılı duran borç çok büyük, ancak [fallguy.GetSheHe]'nin Nöbetçileri dolandırma planında [fallguy.GetHerHis]'in rolü için hak ettiğinden daha az değil. [fallguy.GetSheHe] günlerce etrafımda gizlice dolaşıyor, ancak sonunda bu sabah orucumu bozarken beni görme cesaretini buluyor.\n\n"Benim [ROOT.Char.GetLadyLord]'im," diyor [fallguy.GetSheHe]"
+ agot_filler_nights_watch.0004.humble: "yenilginin alçakgönüllülüğüyle, "borcumu ödeyemem. Yalvarırım — lütfen bu planda hiçbir rolüm olmadığına inan! Merhamet göster, [ROOT.Char.GetLadyLord]."
+ agot_filler_nights_watch.0004.vengeful: "kin dolu bir şekilde, "Bu planda hiçbir rolüm olmadığına sizi ikna edecek hiçbir şey söyleyemeyeceğimi biliyorum, ama şunu da bilin: Borcumu asla ödemeyeceğim."
+ agot_filler_nights_watch.0004.diligent: "yeni bir kararlılıkla, "Benden haklı olarak bana ait olmayan bir borcu ödememi istemeniz acımasızca ve bu borcu ödemem yönündeki kararınızı geri almanızı istiyorum."
+ agot_filler_nights_watch.0004.lazy: "kayıtsızlıkla, "Lütfen, bu borcu bana ödetmeyin. Bu adil değil."
+ agot_filler_nights_watch.0004.impatient: "sinirli bir şekilde homurdanarak, "Bu borcu ödememi istemeniz adil değil. Ben hiçbir yanlış yapmadım ve bu saçma şartları dikte etmenize izin vermeyeceğim.""
+ agot_filler_nights_watch.0004.shy: "sessizce, "Borcumu ödeyemem. Lütfen beni bu borçtan kurtarmayı düşünebilir misiniz? Bunun adil olduğunu düşünmüyorum."
+ agot_filler_nights_watch.0004.deceitful: "kurnazca bir gülümsemeyle, "Borcumu ödeyebilmem için beni bağışlama kararınıza saygı duyuyorum. Bu gerçekten bilgeliğinizi yansıtıyor. Güney yolculuğuma izin verirseniz, borcumu sadece iki hafta içinde ödeyebilirim."
+ agot_filler_nights_watch.0004.fallback: "Borcumu ödeyemem. Lütfen bu planda hiçbir rolüm olmadığına inanın ve borcumu söylediğiniz şeyi geri ödemek için asla altına sahip olmayacağım."
+ agot_filler_nights_watch.0004.a.gold: "Buna gerek yok. Borcu tamamen unutun."
+ agot_filler_nights_watch.0004.a.fallback: "[fallguy.GetHerHim]'ı borçtan kurtar"
+ agot_filler_nights_watch.0004.a.tt: "[fallguy.GetTitledFirstNamePossessiveNoTooltip]'ın kar amacıyla katır satarak çaldığı altını geri ödeme yükümlülüğünü affediyorsunuz [fallguy.GetSheHe]"
+ agot_filler_nights_watch.0004.b.vengeful: "Şimdi bana #EMP,#! [fallguy.GetTitledFirstNameNoTooltip] ödeyeceksin!"
+ agot_filler_nights_watch.0004.b.deceitful: "Hadi o zaman, hemen geri dön."
+ agot_filler_nights_watch.0004.b.fallback: "Israr et [fallguy.GetSheHe] hemen bir şey geri öde #EMP #!"
+ agot_filler_nights_watch.0004.b.deceitful.tt: "[fallguy.GetTitledFirstNameNoTooltip] borcun ödenmesi için geçici olarak Duvar'ı terk edecek"
+  
+  ########################################## 
+  #   agot_nights_watch.0006 - IMPRISONED THIEF # 
+  ########################################## 
+  
+ agot_filler_nights_watch.0006.message.t: "[teller.GetTitledFirstName] Hapsedildi"
+ agot_filler_nights_watch.0006.message.tt: "[teller.GetTitledFirstName] bir anlaşmazlıkta [victim.GetTitledFirstName] kişiyi öldürdü ve hapsedildi"
+  
+  ############################################### 
+  #   agot_nights_watch.0007 - BENEFACTOR GIVES GOLD # 
+  ############################################### 
+  
+ agot_filler_nights_watch.0007.t: "[benefactor.Custom2('AppropriateGreetingPositive', ROOT.Char)]"
+ agot_filler_nights_watch.0007.desc: "Umarım iyisindir. [fallguy.Custom2('RelationToMe', SCOPE.sC('benefactor'))]'ımın sana ve kardeşliğine bir borcu olduğunu anlıyorum. [fallguy.GetSheHe]'in [fallguy.GetHerHis] masumiyetinde ısrar etmesine rağmen, bu borcu [fallguy.GetHerHis] adına ödeyeceğim, beklentim senin [fallguy.Custom2('RelationToMe', SCOPE.sC('benefactor'))]'ımı bunun için daha fazla rahatsız etmemen.\n\nBu borcu ödemede fazlasıyla adil davrandığım için — aksi takdirde asla tahsil edemeyeceğin bir borç — bir gün senin de benim için aynı iyiliği yapmanı bekleyeceğim."
+ agot_filler_nights_watch.0007.a: "Çok iyi."
+  
+  #################################################### 
+  #   agot_nights_watch.0008 - FALLGUY FLEES (FOLLOW-UP)  # 
+  #################################################### 
+  
+ agot_filler_nights_watch.0008.t.good: "[ROOT.Char.Custom2('AppropriateGreetingPositive', SCOPE.sC('fallguy'))]"
+ agot_filler_nights_watch.0008.t.bad: "Hala [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]'da olan morona"
+ agot_filler_nights_watch.0008.desc.good: "Belki de çoktan fark ettin, ama Duvar'a geri dönmeyeceğim.\n\nAldatmaca için üzgünüm, ama bana yüklediğin borcu taşıyamam. Sana yemin ederim, eski ve yeni tanrılar üzerine, Nöbetçilerden çalmadım.\n\nBana inanmadığını biliyorum, bu yüzden onursuz adımı düzeltmek için çalışacağım, bunun için hayatımın geri kalanında onursuz bir şekilde yaşamam gerekse bile."
+ agot_filler_nights_watch.0008.desc.bad: "Son haftalarda yokluğumu fark etmedin bile, değil mi? Ve beni bu kadar hayrete düşüren şey de bu şaşırtıcı beceriksizlik.\n\nHırsızlık suçlamalarını ya da hakkım olmayan bir borcu ödemem yönündeki taleplerini takdir etmedim, bu yüzden sana Duvar'a geri dönmeyeceğimi söylemekten mutluluk duyuyorum — ne şimdi, ne de asla.\n\nBir yıl içinde bir hendekte ölmüş olabilirim, dünya onursuz ismimi lanetliyor olabilir, ama yine de böylesine düşüncesiz bir efendinin dizinin dibinde oturmaktan daha iyi bir kader olacak."
+ agot_filler_nights_watch.0008.a.good: "Öyle olsun."
+ agot_filler_nights_watch.0008.a.bad: "Piç."
+  
+  ############################################ 
+  #   agot_nights_watch.0009 - TROUBLE ADJUSTING  # 
+  ############################################ 
+  
+ agot_filler_nights_watch.0009.t: "Ayarlamada Sorun"
+ agot_filler_nights_watch.0009.desc: "Bazen küçük lordlar olarak, ama çoğunlukla kırık oğlanlar olarak Nöbet'e gelirler. [troublemaker.Custom2('MyCharacterIntroduction', ROOT.Char)|U], eğitim ustalarını hiçe sayan ve kışkırtılmadan dövüşen böyle bir çocuğun kaba ve özensiz halidir. Sonunda silah ustasını sınıra kadar zorladığında, önüme düşer.\n\n"Neden yeni kardeşlerinle dövüşmekte bu kadar acelecisin?" diye alaycı bir şekilde sorarım. "Duvar'da olmaktansa bir kafeste olmayı mı tercih edersin?"\n\n"Evet," der yumuşak bir sesle. "İkinci bir şansı hak etmiyorum, yaptıklarımdan sonra değil. Bir kafesi veya beni gömebileceğin bir deliği hak ediyorum.""
+ agot_filler_nights_watch.0009.a: "Öyle olsun."
+ agot_filler_nights_watch.0009.a.tt: "Sen yürüt [troublemaker.GetTitledFirstName]"
+ agot_filler_nights_watch.0009.b: "Bu senin hayatın, evlat. Ya bunu uzlaştır ya da kendi lanet küreğini bul."
+ agot_filler_nights_watch.0009.c: "Duvarın önünde yaşayan çocukla, duvarın üzerinde yaşayan adam aynı değil."
+ agot_filler_nights_watch.0009.d: "Ona vuruyorum. "Pişmanlık seni Duvar'da sıcak tutmayacak."
+ agot_filler_nights_watch.0009.e: "Ona yerini bulmasına yardımcı olmak için daha fazla sorumluluk verin"
+ agot_filler_nights_watch.0009.court_position.tt: "#i [troublemaker.GetTitledFirstNameNoTooltip] Yakın gelecekte bir saray pozisyonu bekliyorum#!"
+  
+  ############################################ 
+  #   agot_nights_watch.0010 - TROUBLE ADJUSTING  # 
+  ############################################ 
+  
+ agot_filler_nights_watch.0010.toast.t: "Daha Fazla Sorumluluk Verme Sözünü Bozdun"
+  
+  ############################################### 
+  #   agot_nights_watch.0011 - SQUATTER AT THE WALL # 
+  ############################################### 
+  
+ agot_filler_nights_watch.0011.t: "Duvarın Önünde Çömelen"
+ agot_filler_nights_watch.0011.opening: "[ROOT.Char.Custom2('RelationToMe', SCOPE.sC('councillor'))|U] [councillor.GetFirstName] ayaklarıma üzgün görünen bir yaratık fırlattı. "Bu, [derelict.GetNameNoTier]'nin kalıntıları arasında çömelmişti," dedi [councillor.GetSheHe], ancak [councillor.GetSheHe] konuşurken [councillor.GetHerHis] kelimelerinde korku vardı. "[squatter_1.GetSheHe|U]... şeyler biliyor. Kimsenin bilmeye hakkı olmayan şeyler."\n\n"Bana barınak ver," diye bağırdı çömelmiş olan, "yoksa en karanlık düşüncelerini açığa çıkaracağım... gizli utançlarını açığa çıkaracağım."\n\n[councillor.GetTitledFirstNameNoTooltip], [squatter_1.GetHerHim]'i tekmeledi ve [squatter_1.GetSheHe] sustu. "[squatter_1.GetSheHe|U] doğru değil, [councillor.GetFirstName]1'im. [squatter_1.GetHerHim]'i asmalıyız."\n\nÇömelmiş olan, [councillor.GetFirstName]3 başparmağını [councillor.GetFirstName]4'e doğru salladı."
+ agot_filler_nights_watch.0011.secret_murder: "Bu, [target.GetTitledFirstName]'ı soğukkanlılıkla öldürdü,"
+ agot_filler_nights_watch.0011.secret_murder_attempt: "Bu, [target.GetTitledFirstName]'ı soğukkanlılıkla öldürecek,"
+ agot_filler_nights_watch.0011.secret_cannibal: "Bu, insan eti yiyor,"
+ agot_filler_nights_watch.0011.secret_lover: "Bu, [target.GetTitledFirstName]'ı sevgili olarak alır,"
+ agot_filler_nights_watch.0011.secret_incest: "Bu kişinin yatağı genellikle [target.GetTitledFirstName] ile doludur,"
+ agot_filler_nights_watch.0011.secret_sodomite: "Bu yatağa giriyor [councillor.GetHerHis] kendi cinsiyetinden,"
+ agot_filler_nights_watch.0011.secret_deviant: "Bu kişinin sıra dışı lezzetlere karşı bir düşkünlüğü var,"
+ agot_filler_nights_watch.0011.secret_heritage: "Bunun soyu pek belli değil,"
+ agot_filler_nights_watch.0011.closing: "[squatter_1.GetSheHe] der ve [councillor.GetFirstNamePossessiveNoTooltip]'in yüzünden kan çekilir. "Ve sen... sen, [ROOT.Char.GetNameNoTooltip]... senin de henüz duyulmamış sırların var.""
+ agot_filler_nights_watch.0011.a: "[squatter_1.GetHerHim]'a dinlenecek bir yer verin"
+ agot_filler_nights_watch.0011.a.message.t: "Bir Plan Ortaya Çıktı"
+ agot_filler_nights_watch.0011.a.message.tt: "Minnettarlıktan dolayı, işgalci size karşı bir [scheme.GetSchemeType.GetTypeNameNoTooltip]'ın planlandığını ifşa ediyor"
+ agot_filler_nights_watch.0011.b: "Zindana [squatter_1.GetHerHim] atın"
+ agot_filler_nights_watch.0011.b.message.t: "Gecekondu sakini sırrınızı açıklıyor"
+ agot_filler_nights_watch.0011.b.message.tt: "Gecekondu sakini götürülürken, #V [squatter_1.GetSheHe]#! sırrınızı herkese açıklar"
+ agot_filler_nights_watch.0011.b.sadistic: "Asmak [squatter_1.GetHerHim]"
+ agot_filler_nights_watch.0011.c: "[squatter_1.GetSheHe] daha fazla sır ifşa etmeden önce [squatter_1.GetHerHis] dilini al"
+  
+  ########################################### 
+  #   agot_nights_watch.0012 - THE WOLF'S SHADOW # 
+  ########################################### 
+ agot_filler_nights_watch.0012.t: "Kurt'un Gölgesi"
+ agot_filler_nights_watch.0012.opening: "Bir gri kurt sürüsü Hediye'de küçük halkı avlıyordu, ancak gönderilen iki av partisi sadece tek bir posttan daha azıyla değil, aynı zamanda [eaten.GetTitledFirstName]'da kötü bir şekilde parçalanmış bir kardeşle geri döndü. O zamandan beri adamlar huzursuzlandı ve şimdi nöbetçiler arasında sürüye bir korkunç kurdun liderlik ettiği söylentileri dolaşıyor.\n\n"Duvarın Güneyi mi?" [goon.GetTitledFirstName] akşam yemeğimizi yerken adamlardan birine homurdanıyor. "Duvarın güneyinde korkunç kurt yok. Bu daha yeni sütten kesilmiş bir orospu. Bir kılıç darbesiyle yere serilecek, kesinlikle"
+ agot_filler_nights_watch.0012.joke.lowborn: "[joke.GetFirstNamePossessive] Mole's Town'daki anne.""
+ agot_filler_nights_watch.0012.joke.fallback: ""Mole's Town'daki kızlar.""
+ agot_filler_nights_watch.0012.joke.response.new_speaker: "\n\n[joke.GetFirstNameNoTooltip] [goon.GetTitledFirstNameNoTooltip]'e dürter. "O zaman neden öldürmüyorsun?""
+ agot_filler_nights_watch.0012.joke.response.fallback: "\n\n[joke.GetFirstName] [goon.GetTitledFirstNameNoTooltip]'e dürter. "O zaman neden öldürmüyorsun?""
+ agot_filler_nights_watch.0012.closing: "\n\n"Eh, [ROOT.Char.GetTitledFirstNameNoTooltip]'ın şanını çalmak istemezdim," diyor [goon.GetTitledFirstNameNoTooltip] utangaç bir şekilde. "Kurdu öldürecek kişi [ROOT.Char.GetSheHe|U] olmalı."
+ agot_filler_nights_watch.0012.a.trusting: "Senin ona iyi bakacağına güveniyorum, [goon.GetFirstName]."
+ agot_filler_nights_watch.0012.a.arrogant: "Benim zaferimi asla çalamazsın [goon.GetFirstName], ama denemen için ısrar etmeliyim."
+ agot_filler_nights_watch.0012.a.arbitrary: "[goon.GetFirstName] avın çok basit olacağını düşündüğünden, [goon.GetSheHe] avı yönetecek."
+ agot_filler_nights_watch.0012.a.cynical: "Hayır lütfen bize ne kadar kolay olduğunu göster, [goon.GetFirstName]"
+ agot_filler_nights_watch.0012.a.fallback: "Bir sonraki avı yönetmek için [goon.GetFirstName] gönderin"
+ agot_filler_nights_watch.0012.a.tt: "Kurt avına liderlik etmek için [goon.GetTitledFirstName] gönderin"
+ agot_filler_nights_watch.0012.b.arrogant: "Onu avlayabilecek kadar yetenekli olan tek kişi ben olabilirim."
+ agot_filler_nights_watch.0012.b.impatient: "Hemen şimdi kendim yapacağım."
+ agot_filler_nights_watch.0012.b.brave: "Onu avlayacağım - eğer mecbur kalırsam, tek başıma."
+ agot_filler_nights_watch.0012.b.paranoid: "Bunların kurt olduğundan bile emin değilim ama bunu kendim keşfedeceğim."
+ agot_filler_nights_watch.0012.b.callous: "Ben hallederim, en azından bitmesini sağlamak için."
+ agot_filler_nights_watch.0012.b.fallback: "Onlara bir sonraki ava liderlik edeceğini söyle"
+ agot_filler_nights_watch.0012.b.tt: "Kurt avına sen kendin liderlik edeceksin"
+  
+  ########################################### 
+  #   agot_nights_watch.0013 - THE WOLF'S SHADOW # 
+  ########################################### 
+  
+ agot_filler_nights_watch.0013.message.great_success.t: "[goon.GetTitledFirstName] Kurdu Öldürdü"
+ agot_filler_nights_watch.0013.message.great_success.tt: "The Gift'i rahatsız eden kurt sürüsünü yok etmek için gönderilen [goon.GetTitledFirstName], başarılı bir av yönetti ve sürünün lideri öldürüldü, sürüyü vahşi doğaya geri dağıttı"
+ agot_filler_nights_watch.0013.message.success.t: "[goon.GetTitledFirstName] Kurtları Geri Püskürttü"
+ agot_filler_nights_watch.0013.message.success.tt: "Kurtlarla başa çıkmak için gönderdiğiniz av ekibi sürünün liderini öldüremedi, ancak sürü Hediye'nin köylerinden ve kalelerinden uzaklaştırıldı."
+  
+  ########################################### 
+  #   agot_nights_watch.0014 - THE WOLF'S SHADOW # 
+  ########################################### 
+  
+ agot_filler_nights_watch.0014.t: "Kurt'un Gölgesi"
+ agot_filler_nights_watch.0014.opening.forgiving: "Av partileri ellerinden geleni yaptılar, ama yüzlerindeki korkuya bakınca, bu görevin bana düştüğünü anladım."
+ agot_filler_nights_watch.0014.opening.arrogant: "Bu sorunu benden başka kim çözebilir?"
+ agot_filler_nights_watch.0014.opening.brave: "Herhangi bir kurtla yüz yüze gelme düşüncesi çok korkutucu ama Hediye halkını korumak için yapmam gerekeni yapacağım."
+ agot_filler_nights_watch.0014.opening.sadistic: "Avlanmaya hazırlanırken aklımdan geçen tek şey canavarın leşini yere sermek ve kafasını duvara tıkmaktı."
+ agot_filler_nights_watch.0014.opening.lustful: "Yedi Krallık'ta hiç kimse bu avdaki başarılarımı duyduğunda bana karşı koyamayacak."
+ agot_filler_nights_watch.0014.opening.gluttonous: "Kurt eti en iyi et olmayabilir, ama yeni öldürdüğüm şeyin kalbini yemekte tatmin edici bir şey var ve ben bunu çok istiyorum."
+ agot_filler_nights_watch.0014.opening.impatient: "Avluda toplanırken ve adamlar değerli vakitlerini harcarken, #EMP Hadi yapın şunu,#! diye bağırmak istiyorum sadece."
+ agot_filler_nights_watch.0014.opening.hunter: "Bir kez daha avlanma düşüncesi kanımı donduruyor ve biliyorum ki yakında koleksiyonuma yeni bir kupa ekleyeceğim."
+ agot_filler_nights_watch.0014.opening.ambitious: "Ah, bu av hakkında anlatacakları hikayeler. Beş yıl sonra adamların ateşin etrafında toplanıp, bu sürüyü tek başıma nasıl avladığımı anlatmalarını sabırsızlıkla bekliyorum."
+ agot_filler_nights_watch.0014.opening.fickle: "Belki avı kendi ellerime almam bir hatadır, ama bu görevi üstlenecek başka kim var?"
+ agot_filler_nights_watch.0014.closing: "Şafaktan önce yola çıktık, grubumuz bir düzineden fazla siyah kardeşten oluşuyordu. Sürünün izini kolayca bulduk ve birkaç gün sonra kurtları belki de İlk İnsanlar'ın günlerinden beri dokunulmamış bir orman dalında köşeye sıkıştırdık.\n\nAncak ormanın derinliklerine doğru ilerledikçe [goon.Custom2('MyCharacterIntroduction', ROOT.Char)] daha fazla [goon.GetHerHis] cesaretini kaybediyor gibi görünüyor ve kısa sürede [goon.GetHerHis] sızlanmalar ürkek ve korkulu hale geliyor.\n\nAlacakaranlık çöküyor ve meşaleler yükseliyor ve [goon.GetFirstNameNoTooltip] kolumu tutuyor. "Gözlerini hissediyorum," [goon.GetSheHe] fısıldıyor. "Avlanıyoruz." Kuşlar cıvıldıyor ve etrafımızdaki derin ormanda duygusuz kırmızı gözlerin yanan lambaları bize bakıyor, sanki ormanın kendisi avcı mı yoksa av mı olduğumuzu tartıyormuş gibi bize odaklanıyor."
+ agot_filler_nights_watch.0014.a: "Adamlara savunulabilir bir oluşum oluşturmalarını söyle"
+ agot_filler_nights_watch.0014.a.tt: "#I Akıllı karakterleri tercih eder#!"
+ agot_filler_nights_watch.0014.b: "Yaratıkları korkutmak için ormana dalın"
+ agot_filler_nights_watch.0014.b.tt: "#I Kalın karakterleri tercih eder#!"
+  
+  ########################################### 
+  #   agot_nights_watch.0014 - THE WOLF'S SHADOW # 
+  ########################################### 
+  
+ agot_filler_nights_watch.0015.t: "Kurt'un Gölgesi"
+ agot_filler_nights_watch.0015.dire_wolf.defense: "Atları dinlendiriyoruz ve savunma pozisyonlarımızı alıyoruz. Kılıçlar karanlıkta çekiliyor, çelik meşale ışığında parlıyor. Dallar hışırdıyor. Çalılar sallanıyor. Kuşlar o kadar yumuşak bir şekilde sessizleşiyor ki soğuk bir sessizlik her birimizin içine kayıyor, sonra acı dolu bir uluma sesi duyuluyor ve karanlıkta eşi cevap veriyor.\n\nKurtlar ormandan fırlıyor, dişleri, pençeleri ve gri kürkleri etrafımızda çalkalanan gri bir deniz gibi çırpınıyor. Canavarların ulumaları arasında, [goon.GetTitledFirstName] acı içinde haykırıyor. [goon.GetSheHe|U] karnının üzerinde yatıyor ve üstünde, burnu kanla kanamış, sarı gözleri kış kadar vahşi, korkunç, hırlayan bir kurt duruyor. Bakışları bana sabitleniyor ve çenesi nefretle kırılırken atılıyor.\n\n"
+ agot_filler_nights_watch.0015.dire_wolf.offense: "Kılıcımı çekip bağırarak çalılıklara doğru hücum ediyorum. Şaşkına dönen diğer kara kardeşler isteksizce peşime düşüyorlar. Ormanın karmaşık bir boşluğundan geçerken dallar çatırdıyor, kurtlar sızlanıyor ve korkuyla kaçışıyor.\n\nSonra donup kalıyorum. Çalılıkları temizlerken önümde korkunç büyüklükte bir kurt duruyor, sıcak nefes kokusu yüzümde, hırlıyor ve önümde salyaları akıtıyor. Ben yerimde dururken zayıf bir adım geri çekiliyor ve korkusunu hissederek hücum ediyorum. Hançer gibi keskin pençeleri bana doğru savruluyor, ama"
+ agot_filler_nights_watch.0015.grey_wolf.defense: "Atları dinlendiriyoruz ve savunma pozisyonlarımızı alıyoruz. Kılıçlar karanlıkta çekiliyor, çelik meşale ışığında parlıyor. Dallar hışırdıyor. Çalılar sallanıyor. Kuşlar o kadar yumuşak bir şekilde sessizleşiyor ki soğuk bir sessizlik her birimizin içine kayıyor, sonra acı dolu bir uluma sesi duyuluyor ve karanlıkta eşi cevap veriyor.\n\nKurtlar ormandan fırlıyor, dişleri, pençeleri ve gri kürkleri etrafımızda çalkalanan gri bir deniz gibi çırpınıyor. Canavarların ulumaları arasında, [goon.GetTitledFirstName] acı içinde haykırıyor. [goon.GetSheHe|U] karnının üzerinde yatıyor ve üstünde hırlayan gri bir kurt duruyor, burnu kanla kanlı, sarı gözleri kış kadar vahşi. Bakışları bana sabitleniyor ve çenesi nefretle kırılırken atılıyor,"
+ agot_filler_nights_watch.0015.grey_wolf.offense: "Kılıcımı çekip bağırıyorum, çalılıklara doğru hücum ediyorum. Şaşkına dönen diğer siyah kardeşler isteksizce peşime düşüyorlar. Dallar çatırdıyor, kurtlar sızlanıyor ve korkuyla kaçışıyor, ben ormandaki karmaşık bir aralıktan geçerken.\n\nDonuyorum. Yolumda devasa bir gri kurt duruyor, meydan okurcasına hırlıyor ve salyaları akıtıyor. Ben yerimde dururken zayıf bir adım geri çekiliyor ve korkusunu hissederek tekrar hücum ediyorum. Hançer gibi keskin pençeleri bana doğru savruluyor,"
+ agot_filler_nights_watch.0015.success: "ama ben onun darbesinden kaçıyorum ve kılıcımı canavarın boğazına saplıyorum. Havlayarak, kasılıyor ve diğer kurtlar kaçıp giderken önümde düşüyor."
+ agot_filler_nights_watch.0015.failure: "ve darbeyi engelleyemiyorum. Pençeler kolumu yakalıyor ve beni yere fırlatıyor. Kan pelerinimi ıslatıyor, dünya etrafımda dönerken ve dönerken ve dönerken yüzümün yarısını kaplayan kalın siyah toprak parçaları.\n\nCanavar homurdanıyor"
+ agot_filler_nights_watch.0015.failure.craven: "ve korkudan altımı ıslattım."
+ agot_filler_nights_watch.0015.failure.brave: "ve kalbim gürlüyor. Bu benim sonum olmayacak."
+ agot_filler_nights_watch.0015.failure.patient: "ve zihnimde ona yaklaşmaya cesaret ediyorum."
+ agot_filler_nights_watch.0015.failure.callous: "ve ben bu olayların gidişatına gülüyorum, eğleniyorum."
+ agot_filler_nights_watch.0015.failure.trusting: "ve kurtuluş için dua ediyorum."
+ agot_filler_nights_watch.0015.failure.calm: "ve dönüp, gözümü kırpmadan gece gökyüzüne bakıyorum. Böyle mi bitiyor?"
+ agot_filler_nights_watch.0015.failure.fallback: "ve derin bir nefes alıyorum, kendimi bundan sonra olacaklara hazırlıyorum."
+  # Success 
+ agot_filler_nights_watch.0015.compassionate: "Zavallı hayvan..."
+ agot_filler_nights_watch.0015.calm: "Hayatta olduğum için şanslıyım."
+ agot_filler_nights_watch.0015.deceitful: "Peki ben korktum mu? Bir an bile korkmadım."
+ agot_filler_nights_watch.0015.brave.dire_wolf: "Değerli bir düşman."
+ agot_filler_nights_watch.0015.brave.grey_wolf: "Korktuğum canavarın yarısı bile değildi."
+ agot_filler_nights_watch.0015.craven: "Bir daha asla bu kadar aptalca bir şey yapmayacağım"
+ agot_filler_nights_watch.0015.wrathful: "Ben dokunulmazım!"
+ agot_filler_nights_watch.0015.greedy: "Duvarda harika görünecek, değil mi?"
+ agot_filler_nights_watch.0015.cynical: "Kaderimiz değişseydi [goon.GetFirstNameNoTooltip] beni kurtarır mıydı?"
+ agot_filler_nights_watch.0015.impatient: "Hadi artık şu lanet ormandan çıkalım."
+ agot_filler_nights_watch.0015.ambitious: "Ev [ROOT.Char.GetDynastyName]!"
+ agot_filler_nights_watch.0015.just: "Başka yok mu?"
+ agot_filler_nights_watch.0015.vengeful: "Şanslı mıyım yoksa iyi miyim?"
+ agot_filler_nights_watch.0015.zealous: "Başkaları hepsini alır!"
+ agot_filler_nights_watch.0015.gregarious: "Hala benimle misin, [goon.GetFirstNameNoTooltip]?"
+ agot_filler_nights_watch.0015.lustful: "Ah, bu hikayeyi ne yataklara dolduracağım."
+ agot_filler_nights_watch.0015.gluttonous: "Kendi avladığın avdan daha güzel bir şey var mı?"
+  # Failure 
+ agot_filler_nights_watch.0015.failure_1: "Bir hançer çek ve hayatın için savaş"
+ agot_filler_nights_watch.0015.failure_2: "Ölüyü oyna"
+ agot_filler_nights_watch.0015.failure_3: "Kaderini kabul et"
+ every_dedicated_black_brother_0015: "Gece Nöbetçileri'nin kendi hanedanına sadakat göstermenizi istemeyen her üyesi"
+ agot_filler_nights_watch.0015.bear.offense: "Kılıcımı çekip bağırarak çalılıklara doğru hücum ediyorum. Şaşkına dönen diğer kara kardeşler isteksizce peşime düşüyorlar. Çığlık atan, çırpınan bir karmaşa içinde çalılıkların arasından geçiyorum, kurtların hemen üzerime atılmasını bekliyorum ama bunun yerine kendimi bir açıklıkta yalnız buluyorum. Kurtlar nerede?\n\nSonra Hediye'yi rahatsız eden canavarı görüyorum — kardeşlerimin her birinin gizlice korktuğu korkunç kurt değil, hiç kurt değil.\n\nAyı devasa, kalçaları bir şarjörün kalçalarından daha büyük ve güçlü, ön pençeleri kalkan büyüklüğünde. Kayalara çarpan bir gemi gibi kükreyerek canavar bana hücum ediyor. Zaman donuyor ve sonunda kurtların çevreyi dolaştığını görüyorum, daha büyük canavarın beni bitirmesini bekliyorlar.\n\nAyının çeneleri bana doğru atılırken genişçe açılıyor,"
+ agot_filler_nights_watch.0015.bear.defense: "Atları dinlendirip savunma pozisyonlarımızı alıyoruz. Kılıçlar karanlıkta çekiliyor, çelik meşale ışığında parlıyor. Dallar hışırdıyor. Çalılar sallanıyor. Kuşlar o kadar yumuşak bir şekilde sessizleşiyor ki her birimizin içine soğuk bir sessizlik sızıyor, sonra acı dolu bir uluma sesi duyuluyor ve karanlıkta eşi cevap veriyor.\n\nKurtlar ormandan fırlıyor, dişleri, pençeleri ve gri kürkleri etrafımızda çalkalanan gri bir deniz gibi çırpınıyor. Canavarların ulumaları arasında, [goon.GetTitledFirstName] acı içinde haykırıyor. [goon.GetSheHe|U] karnının üstünde yatıyor ve üstünde korktuğumuz korkunç kurt ya da herhangi bir kurt türü değil, canavar boyutlarında bir ayı duruyor. Bana doğru dönüyor, geniş yüzü kanla ıslanmış, gözleri kocaman ve aç. O boyuttaki herhangi bir hayvanın hareket edebileceğinden daha hızlı, kendini bana atıyor,"
+  
+ agot_filler_nights_watch.0016.t: "YER TUTUCU"
+ agot_filler_nights_watch.0016.desc: "YER TUTUCU"
+ agot_filler_nights_watch.0016.a: "YER TUTUCU"
+  
+ agot_filler_nights_watch.0017.t: "Kurt'un Gölgesi"
+ agot_filler_nights_watch.0017.desc: "Gift'i terörize eden kurt sürüsünü dağıtmak için gönderilen av partisinin kalıntıları, topallayarak ve kanlar içinde eve dönüyor. Kardeşlerimden bazıları Gift'ten hiç dönmedi ve onların kaybını karnımda bir bıçak gibi hissediyorum. Görünüşe göre bu kurtlar sıradan bir sürü değil. Kardeşlerimden biri sonunda olanları tutarlı bir şekilde anlatacak kadar sakinleştiğinde, sarı gözlü ve siyah kürklü iri bir canavardan bahsediyor. Pusuya düşürüldüklerini ve canlarını zor kurtardıklarını söylüyor.\n\nGece Nöbeti ne hale geldi? İnsanların diyarlarını korumakla görevlendirildik, ancak komşularımızı vahşi hayvanlardan bile koruyamıyoruz."
+ agot_filler_nights_watch.0017.a: "Bu başarısızlık Gece Nöbetçileri'nin iyi adına leke sürdü."

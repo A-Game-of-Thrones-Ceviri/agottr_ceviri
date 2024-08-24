@@ -1,0 +1,93 @@
+﻿l_english:
+  
+ maester_title_localization: "$trait_maester$"
+ maester_title_holder: "[CHARACTER.Custom('MaesterCheck')]"
+ ArchaesterTitle: "$archmaester$"
+ MaesterTitle: "$trait_maester$"
+ AcolyteTitle: "$trait_acolyte$"
+ NoviceTitle: "$trait_novice$"
+  
+  ### Maester Decisions/Events ### 
+ decision_employ_maester: "Hisar'dan Bir Üstat Çağır"
+ decision_employ_maester_tooltip: "Bir [maester|E] çağıracaksınız"
+ decision_employ_maester_desc: "Bilinen dünyanın her yerinde Westerosluların öğrenim merkezi olarak tanınan Oldtown Hisarı, Westeros'taki her kaleye eğitimli bir öğrenim adamı sağlar. Belki de birini çağırmalıyım."
+ decision_employ_maester_effect: "Size eşlik etmesi için yetenekli bir üstat seçilecek ve kısa süre içinde sarayınıza varacak."
+ decision_employ_maester_confirm: "Oldtown'a bir kuzgun gönder."
+ tooltip_employ_maester: "Sarayımızda yetenekli bir üstat olmamalı."
+ tooltip_recently_employed_maester: "Yakın zamanda bir üstat istihdam etmeye çalışmamış olmalı."
+  
+ essos_decision_employ_maester: "Bir Üstat Ara"
+ essos_decision_employ_maester_tooltip: "Bir [maester|E] aramaya başlayacaksınız"
+ essos_decision_employ_maester_desc: "Sadece Westeros lordlarının bir üstat istihdam edebileceği nerede yazıyor? Bir üstat aramaya başlamalıyım ve şansım yaver giderse yetkin birini bulabilirim."
+ essos_decision_employ_maester_effect: "Bir üstat arayışı başlayacak"
+ essos_decision_employ_maester_confirm: "Aramaya başlayın."
+ tooltip_employ_maester: "Sarayımızda yetenekli bir üstat olmamalı."
+  
+  
+ agot_maester.0001.t: "[capital.GetNameNoTooltip]'in Yeni Üstadı"
+ agot_maester.0001.desc: "Hisar'dan çağırdığım üstat [başkent.GetNameNoTooltip]'e ulaştı, [new_maester.GetCulture.GetName] adında [new_maester.GetFirstName]. Umalım da [new_maester.GetSheHe] sadık ve bilge olsun."
+ agot_maester.0001.a: "Güzel."
+ agot_maester.0001.a.tt: "Üstat hem meclis üyesi hem de saray doktorunuz olarak görev yapacak."
+ agot_maester.0001.b: "Korkarım artık hesaplarımızda sizin hizmetiniz için yer yok."
+  
+ agot_maester.0002.t: "[ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]'in Büyük Üstadı"
+ agot_maester.0002.desc: "[ROOT.Char.GetPrimaryTitle.GetNameNoTier]'ın [ROOT.Char.GetTitleTierName]'i olarak artık size Grand Maester yardımcı olacak."
+ agot_maester.0002.a: "Güzel."
+ agot_maester.0002.a.tt: "Üstat hem danışman hem de saray doktorunuz olarak görev yapacak."
+  
+ agot_maester.0005.t: "[capital.GetNameNoTooltip]'in Yeni "Üstadı""
+ agot_maester.0005.desc: "[new_maester.GetFirstName] en iyi ihtimalle şüpheli bir hekim. [Yeni_maester.GetSheHe|U], Meclis [yeni_maester.GetHerHim]'in [yeni_maester.GetHersHis] zincirini elinden alana kadar eski bir üstat olduğunu iddia ediyor. Yeni_maester.GetHerHim]'i göndermek için çok geç değil."
+ agot_maester.0005.a: "Bu konuda hiçbir endişem yok."
+ agot_maester.0005.b: "Bu kadar alçalmayacağım."
+  
+ agot_maester.0006.desc: "Güya Üstat [new_maester.GetFirstName], [new_maester.GetSheHe] yeni bir üstat için yaptığım çağrıyı duyduğunda bölgedeymiş. Umalım da [yeni_üstat.GetSheHe] sadık ve bilge olsun."
+  
+ agot_maester.0007.t: "Üstatsız"
+ agot_maester.0007.desc: "Yeni bir üstat arayışım sonuç vermedi. Görünüşe göre [capital.GetNameNoTooltip] öngörülebilir gelecekte üstatsız kalacak."
+ agot_maester.0007.a: "Ne büyük hayal kırıklığı."
+  
+ agot_maester.0008.t: "Gezgin Yardımcı"
+  
+ agot_maester.0008.desc: "[acolyte.GetFirstName] Hisar'da eğitim gördüğünü iddia ediyor, ancak bir üstat zinciri olmadan emin olmak imkansız. Görünüşe göre [acolyte.GetSheHe|U] [acolyte.GetHerHis] çalışmalarında fazla ilerleyememiş. Her ne kadar [acolyte.GetFirstNameNoTooltip] tam olarak aklımdaki kişi olmasa da, [acolyte.GetSheHe] hiç yoktan iyidir."
+  
+ agot_maester.0008.a: "[acolyte.GetSheHe|U] yapmak zorunda kalacak."
+ agot_maester.0008.b: "Daha iyisini talep ediyorum."
+  
+ agot_maester.1000.t: "Zincirin Halkaları"
+ agot_maester.1000.desc: "[child.GetFirstName] sessiz bir çocuktur. [çocuk.GetSheHe|U] muhasebecilerin ve üstadın arkadaşlığını sipahilerin ve şövalyelerin arkadaşlığına tercih eder. [Çocuk.GetSheHe|U] akşamları avluda kılıç talimi yapmaktansa [çocuk.GetHerHis]'in odasında kitap ve parşömenlerle çevrili bir şekilde geçirmeyi tercih eder.\n\nSonunda [çocuk.GetHerHis]'in bana geleceği gün gelir. GetSheHe] bana geliyor, [child.Custom('quirk_pos_present')] ve sonra [child.GetHerHis] [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]'ten ayrılmak ve Hisar'a yolculuk etmek istediğini söylüyor. Orada [çocuk.GetSheHe] [çocuk.GetHerHis] çalışmalarına başlayabilir ve bir gün üstat olarak krallığa hizmet edebilmek için bir zincir oluşturmaya çalışabilir."
+ agot_maester.1000.a: "Yarın Hisar'a gidebilirsiniz."
+ agot_maester.1000.b: "Sen bir [ROOT.Char.GetDynastyNameNoTooltip]'sin, Gri Fare değil!"
+  
+ agot_maester.1001.t: "Yeni Bir Archmaester"
+ agot_maester.1001.desc: "Üstat [archmaester_candidate.GetFirstName] bana büyük bir heyecanla geldi. Başüstat [dead_archmaester.GetFirstName]'in vefatından bu yana, Hisar'da onun yerine geçecek kişi için bir oylama yapıldığını iddia ediyor. Meclis üyeleri Üstat [archmaester_candidate.GetFirstNameNoTooltip]'ın Baş Üstatlık makamına getirilmesine karar verdi ve kendisi Hisar'a geri çağrıldı."
+ agot_maester.1001.a: "Bu harika bir haber!"
+ agot_maester.1001.a.tt: "Üstat [archmaester_candidate.GetFirstNameNoTooltip] Başüstatlık makamına yükseltilecek ve hisara doğru yola çıkacak."
+  
+ agot_maester.1002.t: "Yeni Bir Büyük Üstat"
+ agot_maester.1002.desc_death: "Büyük Üstat [old_grandmaester.GetFirstName]'in vefatıyla, "
+ agot_maester.1002.desc_disgraced: "Eski Büyük Üstat [disgraced_maester.GetFirstName]'in görevden alınmasıyla, "
+ agot_maester.1002.desc: "Hisar'daki Meclis, Büyük Üstat [grandmaester_candidate.GetFirstName]'ı Kraliyet Divanı'ndaki yeni sesleri olması için seçti. Görünüşe göre yola çıktı."
+ agot_maester.1002.a: "Sabırsızlanıyorum."
+ agot_maester.1002.b: "İşinin ehli olsa iyi olur."
+  
+ agot_maester.1003.t: "Yeni Büyük Üstat Geliyor"
+ agot_maester.1003.desc: "Büyük Üstat [grandmaester_candidate.GetFirstName] sonunda saraya geldi. Umalım da krallığa sadakatle hizmet etsin."
+ agot_maester.1003.a: "Adımınıza dikkat edin."
+  
+ agot_maester.1004.t: "Büyük Bir Hayal Kırıklığı"
+ agot_maester.1004.desc: "Büyük Üstat [old_grandmaester.GetFirstName]'ın görevini kabul etme yolunda öldüğü bildirildi. Meclis yeni bir Baş Üstat seçmek için müzakerelere başladı."
+ agot_maester.1004.a: "Umarım bir sonraki uzun sürer."
+  
+ agot_maester.1005.t: "Sorgulayan Bir Zihin"
+ agot_maester.1005.desc: "Üstat [maester.GetFirstName] çocuklarımdan biri hakkında bana geldi. [Üstat.GetSheHe|U] [çocuk.GetFirstName]'in [çocuk.GetHerHis] çalışmalarında büyük umut vaat ettiğini ve Hisar için harika bir aday olabileceğini iddia ediyor. Orada [üstat.GetSheHe], [çocuk.GetFirstNameNoTooltip]'in [çocuk.GetHerHis]'in kendi yolunu bulabileceğini ve [çocuk.GetSheHe]'nin bir gün üstat olarak krallığa hizmet edebileceği bir zincir oluşturmak için çalışabileceğini söylüyor."
+ agot_maester.1005.a: "[child.GetFirstName] yarın Hisar'a doğru yola çıkıyor."
+ agot_maester.1005.b: "Benim çocuğum bir [ROOT.Char.GetDynastyNameNoTooltip], Gri Fare değil!"
+  
+ agot_maester.1006.t: "Üstadınız, Rezil"
+ agot_maester.1006.desc: "Hisar'dan haber geldi; [disgraced_maester.GetFirstNamePossessive] [secret.GetName] sırrı ışığında, Conclave [disgraced_maester.GetHerHis]'in maester unvanını iptal etti. Disgraced_maester.GetHerHis] liege ve [root.GetLadyLord] olarak, Conclave benden [disgraced_maester.GetHerHim]'i sürgüne göndermemi istedi. Karşılığında da sarayıma yeni bir üstat göndermeyi teklif ettiler."
+ agot_maester.1006.a: "Seninle hiçbir şey yapmak istemiyorum, gri sıçan."
+ agot_maester.1006.a.tt: "[disgraced_maester.GetName] Westeros'tan sürgün edilecek"
+ agot_maester.1006.b: "Ait olduğun yer soğuk bir hücre."
+ agot_maester.1006.b.tt: "[disgraced_maester.GetName] senin tarafından hapsedilecek"
+ agot_maester.1006.c: "Bu hiçbir şeyi değiştirmedi."
+ agot_maester.1006.c.tt: "[disgraced_maester.GetName] senin üstadın olarak kalacak"

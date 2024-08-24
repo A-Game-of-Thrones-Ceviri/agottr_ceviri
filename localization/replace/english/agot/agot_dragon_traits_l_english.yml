@@ -1,0 +1,177 @@
+﻿l_english:
+  #Dragon 
+ trait_dragon_generic: "Ejderha" #NT!
+ trait_dragon_wild: "Vahşi Ejderha" #NT!
+ trait_dragon_owned: "Sahip Olunan Ejderha" #NT!
+ trait_dragon_tamed: "Evcilleştirilmiş Ejderha" #NT!
+ trait_dragon_bound: "Bağlı Ejderha" #NT!
+ trait_dragon_desc: "Ejderha Yer Tutucu Açıklaması"
+ trait_dragon_character_desc: "Ejderha Yer Tutucu Karakter Açıklaması"
+  
+  #Dragonrider 
+ trait_dragonrider: "Ejderha Binicisi" #NT!
+ trait_dragonrider_desc: "Ejderha Binicileri, bir ejderhayla bağ kuran ve bu korkunç gücü kendi amaçları doğrultusunda kullanan az sayıdaki erkek ve kadındır." #NT!
+ trait_dragonrider_character_desc: "Ejderha '[ROOT.Var('current_dragon').Char.GetName]'ı evcilleştirip kendine bağlayan [ROOT.GetCharacter.GetFirstNameNoTooltip], artık [ROOT.Var('current_dragon').Char.Custom('GetDragonHerHim')]'ye binebilir." #NT!
+ trait_dragonbinder_desc: "Eski Valyria'nın kan büyüsüyle '[ROOT.Var('current_dragon').Char.GetNameNicknamed]' ejderhasını bağlayan [ROOT.GetCharacter.GetFirstNameNoTooltip], artık [ROOT.Var('current_dragon').Char.Custom('GetDragonHerHim')]'ye binebiliyor." #NT!
+ trait_dragon_name_dragon_alive: "[ROOT.Var('current_dragon').Char.GetNamePossessive|U] Sürücü" #NT!
+ trait_track_dragon_training: "Ejderha Eğitimi" #NT!
+ trait_track_dragon_training_desc: "Eğitimde veya birlikte savaşta geçirilen zaman, bir sürücünün ejderhasının kudretli gücünü kullanma becerisini ve hızını geliştirir.\n\nHer eğitim seviyesi [dragon_combat_effectiveness|E]: @dragon_combat_effectiveness_icon! #P +10%#!,'den maksimum #P +30%#!.'e kadar" #NT!
+ trait_track_dragon_bond: "Ejderha Bağı" #NT!
+ trait_track_dragon_bond_desc: "Bir ejderha ile binicisi arasındaki bağ her zaman güçlüdür, ancak en büyüklerinin sihirli bir şekilde birbirine bağlı olduğu söylenir. Daha yakın bir bağ, bir ejderhanın binicisine en stresli koşullarda bile hizmet etmesini sağlayacaktır." #NT!
+ trait_dragonless_dragonrider: "Ejderhasız Süvari" #NT!
+ trait_dragonless_dragonrider_desc: "Daha önce bir ejderhayla bağ kurmuş olan bu karakter, bir zamanlar dünyanın en büyük gücünü kullanıyordu; ancak şu anda ejderhasız durumdalar." #NT!
+ trait_dragonless_dragonrider_character_desc: "Daha önce bir ejderhayla bağ kurmuş olan [ROOT.GetCharacter.GetFirstNameNoTooltip], bir zamanlar dünyanın en büyük gücünü kullanıyordu; ancak [ROOT.GetCharacter.GetSheHe] şu anda ejderhasız." #NT!
+ trait_dragonwidowed: "Bağları kopmuş" #NT!
+ trait_dragonwidowed_desc: "Daha önce bir ejderhayla bağ kurmuş olan bu karakterin, bu bağı kaybetmesi, başka bir ejderhayla bağ kurmayı düşünmesini imkansız hale getirmiştir." #NT!
+ trait_dragonwidowed_character_desc: "Daha önce bir ejderhayla bağ kurmuş olan [ROOT.GetCharacter.GetHerHis] bağ arkadaşının kaybı, [ROOT.GetCharacter.GetFirstNameNoTooltip]'in başka bir ejderhayla bağ kurmayı düşünmesini imkansız hale getirdi." #NT!
+  
+  #Dragonslayer 
+ trait_dragonslayer: "Ejderha Avcısı" #NT!
+ trait_dragonslayer_desc: "Ejderha Avcısı unvanını çok az kişi kazanabilir, ama bu karakter tam da bunu başardı!" #NT!
+ trait_dragonslayer_character_desc_alive: "[ROOT.Char.GetFirstNameNoTooltip] ejderhayı öldürdü [ROOT.Char.MakeScope.Var( 'slain_dragon' ).GetCharacter.GetNameNoTooltip], gerçekten etkileyici bir dövüş becerisi!" #NT!
+ trait_dragonslayer_character_desc_dead: "[ROOT.Char.GetFirstNameNoTooltip] kudretli bir ejderhayı öldürdü, gerçekten etkileyici bir dövüş becerisi!" #NT!
+  
+  #Dragon personality traits 
+ trait_dragon_aggressive: "Saldırgan" #NT!
+ trait_dragon_aggressive_desc: "Herhangi bir yaratığa, herhangi bir durumda saldırabilen bu ejderha, öfkesiyle ünlüdür." #NT!
+ trait_dragon_aggressive_character_desc: "Herhangi bir yaratığa, herhangi bir durumda saldırabilen [ROOT.Char.GetFirstNameNoTooltip], öfkesiyle ünlüdür." #NT!
+  
+ trait_dragon_friendly: "Arkadaşça" #NT!
+ trait_dragon_friendly_desc: "Bu ejderha şaşırtıcı derecede barışçıl ve çoğu yaratığa karşı düşünceli, hatta çoğu zaman sakin hatta oyuncu bile olabiliyor." #NT!
+ trait_dragon_friendly_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] şaşırtıcı derecede barışçıl ve çoğu canlıya karşı anlayışlıdır, hatta çoğu zaman sakin hatta oyuncu bile olabilir." #NT!
+  
+ trait_dragon_cooperative: "Kooperatif" #NT!
+ trait_dragon_cooperative_desc: "Bu ejderha baştan aşağı bir sürü hayvanıdır. Yanındaki akranlarıyla birlikte mükemmelleşir." #NT!
+ trait_dragon_cooperative_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] baştan sona bir sürü hayvanıdır. [ROOT.Char.Custom('GetDragonSheHe')|U], [ROOT.Char.Custom('GetDragonHerHis')] tarafındaki akranlarıyla üstündür." #NT!
+  
+ trait_dragon_solitary: "Yalnız" #NT!
+ trait_dragon_solitary_desc: "Bu ejderha, dikkat dağıtıcı şeylerden ve diğer ejderhalardan uzak olduğunda en etkili halindedir." #NT!
+ trait_dragon_solitary_character_desc: "[ROOT.Char.GetFirstNameNoTooltip], dikkat dağıtıcı unsurlardan ve diğer ejderhalardan uzak olduğunda [ROOT.Char.Custom('GetDragonHerHis')] en etkilidir." #NT!
+  
+ trait_dragon_imperious: "Otoriter" #NT!
+ trait_dragon_imperious_desc: "Bu ejderha ile diğer ejderhalar arasındaki etkileşimlerde neredeyse kraliyetvari bir hava vardır. Herkesin, ejderhanın ve insanın, kendisine boyun eğmesini bekler." #NT!
+ trait_dragon_imperious_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] ile diğer ejderhalar arasındaki etkileşimlerde neredeyse görkemli bir hava vardır. [ROOT.Char.Custom('GetDragonSheHe')|U], ejderha ve insanın [ROOT.Char.Custom('GetDragonHerHim')]'ye boyun eğmesini bekler." #NT!
+  
+ trait_dragon_supporting: "Destek" #NT!
+ trait_dragon_supporting_desc: "Görünüşe göre bu ejderha, birçok çalışan uşaktan biri olarak en mutlu olurdu. Kontrol sahibi olmaktansa sadık olmayı önemsiyor." #NT!
+ trait_dragon_supporting_character_desc: "Görünüşe göre [ROOT.Char.GetFirstNameNoTooltip], çok sayıda çalışan adamdan biri olarak en mutlu olacak kişi. [ROOT.Char.Custom('GetDragonSheHe')|U], kontrol sahibi olmaktan çok sadık olmayı tercih ediyor." #NT!
+  
+ trait_dragon_impulsive: "Dürtüsel" #NT!
+ trait_dragon_impulsive_desc: "Pervasızca saldıran bu ejderha, çoğu zaman düşmanlarla hemen çatışmaya girer." #NT!
+ trait_dragon_impulsive_character_desc: "Pervasızca saldıran [ROOT.Char.GetFirstNameNoTooltip], çoğu zaman düşmanlarla hemen çatışmaya girer." #NT!
+  
+ trait_dragon_calculating: "Hesaplama" #NT!
+ trait_dragon_calculating_desc: "Sabırlı bir canavar olan bu ejderha, hareketlerini iyi planlayıp odaklanarak savaşmayı tercih eder." #NT!
+ trait_dragon_calculating_character_desc: "Sabırlı bir canavar olan [ROOT.Char.GetFirstNameNoTooltip], [ROOT.Char.Custom('GetDragonHerHis')] hareketleriyle iyi planlanmış ve odaklanmış bir şekilde savaşmayı tercih eder." #NT!
+  
+ trait_dragon_voracious: "Obur" #NT!
+ trait_dragon_voracious_desc: "Doymak bilmez bir iştahı olan bu ejderhanın aşırı beslendiği bilinmektedir." #NT!
+ trait_dragon_voracious_character_desc: "Doymak bilmez bir iştahı olan [ROOT.Char.GetFirstNameNoTooltip]'ın aşırı beslendiği bilinmektedir." #NT!
+  
+ trait_dragon_restrained: "Ölçülü" #NT!
+ trait_dragon_restrained_desc: "Bu ejderha, kendi boyutundaki bir ejderha için beklenenden daha az yemek yiyerek değerli kaynakları korur." #NT!
+ trait_dragon_restrained_character_desc: "[ROOT.Char.GetFirstNameNoTooltip], [ROOT.Char.Custom('GetDragonHerHis')] boyutundaki bir ejderha için beklenenden daha az yer ve böylece değerli kaynakları korur." #NT!
+  
+ trait_dragon_defiant: "Meydan okuyan" #NT!
+ trait_dragon_defiant_desc: "Herhangi bir insana itaat etmeyi aşağılayan bu ejderha, binicileri, emirleri veya zincirleri reddetme eğilimindedir." #NT!
+ trait_dragon_defiant_character_desc: "Herhangi bir erkeğe itaat etmeyi aşağılayan [ROOT.Char.GetFirstNameNoTooltip], binicileri, emirleri veya zincirleri reddetme eğilimindedir." #NT!
+  
+ trait_dragon_accepting: "Kabul etmek" #NT!
+ trait_dragon_accepting_desc: "İnsanların yanında garip bir şekilde rahat olan bu ejderha, binicilere ve yönlere uymaya karşı bir eğilim göstermiştir." #NT!
+ trait_dragon_accepting_character_desc: "İnsanların yanında garip bir şekilde rahat olan [ROOT.Char.GetFirstNameNoTooltip], sürücülere ve yönlendirmelere uymaya eğilim göstermiştir." #NT!
+  
+ trait_dragon_bloodthirsty: "Kana susamış" #NT!
+ trait_dragon_bloodthirsty_desc: "Bu ejderha kanlı çatışmaları arzular ve ölüm ya da yıkıma sebep olma konusunda belirgin bir şekilde kendi unsurundadır." #NT!
+ trait_dragon_bloodthirsty_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] kanlı çatışmayı arzular ve ölüm veya yıkımın sebebi olarak belirgin bir şekilde [ROOT.Char.Custom('GetDragonHerHis')] elementindedir." #NT!
+  
+ trait_dragon_skittish: "Ürkek" #NT!
+ trait_dragon_skittish_desc: "Çatışmalardan kaçma eğilimi olan bu ejderha, içindeki gücün farkında bile değil gibi görünüyor." #NT!
+ trait_dragon_skittish_character_desc: "Çatışmalardan kaçma eğilimi olan [ROOT.Char.GetFirstNameNoTooltip], içindeki [ROOT.Char.Custom('GetDragonHerHis')] gücünün farkında bile değil gibi görünüyor..." #NT!
+  
+ trait_dragon_cannibal: "yamyam" #NT!
+ trait_dragon_cannibal_desc: "Bu ejderhanın, sadece toprak için savaşmaktan veya savaşta bulunmaktan çok daha fazlası olduğu, sadece iştahlarını gidermek için diğer ejderhaları yediği bilinmektedir." #NT!
+ trait_dragon_cannibal_character_desc: "[ROOT.Char.GetFirstNameNoTooltip]'ın, sadece toprak için savaşmaktan veya savaşta bulunmaktan çok uzakta, sadece [ROOT.Char.Custom('GetDragonHerHis')]'in iştahını doyurmak için diğer ejderhaları yediği bilinmektedir." #NT!
+  
+  #Congenital traits 
+ trait_dragon_physique_good_3: "Zalim Leviathan" #NT!
+ trait_dragon_physique_good_3_desc: "Bazı ejderhalar kendi türlerinin o kadar iyi örnekleridir ki Asshai'den Duvar'a kadar herkes onların fiziksel ihtişamını bilir. Onların huzurunda olmak, ölümün bedenlenmiş halinin huzurunda olmaktır." #NT!
+ trait_dragon_physique_good_3_character_desc: "Asshai'den Duvar'a kadar herkes [ROOT.Char.GetFirstNameNoTooltip]'ın fiziksel ihtişamını bilir. [ROOT.Char.Custom('GetDragonHerHis')] huzurunda olmak, ölümün bedenlenmiş halinin huzurunda olmaktır." #NT!
+ trait_dragon_physique_good_2: "Büyük Drake" #NT!
+ trait_dragon_physique_good_2_desc: "Tüm ejderhalar eşit yaratılmamıştır ve bazıları ete kemiğe bürünmüş ateşin gücüyle dalgalanarak onları gören herkesi şaşkına çevirir." #NT!
+ trait_dragon_physique_good_2_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] ejderha türünün çarpıcı bir örneğidir. [ROOT.Char.Custom('GetDragonHerHis')] kusursuz pulları, ete dönüşmüş ateşin gücüyle dalgalanır." #NT!
+ trait_dragon_physique_good_1: "Korkunç Solucan" #NT!
+ trait_dragon_physique_good_1_desc: "Güçlü kanatları, ağır yapıları ve devasa ısırıklarıyla bazı ejderhalar, sadece varlıklarıyla bile eski Valyria'nın gücünü sergileyebilirler." #NT!
+ trait_dragon_physique_good_1_character_desc: "Güçlü kanatları, iri gövdesi ve devasa ısırığıyla [ROOT.Char.GetFirstNameNoTooltip]'a bakıldığında eski Valyria'nın gücü görülebilir." #NT!
+ trait_dragon_physique_good: "İyi Ejderha Fiziği" #NT!
+ trait_dragon_physique_bad: "Kötü Ejderha Fiziği" #NT!
+ trait_dragon_physique_bad_1: "Sağlıksız Solucan" #NT!
+ trait_dragon_physique_bad_1_desc: "Hafif biçimsiz kanatları ve biçimsiz pul parçaları, kan anormallikleri veya mistik müdahaleler bazı ejderhaların diğerlerinden daha düşük seviyede olmasına neden olabilir." #NT!
+ trait_dragon_physique_bad_1_character_desc: "Hafifçe biçimsiz kanatları ve şekilsiz pul parçalarıyla, [ROOT.Char.GetFirstNameNoTooltip]'ın tipik olarak bir ejderha olarak emredeceği varlık biraz azalmıştır." #NT!
+ trait_dragon_physique_bad_2: "Kötü Biçimli Drake" #NT!
+ trait_dragon_physique_bad_2_desc: "Bütün ejderhalar eşit yaratılmamıştır ve bazıları, garip açılarda yer alan birbirinden ayrı uzuvları ve garip ve yapmacık hareketleri ile daha aşağı bir yaratığın izlerini taşır." #NT!
+ trait_dragon_physique_bad_2_character_desc: "[ROOT.Char.GetFirstNameNoTooltip], [ROOT.Char.Custom('GetDragonHerHis')] akranlarının daha az belirgin olanıdır; garip açılarda yer alan bağlantısız uzuvlar ve [ROOT.Char.Custom('GetDragonHerHis')]'in hareketleri garip ve yapmacıktır." #NT!
+ trait_dragon_physique_bad_3: "Zavallı Wyrmling" #NT!
+ trait_dragon_physique_bad_3_desc: "En az büyülü zamanlarda doğan ejderhaların kaderi böyledir, uçlarından kuyruklarına kadar doğru görünen hiçbir yerleri yoktur. Asimetrik bir kafatasına garip bir şekilde yerleşmiş biçimsiz gözler. Kanatlar çok küçük ve sırt çok büyüktür. Bu yaratıklar dehşetten uzak, acıma uyandırırlar." #NT!
+ trait_dragon_physique_bad_3_character_desc: "[ROOT.Char.GetFirstNameNoTooltip]'ın uçtan uca doğru görünen hiçbir parçası yok. Asimetrik bir kafatasına garip bir şekilde yerleştirilmiş şekilsiz gözler. Kanatlar çok küçük ve sırt çok büyük. Bu yaratık dehşetten uzak, acıma duygusu uyandırıyor." #NT!
+ trait_dragon_swift: "Süratli" #NT!
+ trait_dragon_swift_desc: "Bazı ejderhalar hızları ve çeviklikleriyle bilinirler; aynı büyüklük ve yaştaki akranlarını alt edebilirler." #NT!
+ trait_dragon_swift_character_desc: "[ROOT.Char.GetFirstNameNoTooltip], [ROOT.Char.Custom('GetDragonHerHis')] hızı ve çevikliğiyle bilinir, aynı boy ve yaştaki akranlarını alt edebilir." #NT!
+ trait_dragon_slow: "Yavaş" #NT!
+ trait_dragon_slow_desc: "Bazı ejderhalar yavaş ve hantal olup, aynı boy ve yaştaki akranlarıyla baş edemezler." #NT!
+ trait_dragon_slow_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] yavaş ve hantaldır, aynı boy ve yaştaki akranlarıyla baş edemez." #NT!
+ trait_dragon_spindly: "İncecik" #NT!
+ trait_dragon_spindly_desc: "Uzamış uzuvları ve ince vücutlarıyla bazı ejderhalar sinir bozucu, incecik bir görünüme sahip oldukları için hem daha küçük hem de akranlarından daha çeviktirler." #NT!
+ trait_dragon_spindly_character_desc: "Uzun uzuvları ve ince yapısıyla [ROOT.Char.GetFirstNameNoTooltip], sinir bozucu derecede zayıf bir görünüme sahip olduğundan [ROOT.Char.Custom('GetDragonHerHim')], [ROOT.Char.Custom('GetDragonHerHis')] akranlarından hem daha küçük hem de daha çeviktir." #NT!
+ trait_dragon_majestic: "Görkemli" #NT!
+ trait_dragon_majestic_desc: "Görünüşleriyle hayranlık uyandıran bazı ejderhalar, ihtişamları ve görkemleriyle, güneşte parıldayan pullarıyla cilalı metal gibi görünürler." #NT!
+ trait_dragon_majestic_character_desc: "[ROOT.Char.Custom('GetDragonHerHis')] varlığında hayranlık uyandıran [ROOT.Char.GetFirstNameNoTooltip], [ROOT.Char.Custom('GetDragonHerHis')] saf ihtişamı ve görkemiyle, pulları güneşte cilalı metal gibi parıldamasıyla bilinir." #NT!
+ trait_dragon_ugly: "Çirkin" #NT!
+ trait_dragon_ugly_desc: "Ejderhaların çoğu ya güzel ya da korkutucudur, ancak donuk pulları ve yalnızca bir annenin sevebileceği bir yüze sahip olan bazı ejderhalar aynı zamanda çirkin de olabilir." #NT!
+ trait_dragon_ugly_character_desc: "Donuk pulları ve yalnızca bir annenin sevebileceği bir yüzü olan [ROOT.Char.GetFirstNameNoTooltip], çirkin bir ejderha olmaya lanetlenmiştir." #NT!
+ trait_dragon_fertile: "Bereketli" #NT!
+ trait_dragon_fertile_desc: "Ejderhaların doğurganlığı değişken bir şeydir, ancak bu ejderhanın verimli ve doğurgan olduğu bilinmektedir." #NT!
+ trait_dragon_fertile_character_desc: "Ejderhaların doğurganlığı değişken bir şeydir, ancak [ROOT.GetCharacter.GetFirstNameNoTooltip]'ın verimli ve doğurgan olduğu bilinmektedir." #NT!
+ trait_dragon_destined: "Kaderinde olan" #NT!
+ trait_dragon_destined_desc: "Kaderin çarkları durmadan döner ve bu ejderha da kaderin bir aracı olarak işaretlenmiştir." #NT!
+ trait_dragon_destined_character_desc: "Kaderin çarkları durmadan döner ve bu yüzden [ROOT.GetCharacter.GetFirstNameNoTooltip] kaderin aracı olarak işaretlenmiştir." #NT!
+  
+  #Education traits 
+ trait_education_dragon_1: "Vahşi ejderha" #NT!
+ trait_education_dragon_1_desc: "Zorlu çevre koşullarında tek başına büyüyen bir ejderha, doğanın diğer hayvanları kadar vahşileşir." #NT!
+ trait_education_dragon_1_character_desc: "Zorlu çevre koşullarında tek başına büyüyen [ROOT.Char.GetFirstNameNoTooltip], doğanın diğer canlıları kadar vahşileşmiştir." #NT!
+ trait_education_dragon_2: "Doğal ejderha" #NT!
+ trait_education_dragon_2_desc: "Vahşi doğada hiçbir rehberlik veya eğitim almadan büyüyen ejderha, inatçıdır ve hayvani davranışlara eğilimlidir." #NT!
+ trait_education_dragon_2_character_desc: "Vahşi doğada rehberlik veya eğitim olmadan büyüyen [ROOT.Char.GetFirstNameNoTooltip], inatçıdır ve hayvani eylemlere eğilimlidir." #NT!
+ trait_education_dragon_3: "Eğitilmiş Ejderha" #NT!
+ trait_education_dragon_3_desc: "İnsanların arasında büyüyen bazı ejderhalar, türlerine özgü vahşi ve bağımsız çizgilerini koruyacaklardır." #NT!
+ trait_education_dragon_3_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] insanların arasında büyümüştür, ancak ejderhalara özgü vahşi ve bağımsız çizgisini korumuştur." #NT!
+ trait_education_dragon_4: "Sosyalleşmiş Ejderha" #NT!
+ trait_education_dragon_4_desc: "Büyüme süreci boyunca uygun şekilde meydan okunup ikna edilen bir ejderha, hem insanların hem de diğer ejderhaların yanında rahat edebilir." #NT!
+ trait_education_dragon_4_character_desc: "[ROOT.Char.Custom('GetDragonHerHis')] büyümesi boyunca uygun şekilde meydan okunan ve ikna edilen [ROOT.Char.GetFirstNameNoTooltip], hem insanların hem de diğer ejderhaların etrafında rahattır." #NT!
+ trait_education_dragon_5: "Asil ejderha" #NT!
+ trait_education_dragon_5_desc: "Mizaç ve karakterin örneği olan, ideal şekilde yetiştirilmiş bir ejderha, her ejderha binicisinin sorumluluğunda isteyebileceği tek şeydir." #NT!
+ trait_education_dragon_5_character_desc: "Mizaç ve karakterin bir örneği olan [ROOT.Char.GetFirstNameNoTooltip], herhangi bir ejderha binicisinin sorumluluğunda isteyebileceği tek şeydir." #NT!
+  
+  #Health traits 
+ trait_dragon_wounded: "Yaralı" #NT!
+ trait_dragon_wounded_1: "Hafif Yaralı" #NT!
+ trait_dragon_wounded_1_desc: "Küçük bir kaza veya çok tek taraflı bir mücadele sonucu bir ejderha hafif yara alabilir." #NT!
+ trait_dragon_wounded_1_character_desc: "İster küçük bir kaza, ister çok tek taraflı bir çatışma sonucu olsun, [ROOT.Char.GetFirstNameNoTooltip] hafif yaralandı." #NT!
+ trait_dragon_wounded_2: "Yaralı" #NT!
+ trait_dragon_wounded_2_desc: "Bu büyüklükteki yaratıklar için şaşırtıcı olan şey, ejderhaların savaşta veya kazalarda yaralanabiliyor olmalarıdır." #NT!
+ trait_dragon_wounded_2_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] bir yara aldı — [ROOT.Char.Custom('GetDragonHerHis')] boyundaki bir yaratık için şaşırtıcı." #NT!
+ trait_dragon_wounded_3: "Ağır Yaralı" #NT!
+ trait_dragon_wounded_3_desc: "Bir ejderha, tamamen iyileşmesi için çok fazla dinlenmeyi gerektirecek kadar büyük bir yara alabilir." #NT!
+ trait_dragon_wounded_3_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] çok büyük bir yara aldı ve tamamen iyileşmesi için çok dinlenmeye ihtiyacı olacak." #NT!
+ trait_dragon_wounded_4: "Ağır Yaralı" #NT!
+ trait_dragon_wounded_4_desc: "Bu büyüklükteki bir yara ancak büyük ve korkunç bir şeyin eseri olabilir." #NT!
+ trait_dragon_wounded_4_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] gerçekten çok büyük bir yara aldı; bu büyüklükteki bir yara ancak büyük ve korkunç bir şey tarafından açılmış olabilir." #NT!
+ trait_dragon_wounded_5: "Ölümcül Yaralı" #NT!
+ trait_dragon_wounded_5_desc: "Böylesine muhteşem bir yaratık için tüm olasılıklara karşın, ejderhalar neredeyse ölümcül olabilecek kadar kötü yaralar alabilirler." #NT!
+ trait_dragon_wounded_5_character_desc: "[ROOT.Char.Custom('GetDragonHerHis')] boyundaki bir yaratık için tüm olasılıklara karşın, [ROOT.Char.GetFirstNameNoTooltip] o kadar kötü yaralanmıştır ki neredeyse ölmek üzeredir." #NT!
+ trait_dragon_burned: "Yanmış" #NT!
+ trait_dragon_burned_desc: "Ejderhalar doğuştan ateşe dayanıklı olsalar da, yine de büyük bir ısıyla yakılabilirler." #NT!
+ trait_dragon_burned_character_desc: "Gerçekten büyük bir ısıya maruz kalan [ROOT.Char.GetFirstNameNoTooltip], [ROOT.Char.Custom('GetDragonHerHis')] vücudunun büyük bölümlerinde yanmıştır." #NT!
+ trait_dragon_ill: "Hasta" #NT!
+ trait_dragon_ill_desc: "Ejderhalar nadiren hastalanırlar, ancak kötü bir yemekten veya görünmeyen bir rahatsızlıktan dolayı zaman zaman hastalandıkları bilinmektedir." #NT!
+ trait_dragon_ill_character_desc: "Ejderhalar nadiren hastalanırlar, ancak [ROOT.Char.GetFirstNameNoTooltip] görünmeyen bir rahatsızlık veya kötü bir yemek yüzünden hastalanmıştır." #NT!
