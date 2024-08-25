@@ -1,559 +1,559 @@
-﻿l_english:
- legend_quality_famed: "[legend_famed|E]"
- legend_quality_illustrious: "[legend_illustrious|E]"
- legend_quality_mythical: "[legend_mythical|E]"
- legend_cost_scale_by_era_desc: "[GetPlayer.GetCulture.GetCultureEra.GetNameNoTooltip] Dönemi"
-  
- PROMOTED_LEGEND_EXPENSES: "[promoted_legend|E]"
- OWNED_LEGEND_EXPENSES: "[owned_legend|E]"
-  
- LEGEND_ALREADY_OWN_LEGEND: "@warning_icon! #X Zaten sahip olduğunuz ve tanıtımını yaptığınız [Legend.GetName]#!"
- LEGEND_UPGRADE_ALREADY_MAX: "@warning_icon! #X [Legend.GetName] zaten maksimum $legend_quality_mythical$ [legend_quality|E]#!"
- LEGEND_UPGRADE_NOT_ENOUGH_SPREAD: "@warning_icon! #X [Legend.GetName] şuna yayılmalı: [Legend.GetMaxNumProvinces|V] [baronies|E] #weak (şu anda [Legend.GetCurrentNumProvinces|V])#!#!"
- LEGEND_ALREADY_PROMOTING_LEGEND: "@warning_icon! #X Zaten [promoting_legend|E] [Legend.GetName]#!'sünüz"
- LEGEND_NOT_PROMOTING_LEGEND: "@warning_icon! #X Sen değilsin [promoting_legend|E] [Legend.GetName]#!"
- LEGEND_IS_UNOWNED: "@warning_icon! #X [Legend.GetName] sahibi yok#!"
- LEGEND_IS_OWNED: "@warning_icon! #X [Legend.GetName] zaten bir sahibi var#!"
- LEGEND_IS_COMPLETED: "@warning_icon! #X [Legend.GetName] zaten tamamlandı#!"
- LEGEND_NO_PROTAGONIST: "@warning_icon! #X Hayır [legend_protagonist|E] seçilmedi#!"
- LEGEND_NOT_SAME_DYNASTY: "@warning_icon! #X [Dynasty.GetName] [dynasty|E]#! üyesi değilsiniz"
- LEGEND_CAN_NOT_COMPLETE_YET: "@warning_icon! #X [Legend.GetName]'i [DATE.GetTimeToDate] için tamamlayamazsınız #weak ([DATE.GetStringLong])#!#!"
- LEGEND_COMPLETE_LEGEND: "@alert_icon!#alert_trial Bir [legend|E]'i tamamlamak onu tekrar başlatmayı imkansız hale getirir#![AddLine( Legend.GetOnCompleteDescription )]"
- legend_ending_decision_tt: "Efsanenizi anmak için bir kronik sipariş etmenizi sağlayan #EMP $commission_legend_artifact_decision$#! [decision|E]'e erişim kazanın."
- LEGEND_CAN_NOT_PROMOTE: "@warning_icon! #X Zaten [promoting_legend|E] [Legend.GetName]#!'sünüz"
- legend_already_promoting_legend_tt: "Zaten [promoting_legend|E] [Legend.GetName]'siniz"
- legend_can_not_promote_tt: "Aşağıdakilerden birine ihtiyacınız var:#!\n@warning_icon! #X [legend.GetOwner.GetName] ile aynı dili paylaşıyorsunuz#!\n@warning_icon! #X [legend.GetName] krallığınıza komşu bir eyalette bulunuyor#!\n@warning_icon! #X Siz ve [legend.GetOwner.GetName] $game_concept_lovers$'sunuz#!\n@warning_icon! #X Siz ve [legend.GetOwner.GetName] #X3'sünüz#X4"
- legend_no_legend: "Hiçbir [legends|E]'ı tanıtmıyorsunuz"
- CHARACTER_CANNOT_REACH_LEGEND: "@warning_icon! #X Efsane [realm|e]'inizde değil, ayrıca şu anda efsane yayılım alanında da bulunmuyorsunuz#!"
-  
- LEGEND_PROMOTER_MODIFIERS: "[legend_promoter|E] Değiştiriciler"
-  
- LEGEND_PROVINCE_MODIFIERS_SUBTEXT: "#S $PROVINCE_MODIFIERS$#!\n[Legend.GetImpactModifiers( 'il' )]"
- LEGEND_COUNTY_MODIFIERS_SUBTEXT: "#S $COUNTY_MODIFIERS$#!\n[Legend.GetImpactModifiers( 'kontluk' )]"
- OWNER_MODIFIERS_SUBTEXT: "#S $OWNER_MODIFIERS$#!\n[Legend.GetImpactModifiers( 'sahip' )]"
- LEGEND_PROMOTER_MODIFIERS_SUBTEXT: "#S $LEGEND_PROMOTER_MODIFIERS$#!\n[Legend.GetImpactModifiers( 'promotör' )]"
-  
- LEGEND_OWNER_DESCRIPTION: "Sahibi: [Legend.GetOwner.GetShortUIName|U]"
- LEGEND_PROMOTING_LEGEND: "Sen [promoting_legend|E] bu [legend|E]"
- LEGEND_OWNING_LEGEND: "Bunun sahibi sizsiniz [legend|E]"
- LEGEND_UNOWNED_GRACE_PERIOD: "$DATE$'e kadar bu [legend|E]'ın mülkiyetini alamazsınız"
-  
- game_concept_legend: "Efsane"
- game_concept_legend_i: "@legend_icon!"
- game_concept_legend_desc: "$game_concept_legend$, bir Karakterin hayatta başardığı önemli eylemleri temsil eder ve [legend_seeds|E]'den yaratılır.\n\nEfsaneler, [legitimacy|E] elde etmenin güçlü yollarıdır ve [skill|E] artış, [opinion|E] bonus, [dynasty_prestige|E], ☻ gibi diğer olası ödüllerdir. _6 veya [piety|E]. $game_concept_legend$'ın yayıldığı [baronies|E], $game_concept_legend$ sahibi veya [legend_seeds|E]1 tarafından tutuluyorsa ek etkiler de alabilir.\n\n[legend_seeds|E]2, bu ödülleri yöneten bir [legend_seeds|E]3'e sahipse: Bunlar Meşrulaştırıcı, Kutsal veya Kahramanca olabilir . Her $game_concept_legend$'ın aynı zamanda bir [legend_seeds|E]5 seviyesi vardır ve bu, ödüllerin gücünü ve yayılmasını etkiler."
- game_concept_owned_legend: "Sahip Olunan Efsane"
- game_concept_owning_legend: "Efsaneye Sahip Olmak"
- game_concept_owned_legend_desc: "$game_concept_owned_legend$, etkilerinin ana yararlanıcısı olan [ruler|E]'nin sahip olduğu [legend|E]'dir.\n\n$game_concept_legend$'ün sahibi [legend_protagonist|E] olabilir, ancak bu gerekli değildir.\n\nBir $game_concept_legend$, bonuslarının bir kısmını da almak için aylık katkı payı ödeyen [legend_promoters|E] tarafından da desteklenebilir."
- game_concept_owning_legend_desc: "$game_concept_owned_legend_desc$"
- game_concept_promoted_legend: "Terfi Edilen Efsane"
- game_concept_promoted_legend_desc: "$game_concept_promoted_legend$, farklı bir [ruler|E]'ye ait olan ve aynı zamanda bonuslarının bir kısmını almak için aylık katkı payı ödeyen [legend_promoters|E] tarafından desteklenen bir [legend|E]'dir."
- game_concept_promoting_legend: "Tanıtım"
- game_concept_promoting_legend_desc: "$game_concept_promoting_legend$"
- game_concept_legend_promoter: "Efsane Promotör"
- game_concept_legend_promoter_desc: "$game_concept_legend_promoter$, başka bir hükümdarın [legend|E]'sini destekleyen bir [ruler|E]'dir.\n\nBir $game_concept_legend_promoter$, aylık [gold|E] katkı karşılığında, $game_concept_legend$'nın [legend_type|E] ve [legend_quality|E]'ine bağlı olarak değişen ekstra bonuslar alır."
- game_concept_legend_promoters: "Efsane Promotörler"
- game_concept_legend_promoters_desc: "$game_concept_legend_promoter_desc$"
- game_concept_legends: "Efsaneler"
- game_concept_legends_desc: "$game_concept_legend_desc$"
- game_concept_legend_seed: "Efsane Tohum"
-   #AGOT Modified 
- #game_concept_legend_seed_desc: "Yapım aşamasında bir [legend|E]. $game_concept_legend_seeds$'ler bir $game_concept_legend$'nin temelidir ve bunları kurarak bir [ruler|E] bir $game_concept_legend$ başlatabilir.\n\n$game_concept_legend_seeds$, Charlemagne'nin varisi olmak veya efsanevi işler yapmak gibi bazı kriterleri yerine getirerek kazanılabilir: Majör [decisions|E], [great_holy_war|E] kazanmak, [king|E] veya [emperor|E] olmak, Büyük $game_concept_legend_seeds$0 düzenlemek, efsanevi bir hayvan avlamak, vb.\n\nEtkin olmayan $game_concept_legend_seeds$'lerin maliyeti yoktur, ancak hiçbir etkisi yoktur. İlk kez bir $game_concept_legend_seeds$2 kurmanın maliyeti $game_concept_legend_seeds$3'tür."
- game_concept_legend_seed_desc: "Yapım aşamasında bir [legend|E]. $game_concept_legend_seeds$'ler bir $game_concept_legend$'nin temelidir ve bunları kurarak bir [ruler|E] bir $game_concept_legend$ başlatabilir.\n\n$game_concept_legend_seeds$ bazı kriterleri yerine getirerek veya efsanevi işler yaparak kazanılabilir: Majör [decisions|E], [king|E] veya [emperor|E] olmak, Büyük [activity|E] düzenlemek, efsanevi bir hayvan avlamak, vb.\n\nEtkin olmayan $game_concept_legend_seeds$'lerin maliyeti yoktur, ancak hiçbir etkisi yoktur. İlk kez bir $game_concept_legend_seeds$1 kurmanın maliyeti $game_concept_legend_seeds$2'dir."
- game_concept_legend_seeds: "Efsane Tohumlar"
- game_concept_legend_seeds_desc: "$game_concept_legend_seed_desc$"
- game_concept_legend_quality: "Efsane Kalite"
- game_concept_legend_quality_desc: "Bir [legend|E]'ın Kalitesi hem etkilerinin gücünü hem de yayılma alanını belirler ve ayrıca nihai ödüllerini etkiler. $game_concept_legends$, Ünlü, Şanlı veya Efsanevi olabilir; çünkü ortak bir $game_concept_legend$ diye bir şey yoktur.\n\nKalite, Efsaneyi daha fazla [baronies|E]'e yayarak ve bir yükseltme maliyeti ödeyerek artırılabilir.\n\nBir $game_concept_legend$'nin sahibi öldüğünde, ailesi Kalitesinde herhangi bir hasar olmadan onu devam ettirebilir."
- game_concept_legend_famed: "Ünlü"
- game_concept_legend_famed_desc: "$game_concept_legend_quality_desc$"
- game_concept_legend_illustrious: "Şanlı"
- game_concept_legend_illustrious_desc: "$game_concept_legend_quality_desc$"
- game_concept_legend_mythical: "Efsanevi"
- game_concept_legend_mythical_desc: "$game_concept_legend_quality_desc$"
- game_concept_legend_protagonist: "Efsane Kahraman"
- game_concept_legend_protagonist_desc: "$game_concept_legend_protagonist$, eylemleri orada açıklanan bir [legend|E]'in ana karakteridir. Bir $game_concept_legend$'nin sahibi de onun $game_concept_legend_protagonist$'ı olabilir, ancak ailesinin herhangi bir üyesi de olabilir - ölü veya diri, 16 yaşında oldukları sürece.\n\n$game_concept_legend_protagonists$'ler kendileri doğrudan ekstra bonuslar alamaz, ancak $game_concept_legend$ hakkındaki içerik onlara odaklanacaktır. Ancak, sahip oldukları [virtuous|E] [legend|E]0 sayısına bağlı olarak Efsane Sahibine #color_white ek#! [legitimacy|E] verecektir.\n\n$game_concept_legend_protagonist$ bir yetişkin olmalıdır, çünkü bir bebeğin bir ejderhayı öldürdüğünü söylemek tartışmalı olabilir."
- game_concept_legend_protagonists: "Efsane Kahramanlar"
- game_concept_legend_protagonists_desc: "$game_concept_legend_protagonist_desc$"
- game_concept_legend_type: "Efsane Türü"
- game_concept_legend_types: "Efsane Türleri"
- game_concept_legend_types_desc: "$game_concept_legend_type_desc$"
- game_concept_legend_type_desc: "[legend|E], sağlayacağı etkilerin kategorisini ve içeriğinin temasını etkileyen bir Türe sahiptir.\n\n$game_concept_legend_types$'ler Meşrulaştırıcı, Kahramanca ve Kutsal'dır ve sırasıyla [legitimacy|E], [prestige|E] ve [piety|E] sağlar."
- game_concept_legend_heroic: "Kahramanca Efsane"
- game_concept_legend_heroic_desc: "$game_concept_legend_type_desc$"
- game_concept_legend_holy: "Kutsal Efsane"
- game_concept_legend_holy_desc: "$game_concept_legend_type_desc$"
- game_concept_legend_legitimizing: "Efsaneyi Meşrulaştırmak"
- game_concept_legend_legitimizing_desc: "$game_concept_legend_type_desc$"
- game_concept_legend_library: "Efsane Kütüphanesi"
- game_concept_legend_library_i: "@legend_icon!"
- game_concept_legend_library_desc: "Oluşturduğunuz veya aktif olarak tanıtımını yaptığınız [domain|E]'nize yayılan [legend_library|E] tamamlanmış [legends|E] muhafazaları.\nEfsanenin yayılma alanında seyahat ediyorsanız tamamlanmış [legends|E]'i de aktif olarak ekleyebilirsiniz.\n\nKaldırabilirsiniz Dilediğiniz zaman kütüphanenizden [legends|E]."
-  
- game_concept_ancestral_claim: "Atasal İddia"
- game_concept_ancestral_claim_desc: "Atasal İddia [casus_belli|E], Meşrulaştırma [legend|E] yoluyla elde ettiğiniz bir iddiaya sahip olduğunuz bir unvandaki tüm toprakları ilhak etmenize olanak tanır."
-  
- legend_heroic: "Kahramanca Efsane"
- legend_heroic_name: "[ROOT.Legend.GetOwner.GetNameNoTooltip] Efsanesi"
- legend_heroic_desc: "[ROOT.Legend.GetOwner.GetTitledFirstNameNoTooltip], [ROOT.Legend.GetOwner.GetHerHis] kahramanlıklarıyla ünlüdür."
- legend_legitimizing: "Efsaneyi Meşrulaştırmak"
- legend_legitimizing_name: "[ROOT.Legend.GetOwner.GetNameNoTooltip]'ın Soyağacı"
- legend_legitimizing_desc: "[ROOT.Legend.GetOwner.GetDynasty.GetBaseNameNoTooltip] hanedanının soyu yüzyıllardır bu topraklara hükmediyor."
- legend_holy: "Kutsal Efsane"
- legend_holy_name: "[ROOT.Legend.GetOwner.GetNameNoTooltip] Mucizeleri"
- legend_holy_desc: "[ROOT.Legend.GetOwner.GetTitledFirstNameNoTooltip]'ın gösterdiği kutsallık her [ROOT.Char.GetFaith.HighGodName] takipçisi tarafından takdir edilmektedir."
-  
- legend_king_arthur: "Arthur Pendragon'un Mirası"
- legend_king_arthur_desc: "Bir zamanların ve geleceğin kralı bu hanedanın kanıyla yaşamaya devam ediyor."
- legend_carolingian: "Şarlman'ın Varisleri"
- legend_carolingian_desc: "İmparatorluk soyundan geldiklerini iddia eden bu hanedandan önce, büyük kral Şarlman bu topraklara hükmetmişti."
- legend_holy_warrior: "Kutsal Yumruk"
- legend_holy_warrior_desc: "Büyük bir kutsal savaşçı olan bu kahraman, inancı uğruna yiğitçe savaştı."
- legend_chapter_opening_holy_warrior: "[religion.GetNameNoTooltip]'ın büyük savaşçısı olan [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip]'in efsanesi uğurlu bir doğumla başlar. [ROOT.Legend.GetProtagonist.GetSheHe] çok erken bir yaştan itibaren [ROOT.Legend.GetProtagonist.GetFaith.HighGodName]'ün çağrısını hissetti."
- legend_el_cid: "El Cid Şarkısı"
- legend_el_cid_desc: "Rodrigo Díaz de Vivar bir zamanlar itibarsızlaştırılmış bir soyluydu, şimdi ise kendi krallığına bürünmüş durumda."
- legend_alfred_of_wessex: "Kutsal Kral"
- legend_alfred_of_wessex_desc: "[ancestor.GetNameNoTooltip|U] Kuzeylilerin İngiltere'deki istilalarına karşı koydu ve Hristiyanlık için bir kale ve misyonerlik görevi gördü."
- legend_sons_of_david: "Davut'un varisleri"
- legend_sons_of_david_desc: "İsrail Kralı Davut, Tanrı tarafından atanmıştı ve kanı her [GetDynastyHouseByID('house_bagrationi').GetNameNoTooltip]'ın damarlarında akıyordu."
- legend_peasant_emperor: "Köylüden Basileus'a"
- legend_peasant_emperor_desc: "Basileus, çiftçi bir ailenin çocuğu olarak dünyaya geldi ve kızıyla evlenip Basileus'un rütbesine yükselmeden önce İmparator'un hizmetine girdi."
- legend_the_wheelwright: "Bolluk Mahzeni"
- legend_the_wheelwright_desc: "Oğlunun yedinci doğum gününde, Tekerlekçi Piast'ı iki yabancı ziyaret etti. Misafirperverliğine teşekkür olarak, yabancılar Piast mahzenini sonsuza dek dolduran bir büyü yaptılar."
- legend_vercingetorix: "Vercingetorix'in varisleri"
- legend_vercingetorix_desc: "Vercingetorix bir zamanlar Galyalı kabileleri Roma istilasına karşı bir isyanda birleştirmişti. Sezar'ın elinden düşse de, Kelt ruhu kanımızda yaşamaya devam ediyor."
- legend_saman_khudah: "Bahram Çobin'in soyundan gelen"
- legend_saman_khudah_desc: "General, fatih ve gaspçı Bahram Chobin, Sasani tahtını kendisine aldı ve onun kahraman kanı damarlarımızda akıyor."
- legend_bahram_gur: "Gur Soyu"
- legend_bahram_gur_desc: "Bahram Gur, sayısız istilacıyla savaşan ve onlara direnen büyük bir savaşçı kraldı. Kanı damarlarımızda akıyor ve bizi Pers kahramanları yapıyor."
- bahram_gur: "Bahram Gür"
- legend_cadell: "Cadell'in Kanı"
- legend_cadell_desc: "Cadell, hayatına bir köle çocuğu olarak başladı ve kendisine bahşedilen bir azizin kutsamasıyla, Powys krallığını Vortigern'den zorla aldı."
- legend_descendants_of_brahman: "Brahman'ın Kanı"
- legend_descendants_of_brahman_desc: "Biz Tanrıların oğulları ve kızlarıyız. Brahman, Vishnu, kanımız zamanın başlangıcına kadar izlenebilir."
- legend_gothic_kings: "Gotik Krallar"
- legend_gothic_kings_desc: "Gotlar Roma'nın yıkılmasına neden oldular ve Krallığımızı kurdular. Biz onların varisleriyız, Gotların Kralları ve Kraliçeleriyiz."
- legend_sons_of_rurik: "Rurik'in oğulları"
- legend_sons_of_rurik_desc: "Varangian Prensi Rurik maceraperest ordusunu doğuya götürdü ve büyük Novgorod Krallığı'nı kurdu. Damarlarımızda akan onun efsanevi kanıdır."
- legend_william_gellones: "Portakal Ödülü"
- legend_william_gellones_desc: "Orange'da İslam ordularını yenen Guillaume Gellones, Hristiyanlık için savaşan bir savaşçıydı ve daha sonra rahiplikten emekli olup emekli olacağı Gellone'deki manastırı kurdu."
- legend_edward_the_martyr: "Şehit Edward"
- legend_edward_the_martyr_desc: "Şerefsizce öldürülen ve gömülen Şehit Edward'ın bedeninin bir yıl sonra bozulmamış olduğu ortaya çıktı. Kendi ölümünü Mesih'e olan derin sevgisinden dolayı kucakladığı söylenir."
- legend_yazdagird_iii: "[ancestor.GetFirstNameNoTooltip] III'ün Kanı"
- legend_yazdagird_iii_desc: "Son Sasani şahının kanı damarlarımızda akıyor. [ancestor.GetSheHe] her taraftan Türkler, Hazarlar ve Arap istilacıları tarafından kuşatılmış olsa da, [ancestor.GetSheHe] son nefesine kadar Pers'e sadık kaldı."
- legend_afrasiyab: "Turan Kralı: Afrasiyab"
- legend_afrasiyab_desc: "Turan'ın muhteşem kralı ve Türklerin kahramanı Afrasiyab, Pers İmparatorluğu'nun düşmanı ve tüm Turan krallarının en büyüğüydü. Büyülü kanı damarlarımızda akıyor ve bize Turan'ı bir kez daha yönetme hakkını ilahi olarak veriyor."
- legend_sceafa: "Nuh'un Torunu Sceafa"
- legend_sceafa_desc: "Antik Lombardiya kralı Sceafa, çocukluğunda denizden sürünerek çıktı ve İngiltere'yi yönetmeye devam etti. Onun Nuh'un torunu olduğunu biliyoruz ve ilahi kanımızı ondan alıyoruz."
- legend_new_troy_london: "Yeni Truva"
- legend_new_troy_london_desc: "Truva'dan sürülen Brutus, Diana tarafından Albion'a götürüldü. Ülkeyi işgal eden büyük devleri yendikten sonra, şu anda Londra olarak bildiğimiz Troia Nova kasabasını kurdu."
- legend_corineus: "Corineus'un Baladı"
- legend_corineus_desc: "Antik Truva savaşçısı Corineus, Cornwall'un ilk kurucusuydu. Britannia'ya geldi ve bölgeyi işgal eden devleri öldürdü ve buraya Cornwall adını verdi."
- legend_scota: "Scota'nın oğulları"
- legend_scota_desc: "Ülkemize "İskoçya" adını, büyük bir Mısır Firavunu'nun kızı olan Scota'dan alırız. O, tüm İskoçların annesidir ve damarlarımızda akan kan, kadim Firavunların kanıdır."
- legend_pyusawhti: "Ejderha Tanrıçası'nın Varisleri"
- legend_pyusawhti_desc: "Bir ejderha tanrıçasının rahminden doğan ve Mahasammata'dan gelen bizler, soyumuzda taşınan en kutsal ve en güçlü kana sahibiz."
- legend_tosny: "Kuğu Şövalyesi"
- legend_tosny_desc: "Kudretli Roger de Tosny, Kuğu Şövalyesi'nin soyundan geliyordu ve efsanesini onurlandırmak için bugün bile Kuğu Rozeti'ni takıyoruz."
- legend_menelik_i: "Davut'un oğulları"
- legend_menelik_i_desc: "Hanedanımızın kurucusu I. Menelik, İsrail Kralı Süleyman ile Saba Kraliçesi arasındaki aşkın ürünüydü."
- legend_kings_of_semien: "Semien Kralları"
- legend_kings_of_semien_desc: "Beta İsrail, Hristiyanlaşmaya hararetle direnmeye devam eden efsanevi Yahudi krallığıdır. Rehoboam ve Jeroboam güçleri arasındaki iç savaş sırasında İsrail'den kaçan Dan Kabilesi'nden geliyoruz."
- legend_roman_heritage: "Roma Mirası"
- legend_roman_heritage_desc: "Ailemiz yalnızca modern Roma İmparatorluğu'nu yönetmiyor, aynı zamanda Cumhuriyet döneminden beri Roma'nın etkili saray mensupları arasında yer alıyor."
- legend_hunnic_heritage: "Hun Mirası"
- legend_hunnic_heritage_desc: "Halkımızın kökeni Hun ailelerine kadar uzanır ve hanedanlığımızın kurucusu aslında Roma'yı dize getiren vahşi Attila'dır."
- legend_premysl: "Çiftçi Přemysl"
- legend_premysl_desc: "Atamız hayatına Stadice köyünde sıradan bir köylü olarak başladı, ancak kısa sürede Libuše'nin dikkatini çekti ve onunla evlenerek Çek Prensi oldu."
- legend_borjigin: "Parıldayan Ziyaretçi"
- legend_borjigin_desc: "Tüm [GetDynastyByID('11100').GetNameNoTooltip]'ların annesi Alan Gua, her gün ve gece garip, ışıldayan bir figür tarafından ziyaret ediliyordu. Büyük sarı bir köpek gibi, geceleri ay ışınları ve gündüzleri güneş ışınları aracılığıyla onun yurduna sürünerek girdi ve ona üç oğul verdi. İlahi olarak tasarlanmış oğullarını, beş ok demeti gibi birbirine yapışmaları gerektiği ya da beş tek ok gibi kırılmaları gerektiği konusunda uyardı."
- legend_naga_descent: "Naga'nın Kanı"
- legend_naga_descent_desc: "Naga, Patala'da yaşayan kutsal yarı insan yarı yılan yaratıklardır ve ara sıra tam insan olarak dünyamıza geçebilirler. Ailemizin soyağacını bir zamanlar Keşmir'i ziyaret eden ve bir insanla yatan bir Naga'ya kadar takip edebiliriz."
- legend_hieros_gamos_skirnismal: "Hieros Gamos"
- legend_hieros_gamos_skirnismal_desc: "Yngling hanedanının kurucusu Fjolnir, Freyr'e ​​olan aşkından Gerðr'in soyundan doğmuştur. Norveç'i yönetmek için gerekli olan ilahi kana Fjolnir'in soyundan başka kim sahip olabilirdi?"
- legend_shibi_chakravarti: "Shibi Çakravarti"
- legend_shibi_chakravarti_desc: "Alçakgönüllülük ve dindarlığın bir örneği olan kahraman Kral Shibi, bir kuşa dönüşen bilge Agni'yi korumakla görevlendirildi. Bir uçurtma güvercini kurtarmak için kendi etini feda etmesini istediğinde, Shibi tüm benliğini gönüllü olarak verdi, ancak bağışlandı ve oğlu Kapotaroma ile ödüllendirildi. Her [GetDynastyByID('1043008').GetNameNoTooltip]'ın damarlarında akan şey bu özverili kralın kanıdır."
- legend_the_red_hand: "Ulster'in Kızıl Eli"
- legend_the_red_hand_desc: "İrlanda'nın ilk zamanlarında, Ulster'a ilk elini koyan kişiye bu topraklar üzerinde hak iddia edileceği ve İrlanda'nın Yüksek Kralı yapılacağına dair bir söz verildiği söylenir. Kendi elini kesip Ulster'a fırlatma ve zümrüt yeşili çimenleri kanıyla lekeleme zekasına sahip olan atamızdı."
- legend_ragnarr: "$nick_lodbrok$'ın oğulları"
- legend_ragnarr_desc: "Danimarkalıların kralı ve kudretli bir ejderhanın katili olan [ancestor.GetFirstNameNoTooltip], Hıristiyanlar için bir dehşet ve efsanevi bir maceracıydı. [ancestor.GetHerHis|U] Hayatımda sayamayacağım kadar çok büyük iş var ve [ancestor.GetHerHis] içimde akan kanla, mirasımı talep etmem ve kendime ait efsanevi bir hikaye yaratmam [ancestor.GetHerHis] en doğrusu!"
- legend_holy_site: "$legend_saintly_location_name$"
- legend_holy_site_desc: "$legend_saintly_location_desc$"
- legend_saintly_location_name: "[ROOT.Char.CustomFixedRandom('GetCustodianSynonym')|U] [protagonist.GetFaith.GetAdjectiveNoTooltip] Kutsal Site"
- legend_saintly_location_desc: "Kutsal bir mekanı [faith.GetNameNoTooltip]'a kadar tutmak başlı başına bir kutsallık işaretidir."
- legend_chapter_opening_saintly_location: "[location.GetNameNoTooltip] toprağı en yüksek dindar değere sahiptir ve toprağından her türlü hastalığı iyileştirebilen mucizevi bir su çıktığı söylenir."
- legend_chapter_motivation_religious: "[ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] bunu duyduğunda, [ROOT.Legend.GetProtagonist.GetSheHe] kalbinde büyük bir sıcaklık hissetti, [ROOT.Legend.GetProtagonist.GetHerHis] çünkü [ROOT.Legend.GetProtagonist.GetHerHis] bağlılık o kadar büyüktü ki, kutsal bir yerin düşüncesi bile [ROOT.Legend.GetProtagonist.GetHerHim]'ün gözlerini yaşartıyordu."
- legend_saintly_life_name: "[protagonist.GetTitledFirstNameNoTooltip]'in En [ROOT.Char.CustomFixedRandom('GetPiousAdj')|U] Hayatı"
- legend_saintly_life_desc: "[protagonist.GetTitledFirstNameNoTooltip]'ın yaşadığı adanmış hayat, [protagonist.GetHerHim]'e neredeyse aziz statüsü kazandırdı."
- legend_chapter_opening_saintly_life: "[ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip], [ROOT.Legend.GetProtagonist.GetFaith.HighGodName]'e karşı en derin sevgiyle doğdu ve tüm [ROOT.Legend.GetProtagonist.GetHerHis] hayatını [ROOT.Legend.GetProtagonist.GetHerHis] inancını onurlandırmaya adadı."
- holy_seed_toast: "Kutsal [legend_seed|E] Kazanıldı"
- holy_seed_toast_traits: "[ROOT.Char.CustomFixedRandom('GetSaintlyTrait')] doğanız tanınıyor"
- legend_saintly_building_name: "[location.GetNameNoTooltip]'in [ROOT.Char.CustomFixedRandom('GetPiousAdj')|U] Yapıcısı"
- legend_saintly_building_desc: "[ROOT.Char.GetFaith.HouseOfWorshipPlural]'ı inşa etmek özverili bir eylemdir; dindar bir ruhun büyük bir kanıtıdır."
- legend_ancient_people_name: "[culture.GetNameNoTooltip] [ROOT.Char.CustomFixedRandom('GetDescendantSynonym')|U]"
- legend_ancient_people_desc: "Bütün halkımızın kanında [culture.GetCollectiveNoun]'dan akan aynı kan akmaktadır."
- legend_saintly_deed_name: "[ROOT.Char.CustomFixedRandom('GetPiousAdj')|U] [ancestor.GetNameNoTooltip|U]'in Eylemleri"
- legend_saintly_deed_desc: "[ancestor.GetShortUINamePossessive|U] adına yapılan [religion.GetName] dindar hareketler kesinlikle saygıya değerdir."
- legend_saintly_descent_name: "[ROOT.Char.CustomFixedRandom('GetDescendantSynonym')|U] / [Localize( ancestor_flag )|U]"
- legend_saintly_descent_desc: "Damarlarımızda [Localize( ancestor_flag )]'ın kutsal kanı akıyor ve onunla mucizeler yaratacağız."
- legend_mythical_descent_name: "[Localize( creature )|U] Kan"
- legend_mythical_descent_desc: "Atalarımdan biri güçlü bir [Localize( creature )]'dı."
- legend_godly_descent_name: "[Localize( god )|U]'ın Kanı"
- legend_godly_descent_desc: "[Localize( god )|U] benim atamdır ve damarlarımda akan o kanla harikalar yaratacağım."
- legend_chronicle_ancestral_glory_desc: "[ancestor.GetName] herkes tarafından saygı duyulan gerçekten büyük bir [ancestor.GetWomanMan]'di."
- legend_crusader: "[GetTrait('faith_warrior').GetNameNoTooltip( protagonist )] [ancestor.GetTitleAsNameNoTooltip|U]"
- legend_crusader_desc: "[protagonist.GetName] kutsal toprakları ele geçirerek pek çok büyük ve kutsal işlere imza attı."
- legend_chronicle_raised_by_animals: "[Localize( beast )|U] Çocuk"
- legend_chronicle_raised_by_animals_desc: "[protagonist.GetNameNoTooltip|U], [Localize( beast )|U] tarafından büyütüldü ve [protagonist.GetFaith.CreatorNamePossessive|U] yaratılışındaki o zorlu deneyim, [protagonist.GetHerHim]'ü hükmetmek için ilahi bir şekilde donattı."
- legend_auspicious_birth: "Uğurlu Doğum"
- legend_auspicious_birth_desc: "[protagonist.GetNameNoTooltip|U], gece gökyüzünün uğurlu yıldızlarla dolu olduğu bir zamanda doğdu; bu, [protagonist.GetSheHe]'in yapacağı büyük işlerin kesin bir işaretiydi."
- legend_virgin_birth: "Tertemiz Gebelik"
- legend_virgin_birth_desc: "[protagonist.GetMother.GetNameNoTooltip|U] bir şekilde [protagonist.GetMother.GetHerHis] kocasıyla birlikte olmadan bir çocuk doğurdu. Gerçekten de bu, [protagonist.GetFaith.HighGodName|U] [protagonist.GetFaith.HighGodHerselfHimself]'ün [protagonist.GetMother.GetHerHim]'e bir çocuk armağan ettiğinin bir işaretidir."
- legend_sacred_birth_name: "[protagonist.GetFirstNamePossessiveNoTooltip|U] [ROOT.Char.CustomFixedRandom('GetPiousAdj')|U] Doğum"
- legend_sacred_birth_desc: "[protagonist.GetNamePossessiveNoTooltip]'ın doğumunun koşulları mistisizmle örtülüdür; bu, [protagonist.GetSheHe]'in en başından beri [protagonist.GetFaith.HighGodName|U] tarafından kutsanmış olduğunun kesin bir işaretidir."
- legend_divine_intervention_name: "[Localize( god )|U] tarafından kutsanmış"
- legend_divine_intervention_desc: "[protagonist.GetNameNoTooltip|U], [protagonist.GetHerHis] uykusunda olan [Localize( god )] ile konuşarak, [protagonist.GetHerHim]'e ilahi bir görev yükledi."
- legend_fought_devil_name: "[protagonist.GetFaith.DevilName|U] ile Bir Savaş"
- legend_fought_devil_desc: "Rüyasında [protagonist.GetNameNoTooltip], [protagonist.GetFaith.DevilName] [protagonist.GetFaith.DevilHerselfHimself] ile savaştı; bu, [protagonist.GetSheHe]'ün kötülüğü yenmeye mahkûm olduğuna dair hayırlı bir işarettir."
- legend_exotic_backstory_name: "[protagonist.GetNamePossessiveNoTooltip|U] Odysseia"
- legend_exotic_backstory_desc: "[protagonist.GetName] bir zamanlar çok uzaklara, [Localize( location.GetString )]'e kadar gidip geri dönmüştü."
- pilgrim_legend_name: "Dünyaya Hac Yolcusu"
- pilgrim_legend_desc: "[ancestor.GetNamePossessive|U] hayatını [ancestor.GetFaith.PositiveAfterLife]'ye giden bitmek bilmeyen yokuş yukarı yolculuğa adadı. Sadece [ancestor.GetFaith.HighGodName|U] kurtuluşa giden kutsal [ancestor.GetFirstNamePossessiveNoTooltip] yolda gerçekleşen tüm eylemleri gerçekten bilir."
- consecrated_blood_legend: "Kutsal Kan"
- consecrated_blood_legend_desc: "[founder.GetNamePossessive|U], [dynasty.GetName] ailesinin tüm üyelerinde akar. [founder.GetFaith.HighGodName|U]'ye olan bağlılığımız mutlaktır ve eylemlerimiz yalnızca [founder.GetFaith.HighGodHerHis|U] adına yapılır."
- dyn_many_crown_legend: "[dynasty.GetNameNoTooltip|U] Egemenlik"
- dyn_many_crown_legend_desc: "Kaderle veya tasarımla, güç [dynasty.GetName]'ın eline geçiyor. Topraklarımız çok ve işlerimiz büyük ve dünya tahtları üzerindeki hakimiyetimiz önceden belirlenmiş."
- legend_of_rome_name: "Yeni Bir Sezar"
- legend_of_israel_name: "İsrail'in Yeni [founder.GetTitleAsNameNoTooltip|U]'ı"
- legend_of_slavia_name: "Slav İmparatorluğu"
- legend_of_n_sea_name: "Denizin Hakimiyeti"
- legend_of_mann_name: "Korsan [founder.GetTitleAsNameNoTooltip|U]"
- legend_of_genghis_name: "Hanların En Büyüğü"
- new_title_name: "Yeni Bir [founder.GetTitleAsNameNoTooltip|U]"
- jewish_priesthood_name: "Gerçekleşen Kehanet"
- zoroast_priesthood_name: "Alevleri Yeniden Alevlendirmek"
- priesthood_restoration_name: "Yeni Bir Rahiplik"
- iberian_ender_name: "[GetTitleByKey('e_spain').GetNameNoTierNoTooltip|U]'ın Kaderi"
- persian_ender_name: "[GetTitleByKey('e_persia').GetNameNoTierNoTooltip|U]'ın Kaderi"
- struggle_conclusion_name: "[Localize(struggle.GetString)|U]'ın Sonu"
- legendary_battle_name: "[location.GetName|U] Savaşı"
- reformed_faith: "[religion.GetNameNoTooltip|U]'ın Konsolidasyonu"
- new_faith_legend_name: "[faith.GetNameNoTooltip|U] Muzaffer"
- khan_beater_name: "Hanların Felaketi"
- legend_of_rome_desc: "Bir zamanlar uzak bir anıya dönüşen Roma, şimdi yeni bir Sezar'la yeniden yükseliyor ve medeniyeti yeniden yeni bir çağa taşımaya hazır."
- legend_of_israel_desc: "İsrail, Tanrı'nın seçilmiş halkı için bir krallık, Asurlular, Babilliler ve Romalılar tarafından boyunduruk altına alındı. Vaat Edilen Topraklardan göçümüz halkımızı dünyanın dört bir yanına bir yolculuğa gönderdi, ancak şimdi yeni bir İsrail Krallığı yükseliyor ve Tanrı'nın halkı bir kez daha topraklarında yaşıyor!"
- legend_of_slavia_desc: "Slav halkları Avrupa'nın her yanına yayılmış durumdalar, ancak şu anda [founder.GetFirstName], tüm Slavların ilk [founder.GetTitleAsNameNoTooltip|U]'i olarak duruyor!"
- legend_of_n_sea_desc: "Kuzey Denizi Danimarkalıların hakimiyeti altındaydı ve şimdi [founder.GetName]'ın yönetimi altında, dalgaların üzerinde bir imparatorluk yükseliyor."
- legend_of_mann_desc: "Britanya'nın dalgaları boyunca, denizciler büyük ve korkunç bir korsan [founder.GetTitleAsNameNoTooltip], dehşet verici [founder.GetName]'in hikayelerini anlatırlar. En güçlü savaşçılar bile kıyılarında beliren tekneleri gördüklerinde solgunlaşırlar. Teslim olmak tek seçenek olurdu, eğer [founder.GetTitleAsNameNoTooltip|U] böyle bir şeyi kabul etseydi."
- legend_of_genghis_desc: "Gökyüzünün altındaki her şey, tüm Hanların en büyüğüne aittir. Moğol halkı tek bir [founder.GetTitleAsNameNoTooltip|U]'ın arkasında birleşmişken, Cengiz Han [founder.GetHerHis] ismini dünya çapında yakıp yıkarken kurtlar uluyor ve kartallar ağlıyor."
- new_title_desc: "Yeni bir [founder.GetTitleAsNameNoTooltip|U], [founder.GetHerHis]'in hayırsever yönetimi altında refahı getirmek üzere küllerinden doğuyor."
- jewish_priesthood_desc: "Diasporanın ebedi olduğu düşünülüyordu, ancak [founder.GetName] altında, [faith.GetName] halkını yeni ve daha aydınlık bir çağa taşıyacak yeni bir Yüksek Rahiplik ortaya çıktı."
- zoroast_priesthood_desc: "Zerdüşt inancı geçmişin büyük Magi'si tarafından yönetiliyordu, ancak tarikat dağılmıştı. Ahuramazda, Anahita ve Mithra'nın lütfuyla [protagonist.GetName] Magi'yi geri getirdi."
- priesthood_restoration_desc: "[faith.GetName] zamanın acımasız eliyle küle dönüştü. Şimdi, [faith.HighGodName|U]'in lütfuyla, [founder.GetName] rahipliği yeniden inşa ediyor."
- iberian_ender_desc: "İber asilzadelerinin çekişmesi sona erdi ve [struggle_ender.GetFirstName] kurtarıcısı olarak ortaya çıktı. [struggle_ender.GetTitleAsNameNoTooltip|U] galip geldi."
- struggle_conclusion_desc: "[Localize(struggle.GetString)|U] nihayet sona eriyor ve [struggle_ender.GetFirstName] bölge için yeni bir çağı başlatacak kahraman olarak ortaya çıkıyor."
- khan_beater_desc: "Efsanevi 'Cengiz Han', gökyüzünün altındaki her şeyi [loser.GetHerHis] İmparatorluğu'na getirmeye kararlıydı, ancak güçlü [winner.GetTitleAsNameNoTooltip|U], kahraman [winner.GetName] tarafından engellendi!"
- legendary_battle_desc: "[loser.GetName|U], [winner.GetName]'i yok etmeye çalıştı ve [loser.GetSheHe] gerçekten de değerli bir rakipti. [winner.GetFirstNameNoTooltip]'ün zaferle çıkmasıyla, [winner.GetHerHis]'ün cesaret gösterilerinin sonu gelmeyecek!"
- reformed_faith_desc: "Organize din eski yolları yok etmek için kurulmuştu, ancak [reformer.GetName]'ın bilge ve dindar rehberliği altında, [faith.GetName] inancı yeni bir çağa getirildi. Efsaneler artık kutsal bir kitapta kodlandı ve yapılandırılmış bir rahip sınıfı kuruldu, [faith.HighGodNamePossessive] yapılacak!"
- new_faith_legend_desc: "Zayıf ve yozlaşmış kilise, insanlık için [faith.HighGodNamePossessive] iradesinden çok uzaklaşmıştı. [reformer.GetName]'in ilahi liderliği altında, tek gerçek inanç [faith.GetName] doğmuştur."
-  
- legend_chronicle_debug_legend: "#D QA Efsanesi#!"
- legend_chronicle_debug_legend_desc: "#D QA atalarımızdan kalma ve asil bir meslektir#!"
- legend_chronicle_beast_slayer: "[Localize( beast )|U] Katili"
- legend_chronicle_beast_slayer_desc: "[location.GetName]'da [Localize( beast )] öldürüldü"
- legend_chronicle_holy_war: "Kutsal [location.GetName] Savaşı"
- legend_chronicle_holy_war_desc: "[location.GetName] [Localize( antagonist )] yenildi"
-  
- legend_chronicle_generic_opening: "$legend_chapter_opening_generic$"
-  
- legend_ruler_loc: "[protagonist.GetFirstNameNoTooltip|U]"
- legend_ruler_loc_possessive: "[protagonist.GetFirstNamePossessiveNoTooltip|U]"
- legend_ruler_family_loc: "[protagonist.GetDynastyNameNoTooltip|U]"
- legend_province_loc: "[protagonist.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip|U]"
- legend_ruler_title_loc_possessive: "[protagonist.GetTitleAsNameNoTooltip|U]s"
- legend_ruler_title_loc: "[protagonist.GetPrimaryTitle.GetNameNoTier|U]"
-  
- legend_myth: "$legend_ruler_loc$ Efsanesi"
- legend_saga: "$legend_ruler_loc$ Destanı"
- legend_tale: "$legend_ruler_loc$'ın Hikayesi"
- legend_epic: "$legend_ruler_loc$ Destanı"
- legend_song: "$legend_ruler_loc$ Şarkısı"
- legend_story: "$legend_ruler_loc$'ın Hikayesi"
- legend_nama: "$legend_ruler_loc$nama"
- legend_chanson: "$legend_ruler_loc_possessive$ Şarkı"
- legend_cantiga: "$legend_ruler_loc$'ın Cantiga'sı"
- legend_poem: "$legend_ruler_loc$ Şiiri"
- legend_gesta: "Gesta $legend_ruler_loc$"
- legend_deeds: "$legend_ruler_loc$'ın Eylemleri"
-  
- legend_history: "Ailenin Tarihi $legend_ruler_family_loc$"
- legend_chronicles: "Ailenin Günlükleri $legend_ruler_family_loc$"
- legend_compendium: "$legend_ruler_family_loc$ Özeti"
- legend_genealogy: "$legend_ruler_loc$'ın Soyağacı"
- legend_record: "Aile Kayıtları $legend_ruler_family_loc$"
- legend_annals: "Ailenin Yıllıkları $legend_ruler_family_loc$"
- legend_manuscripts: "$legend_ruler_family_loc$ Elyazmaları"
- legend_ayedawbon: "$legend_ruler_family_loc$ Ayedawbon"
- legend_vamsavali: "$legend_ruler_family_loc$vamsavali"
- legend_title_history: "$legend_ruler_title_loc$'in $legend_ruler_title_loc_possessive$'ı"
- legend_court: "$legend_ruler_loc$ Mahkemesi"
-  
- legend_logia: "$legend_ruler_loc_possessive$ Logia"
- legend_gospel: "$legend_ruler_loc$ İncili"
- legend_sayings: "$legend_ruler_loc$'ın sözleri"
- legend_words: "$legend_ruler_loc$'ın sözleri"
- legend_scriptures: "$legend_ruler_loc_possessive$ Kutsal Yazılar"
- legend_sutra: "$legend_ruler_loc$ Sutrası"
- legend_texts: "$legend_province_loc$ Metinleri"
- legend_purana: "$legend_province_loc$ Puranası"
- legend_miracles: "$legend_ruler_loc$ Mucizeleri"
- legend_wonders: "$legend_ruler_loc$'ın Harikaları"
- legend_life: "$legend_ruler_loc$'ın Hayatı"
- legend_prophecies: "$legend_ruler_loc$'ın Kehanetleri"
- legend_visions: "$legend_ruler_loc$'ın Vizyonları"
- legend_dialogues: "$legend_ruler_loc$ Diyalogları"
-  
-  #Legend seed tooltips 
- no_pagans_in_britannia_tt: "[GetGeographicalRegion('world_europe_west_britannia').GetName]'te [GetReligionFamily('rf_pagan').GetName] [independent|E] [rulers|E] olmamalıdır"
- must_own_france_or_hre_tt: "Kişisel olarak [GetTitleByKey('k_france').GetNameNoTier], [GetTitleByKey('e_france').GetNameNoTier] veya [GetTitleByKey('e_hre').GetNameNoTier]'yi elinizde tutmalısınız"
- must_own_georgia_or_be_georgian_tt: "Ya [GetTitleByKey('k_georgia').GetNameNoTier]'a sahip olmalısınız, ya sermayeniz [GetTitleByKey('k_georgia').GetNameNoTier] olmalı ya da Gürcü kültürüne sahip olmalısınız"
- persian_or_zoroastrian_tt: "Ya sermayeniz [GetGeographicalRegion('world_middle_east_persia').GetName]'dır, [culture|E]'iniz $heritage_iranian_name$'dir ya da siz [GetReligionByKey('zoroastrianism_religion').GetAdjective]'sünüzdür"
- theologian_or_high_piety_tt: "Ya [GetTrait('theologian').GetName( GetNullCharacter )] [trait|E]'e sahip olmalısınız ya da en azından $piety_level_3$ [piety_level|E]'e sahip olmalısınız"
-  
-  #Legend Properties 
- ramses: "Ramses"
- bear: "ayı"
- dragon: "Ejderha"
- huge_beast: "büyük canavar"
- ferocious_beast: "vahşi canavar"
-  
-  #Legend Chapters 
- legend_chapter_opening_generic: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip] efsanesi dünya kadar büyük ve büyüktür, çünkü [ROOT.Legend.GetProtagonist.GetHerHis]'in yaptıkları eşsizdir."
- legend_chapter_extra_deed_memory: "Ancak [ROOT.Legend.GetProtagonist.GetNameNoTooltip] burada durmadı, [ROOT.Legend.GetProtagonist.GetSheHe] büyük bir cesaretle [ROOT.Legend.MakeScope.Var('extra_deed_memory').CharacterMemory.GetThirdPerspectiveDescription] yoluna devam etti."
- legend_chapter_motivation_generic: "Ülkeyi saran belirsiz söylentileri duyan [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip], [ROOT.Legend.GetProtagonist.GetHerHis]'in yüreğini bu zorlu çabayı başarmaya adadı."
- legend_chapter_motivation_evil: "[ROOT.Legend.GetProtagonist.GetHerHim]'ı maceraya iten şey halkın yakarışları ya da toprağı saran çaresizlik değildi, [ROOT.Legend.GetProtagonist.GetHerHis]'in kendi karanlık yüreğinin arzusuydu."
- legend_chapter_motivation_peasant: "Gözyaşları içindeki, çaresiz, yoksul bir köylü [ROOT.Legend.GetProtagonist.GetHerHim] ile görüşmek istediğinde, dindar [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] onun yalvarışlarını yanıtsız bırakamadı ve hemen bir maceraya atıldı."
- legend_chapter_motivation_spouse: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip|U] eşi bir sabah [ROOT.Legend.GetProtagonist.GetHerHim]'e endişe verici söylentilerle geldiğinde, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] aceleyle gidip sonsuz aşklarına saygı göstereceğine söz verdi."
- legend_chapter_motivation_honor_lady: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip|U]'ın gözleri [ROOT.Legend.GetProtagonist.GetHerHis] sevgiliyle buluştuğunda her şey kararlaştırılmıştı. Yardım yakarışlarını dinleyen ve [ROOT.Legend.GetProtagonist.GetHerHis] cesaretinin ne kadar büyük olduğunu kanıtlamak isteyen [ROOT.Legend.GetProtagonist.GetSheHe], bir maceraya atıldı."
- legend_chapter_discovery_generic: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip], [ROOT.Legend.GetProtagonist.GetHerHis] maiyetiyle [Localize( location )]'i gözetledi ve [ROOT.Legend.GetProtagonist.GetHerHim]'ün tam olarak nerede olduğunu bulması uzun sürmedi."
- legend_chapter_hunt_generic: "[Localize( beast )] zaten oradaydı, bir dereden içiyordu. Başını kaldırdı ve hızla [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'e doğru ilerledi. Açtı. Ama [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] daha hızlıydı ve ustaca bir vuruşla [ROOT.Legend.GetProtagonist.GetSheHe] canavarı öldürdü."
- legend_chapter_battle_generic: "Savaş çok şiddetliydi. [ROOT.Legend.GetProtagonist.GetNameNoTooltip], [loser.GetNameNoTooltip] ile sahanın ortasında karşılaştı, [ROOT.Legend.GetProtagonist.GetHerHis]'nin gözleri cesaretle doldu. [ROOT.Legend.GetProtagonist.GetSheHe|U], [ROOT.Legend.GetProtagonist.GetHerHis] silahını kaldırdı ve [ROOT.Legend.GetProtagonist.GetHerHis] düşmanın göğsüne bir darbe indirdi. Kan aktı. Zafer."
- legend_chapter_conclusion_generic: "Eve dönüş yolculuğu kolay değildi, ancak [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] şehre zafer şarkıları eşliğinde girdi. Ve şimdi hepimiz sevinelim ve ziyafet çekelim, çünkü [ROOT.Legend.GetProtagonist.GetHerHis] efsanesi kutlanacak!"
- legend_chapter_famous_deed_generic: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip|U] efsanesi muhteşem bir macerayla doruk noktasına ulaşır: [ROOT.Legend.GetProtagonist.GetHerHis] öyle büyük askeri eylemlerdi ki, bütün krallar bundan hayrete düşerdi ve pek çok soylu ve avam [ROOT.Legend.GetProtagonist.GetHerHis] karşılaşmaya gelirdi, çünkü efsaneyi canlı olarak görmek isterlerdi."
- legend_chapter_extra_deed_generic: "Ancak, hikayenin sonu bu değildi, çünkü [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] eve [ROOT.Legend.GetProtagonist.GetHerHis] dönüş yolunu bulduğunda, [ROOT.Legend.GetProtagonist.GetSheHe] tehlikede olanlara yardım etti ve onların hakaretlerinin intikamını aldı. Haydutlar, canavarlar ve kötü niyetliler [ROOT.Legend.GetProtagonist.GetHerHis] bıçağının öfkesinden saklanamazdı."
- legend_chapter_opening_debug: "#D Açılış bölümü#!"
- legend_chapter_motivation_debug: "#D Motivasyon bölümü#!"
- legend_chapter_discovery_debug: "#D Keşif bölümü#!"
- legend_chapter_hunt_debug: "#D Hunt bölümü#!"
- legend_chapter_battle_debug: "#D Savaş bölümü#!"
- legend_chapter_famous_deed_debug: "#D Ünlü tapu bölümü#!"
- legend_chapter_extra_deed_debug: "#D Ekstra tapu bölümü#!"
- legend_chapter_conclusion_debug: "#D Sonuç bölümü#!"
-  
- legend_chapter_motivation_delicious_meats: "[Localize( beast )]'ın vahşi ve tehlikeli olduğu biliniyordu, ancak [ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip|U] amacı inkar edilemezdi. [ROOT.Legend.GetProtagonist.GetSheHe|U] onun etini tatmakta ısrar etti ve [ROOT.Legend.GetProtagonist.GetHerselfHimself]'ü bu rüyayı gerçekleştirmeye yöneltti."
- legend_chapter_motivation_dead_parent: "[Localize( beast )] gerçekten tehlikeliydi, ama [ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip|U]'in kalbi sağlamdı. [ROOT.Legend.GetProtagonist.GetSheHe|U]'nin hayvana karşı kişisel bir kini vardı, çünkü [ROOT.Legend.GetProtagonist.GetHerHis]'ün ebeveynini öldürdüğü söyleniyordu."
- legend_chapter_motivation_great_venator: "Bu sırada [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], ülke çapında en büyük avcı olarak ünlenmişti, ancak cesur [ROOT.Legend.GetProtagonist.GetTitleAsNameNoTooltip|U] için bu gerçeğin daha da kanıtlanması gerekiyordu."
- legend_chapter_motivation_accomplished_hunter: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], bir avcı olarak [ROOT.Legend.GetProtagonist.GetHerHis] değerinde olduğunu kanıtlamaya kararlıydı. [ROOT.Legend.GetProtagonist.GetSheHe|U], güçlü [Localize( beast )] yaklaşırken sonunda [ROOT.Legend.GetProtagonist.GetHerHis] becerisini gösterme şansı yakaladı."
- legend_chapter_discovery_befriended_cyclops: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] yolda karşılaştığı tüm egzotik ve sıra dışı tiplere dost oldu, hatta büyük ve sinirli bir tepegözle bile arkadaş oldu!"
- legend_chapter_discovery_cyclops: "[ROOT.Legend.GetProtagonist.GetSheHe] seyahat ederken, [ROOT.Legend.GetProtagonist.GetSheHe] en egzotik ve sıra dışı insanlarla tanıştı ve sonunda kudretli bir Tepegöz'ün varlığını keşfetti!"
- legend_chapter_discovery_renowned_herbalist: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] olarak bilinen bitki uzmanı, [ROOT.Legend.GetProtagonist.GetSheHe] olarak bilinen kişinin zehirli sarmaşıkların arasından geçerek ölümcül bir bitki korusu keşfetmesiyle daha da ünlendi."
- legend_chapter_discovery_evil_plants: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessive|U] yolculukları başından itibaren tehlikelerle doluydu. [ROOT.Legend.GetProtagonist.GetSheHe|U] ise zehirli bitkilerden oluşan bir koruluk tarafından saldırıya uğradı, polenleri yakınına gelen herkesi sersemletip sersemletiyordu."
- legend_chapter_discovery_legendary_archer: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessive|U] yolculuk, [ROOT.Legend.GetProtagonist.GetHerHim]'i üzerinde kendini beğenmiş bir okçunun bulunduğu bir arazi parçasına götürdü ve okçu, iyi [ROOT.Legend.GetProtagonist.GetLadyLord]'yi bir okçuluk yarışmasına davet etti. [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] okçunun okunu kendi [ROOT.Legend.GetProtagonist.GetHerHis] okundan biriyle anında ikiye böldü!"
- legend_chapter_discovery_archery_contest_won: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessive|U] seyahati [ROOT.Legend.GetProtagonist.GetHerHim]'i üzerinde övünen bir okçunun olduğu bir arazi parçasına götürdü ve okçu iyi [ROOT.Legend.GetProtagonist.GetLadyLord]'yi okçuluk yarışmasına davet etti. Yarışma sertti, ancak sonunda [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] daha gerçekçi bir iniş yaptı."
- legend_chapter_discovery_bog_stronk: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessive|U] yolu, [ROOT.Legend.GetProtagonist.GetHerHim]'i tehlikeli bir arazide aldı, hatta yer bile [ROOT.Legend.GetProtagonist.GetHerHim]'i yüzeyinin altına çekmeye çalıştı. Sadece [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'ün sahip olduğu muazzam güç [ROOT.Legend.GetProtagonist.GetHerHim]'in kurtulmasına izin verdi."
- legend_chapter_discovery_bog_struggle: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessive|U] yolu, [ROOT.Legend.GetProtagonist.GetHerHim]'i, yerin bile [ROOT.Legend.GetProtagonist.GetHerHim]'i yüzeyinin altına çekmeye çalıştığı tehlikeli bir araziden geçirdi. Güçlü bir şekilde mücadele ederek, sonunda [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] [ROOT.Legend.GetProtagonist.GetHerselfHimself]'ü hain topraktan kurtardı."
- legend_chapter_discovery_wildflower_expert: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessive|U] seyahatleri [ROOT.Legend.GetProtagonist.GetHerHim]'i yeni ve egzotik topraklara götürdü, orada bitkiler bile yabancı ve sıra dışıydı. Gerçekten de [ROOT.Legend.GetProtagonist.GetSheHe] daha önce hiç görülmemiş, yapraklı çalılıkların arasında saklanmış bir bitkiye bile rastladı."
- legend_chapter_discovery_cannibal_scarred: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] çok uzaklara seyahat etti ve hatta açgözlü yamyamların saldırısına uğradı! [ROOT.Legend.GetProtagonist.GetSheHe|U] birçoğunu yendi, [ROOT.Legend.GetProtagonist.GetHerHis] yüzündeki yaralar kalan [ROOT.Legend.GetProtagonist.GetHerHis] gün boyunca verdiği mücadelenin kanıtıydı."
- legend_chapter_discovery_cannibal_fight: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] çok uzaklara gitti ve hatta açgözlü yamyamların saldırısına uğradı! Mücadele gün batımına kadar sürdü; kahramanımız, kalan yamyamlar kaçarken bitkin düştü."
- legend_chapter_battle_enemy_commander: "Yakın dövüşün ortasında, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] kendini zavallı düşman komutanından başkasıyla karşı karşıya buldu! Muhteşem bir düellodan sonra, iğrenç köpek [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] tarafından yere serildi, etraflarında savaş dönerken kan [ROOT.Legend.GetProtagonist.GetHerHis] bıçağından aşağı akıyordu."
- legend_chapter_battle_faked_retreat: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessive|U] taktiksel zekâ savaş ateşinde test edildi, ancak [ROOT.Legend.GetProtagonist.GetSheHe] göreve [ROOT.Legend.GetProtagonist.GetHerselfHimself] eşit olduğunu kanıtladı. Kurnazca bir sahte geri çekilme düşmanı savunmasız bir konuma topladı, ancak cesur kahramanımız bir kez daha ilerleyip onları biçti."
- legend_chapter_battle_flanking_success: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessive|U] savaş alanında saldırgan ve parlak manevralar bir kez daha sergilendi, [ROOT.Legend.GetProtagonist.GetSheHe] bizzat gök gürültülü bir yan hücuma öncülük etti. Korkak düşman sendeledi ve sonra kaçtı, tek darbe günü getirdi."
- legend_chapter_battle_ravished_maiden: "Masum birini ölüme terk etmeyen [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], savaşın ortasında sadece kurtarmakla kalmayıp, hatta #EMP tehlikeye giren yakışıklı bir alt tabakadan insanı #! taciz etmek için bile zaman buldu!"
- legend_chapter_battle_maiden_kiss: "Savaşta yakın dövüşte çaresiz — ama gerçekten çarpıcı — bir köylüyle karşılaşınca, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] onları götürmek için hızla harekete geçti. Kahramanımız, böyle bir yiğitliğe sahip [ROOT.Legend.GetProtagonist.GetWomanMan]'e yakışır şekilde, hemen bir öpücükle ödüllendirildi!"
- legend_chapter_battle_wounded: "Savaş çok şiddetliydi ve çarpışmalar acımasızdı. [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] bunun sonucunda birçok kalıcı yara aldı; böylesine inanç ve şerefe sahip bir [ROOT.Legend.GetProtagonist.GetWomanMan] için ödenecek küçük bir bedeldi bu!"
- legend_chapter_battle_reinforcement_arrival: "Savaş doruk noktasına ulaştığında, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] [ROOT.Legend.GetProtagonist.GetHerselfHimself] bir takviye ordusunun başında geldi. Savaş böylece düşman saflarına doğru hücumu yöneten cesur kahramanımızın lehine döndü."
- legend_chapter_opening_new_faith: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U], [ROOT.Legend.GetProperty( 'religion' ).Religion.GetNameNoTooltip] dini [ROOT.Legend.GetProperty( 'faith' ).Faith.HighGodNamePossessive]'den çok uzaklara düştüğünde doğdu. Vaizler ve [ROOT.Legend.GetProperty( 'faith' ).Faith.PriestNeuterPlural], [ROOT.Legend.GetProperty( 'faith' ).Faith.HouseOfWorshipPlural] çürümüş ve terk edilmiş bir şekilde [ROOT.Legend.GetProperty( 'faith' ).Faith.HighGodHerHis|U] isminde sapkınlığı benimsedi. İnsanlar diğer dinlere yöneldi ve [ROOT.Legend.GetProperty( 'faith' ).Faith.HighGodNamePossessive] rakiplerinin insanların kalplerini fethetmesine yol açtı."
- legend_chapter_motivation_new_faith: "İmanın zaafını ve yozlaşmışlığını gören [ROOT.Legend.GetProtagonist.GetNameNoTooltip|U], [ROOT.Legend.GetProperty( 'religion' ).Religion.GetNameNoTooltip] için yeni bir vizyonla yola çıktı; [ROOT.Legend.GetProperty( 'faith' ).Faith.PantheonTerm]'nin iradesinden hiçbir sapmaya izin vermeyen, dünyanın her köşesine yayılan güçlü ve birleşik bir iman!"
- legend_chapter_famous_deed_new_faith: "Sapkınların anlamsız gevezeliklerinden yalnızlık arayan [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip], güvenlik için sadece [ROOT.Legend.GetProperty( 'faith' ).Faith.HealthGodName]'in merhametiyle tüm ülkedeki en yüksek dağların en yükseğine tırmandı. Zirvede bulutlar dağıldı ve [ROOT.Legend.GetProperty( 'faith' ).Faith.PantheonTerm] [ROOT.Legend.GetProtagonist.GetHerHim]'e göründü ve [ROOT.Legend.GetProtagonist.GetHerHim]'e bir vizyon dayadı. Yaşlı bir [ROOT.Legend.GetProperty( 'faith' ).Faith.PriestNeuter]'in iskelet yapısı ölüm döşeğinde yatıyordu, daha yeni ve çok daha genç bir [ROOT.Legend.GetProperty( 'faith' ).Faith.PriestNeuter] seleflerini son yolculuğuna uğurlarken kıskançlıkla hayata tutunuyordu. Bu vizyon şüphesiz [ROOT.Legend.GetProperty( 'faith' ).Faith.PantheonTerm]'nin yeni [ROOT.Legend.GetProperty( 'faith' ).Faith.GetNameNoTooltip] inancını kutsayacağının habercisiydi."
- legend_chapter_extra_deed_new_faith: "İnsanlık [ROOT.Legend.GetProperty( 'faith' ).Faith.PantheonTerm] için pek çok rakip yarattı ve [ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip] bunların hepsini ortadan kaldırarak, güdeceği geniş bir sürüyü [ROOT.Legend.GetProtagonist.GetHerselfHimself] topladı."
- legend_chapter_conclusion_new_faith: "[ROOT.Legend.GetProperty( 'faith' ).Faith.PriestNeuterPlural] toplanıp [ROOT.Legend.GetProperty( 'faith' ).Faith.ReligiousText|U] yeniden yazıldığında, [ROOT.Legend.GetProperty( 'religion' ).Religion.GetNameNoTooltip|U] en sonunda [ROOT.Legend.GetProperty( 'faith' ).Faith.PantheonTerm] vizyonunda restore edildi!"
- legend_chapter_battle_legendary_battle: "$legendary_battle_desc$"
- legend_chapter_opening_struggle: "[ROOT.Legend.GetProperty( 'struggle' ).GetFlagName]'ın kalbindeki kaotik fırtınada doğan [ROOT.Legend.GetProtagonist.GetNameNoTooltip]'in, [ROOT.Legend.GetProtagonist.GetSheHe]'nin bölgeye barış ve düzen getireceğine dair hiçbir eğilimi yoktu."
- legend_chapter_motivation_struggle: "Kardeşin kardeşe düşman olduğunu gören — [ROOT.Legend.GetProtagonist.GetFaith.GetAdherentNameNoTooltip]'a karşı [ROOT.Legend.GetProtagonist.GetFaith.GetAdherentNameNoTooltip] — [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] bölgeyi parçalamak isteyen kavgacı aptallara sadece "artık yeter" dedi. [ROOT.Legend.GetProtagonist.GetHerHim] için [ROOT.Legend.GetProtagonist.GetHerHis] insanlarının mücadelelerinin sona ermesi ve [ROOT.Legend.GetProperty( 'struggle' ).GetFlagName]'in kalıntılarından yeni bir geleceğin oluşturulması gerektiği netleşti."
- legend_chapter_extra_deed_struggle: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'ın başardığı tüm büyüklüğe rağmen, [ROOT.Legend.GetProtagonist.GetHerHis]'in [ROOT.Legend.GetProperty( 'struggle' ).GetFlagName]. [ROOT.Legend.GetProtagonist.GetHerHis|U] sorununu çözme vizyonundan şüphe duyanlar hâlâ vardı. Düşmanlar, hem münazara hem de savaş meydanlarında kısa sürede yenildi, ta ki hepsi [ROOT.Legend.GetProtagonist.GetHerHis] ayağının dibine kapanıp [ROOT.Legend.GetProtagonist.GetHerHis] merhamet dilenene kadar."
- legend_chapter_conclusion_ended_struggle: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] dünyanın kurallarının yanlış olduğunu gördü, ancak [ROOT.Legend.GetProtagonist.GetHerHis]'in çabaları nedeniyle sözde [ROOT.Legend.GetProperty( 'struggle' ).GetFlagName] sona erdi ve bölge bir daha asla aynı olmayacak. [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], [ROOT.Legend.GetProtagonist.GetTitleAsNameNoTooltip|U]'ün diğerlerinin hepsine galip gelmesiyle ortaya çıkıyor."
- legend_chapter_opening_priesthood_restoration: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U], [ROOT.Legend.GetProperty( 'faith' ).Faith.GetAdjectiveNoTooltip] sadıklarının umutsuz bir şekilde dünyanın dört bir yanına dağıldığı bir zamanda bu dünyaya geldi. [ROOT.Legend.GetProtagonist.GetHerHis] zihninde yaratılışın üzerinde yükselen her şeye kadir bir [ROOT.Legend.GetProperty( 'faith' ).Faith.HouseOfWorship] vizyonuyla, [ROOT.Legend.GetProtagonist.GetSheHe], [ROOT.Legend.GetProtagonist.GetSheHe]'ün [ROOT.Legend.GetProperty( 'faith' ).Faith.HighGodName]'dan itibaren tüm [ROOT.Legend.GetProperty( 'faith' ).Faith.GetAdherentNamePluralNoTooltip]'yi birleştirmek için kutsal bir görevle görevlendirildiğini biliyordu."
- legend_chapter_famous_deed_religious: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], [ROOT.Legend.GetProtagonist.GetHerselfHimself]'i [ROOT.Legend.GetProperty( 'faith' ).Faith.HighGodName]'ye adadı ve tamamen [ROOT.Legend.GetProperty( 'faith' ).Faith.HighGodHerHis|U]'ün isteği doğrultusunda hareket etti. Her [ROOT.Legend.GetProperty( 'faith' ).Faith.GetReligion.GetAdherentNameNoTooltip|U], dudaklarında "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]" ismiyle topraklarda dolaşıp, [ROOT.Legend.GetProtagonist.GetHerHis] ismiyle sayısız kutsal olayın hikayelerini anlattı."
- legend_chapter_extra_deed_religious: "Ancak hikaye burada bitmemişti, çünkü sadıklar hala haydutlar ve kötü niyetli kişiler tarafından taciz ediliyor ve sapkınlar tarafından köleleştiriliyordu! [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], tiranlık altında yaşayanların [ROOT.Legend.GetProperty( 'faith' ).Faith.HighGodName|U]'in kucağına yükselmelerine yardımcı oldu ve [ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName] ve [ROOT.Legend.GetProperty( 'faith' ).Faith.DevilHerHis]'ün uşaklarına karşı zafer kazandı."
- legend_chapter_conclusion_priesthood_restored: "Rahipler toplandı ve diaspora sona erdi. [ROOT.Legend.GetProperty( 'faith' ).Faith.GetAdherentNamePluralNoTooltip] bir daha asla liderlik olmadan rüzgara atılmayacak, çünkü [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] yeni bir [ROOT.Legend.GetProperty( 'faith' ).Faith.ReligiousHeadName]'yi başlatıyor."
- legend_chronicle_opening_exotic_backstory: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], [ROOT.Legend.GetProperty( 'location' ).GetFlagName]'in uzak mistik diyarından bir görev için geldi. [ROOT.Legend.GetProtagonist.GetSheHe|U], [ROOT.Legend.GetProtagonist.GetHerHis] kendi halkı arasında bir kahramandı, ama şimdi [ROOT.Legend.GetProtagonist.GetSheHe], uçsuz bucaksız ve sonsuz dünyanın bizim küçük köşemize iyilik [ROOT.Legend.GetProtagonist.GetHerHis] bahşetmeyi teklif ediyor."
- legend_chronicle_motivation_exotic_backstory: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] yeni [ROOT.Legend.GetProtagonist.GetHerHis] evini gördü ve ağladı, çünkü teknolojileri ve kültürü [ROOT.Legend.GetProtagonist.GetSheHe]'nin [ROOT.Legend.GetProperty( 'location' ).GetFlagName]'te alıştığı harikalarla karşılaştırıldığında çok ilkeldi. Yapılacak iş açıktı: [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] vatanın aydınlanmasını yaratılışın bu köşesine yaymalıydı."
- legend_chronicle_conclusion_exotic_backstory: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] geldiğinden beri çok şey değişmişti. Bir zamanlar köylüler sefalet içinde yuvarlanırken ve barbarlar toprağı kuruturken, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] medeniyetin ışığını yaymıştı. [ROOT.Legend.GetProtagonist.GetHerHis] yolunda birçok kaya olmasına rağmen, hepsini yeni bir [ROOT.Legend.GetProperty( 'location' ).GetFlagName] inşa etmek için topladı. Tüm diyarda, bebeklere [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'ın adı verilir ve kitleler büyük şehirlerini inşa eden [ROOT.Legend.GetProperty( 'location' ).GetFlagName]'ten gelen yabancı için minnettar koro halinde şarkı söyler."
-  
- legend_chronicle_divine_intervention_motivation: "[Localize( god )|U], rüya düzleminde [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] ile konuştu ve [ROOT.Legend.GetProtagonist.GetHerHim]'yi kutsal bir görevle görevlendirdi. O zamandan beri, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] dua ediyor ve [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm]'ten gelen bu görevin gerçek doğasına dair bir işaret için toprakları arıyor."
- legend_chapter_famous_deed_divine_intervention: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], [ROOT.Legend.GetProtagonist.GetHerselfHimself]'i [Localize( god )]'ye adadı ve tamamen [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm]'ün iradesi dışında hareket etti. Dua ederek geçirilen uzun günler ve uzun gecelerden sonra, sonunda [ROOT.Legend.GetProtagonist.GetHerHis] misyonunun gerçek doğası [ROOT.Legend.GetProtagonist.GetHerHim]'e açıklandı!"
- legend_chapter_extra_deed_divine_intervention: "Topraklar, sadıklara zarar vermek isteyen tanrısız haydutlarla doluydu, ancak [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] ve [ROOT.Legend.GetProtagonist.GetHerHis] takipçi grubuyla, [ROOT.Legend.GetProtagonist.GetFaith.DevilName|U]'nin bu hizmetkarları ait oldukları yere, [ROOT.Legend.GetProtagonist.GetFaith.NegativeAfterLife|U] geri kovalandılar ve insanlar özgürdü. [Localize( god )|U], [ROOT.Legend.GetProtagonist.GetSheHe]'nın yaptığı iyilik için [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'a gülümsedi ve [ROOT.Legend.GetProtagonist.GetHerHis] kutsal görev neredeyse doruk noktasına ulaşmıştı."
- legend_chapter_conclusion_divine_intervention: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] adil ve dindar bir şekilde hükmetti, [Localize( god )] ise [ROOT.Legend.GetProtagonist.GetHerHis]'nin rehberliğinde. İlahi plan yerine getirildi, [ROOT.Legend.GetProtagonist.GetSheHe] büyük bir onur ve dindarlık hayatı yaşadı."
- legend_chapter_opening_ancestral_glory: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U], [ROOT.Legend.Custom('GetAncestorNamePossessiveNoTooltip')]'in kendi kan ve can havuzundan doğdu. Bu büyük soyun doğal gücüyle, [ROOT.Legend.GetProtagonist.GetSheHe]'nin büyük şeyler başaracağından hiç şüphe var mıydı?"
- legend_chapter_motivation_ancestral_glory: "[ROOT.Legend.GetProtagonist.GetHerHis]'ın aklında hiç şüphe yoktu; [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip], [ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip]'nin tamamını [ROOT.Legend.GetProtagonist.GetHerHis] kuralı altında birleştirecekti. [ROOT.Legend.Custom('GetAncestorFirstNameNoTooltip')] adına, alt düzey lord ve leydilerin çekişmeleri sona ermek üzereydi ve herkes [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'i efendileri olarak adlandırmaya başlayacaktı."
- legend_chapter_famous_deed_ancestral_glory: "Aptallar [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'a meydan okumak için toplanırdı, ama dağa esen rüzgar gibiydiler. [ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip|U] takipçileri, [ROOT.Legend.GetProtagonist.GetSheHe]'nin [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm] adına yaptığı her harika eylemle büyüdü ve [ROOT.Legend.GetProtagonist.GetSheHe], [ROOT.Legend.Custom('GetAncestorFirstNameNoTooltip')]'in tam yansıması oldu."
- legend_chapter_extra_deed_ancestral_glory: "[ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip]'ın güzel kırsalı [ROOT.Legend.Custom('GetAncestorFirstNamePossessiveNoTooltip')] zamanından beri haydutların ve haydutların eline düşmüştü, ancak [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] kısa sürede haksızlıkları düzeltmek ve [ROOT.Legend.GetProtagonist.GetSheHe] halkını korumak için işe koyuldu."
- legend_chapter_conclusion_ancestral_glory: "Yolculuk tehlikelerle doluydu, ancak [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'ın [ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip] ve halkı için yaptığı onca şeye rağmen, [ROOT.Legend.GetProtagonist.GetSheHe]'nin [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm|U] tarafından yönetilmek üzere seçildiğine dair herhangi bir şüphe olabilir mi? Şehirden en mütevazı çiftliğe kadar herkes coşkuyla "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]" adını haykırıyor!"
- legend_chapter_opening_ancient_people: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U], [ROOT.Legend.GetProtagonist.GetHerHis] atalarının yapacağı gibi [ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip]'yi yönetmek üzere büyük bir [ROOT.Legend.GetProperty( 'culture' ).Culture.GetNameNoTooltip] soyundan doğdu."
- legend_chapter_conclusion_ancient_people: "Muazzam bir emekle, [ROOT.Legend.GetProtagonist.GetNameNoTooltip] yorulmadan [ROOT.Legend.GetProperty( 'title' ).Title.GetNameNoTooltip]'i [ROOT.Legend.GetProperty( 'culture' ).Culture.GetNameNoTooltip] mükemmellik vizyonuna dönüştürmek için çalıştı. Sadece [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'ün efsanevi işleri sayesinde, [ROOT.Legend.GetProperty( 'title' ).Title.GetNameNoTooltip] halkı [ROOT.Legend.GetProperty( 'culture' ).Culture.GetNameNoTooltip] köklerinden gururla haykırıyor!"
- legend_chapter_motivation_saintly_deed: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip] görevi [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm]'den açıktı: [ROOT.Legend.GetProtagonist.GetSheHe] harikalar yaratmaktı! Tüm [ROOT.Legend.GetProperty('religion').Religion.GetAdherentNamePluralNoTooltip] [ROOT.Legend.Custom('GetAncestorNameNoTooltip')]'ü kalplerinde saklıyordu ama hiçbiri henüz [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'in gerçekleştireceği mucizeleri bilmiyordu!"
- legend_chapter_extra_deed_saintly_deed: "İnançlıların yolları tanrısızlar tarafından kuşatılmıştı ve her şeye gücü yeten tarafından kutsanmış bir bıçakla [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] hepsini kovaladı. Fakat yine de vahşi hayvanlar ve yılanlar yola çıkıp inançlılara zarar veriyorlardı, bu yüzden [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] topraklardan [ROOT.Legend.GetProtagonist.GetHerHis] [ROOT.Legend.GetProtagonist.Custom('GetMusicalInstrument')] yaratıkları çekip çıkardı ve [ROOT.Legend.GetProtagonist.GetFaith.CreatorNamePossessive] büyüledi."
- legend_chapter_conclusion_saintly_deed: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], [ROOT.Legend.GetProperty('religion').Religion.GetNameNoTooltip]'in tamamı için yorulmadan çalışmış ve [ROOT.Legend.GetProtagonist.GetFaith.DevilName]'nin hizmetkarlarıyla Dünya'da savaşmıştı, ancak en sonunda [ROOT.Legend.GetProtagonist.GetHerHis] mücadeleleri sona erdi. İlahi plan yerine getirildi, [ROOT.Legend.GetProtagonist.GetSheHe] büyük onur ve dindarlık dolu bir hayat yaşadı."
- legend_chapter_opening_mythical_descent: "[ROOT.Legend.GetProtagonist.GetHerHim]'den önceki tüm [ROOT.Legend.GetProtagonist.GetDynastyNameNoTooltip] ailesi üyeleri gibi [ROOT.Legend.GetProtagonist.GetNameNoTooltip] de [ROOT.Legend.GetProperty( 'beast' ).GetFlagName]'ün kanıyla doğmuştur. [ROOT.Legend.GetProtagonist.GetHerHis|U]'ün sıra dışı kökenleri [ROOT.Legend.GetProtagonist.GetHerHim]'i diğerlerinin üstünde, büyüklüğe mahkum etmiştir."
- legend_chapter_famous_deed_mythical_descent: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U], [ROOT.Legend.GetProtagonist.GetHerHis] soyundan şüphe eden bir kötü adamla yaptığı büyük bir savaşta yaralandı, [ROOT.Legend.GetProtagonist.GetHerHis] ilahi kan bir tarlaya yayıldı. Kan, taze kesilmiş mücevherler gibi parladı ve ışıldadı ve birkaç gün içinde misafirperver olmayan toprak muhteşem renklerde çiçeklerle yeşerdi."
- legend_chapter_extra_deed_mythical_descent: "Ancak bu hikayenin sonu değildi, çünkü birçok kişi hala [ROOT.Legend.GetProtagonist.GetHerHis] kanındaki ilahilikten şüphe ediyordu. [ROOT.Legend.GetProtagonist.GetHerHis] büyük güçlerini kullanarak, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] [ROOT.Legend.GetProtagonist.GetHerHis] şüpheciyi büyük bir canavar salgınıyla kuşattı, sarayları ve evleri açgözlü havlamalar ve çığlıklarla doldu."
- legend_chapter_opening_godly_descent: "[ROOT.Legend.GetProperty( 'god' ).GetFlagName|U] [ROOT.Legend.GetProtagonist.GetNamePossessiveNoTooltip] atasını dölledi ve dünyanın rahminden ilk [ROOT.Legend.GetProtagonist.GetDynastyNameNoTooltip]'yi çıkardı. Doğumdan itibaren, [ROOT.Legend.GetProtagonist.GetDynastyNameNoTooltip] ailesinin tüm üyeleri, [ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip]'in her köşesine refah ve [ROOT.Legend.GetProtagonist.GetFaith.GetNameNoTooltip] inancı getirmek için ilahi bir görevle görevlendirilir."
- legend_chapter_famous_deed_war_won: "İleri geri savaşlar yapıldı ve savaş, ülkeyi hem iyilerin hem de kötülerin kanıyla eşit ölçüde kızıl renge boyadı. [ROOT.Legend.GetProperty( 'winner' ).Char.GetNameNoTooltip|U], kötülüğün güçleri [ROOT.Legend.GetProperty( 'winner' ).Char.GetHerHis] ustaca askeri stratejiyi alt etmeye çalışırken sarsılmadan kaldı. En sonunda çabaları sonuçsuz kalacaktı."
- legend_chapter_conclusion_war_won: "[ROOT.Legend.GetProperty( 'loser' ).Char.GetNameNoTooltip|U] ve [ROOT.Legend.GetProperty( 'loser' ).Char.GetHerHis]'in astları kırık bayraklarının altında başlarını eğip [ROOT.Legend.GetProperty( 'winner' ).Char.GetFirstNamePossessiveNoTooltip]'den merhamet dilediler. Savaşın karanlık günlerinde, [ROOT.Legend.GetProperty( 'winner' ).Char.GetSheHe] yalnızca [ROOT.Legend.GetProperty( 'winner' ).Char.GetHerselfHimself]'ü bir savaş kurtulanı olarak hayal edebiliyordu, ancak [ROOT.Legend.GetProperty( 'winner' ).Char.GetSheHe] kazanan olarak ortaya çıktı. Tek kazanan."
- legend_chapter_motivation_new_title: "[ROOT.Legend.GetProperty( 'founder' ).Char.GetDynastyNameNoTooltip] ailesinin [ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip]'in kahyası olmasından çok önce, [ROOT.Legend.GetProperty( 'founder' ).Char.GetNameNoTooltip], [ROOT.Legend.GetProperty( 'founder' ).Char.GetFaith.PantheonTerm]'ten bir vizyonla ödüllendirildi. O andan itibaren [ROOT.Legend.GetProperty( 'founder' ).Char.GetSheHe], [ROOT.Legend.GetProperty( 'founder' ).Char.GetSheHe]'ün yönetmek için doğduğunu biliyordu."
- legend_chapter_famous_deed_new_title: "[ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip]'ı oluşturacak topraklar [ROOT.Legend.GetProperty( 'founder' ).Char.GetFaith.DevilName]'in korkunç hizmetkarlarının kontrolü altında ezildi. Ancak [ROOT.Legend.GetProperty( 'founder' ).Char.GetHerHis] büyük orduyla, [ROOT.Legend.GetProperty( 'founder' ).Char.GetNameNoTooltip] köy köy özgürleştirildi. Halk silaha sarılıp [ROOT.Legend.GetProperty( 'founder' ).Char.GetFirstNameNoTooltip]'ün hizmetinde kötü hükümdarlarını devirdi ve haklı hükümdarları uğruna ölmeye hazırlandı. [ROOT.Legend.GetProperty( 'founder' ).Char.GetFaith.HighGodName] onların kurbanlarını reddetti, [ROOT.Legend.GetProperty( 'founder' ).Char.GetFaith.HighGodNameSheHe|U] onlara [ROOT.Legend.GetProperty( 'founder' ).Char.GetFaith.HighGodHerHis|U] ilahi koruma sağladı. [ROOT.Legend.GetProperty( 'founder' ).Char.GetSheHe], [ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip] halkını kurtarırken, [ROOT.Legend.GetProperty( 'founder' ).Char.GetFirstNameNoTooltip]'ün büyüyen ordularına hiçbir bıçak dokunamazdı."
- legend_chapter_conclusion_new_title: "Dükler ve isimsiz küçük soyluların çekişmeleri sonunda [ROOT.Legend.GetProperty( 'founder' ).Char.GetNameNoTooltip] hepsini dizginleyip [ROOT.Legend.GetProperty( 'founder' ).Char.GetHerHim]'e sonsuza dek sadakat yemini etmeleriyle sona erdi. [ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip] yeniden doğduğunda, dünyanın şekli sonsuza dek değişti."
- legend_chronicle_sacred_birth_opening: "[ROOT.Legend.GetProtagonist.GetSheHe] doğduğu günden itibaren [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm]'in [ROOT.Legend.GetProtagonist.GetNameNoTooltip] için daha yüce planları olduğu açıktı. [ROOT.Legend.Custom('GetBirthCircumstancesLegend')|U], [ROOT.Legend.GetProtagonist.GetHerHis]'ün büyüklüğü önceden belirlenmişti."
- born_to_a_virgin_mother: "bakire bir anneden doğmuş"
- born_under_auspicious_stars: "uğurlu yıldızların altında doğdum"
- legend_chapter_motivation_sacred_birth: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], kendi doğumlarının vizyonlarıyla boğuşarak uykusuz geceler geçirdi, ta ki kader gecesi, [ROOT.Legend.GetProtagonist.GetFaith.HighGodName|U], [ROOT.Legend.GetProtagonist.GetHerHim]'nin önünde belirene kadar. [ROOT.Legend.GetProtagonist.GetFaith.HighGodName|U], [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'ün Dünya'ya ilahi bir amaç için yerleştirildiğini, bunun tipik bir [ROOT.Legend.GetProtagonist.GetWomanMan] çağrısının yerini aldığını ilan etti. O günden itibaren, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip], [ROOT.Legend.GetProtagonist.GetHerHis]'nin doğumunun koşullarının ne bir söylenti ne de bir tesadüf olduğunu, [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm]'in doğrudan bir müdahalesi olduğunu biliyordu!"
- legend_chapter_conclusion_sacred_birth: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'ın [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm] adına yaptığı tüm büyük başarılarla, [ROOT.Legend.GetProtagonist.GetSheHe] bir kez daha ziyaret edildi, ancak bu sefer bu sadece bir rüya veya vizyon değildi. [ROOT.Legend.GetProtagonist.GetFaith.HighGodName|U] fiziksel formda tezahür etti ve [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'a içmesi için bir bardak su sundu, [ROOT.Legend.GetProtagonist.GetHerHim]'e bir ilahilik dokunuşu bahşetti. Kitleler [ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip|U] ismini alkışladı, sadece [ROOT.Legend.GetProtagonist.GetHerHis] ilahi, şifalı ellerin dokunması için yalvardı."
- legend_chronicle_unsuspecting_opening: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U], herhangi bir [ROOT.Legend.GetProtagonist.GetWomanMan] gibi doğdu, [ROOT.Legend.GetProtagonist.GetSheHe]'nin [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm] adına başaracağı büyüklüğe dair hiçbir fikri yoktu."
- legend_chapter_motivation_fought_devil: "Kabuslarla harap olan [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip], [ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName]'in tıslayan ve [ROOT.Legend.GetProtagonist.GetHerHim]'ye işkence eden vizyonlarıyla rahatsız ediliyordu. Her gün [ROOT.Legend.GetProtagonist.GetSheHe], [ROOT.Legend.GetProtagonist.GetHerHis] uykusundan yeni bir amaçla ve [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm]'in [ROOT.Legend.GetProtagonist.GetHerHim] için bir planı olduğu hissiyle uyanıyordu."
- legend_chapter_famous_deed_fought_devil: "Bir gece, [ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName|U], kanlı duvarlara saçılmış her türlü kırbaç ve acımasız işkence mekanizmalarıyla [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'i ziyaret etti. Çıplak ve sarsılmamış bir şekilde, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip], [ROOT.Legend.GetProperty( 'faith' ).Faith.HighGodName|U]'ün [ROOT.Legend.GetProtagonist.GetHerHis]'in içinden nabız gibi atan gücü ve inancıyla [ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName|U]'ı yakaladı. [ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName|U], [ROOT.Legend.GetProtagonist.GetHerHim]'nin altında güçsüzce sıkıştırılmışken — iğrenç canavar tısladı ve hırladı, kötülük sadece [ROOT.Legend.GetProtagonist.GetWomanMan] tarafından engellendi!"
- legend_chapter_extra_deed_fought_devil: "Tatmin olmamış ve iyi ve doğru olan her şeye karşı nefretle dolu olan [ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName|U], [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'i bir [ROOT.Legend.GetProtagonist.Custom('GetMusicalInstrument')] yarışmasına davet etti. [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'in çaldığı ezgi, [ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName|U]'ın [ROOT.Legend.GetProperty( 'faith' ).Faith.NegativeAfterLife|U]'e dönüşmesine neden oldu. Ezgi, [ROOT.Legend.GetProtagonist.GetHerHis] zihninden duman gibi kaydı, şüphesiz insanların alemi için fazla ilahiydi."
- legend_chapter_conclusion_fought_devil: "[ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName|U] yenildiğinde, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] ölümlüler alemindeki kötü güçleri yenmeye [ROOT.Legend.GetProtagonist.GetHerselfHimself] adadı. [ROOT.Legend.GetProtagonist.GetSheHe|U] [ROOT.Legend.GetProtagonist.GetHerHim] ile [ROOT.Legend.GetProtagonist.GetHerHis] gün boyunca kutsal bir ışıltı taşıdı ve [ROOT.Legend.GetProtagonist.GetHerHis] ardında barış ve medeniyet bıraktı."
- legend_chapter_famous_deed_tournament_won: "Dövüş sanatlarının muhteşem bir gösterisinde, akıllar ve sesler kılıçlar kadar eşit ölçüde çarpıştı, ama hiçbir akıl onun kadar akıllı, hiçbir kılıç onun kadar keskin değildi! Yarışmacılar birbiri ardına sıraya girdiler ve dokunulmaz [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] tarafından ağlatıldılar."
- legend_chapter_extra_deed_tournament_won: "Hiç kimse [ROOT.Legend.GetProtagonist.GetNamePossessiveNoTooltip]'ın ilk turnuvasının ihtişamını hatırlamaktan kendini alamadı, ancak tek bir zafer [ROOT.Legend.GetProtagonist.GetHerHim] için yeterli değildi. Diğer yarışmacılar [ROOT.Legend.GetProtagonist.GetHerHim]'i bir bıçak fırtınasıyla çevrelediler, ancak [ROOT.Legend.GetProtagonist.GetSheHe] sarsılmadı. [ROOT.Legend.GetProtagonist.GetSheHe|U], [ROOT.Legend.GetProtagonist.GetHerHis] isim! diye bağıran bir kalabalığın önünde galip geldi."
- legend_chronicle_opening_raised_by_animals: "Yiyecek ve kurtarılma umudu olmadan, [ROOT.Legend.GetProtagonist.GetNameNoTooltip] bir nehrin kenarında kaybolmuş bir bebek gibi yatıyordu ta ki güçlü bir [ROOT.Legend.GetProperty( 'beast' ).GetFlagName] annesi [ROOT.Legend.GetProtagonist.GetHerHim]'yi bulana kadar. [ROOT.Legend.GetProtagonist.GetHerHim]'yi memesinden besledi ve bebeğin tüm gücü ve cesaretiyle Herkül gibi bir [ROOT.Legend.GetProtagonist.GetWomanMan]'e dönüşmesini sağladı."
- legend_chapter_motivation_raised_by_animals: "İnsanlığa geri dönen [ROOT.Legend.GetProtagonist.GetFirstName], kaosun ülkeyi nasıl sardığını keşfetti. Komşu komşuya [ROOT.Legend.GetProperty( 'beast' ).GetFlagName]'in avına saldırması gibi saldırıyordu ve [ROOT.Legend.GetProtagonist.GetFirstName], [ROOT.Legend.GetProtagonist.GetHerHis] halkının, sürüyü ortak amaçlarının arkasında birleştirmek için güçlü bir lidere ihtiyaç duyduğunu biliyordu."
- legend_chapter_conclusion_raised_by_animals: "[ROOT.Legend.GetProtagonist.GetFirstName|U], [ROOT.Legend.GetProperty( 'beast' ).GetFlagName]'in yöneteceği gibi güçlü ve gururlu bir şekilde hükmetti. [ROOT.Legend.GetProtagonist.GetSheHe], [ROOT.Legend.GetProtagonist.GetHerHis] [ROOT.Legend.GetProperty( 'beast' ).GetFlagName]'in annesini bir daha hiç görmese de, [ROOT.Legend.GetProtagonist.GetSheHe], [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm]'dan gelen bu habercinin [ROOT.Legend.GetProtagonist.GetHerHis]'ün saltanatına büyük bir gururla bakacağından şüphe duymuyordu. Topraklar sessiz ve huzurlu kaldı, [ROOT.Legend.GetProtagonist.GetHerHis] düşmanlarından hiçbiri, [ROOT.Legend.GetProperty( 'beast' ).GetFlagName]'in öfkesiyle karşılaşmamak için çizginin dışına çıkmaya cesaret edemedi."
- legend_chapter_extra_deed_recent_battle: "[ROOT.Legend.GetProtagonist.GetHerHis] eve döndüğünde, [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] [ROOT.Legend.GetProtagonist.GetHerHis] düşmanla yiğitçe savaştı, eşsiz cesaret ve stratejik zekayla önderlik etti. [ROOT.Legend.GetProtagonist.GetHerHis] Kılıcını havaya kaldırarak ve sarsılmaz kararlılığıyla, [ROOT.Legend.GetProtagonist.GetHerHis] düşmana karşı zafere ilham verdi."
- legend_chapter_extra_deed_recent_siege: "[ROOT.Legend.GetProtagonist.GetHerHis] eve döndüğünde, [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip], şehri en iyi cam gibi parçalayarak, kararlı bir şekilde düşman kalesinin kuşatmasına öncülük etti. [ROOT.Legend.GetProtagonist.GetHerHis] kuvvetleri toplanmış ve bayraklar açılmışken, [ROOT.Legend.GetProtagonist.GetSheHe] amansız bir hücum başlattı, savunmaları aştı ve zaferi ilan etti."
- legend_chapter_extra_deed_recent_imprisonment: "En karanlık zindanın derinliklerinde, yiyecek ve sudan mahrum, zincirlenmiş ve gölgelerle çevrili [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] kaçmak için gereken kararlılığı buldu. Dişlerini sıkarak ve meydan okumayla dolu bir kalple [ROOT.Legend.GetProtagonist.GetSheHe] her gece [ROOT.Legend.GetProtagonist.GetHerHis] kaçış planları yaptı. Kurnazca manipülasyonlar ve iradenin saf gücüyle [ROOT.Legend.GetProtagonist.GetSheHe] gizli geçitleri takip ederek sabah ışığına çıktı."
- legend_chapter_extra_deed_recent_tournament: "[ROOT.Legend.GetProtagonist.GetHerHis] eve döndüğünde, [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] görkemli turnuva alanlarının ihtişamına kapılmıştı. Elinde kılıç ve güneşin bakışları altında parlayan zırhla, [ROOT.Legend.GetProtagonist.GetSheHe] sarsılmaz kararlılıkla zorlu rakiplerle karşı karşıyaydı. Seyirciler haykırıyordu, güzel hanımlar ve etkilenebilir uşakları kendilerini [ROOT.Legend.GetProtagonist.GetHerHis] ayaklarına atıyorlardı! Kazanan! En iyi şövalye!"
- legend_chapter_famous_deed_saintly_deed: "Şüphe fısıltıları ve halk arasında inançsızlık gölgeleri arasında, [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] sarsılmaz bir şekilde [ROOT.Legend.GetProtagonist.GetHerHis] inançla duruyordu. Her şey kaybolmuş gibiydi, savaş alanı kanla boyanmıştı. Mızraklar yere dikilmişti, kullananlar tarafından terk edilmişti. Ancak [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] dizlerinin üzerine düştü, ağzı dualarla doluydu. Mızraklarda çiçekler açtı, düşmanlar bir mucizeye tanıklık ederek yere yığıldılar."
- legend_chapter_famous_deed_holy_warrior: "Her zaman inancının kararlı bir savunucusu olan [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip], [ROOT.Legend.GetProtagonist.GetHerselfHimself]'i [ROOT.Legend.GetProtagonist.GetFaith.HighGodName]'nin düşmanlarına karşı verilen kutsal savaşta gerçek bir kahraman olarak gösterdi. [ROOT.Legend.GetProtagonist.GetSheHe|U], sahte tanrıların bilgisiz insanlarından aldığı barışı ve refahı geri getirmeye kararlı bir şekilde yabancı topraklara seyahat etti. [ROOT.Legend.GetProtagonist.GetSheHe|U], [ROOT.Legend.GetProtagonist.GetFaith.GetNameNoTooltip] sembolünü [ROOT.Legend.GetProtagonist.GetHerHis] ön koluna kazıdı ve kan, kâfirlerin cesetlerinin üzerine döküldü."
- legend_chapter_opening_legendary_battle: "Zamanın kroniklerinde, sonsuzluk boyunca yankılanacak kadar görkemli bir savaşın destanı alev alev yanıyor; [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip]'ın savaş fırtınasının ortasında dev bir varlık olarak durduğu bir savaş."
- legend_chapter_famous_deed_raised_by_animals: "Her geçen gün, [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] medeniyetin barbarlığı tarafından sahiplenilmemiş bir güç ve bilgelikle büyüdü. Roma'nın kurucuları gibi, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] de [ROOT.Legend.GetProtagonist.GetHerHim]'ye hayat veren dünyayı kucakladı ve ev sakinlerine avlanma ustalığını öğreterek beyaz bir [ROOT.Legend.GetProtagonist.Custom('RegionalFerociousAnimal')]'ü devirdi."
- legend_chapter_conclusion_dead_loved_spouse: "[ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] eve döndüğünde, [ROOT.Legend.GetProtagonist.GetHerHis] kalbi [ROOT.Legend.GetProtagonist.GetHerHis] sandığından ayrılmak üzere olan küçük bir güvercin gibi hissetti. Duygularla dolu [ROOT.Legend.GetProtagonist.GetSheHe], [ROOT.Legend.GetProtagonist.GetHerHis] gerçek aşkıyla yeniden bir araya gelmek için sabırsızlanıyordu. Korkunç bir çığlık, keder şatonun salonlarını doldurdu çünkü [ROOT.Legend.GetProtagonist.GetHerHis] eşinin soluk dudakları tüm yaşamdan yoksundu. [ROOT.Legend.GetProtagonist.GetHerHis] yalnızlığının sessizliğinde, [ROOT.Legend.GetProtagonist.GetHerHis] kalbini alevlendiren bir aşkın anıları [ROOT.Legend.GetProtagonist.GetHerHim]'i korkunç bir acıyla doldurdu. [ROOT.Legend.GetProtagonist.GetSheHe]'ün paylaşacak kimsesi yoksa, [ROOT.Legend.GetProtagonist.GetHerHis] efsanesinin ne değeri vardı?"
- legend_chapter_conclusion_point_of_interest: "[ROOT.Legend.GetProtagonist.GetTitledFirstNamePossessiveNoTooltip] seyahatlerinin uçsuz bucaksız genişliğinde, [ROOT.Legend.GetProtagonist.GetSheHe], yeryüzünün sınırlarını zorlayan nefes kesici bir harikaya rastladı — doğanın güzelliğinin insan yaratıcılığıyla kusursuz bir şekilde iç içe geçtiği bir yer. Mükemmel işçiliğin yükselen kuleleri göklere doğru uzanıyordu, zarif formları şafağın ilk ışığının yumuşak parıltısında yıkanıyordu. [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] derin bir nefes aldı, çünkü [ROOT.Legend.GetProtagonist.GetSheHe] daha iyi bir son isteyemezdi."
- legend_chapter_motivation_child_mother: "Kalenin sakin koridorlarında, gölgeler taş duvarlarda dans ederken ve eski masalların fısıltıları havada asılı kalırken, [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] [ROOT.Legend.GetProtagonist.GetHerHis] yeni doğmuş çocuğu şefkatle kucaklıyordu. [ROOT.Legend.GetProtagonist.GetSheHe] bebeğin masum gözlerine bakarken, [ROOT.Legend.GetProtagonist.GetHerHis]'in kalbi kararlılıkla tutuştu. [ROOT.Legend.GetProtagonist.GetSheHe] geride hangi mirası bırakacaktı? [ROOT.Legend.GetProtagonist.GetSheHe] ipek ve çiçekler arasında sığınan bir korkak olarak hatırlanmak mı isteyecekti?"
- legend_chapter_motivation_child_father: "[ROOT.Legend.GetProtagonist.GetHerHis] atalarının evinin görkemli odalarında, mum ışığının titrek ışıklarının antik duvar halılarına gölge düşürdüğü yerde, [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip], [ROOT.Legend.GetProtagonist.GetHerHim]'ye bahşedilen yaşam mucizesine hayranlıkla baktı. [ROOT.Legend.GetProtagonist.GetHerHis] mirasını koruma kararlılığı o çocukla birlikte doğdu."
- legend_chapter_opening_witch: "[ROOT.Legend.GetProtagonist.GetTitledFirstNamePossessiveNoTooltip] gizli sanatlara ilgi her zaman şüphe uyandırmıştı. Cadılık ve büyücülük suçlamaları [ROOT.Legend.GetProtagonist.GetHerHim]'in etrafında dönüyordu ve [ROOT.Legend.GetProtagonist.GetHerHis] bir zamanlar şanlı bir isme sahip olan kişinin üzerine karanlık bir gölge düşürüyordu. [ROOT.Legend.GetProtagonist.GetHerHis] sadık tebaası her hareketi takip etmek için [ROOT.Legend.GetProtagonist.GetHerHis] döndüğünde, [ROOT.Legend.GetProtagonist.GetSheHe] [ROOT.Legend.GetProtagonist.GetHerHim]'in üzerine çöken güvensizliğin ağırlığını hissediyordu."
- legend_chapter_motivation_celibacy: "Bir zamanlar görkemli kıyafetlerle süslenmiş olan [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip], [ROOT.Legend.GetProtagonist.GetFaith.PriestNeuter]'in mütevazı cübbesine bürünmüş, [ROOT.Legend.GetProtagonist.GetHerHis] tacından soyulmuş bir şekilde duruyordu. Fakat [ROOT.Legend.GetProtagonist.GetSheHe] [ROOT.Legend.GetProtagonist.GetFaith.HighGodName]'ü asla unutmadı, çünkü [ROOT.Legend.GetProtagonist.GetHerHis] bağlılığı daha da parlak, sonsuz yanıyordu. [ROOT.Legend.GetProtagonist.GetHerHim] içinde atan ilahi ilhamla beslenen [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip], [ROOT.Legend.GetProtagonist.GetHerHis] ismini sonsuza dek ölümsüzleştirecek bir yol açmaya karar verdi."
- legend_chapter_opening_new_culture: "[ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip], eski gelenekler geçersiz hale geldiğinde doğdu. [ROOT.Legend.GetProtagonist.GetHerHis]'in zihninde bir vizyonla, [ROOT.Legend.GetProtagonist.GetSheHe] kendi geleneklerini [ROOT.Legend.GetProtagonist.GetHerHis] oluşturmaya karar verdi — böylece [ROOT.Legend.GetProtagonist.GetCulture.GetNameNoTooltip] kültürü yaratıldı."
- legend_chapter_opening_new_faith_generic: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U], din [ROOT.Legend.GetProtagonist.GetFaith.GetNameNoTooltip]'den çok uzaklara düştüğünde doğdu. Vaizler, inanç çürüyüp terk edildiğinden [ROOT.Legend.GetProtagonist.GetFaith.HighGodNamePossessive] adıyla sapkınlığı benimsediler. İnsanlar başka dinlere yöneldi ve [ROOT.Legend.GetProtagonist.GetFaith.HighGodNamePossessive] rakiplerinin insanların kalplerini fethetmesine yol açtı."
- legend_chapter_winner_change_toast: "[winner.GetPromotedLegend.GetName] değişiklik"
- legend_chapter_change_toast: "[ROOT.Char.GetPromotedLegend.GetName] değişiklik"
- legend_chapter_change_culture_toast: "[founder.GetPromotedLegend.GetName] değişiklik"
-  
- spread_legend_intent: "Efsaneyi yay"
- spread_legend_intent_desc: "Bu aktiviteyi [legend|E]'ınızı yaymak için bir fırsat olarak kullanacaksınız."
- spread_legend_intent_not_valid_desc: "#X Şu anda bir [legend|E]'e sahip değilsiniz"
-  
- legend_chronicle_war_won_chronicle: "[title.GetNameNoTooltip]'ın Fethi"
- legend_chronicle_war_won_chronicle_desc: "[winner.GetTitledFirstName], [title.GetName]'i değersiz [loser.GetFirstName]'den haklı olarak fethetti."
-  
- legend_chronicle_new_title: "[title.GetNameTooltip]'ın Kuruluşu"
- legend_chronicle_new_title_desc: "[founder.GetName]'ın iradesi, gücü ve kurnazlığıyla [title.GetName] var oldu ve asla sarsılmayacak!"
-  
- legend_chronicle_great_deed_faith: "[new_faith.GetNameNoTooltip]'ın Manevi Zaferi"
- legend_chronicle_great_deed_faith_desc: "[new_faith.HighGodName]'e olan [founder.GetHerHis] inancının rehberliğinde, [founder.GetName] sadık [new_faith.GetAdherentNamePlural]'ü alçak [antagonist.GetName]'in önderlik ettiği [old_faith.GetAdherentName]'e karşı zafere taşıdı"
-  
- legend_chronicle_great_deed_title: "[title.GetNameNoTooltip] için Büyük İş"
- legend_chronicle_great_deed_title_desc: "Tarih boyunca [title.GetName]'ın tüm yöneticileri arasında hiçbiri bu kadarını başaramamıştır, hiçbiri büyük [founder.GetName]'in önünde bu kadar konuşulmayacaktır."
-  
- legend_chronicle_great_deed_region: "[legend_region.GetNamePossessiveNoTooltip] Gerçek Kahraman"
- legend_chronicle_great_deed_region_desc: "[legend_region.GetName]'da [founder.GetName] ve [founder.GetHerHis] başarılarının adını bilmeyen bir ruh yoktur."
-  
- legend_chronicle_great_deed_dynasty: "[dynasty.GetNameNoTooltip] için Güçlü Bir Çaba"
- legend_chronicle_great_deed_dynasty_desc: "[dynasty.GetName] adını taşıyan çok az kişi hanedanı için [founder.GetName] kadar çok şey yapmıştır."
-  
- legend_chronicle_valiant_defense: "Cesur Bir Savunma"
- legend_chronicle_valiant_defense_desc: "Tüm olumsuzluklara rağmen [defender.GetName], [attacker.GetName]'in ordularını püskürttü."
-  
- legend_chronicle_tournament_won: "[winner.GetFirstNameNoTooltip] Üç Zafer"
- legend_chronicle_tournament_won_desc: "[location.GetName]'ın mızrak dövüşü alanlarında, en büyük yarışmacı [winner.GetName] turnuvayı üçüncü kez kazandı. Dünyadaki hiçbir canlı ruh [winner.GetHerHim] ile rekabet edemez."
-  
- legend_chronicle_accolade_chronicle: "En Cesur $knight_culture_player_plural_no_tooltip$"
- legend_chronicle_accolade_chronicle_desc: "[founder.GetName|U]'ın birçok harika $knight_culture_player_plural_no_tooltip_lowercase$'i vardı, ancak hiçbiri [first_accolade.GetName]'ün [first_accolade_knight.GetName]'sinden büyük değildi."
-  
- heroic_legend_seed_drop.t: "Yeni Efsane Tohumu Mevcut"
- legend_chapter_opening_great_deed: "$legend_chapter_opening_generic$"
- legend_chapter_conclusion_great_deed: "$legend_chapter_conclusion_generic$"
-  
-  # Divine creatures 
- angels: "melekler"
- the_angels: "melekler"
-  # Legendary locations 
- atlantis: "Atlantis"
- olympus: "Olimpos"
- hindustan: "Hindistan"
- vinland: "Şarap ülkesi"
- sunset_empire: "Gün Batımı İmparatorluğu"
- prester_john_kingdom: "Prester John Krallığı"
- albion: "Albion"
- himavanta: "Himavata"
- kumari_kandam: "Kumari Kandam"
- mahishmati: "Mahişmati"
- beyul: "Beyül"
- bald_mountain: "Kel Dağ"
- irum: "Irum"
- china: "Cathay"
-  
-  #Legendary people 
- vercingetorix: "Vercingetorix"
- shibi_chakravarti: "Shibi Çakravarti"
-  
-  # To account for some ancestors being flags 
- ancestor_flag_name: "[ROOT.Legend.GetProperty( 'ancestor_flag' ).GetFlagName|U]"
- ancestor_flag_name_possessive: "[ROOT.Legend.GetProperty( 'ancestor_flag' ).GetFlagName|U]'lar"
- ancestor_name: "[ROOT.Legend.GetProperty('ancestor').Char.GetName]"
- ancestor_namepossessive: "[ROOT.Legend.GetProperty('ancestor').Char.GetNamePossessive]"
- ancestor_firstname: "[ROOT.Legend.GetProperty('ancestor').Char.GetFirstName]"
- ancestor_firstnamepossessive: "[ROOT.Legend.GetProperty('ancestor').Char.GetFirstName]"
- ancestor_namenotooltip: "[ROOT.Legend.GetProperty('ancestor').Char.GetNameNoTooltip]"
- ancestor_namepossessivenotooltip: "[ROOT.Legend.GetProperty('ancestor').Char.GetNamePossessiveNoTooltip]"
- ancestor_firstnamenotooltip: "[ROOT.Legend.GetProperty('ancestor').Char.GetFirstNameNoTooltip]"
- ancestor_firstnamepossessivenotooltip: "[ROOT.Legend.GetProperty('ancestor').Char.GetFirstNameNoTooltip]"
-  
- legend_events.0001.t: "Tarihçi: Bulunan Bir Efsane"
- legend_events.0001.desc.intro: "[chronicler.Custom2('MyCharacterIntroduction', ROOT.Char)|U] saraya girdiğimde beni heyecanla karşılamak için acele ediyor.\n\n"
- legend_events.0001.desc.mid.slew_dragon: ""Mükemmel bir haber getirdim, [ROOT.Char.GetTitleAsNameNoTooltip|U]'ım! [legend_character.GetName] hakkında ciltler ve efsaneler arıyordum ve [legend_character.GetSheHe]'nin savaşıp bir ejderhayı öldürdüğüne inanmak için nedenlerim var!"
- legend_events.0001.desc.mid.ancestral_saint: ""[ROOT.Char.HighGodName|U] bugün evinize gülümsüyor, [ROOT.Char.GetTitleAsNameNoTooltip|U]'im. Uğurlu atanız [legend_character.GetName] hakkında bilgi arıyordum ve [legend_character.GetHerHim]'ün [GetTrait('saint').GetNameNoTooltip( ROOT.Char )] olarak kabul edilmesini sağlayacak potansiyelde bilgiler buldum!"
- legend_events.0001.desc.mid.godly_descent: "[chronicler.GetSheHe|U] dizlerinin üzerine çöküp [chronicler.GetHerHis] ayaklarımı öper. "Ah, en kutsal [ROOT.Char.GetTitleAsNameNoTooltip|U]. [ROOT.Char.GetFaith.HighGodName|U] [ROOT.Char.GetFaith.HighGodHerselfHimself]'ün kan soyundan geldiğinizden şüphelenmek için güçlü bir nedenim var!"
- legend_events.0001.desc.mid.old_godly_descent: ""İyi günler sana, [ROOT.Char.GetTitleAsNameNoTooltip|U]'ım, yoksa sana '[ROOT.Char.Custom('GetDaughterSon')|U] [legend_character.GetFaith.HighGodName|U]' mi demeliyim? Gerçekten de kayıtları araştırdım ve atalarınızın 'tanrısı'nın aslında çok sayıda kahramanca eylemde bulunan kahraman bir ölümlü olduğuna inanıyorum."
- legend_events.0001.desc.mid.raised_by_animals: ""İyi günler, [ROOT.Char.GetTitleAsNameNoTooltip|U]'ım. Erken çocukluğunuzdan ne kadarını hatırlıyorsunuz? Arşivdeki bazı ciltler, [ROOT.Char.Custom('GetAnimalPlural')] tarafından aslında vahşi doğada büyütüldüğünüzü gösteriyor."
- legend_events.0001.desc.mid.auspicious_stars: ""[ROOT.Char.GetFaith.HighGodName|U] bugün bize gülümsüyor, [ROOT.Char.GetTitleAsNameNoTooltip]'im, tıpkı doğduğun gün [ROOT.Char.GetFaith.HighGodNameSheHe]'nin gülümsediği gibi. Gerçekten de, hayatında yapacağın büyük işlerin bir işareti olarak uğurlu yıldızlar altında doğdun."
- legend_events.0001.desc.mid.virgin_birth: ""[ROOT.Char.GetFaith.HighGodName|U] bugün bize gülümsüyor, [ROOT.Char.GetTitleAsNameNoTooltip]'im, tıpkı [ROOT.Char.GetFaith.HighGodNameSheHe]'nin seni gebe bıraktığında annene gülümsediği gibi. Gerçekten de, sen piç değildin, annen tertemiz bir gebeliğe sahip olacak kadar şanslıydı!"
- legend_events.0001.desc.mid.spoke_to_angels: ""Birçok gece önce bana meleklerin seni ziyaret ettiğini söylediğini hatırlıyorum. [ROOT.Char.GetTitleAsNameNoTooltip|U]'ım, bunun sadece bir rüya değil, [ROOT.Char.GetFaith.PositiveAfterLife]'den gelen bir görüntü olduğuna inanmak için nedenlerim var."
- legend_events.0001.desc.mid.fought_the_devil: ""Son zamanlarda kabuslar gördüğünüzün farkındayım. Bu vizyonların [ROOT.Char.GetFaith.NegativeAfterLife]'deki [ROOT.Char.GetFaith.DevilName] ile olan savaşınızın anlık görüntüleri olduğuna inanmak için nedenlerim var."
- legend_events.0001.desc.mid.exotic_backstory: ""Benim [ROOT.Char.GetTitleAsNameNoTooltip|U]'ım, kendini hiç tam bir [ROOT.Char.GetCulture.GetName] [ROOT.Char.GetWomanMan] gibi hissetmedin, değil mi? Yıllar önce, buradan çok uzaklardaki mistik bir diyardan geldiğine inanıyorum."
- legend_events.0001.desc.mid.ancient_people: ""Benim [ROOT.Char.GetTitleAsNameNoTooltip|U]'ım, kayıtları araştırdım ve soyunuzun büyük [ancient_culture.GetName] hanedanlarına kadar uzandığını gösteren bazı bilgiler buldum!"
- legend_events.0001.desc.outro: "Bazıları bunun biraz uçuk olduğunu ve bunun doğru olduğunu kanıtlamanın biraz çaba gerektireceğini düşünebilir, ancak sizi yaşayan bir efsane yapacak güçlü bir temel var!""
- legend_events.0001.a: "Harika iş!"
- legend_events.0001.b: "Ben bile buna inanmakta zorlanıyorum."
- legend_events.0010.t: "$chronicler_court_position$: Efsane Yayılıyor"
- legend_events.0010.desc: "[chronicler.Custom2('MyCharacterIntroduction', ROOT.Char)|U] bu sabah sarayda beni karşıladı, [chronicler.GetHerHis] dilinin ucundaki haberlerle heyecanla.\n\n"Sevgili [ROOT.Char.GetTitleAsNameNoTooltip|U], sanırım [potential_promoter.Custom2('YourCharacterIntroduction', ROOT.Char)], [ROOT.Char.GetPromotedLegend.GetName]'ün doğruluğuna neredeyse ikna oldu! [potential_promoter.GetSheHe|U] ise hikayenin farkında ve tamamen büyülenmiş gibi görünüyor, ancak arkasındaki gerçeğe ikna değil.""
- legend_events.0010.a: "Belki [potential_promoter.GetSheHe] ikna edilebilir."
- legend_events.0010.a.success: "[potential_promoter.GetName] ikna oldum"
- legend_events.0010.a.failure: "[potential_promoter.GetName] ikna olmadı"
- legend_events.0010.b: "Belki gerçeği çarpıtmak [potential_promoter.GetHerHim]'ı inanan biri yapardı."
- legend_events.0010.c: "[potential_promoter.GetSheHe|U], [potential_promoter.GetSheHe]'in hoşuna gideni düşünebilir."
-  
- legend_events.0020.t: "$hold_court_header$ Efsane Kooptasyon"
- legend_events.0020.desc: "Yabancı bir misafir tahtıma yaklaşıp yüksek sesle haykırıyor:\n\n"Sarayınıza geleli epey oldu. Hem küçük hem de görkemli krallık meselelerini nasıl yönettiğinizi ve ele aldığınızı dikkatlice gözlemledim. Ve derinden etkilendim.\n\n[seed_presenter.GetCulture.GetCollectiveNoun] arasında, seçkin bir hanedandan gelen efsanevi bir hükümdarın eski bir hikayesi var. Bu, annemin bana gençken anlattığı bir hikaye. Bunu ilk olarak annesinden çok uzun zaman önce duymuş.\n\nVe şimdi, size [seed_presenter.GetCulture.GetPrefix] efsanesinin efsanevi [ROOT.Char.GetTitleAsNameNoTooltip|U]'i olduğunuzu söylemenin büyük zevkini yaşıyorum. Ve [seed_presenter.GetCulture.GetName]'ün herhangi bir gerçek oğlunun kesinlikle benimle aynı fikirde olacağına inanıyorum!""
- legend_events.0020.a: "Evet! Büyükleriniz [ROOT.Char.GetDynasty.GetNameNoTooltip]'dan bahsetmişti!"
- legend_events.0020.b: "[ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip], [seed_presenter.GetCulture.GetPrefixNoTooltip] masalın konusudur."
- legend_events.0020.c: "[ROOT.Char.GetCulture.GetPrefixNoTooltip] hükümdarı, [seed_presenter.GetCulture.GetCollectiveNounNoTooltip] köylülerinin ne hakkında konuştuğunu umursamaz."
-  
- legend_seed_ghw.tt: "$trait_crusader_king$ [legend_seed|E] kazanır"
- gain_heroic_legend_seed.tt: "Bir Kahramanlık [legend_seed|E] kazanırsınız"
- gain_holy_legend_seed.tt: "Kutsal [legend_seed|E] kazanırsınız"
- gain_legitimizing_legend_seed.tt: "Meşrulaştırma [legend_seed|E] kazanırsınız"
-  
- legend_events.1000.t: "[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.GetTitledFirstNameNoTooltip]'e,"
- legend_events.1000.desc: "Bu kadar utanç verici bir doğaya sahip olmak! Çok aldatıcı! Efsanemi tanıtman için sana altın teklif ettim ve sen de hasta bir köpek gibi onu yere atarak bana karşılığını verdin."
- legend_events.1000.a: "#EMP Ah!#! Al işte."
- legend_events.1000.b: "Eminim ki #EMP çok#! daha ucuzdu."
-  
- legend_spread_notification_title: "Efsane ülkenize yayılıyor!"
- legend_spread_notification_desc: "[spread_legend.GetName], [spread_county.GetName]'e dönüşür"
+﻿l_english: #NT
+ legend_quality_famed: "[legend_famed|E]" #NT
+ legend_quality_illustrious: "[legend_illustrious|E]" #NT
+ legend_quality_mythical: "[legend_mythical|E]" #NT
+ legend_cost_scale_by_era_desc: "[GetPlayer.GetCulture.GetCultureEra.GetNameNoTooltip] Dönemi" #NT
+
+ PROMOTED_LEGEND_EXPENSES: "[promoted_legend|E]" #NT
+ OWNED_LEGEND_EXPENSES: "[owned_legend|E]" #NT
+
+ LEGEND_ALREADY_OWN_LEGEND: "@warning_icon! #X Zaten sahip olduğunuz ve tanıtımını yaptığınız [Legend.GetName]#!" #NT
+ LEGEND_UPGRADE_ALREADY_MAX: "@warning_icon! #X [Legend.GetName] zaten maksimum $legend_quality_mythical$ [legend_quality|E]#!" #NT
+ LEGEND_UPGRADE_NOT_ENOUGH_SPREAD: "@warning_icon! #X [Legend.GetName] şuna yayılmalı: [Legend.GetMaxNumProvinces|V] [baronies|E] #weak (şu anda [Legend.GetCurrentNumProvinces|V])#!#!" #NT
+ LEGEND_ALREADY_PROMOTING_LEGEND: "@warning_icon! #X Zaten [promoting_legend|E] [Legend.GetName]#!'sünüz" #NT
+ LEGEND_NOT_PROMOTING_LEGEND: "@warning_icon! #X Sen değilsin [promoting_legend|E] [Legend.GetName]#!" #NT
+ LEGEND_IS_UNOWNED: "@warning_icon! #X [Legend.GetName] sahibi yok#!" #NT
+ LEGEND_IS_OWNED: "@warning_icon! #X [Legend.GetName] zaten bir sahibi var#!" #NT
+ LEGEND_IS_COMPLETED: "@warning_icon! #X [Legend.GetName] zaten tamamlandı#!" #NT
+ LEGEND_NO_PROTAGONIST: "@warning_icon! #X Hayır [legend_protagonist|E] seçilmedi#!" #NT
+ LEGEND_NOT_SAME_DYNASTY: "@warning_icon! #X [Dynasty.GetName] [dynasty|E]#! üyesi değilsiniz" #NT
+ LEGEND_CAN_NOT_COMPLETE_YET: "@warning_icon! #X [Legend.GetName]'i [DATE.GetTimeToDate] için tamamlayamazsınız #weak ([DATE.GetStringLong])#!#!" #NT
+ LEGEND_COMPLETE_LEGEND: "@alert_icon!#alert_trial Bir [legend|E]'i tamamlamak onu tekrar başlatmayı imkansız hale getirir#![AddLine( Legend.GetOnCompleteDescription )]" #NT
+ legend_ending_decision_tt: "Efsanenizi anmak için bir kronik sipariş etmenizi sağlayan #EMP $commission_legend_artifact_decision$#! [decision|E]'e erişim kazanın." #NT
+ LEGEND_CAN_NOT_PROMOTE: "@warning_icon! #X Zaten [promoting_legend|E] [Legend.GetName]#!'sünüz" #NT
+ legend_already_promoting_legend_tt: "Zaten [promoting_legend|E] [Legend.GetName]'siniz" #NT
+ legend_can_not_promote_tt: "Aşağıdakilerden birine ihtiyacınız var:#!\n@warning_icon! #X [legend.GetOwner.GetName] ile aynı dili paylaşıyorsunuz#!\n@warning_icon! #X [legend.GetName] krallığınıza komşu bir eyalette bulunuyor#!\n@warning_icon! #X Siz ve [legend.GetOwner.GetName] $game_concept_lovers$'sunuz#!\n@warning_icon! #X Siz ve [legend.GetOwner.GetName] #X3'sünüz#X4" #NT
+ legend_no_legend: "Hiçbir [legends|E]'ı tanıtmıyorsunuz" #NT
+ CHARACTER_CANNOT_REACH_LEGEND: "@warning_icon! #X Efsane [realm|e]'inizde değil, ayrıca şu anda efsane yayılım alanında da bulunmuyorsunuz#!" #NT
+
+ LEGEND_PROMOTER_MODIFIERS: "[legend_promoter|E] Değiştiriciler" #NT
+
+ LEGEND_PROVINCE_MODIFIERS_SUBTEXT: "#S $PROVINCE_MODIFIERS$#!\n[Legend.GetImpactModifiers( 'il' )]" #NT
+ LEGEND_COUNTY_MODIFIERS_SUBTEXT: "#S $COUNTY_MODIFIERS$#!\n[Legend.GetImpactModifiers( 'kontluk' )]" #NT
+ OWNER_MODIFIERS_SUBTEXT: "#S $OWNER_MODIFIERS$#!\n[Legend.GetImpactModifiers( 'sahip' )]" #NT
+ LEGEND_PROMOTER_MODIFIERS_SUBTEXT: "#S $LEGEND_PROMOTER_MODIFIERS$#!\n[Legend.GetImpactModifiers( 'promotör' )]" #NT
+
+ LEGEND_OWNER_DESCRIPTION: "Sahibi: [Legend.GetOwner.GetShortUIName|U]" #NT
+ LEGEND_PROMOTING_LEGEND: "Sen [promoting_legend|E] bu [legend|E]" #NT
+ LEGEND_OWNING_LEGEND: "Bunun sahibi sizsiniz [legend|E]" #NT
+ LEGEND_UNOWNED_GRACE_PERIOD: "$DATE$'e kadar bu [legend|E]'ın mülkiyetini alamazsınız" #NT
+
+ game_concept_legend: "Efsane" #NT
+ game_concept_legend_i: "@legend_icon!" #NT
+ game_concept_legend_desc: "$game_concept_legend$, bir Karakterin hayatta başardığı önemli eylemleri temsil eder ve [legend_seeds|E]'den yaratılır.\n\nEfsaneler, [legitimacy|E] elde etmenin güçlü yollarıdır ve [skill|E] artış, [opinion|E] bonus, [dynasty_prestige|E], ☻ gibi diğer olası ödüllerdir. _6 veya [piety|E]. $game_concept_legend$'ın yayıldığı [baronies|E], $game_concept_legend$ sahibi veya [legend_seeds|E]1 tarafından tutuluyorsa ek etkiler de alabilir.\n\n[legend_seeds|E]2, bu ödülleri yöneten bir [legend_seeds|E]3'e sahipse: Bunlar Meşrulaştırıcı, Kutsal veya Kahramanca olabilir . Her $game_concept_legend$'ın aynı zamanda bir [legend_seeds|E]5 seviyesi vardır ve bu, ödüllerin gücünü ve yayılmasını etkiler." #NT
+ game_concept_owned_legend: "Sahip Olunan Efsane" #NT
+ game_concept_owning_legend: "Efsaneye Sahip Olmak" #NT
+ game_concept_owned_legend_desc: "$game_concept_owned_legend$, etkilerinin ana yararlanıcısı olan [ruler|E]'nin sahip olduğu [legend|E]'dir.\n\n$game_concept_legend$'ün sahibi [legend_protagonist|E] olabilir, ancak bu gerekli değildir.\n\nBir $game_concept_legend$, bonuslarının bir kısmını da almak için aylık katkı payı ödeyen [legend_promoters|E] tarafından da desteklenebilir." #NT
+ game_concept_owning_legend_desc: "$game_concept_owned_legend_desc$" #NT
+ game_concept_promoted_legend: "Terfi Edilen Efsane" #NT
+ game_concept_promoted_legend_desc: "$game_concept_promoted_legend$, farklı bir [ruler|E]'ye ait olan ve aynı zamanda bonuslarının bir kısmını almak için aylık katkı payı ödeyen [legend_promoters|E] tarafından desteklenen bir [legend|E]'dir." #NT
+ game_concept_promoting_legend: "Tanıtım" #NT
+ game_concept_promoting_legend_desc: "$game_concept_promoting_legend$" #NT
+ game_concept_legend_promoter: "Efsane Promotör" #NT
+ game_concept_legend_promoter_desc: "$game_concept_legend_promoter$, başka bir hükümdarın [legend|E]'sini destekleyen bir [ruler|E]'dir.\n\nBir $game_concept_legend_promoter$, aylık [gold|E] katkı karşılığında, $game_concept_legend$'nın [legend_type|E] ve [legend_quality|E]'ine bağlı olarak değişen ekstra bonuslar alır." #NT
+ game_concept_legend_promoters: "Efsane Promotörler" #NT
+ game_concept_legend_promoters_desc: "$game_concept_legend_promoter_desc$" #NT
+ game_concept_legends: "Efsaneler" #NT
+ game_concept_legends_desc: "$game_concept_legend_desc$" #NT
+ game_concept_legend_seed: "Efsane Tohum" #NT
+   #AGOT Modified  #NT
+ #game_concept_legend_seed_desc: "Yapım aşamasında bir [legend|E]. $game_concept_legend_seeds$'ler bir $game_concept_legend$'nin temelidir ve bunları kurarak bir [ruler|E] bir $game_concept_legend$ başlatabilir.\n\n$game_concept_legend_seeds$, Charlemagne'nin varisi olmak veya efsanevi işler yapmak gibi bazı kriterleri yerine getirerek kazanılabilir: Majör [decisions|E], [great_holy_war|E] kazanmak, [king|E] veya [emperor|E] olmak, Büyük $game_concept_legend_seeds$0 düzenlemek, efsanevi bir hayvan avlamak, vb.\n\nEtkin olmayan $game_concept_legend_seeds$'lerin maliyeti yoktur, ancak hiçbir etkisi yoktur. İlk kez bir $game_concept_legend_seeds$2 kurmanın maliyeti $game_concept_legend_seeds$3'tür." #NT
+ game_concept_legend_seed_desc: "Yapım aşamasında bir [legend|E]. $game_concept_legend_seeds$'ler bir $game_concept_legend$'nin temelidir ve bunları kurarak bir [ruler|E] bir $game_concept_legend$ başlatabilir.\n\n$game_concept_legend_seeds$ bazı kriterleri yerine getirerek veya efsanevi işler yaparak kazanılabilir: Majör [decisions|E], [king|E] veya [emperor|E] olmak, Büyük [activity|E] düzenlemek, efsanevi bir hayvan avlamak, vb.\n\nEtkin olmayan $game_concept_legend_seeds$'lerin maliyeti yoktur, ancak hiçbir etkisi yoktur. İlk kez bir $game_concept_legend_seeds$1 kurmanın maliyeti $game_concept_legend_seeds$2'dir." #NT
+ game_concept_legend_seeds: "Efsane Tohumlar" #NT
+ game_concept_legend_seeds_desc: "$game_concept_legend_seed_desc$" #NT
+ game_concept_legend_quality: "Efsane Kalite" #NT
+ game_concept_legend_quality_desc: "Bir [legend|E]'ın Kalitesi hem etkilerinin gücünü hem de yayılma alanını belirler ve ayrıca nihai ödüllerini etkiler. $game_concept_legends$, Ünlü, Şanlı veya Efsanevi olabilir; çünkü ortak bir $game_concept_legend$ diye bir şey yoktur.\n\nKalite, Efsaneyi daha fazla [baronies|E]'e yayarak ve bir yükseltme maliyeti ödeyerek artırılabilir.\n\nBir $game_concept_legend$'nin sahibi öldüğünde, ailesi Kalitesinde herhangi bir hasar olmadan onu devam ettirebilir." #NT
+ game_concept_legend_famed: "Ünlü" #NT
+ game_concept_legend_famed_desc: "$game_concept_legend_quality_desc$" #NT
+ game_concept_legend_illustrious: "Şanlı" #NT
+ game_concept_legend_illustrious_desc: "$game_concept_legend_quality_desc$" #NT
+ game_concept_legend_mythical: "Efsanevi" #NT
+ game_concept_legend_mythical_desc: "$game_concept_legend_quality_desc$" #NT
+ game_concept_legend_protagonist: "Efsane Kahraman" #NT
+ game_concept_legend_protagonist_desc: "$game_concept_legend_protagonist$, eylemleri orada açıklanan bir [legend|E]'in ana karakteridir. Bir $game_concept_legend$'nin sahibi de onun $game_concept_legend_protagonist$'ı olabilir, ancak ailesinin herhangi bir üyesi de olabilir - ölü veya diri, 16 yaşında oldukları sürece.\n\n$game_concept_legend_protagonists$'ler kendileri doğrudan ekstra bonuslar alamaz, ancak $game_concept_legend$ hakkındaki içerik onlara odaklanacaktır. Ancak, sahip oldukları [virtuous|E] [legend|E]0 sayısına bağlı olarak Efsane Sahibine #color_white ek#! [legitimacy|E] verecektir.\n\n$game_concept_legend_protagonist$ bir yetişkin olmalıdır, çünkü bir bebeğin bir ejderhayı öldürdüğünü söylemek tartışmalı olabilir." #NT
+ game_concept_legend_protagonists: "Efsane Kahramanlar" #NT
+ game_concept_legend_protagonists_desc: "$game_concept_legend_protagonist_desc$" #NT
+ game_concept_legend_type: "Efsane Türü" #NT
+ game_concept_legend_types: "Efsane Türleri" #NT
+ game_concept_legend_types_desc: "$game_concept_legend_type_desc$" #NT
+ game_concept_legend_type_desc: "[legend|E], sağlayacağı etkilerin kategorisini ve içeriğinin temasını etkileyen bir Türe sahiptir.\n\n$game_concept_legend_types$'ler Meşrulaştırıcı, Kahramanca ve Kutsal'dır ve sırasıyla [legitimacy|E], [prestige|E] ve [piety|E] sağlar." #NT
+ game_concept_legend_heroic: "Kahramanca Efsane" #NT
+ game_concept_legend_heroic_desc: "$game_concept_legend_type_desc$" #NT
+ game_concept_legend_holy: "Kutsal Efsane" #NT
+ game_concept_legend_holy_desc: "$game_concept_legend_type_desc$" #NT
+ game_concept_legend_legitimizing: "Efsaneyi Meşrulaştırmak" #NT
+ game_concept_legend_legitimizing_desc: "$game_concept_legend_type_desc$" #NT
+ game_concept_legend_library: "Efsane Kütüphanesi" #NT
+ game_concept_legend_library_i: "@legend_icon!" #NT
+ game_concept_legend_library_desc: "Oluşturduğunuz veya aktif olarak tanıtımını yaptığınız [domain|E]'nize yayılan [legend_library|E] tamamlanmış [legends|E] muhafazaları.\nEfsanenin yayılma alanında seyahat ediyorsanız tamamlanmış [legends|E]'i de aktif olarak ekleyebilirsiniz.\n\nKaldırabilirsiniz Dilediğiniz zaman kütüphanenizden [legends|E]." #NT
+
+ game_concept_ancestral_claim: "Atasal İddia" #NT
+ game_concept_ancestral_claim_desc: "Atasal İddia [casus_belli|E], Meşrulaştırma [legend|E] yoluyla elde ettiğiniz bir iddiaya sahip olduğunuz bir unvandaki tüm toprakları ilhak etmenize olanak tanır." #NT
+
+ legend_heroic: "Kahramanca Efsane" #NT
+ legend_heroic_name: "[ROOT.Legend.GetOwner.GetNameNoTooltip] Efsanesi" #NT
+ legend_heroic_desc: "[ROOT.Legend.GetOwner.GetTitledFirstNameNoTooltip], [ROOT.Legend.GetOwner.GetHerHis] kahramanlıklarıyla ünlüdür." #NT
+ legend_legitimizing: "Efsaneyi Meşrulaştırmak" #NT
+ legend_legitimizing_name: "[ROOT.Legend.GetOwner.GetNameNoTooltip]'ın Soyağacı" #NT
+ legend_legitimizing_desc: "[ROOT.Legend.GetOwner.GetDynasty.GetBaseNameNoTooltip] hanedanının soyu yüzyıllardır bu topraklara hükmediyor." #NT
+ legend_holy: "Kutsal Efsane" #NT
+ legend_holy_name: "[ROOT.Legend.GetOwner.GetNameNoTooltip] Mucizeleri" #NT
+ legend_holy_desc: "[ROOT.Legend.GetOwner.GetTitledFirstNameNoTooltip]'ın gösterdiği kutsallık her [ROOT.Char.GetFaith.HighGodName] takipçisi tarafından takdir edilmektedir." #NT
+
+ legend_king_arthur: "Arthur Pendragon'un Mirası" #NT
+ legend_king_arthur_desc: "Bir zamanların ve geleceğin kralı bu hanedanın kanıyla yaşamaya devam ediyor." #NT
+ legend_carolingian: "Şarlman'ın Varisleri" #NT
+ legend_carolingian_desc: "İmparatorluk soyundan geldiklerini iddia eden bu hanedandan önce, büyük kral Şarlman bu topraklara hükmetmişti." #NT
+ legend_holy_warrior: "Kutsal Yumruk" #NT
+ legend_holy_warrior_desc: "Büyük bir kutsal savaşçı olan bu kahraman, inancı uğruna yiğitçe savaştı." #NT
+ legend_chapter_opening_holy_warrior: "[religion.GetNameNoTooltip]'ın büyük savaşçısı olan [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip]'in efsanesi uğurlu bir doğumla başlar. [ROOT.Legend.GetProtagonist.GetSheHe] çok erken bir yaştan itibaren [ROOT.Legend.GetProtagonist.GetFaith.HighGodName]'ün çağrısını hissetti." #NT
+ legend_el_cid: "El Cid Şarkısı" #NT
+ legend_el_cid_desc: "Rodrigo Díaz de Vivar bir zamanlar itibarsızlaştırılmış bir soyluydu, şimdi ise kendi krallığına bürünmüş durumda." #NT
+ legend_alfred_of_wessex: "Kutsal Kral" #NT
+ legend_alfred_of_wessex_desc: "[ancestor.GetNameNoTooltip|U] Kuzeylilerin İngiltere'deki istilalarına karşı koydu ve Hristiyanlık için bir kale ve misyonerlik görevi gördü." #NT
+ legend_sons_of_david: "Davut'un varisleri" #NT
+ legend_sons_of_david_desc: "İsrail Kralı Davut, Tanrı tarafından atanmıştı ve kanı her [GetDynastyHouseByID('house_bagrationi').GetNameNoTooltip]'ın damarlarında akıyordu." #NT
+ legend_peasant_emperor: "Köylüden Basileus'a" #NT
+ legend_peasant_emperor_desc: "Basileus, çiftçi bir ailenin çocuğu olarak dünyaya geldi ve kızıyla evlenip Basileus'un rütbesine yükselmeden önce İmparator'un hizmetine girdi." #NT
+ legend_the_wheelwright: "Bolluk Mahzeni" #NT
+ legend_the_wheelwright_desc: "Oğlunun yedinci doğum gününde, Tekerlekçi Piast'ı iki yabancı ziyaret etti. Misafirperverliğine teşekkür olarak, yabancılar Piast mahzenini sonsuza dek dolduran bir büyü yaptılar." #NT
+ legend_vercingetorix: "Vercingetorix'in varisleri" #NT
+ legend_vercingetorix_desc: "Vercingetorix bir zamanlar Galyalı kabileleri Roma istilasına karşı bir isyanda birleştirmişti. Sezar'ın elinden düşse de, Kelt ruhu kanımızda yaşamaya devam ediyor." #NT
+ legend_saman_khudah: "Bahram Çobin'in soyundan gelen" #NT
+ legend_saman_khudah_desc: "General, fatih ve gaspçı Bahram Chobin, Sasani tahtını kendisine aldı ve onun kahraman kanı damarlarımızda akıyor." #NT
+ legend_bahram_gur: "Gur Soyu" #NT
+ legend_bahram_gur_desc: "Bahram Gur, sayısız istilacıyla savaşan ve onlara direnen büyük bir savaşçı kraldı. Kanı damarlarımızda akıyor ve bizi Pers kahramanları yapıyor." #NT
+ bahram_gur: "Bahram Gür" #NT
+ legend_cadell: "Cadell'in Kanı" #NT
+ legend_cadell_desc: "Cadell, hayatına bir köle çocuğu olarak başladı ve kendisine bahşedilen bir azizin kutsamasıyla, Powys krallığını Vortigern'den zorla aldı." #NT
+ legend_descendants_of_brahman: "Brahman'ın Kanı" #NT
+ legend_descendants_of_brahman_desc: "Biz Tanrıların oğulları ve kızlarıyız. Brahman, Vishnu, kanımız zamanın başlangıcına kadar izlenebilir." #NT
+ legend_gothic_kings: "Gotik Krallar" #NT
+ legend_gothic_kings_desc: "Gotlar Roma'nın yıkılmasına neden oldular ve Krallığımızı kurdular. Biz onların varisleriyız, Gotların Kralları ve Kraliçeleriyiz." #NT
+ legend_sons_of_rurik: "Rurik'in oğulları" #NT
+ legend_sons_of_rurik_desc: "Varangian Prensi Rurik maceraperest ordusunu doğuya götürdü ve büyük Novgorod Krallığı'nı kurdu. Damarlarımızda akan onun efsanevi kanıdır." #NT
+ legend_william_gellones: "Portakal Ödülü" #NT
+ legend_william_gellones_desc: "Orange'da İslam ordularını yenen Guillaume Gellones, Hristiyanlık için savaşan bir savaşçıydı ve daha sonra rahiplikten emekli olup emekli olacağı Gellone'deki manastırı kurdu." #NT
+ legend_edward_the_martyr: "Şehit Edward" #NT
+ legend_edward_the_martyr_desc: "Şerefsizce öldürülen ve gömülen Şehit Edward'ın bedeninin bir yıl sonra bozulmamış olduğu ortaya çıktı. Kendi ölümünü Mesih'e olan derin sevgisinden dolayı kucakladığı söylenir." #NT
+ legend_yazdagird_iii: "[ancestor.GetFirstNameNoTooltip] III'ün Kanı" #NT
+ legend_yazdagird_iii_desc: "Son Sasani şahının kanı damarlarımızda akıyor. [ancestor.GetSheHe] her taraftan Türkler, Hazarlar ve Arap istilacıları tarafından kuşatılmış olsa da, [ancestor.GetSheHe] son nefesine kadar Pers'e sadık kaldı." #NT
+ legend_afrasiyab: "Turan Kralı: Afrasiyab" #NT
+ legend_afrasiyab_desc: "Turan'ın muhteşem kralı ve Türklerin kahramanı Afrasiyab, Pers İmparatorluğu'nun düşmanı ve tüm Turan krallarının en büyüğüydü. Büyülü kanı damarlarımızda akıyor ve bize Turan'ı bir kez daha yönetme hakkını ilahi olarak veriyor." #NT
+ legend_sceafa: "Nuh'un Torunu Sceafa" #NT
+ legend_sceafa_desc: "Antik Lombardiya kralı Sceafa, çocukluğunda denizden sürünerek çıktı ve İngiltere'yi yönetmeye devam etti. Onun Nuh'un torunu olduğunu biliyoruz ve ilahi kanımızı ondan alıyoruz." #NT
+ legend_new_troy_london: "Yeni Truva" #NT
+ legend_new_troy_london_desc: "Truva'dan sürülen Brutus, Diana tarafından Albion'a götürüldü. Ülkeyi işgal eden büyük devleri yendikten sonra, şu anda Londra olarak bildiğimiz Troia Nova kasabasını kurdu." #NT
+ legend_corineus: "Corineus'un Baladı" #NT
+ legend_corineus_desc: "Antik Truva savaşçısı Corineus, Cornwall'un ilk kurucusuydu. Britannia'ya geldi ve bölgeyi işgal eden devleri öldürdü ve buraya Cornwall adını verdi." #NT
+ legend_scota: "Scota'nın oğulları" #NT
+ legend_scota_desc: "Ülkemize "İskoçya" adını, büyük bir Mısır Firavunu'nun kızı olan Scota'dan alırız. O, tüm İskoçların annesidir ve damarlarımızda akan kan, kadim Firavunların kanıdır." #NT
+ legend_pyusawhti: "Ejderha Tanrıçası'nın Varisleri" #NT
+ legend_pyusawhti_desc: "Bir ejderha tanrıçasının rahminden doğan ve Mahasammata'dan gelen bizler, soyumuzda taşınan en kutsal ve en güçlü kana sahibiz." #NT
+ legend_tosny: "Kuğu Şövalyesi" #NT
+ legend_tosny_desc: "Kudretli Roger de Tosny, Kuğu Şövalyesi'nin soyundan geliyordu ve efsanesini onurlandırmak için bugün bile Kuğu Rozeti'ni takıyoruz." #NT
+ legend_menelik_i: "Davut'un oğulları" #NT
+ legend_menelik_i_desc: "Hanedanımızın kurucusu I. Menelik, İsrail Kralı Süleyman ile Saba Kraliçesi arasındaki aşkın ürünüydü." #NT
+ legend_kings_of_semien: "Semien Kralları" #NT
+ legend_kings_of_semien_desc: "Beta İsrail, Hristiyanlaşmaya hararetle direnmeye devam eden efsanevi Yahudi krallığıdır. Rehoboam ve Jeroboam güçleri arasındaki iç savaş sırasında İsrail'den kaçan Dan Kabilesi'nden geliyoruz." #NT
+ legend_roman_heritage: "Roma Mirası" #NT
+ legend_roman_heritage_desc: "Ailemiz yalnızca modern Roma İmparatorluğu'nu yönetmiyor, aynı zamanda Cumhuriyet döneminden beri Roma'nın etkili saray mensupları arasında yer alıyor." #NT
+ legend_hunnic_heritage: "Hun Mirası" #NT
+ legend_hunnic_heritage_desc: "Halkımızın kökeni Hun ailelerine kadar uzanır ve hanedanlığımızın kurucusu aslında Roma'yı dize getiren vahşi Attila'dır." #NT
+ legend_premysl: "Çiftçi Přemysl" #NT
+ legend_premysl_desc: "Atamız hayatına Stadice köyünde sıradan bir köylü olarak başladı, ancak kısa sürede Libuše'nin dikkatini çekti ve onunla evlenerek Çek Prensi oldu." #NT
+ legend_borjigin: "Parıldayan Ziyaretçi" #NT
+ legend_borjigin_desc: "Tüm [GetDynastyByID('11100').GetNameNoTooltip]'ların annesi Alan Gua, her gün ve gece garip, ışıldayan bir figür tarafından ziyaret ediliyordu. Büyük sarı bir köpek gibi, geceleri ay ışınları ve gündüzleri güneş ışınları aracılığıyla onun yurduna sürünerek girdi ve ona üç oğul verdi. İlahi olarak tasarlanmış oğullarını, beş ok demeti gibi birbirine yapışmaları gerektiği ya da beş tek ok gibi kırılmaları gerektiği konusunda uyardı." #NT
+ legend_naga_descent: "Naga'nın Kanı" #NT
+ legend_naga_descent_desc: "Naga, Patala'da yaşayan kutsal yarı insan yarı yılan yaratıklardır ve ara sıra tam insan olarak dünyamıza geçebilirler. Ailemizin soyağacını bir zamanlar Keşmir'i ziyaret eden ve bir insanla yatan bir Naga'ya kadar takip edebiliriz." #NT
+ legend_hieros_gamos_skirnismal: "Hieros Gamos" #NT
+ legend_hieros_gamos_skirnismal_desc: "Yngling hanedanının kurucusu Fjolnir, Freyr'e ​​olan aşkından Gerðr'in soyundan doğmuştur. Norveç'i yönetmek için gerekli olan ilahi kana Fjolnir'in soyundan başka kim sahip olabilirdi?" #NT
+ legend_shibi_chakravarti: "Shibi Çakravarti" #NT
+ legend_shibi_chakravarti_desc: "Alçakgönüllülük ve dindarlığın bir örneği olan kahraman Kral Shibi, bir kuşa dönüşen bilge Agni'yi korumakla görevlendirildi. Bir uçurtma güvercini kurtarmak için kendi etini feda etmesini istediğinde, Shibi tüm benliğini gönüllü olarak verdi, ancak bağışlandı ve oğlu Kapotaroma ile ödüllendirildi. Her [GetDynastyByID('1043008').GetNameNoTooltip]'ın damarlarında akan şey bu özverili kralın kanıdır." #NT
+ legend_the_red_hand: "Ulster'in Kızıl Eli" #NT
+ legend_the_red_hand_desc: "İrlanda'nın ilk zamanlarında, Ulster'a ilk elini koyan kişiye bu topraklar üzerinde hak iddia edileceği ve İrlanda'nın Yüksek Kralı yapılacağına dair bir söz verildiği söylenir. Kendi elini kesip Ulster'a fırlatma ve zümrüt yeşili çimenleri kanıyla lekeleme zekasına sahip olan atamızdı." #NT
+ legend_ragnarr: "$nick_lodbrok$'ın oğulları" #NT
+ legend_ragnarr_desc: "Danimarkalıların kralı ve kudretli bir ejderhanın katili olan [ancestor.GetFirstNameNoTooltip], Hıristiyanlar için bir dehşet ve efsanevi bir maceracıydı. [ancestor.GetHerHis|U] Hayatımda sayamayacağım kadar çok büyük iş var ve [ancestor.GetHerHis] içimde akan kanla, mirasımı talep etmem ve kendime ait efsanevi bir hikaye yaratmam [ancestor.GetHerHis] en doğrusu!" #NT
+ legend_holy_site: "$legend_saintly_location_name$" #NT
+ legend_holy_site_desc: "$legend_saintly_location_desc$" #NT
+ legend_saintly_location_name: "[ROOT.Char.CustomFixedRandom('GetCustodianSynonym')|U] [protagonist.GetFaith.GetAdjectiveNoTooltip] Kutsal Site" #NT
+ legend_saintly_location_desc: "Kutsal bir mekanı [faith.GetNameNoTooltip]'a kadar tutmak başlı başına bir kutsallık işaretidir." #NT
+ legend_chapter_opening_saintly_location: "[location.GetNameNoTooltip] toprağı en yüksek dindar değere sahiptir ve toprağından her türlü hastalığı iyileştirebilen mucizevi bir su çıktığı söylenir." #NT
+ legend_chapter_motivation_religious: "[ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] bunu duyduğunda, [ROOT.Legend.GetProtagonist.GetSheHe] kalbinde büyük bir sıcaklık hissetti, [ROOT.Legend.GetProtagonist.GetHerHis] çünkü [ROOT.Legend.GetProtagonist.GetHerHis] bağlılık o kadar büyüktü ki, kutsal bir yerin düşüncesi bile [ROOT.Legend.GetProtagonist.GetHerHim]'ün gözlerini yaşartıyordu." #NT
+ legend_saintly_life_name: "[protagonist.GetTitledFirstNameNoTooltip]'in En [ROOT.Char.CustomFixedRandom('GetPiousAdj')|U] Hayatı" #NT
+ legend_saintly_life_desc: "[protagonist.GetTitledFirstNameNoTooltip]'ın yaşadığı adanmış hayat, [protagonist.GetHerHim]'e neredeyse aziz statüsü kazandırdı." #NT
+ legend_chapter_opening_saintly_life: "[ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip], [ROOT.Legend.GetProtagonist.GetFaith.HighGodName]'e karşı en derin sevgiyle doğdu ve tüm [ROOT.Legend.GetProtagonist.GetHerHis] hayatını [ROOT.Legend.GetProtagonist.GetHerHis] inancını onurlandırmaya adadı." #NT
+ holy_seed_toast: "Kutsal [legend_seed|E] Kazanıldı" #NT
+ holy_seed_toast_traits: "[ROOT.Char.CustomFixedRandom('GetSaintlyTrait')] doğanız tanınıyor" #NT
+ legend_saintly_building_name: "[location.GetNameNoTooltip]'in [ROOT.Char.CustomFixedRandom('GetPiousAdj')|U] Yapıcısı" #NT
+ legend_saintly_building_desc: "[ROOT.Char.GetFaith.HouseOfWorshipPlural]'ı inşa etmek özverili bir eylemdir; dindar bir ruhun büyük bir kanıtıdır." #NT
+ legend_ancient_people_name: "[culture.GetNameNoTooltip] [ROOT.Char.CustomFixedRandom('GetDescendantSynonym')|U]" #NT
+ legend_ancient_people_desc: "Bütün halkımızın kanında [culture.GetCollectiveNoun]'dan akan aynı kan akmaktadır." #NT
+ legend_saintly_deed_name: "[ROOT.Char.CustomFixedRandom('GetPiousAdj')|U] [ancestor.GetNameNoTooltip|U]'in Eylemleri" #NT
+ legend_saintly_deed_desc: "[ancestor.GetShortUINamePossessive|U] adına yapılan [religion.GetName] dindar hareketler kesinlikle saygıya değerdir." #NT
+ legend_saintly_descent_name: "[ROOT.Char.CustomFixedRandom('GetDescendantSynonym')|U] / [Localize( ancestor_flag )|U]" #NT
+ legend_saintly_descent_desc: "Damarlarımızda [Localize( ancestor_flag )]'ın kutsal kanı akıyor ve onunla mucizeler yaratacağız." #NT
+ legend_mythical_descent_name: "[Localize( creature )|U] Kan" #NT
+ legend_mythical_descent_desc: "Atalarımdan biri güçlü bir [Localize( creature )]'dı." #NT
+ legend_godly_descent_name: "[Localize( god )|U]'ın Kanı" #NT
+ legend_godly_descent_desc: "[Localize( god )|U] benim atamdır ve damarlarımda akan o kanla harikalar yaratacağım." #NT
+ legend_chronicle_ancestral_glory_desc: "[ancestor.GetName] herkes tarafından saygı duyulan gerçekten büyük bir [ancestor.GetWomanMan]'di." #NT
+ legend_crusader: "[GetTrait('faith_warrior').GetNameNoTooltip( protagonist )] [ancestor.GetTitleAsNameNoTooltip|U]" #NT
+ legend_crusader_desc: "[protagonist.GetName] kutsal toprakları ele geçirerek pek çok büyük ve kutsal işlere imza attı." #NT
+ legend_chronicle_raised_by_animals: "[Localize( beast )|U] Çocuk" #NT
+ legend_chronicle_raised_by_animals_desc: "[protagonist.GetNameNoTooltip|U], [Localize( beast )|U] tarafından büyütüldü ve [protagonist.GetFaith.CreatorNamePossessive|U] yaratılışındaki o zorlu deneyim, [protagonist.GetHerHim]'ü hükmetmek için ilahi bir şekilde donattı." #NT
+ legend_auspicious_birth: "Uğurlu Doğum" #NT
+ legend_auspicious_birth_desc: "[protagonist.GetNameNoTooltip|U], gece gökyüzünün uğurlu yıldızlarla dolu olduğu bir zamanda doğdu; bu, [protagonist.GetSheHe]'in yapacağı büyük işlerin kesin bir işaretiydi." #NT
+ legend_virgin_birth: "Tertemiz Gebelik" #NT
+ legend_virgin_birth_desc: "[protagonist.GetMother.GetNameNoTooltip|U] bir şekilde [protagonist.GetMother.GetHerHis] kocasıyla birlikte olmadan bir çocuk doğurdu. Gerçekten de bu, [protagonist.GetFaith.HighGodName|U] [protagonist.GetFaith.HighGodHerselfHimself]'ün [protagonist.GetMother.GetHerHim]'e bir çocuk armağan ettiğinin bir işaretidir." #NT
+ legend_sacred_birth_name: "[protagonist.GetFirstNamePossessiveNoTooltip|U] [ROOT.Char.CustomFixedRandom('GetPiousAdj')|U] Doğum" #NT
+ legend_sacred_birth_desc: "[protagonist.GetNamePossessiveNoTooltip]'ın doğumunun koşulları mistisizmle örtülüdür; bu, [protagonist.GetSheHe]'in en başından beri [protagonist.GetFaith.HighGodName|U] tarafından kutsanmış olduğunun kesin bir işaretidir." #NT
+ legend_divine_intervention_name: "[Localize( god )|U] tarafından kutsanmış" #NT
+ legend_divine_intervention_desc: "[protagonist.GetNameNoTooltip|U], [protagonist.GetHerHis] uykusunda olan [Localize( god )] ile konuşarak, [protagonist.GetHerHim]'e ilahi bir görev yükledi." #NT
+ legend_fought_devil_name: "[protagonist.GetFaith.DevilName|U] ile Bir Savaş" #NT
+ legend_fought_devil_desc: "Rüyasında [protagonist.GetNameNoTooltip], [protagonist.GetFaith.DevilName] [protagonist.GetFaith.DevilHerselfHimself] ile savaştı; bu, [protagonist.GetSheHe]'ün kötülüğü yenmeye mahkûm olduğuna dair hayırlı bir işarettir." #NT
+ legend_exotic_backstory_name: "[protagonist.GetNamePossessiveNoTooltip|U] Odysseia" #NT
+ legend_exotic_backstory_desc: "[protagonist.GetName] bir zamanlar çok uzaklara, [Localize( location.GetString )]'e kadar gidip geri dönmüştü." #NT
+ pilgrim_legend_name: "Dünyaya Hac Yolcusu" #NT
+ pilgrim_legend_desc: "[ancestor.GetNamePossessive|U] hayatını [ancestor.GetFaith.PositiveAfterLife]'ye giden bitmek bilmeyen yokuş yukarı yolculuğa adadı. Sadece [ancestor.GetFaith.HighGodName|U] kurtuluşa giden kutsal [ancestor.GetFirstNamePossessiveNoTooltip] yolda gerçekleşen tüm eylemleri gerçekten bilir." #NT
+ consecrated_blood_legend: "Kutsal Kan" #NT
+ consecrated_blood_legend_desc: "[founder.GetNamePossessive|U], [dynasty.GetName] ailesinin tüm üyelerinde akar. [founder.GetFaith.HighGodName|U]'ye olan bağlılığımız mutlaktır ve eylemlerimiz yalnızca [founder.GetFaith.HighGodHerHis|U] adına yapılır." #NT
+ dyn_many_crown_legend: "[dynasty.GetNameNoTooltip|U] Egemenlik" #NT
+ dyn_many_crown_legend_desc: "Kaderle veya tasarımla, güç [dynasty.GetName]'ın eline geçiyor. Topraklarımız çok ve işlerimiz büyük ve dünya tahtları üzerindeki hakimiyetimiz önceden belirlenmiş." #NT
+ legend_of_rome_name: "Yeni Bir Sezar" #NT
+ legend_of_israel_name: "İsrail'in Yeni [founder.GetTitleAsNameNoTooltip|U]'ı" #NT
+ legend_of_slavia_name: "Slav İmparatorluğu" #NT
+ legend_of_n_sea_name: "Denizin Hakimiyeti" #NT
+ legend_of_mann_name: "Korsan [founder.GetTitleAsNameNoTooltip|U]" #NT
+ legend_of_genghis_name: "Hanların En Büyüğü" #NT
+ new_title_name: "Yeni Bir [founder.GetTitleAsNameNoTooltip|U]" #NT
+ jewish_priesthood_name: "Gerçekleşen Kehanet" #NT
+ zoroast_priesthood_name: "Alevleri Yeniden Alevlendirmek" #NT
+ priesthood_restoration_name: "Yeni Bir Rahiplik" #NT
+ iberian_ender_name: "[GetTitleByKey('e_spain').GetNameNoTierNoTooltip|U]'ın Kaderi" #NT
+ persian_ender_name: "[GetTitleByKey('e_persia').GetNameNoTierNoTooltip|U]'ın Kaderi" #NT
+ struggle_conclusion_name: "[Localize(struggle.GetString)|U]'ın Sonu" #NT
+ legendary_battle_name: "[location.GetName|U] Savaşı" #NT
+ reformed_faith: "[religion.GetNameNoTooltip|U]'ın Konsolidasyonu" #NT
+ new_faith_legend_name: "[faith.GetNameNoTooltip|U] Muzaffer" #NT
+ khan_beater_name: "Hanların Felaketi" #NT
+ legend_of_rome_desc: "Bir zamanlar uzak bir anıya dönüşen Roma, şimdi yeni bir Sezar'la yeniden yükseliyor ve medeniyeti yeniden yeni bir çağa taşımaya hazır." #NT
+ legend_of_israel_desc: "İsrail, Tanrı'nın seçilmiş halkı için bir krallık, Asurlular, Babilliler ve Romalılar tarafından boyunduruk altına alındı. Vaat Edilen Topraklardan göçümüz halkımızı dünyanın dört bir yanına bir yolculuğa gönderdi, ancak şimdi yeni bir İsrail Krallığı yükseliyor ve Tanrı'nın halkı bir kez daha topraklarında yaşıyor!" #NT
+ legend_of_slavia_desc: "Slav halkları Avrupa'nın her yanına yayılmış durumdalar, ancak şu anda [founder.GetFirstName], tüm Slavların ilk [founder.GetTitleAsNameNoTooltip|U]'i olarak duruyor!" #NT
+ legend_of_n_sea_desc: "Kuzey Denizi Danimarkalıların hakimiyeti altındaydı ve şimdi [founder.GetName]'ın yönetimi altında, dalgaların üzerinde bir imparatorluk yükseliyor." #NT
+ legend_of_mann_desc: "Britanya'nın dalgaları boyunca, denizciler büyük ve korkunç bir korsan [founder.GetTitleAsNameNoTooltip], dehşet verici [founder.GetName]'in hikayelerini anlatırlar. En güçlü savaşçılar bile kıyılarında beliren tekneleri gördüklerinde solgunlaşırlar. Teslim olmak tek seçenek olurdu, eğer [founder.GetTitleAsNameNoTooltip|U] böyle bir şeyi kabul etseydi." #NT
+ legend_of_genghis_desc: "Gökyüzünün altındaki her şey, tüm Hanların en büyüğüne aittir. Moğol halkı tek bir [founder.GetTitleAsNameNoTooltip|U]'ın arkasında birleşmişken, Cengiz Han [founder.GetHerHis] ismini dünya çapında yakıp yıkarken kurtlar uluyor ve kartallar ağlıyor." #NT
+ new_title_desc: "Yeni bir [founder.GetTitleAsNameNoTooltip|U], [founder.GetHerHis]'in hayırsever yönetimi altında refahı getirmek üzere küllerinden doğuyor." #NT
+ jewish_priesthood_desc: "Diasporanın ebedi olduğu düşünülüyordu, ancak [founder.GetName] altında, [faith.GetName] halkını yeni ve daha aydınlık bir çağa taşıyacak yeni bir Yüksek Rahiplik ortaya çıktı." #NT
+ zoroast_priesthood_desc: "Zerdüşt inancı geçmişin büyük Magi'si tarafından yönetiliyordu, ancak tarikat dağılmıştı. Ahuramazda, Anahita ve Mithra'nın lütfuyla [protagonist.GetName] Magi'yi geri getirdi." #NT
+ priesthood_restoration_desc: "[faith.GetName] zamanın acımasız eliyle küle dönüştü. Şimdi, [faith.HighGodName|U]'in lütfuyla, [founder.GetName] rahipliği yeniden inşa ediyor." #NT
+ iberian_ender_desc: "İber asilzadelerinin çekişmesi sona erdi ve [struggle_ender.GetFirstName] kurtarıcısı olarak ortaya çıktı. [struggle_ender.GetTitleAsNameNoTooltip|U] galip geldi." #NT
+ struggle_conclusion_desc: "[Localize(struggle.GetString)|U] nihayet sona eriyor ve [struggle_ender.GetFirstName] bölge için yeni bir çağı başlatacak kahraman olarak ortaya çıkıyor." #NT
+ khan_beater_desc: "Efsanevi 'Cengiz Han', gökyüzünün altındaki her şeyi [loser.GetHerHis] İmparatorluğu'na getirmeye kararlıydı, ancak güçlü [winner.GetTitleAsNameNoTooltip|U], kahraman [winner.GetName] tarafından engellendi!" #NT
+ legendary_battle_desc: "[loser.GetName|U], [winner.GetName]'i yok etmeye çalıştı ve [loser.GetSheHe] gerçekten de değerli bir rakipti. [winner.GetFirstNameNoTooltip]'ün zaferle çıkmasıyla, [winner.GetHerHis]'ün cesaret gösterilerinin sonu gelmeyecek!" #NT
+ reformed_faith_desc: "Organize din eski yolları yok etmek için kurulmuştu, ancak [reformer.GetName]'ın bilge ve dindar rehberliği altında, [faith.GetName] inancı yeni bir çağa getirildi. Efsaneler artık kutsal bir kitapta kodlandı ve yapılandırılmış bir rahip sınıfı kuruldu, [faith.HighGodNamePossessive] yapılacak!" #NT
+ new_faith_legend_desc: "Zayıf ve yozlaşmış kilise, insanlık için [faith.HighGodNamePossessive] iradesinden çok uzaklaşmıştı. [reformer.GetName]'in ilahi liderliği altında, tek gerçek inanç [faith.GetName] doğmuştur." #NT
+
+ legend_chronicle_debug_legend: "#D QA Efsanesi#!" #NT
+ legend_chronicle_debug_legend_desc: "#D QA atalarımızdan kalma ve asil bir meslektir#!" #NT
+ legend_chronicle_beast_slayer: "[Localize( beast )|U] Katili" #NT
+ legend_chronicle_beast_slayer_desc: "[location.GetName]'da [Localize( beast )] öldürüldü" #NT
+ legend_chronicle_holy_war: "Kutsal [location.GetName] Savaşı" #NT
+ legend_chronicle_holy_war_desc: "[location.GetName] [Localize( antagonist )] yenildi" #NT
+
+ legend_chronicle_generic_opening: "$legend_chapter_opening_generic$" #NT
+
+ legend_ruler_loc: "[protagonist.GetFirstNameNoTooltip|U]" #NT
+ legend_ruler_loc_possessive: "[protagonist.GetFirstNamePossessiveNoTooltip|U]" #NT
+ legend_ruler_family_loc: "[protagonist.GetDynastyNameNoTooltip|U]" #NT
+ legend_province_loc: "[protagonist.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip|U]" #NT
+ legend_ruler_title_loc_possessive: "[protagonist.GetTitleAsNameNoTooltip|U]s" #NT
+ legend_ruler_title_loc: "[protagonist.GetPrimaryTitle.GetNameNoTier|U]" #NT
+
+ legend_myth: "$legend_ruler_loc$ Efsanesi" #NT
+ legend_saga: "$legend_ruler_loc$ Destanı" #NT
+ legend_tale: "$legend_ruler_loc$'ın Hikayesi" #NT
+ legend_epic: "$legend_ruler_loc$ Destanı" #NT
+ legend_song: "$legend_ruler_loc$ Şarkısı" #NT
+ legend_story: "$legend_ruler_loc$'ın Hikayesi" #NT
+ legend_nama: "$legend_ruler_loc$nama" #NT
+ legend_chanson: "$legend_ruler_loc_possessive$ Şarkı" #NT
+ legend_cantiga: "$legend_ruler_loc$'ın Cantiga'sı" #NT
+ legend_poem: "$legend_ruler_loc$ Şiiri" #NT
+ legend_gesta: "Gesta $legend_ruler_loc$" #NT
+ legend_deeds: "$legend_ruler_loc$'ın Eylemleri" #NT
+
+ legend_history: "Ailenin Tarihi $legend_ruler_family_loc$" #NT
+ legend_chronicles: "Ailenin Günlükleri $legend_ruler_family_loc$" #NT
+ legend_compendium: "$legend_ruler_family_loc$ Özeti" #NT
+ legend_genealogy: "$legend_ruler_loc$'ın Soyağacı" #NT
+ legend_record: "Aile Kayıtları $legend_ruler_family_loc$" #NT
+ legend_annals: "Ailenin Yıllıkları $legend_ruler_family_loc$" #NT
+ legend_manuscripts: "$legend_ruler_family_loc$ Elyazmaları" #NT
+ legend_ayedawbon: "$legend_ruler_family_loc$ Ayedawbon" #NT
+ legend_vamsavali: "$legend_ruler_family_loc$vamsavali" #NT
+ legend_title_history: "$legend_ruler_title_loc$'in $legend_ruler_title_loc_possessive$'ı" #NT
+ legend_court: "$legend_ruler_loc$ Mahkemesi" #NT
+
+ legend_logia: "$legend_ruler_loc_possessive$ Logia" #NT
+ legend_gospel: "$legend_ruler_loc$ İncili" #NT
+ legend_sayings: "$legend_ruler_loc$'ın sözleri" #NT
+ legend_words: "$legend_ruler_loc$'ın sözleri" #NT
+ legend_scriptures: "$legend_ruler_loc_possessive$ Kutsal Yazılar" #NT
+ legend_sutra: "$legend_ruler_loc$ Sutrası" #NT
+ legend_texts: "$legend_province_loc$ Metinleri" #NT
+ legend_purana: "$legend_province_loc$ Puranası" #NT
+ legend_miracles: "$legend_ruler_loc$ Mucizeleri" #NT
+ legend_wonders: "$legend_ruler_loc$'ın Harikaları" #NT
+ legend_life: "$legend_ruler_loc$'ın Hayatı" #NT
+ legend_prophecies: "$legend_ruler_loc$'ın Kehanetleri" #NT
+ legend_visions: "$legend_ruler_loc$'ın Vizyonları" #NT
+ legend_dialogues: "$legend_ruler_loc$ Diyalogları" #NT
+
+  #Legend seed tooltips  #NT
+ no_pagans_in_britannia_tt: "[GetGeographicalRegion('world_europe_west_britannia').GetName]'te [GetReligionFamily('rf_pagan').GetName] [independent|E] [rulers|E] olmamalıdır" #NT
+ must_own_france_or_hre_tt: "Kişisel olarak [GetTitleByKey('k_france').GetNameNoTier], [GetTitleByKey('e_france').GetNameNoTier] veya [GetTitleByKey('e_hre').GetNameNoTier]'yi elinizde tutmalısınız" #NT
+ must_own_georgia_or_be_georgian_tt: "Ya [GetTitleByKey('k_georgia').GetNameNoTier]'a sahip olmalısınız, ya sermayeniz [GetTitleByKey('k_georgia').GetNameNoTier] olmalı ya da Gürcü kültürüne sahip olmalısınız" #NT
+ persian_or_zoroastrian_tt: "Ya sermayeniz [GetGeographicalRegion('world_middle_east_persia').GetName]'dır, [culture|E]'iniz $heritage_iranian_name$'dir ya da siz [GetReligionByKey('zoroastrianism_religion').GetAdjective]'sünüzdür" #NT
+ theologian_or_high_piety_tt: "Ya [GetTrait('theologian').GetName( GetNullCharacter )] [trait|E]'e sahip olmalısınız ya da en azından $piety_level_3$ [piety_level|E]'e sahip olmalısınız" #NT
+
+  #Legend Properties  #NT
+ ramses: "Ramses" #NT
+ bear: "ayı" #NT
+ dragon: "Ejderha" #NT
+ huge_beast: "büyük canavar" #NT
+ ferocious_beast: "vahşi canavar" #NT
+
+  #Legend Chapters  #NT
+ legend_chapter_opening_generic: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip] efsanesi dünya kadar büyük ve büyüktür, çünkü [ROOT.Legend.GetProtagonist.GetHerHis]'in yaptıkları eşsizdir." #NT
+ legend_chapter_extra_deed_memory: "Ancak [ROOT.Legend.GetProtagonist.GetNameNoTooltip] burada durmadı, [ROOT.Legend.GetProtagonist.GetSheHe] büyük bir cesaretle [ROOT.Legend.MakeScope.Var('extra_deed_memory').CharacterMemory.GetThirdPerspectiveDescription] yoluna devam etti." #NT
+ legend_chapter_motivation_generic: "Ülkeyi saran belirsiz söylentileri duyan [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip], [ROOT.Legend.GetProtagonist.GetHerHis]'in yüreğini bu zorlu çabayı başarmaya adadı." #NT
+ legend_chapter_motivation_evil: "[ROOT.Legend.GetProtagonist.GetHerHim]'ı maceraya iten şey halkın yakarışları ya da toprağı saran çaresizlik değildi, [ROOT.Legend.GetProtagonist.GetHerHis]'in kendi karanlık yüreğinin arzusuydu." #NT
+ legend_chapter_motivation_peasant: "Gözyaşları içindeki, çaresiz, yoksul bir köylü [ROOT.Legend.GetProtagonist.GetHerHim] ile görüşmek istediğinde, dindar [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] onun yalvarışlarını yanıtsız bırakamadı ve hemen bir maceraya atıldı." #NT
+ legend_chapter_motivation_spouse: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip|U] eşi bir sabah [ROOT.Legend.GetProtagonist.GetHerHim]'e endişe verici söylentilerle geldiğinde, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] aceleyle gidip sonsuz aşklarına saygı göstereceğine söz verdi." #NT
+ legend_chapter_motivation_honor_lady: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip|U]'ın gözleri [ROOT.Legend.GetProtagonist.GetHerHis] sevgiliyle buluştuğunda her şey kararlaştırılmıştı. Yardım yakarışlarını dinleyen ve [ROOT.Legend.GetProtagonist.GetHerHis] cesaretinin ne kadar büyük olduğunu kanıtlamak isteyen [ROOT.Legend.GetProtagonist.GetSheHe], bir maceraya atıldı." #NT
+ legend_chapter_discovery_generic: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip], [ROOT.Legend.GetProtagonist.GetHerHis] maiyetiyle [Localize( location )]'i gözetledi ve [ROOT.Legend.GetProtagonist.GetHerHim]'ün tam olarak nerede olduğunu bulması uzun sürmedi." #NT
+ legend_chapter_hunt_generic: "[Localize( beast )] zaten oradaydı, bir dereden içiyordu. Başını kaldırdı ve hızla [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'e doğru ilerledi. Açtı. Ama [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] daha hızlıydı ve ustaca bir vuruşla [ROOT.Legend.GetProtagonist.GetSheHe] canavarı öldürdü." #NT
+ legend_chapter_battle_generic: "Savaş çok şiddetliydi. [ROOT.Legend.GetProtagonist.GetNameNoTooltip], [loser.GetNameNoTooltip] ile sahanın ortasında karşılaştı, [ROOT.Legend.GetProtagonist.GetHerHis]'nin gözleri cesaretle doldu. [ROOT.Legend.GetProtagonist.GetSheHe|U], [ROOT.Legend.GetProtagonist.GetHerHis] silahını kaldırdı ve [ROOT.Legend.GetProtagonist.GetHerHis] düşmanın göğsüne bir darbe indirdi. Kan aktı. Zafer." #NT
+ legend_chapter_conclusion_generic: "Eve dönüş yolculuğu kolay değildi, ancak [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] şehre zafer şarkıları eşliğinde girdi. Ve şimdi hepimiz sevinelim ve ziyafet çekelim, çünkü [ROOT.Legend.GetProtagonist.GetHerHis] efsanesi kutlanacak!" #NT
+ legend_chapter_famous_deed_generic: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip|U] efsanesi muhteşem bir macerayla doruk noktasına ulaşır: [ROOT.Legend.GetProtagonist.GetHerHis] öyle büyük askeri eylemlerdi ki, bütün krallar bundan hayrete düşerdi ve pek çok soylu ve avam [ROOT.Legend.GetProtagonist.GetHerHis] karşılaşmaya gelirdi, çünkü efsaneyi canlı olarak görmek isterlerdi." #NT
+ legend_chapter_extra_deed_generic: "Ancak, hikayenin sonu bu değildi, çünkü [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] eve [ROOT.Legend.GetProtagonist.GetHerHis] dönüş yolunu bulduğunda, [ROOT.Legend.GetProtagonist.GetSheHe] tehlikede olanlara yardım etti ve onların hakaretlerinin intikamını aldı. Haydutlar, canavarlar ve kötü niyetliler [ROOT.Legend.GetProtagonist.GetHerHis] bıçağının öfkesinden saklanamazdı." #NT
+ legend_chapter_opening_debug: "#D Açılış bölümü#!" #NT
+ legend_chapter_motivation_debug: "#D Motivasyon bölümü#!" #NT
+ legend_chapter_discovery_debug: "#D Keşif bölümü#!" #NT
+ legend_chapter_hunt_debug: "#D Hunt bölümü#!" #NT
+ legend_chapter_battle_debug: "#D Savaş bölümü#!" #NT
+ legend_chapter_famous_deed_debug: "#D Ünlü tapu bölümü#!" #NT
+ legend_chapter_extra_deed_debug: "#D Ekstra tapu bölümü#!" #NT
+ legend_chapter_conclusion_debug: "#D Sonuç bölümü#!" #NT
+
+ legend_chapter_motivation_delicious_meats: "[Localize( beast )]'ın vahşi ve tehlikeli olduğu biliniyordu, ancak [ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip|U] amacı inkar edilemezdi. [ROOT.Legend.GetProtagonist.GetSheHe|U] onun etini tatmakta ısrar etti ve [ROOT.Legend.GetProtagonist.GetHerselfHimself]'ü bu rüyayı gerçekleştirmeye yöneltti." #NT
+ legend_chapter_motivation_dead_parent: "[Localize( beast )] gerçekten tehlikeliydi, ama [ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip|U]'in kalbi sağlamdı. [ROOT.Legend.GetProtagonist.GetSheHe|U]'nin hayvana karşı kişisel bir kini vardı, çünkü [ROOT.Legend.GetProtagonist.GetHerHis]'ün ebeveynini öldürdüğü söyleniyordu." #NT
+ legend_chapter_motivation_great_venator: "Bu sırada [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], ülke çapında en büyük avcı olarak ünlenmişti, ancak cesur [ROOT.Legend.GetProtagonist.GetTitleAsNameNoTooltip|U] için bu gerçeğin daha da kanıtlanması gerekiyordu." #NT
+ legend_chapter_motivation_accomplished_hunter: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], bir avcı olarak [ROOT.Legend.GetProtagonist.GetHerHis] değerinde olduğunu kanıtlamaya kararlıydı. [ROOT.Legend.GetProtagonist.GetSheHe|U], güçlü [Localize( beast )] yaklaşırken sonunda [ROOT.Legend.GetProtagonist.GetHerHis] becerisini gösterme şansı yakaladı." #NT
+ legend_chapter_discovery_befriended_cyclops: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] yolda karşılaştığı tüm egzotik ve sıra dışı tiplere dost oldu, hatta büyük ve sinirli bir tepegözle bile arkadaş oldu!" #NT
+ legend_chapter_discovery_cyclops: "[ROOT.Legend.GetProtagonist.GetSheHe] seyahat ederken, [ROOT.Legend.GetProtagonist.GetSheHe] en egzotik ve sıra dışı insanlarla tanıştı ve sonunda kudretli bir Tepegöz'ün varlığını keşfetti!" #NT
+ legend_chapter_discovery_renowned_herbalist: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] olarak bilinen bitki uzmanı, [ROOT.Legend.GetProtagonist.GetSheHe] olarak bilinen kişinin zehirli sarmaşıkların arasından geçerek ölümcül bir bitki korusu keşfetmesiyle daha da ünlendi." #NT
+ legend_chapter_discovery_evil_plants: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessive|U] yolculukları başından itibaren tehlikelerle doluydu. [ROOT.Legend.GetProtagonist.GetSheHe|U] ise zehirli bitkilerden oluşan bir koruluk tarafından saldırıya uğradı, polenleri yakınına gelen herkesi sersemletip sersemletiyordu." #NT
+ legend_chapter_discovery_legendary_archer: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessive|U] yolculuk, [ROOT.Legend.GetProtagonist.GetHerHim]'i üzerinde kendini beğenmiş bir okçunun bulunduğu bir arazi parçasına götürdü ve okçu, iyi [ROOT.Legend.GetProtagonist.GetLadyLord]'yi bir okçuluk yarışmasına davet etti. [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] okçunun okunu kendi [ROOT.Legend.GetProtagonist.GetHerHis] okundan biriyle anında ikiye böldü!" #NT
+ legend_chapter_discovery_archery_contest_won: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessive|U] seyahati [ROOT.Legend.GetProtagonist.GetHerHim]'i üzerinde övünen bir okçunun olduğu bir arazi parçasına götürdü ve okçu iyi [ROOT.Legend.GetProtagonist.GetLadyLord]'yi okçuluk yarışmasına davet etti. Yarışma sertti, ancak sonunda [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] daha gerçekçi bir iniş yaptı." #NT
+ legend_chapter_discovery_bog_stronk: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessive|U] yolu, [ROOT.Legend.GetProtagonist.GetHerHim]'i tehlikeli bir arazide aldı, hatta yer bile [ROOT.Legend.GetProtagonist.GetHerHim]'i yüzeyinin altına çekmeye çalıştı. Sadece [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'ün sahip olduğu muazzam güç [ROOT.Legend.GetProtagonist.GetHerHim]'in kurtulmasına izin verdi." #NT
+ legend_chapter_discovery_bog_struggle: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessive|U] yolu, [ROOT.Legend.GetProtagonist.GetHerHim]'i, yerin bile [ROOT.Legend.GetProtagonist.GetHerHim]'i yüzeyinin altına çekmeye çalıştığı tehlikeli bir araziden geçirdi. Güçlü bir şekilde mücadele ederek, sonunda [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] [ROOT.Legend.GetProtagonist.GetHerselfHimself]'ü hain topraktan kurtardı." #NT
+ legend_chapter_discovery_wildflower_expert: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessive|U] seyahatleri [ROOT.Legend.GetProtagonist.GetHerHim]'i yeni ve egzotik topraklara götürdü, orada bitkiler bile yabancı ve sıra dışıydı. Gerçekten de [ROOT.Legend.GetProtagonist.GetSheHe] daha önce hiç görülmemiş, yapraklı çalılıkların arasında saklanmış bir bitkiye bile rastladı." #NT
+ legend_chapter_discovery_cannibal_scarred: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] çok uzaklara seyahat etti ve hatta açgözlü yamyamların saldırısına uğradı! [ROOT.Legend.GetProtagonist.GetSheHe|U] birçoğunu yendi, [ROOT.Legend.GetProtagonist.GetHerHis] yüzündeki yaralar kalan [ROOT.Legend.GetProtagonist.GetHerHis] gün boyunca verdiği mücadelenin kanıtıydı." #NT
+ legend_chapter_discovery_cannibal_fight: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] çok uzaklara gitti ve hatta açgözlü yamyamların saldırısına uğradı! Mücadele gün batımına kadar sürdü; kahramanımız, kalan yamyamlar kaçarken bitkin düştü." #NT
+ legend_chapter_battle_enemy_commander: "Yakın dövüşün ortasında, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] kendini zavallı düşman komutanından başkasıyla karşı karşıya buldu! Muhteşem bir düellodan sonra, iğrenç köpek [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] tarafından yere serildi, etraflarında savaş dönerken kan [ROOT.Legend.GetProtagonist.GetHerHis] bıçağından aşağı akıyordu." #NT
+ legend_chapter_battle_faked_retreat: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessive|U] taktiksel zekâ savaş ateşinde test edildi, ancak [ROOT.Legend.GetProtagonist.GetSheHe] göreve [ROOT.Legend.GetProtagonist.GetHerselfHimself] eşit olduğunu kanıtladı. Kurnazca bir sahte geri çekilme düşmanı savunmasız bir konuma topladı, ancak cesur kahramanımız bir kez daha ilerleyip onları biçti." #NT
+ legend_chapter_battle_flanking_success: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessive|U] savaş alanında saldırgan ve parlak manevralar bir kez daha sergilendi, [ROOT.Legend.GetProtagonist.GetSheHe] bizzat gök gürültülü bir yan hücuma öncülük etti. Korkak düşman sendeledi ve sonra kaçtı, tek darbe günü getirdi." #NT
+ legend_chapter_battle_ravished_maiden: "Masum birini ölüme terk etmeyen [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], savaşın ortasında sadece kurtarmakla kalmayıp, hatta #EMP tehlikeye giren yakışıklı bir alt tabakadan insanı #! taciz etmek için bile zaman buldu!" #NT
+ legend_chapter_battle_maiden_kiss: "Savaşta yakın dövüşte çaresiz — ama gerçekten çarpıcı — bir köylüyle karşılaşınca, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] onları götürmek için hızla harekete geçti. Kahramanımız, böyle bir yiğitliğe sahip [ROOT.Legend.GetProtagonist.GetWomanMan]'e yakışır şekilde, hemen bir öpücükle ödüllendirildi!" #NT
+ legend_chapter_battle_wounded: "Savaş çok şiddetliydi ve çarpışmalar acımasızdı. [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] bunun sonucunda birçok kalıcı yara aldı; böylesine inanç ve şerefe sahip bir [ROOT.Legend.GetProtagonist.GetWomanMan] için ödenecek küçük bir bedeldi bu!" #NT
+ legend_chapter_battle_reinforcement_arrival: "Savaş doruk noktasına ulaştığında, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] [ROOT.Legend.GetProtagonist.GetHerselfHimself] bir takviye ordusunun başında geldi. Savaş böylece düşman saflarına doğru hücumu yöneten cesur kahramanımızın lehine döndü." #NT
+ legend_chapter_opening_new_faith: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U], [ROOT.Legend.GetProperty( 'religion' ).Religion.GetNameNoTooltip] dini [ROOT.Legend.GetProperty( 'faith' ).Faith.HighGodNamePossessive]'den çok uzaklara düştüğünde doğdu. Vaizler ve [ROOT.Legend.GetProperty( 'faith' ).Faith.PriestNeuterPlural], [ROOT.Legend.GetProperty( 'faith' ).Faith.HouseOfWorshipPlural] çürümüş ve terk edilmiş bir şekilde [ROOT.Legend.GetProperty( 'faith' ).Faith.HighGodHerHis|U] isminde sapkınlığı benimsedi. İnsanlar diğer dinlere yöneldi ve [ROOT.Legend.GetProperty( 'faith' ).Faith.HighGodNamePossessive] rakiplerinin insanların kalplerini fethetmesine yol açtı." #NT
+ legend_chapter_motivation_new_faith: "İmanın zaafını ve yozlaşmışlığını gören [ROOT.Legend.GetProtagonist.GetNameNoTooltip|U], [ROOT.Legend.GetProperty( 'religion' ).Religion.GetNameNoTooltip] için yeni bir vizyonla yola çıktı; [ROOT.Legend.GetProperty( 'faith' ).Faith.PantheonTerm]'nin iradesinden hiçbir sapmaya izin vermeyen, dünyanın her köşesine yayılan güçlü ve birleşik bir iman!" #NT
+ legend_chapter_famous_deed_new_faith: "Sapkınların anlamsız gevezeliklerinden yalnızlık arayan [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip], güvenlik için sadece [ROOT.Legend.GetProperty( 'faith' ).Faith.HealthGodName]'in merhametiyle tüm ülkedeki en yüksek dağların en yükseğine tırmandı. Zirvede bulutlar dağıldı ve [ROOT.Legend.GetProperty( 'faith' ).Faith.PantheonTerm] [ROOT.Legend.GetProtagonist.GetHerHim]'e göründü ve [ROOT.Legend.GetProtagonist.GetHerHim]'e bir vizyon dayadı. Yaşlı bir [ROOT.Legend.GetProperty( 'faith' ).Faith.PriestNeuter]'in iskelet yapısı ölüm döşeğinde yatıyordu, daha yeni ve çok daha genç bir [ROOT.Legend.GetProperty( 'faith' ).Faith.PriestNeuter] seleflerini son yolculuğuna uğurlarken kıskançlıkla hayata tutunuyordu. Bu vizyon şüphesiz [ROOT.Legend.GetProperty( 'faith' ).Faith.PantheonTerm]'nin yeni [ROOT.Legend.GetProperty( 'faith' ).Faith.GetNameNoTooltip] inancını kutsayacağının habercisiydi." #NT
+ legend_chapter_extra_deed_new_faith: "İnsanlık [ROOT.Legend.GetProperty( 'faith' ).Faith.PantheonTerm] için pek çok rakip yarattı ve [ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip] bunların hepsini ortadan kaldırarak, güdeceği geniş bir sürüyü [ROOT.Legend.GetProtagonist.GetHerselfHimself] topladı." #NT
+ legend_chapter_conclusion_new_faith: "[ROOT.Legend.GetProperty( 'faith' ).Faith.PriestNeuterPlural] toplanıp [ROOT.Legend.GetProperty( 'faith' ).Faith.ReligiousText|U] yeniden yazıldığında, [ROOT.Legend.GetProperty( 'religion' ).Religion.GetNameNoTooltip|U] en sonunda [ROOT.Legend.GetProperty( 'faith' ).Faith.PantheonTerm] vizyonunda restore edildi!" #NT
+ legend_chapter_battle_legendary_battle: "$legendary_battle_desc$" #NT
+ legend_chapter_opening_struggle: "[ROOT.Legend.GetProperty( 'struggle' ).GetFlagName]'ın kalbindeki kaotik fırtınada doğan [ROOT.Legend.GetProtagonist.GetNameNoTooltip]'in, [ROOT.Legend.GetProtagonist.GetSheHe]'nin bölgeye barış ve düzen getireceğine dair hiçbir eğilimi yoktu." #NT
+ legend_chapter_motivation_struggle: "Kardeşin kardeşe düşman olduğunu gören — [ROOT.Legend.GetProtagonist.GetFaith.GetAdherentNameNoTooltip]'a karşı [ROOT.Legend.GetProtagonist.GetFaith.GetAdherentNameNoTooltip] — [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] bölgeyi parçalamak isteyen kavgacı aptallara sadece "artık yeter" dedi. [ROOT.Legend.GetProtagonist.GetHerHim] için [ROOT.Legend.GetProtagonist.GetHerHis] insanlarının mücadelelerinin sona ermesi ve [ROOT.Legend.GetProperty( 'struggle' ).GetFlagName]'in kalıntılarından yeni bir geleceğin oluşturulması gerektiği netleşti." #NT
+ legend_chapter_extra_deed_struggle: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'ın başardığı tüm büyüklüğe rağmen, [ROOT.Legend.GetProtagonist.GetHerHis]'in [ROOT.Legend.GetProperty( 'struggle' ).GetFlagName]. [ROOT.Legend.GetProtagonist.GetHerHis|U] sorununu çözme vizyonundan şüphe duyanlar hâlâ vardı. Düşmanlar, hem münazara hem de savaş meydanlarında kısa sürede yenildi, ta ki hepsi [ROOT.Legend.GetProtagonist.GetHerHis] ayağının dibine kapanıp [ROOT.Legend.GetProtagonist.GetHerHis] merhamet dilenene kadar." #NT
+ legend_chapter_conclusion_ended_struggle: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] dünyanın kurallarının yanlış olduğunu gördü, ancak [ROOT.Legend.GetProtagonist.GetHerHis]'in çabaları nedeniyle sözde [ROOT.Legend.GetProperty( 'struggle' ).GetFlagName] sona erdi ve bölge bir daha asla aynı olmayacak. [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], [ROOT.Legend.GetProtagonist.GetTitleAsNameNoTooltip|U]'ün diğerlerinin hepsine galip gelmesiyle ortaya çıkıyor." #NT
+ legend_chapter_opening_priesthood_restoration: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U], [ROOT.Legend.GetProperty( 'faith' ).Faith.GetAdjectiveNoTooltip] sadıklarının umutsuz bir şekilde dünyanın dört bir yanına dağıldığı bir zamanda bu dünyaya geldi. [ROOT.Legend.GetProtagonist.GetHerHis] zihninde yaratılışın üzerinde yükselen her şeye kadir bir [ROOT.Legend.GetProperty( 'faith' ).Faith.HouseOfWorship] vizyonuyla, [ROOT.Legend.GetProtagonist.GetSheHe], [ROOT.Legend.GetProtagonist.GetSheHe]'ün [ROOT.Legend.GetProperty( 'faith' ).Faith.HighGodName]'dan itibaren tüm [ROOT.Legend.GetProperty( 'faith' ).Faith.GetAdherentNamePluralNoTooltip]'yi birleştirmek için kutsal bir görevle görevlendirildiğini biliyordu." #NT
+ legend_chapter_famous_deed_religious: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], [ROOT.Legend.GetProtagonist.GetHerselfHimself]'i [ROOT.Legend.GetProperty( 'faith' ).Faith.HighGodName]'ye adadı ve tamamen [ROOT.Legend.GetProperty( 'faith' ).Faith.HighGodHerHis|U]'ün isteği doğrultusunda hareket etti. Her [ROOT.Legend.GetProperty( 'faith' ).Faith.GetReligion.GetAdherentNameNoTooltip|U], dudaklarında "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]" ismiyle topraklarda dolaşıp, [ROOT.Legend.GetProtagonist.GetHerHis] ismiyle sayısız kutsal olayın hikayelerini anlattı." #NT
+ legend_chapter_extra_deed_religious: "Ancak hikaye burada bitmemişti, çünkü sadıklar hala haydutlar ve kötü niyetli kişiler tarafından taciz ediliyor ve sapkınlar tarafından köleleştiriliyordu! [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], tiranlık altında yaşayanların [ROOT.Legend.GetProperty( 'faith' ).Faith.HighGodName|U]'in kucağına yükselmelerine yardımcı oldu ve [ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName] ve [ROOT.Legend.GetProperty( 'faith' ).Faith.DevilHerHis]'ün uşaklarına karşı zafer kazandı." #NT
+ legend_chapter_conclusion_priesthood_restored: "Rahipler toplandı ve diaspora sona erdi. [ROOT.Legend.GetProperty( 'faith' ).Faith.GetAdherentNamePluralNoTooltip] bir daha asla liderlik olmadan rüzgara atılmayacak, çünkü [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] yeni bir [ROOT.Legend.GetProperty( 'faith' ).Faith.ReligiousHeadName]'yi başlatıyor." #NT
+ legend_chronicle_opening_exotic_backstory: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], [ROOT.Legend.GetProperty( 'location' ).GetFlagName]'in uzak mistik diyarından bir görev için geldi. [ROOT.Legend.GetProtagonist.GetSheHe|U], [ROOT.Legend.GetProtagonist.GetHerHis] kendi halkı arasında bir kahramandı, ama şimdi [ROOT.Legend.GetProtagonist.GetSheHe], uçsuz bucaksız ve sonsuz dünyanın bizim küçük köşemize iyilik [ROOT.Legend.GetProtagonist.GetHerHis] bahşetmeyi teklif ediyor." #NT
+ legend_chronicle_motivation_exotic_backstory: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] yeni [ROOT.Legend.GetProtagonist.GetHerHis] evini gördü ve ağladı, çünkü teknolojileri ve kültürü [ROOT.Legend.GetProtagonist.GetSheHe]'nin [ROOT.Legend.GetProperty( 'location' ).GetFlagName]'te alıştığı harikalarla karşılaştırıldığında çok ilkeldi. Yapılacak iş açıktı: [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] vatanın aydınlanmasını yaratılışın bu köşesine yaymalıydı." #NT
+ legend_chronicle_conclusion_exotic_backstory: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] geldiğinden beri çok şey değişmişti. Bir zamanlar köylüler sefalet içinde yuvarlanırken ve barbarlar toprağı kuruturken, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] medeniyetin ışığını yaymıştı. [ROOT.Legend.GetProtagonist.GetHerHis] yolunda birçok kaya olmasına rağmen, hepsini yeni bir [ROOT.Legend.GetProperty( 'location' ).GetFlagName] inşa etmek için topladı. Tüm diyarda, bebeklere [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'ın adı verilir ve kitleler büyük şehirlerini inşa eden [ROOT.Legend.GetProperty( 'location' ).GetFlagName]'ten gelen yabancı için minnettar koro halinde şarkı söyler." #NT
+
+ legend_chronicle_divine_intervention_motivation: "[Localize( god )|U], rüya düzleminde [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] ile konuştu ve [ROOT.Legend.GetProtagonist.GetHerHim]'yi kutsal bir görevle görevlendirdi. O zamandan beri, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] dua ediyor ve [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm]'ten gelen bu görevin gerçek doğasına dair bir işaret için toprakları arıyor." #NT
+ legend_chapter_famous_deed_divine_intervention: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], [ROOT.Legend.GetProtagonist.GetHerselfHimself]'i [Localize( god )]'ye adadı ve tamamen [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm]'ün iradesi dışında hareket etti. Dua ederek geçirilen uzun günler ve uzun gecelerden sonra, sonunda [ROOT.Legend.GetProtagonist.GetHerHis] misyonunun gerçek doğası [ROOT.Legend.GetProtagonist.GetHerHim]'e açıklandı!" #NT
+ legend_chapter_extra_deed_divine_intervention: "Topraklar, sadıklara zarar vermek isteyen tanrısız haydutlarla doluydu, ancak [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] ve [ROOT.Legend.GetProtagonist.GetHerHis] takipçi grubuyla, [ROOT.Legend.GetProtagonist.GetFaith.DevilName|U]'nin bu hizmetkarları ait oldukları yere, [ROOT.Legend.GetProtagonist.GetFaith.NegativeAfterLife|U] geri kovalandılar ve insanlar özgürdü. [Localize( god )|U], [ROOT.Legend.GetProtagonist.GetSheHe]'nın yaptığı iyilik için [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'a gülümsedi ve [ROOT.Legend.GetProtagonist.GetHerHis] kutsal görev neredeyse doruk noktasına ulaşmıştı." #NT
+ legend_chapter_conclusion_divine_intervention: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U] adil ve dindar bir şekilde hükmetti, [Localize( god )] ise [ROOT.Legend.GetProtagonist.GetHerHis]'nin rehberliğinde. İlahi plan yerine getirildi, [ROOT.Legend.GetProtagonist.GetSheHe] büyük bir onur ve dindarlık hayatı yaşadı." #NT
+ legend_chapter_opening_ancestral_glory: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U], [ROOT.Legend.Custom('GetAncestorNamePossessiveNoTooltip')]'in kendi kan ve can havuzundan doğdu. Bu büyük soyun doğal gücüyle, [ROOT.Legend.GetProtagonist.GetSheHe]'nin büyük şeyler başaracağından hiç şüphe var mıydı?" #NT
+ legend_chapter_motivation_ancestral_glory: "[ROOT.Legend.GetProtagonist.GetHerHis]'ın aklında hiç şüphe yoktu; [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip], [ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip]'nin tamamını [ROOT.Legend.GetProtagonist.GetHerHis] kuralı altında birleştirecekti. [ROOT.Legend.Custom('GetAncestorFirstNameNoTooltip')] adına, alt düzey lord ve leydilerin çekişmeleri sona ermek üzereydi ve herkes [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'i efendileri olarak adlandırmaya başlayacaktı." #NT
+ legend_chapter_famous_deed_ancestral_glory: "Aptallar [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'a meydan okumak için toplanırdı, ama dağa esen rüzgar gibiydiler. [ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip|U] takipçileri, [ROOT.Legend.GetProtagonist.GetSheHe]'nin [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm] adına yaptığı her harika eylemle büyüdü ve [ROOT.Legend.GetProtagonist.GetSheHe], [ROOT.Legend.Custom('GetAncestorFirstNameNoTooltip')]'in tam yansıması oldu." #NT
+ legend_chapter_extra_deed_ancestral_glory: "[ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip]'ın güzel kırsalı [ROOT.Legend.Custom('GetAncestorFirstNamePossessiveNoTooltip')] zamanından beri haydutların ve haydutların eline düşmüştü, ancak [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] kısa sürede haksızlıkları düzeltmek ve [ROOT.Legend.GetProtagonist.GetSheHe] halkını korumak için işe koyuldu." #NT
+ legend_chapter_conclusion_ancestral_glory: "Yolculuk tehlikelerle doluydu, ancak [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'ın [ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip] ve halkı için yaptığı onca şeye rağmen, [ROOT.Legend.GetProtagonist.GetSheHe]'nin [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm|U] tarafından yönetilmek üzere seçildiğine dair herhangi bir şüphe olabilir mi? Şehirden en mütevazı çiftliğe kadar herkes coşkuyla "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]" adını haykırıyor!" #NT
+ legend_chapter_opening_ancient_people: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U], [ROOT.Legend.GetProtagonist.GetHerHis] atalarının yapacağı gibi [ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip]'yi yönetmek üzere büyük bir [ROOT.Legend.GetProperty( 'culture' ).Culture.GetNameNoTooltip] soyundan doğdu." #NT
+ legend_chapter_conclusion_ancient_people: "Muazzam bir emekle, [ROOT.Legend.GetProtagonist.GetNameNoTooltip] yorulmadan [ROOT.Legend.GetProperty( 'title' ).Title.GetNameNoTooltip]'i [ROOT.Legend.GetProperty( 'culture' ).Culture.GetNameNoTooltip] mükemmellik vizyonuna dönüştürmek için çalıştı. Sadece [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'ün efsanevi işleri sayesinde, [ROOT.Legend.GetProperty( 'title' ).Title.GetNameNoTooltip] halkı [ROOT.Legend.GetProperty( 'culture' ).Culture.GetNameNoTooltip] köklerinden gururla haykırıyor!" #NT
+ legend_chapter_motivation_saintly_deed: "[ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip] görevi [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm]'den açıktı: [ROOT.Legend.GetProtagonist.GetSheHe] harikalar yaratmaktı! Tüm [ROOT.Legend.GetProperty('religion').Religion.GetAdherentNamePluralNoTooltip] [ROOT.Legend.Custom('GetAncestorNameNoTooltip')]'ü kalplerinde saklıyordu ama hiçbiri henüz [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'in gerçekleştireceği mucizeleri bilmiyordu!" #NT
+ legend_chapter_extra_deed_saintly_deed: "İnançlıların yolları tanrısızlar tarafından kuşatılmıştı ve her şeye gücü yeten tarafından kutsanmış bir bıçakla [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] hepsini kovaladı. Fakat yine de vahşi hayvanlar ve yılanlar yola çıkıp inançlılara zarar veriyorlardı, bu yüzden [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] topraklardan [ROOT.Legend.GetProtagonist.GetHerHis] [ROOT.Legend.GetProtagonist.Custom('GetMusicalInstrument')] yaratıkları çekip çıkardı ve [ROOT.Legend.GetProtagonist.GetFaith.CreatorNamePossessive] büyüledi." #NT
+ legend_chapter_conclusion_saintly_deed: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], [ROOT.Legend.GetProperty('religion').Religion.GetNameNoTooltip]'in tamamı için yorulmadan çalışmış ve [ROOT.Legend.GetProtagonist.GetFaith.DevilName]'nin hizmetkarlarıyla Dünya'da savaşmıştı, ancak en sonunda [ROOT.Legend.GetProtagonist.GetHerHis] mücadeleleri sona erdi. İlahi plan yerine getirildi, [ROOT.Legend.GetProtagonist.GetSheHe] büyük onur ve dindarlık dolu bir hayat yaşadı." #NT
+ legend_chapter_opening_mythical_descent: "[ROOT.Legend.GetProtagonist.GetHerHim]'den önceki tüm [ROOT.Legend.GetProtagonist.GetDynastyNameNoTooltip] ailesi üyeleri gibi [ROOT.Legend.GetProtagonist.GetNameNoTooltip] de [ROOT.Legend.GetProperty( 'beast' ).GetFlagName]'ün kanıyla doğmuştur. [ROOT.Legend.GetProtagonist.GetHerHis|U]'ün sıra dışı kökenleri [ROOT.Legend.GetProtagonist.GetHerHim]'i diğerlerinin üstünde, büyüklüğe mahkum etmiştir." #NT
+ legend_chapter_famous_deed_mythical_descent: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U], [ROOT.Legend.GetProtagonist.GetHerHis] soyundan şüphe eden bir kötü adamla yaptığı büyük bir savaşta yaralandı, [ROOT.Legend.GetProtagonist.GetHerHis] ilahi kan bir tarlaya yayıldı. Kan, taze kesilmiş mücevherler gibi parladı ve ışıldadı ve birkaç gün içinde misafirperver olmayan toprak muhteşem renklerde çiçeklerle yeşerdi." #NT
+ legend_chapter_extra_deed_mythical_descent: "Ancak bu hikayenin sonu değildi, çünkü birçok kişi hala [ROOT.Legend.GetProtagonist.GetHerHis] kanındaki ilahilikten şüphe ediyordu. [ROOT.Legend.GetProtagonist.GetHerHis] büyük güçlerini kullanarak, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] [ROOT.Legend.GetProtagonist.GetHerHis] şüpheciyi büyük bir canavar salgınıyla kuşattı, sarayları ve evleri açgözlü havlamalar ve çığlıklarla doldu." #NT
+ legend_chapter_opening_godly_descent: "[ROOT.Legend.GetProperty( 'god' ).GetFlagName|U] [ROOT.Legend.GetProtagonist.GetNamePossessiveNoTooltip] atasını dölledi ve dünyanın rahminden ilk [ROOT.Legend.GetProtagonist.GetDynastyNameNoTooltip]'yi çıkardı. Doğumdan itibaren, [ROOT.Legend.GetProtagonist.GetDynastyNameNoTooltip] ailesinin tüm üyeleri, [ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip]'in her köşesine refah ve [ROOT.Legend.GetProtagonist.GetFaith.GetNameNoTooltip] inancı getirmek için ilahi bir görevle görevlendirilir." #NT
+ legend_chapter_famous_deed_war_won: "İleri geri savaşlar yapıldı ve savaş, ülkeyi hem iyilerin hem de kötülerin kanıyla eşit ölçüde kızıl renge boyadı. [ROOT.Legend.GetProperty( 'winner' ).Char.GetNameNoTooltip|U], kötülüğün güçleri [ROOT.Legend.GetProperty( 'winner' ).Char.GetHerHis] ustaca askeri stratejiyi alt etmeye çalışırken sarsılmadan kaldı. En sonunda çabaları sonuçsuz kalacaktı." #NT
+ legend_chapter_conclusion_war_won: "[ROOT.Legend.GetProperty( 'loser' ).Char.GetNameNoTooltip|U] ve [ROOT.Legend.GetProperty( 'loser' ).Char.GetHerHis]'in astları kırık bayraklarının altında başlarını eğip [ROOT.Legend.GetProperty( 'winner' ).Char.GetFirstNamePossessiveNoTooltip]'den merhamet dilediler. Savaşın karanlık günlerinde, [ROOT.Legend.GetProperty( 'winner' ).Char.GetSheHe] yalnızca [ROOT.Legend.GetProperty( 'winner' ).Char.GetHerselfHimself]'ü bir savaş kurtulanı olarak hayal edebiliyordu, ancak [ROOT.Legend.GetProperty( 'winner' ).Char.GetSheHe] kazanan olarak ortaya çıktı. Tek kazanan." #NT
+ legend_chapter_motivation_new_title: "[ROOT.Legend.GetProperty( 'founder' ).Char.GetDynastyNameNoTooltip] ailesinin [ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip]'in kahyası olmasından çok önce, [ROOT.Legend.GetProperty( 'founder' ).Char.GetNameNoTooltip], [ROOT.Legend.GetProperty( 'founder' ).Char.GetFaith.PantheonTerm]'ten bir vizyonla ödüllendirildi. O andan itibaren [ROOT.Legend.GetProperty( 'founder' ).Char.GetSheHe], [ROOT.Legend.GetProperty( 'founder' ).Char.GetSheHe]'ün yönetmek için doğduğunu biliyordu." #NT
+ legend_chapter_famous_deed_new_title: "[ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip]'ı oluşturacak topraklar [ROOT.Legend.GetProperty( 'founder' ).Char.GetFaith.DevilName]'in korkunç hizmetkarlarının kontrolü altında ezildi. Ancak [ROOT.Legend.GetProperty( 'founder' ).Char.GetHerHis] büyük orduyla, [ROOT.Legend.GetProperty( 'founder' ).Char.GetNameNoTooltip] köy köy özgürleştirildi. Halk silaha sarılıp [ROOT.Legend.GetProperty( 'founder' ).Char.GetFirstNameNoTooltip]'ün hizmetinde kötü hükümdarlarını devirdi ve haklı hükümdarları uğruna ölmeye hazırlandı. [ROOT.Legend.GetProperty( 'founder' ).Char.GetFaith.HighGodName] onların kurbanlarını reddetti, [ROOT.Legend.GetProperty( 'founder' ).Char.GetFaith.HighGodNameSheHe|U] onlara [ROOT.Legend.GetProperty( 'founder' ).Char.GetFaith.HighGodHerHis|U] ilahi koruma sağladı. [ROOT.Legend.GetProperty( 'founder' ).Char.GetSheHe], [ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip] halkını kurtarırken, [ROOT.Legend.GetProperty( 'founder' ).Char.GetFirstNameNoTooltip]'ün büyüyen ordularına hiçbir bıçak dokunamazdı." #NT
+ legend_chapter_conclusion_new_title: "Dükler ve isimsiz küçük soyluların çekişmeleri sonunda [ROOT.Legend.GetProperty( 'founder' ).Char.GetNameNoTooltip] hepsini dizginleyip [ROOT.Legend.GetProperty( 'founder' ).Char.GetHerHim]'e sonsuza dek sadakat yemini etmeleriyle sona erdi. [ROOT.Legend.GetProperty( 'title' ).Title.GetBaseNameNoTooltip] yeniden doğduğunda, dünyanın şekli sonsuza dek değişti." #NT
+ legend_chronicle_sacred_birth_opening: "[ROOT.Legend.GetProtagonist.GetSheHe] doğduğu günden itibaren [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm]'in [ROOT.Legend.GetProtagonist.GetNameNoTooltip] için daha yüce planları olduğu açıktı. [ROOT.Legend.Custom('GetBirthCircumstancesLegend')|U], [ROOT.Legend.GetProtagonist.GetHerHis]'ün büyüklüğü önceden belirlenmişti." #NT
+ born_to_a_virgin_mother: "bakire bir anneden doğmuş" #NT
+ born_under_auspicious_stars: "uğurlu yıldızların altında doğdum" #NT
+ legend_chapter_motivation_sacred_birth: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip|U], kendi doğumlarının vizyonlarıyla boğuşarak uykusuz geceler geçirdi, ta ki kader gecesi, [ROOT.Legend.GetProtagonist.GetFaith.HighGodName|U], [ROOT.Legend.GetProtagonist.GetHerHim]'nin önünde belirene kadar. [ROOT.Legend.GetProtagonist.GetFaith.HighGodName|U], [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'ün Dünya'ya ilahi bir amaç için yerleştirildiğini, bunun tipik bir [ROOT.Legend.GetProtagonist.GetWomanMan] çağrısının yerini aldığını ilan etti. O günden itibaren, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip], [ROOT.Legend.GetProtagonist.GetHerHis]'nin doğumunun koşullarının ne bir söylenti ne de bir tesadüf olduğunu, [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm]'in doğrudan bir müdahalesi olduğunu biliyordu!" #NT
+ legend_chapter_conclusion_sacred_birth: "[ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'ın [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm] adına yaptığı tüm büyük başarılarla, [ROOT.Legend.GetProtagonist.GetSheHe] bir kez daha ziyaret edildi, ancak bu sefer bu sadece bir rüya veya vizyon değildi. [ROOT.Legend.GetProtagonist.GetFaith.HighGodName|U] fiziksel formda tezahür etti ve [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'a içmesi için bir bardak su sundu, [ROOT.Legend.GetProtagonist.GetHerHim]'e bir ilahilik dokunuşu bahşetti. Kitleler [ROOT.Legend.GetProtagonist.GetFirstNamePossessiveNoTooltip|U] ismini alkışladı, sadece [ROOT.Legend.GetProtagonist.GetHerHis] ilahi, şifalı ellerin dokunması için yalvardı." #NT
+ legend_chronicle_unsuspecting_opening: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U], herhangi bir [ROOT.Legend.GetProtagonist.GetWomanMan] gibi doğdu, [ROOT.Legend.GetProtagonist.GetSheHe]'nin [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm] adına başaracağı büyüklüğe dair hiçbir fikri yoktu." #NT
+ legend_chapter_motivation_fought_devil: "Kabuslarla harap olan [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip], [ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName]'in tıslayan ve [ROOT.Legend.GetProtagonist.GetHerHim]'ye işkence eden vizyonlarıyla rahatsız ediliyordu. Her gün [ROOT.Legend.GetProtagonist.GetSheHe], [ROOT.Legend.GetProtagonist.GetHerHis] uykusundan yeni bir amaçla ve [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm]'in [ROOT.Legend.GetProtagonist.GetHerHim] için bir planı olduğu hissiyle uyanıyordu." #NT
+ legend_chapter_famous_deed_fought_devil: "Bir gece, [ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName|U], kanlı duvarlara saçılmış her türlü kırbaç ve acımasız işkence mekanizmalarıyla [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'i ziyaret etti. Çıplak ve sarsılmamış bir şekilde, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip], [ROOT.Legend.GetProperty( 'faith' ).Faith.HighGodName|U]'ün [ROOT.Legend.GetProtagonist.GetHerHis]'in içinden nabız gibi atan gücü ve inancıyla [ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName|U]'ı yakaladı. [ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName|U], [ROOT.Legend.GetProtagonist.GetHerHim]'nin altında güçsüzce sıkıştırılmışken — iğrenç canavar tısladı ve hırladı, kötülük sadece [ROOT.Legend.GetProtagonist.GetWomanMan] tarafından engellendi!" #NT
+ legend_chapter_extra_deed_fought_devil: "Tatmin olmamış ve iyi ve doğru olan her şeye karşı nefretle dolu olan [ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName|U], [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'i bir [ROOT.Legend.GetProtagonist.Custom('GetMusicalInstrument')] yarışmasına davet etti. [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip]'in çaldığı ezgi, [ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName|U]'ın [ROOT.Legend.GetProperty( 'faith' ).Faith.NegativeAfterLife|U]'e dönüşmesine neden oldu. Ezgi, [ROOT.Legend.GetProtagonist.GetHerHis] zihninden duman gibi kaydı, şüphesiz insanların alemi için fazla ilahiydi." #NT
+ legend_chapter_conclusion_fought_devil: "[ROOT.Legend.GetProperty( 'faith' ).Faith.DevilName|U] yenildiğinde, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] ölümlüler alemindeki kötü güçleri yenmeye [ROOT.Legend.GetProtagonist.GetHerselfHimself] adadı. [ROOT.Legend.GetProtagonist.GetSheHe|U] [ROOT.Legend.GetProtagonist.GetHerHim] ile [ROOT.Legend.GetProtagonist.GetHerHis] gün boyunca kutsal bir ışıltı taşıdı ve [ROOT.Legend.GetProtagonist.GetHerHis] ardında barış ve medeniyet bıraktı." #NT
+ legend_chapter_famous_deed_tournament_won: "Dövüş sanatlarının muhteşem bir gösterisinde, akıllar ve sesler kılıçlar kadar eşit ölçüde çarpıştı, ama hiçbir akıl onun kadar akıllı, hiçbir kılıç onun kadar keskin değildi! Yarışmacılar birbiri ardına sıraya girdiler ve dokunulmaz [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] tarafından ağlatıldılar." #NT
+ legend_chapter_extra_deed_tournament_won: "Hiç kimse [ROOT.Legend.GetProtagonist.GetNamePossessiveNoTooltip]'ın ilk turnuvasının ihtişamını hatırlamaktan kendini alamadı, ancak tek bir zafer [ROOT.Legend.GetProtagonist.GetHerHim] için yeterli değildi. Diğer yarışmacılar [ROOT.Legend.GetProtagonist.GetHerHim]'i bir bıçak fırtınasıyla çevrelediler, ancak [ROOT.Legend.GetProtagonist.GetSheHe] sarsılmadı. [ROOT.Legend.GetProtagonist.GetSheHe|U], [ROOT.Legend.GetProtagonist.GetHerHis] isim! diye bağıran bir kalabalığın önünde galip geldi." #NT
+ legend_chronicle_opening_raised_by_animals: "Yiyecek ve kurtarılma umudu olmadan, [ROOT.Legend.GetProtagonist.GetNameNoTooltip] bir nehrin kenarında kaybolmuş bir bebek gibi yatıyordu ta ki güçlü bir [ROOT.Legend.GetProperty( 'beast' ).GetFlagName] annesi [ROOT.Legend.GetProtagonist.GetHerHim]'yi bulana kadar. [ROOT.Legend.GetProtagonist.GetHerHim]'yi memesinden besledi ve bebeğin tüm gücü ve cesaretiyle Herkül gibi bir [ROOT.Legend.GetProtagonist.GetWomanMan]'e dönüşmesini sağladı." #NT
+ legend_chapter_motivation_raised_by_animals: "İnsanlığa geri dönen [ROOT.Legend.GetProtagonist.GetFirstName], kaosun ülkeyi nasıl sardığını keşfetti. Komşu komşuya [ROOT.Legend.GetProperty( 'beast' ).GetFlagName]'in avına saldırması gibi saldırıyordu ve [ROOT.Legend.GetProtagonist.GetFirstName], [ROOT.Legend.GetProtagonist.GetHerHis] halkının, sürüyü ortak amaçlarının arkasında birleştirmek için güçlü bir lidere ihtiyaç duyduğunu biliyordu." #NT
+ legend_chapter_conclusion_raised_by_animals: "[ROOT.Legend.GetProtagonist.GetFirstName|U], [ROOT.Legend.GetProperty( 'beast' ).GetFlagName]'in yöneteceği gibi güçlü ve gururlu bir şekilde hükmetti. [ROOT.Legend.GetProtagonist.GetSheHe], [ROOT.Legend.GetProtagonist.GetHerHis] [ROOT.Legend.GetProperty( 'beast' ).GetFlagName]'in annesini bir daha hiç görmese de, [ROOT.Legend.GetProtagonist.GetSheHe], [ROOT.Legend.GetProtagonist.GetFaith.PantheonTerm]'dan gelen bu habercinin [ROOT.Legend.GetProtagonist.GetHerHis]'ün saltanatına büyük bir gururla bakacağından şüphe duymuyordu. Topraklar sessiz ve huzurlu kaldı, [ROOT.Legend.GetProtagonist.GetHerHis] düşmanlarından hiçbiri, [ROOT.Legend.GetProperty( 'beast' ).GetFlagName]'in öfkesiyle karşılaşmamak için çizginin dışına çıkmaya cesaret edemedi." #NT
+ legend_chapter_extra_deed_recent_battle: "[ROOT.Legend.GetProtagonist.GetHerHis] eve döndüğünde, [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] [ROOT.Legend.GetProtagonist.GetHerHis] düşmanla yiğitçe savaştı, eşsiz cesaret ve stratejik zekayla önderlik etti. [ROOT.Legend.GetProtagonist.GetHerHis] Kılıcını havaya kaldırarak ve sarsılmaz kararlılığıyla, [ROOT.Legend.GetProtagonist.GetHerHis] düşmana karşı zafere ilham verdi." #NT
+ legend_chapter_extra_deed_recent_siege: "[ROOT.Legend.GetProtagonist.GetHerHis] eve döndüğünde, [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip], şehri en iyi cam gibi parçalayarak, kararlı bir şekilde düşman kalesinin kuşatmasına öncülük etti. [ROOT.Legend.GetProtagonist.GetHerHis] kuvvetleri toplanmış ve bayraklar açılmışken, [ROOT.Legend.GetProtagonist.GetSheHe] amansız bir hücum başlattı, savunmaları aştı ve zaferi ilan etti." #NT
+ legend_chapter_extra_deed_recent_imprisonment: "En karanlık zindanın derinliklerinde, yiyecek ve sudan mahrum, zincirlenmiş ve gölgelerle çevrili [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] kaçmak için gereken kararlılığı buldu. Dişlerini sıkarak ve meydan okumayla dolu bir kalple [ROOT.Legend.GetProtagonist.GetSheHe] her gece [ROOT.Legend.GetProtagonist.GetHerHis] kaçış planları yaptı. Kurnazca manipülasyonlar ve iradenin saf gücüyle [ROOT.Legend.GetProtagonist.GetSheHe] gizli geçitleri takip ederek sabah ışığına çıktı." #NT
+ legend_chapter_extra_deed_recent_tournament: "[ROOT.Legend.GetProtagonist.GetHerHis] eve döndüğünde, [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] görkemli turnuva alanlarının ihtişamına kapılmıştı. Elinde kılıç ve güneşin bakışları altında parlayan zırhla, [ROOT.Legend.GetProtagonist.GetSheHe] sarsılmaz kararlılıkla zorlu rakiplerle karşı karşıyaydı. Seyirciler haykırıyordu, güzel hanımlar ve etkilenebilir uşakları kendilerini [ROOT.Legend.GetProtagonist.GetHerHis] ayaklarına atıyorlardı! Kazanan! En iyi şövalye!" #NT
+ legend_chapter_famous_deed_saintly_deed: "Şüphe fısıltıları ve halk arasında inançsızlık gölgeleri arasında, [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] sarsılmaz bir şekilde [ROOT.Legend.GetProtagonist.GetHerHis] inançla duruyordu. Her şey kaybolmuş gibiydi, savaş alanı kanla boyanmıştı. Mızraklar yere dikilmişti, kullananlar tarafından terk edilmişti. Ancak [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] dizlerinin üzerine düştü, ağzı dualarla doluydu. Mızraklarda çiçekler açtı, düşmanlar bir mucizeye tanıklık ederek yere yığıldılar." #NT
+ legend_chapter_famous_deed_holy_warrior: "Her zaman inancının kararlı bir savunucusu olan [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip], [ROOT.Legend.GetProtagonist.GetHerselfHimself]'i [ROOT.Legend.GetProtagonist.GetFaith.HighGodName]'nin düşmanlarına karşı verilen kutsal savaşta gerçek bir kahraman olarak gösterdi. [ROOT.Legend.GetProtagonist.GetSheHe|U], sahte tanrıların bilgisiz insanlarından aldığı barışı ve refahı geri getirmeye kararlı bir şekilde yabancı topraklara seyahat etti. [ROOT.Legend.GetProtagonist.GetSheHe|U], [ROOT.Legend.GetProtagonist.GetFaith.GetNameNoTooltip] sembolünü [ROOT.Legend.GetProtagonist.GetHerHis] ön koluna kazıdı ve kan, kâfirlerin cesetlerinin üzerine döküldü." #NT
+ legend_chapter_opening_legendary_battle: "Zamanın kroniklerinde, sonsuzluk boyunca yankılanacak kadar görkemli bir savaşın destanı alev alev yanıyor; [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip]'ın savaş fırtınasının ortasında dev bir varlık olarak durduğu bir savaş." #NT
+ legend_chapter_famous_deed_raised_by_animals: "Her geçen gün, [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] medeniyetin barbarlığı tarafından sahiplenilmemiş bir güç ve bilgelikle büyüdü. Roma'nın kurucuları gibi, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] de [ROOT.Legend.GetProtagonist.GetHerHim]'ye hayat veren dünyayı kucakladı ve ev sakinlerine avlanma ustalığını öğreterek beyaz bir [ROOT.Legend.GetProtagonist.Custom('RegionalFerociousAnimal')]'ü devirdi." #NT
+ legend_chapter_conclusion_dead_loved_spouse: "[ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] eve döndüğünde, [ROOT.Legend.GetProtagonist.GetHerHis] kalbi [ROOT.Legend.GetProtagonist.GetHerHis] sandığından ayrılmak üzere olan küçük bir güvercin gibi hissetti. Duygularla dolu [ROOT.Legend.GetProtagonist.GetSheHe], [ROOT.Legend.GetProtagonist.GetHerHis] gerçek aşkıyla yeniden bir araya gelmek için sabırsızlanıyordu. Korkunç bir çığlık, keder şatonun salonlarını doldurdu çünkü [ROOT.Legend.GetProtagonist.GetHerHis] eşinin soluk dudakları tüm yaşamdan yoksundu. [ROOT.Legend.GetProtagonist.GetHerHis] yalnızlığının sessizliğinde, [ROOT.Legend.GetProtagonist.GetHerHis] kalbini alevlendiren bir aşkın anıları [ROOT.Legend.GetProtagonist.GetHerHim]'i korkunç bir acıyla doldurdu. [ROOT.Legend.GetProtagonist.GetSheHe]'ün paylaşacak kimsesi yoksa, [ROOT.Legend.GetProtagonist.GetHerHis] efsanesinin ne değeri vardı?" #NT
+ legend_chapter_conclusion_point_of_interest: "[ROOT.Legend.GetProtagonist.GetTitledFirstNamePossessiveNoTooltip] seyahatlerinin uçsuz bucaksız genişliğinde, [ROOT.Legend.GetProtagonist.GetSheHe], yeryüzünün sınırlarını zorlayan nefes kesici bir harikaya rastladı — doğanın güzelliğinin insan yaratıcılığıyla kusursuz bir şekilde iç içe geçtiği bir yer. Mükemmel işçiliğin yükselen kuleleri göklere doğru uzanıyordu, zarif formları şafağın ilk ışığının yumuşak parıltısında yıkanıyordu. [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] derin bir nefes aldı, çünkü [ROOT.Legend.GetProtagonist.GetSheHe] daha iyi bir son isteyemezdi." #NT
+ legend_chapter_motivation_child_mother: "Kalenin sakin koridorlarında, gölgeler taş duvarlarda dans ederken ve eski masalların fısıltıları havada asılı kalırken, [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] [ROOT.Legend.GetProtagonist.GetHerHis] yeni doğmuş çocuğu şefkatle kucaklıyordu. [ROOT.Legend.GetProtagonist.GetSheHe] bebeğin masum gözlerine bakarken, [ROOT.Legend.GetProtagonist.GetHerHis]'in kalbi kararlılıkla tutuştu. [ROOT.Legend.GetProtagonist.GetSheHe] geride hangi mirası bırakacaktı? [ROOT.Legend.GetProtagonist.GetSheHe] ipek ve çiçekler arasında sığınan bir korkak olarak hatırlanmak mı isteyecekti?" #NT
+ legend_chapter_motivation_child_father: "[ROOT.Legend.GetProtagonist.GetHerHis] atalarının evinin görkemli odalarında, mum ışığının titrek ışıklarının antik duvar halılarına gölge düşürdüğü yerde, [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip], [ROOT.Legend.GetProtagonist.GetHerHim]'ye bahşedilen yaşam mucizesine hayranlıkla baktı. [ROOT.Legend.GetProtagonist.GetHerHis] mirasını koruma kararlılığı o çocukla birlikte doğdu." #NT
+ legend_chapter_opening_witch: "[ROOT.Legend.GetProtagonist.GetTitledFirstNamePossessiveNoTooltip] gizli sanatlara ilgi her zaman şüphe uyandırmıştı. Cadılık ve büyücülük suçlamaları [ROOT.Legend.GetProtagonist.GetHerHim]'in etrafında dönüyordu ve [ROOT.Legend.GetProtagonist.GetHerHis] bir zamanlar şanlı bir isme sahip olan kişinin üzerine karanlık bir gölge düşürüyordu. [ROOT.Legend.GetProtagonist.GetHerHis] sadık tebaası her hareketi takip etmek için [ROOT.Legend.GetProtagonist.GetHerHis] döndüğünde, [ROOT.Legend.GetProtagonist.GetSheHe] [ROOT.Legend.GetProtagonist.GetHerHim]'in üzerine çöken güvensizliğin ağırlığını hissediyordu." #NT
+ legend_chapter_motivation_celibacy: "Bir zamanlar görkemli kıyafetlerle süslenmiş olan [ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip], [ROOT.Legend.GetProtagonist.GetFaith.PriestNeuter]'in mütevazı cübbesine bürünmüş, [ROOT.Legend.GetProtagonist.GetHerHis] tacından soyulmuş bir şekilde duruyordu. Fakat [ROOT.Legend.GetProtagonist.GetSheHe] [ROOT.Legend.GetProtagonist.GetFaith.HighGodName]'ü asla unutmadı, çünkü [ROOT.Legend.GetProtagonist.GetHerHis] bağlılığı daha da parlak, sonsuz yanıyordu. [ROOT.Legend.GetProtagonist.GetHerHim] içinde atan ilahi ilhamla beslenen [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip], [ROOT.Legend.GetProtagonist.GetHerHis] ismini sonsuza dek ölümsüzleştirecek bir yol açmaya karar verdi." #NT
+ legend_chapter_opening_new_culture: "[ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip], eski gelenekler geçersiz hale geldiğinde doğdu. [ROOT.Legend.GetProtagonist.GetHerHis]'in zihninde bir vizyonla, [ROOT.Legend.GetProtagonist.GetSheHe] kendi geleneklerini [ROOT.Legend.GetProtagonist.GetHerHis] oluşturmaya karar verdi — böylece [ROOT.Legend.GetProtagonist.GetCulture.GetNameNoTooltip] kültürü yaratıldı." #NT
+ legend_chapter_opening_new_faith_generic: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip|U], din [ROOT.Legend.GetProtagonist.GetFaith.GetNameNoTooltip]'den çok uzaklara düştüğünde doğdu. Vaizler, inanç çürüyüp terk edildiğinden [ROOT.Legend.GetProtagonist.GetFaith.HighGodNamePossessive] adıyla sapkınlığı benimsediler. İnsanlar başka dinlere yöneldi ve [ROOT.Legend.GetProtagonist.GetFaith.HighGodNamePossessive] rakiplerinin insanların kalplerini fethetmesine yol açtı." #NT
+ legend_chapter_winner_change_toast: "[winner.GetPromotedLegend.GetName] değişiklik" #NT
+ legend_chapter_change_toast: "[ROOT.Char.GetPromotedLegend.GetName] değişiklik" #NT
+ legend_chapter_change_culture_toast: "[founder.GetPromotedLegend.GetName] değişiklik" #NT
+
+ spread_legend_intent: "Efsaneyi yay" #NT
+ spread_legend_intent_desc: "Bu aktiviteyi [legend|E]'ınızı yaymak için bir fırsat olarak kullanacaksınız." #NT
+ spread_legend_intent_not_valid_desc: "#X Şu anda bir [legend|E]'e sahip değilsiniz" #NT
+
+ legend_chronicle_war_won_chronicle: "[title.GetNameNoTooltip]'ın Fethi" #NT
+ legend_chronicle_war_won_chronicle_desc: "[winner.GetTitledFirstName], [title.GetName]'i değersiz [loser.GetFirstName]'den haklı olarak fethetti." #NT
+
+ legend_chronicle_new_title: "[title.GetNameTooltip]'ın Kuruluşu" #NT
+ legend_chronicle_new_title_desc: "[founder.GetName]'ın iradesi, gücü ve kurnazlığıyla [title.GetName] var oldu ve asla sarsılmayacak!" #NT
+
+ legend_chronicle_great_deed_faith: "[new_faith.GetNameNoTooltip]'ın Manevi Zaferi" #NT
+ legend_chronicle_great_deed_faith_desc: "[new_faith.HighGodName]'e olan [founder.GetHerHis] inancının rehberliğinde, [founder.GetName] sadık [new_faith.GetAdherentNamePlural]'ü alçak [antagonist.GetName]'in önderlik ettiği [old_faith.GetAdherentName]'e karşı zafere taşıdı" #NT
+
+ legend_chronicle_great_deed_title: "[title.GetNameNoTooltip] için Büyük İş" #NT
+ legend_chronicle_great_deed_title_desc: "Tarih boyunca [title.GetName]'ın tüm yöneticileri arasında hiçbiri bu kadarını başaramamıştır, hiçbiri büyük [founder.GetName]'in önünde bu kadar konuşulmayacaktır." #NT
+
+ legend_chronicle_great_deed_region: "[legend_region.GetNamePossessiveNoTooltip] Gerçek Kahraman" #NT
+ legend_chronicle_great_deed_region_desc: "[legend_region.GetName]'da [founder.GetName] ve [founder.GetHerHis] başarılarının adını bilmeyen bir ruh yoktur." #NT
+
+ legend_chronicle_great_deed_dynasty: "[dynasty.GetNameNoTooltip] için Güçlü Bir Çaba" #NT
+ legend_chronicle_great_deed_dynasty_desc: "[dynasty.GetName] adını taşıyan çok az kişi hanedanı için [founder.GetName] kadar çok şey yapmıştır." #NT
+
+ legend_chronicle_valiant_defense: "Cesur Bir Savunma" #NT
+ legend_chronicle_valiant_defense_desc: "Tüm olumsuzluklara rağmen [defender.GetName], [attacker.GetName]'in ordularını püskürttü." #NT
+
+ legend_chronicle_tournament_won: "[winner.GetFirstNameNoTooltip] Üç Zafer" #NT
+ legend_chronicle_tournament_won_desc: "[location.GetName]'ın mızrak dövüşü alanlarında, en büyük yarışmacı [winner.GetName] turnuvayı üçüncü kez kazandı. Dünyadaki hiçbir canlı ruh [winner.GetHerHim] ile rekabet edemez." #NT
+
+ legend_chronicle_accolade_chronicle: "En Cesur $knight_culture_player_plural_no_tooltip$" #NT
+ legend_chronicle_accolade_chronicle_desc: "[founder.GetName|U]'ın birçok harika $knight_culture_player_plural_no_tooltip_lowercase$'i vardı, ancak hiçbiri [first_accolade.GetName]'ün [first_accolade_knight.GetName]'sinden büyük değildi." #NT
+
+ heroic_legend_seed_drop.t: "Yeni Efsane Tohumu Mevcut" #NT
+ legend_chapter_opening_great_deed: "$legend_chapter_opening_generic$" #NT
+ legend_chapter_conclusion_great_deed: "$legend_chapter_conclusion_generic$" #NT
+
+  # Divine creatures  #NT
+ angels: "melekler" #NT
+ the_angels: "melekler" #NT
+  # Legendary locations  #NT
+ atlantis: "Atlantis" #NT
+ olympus: "Olimpos" #NT
+ hindustan: "Hindistan" #NT
+ vinland: "Şarap ülkesi" #NT
+ sunset_empire: "Gün Batımı İmparatorluğu" #NT
+ prester_john_kingdom: "Prester John Krallığı" #NT
+ albion: "Albion" #NT
+ himavanta: "Himavata" #NT
+ kumari_kandam: "Kumari Kandam" #NT
+ mahishmati: "Mahişmati" #NT
+ beyul: "Beyül" #NT
+ bald_mountain: "Kel Dağ" #NT
+ irum: "Irum" #NT
+ china: "Cathay" #NT
+
+  #Legendary people  #NT
+ vercingetorix: "Vercingetorix" #NT
+ shibi_chakravarti: "Shibi Çakravarti" #NT
+
+  # To account for some ancestors being flags  #NT
+ ancestor_flag_name: "[ROOT.Legend.GetProperty( 'ancestor_flag' ).GetFlagName|U]" #NT
+ ancestor_flag_name_possessive: "[ROOT.Legend.GetProperty( 'ancestor_flag' ).GetFlagName|U]'lar" #NT
+ ancestor_name: "[ROOT.Legend.GetProperty('ancestor').Char.GetName]" #NT
+ ancestor_namepossessive: "[ROOT.Legend.GetProperty('ancestor').Char.GetNamePossessive]" #NT
+ ancestor_firstname: "[ROOT.Legend.GetProperty('ancestor').Char.GetFirstName]" #NT
+ ancestor_firstnamepossessive: "[ROOT.Legend.GetProperty('ancestor').Char.GetFirstName]" #NT
+ ancestor_namenotooltip: "[ROOT.Legend.GetProperty('ancestor').Char.GetNameNoTooltip]" #NT
+ ancestor_namepossessivenotooltip: "[ROOT.Legend.GetProperty('ancestor').Char.GetNamePossessiveNoTooltip]" #NT
+ ancestor_firstnamenotooltip: "[ROOT.Legend.GetProperty('ancestor').Char.GetFirstNameNoTooltip]" #NT
+ ancestor_firstnamepossessivenotooltip: "[ROOT.Legend.GetProperty('ancestor').Char.GetFirstNameNoTooltip]" #NT
+
+ legend_events.0001.t: "Tarihçi: Bulunan Bir Efsane" #NT
+ legend_events.0001.desc.intro: "[chronicler.Custom2('MyCharacterIntroduction', ROOT.Char)|U] saraya girdiğimde beni heyecanla karşılamak için acele ediyor.\n\n" #NT
+ legend_events.0001.desc.mid.slew_dragon: ""Mükemmel bir haber getirdim, [ROOT.Char.GetTitleAsNameNoTooltip|U]'ım! [legend_character.GetName] hakkında ciltler ve efsaneler arıyordum ve [legend_character.GetSheHe]'nin savaşıp bir ejderhayı öldürdüğüne inanmak için nedenlerim var!" #NT
+ legend_events.0001.desc.mid.ancestral_saint: ""[ROOT.Char.HighGodName|U] bugün evinize gülümsüyor, [ROOT.Char.GetTitleAsNameNoTooltip|U]'im. Uğurlu atanız [legend_character.GetName] hakkında bilgi arıyordum ve [legend_character.GetHerHim]'ün [GetTrait('saint').GetNameNoTooltip( ROOT.Char )] olarak kabul edilmesini sağlayacak potansiyelde bilgiler buldum!" #NT
+ legend_events.0001.desc.mid.godly_descent: "[chronicler.GetSheHe|U] dizlerinin üzerine çöküp [chronicler.GetHerHis] ayaklarımı öper. "Ah, en kutsal [ROOT.Char.GetTitleAsNameNoTooltip|U]. [ROOT.Char.GetFaith.HighGodName|U] [ROOT.Char.GetFaith.HighGodHerselfHimself]'ün kan soyundan geldiğinizden şüphelenmek için güçlü bir nedenim var!" #NT
+ legend_events.0001.desc.mid.old_godly_descent: ""İyi günler sana, [ROOT.Char.GetTitleAsNameNoTooltip|U]'ım, yoksa sana '[ROOT.Char.Custom('GetDaughterSon')|U] [legend_character.GetFaith.HighGodName|U]' mi demeliyim? Gerçekten de kayıtları araştırdım ve atalarınızın 'tanrısı'nın aslında çok sayıda kahramanca eylemde bulunan kahraman bir ölümlü olduğuna inanıyorum." #NT
+ legend_events.0001.desc.mid.raised_by_animals: ""İyi günler, [ROOT.Char.GetTitleAsNameNoTooltip|U]'ım. Erken çocukluğunuzdan ne kadarını hatırlıyorsunuz? Arşivdeki bazı ciltler, [ROOT.Char.Custom('GetAnimalPlural')] tarafından aslında vahşi doğada büyütüldüğünüzü gösteriyor." #NT
+ legend_events.0001.desc.mid.auspicious_stars: ""[ROOT.Char.GetFaith.HighGodName|U] bugün bize gülümsüyor, [ROOT.Char.GetTitleAsNameNoTooltip]'im, tıpkı doğduğun gün [ROOT.Char.GetFaith.HighGodNameSheHe]'nin gülümsediği gibi. Gerçekten de, hayatında yapacağın büyük işlerin bir işareti olarak uğurlu yıldızlar altında doğdun." #NT
+ legend_events.0001.desc.mid.virgin_birth: ""[ROOT.Char.GetFaith.HighGodName|U] bugün bize gülümsüyor, [ROOT.Char.GetTitleAsNameNoTooltip]'im, tıpkı [ROOT.Char.GetFaith.HighGodNameSheHe]'nin seni gebe bıraktığında annene gülümsediği gibi. Gerçekten de, sen piç değildin, annen tertemiz bir gebeliğe sahip olacak kadar şanslıydı!" #NT
+ legend_events.0001.desc.mid.spoke_to_angels: ""Birçok gece önce bana meleklerin seni ziyaret ettiğini söylediğini hatırlıyorum. [ROOT.Char.GetTitleAsNameNoTooltip|U]'ım, bunun sadece bir rüya değil, [ROOT.Char.GetFaith.PositiveAfterLife]'den gelen bir görüntü olduğuna inanmak için nedenlerim var." #NT
+ legend_events.0001.desc.mid.fought_the_devil: ""Son zamanlarda kabuslar gördüğünüzün farkındayım. Bu vizyonların [ROOT.Char.GetFaith.NegativeAfterLife]'deki [ROOT.Char.GetFaith.DevilName] ile olan savaşınızın anlık görüntüleri olduğuna inanmak için nedenlerim var." #NT
+ legend_events.0001.desc.mid.exotic_backstory: ""Benim [ROOT.Char.GetTitleAsNameNoTooltip|U]'ım, kendini hiç tam bir [ROOT.Char.GetCulture.GetName] [ROOT.Char.GetWomanMan] gibi hissetmedin, değil mi? Yıllar önce, buradan çok uzaklardaki mistik bir diyardan geldiğine inanıyorum." #NT
+ legend_events.0001.desc.mid.ancient_people: ""Benim [ROOT.Char.GetTitleAsNameNoTooltip|U]'ım, kayıtları araştırdım ve soyunuzun büyük [ancient_culture.GetName] hanedanlarına kadar uzandığını gösteren bazı bilgiler buldum!" #NT
+ legend_events.0001.desc.outro: "Bazıları bunun biraz uçuk olduğunu ve bunun doğru olduğunu kanıtlamanın biraz çaba gerektireceğini düşünebilir, ancak sizi yaşayan bir efsane yapacak güçlü bir temel var!"" #NT
+ legend_events.0001.a: "Harika iş!" #NT
+ legend_events.0001.b: "Ben bile buna inanmakta zorlanıyorum." #NT
+ legend_events.0010.t: "$chronicler_court_position$: Efsane Yayılıyor" #NT
+ legend_events.0010.desc: "[chronicler.Custom2('MyCharacterIntroduction', ROOT.Char)|U] bu sabah sarayda beni karşıladı, [chronicler.GetHerHis] dilinin ucundaki haberlerle heyecanla.\n\n"Sevgili [ROOT.Char.GetTitleAsNameNoTooltip|U], sanırım [potential_promoter.Custom2('YourCharacterIntroduction', ROOT.Char)], [ROOT.Char.GetPromotedLegend.GetName]'ün doğruluğuna neredeyse ikna oldu! [potential_promoter.GetSheHe|U] ise hikayenin farkında ve tamamen büyülenmiş gibi görünüyor, ancak arkasındaki gerçeğe ikna değil."" #NT
+ legend_events.0010.a: "Belki [potential_promoter.GetSheHe] ikna edilebilir." #NT
+ legend_events.0010.a.success: "[potential_promoter.GetName] ikna oldum" #NT
+ legend_events.0010.a.failure: "[potential_promoter.GetName] ikna olmadı" #NT
+ legend_events.0010.b: "Belki gerçeği çarpıtmak [potential_promoter.GetHerHim]'ı inanan biri yapardı." #NT
+ legend_events.0010.c: "[potential_promoter.GetSheHe|U], [potential_promoter.GetSheHe]'in hoşuna gideni düşünebilir." #NT
+
+ legend_events.0020.t: "$hold_court_header$ Efsane Kooptasyon" #NT
+ legend_events.0020.desc: "Yabancı bir misafir tahtıma yaklaşıp yüksek sesle haykırıyor:\n\n"Sarayınıza geleli epey oldu. Hem küçük hem de görkemli krallık meselelerini nasıl yönettiğinizi ve ele aldığınızı dikkatlice gözlemledim. Ve derinden etkilendim.\n\n[seed_presenter.GetCulture.GetCollectiveNoun] arasında, seçkin bir hanedandan gelen efsanevi bir hükümdarın eski bir hikayesi var. Bu, annemin bana gençken anlattığı bir hikaye. Bunu ilk olarak annesinden çok uzun zaman önce duymuş.\n\nVe şimdi, size [seed_presenter.GetCulture.GetPrefix] efsanesinin efsanevi [ROOT.Char.GetTitleAsNameNoTooltip|U]'i olduğunuzu söylemenin büyük zevkini yaşıyorum. Ve [seed_presenter.GetCulture.GetName]'ün herhangi bir gerçek oğlunun kesinlikle benimle aynı fikirde olacağına inanıyorum!"" #NT
+ legend_events.0020.a: "Evet! Büyükleriniz [ROOT.Char.GetDynasty.GetNameNoTooltip]'dan bahsetmişti!" #NT
+ legend_events.0020.b: "[ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip], [seed_presenter.GetCulture.GetPrefixNoTooltip] masalın konusudur." #NT
+ legend_events.0020.c: "[ROOT.Char.GetCulture.GetPrefixNoTooltip] hükümdarı, [seed_presenter.GetCulture.GetCollectiveNounNoTooltip] köylülerinin ne hakkında konuştuğunu umursamaz." #NT
+
+ legend_seed_ghw.tt: "$trait_crusader_king$ [legend_seed|E] kazanır" #NT
+ gain_heroic_legend_seed.tt: "Bir Kahramanlık [legend_seed|E] kazanırsınız" #NT
+ gain_holy_legend_seed.tt: "Kutsal [legend_seed|E] kazanırsınız" #NT
+ gain_legitimizing_legend_seed.tt: "Meşrulaştırma [legend_seed|E] kazanırsınız" #NT
+
+ legend_events.1000.t: "[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.GetTitledFirstNameNoTooltip]'e," #NT
+ legend_events.1000.desc: "Bu kadar utanç verici bir doğaya sahip olmak! Çok aldatıcı! Efsanemi tanıtman için sana altın teklif ettim ve sen de hasta bir köpek gibi onu yere atarak bana karşılığını verdin." #NT
+ legend_events.1000.a: "#EMP Ah!#! Al işte." #NT
+ legend_events.1000.b: "Eminim ki #EMP çok#! daha ucuzdu." #NT
+
+ legend_spread_notification_title: "Efsane ülkenize yayılıyor!" #NT
+ legend_spread_notification_desc: "[spread_legend.GetName], [spread_county.GetName]'e dönüşür" #NT

@@ -1,725 +1,725 @@
-﻿l_english:
-  # TAVERN 
- ep2_locale_events.1000.t: "$tournament_locale_tavern$: Başka Bir Tur"
- ep2_locale_events.1000.independent: "Tavernanın köşesindeki [drinking_leader.GetTitledFirstNamePossessive] masasından büyük bir kahkaha sesi duyuluyor."
- ep2_locale_events.1000.liege: "[drinking_leader.GetTitledFirstName], [drinking_leader.GetLiege.GetTitledFirstNamePossessive] [drinking_leader.GetLiege.Custom2('RelationToMeShort', drinking_leader)]'nin oturduğu köşeden büyük bir kahkaha sesi duyuluyor."
- ep2_locale_events.1000.alcohol: "\n\n[drinking_leader.GetSheHe|U], yaklaşan [activity.GetCurrentPhase.GetPhase.GetName] yarışmasına katılan diğer katılımcılar ve yeni tanıdıklardan oluşan bir grupla çevrilidir ve hepsi hikayelerini paylaşırken [host.Custom('RegionalAlcoholicDrink')]'ye katılırlar.\n\nGeçerken, bu küçük seansı teşvik etmeyi düşünmeden edemezsiniz..."
- ep2_locale_events.1000.a: "Hancı, daha fazlası burada!"
- ep2_locale_events.1000.b: "Masanın hesabı benden!"
- ep2_locale_events.1000.c: "Sanırım bu kesim artık yeter dedi."
- ep2_locale_events.1000.d: "Akşamınızın tadını çıkarın, [drinking_leader.GetFirstNameNoTooltip]!"
- drinks_round_tt: "Her içici"
- ep2_locale_events.1000.hangover_tt: "Bir daha asla..."
-  
- ep2_locale_events.1002.t: "$tournament_locale_tavern$: İçmeye Cesaretin Var Mı?"
- ep2_locale_events.1002.desc: "Yerel bar, bir Turnuva şehre geldiğinde beklendiği gibi cesetlerle dolu. Ancak tüm yeni gelenler arasında, kuruluşun demirbaşı olduğu açıkça belli olan bir [local_drunk.GetWomanMan] var. Otururken [local_drunk.GetSheHe|U] bana şüpheyle bakıyor.\n\n"#EMP sen#! burada ne yapıyorsun?" [local_drunk.GetSheHe|U] nihayet içkim geldiğinde ağzından çıkıyor. Yüzüme dönüyorum [local_drunk.GetHerHim]; [local_drunk.GetSheHe] dengesiz bir şekilde [local_drunk.GetHerHis] feet'e yükseliyor.\n\n"Varsayımlarımı bağışlayın, #EMP benim [ROOT.Char.GetLadyLord]#!," — Gösterişli, küçümseyen bir yay ifadeyi noktalıyor — "ama sanırım bunun yarısını bile kaldıramadınız, bırakın hepsini!""
- ep2_locale_events.1002.a: "Hadi ama, düşmanlığa gerek yok. Sana bir içki ısmarlayayım mı?"
- ep2_locale_events.1002.b: "Gerçekten mi? #EMP Bardakları çıkarın!#!"
- ep2_locale_events.1002.b.success: "Masanın altında [local_drunk.GetFirstNameNoTooltip] içiyorsun"
- ep2_locale_events.1002.b.failure: "Birkaç saat sonra, sersemlemiş bir şekilde ve baş ağrısıyla uyanırsınız"
- ep2_locale_events.1002.c: "Otur ve sus, ey umutsuz sarhoş."
-  
- ep2_locale_events.1010.t: "$tournament_locale_tavern$: Bir Oyun Oynamak İster misin?"
- ep2_locale_events.1010.desc: "Meyhanenin kasveti, ateşin çıtırtısı ve içki içenlerin devam eden eğlencesiyle dengeleniyor. İki gürültücü sarhoşun yanından geçip, bir kişi dışında boş olan yakındaki bir masaya oturuyorum.\n\n"Güzel bir gece, değil mi?" [gambler.GetFirstName], perişan kalabalığa işaret ediyor. Nazikçe başımı sallıyorum. [gambler.GetFirstNameNoTooltip] zar ve bardakları masaya fırlatırken, başımı zar zor yerine koyuyorum.\n\n"Basit bir oyun ister misin? Bir aptal bile oynayabilir! İkimiz de bardakların altından zar atıyoruz ve senin zarının benimkinden yüksek mi düşük mü olduğunu tahmin ediyorsun." [gambler.GetSheHe|U] gülümsüyor, [gambler.GetHerHis] gözünde bir kumarbazın parıltısı. "Üçte iki en iyisi.""
- #ep2_locale_events.1010.a: "Ama senin zarlarına nasıl güvenebilirim?"
- #ep2_locale_events.1010.a.tt: "Benim setimi kullanalım. Çok adil ve ağırlıksız setim."
- ep2_locale_events.1010.b: "Şu zarları buraya at!"
- ep2_locale_events.1010.c: "Ben kumarbaz değilim."
-  
- ep2_locale_events.1011.t: "$tournament_locale_tavern$: İlk Atış"
- ep2_locale_events.1011.opening: "Zarlar, ikimiz de masaya çarpmadan önce bardaklarının içinde şakırdayıp zıplıyor. Bana en yakın olan bardağın kenarını kaldırıp içindekileri dikkatlice kapatıyorum.\n\n#BOL [ROOT.Var('root_dice_1').GetValue|0]#!. [gambler.GetFirstName]'ü yakından tarayıp ipuçları arıyorum."
- ep2_locale_events.1011.tell.good: "\n\nBu [gambler.GetFirstNamePossessiveNoTooltip] dudağının hafifçe yukarı doğru kıvrıldığını mı görüyorum? Göründüğü gibi hemen kayboluyor ama en ufak bir dalgalanma en derin gerçekleri açığa çıkarabilir..."
- ep2_locale_events.1011.tell.bad: "\n\n[gambler.GetFirstNamePossessiveNoTooltip] gözler bir kez, iki kez aşağı doğru titredi. Göründüğü gibi hemen hemen kayboldu, ancak en ufak bir dalgalanma en derin gerçekleri açığa çıkarabilir..."
- ep2_locale_events.1011.average: "\n\n[gambler.GetFirstNamePossessiveNoTooltip] ellerim hafifçe titriyor ve zafer kazanmışçasına ağzımı açıyorum, ancak [gambler.GetHerHis] gözlerimde bir ışıltı var. Titreme bir ipucu muydu? Gözler miydi? Bunlardan herhangi biri işe yarar mı?"
- ep2_locale_events.1011.deceitful: "\n\n[gambler.GetFirstNamePossessiveNoTooltip] gözler benimkilere dikildi, [gambler.GetHerHis] yüzünde hiçbir duygu kıpırtısı yok. Bakışlarımı bölüyorum ve [gambler.GetHerHis]'in beden diline bakıyorum, ama sanki [gambler.GetSheHe] bir heykelmiş gibi."
- ep2_locale_events.1011.a: "Benim zarım... daha yüksek!"
- ep2_locale_events.1011.b: "Benim zarlarım daha düşük."
-  
- ep2_locale_events.1012.t: "$tournament_locale_tavern$: İkinci Tur"
- ep2_locale_events.1012.opening.win: "Zarlarımızı ortaya koyuyoruz. İkimizin de anlayıp kabul etmemiz bir an alıyor. Kazandığımı!\n\n"Ah! İyi tahmin ettin! İlk tur senin!" [gambler.GetFirstNamePossessive] dudaklar gülümsüyor, ama [gambler.GetHerHis] gözlere ulaşamıyor. "Bir sonraki tur!" Zarlar bir kez daha bardaklarda şıngırdadı."
- ep2_locale_events.1012.opening.lose: "Zarlarımızı ortaya koyuyoruz. İkimizin de benim kaybettiğimi anlaması bir an sürüyor. [gambler.GetFirstName] gururla gülümsüyor.\n\n"Talihsiz! Görünüşe göre yanılmışsın. Bir sonraki tur!" Zarlar bir kez daha bardaklarda şıngırdadı."
- ep2_locale_events.1012.opening.draw: "Zarlarımızı ortaya koyuyoruz. Bardaklar kaybolurken sayıların eşit olduğunu hesaplamamız sadece bir anımızı alıyor.\n\n"Peki o zaman. Buna berabere diyelim." [gambler.GetFirstNamePossessive] hayal kırıklığı açıkça görülüyor. "Bir sonraki tur!" Zarlar bardaklarda bir kez daha şıngırdadı."
- ep2_locale_events.1012.dice_reveal: "\n\nKupamın bana en yakın olan tarafını kaldırıyorum. Zarların üzerindeki küçük oymalar sayıyı ortaya çıkarıyor: #BOL [ROOT.Var('root_dice_2').GetValue|0]#!. Kupayı tekrar masaya koyuyorum ve yukarı bakıyorum."
- ep2_locale_events.1012.tell.good: "\n\n[gambler.GetFirstName] masaya [gambler.GetHerHis] parmak vuruyor. Başın tavana doğru eğilmesi belli belirsiz bir ipucu mu? Kesinlikle [gambler.GetSheHe] eskisinden daha dik oturuyor gibi görünüyor..."
- ep2_locale_events.1012.tell.bad: "\n\nGözlerin hafifçe daralması, ağırlığın ufak bir kayması. [gambler.GetFirstName] bir şey saklıyor. Belki de o atış çok yüksek değil..."
- ep2_locale_events.1012.average: "\n\n[gambler.GetFirstNamePossessiveNoTooltip] göz odanın etrafında dolaşıyor, benimki dışında her yere bakıyor. [gambler.GetHerHis|U] kol bardağı kaldırırken hafifçe titriyor. Bunun alakalı olup olmadığından emin olamıyorum..."
- ep2_locale_events.1012.deceitful: "\n\n[gambler.GetFirstNamePossessiveNoTooltip] duruşu kendinden emin, neredeyse küstah, ama [gambler.GetSheHe] bardağı bile kaldırmamış! [gambler.GetHerHis|U] gözler aşağı doğru kayarken [gambler.GetSheHe] bardağı sertçe [gambler.GetHerHim]'ten uzaklaştırıyor ve ardından masayla aynı hizaya getiriyor. [gambler.GetHerHis] tavırları zerre kadar değişmiyor."
- ep2_locale_events.1012.a: "Daha yüksek, sanırım."
- ep2_locale_events.1012.b: "Kesinlikle daha düşük."
-  
- ep2_locale_events.1013.t: "$tournament_locale_tavern$: Karar verici"
- ep2_locale_events.1013.opening: "Zarlarımızı aynı anda ortaya koyuyoruz, ancak hemen üçüncü bir turun gerekli olduğu anlaşılıyor. Kupalarımızı ve zarlarımızı son, kazananın her şeyi aldığı tur için alıyoruz."
- ep2_locale_events.1013.dice_reveal: "\n\nKupamın bana en yakın olan tarafını kaldırıyorum. Zarların üzerindeki küçük oymalar sayıyı ortaya çıkarıyor: #BOL [ROOT.Var('root_dice_3').GetValue|0]#!. Kupayı tekrar masaya koyuyorum ve yukarı bakıyorum."
- ep2_locale_events.1013.tell.good: "\n\nÜç turda, [gambler.GetFirstNamePossessive]'ın işaretleri neredeyse belirgin hale geliyor. [gambler.GetHerHis|U]'in burnu zar zor fark edilir şekilde genişliyor, bundan eminim. Ama bu sadece bir blöf mü?"
- ep2_locale_events.1013.tell.bad: "\n\n[gambler.GetFirstName] koşuyor [gambler.GetHerHis] el [gambler.GetHerHis] başı dalgın bir şekilde. Umutsuzca mı? Bu özellikle düşük bir atış mı? [gambler.GetSheHe|U] beni görüyor ve biraz cesur bir yüz ifadesi takınıyor. Bu #EMP olabilir#! çift blöf olabilir..."
- ep2_locale_events.1013.average: "\n\n[gambler.GetFirstNamePossessiveNoTooltip] bana dik dik bakmaya çalışıyor, ama [gambler.GetHerHis] bakışları titriyor. Titreyen bir dudak #EMP bir şeyi ele veriyor#!, ama bu ne olabilir?"
- ep2_locale_events.1013.deceitful: "\n\n[gambler.GetFirstNamePossessive]'ın bu zeka savaşındaki duygusuzluğu gerçekten şaşırtıcıydı ve burada da farklı değil. [gambler.GetHerHis]'in yüzündeki duygu eksikliği neredeyse şok edici. Basit bir şansa bağlı olması gerekecek."
- ep2_locale_events.1013.a: "Ben zarlarıma inanıyorum. Daha yüksek!"
- ep2_locale_events.1013.b: "Benim zarım daha düşük."
-  
- ep2_locale_events.1014.t: "$tournament_locale_tavern$: İyi Bahis"
- ep2_locale_events.1014.opening: "Kupalar son kez yukarı çıkıyor. Etrafımızda toplanan küçük kalabalık, bunu görmek için eğiliyor...\n\n"
- ep2_locale_events.1014.win: "Galip benim! [gambler.GetFirstName] en cesur [gambler.GetSheHe] yüzünü takınıyor ama [gambler.GetHerHis] rahatsızlığı açıkça görülüyor. [gambler.GetSheHe|U] bahis oynadığımız çantaları masanın benim tarafıma itiyor ve tam da nezaketin tam ortasında, öfkeyle uzaklaşıyor.\n\nSandalyemde arkama yaslanıyorum, zihinsel olarak bitkin olduğum kadar neşeliyim de."
- ep2_locale_events.1014.lose: "Kaybettim! [gambler.GetFirstName] sevinçle öterken [gambler.GetSheHe] ikimizin de bahse girdiğimiz çantaları kaptı.\n\n"Bir dahaki sefere daha iyi şanslar!" [gambler.GetSheHe|U] neşeyle kıkırdadı ve kucak dolusu parayla kaçtı.\n\nSandalyemde arkama yaslandım, moralim bozuldu."
- ep2_locale_events.1014.draw: "Biz... berabere kaldık mı? [gambler.GetFirstName], masanın üzerine galip için koyduğumuz küçük altın keselerini geri alırken, [gambler.GetHerHis] başını pişmanlıkla ovuşturur.\n\n"Bazen zarlar gizemli yollarla işler." [gambler.GetFirstNameNoTooltip] omuz silkerek der. "Yine de iyi oynadın." [gambler.GetSheHe|U] ayağa kalkar ve uzaklaşır."
- ep2_locale_events.1014.a: "Barmen! İçecekler benden!"
- ep2_locale_events.1014.b: "Ah, zaferin tadı!"
- ep2_locale_events.1014.c: "Acılarımı boğmak için bir içki sanırım."
- ep2_locale_events.1014.d: "Kahretsin!"
- ep2_locale_events.1014.e: "İşte bu kadar sanırım."
- ep2_locale_events.1014.f: "Ondan sonra bir içki içmem iyi olurdu!"
-  
- ep2_locale_events.1050.t: "$tournament_locale_tavern$: Bir Bahis [ROOT.Char.GetWomanMan|U]?"
- ep2_locale_events.1050.desc: "Tavernaya girer girmez bir figür tarafından durduruldum. [wealthy_gambler.GetFirstName] omzuma vurarak beni tenha bir köşeye götürdü, [wealthy_gambler.GetHerHis] sesini komplocu bir tona düşürdü.\n\n"Hastiludes'e katılıyorsun, değil mi?" [wealthy_gambler.GetSheHe|U] benim onayımı fark etmeden devam etti. "Şey, oldukça sıra dışı bir bahsim var, anlıyor musun? İş ortaklarımdan biri senin bir nevi #EMP süt çocuğu#!, olduğunu düşünüyor." [wealthy_gambler.GetSheHe|U] hemen itirazlarımı savuşturdu.\n\n"Onurunu savundum, elbette savundum, [ROOT.Char.GetLadyLord]'m! Turnuvada kask takmadan gidecek kadar cesur olduğunu söylemiştim! Elbette, eğer bu olayı #EMP garanti edebilirsen#!, sanırım senin için değerli hale getirmek için elimden geleni yaparım...""
- ep2_locale_events.1050.a: "Sanırım oradakiler senin kumarbaz arkadaşların değil?"
- ep2_locale_events.1050.a.tt: "Belki de bu küçük düzeltme hakkında bilgi edinmek isterler. Tabii ki, madeni para bir dili susturmaya yetecek kadar iyi değilse..."
- ep2_locale_events.1050.b: "#EMP Korkak mı?!#! Hiçbir lanet eldiven olmadan yarışacağım!#!"
- ep2_locale_events.1050.c: "Madeni paraya ihtiyacım var..."
- ep2_locale_events.1050.d: "Ne kadar utanç verici bir teklif!"
-  
-  # TEMPLE 
- ep2_locale_events.1500.t: "$tournament_locale_religious_building$: [ROOT.Char.GetFaith.HighGodNamePossessive] İyilikler"
- ep2_locale_events.1500.host_faith: "[tournament_priest.GetFirstName] yanaşmama izin vermek için kenara çekildiğinde, turnuva alanının yakınındaki [ROOT.Char.GetFaith.HouseOfWorship]'de yalnız başıma ciddi bir an geçiriyorum."
-  #AGOT Modified, scope fix 
- # ep2_locale_events.1500.other_faith: "[activity.GetCurrentPhase.GetCurrentLocation.GetFaith.HouseOfWorship] of [activity.GetCurrentPhase.GetLocation.GetNameNoTooltip], [tournament_priest.GetFirstName]'ün yakınında bulunan küçük geçici [ROOT.Char.GetFaith.GetAdjectiveNoTooltip] tapınağında kendime saygılı bir mesafede durarak bir an ayırıyorum."
- ep2_locale_events.1500.other_faith: "[activity.GetCurrentPhase.GetLocation.GetCounty.GetFaith.HouseOfWorship] of [activity.GetCurrentPhase.GetLocation.GetNameNoTooltip], [tournament_priest.GetFirstName]'ün yakınında bulunan küçük geçici [ROOT.Char.GetFaith.GetAdjectiveNoTooltip] tapınağında kendime saygılı bir mesafede durarak bir an ayırıyorum."
- ep2_locale_events.1500.desc: "\n\n[ROOT.Char.GetFaith.PantheonTerm]'ın huzurunda düşünürken, kalbimin derinliklerinde bu şenlik günlerinden ne çıkmasını istediğimi merak ediyorum."
- ep2_locale_events.1500.a: "Bana şan getir, [ROOT.Char.GetFaith.WarGodName|U]."
- ep2_locale_events.1500.b: "[ROOT.Char.Custom2('RelationToMeShort', bad_prayer_target)], [bad_prayer_target.GetFirstNamePossessiveNoTooltip] hayatımı zorlaştır."
- ep2_locale_events.1500.c: "Gülümse [ROOT.Char.Custom2('RelationToMeShort', good_prayer_target)], [good_prayer_target.GetFirstNameNoTooltip]."
- ep2_locale_events.1500.d: "[ROOT.Char.Custom2('RelationToMeShort', backup_prayer_target)], [backup_prayer_target.GetFirstNameNoTooltip]'im için ceza!"
- ep2_locale_events.1500.e: "[ROOT.Char.Custom2('RelationToMeShort', backup_prayer_target)], [backup_prayer_target.GetFirstNamePossessiveNoTooltip] elimi yönlendir."
- ep2_locale_events.1500.f: "[wager_prayer_target.GetFirstNameNoTooltip]'ın zaferi ve cüzdanım!"
- ep2_locale_events.1500.g: "İç huzuru bulmama izin ver."
-  
- ep2_locale_events.1501.t: "$tournament_locale_religious_building$: Performatif İbadet"
- ep2_locale_events.1501.desc: "Bir tür rehberlik arayışında kendimi [ROOT.Char.GetFaith.HouseOfWorship]'a doğru kendimi merkeze çekerken buluyorum. Gerçek bir şans eseri, kendimi merkeze koymaktan çok daha ilginç bir şey buluyorum: [seduce_target.GetFirstName] kapının yanında oldukça hüzünlü bir şekilde duruyor.\n\n[seduce_target.GetSheHe|U] bana yarım bir gülümsemeyle bakıyor, dikkat açıkça başka bir yerde. Şimdi [seduce_target.GetHerHim]'ü dini bir yakarış gösterisiyle kazanmak için mükemmel bir fırsat!\n\nYa da... belki de değil? [seduce_target.GetSheHe] neyi tercih ederdi? Belki de [seduce_target.GetSheHe] mütevazı tiptir?"
- ep2_locale_events.1501.a: "Bağlılığımı şüpheye yer bırakmayacak şekilde ispat edeceğim!"
- ep2_locale_events.1501.a.tt: "Dini coşkum sınır tanımıyor canım [seduce_target.GetFirstNameNoTooltip]!"
- ep2_locale_events.1501.a.success: "Performansınız yankı uyandırıyor"
- ep2_locale_events.1501.a.failure: "[seduce_target.GetFirstNameNoTooltip|U] ekranınız tarafından kapatıldı"
- ep2_locale_events.1501.b: "[seduce_target.GetFirstNameNoTooltip]'ın biraz daha rahat olduğunu düşünüyorum."
- ep2_locale_events.1501.b.tt: "Ayinlerimi yaparken gözlerimi hafifçe devirip bilmiş bir şekilde sırıtmam, [seduce_target.GetFirstNameNoTooltip]'a mesajı gayet açık bir şekilde iletmiş olmalı."
- ep2_locale_events.1501.b.success: "[seduce_target.GetFirstName|U] alaycılığınızdan zevk alıyor"
- ep2_locale_events.1501.b.failure: "[seduce_target.GetFirstNameNoTooltip|U] senin dinden dönmen yüzünden dehşete düştü"
- ep2_locale_events.1501.c: "Belki de gitmeliyim."
-  
- ep2_locale_events.1510.t: "$tournament_locale_religious_building$: Kutsala Aykırılık"
- ep2_locale_events.1510.desc: "Günlük tören için toplanan ibadet edenlerin üzerine sessizlik çökerken, sessizlik aniden bağırış ve haykırışların hızla yaklaşmasıyla bozulur.\n\nKapı hızla açılır ve bir düzine kahkaha atan eğlence düşkünü [ROOT.Char.GetFaith.HouseOfWorship]'a düşer."
- ep2_locale_events.1510.alcohol: "Ellerinde kupalar ve fıçılar."
- ep2_locale_events.1510.hashish: "esrar kokan."
- ep2_locale_events.1510.closing: "\n\n[instigator_scope.GetTitledFirstName], açıkça kışkırtıcı olan, aptalca sırıtıyor, "Peki bütün bunlar ne?! Müzik nerede?"\n\n[tournament_priest.GetFirstName], inanmazlık ve dehşet içinde donmuş bir şekilde izliyor."
- ep2_locale_events.1510.a: "Bu bir küfürdür! Muhafızlar, tutuklayın şunları!"
- ep2_locale_events.1510.b: "Parti mi? Birisi parti mi dedi?"
- ep2_locale_events.1510.c: "Bu faulü kaldır [instigator_scope.GetFaith.GetAdjectiveNoTooltip] [instigator_scope.Custom('GetUnbelieverName')]!"
- ep2_locale_events.1510.d: "Dışarı çıkın sizi sevimli hödükler."
-  # ARMORER 
- ep2_locale_events.2001.t: "$tournament_locale_armorer$: Şöhret mi, Etkililik mi?"
- ep2_locale_events.2001.desc: "[improve_armour.GetName]'ımı tezgahın üzerine koyuyorum ve [tournament_armorer.GetFirstName] elini üstünde gezdiriyor.\n\n"Kötü durumda. Zırhına bakılmasının üzerinden epey zaman geçti, değil mi?" [tournament_armorer.GetSheHe|U] iç çekiyor ve [tournament_armorer.GetHerHim]'ü bekleyen bitmemiş projelere bakıyor.\n\n"Çok fazla zamanım yok. Belki cilalamak için yeterli zamanım olur ya da belki biraz bakım için yağlarım. Ne yaptırmak istiyorsun?"
- ep2_locale_events.2001.a: "Ayna parlaklığına getirin!"
- ep2_locale_events.2001.a.tt: "[improve_armour.GetName], [prestige|E] değiştiricisi kazanır"
- ep2_locale_events.2001.b: "Yağlanmasını ve bakımının yapılmasını tercih ederim."
- ep2_locale_events.2001.b.tt: "[improve_armour.GetName], [prowess|E] değiştiricisi kazanır"
- ep2_locale_events.2001.c: "Şu anki haliyle gayet iyi durumda."
-  
- ep2_locale_events.2002.t: "$tournament_locale_armorer$: Yırtık Kayışlar"
- ep2_locale_events.2002.desc: "[tournament_armorer.GetFirstName] neşeyle [armour.GetName]'imi sunuyor. Işığa kaldırdığımda parlıyor.\n\nMadalyonu memnun zanaatkara uzatırken [tournament_armorer.GetHerHim]'nin yanında duran genç bir çırak görüyorum. [apprentice.GetSheHe|U] masanın etrafında dolaşıyor ve [apprentice.GetHerHis] usta parayı ayırıyor.\n\n"Affet beni, [ROOT.Char.GetLadyLord], ama..." [apprentice.GetSheHe|U] zırhın deri kayışlarını işaret ediyor. "[tournament_armorer.GetSheHe|U] deriyi işlemek için bir tabakçı bile ödemedi."\n\nDaha yakından bakıyorum. Yanlış anlaşılması mümkün değil. Deri yıpranmış ve yıpranmış, açıkça yeni değil. Arka planda, [tournament_armorer.GetSheHe] altını içine atarken zırhçının kesesi şıngırdadı."
- ep2_locale_events.2002.a: "Aldatacak [ROOT.Char.GetWomanMan] değilim, [tournament_armorer.GetFirstNameNoTooltip]."
- ep2_locale_events.2002.b: "[tournament_armorer.GetFirstNameNoTooltip]! Bunun anlamı ne?"
- ep2_locale_events.2002.b.success: "[tournament_armorer.GetFirstNameNoTooltip] isteksizce onarımları yapar"
- ep2_locale_events.2002.b.failure: "[tournament_armorer.GetFirstNameNoTooltip] solucan [tournament_armorer.GetHerHis] çıkış yolu"
- ep2_locale_events.2002.c: "Kaliteli çemberlemenin parasını ben öderim."
- ep2_locale_events.2002.d: "Buna vaktim yok."
-  
- ep2_locale_events.2010.t: "$tournament_locale_armorer$: Savunma Hediyeleri"
- ep2_locale_events.2010.desc: "Zırhçının dükkanı koruyucu malzemelerle dolup taşıyor; üst veya alt, ucuz veya pahalı, ikisinin arasındaki her şey.\n\nHayat kurtarma ekipmanlarını incelerken [befriend_target.GetFirstName]'ı düşünmeden edemiyorum.\n\n[befriend_target.GetSheHe|U] burada #EMP bir şey#! takdir edebilir, ama ne?"
- ep2_locale_events.2010.a: "Faydalı bir zırh."
- ep2_locale_events.2010.a.tt: "#F Temkinli tarafa [befriend_actor.GetFirstNamePossessiveNoTooltip] hitap.#!"
- ep2_locale_events.2010.b: "[befriend_actor.GetSheHe|U] bu ekran kalkanını beğenebilir."
- ep2_locale_events.2010.b.tt: "#F Gururlu tarafa [befriend_actor.GetFirstNamePossessiveNoTooltip] hitap.#!"
- ep2_locale_events.2010.c: "Özel yapım turnuva miğferi."
- ep2_locale_events.2010.c.tt: "#F [befriend_actor.GetFirstNamePossessiveNoTooltip] rekabetçi tarafa hitap edin.#!"
- ep2_locale_events.2010.d: "[befriend_target.GetHerHim]'ı etkilemenin başka bir yolunu bulacağım."
- ep2_locale_events.2011.reply_armor: "İçerisinde [newly_created_artifact.GetType] seti var, biraz basit olsa da iyi yapılmış.\n\n"
- ep2_locale_events.2011.reply_shield: "İçerisinde ailemin arması ile süslenmiş, yeni kaplanmış bir kalkan var.\n\n"
- ep2_locale_events.2011.reply_tournament: "İçerisinde, savaş alanında pratik olandan daha fazla koruma sağlayan özel yapım bir turnuva miğferi bulunmaktadır.\n\n"
- ep2_locale_events.2011.opening: "[befriend_actor.GetTitledFirstName] aniden çadırımın dışında belirir, elinde büyük bir bohça vardır. "Bu senin için, [ROOT.Char.GetFirstNameNoTooltip]" [befriend_actor.GetSheHe] sıcak bir şekilde gülümser. Bir hediye mi?\n\n"
- ep2_locale_events.2011.success_armor: "$ep2_locale_events.2011.reply_armor$Güzel bir koleksiyon, açıkça sağlam bir şekilde hazırlanmış ve zaten oldukça iyi bir şekilde donatılmış."
- ep2_locale_events.2011.armor: "$ep2_locale_events.2011.reply_armor$Ne kadar çirkin bir montaj, bazı kakmalar gerçekten bu kadar pahalı mıydı?"
- ep2_locale_events.2011.success_shield: "$ep2_locale_events.2011.reply_shield$Asılmak için yapılmış olsa bile incecik çizilmiş bir arması olan bir çalışma nesnesidir."
- ep2_locale_events.2011.shield: "$ep2_locale_events.2011.reply_shield$A kalkan. #EMP I#!'nin kalkanına ne gerek var?"
- ep2_locale_events.2011.success_tournament: "$ep2_locale_events.2011.reply_tournament$Savaş yerine rekabetin ihtiyaçlarına göre tasarlanmış akıllı bir kittir."
- ep2_locale_events.2011.tournament: "$ep2_locale_events.2011.reply_tournament$Açıkçası, bu küçük yarışmaları bu kadar ciddiye alan kim var ki, böyle hile yapma gereği duyuyor?"
- ep2_locale_events.2011.a: "Hediyenin çok güzel seçildiğini inkar edemem."
- ep2_locale_events.2011.b: ""Ah... çok... ilginç bir nesne.""
- ep2_locale_events.2012.opening: "[befriend_target.GetTitledFirstName], ağır paketi gülümseyerek alır, beklenmedik hediye karşısında açıkça heyecanlanmıştır.\n\n"
- ep2_locale_events.2012.success_reply: "[befriend_target.GetSheHe|U] takdirini gizleyemez [befriend_target.GetHerHis] [befriend_target.GetSheHe] ise hediyeyi her açıdan inceler."
- ep2_locale_events.2012.reply: "[befriend_target.GetSheHe|U], [befriend_target.GetSheHe] baktığında pek de mutlu görünmüyor."
- ep2_locale_events.2012.success_armor: "\n\n"Bunlar harika parçalar, bunları savaşta korkusuzca giyerdim!""
- ep2_locale_events.2012.armor: ""Ah... zırh... sanırım en azından işe yarar.""
- ep2_locale_events.2012.success_shield: "\n\n"Şuna bak! Hemen çadırımda sergileyeceğim!""
- ep2_locale_events.2012.shield: ""Bir kalkan... çok iyi... teşekkür ederim.""
- ep2_locale_events.2012.success_tournament: ""Ne kadar akıllıca bir tasarım! Yarışmalarda bunu giyeceğimden emin olabilirsiniz!""
- ep2_locale_events.2012.tournament: ""Ha, yarışmalar için mi diyorsun? Öyle değil mi...""
- ep2_locale_events.2012.success: "\n\n[befriend_target.GetSheHe|U] bana duyguyla teşekkür ediyor. Sanırım doğru seçimi yaptım!"
- ep2_locale_events.2012.failure: "\n\n[befriend_target.GetSheHe|U] bana sertçe teşekkür ediyor. Belki de yanlış bir seçim yaptım..."
- ep2_locale_events.2012.a: "Biliyordum!"
- ep2_locale_events.2012.b: "Silah ustası mutluydu en azından..."
-  
- ep2_locale_events.2050.t: "$tournament_locale_armorer$: Parıldayan Panoply"
- ep2_locale_events.2050.desc: "Zırhımı görünce, [tournament_armorer.GetFirstName] [tournament_armorer.GetHerHis] elini [tournament_armorer.GetHerHis] kalçasına koyar ve yüksek sesle nefes verir.\n\n"Eh, iş büyük bir iş. #EMP müthiş#! yeteneklerimden biri için çok uzun sürmemeli, tabii!" [tournament_armorer.GetSheHe|U] bana dişlerini göstererek sırıttı. Zırha baktım. Bana iyi görünüyor. [tournament_armorer.GetFirstNameNoTooltip] şüpheciliğimi yakalar ve [tournament_armorer.GetHerHis] başını sallar.\n\n"Yok, kesinlikle gözden geçirilmesi gerekiyor. Gerekmeseydi önermezdim!""
- ep2_locale_events.2050.a: "Tamam, sihrini göster."
- ep2_locale_events.2050.a.success: "Zırhınız geliştirildi"
- ep2_locale_events.2050.a.critsuccess: "Zırhınız önemli ölçüde iyileştirildi"
- ep2_locale_events.2050.a.armour1: "[prowess|E], #color_green +1#! oranında artar"
- ep2_locale_events.2050.a.durability1: "[durability|E], #color_green +5#! oranında artar"
- ep2_locale_events.2050.a.armour1.tt: "[prowess|E], #color_dark_green +1#! oranında artar"
- ep2_locale_events.2050.a.durability1.tt: "[durability|E], #color_dark_green +5#! oranında artar"
- ep2_locale_events.2050.a.criticalsuccess: "Zırhınız önemli ölçüde geliştirildi"
- ep2_locale_events.2050.a.armour2: "[prowess|E], #color_green +2#! oranında artar"
- ep2_locale_events.2050.a.durability2: "[durability|E], #color_green +10#! oranında artar"
- ep2_locale_events.2050.a.prestige2: "Aylık [prestige|E], #color_green +0.04%#! oranında artar"
- ep2_locale_events.2050.a.armour2.tt: "[prowess|E], #color_dark_green +2#! oranında artar"
- ep2_locale_events.2050.a.durability2.tt: "[durability|E], #color_dark_green +10#! oranında artar"
- ep2_locale_events.2050.a.prestige2.tt: "Aylık [prestige|E], #color_dark_green +0.04%#! oranında artar"
- ep2_locale_events.2050.a.failure: "Zırhınızın onarımı berbat"
- ep2_locale_events.2050.a.durability3: "[durability|E], #color_red -5#! oranında azalır"
- ep2_locale_events.2050.b: "İyi olacağını düşünüyorum."
-  
-  # TAILOR 
- ep2_locale_events.2500.t: "$tournament_locale_tailor$: Hatalı Arma"
- ep2_locale_events.2500.desc: "Terzinin dükkanında sergilenen mallara göz atarken, giysi ve ıvır zıvır yığınları arasında özenle paketlenmiş bir paket görüyorum.\n\nTerzi paketi benim için sevinçle açıyor, deri bağlarını dikkatlice çözerek zarifçe işlenmiş bir armayı ortaya çıkarıyor: #EMP [tailor_mixup.GetHouse.GetBaseName]#! arması."
- ep2_locale_events.2500.a.rival: "[tailor_mixup.GetHouse.GetBaseNameNoTooltip] köpek! Yak onu, ben sana #EMP öderim#!!"
- ep2_locale_events.2500.a: "Bana bir iyilik yap, şunu yak olur mu?"
- ep2_locale_events.2500.b: "Bak, bunları alacağım ama hiçbir haber yok."
- ep2_locale_events.2500.b.tt: "Bu değiştirici, House [tailor_mixup.GetHouse.GetName]'ye karşı [hostile_scheme|E] [success_chance|E]'inizi artıracaktır."
- ep2_locale_events.2500.c: "Harika... [ROOT.Char.GetHouse.GetNameNoTooltip] armasını istiyorum!"
- ep2_locale_events.2500.d: "Güzel iş..."
-  
- ep2_locale_events.2501.t: "$tournament_locale_tailor$: Papa-rahip Giysileri"
- ep2_locale_events.2501.desc: "Terzide sunulan kumaşlar ve tekstiller, kaba kenevirden en iyi damasklara, kadifelere ve ipeklere kadar uzanıyor. [ROOT.Char.Custom2('RelationToMeShort', random_knight)] [random_knight.GetFirstName]'imle birlikte bunları incelerken, garip bir şekilde tanıdık bir desen beni duraklatıyor.\n\nTam cübbeyi ışığa doğru kaldırırken gözlerim büyüyor. Bir Papa'nın kıyafetlerinin tam bir yeniden yapımı!\n\n"Kardinaller için de var, efendim!" [tournament_tailor.GetFirstName] terzi ikimizin arkasında dolanıyor. [random_knight.GetFirstNamePossessiveNoTooltip] gözler neşeyle parlıyor ve [random_knight.GetSheHe] kaburgalarıma öfkeyle dokunuyor. Terzi tekrar konuşuyor.\n\n"Ve o da uyumlu bir şapkayla geliyor.""
- ep2_locale_events.2501.a: "#EMP SATILDI!#!"
- ep2_locale_events.2501.a.tt: "Sen ve [knights|E]'ın ipleri sizde..."
- ep2_locale_events.2501.b: "Bu küfürdür!"
-  
- ep2_locale_events.2502.t: "$tournament_locale_tailor$: Dövüş Cübbeleri"
- ep2_locale_events.2502.desc: "Duygusuz terziye bakıyorum, [tournament_tailor.GetHerHim]'dan tüm gün duyduğum en saçma ifadeyi tekrarlamasını sessizce yalvarıyorum.\n\n"Bu bir düello pelerini. Daha önce hiç duymadın mı?" [tournament_tailor.GetFirstName] odadaki aptal benmişim gibi [tournament_tailor.GetHerHis] başını sallıyor. "Hareketine yardımcı oluyor, savaşın tüm nemini uzaklaştırıyor, ayrıca seni sıcak tutuyor ve turlar arasında gitmeye hazır hale getiriyor. Tüm büyüklerde var!"\n\nTerzinin sert satışları bitince dikkatimi tuttuğum mantoya geri veriyorum. Kumaş açıkça dayanıklı ve yüksek kaliteliydi, ama... bir #EMP düello pelerini mi? Gerçekten mi?#!"
- ep2_locale_events.2502.a: "Benim daha iyi kararımın aksine... anlaştık."
- ep2_locale_events.2502.b: "Beni aptal sanıyorsun, belli!"
- ep2_locale_events.2502.b.tt: "Her şeye takılıp kalıyordu!"
-  
- ep2_locale_events.2510.t: "$tournament_locale_tailor$: Konulu Hediyeler"
- ep2_locale_events.2510.desc: "Terzinin tezgahında asılı olan nadir kumaş toplarını ve kumaş örneklerini inceliyorum; En yüksekten en düşüğe kadar her zevke hizmet veriliyor.\n\nGösterişe bakarken [befriend_target.GetFirstName]'ın neyi takdir edeceğini düşünmeden edemiyorum.\n\nŞüphesiz burada #EMP bir şey#! [befriend_target.GetHerHim]'e hitap edecek.. ."
- ep2_locale_events.2510.a: "Güzel bir pankart."
- ep2_locale_events.2510.a.tt: "#F Gururlu tarafa [befriend_actor.GetFirstNamePossessiveNoTooltip] hitap.#!"
- ep2_locale_events.2510.b: "Gambeson'dan daha faydalı bir şey yoktur."
- ep2_locale_events.2510.b.tt: "#F Savaşçı tarafa [befriend_actor.GetFirstNamePossessiveNoTooltip] hitap.#!"
- ep2_locale_events.2510.c: "Bu geyik derisi eldivenler çok güzel."
- ep2_locale_events.2510.c.tt: "#F Nazik tarafa [befriend_actor.GetFirstNamePossessiveNoTooltip] hitap edin.#!"
- ep2_locale_events.2510.d: "Belki başka zaman."
- ep2_locale_events.2511.reply_banner: "İçerisinde armanızın yer aldığı katlanmış, ince dokunmuş bir sancak var.\n\n"
- ep2_locale_events.2511.reply_gambeson: "İçerisinde zırhın altında giyilen dayanıklı bir gömlek olan kapitone bir gambeson var.\n\n"
- ep2_locale_events.2511.reply_glove: "İçerisinde yumuşak, narin bir şekilde dikilmiş bir çift geyik derisi eldiven var..\n\n"
- ep2_locale_events.2511.opening: "[befriend_actor.GetTitledFirstName] sanki hiç yoktan varmış gibi geliyor ve bana katlanmış bir paketi gülümseyerek uzatıyor. Hediye mi?\n\n"
- ep2_locale_events.2511.success_banner: "$ep2_locale_events.2511.reply_banner$Hiçbir kusur bulamadım, amblemim doğru ve zevkli bir şekilde yakalanmış."
- ep2_locale_events.2511.banner: "$ep2_locale_events.2511.reply_banner$Benim heyecan eksikliğim ortada, buna ne ihtiyacım var?"
- ep2_locale_events.2511.success_gambeson: "$ep2_locale_events.2511.reply_gambeson$Yakından incelendiğinde güzel bir parça; çok katmanlı ve açıkça sağlam."
- ep2_locale_events.2511.gambeson: "$ep2_locale_events.2511.reply_gambeson$Böyle bir eşyayı herhangi bir küçük dokumacıdan alabilirim, ne olmuş yani?"
- ep2_locale_events.2511.success_glove: "$ep2_locale_events.2511.reply_glove$Kadife kadar yumuşaklar ve bir şekilde neredeyse mükemmel bir şekilde oturuyorlar."
- ep2_locale_events.2511.glove: "$ep2_locale_events.2511.reply_glove$Ne kadar... zarif..."
- ep2_locale_events.2511.a: "Gülümsemeden edemiyorum, mükemmel!"
- ep2_locale_events.2511.b: ""Teşekkür ederim...""
- ep2_locale_events.2512.opening: "[befriend_target.GetTitledFirstName] paketimi nazikçe kabul ediyor ve [befriend_target.GetHerHis] heyecanının izin verdiği kadar dikkatli bir şekilde açıyor.\n\n"
- ep2_locale_events.2512.success_reply: "[befriend_target.GetHerHis|U] Gözler bunu görünce hemen ısındı. İyi bir işaret."
- ep2_locale_events.2512.reply: "[befriend_target.GetHerHis] tepkisini ölçemiyorum, sanki hiç değişmemiş gibi."
- ep2_locale_events.2512.success_banner: "\n\n"Bu harika! Böylesine ustaca bir işleme, tasarımı daha da vurguluyor!""
- ep2_locale_events.2512.banner: ""Ah, bir pankart. Hemen... asacağım.""
- ep2_locale_events.2512.success_gambeson: "\n\n"Ne güzel bir çalışma, bu en ağır darbeleri bile durdurur.""
- ep2_locale_events.2512.gambeson: ""Bunu... diğerlerinin yanına koyacağım...""
- ep2_locale_events.2512.success_glove: ""Aman Tanrım, bunlar mükemmel! Bunu nasıl yaptın?!""
- ep2_locale_events.2512.glove: ""Ah, eldivenler... çok güzel...""
- ep2_locale_events.2512.success: "\n\n[befriend_target.GetSheHe|U] Yollarımızı ayırmadan önce bana çok teşekkür ederim."
- ep2_locale_events.2512.failure: "\n\n[befriend_target.GetSheHe|U] gitmeden önce bana kısaca teşekkür ediyor..."
- ep2_locale_events.2512.a: "İyi gitti."
- ep2_locale_events.2512.b: "Oh iyi..."
-  
- ep2_locale_events.2560.t: "$tournament_locale_tailor$: Yeni Bir Satın Alma"
- ep2_locale_events.2560.desc.intro: "[tailor.GetTitledFirstName]'ın bir kumaş parçasını kestiğini görüyorum. [tailor.GetHerHis] eserin sergilenmesi için birkaç masa yerleştirildi: çoraplar ve baş örtüleri, Ünvanlar ve kollar. Karşıda hafifçe yanan bir ocak var.\n\n"
- ep2_locale_events.2560.desc.previous_artifact: ""Giysilerinizi süsleyecek bir şey mi arıyorsunuz, [ROOT.Char.GetLadyLord]'ım? Başkentten bazı eserler de getirdiğinizi görüyorum... Müsaadenizle, [capital_barony.GetAdjectiveNoTooltip] ustalarının çalışmalarını incelemek hep istemişimdir.""
- ep2_locale_events.2560.desc.new_artifact: ""Dikkat et!" [tailor.GetSheHe] beni uyarıyor, aleti neredeyse düşürüyor. "Çamaşırlara takılmak üzereydin, [ROOT.Char.GetLadyLord]'im," [tailor.GetSheHe] özür dilercesine mırıldanıyor, hızla kıyafetleri topluyor. "Ziyaretinin sebebini tahmin edebileceğimden eminim," [tailor.GetHerHis] yüzü karmaşadan zar zor dışarı çıkıyor."
- ep2_locale_events.2560.desc.new_artifact_2: ""[ROOT.Char.GetLadyLord]'ın özellikle aradığı bir şey var mı?", [tailor.Custom('quirk_pos_standalone')|l]. [tailor.GetHerHim]'nin yanındaki koleksiyon gerçekten beklediğimden daha etkileyici."
- ep2_locale_events.2560.a: ""Aslında, [previous_artifact.GetNameNoTooltip]'ımın biraz süslenmeye ihtiyacı var...""
- ep2_locale_events.2560.b: ""Şu [purchasable_trinket.GetNameNoTooltip]'ı satın alabilir miyim?""
- ep2_locale_events.2560.c: ""Benden bunun için #EMP ödememi#! mi istiyorsun?""
- ep2_locale_events.2560.c.success: "Sen korkutuyorsun [tailor.GetShortUIName]"
- ep2_locale_events.2560.c.failure: "[tailor.GetShortUIName] korkmuyor"
- ep2_locale_events.2560.d: ""Bazı pankartlar seyircilerin bana tezahürat etmesini sağlayacak!""
- ep2_locale_events.2560.e: ""Buyurun, iyi çalışmalar.""
- feather_trinket: "Parlak Tüy"
- feather_trinket.desc: "Bir tavus kuşuna ait olduğu söylenen zengin renkli bir tüy. Egzotik bir edinim."
- chess_trinket: "Satranç taşı"
- chess_trinket.desc: "Kaya kristalinden oyulmuş güzel bir heykelcik. Soyut biçimi neyi temsil ettiğini söylemeyi zorlaştırıyor."
- ribbon_trinket: "Süslü Kurdele"
- ribbon_trinket.desc: "Üzerinde çiçek desenleri işlenmiş bir ipek şerit. Güzel bir hediye."
- glass_orb_trinket: "Cam Küre"
- glass_orb_trinket.desc: "Kristal bir küre. Asla tam şeffaf olmayacak."
- tapestry_trinket: "Koyun Gobleni"
- tapestry_trinket.desc: "Pastoral bir sahneyi tasvir eden bir duvar halısı. Hayvanlar sakin bir dereden su içiyor."
- tournament_banners_modifier: "Turnuva Afişleri"
- tournament_banners_modifier_desc: "Bu karakter seyircilere pankartlar yaptırdı."
- ep2_locale_events_artifact_decoration_desc: "[previous_artifact.GetDesc]\n\nÇiçekli kurdele ile süslenmiştir."
- artifact_monthly_prestige_3_modifier: "Dekoratif Kurdele"
-  
- # VISITOR CAMP 
- ep2_locale_events.3001.t: "$tournament_locale_visitor_camp$: Bir Anı Çalmak"
- ep2_locale_events.3001.desc: "Nihayet [lover.GetFirstName] ile bir çadırda, turnuvanın tüm koşuşturmacasından uzakta, biraz yalnız vakit geçirdiğimde, üzerime derin bir yorgunluk çöküyor. Üzeri örtülü saman kütüğün üzerine çöktüm, vücudum kadar zihnim de ağrıyordu.\n\n [lover.GetFirstNameNoTooltip]'in bir gardiyana mırıldandığını duydum - rahatsız edilmemekle ilgili bir şeyler - ve birkaç dakika sonra yanımda [lover.GetHerHis] sıcaklık hissettim.\ n\n"Çok yorgun görünüyorsun aşkım." [lover.GetHerHis] sesindeki endişeyi duyabiliyorum. "Yarışmalar başlamadan önce dinlenmeye ihtiyacın var. Bir süre burada benimle kal, lütfen?""
- ep2_locale_events.3001.a: "O kadar #EMP#! yorgun değilim..."
- ep2_locale_events.3001.b: "Bunu isterim."
- ep2_locale_events.3001.c: "Hazırlanmam lazım!"
-  
- ep2_locale_events.3002.t: "$tournament_locale_visitor_camp$: Şehvetli Savaşçılar"
- ep2_locale_events.3002.desc: "Bu ses ne? Kıkırdama... birkaç inleme mi? Sanki o çadırdan geliyormuş gibi #EMP ses çıkarıyor#!.\n\nSeslerin geldiği ağır kapağa doğru eşit miktarda beklenti ve tedirginlikle yürürken merakım galip geliyor. Örtüyü araladığımda beni karşılayan oldukça güzel bir manzarayla karşılaşıyorum.\n\n[lech1.GetFirstName], tamamen #EMP suçüstü#! yakalanmış, fiziksel olarak paniğe kapılıyor, [lech1.GetHerHis] partnerini bedeninden iterek [lech1.GetHerHim] yere düşürüyor. Karanlığa baktığımda [lech2.GetFirstName] ve [lech3.GetFirstName]'in de böyle bir olay dönüşüne karşı en iyi tepkilerini işlemekte zorlandıklarını, aceleyle ve sonuçsuz bir şekilde kendi partnerlerini oldukları gibi saklamaya çalıştıklarını görüyorum."
- ep2_locale_events.3002.a: "Bir kişiye daha yer var mı?"
- ep2_locale_events.3002.b: "Aptallar! Zamanınızı #EMP hazırlanmaya harcamalısınız#!!"
- ep2_locale_events.3002.c: "Sözünüzü kesmeme izin vermeyin!"
- ep2_locale_events.3002.c.tt: "En iyisi onları kendi hallerine bırakmak, öyle değil mi?"
-  
-  # FARRIER 
- ep2_locale_events.3500.t: "$tournament_locale_farrier$: Küçük Bir Piç"
- ep2_locale_events.3500.desc: "[activity.GetCurrentPhase.GetPhase.GetName] yarışmasının açılışından önce atımı nallatmaya götürüyorum, [tournament_farrier.GetFirstNamePossessive] çırağının pahalı hayvanımın toynaklarını düzeltmesini dikkatle izliyorum.\n\nGenç hakkında kötü bir his var içimde ve tahmin ettiğim gibi ilk çivi çok uzun. Hayvan vahşice tekmeliyor, [tournament_farrier.GetFirstNameNoTooltip]'yi kıl payı ıskalıyor ve sıkıntı içinde dükkânda topallıyor.\n\n"
- ep2_locale_events.3500.war: "Çırak #EMP [ROOT.Char.Custom('ContestHorseRaceName')]#!'nin peşinden koşar — [ROOT.Char.Custom('HorseStoryMareStallion')]'ün hemen yedek bir ayakkabıya ihtiyacı olacaktır."
- ep2_locale_events.3500.race: "Çırak #EMP [ROOT.Char.Custom('ContestHorseRaceName')]#!'nin peşinden koşar — [ROOT.Char.Custom('ContestHorseRaceGender')]'ün hemen yedek bir ayakkabıya ihtiyacı olacaktır."
- ep2_locale_events.3500.other: "Çırak [ROOT.Char.Custom('ContestHorseRaceHerHim')]'ın peşinden koşar — [ROOT.Char.Custom('ContestHorseRaceGender')]'in hemen yedek bir ayakkabıya ihtiyacı olacaktır."
- ep2_locale_events.3500.a: "[ROOT.Char.Custom('ContestHorseRaceSheHe')|U] beş yıllık maaşından fazlasına mal oldu, aptal!"
- ep2_locale_events.3500.a.war_horse: "[ROOT.Char.Custom('HorseStorySheHe')|U] beş yıllık maaşından fazlasına mal oldu, aptal!"
- ep2_locale_events.3500.b: "O çırak bir daha benim ülkemde çalışamayacak!"
- ep2_locale_events.3500.c: "Bunun ücretsiz olmasını umuyorum!"
- ep2_locale_events.3500.d: "Bundan sonra biraz daha dikkatli olun."
- every_attending_contestant_tt: "Her Yarışmacı"
-  # BOWYER 
- ep2_locale_events.4000.t: "$tournament_locale_bowyer$: Bowyer Etkinliği"
- ep2_locale_events.4000.desc: "Güzel bir oku çok severim!"
- ep2_locale_events.4000.a: "Tüy"
- ep2_locale_events.4000.b: "Tüy yok"
-  
- ep2_locale_events.4001.t: "$tournament_locale_bowyer$: Eğildi Ama Değil..."
- ep2_locale_events.4001.desc: ""Bana iyi görünüyor!" [tournament_bowyer.GetFirstName], [tournament_bowyer.GetHerHim]'in kontrol etmesi için getirdiğim yayı test ediyor. [tournament_bowyer.GetSheHe] kontrol etmeye devam ederken yanımdaki masanın üzerindeki yığılmış makaraları karıştırıyorum.\n\n"Ön kenar biraz garip görünüyor." Yaycının gözleri kısılıyor, [tournament_bowyer.GetSheHe] yayın kollarını sıkıca kavrıyor ve onları daha da fazla büküyor. "İşte, bak, biraz eğrilik var—"\n\n#EMP Çıtırda!#! [tournament_bowyer.GetFirstNamePossessiveNoTooltip] yay bölünürken ağız şaşkınlıkla açılıyor. [tournament_bowyer.GetHerHis] kontrolün gerekli olduğu ve yayın zaten kırılacağı yönündeki itirazlar odada yankılanıyor, ancak çaresiz kalan benim."
- ep2_locale_events.4001.a: "Bana ücretsiz bir yedek verin daha iyi olur!"
- ep2_locale_events.4001.a.success: "[tournament_bowyer.GetFirstNameNoTooltip] yayı ücretsiz değiştirir"
- ep2_locale_events.4001.a.failure: "[tournament_bowyer.GetFirstNameNoTooltip] ödemeyi reddediyor"
- ep2_locale_events.4001.b: "Drat. Peki, satılık bir tane var mı?"
- ep2_locale_events.4001.c: "Sen [tournament_bowyer.Custom('InsultNoun')]! Sen, sen... #EMP [tournament_bowyer.Custom('InsultNoun')]#!!"
-  
- ep2_locale_events.4010.t: "$tournament_locale_bowyer$: Balistik Hediyeler"
- ep2_locale_events.4010.desc: "Okçunun tezgahında sergilenen malları inceliyorum, çeşitli yaylara, oklara ve aksesuarlara hayranlıkla bakıyorum.\n\nSunulan çok sayıda kullanışlı nesneyi gördüğümde hemen [befriend_target.GetFirstName]'ı düşünüyorum.\n\nBelki burada [befriend_target.GetHerHis] hoşuna giden bir şey vardır..."
- ep2_locale_events.4010.a: "Yeni bir yay."
- ep2_locale_events.4010.a.tt: "#F Pratik tarafa [befriend_actor.GetFirstNamePossessiveNoTooltip] hitap edin.#!"
- ep2_locale_events.4010.b: "İyi ok kılıfları göz ardı edilen bir gerekliliktir."
- ep2_locale_events.4010.b.tt: "#F [befriend_actor.GetFirstNamePossessiveNoTooltip] kuruluş tarafına itiraz.#!"
- ep2_locale_events.4010.c: "Bu av okları eşsizdir."
- ep2_locale_events.4010.c.tt: "#F [befriend_actor.GetFirstNamePossessiveNoTooltip] enerjik tarafa hitap edin.#!"
- ep2_locale_events.4010.d: "Öyle düşünmüyorum."
- ep2_locale_events.4011.reply_bow: "İçerisinde oklarla birlikte tertemiz bir yay var.\n\n"
- ep2_locale_events.4011.reply_quiver: "İçerisinde normalden daha büyük, ilginç tasarımlı bir sadak var.\n\n"
- ep2_locale_events.4011.reply_hunt: "İçerisinde özenle hazırlanmış bir dizi av okları bulunmaktadır.\n\n"
- ep2_locale_events.4011.opening: "[befriend_actor.GetTitledFirstName] aniden önümde beliriyor, [befriend_actor.GetHerHis]'in kollarında garip şekilli bir paket. Bir hediye mi?\n\n"
- ep2_locale_events.4011.success_bow: "$ep2_locale_events.4511.reply_bow$Bu çok güzel bir eser, asilzadelere yakışır bir yay."
- ep2_locale_events.4011.bow: "$ep2_locale_events.4511.reply_bow$Hayal kırıklığımı gizlemek zor. Yani, bir yay..."
- ep2_locale_events.4011.success_quiver: "$ep2_locale_events.4511.reply_quiver$İncelemek için biraz zaman harcadım, bu şimdiye kadar gördüğüm en ergonomik ok kılıfı!"
- ep2_locale_events.4011.quiver: "$ep2_locale_events.4511.reply_quiver$Buna ne ihtiyacım var? Yani, gerçekten..."
- ep2_locale_events.4011.success_hunt: "$ep2_locale_events.4511.reply_hunt$Yapıları alışılmadık derecede sağlamdır ve küçük hayvanları vurmak için açıkça mükemmeldir."
- ep2_locale_events.4011.hunt: "$ep2_locale_events.4511.reply_hunt$Ok mu avlıyorsun? #EMP Gerçekten#! yapmamalıydın..."
- ep2_locale_events.4011.a: "Gülümsememi saklayamıyorum, [befriend_actor.GetSheHe] iyi seçim!"
- ep2_locale_events.4011.b: ""Ne... düşünceli bir hediye...""
- ep2_locale_events.4012.opening: "[befriend_target.GetTitledFirstName] onu mutlu bir şekilde alır ve çocuksu bir neşeyle ambalajın bağlarını açar.\n\n"
- ep2_locale_events.4012.success_reply: "[befriend_target.GetHerHis|U]'ın gözleri [befriend_target.GetSheHe] bunu gördüğünde kocaman açılıyor — içimde iyi bir his var."
- ep2_locale_events.4012.reply: "[befriend_target.GetSheHe] bunu gördüğünde [befriend_target.GetHerHis|U]'ın kalbi sızlıyor sanki."
- ep2_locale_events.4012.success_bow: "\n\n"Ne kadar ustaca oyulmuş bir [newly_created_artifact.GetType]! Bunu saklayacağım!""
- ep2_locale_events.4012.bow: ""[newly_created_artifact.GetType]! İyi. İyi.""
- ep2_locale_events.4012.success_quiver: "\n\n"Bu görülmeye değer bir şey! Bunu nereden buldun?""
- ep2_locale_events.4012.quiver: ""Bir ok tutucu mu? Anladım.""
- ep2_locale_events.4012.success_hunt: ""Ah, ben de yıllardır böyle bir şey arıyordum!""
- ep2_locale_events.4012.hunt: ""Avlanmak için mi diyorsun? Doğru. Doğru.""
- ep2_locale_events.4012.success: "\n\n[befriend_target.GetSheHe|U] bana teşekkür ediyor, elini omzuma koyuyor. Sanırım hedefi on ikiden vurdum!"
- ep2_locale_events.4012.failure: "\n\n[befriend_target.GetSheHe|U] ayrılmadan önce bana nazikçe teşekkür etti, ne düşünüyordum ki..."
- ep2_locale_events.4012.a: "İyi hedeflenmiş bir atış."
- ep2_locale_events.4012.b: "Ne işe yarar ki..."
-  
- ep2_locale_events.4050.t: "$tournament_locale_bowyer$: Kendinizi hazırlayın"
- ep2_locale_events.4050.desc: "Ok demetleri ve yığılmış yay kirişleri arasında ilerlerken, özellikle kaliteli deriden yapılmış düzgün bir kol zırhı yığınına rastladım. Birini ön koluma taktığımda, sertleşmiş deri kolumun içini koruyordu.\n\n"Bunlar bizim en iyi bileziklerimiz, benim [ROOT.Char.GetLadyLord]. Yay kirişinin on bin kırbacı bunları aşındırmaz!" [tournament_bowyer.GetFirstName] potansiyel bir satış seziyor ve [tournament_bowyer.GetSheHe] hızla yanıma kayıyor.\n\nDeriyi merakla test ediyorum, elimde tartıyorum."
- ep2_locale_events.4050.a: "Belki bir anlaşmaya varabiliriz?"
- ep2_locale_events.4050.a.success: "Başarılı bir şekilde pazarlık ediyorsunuz"
- ep2_locale_events.4050.a.failure: "Pazarlığınız başarısız oldu"
- ep2_locale_events.4050.a.critfailure: "[tournament_bowyer.GetFirstNameNoTooltip] rahatsızlıktan dolayı satmayı reddediyor"
- ep2_locale_events.4050.b: "İki tane alayım!"
- ep2_locale_events.4050.c: "Ne kadar?"
- ep2_locale_events.4050.d: "Ben bundan vazgeçebilirim."
-  
-  # WEAPONSMITH 
- ep2_locale_events.4500.t: "$tournament_locale_weaponsmith$: Eski Kılıcı Kır"
- ep2_locale_events.4500.start: "Ben devrediyorum"
- ep2_locale_events.4500.artifact: "[chipped_sword.GetName]"
- ep2_locale_events.4500.noartifact: "silahım"
- ep2_locale_events.4500.end: "Önümdeki denemelere hazırlanmak için, ama ellerimden çıkar çıkmaz pişmanlık duyuyorum. [tournament_weaponsmith.GetFirstName] silah ustası açıkça isteklerle dolup taşıyor ve [tournament_weaponsmith.GetSheHe] sırayla onu ürkek görünümlü bir çırağa veriyor.\n\nGenç [apprentice.GetWomanMan] silahı heyecanla alıyor ve ona havada dikkatsizce -fazla dikkatsizce- bir vuruş yapıyor. Silah yakındaki bir örse çarpıyor ve vücudundan derin bir çentik çıkıyor!\n\nSonuç olarak gelen istemsiz çığlığım silah ustasının dehşet içinde dönmesine, hasarlı silahı bir eliyle kapmasına ve diğer eliyle [apprentice.Custom('GirlBoy')] kulağının etrafına çarpmasına neden oluyor."
- ep2_locale_events.4500.a: "Düzelt! Hemen düzelt!"
- ep2_locale_events.4500.a.tt: "Pahalıya mal olacak ve tamiri oldukça zor olacak, ama bunun yapılması gerekiyor!"
- ep2_locale_events.4500.b: "Aman ha... satılık olan var mı?"
- ep2_locale_events.4500.c: "Hadi ver bakalım!"
- tournament_sword_name: "Turnuva Kılıcı"
- tournament_sword_description: "$artifact_sword_description$\n\nBu silah bir turnuvadan satın alındı."
- tournament_sword.martiallifestyle: "$tournament_sword_description$ Dayanıklı yapısı her şeyden önce öldürücü bir bıçak olma kararlılığını yansıtır."
- tournament_sword.controlledadv: "$tournament_sword_description$ Kılıcın üzerindeki yazı, diyarı savunmaktan bahsediyor."
- tournament_sword.foreignfaith: "$tournament_sword_description$ Bıçağının üzerindeki garip ve yabancı yazı, bilinmeyen bir dine gönderme yapıyor gibi görünüyor."
-  
- ep2_locale_events.4501.t: "$tournament_locale_weaponsmith$: Silahlı ve Hazır"
- ep2_locale_events.4501.desc: "[tournament_weaponsmith.GetFirstName]'ın yeni bir silah yaptığını izlerken küçük ama fark edilir bir #EMP takırtısı#!, ve ardından mırıldanılan ama merak uyandırıcı bir şekilde soluk soluğa gelen bir küfür duydum. Karanlıkta bakınca sonunda [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('spying_spouse'))] [spying_spouse.GetFirstName]'ümün küçük bir masanın arkasında çömeldiğini gördüm!\n\n[spying_spouse.GetHerHis|U] amaç kısa sürede netleşti. [spying_spouse.GetHerHis|U] gözler [tournament_weaponsmith.GetFirstNamePossessiveNoTooltip] sinirli kollarda gezinirken, ter düğümlü kasların üzerinden akarken. [spying_spouse.GetFirstNamePossessiveNoTooltip] kızarmanın sadece sıcaktan olmadığı açıktı...\n\n[spying_spouse.GetHerHim]'a doğru bir adım attım. Tek gereken bu: #EMP0 göz göze geldiğimizde, suçüstü yakalanmış bir şekilde nefesini zor bastırıyor."
- ep2_locale_events.4501.a: "Acaba bu ilgiyi herkes paylaşıyor mu diye bir bakmak lazım?"
- ep2_locale_events.4501.a.tt: "O demircinin ağzının köşesinde oynayan gülümseme zaten çok şey anlatıyor, garanti ederim..."
- #ep2_locale_events.4501.a.custom.tt: "#high [spying_spouse.GetFirstName]#! #high [tournament_weaponsmith.GetFirstName]#! ile yatıyor"
- ep2_locale_events.4501.b: "Eh, onlar #EMP çok#! güçlü kollar..."
- ep2_locale_events.4501.b.tt: "Açıkçası benim [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('spying_spouse'))]'ım harika bir zevke sahip!"
- ep2_locale_events.4501.c: "Hey! Gidiyoruz!"
- ep2_locale_events.4501.d: "[spying_spouse.GetSheHe|U] sadece bakıyor. Zarar yok."
-  
- ep2_locale_events.4505.t: "$tournament_locale_weaponsmith$: Ünlü Bıçak"
- ep2_locale_events.4505.desc: "Demirciye girdiğim anda, [tournament_weaponsmith.GetFirstNamePossessive]'ın gözleri kocaman açılıyor. [tournament_weaponsmith.GetHerHis]'in kollarında saygıyla sıkılmış ipek bir battaniye var.\n\n"Benim [ROOT.Char.GetLadyLord]'im." [tournament_weaponsmith.GetHerHis|U]'ün sesi biraz titriyor. "Elindeki bir bıçakla gösterdiğin beceri ve kahramanlık efsanevi. Ben... Bunu sana ben yaptım."\n\n[tournament_weaponsmith.GetSheHe|U] battaniyeyi kaldırarak harikulade bir ihtişama sahip bir kılıcı ortaya çıkarıyor. Elime aldığımda en iyi kalitede olduğu açıkça görülüyor, silah kolumun bir uzantısı gibi hissettiriyor.\n\n"Onu senin duruşuna göre yaptım, benim [ROOT.Char.GetLadyLord]'im. Eğer bunu bir hediye olarak kabul edersen, bu çok büyük bir onur olur.""
- ep2_locale_events.4505.a: "O şeref bana ait, [tournament_weaponsmith.GetFirstNameNoTooltip]."
- ep2_locale_events.4505.a.tt: "Bir hediye mi?! Bu bin kılıca bedel. Eğer yaparsam aldırmayın!"
- ep2_locale_events.4505.b: "Bu kadar iyi bir silah için hak ettiği bedel ödenmelidir."
- ep2_locale_events.4505.c: "Ben senin kalitesiz bıçaklarını istemiyorum!"
-  
- ep2_locale_events.4506.t: "$tournament_locale_weaponsmith$: Bir İsimde Ne Var?"
- ep2_locale_events.4506.desc: ""Bir isme ihtiyacı var."\n\n[tournament_weaponsmith.GetFirstNamePossessive] yeni kılıcımı birkaç kez test ederken bir kesinti, silah ustasına kaşlarımı kaldırmama neden oldu.\n\n"Efsanelerin taşıdığı tüm silahların bir ismi vardır. Bu, yapılması gereken bir şeydir! Güçlü bir savaşçının kılıcının, düşmanların korkup sinmesi için güçlü bir isme ihtiyacı vardır!" [tournament_weaponsmith.GetFirstNameNoTooltip] ısrar ediyor."
- ep2_locale_events.4506.a: "Benim de aklımda böyle bir isim var."
- ep2_locale_events.4506.a.tt: "[rename_artifact.GetName] yeni bir isim alır"
- ep2_locale_events.4506.b: "Kılıç bir araçtır, artık bir araç değil."
-  
- ep2_locale_events.4510.t: "$tournament_locale_weaponsmith$: Saldırgan Hediyeler"
- ep2_locale_events.4510.desc: "Silah ustasının demir ocağının etrafına bakarken, her türlü ölümcül alet ve ince işlenmiş eşyalar göze çarpıyor.\n\nGözlerim ışıltılı rafların üzerinde gezinirken aklım [befriend_target.GetFirstName]'a kayıyor.\n\nEğer [befriend_target.GetHerHim]'i kazanacaksam, #EMP [befriend_target.GetSheHe]#!'ün takdir edeceği bir şey bulmam gerekecek..."
- ep2_locale_events.4510.a: "İyi yapılmış bir yan silah."
- ep2_locale_events.4510.a.tt: "#F Savaşçı tarafa [befriend_actor.GetFirstNamePossessiveNoTooltip] hitap.#!"
- ep2_locale_events.4510.b: "Sergilenebilecek hoş bir şey."
- ep2_locale_events.4510.b.tt: "#F Maddiyatçı tarafa [befriend_actor.GetFirstNamePossessiveNoTooltip] hitap.#!"
- ep2_locale_events.4510.c: "[befriend_target.GetFirstNameNoTooltip]'ın #EMP hançeri olduğunu düşünüyorum#! [befriend_target.GetWomanMan]."
- ep2_locale_events.4510.c.tt: "#F [befriend_actor.GetFirstNamePossessiveNoTooltip] sinsi tarafa hitap ediyor.#!"
- ep2_locale_events.4510.d: "[befriend_target.GetHerHim]'ı etkilemenin başka bir yolunu bulacağım."
- ep2_locale_events.4511.reply_weapon: "İçerisinde, yumuşak ışıkta donuk bir şekilde parlayan, özenle hazırlanmış bir [newly_created_artifact.GetType] var.\n\n"
- ep2_locale_events.4511.reply_ornament: "İçerisinde savaş alanından çok duvara daha uygun, zarif bir gösteri silahı var.\n\n"
- ep2_locale_events.4511.reply_dagger: "İçerisinde parlak bir bıçağa sahip, küçük ama zarif bir hançer var.\n\n"
- ep2_locale_events.4511.opening: "Bir sabah, [befriend_actor.GetTitledFirstName] tarafından aniden durduruldum, bana bir paket ambalaj uzattı ve umutla gülümsedi. Bir hediye mi?\n\n"
- ep2_locale_events.4511.success_weapon: "$ep2_locale_events.4511.reply_weapon$Silahın işçiliğini ve açıkça kullanışlılığını inkar etmek mümkün değil."
- ep2_locale_events.4511.weapon: "$ep2_locale_events.4511.reply_weapon$Yüreğim sızlıyor, bu iğrenç şeye ne ihtiyacım olabilir ki?"
- ep2_locale_events.4511.success_ornament: "$ep2_locale_events.4511.reply_ornament$Çok güzel bir işçilikle yapılmış, detaylara o kadar dikkat edilmiş ki bakmaktan kendinizi alamıyorsunuz."
- ep2_locale_events.4511.ornament: "$ep2_locale_events.4511.reply_ornament$Ah, tamamen işe yaramaz bir nesne... Sanırım en azından satabilirim."
- ep2_locale_events.4511.success_dagger: "$ep2_locale_events.4511.reply_dagger$İnce biçimi tutulmayı ve yumruğumla eve sürülmeyi haykırıyor."
- ep2_locale_events.4511.dagger: "$ep2_locale_events.4511.reply_dagger$Bu ne işe yarıyor? Bu, haydutların aleti."
- ep2_locale_events.4511.a: "İstemesem de [befriend_actor.GetSheHe] beni etkiledi..."
- ep2_locale_events.4511.b: ""T-teşekkür ederim. Çok güzel.""
- ep2_locale_events.4512.opening: "[befriend_target.GetTitledFirstName] özenle paketlenmiş hediyemi sıcak bir şekilde alıyor ve [befriend_target.GetHerHis] yüzünde geniş bir sırıtışla [befriend_target.GetHerHis] eliyle kaldırıyor.\n\n"
- ep2_locale_events.4512.success_reply: "[befriend_target.GetHerHis|U] Ambalajlar atıldığında gülümsemesi daha da genişliyor."
- ep2_locale_events.4512.reply: "[befriend_target.GetHerHis|U] Ambalajlar atıldığında ruh haliniz biraz değişiyor — bu merak mı yoksa nefret mi?"
- ep2_locale_events.4512.success_weapon: "\n\n"Ah, ustaca yapılmış bir [newly_created_artifact.GetType]. Güvenilebilecek bir şey.""
- ep2_locale_events.4512.weapon: ""Ah... a [newly_created_artifact.GetType]. Tam ihtiyacım olan şey.""
- ep2_locale_events.4512.success_ornament: "\n\n"Ne güzel bir sergi parçası! Bu, her asilzadenin koleksiyonunda yer almaya değer!""
- ep2_locale_events.4512.ornament: ""Ah, bir sergi parçası mı? Çok... güzel.""
- ep2_locale_events.4512.success_dagger: ""Aman ne güzel, çok güzel... Ne güzel bir denge.""
- ep2_locale_events.4512.dagger: ""Sebzeleri doğramak için iyi sanırım?""
- ep2_locale_events.4512.success: "\n\n[befriend_target.GetSheHe|U] içtenlikle teşekkür ediyor. Sanırım daha iyi olamazdı!"
- ep2_locale_events.4512.failure: "\n\n[befriend_target.GetSheHe|U] bana nazikçe teşekkür etti. İstenilen etkiyi yarattığını sanmıyorum..."
- ep2_locale_events.4512.a: "Benim bu konuda gözüm var."
- ep2_locale_events.4512.b: "Ne gereksiz..."
-  
- ep2_locale_events.4520.t: "$tournament_locale_weaponsmith$: Değerli İkor"
- ep2_locale_events.4520.desc: ""Bir asilin kanı!" [tournament_weaponsmith.GetFirstNamePossessive] sesi yankılanarak beni ürküttü. Karanlıkta gözlerimi kırpıştırarak [tournament_weaponsmith.GetSheHe]'in aç bir şekilde durduğu, parlayan bir hançer salladığı yere geldim.\n\n"Bir bıçağı söndürmek için ihtiyacım olan tek şey en ufak bir #EMP sıçraması#! asil kan! Kılıç şimdiye kadar yapılmış en iyi silah olacak! Benim için şarkılar söylenecek!" [tournament_weaponsmith.GetSheHe|U] kenar daha yakın, [tournament_weaponsmith.GetHerHis] gözlerinde çılgın bir ışıltı titreşiyor.\n\n"Hepsi senin olacak, [ROOT.Char.GetLadyLord], hepsi senin. Sadece onu döven kişi olmam gerek. İzin ver, ikimizin de adı sonsuza dek hatırlanacak!"\n\nKolumu aşağı indiriyorum."
- ep2_locale_events.4520.a: "Şan için. Sonsuz şöhret için!"
- ep2_locale_events.4520.a.success: "Dövme iyi gidiyor"
- ep2_locale_events.4520.a.failure: "Dövme kötü gidiyor"
- ep2_locale_events.4520.b: "Deneyebiliriz ama önce merhemlerimi alayım..."
- ep2_locale_events.4520.c: "Eğer #EMP eminseniz#! bu işe yarayacaktır..."
- ep2_locale_events.4520.d: "Ne saçma."
-  
- ep2_locale_events.4521.t: "$tournament_locale_weaponsmith$: İyimser Çelik"
- ep2_locale_events.4521.start: "[tournament_weaponsmith.GetFirstName] heyecanla ateş edip çekiçlerken akışı durdurmak için ön koluma temiz bir bez bastırıyorum. Kan alma hedeflerimiz gerçekleştiğinde bez neredeyse ıslanmış oluyor, ancak akışın kendisi yavaşlamış ve yara donmuş oluyor.\n\nKılıç saygıyla bir masanın üzerine bırakılıyor."
- ep2_locale_events.4521.success: "Tuhaf görünümlü bir şey: kurumuş kan bıçaktan dökülmeye devam ediyor ve çelikte soluk desenler ortaya çıkıyor. Esnekliğini test ediyorum ve bıçak endişe verici bir şekilde gıcırdıyor.\n\n"
- ep2_locale_events.4521.failure: "Tek kelimeyle çirkin. Kurumuş kan bıçağın uzunluğunu kaplıyor ve silahın ağırlığı her an değişiyor gibi görünüyor. Kırılgan çelik, yamalı girdaplarla kaplı.\n\n"
- ep2_locale_events.4521.ending: ""#EMP mükemmel#!!" [tournament_weaponsmith.GetFirstNameNoTooltip] şüpheciliğim onu ​​caydırmamış gibi görünüyor, [tournament_weaponsmith.GetHerHis] elleri titriyor ve [tournament_weaponsmith.GetSheHe] bıçağı hayretle tutuyor."
- ep2_locale_events.4521.a: "Onu alacağım!"
- ep2_locale_events.4521.b: "Sende kalabilir."
-  
- ep2_locale_events.5020.t: "$tournament_locale_tourney_grounds$: Etkilendiniz mi?"
- ep2_locale_events.5020.desc: "Turnuva alanı hazırlıklarla dolu. Uşaklar, onları minik korkuluklara benzeten zırh parçaları taşıyarak etrafta koşturuyor. "Bekle!" diye bağırıyor içlerinden biri, bir miğfer alarak.\n\nTribünlerden gelen tanıdık bir kıkırdama duyuyorum ve [impressed_lover.GetTitledFirstName]'ı, ağızlarını mendille kapatan diğer [impressed_lover.GetWomenMen]'lerle çevrili görüyorum. [impressed_lover.GetSheHe|U] bana el sallamıyor. [impressed_lover.GetSheHe|U]'nin el sallamasına gerek yok.\n\n"Egzersiz yapmaya mı geliyorsun?", [impressed_rival.GetTitledFirstName] yanımdan yürüyerek [impressed_rival.GetHerHis] çenesini kaldırıyor, "İhtiyacın olacak.""
- ep2_locale_events.5020.a: "[impressed_lover.GetFirstNameNoTooltip]'ın baktığından emin olacağım."
- ep2_locale_events.5020.a.success: "Etkileyicisin [impressed_lover.GetShortUIName]"
- ep2_locale_events.5020.a.failure: "[impressed_lover.GetShortUIName] etkilenmedi"
- ep2_locale_events.5020.b: "Aha! O sinir bozucu [impressed_rival.GetFirstNameNoTooltip]'ı korkutmak için mükemmel bir fırsat."
- ep2_locale_events.5020.b.success: "[impressed_rival.GetShortUIName] korkutuldu"
- ep2_locale_events.5020.b.failure: "[impressed_rival.GetShortUIName] etkilenmedi"
- ep2_locale_events.5020.c: "Etkilemem gereken tek kişi var. Kendim."
- tournament_ground_flexing: "Etkileyici Eğitim"
- ep2_locale_events.5020.a.success.tt: "[impressed_lover.GetShortUIName] ile olan ilişkiniz [fertility|E] arttı"
-  
- ep2_locale_events.1520.t: "İki ay"
- ep2_locale_events.1520.desc: ""Bir alamet! Bir işaret!" Kapıya yaklaşırken [ROOT.Char.GetFaith.HouseOfWorship]'dan gelen bağırışları duyuyorum. [tournament_priest.GetTitledFirstName] gökyüzünü işaret ederek yanıma geliyor. [tournament_priest.GetHerHis]'nin çılgın bakışlarını takip ederek görüyorum: Ay. Başka bir ay.\n\n"Eski arşivlerde okumuştum," [tournament_priest.GetSheHe] devam ediyor, "bir şeyi duyuruyor — ama ne?""
- ep2_locale_events.1520.a: "Bir alamet! Zaferimi ilan ediyor!"
- ep2_locale_events.1520.b: "Aylar madeni paralar gibi yuvarlaktır. Bu zenginliktir, belli ki."
- ep2_locale_events.1520.c: "Kusursuz bir şekilde başı kesilmiş iki siluet..."
- ep2_locale_events.1520.d: "Bunu daha önce bir yıldız kitabında görmüştüm."
- ep2_locale_events.1520.e: "Hiç bir anlamı yok."
- tournament_astronomy_modifier: "Astronom"
- tournament_astronomy_modifier_desc: "Bu karakter yıldızları ve onların hareketlerini inceledi"
- ep2_locale_events.1520.superstitious: "Batıl inançlı oluyorsun"
-  
- ep2_locale_events.3010.t: "Kötü hava"
- ep2_locale_events.3010.desc: "Kampa girdiğim anda keskin bir kokuyla karşılanıyorum. Burnumu olabildiğince zarif bir şekilde kapatırken ve hastalanmamaya çalışırken, [alerted_physician.GetFirstName] yanıma geliyor, kendi burnunun üstünde bir mendil tutuyor.\n\n"Gitmelisin, [ROOT.Char.GetLadyLord]'im, yarışmacılar hastalanıyor, kötü havadan zarar görüyor," [alerted_physician.GetSheHe] beni uyarıyor."
- ep2_locale_events.3010.a: "Bunun bir açıklaması olmalı. Bulun."
- ep2_locale_events.3010.a.success: "[alerted_physician.GetShortUIName] kampı araştırıyor"
- ep2_locale_events.3010.b: "Turnuva lanetli olmalı!"
- ep2_locale_events.3010.b.flavor: "Kendimi kamptan uzak tutacağım..."
- ep2_locale_events.3010.c: "Bu aptalca girişimlere kanmayacağım!"
- ep2_locale_events.3010.d: "Neden umursayayım?"
- tournament_not_cursed_modifier: "Temiz hava"
- tournament_not_cursed_modifier_desc: "Bu karakter turnuvayı zehirleyen kötü havadan kaçındı"
- ep2_locale_events.3010.a.success.tt: "[alerted_physician.GetShortUIName] sebebi bulur"
- ep2_locale_events.3010.a.failure: "[alerted_physician.GetShortUIName] başarısız"
-  
- ep2_locale_events.3011.t: "$ep2_locale_events.3010.t$: Miasma"
-  #AGOT Modified 
- #ep2_locale_events.3011.desc: "[alerted_physician.GetFirstName], [alerted_physician.GetHerHis] yüzünde hoş bir gülümsemeyle bana geri dönüyor. "Kaynağı buldum, [ROOT.Char.GetLadyLord]'im," [alerted_physician.GetSheHe], [alerted_physician.GetHerHis] kahkahasını bastırmaya çalışarak duyuruyor.\n\n"Misafirler... atıklarını atacak bir yer bulamadıkları için, onu nehre dökmeye başvurmuşlar. Kötü hava, Hipokrat'ın da duyurduğu gibi, hastalıkları taşır.""
- ep2_locale_events.3011.desc: "[alerted_physician.GetFirstName], [alerted_physician.GetHerHis] yüzünde hoş bir gülümsemeyle bana geri dönüyor. "Kaynağı buldum, [ROOT.Char.GetLadyLord]'im," diye duyuruyor [alerted_physician.GetSheHe], [alerted_physician.GetHerHis] kahkahasını bastırmaya çalışarak.\n\n"Misafirler... atıklarını atacak bir yer bulamadıkları için, onları nehre dökmeye başvurmuşlar. Kötü hava, bilgin Harmon'un duyurduğu gibi, hastalıkları taşır.""
- ep2_locale_events.3011.a: "Onları uyarmalıyım!"
- ep2_locale_events.3011.b.contestant: "Bunu kendime saklayacağım."
- ep2_locale_events.3011.b.champion: "Ben sadece şampiyonumu uyaracağım, [contest_champion.GetFirstNameNoTooltip]."
- ep2_locale_events.3011.b: "Neden söyleyeyim ki?"
-  
- ep2_locale_events.3510.t: "İyi donanımlı"
- ep2_locale_events.3510.desc: "Demirhanenin sıcaklığı çoğu misafiri uzak tutmaya yeter. Kapıyı açtığımda nalbantın [farrier.GetHerHis] çalışma masasının üzerinde esnediğini görüyorum. [farrier.GetHerHim]'e yaklaşan çok fazla kişi yok gibi görünüyor. [farrier.GetSheHe|U] hızla doğruluyor ve duyulabilir bir öksürükle [farrier.GetHerHis] boğazını temizliyor.\n\n"Size yardım edebilir miyim? Size turnuva için hazır en iyi at nallarını sunabilirim," [farrier.GetSheHe] etkileyiciden de öte bir koleksiyon sergileyerek öneriyor."
- ep2_locale_events.3510.a: ""Bana sadece en iyisini ver!""
- ep2_locale_events.3510.b: ""Şövalyelerim için de bir kaç tane almalıyım...""
- ep2_locale_events.3510.c: ""İyi şans muskası!""
- ep2_locale_events.3510.d: ""İyiyim, teşekkürler.""
- ep2_locale_events.3510.a.prowess: "[prowess|E]'ınız artar"
- ep2_locale_events.3510.a.martial: "[martial|E]'ınız artar"
- ep2_locale_events.3510.a.prestige: "Yeni ekipmanınız etkileyici"
- tournament_new_horseshoes_modifier: "Yeni At Nalı"
- good_luck_horseshoe_artifact: "At nalı"
- good_luck_horseshoe_artifact_desc: "Kötü ruhları uzak tuttuğuna inanılan demir at nalı."
-  
- ep2_locale_events.1530.t: "Toz İçin Sen"
- ep2_locale_events.1530.desc.intro: "[ROOT.Char.GetFaith.HouseOfWorship]'ın etrafındaki avlu, gün batımına bu kadar yaklaşırken ıssız. Yaprakların etrafında bir hışırtı duyuyorum ve mezar taşlarının arasında koşan küçük bir hayvanın siluetini görüyorum. Bazılarında oymalar neredeyse yok olmuş durumda. Diğerlerinde açıkça görülüyor.\n\nOnlara doğru bir adım atıyorum"
- ep2_locale_events.1530.desc.young: "ve kendilerini çok uzak hissediyorlar. Neredeyse imkansız."
- ep2_locale_events.1530.desc.middle: ". Benim zamanım gelince bundan daha iyi bir dinlenme yeri bulacağımdan emin olabilirsiniz."
- ep2_locale_events.1530.desc.old: "Çünkü geç oldu. Çünkü daha sonra da devam edecek. Çünkü hayatımda hiç bu kadar geç olmamıştı."
- ep2_locale_events.1530.a: "Acaba atalarımdan birini bulabilir miyim?"
- ep2_locale_events.1530.b.christian: "Ve toza döneceğim."
- ep2_locale_events.1530.b.fallback: "Yakında ben de o olacağım."
- ep2_locale_events.1530.c: "Tozdan toza! Ne ilham verici bir görüntü!"
- ep2_locale_events.1530.d: "Hımm... ya eğer...?"
- ep2_locale_events.1530.a.success: "Kriptolarda bir ata bulursun"
- ep2_locale_events.1530.a.failure: "Burada tanıdığın kimse yok"
-  
- ep2_locale_events.4540.t: "Bıçak Üzerinde"
- ep2_locale_events.4540.desc.intro: ""Ne muhteşem bir iş [weaponsmith.GetSheHe]'s yapılmış!", bir şövalyenin gururla atölyeden ayrılırken söylediğini duyuyorum. Parıldayan bıçak, kristal bir göl gibi güneşi yansıtıyor.\n\nKapıyı iterek açıyorum ve patlayan bir alevle karşılaşıyorum."
- ep2_locale_events.4540.desc.contestant: ""Böyle mi yarışacaksın?" diye soruyor silah ustası, kemerimden sarkan [my_weapon.GetNameNoTooltip|l]'ı işaret ederek."
- ep2_locale_events.4540.desc.fallback: "Bu sefer yarışmasam bile bu sanatçının yeteneklerini görmezden gelmemeliyim."
- ep2_locale_events.4540.desc.outro: "\n\n"Altın varsa, çelik de bende.""
- ep2_locale_events.4540.a: ""Daha ölümcül hale getirin.""
- ep2_locale_events.4540.a.tt: "Keskin kenar yalnızca Turnuva süresince geçerli olacaktır"
- ep2_locale_events.4540.b.christian: ""Bıçak boyunca #EMP In Nomine Domini#! çizin.""
- ep2_locale_events.4540.b.fallback: ""Bir dua yaz.""
- ep2_locale_events.4540.c: ""[my_weapon.GetOwner.GetHouse.GetMotto] yazmasını istiyorum.""
- ep2_locale_events.4540.d: ""Altınımı saklayacağım.""
- ep2_locale_events_artifact_sharp_desc: "[my_weapon.GetDesc]\n\nBıçak turnuva için bilendi."
- ep2_locale_events_artifact_prayer_desc: "[my_weapon.GetDesc]\n\nBıçağın üzerine bir dua kazınmıştır."
- ep2_locale_events_artifact_motto_desc: "[my_weapon.GetDesc] Bıçak üzerinde [my_weapon.GetOwner.GetHouse.GetMotto] yazıyor."
- artifact_tournament_sharpened_blade_modifier: "Bilenmiş Bıçak"
- artifact_monthly_piety_7_modifier: "Dua Yazısı"
- artifact_monthly_prestige_7_modifier: "Slogan Yazısı"
-  
- ep2_locale_events.1060.t: "Sahtekarlar ve Aptallar"
- ep2_locale_events.1060.desc: ""Hah! Hilekar!" Kapıyı açarken birinin bağırdığını duydum. [tournament_gambler.GetWomanMan] memnun bir şekilde sırıtırken, [tournament_gambler.GetSheHe] masanın üzerine bırakılan altını aldı. "Bah!" [tournament_gambler.GetHerHis] rakibi şikayet etti, [tournament_gambler.GetSheHe] ayağa kalkarken tahtaya vurdu.\n\nYabancı hafifçe eğilerek benimle göz göze geldi. "[ROOT.Char.GetTitleAsNameNoTooltip] bir iskambil oyunu oynamak ister miydi? Ben benimkini ortaya koydum ve sen de seninkinin daha yüksek mi yoksa daha düşük mü olacağına bahse gir. Kazanan hepsini alır. Kulağa ne kadar basit geliyorsa o kadar."\n\n"Beş," dedi [tournament_gambler.GetSheHe], [tournament_gambler.GetHerHis] kartını ortaya koyarak."
- ep2_locale_events.1060.a: ""Benim kartım daha yüksek!""
- ep2_locale_events.1060.b: ""Kartım düşük!""
- ep2_locale_events.1060.c: ""Kumar oynamak istemiyorum.""
- ep2_locale_events.1060.a.success: "Çift kazandın"
- ep2_locale_events.1060.a.failure: "Altınını kaybedersin"
-  
- ep2_locale_events.4530.t: "$tournament_locale_weaponsmith$: Çekiç Bilgeliği"
- ep2_locale_events.4530.desc: "Yolun diğer tarafındaki alevlerin nazik titrekliğini görebiliyorum. Kapıyı açmadan önce bile sıcaklıkları tanıdık bir kucaklamayla vücudumu sarıyor. İçeride, demirci bir sürü çivi sıralıyor.\n\n"Yardımcı olabilir miyim, [ROOT.Char.GetLadyLord]'ım?" [tournament_weaponsmith.GetSheHe] soruyor, [tournament_weaponsmith.GetHerHis] alnı kömürle lekelenmiş. Buradaki hava daha yoğun."
- ep2_locale_events.4530.a: ""Demircilerin büyüleri bozabildiğini duydum. Lütfen ruhumu sakinleştir.""
- ep2_locale_events.4530.a.tt: "Batıl inançlı oldun"
- ep2_locale_events.4530.b: ""Bana uzman bir teknik gösterebilir misin?""
- ep2_locale_events.4530.b.success: "Becerileriniz gelişir"
- ep2_locale_events.4530.b.crit_success: "Becerileriniz büyük ölçüde gelişir"
- ep2_locale_events.4530.b.failure: "Yaralanırsın"
- ep2_locale_events.4530.c: ""[improved_weapon.GetNameNoTooltip]'ımı geliştirebilir misin?""
- ep2_locale_events.4530.c.tt: "Kazançlar #positive_value +2#! [prowess|E]"
- ep2_locale_events.4530.d.success: "Tedavi işe yarıyor!"
- ep2_locale_events.4530.d.nothing: "Tedavi etkisiz"
- ep2_locale_events.4530.d: ""Vücudum! Acıyor! Yardım et!""
- improved_artifact_desc: "[improved_weapon.GetDesc]\n\nÖnemli bir turnuvadan hemen önce yetenekli bir silah ustası tarafından geliştirildi."
- ep2_locale_events.4530.e: ""Sadece etrafa bakıyordum.""
-  
-  # TRAINING GROUNDS 
- ep2_locale_events.5000.t: "Çelik Çağrısı"
- ep2_locale_events.5000.desc.intro: "Çocuğum [my_child.GetFirstName] ile birlikte turnuva alanını ziyaret ettiğimde, bir sonraki yarışma için vahşice antrenman yapan bir grup [ROOT.Char.Custom('KnightCulturePluralNoTooltipLowercase')] ile karşılaşıyoruz. Miğferinin altında neredeyse tanınmayacak halde olan [my_knight.GetTitledFirstName]'ye doğru el sallıyorum.\n\n"Ah, eğer..." evimize büyük bir onur getirirdi ama [my_child.GetFirstNamePossessiveNoTooltip]'ün gözlerinin kılıçlara dikildiğini fark edince hemen duruyorum."
- ep2_locale_events.5000.desc.martial: "[my_child.GetHerHis] dövüş ilgisi göz önüne alındığında bu sürpriz değil."
- ep2_locale_events.5000.desc.non_martial: "[my_child.GetSheHe]'ın bu şeylere ilgi duyduğunu fark etmemiştim."
- ep2_locale_events.5000.a: ""Ne güzel bir fikir!""
- ep2_locale_events.5000.b: ""İyi. O zaman [my_knight.GetFirstNameNoTooltip] seni eğitecek.""
- ep2_locale_events.5000.c: ""Görevini böyle ihmal edebileceğini mi sanıyorsun?""
-  
-  
- ep2_locale_events.5010.t: "$tournament_locale_tournament_grounds$: Neredeyse Orada"
- ep2_locale_events.5010.desc.intro: "Turnuva alanına doğru yürürken bir grupla buluşuyorum"
- ep2_locale_events.5010.desc.prowess: "sağlam [ROOT.Char.Custom('KnightCulturePluralNoTooltipLowercase')], hizmetkarları onları zırhla kaplarken dikenlerle ticaret yapıyorlar."
- ep2_locale_events.5010.desc.mind: "Yarışmacılar ortak stratejileri paylaşarak, henüz gerçekleşmemiş gelişmelere dair önemli ipuçları veriyor."
- ep2_locale_events.5010.desc.fallback: "yarışmacılar ölçülü bir coşkuyla şovmenliklerini sergiliyorlar."
- ep2_locale_events.5010.desc.outro: "\n\nBirkaç seyirci şimdiden bize bakıyor. Kavrulmuş etleri çiğneyen ve kemikleri tüküren budalalar, gösteriye davet ediyor.\n\nBazılarımız antrenmandan bu kadar uzaklaşmaktan yakınıyor. Bağırışların arasında diğerleri bunun bir kanıtlama anı haline geldiğinde ısrar ediyor."
- ep2_locale_events.5010.a: "Hepinize nasıl yapıldığını göstereceğim."
- ep2_locale_events.5010.a.success: "Eğitiminiz başarılı"
- ep2_locale_events.5010.a.failure: "Eğitiminiz utanç verici"
- ep2_locale_events.5010.b.good: "Geçen zamanı hatırlıyorum, çok hoş anılardı."
- ep2_locale_events.5010.b.bad: "Bu sefer. Bu sefer daha iyisini yapacağım."
- ep2_locale_events.5010.b.flavor: "Aklınızda bir hatıra canlanıyor..."
- ep2_locale_events.5010.c: ""Neye bakıyorsun!?""
- ep2_locale_events.5010.c.success: "Kalabalık korkutuyor"
- ep2_locale_events.5010.c.failure: "Kalabalık sana gülüyor"
- ep2_locale_events.5010.d: "Artık gitmeliyim."
-  
- ep2_locale_events.5030.t: "Yeni Bir İşe Alma"
- ep2_locale_events.5030.desc.intro: "Squires miğferleri ve zırhları parlatırken gülüyor ve şakalaşıyor. İçlerinden biri o kadar sert homurdanıyor ki domuz gibi ses çıkarıyor ve geri kalanlar da onu taklit ediyor. [ROOT.Char.Custom('KnightCulturePluralNoTooltipLowercase')]'ları yakınlarda dolaşıyor.\n\nBunların arasında [poached_councillor.GetTitledFirstName], [councillor_employer.GetTitledFirstNamePossessive] konsey üyesi görüyorum."
- ep2_locale_events.5030.desc.contestant: "[poached_councillor.GetHerHis|U] beceri büyük ölçüde övüldü ve [poached_councillor.GetHerHis] adı olası kazananlardan biri olarak yankı buldu."
- ep2_locale_events.5030.desc.fallback: "[poached_councillor.GetHerHis|U] yapılanlar fark edilmeden kalmadı ve [poached_councillor.GetSheHe]'in [poached_councillor.GetHerHis] hükümdarın hanedanı için yaptığı işler fazlasıyla etkileyici."
- ep2_locale_events.5030.desc.outro: "\n\n[poached_councillor.GetHerHim] kişiyi kendi konseyime katılmaya ikna edebilirim."
- ep2_locale_events.5030.a: "Altın en büyük cazibedir."
- ep2_locale_events.5030.b: ""Usta bir [poached_councillor.GetWomanMan], usta bir hükümdarı hak eder. Ya da hiç hükümdarı hak etmez.""
- ep2_locale_events.5030.b.success: "Sen korkutuyorsun [poached_councillor.GetShortUIName]"
- ep2_locale_events.5030.b.failure: "[poached_councillor.GetShortUIName] nezaketsizliğinizden rahatsız oldu"
- ep2_locale_events.5030.c: ""Benim sarayımda seni daha saygın bir hayat bekliyor.""
- ep2_locale_events.5030.d: ""Biz iyi arkadaş değil miyiz, canım [poached_councillor.GetFirstNameNoTooltip]? Bana katıl.""
- ep2_locale_events.5030.e: "[councillor_employer.GetTitledFirstNameNoTooltip]'ı gücendirmek istemiyorum."
-  
-  # VILLAGE 
- ep2_locale_events.5500.t: "Taş kadar eski"
- ep2_locale_events.5500.desc: "Yarışmadan önce rahatlamak için [ROOT.Char.GetCurrentLocation.GetNameNoTooltip]'a yaptığım ziyaret tam da ihtiyacım olan şeydi! Sokaklarda yürürken yerel çocukların bir savaşı taklit ettiğini, silah olarak sopalar kullandığını ve bazılarının "evimin onuru için!" diye bağırdığını ve birçoğunun da "#EMP arghhhh#!".\n\nI meydanın ortasında gururla duran en belirgin binalardan birine hayranlıkla bakmak için durduğunu görüyorum. Ancak biraz daha yakından incelediğimde, bazı eski yazıtları hemen fark ediyorum..."
- ep2_locale_events.5500.a.rome: "Durun... bu Latince mi?"
- ep2_locale_events.5500.a.fallback: "Hah! Bu kadim dili öğrendim!"
- ep2_locale_events.5500.b: "Bu taş memleketin güzel duvarlarını yapardı!"
- ep2_locale_events.5500.c: "Onlardan öğrenmeye devam etmeliyiz."
- ancient_stone_artifact: "Antik Plak"
- ancient_stone_artifact_desc: "Üzerinde eski bir yazıt bulunan bir tabela. Köy duvarı olarak yeniden kullanılmış gibi görünüyor."
-  
- ep2_locale_events.5510.t: "$tournament_locale_settlement$: Arka Sokak"
- ep2_locale_events.5510.desc: "[ROOT.Char.GetCurrentLocation.GetNameNoTooltip]'daki yerliler turnuvaya katılan soylular kadar ilgi duyuyor gibi görünüyor: bazıları evlerinin zemin katında geçici dükkanlar kurmuş ve [ROOT.Char.Custom('GetLocalStreetFoodPlural')]'dekiler de harika kokuyor.\n\nTüm bu şenlik ve sohbetin üstünde, sokaklardan birinden gelen daha... şiddetli sesler duyuyorum; yaklaştığımda bir köylü kavgası gibi görünen bir şey görüyorum, ancak içlerinden biri diğerlerinden daha becerikli."
- ep2_locale_events.5510.a: ""Hey sen! Sen! Artık sen benim şövalyemsin.""
- ep2_locale_events.5510.a.success: "İkna ediyorsun [village_thug.GetShortUIName]"
- ep2_locale_events.5510.a.failure: "[village_thug.GetShortUIName] pek eğlenmemiş görünüyor"
- ep2_locale_events.5510.b: ""Çok etkileyici hareketler bunlar, inceleyeyim...""
- ep2_locale_events.5510.c: ""Hemen durun barbarlar!""
- tournament_stopped_peasant_fight: "Sakin Sokaklar"
-  
- ep2_locale_events.5520.t: "$tournament_locale_settlement$: İpleri Çekmek"
- ep2_locale_events.5520.desc: "[village_woman.GetWomenMen]'lı bir grup evlerden birini birincil dokuma atölyeleri olarak seçmiş ve devam eden turnuva hakkında hararetli bir sohbet ettiklerini açıkça anlayabiliyorum.\n\nPencereye yaslanıyorum, fark edilmemek için büyük bir özenle.\n\n"...ve o [gossip_knight.GetWomanMan], [gossip_knight.GetFirstName]? Dün [gossip_knight.GetHerHim]'ü suçüstü yakaladıklarına inanamıyorum!" diyor içlerinden biri, ustaca birkaç iplik örerken."
- ep2_locale_events.5520.a: "Doğru mu duydum?"
- ep2_locale_events.5520.a.success: "Seni fark etmiyor gibi görünüyorlar"
- ep2_locale_events.5520.a.success.tt: "[gossip_knight.GetTitledFirstNamePossessive] sırrını öğreniyorsun"
- ep2_locale_events.5520.a.failure: "Seni kulak misafiri olurken yakalarlar"
- ep2_locale_events.5520.b: "Onların teknik bilgilerinden bir iki şey öğrenebilirim..."
- ep2_locale_events.5520.c: "Buradan ne kadar altın toplamaları gerektiğini bir düşünün..."
- ep2_locale_events.5520.d: "Hiçbir şey duymadım."
- tournament_supported_weavers: "Dokuma İlgi Alanı"
- tournament_supported_weavers_desc: "Bu karakter köy dokumacılarından öğrenmek için epey zaman harcadı"
- tournament_weaving_taxes_modifier: "Dokuma Vergileri"
-  
- ep2_locale_events.5530.t: "Eğlence"
- ep2_locale_events.5530.desc: "Müzik köyü çevreleyen tarlalardan duyulabiliyor. Onu takip ederek kökenine geliyorum: yoğun çelenklerle süslenmiş meydan. Flütler, tefler ve her türlü enstrüman ve balad!\n\nErkekler ve kadınlar meydanın her yerinde dans ediyor, şimdi ellerini birleştirmişler, şimdi şarkı söylemeye başlıyorlar, şimdi dönüyorlar, dönüyorlar ve dönüyorlar."
- ep2_locale_events.5530.a: "Tebaam beni aralarına katılırken görmekten mutluluk duyacaktır!"
- ep2_locale_events.5530.b: "Katılımcıları etkilemek için mükemmel bir fırsat."
- ep2_locale_events.5530.b.success: "Dansınız etkileyici"
- ep2_locale_events.5530.b.failure: "Beceriksiz görünüyorsun"
- ep2_locale_events.5530.c.flavor: "Savaş kılıç dansına benziyor!"
- ep2_locale_events.5530.c: "Bu hareketler... önümüzdeki yarışmada işinize yarayabilir!"
- ep2_locale_events.5530.d: "Bu müzik çok ilham verici!"
- ep2_locale_events.5530.e: "Eğitimden sapmamalıyım."
- tournament_village_dance_modifier: "Köy Dansı"
-  
- ep2_locale_events.1070.t: "Geçmiş Zamanlarda"
- ep2_locale_events.1070.desc.intro: "Küçük bir saray mensubu grubuyla meyhanede oturuyorum, "O yiğit şövalyenin birinin tabelasını tuttuğunu gördüm," diye fısıldıyor içlerinden biri ve ben hızla kendi düşüncelerimde kayboluyorum, mumların titrekliğini izliyorum.\n\nBir yudum alırken"
- ep2_locale_events.1070.desc.alcohol: "[ROOT.Char.Custom('RegionalAlcoholicDrink')]"
- ep2_locale_events.1070.desc.no_alcohol: "[ROOT.Char.Custom('RegionalDrink')]"
- ep2_locale_events.1070.desc.outro: "[my_memory.GetDescription]'ın genişçe gülümsediği o zamanı hatırlıyorum.\n\n"Gerçek bir hikaye duymak ister misiniz?" diye soruyorum arkadaşlarıma dönerek."
- ep2_locale_events.1070.a: "Coşku dolu bir sohbet için mükemmel bir an."
- ep2_locale_events.1070.b: "#EMP I#!'in iyi göründüğünden emin olmam gerekiyor."
- ep2_locale_events.1070.c: "Ben sadece içmeye devam etmek istiyorum."
-  
- ep2_locale_events.3020.t: "Tatlı sözler"
- ep2_locale_events.3020.desc: ""[enemy_knight.GetFirstName] diğer yarışmacılarla birlikte ortalığı süpürmezse şaşırırım!" Kampta dolaşırken duyuyorum. Bir grup ziyaretçi bir tencerenin etrafında yemek yiyor ve [enemy_knight.GetTitledFirstNameNoTooltip]'in de onlarla birlikte oturduğunu fark ediyorum.\n\n"Abartıyorsun dostum," diyor [enemy_knight.GetSheHe], [enemy_knight.Custom('quirk_pos_standalone')|l] gibi. [enemy_knight.GetHerHim] ile gözlerimi kilitledim ve [enemy_knight.GetHerHim]'e hafifçe başımı salladım.\n\n"İzin verirseniz," diye mırıldandı [enemy_knight.GetSheHe] ayağa kalkarak. "[ROOT.Char.GetLadyLord]'nin tartışmak istediği bir şey mi var?""
- ep2_locale_events.3020.a: ""Kazanmak sana dost kazandırmaz.""
- ep2_locale_events.3020.a.success: "[enemy_knight.GetShortUIName] seni dinliyor"
- ep2_locale_events.3020.a.failure: "[enemy_knight.GetShortUIName] teklifinizden rahatsız oldu"
- ep2_locale_events.3020.b: ""Ben sizin hükümdarınızım. Bunu bırakmanızı emrediyorum.""
- ep2_locale_events.3020.c: "Adil bir dövüş istiyorum."
-  
-  # OPINIONS 
- tournament_cut_off_round_opinion: "Ayırmak"
- tournament_banished_farrier_opinion: "Sürgün Edilen Nalbant Çırağı"
- tournament_failed_gift_opinion: "Kötü Seçilmiş Hediye"
- tournament_arrested_revelers_opinion: "Tutuklanan Şenlikçiler"
- tournament_tolerated_revelers_opinion: "Hoşgörülen Şenlikçiler"
- tournament_religious_tension_opinion: "Dini gerginlik"
- tournament_favored_revelers_opinion: "Tercih Edilen Şenlikçiler"
- tournament_wronged_me_opinion: "Bana haksızlık ettin"
- tournament_ended_rightly_opinion: "Doğru Sonlandı"
- tournament_appointed_champion_opinion: "Atanmış Şampiyon"
-  # INTENT OPINIONS 
- woo_attendee_contest_opinion: "Hayranlık uyandırdı"
- woo_attendee_spouse_contest_opinion: "Başkasını baştan çıkardı"
-  # MODIFIERS 
- tournament_wicked_hangover_modifier: "Kötü Akşamdan Kalma"
- tournament_wicked_hangover_modifier_desc: "Bu karakter bir yarışmaya katılmadan hemen önce aşırıya kaçmıştır."
- tournament_tailor_fancy_crest_modifier: "Muhteşem Arma"
- tournament_tailor_fancy_crest_modifier_desc: "Bu karakterin üzerinde muhteşem bir hanedan arması vardır ve arması olmadan asla görülmez."
- tournament_tailor_mixup_scheme_modifier: "Hatalı Tanımlama"
- tournament_tailor_mixup_scheme_modifier_desc: "Bu karakter başka bir hanedanlığın armasını elinde bulunduruyor ve bu da onlara büyük bir yanıltma fırsatı veriyor."
- tournament_armorer_shield_modifier: "Güzel Kalkan"
- tournament_armorer_shield_modifier_desc: "Bu karaktere, bir turnuva silahçısından satın alınan yüksek kaliteli bir gösteri kalkanı hediye edildi."
- tournament_armorer_tournament_modifier: "Turnuva Miğferi"
- tournament_armorer_tournament_modifier_desc: "Bu karaktere, bir turnuva silahçısından satın alınan yüksek kaliteli bir turnuva miğferi hediye edildi."
- tournament_tailor_banner_modifier: "Güzel Banner"
- tournament_tailor_banner_modifier_desc: "Bu karaktere, bir turnuva terzisinden satın alınan güzel bir bayrak hediye edildi."
- tournament_tailor_gambeson_modifier: "Güzel Gambeson"
- tournament_tailor_gambeson_modifier_desc: "Bu karaktere bir turnuva terzisinden satın alınan sağlam bir gambeson hediye edildi."
- tournament_tailor_glove_modifier: "İnce Eldivenler"
- tournament_tailor_glove_modifier_desc: "Bu karaktere, bir turnuva terzisinden satın alınan bir çift narin eldiven hediye edildi."
- tournament_weaponsmith_ornament_modifier: "Süs Bıçağı"
- tournament_weaponsmith_ornament_modifier_desc: "Bu karaktere, bir turnuva demircisinden satın alınan yüksek kaliteli bir süs eşyası hediye edildi."
- tournament_bowyer_quiver_modifier: "Güzel Okluk"
- tournament_bowyer_quiver_modifier_desc: "Bu karaktere turnuva okçusundan satın alınan kaliteli bir ok kılıfı hediye edildi."
- tournament_bowyer_hunt_modifier: "Güzel Avcılık Kütükleri"
- tournament_bowyer_hunt_modifier_desc: "Bu karaktere, bir turnuva okçusundan satın alınan kaliteli av okları hediye edildi."
- tournament_kept_the_peace_modifier: "Barışı Koru"
- tournament_kept_the_peace_modifier_desc: "Bu karakterin tatlı dili, yüksek riskli bir çatışmayı yatıştırdı."
-  
- tournament_man_of_the_people_modifier: "Halkın Dostu"
- tournament_man_of_the_people_modifier_desc: "Bu karakter, kendi seviyesindeki sıradan insanlarla kaynaşmaktan mutluluk duyar."
- tournament_snob_modifier: "Entelektüel"
- tournament_snob_modifier_desc: "Bu karakter, kendisinden aşağı görülen kişilerle vakit geçirmekten kaçınır."
-  
- tournament_dice_player_modifier: "Zar Kumarbazı"
- tournament_dice_player_modifier_desc: "Bu karakter bir tavernada yüksek bahisli bir zar oyununa katılmıştır."
- tournament_lecherous_knight_modifier: "Şehvet düşkünü savaşçılar"
- tournament_lecherous_knight_modifier_desc: "Bu karakter, şövalyelerinin bazı gizli profesyonellerle aşk dolu aktivitelerde bulunduğunu fark etti ve onlara katılmaya karar verdi."
- tournament_lecherous_knight_positive_modifier: "Şehvet düşkünü savaşçılar"
- tournament_lecherous_knight_positive_modifier_desc: "Bu karakter şövalyelerinin bazı gizli profesyonellerle aşk dolu aktivitelerde bulunduğunu gördü ve [ROOT.Char.GetFaith.PriestNeuterPlural]'ın onayıyla katılmaya karar verdi."
-  
- tournament_locale_tourney_grounds: "Turnuva Sahası"
-  
-  #OTHER 
- score_increases_tt: "Puan #positive_value artar#!"
- score_decreases_tt: "Puan #negative_value azalır#!"
- score_increases_slightly_tt: "Puan #positive_value biraz artar#!"
- score_decreases_slightly_tt: "Puan #negative_value hafifçe azalır#!"
- ep2_locale_events_gift_success: "Hediyeniz iyi karşılandı"
- ep2_locale_events_gift_failure: "Hediyenizi beğenmediler"
- every_faith_attending_character_tt: "Her [instigator_scope.GetFaith.GetAdjective] katılımcı"
- tournament_tailor_mixup_scheme_modifier_value: "$tournament_tailor_mixup_scheme_modifier$: $VALUE|+0=-+$"
+﻿l_english: #NT
+  # TAVERN  #NT
+ ep2_locale_events.1000.t: "$tournament_locale_tavern$: Başka Bir Tur" #NT
+ ep2_locale_events.1000.independent: "Tavernanın köşesindeki [drinking_leader.GetTitledFirstNamePossessive] masasından büyük bir kahkaha sesi duyuluyor." #NT
+ ep2_locale_events.1000.liege: "[drinking_leader.GetTitledFirstName], [drinking_leader.GetLiege.GetTitledFirstNamePossessive] [drinking_leader.GetLiege.Custom2('RelationToMeShort', drinking_leader)]'nin oturduğu köşeden büyük bir kahkaha sesi duyuluyor." #NT
+ ep2_locale_events.1000.alcohol: "\n\n[drinking_leader.GetSheHe|U], yaklaşan [activity.GetCurrentPhase.GetPhase.GetName] yarışmasına katılan diğer katılımcılar ve yeni tanıdıklardan oluşan bir grupla çevrilidir ve hepsi hikayelerini paylaşırken [host.Custom('RegionalAlcoholicDrink')]'ye katılırlar.\n\nGeçerken, bu küçük seansı teşvik etmeyi düşünmeden edemezsiniz..." #NT
+ ep2_locale_events.1000.a: "Hancı, daha fazlası burada!" #NT
+ ep2_locale_events.1000.b: "Masanın hesabı benden!" #NT
+ ep2_locale_events.1000.c: "Sanırım bu kesim artık yeter dedi." #NT
+ ep2_locale_events.1000.d: "Akşamınızın tadını çıkarın, [drinking_leader.GetFirstNameNoTooltip]!" #NT
+ drinks_round_tt: "Her içici" #NT
+ ep2_locale_events.1000.hangover_tt: "Bir daha asla..." #NT
+
+ ep2_locale_events.1002.t: "$tournament_locale_tavern$: İçmeye Cesaretin Var Mı?" #NT
+ ep2_locale_events.1002.desc: "Yerel bar, bir Turnuva şehre geldiğinde beklendiği gibi cesetlerle dolu. Ancak tüm yeni gelenler arasında, kuruluşun demirbaşı olduğu açıkça belli olan bir [local_drunk.GetWomanMan] var. Otururken [local_drunk.GetSheHe|U] bana şüpheyle bakıyor.\n\n"#EMP sen#! burada ne yapıyorsun?" [local_drunk.GetSheHe|U] nihayet içkim geldiğinde ağzından çıkıyor. Yüzüme dönüyorum [local_drunk.GetHerHim]; [local_drunk.GetSheHe] dengesiz bir şekilde [local_drunk.GetHerHis] feet'e yükseliyor.\n\n"Varsayımlarımı bağışlayın, #EMP benim [ROOT.Char.GetLadyLord]#!," — Gösterişli, küçümseyen bir yay ifadeyi noktalıyor — "ama sanırım bunun yarısını bile kaldıramadınız, bırakın hepsini!"" #NT
+ ep2_locale_events.1002.a: "Hadi ama, düşmanlığa gerek yok. Sana bir içki ısmarlayayım mı?" #NT
+ ep2_locale_events.1002.b: "Gerçekten mi? #EMP Bardakları çıkarın!#!" #NT
+ ep2_locale_events.1002.b.success: "Masanın altında [local_drunk.GetFirstNameNoTooltip] içiyorsun" #NT
+ ep2_locale_events.1002.b.failure: "Birkaç saat sonra, sersemlemiş bir şekilde ve baş ağrısıyla uyanırsınız" #NT
+ ep2_locale_events.1002.c: "Otur ve sus, ey umutsuz sarhoş." #NT
+
+ ep2_locale_events.1010.t: "$tournament_locale_tavern$: Bir Oyun Oynamak İster misin?" #NT
+ ep2_locale_events.1010.desc: "Meyhanenin kasveti, ateşin çıtırtısı ve içki içenlerin devam eden eğlencesiyle dengeleniyor. İki gürültücü sarhoşun yanından geçip, bir kişi dışında boş olan yakındaki bir masaya oturuyorum.\n\n"Güzel bir gece, değil mi?" [gambler.GetFirstName], perişan kalabalığa işaret ediyor. Nazikçe başımı sallıyorum. [gambler.GetFirstNameNoTooltip] zar ve bardakları masaya fırlatırken, başımı zar zor yerine koyuyorum.\n\n"Basit bir oyun ister misin? Bir aptal bile oynayabilir! İkimiz de bardakların altından zar atıyoruz ve senin zarının benimkinden yüksek mi düşük mü olduğunu tahmin ediyorsun." [gambler.GetSheHe|U] gülümsüyor, [gambler.GetHerHis] gözünde bir kumarbazın parıltısı. "Üçte iki en iyisi."" #NT
+ #ep2_locale_events.1010.a: "Ama senin zarlarına nasıl güvenebilirim?" #NT
+ #ep2_locale_events.1010.a.tt: "Benim setimi kullanalım. Çok adil ve ağırlıksız setim." #NT
+ ep2_locale_events.1010.b: "Şu zarları buraya at!" #NT
+ ep2_locale_events.1010.c: "Ben kumarbaz değilim." #NT
+
+ ep2_locale_events.1011.t: "$tournament_locale_tavern$: İlk Atış" #NT
+ ep2_locale_events.1011.opening: "Zarlar, ikimiz de masaya çarpmadan önce bardaklarının içinde şakırdayıp zıplıyor. Bana en yakın olan bardağın kenarını kaldırıp içindekileri dikkatlice kapatıyorum.\n\n#BOL [ROOT.Var('root_dice_1').GetValue|0]#!. [gambler.GetFirstName]'ü yakından tarayıp ipuçları arıyorum." #NT
+ ep2_locale_events.1011.tell.good: "\n\nBu [gambler.GetFirstNamePossessiveNoTooltip] dudağının hafifçe yukarı doğru kıvrıldığını mı görüyorum? Göründüğü gibi hemen kayboluyor ama en ufak bir dalgalanma en derin gerçekleri açığa çıkarabilir..." #NT
+ ep2_locale_events.1011.tell.bad: "\n\n[gambler.GetFirstNamePossessiveNoTooltip] gözler bir kez, iki kez aşağı doğru titredi. Göründüğü gibi hemen hemen kayboldu, ancak en ufak bir dalgalanma en derin gerçekleri açığa çıkarabilir..." #NT
+ ep2_locale_events.1011.average: "\n\n[gambler.GetFirstNamePossessiveNoTooltip] ellerim hafifçe titriyor ve zafer kazanmışçasına ağzımı açıyorum, ancak [gambler.GetHerHis] gözlerimde bir ışıltı var. Titreme bir ipucu muydu? Gözler miydi? Bunlardan herhangi biri işe yarar mı?" #NT
+ ep2_locale_events.1011.deceitful: "\n\n[gambler.GetFirstNamePossessiveNoTooltip] gözler benimkilere dikildi, [gambler.GetHerHis] yüzünde hiçbir duygu kıpırtısı yok. Bakışlarımı bölüyorum ve [gambler.GetHerHis]'in beden diline bakıyorum, ama sanki [gambler.GetSheHe] bir heykelmiş gibi." #NT
+ ep2_locale_events.1011.a: "Benim zarım... daha yüksek!" #NT
+ ep2_locale_events.1011.b: "Benim zarlarım daha düşük." #NT
+
+ ep2_locale_events.1012.t: "$tournament_locale_tavern$: İkinci Tur" #NT
+ ep2_locale_events.1012.opening.win: "Zarlarımızı ortaya koyuyoruz. İkimizin de anlayıp kabul etmemiz bir an alıyor. Kazandığımı!\n\n"Ah! İyi tahmin ettin! İlk tur senin!" [gambler.GetFirstNamePossessive] dudaklar gülümsüyor, ama [gambler.GetHerHis] gözlere ulaşamıyor. "Bir sonraki tur!" Zarlar bir kez daha bardaklarda şıngırdadı." #NT
+ ep2_locale_events.1012.opening.lose: "Zarlarımızı ortaya koyuyoruz. İkimizin de benim kaybettiğimi anlaması bir an sürüyor. [gambler.GetFirstName] gururla gülümsüyor.\n\n"Talihsiz! Görünüşe göre yanılmışsın. Bir sonraki tur!" Zarlar bir kez daha bardaklarda şıngırdadı." #NT
+ ep2_locale_events.1012.opening.draw: "Zarlarımızı ortaya koyuyoruz. Bardaklar kaybolurken sayıların eşit olduğunu hesaplamamız sadece bir anımızı alıyor.\n\n"Peki o zaman. Buna berabere diyelim." [gambler.GetFirstNamePossessive] hayal kırıklığı açıkça görülüyor. "Bir sonraki tur!" Zarlar bardaklarda bir kez daha şıngırdadı." #NT
+ ep2_locale_events.1012.dice_reveal: "\n\nKupamın bana en yakın olan tarafını kaldırıyorum. Zarların üzerindeki küçük oymalar sayıyı ortaya çıkarıyor: #BOL [ROOT.Var('root_dice_2').GetValue|0]#!. Kupayı tekrar masaya koyuyorum ve yukarı bakıyorum." #NT
+ ep2_locale_events.1012.tell.good: "\n\n[gambler.GetFirstName] masaya [gambler.GetHerHis] parmak vuruyor. Başın tavana doğru eğilmesi belli belirsiz bir ipucu mu? Kesinlikle [gambler.GetSheHe] eskisinden daha dik oturuyor gibi görünüyor..." #NT
+ ep2_locale_events.1012.tell.bad: "\n\nGözlerin hafifçe daralması, ağırlığın ufak bir kayması. [gambler.GetFirstName] bir şey saklıyor. Belki de o atış çok yüksek değil..." #NT
+ ep2_locale_events.1012.average: "\n\n[gambler.GetFirstNamePossessiveNoTooltip] göz odanın etrafında dolaşıyor, benimki dışında her yere bakıyor. [gambler.GetHerHis|U] kol bardağı kaldırırken hafifçe titriyor. Bunun alakalı olup olmadığından emin olamıyorum..." #NT
+ ep2_locale_events.1012.deceitful: "\n\n[gambler.GetFirstNamePossessiveNoTooltip] duruşu kendinden emin, neredeyse küstah, ama [gambler.GetSheHe] bardağı bile kaldırmamış! [gambler.GetHerHis|U] gözler aşağı doğru kayarken [gambler.GetSheHe] bardağı sertçe [gambler.GetHerHim]'ten uzaklaştırıyor ve ardından masayla aynı hizaya getiriyor. [gambler.GetHerHis] tavırları zerre kadar değişmiyor." #NT
+ ep2_locale_events.1012.a: "Daha yüksek, sanırım." #NT
+ ep2_locale_events.1012.b: "Kesinlikle daha düşük." #NT
+
+ ep2_locale_events.1013.t: "$tournament_locale_tavern$: Karar verici" #NT
+ ep2_locale_events.1013.opening: "Zarlarımızı aynı anda ortaya koyuyoruz, ancak hemen üçüncü bir turun gerekli olduğu anlaşılıyor. Kupalarımızı ve zarlarımızı son, kazananın her şeyi aldığı tur için alıyoruz." #NT
+ ep2_locale_events.1013.dice_reveal: "\n\nKupamın bana en yakın olan tarafını kaldırıyorum. Zarların üzerindeki küçük oymalar sayıyı ortaya çıkarıyor: #BOL [ROOT.Var('root_dice_3').GetValue|0]#!. Kupayı tekrar masaya koyuyorum ve yukarı bakıyorum." #NT
+ ep2_locale_events.1013.tell.good: "\n\nÜç turda, [gambler.GetFirstNamePossessive]'ın işaretleri neredeyse belirgin hale geliyor. [gambler.GetHerHis|U]'in burnu zar zor fark edilir şekilde genişliyor, bundan eminim. Ama bu sadece bir blöf mü?" #NT
+ ep2_locale_events.1013.tell.bad: "\n\n[gambler.GetFirstName] koşuyor [gambler.GetHerHis] el [gambler.GetHerHis] başı dalgın bir şekilde. Umutsuzca mı? Bu özellikle düşük bir atış mı? [gambler.GetSheHe|U] beni görüyor ve biraz cesur bir yüz ifadesi takınıyor. Bu #EMP olabilir#! çift blöf olabilir..." #NT
+ ep2_locale_events.1013.average: "\n\n[gambler.GetFirstNamePossessiveNoTooltip] bana dik dik bakmaya çalışıyor, ama [gambler.GetHerHis] bakışları titriyor. Titreyen bir dudak #EMP bir şeyi ele veriyor#!, ama bu ne olabilir?" #NT
+ ep2_locale_events.1013.deceitful: "\n\n[gambler.GetFirstNamePossessive]'ın bu zeka savaşındaki duygusuzluğu gerçekten şaşırtıcıydı ve burada da farklı değil. [gambler.GetHerHis]'in yüzündeki duygu eksikliği neredeyse şok edici. Basit bir şansa bağlı olması gerekecek." #NT
+ ep2_locale_events.1013.a: "Ben zarlarıma inanıyorum. Daha yüksek!" #NT
+ ep2_locale_events.1013.b: "Benim zarım daha düşük." #NT
+
+ ep2_locale_events.1014.t: "$tournament_locale_tavern$: İyi Bahis" #NT
+ ep2_locale_events.1014.opening: "Kupalar son kez yukarı çıkıyor. Etrafımızda toplanan küçük kalabalık, bunu görmek için eğiliyor...\n\n" #NT
+ ep2_locale_events.1014.win: "Galip benim! [gambler.GetFirstName] en cesur [gambler.GetSheHe] yüzünü takınıyor ama [gambler.GetHerHis] rahatsızlığı açıkça görülüyor. [gambler.GetSheHe|U] bahis oynadığımız çantaları masanın benim tarafıma itiyor ve tam da nezaketin tam ortasında, öfkeyle uzaklaşıyor.\n\nSandalyemde arkama yaslanıyorum, zihinsel olarak bitkin olduğum kadar neşeliyim de." #NT
+ ep2_locale_events.1014.lose: "Kaybettim! [gambler.GetFirstName] sevinçle öterken [gambler.GetSheHe] ikimizin de bahse girdiğimiz çantaları kaptı.\n\n"Bir dahaki sefere daha iyi şanslar!" [gambler.GetSheHe|U] neşeyle kıkırdadı ve kucak dolusu parayla kaçtı.\n\nSandalyemde arkama yaslandım, moralim bozuldu." #NT
+ ep2_locale_events.1014.draw: "Biz... berabere kaldık mı? [gambler.GetFirstName], masanın üzerine galip için koyduğumuz küçük altın keselerini geri alırken, [gambler.GetHerHis] başını pişmanlıkla ovuşturur.\n\n"Bazen zarlar gizemli yollarla işler." [gambler.GetFirstNameNoTooltip] omuz silkerek der. "Yine de iyi oynadın." [gambler.GetSheHe|U] ayağa kalkar ve uzaklaşır." #NT
+ ep2_locale_events.1014.a: "Barmen! İçecekler benden!" #NT
+ ep2_locale_events.1014.b: "Ah, zaferin tadı!" #NT
+ ep2_locale_events.1014.c: "Acılarımı boğmak için bir içki sanırım." #NT
+ ep2_locale_events.1014.d: "Kahretsin!" #NT
+ ep2_locale_events.1014.e: "İşte bu kadar sanırım." #NT
+ ep2_locale_events.1014.f: "Ondan sonra bir içki içmem iyi olurdu!" #NT
+
+ ep2_locale_events.1050.t: "$tournament_locale_tavern$: Bir Bahis [ROOT.Char.GetWomanMan|U]?" #NT
+ ep2_locale_events.1050.desc: "Tavernaya girer girmez bir figür tarafından durduruldum. [wealthy_gambler.GetFirstName] omzuma vurarak beni tenha bir köşeye götürdü, [wealthy_gambler.GetHerHis] sesini komplocu bir tona düşürdü.\n\n"Hastiludes'e katılıyorsun, değil mi?" [wealthy_gambler.GetSheHe|U] benim onayımı fark etmeden devam etti. "Şey, oldukça sıra dışı bir bahsim var, anlıyor musun? İş ortaklarımdan biri senin bir nevi #EMP süt çocuğu#!, olduğunu düşünüyor." [wealthy_gambler.GetSheHe|U] hemen itirazlarımı savuşturdu.\n\n"Onurunu savundum, elbette savundum, [ROOT.Char.GetLadyLord]'m! Turnuvada kask takmadan gidecek kadar cesur olduğunu söylemiştim! Elbette, eğer bu olayı #EMP garanti edebilirsen#!, sanırım senin için değerli hale getirmek için elimden geleni yaparım..."" #NT
+ ep2_locale_events.1050.a: "Sanırım oradakiler senin kumarbaz arkadaşların değil?" #NT
+ ep2_locale_events.1050.a.tt: "Belki de bu küçük düzeltme hakkında bilgi edinmek isterler. Tabii ki, madeni para bir dili susturmaya yetecek kadar iyi değilse..." #NT
+ ep2_locale_events.1050.b: "#EMP Korkak mı?!#! Hiçbir lanet eldiven olmadan yarışacağım!#!" #NT
+ ep2_locale_events.1050.c: "Madeni paraya ihtiyacım var..." #NT
+ ep2_locale_events.1050.d: "Ne kadar utanç verici bir teklif!" #NT
+
+  # TEMPLE  #NT
+ ep2_locale_events.1500.t: "$tournament_locale_religious_building$: [ROOT.Char.GetFaith.HighGodNamePossessive] İyilikler" #NT
+ ep2_locale_events.1500.host_faith: "[tournament_priest.GetFirstName] yanaşmama izin vermek için kenara çekildiğinde, turnuva alanının yakınındaki [ROOT.Char.GetFaith.HouseOfWorship]'de yalnız başıma ciddi bir an geçiriyorum." #NT
+  #AGOT Modified, scope fix  #NT
+ # ep2_locale_events.1500.other_faith: "[activity.GetCurrentPhase.GetCurrentLocation.GetFaith.HouseOfWorship] of [activity.GetCurrentPhase.GetLocation.GetNameNoTooltip], [tournament_priest.GetFirstName]'ün yakınında bulunan küçük geçici [ROOT.Char.GetFaith.GetAdjectiveNoTooltip] tapınağında kendime saygılı bir mesafede durarak bir an ayırıyorum." #NT
+ ep2_locale_events.1500.other_faith: "[activity.GetCurrentPhase.GetLocation.GetCounty.GetFaith.HouseOfWorship] of [activity.GetCurrentPhase.GetLocation.GetNameNoTooltip], [tournament_priest.GetFirstName]'ün yakınında bulunan küçük geçici [ROOT.Char.GetFaith.GetAdjectiveNoTooltip] tapınağında kendime saygılı bir mesafede durarak bir an ayırıyorum." #NT
+ ep2_locale_events.1500.desc: "\n\n[ROOT.Char.GetFaith.PantheonTerm]'ın huzurunda düşünürken, kalbimin derinliklerinde bu şenlik günlerinden ne çıkmasını istediğimi merak ediyorum." #NT
+ ep2_locale_events.1500.a: "Bana şan getir, [ROOT.Char.GetFaith.WarGodName|U]." #NT
+ ep2_locale_events.1500.b: "[ROOT.Char.Custom2('RelationToMeShort', bad_prayer_target)], [bad_prayer_target.GetFirstNamePossessiveNoTooltip] hayatımı zorlaştır." #NT
+ ep2_locale_events.1500.c: "Gülümse [ROOT.Char.Custom2('RelationToMeShort', good_prayer_target)], [good_prayer_target.GetFirstNameNoTooltip]." #NT
+ ep2_locale_events.1500.d: "[ROOT.Char.Custom2('RelationToMeShort', backup_prayer_target)], [backup_prayer_target.GetFirstNameNoTooltip]'im için ceza!" #NT
+ ep2_locale_events.1500.e: "[ROOT.Char.Custom2('RelationToMeShort', backup_prayer_target)], [backup_prayer_target.GetFirstNamePossessiveNoTooltip] elimi yönlendir." #NT
+ ep2_locale_events.1500.f: "[wager_prayer_target.GetFirstNameNoTooltip]'ın zaferi ve cüzdanım!" #NT
+ ep2_locale_events.1500.g: "İç huzuru bulmama izin ver." #NT
+
+ ep2_locale_events.1501.t: "$tournament_locale_religious_building$: Performatif İbadet" #NT
+ ep2_locale_events.1501.desc: "Bir tür rehberlik arayışında kendimi [ROOT.Char.GetFaith.HouseOfWorship]'a doğru kendimi merkeze çekerken buluyorum. Gerçek bir şans eseri, kendimi merkeze koymaktan çok daha ilginç bir şey buluyorum: [seduce_target.GetFirstName] kapının yanında oldukça hüzünlü bir şekilde duruyor.\n\n[seduce_target.GetSheHe|U] bana yarım bir gülümsemeyle bakıyor, dikkat açıkça başka bir yerde. Şimdi [seduce_target.GetHerHim]'ü dini bir yakarış gösterisiyle kazanmak için mükemmel bir fırsat!\n\nYa da... belki de değil? [seduce_target.GetSheHe] neyi tercih ederdi? Belki de [seduce_target.GetSheHe] mütevazı tiptir?" #NT
+ ep2_locale_events.1501.a: "Bağlılığımı şüpheye yer bırakmayacak şekilde ispat edeceğim!" #NT
+ ep2_locale_events.1501.a.tt: "Dini coşkum sınır tanımıyor canım [seduce_target.GetFirstNameNoTooltip]!" #NT
+ ep2_locale_events.1501.a.success: "Performansınız yankı uyandırıyor" #NT
+ ep2_locale_events.1501.a.failure: "[seduce_target.GetFirstNameNoTooltip|U] ekranınız tarafından kapatıldı" #NT
+ ep2_locale_events.1501.b: "[seduce_target.GetFirstNameNoTooltip]'ın biraz daha rahat olduğunu düşünüyorum." #NT
+ ep2_locale_events.1501.b.tt: "Ayinlerimi yaparken gözlerimi hafifçe devirip bilmiş bir şekilde sırıtmam, [seduce_target.GetFirstNameNoTooltip]'a mesajı gayet açık bir şekilde iletmiş olmalı." #NT
+ ep2_locale_events.1501.b.success: "[seduce_target.GetFirstName|U] alaycılığınızdan zevk alıyor" #NT
+ ep2_locale_events.1501.b.failure: "[seduce_target.GetFirstNameNoTooltip|U] senin dinden dönmen yüzünden dehşete düştü" #NT
+ ep2_locale_events.1501.c: "Belki de gitmeliyim." #NT
+
+ ep2_locale_events.1510.t: "$tournament_locale_religious_building$: Kutsala Aykırılık" #NT
+ ep2_locale_events.1510.desc: "Günlük tören için toplanan ibadet edenlerin üzerine sessizlik çökerken, sessizlik aniden bağırış ve haykırışların hızla yaklaşmasıyla bozulur.\n\nKapı hızla açılır ve bir düzine kahkaha atan eğlence düşkünü [ROOT.Char.GetFaith.HouseOfWorship]'a düşer." #NT
+ ep2_locale_events.1510.alcohol: "Ellerinde kupalar ve fıçılar." #NT
+ ep2_locale_events.1510.hashish: "esrar kokan." #NT
+ ep2_locale_events.1510.closing: "\n\n[instigator_scope.GetTitledFirstName], açıkça kışkırtıcı olan, aptalca sırıtıyor, "Peki bütün bunlar ne?! Müzik nerede?"\n\n[tournament_priest.GetFirstName], inanmazlık ve dehşet içinde donmuş bir şekilde izliyor." #NT
+ ep2_locale_events.1510.a: "Bu bir küfürdür! Muhafızlar, tutuklayın şunları!" #NT
+ ep2_locale_events.1510.b: "Parti mi? Birisi parti mi dedi?" #NT
+ ep2_locale_events.1510.c: "Bu faulü kaldır [instigator_scope.GetFaith.GetAdjectiveNoTooltip] [instigator_scope.Custom('GetUnbelieverName')]!" #NT
+ ep2_locale_events.1510.d: "Dışarı çıkın sizi sevimli hödükler." #NT
+  # ARMORER  #NT
+ ep2_locale_events.2001.t: "$tournament_locale_armorer$: Şöhret mi, Etkililik mi?" #NT
+ ep2_locale_events.2001.desc: "[improve_armour.GetName]'ımı tezgahın üzerine koyuyorum ve [tournament_armorer.GetFirstName] elini üstünde gezdiriyor.\n\n"Kötü durumda. Zırhına bakılmasının üzerinden epey zaman geçti, değil mi?" [tournament_armorer.GetSheHe|U] iç çekiyor ve [tournament_armorer.GetHerHim]'ü bekleyen bitmemiş projelere bakıyor.\n\n"Çok fazla zamanım yok. Belki cilalamak için yeterli zamanım olur ya da belki biraz bakım için yağlarım. Ne yaptırmak istiyorsun?" #NT
+ ep2_locale_events.2001.a: "Ayna parlaklığına getirin!" #NT
+ ep2_locale_events.2001.a.tt: "[improve_armour.GetName], [prestige|E] değiştiricisi kazanır" #NT
+ ep2_locale_events.2001.b: "Yağlanmasını ve bakımının yapılmasını tercih ederim." #NT
+ ep2_locale_events.2001.b.tt: "[improve_armour.GetName], [prowess|E] değiştiricisi kazanır" #NT
+ ep2_locale_events.2001.c: "Şu anki haliyle gayet iyi durumda." #NT
+
+ ep2_locale_events.2002.t: "$tournament_locale_armorer$: Yırtık Kayışlar" #NT
+ ep2_locale_events.2002.desc: "[tournament_armorer.GetFirstName] neşeyle [armour.GetName]'imi sunuyor. Işığa kaldırdığımda parlıyor.\n\nMadalyonu memnun zanaatkara uzatırken [tournament_armorer.GetHerHim]'nin yanında duran genç bir çırak görüyorum. [apprentice.GetSheHe|U] masanın etrafında dolaşıyor ve [apprentice.GetHerHis] usta parayı ayırıyor.\n\n"Affet beni, [ROOT.Char.GetLadyLord], ama..." [apprentice.GetSheHe|U] zırhın deri kayışlarını işaret ediyor. "[tournament_armorer.GetSheHe|U] deriyi işlemek için bir tabakçı bile ödemedi."\n\nDaha yakından bakıyorum. Yanlış anlaşılması mümkün değil. Deri yıpranmış ve yıpranmış, açıkça yeni değil. Arka planda, [tournament_armorer.GetSheHe] altını içine atarken zırhçının kesesi şıngırdadı." #NT
+ ep2_locale_events.2002.a: "Aldatacak [ROOT.Char.GetWomanMan] değilim, [tournament_armorer.GetFirstNameNoTooltip]." #NT
+ ep2_locale_events.2002.b: "[tournament_armorer.GetFirstNameNoTooltip]! Bunun anlamı ne?" #NT
+ ep2_locale_events.2002.b.success: "[tournament_armorer.GetFirstNameNoTooltip] isteksizce onarımları yapar" #NT
+ ep2_locale_events.2002.b.failure: "[tournament_armorer.GetFirstNameNoTooltip] solucan [tournament_armorer.GetHerHis] çıkış yolu" #NT
+ ep2_locale_events.2002.c: "Kaliteli çemberlemenin parasını ben öderim." #NT
+ ep2_locale_events.2002.d: "Buna vaktim yok." #NT
+
+ ep2_locale_events.2010.t: "$tournament_locale_armorer$: Savunma Hediyeleri" #NT
+ ep2_locale_events.2010.desc: "Zırhçının dükkanı koruyucu malzemelerle dolup taşıyor; üst veya alt, ucuz veya pahalı, ikisinin arasındaki her şey.\n\nHayat kurtarma ekipmanlarını incelerken [befriend_target.GetFirstName]'ı düşünmeden edemiyorum.\n\n[befriend_target.GetSheHe|U] burada #EMP bir şey#! takdir edebilir, ama ne?" #NT
+ ep2_locale_events.2010.a: "Faydalı bir zırh." #NT
+ ep2_locale_events.2010.a.tt: "#F Temkinli tarafa [befriend_actor.GetFirstNamePossessiveNoTooltip] hitap.#!" #NT
+ ep2_locale_events.2010.b: "[befriend_actor.GetSheHe|U] bu ekran kalkanını beğenebilir." #NT
+ ep2_locale_events.2010.b.tt: "#F Gururlu tarafa [befriend_actor.GetFirstNamePossessiveNoTooltip] hitap.#!" #NT
+ ep2_locale_events.2010.c: "Özel yapım turnuva miğferi." #NT
+ ep2_locale_events.2010.c.tt: "#F [befriend_actor.GetFirstNamePossessiveNoTooltip] rekabetçi tarafa hitap edin.#!" #NT
+ ep2_locale_events.2010.d: "[befriend_target.GetHerHim]'ı etkilemenin başka bir yolunu bulacağım." #NT
+ ep2_locale_events.2011.reply_armor: "İçerisinde [newly_created_artifact.GetType] seti var, biraz basit olsa da iyi yapılmış.\n\n" #NT
+ ep2_locale_events.2011.reply_shield: "İçerisinde ailemin arması ile süslenmiş, yeni kaplanmış bir kalkan var.\n\n" #NT
+ ep2_locale_events.2011.reply_tournament: "İçerisinde, savaş alanında pratik olandan daha fazla koruma sağlayan özel yapım bir turnuva miğferi bulunmaktadır.\n\n" #NT
+ ep2_locale_events.2011.opening: "[befriend_actor.GetTitledFirstName] aniden çadırımın dışında belirir, elinde büyük bir bohça vardır. "Bu senin için, [ROOT.Char.GetFirstNameNoTooltip]" [befriend_actor.GetSheHe] sıcak bir şekilde gülümser. Bir hediye mi?\n\n" #NT
+ ep2_locale_events.2011.success_armor: "$ep2_locale_events.2011.reply_armor$Güzel bir koleksiyon, açıkça sağlam bir şekilde hazırlanmış ve zaten oldukça iyi bir şekilde donatılmış." #NT
+ ep2_locale_events.2011.armor: "$ep2_locale_events.2011.reply_armor$Ne kadar çirkin bir montaj, bazı kakmalar gerçekten bu kadar pahalı mıydı?" #NT
+ ep2_locale_events.2011.success_shield: "$ep2_locale_events.2011.reply_shield$Asılmak için yapılmış olsa bile incecik çizilmiş bir arması olan bir çalışma nesnesidir." #NT
+ ep2_locale_events.2011.shield: "$ep2_locale_events.2011.reply_shield$A kalkan. #EMP I#!'nin kalkanına ne gerek var?" #NT
+ ep2_locale_events.2011.success_tournament: "$ep2_locale_events.2011.reply_tournament$Savaş yerine rekabetin ihtiyaçlarına göre tasarlanmış akıllı bir kittir." #NT
+ ep2_locale_events.2011.tournament: "$ep2_locale_events.2011.reply_tournament$Açıkçası, bu küçük yarışmaları bu kadar ciddiye alan kim var ki, böyle hile yapma gereği duyuyor?" #NT
+ ep2_locale_events.2011.a: "Hediyenin çok güzel seçildiğini inkar edemem." #NT
+ ep2_locale_events.2011.b: ""Ah... çok... ilginç bir nesne."" #NT
+ ep2_locale_events.2012.opening: "[befriend_target.GetTitledFirstName], ağır paketi gülümseyerek alır, beklenmedik hediye karşısında açıkça heyecanlanmıştır.\n\n" #NT
+ ep2_locale_events.2012.success_reply: "[befriend_target.GetSheHe|U] takdirini gizleyemez [befriend_target.GetHerHis] [befriend_target.GetSheHe] ise hediyeyi her açıdan inceler." #NT
+ ep2_locale_events.2012.reply: "[befriend_target.GetSheHe|U], [befriend_target.GetSheHe] baktığında pek de mutlu görünmüyor." #NT
+ ep2_locale_events.2012.success_armor: "\n\n"Bunlar harika parçalar, bunları savaşta korkusuzca giyerdim!"" #NT
+ ep2_locale_events.2012.armor: ""Ah... zırh... sanırım en azından işe yarar."" #NT
+ ep2_locale_events.2012.success_shield: "\n\n"Şuna bak! Hemen çadırımda sergileyeceğim!"" #NT
+ ep2_locale_events.2012.shield: ""Bir kalkan... çok iyi... teşekkür ederim."" #NT
+ ep2_locale_events.2012.success_tournament: ""Ne kadar akıllıca bir tasarım! Yarışmalarda bunu giyeceğimden emin olabilirsiniz!"" #NT
+ ep2_locale_events.2012.tournament: ""Ha, yarışmalar için mi diyorsun? Öyle değil mi..."" #NT
+ ep2_locale_events.2012.success: "\n\n[befriend_target.GetSheHe|U] bana duyguyla teşekkür ediyor. Sanırım doğru seçimi yaptım!" #NT
+ ep2_locale_events.2012.failure: "\n\n[befriend_target.GetSheHe|U] bana sertçe teşekkür ediyor. Belki de yanlış bir seçim yaptım..." #NT
+ ep2_locale_events.2012.a: "Biliyordum!" #NT
+ ep2_locale_events.2012.b: "Silah ustası mutluydu en azından..." #NT
+
+ ep2_locale_events.2050.t: "$tournament_locale_armorer$: Parıldayan Panoply" #NT
+ ep2_locale_events.2050.desc: "Zırhımı görünce, [tournament_armorer.GetFirstName] [tournament_armorer.GetHerHis] elini [tournament_armorer.GetHerHis] kalçasına koyar ve yüksek sesle nefes verir.\n\n"Eh, iş büyük bir iş. #EMP müthiş#! yeteneklerimden biri için çok uzun sürmemeli, tabii!" [tournament_armorer.GetSheHe|U] bana dişlerini göstererek sırıttı. Zırha baktım. Bana iyi görünüyor. [tournament_armorer.GetFirstNameNoTooltip] şüpheciliğimi yakalar ve [tournament_armorer.GetHerHis] başını sallar.\n\n"Yok, kesinlikle gözden geçirilmesi gerekiyor. Gerekmeseydi önermezdim!"" #NT
+ ep2_locale_events.2050.a: "Tamam, sihrini göster." #NT
+ ep2_locale_events.2050.a.success: "Zırhınız geliştirildi" #NT
+ ep2_locale_events.2050.a.critsuccess: "Zırhınız önemli ölçüde iyileştirildi" #NT
+ ep2_locale_events.2050.a.armour1: "[prowess|E], #color_green +1#! oranında artar" #NT
+ ep2_locale_events.2050.a.durability1: "[durability|E], #color_green +5#! oranında artar" #NT
+ ep2_locale_events.2050.a.armour1.tt: "[prowess|E], #color_dark_green +1#! oranında artar" #NT
+ ep2_locale_events.2050.a.durability1.tt: "[durability|E], #color_dark_green +5#! oranında artar" #NT
+ ep2_locale_events.2050.a.criticalsuccess: "Zırhınız önemli ölçüde geliştirildi" #NT
+ ep2_locale_events.2050.a.armour2: "[prowess|E], #color_green +2#! oranında artar" #NT
+ ep2_locale_events.2050.a.durability2: "[durability|E], #color_green +10#! oranında artar" #NT
+ ep2_locale_events.2050.a.prestige2: "Aylık [prestige|E], #color_green +0.04%#! oranında artar" #NT
+ ep2_locale_events.2050.a.armour2.tt: "[prowess|E], #color_dark_green +2#! oranında artar" #NT
+ ep2_locale_events.2050.a.durability2.tt: "[durability|E], #color_dark_green +10#! oranında artar" #NT
+ ep2_locale_events.2050.a.prestige2.tt: "Aylık [prestige|E], #color_dark_green +0.04%#! oranında artar" #NT
+ ep2_locale_events.2050.a.failure: "Zırhınızın onarımı berbat" #NT
+ ep2_locale_events.2050.a.durability3: "[durability|E], #color_red -5#! oranında azalır" #NT
+ ep2_locale_events.2050.b: "İyi olacağını düşünüyorum." #NT
+
+  # TAILOR  #NT
+ ep2_locale_events.2500.t: "$tournament_locale_tailor$: Hatalı Arma" #NT
+ ep2_locale_events.2500.desc: "Terzinin dükkanında sergilenen mallara göz atarken, giysi ve ıvır zıvır yığınları arasında özenle paketlenmiş bir paket görüyorum.\n\nTerzi paketi benim için sevinçle açıyor, deri bağlarını dikkatlice çözerek zarifçe işlenmiş bir armayı ortaya çıkarıyor: #EMP [tailor_mixup.GetHouse.GetBaseName]#! arması." #NT
+ ep2_locale_events.2500.a.rival: "[tailor_mixup.GetHouse.GetBaseNameNoTooltip] köpek! Yak onu, ben sana #EMP öderim#!!" #NT
+ ep2_locale_events.2500.a: "Bana bir iyilik yap, şunu yak olur mu?" #NT
+ ep2_locale_events.2500.b: "Bak, bunları alacağım ama hiçbir haber yok." #NT
+ ep2_locale_events.2500.b.tt: "Bu değiştirici, House [tailor_mixup.GetHouse.GetName]'ye karşı [hostile_scheme|E] [success_chance|E]'inizi artıracaktır." #NT
+ ep2_locale_events.2500.c: "Harika... [ROOT.Char.GetHouse.GetNameNoTooltip] armasını istiyorum!" #NT
+ ep2_locale_events.2500.d: "Güzel iş..." #NT
+
+ ep2_locale_events.2501.t: "$tournament_locale_tailor$: Papa-rahip Giysileri" #NT
+ ep2_locale_events.2501.desc: "Terzide sunulan kumaşlar ve tekstiller, kaba kenevirden en iyi damasklara, kadifelere ve ipeklere kadar uzanıyor. [ROOT.Char.Custom2('RelationToMeShort', random_knight)] [random_knight.GetFirstName]'imle birlikte bunları incelerken, garip bir şekilde tanıdık bir desen beni duraklatıyor.\n\nTam cübbeyi ışığa doğru kaldırırken gözlerim büyüyor. Bir Papa'nın kıyafetlerinin tam bir yeniden yapımı!\n\n"Kardinaller için de var, efendim!" [tournament_tailor.GetFirstName] terzi ikimizin arkasında dolanıyor. [random_knight.GetFirstNamePossessiveNoTooltip] gözler neşeyle parlıyor ve [random_knight.GetSheHe] kaburgalarıma öfkeyle dokunuyor. Terzi tekrar konuşuyor.\n\n"Ve o da uyumlu bir şapkayla geliyor."" #NT
+ ep2_locale_events.2501.a: "#EMP SATILDI!#!" #NT
+ ep2_locale_events.2501.a.tt: "Sen ve [knights|E]'ın ipleri sizde..." #NT
+ ep2_locale_events.2501.b: "Bu küfürdür!" #NT
+
+ ep2_locale_events.2502.t: "$tournament_locale_tailor$: Dövüş Cübbeleri" #NT
+ ep2_locale_events.2502.desc: "Duygusuz terziye bakıyorum, [tournament_tailor.GetHerHim]'dan tüm gün duyduğum en saçma ifadeyi tekrarlamasını sessizce yalvarıyorum.\n\n"Bu bir düello pelerini. Daha önce hiç duymadın mı?" [tournament_tailor.GetFirstName] odadaki aptal benmişim gibi [tournament_tailor.GetHerHis] başını sallıyor. "Hareketine yardımcı oluyor, savaşın tüm nemini uzaklaştırıyor, ayrıca seni sıcak tutuyor ve turlar arasında gitmeye hazır hale getiriyor. Tüm büyüklerde var!"\n\nTerzinin sert satışları bitince dikkatimi tuttuğum mantoya geri veriyorum. Kumaş açıkça dayanıklı ve yüksek kaliteliydi, ama... bir #EMP düello pelerini mi? Gerçekten mi?#!" #NT
+ ep2_locale_events.2502.a: "Benim daha iyi kararımın aksine... anlaştık." #NT
+ ep2_locale_events.2502.b: "Beni aptal sanıyorsun, belli!" #NT
+ ep2_locale_events.2502.b.tt: "Her şeye takılıp kalıyordu!" #NT
+
+ ep2_locale_events.2510.t: "$tournament_locale_tailor$: Konulu Hediyeler" #NT
+ ep2_locale_events.2510.desc: "Terzinin tezgahında asılı olan nadir kumaş toplarını ve kumaş örneklerini inceliyorum; En yüksekten en düşüğe kadar her zevke hizmet veriliyor.\n\nGösterişe bakarken [befriend_target.GetFirstName]'ın neyi takdir edeceğini düşünmeden edemiyorum.\n\nŞüphesiz burada #EMP bir şey#! [befriend_target.GetHerHim]'e hitap edecek.. ." #NT
+ ep2_locale_events.2510.a: "Güzel bir pankart." #NT
+ ep2_locale_events.2510.a.tt: "#F Gururlu tarafa [befriend_actor.GetFirstNamePossessiveNoTooltip] hitap.#!" #NT
+ ep2_locale_events.2510.b: "Gambeson'dan daha faydalı bir şey yoktur." #NT
+ ep2_locale_events.2510.b.tt: "#F Savaşçı tarafa [befriend_actor.GetFirstNamePossessiveNoTooltip] hitap.#!" #NT
+ ep2_locale_events.2510.c: "Bu geyik derisi eldivenler çok güzel." #NT
+ ep2_locale_events.2510.c.tt: "#F Nazik tarafa [befriend_actor.GetFirstNamePossessiveNoTooltip] hitap edin.#!" #NT
+ ep2_locale_events.2510.d: "Belki başka zaman." #NT
+ ep2_locale_events.2511.reply_banner: "İçerisinde armanızın yer aldığı katlanmış, ince dokunmuş bir sancak var.\n\n" #NT
+ ep2_locale_events.2511.reply_gambeson: "İçerisinde zırhın altında giyilen dayanıklı bir gömlek olan kapitone bir gambeson var.\n\n" #NT
+ ep2_locale_events.2511.reply_glove: "İçerisinde yumuşak, narin bir şekilde dikilmiş bir çift geyik derisi eldiven var..\n\n" #NT
+ ep2_locale_events.2511.opening: "[befriend_actor.GetTitledFirstName] sanki hiç yoktan varmış gibi geliyor ve bana katlanmış bir paketi gülümseyerek uzatıyor. Hediye mi?\n\n" #NT
+ ep2_locale_events.2511.success_banner: "$ep2_locale_events.2511.reply_banner$Hiçbir kusur bulamadım, amblemim doğru ve zevkli bir şekilde yakalanmış." #NT
+ ep2_locale_events.2511.banner: "$ep2_locale_events.2511.reply_banner$Benim heyecan eksikliğim ortada, buna ne ihtiyacım var?" #NT
+ ep2_locale_events.2511.success_gambeson: "$ep2_locale_events.2511.reply_gambeson$Yakından incelendiğinde güzel bir parça; çok katmanlı ve açıkça sağlam." #NT
+ ep2_locale_events.2511.gambeson: "$ep2_locale_events.2511.reply_gambeson$Böyle bir eşyayı herhangi bir küçük dokumacıdan alabilirim, ne olmuş yani?" #NT
+ ep2_locale_events.2511.success_glove: "$ep2_locale_events.2511.reply_glove$Kadife kadar yumuşaklar ve bir şekilde neredeyse mükemmel bir şekilde oturuyorlar." #NT
+ ep2_locale_events.2511.glove: "$ep2_locale_events.2511.reply_glove$Ne kadar... zarif..." #NT
+ ep2_locale_events.2511.a: "Gülümsemeden edemiyorum, mükemmel!" #NT
+ ep2_locale_events.2511.b: ""Teşekkür ederim..."" #NT
+ ep2_locale_events.2512.opening: "[befriend_target.GetTitledFirstName] paketimi nazikçe kabul ediyor ve [befriend_target.GetHerHis] heyecanının izin verdiği kadar dikkatli bir şekilde açıyor.\n\n" #NT
+ ep2_locale_events.2512.success_reply: "[befriend_target.GetHerHis|U] Gözler bunu görünce hemen ısındı. İyi bir işaret." #NT
+ ep2_locale_events.2512.reply: "[befriend_target.GetHerHis] tepkisini ölçemiyorum, sanki hiç değişmemiş gibi." #NT
+ ep2_locale_events.2512.success_banner: "\n\n"Bu harika! Böylesine ustaca bir işleme, tasarımı daha da vurguluyor!"" #NT
+ ep2_locale_events.2512.banner: ""Ah, bir pankart. Hemen... asacağım."" #NT
+ ep2_locale_events.2512.success_gambeson: "\n\n"Ne güzel bir çalışma, bu en ağır darbeleri bile durdurur."" #NT
+ ep2_locale_events.2512.gambeson: ""Bunu... diğerlerinin yanına koyacağım..."" #NT
+ ep2_locale_events.2512.success_glove: ""Aman Tanrım, bunlar mükemmel! Bunu nasıl yaptın?!"" #NT
+ ep2_locale_events.2512.glove: ""Ah, eldivenler... çok güzel..."" #NT
+ ep2_locale_events.2512.success: "\n\n[befriend_target.GetSheHe|U] Yollarımızı ayırmadan önce bana çok teşekkür ederim." #NT
+ ep2_locale_events.2512.failure: "\n\n[befriend_target.GetSheHe|U] gitmeden önce bana kısaca teşekkür ediyor..." #NT
+ ep2_locale_events.2512.a: "İyi gitti." #NT
+ ep2_locale_events.2512.b: "Oh iyi..." #NT
+
+ ep2_locale_events.2560.t: "$tournament_locale_tailor$: Yeni Bir Satın Alma" #NT
+ ep2_locale_events.2560.desc.intro: "[tailor.GetTitledFirstName]'ın bir kumaş parçasını kestiğini görüyorum. [tailor.GetHerHis] eserin sergilenmesi için birkaç masa yerleştirildi: çoraplar ve baş örtüleri, Ünvanlar ve kollar. Karşıda hafifçe yanan bir ocak var.\n\n" #NT
+ ep2_locale_events.2560.desc.previous_artifact: ""Giysilerinizi süsleyecek bir şey mi arıyorsunuz, [ROOT.Char.GetLadyLord]'ım? Başkentten bazı eserler de getirdiğinizi görüyorum... Müsaadenizle, [capital_barony.GetAdjectiveNoTooltip] ustalarının çalışmalarını incelemek hep istemişimdir."" #NT
+ ep2_locale_events.2560.desc.new_artifact: ""Dikkat et!" [tailor.GetSheHe] beni uyarıyor, aleti neredeyse düşürüyor. "Çamaşırlara takılmak üzereydin, [ROOT.Char.GetLadyLord]'im," [tailor.GetSheHe] özür dilercesine mırıldanıyor, hızla kıyafetleri topluyor. "Ziyaretinin sebebini tahmin edebileceğimden eminim," [tailor.GetHerHis] yüzü karmaşadan zar zor dışarı çıkıyor." #NT
+ ep2_locale_events.2560.desc.new_artifact_2: ""[ROOT.Char.GetLadyLord]'ın özellikle aradığı bir şey var mı?", [tailor.Custom('quirk_pos_standalone')|l]. [tailor.GetHerHim]'nin yanındaki koleksiyon gerçekten beklediğimden daha etkileyici." #NT
+ ep2_locale_events.2560.a: ""Aslında, [previous_artifact.GetNameNoTooltip]'ımın biraz süslenmeye ihtiyacı var..."" #NT
+ ep2_locale_events.2560.b: ""Şu [purchasable_trinket.GetNameNoTooltip]'ı satın alabilir miyim?"" #NT
+ ep2_locale_events.2560.c: ""Benden bunun için #EMP ödememi#! mi istiyorsun?"" #NT
+ ep2_locale_events.2560.c.success: "Sen korkutuyorsun [tailor.GetShortUIName]" #NT
+ ep2_locale_events.2560.c.failure: "[tailor.GetShortUIName] korkmuyor" #NT
+ ep2_locale_events.2560.d: ""Bazı pankartlar seyircilerin bana tezahürat etmesini sağlayacak!"" #NT
+ ep2_locale_events.2560.e: ""Buyurun, iyi çalışmalar."" #NT
+ feather_trinket: "Parlak Tüy" #NT
+ feather_trinket.desc: "Bir tavus kuşuna ait olduğu söylenen zengin renkli bir tüy. Egzotik bir edinim." #NT
+ chess_trinket: "Satranç taşı" #NT
+ chess_trinket.desc: "Kaya kristalinden oyulmuş güzel bir heykelcik. Soyut biçimi neyi temsil ettiğini söylemeyi zorlaştırıyor." #NT
+ ribbon_trinket: "Süslü Kurdele" #NT
+ ribbon_trinket.desc: "Üzerinde çiçek desenleri işlenmiş bir ipek şerit. Güzel bir hediye." #NT
+ glass_orb_trinket: "Cam Küre" #NT
+ glass_orb_trinket.desc: "Kristal bir küre. Asla tam şeffaf olmayacak." #NT
+ tapestry_trinket: "Koyun Gobleni" #NT
+ tapestry_trinket.desc: "Pastoral bir sahneyi tasvir eden bir duvar halısı. Hayvanlar sakin bir dereden su içiyor." #NT
+ tournament_banners_modifier: "Turnuva Afişleri" #NT
+ tournament_banners_modifier_desc: "Bu karakter seyircilere pankartlar yaptırdı." #NT
+ ep2_locale_events_artifact_decoration_desc: "[previous_artifact.GetDesc]\n\nÇiçekli kurdele ile süslenmiştir." #NT
+ artifact_monthly_prestige_3_modifier: "Dekoratif Kurdele" #NT
+
+ # VISITOR CAMP  #NT
+ ep2_locale_events.3001.t: "$tournament_locale_visitor_camp$: Bir Anı Çalmak" #NT
+ ep2_locale_events.3001.desc: "Nihayet [lover.GetFirstName] ile bir çadırda, turnuvanın tüm koşuşturmacasından uzakta, biraz yalnız vakit geçirdiğimde, üzerime derin bir yorgunluk çöküyor. Üzeri örtülü saman kütüğün üzerine çöktüm, vücudum kadar zihnim de ağrıyordu.\n\n [lover.GetFirstNameNoTooltip]'in bir gardiyana mırıldandığını duydum - rahatsız edilmemekle ilgili bir şeyler - ve birkaç dakika sonra yanımda [lover.GetHerHis] sıcaklık hissettim.\ n\n"Çok yorgun görünüyorsun aşkım." [lover.GetHerHis] sesindeki endişeyi duyabiliyorum. "Yarışmalar başlamadan önce dinlenmeye ihtiyacın var. Bir süre burada benimle kal, lütfen?"" #NT
+ ep2_locale_events.3001.a: "O kadar #EMP#! yorgun değilim..." #NT
+ ep2_locale_events.3001.b: "Bunu isterim." #NT
+ ep2_locale_events.3001.c: "Hazırlanmam lazım!" #NT
+
+ ep2_locale_events.3002.t: "$tournament_locale_visitor_camp$: Şehvetli Savaşçılar" #NT
+ ep2_locale_events.3002.desc: "Bu ses ne? Kıkırdama... birkaç inleme mi? Sanki o çadırdan geliyormuş gibi #EMP ses çıkarıyor#!.\n\nSeslerin geldiği ağır kapağa doğru eşit miktarda beklenti ve tedirginlikle yürürken merakım galip geliyor. Örtüyü araladığımda beni karşılayan oldukça güzel bir manzarayla karşılaşıyorum.\n\n[lech1.GetFirstName], tamamen #EMP suçüstü#! yakalanmış, fiziksel olarak paniğe kapılıyor, [lech1.GetHerHis] partnerini bedeninden iterek [lech1.GetHerHim] yere düşürüyor. Karanlığa baktığımda [lech2.GetFirstName] ve [lech3.GetFirstName]'in de böyle bir olay dönüşüne karşı en iyi tepkilerini işlemekte zorlandıklarını, aceleyle ve sonuçsuz bir şekilde kendi partnerlerini oldukları gibi saklamaya çalıştıklarını görüyorum." #NT
+ ep2_locale_events.3002.a: "Bir kişiye daha yer var mı?" #NT
+ ep2_locale_events.3002.b: "Aptallar! Zamanınızı #EMP hazırlanmaya harcamalısınız#!!" #NT
+ ep2_locale_events.3002.c: "Sözünüzü kesmeme izin vermeyin!" #NT
+ ep2_locale_events.3002.c.tt: "En iyisi onları kendi hallerine bırakmak, öyle değil mi?" #NT
+
+  # FARRIER  #NT
+ ep2_locale_events.3500.t: "$tournament_locale_farrier$: Küçük Bir Piç" #NT
+ ep2_locale_events.3500.desc: "[activity.GetCurrentPhase.GetPhase.GetName] yarışmasının açılışından önce atımı nallatmaya götürüyorum, [tournament_farrier.GetFirstNamePossessive] çırağının pahalı hayvanımın toynaklarını düzeltmesini dikkatle izliyorum.\n\nGenç hakkında kötü bir his var içimde ve tahmin ettiğim gibi ilk çivi çok uzun. Hayvan vahşice tekmeliyor, [tournament_farrier.GetFirstNameNoTooltip]'yi kıl payı ıskalıyor ve sıkıntı içinde dükkânda topallıyor.\n\n" #NT
+ ep2_locale_events.3500.war: "Çırak #EMP [ROOT.Char.Custom('ContestHorseRaceName')]#!'nin peşinden koşar — [ROOT.Char.Custom('HorseStoryMareStallion')]'ün hemen yedek bir ayakkabıya ihtiyacı olacaktır." #NT
+ ep2_locale_events.3500.race: "Çırak #EMP [ROOT.Char.Custom('ContestHorseRaceName')]#!'nin peşinden koşar — [ROOT.Char.Custom('ContestHorseRaceGender')]'ün hemen yedek bir ayakkabıya ihtiyacı olacaktır." #NT
+ ep2_locale_events.3500.other: "Çırak [ROOT.Char.Custom('ContestHorseRaceHerHim')]'ın peşinden koşar — [ROOT.Char.Custom('ContestHorseRaceGender')]'in hemen yedek bir ayakkabıya ihtiyacı olacaktır." #NT
+ ep2_locale_events.3500.a: "[ROOT.Char.Custom('ContestHorseRaceSheHe')|U] beş yıllık maaşından fazlasına mal oldu, aptal!" #NT
+ ep2_locale_events.3500.a.war_horse: "[ROOT.Char.Custom('HorseStorySheHe')|U] beş yıllık maaşından fazlasına mal oldu, aptal!" #NT
+ ep2_locale_events.3500.b: "O çırak bir daha benim ülkemde çalışamayacak!" #NT
+ ep2_locale_events.3500.c: "Bunun ücretsiz olmasını umuyorum!" #NT
+ ep2_locale_events.3500.d: "Bundan sonra biraz daha dikkatli olun." #NT
+ every_attending_contestant_tt: "Her Yarışmacı" #NT
+  # BOWYER  #NT
+ ep2_locale_events.4000.t: "$tournament_locale_bowyer$: Bowyer Etkinliği" #NT
+ ep2_locale_events.4000.desc: "Güzel bir oku çok severim!" #NT
+ ep2_locale_events.4000.a: "Tüy" #NT
+ ep2_locale_events.4000.b: "Tüy yok" #NT
+
+ ep2_locale_events.4001.t: "$tournament_locale_bowyer$: Eğildi Ama Değil..." #NT
+ ep2_locale_events.4001.desc: ""Bana iyi görünüyor!" [tournament_bowyer.GetFirstName], [tournament_bowyer.GetHerHim]'in kontrol etmesi için getirdiğim yayı test ediyor. [tournament_bowyer.GetSheHe] kontrol etmeye devam ederken yanımdaki masanın üzerindeki yığılmış makaraları karıştırıyorum.\n\n"Ön kenar biraz garip görünüyor." Yaycının gözleri kısılıyor, [tournament_bowyer.GetSheHe] yayın kollarını sıkıca kavrıyor ve onları daha da fazla büküyor. "İşte, bak, biraz eğrilik var—"\n\n#EMP Çıtırda!#! [tournament_bowyer.GetFirstNamePossessiveNoTooltip] yay bölünürken ağız şaşkınlıkla açılıyor. [tournament_bowyer.GetHerHis] kontrolün gerekli olduğu ve yayın zaten kırılacağı yönündeki itirazlar odada yankılanıyor, ancak çaresiz kalan benim." #NT
+ ep2_locale_events.4001.a: "Bana ücretsiz bir yedek verin daha iyi olur!" #NT
+ ep2_locale_events.4001.a.success: "[tournament_bowyer.GetFirstNameNoTooltip] yayı ücretsiz değiştirir" #NT
+ ep2_locale_events.4001.a.failure: "[tournament_bowyer.GetFirstNameNoTooltip] ödemeyi reddediyor" #NT
+ ep2_locale_events.4001.b: "Drat. Peki, satılık bir tane var mı?" #NT
+ ep2_locale_events.4001.c: "Sen [tournament_bowyer.Custom('InsultNoun')]! Sen, sen... #EMP [tournament_bowyer.Custom('InsultNoun')]#!!" #NT
+
+ ep2_locale_events.4010.t: "$tournament_locale_bowyer$: Balistik Hediyeler" #NT
+ ep2_locale_events.4010.desc: "Okçunun tezgahında sergilenen malları inceliyorum, çeşitli yaylara, oklara ve aksesuarlara hayranlıkla bakıyorum.\n\nSunulan çok sayıda kullanışlı nesneyi gördüğümde hemen [befriend_target.GetFirstName]'ı düşünüyorum.\n\nBelki burada [befriend_target.GetHerHis] hoşuna giden bir şey vardır..." #NT
+ ep2_locale_events.4010.a: "Yeni bir yay." #NT
+ ep2_locale_events.4010.a.tt: "#F Pratik tarafa [befriend_actor.GetFirstNamePossessiveNoTooltip] hitap edin.#!" #NT
+ ep2_locale_events.4010.b: "İyi ok kılıfları göz ardı edilen bir gerekliliktir." #NT
+ ep2_locale_events.4010.b.tt: "#F [befriend_actor.GetFirstNamePossessiveNoTooltip] kuruluş tarafına itiraz.#!" #NT
+ ep2_locale_events.4010.c: "Bu av okları eşsizdir." #NT
+ ep2_locale_events.4010.c.tt: "#F [befriend_actor.GetFirstNamePossessiveNoTooltip] enerjik tarafa hitap edin.#!" #NT
+ ep2_locale_events.4010.d: "Öyle düşünmüyorum." #NT
+ ep2_locale_events.4011.reply_bow: "İçerisinde oklarla birlikte tertemiz bir yay var.\n\n" #NT
+ ep2_locale_events.4011.reply_quiver: "İçerisinde normalden daha büyük, ilginç tasarımlı bir sadak var.\n\n" #NT
+ ep2_locale_events.4011.reply_hunt: "İçerisinde özenle hazırlanmış bir dizi av okları bulunmaktadır.\n\n" #NT
+ ep2_locale_events.4011.opening: "[befriend_actor.GetTitledFirstName] aniden önümde beliriyor, [befriend_actor.GetHerHis]'in kollarında garip şekilli bir paket. Bir hediye mi?\n\n" #NT
+ ep2_locale_events.4011.success_bow: "$ep2_locale_events.4511.reply_bow$Bu çok güzel bir eser, asilzadelere yakışır bir yay." #NT
+ ep2_locale_events.4011.bow: "$ep2_locale_events.4511.reply_bow$Hayal kırıklığımı gizlemek zor. Yani, bir yay..." #NT
+ ep2_locale_events.4011.success_quiver: "$ep2_locale_events.4511.reply_quiver$İncelemek için biraz zaman harcadım, bu şimdiye kadar gördüğüm en ergonomik ok kılıfı!" #NT
+ ep2_locale_events.4011.quiver: "$ep2_locale_events.4511.reply_quiver$Buna ne ihtiyacım var? Yani, gerçekten..." #NT
+ ep2_locale_events.4011.success_hunt: "$ep2_locale_events.4511.reply_hunt$Yapıları alışılmadık derecede sağlamdır ve küçük hayvanları vurmak için açıkça mükemmeldir." #NT
+ ep2_locale_events.4011.hunt: "$ep2_locale_events.4511.reply_hunt$Ok mu avlıyorsun? #EMP Gerçekten#! yapmamalıydın..." #NT
+ ep2_locale_events.4011.a: "Gülümsememi saklayamıyorum, [befriend_actor.GetSheHe] iyi seçim!" #NT
+ ep2_locale_events.4011.b: ""Ne... düşünceli bir hediye..."" #NT
+ ep2_locale_events.4012.opening: "[befriend_target.GetTitledFirstName] onu mutlu bir şekilde alır ve çocuksu bir neşeyle ambalajın bağlarını açar.\n\n" #NT
+ ep2_locale_events.4012.success_reply: "[befriend_target.GetHerHis|U]'ın gözleri [befriend_target.GetSheHe] bunu gördüğünde kocaman açılıyor — içimde iyi bir his var." #NT
+ ep2_locale_events.4012.reply: "[befriend_target.GetSheHe] bunu gördüğünde [befriend_target.GetHerHis|U]'ın kalbi sızlıyor sanki." #NT
+ ep2_locale_events.4012.success_bow: "\n\n"Ne kadar ustaca oyulmuş bir [newly_created_artifact.GetType]! Bunu saklayacağım!"" #NT
+ ep2_locale_events.4012.bow: ""[newly_created_artifact.GetType]! İyi. İyi."" #NT
+ ep2_locale_events.4012.success_quiver: "\n\n"Bu görülmeye değer bir şey! Bunu nereden buldun?"" #NT
+ ep2_locale_events.4012.quiver: ""Bir ok tutucu mu? Anladım."" #NT
+ ep2_locale_events.4012.success_hunt: ""Ah, ben de yıllardır böyle bir şey arıyordum!"" #NT
+ ep2_locale_events.4012.hunt: ""Avlanmak için mi diyorsun? Doğru. Doğru."" #NT
+ ep2_locale_events.4012.success: "\n\n[befriend_target.GetSheHe|U] bana teşekkür ediyor, elini omzuma koyuyor. Sanırım hedefi on ikiden vurdum!" #NT
+ ep2_locale_events.4012.failure: "\n\n[befriend_target.GetSheHe|U] ayrılmadan önce bana nazikçe teşekkür etti, ne düşünüyordum ki..." #NT
+ ep2_locale_events.4012.a: "İyi hedeflenmiş bir atış." #NT
+ ep2_locale_events.4012.b: "Ne işe yarar ki..." #NT
+
+ ep2_locale_events.4050.t: "$tournament_locale_bowyer$: Kendinizi hazırlayın" #NT
+ ep2_locale_events.4050.desc: "Ok demetleri ve yığılmış yay kirişleri arasında ilerlerken, özellikle kaliteli deriden yapılmış düzgün bir kol zırhı yığınına rastladım. Birini ön koluma taktığımda, sertleşmiş deri kolumun içini koruyordu.\n\n"Bunlar bizim en iyi bileziklerimiz, benim [ROOT.Char.GetLadyLord]. Yay kirişinin on bin kırbacı bunları aşındırmaz!" [tournament_bowyer.GetFirstName] potansiyel bir satış seziyor ve [tournament_bowyer.GetSheHe] hızla yanıma kayıyor.\n\nDeriyi merakla test ediyorum, elimde tartıyorum." #NT
+ ep2_locale_events.4050.a: "Belki bir anlaşmaya varabiliriz?" #NT
+ ep2_locale_events.4050.a.success: "Başarılı bir şekilde pazarlık ediyorsunuz" #NT
+ ep2_locale_events.4050.a.failure: "Pazarlığınız başarısız oldu" #NT
+ ep2_locale_events.4050.a.critfailure: "[tournament_bowyer.GetFirstNameNoTooltip] rahatsızlıktan dolayı satmayı reddediyor" #NT
+ ep2_locale_events.4050.b: "İki tane alayım!" #NT
+ ep2_locale_events.4050.c: "Ne kadar?" #NT
+ ep2_locale_events.4050.d: "Ben bundan vazgeçebilirim." #NT
+
+  # WEAPONSMITH  #NT
+ ep2_locale_events.4500.t: "$tournament_locale_weaponsmith$: Eski Kılıcı Kır" #NT
+ ep2_locale_events.4500.start: "Ben devrediyorum" #NT
+ ep2_locale_events.4500.artifact: "[chipped_sword.GetName]" #NT
+ ep2_locale_events.4500.noartifact: "silahım" #NT
+ ep2_locale_events.4500.end: "Önümdeki denemelere hazırlanmak için, ama ellerimden çıkar çıkmaz pişmanlık duyuyorum. [tournament_weaponsmith.GetFirstName] silah ustası açıkça isteklerle dolup taşıyor ve [tournament_weaponsmith.GetSheHe] sırayla onu ürkek görünümlü bir çırağa veriyor.\n\nGenç [apprentice.GetWomanMan] silahı heyecanla alıyor ve ona havada dikkatsizce -fazla dikkatsizce- bir vuruş yapıyor. Silah yakındaki bir örse çarpıyor ve vücudundan derin bir çentik çıkıyor!\n\nSonuç olarak gelen istemsiz çığlığım silah ustasının dehşet içinde dönmesine, hasarlı silahı bir eliyle kapmasına ve diğer eliyle [apprentice.Custom('GirlBoy')] kulağının etrafına çarpmasına neden oluyor." #NT
+ ep2_locale_events.4500.a: "Düzelt! Hemen düzelt!" #NT
+ ep2_locale_events.4500.a.tt: "Pahalıya mal olacak ve tamiri oldukça zor olacak, ama bunun yapılması gerekiyor!" #NT
+ ep2_locale_events.4500.b: "Aman ha... satılık olan var mı?" #NT
+ ep2_locale_events.4500.c: "Hadi ver bakalım!" #NT
+ tournament_sword_name: "Turnuva Kılıcı" #NT
+ tournament_sword_description: "$artifact_sword_description$\n\nBu silah bir turnuvadan satın alındı." #NT
+ tournament_sword.martiallifestyle: "$tournament_sword_description$ Dayanıklı yapısı her şeyden önce öldürücü bir bıçak olma kararlılığını yansıtır." #NT
+ tournament_sword.controlledadv: "$tournament_sword_description$ Kılıcın üzerindeki yazı, diyarı savunmaktan bahsediyor." #NT
+ tournament_sword.foreignfaith: "$tournament_sword_description$ Bıçağının üzerindeki garip ve yabancı yazı, bilinmeyen bir dine gönderme yapıyor gibi görünüyor." #NT
+
+ ep2_locale_events.4501.t: "$tournament_locale_weaponsmith$: Silahlı ve Hazır" #NT
+ ep2_locale_events.4501.desc: "[tournament_weaponsmith.GetFirstName]'ın yeni bir silah yaptığını izlerken küçük ama fark edilir bir #EMP takırtısı#!, ve ardından mırıldanılan ama merak uyandırıcı bir şekilde soluk soluğa gelen bir küfür duydum. Karanlıkta bakınca sonunda [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('spying_spouse'))] [spying_spouse.GetFirstName]'ümün küçük bir masanın arkasında çömeldiğini gördüm!\n\n[spying_spouse.GetHerHis|U] amaç kısa sürede netleşti. [spying_spouse.GetHerHis|U] gözler [tournament_weaponsmith.GetFirstNamePossessiveNoTooltip] sinirli kollarda gezinirken, ter düğümlü kasların üzerinden akarken. [spying_spouse.GetFirstNamePossessiveNoTooltip] kızarmanın sadece sıcaktan olmadığı açıktı...\n\n[spying_spouse.GetHerHim]'a doğru bir adım attım. Tek gereken bu: #EMP0 göz göze geldiğimizde, suçüstü yakalanmış bir şekilde nefesini zor bastırıyor." #NT
+ ep2_locale_events.4501.a: "Acaba bu ilgiyi herkes paylaşıyor mu diye bir bakmak lazım?" #NT
+ ep2_locale_events.4501.a.tt: "O demircinin ağzının köşesinde oynayan gülümseme zaten çok şey anlatıyor, garanti ederim..." #NT
+ #ep2_locale_events.4501.a.custom.tt: "#high [spying_spouse.GetFirstName]#! #high [tournament_weaponsmith.GetFirstName]#! ile yatıyor" #NT
+ ep2_locale_events.4501.b: "Eh, onlar #EMP çok#! güçlü kollar..." #NT
+ ep2_locale_events.4501.b.tt: "Açıkçası benim [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('spying_spouse'))]'ım harika bir zevke sahip!" #NT
+ ep2_locale_events.4501.c: "Hey! Gidiyoruz!" #NT
+ ep2_locale_events.4501.d: "[spying_spouse.GetSheHe|U] sadece bakıyor. Zarar yok." #NT
+
+ ep2_locale_events.4505.t: "$tournament_locale_weaponsmith$: Ünlü Bıçak" #NT
+ ep2_locale_events.4505.desc: "Demirciye girdiğim anda, [tournament_weaponsmith.GetFirstNamePossessive]'ın gözleri kocaman açılıyor. [tournament_weaponsmith.GetHerHis]'in kollarında saygıyla sıkılmış ipek bir battaniye var.\n\n"Benim [ROOT.Char.GetLadyLord]'im." [tournament_weaponsmith.GetHerHis|U]'ün sesi biraz titriyor. "Elindeki bir bıçakla gösterdiğin beceri ve kahramanlık efsanevi. Ben... Bunu sana ben yaptım."\n\n[tournament_weaponsmith.GetSheHe|U] battaniyeyi kaldırarak harikulade bir ihtişama sahip bir kılıcı ortaya çıkarıyor. Elime aldığımda en iyi kalitede olduğu açıkça görülüyor, silah kolumun bir uzantısı gibi hissettiriyor.\n\n"Onu senin duruşuna göre yaptım, benim [ROOT.Char.GetLadyLord]'im. Eğer bunu bir hediye olarak kabul edersen, bu çok büyük bir onur olur."" #NT
+ ep2_locale_events.4505.a: "O şeref bana ait, [tournament_weaponsmith.GetFirstNameNoTooltip]." #NT
+ ep2_locale_events.4505.a.tt: "Bir hediye mi?! Bu bin kılıca bedel. Eğer yaparsam aldırmayın!" #NT
+ ep2_locale_events.4505.b: "Bu kadar iyi bir silah için hak ettiği bedel ödenmelidir." #NT
+ ep2_locale_events.4505.c: "Ben senin kalitesiz bıçaklarını istemiyorum!" #NT
+
+ ep2_locale_events.4506.t: "$tournament_locale_weaponsmith$: Bir İsimde Ne Var?" #NT
+ ep2_locale_events.4506.desc: ""Bir isme ihtiyacı var."\n\n[tournament_weaponsmith.GetFirstNamePossessive] yeni kılıcımı birkaç kez test ederken bir kesinti, silah ustasına kaşlarımı kaldırmama neden oldu.\n\n"Efsanelerin taşıdığı tüm silahların bir ismi vardır. Bu, yapılması gereken bir şeydir! Güçlü bir savaşçının kılıcının, düşmanların korkup sinmesi için güçlü bir isme ihtiyacı vardır!" [tournament_weaponsmith.GetFirstNameNoTooltip] ısrar ediyor." #NT
+ ep2_locale_events.4506.a: "Benim de aklımda böyle bir isim var." #NT
+ ep2_locale_events.4506.a.tt: "[rename_artifact.GetName] yeni bir isim alır" #NT
+ ep2_locale_events.4506.b: "Kılıç bir araçtır, artık bir araç değil." #NT
+
+ ep2_locale_events.4510.t: "$tournament_locale_weaponsmith$: Saldırgan Hediyeler" #NT
+ ep2_locale_events.4510.desc: "Silah ustasının demir ocağının etrafına bakarken, her türlü ölümcül alet ve ince işlenmiş eşyalar göze çarpıyor.\n\nGözlerim ışıltılı rafların üzerinde gezinirken aklım [befriend_target.GetFirstName]'a kayıyor.\n\nEğer [befriend_target.GetHerHim]'i kazanacaksam, #EMP [befriend_target.GetSheHe]#!'ün takdir edeceği bir şey bulmam gerekecek..." #NT
+ ep2_locale_events.4510.a: "İyi yapılmış bir yan silah." #NT
+ ep2_locale_events.4510.a.tt: "#F Savaşçı tarafa [befriend_actor.GetFirstNamePossessiveNoTooltip] hitap.#!" #NT
+ ep2_locale_events.4510.b: "Sergilenebilecek hoş bir şey." #NT
+ ep2_locale_events.4510.b.tt: "#F Maddiyatçı tarafa [befriend_actor.GetFirstNamePossessiveNoTooltip] hitap.#!" #NT
+ ep2_locale_events.4510.c: "[befriend_target.GetFirstNameNoTooltip]'ın #EMP hançeri olduğunu düşünüyorum#! [befriend_target.GetWomanMan]." #NT
+ ep2_locale_events.4510.c.tt: "#F [befriend_actor.GetFirstNamePossessiveNoTooltip] sinsi tarafa hitap ediyor.#!" #NT
+ ep2_locale_events.4510.d: "[befriend_target.GetHerHim]'ı etkilemenin başka bir yolunu bulacağım." #NT
+ ep2_locale_events.4511.reply_weapon: "İçerisinde, yumuşak ışıkta donuk bir şekilde parlayan, özenle hazırlanmış bir [newly_created_artifact.GetType] var.\n\n" #NT
+ ep2_locale_events.4511.reply_ornament: "İçerisinde savaş alanından çok duvara daha uygun, zarif bir gösteri silahı var.\n\n" #NT
+ ep2_locale_events.4511.reply_dagger: "İçerisinde parlak bir bıçağa sahip, küçük ama zarif bir hançer var.\n\n" #NT
+ ep2_locale_events.4511.opening: "Bir sabah, [befriend_actor.GetTitledFirstName] tarafından aniden durduruldum, bana bir paket ambalaj uzattı ve umutla gülümsedi. Bir hediye mi?\n\n" #NT
+ ep2_locale_events.4511.success_weapon: "$ep2_locale_events.4511.reply_weapon$Silahın işçiliğini ve açıkça kullanışlılığını inkar etmek mümkün değil." #NT
+ ep2_locale_events.4511.weapon: "$ep2_locale_events.4511.reply_weapon$Yüreğim sızlıyor, bu iğrenç şeye ne ihtiyacım olabilir ki?" #NT
+ ep2_locale_events.4511.success_ornament: "$ep2_locale_events.4511.reply_ornament$Çok güzel bir işçilikle yapılmış, detaylara o kadar dikkat edilmiş ki bakmaktan kendinizi alamıyorsunuz." #NT
+ ep2_locale_events.4511.ornament: "$ep2_locale_events.4511.reply_ornament$Ah, tamamen işe yaramaz bir nesne... Sanırım en azından satabilirim." #NT
+ ep2_locale_events.4511.success_dagger: "$ep2_locale_events.4511.reply_dagger$İnce biçimi tutulmayı ve yumruğumla eve sürülmeyi haykırıyor." #NT
+ ep2_locale_events.4511.dagger: "$ep2_locale_events.4511.reply_dagger$Bu ne işe yarıyor? Bu, haydutların aleti." #NT
+ ep2_locale_events.4511.a: "İstemesem de [befriend_actor.GetSheHe] beni etkiledi..." #NT
+ ep2_locale_events.4511.b: ""T-teşekkür ederim. Çok güzel."" #NT
+ ep2_locale_events.4512.opening: "[befriend_target.GetTitledFirstName] özenle paketlenmiş hediyemi sıcak bir şekilde alıyor ve [befriend_target.GetHerHis] yüzünde geniş bir sırıtışla [befriend_target.GetHerHis] eliyle kaldırıyor.\n\n" #NT
+ ep2_locale_events.4512.success_reply: "[befriend_target.GetHerHis|U] Ambalajlar atıldığında gülümsemesi daha da genişliyor." #NT
+ ep2_locale_events.4512.reply: "[befriend_target.GetHerHis|U] Ambalajlar atıldığında ruh haliniz biraz değişiyor — bu merak mı yoksa nefret mi?" #NT
+ ep2_locale_events.4512.success_weapon: "\n\n"Ah, ustaca yapılmış bir [newly_created_artifact.GetType]. Güvenilebilecek bir şey."" #NT
+ ep2_locale_events.4512.weapon: ""Ah... a [newly_created_artifact.GetType]. Tam ihtiyacım olan şey."" #NT
+ ep2_locale_events.4512.success_ornament: "\n\n"Ne güzel bir sergi parçası! Bu, her asilzadenin koleksiyonunda yer almaya değer!"" #NT
+ ep2_locale_events.4512.ornament: ""Ah, bir sergi parçası mı? Çok... güzel."" #NT
+ ep2_locale_events.4512.success_dagger: ""Aman ne güzel, çok güzel... Ne güzel bir denge."" #NT
+ ep2_locale_events.4512.dagger: ""Sebzeleri doğramak için iyi sanırım?"" #NT
+ ep2_locale_events.4512.success: "\n\n[befriend_target.GetSheHe|U] içtenlikle teşekkür ediyor. Sanırım daha iyi olamazdı!" #NT
+ ep2_locale_events.4512.failure: "\n\n[befriend_target.GetSheHe|U] bana nazikçe teşekkür etti. İstenilen etkiyi yarattığını sanmıyorum..." #NT
+ ep2_locale_events.4512.a: "Benim bu konuda gözüm var." #NT
+ ep2_locale_events.4512.b: "Ne gereksiz..." #NT
+
+ ep2_locale_events.4520.t: "$tournament_locale_weaponsmith$: Değerli İkor" #NT
+ ep2_locale_events.4520.desc: ""Bir asilin kanı!" [tournament_weaponsmith.GetFirstNamePossessive] sesi yankılanarak beni ürküttü. Karanlıkta gözlerimi kırpıştırarak [tournament_weaponsmith.GetSheHe]'in aç bir şekilde durduğu, parlayan bir hançer salladığı yere geldim.\n\n"Bir bıçağı söndürmek için ihtiyacım olan tek şey en ufak bir #EMP sıçraması#! asil kan! Kılıç şimdiye kadar yapılmış en iyi silah olacak! Benim için şarkılar söylenecek!" [tournament_weaponsmith.GetSheHe|U] kenar daha yakın, [tournament_weaponsmith.GetHerHis] gözlerinde çılgın bir ışıltı titreşiyor.\n\n"Hepsi senin olacak, [ROOT.Char.GetLadyLord], hepsi senin. Sadece onu döven kişi olmam gerek. İzin ver, ikimizin de adı sonsuza dek hatırlanacak!"\n\nKolumu aşağı indiriyorum." #NT
+ ep2_locale_events.4520.a: "Şan için. Sonsuz şöhret için!" #NT
+ ep2_locale_events.4520.a.success: "Dövme iyi gidiyor" #NT
+ ep2_locale_events.4520.a.failure: "Dövme kötü gidiyor" #NT
+ ep2_locale_events.4520.b: "Deneyebiliriz ama önce merhemlerimi alayım..." #NT
+ ep2_locale_events.4520.c: "Eğer #EMP eminseniz#! bu işe yarayacaktır..." #NT
+ ep2_locale_events.4520.d: "Ne saçma." #NT
+
+ ep2_locale_events.4521.t: "$tournament_locale_weaponsmith$: İyimser Çelik" #NT
+ ep2_locale_events.4521.start: "[tournament_weaponsmith.GetFirstName] heyecanla ateş edip çekiçlerken akışı durdurmak için ön koluma temiz bir bez bastırıyorum. Kan alma hedeflerimiz gerçekleştiğinde bez neredeyse ıslanmış oluyor, ancak akışın kendisi yavaşlamış ve yara donmuş oluyor.\n\nKılıç saygıyla bir masanın üzerine bırakılıyor." #NT
+ ep2_locale_events.4521.success: "Tuhaf görünümlü bir şey: kurumuş kan bıçaktan dökülmeye devam ediyor ve çelikte soluk desenler ortaya çıkıyor. Esnekliğini test ediyorum ve bıçak endişe verici bir şekilde gıcırdıyor.\n\n" #NT
+ ep2_locale_events.4521.failure: "Tek kelimeyle çirkin. Kurumuş kan bıçağın uzunluğunu kaplıyor ve silahın ağırlığı her an değişiyor gibi görünüyor. Kırılgan çelik, yamalı girdaplarla kaplı.\n\n" #NT
+ ep2_locale_events.4521.ending: ""#EMP mükemmel#!!" [tournament_weaponsmith.GetFirstNameNoTooltip] şüpheciliğim onu ​​caydırmamış gibi görünüyor, [tournament_weaponsmith.GetHerHis] elleri titriyor ve [tournament_weaponsmith.GetSheHe] bıçağı hayretle tutuyor." #NT
+ ep2_locale_events.4521.a: "Onu alacağım!" #NT
+ ep2_locale_events.4521.b: "Sende kalabilir." #NT
+
+ ep2_locale_events.5020.t: "$tournament_locale_tourney_grounds$: Etkilendiniz mi?" #NT
+ ep2_locale_events.5020.desc: "Turnuva alanı hazırlıklarla dolu. Uşaklar, onları minik korkuluklara benzeten zırh parçaları taşıyarak etrafta koşturuyor. "Bekle!" diye bağırıyor içlerinden biri, bir miğfer alarak.\n\nTribünlerden gelen tanıdık bir kıkırdama duyuyorum ve [impressed_lover.GetTitledFirstName]'ı, ağızlarını mendille kapatan diğer [impressed_lover.GetWomenMen]'lerle çevrili görüyorum. [impressed_lover.GetSheHe|U] bana el sallamıyor. [impressed_lover.GetSheHe|U]'nin el sallamasına gerek yok.\n\n"Egzersiz yapmaya mı geliyorsun?", [impressed_rival.GetTitledFirstName] yanımdan yürüyerek [impressed_rival.GetHerHis] çenesini kaldırıyor, "İhtiyacın olacak."" #NT
+ ep2_locale_events.5020.a: "[impressed_lover.GetFirstNameNoTooltip]'ın baktığından emin olacağım." #NT
+ ep2_locale_events.5020.a.success: "Etkileyicisin [impressed_lover.GetShortUIName]" #NT
+ ep2_locale_events.5020.a.failure: "[impressed_lover.GetShortUIName] etkilenmedi" #NT
+ ep2_locale_events.5020.b: "Aha! O sinir bozucu [impressed_rival.GetFirstNameNoTooltip]'ı korkutmak için mükemmel bir fırsat." #NT
+ ep2_locale_events.5020.b.success: "[impressed_rival.GetShortUIName] korkutuldu" #NT
+ ep2_locale_events.5020.b.failure: "[impressed_rival.GetShortUIName] etkilenmedi" #NT
+ ep2_locale_events.5020.c: "Etkilemem gereken tek kişi var. Kendim." #NT
+ tournament_ground_flexing: "Etkileyici Eğitim" #NT
+ ep2_locale_events.5020.a.success.tt: "[impressed_lover.GetShortUIName] ile olan ilişkiniz [fertility|E] arttı" #NT
+
+ ep2_locale_events.1520.t: "İki ay" #NT
+ ep2_locale_events.1520.desc: ""Bir alamet! Bir işaret!" Kapıya yaklaşırken [ROOT.Char.GetFaith.HouseOfWorship]'dan gelen bağırışları duyuyorum. [tournament_priest.GetTitledFirstName] gökyüzünü işaret ederek yanıma geliyor. [tournament_priest.GetHerHis]'nin çılgın bakışlarını takip ederek görüyorum: Ay. Başka bir ay.\n\n"Eski arşivlerde okumuştum," [tournament_priest.GetSheHe] devam ediyor, "bir şeyi duyuruyor — ama ne?"" #NT
+ ep2_locale_events.1520.a: "Bir alamet! Zaferimi ilan ediyor!" #NT
+ ep2_locale_events.1520.b: "Aylar madeni paralar gibi yuvarlaktır. Bu zenginliktir, belli ki." #NT
+ ep2_locale_events.1520.c: "Kusursuz bir şekilde başı kesilmiş iki siluet..." #NT
+ ep2_locale_events.1520.d: "Bunu daha önce bir yıldız kitabında görmüştüm." #NT
+ ep2_locale_events.1520.e: "Hiç bir anlamı yok." #NT
+ tournament_astronomy_modifier: "Astronom" #NT
+ tournament_astronomy_modifier_desc: "Bu karakter yıldızları ve onların hareketlerini inceledi" #NT
+ ep2_locale_events.1520.superstitious: "Batıl inançlı oluyorsun" #NT
+
+ ep2_locale_events.3010.t: "Kötü hava" #NT
+ ep2_locale_events.3010.desc: "Kampa girdiğim anda keskin bir kokuyla karşılanıyorum. Burnumu olabildiğince zarif bir şekilde kapatırken ve hastalanmamaya çalışırken, [alerted_physician.GetFirstName] yanıma geliyor, kendi burnunun üstünde bir mendil tutuyor.\n\n"Gitmelisin, [ROOT.Char.GetLadyLord]'im, yarışmacılar hastalanıyor, kötü havadan zarar görüyor," [alerted_physician.GetSheHe] beni uyarıyor." #NT
+ ep2_locale_events.3010.a: "Bunun bir açıklaması olmalı. Bulun." #NT
+ ep2_locale_events.3010.a.success: "[alerted_physician.GetShortUIName] kampı araştırıyor" #NT
+ ep2_locale_events.3010.b: "Turnuva lanetli olmalı!" #NT
+ ep2_locale_events.3010.b.flavor: "Kendimi kamptan uzak tutacağım..." #NT
+ ep2_locale_events.3010.c: "Bu aptalca girişimlere kanmayacağım!" #NT
+ ep2_locale_events.3010.d: "Neden umursayayım?" #NT
+ tournament_not_cursed_modifier: "Temiz hava" #NT
+ tournament_not_cursed_modifier_desc: "Bu karakter turnuvayı zehirleyen kötü havadan kaçındı" #NT
+ ep2_locale_events.3010.a.success.tt: "[alerted_physician.GetShortUIName] sebebi bulur" #NT
+ ep2_locale_events.3010.a.failure: "[alerted_physician.GetShortUIName] başarısız" #NT
+
+ ep2_locale_events.3011.t: "$ep2_locale_events.3010.t$: Miasma" #NT
+  #AGOT Modified  #NT
+ #ep2_locale_events.3011.desc: "[alerted_physician.GetFirstName], [alerted_physician.GetHerHis] yüzünde hoş bir gülümsemeyle bana geri dönüyor. "Kaynağı buldum, [ROOT.Char.GetLadyLord]'im," [alerted_physician.GetSheHe], [alerted_physician.GetHerHis] kahkahasını bastırmaya çalışarak duyuruyor.\n\n"Misafirler... atıklarını atacak bir yer bulamadıkları için, onu nehre dökmeye başvurmuşlar. Kötü hava, Hipokrat'ın da duyurduğu gibi, hastalıkları taşır."" #NT
+ ep2_locale_events.3011.desc: "[alerted_physician.GetFirstName], [alerted_physician.GetHerHis] yüzünde hoş bir gülümsemeyle bana geri dönüyor. "Kaynağı buldum, [ROOT.Char.GetLadyLord]'im," diye duyuruyor [alerted_physician.GetSheHe], [alerted_physician.GetHerHis] kahkahasını bastırmaya çalışarak.\n\n"Misafirler... atıklarını atacak bir yer bulamadıkları için, onları nehre dökmeye başvurmuşlar. Kötü hava, bilgin Harmon'un duyurduğu gibi, hastalıkları taşır."" #NT
+ ep2_locale_events.3011.a: "Onları uyarmalıyım!" #NT
+ ep2_locale_events.3011.b.contestant: "Bunu kendime saklayacağım." #NT
+ ep2_locale_events.3011.b.champion: "Ben sadece şampiyonumu uyaracağım, [contest_champion.GetFirstNameNoTooltip]." #NT
+ ep2_locale_events.3011.b: "Neden söyleyeyim ki?" #NT
+
+ ep2_locale_events.3510.t: "İyi donanımlı" #NT
+ ep2_locale_events.3510.desc: "Demirhanenin sıcaklığı çoğu misafiri uzak tutmaya yeter. Kapıyı açtığımda nalbantın [farrier.GetHerHis] çalışma masasının üzerinde esnediğini görüyorum. [farrier.GetHerHim]'e yaklaşan çok fazla kişi yok gibi görünüyor. [farrier.GetSheHe|U] hızla doğruluyor ve duyulabilir bir öksürükle [farrier.GetHerHis] boğazını temizliyor.\n\n"Size yardım edebilir miyim? Size turnuva için hazır en iyi at nallarını sunabilirim," [farrier.GetSheHe] etkileyiciden de öte bir koleksiyon sergileyerek öneriyor." #NT
+ ep2_locale_events.3510.a: ""Bana sadece en iyisini ver!"" #NT
+ ep2_locale_events.3510.b: ""Şövalyelerim için de bir kaç tane almalıyım..."" #NT
+ ep2_locale_events.3510.c: ""İyi şans muskası!"" #NT
+ ep2_locale_events.3510.d: ""İyiyim, teşekkürler."" #NT
+ ep2_locale_events.3510.a.prowess: "[prowess|E]'ınız artar" #NT
+ ep2_locale_events.3510.a.martial: "[martial|E]'ınız artar" #NT
+ ep2_locale_events.3510.a.prestige: "Yeni ekipmanınız etkileyici" #NT
+ tournament_new_horseshoes_modifier: "Yeni At Nalı" #NT
+ good_luck_horseshoe_artifact: "At nalı" #NT
+ good_luck_horseshoe_artifact_desc: "Kötü ruhları uzak tuttuğuna inanılan demir at nalı." #NT
+
+ ep2_locale_events.1530.t: "Toz İçin Sen" #NT
+ ep2_locale_events.1530.desc.intro: "[ROOT.Char.GetFaith.HouseOfWorship]'ın etrafındaki avlu, gün batımına bu kadar yaklaşırken ıssız. Yaprakların etrafında bir hışırtı duyuyorum ve mezar taşlarının arasında koşan küçük bir hayvanın siluetini görüyorum. Bazılarında oymalar neredeyse yok olmuş durumda. Diğerlerinde açıkça görülüyor.\n\nOnlara doğru bir adım atıyorum" #NT
+ ep2_locale_events.1530.desc.young: "ve kendilerini çok uzak hissediyorlar. Neredeyse imkansız." #NT
+ ep2_locale_events.1530.desc.middle: ". Benim zamanım gelince bundan daha iyi bir dinlenme yeri bulacağımdan emin olabilirsiniz." #NT
+ ep2_locale_events.1530.desc.old: "Çünkü geç oldu. Çünkü daha sonra da devam edecek. Çünkü hayatımda hiç bu kadar geç olmamıştı." #NT
+ ep2_locale_events.1530.a: "Acaba atalarımdan birini bulabilir miyim?" #NT
+ ep2_locale_events.1530.b.christian: "Ve toza döneceğim." #NT
+ ep2_locale_events.1530.b.fallback: "Yakında ben de o olacağım." #NT
+ ep2_locale_events.1530.c: "Tozdan toza! Ne ilham verici bir görüntü!" #NT
+ ep2_locale_events.1530.d: "Hımm... ya eğer...?" #NT
+ ep2_locale_events.1530.a.success: "Kriptolarda bir ata bulursun" #NT
+ ep2_locale_events.1530.a.failure: "Burada tanıdığın kimse yok" #NT
+
+ ep2_locale_events.4540.t: "Bıçak Üzerinde" #NT
+ ep2_locale_events.4540.desc.intro: ""Ne muhteşem bir iş [weaponsmith.GetSheHe]'s yapılmış!", bir şövalyenin gururla atölyeden ayrılırken söylediğini duyuyorum. Parıldayan bıçak, kristal bir göl gibi güneşi yansıtıyor.\n\nKapıyı iterek açıyorum ve patlayan bir alevle karşılaşıyorum." #NT
+ ep2_locale_events.4540.desc.contestant: ""Böyle mi yarışacaksın?" diye soruyor silah ustası, kemerimden sarkan [my_weapon.GetNameNoTooltip|l]'ı işaret ederek." #NT
+ ep2_locale_events.4540.desc.fallback: "Bu sefer yarışmasam bile bu sanatçının yeteneklerini görmezden gelmemeliyim." #NT
+ ep2_locale_events.4540.desc.outro: "\n\n"Altın varsa, çelik de bende."" #NT
+ ep2_locale_events.4540.a: ""Daha ölümcül hale getirin."" #NT
+ ep2_locale_events.4540.a.tt: "Keskin kenar yalnızca Turnuva süresince geçerli olacaktır" #NT
+ ep2_locale_events.4540.b.christian: ""Bıçak boyunca #EMP In Nomine Domini#! çizin."" #NT
+ ep2_locale_events.4540.b.fallback: ""Bir dua yaz."" #NT
+ ep2_locale_events.4540.c: ""[my_weapon.GetOwner.GetHouse.GetMotto] yazmasını istiyorum."" #NT
+ ep2_locale_events.4540.d: ""Altınımı saklayacağım."" #NT
+ ep2_locale_events_artifact_sharp_desc: "[my_weapon.GetDesc]\n\nBıçak turnuva için bilendi." #NT
+ ep2_locale_events_artifact_prayer_desc: "[my_weapon.GetDesc]\n\nBıçağın üzerine bir dua kazınmıştır." #NT
+ ep2_locale_events_artifact_motto_desc: "[my_weapon.GetDesc] Bıçak üzerinde [my_weapon.GetOwner.GetHouse.GetMotto] yazıyor." #NT
+ artifact_tournament_sharpened_blade_modifier: "Bilenmiş Bıçak" #NT
+ artifact_monthly_piety_7_modifier: "Dua Yazısı" #NT
+ artifact_monthly_prestige_7_modifier: "Slogan Yazısı" #NT
+
+ ep2_locale_events.1060.t: "Sahtekarlar ve Aptallar" #NT
+ ep2_locale_events.1060.desc: ""Hah! Hilekar!" Kapıyı açarken birinin bağırdığını duydum. [tournament_gambler.GetWomanMan] memnun bir şekilde sırıtırken, [tournament_gambler.GetSheHe] masanın üzerine bırakılan altını aldı. "Bah!" [tournament_gambler.GetHerHis] rakibi şikayet etti, [tournament_gambler.GetSheHe] ayağa kalkarken tahtaya vurdu.\n\nYabancı hafifçe eğilerek benimle göz göze geldi. "[ROOT.Char.GetTitleAsNameNoTooltip] bir iskambil oyunu oynamak ister miydi? Ben benimkini ortaya koydum ve sen de seninkinin daha yüksek mi yoksa daha düşük mü olacağına bahse gir. Kazanan hepsini alır. Kulağa ne kadar basit geliyorsa o kadar."\n\n"Beş," dedi [tournament_gambler.GetSheHe], [tournament_gambler.GetHerHis] kartını ortaya koyarak." #NT
+ ep2_locale_events.1060.a: ""Benim kartım daha yüksek!"" #NT
+ ep2_locale_events.1060.b: ""Kartım düşük!"" #NT
+ ep2_locale_events.1060.c: ""Kumar oynamak istemiyorum."" #NT
+ ep2_locale_events.1060.a.success: "Çift kazandın" #NT
+ ep2_locale_events.1060.a.failure: "Altınını kaybedersin" #NT
+
+ ep2_locale_events.4530.t: "$tournament_locale_weaponsmith$: Çekiç Bilgeliği" #NT
+ ep2_locale_events.4530.desc: "Yolun diğer tarafındaki alevlerin nazik titrekliğini görebiliyorum. Kapıyı açmadan önce bile sıcaklıkları tanıdık bir kucaklamayla vücudumu sarıyor. İçeride, demirci bir sürü çivi sıralıyor.\n\n"Yardımcı olabilir miyim, [ROOT.Char.GetLadyLord]'ım?" [tournament_weaponsmith.GetSheHe] soruyor, [tournament_weaponsmith.GetHerHis] alnı kömürle lekelenmiş. Buradaki hava daha yoğun." #NT
+ ep2_locale_events.4530.a: ""Demircilerin büyüleri bozabildiğini duydum. Lütfen ruhumu sakinleştir."" #NT
+ ep2_locale_events.4530.a.tt: "Batıl inançlı oldun" #NT
+ ep2_locale_events.4530.b: ""Bana uzman bir teknik gösterebilir misin?"" #NT
+ ep2_locale_events.4530.b.success: "Becerileriniz gelişir" #NT
+ ep2_locale_events.4530.b.crit_success: "Becerileriniz büyük ölçüde gelişir" #NT
+ ep2_locale_events.4530.b.failure: "Yaralanırsın" #NT
+ ep2_locale_events.4530.c: ""[improved_weapon.GetNameNoTooltip]'ımı geliştirebilir misin?"" #NT
+ ep2_locale_events.4530.c.tt: "Kazançlar #positive_value +2#! [prowess|E]" #NT
+ ep2_locale_events.4530.d.success: "Tedavi işe yarıyor!" #NT
+ ep2_locale_events.4530.d.nothing: "Tedavi etkisiz" #NT
+ ep2_locale_events.4530.d: ""Vücudum! Acıyor! Yardım et!"" #NT
+ improved_artifact_desc: "[improved_weapon.GetDesc]\n\nÖnemli bir turnuvadan hemen önce yetenekli bir silah ustası tarafından geliştirildi." #NT
+ ep2_locale_events.4530.e: ""Sadece etrafa bakıyordum."" #NT
+
+  # TRAINING GROUNDS  #NT
+ ep2_locale_events.5000.t: "Çelik Çağrısı" #NT
+ ep2_locale_events.5000.desc.intro: "Çocuğum [my_child.GetFirstName] ile birlikte turnuva alanını ziyaret ettiğimde, bir sonraki yarışma için vahşice antrenman yapan bir grup [ROOT.Char.Custom('KnightCulturePluralNoTooltipLowercase')] ile karşılaşıyoruz. Miğferinin altında neredeyse tanınmayacak halde olan [my_knight.GetTitledFirstName]'ye doğru el sallıyorum.\n\n"Ah, eğer..." evimize büyük bir onur getirirdi ama [my_child.GetFirstNamePossessiveNoTooltip]'ün gözlerinin kılıçlara dikildiğini fark edince hemen duruyorum." #NT
+ ep2_locale_events.5000.desc.martial: "[my_child.GetHerHis] dövüş ilgisi göz önüne alındığında bu sürpriz değil." #NT
+ ep2_locale_events.5000.desc.non_martial: "[my_child.GetSheHe]'ın bu şeylere ilgi duyduğunu fark etmemiştim." #NT
+ ep2_locale_events.5000.a: ""Ne güzel bir fikir!"" #NT
+ ep2_locale_events.5000.b: ""İyi. O zaman [my_knight.GetFirstNameNoTooltip] seni eğitecek."" #NT
+ ep2_locale_events.5000.c: ""Görevini böyle ihmal edebileceğini mi sanıyorsun?"" #NT
+
+
+ ep2_locale_events.5010.t: "$tournament_locale_tournament_grounds$: Neredeyse Orada" #NT
+ ep2_locale_events.5010.desc.intro: "Turnuva alanına doğru yürürken bir grupla buluşuyorum" #NT
+ ep2_locale_events.5010.desc.prowess: "sağlam [ROOT.Char.Custom('KnightCulturePluralNoTooltipLowercase')], hizmetkarları onları zırhla kaplarken dikenlerle ticaret yapıyorlar." #NT
+ ep2_locale_events.5010.desc.mind: "Yarışmacılar ortak stratejileri paylaşarak, henüz gerçekleşmemiş gelişmelere dair önemli ipuçları veriyor." #NT
+ ep2_locale_events.5010.desc.fallback: "yarışmacılar ölçülü bir coşkuyla şovmenliklerini sergiliyorlar." #NT
+ ep2_locale_events.5010.desc.outro: "\n\nBirkaç seyirci şimdiden bize bakıyor. Kavrulmuş etleri çiğneyen ve kemikleri tüküren budalalar, gösteriye davet ediyor.\n\nBazılarımız antrenmandan bu kadar uzaklaşmaktan yakınıyor. Bağırışların arasında diğerleri bunun bir kanıtlama anı haline geldiğinde ısrar ediyor." #NT
+ ep2_locale_events.5010.a: "Hepinize nasıl yapıldığını göstereceğim." #NT
+ ep2_locale_events.5010.a.success: "Eğitiminiz başarılı" #NT
+ ep2_locale_events.5010.a.failure: "Eğitiminiz utanç verici" #NT
+ ep2_locale_events.5010.b.good: "Geçen zamanı hatırlıyorum, çok hoş anılardı." #NT
+ ep2_locale_events.5010.b.bad: "Bu sefer. Bu sefer daha iyisini yapacağım." #NT
+ ep2_locale_events.5010.b.flavor: "Aklınızda bir hatıra canlanıyor..." #NT
+ ep2_locale_events.5010.c: ""Neye bakıyorsun!?"" #NT
+ ep2_locale_events.5010.c.success: "Kalabalık korkutuyor" #NT
+ ep2_locale_events.5010.c.failure: "Kalabalık sana gülüyor" #NT
+ ep2_locale_events.5010.d: "Artık gitmeliyim." #NT
+
+ ep2_locale_events.5030.t: "Yeni Bir İşe Alma" #NT
+ ep2_locale_events.5030.desc.intro: "Squires miğferleri ve zırhları parlatırken gülüyor ve şakalaşıyor. İçlerinden biri o kadar sert homurdanıyor ki domuz gibi ses çıkarıyor ve geri kalanlar da onu taklit ediyor. [ROOT.Char.Custom('KnightCulturePluralNoTooltipLowercase')]'ları yakınlarda dolaşıyor.\n\nBunların arasında [poached_councillor.GetTitledFirstName], [councillor_employer.GetTitledFirstNamePossessive] konsey üyesi görüyorum." #NT
+ ep2_locale_events.5030.desc.contestant: "[poached_councillor.GetHerHis|U] beceri büyük ölçüde övüldü ve [poached_councillor.GetHerHis] adı olası kazananlardan biri olarak yankı buldu." #NT
+ ep2_locale_events.5030.desc.fallback: "[poached_councillor.GetHerHis|U] yapılanlar fark edilmeden kalmadı ve [poached_councillor.GetSheHe]'in [poached_councillor.GetHerHis] hükümdarın hanedanı için yaptığı işler fazlasıyla etkileyici." #NT
+ ep2_locale_events.5030.desc.outro: "\n\n[poached_councillor.GetHerHim] kişiyi kendi konseyime katılmaya ikna edebilirim." #NT
+ ep2_locale_events.5030.a: "Altın en büyük cazibedir." #NT
+ ep2_locale_events.5030.b: ""Usta bir [poached_councillor.GetWomanMan], usta bir hükümdarı hak eder. Ya da hiç hükümdarı hak etmez."" #NT
+ ep2_locale_events.5030.b.success: "Sen korkutuyorsun [poached_councillor.GetShortUIName]" #NT
+ ep2_locale_events.5030.b.failure: "[poached_councillor.GetShortUIName] nezaketsizliğinizden rahatsız oldu" #NT
+ ep2_locale_events.5030.c: ""Benim sarayımda seni daha saygın bir hayat bekliyor."" #NT
+ ep2_locale_events.5030.d: ""Biz iyi arkadaş değil miyiz, canım [poached_councillor.GetFirstNameNoTooltip]? Bana katıl."" #NT
+ ep2_locale_events.5030.e: "[councillor_employer.GetTitledFirstNameNoTooltip]'ı gücendirmek istemiyorum." #NT
+
+  # VILLAGE  #NT
+ ep2_locale_events.5500.t: "Taş kadar eski" #NT
+ ep2_locale_events.5500.desc: "Yarışmadan önce rahatlamak için [ROOT.Char.GetCurrentLocation.GetNameNoTooltip]'a yaptığım ziyaret tam da ihtiyacım olan şeydi! Sokaklarda yürürken yerel çocukların bir savaşı taklit ettiğini, silah olarak sopalar kullandığını ve bazılarının "evimin onuru için!" diye bağırdığını ve birçoğunun da "#EMP arghhhh#!".\n\nI meydanın ortasında gururla duran en belirgin binalardan birine hayranlıkla bakmak için durduğunu görüyorum. Ancak biraz daha yakından incelediğimde, bazı eski yazıtları hemen fark ediyorum..." #NT
+ ep2_locale_events.5500.a.rome: "Durun... bu Latince mi?" #NT
+ ep2_locale_events.5500.a.fallback: "Hah! Bu kadim dili öğrendim!" #NT
+ ep2_locale_events.5500.b: "Bu taş memleketin güzel duvarlarını yapardı!" #NT
+ ep2_locale_events.5500.c: "Onlardan öğrenmeye devam etmeliyiz." #NT
+ ancient_stone_artifact: "Antik Plak" #NT
+ ancient_stone_artifact_desc: "Üzerinde eski bir yazıt bulunan bir tabela. Köy duvarı olarak yeniden kullanılmış gibi görünüyor." #NT
+
+ ep2_locale_events.5510.t: "$tournament_locale_settlement$: Arka Sokak" #NT
+ ep2_locale_events.5510.desc: "[ROOT.Char.GetCurrentLocation.GetNameNoTooltip]'daki yerliler turnuvaya katılan soylular kadar ilgi duyuyor gibi görünüyor: bazıları evlerinin zemin katında geçici dükkanlar kurmuş ve [ROOT.Char.Custom('GetLocalStreetFoodPlural')]'dekiler de harika kokuyor.\n\nTüm bu şenlik ve sohbetin üstünde, sokaklardan birinden gelen daha... şiddetli sesler duyuyorum; yaklaştığımda bir köylü kavgası gibi görünen bir şey görüyorum, ancak içlerinden biri diğerlerinden daha becerikli." #NT
+ ep2_locale_events.5510.a: ""Hey sen! Sen! Artık sen benim şövalyemsin."" #NT
+ ep2_locale_events.5510.a.success: "İkna ediyorsun [village_thug.GetShortUIName]" #NT
+ ep2_locale_events.5510.a.failure: "[village_thug.GetShortUIName] pek eğlenmemiş görünüyor" #NT
+ ep2_locale_events.5510.b: ""Çok etkileyici hareketler bunlar, inceleyeyim..."" #NT
+ ep2_locale_events.5510.c: ""Hemen durun barbarlar!"" #NT
+ tournament_stopped_peasant_fight: "Sakin Sokaklar" #NT
+
+ ep2_locale_events.5520.t: "$tournament_locale_settlement$: İpleri Çekmek" #NT
+ ep2_locale_events.5520.desc: "[village_woman.GetWomenMen]'lı bir grup evlerden birini birincil dokuma atölyeleri olarak seçmiş ve devam eden turnuva hakkında hararetli bir sohbet ettiklerini açıkça anlayabiliyorum.\n\nPencereye yaslanıyorum, fark edilmemek için büyük bir özenle.\n\n"...ve o [gossip_knight.GetWomanMan], [gossip_knight.GetFirstName]? Dün [gossip_knight.GetHerHim]'ü suçüstü yakaladıklarına inanamıyorum!" diyor içlerinden biri, ustaca birkaç iplik örerken." #NT
+ ep2_locale_events.5520.a: "Doğru mu duydum?" #NT
+ ep2_locale_events.5520.a.success: "Seni fark etmiyor gibi görünüyorlar" #NT
+ ep2_locale_events.5520.a.success.tt: "[gossip_knight.GetTitledFirstNamePossessive] sırrını öğreniyorsun" #NT
+ ep2_locale_events.5520.a.failure: "Seni kulak misafiri olurken yakalarlar" #NT
+ ep2_locale_events.5520.b: "Onların teknik bilgilerinden bir iki şey öğrenebilirim..." #NT
+ ep2_locale_events.5520.c: "Buradan ne kadar altın toplamaları gerektiğini bir düşünün..." #NT
+ ep2_locale_events.5520.d: "Hiçbir şey duymadım." #NT
+ tournament_supported_weavers: "Dokuma İlgi Alanı" #NT
+ tournament_supported_weavers_desc: "Bu karakter köy dokumacılarından öğrenmek için epey zaman harcadı" #NT
+ tournament_weaving_taxes_modifier: "Dokuma Vergileri" #NT
+
+ ep2_locale_events.5530.t: "Eğlence" #NT
+ ep2_locale_events.5530.desc: "Müzik köyü çevreleyen tarlalardan duyulabiliyor. Onu takip ederek kökenine geliyorum: yoğun çelenklerle süslenmiş meydan. Flütler, tefler ve her türlü enstrüman ve balad!\n\nErkekler ve kadınlar meydanın her yerinde dans ediyor, şimdi ellerini birleştirmişler, şimdi şarkı söylemeye başlıyorlar, şimdi dönüyorlar, dönüyorlar ve dönüyorlar." #NT
+ ep2_locale_events.5530.a: "Tebaam beni aralarına katılırken görmekten mutluluk duyacaktır!" #NT
+ ep2_locale_events.5530.b: "Katılımcıları etkilemek için mükemmel bir fırsat." #NT
+ ep2_locale_events.5530.b.success: "Dansınız etkileyici" #NT
+ ep2_locale_events.5530.b.failure: "Beceriksiz görünüyorsun" #NT
+ ep2_locale_events.5530.c.flavor: "Savaş kılıç dansına benziyor!" #NT
+ ep2_locale_events.5530.c: "Bu hareketler... önümüzdeki yarışmada işinize yarayabilir!" #NT
+ ep2_locale_events.5530.d: "Bu müzik çok ilham verici!" #NT
+ ep2_locale_events.5530.e: "Eğitimden sapmamalıyım." #NT
+ tournament_village_dance_modifier: "Köy Dansı" #NT
+
+ ep2_locale_events.1070.t: "Geçmiş Zamanlarda" #NT
+ ep2_locale_events.1070.desc.intro: "Küçük bir saray mensubu grubuyla meyhanede oturuyorum, "O yiğit şövalyenin birinin tabelasını tuttuğunu gördüm," diye fısıldıyor içlerinden biri ve ben hızla kendi düşüncelerimde kayboluyorum, mumların titrekliğini izliyorum.\n\nBir yudum alırken" #NT
+ ep2_locale_events.1070.desc.alcohol: "[ROOT.Char.Custom('RegionalAlcoholicDrink')]" #NT
+ ep2_locale_events.1070.desc.no_alcohol: "[ROOT.Char.Custom('RegionalDrink')]" #NT
+ ep2_locale_events.1070.desc.outro: "[my_memory.GetDescription]'ın genişçe gülümsediği o zamanı hatırlıyorum.\n\n"Gerçek bir hikaye duymak ister misiniz?" diye soruyorum arkadaşlarıma dönerek." #NT
+ ep2_locale_events.1070.a: "Coşku dolu bir sohbet için mükemmel bir an." #NT
+ ep2_locale_events.1070.b: "#EMP I#!'in iyi göründüğünden emin olmam gerekiyor." #NT
+ ep2_locale_events.1070.c: "Ben sadece içmeye devam etmek istiyorum." #NT
+
+ ep2_locale_events.3020.t: "Tatlı sözler" #NT
+ ep2_locale_events.3020.desc: ""[enemy_knight.GetFirstName] diğer yarışmacılarla birlikte ortalığı süpürmezse şaşırırım!" Kampta dolaşırken duyuyorum. Bir grup ziyaretçi bir tencerenin etrafında yemek yiyor ve [enemy_knight.GetTitledFirstNameNoTooltip]'in de onlarla birlikte oturduğunu fark ediyorum.\n\n"Abartıyorsun dostum," diyor [enemy_knight.GetSheHe], [enemy_knight.Custom('quirk_pos_standalone')|l] gibi. [enemy_knight.GetHerHim] ile gözlerimi kilitledim ve [enemy_knight.GetHerHim]'e hafifçe başımı salladım.\n\n"İzin verirseniz," diye mırıldandı [enemy_knight.GetSheHe] ayağa kalkarak. "[ROOT.Char.GetLadyLord]'nin tartışmak istediği bir şey mi var?"" #NT
+ ep2_locale_events.3020.a: ""Kazanmak sana dost kazandırmaz."" #NT
+ ep2_locale_events.3020.a.success: "[enemy_knight.GetShortUIName] seni dinliyor" #NT
+ ep2_locale_events.3020.a.failure: "[enemy_knight.GetShortUIName] teklifinizden rahatsız oldu" #NT
+ ep2_locale_events.3020.b: ""Ben sizin hükümdarınızım. Bunu bırakmanızı emrediyorum."" #NT
+ ep2_locale_events.3020.c: "Adil bir dövüş istiyorum." #NT
+
+  # OPINIONS  #NT
+ tournament_cut_off_round_opinion: "Ayırmak" #NT
+ tournament_banished_farrier_opinion: "Sürgün Edilen Nalbant Çırağı" #NT
+ tournament_failed_gift_opinion: "Kötü Seçilmiş Hediye" #NT
+ tournament_arrested_revelers_opinion: "Tutuklanan Şenlikçiler" #NT
+ tournament_tolerated_revelers_opinion: "Hoşgörülen Şenlikçiler" #NT
+ tournament_religious_tension_opinion: "Dini gerginlik" #NT
+ tournament_favored_revelers_opinion: "Tercih Edilen Şenlikçiler" #NT
+ tournament_wronged_me_opinion: "Bana haksızlık ettin" #NT
+ tournament_ended_rightly_opinion: "Doğru Sonlandı" #NT
+ tournament_appointed_champion_opinion: "Atanmış Şampiyon" #NT
+  # INTENT OPINIONS  #NT
+ woo_attendee_contest_opinion: "Hayranlık uyandırdı" #NT
+ woo_attendee_spouse_contest_opinion: "Başkasını baştan çıkardı" #NT
+  # MODIFIERS  #NT
+ tournament_wicked_hangover_modifier: "Kötü Akşamdan Kalma" #NT
+ tournament_wicked_hangover_modifier_desc: "Bu karakter bir yarışmaya katılmadan hemen önce aşırıya kaçmıştır." #NT
+ tournament_tailor_fancy_crest_modifier: "Muhteşem Arma" #NT
+ tournament_tailor_fancy_crest_modifier_desc: "Bu karakterin üzerinde muhteşem bir hanedan arması vardır ve arması olmadan asla görülmez." #NT
+ tournament_tailor_mixup_scheme_modifier: "Hatalı Tanımlama" #NT
+ tournament_tailor_mixup_scheme_modifier_desc: "Bu karakter başka bir hanedanlığın armasını elinde bulunduruyor ve bu da onlara büyük bir yanıltma fırsatı veriyor." #NT
+ tournament_armorer_shield_modifier: "Güzel Kalkan" #NT
+ tournament_armorer_shield_modifier_desc: "Bu karaktere, bir turnuva silahçısından satın alınan yüksek kaliteli bir gösteri kalkanı hediye edildi." #NT
+ tournament_armorer_tournament_modifier: "Turnuva Miğferi" #NT
+ tournament_armorer_tournament_modifier_desc: "Bu karaktere, bir turnuva silahçısından satın alınan yüksek kaliteli bir turnuva miğferi hediye edildi." #NT
+ tournament_tailor_banner_modifier: "Güzel Banner" #NT
+ tournament_tailor_banner_modifier_desc: "Bu karaktere, bir turnuva terzisinden satın alınan güzel bir bayrak hediye edildi." #NT
+ tournament_tailor_gambeson_modifier: "Güzel Gambeson" #NT
+ tournament_tailor_gambeson_modifier_desc: "Bu karaktere bir turnuva terzisinden satın alınan sağlam bir gambeson hediye edildi." #NT
+ tournament_tailor_glove_modifier: "İnce Eldivenler" #NT
+ tournament_tailor_glove_modifier_desc: "Bu karaktere, bir turnuva terzisinden satın alınan bir çift narin eldiven hediye edildi." #NT
+ tournament_weaponsmith_ornament_modifier: "Süs Bıçağı" #NT
+ tournament_weaponsmith_ornament_modifier_desc: "Bu karaktere, bir turnuva demircisinden satın alınan yüksek kaliteli bir süs eşyası hediye edildi." #NT
+ tournament_bowyer_quiver_modifier: "Güzel Okluk" #NT
+ tournament_bowyer_quiver_modifier_desc: "Bu karaktere turnuva okçusundan satın alınan kaliteli bir ok kılıfı hediye edildi." #NT
+ tournament_bowyer_hunt_modifier: "Güzel Avcılık Kütükleri" #NT
+ tournament_bowyer_hunt_modifier_desc: "Bu karaktere, bir turnuva okçusundan satın alınan kaliteli av okları hediye edildi." #NT
+ tournament_kept_the_peace_modifier: "Barışı Koru" #NT
+ tournament_kept_the_peace_modifier_desc: "Bu karakterin tatlı dili, yüksek riskli bir çatışmayı yatıştırdı." #NT
+
+ tournament_man_of_the_people_modifier: "Halkın Dostu" #NT
+ tournament_man_of_the_people_modifier_desc: "Bu karakter, kendi seviyesindeki sıradan insanlarla kaynaşmaktan mutluluk duyar." #NT
+ tournament_snob_modifier: "Entelektüel" #NT
+ tournament_snob_modifier_desc: "Bu karakter, kendisinden aşağı görülen kişilerle vakit geçirmekten kaçınır." #NT
+
+ tournament_dice_player_modifier: "Zar Kumarbazı" #NT
+ tournament_dice_player_modifier_desc: "Bu karakter bir tavernada yüksek bahisli bir zar oyununa katılmıştır." #NT
+ tournament_lecherous_knight_modifier: "Şehvet düşkünü savaşçılar" #NT
+ tournament_lecherous_knight_modifier_desc: "Bu karakter, şövalyelerinin bazı gizli profesyonellerle aşk dolu aktivitelerde bulunduğunu fark etti ve onlara katılmaya karar verdi." #NT
+ tournament_lecherous_knight_positive_modifier: "Şehvet düşkünü savaşçılar" #NT
+ tournament_lecherous_knight_positive_modifier_desc: "Bu karakter şövalyelerinin bazı gizli profesyonellerle aşk dolu aktivitelerde bulunduğunu gördü ve [ROOT.Char.GetFaith.PriestNeuterPlural]'ın onayıyla katılmaya karar verdi." #NT
+
+ tournament_locale_tourney_grounds: "Turnuva Sahası" #NT
+
+  #OTHER  #NT
+ score_increases_tt: "Puan #positive_value artar#!" #NT
+ score_decreases_tt: "Puan #negative_value azalır#!" #NT
+ score_increases_slightly_tt: "Puan #positive_value biraz artar#!" #NT
+ score_decreases_slightly_tt: "Puan #negative_value hafifçe azalır#!" #NT
+ ep2_locale_events_gift_success: "Hediyeniz iyi karşılandı" #NT
+ ep2_locale_events_gift_failure: "Hediyenizi beğenmediler" #NT
+ every_faith_attending_character_tt: "Her [instigator_scope.GetFaith.GetAdjective] katılımcı" #NT
+ tournament_tailor_mixup_scheme_modifier_value: "$tournament_tailor_mixup_scheme_modifier$: $VALUE|+0=-+$" #NT

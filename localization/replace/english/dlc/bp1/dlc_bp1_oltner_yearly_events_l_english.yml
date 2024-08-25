@@ -1,76 +1,76 @@
-﻿l_english:
- bp1_yearly.4000.t: "Ailevi Bir Yansıma"
- bp1_yearly.4000.desc: "[family_memory.GetDescription], benim [family_memory_participant.Custom('ComplimentAdjective')] [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('family_memory_participant'))]!\n\n günü hatırlıyorum"
- bp1_yearly.4000.desc.alive: "Bu tür anılar bana huzur veriyor. Ne olursa olsun, ailemin yanımda olduğunu ve House [ROOT.Char.GetHouse.GetName]'ın güçlü durduğunu biliyorum."
- bp1_yearly.4000.desc.dead: "Keşke hala burada olsaydın. Daha çok gülecek şey vardı, daha çok çözülecek anlaşmazlıklar, daha çok yaratılacak anılar... [ROOT.Char.GetHouse.GetName] Evi, senin içinde olmaman nedeniyle daha az değerli."
- bp1_yearly.4000.desc_end: "\n\n#EMP "[ROOT.Char.GetHouse.GetMotto]."#! Kendi kendime fısıldıyorum."
- bp1_yearly.4000.a: "Keşke bunu benimle birlikte söylemek için burada olsaydın..."
- bp1_yearly.4000.b: "Bu düşünceyi saklayacağım!"
- bp1_yearly.4000.c: "Anısını bir şiirle anacağım!"
- bp1_yearly.4000.c.success: "Aileniz bu jesti takdir ediyor"
- bp1_yearly.4000.c.failure: "Hüzünle yıkılırsın"
- bp1_yearly.4000.d: "[family_memory_participant.GetFirstNameNoTooltip], [family_memory_participant.GetHerHis] sadakat karşılığında bir hediyeyi hak ediyor!"
- bp1_yearly.4000.family_first: "Ev [ROOT.Char.GetHouse.GetNameNoTooltip] sonsuza kadar sürsün!"
- bp1_yearly.4001.desc: "En yakınlarım bir araya gelince, resitale başlıyorum:\n\n#POE [ROOT.Char.Custom('GeneratePoem_Title')]#!\n[ROOT.Char.Custom('GeneratePoem_Intro_Rhyming')]\n[ROOT.Char.Custom('GeneratePoem_Outro_Rhyming')]\n\n"
- bp1_yearly.4001.desc.success_poem: "Toplananların yanaklarından yaşlar süzülüyor. Sanırım anısına iyi hizmet ettim, [family_memory_participant.GetFirstNameNoTooltip]."
- bp1_yearly.4001.desc.fail_poem: "...bu pek iyi değildi, değil mi?"
- bp1_yearly.4001.a: "Allah rahmet eylesin."
- bp1_yearly.4001.b: "Senin hatıranı rezil ettim!"
- bp1_yearly.4010.t: "Daha İyi Bir Koruyucu"
- bp1_yearly.4010.desc: ""Sevgili [ROOT.Char.GetWifeHusband], [child_to_change_guardian.Custom('GetDaughterSon')] [child_to_change_guardian.GetFirstNamePossessive] eğitimimiz için endişeleniyorum." [parent_that_want_guardian_change.GetWifeHusband] [parent_that_want_guardian_change.GetFirstName] diyor, endişeli bir [parent_that_want_guardian_change.GetHerHis] sesiyle.\n\n"
- bp1_yearly.4010.desc.root: ""Gerçek şu ki... sen sadece [child_to_change_guardian.GetHerHim] toplamak için #EMP çok meşgulsün#!."
- bp1_yearly.4010.desc.other: ""Bu [current_guardian.Custom('InsultNoun')] [current_guardian.GetFirstName] iyi bir koruyucu değil. [current_guardian.GetSheHe|U] çok... #EMP [current_guardian.Custom('InsultAdjective')]!#!"
-  #AGOT Modified, bad scoping 
- #bp1_yearly.4010.desc_end: "[child_to_change_guardian.Custom('GetDaughterSon')]'ımızın iyi, kendini adamış bir koruyucuya ihtiyacı var, benim [proposed_guardian.Custom('ComplimentAdjective')] [child_to_change_guardian.Custom2('RelationToMeShort', SCOPE.sC('proposed_guardian'))] [proposed_guardian.GetFirstName]'üm gibi birine!" [parent_that_want_guardian_change.GetSheHe|U] devam ediyor.\n\n"Düzenlemeleri ben mi yapayım?" [parent_that_want_guardian_change.GetSheHe|U] umutla bana bakarak diyor."
- bp1_yearly.4010.desc_end: "[child_to_change_guardian.Custom('GetDaughterSon')]'ımızın iyi, kendini adamış bir koruyucuya ihtiyacı var, benim [proposed_guardian.Custom('ComplimentAdjective')] [parent_that_want_guardian_change.Custom2('RelationToMeShort', SCOPE.sC('proposed_guardian'))] [proposed_guardian.GetFirstName]'üm gibi birine!" [parent_that_want_guardian_change.GetSheHe|U] devam ediyor.\n\n"Düzenlemeleri ben mi yapayım?" [parent_that_want_guardian_change.GetSheHe|U] umutla bana bakarak diyor."
- bp1_yearly.4010.a: "Tabi ki canım. [proposed_guardian.GetFirstNameNoTooltip] daha iyi bir seçim."
- bp1_yearly.4010.a_effect: "[child_to_change_guardian.GetFirstNamePossessive] [education|E] ilerleme"
- bp1_yearly.4010.b: "[current_guardian.GetFirstNameNoTooltip]'ı seçmemin bir sebebi var: [parent_that_want_guardian_change.GetWomanMan]!"
- bp1_yearly.4010.b_alt: "Bah! [child_to_change_guardian.GetHerHim] toplamak için yeterli zamanım var!"
- bp1_yearly.4010.c: "Benim seçimim daha iyi, inan bana!"
- bp1_yearly.4010.c_effect: "[child_to_change_guardian.GetFirstNamePossessive] [education|E] önemli ölçüde ilerleme kaydediyor"
- bp1_yearly.4020.t: "Şiirsel Bir Dostluk"
- bp1_yearly.4020.desc: ""[ROOT.Char.GetFirstNameNoTooltip], sevgili dostum, [war_memory_participant.GetTitledFirstName]'e karşı kazandığın zaferi bir kez daha hatırladım — bu yüzden zaferin hakkında bir şiir yazmaya karar verdim!" [poetry_friend.GetFirstName], [poetry_friend.GetHerHis]'ün boğazını temizleyerek şöyle diyor:\n\n[poetry_artifact.GetName]\n[poetry_artifact.GetDesc]"
- bp1_yearly.4020.a: "Onu sarayımda sergileyeceğim!"
- bp1_yearly.4020.b: "Teşekkür ederim dostum. Bu şiiri yakınımda tutacağım."
- bp1_yearly.4020.c: "Hah! [war_memory_participant.GetFirstNameNoTooltip] tanıdığı herkese bir kopyasını göndereceğim!"
- bp1_yearly.4020.d: "Bu kadar övgüyü sadece [ROOT.Char.GetFaith.HighGodName] hak ediyor."
- bp1_yearly.4020.poetry: "[poetry_friend.Custom('GeneratePoem_Intro_Rhyming')]\n[poetry_friend.Custom('GeneratePoem_Outro_Rhyming')]"
- bp1_yearly.4020.poetry_title: "[poetry_friend.Custom('GeneratePoem_Title')]"
- artifact_poetry_name: "$bp1_yearly.4020.poetry_title$"
- artifact_poetry_description: "[ROOT.Char.GetFirstNamePossessiveNoTooltip] iyi arkadaşı [poetry_friend.GetTitledFirstName] tarafından yazılan, [war_memory_participant.Custom('InsultAdjective')] [war_memory_participant.GetTitledFirstName] karşısında [ROOT.Char.GetTitledFirstNamePossessive] zafere adanmış bir şiir çalışması.\n\n$bp1_yearly.4020.poetry$"
- poetry_artifact_appended_desc: "[ROOT.Char.GetTitledFirstNamePossessive]'ın [war_memory_participant.Custom('InsultAdjective')] [war_memory_participant.GetTitledFirstName]'ye karşı kazandığı zafere adanmış, [ROOT.Char.GetFirstNamePossessiveNoTooltip] iyi arkadaş [poetry_friend.GetTitledFirstName] tarafından yazılmış bir şiir eseri.\n\nŞöyle yazıyor:\n$artifact_poetry_description$"
- bp1_yearly.4020.a_effect: "[newly_created_artifact.GetName], [court_artifact|E]'e dönüştürülür ve [grandeur|E] değiştiricisi kazanır"
- bp1_yearly.4020.b_effect: "[newly_created_artifact.GetName] [artifact|E] kazanırsınız"
- bp1_yearly.4030.t: "Baştan Çıkarıcı Rakip"
- bp1_yearly.4030.desc: ""[ROOT.Char.Custom('CulturalCurse')|U]!" diye bağırıyorum mektubu okurken.\n\nBenim [marriage_rival.Custom('InsultAdjective')] [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('marriage_rival'))]'im, [marriage_rival.GetFirstName] — adına tükürüyorum!"
- bp1_yearly.4030.desc_bond_broken: "\n\nSadece benim vasalım [marriage_vassal.GetTitledFirstName]'ı seninle evlenmeye ve [spurned_partner.GetFirstName] ile olan [marriage_vassal.GetHerHis] bağını koparmaya ikna etmek için hile ve cazibeni kullanmadın, hayır, ayrıca [marriage_vassal.GetTitledFirstNameNoTooltip]'ü bana karşı çevirdin!"
- bp1_yearly.4030.desc_no_broken_bonds: "\n\nVasalım [marriage_vassal.GetTitledFirstName]'ı seninle evlenmeye ikna etmek için sadece hile ve cazibeni kullanmakla kalmadın, aynı zamanda [marriage_vassal.GetTitledFirstNameNoTooltip]'i de bana karşı çevirdin!"
- bp1_yearly.4030.desc_end: "\n\nZehirli dilin benim hakkımda yalan üstüne yalan yayıyor... [marriage_vassal.GetFirstNameNoTooltip]'ı sevmiyorsun, sadece #EMP acı çekmemi istiyorsun!#!"
- bp1_yearly.4030.a: "[marriage_vassal.GetFirstNameNoTooltip]'ı [marriage_rival.GetFirstNameNoTooltip]'in ne kadar hain olduğuna ikna etmeliyim!"
- bp1_yearly.4030.b: "[marriage_vassal.GetSheHe|U] [marriage_vassal.GetHerHis] tahvili kırdı mı? [ROOT.Char.GetFaith.PriestNeuterPlural] bunun için [marriage_vassal.GetHerHim]'e ateş yağdıracak!"
- bp1_yearly.4030.c: "Belki [spurned_partner.GetFirstNameNoTooltip] işe yarayabilir..."
- bp1_yearly.4030.d: "Bah! Bu [marriage_rival.Custom('InsultNoun')] hiçbir şey başaramadı!"
- distrustful: "Güvenilmez"
- bp1_yearly.4030.a.success: "[marriage_vassal.GetTitledFirstName] ikna olmuş ve pişman"
- bp1_yearly.4030.a.failure: "[marriage_vassal.GetTitledFirstName] daha fazla yalan söylediğini düşünüyor"
- bp1_yearly.4030.b.success: "[marriage_vassal.GetTitledFirstName], [marriage_vassal.GetHerHis] yolunun hatasını görür"
- bp1_yearly.4030.b.failure: "[marriage_vassal.GetTitledFirstName], [ROOT.Char.GetFaith.PriestNeuterPlural]'in argümanlarını saptırır"
- bp1_yearly.4040.t: "Benim Nazik [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))|U]"
- bp1_yearly.4040.desc.intro.1: ""Ah, canım, canım [ROOT.Char.GetFirstNameNoTooltip] — Seni çok seviyorum!" [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))] [kindly_grandmother.GetFirstName]'im bana, lezzetli ikramlarla dolu bir tabak taşıyarak söylüyor. "Sana [ROOT.Char.Custom('FavoriteTreatDemand')] yaptım, en sevdiğin şey olduğunu biliyorum!"\n\nAh, [kindly_grandmother.GetSheHe] beni çok iyi tanıyor! Elbette, böyle şeyleri elle yapmak [kindly_grandmother.GetHerHis] boyunun altında bir şey ama... hayır diyecek kimim ki?"
- bp1_yearly.4040.desc.intro.2: ""Büyük [ROOT.Char.Custom('GirlBoy')]'im için daha fazla [ROOT.Char.Custom('FavoriteTreatDemand')]!" [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))] [kindly_grandmother.GetFirstName]'üm mutfaktan bağırıyor. "Hadi, ye!"\n\nMmm, harika kokuyor... bir ısırık daha fena olmaz mı?"
- bp1_yearly.4040.desc.feeding.1: ""[ROOT.Char.GetFirstNameNoTooltip], [ROOT.Char.Custom('FavoriteTreatDemand')]'imin tadını çıkarman beni dünyadaki en mutlu [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))] yapıyor!" [kindly_grandmother.GetFirstName] mutfaktan neşeyle bağırıyor. "Bugün #EMP fazladan#! büyük bir parti yaptım! Hemen hepsini ye!"\n\n#flatulence Uurp..!#! Ah, hiç bitmiyor... Ama hayır diyemem ve sevgili [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))]'mi incitemem, değil mi?"
- bp1_yearly.4040.desc.feeding.2: ""Bunu [ROOT.Char.Custom('GetLivestockFowlIndef')] gibi şekillendirdim!" [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))] [kindly_grandmother.GetFirstName]'im şarkı söylüyor, bir tabak daha [ROOT.Char.Custom('FavoriteTreatDemand')] taşıyor. "Bak, ağzına doğru uçuyor!"\n\nAman Tanrım [ROOT.Char.GetFaith.HighGodName], bu çok fazla! Ama... [kindly_grandmother.GetHerHis] duygular, onları düşünmeliyim..."
- bp1_yearly.4040.desc.feeding.3: ""[ROOT.Char.GetFirstNameNoTooltip], neredesin? Bu [ROOT.Char.Custom('FavoriteTreatDemand')] partisini tereyağında kaynattım!" [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))|U] [kindly_grandmother.GetFirstName] fısıldar, [kindly_grandmother.GetHerHis] bakışlarını mutfakta beni aramaya çevirir.\n\nBu iş iyice kontrolden çıkıyor... #EMP Ne yapmalıyım!?#!"
- bp1_yearly.4040.desc.feeding.4: ""Kim bilebilirdi ki [ROOT.Char.Custom('FavoriteTreatDemand')], [ROOT.Char.Custom('GetExpensiveMeal')] ile bu kadar iyi giderdi — senin en sevdiğin #EMP [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))]#! elbette!" [kindly_grandmother.GetFirstName] bağırır, hayatımda gördüğüm en iğrenç yemeğin olduğu bir tabak taşırken. "Akşam yemeği hazır, [ROOT.Char.GetFirstNameNoTooltip]!"\n\nNe kadar iyi saklanırsam saklanayım, [kindly_grandmother.GetSheHe] beni her zaman bulur! Ah, zavallı, şişkin bedenim!"
- bp1_yearly.4040.a: "[ROOT.Char.Custom('FavoriteTreatDemand')]'ını yemeyi çok isterdim!"
- bp1_yearly.4040.b: "Hayır teşekkürler, iyiyim."
- bp1_yearly.4040.c: "Bir ısırık daha fena olmaz..."
- bp1_yearly.4040.d: "Yeterince sahibim."
- bp1_yearly.4040.e: "#EMP [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))|U]...#!'ye zarar veremem"
- bp1_yearly.4040.f: "Fiziksel olarak bir lokma daha #EMP yiyemem#!!"
- bp1_yearly.4040.desc.dead: "Ah, sevgili [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))], sen gidince [ROOT.Char.Custom('FavoriteTreatDemand')]'in bitmek bilmeyen tabakları duracak, ama rahatlamak hem tatlı hem de acı bir duygu — sonsuza dek gitmendense seni yanımda görmeyi tercih ederdim.\n\nElveda, [kindly_grandmother.GetFirstName], huzur içinde uyu."
- bp1_yearly.4040.dead: "Belki senin şerefine biraz [ROOT.Char.Custom('FavoriteTreatDemand')] yerim."
- bp1_yearly.4040.family_first: "Ah [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))], biraz konuşmayı tercih ederim!"
- #XXX: "XXX"
-  
+﻿l_english: #NT
+ bp1_yearly.4000.t: "Ailevi Bir Yansıma" #NT
+ bp1_yearly.4000.desc: "[family_memory.GetDescription], benim [family_memory_participant.Custom('ComplimentAdjective')] [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('family_memory_participant'))]!\n\n günü hatırlıyorum" #NT
+ bp1_yearly.4000.desc.alive: "Bu tür anılar bana huzur veriyor. Ne olursa olsun, ailemin yanımda olduğunu ve House [ROOT.Char.GetHouse.GetName]'ın güçlü durduğunu biliyorum." #NT
+ bp1_yearly.4000.desc.dead: "Keşke hala burada olsaydın. Daha çok gülecek şey vardı, daha çok çözülecek anlaşmazlıklar, daha çok yaratılacak anılar... [ROOT.Char.GetHouse.GetName] Evi, senin içinde olmaman nedeniyle daha az değerli." #NT
+ bp1_yearly.4000.desc_end: "\n\n#EMP "[ROOT.Char.GetHouse.GetMotto]."#! Kendi kendime fısıldıyorum." #NT
+ bp1_yearly.4000.a: "Keşke bunu benimle birlikte söylemek için burada olsaydın..." #NT
+ bp1_yearly.4000.b: "Bu düşünceyi saklayacağım!" #NT
+ bp1_yearly.4000.c: "Anısını bir şiirle anacağım!" #NT
+ bp1_yearly.4000.c.success: "Aileniz bu jesti takdir ediyor" #NT
+ bp1_yearly.4000.c.failure: "Hüzünle yıkılırsın" #NT
+ bp1_yearly.4000.d: "[family_memory_participant.GetFirstNameNoTooltip], [family_memory_participant.GetHerHis] sadakat karşılığında bir hediyeyi hak ediyor!" #NT
+ bp1_yearly.4000.family_first: "Ev [ROOT.Char.GetHouse.GetNameNoTooltip] sonsuza kadar sürsün!" #NT
+ bp1_yearly.4001.desc: "En yakınlarım bir araya gelince, resitale başlıyorum:\n\n#POE [ROOT.Char.Custom('GeneratePoem_Title')]#!\n[ROOT.Char.Custom('GeneratePoem_Intro_Rhyming')]\n[ROOT.Char.Custom('GeneratePoem_Outro_Rhyming')]\n\n" #NT
+ bp1_yearly.4001.desc.success_poem: "Toplananların yanaklarından yaşlar süzülüyor. Sanırım anısına iyi hizmet ettim, [family_memory_participant.GetFirstNameNoTooltip]." #NT
+ bp1_yearly.4001.desc.fail_poem: "...bu pek iyi değildi, değil mi?" #NT
+ bp1_yearly.4001.a: "Allah rahmet eylesin." #NT
+ bp1_yearly.4001.b: "Senin hatıranı rezil ettim!" #NT
+ bp1_yearly.4010.t: "Daha İyi Bir Koruyucu" #NT
+ bp1_yearly.4010.desc: ""Sevgili [ROOT.Char.GetWifeHusband], [child_to_change_guardian.Custom('GetDaughterSon')] [child_to_change_guardian.GetFirstNamePossessive] eğitimimiz için endişeleniyorum." [parent_that_want_guardian_change.GetWifeHusband] [parent_that_want_guardian_change.GetFirstName] diyor, endişeli bir [parent_that_want_guardian_change.GetHerHis] sesiyle.\n\n" #NT
+ bp1_yearly.4010.desc.root: ""Gerçek şu ki... sen sadece [child_to_change_guardian.GetHerHim] toplamak için #EMP çok meşgulsün#!." #NT
+ bp1_yearly.4010.desc.other: ""Bu [current_guardian.Custom('InsultNoun')] [current_guardian.GetFirstName] iyi bir koruyucu değil. [current_guardian.GetSheHe|U] çok... #EMP [current_guardian.Custom('InsultAdjective')]!#!" #NT
+  #AGOT Modified, bad scoping  #NT
+ #bp1_yearly.4010.desc_end: "[child_to_change_guardian.Custom('GetDaughterSon')]'ımızın iyi, kendini adamış bir koruyucuya ihtiyacı var, benim [proposed_guardian.Custom('ComplimentAdjective')] [child_to_change_guardian.Custom2('RelationToMeShort', SCOPE.sC('proposed_guardian'))] [proposed_guardian.GetFirstName]'üm gibi birine!" [parent_that_want_guardian_change.GetSheHe|U] devam ediyor.\n\n"Düzenlemeleri ben mi yapayım?" [parent_that_want_guardian_change.GetSheHe|U] umutla bana bakarak diyor." #NT
+ bp1_yearly.4010.desc_end: "[child_to_change_guardian.Custom('GetDaughterSon')]'ımızın iyi, kendini adamış bir koruyucuya ihtiyacı var, benim [proposed_guardian.Custom('ComplimentAdjective')] [parent_that_want_guardian_change.Custom2('RelationToMeShort', SCOPE.sC('proposed_guardian'))] [proposed_guardian.GetFirstName]'üm gibi birine!" [parent_that_want_guardian_change.GetSheHe|U] devam ediyor.\n\n"Düzenlemeleri ben mi yapayım?" [parent_that_want_guardian_change.GetSheHe|U] umutla bana bakarak diyor." #NT
+ bp1_yearly.4010.a: "Tabi ki canım. [proposed_guardian.GetFirstNameNoTooltip] daha iyi bir seçim." #NT
+ bp1_yearly.4010.a_effect: "[child_to_change_guardian.GetFirstNamePossessive] [education|E] ilerleme" #NT
+ bp1_yearly.4010.b: "[current_guardian.GetFirstNameNoTooltip]'ı seçmemin bir sebebi var: [parent_that_want_guardian_change.GetWomanMan]!" #NT
+ bp1_yearly.4010.b_alt: "Bah! [child_to_change_guardian.GetHerHim] toplamak için yeterli zamanım var!" #NT
+ bp1_yearly.4010.c: "Benim seçimim daha iyi, inan bana!" #NT
+ bp1_yearly.4010.c_effect: "[child_to_change_guardian.GetFirstNamePossessive] [education|E] önemli ölçüde ilerleme kaydediyor" #NT
+ bp1_yearly.4020.t: "Şiirsel Bir Dostluk" #NT
+ bp1_yearly.4020.desc: ""[ROOT.Char.GetFirstNameNoTooltip], sevgili dostum, [war_memory_participant.GetTitledFirstName]'e karşı kazandığın zaferi bir kez daha hatırladım — bu yüzden zaferin hakkında bir şiir yazmaya karar verdim!" [poetry_friend.GetFirstName], [poetry_friend.GetHerHis]'ün boğazını temizleyerek şöyle diyor:\n\n[poetry_artifact.GetName]\n[poetry_artifact.GetDesc]" #NT
+ bp1_yearly.4020.a: "Onu sarayımda sergileyeceğim!" #NT
+ bp1_yearly.4020.b: "Teşekkür ederim dostum. Bu şiiri yakınımda tutacağım." #NT
+ bp1_yearly.4020.c: "Hah! [war_memory_participant.GetFirstNameNoTooltip] tanıdığı herkese bir kopyasını göndereceğim!" #NT
+ bp1_yearly.4020.d: "Bu kadar övgüyü sadece [ROOT.Char.GetFaith.HighGodName] hak ediyor." #NT
+ bp1_yearly.4020.poetry: "[poetry_friend.Custom('GeneratePoem_Intro_Rhyming')]\n[poetry_friend.Custom('GeneratePoem_Outro_Rhyming')]" #NT
+ bp1_yearly.4020.poetry_title: "[poetry_friend.Custom('GeneratePoem_Title')]" #NT
+ artifact_poetry_name: "$bp1_yearly.4020.poetry_title$" #NT
+ artifact_poetry_description: "[ROOT.Char.GetFirstNamePossessiveNoTooltip] iyi arkadaşı [poetry_friend.GetTitledFirstName] tarafından yazılan, [war_memory_participant.Custom('InsultAdjective')] [war_memory_participant.GetTitledFirstName] karşısında [ROOT.Char.GetTitledFirstNamePossessive] zafere adanmış bir şiir çalışması.\n\n$bp1_yearly.4020.poetry$" #NT
+ poetry_artifact_appended_desc: "[ROOT.Char.GetTitledFirstNamePossessive]'ın [war_memory_participant.Custom('InsultAdjective')] [war_memory_participant.GetTitledFirstName]'ye karşı kazandığı zafere adanmış, [ROOT.Char.GetFirstNamePossessiveNoTooltip] iyi arkadaş [poetry_friend.GetTitledFirstName] tarafından yazılmış bir şiir eseri.\n\nŞöyle yazıyor:\n$artifact_poetry_description$" #NT
+ bp1_yearly.4020.a_effect: "[newly_created_artifact.GetName], [court_artifact|E]'e dönüştürülür ve [grandeur|E] değiştiricisi kazanır" #NT
+ bp1_yearly.4020.b_effect: "[newly_created_artifact.GetName] [artifact|E] kazanırsınız" #NT
+ bp1_yearly.4030.t: "Baştan Çıkarıcı Rakip" #NT
+ bp1_yearly.4030.desc: ""[ROOT.Char.Custom('CulturalCurse')|U]!" diye bağırıyorum mektubu okurken.\n\nBenim [marriage_rival.Custom('InsultAdjective')] [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('marriage_rival'))]'im, [marriage_rival.GetFirstName] — adına tükürüyorum!" #NT
+ bp1_yearly.4030.desc_bond_broken: "\n\nSadece benim vasalım [marriage_vassal.GetTitledFirstName]'ı seninle evlenmeye ve [spurned_partner.GetFirstName] ile olan [marriage_vassal.GetHerHis] bağını koparmaya ikna etmek için hile ve cazibeni kullanmadın, hayır, ayrıca [marriage_vassal.GetTitledFirstNameNoTooltip]'ü bana karşı çevirdin!" #NT
+ bp1_yearly.4030.desc_no_broken_bonds: "\n\nVasalım [marriage_vassal.GetTitledFirstName]'ı seninle evlenmeye ikna etmek için sadece hile ve cazibeni kullanmakla kalmadın, aynı zamanda [marriage_vassal.GetTitledFirstNameNoTooltip]'i de bana karşı çevirdin!" #NT
+ bp1_yearly.4030.desc_end: "\n\nZehirli dilin benim hakkımda yalan üstüne yalan yayıyor... [marriage_vassal.GetFirstNameNoTooltip]'ı sevmiyorsun, sadece #EMP acı çekmemi istiyorsun!#!" #NT
+ bp1_yearly.4030.a: "[marriage_vassal.GetFirstNameNoTooltip]'ı [marriage_rival.GetFirstNameNoTooltip]'in ne kadar hain olduğuna ikna etmeliyim!" #NT
+ bp1_yearly.4030.b: "[marriage_vassal.GetSheHe|U] [marriage_vassal.GetHerHis] tahvili kırdı mı? [ROOT.Char.GetFaith.PriestNeuterPlural] bunun için [marriage_vassal.GetHerHim]'e ateş yağdıracak!" #NT
+ bp1_yearly.4030.c: "Belki [spurned_partner.GetFirstNameNoTooltip] işe yarayabilir..." #NT
+ bp1_yearly.4030.d: "Bah! Bu [marriage_rival.Custom('InsultNoun')] hiçbir şey başaramadı!" #NT
+ distrustful: "Güvenilmez" #NT
+ bp1_yearly.4030.a.success: "[marriage_vassal.GetTitledFirstName] ikna olmuş ve pişman" #NT
+ bp1_yearly.4030.a.failure: "[marriage_vassal.GetTitledFirstName] daha fazla yalan söylediğini düşünüyor" #NT
+ bp1_yearly.4030.b.success: "[marriage_vassal.GetTitledFirstName], [marriage_vassal.GetHerHis] yolunun hatasını görür" #NT
+ bp1_yearly.4030.b.failure: "[marriage_vassal.GetTitledFirstName], [ROOT.Char.GetFaith.PriestNeuterPlural]'in argümanlarını saptırır" #NT
+ bp1_yearly.4040.t: "Benim Nazik [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))|U]" #NT
+ bp1_yearly.4040.desc.intro.1: ""Ah, canım, canım [ROOT.Char.GetFirstNameNoTooltip] — Seni çok seviyorum!" [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))] [kindly_grandmother.GetFirstName]'im bana, lezzetli ikramlarla dolu bir tabak taşıyarak söylüyor. "Sana [ROOT.Char.Custom('FavoriteTreatDemand')] yaptım, en sevdiğin şey olduğunu biliyorum!"\n\nAh, [kindly_grandmother.GetSheHe] beni çok iyi tanıyor! Elbette, böyle şeyleri elle yapmak [kindly_grandmother.GetHerHis] boyunun altında bir şey ama... hayır diyecek kimim ki?" #NT
+ bp1_yearly.4040.desc.intro.2: ""Büyük [ROOT.Char.Custom('GirlBoy')]'im için daha fazla [ROOT.Char.Custom('FavoriteTreatDemand')]!" [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))] [kindly_grandmother.GetFirstName]'üm mutfaktan bağırıyor. "Hadi, ye!"\n\nMmm, harika kokuyor... bir ısırık daha fena olmaz mı?" #NT
+ bp1_yearly.4040.desc.feeding.1: ""[ROOT.Char.GetFirstNameNoTooltip], [ROOT.Char.Custom('FavoriteTreatDemand')]'imin tadını çıkarman beni dünyadaki en mutlu [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))] yapıyor!" [kindly_grandmother.GetFirstName] mutfaktan neşeyle bağırıyor. "Bugün #EMP fazladan#! büyük bir parti yaptım! Hemen hepsini ye!"\n\n#flatulence Uurp..!#! Ah, hiç bitmiyor... Ama hayır diyemem ve sevgili [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))]'mi incitemem, değil mi?" #NT
+ bp1_yearly.4040.desc.feeding.2: ""Bunu [ROOT.Char.Custom('GetLivestockFowlIndef')] gibi şekillendirdim!" [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))] [kindly_grandmother.GetFirstName]'im şarkı söylüyor, bir tabak daha [ROOT.Char.Custom('FavoriteTreatDemand')] taşıyor. "Bak, ağzına doğru uçuyor!"\n\nAman Tanrım [ROOT.Char.GetFaith.HighGodName], bu çok fazla! Ama... [kindly_grandmother.GetHerHis] duygular, onları düşünmeliyim..." #NT
+ bp1_yearly.4040.desc.feeding.3: ""[ROOT.Char.GetFirstNameNoTooltip], neredesin? Bu [ROOT.Char.Custom('FavoriteTreatDemand')] partisini tereyağında kaynattım!" [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))|U] [kindly_grandmother.GetFirstName] fısıldar, [kindly_grandmother.GetHerHis] bakışlarını mutfakta beni aramaya çevirir.\n\nBu iş iyice kontrolden çıkıyor... #EMP Ne yapmalıyım!?#!" #NT
+ bp1_yearly.4040.desc.feeding.4: ""Kim bilebilirdi ki [ROOT.Char.Custom('FavoriteTreatDemand')], [ROOT.Char.Custom('GetExpensiveMeal')] ile bu kadar iyi giderdi — senin en sevdiğin #EMP [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))]#! elbette!" [kindly_grandmother.GetFirstName] bağırır, hayatımda gördüğüm en iğrenç yemeğin olduğu bir tabak taşırken. "Akşam yemeği hazır, [ROOT.Char.GetFirstNameNoTooltip]!"\n\nNe kadar iyi saklanırsam saklanayım, [kindly_grandmother.GetSheHe] beni her zaman bulur! Ah, zavallı, şişkin bedenim!" #NT
+ bp1_yearly.4040.a: "[ROOT.Char.Custom('FavoriteTreatDemand')]'ını yemeyi çok isterdim!" #NT
+ bp1_yearly.4040.b: "Hayır teşekkürler, iyiyim." #NT
+ bp1_yearly.4040.c: "Bir ısırık daha fena olmaz..." #NT
+ bp1_yearly.4040.d: "Yeterince sahibim." #NT
+ bp1_yearly.4040.e: "#EMP [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))|U]...#!'ye zarar veremem" #NT
+ bp1_yearly.4040.f: "Fiziksel olarak bir lokma daha #EMP yiyemem#!!" #NT
+ bp1_yearly.4040.desc.dead: "Ah, sevgili [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))], sen gidince [ROOT.Char.Custom('FavoriteTreatDemand')]'in bitmek bilmeyen tabakları duracak, ama rahatlamak hem tatlı hem de acı bir duygu — sonsuza dek gitmendense seni yanımda görmeyi tercih ederdim.\n\nElveda, [kindly_grandmother.GetFirstName], huzur içinde uyu." #NT
+ bp1_yearly.4040.dead: "Belki senin şerefine biraz [ROOT.Char.Custom('FavoriteTreatDemand')] yerim." #NT
+ bp1_yearly.4040.family_first: "Ah [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('kindly_grandmother'))], biraz konuşmayı tercih ederim!" #NT
+ #XXX: "XXX" #NT
+
