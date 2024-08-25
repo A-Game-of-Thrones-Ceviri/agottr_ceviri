@@ -5,19 +5,19 @@
  DYNASTY_VIEW_PRESTIGE: "[Dynasty.GetPrestige|V0] [dynasty_prestige|E]" #NT!
   #AGOT Modified 
  #DYNASTY_VIEW_HOUSES_AMOUNT: "[Dynasty.GetFoundedDynastyHousesCount|V] [Select_CString( EqualTo_int32( Dynasty.GetFoundedDynastyHousesCount, '(int32)1' ), 'House', 'Houses' )]" #NT!
- DYNASTY_VIEW_HOUSES_AMOUNT: "Tüm Evleri Görüntüle" #NT!
- DYNASTY_VIEW_HOUSES_TT: "#T [Dynasty.GetNameNoTooltip] Hanedanlığındaki tüm Evleri görüntüle#!" #NT!
+ DYNASTY_VIEW_HOUSES_AMOUNT: "Tüm Haneleri Görüntüle" #NT!
+ DYNASTY_VIEW_HOUSES_TT: "#T [Dynasty.GetNameNoTooltip] Hanedanlığındaki tüm haneleri görüntüle#!" #NT!
  DYNASTY_VIEW_MEMBERS: "[Dynasty.GetNumberOfLivingMembers|V] Yaşayan Üye" #NT!
  DYNASTY_VIEW_MEMBERS_TT: "#T [Dynasty.GetNameNoTooltip] Hanedanı'nın tüm üyelerini görüntüle#!" #NT!
  DYNASTY_VIEW_LIVING_MEMBERS: "[Dynasty.GetNumberOfLivingMembers|V]" #NT!
  DYNASTY_VIEW_DEAD_MEMBERS: "Ölü Üyeler ([GetDataModelSize( Dynasty.GetDeadMembers )])" #NT!
- DYNASTY_VIEW_HOUSES: "Evler" #NT!
+ DYNASTY_VIEW_HOUSES: "Haneler" #NT!
  DYNASTY_VIEW_NAME: "[Dynasty.GetBaseNameNoTooltip] Hanedan" #NT!
  DYNASTY_VIEW_LIVING_MEMBERS_HEADER: "Yaşayan Üyeler ([Dynasty.GetNumberOfLivingMembers|V])" #NT!
  DYNASTY_VIEW_LEGACY_EXPLANATION: "#high [Dynasty.GetBaseNameNoTooltip]#! Hanedanlığının tüm üyeleri bu [dynasty_perks|E]'ün faydalarını elde eder. Yeni [dynasty_perks|E] edinmek, maliyet her seferinde [dynasty_prestige_i]#V 500#! arttıkça daha da zorlaşır" #NT!
  PARENT_DYNASTY_PERK_NEEDED: "@warning_icon! #X Önceki Legacy'yi açmadık#!" #NT!
  DYNASTY_PRESTIGE_NEEDED: "@warning_icon! #X Bizde yok $VALUE$ [dynasty_prestige|E]#!" #NT!
- DYNASTY_PERK_TOOLTIP: "#T [DynastyPerk.GetNameNoTooltip]#!\n[DynastyPerk.GetEffectDescription( Hanedan.HanedanAl )]" #NT!
+ DYNASTY_PERK_TOOLTIP: "#T [DynastyPerk.GetNameNoTooltip]#!\n[DynastyPerk.GetEffectDescription( Dynasty.GetDynast )]" #NT!
  UNLOCK_DYNASTY_PERK_TOOLTIP: "$DYNASTY_PERK_TOOLTIP$\n[DynastyView.CanSelectPerkDesc( DynastyPerk.Self )][DynastyPerk.GetCostString( GetPlayer )]\n\n#I Kilidini açmak için tıklayın#!" #NT!
  LOCKED_DYNASTY_PERK_TOOLTIP: "$DYNASTY_PERK_TOOLTIP$\n[DynastyView.CanSelectPerkDesc( DynastyPerk.Self )][DynastyPerk.GetCostString( GetPlayer )]" #NT!
  CHOOSE_DYNASTY_PERK_CONFIRM_TITLE: "Kilidini aç [DYNASTY_PERK.GetNameNoTooltip]" #NT!
@@ -25,19 +25,19 @@
  CHOOSE_DYNASTY_PERK_CONFIRM_ACCEPT: "Kilidini aç" #NT!
  DYNASTY_LEGACY_PERK_COST: "\nMaliyet: [dynasty_prestige_i]$VALUE|V$ [dynasty_prestige|E]" #NT!
  DYNASTY_VIEW_ALSO_DYNAST: "Ayrıca [Character.GetDynasty.GetBaseName] Hanedanı'nın Hanedan Başkanı" #NT!
- DYNASTY_VIEW_ALSO_HOUSE_HEAD: "Meclis Başkanı [Character.GetHouse.GetName]" #NT!
+ DYNASTY_VIEW_ALSO_HOUSE_HEAD: "Hane Lideri [Character.GetHouse.GetName]" #NT!
  DYNASTY_VIEW_PAN_TO_ME: "Sana pan" #NT!
  DYNASTY_VIEW_PAN_TO_ME_TT: "#T Sana da selamlar#!" #NT!
  DYNASTY_VIEW_PAN_TO_DYNAST: "Pan'dan Dynasty Head'e" #NT!
  DYNASTY_VIEW_CLICK_TO_PAN: "#I Sol veya orta fare tuşuyla sürükleyerek kaydırın#!" #NT!
  CUSTOMIZE_DYNASTY_HEADER: "Özelleştir [Dynasty.GetBaseNameNoTooltip] Hanedan" #NT!
  DYNASTY_CUSTOMIZATION_NAME_FIELD: "İsim" #NT!
- CUSTOMIZE_DYNASTY: "#T Dynasty'yi Özelleştir#!" #NT!
- CUSTOMIZE_DYNASTY_PLAYER_NOT_ALLOWED: "@warning_icon! #X [DYNASTY.GetBaseNameNoTooltip] Dynasty'yi özelleştiremezsin#!" #NT!
+ CUSTOMIZE_DYNASTY: "#T Hanedanı Özelleştir#!" #NT!
+ CUSTOMIZE_DYNASTY_PLAYER_NOT_ALLOWED: "@warning_icon! #X [DYNASTY.GetBaseNameNoTooltip] Hanedanı özelleştiremezsin#!" #NT!
  DYNASTY_VIEW_MY_DYNASTY: "Senin [dynasty|E]" #NT!
  DYNASTY_TT_DYNAST: "[dynast|E]: [Dynasty.GetDynast.GetUIName|U]" #NT!
  DYNASTY_TT_DEAD_DYNASTY: "Ölü Hanedan - Yaşayan Üye Yok" #NT!
- DYNASTY_TT_DEAD_HOUSE: "Ölü Ev - Yaşayan Üye Yok" #NT!
+ DYNASTY_TT_DEAD_HOUSE: "Ölü Hane - Yaşayan Üye Yok" #NT!
  DYNASTY_TT_SPLENDOR_LEVEL: "[dynasty_prestige_level|E]: [Dynasty.GetPrestigeLevelName]" #NT!
  DYNASTY_TT_MEMBERS: "Yaşayan Üyeler: [Dynasty.GetNumberOfLivingMembers|V]" #NT!
  DYNASTY_VIEW_TT_DYNASTY_TREE: "#T Hanedan Ağacını Aç#!" #NT!
@@ -58,5 +58,5 @@
  DYNASTY_HOUSE_VIEW_PROGRESS_LABEL: "Sonraki [dynasty_perk|E]" #NT!
  DYNASTY_SPLENDOR: "Hanedan Görkemi:" #NT!
  DYNASTY_LEGACIES: "Hanedan Mirasları" #NT!
- DYNASTY_HOUSE_VIEW_LEGACY_COST: "Sonraki Legacy'nin Maliyeti: [dynasty_prestige_i][Dynasty.GetNextPerkCost|V0]" #NT!
+ DYNASTY_HOUSE_VIEW_LEGACY_COST: "Sonraki Mirasın Maliyeti: [dynasty_prestige_i][Dynasty.GetNextPerkCost|V0]" #NT!
   
