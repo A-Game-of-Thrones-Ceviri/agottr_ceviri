@@ -1,145 +1,145 @@
 ﻿l_english:
- bp2_decision.0001.t: "$find_wet_nurse_decision$"
- bp2_decision.0001.desc: "[ROOT.Char.Custom('GetChildChildren')]$bp2_decision.0001.desc_candidates$ müşterilerimize en iyi bakımı sağlamayı amaçlayarak"
- bp2_decision.0001.desc_widower: "Statü sahibi bir çocuğu büyütmenin yalnız bir iş olmadığı göz önüne alındığında$bp2_decision.0001.desc_candidates$"
- bp2_decision.0001.desc_candidates: ", Görevlilerimin [GetCourtPositionType('wet_nurse_court_position').GetName()] rolü için yetenekli kadınlar aramasını sağladım.\n\nŞimdi, yargım için birkaç yerel kadın sunuyorlar."
- bp2_decision.0001.a: "Deneyimli olanı tercih ederim [wet_nurse_candidate_1.GetFirstNameNoTooltip]."
- bp2_decision.0001.a.aptitude: "[wet_nurse_candidate_1.GetUINamePossessive] [aptitude|E] [wet_nurse_candidate_1.GetCourtPositionAptitude( GetCourtPositionType( 'wet_nurse_court_position' ) )]'dir"
- bp2_decision.0001.b: "[wet_nurse_candidate_2.GetFirstNameNoTooltip] yeterince iyidir."
- bp2_decision.0001.b.aptitude: "[wet_nurse_candidate_2.GetUINamePossessive] [aptitude|E] [wet_nurse_candidate_2.GetCourtPositionAptitude( GetCourtPositionType( 'wet_nurse_court_position' ) )]'dir"
- bp2_decision.0001.c: "Hiçbirini beğenmiyorum."
- bp2_yearly.7000.t: "Hastalık İzni"
- bp2_yearly.7000.desc: "Sütanne [wet_nurse.GetFirstName], benimle acil bir görüşme talep etti.\n\n"Sevgili [wet_nurse.Custom2('RelationToMe', ROOT.Char)], hastalandım! Birkaç gün dinlenmem gerek — kötü huylarım bakımım altındaki çocukları etkileyebilir."\n\n[wet_nurse.GetSheHe|U] bunu hastalıklı bir aciliyetle inleyerek söylüyor."
- bp2_yearly.7000.desc_child_liege: "Sütannem [wet_nurse.GetFirstName] son zamanlarda pek iyi değil. [wet_nurse.GetSheHe|U] endişemi fark etti.\n\n"Sevgili küçük [wet_nurse.Custom2('RelationToMe', ROOT.Char)] [nursed_child.GetFirstName], kalbimi ağırlaştırsa da sana söylemem gerek... üzerime kötü bir hastalık geldi. Bir süreliğine uzaklara gitmem gerek ama fazla endişelenme! Yakında yanına döneceğim.""
- bp2_yearly.7000.a: "Merak etme, ben seninle ilgilenirim."
- bp2_yearly.7000.a.tt: "Bir doktor ziyaretini finanse ediyorsunuz"
- bp2_yearly.7000.b: "Bunu kalıcı bir izin haline getirelim."
- bp2_yearly.7000.b.tt: "[wet_nurse.GetFirstNamePossessiveNoTooltip] bakım atlandı."
- bp2_yearly.7000.c: "Hastalık mı? Çocuklarımdan uzak dur!"
- bp2_yearly.7000.c_child_liege: "Hastalık mı? Benden uzak dursan iyi olur!"
- bp2_yearly.7000.ill: "[nursed_child.GetFirstNameNoTooltip] bir hastalığa yakalanır"
- bp2_yearly.7000.healthy: "[nursed_child.GetFirstNameNoTooltip] bir hastalığı savuşturur"
- bp2_yearly.7000.healthy.tt: "[nursed_child.GetShortUIName] sağlıklı kalır"
- bp2_yearly.7001.t: "Bir Şüpheyi Beslemek"
- bp2_yearly.7001.desc: "[wet_nurse.GetFirstName] çocuklarım için harika bir sütanne, takdir edilecek bir bakıcı. Yine de, son zamanlarda [ROOT.Char.Custom2('RelationToMe', jealous_spouse)] [jealous_spouse.GetFirstName]'im [wet_nurse.GetHerHim]'ten oldukça şüpheleniyor.\n\n"Benim [jealous_spouse.Custom2('RelationToMe', ROOT.Char)], o kadını işe aldığımızdan beri çocuklarımıza olan ilgin nasıl da arttı, [wet_nurse.GetFirstNameNoTooltip]! Acaba [wet_nurse.GetHerHis] #EMP cömertlik#! sana ilham veriyor mu?"\n\n"
- bp2_yearly.7001.desc_lover: "Görünen o ki... Pek dikkatli davranmamışım."
- bp2_yearly.7001.desc_no_lover: "[jealous_spouse.GetFirstNameNoTooltip] bana hiçbir şey için saldırıyor! Değil mi...?"
- bp2_yearly.7001.a: "Çocuklarımızı görmezden gelmemi mi istiyorsun?"
- bp2_yearly.7001.a.tt: "Bu seçenek, [lover|E] numaranız olduğundan kullanılabilir"
- bp2_yearly.7001.b: "Saçma, canım; benim sadık olduğumu biliyorsun!"
- bp2_yearly.7001.b.spouse_convinced: "İkna ediyorsun [jealous_spouse.GetFirstNameNoTooltip]"
- bp2_yearly.7001.b.spouse_not_convinced: "[jealous_spouse.GetFirstNameNoTooltip] sana inanmıyor"
- bp2_yearly.7001.c: "Korkularınızı gidereceğim."
- bp2_yearly.7001.tt: "Sen bilinen bir yalancısın"
- bp2_yearly.7002.t: "Emziren Eş"
-  #AGOT Modified 
- #bp2_yearly.7002.desc: "[court_chaplain.GetFirstName] odama daldı, [court_chaplain.GetHerHis]'in yüzünde endişeli bir ifade vardı.\n\n"Efendim, araya girdiğim için özür dilerim ama acil bir şeyim var! Sizin ve [spouse.GetFirstName]'nin çocukken aynı sütanneye sahip olduğunuzu öğrendim. Bu evliliğinizi son derece uygunsuz hale getiriyor; süt kardeşsiniz - [ROOT.Char.GetFaith.HighGodNamePossessive]'ün gözünde, siz ailenin en yakınısınız!"\n\nŞok edici bir açıklama! [court_chaplain.GetFirstNameNoTooltip], ben karşılık veremeden devam ediyor. \n\n"Derhal boşanmanızı tavsiye ediyorum. Aksi takdirde, evliliğinizi ensest olarak ilan etmek zorunda kalacağım.""
- bp2_yearly.7002.desc: "[court_chaplain.GetFirstNameNicknamed] odama daldı, [court_chaplain.GetHerHis]'in yüzünde endişeli bir ifade vardı.\n\n"Efendim, araya girdiğim için özür dilerim ama acil bir şeyim var! Sizin ve [spouse.GetFirstName]'nin çocukken aynı sütanneye sahip olduğunuzu öğrendim. Bu evliliğinizi son derece uygunsuz hale getiriyor; süt kardeşsiniz - [ROOT.Char.GetFaith.HighGodNamePossessive]'ün gözünde, siz ailenin en yakınısınız!"\n\nŞok edici bir açıklama! [court_chaplain.GetFirstNameNicknamedNoTooltip], ben karşılık veremeden devam ediyor. \n\n"Derhal boşanmanızı tavsiye ediyorum. Aksi takdirde, evliliğinizi ensest olarak ilan etmek zorunda kalacağım.""
- bp2_yearly.7002.a: "Ensest mi diyorsun? Ben buna aşk diyorum!"
- bp2_yearly.7002.b: "Hemen boşanacağız."
- bp2_yearly.7002.c: "Belki de unutabiliriz bunu...?"
- bp2_yearly.parental_neglect_effect: "[nursed_child.GetFirstNameNoTooltip] öfkeli"
- bp2_yearly.7003.title: "[nursed_child.GetFirstNamePossessiveNoTooltip] İlk"
- bp2_yearly.7003.t: "$bp2_yearly.7003.title$ Kelime"
- bp2_yearly.7003.desc: ""Acele edin efendimiz, bunu duymalısınız!"\n\nSütanne [wet_nurse.GetFirstName] beni aceleyle [ROOT.Char.Custom2('RelationToMePossessive', nursed_child)] odama götürüyor. Heyecanla [nursed_child.GetFirstName]'te [wet_nurse.GetFirstNameNoTooltip] puan, bu yüzden [nursed_child.GetHerHim]'e doğru eğilip dinliyorum.\n\n"
- bp2_yearly.7003.desc_gold: "[nursed_child.GetFirstNameNoTooltip] bana ağzı sulandırıcı bir madeni para uzatıyor ve diyor ki:\n\n"G-gh, g-g-yaşlı...""
- bp2_yearly.7003.desc_secret: "[nursed_child.GetHerHis] minik dudaklarına parmağını bastırırken, [nursed_child.GetFirstNameNoTooltip] bana fısıldıyor:\n\n"Sır.""
- bp2_yearly.7003.desc_motto: ""[nursed_child.GetHouse.GetMotto]."\n\nİnanılmaz: evimizin [nursed_child.GetHouse.GetName] sloganı! [nursed_child.GetSheHe|U] kekelemeden gırtlaktan geveledi!"
- bp2_yearly.7003.desc_house: ""[nursed_child.GetHouse.GetNameNoTooltip]."\n\nİnanılmaz! [nursed_child.GetFirstNameNoTooltip] Hanemizin adını söylemeyi öğrendi."
- bp2_yearly.7003.desc_military: ""Guh-bah-nuh... [nursed_child.Custom( 'KnightCultureNoTooltipLowercase' )]!"\n\nGörünüşe göre [nursed_child.GetFirstNameNoTooltip]'in zaten bir savaşçı ruhu var!"
- bp2_yearly.7003.desc_faith: ""[nursed_child.GetFaith.random_GoodGodNames]."\n\nGörünüşe göre [nursed_child.GetFirstNameNoTooltip] çoktan bir mürit!"
- bp2_yearly.7003.desc_father: ""Baba-, baba-...""
- bp2_yearly.7003.desc_mother: ""Anne-, anne-...""
- bp2_yearly.7003.a: "Nasıl keyifli!"
- bp2_yearly.7003.b: "[nursed_child.GetSheHe] başka ne diyebilir ki?"
- bp2_yearly.7003.b.tt: "Konuşmaya devam etmek için [nursed_child.GetFirstNameNoTooltip]'a baskı yapıyorsun."
- bp2_yearly.7003.c: "Buna vaktim yok."
- bp2_yearly.7004.t: "$bp2_yearly.7003.title$ Adım"
- bp2_yearly.7004.desc: "[ROOT.Char.Custom2('RelationToMeShort', nursed_child)] [nursed_child.GetFirstNamePossessive] odamdan bir kargaşa duyuyorum. İçeriye doğru aceleyle girerken, sütanne [wet_nurse.GetFirstName]'nin [nursed_child.GetFirstName] ile oynadığını görüyorum. \n\n"Efendim, mükemmel zamanlama! [nursed_child.GetFirstNameNoTooltip] az önce ilk [nursed_child.GetHerHis] adımı attı!" [wet_nurse.GetSheHe] heyecanla bağırıyor.\n\n [nursed_child.Custom('GirlBoy')]'min ellerini tutarak odanın içinde [nursed_child.GetHerHim] yürümeye çalışıyor."
- bp2_yearly.7004.a: ""Bir çocuk için büyük bir adım. Bir hükümdar için küçük bir adım.""
- bp2_yearly.7004.b: "[nursed_child.GetSheHe] başka neler yapabilir?"
- bp2_yearly.7004.b.tt: "Yürümeye devam etmek için [nursed_child.GetFirstNameNoTooltip]'a basıyorsun."
- bp2_yearly.7004.c: "$bp2_yearly.7003.c$"
- bp2_yearly.7005.t: "$bp2_yearly.7003.title$ Diş çıkarma"
- bp2_yearly.7005.desc: "Benim iznimle, [ROOT.Char.Custom2('RelationToMeShort', nursed_child)] [nursed_child.GetFirstName] ve [nursed_child.GetHerHis] sütannem odama doğru yürüyor. [wet_nurse.GetFirstName] bir müjdeci gibi poz veriyor ve ilan ediyor:\n\n"Efendim, anıtsal bir olaya tanıklık ediyorsunuz! [nursed_child.GetFirstNameNoTooltip] size sunacak muazzam bir armağana sahip." [wet_nurse.GetSheHe|U], [nursed_child.GetHerHim]'yı öne doğru dürttü. "Hadi, [nursed_child.GetFirstNameNoTooltip], [ROOT.Char.GetHerHim]'e söyle!"\n\n"[nursed_child.Custom2('RelationToMeShort', ROOT.Char)|U], bir dişimi kaybettim!" [ROOT.Char.Custom2('RelationToMeShort', nursed_child)], içinde düşen dişin olduğu bir keseyi bana uzatarak gururla [nursed_child.GetHerHis] dişsiz bir gülümseme sunuyor."
- bp2_yearly.7005.a: "Sevimli! Ama dişini iyi bir tılsım olarak sakla."
- bp2_yearly.7005.b: "İşte: Hediyeye yakışır hediye!"
- bp2_yearly.7005.b.tt: "Dişin var"
- bp2_yearly.7005.c: "$bp2_yearly.7003.c$"
- child_teeth_memorabilia: "[nursed_child.GetNamePossessiveNoTooltip] Süt Dişi"
- child_teeth_memorabilia_desc: "[nursed_child.GetNamePossessiveNoTooltip] İlk düşen süt dişi."
- bp2_yearly.7006.t: "$bp2_yearly.7003.title$ Giydirme"
- bp2_yearly.7006.desc: "As I patiently await the fetching of my clothes, a servant stutters: "Elbiselerimin getirilmesini sabırla beklerken, bir hizmetçi kekeliyor: "Lordum, şey... giysilerinizi kimse bulamaz!"\n\n"Etrafım beceriksizlikle çevrili!" diye mırıldanıyorum, yatak odamdan fırtına gibi çıkıyorum.\n\n[ROOT.Char.Custom2('RelationToMeShort', nursed_child)], [nursed_child.GetFirstName]'imin çocuk odasında sadece giysilerimi değil, aynı zamanda [nursed_child.Custom('GirlBoyPossessive')] sütannemi de buluyorum.\n\n"Benim bununla hiçbir ilgim yok efendim — [nursed_child.GetSheHe] giyinmiş [nursed_child.GetHerselfHimself]!" [wet_nurse.GetFirstName] kıkırdayarak cevap veriyor." #NT!
- bp2_yearly.7006.a: "Küçük hain!"
- bp2_yearly.7006.b: "Yani Moda'nın [nursed_child.GetSheHe]'ı [nursed_child.Custom('GetPrincessPrince')] mi?"
- bp2_yearly.7006.c: "$bp2_yearly.7003.c$"
- bp2_yearly.7008.t: "$bp2_yearly.7003.title$ Kızgınlık"
- bp2_yearly.7008.desc_start: ""Ah, sen daha küçücük bir çocukken! O günleri her zaman hatırlayacağım," diyor [ROOT.Char.Custom2('RelationToMeShort', reflecting_parent)] [reflecting_parent.GetFirstName], hiç istemsizce.\n\nHer şey geri geliyor. Ben #EMP biliyorum#! ki"
- bp2_yearly.7008.desc: "$bp2_yearly.7008.desc_start$ [reflecting_parent.GetSheHe] beni hiç umursamadı. Eğlenceli anların benim en kötü denemelerim olduğunu #EMP biliyorum#! [reflecting_parent.GetHerHis]"
- bp2_yearly.7008.desc_dead_parent: "$bp2_yearly.7008.desc_start$ benim [ROOT.Char.Custom2('RelationToMeShort', ROOT.Var('nursed_child_parent_var').Char)] [ROOT.Var('nursed_child_parent_var').Char.GetFirstName] [ROOT.Var('nursed_child_parent_var').Char.GetSheHe] yaşadığı sürece benim düşmanımdı."
- bp2_yearly.7008.desc_word: "[ROOT.Var('nursed_child_parent_var').Char.GetSheHe|U] ilk sözlerimi bile ciddiye almadı!"
- bp2_yearly.7008.desc_step: "[ROOT.Var('nursed_child_parent_var').Char.GetSheHe|U] sıkılmış bir şekilde ilk adımlarımı attığımda ayrıldım."
- bp2_yearly.7008.desc_tooth: "[ROOT.Var('nursed_child_parent_var').Char.GetSheHe|U] İlk diş kaybımdan dolayı tiksindim, geri çekildim!"
- bp2_yearly.7008.desc_dress: "[ROOT.Var('nursed_child_parent_var').Char.GetSheHe|U] çocukluğumdan beri sahip olduğum giyinme aşkımla dalga geçti!"
- bp2_yearly.7008.desc_end: "\n\nHakkım olanı almalıyım! Ya da belki... Geçmişe takılıp kalmayı bırakmalıyım?"
- bp2_yearly.7008.a: ""Toprağını bana ver, [nursed_child.Custom2('RelationToMeShort', reflecting_parent)]!""
- bp2_yearly.7008.a.tt_good: "[reflecting_parent.GetFirstNameNoTooltip] seninle aynı fikirde"
- bp2_yearly.7008.a.tt_bad: "[reflecting_parent.GetFirstNameNoTooltip] bunun yerine başka bir şey sunuyor"
- bp2_yearly.7008.b: ""Zenginliğini bana borçlusun!""
- bp2_yearly.7008.c: ""Senden nefret ediyorum ve seni bir daha asla görmeyeceğimi umuyorum!""
- bp2_yearly.7008.c_dead_parent: ""Neden beni bu kadar ihmal ettin!?""
- bp2_yearly.7008.d: "Ben kendi çocuklarıma odaklanmayı tercih ederim."
- bp2_yearly.7008.e: "Böyle bir muamele... haklıdır."
- bp2_yearly.7008.tt: "[reflecting_parent.GetFirstNameNoTooltip] cevap vermek zorunda kalacak"
- bp2_yearly.7009.t: "$bp2_yearly.7003.title$ Tahviller"
- bp2_yearly.7009.desc: "$bp2_yearly.7008.desc_start$ [ROOT.Char.Custom2('RelationToMeShort', reflecting_parent)] bende en iyiyi gördü, her zaman beni savunmaya çalıştı. Çocukluğumun en güzel anları [reflecting_parent.GetHerHim] ile olanlardı."
- bp2_yearly.7009.desc_dead_parent: "$bp2_yearly.7008.desc_start$ [ROOT.Char.Custom2('RelationToMeShort', reflecting_parent)]'im bana karşı derin bir bağlılık duyuyordu ve [ROOT.Char.Custom2('RelationToMeShort', ROOT.Var('nursed_child_parent_var').Char)] [ROOT.Var('nursed_child_parent_var').Char.GetFirstName] yaşadığı sürece [ROOT.Var('nursed_child_parent_var').Char.GetSheHe] de beni şiddetle seviyordu."
- bp2_yearly.7009.desc_word: "İlk kelimelerimi duyan [ROOT.Var('nursed_child_parent_var').Char.GetSheHe] oldu."
- bp2_yearly.7009.desc_step: "[ROOT.Var('nursed_child_parent_var').Char.GetSheHe|U] ilk adımlarımı atmama yardımcı oldu."
- bp2_yearly.7009.desc_tooth: "[ROOT.Var('nursed_child_parent_var').Char.GetSheHe|U] süt dişimi bile kendi eline aldı. [ROOT.Var('nursed_child_parent_var').Char.GetHerHis]"
- bp2_yearly.7009.desc_dress: "[ROOT.Var('nursed_child_parent_var').Char.GetSheHe|U] benim yaramazlığımı, süslenmemi teşvik etti."
- bp2_yearly.7009.desc_end: "\n\nBelki de [ROOT.Var('nursed_child_parent_var').Char.GetHerHis] sevginin karşılığını ödemeliyim?"
- bp2_yearly.7009.desc_end_dead_parent: "\n\nTeşekkür etmek için artık çok geç [ROOT.Var('nursed_child_parent_var').Char.GetHerHim], ama minnettarlığım artık sadece [ROOT.Char.Custom2('RelationToMe', reflecting_parent)]'ime gidiyor."
- bp2_yearly.7009.a: ""Seni çok seviyorum, [nursed_child.Custom2('RelationToMeShort', reflecting_parent)].""
- bp2_yearly.7009.a.tt_good: "$bp2_yearly.7008.a.tt_good$"
- bp2_yearly.7009.a.tt_bad: "[reflecting_parent.GetFirstNameNoTooltip] karşılığında bir şey istiyor"
- bp2_yearly.7009.b: "Sevgi dolu bakımı çocuklarıma aktaracağım!"
- bp2_yearly.7009.c: "Evet. Aile, minnettarlık... ve daha niceleri."
- bp2_yearly.7010.t: "$bp2_yearly.7008.t$"
- bp2_yearly.7010.desc_start: "[ROOT.Char.Custom2('RelationToMeShort', nursed_child)] [nursed_child.GetFirstName]'imle bazı saray meselelerini tartışırken, [nursed_child.GetSheHe] aniden çocukluğumdan bahsetmeye başlıyor.\n\n"
- bp2_yearly.7010.desc: "$bp2_yearly.7010.desc_start$"Sevgili [nursed_child.Custom2('RelationToMeShort', ROOT.Char)], itiraf etmelisin ki: Sen beni hiç umursamadın, gençliğimde bile."
- bp2_yearly.7010.desc_dead_parent: "$bp2_yearly.7010.desc_start$"O [nursed_child.Custom2('RelationToMeShort', ROOT.Char)], ölüler hakkında kötü konuşmak yanlıştır, ama benim [nursed_child.Custom2('RelationToMeShort', nursed_child.MakeScope.Var('nursed_child_parent_var').Char)]'imin olabilecek en kötü ebeveyn olduğunu kabul etmelisin!"
- bp2_yearly.7010.desc_word: "İlk sözlerim reddedildi!"
- bp2_yearly.7010.desc_step: "İlk adımlarım görmezden gelindi!"
- bp2_yearly.7010.desc_tooth: "İlk dökülen dişlerim çöpe gitti!"
- bp2_yearly.7010.desc_dress: "Giyinişim acımasızca alay konusu oldu."
- bp2_yearly.7010.desc_end: "#EMP o#! aşk mıdır?"\n\n[nursed_child.GetFirstNameNoTooltip] mücadele ediyor, duygudan titriyor ama kararlı görünüyor."
- bp2_yearly.7010.desc_title: "$bp2_yearly.7008.a$"
- bp2_yearly.7010.desc_gold: "$bp2_yearly.7008.b$"
- bp2_yearly.7010.desc_hate: "$bp2_yearly.7008.c$"
- bp2_yearly.7010.desc_hate_dead_parent: "$bp2_yearly.7008.c_dead_parent$"
- bp2_yearly.7010.a: "Pişmanlığımı ispatlamaya hazırım."
- bp2_yearly.7010.a.tt: "$bp2_yearly.7008.a.tt_good$"
- bp2_yearly.7010.b: ""Bundan sonra benden istediğin her şeyi alacaksın!""
- bp2_yearly.7010.b.tt: "$bp2_yearly.7008.a.tt_bad$"
- bp2_yearly.7010.c: ""Çıkmak.""
- bp2_yearly.7010.c.tt: "[reflecting_parent.GetFirstNameNoTooltip] pek umursamıyor"
- bp2_yearly.7011.t: "$bp2_yearly.7009.t$"
- bp2_yearly.7011.desc: "$bp2_yearly.7010.desc_start$"[nursed_child.Custom2('RelationToMeShort', ROOT.Char)|U], sen bana bir tazının yavrularına baktığı gibi baktın. Hatta daha da iyi baktın. En eski, en güzel anılarım seninleydi."
- bp2_yearly.7011.desc_dead_parent: "$bp2_yearly.7010.desc_start$"Benim [nursed_child.Custom2('RelationToMeShort', nursed_child.MakeScope.Var('nursed_child_parent_var').Char)]'im bizimleyken, [nursed_child.MakeScope.Var('nursed_child_parent_var').Char.GetHerHim]'yi gerçekten çok sevdim. Her zaman, [nursed_child.MakeScope.Var('nursed_child_parent_var').Char.GetSheHe] ve sen bana zaman ayırdın."
- bp2_yearly.7011.desc_word: "İlk kelimelerimi söylediğimde!"
- bp2_yearly.7011.desc_step: "İlk adımlarımı attığımda!"
- bp2_yearly.7011.desc_tooth: "Düşen ilk dişimi eline koyduğumda."
- bp2_yearly.7011.desc_dress: "Yaramazlık yapıp zıpladığım zamanlar!"
- bp2_yearly.7011.desc_end: "Beni o kadar sıkı tutuyordun ki."\n\n[nursed_child.GetSheHe|U] kızarır, ışıldar.\n\n"
- bp2_yearly.7011.desc_receive_love: "$bp2_yearly.7011.desc_end$$bp2_yearly.7009.a$"
- bp2_yearly.7011.desc_forwarded_love: ""$bp2_yearly.7011.desc_end$"$bp2_yearly.7009.b$""
- bp2_yearly.7011.a: ""Ve seni seviyorum, [ROOT.Char.Custom2('RelationToMeShort', nursed_child)]!""
- bp2_yearly.7011.a.tt: "$bp2_yearly.7009.a.tt_good$"
- bp2_yearly.7011.b: ""Ne büyük bir bağlılık!""
- bp2_yearly.7011.b.tt: "$bp2_yearly.7009.a.tt_bad$"
- bp2_yearly.7011.c: ""Geçmişte yaşama.""
- bp2_yearly.7011.c.tt: "$bp2_yearly.7010.c.tt$"
+ bp2_decision.0001.t: "$find_wet_nurse_decision$" #NT
+ bp2_decision.0001.desc: "[ROOT.Char.Custom('GetChildChildren')]$bp2_decision.0001.desc_candidates$ müşterilerimize en iyi bakımı sağlamayı amaçlayarak" #NT
+ bp2_decision.0001.desc_widower: "Statü sahibi bir çocuğu büyütmenin yalnız bir iş olmadığı göz önüne alındığında$bp2_decision.0001.desc_candidates$" #NT
+ bp2_decision.0001.desc_candidates: ", Görevlilerimin [GetCourtPositionType('wet_nurse_court_position').GetName()] rolü için yetenekli kadınlar aramasını sağladım.\n\nŞimdi, yargım için birkaç yerel kadın sunuyorlar." #NT
+ bp2_decision.0001.a: "Deneyimli olanı tercih ederim [wet_nurse_candidate_1.GetFirstNameNoTooltip]." #NT
+ bp2_decision.0001.a.aptitude: "[wet_nurse_candidate_1.GetUINamePossessive] [aptitude|E] [wet_nurse_candidate_1.GetCourtPositionAptitude( GetCourtPositionType( 'wet_nurse_court_position' ) )]'dir" #NT
+ bp2_decision.0001.b: "[wet_nurse_candidate_2.GetFirstNameNoTooltip] yeterince iyidir." #NT
+ bp2_decision.0001.b.aptitude: "[wet_nurse_candidate_2.GetUINamePossessive] [aptitude|E] [wet_nurse_candidate_2.GetCourtPositionAptitude( GetCourtPositionType( 'wet_nurse_court_position' ) )]'dir" #NT
+ bp2_decision.0001.c: "Hiçbirini beğenmiyorum." #NT
+ bp2_yearly.7000.t: "Hastalık İzni" #NT
+ bp2_yearly.7000.desc: "Sütanne [wet_nurse.GetFirstName], benimle acil bir görüşme talep etti.\n\n"Sevgili [wet_nurse.Custom2('RelationToMe', ROOT.Char)], hastalandım! Birkaç gün dinlenmem gerek — kötü huylarım bakımım altındaki çocukları etkileyebilir."\n\n[wet_nurse.GetSheHe|U] bunu hastalıklı bir aciliyetle inleyerek söylüyor." #NT
+ bp2_yearly.7000.desc_child_liege: "Sütannem [wet_nurse.GetFirstName] son zamanlarda pek iyi değil. [wet_nurse.GetSheHe|U] endişemi fark etti.\n\n"Sevgili küçük [wet_nurse.Custom2('RelationToMe', ROOT.Char)] [nursed_child.GetFirstName], kalbimi ağırlaştırsa da sana söylemem gerek... üzerime kötü bir hastalık geldi. Bir süreliğine uzaklara gitmem gerek ama fazla endişelenme! Yakında yanına döneceğim."" #NT
+ bp2_yearly.7000.a: "Merak etme, ben seninle ilgilenirim." #NT
+ bp2_yearly.7000.a.tt: "Bir doktor ziyaretini finanse ediyorsunuz" #NT
+ bp2_yearly.7000.b: "Bunu kalıcı bir izin haline getirelim." #NT
+ bp2_yearly.7000.b.tt: "[wet_nurse.GetFirstNamePossessiveNoTooltip] bakım atlandı." #NT
+ bp2_yearly.7000.c: "Hastalık mı? Çocuklarımdan uzak dur!" #NT
+ bp2_yearly.7000.c_child_liege: "Hastalık mı? Benden uzak dursan iyi olur!" #NT
+ bp2_yearly.7000.ill: "[nursed_child.GetFirstNameNoTooltip] bir hastalığa yakalanır" #NT
+ bp2_yearly.7000.healthy: "[nursed_child.GetFirstNameNoTooltip] bir hastalığı savuşturur" #NT
+ bp2_yearly.7000.healthy.tt: "[nursed_child.GetShortUIName] sağlıklı kalır" #NT
+ bp2_yearly.7001.t: "Bir Şüpheyi Beslemek" #NT
+ bp2_yearly.7001.desc: "[wet_nurse.GetFirstName] çocuklarım için harika bir sütanne, takdir edilecek bir bakıcı. Yine de, son zamanlarda [ROOT.Char.Custom2('RelationToMe', jealous_spouse)] [jealous_spouse.GetFirstName]'im [wet_nurse.GetHerHim]'ten oldukça şüpheleniyor.\n\n"Benim [jealous_spouse.Custom2('RelationToMe', ROOT.Char)], o kadını işe aldığımızdan beri çocuklarımıza olan ilgin nasıl da arttı, [wet_nurse.GetFirstNameNoTooltip]! Acaba [wet_nurse.GetHerHis] #EMP cömertlik#! sana ilham veriyor mu?"\n\n" #NT
+ bp2_yearly.7001.desc_lover: "Görünen o ki... Pek dikkatli davranmamışım." #NT
+ bp2_yearly.7001.desc_no_lover: "[jealous_spouse.GetFirstNameNoTooltip] bana hiçbir şey için saldırıyor! Değil mi...?" #NT
+ bp2_yearly.7001.a: "Çocuklarımızı görmezden gelmemi mi istiyorsun?" #NT
+ bp2_yearly.7001.a.tt: "Bu seçenek, [lover|E] numaranız olduğundan kullanılabilir" #NT
+ bp2_yearly.7001.b: "Saçma, canım; benim sadık olduğumu biliyorsun!" #NT
+ bp2_yearly.7001.b.spouse_convinced: "İkna ediyorsun [jealous_spouse.GetFirstNameNoTooltip]" #NT
+ bp2_yearly.7001.b.spouse_not_convinced: "[jealous_spouse.GetFirstNameNoTooltip] sana inanmıyor" #NT
+ bp2_yearly.7001.c: "Korkularınızı gidereceğim." #NT
+ bp2_yearly.7001.tt: "Sen bilinen bir yalancısın" #NT
+ bp2_yearly.7002.t: "Emziren Eş" #NT
+  #AGOT Modified  #NT
+ #bp2_yearly.7002.desc: "[court_chaplain.GetFirstName] odama daldı, [court_chaplain.GetHerHis]'in yüzünde endişeli bir ifade vardı.\n\n"Efendim, araya girdiğim için özür dilerim ama acil bir şeyim var! Sizin ve [spouse.GetFirstName]'nin çocukken aynı sütanneye sahip olduğunuzu öğrendim. Bu evliliğinizi son derece uygunsuz hale getiriyor; süt kardeşsiniz - [ROOT.Char.GetFaith.HighGodNamePossessive]'ün gözünde, siz ailenin en yakınısınız!"\n\nŞok edici bir açıklama! [court_chaplain.GetFirstNameNoTooltip], ben karşılık veremeden devam ediyor. \n\n"Derhal boşanmanızı tavsiye ediyorum. Aksi takdirde, evliliğinizi ensest olarak ilan etmek zorunda kalacağım."" #NT
+ bp2_yearly.7002.desc: "[court_chaplain.GetFirstNameNicknamed] odama daldı, [court_chaplain.GetHerHis]'in yüzünde endişeli bir ifade vardı.\n\n"Efendim, araya girdiğim için özür dilerim ama acil bir şeyim var! Sizin ve [spouse.GetFirstName]'nin çocukken aynı sütanneye sahip olduğunuzu öğrendim. Bu evliliğinizi son derece uygunsuz hale getiriyor; süt kardeşsiniz - [ROOT.Char.GetFaith.HighGodNamePossessive]'ün gözünde, siz ailenin en yakınısınız!"\n\nŞok edici bir açıklama! [court_chaplain.GetFirstNameNicknamedNoTooltip], ben karşılık veremeden devam ediyor. \n\n"Derhal boşanmanızı tavsiye ediyorum. Aksi takdirde, evliliğinizi ensest olarak ilan etmek zorunda kalacağım."" #NT
+ bp2_yearly.7002.a: "Ensest mi diyorsun? Ben buna aşk diyorum!" #NT
+ bp2_yearly.7002.b: "Hemen boşanacağız." #NT
+ bp2_yearly.7002.c: "Belki de unutabiliriz bunu...?" #NT
+ bp2_yearly.parental_neglect_effect: "[nursed_child.GetFirstNameNoTooltip] öfkeli" #NT
+ bp2_yearly.7003.title: "[nursed_child.GetFirstNamePossessiveNoTooltip] İlk" #NT
+ bp2_yearly.7003.t: "$bp2_yearly.7003.title$ Kelime" #NT
+ bp2_yearly.7003.desc: ""Acele edin efendimiz, bunu duymalısınız!"\n\nSütanne [wet_nurse.GetFirstName] beni aceleyle [ROOT.Char.Custom2('RelationToMePossessive', nursed_child)] odama götürüyor. Heyecanla [nursed_child.GetFirstName]'te [wet_nurse.GetFirstNameNoTooltip] puan, bu yüzden [nursed_child.GetHerHim]'e doğru eğilip dinliyorum.\n\n" #NT
+ bp2_yearly.7003.desc_gold: "[nursed_child.GetFirstNameNoTooltip] bana ağzı sulandırıcı bir madeni para uzatıyor ve diyor ki:\n\n"G-gh, g-g-yaşlı..."" #NT
+ bp2_yearly.7003.desc_secret: "[nursed_child.GetHerHis] minik dudaklarına parmağını bastırırken, [nursed_child.GetFirstNameNoTooltip] bana fısıldıyor:\n\n"Sır."" #NT
+ bp2_yearly.7003.desc_motto: ""[nursed_child.GetHouse.GetMotto]."\n\nİnanılmaz: evimizin [nursed_child.GetHouse.GetName] sloganı! [nursed_child.GetSheHe|U] kekelemeden gırtlaktan geveledi!" #NT
+ bp2_yearly.7003.desc_house: ""[nursed_child.GetHouse.GetNameNoTooltip]."\n\nİnanılmaz! [nursed_child.GetFirstNameNoTooltip] Hanemizin adını söylemeyi öğrendi." #NT
+ bp2_yearly.7003.desc_military: ""Guh-bah-nuh... [nursed_child.Custom( 'KnightCultureNoTooltipLowercase' )]!"\n\nGörünüşe göre [nursed_child.GetFirstNameNoTooltip]'in zaten bir savaşçı ruhu var!" #NT
+ bp2_yearly.7003.desc_faith: ""[nursed_child.GetFaith.random_GoodGodNames]."\n\nGörünüşe göre [nursed_child.GetFirstNameNoTooltip] çoktan bir mürit!" #NT
+ bp2_yearly.7003.desc_father: ""Baba-, baba-..."" #NT
+ bp2_yearly.7003.desc_mother: ""Anne-, anne-..."" #NT
+ bp2_yearly.7003.a: "Nasıl keyifli!" #NT
+ bp2_yearly.7003.b: "[nursed_child.GetSheHe] başka ne diyebilir ki?" #NT
+ bp2_yearly.7003.b.tt: "Konuşmaya devam etmek için [nursed_child.GetFirstNameNoTooltip]'a baskı yapıyorsun." #NT
+ bp2_yearly.7003.c: "Buna vaktim yok." #NT
+ bp2_yearly.7004.t: "$bp2_yearly.7003.title$ Adım" #NT
+ bp2_yearly.7004.desc: "[ROOT.Char.Custom2('RelationToMeShort', nursed_child)] [nursed_child.GetFirstNamePossessive] odamdan bir kargaşa duyuyorum. İçeriye doğru aceleyle girerken, sütanne [wet_nurse.GetFirstName]'nin [nursed_child.GetFirstName] ile oynadığını görüyorum. \n\n"Efendim, mükemmel zamanlama! [nursed_child.GetFirstNameNoTooltip] az önce ilk [nursed_child.GetHerHis] adımı attı!" [wet_nurse.GetSheHe] heyecanla bağırıyor.\n\n [nursed_child.Custom('GirlBoy')]'min ellerini tutarak odanın içinde [nursed_child.GetHerHim] yürümeye çalışıyor." #NT
+ bp2_yearly.7004.a: ""Bir çocuk için büyük bir adım. Bir hükümdar için küçük bir adım."" #NT
+ bp2_yearly.7004.b: "[nursed_child.GetSheHe] başka neler yapabilir?" #NT
+ bp2_yearly.7004.b.tt: "Yürümeye devam etmek için [nursed_child.GetFirstNameNoTooltip]'a basıyorsun." #NT
+ bp2_yearly.7004.c: "$bp2_yearly.7003.c$" #NT
+ bp2_yearly.7005.t: "$bp2_yearly.7003.title$ Diş çıkarma" #NT
+ bp2_yearly.7005.desc: "Benim iznimle, [ROOT.Char.Custom2('RelationToMeShort', nursed_child)] [nursed_child.GetFirstName] ve [nursed_child.GetHerHis] sütannem odama doğru yürüyor. [wet_nurse.GetFirstName] bir müjdeci gibi poz veriyor ve ilan ediyor:\n\n"Efendim, anıtsal bir olaya tanıklık ediyorsunuz! [nursed_child.GetFirstNameNoTooltip] size sunacak muazzam bir armağana sahip." [wet_nurse.GetSheHe|U], [nursed_child.GetHerHim]'yı öne doğru dürttü. "Hadi, [nursed_child.GetFirstNameNoTooltip], [ROOT.Char.GetHerHim]'e söyle!"\n\n"[nursed_child.Custom2('RelationToMeShort', ROOT.Char)|U], bir dişimi kaybettim!" [ROOT.Char.Custom2('RelationToMeShort', nursed_child)], içinde düşen dişin olduğu bir keseyi bana uzatarak gururla [nursed_child.GetHerHis] dişsiz bir gülümseme sunuyor." #NT
+ bp2_yearly.7005.a: "Sevimli! Ama dişini iyi bir tılsım olarak sakla." #NT
+ bp2_yearly.7005.b: "İşte: Hediyeye yakışır hediye!" #NT
+ bp2_yearly.7005.b.tt: "Dişin var" #NT
+ bp2_yearly.7005.c: "$bp2_yearly.7003.c$" #NT
+ child_teeth_memorabilia: "[nursed_child.GetNamePossessiveNoTooltip] Süt Dişi" #NT
+ child_teeth_memorabilia_desc: "[nursed_child.GetNamePossessiveNoTooltip] İlk düşen süt dişi." #NT
+ bp2_yearly.7006.t: "$bp2_yearly.7003.title$ Giydirme" #NT
+ bp2_yearly.7006.desc: "As I patiently await the fetching of my clothes, a servant stutters: "Elbiselerimin getirilmesini sabırla beklerken, bir hizmetçi kekeliyor: "Lordum, şey... giysilerinizi kimse bulamaz!"\n\n"Etrafım beceriksizlikle çevrili!" diye mırıldanıyorum, yatak odamdan fırtına gibi çıkıyorum.\n\n[ROOT.Char.Custom2('RelationToMeShort', nursed_child)], [nursed_child.GetFirstName]'imin çocuk odasında sadece giysilerimi değil, aynı zamanda [nursed_child.Custom('GirlBoyPossessive')] sütannemi de buluyorum.\n\n"Benim bununla hiçbir ilgim yok efendim — [nursed_child.GetSheHe] giyinmiş [nursed_child.GetHerselfHimself]!" [wet_nurse.GetFirstName] kıkırdayarak cevap veriyor." #NT! #NT
+ bp2_yearly.7006.a: "Küçük hain!" #NT
+ bp2_yearly.7006.b: "Yani Moda'nın [nursed_child.GetSheHe]'ı [nursed_child.Custom('GetPrincessPrince')] mi?" #NT
+ bp2_yearly.7006.c: "$bp2_yearly.7003.c$" #NT
+ bp2_yearly.7008.t: "$bp2_yearly.7003.title$ Kızgınlık" #NT
+ bp2_yearly.7008.desc_start: ""Ah, sen daha küçücük bir çocukken! O günleri her zaman hatırlayacağım," diyor [ROOT.Char.Custom2('RelationToMeShort', reflecting_parent)] [reflecting_parent.GetFirstName], hiç istemsizce.\n\nHer şey geri geliyor. Ben #EMP biliyorum#! ki" #NT
+ bp2_yearly.7008.desc: "$bp2_yearly.7008.desc_start$ [reflecting_parent.GetSheHe] beni hiç umursamadı. Eğlenceli anların benim en kötü denemelerim olduğunu #EMP biliyorum#! [reflecting_parent.GetHerHis]" #NT
+ bp2_yearly.7008.desc_dead_parent: "$bp2_yearly.7008.desc_start$ benim [ROOT.Char.Custom2('RelationToMeShort', ROOT.Var('nursed_child_parent_var').Char)] [ROOT.Var('nursed_child_parent_var').Char.GetFirstName] [ROOT.Var('nursed_child_parent_var').Char.GetSheHe] yaşadığı sürece benim düşmanımdı." #NT
+ bp2_yearly.7008.desc_word: "[ROOT.Var('nursed_child_parent_var').Char.GetSheHe|U] ilk sözlerimi bile ciddiye almadı!" #NT
+ bp2_yearly.7008.desc_step: "[ROOT.Var('nursed_child_parent_var').Char.GetSheHe|U] sıkılmış bir şekilde ilk adımlarımı attığımda ayrıldım." #NT
+ bp2_yearly.7008.desc_tooth: "[ROOT.Var('nursed_child_parent_var').Char.GetSheHe|U] İlk diş kaybımdan dolayı tiksindim, geri çekildim!" #NT
+ bp2_yearly.7008.desc_dress: "[ROOT.Var('nursed_child_parent_var').Char.GetSheHe|U] çocukluğumdan beri sahip olduğum giyinme aşkımla dalga geçti!" #NT
+ bp2_yearly.7008.desc_end: "\n\nHakkım olanı almalıyım! Ya da belki... Geçmişe takılıp kalmayı bırakmalıyım?" #NT
+ bp2_yearly.7008.a: ""Toprağını bana ver, [nursed_child.Custom2('RelationToMeShort', reflecting_parent)]!"" #NT
+ bp2_yearly.7008.a.tt_good: "[reflecting_parent.GetFirstNameNoTooltip] seninle aynı fikirde" #NT
+ bp2_yearly.7008.a.tt_bad: "[reflecting_parent.GetFirstNameNoTooltip] bunun yerine başka bir şey sunuyor" #NT
+ bp2_yearly.7008.b: ""Zenginliğini bana borçlusun!"" #NT
+ bp2_yearly.7008.c: ""Senden nefret ediyorum ve seni bir daha asla görmeyeceğimi umuyorum!"" #NT
+ bp2_yearly.7008.c_dead_parent: ""Neden beni bu kadar ihmal ettin!?"" #NT
+ bp2_yearly.7008.d: "Ben kendi çocuklarıma odaklanmayı tercih ederim." #NT
+ bp2_yearly.7008.e: "Böyle bir muamele... haklıdır." #NT
+ bp2_yearly.7008.tt: "[reflecting_parent.GetFirstNameNoTooltip] cevap vermek zorunda kalacak" #NT
+ bp2_yearly.7009.t: "$bp2_yearly.7003.title$ Tahviller" #NT
+ bp2_yearly.7009.desc: "$bp2_yearly.7008.desc_start$ [ROOT.Char.Custom2('RelationToMeShort', reflecting_parent)] bende en iyiyi gördü, her zaman beni savunmaya çalıştı. Çocukluğumun en güzel anları [reflecting_parent.GetHerHim] ile olanlardı." #NT
+ bp2_yearly.7009.desc_dead_parent: "$bp2_yearly.7008.desc_start$ [ROOT.Char.Custom2('RelationToMeShort', reflecting_parent)]'im bana karşı derin bir bağlılık duyuyordu ve [ROOT.Char.Custom2('RelationToMeShort', ROOT.Var('nursed_child_parent_var').Char)] [ROOT.Var('nursed_child_parent_var').Char.GetFirstName] yaşadığı sürece [ROOT.Var('nursed_child_parent_var').Char.GetSheHe] de beni şiddetle seviyordu." #NT
+ bp2_yearly.7009.desc_word: "İlk kelimelerimi duyan [ROOT.Var('nursed_child_parent_var').Char.GetSheHe] oldu." #NT
+ bp2_yearly.7009.desc_step: "[ROOT.Var('nursed_child_parent_var').Char.GetSheHe|U] ilk adımlarımı atmama yardımcı oldu." #NT
+ bp2_yearly.7009.desc_tooth: "[ROOT.Var('nursed_child_parent_var').Char.GetSheHe|U] süt dişimi bile kendi eline aldı. [ROOT.Var('nursed_child_parent_var').Char.GetHerHis]" #NT
+ bp2_yearly.7009.desc_dress: "[ROOT.Var('nursed_child_parent_var').Char.GetSheHe|U] benim yaramazlığımı, süslenmemi teşvik etti." #NT
+ bp2_yearly.7009.desc_end: "\n\nBelki de [ROOT.Var('nursed_child_parent_var').Char.GetHerHis] sevginin karşılığını ödemeliyim?" #NT
+ bp2_yearly.7009.desc_end_dead_parent: "\n\nTeşekkür etmek için artık çok geç [ROOT.Var('nursed_child_parent_var').Char.GetHerHim], ama minnettarlığım artık sadece [ROOT.Char.Custom2('RelationToMe', reflecting_parent)]'ime gidiyor." #NT
+ bp2_yearly.7009.a: ""Seni çok seviyorum, [nursed_child.Custom2('RelationToMeShort', reflecting_parent)]."" #NT
+ bp2_yearly.7009.a.tt_good: "$bp2_yearly.7008.a.tt_good$" #NT
+ bp2_yearly.7009.a.tt_bad: "[reflecting_parent.GetFirstNameNoTooltip] karşılığında bir şey istiyor" #NT
+ bp2_yearly.7009.b: "Sevgi dolu bakımı çocuklarıma aktaracağım!" #NT
+ bp2_yearly.7009.c: "Evet. Aile, minnettarlık... ve daha niceleri." #NT
+ bp2_yearly.7010.t: "$bp2_yearly.7008.t$" #NT
+ bp2_yearly.7010.desc_start: "[ROOT.Char.Custom2('RelationToMeShort', nursed_child)] [nursed_child.GetFirstName]'imle bazı saray meselelerini tartışırken, [nursed_child.GetSheHe] aniden çocukluğumdan bahsetmeye başlıyor.\n\n" #NT
+ bp2_yearly.7010.desc: "$bp2_yearly.7010.desc_start$"Sevgili [nursed_child.Custom2('RelationToMeShort', ROOT.Char)], itiraf etmelisin ki: Sen beni hiç umursamadın, gençliğimde bile." #NT
+ bp2_yearly.7010.desc_dead_parent: "$bp2_yearly.7010.desc_start$"O [nursed_child.Custom2('RelationToMeShort', ROOT.Char)], ölüler hakkında kötü konuşmak yanlıştır, ama benim [nursed_child.Custom2('RelationToMeShort', nursed_child.MakeScope.Var('nursed_child_parent_var').Char)]'imin olabilecek en kötü ebeveyn olduğunu kabul etmelisin!" #NT
+ bp2_yearly.7010.desc_word: "İlk sözlerim reddedildi!" #NT
+ bp2_yearly.7010.desc_step: "İlk adımlarım görmezden gelindi!" #NT
+ bp2_yearly.7010.desc_tooth: "İlk dökülen dişlerim çöpe gitti!" #NT
+ bp2_yearly.7010.desc_dress: "Giyinişim acımasızca alay konusu oldu." #NT
+ bp2_yearly.7010.desc_end: "#EMP o#! aşk mıdır?"\n\n[nursed_child.GetFirstNameNoTooltip] mücadele ediyor, duygudan titriyor ama kararlı görünüyor." #NT
+ bp2_yearly.7010.desc_title: "$bp2_yearly.7008.a$" #NT
+ bp2_yearly.7010.desc_gold: "$bp2_yearly.7008.b$" #NT
+ bp2_yearly.7010.desc_hate: "$bp2_yearly.7008.c$" #NT
+ bp2_yearly.7010.desc_hate_dead_parent: "$bp2_yearly.7008.c_dead_parent$" #NT
+ bp2_yearly.7010.a: "Pişmanlığımı ispatlamaya hazırım." #NT
+ bp2_yearly.7010.a.tt: "$bp2_yearly.7008.a.tt_good$" #NT
+ bp2_yearly.7010.b: ""Bundan sonra benden istediğin her şeyi alacaksın!"" #NT
+ bp2_yearly.7010.b.tt: "$bp2_yearly.7008.a.tt_bad$" #NT
+ bp2_yearly.7010.c: ""Çıkmak."" #NT
+ bp2_yearly.7010.c.tt: "[reflecting_parent.GetFirstNameNoTooltip] pek umursamıyor" #NT
+ bp2_yearly.7011.t: "$bp2_yearly.7009.t$" #NT
+ bp2_yearly.7011.desc: "$bp2_yearly.7010.desc_start$"[nursed_child.Custom2('RelationToMeShort', ROOT.Char)|U], sen bana bir tazının yavrularına baktığı gibi baktın. Hatta daha da iyi baktın. En eski, en güzel anılarım seninleydi." #NT
+ bp2_yearly.7011.desc_dead_parent: "$bp2_yearly.7010.desc_start$"Benim [nursed_child.Custom2('RelationToMeShort', nursed_child.MakeScope.Var('nursed_child_parent_var').Char)]'im bizimleyken, [nursed_child.MakeScope.Var('nursed_child_parent_var').Char.GetHerHim]'yi gerçekten çok sevdim. Her zaman, [nursed_child.MakeScope.Var('nursed_child_parent_var').Char.GetSheHe] ve sen bana zaman ayırdın." #NT
+ bp2_yearly.7011.desc_word: "İlk kelimelerimi söylediğimde!" #NT
+ bp2_yearly.7011.desc_step: "İlk adımlarımı attığımda!" #NT
+ bp2_yearly.7011.desc_tooth: "Düşen ilk dişimi eline koyduğumda." #NT
+ bp2_yearly.7011.desc_dress: "Yaramazlık yapıp zıpladığım zamanlar!" #NT
+ bp2_yearly.7011.desc_end: "Beni o kadar sıkı tutuyordun ki."\n\n[nursed_child.GetSheHe|U] kızarır, ışıldar.\n\n" #NT
+ bp2_yearly.7011.desc_receive_love: "$bp2_yearly.7011.desc_end$$bp2_yearly.7009.a$" #NT
+ bp2_yearly.7011.desc_forwarded_love: ""$bp2_yearly.7011.desc_end$"$bp2_yearly.7009.b$"" #NT
+ bp2_yearly.7011.a: ""Ve seni seviyorum, [ROOT.Char.Custom2('RelationToMeShort', nursed_child)]!"" #NT
+ bp2_yearly.7011.a.tt: "$bp2_yearly.7009.a.tt_good$" #NT
+ bp2_yearly.7011.b: ""Ne büyük bir bağlılık!"" #NT
+ bp2_yearly.7011.b.tt: "$bp2_yearly.7009.a.tt_bad$" #NT
+ bp2_yearly.7011.c: ""Geçmişte yaşama."" #NT
+ bp2_yearly.7011.c.tt: "$bp2_yearly.7010.c.tt$" #NT
  bp2_yearly.7012.t: "Bir Dadı'nın Sevgi Sütü"
  bp2_yearly.7012.desc: "[nursed_child.Custom2('MyCharacterIntroduction', ROOT.Char)|U] sendeleyerek içeri giriyor, konsey toplantımı rahatsız ediyor ve beni kenara çekmeye çalışıyor.\n\n"[nursed_child.GetFirstNameNoTooltip]! Burada olmamalısın," diye itiraz ediyorum ama [nursed_child.Custom('GirlBoy')] kırmızıya dönüyor ve bağırmaya başlıyor.\n\n "Senden #EMP nefret ediyorum#!! Bunu neden yapıyorsun?!" [nursed_child.GetSheHe|U] tüm gözler [nursed_child.GetHerHim]'dayken nefes nefese duraklıyor. "[former_wet_nurse.GetFirstName]'mi gönderdin! O sadece bir sütanne değil — onu bir anne gibi seviyorum! #EMP Annemden daha fazla#!!""
  bp2_yearly.7012.a: "Affedersiniz. Onu tekrar işe alacağım!"

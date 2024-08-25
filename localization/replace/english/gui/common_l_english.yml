@@ -1,114 +1,114 @@
 ﻿l_english:
- CHARACTER_IN_ACTIVITY_LOCATION: "Etkinlikte: [ACTIVITY.GetBaronyNameExplicitly|V]"
-  #AGOT Modified 
- #CHARACTER_IN_LOCATION: "[PROVINCE.GetBaronyNameExplicitly|V]'da yer almaktadır"
- CHARACTER_IN_LOCATION: "[Character.Custom('is_missing_location_loc')]"
- CLOSE_TOOLTIP: "#T $CLOSE_LABEL$#!"
- MINIMIZE_TOOLTIP: "#T Küçült#!"
- CLOSE_LABEL: "Kapalı"
- MINIMIZE: "#T Gizle#!"
- BACK_TOOLTIP: "#T $BACK_LABEL$#!"
- BACK_LABEL: "Geri"
- NEXT_TOOLTIP: "#T $NEXT_LABEL$#!"
- NEXT_LABEL: "Sonraki"
- DONE: "Tamamla"
- CHANGE: "Değiştir"
- NONE: "Hiçbiri"
-  #AGOT Modified 
- TOP_BAR_VERSION: "Oyun Sürümü: [GetGameVersionInfo]\nMP Kodu: [GetMPChecksum|V] $MODIFIED_CHECKSUM$ [GetRandomLogInfo] $AGOT_VERSION_BUILD$"
-  #AGOT Modified 
- VERSION_SHORT: "[GetGameVersionInfoShort], Kontrol toplamı: [GetMPChecksum] $MODIFIED_CHECKSUM$ $AGOT_VERSION_BUILD$"
- TITUS_FILTER_SAME_VERSION: "Aynı Kontrol Toplamı #weak ([GetMPChecksum])#!"
- MODIFIED_CHECKSUM: "[Select_CString( HasDifferentChecksumThanCompiled, '#X (Değiştirilmiş)#!', '' )]"
- TT_MODULE_VERSION_INFO_COMMON: "#T $MODULE$ sürüm:#!\n Dal: $BRANCH|V$\n İşleme: $HASH_SHORT|V$\n Zaman damgası: $TIMESTAMP$\n İşleme numarası: $COMMIT_COUNT$"
- TT_MODULE_VERSION_INFO: "$TT_MODULE_VERSION_INFO_COMMON$\n\n"
- TT_GAME_MODULE_VERSION_INFO: "$TT_MODULE_VERSION_INFO_COMMON$\n$TT_GAME_MODULE_ADDITIONAL_VERSION_INFO$\n\n"
- TT_GAME_MODULE_ADDITIONAL_VERSION_INFO: "MP Kontrol Toplamı: #V [GetMPChecksum]#! #V [GetRandomLogInfo]#!"
- TT_MODULE_VERSION_INFO_CLICK_TO_COPY: "#I Panoya kopyalamak için tıklayın#!"
- CLIPBOARD_MODULE_VERSION_INFO: "$MODULE$: $BRANCH$ $HASH_LONG$"
- CLIPBOARD_GAME_MODULE_VERSION_INFO: "$MODULE$ sürümü:\n Dal: $BRANCH$\n İşleme: $HASH_LONG$\n Zaman damgası: $TIMESTAMP$\n İşleme numarası: $COMMIT_COUNT$\n MP Kontrol toplamı: [GetMPChecksum]"
- OK_BUTTON: "Tamam"
- CANCEL_BUTTON: "İptal Et"
-  # Building blocks of COA tooltip 
- GO_TO_CLICK: "Konuma gitmek için tıklayın"
- GO_TO_RIGHT_CLICK: "Konuma gitmek için sağ tıklayın"
- VIEW_CLICK: "Görüntülemek için tıklayın"
- COA_LINE_OF_SUCCESSION: "[line_of_succession|E]:\n"
- COA_TOOLTIP_HOLDER: "[GetPlayer.Custom2_Title( 'TitleRelationToMe', TITLE.Self )][TITLE.GetLeaseInfo][holder|E]: [TITLE.GetHolder.GetFullNameNicknamed]\n[SelectLocalization(DataModelHasItems(TITLE.GetLineOfSuccession), 'COA_LINE_OF_SUCCESSION', '')][TITLE.GetLineOfSuccessionDesc]\n"
- TITLE_LEASED_OUT_TO: "[lessee|E]: [CHARACTER.GetUIName]\n"
- COA_TOOLTIP_NO_HOLDER: "Oluşturulmadı\n"
- COA_TOOLTIP_CLICK_INFO: "#I [SelectLocalization(TITLE.IsShownInTitleView, 'GO_TO_CLICK', 'VIEW_CLICK')]\n$GO_TO_RIGHT_CLICK$#!"
- COA_TOOLTIP_CLICK_INFO_GUI: "#I [SelectLocalization(Title.IsShownInTitleView, 'GO_TO_CLICK', 'VIEW_CLICK')]\n$GO_TO_RIGHT_CLICK$#!"
- COA_DEFAULT_TOOLTIP_TITLE: "#T [TITLE.GetNameWithUnderlyingNoTooltip|U]#!\n"
- COA_DE_JURE_TOOLTIP_TITLE: "#T [TITLE.GetNameWithUnderlyingNoTooltip|U]#!\n"
- COA_DE_JURE_TOOLTIP_DE_JURE_TITLE: "De Jure kısmı: [TITLE.GetDeJureLiege.GetName]\n"
- COA_HAS_LAWS: "@title_succession![title_succession|E] yasa:"
- COA_HIGHLIGHT_CLAIM: "@pressed_claim! Bu konuda $CLAIM$'ınız var [title|E]"
- COA_HIGHLIGHT_SUCCESSION: "#TUT_KW Bu Ünvan için [succession|E] sırasındasınız#!"
- COA_HIGHLIGHT_DE_JURE_LIEGE: "#TUT_KW Bu Ünvan [de_jure|E] sana ait#!"
-  # Actual COA tooltips 
- COA_DEFAULT_TOOLTIP: "$COA_HOLDER$"
- COA_DE_JURE_TOOLTIP: "$COA_TITLE$$COA_DE_JURE_TITLE$$COA_HOLDER$$COA_CLICK_INFO$"
- CHARACTER_TOOLTIP_PORTRAIT: "$CHARACTER_TOOLTIP$\n\n$CHARACTER_TOOLTIP_INSTRUCTION$"
- CHARACTER_TOOLTIP_INSTRUCTION: "#I [Select_CString(Character.IsShownInCharacterWindow,'Click to go to location', 'Click to view')]\nEtkileşime geçmek için sağ tıklayın#!"
- CHARACTER_TOOLTIP_INSTRUCTION_CODE: "#I [Select_CString(CHARACTER.IsShownInCharacterWindow,'Click to go to location', 'Click to view')]\nEtkileşime geçmek için sağ tıklayın#!"
- CHARACTER_TOOLTIP_INSTRUCTION_COURT_SCENE: "#I Görüntülemek için tıklayın\nEtkileşime geçmek için sağ tıklayın#!"
- CHARACTER_TOOLTIP_NO_PORTRAIT: "#T Karakter Yok#!"
- PORTRAIT_NO_COUNCILLOR: "#T Hayır [councillor|E] atandı#!"
- ON_COUNCIL_EFFECTS: "#high Sizin üzerinizdeki etkileri:#!\n[GetPlayer.GetCouncillorModifierDesc]"
- PORTRAIT_NO_SPOUSE: "#T Eş Yok#!"
- HEIR_TO_HEADER: "[heir|E]'e:\n"
- CHARACTER_LINE_OF_SUCCESSION_MORE: "Ve $COUNT|V$ daha [titles|E]"
- MILITARY_STRENGTH_COMPARISON_TOOLTIP_LABEL: "#T Savunucuların askeri gücü Saldırganların askeri gücüne göre $STRENGTH|V$'dir.#!\n"
- MILITARY_STRENGTH_COMPARISON_ATTACKER_TOOLTIP_LABEL: "#T Saldırganların askeri gücü Savunucuların askeri gücünden $STRENGTH|V$ fazladır#!\n"
- MILITARY_STRENGTH_US_LABEL: "#T Savunucuların Askeri Gücü#!\n"
- MILITARY_STRENGTH_US_ATTACKER_LABEL: "#T Saldırganların Askeri Gücü#!\n"
- MILITARY_STRENGTH_OUR_LABEL: "#T Askeri Gücümüz#!\n"
- MILITARY_STRENGTH_THEIR_OUR_TOOLTIP_LABEL: "#T Bize kıyasla askeri güçleri $STRENGTH|V$#!\n"
- MILITARY_STRENGTH_OUR_ALLIES_LABEL: "\n#S Savunucuların [allies|E]' Askeri Gücü:#!\n"
- MILITARY_STRENGTH_ALLIES_LABEL: "\n#S [allies|E]'in Askeri Gücü:#!\n"
- MILITARY_STRENGTH_THEIR_ALLIES_LABEL: "\n#S Saldırganların [allies|E]' Askeri Gücü:#!\n"
- MILITARY_STRENGTH_BOTH: "#weak Savunma kuvvetleri:#! \n$THEIR$\n\n#weak Saldıran kuvvetler:#! \n$OUR$"
- MILITARY_STRENGTH_ATTACKER_DEFENDER: "#weak Saldıran kuvvetler:#! \n$THEIR$\n\n#weak Savunan kuvvetler:#! \n$OUR$"
- MILITARY_STRENGTH_THEIR: "$THEIR$"
- TITLE_LINE_OF_SUCCESSION_ENTRY: "[CHARACTER.GetUIName]\n"
- CHARACTER_LINE_OF_SUCCESSION: "\nMevcut [line_of_succession|E]:\n"
- CHARACTER_LINE_OF_SUCCESSION_ENTRY: "[TITLE.GetName]\n"
- DISMISS: "Azletmek"
- DISMISS_ALL: "Hepsini reddet"
- DISMISS_CS_TT: "#T $DISMISS$#!\nDismiss Bu durum. Aynı tipteki durumlar yine görünecek, yalnızca bu belirli durum gizlenecek.\n\nBu görünümdeki Sıfırla düğmesini kullanarak bu durumu geri getirebilirsiniz."
- DISMISS_ALL_TT: "#T $DISMISS_ALL$#!"
- DISMISS_SUGGESTION_TT: "#T $DISMISS$#!\nDismiss Bu öneri. Her [GetDefine('NSuggestions', 'GLOBAL_SPAN_MONTHS')] ayda bir yeni bir öneri görünecektir."
- UNLANDED_TITLE: "$SUBJECT_TYPE$ / [CHARACTER.GetShortUIName]"
-  #click 
- RIGHT_CLICK_DISMISS: "#I Kapatmak için sağ tıklayın#!"
- REALM_TOOLTIP_HOLDER: "[ruler|E]: [TITLE.GetHolder.GetName]\nMevcut [line_of_succession|E]:\n[TITLE.GetLineOfSuccessionDesc]\n"
- COA_REALM_TOOLTIP_CHARACTER: "#T [CHARACTER.GetPrimaryTitle.GetNameWithUnderlyingNoTooltip|U]#!\n[CHARACTER.GetGovernment.GetName] [CHARACTER.GetPrimaryTitle.GetRankConcept]-[rank|E] [realm|E]\n[ruler|E]: [CHARACTER.GetUIName|U]\nAskeri Güç: [CHARACTER.GetMilitaryStrengthText|V] [soldiers|E]\nDiyar Boyutu: [CHARACTER.RealmSize|V] [counties|E]\n\n#S Succession#!\nVaris Sırası: $SUCCESSION_FORM_NAME$\n\n[line_of_succession|E]:\n[CHARACTER.GetPrimaryTitle.GetLineOfSuccessionDesc]"
- CHARACTER_WINDOW_REALM_TOOLTIP: "[Character.GetDefaultRealmFlagTooltipNoClickInfo]\n\n[Title.GetClickInfo]"
- COA_REALM_TOOLTIP_CHARACTER_CLICK_INFO: "#I [Select_CString(CHARACTER.IsShownInCharacterWindow, 'Click to go to location', 'Click to view')]\nEtkileşime geçmek için sağ tıklayın [CHARACTER.GetShortUINameNoTooltip]#!"
- COA_REALM_TOOLTIP_PRIMARY_TITLE_CLICK_INFO: "#I Birincil Ünvanı görüntülemek için tıklayın [CHARACTER.GetPrimaryTitle.GetNameNoTooltip|V]#!"
- COA_REALM_TOOLTIP_GUI_CLICK_INFO: "#I [Select_CString(Character.IsShownInCharacterWindow, 'Click to go to location', 'Click to view')]\n [Character.GetShortUINameNoTooltip]#! ile etkileşimde bulunmak için sağ tıklayın"
- cooltip_spouse_listing: "[spouse|E]: [ROOT.Char.GetPrimarySpouseOrBetrothed.GetName]"
- cooltip_betrothed_listing: "[betrothed|E]: [ROOT.Char.GetPrimarySpouseOrBetrothed.GetName]"
- cooltip_concubine_listing: "[concubine|E] /: [ROOT.Char.GetConcubinist.GetName]"
- cooltip_unmarried_listing: "Evlenmemiş"
- GLOBAL_OBSERVER: "Gözlemlemek"
- PLAYER_OBSERVER: "[GetPlayer.GetShortUINameNotMeNoTooltip] ([SelectLocalization(GetPlayer.IsPlayer, 'OBSERVER_PLAYER_NAME', 'OBSERVER_AI')]) olarak gözlemleniyor"
- OBSERVER_PLAYER_NAME: "[GetPlayer.PlayerName] tarafından oynandı"
- OBSERVER_AI: "Yapay Zeka"
- END_OF_COMBAT_CONTRIBUTION_TOOLTIP: "#T Savaş Katkısı #V [BattleSummaryWindow.GetCombatResultData.GetWarContribution( GetPlayer )|=]#!#! tarafından değiştirildi"
-  #AGOT Modified 
- #CHARACTER_LOCATION_TOOLTIP: "[Character.GetCurrentLocation.GetName]'da yer almaktadır"
- CHARACTER_LOCATION_TOOLTIP: "[Character.Custom('is_missing_location_loc')]"
- CHARACTER_IMPRISONED_TOOLTIP: "[imprisoned|E] tarafından [Character.GetImprisonedBy.GetUIName]"
- CHARACTER_BIRTH_NAME_TOOLTIP: "Doğum adı: [Character.GetOriginalFirstName]"
- CHARACTER_COURT_POSITIONS_TOOLTIP: "[Character.GetLiege.GetShortUINamePossessive|U] [Character.GetHeldCourtAndCouncilPositionsString]"
- cooltip_opinion_of_player: "[opinion|E] benden: #P [Character.GetOpinionOf( GetPlayer )|+=]#!"
- CHARACTER_KILLER_TOOLTIP: "Katil: [Character.GetKiller.GetUIName]"
- FAITH_COOLTIP_WINDOW: "[Faith.GetAdjective]"
- CULTURE_COOLTIP_WINDOW: "[Culture.GetName]"
- CULTURE_COOLTIP_GETNAME: "[Culture.GetNameNoTooltip]"
- SORT_BY: "Sırala:"
- FILTER_BY: "Filtre:"
- DEBUG_TITLE_KEYS: "Ünvan anahtarı ve hukuki geçerlilik:"
- DEBUG_REGION_KEYS: "Coğrafi bölgeler:"
+ CHARACTER_IN_ACTIVITY_LOCATION: "Etkinlikte: [ACTIVITY.GetBaronyNameExplicitly|V]" #NT
+  #AGOT Modified  #NT
+ #CHARACTER_IN_LOCATION: "[PROVINCE.GetBaronyNameExplicitly|V]'da yer almaktadır" #NT
+ CHARACTER_IN_LOCATION: "[Character.Custom('is_missing_location_loc')]" #NT
+ CLOSE_TOOLTIP: "#T $CLOSE_LABEL$#!" #NT
+ MINIMIZE_TOOLTIP: "#T Küçült#!" #NT
+ CLOSE_LABEL: "Kapalı" #NT
+ MINIMIZE: "#T Gizle#!" #NT
+ BACK_TOOLTIP: "#T $BACK_LABEL$#!" #NT
+ BACK_LABEL: "Geri" #NT
+ NEXT_TOOLTIP: "#T $NEXT_LABEL$#!" #NT
+ NEXT_LABEL: "Sonraki" #NT
+ DONE: "Tamamla" #NT
+ CHANGE: "Değiştir" #NT
+ NONE: "Hiçbiri" #NT
+  #AGOT Modified  #NT
+ TOP_BAR_VERSION: "Oyun Sürümü: [GetGameVersionInfo]\nMP Kodu: [GetMPChecksum|V] $MODIFIED_CHECKSUM$ [GetRandomLogInfo] $AGOT_VERSION_BUILD$" #NT
+  #AGOT Modified  #NT
+ VERSION_SHORT: "[GetGameVersionInfoShort], Kontrol toplamı: [GetMPChecksum] $MODIFIED_CHECKSUM$ $AGOT_VERSION_BUILD$" #NT
+ TITUS_FILTER_SAME_VERSION: "Aynı Kontrol Toplamı #weak ([GetMPChecksum])#!" #NT
+ MODIFIED_CHECKSUM: "[Select_CString( HasDifferentChecksumThanCompiled, '#X (Değiştirilmiş)#!', '' )]" #NT
+ TT_MODULE_VERSION_INFO_COMMON: "#T $MODULE$ sürüm:#!\n Dal: $BRANCH|V$\n İşleme: $HASH_SHORT|V$\n Zaman damgası: $TIMESTAMP$\n İşleme numarası: $COMMIT_COUNT$" #NT
+ TT_MODULE_VERSION_INFO: "$TT_MODULE_VERSION_INFO_COMMON$\n\n" #NT
+ TT_GAME_MODULE_VERSION_INFO: "$TT_MODULE_VERSION_INFO_COMMON$\n$TT_GAME_MODULE_ADDITIONAL_VERSION_INFO$\n\n" #NT
+ TT_GAME_MODULE_ADDITIONAL_VERSION_INFO: "MP Kontrol Toplamı: #V [GetMPChecksum]#! #V [GetRandomLogInfo]#!" #NT
+ TT_MODULE_VERSION_INFO_CLICK_TO_COPY: "#I Panoya kopyalamak için tıklayın#!" #NT
+ CLIPBOARD_MODULE_VERSION_INFO: "$MODULE$: $BRANCH$ $HASH_LONG$" #NT
+ CLIPBOARD_GAME_MODULE_VERSION_INFO: "$MODULE$ sürümü:\n Dal: $BRANCH$\n İşleme: $HASH_LONG$\n Zaman damgası: $TIMESTAMP$\n İşleme numarası: $COMMIT_COUNT$\n MP Kontrol toplamı: [GetMPChecksum]" #NT
+ OK_BUTTON: "Tamam" #NT
+ CANCEL_BUTTON: "İptal Et" #NT
+  # Building blocks of COA tooltip  #NT
+ GO_TO_CLICK: "Konuma gitmek için tıklayın" #NT
+ GO_TO_RIGHT_CLICK: "Konuma gitmek için sağ tıklayın" #NT
+ VIEW_CLICK: "Görüntülemek için tıklayın" #NT
+ COA_LINE_OF_SUCCESSION: "[line_of_succession|E]:\n" #NT
+ COA_TOOLTIP_HOLDER: "[GetPlayer.Custom2_Title( 'TitleRelationToMe', TITLE.Self )][TITLE.GetLeaseInfo][holder|E]: [TITLE.GetHolder.GetFullNameNicknamed]\n[SelectLocalization(DataModelHasItems(TITLE.GetLineOfSuccession), 'COA_LINE_OF_SUCCESSION', '')][TITLE.GetLineOfSuccessionDesc]\n" #NT
+ TITLE_LEASED_OUT_TO: "[lessee|E]: [CHARACTER.GetUIName]\n" #NT
+ COA_TOOLTIP_NO_HOLDER: "Oluşturulmadı\n" #NT
+ COA_TOOLTIP_CLICK_INFO: "#I [SelectLocalization(TITLE.IsShownInTitleView, 'GO_TO_CLICK', 'VIEW_CLICK')]\n$GO_TO_RIGHT_CLICK$#!" #NT
+ COA_TOOLTIP_CLICK_INFO_GUI: "#I [SelectLocalization(Title.IsShownInTitleView, 'GO_TO_CLICK', 'VIEW_CLICK')]\n$GO_TO_RIGHT_CLICK$#!" #NT
+ COA_DEFAULT_TOOLTIP_TITLE: "#T [TITLE.GetNameWithUnderlyingNoTooltip|U]#!\n" #NT
+ COA_DE_JURE_TOOLTIP_TITLE: "#T [TITLE.GetNameWithUnderlyingNoTooltip|U]#!\n" #NT
+ COA_DE_JURE_TOOLTIP_DE_JURE_TITLE: "De Jure kısmı: [TITLE.GetDeJureLiege.GetName]\n" #NT
+ COA_HAS_LAWS: "@title_succession![title_succession|E] yasa:" #NT
+ COA_HIGHLIGHT_CLAIM: "@pressed_claim! Bu konuda $CLAIM$'ınız var [title|E]" #NT
+ COA_HIGHLIGHT_SUCCESSION: "#TUT_KW Bu Ünvan için [succession|E] sırasındasınız#!" #NT
+ COA_HIGHLIGHT_DE_JURE_LIEGE: "#TUT_KW Bu Ünvan [de_jure|E] sana ait#!" #NT
+  # Actual COA tooltips  #NT
+ COA_DEFAULT_TOOLTIP: "$COA_HOLDER$" #NT
+ COA_DE_JURE_TOOLTIP: "$COA_TITLE$$COA_DE_JURE_TITLE$$COA_HOLDER$$COA_CLICK_INFO$" #NT
+ CHARACTER_TOOLTIP_PORTRAIT: "$CHARACTER_TOOLTIP$\n\n$CHARACTER_TOOLTIP_INSTRUCTION$" #NT
+ CHARACTER_TOOLTIP_INSTRUCTION: "#I [Select_CString(Character.IsShownInCharacterWindow,'Click to go to location', 'Click to view')]\nEtkileşime geçmek için sağ tıklayın#!" #NT
+ CHARACTER_TOOLTIP_INSTRUCTION_CODE: "#I [Select_CString(CHARACTER.IsShownInCharacterWindow,'Click to go to location', 'Click to view')]\nEtkileşime geçmek için sağ tıklayın#!" #NT
+ CHARACTER_TOOLTIP_INSTRUCTION_COURT_SCENE: "#I Görüntülemek için tıklayın\nEtkileşime geçmek için sağ tıklayın#!" #NT
+ CHARACTER_TOOLTIP_NO_PORTRAIT: "#T Karakter Yok#!" #NT
+ PORTRAIT_NO_COUNCILLOR: "#T Hayır [councillor|E] atandı#!" #NT
+ ON_COUNCIL_EFFECTS: "#high Sizin üzerinizdeki etkileri:#!\n[GetPlayer.GetCouncillorModifierDesc]" #NT
+ PORTRAIT_NO_SPOUSE: "#T Eş Yok#!" #NT
+ HEIR_TO_HEADER: "[heir|E]'e:\n" #NT
+ CHARACTER_LINE_OF_SUCCESSION_MORE: "Ve $COUNT|V$ daha [titles|E]" #NT
+ MILITARY_STRENGTH_COMPARISON_TOOLTIP_LABEL: "#T Savunucuların askeri gücü Saldırganların askeri gücüne göre $STRENGTH|V$'dir.#!\n" #NT
+ MILITARY_STRENGTH_COMPARISON_ATTACKER_TOOLTIP_LABEL: "#T Saldırganların askeri gücü Savunucuların askeri gücünden $STRENGTH|V$ fazladır#!\n" #NT
+ MILITARY_STRENGTH_US_LABEL: "#T Savunucuların Askeri Gücü#!\n" #NT
+ MILITARY_STRENGTH_US_ATTACKER_LABEL: "#T Saldırganların Askeri Gücü#!\n" #NT
+ MILITARY_STRENGTH_OUR_LABEL: "#T Askeri Gücümüz#!\n" #NT
+ MILITARY_STRENGTH_THEIR_OUR_TOOLTIP_LABEL: "#T Bize kıyasla askeri güçleri $STRENGTH|V$#!\n" #NT
+ MILITARY_STRENGTH_OUR_ALLIES_LABEL: "\n#S Savunucuların [allies|E]' Askeri Gücü:#!\n" #NT
+ MILITARY_STRENGTH_ALLIES_LABEL: "\n#S [allies|E]'in Askeri Gücü:#!\n" #NT
+ MILITARY_STRENGTH_THEIR_ALLIES_LABEL: "\n#S Saldırganların [allies|E]' Askeri Gücü:#!\n" #NT
+ MILITARY_STRENGTH_BOTH: "#weak Savunma kuvvetleri:#! \n$THEIR$\n\n#weak Saldıran kuvvetler:#! \n$OUR$" #NT
+ MILITARY_STRENGTH_ATTACKER_DEFENDER: "#weak Saldıran kuvvetler:#! \n$THEIR$\n\n#weak Savunan kuvvetler:#! \n$OUR$" #NT
+ MILITARY_STRENGTH_THEIR: "$THEIR$" #NT
+ TITLE_LINE_OF_SUCCESSION_ENTRY: "[CHARACTER.GetUIName]\n" #NT
+ CHARACTER_LINE_OF_SUCCESSION: "\nMevcut [line_of_succession|E]:\n" #NT
+ CHARACTER_LINE_OF_SUCCESSION_ENTRY: "[TITLE.GetName]\n" #NT
+ DISMISS: "Azletmek" #NT
+ DISMISS_ALL: "Hepsini reddet" #NT
+ DISMISS_CS_TT: "#T $DISMISS$#!\nDismiss Bu durum. Aynı tipteki durumlar yine görünecek, yalnızca bu belirli durum gizlenecek.\n\nBu görünümdeki Sıfırla düğmesini kullanarak bu durumu geri getirebilirsiniz." #NT
+ DISMISS_ALL_TT: "#T $DISMISS_ALL$#!" #NT
+ DISMISS_SUGGESTION_TT: "#T $DISMISS$#!\nDismiss Bu öneri. Her [GetDefine('NSuggestions', 'GLOBAL_SPAN_MONTHS')] ayda bir yeni bir öneri görünecektir." #NT
+ UNLANDED_TITLE: "$SUBJECT_TYPE$ / [CHARACTER.GetShortUIName]" #NT
+  #click  #NT
+ RIGHT_CLICK_DISMISS: "#I Kapatmak için sağ tıklayın#!" #NT
+ REALM_TOOLTIP_HOLDER: "[ruler|E]: [TITLE.GetHolder.GetName]\nMevcut [line_of_succession|E]:\n[TITLE.GetLineOfSuccessionDesc]\n" #NT
+ COA_REALM_TOOLTIP_CHARACTER: "#T [CHARACTER.GetPrimaryTitle.GetNameWithUnderlyingNoTooltip|U]#!\n[CHARACTER.GetGovernment.GetName] [CHARACTER.GetPrimaryTitle.GetRankConcept]-[rank|E] [realm|E]\n[ruler|E]: [CHARACTER.GetUIName|U]\nAskeri Güç: [CHARACTER.GetMilitaryStrengthText|V] [soldiers|E]\nDiyar Boyutu: [CHARACTER.RealmSize|V] [counties|E]\n\n#S Succession#!\nVaris Sırası: $SUCCESSION_FORM_NAME$\n\n[line_of_succession|E]:\n[CHARACTER.GetPrimaryTitle.GetLineOfSuccessionDesc]" #NT
+ CHARACTER_WINDOW_REALM_TOOLTIP: "[Character.GetDefaultRealmFlagTooltipNoClickInfo]\n\n[Title.GetClickInfo]" #NT
+ COA_REALM_TOOLTIP_CHARACTER_CLICK_INFO: "#I [Select_CString(CHARACTER.IsShownInCharacterWindow, 'Click to go to location', 'Click to view')]\nEtkileşime geçmek için sağ tıklayın [CHARACTER.GetShortUINameNoTooltip]#!" #NT
+ COA_REALM_TOOLTIP_PRIMARY_TITLE_CLICK_INFO: "#I Birincil Ünvanı görüntülemek için tıklayın [CHARACTER.GetPrimaryTitle.GetNameNoTooltip|V]#!" #NT
+ COA_REALM_TOOLTIP_GUI_CLICK_INFO: "#I [Select_CString(Character.IsShownInCharacterWindow, 'Click to go to location', 'Click to view')]\n [Character.GetShortUINameNoTooltip]#! ile etkileşimde bulunmak için sağ tıklayın" #NT
+ cooltip_spouse_listing: "[spouse|E]: [ROOT.Char.GetPrimarySpouseOrBetrothed.GetName]" #NT
+ cooltip_betrothed_listing: "[betrothed|E]: [ROOT.Char.GetPrimarySpouseOrBetrothed.GetName]" #NT
+ cooltip_concubine_listing: "[concubine|E] /: [ROOT.Char.GetConcubinist.GetName]" #NT
+ cooltip_unmarried_listing: "Evlenmemiş" #NT
+ GLOBAL_OBSERVER: "Gözlemlemek" #NT
+ PLAYER_OBSERVER: "[GetPlayer.GetShortUINameNotMeNoTooltip] ([SelectLocalization(GetPlayer.IsPlayer, 'OBSERVER_PLAYER_NAME', 'OBSERVER_AI')]) olarak gözlemleniyor" #NT
+ OBSERVER_PLAYER_NAME: "[GetPlayer.PlayerName] tarafından oynandı" #NT
+ OBSERVER_AI: "Yapay Zeka" #NT
+ END_OF_COMBAT_CONTRIBUTION_TOOLTIP: "#T Savaş Katkısı #V [BattleSummaryWindow.GetCombatResultData.GetWarContribution( GetPlayer )|=]#!#! tarafından değiştirildi" #NT
+  #AGOT Modified  #NT
+ #CHARACTER_LOCATION_TOOLTIP: "[Character.GetCurrentLocation.GetName]'da yer almaktadır" #NT
+ CHARACTER_LOCATION_TOOLTIP: "[Character.Custom('is_missing_location_loc')]" #NT
+ CHARACTER_IMPRISONED_TOOLTIP: "[imprisoned|E] tarafından [Character.GetImprisonedBy.GetUIName]" #NT
+ CHARACTER_BIRTH_NAME_TOOLTIP: "Doğum adı: [Character.GetOriginalFirstName]" #NT
+ CHARACTER_COURT_POSITIONS_TOOLTIP: "[Character.GetLiege.GetShortUINamePossessive|U] [Character.GetHeldCourtAndCouncilPositionsString]" #NT
+ cooltip_opinion_of_player: "[opinion|E] benden: #P [Character.GetOpinionOf( GetPlayer )|+=]#!" #NT
+ CHARACTER_KILLER_TOOLTIP: "Katil: [Character.GetKiller.GetUIName]" #NT
+ FAITH_COOLTIP_WINDOW: "[Faith.GetAdjective]" #NT
+ CULTURE_COOLTIP_WINDOW: "[Culture.GetName]" #NT
+ CULTURE_COOLTIP_GETNAME: "[Culture.GetNameNoTooltip]" #NT
+ SORT_BY: "Sırala:" #NT
+ FILTER_BY: "Filtre:" #NT
+ DEBUG_TITLE_KEYS: "Ünvan anahtarı ve hukuki geçerlilik:" #NT
+ DEBUG_REGION_KEYS: "Coğrafi bölgeler:" #NT

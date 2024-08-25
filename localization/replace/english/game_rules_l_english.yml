@@ -1,495 +1,443 @@
 ﻿l_english:
- GAME_RULES: "Oyun Kuralları"
- GAME_RULES_HEADER: "Oyun Kuralları"
- GAME_RULE_CATEGORIES: "Oyun Kuralı Filtreleri"
- IRONMAN_LABEL: "Ironman"
- ENABLE_IRONMAN: "Etkinleştir"
- DISABLE_IRONMAN: "Etkinleştirme"
- IRONMAN_ENABLED: "Ironman Açık"
- IRONMAN_DISBLED: "Ironman Kapalı"
- IRONMAN_ENABLED_NO_HEADER: "#P Açıldı#!"
- IRONMAN_DISABLED_NO_HEADER: "Kapatıldı"
- ACHIEVEMENTS_LABEL: "Başarımlar"
- ACHIEVEMENTS_EXPLANATION: "#indent_newline:2 Başarılar yalnızca şu durumlarda açılabilir:\n$EFFECT_LIST_BULLET$Tek Oyunculu oynuyorsanız\n$EFFECT_LIST_BULLET$Hükümdar Tasarımcısı'nda oluşturulmuş bir karakteri oynuyorsanız, bu karakter $RULER_DESIGNER_POINTS_LIMIT_VALUE$#! puan sınırını aşmamışsa"
- ACHIEVEMENTS_ENABLED: "#T Başarım Mevcut\n#!Achievements tanesi şu anda oyun oynarken açılabilir.\n\n$ACHIEVEMENTS_EXPLANATION$"
- ACHIEVEMENTS_DISABLED: "#T Başarımlar Mevcut Değil#!\nAchievements Oyun oynarken şu anda kilidi açılamıyor.\n\n$ACHIEVEMENTS_EXPLANATION$"
- ACHIEVEMENTS_ENABLED_NO_HEADER: "#P Mevcut#!"
- ACHIEVEMENTS_DISABLED_NO_HEADER: "#N Mevcut Değil#!"
- GAME_RULE_BLOCKS_ACHIEVEMENTS: "Bu oyun kuralı Başarıları devre dışı bırakır"
- START_IRONMAN_SAVE: "Ironman'i başlat"
- IRONMAN_PAUSE_MENU_EXPLANATION: "Oyun otomatik olarak kaydedilir. Karakter değiştirmek veya Multiplayer oynamak yasaktır."
- GAME_SETUP_IRONMAN_SINGLEPLAYER_ONLY: "Ironman yalnızca Tek Oyunculu modda oynanabilir"
- IRONMAN_PAUSE_MENU_TOOLTIP: "#T $IRONMAN_LABEL$ #!\n$IRONMAN_PAUSE_MENU_EXPLANATION$"
- ACHIEVEMENT_FILTER_ALL_TOOLTIP: "Başarıların tam listesini göster"
- ACHIEVEMENT_FILTER_UNLOCKED_TOOLTIP: "Başarılar listesini filtreleyerek kilidi açılmış Başarıları görüntüleyin"
- ACHIEVEMENT_FILTER_LOCKED_TOOLTIP: "Kilitli Başarıları görüntülemek için Başarılar listesini filtreleyin"
- ACHIEVEMENT_FILTER_POSSIBLE_TOOLTIP: "Mevcut oyunda mümkün olan tüm Başarıları görüntülemek için Başarılar listesini filtreleyin"
-  
- ACHIEVEMENTS_DISABLED_SAVEGAME: "@warning_icon! #X Başarılar kullanılamıyor#!\nAchievements bu kayıtlı oyun için devre dışı bırakıldı"
- ACHIEVEMENTS_WILL_BE_DISABLED_SWITCH_CHARACTER: "@warning_icon! #X Farklı bir karaktere veya gözlemci moduna geçmek başarıları devre dışı bırakacaktır#!"
- ACHIEVEMENTS_WILL_BE_DISABLED_OBSERVER_MODE: "@warning_icon! #X Gözlemci modunda oynamak başarıları devre dışı bırakacaktır#!"
- ACHIEVEMENTS_WILL_BE_DISABLED_MULTIPLAYER: "@warning_icon! #X Oyununuzu çok oyunculuya açmak başarıları devre dışı bırakacaktır#!"
- ACHIEVEMENTS_DEBUG_MODE_WARNING: "@warning_icon! #X Hata ayıklama modu şu anda etkin - herhangi bir konsol komutu veya hata ayıklama eylemi, oyun boyunca başarıları devre dışı bırakacaktır#!"
-  
- GAME_RULES_PRESET_DROPDOWN_NO_SELECTED_BODY: "Kaydedilmiş Ön Ayarınız yok"
- GAME_RULES_PRESET_DROPDOWN_NO_SELECTED: "Kaydedilmiş bir ön ayarı seçin"
- SAVE_PRESET_HEADER: "Ön Ayarı Kaydet"
-  
- SAVE_PRESET_SAVE_AS_LABEL: "Ön ayarı şu şekilde kaydet:"
- DELETE_SELECTED_PRESET_BUTTON_TOOLTIP: "Seçili ön ayarı sil"
- DELETE_PRESET_WITH_NAME_BUTTON_TOOLTIP: "Ön ayarı sil [JominiGameRules.GetPresetSaveName|i]"
- SAVE_PRESET_BUTTON_TOOLTIP: "Ön ayarı kaydet"
- OVERWRITE_PRESET_BUTTON_TOOLTIP: "Ön ayarın üzerine yaz [JominiGameRules.GetPresetSaveName|i]"
-  
- OVERWRITE_GAME_RULES_PRESET_TITLE: "Üzerine Yazma Kuralları Ön Ayarı"
- OVERWRITE_GAME_RULES_PRESET_BODY: "$PRESET_NAME|i$ ön ayarının üzerine yazmak istediğinizden emin misiniz?"
- OVERWRITE_GAME_RULES_PRESET_ACCEPT: "Üzerine yaz"
- DELETE_GAME_RULES_PRESET_TITLE: "Kural Ön Ayarını Sil"
- DELETE_GAME_RULES_PRESET_BODY: "$PRESET_NAME|i$ ön ayarını silmek istediğinizden emin misiniz?"
- DELETE_GAME_RULES_PRESET_ACCEPT: "Silmek"
-  
- GAME_RULES_CATEGORY_DROPDOWN_NONE_SELECTED: "bir kategori seç"
- game_rule_category_none: "Tüm"
-  
- GAME_RULES_PRESET_DIFFICULTY: "Zorluk: [GameRuleSetting.GetName]"
-  
- ACHIEVEMENT_FILTER_BUTTON_ALL: "Tüm"
- ACHIEVEMENT_FILTER_BUTTON_UNLOCKED: "Kilitli değil"
- ACHIEVEMENT_FILTER_BUTTON_LOCKED: "Kilitli"
- ACHIEVEMENT_FILTER_BUTTON_POSSIBLE: "Olası"
- ACHIEVEMENT_FILTER_SHOW: "Başarıları Göster:"
-  
- game_rule_category_difficulty: "Zorluk"
- game_rule_category_titles: "Unvanlar ve Bölge"
- game_rule_category_multiplayer: "Çok oyunculu"
- game_rule_category_health: "Sağlık"
- game_rule_category_tweaks: "Ayarlamalar"
- game_rule_category_flavor: "Lezzet"
- game_rule_category_historicity: "Tarihsellik"
- game_rule_category_game_modes: "Oyun modları"
- game_rule_category_ai: "Yapay Zeka"
- game_rule_category_setup: "Kurmak"
- game_rule_category_culture: "Kültür"
- game_rule_category_faith: "İnanç"
-  
- rule_difficulty: "Zorluk"
- setting_easy_difficulty: "#high Kolay#!"
- setting_easy_difficulty_desc: "Hastalıkların, düşmanca planların ve stresin etkisini azaltmak gibi bonuslar alacaksınız. Ayrıca Fraksiyonlarla başa çıkmak daha kolay olacak."
- setting_very_easy_difficulty: "#high Çok Kolay#!"
- setting_very_easy_difficulty_desc: "Hastalıkların, düşmanca planların ve stresin etkisini azaltmak gibi önemli bonuslar alacaksınız. Ayrıca Fraksiyonları idare etmek çok daha kolay olacak."
- setting_normal_difficulty: "Normal"
- setting_normal_difficulty_desc: "Hiçbir önemli bonus olmadan, eşit bir oyun alanında oynayacaksınız."
-  
- rule_culture_conversion_speed: "Kültür Dönüşüm Hızı"
- setting_default_culture_conversion_speed: "Varsayılan"
- setting_default_culture_conversion_speed_desc: "Dönüşüm hızı değişmedi."
- setting_faster_culture_conversion_speed: "#high Daha hızlı#!"
- setting_faster_culture_conversion_speed_desc: "Hız artırıldı, dönüşümler yaklaşık yarı yarıya kısaldı."
- setting_significantly_faster_culture_conversion_speed: "#high Önemli ölçüde daha hızlı#!"
- setting_significantly_faster_culture_conversion_speed_desc: "Hız önemli ölçüde artırıldı, dönüşümler yaklaşık dörtte bir oranında kısaldı."
- setting_significantly_slower_culture_conversion_speed: "#high Önemli ölçüde daha yavaş#!"
- setting_significantly_slower_culture_conversion_speed_desc: "Hız önemli ölçüde azaldığından, dönüşüm yaklaşık dört kat daha uzun sürüyor."
- setting_slower_culture_conversion_speed: "#high Daha yavaş#!"
- setting_slower_culture_conversion_speed_desc: "Hız azaltılarak dönüşümün kabaca iki kat daha fazla zaman alması sağlanır."
-  
- GAME_RULE_FASTER_REASON: "Oyun Kuralı: #P x#![SCOPE.ScriptValue('faster_game_rule_value')|P0]"
- GAME_RULE_SIGNIFICANTLY_FASTER_REASON: "Oyun Kuralı: #P x#![SCOPE.ScriptValue('significantly_faster_game_rule_value')|P0]"
- GAME_RULE_SLOWER_REASON: "Oyun Kuralı: #N x#![SCOPE.ScriptValue('slower_game_rule_value')|N]"
- GAME_RULE_SIGNIFICANTLY_SLOWER_REASON: "Oyun Kuralı: #N x#![SCOPE.ScriptValue('significantly_slower_game_rule_value')|N]"
-  
- rule_faith_conversion_speed: "İnanç Dönüşüm Hızı"
- setting_default_faith_conversion_speed: "Varsayılan"
- setting_default_faith_conversion_speed_desc: "$setting_default_culture_conversion_speed_desc$"
- setting_faster_faith_conversion_speed: "#high Daha hızlı#!"
- setting_faster_faith_conversion_speed_desc: "$setting_faster_culture_conversion_speed_desc$"
- setting_significantly_faster_faith_conversion_speed: "#high Önemli ölçüde daha hızlı#!"
- setting_significantly_faster_faith_conversion_speed_desc: "$setting_significantly_faster_culture_conversion_speed_desc$"
- setting_significantly_slower_faith_conversion_speed: "#high Önemli ölçüde daha yavaş#!"
- setting_significantly_slower_faith_conversion_speed_desc: "$setting_significantly_slower_culture_conversion_speed_desc$"
- setting_slower_faith_conversion_speed: "#high Daha yavaş#!"
- setting_slower_faith_conversion_speed_desc: "$setting_slower_culture_conversion_speed_desc$"
-  
- rule_gender_equality: "Cinsiyet Eşitliği"
- setting_default_gender_equality: "Varsayılan"
- setting_default_gender_equality_desc: "Cinsiyet kuralları Cinsiyet Yasaları ve İnanç Doktrinleri tarafından belirlenir."
- setting_full_gender_equality: "#high Eşittir#!"
- setting_full_gender_equality_desc: "Cinsiyete bağlı tüm Doktrinler ve Yasalar Eşit olarak ayarlanmıştır. Aynı kurallar ve haklar, cinsiyete bakılmaksızın tüm karakterler için geçerlidir."
- setting_inversed_gender_equality: "#high Ters çevrilmiş#!"
- setting_inversed_gender_equality_desc: "Cinsiyetle ilgili tüm Doktrinler ve Yasalar tersine çevrilmiştir. "Varsayılan" altında erkeklere uygulanan kurallar ve haklar artık kadınlara uygulanır ve tam tersi."
-  
- rule_sexuality_distribution: "Cinsellik Dağılımı"
- setting_sexuality_distribution_default: "Heteroseksüellik"
- setting_sexuality_distribution_default_desc: "En yaygın cinsellik Heteroseksüellik iken, Homoseksüellik, Biseksüellik ve Aseksüellik daha az yaygındır."
- setting_sexuality_distribution_equal: "#high Eşittir#!"
- setting_sexuality_distribution_equal_desc: "Oyundaki tüm Cinsellikler eşit derecede yaygındır."
- setting_sexuality_distribution_most_common_homosexuality: "#high Eşcinsellik#!"
- setting_sexuality_distribution_most_common_homosexuality_desc: "En yaygın cinsellik eşcinselliktir, Heteroseksüellik, Biseksüellik ve Aseksüellik ise daha az yaygındır."
- setting_sexuality_distribution_most_common_bisexuality: "#high Biseksüellik#!"
- setting_sexuality_distribution_most_common_bisexuality_desc: "En yaygın cinsellik biseksüelliktir, Heteroseksüellik, Homoseksüellik ve Aseksüellik ise daha az yaygındır."
- setting_sexuality_distribution_most_common_asexuality: "#high Aseksüellik#!"
- setting_sexuality_distribution_most_common_asexuality_desc: "En yaygın cinsellik aseksüelliktir, Heteroseksüellik, Homoseksüellik ve Biseksüellik ise daha az yaygındır."
-  
- rule_same_sex_relations: "Eşcinsel İlişkiler"
- setting_default_same_sex_relations: "Varsayılan"
- setting_default_same_sex_relations_desc: "Eşcinsel ilişkilere bakış açısı her Mezhep'in $doctrine_homosexuality_name$ Doktrinine göre değişmektedir."
- setting_accepted_same_sex_relations: "#high Kabul Edildi#!"
- setting_accepted_same_sex_relations_desc: "Eşcinsel ilişkiler tüm dinlerce tam anlamıyla kabul görmektedir."
-  
- rule_same_sex_marriage: "Aynı Cinsiyetten Evlilik"
- setting_default_same_sex_marriage: "Varsayılan"
- setting_default_same_sex_marriage_desc: "Eşcinsel evlilik mümkün değildir."
- setting_accepted_same_sex_marriage: "#high Kabul Edildi#!"
- setting_accepted_same_sex_marriage_desc: "Eşcinsel evlilik ve cariyelik, İnancı bunu kabul eden ve kültürü cariyeliği uygulayan herkes için geçerlidir. #EMP herkes için etkinleştirmek için#! $rule_same_sex_relations$ Oyun Kuralını $setting_accepted_same_sex_relations$ olarak ayarlayın!"
-  
- rule_adoption: "Benimseme"
- setting_default_adoption: "Varsayılan"
- setting_default_adoption_desc: "[adoption|E]'ın kilidi, [GetTrait('compassionate').GetName(GetNullCharacter)] [trait|E], belirli [culture_traditions|E], kısır ve çocuksuz olmak veya eşcinsel evlilikle açılır."
- setting_no_adoption: "#high Yasak#!"
- setting_no_adoption_desc: "[adoption|E] [interaction|E] her koşulda devre dışı bırakılacak."
- setting_adoption_always_allowed: "#high Her zaman izin verilir#!"
- setting_adoption_always_allowed_desc: "[adoption|E] [interaction|E], evli olmayan veya evliliklerinde baskın partner olan tüm karakterlere açık olacaktır."
-  
- rule_randomized_faiths: "Rastgele İnançlar"
- setting_randomized_faiths_off: "Kapalı"
- setting_randomized_faiths_off_desc: "Karakterler ve İlçelerin tarihi İnançları vardır."
- setting_randomized_faiths_on: "#high Açık#!"
- setting_randomized_faiths_on_desc: "Karakterler ve İlçeler rastgele İnançlara atanır. Oyundaki tüm İnançlar mevcuttur."
-  
- rule_faith_acceptance: "İnanç Kabulü"
- setting_default_faith_acceptance: "Varsayılan"
- setting_default_faith_acceptance_desc: "Bir Mezhep'in diğer Mezheplere karşı tavrı, onların doktrinleri tarafından belirlenir."
- setting_full_faith_acceptance: "#high Tam#!"
- setting_full_faith_acceptance_desc: "Tüm İnançlar diğer İnançlara karşı tam kabule sahiptir. Farklı bir İnanca sahip olmanın Görüş cezası yoktur."
-  
- rule_ai_embarkation_cost: "YZ Biniş Maliyeti"
- setting_regular_embarkation_costs: "Varsayılan"
- setting_regular_embarkation_costs_desc: "Yapay zeka da oyuncu gibi [gold_i][gold|E] ile [embark|E] arasında ödeme yapmak zorundadır."
- setting_no_ai_embarkation_costs: "#high Hiçbiri#!"
- setting_no_ai_embarkation_costs_desc: "Yapay zeka, oyuncunun aksine [gold_i][gold|E] ila [embark|E] ödeme yapmaz."
-  
- rule_domain_limit_tweaks: "Mülk Sınırı"
- setting_domain_limit_default: "Varsayılan"
- setting_domain_limit_default_desc: "[domain_limit|E] tüm [rulers|E]'ler için değişmez."
- setting_domain_limit_plus_one: "#high +1#!"
- setting_domain_limit_plus_one_desc: "[domain_limit|E], her [rulers|E] için bir artırılır."
- setting_domain_limit_plus_two: "#high +2#!"
- setting_domain_limit_plus_two_desc: "Tüm [rulers|E]'ler için [domain_limit|E] iki artırılır."
- setting_domain_limit_plus_three: "#high +3#!"
- setting_domain_limit_plus_three_desc: "[domain_limit|E], tüm [rulers|E]'ler için üç artırılır."
- setting_domain_limit_minus_one: "#high -1#!"
- setting_domain_limit_minus_one_desc: "[domain_limit|E], tüm [rulers|E]'ler için #EMP'in #!'ye bire indirilmesiyle elde edilir."
- setting_domain_limit_minus_two: "#high -2#!"
- setting_domain_limit_minus_two_desc: "Tüm [rulers|E]'ler için [domain_limit|E], #EMP'in #! ile ikiye indirgenmesiyle elde edilir."
- setting_domain_limit_minus_three: "#high -3#!"
- setting_domain_limit_minus_three_desc: "Tüm [rulers|E] için [domain_limit|E], #EMP'in #!'nin üçe indirgenmesiyle elde edilir."
-  
- rule_random_nickname_frequency: "Rastgele Takma Ad Sıklığı"
- setting_random_nickname_frequency_default: "Varsayılan"
- setting_random_nickname_frequency_default_desc: "Hükümdarlerde varsayılan sıklıkta rastgele [nicknames|E] belirir."
- setting_random_nickname_frequency_halved: "#high Yarıya İndirildi#!"
- setting_random_nickname_frequency_halved_desc: "Rastgele [nicknames|E] yarısı kadar sıklıkta görünür."
- setting_random_nickname_frequency_quartered: "#high Dörde bölünmüş#!"
- setting_random_nickname_frequency_quartered_desc: "Rastgele [nicknames|E] dörtte bir oranında daha az görünür."
- setting_random_nickname_frequency_none: "#high Devre Dışı#!"
- setting_random_nickname_frequency_none_desc: "Rastgele [nicknames|E] görünmeyecektir."
- setting_random_nickname_frequency_doubled: "#high İki katına çıktı#!"
- setting_random_nickname_frequency_doubled_desc: "Rastgele [nicknames|E] iki kat daha sık görünür."
-  
- rule_random_ruler_placement: "Rastgele Hükümdar Yerleşimi"
- setting_random_ruler_placement_off: "Kapalı"
- setting_random_ruler_placement_off_desc: "Yöneticilerin tarihsel Unvanları ve Bölgeleri vardır."
- setting_random_ruler_placement_on: "#high Açık#!"
- setting_random_ruler_placement_on_desc: "Hükümdarlar haritaya rastgele yerleştirilir. Diyarlar büyük ölçüde aynıdır, ancak Unvanlar farklı hükümdarlar tarafından tutulur."
- setting_random_ruler_placement_on_conversion: "#high (Dönüşüm) Üzerinde#!"
- setting_random_ruler_placement_on_conversion_desc: "Hükümdarlar haritaya rastgele yerleştirilir. Tarihsel sahibinin İnancına dönüşürler."
-  
- rule_diplomatic_range: "Diplomatik Menzil"
- setting_default_diplomatic_range: "Varsayılan"
- setting_default_diplomatic_range_desc: "Diplomatik menzil değişmiyor."
- setting_restricted_diplomatic_range: "#high Kısıtlı#!"
- setting_restricted_diplomatic_range_desc: "Diplomatik menzil daha da kısıtlandığından, yerel olmayan etkileşimler çok daha nadir hale geliyor."
- setting_unrestricted_diplomatic_range: "#high Sınırsız#!"
- setting_unrestricted_diplomatic_range_desc: "Diplomatik menzil kapatıldı, böylece haritadaki herkes herkesle etkileşime girebiliyor."
-  
- rule_minor_disease_frequency: "Küçük Hastalıklar"
- setting_default_minor_disease_frequency: "Varsayılan"
- setting_default_minor_disease_frequency_desc: "Küçük rahatsızlıklar normal şekilde ortaya çıkacaktır."
- setting_fewer_minor_disease_frequency: "#high Daha az#!"
- setting_fewer_minor_disease_frequency_desc: "Küçük rahatsızlıklar daha az görülecek."
-  
- rule_de_jure_requirement: "De Jure Gerekliliği"
- setting_on_de_jure_requirement: "#high Açık#!"
- setting_on_de_jure_requirement_desc: "De Jure topraklara sahip unvanlar, bir karakterin krallığı içinde unvana ait De Jure topraklara sahip olmaması durumunda sonunda yok edilecektir."
- setting_on_limited_de_jure_requirement: "(Sınırlı) Üzerinde"
- setting_on_limited_de_jure_requirement_desc: "De Jure topraklara sahip unvanlar, bir karakter kendi krallığında unvana ait De Jure topraklara sahip değilse sonunda yok edilecektir. Oyuncunun Birincil unvanı asla yok edilmeyecektir."
- setting_off_de_jure_requirement: "#high İndirim#!"
- setting_off_de_jure_requirement_desc: "De jure arazisi olan tapular asla yok olmaz."
- de_jure_requirement_title: "[title_to_destroy.GetName] Hükmen yenil!"
- de_jure_requirement_desc: "Artık [title_to_destroy.GetNameNoTierNoTooltip]'ın hükümdarı olduğumu iddia edemem, çünkü De Jure topraklarının hiçbirine sahip değilim."
-  
- rule_empire_obscurity_requirement: "İmparatorluk Belirsizliği"
- setting_on_empire_obscurity_requirement: "#high Açık#!"
- setting_on_empire_obscurity_requirement_desc: "[de_jure|E] [empires|E], sahibi De Jure [counties|E]'sinin en az %20'sini kontrol etmediği sürece yok edilecektir."
- setting_off_empire_obscurity_requirement: "Kapalı"
- setting_off_empire_obscurity_requirement_desc: "[empires|E], sahibinin ne kadar [de_jure|E] arazisi olduğuna bakılmaksızın varlığını sürdürecektir."
- game_rule.4.t: "[falling_empire.GetBaseNameNoTooltip]'ın belirsizliği"
- game_rule.4.desc: "Sevgili imparatorluğum [falling_empire.GetBaseName]'ın düştüğünü ve çok uzaklara düştüğünü inkar edemem...\n\nGeleneksel bölgelerinin neredeyse hiçbirini kontrol edemiyorum. Kendi kendisinin gölgesi olan imparatorluğum yavaş ama emin adımlarla karanlığa doğru kayboluyor."
- game_rule.4.a: "Sadece biraz daha zamana ihtiyacım var!"
- game_rule.4.b: "Elveda tatlı imparatorluk..."
-  
- rule_multiplayer_murder_schemes: "Çok Oyunculu: Cinayet Planları"
- setting_default_multiplayer_murder_schemes: "Varsayılan"
- setting_default_multiplayer_murder_schemes_desc: "Düşmanca Planlar oyunculara ve ailelerine karşı kullanılabilir."
- setting_no_players_multiplayer_murder_schemes: "#high Oyuncu Yok#!"
- setting_no_players_multiplayer_murder_schemes_desc: "Oyuncular diğer oyunculara karşı Düşmanca Planlar başlatamazlar."
- setting_no_player_families_multiplayer_murder_schemes: "#high Oyuncu Ailesi Yok#!"
- setting_no_player_families_multiplayer_murder_schemes_desc: "Oyuncular diğer oyunculara veya yakın aile üyelerine karşı Düşmanca Planlar başlatamazlar."
-  
- rule_realm_stability: "Diyar İstikrarı"
- setting_default_realm_stability: "Varsayılan"
- setting_default_realm_stability_desc: "Varsayılan [factions|E] miktarı ortaya çıkacaktır."
- setting_lesser_realm_stability: "#high Daha Az Kararlılık#!"
- setting_lesser_realm_stability_desc: "Daha yüksek miktarda [factions|E] ortaya çıkacaktır."
- setting_higher_realm_stability: "#high Daha Yüksek Kararlılık#!"
- setting_higher_realm_stability_desc: "Daha düşük miktarda [factions|E] ortaya çıkacaktır."
- setting_extreme_realm_stability: "#high Aşırı İstikrar#!"
- setting_extreme_realm_stability_desc: "Çok düşük miktarda [factions|E] ortaya çıkacaktır."
-  
- rule_custom_kingdoms: "Özel Krallıklar"
- setting_on_custom_kingdoms: "Açık"
- setting_on_custom_kingdoms_desc: "Özel, tarihsel olmayan Krallıklar ve İmparatorlukların yaratılmasına izin verilir."
- setting_off_custom_kingdoms: "#high İndirim#!"
- setting_off_custom_kingdoms_desc: "Özel, tarihsel olmayan Krallıklar ve İmparatorlukların yaratılması yasaktır."
-  
- rule_casus_belli_costs: "Casus Belli Maliyetleri"
- setting_default_casus_belli_costs: "Varsayılan"
- setting_default_casus_belli_costs_desc: "Casus Bellis'i ilan etmek Prestij veya Dindarlık gibi kaynaklara ihtiyaç duyar."
- setting_no_cost_casus_belli_costs: "#high Ücretsiz#!"
- setting_no_cost_casus_belli_costs_desc: "Casus Bellis'in kullanımı ücretsizdir ve herhangi bir maliyete neden olmaz."
-  
- rule_end_date: "Bitiş tarihi"
- setting_1453_end_date: "1453"
- setting_1453_end_date_desc: "Oyun 1453'te sona erecek."
- setting_no_end_date_end_date: "#high Bitiş Tarihi Yok#!"
- setting_no_end_date_end_date_desc: "Oyun belirli bir tarihte sonlanmayacak."
-  
- rule_generate_families: "Aileler Oluşturun"
- setting_on_generate_families: "Açık"
- setting_on_generate_families_desc: "Kayıtlı bir ailesi olmayan çoğu toprak sahibi tarihi karakterin bir eşi ve onlar için üretilmiş üç çocuğu olacaktır. Bu erken bir [game_over|E] riskini azaltır."
- setting_off_generate_families: "#high Kapalı#!"
- setting_off_generate_families_desc: "Kayıtlı bir ailesi olmayan toprak sahibi tarihi karakterler için bir aile oluşturulmayacaktır. Bu, erken [game_over|E] riskini artırır."
- setting_on_generate_families_ai_only: "#high Açık (Sadece YZ)#!"
- setting_on_generate_families_ai_only_desc: "Kayıtlı bir ailesi olmayan çoğu karaya çıkmış tarihi YZ karakterinin bir eşi ve onlar için üretilmiş üç çocuğu olacak. Bu erken [game_over|E] riskini artırır."
-  
- rule_mongol_invasion: "Moğol İstilası"
- setting_default_mongol_invasion: "Varsayılan"
- setting_default_mongol_invasion_desc: "Moğollar 1200 yılı civarında istila edecekler."
- setting_never_mongol_invasion: "#high Asla#!"
- setting_never_mongol_invasion_desc: "Moğollar istila etmeyecek."
- setting_random_mongol_invasion: "#high Rastgele#!"
- setting_random_mongol_invasion_desc: "Moğollar rastgele bir tarihte istilaya uğrayacaklar."
-  
- rule_random_harm: "Rastgele Zarar"
- setting_harm_dangerous: "Tehlikeli"
- setting_harm_dangerous_desc: "Kazalar, kötü şans ve Kaderin değişken kaprisleri rastgele [character_death_death|E], [GetTrait('incapable').GetName(GetNullCharacter)] [trait|E] ve [health|E] kaybına neden olabilir."
- setting_harm_illusion_of_safety: "#high Güvenlik Yanılsaması#!"
- setting_harm_illusion_of_safety_desc: "Rastgele [character_death_death|E] veya devre dışı bırakma olayları çok daha nadirdir. Ta ki onlar olmayana kadar."
- setting_harm_safe: "#high Güvenli#!"
- setting_harm_safe_desc: "Rastgele zararlı olaylar [characters|E]'ı öldürmez veya sakat bırakmaz. Özellikle tehlikeli durumlarda, diğer olaylarda yine de erken ölebilir."
- setting_harm_tragic: "#high Trajik#!"
- setting_harm_tragic_desc: "Sadece İyiler genç yaşta ölmez — artık siz de genç yaşta ölebilirsiniz; herkes için rastgele zararlı olayların yaşanma olasılığı artırıldı!"
- setting_harm_spiteful: "#high Kin dolu#!"
- setting_harm_spiteful_desc: "Kader, acımasız gazabını [characters|E] önemli kişiye odaklıyor: yüksek [skills|E]'e sahip olanlar, kalıtsal [traits|E]'ye sahip olanlar, önemli başarılara sahip olanlar, vb."
- setting_harm_tragically_spiteful: "#high Trajik Bir Şekilde Kin Tutmuş#!"
- setting_harm_tragically_spiteful_desc: "Herkesin rastgele zarar verici olaylara maruz kalma şansı belirgin şekilde artar, ancak özellikle #EMP not#!. olan herkesin"
-  
- rule_random_harm_target: "Rastgele Zarar Hedefi"
- setting_random_harm_boilerplate: "[health|E]'dan [characters|E]'i rastgele öldüren, etkisiz hale getiren veya yaralayan olaylar meydana gelebilir."
- setting_harm_target_all: "Herhangi biri"
- setting_harm_target_all_desc: "$setting_random_harm_boilerplate$ herhangi biri $game_concept_character$."
- setting_harm_target_player_only: "Sadece Oyuncu"
- setting_harm_target_player_only_desc: "Yalnızca $setting_random_harm_boilerplate$ oyuncu."
- setting_harm_target_ai_only: "Sadece YZ"
- setting_harm_target_ai_only_desc: "$setting_random_harm_boilerplate$ yalnızca yapay zeka."
-  
- rule_exclave_independence: "Eksklav Bağımsızlığı"
- setting_off_exclave_independence: "#high İndirim#!"
- setting_off_exclave_independence_desc: "Bağımsız Yöneticiler dünyanın herhangi bir yerinde eksklavlara (bağlantısız topraklar) sahip olabilirler."
- setting_limited_exclave_independence: "#high Sınırlı#!"
- setting_limited_exclave_independence_desc: "Bağımsız Yöneticilerin barış halindeki toprakları, bir İlçe, deniz yolu veya De Jure topraklarının bir parçası aracılığıyla Başkent bölgesine bağlanmadığı sürece halefiyet halinde kaldırılacaktır."
- setting_significant_exclave_independence: "#high Önemli#!"
- setting_significant_exclave_independence_desc: "Bağımsız Hükümdarların barış halindeki toprakları, deniz yoluyla veya De Jure topraklarının bir parçası aracılığıyla birbirine bağlı olmadıkları sürece halefiyet halinde kaldırılacaktır."
- setting_total_exclave_independence: "#high Toplam#!"
- setting_total_exclave_independence_desc: "Barış halindeki Bağımsız Hükümdarların toprakları, deniz yoluyla birbirlerine bağlı olmadıkları sürece halefiyet halinde kaldırılacak."
- setting_ai_limited_exclave_independence: "#high Sınırlı (Sadece YZ)#!"
- setting_ai_limited_exclave_independence_desc: "Bağımsız YZ Yöneticilerinin barış halindeki toprakları, bir İlçe, bir deniz yolu veya De Jure topraklarının bir parçası aracılığıyla Başkent bölgesine bağlanmadığı sürece halefiyet halinde kaldırılacaktır."
- setting_ai_significant_exclave_independence: "Önemli (Yalnızca YZ)"
- setting_ai_significant_exclave_independence_desc: "Barış halindeki Bağımsız Yapay Zeka Hükümdarlarının dış bölgeleri, bir deniz yolu veya De Jure bölgesinin bir kısmı aracılığıyla bağlanmadıkları sürece, ardı ardına kaldırılacaktır."
- setting_ai_total_exclave_independence: "#high Toplam (Yalnızca YZ)#!"
- setting_ai_total_exclave_independence_desc: "Barış halindeki Bağımsız Yapay Zeka Hükümdarlarının toprakları, deniz yoluyla birbirlerine bağlı olmadıkları sürece halefiyet halinde kaldırılacak."
-  
- rule_regional_heresy: "Bölgesel Sapkınlıklar"
- setting_default_regional_heresy: "Varsayılan"
- setting_default_regional_heresy_desc: "Bazı bölgelerde ortaya çıkan sapkınlıkların, İngiltere'deki Lollardy gibi, tarihi sapkınlıklar olma olasılığı daha yüksektir."
- setting_strict_regional_heresy: "#high Sıkı#!"
- setting_strict_regional_heresy_desc: "Belli bölgelerde ortaya çıkan sapkınlıkların hemen hemen hepsi tarihi sapkınlıklar olacaktır."
- setting_relaxed_regional_heresy: "#high Rahat#!"
- setting_relaxed_regional_heresy_desc: "Sapkınlık salgınlarının bölgesel bir ağırlığının olmaması, daha çeşitli sapkınlıkların ortaya çıkmasına neden olmaktadır."
-  
- rule_hungarian_migration: "Macar Göçü"
- setting_launch_historical: "#high Tarihsel#!"
- setting_launch_historical_desc: "Yapay zeka 890 ile 910 yılları arasında Macar Göçü'nü başlatmaya çalışacak."
- setting_launch_immediate: "Hemen"
- setting_launch_immediate_desc: "Macar Göçü oyun başlangıcında aktif olacaktır."
- setting_launch_random: "#high Rastgele#!"
- setting_launch_random_desc: "Yapay zeka, oyun başlangıcından itibaren 5 yıl ile 910 yıl arasında herhangi bir zamanda Macar Göçü'nü başlatmaya çalışacaktır."
- setting_launch_off: "#high Yalnızca Oyuncu#!"
- setting_launch_off_desc: "YZ, Macar Göçünü başlatmaya çalışmayacaktır."
-  
- rule_matrilineal_marriages: "Anaerkil Evlilikler"
- setting_default_matrilineal_marriages: "Varsayılan"
- setting_default_matrilineal_marriages_desc: "Yapay zeka karakterleri oyuncunun yakın ailesindense, [dynasty_prestige_level_4|L] [dynasty|E], [GetLaw('equal_law').GetName] diyardansa veya güçlüyse [rulers|E], [GetFaithDoctrine('doctrine_gender_female_dominated').GetBaseName] diyardaysa [matrilineal|E] evlilik ayarlayacaktır."
- setting_matrilineal_marriages_no_player_exception: "#high Varsayılan (Oyuncu istisnası yoktur)#!"
- setting_matrilineal_marriages_no_player_exception_desc: "Yapay zeka karakterleri eğer [dynasty_prestige_level_4|L] [dynasty|E] veya [GetLaw('equal_law').GetName] diyarına aitlerse veya güçlülerse [rulers|E]. [GetFaithDoctrine('doctrine_gender_female_dominated').GetBaseName] diyarlar varsayılan olarak Anaerkil'dir."
- setting_matrilineal_marriages_always: "#high Her zaman#!"
- setting_matrilineal_marriages_always_desc: "Yapay zeka karakterleri tüm kadın [dynasty|E] üyeleri için [matrilineal|E] evlilik ayarlamak isteyecektir. #high $setting_default_matrilineal_marriages$#! kurallarında olduğu gibi, yeterince uygun görülürse [patrilineal|E] evlilik yine gerçekleşir."
- setting_matrilineal_marriages_female_and_equal: "#high Kadınların Hakim Olduğu ve Eşit Olduğu#!"
- setting_matrilineal_marriages_female_and_equal_desc: "Yapay zeka karakterleri yalnızca [GetFaithDoctrine('doctrine_gender_female_dominated').GetBaseName] veya [GetLaw('equal_law').GetName] diyarının parçasıysa [matrilineal|E] evlilik ayarlayacaktır. #high $setting_default_matrilineal_marriages$#! kurallarında olduğu gibi, yeterince uygun görülürse [patrilineal|E] evlilik yine gerçekleşecektir."
- setting_matrilineal_marriages_never: "#high Asla#!"
- setting_matrilineal_marriages_never_desc: "Yapay zeka karakterleri, [GetFaithDoctrine('doctrine_gender_female_dominated').GetBaseName] diyarının parçası olmadıkları sürece asla [matrilineal|E] evlilikleri düzenlemeyeceklerdir."
-  
- rule_dlc_fp1_scandinavian_adventurers: "İskandinav Maceracıları"
- setting_fp1_scandi_adventurers_rare: "Nadir"
- setting_fp1_scandi_adventurers_rare_desc: "İskandinav maceraperestler her 15 yılda bir Rusya ve Kuzey Denizi'ni hedef almaya çalışacaklar."
- setting_fp1_scandi_adventurers_occasional: "ara sıra"
- setting_fp1_scandi_adventurers_occasional_desc: "İskandinav maceraperestler her 10 yılda bir Rusya ve Kuzey Denizi'ni hedef almaya çalışacaklar."
- setting_fp1_scandi_adventurers_frequent: "Sık"
- setting_fp1_scandi_adventurers_frequent_desc: "İskandinav maceraperestler her 5 yılda bir Rusya ve Kuzey Denizi'ni hedef almaya çalışacaklar."
- setting_fp1_scandi_adventurers_apocalyptic: "Kıyamet"
- setting_fp1_scandi_adventurers_apocalyptic_desc: "İskandinav maceraperestler her yıl Rusya ve Kuzey Denizi'ni hedef almaya çalışacak, yapay zeka karakterlerinin fırlatılması için belirli özelliklere ihtiyaç duyulmuyor [varangian_adventures|E]."
- setting_fp1_scandi_adventurers_off: "Kapalı"
- setting_fp1_scandi_adventurers_off_desc: "İskandinav maceraperestler hiçbir zaman Rusya'yı veya Kuzey Denizi'ni hedef almaya çalışmayacaklardır."
-  
- rule_hybrid_culture_ai_frequency: "Hibrit Kültür Frekansı"
- setting_default_hybrid_culture_ai_frequency: "Varsayılan"
- setting_default_hybrid_culture_ai_frequency_desc: "Varsayılan [hybrid_cultures|E] miktarı görünecektir."
- setting_less_common_hybrid_culture_ai_frequency: "#high Daha Az Yaygın#!"
- setting_less_common_hybrid_culture_ai_frequency_desc: "Daha az [hybrid_cultures|E] görünecektir."
- setting_none_hybrid_culture_ai_frequency: "#high Hiçbiri#!"
- setting_none_hybrid_culture_ai_frequency_desc: "Oyuncu olmayanların oluşturduğu [hybrid_cultures|E] görünmeyecektir."
-  
- rule_hybrid_culture_ai_restrictions: "Hibrit Kültür Kısıtlamaları"
- setting_default_hybrid_culture_ai_restrictions: "Varsayılan"
- setting_default_hybrid_culture_ai_restrictions_desc: "Oyuncu olmayanların oluşturduğu [hybrid_cultures|E] önemli ölçüde kısıtlanacak #weak (örneğin, mevcut iki Melez kültürün Melezleri ortaya çıkmayacak)#!"
- setting_relaxed_hybrid_culture_ai_restrictions: "#high Rahat#!"
- setting_relaxed_hybrid_culture_ai_restrictions_desc: "Oyuncu olmayanlar tarafından oluşturulan [hybrid_cultures|E], bir dereceye kadar mevcut Hibrit kültürlerden ortaya çıkabilir."
- setting_very_relaxed_hybrid_culture_ai_restrictions: "#high Çok Rahat#!"
- setting_very_relaxed_hybrid_culture_ai_restrictions_desc: "Oyuncu olmayanların oluşturduğu [hybrid_cultures|E]'ın sadece isimsel kısıtlamaları vardır."
-  
- rule_divergent_culture_ai_frequency: "Farklı Kültür Frekansı"
- setting_default_divergent_culture_ai_frequency: "Varsayılan"
- setting_default_divergent_culture_ai_frequency_desc: "Varsayılan [divergent_cultures|E] miktarı görünecektir."
- setting_less_common_divergent_culture_ai_frequency: "#high Daha Az Yaygın#!"
- setting_less_common_divergent_culture_ai_frequency_desc: "Daha az [divergent_cultures|E] görünecektir."
- setting_none_divergent_culture_ai_frequency: "#high Hiçbiri#!"
- setting_none_divergent_culture_ai_frequency_desc: "Oyuncu olmayanların oluşturduğu [divergent_cultures|E] görünmeyecektir."
- setting_relaxed_divergent_culture_ai_frequency: "#high Rahat#!"
- setting_relaxed_divergent_culture_ai_frequency_desc: "[divergent_cultures|E] daha sık görünecek ve daha sert kısıtlamaların çoğu kaldırılacak."
-  
- rule_hybrid_and_divergence_cooldowns: "Iraksak ve Hibrit Kültür Bekleme Süreleri"
- setting_default_hybrid_and_divergence_cooldowns: "Varsayılan"
- setting_default_hybrid_and_divergence_cooldowns_desc: "[cultures|E] ancak #V 100#! yıl var olduktan sonra [diverge|E] olabilir ve #V 50#! yıl var olduktan sonra [hybridize|E] olabilir."
- setting_slower_hybrid_and_divergence_cooldowns: "#high Daha yavaş#!"
- setting_slower_hybrid_and_divergence_cooldowns_desc: "[cultures|E] ancak #V 200#! yıl var olduktan sonra [diverge|E] olabilir ve #V 100#! yıl var olduktan sonra [hybridize|E] olabilir."
- setting_no_hybrid_and_divergence_cooldowns: "#high Soğuma Süresi Yok#!"
- setting_no_hybrid_and_divergence_cooldowns_desc: "[culture|E]'ın [diverge|E] veya [hybridize|E]'ye çıkmasına izin verildiğinde herhangi bir bekleme süresi yoktur."
- setting_faster_hybrid_and_divergence_cooldowns: "#high Daha hızlı#!"
- setting_faster_hybrid_and_divergence_cooldowns_desc: "[cultures|E] ancak #V 50#! yıl var olduktan sonra [diverge|E] olabilir ve #V 25#! yıl var olduktan sonra [hybridize|E] olabilir."
-  
- rule_dissolution_umayyad: "Endülüs'ün düşüşü"
- setting_dissolution_unconstrained: "Limitsiz"
- setting_dissolution_unconstrained_desc: "[dissolution_faction|E] oyunun başından itibaren Endülüs Krallığı'na isabet edebilir"
- setting_dissolution_after_caliph_death: "#high Halifenin Ölümü#!"
- setting_dissolution_after_caliph_death_desc: "[dissolution_faction|E], Sultan Muhammed'in ölümünden sonra yalnızca Endülüs Krallığı'na vurabilir $Abd-al-Rahman$"
- setting_dissolution_historical_date: "#high Geçmiş Zamanlama#!"
- setting_dissolution_historical_date_desc: "[dissolution_faction|E], Endülüs Krallığı için yalnızca 1020 yılından sonra etkinleştirilir"
-  
- rule_dlc_fp3_seljuk_invasion: "Selçuklu İstilası"
- setting_default_seljuk_invasion: "Varsayılan"
- setting_default_seljuk_invasion_desc: "945 yılından bir süre sonra Selçuklular burayı işgal edecektir."
- setting_never_seljuk_invasion: "#high Hiçbir zaman#!"
- setting_never_seljuk_invasion_desc: "Selçuklular saldırmayacak."
- setting_random_seljuk_invasion: "#high Rastgele#!"
- setting_random_seljuk_invasion_desc: "Selçuklular rastgele bir tarihte istilaya uğrayacaklar."
-  
-  #AGOT Modified 
- #rule_black_death_occurrence: "Kara Ölüm Durumu"
- rule_black_death_occurrence: "Büyük Bahar Hastalığı Durumu"
- setting_bd_occurrence_organic: "#high Organik#!"
-  #AGOT Modified 
- #setting_bd_occurrence_organic_desc: "Kara Ölüm, oyunun mevcut durumuna tepki olarak tarihsel olarak mümkün bir senaryoda gerçekleşecek."
- setting_bd_occurrence_organic_desc: "Büyük Bahar Hastalığı, oyunun mevcut durumuna tepki olarak tarihsel olarak mümkün bir senaryoda gerçekleşecektir."
- setting_bd_occurrence_historical: "Tarihi"
-  #AGOT Modified 
- #setting_bd_occurrence_historical_desc: "Kara Ölüm 14. yüzyılda Orta Asya'da başlayacak ve tarihsel olarak popüler ticaret yolları aracılığıyla organik olarak yayılacak. Milano, Pireneler, Polonya ve diğer tarihsel bölgeler bundan daha az etkilenecek."
- setting_bd_occurrence_historical_desc: "Büyük Bahar Hastalığı, MS 209 civarında Westeros'taki bir şehirde başlayacak ve organik olarak yayılacak."
- setting_bd_occurrence_random: "#high Rastgele#!"
-  #AGOT Modified 
- #setting_bd_occurrence_random_desc: "Kara Ölüm haritada tamamen rastgele bir eyalette ortaya çıkacak."
- setting_bd_occurrence_random_desc: "Büyük Bahar Hastalığı haritada tamamen rastgele bir eyalette ortaya çıkacaktır."
-  
-  #AGOT Modified 
- #rule_black_death_frequency: "Kara Ölüm Frekansı"
- rule_black_death_frequency: "Büyük Bahar Hastalığı Sıklığı"
- setting_bd_frequency_once: "Bir kere"
-  #AGOT Modified 
- #setting_bd_frequency_once_desc: "Kara Ölüm, oyunu oynadığınız süre boyunca yalnızca bir kez meydana gelebilir."
- setting_bd_frequency_once_desc: "Büyük Bahar Hastalığı, oyununuz boyunca yalnızca bir kez gerçekleşebilir."
- setting_bd_frequency_unlimited: "#high Sınırsız#!"
-  #AGOT Modified 
- #setting_bd_frequency_unlimited_desc: "Kara Ölüm bir kampanyada sınırsız sayıda ortaya çıkabilir."
- setting_bd_frequency_unlimited_desc: "Büyük Bahar Hastalığı bir kampanyada sınırsız sayıda ortaya çıkabilir."
- setting_bd_frequency_never: "#high Asla#!"
-  #AGOT Modified 
- #setting_bd_frequency_never_desc: "Kara Ölüm asla gerçekleşmeyecek."
- setting_bd_frequency_never_desc: "Büyük Bahar Hastalığı hiçbir zaman gerçekleşmeyecektir."
-  
- rule_other_epidemic_frequency: "Veba Sıklığı"
- setting_epidemic_frequency_normal: "Normal"
- setting_epidemic_frequency_normal_desc: "Vebalar normal bir hızda ortaya çıkacak ve yayılacak."
- setting_epidemic_frequency_often: "#high Sık sık#!"
- setting_epidemic_frequency_often_desc: "Veba salgınları daha sık ortaya çıkacak ve yayılacak."
- setting_epidemic_frequency_very_often: "#high Çok Sık#!"
- setting_epidemic_frequency_very_often_desc: "Vebalar çok daha sık ortaya çıkacak ve yayılacak."
- setting_epidemic_frequency_doomsday: "#high Kıyamet#!"
- setting_epidemic_frequency_doomsday_desc: "Hava miasma ile doludur ve nehirler bozulma ile doludur. Salgın, soluduğunuz havanın ve içtiğiniz suyun ta kendisidir. Ebedi vebadan kurtuluş yoktur."
- setting_epidemic_frequency_rare: "#high Nadir#!"
- setting_epidemic_frequency_rare_desc: "Vebalar nadiren ortaya çıkacak ve daha az sıklıkla yayılacak."
- setting_epidemic_frequency_very_rare: "#high Çok Nadir#!"
- setting_epidemic_frequency_very_rare_desc: "Vebalar çok nadiren ortaya çıkacak ve çok daha az sıklıkla yayılacak."
- setting_epidemic_frequency_disabled: "#high Devre Dışı#!"
- setting_epidemic_frequency_disabled_desc: "Vebalar ortaya çıkmayacak."
-  
- rule_legend_spread_chance: "Efsane Yayılma Şansı"
- setting_legend_spread_chance_normal: "Normal"
- setting_legend_spread_chance_normal_desc: "Efsanelerin yayılma şansı normal olacaktır."
- setting_legend_spread_chance_high: "#high Yüksek#!"
- setting_legend_spread_chance_high_desc: "Efsanelerin komşu illere yayılma şansı daha yüksek olacak."
- setting_legend_spread_chance_very_high: "#high Çok Yüksek#!"
- setting_legend_spread_chance_very_high_desc: "Efsanelerin komşu illere yayılma şansı çok daha yüksek olacak."
- setting_legend_spread_chance_low: "#high Düşük#!"
- setting_legend_spread_chance_low_desc: "Efsanelerin komşu eyaletlere yayılma şansı daha düşük olacak."
- setting_legend_spread_chance_very_low: "#high Çok Düşük#!"
- setting_legend_spread_chance_very_low_desc: "Efsanelerin komşu eyaletlere yayılma şansı çok daha düşük olacak."
-  
- rule_legend_cost: "Efsane Maliyeti"
- setting_legend_cost_normal: "Normal"
- setting_legend_cost_normal_desc: "Efsanelerin normal bir bedeli olacak."
- setting_legend_cost_high: "#high Yüksek#!"
- setting_legend_cost_high_desc: "Efsanelerin fiyatı normalin iki katı olacak."
- setting_legend_cost_very_high: "#high Çok Yüksek#!"
- setting_legend_cost_very_high_desc: "Efsanelerin fiyatı normalden dört kat fazla olacak."
- setting_legend_cost_low: "#high Düşük#!"
- setting_legend_cost_low_desc: "Efsanelerin fiyatı normalin yarısı kadar olacak."
- setting_legend_cost_very_low: "#high Çok Düşük#!"
- setting_legend_cost_very_low_desc: "Efsanelerin fiyatı normalin dörtte biri kadar olacak."
+ GAME_RULES: "Oyun Kuralları" #NT
+ GAME_RULES_HEADER: "Oyun Kuralları" #NT
+ GAME_RULE_CATEGORIES: "Oyun Kuralı Filtreleri" #NT
+ IRONMAN_LABEL: "Ironman" #NT
+ ENABLE_IRONMAN: "Etkinleştir" #NT
+ DISABLE_IRONMAN: "Etkinleştirme" #NT
+ IRONMAN_ENABLED: "Ironman Açık" #NT
+ IRONMAN_DISBLED: "Ironman Kapalı" #NT
+ IRONMAN_ENABLED_NO_HEADER: "#P Açıldı#!" #NT
+ IRONMAN_DISABLED_NO_HEADER: "Kapatıldı" #NT
+ ACHIEVEMENTS_LABEL: "Başarımlar" #NT
+ ACHIEVEMENTS_EXPLANATION: "#indent_newline:2 Başarılar yalnızca şu durumlarda açılabilir:\n$EFFECT_LIST_BULLET$Tek Oyunculu oynuyorsanız\n$EFFECT_LIST_BULLET$Hükümdar Tasarımcısı'nda oluşturulmuş bir karakteri oynuyorsanız, bu karakter $RULER_DESIGNER_POINTS_LIMIT_VALUE$#! puan sınırını aşmamışsa" #NT
+ ACHIEVEMENTS_ENABLED: "#T Başarım Mevcut\n#!Achievements tanesi şu anda oyun oynarken açılabilir.\n\n$ACHIEVEMENTS_EXPLANATION$" #NT
+ ACHIEVEMENTS_DISABLED: "#T Başarımlar Mevcut Değil#!\nAchievements Oyun oynarken şu anda kilidi açılamıyor.\n\n$ACHIEVEMENTS_EXPLANATION$" #NT
+ ACHIEVEMENTS_ENABLED_NO_HEADER: "#P Mevcut#!" #NT
+ ACHIEVEMENTS_DISABLED_NO_HEADER: "#N Mevcut Değil#!" #NT
+ GAME_RULE_BLOCKS_ACHIEVEMENTS: "Bu oyun kuralı Başarıları devre dışı bırakır" #NT
+ START_IRONMAN_SAVE: "Ironman'i başlat" #NT
+ IRONMAN_PAUSE_MENU_EXPLANATION: "Oyun otomatik olarak kaydedilir. Karakter değiştirmek veya Multiplayer oynamak yasaktır." #NT
+ GAME_SETUP_IRONMAN_SINGLEPLAYER_ONLY: "Ironman yalnızca Tek Oyunculu modda oynanabilir" #NT
+ IRONMAN_PAUSE_MENU_TOOLTIP: "#T $IRONMAN_LABEL$ #!\n$IRONMAN_PAUSE_MENU_EXPLANATION$" #NT
+ ACHIEVEMENT_FILTER_ALL_TOOLTIP: "Başarıların tam listesini göster" #NT
+ ACHIEVEMENT_FILTER_UNLOCKED_TOOLTIP: "Başarılar listesini filtreleyerek kilidi açılmış Başarıları görüntüleyin" #NT
+ ACHIEVEMENT_FILTER_LOCKED_TOOLTIP: "Kilitli Başarıları görüntülemek için Başarılar listesini filtreleyin" #NT
+ ACHIEVEMENT_FILTER_POSSIBLE_TOOLTIP: "Mevcut oyunda mümkün olan tüm Başarıları görüntülemek için Başarılar listesini filtreleyin" #NT
+ ACHIEVEMENTS_DISABLED_SAVEGAME: "@warning_icon! #X Başarılar kullanılamıyor#!\nAchievements bu kayıtlı oyun için devre dışı bırakıldı" #NT
+ ACHIEVEMENTS_WILL_BE_DISABLED_SWITCH_CHARACTER: "@warning_icon! #X Farklı bir karaktere veya gözlemci moduna geçmek başarıları devre dışı bırakacaktır#!" #NT
+ ACHIEVEMENTS_WILL_BE_DISABLED_OBSERVER_MODE: "@warning_icon! #X Gözlemci modunda oynamak başarıları devre dışı bırakacaktır#!" #NT
+ ACHIEVEMENTS_WILL_BE_DISABLED_MULTIPLAYER: "@warning_icon! #X Oyununuzu çok oyunculuya açmak başarıları devre dışı bırakacaktır#!" #NT
+ ACHIEVEMENTS_DEBUG_MODE_WARNING: "@warning_icon! #X Hata ayıklama modu şu anda etkin - herhangi bir konsol komutu veya hata ayıklama eylemi, oyun boyunca başarıları devre dışı bırakacaktır#!" #NT
+ GAME_RULES_PRESET_DROPDOWN_NO_SELECTED_BODY: "Kaydedilmiş Ön Ayarınız yok" #NT
+ GAME_RULES_PRESET_DROPDOWN_NO_SELECTED: "Kaydedilmiş bir ön ayarı seçin" #NT
+ SAVE_PRESET_HEADER: "Ön Ayarı Kaydet" #NT
+ SAVE_PRESET_SAVE_AS_LABEL: "Ön ayarı şu şekilde kaydet:" #NT
+ DELETE_SELECTED_PRESET_BUTTON_TOOLTIP: "Seçili ön ayarı sil" #NT
+ DELETE_PRESET_WITH_NAME_BUTTON_TOOLTIP: "Ön ayarı sil [JominiGameRules.GetPresetSaveName|i]" #NT
+ SAVE_PRESET_BUTTON_TOOLTIP: "Ön ayarı kaydet" #NT
+ OVERWRITE_PRESET_BUTTON_TOOLTIP: "Ön ayarın üzerine yaz [JominiGameRules.GetPresetSaveName|i]" #NT
+ OVERWRITE_GAME_RULES_PRESET_TITLE: "Üzerine Yazma Kuralları Ön Ayarı" #NT
+ OVERWRITE_GAME_RULES_PRESET_BODY: "$PRESET_NAME|i$ ön ayarının üzerine yazmak istediğinizden emin misiniz?" #NT
+ OVERWRITE_GAME_RULES_PRESET_ACCEPT: "Üzerine yaz" #NT
+ DELETE_GAME_RULES_PRESET_TITLE: "Kural Ön Ayarını Sil" #NT
+ DELETE_GAME_RULES_PRESET_BODY: "$PRESET_NAME|i$ ön ayarını silmek istediğinizden emin misiniz?" #NT
+ DELETE_GAME_RULES_PRESET_ACCEPT: "Silmek" #NT
+ GAME_RULES_CATEGORY_DROPDOWN_NONE_SELECTED: "bir kategori seç" #NT
+ game_rule_category_none: "Tüm" #NT
+ GAME_RULES_PRESET_DIFFICULTY: "Zorluk: [GameRuleSetting.GetName]" #NT
+ ACHIEVEMENT_FILTER_BUTTON_ALL: "Tüm" #NT
+ ACHIEVEMENT_FILTER_BUTTON_UNLOCKED: "Kilitli değil" #NT
+ ACHIEVEMENT_FILTER_BUTTON_LOCKED: "Kilitli" #NT
+ ACHIEVEMENT_FILTER_BUTTON_POSSIBLE: "Olası" #NT
+ ACHIEVEMENT_FILTER_SHOW: "Başarıları Göster:" #NT
+ game_rule_category_difficulty: "Zorluk" #NT
+ game_rule_category_titles: "Unvanlar ve Bölge" #NT
+ game_rule_category_multiplayer: "Çok oyunculu" #NT
+ game_rule_category_health: "Sağlık" #NT
+ game_rule_category_tweaks: "Ayarlamalar" #NT
+ game_rule_category_flavor: "Lezzet" #NT
+ game_rule_category_historicity: "Tarihsellik" #NT
+ game_rule_category_game_modes: "Oyun modları" #NT
+ game_rule_category_ai: "Yapay Zeka" #NT
+ game_rule_category_setup: "Kurmak" #NT
+ game_rule_category_culture: "Kültür" #NT
+ game_rule_category_faith: "İnanç" #NT
+ rule_difficulty: "Zorluk" #NT
+ setting_easy_difficulty: "#high Kolay#!" #NT
+ setting_easy_difficulty_desc: "Hastalıkların, düşmanca planların ve stresin etkisini azaltmak gibi bonuslar alacaksınız. Ayrıca Fraksiyonlarla başa çıkmak daha kolay olacak." #NT
+ setting_very_easy_difficulty: "#high Çok Kolay#!" #NT
+ setting_very_easy_difficulty_desc: "Hastalıkların, düşmanca planların ve stresin etkisini azaltmak gibi önemli bonuslar alacaksınız. Ayrıca Fraksiyonları idare etmek çok daha kolay olacak." #NT
+ setting_normal_difficulty: "Normal" #NT
+ setting_normal_difficulty_desc: "Hiçbir önemli bonus olmadan, eşit bir oyun alanında oynayacaksınız." #NT
+ rule_culture_conversion_speed: "Kültür Dönüşüm Hızı" #NT
+ setting_default_culture_conversion_speed: "Varsayılan" #NT
+ setting_default_culture_conversion_speed_desc: "Dönüşüm hızı değişmedi." #NT
+ setting_faster_culture_conversion_speed: "#high Daha hızlı#!" #NT
+ setting_faster_culture_conversion_speed_desc: "Hız artırıldı, dönüşümler yaklaşık yarı yarıya kısaldı." #NT
+ setting_significantly_faster_culture_conversion_speed: "#high Önemli ölçüde daha hızlı#!" #NT
+ setting_significantly_faster_culture_conversion_speed_desc: "Hız önemli ölçüde artırıldı, dönüşümler yaklaşık dörtte bir oranında kısaldı." #NT
+ setting_significantly_slower_culture_conversion_speed: "#high Önemli ölçüde daha yavaş#!" #NT
+ setting_significantly_slower_culture_conversion_speed_desc: "Hız önemli ölçüde azaldığından, dönüşüm yaklaşık dört kat daha uzun sürüyor." #NT
+ setting_slower_culture_conversion_speed: "#high Daha yavaş#!" #NT
+ setting_slower_culture_conversion_speed_desc: "Hız azaltılarak dönüşümün kabaca iki kat daha fazla zaman alması sağlanır." #NT
+ GAME_RULE_FASTER_REASON: "Oyun Kuralı: #P x#![SCOPE.ScriptValue('faster_game_rule_value')|P0]" #NT
+ GAME_RULE_SIGNIFICANTLY_FASTER_REASON: "Oyun Kuralı: #P x#![SCOPE.ScriptValue('significantly_faster_game_rule_value')|P0]" #NT
+ GAME_RULE_SLOWER_REASON: "Oyun Kuralı: #N x#![SCOPE.ScriptValue('slower_game_rule_value')|N]" #NT
+ GAME_RULE_SIGNIFICANTLY_SLOWER_REASON: "Oyun Kuralı: #N x#![SCOPE.ScriptValue('significantly_slower_game_rule_value')|N]" #NT
+ rule_faith_conversion_speed: "İnanç Dönüşüm Hızı" #NT
+ setting_default_faith_conversion_speed: "Varsayılan" #NT
+ setting_default_faith_conversion_speed_desc: "$setting_default_culture_conversion_speed_desc$" #NT
+ setting_faster_faith_conversion_speed: "#high Daha hızlı#!" #NT
+ setting_faster_faith_conversion_speed_desc: "$setting_faster_culture_conversion_speed_desc$" #NT
+ setting_significantly_faster_faith_conversion_speed: "#high Önemli ölçüde daha hızlı#!" #NT
+ setting_significantly_faster_faith_conversion_speed_desc: "$setting_significantly_faster_culture_conversion_speed_desc$" #NT
+ setting_significantly_slower_faith_conversion_speed: "#high Önemli ölçüde daha yavaş#!" #NT
+ setting_significantly_slower_faith_conversion_speed_desc: "$setting_significantly_slower_culture_conversion_speed_desc$" #NT
+ setting_slower_faith_conversion_speed: "#high Daha yavaş#!" #NT
+ setting_slower_faith_conversion_speed_desc: "$setting_slower_culture_conversion_speed_desc$" #NT
+ rule_gender_equality: "Cinsiyet Eşitliği" #NT
+ setting_default_gender_equality: "Varsayılan" #NT
+ setting_default_gender_equality_desc: "Cinsiyet kuralları Cinsiyet Yasaları ve İnanç Doktrinleri tarafından belirlenir." #NT
+ setting_full_gender_equality: "#high Eşittir#!" #NT
+ setting_full_gender_equality_desc: "Cinsiyete bağlı tüm Doktrinler ve Yasalar Eşit olarak ayarlanmıştır. Aynı kurallar ve haklar, cinsiyete bakılmaksızın tüm karakterler için geçerlidir." #NT
+ setting_inversed_gender_equality: "#high Ters çevrilmiş#!" #NT
+ setting_inversed_gender_equality_desc: "Cinsiyetle ilgili tüm Doktrinler ve Yasalar tersine çevrilmiştir. "Varsayılan" altında erkeklere uygulanan kurallar ve haklar artık kadınlara uygulanır ve tam tersi." #NT
+ rule_sexuality_distribution: "Cinsellik Dağılımı" #NT
+ setting_sexuality_distribution_default: "Heteroseksüellik" #NT
+ setting_sexuality_distribution_default_desc: "En yaygın cinsellik Heteroseksüellik iken, Homoseksüellik, Biseksüellik ve Aseksüellik daha az yaygındır." #NT
+ setting_sexuality_distribution_equal: "#high Eşittir#!" #NT
+ setting_sexuality_distribution_equal_desc: "Oyundaki tüm Cinsellikler eşit derecede yaygındır." #NT
+ setting_sexuality_distribution_most_common_homosexuality: "#high Eşcinsellik#!" #NT
+ setting_sexuality_distribution_most_common_homosexuality_desc: "En yaygın cinsellik eşcinselliktir, Heteroseksüellik, Biseksüellik ve Aseksüellik ise daha az yaygındır." #NT
+ setting_sexuality_distribution_most_common_bisexuality: "#high Biseksüellik#!" #NT
+ setting_sexuality_distribution_most_common_bisexuality_desc: "En yaygın cinsellik biseksüelliktir, Heteroseksüellik, Homoseksüellik ve Aseksüellik ise daha az yaygındır." #NT
+ setting_sexuality_distribution_most_common_asexuality: "#high Aseksüellik#!" #NT
+ setting_sexuality_distribution_most_common_asexuality_desc: "En yaygın cinsellik aseksüelliktir, Heteroseksüellik, Homoseksüellik ve Biseksüellik ise daha az yaygındır." #NT
+ rule_same_sex_relations: "Eşcinsel İlişkiler" #NT
+ setting_default_same_sex_relations: "Varsayılan" #NT
+ setting_default_same_sex_relations_desc: "Eşcinsel ilişkilere bakış açısı her Mezhep'in $doctrine_homosexuality_name$ Doktrinine göre değişmektedir." #NT
+ setting_accepted_same_sex_relations: "#high Kabul Edildi#!" #NT
+ setting_accepted_same_sex_relations_desc: "Eşcinsel ilişkiler tüm dinlerce tam anlamıyla kabul görmektedir." #NT
+ rule_same_sex_marriage: "Aynı Cinsiyetten Evlilik" #NT
+ setting_default_same_sex_marriage: "Varsayılan" #NT
+ setting_default_same_sex_marriage_desc: "Eşcinsel evlilik mümkün değildir." #NT
+ setting_accepted_same_sex_marriage: "#high Kabul Edildi#!" #NT
+ setting_accepted_same_sex_marriage_desc: "Eşcinsel evlilik ve cariyelik, İnancı bunu kabul eden ve kültürü cariyeliği uygulayan herkes için geçerlidir. #EMP herkes için etkinleştirmek için#! $rule_same_sex_relations$ Oyun Kuralını $setting_accepted_same_sex_relations$ olarak ayarlayın!" #NT
+ rule_adoption: "Benimseme" #NT
+ setting_default_adoption: "Varsayılan" #NT
+ setting_default_adoption_desc: "[adoption|E]'ın kilidi, [GetTrait('compassionate').GetName(GetNullCharacter)] [trait|E], belirli [culture_traditions|E], kısır ve çocuksuz olmak veya eşcinsel evlilikle açılır." #NT
+ setting_no_adoption: "#high Yasak#!" #NT
+ setting_no_adoption_desc: "[adoption|E] [interaction|E] her koşulda devre dışı bırakılacak." #NT
+ setting_adoption_always_allowed: "#high Her zaman izin verilir#!" #NT
+ setting_adoption_always_allowed_desc: "[adoption|E] [interaction|E], evli olmayan veya evliliklerinde baskın partner olan tüm karakterlere açık olacaktır." #NT
+ rule_randomized_faiths: "Rastgele İnançlar" #NT
+ setting_randomized_faiths_off: "Kapalı" #NT
+ setting_randomized_faiths_off_desc: "Karakterler ve İlçelerin tarihi İnançları vardır." #NT
+ setting_randomized_faiths_on: "#high Açık#!" #NT
+ setting_randomized_faiths_on_desc: "Karakterler ve İlçeler rastgele İnançlara atanır. Oyundaki tüm İnançlar mevcuttur." #NT
+ rule_faith_acceptance: "İnanç Kabulü" #NT
+ setting_default_faith_acceptance: "Varsayılan" #NT
+ setting_default_faith_acceptance_desc: "Bir Mezhep'in diğer Mezheplere karşı tavrı, onların doktrinleri tarafından belirlenir." #NT
+ setting_full_faith_acceptance: "#high Tam#!" #NT
+ setting_full_faith_acceptance_desc: "Tüm İnançlar diğer İnançlara karşı tam kabule sahiptir. Farklı bir İnanca sahip olmanın Görüş cezası yoktur." #NT
+ rule_ai_embarkation_cost: "YZ Biniş Maliyeti" #NT
+ setting_regular_embarkation_costs: "Varsayılan" #NT
+ setting_regular_embarkation_costs_desc: "Yapay zeka da oyuncu gibi [gold_i][gold|E] ile [embark|E] arasında ödeme yapmak zorundadır." #NT
+ setting_no_ai_embarkation_costs: "#high Hiçbiri#!" #NT
+ setting_no_ai_embarkation_costs_desc: "Yapay zeka, oyuncunun aksine [gold_i][gold|E] ila [embark|E] ödeme yapmaz." #NT
+ rule_domain_limit_tweaks: "Mülk Sınırı" #NT
+ setting_domain_limit_default: "Varsayılan" #NT
+ setting_domain_limit_default_desc: "[domain_limit|E] tüm [rulers|E]'ler için değişmez." #NT
+ setting_domain_limit_plus_one: "#high +1#!" #NT
+ setting_domain_limit_plus_one_desc: "[domain_limit|E], her [rulers|E] için bir artırılır." #NT
+ setting_domain_limit_plus_two: "#high +2#!" #NT
+ setting_domain_limit_plus_two_desc: "Tüm [rulers|E]'ler için [domain_limit|E] iki artırılır." #NT
+ setting_domain_limit_plus_three: "#high +3#!" #NT
+ setting_domain_limit_plus_three_desc: "[domain_limit|E], tüm [rulers|E]'ler için üç artırılır." #NT
+ setting_domain_limit_minus_one: "#high -1#!" #NT
+ setting_domain_limit_minus_one_desc: "[domain_limit|E], tüm [rulers|E]'ler için #EMP'in #!'ye bire indirilmesiyle elde edilir." #NT
+ setting_domain_limit_minus_two: "#high -2#!" #NT
+ setting_domain_limit_minus_two_desc: "Tüm [rulers|E]'ler için [domain_limit|E], #EMP'in #! ile ikiye indirgenmesiyle elde edilir." #NT
+ setting_domain_limit_minus_three: "#high -3#!" #NT
+ setting_domain_limit_minus_three_desc: "Tüm [rulers|E] için [domain_limit|E], #EMP'in #!'nin üçe indirgenmesiyle elde edilir." #NT
+ rule_random_nickname_frequency: "Rastgele Takma Ad Sıklığı" #NT
+ setting_random_nickname_frequency_default: "Varsayılan" #NT
+ setting_random_nickname_frequency_default_desc: "Hükümdarlerde varsayılan sıklıkta rastgele [nicknames|E] belirir." #NT
+ setting_random_nickname_frequency_halved: "#high Yarıya İndirildi#!" #NT
+ setting_random_nickname_frequency_halved_desc: "Rastgele [nicknames|E] yarısı kadar sıklıkta görünür." #NT
+ setting_random_nickname_frequency_quartered: "#high Dörde bölünmüş#!" #NT
+ setting_random_nickname_frequency_quartered_desc: "Rastgele [nicknames|E] dörtte bir oranında daha az görünür." #NT
+ setting_random_nickname_frequency_none: "#high Devre Dışı#!" #NT
+ setting_random_nickname_frequency_none_desc: "Rastgele [nicknames|E] görünmeyecektir." #NT
+ setting_random_nickname_frequency_doubled: "#high İki katına çıktı#!" #NT
+ setting_random_nickname_frequency_doubled_desc: "Rastgele [nicknames|E] iki kat daha sık görünür." #NT
+ rule_random_ruler_placement: "Rastgele Hükümdar Yerleşimi" #NT
+ setting_random_ruler_placement_off: "Kapalı" #NT
+ setting_random_ruler_placement_off_desc: "Yöneticilerin tarihsel Unvanları ve Bölgeleri vardır." #NT
+ setting_random_ruler_placement_on: "#high Açık#!" #NT
+ setting_random_ruler_placement_on_desc: "Hükümdarlar haritaya rastgele yerleştirilir. Diyarlar büyük ölçüde aynıdır, ancak Unvanlar farklı hükümdarlar tarafından tutulur." #NT
+ setting_random_ruler_placement_on_conversion: "#high (Dönüşüm) Üzerinde#!" #NT
+ setting_random_ruler_placement_on_conversion_desc: "Hükümdarlar haritaya rastgele yerleştirilir. Tarihsel sahibinin İnancına dönüşürler." #NT
+ rule_diplomatic_range: "Diplomatik Menzil" #NT
+ setting_default_diplomatic_range: "Varsayılan" #NT
+ setting_default_diplomatic_range_desc: "Diplomatik menzil değişmiyor." #NT
+ setting_restricted_diplomatic_range: "#high Kısıtlı#!" #NT
+ setting_restricted_diplomatic_range_desc: "Diplomatik menzil daha da kısıtlandığından, yerel olmayan etkileşimler çok daha nadir hale geliyor." #NT
+ setting_unrestricted_diplomatic_range: "#high Sınırsız#!" #NT
+ setting_unrestricted_diplomatic_range_desc: "Diplomatik menzil kapatıldı, böylece haritadaki herkes herkesle etkileşime girebiliyor." #NT
+ rule_minor_disease_frequency: "Küçük Hastalıklar" #NT
+ setting_default_minor_disease_frequency: "Varsayılan" #NT
+ setting_default_minor_disease_frequency_desc: "Küçük rahatsızlıklar normal şekilde ortaya çıkacaktır." #NT
+ setting_fewer_minor_disease_frequency: "#high Daha az#!" #NT
+ setting_fewer_minor_disease_frequency_desc: "Küçük rahatsızlıklar daha az görülecek." #NT
+ rule_de_jure_requirement: "De Jure Gerekliliği" #NT
+ setting_on_de_jure_requirement: "#high Açık#!" #NT
+ setting_on_de_jure_requirement_desc: "De Jure topraklara sahip unvanlar, bir karakterin krallığı içinde unvana ait De Jure topraklara sahip olmaması durumunda sonunda yok edilecektir." #NT
+ setting_on_limited_de_jure_requirement: "(Sınırlı) Üzerinde" #NT
+ setting_on_limited_de_jure_requirement_desc: "De Jure topraklara sahip unvanlar, bir karakter kendi krallığında unvana ait De Jure topraklara sahip değilse sonunda yok edilecektir. Oyuncunun Birincil unvanı asla yok edilmeyecektir." #NT
+ setting_off_de_jure_requirement: "#high İndirim#!" #NT
+ setting_off_de_jure_requirement_desc: "De jure arazisi olan tapular asla yok olmaz." #NT
+ de_jure_requirement_title: "[title_to_destroy.GetName] Hükmen yenil!" #NT
+ de_jure_requirement_desc: "Artık [title_to_destroy.GetNameNoTierNoTooltip]'ın hükümdarı olduğumu iddia edemem, çünkü De Jure topraklarının hiçbirine sahip değilim." #NT
+ rule_empire_obscurity_requirement: "İmparatorluk Belirsizliği" #NT
+ setting_on_empire_obscurity_requirement: "#high Açık#!" #NT
+ setting_on_empire_obscurity_requirement_desc: "[de_jure|E] [empires|E], sahibi De Jure [counties|E]'sinin en az %20'sini kontrol etmediği sürece yok edilecektir." #NT
+ setting_off_empire_obscurity_requirement: "Kapalı" #NT
+ setting_off_empire_obscurity_requirement_desc: "[empires|E], sahibinin ne kadar [de_jure|E] arazisi olduğuna bakılmaksızın varlığını sürdürecektir." #NT
+ game_rule.4.t: "[falling_empire.GetBaseNameNoTooltip]'ın belirsizliği" #NT
+ game_rule.4.desc: "Sevgili imparatorluğum [falling_empire.GetBaseName]'ın düştüğünü ve çok uzaklara düştüğünü inkar edemem...\n\nGeleneksel bölgelerinin neredeyse hiçbirini kontrol edemiyorum. Kendi kendisinin gölgesi olan imparatorluğum yavaş ama emin adımlarla karanlığa doğru kayboluyor." #NT
+ game_rule.4.a: "Sadece biraz daha zamana ihtiyacım var!" #NT
+ game_rule.4.b: "Elveda tatlı imparatorluk..." #NT
+ rule_multiplayer_murder_schemes: "Çok Oyunculu: Cinayet Planları" #NT
+ setting_default_multiplayer_murder_schemes: "Varsayılan" #NT
+ setting_default_multiplayer_murder_schemes_desc: "Düşmanca Planlar oyunculara ve ailelerine karşı kullanılabilir." #NT
+ setting_no_players_multiplayer_murder_schemes: "#high Oyuncu Yok#!" #NT
+ setting_no_players_multiplayer_murder_schemes_desc: "Oyuncular diğer oyunculara karşı Düşmanca Planlar başlatamazlar." #NT
+ setting_no_player_families_multiplayer_murder_schemes: "#high Oyuncu Ailesi Yok#!" #NT
+ setting_no_player_families_multiplayer_murder_schemes_desc: "Oyuncular diğer oyunculara veya yakın aile üyelerine karşı Düşmanca Planlar başlatamazlar." #NT
+ rule_realm_stability: "Diyar İstikrarı" #NT
+ setting_default_realm_stability: "Varsayılan" #NT
+ setting_default_realm_stability_desc: "Varsayılan [factions|E] miktarı ortaya çıkacaktır." #NT
+ setting_lesser_realm_stability: "#high Daha Az Kararlılık#!" #NT
+ setting_lesser_realm_stability_desc: "Daha yüksek miktarda [factions|E] ortaya çıkacaktır." #NT
+ setting_higher_realm_stability: "#high Daha Yüksek Kararlılık#!" #NT
+ setting_higher_realm_stability_desc: "Daha düşük miktarda [factions|E] ortaya çıkacaktır." #NT
+ setting_extreme_realm_stability: "#high Aşırı İstikrar#!" #NT
+ setting_extreme_realm_stability_desc: "Çok düşük miktarda [factions|E] ortaya çıkacaktır." #NT
+ rule_custom_kingdoms: "Özel Krallıklar" #NT
+ setting_on_custom_kingdoms: "Açık" #NT
+ setting_on_custom_kingdoms_desc: "Özel, tarihsel olmayan Krallıklar ve İmparatorlukların yaratılmasına izin verilir." #NT
+ setting_off_custom_kingdoms: "#high İndirim#!" #NT
+ setting_off_custom_kingdoms_desc: "Özel, tarihsel olmayan Krallıklar ve İmparatorlukların yaratılması yasaktır." #NT
+ rule_casus_belli_costs: "Casus Belli Maliyetleri" #NT
+ setting_default_casus_belli_costs: "Varsayılan" #NT
+ setting_default_casus_belli_costs_desc: "Casus Bellis'i ilan etmek Prestij veya Dindarlık gibi kaynaklara ihtiyaç duyar." #NT
+ setting_no_cost_casus_belli_costs: "#high Ücretsiz#!" #NT
+ setting_no_cost_casus_belli_costs_desc: "Casus Bellis'in kullanımı ücretsizdir ve herhangi bir maliyete neden olmaz." #NT
+ rule_end_date: "Bitiş tarihi" #NT
+ setting_1453_end_date: "1453" #NT
+ setting_1453_end_date_desc: "Oyun 1453'te sona erecek." #NT
+ setting_no_end_date_end_date: "#high Bitiş Tarihi Yok#!" #NT
+ setting_no_end_date_end_date_desc: "Oyun belirli bir tarihte sonlanmayacak." #NT
+ rule_generate_families: "Aileler Oluşturun" #NT
+ setting_on_generate_families: "Açık" #NT
+ setting_on_generate_families_desc: "Kayıtlı bir ailesi olmayan çoğu toprak sahibi tarihi karakterin bir eşi ve onlar için üretilmiş üç çocuğu olacaktır. Bu erken bir [game_over|E] riskini azaltır." #NT
+ setting_off_generate_families: "#high Kapalı#!" #NT
+ setting_off_generate_families_desc: "Kayıtlı bir ailesi olmayan toprak sahibi tarihi karakterler için bir aile oluşturulmayacaktır. Bu, erken [game_over|E] riskini artırır." #NT
+ setting_on_generate_families_ai_only: "#high Açık (Sadece YZ)#!" #NT
+ setting_on_generate_families_ai_only_desc: "Kayıtlı bir ailesi olmayan çoğu karaya çıkmış tarihi YZ karakterinin bir eşi ve onlar için üretilmiş üç çocuğu olacak. Bu erken [game_over|E] riskini artırır." #NT
+ rule_mongol_invasion: "Moğol İstilası" #NT
+ setting_default_mongol_invasion: "Varsayılan" #NT
+ setting_default_mongol_invasion_desc: "Moğollar 1200 yılı civarında istila edecekler." #NT
+ setting_never_mongol_invasion: "#high Asla#!" #NT
+ setting_never_mongol_invasion_desc: "Moğollar istila etmeyecek." #NT
+ setting_random_mongol_invasion: "#high Rastgele#!" #NT
+ setting_random_mongol_invasion_desc: "Moğollar rastgele bir tarihte istilaya uğrayacaklar." #NT
+ rule_random_harm: "Rastgele Zarar" #NT
+ setting_harm_dangerous: "Tehlikeli" #NT
+ setting_harm_dangerous_desc: "Kazalar, kötü şans ve Kaderin değişken kaprisleri rastgele [character_death_death|E], [GetTrait('incapable').GetName(GetNullCharacter)] [trait|E] ve [health|E] kaybına neden olabilir." #NT
+ setting_harm_illusion_of_safety: "#high Güvenlik Yanılsaması#!" #NT
+ setting_harm_illusion_of_safety_desc: "Rastgele [character_death_death|E] veya devre dışı bırakma olayları çok daha nadirdir. Ta ki onlar olmayana kadar." #NT
+ setting_harm_safe: "#high Güvenli#!" #NT
+ setting_harm_safe_desc: "Rastgele zararlı olaylar [characters|E]'ı öldürmez veya sakat bırakmaz. Özellikle tehlikeli durumlarda, diğer olaylarda yine de erken ölebilir." #NT
+ setting_harm_tragic: "#high Trajik#!" #NT
+ setting_harm_tragic_desc: "Sadece İyiler genç yaşta ölmez — artık siz de genç yaşta ölebilirsiniz; herkes için rastgele zararlı olayların yaşanma olasılığı artırıldı!" #NT
+ setting_harm_spiteful: "#high Kin dolu#!" #NT
+ setting_harm_spiteful_desc: "Kader, acımasız gazabını [characters|E] önemli kişiye odaklıyor: yüksek [skills|E]'e sahip olanlar, kalıtsal [traits|E]'ye sahip olanlar, önemli başarılara sahip olanlar, vb." #NT
+ setting_harm_tragically_spiteful: "#high Trajik Bir Şekilde Kin Tutmuş#!" #NT
+ setting_harm_tragically_spiteful_desc: "Herkesin rastgele zarar verici olaylara maruz kalma şansı belirgin şekilde artar, ancak özellikle #EMP not#!. olan herkesin" #NT
+ rule_random_harm_target: "Rastgele Zarar Hedefi" #NT
+ setting_random_harm_boilerplate: "[health|E]'dan [characters|E]'i rastgele öldüren, etkisiz hale getiren veya yaralayan olaylar meydana gelebilir." #NT
+ setting_harm_target_all: "Herhangi biri" #NT
+ setting_harm_target_all_desc: "$setting_random_harm_boilerplate$ herhangi biri $game_concept_character$." #NT
+ setting_harm_target_player_only: "Sadece Oyuncu" #NT
+ setting_harm_target_player_only_desc: "Yalnızca $setting_random_harm_boilerplate$ oyuncu." #NT
+ setting_harm_target_ai_only: "Sadece YZ" #NT
+ setting_harm_target_ai_only_desc: "$setting_random_harm_boilerplate$ yalnızca yapay zeka." #NT
+ rule_exclave_independence: "Eksklav Bağımsızlığı" #NT
+ setting_off_exclave_independence: "#high İndirim#!" #NT
+ setting_off_exclave_independence_desc: "Bağımsız Yöneticiler dünyanın herhangi bir yerinde eksklavlara (bağlantısız topraklar) sahip olabilirler." #NT
+ setting_limited_exclave_independence: "#high Sınırlı#!" #NT
+ setting_limited_exclave_independence_desc: "Bağımsız Yöneticilerin barış halindeki toprakları, bir İlçe, deniz yolu veya De Jure topraklarının bir parçası aracılığıyla Başkent bölgesine bağlanmadığı sürece halefiyet halinde kaldırılacaktır." #NT
+ setting_significant_exclave_independence: "#high Önemli#!" #NT
+ setting_significant_exclave_independence_desc: "Bağımsız Hükümdarların barış halindeki toprakları, deniz yoluyla veya De Jure topraklarının bir parçası aracılığıyla birbirine bağlı olmadıkları sürece halefiyet halinde kaldırılacaktır." #NT
+ setting_total_exclave_independence: "#high Toplam#!" #NT
+ setting_total_exclave_independence_desc: "Barış halindeki Bağımsız Hükümdarların toprakları, deniz yoluyla birbirlerine bağlı olmadıkları sürece halefiyet halinde kaldırılacak." #NT
+ setting_ai_limited_exclave_independence: "#high Sınırlı (Sadece YZ)#!" #NT
+ setting_ai_limited_exclave_independence_desc: "Bağımsız YZ Yöneticilerinin barış halindeki toprakları, bir İlçe, bir deniz yolu veya De Jure topraklarının bir parçası aracılığıyla Başkent bölgesine bağlanmadığı sürece halefiyet halinde kaldırılacaktır." #NT
+ setting_ai_significant_exclave_independence: "Önemli (Yalnızca YZ)" #NT
+ setting_ai_significant_exclave_independence_desc: "Barış halindeki Bağımsız Yapay Zeka Hükümdarlarının dış bölgeleri, bir deniz yolu veya De Jure bölgesinin bir kısmı aracılığıyla bağlanmadıkları sürece, ardı ardına kaldırılacaktır." #NT
+ setting_ai_total_exclave_independence: "#high Toplam (Yalnızca YZ)#!" #NT
+ setting_ai_total_exclave_independence_desc: "Barış halindeki Bağımsız Yapay Zeka Hükümdarlarının toprakları, deniz yoluyla birbirlerine bağlı olmadıkları sürece halefiyet halinde kaldırılacak." #NT
+ rule_regional_heresy: "Bölgesel Sapkınlıklar" #NT
+ setting_default_regional_heresy: "Varsayılan" #NT
+ setting_default_regional_heresy_desc: "Bazı bölgelerde ortaya çıkan sapkınlıkların, İngiltere'deki Lollardy gibi, tarihi sapkınlıklar olma olasılığı daha yüksektir." #NT
+ setting_strict_regional_heresy: "#high Sıkı#!" #NT
+ setting_strict_regional_heresy_desc: "Belli bölgelerde ortaya çıkan sapkınlıkların hemen hemen hepsi tarihi sapkınlıklar olacaktır." #NT
+ setting_relaxed_regional_heresy: "#high Rahat#!" #NT
+ setting_relaxed_regional_heresy_desc: "Sapkınlık salgınlarının bölgesel bir ağırlığının olmaması, daha çeşitli sapkınlıkların ortaya çıkmasına neden olmaktadır." #NT
+ rule_hungarian_migration: "Macar Göçü" #NT
+ setting_launch_historical: "#high Tarihsel#!" #NT
+ setting_launch_historical_desc: "Yapay zeka 890 ile 910 yılları arasında Macar Göçü'nü başlatmaya çalışacak." #NT
+ setting_launch_immediate: "Hemen" #NT
+ setting_launch_immediate_desc: "Macar Göçü oyun başlangıcında aktif olacaktır." #NT
+ setting_launch_random: "#high Rastgele#!" #NT
+ setting_launch_random_desc: "Yapay zeka, oyun başlangıcından itibaren 5 yıl ile 910 yıl arasında herhangi bir zamanda Macar Göçü'nü başlatmaya çalışacaktır." #NT
+ setting_launch_off: "#high Yalnızca Oyuncu#!" #NT
+ setting_launch_off_desc: "YZ, Macar Göçünü başlatmaya çalışmayacaktır." #NT
+ rule_matrilineal_marriages: "Anaerkil Evlilikler" #NT
+ setting_default_matrilineal_marriages: "Varsayılan" #NT
+ setting_default_matrilineal_marriages_desc: "Yapay zeka karakterleri oyuncunun yakın ailesindense, [dynasty_prestige_level_4|L] [dynasty|E], [GetLaw('equal_law').GetName] diyardansa veya güçlüyse [rulers|E], [GetFaithDoctrine('doctrine_gender_female_dominated').GetBaseName] diyardaysa [matrilineal|E] evlilik ayarlayacaktır." #NT
+ setting_matrilineal_marriages_no_player_exception: "#high Varsayılan (Oyuncu istisnası yoktur)#!" #NT
+ setting_matrilineal_marriages_no_player_exception_desc: "Yapay zeka karakterleri eğer [dynasty_prestige_level_4|L] [dynasty|E] veya [GetLaw('equal_law').GetName] diyarına aitlerse veya güçlülerse [rulers|E]. [GetFaithDoctrine('doctrine_gender_female_dominated').GetBaseName] diyarlar varsayılan olarak Anaerkil'dir." #NT
+ setting_matrilineal_marriages_always: "#high Her zaman#!" #NT
+ setting_matrilineal_marriages_always_desc: "Yapay zeka karakterleri tüm kadın [dynasty|E] üyeleri için [matrilineal|E] evlilik ayarlamak isteyecektir. #high $setting_default_matrilineal_marriages$#! kurallarında olduğu gibi, yeterince uygun görülürse [patrilineal|E] evlilik yine gerçekleşir." #NT
+ setting_matrilineal_marriages_female_and_equal: "#high Kadınların Hakim Olduğu ve Eşit Olduğu#!" #NT
+ setting_matrilineal_marriages_female_and_equal_desc: "Yapay zeka karakterleri yalnızca [GetFaithDoctrine('doctrine_gender_female_dominated').GetBaseName] veya [GetLaw('equal_law').GetName] diyarının parçasıysa [matrilineal|E] evlilik ayarlayacaktır. #high $setting_default_matrilineal_marriages$#! kurallarında olduğu gibi, yeterince uygun görülürse [patrilineal|E] evlilik yine gerçekleşecektir." #NT
+ setting_matrilineal_marriages_never: "#high Asla#!" #NT
+ setting_matrilineal_marriages_never_desc: "Yapay zeka karakterleri, [GetFaithDoctrine('doctrine_gender_female_dominated').GetBaseName] diyarının parçası olmadıkları sürece asla [matrilineal|E] evlilikleri düzenlemeyeceklerdir." #NT
+ rule_dlc_fp1_scandinavian_adventurers: "İskandinav Maceracıları" #NT
+ setting_fp1_scandi_adventurers_rare: "Nadir" #NT
+ setting_fp1_scandi_adventurers_rare_desc: "İskandinav maceraperestler her 15 yılda bir Rusya ve Kuzey Denizi'ni hedef almaya çalışacaklar." #NT
+ setting_fp1_scandi_adventurers_occasional: "ara sıra" #NT
+ setting_fp1_scandi_adventurers_occasional_desc: "İskandinav maceraperestler her 10 yılda bir Rusya ve Kuzey Denizi'ni hedef almaya çalışacaklar." #NT
+ setting_fp1_scandi_adventurers_frequent: "Sık" #NT
+ setting_fp1_scandi_adventurers_frequent_desc: "İskandinav maceraperestler her 5 yılda bir Rusya ve Kuzey Denizi'ni hedef almaya çalışacaklar." #NT
+ setting_fp1_scandi_adventurers_apocalyptic: "Kıyamet" #NT
+ setting_fp1_scandi_adventurers_apocalyptic_desc: "İskandinav maceraperestler her yıl Rusya ve Kuzey Denizi'ni hedef almaya çalışacak, yapay zeka karakterlerinin fırlatılması için belirli özelliklere ihtiyaç duyulmuyor [varangian_adventures|E]." #NT
+ setting_fp1_scandi_adventurers_off: "Kapalı" #NT
+ setting_fp1_scandi_adventurers_off_desc: "İskandinav maceraperestler hiçbir zaman Rusya'yı veya Kuzey Denizi'ni hedef almaya çalışmayacaklardır." #NT
+ rule_hybrid_culture_ai_frequency: "Hibrit Kültür Frekansı" #NT
+ setting_default_hybrid_culture_ai_frequency: "Varsayılan" #NT
+ setting_default_hybrid_culture_ai_frequency_desc: "Varsayılan [hybrid_cultures|E] miktarı görünecektir." #NT
+ setting_less_common_hybrid_culture_ai_frequency: "#high Daha Az Yaygın#!" #NT
+ setting_less_common_hybrid_culture_ai_frequency_desc: "Daha az [hybrid_cultures|E] görünecektir." #NT
+ setting_none_hybrid_culture_ai_frequency: "#high Hiçbiri#!" #NT
+ setting_none_hybrid_culture_ai_frequency_desc: "Oyuncu olmayanların oluşturduğu [hybrid_cultures|E] görünmeyecektir." #NT
+ rule_hybrid_culture_ai_restrictions: "Hibrit Kültür Kısıtlamaları" #NT
+ setting_default_hybrid_culture_ai_restrictions: "Varsayılan" #NT
+ setting_default_hybrid_culture_ai_restrictions_desc: "Oyuncu olmayanların oluşturduğu [hybrid_cultures|E] önemli ölçüde kısıtlanacak #weak (örneğin, mevcut iki Melez kültürün Melezleri ortaya çıkmayacak)#!" #NT
+ setting_relaxed_hybrid_culture_ai_restrictions: "#high Rahat#!" #NT
+ setting_relaxed_hybrid_culture_ai_restrictions_desc: "Oyuncu olmayanlar tarafından oluşturulan [hybrid_cultures|E], bir dereceye kadar mevcut Hibrit kültürlerden ortaya çıkabilir." #NT
+ setting_very_relaxed_hybrid_culture_ai_restrictions: "#high Çok Rahat#!" #NT
+ setting_very_relaxed_hybrid_culture_ai_restrictions_desc: "Oyuncu olmayanların oluşturduğu [hybrid_cultures|E]'ın sadece isimsel kısıtlamaları vardır." #NT
+ rule_divergent_culture_ai_frequency: "Farklı Kültür Frekansı" #NT
+ setting_default_divergent_culture_ai_frequency: "Varsayılan" #NT
+ setting_default_divergent_culture_ai_frequency_desc: "Varsayılan [divergent_cultures|E] miktarı görünecektir." #NT
+ setting_less_common_divergent_culture_ai_frequency: "#high Daha Az Yaygın#!" #NT
+ setting_less_common_divergent_culture_ai_frequency_desc: "Daha az [divergent_cultures|E] görünecektir." #NT
+ setting_none_divergent_culture_ai_frequency: "#high Hiçbiri#!" #NT
+ setting_none_divergent_culture_ai_frequency_desc: "Oyuncu olmayanların oluşturduğu [divergent_cultures|E] görünmeyecektir." #NT
+ setting_relaxed_divergent_culture_ai_frequency: "#high Rahat#!" #NT
+ setting_relaxed_divergent_culture_ai_frequency_desc: "[divergent_cultures|E] daha sık görünecek ve daha sert kısıtlamaların çoğu kaldırılacak." #NT
+ rule_hybrid_and_divergence_cooldowns: "Iraksak ve Hibrit Kültür Bekleme Süreleri" #NT
+ setting_default_hybrid_and_divergence_cooldowns: "Varsayılan" #NT
+ setting_default_hybrid_and_divergence_cooldowns_desc: "[cultures|E] ancak #V 100#! yıl var olduktan sonra [diverge|E] olabilir ve #V 50#! yıl var olduktan sonra [hybridize|E] olabilir." #NT
+ setting_slower_hybrid_and_divergence_cooldowns: "#high Daha yavaş#!" #NT
+ setting_slower_hybrid_and_divergence_cooldowns_desc: "[cultures|E] ancak #V 200#! yıl var olduktan sonra [diverge|E] olabilir ve #V 100#! yıl var olduktan sonra [hybridize|E] olabilir." #NT
+ setting_no_hybrid_and_divergence_cooldowns: "#high Soğuma Süresi Yok#!" #NT
+ setting_no_hybrid_and_divergence_cooldowns_desc: "[culture|E]'ın [diverge|E] veya [hybridize|E]'ye çıkmasına izin verildiğinde herhangi bir bekleme süresi yoktur." #NT
+ setting_faster_hybrid_and_divergence_cooldowns: "#high Daha hızlı#!" #NT
+ setting_faster_hybrid_and_divergence_cooldowns_desc: "[cultures|E] ancak #V 50#! yıl var olduktan sonra [diverge|E] olabilir ve #V 25#! yıl var olduktan sonra [hybridize|E] olabilir." #NT
+ rule_dissolution_umayyad: "Endülüs'ün düşüşü" #NT
+ setting_dissolution_unconstrained: "Limitsiz" #NT
+ setting_dissolution_unconstrained_desc: "[dissolution_faction|E] oyunun başından itibaren Endülüs Krallığı'na isabet edebilir" #NT
+ setting_dissolution_after_caliph_death: "#high Halifenin Ölümü#!" #NT
+ setting_dissolution_after_caliph_death_desc: "[dissolution_faction|E], Sultan Muhammed'in ölümünden sonra yalnızca Endülüs Krallığı'na vurabilir $Abd-al-Rahman$" #NT
+ setting_dissolution_historical_date: "#high Geçmiş Zamanlama#!" #NT
+ setting_dissolution_historical_date_desc: "[dissolution_faction|E], Endülüs Krallığı için yalnızca 1020 yılından sonra etkinleştirilir" #NT
+ rule_dlc_fp3_seljuk_invasion: "Selçuklu İstilası" #NT
+ setting_default_seljuk_invasion: "Varsayılan" #NT
+ setting_default_seljuk_invasion_desc: "945 yılından bir süre sonra Selçuklular burayı işgal edecektir." #NT
+ setting_never_seljuk_invasion: "#high Hiçbir zaman#!" #NT
+ setting_never_seljuk_invasion_desc: "Selçuklular saldırmayacak." #NT
+ setting_random_seljuk_invasion: "#high Rastgele#!" #NT
+ setting_random_seljuk_invasion_desc: "Selçuklular rastgele bir tarihte istilaya uğrayacaklar." #NT
+  #AGOT Modified  #NT
+ #rule_black_death_occurrence: "Kara Ölüm Durumu" #NT
+ rule_black_death_occurrence: "Büyük Bahar Hastalığı Durumu" #NT
+ setting_bd_occurrence_organic: "#high Organik#!" #NT
+  #AGOT Modified  #NT
+ #setting_bd_occurrence_organic_desc: "Kara Ölüm, oyunun mevcut durumuna tepki olarak tarihsel olarak mümkün bir senaryoda gerçekleşecek." #NT
+ setting_bd_occurrence_organic_desc: "Büyük Bahar Hastalığı, oyunun mevcut durumuna tepki olarak tarihsel olarak mümkün bir senaryoda gerçekleşecektir." #NT
+ setting_bd_occurrence_historical: "Tarihi" #NT
+  #AGOT Modified  #NT
+ #setting_bd_occurrence_historical_desc: "Kara Ölüm 14. yüzyılda Orta Asya'da başlayacak ve tarihsel olarak popüler ticaret yolları aracılığıyla organik olarak yayılacak. Milano, Pireneler, Polonya ve diğer tarihsel bölgeler bundan daha az etkilenecek." #NT
+ setting_bd_occurrence_historical_desc: "Büyük Bahar Hastalığı, MS 209 civarında Westeros'taki bir şehirde başlayacak ve organik olarak yayılacak." #NT
+ setting_bd_occurrence_random: "#high Rastgele#!" #NT
+  #AGOT Modified  #NT
+ #setting_bd_occurrence_random_desc: "Kara Ölüm haritada tamamen rastgele bir eyalette ortaya çıkacak." #NT
+ setting_bd_occurrence_random_desc: "Büyük Bahar Hastalığı haritada tamamen rastgele bir eyalette ortaya çıkacaktır." #NT
+  #AGOT Modified  #NT
+ #rule_black_death_frequency: "Kara Ölüm Frekansı" #NT
+ rule_black_death_frequency: "Büyük Bahar Hastalığı Sıklığı" #NT
+ setting_bd_frequency_once: "Bir kere" #NT
+  #AGOT Modified  #NT
+ #setting_bd_frequency_once_desc: "Kara Ölüm, oyunu oynadığınız süre boyunca yalnızca bir kez meydana gelebilir." #NT
+ setting_bd_frequency_once_desc: "Büyük Bahar Hastalığı, oyununuz boyunca yalnızca bir kez gerçekleşebilir." #NT
+ setting_bd_frequency_unlimited: "#high Sınırsız#!" #NT
+  #AGOT Modified  #NT
+ #setting_bd_frequency_unlimited_desc: "Kara Ölüm bir kampanyada sınırsız sayıda ortaya çıkabilir." #NT
+ setting_bd_frequency_unlimited_desc: "Büyük Bahar Hastalığı bir kampanyada sınırsız sayıda ortaya çıkabilir." #NT
+ setting_bd_frequency_never: "#high Asla#!" #NT
+  #AGOT Modified  #NT
+ #setting_bd_frequency_never_desc: "Kara Ölüm asla gerçekleşmeyecek." #NT
+ setting_bd_frequency_never_desc: "Büyük Bahar Hastalığı hiçbir zaman gerçekleşmeyecektir." #NT
+ rule_other_epidemic_frequency: "Veba Sıklığı" #NT
+ setting_epidemic_frequency_normal: "Normal" #NT
+ setting_epidemic_frequency_normal_desc: "Vebalar normal bir hızda ortaya çıkacak ve yayılacak." #NT
+ setting_epidemic_frequency_often: "#high Sık sık#!" #NT
+ setting_epidemic_frequency_often_desc: "Veba salgınları daha sık ortaya çıkacak ve yayılacak." #NT
+ setting_epidemic_frequency_very_often: "#high Çok Sık#!" #NT
+ setting_epidemic_frequency_very_often_desc: "Vebalar çok daha sık ortaya çıkacak ve yayılacak." #NT
+ setting_epidemic_frequency_doomsday: "#high Kıyamet#!" #NT
+ setting_epidemic_frequency_doomsday_desc: "Hava miasma ile doludur ve nehirler bozulma ile doludur. Salgın, soluduğunuz havanın ve içtiğiniz suyun ta kendisidir. Ebedi vebadan kurtuluş yoktur." #NT
+ setting_epidemic_frequency_rare: "#high Nadir#!" #NT
+ setting_epidemic_frequency_rare_desc: "Vebalar nadiren ortaya çıkacak ve daha az sıklıkla yayılacak." #NT
+ setting_epidemic_frequency_very_rare: "#high Çok Nadir#!" #NT
+ setting_epidemic_frequency_very_rare_desc: "Vebalar çok nadiren ortaya çıkacak ve çok daha az sıklıkla yayılacak." #NT
+ setting_epidemic_frequency_disabled: "#high Devre Dışı#!" #NT
+ setting_epidemic_frequency_disabled_desc: "Vebalar ortaya çıkmayacak." #NT
+ rule_legend_spread_chance: "Efsane Yayılma Şansı" #NT
+ setting_legend_spread_chance_normal: "Normal" #NT
+ setting_legend_spread_chance_normal_desc: "Efsanelerin yayılma şansı normal olacaktır." #NT
+ setting_legend_spread_chance_high: "#high Yüksek#!" #NT
+ setting_legend_spread_chance_high_desc: "Efsanelerin komşu illere yayılma şansı daha yüksek olacak." #NT
+ setting_legend_spread_chance_very_high: "#high Çok Yüksek#!" #NT
+ setting_legend_spread_chance_very_high_desc: "Efsanelerin komşu illere yayılma şansı çok daha yüksek olacak." #NT
+ setting_legend_spread_chance_low: "#high Düşük#!" #NT
+ setting_legend_spread_chance_low_desc: "Efsanelerin komşu eyaletlere yayılma şansı daha düşük olacak." #NT
+ setting_legend_spread_chance_very_low: "#high Çok Düşük#!" #NT
+ setting_legend_spread_chance_very_low_desc: "Efsanelerin komşu eyaletlere yayılma şansı çok daha düşük olacak." #NT
+ rule_legend_cost: "Efsane Maliyeti" #NT
+ setting_legend_cost_normal: "Normal" #NT
+ setting_legend_cost_normal_desc: "Efsanelerin normal bir bedeli olacak." #NT
+ setting_legend_cost_high: "#high Yüksek#!" #NT
+ setting_legend_cost_high_desc: "Efsanelerin fiyatı normalin iki katı olacak." #NT
+ setting_legend_cost_very_high: "#high Çok Yüksek#!" #NT
+ setting_legend_cost_very_high_desc: "Efsanelerin fiyatı normalden dört kat fazla olacak." #NT
+ setting_legend_cost_low: "#high Düşük#!" #NT
+ setting_legend_cost_low_desc: "Efsanelerin fiyatı normalin yarısı kadar olacak." #NT
+ setting_legend_cost_very_low: "#high Çok Düşük#!" #NT
+ setting_legend_cost_very_low_desc: "Efsanelerin fiyatı normalin dörtte biri kadar olacak." #NT
