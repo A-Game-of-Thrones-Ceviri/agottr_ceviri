@@ -19,7 +19,7 @@
   #AGOT Modified 
  VERSION_SHORT: "[GetGameVersionInfoShort], Kontrol toplamı: [GetMPChecksum] $MODIFIED_CHECKSUM$ $AGOT_VERSION_BUILD$"
  TITUS_FILTER_SAME_VERSION: "Aynı Kontrol Toplamı #weak ([GetMPChecksum])#!"
- MODIFIED_CHECKSUM: "[Select_CString( HasDifferentChecksumThanCompiled, '#X (Modified)#!', '' )]"
+ MODIFIED_CHECKSUM: "[Select_CString( HasDifferentChecksumThanCompiled, '#X (Değiştirilmiş)#!', '' )]"
  TT_MODULE_VERSION_INFO_COMMON: "#T $MODULE$ sürüm:#!\n Dal: $BRANCH|V$\n İşleme: $HASH_SHORT|V$\n Zaman damgası: $TIMESTAMP$\n İşleme numarası: $COMMIT_COUNT$"
  TT_MODULE_VERSION_INFO: "$TT_MODULE_VERSION_INFO_COMMON$\n\n"
  TT_GAME_MODULE_VERSION_INFO: "$TT_MODULE_VERSION_INFO_COMMON$\n$TT_GAME_MODULE_ADDITIONAL_VERSION_INFO$\n\n"
@@ -57,7 +57,7 @@
  PORTRAIT_NO_COUNCILLOR: "#T Hayır [councillor|E] atandı#!"
  ON_COUNCIL_EFFECTS: "#high Sizin üzerinizdeki etkileri:#!\n[GetPlayer.GetCouncillorModifierDesc]"
  PORTRAIT_NO_SPOUSE: "#T Eş Yok#!"
- HEIR_TO_HEADER: "[heir|E]'a:\n"
+ HEIR_TO_HEADER: "[heir|E]'e:\n"
  CHARACTER_LINE_OF_SUCCESSION_MORE: "Ve $COUNT|V$ daha [titles|E]"
  MILITARY_STRENGTH_COMPARISON_TOOLTIP_LABEL: "#T Savunucuların askeri gücü Saldırganların askeri gücüne göre $STRENGTH|V$'dir.#!\n"
  MILITARY_STRENGTH_COMPARISON_ATTACKER_TOOLTIP_LABEL: "#T Saldırganların askeri gücü Savunucuların askeri gücünden $STRENGTH|V$ fazladır#!\n"
