@@ -3,8 +3,9 @@
 Batıdiyar'ın karmaşık siyasetini ve entrikalarını Crusader Kings 3'e taşıyan A Game of Thrones modunun Türkçe çevirisine hoş geldiniz! Bu proje, George R.R. Martin'in eşsiz _Buz ve Ateşin Şarkısı_ evrenini Türk oyun severler için daha da erişilebilir kılmak için başlatıldı. Çevirimiz, yüksek oranda makine çevirisi içermekle birlikte, zaman buldukça dosyaları gözden geçirerek anlam bozukluklarını düzeltmeye çalışıyorum. Bu süreç, modun kapsamı nedeniyle uzun sürebilir, bu yüzden sabrınız ve anlayışınız için teşekkür ederim.
 
 ### Yardımlarınızı Bekliyorum! 
-**Eğer bu projeye katkıda bulunmak isterseniz, lütfen benimle Discord üzerinden iletişime geçin. __Discord ismim:__ becel**   
-Gözümden kaçan kısımlar için ise tartışmalar kısmındaki Hatalar sayfasına gördüğünüz hataları benimle paylaşmaktan çekinmeyin. 
+**Eğer bu projeye katkıda bulunmak isterseniz, lütfen benimle Discord üzerinden iletişime geçin.
+__Discord Adresim:__ [becel](https://discordapp.com/users/898443908042883082)**   
+Gözümden kaçan kısımlar için ise tartışmalar kısmındaki Hatalar sayfasına yada Discord üzerinden benimle paylaşmaktan çekinmeyin. 
 
 ## Mevcut Durum: 
 Alfa - Test Sürümü   
