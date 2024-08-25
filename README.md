@@ -11,9 +11,9 @@ Alfa - Test Sürümü
 Son gelen ejderhalar ile ilgili güncellemeyle uyumludur. 
 
 ## Yükleme Sırası: 
-1. A Game of Thrones 
-2. Submodlar 
-3. Strategyturk Türkçe Çeviri 
+1. Strategyturk Türkçe Çeviri 
+2. A Game of Thrones 
+3. Submodlar 
 4. AGOT Turkish Localization 
 
 **Bu çeviri çalışmamda ModTranslationHelper'ı sağlayan ReimiS'e ve AGOT modunun geliştiricilerine içten teşekkürlerimi sunarım. <3** 
