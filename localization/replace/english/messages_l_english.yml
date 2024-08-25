@@ -1,476 +1,476 @@
-﻿l_english: #NT
- MESSAGE_CLICK_TOOLTIP: "[SelectLocalization(FeedMessageItem.IsExpanded,'MESSAGE_CLICK_TO_HIDE','MESSAGE_CLICK_TO_SHOW')]\n$MESSAGE_CLICK_TO_DISMISS$" #NT
- MESSAGE_CLICK_TO_HIDE: "#I Gizlemek için tıklayın.#!" #NT
- MESSAGE_CLICK_TO_SHOW: "#I Göstermek için tıklayın.#!" #NT
- MESSAGE_CLICK_TO_DISMISS: "#I Kapatmak için sağ tıklayın.#!" #NT
- MESSAGES_IN_QUEUE: "[MessageFeedHandler.GetNumberOfQueuedMessages] daha fazla mesaj" #NT
- FEED_MESSAGE_GOTO_TOOLTIP: "#T [PlayerMessageItem.GetGotoProvince.GetName].#!'ye gidin" #NT
- MESSAGE_CLEAR_ALL_TOOLTIP: "#I Kapatmak için tıklayın. \nHepsini kapatmak için sağ tıklayın.#!" #NT
- msg_marriage: "Evlilik: [GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! ve #high [RIGHT_CHARACTER.GetFirstNameNoTooltip]#!" #NT
- msg_marriage_desc: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.GetShortUINameNotMe]'iniz [RIGHT_CHARACTER.GetUINameNotMe] ile evlendi" #NT
- msg_building_done: "#high [BUILDING.GetNameNoTooltip]#! [PROVINCE.GetNameNoTooltip]'te inşa edildi" #NT
- msg_building_done_desc: "[BUILDING.GetName], [PROVINCE.GetName]'de oluşturuldu" #NT
- msg_new_heir: "Yeni Varis" #NT
- msg_new_heir_desc: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.GetUINameNoTooltip]'iniz yeni [player_heir|E]'nizdir" #NT
- msg_new_heir_newborn: "Yeni Varis" #NT
- msg_new_heir_newborn_desc: "Yeni doğan [GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] sizin yeni [player_heir|E]'inizdir" #NT
- msg_new_heir_old_heir_dead: "Yeni Varis" #NT
- msg_new_heir_old_heir_dead_desc: "[RIGHT_CHARACTER.GetUINameNoTooltip]'ın ölümüyle [GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.GetUINameNoTooltip]'niz yeni [player_heir|E]'ünüz olur" #NT
- msg_no_new_heir: "Varis yok" #NT
- msg_no_new_heir_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] artık senin [player_heir|E]'in değil" #NT
- msg_no_new_heir_old_heir_dead: "Varis yok" #NT
- msg_no_new_heir_old_heir_dead_desc: "[LEFT_CHARACTER.GetUINameNoTooltip]'ın ölümüyle [player_heir|E]'in kalmaz" #NT
- msg_inherited_single_title: "Miras" #NT
- msg_inherited_single_title_desc: "[LEFT_TITLE.GetName]'ı [CHARACTER.GetUINameNoTooltip]'den ($LAW$) devraldınız" #NT
- msg_inherited_titles: "Miras" #NT
- msg_inherited_titles_desc: "[LEFT_TITLE.GetName] ve $VALUE$ diğer Ünvanı [CHARACTER.GetUINameNoTooltip]'den ($LAW$) devraldınız" #NT
- msg_realm_law_changed: "Krallık yasası değişti" #NT
- msg_realm_law_changed_desc: "[LEFT_CHARACTER.GetTitleTierName|V] olarak alem yasalarınız artık $SUCCESSION_LAWS|V$" #NT
- msg_lost_single_title: "Ünvan Kayıp" #NT
- msg_lost_single_title_desc: "[LEFT_TITLE.GetName]'ı [CHARACTER.GetUINameNoTooltip]'e kaybettiniz" #NT
- msg_lost_titles: "Kayıp Ünvanlar" #NT
- msg_lost_titles_desc: "[LEFT_TITLE.GetName] ve diğer $VALUE$ unvanı [CHARACTER.GetUINameNoTooltip]'ye kaybettiniz" #NT
- msg_siege_started: "[PROVINCE.GetName|U] Kuşatma Altında" #NT
- msg_siege_started_desc: "[PROVINCE.GetName|U], [siege|E]'in [PROVINCE.GetSiege.GetSiegingRealmCharacter.GetUIName]'den az!" #NT
- msg_siege_won: "Kuşatma Kazanıldı" #NT
- msg_siege_won_desc: "Artık [PROVINCE.GetName]'ı kontrol ediyorsun" #NT
- msg_siege_loot: "Kuşatma Kazanıldı" #NT
- msg_siege_loot_desc: "Artık [PROVINCE.GetName]'ı kontrol ediyorsun\n[PROVINCE.GetName]'ı işgal ederek [gold_i]$VALUE|V0$ kazandın" #NT
- msg_scheme_abandoned: "Şema Terk Edildi" #NT
- msg_scheme_abandoned_desc: "$SCHEME_NAME|V$ [CHARACTER.GetUINameNoTooltip]'de terk edildi" #NT
- msg_agent_joined_my_scheme: "Ajan Katıldı Şeması: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT
- msg_agent_joined_my_scheme_desc: "[LEFT_CHARACTER.GetUINameNoTooltip], [scheme|E] ila [SCHEME.GetFullActionName]'ünüzde [agent|E] olarak katıldı" #NT
- msg_multiple_agents_joined_my_scheme: "Acenteler Katıldı Planı" #NT
- msg_multiple_agents_joined_my_scheme_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve $OTHER|V$ diğer [agents|E] sizin [scheme|E]'ünüze [SCHEME.GetFullActionName] katıldı" #NT
- msg_2_agents_joined_my_scheme: "Acenteler Katıldı Planı" #NT
- msg_2_agents_joined_my_scheme_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve [RIGHT_CHARACTER.GetUINameNoTooltip], [scheme|E]'nizi [SCHEME.GetFullActionName]'e kattı" #NT
- msg_agent_removed_my_scheme: "Ajan Programdan Kaldırıldı" #NT
- msg_agent_removed_my_scheme_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] artık [scheme|E] ila [SCHEME.GetFullActionName]'nizde bir aracı değil" #NT
- msg_2_agents_removed_my_scheme: "Ajanlar Programdan Kaldırıldı" #NT
- msg_2_agents_removed_my_scheme_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve [RIGHT_CHARACTER.GetUINameNoTooltip] artık [scheme|E] ila [SCHEME.GetFullActionName]'ünüzün bir parçası değil" #NT
- msg_multiple_agents_removed_my_scheme: "Ajanlar Programdan Kaldırıldı" #NT
- msg_multiple_agents_removed_my_scheme_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve $OTHER|V$ diğer [agents|E] artık [scheme|E] ila [SCHEME.GetFullActionName]'ünüzün bir parçası değil" #NT
- msg_scheme_froze_title: "Planınız donduruldu" #NT
- msg_scheme_froze_desc: "[scheme|E] ile [SCHEME.GetFullActionName] arasındaki $REASON$ nedeniyle donduruldu" #NT
- msg_scheme_froze_until_desc: "[scheme|E] ile [SCHEME.GetFullActionName] arasındakiler [DATE.GetString|V] tarihine kadar donduruldu çünkü $REASON$" #NT
- msg_council_task_finished_location: "Görev Tamamlandı" #NT
- msg_council_task_finished_location_desc: "[LEFT_CHARACTER.GetUINameNoTooltip], $TASK_NAME|D$ görevini $TASK_LOCATION|D$'de tamamladı" #NT
- msg_council_task_finished: "Görev Tamamlandı" #NT
- msg_council_task_finished_desc: "[LEFT_CHARACTER.GetUINameNoTooltip], $TASK_NAME|D$ görevini tamamladı" #NT
- msg_alliance: "İttifak Kuruldu: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT
- msg_alliance_desc: "[alliance|E], [LEFT_CHARACTER.GetUINameNoTooltip] ile oluşturulmuştur" #NT
- msg_broken_alliance: "İttifak Bozuldu: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT
- msg_broken_alliance_desc: "[alliance|E] ile [LEFT_CHARACTER.GetUINameNoTooltip] kırıldı" #NT
- msg_expired_alliance: "İttifakın Süresi Doldu: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT
- msg_expired_alliance_desc: "[alliance|E] ile [LEFT_CHARACTER.GetUINameNoTooltip] arasındaki ilişki [SECONDARY_ACTOR.GetUIName] ve [SECONDARY_RECIPIENT.GetUIName] artık evli veya nişanlı olmadığından sona erdi" #NT
- msg_expired_alliance_ally_death_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] öldü" #NT
- msg_alliance_became_landed: "İttifak Kuruldu: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT
- msg_alliance_became_landed_desc: "[alliance|E], [LEFT_CHARACTER.GetUINameNoTooltip] ile oluşturulmuştur çünkü [LEFT_CHARACTER.GetSheHe] artık [ruler|E]'tür" #NT
- msg_alliance_became_unlanded: "İttifak Geçersiz: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT
- msg_alliance_became_unlanded_desc: "Artık [LEFT_CHARACTER.GetUINameNoTooltip] ile [alliance|E]'ınız yok çünkü [LEFT_CHARACTER.GetSheHe] artık [ruler|E] değil" #NT
- msg_i_am_not_powerful_vassal: "Güçlü Vasal" #NT
- msg_i_am_not_powerful_vassal_desc: "Artık [LEFT_CHARACTER.GetUINameNoTooltip]'in [powerful_vassal|E]'ı olarak kabul edilmiyorsunuz" #NT
- msg_war_ally_joined: "Müttefik Savaşa Katılıyor: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT
- msg_war_ally_joined_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] [WAR.GetName|V]'e katıldı" #NT
- msg_war_ally_joined_multiple: "Müttefikler Savaşa Katılıyor" #NT
- msg_war_ally_joined_multiple_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve $VALUE|V$ kişi daha [rulers|E] kişi [WAR.GetName|V]'e katıldı" #NT
- msg_war_enemy_joined: "Düşman Müttefik Savaşa Katılıyor: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT
- msg_war_enemy_joined_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] katıldı [WAR.GetName|V]" #NT
- msg_war_enemy_joined_multiple: "Düşman Müttefikleri Savaşa Katılıyor" #NT
- msg_war_enemy_joined_multiple_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve $VALUE|V$ kişi daha [rulers|E] kişi [WAR.GetName|V]'e katıldı" #NT
- msg_war_player_joined: "Bir Savaşa Katıldınız" #NT
- msg_war_player_joined_desc: "[WAR.GetName|V]'a katıldınız" #NT
- msg_war_ally_replaced: "Müttefik Savaşa Katılıyor: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT
- msg_war_ally_replaced_desc: "[LEFT_CHARACTER.GetUINameNoTooltip], [WAR.GetName|V]'deki [RIGHT_CHARACTER.GetUINameNoTooltip]'in yerini aldı" #NT
- msg_war_enemy_replaced: "Düşman Müttefik Savaşa Katılıyor: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT
- msg_war_enemy_replaced_desc: "[LEFT_CHARACTER.GetUINameNoTooltip], [WAR.GetName|V]'deki [RIGHT_CHARACTER.GetUINameNoTooltip]'in yerini aldı" #NT
- msg_war_player_replaced: "Bir Savaşa Katıldın" #NT
- msg_war_player_replaced_desc: "[WAR.GetName|V]'deki [RIGHT_CHARACTER.GetUINameNoTooltip]'ı değiştirdiniz" #NT
- msg_war_enemy_transferred: "Yeni Savaş Hedefi: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT
- msg_war_enemy_transferred_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] artık [WAR.GetName|V]'in hedefi" #NT
- msg_war_player_transferred: "Yeni Savaş: [WAR.GetActiveCB.GetAttacker.GetUINameNoTooltip]" #NT
- msg_war_player_transferred_desc: "[WAR.GetName|V]'ın yeni hedefi sizsiniz" #NT
- msg_war_ally_transferred: "$msg_war_enemy_transferred$" #NT
- msg_war_ally_transferred_desc: "$msg_war_enemy_transferred_desc$" #NT
- msg_war_ally_removed: "Müttefik Sol Savaş: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT
- msg_war_ally_removed_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] [WAR.GetName|V]'den ayrıldı" #NT
- msg_war_ally_removed_multiple: "Müttefik Savaştan Ayrıldı: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT
- msg_war_ally_removed_multiple_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve $VALUE|V$ diğer [rulers|E] [WAR.GetName|V]'ten ayrıldı" #NT
- msg_war_enemy_removed: "Düşmanlar Savaşı Terk Etti" #NT
- msg_war_enemy_removed_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] [WAR.GetName|V]'den ayrıldı" #NT
- msg_war_enemy_removed_multiple: "Düşmanlar Savaştan Ayrıldı" #NT
- msg_war_enemy_removed_multiple_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve $VALUE|V$ diğer [rulers|E] [WAR.GetName|V]'ten ayrıldı" #NT
- msg_war_player_removed: "Savaştan Ayrıldın" #NT
- msg_war_player_removed_desc: "[WAR.GetName|V]'dan ayrıldınız" #NT
- msg_invalidation_of_council_task: "Görev İptal Edildi" #NT
- msg_invalidation_of_council_task_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] artık [ACTIVE_COUNCIL_TASK.GetName] ile devam edemez" #NT
- msg_troops_disbanding_civil_war: "Terk" #NT
- msg_troops_disbanding_civil_war_desc: "$AMOUNT$ [LEFT_CHARACTER.GetShortUINameNoTooltip]'den gelen vergiler iç savaş nedeniyle dağıtılıyor" #NT
- msg_war_declared_on_liege: "Süzerene Savaş İlan Edildi!" #NT
- msg_war_declared_on_liege_desc: "[LEFT_CHARACTER.GetShortUIName|U], [RIGHT_CHARACTER.GetShortUIName] tarafından saldırıya uğruyor" #NT
- msg_war_declared_by_liege: "Liege Savaşa Gidiyor!" #NT
- msg_war_declared_by_liege_desc: "[LEFT_CHARACTER.GetShortUIName|U], [RIGHT_CHARACTER.GetShortUIName]'e savaş ilan etti" #NT
- msg_war_declared_on_me: "#D KULLANILMAYAN MESAJ#!" #NT
- msg_war_declared_on_me_desc: "#D KULLANILMAYAN MESAJ#!" #NT
- msg_liege_war_ended_attacker_win: "#D KULLANILMAYAN MESAJ#!" #NT
- msg_liege_war_ended_attacker_win_desc: "#D KULLANILMAYAN MESAJ#!" #NT
- msg_liege_war_ended_defender_win: "#D KULLANILMAYAN MESAJ#!" #NT
- msg_liege_war_ended_defender_win_desc: "#D KULLANILMAYAN MESAJ#!" #NT
- msg_liege_war_ended_white_peace: "#D KULLANILMAYAN MESAJ#!" #NT
- msg_liege_war_ended_white_peace_desc: "#D KULLANILMAYAN MESAJ#!" #NT
- msg_liege_war_ended_invalid: "#D KULLANILMAYAN MESAJ#!" #NT
- msg_liege_war_ended_invalid_desc: "#D KULLANILMAYAN MESAJ#!" #NT
- event_message_title: "$TITLE$" #NT
- event_message_text: "$DESCRIPTION$" #NT
- event_message_text_and_effect: "$DESCRIPTION_AND_EFFECT$" #NT
- event_message_effect_and_text: "$EFFECT$\n\n$DESCRIPTION$" #NT
- event_message_effect: "$EFFECT$" #NT
- blank_line: "" #NT
- send_interface_message_tooltip: "#T Bir Etkinlikten#!" #NT
- msg_gain_trait: "Kazanılan Özellik" #NT
- msg_gain_trait_desc: "[TRAIT.GetName( CHARACTER.Self )|L] özelliğini kazandınız" #NT
- msg_lose_trait: "Kaybedilen Özellik" #NT
- msg_lose_trait_desc: "[TRAIT.GetName( CHARACTER.Self )|L] özelliğini kaybettin" #NT
- msg_gain_nickname: "Yeni Takma Ad" #NT
- msg_gain_nickname_desc: "Artık [CHARACTER.GetNickname|V] olarak tanınıyorsunuz" #NT
- msg_lost_nickname: "Kayıp Takma Ad" #NT
- msg_lost_nickname_desc: "Artık [CHARACTER.GetNickname|V] olarak tanınmıyorsunuz" #NT
- msg_title_rank_up: "Kazanılan Ünvan" #NT
- msg_title_rank_up_desc: "Artık güçlü bir [CHARACTER.GetTitleTierName|V]'sın" #NT
- msg_title_rank_down: "Ünvan Kaybı" #NT
- msg_title_rank_down_desc: "Artık sadece bir [CHARACTER.GetTitleTierName|V]'sın" #NT
- msg_change_primary: "Birincil Ünvan Değiştirildi" #NT
- msg_change_primary_desc: "[primary_title|E]'ınız artık [TITLE.GetNameNoTier]" #NT
- msg_disbanded_faction_target_died: "Fraksiyon Dağıtıldı" #NT
- msg_disbanded_faction_target_died_desc: "[FACTION.GetName] hedef [CHARACTER.GetUINameNoTooltip] öldü, bu nedenle grup dağıtıldı" #NT
- msg_removed_from_faction_not_valid: "Terk Edilmiş Grup" #NT
- msg_removed_from_faction_not_valid_desc: "[CHARACTER.GetUINameNoTooltip]'e karşı [FACTION.GetName]'dan ayrılmak zorundaydınız.\n$REASONS$" #NT
- msg_removed_from_faction_not_valid_leader: "Fraksiyon Dağıtıldı" #NT
- msg_removed_from_faction_not_valid_leader_desc: "[FACTION.GetName]'a karşı [CHARACTER.GetUINameNoTooltip] geçerli bir lidere sahip değil, bu nedenle grup dağıtıldı" #NT
- msg_removed_from_faction_not_liege: "Sol Fraksiyon" #NT
- msg_removed_from_faction_not_liege_desc: "[CHARACTER.GetUINameNoTooltip] artık sizin hükümdarınız değil, bu yüzden [FACTION.GetName]'i [CHARACTER.GetHerHim]'ye karşı terk ettiniz" #NT
- msg_faction_against_liege_or_me_created: "[RIGHT_CHARACTER.GetShortUINameNoTooltip]'a karşı Grup Oluşturuldu!" #NT
- msg_faction_against_liege_or_me_created_desc: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.GetShortUINameNoTooltip]'iniz [RIGHT_CHARACTER.GetShortUINameNoTooltip]'e karşı [FACTION.GetName]'yi yarattı" #NT
- msg_county_faction_against_liege_or_me_created_desc: "[LEFT_TITLE.GetNameNoTooltip], [RIGHT_CHARACTER.GetShortUINameNoTooltip]'yi hedef alarak [FACTION.GetName]'i doğurdu" #NT
- msg_faction_against_me_disbanded: "Sizi hedef alan bir Fraksiyon Dağıtıldı!" #NT
- msg_faction_against_me_disbanded_desc: "Sizi hedef alan aşağıdaki [faction|E] dağıldı: [FACTION.GetName]" #NT
- msg_my_faction_disbanded: "Fraksiyon Dağıtıldı" #NT
- msg_my_faction_disbanded_desc: "[FACTION.GetName] dağıtıldı" #NT
- msg_liege_passed_law: "Yeni yasa" #NT
- msg_liege_passed_law_desc: "Efendiniz yasayı çıkardı [LAW.GetName]" #NT
- msg_liege_passed_title_law: "Yeni Tapu Kanunu" #NT
- msg_liege_passed_title_law_desc: "Efendiniz [LAW.GetName] tarihinde [TITLE.GetName] yasasını çıkardı" #NT
- msg_liege_removed_title_law: "Ünvan Yasası Kaldırıldı" #NT
- msg_liege_removed_title_law_desc: "Efendiniz [LAW.GetName] yasasını [TITLE.GetName]'den kaldırdı" #NT
- msg_law_invalidated_no_new_law: "Yasa Kaldırıldı" #NT
- msg_law_invalidated_no_new_law_desc: "[LAW.GetName] artık geçerli değil ve kaldırıldı." #NT
- msg_law_invalidated: "Kanun Değiştirildi" #NT
- msg_law_invalidated_desc: "[LAW.GetName] artık geçerli değil ve [TARGET_LAW.GetName] ile değiştirildi" #NT
- msg_faction_local_not_leader_anymore: "Yeni Fraksiyon Lideri" #NT
- msg_faction_local_not_leader_anymore_desc: "[LEFT_CHARACTER.GetShortUINameNoTooltip], [FACTION.GetName]'in lideri olarak sizin yerinize geçti" #NT
- msg_faction_local_becomes_leader: "Yeni Fraksiyon Lideri" #NT
- msg_faction_local_becomes_leader_desc: "Artık [FACTION.GetName]'ın [CHARACTER.GetShortUINameNoTooltip]'e karşı liderisiniz" #NT
- msg_faction_forced_to_join: "Fraksiyona Katılmaya Zorlanmak" #NT
- msg_faction_forced_to_join_desc: "[RIGHT_CHARACTER.GetShortUINameNoTooltip], [LEFT_CHARACTER.GetShortUINameNoTooltip]'e karşı [FACTION.GetName]'e katılmanızı zorlamak için [RIGHT_CHARACTER.GetHerHis] [hook|E]'yi kullandı" #NT
- msg_betrothal_invalidated: "Nişan geçersiz" #NT
- msg_betrothal_invalidated_desc: "Yeni [faith|E]'ınız artık [LEFT_CHARACTER.GetShortUIName] ile nişanlı olmayabileceğinizi belirtiyor" #NT
- msg_betrothal_invalidated_player_heir: "[player_heir|E] $msg_betrothal_invalidated$" #NT
- msg_betrothal_invalidated_player_heir_desc: "[LEFT_CHARACTER.GetShortUINamePossessive] yeni [faith|E], [LEFT_CHARACTER.GetSheHe]'nin artık [RIGHT_CHARACTER.GetShortUIName] ile nişanlı olamayacağını belirtir" #NT
- msg_break_betrothal: "Nişan Bozuldu" #NT
- msg_break_betrothal_desc: "[betrothal|E] ile [LEFT_CHARACTER.GetShortUIName] arasındaki kodunuz bozuldu." #NT
- msg_break_betrothal_player_heir: "[player_heir|E] $msg_break_betrothal$" #NT
- msg_break_betrothal_player_heir_desc: "[LEFT_CHARACTER.GetShortUINamePossessive] [betrothal|E] ile [RIGHT_CHARACTER.GetShortUIName] arası bozuldu." #NT
- msg_spouse_invalidated: "Eş Geçersiz" #NT
- msg_spouse_invalidated_desc: "[faith|E] veya [culture|E]'inizin değerleri, [LEFT_CHARACTER.GetShortUIName]'nin artık sizin [spouse|E]'ünüz olmadığı anlamına gelir" #NT
- msg_divorce: "Boşanmak" #NT
- msg_divorce_desc: "[LEFT_CHARACTER.GetShortUIName]'den [divorced|E] aldınız – [LEFT_CHARACTER.GetSheHe] artık [spouse|E]'ünüz değil" #NT
- msg_spouse_invalidated_player_heir: "[player_heir|E] $msg_spouse_invalidated$" #NT
- msg_spouse_invalidated_player_heir_desc: "[LEFT_CHARACTER.GetShortUINamePossessive] yeni [faith|E]'in inançları, [RIGHT_CHARACTER.GetShortUIName]'nin artık [LEFT_CHARACTER.GetHerHis] [spouse|E] olmadığı anlamına geliyor" #NT
- msg_divorce_player_heir: "[player_heir|E] $msg_divorce$" #NT
- msg_divorce_player_heir_desc: "[LEFT_CHARACTER.GetShortUIName], [RIGHT_CHARACTER.GetShortUIName]'den [divorced|E] aldı – [RIGHT_CHARACTER.GetSheHe] artık [LEFT_CHARACTER.GetHerHis] değil [spouse|E]" #NT
- msg_betrothal_fulfilled: "Nişan gerçekleşti" #NT
- msg_betrothal_fulfilled_desc: "[LEFT_CHARACTER.GetShortUIName|U] ve [RIGHT_CHARACTER.GetShortUIName] artık evli" #NT
- msg_marriage_forced: "Güçlü Kozla Evlilik" #NT
- msg_marriage_forced_desc: "[LEFT_CHARACTER.GetShortUIName|U] ve [RIGHT_CHARACTER.GetShortUIName], [strong_hook|E] nedeniyle evleniyor" #NT
- msg_consort_invalidated: "Eş geçersiz" #NT
- msg_consort_invalidated_desc: "[faith|E] veya [culture|E] değerleriniz, [LEFT_CHARACTER.GetShortUIName]'nin artık Eşiniz olmadığı anlamına gelir" #NT
- msg_war_casus_belli_changed: "Casus Belli Değişti" #NT
- msg_war_casus_belli_changed_desc: "[WAR.GetName] yeni bir [casus_belli|E] kullanıyor" #NT
- msg_cadet_branch_created: "Alt Hane" #NT
- msg_cadet_branch_created_desc: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.GetShortUIName]'iniz [cadet_branch|E] $NAME|V$'ü oluşturdu" #NT
- msg_i_became_head_of_house: "Hane Başkanı Değişti" #NT
- msg_i_became_head_of_house_desc: "$NAME|V$ Evi'nin yeni [house_head|E]'ı oldun" #NT
- msg_i_not_head_of_house_anymore: "Hane Başkanı Değişti" #NT
- msg_i_not_head_of_house_anymore_desc: "[LEFT_CHARACTER.GetShortUIName|U], $NAME|V$ hanedanının [house_head|E]'i olarak sizin yerinizi aldı" #NT
- msg_became_head_of_house: "Hane Başkanı Değişti" #NT
- msg_became_head_of_house_desc: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.GetShortUIName]'iniz $NAME|V$ Hanesi'nin yeni [house_head|E]'si oldu" #NT
- msg_i_became_dynast: "Hanedanlık Başkanı Değişti" #NT
- msg_i_became_dynast_desc: "$NAME|V$ hanedanının yeni [dynast|E]'ı oldun" #NT
- msg_i_not_dynast_anymore: "Hanedanlık Başkanı Değişti" #NT
- msg_i_not_dynast_anymore_desc: "[LEFT_CHARACTER.GetShortUIName|U], $NAME|V$ hanedanının [dynast|E]'i olarak sizin yerinizi aldı" #NT
- msg_became_dynast: "Hanedanlık Başkanı Değişti" #NT
- msg_became_dynast_desc: "[LEFT_CHARACTER.GetShortUIName|U], $NAME|V$ hanedanının yeni [dynast|E]'i oldu" #NT
- msg_i_became_head_of_faith: "İnancın Başı Değişti" #NT
- msg_i_became_head_of_faith_desc: "[FAITH.GetName]'in yeni [FAITH.ReligiousHeadName]'ı oldun" #NT
- msg_i_became_head_of_multiple_faiths: "$msg_i_became_head_of_faith$" #NT
- msg_i_became_head_of_multiple_faiths_desc: "$msg_i_became_head_of_faith_desc$ ve $NUM_OTHER_FAITHS|V$ diğer inançlar" #NT
- msg_i_not_head_of_faith_anymore: "İnancın Başı Değişti" #NT
- msg_i_not_head_of_faith_anymore_desc: "[LEFT_CHARACTER.GetShortUIName|U], [FAITH.GetName]'nin [FAITH.ReligiousHeadName]'i olarak sizi değiştirdi" #NT
- msg_i_not_head_of_multiple_faiths_anymore: "$msg_i_not_head_of_faith_anymore$" #NT
- msg_i_not_head_of_multiple_faiths_anymore_desc: "$msg_i_not_head_of_faith_anymore_desc$ ve $NUM_OTHER_FAITHS|V$ diğer inanç" #NT
- msg_new_fascination_selected: "Yeni [cultural_fascination|E]" #NT
- msg_new_fascination_selected_desc: "[culture|E]'ınız artık $NAME|V$ [innovation|E] tarafından [Concept( 'fascination', 'Fascinated' )|E] oldu" #NT
- msg_innovation_discovered: "Keşfedilen Yenilik" #NT
- msg_innovation_discovered_desc: "[culture|E]'ınız $NAME|V$'i keşfetti!" #NT
- msg_fascination_discovered: "Büyüleyicilik Keşfedildi" #NT
- msg_fascination_discovered_desc: "[culture|E]'ınız [fascination|E] $NAME|V$'yi keşfetti!\nYeni bir ilgi alanı seçilebilir." #NT
- msg_era_discovered: "Yeni Kültürel Çağ" #NT
- msg_era_discovered_desc: "Kültürünüz $NAME|N$ dönemine girdi.\nYeni yenilikler mevcut!" #NT
- msg_first_era_discovered: "Yeni Kültürel Çağ" #NT
- msg_first_era_discovered_desc: "[CULTURE.GetName], $NAME|V$ dönemini başlattı" #NT
- msg_no_longer_culture_head: "Yeni [culture_head|E]" #NT
- msg_no_longer_culture_head_desc: "[LEFT_CHARACTER.GetShortUIName|U] [culture_head|E] olarak yerinizi aldı" #NT
- msg_become_culture_head: "Yeni [culture_head|E]" #NT
- msg_become_culture_head_desc: "[CULTURE.GetName] kültürünün [culture_head|E]'ı oldun!" #NT
- msg_new_theocracy_lesse: "Yeni [LEFT_CHARACTER.GetCouncilTitle]" #NT
-  #AGOT Modified  #NT
- #msg_new_theocracy_lesee_approve_desc: "[LEFT_CHARACTER.GetShortUIName|U] sizi destekliyor #weak ([church_property|E])#!" #NT
- #msg_new_theocracy_lesee_disapprove_desc: "[LEFT_CHARACTER.GetShortUIName|U] sizi desteklemiyor #weak ([church_property|E])#!" #NT
- msg_new_theocracy_lesee_approve_desc: "[LEFT_CHARACTER.GetFirstNameNicknamedNoTooltip] sizi destekliyor #weak ([church_property|E])#!" #NT
- msg_new_theocracy_lesee_disapprove_desc: "[LEFT_CHARACTER.GetFirstNameNicknamedNoTooltip] sizi desteklemiyor #weak ([church_property|E])#!" #NT
- msg_mercenary_company_dismissed: "Paralı Asker Şirketi görevden alındı" #NT
- msg_mercenary_company_dismissed_desc: "[LEFT_TITLE.GetNameNoTooltip]'ın sözleşmesi sona erdi ve askerler görevden alındı" #NT
- msg_holy_order_dismissed: "Kutsal Düzen görevden alındı" #NT
- msg_holy_order_dismissed_desc: "[LEFT_TITLE.GetNameNoTooltip] reddedildi" #NT
- msg_fired_from_council: "Konseyden Kovuldu" #NT
- msg_fired_from_council_desc: "[LEFT_CHARACTER.GetShortUIName|U] seni [council|E]'den kovdu" #NT
- msg_council_swap_position: "Yeni Konsey Pozisyonu" #NT
- msg_council_swap_position_desc: "Artık [LEFT_CHARACTER.GetShortUINamePossessive] [council|E]'de $POSITION_NAME$'sın" #NT
- msg_left_council_position: "Meclis Üyesi Sol" #NT
- msg_left_council_position_desc: "[LEFT_CHARACTER.GetShortUIName|U] sol [LEFT_CHARACTER.GetHerHis] pozisyon $POSITION_NAME$ olarak" #NT
- msg_peace_armies_disbanded: "Huzur içinde" #NT
- msg_peace_armies_disbanded_desc: "Sonunda huzura kavuştun, bu yüzden tüm orduların dağıtıldı" #NT
- msg_invalidate_war_title: "[war.GetName] sona erdi: devam etmek artık geçerli değildi." #NT
- msg_claim_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] talep edilen İlçelerden hiçbiri yok." #NT
- msg_claim_war_invalidated_claimant_unavailable_dead_message: "[war.GetName] sona erdi: [claimant.GetShortUIName] öldü ve bu nedenle [claimant.GetHerHis] iddiası artık [attacker.GetShortUIName] tarafından kullanılamaz." #NT
- msg_claim_war_invalidated_claimant_unavailable_not_vassal_message: "[war.GetName] sona erdi: [claimant.GetShortUIName], [attacker.GetShortUIName]'nin vasalı veya saray mensubu değil ve bu nedenle [claimant.GetHerHis] iddiası artık kullanılamaz." #NT
- msg_de_jure_duchy_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık hedeflenen düklükte hiçbir arazi yok." #NT
- msg_de_jure_county_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] İlçe değil." #NT
- msg_de_jure_duchy_war_invalidated_liege_war_message: "[war.GetName] sona erdi: [Select_CString( attacker.IsLocalPlayer, 'You', attacker.GetShortUIName )] katıldı [Select_CString( attacker.IsLocalPlayer, 'your', attacker.GetHerHis )] hükümdarın [Select_CString( defender.IsLocalPlayer, 'you', defender.GetShortUIName )]'e karşı savaşına." #NT
- msg_de_jure_all_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] fiili olarak talep edilen herhangi bir arazi yok." #NT
- msg_religious_war_invalidation_region_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık hedef bölgede [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] hiçbir arazi yok." #NT
- msg_religious_war_invalidated_hostility_level_message: "[war.GetName] sona erdi: [attacker.GetShortUIName] [defender.GetFaith.GetAdjective] [faith|E]'ü $game_concept_holy_war$ geçemez." #NT
- msg_invasion_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık hedef bölgede [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] hiçbir arazi yok." #NT
- msg_mongol_invasion_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık hedef bölgede [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] hiçbir arazi yok." #NT
- msg_county_conquest_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] İlçe değil." #NT
- msg_duchy_conquest_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık hedef bölgede [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] hiçbir arazi yok." #NT
- msg_vassalization_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık vasallaştırılamaz." #NT
- msg_subjugation_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık boyunduruk altına alınamaz." #NT
- msg_excommunication_war_invalidation_trait_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık aforoz değil." #NT
- msg_raid_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetTitledFirstName] artık basılamaz" #NT
- msg_free_house_member_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetTitledFirstName]'in artık [house|E] [attacker.GetHouse.GetBaseNameNoTooltip]'ün tutuklu üyeleri yok" #NT
- msg_unify_house_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetTitledFirstName]'in artık [house|E]'nin [attacker.GetHouse.GetBaseNameNoTooltip]'ün vasalları yok" #NT
- msg_my_hook_replaced: "Koz Değiştirildi" #NT
- msg_my_hook_replaced_desc: "[LEFT_CHARACTER.GetShortUIName]'deki [hook|E]'ınız [HOOK.GetName] Kozsıyla değiştirildi" #NT
- msg_my_hook_added: "Koz Kazanıldı" #NT
- msg_my_hook_added_desc: "[LEFT_CHARACTER.GetShortUIName] üzerinde [HOOK.GetName] [hook|E] kazandınız" #NT
- msg_hook_on_me_replaced: "Hook on You Değiştirildi" #NT
- msg_hook_on_me_replaced_desc: "[LEFT_CHARACTER.GetShortUINamePossessive] [hook|E] üzerinizdeki [HOOK.GetName] Kozsı ile değiştirildi" #NT
- msg_hook_on_me_added: "Kozya Takıl Kazandın" #NT
- msg_hook_on_me_added_replaced: "Kozya Takıl Kazandın" #NT
- msg_hook_on_me_added_desc: "[LEFT_CHARACTER.GetShortUIName|U] sizden [HOOK.GetName] [hook|E] kazandı" #NT
- msg_hook_on_me_expired: "Hook on You Süresi Doldu" #NT
- msg_hook_on_me_expired_desc: "[LEFT_CHARACTER.GetShortUINamePossessive] $HOOK_NAME$ [hook|E] sizin için süresi doldu" #NT
- msg_my_hook_expired: "Koznın Süresi Doldu" #NT
- msg_my_hook_expired_desc: "[LEFT_CHARACTER.GetShortUIName] üzerindeki [hook|E]'ınız sona erdi" #NT
- death_notification_title: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )|U] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#!'ünüz Öldü" #NT
- lover_death_notification_title: "Sevgilin #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Öldü" #NT
- friend_death_notification_title: "Arkadaşın #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Öldü" #NT
-  #AGOT Modified  #NT
- #councillor_death_notification_title: "Danışmanınız #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Öldü" #NT
- councillor_death_notification_title: "Danışmanınız Öldü" #NT
- msg_perk_point_added: "[LIFESTYLE.GetName] Avantaj Mevcut" #NT
- msg_perk_point_added_desc: "[LIFESTYLE.GetName] Yaşam Tarzı için yeni bir Avantajın kilidini açabilirsiniz" #NT
- msg_focus_invalidated: "Yaşam Tarzı Odaklılığı Geçersiz Kılındı" #NT
- msg_focus_invalidated_desc: "[FOCUS.GetName] geçersiz kılındı" #NT
- msg_dynasty_perk_added: "[DYNASTY_PERK.GetName] Kilidi Açıldı" #NT
- msg_dynasty_perk_added_desc: "[dynasty|E]'ınız [DYNASTY_PERK.GetName]'i açtı" #NT
- msg_dynasty_perk_removed: "[DYNASTY_PERK.GetName] Kayıp" #NT
- msg_dynasty_perk_removed_desc: "[dynasty|E]'ınız [DYNASTY_PERK.GetName] kaybetti" #NT
- msg_vassal_feudalised: "Vassal Feodal oldu" #NT
- msg_vassal_feudalised_desc: "Vasalınız [ROOT.Char.GetShortUIName], [ROOT.Char.GetHerHis] kabile geleneklerinden vazgeçti ve feodal oldu" #NT
- msg_dynasty_prestige_level_increase: "[dynasty_prestige_level|E] Arttırıldı" #NT
- msg_dynasty_prestige_level_increase_desc: "[LEFT_CHARACTER.GetDynasty.GetBaseName] hanedanı her yerde biliniyor." #NT
- msg_dynasty_prestige_level_dencrease: "Kayıp [dynasty_prestige_level|E]" #NT
- msg_dynasty_prestige_level_dencrease_desc: "[LEFT_CHARACTER.GetDynasty.GetBaseName] hanedanı itibarını yitirdi" #NT
- piety_level_gain.message: "Kazanılan [piety_level|E]" #NT
- piety_level_gain.desc: "İnancınıza olan bağlılığınızla tanınıyorsunuz" #NT
- piety_level_loss.message: "Kayıp [piety_level|E]" #NT
- piety_level_loss.desc: "Günahkar eylemlerinizin bir bedeli var" #NT
- prestige_level_gain.message: "Kazanılan [prestige_level|E]" #NT
- prestige_level_gain.desc: "Şanınız herkesçe biliniyor" #NT
- prestige_level_loss.message: "Kayıp [prestige_level|E]" #NT
- prestige_level_loss.desc: "Şerefsizliğinizin bir bedeli var" #NT
- stress_level_reduced.message: "Azaltıldı [stress_level|E]" #NT
- stress_level_reduced.text: "Artık [stress|E] tarafından bunalmış hissetmiyorsunuz" #NT
- msg_holy_order_patronage_lost: "[holy_order|E] Himaye Kaybedildi" #NT
- msg_holy_order_patronage_lost_desc: "[LEFT_TITLE.GetName] [holy_order|E]'in himayesini kaybettiniz" #NT
- msg_holy_order_patronage_gained: "[holy_order|E] Himaye Kazanıldı" #NT
- msg_holy_order_patronage_gained_desc: "[LEFT_TITLE.GetName] [holy_order|E]'in himayesini kazandınız" #NT
- msg_murder_scheme_agent_join_title: "Ajan Cinayet Planına katıldı" #NT
- msg_murder_scheme_agent_join_message: "[agent.GetTitledFirstName], [target.GetTitledFirstName]'i öldürme planınıza katıldı." #NT
- msg_murder_scheme_agent_leave_title: "Ajan cinayet planından ayrıldı" #NT
- msg_murder_scheme_agent_leave_message: "[agent.GetTitledFirstName] senin [target.GetTitledFirstName]'i öldürme planını bıraktı." #NT
- mongols_sieged_county.t: "[county.GetName] Moğol Ordusu Tarafından Yerle Bir Edildi" #NT
- msg_vassal_contract_level_invalidated: "[obligation|E] Geçersiz kılındı" #NT
- msg_vassal_contract_level_invalidated_desc: "[RIGHT_CHARACTER.GetUINamePossessiveNoTooltip] $OBLIGATION_TYPE_0|V$ yükümlülüğü geçersiz kılındı" #NT
- msg_vassal_contract_2_levels_invalidated: "[obligations|E] Geçersiz kılındı" #NT
- msg_vassal_contract_2_levels_invalidated_desc: "[RIGHT_CHARACTER.GetUINamePossessiveNoTooltip] $OBLIGATION_TYPE_0|V$ ve $OBLIGATION_TYPE_1|V$ yükümlülükleri geçersiz kılındı" #NT
- msg_vassal_contract_multiple_levels_invalidated: "[obligations|E] Geçersiz kılındı" #NT
- msg_vassal_contract_multiple_levels_invalidated_desc: "[RIGHT_CHARACTER.GetUINamePossessiveNoTooltip] $OBLIGATION_TYPE_0|V$ ve $OBLIGATION_TYPE_1|V$ ve $COUNT|V$ diğer yükümlülükler geçersiz kılındı" #NT
- msg_force_vote_in_succession_election_message: "[recipient.GetTitledFirstName]'ı önümüzdeki [GetDefine('NCharacter', 'FORCED_SUCCESSION_ELECTION_YEARS')] yıl boyunca sizinle aynı adaya oy vermeye zorluyorsunuz." #NT
- msg_recruited_guest_to_court_interaction_title: "Mahkemenize Davetli Misafir" #NT
- msg_recruited_guest_to_court_interaction_message: "[recipient.GetTitledFirstName] artık [court|E]'inizin bir üyesi." #NT
- msg_kicked_courtier_from_court_interaction_title: "Görevden alınan saray mensubu" #NT
- msg_courtier_left_court_interaction_title: "Saraylı Sol" #NT
- msg_hired_court_physician_interaction_title: "Saray Hekimi Kiralandı" #NT
- msg_hired_court_physician_interaction_message: "[recipient.GetTitledFirstName] artık sizin [GetCourtPositionType('court_physician_court_position').GetName()]'iniz." #NT
- msg_fired_court_physician_interaction_title: "Saray Hekimi İşten Çıkarıldı" #NT
- msg_fired_court_physician_interaction_message: "[recipient.GetTitledFirstName] isimli oyuncuyu [GetCourtPositionType('court_physician_court_position').GetName()] pozisyonundan kovdun." #NT
- msg_concubine_taken_title: "Bir Cariye Alındı" #NT
- msg_concubine_accepted_title: "[secondary_actor.GetShortUIName]'ı cariyem olarak kabul ettim" #NT
- msg_concubine_dismissed_title: "İşten çıkarılan cariye" #NT
- msg_concubine_offered_title: "Yapılan [secondary_actor.GetTitledFirstName] [recipient.GetTitledFirstNamePossessive] cariye" #NT
- msg_concubine_offered_invalidated_title: "Cariye Teklif Edilemedi" #NT
- msg_concubine_offered_invalidated_recipient_title: "Cariyeyi Kabul Edemedim" #NT
- msg_concubine_offered_invalidated_consort: "[secondary_actor.GetTitledFirstName], [spouse.GetShortUINamePossessive] eştir ve bu nedenle [recipient.GetShortUINamePossessive] cariye olamaz" #NT
- msg_concubine_offered_invalidated_betrothed: "[secondary_actor.GetTitledFirstName], [spouse.GetShortUIName] ile nişanlıdır ve bu nedenle [recipient.GetShortUINamePossessive]'nin cariyesi olamaz" #NT
- msg_concubine_offer_rejected_title: "Cariye Reddedildi" #NT
- msg_concubine_offer_rejected: "[recipient.GetTitledFirstName] reddedildi [secondary_actor.GetTitledFirstName] [recipient.GetHerHis] cariye olarak" #NT
- msg_close_family_member_taken_as_concubine_title: "[recipient.GetTitledFirstName] Cariye Olarak Alındı" #NT
- msg_close_family_member_offered_as_concubine_title: "[secondary_actor.GetTitledFirstName] Cariye Olarak Alındı" #NT
- msg_move_prisoner_to_dungeon: "Mahkum Zindana taşındı" #NT
- msg_move_prisoner_to_house_arrest: "Mahkum ev hapsine alındı" #NT
- msg_execute_prisoner: "Mahkum İdam Edildi" #NT
- msg_execute_prisoner_desc: "[recipient.GetTitledFirstName] [recipient.GetDeathReason]" #NT
- msg_artifact_gained_title: "Miras: [artifact_inherited.GetNameNoTooltip]" #NT
- msg_artifact_gained_desc: "[old_owner.GetUIName]'den [artifact_inherited.GetNameNoTooltip]'ı devraldın!" #NT
- msg_rival_dethroned: "Rakibiniz [actor.GetTitledFirstName] bir Şampiyonluk kaybetti" #NT
- msg_rival_dethroned_desc: "[rival|E] [actor.GetTitledFirstName]'iniz [title.GetBaseName]'yi kaybetti" #NT
- msg_court_position_gained: "Atandı [COURT_POSITION_TYPE.GetNameNoTooltip]" #NT
- msg_court_position_gained_desc: "Atandınız [LEFT_CHARACTER.GetShortUINamePossessive] [COURT_POSITION_TYPE.GetNameNoTooltip]" #NT
- msg_court_position_removed: "[COURT_POSITION_TYPE.GetNameNoTooltip] Pozisyon İptal Edildi" #NT
- msg_court_position_removed_desc: "[LEFT_CHARACTER.GetShortUIName] artık sizi [COURT_POSITION_TYPE.GetNameNoTooltip] olarak işe almıyor" #NT
- msg_court_position_invalidated_employee: "[COURT_POSITION_TYPE.GetNameNoTooltip] Pozisyon Kaybı" #NT
- msg_court_position_invalidated_employee_desc: "[LEFT_CHARACTER.GetShortUIName] artık sizi [COURT_POSITION_TYPE.GetNameNoTooltip] olarak işe alamaz" #NT
- msg_court_position_invalidated_employer: "[COURT_POSITION_TYPE.GetNameNoTooltip] Pozisyon Boşaldı" #NT
- msg_court_position_invalidated_employer_desc: "[LEFT_CHARACTER.GetShortUIName] artık senin [COURT_POSITION_TYPE.GetNameNoTooltip]'in değil" #NT
- msg_becomes_obese: "Obez oldu" #NT
- msg_becomes_obese_desc: "[GetModifier( 'obese_modifier' ).GetNameWithTooltip] oldun" #NT
- msg_becomes_malnourished: "Yetersiz Beslendi" #NT
- msg_becomes_malnourished_desc: "[GetModifier( 'malnourished_modifier' ).GetNameWithTooltip] oldun" #NT
- msg_stops_being_obese: "Artık Obez Değilim" #NT
- msg_stops_being_obese_desc: "Artık [GetModifier( 'obese_modifier' ).GetNameWithTooltip] değilsin" #NT
- msg_stops_being_malnourished: "Artık yetersiz beslenmiyorum" #NT
- msg_stops_being_malnourished_desc: "Artık [GetModifier( 'malnourished_modifier' ).GetNameWithTooltip] değilsin" #NT
- msg_event_timeout: "Etkinlik zaman aşımına uğradı: $EVENT_NAME$" #NT
- msg_event_timeout_desc: "$EVENT_TIMEOUT_EFFECTS$" #NT
- msg_event_timeout_tt: "$EVENT_TIMEOUT_EFFECTS$" #NT
- msg_letter_event_timeout: "[CHARACTER.GetShortUIName]'dan gelen etkinlik zaman aşımına uğradı" #NT
- msg_letter_event_timeout_desc: "$EVENT_TIMEOUT_EFFECTS$" #NT
- msg_letter_event_timeout_tt: "$EVENT_TIMEOUT_EFFECTS$" #NT
- msg_court_amenity_setting_invalidated: "Saray Uygunluk ayarı geçersiz kılındı" #NT
- msg_court_amenity_setting_invalidated_desc: "Saray Kolaylığı ayarı $INVALID_SETTING$ geçersiz kılındı ​​ve $DEFAULT_SETTING$ ile değiştirildi." #NT
- msg_catalyst_triggered: "$STRUGGLE_NAME$: $game_concept_struggle_catalyst_catalyst$ Tetiklendi" #NT
- msg_catalyst_triggered_desc: "[struggle_catalyst|E], [CHARACTER.GetTitledFirstName] tarafından tetiklendi: $CATALYST_INFO$\n\n$STRUGGLE_PHASE$ [struggle_phase_phase|E]'e doğru ilerleme: $CATALYST_VALUE|+=$" #NT
- msg_catalyst_triggered_tt: "$msg_catalyst_triggered_desc$" #NT
- msg_catalyst_triggered_no_character: "$msg_catalyst_triggered$" #NT
- msg_catalyst_triggered_no_character_desc: "[struggle_catalyst|E] tetiklendi: $CATALYST_INFO$\n\n$STRUGGLE_PHASE$ [struggle_phase_phase|E]'e doğru ilerleme: $CATALYST_VALUE|+=$" #NT
- msg_catalyst_triggered_no_character_tt: "$msg_catalyst_triggered_no_character_desc$" #NT
- msg_player_character_changed: "$PLAYER_CHANGED_CHARACTER_TITLE_SWITCH$" #NT
- msg_player_character_changed_desc: "$PLAYER_CHANGED_CHARACTER_TEXT_SWITCH$" #NT
- msg_player_character_changed_tt: "$msg_player_character_changed_desc$" #NT
- msg_player_new_character: "$PLAYER_CHANGED_CHARACTER_TITLE_JOIN$" #NT
- msg_player_new_character_desc: "$PLAYER_CHANGED_CHARACTER_TEXT_JOIN$" #NT
- msg_player_new_character_tt: "$msg_player_new_character_desc$" #NT
- msg_player_new_observer: "$PLAYER_CHANGED_CHARACTER_TITLE_OBSERVER$" #NT
- msg_player_new_observer_desc: "$PLAYER_CHANGED_CHARACTER_TEXT_OBSERVER$" #NT
- msg_player_new_observer_tt: "$msg_player_new_observer_desc$" #NT
- msg_struggle_phase_end: "$STRUGGLE_PHASE$ Aşaması Geçiş Aşamasında" #NT
- msg_struggle_phase_end_desc: "@$STRUGGLE_PHASE_ICON$! $STRUGGLE_PHASE$, @$STRUGGLE_PHASE_ICON_NEXT$'ye geçiş yapıyor! $STRUGGLE_PHASE_NEXT$.\n\n $STRUGGLE_PHASE_NEXT$ $DAYS_UNTIL_TRANSITION$ gün içinde başlayacak." #NT
- msg_struggle_phase_end_tt: "$msg_struggle_phase_transitioned_tt$" #NT
- msg_struggle_phase_transitioned: "Faz Geçişli" #NT
- msg_struggle_phase_transitioned_desc: "$STRUGGLE_NAME$ @$STRUGGLE_PHASE_ICON$'e dönüştü! $STRUGGLE_PHASE$." #NT
- msg_struggle_phase_transitioned_tt: "$msg_struggle_phase_transitioned_desc$" #NT
- msg_set_relation_friend_title: "@friend_icon! Bir Arkadaş Edindim" #NT
- msg_set_relation_friend_desc: "[GetRelation( 'friend' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]" #NT
- msg_set_relation_best_friend_title: "@best_friend_icon! En İyi Arkadaşlar Oldular" #NT
- msg_set_relation_best_friend_desc: "[GetRelation( 'best_friend' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]" #NT
- msg_set_relation_rival_title: "@rival_icon! Bir Rakip Kazandım" #NT
- msg_set_relation_rival_desc: "[GetRelation( 'rival' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]" #NT
- msg_set_relation_nemesis_title: "@nemesis_icon! Nemesis Kazanıldı" #NT
- msg_set_relation_nemesis_desc: "[GetRelation( 'nemesis' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]" #NT
- msg_set_relation_lover_title: "@lover_icon! Bir Sevgili Kazandım" #NT
- msg_set_relation_lover_desc: "[GetRelation( 'lover' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]" #NT
- msg_set_relation_soulmate_title: "@soulmate_icon! Ruh eşini buldum" #NT
- msg_set_relation_soulmate_desc: "[GetRelation( 'soulmate' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]" #NT
- msg_house_unity_change_stage: "Ev Birliği Seviyesi Değişti" #NT
- msg_house_unity_change_stage_desc: "[house_unity|E]'ınız Seviye $HOUSE_UNITY_STAGE_NAME|U$'e değişti" #NT
- msg_house_unity_change_stage_tt: "$msg_house_unity_change_stage_desc$" #NT
+﻿l_english: #NT!
+ MESSAGE_CLICK_TOOLTIP: "[SelectLocalization(FeedMessageItem.IsExpanded,'MESSAGE_CLICK_TO_HIDE','MESSAGE_CLICK_TO_SHOW')]\n$MESSAGE_CLICK_TO_DISMISS$" #NT!
+ MESSAGE_CLICK_TO_HIDE: "#I Gizlemek için tıklayın.#!" #NT!
+ MESSAGE_CLICK_TO_SHOW: "#I Göstermek için tıklayın.#!" #NT!
+ MESSAGE_CLICK_TO_DISMISS: "#I Kapatmak için sağ tıklayın.#!" #NT!
+ MESSAGES_IN_QUEUE: "[MessageFeedHandler.GetNumberOfQueuedMessages] daha fazla mesaj" #NT!
+ FEED_MESSAGE_GOTO_TOOLTIP: "#T [PlayerMessageItem.GetGotoProvince.GetName].#!'ye gidin" #NT!
+ MESSAGE_CLEAR_ALL_TOOLTIP: "#I Kapatmak için tıklayın. \nHepsini kapatmak için sağ tıklayın.#!" #NT!
+ msg_marriage: "Evlilik: [GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! ve #high [RIGHT_CHARACTER.GetFirstNameNoTooltip]#!" #NT!
+ msg_marriage_desc: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.GetShortUINameNotMe]'iniz [RIGHT_CHARACTER.GetUINameNotMe] ile evlendi" #NT!
+ msg_building_done: "#high [BUILDING.GetNameNoTooltip]#! [PROVINCE.GetNameNoTooltip]'te inşa edildi" #NT!
+ msg_building_done_desc: "[BUILDING.GetName], [PROVINCE.GetName]'de oluşturuldu" #NT!
+ msg_new_heir: "Yeni Varis" #NT!
+ msg_new_heir_desc: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.GetUINameNoTooltip]'iniz yeni [player_heir|E]'nizdir" #NT!
+ msg_new_heir_newborn: "Yeni Varis" #NT!
+ msg_new_heir_newborn_desc: "Yeni doğan [GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] sizin yeni [player_heir|E]'inizdir" #NT!
+ msg_new_heir_old_heir_dead: "Yeni Varis" #NT!
+ msg_new_heir_old_heir_dead_desc: "[RIGHT_CHARACTER.GetUINameNoTooltip]'ın ölümüyle [GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.GetUINameNoTooltip]'niz yeni [player_heir|E]'ünüz olur" #NT!
+ msg_no_new_heir: "Varis yok" #NT!
+ msg_no_new_heir_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] artık senin [player_heir|E]'in değil" #NT!
+ msg_no_new_heir_old_heir_dead: "Varis yok" #NT!
+ msg_no_new_heir_old_heir_dead_desc: "[LEFT_CHARACTER.GetUINameNoTooltip]'ın ölümüyle [player_heir|E]'in kalmaz" #NT!
+ msg_inherited_single_title: "Miras" #NT!
+ msg_inherited_single_title_desc: "[LEFT_TITLE.GetName]'ı [CHARACTER.GetUINameNoTooltip]'den ($LAW$) devraldınız" #NT!
+ msg_inherited_titles: "Miras" #NT!
+ msg_inherited_titles_desc: "[LEFT_TITLE.GetName] ve $VALUE$ diğer Ünvanı [CHARACTER.GetUINameNoTooltip]'den ($LAW$) devraldınız" #NT!
+ msg_realm_law_changed: "Krallık yasası değişti" #NT!
+ msg_realm_law_changed_desc: "[LEFT_CHARACTER.GetTitleTierName|V] olarak alem yasalarınız artık $SUCCESSION_LAWS|V$" #NT!
+ msg_lost_single_title: "Ünvan Kayıp" #NT!
+ msg_lost_single_title_desc: "[LEFT_TITLE.GetName]'ı [CHARACTER.GetUINameNoTooltip]'e kaybettiniz" #NT!
+ msg_lost_titles: "Kayıp Ünvanlar" #NT!
+ msg_lost_titles_desc: "[LEFT_TITLE.GetName] ve diğer $VALUE$ unvanı [CHARACTER.GetUINameNoTooltip]'ye kaybettiniz" #NT!
+ msg_siege_started: "[PROVINCE.GetName|U] Kuşatma Altında" #NT!
+ msg_siege_started_desc: "[PROVINCE.GetName|U], [siege|E]'in [PROVINCE.GetSiege.GetSiegingRealmCharacter.GetUIName]'den az!" #NT!
+ msg_siege_won: "Kuşatma Kazanıldı" #NT!
+ msg_siege_won_desc: "Artık [PROVINCE.GetName]'ı kontrol ediyorsun" #NT!
+ msg_siege_loot: "Kuşatma Kazanıldı" #NT!
+ msg_siege_loot_desc: "Artık [PROVINCE.GetName]'ı kontrol ediyorsun\n[PROVINCE.GetName]'ı işgal ederek [gold_i]$VALUE|V0$ kazandın" #NT!
+ msg_scheme_abandoned: "Şema Terk Edildi" #NT!
+ msg_scheme_abandoned_desc: "$SCHEME_NAME|V$ [CHARACTER.GetUINameNoTooltip]'de terk edildi" #NT!
+ msg_agent_joined_my_scheme: "Ajan Katıldı Şeması: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT!
+ msg_agent_joined_my_scheme_desc: "[LEFT_CHARACTER.GetUINameNoTooltip], [scheme|E] ila [SCHEME.GetFullActionName]'ünüzde [agent|E] olarak katıldı" #NT!
+ msg_multiple_agents_joined_my_scheme: "Acenteler Katıldı Planı" #NT!
+ msg_multiple_agents_joined_my_scheme_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve $OTHER|V$ diğer [agents|E] sizin [scheme|E]'ünüze [SCHEME.GetFullActionName] katıldı" #NT!
+ msg_2_agents_joined_my_scheme: "Acenteler Katıldı Planı" #NT!
+ msg_2_agents_joined_my_scheme_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve [RIGHT_CHARACTER.GetUINameNoTooltip], [scheme|E]'nizi [SCHEME.GetFullActionName]'e kattı" #NT!
+ msg_agent_removed_my_scheme: "Ajan Programdan Kaldırıldı" #NT!
+ msg_agent_removed_my_scheme_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] artık [scheme|E] ila [SCHEME.GetFullActionName]'nizde bir aracı değil" #NT!
+ msg_2_agents_removed_my_scheme: "Ajanlar Programdan Kaldırıldı" #NT!
+ msg_2_agents_removed_my_scheme_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve [RIGHT_CHARACTER.GetUINameNoTooltip] artık [scheme|E] ila [SCHEME.GetFullActionName]'ünüzün bir parçası değil" #NT!
+ msg_multiple_agents_removed_my_scheme: "Ajanlar Programdan Kaldırıldı" #NT!
+ msg_multiple_agents_removed_my_scheme_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve $OTHER|V$ diğer [agents|E] artık [scheme|E] ila [SCHEME.GetFullActionName]'ünüzün bir parçası değil" #NT!
+ msg_scheme_froze_title: "Planınız donduruldu" #NT!
+ msg_scheme_froze_desc: "[scheme|E] ile [SCHEME.GetFullActionName] arasındaki $REASON$ nedeniyle donduruldu" #NT!
+ msg_scheme_froze_until_desc: "[scheme|E] ile [SCHEME.GetFullActionName] arasındakiler [DATE.GetString|V] tarihine kadar donduruldu çünkü $REASON$" #NT!
+ msg_council_task_finished_location: "Görev Tamamlandı" #NT!
+ msg_council_task_finished_location_desc: "[LEFT_CHARACTER.GetUINameNoTooltip], $TASK_NAME|D$ görevini $TASK_LOCATION|D$'de tamamladı" #NT!
+ msg_council_task_finished: "Görev Tamamlandı" #NT!
+ msg_council_task_finished_desc: "[LEFT_CHARACTER.GetUINameNoTooltip], $TASK_NAME|D$ görevini tamamladı" #NT!
+ msg_alliance: "İttifak Kuruldu: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT!
+ msg_alliance_desc: "[alliance|E], [LEFT_CHARACTER.GetUINameNoTooltip] ile oluşturulmuştur" #NT!
+ msg_broken_alliance: "İttifak Bozuldu: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT!
+ msg_broken_alliance_desc: "[alliance|E] ile [LEFT_CHARACTER.GetUINameNoTooltip] kırıldı" #NT!
+ msg_expired_alliance: "İttifakın Süresi Doldu: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT!
+ msg_expired_alliance_desc: "[alliance|E] ile [LEFT_CHARACTER.GetUINameNoTooltip] arasındaki ilişki [SECONDARY_ACTOR.GetUIName] ve [SECONDARY_RECIPIENT.GetUIName] artık evli veya nişanlı olmadığından sona erdi" #NT!
+ msg_expired_alliance_ally_death_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] öldü" #NT!
+ msg_alliance_became_landed: "İttifak Kuruldu: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT!
+ msg_alliance_became_landed_desc: "[alliance|E], [LEFT_CHARACTER.GetUINameNoTooltip] ile oluşturulmuştur çünkü [LEFT_CHARACTER.GetSheHe] artık [ruler|E]'tür" #NT!
+ msg_alliance_became_unlanded: "İttifak Geçersiz: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT!
+ msg_alliance_became_unlanded_desc: "Artık [LEFT_CHARACTER.GetUINameNoTooltip] ile [alliance|E]'ınız yok çünkü [LEFT_CHARACTER.GetSheHe] artık [ruler|E] değil" #NT!
+ msg_i_am_not_powerful_vassal: "Güçlü Vasal" #NT!
+ msg_i_am_not_powerful_vassal_desc: "Artık [LEFT_CHARACTER.GetUINameNoTooltip]'in [powerful_vassal|E]'ı olarak kabul edilmiyorsunuz" #NT!
+ msg_war_ally_joined: "Müttefik Savaşa Katılıyor: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT!
+ msg_war_ally_joined_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] [WAR.GetName|V]'e katıldı" #NT!
+ msg_war_ally_joined_multiple: "Müttefikler Savaşa Katılıyor" #NT!
+ msg_war_ally_joined_multiple_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve $VALUE|V$ kişi daha [rulers|E] kişi [WAR.GetName|V]'e katıldı" #NT!
+ msg_war_enemy_joined: "Düşman Müttefik Savaşa Katılıyor: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT!
+ msg_war_enemy_joined_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] katıldı [WAR.GetName|V]" #NT!
+ msg_war_enemy_joined_multiple: "Düşman Müttefikleri Savaşa Katılıyor" #NT!
+ msg_war_enemy_joined_multiple_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve $VALUE|V$ kişi daha [rulers|E] kişi [WAR.GetName|V]'e katıldı" #NT!
+ msg_war_player_joined: "Bir Savaşa Katıldınız" #NT!
+ msg_war_player_joined_desc: "[WAR.GetName|V]'a katıldınız" #NT!
+ msg_war_ally_replaced: "Müttefik Savaşa Katılıyor: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT!
+ msg_war_ally_replaced_desc: "[LEFT_CHARACTER.GetUINameNoTooltip], [WAR.GetName|V]'deki [RIGHT_CHARACTER.GetUINameNoTooltip]'in yerini aldı" #NT!
+ msg_war_enemy_replaced: "Düşman Müttefik Savaşa Katılıyor: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT!
+ msg_war_enemy_replaced_desc: "[LEFT_CHARACTER.GetUINameNoTooltip], [WAR.GetName|V]'deki [RIGHT_CHARACTER.GetUINameNoTooltip]'in yerini aldı" #NT!
+ msg_war_player_replaced: "Bir Savaşa Katıldın" #NT!
+ msg_war_player_replaced_desc: "[WAR.GetName|V]'deki [RIGHT_CHARACTER.GetUINameNoTooltip]'ı değiştirdiniz" #NT!
+ msg_war_enemy_transferred: "Yeni Savaş Hedefi: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT!
+ msg_war_enemy_transferred_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] artık [WAR.GetName|V]'in hedefi" #NT!
+ msg_war_player_transferred: "Yeni Savaş: [WAR.GetActiveCB.GetAttacker.GetUINameNoTooltip]" #NT!
+ msg_war_player_transferred_desc: "[WAR.GetName|V]'ın yeni hedefi sizsiniz" #NT!
+ msg_war_ally_transferred: "$msg_war_enemy_transferred$" #NT!
+ msg_war_ally_transferred_desc: "$msg_war_enemy_transferred_desc$" #NT!
+ msg_war_ally_removed: "Müttefik Sol Savaş: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT!
+ msg_war_ally_removed_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] [WAR.GetName|V]'den ayrıldı" #NT!
+ msg_war_ally_removed_multiple: "Müttefik Savaştan Ayrıldı: [LEFT_CHARACTER.GetShortUINameNoTooltip]" #NT!
+ msg_war_ally_removed_multiple_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve $VALUE|V$ diğer [rulers|E] [WAR.GetName|V]'ten ayrıldı" #NT!
+ msg_war_enemy_removed: "Düşmanlar Savaşı Terk Etti" #NT!
+ msg_war_enemy_removed_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] [WAR.GetName|V]'den ayrıldı" #NT!
+ msg_war_enemy_removed_multiple: "Düşmanlar Savaştan Ayrıldı" #NT!
+ msg_war_enemy_removed_multiple_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve $VALUE|V$ diğer [rulers|E] [WAR.GetName|V]'ten ayrıldı" #NT!
+ msg_war_player_removed: "Savaştan Ayrıldın" #NT!
+ msg_war_player_removed_desc: "[WAR.GetName|V]'dan ayrıldınız" #NT!
+ msg_invalidation_of_council_task: "Görev İptal Edildi" #NT!
+ msg_invalidation_of_council_task_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] artık [ACTIVE_COUNCIL_TASK.GetName] ile devam edemez" #NT!
+ msg_troops_disbanding_civil_war: "Terk" #NT!
+ msg_troops_disbanding_civil_war_desc: "$AMOUNT$ [LEFT_CHARACTER.GetShortUINameNoTooltip]'den gelen vergiler iç savaş nedeniyle dağıtılıyor" #NT!
+ msg_war_declared_on_liege: "Süzerene Savaş İlan Edildi!" #NT!
+ msg_war_declared_on_liege_desc: "[LEFT_CHARACTER.GetShortUIName|U], [RIGHT_CHARACTER.GetShortUIName] tarafından saldırıya uğruyor" #NT!
+ msg_war_declared_by_liege: "Liege Savaşa Gidiyor!" #NT!
+ msg_war_declared_by_liege_desc: "[LEFT_CHARACTER.GetShortUIName|U], [RIGHT_CHARACTER.GetShortUIName]'e savaş ilan etti" #NT!
+ msg_war_declared_on_me: "#D KULLANILMAYAN MESAJ#!" #NT!
+ msg_war_declared_on_me_desc: "#D KULLANILMAYAN MESAJ#!" #NT!
+ msg_liege_war_ended_attacker_win: "#D KULLANILMAYAN MESAJ#!" #NT!
+ msg_liege_war_ended_attacker_win_desc: "#D KULLANILMAYAN MESAJ#!" #NT!
+ msg_liege_war_ended_defender_win: "#D KULLANILMAYAN MESAJ#!" #NT!
+ msg_liege_war_ended_defender_win_desc: "#D KULLANILMAYAN MESAJ#!" #NT!
+ msg_liege_war_ended_white_peace: "#D KULLANILMAYAN MESAJ#!" #NT!
+ msg_liege_war_ended_white_peace_desc: "#D KULLANILMAYAN MESAJ#!" #NT!
+ msg_liege_war_ended_invalid: "#D KULLANILMAYAN MESAJ#!" #NT!
+ msg_liege_war_ended_invalid_desc: "#D KULLANILMAYAN MESAJ#!" #NT!
+ event_message_title: "$TITLE$" #NT!
+ event_message_text: "$DESCRIPTION$" #NT!
+ event_message_text_and_effect: "$DESCRIPTION_AND_EFFECT$" #NT!
+ event_message_effect_and_text: "$EFFECT$\n\n$DESCRIPTION$" #NT!
+ event_message_effect: "$EFFECT$" #NT!
+ blank_line: "" #NT!
+ send_interface_message_tooltip: "#T Bir Etkinlikten#!" #NT!
+ msg_gain_trait: "Kazanılan Özellik" #NT!
+ msg_gain_trait_desc: "[TRAIT.GetName( CHARACTER.Self )|L] özelliğini kazandınız" #NT!
+ msg_lose_trait: "Kaybedilen Özellik" #NT!
+ msg_lose_trait_desc: "[TRAIT.GetName( CHARACTER.Self )|L] özelliğini kaybettin" #NT!
+ msg_gain_nickname: "Yeni Takma Ad" #NT!
+ msg_gain_nickname_desc: "Artık [CHARACTER.GetNickname|V] olarak tanınıyorsunuz" #NT!
+ msg_lost_nickname: "Kayıp Takma Ad" #NT!
+ msg_lost_nickname_desc: "Artık [CHARACTER.GetNickname|V] olarak tanınmıyorsunuz" #NT!
+ msg_title_rank_up: "Kazanılan Ünvan" #NT!
+ msg_title_rank_up_desc: "Artık güçlü bir [CHARACTER.GetTitleTierName|V]'sın" #NT!
+ msg_title_rank_down: "Ünvan Kaybı" #NT!
+ msg_title_rank_down_desc: "Artık sadece bir [CHARACTER.GetTitleTierName|V]'sın" #NT!
+ msg_change_primary: "Birincil Ünvan Değiştirildi" #NT!
+ msg_change_primary_desc: "[primary_title|E]'ınız artık [TITLE.GetNameNoTier]" #NT!
+ msg_disbanded_faction_target_died: "Fraksiyon Dağıtıldı" #NT!
+ msg_disbanded_faction_target_died_desc: "[FACTION.GetName] hedef [CHARACTER.GetUINameNoTooltip] öldü, bu nedenle grup dağıtıldı" #NT!
+ msg_removed_from_faction_not_valid: "Terk Edilmiş Grup" #NT!
+ msg_removed_from_faction_not_valid_desc: "[CHARACTER.GetUINameNoTooltip]'e karşı [FACTION.GetName]'dan ayrılmak zorundaydınız.\n$REASONS$" #NT!
+ msg_removed_from_faction_not_valid_leader: "Fraksiyon Dağıtıldı" #NT!
+ msg_removed_from_faction_not_valid_leader_desc: "[FACTION.GetName]'a karşı [CHARACTER.GetUINameNoTooltip] geçerli bir lidere sahip değil, bu nedenle grup dağıtıldı" #NT!
+ msg_removed_from_faction_not_liege: "Sol Fraksiyon" #NT!
+ msg_removed_from_faction_not_liege_desc: "[CHARACTER.GetUINameNoTooltip] artık sizin hükümdarınız değil, bu yüzden [FACTION.GetName]'i [CHARACTER.GetHerHim]'ye karşı terk ettiniz" #NT!
+ msg_faction_against_liege_or_me_created: "[RIGHT_CHARACTER.GetShortUINameNoTooltip]'a karşı Grup Oluşturuldu!" #NT!
+ msg_faction_against_liege_or_me_created_desc: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.GetShortUINameNoTooltip]'iniz [RIGHT_CHARACTER.GetShortUINameNoTooltip]'e karşı [FACTION.GetName]'yi yarattı" #NT!
+ msg_county_faction_against_liege_or_me_created_desc: "[LEFT_TITLE.GetNameNoTooltip], [RIGHT_CHARACTER.GetShortUINameNoTooltip]'yi hedef alarak [FACTION.GetName]'i doğurdu" #NT!
+ msg_faction_against_me_disbanded: "Sizi hedef alan bir Fraksiyon Dağıtıldı!" #NT!
+ msg_faction_against_me_disbanded_desc: "Sizi hedef alan aşağıdaki [faction|E] dağıldı: [FACTION.GetName]" #NT!
+ msg_my_faction_disbanded: "Fraksiyon Dağıtıldı" #NT!
+ msg_my_faction_disbanded_desc: "[FACTION.GetName] dağıtıldı" #NT!
+ msg_liege_passed_law: "Yeni yasa" #NT!
+ msg_liege_passed_law_desc: "Efendiniz yasayı çıkardı [LAW.GetName]" #NT!
+ msg_liege_passed_title_law: "Yeni Tapu Kanunu" #NT!
+ msg_liege_passed_title_law_desc: "Efendiniz [LAW.GetName] tarihinde [TITLE.GetName] yasasını çıkardı" #NT!
+ msg_liege_removed_title_law: "Ünvan Yasası Kaldırıldı" #NT!
+ msg_liege_removed_title_law_desc: "Efendiniz [LAW.GetName] yasasını [TITLE.GetName]'den kaldırdı" #NT!
+ msg_law_invalidated_no_new_law: "Yasa Kaldırıldı" #NT!
+ msg_law_invalidated_no_new_law_desc: "[LAW.GetName] artık geçerli değil ve kaldırıldı." #NT!
+ msg_law_invalidated: "Kanun Değiştirildi" #NT!
+ msg_law_invalidated_desc: "[LAW.GetName] artık geçerli değil ve [TARGET_LAW.GetName] ile değiştirildi" #NT!
+ msg_faction_local_not_leader_anymore: "Yeni Fraksiyon Lideri" #NT!
+ msg_faction_local_not_leader_anymore_desc: "[LEFT_CHARACTER.GetShortUINameNoTooltip], [FACTION.GetName]'in lideri olarak sizin yerinize geçti" #NT!
+ msg_faction_local_becomes_leader: "Yeni Fraksiyon Lideri" #NT!
+ msg_faction_local_becomes_leader_desc: "Artık [FACTION.GetName]'ın [CHARACTER.GetShortUINameNoTooltip]'e karşı liderisiniz" #NT!
+ msg_faction_forced_to_join: "Fraksiyona Katılmaya Zorlanmak" #NT!
+ msg_faction_forced_to_join_desc: "[RIGHT_CHARACTER.GetShortUINameNoTooltip], [LEFT_CHARACTER.GetShortUINameNoTooltip]'e karşı [FACTION.GetName]'e katılmanızı zorlamak için [RIGHT_CHARACTER.GetHerHis] [hook|E]'yi kullandı" #NT!
+ msg_betrothal_invalidated: "Nişan geçersiz" #NT!
+ msg_betrothal_invalidated_desc: "Yeni [faith|E]'ınız artık [LEFT_CHARACTER.GetShortUIName] ile nişanlı olmayabileceğinizi belirtiyor" #NT!
+ msg_betrothal_invalidated_player_heir: "[player_heir|E] $msg_betrothal_invalidated$" #NT!
+ msg_betrothal_invalidated_player_heir_desc: "[LEFT_CHARACTER.GetShortUINamePossessive] yeni [faith|E], [LEFT_CHARACTER.GetSheHe]'nin artık [RIGHT_CHARACTER.GetShortUIName] ile nişanlı olamayacağını belirtir" #NT!
+ msg_break_betrothal: "Nişan Bozuldu" #NT!
+ msg_break_betrothal_desc: "[betrothal|E] ile [LEFT_CHARACTER.GetShortUIName] arasındaki kodunuz bozuldu." #NT!
+ msg_break_betrothal_player_heir: "[player_heir|E] $msg_break_betrothal$" #NT!
+ msg_break_betrothal_player_heir_desc: "[LEFT_CHARACTER.GetShortUINamePossessive] [betrothal|E] ile [RIGHT_CHARACTER.GetShortUIName] arası bozuldu." #NT!
+ msg_spouse_invalidated: "Eş Geçersiz" #NT!
+ msg_spouse_invalidated_desc: "[faith|E] veya [culture|E]'inizin değerleri, [LEFT_CHARACTER.GetShortUIName]'nin artık sizin [spouse|E]'ünüz olmadığı anlamına gelir" #NT!
+ msg_divorce: "Boşanmak" #NT!
+ msg_divorce_desc: "[LEFT_CHARACTER.GetShortUIName]'den [divorced|E] aldınız – [LEFT_CHARACTER.GetSheHe] artık [spouse|E]'ünüz değil" #NT!
+ msg_spouse_invalidated_player_heir: "[player_heir|E] $msg_spouse_invalidated$" #NT!
+ msg_spouse_invalidated_player_heir_desc: "[LEFT_CHARACTER.GetShortUINamePossessive] yeni [faith|E]'in inançları, [RIGHT_CHARACTER.GetShortUIName]'nin artık [LEFT_CHARACTER.GetHerHis] [spouse|E] olmadığı anlamına geliyor" #NT!
+ msg_divorce_player_heir: "[player_heir|E] $msg_divorce$" #NT!
+ msg_divorce_player_heir_desc: "[LEFT_CHARACTER.GetShortUIName], [RIGHT_CHARACTER.GetShortUIName]'den [divorced|E] aldı – [RIGHT_CHARACTER.GetSheHe] artık [LEFT_CHARACTER.GetHerHis] değil [spouse|E]" #NT!
+ msg_betrothal_fulfilled: "Nişan gerçekleşti" #NT!
+ msg_betrothal_fulfilled_desc: "[LEFT_CHARACTER.GetShortUIName|U] ve [RIGHT_CHARACTER.GetShortUIName] artık evli" #NT!
+ msg_marriage_forced: "Güçlü Kozla Evlilik" #NT!
+ msg_marriage_forced_desc: "[LEFT_CHARACTER.GetShortUIName|U] ve [RIGHT_CHARACTER.GetShortUIName], [strong_hook|E] nedeniyle evleniyor" #NT!
+ msg_consort_invalidated: "Eş geçersiz" #NT!
+ msg_consort_invalidated_desc: "[faith|E] veya [culture|E] değerleriniz, [LEFT_CHARACTER.GetShortUIName]'nin artık Eşiniz olmadığı anlamına gelir" #NT!
+ msg_war_casus_belli_changed: "Casus Belli Değişti" #NT!
+ msg_war_casus_belli_changed_desc: "[WAR.GetName] yeni bir [casus_belli|E] kullanıyor" #NT!
+ msg_cadet_branch_created: "Alt Hane" #NT!
+ msg_cadet_branch_created_desc: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.GetShortUIName]'iniz [cadet_branch|E] $NAME|V$'ü oluşturdu" #NT!
+ msg_i_became_head_of_house: "Hane Başkanı Değişti" #NT!
+ msg_i_became_head_of_house_desc: "$NAME|V$ Evi'nin yeni [house_head|E]'ı oldun" #NT!
+ msg_i_not_head_of_house_anymore: "Hane Başkanı Değişti" #NT!
+ msg_i_not_head_of_house_anymore_desc: "[LEFT_CHARACTER.GetShortUIName|U], $NAME|V$ hanedanının [house_head|E]'i olarak sizin yerinizi aldı" #NT!
+ msg_became_head_of_house: "Hane Başkanı Değişti" #NT!
+ msg_became_head_of_house_desc: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.GetShortUIName]'iniz $NAME|V$ Hanesi'nin yeni [house_head|E]'si oldu" #NT!
+ msg_i_became_dynast: "Hanedanlık Başkanı Değişti" #NT!
+ msg_i_became_dynast_desc: "$NAME|V$ hanedanının yeni [dynast|E]'ı oldun" #NT!
+ msg_i_not_dynast_anymore: "Hanedanlık Başkanı Değişti" #NT!
+ msg_i_not_dynast_anymore_desc: "[LEFT_CHARACTER.GetShortUIName|U], $NAME|V$ hanedanının [dynast|E]'i olarak sizin yerinizi aldı" #NT!
+ msg_became_dynast: "Hanedanlık Başkanı Değişti" #NT!
+ msg_became_dynast_desc: "[LEFT_CHARACTER.GetShortUIName|U], $NAME|V$ hanedanının yeni [dynast|E]'i oldu" #NT!
+ msg_i_became_head_of_faith: "İnancın Başı Değişti" #NT!
+ msg_i_became_head_of_faith_desc: "[FAITH.GetName]'in yeni [FAITH.ReligiousHeadName]'ı oldun" #NT!
+ msg_i_became_head_of_multiple_faiths: "$msg_i_became_head_of_faith$" #NT!
+ msg_i_became_head_of_multiple_faiths_desc: "$msg_i_became_head_of_faith_desc$ ve $NUM_OTHER_FAITHS|V$ diğer inançlar" #NT!
+ msg_i_not_head_of_faith_anymore: "İnancın Başı Değişti" #NT!
+ msg_i_not_head_of_faith_anymore_desc: "[LEFT_CHARACTER.GetShortUIName|U], [FAITH.GetName]'nin [FAITH.ReligiousHeadName]'i olarak sizi değiştirdi" #NT!
+ msg_i_not_head_of_multiple_faiths_anymore: "$msg_i_not_head_of_faith_anymore$" #NT!
+ msg_i_not_head_of_multiple_faiths_anymore_desc: "$msg_i_not_head_of_faith_anymore_desc$ ve $NUM_OTHER_FAITHS|V$ diğer inanç" #NT!
+ msg_new_fascination_selected: "Yeni [cultural_fascination|E]" #NT!
+ msg_new_fascination_selected_desc: "[culture|E]'ınız artık $NAME|V$ [innovation|E] tarafından [Concept( 'fascination', 'Fascinated' )|E] oldu" #NT!
+ msg_innovation_discovered: "Keşfedilen Yenilik" #NT!
+ msg_innovation_discovered_desc: "[culture|E]'ınız $NAME|V$'i keşfetti!" #NT!
+ msg_fascination_discovered: "Büyüleyicilik Keşfedildi" #NT!
+ msg_fascination_discovered_desc: "[culture|E]'ınız [fascination|E] $NAME|V$'yi keşfetti!\nYeni bir ilgi alanı seçilebilir." #NT!
+ msg_era_discovered: "Yeni Kültürel Çağ" #NT!
+ msg_era_discovered_desc: "Kültürünüz $NAME|N$ dönemine girdi.\nYeni yenilikler mevcut!" #NT!
+ msg_first_era_discovered: "Yeni Kültürel Çağ" #NT!
+ msg_first_era_discovered_desc: "[CULTURE.GetName], $NAME|V$ dönemini başlattı" #NT!
+ msg_no_longer_culture_head: "Yeni [culture_head|E]" #NT!
+ msg_no_longer_culture_head_desc: "[LEFT_CHARACTER.GetShortUIName|U] [culture_head|E] olarak yerinizi aldı" #NT!
+ msg_become_culture_head: "Yeni [culture_head|E]" #NT!
+ msg_become_culture_head_desc: "[CULTURE.GetName] kültürünün [culture_head|E]'ı oldun!" #NT!
+ msg_new_theocracy_lesse: "Yeni [LEFT_CHARACTER.GetCouncilTitle]" #NT!
+  #AGOT Modified #NT!
+ #msg_new_theocracy_lesee_approve_desc: "[LEFT_CHARACTER.GetShortUIName|U] sizi destekliyor #weak ([church_property|E])#!" #NT!
+ #msg_new_theocracy_lesee_disapprove_desc: "[LEFT_CHARACTER.GetShortUIName|U] sizi desteklemiyor #weak ([church_property|E])#!" #NT!
+ msg_new_theocracy_lesee_approve_desc: "[LEFT_CHARACTER.GetFirstNameNicknamedNoTooltip] sizi destekliyor #weak ([church_property|E])#!" #NT!
+ msg_new_theocracy_lesee_disapprove_desc: "[LEFT_CHARACTER.GetFirstNameNicknamedNoTooltip] sizi desteklemiyor #weak ([church_property|E])#!" #NT!
+ msg_mercenary_company_dismissed: "Paralı Asker Şirketi görevden alındı" #NT!
+ msg_mercenary_company_dismissed_desc: "[LEFT_TITLE.GetNameNoTooltip]'ın sözleşmesi sona erdi ve askerler görevden alındı" #NT!
+ msg_holy_order_dismissed: "Kutsal Düzen görevden alındı" #NT!
+ msg_holy_order_dismissed_desc: "[LEFT_TITLE.GetNameNoTooltip] reddedildi" #NT!
+ msg_fired_from_council: "Konseyden Kovuldu" #NT!
+ msg_fired_from_council_desc: "[LEFT_CHARACTER.GetShortUIName|U] seni [council|E]'den kovdu" #NT!
+ msg_council_swap_position: "Yeni Konsey Pozisyonu" #NT!
+ msg_council_swap_position_desc: "Artık [LEFT_CHARACTER.GetShortUINamePossessive] [council|E]'de $POSITION_NAME$'sın" #NT!
+ msg_left_council_position: "Meclis Üyesi Sol" #NT!
+ msg_left_council_position_desc: "[LEFT_CHARACTER.GetShortUIName|U] sol [LEFT_CHARACTER.GetHerHis] pozisyon $POSITION_NAME$ olarak" #NT!
+ msg_peace_armies_disbanded: "Huzur içinde" #NT!
+ msg_peace_armies_disbanded_desc: "Sonunda huzura kavuştun, bu yüzden tüm orduların dağıtıldı" #NT!
+ msg_invalidate_war_title: "[war.GetName] sona erdi: devam etmek artık geçerli değildi." #NT!
+ msg_claim_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] talep edilen İlçelerden hiçbiri yok." #NT!
+ msg_claim_war_invalidated_claimant_unavailable_dead_message: "[war.GetName] sona erdi: [claimant.GetShortUIName] öldü ve bu nedenle [claimant.GetHerHis] iddiası artık [attacker.GetShortUIName] tarafından kullanılamaz." #NT!
+ msg_claim_war_invalidated_claimant_unavailable_not_vassal_message: "[war.GetName] sona erdi: [claimant.GetShortUIName], [attacker.GetShortUIName]'nin vasalı veya saray mensubu değil ve bu nedenle [claimant.GetHerHis] iddiası artık kullanılamaz." #NT!
+ msg_de_jure_duchy_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık hedeflenen düklükte hiçbir arazi yok." #NT!
+ msg_de_jure_county_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] İlçe değil." #NT!
+ msg_de_jure_duchy_war_invalidated_liege_war_message: "[war.GetName] sona erdi: [Select_CString( attacker.IsLocalPlayer, 'You', attacker.GetShortUIName )] katıldı [Select_CString( attacker.IsLocalPlayer, 'your', attacker.GetHerHis )] hükümdarın [Select_CString( defender.IsLocalPlayer, 'you', defender.GetShortUIName )]'e karşı savaşına." #NT!
+ msg_de_jure_all_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] fiili olarak talep edilen herhangi bir arazi yok." #NT!
+ msg_religious_war_invalidation_region_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık hedef bölgede [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] hiçbir arazi yok." #NT!
+ msg_religious_war_invalidated_hostility_level_message: "[war.GetName] sona erdi: [attacker.GetShortUIName] [defender.GetFaith.GetAdjective] [faith|E]'ü $game_concept_holy_war$ geçemez." #NT!
+ msg_invasion_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık hedef bölgede [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] hiçbir arazi yok." #NT!
+ msg_mongol_invasion_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık hedef bölgede [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] hiçbir arazi yok." #NT!
+ msg_county_conquest_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] İlçe değil." #NT!
+ msg_duchy_conquest_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık hedef bölgede [Select_CString( defender.IsLocalPlayer, 'control', 'controls' )] hiçbir arazi yok." #NT!
+ msg_vassalization_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık vasallaştırılamaz." #NT!
+ msg_subjugation_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık boyunduruk altına alınamaz." #NT!
+ msg_excommunication_war_invalidation_trait_message: "[war.GetName] sona erdi: [defender.GetShortUIName] artık aforoz değil." #NT!
+ msg_raid_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetTitledFirstName] artık basılamaz" #NT!
+ msg_free_house_member_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetTitledFirstName]'in artık [house|E] [attacker.GetHouse.GetBaseNameNoTooltip]'ün tutuklu üyeleri yok" #NT!
+ msg_unify_house_war_invalidated_message: "[war.GetName] sona erdi: [defender.GetTitledFirstName]'in artık [house|E]'nin [attacker.GetHouse.GetBaseNameNoTooltip]'ün vasalları yok" #NT!
+ msg_my_hook_replaced: "Koz Değiştirildi" #NT!
+ msg_my_hook_replaced_desc: "[LEFT_CHARACTER.GetShortUIName]'deki [hook|E]'ınız [HOOK.GetName] Kozsıyla değiştirildi" #NT!
+ msg_my_hook_added: "Koz Kazanıldı" #NT!
+ msg_my_hook_added_desc: "[LEFT_CHARACTER.GetShortUIName] üzerinde [HOOK.GetName] [hook|E] kazandınız" #NT!
+ msg_hook_on_me_replaced: "Hook on You Değiştirildi" #NT!
+ msg_hook_on_me_replaced_desc: "[LEFT_CHARACTER.GetShortUINamePossessive] [hook|E] üzerinizdeki [HOOK.GetName] Kozsı ile değiştirildi" #NT!
+ msg_hook_on_me_added: "Kozya Takıl Kazandın" #NT!
+ msg_hook_on_me_added_replaced: "Kozya Takıl Kazandın" #NT!
+ msg_hook_on_me_added_desc: "[LEFT_CHARACTER.GetShortUIName|U] sizden [HOOK.GetName] [hook|E] kazandı" #NT!
+ msg_hook_on_me_expired: "Hook on You Süresi Doldu" #NT!
+ msg_hook_on_me_expired_desc: "[LEFT_CHARACTER.GetShortUINamePossessive] $HOOK_NAME$ [hook|E] sizin için süresi doldu" #NT!
+ msg_my_hook_expired: "Koznın Süresi Doldu" #NT!
+ msg_my_hook_expired_desc: "[LEFT_CHARACTER.GetShortUIName] üzerindeki [hook|E]'ınız sona erdi" #NT!
+ death_notification_title: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )|U] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#!'ünüz Öldü" #NT!
+ lover_death_notification_title: "Sevgilin #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Öldü" #NT!
+ friend_death_notification_title: "Arkadaşın #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Öldü" #NT!
+  #AGOT Modified #NT!
+ #councillor_death_notification_title: "Danışmanınız #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Öldü" #NT!
+ councillor_death_notification_title: "Danışmanınız Öldü" #NT!
+ msg_perk_point_added: "[LIFESTYLE.GetName] Avantaj Mevcut" #NT!
+ msg_perk_point_added_desc: "[LIFESTYLE.GetName] Yaşam Tarzı için yeni bir Avantajın kilidini açabilirsiniz" #NT!
+ msg_focus_invalidated: "Yaşam Tarzı Odaklılığı Geçersiz Kılındı" #NT!
+ msg_focus_invalidated_desc: "[FOCUS.GetName] geçersiz kılındı" #NT!
+ msg_dynasty_perk_added: "[DYNASTY_PERK.GetName] Kilidi Açıldı" #NT!
+ msg_dynasty_perk_added_desc: "[dynasty|E]'ınız [DYNASTY_PERK.GetName]'i açtı" #NT!
+ msg_dynasty_perk_removed: "[DYNASTY_PERK.GetName] Kayıp" #NT!
+ msg_dynasty_perk_removed_desc: "[dynasty|E]'ınız [DYNASTY_PERK.GetName] kaybetti" #NT!
+ msg_vassal_feudalised: "Vassal Feodal oldu" #NT!
+ msg_vassal_feudalised_desc: "Vasalınız [ROOT.Char.GetShortUIName], [ROOT.Char.GetHerHis] kabile geleneklerinden vazgeçti ve feodal oldu" #NT!
+ msg_dynasty_prestige_level_increase: "[dynasty_prestige_level|E] Arttırıldı" #NT!
+ msg_dynasty_prestige_level_increase_desc: "[LEFT_CHARACTER.GetDynasty.GetBaseName] hanedanı her yerde biliniyor." #NT!
+ msg_dynasty_prestige_level_dencrease: "Kayıp [dynasty_prestige_level|E]" #NT!
+ msg_dynasty_prestige_level_dencrease_desc: "[LEFT_CHARACTER.GetDynasty.GetBaseName] hanedanı itibarını yitirdi" #NT!
+ piety_level_gain.message: "Kazanılan [piety_level|E]" #NT!
+ piety_level_gain.desc: "İnancınıza olan bağlılığınızla tanınıyorsunuz" #NT!
+ piety_level_loss.message: "Kayıp [piety_level|E]" #NT!
+ piety_level_loss.desc: "Günahkar eylemlerinizin bir bedeli var" #NT!
+ prestige_level_gain.message: "Kazanılan [prestige_level|E]" #NT!
+ prestige_level_gain.desc: "Şanınız herkesçe biliniyor" #NT!
+ prestige_level_loss.message: "Kayıp [prestige_level|E]" #NT!
+ prestige_level_loss.desc: "Şerefsizliğinizin bir bedeli var" #NT!
+ stress_level_reduced.message: "Azaltıldı [stress_level|E]" #NT!
+ stress_level_reduced.text: "Artık [stress|E] tarafından bunalmış hissetmiyorsunuz" #NT!
+ msg_holy_order_patronage_lost: "[holy_order|E] Himaye Kaybedildi" #NT!
+ msg_holy_order_patronage_lost_desc: "[LEFT_TITLE.GetName] [holy_order|E]'in himayesini kaybettiniz" #NT!
+ msg_holy_order_patronage_gained: "[holy_order|E] Himaye Kazanıldı" #NT!
+ msg_holy_order_patronage_gained_desc: "[LEFT_TITLE.GetName] [holy_order|E]'in himayesini kazandınız" #NT!
+ msg_murder_scheme_agent_join_title: "Ajan Cinayet Planına katıldı" #NT!
+ msg_murder_scheme_agent_join_message: "[agent.GetTitledFirstName], [target.GetTitledFirstName]'i öldürme planınıza katıldı." #NT!
+ msg_murder_scheme_agent_leave_title: "Ajan cinayet planından ayrıldı" #NT!
+ msg_murder_scheme_agent_leave_message: "[agent.GetTitledFirstName] senin [target.GetTitledFirstName]'i öldürme planını bıraktı." #NT!
+ mongols_sieged_county.t: "[county.GetName] Moğol Ordusu Tarafından Yerle Bir Edildi" #NT!
+ msg_vassal_contract_level_invalidated: "[obligation|E] Geçersiz kılındı" #NT!
+ msg_vassal_contract_level_invalidated_desc: "[RIGHT_CHARACTER.GetUINamePossessiveNoTooltip] $OBLIGATION_TYPE_0|V$ yükümlülüğü geçersiz kılındı" #NT!
+ msg_vassal_contract_2_levels_invalidated: "[obligations|E] Geçersiz kılındı" #NT!
+ msg_vassal_contract_2_levels_invalidated_desc: "[RIGHT_CHARACTER.GetUINamePossessiveNoTooltip] $OBLIGATION_TYPE_0|V$ ve $OBLIGATION_TYPE_1|V$ yükümlülükleri geçersiz kılındı" #NT!
+ msg_vassal_contract_multiple_levels_invalidated: "[obligations|E] Geçersiz kılındı" #NT!
+ msg_vassal_contract_multiple_levels_invalidated_desc: "[RIGHT_CHARACTER.GetUINamePossessiveNoTooltip] $OBLIGATION_TYPE_0|V$ ve $OBLIGATION_TYPE_1|V$ ve $COUNT|V$ diğer yükümlülükler geçersiz kılındı" #NT!
+ msg_force_vote_in_succession_election_message: "[recipient.GetTitledFirstName]'ı önümüzdeki [GetDefine('NCharacter', 'FORCED_SUCCESSION_ELECTION_YEARS')] yıl boyunca sizinle aynı adaya oy vermeye zorluyorsunuz." #NT!
+ msg_recruited_guest_to_court_interaction_title: "Mahkemenize Davetli Misafir" #NT!
+ msg_recruited_guest_to_court_interaction_message: "[recipient.GetTitledFirstName] artık [court|E]'inizin bir üyesi." #NT!
+ msg_kicked_courtier_from_court_interaction_title: "Görevden alınan saray mensubu" #NT!
+ msg_courtier_left_court_interaction_title: "Saraylı Sol" #NT!
+ msg_hired_court_physician_interaction_title: "Saray Hekimi Kiralandı" #NT!
+ msg_hired_court_physician_interaction_message: "[recipient.GetTitledFirstName] artık sizin [GetCourtPositionType('court_physician_court_position').GetName()]'iniz." #NT!
+ msg_fired_court_physician_interaction_title: "Saray Hekimi İşten Çıkarıldı" #NT!
+ msg_fired_court_physician_interaction_message: "[recipient.GetTitledFirstName] isimli oyuncuyu [GetCourtPositionType('court_physician_court_position').GetName()] pozisyonundan kovdun." #NT!
+ msg_concubine_taken_title: "Bir Cariye Alındı" #NT!
+ msg_concubine_accepted_title: "[secondary_actor.GetShortUIName]'ı cariyem olarak kabul ettim" #NT!
+ msg_concubine_dismissed_title: "İşten çıkarılan cariye" #NT!
+ msg_concubine_offered_title: "Yapılan [secondary_actor.GetTitledFirstName] [recipient.GetTitledFirstNamePossessive] cariye" #NT!
+ msg_concubine_offered_invalidated_title: "Cariye Teklif Edilemedi" #NT!
+ msg_concubine_offered_invalidated_recipient_title: "Cariyeyi Kabul Edemedim" #NT!
+ msg_concubine_offered_invalidated_consort: "[secondary_actor.GetTitledFirstName], [spouse.GetShortUINamePossessive] eştir ve bu nedenle [recipient.GetShortUINamePossessive] cariye olamaz" #NT!
+ msg_concubine_offered_invalidated_betrothed: "[secondary_actor.GetTitledFirstName], [spouse.GetShortUIName] ile nişanlıdır ve bu nedenle [recipient.GetShortUINamePossessive]'nin cariyesi olamaz" #NT!
+ msg_concubine_offer_rejected_title: "Cariye Reddedildi" #NT!
+ msg_concubine_offer_rejected: "[recipient.GetTitledFirstName] reddedildi [secondary_actor.GetTitledFirstName] [recipient.GetHerHis] cariye olarak" #NT!
+ msg_close_family_member_taken_as_concubine_title: "[recipient.GetTitledFirstName] Cariye Olarak Alındı" #NT!
+ msg_close_family_member_offered_as_concubine_title: "[secondary_actor.GetTitledFirstName] Cariye Olarak Alındı" #NT!
+ msg_move_prisoner_to_dungeon: "Mahkum Zindana taşındı" #NT!
+ msg_move_prisoner_to_house_arrest: "Mahkum ev hapsine alındı" #NT!
+ msg_execute_prisoner: "Mahkum İdam Edildi" #NT!
+ msg_execute_prisoner_desc: "[recipient.GetTitledFirstName] [recipient.GetDeathReason]" #NT!
+ msg_artifact_gained_title: "Miras: [artifact_inherited.GetNameNoTooltip]" #NT!
+ msg_artifact_gained_desc: "[old_owner.GetUIName]'den [artifact_inherited.GetNameNoTooltip]'ı devraldın!" #NT!
+ msg_rival_dethroned: "Rakibiniz [actor.GetTitledFirstName] bir Şampiyonluk kaybetti" #NT!
+ msg_rival_dethroned_desc: "[rival|E] [actor.GetTitledFirstName]'iniz [title.GetBaseName]'yi kaybetti" #NT!
+ msg_court_position_gained: "Atandı [COURT_POSITION_TYPE.GetNameNoTooltip]" #NT!
+ msg_court_position_gained_desc: "Atandınız [LEFT_CHARACTER.GetShortUINamePossessive] [COURT_POSITION_TYPE.GetNameNoTooltip]" #NT!
+ msg_court_position_removed: "[COURT_POSITION_TYPE.GetNameNoTooltip] Pozisyon İptal Edildi" #NT!
+ msg_court_position_removed_desc: "[LEFT_CHARACTER.GetShortUIName] artık sizi [COURT_POSITION_TYPE.GetNameNoTooltip] olarak işe almıyor" #NT!
+ msg_court_position_invalidated_employee: "[COURT_POSITION_TYPE.GetNameNoTooltip] Pozisyon Kaybı" #NT!
+ msg_court_position_invalidated_employee_desc: "[LEFT_CHARACTER.GetShortUIName] artık sizi [COURT_POSITION_TYPE.GetNameNoTooltip] olarak işe alamaz" #NT!
+ msg_court_position_invalidated_employer: "[COURT_POSITION_TYPE.GetNameNoTooltip] Pozisyon Boşaldı" #NT!
+ msg_court_position_invalidated_employer_desc: "[LEFT_CHARACTER.GetShortUIName] artık senin [COURT_POSITION_TYPE.GetNameNoTooltip]'in değil" #NT!
+ msg_becomes_obese: "Obez oldu" #NT!
+ msg_becomes_obese_desc: "[GetModifier( 'obese_modifier' ).GetNameWithTooltip] oldun" #NT!
+ msg_becomes_malnourished: "Yetersiz Beslendi" #NT!
+ msg_becomes_malnourished_desc: "[GetModifier( 'malnourished_modifier' ).GetNameWithTooltip] oldun" #NT!
+ msg_stops_being_obese: "Artık Obez Değilim" #NT!
+ msg_stops_being_obese_desc: "Artık [GetModifier( 'obese_modifier' ).GetNameWithTooltip] değilsin" #NT!
+ msg_stops_being_malnourished: "Artık yetersiz beslenmiyorum" #NT!
+ msg_stops_being_malnourished_desc: "Artık [GetModifier( 'malnourished_modifier' ).GetNameWithTooltip] değilsin" #NT!
+ msg_event_timeout: "Etkinlik zaman aşımına uğradı: $EVENT_NAME$" #NT!
+ msg_event_timeout_desc: "$EVENT_TIMEOUT_EFFECTS$" #NT!
+ msg_event_timeout_tt: "$EVENT_TIMEOUT_EFFECTS$" #NT!
+ msg_letter_event_timeout: "[CHARACTER.GetShortUIName]'dan gelen etkinlik zaman aşımına uğradı" #NT!
+ msg_letter_event_timeout_desc: "$EVENT_TIMEOUT_EFFECTS$" #NT!
+ msg_letter_event_timeout_tt: "$EVENT_TIMEOUT_EFFECTS$" #NT!
+ msg_court_amenity_setting_invalidated: "Saray Uygunluk ayarı geçersiz kılındı" #NT!
+ msg_court_amenity_setting_invalidated_desc: "Saray Kolaylığı ayarı $INVALID_SETTING$ geçersiz kılındı ​​ve $DEFAULT_SETTING$ ile değiştirildi." #NT!
+ msg_catalyst_triggered: "$STRUGGLE_NAME$: $game_concept_struggle_catalyst_catalyst$ Tetiklendi" #NT!
+ msg_catalyst_triggered_desc: "[struggle_catalyst|E], [CHARACTER.GetTitledFirstName] tarafından tetiklendi: $CATALYST_INFO$\n\n$STRUGGLE_PHASE$ [struggle_phase_phase|E]'e doğru ilerleme: $CATALYST_VALUE|+=$" #NT!
+ msg_catalyst_triggered_tt: "$msg_catalyst_triggered_desc$" #NT!
+ msg_catalyst_triggered_no_character: "$msg_catalyst_triggered$" #NT!
+ msg_catalyst_triggered_no_character_desc: "[struggle_catalyst|E] tetiklendi: $CATALYST_INFO$\n\n$STRUGGLE_PHASE$ [struggle_phase_phase|E]'e doğru ilerleme: $CATALYST_VALUE|+=$" #NT!
+ msg_catalyst_triggered_no_character_tt: "$msg_catalyst_triggered_no_character_desc$" #NT!
+ msg_player_character_changed: "$PLAYER_CHANGED_CHARACTER_TITLE_SWITCH$" #NT!
+ msg_player_character_changed_desc: "$PLAYER_CHANGED_CHARACTER_TEXT_SWITCH$" #NT!
+ msg_player_character_changed_tt: "$msg_player_character_changed_desc$" #NT!
+ msg_player_new_character: "$PLAYER_CHANGED_CHARACTER_TITLE_JOIN$" #NT!
+ msg_player_new_character_desc: "$PLAYER_CHANGED_CHARACTER_TEXT_JOIN$" #NT!
+ msg_player_new_character_tt: "$msg_player_new_character_desc$" #NT!
+ msg_player_new_observer: "$PLAYER_CHANGED_CHARACTER_TITLE_OBSERVER$" #NT!
+ msg_player_new_observer_desc: "$PLAYER_CHANGED_CHARACTER_TEXT_OBSERVER$" #NT!
+ msg_player_new_observer_tt: "$msg_player_new_observer_desc$" #NT!
+ msg_struggle_phase_end: "$STRUGGLE_PHASE$ Aşaması Geçiş Aşamasında" #NT!
+ msg_struggle_phase_end_desc: "@$STRUGGLE_PHASE_ICON$! $STRUGGLE_PHASE$, @$STRUGGLE_PHASE_ICON_NEXT$'ye geçiş yapıyor! $STRUGGLE_PHASE_NEXT$.\n\n $STRUGGLE_PHASE_NEXT$ $DAYS_UNTIL_TRANSITION$ gün içinde başlayacak." #NT!
+ msg_struggle_phase_end_tt: "$msg_struggle_phase_transitioned_tt$" #NT!
+ msg_struggle_phase_transitioned: "Faz Geçişli" #NT!
+ msg_struggle_phase_transitioned_desc: "$STRUGGLE_NAME$ @$STRUGGLE_PHASE_ICON$'e dönüştü! $STRUGGLE_PHASE$." #NT!
+ msg_struggle_phase_transitioned_tt: "$msg_struggle_phase_transitioned_desc$" #NT!
+ msg_set_relation_friend_title: "@friend_icon! Bir Arkadaş Edindim" #NT!
+ msg_set_relation_friend_desc: "[GetRelation( 'friend' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]" #NT!
+ msg_set_relation_best_friend_title: "@best_friend_icon! En İyi Arkadaşlar Oldular" #NT!
+ msg_set_relation_best_friend_desc: "[GetRelation( 'best_friend' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]" #NT!
+ msg_set_relation_rival_title: "@rival_icon! Bir Rakip Kazandım" #NT!
+ msg_set_relation_rival_desc: "[GetRelation( 'rival' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]" #NT!
+ msg_set_relation_nemesis_title: "@nemesis_icon! Nemesis Kazanıldı" #NT!
+ msg_set_relation_nemesis_desc: "[GetRelation( 'nemesis' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]" #NT!
+ msg_set_relation_lover_title: "@lover_icon! Bir Sevgili Kazandım" #NT!
+ msg_set_relation_lover_desc: "[GetRelation( 'lover' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]" #NT!
+ msg_set_relation_soulmate_title: "@soulmate_icon! Ruh eşini buldum" #NT!
+ msg_set_relation_soulmate_desc: "[GetRelation( 'soulmate' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]" #NT!
+ msg_house_unity_change_stage: "Ev Birliği Seviyesi Değişti" #NT!
+ msg_house_unity_change_stage_desc: "[house_unity|E]'ınız Seviye $HOUSE_UNITY_STAGE_NAME|U$'e değişti" #NT!
+ msg_house_unity_change_stage_tt: "$msg_house_unity_change_stage_desc$" #NT!
 
- msg_start_diarchy_title: "[LEFT_CHARACTER.GetDiarchy.GetDiarch.Custom('GetDiarchyArticle')] [LEFT_CHARACTER.GetDiarchyTypeName]'e girdim" #NT
- msg_start_diarchy_effect: "[sharing_power|E]'ı [RIGHT_CHARACTER.GetName] ile başlattım" #NT
- msg_inherit_diarchy_title: "Miras aldım [LEFT_CHARACTER.GetDiarchy.GetDiarch.Custom('GetDiarchyArticle')] [LEFT_CHARACTER.GetDiarchyTypeName]" #NT
- on_entered_diarchy.notification.vassal.t: "Liege Girdi [ROOT.Char.GetDiarchyTypeName]" #NT
- on_entered_diarchy.notification.vassal.t.higher_liege: "Higher Liege Girdi [ROOT.Char.GetDiarchyTypeName]" #NT
- on_entered_diarchy.notification.vassal.desc: "[ROOT.Char.GetShortUIName] artık [ROOT.Char.GetDiarchy.GetDiarch.GetShortUIName] ile [sharing_power|E] oldu" #NT
- on_entered_diarchy.notification.vassal.desc.outro.child: "[child|E] olması nedeniyle" #NT
- on_entered_diarchy.notification.vassal.desc.outro.incapable: "[GetTrait('incapable').GetName(GetNullCharacter)] olması nedeniyle" #NT
- on_entered_diarchy.notification.vassal.desc.outro.imprisonment: "yurtdışında [imprisoned|E] olmak nedeniyle" #NT
- on_entered_diarchy.notification.vassal.desc.outro.travel: "[traveling|E] nedeniyle yurtdışında" #NT
- msg_end_diarchy_title: "[LEFT_CHARACTER.GetDiarchyTypeName] Bitti" #NT
- msg_end_diarchy_effect: "Artık [RIGHT_CHARACTER.GetName] ile [sharing_power|E] değilim" #NT
- on_left_diarchy.notification.vassal.t: "Liege [ROOT.Char.GetDiarchyTypeName] Sona erdi" #NT
- on_left_diarchy.notification.vassal.desc: "[ROOT.Char.GetShortUIName] artık [old_diarch.GetShortUIName] ile [sharing_power|E] değil" #NT
- msg_change_diarchy_type_title: "[power_sharing|E] Tipim Değişti" #NT
- msg_change_diarchy_type_effect: "$OLD_TYPE$'ım $NEW_TYPE$'e dönüştü" #NT
- on_diarch_change.notification.liege.boilerplate.t: "[liege.GetDiarchTitle]'ım değişti" #NT
- on_diarch_change.notification.vassal.boilerplate.t: "Efendimizin [liege.GetDiarchTitle]'ı Değişti" #NT
- on_diarch_change.notification.liege.death.t: "$on_diarch_change.notification.liege.boilerplate.t$" #NT
- on_diarch_change.notification.liege.death.desc: "[old_diarch.GetShortUINamePossessive|U] son [character_death_death|E] [diarch.GetShortUIName]'yi yeni [liege.GetDiarchTitle]'ünüz olarak bırakıyor." #NT
- on_diarch_change.notification.vassal.death.t: "$on_diarch_change.notification.vassal.boilerplate.t$" #NT
- on_diarch_change.notification.vassal.death.desc: "[old_diarch.GetShortUINamePossessive|U] son [character_death_death|E], [diarch.GetShortUIName]'yi [liege.GetPrimaryTitle.GetName]'ün bir sonraki [liege.GetDiarchTitle]'ü olarak terk etti." #NT
- on_diarch_change.notification.liege.deposition.t: "$on_diarch_change.notification.liege.boilerplate.t$" #NT
- on_diarch_change.notification.liege.deposition.desc: "[old_diarch.GetShortUIName|U] zorla tahttan indirildi ve [diarch.GetShortUIName] sizin yeni [liege.GetDiarchTitle]'niz olarak kaldı." #NT
- on_diarch_change.notification.vassal.deposition.t: "$on_diarch_change.notification.vassal.boilerplate.t$" #NT
- on_diarch_change.notification.vassal.deposition.desc: "[old_diarch.GetShortUIName|U] [Select_CString( old_diarch.IsLocalPlayer, 'have', 'has' )] zorla tahttan indirildi, geriye [diarch.GetShortUIName], [liege.GetPrimaryTitle.GetName]'ün bir sonraki [liege.GetDiarchTitle]'ü olarak kaldı." #NT
- on_diarch_change.notification.liege.invalidation.t: "$on_diarch_change.notification.liege.boilerplate.t$" #NT
- on_diarch_change.notification.liege.invalidation.desc: "[old_diarch.GetShortUIName|U] artık [old_diarch.GetHerHis] görevine devam etmek için geçerli değil, [diarch.GetShortUIName] yeni [liege.GetDiarchTitle] göreviniz olarak kalıyor." #NT
- on_diarch_change.notification.vassal.invalidation.t: "$on_diarch_change.notification.vassal.boilerplate.t$" #NT
- on_diarch_change.notification.vassal.invalidation.desc: "[old_diarch.GetShortUIName|U] [Select_CString( old_diarch.IsLocalPlayer, 'are', 'is' )] artık [CharMyHerHis(old_diarch)] görevlerini sürdürmek için geçerli değil, [diarch.GetShortUIName]'ü [liege.GetPrimaryTitle.GetName]'in bir sonraki [liege.GetDiarchTitle]'ü olarak bırakıyor." #NT
- on_diarch_change.notification.liege.inheritance.t: "$on_diarch_change.notification.liege.boilerplate.t$" #NT
- on_diarch_change.notification.liege.inheritance.desc: "Daha büyük bir alem devraldım, bu yüzden [diarch.GetShortUIName] artık benim yeni [liege.GetDiarchTitle]'im" #NT
- on_diarch_change.notification.vassal.inheritance.t: "$on_diarch_change.notification.vassal.boilerplate.t$" #NT
- on_diarch_change.notification.vassal.inheritance.desc: "Miras nedeniyle şu an [liege.GetDiarchTitle] ile [liege.GetShortUIName] arasındayım" #NT
- on_diarch_change.notification.liege.fallback.t: "$on_diarch_change.notification.liege.boilerplate.t$" #NT
- on_diarch_change.notification.liege.fallback.desc: "[old_diarch.GetShortUIName|U], yeni [liege.GetDiarchTitle]'niz olarak [diarch.GetShortUIName] ile değiştirilir." #NT
- on_diarch_change.notification.vassal.fallback.t: "$on_diarch_change.notification.vassal.boilerplate.t$" #NT
- on_diarch_change.notification.vassal.fallback.desc: "[old_diarch.GetShortUIName|U] [Select_CString( old_diarch.IsLocalPlayer, 'are', 'is' )], hükümdarınızın yeni [liege.GetDiarchTitle]'ü olarak [diarch.GetShortUIName] ile değiştirildi." #NT
- msg_diarchy_more_power_title: "[LEFT_CHARACTER.GetLiege.GetDiarchTitle] artık daha güçlü" #NT
- msg_diarchy_more_power_effect: "[scales_of_power|E] swing yeni bir seviyeye ulaştı ve [LEFT_CHARACTER.GetLiege.GetDiarchTitle] için daha fazla [diarch_powers|E] mevcut" #NT
- msg_diarchy_less_power_title: "[LEFT_CHARACTER.GetLiege.GetDiarchTitle] artık daha az güçlü" #NT
- msg_diarchy_less_power_effect: "[scales_of_power|E] salınımı daha düşük bir seviyeye düştü ve [LEFT_CHARACTER.GetLiege.GetDiarchTitle]'in daha az [diarch_powers|E]'si var" #NT
- grand_wedding_cancelled_by_regency_title: "Büyük Düğün İptal Edildi" #NT
- grand_wedding_cancelled_by_regency_desc: "[diarch.GetTitledFirstName], [diarch.GetLiege.GetTitledFirstNamePossessive] oldu [regent|E] ve artık [diarch.GetHerHis] [GetActivityType('activity_wedding').GetName] ile [betrothed.GetTitledFirstName]'e katılamaz" #NT
- msg_legend_promoter_join: "Efsane Promotör Katılıyor" #NT
- msg_legend_promoter_join_desc: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.GetUINameNoTooltip]'iniz başladı [Concept( 'promoted_legend', 'Promoting' )|E]'niz [legend|E], [GetPlayer.GetPromotedLegend.GetName]." #NT
- msg_legend_promoter_leave: "Efsane Promotör Ayrılıyor" #NT
- msg_legend_promoter_leave_desc: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.GetUINameNoTooltip]'iniz durdu [Concept( 'promoted_legend', 'Promoting' )|E]'niz [legend|E], [GetPlayer.GetPromotedLegend.GetName]." #NT
- msg_promoted_legend_unowned: "Terfi Edilen Efsane Sahipsiz" #NT
- msg_promoted_legend_unowned_desc: "[promoted_legend|E] [Legend.GetName]'iniz artık hiç kimseye ait değil" #NT
- msg_promoted_legend_completed: "Terfi Edilen Efsane Tamamlandı" #NT
- msg_promoted_legend_completed_desc: "[promoted_legend|E] [Legend.GetName]'iniz tamamlandı" #NT
- msg_legend_library_added: "Kütüphaneye efsane eklendi" #NT
- msg_legend_library_added_desc: "[Legend.GetName], [legend_library|E]'inize eklendi." #NT
- message_consolidation_names: "#T Diğerleri#!\n[PlayerMessageItem.GetConsolidationNames]" #NT
- message_consolidation_others: "#tooltip:message_consolidation_names #L [Subtract_int32( PlayerMessageItem.GetConsolidationCount, '(int32)2' )|V] [Select_CString( GreaterThan_int32( PlayerMessageItem.GetConsolidationCount, '(int32)3' ), 'others', 'other' )] #!#!" #NT
+ msg_start_diarchy_title: "[LEFT_CHARACTER.GetDiarchy.GetDiarch.Custom('GetDiarchyArticle')] [LEFT_CHARACTER.GetDiarchyTypeName]'e girdim" #NT!
+ msg_start_diarchy_effect: "[sharing_power|E]'ı [RIGHT_CHARACTER.GetName] ile başlattım" #NT!
+ msg_inherit_diarchy_title: "Miras aldım [LEFT_CHARACTER.GetDiarchy.GetDiarch.Custom('GetDiarchyArticle')] [LEFT_CHARACTER.GetDiarchyTypeName]" #NT!
+ on_entered_diarchy.notification.vassal.t: "Liege Girdi [ROOT.Char.GetDiarchyTypeName]" #NT!
+ on_entered_diarchy.notification.vassal.t.higher_liege: "Higher Liege Girdi [ROOT.Char.GetDiarchyTypeName]" #NT!
+ on_entered_diarchy.notification.vassal.desc: "[ROOT.Char.GetShortUIName] artık [ROOT.Char.GetDiarchy.GetDiarch.GetShortUIName] ile [sharing_power|E] oldu" #NT!
+ on_entered_diarchy.notification.vassal.desc.outro.child: "[child|E] olması nedeniyle" #NT!
+ on_entered_diarchy.notification.vassal.desc.outro.incapable: "[GetTrait('incapable').GetName(GetNullCharacter)] olması nedeniyle" #NT!
+ on_entered_diarchy.notification.vassal.desc.outro.imprisonment: "yurtdışında [imprisoned|E] olmak nedeniyle" #NT!
+ on_entered_diarchy.notification.vassal.desc.outro.travel: "[traveling|E] nedeniyle yurtdışında" #NT!
+ msg_end_diarchy_title: "[LEFT_CHARACTER.GetDiarchyTypeName] Bitti" #NT!
+ msg_end_diarchy_effect: "Artık [RIGHT_CHARACTER.GetName] ile [sharing_power|E] değilim" #NT!
+ on_left_diarchy.notification.vassal.t: "Liege [ROOT.Char.GetDiarchyTypeName] Sona erdi" #NT!
+ on_left_diarchy.notification.vassal.desc: "[ROOT.Char.GetShortUIName] artık [old_diarch.GetShortUIName] ile [sharing_power|E] değil" #NT!
+ msg_change_diarchy_type_title: "[power_sharing|E] Tipim Değişti" #NT!
+ msg_change_diarchy_type_effect: "$OLD_TYPE$'ım $NEW_TYPE$'e dönüştü" #NT!
+ on_diarch_change.notification.liege.boilerplate.t: "[liege.GetDiarchTitle]'ım değişti" #NT!
+ on_diarch_change.notification.vassal.boilerplate.t: "Efendimizin [liege.GetDiarchTitle]'ı Değişti" #NT!
+ on_diarch_change.notification.liege.death.t: "$on_diarch_change.notification.liege.boilerplate.t$" #NT!
+ on_diarch_change.notification.liege.death.desc: "[old_diarch.GetShortUINamePossessive|U] son [character_death_death|E] [diarch.GetShortUIName]'yi yeni [liege.GetDiarchTitle]'ünüz olarak bırakıyor." #NT!
+ on_diarch_change.notification.vassal.death.t: "$on_diarch_change.notification.vassal.boilerplate.t$" #NT!
+ on_diarch_change.notification.vassal.death.desc: "[old_diarch.GetShortUINamePossessive|U] son [character_death_death|E], [diarch.GetShortUIName]'yi [liege.GetPrimaryTitle.GetName]'ün bir sonraki [liege.GetDiarchTitle]'ü olarak terk etti." #NT!
+ on_diarch_change.notification.liege.deposition.t: "$on_diarch_change.notification.liege.boilerplate.t$" #NT!
+ on_diarch_change.notification.liege.deposition.desc: "[old_diarch.GetShortUIName|U] zorla tahttan indirildi ve [diarch.GetShortUIName] sizin yeni [liege.GetDiarchTitle]'niz olarak kaldı." #NT!
+ on_diarch_change.notification.vassal.deposition.t: "$on_diarch_change.notification.vassal.boilerplate.t$" #NT!
+ on_diarch_change.notification.vassal.deposition.desc: "[old_diarch.GetShortUIName|U] [Select_CString( old_diarch.IsLocalPlayer, 'have', 'has' )] zorla tahttan indirildi, geriye [diarch.GetShortUIName], [liege.GetPrimaryTitle.GetName]'ün bir sonraki [liege.GetDiarchTitle]'ü olarak kaldı." #NT!
+ on_diarch_change.notification.liege.invalidation.t: "$on_diarch_change.notification.liege.boilerplate.t$" #NT!
+ on_diarch_change.notification.liege.invalidation.desc: "[old_diarch.GetShortUIName|U] artık [old_diarch.GetHerHis] görevine devam etmek için geçerli değil, [diarch.GetShortUIName] yeni [liege.GetDiarchTitle] göreviniz olarak kalıyor." #NT!
+ on_diarch_change.notification.vassal.invalidation.t: "$on_diarch_change.notification.vassal.boilerplate.t$" #NT!
+ on_diarch_change.notification.vassal.invalidation.desc: "[old_diarch.GetShortUIName|U] [Select_CString( old_diarch.IsLocalPlayer, 'are', 'is' )] artık [CharMyHerHis(old_diarch)] görevlerini sürdürmek için geçerli değil, [diarch.GetShortUIName]'ü [liege.GetPrimaryTitle.GetName]'in bir sonraki [liege.GetDiarchTitle]'ü olarak bırakıyor." #NT!
+ on_diarch_change.notification.liege.inheritance.t: "$on_diarch_change.notification.liege.boilerplate.t$" #NT!
+ on_diarch_change.notification.liege.inheritance.desc: "Daha büyük bir alem devraldım, bu yüzden [diarch.GetShortUIName] artık benim yeni [liege.GetDiarchTitle]'im" #NT!
+ on_diarch_change.notification.vassal.inheritance.t: "$on_diarch_change.notification.vassal.boilerplate.t$" #NT!
+ on_diarch_change.notification.vassal.inheritance.desc: "Miras nedeniyle şu an [liege.GetDiarchTitle] ile [liege.GetShortUIName] arasındayım" #NT!
+ on_diarch_change.notification.liege.fallback.t: "$on_diarch_change.notification.liege.boilerplate.t$" #NT!
+ on_diarch_change.notification.liege.fallback.desc: "[old_diarch.GetShortUIName|U], yeni [liege.GetDiarchTitle]'niz olarak [diarch.GetShortUIName] ile değiştirilir." #NT!
+ on_diarch_change.notification.vassal.fallback.t: "$on_diarch_change.notification.vassal.boilerplate.t$" #NT!
+ on_diarch_change.notification.vassal.fallback.desc: "[old_diarch.GetShortUIName|U] [Select_CString( old_diarch.IsLocalPlayer, 'are', 'is' )], hükümdarınızın yeni [liege.GetDiarchTitle]'ü olarak [diarch.GetShortUIName] ile değiştirildi." #NT!
+ msg_diarchy_more_power_title: "[LEFT_CHARACTER.GetLiege.GetDiarchTitle] artık daha güçlü" #NT!
+ msg_diarchy_more_power_effect: "[scales_of_power|E] swing yeni bir seviyeye ulaştı ve [LEFT_CHARACTER.GetLiege.GetDiarchTitle] için daha fazla [diarch_powers|E] mevcut" #NT!
+ msg_diarchy_less_power_title: "[LEFT_CHARACTER.GetLiege.GetDiarchTitle] artık daha az güçlü" #NT!
+ msg_diarchy_less_power_effect: "[scales_of_power|E] salınımı daha düşük bir seviyeye düştü ve [LEFT_CHARACTER.GetLiege.GetDiarchTitle]'in daha az [diarch_powers|E]'si var" #NT!
+ grand_wedding_cancelled_by_regency_title: "Büyük Düğün İptal Edildi" #NT!
+ grand_wedding_cancelled_by_regency_desc: "[diarch.GetTitledFirstName], [diarch.GetLiege.GetTitledFirstNamePossessive] oldu [regent|E] ve artık [diarch.GetHerHis] [GetActivityType('activity_wedding').GetName] ile [betrothed.GetTitledFirstName]'e katılamaz" #NT!
+ msg_legend_promoter_join: "Efsane Promotör Katılıyor" #NT!
+ msg_legend_promoter_join_desc: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.GetUINameNoTooltip]'iniz başladı [Concept( 'promoted_legend', 'Promoting' )|E]'niz [legend|E], [GetPlayer.GetPromotedLegend.GetName]." #NT!
+ msg_legend_promoter_leave: "Efsane Promotör Ayrılıyor" #NT!
+ msg_legend_promoter_leave_desc: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )] [LEFT_CHARACTER.GetUINameNoTooltip]'iniz durdu [Concept( 'promoted_legend', 'Promoting' )|E]'niz [legend|E], [GetPlayer.GetPromotedLegend.GetName]." #NT!
+ msg_promoted_legend_unowned: "Terfi Edilen Efsane Sahipsiz" #NT!
+ msg_promoted_legend_unowned_desc: "[promoted_legend|E] [Legend.GetName]'iniz artık hiç kimseye ait değil" #NT!
+ msg_promoted_legend_completed: "Terfi Edilen Efsane Tamamlandı" #NT!
+ msg_promoted_legend_completed_desc: "[promoted_legend|E] [Legend.GetName]'iniz tamamlandı" #NT!
+ msg_legend_library_added: "Kütüphaneye efsane eklendi" #NT!
+ msg_legend_library_added_desc: "[Legend.GetName], [legend_library|E]'inize eklendi." #NT!
+ message_consolidation_names: "#T Diğerleri#!\n[PlayerMessageItem.GetConsolidationNames]" #NT!
+ message_consolidation_others: "#tooltip:message_consolidation_names #L [Subtract_int32( PlayerMessageItem.GetConsolidationCount, '(int32)2' )|V] [Select_CString( GreaterThan_int32( PlayerMessageItem.GetConsolidationCount, '(int32)3' ), 'others', 'other' )] #!#!" #NT!

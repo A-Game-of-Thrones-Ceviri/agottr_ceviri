@@ -1,144 +1,144 @@
-﻿l_english: #NT
- FAITH_VIEW_HEADING: "[Faith.GetNameNoTooltip]" #NT
- FAITH_VIEW_SUBHEADING: "[organized|E] [Faith.GetReligion.GetAdjective] [faith|E]" #NT
- FAITH_VIEW_UNREFORMED_SUBHEADING: "[GetFaithDoctrine('unreformed_faith_doctrine').GetBaseName] [Faith.GetReligion.GetAdjective] [faith|E]" #NT
- FAITH_VIEW_REFORMED_SUBHEADING: "[organized|E] [Faith.GetReligion.GetAdjective] [faith|E]" #NT
- FAITH_VIEW_OUR_VIEW: "Biz onları [GetPlayer.GetFaith.GetRelationNameTo( Faith.Self )|V] olarak değerlendiriyoruz" #NT
- FAITH_VIEW_THEIR_VIEW: "Bizi [Faith.GetRelationNameTo( GetPlayer.GetFaith )|V] olarak görüyorlar" #NT
- FAITH_VIEW_YOUR_FAITH: "Senin [faith|E]" #NT
- TOGGLE_RELIGION_VIEW: "Diğer İnançlar" #NT
- RELIGION_WINDOW_TITLE: "Diğer İnançlar" #NT
- FAITH_ITEM_TOOLTIP: "#I Görüntülemek için tıklayın [Faith.GetNameNoTooltip]#!" #NT
- FAITH_TOOLTIP_HEAD_OF_FAITH: "[head_of_faith|E]: [Faith.GetReligiousHead.GetUIName|U]" #NT
- TOGGLE_RELIGION_VIEW_TOOLTIP: "#I Diğerini görüntülemek için tıklayın [faiths|E]#!" #NT
- FAITH_WINDOW_FERVOR: "[fervor|E]: [Faith.GetFervor|0]%" #NT
- FAITH_WINDOW_VIRTUES: "[virtues|E]" #NT
- FAITH_WINDOW_SINS: "[sins|E]" #NT
- FAITH_WINDOW_DOCTRINE_TOOLTIP: "#T [FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith )]#!\n[FaithDoctrine.GetEffectsDescription( GuiFaithDoctrineItem.GetFaith )]\n\n[FaithDoctrine.GetDescription( GuiFaithDoctrineItem.GetFaith )|F]" #NT
- FAITH_WINDOW_DOCTRINE_TOOLTIP_WITH_FAITH: "#T [FaithDoctrine.GetNameNoTooltip( Faith.Self )]#!\n[FaithDoctrine.GetEffectsDescription( İnanç.Kendi )]\n\n[FaithDoctrine.GetDescription( Faith.Self )|F]" #NT
- FAITH_TOOLTIP_DOCTRINE_HEAD_OF_FAITH: "[head_of_faith|E]: [Faith.GetReligiousHead.GetShortUIName|U]" #NT
- FAITH_TOOLTIP_DOCTRINE_NO_HEAD_OF_FAITH: "Hayır [head_of_faith|E]" #NT
- FAITH_TOOLTIP_DOCTRINE_VACANT_HEAD_OF_FAITH: "[head_of_faith|E]: Boş" #NT
- FAITH_WINDOW_DOCTRINE_SELECT_TOOLTIP: "$FAITH_WINDOW_DOCTRINE_TOOLTIP$\n\n[GuiFaithCreationDoctrineItem.GetBlockers]#I Seçmek için tıklayın [FaithDoctrine.GetName( GuiFaithDoctrineItem.GetFaith )]#!" #NT
- FAITH_WINDOW_DOCTRINE_CHANGE_TOOLTIP: "$FAITH_WINDOW_DOCTRINE_TOOLTIP$\n\n[GuiFaithCreationDoctrineItem.GetBlockers]Maliyet: [piety_i][FaithDoctrine.CalcPietyCost( GuiFaithDoctrineItem.GetFaith )|0]\n#I Değiştirmek için tıklayın#!" #NT
- DOCTRINE_BLOCKS_FAITH_CREATION: "@warning_icon! #X [FAITH_DOCTRINE.GetName( GetPlayer.GetFaith )] izin verilmiyor#!" #NT
- CANNOT_CREATE_FAITH_IN_OBSERVE_MODE: "@warning_icon! #X Bir karakter olarak oynamanız gerekiyor#!" #NT
- FAITH_CREATION_BUTTON_TOOLTIP: "#T Faith Oluştur#!\n[Select_CString( FaithCreationWindow.CanCreateFaith, '#I Faith Oluşturmak İçin Tıklayın#!', FaithCreationWindow.GetCreationBlockers )]" #NT
- FAITH_REFORM_BUTTON_TOOLTIP: "#T İnancı Yeniden Şekillendir#!\n[FaithCreationWindow.GetCreationBlockers]#I İnancı Yeniden Şekillendirmek İçin Tıklayın#!" #NT
- FAITH_CONVERSION_BUTTON_TOOLTIP: "#T İnancını Değiştir#!\n[FaithConversionWindow.GetConversionBlockers]#I İnancını Değiştirmek İçin Tıkla#!" #NT
- FAITH_CONVERSION_SAME_FAITH: "Zaten takip ediyorum [FAITH.GetName]" #NT
- CREATE_REFORM_FAITH_TEXT: "[SelectLocalization( GetPlayer.GetFaith.IsUnreformed, 'REFORM_FAITH_WINDOW_TITLE', 'CREATE_FAITH_WINDOW_TITLE' )]" #NT
- CREATE_REFORM_FAITH_TOOLTIP: "[SelectLocalization( GetPlayer.GetFaith.IsUnreformed, 'REFORM_FAITH_WINDOW_TITLE_TOOLTIP', 'CREATE_FAITH_WINDOW_TITLE_TOOLTIP' )]" #NT
- CREATE_FAITH_WINDOW_TITLE: "Yeni [GetPlayer.GetFaith.GetReligion.GetAdjectiveNoTooltip] İnanç Oluştur" #NT
- REFORM_FAITH_WINDOW_TITLE: "[GetPlayer.GetFaith.GetNameNoTooltip] İnancını Yeniden Şekillendir" #NT
- CREATE_FAITH_WINDOW_TITLE_TOOLTIP: "#T $CREATE_FAITH_WINDOW_TITLE$#!\nCreate [core_tenets|E] ve [doctrines|E]'i seçerek yeni bir [faith|E]" #NT
- REFORM_FAITH_WINDOW_TITLE_TOOLTIP: "#T $REFORM_FAITH_WINDOW_TITLE$#!\nReform [GetPlayer.GetFaith.GetNameNoTooltip] [faith|E] [core_tenets|E] ve [doctrines|E]'yı seçerek" #NT
- CONVERT_FAITH_WINDOW_TITLE_UI: "[Faith.GetNameNoTooltip]'a dönüştür" #NT
- CONVERT_FAITH_WINDOW_TITLE: "[FAITH.GetNameNoTooltip]'a dönüştür" #NT
- FAITH_CREATION_DOCTRINES_PIETY_COST: "İndirimsiz doktrin maliyeti: [piety_i]$VALUE|V$" #NT
- FAITH_CONVERSION_DISCOUNT: "Dönüşüm indirimi: [piety_i]$VALUE|P%0$" #NT
- FAITH_CREATION_COST_TOOLTIP: "#T Yaratılış maliyeti: [piety_i][FaithCreationWindow.CalcPietyCost]#!\n[FaithCreationWindow.GetPietyCostDesc]" #NT
- FAITH_CONVERSION_COST_TOOLTIP: "#T Dönüşüm maliyeti: [piety_i][FaithConversionWindow.CalcPietyCost]#!\n[FaithConversionWindow.GetPietyCostDesc]" #NT
- FAITH_NAME_ALREADY_IN_USE: "@warning_icon! #X Ad zaten [FAITH.GetName]#! tarafından kullanılıyor" #NT
- FAITH_MUST_BE_UNIQUE: "@warning_icon! #X İnanç, dini içinde benzersiz olmalıdır. Şu anda [FAITH.GetName]#! ile aynı doktrinlere sahiptir" #NT
- MUST_SELECT_FAITH_ICON: "@warning_icon! #X Yeni İnanç için bir simge seçmelisiniz#!" #NT
- SELECT_FAITH_ICON: "İnanç Simgesini Seçin" #NT
- CHANGE_FAITH_ICON: "#T İnanç Simgesini Değiştir#!\n#I İnanç simgesini değiştirmek için tıklayın#!" #NT
- SELECT_FAITH_ICON_TOOLTIP: "#T İnanç Simgesini Seçin#!\n#I Bu İnanç simgesini seçmek için tıklayın#!" #NT
- VASSAL_WILL_CONVERT: "#P Dönüştürülecek ($VALUE|0$)#!" #NT
- VASSAL_MIGHT_CONVERT: "#V Dönüştürebilir ($VALUE|0$)#!" #NT
- VASSAL_WILL_NOT_CONVERT: "#N Dönüştürülmeyecek ($VALUE|0$)#!" #NT
- VASSAL_CONVERSION_HEADER: "Dönüşecek Vasallar" #NT
- VASSAL_CONVERSION_TOOLTIP: "#T $VASSAL_CONVERSION_TEXT$#!" #NT
- FAITH_CREATION_ADOPTION: "Diyar Kabulü" #NT
- FAITH_CREATION_ADOPTION_TEXT: "[close_family|E]'ım dönüşecek\n[VassalConversionWindow.GetNumberOfVassalsToConvert] / [VassalConversionWindow.GetNumberOfVassals] [vassals|E] dönüşecek" #NT
- FAITH_CREATION_TOLERANCE: "Eski İnanç Hoşgörüsü" #NT
- FAITH_CREATION_TOLERANCE_TEXT: "Eski İnancınız sizi [GetHostilityLevelName( FaithCreationWindow.GetHostilityLevel )] olarak değerlendirecektir" #NT
- FAITH_CONVERSION_TOLERANCE_TEXT: "Eski İnancınız sizi [GetHostilityLevelName( FaithConversionWindow.GetHostilityLevel )] olarak değerlendirecektir" #NT
- FAITH_CREATION_OPEN_VASSAL_LIST: "Vasalları Göster" #NT
- FAITH_CREATION_PAGAN_REFORM: "Pagan İnancını Yeniden Düzenlemek" #NT
- FAITH_CREATION_PAGAN_REFORM_TEXT: "#high [GetPlayer.GetFaith.GetName]#!'yi yeniden şekillendirmek onu organize bir İnanç yapacaktır. Organize İnançlar [holy_wars|E]'e erişebilir ve [court_chaplains|E]'leri [counties|E]'i dönüştürmede daha iyidir." #NT
- FAITH_CREATION_ADDS_CHURCH_PROPERTY_TEXT: "Enstitü [church_property|E]\n[court_chaplain|E]'iniz [domain|E]'nizdeki tapınaklar üzerinde kontrol sahibi olacak" #NT
- FAITH_CREATION_ADDS_LAY_CLERGY_TEXT: "[church_property|E]'ı kaldırın\n[GetPlayer.GetFaith.Custom('HouseOfWorshipPlural')|U]'iniz üzerinde doğrudan kontrol kazanacaksınız ve bunlar [domain_limit|E]'nize sayılacak" #NT
- FAITH_CREATION_COOLDOWN: "#weak Her Hükümdar yalnızca bir kez bir İnanç oluşturabilir veya yeniden düzenleyebilir!#!" #NT
- FAITH_CREATION_CREATE: "İnancı Yarat" #NT
- FAITH_CREATION_REFORM: "Reform İnancı" #NT
- FAITH_CONVERSION_CONVERT: "İnanca Dönüş" #NT
- FAITH_MUST_BE_DIFFERENT_FROM_OLD: "@warning_icon! #X Yeni [faith|E] ve eski [faith|E]'iniz aynı [core_tenets|E] ve [doctrines|E]#!'e sahip olamaz" #NT
- FAITH_CREATION_TOTAL_COST: "Maliyet: [GetLocalPlayerPietyTextIcon][FaithCreationWindow.CalcPietyCost]" #NT
- FAITH_CONVERSION_TOTAL_COST: "Toplam Maliyet: [GetLocalPlayerPietyTextIcon][FaithConversionWindow.CalcPietyCost]" #NT
- FAITH_CONVERSION_COST_MISSING: "#X Eksik: [GetLocalPlayerPietyTextIcon][FaithConversionWindow.CalcPietyMissing]#!" #NT
- FAITH_CREATION_COST_MISSING: "#X Eksik: [GetLocalPlayerPietyTextIcon][FaithCreationWindow.CalcPietyMissing]#!" #NT
- FAITH_CREATION_NAMING_NAME_BASE: "İsim" #NT
- FAITH_CREATION_NAMING_ADJECTIVE_BASE: "Sıfat" #NT
- FAITH_CREATION_NAMING_FOLLOWER_BASE: "Tek Takipçi" #NT
- FAITH_CREATION_NAMING_FOLLOWERS_BASE: "Çok sayıda takipçi" #NT
- FAITH_CREATION_NAMING_NAME: "$FAITH_CREATION_NAMING_NAME_BASE$:" #NT
- FAITH_CREATION_NAMING_ADJECTIVE: "$FAITH_CREATION_NAMING_ADJECTIVE_BASE$:" #NT
- FAITH_CREATION_NAMING_FOLLOWER: "$FAITH_CREATION_NAMING_FOLLOWER_BASE$:" #NT
- FAITH_CREATION_NAMING_FOLLOWERS: "$FAITH_CREATION_NAMING_FOLLOWERS_BASE$:" #NT
- FAITH_CREATION_NEEDS_ICON: "#X Bir Simge seçmelisiniz#!" #NT
- FAITH_CREATION_NAMING_DESC: "Tanım:" #NT
- FAITH_CREATION_NAMING_HEADER: "İsimleri seçin..." #NT
- FAITH_WINDOW_FAITH_NAME: "[Select_CString( StringIsEmpty( FaithCreationWindow.GetNewFaithName ), 'Choose Name', '' )] [FaithCreationWindow.GetNewFaithName]" #NT
- FAITH_WINDOW_FAITH_NAME_TOOLTIP: "Yeni [faith|E]'ınız ve takipçileriniz için bir ad girin" #NT
- FERVOR_YEARLY_CHANGE: "Yıllık [fervor|E] Değişim" #NT
- FERVOR_TT: "#T Coşku: [Faith.GetFervor|2]%\n#!#weak Bir [faith|E]'ün [fervor|E]'ünün gerçek etkileri her zaman karşıt İnancın Coşkusu ile ilişkilidir. Örneğin, [convert_county|E] Görevini kullanırken.#!\n\n[Faith.GetYearlyFervorChangeDesc]\n\n[Faith.GetFervorChangelog]" #NT
- FAITH_DOCTRINES_IMPORTANT: "Ana [doctrines|E]" #NT
- FAITH_DOCTRINES_MARRIAGE: "Evlilik Doktrinleri" #NT
- FAITH_DOCTRINES_CRIMES: "Suç Doktrinleri" #NT
- FAITH_DOCTRINES_CLERGY: "Din Adamları Doktrinleri" #NT
- FAITH_DOCTRINES_SPECIAL: "Özel Doktrinler" #NT
- RELIGIOUS_HEAD: "Güncel [head_of_faith|E]" #NT
- RELIGIOUS_HEAD_WITH_NAME: "[Faith.GetReligiousHead.GetUINameNoTooltip|U]" #NT
- RELIGIOUS_HEAD_EMPTY_DESC: "Hiç kimse [Faith.GetAdjectiveNoTooltip] İnanç Lideri pozisyonunu elinde tutmuyor" #NT
- RELIGIOUS_HEAD_NEVER_DESC: "[Faith.GetNameNoTooltip]'ın İnanç Başkanı yoktur" #NT
- ASK_FOR_GOLD: "#D Altın İste#!" #NT
- CALL_CRUSADE: "#D Crusade'i arayın#!" #NT
- CREATE_ANTIPOPE: "#D Anti-Papa Oluştur#!" #NT
- RELIGION_FAMILY_TOOLTIP: "[ReligionFamily.GetReligiousFamilyHostilityDescription]\n\n#bold Aşağıdaki dinler [ReligionFamily.GetNameNoTooltip]:#!\n[ReligionFamily.GetReligions]\n" #NT
- CREATE_FAITH_CONFIRM_TITLE: "[Select_CString( GetPlayer.GetFaith.IsUnreformed, 'Reform', 'Create' )] $NAME$" #NT
- CREATE_FAITH_CONFIRM_DESC: "Toplam maliyet: [GetLocalPlayerPietyTextIcon]$COST$\n$NAME$'nin inançları bir kez [Select_CString( GetPlayer.GetFaith.IsUnreformed, 'reformed', 'created' )] değiştirildiğinde asla değiştirilemez" #NT
- CREATE_FAITH_CONFIRM_ACCEPT: "Yaratmak" #NT
- RELIGIOUS_HEAD_NO_HEAD: "Hayır [head_of_faith|E]" #NT
- RELIGIOUS_HEAD_SPIRITUAL_HEAD: "[head_of_faith_spiritual|E] [head_of_faith|E]#E :#!" #NT
- RELIGIOUS_HEAD_TEMPORAL_HEAD: "[head_of_faith_temporal|E] [head_of_faith|E]#E :#!" #NT
- FAITH_BELIEFS: "İnançlar" #NT
- FAITH_HOLY_SITES: "Kutsal Yerler" #NT
- FAITH_HOLY_SITE_EXPLANATION: "[Faith.GetAdjectiveNoTooltip] [ruler|E] tarafından tutulan her Kutsal Site, [Faith.GetNameNoTooltip]'nin tümüne bir bonus verir" #NT
- FAITH_HOLY_SITE_HOLDER_TOOLTIP: "#T [Character.GetPrimaryTitle.GetNameNoTooltip]\n#![ruler|E]: [Character.GetUIName]\n[faith|E]: [Character.GetFaith.GetName]\n\n[Select_CString( GuiHolySiteItem.IsHeldByFaith, '#same ', '#weak ' )][HolySite.GetName]'nin Hükümdarı [Character.GetFaith.GetAdjectiveNoTooltip] olduğundan, tüm [Character.GetPrimaryTitle.GetNameNoTooltip]1 Karaktere [Select_CString( GuiHolySiteItem.IsHeldByFaith, '', 'not ' )]fayda sağlayacaktır[Character.GetPrimaryTitle.GetNameNoTooltip]0[Character.GetPrimaryTitle.GetNameNoTooltip]2 Görüntülemek için tıklayın[Character.GetPrimaryTitle.GetNameNoTooltip]3" #NT
- FAITH_DOCTRINES_HEADING: "#E [doctrines|E]#!" #NT
- FAITH_CORE_TENETS_HEADING: "#E [core_tenets|E]#!" #NT
- FAITH_SHOW_ALL: "Tüm Doktrinleri Göster" #NT
- FAITH_HIDE: "Saklamak" #NT
- base_fervor_increase: "Temel" #NT
-  ### Temp stuff  #NT
- TEMP_RELIGION_INFO: "#D MS 605'te Ortodoksluktan ayrıldı\nKurucusu: Pierre XIV de Castelnau#!" #NT
- FAITH_FLAVOR_DESC: "$DESC|F$" #NT
- FAITH_CREATION_BASIC_UI_DESC: "#weak İnancımızı sonsuza dek yeniden şekillendirmek için eşsiz bir fırsatım var. Yeni dogma bir kez yerleştikten sonra değişime karşı dayanıklı olacağından, dikkatli bir şekilde planlama yapmalıyım.\n\nRahipler ve bilginler her türlü teolojiyi tartışmak, eski sözlü geleneklerimizin eksiksiz ve sağlam bir yeniden yorumunu kanunlaştırmaya çalışmak için sarayıma geldiler, ancak bu reformu mümkün kılan kişi benim.#!\n\nI yeni [faith|E]'ümüzün [core_tenets|E] ve [doctrines|E]'ü hakkında son sözü ben söylerim." #NT
- RELIGION_SHOW_ONLY: "Sadece [Religion.GetAdjectiveNoTooltip] [faiths|E]" #NT
- RELIGION_SHOW_ALL_FAITHS_TT: "Tümünü Göster [faiths|E]" #NT
- RELIGION_SHOW_RELIGION_FAITH_TT: "Sadece [RELIGION.GetAdjectiveNoTooltip] [faiths|E]'i göster" #NT
- FAITH_WINDOW_COUNTIES: "[Faith.GetNumberOfCountiesOfFaith] [counties|E] Bu İnancı takip et" #NT
-  #AGOT Modified  #NT
- # FAITH_RELIGION: "[Faith.GetReligion.GetAdjectiveNoTooltip] İnanç" #NT
- FAITH_RELIGION: "[Faith.GetReligion.GetAdjectiveNoTooltip]'ın inancı" #NT
- ORDER_FAITH_BY_COUNTIES: "İlçeler" #NT
- ORDER_FAITH_BY_FERVOR: "Coşku" #NT
- ORDER_FAITH_BY_RELIGION: "Din" #NT
- ORDER_FAITH_BY_NAME: "İsim" #NT
- FAITH_CREATION_THEOCRACY_INFO: "Teokrasi" #NT
- FAITH_CREATION_HEAD_OF_FAITH_INFO: "İnancın Başı" #NT
- SPIRITUAL_HEAD_CREATED: "$doctrine_parameter_spiritual_head_of_faith$" #NT
- SPIRITUAL_HEAD_NOT_CREATED: "[head_of_faith|E] Ünvanı oluşturulmayacak.\n[EmptyScope.ScriptValue( 'holy_sites_to_create_spiritual_head_of_faith' )|0V] [holy_sites|E]'ye sahip olduğunuzda daha sonra oluşturulabilir." #NT
- FAITH_CREATION_ADDS_SPIRITUAL_HEAD_TEXT: "Enstitü [spiritual_head_of_faith|E]\n[SelectLocalization( GreaterThanOrEqualTo_int32( GetPlayer.GetNumberOfControlledHolySites, FixedPointToInt( EmptyScope.ScriptValue( 'holy_sites_to_create_spiritual_head_of_faith' ) ) ), 'SPIRITUAL_HEAD_CREATED', 'SPIRITUAL_HEAD_NOT_CREATED' )]" #NT
- TEMPORAL_HEAD_CREATED: "[head_of_faith|E] ünvanını kazanacaksın." #NT
- TEMPORAL_HEAD_NOT_CREATED: "[head_of_faith|E] Ünvanı oluşturulmayacak.\n[EmptyScope.ScriptValue( 'holy_sites_to_create_temporal_head_of_faith' )|0V] [holy_sites|E]'ye sahip olduğunuzda daha sonra oluşturulabilir." #NT
- FAITH_CREATION_ADDS_TEMPORAL_HEAD_TEXT: "Enstitü [temporal_head_of_faith|E]\n[SelectLocalization( GreaterThanOrEqualTo_int32( GetPlayer.GetNumberOfControlledHolySites, FixedPointToInt( EmptyScope.ScriptValue( 'holy_sites_to_create_temporal_head_of_faith' ) ) ), 'TEMPORAL_HEAD_CREATED', 'TEMPORAL_HEAD_NOT_CREATED' )]" #NT
- CREATE_TEMPORAL_HEAD_OF_FAITH_TITLE: "İnanç Lideri Ünvanını Oluştur" #NT
- RECREATE_TEMPORAL_HEAD_OF_FAITH_TITLE: "İnanç Başkanı Unvanını Yeniden Oluşturun" #NT
- FERVOR_CHANGELOG_ENTRY: "[DATE.GetStringShort]: $DESC$: $VALUE|0+=$" #NT
- FERVOR_CHANGELOG_HEADER: "#S Son Değişiklikler:#!" #NT
- NO_CONVERSION_VASSALS_TO_DISPLAY: "Dönüştürülebilir bir [vassals|E]'ınız yok" #NT
- FAITH_CREATION_BLOCKERS_HEADER: "İnanç yaratılamaz" #NT
- CREATE_FAITH_SELECT_COLOR: "Yeni [faith|E]'ınız için bir renk seçin" #NT
+﻿l_english: #NT!
+ FAITH_VIEW_HEADING: "[Faith.GetNameNoTooltip]" #NT!
+ FAITH_VIEW_SUBHEADING: "[organized|E] [Faith.GetReligion.GetAdjective] [faith|E]" #NT!
+ FAITH_VIEW_UNREFORMED_SUBHEADING: "[GetFaithDoctrine('unreformed_faith_doctrine').GetBaseName] [Faith.GetReligion.GetAdjective] [faith|E]" #NT!
+ FAITH_VIEW_REFORMED_SUBHEADING: "[organized|E] [Faith.GetReligion.GetAdjective] [faith|E]" #NT!
+ FAITH_VIEW_OUR_VIEW: "Biz onları [GetPlayer.GetFaith.GetRelationNameTo( Faith.Self )|V] olarak değerlendiriyoruz" #NT!
+ FAITH_VIEW_THEIR_VIEW: "Bizi [Faith.GetRelationNameTo( GetPlayer.GetFaith )|V] olarak görüyorlar" #NT!
+ FAITH_VIEW_YOUR_FAITH: "Senin [faith|E]" #NT!
+ TOGGLE_RELIGION_VIEW: "Diğer İnançlar" #NT!
+ RELIGION_WINDOW_TITLE: "Diğer İnançlar" #NT!
+ FAITH_ITEM_TOOLTIP: "#I Görüntülemek için tıklayın [Faith.GetNameNoTooltip]#!" #NT!
+ FAITH_TOOLTIP_HEAD_OF_FAITH: "[head_of_faith|E]: [Faith.GetReligiousHead.GetUIName|U]" #NT!
+ TOGGLE_RELIGION_VIEW_TOOLTIP: "#I Diğerini görüntülemek için tıklayın [faiths|E]#!" #NT!
+ FAITH_WINDOW_FERVOR: "[fervor|E]: [Faith.GetFervor|0]%" #NT!
+ FAITH_WINDOW_VIRTUES: "[virtues|E]" #NT!
+ FAITH_WINDOW_SINS: "[sins|E]" #NT!
+ FAITH_WINDOW_DOCTRINE_TOOLTIP: "#T [FaithDoctrine.GetNameNoTooltip( GuiFaithDoctrineItem.GetFaith )]#!\n[FaithDoctrine.GetEffectsDescription( GuiFaithDoctrineItem.GetFaith )]\n\n[FaithDoctrine.GetDescription( GuiFaithDoctrineItem.GetFaith )|F]" #NT!
+ FAITH_WINDOW_DOCTRINE_TOOLTIP_WITH_FAITH: "#T [FaithDoctrine.GetNameNoTooltip( Faith.Self )]#!\n[FaithDoctrine.GetEffectsDescription( İnanç.Kendi )]\n\n[FaithDoctrine.GetDescription( Faith.Self )|F]" #NT!
+ FAITH_TOOLTIP_DOCTRINE_HEAD_OF_FAITH: "[head_of_faith|E]: [Faith.GetReligiousHead.GetShortUIName|U]" #NT!
+ FAITH_TOOLTIP_DOCTRINE_NO_HEAD_OF_FAITH: "Hayır [head_of_faith|E]" #NT!
+ FAITH_TOOLTIP_DOCTRINE_VACANT_HEAD_OF_FAITH: "[head_of_faith|E]: Boş" #NT!
+ FAITH_WINDOW_DOCTRINE_SELECT_TOOLTIP: "$FAITH_WINDOW_DOCTRINE_TOOLTIP$\n\n[GuiFaithCreationDoctrineItem.GetBlockers]#I Seçmek için tıklayın [FaithDoctrine.GetName( GuiFaithDoctrineItem.GetFaith )]#!" #NT!
+ FAITH_WINDOW_DOCTRINE_CHANGE_TOOLTIP: "$FAITH_WINDOW_DOCTRINE_TOOLTIP$\n\n[GuiFaithCreationDoctrineItem.GetBlockers]Maliyet: [piety_i][FaithDoctrine.CalcPietyCost( GuiFaithDoctrineItem.GetFaith )|0]\n#I Değiştirmek için tıklayın#!" #NT!
+ DOCTRINE_BLOCKS_FAITH_CREATION: "@warning_icon! #X [FAITH_DOCTRINE.GetName( GetPlayer.GetFaith )] izin verilmiyor#!" #NT!
+ CANNOT_CREATE_FAITH_IN_OBSERVE_MODE: "@warning_icon! #X Bir karakter olarak oynamanız gerekiyor#!" #NT!
+ FAITH_CREATION_BUTTON_TOOLTIP: "#T Faith Oluştur#!\n[Select_CString( FaithCreationWindow.CanCreateFaith, '#I Faith Oluşturmak İçin Tıklayın#!', FaithCreationWindow.GetCreationBlockers )]" #NT!
+ FAITH_REFORM_BUTTON_TOOLTIP: "#T İnancı Yeniden Şekillendir#!\n[FaithCreationWindow.GetCreationBlockers]#I İnancı Yeniden Şekillendirmek İçin Tıklayın#!" #NT!
+ FAITH_CONVERSION_BUTTON_TOOLTIP: "#T İnancını Değiştir#!\n[FaithConversionWindow.GetConversionBlockers]#I İnancını Değiştirmek İçin Tıkla#!" #NT!
+ FAITH_CONVERSION_SAME_FAITH: "Zaten takip ediyorum [FAITH.GetName]" #NT!
+ CREATE_REFORM_FAITH_TEXT: "[SelectLocalization( GetPlayer.GetFaith.IsUnreformed, 'REFORM_FAITH_WINDOW_TITLE', 'CREATE_FAITH_WINDOW_TITLE' )]" #NT!
+ CREATE_REFORM_FAITH_TOOLTIP: "[SelectLocalization( GetPlayer.GetFaith.IsUnreformed, 'REFORM_FAITH_WINDOW_TITLE_TOOLTIP', 'CREATE_FAITH_WINDOW_TITLE_TOOLTIP' )]" #NT!
+ CREATE_FAITH_WINDOW_TITLE: "Yeni [GetPlayer.GetFaith.GetReligion.GetAdjectiveNoTooltip] İnanç Oluştur" #NT!
+ REFORM_FAITH_WINDOW_TITLE: "[GetPlayer.GetFaith.GetNameNoTooltip] İnancını Yeniden Şekillendir" #NT!
+ CREATE_FAITH_WINDOW_TITLE_TOOLTIP: "#T $CREATE_FAITH_WINDOW_TITLE$#!\nCreate [core_tenets|E] ve [doctrines|E]'i seçerek yeni bir [faith|E]" #NT!
+ REFORM_FAITH_WINDOW_TITLE_TOOLTIP: "#T $REFORM_FAITH_WINDOW_TITLE$#!\nReform [GetPlayer.GetFaith.GetNameNoTooltip] [faith|E] [core_tenets|E] ve [doctrines|E]'yı seçerek" #NT!
+ CONVERT_FAITH_WINDOW_TITLE_UI: "[Faith.GetNameNoTooltip]'a dönüştür" #NT!
+ CONVERT_FAITH_WINDOW_TITLE: "[FAITH.GetNameNoTooltip]'a dönüştür" #NT!
+ FAITH_CREATION_DOCTRINES_PIETY_COST: "İndirimsiz doktrin maliyeti: [piety_i]$VALUE|V$" #NT!
+ FAITH_CONVERSION_DISCOUNT: "Dönüşüm indirimi: [piety_i]$VALUE|P%0$" #NT!
+ FAITH_CREATION_COST_TOOLTIP: "#T Yaratılış maliyeti: [piety_i][FaithCreationWindow.CalcPietyCost]#!\n[FaithCreationWindow.GetPietyCostDesc]" #NT!
+ FAITH_CONVERSION_COST_TOOLTIP: "#T Dönüşüm maliyeti: [piety_i][FaithConversionWindow.CalcPietyCost]#!\n[FaithConversionWindow.GetPietyCostDesc]" #NT!
+ FAITH_NAME_ALREADY_IN_USE: "@warning_icon! #X Ad zaten [FAITH.GetName]#! tarafından kullanılıyor" #NT!
+ FAITH_MUST_BE_UNIQUE: "@warning_icon! #X İnanç, dini içinde benzersiz olmalıdır. Şu anda [FAITH.GetName]#! ile aynı doktrinlere sahiptir" #NT!
+ MUST_SELECT_FAITH_ICON: "@warning_icon! #X Yeni İnanç için bir simge seçmelisiniz#!" #NT!
+ SELECT_FAITH_ICON: "İnanç Simgesini Seçin" #NT!
+ CHANGE_FAITH_ICON: "#T İnanç Simgesini Değiştir#!\n#I İnanç simgesini değiştirmek için tıklayın#!" #NT!
+ SELECT_FAITH_ICON_TOOLTIP: "#T İnanç Simgesini Seçin#!\n#I Bu İnanç simgesini seçmek için tıklayın#!" #NT!
+ VASSAL_WILL_CONVERT: "#P Dönüştürülecek ($VALUE|0$)#!" #NT!
+ VASSAL_MIGHT_CONVERT: "#V Dönüştürebilir ($VALUE|0$)#!" #NT!
+ VASSAL_WILL_NOT_CONVERT: "#N Dönüştürülmeyecek ($VALUE|0$)#!" #NT!
+ VASSAL_CONVERSION_HEADER: "Dönüşecek Vasallar" #NT!
+ VASSAL_CONVERSION_TOOLTIP: "#T $VASSAL_CONVERSION_TEXT$#!" #NT!
+ FAITH_CREATION_ADOPTION: "Diyar Kabulü" #NT!
+ FAITH_CREATION_ADOPTION_TEXT: "[close_family|E]'ım dönüşecek\n[VassalConversionWindow.GetNumberOfVassalsToConvert] / [VassalConversionWindow.GetNumberOfVassals] [vassals|E] dönüşecek" #NT!
+ FAITH_CREATION_TOLERANCE: "Eski İnanç Hoşgörüsü" #NT!
+ FAITH_CREATION_TOLERANCE_TEXT: "Eski İnancınız sizi [GetHostilityLevelName( FaithCreationWindow.GetHostilityLevel )] olarak değerlendirecektir" #NT!
+ FAITH_CONVERSION_TOLERANCE_TEXT: "Eski İnancınız sizi [GetHostilityLevelName( FaithConversionWindow.GetHostilityLevel )] olarak değerlendirecektir" #NT!
+ FAITH_CREATION_OPEN_VASSAL_LIST: "Vasalları Göster" #NT!
+ FAITH_CREATION_PAGAN_REFORM: "Pagan İnancını Yeniden Düzenlemek" #NT!
+ FAITH_CREATION_PAGAN_REFORM_TEXT: "#high [GetPlayer.GetFaith.GetName]#!'yi yeniden şekillendirmek onu organize bir İnanç yapacaktır. Organize İnançlar [holy_wars|E]'e erişebilir ve [court_chaplains|E]'leri [counties|E]'i dönüştürmede daha iyidir." #NT!
+ FAITH_CREATION_ADDS_CHURCH_PROPERTY_TEXT: "Enstitü [church_property|E]\n[court_chaplain|E]'iniz [domain|E]'nizdeki tapınaklar üzerinde kontrol sahibi olacak" #NT!
+ FAITH_CREATION_ADDS_LAY_CLERGY_TEXT: "[church_property|E]'ı kaldırın\n[GetPlayer.GetFaith.Custom('HouseOfWorshipPlural')|U]'iniz üzerinde doğrudan kontrol kazanacaksınız ve bunlar [domain_limit|E]'nize sayılacak" #NT!
+ FAITH_CREATION_COOLDOWN: "#weak Her Hükümdar yalnızca bir kez bir İnanç oluşturabilir veya yeniden düzenleyebilir!#!" #NT!
+ FAITH_CREATION_CREATE: "İnancı Yarat" #NT!
+ FAITH_CREATION_REFORM: "Reform İnancı" #NT!
+ FAITH_CONVERSION_CONVERT: "İnanca Dönüş" #NT!
+ FAITH_MUST_BE_DIFFERENT_FROM_OLD: "@warning_icon! #X Yeni [faith|E] ve eski [faith|E]'iniz aynı [core_tenets|E] ve [doctrines|E]#!'e sahip olamaz" #NT!
+ FAITH_CREATION_TOTAL_COST: "Maliyet: [GetLocalPlayerPietyTextIcon][FaithCreationWindow.CalcPietyCost]" #NT!
+ FAITH_CONVERSION_TOTAL_COST: "Toplam Maliyet: [GetLocalPlayerPietyTextIcon][FaithConversionWindow.CalcPietyCost]" #NT!
+ FAITH_CONVERSION_COST_MISSING: "#X Eksik: [GetLocalPlayerPietyTextIcon][FaithConversionWindow.CalcPietyMissing]#!" #NT!
+ FAITH_CREATION_COST_MISSING: "#X Eksik: [GetLocalPlayerPietyTextIcon][FaithCreationWindow.CalcPietyMissing]#!" #NT!
+ FAITH_CREATION_NAMING_NAME_BASE: "İsim" #NT!
+ FAITH_CREATION_NAMING_ADJECTIVE_BASE: "Sıfat" #NT!
+ FAITH_CREATION_NAMING_FOLLOWER_BASE: "Tek Takipçi" #NT!
+ FAITH_CREATION_NAMING_FOLLOWERS_BASE: "Çok sayıda takipçi" #NT!
+ FAITH_CREATION_NAMING_NAME: "$FAITH_CREATION_NAMING_NAME_BASE$:" #NT!
+ FAITH_CREATION_NAMING_ADJECTIVE: "$FAITH_CREATION_NAMING_ADJECTIVE_BASE$:" #NT!
+ FAITH_CREATION_NAMING_FOLLOWER: "$FAITH_CREATION_NAMING_FOLLOWER_BASE$:" #NT!
+ FAITH_CREATION_NAMING_FOLLOWERS: "$FAITH_CREATION_NAMING_FOLLOWERS_BASE$:" #NT!
+ FAITH_CREATION_NEEDS_ICON: "#X Bir Simge seçmelisiniz#!" #NT!
+ FAITH_CREATION_NAMING_DESC: "Tanım:" #NT!
+ FAITH_CREATION_NAMING_HEADER: "İsimleri seçin..." #NT!
+ FAITH_WINDOW_FAITH_NAME: "[Select_CString( StringIsEmpty( FaithCreationWindow.GetNewFaithName ), 'Choose Name', '' )] [FaithCreationWindow.GetNewFaithName]" #NT!
+ FAITH_WINDOW_FAITH_NAME_TOOLTIP: "Yeni [faith|E]'ınız ve takipçileriniz için bir ad girin" #NT!
+ FERVOR_YEARLY_CHANGE: "Yıllık [fervor|E] Değişim" #NT!
+ FERVOR_TT: "#T Coşku: [Faith.GetFervor|2]%\n#!#weak Bir [faith|E]'ün [fervor|E]'ünün gerçek etkileri her zaman karşıt İnancın Coşkusu ile ilişkilidir. Örneğin, [convert_county|E] Görevini kullanırken.#!\n\n[Faith.GetYearlyFervorChangeDesc]\n\n[Faith.GetFervorChangelog]" #NT!
+ FAITH_DOCTRINES_IMPORTANT: "Ana [doctrines|E]" #NT!
+ FAITH_DOCTRINES_MARRIAGE: "Evlilik Doktrinleri" #NT!
+ FAITH_DOCTRINES_CRIMES: "Suç Doktrinleri" #NT!
+ FAITH_DOCTRINES_CLERGY: "Din Adamları Doktrinleri" #NT!
+ FAITH_DOCTRINES_SPECIAL: "Özel Doktrinler" #NT!
+ RELIGIOUS_HEAD: "Güncel [head_of_faith|E]" #NT!
+ RELIGIOUS_HEAD_WITH_NAME: "[Faith.GetReligiousHead.GetUINameNoTooltip|U]" #NT!
+ RELIGIOUS_HEAD_EMPTY_DESC: "Hiç kimse [Faith.GetAdjectiveNoTooltip] İnanç Lideri pozisyonunu elinde tutmuyor" #NT!
+ RELIGIOUS_HEAD_NEVER_DESC: "[Faith.GetNameNoTooltip]'ın İnanç Başkanı yoktur" #NT!
+ ASK_FOR_GOLD: "#D Altın İste#!" #NT!
+ CALL_CRUSADE: "#D Crusade'i arayın#!" #NT!
+ CREATE_ANTIPOPE: "#D Anti-Papa Oluştur#!" #NT!
+ RELIGION_FAMILY_TOOLTIP: "[ReligionFamily.GetReligiousFamilyHostilityDescription]\n\n#bold Aşağıdaki dinler [ReligionFamily.GetNameNoTooltip]:#!\n[ReligionFamily.GetReligions]\n" #NT!
+ CREATE_FAITH_CONFIRM_TITLE: "[Select_CString( GetPlayer.GetFaith.IsUnreformed, 'Reform', 'Create' )] $NAME$" #NT!
+ CREATE_FAITH_CONFIRM_DESC: "Toplam maliyet: [GetLocalPlayerPietyTextIcon]$COST$\n$NAME$'nin inançları bir kez [Select_CString( GetPlayer.GetFaith.IsUnreformed, 'reformed', 'created' )] değiştirildiğinde asla değiştirilemez" #NT!
+ CREATE_FAITH_CONFIRM_ACCEPT: "Yaratmak" #NT!
+ RELIGIOUS_HEAD_NO_HEAD: "Hayır [head_of_faith|E]" #NT!
+ RELIGIOUS_HEAD_SPIRITUAL_HEAD: "[head_of_faith_spiritual|E] [head_of_faith|E]#E :#!" #NT!
+ RELIGIOUS_HEAD_TEMPORAL_HEAD: "[head_of_faith_temporal|E] [head_of_faith|E]#E :#!" #NT!
+ FAITH_BELIEFS: "İnançlar" #NT!
+ FAITH_HOLY_SITES: "Kutsal Yerler" #NT!
+ FAITH_HOLY_SITE_EXPLANATION: "[Faith.GetAdjectiveNoTooltip] [ruler|E] tarafından tutulan her Kutsal Site, [Faith.GetNameNoTooltip]'nin tümüne bir bonus verir" #NT!
+ FAITH_HOLY_SITE_HOLDER_TOOLTIP: "#T [Character.GetPrimaryTitle.GetNameNoTooltip]\n#![ruler|E]: [Character.GetUIName]\n[faith|E]: [Character.GetFaith.GetName]\n\n[Select_CString( GuiHolySiteItem.IsHeldByFaith, '#same ', '#weak ' )][HolySite.GetName]'nin Hükümdarı [Character.GetFaith.GetAdjectiveNoTooltip] olduğundan, tüm [Character.GetPrimaryTitle.GetNameNoTooltip]1 Karaktere [Select_CString( GuiHolySiteItem.IsHeldByFaith, '', 'not ' )]fayda sağlayacaktır[Character.GetPrimaryTitle.GetNameNoTooltip]0[Character.GetPrimaryTitle.GetNameNoTooltip]2 Görüntülemek için tıklayın[Character.GetPrimaryTitle.GetNameNoTooltip]3" #NT!
+ FAITH_DOCTRINES_HEADING: "#E [doctrines|E]#!" #NT!
+ FAITH_CORE_TENETS_HEADING: "#E [core_tenets|E]#!" #NT!
+ FAITH_SHOW_ALL: "Tüm Doktrinleri Göster" #NT!
+ FAITH_HIDE: "Saklamak" #NT!
+ base_fervor_increase: "Temel" #NT!
+  ### Temp stuff #NT!
+ TEMP_RELIGION_INFO: "#D MS 605'te Ortodoksluktan ayrıldı\nKurucusu: Pierre XIV de Castelnau#!" #NT!
+ FAITH_FLAVOR_DESC: "$DESC|F$" #NT!
+ FAITH_CREATION_BASIC_UI_DESC: "#weak İnancımızı sonsuza dek yeniden şekillendirmek için eşsiz bir fırsatım var. Yeni dogma bir kez yerleştikten sonra değişime karşı dayanıklı olacağından, dikkatli bir şekilde planlama yapmalıyım.\n\nRahipler ve bilginler her türlü teolojiyi tartışmak, eski sözlü geleneklerimizin eksiksiz ve sağlam bir yeniden yorumunu kanunlaştırmaya çalışmak için sarayıma geldiler, ancak bu reformu mümkün kılan kişi benim.#!\n\nI yeni [faith|E]'ümüzün [core_tenets|E] ve [doctrines|E]'ü hakkında son sözü ben söylerim." #NT!
+ RELIGION_SHOW_ONLY: "Sadece [Religion.GetAdjectiveNoTooltip] [faiths|E]" #NT!
+ RELIGION_SHOW_ALL_FAITHS_TT: "Tümünü Göster [faiths|E]" #NT!
+ RELIGION_SHOW_RELIGION_FAITH_TT: "Sadece [RELIGION.GetAdjectiveNoTooltip] [faiths|E]'i göster" #NT!
+ FAITH_WINDOW_COUNTIES: "[Faith.GetNumberOfCountiesOfFaith] [counties|E] Bu İnancı takip et" #NT!
+  #AGOT Modified #NT!
+ # FAITH_RELIGION: "[Faith.GetReligion.GetAdjectiveNoTooltip] İnanç" #NT!
+ FAITH_RELIGION: "[Faith.GetReligion.GetAdjectiveNoTooltip]'ın inancı" #NT!
+ ORDER_FAITH_BY_COUNTIES: "İlçeler" #NT!
+ ORDER_FAITH_BY_FERVOR: "Coşku" #NT!
+ ORDER_FAITH_BY_RELIGION: "Din" #NT!
+ ORDER_FAITH_BY_NAME: "İsim" #NT!
+ FAITH_CREATION_THEOCRACY_INFO: "Teokrasi" #NT!
+ FAITH_CREATION_HEAD_OF_FAITH_INFO: "İnancın Başı" #NT!
+ SPIRITUAL_HEAD_CREATED: "$doctrine_parameter_spiritual_head_of_faith$" #NT!
+ SPIRITUAL_HEAD_NOT_CREATED: "[head_of_faith|E] Ünvanı oluşturulmayacak.\n[EmptyScope.ScriptValue( 'holy_sites_to_create_spiritual_head_of_faith' )|0V] [holy_sites|E]'ye sahip olduğunuzda daha sonra oluşturulabilir." #NT!
+ FAITH_CREATION_ADDS_SPIRITUAL_HEAD_TEXT: "Enstitü [spiritual_head_of_faith|E]\n[SelectLocalization( GreaterThanOrEqualTo_int32( GetPlayer.GetNumberOfControlledHolySites, FixedPointToInt( EmptyScope.ScriptValue( 'holy_sites_to_create_spiritual_head_of_faith' ) ) ), 'SPIRITUAL_HEAD_CREATED', 'SPIRITUAL_HEAD_NOT_CREATED' )]" #NT!
+ TEMPORAL_HEAD_CREATED: "[head_of_faith|E] ünvanını kazanacaksın." #NT!
+ TEMPORAL_HEAD_NOT_CREATED: "[head_of_faith|E] Ünvanı oluşturulmayacak.\n[EmptyScope.ScriptValue( 'holy_sites_to_create_temporal_head_of_faith' )|0V] [holy_sites|E]'ye sahip olduğunuzda daha sonra oluşturulabilir." #NT!
+ FAITH_CREATION_ADDS_TEMPORAL_HEAD_TEXT: "Enstitü [temporal_head_of_faith|E]\n[SelectLocalization( GreaterThanOrEqualTo_int32( GetPlayer.GetNumberOfControlledHolySites, FixedPointToInt( EmptyScope.ScriptValue( 'holy_sites_to_create_temporal_head_of_faith' ) ) ), 'TEMPORAL_HEAD_CREATED', 'TEMPORAL_HEAD_NOT_CREATED' )]" #NT!
+ CREATE_TEMPORAL_HEAD_OF_FAITH_TITLE: "İnanç Lideri Ünvanını Oluştur" #NT!
+ RECREATE_TEMPORAL_HEAD_OF_FAITH_TITLE: "İnanç Başkanı Unvanını Yeniden Oluşturun" #NT!
+ FERVOR_CHANGELOG_ENTRY: "[DATE.GetStringShort]: $DESC$: $VALUE|0+=$" #NT!
+ FERVOR_CHANGELOG_HEADER: "#S Son Değişiklikler:#!" #NT!
+ NO_CONVERSION_VASSALS_TO_DISPLAY: "Dönüştürülebilir bir [vassals|E]'ınız yok" #NT!
+ FAITH_CREATION_BLOCKERS_HEADER: "İnanç yaratılamaz" #NT!
+ CREATE_FAITH_SELECT_COLOR: "Yeni [faith|E]'ınız için bir renk seçin" #NT!

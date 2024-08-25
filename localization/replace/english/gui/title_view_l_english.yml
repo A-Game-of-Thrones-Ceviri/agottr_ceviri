@@ -1,190 +1,190 @@
-﻿l_english: #NT
- TITLE_VIEW_OWNED_BY: "İçeride [CHARACTER.GetUINamePossessive] [realm|E]" #NT
- TITLE_VIEW_VASSAL_SCROLL_TITLE: "Bileşen [de_jure|E] [titles|E] / [TitleViewWindow.GetTitle.GetNameNoTierNoTooltip]" #NT
- TITLE_VIEW_UNOWNED_TITLES: "Henüz oluşturulmadı" #NT
- PREVIOUS_TITLE: "#T Önceki göster [title|E]#!\n[TITLE.GetName]" #NT
- PREVIOUS_NO_TITLE: "#T Öncekini göster [title|E]#!\n@warning_icon! #X Geri dönülecek Ünvan yok#!" #NT
- TEMP_TITLE_LAND_TYPE_BARONY: "[holding|E]" #NT
- TEMP_TITLE_LAND_TYPE_COUNTY: "[county_capital|E]" #NT
- TEMP_TITLE_LAND_TYPE_UNKNOWN: "Bu görünmemeli" #NT
- TITLE_VIEW_HOLDING_TAXES: "[taxes|E]: [Holding.GetIncome|1V]" #NT
- TITLE_VIEW_HOLDING_LEVIES: "[levies|E]: [Holding.GetMaxLevySize|0V]" #NT
- TITLE_VIEW_MY_TITLE: "Unvanın" #NT
- TITLE_VIEW_MY_PRIMARY_TITLE: "Senin [primary_title|E]" #NT
- TITLE_VIEW_HOLDER: "Güncel [holder|E]" #NT
- TITLE_VIEW_PRIMARY_TITLE: "[CHARACTER.GetHerHisMy|U] [primary_title|E]" #NT
- TITLE_VIEW_TOP_LIEGE: "[top_liege|E]" #NT
- TITLE_VIEW_DESTROY_TITLE: "Ünvanı Yok Et" #NT
- TITLE_VIEW_NOT_CREATED: "Henüz oluşturulmadı" #NT
- TITLE_VIEW_CREATE_TITLE: "Ünvan Oluştur" #NT
- TITLE_VIEW_NO_DEJURE_COUNTIES: "Seçilen [title|E]'ın De Jure [counties|E]'i yok" #NT
- TITLE_VIEW_COUNTIES: "$PERCENTAGE|0%VL$ / De Jure [counties|E]: $MINIMUM|V$ (sahip olduğunuz $CURRENT|V$)" #NT
- TITLE_VIEW_COUNTIES_DETAILED: "En az $MINIMUM|V$ / $TOTAL|V$ [de_jure|E] [counties|E]'e sahip olun ($PERCENTAGE|0%V$) \n$OWNED|V$ [counties|E]'e sahipsiniz." #NT
- TITLE_VIEW_COUNTIES_DETAILED_PERCENTAGE_BREAKDOWN_HEADER: "\n\n[county|E] sahiplik gereksinimi:\n" #NT
- TITLE_VIEW_GOLD_TEXT: "[gold_i]$VALUE|0V$" #NT
- TITLE_VIEW_GAIN_TEXT: "[prestige_i]$PRESTIGE|0V$ ve [legitimacy_i]$LEGITIMACY|0V$ verir" #NT
- TITLE_VIEW_PRESTIGE_COST_TEXT: "[prestige_i]$VALUE|0V$" #NT
- TITLE_VIEW_CLAIMANTS: "Hak sahipleri: [TitleViewWindow.GetNumberOfClaimants]" #NT
- TITLE_VIEW_NO_CLAIMANTS: "Hak sahipleri olamaz" #NT
- TITLE_VIEW_NO_CLAIMANTS_TOOLTIP: "#T $TITLE_VIEW_NO_CLAIMANTS$\n#!Some [titles|E] olamaz [claimants|E]: \n$BULLET_WITH_TAB$Hepsi [baronies|E]\n$BULLET_WITH_TAB$[mercenary_company|E] Ünvanlar\n$BULLET_WITH_TAB$$TITLE_VIEW_NO_CLAIMANTS$0 Ünvanlar\n$BULLET_WITH_TAB$$TITLE_VIEW_NO_CLAIMANTS$2 Ünvanlar" #NT
- TITLE_VIEW_TITLE_HISTORY_LABEL: "[Title.GetBaseName]'ın tarihi" #NT
- TITLE_VIEW_SHOW_ELECTION_TT: "#T Seçimi Görüntüle#!" #NT
- TITLE_VIEW_CLEAR_LAWS: "Yasayı Kaldır" #NT
- TITLE_VIEW_CLEAR_LAWS_TOOTLIP_TITLE: "#T Temizle [title_succession|E] Yasa#!" #NT
- TITLE_VIEW_CLEAR_CLICK: "#I [title_succession|E] Yasasını#! temizlemek için tıklayın" #NT
- TITLE_VIEW_CLEAR_LAWS_TITLE: "[TITLE.GetNameNoTooltip]'dan Yasayı Kaldır" #NT
- TITLE_VIEW_CLEAR_LAWS_CONFIRM: "[TITLE.GetName] için Veraset artık kendi Ünvan Verasetine sahip olmayacak, bunun yerine [realm|E]'inizin [succession_law|E]\n\nMaliyet:\n$COST|0V$\n$EFFECTS$'ü boyunca miras alınacak" #NT
- TITLE_VIEW_CLEAR_LAWS_ACCEPT: "Kaldırmak" #NT
- CREATE_TITLE_TITLE: "[TITLE.GetBaseNameNoTooltip]'ı yaratın" #NT
- DESTROY_TITLE_TITLE: "[TITLE.GetBaseNameNoTooltip]'ı yok et" #NT
- DESTROY_TITLE_CONFIRM: "Unvan yok edilecek.\n\nMaliyet:\n[prestige_i]$PRESTIGE|0V$" #NT
- DESTROY_TITLE_CONFIRM_ACCEPT: "Tahrip etmek" #NT
- DESTROY_TITLE_TOOLTIP_TITLE: "#T [TITLE.GetBaseName]#!'yi yok et" #NT
- DESTROY_TITLE_LEGITIMACY_LOSS: "$BULLET$ [legitimacy|E]: [legitimacy_i]$LEGITIMACY|0+$" #NT
- DESTROY_TITLE_COST: "Maliyet: [prestige_i]$PRESTIGE|0V$" #NT
- DESTROY_TITLE_BLOCKER_PRIMARY_TITLE: "@warning_icon! #X [primary_title].#!'nizi yok edemezsiniz" #NT
- DESTROY_TITLE_REASON_CONTESTED: "@warning_icon! #X Savaşta mücadele edilirken yok edilemez#!" #NT
- CREATE_TITLE_TOOLTIP_TITLE: "#T [TITLE.GetBaseNameNoTooltip]#!'yi yaratın" #NT
- CREATE_TITLE_CONFIRM: "[prestige_i]$PRESTIGE|0V$ ve [legitimacy_i]$LEGITIMACY|0V$ kazanacaksınız\n\nMaliyet: [gold_i]$GOLD|0V$" #NT
- CREATE_TITLE_CONFIRM_ACCEPT: "Yaratmak" #NT
- CREATE_TITLE_HAS_HOLDER: "Ünvan zaten [CHARACTER.GetUIName]'a ait" #NT
- CREATE_TITLE_NO_DEJURE_COUNTIES: "@warning_icon! #X [TITLE.GetName]'in herhangi bir [de_jure|E] [counties|E].#!'ü yok" #NT
- CREATE_TITLE_OR_CONDITION: "@warning_icon! #X Aşağıdakilerden birine ihtiyacınız var:#!" #NT
- CREATE_TITLE_OR_CONDITION_REASON: "@warning_icon! #X [$TIERNAME$|E] [titles|E] Gerekli: $REQUIRED$ #weak (şu anda: $COUNTED$)#!#!" #NT
- CREATE_TITLE_OR_CONDITION_REASON_REGULAR: "[$TIERNAME$|E] [titles|E] Gerekli: $REQUIRED$ #weak (şu anda: $COUNTED$)#!" #NT
- CREATE_TITLE_GOLD: "@warning_icon! #X [gold_i]$VALUE|0V$#! gerektirir" #NT
- CREATE_TITLE_PIETY: "@warning_icon! #X [piety_i]$VALUE|0V$#! gerektirir" #NT
- CREATE_TITLE_COUNTIES_REQUIRED: "@warning_icon! #X Sadece $CURRENT$ / $LIMIT$ gerekli [counties|E]#!" #NT
- TITLE_VIEW_TT_SELECT_HOLDING: "#T Tutmayı Seçin#!" #NT
- TITLE_VIEW_USURP_TITLE: "Gasp etmek" #NT
- USURP_TITLE_TITLE: "[TITLE.GetBaseNameNoTooltip]'ı gasp et" #NT
- USURP_TITLE_TOOLTIP_TITLE: "#T [TITLE.GetBaseName]#!'yi gasp et" #NT
- USURP_TITLE_CONFIRM: "Gasp [TITLE.GetName]'dan [TITLE.GetHolder.GetUIName].\n Maliyet:\n[gold_i]$GOLD|0V$\n\n[prestige_i]$PRESTIGE|0V$ kazanacağım\n\n[TITLE.GetHolder.GetUIName] [legitimacy|E] kaybedeceğim." #NT
- USURP_TITLE_CONFIRM_ACCEPT: "Gasp etmek" #NT
- CREATE_TITLE_HOLDER_HAS_LAND: "@warning_icon! #X [faith|E]'nizi [Concept( 'faith_hostility', 'Hostile' )|E] veya daha kötü olarak gören ve [de_jure|E] topraklarından herhangi birini kontrol eden birinden [title|E]'i gasp edemezsiniz#!" #NT
- DESTROY_TITLE_VASSAL_OPINION: "[de_jure|E] [vassals|E] / [TITLE.GetName] $OPINION_CHANGE|N$ sizin hakkınızdaki fikrini $TIME|V$ yıl boyunca kaybedecek" #NT
- CREATE_TITLE_TOOLTIP_GAIN: "Oluşturulduğunda [prestige_i]$PRESTIGE|0V$ ve [legitimacy_i]$LEGITIMACY|0V$ kazanırsın" #NT
- CREATE_TITLE_COST: "Maliyet: [gold_i]$GOLD|0V$" #NT
- CREATE_TITLE_WOULD_GO_INDEPENDENT: "Ünvan, [liege|E]'ınızın birincil başlığıyla aynı veya daha yüksek seviyededir" #NT
- USURP_TITLE_TOOLTIP_PRESTIGE_GAIN: "Gasp edildiğinde:\n[prestige_i]$PRESTIGE|0V$ kazanırsınız" #NT
- USURP_TITLE_HOLDER_OPINION: "[TITLE.GetHolder.GetUIName] kişi senin hakkındaki $OPINION_CHANGE|N$ fikrini kaybedecek\n[TITLE.GetHolder.GetUIName] kişi senin hakkındaki [legitimacy|E] fikrini kaybedecek." #NT
- USURP_TITLE_PRIMARY_IN_WAR: "@warning_icon! #X Savaşan birinin [primary_title|E]'ini gasp edemezsiniz#!" #NT
- USURP_TITLE_LIEGE_OR_ABOVE: "@warning_icon! #X Size ait bir unvanı gasp edemezsiniz [liege|E]#!" #NT
- USURP_TITLE_WOULD_GO_INDEPENDENT: "@warning_icon! #X Birincil unvanınızla aynı veya daha yüksek seviyedeki bir unvanı gasp edemezsiniz [liege|E]#!" #NT
- historical_history: "Miras" #NT
- destroyed_history: "Yerlebir edilmiş" #NT
- granted_history: "İmtiyazlı" #NT
- usurped_history: "Gasp edilmiş" #NT
- created_history: "Oluşturuldu" #NT
- inheritance_history: "Miras" #NT
- abdication_history: "Feragat yoluyla miras alınır" #NT
- elected_history: "Seçilmiş" #NT
- conquest_history: "Fethedildi" #NT
- conquest_holy_war_history: "Kutsal bir savaşta fethedildi" #NT
- conquest_claim_history: "Davacı tarafından fethedildi" #NT
- conquest_populist: "Popülist isyanla fethedildi" #NT
- conquest_populist_history: "$conquest_populist$" #NT
- revoked_history: "İptal edildi" #NT
- returned_history: "İade" #NT
- unspecified_history: "Kazanılan" #NT
- leased_out_history: "Kiraya verildi" #NT
- lease_revoked_history: "Kira sözleşmesi iptal edildi" #NT
- faction_demand_history: "Fraksiyon talebine göre kuruldu" #NT
- independency_history: "Bağımsız oldu" #NT
- swear_fealty_history: "Sadakat yemini" #NT
- CLAIMANT_SORT_STRENGTH: "Askeri Güç" #NT
- CLAIMANT_SORT_NAME: "İsim" #NT
- TITLE_CLAIMANTS_HEADER: "Hak Sahipleri" #NT
- TITLE_CLAIMANTS_TOOLTIP: "#T Görüntüle [claimants|E]#!\n#V [TitleViewWindow.GetNumberOfClaimants]#! [Select_CString( EqualTo_int32( TitleViewWindow.GetNumberOfClaimants, '(int32)1' ), 'Claimant','Claimants' )]" #NT
- TITLE_SORT_BY: "Sıralama Düzeni:" #NT
- SORT_BY_DIPLOMACY: "[diplomacy|E] Beceriye göre sırala: [Select_CString( And( CharacterSelectionList.IsSortingBySkill( '(int32)0' ), Not( CharacterSelectionList.GetSortOrder ) ), 'Ascending', 'Descending' )|V]" #NT
- SORT_BY_MARTIAL: "[martial|E] Beceriye göre sırala: [Select_CString( And( CharacterSelectionList.IsSortingBySkill( '(int32)1' ), Not( CharacterSelectionList.GetSortOrder ) ), 'Ascending', 'Descending' )|V]" #NT
- SORT_BY_STEWARDSHIP: "[stewardship|E] Beceriye göre sırala: [Select_CString( And( CharacterSelectionList.IsSortingBySkill( '(int32)2' ), Not( CharacterSelectionList.GetSortOrder ) ), 'Ascending', 'Descending' )|V]" #NT
- SORT_BY_INTRIGUE: "[intrigue|E] Beceriye göre sırala: [Select_CString( And( CharacterSelectionList.IsSortingBySkill( '(int32)3' ), Not( CharacterSelectionList.GetSortOrder ) ), 'Ascending', 'Descending' )|V]" #NT
- SORT_BY_LEARNING: "[learning|E] Beceriye göre sırala: [Select_CString( And( CharacterSelectionList.IsSortingBySkill( '(int32)4' ), Not( CharacterSelectionList.GetSortOrder ) ), 'Ascending', 'Descending' )|V]" #NT
- CLAIMANT_NOT_A_THREAT: "#T [claim|e]#!\n[GuiClaimant.IsAllyDesc]'ye basılamıyor" #NT
- CAN_ATTACK_IS_SUBJECT_OF: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'nin [vassal|E]'idir" #NT
- CAN_ATTACK_NOT_LANDED: "[CHARACTER.GetShortUIName|U] inmedi" #NT
- STRONG_CLAIM: "[pressed_claim_i][pressed_claim|E]" #NT
- WEAK_CLAIM: "[unpressed_claim_i][unpressed_claim|E]" #NT
- IMPLICIT_CLAIM: "[implicit_claim_i][implicit_claim|E]" #NT
- TITLE_HISTORY: "Ünvan Geçmişi" #NT
- SHOW_TITLE_HISTORY: "#T Ünvan Geçmişini Görüntüle#!" #NT
- HIDE_TITLE_HISTORY: "#T Ünvan Geçmişini Gizle#!" #NT
- TITLE_VIEW_MAKE_PRIMARY: "Birincil yap" #NT
- TITLE_MAKE_PRIMARY_TOOLTIP: "#T [TitleViewWindow.GetTitle.GetName]'i [primary_title|E]#!'ünüz yapın" #NT
- TV_TIER_INFO: "[Title.GetRankConcept] [title|E]" #NT
- TV_HOLY_ORDER_LABEL: "[FAITH.GetReligion.GetAdjective] [holy_order|E]" #NT
- TV_MERCENARY_COMPANY_LABEL: "[mercenary_company|E]" #NT
- TITLE_VIEW_HEAD_OF_FAITH: "$ENTRIES$ [head_of_faith|E]" #NT
- TITLE_VIEW_HEAD_OF_FAITH_ENTRY: "[FAITH.GetAdjective]" #NT
- TV_NO_CLAIM: "#weak Bu Ünvanta [claim|E]'iniz yok#!" #NT
- TV_NOT_CREATED: "#weak Henüz oluşturulmadı#!" #NT
- TV_MY_TITLE: "#weak Başlığınız#!" #NT
- TITLE_VIEW_CANT_HAVE_CLAIMS: "#weak Bu konuda hak iddia edilemez [title|E]#!" #NT
- TITLE_VIEW_CANT_HAVE_CLAIMS_TT: "[mercenary_company|E], [holy_orders|E], [baronies|E] ve [head_of_faith|E] için unvan iddiasında bulunmak imkansızdır" #NT
- TITLE_ALLEGIANCE_VASSAL_LIST: "Vasallar Küfür Ediyor [title_allegiance|E]" #NT
- TITLE_VIEW_SUCCESSION: "Veraset Hattı" #NT
- TITLE_VIEW_SUCCESSION_DESCRIPTION_CHARACTER: "Krallık halefiyeti: [CHARACTER.GetShortUINamePossessive] $LAWS$ yasasına göre miras alınacaktır" #NT
- TITLE_VIEW_SUCCESSION_DESCRIPTION_TITLE: "[title_succession|E]: [TITLE.GetNamePossessive] $LAWS$ yasasına göre miras alınacaktır" #NT
- TITLE_VIEW_ELECTION: "$game_concept_nominate_heir$" #NT
- TITLE_VIEW_DE_JURE: "Hukuken" #NT
- TITLE_VIEW_VASSALS: "Ünvan Sadakat" #NT
- TITLE_VIEW_BUILDING_TYPE: "Bina türü: [Holding.GetType.GetName]" #NT
- CUSTOMIZE_TITLE_HEADER: "Özelleştir [Title.GetNameNoTooltip]" #NT
- CUSTOMIZATION_NAMING_HEADER: "İsimlendirme" #NT
- TITLE_NAME_FIELD: "İsim" #NT
- TITLE_ADJECTIVE_FIELD: "Sıfat" #NT
- TITLE_NAME_FIELD_LONG: "Ünvan adı" #NT
- TITLE_ADJECTIVE_FIELD_LONG: "Ünvan Sıfat" #NT
- TITLE_CUSTOMIZATION_DEFINITE_FORM: "Kısa adı" #NT
- TITLE_CUSTOMIZATION_DEFINITE_FORM_TOOLTIP: "#T Başlığın kısa adlandırma stilini kullanmasını ve "katman" öneki olmadan sunulmasını sağlamak için $TITLE_CUSTOMIZATION_DEFINITE_FORM$#!\nEnable'yi açın" #NT
- CUSTOMIZE_TITLE: "#T Ünvanı Özelleştir#!" #NT
- CUSTOMIZE_TITLE_PLAYER_NOT_ALLOWED: "@warning_icon! #X [TITLE.GetNameNoTooltip] özelleştirmek size ait değil#!" #NT
- MAP_COLOR_HEADER: "Harita Rengi" #NT
- TITLE_I_HAVE_NO_CLAIM: "Bu konuda [claim|E]'ım yok [title|E]" #NT
- TITLE_I_HAVE_PRESSED_CLAIM: "@pressed_claim! Bu konuda [pressed_claim|E]'ım var [title|E]" #NT
- TITLE_I_HAVE_UNPRESSED_CLAIM: "@unpressed_claim! Bu konuda [unpressed_claim|E]'ım var [title|E]" #NT
- TITLE_I_HAVE_IMPLICIT_CLAIM: "@implicit_claim! Bu konuda [implicit_claim|E]'ım var [title|E]" #NT
- TITLE_VIEW_GO_TO_HOLDING: "#I Bekleme görünümüne gitmek için tıklayın #!" #NT
- TITLE_VIEW_DE_JURE_TITLES: "[de_jure|E] $TIER$ [TITLE.GetBaseName]'de" #NT
- TITLE_VIEW_DE_JURE_BARONIES: "[baronies|E] [TITLE.GetName]'de" #NT
- TITLE_VIEW_TITULAR: "[TitleViewWindow.GetTitle.GetNameNoTooltip|U]'ın altında [de_jure|E] Ünvan yok" #NT
- TITLE_VIEW_BARONY_NO_DEJURE: "[baronies|E] altında hiçbir zaman [de_jure|E] Ünvan yoktur" #NT
- TITLE_VIEW_DE_JURE_CAPITAL: "[de_jure_capital|E]:" #NT
- TITLE_VIEW_DE_JURE_PART_OF: "[de_jure|E] Parçası:" #NT
- TITLE_VIEW_TITLE_ADD_LAW_LABEL: "Miras Hukuku Ekle" #NT
- TITLE_VIEW_TITLE_ADD_LAW_INFO: "[Title.GetName]'ye [title_specific_succession|E] [succession_law|E] ekleyin.\n\nBu $game_concept_law$ yalnızca bu belirli [title|E]'e uygulanacak ve [realm|E]'nızdaki diğer $game_concept_titles$'leri etkilemeyecektir.\n\nEn az [king|E]-[title_rank|E]'dan [rulers|E]'si, kültürel bir seçmeli derse [succession_law|E]2 erişimleri varsa, bunun yerine [succession_law|E]0 [succession_law|E]1'i alabilir." #NT
- TITLE_VIEW_SHOW_ADD_LAWS: "Yasalar Ekle" #NT
- TITLE_VIEW_TITLE_ADD_LAW_CONFIRM: "Yasa Ekle" #NT
- TITLE_VIEW_TITLE_ADD_LAW_POSSIBLE_LAWS: "Olası Miras Hukukları" #NT
- CLEAR_TITLES_EFFECTS_HEADER: "Etkileri:" #NT
- TITLE_VIEW_HO_NUMBER_OF_KNIGHTS: "[knight_i] [HolyOrder.GetNumberOfKnights] [HolyOrder.GetTitle.GetHolder.Custom('KnightCulturePlural')]" #NT
- TITLE_VIEW_MERCENARY_NUMBER_OF_KNIGHTS: "[knight_i] [MercenaryCompany.GetNumberOfKnights] [HolyOrder.GetTitle.GetHolder.Custom('KnightCulturePlural')]" #NT
- TITLE_VIEW_HO_NUMBER_OF_SOLDIERS: "[HolyOrder.GetCurrentSoldiers] [soldiers|E]" #NT
- TITLE_VIEW_MERCENARY_NUMBER_OF_SOLDIERS: "[MercenaryCompany.GetCurrentSoldiers] [soldiers|E]" #NT
- CHARACTER_SORT_BY: "#T Sıralama Düzeni: [Select_CString( CharacterSelectionList.GetSortOrder, 'Ascending', 'Descending' )]\n#!#I Geçiş yapmak için tıklayın#!" #NT
- FIND_VASSAL_HEADER: "Birisine Ver" #NT
- FIND_VASSAL_RELEVANCE: "İlgililik" #NT
- FIND_VASSAL_BUTTON_TOOLTIP: "#T $FIND_VASSAL_HEADER$#!\nChoose bunu birine [title|E] vermek için.\n\n$FIND_VASSAL_BUTTON_TOOLTIP_SEGMENT$" #NT
- FIND_VASSAL_BUTTON_TOOLTIP_SEGMENT: "[vassals|E]'lerinizden birine [titles|E], [guests|E]'lerinizden birine veya [realm|E]'ünüzdeki herhangi bir [courtiers|E]'e [titles|E] verebilirsiniz." #NT
-  #AGOT Modified, HV Conversion rules  #NT
- # GRANT_TO_SAME_CULTURE_NOBLE_HEADER: "[GetPlayer.GetCulture.GetNameNoTooltip] Kültürünün Asilzadesi" #NT
- GRANT_TO_SAME_CULTURE_NOBLE_HEADER: "[GetPlayer.Custom('same_culture_noble_header')] Kültürünün Asilzadesi" #NT
- GRANT_TO_SAME_CULTURE_NOBLE_INFO: "#V Kültürünüz#! ve [GetPlayer.GetFaith.GetAdjectiveNoTooltip] İnancınız olan bir asile ünvan verin" #NT
- GRANT_TO_SAME_CULTURE_NOBLE_BUTTON_HOLDING_VIEW_TOOLTIP: "#T Yerel [culture|E] kültürüne ait olmayan bir [ruler|E] tarafından tutulan [GetPlayer.GetCulture.GetName] Kültürünün #!\nA [county|E] Soylusuna hibe edin [county_opinion|E]'sı azaltılmış olacaktır.\n\nAynı-[culture|E] [vassals|E]'in [GetPlayer.GetCulture.GetName]0'larından daha yüksek [opinion|E]'u vardır.\n\n[GetPlayer.GetCulture.GetName]1 Hibe etmek için tıklayın[GetPlayer.GetCulture.GetName]2" #NT
- GRANT_TO_LOCAL_CULTURE_NOBLE_HEADER: "Yerel [FindVassalListWindow.GetTitle.GetProvince.GetCulture.GetNameNoTooltip] Asil" #NT
- GRANT_TO_LOCAL_CULTURE_NOBLE_INFO: "#V Yerel Kültür#! ve [GetPlayer.GetFaith.GetAdjectiveNoTooltip] İnanç sahibi bir soyluya ünvan verin" #NT
- GRANT_TO_LOCAL_CULTURE_NOBLE_BUTTON_HOLDING_VIEW_BASE_TOOLTIP: "#T Yerel [FindVassalListWindow.GetTitle.GetProvince.GetCulture.GetName] Kültürden bir Soyluya Hibe#!\nA Yerel [culture|E]'in [ruler|E]'ü tarafından tutulan [county|E], [county_opinion|E]'yı azaltmayacaktır.\n\nYerel-[culture|E] [vassals|E], [cultural_acceptance|E]'u artıracaktır." #NT
- GRANT_TO_LOCAL_CULTURE_NOBLE_BUTTON_HOLDING_VIEW_BARONY_TOOLTIP: "$GRANT_TO_LOCAL_CULTURE_NOBLE_BUTTON_HOLDING_VIEW_BASE_TOOLTIP$\n\n#I Vermek için tıklayın#!" #NT
- GRANT_TO_LOCAL_CULTURE_NOBLE_BUTTON_HOLDING_VIEW_COUNTY_TOOLTIP: "$GRANT_TO_LOCAL_CULTURE_NOBLE_BUTTON_HOLDING_VIEW_BASE_TOOLTIP$\n\n#S Efektler#! \n[FindVassalListWindow.GetTitle.GetAutoGrantCountyToLocalRulerEffectDesc(GetPlayer)]\n\n#I Vermek için tıklayın#!" #NT
- GRANT_TO_LOCAL_CULTURE_NOBLE_ACCEPTANCE: "Bu, Kabulü artırır" #NT
- TITLE_VIEW_FACTION: "[Faction.GetName] [faction|E]" #NT
- CREATE_TITLE_MIN_COST: "Minimum maliyet" #NT
- grant_title_info_text: "Veya Diyarınızdaki bir Karakteri seçin..." #NT
- CREATE_TITLE_PERCENTAGE_BASE_DUCHY_KINGDOM: "[duchy|E] / [kingdom|E] Ünvanı için temel" #NT
- CREATE_TITLE_PERCENTAGE_BASE_EMPIRE: "[empire|E] Ünvanı için temel" #NT
- CREATE_TITLE_PERCENTAGE_LEGITIMACY_DISCOUNT_EXTRA_REDUCED: "Büyük [legitimacy_level|E] indirim" #NT
- CREATE_TITLE_PERCENTAGE_LEGITIMACY_DISCOUNT_VERY_REDUCED: "[legitimacy_level|E] indirim" #NT
- CREATE_TITLE_PERCENTAGE_LEGITIMACY_DISCOUNT_REDUCED: "Küçük [legitimacy_level|E] indirim" #NT
- CREATE_TITLE_PERCENTAGE_LEGITIMACY_DISCOUNT_NONE: "[legitimacy_level|E] indirim" #NT
+﻿l_english: #NT!
+ TITLE_VIEW_OWNED_BY: "İçeride [CHARACTER.GetUINamePossessive] [realm|E]" #NT!
+ TITLE_VIEW_VASSAL_SCROLL_TITLE: "Bileşen [de_jure|E] [titles|E] / [TitleViewWindow.GetTitle.GetNameNoTierNoTooltip]" #NT!
+ TITLE_VIEW_UNOWNED_TITLES: "Henüz oluşturulmadı" #NT!
+ PREVIOUS_TITLE: "#T Önceki göster [title|E]#!\n[TITLE.GetName]" #NT!
+ PREVIOUS_NO_TITLE: "#T Öncekini göster [title|E]#!\n@warning_icon! #X Geri dönülecek Ünvan yok#!" #NT!
+ TEMP_TITLE_LAND_TYPE_BARONY: "[holding|E]" #NT!
+ TEMP_TITLE_LAND_TYPE_COUNTY: "[county_capital|E]" #NT!
+ TEMP_TITLE_LAND_TYPE_UNKNOWN: "Bu görünmemeli" #NT!
+ TITLE_VIEW_HOLDING_TAXES: "[taxes|E]: [Holding.GetIncome|1V]" #NT!
+ TITLE_VIEW_HOLDING_LEVIES: "[levies|E]: [Holding.GetMaxLevySize|0V]" #NT!
+ TITLE_VIEW_MY_TITLE: "Unvanın" #NT!
+ TITLE_VIEW_MY_PRIMARY_TITLE: "Senin [primary_title|E]" #NT!
+ TITLE_VIEW_HOLDER: "Güncel [holder|E]" #NT!
+ TITLE_VIEW_PRIMARY_TITLE: "[CHARACTER.GetHerHisMy|U] [primary_title|E]" #NT!
+ TITLE_VIEW_TOP_LIEGE: "[top_liege|E]" #NT!
+ TITLE_VIEW_DESTROY_TITLE: "Ünvanı Yok Et" #NT!
+ TITLE_VIEW_NOT_CREATED: "Henüz oluşturulmadı" #NT!
+ TITLE_VIEW_CREATE_TITLE: "Ünvan Oluştur" #NT!
+ TITLE_VIEW_NO_DEJURE_COUNTIES: "Seçilen [title|E]'ın De Jure [counties|E]'i yok" #NT!
+ TITLE_VIEW_COUNTIES: "$PERCENTAGE|0%VL$ / De Jure [counties|E]: $MINIMUM|V$ (sahip olduğunuz $CURRENT|V$)" #NT!
+ TITLE_VIEW_COUNTIES_DETAILED: "En az $MINIMUM|V$ / $TOTAL|V$ [de_jure|E] [counties|E]'e sahip olun ($PERCENTAGE|0%V$) \n$OWNED|V$ [counties|E]'e sahipsiniz." #NT!
+ TITLE_VIEW_COUNTIES_DETAILED_PERCENTAGE_BREAKDOWN_HEADER: "\n\n[county|E] sahiplik gereksinimi:\n" #NT!
+ TITLE_VIEW_GOLD_TEXT: "[gold_i]$VALUE|0V$" #NT!
+ TITLE_VIEW_GAIN_TEXT: "[prestige_i]$PRESTIGE|0V$ ve [legitimacy_i]$LEGITIMACY|0V$ verir" #NT!
+ TITLE_VIEW_PRESTIGE_COST_TEXT: "[prestige_i]$VALUE|0V$" #NT!
+ TITLE_VIEW_CLAIMANTS: "Hak sahipleri: [TitleViewWindow.GetNumberOfClaimants]" #NT!
+ TITLE_VIEW_NO_CLAIMANTS: "Hak sahipleri olamaz" #NT!
+ TITLE_VIEW_NO_CLAIMANTS_TOOLTIP: "#T $TITLE_VIEW_NO_CLAIMANTS$\n#!Some [titles|E] olamaz [claimants|E]: \n$BULLET_WITH_TAB$Hepsi [baronies|E]\n$BULLET_WITH_TAB$[mercenary_company|E] Ünvanlar\n$BULLET_WITH_TAB$$TITLE_VIEW_NO_CLAIMANTS$0 Ünvanlar\n$BULLET_WITH_TAB$$TITLE_VIEW_NO_CLAIMANTS$2 Ünvanlar" #NT!
+ TITLE_VIEW_TITLE_HISTORY_LABEL: "[Title.GetBaseName]'ın tarihi" #NT!
+ TITLE_VIEW_SHOW_ELECTION_TT: "#T Seçimi Görüntüle#!" #NT!
+ TITLE_VIEW_CLEAR_LAWS: "Yasayı Kaldır" #NT!
+ TITLE_VIEW_CLEAR_LAWS_TOOTLIP_TITLE: "#T Temizle [title_succession|E] Yasa#!" #NT!
+ TITLE_VIEW_CLEAR_CLICK: "#I [title_succession|E] Yasasını#! temizlemek için tıklayın" #NT!
+ TITLE_VIEW_CLEAR_LAWS_TITLE: "[TITLE.GetNameNoTooltip]'dan Yasayı Kaldır" #NT!
+ TITLE_VIEW_CLEAR_LAWS_CONFIRM: "[TITLE.GetName] için Veraset artık kendi Ünvan Verasetine sahip olmayacak, bunun yerine [realm|E]'inizin [succession_law|E]\n\nMaliyet:\n$COST|0V$\n$EFFECTS$'ü boyunca miras alınacak" #NT!
+ TITLE_VIEW_CLEAR_LAWS_ACCEPT: "Kaldırmak" #NT!
+ CREATE_TITLE_TITLE: "[TITLE.GetBaseNameNoTooltip]'ı yaratın" #NT!
+ DESTROY_TITLE_TITLE: "[TITLE.GetBaseNameNoTooltip]'ı yok et" #NT!
+ DESTROY_TITLE_CONFIRM: "Unvan yok edilecek.\n\nMaliyet:\n[prestige_i]$PRESTIGE|0V$" #NT!
+ DESTROY_TITLE_CONFIRM_ACCEPT: "Tahrip etmek" #NT!
+ DESTROY_TITLE_TOOLTIP_TITLE: "#T [TITLE.GetBaseName]#!'yi yok et" #NT!
+ DESTROY_TITLE_LEGITIMACY_LOSS: "$BULLET$ [legitimacy|E]: [legitimacy_i]$LEGITIMACY|0+$" #NT!
+ DESTROY_TITLE_COST: "Maliyet: [prestige_i]$PRESTIGE|0V$" #NT!
+ DESTROY_TITLE_BLOCKER_PRIMARY_TITLE: "@warning_icon! #X [primary_title].#!'nizi yok edemezsiniz" #NT!
+ DESTROY_TITLE_REASON_CONTESTED: "@warning_icon! #X Savaşta mücadele edilirken yok edilemez#!" #NT!
+ CREATE_TITLE_TOOLTIP_TITLE: "#T [TITLE.GetBaseNameNoTooltip]#!'yi yaratın" #NT!
+ CREATE_TITLE_CONFIRM: "[prestige_i]$PRESTIGE|0V$ ve [legitimacy_i]$LEGITIMACY|0V$ kazanacaksınız\n\nMaliyet: [gold_i]$GOLD|0V$" #NT!
+ CREATE_TITLE_CONFIRM_ACCEPT: "Yaratmak" #NT!
+ CREATE_TITLE_HAS_HOLDER: "Ünvan zaten [CHARACTER.GetUIName]'a ait" #NT!
+ CREATE_TITLE_NO_DEJURE_COUNTIES: "@warning_icon! #X [TITLE.GetName]'in herhangi bir [de_jure|E] [counties|E].#!'ü yok" #NT!
+ CREATE_TITLE_OR_CONDITION: "@warning_icon! #X Aşağıdakilerden birine ihtiyacınız var:#!" #NT!
+ CREATE_TITLE_OR_CONDITION_REASON: "@warning_icon! #X [$TIERNAME$|E] [titles|E] Gerekli: $REQUIRED$ #weak (şu anda: $COUNTED$)#!#!" #NT!
+ CREATE_TITLE_OR_CONDITION_REASON_REGULAR: "[$TIERNAME$|E] [titles|E] Gerekli: $REQUIRED$ #weak (şu anda: $COUNTED$)#!" #NT!
+ CREATE_TITLE_GOLD: "@warning_icon! #X [gold_i]$VALUE|0V$#! gerektirir" #NT!
+ CREATE_TITLE_PIETY: "@warning_icon! #X [piety_i]$VALUE|0V$#! gerektirir" #NT!
+ CREATE_TITLE_COUNTIES_REQUIRED: "@warning_icon! #X Sadece $CURRENT$ / $LIMIT$ gerekli [counties|E]#!" #NT!
+ TITLE_VIEW_TT_SELECT_HOLDING: "#T Tutmayı Seçin#!" #NT!
+ TITLE_VIEW_USURP_TITLE: "Gasp etmek" #NT!
+ USURP_TITLE_TITLE: "[TITLE.GetBaseNameNoTooltip]'ı gasp et" #NT!
+ USURP_TITLE_TOOLTIP_TITLE: "#T [TITLE.GetBaseName]#!'yi gasp et" #NT!
+ USURP_TITLE_CONFIRM: "Gasp [TITLE.GetName]'dan [TITLE.GetHolder.GetUIName].\n Maliyet:\n[gold_i]$GOLD|0V$\n\n[prestige_i]$PRESTIGE|0V$ kazanacağım\n\n[TITLE.GetHolder.GetUIName] [legitimacy|E] kaybedeceğim." #NT!
+ USURP_TITLE_CONFIRM_ACCEPT: "Gasp etmek" #NT!
+ CREATE_TITLE_HOLDER_HAS_LAND: "@warning_icon! #X [faith|E]'nizi [Concept( 'faith_hostility', 'Hostile' )|E] veya daha kötü olarak gören ve [de_jure|E] topraklarından herhangi birini kontrol eden birinden [title|E]'i gasp edemezsiniz#!" #NT!
+ DESTROY_TITLE_VASSAL_OPINION: "[de_jure|E] [vassals|E] / [TITLE.GetName] $OPINION_CHANGE|N$ sizin hakkınızdaki fikrini $TIME|V$ yıl boyunca kaybedecek" #NT!
+ CREATE_TITLE_TOOLTIP_GAIN: "Oluşturulduğunda [prestige_i]$PRESTIGE|0V$ ve [legitimacy_i]$LEGITIMACY|0V$ kazanırsın" #NT!
+ CREATE_TITLE_COST: "Maliyet: [gold_i]$GOLD|0V$" #NT!
+ CREATE_TITLE_WOULD_GO_INDEPENDENT: "Ünvan, [liege|E]'ınızın birincil başlığıyla aynı veya daha yüksek seviyededir" #NT!
+ USURP_TITLE_TOOLTIP_PRESTIGE_GAIN: "Gasp edildiğinde:\n[prestige_i]$PRESTIGE|0V$ kazanırsınız" #NT!
+ USURP_TITLE_HOLDER_OPINION: "[TITLE.GetHolder.GetUIName] kişi senin hakkındaki $OPINION_CHANGE|N$ fikrini kaybedecek\n[TITLE.GetHolder.GetUIName] kişi senin hakkındaki [legitimacy|E] fikrini kaybedecek." #NT!
+ USURP_TITLE_PRIMARY_IN_WAR: "@warning_icon! #X Savaşan birinin [primary_title|E]'ini gasp edemezsiniz#!" #NT!
+ USURP_TITLE_LIEGE_OR_ABOVE: "@warning_icon! #X Size ait bir unvanı gasp edemezsiniz [liege|E]#!" #NT!
+ USURP_TITLE_WOULD_GO_INDEPENDENT: "@warning_icon! #X Birincil unvanınızla aynı veya daha yüksek seviyedeki bir unvanı gasp edemezsiniz [liege|E]#!" #NT!
+ historical_history: "Miras" #NT!
+ destroyed_history: "Yerlebir edilmiş" #NT!
+ granted_history: "İmtiyazlı" #NT!
+ usurped_history: "Gasp edilmiş" #NT!
+ created_history: "Oluşturuldu" #NT!
+ inheritance_history: "Miras" #NT!
+ abdication_history: "Feragat yoluyla miras alınır" #NT!
+ elected_history: "Seçilmiş" #NT!
+ conquest_history: "Fethedildi" #NT!
+ conquest_holy_war_history: "Kutsal bir savaşta fethedildi" #NT!
+ conquest_claim_history: "Davacı tarafından fethedildi" #NT!
+ conquest_populist: "Popülist isyanla fethedildi" #NT!
+ conquest_populist_history: "$conquest_populist$" #NT!
+ revoked_history: "İptal edildi" #NT!
+ returned_history: "İade" #NT!
+ unspecified_history: "Kazanılan" #NT!
+ leased_out_history: "Kiraya verildi" #NT!
+ lease_revoked_history: "Kira sözleşmesi iptal edildi" #NT!
+ faction_demand_history: "Fraksiyon talebine göre kuruldu" #NT!
+ independency_history: "Bağımsız oldu" #NT!
+ swear_fealty_history: "Sadakat yemini" #NT!
+ CLAIMANT_SORT_STRENGTH: "Askeri Güç" #NT!
+ CLAIMANT_SORT_NAME: "İsim" #NT!
+ TITLE_CLAIMANTS_HEADER: "Hak Sahipleri" #NT!
+ TITLE_CLAIMANTS_TOOLTIP: "#T Görüntüle [claimants|E]#!\n#V [TitleViewWindow.GetNumberOfClaimants]#! [Select_CString( EqualTo_int32( TitleViewWindow.GetNumberOfClaimants, '(int32)1' ), 'Claimant','Claimants' )]" #NT!
+ TITLE_SORT_BY: "Sıralama Düzeni:" #NT!
+ SORT_BY_DIPLOMACY: "[diplomacy|E] Beceriye göre sırala: [Select_CString( And( CharacterSelectionList.IsSortingBySkill( '(int32)0' ), Not( CharacterSelectionList.GetSortOrder ) ), 'Ascending', 'Descending' )|V]" #NT!
+ SORT_BY_MARTIAL: "[martial|E] Beceriye göre sırala: [Select_CString( And( CharacterSelectionList.IsSortingBySkill( '(int32)1' ), Not( CharacterSelectionList.GetSortOrder ) ), 'Ascending', 'Descending' )|V]" #NT!
+ SORT_BY_STEWARDSHIP: "[stewardship|E] Beceriye göre sırala: [Select_CString( And( CharacterSelectionList.IsSortingBySkill( '(int32)2' ), Not( CharacterSelectionList.GetSortOrder ) ), 'Ascending', 'Descending' )|V]" #NT!
+ SORT_BY_INTRIGUE: "[intrigue|E] Beceriye göre sırala: [Select_CString( And( CharacterSelectionList.IsSortingBySkill( '(int32)3' ), Not( CharacterSelectionList.GetSortOrder ) ), 'Ascending', 'Descending' )|V]" #NT!
+ SORT_BY_LEARNING: "[learning|E] Beceriye göre sırala: [Select_CString( And( CharacterSelectionList.IsSortingBySkill( '(int32)4' ), Not( CharacterSelectionList.GetSortOrder ) ), 'Ascending', 'Descending' )|V]" #NT!
+ CLAIMANT_NOT_A_THREAT: "#T [claim|e]#!\n[GuiClaimant.IsAllyDesc]'ye basılamıyor" #NT!
+ CAN_ATTACK_IS_SUBJECT_OF: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'nin [vassal|E]'idir" #NT!
+ CAN_ATTACK_NOT_LANDED: "[CHARACTER.GetShortUIName|U] inmedi" #NT!
+ STRONG_CLAIM: "[pressed_claim_i][pressed_claim|E]" #NT!
+ WEAK_CLAIM: "[unpressed_claim_i][unpressed_claim|E]" #NT!
+ IMPLICIT_CLAIM: "[implicit_claim_i][implicit_claim|E]" #NT!
+ TITLE_HISTORY: "Ünvan Geçmişi" #NT!
+ SHOW_TITLE_HISTORY: "#T Ünvan Geçmişini Görüntüle#!" #NT!
+ HIDE_TITLE_HISTORY: "#T Ünvan Geçmişini Gizle#!" #NT!
+ TITLE_VIEW_MAKE_PRIMARY: "Birincil yap" #NT!
+ TITLE_MAKE_PRIMARY_TOOLTIP: "#T [TitleViewWindow.GetTitle.GetName]'i [primary_title|E]#!'ünüz yapın" #NT!
+ TV_TIER_INFO: "[Title.GetRankConcept] [title|E]" #NT!
+ TV_HOLY_ORDER_LABEL: "[FAITH.GetReligion.GetAdjective] [holy_order|E]" #NT!
+ TV_MERCENARY_COMPANY_LABEL: "[mercenary_company|E]" #NT!
+ TITLE_VIEW_HEAD_OF_FAITH: "$ENTRIES$ [head_of_faith|E]" #NT!
+ TITLE_VIEW_HEAD_OF_FAITH_ENTRY: "[FAITH.GetAdjective]" #NT!
+ TV_NO_CLAIM: "#weak Bu Ünvanta [claim|E]'iniz yok#!" #NT!
+ TV_NOT_CREATED: "#weak Henüz oluşturulmadı#!" #NT!
+ TV_MY_TITLE: "#weak Başlığınız#!" #NT!
+ TITLE_VIEW_CANT_HAVE_CLAIMS: "#weak Bu konuda hak iddia edilemez [title|E]#!" #NT!
+ TITLE_VIEW_CANT_HAVE_CLAIMS_TT: "[mercenary_company|E], [holy_orders|E], [baronies|E] ve [head_of_faith|E] için unvan iddiasında bulunmak imkansızdır" #NT!
+ TITLE_ALLEGIANCE_VASSAL_LIST: "Vasallar Küfür Ediyor [title_allegiance|E]" #NT!
+ TITLE_VIEW_SUCCESSION: "Veraset Hattı" #NT!
+ TITLE_VIEW_SUCCESSION_DESCRIPTION_CHARACTER: "Krallık halefiyeti: [CHARACTER.GetShortUINamePossessive] $LAWS$ yasasına göre miras alınacaktır" #NT!
+ TITLE_VIEW_SUCCESSION_DESCRIPTION_TITLE: "[title_succession|E]: [TITLE.GetNamePossessive] $LAWS$ yasasına göre miras alınacaktır" #NT!
+ TITLE_VIEW_ELECTION: "$game_concept_nominate_heir$" #NT!
+ TITLE_VIEW_DE_JURE: "De Jure" #NT!
+ TITLE_VIEW_VASSALS: "Vasallar" #NT!
+ TITLE_VIEW_BUILDING_TYPE: "Bina türü: [Holding.GetType.GetName]" #NT!
+ CUSTOMIZE_TITLE_HEADER: "Özelleştir [Title.GetNameNoTooltip]" #NT!
+ CUSTOMIZATION_NAMING_HEADER: "İsimlendirme" #NT!
+ TITLE_NAME_FIELD: "İsim" #NT!
+ TITLE_ADJECTIVE_FIELD: "Sıfat" #NT!
+ TITLE_NAME_FIELD_LONG: "Ünvan adı" #NT!
+ TITLE_ADJECTIVE_FIELD_LONG: "Ünvan Sıfat" #NT!
+ TITLE_CUSTOMIZATION_DEFINITE_FORM: "Kısa adı" #NT!
+ TITLE_CUSTOMIZATION_DEFINITE_FORM_TOOLTIP: "#T Başlığın kısa adlandırma stilini kullanmasını ve "katman" öneki olmadan sunulmasını sağlamak için $TITLE_CUSTOMIZATION_DEFINITE_FORM$#!\nEnable'yi açın" #NT!
+ CUSTOMIZE_TITLE: "#T Ünvanı Özelleştir#!" #NT!
+ CUSTOMIZE_TITLE_PLAYER_NOT_ALLOWED: "@warning_icon! #X [TITLE.GetNameNoTooltip] özelleştirmek size ait değil#!" #NT!
+ MAP_COLOR_HEADER: "Harita Rengi" #NT!
+ TITLE_I_HAVE_NO_CLAIM: "Bu konuda [claim|E]'ım yok [title|E]" #NT!
+ TITLE_I_HAVE_PRESSED_CLAIM: "@pressed_claim! Bu konuda [pressed_claim|E]'ım var [title|E]" #NT!
+ TITLE_I_HAVE_UNPRESSED_CLAIM: "@unpressed_claim! Bu konuda [unpressed_claim|E]'ım var [title|E]" #NT!
+ TITLE_I_HAVE_IMPLICIT_CLAIM: "@implicit_claim! Bu konuda [implicit_claim|E]'ım var [title|E]" #NT!
+ TITLE_VIEW_GO_TO_HOLDING: "#I Bekleme görünümüne gitmek için tıklayın #!" #NT!
+ TITLE_VIEW_DE_JURE_TITLES: "[de_jure|E] $TIER$ [TITLE.GetBaseName]'de" #NT!
+ TITLE_VIEW_DE_JURE_BARONIES: "[baronies|E] [TITLE.GetName]'de" #NT!
+ TITLE_VIEW_TITULAR: "[TitleViewWindow.GetTitle.GetNameNoTooltip|U]'ın altında [de_jure|E] Ünvan yok" #NT!
+ TITLE_VIEW_BARONY_NO_DEJURE: "[baronies|E] altında hiçbir zaman [de_jure|E] Ünvan yoktur" #NT!
+ TITLE_VIEW_DE_JURE_CAPITAL: "[de_jure_capital|E]:" #NT!
+ TITLE_VIEW_DE_JURE_PART_OF: "[de_jure|E] Parçası:" #NT!
+ TITLE_VIEW_TITLE_ADD_LAW_LABEL: "Miras Hukuku Ekle" #NT!
+ TITLE_VIEW_TITLE_ADD_LAW_INFO: "[Title.GetName]'ye [title_specific_succession|E] [succession_law|E] ekleyin.\n\nBu $game_concept_law$ yalnızca bu belirli [title|E]'e uygulanacak ve [realm|E]'nızdaki diğer $game_concept_titles$'leri etkilemeyecektir.\n\nEn az [king|E]-[title_rank|E]'dan [rulers|E]'si, kültürel bir seçmeli derse [succession_law|E]2 erişimleri varsa, bunun yerine [succession_law|E]0 [succession_law|E]1'i alabilir." #NT!
+ TITLE_VIEW_SHOW_ADD_LAWS: "Yasalar Ekle" #NT!
+ TITLE_VIEW_TITLE_ADD_LAW_CONFIRM: "Yasa Ekle" #NT!
+ TITLE_VIEW_TITLE_ADD_LAW_POSSIBLE_LAWS: "Olası Miras Hukukları" #NT!
+ CLEAR_TITLES_EFFECTS_HEADER: "Etkileri:" #NT!
+ TITLE_VIEW_HO_NUMBER_OF_KNIGHTS: "[knight_i] [HolyOrder.GetNumberOfKnights] [HolyOrder.GetTitle.GetHolder.Custom('KnightCulturePlural')]" #NT!
+ TITLE_VIEW_MERCENARY_NUMBER_OF_KNIGHTS: "[knight_i] [MercenaryCompany.GetNumberOfKnights] [HolyOrder.GetTitle.GetHolder.Custom('KnightCulturePlural')]" #NT!
+ TITLE_VIEW_HO_NUMBER_OF_SOLDIERS: "[HolyOrder.GetCurrentSoldiers] [soldiers|E]" #NT!
+ TITLE_VIEW_MERCENARY_NUMBER_OF_SOLDIERS: "[MercenaryCompany.GetCurrentSoldiers] [soldiers|E]" #NT!
+ CHARACTER_SORT_BY: "#T Sıralama Düzeni: [Select_CString( CharacterSelectionList.GetSortOrder, 'Ascending', 'Descending' )]\n#!#I Geçiş yapmak için tıklayın#!" #NT!
+ FIND_VASSAL_HEADER: "Birisine Ver" #NT!
+ FIND_VASSAL_RELEVANCE: "İlgililik" #NT!
+ FIND_VASSAL_BUTTON_TOOLTIP: "#T $FIND_VASSAL_HEADER$#!\nChoose bunu birine [title|E] vermek için.\n\n$FIND_VASSAL_BUTTON_TOOLTIP_SEGMENT$" #NT!
+ FIND_VASSAL_BUTTON_TOOLTIP_SEGMENT: "[vassals|E]'lerinizden birine [titles|E], [guests|E]'lerinizden birine veya [realm|E]'ünüzdeki herhangi bir [courtiers|E]'e [titles|E] verebilirsiniz." #NT!
+  #AGOT Modified, HV Conversion rules #NT!
+ # GRANT_TO_SAME_CULTURE_NOBLE_HEADER: "[GetPlayer.GetCulture.GetNameNoTooltip] Kültürünün Asilzadesi" #NT!
+ GRANT_TO_SAME_CULTURE_NOBLE_HEADER: "[GetPlayer.Custom('same_culture_noble_header')] Kültürünün Asilzadesi" #NT!
+ GRANT_TO_SAME_CULTURE_NOBLE_INFO: "#V Kültürünüz#! ve [GetPlayer.GetFaith.GetAdjectiveNoTooltip] İnancınız olan bir asile ünvan verin" #NT!
+ GRANT_TO_SAME_CULTURE_NOBLE_BUTTON_HOLDING_VIEW_TOOLTIP: "#T Yerel [culture|E] kültürüne ait olmayan bir [ruler|E] tarafından tutulan [GetPlayer.GetCulture.GetName] Kültürünün #!\nA [county|E] Soylusuna hibe edin [county_opinion|E]'sı azaltılmış olacaktır.\n\nAynı-[culture|E] [vassals|E]'in [GetPlayer.GetCulture.GetName]0'larından daha yüksek [opinion|E]'u vardır.\n\n[GetPlayer.GetCulture.GetName]1 Hibe etmek için tıklayın[GetPlayer.GetCulture.GetName]2" #NT!
+ GRANT_TO_LOCAL_CULTURE_NOBLE_HEADER: "Yerel [FindVassalListWindow.GetTitle.GetProvince.GetCulture.GetNameNoTooltip] Asil" #NT!
+ GRANT_TO_LOCAL_CULTURE_NOBLE_INFO: "#V Yerel Kültür#! ve [GetPlayer.GetFaith.GetAdjectiveNoTooltip] İnanç sahibi bir soyluya ünvan verin" #NT!
+ GRANT_TO_LOCAL_CULTURE_NOBLE_BUTTON_HOLDING_VIEW_BASE_TOOLTIP: "#T Yerel [FindVassalListWindow.GetTitle.GetProvince.GetCulture.GetName] Kültürden bir Soyluya Hibe#!\nA Yerel [culture|E]'in [ruler|E]'ü tarafından tutulan [county|E], [county_opinion|E]'yı azaltmayacaktır.\n\nYerel-[culture|E] [vassals|E], [cultural_acceptance|E]'u artıracaktır." #NT!
+ GRANT_TO_LOCAL_CULTURE_NOBLE_BUTTON_HOLDING_VIEW_BARONY_TOOLTIP: "$GRANT_TO_LOCAL_CULTURE_NOBLE_BUTTON_HOLDING_VIEW_BASE_TOOLTIP$\n\n#I Vermek için tıklayın#!" #NT!
+ GRANT_TO_LOCAL_CULTURE_NOBLE_BUTTON_HOLDING_VIEW_COUNTY_TOOLTIP: "$GRANT_TO_LOCAL_CULTURE_NOBLE_BUTTON_HOLDING_VIEW_BASE_TOOLTIP$\n\n#S Efektler#! \n[FindVassalListWindow.GetTitle.GetAutoGrantCountyToLocalRulerEffectDesc(GetPlayer)]\n\n#I Vermek için tıklayın#!" #NT!
+ GRANT_TO_LOCAL_CULTURE_NOBLE_ACCEPTANCE: "Bu, Kabulü artırır" #NT!
+ TITLE_VIEW_FACTION: "[Faction.GetName] [faction|E]" #NT!
+ CREATE_TITLE_MIN_COST: "Minimum maliyet" #NT!
+ grant_title_info_text: "Veya Diyarınızdaki bir Karakteri seçin..." #NT!
+ CREATE_TITLE_PERCENTAGE_BASE_DUCHY_KINGDOM: "[duchy|E] / [kingdom|E] Ünvanı için temel" #NT!
+ CREATE_TITLE_PERCENTAGE_BASE_EMPIRE: "[empire|E] Ünvanı için temel" #NT!
+ CREATE_TITLE_PERCENTAGE_LEGITIMACY_DISCOUNT_EXTRA_REDUCED: "Büyük [legitimacy_level|E] indirim" #NT!
+ CREATE_TITLE_PERCENTAGE_LEGITIMACY_DISCOUNT_VERY_REDUCED: "[legitimacy_level|E] indirim" #NT!
+ CREATE_TITLE_PERCENTAGE_LEGITIMACY_DISCOUNT_REDUCED: "Küçük [legitimacy_level|E] indirim" #NT!
+ CREATE_TITLE_PERCENTAGE_LEGITIMACY_DISCOUNT_NONE: "[legitimacy_level|E] indirim" #NT!

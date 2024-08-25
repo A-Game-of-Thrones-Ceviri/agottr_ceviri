@@ -1,160 +1,160 @@
-﻿l_english: #NT
- ONMAP_ARMY_UNIT_TOOLTIP:0 "$NAME$ ($CONTROLLER$)\n($MORALE|V$%)(moral)\nTakviye/ay: $REINFORCEMENTS|V$\nTopluluklar: $LEVIES$ / $MAX_LEVIES|V$\nSilahlı Adamlar: $MEN_AT_ARMS$ / $MAX_MEN_AT_ARMS|V$\nAlaylar: $REGIMENTS|V$\nBakım: $MAINTENANCE$\nTedarik: $CONTROLLER$0 / $CONTROLLER$1\nTedarik Limiti: $CONTROLLER$2" #NT
- UNIT_WILL_ARRIVE:0 "$NAME$, [DATE.GetTimeToDate] kaldı ([DATE.GetStringShort|V])" #NT
- UNIT_WILL_ARRIVE_RETREAT:1 "$NAME$'a geri çekiliyor, [DATE.GetTimeToDate] kaldı ([DATE.GetStringShort|V])" #NT
- UNIT_WILL_MOVEMENT_LOCK:0 "[movement_lock|E] içinde [DATE.GetTimeToDate]" #NT
- UNIT_IS_EMBARKED:0 "Gemiye binildi" #NT
- UNIT_WILL_EMBARK:0 "Gemiye binecek" #NT
- UNIT_IS_EMBARKING:0 "Gemiye binmek" #NT
- UNIT_IS_DISEMBARKING:0 "Gemiden iniyor" #NT
- UNIT_WILL_TAKE_HOSTILE_COUNTY_ATTRITION:0 "@warning_icon! #X Hareket $CASUALTIES$ can kaybına neden olacak.#!\n" #NT
- UNIT_WILL_TAKE_HOSTILE_COUNTY_ATTRITION_DESTROYED:0 "@warning_icon! #X Hareket $CASUALTIES$ zayiatla sonuçlanacak ve bu orduyu yok edecek.#!\n" #NT
- UNIT_TOOLTIP_HEADER:0 "[ARMY.GetNameNoTooltip] ($TYPE$)" #NT
- DESTINATION_SEA:0 "Deniz" #NT
- DESTINATION_LAKE:0 "Göl" #NT
- DESTINATION_RIVER:0 "Nehir" #NT
- SIEGE_TOOLTIP_TITLE:1 "#T $PROVINCE$#!'deki kale" #NT
- SIEGE_TOOLTIP_OCUPIED:0 "[CHARACTER.GetUIName] tarafından işgal edildi." #NT
- SIEGE_TOOTLTIP_IMPACT:0 "Kale seviyesindeki etki:" #NT
- CHARACTER_ACTIVITY_TOOLTIP:0 "[CHARACTER.GetUIName] bu aktiviteye katılıyor" #NT
- CHARACTER_AT_LOCATION:0 "[PROVINCE.GetName|V]'da" #NT
-  #AGOT Modified  #NT
- #CHARACTER_AT_ACTIVITY:0 "[ACTIVITY.GetName|V]'da [PROVINCE.GetName|V]'e katılıyor" #NT
- CHARACTER_AT_ACTIVITY:0 "[Character.Custom('is_missing_location_activity_loc')]" #NT
- CHARACTER_AT_ARMY:0 "[PROVINCE.GetName|V]'de [army|E]'yu komuta ediyor" #NT
- CHARACTER_TRAVEL_TO_LOCATION:0 "[PROVINCE.GetName|V]'a seyahat" #NT
- CHARACTER_IMPRISONED_AT:0 "[CHARACTER.GetUIName|V] tarafından [PROVINCE.GetName|V]'de hapsedildi" #NT
- CHARACTER_AT_COURT_VISITING:1 "[CHARACTER.GetShortUINamePossessive|V] [court|E]'i [PROVINCE.GetName|V]'de ziyaret ediyor" #NT
- CHARACTER_AT_COURT:1 "[CHARACTER.GetShortUINamePossessive|V] [court|E]'de [PROVINCE.GetName|V]'de" #NT
-  #AGOT Modified  #NT
- #CHARACTER_TRAVELING_OWNER: "Seyahat ederken [PROVINCE.GetName|V]'da" #NT
- CHARACTER_TRAVELING_OWNER:0 "[PROVINCE.GetName|V] [Character.Custom('agot_character_traveling_loc')]'de" #NT
- CHARACTER_TRAVELING_ENTOURAGE:0 "[TRAVEL_PLAN.GetData.GetOwner.GetShortUINamePossessive|V] [entourage|E] [PROVINCE.GetName|V]'de" #NT
- FORD_TOOLTIP:1 "$FROM$ ile $TO$ arasında Ford" #NT
- STRAIT_TOOLTIP:1 "$FROM$ ile $TO$ arasındaki boğaz" #NT
- MAP_REALM_TT_HEADER:0 "#T [TITLE.GetNameNoTooltip|U]#!" #NT
- MAP_REALM_TT_BOTTOM:0 "Hükümdar: [CHARACTER.GetUINameNoTooltip|UV]" #NT
- MAP_REALM_LOBBY_TT_HEADER:0 "#T [CHARACTER.GetShortUINameNotMeNoTooltip]#!\n[TITLE.GetNameNoTooltip]" #NT
- MAP_REALM_LOBBY_TT_BOTTOM:0 "\n#I Seçmek için tıklayın#!" #NT
- MAP_REALM_TT_RELATION_ME:0 "" #NT
- MAP_REALM_TT_RELATION_VASSAL:0 "[TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip|UV] Vasal" #NT
- MAP_REALM_TT_RELATION_PEER:0 "[TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip|UV] Vasal Arkadaşı" #NT
- MAP_REALM_TT_RELATION_LIEGE:0 "[TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip|UV] Süzeren" #NT
- MAP_REALM_TT_RELATION_TOP_LIEGE:0 "[TARGET_CHARACTER.GetShortUINamePossessive|UV] En İyi Süzeren" #NT
- MAP_REALM_TT_RELATION_OTHER:0 "Bağımsız Bölge" #NT
-  #AGOT Modified  #NT
- #IMPASSIBLE_PROVINCE_TOOLTIP: "#T Geçilmez arazi#!" #NT
- IMPASSIBLE_PROVINCE_TOOLTIP:0 "#T Geçilmez Arazi#!" #NT
- #IMPASSPABLE_SEA_PROVINCE_TOOLTIP:0 "#T Bilinmeyen Kısrak#!" #NT
- IMPASSPABLE_SEA_PROVINCE_TOOLTIP:0 "#T Dogīmissiarzor'u kucaklayın#!" #NT
- SEA_PROVINCE_TOOLTIP:2 "#T [PROVINCE.GetName]#!\n[PROVINCE.GetTerrain.GetNameNoTooltip|V]" #NT
- LAKE_PROVINCE_TOOLTIP:0 "#T Göl#!" #NT
- RIVER_PROVINCE_TOOLTIP:1 "#T [PROVINCE.GetName]#!\nMajor Nehir" #NT
- PROVINCE_TOOLTIP_HEADER:0 "#T [PROVINCE.GetTitle.GetNameNoTooltip]#!" #NT
- PROVINCE_TOOLTIP_HOLDER:0 "Sahip: [CHARACTER.GetUINameNoTooltip|UV]" #NT
- PROVINCE_TOOLTIP_LESSEE:0 "Kiracı: [CHARACTER.GetUINameNoTooltip|UV]" #NT
- PROVINCE_TOOLTIP_OCCUPIED:0 "Şu kişi tarafından işgal edildi: [CHARACTER.GetUINameNoTooltip|UV]" #NT
- PROVINCE_TOOLTIP_CULTURE:0 "Kültür: [COUNTY.GetCulture.GetNameNoTooltip|V]" #NT
- PROVINCE_TOOLTIP_FAITH:0 "İnanç: [COUNTY.GetFaith.GetNameNoTooltip|V]" #NT
- PROVINCE_TOOLTIP_TERRAIN:0 "Arazi: [PROVINCE.GetTerrain.GetNameNoTooltip|V]" #NT
- PROVINCE_TOOLTIP_DEVELOPMENT:0 "Geliştirme: [COUNTY.GetDevelopmentLevel|V]" #NT
- PROVINCE_DEBUG:2 "\nKimlik: [PROVINCE.GetID] [PROVINCE.GetTag]" #NT
- PROVINCE_TOOLTIP_EMBARKING_IMPLIED:0 "#I Gemiye biniş ücretini ödeyecek#!" #NT
- PROVINCE_TOOLTIP_NO_PATH_ALL:0 "@warning_icon! #X Burada yürüyüş yapılamaz#!" #NT
- PROVINCE_TOOLTIP_NO_PATH_SOME:0 "@warning_icon! #X Seçilen Orduların bazıları buraya yürüyemez#!" #NT
- PROVINCE_TOOLTIP_IMPASSABLE:1 "@warning_icon! #X Bu [barony|E] geçilmez bir araziye sahip#!" #NT
- PROVINCE_TOOLTIP_NON_TRAVERSIBLE_WATER:1 "@warning_icon! #X Bu su kütlesini geçemezsiniz#!" #NT
- PROVINCE_TOOLTIP_CANNOT_RAID_ACROSS_SEA:0 "@warning_icon! #X Deniz yoluyla [raid|E] yapılamıyor#!" #NT
- PROVINCE_TOOLTIP_CLICK_TO_GO:1 "\n#I Buraya yürümek için sağ tıklayın#!" #NT
- PROVINCE_TOOLTIP_SHIFT_TO_APPEND:0 "#I - Sıraya girmek için Shift'e basılı tutun#!" #NT
- PROVINCE_TOOLTIP_CTRL_TO_FORCE_GATHERING:0 "#I - @gathering_icon!Toplamayı durdurmak ve hemen hareket etmek için Ctrl'yi basılı tutun #!" #NT
- PROVINCE_TOOLTIP_ETA:1 "#I - Tahmini varış: [DATE.GetTimeDiffFromNow] ([DATE.GetStringShortNoYear])#!" #NT
- PROVINCE_TOOLTIP_WINTER:0 "Kış Şiddeti: [PROVINCE.GetWinterSeverityName|V]" #NT
- PROVINCE_TOOLTIP_ARMY_ADVANTAGE:0 "Bu konumda: [advantage|E] @advantage_icon!$BASE$" #NT
- PROVINCE_TOOLTIP_ARMY_ADVANTAGE_NO_ADJUSTMENT:0 "+0" #NT
- PROVINCE_TOOLTIP_ARMY_ADVANTAGE_ADJUSTMENT:0 "$ADJUSTMENTS|=+$" #NT
- PROVINCE_TOOLTIP_CLICK_TO_RETREAT:0 "\n#I Savaşı terk etmek ve buraya geri çekilmek için sağ tıklayın#!" #NT
- PROVINCE_TOOLTIP_CLICK_CANT_RETREAT:0 "$DAYS$ gün daha Savaştan geri çekilemezsiniz" #NT
- PROVINCE_TOOLTIP_ADD_RALLY_POINT_HERE:0 "#I Buraya [rally_point|E] eklemek için tıklayın#!" #NT
- PROVINCE_TOOLTIP_ADD_RALLY_POINT_CANCEL:0 "#I İptal etmek için sağ tıklayın#!" #NT
- PROVINCE_TOOLTIP_MOVE_RALLY_POINT_HERE:0 "#I [rally_point|E]'i buraya taşımak için tıklayın#!" #NT
- PROVINCE_TOOLTIP_MOVE_RALLY_POINT_HERE_RIGHT_CLICK:0 "#I [rally_point|E]'i buraya taşımak için sağ tıklayın#!" #NT
- PROVINCE_TOOLTIP_MOVE_RALLY_POINT_CANCEL:0 "#I İptal etmek için sağ tıklayın#!" #NT
- PROVINCE_TOOLTIP_SELECT_MAA_ORIGIN_HERE:0 "#I Buradaki [REGIMENT.GetNameNoTooltip] istasyonuna tıklayın#!" #NT
- PROVINCE_TOOLTIP_SELECT_MAA_ORIGIN_CANCEL:0 "#I İptal etmek için sağ tıklayın#!" #NT
- DE_JURE_DRIFT_TARGET_DESCRIPTION:1 "#high De Jure Drift:#! [TITLE.GetNameNoTooltip] yaklaşık $DURATION$ içinde [TARGET_TITLE.GetNameNoTooltip]'ün parçası olacak" #NT
- DE_JURE_DRIFT_PROGRESS_DESCRIPTION:0 "[TITLE.GetNameNoTooltip], $DURATION$'den [TARGET_TITLE.GetNameNoTooltip]'e doğru fiili sürüklenme ilerlemesine sahiptir" #NT
- MAP_COUNTY_HOLDER_MAIN_TEXT:0 "\nEn İyi Diyar: [TITLE.GetDeFactoTopLiege.GetNameNoTooltip|V]\Mülk Sahibi: [CHARACTER.GetUINameNoTooltip|UV]" #NT
- MAP_COUNTY_HOLDER_RIGHT_CLICK:1 "#I İlçe Sahibini seçmek için sağ tıklayın#!" #NT
- MAP_COUNTY_REALM_EXPLORE_CLICK:0 "#I D,yaroı genişletmek için Ctrl+tıkla#!" #NT
- MAP_COUNTY_REALM_EXPLORE_UNDO_CLICK:0 "#I Diyarı daraltmak için Ctrl+sağ tıklama#!" #NT
- MAP_OCCUPANT_TEXT:0 "Oturan: [CHARACTER.GetUINameNoTooltip|UV]" #NT
- HOUSES_MAP_MODE_TOOLTIP:0 "#T [ROOT.Province.GetTitle.GetDeFactoTopLiege.GetHolder.GetNameNoTooltip]#!:\n[ROOT.Province.GetTitle.GetDeFactoTopLiege.GetHolder.GetHouse.GetBaseNameNoTooltip] Hane" #NT
- houses_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:0 "\n#I Hanedan görünümünü açmak için tıklayın#!" #NT
- GOVERNMENTS_MAP_MODE_TOOLTIP:1 "#T İlçe Sahibi\nHükümet türü#!: [ROOT.Province.GetCounty.GetTitle.GetHolder.GetGovernment.GetNameNoTooltip]\nEn İyi Liege\nHükümet türü: [ROOT.Province.GetCounty.GetTitle.GetDeFactoTopLiege.GetHolder.GetGovernment.GetNameNoTooltip]" #NT
- governments_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:0 "\n#I Diyar görünümünü açmak için tıklayın#!" #NT
- DEJURE_DUCHIES_MAPMODE_TOOLTIP:0 "[ROOT.Province.GetTitle.GetDeJureLiege.GetDeJureLiege.GetNameNoTooltip]\n[ROOT.Province.GetTitle.GetDeJureLiege.GetDeJureDriftTooltip]" #NT
- DEJURE_KINGDOMS_MAPMODE_TOOLTIP:0 "[ROOT.Province.GetTitle.GetDeJureLiege.GetDeJureLiege.GetDeJureLiege.GetNameNoTooltip]\n[ROOT.Province.GetTitle.GetDeJureLiege.GetDeJureLiege.GetDeJureDriftTooltip]" #NT
- DEJURE_EMPIRES_MAPMODE_TOOLTIP:0 "[ROOT.Province.GetTitle.GetDeJureLiege.GetDeJureLiege.GetDeJureLiege.GetDeJureLiege.GetNameNoTooltip]\n[ROOT.Province.GetTitle.GetDeJureLiege.GetDeJureLiege.GetDeJureLiege.GetDeJureDriftTooltip]" #NT
- CULTURES_MAP_MODE_TOOLTIP:1 "#T İlçe Kültürü#!: [ROOT.Province.GetCounty.GetCulture.GetNameNoTooltip]\nEn İyi Liege Kültürü: [ROOT.Province.GetTitle.GetDeFactoTopLiege.GetHolder.GetCulture.GetNameNoTooltip]" #NT
- cultures_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:0 "\n#I Seçmek için tıklayın [PROVINCE.GetCounty.GetCulture.GetNameNoTooltip]#!" #NT
- FAITHS_MAP_MODE_TOOLTIP:0 "#T İlçe İnancı#!: [ROOT.Province.GetCounty.GetFaith.GetNameNoTooltip]\nEn İyi Liege'in İnancı: [ROOT.Province.GetTitle.GetDeFactoTopLiege.GetHolder.GetFaith.GetNameNoTooltip]" #NT
- faiths_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:0 "\n#I Seçmek için tıklayın [PROVINCE.GetCounty.GetFaith.GetNameNoTooltip]#!" #NT
- COURT_LANGUAGES_MAP_MODE_COUNTY_HOLDER:2 "[ROOT.Province.GetCounty.GetTitle.GetHolder.GetCourtLanguage.GetNameNoTooltip]" #NT
- COURT_LANGUAGES_MAP_MODE_LIEGE:2 "[ROOT.Province.GetCounty.GetTitle.GetHolder.GetLiege.GetCourtLanguage.GetNameNoTooltip]" #NT
- COURT_LANGUAGES_MAP_MODE_LIEGES_LIEGE:0 "[ROOT.Province.GetCounty.GetTitle.GetHolder.GetLiege.GetLiege.GetCourtLanguage.GetNameNoTooltip]" #NT
- COURT_LANGUAGES_MAP_MODE_TOP_LIEGE:2 "[ROOT.Province.GetCounty.GetTitle.GetHolder.GetTopLiege.GetCourtLanguage.GetNameNoTooltip]" #NT
- COURT_LANGUAGES_MAP_MODE_TOOLTIP_COUNTY_HOLDER:1 "#T $COURT_LANGUAGES_MAP_MODE_COUNTY_HOLDER$#!\nCourt [ROOT.Province.GetCounty.GetTitle.GetHolder.GetTitleAsNameNoTooltip]'ün [ROOT.Province.GetCounty.GetTitle.GetHolder.GetPrimaryTitle.GetNameNoTierNoTooltip]\n Dili" #NT
- COURT_LANGUAGES_MAP_MODE_TOOLTIP_LIEGE:1 "#T $COURT_LANGUAGES_MAP_MODE_LIEGE$#!\nCourt [ROOT.Province.GetCounty.GetTitle.GetHolder.GetLiege.GetTitleAsNameNoTooltip]'ün [ROOT.Province.GetCounty.GetTitle.GetHolder.GetLiege.GetPrimaryTitle.GetNameNoTierNoTooltip]\n Dili" #NT
- COURT_LANGUAGES_MAP_MODE_TOOLTIP_LIEGES_LIEGE:0 "#T $COURT_LANGUAGES_MAP_MODE_LIEGES_LIEGE$#!\nCourt [ROOT.Province.GetCounty.GetTitle.GetHolder.GetLiege.GetLiege.GetTitleAsNameNoTooltip]'ün [ROOT.Province.GetCounty.GetTitle.GetHolder.GetLiege.GetLiege.GetPrimaryTitle.GetNameNoTierNoTooltip]\n Dili" #NT
- COURT_LANGUAGES_MAP_MODE_TOOLTIP_TOP_LIEGE:1 "#T $COURT_LANGUAGES_MAP_MODE_TOP_LIEGE$#!\nCourt [ROOT.Province.GetCounty.GetTitle.GetHolder.GetTopLiege.GetTitleAsNameNoTooltip]'ün [ROOT.Province.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetNameNoTierNoTooltip]\n Dili" #NT
- COURT_LANGUAGES_MAP_MODE_TOOLTIP_FALLBACK:0 "#T Saray Dili#!: Hiçbiri" #NT
- COURT_LANGUAGES_SELECTION_TOOLTIP_COUNTY_HOLDER:0 "\n#I Seçmek için tıklayın $COURT_LANGUAGES_MAP_MODE_COUNTY_HOLDER$#!" #NT
- COURT_LANGUAGES_SELECTION_TOOLTIP_LIEGE:0 "\n#I Seçmek için tıklayın $COURT_LANGUAGES_MAP_MODE_LIEGE$#!" #NT
- COURT_LANGUAGES_SELECTION_TOOLTIP_LIEGES_LIEGE:0 "\n#I Seçmek için tıklayın $COURT_LANGUAGES_MAP_MODE_LIEGES_LIEGE$#!" #NT
- COURT_LANGUAGES_SELECTION_TOOLTIP_TOP_LIEGE:0 "\n#I Seçmek için tıklayın $COURT_LANGUAGES_MAP_MODE_TOP_LIEGE$#!" #NT
- ECONOMY_MAP_TOOLTIP_ENTRY:0 "\n[HOLDING.GetType.GetName] / [HOLDING.GetNameNoTooltip]: @gold_icon![HOLDING.GetIncome|+=1]/ay" #NT
- ECONOMY_MAP_TOOLTIP:0 "#T İlçe [ROOT.Province.GetCounty.GetName]#!\n[GetEconomyMapModeTooltip( KÖK.İl )]" #NT
- COUNTY_CONTROL_MAP_MODE_TOOLTIP:1 "#T İlçe [control|e] / [ROOT.Province.GetCounty.GetName]: [ROOT.Province.GetCounty.GetControlLevelOutOfMax]#!\n[ROOT.Province.GetCounty.GetCountyControlEffectsDesc]" #NT
- ADDITIONAL_MAPMODES:0 "Ek Modlar" #NT
- ADDITIONAL_MAP_SETTINGS:0 "Ek Ayarlar" #NT
- ZOOM_LEVEL_PAPER_MAP:0 "Kağıt Harita" #NT
- ZOOM_LEVEL_PAPER_MAP_TOOLTIP:1 "#T $ZOOM_LEVEL_PAPER_MAP$#!\nThe $ZOOM_LEVEL_PAPER_MAP$ size dünyadaki tüm bağımsız [realms|E]'ün üst düzey bir genel görünümünü verir.\n\n#TUT Bu harita modunda, haritaya tıklamak [realms|E]#!'yi seçecektir" #NT
- ZOOM_LEVEL_POLITICAL:0 "Siyasi Harita" #NT
- ZOOM_LEVEL_POLITICAL_TOOLTIP:2 "#T $ZOOM_LEVEL_POLITICAL$#!\nThe $ZOOM_LEVEL_POLITICAL$ size bir bölgedeki [rulers|E]'ün kapsamlı bir genel görünümünü sunar ve [wars|E] planlamak, [vassals|E]'yı yönetmek ve [realms|E]'yi keşfetmek için idealdir.\n\n#TUT Bu harita modunda, haritaya tıklamak [realms|E]$ZOOM_LEVEL_POLITICAL$0'u seçecektir." #NT
- ZOOM_LEVEL_DETAILS:0 "Detaylar Haritası" #NT
- ZOOM_LEVEL_DETAILS_TOOLTIP:1 "#T $ZOOM_LEVEL_DETAILS$#!\nThe $ZOOM_LEVEL_DETAILS$ size [terrain|E] ve [domain|E]'inizin genel bir görünümünü verir ve [regiments|E]'yı hareket ettirmek ve [buildings|E]'yi inşa etmek için idealdir.\n\n#TUT Bu harita modunda, haritaya tıklamak [holdings|E]$ZOOM_LEVEL_DETAILS$0'u seçecektir" #NT
- ZOOM_LEVEL_DOMAIN:0 "Mülk Haritası" #NT
- ZOOM_LEVEL_SELECTING_BARONIES:0 "Seçim: Mülkler" #NT
- ZOOM_LEVEL_SELECTING_REALMS:0 "Seçim: Diyarlar" #NT
- MAP_MODES_EXPLORATION_ENABLED:0 "Diyar Keşif Modunda" #NT
- MAP_MODES_EXPLORATION_ENABLED_TT:1 "Diyar Keşif Modundayken harita farklı Realm'lerin Vassal yapısına göre renklendirilir. Vassal hiyerarşisinde Ctrl+tıklayarak daha derine inin ve Ctrl+sağ-tıklayarak geri dönün. Diyar Keşif'ini sıfırlamak için başka bir harita modu seçin" #NT
- holding_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:1 "\n$CLICK_TO_SELECT$" #NT
- kingdoms_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:1 "\n$CLICK_TO_SELECT$" #NT
- empires_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:1 "\n$CLICK_TO_SELECT$" #NT
- duchies_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:1 "\n$CLICK_TO_SELECT$" #NT
- counties_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:1 "\n$CLICK_TO_SELECT$" #NT
- players_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:1 "\n$CLICK_TO_SELECT$" #NT
- PROVINCE_VIEW_TOOLTIP_WINTER:2 "#T $winter$ #!\nSeverity: [Province.GetWinterSeverityName|V]\n\n[Province.GetWinterEffectsDesc]" #NT
- PROVINCE_WINTER_LEVEL_NONE:0 "Hiçbiri" #NT
- PROVINCE_WINTER_LEVEL_MILD:0 "Hafif" #NT
- PROVINCE_WINTER_LEVEL_NORMAL:0 "Normal" #NT
- PROVINCE_WINTER_LEVEL_HARSH:0 "Sert" #NT
- MAP_MODE:0 "Harita Modu" #NT
- EPIDEMICS_MAP_MODE_TOOLTIP: "[ROOT.Province.GetEpidemicMapTooltip]" #NT
- EPIDEMIC_PROVINCE_NO_TOOLTIP: "#T [Province.GetNameNoTooltip]#!\nNot herhangi bir salgından etkilenmiş" #NT
- EPIDEMIC_PROVINCE_ALL_INFECTIONS_TOOLTIP: "#T Enfeksiyonlar [Province.GetNameNoTooltip]#!\n$EPIDEMIC_NAMES$" #NT
- EPIDEMIC_INFECTED_PROVINCE_TOOLTIP: "#T [Epidemic.GetNameNoTooltip] Enfeksiyon [Province.GetNameNoTooltip]#!\nInfection Oranı: [Epidemic.GetInfectionDataIn( Province.Self ).GetInfectionRate|V%/^]\nSalgın Başlangıcı: [Epidemic.GetInfectionDataIn( Province.Self ).GetStartDate.GetString]" #NT
- EPIDEMIC_SAFE_PROVINCE_TOOLTIP: "#T [Province.GetNameNoTooltip]#!\nNot [Epidemic.GetNameNoTooltip] tarafından enfeksiyon riski altında" #NT
- EPIDEMIC_RISK_PROVINCE_TOOLTIP: "#T [Province.GetNameNoTooltip]#!\nRisk [Epidemic.GetNameNoTooltip] ile enfeksiyon: $SPREAD_CHANCE|V%/$" #NT
- epidemics_MAP_MODE_TOOLTIP_CLICK_TO_SELECT: "\n#I Seçmek için tıklayın [Province.GetHighestPriorityEpidemic.GetNameNoTooltip]#!" #NT
- LEGENDS_MAP_MODE_TOOLTIP: "[ROOT.Province.GetLegendMapTooltip]" #NT
- LEGEND_PROVINCE_NONE_TOOLTIP: "#T [Province.GetNameNoTooltip]#!\nNot herhangi bir efsaneyi benimsedi" #NT
- LEGEND_PROVINCE_ALL_SPREAD_TOOLTIP: "#T Efsaneler [Province.GetNameNoTooltip]#!\n$LEGEND_NAMES$" #NT
- LEGEND_IN_PROVINCE_TOOLTIP: "#T [Legend.GetNameNoTooltip] içinde [Province.GetNameNoTooltip]#!" #NT
- LEGEND_NO_SPREAD_PROVINCE_TOOLTIP: "#T [Province.GetNameNoTooltip]#!\nNot benimsemek için aralıkta [Legend.GetNameNoTooltip]" #NT
- LEGEND_SPREAD_PROVINCE_TOOLTIP: "#T [Province.GetNameNoTooltip]#!\nChance [Legend.GetNameNoTooltip] tarafından benimsenmesi: $SPREAD_CHANCE|V%/$\n\t$SPREAD_DEBUG_BREAKDOWN$" #NT
- legends_MAP_MODE_TOOLTIP_CLICK_TO_SELECT: "\n#I Seçmek için tıklayın [Province.GetHighestPriorityLegend.GetNameNoTooltip]#!" #NT
- LEGEND_QUALITY_SPREAD_CHANCE: "Kalite seviyesinden şans: $CHANCE|%/+2=$" #NT
- LEGEND_QUALITY_OWNER_MODIFIER: "Sahip değiştiricisi: $MOD|%/+2=$" #NT
- LEGEND_QUALITY_OWNER_MULTIPLIER: "Sahip çarpanı: $BREAKDOWN_MULTIPLICATION_$$MULT|2V$" #NT
+﻿l_english: #NT!
+ ONMAP_ARMY_UNIT_TOOLTIP:0 "$NAME$ ($CONTROLLER$)\n($MORALE|V$%)(moral)\nTakviye/ay: $REINFORCEMENTS|V$\nTopluluklar: $LEVIES$ / $MAX_LEVIES|V$\nSilahlı Adamlar: $MEN_AT_ARMS$ / $MAX_MEN_AT_ARMS|V$\nAlaylar: $REGIMENTS|V$\nBakım: $MAINTENANCE$\nTedarik: $CONTROLLER$0 / $CONTROLLER$1\nTedarik Limiti: $CONTROLLER$2" #NT!
+ UNIT_WILL_ARRIVE:0 "$NAME$, [DATE.GetTimeToDate] kaldı ([DATE.GetStringShort|V])" #NT!
+ UNIT_WILL_ARRIVE_RETREAT:1 "$NAME$'a geri çekiliyor, [DATE.GetTimeToDate] kaldı ([DATE.GetStringShort|V])" #NT!
+ UNIT_WILL_MOVEMENT_LOCK:0 "[movement_lock|E] içinde [DATE.GetTimeToDate]" #NT!
+ UNIT_IS_EMBARKED:0 "Gemiye binildi" #NT!
+ UNIT_WILL_EMBARK:0 "Gemiye binecek" #NT!
+ UNIT_IS_EMBARKING:0 "Gemiye binmek" #NT!
+ UNIT_IS_DISEMBARKING:0 "Gemiden iniyor" #NT!
+ UNIT_WILL_TAKE_HOSTILE_COUNTY_ATTRITION:0 "@warning_icon! #X Hareket $CASUALTIES$ can kaybına neden olacak.#!\n" #NT!
+ UNIT_WILL_TAKE_HOSTILE_COUNTY_ATTRITION_DESTROYED:0 "@warning_icon! #X Hareket $CASUALTIES$ zayiatla sonuçlanacak ve bu orduyu yok edecek.#!\n" #NT!
+ UNIT_TOOLTIP_HEADER:0 "[ARMY.GetNameNoTooltip] ($TYPE$)" #NT!
+ DESTINATION_SEA:0 "Deniz" #NT!
+ DESTINATION_LAKE:0 "Göl" #NT!
+ DESTINATION_RIVER:0 "Nehir" #NT!
+ SIEGE_TOOLTIP_TITLE:1 "#T $PROVINCE$#!'deki kale" #NT!
+ SIEGE_TOOLTIP_OCUPIED:0 "[CHARACTER.GetUIName] tarafından işgal edildi." #NT!
+ SIEGE_TOOTLTIP_IMPACT:0 "Kale seviyesindeki etki:" #NT!
+ CHARACTER_ACTIVITY_TOOLTIP:0 "[CHARACTER.GetUIName] bu aktiviteye katılıyor" #NT!
+ CHARACTER_AT_LOCATION:0 "[PROVINCE.GetName|V]'da" #NT!
+  #AGOT Modified #NT!
+ #CHARACTER_AT_ACTIVITY:0 "[ACTIVITY.GetName|V]'da [PROVINCE.GetName|V]'e katılıyor" #NT!
+ CHARACTER_AT_ACTIVITY:0 "[Character.Custom('is_missing_location_activity_loc')]" #NT!
+ CHARACTER_AT_ARMY:0 "[PROVINCE.GetName|V]'de [army|E]'yu komuta ediyor" #NT!
+ CHARACTER_TRAVEL_TO_LOCATION:0 "[PROVINCE.GetName|V]'a seyahat" #NT!
+ CHARACTER_IMPRISONED_AT:0 "[CHARACTER.GetUIName|V] tarafından [PROVINCE.GetName|V]'de hapsedildi" #NT!
+ CHARACTER_AT_COURT_VISITING:1 "[CHARACTER.GetShortUINamePossessive|V] [court|E]'i [PROVINCE.GetName|V]'de ziyaret ediyor" #NT!
+ CHARACTER_AT_COURT:1 "[CHARACTER.GetShortUINamePossessive|V] [court|E]'de [PROVINCE.GetName|V]'de" #NT!
+  #AGOT Modified #NT!
+ #CHARACTER_TRAVELING_OWNER: "Seyahat ederken [PROVINCE.GetName|V]'da" #NT!
+ CHARACTER_TRAVELING_OWNER:0 "[PROVINCE.GetName|V] [Character.Custom('agot_character_traveling_loc')]'de" #NT!
+ CHARACTER_TRAVELING_ENTOURAGE:0 "[TRAVEL_PLAN.GetData.GetOwner.GetShortUINamePossessive|V] [entourage|E] [PROVINCE.GetName|V]'de" #NT!
+ FORD_TOOLTIP:1 "$FROM$ ile $TO$ arasında Ford" #NT!
+ STRAIT_TOOLTIP:1 "$FROM$ ile $TO$ arasındaki boğaz" #NT!
+ MAP_REALM_TT_HEADER:0 "#T [TITLE.GetNameNoTooltip|U]#!" #NT!
+ MAP_REALM_TT_BOTTOM:0 "Hükümdar: [CHARACTER.GetUINameNoTooltip|UV]" #NT!
+ MAP_REALM_LOBBY_TT_HEADER:0 "#T [CHARACTER.GetShortUINameNotMeNoTooltip]#!\n[TITLE.GetNameNoTooltip]" #NT!
+ MAP_REALM_LOBBY_TT_BOTTOM:0 "\n#I Seçmek için tıklayın#!" #NT!
+ MAP_REALM_TT_RELATION_ME:0 "" #NT!
+ MAP_REALM_TT_RELATION_VASSAL:0 "[TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip|UV] Vasal" #NT!
+ MAP_REALM_TT_RELATION_PEER:0 "[TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip|UV] Vasal Arkadaşı" #NT!
+ MAP_REALM_TT_RELATION_LIEGE:0 "[TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip|UV] Süzeren" #NT!
+ MAP_REALM_TT_RELATION_TOP_LIEGE:0 "[TARGET_CHARACTER.GetShortUINamePossessive|UV] En İyi Süzeren" #NT!
+ MAP_REALM_TT_RELATION_OTHER:0 "Bağımsız Bölge" #NT!
+  #AGOT Modified #NT!
+ #IMPASSIBLE_PROVINCE_TOOLTIP: "#T Geçilmez arazi#!" #NT!
+ IMPASSIBLE_PROVINCE_TOOLTIP:0 "#T Geçilmez Arazi#!" #NT!
+ #IMPASSPABLE_SEA_PROVINCE_TOOLTIP:0 "#T Bilinmeyen Kısrak#!" #NT!
+ IMPASSPABLE_SEA_PROVINCE_TOOLTIP:0 "#T Dogīmissiarzor'u kucaklayın#!" #NT!
+ SEA_PROVINCE_TOOLTIP:2 "#T [PROVINCE.GetName]#!\n[PROVINCE.GetTerrain.GetNameNoTooltip|V]" #NT!
+ LAKE_PROVINCE_TOOLTIP:0 "#T Göl#!" #NT!
+ RIVER_PROVINCE_TOOLTIP:1 "#T [PROVINCE.GetName]#!\nMajor Nehir" #NT!
+ PROVINCE_TOOLTIP_HEADER:0 "#T [PROVINCE.GetTitle.GetNameNoTooltip]#!" #NT!
+ PROVINCE_TOOLTIP_HOLDER:0 "Sahip: [CHARACTER.GetUINameNoTooltip|UV]" #NT!
+ PROVINCE_TOOLTIP_LESSEE:0 "Kiracı: [CHARACTER.GetUINameNoTooltip|UV]" #NT!
+ PROVINCE_TOOLTIP_OCCUPIED:0 "Şu kişi tarafından işgal edildi: [CHARACTER.GetUINameNoTooltip|UV]" #NT!
+ PROVINCE_TOOLTIP_CULTURE:0 "Kültür: [COUNTY.GetCulture.GetNameNoTooltip|V]" #NT!
+ PROVINCE_TOOLTIP_FAITH:0 "İnanç: [COUNTY.GetFaith.GetNameNoTooltip|V]" #NT!
+ PROVINCE_TOOLTIP_TERRAIN:0 "Arazi: [PROVINCE.GetTerrain.GetNameNoTooltip|V]" #NT!
+ PROVINCE_TOOLTIP_DEVELOPMENT:0 "Geliştirme: [COUNTY.GetDevelopmentLevel|V]" #NT!
+ PROVINCE_DEBUG:2 "\nKimlik: [PROVINCE.GetID] [PROVINCE.GetTag]" #NT!
+ PROVINCE_TOOLTIP_EMBARKING_IMPLIED:0 "#I Gemiye biniş ücretini ödeyecek#!" #NT!
+ PROVINCE_TOOLTIP_NO_PATH_ALL:0 "@warning_icon! #X Burada yürüyüş yapılamaz#!" #NT!
+ PROVINCE_TOOLTIP_NO_PATH_SOME:0 "@warning_icon! #X Seçilen Orduların bazıları buraya yürüyemez#!" #NT!
+ PROVINCE_TOOLTIP_IMPASSABLE:1 "@warning_icon! #X Bu [barony|E] geçilmez bir araziye sahip#!" #NT!
+ PROVINCE_TOOLTIP_NON_TRAVERSIBLE_WATER:1 "@warning_icon! #X Bu su kütlesini geçemezsiniz#!" #NT!
+ PROVINCE_TOOLTIP_CANNOT_RAID_ACROSS_SEA:0 "@warning_icon! #X Deniz yoluyla [raid|E] yapılamıyor#!" #NT!
+ PROVINCE_TOOLTIP_CLICK_TO_GO:1 "\n#I Buraya yürümek için sağ tıklayın#!" #NT!
+ PROVINCE_TOOLTIP_SHIFT_TO_APPEND:0 "#I - Sıraya girmek için Shift'e basılı tutun#!" #NT!
+ PROVINCE_TOOLTIP_CTRL_TO_FORCE_GATHERING:0 "#I - @gathering_icon!Toplamayı durdurmak ve hemen hareket etmek için Ctrl'yi basılı tutun #!" #NT!
+ PROVINCE_TOOLTIP_ETA:1 "#I - Tahmini varış: [DATE.GetTimeDiffFromNow] ([DATE.GetStringShortNoYear])#!" #NT!
+ PROVINCE_TOOLTIP_WINTER:0 "Kış Şiddeti: [PROVINCE.GetWinterSeverityName|V]" #NT!
+ PROVINCE_TOOLTIP_ARMY_ADVANTAGE:0 "Bu konumda: [advantage|E] @advantage_icon!$BASE$" #NT!
+ PROVINCE_TOOLTIP_ARMY_ADVANTAGE_NO_ADJUSTMENT:0 "+0" #NT!
+ PROVINCE_TOOLTIP_ARMY_ADVANTAGE_ADJUSTMENT:0 "$ADJUSTMENTS|=+$" #NT!
+ PROVINCE_TOOLTIP_CLICK_TO_RETREAT:0 "\n#I Savaşı terk etmek ve buraya geri çekilmek için sağ tıklayın#!" #NT!
+ PROVINCE_TOOLTIP_CLICK_CANT_RETREAT:0 "$DAYS$ gün daha Savaştan geri çekilemezsiniz" #NT!
+ PROVINCE_TOOLTIP_ADD_RALLY_POINT_HERE:0 "#I Buraya [rally_point|E] eklemek için tıklayın#!" #NT!
+ PROVINCE_TOOLTIP_ADD_RALLY_POINT_CANCEL:0 "#I İptal etmek için sağ tıklayın#!" #NT!
+ PROVINCE_TOOLTIP_MOVE_RALLY_POINT_HERE:0 "#I [rally_point|E]'i buraya taşımak için tıklayın#!" #NT!
+ PROVINCE_TOOLTIP_MOVE_RALLY_POINT_HERE_RIGHT_CLICK:0 "#I [rally_point|E]'i buraya taşımak için sağ tıklayın#!" #NT!
+ PROVINCE_TOOLTIP_MOVE_RALLY_POINT_CANCEL:0 "#I İptal etmek için sağ tıklayın#!" #NT!
+ PROVINCE_TOOLTIP_SELECT_MAA_ORIGIN_HERE:0 "#I Buradaki [REGIMENT.GetNameNoTooltip] istasyonuna tıklayın#!" #NT!
+ PROVINCE_TOOLTIP_SELECT_MAA_ORIGIN_CANCEL:0 "#I İptal etmek için sağ tıklayın#!" #NT!
+ DE_JURE_DRIFT_TARGET_DESCRIPTION:1 "#high De Jure Drift:#! [TITLE.GetNameNoTooltip] yaklaşık $DURATION$ içinde [TARGET_TITLE.GetNameNoTooltip]'ün parçası olacak" #NT!
+ DE_JURE_DRIFT_PROGRESS_DESCRIPTION:0 "[TITLE.GetNameNoTooltip], $DURATION$'den [TARGET_TITLE.GetNameNoTooltip]'e doğru fiili sürüklenme ilerlemesine sahiptir" #NT!
+ MAP_COUNTY_HOLDER_MAIN_TEXT:0 "\nEn İyi Diyar: [TITLE.GetDeFactoTopLiege.GetNameNoTooltip|V]\Mülk Sahibi: [CHARACTER.GetUINameNoTooltip|UV]" #NT!
+ MAP_COUNTY_HOLDER_RIGHT_CLICK:1 "#I İlçe Sahibini seçmek için sağ tıklayın#!" #NT!
+ MAP_COUNTY_REALM_EXPLORE_CLICK:0 "#I D,yaroı genişletmek için Ctrl+tıkla#!" #NT!
+ MAP_COUNTY_REALM_EXPLORE_UNDO_CLICK:0 "#I Diyarı daraltmak için Ctrl+sağ tıklama#!" #NT!
+ MAP_OCCUPANT_TEXT:0 "Oturan: [CHARACTER.GetUINameNoTooltip|UV]" #NT!
+ HOUSES_MAP_MODE_TOOLTIP:0 "#T [ROOT.Province.GetTitle.GetDeFactoTopLiege.GetHolder.GetNameNoTooltip]#!:\n[ROOT.Province.GetTitle.GetDeFactoTopLiege.GetHolder.GetHouse.GetBaseNameNoTooltip] Hane" #NT!
+ houses_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:0 "\n#I Hanedan görünümünü açmak için tıklayın#!" #NT!
+ GOVERNMENTS_MAP_MODE_TOOLTIP:1 "#T İlçe Sahibi\nHükümet türü#!: [ROOT.Province.GetCounty.GetTitle.GetHolder.GetGovernment.GetNameNoTooltip]\nEn İyi Liege\nHükümet türü: [ROOT.Province.GetCounty.GetTitle.GetDeFactoTopLiege.GetHolder.GetGovernment.GetNameNoTooltip]" #NT!
+ governments_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:0 "\n#I Diyar görünümünü açmak için tıklayın#!" #NT!
+ DEJURE_DUCHIES_MAPMODE_TOOLTIP:0 "[ROOT.Province.GetTitle.GetDeJureLiege.GetDeJureLiege.GetNameNoTooltip]\n[ROOT.Province.GetTitle.GetDeJureLiege.GetDeJureDriftTooltip]" #NT!
+ DEJURE_KINGDOMS_MAPMODE_TOOLTIP:0 "[ROOT.Province.GetTitle.GetDeJureLiege.GetDeJureLiege.GetDeJureLiege.GetNameNoTooltip]\n[ROOT.Province.GetTitle.GetDeJureLiege.GetDeJureLiege.GetDeJureDriftTooltip]" #NT!
+ DEJURE_EMPIRES_MAPMODE_TOOLTIP:0 "[ROOT.Province.GetTitle.GetDeJureLiege.GetDeJureLiege.GetDeJureLiege.GetDeJureLiege.GetNameNoTooltip]\n[ROOT.Province.GetTitle.GetDeJureLiege.GetDeJureLiege.GetDeJureLiege.GetDeJureDriftTooltip]" #NT!
+ CULTURES_MAP_MODE_TOOLTIP:1 "#T İlçe Kültürü#!: [ROOT.Province.GetCounty.GetCulture.GetNameNoTooltip]\nEn İyi Liege Kültürü: [ROOT.Province.GetTitle.GetDeFactoTopLiege.GetHolder.GetCulture.GetNameNoTooltip]" #NT!
+ cultures_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:0 "\n#I Seçmek için tıklayın [PROVINCE.GetCounty.GetCulture.GetNameNoTooltip]#!" #NT!
+ FAITHS_MAP_MODE_TOOLTIP:0 "#T İlçe İnancı#!: [ROOT.Province.GetCounty.GetFaith.GetNameNoTooltip]\nEn İyi Liege'in İnancı: [ROOT.Province.GetTitle.GetDeFactoTopLiege.GetHolder.GetFaith.GetNameNoTooltip]" #NT!
+ faiths_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:0 "\n#I Seçmek için tıklayın [PROVINCE.GetCounty.GetFaith.GetNameNoTooltip]#!" #NT!
+ COURT_LANGUAGES_MAP_MODE_COUNTY_HOLDER:2 "[ROOT.Province.GetCounty.GetTitle.GetHolder.GetCourtLanguage.GetNameNoTooltip]" #NT!
+ COURT_LANGUAGES_MAP_MODE_LIEGE:2 "[ROOT.Province.GetCounty.GetTitle.GetHolder.GetLiege.GetCourtLanguage.GetNameNoTooltip]" #NT!
+ COURT_LANGUAGES_MAP_MODE_LIEGES_LIEGE:0 "[ROOT.Province.GetCounty.GetTitle.GetHolder.GetLiege.GetLiege.GetCourtLanguage.GetNameNoTooltip]" #NT!
+ COURT_LANGUAGES_MAP_MODE_TOP_LIEGE:2 "[ROOT.Province.GetCounty.GetTitle.GetHolder.GetTopLiege.GetCourtLanguage.GetNameNoTooltip]" #NT!
+ COURT_LANGUAGES_MAP_MODE_TOOLTIP_COUNTY_HOLDER:1 "#T $COURT_LANGUAGES_MAP_MODE_COUNTY_HOLDER$#!\nCourt [ROOT.Province.GetCounty.GetTitle.GetHolder.GetTitleAsNameNoTooltip]'ün [ROOT.Province.GetCounty.GetTitle.GetHolder.GetPrimaryTitle.GetNameNoTierNoTooltip]\n Dili" #NT!
+ COURT_LANGUAGES_MAP_MODE_TOOLTIP_LIEGE:1 "#T $COURT_LANGUAGES_MAP_MODE_LIEGE$#!\nCourt [ROOT.Province.GetCounty.GetTitle.GetHolder.GetLiege.GetTitleAsNameNoTooltip]'ün [ROOT.Province.GetCounty.GetTitle.GetHolder.GetLiege.GetPrimaryTitle.GetNameNoTierNoTooltip]\n Dili" #NT!
+ COURT_LANGUAGES_MAP_MODE_TOOLTIP_LIEGES_LIEGE:0 "#T $COURT_LANGUAGES_MAP_MODE_LIEGES_LIEGE$#!\nCourt [ROOT.Province.GetCounty.GetTitle.GetHolder.GetLiege.GetLiege.GetTitleAsNameNoTooltip]'ün [ROOT.Province.GetCounty.GetTitle.GetHolder.GetLiege.GetLiege.GetPrimaryTitle.GetNameNoTierNoTooltip]\n Dili" #NT!
+ COURT_LANGUAGES_MAP_MODE_TOOLTIP_TOP_LIEGE:1 "#T $COURT_LANGUAGES_MAP_MODE_TOP_LIEGE$#!\nCourt [ROOT.Province.GetCounty.GetTitle.GetHolder.GetTopLiege.GetTitleAsNameNoTooltip]'ün [ROOT.Province.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetNameNoTierNoTooltip]\n Dili" #NT!
+ COURT_LANGUAGES_MAP_MODE_TOOLTIP_FALLBACK:0 "#T Saray Dili#!: Hiçbiri" #NT!
+ COURT_LANGUAGES_SELECTION_TOOLTIP_COUNTY_HOLDER:0 "\n#I Seçmek için tıklayın $COURT_LANGUAGES_MAP_MODE_COUNTY_HOLDER$#!" #NT!
+ COURT_LANGUAGES_SELECTION_TOOLTIP_LIEGE:0 "\n#I Seçmek için tıklayın $COURT_LANGUAGES_MAP_MODE_LIEGE$#!" #NT!
+ COURT_LANGUAGES_SELECTION_TOOLTIP_LIEGES_LIEGE:0 "\n#I Seçmek için tıklayın $COURT_LANGUAGES_MAP_MODE_LIEGES_LIEGE$#!" #NT!
+ COURT_LANGUAGES_SELECTION_TOOLTIP_TOP_LIEGE:0 "\n#I Seçmek için tıklayın $COURT_LANGUAGES_MAP_MODE_TOP_LIEGE$#!" #NT!
+ ECONOMY_MAP_TOOLTIP_ENTRY:0 "\n[HOLDING.GetType.GetName] / [HOLDING.GetNameNoTooltip]: @gold_icon![HOLDING.GetIncome|+=1]/ay" #NT!
+ ECONOMY_MAP_TOOLTIP:0 "#T İlçe [ROOT.Province.GetCounty.GetName]#!\n[GetEconomyMapModeTooltip( KÖK.İl )]" #NT!
+ COUNTY_CONTROL_MAP_MODE_TOOLTIP:1 "#T İlçe [control|e] / [ROOT.Province.GetCounty.GetName]: [ROOT.Province.GetCounty.GetControlLevelOutOfMax]#!\n[ROOT.Province.GetCounty.GetCountyControlEffectsDesc]" #NT!
+ ADDITIONAL_MAPMODES:0 "Ek Modlar" #NT!
+ ADDITIONAL_MAP_SETTINGS:0 "Ek Ayarlar" #NT!
+ ZOOM_LEVEL_PAPER_MAP:0 "Kağıt Harita" #NT!
+ ZOOM_LEVEL_PAPER_MAP_TOOLTIP:1 "#T $ZOOM_LEVEL_PAPER_MAP$#!\nThe $ZOOM_LEVEL_PAPER_MAP$ size dünyadaki tüm bağımsız [realms|E]'ün üst düzey bir genel görünümünü verir.\n\n#TUT Bu harita modunda, haritaya tıklamak [realms|E]#!'yi seçecektir" #NT!
+ ZOOM_LEVEL_POLITICAL:0 "Siyasi Harita" #NT!
+ ZOOM_LEVEL_POLITICAL_TOOLTIP:2 "#T $ZOOM_LEVEL_POLITICAL$#!\nThe $ZOOM_LEVEL_POLITICAL$ size bir bölgedeki [rulers|E]'ün kapsamlı bir genel görünümünü sunar ve [wars|E] planlamak, [vassals|E]'yı yönetmek ve [realms|E]'yi keşfetmek için idealdir.\n\n#TUT Bu harita modunda, haritaya tıklamak [realms|E]$ZOOM_LEVEL_POLITICAL$0'u seçecektir." #NT!
+ ZOOM_LEVEL_DETAILS:0 "Detaylar Haritası" #NT!
+ ZOOM_LEVEL_DETAILS_TOOLTIP:1 "#T $ZOOM_LEVEL_DETAILS$#!\nThe $ZOOM_LEVEL_DETAILS$ size [terrain|E] ve [domain|E]'inizin genel bir görünümünü verir ve [regiments|E]'yı hareket ettirmek ve [buildings|E]'yi inşa etmek için idealdir.\n\n#TUT Bu harita modunda, haritaya tıklamak [holdings|E]$ZOOM_LEVEL_DETAILS$0'u seçecektir" #NT!
+ ZOOM_LEVEL_DOMAIN:0 "Mülk Haritası" #NT!
+ ZOOM_LEVEL_SELECTING_BARONIES:0 "Seçim: Mülkler" #NT!
+ ZOOM_LEVEL_SELECTING_REALMS:0 "Seçim: Diyarlar" #NT!
+ MAP_MODES_EXPLORATION_ENABLED:0 "Diyar Keşif Modunda" #NT!
+ MAP_MODES_EXPLORATION_ENABLED_TT:1 "Diyar Keşif Modundayken harita farklı Realm'lerin Vassal yapısına göre renklendirilir. Vassal hiyerarşisinde Ctrl+tıklayarak daha derine inin ve Ctrl+sağ-tıklayarak geri dönün. Diyar Keşif'ini sıfırlamak için başka bir harita modu seçin" #NT!
+ holding_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:1 "\n$CLICK_TO_SELECT$" #NT!
+ kingdoms_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:1 "\n$CLICK_TO_SELECT$" #NT!
+ empires_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:1 "\n$CLICK_TO_SELECT$" #NT!
+ duchies_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:1 "\n$CLICK_TO_SELECT$" #NT!
+ counties_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:1 "\n$CLICK_TO_SELECT$" #NT!
+ players_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:1 "\n$CLICK_TO_SELECT$" #NT!
+ PROVINCE_VIEW_TOOLTIP_WINTER:2 "#T $winter$ #!\nSeverity: [Province.GetWinterSeverityName|V]\n\n[Province.GetWinterEffectsDesc]" #NT!
+ PROVINCE_WINTER_LEVEL_NONE:0 "Hiçbiri" #NT!
+ PROVINCE_WINTER_LEVEL_MILD:0 "Hafif" #NT!
+ PROVINCE_WINTER_LEVEL_NORMAL:0 "Normal" #NT!
+ PROVINCE_WINTER_LEVEL_HARSH:0 "Sert" #NT!
+ MAP_MODE:0 "Harita Modu" #NT!
+ EPIDEMICS_MAP_MODE_TOOLTIP: "[ROOT.Province.GetEpidemicMapTooltip]" #NT!
+ EPIDEMIC_PROVINCE_NO_TOOLTIP: "#T [Province.GetNameNoTooltip]#!\nNot herhangi bir salgından etkilenmiş" #NT!
+ EPIDEMIC_PROVINCE_ALL_INFECTIONS_TOOLTIP: "#T Enfeksiyonlar [Province.GetNameNoTooltip]#!\n$EPIDEMIC_NAMES$" #NT!
+ EPIDEMIC_INFECTED_PROVINCE_TOOLTIP: "#T [Epidemic.GetNameNoTooltip] Enfeksiyon [Province.GetNameNoTooltip]#!\nInfection Oranı: [Epidemic.GetInfectionDataIn( Province.Self ).GetInfectionRate|V%/^]\nSalgın Başlangıcı: [Epidemic.GetInfectionDataIn( Province.Self ).GetStartDate.GetString]" #NT!
+ EPIDEMIC_SAFE_PROVINCE_TOOLTIP: "#T [Province.GetNameNoTooltip]#!\nNot [Epidemic.GetNameNoTooltip] tarafından enfeksiyon riski altında" #NT!
+ EPIDEMIC_RISK_PROVINCE_TOOLTIP: "#T [Province.GetNameNoTooltip]#!\nRisk [Epidemic.GetNameNoTooltip] ile enfeksiyon: $SPREAD_CHANCE|V%/$" #NT!
+ epidemics_MAP_MODE_TOOLTIP_CLICK_TO_SELECT: "\n#I Seçmek için tıklayın [Province.GetHighestPriorityEpidemic.GetNameNoTooltip]#!" #NT!
+ LEGENDS_MAP_MODE_TOOLTIP: "[ROOT.Province.GetLegendMapTooltip]" #NT!
+ LEGEND_PROVINCE_NONE_TOOLTIP: "#T [Province.GetNameNoTooltip]#!\nNot herhangi bir efsaneyi benimsedi" #NT!
+ LEGEND_PROVINCE_ALL_SPREAD_TOOLTIP: "#T Efsaneler [Province.GetNameNoTooltip]#!\n$LEGEND_NAMES$" #NT!
+ LEGEND_IN_PROVINCE_TOOLTIP: "#T [Legend.GetNameNoTooltip] içinde [Province.GetNameNoTooltip]#!" #NT!
+ LEGEND_NO_SPREAD_PROVINCE_TOOLTIP: "#T [Province.GetNameNoTooltip]#!\nNot benimsemek için aralıkta [Legend.GetNameNoTooltip]" #NT!
+ LEGEND_SPREAD_PROVINCE_TOOLTIP: "#T [Province.GetNameNoTooltip]#!\nChance [Legend.GetNameNoTooltip] tarafından benimsenmesi: $SPREAD_CHANCE|V%/$\n\t$SPREAD_DEBUG_BREAKDOWN$" #NT!
+ legends_MAP_MODE_TOOLTIP_CLICK_TO_SELECT: "\n#I Seçmek için tıklayın [Province.GetHighestPriorityLegend.GetNameNoTooltip]#!" #NT!
+ LEGEND_QUALITY_SPREAD_CHANCE: "Kalite seviyesinden şans: $CHANCE|%/+2=$" #NT!
+ LEGEND_QUALITY_OWNER_MODIFIER: "Sahip değiştiricisi: $MOD|%/+2=$" #NT!
+ LEGEND_QUALITY_OWNER_MULTIPLIER: "Sahip çarpanı: $BREAKDOWN_MULTIPLICATION_$$MULT|2V$" #NT!
