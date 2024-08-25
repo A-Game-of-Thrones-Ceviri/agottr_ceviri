@@ -1,311 +1,311 @@
-﻿l_english: #NT #NT!
-  # GUI  #NT #NT!
- ACTIVITY_WAITING_TOOLTIP: "[CHARACTER.GetName] tarafından barındırılıyor.\nTüm davetlerin yanıtlanmasını bekliyoruz.\n$DESC|F$\n\n#I Ayrıntıları göstermek için tıklayın#!" #NT #NT!
- ACTIVITY_TIME_LEFT: "#D $TIME|V$ gün içinde başlayacak#!" #NT #NT!
- ACTIVITY_OWNED_BY: "#D Sahibi: $NAME$#!" #NT #NT!
+﻿l_english:
+  # GUI  #NT!
+ ACTIVITY_WAITING_TOOLTIP: "[CHARACTER.GetName] tarafından barındırılıyor.\nTüm davetlerin yanıtlanmasını bekliyoruz.\n$DESC|F$\n\n#I Ayrıntıları göstermek için tıklayın#!" #NT!
+ ACTIVITY_TIME_LEFT: "#D $TIME|V$ gün içinde başlayacak#!" #NT!
+ ACTIVITY_OWNED_BY: "#D Sahibi: $NAME$#!" #NT!
 
-  #AGOT Modified  #NT #NT!
- #ACTIVITY_FULL_NAME: "[Character.GetShortUINamePossessiveNoTooltip] [ActivityType.GetNameNoTooltip]" #NT #NT!
- ACTIVITY_FULL_NAME: "[SelectLocalization(Character.GetInvolvedActivity.MakeScope.Var('body_to_bury').IsSet, Character.GetInvolvedActivity.MakeScope.Var('body_to_bury').Char.GetTitledFirstNamePossessive, Character.GetShortUINamePossessiveNoTooltip)] [ActivityType.GetNameNoTooltip|U]" #NT #NT!
- ACTIVITY_SHORT_NAME: "[ActivityType.GetNameNoTooltip]" #NT #NT!
+  #AGOT Modified  #NT!
+ #ACTIVITY_FULL_NAME: "[Character.GetShortUINamePossessiveNoTooltip] [ActivityType.GetNameNoTooltip]" #NT!
+ ACTIVITY_FULL_NAME: "[SelectLocalization(Character.GetInvolvedActivity.MakeScope.Var('body_to_bury').IsSet, Character.GetInvolvedActivity.MakeScope.Var('body_to_bury').Char.GetTitledFirstNamePossessive, Character.GetShortUINamePossessiveNoTooltip)] [ActivityType.GetNameNoTooltip|U]" #NT!
+ ACTIVITY_SHORT_NAME: "[ActivityType.GetNameNoTooltip]" #NT!
 
- ACTIVITY_TYPE_DESC: "[AddLine(ActivityOption.GetIsValidDesc( GetPlayer, ActivityPlanner.GetSelectedSpecialOption ))]\n[ActivityOption.GetDescription]" #NT #NT!
+ ACTIVITY_TYPE_DESC: "[AddLine(ActivityOption.GetIsValidDesc( GetPlayer, ActivityPlanner.GetSelectedSpecialOption ))]\n[ActivityOption.GetDescription]" #NT!
 
- ACTIVITY_OPTION_TOOLTIP: "#T [ActivityOption.GetName]#![AddLine(ActivityOption.GetIsValidDesc( GetPlayer, ActivityPlanner.GetSelectedSpecialOption ))]\n[ActivityOption.GetDescription]" #NT #NT!
-  # Ugly hack, ActivityPlanner needs to be used before ActivityOption for the contexts to work properly, for some reason.  #NT #NT!
- ACTIVITY_OPTION_DESC: "[ActivityPlanner.NoOp][ActivityOption.GetDescription]" #NT #NT!
+ ACTIVITY_OPTION_TOOLTIP: "#T [ActivityOption.GetName]#![AddLine(ActivityOption.GetIsValidDesc( GetPlayer, ActivityPlanner.GetSelectedSpecialOption ))]\n[ActivityOption.GetDescription]" #NT!
+  # Ugly hack, ActivityPlanner needs to be used before ActivityOption for the contexts to work properly, for some reason.  #NT!
+ ACTIVITY_OPTION_DESC: "[ActivityPlanner.NoOp][ActivityOption.GetDescription]" #NT!
 
- activity_special_type: "[Activity.Custom('GetActivitySpecialType')]" #NT #NT!
- activity_special_type_desc: "[Activity.Custom('GetActivitySpecialTypeDesc')]" #NT #NT!
+ activity_special_type: "[Activity.Custom('GetActivitySpecialType')]" #NT!
+ activity_special_type_desc: "[Activity.Custom('GetActivitySpecialTypeDesc')]" #NT!
 
-  #Debug Strings  #NT #NT!
-  ## Personality Values  #NT #NT!
- debug_gui.activity_weight.ai_value.sociability: "Sosyalliğim: $VALUE|+0$" #NT #NT!
- debug_gui.activity_weight.ai_value.greed: "Açgözlülüğüm: $VALUE|+0$" #NT #NT!
- debug_gui.activity_weight.ai_value.rationality: "Mantığım: $VALUE|+0$" #NT #NT!
- debug_gui.activity_weight.ai_value.boldness: "Cesaretim: $VALUE|+0$" #NT #NT!
-  ## Traits  #NT #NT!
-  ### Personality  #NT #NT!
- debug_gui.activity_weight.trait.gluttonous: "Ben [GetTrait('gluttonous').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT #NT!
- debug_gui.activity_weight.trait.ambitious: "Ben [GetTrait('ambitious').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT #NT!
- debug_gui.activity_weight.trait.greedy: "Ben [GetTrait('greedy').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT #NT!
- debug_gui.activity_weight.trait.generous: "Ben [GetTrait('generous').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT #NT!
- debug_gui.activity_weight.trait.temperate: "Ben [GetTrait('temperate').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT #NT!
- debug_gui.activity_weight.trait.humble: "Ben [GetTrait('humble').GetName( GetNullCharacter )]: $VALUE|+0$" #NT #NT!
- debug_gui.activity_weight.trait.arrogant: "Ben [GetTrait('arrogant').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT #NT!
- debug_gui.activity_weight.trait.gregarious: "Ben [GetTrait('gregarious').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT #NT!
- debug_gui.activity_weight.trait.shy: "Ben [GetTrait('shy').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT #NT!
-  ### Stress  #NT #NT!
- debug_gui.activity_weight.trait.comfort_eater: "Ben [GetTrait('comfort_eater').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT #NT!
- debug_gui.activity_weight.trait.profligate: "Ben [GetTrait('profligate').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT #NT!
- debug_gui.activity_weight.trait.improvident.giving_circumstances: "Ben [GetTrait('improvident').GetName( GetNullCharacter )]'ım ve varlığımı bir hediye olarak görüyorum: $VALUE|+0$" #NT #NT!
- debug_gui.activity_weight.trait.inappetetic: "Ben [GetTrait('inappetetic').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT #NT!
- debug_gui.activity_weight.trait.drunkard: "Ben [GetTrait('drunkard').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT #NT!
- debug_gui.activity_weight.trait.hashishiyah: "Ben [GetTrait('comfort_eater').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT #NT!
-  ### Lifestyle  #NT #NT!
- debug_gui.activity_weight.trait.lifestyle_reveler: "Ben [GetTrait('lifestyle_reveler').GetName( GetNullCharacter )]: $VALUE|+0$" #NT #NT!
-  ## Modifiers  #NT #NT!
- debug_gui.activity_weight.modifier.losing_weight: "Kilo vermeye çalışıyorum: $VALUE|+0$" #NT #NT!
- debug_gui.activity_weight.modifier.gaining_weight: "Kilo almaya çalışıyorum: $VALUE|+0$" #NT #NT!
-  ## Stress Level  #NT #NT!
- debug_gui.activity_weight.stress.more_than_low: "Ben [stressed|E]: $VALUE|+0$'im" #NT #NT!
-  ## Faith  #NT #NT!
-  ### Tenets  #NT #NT!
- debug_gui.activity_weight.faith.tenet_ritual_celebrations: "[faith|E]'ım [GetFaithDoctrine('tenet_ritual_celebrations').GetBaseName]'e sahip: $VALUE|+0$" #NT #NT!
- debug_gui.activity_weight.faith.tenet_hedonistic: "[faith|E]'ım [GetFaithDoctrine('tenet_hedonistic').GetBaseName]'e sahip: $VALUE|+0$" #NT #NT!
-  ## Gold  #NT #NT!
- debug_gui.activity_weight.gold.prefers_cheapness: "Fazla harcayacak [gold|E] param yok: $VALUE|+0$" #NT #NT!
- debug_gui.activity_weight.gold.prefers_middling: "İyi bir şey için yeterli [gold|E]'ım var: $VALUE|+0$" #NT #NT!
- debug_gui.activity_weight.gold.prefers_expense: "Yedekleyecek bolca [gold|E]'ım var: $VALUE|+0$" #NT #NT!
-  ## Struggles  #NT #NT!
- debug_gui.activity_weight.struggle.wants_to_escalate: "[struggle|E]'ımı yükseltmek istiyorum: $VALUE|+0$" #NT #NT!
- debug_gui.activity_weight.struggle.wants_to_deescalate: "[struggle|E]: $VALUE|+0$'imi azaltmak istiyorum" #NT #NT!
-
-
-
-  #Feast  #NT #NT!
- activity_feast: "Bayram" #NT #NT!
- feast_activity_cost_desc: "Temel Maliyet" #NT #NT!
- activity_feast_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Ziyafet" #NT #NT!
- murder_feast_activity_cost_desc: "$feast_type_murder$" #NT #NT!
- bloody_wedding_activity_cost_desc: "$wedding_type_bloody$" #NT #NT!
- activity_feast_desc: "Ülkenin her ileri geleni, dostluk ve sadakat bağlarını güçlendirmek için büyük bir ziyafete davet edildi." #NT #NT!
- activity_feast_owner: "Ev sahibi" #NT #NT!
- activity_feast_destination_selection: "Seçilen kontluk 5 yıl boyunca [GetModifier( 'feast_recent_fest_modifier' ).GetNameWithTooltip|L] değiştiricisini alacaktır." #NT #NT!
- activity_feast_selection_tooltip: "İlişkilerinizi güçlendirmek için harika bir ziyafet düzenleyin\n\nBeklenen Ödüller:\n$BULLET_WITH_TAB$[opinion_i] [opinion|E]\n$BULLET_WITH_TAB$[stress_loss_i] [stress|E] Kayıp" #NT #NT!
- activity_feast_amenity_effect: "$BULLET_WITH_TAB$Ödüller, Yiyeceğinize bağlı olarak artar [court_amenities|E]" #NT #NT!
- activity_feast_host_desc: "$BULLET_WITH_TAB$Kazanabilir [GetVassalStance( 'courtly' ).GetTextIcon][GetVassalStance( 'courtly' ).GetName] [vassal|E] [opinion|E]\n$BULLET_WITH_TAB$Kazanabilir [prestige_i][prestige|E]\n$BULLET_WITH_TAB$Kazanabilir [legitimacy_i] [GetVassalStance( 'courtly' ).GetTextIcon]0\n$BULLET_WITH_TAB$Katılımcılar katılımcı karakterler kazanabilir [opinion|E]\n$BULLET_WITH_TAB$Katılımcılar kaybedebilir [GetVassalStance( 'courtly' ).GetTextIcon]4[GetVassalStance( 'courtly' ).GetTextIcon]5\n$BULLET_WITH_TAB$Katılımcılar kazanabilir [GetVassalStance( 'courtly' ).GetTextIcon]7 [GetVassalStance( 'courtly' ).GetTextIcon]8\n[GetVassalStance( 'courtly' ).GetTextIcon]9" #NT #NT!
- activity_feast_conclusion_desc: "[GetActivityType( 'activity_feast' ).GetName] sona erdi" #NT #NT!
- activity_feast_magnificence_greagarious_desc: "Sen bir efsanesin [GetTrait('lifestyle_reveler').GetName( GetNullCharacter )]" #NT #NT!
- feast_recent_fest_modifier: "Büyük Ziyafet" #NT #NT!
- feast_recent_fest_modifier_desc: "Burada büyük bir şölen kutlandı" #NT #NT!
- feast_start_log_title: "Bayram Başlıyor" #NT #NT!
- feast_start_log: "[CHARACTER.GetTitledFirstName] misafirleri sıcak bir şekilde karşıladı ve Şöleni başlattı" #NT #NT!
- feast_phase_meal_desc: "Yiyecek, içecek ve iyi arkadaşlıklar, #EMP daha iyi bir şey var mı?#!" #NT #NT!
- feast_phase_toast_desc: "Akşamı sonlandırmak için özel bir an" #NT #NT!
- progress_towards_reveler_tt: "[GetTrait('lifestyle_reveler').GetName( GetNullCharacter )] [trait|E]'e doğru ilerliyorsunuz" #NT #NT!
- feast_type_murder_valid_tt: "Son 15 yılda bir Murder [GetActivityType('activity_feast').GetName]'a ev sahipliği yaptınız" #NT #NT!
- wedding_type_murder_valid_tt: "Son 15 yılda bir Kanlı [GetActivityType('activity_wedding').GetName]'a ev sahipliği yaptınız" #NT #NT!
- honorary_guest: "Onursal konuk" #NT #NT!
- honorary_guest_concept: "[honorary_guest|E]" #NT #NT!
- honorary_guest_for_host: "Cinayet Hedefi" #NT #NT!
- honorary_guest_regular: "$honorary_guest$" #NT #NT!
- honorary_guest_regular_for_host: "$honorary_guest$" #NT #NT!
- honorary_guest_desc: "Bir [GetActivityType('activity_feast').GetName], kutlamanın kimin şerefine yapıldığına dair bir $honorary_guest$'e sahip olabilir. Ziyafetin merkezi kısmı olan kadeh, bu belirgin konumu nedeniyle onlara [prestige|E] kazandıracaktır. Ancak dikkat edin — bu bir tuzak da olabilir... $feast_type_murder$ ev sahipleri, $honorary_guest$'lerini öldürme eğilimindedir." #NT #NT!
- honorary_guest_desc_for_host: "$honorary_guest_for_host$ olmadan $feast_type_murder$ olmazdı. Ev sahibi, dilerse kurbanını özenle seçip, tüm çevresi ile birlikte onun hayatına son verebilir. Ancak tetikte olmaları gerekiyor; birisi kurbanın varlığını gözden kaçırırsa bunun ek sonuçları olabilir." #NT #NT!
- honorary_guest_regular_desc: "$honorary_guest_desc$" #NT #NT!
- honorary_guest_regular_desc_for_host: "$honorary_guest_desc$" #NT #NT!
- activity_window_character_honorary_guest: "[SelectLocalization( ObjectsEqual(Activity.GetHost.Self, GetPlayer), '$honorary_guest_for_host$', '[honorary_guest|E]')]\n[Character.GetShortUINameNoTooltip|U]" #NT #NT!
- activity_window_character_honorary_guest_regular: "[honorary_guest|E]\n[Character.GetShortUINameNoTooltip|U]" #NT #NT!
- feast_cost_discount_longhouses: "Konum $building_type_longhouses_01$'dır" #NT #NT!
- feast_cost_discount_farm_estates: "Konum $building_type_farm_estates_01$'dır" #NT #NT!
- feast_cost_discount_orchards: "Konum $building_type_orchards_01$'dır" #NT #NT!
- feast_cost_discount_cereal_fields: "Konum $building_type_cereal_fields_01$'dır" #NT #NT!
- feast_cost_discount_hill_farms: "Konum $building_type_hill_farms_01$'dır" #NT #NT!
- feast_cost_discount_desert_agriculture: "Konum $building_type_plantations_01$'dır" #NT #NT!
- feast_cost_discount_leisure_palaces: "Konum $building_type_leisure_palace_01$'dır" #NT #NT!
- feast_cost_discount_doges_palace: "Konum $building_type_doges_palace_01$'dır" #NT #NT!
- feast_cost_discount_palace_of_aachen: "Konum $building_palace_of_aachen_01$'dır" #NT #NT!
- feast_cost_discount_alhambra: "Konum $building_alhambra_02$'dır" #NT #NT!
- feast_cost_discount_citadel_of_aleppo: "Konum $building_citadel_of_aleppo_02$'dır" #NT #NT!
- feast_cost_discount_theodosian_walls: "Konum $building_theodosian_walls_01$'dır" #NT #NT!
- feast_cost_discount_hall_of_heroes: "Konum $building_type_hall_of_heroes_01$'dır" #NT #NT!
- activity_feast_province_desc_theodosian_walls: "#P +++ $building_type_theodosian_walls_01$#!" #NT #NT!
- activity_feast_province_desc_hall_of_heroes: "#P +++ $building_type_hall_of_heroes_01$#!" #NT #NT!
- activity_feast_province_desc_citadel_of_aleppo: "#P +++ $building_type_citadel_of_aleppo_01$#!" #NT #NT!
- activity_feast_province_desc_palace_of_aachen: "#P +++ $building_type_palace_of_aachen_01$#!" #NT #NT!
- activity_feast_province_desc_doges_palace: "#P +++ $building_type_doges_palace_01$#!" #NT #NT!
- activity_feast_province_desc_leisure_palace: "#P +++ $building_type_leisure_palace_01$#!" #NT #NT!
- activity_feast_province_desc_alhambra: "#P +++ $building_type_alhambra_01$#!" #NT #NT!
- activity_feast_province_desc_farm_estates: "#P ++ $building_type_farm_estates_01$#!" #NT #NT!
- activity_feast_province_desc_longhouses: "#P + $building_type_longhouses_01$#!" #NT #NT!
- activity_feast_province_desc_orchards: "#P + $building_type_orchards_01$#!" #NT #NT!
- activity_feast_province_desc_cereal_fields: "#P + $building_type_cereal_fields_01$#!" #NT #NT!
- activity_feast_province_desc_plantations: "#P + $building_type_plantations_01$#!" #NT #NT!
- activity_feast_province_desc_no_holding: "#N --- Hayır [holding|P]#!" #NT #NT!
- courses_reward_food_court_amenity_tt: "Ödüller, saray olanaklarınız tarafından artırılır" #NT #NT!
- courses_good_reward_tt_title: "$final_reward_tt$" #NT #NT!
- courses_good_reward_tt: "Kurs sayısı misafirleri oldukça etkiledi" #NT #NT!
- courses_normal_reward_tt_title: "$final_reward_tt$" #NT #NT!
- courses_normal_reward_tt: "Kurs sayısı misafirleri memnun etti" #NT #NT!
- courses_bad_reward_tt_title: "$final_reward_tt$" #NT #NT!
- courses_bad_reward_tt: "Kurs sayısı misafirleri hayal kırıklığına uğrattı" #NT #NT!
- food_normal_reward_tt_title: "$final_reward_tt$" #NT #NT!
- food_normal_reward_tt: "Yemeğin karmaşıklığı misafirleri memnun etti" #NT #NT!
- food_good_reward_tt_title: "$final_reward_tt$" #NT #NT!
- food_good_reward_tt: "Yemeğin karmaşıklığı misafirleri oldukça etkiledi" #NT #NT!
- food_bad_reward_tt_title: "$final_reward_tt$" #NT #NT!
- food_bad_reward_tt: "Yemeğin karmaşıklığı misafirleri hayal kırıklığına uğrattı" #NT #NT!
- not_poor_health_tt: "[health|E] #V Zayıf #! veya daha düşük" #NT #NT!
- activity_feast_guest_help_text: "Davet edilen her [guests|E], diğer katılımcılarla etkileşime girme ve [opinion|E]'lerini artırma fırsatına sahip olacak.\n\nŞölenler ayrıca arkanıza yaslanıp biraz [stress|E] kaybetmek için mükemmel fırsatlardır." #NT #NT!
- murder_feast_failed_tt_title: "Başarısız Cinayet" #NT #NT!
- murder_feast_failed_tt: "Cinayet girişimi başarısızlıkla sonuçlandı" #NT #NT!
- murder_feast_solo_kill_tt_title: "Cinayet Şöleni" #NT #NT!
- murder_feast_solo_kill_tt: "[ROOT.Char.GetShortUIName] başarıyla öldürüldü [ROOT.Char.GetHerHis] hedef" #NT #NT!
- murder_feast_entourage_kill_tt_title: "$murder_feast_solo_kill_tt_title$" #NT #NT!
- murder_feast_entourage_kill_tt: "[ROOT.Char.GetShortUIName], [ROOT.Char.GetHerHis] hedefi ve maiyetini başarıyla öldürdü" #NT #NT!
- murder_feast_liege_kill_tt_title: "Yanlış hedef" #NT #NT!
- murder_feast_liege_kill_tt: "[ROOT.Char.GetShortUIName] başarıyla [ROOT.Char.GetHerHis] kişiyi öldürdü" #NT #NT!
- murder_feast_hof_kill_tt_title: "$murder_feast_liege_kill_tt_title$" #NT #NT!
- murder_feast_hof_kill_tt: "[ROOT.Char.GetShortUIName] başarıyla öldürüldü [ROOT.Char.GetHerHis] inanç başkanı" #NT #NT!
- activity_window_character_honorary_guest_traveling_murder: "[SelectLocalization( IsActivityHost( Activity, GetPlayer ), 'honorary_guest_for_host', 'honorary_guest_concept' )]\n[Character.GetShortUINameNoTooltip|U]\n[traveling|E], [Character.GetCurrentLocation.GetName]\n ~[Character.GetTravelPlan.GetData.GetNextDestination.GetEstimatedArrivalDate.GetStringLong|V]'te" #NT #NT!
- activity_window_character_honorary_guest_murder: "[SelectLocalization( IsActivityHost( Activity, GetPlayer ), 'honorary_guest_for_host', 'honorary_guest_concept' )]\n[Character.GetShortUINameNoTooltip|U]" #NT #NT!
- activity_feast_province_desc: "[ROOT.Province.GetName]\n'da bir Şölen düzenliyorsunuz. Uygun binalara sahip olan eyaletler [gold_i][gold|E] indirim veriyor\n" #NT #NT!
-
-  #Hunt  #NT #NT!
- activity_hunt: "Avlamak" #NT #NT!
- hunt_phase_desc: "Avınızı takip edin ve onu nasıl yakalayacağınıza karar verin" #NT #NT!
- activity_hunt_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Av" #NT #NT!
- activity_hunt_desc: "Kovalamaca bol miktarda heyecan ve tehlike sunar ve binicilik ve okçulukta sağlam bir temel sağlamaya yarar.\n\nAvlar, yaygın, nadir ve vahşi hayvanların [hunt_sightings_no_prefix|E]'ini duyuracak olan [GetCourtPositionType('master_of_hunt_court_position').GetName()] tarafından denetlenir." #NT #NT!
- activity_hunt_owner: "Avcı" #NT #NT!
-  #Meditation  #NT #NT!
- activity_meditation: "Gizli Meditasyon" #NT #NT!
- activity_meditation_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Gizli Meditasyon" #NT #NT!
- activity_meditation_desc: "[ACTIVITY.GetOwner.GetTitledFirstName] huzur içinde tefekkür edebilsinler diye inzivaya çekildi." #NT #NT!
- activity_meditation_owner: "Meditasyon yapan" #NT #NT!
-  #Hold Court  #NT #NT!
- activity_hold_court: "Saray Tutmak" #NT #NT!
- activity_hold_court_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Saray Seyircileri" #NT #NT!
- activity_hold_court_desc: "[ACTIVITY.GetOwner.GetTitledFirstName], tüm tebaasını, [ACTIVITY.GetOwner.GetHerHim]'den önce [ACTIVITY.GetOwner.GetHerHis] dikkat gerektiren tüm konuları getirmeye davet etti." #NT #NT!
- activity_petition_liege: "Dilekçe Liege" #NT #NT!
- activity_petition_liege_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Dilekçe" #NT #NT!
- activity_petition_liege_desc: "[ACTIVITY.GetOwner.GetTitledFirstName], [ACTIVITY.GetOwner.GetHerHis] hükümdarına, [ACTIVITY.GetOwner.GetLiege.GetTitledFirstName], belirli konularda yardım talebinde bulundu." #NT #NT!
-  #Seer  #NT #NT!
- visit_seer: "Bir Kahini Ziyaret Edin" #NT #NT!
- visit_seer_desc: "Orta Çağ'da hayatta kalmak için bazı iyi ipuçları ve püf noktaları olabilir." #NT #NT!
-
-  #Adventure  #NT #NT!
- activity_adventure_name: "Macera" #NT #NT!
- activity_adventure_desc: "[ACTIVITY.GetOwner.GetTitledFirstName] bölgede macera yaşıyor." #NT #NT!
- activity_adventure_owner: "Maceracı" #NT #NT!
-
-  #Gruesome Festival (Blót)  #NT #NT!
- activity_gruesome_festival: "[GetPlayer.Custom('GruesomeFestivalName')|U]" #NT #NT!
- activity_gruesome_festival_selection_tooltip: "Tebaanızı kutsal ve masraflı bir ritüele katılmaya davet ediyorsunuz" #NT #NT!
- activity_gruesome_festival_desc: "Tüm [GetPlayer.GetPrimaryTitle.GetNameNoTierNoTooltip]'ların bir araya gelip [GetPlayer.GetFaith.PantheonTerm]'e kurban kesmesinin zamanı geldi. Bu ritüeller sadece inananları birbirine bağlamakla kalmıyor, aynı zamanda tüm toprakların [GetPlayer.GetTitleAsNameNoTooltip]'si olarak yerimi de teyit ediyor." #NT #NT!
- activity_gruesome_festival_owner: "Ev sahibi" #NT #NT!
- activity_gruesome_festival_host_desc: "\nŞunları içeren bir [GetPlayer.Custom('GruesomeFestivalName')] düzenlersiniz:\n#indent_newline:0 $EFFECT_LIST_BULLET$ Festivalin ölçeğine karar vermek\n#indent_newline:0 $EFFECT_LIST_BULLET$ Ne feda edeceğinizi seçmek, hatta [prisoners|E]'inizden birini [designate_chief_sacrifice_chief_sacrifice|E] olarak seçmek\n#indent_newline:0 $EFFECT_LIST_BULLET$ Tebaanızın #indent_newline:03 #indent_newline:02 sayısına bağlı olarak [county_opinion|E] ve #indent_newline:00 #indent_newline:01 kazanmak veya kaybetmek" #NT #NT!
- activity_gruesome_festival_guest_help_text: "Davet edilen [guests|E] kurban törenine ve ardından gelen şölene katılacak. [faith|E]'lerinin [core_tenets|E]'sine bağlı olarak sizden [opinion|E] kazanacak veya kaybedecekler." #NT #NT!
- activity_gruesome_festival_province_desc: "$gruesome_festival_size_small_desc$" #NT #NT!
- activity_gruesome_festival_fallback_name: "Ritüel kurban" #NT #NT!
- activity_gruesome_festival_desc.non_gf_practioner: "Tebaam arasında [GetPlayer.GetTitleAsNameNoTooltip] tarafından kutsanmış büyük kurban törenleri uygulayanlar var. Sınırlı bir çeşidini bile yapmayı kabul etmek şüphesiz onların onayını kazanmamı sağlar, ancak daha... barbarca geleneklerini benimsemek, onların yollarını küçümseyenlerin bana hakaret etmesine neden olabilir." #NT #NT!
+  #Debug Strings  #NT!
+  ## Personality Values  #NT!
+ debug_gui.activity_weight.ai_value.sociability: "Sosyalliğim: $VALUE|+0$" #NT!
+ debug_gui.activity_weight.ai_value.greed: "Açgözlülüğüm: $VALUE|+0$" #NT!
+ debug_gui.activity_weight.ai_value.rationality: "Mantığım: $VALUE|+0$" #NT!
+ debug_gui.activity_weight.ai_value.boldness: "Cesaretim: $VALUE|+0$" #NT!
+  ## Traits  #NT!
+  ### Personality  #NT!
+ debug_gui.activity_weight.trait.gluttonous: "Ben [GetTrait('gluttonous').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT!
+ debug_gui.activity_weight.trait.ambitious: "Ben [GetTrait('ambitious').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT!
+ debug_gui.activity_weight.trait.greedy: "Ben [GetTrait('greedy').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT!
+ debug_gui.activity_weight.trait.generous: "Ben [GetTrait('generous').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT!
+ debug_gui.activity_weight.trait.temperate: "Ben [GetTrait('temperate').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT!
+ debug_gui.activity_weight.trait.humble: "Ben [GetTrait('humble').GetName( GetNullCharacter )]: $VALUE|+0$" #NT!
+ debug_gui.activity_weight.trait.arrogant: "Ben [GetTrait('arrogant').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT!
+ debug_gui.activity_weight.trait.gregarious: "Ben [GetTrait('gregarious').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT!
+ debug_gui.activity_weight.trait.shy: "Ben [GetTrait('shy').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT!
+  ### Stress  #NT!
+ debug_gui.activity_weight.trait.comfort_eater: "Ben [GetTrait('comfort_eater').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT!
+ debug_gui.activity_weight.trait.profligate: "Ben [GetTrait('profligate').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT!
+ debug_gui.activity_weight.trait.improvident.giving_circumstances: "Ben [GetTrait('improvident').GetName( GetNullCharacter )]'ım ve varlığımı bir hediye olarak görüyorum: $VALUE|+0$" #NT!
+ debug_gui.activity_weight.trait.inappetetic: "Ben [GetTrait('inappetetic').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT!
+ debug_gui.activity_weight.trait.drunkard: "Ben [GetTrait('drunkard').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT!
+ debug_gui.activity_weight.trait.hashishiyah: "Ben [GetTrait('comfort_eater').GetName( GetNullCharacter )]: $VALUE|+0$'im" #NT!
+  ### Lifestyle  #NT!
+ debug_gui.activity_weight.trait.lifestyle_reveler: "Ben [GetTrait('lifestyle_reveler').GetName( GetNullCharacter )]: $VALUE|+0$" #NT!
+  ## Modifiers  #NT!
+ debug_gui.activity_weight.modifier.losing_weight: "Kilo vermeye çalışıyorum: $VALUE|+0$" #NT!
+ debug_gui.activity_weight.modifier.gaining_weight: "Kilo almaya çalışıyorum: $VALUE|+0$" #NT!
+  ## Stress Level  #NT!
+ debug_gui.activity_weight.stress.more_than_low: "Ben [stressed|E]: $VALUE|+0$'im" #NT!
+  ## Faith  #NT!
+  ### Tenets  #NT!
+ debug_gui.activity_weight.faith.tenet_ritual_celebrations: "[faith|E]'ım [GetFaithDoctrine('tenet_ritual_celebrations').GetBaseName]'e sahip: $VALUE|+0$" #NT!
+ debug_gui.activity_weight.faith.tenet_hedonistic: "[faith|E]'ım [GetFaithDoctrine('tenet_hedonistic').GetBaseName]'e sahip: $VALUE|+0$" #NT!
+  ## Gold  #NT!
+ debug_gui.activity_weight.gold.prefers_cheapness: "Fazla harcayacak [gold|E] param yok: $VALUE|+0$" #NT!
+ debug_gui.activity_weight.gold.prefers_middling: "İyi bir şey için yeterli [gold|E]'ım var: $VALUE|+0$" #NT!
+ debug_gui.activity_weight.gold.prefers_expense: "Yedekleyecek bolca [gold|E]'ım var: $VALUE|+0$" #NT!
+  ## Struggles  #NT!
+ debug_gui.activity_weight.struggle.wants_to_escalate: "[struggle|E]'ımı yükseltmek istiyorum: $VALUE|+0$" #NT!
+ debug_gui.activity_weight.struggle.wants_to_deescalate: "[struggle|E]: $VALUE|+0$'imi azaltmak istiyorum" #NT!
 
 
- ACTIVITY_WAITING: "Başlamasını beklemek" #NT #NT!
- ACTIVITY_ATTENDING: "Katılmak" #NT #NT!
- ACTIVITY_DECLINED: "Reddedildi" #NT #NT!
- ACTIVITY_ATTENDING_NEWLINE: "\n$ACTIVITY_ATTENDING$\n" #NT #NT!
- GOTO_ACTIVITY: "#I Haritada ortalamak için tıklayın#!" #NT #NT!
- GOTO_PLAYER_ACTIVITY: "#T [GetPlayer.GetCurrentActivity.GetType.GetName] in [GetPlayer.GetCurrentActivity.GetLocation.GetName]#! \n#I Seçmek için tıklayın#!" #NT #NT!
-  #Pay Homage  #NT #NT!
- activity_pay_homage: "Saygı duruşu" #NT #NT!
- activity_pay_homage_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Saygı duruşu" #NT #NT!
- activity_pay_homage_desc: "[ACTIVITY.GetOwner.GetTitledFirstName], [ACTIVITY.GetOwner.GetHerHis] hükümdarına, [ACTIVITY.GetOwner.GetLiege.GetTitledFirstName]'ye resmi saygılarını sunmak istiyor." #NT #NT!
 
- activity_invite_rule_friends: "Arkadaşlar" #NT #NT!
- activity_invite_rule_rivals: "Rakipler" #NT #NT!
- activity_invite_rule_rivals_if_appropriate: "$activity_invite_rule_rivals$" #NT #NT!
- activity_invite_rule_lovers: "Aşıklar" #NT #NT!
- activity_invite_rule_close_family: "Yakın aile" #NT #NT!
- activity_invite_rule_close_family_no_default: "$activity_invite_rule_close_family$" #NT #NT!
- activity_invite_rule_extended_family: "Geniş Aile" #NT #NT!
- activity_invite_rule_liege: "Süzeren" #NT #NT!
- activity_invite_rule_liege_no_default: "$activity_invite_rule_liege$" #NT #NT!
- activity_invite_rule_vassals: "Vasallar" #NT #NT!
- activity_invite_rule_vassals_no_default: "$activity_invite_rule_vassals$" #NT #NT!
- activity_invite_rule_fellow_vassals: "Yoldaş Vasallar" #NT #NT!
- activity_invite_neighbouring_rulers: "Komşu Hükümdarlar" #NT #NT!
- activity_invite_rule_knights: "Şövalyeler" #NT #NT!
- activity_invite_rule_knights_no_default: "$activity_invite_rule_knights$" #NT #NT!
- activity_invite_rule_courtiers: "Saraylılar" #NT #NT!
- activity_invite_rule_courtiers_no_default: "$activity_invite_rule_courtiers$" #NT #NT!
- activity_invite_rule_guests: "Saray Konukları" #NT #NT!
- activity_invite_rule_guests_no_default: "$activity_invite_rule_guests$" #NT #NT!
- activity_invite_spouses: "Eşler" #NT #NT!
- activity_invite_spouses_no_default: "$activity_invite_spouses$" #NT #NT!
- activity_invite_rule_house_witches: "Ev" #NT #NT!
- activity_invite_rule_other_witches: "Diğer" #NT #NT!
- activity_invite_rule_landless_courtiers: "İnişsiz $activity_invite_rule_courtiers$" #NT #NT!
- activity_invite_rule_landless_friends: "İnişsiz $activity_invite_rule_friends$" #NT #NT!
- activity_invite_rule_landless_rivals: "İnişsiz $activity_invite_rule_rivals$" #NT #NT!
- activity_invite_rule_landless_lovers: "Karaya oturmamış $activity_invite_rule_lovers$" #NT #NT!
- activity_invite_rule_landless_close_family: "İnişsiz $activity_invite_rule_close_family$" #NT #NT!
- activity_invite_rule_player_heir: "Varis" #NT #NT!
- activity_invite_rule_hof: "İnancın Başı" #NT #NT!
- activity_invite_rule_all_lieges: "Tüm Lieges" #NT #NT!
- activity_invite_spouses_close_family: "Eşlerin Yakın Ailesi" #NT #NT!
- activity_invite_spouses_extended_family: "Eşlerin Geniş Ailesi" #NT #NT!
- activity_invite_mp: "Diğer oyuncular" #NT #NT!
+  #Feast  #NT!
+ activity_feast: "Bayram" #NT!
+ feast_activity_cost_desc: "Temel Maliyet" #NT!
+ activity_feast_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Ziyafet" #NT!
+ murder_feast_activity_cost_desc: "$feast_type_murder$" #NT!
+ bloody_wedding_activity_cost_desc: "$wedding_type_bloody$" #NT!
+ activity_feast_desc: "Ülkenin her ileri geleni, dostluk ve sadakat bağlarını güçlendirmek için büyük bir ziyafete davet edildi." #NT!
+ activity_feast_owner: "Ev sahibi" #NT!
+ activity_feast_destination_selection: "Seçilen kontluk 5 yıl boyunca [GetModifier( 'feast_recent_fest_modifier' ).GetNameWithTooltip|L] değiştiricisini alacaktır." #NT!
+ activity_feast_selection_tooltip: "İlişkilerinizi güçlendirmek için harika bir ziyafet düzenleyin\n\nBeklenen Ödüller:\n$BULLET_WITH_TAB$[opinion_i] [opinion|E]\n$BULLET_WITH_TAB$[stress_loss_i] [stress|E] Kayıp" #NT!
+ activity_feast_amenity_effect: "$BULLET_WITH_TAB$Ödüller, Yiyeceğinize bağlı olarak artar [court_amenities|E]" #NT!
+ activity_feast_host_desc: "$BULLET_WITH_TAB$Kazanabilir [GetVassalStance( 'courtly' ).GetTextIcon][GetVassalStance( 'courtly' ).GetName] [vassal|E] [opinion|E]\n$BULLET_WITH_TAB$Kazanabilir [prestige_i][prestige|E]\n$BULLET_WITH_TAB$Kazanabilir [legitimacy_i] [GetVassalStance( 'courtly' ).GetTextIcon]0\n$BULLET_WITH_TAB$Katılımcılar katılımcı karakterler kazanabilir [opinion|E]\n$BULLET_WITH_TAB$Katılımcılar kaybedebilir [GetVassalStance( 'courtly' ).GetTextIcon]4[GetVassalStance( 'courtly' ).GetTextIcon]5\n$BULLET_WITH_TAB$Katılımcılar kazanabilir [GetVassalStance( 'courtly' ).GetTextIcon]7 [GetVassalStance( 'courtly' ).GetTextIcon]8\n[GetVassalStance( 'courtly' ).GetTextIcon]9" #NT!
+ activity_feast_conclusion_desc: "[GetActivityType( 'activity_feast' ).GetName] sona erdi" #NT!
+ activity_feast_magnificence_greagarious_desc: "Sen bir efsanesin [GetTrait('lifestyle_reveler').GetName( GetNullCharacter )]" #NT!
+ feast_recent_fest_modifier: "Büyük Ziyafet" #NT!
+ feast_recent_fest_modifier_desc: "Burada büyük bir şölen kutlandı" #NT!
+ feast_start_log_title: "Bayram Başlıyor" #NT!
+ feast_start_log: "[CHARACTER.GetTitledFirstName] misafirleri sıcak bir şekilde karşıladı ve Şöleni başlattı" #NT!
+ feast_phase_meal_desc: "Yiyecek, içecek ve iyi arkadaşlıklar, #EMP daha iyi bir şey var mı?#!" #NT!
+ feast_phase_toast_desc: "Akşamı sonlandırmak için özel bir an" #NT!
+ progress_towards_reveler_tt: "[GetTrait('lifestyle_reveler').GetName( GetNullCharacter )] [trait|E]'e doğru ilerliyorsunuz" #NT!
+ feast_type_murder_valid_tt: "Son 15 yılda bir Murder [GetActivityType('activity_feast').GetName]'a ev sahipliği yaptınız" #NT!
+ wedding_type_murder_valid_tt: "Son 15 yılda bir Kanlı [GetActivityType('activity_wedding').GetName]'a ev sahipliği yaptınız" #NT!
+ honorary_guest: "Onursal konuk" #NT!
+ honorary_guest_concept: "[honorary_guest|E]" #NT!
+ honorary_guest_for_host: "Cinayet Hedefi" #NT!
+ honorary_guest_regular: "$honorary_guest$" #NT!
+ honorary_guest_regular_for_host: "$honorary_guest$" #NT!
+ honorary_guest_desc: "Bir [GetActivityType('activity_feast').GetName], kutlamanın kimin şerefine yapıldığına dair bir $honorary_guest$'e sahip olabilir. Ziyafetin merkezi kısmı olan kadeh, bu belirgin konumu nedeniyle onlara [prestige|E] kazandıracaktır. Ancak dikkat edin — bu bir tuzak da olabilir... $feast_type_murder$ ev sahipleri, $honorary_guest$'lerini öldürme eğilimindedir." #NT!
+ honorary_guest_desc_for_host: "$honorary_guest_for_host$ olmadan $feast_type_murder$ olmazdı. Ev sahibi, dilerse kurbanını özenle seçip, tüm çevresi ile birlikte onun hayatına son verebilir. Ancak tetikte olmaları gerekiyor; birisi kurbanın varlığını gözden kaçırırsa bunun ek sonuçları olabilir." #NT!
+ honorary_guest_regular_desc: "$honorary_guest_desc$" #NT!
+ honorary_guest_regular_desc_for_host: "$honorary_guest_desc$" #NT!
+ activity_window_character_honorary_guest: "[SelectLocalization( ObjectsEqual(Activity.GetHost.Self, GetPlayer), '$honorary_guest_for_host$', '[honorary_guest|E]')]\n[Character.GetShortUINameNoTooltip|U]" #NT!
+ activity_window_character_honorary_guest_regular: "[honorary_guest|E]\n[Character.GetShortUINameNoTooltip|U]" #NT!
+ feast_cost_discount_longhouses: "Konum $building_type_longhouses_01$'dır" #NT!
+ feast_cost_discount_farm_estates: "Konum $building_type_farm_estates_01$'dır" #NT!
+ feast_cost_discount_orchards: "Konum $building_type_orchards_01$'dır" #NT!
+ feast_cost_discount_cereal_fields: "Konum $building_type_cereal_fields_01$'dır" #NT!
+ feast_cost_discount_hill_farms: "Konum $building_type_hill_farms_01$'dır" #NT!
+ feast_cost_discount_desert_agriculture: "Konum $building_type_plantations_01$'dır" #NT!
+ feast_cost_discount_leisure_palaces: "Konum $building_type_leisure_palace_01$'dır" #NT!
+ feast_cost_discount_doges_palace: "Konum $building_type_doges_palace_01$'dır" #NT!
+ feast_cost_discount_palace_of_aachen: "Konum $building_palace_of_aachen_01$'dır" #NT!
+ feast_cost_discount_alhambra: "Konum $building_alhambra_02$'dır" #NT!
+ feast_cost_discount_citadel_of_aleppo: "Konum $building_citadel_of_aleppo_02$'dır" #NT!
+ feast_cost_discount_theodosian_walls: "Konum $building_theodosian_walls_01$'dır" #NT!
+ feast_cost_discount_hall_of_heroes: "Konum $building_type_hall_of_heroes_01$'dır" #NT!
+ activity_feast_province_desc_theodosian_walls: "#P +++ $building_type_theodosian_walls_01$#!" #NT!
+ activity_feast_province_desc_hall_of_heroes: "#P +++ $building_type_hall_of_heroes_01$#!" #NT!
+ activity_feast_province_desc_citadel_of_aleppo: "#P +++ $building_type_citadel_of_aleppo_01$#!" #NT!
+ activity_feast_province_desc_palace_of_aachen: "#P +++ $building_type_palace_of_aachen_01$#!" #NT!
+ activity_feast_province_desc_doges_palace: "#P +++ $building_type_doges_palace_01$#!" #NT!
+ activity_feast_province_desc_leisure_palace: "#P +++ $building_type_leisure_palace_01$#!" #NT!
+ activity_feast_province_desc_alhambra: "#P +++ $building_type_alhambra_01$#!" #NT!
+ activity_feast_province_desc_farm_estates: "#P ++ $building_type_farm_estates_01$#!" #NT!
+ activity_feast_province_desc_longhouses: "#P + $building_type_longhouses_01$#!" #NT!
+ activity_feast_province_desc_orchards: "#P + $building_type_orchards_01$#!" #NT!
+ activity_feast_province_desc_cereal_fields: "#P + $building_type_cereal_fields_01$#!" #NT!
+ activity_feast_province_desc_plantations: "#P + $building_type_plantations_01$#!" #NT!
+ activity_feast_province_desc_no_holding: "#N --- Hayır [holding|P]#!" #NT!
+ courses_reward_food_court_amenity_tt: "Ödüller, saray olanaklarınız tarafından artırılır" #NT!
+ courses_good_reward_tt_title: "$final_reward_tt$" #NT!
+ courses_good_reward_tt: "Kurs sayısı misafirleri oldukça etkiledi" #NT!
+ courses_normal_reward_tt_title: "$final_reward_tt$" #NT!
+ courses_normal_reward_tt: "Kurs sayısı misafirleri memnun etti" #NT!
+ courses_bad_reward_tt_title: "$final_reward_tt$" #NT!
+ courses_bad_reward_tt: "Kurs sayısı misafirleri hayal kırıklığına uğrattı" #NT!
+ food_normal_reward_tt_title: "$final_reward_tt$" #NT!
+ food_normal_reward_tt: "Yemeğin karmaşıklığı misafirleri memnun etti" #NT!
+ food_good_reward_tt_title: "$final_reward_tt$" #NT!
+ food_good_reward_tt: "Yemeğin karmaşıklığı misafirleri oldukça etkiledi" #NT!
+ food_bad_reward_tt_title: "$final_reward_tt$" #NT!
+ food_bad_reward_tt: "Yemeğin karmaşıklığı misafirleri hayal kırıklığına uğrattı" #NT!
+ not_poor_health_tt: "[health|E] #V Zayıf #! veya daha düşük" #NT!
+ activity_feast_guest_help_text: "Davet edilen her [guests|E], diğer katılımcılarla etkileşime girme ve [opinion|E]'lerini artırma fırsatına sahip olacak.\n\nŞölenler ayrıca arkanıza yaslanıp biraz [stress|E] kaybetmek için mükemmel fırsatlardır." #NT!
+ murder_feast_failed_tt_title: "Başarısız Cinayet" #NT!
+ murder_feast_failed_tt: "Cinayet girişimi başarısızlıkla sonuçlandı" #NT!
+ murder_feast_solo_kill_tt_title: "Cinayet Şöleni" #NT!
+ murder_feast_solo_kill_tt: "[ROOT.Char.GetShortUIName] başarıyla öldürüldü [ROOT.Char.GetHerHis] hedef" #NT!
+ murder_feast_entourage_kill_tt_title: "$murder_feast_solo_kill_tt_title$" #NT!
+ murder_feast_entourage_kill_tt: "[ROOT.Char.GetShortUIName], [ROOT.Char.GetHerHis] hedefi ve maiyetini başarıyla öldürdü" #NT!
+ murder_feast_liege_kill_tt_title: "Yanlış hedef" #NT!
+ murder_feast_liege_kill_tt: "[ROOT.Char.GetShortUIName] başarıyla [ROOT.Char.GetHerHis] kişiyi öldürdü" #NT!
+ murder_feast_hof_kill_tt_title: "$murder_feast_liege_kill_tt_title$" #NT!
+ murder_feast_hof_kill_tt: "[ROOT.Char.GetShortUIName] başarıyla öldürüldü [ROOT.Char.GetHerHis] inanç başkanı" #NT!
+ activity_window_character_honorary_guest_traveling_murder: "[SelectLocalization( IsActivityHost( Activity, GetPlayer ), 'honorary_guest_for_host', 'honorary_guest_concept' )]\n[Character.GetShortUINameNoTooltip|U]\n[traveling|E], [Character.GetCurrentLocation.GetName]\n ~[Character.GetTravelPlan.GetData.GetNextDestination.GetEstimatedArrivalDate.GetStringLong|V]'te" #NT!
+ activity_window_character_honorary_guest_murder: "[SelectLocalization( IsActivityHost( Activity, GetPlayer ), 'honorary_guest_for_host', 'honorary_guest_concept' )]\n[Character.GetShortUINameNoTooltip|U]" #NT!
+ activity_feast_province_desc: "[ROOT.Province.GetName]\n'da bir Şölen düzenliyorsunuz. Uygun binalara sahip olan eyaletler [gold_i][gold|E] indirim veriyor\n" #NT!
 
-  ##### PILGRIMAGE #####  #NT #NT!
- activity_pilgrimage.is_location_valid.hajj_mecca: "Hac sadece Mekke'ye yapılabilir" #NT #NT!
- activity_pilgrimage.is_location_valid.recently_visited: "Yakın zamanda bu [holy_site|E] adresini ziyaret ettiniz" #NT #NT!
- activity_pilgrimage.serving_diarch: "Siz resmi [diarch|E]'sınız ve [realm|E]'in içinde kalmanız bekleniyor" #NT #NT!
- activity_pilgrimage.is_activity_available.all_holy_sites_on_cooldown: "Mevcut tüm [holy_sites|E]'larınız şu anda beklemede" #NT #NT!
- activity_pilgrimage.is_valid.islam.must_complete_hajj_first: "[GetFaithDoctrine('doctrine_pilgrimage_mandatory_hajj').GetBaseName] hac [doctrine|E]'e sahip bir Müslüman olarak, diğer hac türlerinden önce Hac'ı tamamlamanız gerekir" #NT #NT!
- activity_pilgrimage.is_location_valid.capital_is_holy_site: "Bu sizin başkentinizdir ve bu nedenle geçerli bir hac değildir [holy_site|E]" #NT #NT!
- activity_pilgrimage.is_location_valid.capital_is_mecca: "Başkentiniz Mekke olduğu için Hac ibadetini yapamazsınız." #NT #NT!
+  #Hunt  #NT!
+ activity_hunt: "Avlamak" #NT!
+ hunt_phase_desc: "Avınızı takip edin ve onu nasıl yakalayacağınıza karar verin" #NT!
+ activity_hunt_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Av" #NT!
+ activity_hunt_desc: "Kovalamaca bol miktarda heyecan ve tehlike sunar ve binicilik ve okçulukta sağlam bir temel sağlamaya yarar.\n\nAvlar, yaygın, nadir ve vahşi hayvanların [hunt_sightings_no_prefix|E]'ini duyuracak olan [GetCourtPositionType('master_of_hunt_court_position').GetName()] tarafından denetlenir." #NT!
+ activity_hunt_owner: "Avcı" #NT!
+  #Meditation  #NT!
+ activity_meditation: "Gizli Meditasyon" #NT!
+ activity_meditation_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Gizli Meditasyon" #NT!
+ activity_meditation_desc: "[ACTIVITY.GetOwner.GetTitledFirstName] huzur içinde tefekkür edebilsinler diye inzivaya çekildi." #NT!
+ activity_meditation_owner: "Meditasyon yapan" #NT!
+  #Hold Court  #NT!
+ activity_hold_court: "Saray Tutmak" #NT!
+ activity_hold_court_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Saray Seyircileri" #NT!
+ activity_hold_court_desc: "[ACTIVITY.GetOwner.GetTitledFirstName], tüm tebaasını, [ACTIVITY.GetOwner.GetHerHim]'den önce [ACTIVITY.GetOwner.GetHerHis] dikkat gerektiren tüm konuları getirmeye davet etti." #NT!
+ activity_petition_liege: "Dilekçe Liege" #NT!
+ activity_petition_liege_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Dilekçe" #NT!
+ activity_petition_liege_desc: "[ACTIVITY.GetOwner.GetTitledFirstName], [ACTIVITY.GetOwner.GetHerHis] hükümdarına, [ACTIVITY.GetOwner.GetLiege.GetTitledFirstName], belirli konularda yardım talebinde bulundu." #NT!
+  #Seer  #NT!
+ visit_seer: "Bir Kahini Ziyaret Edin" #NT!
+ visit_seer_desc: "Orta Çağ'da hayatta kalmak için bazı iyi ipuçları ve püf noktaları olabilir." #NT!
 
- activity_pilgrimage.is_valid.islam.mandatory_or_impatient: "Bunlardan en az biri:\n$EFFECT_LIST_BULLET$ Sizin [faith|E]'iniz [GetFaithDoctrine('doctrine_pilgrimage_mandatory_hajj').GetBaseName] hac yolculuğuna [doctrine|E]\n$EFFECT_LIST_BULLET$ Siz [GetTrait('impatient').GetName(GetNullCharacter)]'siniz" #NT #NT!
- activity_pilgrimage.is_valid.other.mandatory_or_impatient: "Bunlardan en az biri:\n$EFFECT_LIST_BULLET$ Sizin [faith|E]'iniz [GetFaithDoctrine('doctrine_pilgrimage_mandatory').GetBaseName] hac yolculuğuna [doctrine|E]\n$EFFECT_LIST_BULLET$ Siz [GetTrait('impatient').GetName(GetNullCharacter)]'siniz" #NT #NT!
-  # AGOT Modified  #NT #NT!
- #activity_pilgrimage.is_valid.pilgrim_or_patient: "Bunlardan en az biri:\n$EFFECT_LIST_BULLET$ Siz [GetTrait('patient').GetName(GetNullCharacter)]'siniz\n$EFFECT_LIST_BULLET$ Siz [GetTrait('pilgrim').GetName(GetNullCharacter)] [trait|E]'e sahipsiniz\n$EFFECT_LIST_BULLET$ Siz [GetTrait('hajjaj').GetName(GetNullCharacter)] [trait|E]'e sahipsiniz" #NT #NT!
- activity_pilgrimage.is_valid.pilgrim_or_patient: "Bunlardan en az biri:\n$EFFECT_LIST_BULLET$ Siz [GetTrait('patient').GetName(GetNullCharacter)]'siniz\n$EFFECT_LIST_BULLET$ Siz [GetTrait('pilgrim').GetName(GetNullCharacter)]'e sahipsiniz" #NT #NT!
+  #Adventure  #NT!
+ activity_adventure_name: "Macera" #NT!
+ activity_adventure_desc: "[ACTIVITY.GetOwner.GetTitledFirstName] bölgede macera yaşıyor." #NT!
+ activity_adventure_owner: "Maceracı" #NT!
 
- activity_pilgrimage.is_valid.hajjed_recently: "[EmptyScope.ScriptValue('hajj_cooldown_value')|0] yılda bir kez hacca gidebilirsiniz" #NT #NT!
+  #Gruesome Festival (Blót)  #NT!
+ activity_gruesome_festival: "[GetPlayer.Custom('GruesomeFestivalName')|U]" #NT!
+ activity_gruesome_festival_selection_tooltip: "Tebaanızı kutsal ve masraflı bir ritüele katılmaya davet ediyorsunuz" #NT!
+ activity_gruesome_festival_desc: "Tüm [GetPlayer.GetPrimaryTitle.GetNameNoTierNoTooltip]'ların bir araya gelip [GetPlayer.GetFaith.PantheonTerm]'e kurban kesmesinin zamanı geldi. Bu ritüeller sadece inananları birbirine bağlamakla kalmıyor, aynı zamanda tüm toprakların [GetPlayer.GetTitleAsNameNoTooltip]'si olarak yerimi de teyit ediyor." #NT!
+ activity_gruesome_festival_owner: "Ev sahibi" #NT!
+ activity_gruesome_festival_host_desc: "\nŞunları içeren bir [GetPlayer.Custom('GruesomeFestivalName')] düzenlersiniz:\n#indent_newline:0 $EFFECT_LIST_BULLET$ Festivalin ölçeğine karar vermek\n#indent_newline:0 $EFFECT_LIST_BULLET$ Ne feda edeceğinizi seçmek, hatta [prisoners|E]'inizden birini [designate_chief_sacrifice_chief_sacrifice|E] olarak seçmek\n#indent_newline:0 $EFFECT_LIST_BULLET$ Tebaanızın #indent_newline:03 #indent_newline:02 sayısına bağlı olarak [county_opinion|E] ve #indent_newline:00 #indent_newline:01 kazanmak veya kaybetmek" #NT!
+ activity_gruesome_festival_guest_help_text: "Davet edilen [guests|E] kurban törenine ve ardından gelen şölene katılacak. [faith|E]'lerinin [core_tenets|E]'sine bağlı olarak sizden [opinion|E] kazanacak veya kaybedecekler." #NT!
+ activity_gruesome_festival_province_desc: "$gruesome_festival_size_small_desc$" #NT!
+ activity_gruesome_festival_fallback_name: "Ritüel kurban" #NT!
+ activity_gruesome_festival_desc.non_gf_practioner: "Tebaam arasında [GetPlayer.GetTitleAsNameNoTooltip] tarafından kutsanmış büyük kurban törenleri uygulayanlar var. Sınırlı bir çeşidini bile yapmayı kabul etmek şüphesiz onların onayını kazanmamı sağlar, ancak daha... barbarca geleneklerini benimsemek, onların yollarını küçümseyenlerin bana hakaret etmesine neden olabilir." #NT!
 
- ACTIVITY_TYPE_ON_COOLDOWN: "@warning_icon! #X Bu etkinlik [DATE.GetTimeToDate()]#! için barındırılamaz" #NT #NT!
 
- is_healthy_tt: "Sağlıklı" #NT #NT!
+ ACTIVITY_WAITING: "Başlamasını beklemek" #NT!
+ ACTIVITY_ATTENDING: "Katılmak" #NT!
+ ACTIVITY_DECLINED: "Reddedildi" #NT!
+ ACTIVITY_ATTENDING_NEWLINE: "\n$ACTIVITY_ATTENDING$\n" #NT!
+ GOTO_ACTIVITY: "#I Haritada ortalamak için tıklayın#!" #NT!
+ GOTO_PLAYER_ACTIVITY: "#T [GetPlayer.GetCurrentActivity.GetType.GetName] in [GetPlayer.GetCurrentActivity.GetLocation.GetName]#! \n#I Seçmek için tıklayın#!" #NT!
+  #Pay Homage  #NT!
+ activity_pay_homage: "Saygı duruşu" #NT!
+ activity_pay_homage_name: "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Saygı duruşu" #NT!
+ activity_pay_homage_desc: "[ACTIVITY.GetOwner.GetTitledFirstName], [ACTIVITY.GetOwner.GetHerHis] hükümdarına, [ACTIVITY.GetOwner.GetLiege.GetTitledFirstName]'ye resmi saygılarını sunmak istiyor." #NT!
 
- hunt_rampage_bodyguard_log_title: "#D TODO_CD: hunt_rampage_bodyguard_log_title#!" #NT #NT!
- level_5_reward_tt_title: "Turun Sonu" #NT #NT!
- level_4_reward_tt_title: "$level_5_reward_tt_title$" #NT #NT!
- level_3_reward_tt_title: "$level_5_reward_tt_title$" #NT #NT!
- level_2_reward_tt_title: "$level_5_reward_tt_title$" #NT #NT!
- level_1_reward_tt_title: "$level_5_reward_tt_title$" #NT #NT!
- failed_to_get_reward_tt_title: "Herhangi bir ödül alınamadı" #NT #NT!
+ activity_invite_rule_friends: "Arkadaşlar" #NT!
+ activity_invite_rule_rivals: "Rakipler" #NT!
+ activity_invite_rule_rivals_if_appropriate: "$activity_invite_rule_rivals$" #NT!
+ activity_invite_rule_lovers: "Aşıklar" #NT!
+ activity_invite_rule_close_family: "Yakın aile" #NT!
+ activity_invite_rule_close_family_no_default: "$activity_invite_rule_close_family$" #NT!
+ activity_invite_rule_extended_family: "Geniş Aile" #NT!
+ activity_invite_rule_liege: "Süzeren" #NT!
+ activity_invite_rule_liege_no_default: "$activity_invite_rule_liege$" #NT!
+ activity_invite_rule_vassals: "Vasallar" #NT!
+ activity_invite_rule_vassals_no_default: "$activity_invite_rule_vassals$" #NT!
+ activity_invite_rule_fellow_vassals: "Yoldaş Vasallar" #NT!
+ activity_invite_neighbouring_rulers: "Komşu Hükümdarlar" #NT!
+ activity_invite_rule_knights: "Şövalyeler" #NT!
+ activity_invite_rule_knights_no_default: "$activity_invite_rule_knights$" #NT!
+ activity_invite_rule_courtiers: "Saraylılar" #NT!
+ activity_invite_rule_courtiers_no_default: "$activity_invite_rule_courtiers$" #NT!
+ activity_invite_rule_guests: "Saray Konukları" #NT!
+ activity_invite_rule_guests_no_default: "$activity_invite_rule_guests$" #NT!
+ activity_invite_spouses: "Eşler" #NT!
+ activity_invite_spouses_no_default: "$activity_invite_spouses$" #NT!
+ activity_invite_rule_house_witches: "Ev" #NT!
+ activity_invite_rule_other_witches: "Diğer" #NT!
+ activity_invite_rule_landless_courtiers: "İnişsiz $activity_invite_rule_courtiers$" #NT!
+ activity_invite_rule_landless_friends: "İnişsiz $activity_invite_rule_friends$" #NT!
+ activity_invite_rule_landless_rivals: "İnişsiz $activity_invite_rule_rivals$" #NT!
+ activity_invite_rule_landless_lovers: "Karaya oturmamış $activity_invite_rule_lovers$" #NT!
+ activity_invite_rule_landless_close_family: "İnişsiz $activity_invite_rule_close_family$" #NT!
+ activity_invite_rule_player_heir: "Varis" #NT!
+ activity_invite_rule_hof: "İnancın Başı" #NT!
+ activity_invite_rule_all_lieges: "Tüm Lieges" #NT!
+ activity_invite_spouses_close_family: "Eşlerin Yakın Ailesi" #NT!
+ activity_invite_spouses_extended_family: "Eşlerin Geniş Ailesi" #NT!
+ activity_invite_mp: "Diğer oyuncular" #NT!
 
- tournament_activity_cost_discount_war_camps_desc: "Konum $building_type_war_camps_01$'dır" #NT #NT!
- tournament_activity_cost_discount_barracks_desc: "Konum $building_type_barracks_01$'dır" #NT #NT!
- tournament_activity_cost_max_discount_desc: "Konum $building_type_hall_of_heroes_01$'dır" #NT #NT!
- tournament_melee_contest_cost_discount_desc: "Konum $building_type_royal_armory_01$'dır" #NT #NT!
- tournament_melee_contest_cost_low_discount_desc: "$tournament_joust_contest_cost_low_discount_desc$" #NT #NT!
- tournament_duel_contest_cost_discount_desc: "Konum $building_type_blacksmiths_01$'dır" #NT #NT!
- tournament_duel_contest_cost_low_discount_desc: "Konum $building_type_smiths_01$'dır" #NT #NT!
- tournament_wrestling_contest_cost_discount_desc: "Konum $building_type_regimental_grounds_01$'dır" #NT #NT!
- tournament_wrestling_contest_cost_low_discount_desc: "Konum $building_type_regimental_grounds_01$" #NT #NT!
- tournament_archery_contest_cost_discount_desc: "Konum $building_type_archery_ranges_01$'dır" #NT #NT!
- tournament_archery_contest_cost_low_discount_desc: "Konum $building_type_military_camps_01$'dır" #NT #NT!
- tournament_joust_contest_cost_discount_desc: "Konum $building_type_jousting_lists_01$'dır" #NT #NT!
- tournament_joust_contest_cost_low_discount_desc: "Konum $building_type_stables_01$'dır" #NT #NT!
- tournament_horse_racing_contest_cost_discount_desc: "$tournament_joust_contest_cost_discount_desc$" #NT #NT!
- tournament_horse_racing_contest_cost_low_discount_desc: "$tournament_joust_contest_cost_low_discount_desc$" #NT #NT!
- tournament_board_games_contest_cost_discount_desc: "Konum $building_type_generic_university$'dır" #NT #NT!
- tournament_board_games_contest_cost_low_discount_desc: "Konum $building_type_warrior_lodges_01$'dır" #NT #NT!
- tournament_recital_contest_cost_discount_desc: "$tournament_board_games_contest_cost_discount_desc$" #NT #NT!
- tournament_recital_contest_cost_low_discount_desc: "$tournament_board_games_contest_cost_low_discount_desc$" #NT #NT!
-  # EP2 Era Tooltips  #NT #NT!
- increased_activity_cost: "[activities|E]'ın maliyeti: [gold_i]#negative_value +25%#!" #NT #NT!
- activity_cost_scale_by_era_desc: "[GetPlayer.GetCulture.GetCultureEra.GetNameNoTooltip] Dönemi" #NT #NT!
- activity_cost_scale_by_tier_desc: "[GetPlayer.GetPrimaryTitle.GetTierAsNameNoTooltip] Seviye" #NT #NT!
+  ##### PILGRIMAGE #####  #NT!
+ activity_pilgrimage.is_location_valid.hajj_mecca: "Hac sadece Mekke'ye yapılabilir" #NT!
+ activity_pilgrimage.is_location_valid.recently_visited: "Yakın zamanda bu [holy_site|E] adresini ziyaret ettiniz" #NT!
+ activity_pilgrimage.serving_diarch: "Siz resmi [diarch|E]'sınız ve [realm|E]'in içinde kalmanız bekleniyor" #NT!
+ activity_pilgrimage.is_activity_available.all_holy_sites_on_cooldown: "Mevcut tüm [holy_sites|E]'larınız şu anda beklemede" #NT!
+ activity_pilgrimage.is_valid.islam.must_complete_hajj_first: "[GetFaithDoctrine('doctrine_pilgrimage_mandatory_hajj').GetBaseName] hac [doctrine|E]'e sahip bir Müslüman olarak, diğer hac türlerinden önce Hac'ı tamamlamanız gerekir" #NT!
+ activity_pilgrimage.is_location_valid.capital_is_holy_site: "Bu sizin başkentinizdir ve bu nedenle geçerli bir hac değildir [holy_site|E]" #NT!
+ activity_pilgrimage.is_location_valid.capital_is_mecca: "Başkentiniz Mekke olduğu için Hac ibadetini yapamazsınız." #NT!
 
-  # Predicted Cost descs shown in UI for each activity  #NT #NT!
- activity_tournament_predicted_cost: "[GetActivityType( 'activity_tournament' ).GetNameNoTooltip]'ın maliyeti öncelikle kaç tane [contests|E] barındırmaya karar verdiğinize ve hangi [activity_options|E]'yi seçtiğinize bağlıdır." #NT #NT!
- activity_tour_predicted_cost: "[GetActivityType( 'activity_tour' ).GetNameNoTooltip]'ın maliyeti öncelikle kaç tane [tour_stops|E] yapmaya karar verdiğinize ve hangi [activity_options|E]'yi seçtiğinize bağlıdır." #NT #NT!
- activity_wedding_predicted_cost: "[GetActivityType( 'activity_wedding' ).GetNameNoTooltip]'ın maliyeti öncelikle seçtiğiniz [activity_options|E]'den etkilenir." #NT #NT!
- activity_hunt_predicted_cost: "[GetActivityType( 'activity_hunt' ).GetNameNoTooltip]'ın maliyeti öncelikle seçtiğiniz [activity_type|E] [activity_options|E]'den etkilenir. Örneğin, Şahin Avları daha pahalıdır." #NT #NT!
- activity_feast_predicted_cost: "[GetActivityType( 'activity_feast' ).GetNameNoTooltip]'ın maliyeti öncelikle seçtiğiniz [activity_type|E] [activity_options|E]'den etkilenir. Örneğin, Cinayet Şölenleri normal Şölenlerden çok daha pahalıdır." #NT #NT!
- activity_pilgrimage_predicted_cost: "[GetActivityType( 'activity_pilgrimage' ).GetNameNoTooltip]'ın maliyeti öncelikle seçtiğiniz [holy_site|E] ve [activity_options|E]'ye olan mesafeden etkilenir." #NT #NT!
- activity_gruesome_festival_predicted_cost: "[GetActivityType( 'activity_gruesome_festival' ).GetNameNoTooltip]'ın maliyeti öncelikle seçtiğiniz [activity_options|E]'den etkilenir." #NT #NT!
- activity_witch_ritual_predicted_cost: "[GetActivityType( 'activity_witch_ritual' ).GetNameNoTooltip]'ın maliyeti öncelikle [income|E]'inize dayanmaktadır" #NT #NT!
- activity_playdate_predicted_cost: "[GetActivityType( 'activity_playdate' ).GetNameNoTooltip]'ın maliyeti öncelikle [income|E] ve [title_tier|E]'nizden etkilenir." #NT #NT!
+ activity_pilgrimage.is_valid.islam.mandatory_or_impatient: "Bunlardan en az biri:\n$EFFECT_LIST_BULLET$ Sizin [faith|E]'iniz [GetFaithDoctrine('doctrine_pilgrimage_mandatory_hajj').GetBaseName] hac yolculuğuna [doctrine|E]\n$EFFECT_LIST_BULLET$ Siz [GetTrait('impatient').GetName(GetNullCharacter)]'siniz" #NT!
+ activity_pilgrimage.is_valid.other.mandatory_or_impatient: "Bunlardan en az biri:\n$EFFECT_LIST_BULLET$ Sizin [faith|E]'iniz [GetFaithDoctrine('doctrine_pilgrimage_mandatory').GetBaseName] hac yolculuğuna [doctrine|E]\n$EFFECT_LIST_BULLET$ Siz [GetTrait('impatient').GetName(GetNullCharacter)]'siniz" #NT!
+  # AGOT Modified  #NT!
+ #activity_pilgrimage.is_valid.pilgrim_or_patient: "Bunlardan en az biri:\n$EFFECT_LIST_BULLET$ Siz [GetTrait('patient').GetName(GetNullCharacter)]'siniz\n$EFFECT_LIST_BULLET$ Siz [GetTrait('pilgrim').GetName(GetNullCharacter)] [trait|E]'e sahipsiniz\n$EFFECT_LIST_BULLET$ Siz [GetTrait('hajjaj').GetName(GetNullCharacter)] [trait|E]'e sahipsiniz" #NT!
+ activity_pilgrimage.is_valid.pilgrim_or_patient: "Bunlardan en az biri:\n$EFFECT_LIST_BULLET$ Siz [GetTrait('patient').GetName(GetNullCharacter)]'siniz\n$EFFECT_LIST_BULLET$ Siz [GetTrait('pilgrim').GetName(GetNullCharacter)]'e sahipsiniz" #NT!
 
- liege_accolades_glory_reward_title: "[glory|E] Kazanıldı" #NT #NT!
- liege_accolades_glory_reward: "Katılımcılar aralarındaki savaşçı erdemlerden, özellikle de [root_scope.GetShortUINamePossessive] [root_scope.Custom('KnightCulturePluralNoTooltip')|l]'den saygıyla söz ettiler." #NT #NT!
+ activity_pilgrimage.is_valid.hajjed_recently: "[EmptyScope.ScriptValue('hajj_cooldown_value')|0] yılda bir kez hacca gidebilirsiniz" #NT!
 
- knight_accolade_glory_reward_title: "[glory|E] Kazanıldı" #NT #NT!
- knight_accolade_glory_reward: "[root_scope.GetShortUIName], dikkate değer bir [root_scope.Custom('KnightCultureNoTooltip')|l], hayrete düşmüş ve etkilenmiş" #NT #NT!
+ ACTIVITY_TYPE_ON_COOLDOWN: "@warning_icon! #X Bu etkinlik [DATE.GetTimeToDate()]#! için barındırılamaz" #NT!
 
- liege_accolades_glory_reward_tour_title: "[glory|E] Kazanıldı" #NT #NT!
- liege_accolades_glory_reward_tour: "[root_scope.GetShortUINamePossessive] [root_scope.Custom('KnightCulturePluralNoTooltip')|l] ülkede at sırtında gezdiler, ihtişamları ve hakimiyetleri çok belirgindi" #NT #NT!
+ is_healthy_tt: "Sağlıklı" #NT!
+
+ hunt_rampage_bodyguard_log_title: "#D TODO_CD: hunt_rampage_bodyguard_log_title#!" #NT!
+ level_5_reward_tt_title: "Turun Sonu" #NT!
+ level_4_reward_tt_title: "$level_5_reward_tt_title$" #NT!
+ level_3_reward_tt_title: "$level_5_reward_tt_title$" #NT!
+ level_2_reward_tt_title: "$level_5_reward_tt_title$" #NT!
+ level_1_reward_tt_title: "$level_5_reward_tt_title$" #NT!
+ failed_to_get_reward_tt_title: "Herhangi bir ödül alınamadı" #NT!
+
+ tournament_activity_cost_discount_war_camps_desc: "Konum $building_type_war_camps_01$'dır" #NT!
+ tournament_activity_cost_discount_barracks_desc: "Konum $building_type_barracks_01$'dır" #NT!
+ tournament_activity_cost_max_discount_desc: "Konum $building_type_hall_of_heroes_01$'dır" #NT!
+ tournament_melee_contest_cost_discount_desc: "Konum $building_type_royal_armory_01$'dır" #NT!
+ tournament_melee_contest_cost_low_discount_desc: "$tournament_joust_contest_cost_low_discount_desc$" #NT!
+ tournament_duel_contest_cost_discount_desc: "Konum $building_type_blacksmiths_01$'dır" #NT!
+ tournament_duel_contest_cost_low_discount_desc: "Konum $building_type_smiths_01$'dır" #NT!
+ tournament_wrestling_contest_cost_discount_desc: "Konum $building_type_regimental_grounds_01$'dır" #NT!
+ tournament_wrestling_contest_cost_low_discount_desc: "Konum $building_type_regimental_grounds_01$" #NT!
+ tournament_archery_contest_cost_discount_desc: "Konum $building_type_archery_ranges_01$'dır" #NT!
+ tournament_archery_contest_cost_low_discount_desc: "Konum $building_type_military_camps_01$'dır" #NT!
+ tournament_joust_contest_cost_discount_desc: "Konum $building_type_jousting_lists_01$'dır" #NT!
+ tournament_joust_contest_cost_low_discount_desc: "Konum $building_type_stables_01$'dır" #NT!
+ tournament_horse_racing_contest_cost_discount_desc: "$tournament_joust_contest_cost_discount_desc$" #NT!
+ tournament_horse_racing_contest_cost_low_discount_desc: "$tournament_joust_contest_cost_low_discount_desc$" #NT!
+ tournament_board_games_contest_cost_discount_desc: "Konum $building_type_generic_university$'dır" #NT!
+ tournament_board_games_contest_cost_low_discount_desc: "Konum $building_type_warrior_lodges_01$'dır" #NT!
+ tournament_recital_contest_cost_discount_desc: "$tournament_board_games_contest_cost_discount_desc$" #NT!
+ tournament_recital_contest_cost_low_discount_desc: "$tournament_board_games_contest_cost_low_discount_desc$" #NT!
+  # EP2 Era Tooltips  #NT!
+ increased_activity_cost: "[activities|E]'ın maliyeti: [gold_i]#negative_value +25%#!" #NT!
+ activity_cost_scale_by_era_desc: "[GetPlayer.GetCulture.GetCultureEra.GetNameNoTooltip] Dönemi" #NT!
+ activity_cost_scale_by_tier_desc: "[GetPlayer.GetPrimaryTitle.GetTierAsNameNoTooltip] Seviye" #NT!
+
+  # Predicted Cost descs shown in UI for each activity  #NT!
+ activity_tournament_predicted_cost: "[GetActivityType( 'activity_tournament' ).GetNameNoTooltip]'ın maliyeti öncelikle kaç tane [contests|E] barındırmaya karar verdiğinize ve hangi [activity_options|E]'yi seçtiğinize bağlıdır." #NT!
+ activity_tour_predicted_cost: "[GetActivityType( 'activity_tour' ).GetNameNoTooltip]'ın maliyeti öncelikle kaç tane [tour_stops|E] yapmaya karar verdiğinize ve hangi [activity_options|E]'yi seçtiğinize bağlıdır." #NT!
+ activity_wedding_predicted_cost: "[GetActivityType( 'activity_wedding' ).GetNameNoTooltip]'ın maliyeti öncelikle seçtiğiniz [activity_options|E]'den etkilenir." #NT!
+ activity_hunt_predicted_cost: "[GetActivityType( 'activity_hunt' ).GetNameNoTooltip]'ın maliyeti öncelikle seçtiğiniz [activity_type|E] [activity_options|E]'den etkilenir. Örneğin, Şahin Avları daha pahalıdır." #NT!
+ activity_feast_predicted_cost: "[GetActivityType( 'activity_feast' ).GetNameNoTooltip]'ın maliyeti öncelikle seçtiğiniz [activity_type|E] [activity_options|E]'den etkilenir. Örneğin, Cinayet Şölenleri normal Şölenlerden çok daha pahalıdır." #NT!
+ activity_pilgrimage_predicted_cost: "[GetActivityType( 'activity_pilgrimage' ).GetNameNoTooltip]'ın maliyeti öncelikle seçtiğiniz [holy_site|E] ve [activity_options|E]'ye olan mesafeden etkilenir." #NT!
+ activity_gruesome_festival_predicted_cost: "[GetActivityType( 'activity_gruesome_festival' ).GetNameNoTooltip]'ın maliyeti öncelikle seçtiğiniz [activity_options|E]'den etkilenir." #NT!
+ activity_witch_ritual_predicted_cost: "[GetActivityType( 'activity_witch_ritual' ).GetNameNoTooltip]'ın maliyeti öncelikle [income|E]'inize dayanmaktadır" #NT!
+ activity_playdate_predicted_cost: "[GetActivityType( 'activity_playdate' ).GetNameNoTooltip]'ın maliyeti öncelikle [income|E] ve [title_tier|E]'nizden etkilenir." #NT!
+
+ liege_accolades_glory_reward_title: "[glory|E] Kazanıldı" #NT!
+ liege_accolades_glory_reward: "Katılımcılar aralarındaki savaşçı erdemlerden, özellikle de [root_scope.GetShortUINamePossessive] [root_scope.Custom('KnightCulturePluralNoTooltip')|l]'den saygıyla söz ettiler." #NT!
+
+ knight_accolade_glory_reward_title: "[glory|E] Kazanıldı" #NT!
+ knight_accolade_glory_reward: "[root_scope.GetShortUIName], dikkate değer bir [root_scope.Custom('KnightCultureNoTooltip')|l], hayrete düşmüş ve etkilenmiş" #NT!
+
+ liege_accolades_glory_reward_tour_title: "[glory|E] Kazanıldı" #NT!
+ liege_accolades_glory_reward_tour: "[root_scope.GetShortUINamePossessive] [root_scope.Custom('KnightCulturePluralNoTooltip')|l] ülkede at sırtında gezdiler, ihtişamları ve hakimiyetleri çok belirgindi" #NT!
