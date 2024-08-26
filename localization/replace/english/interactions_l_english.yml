@@ -129,7 +129,7 @@
  expose_schemes_against_me: "#D Bana karşı olan planları açığa çıkar#!" #NT!
  designate_rival: "Rakibi belirle" #NT!
  declare_war_interaction: "Savaş İlan Et" #NT!
- declare_war_desc: "[recipient.GetShortUINameNoTooltip] üzerinde [war|E]'i bildirmek için [casus_belli|E] kullanın" #NT!
+declare_war_desc: "[recipient.GetShortUINameNoTooltip]'e karşı [casus_belli|E]'yi kullanarak [war|E] ilan edin" #NT!
  declare_war_interaction_notification: "Savaş İlan Edildi" #NT!
  declare_war_interaction_notification_tooltip: "[recipient.GetShortUINameNoTooltip]'a savaş ilan edildi" #NT!
  declare_war_interaction_extra_icon: "$hook_extra_icon$" #NT!
@@ -1068,8 +1068,8 @@
  recruit_guest_interaction_desc: "[recipient.GetShortUINameNoTooltip]'ı [courtier|E] olarak işe almak için ödeme yapın" #NT!
  recruit_guest_interaction_extra_icon: "$hook_extra_icon$" #NT!
   #Kick from court #NT!
- kick_from_court_interaction: "Azletmek" #NT!
- kick_from_court_interaction_desc: "[recipient.GetShortUINameNoTooltip]'ı [wanderer|E]'e çevirin ve [recipient.GetHerHim]'yi [court|E]'ünüzden uzağa gönderin" #NT!
+ kick_from_court_interaction: "Azlet" #NT!
+ kick_from_court_interaction_desc: "[recipient.GetShortUINameNoTooltip]'ı bir [wanderer|E]'ye çevirin ve onu [court|E]'ınızdan uzaklaştırın" #NT!
  kick_from_court_interaction_desc_guest: "[recipient.GetShortUINameNoTooltip]'ı [court|E]'inizden uzaklaştırın" #NT!
  kick_from_court_councillor_warning_tt: "@warning_icon! #X [kicked.GetShortUIName] benim [kicked.GetCouncilTitle]#!" #NT!
  kick_from_court_claimant_warning_tt: "@warning_icon! #X [kicked.GetShortUIName], [kicked_claim.GetName]#! üzerinde hak iddia ediyor" #NT!
@@ -1088,21 +1088,21 @@
  AI_YOUR_CHILD: "[recipient.GetSheHe|U] Çocuğunuz: $VALUE|=+0$" #NT!
  AI_YOUR_RELATIVE: "[recipient.GetSheHe|U] sizin akrabanızdır: $VALUE|=+0$" #NT!
  AI_YOUR_SPOUSE: "[recipient.GetSheHe|U] Eşinizdir: $VALUE|=+0$" #NT!
- AI_THEIR_LOVER: "[recipient.GetShortUIName] [recipient.GetHerHis] Liege'e yakın: $VALUE|=+0$" #NT!
- AI_THEIR_FRIEND: "[recipient.GetShortUIName] [recipient.GetHerHis] Liege'in Arkadaşıdır: $VALUE|=+0$" #NT!
- AI_THEIR_RIVAL: "[recipient.GetShortUIName] [recipient.GetHerHis] Liege'in Rakibi: $VALUE|=+0$" #NT!
- AI_THEIR_CHILD: "[recipient.GetShortUIName] [recipient.GetHerHis] Liege'in Çocuğu: $VALUE|=+0$" #NT!
- AI_THEIR_RELATIVE: "[recipient.GetShortUIName], [recipient.GetHerHis] Liege'in Akrabası: $VALUE|=+0$" #NT!
- AI_MY_LIEGES_KNIGHT: "[recipient.GetShortUIName] [recipient.GetHerHis] Liege'in [recipient.GetLiege.Custom('KnightCulture')]: $VALUE|=+0$" #NT!
- AI_MY_LIEGES_COMMANDER: "[recipient.GetShortUIName] [recipient.GetHerHis] Liege'in Komutanı: $VALUE|=+0$" #NT!
+ AI_THEIR_LOVER: "[recipient.GetShortUIName] [recipient.GetHerHis] Süzeren'e yakın: $VALUE|=+0$" #NT!
+ AI_THEIR_FRIEND: "[recipient.GetShortUIName] [recipient.GetHerHis] Süzeren'in Arkadaşıdır: $VALUE|=+0$" #NT!
+ AI_THEIR_RIVAL: "[recipient.GetShortUIName] [recipient.GetHerHis] Süzeren'in Rakibi: $VALUE|=+0$" #NT!
+ AI_THEIR_CHILD: "[recipient.GetShortUIName] [recipient.GetHerHis] Süzeren'in Çocuğu: $VALUE|=+0$" #NT!
+ AI_THEIR_RELATIVE: "[recipient.GetShortUIName], [recipient.GetHerHis] Süzeren'in Akrabası: $VALUE|=+0$" #NT!
+ AI_MY_LIEGES_KNIGHT: "[recipient.GetShortUIName] [recipient.GetHerHis] Süzeren'in [recipient.GetLiege.Custom('KnightCulture')]: $VALUE|=+0$" #NT!
+ AI_MY_LIEGES_COMMANDER: "[recipient.GetShortUIName] [recipient.GetHerHis] Süzeren'in Komutanı: $VALUE|=+0$" #NT!
  AI_ON_THE_COUNCIL: "[recipient.GetShortUIName] Konseyde: $VALUE|=+0$" #NT!
- AI_COURT_PHYSICIAN: "[recipient.GetShortUIName] [recipient.GetHerHis] Liege'in Saray Hekimi: $VALUE|=+0$" #NT!
+ AI_COURT_PHYSICIAN: "[recipient.GetShortUIName] [recipient.GetHerHis] Süzeren'in Saray Hekimi: $VALUE|=+0$" #NT!
  AI_LEAVING_MY_SPOUSE: "[recipient.GetShortUIName] ayrılacaktı [recipient.GetHerHis] Eş: $VALUE|=+0$" #NT!
  AI_LEAVING_MY_CHILD: "[recipient.GetShortUIName] [recipient.GetHerHis] Çocuktan ayrılacak: $VALUE|=+0$" #NT!
  AI_MARRIED_MATRILINIALLY: "[recipient.GetShortUIName], [matrilineal|E] ile evli: $VALUE|=+0$" #NT!
  AI_MARRIED_PATRILINIALLY: "[recipient.GetShortUIName], [patrilineal|E] ile evli: $VALUE|=+0$" #NT!
  AI_CONVERT_CULTURE: "Kültürü dönüştürmek: $VALUE|=+0$" #NT!
- AI_CONVERT_TO_LIEGE_CULTURE: "Liege'in kültürüne dönüş: $VALUE|=+0$" #NT!
+ AI_CONVERT_TO_LIEGE_CULTURE: "Süzeren'in kültürüne dönüş: $VALUE|=+0$" #NT!
  AI_CONVERT_FAITH: "İnancı dönüştürmek: $VALUE|=+0$" #NT!
  AI_CONVERT_TO_LIEGE_FAITH: "Hükümdarın inancına dönüş: $VALUE|=+0$" #NT!
  AI_YOU_ARE_THE_FATHER: "[secondary_actor.GetShortUIName] gerçek babadır: $VALUE|=+0$" #NT!
@@ -1517,7 +1517,7 @@
  adoption.0001.opening: "[recipient.Custom2('AppropriateGreetingPositive', actor)]" #NT!
  adoption.0001.desc: "Evlat edinme teklifinizi kabul ediyorum. Kendimi [actor.GetHouse.GetBaseName] Evi'nin bir üyesi ve sizin akrabanız olarak adlandırmaktan gurur duyuyorum!" #NT!
  adoption.0001.a: "Lütfen bana "[actor.Custom('GetMumDad')]" deyin." #NT!
- ward_invalidated_during_travel_title: "Koğuş geçersiz kılındı" #NT!
+ ward_invalidated_during_travel_title: "Vasilik geçersiz kılındı" #NT!
  guardian_invalidated_during_travel_title: "Koruyucu geçersiz kılındı" #NT!
  ward_departs_title: "Ward yola çıkıyor" #NT!
  ward_departs_tt: "[ward.GetFirstNameNoTooltip], [guardian.GetCurrentLocation.GetNameNoTooltip]'e doğru yola çıkıyor" #NT!

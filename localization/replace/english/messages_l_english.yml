@@ -108,7 +108,7 @@
  msg_troops_disbanding_civil_war_desc: "$AMOUNT$ [LEFT_CHARACTER.GetShortUINameNoTooltip]'den gelen vergiler iç savaş nedeniyle dağıtılıyor" #NT!
  msg_war_declared_on_liege: "Süzerene Savaş İlan Edildi!" #NT!
  msg_war_declared_on_liege_desc: "[LEFT_CHARACTER.GetShortUIName|U], [RIGHT_CHARACTER.GetShortUIName] tarafından saldırıya uğruyor" #NT!
- msg_war_declared_by_liege: "Liege Savaşa Gidiyor!" #NT!
+ msg_war_declared_by_liege: "Süzeren Savaşa Gidiyor!" #NT!
  msg_war_declared_by_liege_desc: "[LEFT_CHARACTER.GetShortUIName|U], [RIGHT_CHARACTER.GetShortUIName]'e savaş ilan etti" #NT!
  msg_war_declared_on_me: "#D KULLANILMAYAN MESAJ#!" #NT!
  msg_war_declared_on_me_desc: "#D KULLANILMAYAN MESAJ#!" #NT!
@@ -283,7 +283,7 @@
  msg_hook_on_me_expired_desc: "[LEFT_CHARACTER.GetShortUINamePossessive] $HOOK_NAME$ [hook|E] sizin için süresi doldu" #NT!
  msg_my_hook_expired: "Koznın Süresi Doldu" #NT!
  msg_my_hook_expired_desc: "[LEFT_CHARACTER.GetShortUIName] üzerindeki [hook|E]'ınız sona erdi" #NT!
- death_notification_title: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )|U] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#!'ünüz Öldü" #NT!
+ death_notification_title: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self )|U] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! öldü" #NT!
  lover_death_notification_title: "Sevgilin #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Öldü" #NT!
  friend_death_notification_title: "Arkadaşın #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Öldü" #NT!
   #AGOT Modified #NT!
@@ -421,16 +421,16 @@
  msg_start_diarchy_title: "[LEFT_CHARACTER.GetDiarchy.GetDiarch.Custom('GetDiarchyArticle')] [LEFT_CHARACTER.GetDiarchyTypeName]'e girdim" #NT!
  msg_start_diarchy_effect: "[sharing_power|E]'ı [RIGHT_CHARACTER.GetName] ile başlattım" #NT!
  msg_inherit_diarchy_title: "Miras aldım [LEFT_CHARACTER.GetDiarchy.GetDiarch.Custom('GetDiarchyArticle')] [LEFT_CHARACTER.GetDiarchyTypeName]" #NT!
- on_entered_diarchy.notification.vassal.t: "Liege Girdi [ROOT.Char.GetDiarchyTypeName]" #NT!
- on_entered_diarchy.notification.vassal.t.higher_liege: "Higher Liege Girdi [ROOT.Char.GetDiarchyTypeName]" #NT!
- on_entered_diarchy.notification.vassal.desc: "[ROOT.Char.GetShortUIName] artık [ROOT.Char.GetDiarchy.GetDiarch.GetShortUIName] ile [sharing_power|E] oldu" #NT!
+ on_entered_diarchy.notification.vassal.t: "[ROOT.Char.GetDiarchyTypeName]'e Girdi" #NT!
+ on_entered_diarchy.notification.vassal.t.higher_liege: "Üst Süzeren [ROOT.Char.GetDiarchyTypeName]'e Girdi" #NT!
+ on_entered_diarchy.notification.vassal.desc: "[ROOT.Char.GetShortUIName] artık [ROOT.Char.GetDiarchy.GetDiarch.GetShortUIName] ile [sharing_power|E] durumunda" #NT!
  on_entered_diarchy.notification.vassal.desc.outro.child: "[child|E] olması nedeniyle" #NT!
  on_entered_diarchy.notification.vassal.desc.outro.incapable: "[GetTrait('incapable').GetName(GetNullCharacter)] olması nedeniyle" #NT!
  on_entered_diarchy.notification.vassal.desc.outro.imprisonment: "yurtdışında [imprisoned|E] olmak nedeniyle" #NT!
  on_entered_diarchy.notification.vassal.desc.outro.travel: "[traveling|E] nedeniyle yurtdışında" #NT!
  msg_end_diarchy_title: "[LEFT_CHARACTER.GetDiarchyTypeName] Bitti" #NT!
  msg_end_diarchy_effect: "Artık [RIGHT_CHARACTER.GetName] ile [sharing_power|E] değilim" #NT!
- on_left_diarchy.notification.vassal.t: "Liege [ROOT.Char.GetDiarchyTypeName] Sona erdi" #NT!
+ on_left_diarchy.notification.vassal.t: "Süzeren [ROOT.Char.GetDiarchyTypeName] Sona erdi" #NT!
  on_left_diarchy.notification.vassal.desc: "[ROOT.Char.GetShortUIName] artık [old_diarch.GetShortUIName] ile [sharing_power|E] değil" #NT!
  msg_change_diarchy_type_title: "[power_sharing|E] Tipim Değişti" #NT!
  msg_change_diarchy_type_effect: "$OLD_TYPE$'ım $NEW_TYPE$'e dönüştü" #NT!

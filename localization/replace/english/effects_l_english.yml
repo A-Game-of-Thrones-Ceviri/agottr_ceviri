@@ -317,14 +317,14 @@
  RANDOM_LIST_EFFECT_ENTRY_DESC_CHANCE: "$CHANCE|0$% #F – $DESC$:#!" #NT!
  PAYS_GOLD_EFFECT: "[gold_i]$VALUE|0V$ ila [TARGET_CHARACTER.GetShortUIName] arası öder" #NT!
  PAYS_GOLD_EFFECT_NEG: "[TARGET_CHARACTER.GetShortUIName] tarafından [gold_i]$VALUE|0V$ ödenir" #NT!
- PAID_GOLD_EFFECT: "[gold_i]$VALUE|0V$ ile [TARGET_CHARACTER.GetShortUIName] arasında ödendi" #NT!
+ PAID_GOLD_EFFECT: "[gold_i]$VALUE|0V$ [TARGET_CHARACTER.GetShortUIName]'e ödendi" #NT!
  WERE_PAID_GOLD_EFFECT: "[TARGET_CHARACTER.GetShortUIName] tarafından [gold_i]$VALUE|0V$ ödendi" #NT!
- THEY_PAID_GOLD_EFFECT: "[CHARACTER.GetShortUIName|U] ödendi [gold_i]$VALUE|0V$ ila [TARGET_CHARACTER.GetShortUIName]" #NT!
+ THEY_PAID_GOLD_EFFECT: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'e [gold_i]$VALUE|0V$ ödedi" #NT!
  THEY_WERE_PAID_GOLD_EFFECT: "[CHARACTER.GetShortUIName|U] ödendi [gold_i]$VALUE|0V$ [TARGET_CHARACTER.GetShortUIName] tarafından" #NT!
- I_PAY_GOLD_EFFECT: "[gold_i]$VALUE|0-$ ile [TARGET_CHARACTER.GetShortUIName] arasında ödeme yaparsınız" #NT!
- I_AM_PAID_GOLD_EFFECT: "[TARGET_CHARACTER.GetShortUIName] tarafından [gold_i]$VALUE|0+$ ödemesi alırsınız" #NT!
+ I_PAY_GOLD_EFFECT: "[TARGET_CHARACTER.GetShortUIName]'e [gold_i]$VALUE|0-$ ödersiniz" #NT!
+ I_AM_PAID_GOLD_EFFECT: "[TARGET_CHARACTER.GetShortUIName] size [gold_i]$VALUE|0+$ ödüyor" #NT!
  I_PAID_GOLD_EFFECT: "[gold_i]$VALUE|0-$ ile [TARGET_CHARACTER.GetShortUIName] arasında ödeme yaptınız" #NT!
- I_WAS_PAID_GOLD_EFFECT: "[TARGET_CHARACTER.GetShortUIName] tarafından [gold_i]$VALUE|+0$ ödemesi yapıldı" #NT!
+ IS_PAID_GOLD_EFFECT: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'ten [gold_i]$VALUE|0V$ ödendi" #NT!
  PAY_GOLD_EFFECT: "[CHARACTER.GetShortUIName|U] [gold_i]$VALUE|0V$'den [TARGET_CHARACTER.GetShortUIName]'e ödeme yapar" #NT!
  IS_PAID_GOLD_EFFECT: "[CHARACTER.GetShortUIName|U] ödendi [gold_i]$VALUE|0V$ [TARGET_CHARACTER.GetShortUIName]'ten" #NT!
  SET_SECRET_OWNER_EFFECT: "Sırrın sahibi olacak [SECRET.GetName]" #NT!
@@ -1908,21 +1908,21 @@
  CHANGE_ARTIFACT_DURABILITY_PAST_THIRD: "[ARTIFACT.GetName]'ın dayanıklılığı $VALUE|0V$ arttı" #NT!
  LOSE_ARTIFACT_DURABILITY: "Dayanıklılık $VALUE|0V$ azalır" #NT!
  LOSE_ARTIFACT_DURABILITY_THIRD: "[ARTIFACT.GetName]'ın dayanıklılığı $VALUE|0V$ azalır" #NT!
- CHANGE_ARTIFACT_DURABILITY_PAST_THIRD_NEG: "[ARTIFACT.GetName]'ın dayanıklılığı $VALUE|0V$ azaldı" #NT!
+ CHANGE_ARTIFACT_DURABILITY_PAST_THIRD_NEG: "[ARTIFACT.GetName]dayanıklılığı $VALUE|0V$ azaldı" #NT!
  SET_ARTIFACT_MAX_DURABILITY: "Maksimum dayanıklılık $VALUE|0V$ olarak ayarlandı" #NT!
  SET_ARTIFACT_MAX_DURABILITY_THIRD: "[ARTIFACT.GetName]'ın maksimum dayanıklılığı $VALUE|0V$ olarak ayarlandı" #NT!
  SET_ARTIFACT_MAX_DURABILITY_PAST: "Maksimum dayanıklılık $VALUE|0V$ olarak ayarlandı" #NT!
  SET_ARTIFACT_MAX_DURABILITY_PAST_THIRD: "[ARTIFACT.GetName]'ın maksimum dayanıklılığı $VALUE|0V$ olarak ayarlandı" #NT!
- SET_ARTIFACT_OWNER_FIRST: "[ARTIFACT.GetName]'ın sahibi olacaksın" #NT!
+ SET_ARTIFACT_OWNER_FIRST: "[ARTIFACT.GetName] sahibi olacaksın" #NT!
  SET_ARTIFACT_OWNER_THIRD: "[CHARACTER.GetShortUIName|U], [ARTIFACT.GetName]'in sahibi olacak" #NT!
- SET_ARTIFACT_OWNER_GLOBAL: "[ARTIFACT.GetName]'ın sahibi olacak" #NT!
- HAS_SET_ARTIFACT_OWNER_FIRST: "[ARTIFACT.GetName]'ın sahibi oldunuz" #NT!
+ SET_ARTIFACT_OWNER_GLOBAL: "[ARTIFACT.GetName] sahibi olacak" #NT!
+ HAS_SET_ARTIFACT_OWNER_FIRST: "[ARTIFACT.GetName] sahibi oldunuz" #NT!
  HAS_SET_ARTIFACT_OWNER_THIRD: "[CHARACTER.GetShortUIName|U], [ARTIFACT.GetName]'in sahibi oldu" #NT!
- HAS_SET_ARTIFACT_OWNER_GLOBAL: "[ARTIFACT.GetName]'ın sahibi oldu" #NT!
+ HAS_SET_ARTIFACT_OWNER_GLOBAL: "[ARTIFACT.GetName] sahibi oldu" #NT!
  REMOVE_ARTIFACT_CLAIM_FIRST: "[ARTIFACT.GetName] tarihinde kişisel iddianızı kaybedeceksiniz" #NT!
  REMOVE_ARTIFACT_CLAIM_THIRD: "[CHARACTER.GetShortUIName|U], [ARTIFACT.GetName] üzerindeki kişisel iddiasını kaybedecek" #NT!
  REMOVE_ARTIFACT_CLAIM_GLOBAL: "[ARTIFACT.GetName]'daki kişisel iddialarını kaybedecekler" #NT!
- HAS_REMOVED_ARTIFACT_CLAIM_FIRST: "[ARTIFACT.GetName]'daki kişisel iddianızı kaybettiniz" #NT!
+ HAS_REMOVED_ARTIFACT_CLAIM_FIRST: "[ARTIFACT.GetName] üzerindeki kişisel iddianızı kaybettiniz." #NT!
  HAS_REMOVED_ARTIFACT_CLAIM_THIRD: "[CHARACTER.GetShortUIName|U], [ARTIFACT.GetName] üzerindeki kişisel iddiasını kaybetti" #NT!
  HAS_REMOVED_ARTIFACT_CLAIM_GLOBAL: "[ARTIFACT.GetName]'daki kişisel iddiasını kaybetti" #NT!
  REMOVE_HOUSE_ARTIFACT_CLAIM: "[DYNASTY_HOUSE.GetName|V], [ARTIFACT.GetName]'deki [house|E] iddiasını kaybedecek" #NT!
@@ -2083,16 +2083,16 @@
  THEY_START_DIARCHY: "[CHARACTER.GetName] girer [CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName]" #NT!
  I_STARTED_DIARCHY: "[CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName] girdim" #NT!
  THEY_STARTED_DIARCHY: "[CHARACTER.GetName] girildi [CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName]" #NT!
- I_END_DIARCHY: "[CHARACTER.GetDiarchyTypeName]'ım bitiyor" #NT!
+ I_END_DIARCHY: "[CHARACTER.GetDiarchyTypeName]'im bitiyor" #NT!
  THEY_END_DIARCHY: "[CHARACTER.GetNamePossessive] [CHARACTER.GetDiarchyTypeName] biter" #NT!
  GLOBAL_END_DIARCHY: "[CHARACTER.GetShortUINamePossessive|U] [CHARACTER.GetDiarchyTypeName] biter" #NT!
- I_ENDED_DIARCHY: "[CHARACTER.GetDiarchyTypeName]'ım bitti" #NT!
+ I_ENDED_DIARCHY: "[CHARACTER.GetDiarchyTypeName]'im bitti" #NT!
  THEY_ENDED_DIARCHY: "[CHARACTER.GetNamePossessive] [CHARACTER.GetDiarchyTypeName] sona erdi" #NT!
  GLOBAL_ENDED_DIARCHY: "[CHARACTER.GetShortUINamePossessive|U] [CHARACTER.GetDiarchyTypeName] sona erdi" #NT!
- I_SET_DIARCHY_TYPE: "[power_sharing|E] tipim [CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName]'ye dönüşüyor" #NT!
+ I_SET_DIARCHY_TYPE: "[power_sharing|E] tipim [CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName]'e dönüşüyor" #NT!
  THEY_SET_DIARCHY_TYPE: "[CHARACTER.GetNamePossessive] [power_sharing|E], [CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName]'e dönüşür" #NT!
  GLOBAL_SET_DIARCHY_TYPE: "[CHARACTER.GetShortUINamePossessive] [power_sharing|E], [CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName]'e dönüşür" #NT!
- I_CHANGED_DIARCHY_TYPE: "[power_sharing|E]'ım [CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName]'ye dönüştü" #NT!
+ I_CHANGED_DIARCHY_TYPE: "[power_sharing|E]'mım [CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName]'e dönüştü" #NT!
  THEY_CHANGED_DIARCHY_TYPE: "[CHARACTER.GetNamePossessive] [power_sharing|E] [CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName]'e dönüştü" #NT!
  GLOBAL_CHANGED_DIARCHY_TYPE: "[CHARACTER.GetShortUINamePossessive] [power_sharing|E] [CHARACTER.Custom('GetDiarchyArticle')] [CHARACTER.GetDiarchyTypeName]'e dönüştü" #NT!
  I_SET_DIARCH: "[TARGET_CHARACTER.GetShortUIName] benim yeni [CHARACTER.GetDiarchTitle]'im" #NT!
