@@ -230,7 +230,7 @@
  game_concept_counties: "Kontluklar" #NT!
  game_concept_count: "Kont" #NT!
  game_concept_counts: "Kontlar" #NT!
- game_concept_county_desc: "$game_concept_county$, [duchy|E]'nin altındaki ve [barony|E]'ün üzerindeki [title|E] sıralamasıdır.\n\nBu unvan, İlçedeki [county_capital|E]'ün yanı sıra İlçedeki tüm Baronilerin [de_jure|E] haklarını içerir.\n\nİlçeler her zaman [holders|E]'ya sahip çünkü kontluk başkentleri yok edilemiyor." #NT!
+ game_concept_county_desc: "$game_concept_county$, [duchy|E]'nin altındaki ve [barony|E]'ün üzerindeki [title|E] sıralamasıdır.\n\nBu unvan, Kontlkukdeki [county_capital|E]'ün yanı sıra Kontlkukdeki tüm Baronilerin [de_jure|E] haklarını içerir.\n\nKontlkukler her zaman [holders|E]'ya sahip çünkü kontluk başkentleri yok edilemiyor." #NT!
  game_concept_duchy: "Düklük" #NT!
  game_concept_duchies: "Dükalıklar" #NT!
  game_concept_duke: "Dük" #NT!
@@ -263,12 +263,12 @@
  game_concept_faith: "İnanç" #NT!
  game_concept_faiths: "İnançlar" #NT!
  game_concept_faithpossessive: "İnancın" #NT!
- game_concept_faith_desc: "Bir İnanç, daha büyük bir [religion|E]'ın belirli bir mezhebidir. Tüm karakterler ve [counties|E], [culture|E]'ye sahip oldukları gibi bir İnanca sahiptir.\n\nHer İnanç, taraftarları için geniş kapsamlı sonuçları olan bir dizi [doctrines|E] ile tanımlanır.\n\nHer İnancın ayrıca, [heresy|E]'e ([rulers|E] ve aynı Din içindeki diğer İnançlara dönüşen İlçeler) ne kadar savunmasız olduğunu kontrol eden bir [fervor|E] değeri vardır." #NT!
+ game_concept_faith_desc: "Bir İnanç, daha büyük bir [religion|E]'ın belirli bir mezhebidir. Tüm karakterler ve [counties|E], [culture|E]'ye sahip oldukları gibi bir İnanca sahiptir.\n\nHer İnanç, taraftarları için geniş kapsamlı sonuçları olan bir dizi [doctrines|E] ile tanımlanır.\n\nHer İnancın ayrıca, [heresy|E]'e ([rulers|E] ve aynı Din içindeki diğer İnançlara dönüşen Kontlkukler) ne kadar savunmasız olduğunu kontrol eden bir [fervor|E] değeri vardır." #NT!
  game_concept_tolerance: "Hata payı" #NT!
  game_concept_tolerate: "Hoşgörü göstermek" #NT!
  game_concept_tolerates: "Hoşgörülüdür" #NT!
  game_concept_fervor: "Coşku" #NT!
- game_concept_fervor_desc: "[faith|E]'in $game_concept_fervor$'ı #V 0#! ile #V 100%#! arasında değişir. Düşük $game_concept_fervor$, [rulers|E]'nin kendi inançlarını oluşturmasını kolaylaştırır ve [counties|E] ve karakterlerin [heresies|E] dahil diğer inançlara geçme olasılığını artırır. Yüksek $game_concept_fervor$, İlçe dönüşüm hızını artırır.\n\n$game_concept_fervor$ zamanla doğal olarak değişir. Daha küçük İnançlar daha yüksek Şevke sahip olma eğilimindedir. Daha büyük İnançlar düşük $game_concept_fervor$ olma eğilimindedir.\n\nBüyük Kutsal Savaşlar yürütmek ve başarılı Kutsal Savaşlar $game_concept_fervor$ azaltacaktır. Hedef olmak $game_concept_fervor$ artıracaktır. [faith|E]5 salgınları $game_concept_fervor$'ı önemli ölçüde artıracaktır." #NT!
+ game_concept_fervor_desc: "[faith|E]'in $game_concept_fervor$'ı #V 0#! ile #V 100%#! arasında değişir. Düşük $game_concept_fervor$, [rulers|E]'nin kendi inançlarını oluşturmasını kolaylaştırır ve [counties|E] ve karakterlerin [heresies|E] dahil diğer inançlara geçme olasılığını artırır. Yüksek $game_concept_fervor$, Kontlkuk dönüşüm hızını artırır.\n\n$game_concept_fervor$ zamanla doğal olarak değişir. Daha küçük İnançlar daha yüksek Şevke sahip olma eğilimindedir. Daha büyük İnançlar düşük $game_concept_fervor$ olma eğilimindedir.\n\nBüyük Kutsal Savaşlar yürütmek ve başarılı Kutsal Savaşlar $game_concept_fervor$ azaltacaktır. Hedef olmak $game_concept_fervor$ artıracaktır. [faith|E]5 salgınları $game_concept_fervor$'ı önemli ölçüde artıracaktır." #NT!
  game_concept_doctrine: "Doktrin" #NT!
  game_concept_doctrines: "Doktrinler" #NT!
  game_concept_doctrines_desc: "Doktrinler, [faith|E] içinde kabul edilebilir davranışın ne olduğunu belirleyen dini yasalar olarak düşünülebilir." #NT!
@@ -1037,17 +1037,17 @@
  game_concept_county_development_growth_desc: "$game_concept_county_development_growth$, [county|E]'in [development|E]'sini artırma yönünde ne kadar yol kat ettiğini ölçer.\n\n100 $game_concept_county_development_growth$'da $game_concept_county_development$ 1 artar." #NT!
  game_concept_existing_development: "Mevcut Geliştirme" #NT!
  game_concept_existing_development_desc: "[develop_county|E] kahya görevi azalan getirilerden muzdariptir. [development|E] ve [county]'de ne kadar çok şey varsa, [development_growth|E] o kadar çok cezalandırılır.\n\nVarsayılan olarak [counties], 10 [development|E]'de maksimum [existing_development] cezasına ulaşır. Her [era|E]'nin bir [innovation|E]'i vardır, bu da bu sınırı önemli ölçüde artırır ve [development|E]0 [development|E]1'de 90 [development|E]'e kadar çıkar.\n\n [development|E]2 değiştiricisini etkileyen yenilikler:\n[development|E]3 [development|E]4\n[development|E]3 [development|E]6\n[development|E]3 [development|E]8\n[development|E]3 [county]0" #NT!
- game_concept_county_control: "İlçe Kontrolü" #NT!
+ game_concept_county_control: "Kontlkuk Kontrolü" #NT!
  game_concept_control: "Kontrol" #NT!
  game_concept_control_i: "@control_icon!" #NT!
- game_concept_county_control_desc: "$game_concept_county_control$, hükümetin [county|E] nüfusu üzerindeki kontrolünü ölçer. Özellikle [holdings|E]'ten [taxes|E] toplamak için çok önemlidir.\n\nBir İlçe [war|E] aracılığıyla el değiştirdiğinde, Kontrol önemli ölçüde düşer, bu da mevcut [holder|E]'i (eğer [casus_belli|E] izin veriyorsa) vasallaştırmak için iyi bir nedendir. İlçe Kontrolü ayrıca [sieges|E] ve [Concept( 'peasant_faction', 'Peasant Uprisings' )|E] tarafından da zarar görebilir.\n\nDüşük Kontrol [county_corruption|E]'a yol açabilir ve Kontrolü artırmanın birincil yolu [county|E]1'inizde bulunan [county|E]0'dur." #NT!
+ game_concept_county_control_desc: "$game_concept_county_control$, hükümetin [county|E] nüfusu üzerindeki kontrolünü ölçer. Özellikle [holdings|E]'ten [taxes|E] toplamak için çok önemlidir.\n\nBir Kontlkuk [war|E] aracılığıyla el değiştirdiğinde, Kontrol önemli ölçüde düşer, bu da mevcut [holder|E]'i (eğer [casus_belli|E] izin veriyorsa) vasallaştırmak için iyi bir nedendir. Kontlkuk Kontrolü ayrıca [sieges|E] ve [Concept( 'peasant_faction', 'Peasant Uprisings' )|E] tarafından da zarar görebilir.\n\nDüşük Kontrol [county_corruption|E]'a yol açabilir ve Kontrolü artırmanın birincil yolu [county|E]1'inizde bulunan [county|E]0'dur." #NT!
  game_concept_absolute_control: "Mutlak Kontrol" #NT!
  game_concept_absolute_control_short: "Mutlak" #NT!
  game_concept_absolute_control_desc: "$game_concept_absolute_control$, $absolute_control_perk_name$ [perk|E] tarafından etkinleştirilen [control|E]'in özel bir halidir ve yöneticinin nüfus üzerinde demir yumruk sahibi olduğunu belirtir.\n\n$game_concept_control$, #V 100#!, olduğunda bunun yerine '$ABSOLUTE_COUNTY_CONTROL$' olarak gösterilecek ve [taxes|E] ve [levies|E]'a ek bonuslar verecektir." #NT!
- game_concept_county_corruption: "İlçe Yolsuzluğu" #NT!
- game_concept_county_corruption_desc: "Bir [county|E]'ın [control|E]'i düşükken veya [holder|E]'si [debt|E]'teyken, İlçe $game_concept_county_corruption$'ü alabilir. Bunlar negatif [county_modifiers|E]'in çeşitli türleridir.\n\n$game_concept_county_corruption$ zamanla kaybolur, ancak temel neden devam ederse ([debt|E] veya düşük [control|E]) yeniden ortaya çıkabilir.\n\n $councillor_marshal$'un [control|E]0 [control|E]1'i ortaya çıkabilir. $game_concept_county_corruption$'ü daha hızlı temizleyin." #NT!
- game_concept_county_modifier: "İlçe Değiştirici" #NT!
- game_concept_county_modifiers: "İlçe Değiştiricileri" #NT!
+ game_concept_county_corruption: "Kontlkuk Yolsuzluğu" #NT!
+ game_concept_county_corruption_desc: "Bir [county|E]'ın [control|E]'i düşükken veya [holder|E]'si [debt|E]'teyken, Kontlkuk $game_concept_county_corruption$'ü alabilir. Bunlar negatif [county_modifiers|E]'in çeşitli türleridir.\n\n$game_concept_county_corruption$ zamanla kaybolur, ancak temel neden devam ederse ([debt|E] veya düşük [control|E]) yeniden ortaya çıkabilir.\n\n $councillor_marshal$'un [control|E]0 [control|E]1'i ortaya çıkabilir. $game_concept_county_corruption$'ü daha hızlı temizleyin." #NT!
+ game_concept_county_modifier: "Kontlkuk Değiştirici" #NT!
+ game_concept_county_modifiers: "Kontlkuk Değiştiricileri" #NT!
  game_concept_county_modifier_desc: "$game_concept_county_modifiers$, [county|E]'in çeşitli değerlerini etkileyen değiştiricilerdir.\n\n[baronies|E]'nin kendi değiştiricileri olabilir ve bunlar $game_concept_county$'ün [holdings|E]'ünde görülebilir." #NT!
  game_concept_fleet: "Filo" #NT!
  game_concept_fleets: "Filolar" #NT!
@@ -1533,7 +1533,7 @@
  game_concept_abandon_celibacy_decision: "Bekarlıktan Vazgeçme Kararı" #NT!
  game_concept_abandon_celibacy_desc: "Bir karakterin istediği zaman [GetTrait('celibate').GetName( GetPlayer )] [trait|E]'sini kaybetmesini sağlayan bir [decision|E]." #NT!
  game_concept_convert_county: "$task_conversion$" #NT!
- game_concept_convert_county_desc: "[court_chaplain|E] tarafından gerçekleştirilen ve [liege|E]'ten farklı bir inanca sahip [county|E]'yi hedef alan bir [councillor_task|E].\nİlerleme her ay artıyor ve %100 oranında Hedef İlçenin çoğunluğu önceki İnançlarından Liege'in İnancına geçti. \n\nDönüşüm hızı, iki İnancın [councillor|E]'ünün [learning_skill|E]'i ve [fervor|E]'sı dahil olmak üzere birçok faktörden etkilenir." #NT!
+ game_concept_convert_county_desc: "[court_chaplain|E] tarafından gerçekleştirilen ve [liege|E]'ten farklı bir inanca sahip [county|E]'yi hedef alan bir [councillor_task|E].\nİlerleme her ay artıyor ve %100 oranında Hedef Kontlkuknin çoğunluğu önceki İnançlarından Liege'in İnancına geçti. \n\nDönüşüm hızı, iki İnancın [councillor|E]'ünün [learning_skill|E]'i ve [fervor|E]'sı dahil olmak üzere birçok faktörden etkilenir." #NT!
  game_concept_convert: "Dönüştürmek" #NT!
  game_concept_converted: "Dönüştürülmüş" #NT!
  game_concept_converting: "Dönüştürme" #NT!
@@ -1568,7 +1568,7 @@
  game_concept_develop_county: "$task_develop_county$" #NT!
  game_concept_develop_county_desc: "[steward|E] tarafından gerçekleştirilen bir [councillor_task|E]. [county|E]'yi hedef alır, burada [development_growth|E]'ü hızlandırır ve [buildings|E] için inşaat süresini azaltır." #NT!
  game_concept_convince_dejure: "$task_convince_dejure$" #NT!
- game_concept_convince_dejure_desc: "[steward|E] tarafından gerçekleştirilen bir [councillor_task|E]. [independent|E] [ruler|E]'ya ait olan Konsey üyesinin [liege|E]'ünün [de_jure|E] [county|E]'ünü hedef alır. İlçe ikna edildiğinde, [ruler|E]'larından onları [de_jure|E] [liege|E]'lerine bırakmalarını isteyeceklerdir." #NT!
+ game_concept_convince_dejure_desc: "[steward|E] tarafından gerçekleştirilen bir [councillor_task|E]. [independent|E] [ruler|E]'ya ait olan Konsey üyesinin [liege|E]'ünün [de_jure|E] [county|E]'ünü hedef alır. Kontlkuk ikna edildiğinde, [ruler|E]'larından onları [de_jure|E] [liege|E]'lerine bırakmalarını isteyeceklerdir." #NT!
  game_concept_hostile_army: "Düşmanca" #NT!
  game_concept_hostile_army_desc: "$game_concept_hostile_army$ [army|E], sahibiyle [war|E]'deymişsiniz gibi kullanılabilir, ancak [war_score|E] verilmez.\n\nDüşmanlık, aşağıdakiler dahil olmak üzere çatışan çıkarlarınız olması nedeniyle oluşur:\n$BULLET_WITH_TAB$Düşmanlarınızın [liege|E]\n$BULLET_WITH_TAB$[vassals|E]'si\n$BULLET_WITH_TAB$Hükümdarların #emphasis aynı düşmana saldırması[army|E]0" #NT!
  game_concept_war_leaders: "Savaş Liderleri" #NT!
@@ -1766,7 +1766,7 @@
  game_concept_rarity: "Nadirlik" #NT!
  game_concept_artifact_rarity_desc: "Bazı [artifacts|E]'lar diğerlerinden daha nadirdir ve bu da Nadirliklerine yansır.\n\nSeviyeler en düşükten en yükseğe doğru şöyledir:\n$BULLET_WITH_TAB$Yaygın (varsayılan olduğu için asla gösterilmez)\n$BULLET_WITH_TAB$$masterwork$\n$BULLET_WITH_TAB$$famed$\n$BULLET_WITH_TAB$$illustrious$" #NT!
  game_concept_promote_other_culture_development_decision: "$promote_other_culture_development_decision_name$ Karar" #NT!
- game_concept_promote_other_culture_development_decision_desc: "[decision|E], [development|E], [control|E], [building|E] maliyetlerini ve farklı [cultures|E]'dan [counties|E]'te [advantage|E] savunma maliyetini %75#! veya daha fazla [cultural_acceptance|E] ile artırmanızı sağlar.\n\nKarar almak ayrıca [development|E]0 [development|E]1 ve [development|E]2'nizi artıracaktır.\n\n[development|E]3'teki tüm İlçeler etkilenir. [development|E]4 maliyeti etkilenen İlçe sayısına göre ölçeklenir." #NT!
+ game_concept_promote_other_culture_development_decision_desc: "[decision|E], [development|E], [control|E], [building|E] maliyetlerini ve farklı [cultures|E]'dan [counties|E]'te [advantage|E] savunma maliyetini %75#! veya daha fazla [cultural_acceptance|E] ile artırmanızı sağlar.\n\nKarar almak ayrıca [development|E]0 [development|E]1 ve [development|E]2'nizi artıracaktır.\n\n[development|E]3'teki tüm Kontlkukler etkilenir. [development|E]4 maliyeti etkilenen Kontlkuk sayısına göre ölçeklenir." #NT!
  game_concept_reform: "Reform" #NT!
  game_concept_reformation: "Reformasyon" #NT!
  game_concept_reformation_desc: "[culture_head|E], [culture|E]'den $game_concept_reformation$'ye kadar olan bazı kısımlarını değiştirebilir. Bu, uzun zaman alan ve bir kez başlatıldığında durdurulamayan bir işlemdir. \n\nYeniden biçimlendirilebilen kısımlar şunlardır:\n$BULLET_WITH_TAB$[traditions|E]\n$BULLET_WITH_TAB$[ethos|E]\n$BULLET_WITH_TAB$[martial_custom|E]" #NT!
