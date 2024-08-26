@@ -4,8 +4,8 @@
  ANSWER_BLOCK: "Blok Cevap" #NT!
  ANSWER_MAYBE: "#Z Kabul edebilir#!" #NT!
  ANSWER_ACKNOWLEDGE: "Azletmek" #NT!
- REPLY_ANSWER_YES: "Kabul etmek" #NT!
- REPLY_ANSWER_NO: "Reddetmek" #NT!
+ REPLY_ANSWER_YES: "Kabul Et" #NT!
+ REPLY_ANSWER_NO: "Reddet" #NT!
  REPLY_ANSWER_ALLOW: "İzin vermek" #NT!
  REPLY_ANSWER_VETO: "Veto" #NT!
  ANSWER_MIGHT_SUCCEED: "#Z Başarılı olabilir#!" #NT!
@@ -649,7 +649,7 @@ declare_war_desc: "[recipient.GetShortUINameNoTooltip]'e karşı [casus_belli|E]
  ASK_FOR_CONVERSION_TAQIYA: "[recipient.GetFaith.GetAdjective|U] [core_tenet|E] — $tenet_temporal_condemnation_taqiya$: $VALUE|=+0$" #NT!
  ASK_FOR_CONVERSION_SANCTIONED_FALSE_CONVERSION: "[recipient.GetFaith.GetAdjective|U] [core_tenet|E] — $tenet_false_conversion_sanction_name$: $VALUE|=+0$" #NT!
  ASK_FOR_CONVERSION_ADAPTIVENESS: "[recipient.GetFaith.GetAdjective|U] [core_tenet|E] - Uyarlanabilir: $VALUE|=+0$" #NT!
- ASK_FOR_CONVERSION_DECLINING_IS_A_CRIME: "Dönüştürmeyi Reddetmek [crime|E]: $VALUE|=+0$" #NT!
+ ASK_FOR_CONVERSION_DECLINING_IS_A_CRIME: "Dönüştürmeyi Reddet [crime|E]: $VALUE|=+0$" #NT!
  ASK_FOR_CONVERSION_RECIPIENT_IS_ZEALOUS: "[recipient.GetShortUIName|U] = [GetTrait('zealous').GetName( GetPlayer )]: $VALUE|=+0$" #NT!
  ASK_FOR_CONVERSION_RECIPIENT_IS_CYNICAL: "[recipient.GetShortUIName|U] = [GetTrait('cynical').GetName( GetPlayer )]: $VALUE|=+0$" #NT!
  ASK_FOR_CONVERSION_RECIPIENT_IS_STUBBORN: "[recipient.GetShortUIName|U] = [GetTrait('stubborn').GetName( GetPlayer )]: $VALUE|=+0$" #NT!
@@ -1003,10 +1003,10 @@ declare_war_desc: "[recipient.GetShortUINameNoTooltip]'e karşı [casus_belli|E]
  revoke_leased_title_interaction_notification: "İptal Edilen Kira Sözleşmesi" #NT!
  invite_to_council_position_interaction: "Konsey Daveti" #NT!
  liege_offer_council_position_exchange: "\nKonseyimi yeniden düzenlemenin gerekli olduğuna karar verdim. Hemen geçerli olmak üzere, bunun yerine bana [target.GetPositionName]'ım olarak hizmet edeceksiniz.\n" #NT!
- liege_offer_council_position_liked: "\nSadık ve bağlı bir tebaa oldunuz ve hizmetiniz için sizi ödüllendirmek istiyorum.\n\nBunun takdiri olarak, size [target.GetPositionName]/[actor.GetPrimaryTitle.GetNameNoTierNoTooltip] pozisyonunu teklif ediyorum.\n" #NT!
- liege_offer_council_position_powerful: "\nEtkili bir [recipient.GetTitleAsNameNoTooltip] olarak konseyimde söz sahibi olmanız adil olur.\n\nBu gerçeğin bilinciyle, size [target.GetPositionName]/[actor.GetPrimaryTitle.GetNameNoTierNoTooltip] pozisyonunu teklif ediyorum.\n" #NT!
+ liege_offer_council_position_liked: "\nSadık ve bağlı bir tebaa oldunuz ve hizmetiniz için sizi ödüllendirmek istiyorum.\n\nBunun takdiri olarak, size [actor.GetPrimaryTitle.GetNameNoTierNoTooltip]'nın [target.GetPositionName] pozisyonunu teklif ediyorum.\n" #NT!
+ liege_offer_council_position_powerful: "\nEtkili bir [recipient.GetTitleAsNameNoTooltip] olarak konseyimde söz sahibi olmanız adil olur.\n\nBunun bilinciyle, size /[actor.GetPrimaryTitle.GetNameNoTierNoTooltip]'nın' [target.GetPositionName] pozisyonunu teklif ediyorum.\n" #NT!
  liege_offer_council_position_disliked: "\nAçık konsey pozisyonum için gerçekten de en iyi adayın siz olduğunuz sonucuna vardım.\n\nBunu yapmak beni üzse de, ne yazık ki size [target.GetPositionName] pozisyonundan [actor.GetPrimaryTitle.GetNameNoTierNoTooltip] pozisyonunu teklif etmek zorundayım.\n" #NT!
- liege_offer_council_position_skilled: "\nÖnemli yetenekleriniz fark edilmeden kalmadı, [recipient.GetFirstNameNoTooltip].\n\nYeteneklerinizin takdiri olarak, size [target.GetPositionName]/[actor.GetPrimaryTitle.GetNameNoTierNoTooltip] pozisyonunu teklif etmek istiyorum.\n" #NT!
+ liege_offer_council_position_skilled: "\nÖnemli yetenekleriniz fark edilmeden kalmadı, [recipient.GetFirstNameNoTooltip].\n\nYeteneklerinizin takdiri olarak, size [actor.GetPrimaryTitle.GetNameNoTierNoTooltip]'nın [target.GetPositionName] pozisyonunu teklif etmek istiyorum.\n" #NT!
  liege_offer_council_position_fallback: "\nŞans sana gülüyor [recipient.GetFirstNameNoTooltip], çünkü kendimi yeni bir [target.GetPositionName]'e ihtiyaç duyarken buluyorum ve elimdeki tek aday sensin.\n\nİşi kabul edeceğine inanıyorum?\n" #NT!
  auto_accept_interaction_ai: "[TARGET_CHARACTER.GetFirstNamePossessiveNoTooltip]'ın en iyi çıkarınadır" #NT!
  council_interaction.0000.opening: "[sender.Custom2('AppropriateGreeting', receiver)]" #NT!
@@ -1305,8 +1305,8 @@ declare_war_desc: "[recipient.GetShortUINameNoTooltip]'e karşı [casus_belli|E]
  gift_artifact_interaction_desc: "Hakkınızdaki [recipient.GetHerHis] fikri artırmak için [recipient.GetShortUINameNoTooltip]'a bir Eser verin" #NT!
  gift_artifact_interaction_notification: "Hediye Edilen Eser" #NT!
  GIFT_ARTIFACT_PROPOSAL: "Lütfen bu mütevazı hediyeyi kabul edin. Benim için değerli bir eşyaydı, bu yüzden umarım sizi de onurlandırır ve size hizmet eder." #NT!
- GIFT_ARTIFACT_ACCEPT: "Kabul etmek" #NT!
- GIFT_ARTIFACT_REJECT: "Reddetmek" #NT!
+ GIFT_ARTIFACT_ACCEPT: "Kabul Et" #NT!
+ GIFT_ARTIFACT_REJECT: "Reddet" #NT!
  ARTIFACT_REASON: "Eserler nadir ve değerlidir: $VALUE|=+0$" #NT!
  ARTIFACT_NOT_EQUIPPABLE_REASON: "Bu eser [recipient.GetShortUINameNoTooltip]: $VALUE|=+0$ için işe yaramaz" #NT!
  ARTIFACT_NOT_BENEFIT_REASON: "Bu eser [recipient.GetShortUINameNoTooltip]: $VALUE|=+0$ ile alakalı değil" #NT!
@@ -1323,15 +1323,15 @@ declare_war_desc: "[recipient.GetShortUINameNoTooltip]'e karşı [casus_belli|E]
  demand_artifact_interaction_notification: "Talep Edilen Eser" #NT!
  demand_artifact_interaction_notification_refused: "[recipient.GetTitledFirstNameNoTooltip|U] size Eser'i vermeyi reddetti!" #NT!
  DEMAND_ARTIFACT_PROPOSAL: "Sende yasal olarak bana ait olması gereken bir şey var. Derhal vazgeçin!" #NT!
- DEMAND_ARTIFACT_ACCEPT: "Kabul etmek" #NT!
- DEMAND_ARTIFACT_REJECT: "Reddetmek" #NT!
+ DEMAND_ARTIFACT_ACCEPT: "Kabul Et" #NT!
+ DEMAND_ARTIFACT_REJECT: "Reddet" #NT!
  demand_artifact_interaction_is_valid_tt_2: "Bu Eseri son 5 yıldır talep ediyordunuz!" #NT!
  CHARACTER_INTERACTION_WINDOW_SELECT_ARTIFACT_TOOLTIP: "Eser Seç" #NT!
  challenge_for_artifact_interaction: "Artifact için Meydan Okuma" #NT!
  challenge_for_artifact_interaction_desc: "İddia ettiğiniz bir Eser için ölümcül olmayan bir düelloya [recipient.GetShortUINameNoTooltip] meydan okuyun" #NT!
  REQUEST_ARTIFACT_COMBAT_TEXT: "Sende bana ait olması gereken bir şey var. Bunun için benimle bir düelloda yüzleş ve kazananın ona sahip olma hakkını kazanmasına izin ver!" #NT!
- REQUEST_ARTIFACT_COMBAT_ACCEPT: "Kabul etmek" #NT!
- REQUEST_ARTIFACT_COMBAT_REJECT: "Reddetmek" #NT!
+ REQUEST_ARTIFACT_COMBAT_ACCEPT: "Kabul Et" #NT!
+ REQUEST_ARTIFACT_COMBAT_REJECT: "Reddet" #NT!
  challenge_for_artifact_interaction_valid_tt_1: "Bu karakter, talep edebileceğiniz herhangi bir esere sahip değil" #NT!
  challenge_for_artifact_interaction_valid_tt_2: "Bu karakter düelloda dövüşemez" #NT!
  challenge_for_artifact_interaction_valid_tt_3: "Sen hapistesin" #NT!
