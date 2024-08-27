@@ -208,12 +208,12 @@
  CANCEL_TRUCE_BOTH_WAY_EFFECT_PAST: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUINamePossessive] ateşkes sona erdi" #NT!
  CANCEL_TRUCE_BOTH_WAY_EFFECT_FIRST_PAST: "Sen ve [TARGET_CHARACTER.GetShortUINamePossessive|U] [truce|E] bitti" #NT!
  CANCEL_TRUCE_BOTH_WAY_EFFECT_THIRD_PAST: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUINamePossessive] ateşkes sona erdi" #NT!
- I_GAIN_GOLD_EFFECT: "[gold_i]$VALUE|+0$ kazanırsınız" #NT!
- I_LOSE_GOLD_EFFECT: "Kaybedersin [gold_i]$VALUE|-0$" #NT!
- GAIN_GOLD_EFFECT: "Kazanımlar [gold_i]$VALUE|V0$" #NT!
- LOSE_GOLD_EFFECT: "Kaybeder [gold_i]$VALUE|V0$" #NT!
- GAINED_GOLD_EFFECT: "Kazanılan [gold_i]$VALUE|V0$" #NT!
- LOST_GOLD_EFFECT: "Kayıp [gold_i]$VALUE|V0$" #NT!
+ I_GAIN_GOLD_EFFECT: "[gold_i]$VALUE|+0$ kazanırsın" #NT!
+ I_LOSE_GOLD_EFFECT: "[gold_i]$VALUE|-0$ kaybedersin " #NT!
+ GAIN_GOLD_EFFECT: "[gold_i]$VALUE|V0$ kazanır" #NT!
+ LOSE_GOLD_EFFECT: "[gold_i]$VALUE|V0$ kaybeder " #NT!
+ GAINED_GOLD_EFFECT: "[gold_i]$VALUE|V0$ kazandı " #NT!
+ LOST_GOLD_EFFECT: "[gold_i]$VALUE|V0$ kaybetti" #NT!
  THEY_GAIN_GOLD_EFFECT: "[CHARACTER.GetShortUIName|U] kazanç [gold_i]$VALUE|V0$" #NT!
  THEY_LOSE_GOLD_EFFECT: "[CHARACTER.GetShortUIName|U] kaybeder [gold_i]$VALUE|V0$" #NT!
  I_GAINED_GOLD_EFFECT: "[gold_i]$VALUE|+0$ kazandınız" #NT!
@@ -357,89 +357,105 @@
  SAT_FATHER_OF_CHARACTER: "[TARGET_CHARACTER.GetShortUIName|U] [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'are', 'is' )] [CHARACTER.GetHerHis] yeni baba" #NT!
  SAT_MY_FATHER: "[TARGET_CHARACTER.GetShortUIName|U] yeni babanız" #NT!
  SAT_THEIR_FATHER: "[TARGET_CHARACTER.GetShortUIName|U] [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'are', 'is' )] [CHARACTER.GetShortUIName]'nin yeni babası" #NT!
- I_GAINED_STRESS_EFFECT: "[stress_gain_i]$VALUE|-0$ [stress|E] kazandınız" #NT!
- I_LOST_STRESS_EFFECT: "Kaybettin [stress_loss_i]$VALUE|+0$ [stress|E]" #NT!
- THEY_GAINED_STRESS_EFFECT: "[CHARACTER.GetShortUIName|U] kazanıldı [stress_gain_i]$VALUE|V0$ [stress|E]" #NT!
- THEY_LOST_STRESS_EFFECT: "[CHARACTER.GetShortUIName|U] kayıp [stress_loss_i]$VALUE|V0$ [stress|E]" #NT!
- GAINED_STRESS_EFFECT: "Kazanıldı [stress_gain_i]$VALUE|V0$ [stress|E]" #NT!
- LOST_STRESS_EFFECT: "Kayıp [stress_loss_i]$VALUE|V0$ [stress|E]" #NT!
- I_GAIN_STRESS_EFFECT: "[stress_gain_i]$VALUE|-0$ [stress|E] kazanırsınız" #NT!
- I_LOSE_STRESS_EFFECT: "Kaybedersin [stress_loss_i]$VALUE|+0$ [stress|E]" #NT!
- THEY_GAIN_STRESS_CRITICAL_EFFECT: "[CHARACTER.GetShortUIName|U] kazanç [stress_critical_i]$VALUE|V0$ [stress|E] (kritik)" #NT!
- THEY_GAIN_STRESS_EFFECT: "[CHARACTER.GetShortUIName|U] kazanç [stress_gain_i]$VALUE|V0$ [stress|E]" #NT!
- THEY_LOSE_STRESS_EFFECT: "[CHARACTER.GetShortUIName|U] kaybeder [stress_loss_i]$VALUE|V0$ [stress|E]" #NT!
- GAIN_STRESS_EFFECT: "Kazançlar [stress_gain_i]$VALUE|V0$ [stress|E]" #NT!
- LOSE_STRESS_EFFECT: "Kaybeder [stress_loss_i]$VALUE|V0$ [stress|E]" #NT!
- I_GAINED_STRESS_CRITICAL_EFFECT: "[stress_critical_i]$VALUE|-0$ [stress|E] (kritik) kazandınız" #NT!
- GAINED_STRESS_CRITICAL_EFFECT: "Kazanıldı [stress_critical_i]$VALUE|-0$ [stress|E] (kritik)" #NT!
- I_GAIN_STRESS_CRITICAL_EFFECT: "[stress_critical_i]$VALUE|-0$ [stress|E] (kritik) kazanırsınız" #NT!
- GAIN_STRESS_CRITICAL_EFFECT: "Kazançlar [stress_critical_i]$VALUE|V0$ [stress|E] (kritik)" #NT!
- SET_DYNASTY_EFFECT: "[CHARACTER.GetShortUIName|U] artık [TARGET_CHARACTER.GetDynastyName] Hanedanlığına ait" #NT!
- DO_NOT_SET_TO_LOWBORN: "[CHARACTER.GetUINamePossessive] Hanedan DEĞİŞMEYECEK" #NT!
- I_BREAK_BETROTHAL_EFFECT: "[CHARACTER.GetShortUINamePossessive] [betrothal|E]'i [TARGET_CHARACTER.GetShortUIName] ile kırıyorsun" #NT!
- THEY_BREAK_BETROTHAL_EFFECT: "[CHARACTER.GetShortUIName|U] kırılır [CHARACTER.GetHerHis] [betrothal|E] ile [TARGET_CHARACTER.GetShortUIName]" #NT!
- BREAK_BETROTHAL_EFFECT: "[CHARACTER.GetShortUINamePossessive] [betrothal|E] ile [TARGET_CHARACTER.GetShortUIName] arasında molalar" #NT!
- I_BROKE_BETROTHAL_EFFECT: "[CHARACTER.GetShortUINamePossessive] [betrothal|E]'i [TARGET_CHARACTER.GetShortUIName] ile kırdın" #NT!
- THEY_BROKE_BETROTHAL_EFFECT: "[CHARACTER.GetShortUIName] kırdı [CHARACTER.GetHerHis] [betrothal|E] ile [TARGET_CHARACTER.GetShortUIName]" #NT!
- BROKE_BETROTHAL_EFFECT: "[betrothal|E]'ı [TARGET_CHARACTER.GetShortUIName] ile kırdım" #NT!
- I_BECAME_LOWBORN_EFFECT: "Aşağı tabakadan oldun" #NT!
- THEY_BECAME_LOWBORN_EFFECT: "[CHARACTER.GetShortUIName|U] düşük doğumlu oldu" #NT!
- BECAME_LOWBORN_EFFECT: "Aşağı tabakadan oldu" #NT!
- I_BECOME_LOWBORN_EFFECT: "Aşağı doğumlu olursun" #NT!
- THEY_BECOME_LOWBORN_EFFECT: "[CHARACTER.GetShortUIName|U] düşük doğumlu olur" #NT!
- BECOMES_LOWBORN_EFFECT: "Aşağı tabakadan olur" #NT!
- I_GAINED_PRESTIGE_EFFECT: "[prestige_i]$VALUE|+0$ kazandınız" #NT!
- I_LOST_PRESTIGE_EFFECT: "[prestige_i]$VALUE|-0$ harcadınız" #NT!
- THEY_GAINED_PRESTIGE_EFFECT: "[CHARACTER.GetShortUIName|U] kazanıldı [prestige_i]$VALUE|+0$" #NT!
- THEY_LOST_PRESTIGE_EFFECT: "[CHARACTER.GetShortUIName|U] harcandı [prestige_i]$VALUE|-0$" #NT!
- GAINED_PRESTIGE_EFFECT: "Kazanılan [prestige_i]$VALUE|+0$" #NT!
- LOST_PRESTIGE_EFFECT: "Harcanan [prestige_i]$VALUE|-0$" #NT!
- I_GAIN_PRESTIGE_EFFECT: "[prestige_i]$VALUE|+0$ kazanırsınız" #NT!
- I_LOSE_PRESTIGE_EFFECT: "[prestige_i]$VALUE|-0$ harcıyorsunuz" #NT!
- THEY_GAIN_PRESTIGE_EFFECT: "[CHARACTER.GetShortUIName|U] kazanç [prestige_i]$VALUE|+0$" #NT!
- THEY_LOSE_PRESTIGE_EFFECT: "[CHARACTER.GetShortUIName|U] harcama [prestige_i]$VALUE|-0$" #NT!
- GAIN_PRESTIGE_EFFECT: "Kazançlar [prestige_i]$VALUE|+0$" #NT!
- LOSE_PRESTIGE_EFFECT: "[prestige_i]$VALUE|-0$ harcıyor" #NT!
- ADD_PRESTIGE_EFFECT: "Kazanç [prestige_i]$VALUE|+0$" #NT!
- I_GAINED_PIETY_EFFECT: "[piety_i]$VALUE|+0$ kazandınız" #NT!
- I_LOST_PIETY_EFFECT: "[piety_i]$VALUE|-0$ harcadınız" #NT!
- THEY_GAINED_PIETY_EFFECT: "[CHARACTER.GetShortUIName|U] kazanıldı [piety_i]$VALUE|V0$" #NT!
- THEY_LOST_PIETY_EFFECT: "[CHARACTER.GetShortUIName|U] harcandı [piety_i]$VALUE|V0$" #NT!
- GAINED_PIETY_EFFECT: "Kazanılan [piety_i]$VALUE|V0$" #NT!
- LOST_PIETY_EFFECT: "Harcanan [piety_i]$VALUE|V0$" #NT!
- I_GAIN_PIETY_EFFECT: "[piety_i]$VALUE|+0$ kazanırsınız" #NT!
- I_LOSE_PIETY_EFFECT: "[piety_i]$VALUE|-0$ harcıyorsunuz" #NT!
- THEY_GAIN_PIETY_EFFECT: "[CHARACTER.GetShortUIName|U] kazanç [piety_i]$VALUE|V0$" #NT!
- THEY_LOSE_PIETY_EFFECT: "[CHARACTER.GetShortUIName|U] harcama [piety_i]$VALUE|V0$" #NT!
- GAIN_PIETY_EFFECT: "Kazançlar [piety_i]$VALUE|V0$" #NT!
- LOSE_PIETY_EFFECT: "Harcamalar [piety_i]$VALUE|V0$" #NT!
- ADD_PIETY_EFFECT: "Kazanç [piety_i]$VALUE|V0$" #NT!
- I_GAINED_PRESTIGE_EXPERIENCE_EFFECT: "$VALUE|+0$ [prestige_experience|E] kazandınız" #NT!
- I_LOST_PRESTIGE_EXPERIENCE_EFFECT: "Kaybettin $VALUE|-0$ [prestige_experience|E]" #NT!
- THEY_GAINED_PRESTIGE_EXPERIENCE_EFFECT: "[CHARACTER.GetShortUIName|U] kazanıldı $VALUE|+0$ [prestige_experience|E]" #NT!
- THEY_LOST_PRESTIGE_EXPERIENCE_EFFECT: "[CHARACTER.GetShortUIName|U] kayıp $VALUE|-0$ [prestige_experience|E]" #NT!
- GAINED_PRESTIGE_EXPERIENCE_EFFECT: "Kazanıldı $VALUE|+0$ [prestige_experience|E]" #NT!
- LOST_PRESTIGE_EXPERIENCE_EFFECT: "Kayıp $VALUE|-0$ [prestige_experience|E]" #NT!
- I_GAIN_PRESTIGE_EXPERIENCE_EFFECT: "$VALUE|+0$ [prestige_experience|E] kazanırsınız" #NT!
- I_LOSE_PRESTIGE_EXPERIENCE_EFFECT: "Kaybettin $VALUE|-0$ [prestige_experience|E]" #NT!
- THEY_GAIN_PRESTIGE_EXPERIENCE_EFFECT: "[CHARACTER.GetShortUIName|U] kazanç $VALUE|+0$ [prestige_experience|E]" #NT!
- THEY_LOSE_PRESTIGE_EXPERIENCE_EFFECT: "[CHARACTER.GetShortUIName|U] kaybeder $VALUE|-0$ [prestige_experience|E]" #NT!
- GAIN_PRESTIGE_EXPERIENCE_EFFECT: "Kazançlar $VALUE|+0$ [prestige_experience|E]" #NT!
- LOSE_PRESTIGE_EXPERIENCE_EFFECT: "Kaybeder $VALUE|-0$ [prestige_experience|E]" #NT!
- ADD_PRESTIGE_EXPERIENCE_EFFECT: "Kazanç $VALUE|+0$ [prestige_experience|E]" #NT!
- I_GAINED_PIETY_EXPERIENCE_EFFECT: "$VALUE|+0$ [piety_experience|E] kazandınız" #NT!
- I_LOST_PIETY_EXPERIENCE_EFFECT: "Kaybettin $VALUE|-0$ [piety_experience|E]" #NT!
- THEY_GAINED_PIETY_EXPERIENCE_EFFECT: "[CHARACTER.GetShortUIName|U] kazanıldı $VALUE|V0$ [piety_experience|E]" #NT!
- THEY_LOST_PIETY_EXPERIENCE_EFFECT: "[CHARACTER.GetShortUIName|U] kayıp $VALUE|V0$ [piety_experience|E]" #NT!
- GAINED_PIETY_EXPERIENCE_EFFECT: "Kazanıldı $VALUE|V0$ [piety_experience|E]" #NT!
- LOST_PIETY_EXPERIENCE_EFFECT: "Kayıp $VALUE|V0$ [piety_experience|E]" #NT!
- I_GAIN_PIETY_EXPERIENCE_EFFECT: "$VALUE|+0$ [piety_experience|E] kazanırsınız" #NT!
- I_LOSE_PIETY_EXPERIENCE_EFFECT: "Kaybettin $VALUE|-0$ [piety_experience|E]" #NT!
- THEY_GAIN_PIETY_EXPERIENCE_EFFECT: "[CHARACTER.GetShortUIName|U] kazanç $VALUE|V0$ [piety_experience|E]" #NT!
- THEY_LOSE_PIETY_EXPERIENCE_EFFECT: "[CHARACTER.GetShortUIName|U] kaybeder $VALUE|V0$ [piety_experience|E]" #NT!
- GAIN_PIETY_EXPERIENCE_EFFECT: "Kazançlar $VALUE|V0$ [piety_experience|E]" #NT!
- LOSE_PIETY_EXPERIENCE_EFFECT: "Kaybeder $VALUE|V0$ [piety_experience|E]" #NT!
- ADD_PIETY_EXPERIENCE_EFFECT: "Kazanç $VALUE|V0$ [piety_experience|E]" #NT!
+# Stress (Stres)
+I_GAINED_STRESS_EFFECT: "[stress_gain_i]$VALUE|+0$ [stress|E] kazandınız" #NT!
+I_LOST_STRESS_EFFECT: "[stress_loss_i]$VALUE|-0$ [stress|E] kaybettiniz" #NT!
+THEY_GAINED_STRESS_EFFECT: "[CHARACTER.GetShortUIName|U] [stress_gain_i]$VALUE|+0$ [stress|E] kazandı" #NT!
+THEY_LOST_STRESS_EFFECT: "[CHARACTER.GetShortUIName|U] [stress_loss_i]$VALUE|-0$ [stress|E] kaybetti" #NT!
+GAINED_STRESS_EFFECT: "[stress_gain_i]$VALUE|+0$ [stress|E] kazanıldı" #NT!
+LOST_STRESS_EFFECT: "[stress_loss_i]$VALUE|-0$ [stress|E] kaybedildi" #NT!
+I_GAIN_STRESS_EFFECT: "[stress_gain_i]$VALUE|+0$ [stress|E] kazanıyorsunuz" #NT!
+I_LOSE_STRESS_EFFECT: "[stress_loss_i]$VALUE|-0$ [stress|E] kaybediyorsunuz" #NT!
+THEY_GAIN_STRESS_CRITICAL_EFFECT: "[CHARACTER.GetShortUIName|U] kritik [stress_critical_i]$VALUE|+0$ [stress|E] kazanır" #NT!
+THEY_GAIN_STRESS_EFFECT: "[CHARACTER.GetShortUIName|U] [stress_gain_i]$VALUE|+0$ [stress|E] kazanır" #NT!
+THEY_LOSE_STRESS_EFFECT: "[CHARACTER.GetShortUIName|U] [stress_loss_i]$VALUE|-0$ [stress|E] kaybeder" #NT!
+GAIN_STRESS_EFFECT: "[stress_gain_i]$VALUE|+0$ [stress|E] kazanıldı" #NT!
+LOSE_STRESS_EFFECT: "[stress_loss_i]$VALUE|-0$ [stress|E] kaybedildi" #NT!
+I_GAINED_STRESS_CRITICAL_EFFECT: "[stress_critical_i]$VALUE|+0$ [stress|E] (kritik) kazandınız" #NT!
+GAINED_STRESS_CRITICAL_EFFECT: "[stress_critical_i]$VALUE|+0$ [stress|E] (kritik) kazanıldı" #NT!
+I_GAIN_STRESS_CRITICAL_EFFECT: "[stress_critical_i]$VALUE|+0$ [stress|E] (kritik) kazanıyorsunuz" #NT!
+GAIN_STRESS_CRITICAL_EFFECT: "[stress_critical_i]$VALUE|+0$ [stress|E] (kritik) kazanıldı" #NT!
+
+# Betrothal (Nişan)
+I_BREAK_BETROTHAL_EFFECT: "[CHARACTER.GetShortUIName] ile [TARGET_CHARACTER.GetShortUIName] arasındaki [betrothal|E]'i bozuyorsunuz" #NT!
+THEY_BREAK_BETROTHAL_EFFECT: "[CHARACTER.GetShortUIName|U] [CHARACTER.GetHerHis] [betrothal|E]'i [TARGET_CHARACTER.GetShortUIName] ile bozuyor" #NT!
+BREAK_BETROTHAL_EFFECT: "[CHARACTER.GetShortUIName] ile [TARGET_CHARACTER.GetShortUIName] arasındaki [betrothal|E] bozuluyor" #NT!
+I_BROKE_BETROTHAL_EFFECT: "[CHARACTER.GetShortUIName] ile [TARGET_CHARACTER.GetShortUIName] arasındaki [betrothal|E]'i bozdunuz" #NT!
+THEY_BROKE_BETROTHAL_EFFECT: "[CHARACTER.GetShortUIName|U], [CHARACTER.GetHerHis] [betrothal|E]'i [TARGET_CHARACTER.GetShortUIName] ile bozdu" #NT!
+BROKE_BETROTHAL_EFFECT: "[CHARACTER.GetShortUIName] ile [TARGET_CHARACTER.GetShortUIName] arasındaki [betrothal|E] bozuldu" #NT!
+
+# Lowborn (Alt Tabaka)
+I_BECAME_LOWBORN_EFFECT: "Alt tabakadan oldunuz" #NT!
+THEY_BECAME_LOWBORN_EFFECT: "[CHARACTER.GetShortUIName|U] alt tabakadan oldu" #NT!
+BECAME_LOWBORN_EFFECT: "Alt tabakadan oldu" #NT!
+I_BECOME_LOWBORN_EFFECT: "Alt tabakadan oluyorsunuz" #NT!
+THEY_BECOME_LOWBORN_EFFECT: "[CHARACTER.GetShortUIName|U] alt tabakadan oluyor" #NT!
+BECOMES_LOWBORN_EFFECT: "Alt tabakadan oluyor" #NT!
+
+# Dynasty (Hanedanlık)
+SET_DYNASTY_EFFECT: "[CHARACTER.GetShortUIName|U] artık [TARGET_CHARACTER.GetDynastyName] Hanedanına ait" #NT!
+DO_NOT_SET_TO_LOWBORN: "[CHARACTER.GetUINamePossessive] Hanedan Değişmeyecek" #NT!
+
+# Prestige (İtibar)
+I_GAINED_PRESTIGE_EFFECT: "[prestige_i]$VALUE|+0$ itibar kazandınız" #NT!
+I_LOST_PRESTIGE_EFFECT: "[prestige_i]$VALUE|-0$ itibar kaybettiniz" #NT!
+THEY_GAINED_PRESTIGE_EFFECT: "[CHARACTER.GetShortUIName|U] [prestige_i]$VALUE|+0$ itibar kazandı" #NT!
+THEY_LOST_PRESTIGE_EFFECT: "[CHARACTER.GetShortUIName|U] [prestige_i]$VALUE|-0$ itibar kaybetti" #NT!
+GAINED_PRESTIGE_EFFECT:  "[prestige_i]$VALUE|+0$ itibar kazanıldı" #NT!
+LOST_PRESTIGE_EFFECT: "[prestige_i]$VALUE|-0$ itibar kaybedildi" #NT!
+I_GAIN_PRESTIGE_EFFECT: "[prestige_i]$VALUE|+0$ itibar kazanırsınız" #NT!
+I_LOSE_PRESTIGE_EFFECT: "[prestige_i]$VALUE|-0$ itibar kaybedersiniz" #NT!
+THEY_GAIN_PRESTIGE_EFFECT: "[CHARACTER.GetShortUIName|U] [prestige_i]$VALUE|+0$ itibar kazanır" #NT!
+THEY_LOSE_PRESTIGE_EFFECT: "[CHARACTER.GetShortUIName|U] [prestige_i]$VALUE|-0$ itibar kaybeder" #NT!
+GAIN_PRESTIGE_EFFECT: "Kazanılan itibar: [prestige_i]$VALUE|+0$" #NT!
+LOSE_PRESTIGE_EFFECT: "Kaybedilen itibar: [prestige_i]$VALUE|-0$" #NT!
+ADD_PRESTIGE_EFFECT: "Kazanılan itibar: [prestige_i]$VALUE|+0$" #NT!
+
+# Piety (Dindarlık)
+I_GAINED_PIETY_EFFECT: "[piety_i]$VALUE|+0$ dindarlık kazandınız" #NT!
+I_LOST_PIETY_EFFECT: "[piety_i]$VALUE|-0$ dindarlık harcadınız" #NT!
+THEY_GAINED_PIETY_EFFECT: "[CHARACTER.GetShortUIName|U] [piety_i]$VALUE|+0$ dindarlık kazandı" #NT!
+THEY_LOST_PIETY_EFFECT: "[CHARACTER.GetShortUIName|U] [piety_i]$VALUE|-0$ dindarlık harcadı" #NT!
+GAINED_PIETY_EFFECT: "[piety_i]$VALUE|+0$ dindarlık kazanıldı" #NT!
+LOST_PIETY_EFFECT: "[piety_i]$VALUE|-0$ dindarlık harcandı" #NT!
+I_GAIN_PIETY_EFFECT: "[piety_i]$VALUE|+0$ dindarlık kazanırsınız" #NT!
+I_LOSE_PIETY_EFFECT: "[piety_i]$VALUE|-0$ dindarlık harcarsınız" #NT!
+THEY_GAIN_PIETY_EFFECT: "[CHARACTER.GetShortUIName|U] [piety_i]$VALUE|+0$ dindarlık kazanır" #NT!
+THEY_LOSE_PIETY_EFFECT: "[CHARACTER.GetShortUIName|U] [piety_i]$VALUE|-0$ dindarlık harcar" #NT!
+GAIN_PIETY_EFFECT: "Kazanılan dindarlık: [piety_i]$VALUE|+0$" #NT!
+LOSE_PIETY_EFFECT: "Harcanan dindarlık: [piety_i]$VALUE|-0$" #NT!
+ADD_PIETY_EFFECT: "Kazanılan dindarlık: [piety_i]$VALUE|+0$" #NT!
+
+# Prestige Experience (İtibar Deneyimi)
+I_GAINED_PRESTIGE_EXPERIENCE_EFFECT: "$VALUE|+0$ [prestige_experience|E] kazandınız" #NT!
+I_LOST_PRESTIGE_EXPERIENCE_EFFECT: "$VALUE|-0$ [prestige_experience|E] kaybettiniz" #NT!
+THEY_GAINED_PRESTIGE_EXPERIENCE_EFFECT: "[CHARACTER.GetShortUIName|U] $VALUE|+0$ [prestige_experience|E] kazandı" #NT!
+THEY_LOST_PRESTIGE_EXPERIENCE_EFFECT: "[CHARACTER.GetShortUIName|U] $VALUE|-0$ [prestige_experience|E] kaybetti" #NT!
+GAINED_PRESTIGE_EXPERIENCE_EFFECT: "$VALUE|+0$ [prestige_experience|E] kazanıldı" #NT!
+LOST_PRESTIGE_EXPERIENCE_EFFECT: "$VALUE|-0$ [prestige_experience|E] kaybedildi" #NT!
+I_GAIN_PRESTIGE_EXPERIENCE_EFFECT: "$VALUE|+0$ [prestige_experience|E] kazanırsınız" #NT!
+I_LOSE_PRESTIGE_EXPERIENCE_EFFECT: "$VALUE|-0$ [prestige_experience|E] kaybedersiniz" #NT!
+THEY_GAIN_PRESTIGE_EXPERIENCE_EFFECT: "[CHARACTER.GetShortUIName|U] $VALUE|+0$ [prestige_experience|E] kazanır" #NT!
+THEY_LOSE_PRESTIGE_EXPERIENCE_EFFECT: "[CHARACTER.GetShortUIName|U] $VALUE|-0$ [prestige_experience|E] kaybeder" #NT!
+GAIN_PRESTIGE_EXPERIENCE_EFFECT: "Kazanılan [prestige_experience|E]: $VALUE|+0$" #NT!
+LOSE_PRESTIGE_EXPERIENCE_EFFECT: "Kaybedilen [prestige_experience|E]: $VALUE|-0$" #NT!
+ADD_PRESTIGE_EXPERIENCE_EFFECT: "Kazanılan [prestige_experience|E]: $VALUE|+0$" #NT!
+
+# Piety Experience (Dindarlık Deneyimi)
+I_GAINED_PIETY_EXPERIENCE_EFFECT: "$VALUE|+0$ [piety_experience|E] kazandınız" #NT!
+I_LOST_PIETY_EXPERIENCE_EFFECT: "$VALUE|-0$ [piety_experience|E] kaybettiniz" #NT!
+THEY_GAINED_PIETY_EXPERIENCE_EFFECT: "[CHARACTER.GetShortUIName|U] $VALUE|+0$ [piety_experience|E] kazandı" #NT!
+THEY_LOST_PIETY_EXPERIENCE_EFFECT: "[CHARACTER.GetShortUIName|U] $VALUE|-0$ [piety_experience|E] kaybetti" #NT!
+GAINED_PIETY_EXPERIENCE_EFFECT: "$VALUE|+0$ [piety_experience|E] kazanıldı" #NT!
+LOST_PIETY_EXPERIENCE_EFFECT: "$VALUE|-0$ [piety_experience|E] kaybedildi" #NT!
+I_GAIN_PIETY_EXPERIENCE_EFFECT: "$VALUE|+0$ [piety_experience|E] kazanırsınız" #NT!
+I_LOSE_PIETY_EXPERIENCE_EFFECT: "$VALUE|-0$ [piety_experience|E] kaybedersiniz" #NT!
+THEY_GAIN_PIETY_EXPERIENCE_EFFECT: "[CHARACTER.GetShortUIName|U] $VALUE|+0$ [piety_experience|E] kazanır" #NT!
+THEY_LOSE_PIETY_EXPERIENCE_EFFECT: "[CHARACTER.GetShortUIName|U] $VALUE|-0$ [piety_experience|E] kaybeder" #NT!
+GAIN_PIETY_EXPERIENCE_EFFECT: "Kazanılan [piety_experience|E]: $VALUE|+0$" #NT!
+LOSE_PIETY_EXPERIENCE_EFFECT: "Kaybedilen [piety_experience|E]: $VALUE|-0$" #NT!
+ADD_PIETY_EXPERIENCE_EFFECT: "Kazanılan [piety_experience|E]: $VALUE|+0$" #NT!
+
  SET_CHILD_OF_CONCUBINE_ON_PREGNANCY: "[CHARACTER.GetShortUIName]'ın doğmamış çocuğu bir cariyenin çocuğu olacak." #NT!
  DO_NOT_SET_CHILD_OF_CONCUBINE_ON_PREGNANCY: "[CHARACTER.GetShortUIName]'ın doğmamış çocuğu bir cariyenin çocuğu OLMAYACAKTIR." #NT!
  REMOVE_SECRET: "[SECRET.GetName] Sırrını Kaybeder" #NT!
