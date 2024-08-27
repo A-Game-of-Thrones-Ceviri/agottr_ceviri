@@ -111,12 +111,12 @@
  game_concept_heir: "Varis" #NT!
  game_concept_heirs: "Varisler" #NT!
  game_concept_heir_desc: "Varis, bir veya daha fazla [titles|E] miras alacak bir Karakterdir.\n\nElde edilen her [title|E]'in, mevcut [holder|E]'ünün [succession_laws|E]'ü tarafından belirlenen bir $game_concept_heir$'si vardır. Mevcut Ünvan Sahibi öldüğünde veya başka bir şekilde bir [succession|E] tetiklediğinde, Ünvanın mevcut $game_concept_heir$'si onu miras alacaktır.\n\nAynı [ruler|E] tarafından tutulan Ünvanların farklı $game_concept_heirs$'lere sahip olabileceğini unutmayın. En önemlisi, [primary_title|E], [title|E]0 tarafından miras alınır ve oyuncular [title|E]1'leri olarak oynamaya devam eder." #NT!
- game_concept_primary_heir: "Birincil Varis" #NT!
- game_concept_primary_heirs: "Birincil Varis" #NT!
+ game_concept_primary_heir: "Varis" #NT!
+ game_concept_primary_heirs: "Varisler" #NT!
  game_concept_primary_heir_desc: "$game_concept_primary_heir$, [succession|E]'teki [ruler|E]'nin [primary_title|E]'ini miras alacak karakterdir. Bu genellikle — ama her zaman değil — [player_heir|E] ile aynı karakterdir." #NT!
  game_concept_player_heir: "Oyuncu Varisi" #NT!
  game_concept_player_heir_desc: "$game_concept_player_heir$, bir oyuncunun [succession|E]'de oynamaya devam edeceği [heir|E]'dir.\n\n$game_concept_player_heir$ genellikle [primary_heir|E] ile aynıdır, ancak [primary_title|E]'nızın [succession_law|E]'i, [dynasty|E]'nizin dışındaki bir karaktere gitmesini gerektiriyorsa, bunun yerine ikinci en yüksek kademedeki unvanınızın (veya üçüncü, dördüncü, vb.) hanedan varisi olarak oynamaya devam edersiniz.\n\nBu durum, $game_concept_player_heir$'ınızın seçmeli bir veraset yasası uyarınca oylanarak elenmesi durumunda yaygındır." #NT!
- game_concept_title_heir: "Ünvan Varis" #NT!
+ game_concept_title_heir: "Ünvan Varisi" #NT!
  game_concept_title_heirs: "Ünvan Varisleri" #NT!
  game_concept_title_heir_desc: "Unvan Varisi, kendi [title_succession|E]'sine sahip belirli bir [title|E]'in [heir|E]'ıdır. Mevcut [holder|E] öldüğünde o Unvanı alacaktır." #NT!
  game_concept_realm_heir: "Diyar Varisi" #NT!
@@ -165,10 +165,10 @@
  game_concept_succession_law: "Miras Hukuku" #NT!
  game_concept_succession_laws: "Veraset Kanunları" #NT!
  game_concept_succession_law_desc: "Her [ruler|E]'ın, [titles|E]'ine [succession|E]'de ne olacağını belirleyen ana bir Veraset Yasası vardır.\n\nEk olarak, bazen bireysel bir Unvan, varsayılan olandan öncelikli olan kendi Veraset Yasasına sahip olabilir. Örneğin, imparatorun ana Veraset Yasası olarak Bölünme olmasına rağmen Kutsal Roma İmparatorluğu Seçmeli olabilir.\n\nVeraset Yasasını yalnızca uygun [crown_authority|E] seviyesinde değiştirebilirsiniz." #NT!
- game_concept_religious_head_succession_law: "İnanç Başkanı Veraset Hukuku" #NT!
- game_concept_religious_head_succession_law_short: "İnanç Hukuku Başkanı" #NT!
- game_concept_religious_head_succession_laws: "İnanç Başkanı Veraset Hukuku" #NT!
- game_concept_religious_head_succession_laws_short: "İnanç Yasaları Başkanı" #NT!
+ game_concept_religious_head_succession_law: "İnanç Lideri Veraset Hukuku" #NT!
+ game_concept_religious_head_succession_law_short: "İnanç Hukuku Lideri" #NT!
+ game_concept_religious_head_succession_laws: "İnanç Lideri Veraset Hukuku" #NT!
+ game_concept_religious_head_succession_laws_short: "İnanç Yasaları Lideri" #NT!
  game_concept_religious_head_succession_law_desc: "[rulers|E] aynı zamanda [heads_of_faith|E] olanların, [heir|E]'lerinin kendileriyle aynı [faith|E]'ten olmasını gerektiren ek bir alem [succession|E] yasası vardır. Bu asla değiştirilemez ve $game_concept_head_of_faith$ [titles|E] ayrı bir [title_succession|E]'ye sahip olamaz. Bu tür bir alem yasasını ortadan kaldırmanın tek yolu, harici bir gücün [head_of_faith|E] $game_concept_title$'u yok etmesidir." #NT!
  game_concept_opinion: "Görüş" #NT!
  game_concept_opinions: "Görüşler" #NT!
@@ -282,7 +282,7 @@
  game_concept_county_capitals: "Kontluk Başkentleri" #NT!
  game_concept_county_capital_desc: "$game_concept_county_capital$, [county|E]'nin ana [holding|E]'idir. Bu Yerleşim asla yok edilemez veya [leased|E] dışarı atılamaz ve her zaman [title|E] Kontluğunu elinde tutan [ruler|E]'e aittir.\n\nKontluk Başkentleri, daha küçük bir Holdinge kıyasla ek bir [building|E] inşa edilmesine izin verir." #NT!
  game_concept_de_jure_capital: "De Jure Başkenti" #NT!
- game_concept_de_jure_capital_desc: "Bir [title|E]'in $game_concept_de_jure_capital$'ı, tarihi başkenti olan [county|E]'dir. Zaten taşınmış olsa bile, [realm_capital|E]'ünüzü her zaman [primary_title|E]'ün $game_concept_de_jure_capital$'ına taşımayı seçebilirsiniz." #NT!
+ game_concept_de_jure_capital_desc: "Bir [title|E]'in $game_concept_de_jure_capital$, tarihi başkenti olan [county|E]'dur. Zaten taşınmış olsa bile, [realm_capital|E]'nizi her zaman [primary_title|E]'ın $game_concept_de_jure_capital$'ine taşımayı seçebilirsiniz." #NT!
  game_concept_capital_duchy: "Dükalık Başkenti" #NT!
  game_concept_capital_duchy_desc: "$game_concept_capital_duchy$ Değiştiricisi, [capital|E]'inizle aynı [de_jure|E] [duchy|E] içinde tuttuğunuz tüm [holdings|E]'lerden elde ettiğiniz [levies|E] miktarını artırır. Ayrıca tüm [stationed|E] [men_at_arms|E]'lere bir bonus verir. Bu değiştiricinin etkin olması için, ilgili Dükalığı kişisel olarak tutmanız gerekir.\n\nBu değiştirici Diyar Başkent bonusuyla birleşmez." #NT!
  game_concept_liege: "Süzeren" #NT!
@@ -378,7 +378,7 @@
  game_concept_dynasty_members: "Hanedan Üyeleri" #NT!
  game_concept_dynasty_desc: "$game_concept_dynasty$, [landed|E] atanın [noble|E] soyundan gelen bir gruptur; Hanedanlığın kurucusu. Orijinal [house|E], daha geniş Hanedanlığın üyeleri olan yenilerine ([cadet_branches|E]) bölünebilir.\n\nKarakteriniz öldüğünde, bir [player_heir|E]'iniz olmalı, aksi takdirde oyun sona erer (ancak başka bir hükümdar seçebilir ve aynı dünyada oynamaya devam edebilirsiniz).\n\nKarakterler için [prestige|E]'ya benzer şekilde, hanedanlar için [dynasty_prestige|E] vardır." #NT!
  game_concept_dynast_interaction: "Hanedan Lideri Etkileşimi" #NT!
- game_concept_dynast_interactions: "Hanedanlık Başkanı Etkileşimleri" #NT!
+ game_concept_dynast_interactions: "Hanedanlık Lideri Etkileşimleri" #NT!
  game_concept_dynast_interaction_desc: "[dynasty|E] hanedanının [dynast|E] üyesine özel olarak sunulan ve o hanedanın diğer üyelerine karşı kullanılabilen etkileşimler.\n\nKullanmak için [dynasty_prestige|E] maliyeti vardır." #NT!
  game_concept_dynasty_prestige: "Ün" #NT!
  game_concept_dynasty_prestige_i: "@hanedan_prestij_icon!" #NT!
@@ -387,13 +387,13 @@
  game_concept_dynasty_prestige_level_desc: "$game_concept_dynasty_prestige_level$, bir [dynasty|E]'in ne kadar ünlü olduğunun bir ölçüsüdür. Hanedanlığınız [dynasty_prestige|E] kazandığında seviye ilerlemesi yapılır. Karakterler, $game_concept_dynasty_prestige_level$'larına bağlı olarak doğduklarında başlangıçta bir miktar [prestige|E] alırlar. Benzer şekilde, [spouses|E] birbirlerinin Hanedanlığından bir miktar Prestij kazanırlar [marry|E].\n\nSeviyeler şunlardır:\n$EFFECT_LIST_BULLET$[dynasty_prestige_level_0|E]\n$EFFECT_LIST_BULLET$[dynasty|E]0\n$EFFECT_LIST_BULLET$[dynasty|E]2\n$EFFECT_LIST_BULLET$[dynasty|E]4\n$EFFECT_LIST_BULLET$[dynasty|E]6\n$EFFECT_LIST_BULLET$[dynasty|E]8\n$EFFECT_LIST_BULLET$[dynasty_prestige|E]0\n$EFFECT_LIST_BULLET$[dynasty_prestige|E]2\n$EFFECT_LIST_BULLET$[dynasty_prestige|E]4\n$EFFECT_LIST_BULLET$[dynasty_prestige|E]6\n$EFFECT_LIST_BULLET$[dynasty_prestige|E]8" #NT!
  game_concept_house: "Hane" #NT!
  game_concept_houses: "Haneler" #NT!
- game_concept_house_desc: "$game_concept_house$, [dynasty|E]'in daha büyük ağacındaki üyelerin bir dalıdır. Evler, artık mevcut [house_head|E]'lerine cevap vermek istemeyen ve yeni bir Evin Başkanı olmayı tercih eden [rulers|E] tarafından yaratılır.\n\nEvlerin kendi isimleri ve Armaları olmasına rağmen, yine de [dynasty_prestige|E]'ü paylaşırlar ve Hanedanlığın diğer üyeleri hala sizin [player_heir|E]'iniz olabilir." #NT!
+ game_concept_house_desc: "$game_concept_house$, [dynasty|E]'in daha büyük ağacındaki üyelerin bir dalıdır. Evler, artık mevcut [house_head|E]'lerine cevap vermek istemeyen ve yeni bir Evin Lideri olmayı tercih eden [rulers|E] tarafından yaratılır.\n\nEvlerin kendi isimleri ve Armaları olmasına rağmen, yine de [dynasty_prestige|E]'ü paylaşırlar ve Hanedanlığın diğer üyeleri hala sizin [player_heir|E]'iniz olabilir." #NT!
  game_concept_house_head: "Hane Lideri" #NT!
  game_concept_house_heads: "Hane Liderleri" #NT!
  game_concept_house_heads_possessive: "Hane Liderinin" #NT!
  game_concept_house_head_head: "Hane Lideri" #NT!
  game_concept_house_head_desc: "[dynasty|E] içindeki her [house|E]'ın, Hane üyeleri üzerinde belirli benzersiz yetkilere sahip olan bir $game_concept_house_head$'si vardır.\n\nÖnemli olarak, Hane Lideri [bastards|E]'ü meşrulaştırabilir, Hane üyelerini [war|E]'e çağırabilir ve [landed|E] üyesinin dönüşümünü talep edebilir. Hane Lideri ayrıca iktidardayken doğan tüm Hane üyeleri için [weak_hook|E] alır.\n\n[clan_house_heads|E]'nin özel kuralları ve ayrıcalıkları vardır." #NT!
- game_concept_clan_house_head: "Klan Evi Başkanı" #NT!
+ game_concept_clan_house_head: "Klan Evi Lideri" #NT!
  game_concept_clan_house_heads: "Klan Evi Başkanları" #NT!
  game_concept_clan_house_head_head: "$game_concept_house_head_head$" #NT!
  game_concept_clan_house_head_desc: "Bir $game_concept_clan_house_head$ birçok yönden normal bir [house_head|E]'e benzer, ancak bazı önemli yönlerden farklıdır.\n\n$game_concept_clan_house_heads$, [house|E]'lerinin tüm üyelerinde [weak_hook|E] almaz. Diğer ev üyelerinden [house_unity|E] üzerinde daha fazla etkiye sahiptirler. Ek olarak, herhangi bir ev üyesi, $game_concept_house_head$ olmak için bir $game_concept_clan_house_head$'a üstünlük için meydan okuyabilir." #NT!
@@ -1169,8 +1169,8 @@
  game_concept_martial_custom_desc: "Dövüş Geleneği, hangi cinsiyetlerin [commanders|E] veya [knights|E] olarak hareket edebileceğini belirleyen [culture_pillar|E]'dır.\n\nBazı [traditions|E] ve [doctrines|E], bu kuralları belirli [characters|E]'ler için değiştirebilir." #NT!
  game_concept_culture_intermingling: "Kültürlerin Karışması" #NT!
  game_concept_culture_intermingling_desc: "Aynı [realm|E]'de bir arada bulunan iki [cultures|E]'dan ne kadar çok olursa, o kadar fazla iç içe geçme gerçekleşecek ve Kültürler [cultural_acceptance|E]'lerini artıracaktır." #NT!
- game_concept_cultural_head: "Kültür Başkanı" #NT!
- game_concept_culture_head: "Kültür Başkanı" #NT!
+ game_concept_cultural_head: "Kültür Lideri" #NT!
+ game_concept_culture_head: "Kültür Lideri" #NT!
  game_concept_culture_head_desc: "'$game_concept_culture_head$', kendi [culture|E]'leri üzerinde en fazla etkiye sahip olan [ruler|E]'dir.\n\nÖzellikle, [realm|E]'leri içinde en fazla aynı kültüre sahip [counties|E]'e sahip olan yönetici, [domain|E]'larının nerede olduğuna veya hangi diğer kültüre sahip kontluklare sahip olduklarına bakılmaksızın $game_concept_cultural_head$ olacaktır.\n\n$game_concept_cultural_head$, [cultural_fascination|E]'u ayarlayarak hangi [innovation|E]'in keşif için önceliklendirilmesi gerektiğini etkileyebilir.\n\n[ruler|E]0" #NT!
  game_concept_culture_head_desc_REFORM_DLC: "$game_concept_culture_head$ aynı zamanda Kültürlerinin [reform|E] parçalarını da oluşturabilir." #NT!
  game_concept_culture_head_desc_NO_REFORM_DLC: "$game_concept_culture_head$ aynı zamanda kendi Kültürleri için yeni [traditions|E]'ler de kurabilir." #NT!
@@ -1188,7 +1188,7 @@
  game_concept_great_holy_war_desc: "$game_concept_great_holy_war$, yalnızca belirli [faiths|E]'ün [head_of_faith|E]'sinin ilan edebileceği, tüm [kingdom|E]'ü İnançlarının yönetimi altına alma amacı taşıyan özel bir [war|E] türüdür.\n\n$game_concept_great_holy_wars$, seçilen [kingdom|E] içindeki diğer [religion|E]'nin tüm [rulers|E]'sını hedef alarak onları birlikte savunmaya zorlar. Galip gelinirse, hedeflenen Krallıktaki tüm [titles|E] ele geçirilecek ve saldırganlar arasında paylaştırılacak.\n\n[war|E]0'una bağlı olarak, bir İnanç [war|E]1, [war|E]2'ye erişebilir veya hiç $game_concept_great_holy_wars$'e erişemeyebilir:\n[war|E]4Genel olarak Büyük Kutsal Savaşlara erişmek için [war|E]5, [war|E]6 veya [war|E]7 [war|E]8 gerekir\n[war|E]4[head_of_faith|E]0 Başlı İnançlar yalnızca Yönlendirilmiş Büyük Kutsal Savaşlara erişebilir\n[war|E]4[head_of_faith|E]2 Başlı İnançlar yalnızca Yönlendirilmemiş Büyük Kutsal Savaşlara erişebilir\n[war|E]4İnanç Başı olmayan İnançlar, normalde uygun olsalar bile hiçbir Büyük Kutsal Savaş ilan edemezler\n\nBazı İnançların Büyük Kutsal Savaşları için 'Haçlı Seferi' veya 'Cihat'. Bu Büyük Kutsal Savaşlar sadece isim olarak farklıdır ve diğer Büyük Kutsal Savaşlar gibi işlev görürler." #NT!
  game_concept_directed_great_holy_war: "Büyük Kutsal Savaş'ı yönetti" #NT!
  game_concept_directed_great_holy_wars: "Büyük Kutsal Savaşları yönetti" #NT!
- game_concept_directed_great_holy_war_desc: "Bir $game_concept_directed_great_holy_war$, bir [kingdom|E]'ü kendi yönetimi altına alma niyetiyle bir $doctrine_temporal_head_name$ [head_of_faith|E] tarafından ilan edilir.\n\n[faith|E]'lerinden [rulers|E]'ü İnanç Başkanı'na yardım etmeyi seçebilir ve bunu yaparak ödüller alabilir. Ödüller arasında [piety|E] ve potansiyel olarak [dynasty|E]'lerinin fethedilen Krallık içinde [landed|E] olması yer alır.\n\nHedeflenen [religion|E]'un yöneticileri, bir $doctrine_temporal_head_name$0'a ihtiyaç duymadan bu savaşa karşı savunma yapmayı seçebilirler." #NT!
+ game_concept_directed_great_holy_war_desc: "Bir $game_concept_directed_great_holy_war$, bir [kingdom|E]'ü kendi yönetimi altına alma niyetiyle bir $doctrine_temporal_head_name$ [head_of_faith|E] tarafından ilan edilir.\n\n[faith|E]'lerinden [rulers|E]'ü İnanç Lideri'na yardım etmeyi seçebilir ve bunu yaparak ödüller alabilir. Ödüller arasında [piety|E] ve potansiyel olarak [dynasty|E]'lerinin fethedilen Krallık içinde [landed|E] olması yer alır.\n\nHedeflenen [religion|E]'un yöneticileri, bir $doctrine_temporal_head_name$0'a ihtiyaç duymadan bu savaşa karşı savunma yapmayı seçebilirler." #NT!
  game_concept_undirected_great_holy_war: "Yönlendirilmemiş Büyük Kutsal Savaş" #NT!
  game_concept_undirected_great_holy_wars: "Yönlendirilmemiş Büyük Kutsal Savaşlar" #NT!
  game_concept_undirected_great_holy_war_desc: "Bir $game_concept_undirected_great_holy_war$, bir [kingdom|E]'ü kendi [faith|E]'ünün yönetimi altına getirme niyetiyle bir $doctrine_spiritual_head_name$ [head_of_faith|E] tarafından ilan edilir.\n\n$game_concept_undirected_great_holy_wars$ hemen başlatılmaz, bunun yerine bir [preparation_phase|E]'ya girerler.\n\nSavaştan önce ve savaş sırasında, saldıran İnancın yöneticileri [war_chest|E]'e [gold|E] bağışlamayı seçebilirler.\n\nGalip gelirlerse, hedeflenen Krallık alınır ve saldıran İnancın bir karakterine verilir. Saldıranlar için ödüller arasında [piety|E] ve potansiyel olarak $doctrine_spiritual_head_name$0'larının fethedilen Krallık içinde $doctrine_spiritual_head_name$1 olması yer alır." #NT!
@@ -1204,7 +1204,7 @@
  game_concept_jihads: "Cihatlar" #NT!
  game_concept_title_tier: "Aşama" #NT!
  game_concept_title_tiers: "Katmanlar" #NT!
- game_concept_rank: "Rütbe" #NT!
+ game_concept_rank: "Kademe" #NT!
  game_concept_title_rank: "Rütbe" #NT!
  game_concept_title_ranks: "Rütbeler" #NT!
  game_concept_ranks: "Sıralamalar" #NT!
@@ -1250,7 +1250,7 @@
  game_concept_cadet_branch: "Alt Hane" #NT!
  game_concept_cadet_branches: "Alt Haneler" #NT!
  game_concept_cadet_branching_desc: "[dynasties|E] her zaman kurucu bir [house|E]'e sahiptir, ancak [house_heads|E] kendileri olabilmek için [landed|E] üyeleri kendi yeni Evlerini, bir Alt Haneni yaratmayı seçebilirler.\n\nBu tür yan Evlerin üyeleri de aynısını yapmakta özgürdürler ve sonunda daha büyük Hanedanlık içinde bir Ev ağacına yol açarlar." #NT!
- game_concept_house_head_interaction: "Ev Başkanı Etkileşimi" #NT!
+ game_concept_house_head_interaction: "Ev Lideri Etkileşimi" #NT!
  game_concept_house_head_interaction_desc: "[house_head|E]'in [house|E] üyelerine karşı yapabileceği özel [interactions|E]." #NT!
  game_concept_demand_conversion: "Din Değiştirmesini Talep Et" #NT!
  game_concept_demanding_conversion: "Din Değişim Talebi" #NT!
