@@ -702,8 +702,8 @@ declare_war_desc: "[recipient.GetShortUINameNoTooltip]'e karşı [casus_belli|E]
  offer_vassalization_interaction_aibehavior_allied_tt: "Sen [allies|E]: $VALUE|=+0$'sin" #NT!
  offer_vassalization_interaction_aibehavior_encircled_tt: "[realm|E]'ınızla çevrili: $VALUE|=+0$" #NT!
  offer_vassalization_interaction_aibehavior_not_rightfulliegetitleholder_tt: "Sen [recipient.GetHerHis] [rightful_liege|E] değilsin: $VALUE|=+0$" #NT!
- offer_vassalization_interaction_aibehavior_distantrealm_tt: "[recipient.GetHerHis|U] diyar sizinkinden uzak: $VALUE|=+0$" #NT!
- offer_vassalization_interaction_aibehavior_remoterealm_tt: "[recipient.GetHerHis|U] diyar sizinkinden uzak: $VALUE|=+0$" #NT!
+ offer_vassalization_interaction_aibehavior_distantrealm_tt: "[recipient.GetHerHis|U] ülke sizinkinden uzak: $VALUE|=+0$" #NT!
+ offer_vassalization_interaction_aibehavior_remoterealm_tt: "[recipient.GetHerHis|U] ülke sizinkinden uzak: $VALUE|=+0$" #NT!
  offer_vassalization_interaction_aibehavior_power_tt: "Askeri Gücünüzdeki Fark: $VALUE|=+0$ #weak (maks +20)#!" #NT!
  offer_vassalization_interaction_aibehavior_vassal_opinion_tt: "Sizden [powerful_vassals|E] [opinion|E]: $VALUE|=+0$ #weak (maksimum +20)#!" #NT!
  offer_vassalization_interaction_aibehavior_friend_tt: "[recipient.GetSheHe|U] sizin [friend|E]'inizdir: $VALUE|=+0$" #NT!
@@ -868,7 +868,7 @@ declare_war_desc: "[recipient.GetShortUINameNoTooltip]'e karşı [casus_belli|E]
  char_interaction.0182.a: "Ne kadar hayal kırıklığı..." #NT!
  char_interaction.0190.desc: "Tamam, [actor.GetFaith.GetAdjective] İnancını benimseyeceğim. Her ne kadar aşina olduğum birçok şeyi terk etmek garip hissettirecek olsa da." #NT!
  char_interaction.0191.desc: "İnancım varlığımın özüdür, onu asla terk etmeyeceğim." #NT!
- char_interaction.0200.desc: "[landed_title.GetName]'ın saygınlığının ve sorumluluğunun size emanet edilemeyeceği sonucuna vardım. Bu nedenle, bundan böyle Diyar'ın iyiliği için sizi bu unvandan mahrum ediyorum." #NT!
+ char_interaction.0200.desc: "[landed_title.GetName]'ın saygınlığının ve sorumluluğunun size emanet edilemeyeceği sonucuna vardım. Bu nedenle, bundan böyle Ülke'ın iyiliği için sizi bu unvandan mahrum ediyorum." #NT!
  char_interaction.0200.a: "Buna inanamıyorum!" #NT!
  char_interaction.0201.desc: "[landed_title.GetName] haklı olarak [recipient.GetHouse.GetName] Meclisi'ne aittir. Hiçbir koşulda bundan vazgeçmeyeceğim." #NT!
  char_interaction.0201.a: "Nasıl cesaret edersin [recipient.GetSheHe]!" #NT!
@@ -1511,9 +1511,9 @@ declare_war_desc: "[recipient.GetShortUINameNoTooltip]'e karşı [casus_belli|E]
  destroy_artifact_interaction: "Eseri Yok Et" #NT!
  destroy_artifact_interaction_desc: "Bu eser yok edilecek" #NT!
  interactions_general.tt.must_select_one_option: "En az bir seçeneği seçmelisiniz" #NT!
- find_suitable_accolade_successor_interaction: "Layık Övgüye Layık Halef Arayın" #NT!
+ find_suitable_accolade_successor_interaction: "Layık Mükâfata Layık Halef Arayın" #NT!
  find_suitable_accolade_successor_interaction_desc: "[court|e]'inize katılmak için uygun bir [knight|e] arayın" #NT!
- find_suitable_accolade_successor_interaction.tt: "Bu [accolade|e]'in gerekliliklerini karşılayan bir [knight|e], #high 6 ay içinde [court|e]'nize katılacak#!\n\n@alert_icon! #alert_trial Değerli Övgü Arayın Halefi #high 2 yıl#!#! süreyle kullanılamayacak" #NT!
+ find_suitable_accolade_successor_interaction.tt: "Bu [accolade|e]'in gerekliliklerini karşılayan bir [knight|e], #high 6 ay içinde [court|e]'nize katılacak#!\n\n@alert_icon! #alert_trial Değerli Mükâfat Arayın Halefi #high 2 yıl#!#! süreyle kullanılamayacak" #NT!
  adoption.0001.opening: "[recipient.Custom2('AppropriateGreetingPositive', actor)]" #NT!
  adoption.0001.desc: "Evlat edinme teklifinizi kabul ediyorum. Kendimi [actor.GetHouse.GetBaseName] Evi'nin bir üyesi ve sizin akrabanız olarak adlandırmaktan gurur duyuyorum!" #NT!
  adoption.0001.a: "Lütfen bana "[actor.Custom('GetMumDad')]" deyin." #NT!

@@ -2,8 +2,8 @@
   ##### Hostility ##### 
  struggle_btw_ending_hostility_decision: "[ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] Hakimiyet" #NT!
  struggle_btw_ending_hostility_decision_desc: "Güçlü bir liderin Wildling kabilelerini savaş ve bölünme bataklığından nihayet kurtarmasının zamanı geldi. Gerçek kuzey, [ROOT.Char.GetFaith.GetAdjectiveNoTooltip] [ROOT.Char.Custom('GetQueenKing')|l] bayrağı altında [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] bayrağını dalgalandırarak birleşecek!"
- struggle_btw_ending_hostility_decision_tooltip: "Duvarın Ötesini Sonlandır [struggle|E]"
- struggle_btw_ending_hostility_decision_confirm: "Duvarın Ötesindeki Mücadeleyi Sonlandırın"
+ struggle_btw_ending_hostility_decision_tooltip: "Sur'un Ötesini Sonlandır [struggle|E]"
+ struggle_btw_ending_hostility_decision_confirm: "Sur'un Ötesindeki Mücadeleyi Sonlandırın"
   # Triggers 
  struggle_btw_ending_hostility_decision_kingdom_tt: "Siz [hold|E] ve [completely_control|E] en az 2 [de_jure|E] [kingdoms|E] / [GetTitleByKey('e_beyond_the_wall').GetNameNoTier] ([SCOPE.ScriptValue('fp2_struggle_ending_kingdom_counter_value')|0]/[SCOPE.ScriptValue('fp2_struggle_hostility_kingdom_total_value')|0])"
  struggle_btw_ending_hostility_decision_united_wildling_tribe_tt: "Yabanıl kabileleri [primary_title|E] altında birleştirdin"
@@ -19,7 +19,7 @@
  fp2_struggle_hostility_culture_cb_tt: "$CONQUEST_DUCHY_CB_NAME$ [casus_bellis|E] diğerlerine karşı [struggle_involved|E] [cultures|E]: #positive_value -50%#!"
  fp2_struggle_hostility_culture_tt: "Tüm [struggle_involved|E] [cultures|E]'ler birbirlerinden #negative_value [SCOPE.ScriptValue('fp2_struggle_hostility_culture_acceptance_value')]%#! [cultural_acceptance|E] kaybeder"
  fp2_struggle_hostility_culture_large_tt: "Tüm [struggle_involved|E] [cultures|E]'ler birbirlerinden #negative_value [SCOPE.ScriptValue('fp2_struggle_hostility_culture_acceptance_large_value')]%#! [cultural_acceptance|E] kaybeder"
- fp2_struggle_hostility_acceptance_tt: "Duvarın Ötesindeki Düşmanlık"
+ fp2_struggle_hostility_acceptance_tt: "Sur'un Ötesindeki Düşmanlık"
   # Modifiers 
  fp2_struggle_hostility_house_faith_modifier: "İnanç Düşmanlığı"
  fp2_struggle_hostility_house_faith_modifier_desc: "Bu ev inançları uğruna birçok Yabanıl kabilesini fethetmiştir."
@@ -49,7 +49,7 @@
  fp2_struggle_compromise_house_enforce_truce_rewards_tt: "[enforce_truce|E] [interaction|E]'in diğerine [houses|E] doğru kilidini açar"
  fp2_struggle_compromise_defensive_rewards_tt: "Sizin ve [independent|E] [struggle_involved|E] [rulerpossessive|E] [capital|E] [counties|E]"
  fp2_struggle_compromise_truce_tt: "Her [independent|E] [struggle_involved|E] [ruler|E] 10 yıl boyunca #V #! [truce|E] kazanır, diğerleriyle birlikte"
- TRUCE_FP2_COMPROMISE: "Duvarın Ötesinde Uzlaşma"
+ TRUCE_FP2_COMPROMISE: "Sur'un Ötesinde Uzlaşma"
   # Modifiers 
  fp2_struggle_compromise_house_reward_modifier: "Anlaşmak"
  fp2_struggle_compromise_house_reward_modifier_desc: "Bu ev, krallıklarını gerçek kuzey uğruna verilen mücadeleden kurtardı."
@@ -64,7 +64,7 @@
  struggle_btw_ending_conciliation_decision_alliance_tt: "Diğer tüm [independent|E] [struggle_involved|E] [rulers|E]'lerin yanınızda bir [alliance|E]'ü var ([SCOPE.ScriptValue('struggle_btw_ending_conciliation_decision_alliance_counter_value')|0]/[SCOPE.ScriptValue('struggle_btw_ending_ending_decision_foreign_realm_total_value')|0])"
   #Effects 
  fp2_struggle_conciliation_marriage_unlocked_tt: "Kalıcı olarak #positive_value, tüm [struggle_involved|E] [cultures|E] arasında dinler arası [marriage|E]'ye#! izin veriyor"
- fp2_struggle_conciliation_acceptance_tt: "Duvarın Ötesinde Uzlaşma"
+ fp2_struggle_conciliation_acceptance_tt: "Sur'un Ötesinde Uzlaşma"
  fp2_struggle_conciliation_culture_tt: "Tüm [struggle_involved|E] [cultures|E]'ler birbirlerinden #positive_value +[SCOPE.ScriptValue('fp2_struggle_conciliation_culture_acceptance_value')|0]%#! [cultural_acceptance|E] kazanır"
  fp2_struggle_conciliation_join_war_tt: "[struggle_involved|E] [culture|E] ve [faith|E] [rulers|E]'ün [GetGeographicalRegion('world_westeros_beyond_the_wall').GetName]'in dış istilacılarına karşı birbirlerinin savunmasına [wars|E] katılmasına kalıcı olarak izin verir"
   # Modifiers 

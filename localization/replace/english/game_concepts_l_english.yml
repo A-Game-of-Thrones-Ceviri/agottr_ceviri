@@ -89,7 +89,7 @@
  game_concept_powerful_vassal_possessive: "Güçlü Vassallar" #NT!
  game_concept_powerful_vassal_desc: "'$game_concept_powerful_vassals$' en fazla [soldiers|E] ve en yüksek [income|E]'e sahip bir avuç [vassals|E]'dir. Bu vasallara dikkat etmeniz gerekir, çünkü sizin [council|E]'ünüzde bir koltuk tutmayı beklerler ve bunu yapmazlarsa sizden önemli ölçüde daha az [opinion|E]'e sahip olurlar.\n\nBir [succession_law|E]'yı değiştirmek için tüm $game_concept_powerful_vassals$'ların sizden pozitif bir [opinion|E]'e sahip olması, sizin tarafınızdan [cowed|E] olması veya [vassals|E]0 olması gerekir." #NT!
  game_concept_realm_law: "Krallık Hukuku" #NT!
- game_concept_realm_law_desc: "Bu karakterin diyarına uygulanan kurallar, örneğin [crown_authority|E] veya [tribal_authority|E] seviyesi." #NT!
+ game_concept_realm_law_desc: "Bu karakterin Ülkenina uygulanan kurallar, örneğin [crown_authority|E] veya [tribal_authority|E] seviyesi." #NT!
  game_concept_title_law: "Tapu Hukuku" #NT!
  game_concept_title_laws: "Tapu Kanunları" #NT!
  game_concept_title_law_desc: "[titles|E]'a, o Unvana özgü bir [title_specific_succession|E] Yasası verilebilir. Bu Yasa, aynı karakterin sahip olduğu diğer unvanlardan farklı halefiyet kuralları belirleyecektir." #NT!
@@ -119,9 +119,9 @@
  game_concept_title_heir: "Ünvan Varisi" #NT!
  game_concept_title_heirs: "Ünvan Varisleri" #NT!
  game_concept_title_heir_desc: "Unvan Varisi, kendi [title_succession|E]'sine sahip belirli bir [title|E]'in [heir|E]'ıdır. Mevcut [holder|E] öldüğünde o Unvanı alacaktır." #NT!
- game_concept_realm_heir: "Diyar Varisi" #NT!
- game_concept_realm_heirs: "Diyarın Varisleri" #NT!
- game_concept_realm_heir_desc: "Bir Diyar Varisi, bir [realm|E]'in [heirs|E]'ından biridir ve Hükümdar öldüğünde o Diyarın [ruler|E]'ünün elinde bulunan [titles|E]'nin tamamını veya bir kısmını alır.\n\nBir Diyarın bir veya daha fazla Diyar Varisi olabilir [succession_law|E]'e bağlı olarak." #NT!
+ game_concept_realm_heir: "Ülke Varisi" #NT!
+ game_concept_realm_heirs: "Ülke Varisleri" #NT!
+ game_concept_realm_heir_desc: "Bir Ülke Varisi, bir [realm|E]'in [heirs|E]'ından biridir ve Hükümdar öldüğünde o Ülkenin [ruler|E]'ünün elinde bulunan [titles|E]'nin tamamını veya bir kısmını alır.\n\nBir Ülkenin bir veya daha fazla Ülke Varisi olabilir [succession_law|E]'e bağlı olarak." #NT!
  game_concept_disinherit: "Miras hakkından mahrum etmek" #NT!
  game_concept_disinherited: "Miras bırakılmamış" #NT!
  game_concept_disinheriting: "Miras bırakmama" #NT!
@@ -155,9 +155,9 @@
  game_concept_court_chaplain: "Saray Papazı" #NT!
  game_concept_court_chaplains: "Saray Din Görevlileri" #NT!
  game_concept_court_chaplain_desc: "$game_concept_court_chaplain$, [faiths|E]'de dini ve manevi işlerden sorumlu [councillor|E]'dir ve [GetFaithDoctrine('doctrine_theocracy_lay_clergy').GetBaseName] [doctrine|E]'tür.\n\n[GetFaithDoctrine('doctrine_theocracy_temporal').GetBaseName] Doktrini olan İnançlar, $game_concept_court_chaplain$ yerine çok daha güçlü (ve sorunlu) [realm_priest|E]'ya sahiptir." #NT!
- game_concept_realm_priest: "Diyar Rahibi" #NT!
- game_concept_realm_priests: "Diyar Rahipleri" #NT!
- game_concept_realm_priest_possessive: "Diyar Rahipleri" #NT!
+ game_concept_realm_priest: "Ülke Rahibi" #NT!
+ game_concept_realm_priests: "Ülke Rahipleri" #NT!
+ game_concept_realm_priest_possessive: "Ülke Rahipleri" #NT!
  game_concept_realm_priest_desc: "$game_concept_realm_priest$, [faiths|E]'de dini ve manevi işlerden sorumlu [councillor|E]'dir ve [GetFaithDoctrine('doctrine_theocracy_temporal').GetBaseName] [doctrine|E]'tür.\n\n[GetFaithDoctrine('doctrine_theocracy_lay_clergy').GetBaseName] eşdeğerlerinin ([court_chaplains|E]) aksine, $game_concept_realm_priests$ otomatik olarak [councillor|E]0'lu [councillor|E]1'deki tüm [temple_holdings|E]'ları [lease|E] yapar ve ayrıca [councillor|E]4 $game_concept_realm_priests$'den [councillor|E]2 ve [councillor|E]3'ün bir kısmını alır.\n\n$game_concept_realm_priests$, olumlu bir Görüşe sahiplerse [councillor|E]7'lerine Milisler ve Vergiler sağlar. [councillor|E]7'lerinin [councillor|E]8'i ne kadar yüksekse, o kadar fazla sağlarlar.\n\n$game_concept_realm_priests$, Efendilerinin Görüşü düşükse, onlara herhangi bir Vergi veya Harç sağlamaz ve sorunlara yol açabilir." #NT!
  game_concept_law: "Kanun" #NT!
  game_concept_laws: "Kanunlar" #NT!
@@ -274,17 +274,17 @@
  game_concept_doctrines_desc: "Doktrinler, [faith|E] içinde kabul edilebilir davranışın ne olduğunu belirleyen dini yasalar olarak düşünülebilir." #NT!
  game_concept_gender_doctrines: "Cinsiyet Doktrinleri" #NT!
  game_concept_gender_doctrines_desc: "Bu [doctrines|E], [faith|E] karakterlerinin hangi [gender_laws|E]'e erişebileceğini belirler.\n\nAyrıca, hangi [claims|E]'ün miras alınabileceği, kimlerin [commanders|E] ve [knights|E] olabileceği ve ebeveynlerinden hangisinin [house|E]'sına bir [bastard|E]'nin ait olacağı gibi belirli ek kuralları da belirler.\n\nCinsiyet Doktrinleri şunlardır:\n$BULLET_WITH_TAB$Erkek Egemen\n$BULLET_WITH_TAB$Eşit\n$BULLET_WITH_TAB$Kadın Egemen" #NT!
- game_concept_realm_capital: "Diyar Başkenti" #NT!
- game_concept_realm_capitals: "Diyar Başkentleri" #NT!
+ game_concept_realm_capital: "Ülke Başkenti" #NT!
+ game_concept_realm_capitals: "Ülke Başkentleri" #NT!
  game_concept_capital: "Başkent" #NT!
- game_concept_realm_capital_desc: "$game_concept_realm_capital$, [ruler|E] ve [court|E]'lerinin bulunduğu [holding|E]'dir. Bu Yerleşim'in [tax|E] bonusu vardır ve her zaman [primary_heir|E] tarafından devralınır.\n\n[occupying|E] Bir savaşta düşmanın Diyar Başkenti önemli miktarda [war_score|E] verir ve bazen düşmanın ailesinden [imprison|E] üyeye izin verir." #NT!
+ game_concept_realm_capital_desc: "$game_concept_realm_capital$, [ruler|E] ve [court|E]'lerinin bulunduğu [holding|E]'dir. Bu Yerleşim'in [tax|E] bonusu vardır ve her zaman [primary_heir|E] tarafından devralınır.\n\n[occupying|E] Bir savaşta düşmanın Ülke Başkenti önemli miktarda [war_score|E] verir ve bazen düşmanın ailesinden [imprison|E] üyeye izin verir." #NT!
  game_concept_county_capital: "Kontluk Başkenti" #NT!
  game_concept_county_capitals: "Kontluk Başkentleri" #NT!
  game_concept_county_capital_desc: "$game_concept_county_capital$, [county|E]'nin ana [holding|E]'idir. Bu Yerleşim asla yok edilemez veya [leased|E] dışarı atılamaz ve her zaman [title|E] Kontluğunu elinde tutan [ruler|E]'e aittir.\n\nKontluk Başkentleri, daha küçük bir Holdinge kıyasla ek bir [building|E] inşa edilmesine izin verir." #NT!
  game_concept_de_jure_capital: "De Jure Başkenti" #NT!
  game_concept_de_jure_capital_desc: "Bir [title|E]'in $game_concept_de_jure_capital$, tarihi başkenti olan [county|E]'dur. Zaten taşınmış olsa bile, [realm_capital|E]'nizi her zaman [primary_title|E]'ın $game_concept_de_jure_capital$'ine taşımayı seçebilirsiniz." #NT!
  game_concept_capital_duchy: "Dükalık Başkenti" #NT!
- game_concept_capital_duchy_desc: "$game_concept_capital_duchy$ Değiştiricisi, [capital|E]'inizle aynı [de_jure|E] [duchy|E] içinde tuttuğunuz tüm [holdings|E]'lerden elde ettiğiniz [levies|E] miktarını artırır. Ayrıca tüm [stationed|E] [men_at_arms|E]'lere bir bonus verir. Bu değiştiricinin etkin olması için, ilgili Dükalığı kişisel olarak tutmanız gerekir.\n\nBu değiştirici Diyar Başkent bonusuyla birleşmez." #NT!
+ game_concept_capital_duchy_desc: "$game_concept_capital_duchy$ Değiştiricisi, [capital|E]'inizle aynı [de_jure|E] [duchy|E] içinde tuttuğunuz tüm [holdings|E]'lerden elde ettiğiniz [levies|E] miktarını artırır. Ayrıca tüm [stationed|E] [men_at_arms|E]'lere bir bonus verir. Bu değiştiricinin etkin olması için, ilgili Dükalığı kişisel olarak tutmanız gerekir.\n\nBu değiştirici Ülke Başkent bonusuyla birleşmez." #NT!
  game_concept_liege: "Süzeren" #NT!
  game_concept_lieges: "Süzerenler" #NT!
  game_concept_liege_possessive: "Süzerenin" #NT!
@@ -305,7 +305,7 @@
  game_concept_regiment: "Alay" #NT!
  game_concept_regiments: "Alaylar" #NT!
  game_concept_regiment_desc: "$game_concept_regiment$, tek tipteki [soldiers|E]'lerden oluşan bir gruptur (örneğin, okçular, piyadeler veya [levies|E]). $game_concept_levies$, $game_concept_regiments$'e organize edilmiş olsa da, gerçek ilgi çekenler [men_at_arms|E]'tir." #NT!
- game_concept_realm: "Diyar" #NT!
+ game_concept_realm: "Ülke" #NT!
  game_concept_realms: "Diyarlar" #NT!
  game_concept_realm_desc: "$game_concept_realm$, [ruler|E]'in doğrudan veya [vassals|E] aracılığıyla kontrol ettiği tüm topraklardır ([domain|E]'ün aksine, [domain|E], bir Hükümdarın kişisel olarak sahip olduğu yalnızca [holdings|E]'tür)." #NT!
  game_concept_gold: "Altın" #NT!
@@ -741,7 +741,7 @@
  game_concept_feudal_desc: "Feodal [government_form|E]'da, bir [liege|E], Vasal ve Süzeren arasındaki bireysel [feudal_contracts|E] tarafından düzenlenen [levies|E] ve [taxes|E] karşılığında, [vassals|E] [land|E]'ünü yönetir." #NT!
  game_concept_tribal: "Kabilesel" #NT!
  game_concept_tribal_government: "Kabile Hükümeti" #NT!
- game_concept_tribal_desc: "Kabile diyarları [development|E] kontluksini bodurlaştırdı, Kabile Çağı [innovations|E]'i geçemedi, yeni [holdings|E] inşa edemedi ve genellikle [succession_law|E]'lerini değiştiremedi.\n\nAncak, diyarlarını inşa etmek ve [men_at_arms|E] kiralamak için [gold|E] yerine [prestige|E] kullanabilirler ve [feudal|E] Diyar'a kıyasla daha fazla [casus_belli|E]'ye erişebilirler. Kabile dışı ordular düşman Kabile topraklarında [supply_limit|E] cezası alırlar." #NT!
+ game_concept_tribal_desc: "Kabile diyarları [development|E] kontluksini bodurlaştırdı, Kabile Çağı [innovations|E]'i geçemedi, yeni [holdings|E] inşa edemedi ve genellikle [succession_law|E]'lerini değiştiremedi.\n\nAncak, diyarlarını inşa etmek ve [men_at_arms|E] kiralamak için [gold|E] yerine [prestige|E] kullanabilirler ve [feudal|E] Ülke'a kıyasla daha fazla [casus_belli|E]'ye erişebilirler. Kabile dışı ordular düşman Kabile topraklarında [supply_limit|E] cezası alırlar." #NT!
  game_concept_clan: "Klan" #NT!
  game_concept_clans: "Klanlar" #NT!
  game_concept_clan_government: "Klan Hükümeti" #NT!
@@ -851,7 +851,7 @@
  game_concept_implicit_claim_desc: "$game_concept_implicit_claims$, ebeveynlerinin elindeki tüm [titles|E]'lerde [eligible_children|E]'ye verilen [claims|E]'dir. Ebeveynlerden biri [title|E] kaybederse, çocuğun $game_concept_implicit_claim$'i de silinir." #NT!
  game_concept_claimant: "Hak Sahibi" #NT!
  game_concept_claimants: "Hak Sahipleri" #NT!
- game_concept_claimant_desc: "$game_concept_claimant$, bir veya daha fazla [claims|E] ila [titles|E]'ye sahip olan kişidir. [ruler|E] Hak Sahipleri, [wars|E]'i bildirmek için Talep [casus_belli|E]'ü kullanarak bunları bastırabilirler.\n\nBu Casus Belli, [realm|E]'inizdeki [vassals|E] ve hatta [unlanded|E] karakterlerinin Taleplerini bastırmak için de kullanılabilir.\n\Hak Sahipleri, sizin Diyarınızda ikamet etmeseler bile [factions|E]'u da yönlendirebilirler." #NT!
+ game_concept_claimant_desc: "$game_concept_claimant$, bir veya daha fazla [claims|E] ila [titles|E]'ye sahip olan kişidir. [ruler|E] Hak Sahipleri, [wars|E]'i bildirmek için Talep [casus_belli|E]'ü kullanarak bunları bastırabilirler.\n\nBu Casus Belli, [realm|E]'inizdeki [vassals|E] ve hatta [unlanded|E] karakterlerinin Taleplerini bastırmak için de kullanılabilir.\n\Hak Sahipleri, sizin Ülkeninızda ikamet etmeseler bile [factions|E]'u da yönlendirebilirler." #NT!
  game_concept_renounce: "Vazgeçmek" #NT!
  game_concept_renounced: "Reddedildi" #NT!
  game_concept_renounce_desc: "[prisoners|E], [realm|E]'ünüz dahilinde [titles|E]'deki tüm [claims|E]'lerden vazgeçmeniz karşılığında serbest bırakılabilir.\n\nAncak, mevcut [holder|E]'ün çocukları, Sahip hala hayatta olduğu sürece Taleplerini asla kaybedemezler." #NT!
@@ -1332,7 +1332,7 @@
  game_concept_papal_recipient_desc: "[great_holy_war|E]'ın ana hedefi saldırgan inancın bir üyesi tarafından tutuluyorsa veya talep ediliyorsa, ana [Concept( 'war_contribution', 'Contributor' )|E] kendi [beneficiary|E]'sine öncelik vermeye karar vermediği sürece, uğruna mücadele edilen unvanın haklı sahibi olarak kabul edilir." #NT!
  game_concept_end_date: "Bitiş tarihi" #NT!
  game_concept_end_date_desc: "1453 yılı Bitiş Tarihi'dir ve bu tarihe ulaşıldığında oyun sona erecektir." #NT!
- game_concept_realm_size: "Diyar Boyutu" #NT!
+ game_concept_realm_size: "Ülke Boyutu" #NT!
  game_concept_realm_size_desc: "Bir karakterin $game_concept_realm_size$'ı, sahip olduğu [counties|E] ve sahip olduğu [vassals|E] sayısıdır." #NT!
  game_concept_voter_strength: "Seçmen Gücü" #NT!
  game_concept_voting_strength: "Oylama Gücü" #NT!
@@ -1863,7 +1863,7 @@
  game_concept_regencies: "Naiplikler" #NT!
  game_concept_regency_possessive: "Naiplik" #NT!
  game_concept_regencies_possessive: "Naipliklerin" #NT!
- game_concept_regency_desc: "Naiplik, [ruler|E]'in [realm|E]'sini kendi başına yönetemediği durumlarda kullanılan özel bir [diarchy|E] biçimidir.\n\nGenellikle Hükümdar [child|E], [imprisoned|E], [GetTrait('incapable').GetName(GetPlayer)] olduğunda veya kendi Diyarının dışında bir [activity|E]'ya katıldığında ortaya çıkar.\n\nÇok uzun süre devam eden bir $game_concept_regency$, [entrenched_regency|E] olabilir." #NT!
+ game_concept_regency_desc: "Naiplik, [ruler|E]'in [realm|E]'sini kendi başına yönetemediği durumlarda kullanılan özel bir [diarchy|E] biçimidir.\n\nGenellikle Hükümdar [child|E], [imprisoned|E], [GetTrait('incapable').GetName(GetPlayer)] olduğunda veya kendi Ülkeninın dışında bir [activity|E]'ya katıldığında ortaya çıkar.\n\nÇok uzun süre devam eden bir $game_concept_regency$, [entrenched_regency|E] olabilir." #NT!
  game_concept_regency_veto: "Diarşi Veto" #NT!
  game_concept_veto: "Veto" #NT!
  game_concept_regency_veto_desc: "Bir [diarch|E], [diarch_powers|E]'ini kullandığında, [liege|E]'si, [prestige|E] pahasına Diarchy Veto'yu kullanarak onu durdurabilir." #NT!
@@ -2050,25 +2050,25 @@
  game_concept_intimidation_tour_desc: "[vassals|E]'inizi korkutmaya çalıştığınız, [dread|E] kazandığınız ve onları [factions|E]'ten zorla çıkardığınız bir [tour_type|E]." #NT!
  game_concept_taxation_tour: "Vergilendirme Turu" #NT!
  game_concept_taxation_tour_desc: "[vassals|E]'inizden zenginlik çıkarmaya çalıştığınız ve [gold|E] kazandığınız bir [tour_type|E]." #NT!
- game_concept_accolade: "Övgü" #NT!
- game_concept_accolades: "Övgüler" #NT!
- game_concept_accolade_desc: "Övgüler, [knights|E]'a [liege|E]'leri tarafından verilen onurlardır.\n\nÖvgü sahibi Şövalye [acclaimed_knight|E] olur.\n\nÖvgüye Layık Şövalye [glory|E] kazandıkça, [accolade_types|E]'lerinin [accolade_rank|E]'ü artar ve Efendisine daha güçlü bonuslar sunar.\n\nÖvgüye Layık Şövalyeler öldüğünde, [accolade_succession|E] ile değiştirilirler.\n\n[innovations|e] ve üzeri [title_tiers|e], [rulers|E]'un aynı anda daha fazla Övgüye sahip olmasını sağlar." #NT!
- game_concept_acclaimed_knight: "Övgüye değer şövalye" #NT!
- game_concept_acclaimed_knights: "Övgüye Değer Şövalyeler" #NT!
+ game_concept_accolade: "Mükâfat" #NT!
+ game_concept_accolades: "Mükâfatlar" #NT!
+ game_concept_accolade_desc: "Mükâfatlar, [knights|E]'a [liege|E]'leri tarafından verilen onurlardır.\n\nMükâfat sahibi Şövalye [acclaimed_knight|E] olur.\n\nMükâfata Layık Şövalye [glory|E] kazandıkça, [accolade_types|E]'lerinin [accolade_rank|E]'ü artar ve Efendisine daha güçlü bonuslar sunar.\n\nMükâfata Layık Şövalyeler öldüğünde, [accolade_succession|E] ile değiştirilirler.\n\n[innovations|e] ve üzeri [title_tiers|e], [rulers|E]'un aynı anda daha fazla Mükâfata sahip olmasını sağlar." #NT!
+ game_concept_acclaimed_knight: "Mükâfata değer şövalye" #NT!
+ game_concept_acclaimed_knights: "Mükâfata Değer Şövalyeler" #NT!
  game_concept_acclaimed_knight_desc: "[knight|E]'ın elinde [accolade|E] var.\n\nAlkışlanmış Şövalye olmak için, bir Şövalyenin [unlanded|E] veya [baron|E] olması ve en az [EmptyScope.ScriptValue('accolade_prowess_requirement_value')|0V] veya daha fazla [prowess|E]'e sahip olması gerekir.\n\nAlkışlanmış Şövalye iki [accolade_types|E]'ya uygun olmalıdır; hiçbirisi daha önceden [liege|e]'lerinin Alkışlanmış Şövalyelerinden birine ait olamaz." #NT!
- game_concept_accolade_type: "Övgü Niteliği" #NT!
- game_concept_accolade_types: "Övgü Nitelikleri" #NT!
+ game_concept_accolade_type: "Mükâfat Niteliği" #NT!
+ game_concept_accolade_types: "Mükâfat Nitelikleri" #NT!
  game_concept_accolade_type_desc: "Bir [accolade|E]'ın birincil ve ikincil bir Özelliği vardır ve [accolade_rank|E] arttıkça bonuslar verir.\n\nHer potansiyel [acclaimed_knight|E] yalnızca belirli Özellikler için uygundur, çoğunlukla [traits|E]'lerine dayanır. [accolade_succession|E]'te yeni Şövalye Birincil Özelliği yerine getirmelidir, ancak İkincil, [glory|E] kaybıyla değiştirilebilir. Ayrıca, bir Özellik [retinue_maa|E]'ya erişim sağlıyorsa, bunu yalnızca Birincil Özellik olduğunda yapacaktır. \n\nHer Accolade'ın iki benzersiz Özelliği olmalıdır. Bir Süzeren #high, Accolade'lar arasındaki Özellikleri kopyalayamaz#!." #NT!
  game_concept_accolade_succession: "Ödül Miras" #NT!
- game_concept_accolade_succession_desc: "Övgü Halefiyeti, bir [accolade|E]'ın [acclaimed_knight|e]'i öldüğünde veya rol için geçersiz hale geldiğinde gerçekleşir.\n\nAlkışlanan Şövalye, Birincil [accolade_type|E] için uygun olması gereken Halefiyle değiştirilir. İkincil Nitelik, [glory|E] kaybıyla değiştirilebilir.\n\nSarayda layık Halef yoksa, uygun adayları davet etmek için #high $call_for_acclaimed_knight_candidates_decision$#! kararı kullanılabilir." #NT!
+ game_concept_accolade_succession_desc: "Mükâfat Halefiyeti, bir [accolade|E]'ın [acclaimed_knight|e]'i öldüğünde veya rol için geçersiz hale geldiğinde gerçekleşir.\n\nAlkışlanan Şövalye, Birincil [accolade_type|E] için uygun olması gereken Halefiyle değiştirilir. İkincil Nitelik, [glory|E] kaybıyla değiştirilebilir.\n\nSarayda layık Halef yoksa, uygun adayları davet etmek için #high $call_for_acclaimed_knight_candidates_decision$#! kararı kullanılabilir." #NT!
  game_concept_accolade_rank: "Ödül Sıralaması" #NT!
  game_concept_accolade_ranks: "Ödül Sıralamaları" #NT!
  game_concept_accolade_rank_short: "Rütbe" #NT!
- game_concept_accolade_rank_desc: "[accolade|e], [accolade_types|e]'üne özgü bonusları açan #value 6#! kademeli Sıraya sahiptir, örneğin [knight_army_modifiers|e].\n\n[glory|E] kazanmak her Sıranın kilidini açarken, Şan kaybetmek bunların kaybolmasına neden olabilir.\n\nTek sayılı Sıralar Övgü'nün Birincil Niteliği tarafından, çift sayılı Sıralar ise İkincil Niteliği tarafından sağlanır." #NT!
+ game_concept_accolade_rank_desc: "[accolade|e], [accolade_types|e]'üne özgü bonusları açan #value 6#! kademeli Sıraya sahiptir, örneğin [knight_army_modifiers|e].\n\n[glory|E] kazanmak her Sıranın kilidini açarken, Şan kaybetmek bunların kaybolmasına neden olabilir.\n\nTek sayılı Sıralar Mükâfat'nün Birincil Niteliği tarafından, çift sayılı Sıralar ise İkincil Niteliği tarafından sağlanır." #NT!
  game_concept_inactive_accolade: "Aktif Olmayan Ödül" #NT!
- game_concept_inactive_accolade_desc: "[accolades|E] geçersiz kılındığında Etkin Olmayan hale gelir.\n\nBir Övgü aşağıdaki durumlarda etkin olmayan hale gelir:\n$EFFECT_LIST_BULLET$ [acclaimed_knight|e] veya [ruler|E]'ü artık [accolade_type|e] gereksinimlerini karşılamıyorsa\n$EFFECT_LIST_BULLET$ Övgüye Değer Şövalye ölürse veya Hükümdarının [court|e]'sını bir Halef olmadan bırakırsa\n$EFFECT_LIST_BULLET$ [ruler|E] onu manuel olarak emekliye ayırırsa" #NT!
+ game_concept_inactive_accolade_desc: "[accolades|E] geçersiz kılındığında Etkin Olmayan hale gelir.\n\nBir Mükâfat aşağıdaki durumlarda etkin olmayan hale gelir:\n$EFFECT_LIST_BULLET$ [acclaimed_knight|e] veya [ruler|E]'ü artık [accolade_type|e] gereksinimlerini karşılamıyorsa\n$EFFECT_LIST_BULLET$ Mükâfata Değer Şövalye ölürse veya Hükümdarının [court|e]'sını bir Halef olmadan bırakırsa\n$EFFECT_LIST_BULLET$ [ruler|E] onu manuel olarak emekliye ayırırsa" #NT!
  game_concept_glory: "Görkem" #NT!
- game_concept_glory_desc: "[accolade|E]'ın Şanı, [accolade_rank|E]'ini artırır.\n\nŞan, [acclaimed_knight|E]'nin [battles|E]'ü kazanması, savaşçıları yenmesi, [GetActivityType( 'activity_tournament' ).GetName] [contests|E]'te yarışması ve [activities|E]'ya katılmasıyla elde edilir.\n\nAncak, Övgüye Değer Şövalye savaşları kaybettiğinde, [accolade_succession|e]'de ve Övgü [inactive_accolade|E] olduğunda Övgü'nün Şanı düşürülür." #NT!
+ game_concept_glory_desc: "[accolade|E]'ın Şanı, [accolade_rank|E]'ini artırır.\n\nŞan, [acclaimed_knight|E]'nin [battles|E]'ü kazanması, savaşçıları yenmesi, [GetActivityType( 'activity_tournament' ).GetName] [contests|E]'te yarışması ve [activities|E]'ya katılmasıyla elde edilir.\n\nAncak, Mükâfata Değer Şövalye savaşları kaybettiğinde, [accolade_succession|e]'de ve Mükâfat [inactive_accolade|E] olduğunda Mükâfat'nün Şanı düşürülür." #NT!
  game_concept_tax_collector: "Vergi memuru" #NT!
  game_concept_tax_collector_desc: "$game_concept_tax_collector$, [tax_jurisdictions|E]'in işlev görmesini sağlar.\n\nOnların [aptitude|E]'leri, [liege|E]'leri için topladıkları [taxes|E] ve [levies|E] miktarını belirler." #NT!
  game_concept_tax_collectors: "Vergi Tahsildarları" #NT!
