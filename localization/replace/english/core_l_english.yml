@@ -1,836 +1,819 @@
 ﻿l_english:
- SM_LANGUAGE: "Dil" #NT!
- ENGLISH_SUPPORTED: "Evet" #NT!
- SPANISH_SUPPORTED: "Evet" #NT!
- GERMAN_SUPPORTED: "Evet" #NT!
- FRENCH_SUPPORTED: "Evet" #NT!
- ENGLISH: "İngilizce" #NT!
- SPANISH: "İspanyolca" #NT!
- GERMAN: "Almanca" #NT!
- FRENCH: "Fransızca" #NT!
- MAIN_MENU: "Ana Menü" #NT!
- NEW: "Yeni" #NT!
- TUTORIAL: "Eğitim" #NT!
- CONTENT: "İçerik" #NT!
- LOAD_GAME: "Oyunu Yükle" #NT!
- SAVE_GAME: "Oyunu Kaydet" #NT!
- DELETE_GAME: "Oyunu Sil" #NT!
- SAVE: "Kaydet" #NT!
- DELETE: "Sil" #NT!
- DELETE_CONFIRMATION_DESC: "$NAME|V$ kayıtlı oyunu silinecek. Emin misiniz?" #NT!
- CLOUDSAVE_UNVAVAILABLE_TOOLTIP: "Buluta kaydetme özelliği mevcut değil" #NT!
- SAVE_ENABLE_CLOUDSAVE_TOOLTIP: "Buluta Kaydet" #NT!
- LOAD_CLOUDSAVE_TOOLTIP: "Buluta Kaydet" #NT!
- LOAD_IRONMAN_TOOLTIP: "Ironman Kaydet" #NT!
- LOAD_ACHIEVEMENTS_ENABLED_TOOLTIP: "Başarımlar Açık" #NT!
- LOAD_ACHIEVEMENTS_DISABLED_TOOLTIP: "Başarımlar Kapalı" #NT!
- LOAD_MULTIPLAYER_TOOLTIP: "Çok Oyunculu Kaydet ([SaveGameItem.GetNumberOfPlayers] oyuncu)" #NT!
- LOAD_INVALID_TOOLTIP: "#X Geçersiz kayıtlı oyun. Çökmelere neden olabilir.#!" #NT!
- LOAD_LAST_PLAYED: "Son oynanan: [SaveGameItem.GetLastPlayed]" #NT!
- LOAD_SHOW_INVALID_SAVEGAMES: "Geçersiz Kayıtlı Oyunları Göster" #NT!
- GAME_OPTIONS: "Oyun Seçenekleri" #NT!
- HELP: "Yardım" #NT!
- RELOAD: "Tekrar Yükle" #NT!
- OPEN_SOURCE: "Açık Kaynak Dosyası" #NT!
- CANCEL: "İptal Et" #NT!
- LOBBY: "Lobi" #NT!
- START: "Başlat" #NT!
- FINISH: "Bitir" #NT!
- DISABLED_BUTTON: "Uygulanmadı..." #NT!
- CURRENT_DATE: "[GetCurrentDate.GetStringLong]" #NT!
- CURRENT_DATE_TOOLTIP: "[JoinText( '\n', GetCurrentDateStringWithSyncInfo, GetPausedByEventReason )]" #NT!
- CURRENT_SPEED_LAGGING_PLAYER: "Hız azaldı: [GetLaggingPlayerName] geride kaldı\n" #NT!
- CURRENT_SPEED_CLICK_TT_1: "#I Hızı değiştirmek için tıklayın $CURRENT_SPEED_TEXT_1$#!" #NT!
- CURRENT_SPEED_CLICK_TT_2: "#I Hızı değiştirmek için tıklayın $CURRENT_SPEED_TEXT_2$#!" #NT!
- CURRENT_SPEED_CLICK_TT_3: "#I Hızı değiştirmek için tıklayın $CURRENT_SPEED_TEXT_3$#!" #NT!
- CURRENT_SPEED_CLICK_TT_4: "#I Hızı değiştirmek için tıklayın $CURRENT_SPEED_TEXT_4$#!" #NT!
- CURRENT_SPEED_CLICK_TT_5: "#I Hızı değiştirmek için tıklayın $CURRENT_SPEED_TEXT_5$#!" #NT!
- CURRENT_SPEED_ONLY_HOST: "Sadece Ana Bilgisayar hızı değiştirebilir" #NT!
- CURRENT_SPEED_TOOLTIP: "#T Oyun Hızı: [GetCurrentGameSpeedText|V]#!\n[SelectLocalization( StringIsEmpty(GecikmeliOyuncuAdı), '', 'GECİKMELİ_OYUNCU_HIZI' )]" #NT!
- CHANGE_SPEED_TOOLTIP_1: "$CURRENT_SPEED_TOOLTIP$[SelectLocalization( JominiIsHostOrLocal, 'CURRENT_SPEED_CLICK_TT_1', 'CURRENT_SPEED_ONLY_HOST' )]" #NT!
- CHANGE_SPEED_TOOLTIP_2: "$CURRENT_SPEED_TOOLTIP$[SelectLocalization( JominiIsHostOrLocal, 'CURRENT_SPEED_CLICK_TT_2', 'CURRENT_SPEED_ONLY_HOST' )]" #NT!
- CHANGE_SPEED_TOOLTIP_3: "$CURRENT_SPEED_TOOLTIP$[SelectLocalization( JominiIsHostOrLocal, 'CURRENT_SPEED_CLICK_TT_3', 'CURRENT_SPEED_ONLY_HOST' )]" #NT!
- CHANGE_SPEED_TOOLTIP_4: "$CURRENT_SPEED_TOOLTIP$[SelectLocalization( JominiIsHostOrLocal, 'CURRENT_SPEED_CLICK_TT_4', 'CURRENT_SPEED_ONLY_HOST' )]" #NT!
- CHANGE_SPEED_TOOLTIP_5: "$CURRENT_SPEED_TOOLTIP$[SelectLocalization( JominiIsHostOrLocal, 'CURRENT_SPEED_CLICK_TT_5', 'CURRENT_SPEED_ONLY_HOST' )]" #NT!
- CURRENT_SPEED_TEXT_0: "Bilinmeyen" #NT!
- CURRENT_SPEED_TEXT_1: "En Yavaş" #NT!
- CURRENT_SPEED_TEXT_2: "Yavaş" #NT!
- CURRENT_SPEED_TEXT_3: "Normal" #NT!
- CURRENT_SPEED_TEXT_4: "Hızlı" #NT!
- CURRENT_SPEED_TEXT_5: "En Hızlı" #NT!
- PLAYER_SYNC_DATES_HEADER: "#T Güncel Tarih: [DATE.GetString]#!" #NT!
- PLAYER_SYNC_DATES: "Oyuncu tarihleri:" #NT!
- PLAYER_DATE: "$NAME$: [DATE.GetString|V]" #NT!
- GAME_START_DATE_STRING: "[DATE.GetString] tarihinde başlatıldı" #NT!
- GAME_YEARS_SINCE_START_DATE_STRING: "Oyunun başlangıcından bu yana geçen yıllar: $YEARS|V$" #NT!
- SVN_REVISION: "Bu SVN revizyonudur" #NT!
- GREATER_THAN: "daha büyük" #NT!
- LESS_THAN: "daha az" #NT!
- EQUAL_TO: "eşittir" #NT!
- EVENT_DEBUG_CHARACTER_EVENT: "Etkinlik: $EVENT$ Karakter: $NAME$ [$ID$]\n" #NT!
- SCOPE_DEBUG_FORMAT: "$NAME$ #weak ($TYPE|U$ - $ID$)#!" #NT!
- SCOPE_DEBUG_VALUE: "Değer $VALUE$" #NT!
- CHARACTER_DEFAULT_TOOLTIP: "[CHARACTER.GetUIName]\n[CHARACTER.PlayerName|D]\nKimlik: [CHARACTER.GetID|V]\nTarihsel Kimlik: [CHARACTER.GetSlowHistoryIdForDebug|V]\nHanedan: [CHARACTER.GetDynastyName|V]\nKültür: [CHARACTER.GetCulture.GetName|V]\nDoğurganlık: [CHARACTER.GetFertility|%0V]\nSağlık: [CHARACTER.GetHealth|1V]\n" #NT!
- CHARACTER_DEBUG_REAL_FATHER_TOOLTIP: "[Select_CString( ObjectsEqual( CHARACTER.GetFather, CHARACTER.GetRealFather ), '', 'Real Father: ' )][Select_CString( ObjectsEqual( CHARACTER.GetFather, CHARACTER.GetRealFather ), '', CHARACTER.GetRealFather.GetUIName )][Select_CString( ObjectsEqual( CHARACTER.GetFather, CHARACTER.GetRealFather ), '', '\n' )]" #NT!
-  #AGOT Added  #NT!
- CHARACTER_DEBUG_REAL_MOTHER_TOOLTIP: "[Select_CString( ObjectsEqual( CHARACTER.GetMother, CHARACTER.GetRealMother ), '', 'Real Mother: ' )][Select_CString( ObjectsEqual( CHARACTER.GetMother, CHARACTER.GetRealMother ), '', CHARACTER.GetRealMother.GetUIName )][Select_CString( ObjectsEqual( CHARACTER.GetMother, CHARACTER.GetRealMother ), '', '\n' )]" #NT!
-  #AGOT Modified  #NT!
- #CHARACTER_DEBUG_TOOLTIP: "#D HATA AYIKLAMA:#!\nID: [CHARACTER.GetID|V], Tarihsel Kimlik: [CHARACTER.GetSlowHistoryIdForDebug|V]\n$CHARACTER_DEBUG_REAL_FATHER_TOOLTIP$Doğurganlık: [CHARACTER.GetFertility|%0V], Sağlık: [CHARACTER.GetHealth|1V], Stres: [CHARACTER.GetStress|0V]\nTemel Ağırlık: [CHARACTER.GetBaseWeight], Hedef Ağırlık: [CHARACTER.GetTargetWeight], Mevcut Ağırlık: #!\nID:0\n" #NT!
- CHARACTER_DEBUG_TOOLTIP: "#D HATA AYIKLAMA:#!\nID: [CHARACTER.GetID|V], Tarihsel Kimlik: [CHARACTER.GetSlowHistoryIdForDebug|V]\n$CHARACTER_DEBUG_REAL_FATHER_TOOLTIP$$CHARACTER_DEBUG_REAL_MOTHER_TOOLTIP$Doğurganlık: [CHARACTER.GetFertility|%0V], Sağlık: [CHARACTER.GetHealth|1V], Stres: [CHARACTER.GetStress|0V]\nTemel Ağırlık: [CHARACTER.GetBaseWeight], Hedef Ağırlık: #!\nID:0, Mevcut Ağırlık: #!\nID:1\n" #NT!
- CHARACTER_AI_VALUES_DEBUG_TOOLTIP: "#D HATA AYIKLAMA#! YZ Değerleri:\nŞeref: [Character.GetAIHonor|V]\nAçgözlülük: [Character.GetAIGreed|V]\nMantık: [Character.GetAIRationality|V]\nEnerji: [Character.GetAIEnergy|V]\nCesaret: [Character.GetAIBoldness|V]\nKorku Değiştirilmiş Cesaret: [Character.GetAIBoldnessAsAffectedByPlayerDread|V]\nŞevk: [Character.GetAIZeal|V]\nİntikam: [Character.GetAIVengefulness|V]\nŞefkat: #!0\nSosyallik:#!1\n#!2\n\n#!3" #NT!
- CHARACTER_AI_VALUE: "#DEBUG YZ Değerleri#!" #NT!
- CHARACTER_AI_BUDGET_TOOLTIP: "$BUDGET_CATEGORY$: $BUDGET_GOLD|V0$ / $BUDGET_MAXIMUM|0$\n" #NT!
- DEBUG_OFFENSIVE_WAR: "$NAME$'a karşı saldırgan savaş" #NT!
- DEBUG_DEFENSIVE_WAR: "$NAME$'a karşı savunma savaşı" #NT!
- DEBUG_TRUCE: "$NAME$ ile ateşkes ([DATE.GetString]'e kadar)" #NT!
- DEBUG_VASSAL_INFO: "Vasal Bilgileri:" #NT!
- DEBUG_IS_POWERFUL_VASSAL: "Güçlüdür:" #NT!
- DEBUG_VASSAL_POWER_VALUE: "Vasal güç değeri: $VALUE|V1$" #NT!
- DEBUG_TRAVEL_INFO: "Seyahat:" #NT!
- DEBUG_TRAVEL_NEXT_DESTINATION: "Sonraki durak: [CHARACTER.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetName|V]\n" #NT!
- DEBUG_TRAVEL_ROLE_OWNER: "Seyahat sahibi: [CHARACTER.GetTravelPlan.GetData.GetOwner.GetUIName]" #NT!
- DEBUG_TRAVEL_ROLE_TRAVEL_LEADER: "Seyahat lideri: [CHARACTER.GetTravelPlan.GetData.GetTravelLeader.GetUIName]" #NT!
- DEBUG_TRAVEL_ROLE_COMPANIONS: "Arkadaşlar: $COMPANIONS$" #NT!
- DEBUG_TRAVEL_COMPANIONS_COMPANION: "[CHARACTER.GetUIName]" #NT!
- DEBUG_TRAVEL_COMPANIONS_SEPARATOR: "None" #NT!
- DEBUG_TRAVEL_ACTIVITY: "Etkinliğe [ACTIVITY.GetName]" #NT!
- CHARACTER_TRAITS: "Özellikler: $TRAITS|V$" #NT!
- LOWBORN: "Aşağı doğumlu" #NT!
- LOWBORN_DESC: "Bu karakter alt tabakadır" #NT!
- WEALTH_RICH: "Zengin" #NT!
- WEALTH_POOR: "Fakir" #NT!
- ARMY_NAME: "$NUM|O$ [PROVINCE.GetNameNoTooltip] Ordusu" #NT!
- ARMY_NAME_RAIDER: "$NUM|O$ [PROVINCE.GetNameNoTooltip]'in Akıncıları" #NT!
- GATHERING_ARMY_NAME: "$LOCATION$'da Ordu Toplanıyor" #NT!
- DEAD: "Ölü" #NT!
- DEAD_SINCE: "[DATE.GetStringShort|V]'dan beri ölü" #NT!
- DIED_AT_AGE: "$AGE|V$ yaşında" #NT!
- DIED_AT_AGE_SINGULAR: "$AGE|V$ yaşında" #NT!
- DIED_AS_INFANT: "bebekken" #NT!
- CHARACTER_DEAD_TOOLTIP_DATE_INFO: "[Character.GetDeathDate.GetString|V] [Character.GetAgeInfo] ([Character.GetBirthDate.GetString|V] doğumlu)" #NT!
- CHARACTER_DEAD_TOOLTIP: "[Character.GetDeathReason|U] $CHARACTER_DEAD_TOOLTIP_DATE_INFO$ üzerinde" #NT!
- CHARACTER_DEAD_LINEAGE: "[Character.GetDeathReason|U] [Character.GetDeathDate.GetString] üzerinde" #NT!
- CHARACTER_DEAD_TOOLTIP_HIDE_KILLER: "$CHARACTER_DEAD_TOOLTIP_DATE_INFO$'de [Character.GetDeathReasonHideKiller|U]" #NT!
- CHARACTER_HOSTAGE_TOOLTIP: "#T Rehine#!\n[Character.GetUINameNotMe] şu anda [hostage|E] tarafından [TARGET_CHARACTER.GetShortUIName]'ün [warden|E]'ü ve [TARGET_CHARACTER_2.GetShortUIName]'in [home_court|E]'sı olarak tutuluyor" #NT!
- CHARACTER_INCAPABLE_TOOLTIP: "#T Yetersiz#!\n[Character.GetUINameNotMe] [GetTrait('incapable').GetName( Character.Self )]'dir ve bağımsız olarak eylemde bulunamaz" #NT!
- CHARACTER_TRAVELING_TOOLTIP: "#T Seyahat #!\n[traveling|E] [Character.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetName] [SelectLocalization(Character.GetTravelPlan.GetData.GetActivity.IsValid, 'CHARACTER_TRAVELING_ACTIVITY_TOOLTIP_ADDITION', '')] yönünde" #NT!
- CHARACTER_TRAVELING_ACTIVITY_TOOLTIP_ADDITION: "[SelectLocalization(ObjectsEqual(Character.GetTravelPlan.GetData.GetActivity.GetHost.Self, Character.Self),'CHARACTER_TRAVELING_ACTIVITY_TOOLTIP_ADDITION_HOSTING','CHARACTER_TRAVELING_ACTIVITY_TOOLTIP_ADDITION_ATTENDING')]" #NT!
- CHARACTER_TRAVELING_ACTIVITY_TOOLTIP_ADDITION_HOSTING: "[Character.GetTravelPlan.GetData.GetActivity.GetName] yüzünden" #NT!
- CHARACTER_TRAVELING_ACTIVITY_TOOLTIP_ADDITION_ATTENDING: "çünkü [Character.GetShortUIName] [Select_CString(Character.IsLocalPlayer, 'are', 'is' )] katılıyor [Character.GetTravelPlan.GetData.GetActivity.GetName]" #NT!
- CHARACTER_INTERACTION_REPLY: "[CHARACTER.GetUIName], $INTERACTION|D$ ile ilgili cevabı bekliyor." #NT!
- CHARACTER_INTERACTION_REPLY_MARRIAGE: "[CHARACTER.GetUIName], [TARGET_CHARACTER.GetUIName] ile [TARGET_CHARACTER_2.GetUIName] arasında $INTERACTION|D$ ile ilgili cevabı bekliyor." #NT!
- #CHARACTER_INTERACTION_REPLY_TITLE: "" #NT!
- #CHARACTER_INTERACTION_REPLY_POSITIVE: "" #NT!
- #CHARACTER_INTERACTION_REPLY_NEGATIVE: "" #NT!
- #CHARACTER_INTERACTION_REPLY_BLOCKED: "" #NT!
- CHARACTER_INTERACTION_CANT_SEND_RECIPIENT_REJECTS: "@warning_icon! #X [CHARACTER.GetShortUIName] bunu kabul etmeyecek!" #NT!
- CHARACTER_INTERACTION_ALREADY_CONSIDERING_WARNING: "@warning_icon! #X $CHARACTER_INTERACTION_ALREADY_CONSIDERING$#!" #NT!
- CHARACTER_INTERACTION_ALREADY_CONSIDERING: "[CHARACTER.GetUIName] halihazırda [TARGET_CHARACTER.GetUIName]'den gelen bir teklifi değerlendiriyor" #NT!
- CHARACTER_INTERACTION_NO_TARGET_SELECTED: "@warning_icon! #X Hedef seçilmedi#!" #NT!
- CHARACTER_OTHER_PLAYER_TOOLTIP: "Bu Karakter [Character.PlayerName] tarafından kontrol ediliyor." #NT!
- BASE_COLON: "Taban: $VALUE|V0$" #NT!
- BASE_GOLD: "Temel [gold_i|E]" #NT!
- BASE_PIETY: "Temel [piety_i|E]" #NT!
- BASE_PRESTIGE: "Temel [prestige_i|E]" #NT!
- BASE_TIME: "Temel @time_icon!" #NT!
- VALUE_COLON: "$KEY$: $VALUE|V0$" #NT!
- VALUE_COLON_POSITIVE_DIFF: "$KEY$: $VALUE|+=0$" #NT!
- BASE: "Temel" #NT!
- INTERACTION_EFFECT_DESC: "#D Gönderildiğinde:#! \n$ON_SEND$\n#D Kabul Edildiğinde:#! \n$ON_ACCEPT$\n#D Reddedildiğinde:#! \n$ON_DECLINE$" #NT!
- RETINUE_POSITION_EMPTY: "Boş" #NT!
- YES: "Evet" #NT!
- NO: "Hayır" #NT!
- OPINION_MTTH: "[CHARACTER.GetShortUINamePossessive] [TARGET_CHARACTER.GetShortUIName]'in Görüşü: $VALUE|=+0$" #NT!
- TRAIT_COMPATIBILITY_LIKES: "$TRAIT$ beğeni $OTHER_TRAIT$: $VALUE|=+0$" #NT!
- TRAIT_COMPATIBILITY_DISLIKES: "$TRAIT$ beğenmeme $OTHER_TRAIT$: $VALUE|=+0$" #NT!
- RANGED_MODIFIER: "$FROM$ - $TO$ arası" #NT!
- RANGED_MODIFIER_DESCRIPTION: "$MODIFIER$: $RANGED_MODIFIER$" #NT!
- SCRIPTED_VALUE_MODIFIER: "Değer: $VALUE|+0$" #NT!
- AI_VALUE_MODIFIER_COMPOUND: "Kişilik: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_MIN_VALUE: "Minimum Değer: $VALUE|+0$" #NT!
- AI_VALUE_MODIFIER_MAX_VALUE: "Maksimum Değer: $VALUE|+0$" #NT!
- AI_VALUE_MODIFIER_HONOR: "Onur: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_DISHONOR: "Şerefsizlik: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_GREED: "Açgözlülük: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_GENEROUS: "Cömert: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_CONTENTMENT: "Memnuniyet: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_RATIONALITY: "Mantık: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_IRRATIONALITY: "Mantıksızlık: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_ENERGY: "Enerji: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_LETHARGY: "Uyuşukluk: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_BOLDNESS: "Cesaret: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_COWARDICE: "Korkaklık: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_ZEAL: "Şevk: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_CYNICISM: "Alaycılık: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_VENGEFULNESS: "Kindarlık: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_FORGIVENESS: "Affedicilik: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_COMPASSION: "Şefkat: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_CALLOUSNESS: "Duygusuzluk: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_SOCIABILITY: "Sosyallik: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_SHYNESS: "Utangaçlık: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_DREAD_MODIFIED_BOLDNESS: "#D Cesaret ve Dehşet#!: $VALUE|=+0$" #NT!
- AI_VALUE_MODIFIER_DREAD_MODIFIED_COWARDICE: "#D Korkaklık ve Dehşet#!: $VALUE|=+0$" #NT!
- CHARACTER_SHEHE_SHE: "O" #NT!
- CHARACTER_SHEHE_HE: "O" #NT!
- CHARACTER_SHEHE_IT: "O" #NT!
- CHARACTER_SHEHE_THEY: "Onlar" #NT!
- CHARACTER_HERHIM_HER: "o" #NT!
- CHARACTER_HERHIM_HIM: "o" #NT!
- CHARACTER_HERHIM_IT: "o" #NT!
- CHARACTER_HERHIM_THEM: "onlara" #NT!
- CHARACTER_HERHIS_HER: "o" #NT!
- CHARACTER_HERHIS_HIS: "onun" #NT!
- CHARACTER_HERHIS_ITS: "onun" #NT!
- CHARACTER_HERHIS_THEIR: "onların" #NT!
- CHARACTER_HERHISMY_MY: "Benim" #NT!
- CHARACTER_HERSHIS_HERS: "onunki" #NT!
- CHARACTER_HERSHIS_HIS: "onun" #NT!
- CHARACTER_HERSHIS_ITS: "onun" #NT!
- CHARACTER_HERSHIS_THEIRS: "onların" #NT!
- CHARACTER_WOMAN: "Kadın" #NT!
- CHARACTER_MAN: "Adam" #NT!
- CHARACTER_WOMAN_POSSESSIVE: "kadının" #NT!
- CHARACTER_MAN_POSSESSIVE: "adamın" #NT!
- CHARACTER_GIRL: "kız" #NT!
- CHARACTER_BOY: "erkek çocuk" #NT!
- CHARACTER_WOMEN: "kadınlar" #NT!
- CHARACTER_MEN: "erkekler" #NT!
- CHARACTER_GIRLS: "kızlar" #NT!
- CHARACTER_BOYS: "oğlanlar" #NT!
- CHARACTER_CHILDREN: "çocuklar" #NT!
- CHARACTER_LADY: "leydi" #NT!
- CHARACTER_LORD: "lord" #NT!
- CHARACTER_HERSELF: "kendini" #NT!
- CHARACTER_HIMSELF: "kendisi" #NT!
- CHARACTER_ITSELF: "kendisi" #NT!
- CHARACTER_THEMSELF: "kendileri" #NT!
- CHARACTER_THEMSELVES: "kendileri" #NT!
- CHARACTER_WIFE: "eş" #NT!
- CHARACTER_HUSBAND: "koca" #NT!
- CHARACTER_SPOUSE: "eş" #NT!
- CHARACTER_WIFE_PLURAL: "eşler" #NT!
- CHARACTER_HUSBAND_PLURAL: "kocalar" #NT!
- CHARACTER_SPOUSE_PLURAL: "eşler" #NT!
- CHARACTER_CONCUBINE_MALE: "$game_concept_concubine_male$" #NT!
- CHARACTER_CONCUBINE_FEMALE: "$game_concept_concubine_female$" #NT!
- CHARACTER_MOTHER: "anne" #NT!
- CHARACTER_FATHER: "baba" #NT!
- VASSAL_TO: "[vassal|E] ila $LIEGE$" #NT!
- RELATION_LIST: "[CHARACTER.GetShortUINamePossessive|U] $LIST$" #NT!
- RELATION_LIST_UNRELATED: "$LIST$" #NT!
- RELATION_LONG_LIST: "$LIST$" #NT!
- RELATION_LIST_EXTENDED: "$LIST$ #low (+$MORE_RELATIONS$)#!" #NT!
- VASSAL: "[vassal|E]" #NT!
- LIEGE: "[liege|E]" #NT!
- LIEGE_POSSESSIVE: "[liege_possessive|E]" #NT!
- KNIGHT: "[CHARACTER.GetLiege.Custom('KnightCulture')]" #NT!
- COUNCILLOR: "[CHARACTER.GetCouncilTitle]" #NT!
- COURTIER: "[courtier|E]" #NT!
- GUEST: "[guest|E]" #NT!
- RELATION_NEIGHBORING_RULER: "Komşu [ruler|E]" #NT!
- RELATION_FOREIGN_RULER: "Yabancı [ruler|E]" #NT!
- RELATION_MY_TOP_LIEGE: "Senin [top_liege|E]" #NT!
- RELATION_BELOW_VASSAL: "[realm|E]'ınızdaki vasal" #NT!
- RELATION_FELLOW_VASSAL: "Arkadaş [vassal|E]" #NT!
- RELATION_NEIGHBORING_FELLOW_VASSAL: "Komşu Arkadaş [vassal|E]" #NT!
- RELATION_VASSAL_IN_REALM: "[CHARACTER.GetPrimaryTitle.GetBaseName]'daki vasal" #NT!
- RELATION_POOL_CHARACTER_LOCATION: "Geziniyor" #NT!
- RELATION_POOL_CHARACTER: "Geziniyor" #NT!
- RELATION_COUNCIL_POSITION: "[CHARACTER.GetCouncilTitle] / [TARGET_CHARACTER.GetShortUIName]" #NT!
- RELATION_COURTIER: "[CHARACTER.GetShortUIName]'ın saray mensubu" #NT!
- RELATION_GUEST: "[CHARACTER.GetShortUIName]'ın konuğu" #NT!
- THIS_IS_YOU_STATIC: "Bu sensin" #NT!
- THIS_IS_YOU: "[CHARACTER.Custom('ThisIsYou')]" #NT!
- THIS_IS_YOU_ALLEGEDLY: "Bu sensin, iddiaya göre" #NT!
- THIS_IS_YOU_UNFORTUNATELY: "Bu sensin, ne yazık ki" #NT!
- THIS_IS_YOU_KEY: "Bu sensin" #NT!
- THIS_IS_YOU_MAGNIFICENT: "Bu sensin ve sen #EMP muhteşemsin#!" #NT!
- THIS_IS_YOU_NOT_FEEL: "Bu sensin, her zaman kendin gibi hissetmesen de" #NT!
- MILITARY_VIEW: "Askeri" #NT!
- INTRIGUE_VIEW: "Entrika" #NT!
- REALM_VIEW: "Ülke Görünümü (Eski askeri görünüm)" #NT!
- ARMY_LEVIES: "[levies|E]" #NT!
- DOMAIN: "Mülk" #NT!
- VASSALS: "[vassals|E]" #NT!
- HIRED: "Kiralanmış" #NT!
- RAISE_ALL: "Tüm Orduları Toplayın" #NT!
- RAISE_ALL_RAIDERS: "Yağmacıları Toplayın" #NT!
- RAISE_ALL_MEN_AT_ARMS: "Düzenli Orduyu Toplayın" #NT!
- RAISE_HIRED_TROOP: "Artırmak" #NT!
- DISBAND_ALL: "Hepsini Dağıt" #NT!
- MERCENARIES: "Paralı Askerler" #NT!
- HOLY_ORDERS: "Kutsal Tarikatlar" #NT!
- SORT_RANK: "Rütbe" #NT!
- SORT_NAME: "İsim" #NT!
- SORT_OPINION: "Senin Fikrin" #NT!
- SORT_STRENGTH: "Kuvvet" #NT!
- SORT_INCOME: "Gelir" #NT!
- SORT_HEALTH: "Sağlık" #NT!
- SORT_ACCEPTANCE: "Kabul" #NT!
- CURRENT_BALANCE: "[GetPlayerBalance|=1]" #NT!
- TT_CURRENT_GOLD: "[gold_i|E] #high [GetPlayer.GetGold|1]#!" #NT!
- TT_CURRENT_BALANCE: "#high [GetPlayerBalance|=+1]#!/ay" #NT!
- CURRENT_BALANCE_TOOLTIP: "#T Senin [gold_i][gold|E]#!\n[GetPlayer.GetBalanceBreakdown]" #NT!
- FULL_BALANCE_INFO: "Aylık Bakiye: [gold_i]$BALANCE|=+1$\n\n$INCOME_DESC$\n$EXPENSE_DESC$" #NT!
- ESTIMATE_TAX_VASSAL: "[CHARACTER.GetUIName]" #NT!
- ESTIMATE_TAX_INFO: "Toplam [tax|E] Gelir: [gold_i]$TOTAL|=+1$\n - [domain|E]: [gold_i]$DOMAIN|=+1$\n - [vassals|E]: [gold_i]$VASSALS|=+1$" #NT!
- ESTIMATE_TAX_LIEGE: "[liege|E]'a ödendi: [gold_i]#N -$VALUE|1$#!" #NT!
- ARMY_MAINTENANCE: "Ordu Bakımı: [gold_i]$VALUE|=+1$" #NT!
- BREAKDOWN_ARMY_MAINTENANCE: "Yükseltildi [armies|E]" #NT!
- BREAKDOWN_ARMY_MAINTENANCE_EMBARKED: "Yükseltildi [armies|E] [embarked_i]" #NT!
- MAA_TOTAL_COST: "[men_at_arms|E]: [gold_i]$VALUE|=+1$" #NT!
- MAA_MAINTENENCE_COST: "- Bakım: [gold_i]$VALUE|=+1$" #NT!
- MAA_REINFORCEMENT_COST: "- Güçlendirme: [gold_i]$VALUE|=+1$" #NT!
- BREAKDOWN_TOTAL_TAX: "Toplam vergi" #NT!
- BREAKDOWN_MEN_AT_ARMS: "[men_at_arms|E]" #NT!
- BREAKDOWN_REINFORCEMENT: "Güçlendirme" #NT!
- BREAKDOWN_MONTHLY_BALENCE: "Aylık Bakiye" #NT!
- BREAKDOWN_YEARLY_BALENCE: "Yıllık Bakiye" #NT!
- COST_HEADING: "Maliyet:" #NT!
- NO_COST_HEADING: "#weak Ücretsiz#!" #NT!
- COST_RESULT_NOTHING: "#P Ücretsiz#!" #NT!
- GOLD_COST_BREAK: "Maliyet [gold_i]" #NT!
- GOLD: "[gold_i] $VALUE|0$" #NT!
- GOLD_COST: "[gold_i] $VALUE|0$" #NT!
- GOLD_COST_REINFORCE: "[gold_i] $VALUE|2$" #NT!
- GOLD_COST_MAINTENANCE: "[gold_i] $VALUE|2$" #NT!
- GOLD_COST_LONG: "Altın: [gold_i] $VALUE|0$" #NT!
- GOLD_COST_LONG_MAINTENANCE: "Altın: [gold_i] $VALUE|2$" #NT!
- GOLD_K: "[gold_i] $VALUE|1$B" #NT!
- GOLD_TEXT: "$VALUE|0$ Altın" #NT!
- GOLD_CONCEPT: "[gold|E]" #NT!
- GOLD_NO_ICON: "$VALUE|0$" #NT!
- GOLD_K_NO_ICON: "$VALUE|1$K" #NT!
- GOLD_SIMPLE_TOOLTIP: "#T [CHARACTER.GetShortUINamePossessive|U] [gold|E]: $VALUE|V0$#!" #NT!
- GOLD_WITH_BALANCE_TOOLTIP: "#T [gold|E]: $VALUE|V0$#!\n$BALANCE|V=1$/ay" #NT!
- COST_PER_DAY: "/gün" #NT!
- COST_PER_WEEK: "/hafta" #NT!
- COST_PER_MONTH: "/ay" #NT!
- COST_PER_YEAR: "/yıl" #NT!
- PIETY: "[piety_i] $VALUE|0$" #NT!
- PIETY_COST: "[piety_i] $VALUE|0$" #NT!
- PIETY_COST_REINFORCE: "[piety_i] $VALUE|2$" #NT!
- PIETY_COST_MAINTENANCE: "[piety_i] $VALUE|1$" #NT!
- PIETY_COST_LONG: "Dindarlık: [piety_i] $VALUE|0$" #NT!
- PIETY_COST_LONG_MAINTENANCE: "Dindarlık: [piety_i] $VALUE|2$" #NT!
- PIETY_K: "[piety_i] $VALUE|1$B" #NT!
- PIETY_CONCEPT: "[piety|E]" #NT!
- PIETY_LEVEL_CONCEPT: "[piety_level|E]" #NT!
- PIETY_WITH_BALANCE_TOOLTIP: "#T [piety|E]: $VALUE|V0$#!\n$BALANCE|V=1$/ay\n\n#T [piety_level|E]: #!$LEVEL$" #NT!
- PRESTIGE: "[prestige_i] $VALUE|0$" #NT!
- PRESTIGE_COST: "[prestige_i] $VALUE|0$" #NT!
- PRESTIGE_COST_REINFORCE: "[prestige_i] $VALUE|1$" #NT!
- PRESTIGE_COST_MAINTENANCE: "[prestige_i] $VALUE|1$" #NT!
- PRESTIGE_COST_LONG: "Prestij: [prestige_i] $VALUE|0$" #NT!
- PRESTIGE_COST_LONG_MAINTENANCE: "Prestij: [prestige_i] $VALUE|2$" #NT!
- PRESTIGE_K: "[prestige_i] $VALUE|1$B" #NT!
- PRESTIGE_CONCEPT: "[prestige|E]" #NT!
- PRESTIGE_LEVEL_CONCEPT: "[prestige_level|E]" #NT!
- PRESTIGE_WITH_BALANCE_TOOLTIP: "#T [prestige|E]: $VALUE|V0$#!\n$BALANCE|V=1$/ay\n\n#T [prestige_level|E]: #!$LEVEL$" #NT!
- DYNASTY_PRESTIGE: "[dynasty_prestige_i] $VALUE|0$" #NT!
- DYNASTY_PRESTIGE_COST: "[dynasty_prestige_i] $VALUE|0$" #NT!
- DYNASTY_PRESTIGE_COST_LONG: "Şöhret: [dynasty_prestige_i] $VALUE|0$" #NT!
- DYNASTY_PRESTIGE_K: "[dynasty_prestige_i] $VALUE|1$B" #NT!
- DYNASTY_PRESTIGE_CONCEPT: "[dynasty_prestige|E]" #NT!
- DYNASTY_PRESTIGE_LEVEL_CONCEPT: "[dynasty_prestige_level|E]" #NT!
- NUMBER_OF_MEN_DESC: "[soldiers|E]" #NT!
- NUMBER_OF_MEN_VALUE: "#TOOLTIP:NUMBER_OF_MEN_DESC $VALUE|0$ #!" #NT!
- NUMBER_OF_MEN_VALUE_K: "#TOOLTIP:NUMBER_OF_MEN_DESC $VALUE$ #!" #NT!
- NUMBER_OF_MEN_VALUE_K_NO_TOOLTIP: "$VALUE|1$" #NT!
- NUMBER_OF_MEN_VALUE_WITH_LABEL: "$VALUE|0V$ [soldiers|E]" #NT!
- NUMBER_OF_MEN_ARRIVED: "$VALUE|0V$ [soldiers|E] zaten toplandı." #NT!
- CONTRACTED_VALUE: "$VALUE|0$" #NT!
- CONTRACTED_VALUE_K: "$VALUE|1$K" #NT!
- COMMON_INFO_LIST_PREFIX: "None" #NT!
- HAS_HOOK_ON_ME: "$WHO$ seni yakaladı." #NT!
- YOU_HAVE_HOOK: "$WHO$'a bir koz elde ettin." #NT!
- INCOME: "Aylık [income]" #NT!
- EXPENSES: "Aylık giderler" #NT!
- LEVIES: "[levies|E]:" #NT!
- TOTAL_TAX: "Toplam vergi" #NT!
- TAXABLE_VASSAL_INCOME: "Vergiye tabi gelir" #NT!
- VASSAL_CONTRIBUTION: "Katkı" #NT!
- CONTRIBUTABLE_VASSAL_LEVIES: "Toplam Vergiler" #NT!
- TOTAL_LEVIES: "Toplam Milisler" #NT!
- LEVIES_ICON: "[soldier_i]" #NT!
- OPINION_HEADER: "[opinion|E]" #NT!
- AUTOSAVE_IN_PROGRESS: "Otomatik Kaydediliyor..." #NT!
- SAVE_IN_PROGRESS: "Kaydediliyor..." #NT!
- MISSING_DLCS_HEADER: "@warning_icon! #X Eksik DLC'ler:#!" #NT!
- MISSING_DLC_ENTRY: "#indent_newline:2 $EFFECT_LIST_BULLET$$DLC_NAME$#!" #NT!
- MISSING_MODS_HEADER: "@warning_icon! #X Eksik Modlar:#!\n" #NT!
- MISSING_MODS: "@warning_icon! #X Eksik Modlar#!" #NT!
- MISSING_DLC: "@warning_icon! #X Eksik DLC#!" #NT!
- MISSING_CONTINUE_SAVE_GAME_TITLE: "Kayıtlı Oyun Kayıp" #NT!
- MISSING_CONTINUE_SAVE_GAME_DESC: "Savegame bulunamadı:\n$SAVE_GAME$" #NT!
- LOAD_GAME_FAILED_TITLE: "Kaydedilen oyun yüklenemedi" #NT!
- LOAD_GAME_FAILED_DESC: "Kayıtlı oyun yüklenemedi, bunun nedeni şunlardan biri olabilir:\n#indent_newline:2 $EFFECT_LIST_BULLET$Kayıtlı oyun, oyunun uyumsuz bir sürümüyle yapılmış\n$EFFECT_LIST_BULLET$Kayıtlı oyun farklı bir DLC seti kullanıyor\n$EFFECT_LIST_BULLET$Kayıt dosyası bozulmuş#!" #NT!
- GAME_RULES_BLOCKING_ACHIEVEMENTS_HEADER: "@warning_icon! #X Oyun Kuralları Başarıları Engelle:#!\nThe Bu kayıtta kullanılan oyun kuralları artık Başarıları engelliyor, yüklenmesi kayıttaki Başarıları devre dışı bırakacak.\nKurallar Artık Başarıları Engelliyor:" #NT!
- GAME_RULE_BLOCKS_ACHIEVEMENTS_ENTRY: "#indent_newline:2 $EFFECT_LIST_BULLET$[GAME_RULE.GetName]: [GAME_RULE_SETTING.GetName]#!" #NT!
- GAME_CHECKSUM_CHANGED_FROM_SAVE_FILE: "@warning_icon! #X Başarılar için Geçersiz Kontrol Toplamı#!\nThis Kayıt, farklı bir kontrol toplamındaki Başarılar için geçerliydi, yüklenmesi kayıttaki Başarıları devre dışı bırakacaktır." #NT!
- TIER_TYPE: "[$TIER_KEY$|E]" #NT!
- DYNASTY_MEMBERS: "'$DYNASTY$' hanedanındaki üyeler: \n$LIST$" #NT!
- GOOD_COLOR: "$KEY|P$" #NT!
- BAD_COLOR: "$KEY|N$" #NT!
- NEUTRAL_COLOR: "$KEY|Z$" #NT!
- GOTO_PROVINCE: "Konuma git" #NT!
- GOTO_PROVINCE_TT: "#T $GOTO_PROVINCE$#!" #NT!
- DYNASTY: "Hanedanlık" #NT!
- DYNASTY_HOUSE: "Hane" #NT!
- MENU: "Menü" #NT!
- RESUME: "Devam Et" #NT!
- PAUSE: "Duraklat" #NT!
- PAUSED: "Duraklatıldı" #NT!
- PAUSED_BY_EVENT: "#X Olay Tarafından Duraklatıldı: $TITLE$#!" #NT!
- PAUSED_BY_TUTORIAL: "#X Eğitim Tarafından Duraklatıldı: [TUTORIAL.GetStepName]#!" #NT!
- EXIT: "Oyundan Çık" #NT!
- EXIT_TO_DESKTOP: "Masaüstüne Çık" #NT!
- SHOW_LEGACY: "Soyağacı" #NT!
- RESIGN: "Ana Menüye Çık" #NT!
- SAVE_AND_RESIGN: "Kaydet ve $RESIGN$" #NT!
- SAVE_AND_EXIT_TO_DESKTOP: "Kaydet ve $EXIT_TO_DESKTOP$" #NT!
- UNSAVED_PROGRESS_WILL_BE_LOST: "Kaydedilmemiş herhangi bir ilerleme kaybolacaktır" #NT!
- GAME_WILL_BE_SAVED: "Ironman'de olmanız nedeniyle oyununuz kaydedilecektir" #NT!
- RESIGNATION_CONFIRMATION_DESC: "Menüye Çıkmak istediğinizden emin misiniz?\n[SelectLocalization( IsIronmanEnabled, 'GAME_WILL_BE_SAVED', 'UNSAVED_PROGRESS_WILL_BE_LOST' )]" #NT!
- QUIT_TO_DESKTOP_CONFIRMATION_DESC: "Masaüstüne Çıkmak istediğinizden emin misiniz?\n[SelectLocalization( IsIronmanEnabled, 'GAME_WILL_BE_SAVED', 'UNSAVED_PROGRESS_WILL_BE_LOST' )]" #NT!
- OPEN_FOR_MULTIPLAYER: "Çok Oyunculuya Açık" #NT!
- OPEN_LOBBY: "Çok Oyunculuya Aç" #NT!
- CLOSE_LOBBY: "Lobiyi Kapat" #NT!
- HOST: "Oyun Kurucu" #NT!
- JOINING_SERVER_PROGRESS: "Sunucuya katılım: $PROGRESS|0%$" #NT!
- WAITING_SERVER_REPLY: "Sunucudan bir yanıt bekleniyor" #NT!
- GENERATING_BOOKMARK_PROGRESS: "Tarihten dünya oluşturma: $PROGRESS|0%$" #NT!
- LOADING_SAVEGAME_PROGRESS: "Yükleniyor: $PROGRESS|0%$" #NT!
-  #AGOT Modified  #NT!
- # LOADSCREEN_INITIALIZING_GAME: "Oyun Başlatılıyor..." #NT!
- LOADSCREEN_INITIALIZING_GAME: "Batıdiyar'ın Üzerinde Uçuluyor..." #NT!
- SERVER_NAME: "$NAME$ Oyunu" #NT!
- PLAYERS_ON_SERVER: "Sunucudaki oyuncular: İSİM — BAŞLIK — PING" #NT!
- PLAYER_ON_SERVER: "$NAME$ - $TITLE$ - $PING$" #NT!
- NAME_NOT_FOUND: "İsim bulunamadı." #NT!
- KICK_NAME: "$NAME$ oyundan atıldı." #NT!
- MODIFIED: "Değiştirildi: $DATE$" #NT!
- PLAYER_LEFT: "Oyuncu Ayrıldı" #NT!
- PLAYER_NAME_LEFT: "$NAME$ oyundan ayrıldı." #NT!
- PLAYER_JOINED: "Oyuna Katıldı" #NT!
- PLAYER_NAME_JOINED: "$NAME$ oyuna katıldı." #NT!
- HOST_LEFT: "Oyun Kurucu Ayrıldı" #NT!
- HOST_LEFT_DESC: "Sunucu ($NAME$) ayrıldı. Oyun tek oyunculu oyun olarak devam edecek." #NT!
- KEY_VALUE: "$KEY$: $VALUE|V0$" #NT!
- KEY_VALUE_F1: "$KEY$: $VALUE|V1$" #NT!
- KEY_VALUE_F2: "$KEY$: $VALUE|V2$" #NT!
- KEY_VALUE_PERCENT: "$KEY$: $VALUE|V0%$" #NT!
- KEY_VALUE_PERCENT_POSITIVE: "$KEY$: $VALUE|+0%$" #NT!
- CHARACTER_VALUE: "[CHARACTER.GetUIName]: $VALUE|V0$" #NT!
- CHARACTER_VALUE_F1: "[CHARACTER.GetUIName]: $VALUE|V1$" #NT!
- CHARACTER_VALUE_F2: "[CHARACTER.GetUIName]: $VALUE|V2$" #NT!
- ERROR_ACTION: "\n#I Bana tıkla ve onları sana göstereyim. Hata günlüğünü temizlemek için bana sağ tıkla.#!" #NT!
-  #AGOT Modified  #NT!
- #ERROR_HOOF: "Ben Errorhoof'um. Oyununuzda $ERRORS$ hata olduğu için buradayım. $ERROR_ACTION$" #NT!
- #ERROR_HOOF_1: "Ben Babby Jesus'um. Bazen Errorhoof yerine ben buradayım. Ayrıca oyununuzda $ERRORS$ hata olduğu için buradayım. $ERROR_ACTION$" #NT!
- #ERROR_HOOF_2: "Ben Errobert'im. Bazen Errorhoof yerine buradayım. Ayrıca oyununuzda $ERRORS$ hata olduğu için buradayım. $ERROR_ACTION$" #NT!
- #ERROR_HOOF_3: "Ben Bazcat'im. Bazen Errorhoof yerine buradayım. Beni besle. Oyununuzda ayrıca $ERRORS$ hata var. $ERROR_ACTION$" #NT!
- ERROR_HOOF: "Ben Pugarion'um. Buradayım çünkü oyununuzda yazılacak $ERRORS$ hata var. $ERROR_ACTION$" #NT!
- ERROR_HOOF_1: "Ben Jimhaerys'im. Bazen Pugarion yerine buradayım. Ayrıca oyunda tüketilecek $ERRORS$ hata olduğu için buradayım. $ERROR_ACTION$" #NT!
- ERROR_HOOF_2: "Ben Pugarion'um. Oyununuzda yakılacak $ERRORS$ hata olduğu için buradayım. $ERROR_ACTION$" #NT!
- ERROR_HOOF_3: "Ben Jimhaerys'im. Bazen Pugarion yerine buradayım. Beni besle. Oyununuzda tüketilecek $ERRORS$ hata da var. $ERROR_ACTION$" #NT!
- ERROR_HOOF_4: "Ben Reconqat'ım. Bazen Errorhoof yerine ben buradayım. Buna Reconquista deme yoksa üzülürüm. Oyununuzda ayrıca $ERRORS$ hata var. $ERROR_ACTION$" #NT!
- ERROR_HOOF_5: "Ben Smug Kid'im. Bazen Errorhoof yerine ben buradayım. Hatanıza bakıyorum ve bununla ilgili olarak kendini beğenmiş görünüyorum. Oyununuzda ayrıca $ERRORS$ hata var. $ERROR_ACTION$" #NT!
- ENABLED_MODS: "Etkinleştirilmiş Modlar:" #NT!
- RALLY_POINT_NAME: "[PROVINCE.GetNameNoTooltip]'da Buluşma Noktası" #NT!
- CONFIRM: "Onayla" #NT!
- friends: "Arkadaşlar" #NT!
- friend_plural: "Arkadaşlar" #NT!
- friends_desc: "Dostluklar sonsuza kadardır." #NT!
- PLAYER_NEEDED_IF_ONLY_ONE_ARG: "Yalnızca bir argüman kullanılıyorsa geçerli oyuncuya ihtiyaç vardır." #NT!
- INVALID_CHARACTER: "Geçersiz karakter" #NT!
- INVALID_RELATION: "Geçersiz ilişki" #NT!
- RELATION_ADDED: "$CHAR01$ ve $CHAR02$ arasına $RELATION$ ilişkisi eklendi" #NT!
- RELATION_REMOVED: "$CHAR01$ ile $CHAR02$ arasındaki $RELATION$ ilişkisi kaldırıldı" #NT!
- SET_SCRIPTED_RELATION: "$CHAR01$, $RELATION01|V$ ila $CHAR02$ olacak" #NT!
- SET_SCRIPTED_RELATION_SAME: "$CHAR01$ ve $CHAR02$ $RELATION01|V$ olur" #NT!
- SET_SCRIPTED_RELATION_DIFFERENT: "$CHAR01$, $CHAR02$'nin $RELATION01|V$'i olur ve $CHAR02$, $CHAR01$'ın $RELATION02|V$'ü olur" #NT!
- REMOVE_SCRIPTED_RELATION: "$CHAR01$ artık $RELATION|V$ ila $CHAR02$ olmayacak" #NT!
- HAS_SCRIPTED_RELATION: "$CHAR01$, $CHAR02$'nin $RELATION|V$'idir" #NT!
- TITLE_DEFINITE_FORM: "$TITLE$" #NT!
- DURATION_FOREVER: "#V Sonsuza dek#!" #NT!
- DURATION_DATE: "[DATE.GetStringShort|V]" #NT!
- DURATION_DATE_RANGE: "$[DATE_MIN.GetStringShort|V]$ - $[DATE_MAX.GetStringShort|V]$" #NT!
- DURATION_NO_DATE: "$DURATION$" #NT!
- DURATION_NO_DATE_RANGE: "$DURATION_MIN$ ile $DURATION_MAX$ arasında" #NT!
- NUMBER_OF_MEN: "[soldiers|E]:" #NT!
- NUMBER_OF_REGIMENTS: "Alay Sayısı" #NT!
- TIME_TO_RAISE: "Toplanma zamanı:" #NT!
- DAYS: "Günler" #NT!
- DAYS_WITH_SPACE: "Günler" #NT!
- VALUE_DAYS: "#V $VALUE$ gün#!" #NT!
- MAINTENANCE: "Bakım" #NT!
- BANNER: "Ralli puanı" #NT!
- SCOPE_CHARACTER: "[ROOT.GetCharacter.GetUIName]:" #NT!
- SCOPE_CHARACTER_ME: "Ben, [ROOT.GetCharacter.GetUIName]:" #NT!
- SCOPE_LANDED_TITLE: "[ROOT.GetLandedTitle.GetName]:" #NT!
- SCOPE_PROVINCE: "[ROOT.GetProvince.GetName]:" #NT!
- SCOPE_ACTIVITY: "[ROOT.Activity.GetName]:" #NT!
- SCOPE_SECRET: "[ROOT.GetSecret.GetName]:" #NT!
- SCOPE_SCHEME: "[ROOT.GetScheme.GetName]:" #NT!
- SCOPE_COMBAT: "[ROOT.GetCombat.GetName]:" #NT!
- SCOPE_FAITH: "[ROOT.Faith.GetName]:" #NT!
- SCOPE_RELIGION: "[ROOT.Religion.GetName]:" #NT!
- SCOPE_GREAT_HOLY_WAR: "[ROOT.GreatHolyWar.GetName]:" #NT!
- SCOPE_WAR: "[ROOT.War.GetName]:" #NT!
- SCOPE_DYNASTY: "[dynasty|E] [ROOT.Dynasty.GetName]:" #NT!
- SCOPE_DYNASTY_HOUSE: "[house|E] [ROOT.House.GetName]:" #NT!
- SCOPE_FACTION: "[ROOT.Faction.GetName]:" #NT!
- SCOPE_CULTURE: "[ROOT.Culture.GetName]:" #NT!
- SCOPE_ARMY: "[ROOT.Army.GetName]:" #NT!
- SCOPE_HOLY_ORDER: "[ROOT.HolyOrder.GetName]:" #NT!
- SCOPE_ACTIVE_COUNTIL_TASK: "[ROOT.CouncilTask.GetName]:" #NT!
- SCOPE_MERCENARY_COMPANY: "[ROOT.MercenaryCompany.GetName]:" #NT!
- SCOPE_INSPIRATION: "[ROOT.Inspiration.GetName]" #NT!
- SCOPE_STRUGGLE: "[ROOT.Struggle.GetName]" #NT!
- SCOPE_TRAVEL_PLAN: "[ROOT.TravelPlan.GetName]:" #NT!
- SCOPE_HOUSE_UNITY: "[ROOT.HouseUnity.GetName]" #NT!
- SCOPE_TAX_SLOT: "[ROOT.TaxSlot.GetName]" #NT!
- SAVE_NAME_LABEL: "Adı Kaydet:" #NT!
- SAVE_TO_CLOUD_LABEL: "Buluta Kaydet" #NT!
- FILE_NAME_INVALID: "@warning_icon! #X Geçersiz Kayıt Adı#!" #NT!
- STRESS: "Stres" #NT!
- NO_STRESS_EFFECT: "#weak Hiçbir etkisi yok#!" #NT!
- DREAD: "Korku" #NT!
- VASSALS_COLON: "[vassals]:" #NT!
- LIEGE_COLON: "[liege]:" #NT!
- diplomacy: "Diplomasi" #NT!
- martial: "Askeri" #NT!
- stewardship: "Vekillik" #NT!
- intrigue: "Entrika" #NT!
- learning: "Öğrenme" #NT!
- prowess: "Güç" #NT!
- diplomacy_modifier: "[diplomacy|E]" #NT!
- martial_modifier: "[martial|E]" #NT!
- stewardship_modifier: "[stewardship|E]" #NT!
- intrigue_modifier: "[intrigue|E]" #NT!
- learning_modifier: "[learning|E]" #NT!
- prowess_modifier: "[prowess|E]" #NT!
- diplomacy_modifier_with_offset: "$diplomacy_modifier$" #NT!
- martial_modifier_with_offset: "$martial_modifier$" #NT!
- stewardship_modifier_with_offset: "$stewardship_modifier$" #NT!
- intrigue_modifier_with_offset: "$intrigue_modifier$" #NT!
- learning_modifier_with_offset: "$learning_modifier$" #NT!
- general_skill: "Genel" #NT!
- diplomacy_concept: "[diplomacy|E]" #NT!
- martial_concept: "[martial|E]" #NT!
- stewardship_concept: "[stewardship|E]" #NT!
- intrigue_concept: "[intrigue|E]" #NT!
- learning_concept: "[learning|E]" #NT!
- prowess_concept: "[prowess|E]" #NT!
- event_target_desc: "Bir kapsam "olay hedefi" olarak kaydedilebilir. Daha sonra, olay hedefini kaydettiğiniz noktaya doğrudan bir çizgide "geriye doğru izlenebilen" herhangi bir tetikleyici/efektten erişilebilir olacaktır (yani, olay hedefini kaydettikten sonra kontrol edilen tetikleyiciler veya tetiklenen efektler, ancak yalnızca bir olay zinciri gibi sürekli bir zincirde). Bir olay zinciri sona ererse, olay hedefi kaybolur.\nKod tarafından ayarlanan bir dizi on_action ve bir dizi özel etkileşimin kendi önceden tanımlanmış olay hedefleriyle birlikte geldiğini unutmayın.\nSon not: Ayrıca, belirli durumlarda kullanışlı olabilecek değerleri ve bool'ları olay hedefleri olarak kaydedebilirsiniz." #NT!
- parameter_desc: "Stellaris'ten kalanlar. Bunu kullanmayı düşünüyorsanız, muhtemelen değişkenler olarak kaydedilen kapsamları kullanmak daha iyi olacaktır. (Herhangi bir nedenle "parametre" kullanmaya başladıysak bu açıklamayı değiştirin!)" #NT!
- variable_desc: "Komut dosyası değişkenlerine komut dosyasıyla erişilebilir ve değiştirilebilir. Şu anda aşağıdaki biçimlerde gelirler:\n\ndeğişken:example_number = 1\ndeğişken:example_flag = flag:example\ndeğişken:example_scope = root\ndeğişken:example_bool = yes" #NT!
- flag_desc: "Bayraklar, oyunda bir şeyin gerçekleştiğini takip etmek için kullanabileceğiniz basit işaretleyicilerdir. Ayarlandığı kapsam türüne bağlı olarak belirli bir türleri vardır (karakter bayrağı, şema bayrağı, sC.). Belirli kapsam (örneğin belirli bir karakter), bir efekt tarafından kaldırılıncaya kadar veya zamanlayıcısı tanımlanmışsa zamanlayıcısı bitene kadar bayrağı ayarlayacaktır." #NT!
- TODO: "Yapılacaklar: $WHAT$" #NT!
- EVENT_SIGNED: "İmza," #NT!
- EVENT_SIGNATURE: "[CHARACTER.GetNameNoTooltip]" #NT!
- EVENT_REASON_SEPARATOR: "None" #NT!
- EVENT_REASON_SKILL: "$SKILL$ Beceri" #NT!
- EVENT_REASON_TRAIT: "[TRAIT.GetName( CHARACTER.Self )|L] Özellik" #NT!
- EVENT_REASONS_LAST_REASON: "$REASONS$ ve $LAST_REASON$" #NT!
- EVENT_REASONS: "Bu seçenek $REASONS$ nedeniyle kullanılabilir." #NT!
- MOTHER: "Anne" #NT!
- FATHER: "Baba" #NT!
- MOTHER_WIFE: "Anne-eş" #NT!
- FATHER_HUSBAND: "Baba-koca" #NT!
- GRANDMOTHER: "Büyük Anne" #NT!
- GRANDFATHER: "Büyük Baba" #NT!
- GREATGRANDMOTHER: "Büyük Büyükanne" #NT!
- GREATGRANDFATHER: "Büyük Büyükbaba" #NT!
- DAUGHTER: "Kız" #NT!
- SON: "Oğul" #NT!
- DAUGHTER_WIFE: "Kız-Eş" #NT!
- SON_HUSBAND: "Oğul-Koca" #NT!
- GRANDDAUGHTER: "Kız Torun" #NT!
- GRANDSON: "Erkek Torun" #NT!
- GREATGRANDDAUGHTER: "Büyük Kız Torun" #NT!
- GREATGRANDSON: "Büyük Erkek Torun" #NT!
- BROTHER: "Erkek Kardeş" #NT!
- SISTER: "Kız Kardeş" #NT!
- HALF_BROTHER: "Üvey Erkek Kardeş" #NT!
- HALF_SISTER: "Üvey Kız Kardeş" #NT!
- BROTHER_HUSBAND: "Kardeş-Koca" #NT!
- SISTER_WIFE: "Kardeş-Eş" #NT!
- BROTHER_IN_LAW: "Kayınbirader" #NT!
- SISTER_IN_LAW: "Baldız" #NT!
- RELATION_CONCUBINE_MAN: "$game_concept_concubine_male$" #NT!
- RELATION_CONCUBINE_WOMAN: "$game_concept_concubine_female$" #NT!
- PLAYER_HEIR_RELATION: "[player_heir|E]" #NT!
- DIARCH_RELATION: "[CHARACTER.GetDiarchTitle]" #NT!
- UNCLE: "Amca" #NT!
- AUNT: "Hala" #NT!
- NEPHEW: "Yeğen" #NT!
- NIECE: "Yeğen" #NT!
- WIFE: "Eş" #NT!
- COUSIN_FEMALE: "Kuzen" #NT!
- COUSIN_MALE: "Kuzen" #NT!
- CONCUBINE: "Cariye" #NT!
- HUSBAND: "Koca" #NT!
- PRISONER_RELATION: "Mahkum" #NT!
- RELATION_HOSTAGE_HOME: "[TARGET_CHARACTER.GetShortUIName]'dan rehin" #NT!
- RELATION_HOSTAGE_AWAY: "[TARGET_CHARACTER.GetShortUINamePossessive] Rehine" #NT!
- RELATION_PRISONER_HOME: "[TARGET_CHARACTER.GetShortUINamePossessive] Mahkum" #NT!
- RELATION_PRISONER_AWAY: "Mahkum" #NT!
- RELATION_COURT_POSITION: "[COURT_POSITION.GetName] [COURT_POSITION.GetPositionType.GetTextIcon]" #NT!
- RELATION_COMMANDER: "[commander|E]" #NT!
- RELATION_LIEGE_COUNCILLOR: "[TARGET_CHARACTER.GetShortUINamePossessive] [CHARACTER.GetCouncilTitle]" #NT!
- RELATION_LIEGE_COURT_POSITION: "[CHARACTER.GetShortUINamePossessive] [COURT_POSITION.GetName] [COURT_POSITION.GetPositionType.GetTextIcon]" #NT!
- MY_VALUE_COLON: "#T $KEY$: $VALUE|V$#!" #NT!
- CHARACTER_VALUE_COLON: "#T $KEY$: $VALUE|V$#!" #NT!
- SCREENSHOT_TAKEN: "Ekran görüntüsü alındı!" #NT!
- MAP_SCREENSHOT_TAKEN: "Harita ekran görüntüsü alınıyor!" #NT!
- INTERACTION_REPLY_ITEM: "#T $INTERACTION$\n#!Sender: [CHARACTER.GetUIName]\n" #NT!
- INTERACTION_REPLY_INTERACTION_DISMISS: "azletmek" #NT!
- INTERACTION_REPLY_INTERACTION_REJECT: "reddetmek" #NT!
- INTERACTION_REPLY_INTERACTION_DESC: "#I Görüntülemek için tıklayın\n$ACTION$#!'ye sağ tıklayın" #NT!
- INTERACTION_REPLY_TIMEOUT_DISMISS: "işten" #NT!
- INTERACTION_REPLY_TIMEOUT_REJECT: "Reddedilmiş" #NT!
- INTERACTION_REPLY_TIMEOUT_DESC: "Otomatik olarak [DATE.GetString|V] üzerinde $ACTION$ olacak" #NT!
- BETROTHAL_ACTION_ITEM: "#T [CHARACTER.GetUIName] ve [TARGET_CHARACTER.GetUIName] evlenebilir#!\n#I Görmek için tıklayın\nNişanı bozmak için sağ tıklayın#!" #NT!
- END_OF_WAR_ITEM_TIMEOUT_DESC: "[DATE.GetStringLong|V] #weak (şu anda açık değilse)#! tarihinde görevden alınacaktır" #NT!
- END_OF_COMBAT_ITEM_TIMEOUT_DESC: "[DATE.GetStringLong|V] #weak (şu anda açık değilse)#! tarihinde görevden alınacaktır" #NT!
- END_OF_WAR_ITEM_INTERACTION_DESC: "#I Savaş Özetini görüntülemek için tıklayın\nKapatmak için sağ tıklayın#!" #NT!
- END_OF_COMBAT_ITEM_INTERACTION_DESC: "#I Sonuçları görüntülemek için tıklayın\nSağ tıklayarak kapatın#!" #NT!
- END_OF_COMBAT_VICTORY: "Zafer!" #NT!
- END_OF_COMBAT_DEFEAT: "Yenildin!" #NT!
- END_OF_COMBAT_ACTION_ITEM: "#T $WINLOSE$#!\n$BATTLENAME$\n" #NT!
- DIPLOMATIC_ITEM_TOOLTIP: "[DiplomaticItem.GetTooltip]\n[DiplomaticItem.GetTimeoutDesc]\n[DiplomaticItem.GetInteractionDesc]" #NT!
- TRAIT_TOOLTIP_IN_LIST: "[TRAIT.GetName( CHARACTER.Self )|V]" #NT!
- TRAIT_LEVEL_TRACK_DEGRADATION: "@warning_icon! #X [trait_level_track_xp|E] ayda $CHANGE|-1$ oranında düşecek#!" #NT!
- TRAIT_LEVEL_TRACK_DEGRADATION_MINIMUM: "@warning_icon! #X [trait_level_track_xp|E] ayda $CHANGE|-1$ oranında düşecek #weak (minimum $MINIMUM|0$)#!#!" #NT!
- TRAIT_CAN_NOT_HAVE_CHILDREN: "@warning_icon! #X Çocuk sahibi olamaz#!" #NT!
- TRAIT_FLAG_DESC_can_not_marry: "@warning_icon! #X Evlenemez#!" #NT!
- TRAIT_FLAG_DESC_can_murder_own_children: "[hostile_schemes|E]'ı kendi çocuklarına karşı kullanabilirler" #NT!
- TRAIT_FLAG_DESC_agent_acceptance_25: "[agent|E] Kabul: #P +25#!" #NT!
- TRAIT_FLAG_DESC_scheme_start_progress: "Başlangıç ​​[scheme|E] İlerleme: #P +3#!" #NT!
- TRAIT_FLAG_DESC_offer_vassalisation_25: "[offer_vassalization|E] Kabul: #P +25#!" #NT!
- TRAIT_FLAG_DESC_better_war_hostages: "[war_score|E] tekliften [hostages|E]: #P +5#!\nMax [war_score|E] tekliften [hostages|E]: #P +10#!" #NT!
- TRAIT_FLAG_DESC_extra_scheme_power_vs_rivals: "[hostile_scheme|E] [success_chance|E] Rakiplere Karşı: #P +[EmptyScope.ScriptValue('vengeful_scheme_success_chance_modifier')|0]#!" #NT!
- TRAIT_FLAG_DESC_lower_chance_of_dying_in_combat: "[battle|E]'da ölme olasılığı: #P -50%#!" #NT!
- TRAIT_FLAG_DESC_higher_chance_of_dying_in_battle: "[battle|E]'da ölme olasılığı: #N +100%#!" #NT!
- TRAIT_BLOCK_INHERITANCE: "@warning_icon! #X Unvanları devralamaz#!" #NT!
- TRAIT_FLAVOR_DESC: "$DESC|F$" #NT!
- FERTILITY_COLON: "[fertility|E]: $VALUE|V$" #NT!
-  #AGOT Modified  #NT!
- #BIRTH_DATE: "[DATE.GetStringShort|V]'da doğdu" #NT!
- BIRTH_DATE: "[Character.GetBirthDate.GetString|V]'da doğdu" #NT!
- YEARS_COUNT_SINGULAR: "#V 1 yıl#!" #NT!
- YEARS_COUNT_PLURAL: "#V $VALUE$ yıl#!" #NT!
- YEARS_COUNT_SINGULAR_NO_FORMAT: "1 yıl" #NT!
- YEARS_COUNT_PLURAL_NO_FORMAT: "$VALUE$ yıl" #NT!
- MONTHS_COUNT_SINGULAR: "#V 1 ay#!" #NT!
- MONTHS_COUNT_PLURAL: "#V $VALUE$ ay#!" #NT!
- MONTHS_COUNT_SINGULAR_NO_FORMAT: "1 ay" #NT!
- MONTHS_COUNT_PLURAL_NO_FORMAT: "$VALUE$ ay" #NT!
- DAYS_COUNT_SINGULAR: "#V 1 gün#!" #NT!
- DAYS_COUNT_PLURAL: "#V $VALUE$ gün#!" #NT!
- DAYS_COUNT_SINGULAR_NO_FORMAT: "1 gün" #NT!
- DAYS_COUNT_PLURAL_NO_FORMAT: "$VALUE$ gün" #NT!
- SKILL_AND_LEVEL_VALUE: "$VALUE|V$ #weak ($LEVEL$)#!" #NT!
- SKILL_TERRIBLE: "Korkunç" #NT!
- SKILL_POOR: "Fakir" #NT!
- SKILL_AVERAGE: "Ortalama" #NT!
- SKILL_GOOD: "İyi" #NT!
- SKILL_EXCELLENT: "Harika" #NT!
- SKILL_NICE: "Güzel" #NT!
- skill_level_terrible: "korkunç" #NT!
- skill_level_poor: "fakir" #NT!
- skill_level_average: "ortalama" #NT!
- skill_level_good: "iyi" #NT!
- skill_level_excellent: "harika" #NT!
- MY_REALM_LABEL: "[realm|E]'ınız: #V [TITLE.GetName]#!" #NT!
- REALM_LABEL: "[realm|E]: #V [TITLE.GetName]#!" #NT!
- CHARACTER_PORTRAIT_TOOLTIP: "[Character.GetFullNameNicknamedNoTooltip]\n[Character.GetDebugTooltip]" #NT!
- TOOLTIP_HEADER: "#T $NAME$#!" #NT!
- ATTACKERS: "#attacker_color Saldırganlar#!" #NT!
- DEFENDERS: "#defender_color Savunucular#!" #NT!
- ATTACKERS_FRIENDLY: "#defender_color Saldırganlar#!" #NT!
- DEFENDERS_HOSTILE: "#attacker_color Savunucular#!" #NT!
- OWNER: "Mal sahibi" #NT!
- PARTICIPATION_SCORE: "Katılım Puanı" #NT!
- CURRENT_MAX: "$CURRENT|0$/$MAX|0$" #NT!
- CREATE: "Oluştur" #NT!
- DEBUG_COLON: "#D HATA AYIKLAMA:#!" #NT!d
- SHOW_DETAILS: "Detayları göster" #NT!
- PLAYER_NAME: "$NAME|D$" #NT!
- VALUE_BREAKDOWN_ENTRY: "$TITLE$: $VALUE$" #NT!
- VALUE_BREAKDOWN_ENTRY_VALUE_FIRST: "$VALUE$ $TITLE$" #NT!
- VALUE_BREAKDOWN_ENTRY_NO_VALUE: "$TITLE$" #NT!
- VALUE_BREAKDOWN_ENTRY_TOOLTIP_HEADER: "#T $TITLE$: $VALUE$#!" #NT!
- VALUE_BREAKDOWN_ENTRY_TOOLTIP_HEADER_VALUE_FIRST: "#T $VALUE$ $TITLE$#!" #NT!
- VALUE_BREAKDOWN_ENTRY_TOOLTIP_HEADER_NO_VALUE: "#T $TITLE$#!" #NT!
- VALUE_BREAKDOWN_ENTRY_TOOLTIP_SUBHEADER: "#S $TITLE$: $VALUE$#!" #NT!
- VALUE_BREAKDOWN_ENTRY_TOOLTIP_SUBHEADER_VALUE_FIRST: "#T $VALUE$ $TITLE$#!" #NT!
- VALUE_BREAKDOWN_ENTRY_TOOLTIP_SUBHEADER_NO_VALUE: "#S $TITLE$#!" #NT!
- VALUE_BREAKDOWN_ENTRY_WEAK: "#weak $TITLE$: $VALUE$#!" #NT!
- VALUE_BREAKDOWN_ENTRY_WEAK_VALUE_FIRST: "#weak $VALUE$ $TITLE$#!" #NT!
- VALUE_BREAKDOWN_ENTRY_WEAK_NO_VALUE: "#weak $TITLE$#!" #NT!
- VALUE_BREAKDOWN_INDICATOR_GOOD_UP: "@degisim_iyi_1!" #NT!
- VALUE_BREAKDOWN_INDICATOR_BAD_UP: "@degisim_kötü_1!" #NT!
- VALUE_BREAKDOWN_INDICATOR_NEUTRAL_UP: "@change_up_neutral_1!" #NT!
- VALUE_BREAKDOWN_INDICATOR_GOOD_UP_DOUBLE: "@degisim_iyi_2!" #NT!
- VALUE_BREAKDOWN_INDICATOR_BAD_UP_DOUBLE: "@degisim_kötü_2!" #NT!
- VALUE_BREAKDOWN_INDICATOR_NEUTRAL_UP_DOUBLE: "@change_up_neutral_2!" #NT!
- VALUE_BREAKDOWN_INDICATOR_BAD_DOWN: "@degisim_kötü_1!" #NT!
- VALUE_BREAKDOWN_INDICATOR_GOOD_DOWN: "@change_down_good_1!" #NT!
- VALUE_BREAKDOWN_INDICATOR_NEUTRAL_DOWN: "@change_down_neutral_1!" #NT!
- VALUE_BREAKDOWN_INDICATOR_BAD_DOWN_DOUBLE: "@degisim_kötü_2!" #NT!
- VALUE_BREAKDOWN_INDICATOR_GOOD_DOWN_DOUBLE: "@değişim_aşağı_iyi_2!" #NT!
- VALUE_BREAKDOWN_INDICATOR_NEUTRAL_DOWN_DOUBLE: "@change_down_neutral_2!" #NT!
- VALUE_BREAKDOWN_INDICATOR_BAD_NONE: "@change_none_bad!" #NT!
- VALUE_BREAKDOWN_INDICATOR_GOOD_NONE: "@change_none_good!" #NT!
- VALUE_BREAKDOWN_INDICATOR_NEUTRAL_NONE: "@change_none_neutral!" #NT!
- GOVERNMENT_TYPE_DESCRIPTION: "[GovernmentType.GetRuleInfo][GovernmentType.GetFlagInfo][GovernmentType.GetDescription]" #NT!
- GOVERNMENT_FLAG_INFO: "$EFFECT_LIST_BULLET$ $FLAG$" #NT!
- GOVERNMENT_IGNORED_DEVELOPMENT: "$EFFECT_LIST_BULLET$ [development|E] sahip olunan [counties|E] yok sayıldı" #NT!
- DEVELOPMENT_CURRENT_LEVEL: "#T Gelişim Seviyesi: $LEVEL|+0$ #!" #NT!
- DEVELOPMENT_PROGRESS_TO_LEVEL: "[development_growth|E]: $CURRENT|V0$/$THRESHOLD|V0$" #NT!
- DEVELOPMENT_PROGRESS: "Aylık Değişim" #NT!
- CONTROL_CURRENT_LEVEL: "#T Kontlkuk Kontrolü: $VALUE|1$/100% #!" #NT!
- CONTROL_PROGRESS: "Aylık Artış" #NT!
- BASE_FACTOR_COLON: "Temel: $VALUE|%0+=$" #NT!
- BASE_AI_WILLINGNESS: "Temel İstek: $VALUE|0+=$" #NT!
- BASE_AI_RELUCTANCE: "Temel İsteksizlik: $VALUE|0+=$" #NT!
- COUNTY_OPINION_SAME_CULTURE: "Aynı [culture|E]" #NT!
- COUNTY_OPINION_DIFFERENT_CULTURE: "[cultural_acceptance|E]" #NT!
- COUNTY_OPINION_DIFFERENT_CULTURE_KNOWS_LANGUAGE: "#weak ([GetDefine('NCharacterOpinion', 'CULTURE_ACCEPTANCE_MULT_KNOWS_LANGUAGE')|%0] daha az çünkü [CHARACTER.GetShortUIName] konuşabiliyor [CULTURE.GetLanguage.GetName])#!" #NT!
- BULLET_WITH_TAB: "None" #NT!
- BULLET: "$EFFECT_LIST_BULLET$" #NT!
- MODIFIER_BULLET: "$EFFECT_LIST_BULLET$" #NT!
- TAB: "    " #NT!
- SHORT_TAB: "   " #NT!
-  #AGOT Modified  #NT!
- #HOUSE_CADET_BRANCH_NAME_FORMAT: "$DYNASTY$-$TITLE$" #NT!
- HOUSE_CADET_BRANCH_NAME_FORMAT: "$DYNASTY$" #NT!
- EVENT_OPTION_FLAVOR: "#F $TEXT$#!\n" #NT!
- CHARACTER_POSS_CHECK: "S" #NT!
- CHARACTER_POSS: "'S" #NT!
- CHARACTER_POSS_SPECIAL: "None" #NT!
- NO_EFFECTS: "Hiçbir etkisi yok" #NT!
- EXCELLENT: "Harika!" #NT!
- RESOURCE_MISSING_GOLD: "@warning_icon! #X Eksik [gold_i] $VALUE|^$#!" #NT!
- RESOURCE_MISSING_PIETY: "@warning_icon! #X Eksik [piety_i] $VALUE|^$#!" #NT!
- RESOURCE_MISSING_PRESTIGE: "@warning_icon! #X Eksik [prestige_i] $VALUE|^$#!" #NT!
- RESOURCE_MISSING_DYNASTY_PRESTIGE: "@warning_icon! #X Eksik [dynasty_prestige_i] $VALUE|^$#!" #NT!
- BREAKDOWN_MULTIPLICATION_PREFIX: "None" #NT!
- CLICK_TO_VIEW: "#I Görüntülemek için tıklayın#!" #NT!
- CLICK_TO_SELECT: "#I Seçmek için tıklayın#!" #NT!
- LAUNCHER_SAVE_DESCRIPTION: "[CHARACTER.GetNameNoTooltip] olarak oynuyorum" #NT!
- LAUNCHER_SAVE_DESCRIPTION_OBSERVER: "Gözlem [CHARACTER.GetNameNoTooltip]" #NT!
- LAUNCHER_SAVE_DESCRIPTION_GLOBAL_OBSERVER: "Gözlemlemek" #NT!
- BASE_VALUE: "Temel" #NT!
- BREAKDOWN_FORMAT_POSITIVE_IS_BAD: "$KEY$: $VALUE|=-0$" #NT!
- BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD: "$KEY$: [piety_i]$VALUE|=-0%$" #NT!
- BREAKDOWN_ENTRY_FORMAT: "$KEY$:" #NT!
- BREAKDOWN_ENTRY_FORMAT_NO_COLON: "$KEY$" #NT!
- BASE_VALUE_FORMAT: "$KEY$: $VALUE|V0$" #NT!
- BASE_VALUE_FORMAT_DECIMALS: "$KEY$: $VALUE|V2$" #NT!
- BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE: "$KEY$: #N +$VALUE|2$#!" #NT!
- BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE: "$KEY$: #P $VALUE|2$#!" #NT!
- learning_law_cost_tooltip: "[learning|E] Beceri" #NT!
- poor_learning_law_cost_tooltip: "Zavallı [learning|E]" #NT!
- rite_legalism_law_cost_tooltip: "Yasalcılık Ayini" #NT!
- rite_pronouncements_law_cost_tooltip: "Din hukuku" #NT!
- rite_primitivism_law_cost_tooltip: "Doğal İlkelcilik" #NT!
- clan_government_cost_tooltip: "[government|E] tipiniz [GetGovernment('clan_government').GetName]" #NT!
- character_modifiers_law_cost_tooltip: "Karakter Değiştiricileri" #NT!
- SCRIPTED_COST_HEADER: "#S $TEXT$#!" #NT!
- SCRIPTED_COST_NO_DYNAST: "Sadece [dynast|E] [dynasty_prestige|E] harcayabilir" #NT!
- GAME_DATE_STRING: "$DAY|O$ $MONTH$, $ERA_SEL_IG$ $YEAR_SEL_IG$" #NT!
- GAME_DATE_STRING_SHORT: "$DAY|O$ $MONTH_SHORT$, $ERA_SEL_IG$ $YEAR_SEL_IG$" #NT!
- GAME_DATE_STRING_SHORT_NO_YEAR: "$DAY|O$ $MONTH$" #NT!
- GAME_DATE_STRING_LONG: "$DAY|O$ of $MONTH$, $ERA_SEL_IG$ $YEAR_SEL_IG$" #NT!
- CONCEPT_TEXT: "[$KEY$|E]" #NT!
- NOT_IN_DIPLOMATIC_RANGE: "Diplomatik Menzil İçinde Değil" #NT!
- FIND_CHARACTER: "Karakter Bul" #NT!
- GO_TO_CAPITAL: "Başkente git" #NT!
- CHARACTER_ARMY_COMPOSITION_NAME: "[CHARACTER.GetShortUINameNotMe] Ordusu" #NT!
- ARMY_ICON_HEADER: "#T Bu konumdaki ordular #!" #NT!
- BREAKDOWN_FORMAT_REALM_SIZE_PRESTIGE_COST: "$KEY$: $VALUE|=-0$" #NT!
- realm_size: "[realm_size|E]" #NT!
- RENAME_STRING_TOO_LONG: "@warning_icon! #X Ad çok uzun#!" #NT!
- RENAME_STRING_TOO_LONG_NAMED: "@warning_icon! #X $NAME$ çok uzun#!" #NT!
- RENAME_STRING_EMPTY: "@warning_icon! #X Ad boş#!" #NT!
- RENAME_STRING_EMPTY_NAMED: "@warning_icon! #X $NAME$ boş#!" #NT!
- RENAME_STRING_ILLEGAL: "@warning_icon! #X İsim yasadışı karakterler içeriyor#!" #NT!
- RENAME_STRING_ILLEGAL_NAMED: "@warning_icon! #X $NAME$ yasadışı karakterler içeriyor#!" #NT!
- RENAME_TOOLTIP: "[GameDialog.GetCanAcceptBlocker]" #NT!
- CLOUDSAVE_QUOTA_EXCEEDED_TOOLTIP: "Bulut kaydetme depolama kotası aşıldı. Eski bulut kaydetme dosyalarını kaldırarak biraz alan boşaltmayı deneyin." #NT!
- TRAIT_NAME_WITH_BASE: "$NAME$ #weak ($BASE$)#!" #NT!
- peasant_faction_event_troops: "Köylü Ayaklanması" #NT!
- populist_faction_event_troops: "Popülist Ayaklanma" #NT!
- claimant_faction_event_troops: "Sahtekar İsyancılar" #NT!
- mongol_event_troops: "Moğol Ordusu" #NT!
- first_almohad_event_troops: "Toplanan Kabileler" #NT!
- second_almohad_event_troops: "Muvahhidler" #NT!
- azariqa_fanatics: "Azariqa Fanatikleri" #NT!
- yaqubs_ayyar_loyalists: "Ayyar Sadıkları" #NT!
- persian_warriors: "Pers Savaşçıları" #NT!
- event_troop_default_name: "[ROOT.Char.GetTitledFirstNamePossessiveNoTooltip] ordusu" #NT!
- CURRENT_SITUATION_SUGGESTIONS: "Öneriler" #NT!
- CURRENT_SITUATION_SUGGESTIONS_EMPTY: "Mevcut değil" #NT!
- CURRENT_SITUATION_HEADER: "Mevcut durum" #NT!
- CHARACTER_INTERACTION_BLACKMAIL_NO_SECRET: "[blackmail|E] için kullanılabilecek [secret|E] yok" #NT!
- CHARACTER_INTERACTION_BLACKMAIL_ALREADY_STRONG_HOOK: "[CHARACTER.GetShortUIName|U] zaten [CharHaveHas(CHARACTER)] a [strong_hook|E] [TARGET_CHARACTER.GetShortUIName|U] üzerinde" #NT!
- RESET_DISMISSED_BUTTON_TEXT: "Sıfırla" #NT!
- RESET_DISMISSED_TOOLTIP: "#T Sıfırla#!\nBring geri #EMP $CURRENT_SITUATION_HEADER$#! sildiğiniz öğeler.\n\n#I Listeyi sıfırlamak için tıklayın#!" #NT!
- CHARACTER_INTERACTION_SAME_REALM_AS: "Bunlar [realm|E]'ınızın bir parçası olmalı" #NT!
- NOT_CHARACTER_INTERACTION_SAME_REALM_AS: "Bunlar sizin [realm|E]'ınızın bir parçası olmamalıdır" #NT!
- CHARACTER_INTERACTION_NOT_ALLOWED_IN_VARANGIAN_GUARD: "Hedef [court|E]'de [knight|E] olarak görev yapmalarına izin verilmiyor" #NT!
- SET_CHARACTER_CONTROLLER_TITLE: "$TITLE$" #NT!
- SET_CHARACTER_CONTROLLER_TEXT: "$TEXT$" #NT!
+ SPANISH_SUPPORTED:0 "Evet"
+ GERMAN_SUPPORTED:0 "Evet"
+ FRENCH_SUPPORTED:0 "Evet"
+ ENGLISH:0 "İngilizce"
+ SPANISH:0 "İspanyolca"
+ GERMAN:0 "Almanca"
+ FRENCH:0 "Fransızca"
+ MAIN_MENU:0 "Ana Menü"
+ NEW:0 "Yeni"
+ TUTORIAL:0 "Eğitim Modu"
+ CONTENT:0 "İçerik"
+ LOAD_GAME:0 "Oyun Yükle"
+ SAVE_GAME:0 "Oyunu Kaydet"
+ DELETE_GAME:0 "Kaydı Sil"
+ SAVE:0 "Kaydet"
+ DELETE:0 "Sil"
+ DELETE_CONFIRMATION_DESC:0 "$NAME|V$ kayıt dosyası silinecek. Emin misiniz?"
+ CLOUDSAVE_UNVAVAILABLE_TOOLTIP:0 "Bulut kayıtlarına ulaşılamıyor"
+ SAVE_ENABLE_CLOUDSAVE_TOOLTIP:0 "Bulut'a kaydet"
+ LOAD_CLOUDSAVE_TOOLTIP:0 "Bulut Kaydı"
+ LOAD_IRONMAN_TOOLTIP:0 "Ironman Kaydı"
+ LOAD_ACHIEVEMENTS_ENABLED_TOOLTIP:0 "Başarım Alınabilir"
+ LOAD_ACHIEVEMENTS_DISABLED_TOOLTIP:0 "Başarım Alınamaz"
+ LOAD_MULTIPLAYER_TOOLTIP:0 "Çok Oyunculu Kaydı ([SaveGameItem.GetNumberOfPlayers] oyuncu)"
+ LOAD_INVALID_TOOLTIP:0 "#X Geçersiz kayıt dosyası. Çökmelere sebep olabilir.#!"
+ LOAD_LAST_PLAYED:0 "Son oynanan: [SaveGameItem.GetLastPlayed]"
+ LOAD_SHOW_INVALID_SAVEGAMES:0 "Geçersiz Kayıt Dosyalarını Göster"
+ GAME_OPTIONS:0 "Oyun Ayarları"
+ HELP:0 "Yardım"
+ RELOAD:0 "Tekrar Yükle"
+ OPEN_SOURCE:0 "Kaynak Dosyasını Aç"
+ CANCEL:0 "İptal"
+ LOBBY:0 "Lobi"
+ START:0 "Başlat"
+ FINISH:0 "Bitir"
+ DISABLED_BUTTON:0 "Eklenmemiş..."
+ CURRENT_DATE:0 "[GetCurrentDate.GetStringLong]"
+ CURRENT_DATE_TOOLTIP:2 "[JoinText( '\n', GetCurrentDateStringWithSyncInfo, GetPausedByEventReason )]"
+ CURRENT_SPEED_LAGGING_PLAYER:0 "Hız düşürüldü: [GetLaggingPlayerName] geride kalıyor\n"
+ CURRENT_SPEED_CLICK_TT_1:0 "#I Oyun hızını $CURRENT_SPEED_TEXT_1$ yapmak için tıklayın#!"
+ CURRENT_SPEED_CLICK_TT_2:0 "#I Oyun hızını $CURRENT_SPEED_TEXT_2$ yapmak için tıklayın#!"
+ CURRENT_SPEED_CLICK_TT_3:0 "#I Oyun hızını $CURRENT_SPEED_TEXT_3$ yapmak için tıklayın#!"
+ CURRENT_SPEED_CLICK_TT_4:0 "#I Oyun hızını $CURRENT_SPEED_TEXT_4$ yapmak için tıklayın#!"
+ CURRENT_SPEED_CLICK_TT_5:0 "#I Oyun hızını $CURRENT_SPEED_TEXT_5$ yapmak için tıklayın#!"
+ CURRENT_SPEED_ONLY_HOST:0 "Sadece Kurucu oyun hızını değiştirebilir"
+ CURRENT_SPEED_TOOLTIP:3 "#T Oyun Hızı: [GetCurrentGameSpeedText|V]#!\n[SelectLocalization( StringIsEmpty( GetLaggingPlayerName ), '', 'CURRENT_SPEED_LAGGING_PLAYER' )]"
+ CHANGE_SPEED_TOOLTIP_1:0 "$CURRENT_SPEED_TOOLTIP$[SelectLocalization( JominiIsHostOrLocal, 'CURRENT_SPEED_CLICK_TT_1', 'CURRENT_SPEED_ONLY_HOST' )]"
+ CHANGE_SPEED_TOOLTIP_2:0 "$CURRENT_SPEED_TOOLTIP$[SelectLocalization( JominiIsHostOrLocal, 'CURRENT_SPEED_CLICK_TT_2', 'CURRENT_SPEED_ONLY_HOST' )]"
+ CHANGE_SPEED_TOOLTIP_3:0 "$CURRENT_SPEED_TOOLTIP$[SelectLocalization( JominiIsHostOrLocal, 'CURRENT_SPEED_CLICK_TT_3', 'CURRENT_SPEED_ONLY_HOST' )]"
+ CHANGE_SPEED_TOOLTIP_4:0 "$CURRENT_SPEED_TOOLTIP$[SelectLocalization( JominiIsHostOrLocal, 'CURRENT_SPEED_CLICK_TT_4', 'CURRENT_SPEED_ONLY_HOST' )]"
+ CHANGE_SPEED_TOOLTIP_5:0 "$CURRENT_SPEED_TOOLTIP$[SelectLocalization( JominiIsHostOrLocal, 'CURRENT_SPEED_CLICK_TT_5', 'CURRENT_SPEED_ONLY_HOST' )]"
+ CURRENT_SPEED_TEXT_0:0 "Bilinmiyor"
+ CURRENT_SPEED_TEXT_1:0 "Çok Yavaş" #krutygetarts
+ CURRENT_SPEED_TEXT_2:0 "Yavaş"
+ CURRENT_SPEED_TEXT_3:0 "Normal"
+ CURRENT_SPEED_TEXT_4:0 "Hızlı"
+ CURRENT_SPEED_TEXT_5:0 "Çok Hızlı"
+ PLAYER_SYNC_DATES_HEADER:1 "#T Şu Anki Tarih: [DATE.GetString]#!"
+ PLAYER_SYNC_DATES:0 "Oyuncu Tarihleri:"
+ PLAYER_DATE:0 "$NAME$: [DATE.GetString|V]"
+ GAME_START_DATE_STRING:0 "[DATE.GetString] tarihinde başlandı"
+ GAME_YEARS_SINCE_START_DATE_STRING:0 "Başlangıçtan bu yana geçen süre: $YEARS|V$ yıl"
+ SVN_REVISION:0 "Bu SVN revizyonu"
+ GREATER_THAN:0 "daha fazla"
+ LESS_THAN:0 "daha az"
+ EQUAL_TO:0 "eşit"
+ EVENT_DEBUG_CHARACTER_EVENT:0 "Olay: $EVENT$ Karakter: $NAME$ [$ID$]\n"
+ SCOPE_DEBUG_FORMAT:0 "$NAME$ #weak ($TYPE|U$ - $ID$)#!"
+ SCOPE_DEBUG_VALUE:0 "Değer $VALUE$"
+ CHARACTER_DEFAULT_TOOLTIP:0 "[CHARACTER.GetUIName]\n[CHARACTER.PlayerName|D]\nID: [CHARACTER.GetID|V]\nTarihsel ID: [CHARACTER.GetSlowHistoryIdForDebug|V]\nHanedan: [CHARACTER.GetDynastyName|V]\nKültür: [CHARACTER.GetCulture.GetName|V]\nDoğurganlık: [CHARACTER.GetFertility|%0V]\nSağlık: [CHARACTER.GetHealth|1V]\n"
+ CHARACTER_DEBUG_REAL_FATHER_TOOLTIP:0 "[Select_CString( ObjectsEqual( CHARACTER.GetFather, CHARACTER.GetRealFather ), '', 'Gerçek Baba: ' )][Select_CString( ObjectsEqual( CHARACTER.GetFather, CHARACTER.GetRealFather ), '', CHARACTER.GetRealFather.GetUIName )][Select_CString( ObjectsEqual( CHARACTER.GetFather, CHARACTER.GetRealFather ), '', '\n' )]" # This is horribly overcomplicated just to conditionally write some text
+ CHARACTER_DEBUG_TOOLTIP:2 "#D DEBUG:#!\nID: [CHARACTER.GetID|V], Tarihsel ID: [CHARACTER.GetSlowHistoryIdForDebug|V]\n$CHARACTER_DEBUG_REAL_FATHER_TOOLTIP$Doğurganlık: [CHARACTER.GetFertility|%0V], Sağlık: [CHARACTER.GetHealth|1V], Stres: [CHARACTER.GetStress|0V]\nTemel Ağırlık: [CHARACTER.GetBaseWeight], Hedef Ağırlığı: [CHARACTER.GetTargetWeight], Mevcut Ağırlık: [CHARACTER.GetCurrentWeight]"
+ CHARACTER_AI_VALUES_DEBUG_TOOLTIP:2 "#D DEBUG#! YZ Değerleri:\nOnur: [Character.GetAIHonor|V]\nAçgözlülük: [Character.GetAIGreed|V]\nAkılcılık: [Character.GetAIRationality|V]\nEnerji: [Character.GetAIEnergy|V]\nCesaret: [Character.GetAIBoldness|V]\nKorku Etkili Cesaret: [Character.GetAIBoldnessAsAffectedByPlayerDread|V]\nDindarlık: [Character.GetAIZeal|V]\nİntikamcılık: [Character.GetAIVengefulness|V]\nŞefkat: [Character.GetAICompassion|V]\nSosyallik:[Character.GetAISociability|V]\n[Character.GetVariablesDescription]\n\n[Character.GetAiBudgetDescription]" #orya
+ CHARACTER_AI_VALUE:0 " #DEBUG YZ Değerleri#!"
+ CHARACTER_AI_BUDGET_TOOLTIP:0 "$BUDGET_CATEGORY$: $BUDGET_GOLD|V0$ / $BUDGET_MAXIMUM|0$\n"
+ DEBUG_OFFENSIVE_WAR:0 "$NAME$ ülkesine karşı ofansif savaş"
+ DEBUG_DEFENSIVE_WAR:0 "$NAME$ ülkesine karşı defansif savaş"
+ DEBUG_TRUCE:0 "$NAME$ ile ateşkes ([DATE.GetString] tarihine kadar)"
+ DEBUG_VASSAL_INFO:0 "Vasal Bilgisi:"
+ DEBUG_IS_POWERFUL_VASSAL:0 "Önemli: "
+ DEBUG_VASSAL_POWER_VALUE:0 "Vasal güç değeri: $VALUE|V1$"
+ DEBUG_TRAVEL_INFO:0 "Seyahat:"
+ DEBUG_TRAVEL_NEXT_DESTINATION:0 "   Bir sonraki varış noktası: [CHARACTER.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetName|V]\n"
+ DEBUG_TRAVEL_ROLE_OWNER:0 "   Seyahatin sahibi: [CHARACTER.GetTravelPlan.GetData.GetOwner.GetUIName]"
+ DEBUG_TRAVEL_ROLE_TRAVEL_LEADER:0 "   Seyahat lideri: [CHARACTER.GetTravelPlan.GetData.GetTravelLeader.GetUIName]"
+ DEBUG_TRAVEL_ROLE_COMPANIONS:0 "   Yoldaşlar: $COMPANIONS$"
+ DEBUG_TRAVEL_COMPANIONS_COMPANION:0 "[CHARACTER.GetUIName]"
+ DEBUG_TRAVEL_COMPANIONS_SEPARATOR:0 ", "
+ DEBUG_TRAVEL_ACTIVITY:1 "   [ACTIVITY.GetName] Etkinliğine"
+ CHARACTER_TRAITS:0 "Özellikler: $TRAITS|V$"
+ LOWBORN:0 "Köylü"
+ LOWBORN_DESC:0 "Bu karakter bir Köylü"
+ WEALTH_RICH:0 "Zengin"
+ WEALTH_POOR:0 "Fakir"
+ ARMY_NAME:1 "$NUM|O$ [PROVINCE.GetNameNoTooltip] Ordusu"
+ ARMY_NAME_RAIDER:1 "$NUM|O$ [PROVINCE.GetNameNoTooltip] Yağmacıları"
+ GATHERING_ARMY_NAME:0 "$LOCATION$ Mevkisinde Toplanılıyor"
+ DEAD:0 "Ölü"
+ DEAD_SINCE:0 "[DATE.GetStringShort|V] tarihinden beri ölü."
+ DIED_AT_AGE:1 "$AGE|V$ yaşında"
+ DIED_AT_AGE_SINGULAR:1 "$AGE|V$ yaşında"
+ DIED_AS_INFANT:1 "henüz çocuk yaşta"
+ CHARACTER_DEAD_TOOLTIP_DATE_INFO:0 "[Character.GetDeathDate.GetString|V] tarihinde [Character.GetAgeInfo]yken"
+ CHARACTER_DEAD_TOOLTIP:2 "$CHARACTER_DEAD_TOOLTIP_DATE_INFO$ [Character.GetDeathReason] ([Character.GetBirthDate.GetString|V] tarihinde doğdu)"
+ CHARACTER_DEAD_LINEAGE:0 "[Character.GetDeathDate.GetString] tarihinde [Character.GetDeathReason|U]"
+ CHARACTER_DEAD_TOOLTIP_HIDE_KILLER:0 "$CHARACTER_DEAD_TOOLTIP_DATE_INFO$ [Character.GetDeathReasonHideKiller] ([Character.GetBirthDate.GetString|V] tarihinde doğdu)"
+ CHARACTER_HOSTAGE_TOOLTIP: "#T Rehine#!\n[Character.GetUINameNotMe], şu anda koruyucusu [TARGET_CHARACTER.GetShortUINameNotMe] tarafından [hostage|E] olarak tutuluyor. [home_court|E] ise [TARGET_CHARACTER_2.GetShortUIName] adlı kişinin sarayı."
+ CHARACTER_INCAPABLE_TOOLTIP:0 "#T Âciz#!\n[Character.GetUINameNotMe], [GetTrait('incapable').GetName( Character.Self )] ve kendi başına hareket edemiyor"
+ CHARACTER_TRAVELING_TOOLTIP:0 "#T Seyahat Hâlinde#!\n[Character.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetName] topraklarına doğru [Concept( 'traveling', 'Seyahat' )|E] ediyor [SelectLocalization(Character.GetTravelPlan.GetData.GetActivity.IsValid, 'CHARACTER_TRAVELING_ACTIVITY_TOOLTIP_ADDITION', '')]"
+ CHARACTER_TRAVELING_ACTIVITY_TOOLTIP_ADDITION:0 "[SelectLocalization(ObjectsEqual(Character.GetTravelPlan.GetData.GetActivity.GetHost.Self, Character.Self),'CHARACTER_TRAVELING_ACTIVITY_TOOLTIP_ADDITION_HOSTING','CHARACTER_TRAVELING_ACTIVITY_TOOLTIP_ADDITION_ATTENDING')]"
+ CHARACTER_TRAVELING_ACTIVITY_TOOLTIP_ADDITION_HOSTING:0 "[Character.GetTravelPlan.GetData.GetActivity.GetName]"
+ CHARACTER_TRAVELING_ACTIVITY_TOOLTIP_ADDITION_ATTENDING:0 "[Character.GetShortUIName] [Character.GetTravelPlan.GetData.GetActivity.GetName] Etkinliğine katılıyor"
+ CHARACTER_INTERACTION_REPLY:0 "[CHARACTER.GetUIName] $INTERACTION|D$ için bir yanıt bekliyor."
+ CHARACTER_INTERACTION_REPLY_MARRIAGE:0 "[CHARACTER.GetUIName] [TARGET_CHARACTER.GetUIName] ile [TARGET_CHARACTER_2.GetUIName] arasındaki $INTERACTION|D$ için yanıt bekliyor."
+ #CHARACTER_INTERACTION_REPLY_TITLE:1 "" # <DELETE THIS KEY>
+ #CHARACTER_INTERACTION_REPLY_POSITIVE:2 "" # <DELETE THIS KEY>
+ #CHARACTER_INTERACTION_REPLY_NEGATIVE:2 "" # <DELETE THIS KEY>
+ #CHARACTER_INTERACTION_REPLY_BLOCKED:3 "" # <DELETE THIS KEY>
+ CHARACTER_INTERACTION_CANT_SEND_RECIPIENT_REJECTS:0 "@warning_icon! #X [CHARACTER.GetShortUIName] bunu kabul etmez#!"
+ CHARACTER_INTERACTION_ALREADY_CONSIDERING_WARNING:0 "@warning_icon! #X $CHARACTER_INTERACTION_ALREADY_CONSIDERING$#! "
+ CHARACTER_INTERACTION_ALREADY_CONSIDERING:1 "[CHARACTER.GetUIName] hâlihazırda [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'sizden', TARGET_CHARACTER.GetUIName )][Select_CString( TARGET_CHARACTER.IsLocalPlayer, '', ' adlı kişiden' )] gelen bir teklifi değerlendiriyor[Select_CString( CHARACTER.IsLocalPlayer, 'sunuz', '' )]"
+ CHARACTER_INTERACTION_NO_TARGET_SELECTED:0 "@warning_icon! #X Hedef seçilmedi#! "
+ CHARACTER_OTHER_PLAYER_TOOLTIP:0 "Bu Karakter [Character.PlayerName] tarafından kontrol ediliyor."
+ BASE_COLON:0 "Temel: $VALUE|V0$"
+ BASE_GOLD:0 "Temel [gold_i|E]"
+ BASE_PIETY:0 "Temel [piety_i|E]"
+ BASE_PRESTIGE:0 "Temel [prestige_i|E]"
+ BASE_TIME:0 "Temel @time_icon!"
+ VALUE_COLON:0 "$KEY$: $VALUE|V0$"
+ VALUE_COLON_POSITIVE_DIFF:0 "$KEY$: $VALUE|+=0$"
+ BASE:0 "Temel"
+ INTERACTION_EFFECT_DESC:0 "#D Gönderince:#! \n$ON_SEND$\n#D Kabul Edilince:#! \n$ON_ACCEPT$\n#D Reddedilince:#! \n$ON_DECLINE$"
+ RETINUE_POSITION_EMPTY:0 "Boş"
+ YES:0 "Evet"
+ NO:0 "Hayır"
+ OPINION_MTTH:1 "[CHARACTER.GetShortUINamePossessive] [Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'size', TARGET_CHARACTER.GetShortUIName )][Select_CString( TARGET_CHARACTER.IsLocalPlayer, '', ' adlı kişiye' )] olan Görüşü: $VALUE|=+0$"
+ TRAIT_COMPATIBILITY_LIKES:0 "$TRAIT$, $OTHER_TRAIT$ sever: $VALUE|=+0$"
+ TRAIT_COMPATIBILITY_DISLIKES:0 "$TRAIT$, $OTHER_TRAIT$ sevmez: $VALUE|=+0$"
+ RANGED_MODIFIER: "$FROM$ ila $TO$ arasında"
+ RANGED_MODIFIER_DESCRIPTION: "$MODIFIER$: $RANGED_MODIFIER$"
+ SCRIPTED_VALUE_MODIFIER:0 "Değer: $VALUE|+0$"
+ AI_VALUE_MODIFIER_COMPOUND:0 "Kişilik: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_MIN_VALUE:0 "Minimum Değer: $VALUE|+0$"
+ AI_VALUE_MODIFIER_MAX_VALUE:0 "Maksimum Değer: $VALUE|+0$"
+ AI_VALUE_MODIFIER_HONOR:0 "Onur: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_DISHONOR:0 "Onursuzluk: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_GREED:0 "Açgözlülük: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_GENEROUS:0 "Cömert: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_CONTENTMENT:0 "Tatminlik: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_RATIONALITY:0 "Akılcılık: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_IRRATIONALITY:0 "Akıldışılık: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_ENERGY:0 "Enerji: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_LETHARGY:0 "Uyuşukluk: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_BOLDNESS:0 "Cesurluk: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_COWARDICE:0 "Korkaklık: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_ZEAL:0 "Dindarlık: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_CYNICISM:0 "Şüphecilik: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_VENGEFULNESS:0 "İntikamcılık: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_FORGIVENESS:0 "Affedicilik: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_COMPASSION:0 "Şefkat: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_CALLOUSNESS:0 "Vurdumduymazlık: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_SOCIABILITY:0 "Sosyallik: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_SHYNESS:0 "Utangaçlık: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_DREAD_MODIFIED_BOLDNESS:0 "#D Cesurluk & Korkunçluk#!: $VALUE|=+0$"
+ AI_VALUE_MODIFIER_DREAD_MODIFIED_COWARDICE:0 "#D Korkaklık & Korkunçluk#!: $VALUE|=+0$"
+ CHARACTER_SHEHE_SHE:0 "o"
+ CHARACTER_SHEHE_HE:0 "o"
+ CHARACTER_SHEHE_IT:0 "o"
+ CHARACTER_SHEHE_THEY:0 "onlar"
+ CHARACTER_HERHIM_HER:0 "onun"
+ CHARACTER_HERHIM_HIM:0 "onun"
+ CHARACTER_HERHIM_IT:0 "o"
+ CHARACTER_HERHIM_THEM:0 "onlar"
+ CHARACTER_HERHIS_HER:0 "o"
+ CHARACTER_HERHIS_HIS:0 "o"
+ CHARACTER_HERHIS_ITS:0 "o"
+ CHARACTER_HERHIS_THEIR:0 "onların"
+ CHARACTER_HERHISMY_MY:0 "benim"
+ CHARACTER_HERSHIS_HERS:0 "onun"
+ CHARACTER_HERSHIS_HIS:0 "onun"
+ CHARACTER_HERSHIS_ITS:0 "onun"
+ CHARACTER_HERSHIS_THEIRS:0 "onların"
+ CHARACTER_WOMAN:0 "kadın"
+ CHARACTER_MAN:0 "erkek"
+ CHARACTER_WOMAN_POSSESSIVE:0 "kadının"
+ CHARACTER_MAN_POSSESSIVE:0 "erkeğin"
+ CHARACTER_GIRL:0 "kız"
+ CHARACTER_BOY:0 "oğlan"
+ CHARACTER_WOMEN:0 "kadınlar"
+ CHARACTER_MEN:0 "erkekler"
+ CHARACTER_GIRLS:0 "kızlar"
+ CHARACTER_BOYS:0 "oğlanlar"
+ CHARACTER_CHILDREN:0 "çocuklar"
+ CHARACTER_LADY:0 "leydi"
+ CHARACTER_LORD:0 "lord"
+ CHARACTER_HERSELF:0 "kendisi"
+ CHARACTER_HIMSELF:0 "kendisi"
+ CHARACTER_ITSELF:0 "kendisi"
+ CHARACTER_THEMSELF:0 "kendileri"
+ CHARACTER_THEMSELVES:0 "kendileri"
+ CHARACTER_WIFE:0 "karı"
+ CHARACTER_HUSBAND:0 "koca"
+ CHARACTER_SPOUSE:0 "eş"
+ CHARACTER_WIFE_PLURAL:0 "karılar"
+ CHARACTER_HUSBAND_PLURAL:0 "kocalar"
+ CHARACTER_SPOUSE_PLURAL:0 "eşler"
+ CHARACTER_CONCUBINE_MALE:0 "$game_concept_concubine_male$"
+ CHARACTER_CONCUBINE_FEMALE:0 "$game_concept_concubine_female$"
+ CHARACTER_MOTHER:0 "anne"
+ CHARACTER_FATHER:0 "baba"
+ VASSAL_TO:0 "$LIEGE$ adlı karakterin [Concept( 'vassal', 'Vasalı' )|E]"
+ RELATION_LIST:0 "[CHARACTER.GetShortUINamePossessive|U] $LIST$"
+ RELATION_LIST_UNRELATED:0 "$LIST$"
+ RELATION_LONG_LIST:0 "$LIST$"
+ RELATION_LIST_EXTENDED:1 "$LIST$ #low (+$MORE_RELATIONS$)#!"
+ VASSAL:1 "[Concept( 'vassal', 'Vasalı' )|E]"
+ LIEGE:1 "[Concept( 'liege', 'Süzereni' )|E]"
+ LIEGE_POSSESSIVE:0 "[liege_possessive|E]"
+ KNIGHT:2 "Emrinde [CHARACTER.GetLiege.Custom('KnightCulture')]"
+ COUNCILLOR:0 "Konseyinde [CHARACTER.GetCouncilTitle]"
+ COURTIER:1 "[courtier|E]"
+ GUEST:1 "Sarayında [guest|E]"
+ RELATION_NEIGHBORING_RULER:0 "Komşu [ruler|E]"
+ RELATION_FOREIGN_RULER:0 "Yabancı [ruler|E]"
+ RELATION_MY_TOP_LIEGE:0 "Sizin [Concept( 'top_liege', 'Ana Süzereniniz' )|E]"
+ RELATION_BELOW_VASSAL:0 "[Concept( 'realm', 'Ülkenizdeki' )|E] bir Vasal"
+ RELATION_FELLOW_VASSAL:0 "Aynı Ülkedeki Bir Diğer [vassal|E]"
+ RELATION_NEIGHBORING_FELLOW_VASSAL:0 "Aynı Ülkedeki Komşu [vassal|E]"
+ RELATION_VASSAL_IN_REALM:0 "[CHARACTER.GetPrimaryTitle.GetBaseName] Ülkesinin Vasalı"
+ RELATION_POOL_CHARACTER_LOCATION:0 "Dolaşıyor"
+ RELATION_POOL_CHARACTER:0 "Dolaşıyor"
+ RELATION_COUNCIL_POSITION:0 "[Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'Konseyinizde', TARGET_CHARACTER.GetShortUIName )][Select_CString( TARGET_CHARACTER.IsLocalPlayer, '', ' adlı kişinin konseyinde' )] [CHARACTER.GetCouncilTitle]"
+ RELATION_COURTIER:0 "[Select_CString( CHARACTER.IsLocalPlayer, 'Karakterinizin', CHARACTER.GetShortUIName )][Select_CString( CHARACTER.IsLocalPlayer, '', ' adlı karakterin' )] Saray Mensubu"
+ RELATION_GUEST:0 "[Select_CString( CHARACTER.IsLocalPlayer, 'Karakterinizin', CHARACTER.GetShortUIName )][Select_CString( CHARACTER.IsLocalPlayer, '', ' adlı karakterin' )] Misafiri"
+ THIS_IS_YOU_STATIC:0 "Bu sizsiniz"
+ THIS_IS_YOU:2 "[CHARACTER.Custom('ThisIsYou')]"
+ THIS_IS_YOU_ALLEGEDLY:0 "Bir rivayete göre bu sizsiniz"
+ THIS_IS_YOU_UNFORTUNATELY:0 "Ne yazık ki bu sizsiniz"
+ THIS_IS_YOU_KEY:0 "Bu sizin karakteriniz"
+ THIS_IS_YOU_MAGNIFICENT:0 "Bu sizsiniz ve #EMP müthişsiniz#!"
+ THIS_IS_YOU_NOT_FEEL:0 "Her zaman kendinizmiş gibi hissetmeseniz de bu sizsiniz"
+ MILITARY_VIEW:0 "Ordu"
+ INTRIGUE_VIEW:0 "Entrika"
+ REALM_VIEW:0 "Ülke Ekranı (Eski askeriye ekranı)"
+ ARMY_LEVIES:0 "[levies|E]"
+ DOMAIN:0 "Mülk"
+ VASSALS:2 "[vassals|E]"
+ HIRED:0 "Kiralanmış"
+ RAISE_ALL:1 "Tüm Askerleri Topla"
+ RAISE_ALL_RAIDERS:0 "Yağmacı Olarak Topla"
+ RAISE_ALL_MEN_AT_ARMS:1 "Hepsini Topla"
+ RAISE_HIRED_TROOP:0 "Topla"
+ DISBAND_ALL:0 "Hepsini Terhis Et"
+ MERCENARIES:0 "Paralı Askerler"
+ HOLY_ORDERS:0 "Kutsal Tarikatlar"
+ SORT_RANK:0 "Kademe"
+ SORT_NAME:0 "İsim"
+ SORT_OPINION:1 "Size Olan Görüşü"
+ SORT_STRENGTH:0 "Güç"
+ SORT_INCOME:0 "Gelir"
+ SORT_HEALTH:0 "Sağlık"
+ SORT_ACCEPTANCE: "Kabul Edilme"
+ CURRENT_BALANCE:0 "[GetPlayerBalance|=1]"
+ TT_CURRENT_GOLD:1 "[gold_i|E] #high [GetPlayer.GetGold|1]#!"
+ TT_CURRENT_BALANCE:1 "#high [GetPlayerBalance|=+1]#!/aylık"
+ CURRENT_BALANCE_TOOLTIP:1 "#T [gold_i][gold|E] Miktarınız#!\n[GetPlayer.GetBalanceBreakdown]"
+ FULL_BALANCE_INFO:0 "Aylık Bilanço: [gold_i]$BALANCE|=+1$\n\n$INCOME_DESC$\n$EXPENSE_DESC$"
+ ESTIMATE_TAX_VASSAL:0 "[CHARACTER.GetUIName]"
+ ESTIMATE_TAX_INFO:0 "Toplam [tax|E] Geliri: [gold_i]$TOTAL|=+1$\n - [domain|E]: [gold_i]$DOMAIN|=+1$\n - [vassals|E]: [gold_i]$VASSALS|=+1$"
+ ESTIMATE_TAX_LIEGE:0 "[Concept( 'liege', 'Süzerene' )|E] Ödenen: [gold_i]#N -$VALUE|1$#!"
+ ARMY_MAINTENANCE:0 "Ordu Bakım Masrafı: [gold_i]$VALUE|=+1$"
+ BREAKDOWN_ARMY_MAINTENANCE:1 "Toplanmış [armies|E]"
+ BREAKDOWN_ARMY_MAINTENANCE_EMBARKED:0 "Toplanmış [armies|E] [embarked_i]"
+ MAA_TOTAL_COST:0 "[men_at_arms|E]: [gold_i]$VALUE|=+1$"
+ MAA_MAINTENENCE_COST:0 " - Bakım Masrafı: [gold_i]$VALUE|=+1$"
+ MAA_REINFORCEMENT_COST:0 " - Takviye: [gold_i]$VALUE|=+1$"
+ BREAKDOWN_TOTAL_TAX:0 "Toplam Vergi"
+ BREAKDOWN_MEN_AT_ARMS:0 "[men_at_arms|E]"
+ BREAKDOWN_REINFORCEMENT:0 "Takviye"
+ BREAKDOWN_MONTHLY_BALENCE:0 "Aylık Bilanço"
+ BREAKDOWN_YEARLY_BALENCE:0 "Yıllık Bilanço"
+ COST_HEADING:0 "Maliyet:"
+ NO_COST_HEADING:0 "#weak Maliyet Yok#!"
+ COST_RESULT_NOTHING:3 "#P Maliyet Yok#!"
+ GOLD_COST_BREAK:0 "Maliyet [gold_i]"
+ GOLD:0 "[gold_i] $VALUE|0$"
+ GOLD_COST:0 "[gold_i] $VALUE|0$"
+ GOLD_COST_REINFORCE:0 "[gold_i] $VALUE|2$"
+ GOLD_COST_MAINTENANCE:0 "[gold_i] $VALUE|2$"
+ GOLD_COST_LONG:0 "Altın: [gold_i] $VALUE|0$"
+ GOLD_COST_LONG_MAINTENANCE:0 "Altın: [gold_i] $VALUE|2$"
+ GOLD_K:0 "[gold_i] $VALUE|1$B"
+ GOLD_TEXT:0 "$VALUE|0$ Altın"
+ GOLD_CONCEPT:0 "[gold|E]"
+ GOLD_NO_ICON:0 "$VALUE|0$"
+ GOLD_K_NO_ICON:0 "$VALUE|1$B"
+ GOLD_SIMPLE_TOOLTIP:1 "#T [CHARACTER.GetShortUINamePossessive|U] [gold|E]: $VALUE|V0$#!"
+ GOLD_WITH_BALANCE_TOOLTIP:0 "#T [gold|E]: $VALUE|V0$#!\n$BALANCE|V=1$/aylık"
+ COST_PER_DAY:0 "/günlük"
+ COST_PER_WEEK: "/haftalık"
+ COST_PER_MONTH:0 "/aylık"
+ COST_PER_YEAR:0 "/yıllık"
+ PIETY:0 "[piety_i] $VALUE|0$"
+ PIETY_COST:0 "[piety_i] $VALUE|0$"
+ PIETY_COST_REINFORCE:0 "[piety_i] $VALUE|2$"
+ PIETY_COST_MAINTENANCE:0 "[piety_i] $VALUE|1$"
+ PIETY_COST_LONG:0 "Dindarlık: [piety_i] $VALUE|0$"
+ PIETY_COST_LONG_MAINTENANCE:0 "Dindarlık: [piety_i] $VALUE|2$"
+ PIETY_K:0 "[piety_i] $VALUE|1$B"
+ PIETY_CONCEPT:0 "[piety|E]"
+ PIETY_LEVEL_CONCEPT:0 "[piety_level|E]"
+ PIETY_WITH_BALANCE_TOOLTIP:1 "#T [piety|E]: $VALUE|V0$#!\n$BALANCE|V=1$/aylık\n\n#T [piety_level|E]: #!$LEVEL$"
+ PRESTIGE:0 "[prestige_i] $VALUE|0$"
+ PRESTIGE_COST:0 "[prestige_i] $VALUE|0$"
+ PRESTIGE_COST_REINFORCE:0 "[prestige_i] $VALUE|1$"
+ PRESTIGE_COST_MAINTENANCE:0 "[prestige_i] $VALUE|1$"
+ PRESTIGE_COST_LONG:0 "Prestij: [prestige_i] $VALUE|0$"
+ PRESTIGE_COST_LONG_MAINTENANCE:0 "Prestij: [prestige_i] $VALUE|2$"
+ PRESTIGE_K:0 "[prestige_i] $VALUE|1$B"
+ PRESTIGE_CONCEPT:0 "[prestige|E]"
+ PRESTIGE_LEVEL_CONCEPT:0 "[prestige_level|E]"
+ PRESTIGE_WITH_BALANCE_TOOLTIP:1 "#T [prestige|E]: $VALUE|V0$#!\n$BALANCE|V=1$/aylık\n\n#T [prestige_level|E]: #!$LEVEL$"
+ DYNASTY_PRESTIGE:0 "[dynasty_prestige_i] $VALUE|0$"
+ DYNASTY_PRESTIGE_COST:0 "[dynasty_prestige_i] $VALUE|0$"
+ DYNASTY_PRESTIGE_COST_LONG:0 "İhtişam: [dynasty_prestige_i] $VALUE|0$"
+ DYNASTY_PRESTIGE_K:0 "[dynasty_prestige_i] $VALUE|1$B"
+ DYNASTY_PRESTIGE_CONCEPT:0 "[dynasty_prestige|E]"
+ DYNASTY_PRESTIGE_LEVEL_CONCEPT:0 "[dynasty_prestige_level|E]"
+ NUMBER_OF_MEN_DESC:0 "[soldiers|E]"
+ NUMBER_OF_MEN_VALUE:0 "#TOOLTIP:NUMBER_OF_MEN_DESC $VALUE|0$ #!"
+ NUMBER_OF_MEN_VALUE_K:1 "#TOOLTIP:NUMBER_OF_MEN_DESC $VALUE$ #!"
+ NUMBER_OF_MEN_VALUE_K_NO_TOOLTIP:1 "$VALUE|1$"
+ NUMBER_OF_MEN_VALUE_WITH_LABEL:0 "$VALUE|0V$ [soldiers|E]"
+ NUMBER_OF_MEN_ARRIVED:0 "$VALUE|0V$ [soldier|E] toplandı."
+ CONTRACTED_VALUE:0 "$VALUE|0$"
+ CONTRACTED_VALUE_K:0 "$VALUE|1$B"
+ COMMON_INFO_LIST_PREFIX:0 "* "
+ HAS_HOOK_ON_ME:1 "$WHO$ size karşı bir koza sahip."
+ YOU_HAVE_HOOK:1 "$WHO$ adlı kişiye karşı koz sahibisiniz."
+ INCOME:1 "Aylık [income]"
+ EXPENSES:1 "Aylık Gider"
+ LEVIES:1 "[levies|E]:"
+ TOTAL_TAX:0 "Toplam Vergi"
+ TAXABLE_VASSAL_INCOME:0 "Vergiye Tabi Gelir"
+ VASSAL_CONTRIBUTION:0 "Katkı"
+ CONTRIBUTABLE_VASSAL_LEVIES:0 "Toplam Milis"
+ TOTAL_LEVIES:0 "Sağlanan Milis"
+ LEVIES_ICON:0 "[soldier_i]"
+ OPINION_HEADER:0 "[opinion|E]"
+ AUTOSAVE_IN_PROGRESS:1 "Otomatik kaydediliyor..."
+ SAVE_IN_PROGRESS:0 "Kaydediliyor..."
+ MISSING_DLCS_HEADER:0 "@warning_icon! #X Eksik DLCler:#!"
+ MISSING_DLC_ENTRY:0 "#indent_newline:2 $EFFECT_LIST_BULLET$$DLC_NAME$#!"
+ MISSING_MODS_HEADER:0 "@warning_icon! #X Eksik Modlar:#!\n"
+ MISSING_MODS:0 "@warning_icon! #X Eksik Modlar#!"
+ MISSING_DLC:0 "@warning_icon! #X Eksik DLCler#!"
+ MISSING_CONTINUE_SAVE_GAME_TITLE:0 "Kayıt Dosyası Eksik"
+ MISSING_CONTINUE_SAVE_GAME_DESC:0 "Kayıt Dosyası bulunamadı:\n$SAVE_GAME$"
+ LOAD_GAME_FAILED_TITLE:0 "Kayıt Dosyası Yüklenemedi"
+ LOAD_GAME_FAILED_DESC:0 "Kayıt dosyası yüklenemedi, aşağıdakilerden biri buna sebep olmuş olabilir:\n#indent_newline:2 $EFFECT_LIST_BULLET$Kayıt dosyası uyumsuz bir sürümde alınmış olabilir\n$EFFECT_LIST_BULLET$Kayıt dosyasında farklı DLCler aktif olabilir\n$EFFECT_LIST_BULLET$Kayıt dosyası bozulmuş olabilir#!"
+ GAME_RULES_BLOCKING_ACHIEVEMENTS_HEADER:0 "@warning_icon! #X Oyun Kuralları Başarımları Engelliyor:#!\nBu kayıt dosyasında kullanılan oyun kuralları artık Başarımları engelliyor, bu kaydı yüklemek Başarımları alınamaz hâle getirir.\nArtık Başarımları Engelleyen Kurallar:"
+ GAME_RULE_BLOCKS_ACHIEVEMENTS_ENTRY:0 "#indent_newline:2 $EFFECT_LIST_BULLET$[GAME_RULE.GetName]: [GAME_RULE_SETTING.GetName]#!"
+ GAME_CHECKSUM_CHANGED_FROM_SAVE_FILE:0 "@warning_icon! #X Başarımlar için Geçersiz Oyun Kodu#!\nBu kayıt dosyasında Başarımlar farklı bir oyun kodu için geçerli, bu kaydı yüklemek Başarımları alınamaz hâle getirir."
+ TIER_TYPE:0 "[$TIER_KEY$|E]"
+ DYNASTY_MEMBERS:0 "'$DYNASTY$' Hanedanının Üyeleri: \n$LIST$"
+ GOOD_COLOR:0 "$KEY|P$"
+ BAD_COLOR:0 "$KEY|N$"
+ NEUTRAL_COLOR:0 "$KEY|Z$"
+ GOTO_PROVINCE:0 "Konuma git"
+ GOTO_PROVINCE_TT:0 "#T $GOTO_PROVINCE$#!"
+ DYNASTY:0 "Hanedan"
+ DYNASTY_HOUSE:0 "Hane"
+ MENU:0 "Menü"
+ RESUME:0 "Devam Et"
+ PAUSE:0 "Duraklat"
+ PAUSED:0 "Duraklatıldı"
+ PAUSED_BY_EVENT:1 "#X Olay Tarafından Duraklatıldı: $TITLE$#!"
+ PAUSED_BY_TUTORIAL:0 "#X Eğitim Modu Tarafından Duraklatıldı: [TUTORIAL.GetStepName]#!"
+ EXIT:1 "Oyundan Çık"
+ EXIT_TO_DESKTOP:0 "Masaüstüne Dön"
+ SHOW_LEGACY:1 "Soyu Göster"
+ RESIGN:1 "Ana Menüye Dön"
+ SAVE_AND_RESIGN:0 "Kaydet ve $RESIGN$"
+ SAVE_AND_EXIT_TO_DESKTOP:0 "Kaydet ve $EXIT_TO_DESKTOP$"
+ UNSAVED_PROGRESS_WILL_BE_LOST:0 "Kaydedilmemiş tüm ilerleme kaybedilecek"
+ GAME_WILL_BE_SAVED:0 "Ironman sebebiyle oyununuz kaydedilecek"
+ RESIGNATION_CONFIRMATION_DESC:1 "Menüye dönmek istediğinize emin misiniz?\n[SelectLocalization( IsIronmanEnabled, 'GAME_WILL_BE_SAVED', 'UNSAVED_PROGRESS_WILL_BE_LOST' )]"
+ QUIT_TO_DESKTOP_CONFIRMATION_DESC:1 "Masaüstüne dönmek istediğinize emin misiniz?\n[SelectLocalization( IsIronmanEnabled, 'GAME_WILL_BE_SAVED', 'UNSAVED_PROGRESS_WILL_BE_LOST' )]"
+ OPEN_FOR_MULTIPLAYER:0 "Çok Oyunculuya Aç"
+ OPEN_LOBBY:1 "Çok Oyunculuya Aç"
+ CLOSE_LOBBY:0 "Lobiyi Kapat"
+ HOST:0 "Kurucu"
+ JOINING_SERVER_PROGRESS:0 "Sunucuya katılınıyor: $PROGRESS|0%$"
+ WAITING_SERVER_REPLY:0 "Sunucudan yanıt bekleniyor"
+ GENERATING_BOOKMARK_PROGRESS:0 "Dünya oluşturuluyor: $PROGRESS|0%$"
+ LOADING_SAVEGAME_PROGRESS:1 "Yükleniyor: $PROGRESS|0%$"
+ LOADSCREEN_INITIALIZING_GAME:0 "Oyun Başlatılıyor..."
+ SERVER_NAME:0 "$NAME$ Tarafından Kurulan Oyun"
+ PLAYERS_ON_SERVER:0 "Sunucudaki oyuncular: İSİM - UNVAN - PİNG"
+ PLAYER_ON_SERVER:0 "$NAME$ - $TITLE$ - $PING$"
+ NAME_NOT_FOUND:0 "İsim bulunamadı."
+ KICK_NAME:0 "$NAME$ oyundan atıldı."
+ MODIFIED:0 "Son Değişiklik: $DATE$"
+ PLAYER_LEFT:0 "Oyuncu ayrıldı"
+ PLAYER_NAME_LEFT:0 "$NAME$ oyundan ayrıldı."
+ PLAYER_JOINED:0 "Oyuncu katıldı"
+ PLAYER_NAME_JOINED:0 "$NAME$ oyuna katıldı."
+ HOST_LEFT:0 "Kurucu ayrıldı"
+ HOST_LEFT_DESC:0 "Kurucu ($NAME$) ayrıldı. Oyun tek oyunculu olarak devam edecek."
+ KEY_VALUE:0 "$KEY$: $VALUE|V0$"
+ KEY_VALUE_F1:0 "$KEY$: $VALUE|V1$"
+ KEY_VALUE_F2:0 "$KEY$: $VALUE|V2$"
+ KEY_VALUE_PERCENT:0 "$KEY$: $VALUE|V0%$"
+ KEY_VALUE_PERCENT_POSITIVE:0 "$KEY$: $VALUE|+0%$"
+ CHARACTER_VALUE:0 "[CHARACTER.GetUIName]: $VALUE|V0$"
+ CHARACTER_VALUE_F1:0 "[CHARACTER.GetUIName]: $VALUE|V1$"
+ CHARACTER_VALUE_F2:0 "[CHARACTER.GetUIName]: $VALUE|V2$"
+ ERROR_ACTION:0 "\n#I Click me and I'll show them to you. Right-click me to clear the error log.#!"
+ ERROR_HOOF:1 "I am Errorhoof. I'm here because there are $ERRORS$ error(s) in your game. $ERROR_ACTION$"
+ ERROR_HOOF_1:1 "I am Babby Jesus. Sometimes I'm here instead of Errorhoof. I'm also here because there are $ERRORS$ error(s) in your game. $ERROR_ACTION$"
+ ERROR_HOOF_2:1 "I am Errobert. Sometimes I'm here instead of Errorhoof. I'm also here because there are $ERRORS$ error(s) in your game. $ERROR_ACTION$"
+ ERROR_HOOF_3:1 "I am the Bazcat. Sometimes I'm here instead of Errorhoof. Feed me. There are also $ERRORS$ error(s) in your game. $ERROR_ACTION$"
+ ERROR_HOOF_4:0 "I am Reconqat. Sometimes I'm here instead of Errorhoof. Don't call it a Reconquista otherwise I'll get sad. There are also $ERRORS$ error(s) in your game. $ERROR_ACTION$"
+ ERROR_HOOF_5: "I am Smug Kid. Sometimes I'm here instead of Errorhoof. I'm looking at your error and looking smug about it. There are also $ERRORS$ error(s) in your game. $ERROR_ACTION$"
+ ENABLED_MODS:0 "Aktif Modlar:"
+ RALLY_POINT_NAME:0 "[PROVINCE.GetNameNoTooltip] Kontluğundaki Toplanma Noktası"
+ CONFIRM:0 "Kabul Et"
+ friends:0 "Arkadaşlar"
+ friend_plural:0 "Arkadaşlar"
+ friends_desc:0 "Ebedî dostluklar."
+ PLAYER_NEEDED_IF_ONLY_ONE_ARG:0 "Tek bir argüman kullanılıyorsa geçerli bir oyuncu gerekir."
+ INVALID_CHARACTER:0 "Geçersiz karakter"
+ INVALID_RELATION:0 "Geçersiz ilişki"
+ RELATION_ADDED:0 "$CHAR01$ ile $CHAR02$ arasına $RELATION$ ilişki eklendi"
+ RELATION_REMOVED:0 "$CHAR01$ ile $CHAR02$ arasındaki $RELATION$ ilişki silindi"
+ SET_SCRIPTED_RELATION:0 "$CHAR01$ $CHAR02$ ile $RELATION01|V$ olacak"
+ SET_SCRIPTED_RELATION_SAME:0 "$CHAR01$ ve $CHAR02$ $RELATION01|V$ olacaklar"
+ SET_SCRIPTED_RELATION_DIFFERENT:0 "$CHAR01$ $CHAR02$ ile $RELATION01|V$ olacak ve $CHAR02$ $CHAR01$ ile $RELATION02|V$ olacak"
+ REMOVE_SCRIPTED_RELATION:0 "$CHAR01$ artık $CHAR02$ ile $RELATION|V$ olmayacak"
+ HAS_SCRIPTED_RELATION:0 "$CHAR01$ $CHAR02$ karakterinin $RELATION|V$"
+ TITLE_DEFINITE_FORM:0 "$TITLE$"
+ DURATION_FOREVER:0 "#V Sonsuza Dek#! "
+ DURATION_DATE:0 "[DATE.GetStringShort|V]"
+ DURATION_DATE_RANGE:0 "$[DATE_MIN.GetStringShort|V]$ - $[DATE_MAX.GetStringShort|V]$"
+ DURATION_NO_DATE:1 "$DURATION$"
+ DURATION_NO_DATE_RANGE:2 "$DURATION_MIN$ ila $DURATION_MAX$ arasında"
+ NUMBER_OF_MEN:0 "[soldiers|E]:  "
+ NUMBER_OF_REGIMENTS:0 "Birlik Sayısı"
+ TIME_TO_RAISE:0 "Toplanma süresi:  "
+ DAYS:0 "Gün"
+ DAYS_WITH_SPACE:0 " Gün"
+ VALUE_DAYS:0 "#V $VALUE$ gün#! "
+ MAINTENANCE:0 "Bakım Masrafı"
+ BANNER:0 "Toplanma Noktası"
+ SCOPE_CHARACTER:0 "[ROOT.GetCharacter.GetUIName]:"
+ SCOPE_CHARACTER_ME:0 "Ben, [ROOT.GetCharacter.GetUIName]:"
+ SCOPE_LANDED_TITLE:0 "[ROOT.GetLandedTitle.GetName]:"
+ SCOPE_PROVINCE:0 "[ROOT.GetProvince.GetName]:"
+ SCOPE_ACTIVITY:1 "[ROOT.Activity.GetName]:"
+ SCOPE_SECRET:0 "[ROOT.GetSecret.GetName]:"
+ SCOPE_SCHEME:0 "[ROOT.GetScheme.GetName]:"
+ SCOPE_COMBAT:0 "[ROOT.GetCombat.GetName]:"
+ SCOPE_FAITH:0 "[ROOT.Faith.GetName]:"
+ SCOPE_RELIGION:0 "[ROOT.Religion.GetName]:"
+ SCOPE_GREAT_HOLY_WAR:0 "[ROOT.GreatHolyWar.GetName]:"
+ SCOPE_WAR:0 "[ROOT.War.GetName]:"
+ SCOPE_DYNASTY:0 "[ROOT.Dynasty.GetName] [Concept( 'dynasty', 'Hanedanı' )|E]:"
+ SCOPE_DYNASTY_HOUSE:0 "[ROOT.House.GetName] [Concept( 'house', 'Hanesi' )|E]:"
+ SCOPE_FACTION:0 "[ROOT.Faction.GetName]:"
+ SCOPE_CULTURE:0 "[ROOT.Culture.GetName]:"
+ SCOPE_ARMY:0 "[ROOT.Army.GetName]:"
+ SCOPE_HOLY_ORDER:0 "[ROOT.HolyOrder.GetName]:"
+ SCOPE_ACTIVE_COUNTIL_TASK:0 "[ROOT.CouncilTask.GetName]:"
+ SCOPE_MERCENARY_COMPANY:0 "[ROOT.MercenaryCompany.GetName]:"
+ SCOPE_INSPIRATION:0 "[ROOT.Inspiration.GetName]"
+ SCOPE_STRUGGLE:0 "[ROOT.Struggle.GetName]"
+ SCOPE_TRAVEL_PLAN:0 "[ROOT.TravelPlan.GetName]:"
+ SCOPE_HOUSE_UNITY: "[ROOT.HouseUnity.GetName]"
+ SCOPE_TAX_SLOT: "[ROOT.TaxSlot.GetName]"
+ SAVE_NAME_LABEL:0 "Kayıt Adı:"
+ SAVE_TO_CLOUD_LABEL:0 "Buluta Kaydet"
+ FILE_NAME_INVALID:0 "@warning_icon! #X Geçersiz Kayıt Adı#! "
+ STRESS:0 "Stres"
+ NO_STRESS_EFFECT:0 "#weak Etkisiz#!"
+ DREAD:0 "Korkunçluk"
+ VASSALS_COLON:0 "[vassals]:"
+ LIEGE_COLON:0 "[liege]:"
+ diplomacy:0 "Diplomasi"
+ martial:0 "Askeriye"
+ stewardship:0 "İdare"
+ intrigue:0 "Entrika"
+ learning:0 "Öğrenim"
+ prowess:0 "Dövüş"
+ diplomacy_modifier:1 "[diplomacy|E]"
+ martial_modifier:1 "[martial|E]"
+ stewardship_modifier:1 "[stewardship|E]"
+ intrigue_modifier:1 "[intrigue|E]"
+ learning_modifier:1 "[learning|E]"
+ prowess_modifier:1 "[prowess|E]"
+ diplomacy_modifier_with_offset:0 "$diplomacy_modifier$"
+ martial_modifier_with_offset:0 "$martial_modifier$"
+ stewardship_modifier_with_offset:0 "$stewardship_modifier$"
+ intrigue_modifier_with_offset:0 "$intrigue_modifier$"
+ learning_modifier_with_offset:0 "$learning_modifier$"
+ general_skill:0 "General"
+ diplomacy_concept:0 "[diplomacy|E]"
+ martial_concept:0 "[martial|E]"
+ stewardship_concept:0 "[stewardship|E]"
+ intrigue_concept:0 "[intrigue|E]"
+ learning_concept:0 "[learning|E]"
+ prowess_concept:0 "[prowess|E]"
+ event_target_desc:0 "A scope can be saved as an "event target." It will then be accessible to from any trigger/effect that can be "traced backwards" in a direct line to the point where you saved the event target (i.e. any triggers that are checked or effects that are fired after saving the event target, but only in a continuous chain, such as an event chain). If an event chain ends, the event target is lost.\nNote that a number of on_actions set up by code, and a number of special interactions, come with their own predefined event targets.\nFinal note: You can also save values and bools as event targets, which might be handy in certain situations." #krutygetarts
+ parameter_desc:0 "Leftover from Stellaris. If you are considering using this, you are probably better off using scopes saved as variables. (Change this description if we have started using "parameter" for whichever reason!)"
+ variable_desc:0 "Script variables are accessible and modifiable by script. They currently come in the following forms:\n\nvariable:example_number = 1\nvariable:example_flag = flag:example\nvariable:example_scope = root\nvariable:example_bool = yes"
+ flag_desc:0 "Flags are simple markers that you can use to trace that something has happened in the game. They have a specific type depending on what kind of scope it was set in (character flag, scheme flag, sC.). The particular scope (for example a particular character) will have the flag set until it is removed by an effect, or until its timer runs out, if a timer was defined for it."
+ TODO:0 "TODO: $WHAT$"
+ EVENT_SIGNED:0 "İmza,"
+ EVENT_SIGNATURE:1 "[CHARACTER.GetNameNoTooltip]"
+ EVENT_REASON_SEPARATOR:0 ", "
+ EVENT_REASON_SKILL:0 "$SKILL$ Becerisi"
+ EVENT_REASON_TRAIT:0 "[TRAIT.GetName( CHARACTER.Self )|L] Özelliği"
+ EVENT_REASONS_LAST_REASON:0 "$REASONS$ ve $LAST_REASON$"
+ EVENT_REASONS:1 "Bu seçenek $REASONS$ sebebiyle seçilebilir."
+ MOTHER:0 "Annesi"
+ FATHER:0 "Babası"
+ MOTHER_WIFE:0 "Anne-Karısı"
+ FATHER_HUSBAND:0 "Baba-Kocası"
+ GRANDMOTHER:0 "Büyükannesi"
+ GRANDFATHER:0 "Büyükbabası"
+ GREATGRANDMOTHER:0 "Büyük-büyükannesi"
+ GREATGRANDFATHER:0 "Büyük-büyükbabası"
+ DAUGHTER:0 "Kızı"
+ SON:0 "Oğlu"
+ DAUGHTER_WIFE:0 "Kız-Karısı"
+ SON_HUSBAND:0 "Oğul-Kocası"
+ GRANDDAUGHTER:0 "Kız Torunu"
+ GRANDSON:0 "Erkek Torunu"
+ GREATGRANDDAUGHTER:0 "Torununun Kızı"
+ GREATGRANDSON:0 "Torununun Oğlu"
+ BROTHER:0 "Erkek Kardeşi"
+ SISTER:0 "Kız Kardeşi"
+ HALF_BROTHER:0 "Üvey Erkek Kardeşi"
+ HALF_SISTER:0 "Üvey Kız Kardeşi"
+ BROTHER_HUSBAND:0 "Erkek Kardeş-Kocası"
+ SISTER_WIFE:0 "Kız Kardeş-Karısı"
+ BROTHER_IN_LAW:0 "Eniştesi/Kayınbiraderi"
+ SISTER_IN_LAW:0 "Görümcesi/Baldızı"
+ RELATION_CONCUBINE_MAN:0 "$game_concept_concubine_male$si"
+ RELATION_CONCUBINE_WOMAN:0 "$game_concept_concubine_female$si"
+ DIARCH_RELATION:0 "Diarkı"
+ PLAYER_HEIR_RELATION:2 "[player_heir|E]"
+ UNCLE:0 "Amcası/Dayısı"
+ AUNT:0 "Halası/Teyzesi"
+ NEPHEW:0 "Yeğeni"
+ NIECE:0 "Yeğeni"
+ WIFE:0 "Karısı"
+ COUSIN_FEMALE:0 "Kuzeni"
+ COUSIN_MALE:0 "Kuzeni"
+ CONCUBINE:0 "Cariyesi"
+ HUSBAND:0 "Kocası"
+ PRISONER_RELATION:0 "Tutsağı"
+ RELATION_HOSTAGE_HOME: "[TARGET_CHARACTER.GetShortUINameNotMe] tarafından gönderilen Rehinesi"
+ RELATION_HOSTAGE_AWAY: "[TARGET_CHARACTER.GetShortUINameNotMe] adlı kişinin Rehinesi"
+ RELATION_PRISONER_HOME: "[TARGET_CHARACTER.GetShortUINameNotMe] adlı kişinin Tutsağı"
+ RELATION_PRISONER_AWAY: "Tutsağı"
+ RELATION_COURT_POSITION:1 "Sarayında [COURT_POSITION.GetName] [COURT_POSITION.GetPositionType.GetTextIcon]"
+ RELATION_COMMANDER:0 "Emrinde [commander|E]"
+ RELATION_LIEGE_COUNCILLOR:0 "[TARGET_CHARACTER.GetShortUINamePossessive] Konseyinde [CHARACTER.GetCouncilTitle]"
+ RELATION_LIEGE_COURT_POSITION:1 "[CHARACTER.GetShortUINamePossessive] Sarayında [COURT_POSITION.GetName] [COURT_POSITION.GetPositionType.GetTextIcon]"
+ MY_VALUE_COLON:0 "#T $KEY$: $VALUE|V$#!"
+ CHARACTER_VALUE_COLON:0 "#T $KEY$: $VALUE|V$#!"
+ SCREENSHOT_TAKEN:0 "Ekran Görüntüsü Alındı!"
+ MAP_SCREENSHOT_TAKEN:0 "Haritanın ekran görüntüsü alınıyor!"
+ INTERACTION_REPLY_ITEM:1 "#T $INTERACTION$\n#!Gönderen: [CHARACTER.GetUIName]\n"
+ INTERACTION_REPLY_INTERACTION_DISMISS:0 "Kapatmak"
+ INTERACTION_REPLY_INTERACTION_REJECT:0 "Reddetmek"
+ INTERACTION_REPLY_INTERACTION_DESC:0 "#I Görüntülemek için tıklayın\n$ACTION$ için sağ tıklayın#!"
+ INTERACTION_REPLY_TIMEOUT_DISMISS:0 "kapatılacak"
+ INTERACTION_REPLY_TIMEOUT_REJECT:0 "reddedilecek"
+ INTERACTION_REPLY_TIMEOUT_DESC:1 "[DATE.GetString|V] tarihinde otomatik olarak $ACTION$"
+ BETROTHAL_ACTION_ITEM:0 "#T [CHARACTER.GetUIName] ve [TARGET_CHARACTER.GetUIName] evlenebilir#!\n#I Görüntülemek için tıklayın\nNişanı bozmak için sağ tıklayın#! "
+ END_OF_WAR_ITEM_TIMEOUT_DESC:0 "[DATE.GetStringLong|V] tarihinde kapatılacak #weak (hâlihazırda açık değilse)#!"
+ END_OF_COMBAT_ITEM_TIMEOUT_DESC:0 "[DATE.GetStringLong|V] tarihinde kapatılacak #weak (hâlihazırda açık değilse)#!"
+ END_OF_WAR_ITEM_INTERACTION_DESC:0 "#I Savaş Özetini görüntülemek için tıklayın\nKapatmak için sağ tıklayın#!"
+ END_OF_COMBAT_ITEM_INTERACTION_DESC:0 "#I Sonucu görüntülemek için tıklayın\nKapatmak için sağ tıklayın#!"
+ END_OF_COMBAT_VICTORY:0 "Zafer!"
+ END_OF_COMBAT_DEFEAT:0 "Yenilgi!"
+ END_OF_COMBAT_ACTION_ITEM:1 "#T $WINLOSE$#!\n$BATTLENAME$\n"
+ DIPLOMATIC_ITEM_TOOLTIP:0 "[DiplomaticItem.GetTooltip]\n[DiplomaticItem.GetTimeoutDesc]\n[DiplomaticItem.GetInteractionDesc]"
+ TRAIT_TOOLTIP_IN_LIST:0 "[TRAIT.GetName( CHARACTER.Self )|V]"
+ TRAIT_LEVEL_TRACK_DEGRADATION:1 "@warning_icon! #X [trait_level_track_xp|E] her ay $CHANGE|-1$ azalacak#!"
+ TRAIT_LEVEL_TRACK_DEGRADATION_MINIMUM:1 "@warning_icon! #X [trait_level_track_xp|E] her ay $CHANGE|-1$ azalacak #weak (en az $MINIMUM|0$)#!#!"
+ TRAIT_CAN_NOT_HAVE_CHILDREN:0 "@warning_icon! #X Çocuk sahibi olamaz#!"
+ TRAIT_FLAG_DESC_can_not_marry:0 "@warning_icon! #X Evlenemez#!"
+ TRAIT_FLAG_DESC_can_murder_own_children:0 "Kendi çocuklarına karşı [hostile_schemes|E] kurabilir"
+ TRAIT_FLAG_DESC_agent_acceptance_25: "[agent|E] Kabul Edilmesi: #P +25#!"
+ TRAIT_FLAG_DESC_scheme_start_progress: "Başlangıçtaki [scheme|E] İlerlemesi: #P +3#!"
+ TRAIT_FLAG_DESC_offer_vassalisation_25: "[offer_vassalization|E] Kabul Edilmesi: #P +25#!"
+ TRAIT_FLAG_DESC_better_war_hostages: "[hostage|E] teklifinden gelen [war_score|E]: #P +5#!\n[hostage|E] tekliflerinden gelebilecek en fazla [war_score|E]: #P +10#!"
+ TRAIT_FLAG_DESC_extra_scheme_power_vs_rivals:0 "Rakiplere karşı [hostile_scheme|E] [success_chance|E]: #P +[EmptyScope.ScriptValue('vengeful_scheme_success_chance_modifier')|0]#!"
+ TRAIT_FLAG_DESC_lower_chance_of_dying_in_combat:0 "[Concept( 'battle', 'Muharebede' )|E] ölme ihtimali: #P -50%#!"
+ TRAIT_FLAG_DESC_higher_chance_of_dying_in_battle:0 "[Concept( 'battle', 'Muharebede' )|E] ölme ihtimali: #N +100%#!"
+ TRAIT_BLOCK_INHERITANCE:0 "@warning_icon! #X Miras yoluyla unvan elde edilemez#!"
+ TRAIT_FLAVOR_DESC:0 "$DESC|F$"
+ FERTILITY_COLON:0 "[fertility|E]: $VALUE|V$"
+ BIRTH_DATE:0 "[DATE.GetStringShort|V] tarihinde doğdu"
+ YEARS_COUNT_SINGULAR:0 "#V 1 yıl#!"
+ YEARS_COUNT_PLURAL:0 "#V $VALUE$ yıl#!"
+ YEARS_COUNT_SINGULAR_NO_FORMAT:0 "1 yıl"
+ YEARS_COUNT_PLURAL_NO_FORMAT:0 "$VALUE$ yıl"
+ MONTHS_COUNT_SINGULAR:0 "#V 1 ay#!"
+ MONTHS_COUNT_PLURAL:0 "#V $VALUE$ ay#!"
+ MONTHS_COUNT_SINGULAR_NO_FORMAT:0 "1 ay"
+ MONTHS_COUNT_PLURAL_NO_FORMAT:0 "$VALUE$ ay"
+ DAYS_COUNT_SINGULAR:0 "#V 1 gün#!"
+ DAYS_COUNT_PLURAL:0 "#V $VALUE$ gün#!"
+ DAYS_COUNT_SINGULAR_NO_FORMAT:0 "1 gün"
+ DAYS_COUNT_PLURAL_NO_FORMAT:0 "$VALUE$ gün"
+ SKILL_AND_LEVEL_VALUE:0 "$VALUE|V$ #weak ($LEVEL$)#!"
+ SKILL_TERRIBLE:0 "Berbat"
+ SKILL_POOR:0 "Kötü"
+ SKILL_AVERAGE:0 "Ortalama"
+ SKILL_GOOD:0 "İyi"
+ SKILL_EXCELLENT:0 "Mükemmel"
+ SKILL_NICE:0 ";)"
+ skill_level_terrible:0 "berbat"
+ skill_level_poor:0 "kötü"
+ skill_level_average:0 "ortalama"
+ skill_level_good:0 "iyi"
+ skill_level_excellent:0 "mükemmel"
+ MY_REALM_LABEL:1 "[Concept( 'realm', 'Ülkeniz' )|E]: #V [TITLE.GetName]#!"
+ REALM_LABEL:0 "[realm|E]: #V [TITLE.GetName]#!"
+ CHARACTER_PORTRAIT_TOOLTIP:0 "[Character.GetFullNameNicknamedNoTooltip]\n[Character.GetDebugTooltip]"
+ TOOLTIP_HEADER:0 "#T $NAME$#!"
+ ATTACKERS:1 "#attacker_color Saldıranlar#!"
+ DEFENDERS:1 "#defender_color Savunanlar#!"
+ ATTACKERS_FRIENDLY:1 "#defender_color Saldıranlar#!"
+ DEFENDERS_HOSTILE:1 "#attacker_color Savunanlar#!"
+ OWNER:0 "Sahip"
+ PARTICIPATION_SCORE:0 "Katkı Puanı"
+ CURRENT_MAX:0 "$CURRENT|0$/$MAX|0$"
+ CREATE:0 "Oluştur"
+ DEBUG_COLON:0 "#D DEBUG:#!"
+ SHOW_DETAILS:0 "Ayrıntıları göster"
+ PLAYER_NAME:0 "$NAME|D$"
+ VALUE_BREAKDOWN_ENTRY:0 "$TITLE$: $VALUE$"
+ VALUE_BREAKDOWN_ENTRY_VALUE_FIRST:0 "$VALUE$ $TITLE$"
+ VALUE_BREAKDOWN_ENTRY_NO_VALUE:0 "$TITLE$"
+ VALUE_BREAKDOWN_ENTRY_TOOLTIP_HEADER:0 "#T $TITLE$: $VALUE$#!"
+ VALUE_BREAKDOWN_ENTRY_TOOLTIP_HEADER_VALUE_FIRST:0 "#T $VALUE$ $TITLE$#!"
+ VALUE_BREAKDOWN_ENTRY_TOOLTIP_HEADER_NO_VALUE:0 "#T $TITLE$#!"
+ VALUE_BREAKDOWN_ENTRY_TOOLTIP_SUBHEADER:0 "#S $TITLE$: $VALUE$#!"
+ VALUE_BREAKDOWN_ENTRY_TOOLTIP_SUBHEADER_VALUE_FIRST:0 "#T $VALUE$ $TITLE$#!"
+ VALUE_BREAKDOWN_ENTRY_TOOLTIP_SUBHEADER_NO_VALUE:0 "#S $TITLE$#!"
+ VALUE_BREAKDOWN_ENTRY_WEAK:0 "#weak $TITLE$: $VALUE$#!"
+ VALUE_BREAKDOWN_ENTRY_WEAK_VALUE_FIRST:0 "#weak $VALUE$ $TITLE$#!"
+ VALUE_BREAKDOWN_ENTRY_WEAK_NO_VALUE:0 "#weak $TITLE$#!"
+ VALUE_BREAKDOWN_INDICATOR_GOOD_UP: "@change_up_good_1!"
+ VALUE_BREAKDOWN_INDICATOR_BAD_UP: "@change_up_bad_1!"
+ VALUE_BREAKDOWN_INDICATOR_NEUTRAL_UP: "@change_up_neutral_1!"
+ VALUE_BREAKDOWN_INDICATOR_GOOD_UP_DOUBLE: "@change_up_good_2!"
+ VALUE_BREAKDOWN_INDICATOR_BAD_UP_DOUBLE: "@change_up_bad_2!"
+ VALUE_BREAKDOWN_INDICATOR_NEUTRAL_UP_DOUBLE: "@change_up_neutral_2!"
+ VALUE_BREAKDOWN_INDICATOR_BAD_DOWN: "@change_down_bad_1!"
+ VALUE_BREAKDOWN_INDICATOR_GOOD_DOWN: "@change_down_good_1!"
+ VALUE_BREAKDOWN_INDICATOR_NEUTRAL_DOWN: "@change_down_neutral_1!"
+ VALUE_BREAKDOWN_INDICATOR_BAD_DOWN_DOUBLE: "@change_down_bad_2!"
+ VALUE_BREAKDOWN_INDICATOR_GOOD_DOWN_DOUBLE: "@change_down_good_2!"
+ VALUE_BREAKDOWN_INDICATOR_NEUTRAL_DOWN_DOUBLE: "@change_down_neutral_2!"
+ VALUE_BREAKDOWN_INDICATOR_BAD_NONE: "@change_none_bad!"
+ VALUE_BREAKDOWN_INDICATOR_GOOD_NONE: "@change_none_good!"
+ VALUE_BREAKDOWN_INDICATOR_NEUTRAL_NONE: "@change_none_neutral!"
+ GOVERNMENT_TYPE_DESCRIPTION:0 "[GovernmentType.GetRuleInfo][GovernmentType.GetFlagInfo][GovernmentType.GetDescription]"
+ GOVERNMENT_FLAG_INFO:0 "$EFFECT_LIST_BULLET$ $FLAG$"
+ GOVERNMENT_IGNORED_DEVELOPMENT:0 "$EFFECT_LIST_BULLET$ [Concept( 'counties', 'Kontlukların' )|E] [development|E] seviyesi görmezden gelinir"
+ DEVELOPMENT_CURRENT_LEVEL:0 "#T Gelişmişlik Seviyesi: $LEVEL|+0$ #!"
+ DEVELOPMENT_PROGRESS_TO_LEVEL:1 "[development_growth|E]: $CURRENT|V0$/$THRESHOLD|V0$"
+ DEVELOPMENT_PROGRESS:1 "Aylık Değişiklik"
+ CONTROL_CURRENT_LEVEL:0 "#T Kontluk Kontrolü: $VALUE|1$/%100 #!"
+ CONTROL_PROGRESS:0 "Aylık Artış"
+ BASE_FACTOR_COLON:0 "Temel: $VALUE|%0+=$"
+ BASE_AI_WILLINGNESS:0 "Temel İsteklilik: $VALUE|0+=$"
+ BASE_AI_RELUCTANCE:0 "Temel İsteksizlik: $VALUE|0+=$"
+ COUNTY_OPINION_SAME_CULTURE:1 "Aynı [culture|E]"
+ COUNTY_OPINION_DIFFERENT_CULTURE:2 "[cultural_acceptance|E]"
+ COUNTY_OPINION_DIFFERENT_CULTURE_KNOWS_LANGUAGE:1 "#weak ([CHARACTER.GetShortUIName], [CULTURE.GetLanguage.GetName] konuşabildiği[Select_CString(Character.IsLocalPlayer, 'niz', '')] için [GetDefine('NCharacterOpinion', 'CULTURE_ACCEPTANCE_MULT_KNOWS_LANGUAGE')|%0] daha az)#!"
+ BULLET_WITH_TAB:0 "    • "
+ BULLET:0 "$EFFECT_LIST_BULLET$"
+ MODIFIER_BULLET:0 "$EFFECT_LIST_BULLET$"
+ TAB:0 "    "
+ SHORT_TAB:0 "   "
+ HOUSE_CADET_BRANCH_NAME_FORMAT:1 "$DYNASTY$"
+ EVENT_OPTION_FLAVOR:0 "#F $TEXT$#!\n"
+ CHARACTER_POSS_CHECK:0 ""
+ CHARACTER_POSS:0 " adlı kişinin"
+ CHARACTER_POSS_SPECIAL:0 " adlı kişinin"
+ NO_EFFECTS:0 "Etki yok"
+ EXCELLENT:0 "Mükemmel!"
+ RESOURCE_MISSING_GOLD:0 "@warning_icon! #X [gold_i] $VALUE|^$ Eksik#!"
+ RESOURCE_MISSING_PIETY:0 "@warning_icon! #X [piety_i] $VALUE|^$ Eksik#!"
+ RESOURCE_MISSING_PRESTIGE:0 "@warning_icon! #X [prestige_i] $VALUE|^$ Eksik#!"
+ RESOURCE_MISSING_DYNASTY_PRESTIGE:0 "@warning_icon! #X [dynasty_prestige_i] $VALUE|^$ Eksik#!"
+ BREAKDOWN_MULTIPLICATION_PREFIX:0 "×"
+ CLICK_TO_VIEW:0 "#I Görüntülemek için tıklayın#!"
+ CLICK_TO_SELECT:0 "#I Seçmek için tıklayın#!"
+ LAUNCHER_SAVE_DESCRIPTION:0 "[CHARACTER.GetNameNoTooltip] olarak oynanıyor"
+ LAUNCHER_SAVE_DESCRIPTION_OBSERVER:0 "[CHARACTER.GetNameNoTooltip] izleniyor"
+ LAUNCHER_SAVE_DESCRIPTION_GLOBAL_OBSERVER:0 "İzleniyor"
+ BASE_VALUE:0 "Temel"
+ BREAKDOWN_FORMAT_POSITIVE_IS_BAD:0 "$KEY$: $VALUE|=-0$"
+ BREAKDOWN_FORMAT_PIETY_PERCENTAGE_POSITIVE_IS_BAD:0 "$KEY$: [piety_i]$VALUE|=-0%$"
+ BREAKDOWN_ENTRY_FORMAT:0 "$KEY$:"
+ BREAKDOWN_ENTRY_FORMAT_NO_COLON:0 "$KEY$"
+ BASE_VALUE_FORMAT:0 "$KEY$: $VALUE|V0$"
+ BASE_VALUE_FORMAT_DECIMALS:0 "$KEY$: $VALUE|V2$"
+ BASE_VALUE_FORMAT_DECIMALS_PLUS_NEGATIVE:0 "$KEY$: #N +$VALUE|2$#!"
+ BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE:0 "$KEY$: #P $VALUE|2$#!"
+ learning_law_cost_tooltip:0 "[learning|E] Becerisi"
+ poor_learning_law_cost_tooltip:0 "Düşük [learning|E]"
+ rite_legalism_law_cost_tooltip:0 "Yasalcı Ayin"
+ rite_pronouncements_law_cost_tooltip:0 "Dinî Yasa"
+ rite_primitivism_law_cost_tooltip:0 "Doğal İlkelcilik"
+ clan_government_cost_tooltip: "[government|E] biçiminiz [GetGovernment('clan_government').GetName]"
+ character_modifiers_law_cost_tooltip:0 "Karakter Etkileri"
+ SCRIPTED_COST_HEADER:0 "#S $TEXT$#!"
+ SCRIPTED_COST_NO_DYNAST:1 "Sadece [dynast|E] [dynasty_prestige|E] harcayabilir"
+ GAME_DATE_STRING:0 "$DAY$ $MONTH$ $YEAR$"
+ GAME_DATE_STRING_SHORT:0 "$DAY$ $MONTH_SHORT$ $YEAR$"
+ GAME_DATE_STRING_SHORT_NO_YEAR:0 "$DAY$ $MONTH_SHORT$"
+ GAME_DATE_STRING_LONG: "$MONTH$ Ayın, $DAY|O$. Günü, $ERA_SEL_IG$ $YEAR_SEL_IG$"
+ CONCEPT_TEXT:0 "[$KEY$|E]"
+ NOT_IN_DIPLOMATIC_RANGE:0 "Diplomatik Menzil içerisinde değil"
+ FIND_CHARACTER:0 "Karakter Ara"
+ GO_TO_CAPITAL:0 "Başkente Git"
+ CHARACTER_ARMY_COMPOSITION_NAME:0 "[CHARACTER.GetShortUINameNotMe] Ordusu"
+ ARMY_ICON_HEADER:0 "#T Bu konumdaki Ordular #!"
+ BREAKDOWN_FORMAT_REALM_SIZE_PRESTIGE_COST:0 "$KEY$: $VALUE|=-0$"
+ realm_size:0 "[realm_size|E]"
+ RENAME_STRING_TOO_LONG:0 "@warning_icon! #X İsim çok uzun#!"
+ RENAME_STRING_TOO_LONG_NAMED:0 "@warning_icon! #X $NAME$ çok uzun#!"
+ RENAME_STRING_EMPTY:0 "@warning_icon! #X İsim alanı boş#!"
+ RENAME_STRING_EMPTY_NAMED:0 "@warning_icon! #X $NAME$ boş#!"
+ RENAME_STRING_ILLEGAL:0 "@warning_icon! #X İsim geçersiz karakterler içeriyor#!"
+ RENAME_STRING_ILLEGAL_NAMED:0 "@warning_icon! #X $NAME$ geçersiz karakterler içeriyor#!"
+ RENAME_TOOLTIP:1 "[GameDialog.GetCanAcceptBlocker]"
+ CLOUDSAVE_QUOTA_EXCEEDED_TOOLTIP:0 "Bulut kayıt alanı doldu. Eski kayıt dosyalarını silerek alan açmayı deneyin."
+ TRAIT_NAME_WITH_BASE:0 "$NAME$ #weak ($BASE$)#!"
+ peasant_faction_event_troops:0 "Köylü Ayaklanması"
+ populist_faction_event_troops:0 "Halk Ayaklanması"
+ claimant_faction_event_troops:0 "Taht Talibi İsyancıları"
+ mongol_event_troops:0 "Moğol Hordası"
+ first_almohad_event_troops:0 "Kabileler"
+ second_almohad_event_troops:0 "Muhavvidler"
+ azariqa_fanatics: "Ezrâkî Fanatikleri"
+ yaqubs_ayyar_loyalists: "Eyyarî Sadakatçiler"
+ persian_warriors: "Pers Savaşçılar"
+ event_troop_default_name:2 "[ROOT.Char.GetTitledFirstNameNoTooltip] Askerleri"
+ CURRENT_SITUATION_SUGGESTIONS:0 "Öneriler"
+ CURRENT_SITUATION_SUGGESTIONS_EMPTY:1 "Şu anda yok"
+ CURRENT_SITUATION_HEADER:0 "Mevcut Vaziyet"
+ CHARACTER_INTERACTION_BLACKMAIL_NO_SECRET:0 "[blackmail|E] için kullanılabilecek bir [secret|E] yok"
+ CHARACTER_INTERACTION_BLACKMAIL_ALREADY_STRONG_HOOK: "[Select_CString( CHARACTER.IsLocalPlayer, '', CHARACTER.GetShortUIName )][Select_CString( CHARACTER.IsLocalPlayer, '', ', ' )][Select_CString( TARGET_CHARACTER.IsLocalPlayer, '', TARGET_CHARACTER.GetShortUIName )][Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'size', 'adlı kişiye' )] karşı zaten bir [Concept( 'strong_hook', 'Güçlü Koza' )|E] sahip[Select_CString( CHARACTER.IsLocalPlayer, 'siniz', '' )]"
+ RESET_DISMISSED_BUTTON_TEXT:0 "Sıfırla"
+ RESET_DISMISSED_TOOLTIP:1 "#T Sıfırla#!\nKapatılmış #EMP $CURRENT_SITUATION_HEADER$#! maddelerini geri getirir.\n\n#I Listeyi sıfırlamak için tıklayın#!"
+ CHARACTER_INTERACTION_SAME_REALM_AS:0 "[Concept( 'realm', 'Ülkenizin' )|E] bir parçası olmalı."
+ NOT_CHARACTER_INTERACTION_SAME_REALM_AS:1 "[Concept( 'realm', 'Ülkenizin' )|E] bir parçası olmamalı."
+ CHARACTER_INTERACTION_NOT_ALLOWED_IN_VARANGIAN_GUARD:0 "Hedef [Concept( 'court', 'sarayda' )|E] [knight|E] olarak görev yapamazlar."
+ SET_CHARACTER_CONTROLLER_TITLE:0 "$TITLE$"
+ SET_CHARACTER_CONTROLLER_TEXT:0 "$TEXT$"
 
- TRAIT_FLAG_DESC_can_dismiss_hooks_interaction: "[dismiss_strong_hook_interaction|E]'ın kilidini açar" #NT!
- TRAIT_FLAG_DESC_can_abandon_hooks_interaction: "[abandon_hook_interaction|E]'ın kilidini açar" #NT!
- TRAIT_FLAG_DESC_can_duel_criminals_interaction: "[force_duel_criminals_interaction|E]'ın kilidini açar" #NT!
- TRAIT_FLAG_DESC_can_duel_anyone_interaction: "[force_duel_anyone_interaction|E]'ın kilidini açar" #NT!
+ TRAIT_FLAG_DESC_can_dismiss_hooks_interaction:0 "[dismiss_strong_hook_interaction|E] açılır"
+ TRAIT_FLAG_DESC_can_abandon_hooks_interaction:0 "[abandon_hook_interaction|E] açılır"
+ TRAIT_FLAG_DESC_can_duel_criminals_interaction:0 "[force_duel_criminals_interaction|E] açılır"
+ TRAIT_FLAG_DESC_can_duel_anyone_interaction:0 "[force_duel_anyone_interaction|E] açılır"
 
- TRAIT_FLAG_DESC_can_improve_hostile_schemes_decision: "[deceitful_progress_hostile_schemes_decision|E]'ın kilidini açar" #NT!
- TRAIT_FLAG_DESC_can_improve_capital_decision: "[diligent_development_focus_decision|E]'ın kilidini açar" #NT!
- TRAIT_FLAG_DESC_can_accelerate_schemes_decision: "[impatient_rushing_all_schemes_decision|E]'ın kilidini açar" #NT!
- TRAIT_FLAG_DESC_can_fabricate_hooks_on_rivals: "[rivals|E]'nize karşı [GetScheme('fabricate_hook').GetTypeName] [scheme|E]'e izin verir" #NT!
+ TRAIT_FLAG_DESC_can_improve_hostile_schemes_decision:0 "[deceitful_progress_hostile_schemes_decision|E] açılır"
+ TRAIT_FLAG_DESC_can_improve_capital_decision:0 "[diligent_development_focus_decision|E] açılır"
+ TRAIT_FLAG_DESC_can_accelerate_schemes_decision:0 "[impatient_rushing_all_schemes_decision|E] açılır"
+ TRAIT_FLAG_DESC_can_fabricate_hooks_on_rivals:2 "[Concept( 'rival', 'Rakiplerinize' )|E] karşı [GetScheme('fabricate_hook').GetTypeName] [Concept( 'scheme', 'Planı' )|E] başlatabilmenize izin verir"
 
- INVALID: "Geçersiz" #NT!
+ INVALID:0 "Geçersiz"
 
- RENAME_STRING_STARTS_WITH_SPACE: "@warning_icon! #X İsim boşlukla başlasın#!" #NT!
- RENAME_STRING_STARTS_WITH_SPACE_NAMED: "@warning_icon! #X $NAME$ boşlukla başlıyor#!" #NT!
- RENAME_STRING_ENDS_WITH_SPACE: "@warning_icon! #X İsim boşlukla bitiyor#!" #NT!
- RENAME_STRING_ENDS_WITH_SPACE_NAMED: "@warning_icon! #X $NAME$ boşlukla biter#!" #NT!
- DEFAULT_TEXT: "#D ÖN TANIMLI METİN#!" #NT!
+ RENAME_STRING_STARTS_WITH_SPACE:0 "@warning_icon! #X Ad, boşluk ile başlıyor#!"
+ RENAME_STRING_STARTS_WITH_SPACE_NAMED:0 "@warning_icon! #X $NAME$ boşluk ile başlıyor#!"
+ RENAME_STRING_ENDS_WITH_SPACE:0 "@warning_icon! #X Ad, boşluk ile bitiyor#!"
+ RENAME_STRING_ENDS_WITH_SPACE_NAMED:0 "@warning_icon! #X $NAME$ boşluk ile bitiyor#!"
+ DEFAULT_TEXT:0 "#D VARSAYILAN METİN#!"
 
  OR: "veya" #NT!
  OR_LIST: ", veya" #NT!
 
- num_suffix_0: "ıncı" #NT!
- num_suffix_1: "inci" #NT!
- num_suffix_2: "nci" #NT!
- num_suffix_3: "üncü" #NT!
- num_suffix_4: "$num_suffix_0$" #NT!
- num_suffix_5: "$num_suffix_0$" #NT!
- num_suffix_6: "$num_suffix_0$" #NT!
- num_suffix_7: "$num_suffix_0$" #NT!
- num_suffix_8: "$num_suffix_0$" #NT!
- num_suffix_9: "$num_suffix_0$" #NT!
+ num_suffix_0:0 "."
+ num_suffix_1:0 "."
+ num_suffix_2:0 "."
+ num_suffix_3:0 "."
+ num_suffix_4:0 "."
+ num_suffix_5:0 "."
+ num_suffix_6:0 "."
+ num_suffix_7:0 "."
+ num_suffix_8:0 "."
+ num_suffix_9:0 "."
 
- aptitude_terrible: "#aptitude_terrible Berbat @aptitude:1:inherit_color!#!" #NT!
- aptitude_poor: "#aptitude_poor Zavallı @aptitude:2:inherit_color!#!" #NT!
- aptitude_average: "#aptitude_average Ortalama @aptitude:3:inherit_color!#!" #NT!
- aptitude_good: "#aptitude_good İyi @aptitude:4:inherit_color!#!" #NT!
- aptitude_excellent: "#aptitude_excellent Mükemmel @aptitude:5:inherit_color!#!" #NT!
+ aptitude_terrible: "#aptitude_terrible Berbat @aptitude:1:inherit_color!#!"
+ aptitude_poor: "#aptitude_poor Zayıf @aptitude:2:inherit_color!#!"
+ aptitude_average: "#aptitude_average Vasat @aptitude:3:inherit_color!#!"
+ aptitude_good: "#aptitude_good İyi @aptitude:4:inherit_color!#!"
+ aptitude_excellent: "#aptitude_excellent Mükemmel @aptitude:5:inherit_color!#!"
 
- compare_date_trigger_operator_greater_than: "sonrasında" #NT!
- compare_date_trigger_operator_greater_or_equal: "Üzerinde veya sonrasında" #NT!
- compare_date_trigger_operator_less_than: "önce" #NT!
- compare_date_trigger_operator_less_or_equal: "veya öncesinde" #NT!
- compare_date_trigger_operator_equal: "Açık" #NT!
- compare_date_trigger_operator_not_equal: "üzerinde değil" #NT!
+ compare_date_trigger_operator_greater_than: "n sonra"
+ compare_date_trigger_operator_greater_or_equal: " veya daha sonra"
+ compare_date_trigger_operator_less_than: "n önce"
+ compare_date_trigger_operator_less_or_equal: " veya daha önce"
+ compare_date_trigger_operator_equal: ""
+ compare_date_trigger_operator_not_equal: "n başka bir günde"
 
- CONFIRM_COMMAND_TITLE: "Eylemi Onayla" #NT!
- CONFIRM_COMMAND_TEXT: "Bunu gerçekten yapmak istiyor musun?" #NT!
- CONFIRM_COMMAND_ACCEPT: "Kabul et" #NT!
+ CONFIRM_COMMAND_TITLE: "Eylemi Onayla"
+ CONFIRM_COMMAND_TEXT: "Bunu yapmak istediğinize emin misiniz?"
+ CONFIRM_COMMAND_ACCEPT: "Kabul Et"
