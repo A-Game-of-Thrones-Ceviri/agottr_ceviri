@@ -1,186 +1,165 @@
 ﻿l_english:
- epidemic_level_minor: "[plague_minor|E]" #NT!
- epidemic_level_major: "[plague_major|E]" #NT!
- epidemic_level_apocalyptic: "[plague_apocalyptic|E]" #NT!
+ epidemic_level_minor: "[plague_minor|E]"
+ epidemic_level_major: "[plague_major|E]"
+ epidemic_level_apocalyptic: "[plague_apocalyptic|E]"
 
- game_concept_epidemic: "Veba" #NT!
- game_concept_epidemic_desc: "$game_concept_epidemic$, haritada yayılan ve hem yerel etkilere neden olan hem de bölgesindeki karakterleri enfekte eden bir hastalık salgınıdır. Etkilenen [baronies|E]'lerin şiddetini idare eden bir [infection_rate|E]'si vardır ve [epidemic_resistance|E]'ü iyileştirerek karşılanabilir.\n\nBir Veba, etki alanını, süresini ve [fatalities|E]'ini etkileyen farklı [plague_intensities|E]'lere sahip olabilir." #NT!
- game_concept_epidemic_i: "@plague_icon!" #NT!
- game_concept_epidemics: "Vebalar" #NT!
- game_concept_epidemics_desc: "$game_concept_epidemic_desc$" #NT!
- game_concept_infection_rate: "Enfeksiyon Oranı" #NT!
- game_concept_infection_rate_desc: "[epidemics|E]'den etkilenen [baronies|E], ciddiyetini ve etkilerinin gücünü idare eden bir $game_concept_infection_rate$'ye sahiptir.\n\nHiçbir şey yapılmadığı takdirde $game_concept_infection_rate$ her zaman maksimum değerine doğru ilerleyecektir. Küçük, Büyük ve Kıyamet [epidemics|E], yoğunluklarına göre işaretlenen farklı hızlarda ilerleyecektir.\n\nEnfeksiyon'un etkisini azaltmak için [rulers|E], [realm|E]'sinin [epidemic_resistance|E]'sını iyileştirebilir." #NT!
- game_concept_infection_rates: "Enfeksiyon Oranları" #NT!
- game_concept_infection_rates_desc: "$game_concept_infection_rate_desc$" #NT!
- game_concept_epidemic_resistance: "Veba Direnci" #NT!
- game_concept_epidemic_resistance_desc: "$game_concept_epidemic_resistance$, [barony|E] veya [county|E]'ün [infection_rate|E]'ini düşürerek [epidemic|E]'ün etkilerini hafifletir.\n\n$game_concept_epidemic_resistance$, [infection_rate|E]3, [infection_rate|E]4 veya olaylar tarafından gerçekleştirilen $building_type_hospices_01$ veya $building_type_burial_site_01$ #weak ([infection_rate|E]0)[infection_rate|E]1 [infection_rate|E]2 gibi [buildings|E] aracılığıyla artırılabilir." #NT!
- game_concept_epidemic_res: "Veba Direnci" #NT!
- game_concept_epidemic_res_desc: "$game_concept_epidemic_resistance_desc$" #NT!
- game_concept_infection_chance: "Enfeksiyon olasılığı" #NT!
- game_concept_chance_of_infection: "Enfeksiyon olasılığı" #NT!
- game_concept_infection_chance_desc: "$game_concept_infection_chance$'ınız, devam eden bir [epidemic|E]'den [diseases|E] ile sözleşme yapma olasılığınızı belirler." #NT!
- game_concept_plague_intensity: "Veba Yoğunluğu" #NT!
- game_concept_plague_intensity_desc: "[epidemic|E], Kıyametvari, Büyük veya Küçük olabilir, yayılma alanını, süresini ve enfekte olan [characters|E]'i etkileyerek [fatalities|E]'ye neden olur." #NT!
- game_concept_plague_intensities: "Veba Yoğunlukları" #NT!
- game_concept_plague_intensities_desc: "$game_concept_plague_intensity_desc$" #NT!
- game_concept_plague_apocalyptic: "Kıyamet" #NT!
- game_concept_plague_apocalyptic_desc: "$game_concept_infection_chance_desc$" #NT!
- game_concept_plague_major: "Ana" #NT!
- game_concept_plague_major_desc: "$game_concept_infection_chance_desc$" #NT!
- game_concept_plague_minor: "Küçük" #NT!
- game_concept_plague_minor_desc: "$game_concept_infection_chance_desc$" #NT!
+ game_concept_epidemic: "Salgın"
+ game_concept_epidemic_desc: "$game_concept_epidemic$ haritaya yayılan bir hastalıktır ve hem yerel etkilere sahiptir hem de bulunduğu bölgedeki karakterlere bulaşır. [infection_rate|E], etkilenen [Concept( 'baronies', 'Baronluklardaki' )|E] salgın şiddetini belirler ve [epidemic_resistance|E] arttırılarak hafifletilebilir.\n\nBir Salgın farklı [Concept( 'plague_intensities', 'Salgın Şiddetlerine' )|E] sahip olabilir ve bunlar etki alanını, süresini ve [Concept( 'fatalities', 'Öldürücülüğünü' )|E] etkiler."
+ game_concept_epidemic_i: "@epidemic_icon!"
+ game_concept_epidemics: "Salgınlar"
+ game_concept_epidemics_desc: "$game_concept_epidemic_desc$"
+ game_concept_infection_rate: "Salgın İlerlemesi"
+ game_concept_infection_rate_desc: "[Concept( 'epidemics', 'Salgınlardan' )|E] etkilenen [Concept( 'baronies', 'Baronluklar' )|E], şiddetlerini ve etkilerin gücünü etkileyen birer $game_concept_infection_rate$ değerine sahiptir.\n\n$game_concept_infection_rate$ eğer ona karşı koymak için bir şey yapılmazsa daima maksimum değerine doğru ilerler. Ufak, Büyük ve Kıyametvari [epidemics|E] şiddetlerine göre farklı hızlarla ilerler.\n\nSalgının tesirini hafifletmek için [rulers|E] [Concept( 'realm', 'Ülkelerinin' )|E] [Concept( 'epidemic_resistance', 'Salgın Direncini' )|E] arttırabilir."
+ game_concept_infection_rates: "Salgın İlerlemesi"
+ game_concept_infection_rates_desc: "$game_concept_infection_rate_desc$"
+ game_concept_epidemic_resistance: "Salgın Direnci"
+ game_concept_epidemic_resistance_desc: "$game_concept_epidemic_resistance$ [Concept( 'baronies', 'Baronlukların' )|E] veya [Concept( 'counties', 'Kontlukların' )|E] [Concept( 'infection_rate', 'Salgın İlerlemesini' )|E] düşürerek [Concept( 'epidemic', 'Salgınların' )|E] etkisini hafifletir.\n\n$game_concept_epidemic_resistance$; $building_type_hospices_01$ veya $building_type_burial_site_01$ #weak ([duchy_building|E])#! gibi [buildings|E], $court_physician_court_position$ tarafından gerçekleştirilen [court_position_tasks|E], [decisions|E] ya da olaylar yoluyla arttırılabilir."
+ game_concept_epidemic_res: "Salgın Direnci"
+ game_concept_epidemic_res_desc: "$game_concept_epidemic_resistance_desc$"
+ game_concept_infection_chance: "Bulaşma İhtimali"
+ game_concept_chance_of_infection: "Bulaşma İhtimali"
+ game_concept_infection_chance_desc: "$game_concept_infection_chance$, devam etmekte olan bir [Concept( 'epidemic', 'Salgında' )|E] [disease|E] kapma ihtimalinizin ne kadar yüksek olduğunu belirler."
+ game_concept_plague_intensity: "Salgın Şiddeti"
+ game_concept_plague_intensity_desc: "Bir [epidemic|E] Kıyametvari, Büyük ya da Küçük olabilir ve bu; yayılma alanını, süresini ve hastalığı kapan [Concept( 'characters', 'Karakterleri' )|E] etkileyerek [Concept( 'fatalities', 'Ölümlere' )|E] yol açar."
+ game_concept_plague_intensities: "Salgın Şiddetleri"
+ game_concept_plague_intensities_desc: "$game_concept_plague_intensity_desc$"
+ game_concept_plague_apocalyptic: "Kıyametvari"
+ game_concept_plague_apocalyptic_desc: "$game_concept_infection_chance_desc$"
+ game_concept_plague_major: "Büyük"
+ game_concept_plague_major_desc: "$game_concept_infection_chance_desc$"
+ game_concept_plague_minor: "Küçük"
+ game_concept_plague_minor_desc: "$game_concept_infection_chance_desc$"
+ 
+ epidemic_smallpox: "Çiçek"
+ epidemic_bubonic_plague: "Gün Batımı Vebası"
+ epidemic_bubonic_plague_global_notification: "yayılmaya başladı"
+ epidemic_black_death: "Kara Veba"
+ epidemic_typhus: "Yeşil Ateş"
+ epidemic_consumption: "Verem"
+ epidemic_measles: "Kızamık"
+ epidemic_realm_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip|U]"
+ epidemic_ruler_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetFirstNameNoTooltip|U]"
+ epidemic_holder_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetFirstNameNoTooltip|U]"
+ epidemic_ruler_possessive_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetFirstNameNoTooltip|U]"
+ epidemic_titled_ruler_possessive_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetTitledFirstNameNoTooltip|U]"
+ epidemic_province_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetNameNoTooltip|U]"
+ epidemic_culture_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetCulture.GetNameNoTooltip|U]"
+ epidemic_devils_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetFaith.DevilNamePossessive|U]"
+ epidemic_random_saint_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.Custom('RandomSaintName')|U]"
+ epidemic_rulers_plague: "$epidemic_ruler_possessive_loc$ Salgını"
+ epidemic_plague_of_ruler: "$epidemic_ruler_loc$ Salgını"
+ epidemic_province_plague: "$epidemic_province_loc$ Salgını"
+ epidemic_realm_plague: "$epidemic_realm_loc$ Salgını"
+ epidemic_animal_pox: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.Custom('RegionalPoxAnimal')|U] Frengisi"
+ epidemic_realm_pox: "$epidemic_realm_loc$ Frengisi"
+ epidemic_holder_pox: "$epidemic_holder_loc$ Frengisi"
+ epidemic_culture_pox: "$epidemic_culture_loc$ Frengisi"
+ epidemic_location_pox: "$epidemic_province_loc$ Frengisi"
+ epidemic_rulers_pox: "$epidemic_ruler_possessive_loc$ Frengisi"
+ epidemic_titled_rulers_pox: "$epidemic_titled_ruler_possessive_loc$ Frengisi"
+ epidemic_realm_boils: "$epidemic_realm_loc$ Çıbanı"
+ epidemic_rulers_boils: "$epidemic_ruler_possessive_loc$ Çıbanı"
+ epidemic_titled_rulers_boils: "$epidemic_titled_ruler_possessive_loc$ Çıbanı"
+ epidemic_holder_boils: "$epidemic_holder_loc$ Çıbanı"
+ epidemic_culture_boils: "$epidemic_culture_loc$ Çıbanı"
+ epidemic_location_boils: "$epidemic_province_loc$ Çıbanı"
+ epidemic_rulers_fever: "$epidemic_ruler_possessive_loc$ Humması"
+ epidemic_titled_rulers_fever: "$epidemic_titled_ruler_possessive_loc$ Humması"
+ epidemic_province_fever: "$epidemic_province_loc$ Humması"
+ epidemic_province_sweats: "$epidemic_province_loc$ Terlemesi"
+ epidemic_realm_fever: "$epidemic_realm_loc$ Humması"
+ epidemic_terrain_fever: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetTerrain.GetNameNoTooltip|U] Humması"
+ epidemic_culture_sweats: "$epidemic_culture_loc$ Terlemesi"
+ epidemic_devils_fever: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetFaith.random_EvilGodNames|U] Humması"
+ epidemic_camp_fever: "Ordugâh Humması"
+ epidemic_famine_fever: "Yokluk Humması"
+ epidemic_spotted_fever: "Benekli Humma"
+ epidemic_curse_of_canaan: "Kenan'ın Laneti"
+ epidemic_yaksma: "Yaksma"
+ epidemic_shizhai: "Shizhai"
+ epidemic_demon_dog_disease: "İblis Köpek Humması"
+ epidemic_titles_evil: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetTitleAsNameNoTooltip|U] Belası"
+ epidemic_cold_humor: "Nezle"
+ epidemic_realm_flu: "$epidemic_realm_loc$ Nezlesi"
+ epidemic_titled_ruler_flu: "$epidemic_titled_ruler_possessive_loc$ Nezlesi"
+ epidemic_ruler_flu: "$epidemic_ruler_possessive_loc$ Nezlesi"
+ epidemic_ruler_coughs: "$epidemic_ruler_possessive_loc$ Öksürüğü"
+ epidemic_holder_flu: "$epidemic_holder_loc$ Nezlesi"
+ epidemic_holder_coughs: "$epidemic_holder_loc$ Öksürüğü"
+ epidemic_realm_coughs: "$epidemic_realm_loc$ Öksürüğü"
+ epidemic_white_plague: "Beyaz Ölüm"
+ epidemic_romantic_plague: "İnce Hastalık"
+ epidemic_great_pestilence: "Büyük Taun"
+ epidemic_random_saint_plague: "$epidemic_random_saint_loc$ Salgını"
+ epidemic_evil_god_pestilence: "$epidemic_devils_loc$ Taunu"
+ epidemic_bloody_flux: "Kanlı İshal"
+ epidemic_realm_flux: "$epidemic_realm_loc$ İshali"
+ epidemic_terrain_flux: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetTerrain.GetNameNoTooltip|U] İshali"
+ epidemic_ruler_flux: "$epidemic_ruler_possessive_loc$ İshali"
+ epidemic_titled_ruler_flux: "$epidemic_titled_ruler_possessive_loc$ İshali"
+ epidemic_culture_flux: "$epidemic_culture_loc$ İshali"
+ epidemic_location_flux: "$epidemic_province_loc$ İshali"
+ epidemic_evil_god_flux: "$epidemic_devils_loc$ İshali"
+ epidemic_holder_flux: "$epidemic_holder_loc$ İshali"
+ epidemic_dance_of_death: "Ölüm Dansı"
+ epidemic_realm_dancing_plague: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip] Dans Salgını"
+ epidemic_culture_dancing_plague: "$epidemic_culture_loc$ Dans Salgını"
+ epidemic_location_dancing_plague: "$epidemic_province_loc$ Dans Salgını"
+ epidemic_realm_fire: "$epidemic_realm_loc$ Ateşi"
+ epidemic_ruler_fire: "$epidemic_ruler_possessive_loc$ Ateşi"
+ epidemic_culture_fire: "$epidemic_culture_loc$ Ateşi"
+ epidemic_location_fire: "$epidemic_province_loc$ Ateşi"
+ epidemic_evil_god_fire: "$epidemic_devils_loc$ Ateşi"
+ epidemic_random_saint_fire: "$epidemic_random_saint_loc$ Ateşi"
+ epidemic_holder_fire: "$epidemic_holder_loc$ Ateşi"
+ epidemic_culture_plague: "$epidemic_culture_loc$ Salgını"
+ epidemic_location_plague: "$epidemic_province_loc$ Salgını"
+ epidemic_ruler_plague: "$epidemic_ruler_possessive_loc$ Salgını"
+ epidemic_titled_ruler_plague: "$epidemic_titled_ruler_possessive_loc$ Salgını"
+ epidemic_evil_god_plague: "$epidemic_devils_loc$ Salgını"
+ epidemic_eleventh_plague: "On Birinci Mısır Belası"
+ epidemic_wicked_blight: "Habis Mantar"
+ epidemic_reapers_will: "Ecelin İradesi"
+ epidemic_reapers_due: "Ecelin Vakti"
+ epidemic_little_leprosy: "Küçük Cüzzam"
+ epidemic_crimson_horror: "Kızıl Dehşet"
+ trait_measles: "Kızamık"
+ trait_measles_desc: "Bu karakter sürekli ateş, kızarıklıklar ve öksürükten muzdarip olduğu için birçok insan bu illete "küçük cüzzam" adını yakıştırıyor."
+ trait_measles_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] sürekli ateş, kızarıklıklar ve öksürükten muzdarip olduğu için birçok insan bu illete "küçük cüzzam" adını yakıştırıyor."
+ epidemic_dysentery: "Kanlı İshal"
+ trait_dysentery: "Kanlı İshal"
+ trait_dysentery_desc: "Ateş, sayıklamalar ve ağır karın ağrıları yüzünden bu karakter... tuvalette kan #EMP çıkarıyor#!."
+ trait_dysentery_character_desc: "Ateş, sayıklamalar ve ağır karın ağrıları yüzünden [ROOT.GetCharacter.GetFirstNameNoTooltip]... tuvalette kan #EMP çıkarıyor#!."
+ epidemic_ergotism: "Kutsal Ateş"
+ epidemic_saint_anthonys_fire: "Aziz Antonio'nun Ateşi"
+ trait_ergotism: "Kutsal Ateş"
+ trait_ergotism_desc: "Bu karakter acılı nöbetler, baş ağrıları, bulantı ve ishalden muzdarip. İstemsiz kasılmalar âdeta dans ediyormuş gibi gözükmesine yol açıyor."
+ trait_ergotism_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] acılı nöbetler, baş ağrıları, bulantı ve ishalden muzdarip. İstemsiz kasılmalar âdeta dans ediyormuş gibi gözükmesine yol açıyor."
+ county_epidemic_recovered_tiny_modifier: "Kısmi Toparlanma"
+ county_epidemic_recovered_tiny_modifier_desc: "$county_epidemic_recovered_minor_modifier_desc$"
+ county_epidemic_recovered_minor_modifier: "Toparlanma"
+ county_epidemic_recovered_minor_modifier_desc: "Bu kontluk yakın zamanda salgının pençesinden kurtuldu ve yaralarını sarıyor."
+ county_epidemic_recovered_medium_modifier: "Büyük Toparlanma"
+ county_epidemic_recovered_medium_modifier_desc: "$county_epidemic_recovered_minor_modifier_desc$"
+ county_epidemic_recovered_strong_modifier: "Muazzam Toparlanma"
+ county_epidemic_recovered_strong_modifier_desc: "$county_epidemic_recovered_minor_modifier_desc$"
+ 
+ shattered_by_plague_tt: "#high 30#! veya üzerinde [Concept( 'development', 'Gelişmişliğe' )|E] sahip olan bütün [counties|E]"
+ ravaged_by_plague_tt: "#high 20#! ila #high 30#! arasında [Concept( 'development', 'Gelişmişliğe' )|E] sahip olan bütün [counties|E]"
+ blighted_by_plague_tt: "#high 15#! ila #high 20#! arasında [Concept( 'development', 'Gelişmişliğe' )|E] sahip olan bütün [counties|E]"
+ struck_by_plague_tt: "#high 10#! ila #high 15#! arasında [Concept( 'development', 'Gelişmişliğe' )|E] sahip olan bütün [counties|E]"
 
- epidemic_smallpox: "Çiçek hastalığı" #NT!
-  #AGOT Modified  #NT!
- #epidemic_bubonic_plague: "Hıyarcıklı veba" #NT!
- epidemic_bubonic_plague: "Gün Batımı Vebası" #NT!
- epidemic_bubonic_plague_global_notification: "toprakları rahatsız ediyor" #NT!
-  #AGOT Modified  #NT!
- #epidemic_black_death: "Kara Ölüm" #NT!
- epidemic_black_death: "Büyük Bahar Hastalığı" #NT!
-  #AGOT Modified  #NT!
- #epidemic_typhus: "Tifüs" #NT!
- epidemic_typhus: "Yeşil Ateş" #NT!
- epidemic_consumption: "Veba" #NT!
-  #AGOT Modifed  #NT!
- #epidemic_measles: "Kızamık" #NT!
- epidemic_measles: "Lekelihumma" #NT!
- epidemic_realm_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip|U]" #NT!
- epidemic_ruler_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetFirstNameNoTooltip|U]" #NT!
- epidemic_holder_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetFirstNamePossessiveNoTooltip|U]" #NT!
- epidemic_ruler_possessive_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetFirstNamePossessiveNoTooltip|U]" #NT!
- epidemic_titled_ruler_possessive_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetTitledFirstNamePossessiveNoTooltip|U]" #NT!
- epidemic_province_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetAdjectiveNoTooltip|U]" #NT!
- epidemic_culture_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetCulture.GetNameNoTooltip|U]" #NT!
- epidemic_devils_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetFaith.DevilNamePossessive|U]" #NT!
- epidemic_random_saint_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.Custom('RandomSaintNamePossessive')|U]" #NT!
- epidemic_rulers_plague: "$epidemic_ruler_possessive_loc$ Veba" #NT!
- epidemic_plague_of_ruler: "$epidemic_ruler_loc$ Vebası" #NT!
- epidemic_province_plague: "$epidemic_province_loc$ Veba" #NT!
- epidemic_realm_plague: "$epidemic_realm_loc$ Veba" #NT!
- epidemic_animal_pox: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.Custom('RegionalPoxAnimal')|U] Çiçek hastalığı" #NT!
- epidemic_realm_pox: "$epidemic_realm_loc$ Çiçek hastalığı" #NT!
- epidemic_holder_pox: "$epidemic_holder_loc$ Çiçek hastalığı" #NT!
- epidemic_culture_pox: "$epidemic_culture_loc$ Çiçek hastalığı" #NT!
- epidemic_location_pox: "$epidemic_province_loc$ Çiçek hastalığı" #NT!
- epidemic_rulers_pox: "$epidemic_ruler_possessive_loc$ Çiçek hastalığı" #NT!
- epidemic_titled_rulers_pox: "$epidemic_titled_ruler_possessive_loc$ Çiçek hastalığı" #NT!
- epidemic_realm_boils: "$epidemic_realm_loc$ Kaynama" #NT!
- epidemic_rulers_boils: "$epidemic_ruler_possessive_loc$ Kaynama" #NT!
- epidemic_titled_rulers_boils: "$epidemic_titled_ruler_possessive_loc$ Kaynama" #NT!
- epidemic_holder_boils: "$epidemic_holder_loc$ Kaynama" #NT!
- epidemic_culture_boils: "$epidemic_culture_loc$ Kaynama" #NT!
- epidemic_location_boils: "$epidemic_province_loc$ Kaynama" #NT!
- epidemic_rulers_fever: "$epidemic_ruler_possessive_loc$ Ateş" #NT!
- epidemic_titled_rulers_fever: "$epidemic_titled_ruler_possessive_loc$ Ateş" #NT!
- epidemic_province_fever: "$epidemic_province_loc$ Ateş" #NT!
- epidemic_province_sweats: "$epidemic_province_loc$ Terleme" #NT!
- epidemic_realm_fever: "$epidemic_realm_loc$ Ateş" #NT!
-  #AGOT Modified  #NT!
- #epidemic_terrain_fever: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetTerrain.GetNameNoTooltip|U] Ateş" #NT!
- epidemic_terrain_fever: "[ROOT.Epidemic.GetStartingOutbreakProvince.Custom('TerrainTypeProvince')|U] Ateş" #NT!
- epidemic_culture_sweats: "$epidemic_culture_loc$ Terlemeler" #NT!
- epidemic_devils_fever: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetFaith.random_EvilGodNames|U]'ın Ateşi" #NT!
- epidemic_camp_fever: "Karahumma" #NT!
- epidemic_famine_fever: "Kıtlık Ateşi" #NT!
- epidemic_spotted_fever: "Lekelihumma" #NT!
- epidemic_curse_of_canaan: "Kenan'ın laneti" #NT!
- epidemic_yaksma: "Yaksma" #NT!
- epidemic_shizhai: "Shizhai" #NT!
- epidemic_demon_dog_disease: "Şeytan Köpek Ateşi" #NT!
- epidemic_titles_evil: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetTitleAsNamePossessiveNoTooltip|U] Kötü" #NT!
- epidemic_cold_humor: "Soğuk Mizah Gribi" #NT!
- epidemic_realm_flu: "$epidemic_realm_loc$ Grip" #NT!
- epidemic_titled_ruler_flu: "$epidemic_titled_ruler_possessive_loc$ Grip" #NT!
- epidemic_ruler_flu: "$epidemic_ruler_possessive_loc$ Grip" #NT!
- epidemic_ruler_coughs: "$epidemic_ruler_possessive_loc$ Öksürük" #NT!
- epidemic_holder_flu: "$epidemic_holder_loc$ Grip" #NT!
- epidemic_holder_coughs: "$epidemic_holder_loc$ Öksürük" #NT!
- epidemic_realm_coughs: "$epidemic_realm_loc$ Öksürük" #NT!
- epidemic_white_plague: "Beyaz veba" #NT!
- epidemic_romantic_plague: "Romantik Veba" #NT!
- epidemic_great_pestilence: "Büyük Veba" #NT!
- epidemic_random_saint_plague: "$epidemic_random_saint_loc$ Veba" #NT!
- epidemic_evil_god_pestilence: "$epidemic_devils_loc$ Salgın" #NT!
- epidemic_bloody_flux: "Kanlı Akış" #NT!
- epidemic_realm_flux: "$epidemic_realm_loc$ Akış" #NT!
-  #AGOT Modified  #NT!
- #epidemic_terrain_flux: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetTerrain.GetNameNoTooltip|U] Akış" #NT!
- epidemic_terrain_flux: "[ROOT.Epidemic.GetStartingOutbreakProvince.Custom('TerrainTypeProvince')|U] Akış" #NT!
- epidemic_ruler_flux: "$epidemic_ruler_possessive_loc$ Akış" #NT!
- epidemic_titled_ruler_flux: "$epidemic_titled_ruler_possessive_loc$ Akış" #NT!
- epidemic_culture_flux: "$epidemic_culture_loc$ Akış" #NT!
- epidemic_location_flux: "$epidemic_province_loc$ Akış" #NT!
- epidemic_evil_god_flux: "$epidemic_devils_loc$ Akış" #NT!
- epidemic_holder_flux: "$epidemic_holder_loc$ Akış" #NT!
- epidemic_dance_of_death: "Ölüm dansı" #NT!
- epidemic_realm_dancing_plague: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip] Dans Vebası" #NT!
- epidemic_culture_dancing_plague: "$epidemic_culture_loc$ Dans Vebası" #NT!
- epidemic_location_dancing_plague: "$epidemic_province_loc$ Dans Vebası" #NT!
- epidemic_realm_fire: "$epidemic_realm_loc$ Ateş" #NT!
- epidemic_ruler_fire: "$epidemic_ruler_possessive_loc$ Ateş" #NT!
- epidemic_culture_fire: "$epidemic_culture_loc$ Ateş" #NT!
- epidemic_location_fire: "$epidemic_province_loc$ Ateş" #NT!
- epidemic_evil_god_fire: "$epidemic_devils_loc$ Ateş" #NT!
- epidemic_random_saint_fire: "$epidemic_random_saint_loc$ Ateş" #NT!
- epidemic_holder_fire: "$epidemic_holder_loc$ Ateş" #NT!
- epidemic_culture_plague: "$epidemic_culture_loc$ Veba" #NT!
- epidemic_location_plague: "$epidemic_province_loc$ Veba" #NT!
- epidemic_ruler_plague: "$epidemic_ruler_possessive_loc$ Veba" #NT!
- epidemic_titled_ruler_plague: "$epidemic_titled_ruler_possessive_loc$ Veba" #NT!
- epidemic_evil_god_plague: "$epidemic_devils_loc$ Veba" #NT!
- epidemic_eleventh_plague: "Mısır'ın Onbirinci Vebası" #NT!
- epidemic_wicked_blight: "Kötü Veba" #NT!
- epidemic_reapers_will: "Biçicinin İradesi" #NT!
- epidemic_reapers_due: "Biçicinin Vadesi" #NT!
- epidemic_little_leprosy: "Küçük Cüzzam" #NT!
- epidemic_crimson_horror: "Kızıl Korku" #NT!
-  #AGOT Modifed  #NT!
- #trait_measles: "Kızamık" #NT!
- trait_measles: "Lekelihumma" #NT!
- trait_measles_desc: "Bu karakter uzun süreli ateş, döküntü ve öksürükten muzdariptir ve bu da birçok kişinin bu hastalığı "küçük bir cüzzam"a benzetmesine neden olur." #NT!
- trait_measles_character_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] Uzun süren ateş, döküntü ve öksürük, birçok kişinin bu hastalığı "küçük bir cüzzam" olarak değerlendirmesine yol açmıştır." #NT!
- epidemic_dysentery: "Kanlı Akış" #NT!
- trait_dysentery: "Kanlı Akış" #NT!
- trait_dysentery_desc: "Ateş, deliryum ve şiddetli karın ağrısı bu karakteri... #EMP dışkılama#! tuvaletlerde kan yapıyor." #NT!
- trait_dysentery_character_desc: "Ateş, deliryum ve şiddetli karın ağrısı [ROOT.GetCharacter.GetFirstNameNoTooltip]... #EMP tuvaletlerde kan atılmasına#! neden oldu." #NT!
-  #AGOT Modifed  #NT!
- #epidemic_ergotism: "Kutsal ateş" #NT!
- epidemic_ergotism: "Dans Eden Veba" #NT!
- epidemic_saint_anthonys_fire: "Aziz Anthony'nin Ateşi" #NT!
-  #AGOT Modifed  #NT!
- #trait_ergotism: "Kutsal ateş" #NT!
- trait_ergotism: "Dans Eden Veba" #NT!
- trait_ergotism_desc: "Bu karakter, ağrılı nöbetler, baş ağrıları, mide bulantısı ve ishal gibi rahatsızlıklardan muzdariptir; istemsiz spazmlar sanki dans ediyormuş gibi bir görüntü oluşturur." #NT!
- trait_ergotism_character_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] vücudu ağrılı nöbetler, baş ağrıları, mide bulantısı ve ishal gibi rahatsızlıklardan muzdariptir; istemsiz spam'lar sanki [ROOT.GetCharacter.GetSheHe] dans ediyormuş gibi görünmesini sağlar." #NT!
- county_epidemic_recovered_tiny_modifier: "Küçük Hastalıkların İyileşmesi" #NT!
- county_epidemic_recovered_tiny_modifier_desc: "$county_epidemic_recovered_minor_modifier_desc$" #NT!
- county_epidemic_recovered_minor_modifier: "Hastalıktan Kurtulma" #NT!
- county_epidemic_recovered_minor_modifier_desc: "Bu kontluk yakın zamanda bir salgın hastalığın üstesinden geldi ve yeniden yapılanma çalışmalarına yatırım yapıyor." #NT!
- county_epidemic_recovered_medium_modifier: "Büyük Hastalık Kurtarma" #NT!
- county_epidemic_recovered_medium_modifier_desc: "$county_epidemic_recovered_minor_modifier_desc$" #NT!
- county_epidemic_recovered_strong_modifier: "Olağanüstü Hastalık Kurtarma" #NT!
- county_epidemic_recovered_strong_modifier_desc: "$county_epidemic_recovered_minor_modifier_desc$" #NT!
-
- shattered_by_plague_tt: "Tüm [counties|E] #high'e eşit veya üstünde 30#! [development|E]" #NT!
- ravaged_by_plague_tt: "#high 20#! ile #high 30#! [development|E] arasındaki tüm [counties|E]" #NT!
- blighted_by_plague_tt: "#high 15#! ile #high 20#! [development|E] arasındaki tüm [counties|E]" #NT!
- struck_by_plague_tt: "#high 10#! ile #high 15#! [development|E] arasındaki tüm [counties|E]" #NT!
-
- epidemic_saint_veronica_evil: "Aziz Veronica'nın Kötülüğü" #NT!
- epidemic_penge_plague: "Penge Vebası" #NT!
- epidemic_twin_cods_revenge: "İkiz Morinaların İntikamı" #NT!
- epidemic_bonifacy_gift: "Bonifacy'nin Hediyesi" #NT!
- epidemic_mitcheldean_malaise: "Mitcheldean Rahatsızlığı" #NT!
- epidemic_bydgoszczanka: "Bydgoszczanka" #NT!
- epidemic_torunianka: "Toruńka" #NT!
- epidemic_gannholm_grievance: "Gannholm'un Şikayeti" #NT!
- epidemic_napolna_zaraza: "Napolna Zaraza" #NT!
- epidemic_ligma: "Ligma" #NT!
- epidemic_green_death: "Yeşil Ölüm" #NT!
- epidemic_raqguul_plague: "Raqguul Vebası" #NT!
- epidemic_saturday_night_fever: "Cumartesi gecesi harareti" #NT!
- epidemic_cooties: "Bitler" #NT!
-
-
-
+ epidemic_saint_veronica_evil: "Aziz Veronika'nın Belası"
+ epidemic_penge_plague: "Penge Vebası"
+ epidemic_twin_cods_revenge: "İkiz Mezgitin İntikamı"
+ epidemic_bonifacy_gift: "Bonifacy'nin Hediyesi"
+ epidemic_mitcheldean_malaise: "Mitcheldean Hâlsizliği"
+ epidemic_bydgoszczanka: "Bydgoszczanka"
+ epidemic_torunianka: "Torunianka"
+ epidemic_gannholm_grievance: "Gannholm'un Sıkıntısı"
+ epidemic_napolna_zaraza: "Napolna Zaraza"
+ epidemic_ligma: "Mıyala"
+ epidemic_green_death: "Yeşil Veba"
+ epidemic_raqguul_plague: "Raqguul Vebası"
+ epidemic_saturday_night_fever: "Cumartesi Akşamı Ateşi"
+ epidemic_cooties: "Bitcikler"
