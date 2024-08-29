@@ -1,38 +1,38 @@
 ﻿l_english:
  agot_offer_knighthood_interaction: "Şövalyelik Teklifi"
- agot_offer_knighthood_interaction_desc: "[recipient.GetFirstNameNicknamedNoTooltipRegnal] henüz şövalye değil, ancak şövalye yapılabilir. Herhangi bir şövalye şövalye yapabileceği için, onları şövalye yapma pozisyonundayım."
+ agot_offer_knighthood_interaction_desc: "[recipient.GetFirstNameNicknamedNoTooltipRegnal] henüz şövalye değil, ancak şövalye yapılabilir. Herhangi bir şövalye, yetkisi olduğu için, onları şövalye yapabilirim."
   
  offer_of_knighthood: "Şövalyelik Teklifi"
  OFFER_KNIGHTHOOD_NOTIFICATION: "Her şövalyenin başka bir adamı şövalye yapabileceği söylenir. Henüz bir şövalye olmadığını fark ettim. Bu yanlışı düzeltmekten ve sana şövalyelik vermekten mutluluk duyarım."
   
  agot_offer_squirehood_interaction: "Yaveri Eğit"
- agot_offer_squirehood_interaction_desc: "[court|E]'nize bir [squire|E] ve bir [agot_knight|E] atayın"
+ agot_offer_squirehood_interaction_desc: "[Concept( 'court', 'Sarayınıza' )|E] bir [squire|E] ve bir [agot_knight|E] atayın"
  agot_offer_squirehood_interaction_extra_icon: "$hook_extra_icon$"
  actor_secondary_agot_offer_squirehood_interaction: "[agot_knight|E]"
  recipient_secondary_agot_offer_squirehood_interaction: "[squire|E]"
  agot_offer_squirehood_interaction_notification: "Yaveri Eğit"
   
- agot_offer_squire_interaction: "Yaver Teklifi"
- agot_offer_squire_interaction_desc: "[recipient.GetShortUIName]'a [squire|E] teklif et, [recipient.GetHerHim]'yi veya [recipient.GetHerHis] [court|E]'teki birini seçilen karakterin [agot_knight|E]'i yap."
+ agot_offer_squire_interaction: "Yaverlik Teklifi"
+ agot_offer_squire_interaction_desc: "[recipient.GetShortUIName] adlı karaktere [Concept( 'squire', 'Yaverlik' )|E] teklif edip [recipient.GetHerHis] [Concept( 'court', 'Sarayından' )|E] seçtiğini bir kişiyi [agot_knight|E] yap."
  agot_offer_squire_interaction_extra_icon: "$hook_extra_icon$"
   
- agot_offer_knight_education_interaction: "Şövalye Vesayeti Teklifi"
- agot_offer_knight_education_interaction_desc: "[recipient.GetShortUIName]'a [agot_knight|E] teklif edin, [recipient.GetHerHis] [court|E]'teki birini seçilen yetişkinin [squire|E]'ü yapın"
- agot_oagot_offer_knight_education_interaction_extra_icon: "$hook_extra_icon$"
+ agot_offer_knight_education_interaction: "Şövalye Teklif Edin"
+ agot_offer_knight_education_interaction_desc: "[recipient.GetShortUIName] adlı karaktere [Concept( 'agot_knight', 'Şövalyenizi' )|E] teklif edip, [recipient.GetHerHis] [Concept( 'court', 'Sarayından' )|E] seçtiğin bir kişiyi [squire|E] yap."
+ agot_offer_knight_education_interaction_extra_icon: "$hook_extra_icon$"
   
- actor_secondary_agot_offer_squire_interaction: "Beyefendi"
+ actor_secondary_agot_offer_squire_interaction: "Yaver"
  recipient_secondary_agot_offer_squire_interaction: "Şövalye"
   
  actor_secondary_agot_offer_knight_education_interaction: "Şövalye"
- recipient_secondary_agot_offer_knight_education_interaction: "Beyefendi"
+ recipient_secondary_agot_offer_knight_education_interaction: "Yaver"
   
- EDUCATE_SELECT_YOUR_SQUIRE_OR_KNIGHT: "#I [court|E]#!'ünüzden [squire|E] veya [agot_knight|E]'yi seçin"
- EDUCATE_SELECT_THEIR_KNIGHT: "#I [court|E]#! arasından birini seçin [agot_knight|E]"
- EDUCATE_SELECT_THEIR_SQUIRE: "#I [court|E]#! arasından birini seçin [squire|E]"
- EDUCATE_SELECT_YOUR_KNIGHT: "#I [court|E]#! arasından bir [agot_knight|E] seçin"
- EDUCATE_SELECT_YOUR_SQUIRE: "#I [court|E]#! arasından bir [squire|E] seçin"
+ EDUCATE_SELECT_YOUR_SQUIRE_OR_KNIGHT: "#I [Concept( 'court', 'Sarayınızdan' )|E] [squire|E] veya [agot_knight|E] seçin"
+ EDUCATE_SELECT_THEIR_KNIGHT: "#[Concept( 'court', 'Saray içinden' )|E]#! bir [agot_knight|E] seçin"
+ EDUCATE_SELECT_THEIR_SQUIRE: "#[Concept( 'court', 'Saray içinden' )|E]#! arasından bir [squire|E] seçin"
+ EDUCATE_SELECT_YOUR_KNIGHT: "#[Concept( 'court', 'Saray içinden' )|E]#! arasından bir [agot_knight|E] seçin"
+ EDUCATE_SELECT_YOUR_SQUIRE: "#[Concept( 'court', 'Saray içinden' )|E]#! arasından bir [squire|E] seçin"
   
- SQUIRE_ACTOR_CHILD_PERSONALLY_REQUEST: "[secondary_actor.GetShortUIName]'ı şahsen silahtarınız olarak kabul ederseniz çok mutlu olurum."
+ SQUIRE_ACTOR_CHILD_PERSONALLY_REQUEST: "[secondary_actor.GetShortUIName] adlı kişiyi şahsen silahtarınız olarak kabul ederseniz çok mutlu olurum."
  SQUIRE_ACTOR_PERSONALLY_REQUEST: "Eğer beni şahsen silahtarınız olarak kabul ederseniz, bu benim için bir onur olacaktır."
  SQUIRE_ACTOR_CHILD_REQUEST: "[secondary_actor.GetShortUIName]'ın sizin [recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))] [secondary_recipient.GetShortUINamePossessive] silahtarınız olmasına izin verirseniz çok mutlu olurum."
  SQUIRE_ACTOR_REQUEST: "[recipient.Custom2('RelationToMe', SCOPE.sC('secondary_recipient'))] [secondary_recipient.GetShortUINamePossessive] uşağınıza izin verirseniz çok mutlu olurum."
