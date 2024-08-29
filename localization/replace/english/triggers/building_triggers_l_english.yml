@@ -1,40 +1,51 @@
 ﻿l_english:
-  #AGOT Modified #NT!
- #HAS_BULDING_TRIGGER: "[PROVINCE.GetName]'ın $BUILDING|V$'i [building|E]'si var" #NT!
- HAS_BULDING_TRIGGER: "$BUILDING|V$ [building|E]'i var" #NT!
- HAS_FREE_BUILDING_SLOT_TRIGGER_GLOBAL: "Ücretsiz bir bina yuvası var" #NT!
- HAS_NOT_FREE_BUILDING_SLOT_TRIGGER_GLOBAL: "#bold not#!'de boş bina yuvası var mı?" #NT!
- HAS_FREE_BUILDING_SLOT_TRIGGER_THIRD: "[PROVINCE.GetName]'da ücretsiz bir bina yuvası var" #NT!
- HAS_NOT_FREE_BUILDING_SLOT_TRIGGER_THIRD: "[PROVINCE.GetName] #bold #! boş bina yuvasına sahip değil mi?" #NT!
- HAS_BUILDING_OR_HIGHER_TRIGGER_GLOBAL: "$BUILDING|V$ [building|E] veya yükseltmeleri var" #NT!
- NOT_HAS_BUILDING_OR_HIGHER_TRIGGER_GLOBAL: "#bold değil#!'de $BUILDING|V$ [building|E] veya onun yükseltmeleri var mı" #NT!
- HAS_BUILDING_OR_HIGHER_TRIGGER_THIRD: "[PROVINCE.GetName]'ın $BUILDING|V$ [building|E] veya yükseltmeleri var" #NT!
- NOT_HAS_BUILDING_OR_HIGHER_TRIGGER_THIRD: "[PROVINCE.GetName] #bold #! $BUILDING|V$ [building|E] veya yükseltmeleri var mı?" #NT!
- HAS_ONGOING_CONSTRUCTION_TRIGGER_GLOBAL: "Yapım aşamasında [building|E] var" #NT!
- NOT_HAS_ONGOING_CONSTRUCTION_TRIGGER_GLOBAL: "#bold not#!'in yapım aşamasında [building|E]'si var mı?" #NT!
- HAS_ONGOING_CONSTRUCTION_TRIGGER_THIRD: "[PROVINCE.GetName]'ın [building|E]'i yapım aşamasında" #NT!
- NOT_HAS_ONGOING_CONSTRUCTION_TRIGGER_THIRD: "[PROVINCE.GetName] #bold değil #! yapım aşamasında [building|E]'e sahip" #NT!
- HAS_HOLDING_TYPE_TRIGGER_THIRD: "[PROVINCE.GetName] bir $HOLDING$ [holding|E]'dir" #NT!
- NOT_HAS_HOLDING_TYPE_TRIGGER_THIRD: "[PROVINCE.GetName] #bold'dir #! $HOLDING$ [holding|E] değildir" #NT!
- BUILDING_SLOTS_TRIGGER_GLOBAL: "$NUM|V$ bina yuvası var" #NT!
- NOT_BUILDING_SLOTS_TRIGGER_GLOBAL: "#bold not#!'de $NUM|V$ bina yuvası var mı?" #NT!
- BUILDING_SLOTS_TRIGGER_THIRD: "[PROVINCE.GetName]'da $NUM|V$ bina yuvası var" #NT!
- NOT_BUILDING_SLOTS_TRIGGER_THIRD: "[PROVINCE.GetName] #bold #! $NUM|V$ bina yuvasına sahip değil" #NT!
- FREE_BUILDING_SLOTS_TRIGGER_GLOBAL: "$NUM|V$ ücretsiz bina yuvası var" #NT!
- NOT_FREE_BUILDING_SLOTS_TRIGGER_GLOBAL: "#bold not#!'de $NUM|V$ boş bina yuvası var mı?" #NT!
- FREE_BUILDING_SLOTS_TRIGGER_THIRD: "[PROVINCE.GetName]'da $NUM|V$ ücretsiz bina yuvası var" #NT!
- NOT_FREE_BUILDING_SLOTS_TRIGGER_THIRD: "[PROVINCE.GetName] #bold #!'de $NUM|V$ boş bina yuvası yok" #NT!
- NUM_BUILDINGS_TRIGGER_GLOBAL: "$NUM|V$ bina inşa edildi" #NT!
- NOT_NUM_BUILDINGS_TRIGGER_GLOBAL: "#bold not#!'de $NUM|V$ bina inşa edilmiş mi?" #NT!
- NUM_BUILDINGS_TRIGGER_THIRD: "[PROVINCE.GetName]'da $NUM|V$ bina inşa edildi" #NT!
- NOT_NUM_BUILDINGS_TRIGGER_THIRD: "[PROVINCE.GetName] #bold #! ise $NUM|V$ bina inşa etti" #NT!
- HAS_SPECIAL_BUILDING_SLOT_TRIGGER_GLOBAL: "[special_building|E] yuvası var" #NT!
- NOT_HAS_SPECIAL_BUILDING_SLOT_TRIGGER_GLOBAL: "#bold not#!'in [special_building|E] yuvası var mı?" #NT!
- HAS_SPECIAL_BUILDING_SLOT_TRIGGER_THIRD: "[PROVINCE.GetName]'ın [special_building|E] yuvası var" #NT!
- NOT_HAS_SPECIAL_BUILDING_SLOT_TRIGGER_THIRD: "[PROVINCE.GetName]'ın [special_building|E] yuvası yok" #NT!
- HAS_SPECIAL_BUILDING_TRIGGER_GLOBAL: "[special_building|E]'ı var" #NT!
- NOT_HAS_SPECIAL_BUILDING_TRIGGER_GLOBAL: "#bold değil mi#!'in [special_building|E]'si var mı?" #NT!
- HAS_SPECIAL_BUILDING_TRIGGER_THIRD: "[PROVINCE.GetName]'ın [special_building|E]'i var" #NT!
- NOT_HAS_SPECIAL_BUILDING_TRIGGER_THIRD: "[PROVINCE.GetName]'ın [special_building|E]'i yok" #NT!
- HAS_HOLDING_DESC: "[PROVINCE.GetName], [holding|E] içerir" #NT!
- NOT_HAS_HOLDING_DESC: "[PROVINCE.GetName] #bold #! [holding|E] içermiyor mu?" #NT!
+
+ HAS_BULDING_TRIGGER:0 "[PROVINCE.GetName] has a $BUILDING|V$ [building|E]"
+
+ HAS_FREE_BUILDING_SLOT_TRIGGER_GLOBAL:0 "Boş bir bina bölmesi var"
+ HAS_NOT_FREE_BUILDING_SLOT_TRIGGER_GLOBAL:0 "Boş bir bina bölmesi yok"
+ HAS_FREE_BUILDING_SLOT_TRIGGER_THIRD:0 "[PROVINCE.GetName], boş bir bina bölmesine sahip"
+ HAS_NOT_FREE_BUILDING_SLOT_TRIGGER_THIRD:0 "[PROVINCE.GetName], boş bir bina bölmesine sahip değil"
+
+ HAS_BUILDING_OR_HIGHER_TRIGGER_GLOBAL:0 "$BUILDING|V$ [Concept( 'building', 'Binasına' )|E] veya onun yükseltilmiş hâline sahip"
+ NOT_HAS_BUILDING_OR_HIGHER_TRIGGER_GLOBAL:0 "$BUILDING|V$ [Concept( 'building', 'Binasına' )|E] veya onun yükseltilmiş hâline sahip değil"
+ HAS_BUILDING_OR_HIGHER_TRIGGER_THIRD:0 "[PROVINCE.GetName], $BUILDING|V$ [Concept( 'building', 'Binasına' )|E] veya onun yükseltilmiş hâline sahip"
+ NOT_HAS_BUILDING_OR_HIGHER_TRIGGER_THIRD:0 "[PROVINCE.GetName], $BUILDING|V$ [Concept( 'building', 'Binasına' )|E] veya onun yükseltilmiş hâline sahip değil" #krutygetarts
+
+ HAS_ONGOING_CONSTRUCTION_TRIGGER_GLOBAL:0 "İnşa hâlinde bir [Concept( 'building', 'Binaya' )|E] sahip"
+ NOT_HAS_ONGOING_CONSTRUCTION_TRIGGER_GLOBAL:0 "İnşa hâlinde bir [Concept( 'building', 'Binaya' )|E] sahip değil"
+ HAS_ONGOING_CONSTRUCTION_TRIGGER_THIRD:0 "[PROVINCE.GetName], inşa hâlinde bir [Concept( 'building', 'Binaya' )|E] sahip"
+ NOT_HAS_ONGOING_CONSTRUCTION_TRIGGER_THIRD:0 "[PROVINCE.GetName], inşa hâlinde bir [Concept( 'building', 'Binaya' )|E] sahip değil"
+
+ HAS_HOLDING_TYPE_TRIGGER_THIRD:0 "[PROVINCE.GetName] bir $HOLDING$ [Concept( 'holding', 'Yerleşimidir' )|E]"
+ NOT_HAS_HOLDING_TYPE_TRIGGER_THIRD:0 "[PROVINCE.GetName] bir $HOLDING$ [Concept( 'holding', 'Yerleşimi' )|E] değildir"
+
+ BUILDING_SLOTS_TRIGGER_GLOBAL:0 "$NUM|V$ adet bina bölmesine sahip"
+ NOT_BUILDING_SLOTS_TRIGGER_GLOBAL:0 "$NUM|V$ adet bina bölmesine sahip değil"
+ BUILDING_SLOTS_TRIGGER_THIRD:0 "[PROVINCE.GetName] $NUM|V$ adet bina bölmesine sahip"
+ NOT_BUILDING_SLOTS_TRIGGER_THIRD:0 "[PROVINCE.GetName] $NUM|V$ adet bina bölmesine sahip değil"
+
+ FREE_BUILDING_SLOTS_TRIGGER_GLOBAL:0 "$NUM|V$ adet boş bina bölmesine sahip"
+ NOT_FREE_BUILDING_SLOTS_TRIGGER_GLOBAL:0 "$NUM|V$ adet boş bina bölmesine sahip değil"
+ FREE_BUILDING_SLOTS_TRIGGER_THIRD:0 "[PROVINCE.GetName] $NUM|V$ adet boş bina bölmesine sahip"
+ NOT_FREE_BUILDING_SLOTS_TRIGGER_THIRD:0 "[PROVINCE.GetName] $NUM|V$ adet boş bina bölmesine sahip değil"
+
+ NUM_BUILDINGS_TRIGGER_GLOBAL:0 "$NUM|V$ adet bina inşa edilmiş"
+ NOT_NUM_BUILDINGS_TRIGGER_GLOBAL:0 "$NUM|V$ adet bina inşa edilmemiş"
+ NUM_BUILDINGS_TRIGGER_THIRD:0 "[PROVINCE.GetName] toprağı $NUM|V$ adet inşa edilmiş binaya sahip"
+ NOT_NUM_BUILDINGS_TRIGGER_THIRD:0 "[PROVINCE.GetName] toprağı $NUM|V$ adet inşa edilmiş binaya sahip değil"
+
+ HAS_SPECIAL_BUILDING_SLOT_TRIGGER_GLOBAL:0 "[special_building|E] bölmesine sahip"
+ NOT_HAS_SPECIAL_BUILDING_SLOT_TRIGGER_GLOBAL:0 "[special_building|E] bölmesine sahip değil"
+ HAS_SPECIAL_BUILDING_SLOT_TRIGGER_THIRD:0 "[PROVINCE.GetName], [special_building|E] bölmesine sahip"
+ NOT_HAS_SPECIAL_BUILDING_SLOT_TRIGGER_THIRD:0 "[PROVINCE.GetName], [special_building|E] bölmesine sahip"
+ 
+ HAS_SPECIAL_BUILDING_TRIGGER_GLOBAL:0 "[special_building|E]ya sahip"
+ NOT_HAS_SPECIAL_BUILDING_TRIGGER_GLOBAL:0 "[special_building|E]ya sahip #bold değil#!"
+ HAS_SPECIAL_BUILDING_TRIGGER_THIRD:0 "[PROVINCE.GetName] toprağı [special_building|E]ya sahip"
+ NOT_HAS_SPECIAL_BUILDING_TRIGGER_THIRD:0 "[PROVINCE.GetName] toprağı [special_building|E]ya sahip değil"
+ 
+ HAS_HOLDING_DESC:0 "[PROVINCE.GetName] toprağında [holding|E] var"
+ NOT_HAS_HOLDING_DESC:0 "[PROVINCE.GetName] toprağında [holding|E] #bold yok#!"
+
+ ### STRATEGYTURK'TEN AYRO TARAFINDAN ÇEVRİLMİŞTİR.

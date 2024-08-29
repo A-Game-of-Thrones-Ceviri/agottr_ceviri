@@ -1,254 +1,312 @@
 ﻿l_english:
-  ################################################## #NT!
-  # Catalyst UI Keys #NT!
- PHASE_CATALYST_DESCRIPTION_HEADER: "#S [StrugglePhase.GetNameNoTooltip]#!'ye doğru katalizörler" #NT!
- PHASE_CATALYST_DESCRIPTION_HEADER_INFO: "#I Faz ilerlemesini artırmak için Katalizörleri istediğiniz kadar tamamlayın#!" #NT!
- PHASE_CATALYST_DESCRIPTION_ENTRY: "[CatalystEntry.GetCatalystDescription]" #NT!
- PHASE_CATALYST_COMPLETIONS: "[Select_CString(GreaterThan_int32(Struggle.GetNumCompletionsOfCatalystForPhase(StruggleWindow.GetSelectedPhase, CatalystEntry.GetCatalyst), '(int32)0'), '#COLOR_GREEN ', '#COLOR_GRAY ')]x[Struggle.GetNumCompletionsOfCatalystForPhase(StruggleWindow.GetSelectedPhase, CatalystEntry.GetCatalyst)]#!" #NT!
-  ################################################## #NT!
-  # Catalyst Names #NT!
- catalyst_passing_of_time: "Yıllık Kayma [struggle_catalyst_catalyst|E]" #NT!
- catalyst_passing_of_time_desc: "Yıllık Sürüklenme: bu [struggle_phase|E]'a doğru doğal akış" #NT!
- catalyst_demanding_important_conversion: "İstenen Dönüşüm [struggle_catalyst_catalyst|E]" #NT!
- catalyst_demanding_important_conversion_desc: "[demand_conversion|E]'dan [struggle_involved|E] [ruler|E]" #NT!
- catalyst_enforcing_de_jure_claims: "Uygulandı [de_jure|E] [claims|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_enforcing_de_jure_claims_desc: "[de_jure|E] [claims|E]'i başka bir $game_concept_struggle_involved$ $game_concept_character$'e karşı uygula" #NT!
- catalyst_creating_a_holy_order: "[holy_order|E] [struggle_catalyst_catalyst|E] oluşturuldu" #NT!
- catalyst_creating_a_holy_order_desc: "[holy_order|E] oluştur" #NT!
- catalyst_winning_large_conquest_war: "Saldırgan Kazandı [war|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_winning_large_conquest_war_desc: "Kazan [struggle_large_conquest|E] [war|E] başka bir [struggle_involved|E] [ruler|E]'e karşı" #NT!
- catalyst_bought_important_truce: "Satın alındı ​​[truce|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_bought_important_truce_desc: "Başka bir [struggle_involved|E] [ruler|E]'den [truce|E] satın al" #NT!
- catalyst_gave_independence_to_powerful_diff_faith_culture_vassal: "Bağımsızlık Verildi [struggle_catalyst_catalyst|E]" #NT!
- catalyst_gave_independence_to_powerful_diff_faith_culture_vassal_desc: "Farklı bir [faith|E] veya [culture|E]'nin [powerful_vassal|E]'ına bağımsızlık verin" #NT!
- catalyst_accepted_demand_from_faction_requesting_culture_faith_conversion: "Fraksiyon Talebi Kabul Edildi [struggle_catalyst_catalyst|E]" #NT!
- catalyst_accepted_demand_from_faction_requesting_culture_faith_conversion_desc: "[peasant_faction|E] veya [popular_faction|E]'in taleplerini kabul edin" #NT!
- catalyst_granted_powerful_diff_faith_vassal_religious_protection: "Dahil edilen verildi [contract|E] Değiştir [struggle_catalyst_catalyst|E]" #NT!
- catalyst_granted_powerful_diff_faith_vassal_religious_protection_desc: "[contract|E] aracılığıyla [powerful_vassal|E] [GetVassalContractType( 'religious_rights' ).GetObligationName( 'religious_rights_protected' )|E] teklif edin" #NT!
- catalyst_became_best_friend_soulmate_with_very_important_character: "İkiz Ruhlar [struggle_catalyst_catalyst|E]" #NT!
- catalyst_became_best_friend_soulmate_with_very_important_character_desc: "[struggle_involved|E] [ruler|E] ile [best_friends|E] veya [soulmates|E] olun" #NT!
- catalyst_became_friend_lover_with_character: "İkiz Ruhlar [struggle_catalyst_catalyst|E]" #NT!
- catalyst_became_friend_lover_with_character_desc: "[struggle_involved|E] [ruler|E] ile [friends|E] veya [lovers|E] olun" #NT!
- catalyst_formed_interreligious_alliance_with_important_character: "Dinlerarası Oluşum [alliance|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_formed_interreligious_alliance_with_important_character_desc: "[alliance|E]'ı [struggle_involved|E] [ruler|E] ile farklı bir [faith|E] ile oluşturun" #NT!
- catalyst_hybridise_or_diverge_regional_cultures: "[hybridized|E] veya [diverge|E] [struggle|E] [cultures|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_hybridise_or_diverge_regional_cultures_desc: "[hybridize|E] iki [struggle_involved|E] [cultures|E] veya [diverge|E] bir" #NT!
- catalyst_revoked_powerful_diff_faith_vassal_religious_protection: "İptal edildi dahil [contract|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_revoked_powerful_diff_faith_vassal_religious_protection_desc: "Kaldır [powerful_vassal_possessive|E] [GetVassalContractType( 'religious_rights' ).GetObligationName( 'religious_rights_protected' )|E] [contract|E]" #NT!
- catalyst_broke_truce_against_important_character: "Kırıldı [truce|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_broke_truce_against_important_character_desc: "[truce|E]'ı [struggle_involved|E] [ruler|E] ile kırın" #NT!
- catalyst_discovery_of_very_important_murder: "Açığa çıkan mezhepçi [GetScheme('murder').GetTypeName] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_discovery_of_very_important_murder_desc: "[struggle_involved|E] Kral, [head_of_faith|E] veya [culture_head|E]'nin öldürüldüğünü ortaya çıkarın" #NT!
- catalyst_fabricating_duchy_level_claims: "Üretildi [duchy|E] [claims|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_fabricating_duchy_level_claims_desc: "Mücadele bölgesinde [fabricate_claim|E] [duchy|E]-[title_tier|E] [title|E]" #NT!
- catalyst_forming_alliance_with_major_uninvolved_power: "[allied|E] yabancı güçle [struggle_catalyst_catalyst|E]" #NT!
- catalyst_forming_alliance_with_major_uninvolved_power_desc: "En az [EmptyScope.ScriptValue('catalyst_forming_alliance_with_major_uninvolved_power_power_realm_size_value')|0] [realm_size|E]'e sahip bir [struggle_uninvolved|E] [realm|E] ile bir [alliance|E] oluşturun" #NT!
- catalyst_forming_alliance_between_independent_involved_rulers: "[allied|E] başka biriyle [struggle_involved|E] [independent_ruler|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_forming_alliance_between_independent_involved_rulers_desc: "[struggle_involved|E] olan başka bir [independent_ruler|E] ile bir [alliance|E] oluşturun" #NT!
- catalyst_accepted_independence_faction_demands: "$catalyst_accepted_demand_from_faction_requesting_culture_faith_conversion$ [struggle_catalyst_catalyst|E]" #NT!
- catalyst_accepted_independence_faction_demands_desc: "[peasant_faction|E] veya [popular_faction|E]'in taleplerini kabul edin" #NT!
- catalyst_conducted_border_raid: "Gerçekleştirildi [border_raid|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_conducted_border_raid_desc: "[border_raids|E]'ı başka bir $game_concept_struggle_involved$ $game_concept_character$ tarafından tutulan komşu [county|E]'in üzerine koy" #NT!
- catalyst_learned_new_language_important: "Öğrenildi [language|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_learned_new_language_important_desc: "[struggle_involved|E] [ruler|E]'nin [language|E]'ını öğrenin" #NT!
- catalyst_toledo_council_conciliation: "$fp2_small_council_modifier$ Uzlaşma [struggle_catalyst_catalyst|E]" #NT!
- catalyst_toledo_council_conciliation_desc: "Toledo Konseyi, İberya'da barışı teşvik etme kararı aldı" #NT!
- catalyst_toledo_council_compromise: "$fp2_small_council_modifier$ Uzlaşma [struggle_catalyst_catalyst|E]" #NT!
- catalyst_toledo_council_compromise_desc: "$catalyst_toledo_council_conciliation_desc$" #NT!
- catalyst_toledo_council_hostility: "$fp2_small_council_modifier$ Düşmanlık [struggle_catalyst_catalyst|E]" #NT!
- catalyst_toledo_council_hostility_desc: "Toledo Konseyi İberya'daki gerginliği tırmandırıyor" #NT!
- catalyst_toledo_council_tension: "$fp2_small_council_modifier$ Gerilim [struggle_catalyst_catalyst|E]" #NT!
- catalyst_toledo_council_tension_desc: "$catalyst_toledo_council_hostility_desc$" #NT!
- catalyst_imprison_important: "Bir Dük veya daha üst kademeyi hapse attı [struggle_catalyst_catalyst|E]" #NT!
- catalyst_imprison_important_desc: "[duke|E] veya daha yüksek rütbeli [character|E]'i, [head_of_faith|E] ve [cultural_head|E] dahil olmak üzere hapset" #NT!
-  #AGOT Modified #NT!
- #catalyst_successfully_expelled_interloper: "Kazan [iberian_reclamation|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_successfully_expelled_interloper: "Kazan [btw_reclamation|E] [struggle_catalyst_catalyst|E]" #NT!
-  #AGOT Modified #NT!
- #catalyst_successfully_expelled_interloper_desc: "[struggle_uninvolved|E] $game_concept_character$'ye karşı [iberian_reclamation|E] kazan" #NT!
- catalyst_successfully_expelled_interloper_desc: "[struggle_uninvolved|E] $game_concept_character$'ye karşı [btw_reclamation|E] kazan" #NT!
- catalyst_truce_was_enforced: "[enforced_truce|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_truce_was_enforced_desc: "[enforced_truce|E] [struggle_involved|E] [ruler|E] arasında" #NT!
- catalyst_execute_important: "Bir Dük veya daha üst kademeyi idam etti [struggle_catalyst_catalyst|E]" #NT!
- catalyst_execute_important_desc: "[head_of_faith|E] ve [cultural_head|E] dahil olmak üzere [duke|E] veya daha yüksek rütbeli [character|E]'i yürüt" #NT!
- catalyst_new_building_in_castle: "[castle|E] [struggle_catalyst_catalyst|E]'de inşa edildi" #NT!
- catalyst_new_building_in_castle_desc: "[castle|E] [holding|E]'de bir [building|E] oluşturun" #NT!
- catalyst_new_building_in_city: "[city|E] [struggle_catalyst_catalyst|E]'de yerleşik" #NT!
- catalyst_new_building_in_city_desc: "[city|E] [holding|E]'de [building|E]'ı oluşturun" #NT!
- catalyst_release_important: "[ruler|E] [struggle_catalyst_catalyst|E] yayınlandı" #NT!
- catalyst_release_important_desc: "[prison|E]'den herhangi bir talep olmaksızın [struggle_involved|E] [ruler|E]'i serbest bırakın" #NT!
- catalyst_ransom_important: "Fidye [struggle_catalyst_catalyst|E]" #NT!
- catalyst_ransom_important_desc: "Fidye [struggle_involved|E] [ruler|E]" #NT!
- catalyst_gift_independent_ruler: "Hediye gönderildi [struggle_catalyst_catalyst|E]" #NT!
- catalyst_gift_independent_ruler_desc: "[gift|E] veya [artifact|E]'i [struggle_involved|E] [ruler|E]'e gönder" #NT!
- catalyst_very_important_child_change_culture_or_faith: "" #NT!
- catalyst_very_important_child_change_culture_or_faith_desc: "[children|E]'larınızdan birinin [ruler|E] tarafından tutulan [faith|E] veya [culture|E]'ye dönüşmesini sağlayın" #NT!
- catalyst_vassalize_independent_ruler: "[independent_ruler] [struggle_catalyst_catalyst|E]'i vasallaştırdı" #NT!
- catalyst_vassalize_independent_ruler_desc: "[independent_ruler|E]'ı vasallaştır" #NT!
- catalyst_join_war_as_assisant: "Bir savaşa katıldı [struggle_catalyst_catalyst|E]" #NT!
- catalyst_join_war_as_assisant_desc: "Müttefik olmayan birine hizmetlerinizi satarak savaşa katılın [struggle_involved|E] [ruler|E]" #NT!
- catalyst_win_any_war_within_the_region: "Bir savaş kazandı [struggle_catalyst_catalyst|E]" #NT!
- catalyst_win_any_war_within_the_region_desc: "Başkasına karşı başlattığın savaşı kazan [struggle_involved|E] [ruler|E]" #NT!
- catalyst_becomes_rival_with_involved: "Artan rekabet [struggle_catalyst_catalyst|E]" #NT!
- catalyst_becomes_rival_with_involved_desc: "Başka bir [struggle_involved|E] [ruler|E] ile [rival|E] veya [nemesis|E] ol" #NT!
- catalyst_using_a_hook_on_very_important_character: "Kullanılmış [hook|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_using_a_hook_on_very_important_character_desc: "[struggle_involved|E] [ruler|E] üzerinde [hook|E] kullanın" #NT!
- catalyst_usurp_title_fp2: "[title] [struggle_catalyst_catalyst|E]'i gasp etti" #NT!
- catalyst_usurp_title_fp2_desc: "$e_spain$'nin [de_jure|E]'inin bir parçası olan [title|E]'ı gasp et" #NT!
- catalyst_unnatural_death_important_character: "Öldürüldü [struggle_catalyst_catalyst|E]" #NT!
- catalyst_unnatural_death_important_character_desc: "[struggle_involved|E] [ruler|E]'i öldür" #NT!
- catalyst_forced_conversion: "Dönüştürülen [struggle_catalyst_catalyst|E]" #NT!
- catalyst_forced_conversion_desc: "[struggle_involved|E] [ruler|E] veya [county|E]'yi dönüştür" #NT!
- catalyst_gain_claim_on_title_fp2: "Edinildi [claim|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_gain_claim_on_title_fp2_desc: "$e_spain$'ün [de_jure|E]'sinin altındaki [title|E]'de [claim|E] elde edin" #NT!
- catalyst_reveal_secret_important: "Açığa çıktı [secret|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_reveal_secret_important_desc: "[struggle_involved|E] [ruler|E]'nin [secret|E]'ını ortaya çıkarın" #NT!
- catalyst_sign_truce_outside_war: "İmzalandı [truce|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_sign_truce_outside_war_desc: "[war|E]'in dışında [truce|E]'ı başka bir [struggle_involved|E] [ruler|E] ile imzalayın" #NT!
- catalyst_improve_development_vassal_diff_faith_culture: "Geliştirme arttı [struggle_catalyst_catalyst|E]" #NT!
- catalyst_improve_development_vassal_diff_faith_culture_desc: "Farklı bir [faith|E] veya [culture|E]'ün [county|E]'inin [development|E]'ını artırın" #NT!
- catalyst_independence_from_non_dejure_vassal: "Bağımsızlık Verildi [struggle_catalyst_catalyst|E]" #NT!
- catalyst_independence_from_non_dejure_vassal_desc: "$grant_independence_interaction$'dan [de_jure|E]'e [vassal|E]" #NT!
- catalyst_grant_privilege_to_diff_faith_culture_vassal: "Ayrıcalık verildi [struggle_catalyst_catalyst|E]" #NT!
- catalyst_grant_privilege_to_diff_faith_culture_vassal_desc: "Farklı bir [faith|E] veya [culture|E]'ten gelen [vassal|E]'ye daha iyi [contract|E] veya [title|E] verin" #NT!
- catalyst_invite_diff_faith_culture_to_feast: "[GetActivityType('activity_feast').GetName] [struggle_catalyst_catalyst|E]'e davet edildi" #NT!
- catalyst_invite_diff_faith_culture_to_feast_desc: "Farklı bir [faith|E] veya [culture|E]'ün [struggle_involved|E] [ruler|E]'ini [GetActivityType('activity_feast').GetName]'e davet edin" #NT!
- catalyst_grant_land_local_noble: "Yerel soyluya verildi [struggle_catalyst_catalyst|E]" #NT!
- catalyst_grant_land_local_noble_desc: "[counties|E]'larınızdan birini [struggle_involved|E] [culture|E]'lik bir yerel soyluya verin" #NT!
- catalyst_convert_local_culture_faith: "Yerel inançlara dönüştürüldü [struggle_catalyst_catalyst|E]" #NT!
- catalyst_convert_local_culture_faith_desc: "Yerel [struggle_involved|E] [culture|E] veya [faith|E]'ye dönüştürün" #NT!
- catalyst_raided_involved: "Baskın yapıldı [struggle_involved|E] [ruler|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_raided_involved_desc: "[raid|E]'ı [struggle_involved|E] [ruler|E]'ye karşı tamamla" #NT!
- catalyst_populist_uprise: "Popülist veya köylü ayaklanması yaşandı [struggle_catalyst_catalyst|E]" #NT!
- catalyst_populist_uprise_desc: "[Concept('civil_wars','Populist or Peasant Uprising')|E]'ı [struggle_involved|E] [ruler|E] olarak al" #NT!
- catalyst_revoke_title: "Bir unvanı iptal etti [struggle_catalyst_catalyst|E]" #NT!
- catalyst_revoke_title_desc: "[revoke|E] a [title|E] ([leased|E] [titles|E] dahil)" #NT!
- catalyst_gain_claim_on_title_fp3: "$catalyst_gain_claim_on_title_fp2$" #NT!
- catalyst_gain_claim_on_title_fp3_desc: "$e_persia$'ün [de_jure|E]'sinin altındaki [title|E]'de [claim|E] elde edin" #NT!
- catalyst_usurp_title_fp3: "$catalyst_usurp_title_fp2$" #NT!
- catalyst_usurp_title_fp3_desc: "$e_persia$'nin [de_jure|E]'inin bir parçası olan [title|E]'ı gasp et" #NT!
- catalyst_became_supporter_fp3: "Önemli bir [character|E], [decision|E]'i alarak [GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] oldu" #NT!
- catalyst_became_supporter_fp3_desc: "Önemli [character|E], [decision|E]'i alarak [GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] olur" #NT!
- catalyst_became_detractor_fp3: "Önemli bir [character|E], [decision|E]'i alarak [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] oldu" #NT!
- catalyst_became_detractor_fp3_desc: "Önemli [character|E], [decision|E]'i alarak [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] olur" #NT!
- catalyst_ruler_chooses_persian_faith: "Önemli bir [character|E], [GetDecisionWithKey('adopt_a_new_faith_for_persia_decision').GetName] [decision|E]'yi aldı" #NT!
- catalyst_ruler_chooses_persian_faith_desc: "Önemli [character|E], [GetDecisionWithKey('adopt_a_new_faith_for_persia_decision').GetName] [decision|E]'yi alır" #NT!
- catalyst_new_islamic_temple_construction: "Yeni bir [islam_religion.GetName] [temple_holding|E] inşa edildi" #NT!
- catalyst_new_islamic_temple_construction_desc: "#high İslami#! eyaletinde yeni bir [temple_holding|E] inşa edin" #NT!
- catalyst_install_loyalist_cb: "[fp3_install_loyalist_cb|E] [casus_belli|E] başarıyla kullanıldı" #NT!
- catalyst_install_loyalist_cb_desc: "[fp3_install_loyalist_cb|E] [casus_belli|E] başarıyla kullanıldı" #NT!
- catalyst_cadet_branch_created: "[cadet_branch|E] [struggle_catalyst_catalyst|E] oluşturuldu" #NT!
- catalyst_cadet_branch_created_desc: "[cadet_branching|E] tarafından yeni bir [house|E] oluştur" #NT!
- catalyst_gain_struggle_vassals_from_interlopers_uninvolved: "[struggle_uninvolved|E] [struggle_interloper|E] veya [struggle_uninvolved|E] [struggle_catalyst_catalyst|E]'ten [vassal|E] elde edildi" #NT!
- catalyst_gain_struggle_vassals_from_interlopers_uninvolved_desc: "[struggle_interloper|E] veya [struggle_uninvolved|E] [ruler|E]'ten [struggle_involved|E] [vassal|E] elde edin" #NT!
- catalyst_gain_struggle_titles_from_interlopers_uninvolved: "[struggle_uninvolved|E] [struggle_interloper|E] veya [struggle_uninvolved|E] [struggle_catalyst_catalyst|E]'ten [title|E] elde edildi" #NT!
- catalyst_gain_struggle_titles_from_interlopers_uninvolved_desc: "[struggle_interloper|E] veya [struggle_uninvolved|E] [ruler|E]'ten [struggle_region|E] içerisinde [title|E] elde edin" #NT!
- catalyst_interloper_uninvolved_gain_struggle_vassals: "[vassal|E]'ı [struggle_interloper|E]'e veya [struggle_uninvolved|E] [ruler|E] [struggle_catalyst_catalyst|E]'e kaybetti" #NT!
- catalyst_interloper_uninvolved_gain_struggle_vassals_desc: "[struggle_involved|E] [vassal|E]'i [struggle_interloper|E]'ye veya [struggle_uninvolved|E] [ruler|E]'e kaybedin" #NT!
- catalyst_interloper_uninvolved_gain_struggle_titles: "[title|E]'dan [struggle_involved|E]'e [struggle_catalyst_catalyst|E] kaybetti" #NT!
- catalyst_interloper_uninvolved_gain_struggle_titles_desc: "[struggle_region|E] içindeki [title|E]'ı [struggle_interloper|E] veya [struggle_uninvolved|E] [ruler|E]'e kaybet" #NT!
- catalyst_declare_any_war_within_the_region: "[war|E] [struggle_catalyst_catalyst|E] başlatıldı" #NT!
- catalyst_supporter_win_unfair_war_within_the_region: "$catalyst_win_any_war_within_the_region$" #NT!
- catalyst_supporter_win_unfair_war_within_the_region_desc: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] olarak başka bir [struggle_involved|E] [ruler|E]'ye (daha düşük [title_tier|E]'ten) karşı başlatılan [war|E]'ı kazanın" #NT!
- catalyst_supporter_win_fair_war_within_the_region: "$catalyst_win_any_war_within_the_region$" #NT!
- catalyst_supporter_win_fair_war_within_the_region_desc: "Aynı [title_tier|E] veya daha yüksek bir [ruler|E]'ye ([GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] olarak) karşı başlatılan bir [war|E]'ı kazanın" #NT!
- catalyst_supporter_declare_unfair_war_within_the_region: "$catalyst_declare_any_war_within_the_region$" #NT!
- catalyst_supporter_declare_unfair_war_within_the_region_desc: "Başka bir [struggle_involved|E] [ruler|E]'ye (daha düşük [title_tier|E]'ün) karşı [war|E]'ı [GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] olarak başlatın" #NT!
- catalyst_supporter_declare_fair_war_within_the_region: "$catalyst_declare_any_war_within_the_region$" #NT!
- catalyst_supporter_declare_fair_war_within_the_region_desc: "[war|E]'ı başka bir [struggle_involved|E] [ruler|E]'ye (aynı [title_tier|E] veya daha yüksek) karşı [GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] olarak başlatın" #NT!
- catalyst_detractor_win_unfair_war_within_the_region: "$catalyst_win_any_war_within_the_region$" #NT!
- catalyst_detractor_win_unfair_war_within_the_region_desc: "Başka bir [struggle_involved|E] [ruler|E]'ye (daha düşük [title_tier|E]'ün) karşı başlatılan [war|E]'ı [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] olarak kazan" #NT!
- catalyst_detractor_win_fair_war_within_the_region: "$catalyst_win_any_war_within_the_region$" #NT!
- catalyst_detractor_win_fair_war_within_the_region_desc: "Aynı [title_tier|E] veya daha yüksek bir [ruler|E]'ye ([GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] olarak) karşı başlatılan bir [war|E]'ı kazanın" #NT!
- catalyst_detractor_declare_unfair_war_within_the_region: "$catalyst_declare_any_war_within_the_region$" #NT!
- catalyst_detractor_declare_unfair_war_within_the_region_desc: "Başka bir [struggle_involved|E] [ruler|E]'ye (daha düşük [title_tier|E]'ün) karşı [war|E]'ı [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] olarak başlatın" #NT!
- catalyst_detractor_declare_fair_war_within_the_region: "$catalyst_declare_any_war_within_the_region$" #NT!
- catalyst_detractor_declare_fair_war_within_the_region_desc: "[war|E]'ı başka bir [struggle_involved|E] [ruler|E]'ye (aynı [title_tier|E] veya daha yüksek) karşı [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] olarak başlatın" #NT!
- catalyst_war_ends_in_white_peace_between_supporter_detractor: "[war|E]'ın [white_peace|E] ile bitmesi" #NT!
- catalyst_war_ends_in_white_peace_between_supporter_detractor_desc: "$supporter_and_detractor$ arasındaki bir [war|E], [white_peace|E] ile biter" #NT!
- catalyst_forming_alliance_between_supporter_detractor_rulers: "[alliance|E], $supporter_and_detractor$ [struggle_catalyst_catalyst|E] arasında oluştu" #NT!
- catalyst_forming_alliance_between_supporter_detractor_rulers_desc: "$supporter_and_detractor$ arasında bir [alliance|E] oluşuyor" #NT!
- catalyst_forming_alliance_between_detractor_uninvolved_rulers: "[allied|E] yabancı güçle [struggle_catalyst_catalyst|E]" #NT!
- catalyst_forming_alliance_between_detractor_uninvolved_rulers_desc: "[struggle_uninvolved|E] [realm|E] ile [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] olarak [alliance|E] oluşturun" #NT!
- catalyst_gift_supporter_detractor_ruler: "$catalyst_gift_independent_ruler$" #NT!
- catalyst_gift_supporter_detractor_ruler_desc: "$supporter_and_detractor$ arasında [gift|E] veya [artifact|E] gönderilir" #NT!
- catalyst_supporter_forced_conversion: "$catalyst_forced_conversion$" #NT!
- catalyst_supporter_forced_conversion_desc: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] [ruler|E]'i dönüştür" #NT!
- catalyst_detractor_forced_conversion: "$catalyst_forced_conversion$" #NT!
- catalyst_detractor_forced_conversion_desc: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] [ruler|E]'i dönüştür" #NT!
- catalyst_release_supporter_detractor: "$catalyst_release_important$" #NT!
- catalyst_release_supporter_detractor_desc: "Birisi $supporter_and_detractor$ arasında herhangi bir talepte bulunulmadan [prison|E]'dan serbest bırakılır" #NT!
- catalyst_ransom_supporter_detractor: "$catalyst_ransom_important$" #NT!
- catalyst_ransom_supporter_detractor_desc: "[struggle_involved|E] [ruler|E] arasında $supporter_and_detractor$ fidye öde" #NT!
- catalyst_imprison_detractor: "Hapsedildi [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_imprison_detractor_desc: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )]'ı hapset" #NT!
- catalyst_imprison_supporter: "Hapsedildi [GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_imprison_supporter_desc: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )]'ı hapset" #NT!
- catalyst_becomes_rival_supporter_detractor: "$catalyst_becomes_rival_with_involved$" #NT!
- catalyst_becomes_rival_supporter_detractor_desc: "$supporter_and_detractor_caps$, [rival|E] veya [nemesis|E] olur" #NT!
- catalyst_became_best_friend_soulmate_supporter_detractor: "$catalyst_became_best_friend_soulmate_with_very_important_character$" #NT!
- catalyst_became_best_friend_soulmate_supporter_detractor_desc: "$supporter_and_detractor_caps$, [best_friends|E] veya [soulmates|E] olur" #NT!
- catalyst_became_friend_lover_supporter_detractor: "$catalyst_became_friend_lover_with_character$" #NT!
- catalyst_became_friend_lover_supporter_detractor_desc: "$supporter_and_detractor_caps$, [friends|E] veya [lovers|E] olur" #NT!
- catalyst_unnatural_death_supporter: "$catalyst_unnatural_death_important_character$" #NT!
- catalyst_unnatural_death_supporter_desc: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] [ruler|E] öldürüldü" #NT!
- catalyst_unnatural_death_detractor: "$catalyst_unnatural_death_important_character$" #NT!
- catalyst_unnatural_death_detractor_desc: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] [ruler|E] öldürüldü" #NT!
- catalyst_reveal_secret_supporter: "$catalyst_reveal_secret_important$" #NT!
- catalyst_reveal_secret_supporter_desc: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] [ruler|E]'nin [secret|E]'ını ortaya çıkarın" #NT!
- catalyst_reveal_secret_detractor: "$catalyst_reveal_secret_important$" #NT!
- catalyst_reveal_secret_detractor_desc: "Bir [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] [ruler|E]'nin [secret|E]'ını ortaya çıkarın" #NT!
- catalyst_yearly_influential_house_is_harmonious: "$harmonious$ [house|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_yearly_influential_house_is_harmonious_desc: "veya daha fazla [struggle_involved|E] [house_heads|E] ile $harmonious$ [house_unity|E]" #NT!
- catalyst_yearly_influential_house_is_harmonious_major: "$catalyst_yearly_influential_house_is_harmonious$" #NT!
- catalyst_yearly_influential_house_is_harmonious_major_desc: "Yıllık Kayma: [EmptyScope.ScriptValue('catalyst_yearly_influential_house_is_harmonious_major_control_value')|0] $catalyst_yearly_influential_house_is_harmonious_desc$" #NT!
- catalyst_yearly_influential_house_is_harmonious_medium: "$catalyst_yearly_influential_house_is_harmonious$" #NT!
- catalyst_yearly_influential_house_is_harmonious_medium_desc: "Yıllık Kayma: [EmptyScope.ScriptValue('catalyst_yearly_influential_house_is_harmonious_medium_control_value')|0] $catalyst_yearly_influential_house_is_harmonious_desc$" #NT!
- catalyst_yearly_influential_house_is_harmonious_minor: "$catalyst_yearly_influential_house_is_harmonious$" #NT!
- catalyst_yearly_influential_house_is_harmonious_minor_desc: "Yıllık Kayma: [EmptyScope.ScriptValue('catalyst_yearly_influential_house_is_harmonious_minor_control_value')|0] $catalyst_yearly_influential_house_is_harmonious_desc$" #NT!
- catalyst_yearly_influential_house_is_harmonious_minimal: "$catalyst_yearly_influential_house_is_harmonious$" #NT!
- catalyst_yearly_influential_house_is_harmonious_minimal_desc: "Yıllık Kayma: [EmptyScope.ScriptValue('catalyst_yearly_influential_house_is_harmonious_minimal_control_value')|0] $catalyst_yearly_influential_house_is_harmonious_desc$" #NT!
- catalyst_yearly_influential_house_is_antagonistic: "$antagonistic$ [house|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_yearly_influential_house_is_antagonistic_desc: "veya daha fazla [struggle_involved|E] [house_heads|E] ile $antagonistic$ [house_unity|E]" #NT!
- catalyst_yearly_influential_house_is_antagonistic_major: "$catalyst_yearly_influential_house_is_antagonistic$" #NT!
- catalyst_yearly_influential_house_is_antagonistic_major_desc: "Yıllık Drift: [EmptyScope.ScriptValue('catalyst_yearly_influential_house_is_antagonistic_major_control_value')|0] $catalyst_yearly_influential_house_is_antagonistic_desc$" #NT!
- catalyst_yearly_influential_house_is_antagonistic_medium: "$catalyst_yearly_influential_house_is_antagonistic$" #NT!
- catalyst_yearly_influential_house_is_antagonistic_medium_desc: "Yıllık Kayma: [EmptyScope.ScriptValue('catalyst_yearly_influential_house_is_antagonistic_medium_control_value')|0] $catalyst_yearly_influential_house_is_antagonistic_desc$" #NT!
- catalyst_yearly_influential_house_is_antagonistic_minor: "$catalyst_yearly_influential_house_is_antagonistic$" #NT!
- catalyst_yearly_influential_house_is_antagonistic_minor_desc: "Yıllık Kayma: [EmptyScope.ScriptValue('catalyst_yearly_influential_house_is_antagonistic_minor_control_value')|0] $catalyst_yearly_influential_house_is_antagonistic_desc$" #NT!
- catalyst_yearly_influential_house_is_antagonistic_minimal: "$catalyst_yearly_influential_house_is_antagonistic$" #NT!
- catalyst_yearly_influential_house_is_antagonistic_minimal_desc: "Yıllık Kayma: [EmptyScope.ScriptValue('catalyst_yearly_influential_house_is_antagonistic_minimal_control_value')|0] $catalyst_yearly_influential_house_is_antagonistic_desc$" #NT!
- catalyst_invite_involved_as_honorary_guests_to_feast_hunt: "Onur konuğu [struggle_catalyst_catalyst|E]" #NT!
- catalyst_invite_involved_as_honorary_guests_to_feast_hunt_desc: "Bir [struggle_involved|E] [ruler|E]'i bir şölene veya ava davet et [activity|E] [honorary_guest|E] olarak" #NT!
- catalyst_abandon_hook_on_supporter_detractor: "[hook|E] terk edildi [struggle_catalyst_catalyst|E]" #NT!
- catalyst_abandon_hook_on_supporter_detractor_desc: "$supporter_and_detractor$ arasında [hook|E] terk edilir" #NT!
- catalyst_grants_pardon_supporter_detractor: "Af kabul edildi [struggle_catalyst_catalyst|E]" #NT!
- catalyst_grants_pardon_supporter_detractor_desc: "[crime|E], $supporter_and_detractor$ arasında affedilir" #NT!
- catalyst_grants_vassal_to_de_jure_liege_supporter_detractor: "[de_jure|E]'a transfer edildi [struggle_catalyst_catalyst|E]'e" #NT!
- catalyst_grants_vassal_to_de_jure_liege_supporter_detractor_desc: "[vassal|E], $supporter_and_detractor$ arasındaki [de_jure|E] hükümdarına transfer edilir" #NT!
- catalyst_turn_supporter_into_detractor: "Taraf değiştirdi [struggle_catalyst_catalyst|E]" #NT!
- catalyst_turn_supporter_into_detractor_desc: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )], [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] olur" #NT!
- catalyst_turn_detractor_into_supporter: "Taraf değiştirdi [struggle_catalyst_catalyst|E]" #NT!
- catalyst_turn_detractor_into_supporter_desc: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )], [GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] olur" #NT!
- catalyst_new_building_in_holdings: "[holding|E] [struggle_catalyst_catalyst|E]'de yerleşik" #NT!
- catalyst_new_building_in_holdings_desc: "Herhangi bir [holding|E]'de [building|E]'ı oluşturun" #NT!
- catalyst_execute_supporter: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] [struggle_catalyst_catalyst|E] yürütüldü" #NT!
- catalyst_execute_supporter_desc: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )]'ı çalıştır" #NT!
- catalyst_execute_detractor: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] [struggle_catalyst_catalyst|E] yürütüldü" #NT!
- catalyst_execute_detractor_desc: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] işlemini gerçekleştir" #NT!
- catalyst_missing_caliphate_or_arabian_empire: "Yıllık Drift: [GetTitleByKey('d_sunni').GetBaseName] veya [GetTitleByKey('e_arabia').GetBaseName] yok edildi" #NT!
- catalyst_missing_caliphate_or_arabian_empire_desc: "Yıllık Kayma: [GetTitleByKey('d_sunni').GetBaseName] veya [GetTitleByKey('e_arabia').GetBaseName] yok edilir" #NT!
- catalyst_caliph_or_emperor_loses_revolt_war: "[GetTitleByKey('d_sunni').GetBaseName]'in [holder|E]'ı veya [GetTitleByKey('e_arabia').GetBaseName]'si [civil_war|E]'ü kaybetti" #NT!
- catalyst_caliph_or_emperor_loses_revolt_war_desc: "[GetTitleByKey('d_sunni').GetBaseName]'in veya [GetTitleByKey('e_arabia').GetBaseName]'nin [holder|E]'ı [civil_war|E] kaybeder" #NT!
- catalyst_caliph_or_emperor_accepts_faction_demands: "[GetTitleByKey('d_sunni').GetBaseName]'in [holder|E]'ı veya [GetTitleByKey('e_arabia').GetBaseName]'nin [faction|E]'ün taleplerini kabul etmesi" #NT!
- catalyst_caliph_or_emperor_accepts_faction_demands_desc: "[GetTitleByKey('d_sunni').GetBaseName] veya [GetTitleByKey('e_arabia').GetBaseName]'nin [holder|E]'ı, [faction|E]'ün taleplerini kabul eder" #NT!
- catalyst_caliph_died_violently: "Sünni [GetFaithByKey('ashari').ReligiousHeadName|U] vahşice öldürüldü" #NT!
- catalyst_caliph_died_violently_desc: "Sünni [GetFaithByKey('ashari').ReligiousHeadName|U] vahşice ölür\n#WEAK ([EmptyScope.ScriptValue('catalyst_cooldown_between_significant_character_deaths_years_value')] yıllık bekleme süresi)#!" #NT!
- catalyst_caliph_died_naturally: "Sünni [GetFaithByKey('ashari').ReligiousHeadName|U] doğal olarak öldü" #NT!
- catalyst_caliph_died_naturally_desc: "Sünni [GetFaithByKey('ashari').ReligiousHeadName|U] doğal olarak ölür\n#WEAK ([EmptyScope.ScriptValue('catalyst_cooldown_between_significant_character_deaths_years_value')] yıllık bekleme süresi)#!" #NT!
- supporter_and_detractor: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] ve [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )]" #NT!
- supporter_and_detractor_caps: "A [GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] ve [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )]" #NT!
- catalyst_revealed_secret_faith_non_islam: "Açıklandı non-[GetReligionByKey('islam_religion').GetAdjective] Gizli [faith|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_revealed_secret_faith_non_islam_desc: "[GetReligionByKey('islam_religion').GetAdjective] Gizli olmayanı ortaya çıkar [faith|E]" #NT!
- catalyst_revealed_secret_faith_islam: "Açığa Çıktı [GetReligionByKey('islam_religion').GetAdjective] Gizli [faith|E] [struggle_catalyst_catalyst|E]" #NT!
- catalyst_revealed_secret_faith_islam_desc: "Açıkla [GetReligionByKey('islam_religion').GetAdjective] Gizli [faith|E]" #NT!
+ ##################################################
+ # Catalyst UI Keys
+ PHASE_CATALYST_DESCRIPTION_HEADER:2 "#S [StrugglePhase.GetNameNoTooltip] Aşaması Tetikleyicileri#!"
+ PHASE_CATALYST_DESCRIPTION_HEADER_INFO:1 "#I Tetikleyicileri istediğiniz kadar tamamlayarak aşama ilerlemesini arttırabilirsiniz#!"
+ PHASE_CATALYST_DESCRIPTION_ENTRY:3 "[CatalystEntry.GetCatalystDescription]"
+ PHASE_CATALYST_COMPLETIONS:0 "[Select_CString(GreaterThan_int32(Struggle.GetNumCompletionsOfCatalystForPhase(StruggleWindow.GetSelectedPhase, CatalystEntry.GetCatalyst), '(int32)0'), '#COLOR_GREEN ', '#COLOR_GRAY ')]x[Struggle.GetNumCompletionsOfCatalystForPhase(StruggleWindow.GetSelectedPhase, CatalystEntry.GetCatalyst)]#!"
+
+ ##################################################
+ # Catalyst Names
+ catalyst_passing_of_time:1 "Yıllık Kayma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_passing_of_time_desc:2 "Yıllık Kayma: bu [Concept( 'struggle_phase', 'Aşamaya' )|E] doğru doğal ilerleme"
+ catalyst_demanding_important_conversion:0 "Din Değişimi Talebi [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_demanding_important_conversion_desc:4 "[struggle_involved|E] bir [Concept( 'ruler', 'Hükümdardan' )|E] [Concept( 'demand_conversion', 'Din Değişimi Talep Etmek' )|E]"
+ catalyst_enforcing_de_jure_claims:0 "[de_jure|E] [claim|E] Talebi [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_enforcing_de_jure_claims_desc:2 "[struggle_involved|E] bir [Concept( 'game_concept_character', 'Karakterden' )|E] [de_jure|E] [Concept( 'claim', 'had iddiası' )|E] talep etmek"
+ catalyst_creating_a_holy_order:0 "[holy_order|E] Kurma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_creating_a_holy_order_desc:2 "[holy_order|E] kurmak"
+ catalyst_winning_large_conquest_war:0 "Saldırı [Concept( 'war', 'Savaşı' )|E] Kazanma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_winning_large_conquest_war_desc:3 "[struggle_involved|E] bir [Concept( 'ruler', 'Hükümdara' )|E] karşı [struggle_large_conquest|E] [Concept( 'war', 'Savaşı' )|E] kazanmak"
+ catalyst_bought_important_truce:0 "[truce|E] Satın Alma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_bought_important_truce_desc:3 "[struggle_involved|E] bir [Concept( 'ruler', 'Hükümdardan' )|E] [truce|E] satın almak"
+ catalyst_gave_independence_to_powerful_diff_faith_culture_vassal:0 "Bağımsızlık Verme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_gave_independence_to_powerful_diff_faith_culture_vassal_desc:2 "Başka bir [Concept( 'faith', 'Mezhepten' )|E] veya [Concept( 'culture', 'Kültürden' )|E] olan bir [Concept( 'powerful_vassal', 'Önemli Vasala' )|E] bağımsızlık vermek"
+ catalyst_accepted_demand_from_faction_requesting_culture_faith_conversion:0 "Örgütleşme Talebi Kabulü [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_accepted_demand_from_faction_requesting_culture_faith_conversion_desc:2 "Bir [Concept( 'peasant_faction', 'Köylü' )|E] veya [Concept( 'popular_faction', 'Halkçı Örgütleşmesinin' )|E] taleplerini kabul etmek"
+ catalyst_granted_powerful_diff_faith_vassal_religious_protection:0 "Hoşgörülü [contract|E] Değişimi [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_granted_powerful_diff_faith_vassal_religious_protection_desc:2 "[Concept( 'powerful_vassal', 'Önemli vasalı' )|E] [contract|E] yoluyla [GetVassalContractType( 'religious_rights' ).GetObligationName( 'religious_rights_protected' )|E] yapmak"
+ catalyst_became_best_friend_soulmate_with_very_important_character:0 "İkiz Ruh [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_became_best_friend_soulmate_with_very_important_character_desc:6 "[struggle_involved|E] bir [Concept( 'ruler', 'Hükümdar' )|E] ile [best_friend|E] veya [soulmate|E] olmak"
+ catalyst_became_friend_lover_with_character:0 "İkiz Ruh [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_became_friend_lover_with_character_desc:0 "[struggle_involved|E] bir [Concept( 'ruler', 'Hükümdar' )|E] ile [friend|E] veya [lover|E] olmak"
+ catalyst_formed_interreligious_alliance_with_important_character:0 "Farklı Mezhep [Concept( 'alliance', 'İttifakı' )|E] [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_formed_interreligious_alliance_with_important_character_desc:5 "Başka bir [Concept( 'faith', 'Mezhepten' )|E] [struggle_involved|E] bir [Concept( 'ruler', 'Hükümdar' )|E] ile [alliance|E] kurmak"
+ catalyst_hybridise_or_diverge_regional_cultures:0 "[struggle|E] [Concept( 'cultures', 'Kültürlerini' )|E] [Concept( 'hybridized', 'Melezleştirme' )|E] veya [Concept( 'diverge', 'Ayrıştırma' )|E] [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_hybridise_or_diverge_regional_cultures_desc:1 "İki [struggle_involved|E] [Concept( 'cultures', 'kültürü' )|E] [Concept( 'hybridized', 'Melezleştirmek' )|E] veya birinden [Concept( 'diverge', 'Ayrıştırmak' )|E]"
+ catalyst_revoked_powerful_diff_faith_vassal_religious_protection:0 "Hoşgörülü [Concept( 'contract', 'Sözleşmeyi' )|E] Kaldırma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_revoked_powerful_diff_faith_vassal_religious_protection_desc:2 "[Concept( 'powerful_vassal', 'Önemli vasalı' )|E] [GetVassalContractType( 'religious_rights' ).GetObligationName( 'religious_rights_protected' )|E] yapan [Concept( 'contract', 'Sözleşmeyi' )|E] kaldırmak"
+ catalyst_broke_truce_against_important_character:0 "[truce|E] Bozma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_broke_truce_against_important_character_desc:4 "[struggle_involved|E] bir [Concept( 'ruler', 'Hükümdar' )|E] ile [truce|E] bozmak"
+ catalyst_discovery_of_very_important_murder:1 "Önemli [GetScheme('murder').GetTypeName] [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_discovery_of_very_important_murder_desc:4 "[struggle_involved|E] bir kralın, [Concept( 'head_of_faith', 'mezhep liderinin' )|E] veya [Concept( 'culture_head', 'kültür önderinin' )|E] öldürüldüğünü açığa çıkarmak"
+ catalyst_fabricating_duchy_level_claims:0 "[duchy|E] [claim|E] Üretme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_fabricating_duchy_level_claims_desc:3 "Mücadele bölgesi içerisinde [duchy|E] [Concept( 'title_tier', 'Seviyesinden' )|E] bir [title|E] üzerinde [Concept( 'fabricate_claim', 'hak iddiası üretmek' )|E]"
+
+ catalyst_forming_alliance_with_major_uninvolved_power:0 "Yabancı Ülke ile [allied|E] [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_forming_alliance_with_major_uninvolved_power_desc:2 "[realm_size|E] en az [EmptyScope.ScriptValue('catalyst_forming_alliance_with_major_uninvolved_power_power_realm_size_value')|0] olan [struggle_uninvolved|E] bir [realm|E] ile [alliance|E] kurmak"
+ catalyst_forming_alliance_between_independent_involved_rulers: "[struggle_involved|E] bir başka [independent_ruler|E] ile [allied|E] Olma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_forming_alliance_between_independent_involved_rulers_desc: "[struggle_involved|E] bir başka [independent_ruler|E] ile [alliance|E] kurmak"
+
+ catalyst_accepted_independence_faction_demands:0 "$catalyst_accepted_demand_from_faction_requesting_culture_faith_conversion$" #ikilitetikleyicisilindi
+ catalyst_accepted_independence_faction_demands_desc:2 "Bir [Concept( 'peasant_faction', 'Köylü' )|E] veya [Concept( 'popular_faction', 'Halkçı Örgütleşmesinin' )|E] taleplerini kabul etmek"
+ catalyst_conducted_border_raid:0 "[border_raid|E] [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_conducted_border_raid_desc:1 "[struggle_involved|E] bir karakterin sahip olduğu komşu [Concept( 'county', 'kontlukta' )|E] [border_raids|E] yapmak"
+
+ catalyst_learned_new_language_important:0 "[language|E] Öğrenme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_learned_new_language_important_desc:2 "[struggle_involved|E] bir [Concept( 'ruler', 'Hükümdarın' )|E] [Concept( 'language', 'dilini' )|E] öğrenmek"
+ catalyst_toledo_council_conciliation:0 "$fp2_small_council_modifier$ Uzlaşması [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_toledo_council_conciliation_desc:0 "Toledo Konseyi İberya'da barışı teşvik etmeye karar verir"
+ catalyst_toledo_council_compromise:0 "$fp2_small_council_modifier$ Tavizi [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_toledo_council_compromise_desc:0 "$catalyst_toledo_council_conciliation_desc$"
+ catalyst_toledo_council_hostility:0 "$fp2_small_council_modifier$ Düşmanlığı [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_toledo_council_hostility_desc:0 "Toledo Konseyi İberya'daki gerginlikleri körüklüyor"
+ catalyst_toledo_council_tension:0 "$fp2_small_council_modifier$ Gerginliği [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_toledo_council_tension_desc:0 "$catalyst_toledo_council_hostility_desc$"
+
+ catalyst_imprison_important:0 "Dük veya daha yüksek kademeden tutsak [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_imprison_important_desc:1 "[head_of_faith|E] ve [cultural_head|E] de dâhil olmak üzere bir [Concept( 'duke', 'Dükü' )|E] veya daha yüksek kademeden bir [Concept( 'character', 'karakteri' )|E] hapse atmak"
+
+ catalyst_successfully_expelled_interloper:0 "[[btw_reclamation|E] Zaferi [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_successfully_expelled_interloper_desc:0 "[struggle_uninvolved|E] bir karaktere karşı [btw_reclamation|E] savaşı kazanmak"
+ catalyst_truce_was_enforced:0 "[Concept( 'enforced_truce', 'Zorla Ateşkes' )|E] [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_truce_was_enforced_desc:0 "[struggle_involved|E] [Concept( 'ruler', 'Hükümdarlar' )|E] arasında [Concept( 'enforced_truce', 'Zorla Ateşkes' )|E] yaptırmak"
+ catalyst_execute_important:0 "Dük veya daha yüksek kademeden İdam [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_execute_important_desc:1 "[head_of_faith|E] ve [cultural_head|E] de dâhil olmak üzere bir [Concept( 'duke', 'Dükü' )|E] veya daha yüksek kademeden bir [Concept( 'character', 'karakteri' )|E] idam etmek"
+ catalyst_new_building_in_castle:1 "[Concept( 'castle', 'Kalede' )|E] İnşaat [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_new_building_in_castle_desc:1 "Bir [castle|E] [Concept( 'holding', 'Yerleşiminde' )|E] bir [building|E] inşa etmek"
+ catalyst_new_building_in_city:1 "[Concept( 'city', 'Şehirde' )|E] İnşaat [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_new_building_in_city_desc:1 "Bir [city|E] [Concept( 'holding', 'Yerleşiminde' )|E] bir [building|E] inşa etmek"
+ catalyst_release_important:1 "[Concept( 'ruler', 'Hükümdarı' )|E] Serbest Bırakma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_release_important_desc:1 "[struggle_involved|E] bir [Concept( 'ruler', 'Hükümdarı' )|E] herhangi bir talep olmadan [Concept( 'prison', 'Hapisten' )|E] serbest bırakmak"
+ catalyst_ransom_important:0 "Fidye [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_ransom_important_desc:0 "[struggle_involved|E] bir [Concept( 'ruler', 'Hükümdarı' )|E] fidye karşılığında serbest bırakmak"
+ catalyst_gift_independent_ruler:0 "Hediye Gönderme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_gift_independent_ruler_desc:3 "[struggle_involved|E] bir [Concept( 'ruler', 'hükümdara' )|E] [gift|E] veya [artifact|E] göndermek"
+ catalyst_very_important_child_change_culture_or_faith:0 ""
+ catalyst_very_important_child_change_culture_or_faith_desc:1 "[Concept( 'children', 'Çocuklarınızdan' )|E] birini, bir [Concept( 'ruler', 'Hükümdarın' )|E] [Concept( 'faith', 'mezhebine' )|E] veya [Concept( 'culture', 'kültürüne' )|E] geçirmek"
+ catalyst_vassalize_independent_ruler:0 "[independent_ruler] Vasallaştırma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_vassalize_independent_ruler_desc:0 "[Concept( 'independent_ruler', 'Bağımsız' )|E] bir hükümdarı vasal hâline getirmek"
+ catalyst_join_war_as_assisant:0 "Savaşa Katılma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_join_war_as_assisant_desc:1 "Müttefik olmayan [struggle_involved|E] bir [Concept( 'ruler', 'Hükümdarın' )|E] savaşına para karşılığında katılmak"
+
+ catalyst_win_any_war_within_the_region:0 "Savaş Kazanma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_win_any_war_within_the_region_desc:1 "[struggle_involved|E] bir [Concept( 'ruler', 'Hükümdara' )|E] karşı başlatılan savaşı kazanmak"
+ catalyst_becomes_rival_with_involved:0 "Kızgın Rekabet [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_becomes_rival_with_involved_desc:1 "[struggle_involved|E] bir [ruler|E] ile [rival|E] veya [nemesis|E] olmak"
+ catalyst_using_a_hook_on_very_important_character:0 "[hook|E] Kullanma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_using_a_hook_on_very_important_character_desc:4 "[struggle_involved|E] bir [Concept( 'ruler', 'Hükümdara' )|E] karşı [hook|E] kullanmak"
+ catalyst_usurp_title_fp2:0 "[title] Gasp Etme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_usurp_title_fp2_desc:1 "Hispanya'nın [de_jure|E] parçası olan bir [Concept( 'title', 'Unvanı' )|E] gasp etmek"
+ catalyst_unnatural_death_important_character:0 "Cinayet [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_unnatural_death_important_character_desc:2 "[struggle_involved|E] bir [Concept( 'ruler', 'Hükümdarı' )|E] öldürmek"
+ catalyst_forced_conversion:0 "Din Değiştirme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_forced_conversion_desc:1 "[struggle_involved|E] bir [Concept( 'ruler', 'Hükümdarın' )|E] veya [Concept( 'county', 'Kontluğun' )|E] dinini değiştirmek"
+ catalyst_gain_claim_on_title_fp2:1 "[claim|E] Elde Etme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_gain_claim_on_title_desc_fp2:1 "Hispanya'nın [de_jure|E] parçası olan bir [title|E] üzerinde [claim|E] elde etmek"
+ catalyst_reveal_secret_important:1 "[secret|E] Ortaya Çıkarma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_reveal_secret_important_desc:1 "[struggle_involved|E] bir [Concept( 'ruler', 'Hükümdarın' )|E] [Concept( 'secret', 'Sırrını' )|E] ortaya çıkarmak"
+ catalyst_sign_truce_outside_war:1 "[truce|E] İmzalama [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_sign_truce_outside_war_desc:1 "[struggle_involved|E] bir [ruler|E] [war|E] dışında [truce|E] imzalamak"
+ catalyst_improve_development_vassal_diff_faith_culture:0 "Gelişmişlik Artışı [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_improve_development_vassal_diff_faith_culture_desc:2 "Başka bir [faith|E] veya [Concept( 'culture', 'Kültürden' )|E] olan bir [Concept( 'county', 'Kontluğun' )|E] [Concept( 'development', 'Gelişmişliğini' )|E] arttırmak"
+ catalyst_independence_from_non_dejure_vassal:1 "Bağımsızlık Verme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_independence_from_non_dejure_vassal_desc:2 "[de_jure|E] olmayan bir [Concept( 'vassal', 'Vasala' )|E] bağımsızlık vermek"
+ catalyst_grant_privilege_to_diff_faith_culture_vassal:0 "Ayrıcalık Verme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_grant_privilege_to_diff_faith_culture_vassal_desc:1 "Başka bir [faith|E] veya [Concept( 'culture', 'Kültürden' )|E] olan bir [Concept( 'vassal', 'Vasala' )|E] daha iyi bir [contract|E] veya [title|E] vermek"
+ catalyst_invite_diff_faith_culture_to_feast:1 "[GetActivityType('activity_feast').GetName] Daveti [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_invite_diff_faith_culture_to_feast_desc:1 "Başka bir [faith|E] veya [Concept( 'culture', 'Kültürden' )|E] olan, [struggle_involved|E] bir [Concept( 'ruler', 'hükümdara' )|E] [GetActivityType('activity_feast').GetName] daveti göndermek"
+ catalyst_grant_land_local_noble:0 "Yerel Soyluya Kontluk Verme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_grant_land_local_noble_desc:0 "[Concept( 'counties', 'Kontluklarınızdan' )|E] birini [struggle_involved|E] [Concept( 'culture', 'Kültürden' )|E] olan bir soyluya vermek"
+ catalyst_convert_local_culture_faith:0 "Yerel İnanç ve Geleneklere Geçiş [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_convert_local_culture_faith_desc:0 "[struggle_involved|E] yerel [Concept( 'culture', 'Kültüre' )|E] veya [Concept( 'faith', 'Mezhebe' )|E] geçmek"
+
+ catalyst_raided_involved: "[struggle_involved|E] [ruler|E] Yağmalanma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_raided_involved_desc: "[struggle_involved|E] bir [Concept( 'ruler', 'Hükümdarı' )|E] [Concept( 'raid', 'Yağmalamak' )|E]"
+ catalyst_populist_uprise: "Halkçı veya Köylü Ayaklanma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_populist_uprise_desc: "[struggle_involved|E] bir [ruler|E] olarak [Concept('civil_wars','Halkçı veya Köylü Ayaklanması')|E] yaşamak"
+ catalyst_revoke_title: "Unvan Feshetme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_revoke_title_desc: "[title|E] [Concept('revoke','Feshetmek')|E] ([leased|E] [titles|E] dâhil)"
+ catalyst_gain_claim_on_title_fp3: "$catalyst_gain_claim_on_title_fp2$"
+ catalyst_gain_claim_on_title_fp3_desc: "$e_persia$ içinde [de_jure|E] [Concept( 'title', 'Unvan' )|E] üzerinde [claim|E] elde etmek"
+ catalyst_usurp_title_fp3: "$catalyst_usurp_title_fp2$"
+ catalyst_usurp_title_fp3_desc: "$e_persia$ içinde [de_jure|E] [title|E] gaspetmek"
+
+ catalyst_became_supporter_fp3: "Önemli Bir [character|E] [GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] Olmaya [decision|E] Verdi"
+ catalyst_became_supporter_fp3_desc: "Önemli [character|E] [GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] olmaya [decision|E] verdi"
+ catalyst_became_detractor_fp3: "Önemli Bir [character|E] [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] Olmaya [decision|E] Verdi"
+ catalyst_became_detractor_fp3_desc: "Önemli [character|E] [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] olmaya [decision|E] verdi"
+
+ catalyst_ruler_chooses_persian_faith: "Önemli Bir [character|E] [GetDecisionWithKey('adopt_a_new_faith_for_persia_decision').GetName]maya [decision|E] Verdi"
+ catalyst_ruler_chooses_persian_faith_desc: "Önemli [character|E] [GetDecisionWithKey('adopt_a_new_faith_for_persia_decision').GetName]maya [decision|E] verdi"
+
+ catalyst_new_islamic_temple_construction: "[islam_religion.GetName]î [temple_holding|E] İnşası"
+ catalyst_new_islamic_temple_construction_desc: "#high İslamî#! bir bölgede yeni [temple_holding|E] inşa etmek"
+ catalyst_install_loyalist_cb: "Başarılı [Concept( 'fp3_install_loyalist_cb', 'Destekçi Yerleştirme' )|E] [Concept( 'casus_belli', 'Savaşı' )|E]"
+ catalyst_install_loyalist_cb_desc: "[Concept( 'fp3_install_loyalist_cb', 'Destekçi Yerleştirme' )|E] [Concept( 'casus_belli', 'Savaş Sebebini' )|E] başarılı bir şekilde kullanmak"
+
+ catalyst_cadet_branch_created: "[cadet_branch|E] Kurma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_cadet_branch_created_desc: "[Concept( 'cadet_branching', 'Alt Hane Kurarak' )|E] yeni bir [house|E] oluşturmak"
+
+ catalyst_gain_struggle_vassals_from_interlopers_uninvolved: "[struggle_uninvolved|E] veya [struggle_interloper|E] [Concept( 'ruler', 'Hükümdardan' )|E] [vassal|E] Edinme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_gain_struggle_vassals_from_interlopers_uninvolved_desc: "[struggle_uninvolved|E] veya [struggle_interloper|E] [Concept( 'ruler', 'Hükümdardan' )|E] [struggle_involved|E] [vassal|E] elde etmek"
+
+ catalyst_gain_struggle_titles_from_interlopers_uninvolved: "[struggle_uninvolved|E] veya [struggle_interloper|E] [Concept( 'ruler', 'Hükümdardan' )|E] [title|E] Edinme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_gain_struggle_titles_from_interlopers_uninvolved_desc: "[struggle_interloper|E] veya [struggle_uninvolved|E] [Concept( 'ruler', 'Hükümdardan' )|E] [struggle_region|E] dâhilinde [title|E] elde etmek"
+
+ catalyst_interloper_uninvolved_gain_struggle_vassals: "[struggle_interloper|E] veya [struggle_uninvolved|E] [Concept( 'ruler', 'Hükümdara' )|E] [vassal|E] Kaybetme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_interloper_uninvolved_gain_struggle_vassals_desc: "[struggle_interloper|E] veya [struggle_uninvolved|E] [Concept( 'ruler', 'Hükümdara' )|E] [struggle_involved|E] [vassal|E] kaybetmek"
+
+ catalyst_interloper_uninvolved_gain_struggle_titles: "[struggle_uninvolved|E] veya [struggle_involved|E] [Concept( 'ruler', 'Hükümdara' )|E] [title|E] Kaybetme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_interloper_uninvolved_gain_struggle_titles_desc: "[struggle_interloper|E] veya [struggle_uninvolved|E] [Concept( 'ruler', 'Hükümdara' )|E] [struggle_region|E] dâhilinde [title|E] kaybetmek"
+
+ catalyst_declare_any_war_within_the_region: "[war|E] Başlatma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+
+ catalyst_supporter_win_unfair_war_within_the_region: "$catalyst_win_any_war_within_the_region$"
+ catalyst_supporter_win_unfair_war_within_the_region_desc: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] olarak (daha düşük [Concept( 'title_tier', 'Seviyeden' )|E]) [struggle_involved|E] başka bir [Concept( 'ruler', 'Hükümdara' )|E] karşı [war|E] kazanmak"
+
+ catalyst_supporter_win_fair_war_within_the_region: "$catalyst_win_any_war_within_the_region$"
+ catalyst_supporter_win_fair_war_within_the_region_desc: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] olarak (aynı veya daha yukarı [Concept( 'title_tier', 'Seviyeden' )|E]) [struggle_involved|E] başka bir [Concept( 'ruler', 'Hükümdara' )|E] karşı [war|E] kazanmak"
+
+ catalyst_supporter_declare_unfair_war_within_the_region: "$catalyst_declare_any_war_within_the_region$"
+ catalyst_supporter_declare_unfair_war_within_the_region_desc: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] olarak (daha düşük [Concept( 'title_tier', 'Seviyeden' )|E]) [struggle_involved|E] başka bir [Concept( 'ruler', 'Hükümdara' )|E] [war|E] ilan etmek"
+
+ catalyst_supporter_declare_fair_war_within_the_region: "$catalyst_declare_any_war_within_the_region$"
+ catalyst_supporter_declare_fair_war_within_the_region_desc: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] olarak (aynı veya daha yukarı [Concept( 'title_tier', 'Seviyeden' )|E]) [struggle_involved|E] başka bir [Concept( 'ruler', 'Hükümdara' )|E] [war|E] ilan etmek"
+
+ catalyst_detractor_win_unfair_war_within_the_region: "$catalyst_win_any_war_within_the_region$"
+ catalyst_detractor_win_unfair_war_within_the_region_desc: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] olarak (daha düşük [Concept( 'title_tier', 'Seviyeden' )|E]) [struggle_involved|E] başka bir [Concept( 'ruler', 'Hükümdara' )|E] karşı [war|E] kazanmak"
+
+ catalyst_detractor_win_fair_war_within_the_region: "$catalyst_win_any_war_within_the_region$"
+ catalyst_detractor_win_fair_war_within_the_region_desc: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] olarak (aynı veya daha yukarı [Concept( 'title_tier', 'Seviyeden' )|E]) [struggle_involved|E] başka bir [Concept( 'ruler', 'Hükümdara' )|E] karşı [war|E] kazanmak"
+
+ catalyst_detractor_declare_unfair_war_within_the_region: "$catalyst_declare_any_war_within_the_region$"
+ catalyst_detractor_declare_unfair_war_within_the_region_desc: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] olarak (daha düşük [Concept( 'title_tier', 'Seviyeden' )|E]) [struggle_involved|E] başka bir [Concept( 'ruler', 'Hükümdara' )|E] [war|E] ilan etmek"
+
+ catalyst_detractor_declare_fair_war_within_the_region: "$catalyst_declare_any_war_within_the_region$"
+ catalyst_detractor_declare_fair_war_within_the_region_desc: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] olarak (aynı veya daha yukarı [Concept( 'title_tier', 'Seviyeden' )|E]) [struggle_involved|E] başka bir [Concept( 'ruler', 'Hükümdara' )|E] [war|E] ilan etmek"
+
+ catalyst_war_ends_in_white_peace_between_supporter_detractor: "Bir [Concept( 'war', 'Savaşın' )|E] [white_peace|E] ile Sonuçlanması"
+ catalyst_war_ends_in_white_peace_between_supporter_detractor_desc: "Bir $supporter_and_detractor$ arasındaki [Concept( 'war', 'Savaşın' )|E] [white_peace|E] ile sona ermesi"
+
+ catalyst_forming_alliance_between_supporter_detractor_rulers: "Bir $supporter_and_detractor$ arasında [alliance|E] [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_forming_alliance_between_supporter_detractor_rulers_desc: "Bir $supporter_and_detractor$ arasında [alliance|E] kurulması"
+
+ catalyst_forming_alliance_between_detractor_uninvolved_rulers: "Yabancı Bir Güçle [allied|E] [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_forming_alliance_between_detractor_uninvolved_rulers_desc: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] olarak [struggle_uninvolved|E] bir [realm|E] ile [alliance|E] olmak"
+
+ catalyst_gift_supporter_detractor_ruler: "$catalyst_gift_independent_ruler$"
+ catalyst_gift_supporter_detractor_ruler_desc: "$supporter_and_detractor$ arasında [gift|E] veya [artifact|E] transferi"
+
+ catalyst_supporter_forced_conversion: "$catalyst_forced_conversion$"
+ catalyst_supporter_forced_conversion_desc: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] bir [Concept( 'ruler', 'Hükümdarı' )|E] dönüştürmek"
+
+ catalyst_detractor_forced_conversion: "$catalyst_forced_conversion$"
+ catalyst_detractor_forced_conversion_desc: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] bir [Concept( 'ruler', 'Hükümdarı' )|E] dönüştürmek"
+
+ catalyst_release_supporter_detractor: "$catalyst_release_important$"
+ catalyst_release_supporter_detractor_desc: "$supporter_and_detractor$ arasında talepsiz bir şekilde birinin [Concept( 'prison', 'Hapisten' )|E] serbest bırakılması"
+
+ catalyst_ransom_supporter_detractor: "$catalyst_ransom_important$"
+ catalyst_ransom_supporter_detractor_desc: "$supporter_and_detractor$ arasında [struggle_involved|E] bir [ruler|E] için fidye ödemek"
+
+ catalyst_imprison_detractor: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] Hapsetme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_imprison_detractor_desc: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] bir karakteri hapsetmek"
+
+ catalyst_imprison_supporter: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] Hapsetme [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_imprison_supporter_desc: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] bir karakteri hapsetmek"
+
+ catalyst_becomes_rival_supporter_detractor: "$catalyst_becomes_rival_with_involved$"
+ catalyst_becomes_rival_supporter_detractor_desc: "$supporter_and_detractor_caps$ karakterlerin birbirleriyle [rival|E] veya [nemesis|E] olması"
+
+ catalyst_became_best_friend_soulmate_supporter_detractor: "$catalyst_became_best_friend_soulmate_with_very_important_character$"
+ catalyst_became_best_friend_soulmate_supporter_detractor_desc: "$supporter_and_detractor_caps$ karakterlerin birbirleriyle [best_friend|E] veya [soulmate|E] olması"
+
+ catalyst_became_friend_lover_supporter_detractor: "$catalyst_became_friend_lover_with_character$"
+ catalyst_became_friend_lover_supporter_detractor_desc: "$supporter_and_detractor_caps$ karakterlerin birbirleriyle [friend|E] veya [lover|E] olması"
+
+ catalyst_unnatural_death_supporter: "$catalyst_unnatural_death_important_character$"
+ catalyst_unnatural_death_supporter_desc: "Bir [GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] [Concept( 'ruler', 'Hükümdarın' )|E] öldürülmesi"
+
+ catalyst_unnatural_death_detractor: "$catalyst_unnatural_death_important_character$"
+ catalyst_unnatural_death_detractor_desc: "Bir [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] [Concept( 'ruler', 'Hükümdarın' )|E] öldürülmesi"
+
+ catalyst_reveal_secret_supporter: "$catalyst_reveal_secret_important$"
+ catalyst_reveal_secret_supporter_desc: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] bir [Concept( 'ruler', 'Hükümdarın' )|E] [Concept( 'secret', 'Sırrını' )|E] açığa çıkartmak"
+
+ catalyst_reveal_secret_detractor: "$catalyst_reveal_secret_important$"
+ catalyst_reveal_secret_detractor_desc: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] bir [Concept( 'ruler', 'Hükümdarın' )|E] [Concept( 'secret', 'Sırrını' )|E] açığa çıkartmak"
+
+ catalyst_yearly_influential_house_is_harmonious: "$harmonious$ [house|E] [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_yearly_influential_house_is_harmonious_desc: "$harmonious$ [Concept( 'house_unity', 'Hane Birliğine' )|E] sahip [struggle_involved|E] [house_heads|E]"
+ catalyst_yearly_influential_house_is_harmonious_major: "$catalyst_yearly_influential_house_is_harmonious$"
+ catalyst_yearly_influential_house_is_harmonious_major_desc: "Yıllık Kayma: [EmptyScope.ScriptValue('catalyst_yearly_influential_house_is_harmonious_major_control_value')|0] $catalyst_yearly_influential_house_is_harmonious_desc$"
+ catalyst_yearly_influential_house_is_harmonious_medium: "$catalyst_yearly_influential_house_is_harmonious$"
+ catalyst_yearly_influential_house_is_harmonious_medium_desc: "Yıllık Kayma: [EmptyScope.ScriptValue('catalyst_yearly_influential_house_is_harmonious_medium_control_value')|0] $catalyst_yearly_influential_house_is_harmonious_desc$"
+ catalyst_yearly_influential_house_is_harmonious_minor: "$catalyst_yearly_influential_house_is_harmonious$"
+ catalyst_yearly_influential_house_is_harmonious_minor_desc: "Yıllık Kayma: [EmptyScope.ScriptValue('catalyst_yearly_influential_house_is_harmonious_minor_control_value')|0] $catalyst_yearly_influential_house_is_harmonious_desc$"
+ catalyst_yearly_influential_house_is_harmonious_minimal: "$catalyst_yearly_influential_house_is_harmonious$"
+ catalyst_yearly_influential_house_is_harmonious_minimal_desc: "Yıllık Kayma: [EmptyScope.ScriptValue('catalyst_yearly_influential_house_is_harmonious_minimal_control_value')|0] $catalyst_yearly_influential_house_is_harmonious_desc$"
+
+ catalyst_yearly_influential_house_is_antagonistic: "$antagonistic$ [house|E] [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_yearly_influential_house_is_antagonistic_desc: "$antagonistic$ [Concept( 'house_unity', 'Hane Birliğine' )|E] sahip [struggle_involved|E] [house_heads|E]"
+ catalyst_yearly_influential_house_is_antagonistic_major: "$catalyst_yearly_influential_house_is_antagonistic$"
+ catalyst_yearly_influential_house_is_antagonistic_major_desc: "Yıllık Kayma: [EmptyScope.ScriptValue('catalyst_yearly_influential_house_is_antagonistic_major_control_value')|0] $catalyst_yearly_influential_house_is_antagonistic_desc$"
+ catalyst_yearly_influential_house_is_antagonistic_medium: "$catalyst_yearly_influential_house_is_antagonistic$"
+ catalyst_yearly_influential_house_is_antagonistic_medium_desc: "Yıllık Kayma: [EmptyScope.ScriptValue('catalyst_yearly_influential_house_is_antagonistic_medium_control_value')|0] $catalyst_yearly_influential_house_is_antagonistic_desc$"
+ catalyst_yearly_influential_house_is_antagonistic_minor: "$catalyst_yearly_influential_house_is_antagonistic$"
+ catalyst_yearly_influential_house_is_antagonistic_minor_desc: "Yıllık Kayma: [EmptyScope.ScriptValue('catalyst_yearly_influential_house_is_antagonistic_minor_control_value')|0] $catalyst_yearly_influential_house_is_antagonistic_desc$"
+ catalyst_yearly_influential_house_is_antagonistic_minimal: "$catalyst_yearly_influential_house_is_antagonistic$"
+ catalyst_yearly_influential_house_is_antagonistic_minimal_desc: "Yıllık Kayma: [EmptyScope.ScriptValue('catalyst_yearly_influential_house_is_antagonistic_minimal_control_value')|0] $catalyst_yearly_influential_house_is_antagonistic_desc$"
+
+ catalyst_invite_involved_as_honorary_guests_to_feast_hunt: "Onur Konuğu [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_invite_involved_as_honorary_guests_to_feast_hunt_desc: "[struggle_involved|E] bir [Concept( 'ruler', 'Hükümdarı' )|E] Ziyafet veya Avlanma [Concept( 'activity', 'Etkinliğine' )|E] [honorary_guest|E] olarak davet etmek"
+
+ catalyst_abandon_hook_on_supporter_detractor: "Terk Edilmiş [hook|E] [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_abandon_hook_on_supporter_detractor_desc: "Bir $supporter_and_detractor$ arasında [hook|E] terk edilmesi"
+
+ catalyst_grants_pardon_supporter_detractor: "Af Çıkarıldı [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_grants_pardon_supporter_detractor_desc: "Bir $supporter_and_detractor$ arasında [Concept( 'crime', 'Suçun' )|E] affedilmesi"
+
+ catalyst_grants_vassal_to_de_jure_liege_supporter_detractor: "[de_jure|E] Süzerene Aktarma [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_grants_vassal_to_de_jure_liege_supporter_detractor_desc: "Bir $supporter_and_detractor$ arasında [Concept( 'vassal', 'Vasalın' )|E] [de_jure|E] süzerenine aktarılması"
+
+ catalyst_turn_supporter_into_detractor: "Taraf Değişim [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_turn_supporter_into_detractor_desc: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] bir karakterin [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] olması"
+
+ catalyst_turn_detractor_into_supporter: "Taraf Değişim [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_turn_detractor_into_supporter_desc: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] bir karakterin [GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] olması"
+
+ catalyst_new_building_in_holdings: "[Concept( 'holding', 'Yerleşimde' )|E] [building|E] İnşa [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_new_building_in_holdings_desc: "Herhangi bir [Concept( 'holding', 'Yerleşimde' )|E] [building|E] inşa etmek"
+
+ catalyst_execute_supporter: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] İdam [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_execute_supporter_desc: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] bir karakterin idam edilmesi"
+
+ catalyst_execute_detractor: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] İdam [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_execute_detractor_desc: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] bir karakterin idam edilmesi"
+
+ catalyst_missing_caliphate_or_arabian_empire: "Yıllık Kayma: [GetTitleByKey('d_sunni').GetBaseName] veya [GetTitleByKey('e_arabia').GetBaseName] Unvanlarının Yok Edilmesi"
+ catalyst_missing_caliphate_or_arabian_empire_desc: "Yıllık Kayma: [GetTitleByKey('d_sunni').GetBaseName] veya [GetTitleByKey('e_arabia').GetBaseName] unvanlarının yok edilmesi"
+
+ catalyst_caliph_or_emperor_loses_revolt_war: "[GetTitleByKey('d_sunni').GetBaseName] veya [GetTitleByKey('e_arabia').GetBaseName] Unvanlarının [Concept( 'holder', 'Sahibinin' )|E] [civil_war|E] Kaybetmesi"
+ catalyst_caliph_or_emperor_loses_revolt_war_desc: "[GetTitleByKey('d_sunni').GetBaseName] veya [GetTitleByKey('e_arabia').GetBaseName] unvanlarının [Concept( 'holder', 'Sahibinin' )|E] [civil_war|E] kaybetmesi"
+
+ catalyst_caliph_or_emperor_accepts_faction_demands: "[GetTitleByKey('d_sunni').GetBaseName] veya [GetTitleByKey('e_arabia').GetBaseName] Unvanlarının [Concept( 'holder', 'Sahibinin' )|E] [faction|E] Taleplerine Boyun Eğmesi"
+ catalyst_caliph_or_emperor_accepts_faction_demands_desc: "[GetTitleByKey('d_sunni').GetBaseName] veya [GetTitleByKey('e_arabia').GetBaseName] unvanlarının [Concept( 'holder', 'Sahibinin' )|E] [faction|E] taleplerine boyun eğmesi"
+
+ catalyst_caliph_died_violently: "Sünni Halifesi vahşi bir şekilde katledildi"
+ catalyst_caliph_died_violently_desc: "Sünni Halifenin vahşi bir şekilde katledilmesi\n#WEAK ([EmptyScope.ScriptValue('catalyst_cooldown_between_significant_character_deaths_years_value')] yıl bekleme süresi)#!"
+
+ catalyst_caliph_died_naturally: "Sünni Halifesi doğal sebeplerden hayatını kaybetti"
+ catalyst_caliph_died_naturally_desc: "Sünni Halifenin doğal sebeplerden hayatını kaybetmesi\n#WEAK ([EmptyScope.ScriptValue('catalyst_cooldown_between_significant_character_deaths_years_value')] yıl bekleme süresi)#!"
+
+ supporter_and_detractor: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] ve [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )]"
+ supporter_and_detractor_caps: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] ve [GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )]"
+
+ catalyst_revealed_secret_faith_non_islam: "[GetReligionByKey('islam_religion').GetAdjective]-Olmayan Gizli [Concept( 'faith', 'Mezhebin' )|E] İfşa [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_revealed_secret_faith_non_islam_desc: "[GetReligionByKey('islam_religion').GetAdjective] olmayan gizli bir [Concept( 'faith', 'Mezhebin' )|E] ifşa edilmesi"
+ catalyst_revealed_secret_faith_islam: "[GetReligionByKey('islam_religion').GetAdjective] Gizli [Concept( 'faith', 'Mezhebin' )|E] [Concept( 'struggle_catalyst_catalyst', 'Tetikleyicisi' )|E]"
+ catalyst_revealed_secret_faith_islam_desc: "[GetReligionByKey('islam_religion').GetAdjective] gizli bir [Concept( 'faith', 'Mezhebin' )|E] ifşa edilmesi"
+
+ ### STRATEGYTURK'TEN RAGNVALDR TARAFINDAN ÇEVRİLMİŞTİR.

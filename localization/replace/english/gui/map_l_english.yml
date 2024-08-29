@@ -14,21 +14,16 @@
  DESTINATION_SEA:0 "Deniz"
  DESTINATION_LAKE:0 "Göl"
  DESTINATION_RIVER:0 "Nehir"
- SIEGE_TOOLTIP_TITLE:1 "#T $PROVINCE$#!'deki kale" #NT!
- SIEGE_TOOLTIP_OCUPIED:0 "[CHARACTER.GetUIName] tarafından işgal edildi." #NT!
- SIEGE_TOOTLTIP_IMPACT:0 "Kale seviyesindeki etki:" #NT!
- CHARACTER_ACTIVITY_TOOLTIP:0 "[CHARACTER.GetUIName] bu aktiviteye katılıyor" #NT!
- CHARACTER_AT_LOCATION:0 "Konum: [PROVINCE.GetName|V]" #NT!
-  #AGOT Modified #NT!
+ SIEGE_TOOLTIP_OCUPIED:0 "[Select_CString( CHARACTER.IsLocalPlayer, 'Sizin', CHARACTER.GetShortUIName )] [Select_CString( CHARACTER.IsLocalPlayer, 'tarafınızdan', 'tarafından' )] işgal ediliyor."
+ SIEGE_TOOTLTIP_IMPACT:0 "Kale seviyesi etkisi:"
+ CHARACTER_ACTIVITY_TOOLTIP:0 "[CHARACTER.GetUIName] bu etkinliğe katılıyor"
+ CHARACTER_AT_LOCATION:0 "Konum: [PROVINCE.GetName|V]"
  CHARACTER_AT_ACTIVITY:0 "[PROVINCE.GetName|V] toprağında [ACTIVITY.GetName|V] yapıyor" #ragn
- CHARACTER_AT_ACTIVITY:0 "[Character.Custom('is_missing_location_activity_loc')]" #NT!
- CHARACTER_AT_ARMY:0 "[PROVINCE.GetName|V] toprağında [army|E] komuta ediyor" #NT!
- CHARACTER_TRAVEL_TO_LOCATION:0 "[PROVINCE.GetName|V] toprağına seyahat ediyor" #NT!
+ CHARACTER_AT_ARMY:0 "[PROVINCE.GetName|V] toprağında [army|E] komuta ediyor"
+ CHARACTER_TRAVEL_TO_LOCATION:0 "[PROVINCE.GetName|V] toprağına seyahat ediyor"
  CHARACTER_IMPRISONED_AT:0 "[Select_CString( CHARACTER.IsLocalPlayer, 'Sizin', CHARACTER.GetUIName )] tarafın[Select_CString( CHARACTER.IsLocalPlayer, 'ız', '' )]dan [PROVINCE.GetName|V] toprağında tutsak tutuluyor"
  CHARACTER_AT_COURT_VISITING:1 "[PROVINCE.GetName|V] toprağında [CHARACTER.GetShortUINamePossessive|V] [Concept( 'court', 'Sarayını' )|E] ziyaret ediyor" #krutygetarts
  CHARACTER_AT_COURT:1 "[PROVINCE.GetName|V] toprağında [CHARACTER.GetShortUINamePossessive|V] [Concept( 'court', 'Sarayında' )|E]"
-  #AGOT Modified #NT!
- #CHARACTER_TRAVELING_OWNER: "Seyahat ederken [PROVINCE.GetName|V]'da" #NT!
  CHARACTER_TRAVELING_OWNER:0 "[PROVINCE.GetName|V] topraklarında seyahat hâlinde"
  CHARACTER_TRAVELING_ENTOURAGE:0 "[PROVINCE.GetName|V] topraklarında [Select_CString( TRAVEL_PLAN.GetData.GetOwner.IsLocalPlayer, 'sizin', TRAVEL_PLAN.GetData.GetOwner.GetShortUIName )][Select_CString( TRAVEL_PLAN.GetData.GetOwner.IsLocalPlayer, '', ' adlı kişinin' )] [entourage|E][Select_CString( TRAVEL_PLAN.GetData.GetOwner.IsLocalPlayer, 'inizde', 'inde' )]"
  FORD_TOOLTIP:1 "$FROM$ ile $TO$ arasındaki geçit"
@@ -44,13 +39,12 @@
  MAP_REALM_TT_RELATION_TOP_LIEGE:0 "[TARGET_CHARACTER.GetShortUINamePossessive|UV] Baş Süzereni"
  MAP_REALM_TT_RELATION_OTHER:0 "Bağımsız Ülke"
 
-  #AGOT Modified #NT!
  IMPASSIBLE_PROVINCE_TOOLTIP:0 "#T Geçilemez Arazi#!"
  IMPASSPABLE_SEA_PROVINCE_TOOLTIP:0 "#T Bilinmeyen Deniz#!"
  SEA_PROVINCE_TOOLTIP:2 "#T [PROVINCE.GetName]#!\n[PROVINCE.GetTerrain.GetNameNoTooltip|V]"
  LAKE_PROVINCE_TOOLTIP:0 "#T Göl#!"
  RIVER_PROVINCE_TOOLTIP:1 "#T [PROVINCE.GetName]#!\nBüyük Nehir"
-  PROVINCE_TOOLTIP_HEADER:0 "#T [PROVINCE.GetTitle.GetNameNoTooltip]#!"
+ PROVINCE_TOOLTIP_HEADER:0 "#T [PROVINCE.GetTitle.GetNameNoTooltip]#!"
  PROVINCE_TOOLTIP_HOLDER:0 "Sahibi: [CHARACTER.GetUINameNoTooltip|UV]"
  PROVINCE_TOOLTIP_LESSEE:0 "Kiracı: [CHARACTER.GetUINameNoTooltip|UV]"
  PROVINCE_TOOLTIP_OCCUPIED:0 "İşgal eden: [CHARACTER.GetUINameNoTooltip|UV]"
@@ -164,3 +158,5 @@
  LEGEND_QUALITY_SPREAD_CHANCE: "Kalite seviyesinden gelen olasılık: $CHANCE|%/+2=$"
  LEGEND_QUALITY_OWNER_MODIFIER: "Sahibin etkisi: $MOD|%/+2=$"
  LEGEND_QUALITY_OWNER_MULTIPLIER: "Sahibin çarpanı: $BREAKDOWN_MULTIPLICATION_PREFIX$$MULT|2V$"
+
+ ### STRATEGYTURK'TEN RAGNVALDR TARAFINDAN ÇEVRİLMİŞTİR.

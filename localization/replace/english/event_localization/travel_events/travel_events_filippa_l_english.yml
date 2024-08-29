@@ -1,674 +1,719 @@
 ﻿l_english:
- #Travel Flavor Events #NT!
- #Good omen? - Encounter a duck #NT!
- travel_events.2000.t: "$travel_event_prefix$ Ne Oluyor?" #NT!
- travel_events.2000.desc: "Yoldaki gün şimdiye kadar oldukça sakin ve belirsizdi. [ROOT.Char.GetCurrentLocation.GetName]'ın dışında bir yerdeyiz ve binek hayvanım beni her seferinde sağlam bir adımla öne doğru getirirken gözlerimi kapatıyorum.\n\nRüzgar ağaç tepelerinde muhteşem bir melodi çalarken, esintiyle birlikte gelen başka bir ses var, bizim maiyetimizden değil. Bu... vaklama mı?\n\n" #NT!
- travel_events.2000.desc_meh_memory: "Çevremde kümes hayvanlarını arıyorum. En son bir ördeği vahşi doğaya kadar takip ettiğimde işler... garipleşti." #NT!
- travel_events.2000.desc_delicious_memory: "En son vahşi doğada bir ördeği takip ettiğimde #EMP leziz# yemek yemiştim. Belki bu benim şanslı günümdür?" #NT!
- travel_events.2000.desc_good_memory: "Vahşi doğada bir ördekle karşılaştığım son zamanı sevgiyle anıyorum. Beni #EMP çok sayıda#! tüylü ördek yavrusunun olduğu bir yuvaya götürdü." #NT!
- travel_events.2000.desc_bad_memory: "Bir an tereddüt ediyorum, vahşi doğaya bir ördeği takip ettiğim son zamanı hatırlıyorum. İyi bitmemişti." #NT!
- travel_events.2000.desc_default: "Sesin sağ tarafımdaki çalılıklardan geleceğini tahmin ediyorum." #NT!
- travel_events.2000.a: "Bu iyiye işaret." #NT!
- travel_events.2000.a_sadist: "Bu aptalca." #NT!
- travel_events.2000.b: "Şu ördeği takip et!" #NT!
- travel_events.2000.b_sadist: "Sanırım onu ​​takip edebilirim..." #NT!
- travel_events.2000.b.tt: "Bir süre ördeği takip ediyorsun" #NT!
- travel_events.2000.c: "İğrenç, sinir bozucu kümes hayvanı! Uzaklaş!" #NT!
- travel_events.2000.c.tt: "Vaklama sesine bir taş atarsın." #NT!
- #Duck follow-up #NT!
- travel_events.2001.t_positive: "Bu..." #NT!
- travel_events.2001.t_negative: "Bu Bir Ördek Değil!" #NT!
- travel_events.2001.t: "$travel_event_prefix$ Vakvak!" #NT!
- travel_events.2001.intro: "Attan inip ördeği yakındaki çalılıklarda buluyorum. Vahşi doğaya doğru yürümeye başlıyor ve ben de onu yürüyerek takip ediyorum." #NT!
- travel_events.2001.desc_positive: "\n\nDevam ettikçe, yumuşak vaklamalara yavaşça — ilk başta zayıf ama giderek güçlenen — küçük cıvıltılardan oluşan bir koro katılıyor. Bir sonraki çalıya döndüğümde, tek bir ördek değil, #EMP bir sürü#! ördek ve ördek yavrusu yuvası görüyorum!" #NT!
- travel_events.2001.desc_positive_sadist: "\n\nNazik ördekleri ve ördek yavrularını izlerken karnımın guruldadığını hissediyorum." #NT!
- travel_events.2001.desc_positive_default: "\n\nHer şeyin yumuşak, tüylü halini içime çekerken dizlerimin zayıfladığını hissediyorum." #NT!
- travel_events.2001.desc_negative: "\n\nÇevremden uzaklaştıkça, omurgamdan aşağı bir ürperti iniyor. Bir şey beni mi izliyor?\n\nBirdenbire, ormanın kenarında bir [ROOT.Char.Custom('RegionalFerociousAnimal')] beliriyor! Homurdanıyor ve bana öfkeli gözlerle bakıyor." #NT!
- travel_events.2001.desc: "\n\nÖrdek aniden duruyor ve başını bana doğru eğiyor, neden bir insan takipçi edindiğini açıkça anlamıyor.\n\nGerginliği azaltmaya çalışarak ördeğe gülümsüyorum, ancak ördek aniden kıvranıyor, kanatlarını çırpıyor ve uçup gidiyor." #NT!
- travel_events.2001.a: "Bu... #EMP çok fazla!#!" #NT!
- travel_events.2001.a_tt: "#EMP Çok hoş#!" #NT!
- travel_events.2001.a_tt_death: "Bu sevimlilik zavallı kalbine çok fazla" #NT!
- travel_events.2001.b: "Bunlar mükemmel bir kızartma olur..." #NT!
- travel_events.2001.b_success.tt: "Güzel bir yemek" #NT!
- travel_events.2001.b_failure.tt: "Boğuldum" #NT!
- travel_events.2001.c: "Bu #EMP kötü!#!" #NT!
- travel_events.2001.c_success.tt: "Başarı" #NT!
- travel_events.2001.c_ran: "Başarılı bir şekilde kaçtın" #NT!
- travel_events.2001.c_failure.tt: "Yaralı" #NT!
- travel_events.2001.c_hit_and_ran: "Vurulursun ama kaçarsın" #NT!
- travel_events.2001.c_critical_failure: "Canavar seni sakat bırakıyor" #NT!
- travel_events.2001.d: "Hazır ol!" #NT!
- travel_events.2001.d_scare_beast: "Canavarı korkutuyorsun" #NT!
- travel_events.2001.d_beast_hit: "Canavar karşılık veriyor ama kaçıyor" #NT!
- travel_events.2001.e: "Ne vahşi bir... #EMP ördek#! kovalamaca?" #NT!
- #Crossing an ant path - Ignore or don't ignore your guide #NT!
- travel_events.2002.t: "$travel_event_prefix$ Yürünen Yol" #NT!
- travel_events.2002.desc: "Alay, [ROOT.Char.GetCurrentLocation.GetName]'dan bir taş atımı uzaklıkta durdu. [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('guide_leader'))] [guide_leader.GetFirstName]'mi atından inmiş ve yerdeki bir şeye dikkatle bakarken görmek için arkama baktım. Diğer maiyet üyeleri [guide_leader.GetHerHim]'ün etrafında toplanmıştı.\n\n[guide_leader.GetFirstNameNoTooltip] yaklaştığımda yukarı baktı. "Benim [ROOT.Char.GetLadyLord], burada bir karınca yolu var. Biraz batıl inançlı olabilirim ama asla bir karınca yolunu geçmemelisin."\n\n[guide_leader.GetSheHe|U] durakladı. "Büyük büyük büyük[great_grand_parent.Custom('MotherFather')] geçti ve [great_grand_parent.GetSheHe] asla eve dönmedi."" #NT!
- travel_events.2002.a: "#EMP Güzel#!. Başka bir yol bulacağız." #NT!
- travel_events.2002.b: "Bu saçmalık. Rehberlik görevini ben üstleneceğim!" #NT!
- travel_events.2002.c: "İşte tam da sizin batıl inançlarınıza çare olacak bir ilacım var." #NT!
- travel_competent_guide_tt: "Sen yetenekli bir rehbersin" #NT!
- travel.competent_guide: "$travel_competent_guide_tt$" #NT!
- travel_get_lost_tt: "Kayboldun" #NT!
- #Visit the local military place (barrack/military camp/regiment grounds) - Try to improve your martial #NT!
- travel_events.2003.t: "$travel_event_prefix$ Dövüş Sanatları Üzerine Bir Çalışma" #NT!
- travel_events.2003.intro: "[local_captain.GetFirstName], yerel yüzbaşı ve [local_captain.GetHerHis] subaylarından birkaçı, maiyetim [ROOT.Char.GetCurrentLocation.GetName]'nin askeri kamplarına girerken beni selamlıyor." #NT!
- travel_events.2003.desc_barracks: "Hemen iniyorum, yerel kışlayı incelemek için can atıyorum.\n\nHer yer gerçekten hareketli; askerler her tarafta, ama her biri amacını tam olarak biliyor ve nereye gittikleri konusunda net bir yönelime sahip gibi görünüyor." #NT!
- travel_events.2003.desc_regiment: "Alay alanını kısaca gözlemliyorum ve sonra iniyorum.\n\n[local_captain.GetFirstNameNoTooltip], bir savaş planı üzerinde çalışan üç ila dört askerden oluşan bir grubu işaret ediyor. "Şu seçkin askerlerimiz, oradakiler, benim [ROOT.Char.GetLadyLord]'im."" #NT!
- travel_events.2003.desc_camp:1 "As [local_captain.GetSheHe] wanders off, I quickly dismount and follow [local_captain.GetHerHim].\n\nA couple of paces forward, [local_captain.GetFirstNameNoTooltip] stops and turns to the latest siege equipment which is neatly placed in rows before me: "[local_captain.GetSheHe] uzaklaşırken ben de hızla inip [local_captain.GetHerHim]'i takip ediyorum.\n\nBirkaç adım ilerleyen [local_captain.GetFirstNameNoTooltip] duruyor ve önümde sıralanmış son model kuşatma ekipmanlarına dönüyor: "Olağanüstü bir manzara, değil mi?"" #NT! #NT!
- travel_events.2003.outro: "\n\nGözlemlediğim düzenli kaosu takdir ederek başımı sallıyorum.\n"Peki, [ROOT.Char.GetLadyLord]'ım bundan sonra ne yapmak ister?" [local_captain.GetFirstNameNoTooltip] bana umutla bakıyor." #NT!
- travel_events.2003.a: "Biraz dövüşmeye hayır demezdim!" #NT!
- travel_events.2003.a_sparring_tt: "Askerlerle başarılı bir şekilde dövüştün" #NT!
- travel_events.2003.a_wounded_tt: "Kazara yaralanırsın" #NT!
- travel_events.2003.b: "Bu ne biçim bir alet?" #NT!
- travel_events.2003.b_success_tt: "Savaş Öğrenimi" #NT!
- travel_events.2003.b_learn_tt: "Ekipmanı inceleyerek bir şeyler öğrenirsiniz" #NT!
- travel_events.2003.b_failure_tt: "Bulunan" #NT!
- travel_events.2003.b_spy_tt: "[county_liege.GetShortUIName] casusluk yapıyor olabileceğinizi düşünüyor" #NT!
- travel_events.2003.b_cut_tt: "Ekipmanda kazara kendinizi kestiniz" #NT!
- travel_events.2003.c: "Bana katılmalısın." #NT!
- travel_events.2003.c_success_tt: "Gizli İşe Alım" #NT!
- travel_events.2003.c_secret_tt: "[county_liege.GetShortUIName] sizin kaçak avcılığınızı öğrenemez" #NT!
- travel_events.2003.c_found_out_tt: "[county_liege.GetShortUIName] kaçak avcılığınızı öğrenir" #NT!
- travel_events.2003.d: "Aslında gitmem gereken bir yer var..." #NT!
- #Visit (your own) crappy pasture - Try to address or ignore the issues #NT!
- travel_events.2004.t: "$travel_event_prefix$ Resim Mera" #NT!
- travel_events.2004.desc: "Çürümenin kokusu burnuma keskin bir yumruk gibi çarpıyor. [ROOT.Char.GetCurrentLocation.GetName]'daki yakın meralara baktığımda hayvanlar iyi görünmüyor.\n\nBurada çalışan köylüler ayaklarını sürüyerek ve amaçsızca etrafta dolaşarak meşgul görünmeye çalışıyorlar. Görünüşe göre, bölgenin gelişimi açıkça durma noktasına geldiğinden, açık motivasyon ve moral eksiklikleri tüm nüfusa yansıyor.\n\nYerel lider [local_farmer.GetFirstName] yanıma yaklaşırken inanamayarak ürperiyorum. Ne kadar kötü yönetilmiş bir çukur!" #NT!
- travel_events.2004.a: "Burayı kör bir domuz daha iyi yönetirdi, [local_farmer.GetFirstNameNoTooltip]." #NT!
- travel_events.2004.a_success_tt: "Eleştiri Emildi" #NT!
- travel_events.2004.a_critique_success_tt: "[local_farmer.GetShortUIName] eleştirinizi emer" #NT!
- travel_events.2004.a_failure_tt: "Eleştiri Reddedildi" #NT!
- travel_events.2004.a_critique_reject_tt: "[local_farmer.GetShortUIName] eleştirinizi reddediyor" #NT!
- travel_events.2004.b: "Atlarınıza ihtiyacım var. Hemen." #NT!
- travel_events.2004.c: "Yapacak daha iyi işlerim var." #NT!
- #Visit another ruler's pasture - Give advice or sabotage the pasture #NT!
- travel_events.2005.t: "$travel_event_prefix$ Başkalarının Meraları" #NT!
- travel_events.2005.desc: "Böyle güzel bir günde, hava güzel, [ROOT.Char.GetCurrentLocation.GetName]'ın meraları harika görünüyor ve yerel hayvanlar kendi gırtlaksı tavırlarıyla zıplıyor ve tezahürat ediyor. Buzağılar annelerinin yanında yürüyor, tüyleri parlak ve temiz.\n\nGenel olarak yer çok yetkin bir şekilde yönetiliyor, ancak biraz farklı şekilde idare edeceğim birkaç tuhaflık fark ediyorum.\n\nYerel [local_farmer.Custom('MatriarchPatriarch')] yanıma yaklaşıyor. "Sana güzel bir sabah, [ROOT.Char.GetLadyLord]'im! Bu güzellikler görülmeye değer değil mi?"" #NT!
- travel_events.2005.a: "Bunların bir kısmını evde uygulayabilirim!" #NT!
- travel_events.2005.a_success_tt: "Başarılı Tavsiye" #NT!
- travel_events.2005.a_implemented_tt: "Tavsiyeniz başarıyla uygulandı" #NT!
- travel_events.2005.a_failure_tt: "Yanlış yorumlanan tavsiye" #NT!
- travel_events.2005.a_misinterpreted_tt: "Tavsiyeniz tamamen yanlış yorumlanıyor" #NT!
- travel_events.2005.b: "Bakalım burada bazı şeyleri iyileştirebilecek miyiz?" #NT!
- #travel_events.2005.b_success_tt: "Sabotaj Başarılı" #NT!
- #travel_events.2005.b_sabotage_tt: "Sabotajınız başarılı ve gizli" #NT!
- #travel_events.2005.b_failure_tt: "Sabotaj Önlendi" #NT!
- #travel_events.2005.b_averted_tt: "#EMP sabotajınız#! aslında bazı yerel sorunları çözüyor" #NT!
- travel_events.2005.c: "Eminim ki [county_liege.GetTitledFirstNameNoTooltip] kendi meralarına [county_liege.GetHerHis] bakabilir." #NT!
- #Visit a camel farm - Get defiled by a camel #NT!
- travel_events.2006.t: "$travel_event_prefix$ Yine Deve Mi?" #NT!
- travel_events.2006.desc: "Güneş [ROOT.Char.GetCurrentLocation.GetName]'daki deve çiftliğinin üzerinde yükseliyor ve çiftliğin belirli bölgelerine gerilmiş koruyucu postların altında gölge arıyorum. Ani bir homurtu beni ürkütüyor ve arkamı dönüyorum.\n\nYanımda, muhteşem hayvanlardan biri aynı fikre sahip ve gölgede rahatlıyor. Uzun kafasını okşamak için eğiliyorum, hayvan #EMP tek bir hızlı hareketle alnıma vuruyor ve yanağıma tükürüyor#!.\n\nWhen Yönümü buluyorum. Sahibinin sadece yirmi adım ötede, mahcup bir şekilde durduğunu görüyorum." #NT!
- travel_events.2006.a: "Senin ve hayvanının biraz görgü öğrenmesi gerek!" #NT!
- travel_events.2006.a_tt: "Canavarı ve sahibini kırbaçlıyorsun." #NT!
- travel_events.2006.b: "Bu canavarın kafası #EMP iyi#! uyarısı verecektir." #NT!
- travel_events.2006.b_tt: "Deveyi başını kesersin" #NT!
- travel_events.2006_camel_head: "Deve Başı" #NT!
- travel_events.2006_camel_head_desc: "Asi bir devenin başı." #NT!
- travel_events.2006.c: "Bir canavar akılsız bir yaratıktan başka bir şey değildir." #NT!
- #Visit an elephant pen - Train with the elephants #NT!
- travel_events.2007.t: "$travel_event_prefix$ Fil gibi" #NT!
- travel_events.2007.desc_memory: "[ROOT.Char.GetCurrentLocation.GetName] fil ağıllarındaki devasa canavarlara şüpheyle bakıyorum, hala biraz travma geçirmiş durumdayım" #NT!
- travel_events.2007.desc_memory_rival: "rakip" #NT!
- travel_events.2007.desc_memory_nemesis: "düşman" #NT!
- travel_events.2007.desc_memory_segway: "[crushing_person.GetTitledFirstName] neredeyse bir tanesi üzerime oturacaktı" #NT!
- travel_events.2007.desc_memory_here: "tam bu noktada." #NT!
- travel_events.2007.desc_memory_not_here: "[elephant_memory.Var('elephant_location').GetProvince.GetName] [elephant_memory.Var('elephant_location').GetTerrain.GetName]'de" #NT!
- travel_events.2007.desc_default: "[ROOT.Char.GetCurrentLocation.GetName] fil ağıllarındaki görkemli hayvanlar gerçekten etkileyici. Kütükleri taşımalarını ve her türlü fiziksel egzersizi yapmalarını izliyorum." #NT!
- travel_events.2007.desc_outro: "\n\nFillerin görevlerini yerine getirmelerini izlerken, birkaç bakıcının bu yaratıklarla eğitim almanın farklı yollarını tartıştığını duydum.\n\nBu oldukça yorucu bir egzersiz gibi görünüyor ve itiraf etmeliyim ki ilgimi çekti." #NT!
- travel_events.2007.a: "Bu #EMP #! [ROOT.Char.GetTitleAsNameNoTooltip|U] ile kıyaslanamaz." #NT!
- travel_events.2007.a_success_tt: "Verimli Eğitim" #NT!
- travel_events.2007.a_efficient_training_tt: "Eğitim muhteşem bir şekilde ilerliyor" #NT!
- travel_events.2007.a_soft_success_tt: "Tamam Eğitim" #NT!
- travel_events.2007.a_alright_training_tt: "Eğitim fena değil" #NT!
- travel_events.2007.a_failure_tt: "Korkunç Eğitim" #NT!
- travel_events.2007.a_failed_training_tt: "Kendi ayaklarına takılıp tökezliyorsun" #NT!
- travel_events.2007.b: "Zamanımı boşa harcamayacağım." #NT!
- #Visit an elephant pen, your rival is on site - Attempt to crush your rival? #NT!
- travel_events.2008.t: "$travel_event_prefix$ Oturun" #NT!
- travel_events.2008.desc: "Ter damlaları yüzümden aşağı akmaya devam ediyor, ormanın sıcağı beni yakalıyor. Alnımı silmek için durduğumda, [ROOT.Char.GetCurrentLocation.GetName]'ün yerel fil ağıllarının yanında [elephant_rival.Custom('InsultNoun')] [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('elephant_rival'))], [elephant_rival.GetTitledFirstName]'mi görüyorum.\n\n[elephant_rival.GetSheHe|U] bana doğru kaba bir hareket yapıyor ve şüphesiz benimle alay ederek gürültülü bir kahkaha atıyor. Çenemi sıkıyorum.\n\nO zaman [elephant_rival.GetTitledFirstNameNoTooltip]'in tam filin arkasında #EMP durduğunu fark ediyorum#!, ve canavar hareket halinde. Mahutunun dikkatini çekmeyi başarıyorum." #NT!
- travel_events.2008.a: "[ROOT.Char.Custom('RandomElephantName')], #EMP otur.#!" #NT!
- travel_events.2008.a_success_tt: "Fil Aşkı" #NT!
- travel_events.2008.a_crushed_tt: "[elephant_rival.GetShortUIName] fil tarafından eziliyor" #NT!
- travel_events.2008.a_soft_success_tt: "Yarı Ezilmiş" #NT!
- travel_events.2008.a_wounded_tt: "[elephant_rival.GetShortUIName] yaralandı" #NT!
- travel_events.2008.a_failure_tt: "[elephant_rival.GetTitledFirstNameNoTooltip] Kaçtı" #NT!
- travel_events.2008.a_scotfree_tt: "[elephant_rival.GetShortUIName] filin elinden kurtulur" #NT!
- travel_events.2008.b: "[elephant_rival.GetTitledFirstNameNoTooltip], dikkat et!" #NT!
- #Visit an orchard - Kid falls out of tree #NT!
- travel_events.2010.t: "$travel_event_prefix$ Kırılmış Bir Dal" #NT!
- travel_events.2010.temperate_summer: "[ROOT.Char.GetCurrentLocation.GetName]'ın meyve bahçelerinde dolaşırken ılık esinti boynumu okşuyor. Ağaçlar gökyüzüne doğru nazikçe uzanıyor, yeni filizler ve şekillenen meyvelerin karışımıyla renkleniyor." #NT!
- travel_events.2010.temperate_winter: "Havada bir serinlik var ve [ROOT.Char.GetCurrentLocation.GetName]'ın meyve bahçelerini geçerken nefesim küçük buharlara dönüşüyor. Ağaçlar soğukta biraz büzülmüş gibi görünüyor, daha sıcak günleri özlüyorlar." #NT!
- travel_events.2010.tropical_summer: "[ROOT.Char.GetCurrentLocation.GetName]'ın meyve bahçelerinden geçerken sıcaklık dayanılmaz. Etrafımda ağaçlar tam çiçek açmış, mevsimi kutluyor." #NT!
- travel_events.2010.tropical_winter: "Sonunda [ROOT.Char.GetCurrentLocation.GetName]'ın meyve bahçelerinde dolaşmak için ılıman bir zaman geldi ve ben de bunu yapma fırsatını değerlendiriyorum. Uykuda ama hala yeşil olan ağaçlar daha sıcak mevsimleri bekliyor." #NT!
- travel_events.2010.fallback: "[ROOT.Char.GetCurrentLocation.GetName]'daki yerel meyve bahçesinde dikkatlice yerleştirilmiş gövde sıraları arasında dolaşırken ağaçlar gökyüzüne doğru uzanıyor. Yürüyüş yapmak için güzel bir gün." #NT!
- travel_events.2010.desc: "\n\nBirdenbire, tiz bir çığlık havayı deldi. Adımlarımı hızlandırdım ve" #NT!
- travel_events.2010.entourage: "benim [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('fallen_child'))] [fallen_child.GetFirstName]" #NT!
- travel_events.2010.peasant: "bir köylü çocuğu" #NT!
- travel_events.2010.outro: "bir ağacın altında, perişan halde ve şiddetle hıçkırarak ağlıyor.\n\n[fallen_child.GetSheHe]'ın kayıp yere düşmeden önce ağaca tırmanmaya çalıştığı anlaşılıyor. Kemik borulardan biri garip bir açıyla çıkıntı yapıyor." #NT!
- travel_events.2010.a: "Bu ağaçlar sağlığa zararlı!" #NT!
- travel_events.2010.a_flavor: "Burayı yerle bir edin!" #NT!
- travel_events.2010.a_tt: "[fallen_child.GetShortUINamePossessive] Yaralanmalar daha da kötüleşebilir" #NT!
- travel_events.2010.a_tt_2: "[ROOT.Char.GetTitledFirstName] meyve bahçelerinizi [location_county.GetNameNoTier]'de yaktı!" #NT!
- travel_events.2010.b: "Ne düşünüyordun, [fallen_child.GetFirstNameNoTooltip]!" #NT!
- travel_events.2010.b_tt: "Kazanılan Özellik" #NT!
- travel_events.2010.c: "Orada." #NT!
- travel_events.2010.c_physician: "Hadi bakalım sana bir bakalım çocuğum." #NT!
- travel_events.2010.c_physician_tt: "[court_physician.GetShortUIName] ikram [fallen_child.GetShortUIName]" #NT!
- travel_events.2010.d: "[fallen_child.Custom('GirlBoyPlural')|U], [fallen_child.Custom('GirlBoyPlural')] olacaktır." #NT!
- #Orchard hidden follow-up event #NT!
- travel_events.2011.tt_healed: "Yaralar İyileşti" #NT!
- travel_events.2011.tt_healed_desc: "[fallen_child.GetShortUINamePossessive] yara iyileşti" #NT!
- travel_events.2011.tt_worsened: "Yaralar Kötüleşti" #NT!
- travel_events.2011.tt_worsened_desc: "[fallen_child.GetShortUINamePossessive] yaralar kötüleşti" #NT!
- #Visit a plantation - Fire! #NT!
- travel_events.2012.t: "$travel_event_prefix$ Ateş!" #NT!
- travel_events.2012.desc: "Tarımın yoğun olduğu topraklarda yol alıyoruz. Bir sonraki durağımız [ROOT.Char.GetCurrentLocation.GetName]'daki yerel plantasyon, ancak kapıları yaklaşık yüz adım ötede gördüğümde bir şeylerin ters gittiğini fark ediyorum...\n\nAcı bir duman kokusu alıyorum... Duman mı? Ateş mi? Birden plantasyonun üzerinde şekillenen duman sütununu fark ediyorum.\n\nSütun kalın ve ağır — işçilerden birinin başıboş molozları yakmasından kaynaklanmayacak kadar büyük." #NT!
- travel_events.2012.a: "[guard_type_character.GetFirstNameNoTooltip], çabuk! Kovaları al!" #NT!
- travel_events.2012.a_unscathed: "Alevler Söndü" #NT!
- travel_events.2012.a_unscathed_desc: "[guard_type_character.GetShortUIName] yangını söndürür" #NT!
- travel_events.2012.a_scarred: "Suyla ıslatılmış ama yara almış" #NT!
- travel_events.2012.a_scarred_desc: "[guard_type_character.GetShortUIName] yangını söndürür ama yara alır" #NT!
- travel_events.2012.a_death: "Suyla ıslatıldı ama öldü" #NT!
- travel_events.2012.a_death_desc: "[guard_type_character.GetShortUIName] yangını söndürür ama bu esnada ölür" #NT!
- travel_events.2012.b: "İş evlerindeki insanları tahliye edelim!" #NT!
- travel_events.2012.b_unscathed: "Yara almadan" #NT!
- travel_events.2012.b_unscathed_desc: "İşçileri yara almadan kurtarıyorsunuz" #NT!
- travel_events.2012.b_scarred: "Yara izi olan" #NT!
- travel_events.2012.b_scarred_desc: "İşçileri kurtarırsınız ama yaralanırsınız" #NT!
- travel_events.2012.b_tt: "Çevrenizin sizin hakkınızdaki görüşü önemli ölçüde artar" #NT!
- travel_events.2012.c: "#EMP Peki#!, o zaman bu bir fırsat değil mi..." #NT!
- travel_events.2012.c_secret: "Gizli Yağma" #NT!
- travel_events.2012.c_secret_desc: "Yağmalamanız gizli kaldı" #NT!
- travel_events.2012.c_revealed: "Yağma Ortaya Çıktı" #NT!
- travel_events.2012.c_revealed_desc: "Yağmalamanız [county_liege.GetShortUIName] tarafından ortaya çıkarıldı" #NT!
- travel_events.2012.c_tt: "Çevrenizdekiler sizin hakkınızda çok fazla fikir kaybederler" #NT!
- travel_events.2012.d: "Biz hiç burada olmadık." #NT!
- travel_events.2012.d_flavor: "Çevredekiler sessizce uzaklaşırlar." #NT!
- travel_events.2012.d_tt: "Çevrenizdekiler sizin hakkınızdaki fikirlerini kaybederler" #NT!
- #Visit a hillfort - Train to gain military skillz #NT!
- travel_events.2013.t: "$travel_event_prefix$ Güçlendirilmiş Bilgi" #NT!
- travel_events.2013.intro: "Yerel tepe kalesini geçerken [ROOT.Char.GetCurrentLocation.GetName]'ın yüksek rakımı ve serin havası çok ferahlatıcı bir özelliğe sahip." #NT!
- travel_events.2013.martial: "\n\nAşağıda eğitim gören askerleri dikkatle izliyorum. Taktikleri, dövüş sanatları konusunda eğitimli olduğum için bana tamamen yabancı değil." #NT!
- travel_events.2013.default: "\n\nAşağıdaki vadideki askerler daha önce görmediğim nadir bir eğitim tekniği uyguluyor gibi görünüyor. Merakımı bastıramayarak daha da yaklaşıyorum." #NT!
- travel_events.2013.outro:0 "\n\nWhile doing so I am approached by the local captain, [local_captain.GetFirstNameNoTooltip]: "\n\nBunu yaparken yerel Şövalye [local_captain.GetFirstNameNoTooltip] yanıma yaklaştı: "Katılmak ister misin, [ROOT.Char.GetLadyLord]?"" #NT! #NT!
- travel_events.2013.rough_terrain: "zorlu arazide uzmanlaşır" #NT!
- travel_events.2013.reckless: "pervasızlaşır" #NT!
- travel_events.2013.a: "Ben her zaman meydan okumaya hazırım!" #NT!
- travel_events.2013.a_success.tt: "Kazanılan Özellik" #NT!
- travel_events.2013.a_failure.tt: "Başarısız Eğitim" #NT!
- travel_events.2013.a_rough_terrain: "Zorlu arazilerde uzman olursunuz" #NT!
- travel_events.2013.a_reckless: "Pervasızlaşıyorsun" #NT!
- travel_events.2013.a_failed: "Eğitim başarısız oldu" #NT!
- travel_events.2013.b: "[entourage_heir.GetFirstNameNoTooltip], [local_captain.GetWomanMan]'e katıl." #NT!
- travel_events.2013.b_rough_terrain: "[entourage_heir.GetShortUIName] $travel_events.2013.rough_terrain$" #NT!
- travel_events.2013.b_reckless: "[entourage_heir.GetShortUIName] $travel_events.2013.reckless$" #NT!
- travel_events.2013.c: "[ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('guard_type_character'))]'ım bu antrenman rejiminden kesinlikle faydalanacaktır." #NT!
- travel_events.2013.c_rough_terrain: "[guard_type_character.GetShortUIName] $travel_events.2013.rough_terrain$" #NT!
- travel_events.2013.c_reckless: "[guard_type_character.GetShortUIName] $travel_events.2013.reckless$" #NT!
- travel_events.2013.d: "Aslında ben manzara için kalacağım." #NT!
- travel_events.2013.e: "Ne yazık ki acelemiz var." #NT!
- #Visit a logging camp - Burn off some stress chopping wood #NT!
- travel_events.2014.t: "$travel_event_prefix$ Doğrayın, Doğrayın" #NT!
- travel_events.2014.desc: "[ROOT.Char.GetCurrentLocation.GetName]'ın oduncu kampının ortasındaki devasa kesme tahtası çok kullanılmış. Sanki her zaman oradaymış gibi görünüyor, hatta insan bu dünyada yürümeden önce bile.\n\nMuhteşem ahşap gövdeye yaklaşırken omuzlarım gergin ve ön kolum biriken stresten hafifçe titriyor.\n\nAtılmış bir tahta parçasını dikkatlice podyuma yerleştiriyorum ve tek bir hızlı hareketle baltamı kaldırıyorum." #NT!
- travel_events.2014.a: "#EMP Huraağ!#!" #NT!
- travel_events.2014.a_flavor: "#EMP o#!, stresi al!" #NT!
- travel_events.2014.a_stress_tt: "Stres Azaldı" #NT!
- travel_events.2014.a_great_stress_desc: "Stresinizi büyük ölçüde azaltırsınız" #NT!
- travel_events.2014.a_stress_desc: "Stresinizi azaltırsınız" #NT!
- travel_events.2014.a_injured_tt: "Sürekli Yaralanma" #NT!
- travel_events.2014.a_injured_desc: "Yanlışlıkla kendini sakatladın" #NT!
- travel_events.2014.b: "... hayır, el emeği bana göre değil." #NT!
- travel_events.2014.b_flavor: "Baltanı indiriyorsun." #NT!
- #Visit a peat quarry - Try not to fall asleep #NT!
- travel_events.2015.t: "$travel_event_prefix$ Turba, Bana Daha Fazlasını Anlat..." #NT!
- travel_events.2015.desc: "[quarry_guide.GetTitledFirstName|U], [quarry_guide.GetSheHe]'in [ROOT.Char.GetCurrentLocation.GetName]'deki turba ocağına yaptığım ziyareti yönlendirmesiyle çocuksu bir neşeyle gergin. Anlaşılmaz bir nedenden ötürü, [quarry_guide.GetSheHe] bu yerin çimenli taçtaki mücevher olduğunu düşünüyor.\n\nKahverengi ve gri-yeşil olan harap olmuş tarlaya bakıyorum.\nGöz kapaklarım ağırlaşıyor. Son zamanlarda uyku beni kaçırıyor. Yavaşça kapanıyorlar...\n\nBirdenbire uyanıyorum, [quarry_guide.GetFirstNamePossessiveNoTooltip] elim kolumda.\n"... #EMP sıkıcı mıydım#!?"" #NT!
- travel_events.2015.a: "Ben sadece her şeyi içime çekiyordum!" #NT!
- travel_events.2015.a_convinced_tt: "İkna edilmiş" #NT!
- travel_events.2015.a_convinced_desc: "İkna etmeyi başarıyorsun [quarry_guide.GetShortUIName]" #NT!
- travel_events.2015.a_insulted_tt: "Hakarete uğramış" #NT!
- travel_events.2015.a_insulted_desc: "[quarry_guide.GetShortUIName] hakarete uğradı" #NT!
- travel_events.2015.b: "Şu bozuk para kesesine bak..." #NT!
- travel_events.2015.b_flavor: "Rüşvet veriyorsun [quarry_guide.GetShortUIName]" #NT!
- #Visit a hill farm - Bull rush! #NT!
- travel_events.2016.t: "Senin İçin Zorba Mı?" #NT!
- travel_events.2016.desc: "Nazik böğürmeler ve gübre kokusu, [ROOT.Char.GetCurrentLocation.GetName]'ın yamaç otlaklarının yolcuya sunduğu tek şey değil. Ayrıca çığlık atan çiftlik işçileri, gürleyen böğürmeler ve önümüzdeki yolda kaçan bir boğa da var.\n\nDev yaratık büyük bir sıkıntı içinde ileri geri koşuyor, ta ki bir kurbana odaklanana kadar: [entourage_member.GetFirstName], [entourage_member.GetHerHis] panikleyen atın üzerinde.\n\nCanavarı arkasında tutmak için açık bir kapı var — içimizden birinin onu cezbedecek kadar cesarete ihtiyacı var!" #NT!
- travel_events.2016.a: "Burada, seni [bull_loc.Custom('InsultAdjective')] boğa!" #NT!
- travel_events.2016.a_captured.tt: "Yakalandı" #NT!
- travel_events.2016.a_captured.desc: "Boğayı başarıyla yakaladın" #NT!
- travel_events.2016.a_wounded.tt: "$travel_events.2001.c_failure.tt$" #NT!
- travel_events.2016.a_wounded.desc: "Boğa yakalanır ama sen yaralanırsın" #NT!
- travel_events.2016.b: "[guard_type_character.GetFirstNameNoTooltip], #EMP bir şeyler yap!#!" #NT!
- travel_events.2016.b_putdown.tt: "Aşağıya Koymak" #NT!
- travel_events.2016.b_putdown.desc: "[guard_type_character.GetShortUIName] boğayı acısından kurtarır" #NT!
- travel_events.2016.b_wounded.desc: "[guard_type_character.GetShortUIName] darbe alır" #NT!
- travel_events.2016.c: "Riske girmeyelim." #NT!
- travel_events.2016.c_escaped.tt: "Kaçtı" #NT!
- travel_events.2016.c_escaped.desc: "[entourage_member.GetShortUIName] boğanın saldırısından kıl payı kurtuluyor" #NT!
- travel_events.2016.c_wounded.desc: "[entourage_member.GetShortUIName] yaralanır" #NT!
- #Visit a 'haunted' mansion (farm estate) - Enter at your own peril #NT!
- travel_events.haunted_manor.t: "'Perili' Malikane" #NT!
- travel_events.2017.t: "$travel_event_prefix$ $travel_events.haunted_manor.t$" #NT!
- travel_events.2017.desc: "[ROOT.Char.GetCurrentLocation.GetName]'daki malikanenin koridorlarında yürürken, [estate_character.GetTitledFirstName] bana dönüyor. "Malikanenin bu kısmının perili olduğunu söylüyorlar, benim [ROOT.Char.GetLadyLord]."\n\nTereddüt ederek etrafa bakıyorum. Salon beklediğimden biraz daha karanlık, direklerinde mumlar titriyor.\n\nEski yemek salonunda durduğumuzda, [estate_character.GetFirstNameNoTooltip] tekrar bana dönüyor, bu sefer sırıtarak. "#EMP perili#! malikanesini gezmek ister misin?"" #NT!
- travel_events.2017.a: "Ah, #EMP ilgi çekici!#!" #NT!
- travel_events.2017.a_tt: "Malikaneye giriyorsun" #NT!
- travel_events.2017.b: "Bu gerçekleşmiyor." #NT!
- travel_events.2017.b_tt: "Malikaneyi terk ediyorsun" #NT!
- #Go with the pack or explore on your own? #NT!
- travel_events.2018.t: "$travel_events.haunted_manor.t$: İleriye Doğru Bir Yol" #NT!
- travel_events.2018.desc: "Karanlık ve ıssız bir koridorda yürüyoruz. Karşımıza çıkan birkaç mobilyanın hepsi çarşaflarla kaplı, bu da hayaletvari atmosfere katkıda bulunuyor.\n\nBu... bir... fare miydi? Maiyetime yetişmek için acele ediyorum.\n\n[estate_character.GetTitledFirstName|U] bize doğru dönüyor, [estate_character.GetSheHe] "... ve buradan, lordlarım ve leydim." sözcüklerini söylerken gözlerini kısarak bakıyor." #NT! #NT!
- travel_events.2018.a: "Rotaya sadık kalmak daha iyi." #NT!
- travel_events.2018.a_tt: "Sen maiyetinle kal" #NT!
- travel_events.2018.b: "Peki bu köşe ne şimdi..." #NT!
- travel_events.2018.b_tt: "İlginizi çekebilecek bir şey bulabilirsiniz" #NT!
- travel_events.2018.c: "Burdan gidiyorum!" #NT!
- #Oh look, someone is trying to murder you #NT!
- travel_events.2019.t: "$travel_events.haunted_manor.t$: Malikanede İhanet" #NT!
- travel_events.2019.desc: "Soldaki patikadan aşağı doğru ilerliyorum, alçak bir kemerden içeri giriyorum. Önümde hafifçe aralık bir tuzak kapı var.\n\nAşağıdan gelen titrek ışıklar yoğun karanlığı bölüyor. Merdivenlerden dikkatlice aşağı iniyorum, sadece... #EMP hançerli örtülü bir birey mi?!#!\n\nI suikastçı hızla bana yaklaşırken umutsuzca etrafımı tarıyorum." #NT!
- travel_events.2019.a: "Arkana bak!" #NT!
- travel_events.2019.a_tt: "Suikastçının üzerine dolabı itmeye çalışın" #NT!
- travel_events.2019.a_retaliate.tt: "Misilleme" #NT!
- travel_events.2019.a_retaliate.desc: "Dolap suikastçının kafatasını eziyor" #NT!
- travel_events.2019.a_retaliate.effect_tt: "Suikastçı öldü" #NT!
- travel_events.2019.a_death.desc: "Sen ölürsün" #NT!
- travel_events.2019.b: "Cebinizi parayla doldurabilirim!" #NT!
- travel_events.2019.b_tt: "Suikastçıya rüşvet verme girişimi" #NT!
- travel_events.2019.b_paid_off.tt: "Ödenmiş" #NT!
- travel_events.2019.b_paid_off.desc: "Suikastçıya ödeme yapılır ve kaçar" #NT!
- travel_events.2019.a_paid_off.effect_tt: "Suikastçı kaçıyor" #NT!
- travel_events.2019.c: "Hadi bakalım, köpek!" #NT!
- travel_events.2019.c_tt: "Suikastçıyı harekete geçir" #NT!
- travel_events.2019.c_retaliate.desc: "Sen suikastçıyı öldür" #NT!
- travel_events.2019.expose_effect_tt: "Ajan Açığa Çıktı" #NT!
- #You found a very weird mendicant character #NT!
- travel_events.2020.t: "$travel_events.haunted_manor.t$: Hangi Cadı?" #NT!
- travel_events.2020.desc_witch: "Aniden sağımdaki dar geçidi keşfetme isteği duyuyorum. Koridorda yürürken, açık bir kapının sıcak parıltısı beni karşılıyor.\n\nOda her türlü mutfak eşyasıyla dolu. Belirli bir ot yelpazesi, imbikler, potalar, mataralar, tencereler, kazanlar... Simyanın muhteşem bir temsili.\n\n[mendicant_character.GetFirstNamePossessive] gülümseme beni karşılıyor. "Merhaba dostum [ROOT.Char.Custom('SisterBrother')]. Birisi kapımı karartalı uzun zaman oldu. Bir içecek ister misin?" [mendicant_character.GetSheHe|U] kazana doğru işaret ediyor [mendicant_character.GetSheHe] şu anda emziriyor." #NT!
- travel_events.2020.desc: "Gruptan ayrılıp daha da karanlık bir koridordan geçerek bir kapıya geliyorum. Kenarlardan ışık sızdığını görüyorum.\n\nKapıyı yavaşça itiyorum ve alçak bir tıslama sesiyle karşılaşıyorum. Kitaplar, şişeler ve her türlü kimya aletiyle dolu kalabalık odanın ortasında bir [mendicant_character.GetWomanMan] duruyor.\n\n[mendicant_character.GetSheHe]'in baktığı kazandan kötü bir koku geliyor. [mendicant_character.GetHerHis] Başını çevirmeden, [mendicant_character.GetSheHe] "Biraz ister misin? Genellikle harikalar yaratır." diyor." #NT!
- travel_events.2020.a: "O çaydan bir damla bile umurumda değil." #NT!
- travel_events.2020.b: "Mahkememde işe yarayabilirsin, biliyorsun." #NT!
- travel_events.2020.c: "Şimdi biraz tadın; sonra çay." #NT!
- travel_events.2020.d: "Şey... Tura hangi yoldan gidilir?" #NT!
- #You found a shiny bauble #NT!
- travel_events.2021.t: "$travel_events.haunted_manor.t$: Ödünç Alınan Bir Şey" #NT!
- travel_events.2021.desc_intro: "Dar bir kapıdan içeri giriyorum ve kapalı pencerelerden gelen loş bir parlaklıkla karşılanıyorum. Odanın eski bir çalışma odası olduğu anlaşılıyor." #NT!
- travel_events.2021.desc_illustrious: "\n\nDikkatim hemen odanın ortasındaki bir kaide üzerine dikkatlice yerleştirilmiş olan bozulmamış [new_trinket.GetName]'a yöneliyor. Ona ihtiyatla yaklaşıyorum.\n\nGerçekten bir sanat eseri, her ayrıntısı bir diğerinden daha muhteşem. Bir an güzelliğine hayran kalıyorum." #NT!
- travel_events.2021.desc_famed: "\n\nOdanın etrafına bakıyorum ve ustalıkla yapılmış bir [new_trinket.GetName]'ı fark etmemek elde değil. Bir kaide gibi görünen şeyin üzerine yerleştirilmiş ve dikkatimi çekiyor.\n\nBu parça gerçekten de böyle açıkta olmamalı, yağmacılar ve hırsızlar için gerçek bir hedef. Dikkatlice yaklaşıyorum." #NT!
- travel_events.2021.desc_masterwork: "\n\nOdanın tam ortasında bir kaide üzerinde [new_trinket.GetName] duruyor. Ona dikkatle yaklaşıyorum.\n\nBunu kim almış olabilir? Saklandığı yeri göz önünde bulundurduğumuzda, dikkate değer derecede iyi durumda." #NT!
- travel_events.2021.desc_common: "\n\nGözlerim yeni ortama alıştığında, pencerenin yanındaki bir masanın üzerinde duran ilginç bir nesne fark ediyorum.\n\n[new_trinket.GetName] bu dünyada pek bir şeye benzemiyor olabilir, ancak içine giren işçiliği tanıyorum. Sağlam bir iş." #NT!
- travel_events.2021.desc_bad: "\n\nOdayı inceliyorum, pencerenin sağladığı ek ışık için minnettarım. Ayrılmak üzereyken köşedeki moloz yığınının üzerinde bir şey fark ediyorum.\n\n Bu... #EMP bir şey mi?#! Bir amaçla mı? Bir an tereddüt ediyorum." #NT!
- travel_events.2021.a: "Bu, koleksiyonuma mükemmel bir katkı." #NT!
- travel_events.2021.a_bad: "... zorunda mıyım?" #NT!
- travel_events.2021.b: "Daha iyi olmaz sanırım." #NT!
- travel_events.2021.b_tt: "[new_trinket.GetName]'ı görmezden geliyorsun" #NT!
- #Resolution: You were joshed / You found a bauble / You survived the murder attempt / You came back from the mendicant #NT!
- travel_events.2022.t: "$travel_events.haunted_manor.t$: Güvende ve Sağlam" #NT!
- travel_events.2022.desc_pack: "Bir sonraki odaya bir kemerden geçerken, büyük bir şekil aniden bize doğru sallanarak geliyor. Tüm grup zıplıyor ve ciyaklıyor.\n\nYukarı baktığımda, karanlık figür karanlık bir çarşafa sarılı bir iskelet gibi görünüyor. [estate_character.GetTitledFirstName|U] gülüp bize sırıtırken kaşlarımı çattım.\n\n"Hepinizin yüzlerindeki ifadeyi görmeliydiniz, efendim ve hanımlar!" [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('entourage_member_one'))], [entourage_member_one.GetTitledFirstName], gözle görülür şekilde tedirgin ve elini kaldırarak [estate_character.GetTitledFirstNameNoTooltip]'e yaklaşıyor." #NT!
- travel_events.2022.desc_murder: "Bir suikastçıdan yeni kurtulmuş olmanın verdiği şaşkınlıkla sendeleyerek ayağa kalktım. #EMP Az önce ne oldu?#!\n\nTrembling, Merdivenden yukarı çıkıyorum ve koridordan yemek odasına doğru dönüyorum. Stresimin yerini kısa sürede öfke alıyor. #EMP [estate_character.GetTitledFirstName] de bu işin içinde miydi?#!\n\nAs Nihayet toplanmış gruba ulaştım, kemerden sarkan örtülü iskeleti zar zor fark ettim.\n\nGözlerim öfkeyle doldu, bana bakan [estate_character.GetFirstNameNoTooltip]'e baktım. bir kafa karışıklığı." #NT!
- travel_events.2022.desc_mendicant: "Dilencinin odasından ayrıldıktan sonra, gürültüyü kolayca takip ederek ana odaya geri döndüm.\n\nGrup tedirgin ama rahatlamış görünüyordu ve üstlerindeki kemerde asılı duran karanlık bir şekil gördüm. [estate_character.GetTitledFirstName|U] hızla arkasını döndü ve beni görünce hafifçe sıçradı.\n\n"Benim [ROOT.Char.GetLadyLord]'im! Tek başına mıydın? Bu güvenli değil, biliyorsun!" [estate_character.GetSheHe|U] gözlerini kıstı [estate_character.GetHerHis]" #NT!
- travel_events.2022.desc_mendicant_recruit: "Ben ve yeni arkadaşım [mendicant_character.GetTitledFirstName], [mendicant_character.GetHerHis] karargahından ayrılıp ana odadaki gruba geri dönüyoruz.\n\n[mendicant_character.GetFirstNameNoTooltip] homurdanıyor, [mendicant_character.GetSheHe] grubun içinden geçmiş olması gereken kemerden sarkan karanlık bir figür fark ediyor ve rehberimiz [estate_character.GetTitledFirstName]'ün dönmesine neden oluyor.\n\n[estate_character.GetHerHis|U]'in gözleri fal taşı gibi açılıyor, [estate_character.GetSheHe] [mendicant_character.GetFirstNameNoTooltip]'yi fark ediyor. "Kim bu #EMP!#! Benim [mendicant_character.GetHerHis]0, böyle kaçamazsın! Güvenli değil!"" #NT!
- travel_events.2022.desc_bauble: "Cebimde yeni eşyamla, karanlık ve dar koridorlarda dolaşıyorum. Sonunda grubun geri kalanını malikanenin sonundaki yemek odasında buluyorum.\n\nOdanın kemerlerinden birinden büyük, karanlık bir figür sarkıyor ve bunun ne işe yarayacağını merak etmeden duramıyorum. Ayrıca, diğerleri biraz tedirgin görünüyor... ?\n\n[estate_character.GetTitledFirstName|U] sarsılıyor ve bana doğru dönüyor. "Benim [ROOT.Char.GetLadyLord]! Ne yaptın? Bu karanlık koridorlar tek başına güvenli değil!"" #NT!
- travel_events.2022.desc_joshed: "Karanlıkta tökezleyerek ilerliyorum, karanlığın bende uyandırdığı hafif panik hissini görmezden gelmeye çalışıyorum. Bir sonraki kapıdan aceleyle geçiyorum, grubu bulmaya çalışıyorum...\n\n...ve #EMP aniden#! büyük, karanlık bir şekil üstüme doğru uçuyor. Şaşkınlıktan bir çığlık atıyorum.\n\nKendime geldiğimde, grubun az önce girdiğim odada durduğunu görüyorum. [estate_character.GetTitledFirstName] kahkahadan nefes almakta zorlanıyor ve beni işaret ediyor. "M... myh [ROOT.Char.GetLadyLord] #EMP *hıh*#! yaptın mı... sen... iyi vakit geçirdin mi?"" #NT!
- travel_events.2022.a: "Az önce #EMP senin organize ettiğin bir cinayet girişiminden kurtuldum!#!" #NT!
- travel_events.2022.a_slain.tt: "Suçlu Öldürüldü" #NT!
- travel_events.2022.a_slain.desc: "Sen öldürüyorsun [estate_character.GetShortUIName]" #NT!
- travel_events.2022.a_escape.tt: "Suçlu Kaçtı" #NT!
- travel_events.2022.a_escape.desc: "[estate_character.GetShortUIName] seni yaralar ve kaçar" #NT!
- travel_events.2022.b: "Muhafız! Bu şahıs beni öldürmeye yönelik bir komplonun içinde!" #NT!
- travel_events.2022.b_slain.desc: "[estate_character.GetShortUIName], [travel_leader.GetShortUIName] tarafından öldürüldü" #NT!
- travel_events.2022.b_escape.desc: "[estate_character.GetShortUIName] yara [travel_leader.GetShortUIName] ve kaçış" #NT!
- travel_events.2022.c: "Evde cadı aramak isteyebilirsiniz." #NT!
- travel_events.2022.d: "Aslında bu cadıyı buldum, [mendicant_character.GetFirstNameNoTooltip]." #NT!
- travel_events.2022.e: "Bana gayet sıradan bir ev gibi görünüyor." #NT!
- travel_events.2022.f_pack: "Benim karışmamam lazım." #NT!
- travel_events.2022.f: "Sen düzenbazsın!" #NT!
- travel_events.2022.g_pack: "[entourage_member_one.GetFirstNameNoTooltip], yapma." #NT!
- travel_events.2022.g: "Ah. Haha, evet kesinlikle!" #NT!
- #You ratted out the witch; have a curse(?) dream #NT!
- travel_events.2024.t: "$travel_events.haunted_manor.t$: Sana Veba" #NT!
- travel_events.2024.desc: "[mendicant_character.GetFirstName] bana bakıyor. [mendicant_character.GetSheHe|U] bana bakmaya devam ediyor. Koridorlardan koşarak kaçmaya çalışıyorum — ama [mendicant_character.GetSheHe] beni takip ediyor. [mendicant_character.GetHerHis|U] göz her yerde.\n\n"Ben... biliyorum..." [mendicant_character.GetSheHe] fısıldıyor. Koşmak için döndüğümde, tökezliyorum ve bin mumun bile aydınlatamayacağı kadar karanlık bir çukura düşüyorum. Düşmeye, düşmeye devam ediyorum...\n\nBirdenbire ter içinde uyanıyorum." #NT!
- travel_events.2024.a: "Hepsi... kötü bir rüya mıydı?" #NT!
- #Visit your own farm estate - Tax or don't tax your hospitable subject #NT!
- travel_events.2025.t: "$travel_event_prefix$ Zarif Ev Sahibi" #NT!
- travel_events.2025.desc:0 "Arriving sometime before nightfall at the farm estates in [ROOT.Char.GetCurrentLocation.GetName], [estate_owner.GetFirstName] plays the role of a most gracious host tending to all our needs.\n\nLater in the evening, a feast is hosted in my honor and the [ROOT.Char.Custom('RegionalDrink')] figuratively keeps flowing until we start seeing signs of dawn in the sky.\n\nThe morning after, I am approached by [estate_owner.GetFirstNameNoTooltip]: "[ROOT.Char.GetCurrentLocation.GetName]'daki çiftlik arazisine akşam karanlığı çökmeden önce varan [estate_owner.GetFirstName], tüm ihtiyaçlarımızı karşılayan en nazik ev sahibi rolünü üstleniyor.\n\nAkşamın ilerleyen saatlerinde, benim şerefime bir ziyafet veriliyor ve [ROOT.Char.Custom('RegionalDrink')] gökyüzünde şafak belirtileri görmeye başlayana kadar mecazi anlamda akmaya devam ediyor.\n\nErtesi sabah, [estate_owner.GetFirstNameNoTooltip] yanıma yaklaşıyor: "Sevgili [ROOT.Char.GetLadyLord], sizi ağırlamaktan büyük keyif aldık ve bu şenlik bizi ileride birçok gece ısıtacak," [estate_owner.GetSheHe] gülümsüyor ve başını sallıyor." #NT! #NT!
- travel_events.2025.a: "... [ROOT.Char.Custom('RegionalDrink')] hisse senediniz vergi oranınıza uyuyor mu?" #NT!
- travel_events.2025.b: "Çok nazik bir ev sahibiydiniz, [estate_owner.GetFirstNameNoTooltip]." #NT!
- travel_events.2025.c: "Karşılığında, size bazı iyileştirme fikirlerimi paylaşmama izin verin." #NT!
- #Visit someone else's farm estate - Pay or don't pay for the hospitality #NT!
- travel_events.2026.t: "$travel_event_prefix$ Ev sahibine bahşiş verin" #NT!
- travel_events.2026.desc_intro: "Öğleden sonra, [ROOT.Char.GetCurrentLocation.GetName]'ın yerel çiftlik arazilerine girerken hızla geceye doğru ilerliyor. Arazi sahibi [estate_owner.GetFirstName] bizi sıcak bir şekilde karşılıyor ve bizim için görkemli bir ziyafet vereceğine söz veriyor.\n\nZiyafet başladıktan sonra," #NT!
- travel_events.2026.desc_carnivore: "kızarmış hayvanlar, güveçler, çorbalar, ekmekler ve benzeri yiyeceklerden oluşan tam bir hayvanat bahçesi." #NT!
- travel_events.2026.desc_vegetarians: "Daha önce hiç duymadığım, sebze bazlı muhteşem bir mutfak." #NT!
- travel_events.2026.desc_outro: "\n\nSabah ben kahvaltımın tadını çıkarırken [estate_owner.GetFirstNameNoTooltip] yanıma yaklaşıyor. "Benim [ROOT.Char.GetLadyLord]'im, dünkü gibi abartılı bir partiye ev sahipliği yapmak #EMP pahalı olabilir...#!"" #NT!
- travel_events.2026.a: "#EMP Çiftliğinize getirdiğim prestij için #EMP siz#! bana #EMP ödeme yapmalısınız#!." #NT!
- travel_events.2026.b: "Tazminatımı vereyim." #NT!
- travel_events.2026.c: "Belki [county_liege.GetTitledFirstNameNoTooltip] ile bir anlaşmaya varabiliriz." #NT!
- travel_events.2026.d: "Nasıl #EMP cesaret edersin#!!" #NT!
- #Visit your own quarry - Encounter hungry workers #NT!
- travel_events.2027.t: "$travel_event_prefix$ Taş Ocağı Kavgası" #NT!
- travel_events.2027.desc: "[ROOT.Char.GetCurrentLocation.GetName]'daki yerel taş ocağına girdiğimde, aç anne babalarına ağır işlerde yardım eden birkaç cılız ve kirli çocuk görüyorum. Bu alanda yiyecek kıt görünüyor.\n\nİnişten biraz daha yukarıda, taş ocağı ustası [foreman_character.GetFirstName], işçilerin sözcüsü gibi görünen [peasant_leader.GetFirstName] ile tartışıyor. "Bu #EMP kabul edilemez#!, m'[foreman_character.GetLadyLord]!" diyor [peasant_leader.GetFirstNameNoTooltip].\n\n"Yeterli yiyecek alamıyoruz ve aylardır aç yatıyoruz. Çocuklarımız açlıktan ölüyor ve bu kadar ağır işler yaparken gücümüz azalıyor. Tek ihtiyacımız olan #EMP en ufak#! zam..." [peasant_leader.GetSheHe|U], [foreman_character.GetFirstName]0 varlığımı fark ettiğinde sesi kısılıyor." #NT!
- travel_events.2027.a: "Güvenli ve beslenmiş çalışanlar daha etkilidir." #NT!
- travel_events.2027.b: "Açlık motivasyonu yüksek tutar." #NT!
- travel_events.2027.c: "Sıraya gir, #EMP köylü.#!" #NT!
- travel_events.2027.d: "Neden ustabaşının yemeğini yemiyorsun?" #NT!
- #Visit someone else's quarry - Encounter an architect #NT!
- travel_events.2028.t: "$travel_event_prefix$ Mimarın Özeti" #NT!
- travel_events.2028.desc: "[budding_architect.GetFirstName], maiyetimiz [ROOT.Char.GetCurrentLocation.GetName]'in taş ocaklarına girdiğinde derin düşüncelere dalmıştır. [budding_architect.GetSheHe|U], büyük, kabaca kesilmiş bir tahta masanın üzerine eğilmiş, bir parşömene bir şeyler çizmeye dalmıştır.\n\nOmzunun üzerinden [budding_architect.GetHerHis]'e doğru eğilerek [budding_architect.GetHerHis]'ün dikkatini çekmiştim. "Benim [ROOT.Char.GetLadyLord]'im! Seni orada fark etmemiştim, içten özür dilerim!"\n\n[budding_architect.GetSheHe]'nın ne yaptığını soruyorum ve [budding_architect.GetFirstNameNoTooltip] cevaplıyor.\n"Ah, inşaat ve temellerin inşası hakkındaki düşüncelerimi yazıyorum. Gördüğünüz gibi, ben tam bir mimarım," [budding_architect.GetSheHe] utangaçça gülümsüyor." #NT!
- travel_events.2028.a_architect: "Bunlar oldukça iyi. Bir tane alacağım!" #NT!
- travel_events.2028.a: "Mimar mı diyorsun? Çizimlerden birini alayım!" #NT!
- holding_blueprint: "Mimar Çizimi" #NT!
- holding_blueprint_desc: "Belirli binaların en verimli şekilde nasıl inşa edileceğine dair bilgi içeren bir çizimin bulunduğu parşömen." #NT!
- travel_events.2028.b: "Yetenekleriniz sarayımda işe yarayacaktır." #NT!
- travel_events.2028.b.tt: "[budding_architect.GetShortUIName] 20 yıl boyunca daha düşük bir maaşla çalışacak" #NT!
- trainee_salary_mod: "Deneyimsiz Maaş" #NT!
- travel_events.2028.c: "Çok...güzel...İyi çalışmalar." #NT!
- #Visit a cereal field - Encounter a heathen #NT!
- travel_events.2029.t: "$travel_event_prefix$ Uyanış" #NT!
- travel_events.2029.desc: "Gece yarısıydı ve [ROOT.Char.GetCurrentLocation.GetName]'in güneyindeki tahıl tarlalarına vardığımızda bir [crop_circler.GetWomanMan] sıkı bir şekilde çalışıyordu. [crop_circler.GetSheHe|U] büyük ve düz bir tahta parçası ve ağır taşlar kullanarak ekinleri hızla düzleştiriyor gibi görünüyordu.\n\n[crop_circler.GetWomanMan]'ın [crop_circler.GetHerHis] emeğini izlerken kaşlarımı çattım, sonra [crop_circler.GetSheHe]'in tam olarak ne yaptığını sordum.\n\n[crop_circler.GetSheHe|U] yüzünü buruşturdu, sonra hepimizin uyanıp gerçek efendilerimizle tanışmamız gerektiği ve sahte [crop_circler.GetFaith.GetReligion.GetAdjectiveNoTooltip] öğretilerinin arkasına saklanmamamız gerektiği hakkında uzun bir nutuk çekmeye başladı. Şaşkınlıkla birkaç adım geri çekildim." #NT!
- travel_events.2029.a: "Bırak artık şunu, zındık!" #NT!
- travel_events.2029.b: "[ROOT.Char.GetFaith.GetReligion.GetNameNoTooltip]'ı kirletmeye nasıl cesaret edersin!" #NT!
- travel_events.2029.c: "Bana bunlardan daha fazlasını anlat #EMP gerçek ustalar#!." #NT!
- travel_events.2029.d: "Hımm... tamam." #NT!
- #Cereal field potential follow-up #NT!
- travel_events.2030.t: "$travel_event_prefix$ İnanmayan Birinin İtirafları" #NT!
- travel_events.2030.desc: "Sabahleyin, [entourage_chaplain.GetTitledFirstName] yanıma geldi, [entourage_chaplain.GetHerHis] ellerini ovuşturarak. "Benim [ROOT.Char.GetLadyLord] ve [entourage_chaplain.Custom2('RelationToMe', ROOT.Char)], yapmam gereken en korkunç itirafım var."\n\n[entourage_chaplain.GetSheHe|U] derin bir iç çekti. "Dün geceden beri böyle... kesinlikle çılgınca... öğretileri benimsemesem de [crop_circler.Custom('GetLassLad')] şüphelerim oldu.#!" [entourage_chaplain.GetFirstNameNoTooltip] bana yakından baktı, [entourage_chaplain.GetHerHis] ikilemiyle ilgili sempati aradı.\n\n"Gerçekten [entourage_chaplain.GetHerHis]0 var olduğundan ve bizi izlediğinden emin değilim." [entourage_chaplain.GetSheHe|U] dramatik bir duraklamayla bitirdi." #NT!
- travel_events.2030.a: "Sorun değil." #NT!
- travel_events.2030.b: "Bu #EMP kabul edilemez#!!" #NT!
- #Visit another cereal field - Encounter a gardener #NT!
- travel_events.2031.t: "$travel_event_prefix$ Dünyanın Rahmi" #NT!
- travel_events.2031.desc: "[ROOT.Char.GetCurrentLocation.GetName] tarlaları görülmeye değer bir manzara. Her ürün çiçek açmış; her yaprak yeşil; her sap yemyeşil.\n\nYeşilliğin kaynağını hemen buldum ve bir tarlada duran, dinleyicilerden oluşan bir topluluğa bir tür ders veren bir [gardener_character.GetWomanMan] gördüm. "Benim adım [gardener_character.Custom('MistressMaster')] [gardener_character.GetFirstName]."\n\n[gardener_character.GetSheHe|U] beni uzaktan fark etti ve bana doğru döndü. "Bahçecilik bilgim engin, evet, kıyaslanamayacak kadar engin — bu yüzden biraz kalın ve dinleyin."" #NT!
- travel_events.2031.a: "Beni meraklandırdın!" #NT!
- travel_events.2031.a_down_to_earth.t: "Gerçekçi" #NT!
- travel_events.2031.b: "[ROOT.Char.GetTitleAsNameNoTooltip|U]? #EMP bahçecilik yapıyor#!?" #NT!
- #Visit a ramparts/forest fort - Encounter a herbalist/physician #NT!
- travel_events.2032.t: "$travel_event_prefix$ Sizin İçin Bir Ot..." #NT!
- travel_events.2032.desc: "[ROOT.Char.GetCurrentLocation.GetName] [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip|l] zirvesindeki etkileyici savunma yapısı gerçekten bir şey. Dış çevrede dolaşırken, uzakta tuhaf bir kişi fark ediyorum.\n\n[herbalist_character.GetSheHe|U], [herbalist_character.GetHerselfHimself]'e mırıldanıyor gibi görünüyor, bu arada çömelmek ve çeşitli türlerde otlar gibi görünen şeyleri toplamak için duruyor. Sanki [herbalist_character.GetSheHe], #EMP otlar#!?\n\nI ile konuşuyormuş gibi, [herbalist_character.GetHerHim]'ye dikkatlice yaklaşıyor ve [herbalist_character.GetSheHe], avucunda sergilenen çeşitli otlarla yukarı bakıyor. [herbalist_character.GetHerHis]'un gözlerinin ardında, dile getirilmeyen bir soru soran bir merak kıvılcımı fark ediyorum." #NT!
- travel_events.2032.a: "Peki bu ot ne işe yarıyor?" #NT!
- travel_events.2032.a_poisonous.tt: "Bir sonraki [GetScheme('murder').GetTypeName] [scheme|E]'inize uygulayabileceğiniz bazı zehirli otlar elde edersiniz." #NT!
- travel_events.2032.a_poisonous.t: "Tedarik Edilen Otlar" #NT!
- travel_events.2032.a_poisonous.desc: "Bazı zehirli otlar buldun" #NT!
- travel_events.2032.a_learning.tt: "Beceri Geliştirildi" #NT!
- travel_events.2032.b: "Benim saray hekimim olmaya ne dersiniz?" #NT!
- travel_events.2032.c: "Bu benim için zaman kaybı." #NT!
- #Visit some hunting grounds - If you have a prisoner with you; manhunt! #NT!
- travel_events.2033.t: "$travel_event_prefix$ Mahkum Kaçtı!" #NT!
- travel_events.2033.desc_intro: "[ROOT.Char.GetCurrentLocation.GetName] avlanma alanına girer girmez muhafızlarım soluk soluğa ve hafif paniklemiş bir şekilde koşarak yanıma geldiler. "Benim [ROOT.Char.GetLadyLord]'im! O [ prisoner.Custom('InsultAdjective')] [prisoner.GetTitledFirstName] zincirlerimizden kurtuldu!"\n\nBakışlarım hemen ormanın kenarına kaydı, hareket belirtileri arıyordum ama hiçbir şey bulamadım." #NT!
- travel_events.2033.desc_manhunt: "Bu sadece bir şey ifade edebilir. #EMP İnsan avı!#!\n\n" #NT!
- travel_events.2033.desc_manhunt_previous: "Son insan avımı hatırladığımda hissettiğim o sevinç kıvılcımı beni tedirgin ediyor. Heyecan. Tehlike. Sabırsızlanıyorum." #NT!
- travel_events.2033.desc_manhunt_first: "Uzun zamandır doğanın en zor yakalanan ve tehlikeli avına el atmayı istiyordum. Ağzımın köşesinde bir gülümseme beliriyor." #NT!
- travel_events.2033.desc: "Hapishaneden kaçmanın verdiği şaşkınlıkla durumu dikkatlice değerlendiriyorum.\n\nElbette kaçan bir mahkumu adalete teslim etmeliyiz, değil mi?" #NT!
- travel_events.2033.a_manhunt: "#EMP Heyecan verici!#!" #NT!
- travel_events.2033.a_cannibal: "Ah evet, mahkumlar; diğer beyaz et." #NT!
- travel_events.2033.a_manhunt_tt: "İnsan avından kaçan bir hedef intikam için geri dönebilir" #NT!
- travel_events.2033.a_manhunt.tt: "İnsan Avı Gerçekleştirildi" #NT!
- travel_events.2033.a_manhunt.desc: "[prisoner.GetShortUIName] avlandı ve öldürüldü" #NT!
- travel_events.2033.a_caught_trophy.desc: "[prisoner.GetShortUIName] avlanır ve bir kupaya dönüştürülür" #NT!
- travel_events.2033.a_caught_eaten.tt: "Mahkum yendi" #NT!
- travel_events.2033.a_caught_eaten.desc: "[prisoner.GetShortUIName] yakalanır ve yenir" #NT!
- travel_events.2033.a_escaped.tt: "Mahkum Kaçtı" #NT!
- travel_events.2033.a_escaped.desc: "[prisoner.GetShortUIName] kavrayışınızdan kaçıyor" #NT!
- travel_events.2033.a_killed.desc: "[prisoner.GetShortUIName] seni öldürür ve kaçar" #NT!
- travel_events.2033.a_accident.desc: "Sen tökezleyip boynunu kırıyorsun" #NT!
- manhunt_skull_cup: "İnsan Avı Kafatası Kupası" #NT!
- #AGOT Modified #NT!
- #manhunt_skull_cup_desc: "Bu kafatası kupası, [ROOT.Char.GetCurrentLocation.GetName] [ ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip|l]'de [new_skull_cup.MakeScope.Var('skull_origin').Char.GetUIName]'ın başarılı insan avından elde edilen bir kupadır." #NT!
- manhunt_skull_cup_desc: "Bu kafatası kupası, [ROOT.Char.GetCurrentLocation.GetName] [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip|l]'de [new_skull_cup.MakeScope.Var('skull_origin').Char.GetUIName]'ın başarılı insan avından elde edilen bir kupadır." #NT!
- manhunt_skull_cup_desc_fallback: "Bu kafatası kupası, insan avının başarılı bir şekilde gerçekleştirilmesinin bir ödülüdür." #NT!
- travel_events.2033.b: "... Sanırım [prisoner.GetHerHim]'ı yakalamalıyız?" #NT!
- travel_events.2033.b_caught.tt: "Tutuklu Yakalandı" #NT!
- travel_events.2033.b_caught.desc: "[prisoner.GetShortUIName] yakalandı" #NT!
- travel_events.2033.b_caught.effect: "[prisoner.GetShortUIName] senin esirin olarak kalır" #NT!
- travel_events.2033.c: "[prisoner.GetFirstNameNoTooltip]'ın koşmasına izin verin. Vahşi doğa [prisoner.GetHerHim]'i zaten alacaktır." #NT!
- #Your escaped manhunted prisoner seeks revenge #NT!
- travel_events.2034.t: "$travel_event_prefix$ Ne Ekersen Onu Biçersin..." #NT!
- travel_events.2034.desc_intro: "Kampımızda [ROOT.Char.GetCurrentLocation.GetName] [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip|l]'de sabah doğmaya başlıyor. Esniyorum ve yavaşça geriniyorum, yan tarafıma dönüyorum.\n\nUykulu bir şekilde kalkıp çadırın girişine yaklaşıyorum ve temiz sabah havasını içime çekiyorum. Aniden, boynumun arkasındaki tüyler diken diken oluyor," #NT!
- travel_events.2034.desc: "ve göz ucuyla [vengeful_prisoner.GetTitledFirstName]'ı gördüm, bıçak çekilmiş.\n\n[vengeful_prisoner.GetSheHe|U] alaycı bir şekilde gülümsüyor. "[ROOT.Char.GetTitledFirstNameNoTooltip|U], seni tekrar görmek güzel. Bu sefer #EMP I#! insan avını yapacağım." Gözlerimi kırpıştırdım, bir anlığına sersemledim." #NT!
- travel_events.2034.desc_long_time: "ve göz ucuyla bir [vengeful_prisoner.GetWomanMan] görüyorum, bıçak çekilmiş.\n\n[vengeful_prisoner.GetSheHe|U] alaycı bir şekilde gülümsüyor. "Beni hatırlamıyorsun, değil mi? Ben #EMP seni#!, [ROOT.Char.GetTitledFirstNameNoTooltip] ve senin #EMP sadist#! insan avı uygulamalarını hatırlıyorum." Belirsiz bir anı geri geliyor aklıma. Kaçan mahkum #EMP [vengeful_prisoner.GetTitledFirstName]#!...?" #NT!
- travel_events.2034.a: "Bunu yapmak zorunda değilsin!" #NT!
- travel_events.2034.a_overpowered_desc: "Sen üstünsün [vengeful_prisoner.GetShortUIName]" #NT!
- travel_events.2034.a_overpowered_effect: "Kadere sen karar verirsin [vengeful_prisoner.GetShortUINamePossessive]" #NT!
- travel_events.2034.a_death_desc: "$travel_events.2019.a_death.desc$" #NT!
- travel_events.2034.b: "#EMP [bodyguard.GetFirstNameNoTooltip]!!#!" #NT!
- travel_events.2034.b_overpowered_desc: "[bodyguard.GetShortUIName] [vengeful_prisoner.GetShortUIName]'i alt eder" #NT!
- travel_events.2034.b_death_tt: "Kaçan Mahkum Öldürüldü" #NT!
- travel_events.2034.b_death_desc: "[bodyguard.GetShortUIName] öldürme [vengeful_prisoner.GetShortUIName]" #NT!
- #Decide their fate #NT!
- travel_events.2035.t: "...Etrafında geliyor" #NT!
- travel_events.2035.desc: "[vengeful_prisoner.GetTitledFirstName|U] önümde diz çökmüş, kısıtlanmış ve hareket edemiyor. İlk şoktan sonra, muhafızlarım çadırı ağzına kadar dolduruyor.\n\n[vengeful_prisoner.GetSheHe|U] inatla yere bakıyor ve gözlerimle buluşmayı reddediyor. Bununla ne yapmalıyım [vengeful_prisoner.Custom('InsultNoun')]?" #NT!
- travel_events.2035.a: "Ölüm senin hak ettiğin şey." #NT!
- travel_events.2035.b: "Tekrar hapse girmelisin." #NT!
- travel_events.2035.c: "Öbür yanağımı da çevireceğim." #NT!
- #Your escaped/reformed prisoner is... pretty peaceful actually #NT!
- travel_events.2036.t: "$travel_event_prefix$ Bir Son Mu?" #NT!
- travel_events.2036.desc_intro: "[ROOT.Char.GetCurrentLocation.GetName]'daki bir mezranın kapısından giriyoruz. İnsanlar burada huzur içinde görünüyor, günlük hayatlarını sürdürüyor ve birbirlerine yardım ediyorlar.\n\nKöylüleri gelişigüzel incelerken, içimde aniden bir tanıma hissi beliriyor." #NT!
- travel_events.2036.desc_reformed: "Yerel tapınakta, kaçak mahkumum [peaceful_prisoner.GetTitledFirstName]'ı, ruhani liderle nazik bir sohbette anında tanıdım.\n\nNe kadar da komik bir tesadüf! [peaceful_prisoner.GetSheHe]'in din adamlarına basit işlerde yardım ettiğini, görünüşte huzurlu olduğunu görünce gözlerimi diktim." #NT!
- travel_events.2036.desc: "Kaçan mahkumum [peaceful_prisoner.GetTitledFirstName]'ı hemen tanıdım, gülüyordu ve kırsal köyün yaşlı sakinlerinden birine yardım ediyordu.\n\n[peaceful_prisoner.GetSheHe|U], [peaceful_prisoner.GetHerHis] durumundan memnun görünüyor." #NT!
- travel_events.2036.a: "Yaşa ve yaşat." #NT!
- travel_events.2036.a_criminal: "Sanırım suçlular bile düzelebilir." #NT!
- travel_events.2036.a_reformed: "Yeter ki [peaceful_prisoner.GetSheHe] bir daha hayatıma kastetmesin." #NT!
- travel_events.2036.b: "[peaceful_prisoner.GetTitledFirstNameNoTooltip|U] benimle birlikte geliyor #EMP ben#!." #NT!
- travel_events.2036.b_criminal: "Bir kere suçlu olan, her zaman suçludur." #NT!
- travel_events.2036.b_reformed: "#EMP ...hayır#!, [peaceful_prisoner.GetSheHe]'nin burada olduğunu bilmek beni güvende hissettirmiyor." #NT!
- #Visit some hunting grounds - Sadistic county holder is manhunting #NT!
- travel_events.2037.t: "$travel_event_prefix$ İnsan Avcısı" #NT!
- travel_events.2037.desc:0 "We encounter [2037_county_liege.GetTitledFirstName], the ruler of [ROOT.Char.GetCurrentLocation.GetName], and [2037_county_liege.GetHerHis] entourage at the local hunting grounds.\n\nAfter an  exchange of polite greetings, [2037_county_liege.GetSheHe] looks at me with a mischievous grin: "Yerel avlanma alanlarında [ROOT.Char.GetCurrentLocation.GetName]'in hükümdarı [2037_county_liege.GetTitledFirstName] ve [2037_county_liege.GetHerHis] maiyetiyle karşılaşıyoruz.\n\nNazik bir selamlaşmanın ardından [2037_county_liege.GetSheHe] bana yaramaz bir sırıtışla bakıyor: "En asil spora benimle katılmak ister misin," #NT! #NT!
- travel_events.2037.desc_child: "küçük olan?"" #NT!
- travel_events.2037.desc_adult: ""Benim [2037_county_liege.Custom2('RelationToMeShort', ROOT.Char)]'ım?"" #NT!
- travel_events.2037.desc_segway: "[2037_county_liege.GetSheHe|U] ormanın kenarındaki zincirli mahkûma başını sallıyor." #NT!
- travel_events.2037.desc_outro_segway_adult: "\n\n#EMP spor#! [2037_county_liege.GetSheHe]'nin neyi ifade ettiğini çok geçmeden anladım." #NT!
- travel_events.2037.desc_outro_child: "\n\nMerakım kesinlikle arttı. Bu hangi oyun olabilir...? Etiketle?\n\nTeklifi değerlendirirken, [ROOT.Char.Custom2('RelationToMeShort',  SCOPE.sC('entourage_character'))] [entourage_character.GetTitledFirstName]'imin dikkatimi çektiğini ve [entourage_character.GetHerHis] başımı dikkatlice salladığını fark ettim." #NT!
- travel_events.2037.desc_outro_manhunter: "Deneyimli bir insan avcısı olarak bu öneri benim hayal gücümü gıdıklıyor." #NT!
- travel_events.2037.desc_outro: "#EMP İnsan avı.#! Gerçekten tiksiniyorum... yoksa merak mı ediyorum?" #NT!
- travel_events.2037.a: "Yeterince ilgi çekici geliyor..." #NT!
- travel_events.2037.a_child: "Ben oynarım!" #NT!
- travel_events.2037.a_manhunted: "Hadi başlayalım." #NT!
- travel_events.2037.a_your_kill.desc: "Avlanırsın ve öldürürsün [2037_manhunt_prisoner.GetShortUIName]" #NT!
- travel_events.2037.a_their_kill.tt: "[2037_county_liege.GetShortUINameNoTooltip] Öldürmeyi Alır" #NT!
- travel_events.2037.a_their_kill.desc: "[2037_manhunt_prisoner.GetShortUIName], [2037_county_liege.GetShortUIName] tarafından avlanır ve öldürülür" #NT!
- travel_events.2037.b: "Eğer sakıncası yoksa o tutukluyu bir yerde kullanabilirim." #NT!
- travel_events.2037.b_child: "[2037_manhunt_prisoner.GetFirstNameNoTooltip]'ın benimle gelmesini tercih ederim." #NT!
- travel_events.2037.c: "Deli misin?" #NT!
- travel_events.2037.c_child: "Hayır. Bu kötü bir oyun gibi görünüyor." #NT!
- #Visit some hunting grounds - Friendly competition with an entourage member #NT!
- travel_events.2038.t: "$travel_event_prefix$ Gerçek Amaç" #NT!
- travel_events.2038.desc: "Her türlü vahşi yaşamla dolu olan [entourage_character.GetTitledFirstName] ve ben, [ROOT.Char.GetCurrentLocation.GetName]'in avlanmak için muhteşem bir yer olacağı konusunda hemfikiriz.\n\nUygun bir gezi için kalmaya vaktimiz olmasa da, bölgeyi dolaşırken ormanın kenarında bozulmamış bir yabani tavşan görüyorum. Tüylerinde tuhaf işaretler var ve [entourage_character.GetFirstNameNoTooltip]'ye hayvanı incelemesi için işaret ediyorum.\n\n[entourage_character.GetSheHe] tavşanı gördüğünde, [entourage_character.GetSheHe] sırıtıyor. "Dostça bir bahse ne dersin, [entourage_character.Custom2('RelationToMeShort', ROOT.Char)]? O bozulmamış adamı okla vuran kazanır."" #NT!
- travel_events.2038.a: "Bana bir anlaşma gibi geldi!" #NT!
- travel_events.2038.a_your_kill.tt: "Öldürmeyi Sen Alırsın" #NT!
- travel_events.2038.a_your_kill.desc: "Okun tavşanın kalbini kusursuz bir şekilde deldi" #NT!
- travel_events.2038.a_their_kill.tt: "[entourage_character.GetShortUINameNoTooltip] Öldürmeyi Alır" #NT!
- travel_events.2038.a_their_kill.desc: "Tavşan [entourage_character.GetShortUIName] tarafından öldürüldü" #NT!
- lucky_rabbits_paw: "Şanslı Tavşan Pençesi" #NT!
- lucky_rabbits_paw_desc: "[ROOT.Char.GetCurrentLocation.GetName] avlanma alanında [entourage_character.GetTitledFirstName] ile dostça bir avda düşürülen, eşsiz, bakımlı bir tavşanın pençesi." #NT!
- travel_events.2038.b: "#EMP Aman Tanrım#!, Güneş gözüme geliyor!" #NT!
- travel_events.2038.c: "...pft, bunun için zamanım yok." #NT!
- #Follow-up hunt outcome #NT!
- travel_events.2039.t: "$travel_event_prefix$ En Gerçek Amaç" #NT!
- travel_events.2039.desc_child_won: "[entourage_character.GetTitledFirstName] tavşanın peşinden koşuyor, yayı hazır, beceriksizce fırlattığım okların zayıf blöfünden habersiz.\n\nÇalılıklarla biraz boğuştuktan sonra, [entourage_character.GetTitledFirstNameNoTooltip] zaferle cıvıldıyor ve ileriye atılıyor, ok minik gövdesine sıkıca saplanmış, bozulmamış hayvanın leşini alıyor. [entourage_character.GetSheHe] bana doğru ışınlanırken ellerimi çırpıyorum." #NT!
- travel_events.2039.desc_won: "Tavşan görüş alanımızda, ikimiz de yavaşça ama kararlı bir şekilde tavşana yaklaşıyoruz, bir saman parçasını kemirirken minik bedenine nişan alıyoruz. İpimi çekiyorum ve bırakıyorum, ok #EMP doğrudan hayvanın bedenine#!.\n\nThe saplanıyor, ani bir darbe onu birkaç adım fırlatıyor, sonra minik beden hareketsiz bir şekilde yere yığılıyor. Zaferle kükredim ve [entourage_character.GetTitledFirstName] tezahüratıma katıldı. "Güzel atış," [entourage_character.GetSheHe] diye bağırıyor, kupayı almak için öne atılırken." #NT!
- travel_events.2039.desc_lost: "[entourage_character.GetTitledFirstName], atış için tavşana yaklaşmaya çalışırken benden birkaç adım önde. [entourage_character.GetSheHe] hayvana bir ok nişan alırken ve tek bir hızlı hareketle onu doğrudan yaratığın minik bedenine fırlatırken yetişmeye çalışıyorum.\n\n[entourage_character.GetFirstNameNoTooltip] zafer işareti yapıyor ve tavşan yerde cansız bir şekilde giderken bağırıyor ve [entourage_character.GetSheHe] leşi almak için acele ediyor. Takdirimi göstermek için alkışlıyorum." #NT!
- travel_events.2039.a: "Güzel atış!" #NT!
- travel_events.2039.a_trinket.t: "Biblo Kazanıldı" #NT!
- travel_events.2039.a_win: "Bu komikti!" #NT!
- travel_events.2039.a_cynical: "Daha kötülerini gördüm." #NT!
- #The rescued manhunt prisoner from travel_events.2037 turns out to be a psycho #NT!
- travel_events.2040.t: "$travel_event_prefix$ Bir Mola Yakalamak" #NT!
- travel_events.2040.intro: "Bir gece kamp ateşinin yanında otururken başımı kaldırdım ve [2037_manhunt_prisoner.GetTitledFirstName] ile yalnız olduğumu fark ettim. [2037_manhunt_prisoner.GetHerHis|U] gözleri titreyen alevi yansıtıyor ve [2037_manhunt_prisoner.GetSheHe] bana odaklanıyor.\n\n" #NT!
- travel_events.2040.desc_child: ""O korkunç [2037_county_liege.GetWomanMan] neden seni orada öldürmeye çalıştı?" diye patlıyorum. [2037_manhunt_prisoner.GetTitledFirstNameNoTooltip] bir an tereddüt ediyor, sonra [2037_manhunt_prisoner.GetSheHe] cevap verirken bakışlarını kaçırıyor:" #NT!
- travel_events.2040.desc: "Aslında [2037_manhunt_prisoner.GetHerHim]'a [2037_manhunt_prisoner.GetSheHe]'in neden hapse atıldığını hiç sormadığımı fark ettim. Sonra, sanki [2037_manhunt_prisoner.GetSheHe] aklımı okumuş gibi, [2037_manhunt_prisoner.GetTitledFirstNameNoTooltip] mırıldandı:" #NT!
- travel_events.2040.outro: "\n\n"Sanki [2040_previous_victim.GetHerHis] et kurtuluş için haykırıyordu, anlıyor musun?" [2037_manhunt_prisoner.GetHerHis]'in sesine kasvetli bir nostalji yayıldı." #NT!
- travel_events.2040.a: "...bu çok felsefi." #NT!
- travel_events.2040.a_child: "Ben de kötü şeyler yaptım." #NT!
- travel_events.2040.a.flavor: "Deli birinden daha tehlikeli kim olabilir?" #NT!
- travel_events.2040.a.flavor_child: "Eminim [2037_manhunt_prisoner.GetSheHe] bana zarar vermez #EMP #!, değil mi?" #NT!
- travel_events.2040.a.tt: "[2037_manhunt_prisoner.GetShortUIName], [GetCourtPositionType('bodyguard_court_position').GetName()]'iniz olarak ücretsiz çalışacaktır" #NT!
- insane_bodyguard_salary_mod: "Deli Koruma" #NT!
- travel_events.2040.b: "Katillerin yeri parmaklıklar ardındadır." #NT!
- travel_events.2040.b_child: "İnsanları incitmek doğru değildir." #NT!
- travel_events.2040.b.flavor: "Demek [2037_manhunt_prisoner.GetSheHe] bu yüzden hapse atıldı..." #NT!
- travel_events.2040.b.flavor_child: "[2037_manhunt_prisoner.GetTitledFirstNameNoTooltip] beni korkutuyor..." #NT!
- travel_events.2040.c: "#EMP Bir katilin yaşamasına tahammül edemem!#!" #NT!
- travel_events.2040.c.flavor: "Göze göz." #NT!
- travel_events.2040.c_slay.t: "Katil Öldürüldü" #NT!
- travel_events.2040.c_slay.desc: "Sen öldürüyorsun [2037_manhunt_prisoner.GetShortUIName]" #NT!
- travel_events.2040.c_wounded.t: "$travel_events.2001.c_failure.tt$" #NT!
- travel_events.2040.c_wounded.desc: "[2037_manhunt_prisoner.GetShortUIName]'ı öldürürsün ama yaralanırsın" #NT!
- travel_events.2040.c_incapable.t: "Ciddi bir şekilde yaralanmak" #NT!
- travel_events.2040.c_incapable.desc: "Dövüşte ciddi şekilde yaralanırsınız ve [2037_manhunt_prisoner.GetShortUIName] kaçar" #NT!
- travel_events.2040.c_death.desc: "Sen ölürsün" #NT!
- #Ruler Events# #NT!
- #Visiting Ruler: Someone is trying to assassinate the Target Ruler! #NT!
- travel_events_life_or_death.t: "Yaşam yada ölüm" #NT!
- travel_events.2100.t: "$travel_event_prefix$ $travel_events_life_or_death.t$" #NT!
- travel_events.2100.desc_intro: "[ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetName]'a ulaşma çabalarımızda iyi vakit geçiriyoruz ve" #NT!
- travel_events.2100.desc_intro_trees: "[ROOT.Char.GetCurrentLocation.GetName]'ın sık ormanları yerel rehberimizin zekasına rakip olmuyor.\n\nAğaçlar yelpaze gibi açıldığında, önden ilerleyen ikinci bir gezgin grubunu görüyorum." #NT!
- travel_events.2100.desc_intro_hills: "[ROOT.Char.GetCurrentLocation.GetName] [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip|l] yamaçlarını aşarken rüzgâr arkamızdan esiyor.\n\nBizden oldukça ileride, bir başka grup da yamaçtan ilerliyor." #NT!
- travel_events.2100.desc_intro_flats: "[ROOT.Char.GetCurrentLocation.GetName] düzlükleri birkaç anlığına gardımızı indirmemize olanak sağlıyor.\n\nVadinin zirvesine ulaştığımızda ve aşağıya baktığımızda, bir başka maiyetin gayretle ileriye doğru yürüdüğünü fark ediyorum." #NT!
- travel_events.2100.desc_relation_in: "Gözlerimi kısarak baktığımda, o özel topluluğun yöneticisinin" #NT!
- travel_events.2100.desc_negative_segway: "[murder_target.Custom('InsultAdjectiveGeneric')]" #NT!
- travel_events.2100.desc_positive_segway: "benim [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('murder_target'))]" #NT!
- travel_events.2100.desc_relation_out: "[murder_target.GetTitledFirstName]." #NT!
- travel_events.2100.desc_no_relation_traveller: "Sanki manzaranın tadını çıkarıyorlar, adeta neşeleniyorlar ve yerel bölgeyi geziyor gibi görünüyorlar." #NT!
- travel_events.2100.desc_no_relation_liege: "Sanki çevreyi inceliyorlar, notlar alıyorlar ve manzarayı tartışıyorlar." #NT!
- travel_events.2100.desc_trees: "Ama bir şeyler yolunda değil. Ağaç hattını tararken, şüpheli bir şekilde gizlenmiş bir sürü figür de görüyorum, seyahat eden grubun yaklaşmasını bekliyor gibi görünüyorlar." #NT!
- travel_events.2100.desc_hills: "Peki, batıdan yaklaşan, silahları kınından çekilmiş, maskeli atlılar kimdir?" #NT!
- travel_events.2100.desc_flats: "Hala grubu gözlemlediğimizde, silahlarını kaldırmış maskeli atlıların doğudan hızla yaklaştığını görüyoruz!" #NT!
- travel_events.2100.desc_outro: "\n\nBu bir pusuya benziyor ve" #NT!
- travel_events.2100.desc_outro_negative: "Tereddüt ediyorum. [murder_target.GetTitledFirstNameNoTooltip] için kesin ölüm gibi görünen şeye müdahale etmeli miyim?" #NT!
- travel_events.2100.desc_outro_positive: "aklımda hiçbir şüphe yok. [murder_target.GetTitledFirstNameNoTooltip]'ı kurtarmalıyım!" #NT!
- travel_events.2100.desc_outro_default: "Tereddüt ediyorum. Diğer gezginleri korumak gerçekten benim sorumluluğum mu?" #NT!
- travel_events.2100.a: "#EMP I#! neden katılmalı?" #NT!
- travel_events.2100.a_rival: "Hele şükür." #NT!
- travel_events.2100.a_nemesis: "#EMP Sonunda!#!" #NT!
- travel_events.2100.a_stealthy_entourage.tt: "Gizli Çevre" #NT!
- travel_events.2100.a_stealthy_entourage.desc: "Siz ve maiyetiniz gizli kalıyorsunuz" #NT!
- travel_events.2100.a_stealthy_outcome.tt: "Eğer [murder_target.GetShortUIName] hayatta kalırsa, [murder_target.GetSheHe] burada olduğunuzu asla bilemeyecek" #NT!
- travel_events.2100.a_nonstealthy_entourage.tt: "Açığa Çıkmış Entourage" #NT!
- travel_events.2100.a_nonstealthy_entourage.desc: "Varlığınız [murder_target.GetShortUIName] ile not edildi" #NT!
- travel_events.2100.a_nonstealthy_outcome.tt: "Eğer [murder_target.GetShortUIName] hayatta kalırsa, [murder_target.GetSheHe] bunu hatırlayacaktır" #NT!
- travel_events.2100.b: "Harekete geçmeliyim!" #NT!
- travel_events.2100.b.tt: "[murder_target.GetShortUIName] suikast girişimine müdahale ettin" #NT!
- travel_events.2100.b_outcome_tt: "[murder_target.GetShortUIName] bunu hatırlayacak" #NT!
- #Target Ruler: You are being assassinated #NT!
- travel_events.2101.t: "$travel_danger_prefix$ $travel_events_life_or_death.t$, Suikastçılar!" #NT!
- travel_events.2101.desc: "[ROOT.Char.GetCurrentLocation.GetName] topraklarını incelerken, güneş yüksekte ve hafif bir esinti var. Etrafıma bakıyorum ve gökyüzünün çok yukarısında birkaç göçmen kuş dışında bölgenin oldukça ıssız olduğunu düşünüyorum.\n\nBotumu ayarlamak için eğildiğimde, yaklaşan binicileri duyduğumuzda aniden doğruluyorum. Pelerinli figürler her yönden geliyor gibi görünüyor ve farkına varmadan kötü adamlardan biri tam önümde, bıçağını çekmiş ve boğazıma doğru hamle yapıyor!" #NT!
- travel_events.2101.a: "Bu ne cüret!" #NT!
- travel_events.2101.a_guards: "[bodyguard.GetNameNoTooltip]!!" #NT!
- travel_events.2101.a_assassin_death.tt: "Suikastçı Öldürüldü" #NT!
- travel_events.2101.a_bodyguard_kill.desc: "Suikastçı [bodyguard.GetShortUIName] tarafından öldürüldü" #NT!
- travel_events.2101.a_bodyguard_wounded.tt: "Koruma Yaralı" #NT!
- travel_events.2101.a_bodyguard_wounded.desc: "[bodyguard.GetShortUIName] suikastçıyı öldürür ancak yaralanır" #NT!
- travel_events.2101.a_assassin_death.desc: "Sen suikastçıyı öldür" #NT!
- travel_events.2101.a_death.desc: "Sen ölürsün" #NT!
- travel_events.2101.a_ruler_assassinated.tt: "[murder_target.GetShortUIName] Öldü" #NT!
- travel_events.2101.a_ruler_assassinated.desc: "[murder_target.GetShortUIName], [visiting_ruler.MakeScope.Var('assassination_location').GetProvince.GetName]'i ziyaret ederken suikasta uğradı" #NT!
- travel_events.2101.a_ruler_survived.tt: "[murder_target.GetShortUIName] Hayatta Kaldı" #NT!
- travel_events.2101.a_ruler_survived.desc: "[murder_target.GetShortUIName], [visiting_ruler.MakeScope.Var('assassination_location').GetProvince.GetName]'deki suikast girişiminden kurtuldu" #NT!
- #Target Ruler: Wait a minute, didn't I see Visiting Ruler?? #NT!
- travel_events.2102.t: "$travel_danger_prefix$ $travel_events_life_or_death.t$, İhanete Uğradı" #NT!
- travel_events.2102.desc: "Dövüş saatlerce sürüyormuş gibi görünse de gerçekte sadece birkaç dakika sürüyor. Suikastçılar püskürtülüyor ve yara almadan kurtuluyoruz.\n\nSavaş alanını araştırıyorum ve cesetlerden birinde bana karşı hazırlanan cinayet planının kanıtlarını buluyorum. Yüksek farkındalık durumumda ayrıca görüş alanımdan hemen çıkan bir pankartın kaybolduğunu fark ediyorum. [visiting_ruler.GetTitledFirstName]?" #NT!
- travel_events.2102.desc_negative: "\n\nElbette. [visiting_ruler.GetFirstNameNoTooltip] ve [visiting_ruler.GetHerHis] gibi birinden destek beklemek benim için saçmalık olur. [visiting_ruler.GetHerHis] mezarına lanet." #NT!
- travel_events.2102.desc_positive: "\n\nNasıl... [visiting_ruler.GetSheHe]? Ben... [visiting_ruler.GetHerHim]'den daha fazlasını bekliyordum. Gözlerim yarı kapalı, bu ihanetin acısı beni herhangi bir bıçağın yapabileceğinden daha fazla yaralıyor." #NT!
- travel_events.2102.desc_default: "\n\n[visiting_ruler.GetSheHe|U] ihtiyaç duyduğum anda bana yardım etmeden olayların gerçekleştiğini gördünüz mü? Bu agresif, müdahil olmayan duruş gerçekten de kime güvenebileceğinizi veya güvenemeyeceğinizi kanıtlıyor." #NT!
- travel_events.2102.a: "Bu gerçekten [visiting_ruler.GetTitledFirstNamePossessiveNoTooltip] [visiting_ruler.Custom('InsultAdjectiveGeneric')] karakterinden bahsediyor." #NT!
- #Visiting Ruler: Letter event - Target Ruler knows you what you did (or rather, didn't do) #NT!
- travel_events.2103.t: "[murder_target.Custom2('AppropriateGreetingNegative', ROOT.Char )]" #NT!
- travel_events.2103.desc_intro: "[murder_target.Custom2('NegativeSupplimentaryGreeting', ROOT.Char )]" #NT!
- travel_events.2103.desc_negative: "\n\nSenden, son nefesimin [ROOT.Var('assassination_location').GetProvince.GetName] [ROOT.Var('assassination_location').GetProvince.GetTerrain.GetNameNoTooltip|l]'in vahşi doğasında sönüp gitmesini izleme arzusundan daha azını beklemiyordum.\n\nHayat kıvılcımının, senin göz dediğin o pislik çukurlarından nihayet ayrıldığı günü gerçekten de tatyacağım, [visiting_ruler.Custom('InsultAdjectiveGeneric')] [murder_target.Custom2('RelationToMe', SCOPE.sC( 'visiting_ruler' ))]." #NT!
- travel_events.2103.desc_positive: "\n\nNasıl yapabildin, [murder_target.Custom2('RelationToMe', SCOPE.sC( 'visiting_ruler' ))]'ım? Beni [ROOT.Var('assassination_location').GetProvince.GetName] [ROOT.Var('assassination_location').GetProvince.GetTerrain.GetNameNoTooltip|l]'nin ortasında nasıl ölüme terk edebildin? Bunu hatırlayacağım, bundan emin olabilirsin." #NT!
- travel_events.2103.desc_default: "\n\n[ROOT.Char.GetTitledFirstName], herhangi bir iyi ve sadık insandan normal insan nezaketi ve hayata saygı bekliyorum. Beni [ROOT.Var('assassination_location').GetProvince.GetName] [ROOT.Var('assassination_location').GetProvince.GetTerrain.GetNameNoTooltip|l] ortasında ölüme terk etmen ne yazık ki senin tanrı korkusu olmayan bir karaktere sahip olduğunu gösteriyor [ROOT.Char.GetWomanMan]. Bunu hatırlayacağım." #NT!
- travel_events.2103.a: "Sonuçta [murder_target.GetSheHe] #EMP hayatta kaldı#!." #NT!
- #Visiting Ruler: You heroically thwart the assassination of Target Ruler #NT!
- travel_events.2104.t: "$travel_danger_prefix$ $travel_events_life_or_death.t$, Bir Hayat Nasıl Kurtarılır" #NT!
- travel_events.2104.desc: "Ben ve maiyetim, suikastçı adaylarının tam ortasına dalarak onları tamamen gafil avlıyoruz. Arka tarafınızı net bir şekilde göremeyecek kadar beceriksiz olmanız mümkün mü?\n\nDirenen birkaç kişiyi kolayca kesiyoruz ve geri kalanlar vahşi doğaya kaçıyor. Başımı kaldırıp [murder_target.GetTitledFirstName]'ın bana baktığını görüyorum, gözleri kocaman açılmış ve ağzı hafifçe açık.\n\n[murder_target.GetSheHe] kendine gelirken, [murder_target.GetHerHis]'nin yüz hatları düzeliyor ama [murder_target.GetSheHe] hala müdahalem karşısında şaşırmış ve minnettar görünüyor. [murder_target.GetSheHe|U] beni yanına çağırıyor." #NT!
- travel_events.2104.a: "Bugünlük iyiliğim bu kadar." #NT!
- travel_events.2104.a_shy: "Bunu yapmak doğru şeydi." #NT!
- #Target Ruler: Visiting Ruler thwarted your assassination #NT!
- travel_events.2105.t: "$travel_events.2104.t$" #NT!
- travel_events.2105.desc_intro: "[ROOT.Char.GetCurrentLocation.GetName] topraklarını incelerken, aniden suikastçılar tarafından istila ediliyoruz. Ve, sanki hiçbir yerden çıkmış gibi, [visiting_ruler.GetTitledFirstName] ve [visiting_ruler.GetHerHis] maiyeti, başları önde ve silahları kaldırılmış bir şekilde, doğrudan suikastçı kalabalığının içine doğru geliyor!\n\n" #NT!
- travel_events.2105.desc_negative:0 "I watch in astonishment as my [ROOT.Char.Custom2('GetRivalNemesis', SCOPE.sC('visiting_ruler'))] slashes through assassins left and right, the rest of them running off in terror. [visiting_ruler.GetFirstNameNoTooltip] circles back, then stops right in front of me: "[ROOT.Char.Custom2('GetRivalNemesis', SCOPE.sC('visiting_ruler'))]'ımın suikastçıları sağdan soldan kesmesini hayretle izliyorum, geri kalanlar dehşet içinde kaçıyor. [visiting_ruler.GetFirstNameNoTooltip] geri dönüyor, sonra tam önümde duruyor: "Yardıma ihtiyacın var gibi görünüyor," [visiting_ruler.GetSheHe] homurdanıyor.\n\nTereddüt ediyorum. [visiting_ruler.GetSheHe] #EMP az önce derimi#! kurtarmışken, [visiting_ruler.GetHerHim]'ya nasıl güvenebilirim ki... ? İsteksizce başımı sallıyorum." #NT! #NT!
- travel_events.2105.desc_positive:0 "My eyes are filled with joy as I watch my savior and [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('visiting_ruler'))] [visiting_ruler.GetFirstNameNoTooltip] drive off the assassins, then make a wide circle and return back to my entourage: "Kurtarıcımın ve [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('visiting_ruler'))] [visiting_ruler.GetFirstNameNoTooltip] suikastçıları uzaklaştırmasını, sonra geniş bir daire çizip maiyetime geri dönmesini izlerken gözlerim sevinçle doluyor: "Benim [visiting_ruler.Custom2('RelationToMe', ROOT.Char)]! Nasılsın?" [visiting_ruler.GetSheHe|U] bana gülümsüyor." #NT! #NT!
- travel_events.2105.desc_default: "—Her ne amaçla olursa olsun— ihtiyaç sahibi bir yabancıya yardım etme eylemi, ilahi bir planın olduğunu gerçekten kanıtlıyor. Bu, [ROOT.Char.GetFaith.HighGodName]'dan seyahatimizin kutsanmış olduğuna dair bir işaret olmalı.\n\nKurtarıcım bana doğru dönüyor ve nazikçe başını sallıyor. Ben de buna karşılık gülümsüyorum ve "[ROOT.Char.GetFaith.HighGodName] seni korusun, [visiting_ruler.GetLadyLord]'im!" diyorum." #NT!
- travel_events.2105.a: "Sen gerçek bir asil ruhsun!" #NT!
- travel_events.2105.a_cynical: "Duygularınızı takdir ediyorum." #NT!
- travel_events.2105.a.tt: "[visiting_ruler.GetShortUIName] yardımınıza yetişti!" #NT!
- #County Süzeren: You notice a Travelling Ruler coming under attack #NT!
- travel_events.2107.t: "$travel_danger_prefix$ $travel_events_life_or_death.t$, Güvenli Liman" #NT!
- travel_events.2107.desc_intro_plains: "Güneş batmaya başlarken, [holding_location.GetName]'deki odamdan [holding_location.GetTerrain.GetNameNoTooltip|l]'a bakıyorum. Uzakta, bir grup gezgin önlerinde uzanan çimenli araziyi geçiyor." #NT!
- travel_events.2107.desc_intro_desert: "[holding_location.GetName]'ın dışındaki kumlarda donuk bir esinti oynuyor, her yöne doğru dönen küçük toprak parçacıkları gönderiyor. Kalenin dışında dolaşan güneşi izlerken, kumların üzerinde gayretle yürüyen bir grup gezgini fark ediyorum." #NT!
- travel_events.2107.desc_intro_wetlands: "Güneş batarken, [holding_location.GetName]'in dışındaki [holding_location.GetTerrain.GetNameNoTooltip|l]'ın bu akşam belirgin bir tonu var. Kalenin kutsallığından değişen renkleri ve yaklaşan karanlığı gözlemliyorum ve bunu yaparken, arazinin çok dışında, çamurlu yollardan geçen bir grup gezgini fark ediyorum." #NT!
- travel_events.2107.desc_intro_forest: "Güneş batıyor, [holding_location.GetName]'ı çevreleyen orman daha da karanlıklaşıyor. Kalenin kutsallığından akşam ışığını inceliyorum ve bunu yaparken ormanın kenarından geçen bir grup gezgini fark ediyorum." #NT!
- travel_events.2107.desc_intro_mountains: "Başımı dışarı uzatıp aşağıdaki vadiye baktığımda hava temizdi [holding_location.GetName]. Yaban hayatını gözlemlerken sıcaklık farkını takdir ediyorum ve vadide gayretle ilerleyen bir grup gezgini fark ediyorum." #NT!
- travel_events.2107.desc_intro_hills: "[holding_location.GetName] civarındaki tepelerin yumuşak eğimi, dışarıya ve aşağıdaki küçük gölete doğru tepelerden aşağı bakarken gözlerime hoş geliyor. Bir grup gezgin, hedeflerine doğru ilerlerken göletin etrafından dolaşıyor gibi görünüyor." #NT!
- travel_events.2107.desc_intro_jungle: "Orman her zamanki gibi sıcak ve nemli ve kalenin kutsallığından [holding_location.GetName]'ın üzerindeki ağaçlara doğru bakıyorum ve yukarıda yuva yapan renkli kuşları görüyorum. Göz ucuyla, kuzeye doğru çalılıklar boyunca ilerleyen bir grup gezgin görüyorum." #NT!
- travel_events.2107.desc_intro: "Öğleden sonramı [holding_location.GetName]'ın dış mahallelerinde geçirdiğim için gökyüzü neredeyse bulutsuz. Holdinge geri dönerken, şehir sınırlarının hemen dışında yol alan bir grup gezgini fark ediyorum." #NT!
- travel_events.2107.desc_segway: "\n\nYakından baktığımda grubun liderinin [travelling_ruler.GetTitledFirstName] ve [travelling_ruler.GetHerHis] ekibinden başkası olmadığını fark ediyorum. Hareketlerini gelişigüzel inceleyerek, bir binici sürüsü hızla barışçıl gruba yaklaştığında içgüdüsel olarak başımı kaldırdım.\n\nBiniciler yaklaştıkça silahlarını kaldırmaya başlıyorlar." #NT!
- travel_events.2107.desc_outro_negative: "Bu ilginç olmalı." #NT!
- travel_events.2107.desc_outro_positive: "Birşeyler yapmalıyım!" #NT!
- travel_events.2107.desc_outro_family: "Kan sudan koyudur derler ya, öyle mi?" #NT!
- travel_events.2107.desc_outro: "Yolcular açıkça saldırıya uğrayacaklar, #EMP benim#! toprağımda." #NT!
- travel_events.2107.a: "Müdahale etmek bizim görevimizdir." #NT!
- travel_events.2107.a_christian: "Herhangi bir iyi [ROOT.Char.GetFaith.GetAdjectiveNoTooltip]'ın yapacağı şey budur." #NT!
- travel_events.2107.a_outcome_tt: "[travelling_ruler.GetShortUIName] bunu hatırlayacaktır" #NT!
- travel_events.2107.b: "Bu çok tehlikeli." #NT!
- travel_events.2107.b_negative: "Hele şükür." #NT!
- travel_events.2107.b_outcome_tt: "Eğer [travelling_ruler.GetShortUIName] hayatta kalırsa, [travelling_ruler.GetSheHe] bunu hatırlayacaktır" #NT!
- #Travelling Ruler: You are saved by County Süzeren #NT!
- travel_events.2108.t: "$travel_danger_prefix$ $travel_events_life_or_death.t$, Kaydedildi" #NT!
- travel_events.2108.desc_intro: "[holding_location.GetName]'in eteklerindeki [holding_location.GetTerrain.GetNameNoTooltip|l]'ı geçerken, aniden kan peşinde olan bir haydut binici sürüsü tarafından saldırıya uğruyoruz. Yakınlardaki bir yerleşimden, [province_liege.GetTitledFirstName] liderliğindeki bir başka binici grubu hızla yaklaşıyor!" #NT!
- travel_events.2108.desc_negative: "\n\nŞaşkınlığımı şimdilik içimde tutuyorum, çünkü [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('province_liege'))]'ımdan başkası tarafından kurtarılmayı kesinlikle beklemiyordum!" #NT!
- travel_events.2108.desc_positive: "\n\n[ROOT.Char.Custom2('RelationToMe', SCOPE.sC('province_liege'))] [province_liege.GetFirstNameNoTooltip]'im alçak grubun korumasız arkasına doğru hücum ederken yüreğim ısınıyor." #NT!
- travel_events.2108.desc: "\n\nYerel [province_liege.GetTitleAsNameNoTooltip] çalışanlarının yardımsever tavırları beni çok hoş bir şekilde şaşırttı ve tam zamanında yetiştikleri için [ROOT.Char.GetFaith.HighGodName]'i tebrik ediyorum." #NT!
- travel_events.2108.desc_segway: "\n\n[province_liege.GetFirstNameNoTooltip], [province_liege.GetHerHis]'in yüzünde muzaffer bir sırıtışla geriye doğru daireler çiziyor:" #NT!
- travel_events.2108.desc_outro_negative: ""Başkasının benim [province_liege.Custom2('RelationToMe', ROOT.Char)]'ımı bitirme zevkine erişmesine izin veremezdim, değil mi?" Bir an tereddüt ettim, sonra karşılık verdim." #NT!
- travel_events.2108.desc_outro_positive: ""Yaralı mısın? Lütfen bu karmaşa temizlendikten sonra [holding_location.GetNameNoTooltip]'da bize katılın ve misafirperverliğinizi gösterin."" #NT!
- travel_events.2108.desc_outro: ""[holding_location.GetNameNoTooltip]'de [province_liege.GetCulture.GetNameNoTooltip] misafirperverliğine katılmalısın!"" #NT!
- travel_events.2108.a: "Benim için şereftir!" #NT!
- travel_events.2108.a_negative: "Yaşamak güzel bir şey sanırım." #NT!
- travel_events.2108.a.tt: "[province_liege.GetShortUIName] yardımınıza yetişti!" #NT!
- #County Süzeren: You save Travelling Ruler #NT!
- travel_events.2109.t: "$travel_events.2108.t$" #NT!
- travel_events.2109.desc_intro: "Haydutlar kendilerine neyin çarptığını bilmiyorlar. En iyi savaşçılarımızı [holding_location.GetName]'ın dışındaki savaşa götürdüm ve sıcak bir yaz gününde tereyağı gibi grubun içinden geçtik." #NT!
- travel_events.2109.desc_negative: "\n\nBenim [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('travelling_ruler'))] [travelling_ruler.GetTitledFirstName]'im sanki yıldırım çarpmış gibi şaşkın bir şekilde duruyor, [travelling_ruler.GetHerHis] seyahat grubumuzun hücumunu ve başarılı savunmamızı izliyor." #NT!
- travel_events.2109.desc_positive: "\n\n[travelling_ruler.GetTitledFirstName] ve [travelling_ruler.GetHerHis] maiyeti, alçaklara karşı son karşı saldırıyı gerçekleştirirken bizi destekliyor." #NT!
- travel_events.2109.desc: "\n\n[travelling_ruler.GetTitledFirstName], alçakları temizlerken bizi yakından izliyor, sonra dost canlısı olduğumuz anlaşılınca biraz yumuşuyor." #NT!
- travel_events.2109.desc_segway: "\n\nSaldırganlar sonunda kaçmaya gönderildiğinde, [travelling_ruler.GetFirstNameNoTooltip]'a doğru geri dönüyorum," #NT!
- travel_events.2109.desc_outro_negative: "şimdi [travelling_ruler.GetHerHis] yönünü yeniden bulmuş gibi görünüyor. [travelling_ruler.GetSheHe|U] dostça başını bana doğru salladı. "Üstesinden gelemeyeceğimiz bir şey değildi ama kendimizi aşırı zorlamak zorunda kalmamak güzel," diye itiraf etti [travelling_ruler.GetSheHe]." #NT!
- travel_events.2109.desc_outro_positive: "bana hızla yaklaşan. "Benim [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('province_liege'))]'ım! Keşke daha az kasvetli koşullar altında yeniden bir araya gelebilseydik," diye haykırıyor [travelling_ruler.GetSheHe]." #NT!
- travel_events.2109.desc_outro: "şimdi varlığımızla daha rahat görünüyor. "Dostum, ihtiyacımız olan zamanda bize yardım ettiğin için teşekkür ederim," diyor [travelling_ruler.GetSheHe], bana gülümseyerek." #NT!
- travel_events.2109.a: "Topraklar bir kez daha güvenli hale geldi." #NT!
- travel_events.2109.a_negative: "Sadece daha büyük bir karmaşayı temizlemekten kaçınmak istedim." #NT!
- travel_events.2109.a_positive: "Hizmet verdiğim için mutluyum, [province_liege.Custom2('RelationToMe', SCOPE.sC('travelling_ruler'))]!" #NT!
- travel_events.2109.a_hurt.tt: "[ROOT.Char.Custom('KnightCultureNoTooltip')] Yaralı" #NT!
- travel_events.2109.a_first_hurt.desc: "[first_potential_hurt_knight.GetShortUIName] savaşta yaralandı" #NT!
- travel_events.2109.a_second_hurt.desc: "[second_potential_hurt_knight.GetShortUIName] savaşta yaralandı" #NT!
- travel_events.2109.a_third_hurt.desc: "[third_potential_hurt_knight.GetShortUIName] savaşta yaralandı" #NT!
- travel_events.2109.a_none_hurt.tt: "Yara almadan" #NT!
- travel_events.2109.a_none_hurt.desc: "[ROOT.Char.Custom('KnightCulturePluralNoTooltipLowercase')]'ınızdan hiçbiri savaşta yaralanmadı" #NT!
- #Travelling Ruler: You get ruthlessly attacked #NT!
- travel_events.2110.t: "$travel_danger_prefix$ $travel_events_life_or_death.t$, Mahsur Kalmış" #NT!
- travel_events.2110.desc: "[holding_location.GetName]'in eteklerinde [holding_location.GetTerrain.GetNameNoTooltip|l]'ı geçerken, kan dökmek için yola çıkan bir haydut süvari sürüsü tarafından aniden saldırıya uğruyoruz. Kaleye çok yakınız, [province_liege.GetTitledFirstName]'nin yardım göndereceğinden emin miyiz?\n\nZaman geçtikçe ve alçaklar tarafından kovalandıkça, en uzun süre savaştan kaçınarak, acı bir şekilde yardım gelmediği ortaya çıkıyor." #NT!
- travel_events.2110.desc_negative: "[province_liege.GetFirstNameNoTooltip] gibi bir [travelling_ruler.Custom('InsultNoun')]'dan ne beklediğimden emin değilim. Ama bu bile [province_liege.GetHerHim]'nin altında." #NT!
- travel_events.2110.desc_positive: "[province_liege.GetTitledFirstNameNoTooltip]'ın az önce yaptığı ihaneti fark ettiğimde göğsümde keskin bir acı hissediyorum." #NT!
- travel_events.2110.desc_neutral: "Bir hükümdar bu gibi kötü niyetli kişilerin [province_liege.GetHerHis] sınırlarında yaşamasına nasıl izin verebilir?" #NT!
- travel_events.2110.desc_outro: "\n\nBenim [ROOT.Char.Custom('KnightCultureNoTooltipLowercase')] [knight_to_sacrifice.GetTitledFirstName]'im yanıma geliyor, [knight_to_sacrifice.GetHerHis] gözlerinde ciddi bir bakış var. İkimiz de geçmişte uyguladığımız taktiği biliyoruz." #NT!
- travel_events.2110.a: "Biz bir bütünüz." #NT!
- travel_events.2110.a_unscathed.tt: "Yara Almadan" #NT!
- travel_events.2110.a_unscathed.desc: "Savaştan yara almadan kurtulursun" #NT!
- travel_events.2110.a_injured.tt: "Yaralı" #NT!
- travel_events.2110.a_injured.desc: "Savaştan sağ kurtulursun ama yaralanırsın" #NT!
- travel_events.2110.a_severely_injured.tt: "Ciddi Yaralanma" #NT!
- travel_events.2110.a_severely_injured.desc: "Savaşta ağır yaralanırsın" #NT!
- travel_events.2110.a_death: "Savaşta öldürüldün" #NT!
- travel_events.2110.b: "[knight_to_sacrifice.GetFirstNameNoTooltip], ne yapacağını biliyorsun." #NT!
- travel_events.2110.b_tt: "[knight_to_sacrifice.GetShortUIName] saldırganların dikkatini dağıtmak için geride kalıyor" #NT!
- #County Süzeren: You observe the attack on Travelling Ruler #NT!
- travel_events.2111.t: "$travel_danger_prefix$ $travel_events.2110.t$" #NT!
- travel_events.2111.desc_sacrifice: "Güneş [holding_location.GetTerrain.GetNameNoTooltip|l]'ın üzerinde batarken önümdeki sahneyi izliyorum. Tam ölçekli bir savaş bekliyorsam yanılmışım.\n\nGörünüşe göre [travelling_ruler.GetTitledFirstName] bir tuzak ve geri çekilme emri vermiş, yani [travelling_ruler.GetHerHis] [travelling_ruler.Custom('KnightCulturePluralNoTooltipLowercase')]'ten biri grubun kuyruğunu kurtarmak için geride kalmış. Bu arada seyahat eden grup yeniden organize olmuş ve şehir sınırlarının en uzak ucuna doğru kaçıyor.\n\nİşe yarıyor gibi görünüyor, çünkü biniciler kaçan grubu görmezden geliyor ve bunun yerine yalnız askere odaklanıyor, [knight_to_sacrifice.GetHerHim]'ü görüş alanımdan tamamen yutuyor. Umarım son çabuk olmuştur." #NT!
- travel_events.2111.desc_unscathed: "Güneş ufukta yok olurken gökyüzünü kırmızıya boyadığı gibi, önümdeki savaş da yeri kırmızıya boyar. Ancak bunun sadece haydut kanıyla kırmızı olduğu anlaşılıyor.\n\nSeyahat eden grup, ani bir saldırı karşısında şaşırtıcı bir hüner gösteriyor ve diş ve tırnakla savaşıyor - sonunda alçakları kaçmaya zorluyor. Sadece silahlarını fırlatıyorlar ve hızla geldikleri yoldan geri çekiliyorlar.\n\n[travelling_ruler.GetTitledFirstName] tuttuğum yere doğru meydan okurcasına işaret ediyor ve ben sessizce şaşkınlıkla kaşlarımı kaldırıyorum. Bu #EMP en#! beklenmedik şeydi." #NT!
- travel_events.2111.desc_survived: "Güneş [holding_location.GetTerrain.GetNameNoTooltip|l]'ın üzerinde batarken, iki grup bir silah ve acı yığını halinde bir araya geliyor. Seyahat eden grubun ilk şokunun azaldığını ve silahlı binicileri geri iterek gayretle ayağa kalktıklarını gözlemliyorum.\n\n[travelling_ruler.GetTitledFirstName], karşı saldırı hızlı ve ölümcül bir şekilde pis haydutlara doğru gelirken öne geçiyor. Ancak alçaklardan biri [travelling_ruler.GetFirstNameNoTooltip]'ye oldukça sert bir darbe indirmeyi başarıyor gibi görünüyor, ancak buna kısa süre sonra [travelling_ruler.GetHerHis] [travelling_ruler.Custom('KnightCulturePluralNoTooltipLowercase')]'ten biri karşılık veriyor.\n\nHala nefes alabilen ve hareket edebilen biniciler, göründükleri kadar hızlı ve ani bir şekilde olay yerinden ayrılıyor. Arkalarında cesetler ve ölü hayvanlar; ancak şaşırtıcı derecede sağlıklı bir yolcu topluluğu." #NT!
- travel_events.2111.desc_died: "Güneş ufukta yok olurken gökyüzünü kırmızıya boyadığı gibi, önümdeki savaş da yeri kırmızıya boyar. Hangi tarafın üstün olduğunu anlamaya çalışarak hevesle gözlemlerim.\n\nİkilem, özellikle iri ve hantal bir binicinin zaferle kükremesi ve [rider.GetHerHis] kollarını göğe doğru kaldırmasıyla kısa sürede netleşir. Bir elinde bir kılıç, diğerinde... [travelling_ruler.GetTitledFirstName]'in başı vardır." #NT!
- travel_events.2111.desc_negative_outro: "\n\nRahat bir nefes alıyorum. Sonunda [travelling_ruler.Custom('InsultNoun')] artık benim için bir sorun değil." #NT!
- travel_events.2111.desc_positive_outro: "\n\nBirkaç kez göz kırptım, ne olduğunu tam olarak kavrayamamıştım. Evet, sanırım bu [travelling_ruler.GetHerHim]'ın sonuydu..." #NT!
- travel_events.2111.desc_outro: "\n\n[travelling_ruler.GetTitledFirstNameNoTooltip]'ın cinayetine tanıklık etmiş olmam beni şaşırtıcı derecede boş hissettiriyor. O biniciler hakkında bir şeyler yapmalıyım." #NT!
- travel_events.2111.a: "İlginç taktikler." #NT!
- travel_events.2111.a_compassionate: "Ben ne yaptım..." #NT!
- travel_events.2111.a_sadist: "Eğlenceli!" #NT!
- travel_events.2111.a_dead: "Eninde sonunda olacağı belliydi." #NT!
+#Travel Flavor Events
+#Good omen? - Encounter a duck
+ travel_events.2000.t:0 "$travel_event_prefix$ Hay Bin Ördek!"
+ travel_events.2000.desc:0 "Şimdiye kadar yolculuğumuz fazlasıyla sakindi. Bugün [ROOT.Char.GetCurrentLocation.GetName] civarlarına vardık. Bineğim aheste aheste giderken gözlerimi kapatıyorum.\n\nRüzgârın ağaç dallarıyla çaldığı muhteşem melodiyi dinliyordum ki yabancı bir ses kulaklarıma çalınıyor. Bir vak vak sesi?\n\n"
+ travel_events.2000.desc_meh_memory:0 "Ördeği bulmak için etrafımı inceliyorum. En son doğada bir ördeği kovaladığımda başıma... garip şeyler gelmişti."
+ travel_events.2000.desc_delicious_memory:0 "En son doğada bir ördeği kovaladığımda karnımı #EMP güzelce#! doyurmuştum. Belki şansım yine yaver gider?"
+ travel_events.2000.desc_good_memory:0 "En son doğada bir ördekle karşılaştığımda başıma ne geldiğini hatırlıyorum. Beni #EMP bir sürü#! sevimli yavrusuna götürmüştü."
+ travel_events.2000.desc_bad_memory:0 "Bir anlığına duraksıyorum. En son bir ördeği takip ettiğimde... sonu pek iyi bitmemişti."
+ travel_events.2000.desc_default:0 "Çalılıklar arasında gelen sesin sağ tarafımdan geldiğini anlayabiliyorum."
+ travel_events.2000.a:0 "Ne güzel bir işaret."
+ travel_events.2000.a_sadist:0 "Saçma sapan işler."
+ travel_events.2000.b:0 "Ördeği takip edin!"
+ travel_events.2000.b_sadist:0 "Sanırım ördeği takip edebilirim..."
+ travel_events.2000.b.tt:0 "Bir süreliğine ördeği takip ediyorsunuz"
+ travel_events.2000.c:0 "Iyy, pis ördek! Kış kış!"
+ travel_events.2000.c.tt:0 "Vak vak sesinin geldiği yere bir çakıl taşı fırlatıyorsunuz."
+
+#Duck follow-up
+ travel_events.2001.t_positive:0 "Bu..."
+ travel_events.2001.t_negative:0 "Bu Ördek Filan Değil!"
+ travel_events.2001.t:0 "$travel_event_prefix$ Vak!"
+ travel_events.2001.intro:0 "Bineğimden iniyorum ve yakınlardaki çalıların içinde ördeği buluyorum. Ördek paytak bir şekilde benden kaçarken ben de onu yayan bir şekilde takip ediyorum."
+ travel_events.2001.desc_positive:0 "\n\nBen ilerlemeye devam ederken yumuşak vak vak sesine ilk başta belli belirsiz ama sonradan iyice güçlenen cik cik sesleri katılıyor. Bir sonraki çalıyı ittirip geçtiğimdeyse karşıma yetişkin ve yavru ördekden oluşmuş bir #EMP yığın#! yuva çıkıyor!"
+ travel_events.2001.desc_positive_sadist:0 "\n\nKarşımdaki ördekler ve yavruları karnımın guruldamasına sebep oluyor."
+ travel_events.2001.desc_positive_default:0 "\n\nÖnümdeki sevimli yaratıklar karşısında dizlerimin dermanının gittiğini hissediyorum."
+ travel_events.2001.desc_negative:0 "\n\nGruptan uzaklaştıkça içim yavaşça ürpermeye başlıyor. İzleniyor muyum yoksa?\n\nAniden çalılıkların arasından bir [ROOT.Char.Custom('RegionalFerociousAnimal')] beliriveriyor! Sinirli gözleriyle beni izliyor."
+ travel_events.2001.desc:0 "\n\nÖrdek aniden duruyor ve bana doğru dönüyor. Neden bir insanın kendisini takip ettiğini merak ettiği belli.\n\nGerginliği azaltmak için ördeğe gülümsüyorum. Ama ördek aniden kıpırdanıyor, kanatlarını çırpıyor ve uçup gidiyor."
+ travel_events.2001.a:0 "Bu... #EMP çok fazla!#!"
+ travel_events.2001.a_tt:0 "#EMP Ne hoş#!"
+ travel_events.2001.a_tt_death:0 "Bu kadar sevimlilik kalbiniz için fazla geliyor"
+ travel_events.2001.b:0 "Rostosu harika olur şimdi..."
+ travel_events.2001.b_success.tt:0 "İyi Bir Yemek"
+ travel_events.2001.b_failure.tt:0 "Boğazına Kaçmak"
+ travel_events.2001.c:0 "Bu çok #EMP kötü!#!"
+ travel_events.2001.c_success.tt:0 "Başarı"
+ travel_events.2001.c_ran:0 "Kaçabildiniz"
+ travel_events.2001.c_failure.tt:0 "Yaralı"
+ travel_events.2001.c_hit_and_ran:0 "Birkaç darbe aldınız ama kaçabildiniz"
+ travel_events.2001.c_critical_failure:0 "Yaratık sizi sakatlıyor"
+ travel_events.2001.d:0 "Angard!"
+ travel_events.2001.d_scare_beast:0 "Yaratığı korkutup kaçırıyorsunuz"
+ travel_events.2001.d_beast_hit:0 "Yaratık karşılık veriyor ama sonunda kaçıyor"
+ travel_events.2001.e:0 "Ne korkunç bir ... #EMP ördek#! kovalamacasıydı?"
+
+#Crossing an ant path - Ignore or don't ignore your guide
+ travel_events.2002.t:0 "$travel_event_prefix$ Ezilmiş Patika"
+ travel_events.2002.desc:0 "İlerleyişimiz [ROOT.Char.GetCurrentLocation.GetName] civarına ok atımı mesafesinde birden bire duruyor. Bir süre sonra [ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('guide_leader'))] [guide_leader.GetFirstName] bineğinden inip yerdeki bir şeyi incelemeye başlıyor. Kervandaki diğer kişiler de onun etrafına toplanıyor.\n\nBen de diğerleri gibi ona yaklaşırken başını kaldırıyor ve şunları söylüyor: "Efendim, burada bir karınca patikası var. Batıl inançlı olduğumu söyleyebilirsiniz ama asla bir karınca patikasının üstünden geçmemelisiniz."\n\nKısa bir duraksamanın sözlerine devam ediyor. "Benim büyük büyük dedem bir kere karınca patikasının üstünden geçmişti. Bir daha eve geri dönmedi.""
+ travel_events.2002.a:0 "#EMP Tamam#!. Başka bir yoldan gideriz."
+ travel_events.2002.b:1 "Saçmalığa bak. Takılın peşime gidiyoruz!"
+ travel_events.2002.c:0 "Batıl inançlılığının çaresi bende."
+ travel_competent_guide_tt:0 "Yolunuzu bulabiliyorsunuz"
+ travel.competent_guide:0 "$travel_competent_guide_tt$"
+ travel_get_lost_tt:0 "Kayboluyorsunuz"
+
+#Visit the local military place (barrack/military camp/regiment grounds) - Try to improve your martial
+ travel_events.2003.t:0 "$travel_event_prefix$ Talim"
+ travel_events.2003.intro:0 "[ROOT.Char.GetCurrentLocation.GetName] askerî kamplarının girişinde bizi yerel kaptan [local_captain.GetFirstName] ve adamları karşılıyorlar."
+ travel_events.2003.desc_barracks:0 "Hızlıca bineğimden iniyorum. Yerel kışlaları teftiş etmek için sabırsızlanıyorum.\n\nKışlalar aynen olmaları gerektiği gibi hareketli. Her taraf asker dolu. Keskin ve hızlı hareketlerine bakınca her bir askerin nereye ve nasıl gitmesi gerektiğini bildiği çok açık."
+ travel_events.2003.desc_regiment:0 "Alayların kurulduğu kampı üstün körü inceledikten sonra bineğimden iniyorum.\n\n[local_captain.GetFirstNameNoTooltip] bir savaş planıyla meşgul küçük bir asker grubunu işaret ediyor. "Bunlar bizim seçkin askerlerimiz efendim. Lütfen siz önden gidin.""
+ travel_events.2003.desc_camp:1 "Kaptan uzaklaşırken ben de hızlıca bineğimden inip ona katılıyorum.\n\nBiraz yürüdükten sonra duruyor ve güzelce sıralanmış en yeni kuşatma silahlarını bana takdim ediyor: "Çok hoş bir manzara, değil mi?""
+ travel_events.2003.outro:0 "\n\nKarşımdaki organize kaosu takdir edercesine başımı sallıyorum.\n"Şimdi, efendim ne yapmak isterler acaba?" [local_captain.GetFirstNameNoTooltip] sabırsız bir heyecanla gözlerimin içine bakıyor."
+ travel_events.2003.a:0 "Şöyle güçlü biriyle biraz güreşmek fena olmazdı!"
+ travel_events.2003.a_sparring_tt:0 "Başarılı bir şekilde askerlerle dövüşüyorsunuz"
+ travel_events.2003.a_wounded_tt:0 "Yanlışlıkla yaralanıyorsunuz"
+ travel_events.2003.b:0 "Şu mekanizma da ne?"
+ travel_events.2003.b_success_tt:0 "Askeriye Öğrenildi"
+ travel_events.2003.b_learn_tt:0 "Aleti inceleyerek bir şeyler öğrendiniz"
+ travel_events.2003.b_failure_tt:0 "Ortaya Çıkarıldı"
+ travel_events.2003.b_spy_tt:0 "[county_liege.GetShortUIName] casusluk yaptığınızı düşünüyor"
+ travel_events.2003.b_cut_tt:0 "Yanlışlıkla kendinizi ekipmanla kesiyorsunuz"
+ travel_events.2003.c:0 "Bana katılmalısın."
+ travel_events.2003.c_success_tt:0 "Gizli İşe Alım"
+ travel_events.2003.c_secret_tt:0 "[county_liege.GetShortUIName] kaptanına yaptığınız iş teklifini öğrenmiyor"
+ travel_events.2003.c_found_out_tt:0 "[county_liege.GetShortUIName] kaptanına yaptığınız iş teklifini öğreniyor"
+ travel_events.2003.d:0 "Aslında olmam gereken bir yer vardı..."
+
+#Visit (your own) crappy pasture - Try to address or ignore the issues
+ travel_events.2004.t:0 "$travel_event_prefix$ Kötü Çayır"
+ travel_events.2004.desc:0 "Çürümenin kokusu burnuma aynı sert bir yumruk gibi çarpıyor. [ROOT.Char.GetCurrentLocation.GetName] çayırlarına bakınca besi hayvanlarının pek iyi bir durumda olmadığı anlaşılıyor.\n\nKöylüler meşgul gözükmek için ayaklarını sürte sürte amaçsızca dolanıyorlar. Bölgenin refahındaki durgunluğa bakınca bu köylülerin hevessizliğinin bütün bölge halkını yansıttığı belli.\n\nBen gördüklerimi sindirmekte zorlanırken yerel lider [local_farmer.GetFirstName] yanıma geliyor. Ne düzensiz bir yer!"
+ travel_events.2004.a:0 "[local_farmer.GetFirstNameNoTooltip], kör bir domuz bile burayı senden daha iyi yönetirdi."
+ travel_events.2004.a_success_tt:0 "Eleştiri Dikkate Alındı"
+ travel_events.2004.a_critique_success_tt:0 "[local_farmer.GetShortUIName] eleştirinizi dikkate alıyor"
+ travel_events.2004.a_failure_tt:0 "Eleştiri Dikkate Alınmadı"
+ travel_events.2004.a_critique_reject_tt:0 "[local_farmer.GetShortUIName] eleştirinizi umursamıyor"
+ travel_events.2004.b:0 "Atlarına ihtiyacım var. Hemen!"
+ travel_events.2004.c:0 "Yapmam gereken başka şeyler var."
+
+#Visit another ruler's pasture - Give advice or sabotage the pasture
+ travel_events.2005.t:0 "$travel_event_prefix$ Başka İnsanların Çayırları"
+ travel_events.2005.desc:0 "Ne güzel bir gün. Hava mis gibi, [ROOT.Char.GetCurrentLocation.GetName] çayırları harika gözüküyor. Yerel besi hayvanları mutlu bir havayla şarkılar söylüyor ve etrafta sekiyorlar. Temiz ve parlak kürklü yavrular annelerinin yanından ayrılmıyor.\n\nKısacası şahsen yapacağım birkaç küçük değişiklik dışında burası aynen benim yöneteceğim şekilde, düzgünce yönetilmiş.\n\nYerel lider yanıma geliyor. "Sabah-ı şerifleriniz hayrolsun efendim! Gördükleriniz sizi tatmin etti mi?""
+ travel_events.2005.a:1 "Yöntemlerinizin bazılarını kendi topraklarımda uygulamayı deneyebilirim."
+ travel_events.2005.a_success_tt:0 "Başarılı Öneri"
+ travel_events.2005.a_implemented_tt:0 "Öneriniz başarılı bir şekilde uygulandı"
+ travel_events.2005.a_failure_tt:0 "Yanlış Anlaşılmış Öneri"
+ travel_events.2005.a_misinterpreted_tt:0 "Öneriniz tamamen yanlış bir şekilde anlaşıldı"
+ travel_events.2005.b:0 "Bakalım buralarda birkaç şeyi düzeltebilir miyiz."
+ #travel_events.2005.b_success_tt:0 "Başarılı Sabotaj"
+ #travel_events.2005.b_sabotage_tt:0 "Sabotajınız başarılı ve gizlice uygulandı"
+ #travel_events.2005.b_failure_tt:0 "Başarısız Sabotaj"
+ #travel_events.2005.b_averted_tt:0 "#EMP Sabotajınız#! gerçekten de birkaç yerel sorunu çözüme kavuşturdu"
+ travel_events.2005.c:0 "Eminim ki [county_liege.GetTitledFirstNameNoTooltip] kendi çayırlarının çaresine bakabilir."
+#Visit a camel farm - Get defiled by a camel
+ travel_events.2006.t:0 "$travel_event_prefix$ Yine mi Deve?"
+ travel_events.2006.desc:0 "[ROOT.Char.GetCurrentLocation.GetName] yakınlarındaki deve çiftliğinin üstünde güneş altındakileri kavurmaya devam ediyor. Ben de sıcak karşısında çiftlikte iplere asılmış kumaşların altındaki gölgelerin birine sığınıyorum. Ani bir hırıltı sesiyle irkiliyorum ve arkama dönüyorum.\n\nYanımda benim gibi gölgede dinlenmek isteyen muhteşem bir yaratık duruyor. Uzun başını sevmek için ona yaklaşıyorum. O ise #EMP ani bir hareketle alnıma kafa atıyor ve yanağıma tükürüyor#!.\n\nYön duygumu geri kazandığımda devenin sahibinin yirmi adım önümüzde olduğunu fark ediyorum. Devenin sahibinin az önce şahit olduğu manzara karşısında korkudan donakaldığı belli."
+ travel_events.2006.a:0 "Sen ve hayvanının biraz terbiye alması lazım!"
+ travel_events.2006.a_tt:0 "Yaratığı ve sahibini kırbaçlatıyorsunuz."
+ travel_events.2006.b:0 "Yaratığın başı #EMP güzel#! bir uyarı olacaktır."
+ travel_events.2006.b_tt:0 "Devenin başını kestiriyorsunuz"
+ travel_events.2006_camel_head:0 "Deve Başı"
+ travel_events.2006_camel_head_desc:0 "Asi bir devenin başı."
+ travel_events.2006.c:1 "Deve de sonuçta akılsız bir yaratıktan fazlası değil."
+
+#Visit an elephant pen - Train with the elephants
+ travel_events.2007.t:0 "$travel_event_prefix$ Fil Sporları"
+ travel_events.2007.desc_memory:0 "[ROOT.Char.GetCurrentLocation.GetName] fil ağıllarındaki devasa yaratıklara bakarken içim kötü oluyor. Zamanında "
+ travel_events.2007.desc_memory_rival:0 "rakibim "
+ travel_events.2007.desc_memory_nemesis:0 "can düşmanım "
+ travel_events.2007.desc_memory_segway:0 "[crushing_person.GetTitledFirstName] bir filin üstüme oturmasına neden olmuştu."
+ travel_events.2007.desc_memory_here:0 "Tam olarak burada."
+ travel_events.2007.desc_memory_not_here:0 "[elephant_memory.Var('elephant_location').GetProvince.GetName] topraklarında."
+ travel_events.2007.desc_default:0 "[ROOT.Char.GetCurrentLocation.GetName] fil ağıllarındaki devasa yaratıklar gerçekten de büyüleyiciler. Odunlar taşıyıp bize sundukları her türlü fiziksel numaraları büyük bir zevkle izliyorum."
+ travel_events.2007.desc_outro:0 "\n\nBen filleri izlerken iki tane fil seyisinin konuşmasına kulak misafiri oluyorum. Seyisler fillerin eğitimi üzerine farklı yollar hakkında tartışıyorlar.\n\nKonuştukları konu epey zorlu bir iş gibi. Doğal olarak bu durum hemen ilgimi çekiyor."
+ travel_events.2007.a:0 "Bu iş #EMP tam da#! benlik bir iş."
+ travel_events.2007.a_success_tt:0 "Etkili Eğitim"
+ travel_events.2007.a_efficient_training_tt:0 "Eğitim sorunsuzca sürüyor"
+ travel_events.2007.a_soft_success_tt:0 "Fena Olmayan Eğitim"
+ travel_events.2007.a_alright_training_tt:0 "Eğitim fena sayılmaz"
+ travel_events.2007.a_failure_tt:0 "Berbat Eğitim"
+ travel_events.2007.a_failed_training_tt:0 "Elinize yüzünüze bulaştırıyorsunuz"
+ travel_events.2007.b:0 "Zamanımı bununla harcamayacağım."
+
+#Visit an elephant pen, your rival is on site - Attempt to crush your rival?
+ travel_events.2008.t:0 "$travel_event_prefix$ Otur Oğlum"
+ travel_events.2008.desc:0 "Ormanın sıcağı yüzünden alnımdan boncuk boncuk terler akmaya devam ediyor. Yüzümü silmek için durduğumda ise [ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('elephant_rival'))] [elephant_rival.GetTitledFirstName] [ROOT.Char.GetCurrentLocation.GetName] fil ağıllarının birinde görüyorum.\n\nBana rezil bir el hareketi çekiyor ve olabildiğince sesli bir şekilde kahkaha atıyor. Sinirden dişlerimi birbirine sürtüyorum.\n\nTam da bu anda [elephant_rival.GetTitledFirstNameNoTooltip] hıyarının #EMP tam da bir filin arkasında durduğunu fark ediyorum#!. Daha da iyisi fil hareket hâlinde ve şimdi tam da bana bakıyor."
+ travel_events.2008.a:0 "[ROOT.Char.Custom('RandomElephantName')], #EMP otur oğlum!#!"
+ travel_events.2008.a_success_tt:0 "Fil Eziği"
+ travel_events.2008.a_crushed_tt:0 "[elephant_rival.GetShortUIName] bir fil tarafından ezildi"
+ travel_events.2008.a_soft_success_tt:0 "Yarı-Ezik"
+ travel_events.2008.a_wounded_tt:0 "[elephant_rival.GetShortUIName] yaralandı"
+ travel_events.2008.a_failure_tt:0 "[elephant_rival.GetTitledFirstNameNoTooltip] Kaçtı"
+ travel_events.2008.a_scotfree_tt:0 "[elephant_rival.GetShortUIName] filden kaçtı"
+ travel_events.2008.b:0 "[elephant_rival.GetTitledFirstNameNoTooltip], dikkat et!"
+
+#Visit an orchard - Kid falls out of tree
+ travel_events.2010.t:0 "$travel_event_prefix$ Kırık Bir Dal"
+ travel_events.2010.temperate_summer:0 "[ROOT.Char.GetCurrentLocation.GetName] meyve bahçelerini gezerken ılık bir rüzgâr boynumu okşuyor. Ağaçlar nazikçe göğe doğru uzanırken dallarında renkli filiz ve meyveler şekil almaya başlıyor."
+ travel_events.2010.temperate_winter:0 "[ROOT.Char.GetCurrentLocation.GetName] meyve bahçelerini geziyorum. Hava soğuk ve verdiğim her nefes gözlerimin önünde küçük bir buluta dönüşüyor. Soğuk karşısında soyunup sinen ağaçların daha sıcak günlerin hasretini çektiğini düşünüyorum."
+ travel_events.2010.tropical_summer:0 "[ROOT.Char.GetCurrentLocation.GetName] meyve bahçelerinden geçiyorum. Sıcak dayanılmaz bir seviyede. Etrafımdaki ağaçların büründükleri çiçeklere bakınca sıcak konusunda benimle aynı fikirde olmadıkları aşikâr."
+ travel_events.2010.tropical_winter:0 "[ROOT.Char.GetCurrentLocation.GetName] meyve bahçelerini geziyorum. Yılın bu zamanları gezmek için hava daha ılıman oluyor. Ağaçlar hareketsiz ama hâlâ yeşil. Çiçek açmak için daha da sıcak zamanları bekliyorlar."
+ travel_events.2010.fallback:0 "[ROOT.Char.GetCurrentLocation.GetName] meyve bahçelerinde geziyorum. Dikkatli bir şekilde yerleştirilmiş ağaçlar dallarını gökyüzüne uzatıyorlar. Gerçekten de yürümek için güzel bir gün."
+ travel_events.2010.desc:0 "\n\nAniden, tiz bir çığlık sesi havada yankılanıyor. Ne olduğuna bakmak için adımlarımı hızlandırıyorum."
+ travel_events.2010.entourage:0 "[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('fallen_child'))] [fallen_child.GetFirstName] "
+ travel_events.2010.peasant:0 "bir köylü çocuğu "
+ travel_events.2010.outro:0 "ağacın altında şiddetli bir şekilde ağlıyor.\n\nAnlaşılan ağaca çıkmaya çalışırken yere düşmüş. Kemiklerinden birinin olmaması gereken bir açıyla çıkıntı yapması da bu kadar acı içinde olmasının nedeni olmalı."
+ travel_events.2010.a:0 "Bu ağaçlar insan sağlığına karşı bir tehdit!"
+ travel_events.2010.a_flavor:0 "Burayı yakın!"
+ travel_events.2010.a_tt:0 "[fallen_child.GetShortUIName] adlı çocuğun yaraları daha da kötüleşebilir"
+ travel_events.2010.a_tt_2: "[ROOT.Char.GetTitledFirstName], [location_county.GetNameNoTier] topraklarındaki bağlarınızı yaktı!"
+ travel_events.2010.b:0 "Aklından ne geçiyordu, [fallen_child.GetFirstNameNoTooltip]!"
+ travel_events.2010.b_tt:0 "Özellik Kazanıldı"
+ travel_events.2010.c:0 "Hadi, sakinleş."
+ travel_events.2010.c_physician:0 "Hadi şu yarana bir baktıralım çocuğum."
+ travel_events.2010.c_physician_tt:0 "[court_physician.GetShortUIName], [fallen_child.GetShortUIName] adlı çocuğu tedavi ediyor"
+ travel_events.2010.d:0 "Çocukluk işte."
+
+#Orchard hidden follow-up event
+ travel_events.2011.tt_healed:0 "Yaralar İyileşti"
+ travel_events.2011.tt_healed_desc:0 "[fallen_child.GetShortUIName] adlı çocuğun yaraları iyileşti"
+ travel_events.2011.tt_worsened:0 "Yaralar Kötüleşti"
+ travel_events.2011.tt_worsened_desc:0 "[fallen_child.GetShortUIName] adlı çocuğun yaraları kötüleşti"
+
+#Visit a plantation - Fire!
+ travel_events.2012.t:0 "$travel_event_prefix$ Yangın!"
+ travel_events.2012.desc:0 "Son birkaç gündür tarlaların arasından geçiyoruz. Sonraki durağımız [ROOT.Char.GetCurrentLocation.GetName] korusu. Uzaktaki kapıları görebiliyorum. Ama birşeyler ters gibi...\n\nBurnuma buruk bir... duman kokusu geliyor. Duman? Yangın! Korunun üstünden göğe yükselen dumanları fark ediyorum.\n\nDuman çok yoğun ve kalın duruyor. Anız yakan birkaç köylünün çıkarabileceği tipte bir duman değil bu."
+ travel_events.2012.a:0 "[guard_type_character.GetFirstNameNoTooltip], acele et! Birkaç kova bul!"
+ travel_events.2012.a_unscathed:0 "Yangın Söndürüldü"
+ travel_events.2012.a_unscathed_desc:0 "[guard_type_character.GetShortUIName] yangını söndürdü"
+ travel_events.2012.a_scarred:0 "Söndürdü Ama Yaralandı"
+ travel_events.2012.a_scarred_desc:0 "[guard_type_character.GetShortUIName] yangını söndürdü ama yaralandı"
+ travel_events.2012.a_death:0 "Söndürdü Ama Öldü"
+ travel_events.2012.a_death_desc:0 "[guard_type_character.GetShortUIName] yangını söndürdü ama öldü"
+ travel_events.2012.b:0 "İşçileri hemen tahliye etmemiz lazım!"
+ travel_events.2012.b_unscathed:0 "Sorunsuzca"
+ travel_events.2012.b_unscathed_desc:0 "Kimse yaralanmadan işçileri tahliye etmeyi başardınız"
+ travel_events.2012.b_scarred:0 "Yaralandı"
+ travel_events.2012.b_scarred_desc:0 "İşçileri tahliye etmeyi başardınız ama yaralandınız"
+ travel_events.2012.b_tt:0 "Kervanınızdakilerin size karşı olan görüşü fazlasıyla arttı"
+ travel_events.2012.c:0 "#EMP Haha#!, fırsat ayağımıza geldi..."
+ travel_events.2012.c_secret:0 "Gizli Yağma"
+ travel_events.2012.c_secret_desc:0 "Yağmanız gizli kaldı"
+ travel_events.2012.c_revealed:0 "Yağmalama Fark Edildi"
+ travel_events.2012.c_revealed_desc:0 "Yağmanız [county_liege.GetShortUIName] tarafından fark edildi"
+ travel_events.2012.c_tt:0 "Kervanınızdakilerin size karşı olan görüşü fazlasıyla azaldı"
+ travel_events.2012.d:0 "Ne yangını?"
+ travel_events.2012.d_flavor:0 "Kervanınız gizlice yangından uzaklaşıyor."
+ travel_events.2012.d_tt:0 "Kervanınızdakilerin size karşı olan görüşü azaldı"
+
+#Visit a hillfort - Train to gain military skillz
+ travel_events.2013.t:0 "$travel_event_prefix$ Kuvvetlendirilmiş Bilgelik"
+ travel_events.2013.intro:0 "Yerel dağ kalesine doğru giderken yüksek irtifa ve rahatlatıcı [ROOT.Char.GetCurrentLocation.GetName] havası ciğerlerimizi dolduruyor."
+ travel_events.2013.martial:0 "\n\nAltımızda talim yapan askerleri dikkatli bir şekilde inceliyorum. Askerî deneyimi olan biri olduğumdan kullandıkları taktiklerin bir kısmını tanıyabiliyorum."
+ travel_events.2013.default:0 "\n\nAşağımızdaki vadideki askerler daha önce görmediğim bir talim tipini uyguluyorlar. Merakımı bastırmakta zorlanarak yanlarına gidiyorum."
+ travel_events.2013.outro:0 "\n\nBu sırada yerel kaptan [local_captain.GetFirstNameNoTooltip], bana yaklaşıyor. : "Bize katılmak istermisiniz efendim?""
+ travel_events.2013.rough_terrain:0 "zorlu arazi uzmanı oldu"
+ travel_events.2013.reckless:0 "pervasız oldu"
+ travel_events.2013.a:0 "Birazcık zorlanmanın kimseye zararı olmaz!"
+ travel_events.2013.a_success.tt:0 "Özellik Kazanıldı"
+ travel_events.2013.a_failure.tt:0 "Başarısız Talim"
+ travel_events.2013.a_rough_terrain:0 "Zorlu arazi uzmanı oldunuz"
+ travel_events.2013.a_reckless:0 "Pervasız oldunuz"
+ travel_events.2013.a_failed:0 "Talim başarısız oldu"
+ travel_events.2013.b:0 "[entourage_heir.GetFirstNameNoTooltip], kaptana katıl."
+ travel_events.2013.b_rough_terrain:0 "[entourage_heir.GetShortUIName] $travel_events.2013.rough_terrain$"  #onur
+ travel_events.2013.b_reckless:0 "[entourage_heir.GetShortUIName] $travel_events.2013.reckless$" #onur
+ travel_events.2013.c:0 "[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('guard_type_character'))|U] eminim bu yeni talim yönteminden faydalanacaktır."
+ travel_events.2013.c_rough_terrain:0 "[guard_type_character.GetShortUIName] $travel_events.2013.rough_terrain$" #onur
+ travel_events.2013.c_reckless:0 "[guard_type_character.GetShortUIName] $travel_events.2013.reckless$" #onur
+ travel_events.2013.d:0 "Aslında, sadece izlemeyi yeğlerim."
+ travel_events.2013.e:0 "Ne yazık ki acelemiz var."
+
+#Visit a logging camp - Burn off some stress chopping wood
+ travel_events.2014.t:0 "$travel_event_prefix$ Çop, Çop"
+ travel_events.2014.desc:0 "[ROOT.Char.GetCurrentLocation.GetName] oduncu kampının ortasında büyük odun kesme kütüğü asırlardır oradaymış gibi duruyor. Her zaman oradaymış gibi. Hatta insanlar bu topraklara gelmeden önce de buradaymış gibi.\n\nKütüğe yaklaşırken omuzlarım gergin ve ön kolum hafifçe titriyor.\n\nKütüğün üstüne bir parça kereste koyuyorum ve keskin bir hareketle baltamı kaldırıyorum."
+ travel_events.2014.a:0 "#EMP Aaaaaaa!#!"
+ travel_events.2014.a_flavor:0 "Al #EMP bakalım#!, stres!"
+ travel_events.2014.a_stress_tt:0 "Stres Azaldı"
+ travel_events.2014.a_great_stress_desc:0 "Stresinizi büyük miktarda azaltıyorsunuz"
+ travel_events.2014.a_stress_desc:0 "Stresinizi azaltıyorsunuz"
+ travel_events.2014.a_injured_tt:0 "Yaralandı"
+ travel_events.2014.a_injured_desc:0 "Yanlışlıkla kendinizi kesiyorsunuz"
+ travel_events.2014.b:0 "... hayır, bu tür köylü işleriyle uğraşamam."
+ travel_events.2014.b_flavor:0 "Baltanızı indiriyorsunuz."
+
+#Visit a peat quarry - Try not to fall asleep
+ travel_events.2015.t:0 "$travel_event_prefix$ Torf mu? Lütfen Daha Fazla Anlat..."
+ travel_events.2015.desc:0 "[quarry_guide.GetTitledFirstName|U], [ROOT.Char.GetCurrentLocation.GetName] civarındaki torf ocağını gezdirirken çocuksu bir coşkuyla kendisini kaybediyor. Anlaşılmaz bir sebepten olsa gerek bu torf çukurunun hükmü altındaki en değerli ve ilginç yer olduğunu düşünüyor gibi duruyor.\n\nTahrip edilmiş kahve ve griye kaçan yeşili inceliyorum.\nGöz kapaklarım yavaşça ağırlaşmaya başlıyor. Biraz sonraysa uyku beni ele geçirmeye başlıyor. En sonunda dayanamıyorum ve gözlerim tamamen kapanıyor...\n\nSarsılarak uyanıyorum. [quarry_guide.GetFirstNameNoTooltip], beni yakamdan tutmuş bağırıyor.\n"... Ne oldu #EMP sıkılmaktan#! uyuyakaldınız herhâlde?""
+ travel_events.2015.a:0 "Ne sıkıcısı? Sadece torfu daha yakından inceliyordum!"
+ travel_events.2015.a_convinced_tt:0 "İkna Oldu"
+ travel_events.2015.a_convinced_desc:0 "[quarry_guide.GetShortUIName] adlı kişiyi ikna etmeyi başarıyorsunuz"
+ travel_events.2015.a_insulted_tt:0 "Hakarete Uğramış"
+ travel_events.2015.a_insulted_desc:0 "[quarry_guide.GetShortUIName] sözleriniz karşısında hakarete uğramış hissediyor"
+ travel_events.2015.b:0 "Sen asıl şu keseye bak..."
+ travel_events.2015.b_flavor:0 "[quarry_guide.GetShortUIName] adlı kişiye rüşvet veriyorsunuz"
+#Visit a hill farm - Bull rush!
+ travel_events.2016.t:0 "Boğa Baskısı?"
+ travel_events.2016.desc:1 "Öğürmelerle karışmış tezek kokusu [ROOT.Char.GetCurrentLocation.GetName] bayırının yolculara önerdiği tek şey değil. Aynı zaman bağıran ırgatlar, gökgürültüsü gibi böğürtüler ve yolumuzun üstündeki kaçmış boğa gibi şeyler de var.\n\nYaratık bir kurbana odaklanana kadar etrafa sinirlice saldırıyor: [entourage_member.GetFirstName], atının üstüne panikliyor.\n\nCanavarı geride tutmak için açık bir geçit var - sadece birimizin onu cezbetmek için yeterince cesur olması gerek!"
+ travel_events.2016.a:0 "Gel buraya, seni [bull_loc.Custom('InsultAdjective')] boğa!"
+ travel_events.2016.a_captured.tt:0 "Yakalandı"
+ travel_events.2016.a_captured.desc:0 "Boğayı başarılı bir şekilde yakaladınız"
+ travel_events.2016.a_wounded.tt:0 "$travel_events.2001.c_failure.tt$"
+ travel_events.2016.a_wounded.desc:0 "Boğa yakalandı ama yaralandınız"
+ travel_events.2016.b:1 "[guard_type_character.GetFirstNameNoTooltip], #EMP bir şeyler yap!#!"
+ travel_events.2016.b_putdown.tt:0 "Bastırma"
+ travel_events.2016.b_putdown.desc:1 "[guard_type_character.GetShortUIName], boğayı sefaletinden kurtarır"
+ travel_events.2016.b_wounded.desc:1 "[guard_type_character.GetShortUIName], darbe alır"
+ travel_events.2016.c:0 "Risk almamak en iyisi."
+ travel_events.2016.c_escaped.tt:0 "Kaçıldı"
+ travel_events.2016.c_escaped.desc:1 "[entourage_member.GetShortUIName], boğanın hücumundan kıl payı kurtuldu"
+ travel_events.2016.c_wounded.desc:0 "[entourage_member.GetShortUIName], yaralandı"
+
+#Visit a 'haunted' mansion (farm estate) - Enter at your own peril
+ travel_events.haunted_manor.t:0 "'Lanetli' Mâlikane"
+ travel_events.2017.t:0 "$travel_event_prefix$ $travel_events.haunted_manor.t$"
+ travel_events.2017.desc:0 "[ROOT.Char.GetCurrentLocation.GetName] içindeki mâlikanenin koridorlarında yürürken, [estate_character.GetTitledFirstName] bana döndü ve "[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], söylentilere göre bu mülkün bu kısmı lanetli."\n\nTerredütle etrafa baktım. Salon bekleneceğinden daha karanlıktı, asılı mumların alevleri titriyordu.\n\nEski yemek salonunda durduğumuzda, [estate_character.GetFirstNameNoTooltip] yeniden bana döndü ama bu sefer yüzünde sinsi bir sırıtışla. "#EMP Lanetli#! konakta bir tur atmak ister misiniz?""
+ travel_events.2017.a:0 "Ah, #EMP ilgi çekici duruyor!#!"
+ travel_events.2017.a_tt:0 "Mâlikaneye girersiniz"
+ travel_events.2017.b:0 "Gerek yok."
+ travel_events.2017.b_tt:0 "Mâlikaneyi terk edersiniz"
+
+#Go with the pack or explore on your own?
+ travel_events.2018.t:0 "$travel_events.haunted_manor.t$: İlerideki Yol"
+ travel_events.2018.desc:0 "Karanlık ve ıssız bir koridorda yürüyoruz. Karşılaştığımız birkaç mobilyanın üzerlerine perde serilmiş bu da ortama hayaletimsi bir hava katıyor.\n\nBu... bir... fare mi? Hızlıca maiyetime yetişmeye çalışıyorum.\n\n[estate_character.GetTitledFirstName|U] bize dönüyor ve gözlerini kısara söylüyor "... buradan efendiler.""
+ travel_events.2018.a:0 "Rotaya bağlı kalmak iyidir."
+ travel_events.2018.a_tt:0 "Maiyetinle birlikte kalırsın"
+ travel_events.2018.b:0 "Şu kuytu köşedeki de ne?"
+ travel_events.2018.b_tt:0 "İlginç bir şey bulabilirsin"
+ travel_events.2018.c:0 "Buradan çıkıyorum!"
+
+#Oh look, someone is trying to murder you
+ travel_events.2019.t:0 "$travel_events.haunted_manor.t$: Mâlikanedeki İhanet"
+ travel_events.2019.desc:0 "Koridoru sola doğru takip ettim, alçak bir kapıdan içeri girdim. Önümde hafif aralıklı bir döşeme kapısı var.\n\nYoğun karanlık içeriden gelen titreşen ışıklarla bozuluyor. Dikkatlice merdivenlerden aşağı doğru iniyorum ve bulduğum şey... #EMP yüzü örtülü, hançer taşıyan biri?!#!\n\nSuikastçı bana yaklaşıken hızlıca çevremi tarıyorum."
+ travel_events.2019.a:0 "Bak! Arkanda!"
+ travel_events.2019.a_tt:0 "Dolabı suikastçıya doğru itmeyi deneyeceksiniz"
+ travel_events.2019.a_retaliate.tt:0 "Misilleme"
+ travel_events.2019.a_retaliate.desc:0 "Dolap suikastçının kafatasını parçalar"
+ travel_events.2019.a_retaliate.effect_tt:0 "Suikastçı ölür"
+ travel_events.2019.a_death.desc:0 "Öldünüz"
+ travel_events.2019.b:0 "Cebini para ile doldurabilirim!"
+ travel_events.2019.b_tt:0 "Suikastçıya rüşvet vermeye çalışırsınız"
+ travel_events.2019.b_paid_off.tt:0 "Ödendi"
+ travel_events.2019.b_paid_off.desc:0 "Suikastçıya para ödendi ve kaçıyor"
+ travel_events.2019.a_paid_off.effect_tt:0 "Suikastçı kaçar"
+ travel_events.2019.c:0 "En garde, seni köpek!"
+ travel_events.2019.c_tt:0 "Suikastçı ile çatışılır"
+ travel_events.2019.c_retaliate.desc:0 "Suikastçıyı öldürdünüz"
+ travel_events.2019.expose_effect_tt:0 "Ajan Ortaya Çıktı"
+
+#You found a very weird mendicant character
+ travel_events.2020.t:0 "$travel_events.haunted_manor.t$: Hangi Cadı?"
+ travel_events.2020.desc_witch:0 "Aniden sağımdaki dar geçidi keşfetmek için bir istek duydum. Koridorda dolaşırken, açık bir kapıdan yayılan sıcak bir parıltı beni karşılıyor.\n\nOda her türlü mutfak eşyasıyla dolup taşıyor. Bazı bitkileri, damıtıcıları, krozeleri, şişeleri, tenceleri ve çaydanlıkları fark ediyorum... Bir simya laboratuvarının şanlı bir temsili.\n\n[mendicant_character.GetFirstName] gülümseyerek beni karşılıyor. "Merhaba, birisi kapımı çalmayalı uzun zaman oldu. Bir şeyler içmek ister misin?" Çaydanlığı işaret ediyor ve fincanları dolduruyor."
+ travel_events.2020.desc:0 "Grubumdan ayrı düştüm, bir kapıyla karşılaşana kadar karanlık koridorda yürüdüm. Kapının aralıklarından parlayan ışık dikatimi çekiyor.\n\nKapıyı yavaşça açtım ve kısık bir tıslama sesiyle karşılandım. Kalabalık odanın ortası kitaplar, şişeler ve her türlü simya alet edevatı diziliyde ve yanlarında bir [Select_CString(mendicant_character.IsFemale, 'kadın', 'adam' )] duruyordu.\n\nKarıştırdığı kazandan pis bir koku yayılıyor. Kafasını çevirmeden "Biraz ister misin? Genelde harikalar yaratır" dedi."
+ travel_events.2020.a:0 "Bir bardak çaya hayır demem."
+ travel_events.2020.b:0 "Sarayımda kulanışlı olabilirsin."
+ travel_events.2020.c:0 "Önce senin tadına bakalım; sonra çaya bakarız."
+ travel_events.2020.d:0 "Um... nasıl geri dönebilirim?"
+
+#You found a shiny bauble
+ travel_events.2021.t:0 "$travel_events.haunted_manor.t$: Ödünç Alınmış Bir Şey"
+ travel_events.2021.desc_intro:0 "Dar kapıdan girdiğimde beni karşılayan kapalı pencerelerden yayılan karamsar bir ışık oldu. Odayı incelediğimde eski bir çalışma odası gibi göründüğünü fark ettim."
+ travel_events.2021.desc_illustrious:0 "\n\nAniden gözüme zamanın yıpratamadığı bir [new_trinket.GetName] takıldı, odanın ortasındaki bir kaide üzerine dikkatle yerleştirilmiş. Ona doğru ihtiyat ile yaklaşıyorum.\n\nGerçekten bir şaheser, her detay birbirinden özenle yapılmış. Güzelliğine bir anlığına hayran kaldım."
+ travel_events.2021.desc_famed:0 "\n\nOdanın etrafına baktığımda gözümü şaheser olduğu belli olan bir [new_trinket.GetName] takıldı. Kaide benzeri bir şeyin üzerine konulmuş, dikkatimi çekiyor.\n\nBu yer bu şekilde açık olmamalı, hem yağmacılar hem de hırsızlar için hedef olabilir. Dikkatlice yaklaşıyorum."
+ travel_events.2021.desc_masterwork:0 "\n\n[new_trinket.GetName], odanın ortasında bir kaide üzerine oturtulmuş. İhtiyatla yaklaşıyorum.\n\nAcaba bu kimindi? Böyle bir ortamda saklanmasına rağmen hâlâ iyi durumda."
+ travel_events.2021.desc_common:0 "\n\nGözlerim yeni ortama alıştığında pencerenin yanındaki masada ilginç bir obje fark ettim,.\n\n[new_trinket.GetName] çok değerli gibi görünmüyebilir ancak yapıldığı işliği fark ediyorum. Bu gerçekten de sağlam bir çalışmanın eseri."
+ travel_events.2021.desc_bad:0 "\n\nPencereden giren ışığın sayesinde odayı rahat bir şekilde inceliyorum. Tam ayrılmak üzereyken, Köşedeki moloz yığınının üzerinde bir şey fark ettim.\n\n Bu... #EMP Bir şey?#! Kasıtlı olarak mı buraya konulmuş? Bir anlığına duraksıyorum."
+ travel_events.2021.a:0 "Bu koleksiyonuma çok yakışacak."
+ travel_events.2021.a_bad:0 "... bunu gerçekten yapmalı mıyım?"
+ travel_events.2021.b:0 "Burada bıraksam daha iyi."
+ travel_events.2021.b_tt:0 "[new_trinket.GetName] görmezden gelinir"
+
+#Resolution: You were joshed / You found a bauble / You survived the murder attempt / You came back from the mendicant
+ travel_events.2022.t:0 "$travel_events.haunted_manor.t$: Sağ Salim"
+ travel_events.2022.desc_pack:0 "Bir geçitten sonraki odaya geçerken büyük bir şey bize doğru yalpalıyor. Bunu gören maiyetim korku ile cıyaklıyorlar.\n\nYukarı baktığımda yalpalayan figürün siyah çarşafa sarılmış bir iskelet olduğunu fark ediyorum. [estate_character.GetTitledFirstName|U] bize bakıp sırıtırken kaşlarımı çatıyorum.\n\n"Lordlarım ve leydilerim, yüzünüzü görmeniz lazımdı!" [ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('entourage_member_one'))] [entourage_member_one.GetTitledFirstName] kaldırılmış bir el ve tedirgin bir görünüşle ona doğru yaklaşıyor."
+ travel_events.2022.desc_murder:0 "Bir suikastçıdan kaçmanın sersemliğiyle birlikte bocalamıştım. #EMP Ne oldu?#!\n\nTitreye titreye merdivenlerden çıkıp yemek odasının önündeki kordidora ulaşıyorum. Gerginliğimin yerini hızla öfke alıyor. #EMP [estate_character.GetTitledFirstName], bunların hepsinin arkasında o mu vardı?#!\n\nToplanmış maiyetime ulaştığımda yolda gizlenmiş iskeleti güçlükle fark ettim.\n\nGözlerim öfkeyle doldu, [estate_character.GetFirstNameNoTooltip] bana kafası karışmış bir şekilde bakarken ona dik dik bakıyordum."
+ travel_events.2022.desc_mendicant:0 "Dilenci bölgesinden ayrıldıktan sonra gürültüyü merkez odaya kadar takip ettim.\n\nMaiyetimin tedirgin ama rahatlamış bir görünüme sahip ve üstlerindeki kapıdan sarkan karanlık bir cisim görüyorum. [estate_character.GetTitledFirstName|U] arkasını döndü ve beni görünce şaşkınlıkla zıpladı.\n\n"Efendim! Kendi başınıza dışarıda mıydınız? Bu tehlikeli, biliyorsun!" Gözlerini kısarak söyledi."
+ travel_events.2022.desc_mendicant_recruit:0 "Ben ve yeni yoldaşım [mendicant_character.GetTitledFirstName] ile birlikte onun odasını terk edip merkez odada toplanmış maiyetimin yanına döndük.\n\n[mendicant_character.GetFirstNameNoTooltip], maiyetimin geçtiği kapıdan sarkan karanlık şekli görünce burnundan soluyor ardından rehberimiz [estate_character.GetTitledFirstName] arkasını dönüyor.\n\n[mendicant_character.GetFirstNameNoTooltip] onun tarafından fark edilince gözleri kocaman açılıyor. "#EMP Bu da kim!#! Efendim, Böyle ayrılmamalısınız! Güvenli değil!""
+ travel_events.2022.desc_bauble:0 "Cebimdeki yeni eser ile birlikte karanlık ve ıssız koridorlarda başıboş dolaşıyordum. Sonunda maiyetimin geri kalanını konağın sonundaki yemek salonunda buldu.\n\nBüyük karanlık bir figür odalardan birinin girişine asılmış o an bunun amacının ne olduğunu merak ettim. Aynı zamanda maiyetimin geri kalanı öfkeli gözüküyor... ?\n\n[estate_character.GetTitledFirstName|U] şaşırarak bana doğru dönüyor. "Efendim! Ne için ayrıldınız? Bu karanlık koridorlar yalnız başınıza dolaşmak için güvenli değil!""
+ travel_events.2022.desc_joshed:0 "Karanlığın içimde yarattığı ürpertiyi görmezden gelmeye çalışarak el yordamıyla ilerliyorum. Maiyetimi bulmaya çalışırken hızlıca sonraki kapıdan geçiyorum...\n\n...ve #EMP aniden#! büyük karanlık bir şekilde üstümden bana doğru düşüyor. Şaşkınlıkla çığlık atıyorum.\n\nDuyularımı geri kazandığımda maiyetimin yeni girdiğim odada olduğunu fark ediyorum. [estate_character.GetTitledFirstName] kahkalarından dolayı nefes almakta zorlanırken beni işaret ediyor. "E... efendim #EMP *Derince nefes alır*#! Si... Siz güzel vakit geçirdiniz mi?""
+ travel_events.2022.a:0 "Az önce #EMP senin#! düzenlediğin bir planla öldürülmeye çalışıldım!"
+ travel_events.2022.a_slain.tt:0 "Suçlu Öldürüldü"
+ travel_events.2022.a_slain.desc:0 "[estate_character.GetShortUIName], sizin tarafınızdan öldürüldü."
+ travel_events.2022.a_escape.tt:0 "Suçlu Kaçtı"
+ travel_events.2022.a_escape.desc:0 "[estate_character.GetShortUIName] sizi yaralayıp kaçtı"
+ travel_events.2022.b:0 "Muhafızlar! Bu kişi beni öldürmeye çalıştı!"
+ travel_events.2022.b_slain.desc:0 "[estate_character.GetShortUIName], [travel_leader.GetShortUIName] tarafından öldürüldü"
+ travel_events.2022.b_escape.desc:0 "[estate_character.GetShortUIName], [travel_leader.GetShortUIName] tarafından yaralandı ve kaçtı"
+ travel_events.2022.c:0 "Evi cadılar için aramak isteyebilirsin."
+ travel_events.2022.d:0 "Bir cadı buldum, [mendicant_character.GetFirstNameNoTooltip]."
+ travel_events.2022.e:0 "Tamamen normal bir ev gibi gözüküyor."
+ travel_events.2022.f_pack:0 "Buna karışmamalıyım."
+ travel_events.2022.f:0 "Seni düzenbaz!"
+ travel_events.2022.g_pack:0 "[entourage_member_one.GetFirstNameNoTooltip], yapma."
+ travel_events.2022.g:0 "Ah. Haha, tabii ki!"
+
+#You ratted out the witch; have a curse(?) dream
+ travel_events.2024.t:0 "$travel_events.haunted_manor.t$: Onun Laneti"
+ travel_events.2024.desc:0 "[mendicant_character.GetFirstName] bana dik dik bakıyor. Ve uzunca süre bakmaya devam ediyor. Koridorlarda koşarak kaçmaya çalıştım — ama beni takip etmeye devam ediyor. Gözleri her yerde beni izliyor.\n\n"Biliyorum..." Sinsice fısıldıyor. Arkamı dönüp kaçmaya çalıştığımda binlerce mumun bile aydınlatamayacağı karanlık bir çukura düşüyorum. Düşmeye devam ediyorum, düşüyorum...\n\nAniden terler içinde uyanıyorum."
+ travel_events.2024.a:0 "Tüm bunlar... kabus muydu?"
+
+#Visit your own farm estate - Tax or don't tax your hospitable subject
+ travel_events.2025.t:0 "$travel_event_prefix$ Sıcak Bir Karşılama"
+ travel_events.2025.desc:0 "Gece çökmeden önce [ROOT.Char.GetCurrentLocation.GetName] içinde bir çiftlik arazisine ulaşıyoruz, [estate_owner.GetFirstName] tüm ihtiyaçlarımızla ilgilenecek zarif bir ev sahibi rolünü üstleniyor.\n\nAkşamın ilerleyen vakitlerinde benim onuruma bir ziyafet düzenleniyor ve kadehlerimiz şafak vaktine kadar [ROOT.Char.Custom('RegionalDrink')] ile dolup taşıyor.\n\nSabah vakti [estate_owner.GetFirstNameNoTooltip] yanıma uğruyor: "Efendim sizi ağırlamaktan çok keyif aldık ve bu son ziyafetin düşüncesi bizi gelecek pek çok gece boyunca ısıtacak" gülümsüyor ve başını sallıyor."
+ travel_events.2025.a:0 "... Senin [ROOT.Char.Custom('RegionalDrink')] stoğun vergi miktarın ile eşleşiyor mu?"
+ travel_events.2025.b:0 "Gerçekten iyi bir eve sahibiydin, [estate_owner.GetFirstNameNoTooltip]."
+ travel_events.2025.c:0 "Bunun karşılığı olarak bazı iyi fikirleri paylaşmama izin ver."
+
+#Visit someone else's farm estate - Pay or don't pay for the hospitality
+ travel_events.2026.t:0 "$travel_event_prefix$ Ev Sahibi için Ödül"
+ travel_events.2026.desc_intro:0 "Zaman öğleden geceye doğru hızlı ilerlerken [ROOT.Char.GetCurrentLocation.GetName] içinde bir çiftlik arazisine geliyoruz. Bölge sahibi [estate_owner.GetFirstName] bizi sıcak bir şekilde karşılıyor ve bizim için cömert bir ziyafet hazırlayacağına söz veriyor.\n\nZiyafet başladıktan sonra  "
+ travel_events.2026.desc_carnivore:0 "kızarmış hayvanlar, güveçler, çorbalar, ekmek ve benzeri yemekler ile tıkınıyoruz."
+ travel_events.2026.desc_vegetarians:0 "harika bitki temelli bir mutfak beni karşılıyor. Bazılarının daha önce adını bile duymamıştım.."
+ travel_events.2026.desc_outro:0 "\n\nSabahleyin [estate_owner.GetFirstNameNoTooltip], kahvaltımın tadını çıkarırken bana yaklaşıyor. "Efendim, dünkü gibi abartılı bir ziyafete ev sahipliği yapmak biraz #EMP pahalı olabilir...#!""
+ travel_events.2026.a:0 "#EMP Bana#! çiftliğine getirdiğim şan için #EMP ödeme yapmalısın#!."
+ travel_events.2026.b:0 "Ödemeyi üstlenmemi kabul et."
+ travel_events.2026.c:0 "Belki [county_liege.GetTitledFirstNameNoTooltip] ve ben bir anlaşma yapabiliriz."
+ travel_events.2026.d:0 "Buna #EMP nasıl#! cesaret edersin!"
+#Visit your own quarry - Encounter hungry workers
+ travel_events.2027.t:0 "$travel_event_prefix$ Taş Ocağı Anlaşmazlığı"
+ travel_events.2027.desc:1 "[ROOT.Char.GetCurrentLocation.GetName] bölgesindeki yerel taşocağına girerken bir deri bir kemik kalmış kirli çocukların onlar gibi açlıktan kırılan ebeveynlerine ağır işlerde yardım ettiklerini fark ediyorum. Bu alanda yiyecek kıt gibi görünüyor.\n\nBiraz daha ileride taşocağı ustabaşı [foreman_character.GetFirstName], işçilerin sözcüsü gibi görünen [peasant_leader.GetFirstName] ile bir münakaşa veriyor gibi görünüyor. "[Select_CString(foreman_character.IsFemale, 'Leydim', 'Lordum' )], bu #EMP kabul edilemez!#!" diyor [peasant_leader.GetFirstNameNoTooltip].\n\n"Yeterli yiyeceği karşılayamıyoruz ve aylardır evde aç yatıyoruz. Çocuklarımız açlıktan kırılıyor ve bizde tüm bu ağır işleri yapa yapa güçten düşüyoruz. Tek ihtiyacımız olan #EMP birazcık#! zam..." bu konuşmadan sonra varlığımı fark edip hemen uzaklaşıyor."
+ travel_events.2027.a:0 "İyi beslenmiş işçiler daha verimli çalışır."
+ travel_events.2027.b:0 "Açlık onları zinde tutar."
+ travel_events.2027.c:0 "Haddini bil, #EMP köylü.#!"
+ travel_events.2027.d:0 "Neden ustabaşıyla yemiyorsunuz?"
+
+#Visit someone else's quarry - Encounter an architect
+ travel_events.2028.t:0 "$travel_event_prefix$ Mimarın Keyfi"
+ travel_events.2028.desc:1 "[budding_architect.GetFirstName], maiyetimiz [ROOT.Char.GetCurrentLocation.GetName] içindeki taş ocağına geldiğinde derin düşüncelere daldı. Kabaca kesilmiş geniş bir tahta masaya eğildi ve kendini perşomene bir şeyler çizmeye kaptırdı.\n\nOmuzlarının üzerinden ne çizdiğine bakıyorum bu hareketim onun dikatini çekiyor. "Efendim! Sizin burada olduğunuzu fark etmedim en derin özürlerimi sunarım!"\n\nNeye bu kadar odaklandığını sordum ve [budding_architect.GetFirstNameNoTooltip] cevapladı.\n"Ah, temellerin inşası ve binaların yapımıyla ilgili düşüncelerimi çiziyordum. Göreceğiniz üzere ben bir mimarım," utangaç bir şekilde gülümsüyor."
+ travel_events.2028.a_architect:0 "Bunlar gerçekten güzel. Bir kopyasını alacağım!"
+ travel_events.2028.a:0 "Mimar mı? Çizimlerden birini alacağım!"
+ holding_blueprint:0 "Mimari Çizimler"
+ holding_blueprint_desc:0 "Belirli binaların nasıl en verimli şekilde inşa edileceklerinin bilgilisini içeren bir parşomen."
+ travel_events.2028.b:0 "Yeteneklerin sarayımda kullanışlı olabilir."
+ travel_events.2028.b.tt:0 "[budding_architect.GetShortUIName] 20 yıl boyunca düşük maaş ile çalışacak"
+ trainee_salary_mod:0 "Tecrübesiz Ödeneği"
+ travel_events.2028.c:0 "Bu... harika... böyle çalışmaya devam et."
+
+#Visit a cereal field - Encounter a heathen
+ travel_events.2029.t:1 "$travel_event_prefix$ Uyanış"
+ travel_events.2029.desc:1 "[ROOT.Char.GetCurrentLocation.GetName] bölgesinin güneyindeki tahıl tarlalarına vardığımızda güneş batmaya başlamıştı, bu esnada bir [Select_CString(crop_circler.IsFemale, 'kadının', 'adamın' )] özenli bir şekilde çalıştığını fark ettim. Ağır bir taş ve düz bir odun parçasıyla mahsulleri hızlıca düzleştiriyordu.\n\nO ağır işler yaparken kaşlarımı çatarak ve neyin peşinde olduğunu soruyorum.\n\nÖnce ürküyor sonra yanlış [crop_circler.GetFaith.GetReligion.GetAdjectiveNoTooltip] öğretilerini arkasına saklanmayı bırakıp gerçek efendilerimizle tanışmamız gerektiği ile ilgili atıp tutuyor. Şaşkınlıkla birkaç adım geri atıyorum."
+ travel_events.2029.a:1 "Kapa çeneni, seni kâfir!"
+ travel_events.2029.b:0 "Nasıl [ROOT.Char.GetFaith.GetReligion.GetNameNoTooltip] hakkında kötü konuşmaya cüret edersin!"
+ travel_events.2029.c:0 "Bu #EMP gerçek efendilerimiz#! hakkında daha fazla şey anlat."
+ travel_events.2029.d:0 "Hmm... anladım."
+
+#Cereal field potential follow-up
+ travel_events.2030.t:0 "$travel_event_prefix$ İnançsızın İtirafı"
+ travel_events.2030.desc:0 "Sabahleyin [entourage_chaplain.GetTitledFirstName], yanıma geliyor ellerini büküyor. "[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )] size korkunç bir itirafta bulunmam gerek."\n\nDerince iç çekiyor. "Geçen gece o adamın çılgınca öğretilerini görmezden gelmemden beridir içimde bir #EMP şüphe#! var." [entourage_chaplain.GetFirstNameNoTooltip], bana yakından bakarken karşılaştığı çıkmaz durum için bir sempati bekliyor.\n\n"[entourage_chaplain.GetFaith.HighGodNamePossessive] varlığından ve bizi izlediğinden şüphe duyuyorum." sözlerini bitirdikten sonra dramatik bir şekilde duruyor."
+ travel_events.2030.a:0 "Sorun değil."
+ travel_events.2030.b:0 "Bu #EMP kabul edilemez#!!"
+
+#Visit another cereal field - Encounter a gardener
+ travel_events.2031.t:0 "$travel_event_prefix$ Dünyanın Rahmi"
+ travel_events.2031.desc:0 "[ROOT.Char.GetCurrentLocation.GetName] arazisi gerçekten de görülmesi gereken bir yer. Mahsuller çiçekleniyor; yaprakları yemyeşil; Her şeyiyle göz alıcı.\n\nBu güzelliği kaynağına kadar takip ediyorum ve arazinin ortasında duran bir [Select_CString(gardener_character.IsFemale, 'kadın', 'adam' )] gözüme çarpıyor, görünüşe göre dinleyicilere bir konuşma yapıyor. "Benim adım [gardener_character.GetFirstName]."\n\nBeni uzaktan fark ediyor ve bana doğru dönüyor. "Benim bahçıvanlık hakkındaki bilgim uçsuz bucaksızdır, evet, kıyaslanamayacak kadar — Bu yüzden biraz dur ve dinle.""
+ travel_events.2031.a:0 "İlgimi çekti!"
+ travel_events.2031.a_down_to_earth.t:0 "Doğaya Dönüş"
+ travel_events.2031.b:0 "Koskoca [ROOT.Char.GetTitleAsNameNoTooltip|U] #EMP bahçıvanlık#! mı yapacak?"
+
+#Visit a ramparts/forest fort - Encounter a herbalist/physician
+ travel_events.2032.t:0 "$travel_event_prefix$ Senin İçin Bir Bitki..."
+ travel_events.2032.desc:0 "[ROOT.Char.GetCurrentLocation.GetName] bölgesi içindeki [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip|l] arazisinde bir zirve gerçekten de etkileyici bir savunmaya sahip. Bu arazinin dış çevresinde dolaşırken uzakta tuhaf bir insan dikkatimi çekti.\n\nKendi kendine mırıldanırken arada sırada çömelip çeşitli otları topluyor. Sanki... #EMP bitkilerle#! konuşuyor gibi?\n\nOna dikkatlice yaklaştım o da avucundaki çeşitli bitkiler dikkat çekerken bana doğru döndü. Gözlerinin arkasında söylenmemiş bir sorunun kıvılcımları var."
+ travel_events.2032.a:0 "Bu bitkilerin etkisi ne?"
+ travel_events.2032.a_poisonous.tt:1 "Sonraki [GetScheme('murder').GetTypeName] [Concept( 'scheme', 'planınızda' )|E] kullanmak üzere bazı zehirli bitkiler tedarik edersiniz"
+ travel_events.2032.a_poisonous.t:0 "Bitkiler tedarik edildi"
+ travel_events.2032.a_poisonous.desc:1 "Bazı zehirli bitkiler buldun"
+ travel_events.2032.a_learning.tt:0 "Yetenek Gelişti"
+ travel_events.2032.b:0 "Benim saray hekimim olmakla ilgilenir misin?"
+ travel_events.2032.c:0 "Bu tam bir zaman kaybı."
+
+#Visit some hunting grounds - If you have a prisoner with you; manhunt!
+ travel_events.2033.t:0 "$travel_event_prefix$ Mahkûm Kaçtı!"
+ travel_events.2033.desc_intro:0 "[ROOT.Char.GetCurrentLocation.GetName] avlanma bölgesine girdikten bir süre sonra muhafızlarım hafif panik olmuş ve terler içinde kalmış bir vaziyette bana doğru koşmaya başladı. "Efendim! [prisoner.Custom('InsultAdjective')] [prisoner.GetTitledFirstName] prangalarından kurtulmayı başardı"\n\nBakışlarımı ormana doğru çevirdim ve bir hareket belirtisi aradım ama hiçbir şey bulamadım."
+ travel_events.2033.desc_manhunt:0 "Bu sadece tek bir anlama gelebilir. #EMP İnsan Avı!#!\n\n"
+ travel_events.2033.desc_manhunt_previous:0 "Son insan avımı hatırlayınca içimde bir neşe kıvılcımı oluştu. Heyecan. Tehlike. Gerçekten sabredemiyorum."
+ travel_events.2033.desc_manhunt_first:0 "Uzun zamandır bu yakalanması zor ve tehlikeli avın peşine düşmek istiyordum. Dudaklarımın kenarı yavaşça yukarı kalkıyor."
+ travel_events.2033.desc:0 "Firar olayından dolayı hafif sersemlemiş bir şekilde durumu dikkatlice değerlendiriyorum.\n\nKaçmış mahkûmu adalete teslim etmeliyiz değil mi?"
+ travel_events.2033.a_manhunt:0 "#EMP Nefes Kesici!#!"
+ travel_events.2033.a_cannibal:0 "Ah evet, mahkûmlar; başka çeşit bir et."
+ travel_events.2033.a_manhunt_tt:0 "İnsan avından kaçmayı başaran bir hedef intikam için geri dönebilir"
+ travel_events.2033.a_manhunt.tt:0 "Başarılı İnsan Avı"
+ travel_events.2033.a_manhunt.desc:1 "[prisoner.GetShortUIName] avlandı ve öldürüldü"
+ travel_events.2033.a_caught_trophy.desc:1 "[prisoner.GetShortUIName] avlandı ve bir ganimet hâline geldi"
+ travel_events.2033.a_caught_eaten.tt:0 "Mahkûm Yenildi"
+ travel_events.2033.a_caught_eaten.desc:0 "[prisoner.GetShortUIName] yakalandı ve yenildi"
+ travel_events.2033.a_escaped.tt:0 "Mahkûm kaçtı"
+ travel_events.2033.a_escaped.desc:0 "[prisoner.GetShortUIName] ellerinden kurtuldu"
+ travel_events.2033.a_killed.desc:0 "[prisoner.GetShortUIName] seni öldürüp kaçtı"
+ travel_events.2033.a_accident.desc:0 "Tökezlediniz ve boynunuzu kırdınız"
+ manhunt_skull_cup:0 "İnsan Avı Kafatası Kadehi"
+ manhunt_skull_cup_desc:0 "Bu kafatası kadeh [ROOT.Char.GetCurrentLocation.GetName] bölgesinde [ ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip|l] arazisinde [new_skull_cup.MakeScope.Var('skull_origin').Char.GetUIName] başarılı bir şekilde avlandıktan sonra zaferin kanıtı olarak alındı."
+ manhunt_skull_cup_desc_fallback:0 "Bu kafatası kadehi başarılı bir insan avının kanıtı."
+ travel_events.2033.b:0 "... Muhtemelen onu yakalamalıyız?"
+ travel_events.2033.b_caught.tt:0 "Suçlu Yakalandı"
+ travel_events.2033.b_caught.desc:0 "[prisoner.GetShortUIName] yakalandı"
+ travel_events.2033.b_caught.effect:0 "[prisoner.GetShortUIName], mahkûmunuz olmaya devam eder"
+ travel_events.2033.c:0 "İzin verin [prisoner.GetFirstNameNoTooltip] kaçsın. Vahşi doğa onun işini nasıl olsa bitirir."
+
+#Your escaped manhunted prisoner seeks revenge
+ travel_events.2034.t:0 "$travel_event_prefix$ Ektiğini Biçmek..."
+ travel_events.2034.desc_intro:0 "[ROOT.Char.GetCurrentLocation.GetName] dolaylarındaki [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip|l] arazisinde sabaha başladık. Esnedim ve yavaşça gerindim.\n\nUykulu bir hâlde kalkıp temiz sabah havasını içime çekmek için çadırın dışında doğru yürüdüm. Aniden ensemdeki tüyler diken diken oldu, "
+ travel_events.2034.desc:0 "odanın köşesinde [vengeful_prisoner.GetTitledFirstName], elinde bir bıçakla dimdik duruyordu.\n\nAlaycı bir şekilde gülerek. "[ROOT.Char.GetTitledFirstNameNoTooltip|U], seni tekrar görmek güzel. Bu sefer #EMP ben#! insan avı yapacağım." Bir anlık sersemlikle gözlerimi kırpıştırdım."
+ travel_events.2034.desc_long_time:0 "köşede gözlerim bıçağını çekmiş birini yakalıyor.\n\nAlaycı bir şekilde gülümseyerek. "Beni hatırlamadın, değil mi? Ben #EMP seni#! hatırlıyorum [ROOT.Char.GetTitledFirstNameNoTooltip], ve senin #EMP canavarca#! insan avı eğitimini." Belli belirsiz bir anı aklıma geldi. Kaçak mahkûm #EMP [vengeful_prisoner.GetTitledFirstName]#!...?"
+ travel_events.2034.a:0 "Bunu yapmak zorunda değilsin!"
+ travel_events.2034.a_overpowered_desc:0 "[vengeful_prisoner.GetShortUIName] senin yanında güçsüz kalıyor"
+ travel_events.2034.a_overpowered_effect:0 "[vengeful_prisoner.GetShortUIName] ve kaderi artık senin ellerinde"
+ travel_events.2034.a_death_desc:0 "$travel_events.2019.a_death.desc$"
+ travel_events.2034.b:0 "#EMP [bodyguard.GetFirstNameNoTooltip]!!#!"
+ travel_events.2034.b_overpowered_desc:0 "[vengeful_prisoner.GetShortUIName], [bodyguard.GetShortUIName] yanında güçsüz kalıyor"
+ travel_events.2034.b_death_tt:0 "Kaçak Mahkûm Öldürüldü"
+ travel_events.2034.b_death_desc:0 "[vengeful_prisoner.GetShortUIName], [bodyguard.GetShortUIName] tarafından öldürüldü"
+#Decide their fate
+ travel_events.2035.t:0 "...Ektiğini Biçersin"
+ travel_events.2035.desc:0 "[vengeful_prisoner.GetTitledFirstName|U] önümde kısıtlanmış ve hareket edemez hâlde diz çöküyor. Ani olaydan sonra muhafızlarım çadırı ağzına kadar doldurdu.\n\n[vengeful_prisoner.GetTitledFirstName|U] benimle göz göze gelmeyi reddederek inatla aşağı bakıyor. Bu [vengeful_prisoner.Custom('InsultNoun')] ile ne yapmalıyım?"
+ travel_events.2035.a:0 "Sen ölümü hak ediyorsun."
+ travel_events.2035.b:0 "Hapse geri dönmelisin."
+ travel_events.2035.c:0 "Bu seferlik görmezden geleceğim."
+
+#Your escaped/reformed prisoner is... pretty peaceful actually
+ travel_events.2036.t:0 "$travel_event_prefix$ Son?"
+ travel_events.2036.desc_intro:0 "[ROOT.Char.GetCurrentLocation.GetName] içinde küçük bir köyün kapısından giriyoruz. Buradaki insanlar huzurlu görünüyor, günlük işlerini hâlledip birbirlerine yardım ediyorlar.\n\nKöylüleri gelişi güzel incelerken bir şey dikkatimi çekiyor. "
+ travel_events.2036.desc_reformed:0 "Yerel tapınakta benden kaçan mahkûm [peaceful_prisoner.GetTitledFirstName] aniden gözlerime takılıyor. Çevresindekilerle nazikçe sohbet ediyor.\n\nBu ne ilginç bir tesadüf! Huzurlu bir şekilde din adamlarına yardım ederken onu izliyorum."
+ travel_events.2036.desc:0 "Anında aklıma kaçak bir mahkûm geliyor, [peaceful_prisoner.GetTitledFirstName], köyün bir yaşlısına yardım ederken kahkalarla gülüyor.\n\nHâlinden memnun gözüküyor."
+ travel_events.2036.a:0 "Yaşa ve Yaşat."
+ travel_events.2036.a_criminal:0 "Belki suçlular bile düzelebilir."
+ travel_events.2036.a_reformed:0 "Benim canıma bir daha kastetmediği sürece..."
+ travel_events.2036.b:0 "[peaceful_prisoner.GetTitledFirstNameNoTooltip|U] #EMP benimle gel#!."
+ travel_events.2036.b_criminal:0 "Suçlu, her zaman suçludur."
+ travel_events.2036.b_reformed:0 "#EMP ...hayır#!, onun dışarıda olması kendimi güvensiz hissetiriyor."
+
+#Visit some hunting grounds - Sadistic county holder is manhunting
+ travel_events.2037.t:0 "$travel_event_prefix$ İnsan Avcısı"
+ travel_events.2037.desc:0 "Yerel avlanma alanında [ROOT.Char.GetCurrentLocation.GetName] bölgesinin yöneticisi [2037_county_liege.GetTitledFirstName] ve maiyeti ile karşılaşıyoruz.\n\nKibarca selamlaştıktan sonra bana yaramaz bir gülümsemeyle bakıyor: "En asil sporda bana katılmak ister misin, "
+ travel_events.2037.desc_child:0 "ufaklık?" "
+ travel_events.2037.desc_adult:0 "[2037_county_liege.Custom2('RelationToMePossessive', ROOT.Char)]?" "
+ travel_events.2037.desc_segway:1 "bunu söyledikten sonra ormanın köşesindeki zincirli mahkûma doğru başını salladı."
+ travel_events.2037.desc_outro_segway_adult:1 "\n\nBahsettiği #EMP sporun#! ne olduğunun hemen farkına vardım."
+ travel_events.2037.desc_outro_child:1 "\n\nKesinlikle merakımı cezbetti. Bu hangi oyun olabilir... ?\n\nTeklifi düşünürken fark ettim ki [ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('entourage_character'))] [entourage_character.GetTitledFirstName] benim dikkatimi çekmeye çalışıyor ve dikkatlice başını sallıyor"
+ travel_events.2037.desc_outro_manhunter:0 "Deneyimli bir insan avcısı olarak, bu teklif kesinlikle cazip."
+ travel_events.2037.desc_outro:1 "#EMP İnsan Avı.#! Gerçekten iğrenç... yoksa ilgi çekici mi?"
+ travel_events.2037.a:0 "Kulağa ilginç geliyor..."
+ travel_events.2037.a_child:0 "Oynayacağım!"
+ travel_events.2037.a_manhunted:0 "Başlayalım."
+ travel_events.2037.a_your_kill.desc:1 "[2037_manhunt_prisoner.GetShortUIName], sizin tarafınızdan avlandı ve katledildi"
+ travel_events.2037.a_their_kill.tt:0 "[2037_county_liege.GetShortUINameNoTooltip] avı öldürdü"
+ travel_events.2037.a_their_kill.desc:1 "[2037_manhunt_prisoner.GetShortUIName], [2037_county_liege.GetShortUIName] tarafından avlandı ve katledildi"
+ travel_events.2037.b:0 "Eğer umursamazsan bu mahkûm için iyi bir kullanış bulabilirim."
+ travel_events.2037.b_child:0 "[2037_manhunt_prisoner.GetFirstNameNoTooltip] benimle gelirse daha memnun olurum."
+ travel_events.2037.c:0 "Deli misin?"
+ travel_events.2037.c_child:0 "Hayır. Bu kötü bir oyun gibi duruyor."
+
+#Visit some hunting grounds - Friendly competition with an entourage member
+ travel_events.2038.t:0 "$travel_event_prefix$ Hedef"
+ travel_events.2038.desc:0 "[ROOT.Char.GetCurrentLocation.GetName], vahşi yaşamla iç içe avlanmak için harika bir yer, [entourage_character.GetTitledFirstName] ve ben orada avlanmak için buluşmaya karar verdik.\n\nUygun bir tur için yeterli vaktimiz olmasa da bölgeden geçerken ormanın kenarında saf, yabani bir tavşan görüyorum. Kürkünde tuhaf işaretler var yol arkadaşımı dürtüp tavşanı işaret ediyorum.\n\n[entourage_character.GetFirstNameNoTooltip|U], tavşanı görür görmez sırıtıyor. "Dostça bir bahise ne dersiniz, [entourage_character.Custom2('RelationToMePossessive', ROOT.Char)]? Kim bu küçük arkadaşı okuyla vurursa kazanır.""
+ travel_events.2038.a:0 "Öyleyse bu bir bahis!"
+ travel_events.2038.a_your_kill.tt:0 "Tavşanı öldürüyorsunuz"
+ travel_events.2038.a_your_kill.desc:0 "Okun mükemmel bir şekilde tavşanın kalbini delip geçiyor"
+ travel_events.2038.a_their_kill.tt:0 "[entourage_character.GetShortUINameNoTooltip], tavşanı öldürdü"
+ travel_events.2038.a_their_kill.desc:0 "Tavşan [entourage_character.GetShortUIName] tarafından katledildi"
+ lucky_rabbits_paw:0 "Şanslı Tavşan Ayağı"
+ lucky_rabbits_paw_desc:0 "Saf bir tavşana ait ayak, [ROOT.Char.GetCurrentLocation.GetName] avlanma bölgesinde [entourage_character.GetTitledFirstName] ile yapılan dostça bir av yarışmasında kazanıldı."
+ travel_events.2038.b:0 "#EMP Ah hayır#!, güneş gözümü alıyor!"
+ travel_events.2038.c:0 "...Pff, bunun için zamanım yok ."
+
+#Follow-up hunt outcome
+ travel_events.2039.t:0 "$travel_event_prefix$ Tam İsabet"
+ travel_events.2039.desc_child_won:1 "[entourage_character.GetTitledFirstName] tavşanı yayı hazır bir şekilde takip ediyor, benim zayıf çekilmiş oklarımın tehdidinden habersiz.\n\nÇalılarla biraz cebelleştikten sonra [entourage_character.GetTitledFirstNameNoTooltip] muzaffer bir şekilde ileri atılıyor ve küçük göğüsünden okla vurulmuş olan saf hayvanın karkasını getiriyor."
+ travel_events.2039.desc_won:1 "Görüşümüzdeki tavşana ikimizde yavaşça yaklaşıyoruz,küçük bir otu kemirirken onun küçük vücudunu hedef alıyorum. Kayışı çekip bırakıyorum, ok doğrudan #EMP hayvanın vücudundan geçiyor#!.\n\nAni darbe onu birkaç adam uzağa fırlatıyor ve yerde hareketsiz bir şekilde yatar. Zafer duygusuyla çığlık atıyorum ve [entourage_character.GetTitledFirstName] kutlamamda bana katılıyor: "İyi atış.""
+ travel_events.2039.desc_lost:1 "[entourage_character.GetTitledFirstName] benim birkaç adım ilerimde, atış için tavşana yaklaşmaya çalışıyor. Aniden yayını çekip hızlı bir hareketle okunu hayvanın küçük vücuduna doğru serbest bırakıyor.\n\n[entourage_character.GetFirstNameNoTooltip] tavşan yere düşerken zafer işareti yapıyor ve hızlıca karkası almaya gidiyor. Takdirle onu alkışlıyorum."
+ travel_events.2039.a:0 "İyi Atış!"
+ travel_events.2039.a_trinket.t:0 "Eşya Kazanıldı"
+ travel_events.2039.a_win:0 "Bu eğlenceliydi!"
+ travel_events.2039.a_cynical:0 "Daha kötülerini görmüştüm."
+
+#The rescued manhunt prisoner from travel_events.2037 turns out to be a psycho
+ travel_events.2040.t:0 "$travel_event_prefix$ Mola Vermek"
+ travel_events.2040.intro:0 "Kamp ateşinin yanında otururken [2037_manhunt_prisoner.GetTitledFirstName] ile yalnız olduğumu fark ettim. Bana odaklanmışken gözlerinde kamp ateşinin alevleri titriyor.\n\n"
+ travel_events.2040.desc_child:0 "Neden o rezil [Select_CString(2037_county_liege.IsFemale, 'kadın', 'adam' )] seni öldürmeye çalıştı?" diye sordum. [2037_manhunt_prisoner.GetTitledFirstNameNoTooltip] bir an tereddüt etse de, gözlerini kaçırarak cevap veriyor:"
+ travel_events.2040.desc:0 "Neden hapsedildiğini sormadığımı fark ettim. Aklımı okumuşçasına [2037_manhunt_prisoner.GetTitledFirstNameNoTooltip] mırıldanmaya başlıyor:"
+ travel_events.2040.outro:0 "\n\n"Etim ve kemiğim sanki özgürlük için ağlıyormuş gibiydi, anlıyor musun," Sesi karanlık bir nostajiyle doluydu."
+ travel_events.2040.a:0 "...Bu çok felsefi."
+ travel_events.2040.a_child:0 "Bende kötü şeyler yaptım."
+ travel_events.2040.a.flavor:0 "Kim deli birinden daha tehlikeli olabilir?"
+ travel_events.2040.a.flavor_child:0 "#EMP Beni#! incitmeyecek, değil mi?"
+ travel_events.2040.a.tt:0 "[2037_manhunt_prisoner.GetShortUIName] ücretsiz olarak senin emrinde [GetCourtPositionType('bodyguard_court_position').GetName()] olarak çalışacak"
+ insane_bodyguard_salary_mod:0 "Deli Muhafız"
+ travel_events.2040.b:0 "Katiller parmaklıkların arkasında olmalıdır."
+ travel_events.2040.b_child:0 "İnsanları incitmek iyi değil."
+ travel_events.2040.b.flavor:0 "Demek bu yüzden hapsedildi..."
+ travel_events.2040.b.flavor_child:0 "[2037_manhunt_prisoner.GetTitledFirstNameNoTooltip] beni korkutuyor..."
+ travel_events.2040.c:0 "#EMP Bir katilin yaşamasına katlanamam!#!"
+ travel_events.2040.c.flavor:0 "Göze göz."
+ travel_events.2040.c_slay.t:0 "Katilin öldürülmesi"
+ travel_events.2040.c_slay.desc:0 "[2037_manhunt_prisoner.GetShortUIName], sizin tarafınızdan öldürüldü"
+ travel_events.2040.c_wounded.t:0 "$travel_events.2001.c_failure.tt$"
+ travel_events.2040.c_wounded.desc:0 "[2037_manhunt_prisoner.GetShortUIName], öldürüldü ama yaralandınız"
+ travel_events.2040.c_incapable.t:0 "Ağır Yaralı"
+ travel_events.2040.c_incapable.desc:0 "Ağır bir şekilde yaralandınız ve [2037_manhunt_prisoner.GetShortUIName] kaçmayı başardı"
+ travel_events.2040.c_death.desc:0 "Öldünüz"
+
+#Ruler Events#
+#Visiting Ruler: Someone is trying to assassinate the Target Ruler!
+ travel_events_life_or_death.t:0 "Yaşam ve Ölüm"
+ travel_events.2100.t:0 "$travel_event_prefix$ $travel_events_life_or_death.t$"
+ travel_events.2100.desc_intro:0 "[ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetName] tarafına doğru ilerlerken iyi zaman geçiriyoruz ve "
+ travel_events.2100.desc_intro_trees:0 "[ROOT.Char.GetCurrentLocation.GetName] bölgesinin yoğun ormanlık arazisi rehberimizin aklıyla boy ölçüşemiyor.\n\nAğaçlık alanı geçtiğimizde karşıdan gelen ikinci bir yolcu grubu görüyorum"
+ travel_events.2100.desc_intro_hills:0 "[ROOT.Char.GetCurrentLocation.GetName] bölgesindeki [ROOT.Char.GetCurrentLocation.GetTerrain.GetNameNoTooltip|l] arazisinin yokuşlarında rüzgâr arkamızdan esiyor.\n\nÖnümüzde başka bir maiyet de bu yamaçlarda ilerliyor."
+ travel_events.2100.desc_intro_flats:0 "[ROOT.Char.GetCurrentLocation.GetName] ovaları bir süreliğine rahatlamamıza izin veriyor.\n\nVadinin tepesine çıkıp aşağı baktığımızda başka bir maiyetiin özenle ilerlediğini görüyoruz."
+ travel_events.2100.desc_relation_in:0 " Gözlerimi kısarak baktığımda maiyetinin başındaki kişinin"
+ travel_events.2100.desc_negative_segway:0 "[murder_target.Custom('InsultAdjectiveGeneric')],"
+ travel_events.2100.desc_positive_segway:0 "[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('murder_target'))],"
+ travel_events.2100.desc_relation_out:0 "[murder_target.GetTitledFirstName] olduğunun farkına varıyorum."
+ travel_events.2100.desc_no_relation_traveller:0 "Manzaradan keyif ala ala gezip eğleniyor gibi duruyorlar."
+ travel_events.2100.desc_no_relation_liege:0 "Etrafı araştırıyor gibiler etrafa bakarken notlar alıp tartışıyorlar."
+ travel_events.2100.desc_trees:0 "Ama bir şey doğru değil. Ağaçlık alanı tararken seyahat eden grubun yaklaşmasını bekleyen yüzü örtülü kişiler gözüme çarpıyor."
+ travel_events.2100.desc_hills:0 "Batıdan yaklaşmakta olan silahları çekilmiş bu maskeli atlı grubu da ne... ?"
+ travel_events.2100.desc_flats:0 "Maiyeti incelerken Doğudan silahları çekilmiş maskeli bir atlı grubunun yaklaştığını görüyorum!"
+ travel_events.2100.desc_outro:0 "\n\nBir pusu gibi duruyor ve "
+ travel_events.2100.desc_outro_negative:0 "tereddüt ediyorum. Gerçekten [murder_target.GetTitledFirstNameNoTooltip] kesinlikle ölecek gibi dururken bu işe karışmalı mıyım?"
+ travel_events.2100.desc_outro_positive:0 "hızlıca ileri atılıyorum. [murder_target.GetTitledFirstNameNoTooltip], onu kurtarmalıyım!"
+ travel_events.2100.desc_outro_default:0 "tereddüt ediyorum. Diğer yolcuları korumak gerçekten benim sorumluluğumda mı?"
+ travel_events.2100.a:0 "Neden #EMP ben#! bu işe karışayım ki?"
+ travel_events.2100.a_rival:0 "İyi oldu."
+ travel_events.2100.a_nemesis:0 "#EMP Sonunda!#!"
+ travel_events.2100.a_stealthy_entourage.tt:0 "Saklı Maiyet"
+ travel_events.2100.a_stealthy_entourage.desc:0 "Siz ve maiyetiniz saklanacaksınız"
+ travel_events.2100.a_stealthy_outcome.tt:0 "Eğer [murder_target.GetShortUIName] hayatta kalırsa, sizin burada olduğunuzu bilmeyecek"
+ travel_events.2100.a_nonstealthy_entourage.tt:0 "Açığa Çıkmış Maiyet"
+ travel_events.2100.a_nonstealthy_entourage.desc:0 "[murder_target.GetShortUIName] tarafından fark edildiniz"
+ travel_events.2100.a_nonstealthy_outcome.tt:0 "Eğer [murder_target.GetShortUIName] hayatta kalırsa ne yaptığınızı hatırlayacak"
+ travel_events.2100.b:0 "Bir şeyler yapmalıyım!"
+ travel_events.2100.b.tt:0 "[murder_target.GetShortUIName] için yapılan suikast girişimine dahil olursunuz"
+ travel_events.2100.b_outcome_tt:0 "[murder_target.GetShortUIName] bunu hatırlayacak"
+
+#Target Ruler: You are being assassinated
+ travel_events.2101.t:1 "$travel_danger_prefix$ $travel_events_life_or_death.t$, Suikastçı!"
+ travel_events.2101.desc:0 "[ROOT.Char.GetCurrentLocation.GetName] topraklarını araştırırken tepede yakıcı güneş ile birlikte hafif bir esinti yüzüme çarpıyor. Gökyüzündeki göçmen kuşlar dışında tüm bölgenin ıssız olduğunu fark ediyorum.\n\nBotlarıma uzanmak için eğildiğimde atlı sesleri ile sarsıldım. Her taraftan yüzünü örtmüş figürler bana doğru yaklaşıyor daha kendimi toparlayamadan adamlardan biri kılıcını boynuma doğru savuruyor!"
+ travel_events.2101.a:0 "Buna nasıl cüret edersin!"
+ travel_events.2101.a_guards:0 "[bodyguard.GetNameNoTooltip]!!"
+ travel_events.2101.a_assassin_death.tt:0 "Suikastçı öldü"
+ travel_events.2101.a_bodyguard_kill.desc:0 "Suikastçı [bodyguard.GetShortUIName] tarafından öldürüldü"
+ travel_events.2101.a_bodyguard_wounded.tt:0 "Koruma yaralandı"
+ travel_events.2101.a_bodyguard_wounded.desc:0 "[bodyguard.GetShortUIName], suikastçıyı öldürdü ama yaralandı"
+ travel_events.2101.a_assassin_death.desc:0 "Suikastçıyı öldürdünüz"
+ travel_events.2101.a_death.desc:0 "Öldünüz"
+ travel_events.2101.a_ruler_assassinated.tt:0 "[murder_target.GetShortUIName] Öldü"
+ travel_events.2101.a_ruler_assassinated.desc:0 "[murder_target.GetShortUIName], [visiting_ruler.MakeScope.Var('assassination_location').GetProvince.GetName] ziyareti sırasında suikaste uğradı"
+ travel_events.2101.a_ruler_survived.tt:0 "[murder_target.GetShortUIName] Hayatta Kaldı"
+ travel_events.2101.a_ruler_survived.desc:0 "[murder_target.GetShortUIName], [visiting_ruler.MakeScope.Var('assassination_location').GetProvince.GetName] içinde gerçekleşen suikast girişiminden sağ çıktı"
+
+#Target Ruler: Wait a minute, didn't I see Visiting Ruler??
+ travel_events.2102.t:1 "$travel_danger_prefix$ $travel_events_life_or_death.t$, İhanete Uğramış"
+ travel_events.2102.desc:0 "Kargaşa sanki saatlerdir devam ediyor gibi hisettiriyor ama sadece birkaç dakika geçti. Suikastçıları yara almadan yendik.\n\nKargaşa alanını taradım ve ccesetlerden birinin üzerinde cinayet planının kanıtlarını buldum. Etrafa dikkatle bakarken ufukta kaybolmakta olan bir sancak dikatimi çekiyor. [visiting_ruler.GetTitledFirstName]?"
+ travel_events.2102.desc_negative:0 "\n\nElbette böyle birinden destek beklemem saçma olur. [visiting_ruler.GetFirstNameNoTooltip] ve onun soyunu lanetliyorum."
+ travel_events.2102.desc_positive:0 "\n\nNasıl... bunu yapabildi? Ben... ondan daha fazlasını bekliyordum. Bu ihanetin iğnesi beni herhangi bir kılıcın yapabileceğinden çok daha fazla yaraladı."
+ travel_events.2102.desc_default:0 "\n\nNeler olduğunu gördü ama sadece kenardan izledi mi? Bu davranışlar gerçekten de kime güvenip güvenemeyeceğini anlamanı sağlıyor."
+ travel_events.2102.a:0 "Bu gerçektende tam o [visiting_ruler.Custom('InsultAdjectiveGeneric')] [visiting_ruler.GetTitledFirstNameNoTooltip] gibi."
+
+#Visiting Ruler: Letter event - Target Ruler knows you what you did (or rather, didn't do)
+ travel_events.2103.t:0 "[murder_target.Custom2('AppropriateGreetingNegative', ROOT.Char )]"
+ travel_events.2103.desc_intro:0 "[murder_target.Custom2('NegativeSupplimentaryGreeting', ROOT.Char )]"
+ travel_events.2103.desc_negative:0 "\n\n[ROOT.Var('assassination_location').GetProvince.GetName] [ROOT.Var('assassination_location').GetProvince.GetTerrain.GetNameNoTooltip|l] yabanında son nefesimi vermemi izlemek istediğini biliyorum ve senden daha azını da beklemiyordum.\n\nGerçekten göz dediğin o lağım çukurundan yaşam kıvılcımının çıkacağı günü görmeyi iple çekiyorum, [visiting_ruler.Custom('InsultAdjectiveGeneric')] [murder_target.Custom2('RelationToMePossessive', SCOPE.sC( 'visiting_ruler' ))]."
+ travel_events.2103.desc_positive:0 "\n\n[murder_target.Custom2('RelationToMe', SCOPE.sC( 'visiting_ruler' ))], bunu nasıl yapabildin? Nasıl oldu da beni [ROOT.Var('assassination_location').GetProvince.GetName] [ROOT.Var('assassination_location').GetProvince.GetTerrain.GetNameNoTooltip|l] içinde ölüme terk ettin? Bunu hatırlayacağımdan emin olabilirsin."
+ travel_events.2103.desc_default:0 "\n\n[ROOT.Char.GetTitledFirstName], senden sıradan bir insanın sahip olacağı terbiyeyi ve herhangi bir inançlı insanın göstereceği davranışı beklerdim. Beni [ROOT.Var('assassination_location').GetProvince.GetName] [ROOT.Var('assassination_location').GetProvince.GetTerrain.GetNameNoTooltip|l] arazisinde ölüme terk ettin, ne yazık ki karakteriniz tanrı korkusuna sahip bir [Select_CString(ROOT.Char.IsFemale, 'kadının', 'adamın' )] göstereceği gibi değil. Bunu hatırlayacağım."
+ travel_events.2103.a:0 "İşin sonunda #EMP hayatta kaldı#!."
+
+#Visiting Ruler: You heroically thwart the assassination of Target Ruler
+ travel_events.2104.t:1 "$travel_danger_prefix$ $travel_events_life_or_death.t$, Nasıl Hayat Kurtarırsın"
+ travel_events.2104.desc:0 "Ben ve maiyetim suikastçılara arkadan saldırarak onları gafil avlıyoruz. Arkana dikkat etmemek için ne kadar beceriksiz olman gerekir?\n\nSavunmaya çalışanları katlediyoruz geri kalanlarsa ormana kaçıyor. Kafamı kaldırdığımda [murder_target.GetTitledFirstName] gözleri ve ağazı açık bir şekilde bana bakıyor.\n\nZamanla kendine gelip yüz ifadesini düzeltiyor ama hâlâ müdahalem için şaşırmış ve minnetar gözüküyor. Beni yanına çağırıyor."
+ travel_events.2104.a:0 "Bugünlük bu kadar iyilik yeter."
+ travel_events.2104.a_shy:0 "Bu yapılması gereken doğru şeydi."
+
+#Target Ruler: Visiting Ruler thwarted your assassination
+ travel_events.2105.t:0 "$travel_events.2104.t$"
+ travel_events.2105.desc_intro:0 "[ROOT.Char.GetCurrentLocation.GetName] arazisini araştırırken aniden ortaya çıkan bir sürü suikastçı tarafından sarılıyoruz. [visiting_ruler.GetTitledFirstName] ve maiyeti silahlarını kaldırmış bir şekilde suikastçılara doğru hücum ediyor!\n\n"
+ travel_events.2105.desc_negative:0 "[ROOT.Char.Custom2('GetRivalNemesis', SCOPE.sC('visiting_ruler'))] suikastçılara saldırırken şaşkınlıkla izliyorum, sağda ve solda suikastçılar kesildikçi geri kalanlar korkar ve kaçmaya başlar. [visiting_ruler.GetFirstNameNoTooltip] geri döner ve karşımda durur: "Yardıma ihtiyacın var gibi görünüyor," homurdanır.\n\nBir an tereddüt ediyorum. Daha #EMP şimdi#! hayatımı kurtarmışken, nasıl onu reddedebilirim... ? İsteksizce başımı sallıyorum."
+ travel_events.2105.desc_positive:0 "Beni kurtarmak için gelen [ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('visiting_ruler'))] [visiting_ruler.GetFirstNameNoTooltip] ortaya çıktığında gözlerim neşeyle doluyor, suikastçıları kaçmaya zorluyor ardından daire yapıp maiyetime yaklaşıyor: "[visiting_ruler.Custom2('RelationToMePossessive', ROOT.Char)]! Yolculuk nasıl gidiyor?" Bana genişçe gülümsüyor."
+ travel_events.2105.desc_default:0 "İhtiyaç anında bir yabancıya yardım etmek ilâhî planın bir parçası olmalı. Bu yolculuğumuzun kutsanmış olduğu ile ilgili [ROOT.Char.GetFaith.HighGodNamePossessive] bir işareti olmalı.\n\nKurtarıcım geri dönüyor ve bana başını sallıyor. Yanıt olarak gülümsüyorum ve "[ROOT.Char.GetFaith.HighGodName] seninle olsun, [Select_CString(visiting_ruler.IsFemale, 'leydim', 'lordum' )]!""
+ travel_events.2105.a:0 "Gerçekten soylu bir ruha sahipsiniz!"
+ travel_events.2105.a_cynical:0 "Duyarlılığınızı takdir ediyorum."
+ travel_events.2105.a.tt: "[visiting_ruler.GetShortUIName] yardıma geldi!"
+
+#County Liege: You notice a Travelling Ruler coming under attack
+ travel_events.2107.t:1 "$travel_danger_prefix$ $travel_events_life_or_death.t$, Güvenli Cennet"
+ travel_events.2107.desc_intro_plains:0 "Güneş batmaya başlarken, [holding_location.GetName] içindeki konağımdan [holding_location.GetTerrain.GetNameNoTooltip|l] tarafına doğru bakıyorum. Uzakta, bir grup yolcu çimenli arazide ilerliyor. "
+ travel_events.2107.desc_intro_desert:0 "[holding_location.GetName] dışında cansız rüzgâr kumlarla oynuyor, kumları küçük parçalar hâlinde her tarafa dağıtıyor. Kalenin dışında batan güneşi izlerken, Özenle kumların arasında ilerleyen bir grup gezgin gözüme çarpıyor. "
+ travel_events.2107.desc_intro_wetlands:0 "Güneş batarken, [holding_location.GetName] [holding_location.GetTerrain.GetNameNoTooltip|l] arazisinin dışında bu akşam normalden farklı bir ton var. Kalemden değişen renkleri ve basıtran karanlığı seydererken çamurlu yollardan gelen bir grup gezgin dikatimi çekiyor."
+ travel_events.2107.desc_intro_forest:0 "Güneş batarken [holding_location.GetName] ormanları giderek daha karanlık oluyor. Kalemde akşamın değişen parlaklığını seyrederken ormanın köşesinden yaklaşan bir grup dikatimi çekiyor. "
+ travel_events.2107.desc_intro_mountains:0 "Kafamı dışarı uzatığımda ciğerlerimi temiz hava doldurdu [holding_location.GetName] tepesinden aşağı doğru baktım. Soğuk havayı takdir ederken aşağıda vadiyi çıkan bir grup fark ediyorum. "
+ travel_events.2107.desc_intro_hills:0 "[holding_location.GetName] çevresindeki tepelerin yumuşak eğimi ve tepenin dibindeki göl harika bir manzara sağlıyor. Aşağıda bir grup gezgin görünüşe göre gölün çevresinden dolaşıp hedeflerine doğru ilerliyor. "
+ travel_events.2107.desc_intro_jungle:0 "Vahşi ormanlar her zamanki gibi sıcak ve nemli, [holding_location.GetName] boyunca uzanan ağaçların tepesinde yuva yapan renkli kuşları izliyorum. Görüş alanımının köşesinde bir grup gezginin çalıların arasında kuzeye doğru ilerlediğini gördüm. "
+ travel_events.2107.desc_intro:0 "Öğleden sonrayı [holding_location.GetName] dışında geçirirken gökyüzü bulutsuz karşımda duruyor. Dönüş yolunda bir grup yolcunun şehrin dışına çıktığını fark ettim. "
+ travel_events.2107.desc_segway:0 "\n\nDaha yakından baktığımda grubun liderliğini [travelling_ruler.GetTitledFirstName] ve maiyetinin çektiğini gördüm. Öylesine hareketlerini tahip ederken, bir sürü atlının huzurlu gruba yaklaştığını fark ettim.\n\nAtlılar yaklaştıkça kılıçlarını çekiyorlar. "
+ travel_events.2107.desc_outro_negative:0 "Bu ilginç bir gösteri olacak."
+ travel_events.2107.desc_outro_positive:0 "Bu konuda bir şeyler yapmalıyım!"
+ travel_events.2107.desc_outro_family:0 "Kan her şeyden önce gelir, öyle mi diyorlardı?"
+ travel_events.2107.desc_outro:0 "Yolcular kesinlikle #EMP benim#! toprağımda saldırıya uğramak üzere."
+ travel_events.2107.a:0 "Bu benim görevim."
+ travel_events.2107.a_christian:0 "Bu iyi bir [ROOT.Char.GetFaith.GetAdjectiveNoTooltip] inananın yapacağı bir şey."
+ travel_events.2107.a_outcome_tt:0 "[travelling_ruler.GetShortUIName] bunu hatırlayacak"
+ travel_events.2107.b:0 "Bu çok tehlikeli."
+ travel_events.2107.b_negative:0 "Hak Etmişti."
+ travel_events.2107.b_outcome_tt:0 "Eğer [travelling_ruler.GetShortUIName] hayatta kalırsa, yaptığını hatırlayacak"
+
+#Travelling Ruler: You are saved by County Liege
+ travel_events.2108.t:1 "$travel_danger_prefix$ $travel_events_life_or_death.t$, Kurtuldu"
+ travel_events.2108.desc_intro:1 "[holding_location.GetName] bölgesinin dış eteklerindeki [holding_location.GetTerrain.GetNameNoTooltip|l] arazisinde hızlıca yol alırken aniden bir sürü haydut atlı tarafından saldırıya uğradık. Ardından [province_liege.GetTitledFirstName] liderliğindeki başka bir atlı grubu kaleden hızlıca buraya geldi!"
+ travel_events.2108.desc_negative:0 "\n\n[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('province_liege'))] tarafından kurtarıldığım için şaşırdım, bu kesinlikle beklemediğim bir durum!"
+ travel_events.2108.desc_positive:0 "\n\n[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('province_liege'))] [province_liege.GetFirstNameNoTooltip] yağmacı sürüsüne arkadan saldırırken kalbim ısınıyor."
+ travel_events.2108.desc:0 "\n\n[province_liege.GetTitleAsNameNoTooltip] yardıma gelmesiyle hem multu hemde şaşırmış hissetim ve zamanında vardıkları için dua ettim."
+ travel_events.2108.desc_segway:0 "\n\n[province_liege.GetFirstNameNoTooltip] yüzünde muzaffer bir gülümsemeyle yanıma geliyor: "
+ travel_events.2108.desc_outro_negative:0 ""Benim dışımda kimsenin [province_liege.Custom2('RelationToMePossessive', ROOT.Char)] olan seni incitmesine izin veremem değil mi?" Bir an tereddütten sonra karşılık veriyorum."
+ travel_events.2108.desc_outro_positive:0 ""Yaralandın mı? Lütfen gel ve [holding_location.GetNameNoTooltip] misafirperverliğini göstermeme izin ver, tabii önce burayı temizleyelim.""
+ travel_events.2108.desc_outro:0 ""Bize katıl sana [province_liege.GetCulture.GetNameNoTooltip] misafirperverliğini göstereceğim!""
+ travel_events.2108.a:0 "Bu harika olur!"
+ travel_events.2108.a_negative:0 "Yaşamak güzel."
+ travel_events.2108.a.tt:0 "[province_liege.GetShortUIName] sana yardıma geldi!"
+
+#County Liege: You save Travelling Ruler
+ travel_events.2109.t:0 "$travel_events.2108.t$"
+ travel_events.2109.desc_intro:0 "Haydutlar kendilerine neyin vurduğunu anlayamadı. [holding_location.GetName] içindeki en iyi savaşçılarıma önderlik ederek sıcak bir günde tereyağ keser gibi düşmanları kestik."
+ travel_events.2109.desc_negative:0 "\n\n[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('travelling_ruler'))] [travelling_ruler.GetTitledFirstName] şaşkına dönmüş bir şekilde dikiliyor, sanki yıldırım çarpmış gibi bizim hücumumuzla kendi yolcu grubunun savunmasını izliyor."
+ travel_events.2109.desc_positive:0 "\n\n[travelling_ruler.GetTitledFirstName] ve maiyeti bizim için tezehürat ederken alçaklara karşı son karşı saldırıyı yönetiyorum"
+ travel_events.2109.desc:0 "\n\n[travelling_ruler.GetTitledFirstName] alçakları temizlerken bizi izliyor, dost olduğumuzu fark edince yüzündeki ifade yumuşuyor."
+ travel_events.2109.desc_segway:0 "\n\nSaldırganlar nihayet kaçmaya başlayınca,[travelling_ruler.GetFirstNameNoTooltip] ile maiyetinin yanında gidiyorum, "
+ travel_events.2109.desc_outro_negative:0 "Biraz kendini toplamış gözüküyor. Bana doğru başını sallıyor. "Kendi başımıza hâlledebileceğimiz bir şeydi ama kendimizi fazla zorlamak zorunda kalmamak güzel," kabul ediyor."
+ travel_events.2109.desc_outro_positive:0 "o da bana doğru geliyor. "[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('province_liege'))]! Keşke daha iyi koşullar altında buluşabilseydik," haykırıyor."
+ travel_events.2109.desc_outro:0 "bizim varlığımızla biraz daha rahat gözüküyor. "Arkadaşım, ihtiyacımız olduğunda yardıma gelip bizi desteklediğiniz için teşekkür ederim," bana gülerek söylüyor."
+ travel_events.2109.a:0 "Topraklar bir kez daha güvenli."
+ travel_events.2109.a_negative:0 "Sadece daha büyük bir pisliği temizlemekten kaçınmak istedim."
+ travel_events.2109.a_positive:0 "Sana yardım edebilmekten mutluyum, [province_liege.Custom2('RelationToMePossessive', SCOPE.sC('travelling_ruler'))]!"
+ travel_events.2109.a_hurt.tt:0 "[ROOT.Char.Custom('KnightCultureNoTooltip')] Yaralandı"
+ travel_events.2109.a_first_hurt.desc:0 "[first_potential_hurt_knight.GetShortUIName] savaşta yaralandı"
+ travel_events.2109.a_second_hurt.desc:0 "[second_potential_hurt_knight.GetShortUIName] savaşta yaralandı"
+ travel_events.2109.a_third_hurt.desc:0 "[third_potential_hurt_knight.GetShortUIName] savaşta yaralandı"
+ travel_events.2109.a_none_hurt.tt:0 "Hasar Görmemiş"
+ travel_events.2109.a_none_hurt.desc:0 "Hiçbir [ROOT.Char.Custom('KnightCulturePluralNoTooltipLowercase')] savaşta yaralanmadı"
+
+#Travelling Ruler: You get ruthlessly attacked
+ travel_events.2110.t:1 "$travel_danger_prefix$ $travel_events_life_or_death.t$, Mahsur"
+ travel_events.2110.desc:0 "[holding_location.GetName] bölgesinin dış eteklerinde [holding_location.GetTerrain.GetNameNoTooltip|l] arazisinde ilerlerken aniden bir sürü atlı haydut bize saldırmaya başladı. Yerleşkeye çok yakınız, eminim [province_liege.GetTitledFirstName] yardım gönderecektir.\n\nZaman geçip savaş uzadıkça yardım gelmeyeceği acı verici bir şekilde netleşiyor."
+ travel_events.2110.desc_negative:0 "[travelling_ruler.Custom('InsultNoun')] [province_liege.GetFirstNameNoTooltip], ondan gerçekten bir şey beklemiyordum."
+ travel_events.2110.desc_positive:0 "[province_liege.GetTitledFirstNameNoTooltip] tarafından ihanete uğradığımı anlayınca göğsümde keskin bir acı hissediyorum."
+ travel_events.2110.desc_neutral:0 "Nasıl bir hükümdar topraklarında böyle yağmacıların yaşamasına izin verebilir?"
+ travel_events.2110.desc_outro:0 "\n\n[ROOT.Char.Custom('KnightCultureNoTooltipLowercase')] [knight_to_sacrifice.GetTitledFirstName] atını yanıma sürüyor, gözlerinde ciddi bir bakış var. İkimizde geçmişte alıştırma yaptığımız taktiği uyguluyoruz."
+ travel_events.2110.a:0 "Birlik oluyoruz."
+ travel_events.2110.a_unscathed.tt:0 "Hasar Görmemiş"
+ travel_events.2110.a_unscathed.desc:0 "Savaştan hasar görmeden ayrıldın"
+ travel_events.2110.a_injured.tt:0 "Yaralı"
+ travel_events.2110.a_injured.desc:0 "Savaşı kazandın ama yaralandın"
+ travel_events.2110.a_severely_injured.tt:0 "Ağır Yaralı"
+ travel_events.2110.a_severely_injured.desc:0 "Savaşta ağır bir şekilde yaralandın"
+ travel_events.2110.a_death:0 "Savaşta katledildin"
+ travel_events.2110.b:0 "[knight_to_sacrifice.GetFirstNameNoTooltip], ne yapman gerektiğini biliyorsun."
+ travel_events.2110.b_tt:0 "[knight_to_sacrifice.GetShortUIName] arkada kalıp düşmanları oyalar"
+
+#County Liege: You observe the attack on Travelling Ruler
+ travel_events.2111.t:1 "$travel_danger_prefix$ $travel_events.2110.t$"
+ travel_events.2111.desc_sacrifice:0 "Güneş yavaşça [holding_location.GetTerrain.GetNameNoTooltip|l] üzerinde batarken önümdeki sahneyi gözlemliyorum. Tam ölçekli bir savaş bekliyordum ama yanılmışım.\n\nGörünüşe göre [travelling_ruler.GetTitledFirstName] yem olarak geride bir [travelling_ruler.Custom('KnightCulturePluralNoTooltipLowercase')] bırakırken geri çekilmeye karar vermiş. Bu sırada yolcu grubu şehrin sınırında yeniden organize olup dinleniyorlar.\n\nAtlılar kaçan grubu görmezden gelip yalnız askere odaklandığı için planları başarılı olmuş gibi duruyor. Umarım sonu hızlı gelmiştir."
+ travel_events.2111.desc_unscathed:0 "Güneş ufukta kaybolurken gökyüzünü kırmızıya boyadığı gibi savaş alanı da zemini kırmızıya boyuyor. Ama bu kırmızının kaynağı sadece haydutların kanı.\n\nYolcu grubu süpriz saldırı karşısında şaşırtıcı bir güç gösteriyor, yağmacıları kolayca kaçmaya zorluyorlar. Silahlarını indirip geldikleri yoldan geri dönüyorlar.\n\n[travelling_ruler.GetTitledFirstName] benim yerleşkeme doğru hareket yapıyor, bende kaşlarımı şaşkınlıkla çatıyorum. Bu #EMP gerçekten#! beklenmedikti."
+ travel_events.2111.desc_survived:0 "[holding_location.GetTerrain.GetNameNoTooltip|l] üzerinde güneş batarken, şiddetli bir savaşa girişiyor. Yolcu grubu ilk şoku atlattıktan sonra yavaşa atlıları geri ittiğini görüyorum.\n\n[travelling_ruler.GetTitledFirstName] pis haydutlara karşı saldırıya önderlik ediyor. Haydutlardan biri [travelling_ruler.GetFirstNameNoTooltip] üzerine bazı yara izleri vermeyi başarıyor, Ama bu durum hızlıca [travelling_ruler.Custom('KnightCulturePluralNoTooltipLowercase')] tarafından çözülüyor.\n\nHâlâ nefes alan haydutlar geldikleri kadar hızlı bir şekilde kayboluyor. Arkalarında cesetleri ve ölü hayvanları bırakıyorlar; ama şaşırtıcı bir şekilde yolcular gayet sağlıklı."
+ travel_events.2111.desc_died:0 "Ufuktaki güneş gökyüzünü kızıla boyarken önümdeki savaş alanı da zemini kırmızıya boyuyor. Hangi tarafın üstün geleceğini anlamaya çalışırken heyecanla izliyorum.\n\nBüyük, iri yarı bir binici ellerini gökyüzüne kaldırıp zafer dolu bir şekilde kükrediğinde merakım cevaplanıyor. Bir elinde bıçak tutarken, Öbüründe... [travelling_ruler.GetTitledFirstName] ve cansız bedeninden ayrılmış kafasını tutuyor."
+ travel_events.2111.desc_negative_outro:0 "\n\nRahatlayarak derince nefes alıyorum. Sonunda [travelling_ruler.Custom('InsultNoun')] artık yolumda diken olmayacak."
+ travel_events.2111.desc_positive_outro:0 "\n\nNe olduğunun idrakına birkaç saniye boyunca varamadım. Evet bu onun sonu oldu..."
+ travel_events.2111.desc_outro:0 "\n\n[travelling_ruler.GetTitledFirstNameNoTooltip] öldüğünde kendimi şaşırtıcı bir şekilde boş hissediyorum. Bu haydutlarla ilgili bir şey yapmalıyım."
+ travel_events.2111.a:0 "İlginç Bir Taktik."
+ travel_events.2111.a_compassionate:0 "Ben ne yaptım..."
+ travel_events.2111.a_sadist:0 "Eğlenceli!"
+ travel_events.2111.a_dead:0 "Eninde sonunda olacak bir şeydi."
+
+### STRATEGYTURK'TEN ONUR34 TARAFINDAN ÇEVRİLMİŞTİR.

@@ -1,230 +1,247 @@
 ﻿l_english:
-  #Reasons #NT!
- MAA_TOUGHNESS: "$EFFECT_LIST_BULLET$[toughness|E]: $VALUE|0V$" #NT!
- MAA_DAMAGE: "$EFFECT_LIST_BULLET$[damage|E]: $VALUE|0V$" #NT!
- MAA_SIEGE_VALUE: "$EFFECT_LIST_BULLET$[siege_progress|E]: $VALUE|1=V$/gün" #NT!
- MAA_SIEGE_TIER: "$EFFECT_LIST_BULLET$Kuşatma Seviyesi: $VALUE|0V$" #NT!
- MAA_PURSUIT: "$EFFECT_LIST_BULLET$[pursuit|E]: $VALUE|0V$" #NT!
- MAA_SCREEN: "$EFFECT_LIST_BULLET$[screen|E]: $VALUE|0V$" #NT!
- MAA_TOUGHNESS_DIFF: "$EFFECT_LIST_BULLET$[toughness|E]: $VALUE|0+=$" #NT!
- MAA_DAMAGE_DIFF: "$EFFECT_LIST_BULLET$[damage|E]: $VALUE|0+=$" #NT!
- MAA_SIEGE_VALUE_DIFF: "$EFFECT_LIST_BULLET$[siege_progress|E]: $VALUE|1=V$/gün" #NT!
- MAA_SIEGE_TIER_DIFF: "$EFFECT_LIST_BULLET$Kuşatma Kademesi: $VALUE|0V$" #NT!
- MAA_PURSUIT_DIFF: "$EFFECT_LIST_BULLET$[pursuit|E]: $VALUE|0+=$" #NT!
- MAA_SCREEN_DIFF: "$EFFECT_LIST_BULLET$[screen|E]: $VALUE|0+=$" #NT!
- MAA_COUNTERS_EFFECT: "$EFFECT_LIST_BULLET$Sayaçlar $TYPE|V$" #NT!
- MAA_COUNTERS_EFFECT_SHORT: "$TYPE|V$" #NT!
- MAA_COUNTERS_LABEL: "[MenAtArmsType.GetNameNoTooltip] [counters|E] Bu Türler:\n[MenAtArmsType.GetCountersString]" #NT!
- MAA_COUNTER_SHORT_LIST: "$LIST$" #NT!
- MAA_COUNTER_NONE: "#weak Hiçbiri#!" #NT!
- MAA_TERRAIN_EFFECT_FORMAT: "$EFFECT_LIST_BULLET$İçinde $TERRAIN_TYPE|V$: $LIST$" #NT!
- MAA_TERRAIN_EFFECT_DAMAGE: "$VALUE|+=0$ [damage|E]" #NT!
- MAA_TERRAIN_EFFECT_TOUGHNESS: "$VALUE|+=0$ [toughness|E]" #NT!
- MAA_TERRAIN_EFFECT_PURSUIT: "$VALUE|+=0$ [pursuit|E]" #NT!
- MAA_TERRAIN_EFFECT_SCREEN: "$VALUE|+=0$ [screen|E]" #NT!
- MAA_TERRAIN_EFFECT_SIEGE_VALUE: "$VALUE|+=0$/gün [siege_progress|E]" #NT!
- MAA_DOES_NOT_FIGHT_IN_MAIN_PHASE: "Kuşatma Silahları savaşta saldırmaz" #NT!
- MEN_AT_ARMS_TYPE_TOOLTIP_CREATION_COST: "Oluşturma maliyeti: [MenAtArmsType.GetCostString(GetPlayer)]" #NT!
- SIEGE_TIER_MAX_FORT_LEVEL: "$EFFECT_LIST_BULLET$Maksimum [fort_level|E]: $VALUE|V$" #NT!
- SIEGE_TIER_BEATS_ALL_FORTS: "$EFFECT_LIST_BULLET$Hepsini yener [fort_level|E]" #NT!
- REGIMENT_TERRAIN_MODIFIER_TOOLTIP: "#T İçinde [RegimentTerrainModifier.GetTerrain.GetName]#!\n[RegimentTerrainModifier.GetEffectString]" #NT!
- REGIMENT_TERRAIN_BONUS_HEADER: "[terrain|E] Etkileri:" #NT!
- REGIMENT_TERRAIN_BONUS_NONE: "#weak Arazi etkisi yok#!" #NT!
- REGIMENT_WINTER_EFFECT_HEADER: "Kış Etkileri:" #NT!
- REGIMENT_DAMAGE_TT: "#T [damage|E]: [MenAtArmsType.GetStat( GetPlayer, Province.Self, 'damage' )|1V]#!\n[MenAtArmsType.GetStatDesc( GetPlayer, Province.Self, 'hasar' )]" #NT!
- REGIMENT_TOUGHNESS_TT: "#T [toughness|E]: [MenAtArmsType.GetStat( GetPlayer, Province.Self, 'toughness' )|1V]#!\n[MenAtArmsType.GetStatDesc( GetPlayer, Province.Self, 'sertlik' )]" #NT!
- REGIMENT_PURSUIT_TT: "#T [pursuit|E]: [MenAtArmsType.GetStat( GetPlayer, Province.Self, 'pursuit' )|1V]#!\n[MenAtArmsType.GetStatDesc( GetPlayer, Province.Self, 'takip' )]" #NT!
- REGIMENT_SCREEN_TT: "#T [screen|E]: [MenAtArmsType.GetStat( GetPlayer, Province.Self, 'screen' )|1V]#!\n[MenAtArmsType.GetStatDesc( GetPlayer, Province.Self, 'ekran' )]" #NT!
- REGIMENT_SIEGE: "+[MenAtArmsType.GetStat( GetPlayer, Province.Self, 'siege_value' )|1]/gün" #NT!
- REGIMENT_SIEGE_TT: "#T [siege_progress|E]: [MenAtArmsType.GetStat( GetPlayer, Province.Self, 'siege_value' )|1V]/gün#!\n[MenAtArmsType.GetStatDesc( GetPlayer, Province.Self, 'siege_value' )]" #NT!
- REGIMENT_PROVINCE_DAMAGE: "[MenAtArmsType.GetProvinceStat( GetPlayer, Province.Self, 'damage' )|1=+^]" #NT!
- REGIMENT_PROVINCE_TOUGHNESS: "[MenAtArmsType.GetProvinceStat( GetPlayer, Province.Self, 'toughness' )|1=+^]" #NT!
- REGIMENT_PROVINCE_PURSUIT: "[MenAtArmsType.GetProvinceStat( GetPlayer, Province.Self, 'pursuit' )|1=+^]" #NT!
- REGIMENT_PROVINCE_SCREEN: "[MenAtArmsType.GetProvinceStat( GetPlayer, Province.Self, 'screen' )|1=+^]" #NT!
- REGIMENT_PROVINCE_SIEGE: "[MenAtArmsType.GetProvinceStat( GetPlayer, Province.Self, 'siege_value' )|2=+^]/gün" #NT!
- REGIMENT_PROVINCE_DAMAGE_TT: "#T Ek [damage|E]: $REGIMENT_PROVINCE_DAMAGE$#!\n[MenAtArmsType.GetProvinceStatDesc( GetPlayer, Province.Self, 'hasar' )]" #NT!
- REGIMENT_PROVINCE_TOUGHNESS_TT: "#T Ek [toughness|E]: $REGIMENT_PROVINCE_TOUGHNESS$#!\n[MenAtArmsType.GetProvinceStatDesc( GetPlayer, Province.Self, 'sertlik' )]" #NT!
- REGIMENT_PROVINCE_PURSUIT_TT: "#T Ek [pursuit|E]: $REGIMENT_PROVINCE_PURSUIT$#!\n[MenAtArmsType.GetProvinceStatDesc( GetPlayer, Province.Self, 'takip' )]" #NT!
- REGIMENT_PROVINCE_SCREEN_TT: "#T Ek [screen|E]: $REGIMENT_PROVINCE_SCREEN$#!\n[MenAtArmsType.GetProvinceStatDesc( GetPlayer, Province.Self, 'screen' )]" #NT!
- REGIMENT_PROVINCE_SIEGE_TT: "#T Ek [siege_progress|E]: $REGIMENT_PROVINCE_SIEGE$#!\n[MenAtArmsType.GetProvinceStatDesc( GetPlayer, Province.Self, 'siege_value' )]" #NT!
- REGIMENT_ORIGIN_LOCATION: "[stationed|E] içinde: [Province.GetBaronyNameExplicitly]" #NT!
- REGIMENT_NO_ORIGIN_LOCATION: "@warning_icon! #X Hiçbir [holding|E]#!'te [stationed|E] değil" #NT!
- OPEN_MAA_ORIGIN_SELECT_VIEW: "#T Değiştir [stationed_holding|E]#!" #NT!
- CLEAR_MAA_ORIGIN: "#I Sabitlenmiş tutmayı kaldırmak için sağ tıklayın#!" #NT!
- SELECT_MEN_AT_ARMS_LOCATION: "[station_regiment|E]" #NT!
- SELECT_REGIMENT_ORIGIN_INVALID_REGIMENT: "@warning_icon! #X Geçersiz [regiment|E]#!" #NT!
- SELECT_REGIMENT_ORIGIN_INVALID_MAA: "@warning_icon! #X [regiment|E] #bold değil #! [men_at_arms|E]#!" #NT!
- SELECT_REGIMENT_ORIGIN_RAISED_REGIMENT: "@warning_icon! #X [regiment|E] yükseltildi#!" #NT!
- SELECT_REGIMENT_ORIGIN_RAISING_REGIMENT: "@warning_icon! #X [regiment|E] yükseltiliyor#!" #NT!
- SELECT_REGIMENT_ORIGIN_INVALID_PROVINCE: "@warning_icon! #X Geçersiz [holding|E]#!" #NT!
- SELECT_REGIMENT_ORIGIN_ALREADY_AT_PROVINCE: "@warning_icon! #X [REGIMENT.GetNameNoTooltip] zaten [PROVINCE.GetBaronyNameExplicitlyNoTooltip]#!'te [stationed|E]" #NT!
- SELECT_REGIMENT_ORIGIN_PROVINCE_NOT_OWNED: "@warning_icon! #X [PROVINCE.GetBaronyNameExplicitlyNoTooltip], [domain|E]#!'ünüzdeki #! değil #bold'dir" #NT!
- SELECT_REGIMENT_ORIGIN_PROVINCE_OCCUPIED: "@warning_icon! #X [PROVINCE.GetBaronyNameExplicitlyNoTooltip], [PROVINCE.GetController.GetShortUIName]#! tarafından [occupied|E]'dir" #NT!
- REGIMENT_ORIGIN_LOCATION_MAP: "Görev yeri: [Province.GetBaronyNameExplicitlyNoTooltip]" #NT!
- REGIMENT_ORIGIN_NEW_LOCATION_MAP: "İstasyon yeri: [Province.GetBaronyNameExplicitlyNoTooltip]" #NT!
- REPLACE_MAA_ORIGIN_TITLE: "[stationed_regiment|E]'ı değiştir" #NT!
- REPLACE_MAA_ORIGIN_BODY: "[Province.GetBaronyNameExplicitly]'deki [stationed|E] [Province.GetMaaOriginHere.GetName]'i [Regiment.GetName] ile değiştirin" #NT!
- REPLACE_MAA_ORIGIN_ACCEPT: "Yer değiştirmek" #NT!
- VIEW_MAA_ORIGIN_TT: "#T Görüntüle [stationed_regiment|E]#!" #NT!
- SHOW_MAA_ORIGIN_TT: "#T [stationed_regiment|E]#!\n[Province.GetTitle.GetHolder.GetShortUIName|U] [Province.GetTitle.GetHolder.LocalPlayerString( 'have', 'has' )] [stationed|E] bu [stationed_regiment|E]0'daki [Province.GetMaaOriginHere.GetName] #weak ([Province.GetMaaOriginHere.GetMAAType.GetBaseTypeName])#!'un [regiment|E]'i." #NT!
- MAA_UNSTATIONED: "Görevlendirilmemiş" #NT!
- REGIMENT_SIEGE_MAX_FORT_LEVEL: "[fort_level|E] #high [MenAtArmsType.GetMaxFortLevel]#!'e kadar etkilidir" #NT!
- REGIMENT_STAT_ENTRY: "$KEY$: $VALUE|+=0$" #NT!
- REGIMENT_ORIGIN_STAT_ENTRY_ADD: "[stationed_holding|E]'dan: $VALUE|+=0$" #NT!
- REGIMENT_ORIGIN_STAT_ENTRY_MULT: "[stationed_holding|E]'dan: $VALUE|+=%0$" #NT!
- BASE_VALUE_SIEGE: "Taban: $VALUE|V1$" #NT!
- REGIMENT_WINTER_NORMAL_MODIFIER_TOOLTIP: "#T Normal Kışın#!\n[MenAtArmsType.GetWinterNormalModifier.GetEffectString]" #NT!
- REGIMENT_WINTER_HARSH_MODIFIER_TOOLTIP: "#T Sert Kışta#!\n[MenAtArmsType.GetWinterHarshModifier.GetEffectString]" #NT!
-  #MaA types #NT!
- skirmishers: "[skirmishers|E]" #NT!
- archers: "[archers|E]" #NT!
- light_cavalry: "[light_cavalry|E]" #NT!
- heavy_cavalry: "[heavy_cavalry|E]" #NT!
- pikemen: "[spearmen|E]" #NT!
- heavy_infantry: "[heavy_infantry|E]" #NT!
- archer_cavalry: "[archer_cavalry|E]" #NT!
- camel_cavalry: "[camel_cavalry|E]" #NT!
- elephant_cavalry: "[elephant_cavalry|E]" #NT!
-  #Base MaA #NT!
- light_footmen: "Hafif Piyadeler" #NT!
- bowmen: "Okçular" #NT!
- light_horsemen: "Hafif Süvariler" #NT!
- pikemen_unit: "Mızrakçılar" #NT!
- armored_footmen: "Zırhlı Piyadeler" #NT!
- armored_horsemen: "Zırhlı Süvariler" #NT!
- crossbowmen: "Arbaletçiler" #NT!
-  #Siege MaA #NT!
- siege_weapon: "[kuşatma_silahları|E]" #NT!
- onager: "Onagerler" #NT!
- mangonel: "Mangoneller" #NT!
- trebuchet: "Trebuşeler" #NT!
- bombard: "Bombardalar" #NT!
-  #Regional MaA #NT!
- war_elephant: "Savaş Fillleri" #NT!
- camel_rider: "Deve Binicileri" #NT!
-  #Cultural MaA #NT!
- huscarl: "Huscarlar" #NT!
- landsknecht: "Landsknechtler" #NT!
- longbowmen: "Uzun Yaylılar" #NT!
- goedendag: "Goedendag Milisleri" #NT!
- gendarme: "Jandarmalar" #NT!
- chasseur: "Avcılar" #NT!
- picchieri: "Picchieri" #NT!
- praetorian: "Palatini" #NT!
- caballero: "Şövalyeler" #NT!
- cataphract: "Katafraktlar" #NT!
- monaspa: "Monaspa" #NT!
- hobelar: "Hobelars" #NT!
- schiltron: "Schiltron" #NT!
- metsanvartija: "Metsänvartija" #NT!
- horse_archers: "Atlı Okçular" #NT!
- mubarizun: "Mubarizun" #NT!
- ayyar: "Ayyar" #NT!
- druzhina: "Druzhina" #NT!
- hussar: "Konni" #NT!
- horn_warrior: "Boynuz Savaşçıları" #NT!
- bush_hunter: "Çalılık Avcıları" #NT!
- shomer: "Shomer" #NT!
- khandayat: "Khandayat" #NT!
- garudas: "Lenkas" #NT!
- mountaineer: "Dağcılar" #NT!
- sahel_horsemen: "Sahel Süvarileri" #NT!
- guinea_warrior: "Gine Uplandleri" #NT!
- sarawit: "Sarawit" #NT!
- abudrar: "Abudrar" #NT!
- zbrojnosh: "Zbrojnosh" #NT!
- palace_guards: "Saray Muhafızları" #NT!
- chu_ko_nu: "Chu-ko-nu Okçuları" #NT!
- mulaththamun: "Mulathamūn" #NT!
- archers_of_the_nile: "Nil Okçuları" #NT!
- paiks: "Paik" #NT!
- guanch_vaulter: "Vaulter Piyadeleri" #NT!
-  #Special MaA #NT!
- house_guard: "Hane Muhafızı" #NT!
- house_guard_flavor: "#F Bu elit alay, belirli bir Hanedana hizmet etmektedir. Savaşçılar, en sadık tebaa arasından özenle seçilmektedir.#!" #NT!
-  #MaA Descriptions #NT!
- bowmen_flavor: "#F Profesyonel okçular havayı oklarla doldurur ve öndeki düşman birliklerini yok eder.#!" #NT!
- light_footmen_flavor: "#F Deneyimli muharebe erleri, düşman kanatlarını dağıtan ve moralleri bozan paha biçilmez saldırıcılardır.#!" #NT!
- light_horsemen_flavor: "#F Hafif ve hızlı olan bu atlılar, yan saldırılarda mükemmeldir ve düşmanları kovalarken yıkıcıdırlar.#!" #NT!
- armored_footmen_flavor: "#F Ağır silahlı ve iyi eğitimli bu birlikler, toplu piyadeleri yok etmede uzmanlaşmıştır.#!" #NT!
- pikemen_unit_flavor: "#F Uzun mızraklar, bu alayların süvari hücumunu durdurabilecek dikenli duvarlar oluşturmasını sağlar.#!" #NT!
- armored_horsemen_flavor: "#F Ağır silahlı ve zırhlı bu atlılar, açık ovalardaki savaşlara hakimdir.#!" #NT!
- crossbowmen_flavor: "#F Yeniden doldurması yavaş olmasına rağmen, tatar yaylarının kullanımı kolaydır ve çoğu zırhı iyi bir mesafeden delebilen okları ateşleyebilir.#!" #NT!
- onager_flavor: "#F Bu küçük burulma mancınıkları, taş mermileri uzak mesafelere fırlatarak düşman tahkimatlarını yıkabilir.#!" #NT!
- mangonel_flavor: "#F Çekiş gücüyle çalışan mangonel, onager'dan daha kolay kullanılırken aynı zamanda daha hızlı bir ateş hızına sahiptir.#!" #NT!
- trebuchet_flavor: "#F Karşı ağırlıklı mancınık, mancınık veya onager'den çok daha büyük bir güçle büyük mermiler fırlatabilir.#!" #NT!
- bombard_flavor: "#F Artık kaldıraç ve makaraların sınırlamaları olmadan, bu toplar tahkimatları kolaylıkla delebiliyor.#!" #NT!
- war_elephant_flavor: "#F Saldıran bir fili durdurmak neredeyse imkansızdır, bu da onları mükemmel şok birlikleri yapar.#!" #NT!
- camel_rider_flavor: "#F Geleneksel süvarilerden daha çok çöl savaşlarına uygun olan bu biniciler, kumlara hükmediyor.#!" #NT!
- huscarl_flavor: "#F Cermen Huscarl'lar, gelen ok atışlarını engellemek için kalkan duvarlarını kullanma konusunda ustadırlar.#!" #NT!
- landsknecht_flavor: "#F Alman Landsknecht'leri, düşman mızrakçılarının oluşturduğu kalabalık safları parçalamak için devasa zweihand'lerini kullanabilirler.#!" #NT!
-  #AGOT Modified #NT!
- # longbowmen_flavor: "#F Her ne kadar tam anlamıyla ustalaşmak bir ömür sürse de, İngiltere ve Galler'in uzun yayları zırhları delebilecek kadar güçlüdür ve neredeyse eşsiz bir hızda atış yapabilirler.#!" #NT!
- longbowmen_flavor: "Dorne Sınırları'nın gurur verici geleneğini sürdüren bu savaşçılar, yavaş hareket eden piyade birliklerini bozmak için güçlü uzun yaylar kullanırlar." #NT!
- goedendag_flavor: "#F Flaman goedendag, süvari saldırılarına karşı kullanılabilen çivili bir sopadır.#!" #NT!
- gendarme_flavor: "#F Fransız Jandarmaları, tüm dünyada hayranlık uyandıran ağır süvarilerin parlayan zirvesidir.#!" #NT!
- chasseur_flavor: "#F Outremer şövalyeleri hem Avrupa at biniciliğinde hem de Levant çöl taktiklerinde ustalaşmışlardır.#!" #NT!
- picchieri_flavor: "#F Latin Picchieri'nin kullandığı hareketli oluşumlar onları geleneksel mızraklılardan daha ölümcül hale getiriyor.#!" #NT!
- praetorian_flavor: "#F En iyilerin en iyisi olan Palatiniler, İmparatora doğrudan hizmet eden seçkin Roma askerleridir.#!" #NT!
- caballero_flavor: "#F Çoğu süvari birliğinin aksine, İberya Caballeros'ları hem düz ovalarda hem de engebeli engebeli arazilerde kendilerini evlerinde hissederler.#!" #NT!
- cataphract_flavor: "#F Demir zırhlarla kaplı Yunan Katafraktları, hücumlarıyla hemen hemen her savunma hattını kırabilir.#!" #NT!
- monaspa_flavor: "#F Gürcü krallarının korumalarının çekirdeğinden oluşan Monaspalar, Kafkasya'nın engebeli arazilerinde kendini evinde hisseden korkutucu bir ağır süvari kuvvetidir.#!" #NT!
- hobelar_flavor: "#F Hızlı ve çevik olan Kelt Hobelar'ları, diğer süvarilerin kaçındığı ormanlara ve tepelere kolayca baskın yapabilirler.#!" #NT!
- schiltron_flavor: "#F İskoç mızrakçılarının inanılmaz disiplini, açık ovalarda bile düşman saldırılarını kolayca kırmalarına olanak tanıyor.#!" #NT!
- metsanvartija_flavor: "#F Ural Metsänvartija, ağaçların arasına geri dönmeden önce istilacıları bir ok yağmuruyla pusuya düşürebilir.#!" #NT!
- horse_archers_flavor: "#F Atlı okçular, yakalanması neredeyse imkansız olmasına rağmen, göçebe kabileler tarafından ok yağmuru yağdırmak için kullanılır.#!" #NT!
- ayyar_flavor: "#F Ayyar dövüş kulüplerinin genç ve istekli üyeleri, her an göreve çağrılmaya hazır, istekli ve yetenekli askerler olarak hizmet veriyorlar.#!" #NT!
- mubarizun_flavor: "#F Hem formasyon dövüşü hem de teke tek dövüş konusunda eğitimli olan Arap Mubarizun, savaşta diğer piyadelerin çoğunu ezebilir.#!" #NT!
- druzhina_flavor: "#F Rus Druzhina'ları, müttefiklerini korumaya adamış yetenekli korumalardır.#!" #NT!
- hussar_flavor: "#F Baskın ustaları olan, Doğu Avrupa'nın kötü şöhretli $hussar$ hafif süvarileri, kaçan düşman ordusunu kısa sürede alt edebilir.#!" #NT!
- horn_warrior_flavor: "#F Dağlık savaşlarda deneyimli olan Afrika Boynuzu savaşçıları hafife alınmamalıdır.#!" #NT!
- bush_hunter_flavor: "#F Batı Afrikalı bu okçular, çalılıkların zorlu arazisini kendi avantajlarına çeviriyorlar.#!" #NT!
- shomer_flavor: "#F Kendilerini soydaşlarını korumaya adamış olan Yahudi shomerlar savaşta yoldaşlarını koruma konusunda ustadır.#!" #NT!
- khandayat_flavor: "#F Hint Khandayatları hem insanları hem de atları kolayca kesebilen usta kılıç ustalarıdır.#!" #NT!
- garudas_flavor: "#F Garuda Savaşçıları sadakatleri ve ölümüne savaşmaları ile ünlüdür. Bir Garuda savaşçısı düştüğünde, tüm Lenka savaşçılarının onunla birlikte ölmesi beklenir.#!" #NT!
- mountaineer_flavor: "#F Yüksek irtifalarda yapılan yoğun eğitim, Tibetli askerleri kendi alanlarının tartışmasız şampiyonları haline getiriyor.#!" #NT!
- sahel_horsemen_flavor: "#F Sahel Süvarileri, düşmanlarını mahvetmek için hafif kapitone zırh ve cirit kullanan atlı savaşçılardır#!" #NT!
- guinea_warrior_flavor: "#F Gine yaylalarındaki savaşçılar hızlı hareket eder ve ciritleri isabetli ve ölümcüldür.#!" #NT!
- sarawit_flavor: "#F Sarawit, Etiyopya yaylalarında iyi eğitimli bir ordudur.#!" #NT!
- zbrojnosh_flavor: "#F Orta Avrupa'nın tepelerinde ve ormanlarında yaşayan Zbrojnosh'tan her yerde korku duyuluyor.#!" #NT!
- abudrar_flavor: "#F Abudrar dağcıları memleketlerinin her geçidini ve vadisini bilirler.#!" #NT!
- palace_guards_flavor: "#F Genellikle nöbet tutan ve barışı koruyan bu çok yönlü savaşçılar, herhangi bir ordunun omurgasını oluşturabilirler.#!" #NT!
- chu_ko_nu_flavor: "#F Chu-ko-nu ile silahlanan bu okçular yıkıcı bir hızda ok atabilirler.#!" #NT!
- mulaththamun_flavor: "#F Bu biniciler, çölle yakın bir ilişki içinde geçirdikleri yaşamları boyunca becerilerini geliştirmişlerdir ve yüzlerini Litham örtüsüyle örterek onları kumdan ve düşman tarafından tanınmaktan korurlar.#!" #NT!
- archers_of_the_nile_flavor: "#F Binlerce yıldır Nubianlar, genç yaştan itibaren yay kullanma konusunda ustalaşarak vatanlarını korumuş, çevredeki çöl halklarının ve istilacıların saldırılarına karşı koymuşlardır.#!" #NT!
- paiks_flavor: "#F Piyadeler yüzyıllardır Hint ordularının temel silahı olmuştur ve hiçbir silah, birçok Hint vatandaşının genç yaştan itibaren avcılık yoluyla kullandığı basit bambu yay kadar yaygın değildir.#!" #NT!
- guanch_vaulter_flavor: "#F Uzun atlama sırıklarıyla silahlanmış bu çevik savaşçılar, engebeli ve dağlık arazilerde kolaylıkla hareket edebilir ve hatta bazı tahkimatların üzerinden atlayabilirler.#!" #NT!
-  #Religious MaA #NT!
- teutonic_knights: "Şövalyeleri Davet Et" #NT!
- teutonic_knights_flavor: "#F Ağır zırhlı ve gayretli şövalyeler, ağır süvari hücumlarına ek olarak toplu piyade savaşlarında uzmanlaşmışlardır.#!" #NT!
- skirmishers_lowercase: "çarptışma birimleri" #NT!
- light_cavalry_lowercase: "hafif süvariler" #NT!
- heavy_cavalry_lowercase: "ağır süvariler" #NT!
- archers_lowercase: "okçular" #NT!
- pikemen_lowercase: "mızrakçılar" #NT!
- heavy_infantry_lowercase: "zırhlı piyadeler" #NT!
- elephant_cavalry_lowercase: "savaş filleri" #NT!
- camel_cavalry_lowercase: "deve süvarileri" #NT!
- horse_archers_lowercase: "atlı okçular" #NT!
- levies_lowercase: "milisler" #NT!
-  # Accolade MaA #NT!
- accolade_maa_archers: "Retinue Okçuları" #NT!
- accolade_maa_archers_flavor: "[retinue_maa|E]\n#F Bu seçkin okçular kaçak avcılardan oluşan bir güruh değil: Okları isabetli ve büyük bir hızla yağdırmak için amansızca eğitilmişlerdir.#!" #NT!
- accolade_maa_skirmishers: "Retinue Savaşçıları" #NT!
- accolade_maa_skirmishers_flavor: "[retinue_maa|E]\n#F Pusu ve alışılmadık savaşlardaki yetenekleriyle korkulan, hafif donanımlı seçkin savaşçılar ve deneyimli paralı akıncıların bir karışımı.#!" #NT!
- accolade_maa_pikes: "Maiyet Pikemen" #NT!
- accolade_maa_pikes_flavor: "[retinue_maa|E]\n#F Kaliteli zırhlarla donatılmış ve uzun mızraklar taşıyan bu piyadeler, efendilerinin ordusunun kırılmaz çekirdeğini oluşturur.#!" #NT!
- accolade_maa_outriders: "Geriye Kalan Süvariler" #NT!
- accolade_maa_outriders_flavor: "[retinue_maa|E]\n#F Hızlı atların üzerindeki bu seçkin atlılar, her türlü düşmanı geride bırakabilir ve her zaman en beklenmedik ve en istenmeyen yerde saldırabilirler.#!" #NT!
- accolade_maa_vanguards: "Retinue Vanguard" #NT!
- accolade_maa_vanguards_flavor: "[retinue_maa|E]\n#F Savaşın tam ortasında onurlu bir yere sahip olan bu disiplinli ve görkemli ağır piyadeler, çok az düşmanın karşı koyabileceği bir güçtür.#!" #NT!
- accolade_maa_lancers: "Retinue Mızraklıları" #NT!
- accolade_maa_lancers_flavor: "[retinue_maa|E]\n#F Gürleyen bir gürültü ve gerçek bir asaletle savaşa dalan bu atlıların sıkı safları, her savaş alanında korkunç bir huşu uyandırır.#!" #NT!
- accolade_maa_crossbowers: "Retinue Arbaletçiler" #NT!
- accolade_maa_crossbowers_flavor: "[retinue_maa|E]\n#F Şövalye veya düzenbaz: Bu yüksek eğitimli tatar yayı kullananların dikkatlice yerleştirilmiş demir cıvataları, her birini delebilir.#!" #NT!
- accolade_maa_cameliers: "Retinue Deve Binicileri" #NT!
- accolade_maa_cameliers_flavor: "[retinue_maa|E]\n#F Orta Doğu ve Kuzey Afrika'da korkulan bu becerikli devecilik dünyada çok az sayıda bulunmaktadır.#!" #NT!
- accolade_maa_elephantiers: "Savaş Filleri Retinue" #NT!
- accolade_maa_elephantiers_flavor: "[retinue_maa|E]\n#F Bu canavarların yetenekli mahutları, devasa fil sürülerinden, hücum eden bir filden daha zor durdurulabilen tek şeyin, #EMP daha büyük#! bir fil olduğunu kanıtlıyor.#!" #NT!
- accolade_maa_horse_archers: "Atlı Okçular Retinue" #NT!
- accolade_maa_horse_archers_flavor: "[retinue_maa|E]\n#F Sıradan bozkır binicileri yaşam boyu beceriye sahiptir: bu tecrübeli atlılar ve daha fazlası. Onlara karşı durmak acıdır; onların peşinden koşmak ölümdür.#!" #NT!
+ #Reasons
+
+ MAA_TOUGHNESS:0 "$EFFECT_LIST_BULLET$[toughness|E]: $VALUE|0V$"
+ MAA_DAMAGE:0 "$EFFECT_LIST_BULLET$[damage|E]: $VALUE|0V$"
+ MAA_SIEGE_VALUE:0 "$EFFECT_LIST_BULLET$[siege_progress|E]: $VALUE|1=V$/günde"
+ MAA_SIEGE_TIER:1 "$EFFECT_LIST_BULLET$Kuşatma Kademesi: $VALUE|0V$"
+ MAA_PURSUIT:0 "$EFFECT_LIST_BULLET$[pursuit|E]: $VALUE|0V$"
+ MAA_SCREEN:0 "$EFFECT_LIST_BULLET$[screen|E]: $VALUE|0V$"
+ MAA_TOUGHNESS_DIFF:0 "$EFFECT_LIST_BULLET$[toughness|E]: $VALUE|0+=$"
+ MAA_DAMAGE_DIFF:0 "$EFFECT_LIST_BULLET$[damage|E]: $VALUE|0+=$"
+ MAA_SIEGE_VALUE_DIFF:0 "$EFFECT_LIST_BULLET$[siege_progress|E]: $VALUE|1=V$/günde"
+ MAA_SIEGE_TIER_DIFF:1 "$EFFECT_LIST_BULLET$Kuşatma Kademesi: $VALUE|0V$"
+ MAA_PURSUIT_DIFF:0 "$EFFECT_LIST_BULLET$[pursuit|E]: $VALUE|0+=$"
+ MAA_SCREEN_DIFF:0 "$EFFECT_LIST_BULLET$[screen|E]: $VALUE|0+=$"
+ MAA_COUNTERS_EFFECT:0 "$EFFECT_LIST_BULLET$Karşılar $TYPE|V$"
+ MAA_COUNTERS_EFFECT_SHORT:0 "$TYPE|V$"
+ MAA_COUNTERS_LABEL:1 "[MenAtArmsType.GetNameNoTooltip] Bu Türlere [Concept( 'counters', 'Karşı Etkilidir' )|E]:\n[MenAtArmsType.GetCountersString]"
+ MAA_COUNTER_SHORT_LIST:1 "$LIST$"
+ MAA_COUNTER_NONE:0 "#weak Hiçbiri#!"
+ MAA_TERRAIN_EFFECT_FORMAT:0 "$EFFECT_LIST_BULLET$$TERRAIN_TYPE|V$ Arazide: $LIST$"
+ MAA_TERRAIN_EFFECT_DAMAGE:1 "$VALUE|+=0$ [damage|E]"
+ MAA_TERRAIN_EFFECT_TOUGHNESS:1 "$VALUE|+=0$ [toughness|E]"
+ MAA_TERRAIN_EFFECT_PURSUIT:1 "$VALUE|+=0$ [pursuit|E]"
+ MAA_TERRAIN_EFFECT_SCREEN:1 "$VALUE|+=0$ [screen|E]"
+ MAA_TERRAIN_EFFECT_SIEGE_VALUE:0 "$VALUE|+=0$/günde [siege_progress|E]"
+ MAA_DOES_NOT_FIGHT_IN_MAIN_PHASE:0 "Kuşatma Silahları muharebede saldırmazlar"
+ MEN_AT_ARMS_TYPE_TOOLTIP_CREATION_COST:0 "Oluşturma maliyeti: [MenAtArmsType.GetCostString(GetPlayer)]"
+ SIEGE_TIER_MAX_FORT_LEVEL:0 "$EFFECT_LIST_BULLET$Maksimum [fort_level|E]: $VALUE|V$"
+ SIEGE_TIER_BEATS_ALL_FORTS:0 "$EFFECT_LIST_BULLET$Tüm [fort_level|E]ni Yener"
+ REGIMENT_TERRAIN_MODIFIER_TOOLTIP:0 "#T [RegimentTerrainModifier.GetTerrain.GetName] Arazide#!\n[RegimentTerrainModifier.GetEffectString]"
+ REGIMENT_TERRAIN_BONUS_HEADER:0 "[terrain|E] Etkileri:"
+ REGIMENT_TERRAIN_BONUS_NONE:0 "#weak Arazi etkisi yok#!"
+ REGIMENT_WINTER_EFFECT_HEADER:0 "Kış Etkileri:"
+
+ REGIMENT_DAMAGE_TT:3 "#T [damage|E]: [MenAtArmsType.GetStat( GetPlayer, Province.Self, 'damage' )|1V]#!\n[MenAtArmsType.GetStatDesc( GetPlayer, Province.Self, 'damage' )]"
+ REGIMENT_TOUGHNESS_TT:3 "#T [toughness|E]: [MenAtArmsType.GetStat( GetPlayer, Province.Self, 'toughness' )|1V]#!\n[MenAtArmsType.GetStatDesc( GetPlayer, Province.Self, 'toughness' )]"
+ REGIMENT_PURSUIT_TT:3 "#T [pursuit|E]: [MenAtArmsType.GetStat( GetPlayer, Province.Self, 'pursuit' )|1V]#!\n[MenAtArmsType.GetStatDesc( GetPlayer, Province.Self, 'pursuit' )]"
+ REGIMENT_SCREEN_TT:3 "#T [screen|E]: [MenAtArmsType.GetStat( GetPlayer, Province.Self, 'screen' )|1V]#!\n[MenAtArmsType.GetStatDesc( GetPlayer, Province.Self, 'screen' )]"
+ REGIMENT_SIEGE:3 "+[MenAtArmsType.GetStat( GetPlayer, Province.Self, 'siege_value' )|1]/günde"
+ REGIMENT_SIEGE_TT:3 "#T [siege_progress|E]: [MenAtArmsType.GetStat( GetPlayer, Province.Self, 'siege_value' )|1V]/günde#!\n[MenAtArmsType.GetStatDesc( GetPlayer, Province.Self, 'siege_value' )]"
+
+ REGIMENT_PROVINCE_DAMAGE:0 "[MenAtArmsType.GetProvinceStat( GetPlayer, Province.Self, 'damage' )|1=+^]"
+ REGIMENT_PROVINCE_TOUGHNESS:0 "[MenAtArmsType.GetProvinceStat( GetPlayer, Province.Self, 'toughness' )|1=+^]"
+ REGIMENT_PROVINCE_PURSUIT:0 "[MenAtArmsType.GetProvinceStat( GetPlayer, Province.Self, 'pursuit' )|1=+^]"
+ REGIMENT_PROVINCE_SCREEN:0 "[MenAtArmsType.GetProvinceStat( GetPlayer, Province.Self, 'screen' )|1=+^]"
+ REGIMENT_PROVINCE_SIEGE:0 "[MenAtArmsType.GetProvinceStat( GetPlayer, Province.Self, 'siege_value' )|2=+^]/günde"
+ REGIMENT_PROVINCE_DAMAGE_TT:0 "#T Ek [damage|E]: $REGIMENT_PROVINCE_DAMAGE$#!\n[MenAtArmsType.GetProvinceStatDesc( GetPlayer, Province.Self, 'damage' )]"
+ REGIMENT_PROVINCE_TOUGHNESS_TT:0 "#T Ek [toughness|E]: $REGIMENT_PROVINCE_TOUGHNESS$#!\n[MenAtArmsType.GetProvinceStatDesc( GetPlayer, Province.Self, 'toughness' )]"
+ REGIMENT_PROVINCE_PURSUIT_TT:0 "#T Ek [pursuit|E]: $REGIMENT_PROVINCE_PURSUIT$#!\n[MenAtArmsType.GetProvinceStatDesc( GetPlayer, Province.Self, 'pursuit' )]"
+ REGIMENT_PROVINCE_SCREEN_TT:0 "#T Ek [screen|E]: $REGIMENT_PROVINCE_SCREEN$#!\n[MenAtArmsType.GetProvinceStatDesc( GetPlayer, Province.Self, 'screen' )]"
+ REGIMENT_PROVINCE_SIEGE_TT:0 "#T Ek [siege_progress|E]: $REGIMENT_PROVINCE_SIEGE$#!\n[MenAtArmsType.GetProvinceStatDesc( GetPlayer, Province.Self, 'siege_value' )]"
+ REGIMENT_ORIGIN_LOCATION:0 "[stationed|E]: [Province.GetBaronyNameExplicitly]"
+ REGIMENT_NO_ORIGIN_LOCATION:0 "@warning_icon! #X Herhangi bir [Concept( 'holding', 'Yerleşimde' )|E] [stationed|E] değil#!"
+ OPEN_MAA_ORIGIN_SELECT_VIEW:0 "#T [Concept( 'stationed_holding', 'Konuşlu Yerleşimi' )|E] Değiştir#!"
+ CLEAR_MAA_ORIGIN:0 "#I Konuşlu yerleşimi temizlemek için sağ tıklayın#!"
+ SELECT_MEN_AT_ARMS_LOCATION:0 "[station_regiment|E]"
+ SELECT_REGIMENT_ORIGIN_INVALID_REGIMENT:0 "@warning_icon! #X Geçersiz [regiment|E]#!"
+ SELECT_REGIMENT_ORIGIN_INVALID_MAA:0 "@warning_icon! #X [regiment|E] [men_at_arms|E] #bold değil#!#!"
+ SELECT_REGIMENT_ORIGIN_RAISED_REGIMENT:0 "@warning_icon! #X [regiment|E] toplanmış#!"
+ SELECT_REGIMENT_ORIGIN_RAISING_REGIMENT:0 "@warning_icon! #X [regiment|E] toplanıyor#!"
+ SELECT_REGIMENT_ORIGIN_INVALID_PROVINCE:0 "@warning_icon! #X Geçersiz [holding|E]#!"
+ SELECT_REGIMENT_ORIGIN_ALREADY_AT_PROVINCE:0 "@warning_icon! #X [REGIMENT.GetNameNoTooltip] zaten [PROVINCE.GetBaronyNameExplicitlyNoTooltip] topraklarında [stationed|E]#!"
+ SELECT_REGIMENT_ORIGIN_PROVINCE_NOT_OWNED:0 "@warning_icon! #X [PROVINCE.GetBaronyNameExplicitlyNoTooltip] sizin [Concept( 'domain', 'Mülkünüzde' )|E] #bold değil#!#!"
+ SELECT_REGIMENT_ORIGIN_PROVINCE_OCCUPIED:0 "@warning_icon! #X [PROVINCE.GetBaronyNameExplicitlyNoTooltip], [PROVINCE.GetController.GetShortUIName] tarafından [occupied|E]#!"
+ REGIMENT_ORIGIN_LOCATION_MAP:0 "Konuşlanmış: [Province.GetBaronyNameExplicitlyNoTooltip]"
+ REGIMENT_ORIGIN_NEW_LOCATION_MAP:0 "Konuşlandır: [Province.GetBaronyNameExplicitlyNoTooltip]"
+ REPLACE_MAA_ORIGIN_TITLE:0 "[Concept( 'stationed_regiment', 'Konuşlu Birliği' )|E] Değiştir"
+ REPLACE_MAA_ORIGIN_BODY:0 "[Province.GetBaronyNameExplicitly] topraklarında [stationed|E] [Province.GetMaaOriginHere.GetName] Birliğini [Regiment.GetName] ile değiştirmek istediğinize emin misiniz?"
+ REPLACE_MAA_ORIGIN_ACCEPT:0 "Değiştir"
+ VIEW_MAA_ORIGIN_TT:0 "#T [Concept( 'stationed_regiment', 'Konuşlu Birliği' )|E] Görüntüle#!"
+ SHOW_MAA_ORIGIN_TT:0 "#T [stationed_regiment|E]#!\n[Select_CString( Province.GetTitle.GetHolder.IsLocalPlayer, '', Province.GetTitle.GetHolder.GetShortUIName )][Select_CString( Province.GetTitle.GetHolder.IsLocalPlayer, 'Bu', ', bu' )] [Concept( 'holding', 'Yerleşimde' )|E] bir [Province.GetMaaOriginHere.GetName] #weak ([Province.GetMaaOriginHere.GetMAAType.GetBaseTypeName])#! [Concept( 'regiment', 'Birliği' )|E] [Concept( 'stationed', 'Konuşlandırmış' )|E][Select_CString( Province.GetTitle.GetHolder.IsLocalPlayer, 'sınız', '' )]."
+ MAA_UNSTATIONED:0 "Konuşlanmamış"
+
+ REGIMENT_SIEGE_MAX_FORT_LEVEL:1 "#high [MenAtArmsType.GetMaxFortLevel]#! seviye [Concept( 'fort_level', 'Kalelere' )|E] kadar etkili"
+ REGIMENT_STAT_ENTRY:0 "$KEY$: $VALUE|+=0$"
+ REGIMENT_ORIGIN_STAT_ENTRY_ADD:0 "[Concept( 'stationed_holding', 'Konuşlu Yerleşimden' )|E]: $VALUE|+=0$"
+ REGIMENT_ORIGIN_STAT_ENTRY_MULT:0 "[Concept( 'stationed_holding', 'Konuşlu Yerleşimden' )|E]: $VALUE|+=%0$"
+ BASE_VALUE_SIEGE:0 "Temel: $VALUE|V1$"
+ REGIMENT_WINTER_NORMAL_MODIFIER_TOOLTIP:2 "#T Normal Kış#!\n[MenAtArmsType.GetWinterNormalModifier.GetEffectString]"
+ REGIMENT_WINTER_HARSH_MODIFIER_TOOLTIP:2 "#T Sert Kış#!\n[MenAtArmsType.GetWinterHarshModifier.GetEffectString]"
+
+ #MaA types
+ skirmishers:2 "[skirmisher|E]"
+ archers:2 "[archer|E]"
+ light_cavalry:2 "[light_cavalry|E]"
+ heavy_cavalry:2 "[heavy_cavalry|E]"
+ pikemen:2 "[spearmen|E]"
+ heavy_infantry:2 "[heavy_infantry|E]"
+ archer_cavalry:0 "[archer_cavalry|E]"
+ camel_cavalry:0 "[camel_cavalry|E]"
+ elephant_cavalry:0 "[elephant_cavalry|E]"
+ 
+ #Base MaA
+ light_footmen:0 "Hafif Yaya"
+ bowmen:0 "Kemankeş"
+ light_horsemen:0 "Hafif Atlı"
+ pikemen_unit:0 "Kargılı"
+ armored_footmen:0 "Zırhlı Yaya"
+ armored_horsemen:0 "Zırhlı Atlı"
+ crossbowmen:0 "Arbaletçi"
+ 
+ #Siege MaA
+ siege_weapon:2 "[siege_weapon|E]"
+ onager:0 "Onagerler"
+ mangonel:0 "Mangoneller"
+ trebuchet:0 "Trebüşeler"
+ bombard:0 "Toplar"
+ 
+ #Regional MaA
+ war_elephant:0 "Savaş Fili"
+ camel_rider:0 "Deve Binici"
+
+ #Cultural MaA
+ huscarl:0 "Huskarl"
+ landsknecht:0 "Landsknecht"
+ longbowmen:0 "Uzun Yaylı"
+ goedendag:0 "Goedendag"
+ gendarme:0 "Gendarme"
+ chasseur:0 "Chasseur"
+ picchieri:0 "Picchieri"
+ praetorian:1 "Palatini"
+ caballero:0 "Caballero"
+ cataphract:0 "Katafrakt"
+ monaspa:0 "Monaspa"
+ hobelar:0 "Hobelar"
+ schiltron:0 "Schiltron"
+ metsanvartija:0 "Metsänvartija"
+ horse_archers:0 "Atlı Okçu" #krutygetarts
+ mubarizun:0 "Mubarizun"
+ ayyar:0 "Ayyar"
+ druzhina:0 "Druzhina"
+ hussar:1 "Konni"
+ horn_warrior:0 "Boynuz Savaşçısı"
+ bush_hunter:0 "Çalı Avcısı"
+ shomer:0 "Shomer"
+ khandayat:0 "Khandayat"
+ garudas:1 "Lenkalar"
+ mountaineer:0 "Dağcı"
+ sahel_horsemen:0 "Sahel Atlıları"
+ guinea_warrior:0 "Gine Dağcıları"
+ sarawit:0 "Sarawit"
+ abudrar:0 "Abudrar"
+ zbrojnosh:0 "Zbrojnosh"
+ palace_guards:0 "Saray Muhafızları"
+ chu_ko_nu:0 "Chu-ko-nu Okçuları"
+ mulaththamun:0 "Mulathamūn"
+ archers_of_the_nile:0 "Nil Okçuları"
+ paiks:0 "Paikler"
+ guanch_vaulter:0 "Sırıkçı Piyade"
+ 
+ #Special MaA
+ house_guard:0 "Hane Muhafızı"
+ house_guard_flavor:0 "#F Bu seçkin birlikler spesifik bir Hanedana hizmet ederler. Savaşçılar en sadık vasallar arasından özenle seçilir.#!"
+ 
+ #MaA Descriptions
+ bowmen_flavor:1 "#F Profesyonel okçular gökyüzünü oklarla doldurur, en önde yer alan düşman birliklerine büyük hasar verirler.#!"
+ light_footmen_flavor:1 "#F Tecrübeli avcı erleri paha biçilemez yağmacılardır, düşmanın kanatlarda yer alan birliklerini taciz edip bir çırpıda geri çekilirler.#!"
+ light_horsemen_flavor:0 "#F Hafif ve çevik süvariler kanat saldırılarında usta, kaçmakta olan düşmanları yakalamada ise mükemmeldir.#!"
+ armored_footmen_flavor:1 "#F Ağır zırhlı ve iyi eğitimli bu birlikler kalabalık piyade birliklerine karşı üstündür.#!"
+ pikemen_unit_flavor:0 "#F Taşıdıkları uzun mızraklar bu birliklerin süvari taarruzlarına karşı etkili sivri uçlu duvarlar örebilmelerini sağlar.#!"
+ armored_horsemen_flavor:0 "#F Ağır zırhlı bu süvari birlikleri açık ovalardaki muharebeleri domine ederler.#!"
+ crossbowmen_flavor:0 "#F Yeniden dolum süreleri uzun olsa da, arbaletlerin hem kullanımı daha kolaydır hem de yakın mesafede zırhı delebilecek güçte ok yağdırırlar.#!"
+
+ onager_flavor:0 "#F Burulma basıncıyla çalışan bu mancınıklar uzak mesafeden taşlar fırlatarak düşman tahkimatını yerle bir edebilir.#!"
+ mangonel_flavor:0 "#F Çekme gücüyle yaratılan gerginlikle çalışan bu mancınıklar onagerlere nazaran hem daha kolay hareket ettirilirler hem de daha kısa dolum süresine sahiptirler.#!"
+ trebuchet_flavor:0 "#F Karşı ağırlık prensibiyle çalışan trebüşeler, mangonellere ve onagerlere nazaran çok daha büyük cisimleri çok daha büyük kuvvetle fırlatabilirler.#!"
+ bombard_flavor:0 "#F Kaldıraç ve makaraların kısıtlamalarına tabi olmayan bu toplar düşman tahkimatını kolaylıkla ortadan kaldırabilir.#!"
+
+ war_elephant_flavor:0 "#F Taarruz etmekte olan bir fili durdurmak imkânsıza yakındır, bu da onları mükemmel bir baskın birliği yapar.#!"
+ camel_rider_flavor:0 "#F Sıradan süvarilere nazaran çöl muharebelerine daha hazırlıklı olan bu biniciler kumlara hükmederler.#!"
+
+ huscarl_flavor:1 "#F Cermen Huskarllar kalkanlarıyla duvar örerek yaklaşmakta olan ok yağmurunu durdurmalarıyla bilinirler.#!"
+ landsknecht_flavor:1 "#F Alman Landsknechtler Zweihander adı verilen devasa kılıçlarıyla düşman mızraklılarını perişan ederler.#!"
+ longbowmen_flavor:2 "#F Ustalaşması bir ömür sürse de İngiltere ve Galler'in uzun yaylı okçuları rakipsiz bir dolum süresiyle zırhları delebilecek güçte ok yağdırırlar.#!"
+ goedendag_flavor:0 "#F Felemenk Goedendag birlikleri süvari taarruzlarına karşı kullanılabilecek sivri uçlu sopalar taşırlar.#!"
+ gendarme_flavor:0 "#F Fransız Gendarme birlikleri ağır süvarilerin zirvesi, tüm dünya için gıpta sebebidir.#!"
+ chasseur_flavor:0 "#F Haçlı şövalyeleri Avrupa at biniciliğiyle Levanten çöl taktiklerini harmanlamalarıyla bilinirler.#!"
+ picchieri_flavor:0 "#F Latin Picchieri birlikleri tarafından kullanılan hareketli formasyonlar onları sıradan mızraklılardan çok daha ölümcül hâle getirir.#!"
+ praetorian_flavor:1 "#F En iyisinin en iyisi, Palatiniler bizzat İmparator'a hizmet eden elit Romalı askerlerdir.#!"
+ caballero_flavor:0 "#F Diğer süvarilerden farklı olarak İberyalı Caballerolar sert tepelik arazilerde tıpkı düz ovalarda olduğu gibi hareket edebilir.#!"
+ cataphract_flavor:0 "#F Demir zırhlarla kaplı Yunan Katafraktların taarruzlarıyla kıramayacağı savunma dizilimi neredeyse yoktur.#!"
+ monaspa_flavor:0 "#F Gürcü kralların muhafızlarından oluşan Monaspa, Kafkaslar'ın çetin arazisinde bile etkili bir şekilde savaşabilen korkulu ağır süvari birliğidir.#!"
+ hobelar_flavor:0 "#F Hızlı ve çevik Kelt Hobelarları diğer süvarilerin kaçındığı ormanlık ve tepelik arazilerde baskınlar yapabilir.#!"
+ schiltron_flavor:0 "#F İskoçyalı mızraklıların sahip olduğu inanılmaz disiplin düşman taarruzlarına karşı ayakta kalabilmelerini sağlar.#!"
+ metsanvartija_flavor:0 "#F Ural Metsänvartija istilacıları ok yağmuruna tutup hızlıca ormanlığa geri çekilebilir.#!"
+ horse_archers_flavor:0 "#F Göçebe kabileler tarafından kullanılan Atlı Okçular yakalanmaları imkânsız bir biçimde düşmanı ok yağmuruna tutabilir.#!"
+ ayyar_flavor:0 "#F Ayyar zümrelerinin genç ve istekli üyeleri sayesinde her an savaşa çağırılabilecek yetenekli askerler bulunur.#!"
+ mubarizun_flavor:0 "#F Hem düzenli muharebede hem de teke tek dövüşte eğitimli Arap Mubarizun birlikleri diğer piyadelere muharebe alanını dar eder.#!"
+ druzhina_flavor:0 "#F Rus Druzhina birlikleri kendilerini dostlarını korumaya adamış becerikli muhafızlardır.#!"
+ hussar_flavor:1 "#F Doğu Avrupa'nın akıncı $hussar$ süvarileri kaçmakta olan askerlere karşı birebirdir.#!"
+ horn_warrior_flavor:0 "#F Dağ muharebelerinde tecrübeli Afrika Boynuzu savaşçıları küçümsenmemelidir.#!"
+ bush_hunter_flavor:0 "#F Batı Afrikalı okçular zorlu çalılık arazileri kendi avantajlarına kullanmasını bilirler.#!"
+ shomer_flavor:0 "#F Kendilerini soydaşlarını korumaya adamış Yahudi Shomer birlikleri muharebe esnasında birbirlerine siper olmalarıyla bilinirler.#!"
+ khandayat_flavor:0 "#F Hint Khandayat birlikleri insanları ve atları tek bir kılıç darbesiyle kesebilmeleriyle bilinirler.#!"
+ garudas_flavor:0 "#F Garuda savaşçıları sadakatleri ve ölene kadar savaşmalarıyla bilinir. Bir Garuda savaşçısı öldüğünde komuta ettiği Lenka askerlerinden oluşan birliğin de onunla beraber ölmesi beklenir.#!"
+ mountaineer_flavor:0 "#F Yüksek irtifada yaptıkları talimler Tibetli askerleri kendi coğrafyalarının tartışmasız hâkimi hâline getirir.#!"
+ sahel_horsemen_flavor:0 "#F Pamuklu hafif zırh kuşanan Sahel Atlıları ciritleriyle düşmanlarını perişan ederler.#!"
+ guinea_warrior_flavor:0 "#F Gine dağlıklarının çevik savaşçıları ölümcül ve bir o kadar da isabetli cirit kullanımlarıyla bilinirler.#!"
+ sarawit_flavor:0 "#F Sarawit Etiyopya tepeliklerinin iyi eğitimli yerel askerleridir.#!"
+ zbrojnosh_flavor:0 "#F Orta Avrupa'nın tepeliklerine ve ormanlıklarına hükmeden Zbrojnosh askerleri düşmana korku salar.#!"
+ abudrar_flavor:0 "#F Abudrar dağcıları topraklarındaki tüm geçitleri ve vadileri bilirler.#!"
+ palace_guards_flavor:0 "#F Genellikle nöbetçi olarak asayişi sağlamakla görevlendirilen bu çok yönlü askerler herhangi bir ordunun belkemiğini oluşturabilecek kaliteye sahiptir.#!"
+ chu_ko_nu_flavor:1 "#F Chu-ko-nu ile silahlanmış olan bu okçuların atış hızları yüksektir.#!"
+ mulaththamun_flavor:0 "#F Bu süvariler hayatlarını geçirdikleri çöllerde becerilerini geliştirmiştir. Yüzlerine sardıkları lifam denilen peçe sayesinde kumdan korunurlar ve düşman tarafından da tanınmazlar.#!"
+ archers_of_the_nile_flavor:0 "#F Nübyeliler yay kullanmayı daha çocukken öğrenmeye başlamış ve binlerce yıl boyunca topraklarını çölden gelen istilacılardan korumuşlardır.#!"
+ paiks_flavor:0 "#F Piyadeler yüzyıllar boyunca Hintli orduların çekirdeğini oluşturmuştur. En çok kullandıkları silah da çocukluktan itibaren avlanmak için kullandıkları bambu yaylardır.#!"
+ guanch_vaulter_flavor:0 "#F Uzun atlama sırıklarıyla silahlanmış bu çevik savaşçılar, dağ arazilerinde rahatlıkla hareket edebilir ve hatta bazı duvarların üzerinden atlayabilir.#!"
+
+ #Religious MaA
+ teutonic_knights:1 "Tarikat Şövalyesi"
+ teutonic_knights_flavor:1 "#F Ağır zırhlı dindar şövalyeler, süvari taarruzlarının yanı sıra kalabalık piyadelerden oluşan muharebelerde ustadırlar.#!"
+
+ skirmishers_lowercase:0 "avcı erleri"
+ light_cavalry_lowercase:0 "hafif süvariler"
+ heavy_cavalry_lowercase:0 "ağır süvariler"
+ archers_lowercase:0 "okçular"
+ pikemen_lowercase:0 "mızraklılar"
+ heavy_infantry_lowercase:0 "ağır piyadeler"
+ elephant_cavalry_lowercase:0 "savaş filleri"
+ camel_cavalry_lowercase:0 "deve süvarileri"
+ horse_archers_lowercase:0 "atlı okçular"
+ levies_lowercase:0 "milisler"
+
+ # Accolade MaA
+ accolade_maa_archers:0 "Kapıkulu Okçusu"
+ accolade_maa_archers_flavor:1 "[retinue_maa|E]\n#F Bu elit okçular ucuz avcılara benzemez. Hızlı ve isabetli bir şekilde ok yağdırmak için ara vermeksizin talim görürler.#!"
+ accolade_maa_skirmishers:0 "Kapıkulu Avcı Eri"
+ accolade_maa_skirmishers_flavor:1 "[retinue_maa|E]\n#F Hafif donanımlı elit savaşçılar ve tecrübeli paralı askerlerden oluşan bu grup, pusuya düşürmede ve gayrinizami harpte uzmandır.#!"
+ accolade_maa_pikes:0 "Kapıkulu Mızraklısı"
+ accolade_maa_pikes_flavor:1 "[retinue_maa|E]\n#F İyi zırhlar ve uzun mızraklar ile kuşanmış bu piyadeler, ordunun kırılmaz çekirdeğini oluşturur.#!"
+ accolade_maa_outriders:0 "Kapıkulu İzcisi"
+ accolade_maa_outriders_flavor:1 "[retinue_maa|E]\n#F Hızlı atlar ile ilerleyen bu izciler her türlü süvariden kaçıp en beklenmedik yerden vurabilir.#!"
+ accolade_maa_vanguards:0 "Kapıkulu Öncüsü"
+ accolade_maa_vanguards_flavor:1 "[retinue_maa|E]\n#F Mücadelenin merkezinde en önemli yerde savaşan bu disiplinli ve göz kamaştırıcı ağır piyadelere karşı koymak zordur.#!"
+ accolade_maa_lancers:0 "Kapıkulu Mızraklı Süvarisi"
+ accolade_maa_lancers_flavor:1 "[retinue_maa|E]\n#F Hatlara doğru gök gürültüsü ve gerçek soylulukla ilerleyen bu süvariler her muharebe alanında korku saçar.#!"
+ accolade_maa_crossbowers:0 "Kapıkulu Arbaletçisi"
+ accolade_maa_crossbowers_flavor:1 "[retinue_maa|E]\n#F Ne şövalye ne saman adam, bu eğitimli arbaletçilerin demir okları önüne çıkan her şeyi delip geçer.#!"
+ accolade_maa_cameliers:0 "Kapıkulu Deve Binicisi"
+ accolade_maa_cameliers_flavor:1 "[retinue_maa|E]\n#F Orta Doğu ve Kuzey Afrika boyunca korku saçan bu deve biniciler oldukça nadir bir güçtür.#!"
+ accolade_maa_elephantiers:0 "Kapıkulu Savaş Fili"
+ accolade_maa_elephantiers_flavor:1 "[retinue_maa|E]\n#F Size doğru hücum eden bir filden daha korkutucu olan tek şey size doğru hücum eden #EMP daha büyük#! bir fildir.#!"
+ accolade_maa_horse_archers:0 "Kapıkulu Atlı Okçusu"
+ accolade_maa_horse_archers_flavor:1 "[retinue_maa|E]\n#F Bozkır süvarileri tüm hayatlarını at üstünde geçirir, becerilerini geliştirir. Karşı koymak acı vericidir, kovalamak ise ölüm getirir.#!"
+
+### STRATEGYTURK'TEN DUMAN TARAFINDAN ÇEVRİLMİŞTİR. 
