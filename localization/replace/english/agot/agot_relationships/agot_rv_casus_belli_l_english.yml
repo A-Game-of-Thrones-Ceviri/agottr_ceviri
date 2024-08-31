@@ -1,10 +1,10 @@
 ﻿l_english:
-  
+  #BATUHAN
   ### Declare Private War  #NT!
  rv_declare_private_war_interaction: "Özel Savaş İlan Et" #NT!
- rv_liege_warning: "Defender'ın [liege|E]'ı savaşa katılacak" #NT!
+ rv_liege_warning: "Savunucunun [Concept( 'liege', 'Süzereni' )|E] savaşa katılacak" #NT!
   ### Rescue CB  #NT!
- RESCUE_WAR_NAME: "Özgür Tutsakları" #NT!
+ RESCUE_WAR_NAME: "Kurtarma Savaşı" #NT!
  CB_RESCUE_COST: "Hedeflenen Esir Sayısı" #NT!
  CB_RESCUE_CRIMINAL_COST: "Hedeflenen Suçluların Sayısı" #NT!
  rv_release_effect: "• [Scope.GetCharacter.GetShortUIName|U] serbest bırakılacak" #NT!
@@ -13,7 +13,7 @@
  rescue_war_victory_desc_defender: "[attacker.GetShortUIName|U] Zindanınızdaki listelenenlerin hepsini serbest bırakın [prisoners|E]." #NT!
  rv_failed_rescue: "Başarısız Kurtarma" #NT!
  rv_rescue_war_invalidated_desc: "Esirleri Özgürleştirme Savaşı geçersiz kılındı!" #NT!
- rv_rescue_war_white_peace_desc: "Hayır [prisoner|E] serbest bırakılmadı." #NT!
+ rv_rescue_war_white_peace_desc: "Hiçbir [prisoner|E] serbest bırakılmadı." #NT!
  rv_rescue_war_defeat_desc: "$rv_rescue_war_white_peace_desc$" #NT!
  rv_failed_rescue_desc_1: "[rescue_target_killer.GetName] tarafından öldürülen [rescue_target_dead.GetName]'ı kurtarmayı başaramadım" #NT!
  rv_failed_rescue_desc_second_perspective_1: "[owner.GetName], [rescue_target_killer.GetName] tarafından öldürülen [rescue_target_dead.GetName]'i kurtarmayı başaramadı" #NT!
@@ -22,22 +22,22 @@
   
   ### Rescue_Opinions  #NT!
  rv_rescued_me: "Beni kurtardı" #NT!
- rv_rescued_family: "Kurtarıldı [family_member|E]" #NT!
- rv_rescued_former_spouse: "Beni [concubinage|E]'dan eski [spouse|E] olarak kurtardı" #NT!
+ rv_rescued_family: "[Concept( 'family_member', 'Hane Üyesi' )|E] kurtarıldı" #NT!
+ rv_rescued_former_spouse: "Beni eski [spouse|E] olarak [Concept( 'concubinage', 'Cariyelikten' )|E] kurtardı" #NT!
  rv_rescued_close_relation: "Kurtarılan Yakın Akraba" #NT!
- rv_rescued_very_close: "Kurtarıldı [best_friend|E] veya [soulmate|E]" #NT!
- rv_rescued_rival: "Kurtarıldı [rival|E]" #NT!
- rv_rescued_nemesis: "Kurtarıldı [nemesis|E]" #NT!
- rv_attempt_free_my_criminal: "[criminal|E]'ı Kurtarmaya Çalıştım" #NT!
- rv_attempted_rescuing_me: "Beni kurtarmaya çalıştı" #NT!
- rv_attempted_rescuing_family: "Kurtarmaya Çalışıldı [family_member|E]" #NT!
- rv_attempted_rescuing_close_relation: "Yakın Akrabasını Kurtarmaya Çalıştı" #NT!
- rv_attempted_rescuing_very_close: "Kurtarma girişimi [best_friend|E] veya [soulmate|E]" #NT!
- rv_attempted_rescuing_rival: "Kurtarmaya Çalışıldı [rival|E]" #NT!
- rv_attempted_rescuing_nemesis: "Kurtarmaya Çalışıldı [nemesis|E]" #NT!
- rv_avenged_family: "İntikam Alındı ​​[family_member|E]" #NT!
- rv_avenged_close_relation: "İntikam Alınmış Yakın İlişki" #NT!
- rv_avenged_very_close: "İntikam alındı ​​[best_friend|E] veya [soulmate|E]" #NT!
+ rv_rescued_very_close: "Kurtarıldı [Concept( 'best_friend', 'Yakın Arkadaş' )|E] veya [Concept( 'soulmate', 'Ruh Eşini' )|E]" #NT!
+ rv_rescued_rival: "Kurtarılan [Concept( 'rival', 'Rakip' )|E]" #NT!
+ rv_rescued_nemesis: "Kurtarılan [Concept( 'nemesis', 'Can Düşmanı' )|E]" #NT!
+ rv_attempt_free_my_criminal: "Bir [Concept( 'criminal', 'Suçluyu' )|E]" #NT!
+ rv_attempted_rescuing_me: "Beni" #NT!
+ rv_attempted_rescuing_family: "[Concept( 'family_member', 'Hane Üyesini' )|E]" #NT!
+ rv_attempted_rescuing_close_relation: "Yakın Akrabasını" #NT!
+ rv_attempted_rescuing_very_close: "[Concept( 'best_friend', 'Yakın Arkadaş' )|E] veya [Concept( 'soulmate', 'Ruh Eşini' )|E]" #NT!
+ rv_attempted_rescuing_rival: "[Concept( 'rival', 'Rakibi' )|E]" #NT!
+ rv_attempted_rescuing_nemesis: "[Concept( 'nemesis', 'Can Düşmanı' )|E]" #NT!
+ rv_avenged_family: "[Concept( 'family_member', 'Hane Üyesinin' )|E] İntikamı Alındı " #NT!
+ rv_avenged_close_relation: "Yakın Akrabanın İntikamı Alındı" #NT!
+ rv_avenged_very_close: "​​[Concept( 'best_friend', 'Yakın Arkadaş' )|E] veya [Concept( 'soulmate', 'Ruh Eşini' )|E] İntikamı Alındı" #NT!
   
   ### Revenge CB  #NT!
  REVENGE_WAR_NAME: "İntikam Savaşı" #NT!
@@ -59,9 +59,9 @@
  rv_revenged_lover_desc_third_perspective_1: "[owner.GetName], [target_killer.GetName] tarafından öldürülen [owner.GetHerHis] sevgilisi [target_revenged.GetName]'nin intikamını aldı" #NT!
   
  rv_successful_revenged_soulmate: "Başarılı İntikam" #NT!
- rv_revenged_soulmate_desc_1: "[target_killer.GetName] tarafından öldürülen ruh eşim [target_revenged.GetName]'ın intikamını aldım" #NT!
- rv_revenged_soulmate_desc_second_perspective_1: "[target_killer.GetName] tarafından öldürülen ruh eşiniz [target_revenged.GetName]'ın intikamını aldınız" #NT!
- rv_revenged_soulmate_desc_third_perspective_1: "[owner.GetName], [target_killer.GetName] tarafından öldürülen [owner.GetHerHis] ruh eşi [target_revenged.GetName]'nin ölümünün intikamını aldı" #NT!
+ rv_revenged_soulmate_desc_1: "[target_killer.GetName] tarafından öldürülen ruh Eşinim [target_revenged.GetName]'ın intikamını aldım" #NT!
+ rv_revenged_soulmate_desc_second_perspective_1: "[target_killer.GetName] tarafından öldürülen ruh Eşininiz [target_revenged.GetName]'ın intikamını aldınız" #NT!
+ rv_revenged_soulmate_desc_third_perspective_1: "[owner.GetName], [target_killer.GetName] tarafından öldürülen [owner.GetHerHis] ruh Eşini [target_revenged.GetName]'nin ölümünün intikamını aldı" #NT!
   
  rv_successful_revenged_friend: "Başarılı İntikam" #NT!
  rv_revenged_friend_desc_1: "[target_killer.GetName] tarafından öldürülen arkadaşım [target_revenged.GetName]'ın intikamını aldım" #NT!
@@ -74,9 +74,9 @@
  rv_revenged_best_friend_desc_third_perspective_1: "[owner.GetName], [target_killer.GetName] tarafından öldürülen [owner.GetHerHis] en iyi arkadaşı [target_revenged.GetName]'nin intikamını aldı" #NT!
   
  rv_successful_revenged_spouse: "Başarılı İntikam" #NT!
- rv_revenged_spouse_desc_1: "[target_killer.GetName] tarafından öldürülen eşim [target_revenged.GetName]'ın intikamını aldım" #NT!
- rv_revenged_spouse_desc_second_perspective_1: "[target_killer.GetName] tarafından öldürülen eşiniz [target_revenged.GetName]'ın intikamını aldınız" #NT!
- rv_revenged_spouse_desc_third_perspective_1: "[owner.GetName], [target_killer.GetName] tarafından öldürülen [owner.GetHerHis] eşinin [target_revenged.GetName] ölümünün intikamını aldı" #NT!
+ rv_revenged_spouse_desc_1: "[target_killer.GetName] tarafından öldürülen Eşinim [target_revenged.GetName]'ın intikamını aldım" #NT!
+ rv_revenged_spouse_desc_second_perspective_1: "[target_killer.GetName] tarafından öldürülen Eşininiz [target_revenged.GetName]'ın intikamını aldınız" #NT!
+ rv_revenged_spouse_desc_third_perspective_1: "[owner.GetName], [target_killer.GetName] tarafından öldürülen [owner.GetHerHis] Eşininin [target_revenged.GetName] ölümünün intikamını aldı" #NT!
   
  rv_successful_revenged_family: "Başarılı İntikam" #NT!
  rv_revenged_family_desc_1: "[target_killer.GetName] tarafından öldürülen aile üyem [target_revenged.GetName]'ın intikamını aldım" #NT!
