@@ -1,145 +1,137 @@
 ﻿l_english:
-  ## Custom Loc  #NT!
- nc_fbeauty: "Güzel" #NT!
- nc_mbeauty: "Yakışıklı" #NT!
- nc_charming: "alımlı" #NT!
- nc_intelligent: "zeki" #NT!
- nc_wellborn: "asil doğumlu" #NT!
- rwh_empress: "bir imparatoriçe eşi" #NT!
- rwh_emperor: "bir imparator eşi" #NT!
- rwh_queen: "bir kraliçe eşi" #NT!
- rwh_king: "bir prens eşi" #NT!
- rwh_duchess: "bir düşes" #NT!
- rwh_duke: "bir dük" #NT!
- rwh_countess: "bir kontes" #NT!
- rwh_count: "bir sayım" #NT!
- rwh_wife: "bir eş" #NT!
- rwh_husband: "bir koca" #NT!
- gbm_angel: "bir melek" #NT!
- gbm_valkyrie: "bir valkyrie" #NT!
- gbm_aphrodite: "Afrodit'in kendisi" #NT!
- gbm_adonis: "Adonis'in kendisi" #NT!
- gbm_rati: "Rati'nin kendisi" #NT!
- gbm_kamadeva: "Kamadeva'nın kendisi" #NT!
- gbm_lilith: "Lilith'in kendisi" #NT!
- gbm_default: "bir tanrıça" #NT!
- gbm_male_default: "bir tanrı" #NT!
+ ## Custom Loc
+ nc_fbeauty:0 "güzel"
+ nc_mbeauty:0 "yakışıklı"
+ nc_charming:0 "çekici"
+ nc_intelligent:0 "akıllı"
+ nc_wellborn:0 "soylu"
+ rwh_empress:0 "imparatoriçe"
+ rwh_emperor:0 "imparator"
+ rwh_queen:0 "kraliçe"
+ rwh_king:0 "kral"
+ rwh_duchess:0 "düşes"
+ rwh_duke:0 "dük"
+ rwh_countess:0 "kontes"
+ rwh_count:0 "kont"
+ rwh_wife:0 "karı"
+ rwh_husband:0 "koca"
+ gbm_angel:0 "bir melek"
+ gbm_valkyrie:0 "bir valkür"
+ gbm_aphrodite:0 "Afrodit"
+ gbm_adonis:0 "Adonis"
+ gbm_rati:0 "Rati"
+ gbm_kamadeva:0 "Kamadeva"
+ gbm_lilith:0 "Lilith"
+ gbm_default:0 "bir tanrıça"
+ gbm_male_default:0 "bir tanrı"
+ 
+ ## Modifiers
+  # Event Interaction Modifiers
+ event_bonus_to_county_control:0 "Kitle Kontrolünde Etkili"
+ event_bonus_to_county_control_desc:0 "Bu karakter $task_increase_control$ görevinde daha etkili."
+ event_bonus_to_agent_invite:0 "Entrika Ustası"
+ event_bonus_to_agent_invite_desc:0 "Bu karakter planlara yardakçı çağırmakta daha başarılı."
+ event_bonus_to_vassal_accept:0 "Usta Arabulucu"
+ event_bonus_to_vassal_accept_desc:0 "Bu karakter başka bir karakteri vasalı yapmaya çalıştığında +20 kabul bonusu elde edecek."
+ # Interaction Bonuses
+ BONUS_TO_AGENT_RECRUITMENT:0 "Entrika Ustası: $VALUE|=+0$"
+ event_bonus_to_vassal_accept_tt:0 "Adil bir hükümdar olarak anılıyorsunuz: $VALUE|=+0$"
+ # Council Task Bonuses
+ INCREASE_COUNTY_CONTROL_EXPERIENCE_BONUS_VALUE:0 "[councillor.GetCouncilTitle] [councillor.GetFirstName], halk ile ilgilenmede tecrübeli"
+ # Modifiers
+ hold_court_7030_plundering:0 "Soygundaydı"
+ hold_court_7030_plundering_desc:0 "Bu karakter yakın zamanda soygundaydı."
+ hold_court_7030_knight_boost:0 "Askerlerin Tavrını Savundu"
+ hold_court_7030_land_trashed:0 "Yağmaladı ve Yaktı"
+ hold_court_7030_knight_punished:0 "Sorun Yaratanları Cezalandırdı"
+ hold_court_7040_county_opinion_loss:0 "Vergi İsyanı Devam Ediyor"
+ hold_court_7040_tax_boost:0 "Vergi Denetmeni"
+ hold_court_7040_tax_cut:0 "Vergi Yardımı"
+ pursuing_a_desirable_match:0 "Kendine Denk Birini Arıyor"
+ hold_court_7060_infatuated:0 "Abayı Yakmış"
+ hold_court_7060_alone:0 "Yalnız"
+ hold_court_7070_defended_church:0 "Kilise Çıkarlarını Gözetti"
+ hold_court_7070_defended_peasantry:0 "Köylüleri Kiliseden Korudu"
+ hold_court_7070_undermined_church:0 "Kilisenin Otoritesini Sarstı"
+ # Opinion Modifiers
+ developing_attraction_opinion:0 "Tomurcuklanan İlgi"
+ ## Events
+  # Vassal's Land Vandalised by Personal Guard, hold_court.7030
+ hold_court.7030.title:0 "Barışın Yıkımı"
+ hold_court.7030.byzantine_desc:0 "Sıradaki arzuhâl sahibi oldukça öfkeli olan [angry_vassal.GetName]. Kısa bir hürmet göstergesinin ardından sizi Vareg Muhafızlarının yaptığı şeyler hakkında bilgilendiriyor. [troublesome_warrior.GetName] tarafından yönetilen Vareg Muhafızları yakın zamanda [hold_court_7030_county.GetName] topraklarını talan etmiş - [angry_vassal.GetTitle] tarafından bizzat yönetilen toprakları.\n\n"Tüm topraklarımı talan ettiler, yağmaladılar, mahvettiler. Getirdikleri yıkımı, sarhoşluğu ve pagan inançlarını görmezden gelmemizi sağlayacak bir fayda göremiyorum!"\n\n. Ne yapılmalı?"
+ hold_court.7030.desc:0 "Sıradaki arzuhâl sahibi oldukça öfkeli olan [angry_vassal.GetName]. Kısa bir hürmet göstergesinin ardından [troublesome_warrior.GetName] tarafından yönetilen bazı şövalyelerin yakın zamanda [hold_court_7030_county.GetName] topraklarından geçtiğini söylüyor.\n\n"[hold_court_7030_county.GetNameNoTierNoTooltip] topraklarındaki tüm köylerimi ve tarım alanlarımı talan ettiler ve yağmaladılar. Bu düpedüz saçmalık ve buna göz yummayacağım!" diyor [angry_vassal.GetTitledFirstNameNoTooltip].\n\nNe yapmalıyım?"
+ hold_court.7030.a:0 "Askerlerim hepimizin güvenliği için görev alıyorlar, mızmızlanmayı kes!"
+ hold_court.7030.b:0 "Yağmadan elde ettiklerini geri teslim etmelisin, [troublesome_warrior.GetFirstNameNoTooltip]."
+ hold_court.7030.c:0 "Kaybınızı karşılayacağım, [angry_vassal.GetTitledFirstNameNoTooltip]."
+ hold_court.7030.d:0 "Barışı sağlayamıyorsan belki de benim toprağım olmalıdır."
+ hold_court_7030b_land_not_restored:0 "[hold_court_7030_county.GetName] toprakları acı çekmeye devam ediyor"
+ hold_court_7030b_land_not_restored_tt:0 "[troublesome_warrior.GetShortUINameNoTooltip] tarafından yapılan yağmadan dolayı ona ödettiğiniz tazminat, vasalım [angry_vassal.GetShortUINameNoTooltip] tarafından köyün tadilatı için kullanılmadı."
+ hold_court_7030b_land_restored:0 "[hold_court_7030_county.GetName] toprakları tekrar refaha ulaştı"
+ hold_court_7030b_land_restored_tt:0 "[troublesome_warrior.GetShortUINameNoTooltip] tarafından yapılan yağmadan dolayı ona ödettiğiniz tazminat, vasalım [angry_vassal.GetShortUINameNoTooltip] tarafından köyün tadilatı için kullanıldı."
+ hold_court_7030c_land_not_restored:0 "[hold_court_7030_county.GetName] toprakları acı çekmeye devam ediyor"
+ hold_court_7030c_land_not_restored_tt:0 "[troublesome_warrior.GetName] ve verdiği zararları düzeltmek için [angry_vassal.GetName] tarafına ulaştırdığımız para toprakları düzeltmek için kullanılmadı."
+ hold_court_7030c_land_restored:0 "[hold_court_7030_county.GetName] toprakları tekrar refaha ulaştı"
+ hold_court_7030c_land_restored_tt:0 "[troublesome_warrior.GetName] ve verdiği zararları düzeltmek için [angry_vassal.GetName] tarafına ulaştırdığımız para toprakları düzeltmek için kullanıldı."
+# Tax Revolt in Frontier Province, hold_court.7040
+ hold_court.7040.title:0 "Sınırlarımızda Arbede"
+ hold_court.7040.desc:1 "Sıradaki arzuhâl sahibi, sarayda pek görmediğimiz biri olsa gerek çünkü onu tanıyamıyorum. [marshal.GetCouncilTitle|U] [marshal.GetFirstName] gözlerini saraya girdiğinden beri arzuhâl sahibinin üzerinden ayırmadı.\n\n"[ROOT.Char.Custom2('RelationToMeAddress', frontier_leader)|U]; buraya [frontier_county.GetNameNoTier] halkının, dayattığınız vergileri ödemeyi reddettiğini duyurmaya geldim. Vakti zamanında halkımız özel haklara ve ayrıcalıklara sahipti fakat şimdi bizden kesmeye çalıştığınız haraçlar bunları görmezden geliyor. Kaygılarımızı adil bir şekilde çözmenizi talep ediyorum, yoksa işler hiç hoş olmaz.""
+ hold_court.7040.a:0 ""[marshal.GetCouncilTitle], bu aşağılığı tutukla ve beş para etmez halkını ez geç!""
+ hold_court.7040.a.win:0 "Ayaklanan köylüler mağlup edildi"
+ hold_court.7040.a.win.title:0 "Vergi İsyanı Bastırıldı"
+ hold_court.7040.a.lose:0 "[marshal.GetCouncilTitle] [marshal.GetFirstName], isyancıları bastırmayı başaramadı"
+ hold_court.7040.a.lose.title:0 "[marshal.GetCouncilTitle] [marshal.GetFirstName] Mağlup Oldu"
+ hold_court.7040.b:0 "Elebaşlarını tuzağa düşür."
+ hold_court.7040.b.win:0 "Vergi isyanının elebaşlarını tuzağa çekmeyi başarıyor ve yetenekli bir entrikacı olarak ününüzü bir kez daha kanıtlıyorsunuz. İnsanları planlarınıza katılmaya ikna etmek artık daha kolay olacak"
+ hold_court.7040.b.win.title:0 "Vergi İsyanı Elebaşları Tuzağa Düşürüldü ve Öldürüldü"
+ hold_court.7040.b.lose:0 "Vergi isyanının elebaşları blöf yaptığınızı anladı"
+ hold_court.7040.b.lose.title:0 "Vergi İsyanının Elebaşları Kaçtı"
+ hold_court.7040.c:1 ""Seni dinleyeceğim, [frontier_leader.GetNameNoTooltip].""
+ hold_court.7040.c.win:0 "Vergi isyanının elebaşlarıyla, adilliğinizi ve soğukkanlılığınızı göstererek başarılı bir şekilde anlaşmaya varıyorsunuz"
+ hold_court.7040.c.win.title:0 "Vergi İsyanı Elebaşları Yatıştırıldı"
+ hold_court.7040.c.lose:0 "Vergi isyanının elebaşları ikna olmadı ve anlaşmayı reddediyor"
+ hold_court.7040.c.lose.title:0 "Vergi İsyanı Elebaşları İkna Olmadı"
+ hold_court.7040.d:0 ""Anlaşılan bazı anlaşmaları yanlış yorumluyorsunuz.""
+ hold_court.7040.d.win:0 "Vergi isyanının elebaşlarını eski bir yasayı yanlış yorumladıkları konusunda ikna ediyor ve kalkışmalarının haksız olduğunu gösteriyorsunuz"
+ hold_court.7040.d.win.title:0 "Vergi İsyanı Diniyor"
+ hold_court.7040.d.lose:0 "Vergi isyanının elebaşları kitaplarınız ve bilginiz tarafından oyuna düşürülmedi."
+ hold_court.7040.d.lose.title:0 "Vergi İsyanı Devam Ediyor"
+ hold_court.7040.e:0 "Ne istiyorlarsa verin, umurumda mı sanki?"
+# Former soldier has lost his mind and challenges you to a duel, hold_court.7050
+ hold_court.7050.title:0 "Savaşın Sonuçları"
+ hold_court.7050.desc:1 "Sarayın arka saflarında bir şamata başlıyor. Kimse onu durduramadan birisi deli gibi tahtıma doğru koşuyor ve tahtımın önünde hürmet göstermeden duruyor. Gözlerine bir bakışta anlamam gereken her şeyi anlıyorum - bu kişinin aklı selim değil.\n\n"Canavar! Bizi ölüme gönderdin! Niye sen cezalandırılmıyorsun?"\n\nSöylemlerinden anlaşılacağı üzere bu şahıs savaşlarımdan birinde görev almış, muhtemelen şu anki hâlinde olmasının sebebi de bu. Zavallı adam için ne yapabiliriz?"
+ hold_court.7050.a:1 "Saray Hekiminin onunla ilgilenmesini iste."
+ hold_court.7050.b:0 "İstediği ölümü ona ver."
+ hold_court.7050.b.tt:1 "[lunatic_soldier.GetName] ile [Concept( 'single_combat_fight', 'Düelloya' )|E] başlıyorsunuz\n@warning_icon! #X Bu oldukça tehlikeli ve kaybederseniz ölümünüzle sonuçlanacak#!"
+ hold_court.7050.b.victory:1 "Düelloyu kazanıyorsunuz"
+ hold_court.7050.b.defeat:1 "Düelloyu kaybediyorsunuz"
+ hold_court_7050_victory:0 "[sc_loser.GetFirstNameNoTooltip], size mağlup oldu."
+ hold_court.7050.c:0 "İdam edilsin."
+ hold_court.7050.d:0 "Dışarı atın."
+ hold_court.7052.title:0 "Azrail'in Alacağı"
+ hold_court.7052.desc:0 "[ROOT.Char.Custom2('RelationToMe', killed_pc)], [killed_pc.GetName], [lunatic_soldier.GetName] ile bir saray düellosunda hayatını kaybetmiş! Üzücü olarak katil yaptığı şeyin sonuçlarını fark ettiğinden ya da aklının ve ruhunun hastalığına yenik düştüğünden pek uzun yaşamadı.\n\nKimse onu durduramadan, [lunatic_soldier.GetName], kılıcını alıp kendi kalbine sapladı. [ROOT.Char.Custom2('RelationToMePossessive', killed_pc)] tahtına otururken, olayların yaşandığı saray odasına bakıyor, kaderin dönekliğini ve savaşın fark etmediğimiz sonuçlarını düşünüyorum. Bu sonuçlar hâlâ topraklarımı ve halkımı zehirliyor."
+ hold_court.7052.a:0 "Üzücü ve anlamsız ölüm."
+ hold_court.7054.sc_invalid:0 "[lunatic_soldier.GetName] ile olan müsabakanız geçersiz oldu."
+# Cinderella
+ hold_court.7060.title:0 "O da Kim?"
+ hold_court.7060.desc:0 "[ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] diyarınca bilindiği üzere her hükümdarın hükmetmek için bir eşe ihtiyacı vardır. Bu yüzden tek suçları ebeveynlerini memnun etmek isteyen vasallarımın çocukları tarafından sunulan tekliflere dayanmak zorundayım. Yine alışılageldik bir teklifle karşı karşıyayım. [vassal.GetName], çocuğuyla birlikte önümde duruyor. [vassal_spouse.GetName], kesinlikle [vassal_spouse.Custom('GetNotableCharacteristic')] olsa da, gözlerim sarayın arka taraflarındaki birine takılıyor, güzelliği o kadar göz kamaştırıcı ki onu [cinderella.Custom('GetBeautifulMetaphor')] sanabilirim. [vassal.GetTitledFirstName], bana seslendikten sonra kendime geliyorum ve vasalım teklifine net bir cevap istiyor."
+ hold_court.7060.a:0 ""[vassal_spouse.Custom('GetNotableCharacteristic')] çocuğunuz burada kalmakta özgür, [vassal.GetTitledFirstName].""
+ hold_court.7060.a.tt:1 "#X Devam eden tüm [Concept( 'personal_scheme', 'Kişisel Planlarınız' )|E] iptal olacak ve [vassal_spouse.GetName] ile aşk yaşama planı başlatılacak#!"
+ hold_court.7060.b:0 ""Gördüğüm kişi kim bulmalıyım""
+ hold_court.7060.b.tt:1 "[vassal_spouse.GetName] ve teklifini görmezden gelip, gördüğünüz kişiyi aramaya başlıyorsunuz. #X Sevdanız o kadar güçlü başka hiçbir şeyi düşünemez hâle geliyorsunuz. Devam eden tüm [Concept( 'schemes', 'Planlarınız' )|E] iptal olacak.#!"
+ hold_court.7060.c:0 ""Teklifinizi kabul ediyorum, [vassal_spouse.Custom('GetNotableCharacteristic')] [Select_CString(vassal_spouse.IsFemale, 'leydim', 'lordum' )].""
+ hold_court.7060.c.tt:0 "Gördüğünüz kişiyi unutup [vassal_spouse.GetName] ile yolunuza devam edin."
+ hold_court.7060.d:1 ""Tüm bunlar bana kafayı yedirtecek, defolun!""
+# Tithe Barn suffers a theft, hold_court.7070
+ hold_court.7070.title:0 "Aşırı Vergiler"
+ hold_court.7070.desc:0 "Sıradaki arzuhâl sahibi [irritated_bishop.GetName], sarayıma iki muhafız ile birlikte geldi ve muhafızlar kollarında bir [Select_CString(hapless_thief.IsFemale, 'kadın', 'adam' )] taşıyorlar. [irritated_bishop.GetTitledFirstNameNoTooltip], bana mahkûmun [irritated_bishop.GetPrimaryTitle.GetName] topraklarında vergilerin toplandığı bir binadaki başarısız hırsızlık eyleminden bahsediyor.\n\n"Normalde bu meseleyi kendimiz hallederdik [ROOT.Char.Custom2('RelationToMeAddress', irritated_bishop)], fakat bu hırsız doğrudan sizin tarafınızdan yargılanma hakkını kullanmak istedi."\n\nMahkûma doğru bakıyorum ve konuşması için işaret ediyorum. "Efendim biliyorum, yaptığım yanlıştı fakat açlıktan ölüyoruz ve [irritated_bishop.GetTitledFirstNameNoTooltip], bizden çok fazla şey istiyor!""
+ hold_court.7070.a:0 ""Hırsızlık ne kadar yanlışsa halktan zorla almak da o kadar yanlıştır.""
+ hold_court.7070.a.tt:0 "Köylülerden yana karar alıp hırsızı serbest bırakın."
+ hold_court.7070.b:0 ""Kiliseye karşı gelinmez!""
+ hold_court.7070.b.tt:0 "Kiliseden yana karar alıp hırsızı cezalandırın."
+ hold_court.7070.c:0 ""Kilisenin fakirleri doyurması gerekmiyor muydu?""
+ hold_court.7070.c.tt:0 "[tithe_province.GetNameNoTooltip] topraklarında toplanan vergiyi köylülere verin."
+ hold_court.7070.d:0 ""Hırsız, hırsızdır. Teferruatı beni ilgilendirmez.""
+ hold_court.7070.e:0 ""Kilise şimdi de BENİM halkımdan mı vergi alıyor?""
+ hold_court.7070.e.tt:0 "[irritated_bishop.GetTitledFirstNameNoTooltip], elde ettiği parayı sizinle paylaşırsa onun tarafını tutacağınızı belirtin."
 
-  ## Modifiers  #NT!
-   # Event Interaction Modifiers  #NT!
- event_bonus_to_county_control: "Kalabalık Kontrolünde Deneyimli" #NT!
- event_bonus_to_county_control_desc: "Bu karakter $task_increase_control$ konsey görevinde daha etkilidir." #NT!
- event_bonus_to_agent_invite: "Entrika Ustası" #NT!
- event_bonus_to_agent_invite_desc: "Bu karakterin ajanları kendi planlarına dahil etmesi daha kolay olacaktır." #NT!
- event_bonus_to_vassal_accept: "Usta müzakereci" #NT!
- event_bonus_to_vassal_accept_desc: "Bu karakter, bir dahaki sefere başka bir karakterin kendi tebaası olmasını istediğinde +20 kabul bonusu kazanacak." #NT!
-  # Interaction Bonuses  #NT!
- BONUS_TO_AGENT_RECRUITMENT: "Entrika Ustası: $VALUE|=+0$" #NT!
- event_bonus_to_vassal_accept_tt: "Adil bir yönetici olarak ününüz var: $VALUE|=+0$" #NT!
-  # Council Task Bonuses  #NT!
- INCREASE_COUNTY_CONTROL_EXPERIENCE_BONUS_VALUE: "[councillor.GetCouncilTitle] [councillor.GetFirstName] kalabalıkla başa çıkma konusunda deneyimlidir" #NT!
-  # Modifiers  #NT!
- hold_court_7030_plundering: "Yağmalanıyordu" #NT!
- hold_court_7030_plundering_desc: "Bu karakter son zamanlarda yağmacılık yapıyor." #NT!
- hold_court_7030_knight_boost: "Askerlerin Davranışlarını Savundu" #NT!
- hold_court_7030_land_trashed: "Yağmalanmış ve Yakılmış" #NT!
- hold_court_7030_knight_punished: "Cezalandırılmış Sorun Çıkaranlar" #NT!
- hold_court_7040_county_opinion_loss: "Vergi İsyanı Devam Ediyor" #NT!
- hold_court_7040_tax_boost: "Vergi Tahsildarı" #NT!
- hold_court_7040_tax_cut: "Vergi muhafiyeti" #NT!
- pursuing_a_desirable_match: "Arzu Edilen Bir Eşleşmeyi Takip Etmek" #NT!
- hold_court_7060_infatuated: "Tutkulu" #NT!
- hold_court_7060_alone: "Yalnız" #NT!
- hold_court_7070_defended_church: "Kilise çıkarlarını savundu" #NT!
- hold_court_7070_defended_peasantry: "Köylülüğü Kilise Aşırılıklarından Korudu" #NT!
- hold_court_7070_undermined_church: "Zayıflayan Kilise Otoritesi" #NT!
-  # Opinion Modifiers  #NT!
- developing_attraction_opinion: "Tomurcuklanan Cazibe" #NT!
-  ## Events  #NT!
-   # Vasal's Land Vandalised by Personal Guard, hold_court.7030  #NT!
- hold_court.7030.title: "Barışın Tahribatı" #NT!
- hold_court.7030.byzantine_desc: "Bir sonraki dilekçe sahibi son derece öfkeli bir [angry_vassal.GetName]. En ufak bir saygıyla, [angry_vassal.GetTitledFirstNameNoTooltip] size [troublesome_warrior.GetName] liderliğindeki Varangian Muhafızlarının yakın zamanda [hold_court_7030_county.GetName] - iyi [angry_vassal.GetTitlePossessive] kendi topraklarından geçerek saldırdığını bildiriyor.\n\n"Benim topraklarımı, [ROOT.Char.GetTitleAsNameNoTooltip]. Onların gürültücülüklerini, sarhoşluklarını ve pagan inançlarını aşabilecek ne gibi bir değer getirdiklerini göremiyorum!"\n\n. Ne yapılmalı?" #NT!
- hold_court.7030.desc: "Bir sonraki dilekçe sahibi son derece kızgın bir [angry_vassal.GetName]. [angry_vassal.GetTitledFirstNameNoTooltip], en kısa saygıyı göstererek, [troublesome_warrior.GetName] liderliğindeki bazı şövalyelerimin yakın zamanda [hold_court_7030_county.GetName]'ten geçtiğini bildirdi.\n\n"[hold_court_7030_county.GetNameNoTierNoTooltip]'teki köyleri ve çiftlikleri yağmaladılar, yağmaladılar ve yağmaladılar. tam bir rezillik, benim [ROOT.Char.GetTitleAsNameNoTooltip]'im ve buna katlanamayacağım!" [angry_vassal.GetTitledFirstNameNoTooltip] ilan ediyor.\n\n Ne yapmalıyım?" #NT!
- hold_court.7030.a: "Savaşçılarım hepimizi savunmak için yürüyor, şikayet etmeyi bırakın!" #NT!
- hold_court.7030.b: "[troublesome_warrior.GetFirstNameNoTooltip] ganimetinizi iade etmelisiniz." #NT!
- hold_court.7030.c: "Zararınızı tazmin etmeyi teklif ediyorum, [angry_vassal.GetTitledFirstNameNoTooltip]." #NT!
- hold_court.7030.d: "Eğer barışı sağlayamıyorsanız, o zaman belki de orası benim toprağım olmalı." #NT!
- hold_court_7030b_land_not_restored: "[hold_court_7030_county.GetName] acı çekmeye devam ediyor" #NT!
- hold_court_7030b_land_not_restored_tt: "[angry_vassal.GetShortUINameNoTooltip]'e vermek üzere [troublesome_warrior.GetShortUINameNoTooltip]'dan el koyduğunuz para, [troublesome_warrior.GetShortUINameNoTooltip] tarafından yağmalanan kontlukyi geri yüklemek için kullanılmadı." #NT!
- hold_court_7030b_land_restored: "[hold_court_7030_county.GetName] refaha kavuştu" #NT!
- hold_court_7030b_land_restored_tt: "[troublesome_warrior.GetShortUINameNoTooltip]'dan [angry_vassal.GetShortUINameNoTooltip]'e vermek üzere el koyduğunuz para, [troublesome_warrior.GetShortUINameNoTooltip] tarafından yağmalanan kontluknin geri verilmesinde kullanıldı." #NT!
- hold_court_7030c_land_not_restored: "[hold_court_7030_county.GetName] acı çekmeye devam ediyor" #NT!
- hold_court_7030c_land_not_restored_tt: "Tazminat olarak teklif ettiğiniz [angry_vassal.GetName] para, [troublesome_warrior.GetName]'in verdiği zararı telafi etmek için kullanılmadı." #NT!
- hold_court_7030c_land_restored: "[hold_court_7030_county.GetName] refaha kavuştu" #NT!
- hold_court_7030c_land_restored_tt: "Tazminat olarak teklif ettiğiniz [angry_vassal.GetName] para, [troublesome_warrior.GetName]'in verdiği zararı telafi etmek için kullanıldı." #NT!
- # Tax Revolt in Frontier Province, hold_court.7040  #NT!
- hold_court.7040.title: "Sınır Kavgası" #NT!
- hold_court.7040.desc: "Bir sonraki dilekçe sahibi bu sarayda açıkça bir yabancıdır, çünkü [frontier_leader.GetHerHim]'ı tanımıyorum ve [marshal.GetCouncilTitle] [marshal.GetFirstName]'nin gözleri ilk girdikleri andan itibaren üzerlerindeydi.\n\n"[ROOT.Char.Custom2('RelationToMeAddress', frontier_leader)], [frontier_county.GetNameNoTier] halkının sizin üzerimize koyduğunuz vergileri ödemeyi reddettiğini beyan etmek zorundayım. Geçmişte, topraklarımıza ve halkımıza sizin son zamanlardaki taleplerinizin görmezden geldiği haklar ve ayrıcalıklar verildi. Endişelerimizi adil bir şekilde ele almanızı rica ediyoruz, aksi takdirde."" #NT!
- hold_court.7040.a: ""Bu alçağı hapse atın [marshal.GetCouncilTitle], sonra da ayaktakımını ezin!"" #NT!
- hold_court.7040.a.win: "Yenilgiye uğrayan köylüler yenildi" #NT!
- hold_court.7040.a.win.title: "Vergi İsyanı Bastırıldı" #NT!
- hold_court.7040.a.lose: "[marshal.GetCouncilTitle] [marshal.GetFirstName] kalabalığı yenemedi" #NT!
- hold_court.7040.a.lose.title: "[marshal.GetCouncilTitle] [marshal.GetFirstName] Yenildi" #NT!
- hold_court.7040.b: "Elebaşıları kandırıp pusuya düşürün." #NT!
- hold_court.7040.b.win: "Vergi isyanının liderlerini bir pusuya düşürerek başarılı bir şekilde kandırırsınız ve yetenekli bir entrikacı olarak ününüzü pekiştirirsiniz. İnsanları planlarınıza katılmaya ikna etmeniz daha kolay olacaktır" #NT!
- hold_court.7040.b.win.title: "Vergi İsyanı Liderleri Pusuya Düşürüldü ve Öldürüldü" #NT!
- hold_court.7040.b.lose: "Vergi isyanının liderleri blöfünüzü anladı" #NT!
- hold_court.7040.b.lose.title: "Vergi İsyanı Liderleri Kaçtı" #NT!
- hold_court.7040.c: ""Seni dinlemeye hazırım, [frontier_leader.GetNameNoTooltip]."" #NT!
- hold_court.7040.c.win: "Vergi isyanının liderleriyle ustaca pazarlık ediyor, adaletinizi ve sükûnetinizi gösteriyorsunuz" #NT!
- hold_court.7040.c.win.title: "Vergi İsyanı Liderleri Yatıştırıldı" #NT!
- hold_court.7040.c.lose: "Bu vergi isyanının liderleri ikna olmadılar ve müzakere etmeyi reddediyorlar" #NT!
- hold_court.7040.c.lose.title: "Vergi İsyanı Liderleri İkna Olmadı" #NT!
- hold_court.7040.d: ""Bana öyle geliyor ki bazı tüzükleri yanlış yorumluyorsunuz."" #NT!
- hold_court.7040.d.win: "Bu vergi isyanının liderlerinin eski bir yasayı yanlış yorumladıklarını ve bu nedenle şikayetlerinin yersiz olduğunu başarıyla gösteriyorsunuz" #NT!
- hold_court.7040.d.win.title: "Vergi İsyanı Azaldı" #NT!
- hold_court.7040.d.lose: "Vergi isyanının önderleri sizin kitaplarınıza ve bilgilerinize aldanmıyorlar." #NT!
- hold_court.7040.d.lose.title: "Vergi İsyanı Devam Ediyor" #NT!
- hold_court.7040.e: "İstediklerini verin, bana ne?" #NT!
- # Former soldier has lost his mind and challenges you to a duel, hold_court.7050  #NT!
- hold_court.7050.title: "Savaşın Sonuçları" #NT!
- hold_court.7050.desc: "Mahkememin arkasından bir kargaşa çıkıyor. Herhangi biri [lunatic_soldier.GetHerHim]'ı kapmadan önce, bir [lunatic_soldier.GetWomanMan] tahtınıza doğru koşuyor, önünüzde duruyor ama hiçbir saygı göstermiyor. [lunatic_soldier.GetHerHis]'nin gözlerine bir bakış bilmem gereken her şeyi söylüyor - bu [lunatic_soldier.GetWomanMan] akıl sağlığı yerinde değil.\n\n"Canavar! Bizi ölüme gönderdin! Neden cezasız kalıyorsun?"\n\nBu [lunatic_soldier.GetWomanMan]'in sayıklamalarından, [lunatic_soldier.GetSheHe]'in bir şekilde savaşlarımdan birine karıştığını anladım, muhtemelen [lunatic_soldier.GetSheHe]'in bu kadar sıkıntılı olmasının sebebi budur. Bu kayıp yaratıkla ne yapılacak?" #NT!
-  #AGOT Modified  #NT!
- #hold_court.7050.a: "Saray Hekimi [court_physician.GetNameNoTooltip]'dan onlarla ilgilenmesini isteyin." #NT!
- hold_court.7050.a: "[court_physician.GetNameNoTooltip]'dan onlara bakmasını isteyin." #NT!
- hold_court.7050.b: "[lunatic_soldier.GetHerHim]'a [lunatic_soldier.GetSheHe]'in istediği ölümü ver." #NT!
- hold_court.7050.b.tt: "Hemen [lunatic_soldier.GetName]\n@warning_icon ile [single_combat_fight|E]'a girersiniz! #X Bu risklidir ve kaybederseniz ölümünüze yol açacaktır#!" #NT!
- hold_court.7050.b.victory: "Düelloyu sen kazandın" #NT!
- hold_court.7050.b.defeat: "Düelloyu kaybedersin" #NT!
- hold_court_7050_victory: "Çatışmada [sc_loser.GetFirstNameNoTooltip]'ı yendin." #NT!
- hold_court.7050.c: "[lunatic_soldier.GetHerHim] yürütüldü." #NT!
- hold_court.7050.d: "[lunatic_soldier.GetHerHim]'ı dışarı atın." #NT!
- hold_court.7052.title: "Biçicinin Vadesi" #NT!
- hold_court.7052.desc: "Benim [ROOT.Char.Custom2('RelationToMe', killed_pc)], [killed_pc.GetName]'im, [lunatic_soldier.GetName] ile saray salonunda yapılan bir düelloda öldürüldü! Trajik bir şekilde, [killed_pc.GetFirstName]'ün katili, [lunatic_soldier.GetHerHis] eyleminin sonuçlarını fark etti veya belki de [lunatic_soldier.GetHerHis]'ün akıl ve ruhunun hastalığına yenik düştü ve [killed_pc.GetName]'den çok fazla hayatta kalamadı.\n\n Kimse onları durduramadan, [lunatic_soldier.GetName], [lunatic_soldier.GetHerHis]'ü ele geçirdi. bıçağını alıp kendi kalplerine sapladılar. Son [ROOT.Char.Custom2('RelationToMe', killed_pc)] tahtımda oturup olayın gerçekleştiği odayı izlerken, böyle bir felaketi getiren kaderin değişimlerini ve topraklarıma ve halkıma zarar vermeye devam eden savaşın gizli maliyetini merak ediyorum." #NT!
- hold_court.7052.a: "Trajik, anlamsız ölüm." #NT!
- hold_court.7054.sc_invalid: "[lunatic_soldier.GetName] ile olan karşılaşmanız geçersiz sayıldı." #NT!
- # Cinderella  #NT!
- hold_court.7060.title: "Kim bu?" #NT!
-  #AGOT Modified  #NT!
- # hold_court.7060.desc: "[ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] boyunca, [ROOT.Char.Custom('GetReverseWifeHusband')]'i kesinlikle yanıma almam gerektiği ve bu nedenle tek suçları ebeveynlerini memnun etmek olan vasallarımın çocuklarının tekliflerine katlanmak zorunda olduğum biliniyor. Bu tür bir dilekçe şimdi dikkatimi çekiyor, çünkü [vassal.GetName] önüme [vassal.GetHerHis] [vassal_spouse.Custom('GetDaughterSon')]'ü sunuyor. [vassal_spouse.GetName] açıkça [vassal_spouse.Custom('GetNotableCharacteristic')] olmasına rağmen, gözlerimin karşı konulmaz bir şekilde avlunun arkasındaki bilinmeyen bir [cinderella.GetWomanMan]'ye çekildiğini görüyorum, güzelliği öyle ki onları [cinderella.Custom('GetBeautifulMetaphor')] ile karıştırabilirim. [vassal.GetTitledFirstName]'dan gelen bir uyarı beni hayal dünyamdan çıkarıyor — [ROOT.Char.Custom('GetReverseWifeHusband')]0, [vassal_spouse.Custom('GetDaughterSon')]'ünün teklifine bir yanıt bekliyor." #NT!
- hold_court.7060.desc: "[ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] boyunca, [ROOT.Char.Custom('GetReverseWifeHusband')]'i kesinlikle yanımda yönetmem gerektiği ve bu nedenle tek suçları ebeveynlerini memnun etmek olan vasallarımın çocuklarının tekliflerine katlanmak zorunda olduğum biliniyor. Böyle bir dilekçe şimdi dikkatimi çekiyor, çünkü [vassal.GetName] önüme [vassal.GetHerHis] [vassal_spouse.Custom('GetDaughterSon')]'ü sunuyor. [vassal_spouse.GetName] açıkça [vassal_spouse.Custom('GetNotableCharacteristic')] olmasına rağmen, gözlerimin karşı konulmaz bir şekilde avlunun arkasındaki bilinmeyen [cinderella.GetWomanMan]'ye çekildiğini görüyorum, güzelliği öyle ki onları [cinderella.Custom('GetBeautifulMetaphor')] ile karıştırabilirim. [vassal.GetTitledFirstName]'dan gelen bir uyarı beni hayal dünyamdan çıkarıyor — [ROOT.Char.Custom('GetReverseWifeHusband')]0, [vassal.GetHerHis] [vassal_spouse.Custom('GetDaughterSon')]'ün teklifine bir yanıt bekliyor." #NT!
- hold_court.7060.a: ""[vassal_spouse.Custom('GetNotableCharacteristic')] [vassal_spouse.Custom('GetDaughterSon')]'iniz bir süre kalabilir, [vassal.GetTitledFirstName]."" #NT!
- hold_court.7060.a.tt: "#X Devam eden herhangi bir [personal_scheme|E]'iniz, kur yapmaya başladığınızda terk edilecektir [vassal_spouse.GetName]#!" #NT!
- hold_court.7060.b: ""Onun kim olduğunu bilmeliyim!"" #NT!
- hold_court.7060.b.tt: "[vassal_spouse.GetName]'dan gelen teklifi görmezden gelip bilinmeyeni [cinderella.GetWomanMan] ararsınız. #X Tutkunuz o kadar güçlüdür ki başka hiçbir şey düşünemez hale gelirsiniz ve bu da devam eden tüm [schemes|E]'lerin terk edilmesine neden olur.#!" #NT!
- hold_court.7060.c: ""Teklifinizi kabul ediyorum, [vassal_spouse.Custom('GetNotableCharacteristic')] [vassal_spouse.GetLadyLord]'im."" #NT!
- hold_court.7060.c.tt: "Bilinmeyen [cinderella.GetWomanMan]'ı unutun ve [vassal_spouse.GetName] ile iyi bir eşleşme yapın." #NT!
- hold_court.7060.d: ""Bu oyunculuk beni deli ediyor, defol!"" #NT!
- # Tithe Barn suffers a theft, hold_court.7070  #NT!
- hold_court.7070.title: "Sıkıntının Ondalıklarında" #NT!
- hold_court.7070.desc: "Bir sonraki dilekçe sahibi, iki gardiyanla sarayıma gelen ve aralarında bir [hapless_thief.GetWomanMan] sürükleyen [irritated_bishop.GetName]. [irritated_bishop.GetTitledFirstNameNoTooltip] bana, tutuklunun [irritated_bishop.GetPrimaryTitle.GetName]'teki ondalık ambarlarından birinden çalmak için yaptığı başarısız bir girişimden bahsediyor.\n\n "Normalde, bu mesele yerel olarak çözülürdü [ROOT.Char.Custom2('RelationToMeAddress', irritated_bishop)], ancak bu hırsız [hapless_thief.GetHerHis] doğrudan size başvurma hakkı konusunda ısrar etti."\n\nTutukluya doğru bakıyorum ve [hapless_thief.GetHerHim]'nın devam etmesi için işaret ediyorum. "Yanlış yaptığımı biliyorum [ROOT.Char.GetLadyLord], ancak açlıktan ölüyoruz ve [irritated_bishop.GetTitledFirstNameNoTooltip] bizden çok fazla şey alıyor!" #NT!
- hold_court.7070.a: ""Hırsızlık yanlıştır, ama gasp da yanlıştır."" #NT!
- hold_court.7070.a.tt: "Köylülüğün yanında ol ve [hapless_thief.GetFirstNameNoTooltip]'ı bırak." #NT!
-  #AGOT Modified  #NT!
- #hold_court.7070.b: ""Kilise zayıflatılamaz!"" #NT! #NT
- hold_court.7070.b: ""Kilise zayıflatılamaz!"" #NT!
- hold_court.7070.b.tt: "[irritated_bishop.GetTitledFirstNameNoTooltip]'ın tarafını tutun ve hırsızı cezalandırın." #NT!
-  #AGOT Modified  #NT!
- #hold_court.7070.c: ""Kilisenin yoksulları doyurması gerekmiyor mu?"" #NT! #NT
- hold_court.7070.c: ""Kilisenin yoksulları doyurması gerekmiyor mu?"" #NT!
- hold_court.7070.c.tt: "[tithe_province.GetNameNoTooltip]'daki ondalık ambarını köylülere teslim et." #NT!
- hold_court.7070.d: ""Hırsız hırsızdır, detaylar beni ilgilendirmiyor."" #NT!
-  #AGOT Modified  #NT!
- #hold_court.7070.e: ""Kilise şimdi benim halkımı mı vergilendiriyor?"" #NT! #NT
- hold_court.7070.e: ""Kilise şimdi benim halkımı mı vergilendiriyor?"" #NT!
- hold_court.7070.e.tt: "[irritated_bishop.GetSheHe] sizinle karı paylaşmaya razı olursa, sizin de [irritated_bishop.GetTitledFirstNameNoTooltip]'ın tarafını tutabileceğinizi öne sürün." #NT!
+### STRATEGYTURK'TEN PCOYUN TARAFINDAN ÇEVRİLMİŞTİR, AESCHYLI TARAFINDAN KONTROL EDİLMİŞTİR.
