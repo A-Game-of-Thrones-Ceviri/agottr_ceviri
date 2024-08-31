@@ -1,7 +1,7 @@
 ﻿l_english:
  feudal_government:0 "Feodal"
  feudal_government_adjective:0 "Feodal"
- feudal_government_realm:0 "Feodal Ülke"
+ feudal_government_realm:0 "Feodal Diyar"
  feudal_government_vassals_label:1 "Feodal [obligations|E] her vasalın [Concept( 'feudal_contract', 'Feodal Sözleşmesine' )|E] göre belirlenir."
  feudal_government_desc:1 "$game_concept_feudal_desc$\n\n#F Feodalizm 9. ila 15. yüzyıllar arasında Avrupa'da en yaygın yönetim biçimidir. Feodal sistem toprak sahibiyle orada yaşamak için hizmet ve işçilik sunanlar arasındaki ilişkiye dayanır. Bu sistemde toprak sahibi hükümdarlar vasallar atayarak onlara yönetme hakkı tanır, bunun karşılığında vasallar süzerenlerine [soldier|E] ve [tax|E] sağlarlar.#!"
  feudal_government_obligations:0 "[GetGovernment( 'feudal_government' ).GetName] [Concept( 'obligations', 'Yükümlülükleri' )|E]"
@@ -12,8 +12,8 @@
  feudal_obligation_high:3 "Yüksek $feudal_government_obligations$"
  feudal_obligation_high_short:0 "Yüksek"
  can_wage_wars:0 "Savaş Açabilirliği"
- wage_war_realm_law:0 "Ülke Yasasına Göre"
- wage_war_realm_law_short:0 "Ülke"
+ wage_war_realm_law:0 "Diyar Yasasına Göre"
+ wage_war_realm_law_short:0 "Diyar"
  wage_war_allowed_internal:0 "İçeriye Savaş Açabilir"
  wage_war_allowed_internal_short:0 "İç"
  wage_war_allowed_external:0 "Dışarıya Savaş Açabilir"
@@ -80,7 +80,7 @@
  succession_rights_default:0 "Varsayılan $succession_rights$"
  succession_rights_default_short:0 "Varsayılan"
  succession_rights_forced_partition:0 "Zoraki Bölünme"
- succession_rights_forced_partition_desc:0 "#emphasis #bold [vassal|E] Kısıtlamaları:#!#!\n[vassal|E] Bölünme harici [succession_law|E] sahibi olamaz.\n[vassal|E] [law|E] değiştirmek için #high %[EmptyScope.ScriptValue('succession_rights_contract_law_cost_tooltip')|0]#! daha fazla [prestige|E] öder.\n\n#flavor [vassal|E] [Concept( 'realm', 'Ülkesi' )|E] Bölünme Veraseti dışında hiçbir farklı veraset biçimine sahip olamaz. Bu idari engeller aynı zamanda [Concept( 'vassal', 'Vasalın' )|E] [law] değiştirme maliyetini #high %[EmptyScope.ScriptValue('succession_rights_contract_law_cost_tooltip')|0] pahalılaştırır.#!#!"
+ succession_rights_forced_partition_desc:0 "#emphasis #bold [vassal|E] Kısıtlamaları:#!#!\n[vassal|E] Bölünme harici [succession_law|E] sahibi olamaz.\n[vassal|E] [law|E] değiştirmek için #high %[EmptyScope.ScriptValue('succession_rights_contract_law_cost_tooltip')|0]#! daha fazla [prestige|E] öder.\n\n#flavor [vassal|E] [Concept( 'realm', 'Diyarı' )|E] Bölünme Veraseti dışında hiçbir farklı veraset biçimine sahip olamaz. Bu idari engeller aynı zamanda [Concept( 'vassal', 'Vasalın' )|E] [law] değiştirme maliyetini #high %[EmptyScope.ScriptValue('succession_rights_contract_law_cost_tooltip')|0] pahalılaştırır.#!#!"
  succession_rights_forced_partition_short:0 "Zoraki Bölünme"
  
  coinage_rights:0 "Para Basma Hakkı"
@@ -102,7 +102,7 @@
  council_rights_none_desc:0 "#flavor [vassal] [council] odaklı herhangi bir olağanüstü ayrıcalığa sahip değildir.#!"
  council_rights_none_short:0 "Yok"
  council_rights_guaranteed:0 "$council_rights$ Garantilenmiş"
- council_rights_guaranteed_desc:0 "#emphasis #bold [vassal|E] Ayrıcalığı:#!#!\n#high $force_onto_council$#! [Concept( 'interaction', 'Etkileşimi' )|E] kullanılabilir.\n\n#flavor [vassal] sahip olduğu özel [council] ayrıcalığı çerçevesinde [Concept( 'council', 'Konseyde' )|E] daimî bir makam sahibi olma beklentisindedir. Bu ayrıcalığı çok fazla [Concept( 'vassal', 'Vasala' )|E] tanımanız bir noktadan sonra [Concept( 'realm', 'Ülkedeki' )|E] [Concept( 'powerful_vassals', 'Önemli Vasalları' )|E] gücendirir.#!"
+ council_rights_guaranteed_desc:0 "#emphasis #bold [vassal|E] Ayrıcalığı:#!#!\n#high $force_onto_council$#! [Concept( 'interaction', 'Etkileşimi' )|E] kullanılabilir.\n\n#flavor [vassal] sahip olduğu özel [council] ayrıcalığı çerçevesinde [Concept( 'council', 'Konseyde' )|E] daimî bir makam sahibi olma beklentisindedir. Bu ayrıcalığı çok fazla [Concept( 'vassal', 'Vasala' )|E] tanımanız bir noktadan sonra [Concept( 'realm', 'Diyardaki' )|E] [Concept( 'powerful_vassals', 'Önemli Vasalları' )|E] gücendirir.#!"
  council_rights_guaranteed_short:0 "Garantilenmiş"
  
  title_revocation_rights:0 "Unvan Feshi"
@@ -276,7 +276,7 @@
 
  unity_send_bailiffs_decision: "Temsilciler Gönder"
  unity_send_bailiffs_decision_desc: "Onlara emirlerimi uygulayacak temsilciler göndererek hane üyelerimin benimle uyum içerisinde hareket etmelerini sağlayabilir, böylelikle ülke genelinde barışı güçlendirebilirim."
- unity_send_bailiffs_decision_tooltip: "Ülke genelinde kontrolü arttırmak adına hane üyelerinizle iş birliği yapın"
+ unity_send_bailiffs_decision_tooltip: "Diyar genelinde kontrolü arttırmak adına hane üyelerinizle iş birliği yapın"
  unity_send_bailiffs_decision_confirm: "Temsilciler gönder."
 
  unity_placate_vassals_decision: "Vasalları Yatıştır"
@@ -354,7 +354,7 @@
  unity_educate_youth_in_madrasas_decision.t_intro: "Gençleri"
  unity_educate_youth_in_madrasas_decision.t_madrasas: "Medreselerde Eğit"
  unity_educate_youth_in_madrasas_decision.t_houses_of_worship: "İbadethanelerde Eğit"
- unity_educate_youth_in_madrasas_decision_desc_intro: "Ülkenin barış döneminde yer alması"
+ unity_educate_youth_in_madrasas_decision_desc_intro: "Diyarın barış döneminde yer alması"
  unity_educate_youth_in_madrasas_decision_desc_outro: "[ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] sokaklarında başıboş dolaşmasına sebep oldu. Bunun yerine [ROOT.Char.GetFaith.HouseOfWorshipPlural] kurarak yeni nesile felsefe ve tıp eğitimi verdirebilirim."
  unity_educate_youth_in_madrasas_decision.tt_intro: "Tüm genç"
  unity_educate_youth_in_madrasas_decision.tt_outro: "[capital|E] sokaklarınızda başıboş gezmek yerine önümüzdeki 20 yıl boyunca [learning|E] [Concept( 'skills', 'Becerilerini' )|E] geliştirip, [GetTrait('lifestyle_physician').GetName(GetNullCharacter)] [Concept( 'experience', 'Tecrübesi' )|E] kazanabilir"
@@ -374,7 +374,7 @@
  default_tax_collector_flavor_desc: "Standart vergilendirme. Vergi mükellefleri mükellef olduklarından ne fazla vergi verirler ne de az."
 
  jizya_special_rights_tax_collector: "Cizye Statüsü"
- jizya_special_rights_tax_collector_desc: "#emphasis #bold [vassal|E] Ayrıcalıkları:#!#!\n[liege|E], [Concept( 'vassal', 'Vasaldan' )|E] [Concept( 'demand_conversion', 'din değiştirmesini' )|E] talep edemez\n[liege|E], [Concept( 'vassal', 'Vasalın' )|E] topraklarındaki [Concept( 'convert_county', 'kontluklarda din değiştiremez' )|E]\n[liege|E], unvan feshederken [Concept( 'tyranny', 'tiranlıktan' )|E] kaçınmak için [Concept( 'faith', 'mezhebi' )|E] gerekçe gösteremez\n\n#flavor [Concept( 'vassal', 'Vasalın' )|E] [Concept( 'titles', 'unvanları' )|E] üzerindeki sahipliği garantiye alınır; [liege|E], [Concept( 'revoke_title_reason', 'unvan fesih sebebine' )|E] sahip olsa bile unvanları feshedemez.\nVasal ayrıca korunan, özel bir statüdedir. Ülke onların kendi [Concept( 'faith', 'mezheplerine' )|E] inanma hakkını tanır.#!"
+ jizya_special_rights_tax_collector_desc: "#emphasis #bold [vassal|E] Ayrıcalıkları:#!#!\n[liege|E], [Concept( 'vassal', 'Vasaldan' )|E] [Concept( 'demand_conversion', 'din değiştirmesini' )|E] talep edemez\n[liege|E], [Concept( 'vassal', 'Vasalın' )|E] topraklarındaki [Concept( 'convert_county', 'kontluklarda din değiştiremez' )|E]\n[liege|E], unvan feshederken [Concept( 'tyranny', 'tiranlıktan' )|E] kaçınmak için [Concept( 'faith', 'mezhebi' )|E] gerekçe gösteremez\n\n#flavor [Concept( 'vassal', 'Vasalın' )|E] [Concept( 'titles', 'unvanları' )|E] üzerindeki sahipliği garantiye alınır; [liege|E], [Concept( 'revoke_title_reason', 'unvan fesih sebebine' )|E] sahip olsa bile unvanları feshedemez.\nVasal ayrıca korunan, özel bir statüdedir. Diyar onların kendi [Concept( 'faith', 'mezheplerine' )|E] inanma hakkını tanır.#!"
  jizya_special_rights_tax_collector_flavor_desc: "Cizye, dini azınlıklar olan #italic zimmiler#! için, inançlarını yaşama özgürlüğü karşısında ödedikleri özel bir vergi türüdür."
  unlock_jizya_contract_name: "[GetFaithDoctrine('tenet_tax_nonbelievers').GetBaseName] [core_tenet|E]"
 

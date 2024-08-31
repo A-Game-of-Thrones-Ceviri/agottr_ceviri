@@ -24,7 +24,7 @@
  legend_already_promoting_legend_tt: "[Legend.GetName] destanı zaten [promoting_legend|E] "
  legend_can_not_promote_tt: "En az birine ihtiyacınız var:#!\n@warning_icon! #X [legend.GetOwner.GetName] ile birlikte bir dil paylaşıyorsunuz#!\n@warning_icon! #X [legend.GetName] destanı sizin diyarınıza komşu bir bölgede mevcut#!\n@warning_icon! #X [legend.GetOwner.GetName] ve siz [Concept( 'lovers', 'Sevgilisiniz' )|E]#!\n@warning_icon! #X [legend.GetOwner.GetName] ve siz [Concept( 'friends', 'Arkadaşsınız' )|E]#!"
  legend_no_legend: "Hiçbir [legend|E] yaymıyorsunuz"
- CHARACTER_CANNOT_REACH_LEGEND: "@warning_icon! #X Destan [Concept( 'realm', 'Ülkenizde' )|E] değil ve şu anda destanın yayılma alanında da bulunmuyorsunuz#!"
+ CHARACTER_CANNOT_REACH_LEGEND: "@warning_icon! #X Destan [Concept( 'realm', 'Diyarınızda' )|E] değil ve şu anda destanın yayılma alanında da bulunmuyorsunuz#!"
 
  LEGEND_PROMOTER_MODIFIERS: "[legend_promoter|E] Etkileri"
 
@@ -83,7 +83,7 @@
  game_concept_legend_legitimizing_desc: "$game_concept_legend_type_desc$"
  game_concept_legend_library: "Destan Kütüphanesi"
  game_concept_legend_library_i: "@legend_icon!"
- game_concept_legend_library_desc: "Destan Kütüphanesinde [Concept( 'realm', 'Ülkenizde' )|E] yayılan tamamlanmış [legends|E] ile yarattığınız veya aktif bir şekilde yaydığınız destanlar yer alır.\nAynı zamanda destanın yayılma alanına seyahat düzenlediğiniz destanları da kütüphanenize ekleyebilirsiniz.\n\nDilerseniz kütüphaneden destanları kaldırabilirsiniz."
+ game_concept_legend_library_desc: "Destan Kütüphanesinde [Concept( 'realm', 'Diyarınızda' )|E] yayılan tamamlanmış [legends|E] ile yarattığınız veya aktif bir şekilde yaydığınız destanlar yer alır.\nAynı zamanda destanın yayılma alanına seyahat düzenlediğiniz destanları da kütüphanenize ekleyebilirsiniz.\n\nDilerseniz kütüphaneden destanları kaldırabilirsiniz."
 
  game_concept_ancestral_claim: "Ata Hakkı"
  game_concept_ancestral_claim_desc: "Ata Hakkı [casus_belli|E], Meşruluk [Concept( 'legend', 'Destanı' )|E] üzerinden kazanılmış bir hak iddiasına sahip olduğunuz bir unvandaki tüm toprakları ilhak etmenizi sağlar."
@@ -141,7 +141,7 @@
  legend_sceafa: "Nuh'un Torunu Sceafa"
  legend_sceafa_desc: "Antik Lombard kralı Sceafa çocukken denizden sürünerek çıktı ve İngiltere'yi yönetmeye devam etti. Onun Nuh'un torunu olduğunu biliyoruz ve ilahi kanımızı ondan alıyoruz."
  legend_new_troy_london: "Yeni Truva"
- legend_new_troy_london_desc: "Truva'dan sürgün edilen Brutus, Diana tarafından Albion'a yönlendirildi. Ülkeyi işgal eden büyük devleri yendikten sonra, şu anda Londra olarak bildiğimiz Yeni Truva'yı kurdu."
+ legend_new_troy_london_desc: "Truva'dan sürgün edilen Brutus, Diana tarafından Albion'a yönlendirildi. Diyarı işgal eden büyük devleri yendikten sonra, şu anda Londra olarak bildiğimiz Yeni Truva'yı kurdu."
  legend_corineus: "Corineus'un Baladı"
  legend_corineus_desc: "Antik Truva savaşçısı Corineus, Cornwall'un ilk kurucusuydu. Britanya'ya gelerek bölgeyi işgal eden devleri öldürmüş ve buraya kendi adını vermiştir."
  legend_scota: "Scota'nın Oğulları"
@@ -325,7 +325,7 @@
  #Legend Chapters
  legend_chapter_opening_generic: "[ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip] destanı, başarılarının benzersizliği yönünden dünyanın kendisi kadar büyüktür."
  legend_chapter_extra_deed_memory: "[ROOT.Legend.GetProtagonist.GetTitledFirstNameNoTooltip], yaptıklarıyla yetinmedi. Büyük bir cesaretle [ROOT.Legend.MakeScope.Var('extra_deed_memory').CharacterMemory.GetThirdPerspectiveDescription]."
- legend_chapter_motivation_generic: "Ülkenin dört bir yanına yayılan salgının haberini aldığında [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] zorlu bir yolculuğa çıktı."
+ legend_chapter_motivation_generic: "Diyarın dört bir yanına yayılan salgının haberini aldığında [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] zorlu bir yolculuğa çıktı."
  legend_chapter_motivation_evil: "Onu bu maceraya zorlayan şey insanların çaresiz yakarışları veya ülkenin salgına esir olması değil, kendi karanlık kalbiydi."
  legend_chapter_motivation_peasant: "Çaresiz bir köylü gözyaşları içerisinde kapısına dayandığında, dindar [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] yardım çığlıklarını yanıtsız bırakamayacağını biliyordu."
  legend_chapter_motivation_spouse: "Bir gün eşi dehşete düşürücü söylentilerle yanına geldiğinde, [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] sonsuz aşklarını onurlandıracak bir yolculuğa çıktı."
@@ -450,13 +450,13 @@
  legend_chronicle_war_won_chronicle: "[title.GetNameNoTooltip] Topraklarının Fethi"
  legend_chronicle_war_won_chronicle_desc: "[winner.GetTitledFirstName] daha önceleri [loser.GetFirstName] tarafından yönetilen [title.GetName] topraklarını meşru bir şekilde fethetti."
 
- legend_chronicle_new_title: "[title.GetNameTooltip] Ülkesinin Kuruluşu"
+ legend_chronicle_new_title: "[title.GetNameTooltip] Diyarının Kuruluşu"
  legend_chronicle_new_title_desc: "İradesi, gücü ve kurnazlığıyla [founder.GetName] [title.GetName] ülkesini kurdu!"
 
  legend_chronicle_great_deed_faith: "[new_faith.GetNameNoTooltip|U] ve Onun Ruhani Zaferi"
  legend_chronicle_great_deed_faith_desc: "[new_faith.HighGodName] yolunda hareket eden [founder.GetName], önderlik ettiği [new_faith.GetAdherentNamePlural] ile [antagonist.GetName] önderliğindeki [old_faith.GetAdherentName] karşısında büyük bir zafer aldı."
 
- legend_chronicle_great_deed_title: "[title.GetNameNoTooltip|U] Ülkesindeki Başarılar"
+ legend_chronicle_great_deed_title: "[title.GetNameNoTooltip|U] Diyarındaki Başarılar"
  legend_chronicle_great_deed_title_desc: "Tüm tarih boyunca ve [title.GetName] ülkesinin tüm hükümdarları boyunca hiç kimse [founder.GetName] kadar büyük işler başarmamıştır."
 
  legend_chronicle_great_deed_region: "[legend_region.GetNameNoTooltip|U] Topraklarının Gerçek Kahramanı"

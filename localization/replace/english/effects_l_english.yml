@@ -982,11 +982,11 @@
  CHANGE_PRISON_TYPE:0 "[CHARACTER.GetShortUIName|U] $TYPE|V$ hapsine taşındı" #Ayro
 
  I_GAINED_TYRANNY_EFFECT:2 "@warning_icon! #X Bu bir [tyranny|E] eylemidir ve vasallarınızın size karşı $VALUE|-0$ [opinion|E] kaybetmelerine sebep oldu#!" #Ayro
- I_LOST_TYRANNY_EFFECT:2 "#P Düşürülmüş [tyranny|E]: Ülkenizdeki herkes size karşı [opinion|E] $VALUE|+0$ kazandı#!" #Ayro
+ I_LOST_TYRANNY_EFFECT:2 "#P Düşürülmüş [tyranny|E]: Diyarınızdaki herkes size karşı [opinion|E] $VALUE|+0$ kazandı#!" #Ayro
  THEY_GAINED_TYRANNY_EFFECT:1 "@warning_icon! #X Bu bir [tyranny|E] eylemidir ve [CHARACTER.GetShortUINameNotMeNoTooltip] adlı karakterin vasallarının ona karşı $VALUE|-0$ [opinion|E] kaybetmelerine sebep oldu#!" #Ayro
  THEY_LOST_TYRANNY_EFFECT:1 "#P Düşürülmüş [tyranny|E]: [CHARACTER.GetShortUINameNotMeNoTooltip] adlı karakterin ülkesindeki herkes ona karşı $VALUE|V0$ [opinion|E] kazandı#!" #Ayro
  GAINED_TYRANNY_EFFECT:1 "@warning_icon! #X Bu bir [tyranny|E] eylemidir ve vasalların $VALUE|-0$ [opinion|E] kaybetmelerine sebep oldu#!" #Ayro
- LOST_TYRANNY_EFFECT:1 "#P Düşürülmüş [tyranny|E]: Ülkedeki herkes $VALUE|V0$ [opinion|E] kazandı#!" #Ayro
+ LOST_TYRANNY_EFFECT:1 "#P Düşürülmüş [tyranny|E]: Diyardaki herkes $VALUE|V0$ [opinion|E] kazandı#!" #Ayro
  I_GAIN_TYRANNY_EFFECT:2 "@warning_icon! #X Bu bir [tyranny|E] eylemidir ve vasallarınızın size karşı $VALUE|-0$ [opinion|E] kaybetmelerine sebep olacak#!" #Ayro
  I_LOSE_TYRANNY_EFFECT:2 "#P [tyranny|E] Düşüşü: [CHARACTER.GetShortUINameNotMeNoTooltip] adlı karakterin ülkesindeki herkes size karşı $VALUE|+0$ [opinion|E] kazanacak#!" #Ayro
  THEY_GAIN_TYRANNY_EFFECT:1 "@warning_icon! #X Bu bir [tyranny|E] eylemidir ve [CHARACTER.GetShortUINameNotMeNoTooltip] adlı karakterin vasallarının ona karşı $VALUE|-0$ [opinion|E] kaybetmelerine sebep olacak#!" #Ayro
@@ -997,9 +997,9 @@
  CREATE_CHARACTER_EFFECT:0 "Yeni bir karakter oluştur"
  CREATE_NAMED_CHARACTER_EFFECT:1 "$NAME$ adında yeni bir karakter oluştur"
 
- BANISH_EFFECT:2 "Ülkeden [banished|E]"
- BANISH_EFFECT_FIRST:2 "Ülkeden [Concept( 'banished', 'Sürgün' )|E] edildiniz"
- BANISH_EFFECT_THIRD:1 "[CHARACTER.GetShortUIName|U] Ülkeden [banished|E]"
+ BANISH_EFFECT:2 "Diyardan [banished|E]"
+ BANISH_EFFECT_FIRST:2 "Diyardan [Concept( 'banished', 'Sürgün' )|E] edildiniz"
+ BANISH_EFFECT_THIRD:1 "[CHARACTER.GetShortUIName|U] Diyardan [banished|E]"
  DEPOSE_EFFECT:1 "[Concept( 'deposed', 'Tahttan indirilecek' )|E]"
  DEPOSE_EFFECT_FIRST:1 "[Concept( 'deposed', 'Tahttan İndirildiniz' )|E]"
  DEPOSE_EFFECT_THIRD:0 "[CHARACTER.GetShortUIName|U] [Concept( 'deposed', 'Tahttan İndirildi' )|E]"
@@ -1471,9 +1471,9 @@
 
  ADD_DOCTRINE_DESC:0 "[FAITH.GetName] mezhebine #T $DOCTRINE$#! ilkesini ekle"
  REMOVE_DOCTRINE_DESC:0 "[FAITH.GetName] mezhebinden #T $DOCTRINE$#! ilkesini kaldır"
- SET_REALM_CAPITAL_DESC:1 "[TARGET_TITLE.GetName|U] yerleşimi yeni Ülke Başkentleri olacak"
- SET_REALM_CAPITAL_FIRST_DESC:0 "[TARGET_TITLE.GetName|U] yerleşimi yeni Ülke Başkentiniz olacak"
- SET_REALM_CAPITAL_THIRD_DESC:0 "[TARGET_TITLE.GetName|U] yerleşimi [CHARACTER.GetName] adlı karakterin yeni Ülke Başkenti olacak"
+ SET_REALM_CAPITAL_DESC:1 "[TARGET_TITLE.GetName|U] yerleşimi yeni Diyar Başkentleri olacak"
+ SET_REALM_CAPITAL_FIRST_DESC:0 "[TARGET_TITLE.GetName|U] yerleşimi yeni Diyar Başkentiniz olacak"
+ SET_REALM_CAPITAL_THIRD_DESC:0 "[TARGET_TITLE.GetName|U] yerleşimi [CHARACTER.GetName] adlı karakterin yeni Diyar Başkenti olacak"
  ADD_INNOVATION_EFFECT:1 "[CULTURE.GetName] kültürü $INNOVATION_TYPE|V$ buluşunu keşfedecek"
  ADDED_INNOVATION_EFFECT:0 "[CULTURE.GetCollectiveNoun] kültürü $INNOVATION_TYPE|V$ buluşunu keşfetti"
  REMOVE_INNOVATION_EFFECT:0 "[CULTURE.GetName] kültürü $INNOVATION_TYPE|V$ buluşunu unuttu"
@@ -2435,10 +2435,10 @@
  I_DESIGNATED_DIARCH:0 "[TARGET_CHARACTER.GetName] adlı karakteri bir sonraki [CHARACTER.GetDiarchTitle] olarak belirledim"
  THEY_DESIGNATED_DIARCH:0 "[CHARACTER.GetName], [TARGET_CHARACTER.GetName] adlı karakteri bir sonraki [CHARACTER.GetDiarchTitle] olarak belirledi"
 
- I_START_DIARCHY:1 "Ülkemde [CHARACTER.GetDiarchyTypeName] başlayacak"
+ I_START_DIARCHY:1 "Diyarımda [CHARACTER.GetDiarchyTypeName] başlayacak"
  THEY_START_DIARCHY:1 "[CHARACTER.GetName] adlı karakterin ülkesinde [CHARACTER.GetDiarchyTypeName] başlayacak"
 
- I_STARTED_DIARCHY:1 "Ülkemde [CHARACTER.GetDiarchyTypeName] başladı"
+ I_STARTED_DIARCHY:1 "Diyarımda [CHARACTER.GetDiarchyTypeName] başladı"
  THEY_STARTED_DIARCHY:1 "[CHARACTER.GetName] adlı karakterin ülkesinde [CHARACTER.GetDiarchyTypeName] başladı"
 
  I_END_DIARCHY:0 "[CHARACTER.GetDiarchyTypeName] sona erecek"
