@@ -6,7 +6,7 @@
  struggle_btw_ending_hostility_decision_confirm: "Sur'un Ötesindeki Mücadeleyi Sonlandırın"
   # Triggers 
  struggle_btw_ending_hostility_decision_kingdom_tt: "Siz [hold|E] ve [completely_control|E] en az 2 [de_jure|E] [kingdoms|E] / [GetTitleByKey('e_beyond_the_wall').GetNameNoTier] ([SCOPE.ScriptValue('fp2_struggle_ending_kingdom_counter_value')|0]/[SCOPE.ScriptValue('fp2_struggle_hostility_kingdom_total_value')|0])"
- struggle_btw_ending_hostility_decision_united_wildling_tribe_tt: "Yabani kabileleri [primary_title|E] altında birleştirdin"
+ struggle_btw_ending_hostility_decision_united_wildling_tribe_tt: "Yabanıl kabileleri [primary_title|E] altında birleştirdin"
  struggle_btw_ending_hostility_decision_county_tt: "[capital|E] [kingdom|E] ([THIS.Char.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetNameNoTier])'ünüzün her [de_jure|E] [county|E]'i [THIS.Char.GetCulture.GetName] ve [THIS.Char.GetFaith.GetAdjective] ([SCOPE.ScriptValue('fp2_struggle_hostility_county_counter_value')|0]/[SCOPE.ScriptValue('fp2_struggle_hostility_county_total_value')|0]) olmalıdır"
  struggle_btw_ending_hostility_decision_county_light_tt: "[capital|E] [kingdom|E] ([THIS.Char.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetNameNoTier])'ünüzün [de_jure|E] [counties|E]'inin %75'i [THIS.Char.GetCulture.GetName] ve [THIS.Char.GetFaith.GetAdjective] ([SCOPE.ScriptValue('fp2_struggle_hostility_county_counter_value')|0]/[SCOPE.ScriptValue('fp2_struggle_hostility_county_total_light_value')|0]) olmalıdır"
  struggle_btw_ending_hostility_decision_region_tt: "Başka hiçbir [independent|E] [struggle_involved|E] [ruler|E], [GetGeographicalRegion('world_westeros_beyond_the_wall').GetName]'ün %[SCOPE.ScriptValue('fp2_struggle_hostility_region_percent_value')|0]'ünden fazlasını kontrol etmiyor"
@@ -22,9 +22,9 @@
  fp2_struggle_hostility_acceptance_tt: "Sur'un Ötesindeki Düşmanlık"
   # Modifiers 
  fp2_struggle_hostility_house_faith_modifier: "İnanç Düşmanlığı"
- fp2_struggle_hostility_house_faith_modifier_desc: "Bu ev inançları uğruna birçok Yabani kabilesini fethetmiştir."
+ fp2_struggle_hostility_house_faith_modifier_desc: "Bu ev inançları uğruna birçok Yabanıl kabilesini fethetmiştir."
  fp2_struggle_hostility_house_culture_modifier: "Kültürel Düşmanlık"
- fp2_struggle_hostility_house_culture_modifier_desc: "Bu hanedan, halkı adına birçok Yabani kabilesini fethetmiştir."
+ fp2_struggle_hostility_house_culture_modifier_desc: "Bu hanedan, halkı adına birçok Yabanıl kabilesini fethetmiştir."
  fp2_struggle_hostility_house_combined_modifier: "Hakimiyet Düşmanlığı"
  fp2_struggle_hostility_house_combined_modifier_desc: "Bu hane, Wildling kabilelerinin çoğunu inançları ve insanları adına fethetmiştir."
  fp2_struggle_hostility_faith_conversion_task_desc: "$fp2_struggle_hostility_house_faith_modifier$"
@@ -54,7 +54,7 @@
  fp2_struggle_compromise_house_reward_modifier: "Anlaşmak"
  fp2_struggle_compromise_house_reward_modifier_desc: "Bu ev, krallıklarını gerçek kuzey uğruna verilen mücadeleden kurtardı."
  fp2_struggle_compromise_defensive_reward_modifier: "Bölgesel Kale"
- fp2_struggle_compromise_defensive_reward_modifier_desc: "Bu kontluk, binlerce yıllık mücadeleden sağ kurtulan Yabani kabilelerinden birinin tarihi başkentidir."
+ fp2_struggle_compromise_defensive_reward_modifier_desc: "Bu kontluk, binlerce yıllık mücadeleden sağ kurtulan Yabanıl kabilelerinden birinin tarihi başkentidir."
   ##### Conciliation ###### 
  struggle_btw_ending_conciliation_decision: "yumuşama"
  struggle_btw_ending_conciliation_decision_desc: "Geçmiş binyılların yaraları kolayca iyileşmeyecek, ancak gerçek kuzeyin kalıcı bir barış bulması için denemeliyiz. Gerçekten, duvarın ötesindeki topraklar hepimize ait."
@@ -74,7 +74,7 @@
  fp2_struggle_can_create_empire_of_btw_tt: "[GetTitleByKey('e_beyond_the_wall').GetNameNoTier]'in [empire|E]'ının yaratılmasının kilidini açar"
  fp2_struggle_compromise_destroy_btw_tt: "[GetTitleByKey('e_beyond_the_wall').GetNameNoTier]'in [empire|E]'ı kalıcı olarak #negative_value yok edildi#!"
   
- CB_COST_FP2_STRUGGLE_HOSTILITY_CULTURE_DISCOUNT: "Yabani Düşmanlığı"
+ CB_COST_FP2_STRUGGLE_HOSTILITY_CULTURE_DISCOUNT: "Yabanıl Düşmanlığı"
  CB_COST_FP2_STRUGGLE_HOSTILITY_FAITH_DISCOUNT: "$CB_COST_FP2_STRUGGLE_HOSTILITY_CULTURE_DISCOUNT$"
  struggle_btw_ending_hostility_decision_correct_phase_tt: "Mevcut [struggle_phase|E], [struggle_phase_btw_hostility|E]'dir"
  struggle_btw_ending_compromise_decision_correct_phase_tt: "Mevcut [struggle_phase|E], [struggle_phase_btw_compromise|E]'dir"
