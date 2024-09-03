@@ -4,18 +4,18 @@
  hatch_dragon_egg_decision_desc: "Ejderha yumurtamı çatlatmayı deneyeceğim."
  hatch_dragon_egg_decision_tooltip: "Bunun yanlış gitmesinin imkanı yok."
  hatch_dragon_egg_decision_confirm: "Bu kötü bir fikir..."
- spend_time_with_dragon_egg_decision: "Dragon Egg ile Zaman Geçirin" #NT!
+ spend_time_with_dragon_egg_decision: "Ejderha Yumurtası ile Zaman Geçirin" #NT!
  spend_time_with_dragon_egg_decision_desc: "Bir ejderha yumurtasına sahip olmak yeterli değildir, kişinin altındaki ejderhayla güçlü bir bağ kurmasını sağlamak için onunla bağ kurması gerekir." #NT!
  spend_time_with_dragon_egg_decision_tooltip: "Ejderha yumurtanızla vakit geçirmeye karar verin" #NT!
  spend_time_with_dragon_egg_decision_confirm: "Yumurtanızla Zaman Geçirin" #NT!
   
  agot_appoint_dragonkeeper_head: "Baş Ejderha Bekçisini Ata" #NT!
- agot_appoint_dragonkeeper_head_desc: "Baş Ejderha Bekçisi pozisyonu boşaldı. [dragonpit|e]'ımızı korumak için yeni bir tane atamalıyız." #NT!
- agot_appoint_dragonkeeper_head_dragonmount_desc: "Baş Ejderha Bekçisi pozisyonu boşaldı. Ejderha Dağı'un korunması ve bakımı için yeni birini atamalıyız." #NT!
+ agot_appoint_dragonkeeper_head_desc: "Baş Ejderha Bekçisi pozisyonu boşaldı. [dragonpit|e]muzu korumak için yeni bir tane atamalıyız." #NT!
+ agot_appoint_dragonkeeper_head_dragonmount_desc: "dragonkeeper_vacant_event_desc:0 "Baş Ejderha Bakıcısı pozisyonu boşaldı. Ejderha Dağı'nın korunması ve bakımının devam etmesi için yeni bir tane atamalıyız." #NT!
  agot_appoint_dragonkeeper_head_tooltip: "Yeni bir Baş Ejderha Bekçisi atayın" #NT!
  agot_appoint_dragonkeeper_head_confirm: "Yeni bir Baş Ejderha Bekçisi atayın" #NT!
  tooltip_employ_dragonkeeper: "Halihazırda sarayınızda bir Baş Ejderha Bekçisi olmamalıdır" #NT!
- agot_appoint_dragonkeeper_head_effect_tooltip: "Ejderha çukuru olanak finansmanınıza bağlı olarak yeni bir Baş Ejderha Bekçisi üretilecektir." #NT!
+ agot_appoint_dragonkeeper_head_effect_tooltip: "Ejderha Çukuru tesisinize sağladığınız fona bağlı olarak yeni bir Baş Ejderha Bakıcısı oluşturulacak."
  agot_restore_dragonstone_dragonkeepers: "Ejderha Kayası Ejder Kourucularını Tekrar Atayın" #NT!
  agot_restore_dragonstone_dragonkeepers_desc: "Uzun yıllar süren hareketsizlikten sonra, [GetBuilding('agot_dragonmont_01').GetName]'ın korunması için bir kez daha [dragonkeepers|e] ihtiyaç duyuluyor." #NT!
  agot_restore_dragonmont_dragonkeepers_effect_tooltip: "[GetTitleByKey('c_dragonstone').GetNameNoTier]'nda yeni bir [GetCourtPositionType('head_dragonkeeper_court_position').GetName()] ve ejderha koruyucuları düzeni kurulacak." #NT!
@@ -35,15 +35,15 @@
  stop_terror_campaign_confirm: "Yıkımı durdurun" #NT!
   
   # Ride your Dragon 
- ride_dragon_decision: "[ROOT.Var('current_dragon').Char.GetFirstNameNoTooltip] ile Rüzgarı Hisset" #NT!
- ride_dragon_decision_desc: "[ROOT.Var('current_dragon').Char.GetFirstName] ve ben birlikte yolculuk yapmayalı çok uzun zaman oldu. Üzerimde esen rüzgarı ve açık gökyüzünün özgürlüğünü hissetmeyi özlüyorum." #NT!
- ride_dragon_decision_tooltip: "Ejderhana Bin" #NT!
- ride_dragon_decision_confirm: "Ejderhana Bin" #NT!
- ride_dragon_effect_tooltip: "Biraz [Concept( 'stress' 'stresten' )|E] arınacaksınız ve kim bilir belki ejderhanızla olan bağınız da artar." #NT!
+ ride_dragon_decision:0 "[ROOT.Var('current_dragon').Char.GetFirstNameNoTooltip]'a Bin"
+ ride_dragon_decision_desc:0 "[ROOT.Var('current_dragon').Char.GetFirstName] ile birlikte gezinmeyeli çok uzun zaman oldu. Rüzgarın üzerimden akıp gitmesini ve açık gökyüzünün özgürlüğünü hissetmeyi özlüyorum."
+ ride_dragon_decision_tooltip:0 "Ejderhanıza binin"
+ ride_dragon_decision_confirm:0 "Ejderhanıza binin"
+ ride_dragon_effect_tooltip:0 "Biraz [stress|E] kaybedeceksiniz ve ejderhanızla olan bağınızı güçlendirebilirsiniz."
   
   # Use / Don't use Dragon 
  use_dragon_decision: "Savaşa [ROOT.Var('current_dragon').Char.GetFirstNameNoTooltip] ile Katılın" #NT!
- use_dragon_decision_desc: "Bir ejderham var, kitle imha silahı. Askerlerimle çamurda yürümek zorunda değilim, savaş alanının üzerinde uçup düşmanlarımın üzerine ateş yağdırabilirim." #NT!
+ use_dragon_decision_desc: "Bir ejderham var, kitleri yok edecek kadar güçlü. Askerlerimle çamurda yürümek zorunda değilim, savaş alanının üzerinde uçup düşmanlarımın üzerine ateş yağdırabilirim." #NT!
  use_dragon_decision_tooltip: "Savaşta ejderhanızı tekrar kullanmayı seçebilirsiniz" #NT!
  use_dragon_decision_confirm: "Ejderhanı Kullan" #NT!
  use_dragon_decision_effect: "[dragon|E]'nız ordularınıza katılabilir ve onunla savaşabilirsiniz" #NT!
@@ -69,7 +69,7 @@
   
   #Dragonseeds 
  call_for_dragonseeds_decision: "Ejderha Tohumlarını Davet Et" #NT!
- call_for_dragonseeds_decision_desc: "Bir ejderhayı sahiplenme yeteneği bir isimde değil, kanda bulunur. Ejderhanın kanını taşıyanlar olabilir, ancak büyük bir hanenin ismini taşımayanlar olabilir. Eğer çağırırsam, bazıları cevap verebilir. Riskler büyük olurdu, ancak ödül, hepsi bağlılık yemini ettiği sürece hanemin güçlenmesi olabilir." #NT!
+ call_for_dragonseeds_decision_desc:0 "Bir ejderhayı sahiplenme yeteneği, kanda bulunur, bir isimde değil. Ejderha kanı taşıyan ama büyük bir Hanenin taşımayanlar olabilir. Çağırırsam, bazıları cevap verebilir. Riskler büyük olurdu, ancak hepsi sadakat yemini ettiği sürece ödül, hanemin güçlenmesi olabilir."
  call_for_dragonseeds_decision_unclaimed_dragons_tt: "Ejderha çukurlarınızda evcilleştirilebilen en az bir [owned_dragon|E] var" #NT!
  call_for_dragonseeds_decision_local_wild_dragons_tt: "En azından bir [wild_dragon|E]'ın [domain|E]'inizde evcilleştirilebilen bir ini var" #NT!
  call_for_dragonseeds_decision_confirm: "Müjdeciyi gönder" #NT!
