@@ -48,6 +48,10 @@
  agot_dragon_pits.1201.t: "Vahşi Bir Ejderhayı Tuzağa Düşürmek" #NT!
  agot_dragon_pits.1201.desc: "Şövalyelerim arasında [wild_dragon.GetName]'ı ele geçirme çabasına kim liderlik edecek?" #NT!
  agot_dragon_pits.1201.a: "Seni seçiyorum..." #NT!
+ agot_dragon_pits.1201.refusal.t:0 "Yakalama Talebi Reddedildi"
+ agot_dragon_pits.1201.refusal.desc:0 "[knight.GetName] #N reddetti#! [wild_dragon.GetName]'i yakalamayı"
+ agot_capture_dragon_cd_tt:0 "@warning_icon! #warning 1 yıl boyunca başka hiçbir ejderhayı yakalayamayacaksınız#!"
+ agot_capture_dragon_cd_gui_tt:0 "Başka bir ejderhayı [GetVarTimeRemaining( owner.MakeScope, 'capture_cd')] gün boyunca yakalayamazsınız"
   
  agot_dragon_pits.1301.t: "[baby_dragon.GetNameNoTooltip] Huzursuz Olur" #NT!
  agot_dragon_pits.1301.desc: "Üç yıl boyunca [baby_dragon.GetName]'ın büyümesini izledim, [baby_dragon.Custom('GetDragonSheHe')]'in [baby_dragon.Custom('GetDragonHerHis')] yumurtadan çıkmasından beri. Ama şimdi [baby_dragon.Custom('GetDragonSheHe')], [baby_dragon.Custom('GetDragonHerHis')] kaotik ve ateşli doğasının gerçekten yerleştiği bir yaşta.\n\nÜstatlar, üç yaşında ejderhaların çiftlik hayvanlarını, malları ve hatta insanları çalma ve yakma eğilimlerinin önemli ölçüde arttığını yazıyor.\n\n[baby_dragon.GetNameNoTooltip]'in iyi davranacağına güvenebilir miyim? Yoksa [baby_dragon.Custom('GetDragonSheHe')] birine zarar vermeden önce [baby_dragon.Custom('GetDragonHerHim')]'yı ejderha çukuruma mı izole etmeliyim?" #NT!
@@ -82,6 +86,34 @@
  agot_dragon_pits.2006.t: "Bir Ejderhanın Doğuşu" #NT!
  agot_dragon_pits.2006.desc: "[head_dragonkeeper.GetFirstName], heyecanla yanıma yaklaşıyor. "Benim [ROOT.Char.GetLadyLord]'im, aceleyle ejderha çukuruna gelmelisin; yumurtalardan biri çatladı! [dragon.Custom('GetDragonHerHim')]'ye ne isim verelim?"" #NT!
  agot_dragon_pits.2006.a: "Müthiş!" #NT!
+
+ agot_dragon_pits.3000.t:0 "Ejderha Çukuru Ziyareti: Bir İkilem"
+agot_dragon_pits.3000.desc:0 "[recipient.GetName], ejderhaların ailemiz için önemini kavrayabileceği bir yaşa geldi. [recipient.GetHerHim]'i ejderha türünün harikalarıyla tanıştırmak istiyorum, ancak kendimi bir karar vermek zorunda buluyorum. [dp_county_option.GetNameNoTierNoTooltip]'in geleneksel ejderha çukurunu ziyaret edebilir veya ejderhaların özgürce dolaştığı, hem daha güçlü hem de daha vahşi büyüdüğü [dragonstone.GetNameNoTierNoTooltip]'a gidebiliriz. Nereye gitmeliyiz?"
+agot_dragon_pits.3000.a:0 "[dragonstone.GetNameNoTierNoTooltip]"
+agot_dragon_pits.3000.b:0 "[dp_county_option.GetNameNoTierNoTooltip]"
+
+agot_dragon_pits.3002.t:0 "Ejderha Çukuru Ziyareti: Felaket!"
+agot_dragon_pits.3002.desc:0 "Ejderha çukurunun ağır, eski kapıları gıcırdıyor içeri girerken. Yanımda yürüyen, cesur görünmeye çalışan [recipient.GetName]'e bakıyorum ama adımlarındaki gergin titreşimleri hissediyorum. Yaklaştıkça, [dragon.GetName] başını havaya kaldırıyor, burun delikleri alevleniyor ve bir anda her şey korkunç bir şekilde ters gidiyor. Canavar korkunç bir öfkeyle kükreyerek [recipient.GetNameNoTooltip]'i sendeliyor, yüzüne korku işliyor. Umduğum bağ gözlerimin önünde paramparça oluyor, yerini kör bir korkuya bırakıyor. Ne yaptım ben? Onları mahvettim... bizi mahvettim."
+agot_dragon_pits.3002.a:0 "Elinden geldiğince [recipient.GetSheHe] bunu atlatacaktır..."
+
+agot_dragon_pits.3003.t:0 "Ejderha Çukuru Ziyareti: Hayal Kırıklığı"
+agot_dragon_pits.3003.desc:0 "[recipient.GetName] ile ejderha çukuruna inerken havadaki gerginliği hissediyorum, ağır taş basamaklar ayaklarımızın altında yankılanıyor. [recipient.GetHerHim]'e bakıyorum, bugünün [recipient.GetSheHe]'nin mirasını oluşturacağı gün olup olmayacağını merak ediyorum. Yaklaştıkça [dragon.GetName] yuvasında kıpırdanıyor, [dragon.Custom('GetDragonHerHis')] pulları loş ışığı erimiş altın gibi yakalıyor. Ama bir terslik var. [recipient.GetSheHe|U] aniden duruyor, gözleri çukurun etrafında geziniyor ama hiçbir hayret ya da korku belirtisi yok.\n\n[recipient.GetNameNoTooltip]'i ileri doğru zorluyorum ama adımları tökezliyor ve kaşlarını çatarak bana dönüyor. \"Üzgünüm, ama benim için bir ejderha varsa, burada olduğunu sanmıyorum.\""
+agot_dragon_pits.3003.a:0 "Ne yazık ki."
+
+agot_dragon_pits.3004.t:0 "Ejderha Çukuru Ziyareti: Başarı!"
+agot_dragon_pits.3004.desc:0 "Ejderha çukuruna adım attığımız anda bunun farklı olacağını biliyorum. Hava enerjiyle çatırdıyor ve [recipient.GetName] yanımda, beni gururla dolduran kararlı adımlarla yürüyor. O devasa alana adım attığımızda [recipient.GetSheHe|U] duruyor ve sessiz bir tefekkürle etrafına bakınıyor, seçeneklerini düşünüyor.\n\nSonunda, [recipient.GetHerHis] bakışları [dragon.GetName] yönüne sabitleniyor. Büyük canavar başını çevirdiğinde nefesim kesiliyor, [dragon.Custom('GetDragonHerHis')] gözleri [recipient.GetFirstNamePossessiveNoTooltip]'inkiyle buluşuyor. Yavaşça, ihtiyatla, [recipient.GetNameNoTooltip] titreyen bir elini uzatıyor ve ejderha burnunu indiriyor. Zaman durmuş gibi. Ejderha hafifçe homurdanıyor ve dokunuşu kabul ediyor. Kalbim coşkuyla doluyor. İşte bu. Bir bağın başlangıcı."
+agot_dragon_pits.3004.a:0 "Mükemmel bir eşleşme!"
+child_is_bonding_dragon_tt:0 "[recipient.GetNameNoTooltip], [dragon.GetNameNoTooltip] ile bağ kurmaya başladı"
+
+agot_dragon_pits.3005.t:0 "Ejderha Çukuru Ziyareti: Felaket!"
+agot_dragon_pits.3005.desc:0 "Çukur bugün daha karanlık, daha uğursuz hissettiriyor. Zorlukla yutkunuyorum, [recipient.GetName]'in üzerime çöken huzursuzluğu fark etmemesini umuyorum. [recipient.GetSheHe|U] gözlerinde kararlılıkla ileri doğru adım atıyor ama omuzlarındaki gerginliği görüyorum. [recipient.GetSheHe|U] elini [dragon.GetName]'e doğru uzatıyor ama bir şeyler fena halde ters gidiyor. Ejderha tıslıyor, gözlerini kısıyor ve bir anda, [dragon.Custom('GetDragonSheHe')] reddederek saldırıyor. [recipient.GetNameNoTooltip] sendeliyor, yüzü soluyor. Bağ kurulamayacak ve başarısızlığın acısını [recipient.GetHerHis] ruhuna kazınmış olarak görüyorum."
+agot_dragon_pits.3005.a:0 "Ne yaptım ben..."
+child_failed_to_tame_tt:0 "[recipient.GetNameNoTooltip], [dragon.GetNameNoTooltip]'i evcilleştirmeyi başaramadı"
+
+agot_dragon_pits.3006.t:0 "Ejderha Çukuru Ziyareti: Başarı!"
+agot_dragon_pits.3006.desc:0 "Ejderha çukuruna yaklaşırken hava gerginlikle dolu, ama bu büyüklüğü körükleyen bir gerginlik. [recipient.GetName] yanımda yürüyor, adımları kendinden emin, gözleri heyecanla parlıyor. Mağaramsı alana adım attığımızda bir umut dalgası hissediyorum ve [dragon.GetName] bizi izlemek için başını çeviriyor.\n\n[recipient.GetNameNoTooltip] derin bir nefes alıyor ve ona doğru yaklaşıyor, [dragon.GetNameNoTooltip] da hafif bir merakla [recipient.GetHerHim]'in yaklaşmasını izliyor. Yavaşça, sistematik bir şekilde, [recipient.GetSheHe] elini uzatıyor ve şaşkınlığıma uğrayarak ejderha başını eğiyor. Hiçbir tereddüt yok, hiçbir korku yok - sadece saygı var. Göğsümde bir sevinç dalgası yükseliyor. [recipient.GetNameNoTooltip] başardı. [recipient.GetSheHe|U] canavarı evcilleştirdi."
+agot_dragon_pits.3006.a:0 "Harika!"
+child_succeeded_taming_tt:0 "[recipient.GetNameNoTooltip], [dragon.GetNameNoTooltip]'i evcilleştirmeyi başardı"
   
  agot_dragon_pits.failed_tame_attempt.title: "Ejderha Çukuru'nda Başarısız Evcilleştirme Girişimi" #NT!
  agot_dragon_pits.failed_tame_attempt_tt: "[failure.GetFirstName], [dragon.GetFirstName]'i evcilleştiremedi!" #NT!
