@@ -1,541 +1,566 @@
 ﻿l_english:
- ############################## 
- ### Activity Localizations ### 
- ############################## 
-  # Base 
-activity_dragon_hatching: "Ejderha Yumurtası Ritüeli" #NT!
-activity_dragon_hatching_desc: "Ejderha yumurtanızı çatlatmanın zamanı geldi. Bu görkemli ana tanıklık etmek için bir tören düzenlenecek." #NT!
-activity_dragon_hatching_selection_tooltip: "Ejderha yumurtanızı çatlatmaya çalışın ve yeni bir çağın başlangıcını müjdeleyin.\n\nBeklenen ödüller:\n$agot_host_hatching_potential_reward$" #NT!
-agot_host_hatching_potential_reward: "$BULLET_WITH_TAB$Ejderha Yumurtanızı [artifact|E] kırabilir ve onu yok edebilir\n$BULLET_WITH_TAB$Başarılı olursa, yeni doğmuş bir [dragon|E] sarayınıza katılacak\n\n#n @warning_icon! Başarısızlık beklenmeyen sonuçlara yol açabilir#!" #NT!
-activity_dragon_hatching_predicted_cost: "Ejderha yumurtadan çıkarma işleminin kesin maliyeti, seçilen yumurtadan çıkarma stiline ve tören sırasında yaptığınız seçimlere bağlı olacaktır." #NT!
-activity_dragon_hatching_destination_selection: "#V Ejderha Yumurtası Çıkımı#! etkinliğini yalnızca [capital|E]'nizde, [dragonpit|E]'ünüzde veya #V özel bir konumda#! düzenleyebilirsiniz." #NT!
-activity_dragon_hatching_conclusion_desc: "[GetActivityType( 'activity_dragon_hatching' ).GetName] sona erdi" #NT!
-activity_dragon_hatching_guest_desc: "Katılımcılar" #NT!
-activity_dragon_hatching_guest_help_text: "Ejderha yumurtanızın çatlamasına kimi davet edeceğinizi seçin." #NT!
-TRAVEL_NAME_FOR_activity_dragon_hatching: "$TRAVEL_NAME_FOR_activity_tournament$" #NT!
-ceremony: "Tören Hazırlıkları" #NT!
-ceremony_desc: "Ateşler hazırlanıyor, bilgiler aktarılıyor ve gösteri için gerekli düzenlemeler yapılıyor. Yakında yeni bir ejderha gökyüzünde uçacak." #NT!
-hatching_attempt: "Yumurtadan Çıkma Girişimi" #NT!
-hatching_attempt_desc: "Ejderha yumurtanızı çatlatmaya çalışacaksınız." #NT!
-hatching_outcome: "Kuluçka Sonucu" #NT!
-hatching_outcome_desc: "Yumurtadan çıkarma girişiminizin sonucu ortaya çıkacaktır." #NT!
-# Base - no DLC 
-activity_dragon_hatching_no_dlc: "$activity_dragon_hatching$" #NT!
-activity_dragon_hatching_no_dlc_desc: "$activity_dragon_hatching_desc$" #NT!
-activity_dragon_hatching_no_dlc_selection_tooltip: "$activity_dragon_hatching_selection_tooltip$" #NT!
-activity_dragon_hatching_no_dlc_predicted_cost: "$activity_dragon_hatching_predicted_cost$" #NT!
-activity_dragon_hatching_no_dlc_destination_selection: "$activity_dragon_hatching_destination_selection$" #NT!
-activity_dragon_hatching_no_dlc_conclusion_desc: "$activity_dragon_hatching_conclusion_desc$" #NT!
-activity_dragon_hatching_no_dlc_guest_desc: "$activity_dragon_hatching_guest_desc$" #NT!
-activity_dragon_hatching_no_dlc_guest_help_text: "$activity_dragon_hatching_guest_help_text$" #NT!
-TRAVEL_NAME_FOR_activity_dragon_hatching_no_dlc: "$TRAVEL_NAME_FOR_activity_dragon_hatching$" #NT!
-# Options 
-hatching_type: "Kuluçka Tipi" #NT!
-hatching_type_knowledge: "Bilgi Kuluçkası" #NT!
-hatching_type_knowledge_desc: "Ejderha yumurtanızın çatlatılmasında size yardımcı olabilecek tüm üstatları, ejderha koruyucularını ve ejderha biliminin bilinen diğer alimlerini çağıracaksınız." #NT!
-hatching_type_esoteric: "Ezoterik Yumurtadan Çıkma" #NT!
-hatching_type_esoteric_desc: "Ejderha yumurtanızın çatlatılmasında size yardımcı olmaya istekli büyücüleri, simyacıları ve ezoterik bilginin bilinen diğer koruyucularını çağıracaksınız." #NT!
-agot_dragon_hatching_destination_selection: "Ejderhalar ve ejderha kültürü açısından bilinen önemi olan yerler, ejderha yumurtası çıkarmak için iyi adaylardır." #NT!
-hatching_sacrifice: "Kurban Etmek" #NT!
-hatching_sacrifice_animal: "Hayvan" #NT!
-hatching_sacrifice_animal_desc: "Bu yumurtadan çıkma için güç kaynağı olarak bir hayvanın hayatını kullanacaksınız. Kurban edilecek hayvan zamanı geldiğinde seçilecektir." #NT!
-hatching_sacrifice_blood: "Kan" #NT!
-hatching_sacrifice_blood_desc: "Bu yumurtadan çıkma için güç kaynağı olarak kanın gücünü kullanacaksınız. Zamanı geldiğinde kanın kaynağını seçebileceksiniz." #NT!
-hatching_sacrifice_life: "Hayat" #NT!
-hatching_sacrifice_life_desc: "Bu yumurtadan çıkmanın kaynağı olarak yaşam gücünü kullanacaksınız. Uygun zamanda kimin kurban edileceğini seçebileceksiniz." #NT!
-hatching_catalyst: "Katalizör" #NT!
-hatching_catalyst_minor: "Basit" #NT!
-hatching_catalyst_minor_desc: "Bu yumurtadan çıkışta katalizör olarak basit bir ısı kaynağı kullanacaksınız, hiçbir budama veya törene gerek kalmayacak." #NT!
-hatching_catalyst_medium: "Uygun" #NT!
-hatching_catalyst_medium_desc: "Uygun bir muhafaza ve yerleştirme ile, duruma uygun bir katalizörle yumurtadan çıkma törenini gerçekleştireceksiniz." #NT!
-hatching_catalyst_major: "Büyük" #NT!
-hatching_catalyst_major_desc: "Törene harcanan büyük miktardaki kaynak ve emekle, etkinliğe eşlik edecek görkemli bir alay eşliğinde, özel olarak yapılmış bir kap içerisinde yumurtayı ısıtacaksınız." #NT!
-hatching_catalyst_massive: "Cüsseli" #NT!
-hatching_catalyst_massive_desc: "Topladığınız büyük miktardaki ejderha bilgisi ile, yumurtanın ısıtılmasıyla çeşitli başarı yollarının hepsinin kapsandığından emin olabilirsiniz." #NT!
+##############################
+### Activity Localizations ###
+##############################
+ # Base
+activity_dragon_hatching:0 "Ejderha Yumurtası Ritüeli"
+activity_dragon_hatching_desc:0 "Ejderha yumurtanızı çatlatmanın zamanı geldi. Bu görkemli ana tanıklık etmek için bir tören düzenlenecek."
+activity_dragon_hatching_selection_tooltip:0 "Ejderha yumurtanızı çatlatmaya çalışın ve yeni bir çağın başlangıcını müjdeleyin.\n\nBeklenen ödüller:\n$agot_host_hatching_potential_reward$"
+agot_host_hatching_potential_reward: "$BULLET_WITH_TAB$Ejderha Yumurtanızı [artifact|E] kırabilir ve onu yok edebilir\n$BULLET_WITH_TAB$Başarılı olursa, yeni doğmuş bir [dragon|E] sarayınıza katılacak\n\n#n @warning_icon! Başarısızlık beklenmeyen sonuçlara yol açabilir#!"
+activity_dragon_hatching_predicted_cost:0 "Ejderha kuluçkalaştırmanızın kesin maliyeti, seçilen kuluçka stiline ve tören sırasındaki seçimlerinize bağlı olacaktır."
+activity_dragon_hatching_destination_selection:0 "Bir #V Ejderha Yumurtası Ritüeli#!'ni yalnızca [capital|E]'inizde, bir [dragonpit|E]'te veya bir #V özel konum#!'da düzenleyebilirsiniz."
+activity_dragon_hatching_conclusion_desc:0 "[GetActivityType( 'activity_dragon_hatching' ).GetName] sona erdi"
+activity_dragon_hatching_guest_desc:0 "Katılımcılar"
+activity_dragon_hatching_guest_help_text:0 "Ejderha yumurtanızın kuluçka sürecini izlemeye kimleri davet edeceğinizi seçin."
+TRAVEL_NAME_FOR_activity_dragon_hatching:0 "$TRAVEL_NAME_FOR_activity_tournament$"
+ceremony:0 "Tören Hazırlıkları"
+ceremony_desc:0 "Ateşler hazırlanıyor, bilgiler gözden geçiriliyor ve gösteri için gerekli düzenlemeler yapılıyor. Yakında yeni bir ejderha gökyüzünde süzülecek."
+hatching_attempt:0 "Kuluçka Denemesi"
+hatching_attempt_desc:0 "Ejderha yumurtanızı çatlatmaya çalışacaksınız."
+hatching_outcome:0 "Kuluçka Sonucu"
+hatching_outcome_desc:0 "Kuluçka denemenizin sonucu ortaya çıkacak."
+# Base - DLC yok
+activity_dragon_hatching_no_dlc:0 "$activity_dragon_hatching$"
+activity_dragon_hatching_no_dlc_desc:0 "$activity_dragon_hatching_desc$"
+activity_dragon_hatching_no_dlc_selection_tooltip:0 "$activity_dragon_hatching_selection_tooltip$"
+activity_dragon_hatching_no_dlc_predicted_cost:0 "$activity_dragon_hatching_predicted_cost$"
+activity_dragon_hatching_no_dlc_destination_selection:0 "$activity_dragon_hatching_destination_selection$"
+activity_dragon_hatching_no_dlc_conclusion_desc:0 "$activity_dragon_hatching_conclusion_desc$"
+activity_dragon_hatching_no_dlc_guest_desc:0 "$activity_dragon_hatching_guest_desc$"
+activity_dragon_hatching_no_dlc_guest_help_text:0 "$activity_dragon_hatching_guest_help_text$"
+TRAVEL_NAME_FOR_activity_dragon_hatching_no_dlc:0 "$TRAVEL_NAME_FOR_activity_dragon_hatching$"
+# Seçenekler
+hatching_type:0 "Kuluçka Türü"
+hatching_type_knowledge:0 "Bilgi Kuluçkalaştırma"
+hatching_type_knowledge_desc:0 "Ejderha yumurtanızın kuluçkalaştırılmasında size yardımcı olmaya istekli olan tüm üstatları, ejderha bakıcılarını ve ejderha bilgisi konusunda bilgili diğer akademisyenleri çağıracaksınız."
+hatching_type_esoteric:0 "Ezoterik Kuluçkalaştırma"
+hatching_type_esoteric_desc:0 "Ejderha yumurtanızın kuluçkalaştırılmasında size yardımcı olmaya istekli olan büyücüleri, simyacıları ve diğer ezoterik bilgi sahiplerini çağıracaksınız."
+agot_dragon_hatching_destination_selection:0 "Ejderhalar ve ejderha bilgisi için bilinen öneme sahip yerler, bir ejderha yumurtasını kuluçkalaştırmak için iyi adaylardır."
+hatching_sacrifice:0 "Kurban"
+hatching_sacrifice_animal:0 "Hayvan"
+hatching_sacrifice_animal_desc:0 "Bu kuluçka için bir hayvanın hayatını güç kaynağı olarak kullanacaksınız. Kurban edilecek hayvan zamanı geldiğinde seçilecektir."
+hatching_sacrifice_blood:0 "Kan"
+hatching_sacrifice_blood_desc:0 "Bu kuluçka için kanın gücünü kullanacaksınız. Zamanı geldiğinde kan kaynağını seçebileceksiniz."
+hatching_sacrifice_life:0 "Hayat"
+hatching_sacrifice_life_desc:0 "Bu kuluçka için yaşam gücünü kullanacaksınız. Uygun zamanda kimin kurban edileceğini seçebileceksiniz."
+hatching_catalyst:0 "Katalizör"
+hatching_catalyst_minor:0 "Basit"
+hatching_catalyst_minor_desc:0 "Bu kuluçka için, hiçbir süs veya tören gerektirmeden, basit bir ısı kaynağını katalizör olarak kullanacaksınız."
+hatching_catalyst_medium:0 "Uygun"
+hatching_catalyst_medium_desc:0 "Uygun bir barınma ve yerleştirme ihtişamıyla, kuluçka törenini duruma uygun bir katalizörle gerçekleştireceksiniz."
+hatching_catalyst_major:0 "Muhteşem"
+hatching_catalyst_major_desc:0 "Törene harcanan büyük miktarda kaynak ve çaba ile, yumurtayı özel olarak yapılmış bir barınakta ısıtacak ve etkinliğe eşlik edecek büyük bir alay düzenleyeceksiniz."
+hatching_catalyst_massive:0 "Devasa"
+hatching_catalyst_massive_desc:0 "Topladığınız büyük miktarda ejderha bilgisiyle, yumurtanın ısıtılmasında çeşitli başarı yollarının hepsinin kapsandığından emin olabilirsiniz."
+# Niyet
+hatch_dragon_intent:0 "Bir Ejderhayı Yumurtadan Çıkar"
+hatch_dragon_intent_desc:0 "Bu olayda tek bir ilginiz var: [dragon|E]'ın yumurtadan çıkması."
+witness_hatch_dragon_intent:0 "Bir Ejderhanın Kuluçka Sürecine Tanık Ol"
+witness_hatch_dragon_intent_desc:0 "Nesilde bir kez yaşanan bir olaya tanık olmak için buradasınız: [dragons|E]'ın dünyaya dönüşü."
 
-# Intent 
-hatch_dragon_intent: "Bir Ejderhayı Yumurtadan Çıkar" #NT!
-hatch_dragon_intent_desc: "Bu olayda tek bir ilginiz var: [dragon|E]'ın yumurtadan çıkması." #NT!
-witness_hatch_dragon_intent: "Bir Ejderhanın Yumurtadan Çıkışına Tanık Olun" #NT!
-witness_hatch_dragon_intent_desc: "Nesilde bir kez yaşanacak bir olaya tanıklık etmek için buradasınız: [dragons|E]'ın dünyaya dönüşü." #NT!
+# Değiştiriciler
+agot_hatching_prov_has_KL_dragonpit:0 "#P +++ $building_type_dragonpit_01$#!'a ([building|E]) sahip\n"
+agot_hatching_prov_has_dragonpit:0 "#P ++ Genel $building_type_dragonpit_01$#!'a ([building|E]) sahip\n"
+agot_hatching_prov_has_dragonmont:0 "#P +++ $building_type_dragonstone_01$#!'dır\n"
+agot_hatching_prov_is_realm_capital:0 "#P + Diyar başkentinizdir#!\n"
+agot_hatching_prov_is_summerhall:0 "#N -- $building_type_agot_summerhall_01$#!'a ([building|E]) sahip\n"
 
-# Modifiers 
-agot_hatching_prov_has_KL_dragonpit: "#P +++ $building_type_dragonpit_01$#! ([building|E])\n'ye sahip" #NT!
-agot_hatching_prov_has_dragonpit: "#P ++ Genel $building_type_dragonpit_01$#! ([building|E])\n" #NT!
-agot_hatching_prov_has_dragonmont: "#P +++ $building_type_dragonstone_01$#!\n'dir" #NT!
-agot_hatching_prov_is_realm_capital: "#P + Krallığınızın başkentidir#!\n" #NT!
-agot_hatching_prov_is_summerhall: "#N -- $building_type_agot_summerhall_01$#! ([building|E])\n'ye sahip" #NT!
+# Ekstralar
+agot_hatching_something_broke:0 "Bir şey törenin planlandığı gibi devam etmesini engelledi."
+agot_hatching_host_folded: "Yumurtayı kuluçkalaştırmamaya karar verdiniz."
+agot_hatching_host_folded_guest: "[host.GetName], yumurtayı kuluçkalaştırmamaya karar verdi."
+agot_hatching_success:0 "Ejderha yumurtanız çatladı!"
+agot_hatching_success_guest:0 "[host.GetName], [host.GetHerHis] ejderha yumurtasını başarıyla kuluçkalaştırdı!"
+agot_hatching_fail:0 "Ejderha yumurtanız çatlayamadı."
+agot_hatching_fail_guest:0 "[host.GetName], [host.GetHerHis] ejderha yumurtasını kuluçkalaştırmayı başaramadı."
+hatching_cannot_be_held:0 "Mevcut olaylar nedeniyle, bir kuluçka etkinliği 268 A.C. On İkinci Ay'ın 1'ine kadar düzenlenemez."
 
-# Extras 
-agot_hatching_something_broke: "Törenin planlandığı gibi gerçekleşmesini engelleyen bir durum vardı." #NT!
-agot_hatching_host_folded: "Yumurtayı çatlatmamaya karar verdiniz." #NT!
-agot_hatching_host_folded_guest: "[host.GetName] yumurtadan yavru çıkmamasına karar verdi." #NT!
-agot_hatching_success: "Ejderha yumurtanız çatladı!" #NT!
-agot_hatching_success_guest: "[host.GetName] başarıyla [host.GetHerHis] ejderha yumurtasından çıktı!" #NT!
-agot_hatching_fail: "Ejderha yumurtanız çatlamadı." #NT!
-agot_hatching_fail_guest: "[host.GetName], [host.GetHerHis] ejderha yumurtasını çatlatmayı başaramadı." #NT!
+# Olaylar
+agot_dragon_hatching.0001.t:0 "Hazırlıklar"
+agot_dragon_hatching.0001.desc:0 "Ejderha yumurtamı kuluçkalaştırma arayışımda bana yardımcı olmaları için diyarın en büyük akademik beyinlerini [province.GetName]'e davet etmek için mektuplar gönderdim. Üstatlardan ve ejderha bilgisi konusunda uzman kişilerden yanıtlar almaya başladım bile.\n\nBirçoğu şüpheci ancak bir ejderha yumurtasının çatladığını görmek için meraklı, diğerleri ise dünyaya bir ejderha getirmek için bilgilerini sınamak için istekli. Böylesine büyük bir girişime yardım etme onuruna nail olanlar şimdiden [province.GetNameNoTooltip]'a doğru yola çıktılar."
+agot_dragon_hatching.0001.opt.a:0 "Bolca bilgi ve biraz şansla, yine de başarabiliriz."
 
-# Events 
-agot_dragon_hatching.0001.t: "Hazırlıklar" #NT!
-agot_dragon_hatching.0001.desc: "Diyarın en büyük akademik beyinlerine, ejderha yumurtamı çatlatma çabalarımda bana yardımcı olmaları için [province.GetName]'a mektuplar gönderdim. Zaten üstatlardan ve ejderha bilgisinde iyi eğitimli olanlardan yanıtlar alıyorum.\n\nBirçoğu şüpheci olsa da, bir ejderha yumurtasının çatladığını görme konusunda samimi bir merak içindeler. Diğerleri ise dünyaya bir ejderha getirmek için bilgilerini sınamaya hevesli. Böylesine büyük bir girişimde yardımcı olmaktan onur duyanlar şimdiden [province.GetNameNoTooltip]'e doğru yola çıktılar." #NT!
-agot_dragon_hatching.0001.opt.a: "Bolca bilgi ve biraz şansla belki de başarabiliriz." #NT!
+agot_dragon_hatching.0002.t:0 "Hazırlıklar"
+agot_dragon_hatching.0002.desc:0 "Dünyanın ünlü büyücülük ve sihir beyinlerini [province.GetName]'e gelmeleri ve sanatlarını davamıza katkı sağlamaları için çağrıda bulundum. Qarth'taki büyücülerden ve Qohor'daki maegi'lerden gelen yanıtları, dünyanın daha egzotik köşelerinden gelen diğer isimlerle birlikte inceliyor ve böylesine iddialı büyülere yardımcı olmaktan heyecan duyan en saygın ve bilgili kişileri not ediyorum.\n\nEzoterik konuklarım yoldayken, benim de yola çıkma zamanım geldi."
+agot_dragon_hatching.0002.opt.a:0 "Alışılmadık hedeflere ulaşmak için alışılmadık yöntemlere bakmak gerekir."
 
-agot_dragon_hatching.0002.t: "Hazırlıklar" #NT!
-agot_dragon_hatching.0002.desc: "Dünyadaki büyücülük ve sihir konusunda ünlü beyinlere, davam için sanatlarını ödünç vermeleri için [province.GetName]'a gelmeleri çağrısında bulundum. Qarth'taki büyücülerden ve Qohor'dan gelen maegilerden gelen yanıtları değerlendiriyorum. Bu isimler arasında dünyanın daha egzotik köşelerinden gelen, bu tür iddialı büyülerde yardımcı olmaktan heyecan duyan en itibarlı ve bilgili olanları not ediyorum.\n\nEzoterik misafirlerim yola çıktıkça, benim de yola çıkmamın vakti geldi." #NT!
-agot_dragon_hatching.0002.opt.a: "Geleneksel olmayan hedeflere ulaşmak için geleneksel olmayan araçlara yönelmek gerekir." #NT!
+agot_dragon_hatching.preparations.tt:0 "Seçilen yumurtayı kuluçkalaştırmayı deneyeceksiniz"
 
-agot_dragon_hatching.preparations.tt: "Seçili yumurtayı çatlatmaya çalışacaksınız" #NT!
+agot_dragon_hatching.0003.t:0 "Büyüklüğe Doğru"
+agot_dragon_hatching.0003.desc:0 "[ROOT.Char.GetCurrentLocation.GetName]'den [province.GetName] bölgesine [egg.GetName] ile yola çıktım. Şu anda bile ondan yayılan gücü hissedebiliyorum, kendi heyecanımla birlikte taşıyor. Umarım bu kadar değerli bir kargoyla güvenli ve kesintisiz bir yolculuk olur. Başım dik, kaderime doğru yola çıktım."
+agot_dragon_hatching.0003.opt.a:0 "İleri, #bold büyüklüğe#!!"
 
-agot_dragon_hatching.0003.t: "Büyüklüğe Doğru" #NT!
-agot_dragon_hatching.0003.desc: "[egg.GetName] ile [ROOT.Char.GetCurrentLocation.GetName]'dan [province.GetName] eyaletine doğru yola çıktım. Hala yaydığı gücü hissedebiliyorum, kendi heyecanımla birlikte taşarak. Umarım bu kadar değerli bir kargoyla güvenli ve kesintisiz bir yolculuk olur. Başım dik bir şekilde kaderime doğru yola koyuldum." #NT!
-agot_dragon_hatching.0003.opt.a: "İleri, #bold büyüklüğe#!!" #NT!
+agot_dragon_hatching.0005.t:0 "Büyüklüğe Tanık Olmak İçin"
+agot_dragon_hatching.0005.desc:0 "[ROOT.Char.GetCurrentLocation.GetName]'den [province.GetName] bölgesine yola çıktım. Böylesine büyük bir olaya katılmak bir onur ve kesinlikle unutulmaz bir deneyim olacak."
+agot_dragon_hatching.0005.opt.a:0 "Geç kalmamak en iyisi."
 
-agot_dragon_hatching.0005.t: "Büyüklüğe Tanık Olmak" #NT!
-agot_dragon_hatching.0005.desc: "[ROOT.Char.GetCurrentLocation.GetName]'dan [province.GetName] eyaletine doğru yola çıktım. Böylesine büyük bir olayın parçası olmak bir onurdur ve kesinlikle unutulmaz bir deneyim olacaktır." #NT!
-agot_dragon_hatching.0005.opt.a: "Geç kalmamak en iyisi." #NT!
+agot_dragon_hatching.0006.t:0 "Geleceği Getirmek İçin"
+agot_dragon_hatching.0006.desc_knowledge:0 "Misafirlerim geldi ve bana yardımcı olan çeşitli akademisyenler hazırlıklarını yaptılar. Şimdi töreni kimin yöneteceğine ve bundan sonra nasıl devam edeceğine karar vermeliyim."
+agot_dragon_hatching.0006.desc_esoteric:0 "Misafirlerim geldi ve maegi'lerim büyülerini okumaya ve reaktiflerini hazırlamaya başladılar. Şimdi ritüeli kimin yöneteceğine karar vermeliyim."
+agot_dragon_hatching.0006.opt.a:0 "Elbette ben!"
+agot_dragon_hatching.0006.opt.a.tt:0 "Ritüel lideri siz olacaksınız"
+agot_dragon_hatching.0006.opt.b:0 "[scholar.GetFirstName] aramızdaki en bilgili kişi."
+agot_dragon_hatching.0006.opt.b.tt:0 "[scholar.GetShortUINameNoTooltip] ritüel lideri olacak"
+agot_dragon_hatching.0006.opt.c:0 "[septon.GetFirstNameNicknamed], Yedi'nin kutsamasıyla bize liderlik edecek."
+agot_dragon_hatching.0006.opt.c.tt:0 "[septon.GetFirstNameNicknamedNoTooltip] ritüel lideri olacak"
+agot_dragon_hatching.0006.opt.d:0 "Büyücü [warlock.GetFirstName] ritüeli yönetecek."
+agot_dragon_hatching.0006.opt.d.tt:0 "[warlock.GetShortUINameNoTooltip] ritüel lideri olacak"
+agot_dragon_hatching.0006.opt.e:0 "Pyromancer [pyromancer.GetFirstName]'ın alevleri bize rehberlik edecek."
+agot_dragon_hatching.0006.opt.e.tt:0 "[pyromancer.GetShortUINameNoTooltip] ritüel lideri olacak"
+agot_dragon_hatching.0006.opt.f:0 "Orman cadısı [witch.GetFirstName] eski yöntemlerle bize liderlik edecek."
+agot_dragon_hatching.0006.opt.f.tt:0 "[witch.GetShortUINameNoTooltip] ritüel lideri olacak"
+agot_dragon_hatching.0006.opt.g:0 "R'hllor'un kendi [rhllor_priest.GetFirstName]'ı bize rehberlik edecek."
+agot_dragon_hatching.0006.opt.g.tt:0 "[rhllor_priest.GetShortUINameNoTooltip] ritüel lideri olacak"
+agot_dragon_hatching.0006.opt.h:0 "Tüm Westeros'un ejderha bilgisi konusunda en bilgili kişisi olan [archmaester.GetFirstName]'ı çağıracağım."
+agot_dragon_hatching.0006.opt.h.tt:0 "[archmaester.GetShortUINameNoTooltip] ritüel lideri olacak"
 
+agot_dragon_hatching.0007.t:0 "$agot_dragon_hatching.0006.t$"
+agot_dragon_hatching.0007.desc_knowledge:0 "Diğer konuklarım ve ben geldik ve çeşitli okuryazar adamlar hazırlıklarını yaparken telaşlı bir şekilde dolaşıyorlar. Görünüşe göre geriye kalan tek şey, ev sahibimizin bu yumurtanın çatlaması için gereken her şeyi hazırlamayı bitirmesi."
+agot_dragon_hatching.0007.desc_esoteric:0 "Diğer konuklarım ve ben geldik ve ev sahibimiz tarafından çağrılan büyücüler de geldi. Sinir bozucu olsalar da, işlerine koyulma biçimleri yine de büyüleyici. Geriye kalan tek şey, kuluçka töreni için gerekli ritüelleri seçmek gibi görünüyor."
+agot_dragon_hatching.0007.opt.a:0 "Ne büyük bir çaba! Sabırsızlanıyorum!"
+agot_dragon_hatching.0007.opt.a.fear:0 "Bunun güvenli olduğundan emin miyiz?"
+agot_dragon_hatching.0007.opt.a.flavor:0 "Törenin hazırlanışını izliyorsunuz."
 
-  
- agot_dragon_hatching.0006.t: "Geleceği Getirmek" #NT!
- agot_dragon_hatching.0006.desc_knowledge: "Misafirlerim geldi ve bana yardımcı olan çeşitli akademisyenler hazırlıklarını yaptılar. Şimdi töreni kimin yöneteceğine ve bundan sonra nasıl ilerleyeceğine karar vermeliyim." #NT!
- agot_dragon_hatching.0006.desc_esoteric: "Misafirlerim geldi ve evcil maegi'lerim büyülerini söylemeye ve reaktiflerini hazırlamaya başladılar. Şimdi ritüelde bize kimin liderlik edeceğine karar vermeliyim." #NT!
- agot_dragon_hatching.0006.opt.a: "Elbette ben!" #NT!
- agot_dragon_hatching.0006.opt.a.tt: "Ritüel lideri siz olacaksınız" #NT!
- agot_dragon_hatching.0006.opt.b: "[scholar.GetFirstName] aramızda en bilgili olanımızdır." #NT!
- agot_dragon_hatching.0006.opt.b.tt: "[scholar.GetShortUINameNoTooltip] ritüel lideri olacak" #NT!
- agot_dragon_hatching.0006.opt.c: "[septon.GetFirstNameNicknamed] Yedi'nin kutsamasıyla bize önderlik edecek." #NT!
- agot_dragon_hatching.0006.opt.c.tt: "[septon.GetFirstNameNicknamedNoTooltip] ritüel lideri olacak" #NT!
- agot_dragon_hatching.0006.opt.d: "Ritüeli büyücü [warlock.GetFirstName] yönetecektir." #NT!
- agot_dragon_hatching.0006.opt.d.tt: "[warlock.GetShortUINameNoTooltip] ritüel lideri olacak" #NT!
- agot_dragon_hatching.0006.opt.e: "Piromancer [pyromancer.GetFirstName]'ın alevleri bize yol gösterecek." #NT!
- agot_dragon_hatching.0006.opt.e.tt: "[pyromancer.GetShortUINameNoTooltip] ritüel lideri olacak" #NT!
- agot_dragon_hatching.0006.opt.f: "Orman cadısı [witch.GetFirstName] bizi eski yollara götürecek." #NT!
- agot_dragon_hatching.0006.opt.f.tt: "[witch.GetShortUINameNoTooltip] ritüel lideri olacak" #NT!
- agot_dragon_hatching.0006.opt.g: "R'hllor'un [rhllor_priest.GetFirstName]'ı bize rehberlik edecek." #NT!
- agot_dragon_hatching.0006.opt.g.tt: "[rhllor_priest.GetShortUINameNoTooltip] ritüel lideri olacak" #NT!
- agot_dragon_hatching.0006.opt.h: "Batıdiyar'ın ejderha kültürüne en aşina kişisi olan [archmaester.GetFirstName]'ı çağıracağım." #NT!
- agot_dragon_hatching.0006.opt.h.tt: "[archmaester.GetShortUINameNoTooltip] ritüel lideri olacak" #NT!
-  
- agot_dragon_hatching.0007.t: "$agot_dragon_hatching.0006.t$" #NT!
- agot_dragon_hatching.0007.desc_knowledge: "Diğer konuklarım ve ben geldik ve çeşitli eğitimli adamlar hazırlıklarını yaparken telaşlanıyorlar. Ev sahibimizin geriye kalan tek şeyi, bu yumurtanın çatlaması için gereken her şeyi kurması gibi görünüyor." #NT!
- agot_dragon_hatching.0007.desc_esoteric: "Diğer konuklarım ve ben geldik, ev sahibimiz tarafından gönderilen büyücüler de geldi. Sinir bozucular, ancak işlerini yapma biçimleri yine de büyüleyici. Geriye sadece yumurtadan çıkma töreni için gerekli ritüelleri seçmek kalıyor gibi görünüyor." #NT!
- agot_dragon_hatching.0007.opt.a: "Ne kadar da çaba! Sabırsızlanıyorum!" #NT!
- agot_dragon_hatching.0007.opt.a.fear: "Bunun güvenli olduğundan emin miyiz?" #NT!
- agot_dragon_hatching.0007.opt.a.flavor: "Törenin hazırlanmasını izliyorsunuz." #NT!
-  
- agot_dragon_hatching.0008.t: "Bir Canavar Bir Canavar İçin" #NT!
- agot_dragon_hatching.0008.desc_knowledge: "Öğrenilmiş topluluğum arasında canlı bir yaratığı kurban etmeye karşı bir tereddüt havası olsa da, bu törenin başarılı olması için bir can verilmesi gerektiği konusunda herkes hemfikir. Tarihlere ve mevcut metinlere danıştıktan sonra, şimdi hangi hayvan türünün kurban edileceğine karar vermeliyiz." #NT!
- agot_dragon_hatching.0008.desc_esoteric: "Evrenin yasaları açıktır, hayat için hayat ödenmelidir. Aramızdaki maegi ve warlock'lar, yumurtadan çıkmanın başarılı olması için bir fedakarlığın gerekli olduğu konusunda hemfikirdir. Şimdi hangi canavarın kurban edileceğine karar vermeliyiz." #NT!
- agot_dragon_hatching.0008.opt.a_dog: "Ey sadık [ROOT.Char.Custom('DogStoryName')], son hareketin asil olacak." #NT!
- agot_dragon_hatching.0008.opt.a_dog_tt: "#bold;V [ROOT.Char.Custom('DogStoryName')]'in hayatı#! bu yumurtadan çıkmanın güç kaynağı olacak" #NT!
- agot_dragon_hatching.0008.opt.a_cat: "Sevgili [ROOT.Char.Custom('CatStoryName')], fedakarlığın boşa gitmeyecek." #NT!
- agot_dragon_hatching.0008.opt.a_cat_tt: "#bold;V [ROOT.Char.Custom('CatStoryName')]'in hayatı#! bu yumurtadan çıkmanın güç kaynağı olacak" #NT!
- agot_dragon_hatching.0008.opt.b: "Acaba yerel halkın bazı hayvanları kurtarılabilir mi?" #NT!
- agot_dragon_hatching.0008.opt.b_tt: "Bazı #bold;V yerel hayvanın hayatı#! bu kuluçka için güç kaynağı olacak" #NT!
- agot_dragon_hatching.0008.opt.c: "Bu vesileyle avladığınız bir av hayvanını da ortaya çıkarın." #NT!
- agot_dragon_hatching.0008.opt.c_tt: "#bold;V vahşi hayvanın hayatı#! bu yumurtadan çıkmanın güç kaynağı olacak" #NT!
- agot_dragon_hatching.0008.opt.d: "Hiçbir sıradan canavar işe yaramaz. Daha egzotik bir şey bulmalıyız!" #NT!
- agot_dragon_hatching.0008.opt.d_tt: "Egzotik bir hayvanın #bold;V hayatı#! bu yumurtadan çıkmanın güç kaynağı olacak" #NT!
-  
- agot_dragon_hatching.0009.t: "Kan Bedeli" #NT!
- agot_dragon_hatching.0009.desc_knowledge: "Valyrialıların ejderhalarını yumurtadan çıkarmak için kan büyüsü kullandıkları iyi bilinir. Odadaki bilgili topluluk ne kadar olduğunu tartışıyor, ancak hepsi benzer bir haraç vermenin en başarılı olma olasılığının yüksek olduğu konusunda hemfikir. Şimdi karar, kanın kimden alınacağıdır." #NT!
- agot_dragon_hatching.0009.desc_esoteric: "Kan büyücülerinin en büyüğü eski Valyrialılardı — tarihin unuttuğu bir zamanda ejderhalar çıkaranlar da onlardı. En gizemli konuklarımla çevrili ve büyücülerimin dikkatli bakışları altında, şimdi benzer bir haraç nasıl yapacağımıza karar vermeliyim." #NT!
- agot_dragon_hatching.0009.opt.a: "Benim kanımdan başka hiçbir kan yeterli olmayacaktır." #NT!
- agot_dragon_hatching.0009.opt.a_tt: "#bold;V Kanınız#! bu yumurtadan çıkmanın güç kaynağı olacak" #NT!
- agot_dragon_hatching.0009.opt.b: "Lider olarak [ritual_leader_character.GetFirstNameNicknamed]'ın memnuniyetle [ritual_leader_character.GetHerHis] kan teklif edeceğinden eminim." #NT!
- agot_dragon_hatching.0009.opt.b_tt: "#bold;V [ritual_leader_character.GetFirstNameNicknamedPossessiveNoTooltip] kan#! bu yumurtadan çıkmanın güç kaynağı olacak" #NT!
- agot_dragon_hatching.0009.opt.c: "Herkes bu büyük projeye bir damar açacak." #NT!
- agot_dragon_hatching.0009.opt.c_tt_1: "Mevcut olanların #bold;V kanı#! bu yumurtadan çıkmanın güç kaynağı olacak" #NT!
- agot_dragon_hatching.0009.opt.c_tt_2: "@warning_icon! #X Her katılımcı yaralanacak#!" #NT!
- agot_dragon_hatching.0009.opt.d: "[prisoner_blood_sacrifice.GetFirstName] itiraz edemez..." #NT!
- agot_dragon_hatching.0009.opt.d_tt: "#bold;V [prisoner_blood_sacrifice.GetShortUINamePossessiveNoTooltip] kan#! bu yumurtadan çıkmanın güç kaynağı olacak" #NT!
- agot_dragon_hatching.0011.opt.f:0 "İkinci kez düşündüm de, başka bir yol var."
- agot_dragon_hatching.0011.opt.f_tt:0 "Kan seçenekleri ekranına geri döneceksiniz."
-  
- agot_dragon_hatching.0010.t: "$agot_dragon_hatching.0009.t$" #NT!
- agot_dragon_hatching.0010.desc: "Valyrialıların ejderhalarını yumurtadan çıkarmak için kan büyüsü kullandıkları iyi bilinir. Odadaki bilgili topluluk ne kadar olduğunu tartışırken, aramızdaki daha mistik olanlar benzer bir haraçın başarılı olma olasılığının en yüksek olduğundan emin.\n\n[host.GetTitledFirstName]'ın bir hayvanı veya mahkumu kanatmasını bekliyordum, ancak bunun yerine [host.GetSheHe] hepimizden tören için kendi damarlarımızı açmamızı istedi!" #NT!
- agot_dragon_hatching.0010.opt.a: "Yapılması gerekiyorsa yapılmalıdır." #NT!
- agot_dragon_hatching.0010.opt.b: "Ben buna kaydolmadım!" #NT!
-  
- agot_dragon_hatching.0011.t: "Hayat İçin Hayat" #NT!
- agot_dragon_hatching.0011.desc_knowledge: "Üstatlarım ve eğitimli adamlarım arasında bu eylemin barbarlığına karşı bir tereddüt havası olsa da, hepimiz böyle bir ödemenin, böyle büyülü nitelikteki nesnelerle uğraşırken karşılıklı olarak alınması en olası ödeme olduğu konusunda hemfikiriz. Bir can karşılığında bir başkası çok yüksek bir bedel gibi görünebilir, ancak şüpheci bir zihin bile bir ejderhanın şu ana kadar yaşayan herhangi bir ejderhadan daha değerli olduğunu inkar edemez." #NT!
- agot_dragon_hatching.0011.desc_esoteric: "Her bir büyücüm ve büyücüm bana aynı şeyi söylüyor: Valyria'nın ve ejderhalarının hepsi #bold kan büyüsüyle#!. doluydu. Bununla, bu yeni hayatı dünyaya getirebilirim. Ancak sadece hayat, hayatın karşılığını ödeyebilir ve şimdi fiyatımı seçmeliyim." #NT!
- agot_dragon_hatching.0011.desc_escaped_attendee: "[escaped_unwilling_attendee.GetFirstName] muhafızlarımdan kaçmayı başarmış ve törenden kaçmış gibi görünüyor. Bana [escaped_unwilling_attendee.GetSheHe]'in muhtemelen tesiste saklandığı veya çoktan [escaped_unwilling_attendee.GetHerHis] eve doğru yola çıktığı söylendi. Şüphesiz, [escaped_unwilling_attendee.GetSheHe] bana öfkeli, ancak tören devam etmeli ve ben yine de yumurtadan çıkmanın bedelini ödeyecek bir hayat seçmeliyim." #NT!
- agot_dragon_hatching.0011.desc_refused_leader: "Benim ve katılanların büyük hayal kırıklığına uğramasına rağmen, [ritual_leader_character.GetFirstNameNicknamed] yumurtadan çıkma için [ritual_leader_character.GetHerHis] can vermeyi reddetti. Şimdi bedelini ödeyecek başka birini seçmek bana düşüyor." #NT!
- agot_dragon_hatching.0011.desc_refused_attendee: "[attendee_life_sacrifice_refusing.GetFirstName], yumurtadan çıkma için [attendee_life_sacrifice_refusing.GetHerHis] can vermeyi reddetti ve güvenli bir mesafeden izlemeyi tercih etti. Şimdi bedelini ödeyecek başka birini seçmek bana düşüyor." #NT!
- agot_dragon_hatching.0011.opt.a: "Bunun için canımı veririm." #NT!
- agot_dragon_hatching.0011.opt.a_tt: "#bold;V Senin hayatın#! bu yumurtadan çıkışın güç kaynağı olacak" #NT!
- agot_dragon_hatching.0011.opt.b: "Lider olarak [ritual_leader_character.GetFirstNameNicknamed]'ın [ritual_leader_character.GetHerHis]'e kendi hayatını memnuniyetle sunacağından eminim." #NT!
- agot_dragon_hatching.0011.opt.b_accepts: "#bold;V [ritual_leader_character.GetFirstNameNicknamedPossessiveNoTooltip] hayat#! bu yumurtadan çıkmanın güç kaynağı olacak" #NT!
- agot_dragon_hatching.0011.opt.b_declines: "[ritual_leader_character.GetFirstNameNicknamed] reddederse başka birini seçmelisiniz" #NT!
- agot_dragon_hatching.0011.opt.c: "Bedelini ödeyecek bir mahkûmu seçeceğim!" #NT!
- agot_dragon_hatching.0011.opt.c_tt: "Seçmeniz için size bir mahkum listesi sunulacak" #NT!
- agot_dragon_hatching.0011.opt.d: "Belki [attendee_life_sacrifice_willing.GetFirstName] da aynı fikirdedir?" #NT!
- agot_dragon_hatching.0011.opt.d_accepts: "#bold;V [attendee_life_sacrifice_willing.GetShortUINamePossessiveNoTooltip] hayat#! bu yumurtadan çıkmanın güç kaynağı olacak" #NT!
- agot_dragon_hatching.0011.opt.d_declines: "[attendee_life_sacrifice_willing.GetShortUIName] reddederse başka birini seçmelisiniz" #NT!
- agot_dragon_hatching.0011.opt.d_unwilling: "Misafirlerimden biri bedelini ödeyecek..." #NT!
- agot_dragon_hatching.0011.opt.d_tt_unwilling: "Misafirlerinizden birinin kurban edilmesini emredeceksiniz" #NT!
- agot_dragon_hatching.0011.opt.d_tt_unwilling_may_escape: "@warning_icon! #warning Kaçabilirler#!" #NT!
- agot_dragon_hatching.0011.opt.e: "#N;bold Ceset yığınımız ejderhanın yükseleceği küller olacak!#!" #NT!
- agot_dragon_hatching.0011.opt.e_tt: "#warning Mevcut olan herkesin hayatı bu yumurtadan çıkmanın güç kaynağı olacak#!" #NT!
-  
- agot_dragon_hatching.0012.t: "$agot_dragon_hatching.0011.t$" #NT!
- agot_dragon_hatching.0012.desc_knowledge: "Mahkum seçimini dikkatlice düşünmem gerekiyor, çünkü orada bulunanların çoğu, bir canın yumurtadan çıkması düşüncesiyle zaten huzursuz. Kimi seçeceğim herkes tarafından gözlemlenecek ve ben de akıllıca seçim yapmaya dikkat etmeliyim." #NT!
- agot_dragon_hatching.0012.desc_esoteric: "Mahkum seçimini dikkatlice düşünmem gerekir, çünkü kanın gücünün, hayat daha önemli bir bireyin hayatı olduğunda daha güçlü olduğu teorize edilmiştir. Kral, lord veya avam kanı — hepsi eşit olarak tartılmayabilir..." #NT!
- agot_dragon_hatching.0012.opt.a: "Zaten itiraz edemezler..." #NT!
- agot_dragon_hatching.0012.opt.a_tt: "#bold;V Seçilen mahkumun hayatı#! bu yumurtadan çıkmanın güç kaynağı olacak" #NT!
- agot_dragon_hatching.0012.opt.b: "Tekrar düşündüğümde başka seçenekler de var." #NT!
- agot_dragon_hatching.0012.opt.b_tt: "Geri dönüp başka bir kurban seçeceksin" #NT!
-  
- agot_dragon_hatching.0013.t: "Gücün Kaynağı" #NT!
- agot_dragon_hatching.0013.desc_opening_knowledge: "Toplanan üstatlar ve bilginler, genellikle tek bir yerde toplanmayan bir bilgi kaynağıdır. Edebiyatçılar arasında iyi bilindiği gibi, zanaatlarının ince noktalarını tartışmayı ve müzakere etmeyi severler. Günün konusu, yumurtadan çıkmanın güç kaynağıdır ve tartışma şiddetlidir. Sonunda, neyin kullanılacağına karar vermek [host.GetTitledFirstName]'a aittir.\n\n" #NT!
- agot_dragon_hatching.0013.desc_opening_esoteric: "Etrafımı saran çeşitli büyücülük uygulayıcıları ve seyyar satıcıları karmakarışık bir ekiptir, ancak yumurtadan çıkma için güç kaynağının en büyük öneme sahip olduğuna dair inançlarında birleşmişlerdir. Tartışma şiddetlidir, ancak sonunda, neyin kullanılacağına karar vermek [host.GetTitledFirstName]'a aittir.\n\n" #NT!
- agot_dragon_hatching.0013.desc_animal_pet_dog: "Gerçek bir fedakarlığın göstergesi olarak sunucumuz, [host.GetHerHis] sevgili köpeğin [host.Custom('DogStoryName')] yumurtadan çıkan yavruların güç kaynağı olacağını paylaşıyor." #NT!
- agot_dragon_hatching.0013.desc_animal_pet_cat: "Gerçek bir fedakarlığın göstergesi olarak sunucumuz, [host.GetHerHis] sevgili kedinin [host.Custom('CatStoryName')] yumurtadan çıkacak yavrular için güç kaynağı olacağını paylaşıyor." #NT!
- agot_dragon_hatching.0013.desc_animal_livestock: "Kararın ne kadar doğru olduğundan emin olmamakla birlikte, ev sahibimiz yumurtadan çıkma gücü için köylülerden alınan yerel bir yük hayvanını kullanmayı tercih etti." #NT!
- agot_dragon_hatching.0013.desc_animal_wild: "[host.GetSheHe|U], ejderhaların vahşi ruhunun ancak vahşi bir hayvanın kurban edilmesiyle çağrılabileceğine inanır ve avcıları uygun bir yaratığı geri getirmeleri için görevlendirir." #NT!
- agot_dragon_hatching.0013.desc_animal_exotic: "Kesinlikle egzotik bir gösteri olacak olan bu gösteride, ev sahibimiz yumurtadan çıkmak için güç kaynağı olarak Uzak Doğu'dan gelen bir yaratığı kullanmayı seçti; yaratık şu anda bizim bulunduğumuz yere doğru yol alıyor." #NT!
- agot_dragon_hatching.0013.desc_blood_myself: "Gerçek bir fedakarlığın göstergesi olarak, ev sahibimiz yumurtadan çıkma için güç kaynağı olarak [host.GetHerHis]'ın kendi kanını kullanmayı seçti; bunun başarıyı garantilemenin tek yolu olduğuna inanıyordu." #NT!
- agot_dragon_hatching.0013.desc_blood_leader: "[ritual_leader_character.GetHerHis]'ın çabalarına olan gerçek inancın bir göstergesi olarak, törenin lideri [ritual_leader_character.GetFirstNameNicknamed], yumurtadan çıkma için güç kaynağı olarak [ritual_leader_character.GetHerHis]'a kendi kanını teklif etti." #NT!
- agot_dragon_hatching.0013.desc_blood_everyone: "[host.GetSheHe|U], ejderhanın yumurtadan çıkması için güç kaynağı olarak tüm katılımcıların kanlarını sunmasını talep etti; toplananların birleşik gücünün ejderhayı ortaya çıkarmaya yeteceğine inanıyordu." #NT!
- agot_dragon_hatching.0013.desc_blood_prisoner: "[host.GetHerHis] bilgeliğinde, [host.GetSheHe] yumurtadan çıkma için güç kaynağı olarak [host.GetHerHis] mahkûm [prisoner.GetFirstName]'ün kanını kullanmayı seçmiştir, çünkü [prisoner.GetSheHe] itiraz edecek durumda değildir." #NT!
- agot_dragon_hatching.0013.desc_life_myself: "Gerçek bir fedakarlığın göstergesi olarak, ev sahibimiz yumurtadan çıkma için güç kaynağı olarak kendi [host.GetHerHis] hayatını kullanmayı seçti ve bu çabaya [host.GetHerHis] canını adadı." #NT!
- agot_dragon_hatching.0013.desc_life_leader: "Burada [ritual_leader_character.GetHerHis] amacına olan gerçek inancın bir göstergesi olarak, törenin lideri olan [ritual_leader_character.GetFirstNameNicknamed], yumurtadan çıkmanın güç kaynağı olarak [ritual_leader_character.GetHerHis]'a kendi hayatını sunmuştur." #NT!
-  agot_dragon_hatching.0013.desc_life_attendee:0 "In a display of true belief in the purpose of the ceremony, [attendee.GetFirstName] has offered [attendee.GetHerHis] own life as the source of power for the hatching. 
- agot_dragon_hatching.0013.desc_life_prisoner: "[host.GetHerHis] bilgeliğinde, [host.GetSheHe], yumurtadan çıkmanın güç kaynağı olarak [host.GetHerHis] mahkûmu [prisoner.GetFirstName]'ün hayatını kullanmayı seçmiştir, çünkü [prisoner.GetSheHe] itiraz edecek durumda değildir." #NT!
- agot_dragon_hatching.0013.desc_life_everyone: "[host.GetSheHe|U] henüz bu kararı almaya hazır görünmüyor ve sadece zamanı geldiğinde hepimizin öğreneceğini söylüyor." #NT!
- agot_dragon_hatching.0013.desc_close_happy: "Gerçekten de muhteşem bir olay olacağa benziyor!" #NT!
- agot_dragon_hatching.0013.desc_close_worried: "Dava ilerledikçe içimde bir korku duygusu oluşuyor." #NT!
- agot_dragon_hatching.0013.opt.a: "Sırada tören var." #NT!
-  
- agot_dragon_hatching.0014.t: "Gücün Katalizörü" #NT!
- agot_dragon_hatching.0014.desc_opening_knowledge: "Gücün kaynağı belirlendi ve şimdi yumurtayı hayata döndürmek için aktivasyonunu en iyi şekilde nasıl tetikleyeceğimize karar vermeliyiz. Yumurta, içindeki ejderhanın sağlıklı ve güçlü bir şekilde doğmasını sağlamak için belirli bir sıcaklığa kadar ısıtılmalıdır." #NT!
- agot_dragon_hatching.0014.desc_opening_esoteric: "Kurban belirlendikten sonra, şimdi yumurtaya verilen yaşam gücünün gücünü aşılamak için katalizörü hazırlamalıyız. Gelecek ritüelde serbest bırakılan enerjiler ne çok yoğun ne de çok zayıf olmalı, aksi takdirde yumurta bu süreçte yok olabilir." #NT!
- agot_dragon_hatching.0014.desc_minor: "Yumurtadan çıkmanın katalizörü olarak basit bir ısı kaynağı kullanmayı seçtim, hiçbir budama veya törene gerek kalmadan. Yine de, neyin kullanılacağına karar vermek kritik bir karardır." #NT!
- agot_dragon_hatching.0014.desc_medium: "Bunun için gerekli yatırımı ve hazırlıkları yaptım ama gerekli ısının nasıl sağlanacağı konusu hala tartışma konusu." #NT!
- agot_dragon_hatching.0014.desc_major: "Tören için gereken kaynak ve gösterişin büyük olması nedeniyle, şimdi yumurtayı özel olarak tasarlanmış kabında nasıl ısıtacağıma karar vermeliyim." #NT!
- agot_dragon_hatching.0014.desc_massive: "Okuduğum ejderha bilgisi ve Valyrian tanrılarına duaların her sayfası beni bu ana getirdi. Yaptığım kapsamlı ve kapsamlı hazırlıklar, ne olursa olsun yumurtanın mükemmel sıcaklığa ısıtılmasını sağlayacak. Yine de, şimdi yumurtayı neyin ısıtacağına karar vermeliyim." #NT!
- agot_dragon_hatching.0014.opt.warning: "#warning @warning_icon! Yumurtadan çıkma törenini durdurmak için son şansın bu #!" #NT!
- agot_dragon_hatching.0014.opt.a_rational: "Peki ya odunla, başka ne olacak?" #NT!
- agot_dragon_hatching.0014.opt.a_bold: "Odun ve yakacak getirin!" #NT!
- agot_dragon_hatching.0014.opt.a_tt: "Bu yumurtadan çıkma işlemi için ısı kaynağı olarak #bold;V odun#! kullanacaksınız" #NT!
- agot_dragon_hatching.0014.opt.b: "Sıcak kömürler iş görecektir." #NT!
- agot_dragon_hatching.0014.opt.b_ttplsnohasherror: "Bu kuluçka için ısı kaynağı olarak #bold;V sıcak kömür#! kullanacaksınız" #NT!
- agot_dragon_hatching.0014.opt.c: "Yanan yağ ısı kaynağı olacak." #NT!
- agot_dragon_hatching.0014.opt.c_tt: "Bu yumurtadan çıkma işlemi için ısı kaynağı olarak #bold;V yağ#! kullanacaksınız" #NT!
- agot_dragon_hatching.0014.opt.d: "En sıcak alevlerden başkası işe yaramaz! Orman yangınını getirin!" #NT!
- agot_dragon_hatching.0014.opt.d_tt: "Bu yumurtadan çıkma için ısı kaynağı olarak #WF2;bold Çılgın Ateş#! kullanacaksınız" #NT!
- agot_dragon_hatching.0014.opt.e: "Ejderha Dağı'u kullanmalıyız!" #NT!
- agot_dragon_hatching.0014.opt.e_tt: "Bu yumurtadan çıkma için ısı kaynağı olarak #bold;V yanardağı#! kullanacaksınız" #NT!
- agot_dragon_hatching.0014.opt.f: "Güneşin gücü ısı kaynağımız olacak! Büyüteci getirin!" #NT!
- agot_dragon_hatching.0014.opt.f_tt: "Kullanacaksın... #bold;V büyüteç#!? Öyle diyorsan..." #NT!
- agot_dragon_hatching.0014.opt.leave_coward: "Bunu yapamam!" #NT!
- agot_dragon_hatching.0014.opt.leave_bold: "Artık bu iş çok ileri gitti!" #NT!
- agot_dragon_hatching.0014.opt.leave_rational: "Bu asla işe yaramayacak!" #NT!
- agot_dragon_hatching.0014.opt.leave_tt: "#warning @warning_icon! Töreni terk edeceksin #!" #NT!
-  
- agot_dragon_hatching.0015.t: "Yeni Şafak Yok" #NT!
- agot_dragon_hatching.0015.desc_knowledge: "Hizmetçilerin bayrakları indirdiğini ve üstatların kitaplarını topladığını görüyorum. Duyuru yapılmadan önce nedenini biliyorum. [host.GetTitledFirstName] [host.GetHerHis] cesaretini kaybetti — tören olmayacak. Yumurta kırılmadan kaldı ve içindeki ejderha uyanmadı. Tören bitti ve yeni bir ejderhanın rüyası öldü." #NT!
- agot_dragon_hatching.0015.desc_esoteric: "Büyücüler ve maegiler ne olduğunu anlamadan kovuldular. Mumlar söndürüldü ve tütsüler söndürüldü. Görünüşe göre [host.GetTitledFirstName] yaklaşan ritüelden çekildi. Yumurta kırılmamış ve içindeki ejderha uyanmamış. Tören bitti ve yeni bir ejderha çağı hayali öldü." #NT!
- agot_dragon_hatching.0015.opt.a_rational: "Belki de en iyisi budur." #NT!
- agot_dragon_hatching.0015.opt.a_coward: "Çok şükür!" #NT!
- agot_dragon_hatching.0015.opt.a_bold: "[host.GetSheHe]'ın vazgeçtiğine inanamıyorum!" #NT!
-  
- agot_dragon_hatching.0016.t: "Tören" #NT!
- agot_dragon_hatching.0016.desc_opening_craven: "Elim titriyor, diğer elimle tutup sabitliyorum." #NT!
- agot_dragon_hatching.0016.desc_opening_normal: "Hava beklentiyle doluydu, toplanan insanlar sözlü ve dile getirilmeyen heyecanlarını paylaşıyorlardı." #NT!
- agot_dragon_hatching.0016.desc_opening_bold: "Yeni bir çağ başlıyor ve bu çağın başlangıcında burada olmak ne büyük bir mutluluk!" #NT!
- agot_dragon_hatching.0016.desc_knowledge_opening_me: "Törenin başlama zamanı geldi. Toplananların önünde duruyorum, elimde yumurta, arkamda çağların bilgisi." #NT!
- agot_dragon_hatching.0016.desc_knowledge_opening_other: "Törenin başlama zamanı geldi. [ritual_leader_character.GetFirstNameNicknamed] başımızda duruyor, yumurta [ritual_leader_character.GetHerHis] elinde, çağların bilgisi [ritual_leader_character.GetHerHis] arkamızda." #NT!
- agot_dragon_hatching.0016.desc_esoteric_opening_me: "Ritüelin başlama zamanı geldi. Ritüeller konuşuldu ve reaktifler hazırlandı. Toplananların önünde duruyorum, tezahüratları etrafımda yükseliyor, yumurta ellerimde sıcak hissediliyor." #NT!
- agot_dragon_hatching.0016.desc_esoteric_opening_other: "Ritüelin başlama zamanı geldi. Ritüeller konuşuldu ve reaktifler hazırlandı. [ritual_leader_character.GetFirstNameNicknamed] önümüzde duruyor, uzun zamandır unutulmuş bir dilde şarkı söylerken boğazımdan talimatlı ilahi dökülüyor." #NT!
- agot_dragon_hatching.0016.desc_esoteric_opening_other_prisoner: "Ritüelin başlama zamanı geldi. Ritüeller konuşuluyor ve reaktifler hazırlanıyor. Garip ilahiler odayı dolduruyor, ben de başıma ne geleceğini merak ediyorum." #NT!
- agot_dragon_hatching.0016.desc_animal_pet_dog: "Köpek önümüze getirilir" #NT!
- agot_dragon_hatching.0016.pet_dog_host: "[ROOT.Char.Custom('DogStoryName')] emin değil gibi görünüyor çünkü [ROOT.Char.Custom('DogStorySheHe')] daha önce getirilmiş" #NT!
- agot_dragon_hatching.0016.desc_animal_pet_cat: "Kedi önümüze getirilir" #NT!
- agot_dragon_hatching.0016.pet_cat_host: "[ROOT.Char.Custom('CatStoryName')], [ROOT.Char.Custom('CatStorySheHe')] önüne getirildiğinde temkinli görünüyor" #NT!
- agot_dragon_hatching.0016.desc_animal_livestock: "[ROOT.Char.Custom('RegionalFarmAnimal')], önüne getirilir" #NT!
- agot_dragon_hatching.0016.desc_animal_wild: "Avlanan av hayvanlarının cesetleri önümüze getirilir" #NT!
- agot_dragon_hatching.0016.desc_animal_exotic: "Önüme getirilen yaratığı tanımlayamıyorum" #NT!
- agot_dragon_hatching.0016.desc_me_stop: "Ben." #NT!
- agot_dragon_hatching.0016.desc_leader_stop: "[ritual_leader_character.GetFirstNameNicknamedNoTooltip]." #NT!
- agot_dragon_hatching.0016.desc_animal_my_dog: "[ROOT.Char.Custom('DogStoryHerHim')]'ı görünce yüreğim sızlıyor, ne olacağını biliyorum ama bunun yapılması gerektiğini de biliyorum." #NT!
- agot_dragon_hatching.0016.desc_animal_my_cat: "[ROOT.Char.Custom('CatStoryHerHim')]'ı görünce yüreğim sızlıyor, ama bunun yapılması gerektiğini biliyorum." #NT!
- agot_dragon_hatching.0016.desc_animal_exotic_end: "Tüyleri tuhaftır ve sıkıntılı sesleri herkesin kulağına yabancıdır." #NT!
- agot_dragon_hatching.0016.desc_animal_kill_me: "Bıçağı kaldırıp tek bir temiz vuruşla indirdiğimde, yaratığın hayatı tek bir vuruşla son buldu." #NT!
- agot_dragon_hatching.0016.desc_animal_kill_leader: "[ritual_leader_character.GetFirstNameNicknamedNoTooltip] bıçağı kaldırıp tek bir temiz vuruşla aşağı indirdiğinde, yaratığın hayatı tek bir vuruşla son buldu." #NT!
- agot_dragon_hatching.0016.desc_blood_me: "Kase önüme getiriliyor, kolum" #NT!
- agot_dragon_hatching.0016.desc_blood_me_me: "çıplak ve hazır. Bıçağı tenimden aşağı çekerken dudağımı ısırıyorum, kızıl renk kaseye dökülüyor." #NT!
- agot_dragon_hatching.0016.desc_blood_me_prisoner: "[ritual_leader_character.GetFirstNameNicknamedNoTooltip] bıçağı kolumdan aşağı çekerken kelepçelere karşı mücadele ediyorum, kan çanağa dökülüyor. Tüm bunların adaletsizliğine bağırıyorum, ama haykırışlarım görmezden geliniyor." #NT!
- agot_dragon_hatching.0016.desc_blood_me_leader: "çıplak ve hazır. [ritual_leader_character.GetFirstNameNicknamedNoTooltip] bıçağı kolumdan aşağı çekerken dudağımı ısırdım, kızıl renk kaseye döküldü." #NT!
- agot_dragon_hatching.0016.desc_blood_me_everyone: "Diğerlerinin de aynı şekilde yaptığını izliyorum, [ritual_leader_character.GetFirstNameNicknamedNoTooltip] her birini aynı şekilde dilimliyorum." #NT!
- agot_dragon_hatching.0016.desc_blood_me_everyone_leader: "Sonra herkesin önünde yürüyorum, toplanan her birine aynı şeyi yapıyorum, birleşmiş yaşam kanımız birleşiyor." #NT!
- agot_dragon_hatching.0016.desc_blood_leader: "Kase [ritual_leader_character.GetFirstNameNicknamedNoTooltip]'ın önüne getirilir, [ritual_leader_character.GetHerHis] kolu açıkta ve hazırdır. [ritual_leader_character.GetSheHe|U] ısırık [ritual_leader_character.GetHerHis] dudak, [ritual_leader_character.GetSheHe] bıçağı aşağı doğru çekerken [ritual_leader_character.GetHerHis] deri, koyu kırmızı renk belirlenen kaseye dökülür." #NT!
- agot_dragon_hatching.0016.desc_blood_prisoner: "Kase [prisoner.GetName]'ın önüne getirilir, [prisoner.GetHerHis]'in kolu aşağı doğru zorlanır ve bıçak [prisoner.GetHerHis]'in teni boyunca çekilir, [prisoner.GetSheHe] haykırırken kaseye kan kırmızısı dökülür." #NT!
- agot_dragon_hatching.0016.desc_blood_everyone_refused: "Kase benden başka herkesin önüne getiriliyor, her kol açık ve hazır. Bıçak sırayla her birinin üzerinden çekiliyor, yaralıların çığlıkları odayı doldururken kaseye kızıl renk dökülüyor. Aralarında olmadığım için mutlu olsam da, bana utanç verici bir bakışla bakıyorlar." #NT!
- agot_dragon_hatching.0016.desc_life_myself_me_self: "Derin bir nefes alarak öne doğru bir adım atıyorum ve bıçağı elime alıyorum, en büyük fedakarlığı yapmaya hazırım. Yumurtanın önünde duruyorum, bıçak boğazıma dayalı ve #emp dilim#!.\n\nThere bir acı anı, göğsümden aşağı akan sıcaklık hissi ve sonra hiçbir şey..." #NT!
- agot_dragon_hatching.0016.desc_life_myself_me_leader: "Derin bir nefes alarak, [ritual_leader_character.GetFirstNameNicknamedNoTooltip] bıçağı boğazıma bastırırken yumurtanın önüne doğru bir adım attım. Gözlerimi kapattım...\n\nBir an acı hissettim, göğsümden aşağı doğru akan bir sıcaklık hissi ve sonra hiçbir şey..." #NT!
- agot_dragon_hatching.0016.desc_life_myself_other_self: "[host.GetTitledFirstNameNoTooltip]'ın öne çıkmasını büyük bir hayranlık ve dehşetle izliyorum. [host.GetSheHe|U] yumurtanın önünde duruyor, bıçağı [host.GetHerHis]'nin boğazına dayanmış ve #emp dilim #!. Yumurtanın üzerine kan dökülüyor ve [host.GetSheHe] cansız bir şekilde yere düşüyor." #NT!
- agot_dragon_hatching.0016.desc_life_myself_other_leader: "[host.GetTitledFirstName]'ın yumurtanın önüne doğru adım atmasını, [ritual_leader_character.GetFirstNameNicknamedNoTooltip]'in bıçağı [host.GetHerHis]'nin boğazına bastırmasını, [host.GetTitledFirstNameNoTooltip]'ün [host.GetHerHis] gözlerini kapatmasını ve #emp'in #!.'sını kesmesini büyük bir hayranlık ve dehşetle izliyorum. Yumurtanın üzerine kan dökülüyor ve [host.GetSheHe] cansız bir şekilde yere düşüyor." #NT!
- agot_dragon_hatching.0016.desc_life_leader_self: "Derin bir nefes alarak öne doğru bir adım atıyorum ve bıçağı elime alıyorum, [host.GetTitledFirstNamePossessive] davası için en büyük fedakarlığı yapmaya hazırım. Yumurtanın önünde duruyorum, bıçak boğazıma dayalı ve #emp dilim#!. Bir an acı hissediyorum, göğsümden aşağı doğru akan bir sıcaklık hissi ve sonra hiçbir şey..." #NT!
- agot_dragon_hatching.0016.desc_life_leader_host: "[ritual_leader_character.GetFirstNameNicknamedPossessiveNoTooltip]'ın bana ve davama olan bağlılığı karşısında alçakgönüllü oluyorum, [ritual_leader_character.GetSheHe] öne çıkıyor. [ritual_leader_character.GetSheHe|U] yumurtanın önünde duruyor, bıçağı [ritual_leader_character.GetHerHis] boğazına dayanmış durumda, #emp dilim#!. [ritual_leader_character.GetHerHis|U] kan yumurtanın üzerine dökülüyor ve [ritual_leader_character.GetSheHe] cansız bir şekilde yere düşüyor." #NT!
- agot_dragon_hatching.0016.desc_life_leader_other: "[ritual_leader_character.GetFirstNameNicknamedPossessiveNoTooltip]'ın [host.GetTitledFirstNamePossessive] davasına olan bağlılığını hayretle izliyorum, [ritual_leader_character.GetFirstNameNoTooltip] öne çıkıyor. [ritual_leader_character.GetSheHe|U] yumurtanın önünde duruyor, bıçağı [ritual_leader_character.GetHerHis] boğazına dayanmış ve #emp dilimliyor#!. Yumurtanın üzerine kan dökülüyor ve [ritual_leader_character.GetSheHe] cansız bir şekilde yere düşüyor." #NT!
- agot_dragon_hatching.0016.desc_life_attendee_me: "Derin bir nefes alarak, [ritual_leader_character.GetFirstNameNicknamedNoTooltip] bıçağı boğazıma bastırırken öne doğru bir adım atıyorum. Gözlerimi kapatıyorum, bu yeni çağı getirmek için en büyük fedakarlığı yapmaya hazırım...\n\nBir an acı, göğsümden aşağı akan bir sıcaklık hissi ve sonra hiçbir şey..." #NT!
- agot_dragon_hatching.0016.desc_life_attendee_leader: "[attendee.GetFirstNamePossessive]'ın [host.GetFirstNamePossessiveOrMyNoTooltip]'e olan bağlılığımla alçakgönüllüyüm çünkü yumurtaya [attendee.GetSheHe] adım kala. Bıçağı [attendee.GetHerHis]'ün boğazına dayadım ve #emp dilimledi#!. [attendee.GetHerHis|U] kan yumurtanın üzerine döküldü ve [attendee.GetSheHe] cansız bir şekilde yere düştü." #NT!
- agot_dragon_hatching.0016.desc_life_attendee_host: "[attendee.GetFirstNamePossessive]'ın bana ve davama olan bağlılığı karşısında alçakgönüllü oluyorum, çünkü [attendee.GetSheHe] öne çıkıyor. [attendee.GetSheHe|U] yumurtanın önünde dururken [ritual_leader_character.GetFirstNameNicknamedNoTooltip] bıçağı [attendee.GetHerHis] boğazına bastırıyor. [attendee.GetSheHe|U] gözlerini kapatıyor ve [ritual_leader_character.GetFirstNameNicknamedNoTooltip] #emp dilimliyor#!. Yumurtanın üzerine kan dökülüyor ve [attendee.GetSheHe] cansız bir şekilde yere düşüyor." #NT!
- agot_dragon_hatching.0016.desc_life_attendee_other: "[attendee.GetFirstNamePossessive]'ın davaya olan bağlılığını hayretle izlerken, [attendee.GetSheHe] en büyük fedakarlığı yapmaya hazır bir şekilde öne çıkıyor. [attendee.GetSheHe|U] yumurtanın önünde duruyor, [ritual_leader_character.GetFirstNameNicknamedNoTooltip] bıçağı [attendee.GetHerHis] boğazına bastırıyor ve #emp dilimliyor#!. Yumurtanın üzerine kan dökülüyor ve [attendee.GetSheHe] cansız bir şekilde yere düşüyor." #NT!
- agot_dragon_hatching.0016.desc_life_attendee_me_unwilling: "Bir homurtuyla öne doğru itiliyorum, [ritual_leader_character.GetFirstNameNicknamedNoTooltip] bıçağı boğazıma bastırıyor. Bir küfür savurmak için ağzımı açıyorum, ama [ritual_leader_character.GetSheHe] daha hızlı...\n\nBir an acı oluyor, göğsümden aşağı doğru akan bir sıcaklık hissi ve sonra hiçbir şey..." #NT!
- agot_dragon_hatching.0016.desc_life_attendee_leader_unwilling: "[attendee.GetFirstNamePossessive]'ın [host.GetFirstNamePossessiveOrMyNoTooltip] sebepten ötürü öne itildiğini izliyorum. [attendee.GetSheHe|U] yumurtanın önüne itiliyor ve bıçağı [attendee.GetHerHis]'ün boğazına dayadım. #emp Dilim #!. [attendee.GetHerHis|U] yumurtanın üzerine kan dökülüyor ve [attendee.GetSheHe] cansız bir şekilde yere düşüyor." #NT!
- agot_dragon_hatching.0016.desc_life_attendee_host_unwilling: "[attendee.GetFirstNamePossessive]'ın benim davam uğruna öne itildiğini izliyorum. [attendee.GetSheHe|U] yumurtanın önüne itiliyor ve [ritual_leader_character.GetFirstNameNicknamedNoTooltip] bıçağı [attendee.GetHerHis]'ün boğazına dayıyor. #emp Dilim#!. [attendee.GetHerHis|U] yumurtanın üzerine kan dökülüyor ve [attendee.GetSheHe] cansız bir şekilde yere düşüyor." #NT!
- agot_dragon_hatching.0016.desc_life_attendee_other_unwilling: "[attendee.GetFirstNamePossessive]'ın öne doğru itildiğini dehşet içinde izliyorum. [attendee.GetSheHe|U] yumurtanın önüne itiliyor ve [ritual_leader_character.GetFirstNameNicknamedNoTooltip] bıçağı [attendee.GetHerHis]'ün boğazına dayıyor. #emp Dilim#!. [attendee.GetHerHis|U] yumurtanın üzerine kan dökülüyor ve [attendee.GetSheHe] cansız bir şekilde yere düşüyor." #NT!
- agot_dragon_hatching.0016.desc_life_prisoner_me: "Yumurtanın önüne getirilirken bağlarımda mücadele ediyorum.[ritual_leader_character.GetFirstNameNicknamedNoTooltip] boğazıma soğuk bir bıçak bastırıyor ve tüm bunların adaletsizliğine bağırabilmemden önce, boynumda keskin bir acı hissediyorum. Görüşüm bulanıklaşıyor, göğsüm sıcak hissediyor ama içeriden soğuyor ve sonra hiçbir şey hissetmiyorum..." #NT!
- agot_dragon_hatching.0016.desc_life_prisoner_leader: "Gardiyanlara mahkumu öne getirmelerini işaret ediyorum. [prisoner.GetFirstNameNoTooltip] yumurtanın önüne getiriliyor ve bıçağı [prisoner.GetHerHis]'in boğazına doğrultuyorum. Zamanlama kritik ve [prisoner.GetSheHe] konuşamadan #emp dilim#! atıyorum. Yumurtanın üzerine kan dökülüyor ve [prisoner.GetSheHe] cansız bir şekilde yere düşüyor." #NT!
- agot_dragon_hatching.0016.desc_life_prisoner_host: "Gardiyanlara mahkumu öne getirmelerini işaret ediyorum. [prisoner.GetFirstNameNoTooltip] yumurtanın önüne getiriliyor ve [ritual_leader_character.GetFirstNameNicknamedNoTooltip] bıçağı [prisoner.GetHerHis]'nin boğazına doğrultuyor. Zamanlama kritik ve [ritual_leader_character.GetFirstNameNicknamedNoTooltip] #emp dilim#! [prisoner.GetSheHe] konuşamadan önce. Yumurtanın üzerine kan dökülüyor ve [prisoner.GetSheHe] cansız bir şekilde yere düşüyor." #NT!
- agot_dragon_hatching.0016.desc_life_prisoner_other: "Muhafızların yumurtanın önüne [prisoner.GetFirstNameNoTooltip] getirmesini rahatsızlıkla izliyorum. [ritual_leader_character.GetFirstNameNicknamedNoTooltip] bıçağı [prisoner.GetHerHis]'nin boğazına doğrultuyor ve [prisoner.GetSheHe] konuşamadan #emp dilim#! kesiyor. Yumurtanın üzerine kan dökülüyor ve [prisoner.GetSheHe] cansız bir şekilde yere düşüyor." #NT!
- agot_dragon_hatching.0016.desc_life_everyone_me: "Konuklarıma bakıyorum, sırayla her birine, sonra da muhafızlarıma. Başlarını sallayarak her birini öne getirmeye başlıyorlar. Her biri yumurtanın önüne getirildiğinde, bıçak boğazlarına dayandığında ve yumurtadan çıkmaları için hayatları verildiğinde, protesto, öfke ve korku çığlıkları odayı dolduruyor. Yumurtanın önünde duruyorum, etrafımda toplanan tüm insanların kanı, sonunda sıra bana gelene kadar. Talimatlar açık; bununla kesinlikle başarılı olmalıyız.\n\nGözlerimi kapatıyorum, bıçağın boğazımda sürüklendiğini hissediyorum ve sonra hiçbir şey yok..." #NT!
- agot_dragon_hatching.0016.desc_life_everyone_oh_no: "Hala neyin feda edileceğine dair bir kelime yok, gardiyanlar çeliklerini çekip her birini öne getirmeye başlayınca şok oluyorum. Protesto, öfke ve korku çığlıkları odayı dolduruyor, aralarında benim sesim de var. Yine de gözlerimin önünde, her biri yumurtanın önüne getiriliyor, bıçak boğazlarına dayanıyor ve yumurtadan çıkmaları için hayatları veriliyor. İtiraz ediyorum ama çığlıklarım görmezden geliniyor. Mücadele ediyorum ama mücadelelerim boşuna. Nefret ve meydan okuma dolu son bir bakışla yumurtanın önüne getiriliyorum, bıçak boğazıma dayanıyor ve yumurtadan çıkmaları için hayatım veriliyor..." #NT!
- agot_dragon_hatching.0016.desc_newline: "\n\n" #NT!
- agot_dragon_hatching.0016.desc_minor_wood: "Odunlar bir yığın halinde toplanır ve yumurta onun üzerine yerleştirilir. Alevler yakılır ve ısı yükselmeye başlar." #NT!
- agot_dragon_hatching.0016.desc_minor_coal: "Yumurtanın altına kızgın kömürler yerleştirilerek alttan ısıtılır." #NT!
- agot_dragon_hatching.0016.desc_minor_oil: "Yumurta bir kase yağın içine yerleştirilir, sıvı bir meşale ile yakılarak ısıtılmaya başlanır." #NT!
- agot_dragon_hatching.0016.desc_minor_wildfire: "Yumurtanın üzerine orman ateşi dökülüp yakılır, yeşil alevler kabuğu yalayarak parlar." #NT!
- agot_dragon_hatching.0016.desc_minor_lava: "Küçük bir lav damarı bulunur ve yumurta erimiş kayadan oluşan küçük bir havuza yerleştirilir." #NT!
- agot_dragon_hatching.0016.desc_minor_magnifying_glass: "Yumurtanın önüne büyük bir bardak getirilir, güneş ışınları bu bardaktan geçerek kabuğu ısıtır." #NT!
- agot_dragon_hatching.0016.desc_medium_wood: "Büyük bir ateş yığını hazırlanır, yumurta onun üzerine yerleştirilir ve etrafında eşit ısınmayı sağlamak için küçük ateşler yakılır." #NT!
- agot_dragon_hatching.0016.desc_medium_coal: "Yumurtanın önüne bir halka şeklinde sıcak kömürler yerleştirilir, üstüne büyük bir mangal yerleştirilir. Yumurta içine yerleştirilir, ısı aşağıdan yükselir." #NT!
- agot_dragon_hatching.0016.desc_medium_oil: "Yumurtanın önüne büyük bir kase karışık yağ getirilir. Yumurta içine yerleştirilir ve sıvı bir meşale ile yakılarak ısıtılmaya başlanır." #NT!
- agot_dragon_hatching.0016.desc_medium_wildfire: "Bir orman yangını havuzu ortaya çıkarılır ve yumurta içine batırılır. Sıvı tutuşturulur, eterik yeşil alevler yumurtanın içini maskeler." #NT!
- agot_dragon_hatching.0016.desc_medium_lava: "Büyük bir lav havuzu bulunur ve yumurta dikkatlice içine yerleştirilir. Erimiş kaya yumurtanın etrafında köpürür ve kaynar, ısı onu ısıtmak için yükselir." #NT!
- agot_dragon_hatching.0016.desc_medium_magnifying_glass: "Yumurtanın önüne büyük bir bardak getirilir, güneş ışınları içinden odaklanarak kabuğa ısı uygulanır. Bardak yavaş bir daire içinde hareket ettirilir, her geçişte ısı artar." #NT!
- agot_dragon_hatching.0016.desc_major_wood: "Daha önce hiç görmediğim büyüklükte bir ateş yığını kuruluyor. Yumurta büyük bir törenle dikkatlice üstüne yerleştiriliyor ve alevler yakılıyor. Sıcaklık yükseliyor ve yumurta parlamaya başlıyor." #NT!
- agot_dragon_hatching.0016.desc_major_coal: "Yumurtanın önüne büyük bir pirinç ve demir mangal getirilir, içindeki kömürler kızıl-ateşli bir şekilde parlar. Uygun kelimeler söylenirken yumurta içine yerleştirilir ve ısı yükselmeye başlar." #NT!
- agot_dragon_hatching.0016.desc_major_oil: "Bilinen dünyanın dört bir yanından gelen karışık yağlardan oluşan büyük bir kase yumurtanın önüne getirilir. Yumurta içine yerleştirilir ve sıvı bir meşale ile yakılarak ısıtılmaya başlanır. Yumurtanın üstüne daha fazla yağ dökülür ve alevler giderek yükselir." #NT!
- agot_dragon_hatching.0016.desc_major_wildfire: "En güçlü ve tehlikeli orman yangını yumurtanın önüne getirilir, sıvı kabuğun üzerine dökülür. Yumurtanın altına bir miktar sıvı bırakılır ve eterik yeşil alevler yakılır." #NT!
- agot_dragon_hatching.0016.desc_major_lava: "Ejderha Dağı'un içindeki büyük bir lav odası yumurta için bir kaba dönüştürüldü. Büyük bir tören ve özenle yumurta içine yerleştirildi, erimiş kaya etrafında köpürdü ve kaynadı." #NT!
- agot_dragon_hatching.0016.desc_major_magnifying_glass: "Yumurtanın önüne bir dizi büyük bardak getirilir, güneş ışınları bunların içinden odaklanarak kabuğa ısı uygular. Bir ışık korosu gibi, bardaklar yavaş bir daire içinde hareket ettirilir, ışık ve ısı gösterisi göz kamaştırıcıdır." #NT!
- agot_dragon_hatching.0016.desc_massive_wood: "Ceset odunu, neredeyse bir bina kadar yüksek bir dağdır. Meşalelerle yumurta içine yerleştirilir ve alevler yakılır. Sıcaklık yoğundur ve görülmesi zor olsa da yumurta parlıyor gibi görünür." #NT!
- agot_dragon_hatching.0016.desc_massive_coal: "Yumurtanın önüne, içine bir atın sığabileceği kadar büyük, pirinç ve demirden yapılmış büyük bir mangal getirilir. İçerideki kömürler beyaz-ateşli bir şekilde parlar ve yumurta törensel bir şekilde içine yerleştirilir. Sıcaklık yoğun olur ve yumurta parlamaya başlar." #NT!
- agot_dragon_hatching.0016.desc_massive_oil: "Büyük, boş bir kase getirilir ve bilinen dünyanın dört bir yanından gelen yağlar sırayla kaseye getirilir. Çeşitli inançlara sahip kutsal erkekler ve kadınlar, kaseye dökülürken kendi yağları için dua ederler. Yumurta içine yerleştirilir ve sıvı bir meşale ile yakılarak ısıtma başlatılır." #NT!
- agot_dragon_hatching.0016.desc_massive_wildfire: "En güçlü ve tehlikeli orman yangını yumurtanın önüne getirilir, sıvı kabuğun üzerine dökülür. Yumurtanın altına bir miktar sıvı bırakılır ve alevler yakılır. Ateşin kükremesi sağır edicidir, sanki ısıyla #emp çığlık atıyor#! gibi." #NT!
- agot_dragon_hatching.0016.desc_massive_lava: "Ejderha Dağı'un en tepesi büyük bir demir bantla çevrilmiş, yumurta içerideki erimiş kayanın üstünde asılı duruyor. Büyük bir törenle, herkes yumurtanın lavın içine indirilmesini izliyor. Erimiş kaya yumurtanın etrafında köpürüyor ve kaynıyor, sıcaklık ateşli bir seviyeye çıkıyor." #NT!
- agot_dragon_hatching.0016.desc_massive_magnifying_glass: "Yumurtanın önüne çeşitli şekil ve boyutlarda bir dizi bardak getirilir, güneş ışınları içlerinden geçerek kabuğa ısı uygular. Her biri binlerce ışık noktasıyla dans eder, hiç kimsenin asla unutamayacağı bir gösteride daire içine alındıklarında ısı yükselir." #NT!
- agot_dragon_hatching.0016.desc_blood_sacrifice: "Kan kasesi ortaya çıkarıldı" #NT!
- agot_dragon_hatching.0016.desc_bodies_sacrifice: "Bedenler ortaya çıkarılıyor" #NT!
- agot_dragon_hatching.0016.desc_body_sacrifice: "Beden ortaya çıkar" #NT!
- agot_dragon_hatching.0016.desc_knowledge_wood: "ve yanan odunların üstüne yerleştirildi" #NT!
- agot_dragon_hatching.0016.desc_knowledge_coal: "ve sıcak kömürlerin üzerine yerleştirildi" #NT!
- agot_dragon_hatching.0016.desc_knowledge_oil: "ve kasenin içine yakılmış yağ yerleştirildi" #NT!
- agot_dragon_hatching.0016.desc_knowledge_wildfire: "ve yanan orman yangınının tepesine yerleştirildi" #NT!
- agot_dragon_hatching.0016.desc_knowledge_lava: "ve lav havuzuna indirildi" #NT!
- agot_dragon_hatching.0016.desc_knowledge_magnifying_glass: "ve güneş ışınları da ona odaklanmış durumda" #NT!
- agot_dragon_hatching.0016.desc_knowledge_end: "tüm uygun özenle." #NT!
- agot_dragon_hatching.0016.desc_esoteric_wood: "ve yanan odunların üzerine atıldı" #NT!
- agot_dragon_hatching.0016.desc_esoteric_coal: "ve sıcak kömürlerin üzerine atıldı" #NT!
- agot_dragon_hatching.0016.desc_esoteric_oil: "ve yanan yağ kasesine atıldı" #NT!
- agot_dragon_hatching.0016.desc_esoteric_wildfire: "ve orman yangınının tepesine fırlatıldı" #NT!
- agot_dragon_hatching.0016.desc_esoteric_lava: "ve lav havuzuna atıldı" #NT!
- agot_dragon_hatching.0016.desc_esoteric_magnifying_glass: "ve yumurtanın üstüne koy" #NT!
- agot_dragon_hatching.0016.desc_esoteric_end: "tezahüratlar giderek yoğunlaşırken." #NT!
- agot_dragon_hatching.0016.desc_very_low: "Tüm gözler bir kez daha ejderhaların büyüsüne tanıklık etmek üzere yumurtaya çevrildi." #NT!
- agot_dragon_hatching.0016.desc_low: "Tüm gözler, etrafını saran sıcakla parlıyormuş gibi görünen yumurtaya çevrildi." #NT!
- agot_dragon_hatching.0016.desc_medium: "Bütün gözler yumurtaya dikilmiş, her nefes, gelecek mucizenin beklentisiyle tutuluyor." #NT!
- agot_dragon_hatching.0016.desc_high: "Bütün gözler, yuvasının ortasında hayatla nabız gibi atan parlayan yumurtaya çevrildi." #NT!
- agot_dragon_hatching.0016.desc_very_high: "Bütün gözler, içindeki güçten dolayı hafifçe titreyen parlayan yumurtaya dikilmişti." #NT!
- agot_dragon_hatching.0016.opt.dead_willing: "Benim kurbanım ejderhayı doğursun..." #NT!
- agot_dragon_hatching.0016.opt.dead_unwilling: "Lanet olsun sana, [host.GetTitledFirstNameNoTooltip]!" #NT!
- agot_dragon_hatching.0016.opt.alive: "Sabırsızlanıyorum!" #NT!
- agot_dragon_hatching.0016.opt.alive_tt: "Bir ejderhanın doğup doğmayacağını görmek için izliyorsun" #NT!
- agot_dragon_hatching.0016.opt.base_esoteric_tt: "Ezoterik bir yumurtadan çıkma #difficulty_easy başarılı bir yumurtadan çıkma şansını ARTTIRIR#! ancak aynı zamanda olumsuz bir sonuç çıkma şansını da artırır" #NT!
- agot_dragon_hatching.0016.opt.base_knowledge_tt: "Bilgi yumurtadan çıkmasının başarılı bir yumurtadan çıkma şansı üzerinde #difficulty_medium HİÇBİR ETKİ YOK#! vardır" #NT!
- agot_dragon_hatching.0016.opt.dragonlore_tt: "Ejderha bilginiz #difficulty_easy başarılı bir yumurtadan çıkma şansını ARTTIRIR#!" #NT!
- agot_dragon_hatching.0016.opt.dragonlore_knowledge_tt: "Bu bonus #difficulty_easy ARTIRILD#! çünkü bu bir bilgi kuluçkası" #NT!
- agot_dragon_hatching.0016.opt.synergy_type_tt: "Başarı şansınız, yumurtadan çıkma türü ile fedakarlık türü arasındaki sinerji nedeniyle #difficulty_easy ARTTIRILDI#!" #NT!
- agot_dragon_hatching.0016.opt.leader_quality_tt: "Başarı şansınız seçilen liderin kalitesi nedeniyle #difficulty_easy ARTTI#!" #NT!
- agot_dragon_hatching.0016.opt.sacrifice_level_tt: "Başarı şansınız, yapılan fedakarlık düzeyi nedeniyle #difficulty_easy ARTTI#!" #NT!
- agot_dragon_hatching.0016.opt.sacrifice_synergy_tt: "Fedakarlığı çevreleyen koşullar nedeniyle başarı şansınız #difficulty_easy ARTTI#!" #NT!
- agot_dragon_hatching.0016.opt.catalyst_level_high_tt: "Başarı şansınız #difficulty_easy BÜYÜK ÖLÇÜDE ARTTI#! çünkü kullanılan katalizörün seviyesi" #NT!
- agot_dragon_hatching.0016.opt.catalyst_level_low_tt: "Başarı şansınız, kullanılan katalizörün seviyesi nedeniyle #difficulty_easy ARTTI#!" #NT!
- agot_dragon_hatching.0016.opt.sacrifice_catalyst_synergy_tt: "Seçilen fedakarlık ile kullanılan katalizör arasındaki sinerji nedeniyle başarı şansınız #difficulty_easy ARTTI#!" #NT!
- agot_dragon_hatching.0016.opt.catalyst_leader_synergy_tt: "Tören lideri ile kullanılan katalizör arasındaki sinerji nedeniyle başarı şansınız #difficulty_easy ARTTI#!" #NT!
- agot_dragon_hatching.0016.opt.leader_sacrifice_synergy_tt: "Başarı şansınız, törenin lideri ile fedakarlık türü arasındaki sinerji nedeniyle #difficulty_easy ARTTI#!" #NT!
-  
- agot_dragon_hatching.0017.t: "Kan, Ama Ne Kadar?" #NT!
- agot_dragon_hatching.0017.desc_self: "Bu toplantıya katılan çeşitli gizemli ustaların fikirleri, geldikleri topraklar kadar çılgın ve çeşitlidir. Ancak, hepsinin hemfikir olduğu tek şey kan dökülmesi gerektiğidir. Şimdi soru şudur: #italic ne kadar?#!\n\nDo Halkımın geleneği olduğu üzere kan akıtırım mı yoksa daha büyük bir kurban mı sunarım? Toplanan ezoterikler arasında birçoğu, hayat için hayat ödenmesi gerektiği konusunda hemfikirdir ve daha azı işe yaramaz. Soru şudur: Ben katılıyor muyum?" #NT!
- agot_dragon_hatching.0017.desc_leader: ""Ritüel [ROOT.Char.GetTitledFirstName]'a göre hazırlanıyor," diyor [ritual_leader_character.GetSheHe], [ritual_leader_character.GetHerHis] sesi sakin ve kararlı. "Kurban sorusunu... gündeme getirmeliyim. İkimiz de kan dökülmesi gerektiği konusunda hemfikir olsak da, toplananların çoğu -ben de onlardan biriyim itiraf etmeliyim- hayat için hayat ödenmesi gerektiğine ve daha azının işe yaramayacağına inanıyor. Ne diyorsun?" [ritual_leader_character.GetFirstNameNicknamed] bana bakıyor, sesi hala düzgün, sanki bu dünyadaki en doğal kararmış gibi.\n\nKuşkusuz [ritual_leader_character.GetSheHe] benden daha fazlasını biliyor, ama yine de bu ağır bir karar. Bir ejderha şansı için ne vermeye razıyım?" #NT!
- agot_dragon_hatching.0017.opt.a: "Gerekeni vereceğim." #NT!
- agot_dragon_hatching.0017.opt.a_tt: "Feda edilecek bir hayat seçeceksin" #NT!
- agot_dragon_hatching.0017.opt.b: "Ben âdeti vereceğim." #NT!
- agot_dragon_hatching.0017.opt.b_tt: "Bir kan kurbanı seçeceksin" #NT!
-  
- agot_dragon_hatching.0018.t: "$agot_dragon_hatching.0011.t$" #NT!
- agot_dragon_hatching.0018.desc_knowledge: "Kimi zorla kurban edeceğime dair seçim, dikkatle düşünmem gereken bir seçimdir, çünkü katılanların çoğu, yumurtadan çıkmak üzere bir canın alınması fikrinden zaten rahatsızdır. Kimi seçeceğim herkes tarafından gözlemlenecektir ve akıllıca seçim yapmaya dikkat etmeliyim." #NT!
- agot_dragon_hatching.0018.desc_esoteric: "Zorla kimi feda edeceğime karar vermek, dikkatli bir şekilde düşünmem gereken bir karardır, çünkü kanın gücünün, hayat daha önemli bir bireyin hayatı olduğunda daha güçlü olduğu teorize edilmiştir. Kral, lord veya sıradan birinin kanı — hepsi eşit olarak tartılmayabilir..." #NT!
- agot_dragon_hatching.0018.opt.a: "Muhafızlar, yakalayın onları!" #NT!
- agot_dragon_hatching.0018.opt.a_tt: "#bold;V Seçilen katılımcının hayatı#! bu yumurtadan çıkmanın güç kaynağı olacak" #NT!
- agot_dragon_hatching.0018.opt.b: "Tekrar düşündüğümde başka seçenekler de var." #NT!
- agot_dragon_hatching.0018.opt.b_tt: "Geri dönüp başka bir kurban seçeceksin" #NT!
- agot_dragon_hatchling.0018.toast.sacrifice_dead:0 "Kurban Öldü"
- agot_dragon_hatching.0019.t: "Kurban Ben Miyim?" #NT!
- agot_dragon_hatching.0019.desc: "Hiç kimse bir ejderhanın yumurtadan çıkmasının fedakarlık gerektirmeyeceğini bekliyordu, ama [host.GetTitledFirstNamePossessive] muhafızın yaklaştığını görünce seçildiğimi anladım!\n\nAlınmadan önce sadece bir anım var - ne yapacağım?!" #NT!
- agot_dragon_hatching.0019.opt.escape.title: "Kaçmak!" #NT!
- agot_dragon_hatching.0019.opt.escape.a_tt: "Özgürlüğe giden yolu kestin" #NT!
- agot_dragon_hatching.0019.opt.escape.b_tt: "Karmaşanın içinde kayıp gidiyorsun" #NT!
- agot_dragon_hatching.0019.opt.caught.title: "Yakalanmış!" #NT!
- agot_dragon_hatching.0019.opt.caught.a_tt: "Silahsızlandırılıp götürüldün" #NT!
- agot_dragon_hatching.0019.opt.caught.b_tt: "Hileniz başarısız olur ve götürülürsünüz" #NT!
- agot_dragon_hatching.0019.opt.a: "Sessizce gitmeyeceğim!" #NT!
- agot_dragon_hatching.0019.opt.a.f: "Özgürlüğe giden yolda savaşmaya çalışıyorsun" #NT!
- agot_dragon_hatching.0019.opt.b: "[ROOT.Char.GetTitledFirstNameNoTooltip]? Ben [ROOT.Char.GetHerHim]'i öyle gördüm!" #NT!
- agot_dragon_hatching.0019.opt.b.f: "Durumdan kurtulmak için yalan söylemeye çalışıyorsun" #NT!
- agot_dragon_hatching.0019.opt.c: "Tamam, eğer biri olacaksa ben olayım." #NT!
- agot_dragon_hatching.0019.opt.c.f: "Kaderini kabul ediyorsun" #NT!
- agot_dragon_hatching.0019.opt.c_tt: "#bold;V Hayatınız#! bu yumurtadan çıkmanın güç kaynağı olacak" #NT!
-  # Catastrophe results 
- agot_dragon_hatching.0101.t: "Hırsın Felaketi!" #NT!
- agot_dragon_hatching.0101.desc: "Felaket!\n\nGözlerimin önünde yumurta parçalandı, içindeki ejderhanın gücü ve gerçekleştirilen ritüeller bir yıkım dalgasıyla serbest bırakıldı. Sıcaklık dayanılmazdı, alevler yollarına çıkan her şeyi tüketiyordu. Benim deliliğim hepimizin başına yıkım getirdi ve yeni bir ejderhanın hayali ateş ve kan içinde öldü." #NT!
- agot_dragon_hatching.0101.opt.a: "Aman Tanrım, hayır!" #NT!
- agot_dragon_hatching.0102.t: "$agot_dragon_hatching.0101.t$" #NT!
- agot_dragon_hatching.0102.desc: "Felaket!\n\nGözlerimin önünde yumurta parçalandı, içindeki ejderhanın gücü ve gerçekleştirilen ritüeller bir yıkım dalgasıyla serbest bırakıldı. Sıcaklık dayanılmazdı, alevler yollarına çıkan her şeyi tüketiyordu. [host.GetTitledFirstName]'ın çılgınlığı hepimizi mahvetti ve yeni bir ejderhanın hayali ateş ve kan içinde öldü." #NT!
- agot_dragon_hatching.0102.opt.a: "$agot_dragon_hatching.0101.opt.a$" #NT!
-  # Disaster results 
- agot_dragon_hatching.0201.t: "Hırsın Felaketi!" #NT!
- agot_dragon_hatching.0201.desc: "Felaket!\n\nYumurta sıcakta parçalanır, içindeki güç onu parçalara ayırır ve kabuk ve iç organların alevli parçalarını uçurur. Uçan enkaz toplananlara çarpar ve hem kişileri hem de yerleri tutuşturur. Yeni bir ejderha hayalim ateş ve kan içinde öldü." #NT!
- agot_dragon_hatching.0201.opt.a: "Eğil ve saklan!" #NT!
- agot_dragon_hatching.0202.t: "$agot_dragon_hatching.0201$" #NT!
- agot_dragon_hatching.0202.desc: "Felaket!\n\nYumurta sıcakta parçalanır, içindeki güç onu parçalara ayırır ve kabuk ve iç organların alevli parçalarını etrafa saçar. Uçan enkaz toplananlara çarpar ve hem kişileri hem de yerleri tutuşturur. [host.GetTitledFirstNamePossessive] yeni bir ejderhanın rüyası ateş ve kan içinde öldü." #NT!
- agot_dragon_hatching.0202.opt.a: "$agot_dragon_hatching.0201.opt.a$" #NT!
-# Nothing results 
-agot_dragon_hatching.0303.t: "Hırsın Örsünde Kırılma" #NT!
-agot_dragon_hatching.0303.desc: "#bold;italic *ÇAT*#!\n\nSes sağır edici derecede yüksek. Hayal kırıklığı dolu haykırışlar ve iç çekişlerin oluşturduğu büyük bir koro eşliğinde, yumurta sıcaktan çatlayıp parçalara ayrıldı. Hayallerim ve yumurtam, önümdeki kabuk kadar paramparça oldu." #NT!
-agot_dragon_hatching.0303.opt.a: "Lanet olsun hepsine!" #NT!
+agot_dragon_hatching.0008.t:0 "Canavara Karşılık Canavar"
+agot_dragon_hatching.0008.desc_knowledge:0 "Bilgili topluluğum arasında canlı bir yaratığı kurban etmeye karşı bir tereddüt havası olsa da, herkes bu törenin başarılı olması için bir canın verilmesi gerektiği konusunda hemfikir. Tarihlere ve mevcut metinlere danıştıktan sonra, şimdi hangi tür canavarın kurban edileceğine karar vermeliyiz."
+agot_dragon_hatching.0008.desc_esoteric:0 "Evrenin yasaları açıktır, can cana ödenmelidir. Aramızdaki maegi'ler ve büyücüler, kuluçkanın başarılı olması için bir kurbanın gerekli olduğu konusunda hemfikir. Şimdi hangi canavarın kurban edileceğine karar vermeliyiz."
+agot_dragon_hatching.0008.opt.a_dog:0 "Ah sadık [ROOT.Char.Custom('DogStoryName')], son eylemin asil bir eylem olacak."
+agot_dragon_hatching.0008.opt.a_dog_tt:0 "#bold;V [ROOT.Char.Custom('DogStoryName')]'ın canı#! bu kuluçka için güç kaynağı olacak"
+agot_dragon_hatching.0008.opt.a_cat:0 "Sevgili [ROOT.Char.Custom('CatStoryName')], fedakarlığın boşuna olmayacak."
+agot_dragon_hatching.0008.opt.a_cat_tt:0 "#bold;V [ROOT.Char.Custom('CatStoryName')]'ın canı#! bu kuluçka için güç kaynağı olacak"
+agot_dragon_hatching.0008.opt.b:0 "Belki yerel halktan bazı çiftlik hayvanları bağışlanabilir?"
+agot_dragon_hatching.0008.opt.b_tt:0 "Bazı #bold;V yerel çiftlik hayvanlarının canı#! bu kuluçka için güç kaynağı olacak"
+agot_dragon_hatching.0008.opt.c:0 "Bu vesileyle avlanmış av hayvanlarını getirin."
+agot_dragon_hatching.0008.opt.c_tt:0 "Bir #bold;V vahşi hayvanın canı#! bu kuluçka için güç kaynağı olacak"
+agot_dragon_hatching.0008.opt.d:0 "Sıradan bir canavar olmaz. Daha egzotik bir şey bulmalıyız!"
+agot_dragon_hatching.0008.opt.d_tt:0 "Bir #bold;V egzotik hayvanın canı#! bu kuluçka için güç kaynağı olacak"
 
-agot_dragon_hatching.0304.t: "Boşuna Çabalar" #NT!
-agot_dragon_hatching.0304.desc: "Kalabalık nefesini tutmuş bekliyor, yumurtanın çatlamasını, hareket etmesini, #emp bir şey yapmasını#! bekliyor. Ama hiçbir şey olmuyor. Yumurta olduğu gibi, bozulmamış ve değişmemiş kalıyor.\n\nHayal kırıklığı öksürükleri ve başarısızlık fısıltıları havayı doldururken, çabalarımın boşuna olduğunu kabul etmeliyim. Ağır bir kalple, hizmetçilere yumurtayı çıkarmalarını ve temizliği başlatmalarını söylüyorum." #NT!
-agot_dragon_hatching.0304.opt.a: "$agot_dragon_hatching.0303.opt.a$" #NT!
+agot_dragon_hatching.0009.t:0 "Kan Bedeli"
+agot_dragon_hatching.0009.desc_knowledge:0 "Valyrialıların ejderhalarını kuluçkalaştırmak için kan büyüsü kullandıkları iyi bilinmektedir. Odadaki bilgili topluluk ne kadar kullanıldığını tartışıyor, ancak hepsi benzer bir haraçın başarılı olma olasılığının en yüksek olduğu konusunda hemfikir. Şimdi karar, kimden kan alınacağı."
+agot_dragon_hatching.0009.desc_esoteric:0 "En büyük kan büyücüleri, eski Valyrialılardı - tarihin kayıp sayfalarında kalan bir zamanda ejderhaları kuluçkalaştıranlar. Misafirlerimin en gizemlileriyle çevrili ve maegi'lerimin dikkatli bakışları altında, şimdi nasıl benzer bir haraç sunacağımıza karar vermeliyim."
+agot_dragon_hatching.0009.opt.a:0 "Kendi kanımdan başka hiçbir kan yeterli olmaz."
+agot_dragon_hatching.0009.opt.a_tt:0 "#bold;V Kanınız#! bu kuluçka için güç kaynağı olacak"
+agot_dragon_hatching.0009.opt.b:0 "Eminim lider olarak [ritual_leader_character.GetFirstNameNicknamed], kanını memnuniyetle sunacaktır."
+agot_dragon_hatching.0009.opt.b_tt:0 "#bold;V [ritual_leader_character.GetFirstNameNicknamedPossessiveNoTooltip] kanı#! bu kuluçka için güç kaynağı olacak"
+agot_dragon_hatching.0009.opt.c_tt_1:0 "#bold;V Mevcut herkesin kanı#! bu kuluçka için güç kaynağı olacak"
+agot_dragon_hatching.0009.opt.c_tt_2:0 "@warning_icon! #X Her katılımcı yaralanacak#!"
+agot_dragon_hatching.0009.opt.d:0 "[prisoner_blood_sacrifice.GetFirstName] itiraz edemez..."
+agot_dragon_hatching.0009.opt.d_tt:0 "#bold;V [prisoner_blood_sacrifice.GetShortUINamePossessiveNoTooltip] kanı#! bu kuluçka için güç kaynağı olacak"
+agot_dragon_hatching.0009.opt.e:0 "Bir daha düşündüm de, başka bir yol var."
+agot_dragon_hatching.0009.opt.e_tt:0 "Kan seçenekleri ekranına geri döneceksiniz."
 
-agot_dragon_hatching.0305.t: "$agot_dragon_hatching.0303.t$" #NT!
-agot_dragon_hatching.0305.desc: "#bold;italic *ÇAT*#!\n\nSes sağır edici derecede yüksek. Hayal kırıklığı dolu haykırışlar ve iç çekişlerden oluşan büyük bir koro eşliğinde, benimki de dahil yumurta sıcaktan çatlayıp parçalara ayrıldı. [host.GetTitledFirstNamePossessive] rüyalar ve [host.GetHerHis] yumurta, önümdeki kabuk kadar paramparça oldu." #NT!
-agot_dragon_hatching.0305.opt.a: "O kadar da ümit verici görünüyordu ki..." #NT!
+agot_dragon_hatching.0010.t:0 "$agot_dragon_hatching.0009.t$"
+agot_dragon_hatching.0010.desc:0 "Valyrialıların ejderhalarını kuluçkalaştırmak için kan büyüsü kullandıkları iyi bilinmektedir. Odadaki bilgili topluluk ne kadar kullanıldığını tartışırken, aramızdaki daha mistik olanlar benzer bir haraçın başarılı olma olasılığının en yüksek olduğu konusunda eminler.\n\n[host.GetTitledFirstName]'ın bir hayvanı veya mahkumu kanatacağını bekliyordum, ama bunun yerine [host.GetSheHe] hepimizden tören için kendi damarlarımızı açmamızı istedi!"
+agot_dragon_hatching.0010.opt.a:0 "Yapılması gerekiyorsa, yapılacak."
+agot_dragon_hatching.0010.opt.b:0 "Buna katılmamıştım!"
 
-agot_dragon_hatching.0306.t: "$agot_dragon_hatching.0304.t$" #NT!
-agot_dragon_hatching.0306.desc: "Kalabalık nefesini tutmuş bir şekilde bakıyor, yumurtanın çatlamasını, hareket etmesini, #emp bir şey yapmasını#! bekliyor. Ama hiçbir şey olmuyor. Yumurta olduğu gibi, bozulmamış ve tavizsiz kalıyor.\n\nHayal kırıklığı öksürükleri ve başarısızlık fısıltıları havayı doldururken, [host.GetTitledFirstName] çabalarının boşuna olduğunu kabul etmeli. [host.GetHerHim] hizmetçilere yumurtayı çıkarmalarını ve temizliği başlatmalarını emrediyor. Ben sadece başımı üzüntüyle sallayabiliyorum." #NT!
-agot_dragon_hatching.0306.opt.a: "$agot_dragon_hatching.0305.opt.a$" #NT!
+agot_dragon_hatching.0011.t: "Cana Karşılık Can"
+agot_dragon_hatching.0011.desc_knowledge: "Üstatlarım ve bilgili adamlarım arasında bu eylemin barbarlığına karşı bir tereddüt havası olsa da, hepimiz böylesine büyülü doğaya sahip nesnelerle uğraşırken böylesine bir ödemenin karşılık bulma olasılığının en yüksek olduğu konusunda hemfikiriz. Bir can karşılığında bir can vermek ağır bir bedel gibi görünebilir, ancak şüpheci bir zihin bile bir ejderhanın yaşayan herhangi birinden daha değerli olduğunu inkar edemez."
+agot_dragon_hatching.0011.desc_esoteric: "Büyücülerimin ve büyücülerimin her biri bana aynı şeyi söylüyor: Tüm Valyria ve ejderhaları #bold kan büyüsü#! ile yoğrulmuştu. Onunla bu yeni hayatı dünyaya getirebilirim. Ama can sadece cana ödenebilir ve şimdi bedelimi seçmeliyim."
+agot_dragon_hatching.0011.desc_escaped_attendee:0 "[escaped_unwilling_attendee.GetFirstName] muhafızlarımdan kaçmayı başarmış ve törenden kaçmış gibi görünüyor. Bana [escaped_unwilling_attendee.GetSheHe]'ın muhtemelen binada saklandığı veya eve gittiği söylendi. Şüphesiz [escaped_unwilling_attendee.GetSheHe] bana çok kızgın, ancak tören devam etmeli ve kuluçka için ödenecek bir can seçmeliyim."
+agot_dragon_hatching.0011.desc_refused_leader:0 "Benim ve katılanların hayal kırıklığına uğramasına rağmen, [ritual_leader_character.GetFirstNameNicknamed] kuluçka için canını vermeyi reddetti. Şimdi bedeli ödeyecek başka birini seçmek bana düşüyor."
+agot_dragon_hatching.0011.desc_refused_attendee:0 "[attendee_life_sacrifice_refusing.GetFirstName], kuluçka için canını vermeyi reddetti ve güvenli bir mesafeden izlemeyi tercih etti. Şimdi bedeli ödeyecek başka birini seçmek bana düşüyor."
+agot_dragon_hatching.0011.opt.a: "Bunun için kendi canımı vereceğim."
+agot_dragon_hatching.0011.opt.a_tt: "#bold;V Kendi canınız#! bu kuluçka için güç kaynağı olacak"
+agot_dragon_hatching.0011.opt.b:0 "Eminim lider olarak [ritual_leader_character.GetFirstNameNicknamed] kendi canını memnuniyetle sunacaktır."
+agot_dragon_hatching.0011.opt.b_accepts:0 "#bold;V [ritual_leader_character.GetFirstNameNicknamedPossessiveNoTooltip] canı#! bu kuluçka için güç kaynağı olacak"
+agot_dragon_hatching.0011.opt.b_declines:0 "[ritual_leader_character.GetFirstNameNicknamed] reddediyor ve başka birini seçmelisiniz"
+agot_dragon_hatching.0011.opt.c:0 "Bedeli ödemesi için bir mahkum seçeceğim!"
+agot_dragon_hatching.0011.opt.c_tt: "Size aralarından seçim yapabileceğiniz bir mahkum listesi sunulacak"
+agot_dragon_hatching.0011.opt.d:0 "Belki [attendee_life_sacrifice_willing.GetFirstName] kabul eder?"
+agot_dragon_hatching.0011.opt.d_accepts: "#bold;V [attendee_life_sacrifice_willing.GetShortUINamePossessiveNoTooltip] canı#! bu kuluçka için güç kaynağı olacak"
+agot_dragon_hatching.0011.opt.d_declines: "[attendee_life_sacrifice_willing.GetShortUIName] reddediyor ve başka birini seçmelisiniz"
+agot_dragon_hatching.0011.opt.d_unwilling:0 "Misafirlerimden biri bedeli ödeyecek..."
+agot_dragon_hatching.0011.opt.d_tt_unwilling:0 "Misafirlerinizden birini kurban etmeyi emredeceksiniz"
+agot_dragon_hatching.0011.opt.d_tt_unwilling_may_escape:0 "@warning_icon! #warning Kaçabilirler#!"
+agot_dragon_hatching.0011.opt.e:0 "#N;bold Ceset yığınımız, ejderhanın yükseleceği küller olacak!#!"
+agot_dragon_hatching.0011.opt.e_tt: "#warning Mevcut herkesin canı bu kuluçka için güç kaynağı olacak#!"
+agot_dragon_hatching.0011.opt.f:0 "Bir daha düşündüm de, başka bir yol var."
+agot_dragon_hatching.0011.opt.f_tt:0 "Kan seçenekleri ekranına geri döneceksiniz."
 
-# Success results 
-agot_dragon_hatching.0401.t: "Yeni Bir Şafak" #NT!
-agot_dragon_hatching.0401.desc: "Bir anlığına her şey sessizleşir. Kalabalık nefesini tutar. Hiçbir şey olmayacakmış gibi görünür... Sonra yumurta titrer ve çatlar. Küçük, pullu bir baş belirir, ardından uzun, kıvrımlı bir boyun çıkar. İçimizdeki ejderha doğmuştur! Ejderhaların yeni bir çağı başlamıştır ve bu benim eserim!" #NT!
-agot_dragon_hatching.0401.opt.a: "Yaşasın!" #NT!
-agot_dragon_hatching.0401.opt.a_tt: "Ejderhayı başarıyla yumurtadan çıkardın!" #NT!
+agot_dragon_hatching.0012.t:0 "$agot_dragon_hatching.0011.t$"
+agot_dragon_hatching.0012.desc_knowledge:0 "Mahkum seçimini dikkatlice düşünmeliyim, çünkü orada bulunanların çoğu kuluçka için bir can alınması düşüncesinden zaten tedirgin. Kimi seçtiğimi herkes görecek ve akıllıca seçmeye özen göstermeliyim."
+agot_dragon_hatching.0012.desc_esoteric:0 "Mahkum seçimini dikkatlice düşünmeliyim, çünkü kanın gücünün, can daha önemli bir bireye ait olduğunda daha güçlü olduğu teorize edilmiştir. Kral, lord veya sıradan birinin kanı - hepsi eşit ağırlıkta olmayabilir..."
+agot_dragon_hatching.0012.opt.a:0 "Sonuçta itiraz edemezler..."
+agot_dragon_hatching.0012.opt.a_tt: "#bold;V Seçilen mahkumun canı#! bu kuluçka için güç kaynağı olacak"
+agot_dragon_hatching.0012.opt.b:0 "Bir daha düşündüm de, başka seçenekler de var."
+agot_dragon_hatching.0012.opt.b_tt:0 "Geri dönecek ve başka bir kurban seçeceksiniz"
 
-agot_dragon_hatching.0402.t: "$agot_dragon_hatching.0401.t$" #NT!
-agot_dragon_hatching.0402.desc: "Bir anlığına her şey sessizleşir. Kalabalık nefesini tutar. Hiçbir şey olmayacakmış gibi görünür... Sonra yumurta titrer ve çatlar. Küçük, pullu bir baş belirir, ardından uzun, kıvrımlı bir boyun çıkar. İçimizdeki ejderha doğmuştur! Ejderhaların yeni bir çağı başlamıştır ve buna tanıklık eden kişi benim!" #NT!
-agot_dragon_hatching.0402.opt.a: "$agot_dragon_hatching.0401.opt.a$" #NT!
-agot_dragon_hatching.0402.opt.a_tt: "[host.GetTitledFirstName]'ın bir ejderhayı yumurtadan çıkarışına tanık oldunuz!" #NT!
+agot_dragon_hatching.0013.t:0 "Güç Kaynağı"
+agot_dragon_hatching.0013.desc_opening_knowledge:0 "Toplanan üstatlar ve akademisyenler, genellikle tek bir yerde toplanmayan bir bilgi kaynağıdır. Okuryazar adamlar arasında iyi bilindiği gibi, zanaatlarının ince noktalarını tartışmayı ve tartışmayı severler. Günün konusu kuluçka için güç kaynağı ve tartışma hararetli. Sonunda, neyin kullanılması gerektiğine karar vermek [host.GetTitledFirstName]'a kalmış.\n\n"
+agot_dragon_hatching.0013.desc_opening_esoteric:0 "Beni çevreleyen çeşitli gizemli uygulayıcılar ve satıcılar rengarenk bir ekip, ancak kuluçka için güç kaynağının son derece önemli olduğuna olan inançlarında birleşiyorlar. Tartışma hararetli, ancak sonunda neyin kullanılması gerektiğine karar vermek [host.GetTitledFirstName]'a kalmış.\n\n"
+agot_dragon_hatching.0013.desc_animal_pet_dog:0 "Gerçek bir fedakarlık göstergesi olarak, ev sahibimiz sevgili köpeği [host.Custom('DogStoryName')]'ın kuluçka için güç kaynağı olacağını paylaşıyor."
+agot_dragon_hatching.0013.desc_animal_pet_cat:0 "Gerçek bir fedakarlık göstergesi olarak, ev sahibimiz sevgili kedisi [host.Custom('CatStoryName')]'ın kuluçka için güç kaynağı olacağını paylaşıyor."
+agot_dragon_hatching.0013.desc_animal_livestock:0 "Kararın bilgeliğinden emin olmasam da, ev sahibimiz kuluçka için güç kaynağı olarak köylülerden alınan yerel bir yük hayvanını kullanmayı seçti."
+agot_dragon_hatching.0013.desc_animal_wild:0 "[host.GetSheHe|U], ejderhaların vahşi ruhunun ancak vahşi bir hayvanın kurban edilmesiyle çağrılabileceğine inanıyor ve uygun bir yaratığı geri getirmeleri için avcılar gönderdi."
+agot_dragon_hatching.0013.desc_animal_exotic:0 "Kesinlikle egzotik bir gösteri olacak olan şeyde, ev sahibimiz kuluçka için güç kaynağı olarak şu anda bulunduğumuz yere doğru yolda olan uzak doğudan bir yaratığı kullanmayı seçti."
+agot_dragon_hatching.0013.desc_blood_myself:0 "Gerçek bir fedakarlık göstergesi olarak, ev sahibimiz başarının tek yolu olduğuna inanarak kuluçka için güç kaynağı olarak kendi kanını kullanmayı seçti."
+agot_dragon_hatching.0013.desc_blood_leader:0 "[ritual_leader_character.GetHerHis] çabalarına olan gerçek inancının bir göstergesi olarak, törenin lideri [ritual_leader_character.GetFirstNameNicknamed], kuluçka için güç kaynağı olarak kendi kanını sundu."
+agot_dragon_hatching.0013.desc_blood_everyone:0 "[host.GetSheHe|U], toplananların birleşik gücünün ejderhayı ortaya çıkarmaya yeteceğine inanarak, kuluçka için güç kaynağı olarak mevcut herkesin kanını sunmasını istedi."
+agot_dragon_hatching.0013.desc_blood_prisoner:0 "[host.GetHerHis] bilgeliğinde, [host.GetSheHe] kuluçka için güç kaynağı olarak mahkumu [prisoner.GetFirstName]'ın kanını kullanmayı seçti, çünkü [prisoner.GetSheHe] itiraz edebilecek durumda değil."
+agot_dragon_hatching.0013.desc_life_myself:0 "Gerçek bir fedakarlık göstergesi olarak, ev sahibimiz kuluçka için güç kaynağı olarak kendi canını kullanmayı seçti ve tüm hayatını bu çabaya adadı."
+agot_dragon_hatching.0013.desc_life_leader:0 "Buradaki amacına olan gerçek inancının bir göstergesi olarak, törenin lideri [ritual_leader_character.GetFirstNameNicknamed], kuluçka için güç kaynağı olarak kendi canını sundu."
+agot_dragon_hatching.0013.desc_life_attendee:0 "Törenin amacına olan gerçek inancının bir göstergesi olarak, [attendee.GetFirstName] kuluçka için güç kaynağı olarak kendi canını sundu."
+agot_dragon_hatching.0013.desc_life_prisoner:0 "[host.GetHerHis] bilgeliğinde, [host.GetSheHe] kuluçka için güç kaynağı olarak mahkumu [prisoner.GetFirstName]'ın canını kullanmayı seçti, çünkü [prisoner.GetSheHe] itiraz edebilecek durumda değil."
+agot_dragon_hatching.0013.desc_life_everyone:0 "[host.GetSheHe|U] henüz bu kararı vermeye hazır görünmüyor ve sadece zamanı geldiğinde hepimizin bileceğini söylüyor."
+agot_dragon_hatching.0013.desc_close_happy:0 "Gerçekten de bu, büyük bir etkinlik olmaya doğru gidiyor!"
+agot_dragon_hatching.0013.desc_close_worried:0 "Olaylar ilerledikçe bir korku hissi duymaktan kendimi alamıyorum."
+agot_dragon_hatching.0013.opt.a:0 "Sırada tören var."
 
-hatched_dragon_via_cradling_notification: "[ROOT.Char.GetName] yumurtadan çıktı [dragon.GetName], Cradling tarafından" #NT!
+agot_dragon_hatching.0014.t:0 "Gücün Katalizörü"
+agot_dragon_hatching.0014.desc_opening_knowledge:0 "Güç kaynağı belirlendi ve şimdi yumurtayı hayata geçirmek için aktivasyonunu en iyi nasıl tetikleyeceğimizi belirlemeliyiz. İçindeki ejderhanın sağlıklı ve güçlü doğmasını sağlamak için yumurta belirli bir sıcaklığa kadar ısıtılmalıdır."
+agot_dragon_hatching.0014.desc_opening_esoteric:0 "Kurban belirlendiğinde, şimdi yumurtayı verilen yaşam gücünün gücüyle aşılamak için katalizörü hazırlamalıyız. Gelecek ritüelde salınan enerjiler ne çok yoğun ne de çok zayıf olmalıdır, yoksa yumurta bu süreçte yok olabilir."
+agot_dragon_hatching.0014.desc_minor:0 "Kuluçka için katalizör olarak, hiçbir süs veya tören gerektirmeyen basit bir ısı kaynağı kullanmayı seçtim. Yine de, neyin kullanılacağına karar vermek kritik bir karardır."
+agot_dragon_hatching.0014.desc_medium:0 "Bunun için gerekli yatırımı ve hazırlıkları zaten yaptım, ancak tam olarak nasıl gerekli ısıyı sağlayacağımız hala tartışılıyor."
+agot_dragon_hatching.0014.desc_major:0 "Törene harcanan büyük miktarda kaynak ve uygun tantanayla, şimdi yumurtayı özel olarak tasarlanmış haznesinde nasıl ısıtacağıma karar vermeliyim."
+agot_dragon_hatching.0014.desc_massive:0 "Okuduğum her ejderha bilgisi sayfası ve Valyria tanrılarına ettiğim her dua beni bu ana getirdi. Yaptığım kapsamlı ve geniş kapsamlı hazırlıklar, ne olursa olsun yumurtanın mükemmel sıcaklığa kadar ısıtılmasını sağlayacak. Yine de, şimdi yumurtayı neyin ısıtacağına karar vermeliyim."
+agot_dragon_hatching.0014.opt.warning:0 "#warning @warning_icon! Kuluçka törenini durdurmak için son şansınız bu #!"
+agot_dragon_hatching.0014.opt.a_rational:0 "Eh, odunla, başka neyle?"
+agot_dragon_hatching.0014.opt.a_bold:0 "Odun ve çıra getirin!"
+agot_dragon_hatching.0014.opt.a_tt:0 "Bu kuluçka için ısı kaynağı olarak #bold;V odun#! kullanacaksınız"
+agot_dragon_hatching.0014.opt.b:0 "Kızgın kömürler iş görecektir."
+agot_dragon_hatching.0014.opt.b_ttplsnohasherror:0 "Bu kuluçka için ısı kaynağı olarak #bold;V kızgın kömürler#! kullanacaksınız"
+agot_dragon_hatching.0014.opt.c:0 "Yanmış yağ ısı kaynağı olacak."
+agot_dragon_hatching.0014.opt.c_tt:0 "Bu kuluçka için ısı kaynağı olarak #bold;V yağ#! kullanacaksınız"
+agot_dragon_hatching.0014.opt.d:0 "En sıcak alevlerden başka bir şey olmaz! Yabanateşini getirin!"
+agot_dragon_hatching.0014.opt.d_tt:0 "Bu kuluçka için ısı kaynağı olarak #WF2;bold yabanateşi#! kullanacaksınız"
+agot_dragon_hatching.0014.opt.e:0 "Ejderha Dağı'nı kullanmalıyız!"
+agot_dragon_hatching.0014.opt.e_tt:0 "Bu kuluçka için ısı kaynağı olarak #bold;V yanardağı#! kullanacaksınız"
+agot_dragon_hatching.0014.opt.f:0 "Güneşin gücü bizim ısı kaynağımız olacak! Büyüteci getirin!"
+agot_dragon_hatching.0014.opt.f_tt:0 "... #bold;V büyüteç#! mi kullanacaksınız? Siz bilirsiniz..."
+agot_dragon_hatching.0014.opt.leave_coward:0 "Bunu yapamam!"
+agot_dragon_hatching.0014.opt.leave_bold:0 "Bu çok ileri gitti!"
+agot_dragon_hatching.0014.opt.leave_rational:0 "Bu asla işe yaramayacak!"
+agot_dragon_hatching.0014.opt.leave_tt:0 "#warning @warning_icon! Töreni terk edeceksiniz #!"
 
-agot_dragon_hatching_you_try_hatching: "[egg.GetName] yumurtadan çıkmaya çalışıyorsun" #NT!
+agot_dragon_hatching.0015.t:0 "Yeni Bir Şafak Yok"
+agot_dragon_hatching.0015.desc_knowledge:0 "Hizmetkarların afişleri indirdiğini ve üstatların kitaplarını topladığını görüyorum. Duyuru yapılmadan önce sebebini zaten biliyorum. [host.GetTitledFirstName] cesaretini kaybetti - tören olmayacak. Yumurta kırılmamış ve içindeki ejderha uyanmamış halde. Tören bitti ve yeni bir ejderha hayali öldü."
+agot_dragon_hatching.0015.desc_esoteric:0 "Büyücüler ve maegi'ler ne olduğunu anlamadan dışarı atıldılar. Mumlar söndürüldü ve tütsüler söndürüldü. Görünüşe göre [host.GetTitledFirstName] yaklaşan ritüelden vazgeçti. Yumurta kırılmamış ve içindeki ejderha uyanmamış halde. Tören bitti ve yeni bir ejderha çağı hayali öldü."
+agot_dragon_hatching.0015.opt.a_rational:0 "Belki de böylesi daha iyidir."
+agot_dragon_hatching.0015.opt.a_coward:0 "Tanrılara şükürler olsun!"
+agot_dragon_hatching.0015.opt.a_bold:0 "[host.GetSheHe]'ın vazgeçtiğine inanamıyorum!"
 
-# Hatching Ejderha İlmi # 
-agot_dragon_hatching_dragonlore.0001.t: "Ejderha İlmi: Rhaenys'in Tepesi" #NT!
-agot_dragon_hatching_dragonlore.0001.desc: "Bir zamanlar en vahşi ejderhaların yuvası olan bu devasa tepe, artık bir harabeye dönmüş durumda. Tünellerinde yürürken, büyüklüğüne hayran kalıyor ve öneminin ağırlığı altında eziliyorum.\n\nMolozların arasındaki tozlu kağıt parçalarını fark ediyorum. Ejder Korucularının kullandığı yumurtadan çıkarma tekniklerini anlatıyor gibi görünüyorlar!" #NT!
-agot_dragon_hatching_dragonlore.0001.opt: "Bu çok işe yarayacak!" #NT!
+agot_dragon_hatching.0016.t:0 "Tören"
+agot_dragon_hatching.0016.desc_opening_craven:0 "Elim titriyor ve sabitlemek için diğer elimle tutuyorum."
+agot_dragon_hatching.0016.desc_opening_normal:0 "Hava beklentiyle dolu, toplanan insanlar dile getirilen ve getirilmeyen heyecanı paylaşıyor."
+agot_dragon_hatching.0016.desc_opening_bold:0 "Yeni bir çağ başlıyor ve başlangıcında burada olmak ne zevk!"
+agot_dragon_hatching.0016.desc_knowledge_opening_me:0 "Töreni başlatma zamanı geldi. Toplananların önünde duruyorum, yumurta ellerimde ve çağların bilgisi arkamda."
+agot_dragon_hatching.0016.desc_knowledge_opening_other:0 "Töreni başlatma zamanı geldi. [ritual_leader_character.GetFirstNameNicknamed] başımızda duruyor, yumurta ellerinde, çağların bilgisi arkasında."
+agot_dragon_hatching.0016.desc_esoteric_opening_me:0 "Ritüeli başlatma zamanı geldi. Ayinler okunuyor ve reaktifler hazırlanıyor. Etrafımda yükselen tezahüratlar eşliğinde toplananların önünde duruyorum, yumurta ellerimde sıcak hissettiriyor."
+agot_dragon_hatching.0016.desc_esoteric_opening_other:0 "Ritüeli başlatma zamanı geldi. Ayinler okunuyor ve reaktifler hazırlanıyor. [ritual_leader_character.GetFirstNameNicknamed] önümüzde duruyor, uzun zaman önce unutulmuş bir dilde şarkı söylerken talimat verilen tezahürat boğazımdan dökülüyor."
+agot_dragon_hatching.0016.desc_esoteric_opening_other_prisoner:0 "Ritüeli başlatma zamanı geldi. Ayinler okunuyor ve reaktifler hazırlanıyor. Bana ne olacağı konusunda endişelenirken odayı garip bir tezahürat dolduruyor."
+agot_dragon_hatching.0016.desc_animal_pet_dog:0 "Köpek "
+agot_dragon_hatching.0016.pet_dog_host:0 "[ROOT.Char.Custom('DogStoryName')] önüne getirildiğinde emin değilmiş gibi görünüyor "
+agot_dragon_hatching.0016.desc_animal_pet_cat:0 "Kedi "
+agot_dragon_hatching.0016.pet_cat_host:0 "[ROOT.Char.Custom('CatStoryName')] önüne getirildiğinde temkinli görünüyor "
+agot_dragon_hatching.0016.desc_animal_livestock:0 "[ROOT.Char.Custom('RegionalFarmAnimal')] "
+agot_dragon_hatching.0016.desc_animal_wild:0 "Avlanmış av hayvanlarının bedenleri "
+agot_dragon_hatching.0016.desc_animal_exotic:0 "Önüme getirilen yaratığı tanımlayamıyorum "
+agot_dragon_hatching.0016.desc_me_stop:0 "önüme getiriliyor."
+agot_dragon_hatching.0016.desc_leader_stop:0 "[ritual_leader_character.GetFirstNameNicknamedNoTooltip]'ın önüne getiriliyor."
+agot_dragon_hatching.0016.desc_animal_my_dog:0 "[ROOT.Char.Custom('DogStoryHerHim')]'ı görmek kalbimi acıtıyor, ne olacağını bilerek, ama bunun yapılması gerektiğini biliyorum."
+agot_dragon_hatching.0016.desc_animal_my_cat:0 "[ROOT.Char.Custom('CatStoryHerHim')]'ı görmek kalbimi acıtıyor, ama bunun yapılması gerektiğini biliyorum."
+agot_dragon_hatching.0016.desc_animal_exotic_end:0 "Kürkleri garip ve ıstırap sesleri tüm kulaklara yabancı."
+agot_dragon_hatching.0016.desc_animal_kill_me:0 "Kılıcı kaldırıyorum ve tek bir temiz kesikle indiriyorum, yaratığın hayatı tek bir vuruşla sona eriyor."
+agot_dragon_hatching.0016.desc_animal_kill_leader:0 "[ritual_leader_character.GetFirstNameNicknamedNoTooltip] kılıcı kaldırıyor ve tek bir temiz kesikle indiriyor, yaratığın hayatı tek bir vuruşla sona eriyor."
+agot_dragon_hatching.0016.desc_blood_me:0 "Kase önüme getiriliyor, kolum "
+agot_dragon_hatching.0016.desc_blood_me_me:0 "açıkta ve hazır. Kılıcı derimde aşağı doğru çekerken dudağımı ısırıyorum, kaseye kızıl kan dökülüyor."
+agot_dragon_hatching.0016.desc_blood_me_prisoner:0 "[ritual_leader_character.GetFirstNameNicknamedNoTooltip] kılıcı kolumda aşağı doğru çekerken kelepçelere karşı mücadele ediyorum, kaseye kızıl kan dökülüyor. Bunun adaletsizliğine bağırıyorum ama çığlıklarım duymazdan geliniyor."
+agot_dragon_hatching.0016.desc_blood_me_leader:0 "açıkta ve hazır. Kılıcı derimde aşağı doğru çekerken dudağımı ısırıyorum, kaseye kızıl kan dökülüyor."
+agot_dragon_hatching.0016.desc_blood_me_everyone:0 "Diğerlerinin de aynısını yaptığını izliyorum, [ritual_leader_character.GetFirstNameNicknamedNoTooltip] her birini aynı şekilde kesiyor."
+agot_dragon_hatching.0016.desc_blood_me_everyone_leader:0 "Sonra herkesin önüne çıkıyorum, toplananların her birine aynısını yapıyorum, birleşik yaşam kanımız bir araya geliyor."
+agot_dragon_hatching.0016.desc_blood_leader:0 "Kase [ritual_leader_character.GetFirstNameNicknamedNoTooltip]'ın önüne getiriliyor, kolu açıkta ve hazır. [ritual_leader_character.GetSheHe|U] dudağını ısırıyor, kılıcı derisinde aşağı doğru çekerken kızıl kan belirlenen kaseye dökülüyor."
+agot_dragon_hatching.0016.desc_blood_prisoner:0 "Kase [prisoner.GetName]'ın önüne getiriliyor, kolu zorla aşağı indiriliyor ve kılıç derisinde gezdiriliyor, [prisoner.GetSheHe] çığlık atarken kaseye kızıl kan dökülüyor."
+agot_dragon_hatching.0016.desc_blood_everyone_refused:0 "Kase benim dışımda herkesin önüne getiriliyor, her birinin kolu açıkta ve hazır. Kılıç sırayla her birinin üzerinde gezdiriliyor, yaralıların çığlıkları odayı doldururken kaseye kızıl kan dökülüyor. Aralarında olmadığım için sevinsem de bana utandıran bakışlarla bakıyorlar."
+agot_dragon_hatching.0016.desc_life_myself_me_self:0 "Derin bir nefes alarak öne çıkıyor ve kılıcı elime alıyorum, nihai fedakarlığı yapmaya hazırım. Yumurtadan önce duruyorum, kılıç boğazıma dayanmış ve #emp kesiyorum#!.\n\nBir anlık acı, göğsümden aşağıya yayılan sıcaklık hissi ve sonra hiçbir şey..."
+agot_dragon_hatching.0016.desc_life_myself_me_leader:0 "Derin bir nefes alarak yumurtadan önce öne çıkıyor ve [ritual_leader_character.GetFirstNameNicknamedNoTooltip] kılıcı boğazıma dayıyor. Gözlerimi kapatıyorum...\n\nBir anlık acı, göğsümden aşağıya yayılan sıcaklık hissi ve sonra hiçbir şey..."
+agot_dragon_hatching.0016.desc_life_myself_other_self:0 "Az miktarda hayranlık ve dehşet içinde [host.GetTitledFirstNameNoTooltip]'ın öne çıktığını izliyorum. [host.GetSheHe|U] yumurtadan önce duruyor, kılıç boğazına dayanmış ve #emp kesiyor#!. Kan yumurtanın üzerine dökülüyor ve [host.GetSheHe] cansız bir şekilde yere düşüyor."
+agot_dragon_hatching.0016.desc_life_myself_other_leader:0 "Az miktarda hayranlık ve dehşet içinde [host.GetTitledFirstName]'ın yumurtadan önce öne çıktığını izliyorum. [ritual_leader_character.GetFirstNameNicknamedNoTooltip] kılıcı [host.GetHerHis] boğazına dayıyor. [host.GetTitledFirstNameNoTooltip] gözlerini kapatıyor ve #emp kesiyor#!. Kan yumurtanın üzerine dökülüyor ve [host.GetSheHe] cansız bir şekilde yere düşüyor."
+agot_dragon_hatching.0016.desc_life_leader_self:0 "Derin bir nefes alarak öne çıkıyor ve kılıcı elime alıyorum, [host.GetTitledFirstNamePossessive] davası için nihai fedakarlığı yapmaya hazırım. Yumurtadan önce duruyorum, kılıç boğazıma dayanmış ve #emp kesiyorum#!. Bir anlık acı, göğsümden aşağıya yayılan sıcaklık hissi ve sonra hiçbir şey..."
+agot_dragon_hatching.0016.desc_life_leader_host:0 "[ritual_leader_character.GetFirstNameNicknamedPossessiveNoTooltip]'ın bana ve davama olan bağlılığından etkileniyorum, öne çıkarken. [ritual_leader_character.GetSheHe|U] yumurtadan önce duruyor, kılıç boğazına dayanmış ve #emp kesiyor#!. [ritual_leader_character.GetHerHis|U] kanı yumurtanın üzerine dökülüyor ve [ritual_leader_character.GetSheHe] cansız bir şekilde yere düşüyor."
+agot_dragon_hatching.0016.desc_life_leader_other:0 "[ritual_leader_character.GetFirstNameNicknamedPossessiveNoTooltip]'ın [host.GetTitledFirstNamePossessive] davasına olan bağlılığına hayranlıkla bakıyorum, [ritual_leader_character.GetFirstNameNoTooltip] öne çıkarken. [ritual_leader_character.GetSheHe|U] yumurtadan önce duruyor, kılıç boğazına dayanmış ve #emp kesiyor#!. Kan yumurtanın üzerine dökülüyor ve [ritual_leader_character.GetSheHe] cansız bir şekilde yere düşüyor."
+agot_dragon_hatching.0016.desc_life_attendee_me:0 "Derin bir nefes alarak öne çıkıyor ve [ritual_leader_character.GetFirstNameNicknamedNoTooltip] kılıcı boğazıma dayıyor. Gözlerimi kapatıyorum, bu yeni çağı getirmek için nihai fedakarlığı yapmaya hazırım...\n\nBir anlık acı, göğsümden aşağıya yayılan sıcaklık hissi ve sonra hiçbir şey..."
+agot_dragon_hatching.0016.desc_life_attendee_leader:0 "[attendee.GetFirstNamePossessive]'ın [host.GetFirstNamePossessiveOrMyNoTooltip] davasına olan bağlılığından etkileniyorum, yumurtadan önce çıkarken. Kılıcı [attendee.GetHerHis] boğazına dayıyor ve #emp kesiyorum#!. [attendee.GetHerHis|U] kanı yumurtanın üzerine dökülüyor ve [attendee.GetSheHe] cansız bir şekilde yere düşüyor."
+agot_dragon_hatching.0016.desc_life_attendee_host:0 "[attendee.GetFirstNamePossessive]'ın bana ve davama olan bağlılığından etkileniyorum, öne çıkarken. [attendee.GetSheHe|U] yumurtadan önce duruyor, [ritual_leader_character.GetFirstNameNicknamedNoTooltip] kılıcı [attendee.GetHerHis] boğazına dayıyor. [attendee.GetSheHe|U] gözlerini kapatıyor ve [ritual_leader_character.GetFirstNameNicknamedNoTooltip] #emp kesiyor#!. Kan yumurtanın üzerine dökülüyor ve [attendee.GetSheHe] cansız bir şekilde yere düşüyor."
+agot_dragon_hatching.0016.desc_life_attendee_other:0 "[attendee.GetFirstNamePossessive]'ın davama olan bağlılığına hayranlıkla bakıyorum, nihai fedakarlığı yapmaya hazır bir şekilde öne çıkarken. [attendee.GetSheHe|U] yumurtadan önce duruyor, [ritual_leader_character.GetFirstNameNicknamedNoTooltip] kılıcı [attendee.GetHerHis] boğazına dayıyor ve #emp kesiyor#!. Kan yumurtanın üzerine dökülüyor ve [attendee.GetSheHe] cansız bir şekilde yere düşüyor."
+agot_dragon_hatching.0016.desc_life_attendee_me_unwilling:0 "Bir homurtuyla öne itiliyorum, [ritual_leader_character.GetFirstNameNicknamedNoTooltip] kılıcı boğazıma dayıyor. Bir beddua savurmak için ağzımı açıyorum ama [ritual_leader_character.GetSheHe] daha hızlı...\n\nBir anlık acı, göğsümden aşağıya yayılan sıcaklık hissi ve sonra hiçbir şey..."
+agot_dragon_hatching.0016.desc_life_attendee_leader_unwilling:0 "[attendee.GetFirstNamePossessive]'ın [host.GetFirstNamePossessiveOrMyNoTooltip] davası için öne itildiğini izliyorum. [attendee.GetSheHe|U] yumurtadan önce zorla getiriliyor ve kılıcı [attendee.GetHerHis] boğazına dayıyorum. #emp Kesiyorum#!. [attendee.GetHerHis|U] kanı yumurtanın üzerine dökülüyor ve [attendee.GetSheHe] cansız bir şekilde yere düşüyor."
+agot_dragon_hatching.0016.desc_life_attendee_host_unwilling:0 "[attendee.GetFirstNamePossessive]'in amacım uğruna öne itildiğini izliyorum. [attendee.GetSheHe|U], yumurtanın önüne zorla getiriliyor ve [ritual_leader_character.GetFirstNameNicknamedNoTooltip] bıçağı [attendee.GetHerHis] boğazına dayıyor. #emp Kes#!. [attendee.GetHerHis|U] kanı yumurtanın üzerine dökülüyor ve [attendee.GetSheHe] cansız bir şekilde yere yığılıyor."
+agot_dragon_hatching.0016.desc_life_attendee_other_unwilling:0 "[attendee.GetFirstNamePossessive]'in öne itildiğini dehşet içinde izliyorum. [attendee.GetSheHe|U], yumurtanın önüne zorla getiriliyor ve [ritual_leader_character.GetFirstNameNicknamedNoTooltip] bıçağı [attendee.GetHerHis] boğazına dayıyor. #emp Kes#!. [attendee.GetHerHis|U] kanı yumurtanın üzerine dökülüyor ve [attendee.GetSheHe] cansız bir şekilde yere yığılıyor."
+agot_dragon_hatching.0016.desc_life_prisoner_me:0 "Yumurtanın önüne getirilirken bağlarımda debeleniyorum. [ritual_leader_character.GetFirstNameNicknamedNoTooltip] soğuk bir bıçağı boğazıma dayıyor ve bu haksızlığa karşı bağırabilmeme fırsat vermeden boynumda keskin bir acı hissediyorum. Görüşüm bulanıklaşıyor, göğsüm sıcak hissediyor ama içeriden soğuyor ve sonra hiçbir şey hissetmiyorum..."
+agot_dragon_hatching.0016.desc_life_prisoner_leader:0 "Muhafızlara mahkumu getirmelerini işaret ediyorum. [prisoner.GetFirstNameNoTooltip] yumurtanın önüne getiriliyor ve bıçağı [prisoner.GetHerHis] boğazına doğrultuyorum. Zamanlama çok önemli ve [prisoner.GetSheHe] konuşamadan #emp kesiyorum#!. Kan yumurtanın üzerine dökülüyor ve [prisoner.GetSheHe] cansız bir şekilde yere yığılıyor."
+agot_dragon_hatching.0016.desc_life_prisoner_host:0 "Muhafızlara mahkumu getirmelerini işaret ediyorum. [prisoner.GetFirstNameNoTooltip] yumurtanın önüne getiriliyor ve [ritual_leader_character.GetFirstNameNicknamedNoTooltip] bıçağı [prisoner.GetHerHis] boğazına doğrultuyor. Zamanlama çok önemli ve [ritual_leader_character.GetFirstNameNicknamedNoTooltip] [prisoner.GetSheHe] konuşamadan #emp kesiyor#!. Kan yumurtanın üzerine dökülüyor ve [prisoner.GetSheHe] cansız bir şekilde yere yığılıyor."
+agot_dragon_hatching.0016.desc_life_prisoner_other:0 "Muhafızların [prisoner.GetFirstNameNoTooltip]'ı yumurtanın önüne getirmelerini rahatsızlıkla izliyorum. [ritual_leader_character.GetFirstNameNicknamedNoTooltip] bıçağı [prisoner.GetHerHis] boğazına doğrultuyor ve [prisoner.GetSheHe] konuşamadan #emp kesiyor#!. Kan yumurtanın üzerine dökülüyor ve [prisoner.GetSheHe] cansız bir şekilde yere yığılıyor."
+agot_dragon_hatching.0016.desc_life_everyone_me:0 "Önce misafirlerime tek tek, sonra da muhafızlarıma bakıyorum. Bir baş işaretiyle, her birini öne getirmeye başlıyorlar. Her biri yumurtanın önüne getirilip bıçak boğazlarına dayandığında ve hayatları yumurtadan çıkması için feda edildiğinde, odada protesto, öfke ve korku çığlıkları yankılanıyor.  Yumurtanın önünde duruyorum, etrafımda herkesin kanı birikiyor ve sonunda sıra bana geliyor. Talimatlar açık; bununla mutlaka başarmalıyız.\n\nGözlerimi kapatıyorum, bıçağın boğazımı kesmesini hissediyorum ve sonra hiçbir şey yok..."
+agot_dragon_hatching.0016.desc_life_everyone_oh_no:0 "Hala neyin kurban edileceğine dair bir bilgi yokken, muhafızlar kılıçlarını çekip herkesi öne getirmeye başladığında şok oluyorum. Protesto, öfke ve korku çığlıkları odayı dolduruyor, kendi sesim de bunların arasında. Ama gözlerimin önünde, her biri yumurtanın önüne getiriliyor, bıçak boğazlarına dayayıp hayatları yumurtadan çıkması için feda ediliyor. İtiraz ediyorum ama çığlıklarım duyulmuyor. Mücadele ediyorum ama çabalarım boşuna. Son bir nefret ve meydan okuma bakışıyla yumurtanın önüne getiriliyor, bıçak boğazıma dayanıyor ve hayatım yumurtadan çıkması için feda ediliyor..."
+agot_dragon_hatching.0016.desc_newline:0 "\n\n"
+agot_dragon_hatching.0016.desc_minor_wood:0 "Odunlar bir yığın halinde toplanır ve yumurta üstüne yerleştirilir. Alevler yakılır ve ısı yükselmeye başlar."
+agot_dragon_hatching.0016.desc_minor_coal:0 "Sıcak kömürler yumurtanın altına yerleştirilerek alttan ısıtılır."
+agot_dragon_hatching.0016.desc_minor_oil:0 "Yumurta bir kase yağın içine yerleştirilir, ısıtmaya başlamak için sıvı bir meşaleyle yakılır."
+agot_dragon_hatching.0016.desc_minor_wildfire:0 "Ceylan ateşi yumurtanın üzerine dökülür ve ateşe verilir, yeşil alevler kabuğu yalar." 
+agot_dragon_hatching.0016.desc_minor_lava:0 "Küçük bir lav damarı bulunur ve yumurta küçük bir erimiş kaya havuzuna yerleştirilir."
+agot_dragon_hatching.0016.desc_minor_magnifying_glass:0 "Yumurtanın önüne büyük bir cam getirilir, güneş ışınları kabuğa ısı uygulamak için camdan geçirilir."
+agot_dragon_hatching.0016.desc_medium_wood:0 "Büyük bir odun yığını oluşturulur, yumurta üstüne yerleştirilir ve etrafına daha küçük ateşler yakılarak eşit şekilde ısıtılması sağlanır."
+agot_dragon_hatching.0016.desc_medium_coal:0 "Sıcak kömürler yumurtanın önünde bir halka şeklinde yerleştirilir ve üstlerine büyük bir mangal yerleştirilir. Yumurtanın içi, alttan yükselen ısıyla ısınır."
+agot_dragon_hatching.0016.desc_medium_oil:0 "Yumurtanın önüne büyük bir karışık yağ kasesi getirilir. İçine yerleştirilir ve ısıtmaya başlamak için sıvı bir meşaleyle yakılır."
+agot_dragon_hatching.0016.desc_medium_wildfire:0 "Bir havuz Ceylan ateşi çıkarılır ve yumurta içine batırılır. Sıvı ateşe verilir, ruhani yeşil alevler yumurtayı örter."
+agot_dragon_hatching.0016.desc_medium_lava:0 "Büyük bir lav havuzu bulunur ve yumurta dikkatlice içine yerleştirilir. Erimiş kaya yumurtanın etrafında köpürür ve kaynar, yükselen ısı onu ısıtır."
+agot_dragon_hatching.0016.desc_medium_magnifying_glass:0 "Yumurtanın önüne büyük bir cam getirilir, güneş ışınları kabuğa ısı uygulamak için camdan geçirilir. Cam yavaş bir daire içinde hareket ettirilir, her geçişte ısı yükselir."
+agot_dragon_hatching.0016.desc_major_wood:0 "Daha önce hiç görmediğim büyüklükte bir odun yığını oluşturulur. Yumurta büyük bir törenle üstüne yerleştirilir ve alevler yakılır. Isı yükselir ve yumurta parla뿜maya başlar."
+agot_dragon_hatching.0016.desc_major_coal:0 "Yumurtanın önüne, içindeki kömürler kızgın kırmızı renkte parlayan, büyük bir pirinç ve demir mangal getirilir. Uygun sözler söylenirken yumurta içine yerleştirilir ve ısı yükselmeye başlar."
+agot_dragon_hatching.0016.desc_major_oil:0 "Bilinen dünyanın dört bir yanından toplanmış karışık yağlardan oluşan büyük bir kase yumurtanın önüne getirilir. Yumurta içine yerleştirilir ve ısıtmaya başlamak için sıvı bir meşaleyle yakılır. Yumurtanın üzerine daha fazla yağ dökülür, alevler gittikçe yükselir."
+agot_dragon_hatching.0016.desc_major_wildfire:0 "En güçlü ve tehlikeli Ceylan ateşi yumurtanın önüne getirilir ve sıvı kabuğun üzerine dökülür. Yumurtanın altına bir havuz bırakılır ve ruhani yeşil alevler yakılır."
+agot_dragon_hatching.0016.desc_major_lava:0 "Ejderha Kayası'ndaki büyük bir lav odası, yumurta için bir hazneye dönüştürülmüştür. Büyük bir tören ve özenle, yumurta içine yerleştirilir, erimiş kaya etrafında köpürür ve kaynar."
+agot_dragon_hatching.0016.desc_major_magnifying_glass:0 "Yumurtanın önüne bir dizi büyük cam getirilir, güneş ışınları kabuğa ısı uygulamak için camlardan geçirilir. Bir ışık korosu gibi, camlar yavaşça dairesel hareketlerle hareket ettirilir, ışık ve ısı gösterisi göz kamaştırıcıdır."
+agot_dragon_hatching.0016.desc_massive_wood:0 "Odun yığını, neredeyse bir bina kadar uzun, dağ gibi bir yapıdır. Bir meşale geçidiyle yumurta içine yerleştirilir ve alevler yakılır. Isı çok yoğundur ve görmek zor olsa da yumurta parlıyor gibi görünür."
+agot_dragon_hatching.0016.desc_massive_coal:0 "Yumurtanın önüne, bir atın içine sığabileceği kadar büyük, pirinç ve demirden yapılmış devasa bir mangal getirilir. İçindeki kömürler beyaz renkte parlar ve yumurta törenle içine yerleştirilir. Isı çok yoğundur ve yumurta parla뿜maya başlar."
+agot_dragon_hatching.0016.desc_massive_oil:0 "Büyük ve boş bir kase getirilir ve bilinen dünyanın dört bir yanından toplanmış yağlar sırayla önüne getirilir. Çeşitli inançlardan kutsal erkekler ve kadınlar, kendi yağları kaseye dökülürken dualar ederler. Yumurta içine yerleştirilir ve ısıtmaya başlamak için sıvı bir meşaleyle yakılır."
+agot_dragon_hatching.0016.desc_massive_wildfire:0 "En güçlü ve tehlikeli Ceylan ateşi yumurtanın önüne getirilir ve sıvı kabuğun üzerine dökülür. Yumurtanın altına bir havuz bırakılır ve alevler yakılır. Ateşin kükremesi sağır edicidir, sanki ısıyla #emp çığlık atıyor#! gibi."
+agot_dragon_hatching.0016.desc_massive_lava:0 "Ejderha Kayası'nın en tepesi büyük bir demir bantla çevrilmiş, yumurta içindeki erimiş kayanın üzerine asılmıştır. Büyük bir törenle, herkes yumurtanın lavın içine indirilişini izler. Erimiş kaya yumurtanın etrafında köpürür ve kaynar, ısı yükselerek ateşli bir dereceye ulaşır."
+agot_dragon_hatching.0016.desc_massive_magnifying_glass:0 "Yumurtanın önüne çeşitli şekil ve boyutlarda bir dizi cam getirilir, güneş ışınları kabuğa ısı uygulamak için camlardan geçirilir. Her biri binlerce ışık noktasıyla dans eder, ısı, kimsenin unutamayacağı bir gösteride daire çizerek yükselir."
+agot_dragon_hatching.0016.desc_blood_sacrifice:0 "Kan dolu kase getirilir"
+agot_dragon_hatching.0016.desc_bodies_sacrifice:0 "Cesetler getirilir"
+agot_dragon_hatching.0016.desc_body_sacrifice:0 "Ceset getirilir"
+agot_dragon_hatching.0016.desc_knowledge_wood:0 "ve yanan odunların üzerine yerleştirilir"
+agot_dragon_hatching.0016.desc_knowledge_coal:0 "ve sıcak kömürlerin üzerine yerleştirilir"
+agot_dragon_hatching.0016.desc_knowledge_oil:0 "ve yanan yağ dolu kaseye yerleştirilir"
+agot_dragon_hatching.0016.desc_knowledge_wildfire:0 "ve yanan Ceylan ateşinin üzerine yerleştirilir"
+agot_dragon_hatching.0016.desc_knowledge_lava:0 "ve lav havuzuna indirilir"
+agot_dragon_hatching.0016.desc_knowledge_magnifying_glass:0 "ve güneş ışınları da ona odaklanır"
+agot_dragon_hatching.0016.desc_knowledge_end:0 "gereken tüm özen gösterilerek."
+agot_dragon_hatching.0016.desc_esoteric_wood:0 "ve yanan odunların üzerine atılır"
+agot_dragon_hatching.0016.desc_esoteric_coal:0 "ve sıcak kömürlerin üzerine atılır"
+agot_dragon_hatching.0016.desc_esoteric_oil:0 "ve yanan yağ dolu kaseye atılır"
+agot_dragon_hatching.0016.desc_esoteric_wildfire:0 "ve Ceylan ateşinin üzerine atılır"
+agot_dragon_hatching.0016.desc_esoteric_lava:0 "ve lav havuzuna atılır"
+agot_dragon_hatching.0016.desc_esoteric_magnifying_glass:0 "ve yumurtanın üzerine konur"
+agot_dragon_hatching.0016.desc_esoteric_end:0 "ilahi ateşli bir noktaya ulaştığında."
+agot_dragon_hatching.0016.desc_very_low:0 "Bütün gözler, ejderhaların büyüsüne bir kez daha şahit olmaya hazır bir şekilde yumurtaya dikilmiş."
+agot_dragon_hatching.0016.desc_low:0 "Bütün gözler, etrafını saran ısıda parlıyor gibi görünen yumurtaya dikilmiş."
+agot_dragon_hatching.0016.desc_medium:0 "Bütün gözler, gerçekleşecek mucizeyi beklerken nefeslerini tutmuş, yumurtaya dikilmiş."
+agot_dragon_hatching.0016.desc_high:0 "Bütün gözler, haznesinin merkezinde yaşamla atıyor gibi görünen parlayan yumurtaya dikilmiş."
+agot_dragon_hatching.0016.desc_very_high:0 "Bütün gözler, içindeki güçten hafifçe titreyen parlayan yumurtaya dikilmiş."
+agot_dragon_hatching.0016.opt.dead_willing:0 "Feda oluşum ejderhayı getirsin..."
+agot_dragon_hatching.0016.opt.dead_unwilling:0 "Lanet olsun sana, [host.GetTitledFirstNameNoTooltip]!"
+agot_dragon_hatching.0016.opt.alive:0 "Sabırsızlanıyorum!"
+agot_dragon_hatching.0016.opt.alive_tt:0 "Bir ejderhanın doğup doğmayacağını görmek için izliyorsunuz"
+agot_dragon_hatching.0016.opt.base_esoteric_tt:0 "Ezoterik bir yumurtadan çıkarma, başarılı bir yumurtadan çıkma şansını #difficulty_easy ARTIRIR#!, ancak olumsuz bir sonuç çıkma şansını da artırır"
+agot_dragon_hatching.0016.opt.base_knowledge_tt:0 "Bilgiye dayalı bir yumurtadan çıkarma, başarılı bir yumurtadan çıkma şansını #difficulty_medium ETKİLEMEZ#!"
+agot_dragon_hatching.0016.opt.dragonlore_tt:0 "Ejderha bilginiz, başarılı bir yumurtadan çıkma şansını #difficulty_easy ARTIRIR#!"
+agot_dragon_hatching.0016.opt.dragonlore_knowledge_tt:0 "Bu bonus, bilgiye dayalı bir yumurtadan çıkarma olduğu için #difficulty_easy ARTIRILMIŞTIR#!"
+agot_dragon_hatching.0016.opt.synergy_type_tt:0 "Yumurtadan çıkarma türü ile kurban türü arasındaki sinerji nedeniyle başarı şansınız #difficulty_easy ARTIRILMIŞTIR#!"
+agot_dragon_hatching.0016.opt.leader_quality_tt:0 "Seçilen liderin niteliği nedeniyle başarı şansınız #difficulty_easy ARTIRILMIŞTIR#!"
+agot_dragon_hatching.0016.opt.sacrifice_level_tt:0 "Yapılan fedakarlık seviyesi nedeniyle başarı şansınız #difficulty_easy ARTIRILMIŞTIR#!"
+agot_dragon_hatching.0016.opt.sacrifice_synergy_tt:0 "Kurbanı çevreleyen koşullar nedeniyle başarı şansınız #difficulty_easy ARTIRILMIŞTIR#!"
+agot_dragon_hatching.0016.opt.catalyst_level_high_tt:0 "Kullanılan katalizörün seviyesi nedeniyle başarı şansınız #difficulty_easy ÇOK ARTIRILMIŞTIR#!"
+agot_dragon_hatching.0016.opt.catalyst_level_low_tt:0 "Kullanılan katalizörün seviyesi nedeniyle başarı şansınız #difficulty_easy ARTIRILMIŞTIR#!"
+agot_dragon_hatching.0016.opt.sacrifice_catalyst_synergy_tt:0 "Seçilen kurban ile kullanılan katalizör arasındaki sinerji nedeniyle başarı şansınız #difficulty_easy ARTIRILMIŞTIR#!"
+agot_dragon_hatching.0016.opt.catalyst_leader_synergy_tt:0 "Törenin lideri ile kullanılan katalizör arasındaki sinerji nedeniyle başarı şansınız #difficulty_easy ARTIRILMIŞTIR#!"
+agot_dragon_hatching.0016.opt.leader_sacrifice_synergy_tt:0 "Törenin lideri ile kurban türü arasındaki sinerji nedeniyle başarı şansınız #difficulty_easy ARTIRILMIŞTIR#!"
 
-agot_dragon_hatching_dragonlore.0002.t: "Ejderha İlmi: Ejderha Kayası" #NT!
-agot_dragon_hatching_dragonlore.0002.desc: "Ejderha Dağı'nın tünellerinde dolaşırken, bu tünellerin büyüklüğünü kavramakta zorlanıyorum. Ejderhalar yüzyıllardır burada yuvalanmışlar ve şimdi ben de buradayım. \n\nBir köşeyi döndüğümde, kuluçkahanelere varıyorum. Araştırmayı sürdürecekken bir tomar parşömene rastlıyorum. Yakından incelediğimde, çoğunun okunamaz hale geldiğini fark ediyorum, ama biri hala okunabilir! Adanın ejderha bakıcılarının yumurtaları çatlayana kadar nasıl beslediklerini anlatıyor!" #NT!
-agot_dragon_hatching_dragonlore.0002.opt: "Bunu not almam lazım..." #NT!
-  
-agot_dragon_hatching_dragonlore.0003.t: "Ejderha İlmi: Kale" #NT!
-agot_dragon_hatching_dragonlore.0003.desc: "Hisar'a vardığımda, bir Başüstat beni bir kitap koleksiyonuna yönlendiriyor. Kitaplar eski görünüyor ama belli ki iyi korunmuşlar. Rahat bir sandalye bulmalıyım, bu kitap oldukça kalın görünüyor. \n\nKitap, yıllar önce eski Valyria'dan Ejderha Kayası'na göç eden Targaryen'lerden başlayarak, ejderha yumurtalarının bilinen çeşitli kuluçka yöntemleri hakkında ayrıntılı bilgi veriyor." #NT!
-agot_dragon_hatching_dragonlore.0003.opt: "Çalışmaya başlamalıyım!" #NT!
+agot_dragon_hatching.0017.t:0 "Kan, Ama Ne Kadar?"
+agot_dragon_hatching.0017.desc_self:0 "Bu toplantıya katılan çeşitli gizemli ustaların, geldikleri topraklar kadar vahşi ve çeşitli fikirleri var. Ancak, hepsinin üzerinde hemfikir olduğu tek şey, kan dökülmesi gerektiğidir. Şimdi soru şu, #italic ne kadar?#!\n\nHalkımın geleneği olduğu üzere bir kan alma mı yapacağım, yoksa daha büyük bir fedakarlık mı sunacağım? Toplanan ezoterikçilerin çoğu, can karşılığında can ödenmesi gerektiği ve daha azının yeterli olmayacağı konusunda hemfikir. Soru şu ki, ben de aynı fikirde miyim?"
+agot_dragon_hatching.0017.desc_leader:0 ""Ritüel talimatlara göre hazırlanıyor, [ROOT.Char.GetTitledFirstNameNoTooltip]," diyor [ritual_leader_character.GetFirstNameNicknamed], sesi sakin ve kararlı. "Kurban konusunu... gündeme getirmeliyim. İkimiz de kan dökülmesi gerektiği konusunda hemfikir olsak da, burada toplananların çoğu -itiraf etmeliyim ki ben de dahil- can karşılığında can ödenmesi gerektiğine ve daha azının yeterli olmayacağına inanıyor. Siz ne dersiniz?" [ritual_leader_character.GetSheHe|U] bana bakıyor, sesi hala sakin, sanki bu dünyada karar verilecek en doğal şeymiş gibi.\n\nKuşkusuz [ritual_leader_character.GetSheHe] benden daha çok şey biliyor, ama yine de bu verilmesi gereken ağır bir karar. Bir ejderhaya sahip olma şansı için ne vermeye hazırım?"
+agot_dragon_hatching.0017.opt.a:0 "Gerekli olanı vereceğim."
+agot_dragon_hatching.0017.opt.a_tt:0 "Kurban edilecek bir can seçeceksiniz"
+agot_dragon_hatching.0017.opt.b:0 "Geleneksel olanı vereceğim."
+agot_dragon_hatching.0017.opt.b_tt:0 "Bir kan kurbanı seçeceksiniz"
 
-agot_dragon_hatching_dragonlore.0004.t: "Ejderha İlmi: Yaz Kalesi" #NT!
-agot_dragon_hatching_dragonlore.0004.desc: "Yaz Kalesi'nin yanan kalıntılarının kokusunu hala alabiliyorum. Burada bir trajedi yaşandı, ancak Kral Aegon the Unlikely'nin burada karmaşık bir yumurtadan çıkma ritüeli planlamasına yol açan bilgileri bulmaya kararlıyım. \n\nYazlık malikanenin inşasından geriye çok az şey kalmış; yanmış tuğla yığınları ve ara sıra görünen cam paneller dışında. Çalılıklar her yeri kaplamış, bu da ipuçları aramayı zorlaştırıyor. \n\nNeyse ki, çabalarım sonuç veriyor. Düşmüş tuğlaların altında gömülü Kral'ın notlarının parçalarını buluyorum. Bunları bir araya getirmem gerekecek, ancak bu iyi bir başlangıç!" #NT!
-agot_dragon_hatching_dragonlore.0004.opt: "Peki burada gerçekten ne oldu?" #NT!
+agot_dragon_hatching.0018.t:0 "$agot_dragon_hatching.0011.t$"
+agot_dragon_hatching.0018.desc_knowledge:0 "Zorla kurban edilecek kişiyi seçmek dikkatlice düşünmem gereken bir konu çünkü burada bulunanların çoğu, yumurtadan çıkması için bir can alınması düşüncesinden zaten huzursuz. Kimi seçtiğim herkes tarafından görülecek ve akıllıca seçim yapmaya özen göstermeliyim."
+agot_dragon_hatching.0018.desc_esoteric:0 "Zorla kurban edilecek kişiyi seçmek dikkatlice düşünmem gereken bir konu çünkü hayat daha önemli bir bireye ait olduğunda kanın gücünün daha güçlü olduğu teorize edildi. Kral, lord veya sıradan birinin kanı - hepsi eşit ağırlıkta olmayabilir..."
+agot_dragon_hatching.0018.opt.a:0 "Muhafızlar, yakalayın onları!"
+agot_dragon_hatching.0018.opt.a_tt: "#bold;V Seçilen katılımcının hayatı#! bu yumurtadan çıkmanın güç kaynağı olacak"
+agot_dragon_hatching.0018.opt.b:0 "İkinci kez düşündüm de, başka seçenekler de var."
+agot_dragon_hatching.0018.opt.b_tt:0 "Geri dönecek ve başka bir kurban seçeceksiniz"
+agot_dragon_hatchling.0018.toast.sacrifice_dead:0 "Kurban Öldü"
+agot_dragon_hatching.0019.t:0 "Kurban, Ben mi?"
+agot_dragon_hatching.0019.desc:0 "Kimse bir ejderhanın kurbansız yumurtadan çıkmasını beklemiyordu ama [host.GetTitledFirstNamePossessive] muhafızlarının yaklaştığını görünce, seçilenin ben olduğumu anlıyorum!\n\nAlınmadan önce sadece bir dakikam var - ne yapmalıyım?!"
+agot_dragon_hatching.0019.opt.escape.title:0 "Kaç!"
+agot_dragon_hatching.0019.opt.escape.a_tt:0 "Özgürlüğe giden yolu açıyorsunuz"
+agot_dragon_hatching.0019.opt.escape.b_tt:0 "Kargaşada sıvışıyorsunuz"
+agot_dragon_hatching.0019.opt.caught.title:0 "Yakalandınız!"
+agot_dragon_hatching.0019.opt.caught.a_tt:0 "Silahınız alınıyor ve götürülüyorsunuz"
+agot_dragon_hatching.0019.opt.caught.b_tt:0 "Hileniz başarısız oluyor ve götürülüyorsunuz"
+agot_dragon_hatching.0019.opt.a:0 "Sessizce gitmeyeceğim!"
+agot_dragon_hatching.0019.opt.a.f:0 "Savaşarak kurtulmaya çalışıyorsunuz"
+agot_dragon_hatching.0019.opt.b:0 "[ROOT.Char.GetTitledFirstNameNoTooltip]? [ROOT.Char.GetHerHim] o tarafa doğru gördüm!"
+agot_dragon_hatching.0019.opt.b.f:0 "Yalan söyleyerek durumdan kurtulmaya çalışıyorsunuz"
+agot_dragon_hatching.0019.opt.c:0 "Peki; eğer biri olmalıysa, o zaman bırakın ben olayım."
+agot_dragon_hatching.0019.opt.c.f:0 "Kaderinizi kabul ediyorsunuz"
+agot_dragon_hatching.0019.opt.c_tt:0 "#bold;V Hayatınız#! bu yumurtadan çıkmanın güç kaynağı olacak"
+# Felaket sonuçları
+agot_dragon_hatching.0101.t:0 "Hırs Felaketi!"
+agot_dragon_hatching.0101.desc:0 "Felaket!\n\nGözlerimin önünde yumurta paramparça oluyor, içindeki ejderhanın gücü ve yapılan ayinler bir yıkım dalgası halinde serbest kalıyor. Isı dayanılmaz, alevler yoluna çıkan her şeyi yakıp kül ediyor. Benim aptallığım hepimizi mahvetti ve yeni bir ejderha hayali ateş ve kan içinde öldü."
+agot_dragon_hatching.0101.opt.a:0 "Tanrılar, hayır!"
+agot_dragon_hatching.0102.t:0 "$agot_dragon_hatching.0101.t$"
+agot_dragon_hatching.0102.desc:0 "Felaket!\n\nGözlerimin önünde yumurta paramparça oluyor, içindeki ejderhanın gücü ve yapılan ayinler bir yıkım dalgası halinde serbest kalıyor. Isı dayanılmaz, alevler yoluna çıkan her şeyi yakıp kül ediyor. [host.GetTitledFirstName]'in aptallığı hepimizi mahvetti ve yeni bir ejderha hayali ateş ve kan içinde öldü."
+agot_dragon_hatching.0202.opt.a:0 "$agot_dragon_hatching.0101.opt.a$"
+# Felaket sonuçları
+agot_dragon_hatching.0201.t:0 "Hırs Felaketi!"
+agot_dragon_hatching.0201.desc:0 "Felaket!\n\nYumurta ısıda paramparça oluyor, içindeki güç onu parçalayıp alev alev yanan kabuk ve iç organ parçaları fırlatıyor. Uçan parçalar toplananlara çarpıyor ve hem insanları hem de mekanları ateşe veriyor. Yeni bir ejderha hayalim ateş ve kan içinde öldü."
+agot_dragon_hatching.0201.opt.a:0 "Eğilin ve siper alın!"
+agot_dragon_hatching.0202.t:0 "$agot_dragon_hatching.0201$"
+agot_dragon_hatching.0202.desc:0 "Felaket!\n\nYumurta ısıda paramparça oluyor, içindeki güç onu parçalayıp alev alev yanan kabuk ve iç organ parçaları fırlatıyor. Uçan parçalar toplananlara çarpıyor ve hem insanları hem de mekanları ateşe veriyor. [host.GetTitledFirstNamePossessive]'in yeni bir ejderha hayali ateş ve kan içinde öldü."
+agot_dragon_hatching.0202.opt.a:0 "$agot_dragon_hatching.0201.opt.a$"
+# Hiçbir şey sonuçları
+agot_dragon_hatching.0303.t:0 "Hırsın Örsünde Kırılmak"
+agot_dragon_hatching.0303.desc:0 "#bold;italic *ÇAT*#!\n\nSes sağır edici derecede yüksek. Büyük bir hayal kırıklığı çığlıkları ve iç çekişleri korosuna, yumurta ısı altında parçalara ayrıldı. Hayallerim - ve yumurtam - önümdeki kabuk kadar paramparça oldu."
+agot_dragon_hatching.0303.opt.a:0 "Lanet olsun her şeye!"
+agot_dragon_hatching.0304.t:0 "Boşuna Çabalar"
+agot_dragon_hatching.0304.desc:0 "Kalkan nefeslerle yumurtanın çatlayacağını, hareket edeceğini, #emp bir şey#! yapacağını bekliyor. Ama hiçbir şey olmuyor. Olduğu gibi kalıyor, kırılmamış ve boyun eğmez.\n\nHayal kırıklığı öksürükleri ve başarısızlık fısıltıları havayı doldururken, çabalarımın boşuna olduğunu kabul etmeliyim. Ağır bir kalple, hizmetçilere yumurtayı çıkarmalarını ve temizliğe başlamalarını emrediyorum."
+agot_dragon_hatching.0304.opt.a:0 "$agot_dragon_hatching.0303.opt.a$"
+agot_dragon_hatching.0305.t:0 "$agot_dragon_hatching.0303.t$"
+agot_dragon_hatching.0305.desc:0 "#bold;italic *ÇAT*#!\n\nSes sağır edici derecede yüksek. Büyük bir hayal kırıklığı çığlıkları ve iç çekişleri korosuna, kendi sesim de dahil, yumurta ısı altında parçalara ayrıldı. [host.GetTitledFirstNamePossessive] hayalleri - ve [host.GetHerHis] yumurtası - önümüzdeki kabuk kadar paramparça oldu."
+agot_dragon_hatching.0305.opt.a:0 "Ve o kadar umut verici görünüyordu ki..."
+agot_dragon_hatching.0306.t:0 "$agot_dragon_hatching.0304.t$"
+agot_dragon_hatching.0306.desc:0 "Kalkan nefeslerle yumurtanın çatlayacağını, hareket edeceğini, #emp bir şey#! yapacağını bekliyor. Ama hiçbir şey olmuyor. Olduğu gibi kalıyor, kırılmamış ve boyun eğmez.\n\nHayal kırıklığı öksürükleri ve başarısızlık fısıltıları havayı doldururken, [host.GetTitledFirstName] çabalarının boşuna olduğunu kabul etmeli. [host.GetHerHim]'in hizmetçilere yumurtayı çıkarmalarını ve temizliğe başlamalarını emrettiğini görüyorum ve sadece sempatiyle başımı sallayabiliyorum."
+agot_dragon_hatching.0306.opt.a:0 "$agot_dragon_hatching.0305.opt.a$"
+# Başarı sonuçları
+agot_dragon_hatching.0401.t:0 "Yeni Bir Şafak"
+agot_dragon_hatching.0401.desc:0 "Bir an her yer sessiz. Kalabalık nefesini tutuyor. Sanki hiçbir şey olmayacakmış gibi görünüyor.... Sonra yumurta titriyor ve çatlıyor. Küçük, pullu bir kafa ortaya çıkıyor, ardından uzun, kıvrımlı bir boyun geliyor. İçindeki ejderha doğdu! Yeni bir ejderha çağı başladı ve bunu gerçekleştiren ben oldum!"
+agot_dragon_hatching.0401.opt.a:0 "Yaşa!"
+agot_dragon_hatching.0401.opt.a_tt:0 "Başarıyla bir ejderha yumurtadan çıkardınız!"
+agot_dragon_hatching.0402.t:0 "$agot_dragon_hatching.0401.t$"
+agot_dragon_hatching.0402.desc:0 "Bir an her yer sessiz. Kalabalık nefesini tutuyor. Sanki hiçbir şey olmayacakmış gibi görünüyor.... Sonra yumurta titriyor ve çatlıyor. Küçük, pullu bir kafa ortaya çıkıyor, ardından uzun, kıvrımlı bir boyun geliyor. İçindeki ejderha doğdu! Yeni bir ejderha çağı başladı ve ben buna şahit oldum!"
+agot_dragon_hatching.0402.opt.a:0 "$agot_dragon_hatching.0401.opt.a$"
+agot_dragon_hatching.0402.opt.a_tt:0 "[host.GetTitledFirstName]'in bir ejderha yumurtadan çıkarmasına şahit oldunuz!"
 
-agot_dragon_hatching_dragonlore.0005.t: "Ejderha İlmi: Harrenhal" #NT!
-agot_dragon_hatching_dragonlore.0005.desc: "Harrenhal, hikayelerin anlattığından çok daha etkileyici. Hiçbir sakini, bir zamanlar görkemli olan bu kaleyi yeniden inşa etmeye cesaret edememiş. Bu yüzden harabe halinde kalmış. \n\nGördüğüm her kaleden çok daha büyük; Kızıl Kale bile bununla kıyaslanamaz. Bir zamanlar yüksek olan kuleler, ejderha ateşiyle eğilmiş ve çatlamış. Kara Harren bu duvarların onu koruyacağına inanıyordu, ama soyu burada sona erdi. Kale, bir ejderhayla savaşmaya kalkmamak gerektiğini hatırlatıyor." #NT!
-agot_dragon_hatching_dragonlore.0005.opt: "Kara Harren bir aptaldı." #NT!
+hatched_dragon_via_cradling_notification:0 "[ROOT.Char.GetName] Kucaklayarak [dragon.GetName]'i yumurtadan çıkardı"
 
-agot_dragon_hatching_dragonlore.0006.t: "Ejderha İlmi: Ateş Alanları" #NT!
-agot_dragon_hatching_dragonlore.0006.desc: "Aegon ve kız kardeş eşleri Fetih sırasında yakıp kül ettikten sonra çimenler yeniden yeşermiş. Ancak bu ovalarda hala bir ölüm havası var. \n\nBinlerce adam burada ejderha ateşiyle öldü. Gardener Hanesi burada yok oldu, Lannister Hanesi çok geçmeden diz çöktü. \n\nBu savaş, üç fatihin birlikte savaştığı tek zamandı. Üç ejderha tek bir güç olarak hareket etti, Yedi Krallık'ta hatta dünyada en güçlü insanlar haline gelen bu adalılar zafer kazandı." #NT!
-agot_dragon_hatching_dragonlore.0006.opt: "Bu gücün bir kısmına sahip olduğunuzu hayal edin!" #NT!
+agot_dragon_hatching_you_try_hatching:0 "[egg.GetName]'i yumurtadan çıkarmaya çalışıyorsunuz"
+
+# Ejderha Bilgisi #
+agot_dragon_hatching_dragonlore.0001.t:0 "Ejderha Bilgisi: Rhaenys'in Tepesi"
+agot_dragon_hatching_dragonlore.0001.desc:0 "Bir zamanlar en vahşi ejderhalardan bazılarının yuvası olan bu dev, şimdi sadece bir harabe. Tünellerinde yürürken, büyüklüğüne hayran kalıyorum ve öneminin ağırlığı beni esir alıyor.\n\nBöyle büyülenmişken, molozlardaki tozlu kağıtları neredeyse fark etmiyorum. Ejderha bakıcıları tarafından kullanılan yumurtadan çıkarma tekniklerine dair ipuçları veriyor gibi görünüyorlar!"
+agot_dragon_hatching_dragonlore.0001.opt:0 "Bu işime yarayacak!"
+
+agot_dragon_hatching_dragonlore.0002.t:0 "Ejderha Bilgisi: Ejderha Kayası"
+agot_dragon_hatching_dragonlore.0002.desc:0 "Ejderha Kayası'nın tünellerinde dolaşırken, büyüklüklerini anlamakta zorlanıyorum. Yüzyıllardır ejderhalar burada yuva yapmış ve işte ben de buradayım.\n\nBir köşeyi dönerken, kuluçka alanlarına giriyorum. Bir tomar yığınına takılmasaydım daha fazla araştırırdım. Yakından incelendiğinde, çoğunun okunaksız olduğunu görünce biraz hayal kırıklığına uğruyorum.\n\n#I Ama biri okunaklı!#! Adanın ejderha bakıcılarının yumurtaları nasıl çatlayana kadar beslediklerini anlatıyor!"
+agot_dragon_hatching_dragonlore.0002.opt:0 "Bunu not etmeliyim..."
+
+agot_dragon_hatching_dragonlore.0003.t:0 "Ejderha Bilgisi: Kale"
+agot_dragon_hatching_dragonlore.0003.desc:0 "Kale'ye vardığımda, bir Başüstat beni bir kitap koleksiyonuna yönlendiriyor. Eski görünüyorlar ama açıkça iyi bakılmışlar. Sanırım rahat bir sandalye bulmalıyım, bu kitap oldukça kalın görünüyor.\n\nKitap, Targaryenlerin yıllar önce eski Valyria'dan Ejderha Kayası'na göçünden başlayarak, bilinen çeşitli yumurtadan çıkarma olayları hakkında oldukça ayrıntılı bilgiler veriyor."
+agot_dragon_hatching_dragonlore.0003.opt:0 "Çalışmaya başlamalıyım!"
+
+agot_dragon_hatching_dragonlore.0004.t:0 "Ejderha Bilgisi: Yaz Salonu"
+agot_dragon_hatching_dragonlore.0004.desc:0 "Yaz Salonu'nun yanan kalıntılarının kokusunu hala alabiliyor gibiydim. Burada bir trajedi yaşandı, ancak Kral Beşinci Aegon'un burada böylesine karmaşık bir yumurtadan çıkarma ritüeli düzenlemesine yol açan bilgileri bulmaya kararlıyım.\n\nYazlık malikanenin yapısından çok az şey kaldı, sadece yanmış tuğla yığınları ve ara sıra bir cam parçası. Ancak, bitki örtüsü her yeri kaplamış, bu da ipucu aramayı zorlaştırıyor.\n\nNeyse ki, çabalarım sonuç veriyor. Özenli araştırmam, Kral'ın notlarının parçalarını düşmüş tuğlaların altında gömülü olarak ortaya çıkarıyor. Onları kendim bir araya getirmem gerekecek ama bu iyi bir ilerleme!"
+agot_dragon_hatching_dragonlore.0004.opt:0 "Burada gerçekten ne oldu?"
+
+agot_dragon_hatching_dragonlore.0005.t:0 "Ejderha Bilgisi: Harrenhal"
+agot_dragon_hatching_dragonlore.0005.desc:0 "Harrenhal'ın hikayeleri ona hakkını vermiyor, sanırım. Hiçbir sakin, bir zamanlar görkemli olan kaleyi yeniden inşa etme mücadelesini üstlenmeye cesaret edemedi. Bunun yerine, harabe halinde yatıyor.\n\nAyak bastığım herhangi bir kaleden çok daha büyük, Kızıl Kale bile karşılaştırılamaz. Bir zamanlar büyük olan kuleler, ben gelmeden çok önce ejderha ateşiyle çatlamış ve bükülmüştü. Kara Harren bu duvarlara inanmıştı ve soyu onların içinde sona erdi. Kale, ejderhaya meydan okunmaması gerektiğinin bir hatırlatıcısı olarak hizmet ediyor."
+agot_dragon_hatching_dragonlore.0005.opt:0 "Kara Harren bir aptaldı."
+
+agot_dragon_hatching_dragonlore.0006.t:0 "Ejderha Bilgisi: Ateş Tarlaları"
+agot_dragon_hatching_dragonlore.0006.desc:0 "Aegon ve kız kardeş-eşlerinin Fetih sırasında yakmasından sonra çimenler uzun zaman önce yeniden büyüdü. Ancak, ovalarda hala bir ölüm havası var.\n\nBinlerce adam burada öldü, ejderha ateşiyle yakıldı. Bahçıvan Hanesi bu tarlalarda yok oldu, Lannister Hanesi kısa süre sonra diz çöktü.\n\nBu savaş, üç fatihin birlikte savaştığı tek zamandı, üç ejderha tek vücut gibi savaştı. Savaş, Yedi Krallığın, hatta belki de dünyanın en güçlü insanları haline gelen bir adadan gelen üç kişi tarafından kullanılan ejderha gücünün gerçek bir yansımasıydı."
+agot_dragon_hatching_dragonlore.0006.opt:0 "O gücün küçük bir kısmına sahip olmayı hayal edin!"
 
 agot_dragon_hatching_dragonlore.0007.t:0 "Ejderha Bilgisi: Kızıl Göl"
-agot_dragon_hatching_dragonlore.0007.desc:0 "Kızıl Göl kıyılarında seyahat ederken, uçsuz bucaksız mavi genişliğin kalbindeki taşlı adayı ziyaret etme fırsatını yakalıyorum. Şimdi burada sakinlik hüküm sürse de, bir zamanlar korkunç [silverwing.GetName] tarafından işgal edilmişti.\n\nİnsanlara alışkın olmasına rağmen, gümüş pullu canavar, son binicisi [ulf.GetFullName]'in ölümünden sonra vahşileşti ve bu küçük adayı yuvası yaptı.\n\nEjderhaların Dansı, Yedi Krallık tarihinin en kanlı ve en çalkantılı çatışmalarından biriydi. Valyrialılar ilk olarak On Dört Alev olarak bilinen büyük volkanik dağlar arasında ejderhaları evcilleştirdiğinden beri, bu görkemli yaratıklar uzun zamandır korkunçlu savaş silahları olarak kullanılmıştır ve Dans, birçokları arasında böyle karanlık bir olayı işaret eder."
-agot_dragon_hatching_dragonlore.0007.a:0 "Gerçekten de ateş ve kan."
+agot_dragon_hatching_dragonlore.0007.desc:0 "Kızıl Göl kıyılarında seyahat ederken, engin mavi alanın kalbindeki taşlı adayı ziyaret etme fırsatını yakalıyorum. Şimdi burada sakinlik hüküm sürse de, bir zamanlar korkunç [silverwing.GetName] tarafından işgal edilmişti.\n\nİnsanlara alışkın olmasına rağmen, gümüş pullu canavar, son binicisi [ulf.GetFullName]'ın ölümünden sonra vahşileşti ve bu küçük adayı inine çevirdi.\n\nEjderhaların Dansı, Yedi Krallık tarihinin en kanlı ve en çalkantılı çatışmalarından biriydi. Valyrialılar ilk ejderhaları On Dört Alev olarak bilinen büyük volkanik dağlar arasında evcilleştirdiğinden beri, bu görkemli yaratıklar uzun zamandır korkunç savaş silahları olarak kullanılıyor ve Dans, birçokları arasında böyle karanlık bir olayı işaret ediyor."
+agot_dragon_hatching_dragonlore.0007.a:0 "Gerçekten ateş ve kan."
 
-agot_dragon_hatching_dragonlore.0008.t:0 "Ejderha Bilgisi: Yuva"
-agot_dragon_hatching_dragonlore.0008.desc_intro:0 "Tam adayı geride bırakmaya hazırlanırken, ayna gibi bir parıltı dikkatimi çekiyor.\n\n"
-agot_dragon_hatching_dragonlore.0008.desc_clutch:0 "Her biri farklı renklerde parıldayan üç büyük ve oldukça tuhaf mücevher görüyorum. İlk başta gözlerime inanamıyorum ama yanlarına çömeldiğimde minik pullar ortaya çıkıyor!\n\nÖnümde bir ejderha yumurtası kümesi duruyor!"
-agot_dragon_hatching_dragonlore.0008.desc_pair:0 "Dikkatlice yaklaşıyorum ve çamurla kaplı iki garip taş görüyorum. Kiri temizlerken kalbim hızla atıyor - parmaklarımın altında toprak parıldayan pullara yol açıyor, sıradan bir kaya değil, bir ejderha yumurtası tutuyorum!\n\nNe zamandır burada saklı kaldılar?"
-agot_dragon_hatching_dragonlore.0008.desc_single:0 "Yaklaşıyorum ve çamurlu ağır bir taşı kaldırıyorum ve kiri temizlerken kalbim hızla atmaya ve parmaklarım titremeye başlıyor - Sadece bir taş değil, bir ejderha yumurtası tuttuğumu çabucak fark ediyorum!\n\nNe zamandır burada saklı kaldı?"
+agot_dragon_hatching_dragonlore.0008.t:0 "Ejderha Bilgisi: İn"
+agot_dragon_hatching_dragonlore.0008.desc_intro:0 "Adayı geride bırakmaya hazırlanırken, ayna gibi bir parıltı dikkatimi çekiyor.\n\n"
+agot_dragon_hatching_dragonlore.0008.desc_clutch:0 "Her biri farklı renklerde parıldayan üç büyük ve oldukça tuhaf mücevher görüyorum. İlk başta gözlerime inanamıyorum ama yanlarına çömeldiğimde minik pullar ortaya çıkıyor!\n\nÖnümde bir ejderha yumurtası kümesi var!"
+agot_dragon_hatching_dragonlore.0008.desc_pair:0 "Dikkatlice yaklaşıyorum ve çamurla kaplı iki garip taş görüyorum. Kirleri temizlerken kalbim hızla atıyor - parmaklarımın altında toprak parıldayan pullara yol açıyor, sıradan bir kaya değil, bir ejderha yumurtası tutuyorum!\n\nNe kadar zamandır burada saklı kalmışlar?"
+agot_dragon_hatching_dragonlore.0008.desc_single:0 "Yaklaşıp ağır, çamurlu bir taşı kaldırıyorum ve kirleri temizlerken kalbim hızla atmaya ve parmaklarım titremeye başlıyor - sıradan bir taş değil, bir ejderha yumurtası tuttuğumu hemen anlıyorum!\n\nNe kadar zamandır burada saklı kalmış?"
 agot_dragon_hatching_dragonlore.0008.a:0 "İnanılmaz!"
 
-agot_dragon_hatching_dragonlore_increase: "Ejderha Bilgeliğiniz Arttı" #NT!
+agot_dragon_hatching_dragonlore_increase:0 "Ejderha Bilginiz Artıyor"
 
-agot_dragon_egg_lay.female_revealed: "\n\nElbette, bir yumurta bırakmış olması, artık [dragon_parent.GetNameNoTooltip]'ın dişi bir ejderha olduğunu doğruluyor." #NT!
-agot_dragon_egg_lay.female_revealed_past: "\n\nElbette, bir yumurta bırakmış olması, artık [dragon_parent.GetNameNoTooltip]'ın dişi bir ejderha olduğunu doğruluyor." #NT!
+agot_dragon_egg_lay.female_revealed: "\n\nElbette, bir küme yumurta bıraktıktan sonra, [dragon_parent.GetNameNoTooltip]'ın aslında dişi bir ejderha olduğunu artık biliyoruz."
+agot_dragon_egg_lay.female_revealed_past: "\n\nElbette, bir küme yumurta bıraktıktan sonra, [dragon_parent.GetNameNoTooltip]'ın aslında dişi bir ejderha olduğunu artık biliyoruz."
 
-agot_dragon_egg_cradling.1001.t: "Taşlaşmış Yumurta" #NT!
-agot_dragon_egg_cradling.1001.desc: "Bir şeyler ters gitti.\n\nSoğuk ejderha yumurtamı bir mangalın üzerinde tutuyorum, pullu yüzeyinden biraz sıcaklık geri kazandırmaya çalışıyorum. Mangalın alevi dışını ısıtıyor, fakat içindeki yaşam sönük kalıyor — yakında parlak renkli bir taş olmaktan öteye geçemeyecek. Kader bana bu ejderhayı vermedi.\n\nBaşka bir ejderhayla şansımı denemeli miyim?" #NT!
-agot_dragon_egg_cradling.1001.a: "Bana bir yumurta daha getir." #NT!
-agot_dragon_egg_cradling.1001.a.tt: "[new_egg.GetName]'ı kucağınıza almaya başlayacaksınız." #NT!
-agot_dragon_egg_cradling.1001.b: "Bu nasıl olabilir?" #NT!
+agot_dragon_egg_cradling.1001.t:0 "Taşlaşmış Bir Yumurta"
+agot_dragon_egg_cradling.1001.desc:0 "Bir şeyler ters gitti.\n\nSoğuk ejderha yumurtamı bir mangalın üzerinde tutuyor, pullu yüzeyinden yayılan sıcaklığın bir kısmını geri kazandırmaya çalışıyorum. Mangaldan çıkan alev ve duman dışını ısıtıyor ama içindeki yaşam gizli - yakında parlak renkli bir taştan başka bir şey olmayacak. Kader bu ejderhayı bana çok gördü.\n\nBaşka biriyle deneyeyim mi?"
+agot_dragon_egg_cradling.1001.a:0 "Bana başka bir yumurta getirin."
+agot_dragon_egg_cradling.1001.a.tt:0 "[new_egg.GetName]'i kucaklamaya başlayacaksınız"
+agot_dragon_egg_cradling.1001.b:0 "Bu nasıl olabilir?"
 
-  
-agot_dragon_egg_cradling.1002.t: "Taşlaşmış Yumurta" #NT!
-agot_dragon_egg_cradling.1002.young_desc: "[egg_owner.GetNamePossessive] odasına giriyorum, [egg_owner.GetHerHis] ejderha yumurtasının çatlamasını beklediği yere yaklaşıyorum. Ellerimi yumurtanın pullu yüzeyinde gezdiriyorum, ancak avucumun altında soğuk taş dışında bir şey hissetmediğim için ürperiyorum. Her zamanki sıcaklığı neredeyse kaybolmuş ve içindeki ejderha muhtemelen yok olmuş, asla çatlamayacak.\n\n[egg_owner.GetHerHim]'e denemesi için başka bir yumurta vermeli miyim?" #NT!
-agot_dragon_egg_cradling.1002.desc: "[egg_owner.GetNamePossessive] odasına girdiğimde, sadece [egg_owner.GetHerHim]'i odanın köşesindeki şöminenin yanında oturmuş, alevlerin hemen üzerinde [egg_owner.GetHerHis] ejderha yumurtasını tutarken buldum. Ateşin alevleri, pullu yüzeyi yaladı ve duman yumurtanın her zamanki parlaklığını kararttı. \"Soğudu,\" dedi [egg_owner.GetSheHe], gözyaşları [egg_owner.GetHerHis] yanaklarından aşağıya süzülüyordu. Dumanın içinden elimi uzatıp yüzeye dokundum. Yumurta, bir taş kadar cansızdı.\n\n[egg_owner.GetHerHim]'e başka bir yumurta denemesi için vermeli miyim?" #NT!
-agot_dragon_egg_cradling.1002.a: "Başka bir tane deneyelim." #NT!
-agot_dragon_egg_cradling.1002.a.tt: "[egg_owner.GetNameNoTooltip] beşiğine [new_egg.GetName] koyulacak." #NT!
-agot_dragon_egg_cradling.1002.b: "Çok üzgünüm, [egg_owner.GetNameNoTooltip]..." #NT!
+agot_dragon_egg_cradling.1002.t:0 "Taşlaşmış Bir Yumurta"
+agot_dragon_egg_cradling.1002.young_desc:0 "[egg_owner.GetNamePossessive]'ın odasına giriyorum, yumurtadan çıkmayı bekleyen ejderha yumurtasının kucağında olduğu yere yaklaşıyorum. Ellerimi yumurtanın pullu yüzeyinde gezdiriyorum ve avucumun altında sadece soğuk taş hissedince titriyorum. Her zamanki sıcaklık neredeyse yok olmuş ve içindeki ejderha muhtemelen kaybolmuş, asla yumurtadan çıkmayacak.\n\n[egg_owner.GetHerHim]'e denemesi için başka bir yumurta vereyim mi?"
+agot_dragon_egg_cradling.1002.desc:0 "[egg_owner.GetNamePossessive]'ın odasına giriyorum ve [egg_owner.GetHerHim]'i odanın kenarındaki şöminenin yanında oturmuş, ejderha yumurtasını alevlerin hemen üzerinde tutarken görüyorum. Ateşin kıvrımları pullu yüzeyin alt kısmını yalayıp geçiyor ve duman yumurtanın her zamanki parlak rengini karartıyor. "Soğudu," diyor [egg_owner.GetSheHe], gözyaşları [egg_owner.GetHerHis] yüzünden aşağı akıyor. Dumanın arasından uzanıp ellerimi yüzeyde gezdiriyorum. Yumurta taş kadar cansız.\n\n[egg_owner.GetHerHim]'e başka bir yumurta denemesini söylemeli miyim?"
+agot_dragon_egg_cradling.1002.a:0 "Başka bir tane deneyelim."
+agot_dragon_egg_cradling.1002.a.tt:0 "[egg_owner.GetNameNoTooltip] [new_egg.GetName]'i kucaklamaya başlayacak"
+agot_dragon_egg_cradling.1002.b:0 "Çok üzgünüm, [egg_owner.GetNameNoTooltip]..."
 
-agot_dragon_egg_cradling.2000.t: "Beşik Arkadaşları" #NT!
-agot_dragon_egg_cradling.2000.desc_start1: "Hayretle [child.GetName]'a bakıyorum; bakın neler yaptım. [child.GetSheHe|U] tüm dünyayı hak ediyor ve umarım bir gün bu, gökyüzünü de kapsar." #NT!
-agot_dragon_egg_cradling.2000.desc_start2: "[child.GetName] bana gözlerini kırpıştırarak bakıyor, [child.GetHerHis] kolları bana uzanıyor. [child.GetHerHis] beşiğinin yanında duruyorum, elimde sıcaklık yayan bir ejderha yumurtası tutuyorum." #NT!
-agot_dragon_egg_cradling.2000.desc_targ: "Rhaena'nın Jaehaerys ve Alysanne'in beşiğine bir yumurta koyması Targaryen geleneği haline gelmiştir." #NT!
-agot_dragon_egg_cradling.2000.desc: "Eğer çocuğum bir ejderha yumurtasıyla aynı beşiği paylaşırsa ve yumurtadan [child.GetHerHim] çıkarsa, aralarındaki bağ daha da güçlenecektir." #NT!
-agot_dragon_egg_cradling.2000.a: "Birlikte beşikte sarılacaklar." #NT!
-agot_dragon_egg_cradling.2000.a.tt: "[child.GetNameNoTooltip], [cradle_egg.GetName]'i kucaklamaya başlayacak." #NT!
-agot_dragon_egg_cradling.2000.b: "Beşik, ejderha yumurtasının yeri değildir." #NT!
+agot_dragon_egg_cradling.2000.t:0 "Beşik Arkadaşları"
+agot_dragon_egg_cradling.2000.desc_start1:0 "[child.GetName]'e hayranlıkla bakıyorum; bakın ne yaptım. [child.GetSheHe|U] tüm dünyayı hak ediyor ve umarım bir gün bu gökyüzünü de içerecek."
+agot_dragon_egg_cradling.2000.desc_start2:0 "[child.GetName] bana göz kırparak bakıyor, [child.GetHerHis] kollarını bana uzatıyor. Beşiğinin yanında duruyorum, elimde sıcaklık yayan bir ejderha yumurtası var."
+agot_dragon_egg_cradling.2000.desc_targ:0 "Rhaena, Jaehaerys ve Alysanne'nin beşiklerine birer yumurta koyduğundan beri bu bir Targaryen geleneği olmuştur."
+agot_dragon_egg_cradling.2000.desc:0 "Çocuğum bir ejderha yumurtasıyla aynı beşiği paylaşırsa ve yumurta [child.GetHerHim] için çatlırsa, aralarındaki bağ çok daha güçlü olacaktır."
+agot_dragon_egg_cradling.2000.a:0 "Birlikte kucaklaşacaklar."
+agot_dragon_egg_cradling.2000.a.tt:0 "[child.GetNameNoTooltip], [cradle_egg.GetName]'i kucaklamaya başlayacak."
+agot_dragon_egg_cradling.2000.b:0 "Beşik, ejderha yumurtası için uygun bir yer değil."
 
-agot_dragon_egg_cradling_birth.0002.t: "Yumurtam Çatladı!" #NT!
-agot_dragon_egg_cradling_birth.0002.desc: "Hayatımda hiç bu kadar sevinç hissetmemiştim! Yumurtam çatladı ve bir ejderha kabuğunun kalıntılarından çıktı.\n\nAramızdaki bağın gücünü ve hayatımın sonuna kadar yanımda olacaklarının ağırlığını şimdiden hissedebiliyorum. Cinsiyetlerinin ne olduğunu henüz söyleyemem, ama tarihin unutamayacağı bir isme ihtiyaçları var.\n\nOnlara ne isim vermeliyim?" #NT!
-agot_dragon_egg_cradling_birth.0002.a: "Birlikte bir ömür boyu maceralar yaşayacağız." #NT!
-agot_dragon_egg_cradling_birth.0002.a_tt_dragon_born: "Yeni bir [dragon|e] doğdu." #NT!
-agot_dragon_egg_cradling_birth.0002.a_tt_egg_destroyed: "#v ejderha yumurtanız#! [artifact|e] #N yok edildi#!." #NT!
+agot_dragon_egg_cradling.2001.t:0 "İki Kişilik Bir Yumurta"
+agot_dragon_egg_cradling.2001.t.two:0 "İki Kişilik İki Yumurta"
+agot_dragon_egg_cradling.2001.desc.intro:0 "İkizlere, [child_1.GetName] ve [child_2.GetName]'e hayranlıkla bakıyorum; bakın ne yaptım. Her biri tüm dünyayı hak ediyor ve umarım bir gün bu gökyüzünü de içerecek."
+agot_dragon_egg_cradling.2001.desc_targ:0 "$agot_dragon_egg_cradling.2000.desc_targ$"
+agot_dragon_egg_cradling.2001.desc.two_egg:0 "Neyse ki ikisi için de yeterince yumurta var."
+agot_dragon_egg_cradling.2001.desc.one_egg:0 "Elimde sadece bir yumurta varken zor bir karar vermem gerekecek; yumurtayı [child_1.GetNamePossessiveNoTooltip]'ın beşiğine mi yoksa [child_2.GetNamePossessiveNoTooltip]'ın beşiğine mi koyayım?"
+agot_dragon_egg_cradling.2001.a:0 "İkisinin de yumurtası olacak."
+agot_dragon_egg_cradling.2001.a.tt:0 "[child_1.GetNameNoTooltip] ve [child_2.GetNameNoTooltip]'ın kucaklayacağı yumurtaları seçeceksiniz."
+agot_dragon_egg_cradling.2001.b:0 "Sadece [child_1.GetName] bir yumurtayla kucaklaşacak."
+agot_dragon_egg_cradling.2001.b.tt:0 "[child_1.GetNameNoTooltip]'ın kucaklayacağı yumurtayı seçeceksiniz."
+agot_dragon_egg_cradling.2001.b.tt.one_egg:0 "[child_1.GetNameNoTooltip], [cradle_egg_1.GetName]'i kucaklamaya başlayacak."
+agot_dragon_egg_cradling.2001.c:0 "Sadece [child_2.GetName] bir yumurtayla kucaklaşacak."
+agot_dragon_egg_cradling.2001.c.tt:0 "[child_2.GetNameNoTooltip]'ın kucaklayacağı yumurtayı seçeceksiniz."
+agot_dragon_egg_cradling.2001.c.tt.one_egg:0 "[child_2.GetNameNoTooltip], [cradle_egg_1.GetName]'i kucaklamaya başlayacak."
+agot_dragon_egg_cradling.2001.d:0 "$agot_dragon_egg_cradling.2000.b$"
 
-agot_dragon_egg_cradling_birth.0003.t: "Bakımımda Bir Yavru" #NT!
-agot_dragon_egg_cradling_birth.0003.desc: "Bakımımdaki bir yumurta çatladı! [dragon.GetName] doğdu ve aileme katıldı, ancak cinsiyetinin ne olduğu henüz belli değil, bu zamanla belirlenecek.\n\nŞimdilik, [dragonkeepers|e], [dragon.GetNameNoTooltip]'yi bakıma aldı ve onların barınması ve büyümesi için hazırlıkları düşünmem gerekiyor. Ama ilk önce, bir ejderhanın bir isme ihtiyacı var. Ne olacak?" #NT!
-agot_dragon_egg_cradling_birth.0003.opt.a: "Tarihin yıllıklarına geçen bir isim." #NT!
+agot_dragon_egg_cradling.2002.t:0 "Beşik Yumurtası Seçimi"
+agot_dragon_egg_cradling.2002.desc:0 "Çocuğunuzun kucaklayacağı yumurtayı seçin."
+agot_dragon_egg_cradling.2002.a:0 "Bu yumurta olur."
+agot_dragon_egg_cradling.2002.a.tt:0 "[child.GetNameNoTooltip], [cradle_egg.GetName]'i kucaklamaya başlayacak."
+agot_dragon_egg_cradling.2002.b:0 "Fikrimi değiştirdim."
 
-agot_dragon_egg_cradling_birth.0004.t: "Cinsiyeti Belirlendi!" #NT!
-agot_dragon_egg_cradling_birth.0004.desc: "[dragon_gender|EU] doğası gereği gizemli bir kavramdır, ancak bu sefer gizem ortadan kalkmış gibi görünüyor!\n\n[revealing.GetFullName], [revealing.GetSheHe]'nin, [dragon.GetName]'in yaşamının ilk haftasında gösterdiği davranışlara dayanarak, [dragon.Custom('GetDragonSheHe')] bir [dragon.Custom('DragonFemaleMale')] ejderhası olduğunu belirledi." #NT!
-agot_dragon_egg_cradling_birth.0004.a: "İyi bir [dragon.Custom('DragonGirlBoy')] kimdir?" #NT!
+agot_dragon_egg_cradling.2012.t:0 "$agot_dragon_egg_cradling.2001.t.two$"
+agot_dragon_egg_cradling.2012.desc.intro:0 "İkizlere, [child_1.GetName] ve [child_2.GetName]'e hayranlıkla bakıyorum; bakın ne yaptım. Her biri tüm dünyayı hak ediyor ve umarım bir gün bu gökyüzünü de içerecek. $agot_dragon_egg_cradling.2000.desc_targ$ [other_parent.GetTitledFirstNameNoTooltip] ve ben her birimizin bir yumurtası var, ikisi için tam yeterli."
+agot_dragon_egg_cradling.2012.a:0 "[child_1.GetNameNoTooltip]'a bir yumurta ben vereceğim, [other_parent.GetTitledFirstNameNoTooltip] da [child_2.GetNameNoTooltip]'a verecek."
+agot_dragon_egg_cradling.2012.a.tt:0 "[child_1.GetNameNoTooltip], [my_egg.GetName]'i kucaklamaya başlayacak. [child_2.GetNameNoTooltip], [parent_two_egg.GetName]'i kucaklamaya başlayacak."
+agot_dragon_egg_cradling.2012.b:0 "[child_2.GetNameNoTooltip]'a bir yumurta ben vereceğim, [other_parent.GetTitledFirstNameNoTooltip] da [child_1.GetNameNoTooltip]'a verecek."
+agot_dragon_egg_cradling.2012.b.tt:0 "[child_1.GetNameNoTooltip], [parent_two_egg.GetName]'i kucaklamaya başlayacak. [child_2.GetNameNoTooltip], [my_egg.GetName]'i kucaklamaya başlayacak."
+agot_dragon_egg_cradling.2012.c:0 "Hiçbiri yumurta almayacak."
 
- agot_dragon_egg_cradling_birth.0010.t:0 "[dragon.GetNameNoTooltip], the Dragon"
-agot_dragon_egg_cradling_birth.0010.desc.intro:0 "The egg [child.GetName] has been cradling has finally hatched! [child.GetNameNoTooltip] and [child.GetHerHis] [dragon.Custom('GetDragonColorFull')] dragon have been inseperable, and it is all [child.GetSheHe] talks about."
-agot_dragon_egg_cradling_birth.0010.desc.child:0 "Today [child.GetNameNoTooltip], my [child.Custom2('RelationToMeShort', ROOT.Char)], made the most surprising declaration. While discussing the dragon with the child, [child.GetSheHe] boldly interjected "#italic the naaame#! is [dragon.GetName]!" "
-agot_dragon_egg_cradling_birth.0010.desc.courtier:0 "Today [child.GetNameNoTooltip], my courtier, made the most surprising declaration. While discussing the dragon with the child, [child.GetSheHe] boldly interjected "#italic the naaame#! is [dragon.GetName]!" "
-agot_dragon_egg_cradling_birth.0010.a:0 "[dragon.GetNameNoTooltip], what a fitting name."
-agot_dragon_egg_cradling_birth.0010.b:0 "Wouldn't [dragon_baby_reference.GetNameNoTooltip] be more suitable?"
-agot_dragon_egg_cradling_birth.0010.b.tt:0 "The dragon's name will become [dragon_baby_reference.GetNameNoTooltip]."
-agot_dragon_egg_cradling_birth.0010.c:0 "This is not an appropriate name for a dragon, try instead..."
-agot_dragon_egg_cradling_birth.0010.c.tt:0 "You will pick a new name for the dragon."
+agot_dragon_egg_cradling.child_cradle_title:0 "[child.GetName] Kucaklamaya Başlıyor"
+agot_dragon_egg_cradling.child_cradle_desc:0 "[child.GetNameNoTooltip], [spouse.GetTitledFirstName]'den aldığı bir yumurtayı kucaklamaya başladı."
+
+agot_dragon_egg_cradling_birth.0002.t:0 "Yumurtam Çatlıyor!"
+agot_dragon_egg_cradling_birth.0002.desc:0 "Hayatımda hiç bu kadar sevinç hissetmemiştim! Yumurtam çatladı ve kabuğunun kalıntılarından bir ejderha çıktı.\n\nPaylaştığımız bağı ve günlerimin sonuna kadar benimle nasıl olacaklarını şimdiden hissedebiliyorum. Cinsiyetini henüz söyleyemesem de, tarihin asla unutamayacağı bir isme ihtiyaçları var.\n\nOnlara ne isim koymalıyım?"
+agot_dragon_egg_cradling.0002.a:0 "Birlikte bir ömür boyu maceralar yaşayacağız."
+agot_dragon_egg_cradling_birth.0002.a_tt_dragon_born:0 "Yeni bir [dragon|e] doğdu."
+agot_dragon_egg_cradling_birth.0002.a_tt_egg_destroyed:0 "#v Ejderha yumurtanız#! [artifact|e] #N yok edildi#!."
+
+agot_dragon_egg_cradling_birth.0003.t:"Bakımımda Bir Yavru"
+agot_dragon_egg_cradling_birth.0003.desc: "Bakımımda olan bir yumurta çatladı! [dragon.GetName] doğdu ve aileme katıldı, ancak cinsiyeti hemen belli değil, bu zamanla belirlenecek.\n\nŞimdilik, [dragonkeepers|e] [dragon.GetNameNoTooltip]'ı bakım altına aldı ve ben de konaklama ve büyüme için hazırlıklara kafa yormak zorundayım. Ama öncelikle, bir ejderhanın bir isme ihtiyacı var. Ne olsun?"
+agot_dragon_egg_cradling_birth.0003.opt.a: "Tarih kayıtlarına geçecek bir isim."
+
+agot_dragon_egg_cradling_birth.0004.t:0 "Cinsiyet Ortada!"
+agot_dragon_egg_cradling_birth.0004.desc:0 "[dragon_gender|EU] özünde gizemli bir kavramdır, ancak bu sefer gizemden kaçınılmış gibi görünüyor!\n\n[revealing.GetFullName] bana [dragon.GetName]'in, yaşamının ilk haftasında sergilediği davranışlara dayanarak [dragon.Custom('DragonFemaleMale')] bir ejderha olduğundan emin olduğunu söyledi."
+agot_dragon_egg_cradling_birth.0004.a:0 "Kim iyi bir [dragon.Custom('DragonGirlBoy')]?"
+
+agot_dragon_egg_cradling_birth.0010.t:0 "Ejderha [dragon.GetNameNoTooltip]"
+agot_dragon_egg_cradling_birth.0010.desc.intro:0 "[child.GetNamePossessive]'ın kucakladığı yumurta sonunda çatladı! [child.GetNameNoTooltip] ve [child.GetHerHis] [dragon.Custom('GetDragonColorFull')] ejderhası ayrılmaz oldular ve [child.GetSheHe] sürekli bundan bahsediyor."
+agot_dragon_egg_cradling_birth.0010.desc.child:0 "Bugün çocuğum [child.GetNameNoTooltip], en şaşırtıcı açıklamayı yaptı. Çocukla ejderhayı konuşurken, [child.GetSheHe] cesurca araya girdi "#italic İSİM#! [dragon.GetName] olacak!" "
+agot_dragon_egg_cradling_birth.0010.desc.courtier:0 "Bugün saray mensubum [child.GetNameNoTooltip], en şaşırtıcı açıklamayı yaptı. Çocukla ejderhayı konuşurken, [child.GetSheHe] cesurca araya girdi "#italic İSİM#! [dragon.GetName] olacak!" "
+agot_dragon_egg_cradling_birth.0010.a:0 "[dragon.GetNameNoTooltip], ne kadar uygun bir isim."
+agot_dragon_egg_cradling_birth.0010.b:0 "[dragon_baby_reference.GetNameNoTooltip] daha uygun olmaz mıydı?"
+agot_dragon_egg_cradling_birth.0010.b.tt:0 "Ejderhanın adı [dragon_baby_reference.GetNameNoTooltip] olacak."
+agot_dragon_egg_cradling_birth.0010.c:0 "Bu bir ejderha için uygun bir isim değil, bunun yerine şunu deneyin..."
+agot_dragon_egg_cradling_birth.0010.c.tt:0 "Ejderha için yeni bir isim seçeceksiniz."
+
 agot_dragon_egg_cradling_birth.0011.t:0 "$birth.9004.t$"
-agot_dragon_egg_cradling_birth.0011.desc:0 "The dragon's name was nonsense, [child.GetName] will thank me when [child.GetSheHe] is old enough to understand."
-agot_dragon_egg_cradling_birth.0011.a:0 "Much better."
+agot_dragon_egg_cradling_birth.0011.desc:0 "Ejderhanın adı saçmaydı, [child.GetName] anlayacak yaşa geldiğinde bana teşekkür edecek."
+agot_dragon_egg_cradling_birth.0011.a:0 "Çok daha iyi."
 
-   
- agot_dragon_egg_lay.0001.t: "[dragon_parent.GetNameNoTooltip] Yumurtladı!" #NT!
- agot_dragon_egg_lay.0001.desc: "[dragon_parent.GetName] #bold bir yumurta bıraktı#!! Ejderha bakıcılarım, [dragon_parent.GetNameNoTooltip] yumurtadan ayrılır ayrılmaz onu kuluçkaya yatırmak için hemen harekete geçti. Çok az sayıda ejderha yumurtası ve daha da az sayıda yaşayan ejderha varken, [dragon_parent.GetNamePossessiveNoTooltip] bu yeni hediyesinin değeri paha biçilemez.\n\nDoğru alıcıyı bulabilirsem, tek bir yumurta bile beni inanılmaz derecede zengin edebilir... Ya da ailemin geleceğini güvence altına almak için bu yumurtayı saklamak daha iyi olur mu?\n\nBelki de [ROOT.Char.GetHouse.GetName] Hanesi yakında başka bir ejderhaya sahip olur?" #NT!
- agot_dragon_egg_lay.0001.opt: "Bu harika!" #NT!
+agot_dragon_egg_lay.0001.t:0 "[dragon_parent.GetNameNoTooltip] Bir Yumurta Bırakıyor!"
+agot_dragon_egg_lay.0001.desc:0 "[dragon_parent.GetName] #bold bir yumurta#! bıraktı! Ejderha bakıcılarım, [dragon_parent.GetNameNoTooltip] ondan ayrılmaya hazır olur olmaz yumurtayı kuluçkaya yatırmak için acele ettiler. Çok az ejderha yumurtası kaldığı ve daha da az canlı ejderha olduğu için, [dragon_parent.GetNamePossessiveNoTooltip]'ın yeni hediyesi paha biçilmez bir değere sahip.\n\nDoğru alıcıyı bulursam tek bir yumurta bile beni inanılmaz derecede zengin edebilir... Yine de ailemin geleceğini güvence altına almak için saklamak en iyisi olabilir mi?\n\nBelki de [ROOT.Char.GetHouse.GetName] Hanesi yakında bir ejderhaya daha sahip olur?"
+agot_dragon_egg_lay.0001.opt:0 "Bu harika!"
 
-  
- agot_dragon_egg_lay.0002.t: "[dragon_parent.GetNameNoTooltip] Yumurtladı!" #NT!
- agot_dragon_egg_lay.0002.desc: "[dragon_parent.GetName], #bold [dragon_parent.MakeScope.Var('spawn_eggs').GetValue] adet yumurtayı yuvaya bıraktı#!! Ejderha bakıcılarım, yalnızca bir yumurta beklerken, hızla yeni kuluçka alanları oluşturdular.\n\nBu hazinelerle kutsanmış olmam, dünyanın geri kalanının kıskançlıkla izlediği bir şey. Bugün [dragon_parent.GetNameNoTooltip]'ten doğan yumurtalar, hanelerin bildiğinden daha fazla zenginlik veya kullanabileceğinden daha fazla güç anlamına geliyor.\n\nYakında [ROOT.Char.GetHouse.GetName] Hanesi'nin tüm evlatları göklere yükselecek!" #NT!
- agot_dragon_egg_lay.0002.opt: "Sevinç içindeyim!" #NT!
-  
- dragon_laid_eggs: "Ejderhanız [dragon_parent.GetName] [dragon_parent.MakeScope.Var('spawn_eggs').GetValue] yumurta bıraktı" #NT!
- dragon_laid_egg_before_death: "Ejderhanız [dragon_parent.GetName], [dragon_parent.GetSheHe] ölmeden önce bir yumurta bıraktı" #NT!
+agot_dragon_egg_lay.0002.t:0 "[dragon_parent.GetNameNoTooltip] Bir Küme Yumurta Bırakıyor!"
+agot_dragon_egg_lay.0002.desc:0 "[dragon_parent.GetName] #bold [dragon_parent.MakeScope.Var('spawn_eggs').GetValue] yumurtadan#! oluşan bir küme bıraktı! Ejderha bakıcılarım, tek bir yumurtadan fazlasını beklemedikleri için aceleyle yeni kuluçka alanları oluşturdular.\n\nDünyanın geri kalanı kıskançlıkla bakıyor çünkü bu hazinelerle kutsandım. [dragon_parent.GetNameNoTooltip]'dan bugün doğan, neredeyse tüm ailelerin bilebileceğinden daha fazla servet veya kullanabileceklerinden daha fazla güçtür.\n\nYakında [ROOT.Char.GetHouse.GetName] Hanesi'nin tüm çocukları gökyüzüne çıkacak!"
+agot_dragon_egg_lay.0002.opt:0 "Kutsandık!"
+
+dragon_laid_eggs: "Ejderhanız [dragon_parent.GetName] [dragon_parent.MakeScope.Var('spawn_eggs').GetValue] yumurta bıraktı"
+dragon_laid_egg_before_death: "Ejderhanız [dragon_parent.GetName] ölmeden önce bir yumurta bıraktı"
