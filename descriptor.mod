@@ -3,5 +3,5 @@ tags={
 	"Translation"
 }
 name="A Game of Thrones - Türkçe [WIP]"
-supported_version="1.12.5"
+supported_version="1.13.0.3"
 remote_file_id="3302953201"
