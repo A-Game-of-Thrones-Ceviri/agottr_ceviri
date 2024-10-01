@@ -1,125 +1,126 @@
 ﻿l_english:
- DRAGON_IN_SIEGE: "Ejderhayı Kullan"  
- agot_dragon_siege.gui_tt:0 "[commander.GetNameOrMe|U], [sieging_dragon.GetName]'ı kuşatmada nasıl kullanacağına karar verecek."
- agot_dragon_siege.gui_anti_dragon_tt: "@warning_icon!#warning Savunmacılar burada [anti_dragon_maa|E] [men_at_arms|E] konuşlandırdılar, bu da bu eylemin riskini artırıyor.#!"  
- agot_dragon_siege.gui_scorpion_1_tt: "@warning_icon!#warning Savunmacıların Akrep Mevzileri var ve bu da bu eylemin riskini artırıyor.#!"  
- agot_dragon_siege.gui_scorpion_2_tt: "@warning_icon!#warning Savunmacıların Ağır Akrep Mevzileri var ve bu da bu eylemin riskini büyük ölçüde artırıyor.#!"  
- agot_dragon_siege.gui_tt_check: "Ejderhanızı günde yalnızca bir kez kuşatma amacıyla kullanabilirsiniz."  
- agot_dragon_siege.gui_tt_commander_check:0 "Komutanlarınızın ejderhalarını üç ayda yalnızca bir kez kullanmalarını sağlayabilirsiniz."
- agot_dragon_siege.gui_tt_cant_damage: "Ejderhanız bu bölgeye daha fazla zarar verebilecek kadar büyük değil."  
- agot_dragon_siege.title: "[sieging_location.GetNameNoTooltip] Kuşatması:"  
- agot_dragon_siege.scorpion_1_warning: "@warning_icon!#warning [sieging_location.GetName], kuşatmada [sieging_dragon.GetFirstName] kullanma riskini artıran Akrep Mevzilerine sahiptir.#!"  
- agot_dragon_siege.scorpion_2_warning: "@warning_icon!#warning [sieging_location.GetName], kuşatmada [sieging_dragon.GetFirstName]'yi kullanma riskini büyük ölçüde artıran Ağır Akrep Mevzilerine sahiptir.#!"  
- agot_dragon_siege.ineffective: "Ejderhanın saldırısı etkisizdi."  
-  
-  # Choice of siege 
- agot_dragon_siege.0001.t: "$agot_dragon_siege.title$ Ejderhanın Yaklaşımı"  
- agot_dragon_siege.0001.desc_opening: "[sieging_location.GetName]'ın duvarlarının önünde duruyorum, ejderham [sieging_dragon.GetName] yanımda. Adamlarımız holdingi çevreliyor, savunucular içeride sıkışmış, duvarların ardında saklanıyorlar.\n\n"  
- agot_dragon_siege.0001.desc_none: "Yeterince zamanla onları teslim olmaya zorlasak da, hiçbir duvar onları ejderha ateşinden koruyamaz. Risksiz değil ama [sieging_dragon.GetNameNoTooltip]'a binip alevlerini kaleye salabilir ve bu kuşatmayı çok daha hızlı bir şekilde sonlandırabilirim."  
- agot_dragon_siege.0001.desc_defender: "Yeterince zamanla onları teslim olmaya zorlasak da, hiçbir duvar onları ejderha ateşinden koruyamaz. Ne yazık ki, [defending_dragonrider.GetTitledFirstName] ve [defending_dragonrider.GetHerHis] ejderha [defending_dragon.GetName] burada ve şüphesiz bizi durdurmaya çalışacaklar. Eğer saldıracaksam, önce onlarla yüzleşmeliyim."  
- agot_dragon_siege.0001.desc_defenders: "Yeterince zamanla onları teslim olmaya zorlasak da, hiçbir duvar onları ejderha ateşinden koruyamaz. Ne yazık ki, [defending_dragonrider.GetTitledFirstName] ve [defending_dragonrider.GetHerHis] ejderha [defending_dragon.GetName] burada ve tek olanlar onlar değil. Eğer saldıracaksam, önce gökyüzündeki diğer tüm ejderhaları yenmeliyim."  
- agot_dragon_siege.0001.desc_owned: "Bu duvarların içinde başka ejderhalar da olsa da, binicileri olmadığı için bizimle savaşmaları pek olası değil. Risksiz değil ama [sieging_dragon.GetNameNoTooltip]'a binip alevlerini kaleye salabilir ve bu kuşatmayı çok daha hızlı bir şekilde sonlandırabilirim."  
- agot_dragon_siege.0001.desc_owned_single: "[owned_dragon_present.GetName] içeride ikamet etse de, [owned_dragon_present.Custom('GetDragonSheHe')] binicisiz olduğu için [owned_dragon_present.Custom('GetDragonSheHe')]'in etkili bir direnç sunması pek olası değil. Risksiz değil ama [sieging_dragon.GetNameNoTooltip]'e binip kaleye [sieging_dragon.Custom('GetDragonSheHe')] alevler salabilir ve bu kuşatmayı çok daha hızlı bir şekilde sonlandırabilirim."  
-  
- agot_dragon_siege.0001.a: "Kolay hedefleri önce vuracağız, savunmalarını yumuşatacağız."  
- agot_dragon_siege.0001.a.f: "En az riskli yaklaşımla, [sieging_dragon.GetNameNoTooltip] ile holdingin en zayıf noktalarına saldırarak savunmalarını yumuşatacaksınız."  
- agot_dragon_siege.0001.b: "O duvarlar onları ejderha ateşinden koruyamayacak."  
- agot_dragon_siege.0001.b.f: "[sieging_dragon.GetNameNoTooltip]'a binip savunmalara [sieging_dragon.Custom('GetDragonHerHis')] alev salarak bu kuşatmayı görkemli bir şekilde sona erdirmeye çalışacaksınız."  
- agot_dragon_siege.0001.c: "Merhamet yok — kale #N yanacak#!."  
- agot_dragon_siege.0001.c.f: "Hem savunmaya hem de iç kaleye [sieging_dragon.GetNameNoTooltip] göndereceksin, bu da kaleye ve savunucularına büyük hasar verecek."  
- agot_dragon_siege.0001.c.tt: "#N İçerideki birçok kişi [sieging_location.GetNameNoTooltip] yanacak veya yok olacak.#!"  
- agot_dragon_siege.0001.d: "#N;bold Geriye sadece kül ve yıkıntı kalacak!#!"  
- agot_dragon_siege.0001.d.f: "Sahip olduğunuz her şeyi yerle bir edeceksiniz, geride sadece kül ve yıkıntı bırakacaksınız."  
- agot_dragon_siege.0001.d.tt: "#N [sieging_location.GetNameNoTooltip] içindekilerin hepsi öldürülecek.#!"  
- agot_dragon_siege.0001.e: "[defending_dragonrider.GetFirstName]! Çık ve öl!"  
- agot_dragon_siege.0001.e.f: "[defending_dragonrider.GetTitledFirstNameNoTooltip] ve [defending_dragon.GetFirstNameNoTooltip]'i kendinize doğru zorlayacaksınız."  
- agot_dragon_siege.0001.f: "Hayır, eski usulle kuşatacağız."  
- agot_dragon_siege.0001.f.f: "Siz kuşatmayı sürdürün."  
-  
-  # Perspective of besieged below 
-  # Burned in dragon siege 
- agot_dragon_siege.0002.t: "$agot_dragon_siege.title$ Ejderha Ateşi!"  
- agot_dragon_siege.0002.intro: "[location.GetName]'ın surlarında volta atarken durumumun belirsizliğini görmezden gelemiyorum; düşman askerleri kalemin etrafını sarmış durumda ve uzun süreli bir kuşatma olası görünüyor.\n\n"  
- agot_dragon_siege.0002.bigboi: "Güneşi duyduğumda gökyüzünde yüksekte asılı duruyor: Delici bir kükreme, ardından esen bir rüzgar... [ROOT.Char.GetCurrentLocation.Custom('GetTerrainTreePlural')]'ı vuran muazzam bir fırtına gibi bir hiddet, [ROOT.Char.GetCurrentLocation.Custom('GetProvinceFoliageDesc')]'i şatomun etrafında sallıyor. Bir zamanlar parlak olan güneşin üzerinden devasa bir gölge geçiyor ve onu örtüyor... Kendimi üzerime çökerken o karanlık uçuruma bakarken buluyorum: [sieging_dragon.GetFirstNameNicknamed], #XB büyük ejderha devi#!!\n\n"  
- agot_dragon_siege.0002.option1: "Yoğun bir bulut örtüsü başımın üstünde asılı duruyor. Kalemin etrafındaki [ROOT.Char.GetCurrentLocation.Custom('GetTerrainTreePlural')]'a bakıyorum, [ROOT.Char.GetCurrentLocation.Custom('GetProvinceFoliageDesc')]'in üzerinde bir form uçarken tiz bir kükreme duyuyorum. Kanatlar açılmış, canavarı göğe doğru bastırıyor, kalbimde bir sızıyla yaklaşan felaketime bakıyorum. İşte [sieging_dragon.GetFirstNameNicknamed] geliyor, düşmanımın #X korkunç ejderhası#!!\n\n"  
- agot_dragon_siege.0002.option2: "Güneş batmaya başlıyordu ki duydum: Uzakta, [ROOT.Char.GetCurrentLocation.Custom('GetProvinceFoliageDesc')]'ın ötesinde, kalemin etrafını saran gök gürültülü bir kükreme. Ejderha yukarı fırladı, bir kılıç gibi havayı kesti, ağzından parlak ejderha ateşi tüyleri çıktı. Felaketimle yüzleşirken gökyüzü kızıl renge büründü: [sieging_dragon.GetFirstNameNicknamed|U] ve #X [sieging_dragon.Custom('DragonGetHerHis')] alevler#! kuşatmaya çağrıldı.\n\n"  
- agot_dragon_siege.0002.option3: "Gergin sessizliği dalgalanan bir çığlık kesiyor ve [ROOT.Char.GetCurrentLocation.Custom('GetTerrainTreePlural')]'ın ötesinde düşmanımı açıkça görebiliyorum: [sieging_dragon.GetFirstNameNicknamed], #X iğrenç ejderha#!, göklere yükselmiş, adamlarıma ve bana ejderha ateşi yağdırmaya hazırlanıyor.\n\n"  
- agot_dragon_siege.0002.option4: "Sessizlik havada ölüm gibi asılı duruyor. Uzakta, [ROOT.Char.GetCurrentLocation.Custom('GetTerrainTreePlural')]'daki bir ağaçkakanın derin titrekliği, garnizonumun gergin nefesinin altında kesik kesik bir ritim sağlıyor. [sieging_dragon.GetFirstNameNicknamed] göğe fırladığında sessizlik cam gibi paramparça oluyor, alev ve umutsuzluk girdabı, #X benim sonumu getirmek için geliyor#!.\n\n"  
- agot_dragon_siege.0002.outro: "Etrafımda ateşli bir goblen gibi sıcaklık açılmadan önce sadece bir dua mırıldanmaya vaktim oluyor. Adamlarım etrafımda eriyor, anında kül ve is oluyorlar, ejderha ateşinin üzerime doğru yaklaştığını hissediyorum."  
- agot_dragon_siege.0002.a: "[ROOT.Char.Custom('Scream')]"  
- agot_dragon_siege.0002.a.f: "[sieging_dragon.GetNameNoTooltip] tarafından yakıldın."  
-  
-  # Dying in dragon siege 
- agot_dragon_siege.0003.t: "$agot_dragon_siege.title$ Ejderha Ateşi Tarafından Mahvoldum!"  
- agot_dragon_siege.0003.outro: "Etrafımda ateşli bir goblen gibi sıcaklık açılmadan önce sadece bir dua mırıldanmaya vaktim oluyor. Adamlarım etrafımda eriyor, anında kül ve is oluyorlar, ben son nefesime tutunurken."  
- agot_dragon_siege.0003.a: "[ROOT.Char.Custom('Scream')]"  
- agot_dragon_siege.0003.a.f: "[sieging_dragon.GetNameNoTooltip] tarafından yakılarak öldürüldün."  
-  
-  # Dragon siege consequences for attacker below 
-  # Rider struck with arrow 
- agot_dragon_siege.0004.t: "$agot_dragon_siege.title$ Şanslı Bir Atış"  
- agot_dragon_siege.0004.desc.minor: "[sieging_dragon.GetName] ve ben [sieging_location.GetName]'e doğru uçuyoruz, altımızda akan manzara, ilk hedefimiz olan savunucuların aptalca duvarların dışında bıraktığı bir ikmal vagonu giderek yaklaşıyor. Üzerine [sieging_dragon.Custom('GetDragonHerHis')] alev salıyorum ve vagon hızla ateşe gömülüyor, savunucuların ikmalleri dumana dönüşüyor. Saldırılarımızın ilki!\n\nBir kule, bir nöbetçi kulübesi ve dışarıdaki bir ahır [sieging_dragon.GetFirstNamePossessiveNoTooltip] alevlere gömülüyor, ancak aşağıdaki yanan ahırdan yukarı doğru ilerlerken aniden bir darbe ve yan tarafımda keskin bir acı hissediyorum.\n\nAcı içinde bağırıyorum, aşağı baktığımda karnıma saplanmış oku, gövdeme yayılan kırmızı lekeyi görüyorum. Bir kükremeyle [sieging_dragon.GetNameNoTooltip] hatlarımıza dönmek için tekerlekleri çeviriyoruz ve uçup giderken beni vurmayı başaran şanslı okçunun kaleye geri çekildiğini zar zor görüyorum."  
- agot_dragon_siege.0004.desc: "[sieging_location.GetName]'ın yanan külleri, [sieging_dragon.GetName]'in süpüren kanatlarının etrafında uçuşuyor, bindiğimiz bir efsane iblisi gibi, ardımızda ölüm getiriyor.\n\nAşağımızda, savunucuların toplandığı, getirdiğimiz yıkımı durdurmak için saf bir girişimde bulunduğu bir avlu var. Topuklarımı çevirerek, [sieging_dragon.GetFirstNameNoTooltip]'ye avlunun üzerinde süzülmesini ve aşağıdaki çaresiz pisliklerin üzerine ejderha alevi yağdırmasını söylüyorum.\n\nAma güçlü varlığımızın altında adamları yakarken, yan tarafımda aniden bir sıcaklık hissediyorum ve acıya dönüşürken bağırıyorum. Aşağı baktığımda karnıma saplanmış oku görüyorum ve yukarı baktığımda beni duvarlardan vurmayı başaran şanslı okçuyu görüyorum. Bir kükremeyle onu da küle çeviriyoruz, ama şimdi burada kalamam ve [sieging_dragon.GetFirstNameNoTooltip]'yi hatlarımıza dönmek için çeviriyorum."  
- agot_dragon_siege.0004.a: "En azından biraz zarar vermişiz!"  
- agot_dragon_siege.0004.a.f: "Geri çekilmek zorunda kaldınız, ama öncesinde yapmak istediğiniz zararı verdiniz."  
-  
-  # Dragon hit with spear 
- agot_dragon_siege.0005.t: "$agot_dragon_siege.title$ Kurban Mızrağı"  
- agot_dragon_siege.0005.desc.minor: "[sieging_location.GetName]'a yönelik araştırma saldırılarımız başarılı oldu ve savunucular daha erişilebilir bir şekilde ya yanıyor ya da düzensizlik içinde. Son hedef bir kule ve [sieging_dragon.GetName]'e üzerine [sieging_dragon.Custom('GetDragonHerHis')] alev salmasını emrediyorum.\n\nAncak [sieging_dragon.GetName] bunu yaparken, taşı ısıyla bükerken, tek başına bir adamın kulenin tepesinden bir mızrak kaldırdığını ve kulenin altından çökerken ellerini bıraktığını görüyorum.\n\nHiç şüphesiz ki mahvolmaya gidiyor olsa da, mızrağı hedefini buldu. Kaçınmaya çalışsak da, mızrak [sieging_dragon.GetNameNoTooltip] yan tarafına saplanıyor ve [sieging_dragon.Custom('GetDragonSheHe')] öfke ve ızdırap karışımı bir şekilde kükreyerek geriye sendelerken [sieging_dragon.Custom('GetDragonHerHis')] acının gücünü hissediyorum."  
- agot_dragon_siege.0005.desc: "[sieging_location.GetName] sokağı bir ateş nehri ve savunucular karaya çıkmış halimizden önce dağılıyorlar. Başka bir bina alevler içinde kalıyor ve savunucular kaçarken, [sieging_dragon.GetName]'e okçular yeniden toparlanmadan onları kovalamasını söylüyorum.\n\n[sieging_dragon.Custom('GetDragonHerHis')|U] büyük form, kaçan okçuların ardından şaşırtıcı bir hızla sokaktan geçiyor, ancak bir sokaktan geçerken [sieging_dragon.Custom('GetDragonSheHe')] acı içinde kükredi! Aşağı baktığımda, [sieging_dragon.Custom('GetDragonHerHis')] tarafına saplanmış bir mızrak görüyorum, o sokakta korkmuş olan tek savunucu cesaretini toplayıp bize saldırmış olmalı!\n\nTalimat olmadan [sieging_dragon.GetFirstNameNoTooltip] dönüp adamı yakıyor, ancak [sieging_dragon.Custom('GetDragonHerHis')] acı hissedebiliyorum ve [sieging_dragon.Custom('GetDragonHerHim')]'nin ayağa kalkmasını söylüyorum."  
- agot_dragon_siege.0005.a: "Geri [sieging_dragon.GetFirstNameNoTooltip]! Yaralarınıza iyi bakmalıyız!"  
- agot_dragon_siege.0005.a.f: "Geri çekilmek zorunda kaldınız, ama öncesinde yapmak istediğiniz zararı verdiniz."  
-  # Dragon attacked in concert by defenders 
-  
- agot_dragon_siege.0006.t: "$agot_dragon_siege.title$ Mahkum Cesaret"  
- agot_dragon_siege.0006.desc: "[sieging_location.GetName]'ın savunucuları bizi ok ve mızraklarla taciz ediyor, adamlar alevlerimizden kaçınmak için mümkün olduğunca daha güçlü tahkimatlarına dalıyor. Sonunda bir açıklık görüyorum, hepsini bir araya toplayacak kadar aptal olan bir grup okçu. Sadece küçük bir kemerle korunuyorlar ve [sieging_dragon.GetName]'e saldırmak için dalmasını söylüyorum!\n\nAncak tuzağı çok geç görüyorum. Kemerin üstünde, bitişik bir çatıda bekleyen bir grup savunucu var ve biz aşağı doğru süzülürken onlar #italic atlıyor#! [sieging_dragon.GetFirstNameNoTooltip]'e doğru!\n\nBirçoğu ıskalayıp alttaki taşta parçalansa da, cesur aptallardan bazıları tutunma buluyor, aşağı doğru yaptıkları hamleler hedeflerini buluyor ve adamları mızrakları ve kılıçlarıyla tuttukları [sieging_dragon.GetFirstNameNoTooltip]'e saplıyor. [sieging_dragon.GetFirstNameNoTooltip] acı içinde kükreyip yukarı doğru yay çiziyor, saldırganların çoğunu fırlatıyor ve gökyüzüne yükseliyor, geri kalanlar aşağıda ölümlerine terk ediliyor."  
- agot_dragon_siege.0006.a: "Şu yiğit piçler!"  
- agot_dragon_siege.0006.a.f: "[sieging_dragon.GetFirstNameNoTooltip] ağır yaralandı ve siz, hedeflediğiniz hasarı vermeden önce geri çekilmek zorunda kaldınız."  
-  # I am struck by many arrows 
-  
- agot_dragon_siege.0007.t: "$agot_dragon_siege.title$ Bin Kesik"  
- agot_dragon_siege.0007.desc: "[sieging_location.GetName]'a yapılan saldırı iyi gidiyor, çok sayıdaki yapısal mevzileri çok az zorlukla veya dirençle düştü. Bu eyaletin iyi savunulduğunu düşünmüştüm, ancak savunucuların bizi inandırmak istedikleri kadar cesur olmadıkları anlaşılıyor.\n\nAncak bir sonraki önemli hedefimize -savunucuların büyük bir kışlasına- vurduğumuzda, bu eksik savunucuların nerede olduğunu görüyorum. Her pencereden oklar uçuyor, hepsi doğrudan bana doğru!\n\n[sieging_dragon.GetFirstName] beni korumak için [sieging_dragon.Custom('GetDragonHerHis')] kanatlarını kaldırsa da, çoğu hedefini buluyor ve ısırıklarını etimin derinliklerinde hissediyorum. Acı içinde bağırıyorum, göğe yükselirken söylenmemiş son emrimi veriyorum, bulutlar önümde dağılırken göğsümden aşağı kan aktığını hissediyorum."  
- agot_dragon_siege.0007.a: "Bir şifacıya ihtiyacım var!"  
- agot_dragon_siege.0007.a.f: "Ağır yaralar aldınız ve geri çekilmek zorunda kaldınız, ama öncesinde amaçladığınız hasarı da verdiniz."  
- agot_dragon_siege.0007.b: "Ben...Ben yapmadım...Ben..."  
- agot_dragon_siege.0007.b.f: "[sieging_dragon.GetNameNoTooltip]'ın sırtında kan kaybediyorsun ve vücudun hatlarına geri dönüyor. Yapmaya niyetlendiğin hasar başarıldı, ancak büyük bir bedelle."  
-  
-  # I was struck by a lucky spear throw 
- agot_dragon_siege.0008.t: "$agot_dragon_siege.title$ Yabancının Mızrağı"  
- agot_dragon_siege.0008.desc: "[sieging_location.GetName]'ın savunucuları iyi bir mücadele veriyorlar, ancak elbette hiçbiri [sieging_dragon.GetName] ve bana karşı koyamaz. Kalenin bir tarafından diğerine savunmalarını yakıp yıkıyoruz, silah ve adam barındırabilecek olanlara odaklanıyoruz, ardından adamlarımızın içeri girmesini engelleyecek olanlara dönüyoruz.\n\nSonuncusuna döndüğümüzde, at üstünde yalnız bir adam görüyorum — bir şekilde alevlerden kaçmayı başarmış — bize doğru geliyor, elinde bir mızrak, sanki bizi mızraklayacakmış gibi! Böyle bir cesaret mi, yoksa aptallık mı, anlayamıyorum, ancak [sieging_dragon.GetNameNoTooltip]'ye dönüp onunla yüzleşmesini söylediğimde, adamın mızrağının ellerinden fırlayıp göğsüme saplandığını görünce şaşırıyorum! Akciğerlerimdeki hava boşaltılıyor ve [sieging_dragon.GetFirstNameNoTooltip] ile uluyamıyorum bile.\n\n[sieging_dragon.GetNameNoTooltip] göğe yükselirken, gevşek bedenim bağlanmış, başım arkaya doğru sarkmış bir şekilde gökyüzüne bakarken, sarsıntının belli belirsiz farkındayım. Yükselen duman, közlerden damlayan şey çok...çok..."  
- agot_dragon_siege.0008.a: "Çok güzel..."  
- agot_dragon_siege.0008.a.f: "[sieging_dragon.GetNameNoTooltip]'a bağlanan vücudunuz hatlarınıza geri döner, hasar verilmiştir ancak bedeli büyük olmuştur."  
-  
-  # Scorpion wounded my dragon 
- agot_dragon_siege.0009.t: "$agot_dragon_siege.title$ Akrep Saldırısı"  
- agot_dragon_siege.0009.desc: "Bir ejderhanın tepesinde alçakgönüllü olunabilen nadir bir andır. Çok az kişi bu hissi yaşamıştır. Kuşatmada [sieging_dragon.GetName] kullanmanın riskli olduğunu entelektüel olarak bilmeme rağmen, savunucuların yetersiz savunmalarıyla bize saldırmayı umamayacaklarını düşünmüştüm. Yanılmışım.\n\nBaşka bir savunma yapısını yakmak için aşağı doğru süzülürken, bir metal parıltısı ve duvarlardan bir şimşek çaktığını gördüm, [sieging_dragon.GetNameNoTooltip]'in yan tarafına çarptı. [sieging_dragon.GetFirstNameNoTooltip] acı içinde kükredi, geriye sendeledi ve beni neredeyse [sieging_dragon.Custom('GetDragonHerHis')]'ten geriye fırlattı."  
- agot_dragon_siege.0009.a: "Geri çekilmeliyiz!"  
- agot_dragon_siege.0009.a.f: "Geri çekilmek zorunda kaldınız, saldırılarınız etkisiz kaldı ve [sieging_dragon.GetFirstNameNoTooltip] ağır yaralandınız."  
-  
-  # Scorpion killed us both! 
- agot_dragon_siege.0010.t: "$agot_dragon_siege.title$ Akrep Sokması"  
- agot_dragon_siege.0010.desc: "Eski Valyrialılar ejderhalarına tanrıların adını vermişlerdi ve bunun nedenini görmek kolay. [sieging_dragon.GetName] ateş ve ölüm tanrısı ve ben onun seçilmişiyim. Yine de tıpkı eski tanrıların yeninin inancı tarafından devrildiği gibi, en büyük silahlar bile en küçüğüne düşebilir.\n\nDuvarlardan gelen metal yağmuru fırtına gibi geliyor. [sieging_dragon.GetNameNoTooltip]'in kanat ekleminin arasına bir akrep cıvatası çarptığını görüyorum, acı dolu gırtlaktan gelen çığlık, bir başka cıvatanın [sieging_dragon.Custom('GetDragonHerHis')] boynuna çarpmasıyla yarıda kesiliyor. [sieging_dragon.Custom('GetDragonHerHis')] yaralardan kan sızıyor — ve uçtuğumuz yerde şimdi düşüyoruz, yer bize doğru hızla yaklaşıyor."  
- agot_dragon_siege.0010.a: "Hayır, [sieging_dragon.GetFirstNameNoTooltip]! Uç!"  
- agot_dragon_siege.0010.a.f: "Sen ve [sieging_dragon.GetNameNoTooltip] ikiniz de öldürüldünüz, parçalanmış bedeniniz [sieging_dragon.GetFirstNamePossessiveNoTooltip]'in enkazı arasında bulundu."  
-  
-  # I am dragonrider and I am defending from siege 
- agot_dragon_siege.0011.t: "$agot_dragon_siege.title$ Ejderhanın Savunması"  
- agot_dragon_siege.0011.desc: "[sieging_location.GetName]'ın sadık savunucuları saldırganlarımızı uzak tutmakta zorlandı ve hayal kırıklığının sonunda taştığı görülüyor. [sieging_dragonrider.GetTitledFirstName] ve [sieging_dragon.GetName]'nin hatlardan yükselmeye başladığını görüyorum ve neyin geldiğini biliyorum. Başka seçeneğim yok — zaman şimdi!\n\nYa [defending_dragon.GetName]'e binip gökyüzünde onlarla yüzleşmeliyim ya da kaçıp savunucuları kaderlerine terk etmeliyim."  
- agot_dragon_siege.0011.a: "Onlarla yüzleşeceğim!"  
- agot_dragon_siege.0011.a.f: "[defending_dragon.GetNameNoTooltip]'a binip gökyüzündeki saldırganlarınızla yüzleşin."  
- agot_dragon_siege.0011.b: "Uç [defending_dragon.GetFirstNameNoTooltip]! Kaçmalıyız!"  
- agot_dragon_siege.0011.b.f: "Sahadan kaçıyorsunuz ve savunmacıları kaderlerine terk ediyorsunuz."  
- agot_dragon_siege.notify_sieger_of_fleeing.t: "[defending_dragonrider.GetTitledFirstNameNoTooltip] kaçar!"  
- agot_dragon_siege.notify_sieger_of_fleeing.tt: "[defending_dragonrider.GetTitledFirstName] seninle yüzleşmek yerine [defending_dragon.GetFirstName]'e kaçtı."  
-  
-  # My owned dragon has fled due to the events of a siege 
- agot_dragon_siege.0013.t: "$agot_dragon_siege.title$ Ejderhanın Uçuşu"  
- agot_dragon_siege.0013.desc: "[sieging_rider.GetTitledFirstName] ve [sieging_dragon.GetFirstName] yıkımlarını gerçekleştirdiler, ancak şimdi bana maliyetin daha önce bilinenden bile daha büyük olduğu söylendi.\n\nEjderham [fleeing_dragon.GetName], kuşatmanın gürültüsünden veya [sieging_dragon.GetNameNoTooltip]'ün varlığından korktuğu için savaş alanından kaçtı!\n\nBana [fleeing_dragon.Custom('GetDragonSheHe')]'ün [new_location.GetBaseName]'te in yaparken görüldüğü söylendi."  
- agot_dragon_siege.0013.a: "Bizim için büyük bir kayıp..."  
- agot_dragon_siege.0013.a.f: "Ejderhanız vahşileşti. [fleeing_dragon.GetFirstNameNoTooltip]'ı hala kurtarabilirsiniz, ancak [fleeing_dragon.Custom('GetDragonSheHe')] artık sizin olmadığı için bu daha zor olabilir."  
-  
-  # A wild dragon has arrived from the events of a siege 
- agot_dragon_siege.0014.t: "$agot_dragon_siege.title$ Ejderhanın Gelişi"  
- agot_dragon_siege.0014.desc: "Yakınlarda, [sieging_location.GetName] kuşatmasının büyük bir felakete sahne olduğunu duydum. [sieging_rider.GetTitledFirstName] ve [sieging_dragon.GetName] savunucuları yıkıma uğrattı, ancak benim için daha acil olan [fleeing_dragon.GetFirstName]'ün gelişi!\n\nBir zamanlar aynı holdingde tutulan [fleeing_dragon.Custom('GetDragonSheHe')]'ün, [fleeing_dragon.Custom('GetDragonHerHis')] kuşatmasından kendi isteğiyle kaçtığı anlaşılıyor ve izcilerim canavarın [new_location.GetBaseName]'da in yaparken görüldüğünü söylüyor."  
- agot_dragon_siege.0014.a: "Bir fırsat mı, yoksa bir tehdit mi?"  
- agot_dragon_siege.0014.a.f: "[new_location.GetBaseName]'a vahşi bir ejderha geldi ve onu kendinize ait kılma fırsatınız olabilir. Elbette vahşi ejderhalar tehlikeli komşulardır..."  
+#mustafa
+DRAGON_IN_SIEGE:0 "Ejderhayı Kullan"
+agot_dragon_siege.gui_tt:0 "[commander.GetNameOrMe|U], kuşatmada [sieging_dragon.GetName] ejderhasını nasıl kullanacağına karar verecek."
+agot_dragon_siege.gui_anti_dragon_tt:0 "@warning_icon!#warning Savunanların burada konuşlandırdığı [anti_dragon_maa|E] [men_at_arms|E] bulunuyor, bu da bu eylemin riskini artırıyor.#!"
+agot_dragon_siege.gui_scorpion_1_tt:0 "@warning_icon!#warning Savunanların Akrep Yerleştirmeleri var, bu da bu eylemin riskini artırıyor.#!"
+agot_dragon_siege.gui_scorpion_2_tt:0 "@warning_icon!#warning Savunanların Ağır Akrep Yerleştirmeleri var, bu da bu eylemin riskini büyük ölçüde artırıyor.#!"
+agot_dragon_siege.gui_tt_check:0 "Ejderhanızı kuşatmada günde yalnızca bir kez kullanabilirsiniz."
+agot_dragon_siege.gui_tt_commander_check:0 "Komutanlarınızın ejderhalarını kullanmalarını üç ayda bir kez sağlayabilirsiniz."
+agot_dragon_siege.gui_tt_cant_damage:0 "Ejderhanız bu konuma daha fazla zarar verecek kadar büyük değil."
+agot_dragon_siege.title:0 "[sieging_location.GetNameNoTooltip] Kuşatması:"
+agot_dragon_siege.scorpion_1_warning:0 "@warning_icon!#warning [sieging_location.GetName], kuşatmada [sieging_dragon.GetFirstName] kullanma riskini artıran Akrep Yerleştirmelerine sahip.#!"
+agot_dragon_siege.scorpion_2_warning:0 "@warning_icon!#warning [sieging_location.GetName], kuşatmada [sieging_dragon.GetFirstName] kullanma riskini büyük ölçüde artıran Ağır Akrep Yerleştirmelerine sahip.#!"
+agot_dragon_siege.ineffective:0 "Ejderhanızın saldırısı etkisizdi."
+
+# Kuşatma seçimi
+agot_dragon_siege.0001.t:0 "$agot_dragon_siege.title$ Ejderhanın Yaklaşımı"
+agot_dragon_siege.0001.desc_opening:0 "Yanımda ejderham [sieging_dragon.GetName] ile [sieging_location.GetName] surlarının önünde duruyorum. Adamlarımız kaleyi kuşatmış durumda, savunmacılar içeride sıkışıp kalmış, surlarının arkasına sinmişler.\n\n"
+agot_dragon_siege.0001.desc_none:0 "Yeterince zaman versek onları teslim olmaya zorlayacağımızdan şüphemiz olmasa da hiçbir duvar onları ejderha ateşinden koruyamaz. Risksiz değil, ancak [sieging_dragon.GetNameNoTooltip] ejderhama binip alevlerini kaleye salabilir ve bu kuşatmayı çok daha hızlı bir şekilde sona erdirebilirim."
+agot_dragon_siege.0001.desc_defender:0 "Yeterince zaman versek onları teslim olmaya zorlayacağımızdan şüphemiz olmasa da hiçbir duvar onları ejderha ateşinden koruyamaz. Maalesef, [defending_dragonrider.GetTitledFirstName] ve ejderhası [defending_dragon.GetName] burada ve bizi durdurmaya çalışacaklarından şüphem yok. Saldıracaksam önce onlarla yüzleşmeliyim."
+agot_dragon_siege.0001.desc_defenders:0 "Yeterince zaman versek onları teslim olmaya zorlayacağımızdan şüphemiz olmasa da hiçbir duvar onları ejderha ateşinden koruyamaz. Maalesef, [defending_dragonrider.GetTitledFirstName] ve ejderhası [defending_dragon.GetName] burada ve tek değiller. Saldıracaksam önce gökyüzündeki diğer tüm ejderhaları yenmeliyim."
+agot_dragon_siege.0001.desc_owned:0 "Bu surların içinde başka ejderhalar olsa da, binicileri olmadığı için bizimle savaşmaları pek olası değil. Risksiz değil, ancak [sieging_dragon.GetNameNoTooltip] ejderhama binip alevlerini kaleye salabilir ve bu kuşatmayı çok daha hızlı bir şekilde sona erdirebilirim."
+agot_dragon_siege.0001.desc_owned_single:0 "[owned_dragon_present.GetName] içeride ikamet etse de, binicisiz olduğu için etkili bir direniş sunması pek olası değil. Risksiz değil, ancak [sieging_dragon.GetNameNoTooltip] ejderhama binip alevlerini kaleye salabilir ve bu kuşatmayı çok daha hızlı bir şekilde sona erdirebilirim."
+
+agot_dragon_siege.0001.a:0 "Önce kolay hedeflere saldıracağız, savunmalarını yumuşatacağız."
+agot_dragon_siege.0001.a.f:0 "En az riskli yaklaşım, savunmalarını yumuşatmak için kalenin en zayıf noktalarına saldırmak için [sieging_dragon.GetNameNoTooltip] ejderhanıza bineceksiniz."
+agot_dragon_siege.0001.b:0 "Bu duvarlar onları ejderha ateşinden koruyamayacak."
+agot_dragon_siege.0001.b.f:0 "Bu kuşatmayı görkemli bir alevle sona erdirmeye çalışarak, savunmalarına alevlerini salmak için [sieging_dragon.GetNameNoTooltip] ejderhanıza bineceksiniz."
+agot_dragon_siege.0001.c:0 "Merhamet yok - kale #N yanacak#!."
+agot_dragon_siege.0001.c.f:0 "[sieging_dragon.GetNameNoTooltip] ejderhanızı hem savunmalara hem de iç kaleye salacaksınız, kaleye ve savunucularına büyük zarar vereceksiniz."
+agot_dragon_siege.0001.c.tt:0 "#N [sieging_location.GetNameNoTooltip] içindeki birçok kişi yanacak veya ölecek.#!"
+agot_dragon_siege.0001.d:0 "#N;bold Geriye kül ve harabe kalmayacak!#!"
+agot_dragon_siege.0001.d.f:0 "Kaleyi yerle bir edecek, arkanızda kül ve harabe dışında hiçbir şey bırakmayacaksınız."
+agot_dragon_siege.0001.d.tt:0 "#N [sieging_location.GetNameNoTooltip] içindeki herkes öldürülecek.#!"
+agot_dragon_siege.0001.e:0 "[defending_dragonrider.GetFirstName]! Çık ve öl!"
+agot_dragon_siege.0001.e.f:0 "[defending_dragonrider.GetTitledFirstNameNoTooltip] ve [defending_dragon.GetFirstNameNoTooltip] ejderhasıyla yüzleşmeye zorlayacaksınız."
+agot_dragon_siege.0001.f:0 "Hayır, kuşatmayı eski moda yöntemlerle yapacağız."
+agot_dragon_siege.0001.f.f:0 "Kuşatmaya devam ediyorsunuz."
+
+# Aşağıdaki kuşatılmışların bakış açısı
+# Ejderha kuşatmasında yakıldı
+agot_dragon_siege.0002.t:0 "$agot_dragon_siege.title$ Ejderha Ateşi!"
+agot_dragon_siege.0002.intro:0 "[location.GetName] surlarında devriye gezerken, durumumun tehlikesini görmezden gelemiyorum - düşman askerleri kalemizi kuşattı ve uzun bir kuşatma olası görünüyor.\n\n"
+agot_dragon_siege.0002.bigboi:0 "Bunu duyduğumda güneş gökyüzünde yüksekte asılı duruyor: Kulakları sağır eden bir kükreme, ardından bir rüzgar esiyor... Kalenin etrafındaki [ROOT.Char.GetCurrentLocation.Custom('GetTerrainTreePlural')] üzerinden geçen muazzam bir fırtına gibi bir öfke, [ROOT.Char.GetCurrentLocation.Custom('GetProvinceFoliageDesc')] sallıyor. Bir zamanlar parlak olan güneşi kaplayan devasa bir gölge, onu gölgede bırakıyor... Kendimi üzerime doğru alçalırken o karanlık uçuruma bakarken buluyorum: [sieging_dragon.GetFirstNameNicknamed], #XB devasa ejderha#!!\n\n"
+agot_dragon_siege.0002.option1:0 "Yoğun bir bulut örtüsü başımın üzerinde asılı duruyor. Kalemin etrafındaki [ROOT.Char.GetCurrentLocation.Custom('GetTerrainTreePlural')] bakıyorum, [ROOT.Char.GetCurrentLocation.Custom('GetProvinceFoliageDesc')] üzerinde bir şekil uçuşa geçerken tiz bir kükreme duyuyorum. Kanatlar açılmış, canavarı gökyüzüne doğru itiyor, yaklaşan kıyametime kalbimde bir sızıyla bakıyorum. İşte geliyor [sieging_dragon.GetFirstNameNicknamed], düşmanımın #X korkunç ejderhası#!\n\n"
+agot_dragon_siege.0002.option2:0 "Bunu duyduğumda güneş batmaya başlıyor: Kalemi saran [ROOT.Char.GetCurrentLocation.Custom('GetProvinceFoliageDesc')] ötesinde, uzaktan gelen gürültülü bir kükreme. Ejderha yukarı doğru fırlıyor, havayı bir kılıç gibi kesiyor, ağzından parlak ejderha ateşi dumanları dans ediyor. Kıyametimle yüzleşirken gökyüzü kırmızıya dönüyor: [sieging_dragon.GetFirstNameNicknamed|U] ve #X alevleri#! kuşatmaya çağrıldı.\n\n"
+agot_dragon_siege.0002.option3:0 "Gergin sessizliği kesen tiz bir çığlık ve [ROOT.Char.GetCurrentLocation.Custom('GetTerrainTreePlural')] ötesinde düşmanımı açıkça görebiliyorum: [sieging_dragon.GetFirstNameNicknamed], #X iğrenç ejderha#!, gökyüzüne çıktı, adamlarımın ve benim üzerime ejderha ateşi yağdırmaya hazır.\n\n"
+agot_dragon_siege.0002.option4:0 "Sessizlik havada ölüm gibi asılı duruyor. Uzakta, [ROOT.Char.GetCurrentLocation.Custom('GetTerrainTreePlural')] içindeki bir ağaçkakanın derin titreşimi, garnizonumun gergin nefesi altında kesik kesik bir ritim sağlıyor. [sieging_dragon.GetFirstNameNicknamed] gökyüzüne doğru fırladığında, alev ve umutsuzluk girdabı, #X sonumu getirmeye geldiğinde#! sessizlik cam gibi paramparça oluyor.\n\n"
+agot_dragon_siege.0002.outro:0 "Sıcaklık etrafımda ateşli bir goblen gibi açılmadan önce sadece dua mırıldanmaya vaktim var. Adamlarım etrafımda eriyor, anında kül ve is oluyor, ejderha ateşinin bana yaklaştığını hissediyorum."
+agot_dragon_siege.0002.a:0 "[ROOT.Char.Custom('Scream')]"
+agot_dragon_siege.0002.a.f:0 "[sieging_dragon.GetNameNoTooltip] tarafından yakıldınız."
+
+# Ejderha kuşatmasında ölmek
+agot_dragon_siege.0003.t:0 "$agot_dragon_siege.title$ Ejderha Ateşi Tarafından Mahkum Edildi!"
+agot_dragon_siege.0003.outro:0 "Sıcaklık etrafımda ateşli bir goblen gibi açılmadan önce sadece dua mırıldanmaya vaktim var. Adamlarım etrafımda eriyor, anında kül ve is oluyor, son nefesime tutunuyorum."
+agot_dragon_siege.0003.a:0 "[ROOT.Char.Custom('Scream')]"
+agot_dragon_siege.0003.a.f:0 "[sieging_dragon.GetNameNoTooltip] tarafından yakılarak öldürüldünüz."
+
+# Aşağıdaki saldırgan için ejderha kuşatması sonuçları
+# Okla vurulan binici
+agot_dragon_siege.0004.t:0 "$agot_dragon_siege.title$ Şanslı Bir Atış"
+agot_dragon_siege.0004.desc.minor:0 "[sieging_dragon.GetName] ve ben [sieging_location.GetName]'e doğru uçuyoruz, manzara altımızda akıp gidiyor ve ilk hedefimiz - savunmacıların aptalca duvarların dışında bıraktığı bir ikmal arabası - giderek yaklaşıyor. [sieging_dragon.Custom('GetDragonHerHis')] alevlerini üzerine salıyorum ve araba hızla alevler içinde kalıyor, savunmacıların malzemeleri dumanlar içinde yok oluyor. Saldırıların sadece ilkiydi bu!\n\nBir kule, bir nöbetçi kulübesi ve dışarıdaki bir ahır [sieging_dragon.GetFirstNamePossessiveNoTooltip] alevlerine yenik düşüyor, ancak altımızdaki yanan ahırdan yukarı doğru yükselirken ani bir darbe ve yanımda keskin bir acı hissediyorum.\n\nAcı içinde bağırıyorum ve karnıma saplanmış oku görüyorum, kırmızı leke gövdeme yayılıyor. Bir kükremeyle [sieging_dragon.GetNameNoTooltip] hatlarımıza geri dönmek için arkasını dönüyor ve beni vuran şanslı okçunun kaleye geri çekildiğini zar zor görüyorum."
+agot_dragon_siege.0004.desc:0 "[sieging_location.GetName]'in yanan külleri [sieging_dragon.GetName]'in geniş kanatlarının etrafında uçuşuyor, efsanevi bir iblis gibi biniyoruz, ardımızda ölüm getiriyoruz.\n\nAltımızda savunmacıların toplandığı bir avlu var, getirdiğimiz yıkımı durdurmak için naif bir girişim. Topuklarımla [sieging_dragon.GetFirstNameNoTooltip]'i avlunun üzerinde gezinmeye yönlendiriyorum ve aşağıdaki çaresiz adamlara ejderha ateşi yağdırıyorum.\n\nAncak güçlü varlığımızın altında adamları yakarken, yanımda ani bir sıcaklık hissediyorum ve acıya dönüşürken bağırıyorum. Karnıma saplanmış oku ve beni duvarlardan vuran şanslı okçuyu görmek için yukarı bakıyorum. Bir kükremeyle onu da küle çeviriyoruz, ama artık burada kalamam ve [sieging_dragon.GetFirstNameNoTooltip]'i hatlarımıza geri dönmek için çeviriyorum."
+agot_dragon_siege.0004.a:0 "En azından biraz hasar verdik!"
+agot_dragon_siege.0004.a.f:0 "Geri çekilmek zorunda kaldınız, ancak yapmak istediğiniz hasarı vermeden önce değil."
+
+# Dragon hit with spear
+agot_dragon_siege.0005.t:0 "$agot_dragon_siege.title$ Fedakarlık Mızrağı"
+agot_dragon_siege.0005.desc.minor:0 "[sieging_location.GetName]'e yönelik yoklama saldırılarımız başarılı oldu ve savunmacıların çoğu ya yanıyor ya da dağılmış durumda. Son hedef bir kule ve [sieging_dragon.GetName]'i üzerine [sieging_dragon.Custom('GetDragonHerHis')] alevlerini salması için yönlendiriyorum.\n\nAncak [sieging_dragon.GetName] bunu yaparken, ısı taşı bükerken, kulenin tepesinden yalnız bir adamın bir mızrak kaldırdığını görüyorum, kule altından çökerken ellerini bırakıyor.\n\nHiç şüphesiz ölümüne düşmesine rağmen, mızrağı hedefine ulaştı. Ondan kaçınmak için elimizden gelenin en iyisini yapmamıza rağmen, mızrak [sieging_dragon.GetNameNoTooltip]'in yan tarafına saplandı ve [sieging_dragon.Custom('GetDragonSheHe')] öfke ve acı karışımı bir kükremeyle geriye doğru sendelerken [sieging_dragon.Custom('GetDragonHerHis')] acısını hissediyorum."
+agot_dragon_siege.0005.desc:0 "[sieging_location.GetName]'in sokakları bir ateş nehri ve savunmacılar kaçışıyorlar. Başka bir bina alevler içinde kalıyor ve savunmacılar kaçarken, [sieging_dragon.GetName]'i yeniden toplanmadan önce okçuları kovalaması için yönlendiriyorum.\n\n[sieging_dragon.Custom('GetDragonHerHis')|U] büyük bedeni şaşırtıcı bir hızla kaçan okçuların peşinden sokakta ilerliyor, ancak bir sokaktan geçerken [sieging_dragon.Custom('GetDragonSheHe')] acı içinde kükredi! Aşağı baktığımda [sieging_dragon.Custom('GetDragonHerHis')] yan tarafına saplanmış bir mızrak görüyorum, o sokakta sinsice saklanan yalnız savunmacı bize saldırmak için cesaretini toplamış olmalı!\n\nTalimat olmadan [sieging_dragon.GetFirstNameNoTooltip] arkasını dönüyor ve adamı yakıp kül ediyor, ancak [sieging_dragon.Custom('GetDragonHerHis')] acısını hissedebiliyorum ve [sieging_dragon.Custom('GetDragonHerHim')]'e yükselmesini emrediyorum."
+agot_dragon_siege.0005.a:0 "Geri dön [sieging_dragon.GetFirstNameNoTooltip]! Yaralarına bakmalıyız!"
+agot_dragon_siege.0005.a.f:0 "Geri çekilmek zorunda kaldınız, ancak yapmak istediğiniz hasarı vermeden önce değil."
+# Dragon attacked in concert by defenders
+
+agot_dragon_siege.0006.t:0 "$agot_dragon_siege.title$ Lanetli Cesaret"
+agot_dragon_siege.0006.desc:0 "[sieging_location.GetName]'in savunucuları bizi oklar ve mızraklarla taciz ediyor, adamlar alevlerimizden kaçınmak için daha güçlü surlarına dalıyorlar. Sonunda bir açıklık görüyorum, aptalca bir araya toplanmış bir grup okçu. Sadece küçük bir kemer tarafından örtülüyorlar ve [sieging_dragon.GetName]'i saldırmak için dalışa geçmesini emrediyorum!\n\nBunu yaparken tuzağı çok geç fark ediyorum. Kemerin üzerinde bir grup savunmacı bitişik bir çatıda bekliyordu ve aşağı doğru süzülürken [sieging_dragon.GetFirstNameNoTooltip]'e doğru #italic atlıyorlar#!\n\nBirçoğu ıskalasa ve altındaki taşa çarpsa da, cesur aptalların bazıları kendilerine bir yer buluyor, aşağı doğru itmeleri hedeflerine ulaşıyor ve adamları mızrakları ve kılıçlarıyla [sieging_dragon.GetFirstNameNoTooltip]'e saplıyor. [sieging_dragon.GetFirstNameNoTooltip] acı içinde kükrer ve yukarı doğru kıvrılır, saldırganların çoğunu fırlatır ve gökyüzüne yükselir, geri kalanı aşağıdaki ölümlerine düşer."
+agot_dragon_siege.0006.a:0 "O cesur piçler!"
+agot_dragon_siege.0006.a.f:0 "[sieging_dragon.GetFirstNameNoTooltip] ağır şekilde yaralandı ve yapmak istediğiniz hasarı vermenize rağmen geri çekilmek zorunda kaldınız."
+# I am struck by many arrows
+
+agot_dragon_siege.0007.t:0 "$agot_dragon_siege.title$ Bin Kesik"
+agot_dragon_siege.0007.desc:0 "[sieging_location.GetName]'e saldırı iyi gidiyordu, birçok yapısal mevzileri zorluk çekmeden veya direnç göstermeden düşüyordu. Bu bölgenin iyi savunulduğunu düşünmüştüm, ancak savunmacılar bize inandırmaya çalıştıkları kadar cesur değiller gibi görünüyor.\n\nAncak bir sonraki önemli hedefimize - savunmacıların bulunduğu büyük bir kışla - saldırırken, bu kayıp savunmacıların nerede olduğunu görüyorum. Her pencereden oklar uçuyor, hepsi doğrudan bana nişan almış!\n\n[sieging_dragon.GetFirstName] beni korumak için [sieging_dragon.Custom('GetDragonHerHis')] kanatlarını kaldırsa da, birçoğu hedefini buluyor ve etrafımdaki ısırıklarını derinden hissediyorum. Gökyüzüne yükselirken acı içinde bağırıyorum, söylenmemiş son bir emri işaret ediyorum, göğsümden aşağı kan aktığını hissederken bulutlar önümde kayboluyor."
+agot_dragon_siege.0007.a:0 "Bir şifacıya ihtiyacım var!"
+agot_dragon_siege.0007.a.f:0 "Ağır şekilde yaralandınız ve geri çekilmek zorunda kaldınız, ancak yapmak istediğiniz hasarı vermeden önce değil."
+agot_dragon_siege.0007.b:0 "Ben... Ben yapmadım... Ben..."
+agot_dragon_siege.0007.b.f:0 "[sieging_dragon.GetNameNoTooltip]'in sırtında kan kaybederek ölüyorsunuz ve bedeniniz hatlarınıza geri getiriliyor. Yapmak istediğiniz hasar gerçekleştirildi, ancak büyük bir bedelle."
+
+# I was struck by a lucky spear throw
+agot_dragon_siege.0008.t:0 "$agot_dragon_siege.title$ Yabancının Mızrağı"
+agot_dragon_siege.0008.desc:0 "[sieging_location.GetName]'in savunucuları iyi bir mücadele veriyorlardı, ancak elbette hiçbiri [sieging_dragon.GetName] ve bana karşı koyamıyor. Kalenin bir tarafından diğer tarafına kadar savunmalarını yakıyorduk, adamlarımızın girmesini engelleyenlere yönelmeden önce silah ve adam barındırabilecek olanlara odaklanıyorduk.\n\nBunların sonuncusuna dönerken, at sırtında yalnız bir adam görüyorum - bir şekilde alevlerden kaçmayı başarmış - elinde bir mızrakla bize doğru koşuyor sanki bizi mızraklayacakmış gibi! Bu kadar cesaret mi yoksa aptallık mı, söyleyemem ama [sieging_dragon.GetNameNoTooltip]'i dönüp ona bakması için yönlendirirken, adamın mızrağının elinden uçup göğsüme tam isabet etmesine şaşırdım! Nefesim kesildi ve [sieging_dragon.GetFirstNameNoTooltip] ile bile uluyamıyorum.\n\n[sieging_dragon.GetNameNoTooltip] gökyüzüne yükselirken hafifçe sendelemeyi fark ediyorum, gevşek bedenim bağlı, başım arkaya doğru sarkık gökyüzüne bakıyor. Yükselen duman damlayan közler çok... çok..."
+agot_dragon_siege.0008.a:0 "Çok güzel..."
+agot_dragon_siege.0008.a.f:0 "[sieging_dragon.GetNameNoTooltip]'e bağlı bedeniniz hatlarınıza geri döndü, hasar verildi ancak büyük bir bedelle."
+
+# Scorpion wounded my dragon
+agot_dragon_siege.0009.t:0 "$agot_dragon_siege.title$ Akrebin Saldırısı"
+agot_dragon_siege.0009.desc:0 "Bir ejderhanın tepesinde alçakgönüllü olabileceğiniz nadir anlardan biridir. Çok az kişi bu duyguyu tatmıştır. Entelektüel olarak [sieging_dragon.GetName]'i kuşatmada kullanmanın bir risk olduğunu bilsem de, savunmacıların yetersiz savunmalarıyla bize vurabileceklerini ummadıklarını düşünmüştüm. Yanılmışım.\n\nBaşka bir savunma yapısını yakmak için aşağı doğru süzülürken, bir metal parlaması görüyorum ve duvarlardan bir ok uçuyor, [sieging_dragon.GetNameNoTooltip]'in yan tarafına çarpıyor. [sieging_dragon.GetFirstNameNoTooltip] acı içinde kükrer, geriye doğru sendeler ve neredeyse beni [sieging_dragon.Custom('GetDragonHerHis')] sırtından atıyordu."
+agot_dragon_siege.0009.a:0 "Geri çekilmeliyiz!"
+agot_dragon_siege.0009.a.f:0 "Saldırılarınız etkisiz ve [sieging_dragon.GetFirstNameNoTooltip] ağır şekilde yaralandığı için geri çekilmek zorunda kaldınız."
+
+# Scorpion killed us both!
+agot_dragon_siege.0010.t:0 "$agot_dragon_siege.title$ Akrebin İğnesi"
+agot_dragon_siege.0010.desc:0 "Eski Valyrialılar ejderhalarına tanrıların adını verdiler ve nedenini anlamak kolay. [sieging_dragon.GetName] bir ateş ve ölüm tanrısı ve ben onun seçilmişiyim. Ancak eski tanrılar yeni inancın etkisiyle düşürüldüğü gibi, en büyük silahlar da en küçüğüne yenilebilir.\n\nDuvarlardan yağan metal fırtına gibi geliyor. [sieging_dragon.GetNameNoTooltip]'in [sieging_dragon.Custom('GetDragonHerHis')] kanat ekleminin arasına bir akrep oku saplandığını görüyorum, acı dolu boğuk çığlığı, başka bir ok [sieging_dragon.Custom('GetDragonHerHis')] boynuna çarptığında kesiliyor. [sieging_dragon.Custom('GetDragonHerHis')] yaralarından kan fışkırıyor - ve uçtuğumuz yerde, şimdi düşüyoruz, zemin bize doğru hızla yaklaşıyor."
+agot_dragon_siege.0010.a:0 "Hayır, [sieging_dragon.GetFirstNameNoTooltip]! Uç!"
+agot_dragon_siege.0010.a.f:0 "Siz ve [sieging_dragon.GetNameNoTooltip] öldünüz, kırık bedeniniz [sieging_dragon.GetFirstNamePossessiveNoTooltip] enkazı arasında bulundu."
+
+# I am dragonrider and I am defending from siege
+agot_dragon_siege.0011.t:0 "$agot_dragon_siege.title$ Ejderhanın Savunması"
+agot_dragon_siege.0011.desc:0 "[sieging_location.GetName]'in sadık savunucuları saldırganlarımızı uzak tutmak için çok çaba sarf ettiler ve sonunda hayal kırıklığı doruk noktasına ulaşmış gibi görünüyor. [sieging_dragonrider.GetTitledFirstName] ve [sieging_dragon.GetName]'in hatlardan yükselmeye başladığını görüyorum ve neyin geldiğini biliyorum. Başka seçeneğim yok - şimdi tam zamanı!\n\nYa [defending_dragon.GetName]'e binip onlarla gökyüzünde yüzleşmeliyim ya da kaçıp savunmacıları kaderlerine terk etmeliyim."
+agot_dragon_siege.0011.a:0 "Onlarla yüzleşeceğim!"
+agot_dragon_siege.0011.a.f:0 "[defending_dragon.GetNameNoTooltip]'e biniyorsunuz ve saldırganlarınızla gökyüzünde yüzleşiyorsunuz."
+agot_dragon_siege.0011.b:0 "Uç [defending_dragon.GetFirstNameNoTooltip]! Kaçmalıyız!"
+agot_dragon_siege.0011.b.f:0 "Savunmacıları kaderlerine terk ederek savaş alanından kaçıyorsunuz."
+agot_dragon_siege.notify_sieger_of_fleeing.t:0 "[defending_dragonrider.GetTitledFirstNameNoTooltip] kaçıyor!"
+agot_dragon_siege.notify_sieger_of_fleeing.tt:0 "[defending_dragonrider.GetTitledFirstName], sizinle yüzleşmek yerine [defending_dragon.GetFirstName] ile kaçtı."
+
+# My owned dragon has fled due to the events of a siege
+agot_dragon_siege.0013.t:0 "$agot_dragon_siege.title$ Ejderhanın Uçuşu"
+agot_dragon_siege.0013.desc:0 "[sieging_rider.GetTitledFirstName] ve [sieging_dragon.GetFirstName] yıkımlarını gerçekleştirdiler, ancak şimdi bana bedelin önceden bildirilenden daha büyük olduğu söylendi.\n\nEjderham [fleeing_dragon.GetName], kuşatmanın gürültüsünden mi yoksa [sieging_dragon.GetNameNoTooltip]'in varlığından mı korktu bilmiyorum ama savaş alanından kaçtı!\n\n[fleeing_dragon.Custom('GetDragonSheHe')]'nin [new_location.GetBaseName]'de yuva kurarken görüldüğü söylendi."
+agot_dragon_siege.0013.a:0 "Bizim için büyük bir kayıp..."
+agot_dragon_siege.0013.a.f:0 "Ejderhanız vahşileşti. [fleeing_dragon.GetFirstNameNoTooltip]'i geri kazanabilirsiniz, ancak [fleeing_dragon.Custom('GetDragonSheHe')] artık sizin olmadığı için bu daha zor olabilir."
+
+# A wild dragon has arrived from the events of a siege
+agot_dragon_siege.0014.t:0 "$agot_dragon_siege.title$ Ejderhanın Gelişi"
+agot_dragon_siege.0014.desc:0 "Yakınlarda, [sieging_location.GetName] kuşatmasının büyük bir felakete sahne olduğunu duydum. [sieging_rider.GetTitledFirstName] ve [sieging_dragon.GetName] savunmacılara yıkım getirdiler, ancak benim için daha acil olanı [fleeing_dragon.GetFirstName]'in gelişi!\n\nAynı kalede tutulan [fleeing_dragon.Custom('GetDragonSheHe')] görünüşe göre kendi isteğiyle kuşatmadan kaçmış ve izcilerim canavarın [new_location.GetBaseName]'de yuva kurarken görüldüğünü söylüyor."
+agot_dragon_siege.0014.a:0 "Bir fırsat mı yoksa tehdit mi?"
+agot_dragon_siege.0014.a.f:0 "[new_location.GetBaseName]'e vahşi bir ejderha geldi ve onu kendinize ait olarak talep etmek için bir fırsat olabilir. Tabii ki, vahşi ejderhalar tehlikeli komşulardır..."
