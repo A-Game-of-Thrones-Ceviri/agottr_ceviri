@@ -1,85 +1,86 @@
 ﻿l_english:
-  #Different religion/culture notifications 
- councillor_personal_steward_learning.1001.religion.t: "Kişisel Vekil [councillor.GetFaith.GetAdjectiveNoTooltip] Vasal ile Arabuluculuk Yapar"
- councillor_personal_steward_learning.1001.culture.t: "Kişisel Vekil [councillor.GetCulture.GetNameNoTooltip] ile Arabuluculuk Yapar"
-  
- councillor_personal_steward_learning.1002.religion.t: "Kişisel Vekil [councillor.GetFaith.GetAdjectiveNoTooltip] [councillor.Custom2('RelationToMeShort', SCOPE.sC('opinion_house_member'))|U] ile Arabuluculuk Yapar"
- councillor_personal_steward_learning.1002.culture.t: "Kişisel Vekil [councillor.GetCulture.GetNameNoTooltip] [councillor.Custom2('RelationToMeShort', SCOPE.sC('opinion_house_member'))|U] ile Arabuluculuk Yapar"
-  
-  #Same religion/culture notifications 
- councillor_personal_steward_learning.1003.religion.desc: "Kişisel Vekil [councillor.GetFaith.GetAdjectiveNoTooltip] Konuyla Arabuluculuk Yapar"
- councillor_personal_steward_learning.1003.culture.desc: "Kişisel Vekil [councillor.GetCulture.GetNameNoTooltip] Konuyla Arabuluculuk Yapar"
- councillor_personal_steward_learning.1301.t: "Kişisel Vekil: Dini Dönüşümü Etkiler"
- councillor_personal_steward_learning.1302.t: "Kişisel Vekil: Kültürel Dönüşümü Etkiler"
- councillor_personal_steward_learning.1303.desc: "Kişisel Vekil, İlahiyatçıların Patronudur"
-  
-  #General learning notifications 
- councillor_personal_steward_learning.1601.desc: "Kişisel Vekil [ROOT.Char.Custom('LifestyleFocus')|U] Çalışmada Size Yardımcı Olur"
- councillor_personal_steward_learning.1602.t: "[tutored_child.Custom('GetDaughterSon')] Kişisel Vekilin Vesayeti Altında Gelişir"
- councillor_personal_steward_learning.1603.root_guardian.t: "Ward, Kişisel Vekilinin Vesayetini Takdir Ediyor"
- councillor_personal_steward_learning.1603.personal_steward_guardian.t: "Kişisel Vekil'in Vasiliği [councillor.GetHerHis|U] Vesayet'i Takdir Ediyor"
- councillor_personal_steward_learning.1603.other_guardian.t: "Sarayda Vasilik, Kişisel Vekilinin Vesayetini Takdir Ediyor"
-  
- agot_add_patronage_personal_steward_education_points_effect.t: "Kişisel Vekil Vesayetinden Çocuk Faydaları"
- agot_add_patronage_personal_steward_education_points_effect.desc: "[ROOT.Char.Custom2('RelationToMe', SCOPE.sC('patronage_student'))], [patronage_student.GetTitledFirstName]'imin [councillor.GetTitledFirstNamePossessive] himayesi sayesinde iyi bir [education|E] alma olasılığı daha yüksektir."
- add_patronage_personal_steward_education_points_child_effect.desc: "[patronage_student.Custom('GetDaughterSon')], [patronage_student.GetTitledFirstName]'imin [councillor.GetTitledFirstNamePossessive] himayesi sayesinde iyi bir [education|E] alma olasılığı daha yüksektir."
-  
-  #Events 
- councillor_personal_steward_learning.2601.t: "Kişisel Komiser: İleri Eğitim"
- councillor_personal_steward_learning.2601.not_scholarly.desc: ""Ara sıra bir kitap okumaktan zarar gelmez," der bana sık sık, çalışkan [councillor.GetTitledFirstName]'im, [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('councillor'))]'ım. Başlamak için yardıma ihtiyacım olursa [councillor.GetSheHe|U] bana öğretmenlik teklif etti."
- councillor_personal_steward_learning.2601.scholarly.desc: "[ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('councillor'))] [councillor.GetTitledFirstName]'im beni bir kitabın üzerine eğilmiş halde bulduğunda, [councillor.GetSheHe] gözle görülür şekilde heyecanlanıyor.\n\n"Çalışmalarınızda biraz yardım ister misiniz? Fikir alışverişinde bulunabileceğiniz biri veya belki de yeni kitaplar? Yakın zamanda [ROOT.Char.Custom('education_conversation_subject')]'ün mükemmel bir analizinin olduğu bir cilt edindim!""
- councillor_personal_steward_learning.2601.a: "Evet, rehberliğinize minnettar olurum."
- councillor_personal_steward_learning.2601.b: "[tutoring_student_1.GetTitledFirstNameNoTooltip]'ın benden daha çok yardımına ihtiyacı var."
- councillor_personal_steward_learning.2601.c: "Bunun yerine [tutoring_student_2.GetTitledFirstNameNoTooltip]'a ders vermelisin."
- councillor_personal_steward_learning.2601.d: "Kendi derslerine odaklanmalısın."
- agot_councillor_personal_steward_learning_2601_tutoring_effect.critical_success: "[THIS.Char.GetTitledFirstNamePossessiveOrMyNoTooltip|U] [THIS.Char.Custom('education_focus')]'in anlaşılması büyük ölçüde artar"
- agot_councillor_personal_steward_learning_2601_tutoring_effect.success: "[THIS.Char.GetTitledFirstNamePossessiveOrMyNoTooltip|U] [THIS.Char.Custom('education_focus')]'in anlaşılması artar"
-  
-  
- councillor_personal_steward_learning.2001.faith.t: "Kişisel Vekil: [councillor.GetFaith.GetAdjectiveNoTooltip] Muhalif"
- councillor_personal_steward_learning.2001.culture.t: "Kişisel Vekil: [councillor.GetCulture.GetNameNoTooltip] Muhalif"
- councillor_personal_steward_learning.2001.start.desc: "[faction_leader.GetTitledFirstName] ve [faction_leader.GetHerHis] arkadaş"
- councillor_personal_steward_learning.2001.faith.desc: "[councillor.GetFaith.GetAdjectiveNoTooltip]"
- councillor_personal_steward_learning.2001.culture.desc: "[councillor.GetCulture.GetNameNoTooltip]"
- councillor_personal_steward_learning.2001.middle.desc: "[different_culture_or_faith_faction.GetName]'daki komplocular bana bir an bile huzur vermiyor!"
- councillor_personal_steward_learning.2001.independence_faction.desc: "Sadık tebaa olmaları gerekirken, bana karşı cephe alacaklarını biliyorum."
- councillor_personal_steward_learning.2001.liberty_faction.desc: "Her fırsatta otoritemi sarsmaya çalışıyorlar."
- councillor_personal_steward_learning.2001.claimant_faction.desc: "O şerefsiz hırsızlar benim hakkım olan toprağımı almaya çalışıyorlar."
- councillor_personal_steward_learning.2001.end.desc: "\n\nNeyse ki, "onlardan biri" olarak benim [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('councillor'))] [councillor.GetTitledFirstName]'im onların üzerinde belirli bir ölçüde etkiye sahip. [councillor.GetSheHe|U] arabuluculuk yapmayı teklif etti ve nasıl devam edeceğini bilmek istiyor."
- councillor_personal_steward_learning.2001.a.faith: "[councillor.GetFaith.GetAdjectiveNoTooltip] fraksiyon üyelerini yatıştırın."
- councillor_personal_steward_learning.2001.a.culture: "[councillor.GetCulture.GetNameNoTooltip] fraksiyon üyelerini yatıştırın."
- councillor_personal_steward_learning.2001.a.faction_members_faith: "[different_culture_or_faith_faction.GetName]'in her [councillor.GetFaith.GetAdjective] üyesi"
- councillor_personal_steward_learning.2001.a.faction_members_culture: "[different_culture_or_faith_faction.GetName]'in her [councillor.GetCulture.GetName] üyesi"
- councillor_personal_steward_learning.2001.b: "[faction_member_1.GetTitledFirstNameNoTooltip]'ın gruptan ayrılmasını sağla."
- councillor_personal_steward_learning.2001.c: "[faction_member_2.GetTitledFirstNameNoTooltip]'ı bana sadık kalmaya ikna et."
-  
- councillor_personal_steward_learning.2301.t: "Kişisel Vekil: Daha Yüksek Bir Güç"
- councillor_personal_steward_learning.2301.desc: "[ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('councillor'))] [councillor.GetTitledFirstName]'im din dünyasında iyi bilinen bir figür haline geldi. [councillor.GetHerHis|U] [councillor.GetFaith.GetAdjectiveNoTooltip] bilginlerin, [councillor.GetFaith.HouseOfWorshipPlural] ve tarikatların himayesi [religious_head.GetTitledFirstName] [religious_head.GetHerselfHimself]'nın bile dikkatini çekti.\n\n [religious_head.GetTitleAsNamePossessiveNoTooltip] Minnettarlığın güçlü faydaları var. [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('councillor'))]'ım benim adıma [religious_head.GetHerHim]'a ulaşmayı teklif etti."
- councillor_personal_steward_learning.2301.a: "Tanışma yapabilir misiniz?"
- councillor_personal_steward_learning.2301.a.success: "[religious_head.GetTitledFirstName] ile arkadaş oldum."
- councillor_personal_steward_learning.2301.b: "Karşılığında [religious_head.GetSheHe] bizim için ne yapabilir?"
- councillor_personal_steward_learning.2301.c: "Bu, kutsal cemaate yeniden kabul edilme şansım!"
- councillor_personal_steward_learning.2301.d: "[religious_head.GetHerHim]'a haber verin — yaptığımız her şeyi [councillor.GetFaith.HighGodName] için yapıyoruz."
-  
- councillor_personal_steward_learning.2602.t: "Kişisel Vekil: Ufukları Genişletmek"
- councillor_personal_steward_learning.2602.not_root.desc: "[ROOT.Char.Custom2('RelationToMe', SCOPE.sC('student'))] [student.GetTitledFirstName]'im [student.Custom('highest_skill_noun')] hakkında kesinlikle bir iki şey biliyor olsa da, [councillor.GetTitledFirstName] [student.GetHerHim]'ün [student.GetHerHis] ufuklarını genişletmesinin zamanının geldiğini düşünüyor.\n\n"Birkaç yeni cilt edinebilir, birkaç ödev hazırlayabilir, [student.GetHerHim]'e biraz ders verebilirim. Sizce hangi ders [student.GetFirstNameNoTooltip] en çok fayda sağlar?""
- councillor_personal_steward_learning.2602.root.desc: ""[student.Custom('highest_skill_noun')] hakkında bir iki şey biliyor olsan da, [student.GetPrimaryTitle.GetNameNoTierNoTooltip]'nin [student.GetTitleTierName]'i geniş bir beceri yelpazesine sahip olmalı," diyor [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('councillor'))]'üm, [ROOT.Char.Custom2('QuirkPPPosOrNeg', SCOPE.sC('councillor'))].\n\n"Birkaç yeni cilt edinebilir, birkaç ödev hazırlayabilir, sana biraz ders verebilirim. En çok hangi konuyla ilgileniyorsun?""
- councillor_personal_steward_learning.2602.a: "Diplomasi."
- councillor_personal_steward_learning.2602.b: "Askeri teori."
- councillor_personal_steward_learning.2602.c: "Krallık ekonomisi."
- councillor_personal_steward_learning.2602.d: "Casus ağ yönetimi."
- councillor_personal_steward_learning.2602.e: "Teoloji."
-  
- councillor_personal_steward_learning.1304.desc: "Kişisel Vekil [religious_vassal.GetTitledFirstNameNoTooltip]'ın Patronudur"
- councillor_personal_steward_learning.1305.desc: "Kişisel Vekilin Dindarlığı [religious_head.GetTitleAsNameNoTooltip]'ı Etkiliyor"
-  
-  
-  
- councillor_personal_steward_learning.2603.t: "Kişisel Vekil: Göreve Hazır"
- councillor_personal_steward_learning.2603.desc: "Danışmanlarımın bazıları işin kan veya nüfuz hakkıyla kendilerine ait olduğuna inanıyor — ne kadar da yanılıyorlar! Sonuçlar bekliyorum, ancak çoğu zaman hayal kırıklığına uğruyorum.\n\nUzun bir günün ardından, [councillor.GetFirstName]'a şikayet ederken [councillor.GetSheHe] beni bölüyor. "Bununla ilgili bir şey yapmama izin ver, [ROOT.Char.GetWifeHusband]. Birkaç ders zekalarını keskinleştirebilir.""
- councillor_personal_steward_learning.2603.a: "[chancellor.GetCouncilTitle|U] [chancellor.GetFirstNameNoTooltip] Bir öğretmene ihtiyacı olabilir."
- councillor_personal_steward_learning.2603.b: "[marshal.GetCouncilTitle|U] [marshal.GetFirstNameNoTooltip] yardımınızdan faydalanabilir."
- councillor_personal_steward_learning.2603.c: "[steward.GetCouncilTitle], [steward.GetFirstNameNoTooltip]'ime birkaç ders ver."
- councillor_personal_steward_learning.2603.d: "Belki [spymaster.GetCouncilTitle] [spymaster.GetFirstNameNoTooltip] için bir tavsiyeniz vardır."
- councillor_personal_steward_learning.2603.e: "[court_chaplain.GetCouncilTitle] [court_chaplain.GetFirstNameNoTooltip] biraz rehberliğe ihtiyaç duyuyor."
- councillor_personal_steward_learning.2603.f: "Onun yerine benimle kal..."
+#mustafa
+#Different religion/culture notifications
+councillor_personal_steward_learning.1001.religion.t:1 "Kişisel Vekil [councillor.GetFaith.GetAdjectiveNoTooltip] Vassal ile Arabuluculuk Yapıyor"
+councillor_personal_steward_learning.1001.culture.t:1 "Kişisel Vekil [councillor.GetCulture.GetNameNoTooltip] ile Arabuluculuk Yapıyor"
+
+councillor_personal_steward_learning.1002.religion.t:1 "Kişisel Vekil [councillor.GetFaith.GetAdjectiveNoTooltip] [councillor.Custom2('RelationToMeShort', SCOPE.sC('opinion_house_member'))|U] ile Arabuluculuk Yapıyor"
+councillor_personal_steward_learning.1002.culture.t:1 "Kişisel Vekil [councillor.GetCulture.GetNameNoTooltip] [councillor.Custom2('RelationToMeShort', SCOPE.sC('opinion_house_member'))|U] ile Arabuluculuk Yapıyor"
+
+#Same religion/culture notifications
+councillor_personal_steward_learning.1003.religion.desc:1 "Kişisel Vekil [councillor.GetFaith.GetAdjectiveNoTooltip] Tezcanlar ile Arabuluculuk Yapıyor"
+councillor_personal_steward_learning.1003.culture.desc:1 "Kişisel Vekil [councillor.GetCulture.GetNameNoTooltip] Tezcanlar ile Arabuluculuk Yapıyor"
+councillor_personal_steward_learning.1301.t:1 "Kişisel Vekil: Dini Dönüşümü Etkiliyor"
+councillor_personal_steward_learning.1302.t:1 "Kişisel Vekil: Kültürel Dönüşümü Etkiliyor"
+councillor_personal_steward_learning.1303.desc:0 "Kişisel Vekil İlahiyatçıların Hamisi"
+
+#General learning notifications
+councillor_personal_steward_learning.1601.desc:1 "Kişisel Vekil [ROOT.Char.Custom('LifestyleFocus')|U] Çalışmalarınızda Size Yardımcı Oluyor"
+councillor_personal_steward_learning.1602.t:1 "[tutored_child.Custom('GetDaughterSon')] Kişisel Vekilin Vesayeti Altında Gelişiyor"
+councillor_personal_steward_learning.1603.root_guardian.t:0 "Vesayet Altındaki Kişi Kişisel Vekilin Vesayetini Takdir Ediyor"
+councillor_personal_steward_learning.1603.personal_steward_guardian.t:0 "Kişisel Vekilin Vesayet Altındaki Kişisi [councillor.GetHerHis|U] Vesayetini Takdir Ediyor"
+councillor_personal_steward_learning.1603.other_guardian.t:0 "Saraydaki Vesayet Altındaki Kişi Kişisel Vekilin Vesayetini Takdir Ediyor"
+
+agot_add_patronage_personal_steward_education_points_effect.t:0 "Çocuk Kişisel Vekilin Vesayetinden Yararlanıyor"
+agot_add_patronage_personal_steward_education_points_effect.desc:1 "[ROOT.Char.Custom2('RelationToMe', SCOPE.sC('patronage_student'))]ım olan [patronage_student.GetTitledFirstName], [councillor.GetTitledFirstNamePossessive] vesayeti sayesinde iyi bir [education|E] alma olasılığı daha yüksek."
+add_patronage_personal_steward_education_points_child_effect.desc:0 "[patronage_student.Custom('GetDaughterSon')]ım olan [patronage_student.GetTitledFirstName], [councillor.GetTitledFirstNamePossessive] vesayeti sayesinde iyi bir [education|E] alma olasılığı daha yüksek."
+
+#Events
+councillor_personal_steward_learning.2601.t:1 "Kişisel Vekil: İleri Eğitim"
+councillor_personal_steward_learning.2601.not_scholarly.desc:0 ""Arada bir kitap okumanın sana zararı olmaz," diyor çalışkan [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('councillor'))]ım [councillor.GetTitledFirstName] sık sık. Başlamak için yardıma ihtiyacın olursa [councillor.GetSheHe|U] öğretmenlik teklif etti."
+councillor_personal_steward_learning.2601.scholarly.desc:0 "[ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('councillor'))]ım [councillor.GetTitledFirstName] beni her kalın bir kitabın başında eğilmiş bulduğunda gözle görülür şekilde heyecanlanıyor.\n\n"Çalışmalarınızda biraz yardıma ihtiyacınız var mı? Fikir alışverişinde bulunabileceğiniz biri veya belki de bazı yeni kitaplar? Son zamanlarda [ROOT.Char.Custom('education_conversation_subject')] hakkında mükemmel bir analiz içeren bir cilt edindim!""
+councillor_personal_steward_learning.2601.a:0 "Evet, rehberliğinizi takdir ederim."
+councillor_personal_steward_learning.2601.b:0 "[tutoring_student_1.GetTitledFirstNameNoTooltip]'ın yardımınıza benden daha çok ihtiyacı var."
+councillor_personal_steward_learning.2601.c:0 "Bunun yerine [tutoring_student_2.GetTitledFirstNameNoTooltip]'a öğretmenlik yapmalısınız."
+councillor_personal_steward_learning.2601.d:0 "Kendi çalışmalarınıza odaklanmalısınız."
+agot_councillor_personal_steward_learning_2601_tutoring_effect.critical_success:0 "[THIS.Char.GetTitledFirstNamePossessiveOrMyNoTooltip|U]'ın [THIS.Char.Custom('education_focus')] anlayışı büyük ölçüde artıyor"
+agot_councillor_personal_steward_learning_2601_tutoring_effect.success:0 "[THIS.Char.GetTitledFirstNamePossessiveOrMyNoTooltip|U]'ın [THIS.Char.Custom('education_focus')] anlayışı artıyor"
+
+
+councillor_personal_steward_learning.2001.faith.t:1 "Kişisel Vekil: [councillor.GetFaith.GetAdjectiveNoTooltip] Muhalifler"
+councillor_personal_steward_learning.2001.culture.t:1 "Kişisel Vekil: [councillor.GetCulture.GetNameNoTooltip] Muhalifler"
+councillor_personal_steward_learning.2001.start.desc:0 "[faction_leader.GetTitledFirstName] ve [faction_leader.GetHerHis] yoldaşı"
+councillor_personal_steward_learning.2001.faith.desc:0 "[councillor.GetFaith.GetAdjectiveNoTooltip]"
+councillor_personal_steward_learning.2001.culture.desc:0 "[councillor.GetCulture.GetNameNoTooltip]"
+councillor_personal_steward_learning.2001.middle.desc:0 "[different_culture_or_faith_faction.GetName]'daki komplocu bana bir an bile huzur vermiyor!"
+councillor_personal_steward_learning.2001.independence_faction.desc:0 "Sadık tebaa olmalılar, ancak bana karşı komplo kurduklarını biliyorum."
+councillor_personal_steward_learning.2001.liberty_faction.desc:0 "Her fırsatta otoritemi baltalamaya çalışıyorlar."
+councillor_personal_steward_learning.2001.claimant_faction.desc:0 "Bu onursuz hırsızlar, haklı olarak benim olan toprakları almaya çalışıyorlar."
+councillor_personal_steward_learning.2001.end.desc:0 "\n\nNeyse ki, "onlardan biri" olarak, [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('councillor'))]ım [councillor.GetTitledFirstName] onlarda belli bir etkiye sahip. [councillor.GetSheHe|U] arabuluculuk teklif etti ve nasıl devam edeceğimi bilmek istiyor."
+councillor_personal_steward_learning.2001.a.faith:0 "[councillor.GetFaith.GetAdjectiveNoTooltip] hizip üyelerini yatıştırın."
+councillor_personal_steward_learning.2001.a.culture:0 "[councillor.GetCulture.GetNameNoTooltip] hizip üyelerini yatıştırın."
+councillor_personal_steward_learning.2001.a.faction_members_faith:0 "[different_culture_or_faith_faction.GetName]'ın her [councillor.GetFaith.GetAdjective] üyesi"
+councillor_personal_steward_learning.2001.a.faction_members_culture:0 "[different_culture_or_faith_faction.GetName]'ın her [councillor.GetCulture.GetName] üyesi"
+councillor_personal_steward_learning.2001.b:0 "[faction_member_1.GetTitledFirstNameNoTooltip]'ı hizipten ayrılmaya zorlayın."
+councillor_personal_steward_learning.2001.c:0 "[faction_member_2.GetTitledFirstNameNoTooltip]'ı bana sadık kalmaya ikna edin."
+
+councillor_personal_steward_learning.2301.t:1 "Kişisel Vekil: Daha Yüksek Bir Güç"
+councillor_personal_steward_learning.2301.desc:0 "[ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('councillor'))]ım [councillor.GetTitledFirstName] dini dünyada tanınmış bir şahsiyet haline geldi. [councillor.GetFaith.GetAdjectiveNoTooltip] alimlerine, [councillor.GetFaith.HouseOfWorshipPlural]'larına ve tarikatlarına olan himayesi [religious_head.GetTitledFirstName] [religious_head.GetHerselfHimself]'in bile dikkatini çekti.\n\n[religious_head.GetTitleAsNamePossessiveNoTooltip]'ın minnettarlığı güçlü faydalar sağlıyor. [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('councillor'))]ım, benim adıma [religious_head.GetHerHim] ile iletişime geçmeyi teklif etti."
+councillor_personal_steward_learning.2301.a:0 "Tanıştırabilir misin?"
+councillor_personal_steward_learning.2301.a.success:0 "[religious_head.GetTitledFirstName] ile arkadaş oldum."
+councillor_personal_steward_learning.2301.b:0 "[religious_head.GetSheHe] karşılığında bizim için ne yapabilir?"
+councillor_personal_steward_learning.2301.c:0 "Bu, kutsal topluluğa geri kabul edilmem için bir şans!"
+councillor_personal_steward_learning.2301.d:0 "[religious_head.GetHerHim]'a bildirin - yaptığımız her şeyi [councillor.GetFaith.HighGodName] için yapıyoruz."
+
+councillor_personal_steward_learning.2602.t:1 "Kişisel Vekil: Ufukları Genişletmek"
+councillor_personal_steward_learning.2602.not_root.desc:0 "[ROOT.Char.Custom2('RelationToMe', SCOPE.sC('student'))]ım [student.GetTitledFirstName] kesinlikle [student.Custom('highest_skill_noun')] hakkında bir iki şey biliyor olsa da, [councillor.GetTitledFirstName] [student.GetHerHim]'ın ufuklarını genişletmesinin zamanının geldiğini düşünüyor.\n\n"Bazı yeni kitaplar edinebilir, birkaç ödev hazırlayabilir, [student.GetHerHim]'a biraz ders verebilirim. Sizce hangi konu [student.GetFirstNameNoTooltip]'a en çok fayda sağlar?""
+councillor_personal_steward_learning.2602.root.desc:0 ""[student.Custom('highest_skill_noun')] hakkında bir iki şey biliyor olsanız da, [student.GetPrimaryTitle.GetNameNoTierNoTooltip]'ın [student.GetTitleTierName]'ı geniş bir yelpazede beceriye sahip olmalıdır," diyor [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('councillor'))]ım, [ROOT.Char.Custom2('QuirkPPPosOrNeg', SCOPE.sC('councillor'))].\n\n"Bazı yeni kitaplar edinebilir, birkaç ödev hazırlayabilir, size biraz ders verebilirim. En çok hangi konuya ilgi duyuyorsunuz?""
+councillor_personal_steward_learning.2602.a:0 "Diplomasi."
+councillor_personal_steward_learning.2602.b:0 "Askeri teori."
+councillor_personal_steward_learning.2602.c:0 "Diyar ekonomisi."
+councillor_personal_steward_learning.2602.d:0 "Casus ağı yönetimi."
+councillor_personal_steward_learning.2602.e:0 "İlahiyat."
+
+councillor_personal_steward_learning.1304.desc:0 "Kişisel Vekil [religious_vassal.GetTitledFirstNameNoTooltip]'ın Hamisi"
+councillor_personal_steward_learning.1305.desc:0 "Kişisel Vekilin Dindarlığı [religious_head.GetTitleAsNameNoTooltip]'ı Etkiliyor"
+
+
+
+councillor_personal_steward_learning.2603.t:1 "Kişisel Vekil: Görevin Başında"
+councillor_personal_steward_learning.2603.desc:0 "Bazı danışmanlarım, işin sadece kan veya nüfuz hakkıyla kendilerinin olduğunu düşünüyor - ne kadar da yanılıyorlar! Sonuç bekliyorum, ancak çoğu zaman hayal kırıklığına uğruyorum.\n\nUzun bir günün ardından [councillor.GetFirstName]'a şikayet ederken beni bölüyor. "Bununla ilgili bir şeyler yapmama izin verin, [ROOT.Char.GetWifeHusband]. Birkaç ders zekalarını keskinleştirebilir.""
+councillor_personal_steward_learning.2603.a:0 "[chancellor.GetCouncilTitle|U] [chancellor.GetFirstNameNoTooltip]'ın bir öğretmene ihtiyacı olabilir."
+councillor_personal_steward_learning.2603.b:0 "[marshal.GetCouncilTitle|U] [marshal.GetFirstNameNoTooltip] yardımınızdan yararlanabilir."
+councillor_personal_steward_learning.2603.c:0 "[steward.GetCouncilTitle]ıma, [steward.GetFirstNameNoTooltip]'a birkaç ders verin."
+councillor_personal_steward_learning.2603.d:0 "Belki [spymaster.GetCouncilTitle] [spymaster.GetFirstNameNoTooltip] için birkaç tavsiyeniz vardır."
+councillor_personal_steward_learning.2603.e:0 "[court_chaplain.GetCouncilTitle] [court_chaplain.GetFirstNameNoTooltip]'ın biraz rehberliğe ihtiyacı var."
+councillor_personal_steward_learning.2603.f:0 "Bunun yerine benimle burada kal..."
