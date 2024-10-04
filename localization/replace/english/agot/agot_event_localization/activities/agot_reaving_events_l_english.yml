@@ -1,283 +1,284 @@
 ﻿l_english:
- activity_reaving: "Yağmalamak"
- activity_reaving_owner: "Yağmacı"
- activity_reaving_name: "Büyük Yağma"
- reaving_header: "[ROOT.Char.Custom('reavingHeader')]"
- very_long_reaving_tt: "Bu #V olağanüstü uzun#! bir yağma!"
- long_reaving_tt: "Bu #V çok uzun# bir yağma!"
- medium_reaving_tt: "Bu #V uzun#! bir yağma!"
- short_reaving_tt: "Bu #V kısa#! bir yağma!"
-  
- reaving_return_home: "[start_location.GetNameNoTier]'a eve dönüyorum"
-  
-  # Generic reaving Start Events 
-  
- agot_reaving.0001.t: "[ROOT.Char.GetFaith.GetAdjectiveNoTooltip] Yağma"
- agot_reaving.0001.desc: "Uzun gemileri hazırlamanın ve Grönlandlıların çocuklarına benzerlerini fısıldayacağı Büyük Hasat'a doğru yola çıkmanın zamanı geldi. Peki samanı hangi tarladan toplayacağız?"
- agot_reaving.0001.a: "İhtilaflı Topraklar yağmaya hazır."
- agot_reaving.0001.b: "Kuzey Doğudiyar acı çekecek."
- agot_reaving.0001.c: "Yaz Denizi toprakları zayıftır."
- agot_reaving.0001.d: "Köle Körfezi'nde çok fazla ganimet var!"
- agot_reaving.0001.e: "Fikrimi değiştirdim. Şu an doğru zaman değil."
-  
- agot_reaving.0010.desc: "Neden sadece [other_host.GetTitledFirstNamePossessive] sarayına katılmak için davetimi kabul ettin? Bilmiyorum ama bunu hatırlayacağımı biliyorum."
- agot_reaving.0010.a: "Yazık."
-  
- #Reaving Invitations 
-  
- agot_reaving.1002.opening: "[sender.Custom2('AppropriateGreeting', ROOT.Char)]"
- agot_reaving.1002.opening_desc: "Sizleri [barony.GetNameNoTier]'daki sarayımda bir ziyafete davet ediyorum!"
- agot_reaving.1002.host_likes_me: "Katılımınızı umuyorum, aksi takdirde varlığınız çok özlenecek."
- agot_reaving.1002.host_gets_along_with_me: "Önemli bir [ROOT.Char.GetTitleTierName] olarak katılımınızdan onur duyarım."
- agot_reaving.1002.host_dislikes_me: "Herkesin orada olmasını bekliyorum, ki ne yazık ki sen de oradasın."
- agot_reaving.1002.a: "Elbette katılırım."
- agot_reaving.1002.b: "Katılacağım. İsteksizce."
- agot_reaving.1002.c: "Üzgünüm ama meşgulüm."
- agot_reaving.1002.d: "Hayır, reddediyorum!"
-  
- agot_reaving.1003.desc: "Sizleri [barony.GetNameNoTier]'da sarayımda yapılacak Büyük Yıkım'a davet ediyorum! Bu görkemli bir olay olacak ve sizin onurlu huzurunuza layık olacak."
- agot_reaving.1003.a: "Memnuniyetle."
- agot_reaving.1003.b: "Daha önemli işlerim var."
-  
- agot_reaving.1004.desc: "Sizleri [barony.GetNameNoTier]'daki sarayımda bir agot_reaving'e davet ediyorum! Muhteşem bir etkinlik olacak, lezzetli yemekler ve eğlenceler olacak."
- agot_reaving.1004.a: "Memnuniyetle."
- agot_reaving.1004.b: "Daha önemli işlerim var."
-  
-  
- agot_reaving.1008.t: "Büyük Yağma: Ayrılış"
- agot_reaving.1008.desc.opening: "Direk ve direklerden oluşan bir çalılık [ROOT.Char.GetCapitalLocation.GetName] limanını dolduruyor. Uzun gemilerden oluşan bu güçlü filonun mürettebatı, [ROOT.Char.GetFaith.GetAdjectiveNoTooltip]'in çağrısına cevap veren sadık ve cesur Demir Adamlar. Dar Deniz'in karşısındaki yeşil toprakları yağmalayarak kanlarındaki tuzu kanıtlama şansına can atıyorlar. \n\nBüyük [reaving|E]'den [ROOT.Char.Custom('ReavingDestination')]'e hazırlanırken, [ROOT.Char.GetFaith.PantheonTerm]'ün yelkenlerimizi dolduracağını ve kılıçlarımızı yönlendireceğini biliyorum."
- agot_reaving.1008.desc.short: "\n\nKan ve şanla örtünsek de, krallığın refahını ev halkıma bırakıyorum."
- agot_reaving.1008.desc.medium: "\n\nBen [ROOT.Char.GetFaith.HighGodNameAlternate] ile giderken, ne kadar süre uzakta olursam olayım, bölgemin beklemesi gerekiyor."
- agot_reaving.1008.desc.long: "\n\nVaracağım yer evimden çok uzakta, ama [ROOT.Char.GetFaith.DivineRealm]'a hizmet etmek için kendi krallığım bile beklemeli."
- agot_reaving.1008.desc.very_long: "\n\nUzun bir süreliğine uzakta olacağım ve yapabileceğim tek şey [ROOT.Char.GetFaith.HighGodNameAlternate]'ın benim diyarıma da göz kulak olması için dua etmek."
- agot_reaving.1008.a: "Demir Bedelini ödeyeceğiz."
-  
- agot_reaving.1009.t: "Sıcak bir karşılama"
- agot_reaving.1009.likes_host: "Tüm konuklar büyük salonda toplandı ve nazik ev sahibimiz [activity.GetOwner.GetTitledFirstName] hepimizi ziyafete davet etti!"
- agot_reaving.1009.dislikes_host: "Tüm konuklar büyük salonda toplandı ve [activity.GetOwner.Custom('InsultAdjective')] ev sahibimiz [activity.GetOwner.GetTitledFirstName], sonunda hepimizi ziyafete davet etti."
- agot_reaving.1009.a.gluttonous: "Mutfağın kokusu buradan geliyor!"
- agot_reaving.1009.a.drunkard: "Fıçılar nerede?"
- agot_reaving.1009.a.gregarious: "Herkesle konuşmak için sabırsızlanıyorum!"
- agot_reaving.1009.a.shy: "Burada çok insan var..."
- agot_reaving.1009.a: "Bunu sabırsızlıkla bekliyorum!"
- agot_reaving.1009.b: "Bunun benim zamanıma değeceğini düşünüyorum."
-  
- agot_reaving.2001.t: "Ölçek"
- agot_reaving.2001.desc: "Buzdağları"
-  
- ########################### 
- #   Crippled Ship:Cannibal# 
- ########################### 
- agot_reaving.2002.t: "Sakat Bir Gemi: Yamyam"
- agot_reaving.2002.desc: "Mürettebat ufukta yelkeni sakat bir gemi gördü. Gemiye yaklaştığımızda ölüm kokusu bizi karşıladı. Gemiye adım attığımda güvertede neler yaşandığını anladım ve parçalanmış bedenleri gördüm. Çaresiz adamlar çaresizce hareketler yapar, gemi sakatlandığında ve malzemeler tükenmeye başladığında adamlar birbirlerine saldırdı. Adamlarım ve ben değerli eşyalar için katliamın içinde bakmaya başladığımızda bir çığlık duyduk ve aç bir delinin bize doğru koştuğunu gördük, elinde kılıç vardı!"
- agot_reaving.2002.a: "Silahlanın!"
- agot_reaving.2002.a.tt: "Çelik'i çiz ve deli adamla yüzleş!"
- agot_reaving.2002.b: "Ne çılgınlık! Gemiye geri dönelim!"
- agot_reaving.2002.b.tt: "Hiçbir altın buna değmez!"
- agot_reaving.2002.a.success_title: "Öldürülen Yamyam"
- agot_reaving.2002.a.failure_title: "Kaçmaya Zorla!"
-  
- ################################ 
- # Crippled Ship:Captains Gamble# 
- ################################ 
- agot_reaving.2003.t: "Sakat Bir Gemi: Bir Kaptanın Kumarı"
- agot_reaving.2003.desc: "Mürettebat ufukta yelkeni sakat bir gemi gördü. Gemiye yaklaştığımızda, bekleyen bir adam ve mürettebatını gördük. Bizi sakat gemiye binmekten alıkoymak için hiçbir harekette bulunmadılar, bunun yerine gözlerini ortada duran bir adama diktiler. Hemen bunun onların Kaptanı olduğunu anladım. Kaptan yaklaştı ve gözlerimle buluştu. "Demirdoğumlu olduğunuzu ve bizi kurtarmak veya ihtiyaçlarımız için bizimle ticaret yapmak için burada olmadığınızı biliyorum. Bunun yerine bir teklif sunuyorum." Kaptan, geminin korkuluğundaki büyük bir sandığı kaldıraçlayan iki adama işaret etti ve sandığı denize atmakla tehdit etti. "Bu sandık gemideki tüm değerli eşyalarımızı tutuyor, bir zar oyunu oynamayı öneriyorum, sen kazanırsan sandığı alırsın, ben kazanırsam ekstra yelkenler ve erzak alırım...""
- agot_reaving.2003.a: "İkimizin arasında bir ikili olan Ironprice'ı ödeyeceğim"
- agot_reaving.2003.a.tt: "Kaptanla bizzat dövüş ve Hazinenin Demir Bedelini öde!"
- agot_reaving.2003.b: "Senin oyununu oynayacağım..."
- agot_reaving.2003.b.tt: "Kaptanla zar atacaksın, Kazanan her şeyi alsın!"
- agot_reaving.2003.c: "Fırtına Tanrısı tüm insanların düşmanıdır"
- agot_reaving.2003.c.tt: "Fırtına Tanrısı tüm insanların düşmanıdır, Boğulmuş Tanrı'nın oğullarının onun girişimlerini engellemek görevi değil midir? Onlara Fırtına Tanrısı'na inat ihtiyaç duydukları malzemeleri vereceksin!"
- agot_reaving.2003.a.success_title: "Kaptanı Öldürüp Hazineyi Kazandım!"
- agot_reaving.2003.a.failure_title: "Kaptan'a yenildin..."
- agot_reaving.2003.b.success_title: "Zar seni Kazanan yaptı!"
- agot_reaving.2003.b.failure_title: "Zarlar senin lehinde değildi..."
-  
-  ################################ 
- # Crippled Ship:IronBorn        # 
- ################################ 
- agot_reaving.2004.t: "Sakat Bir Gemi: Demirdoğumlular"
- agot_reaving.2004.desc: "Mürettebat ufukta yelkeni sakat bir gemi gördü. Yaklaştığımızda içimiz burkuldu ve bunun bir Ironborn gemisi olduğunu gördük! Mürettebat erzak vermeyi ve kardeşlerimizin kıyıya ulaşabilmeleri için gemilerini yamamalarına yardım etmeyi tartışıyor."
- agot_reaving.2004.a: "Malzeme katkıda bulunacağım"
- agot_reaving.2004.a.tt: "Kardeşlerinize yardım etmek için erzak veya ganimet gibi bazı malzemelerinizi vereceksiniz."
- agot_reaving.2004.b: "Benden hiçbir şey alamayacaklar"
- agot_reaving.2004.b.tt: "Benim olanı neden vereyim, onlar daha hazırlıklı olmalıydı!"
-  
-  
- ########################### 
- #   Empty Village         # 
- ########################### 
-  
- agot_reaving.2005.t: "Boş Bir Köy"
- agot_reaving.2005.desc: "Gece karanlığında, kürekleri susturarak küçük kıyı köyüne ulaştık. İnişimizin fark edilmemesine sevinmiştik, sonra nedenini fark ettik. Köy boştu. Değerli eşyaların bozulmadan bırakıldığı köyün görüntüsü bazı adamlarım için rahatsız ediciydi, diğerleri ise soru sormadan dolaşıp yağmaladılar. Köyün kenarında adamlardan biri büyük bir çukur buldu, içinde Köylülerin cesetleri vardı, yüzleri hastalıktan çarpılmıştı."
- agot_reaving.2005.a: "Altın riske değer..."
- agot_reaving.2005.a.tt: "Ölünün buna ihtiyacı yok, neden almasın ki?"
- agot_reaving.2005.b: "Yağmayı bırakın ve gidin."
- agot_reaving.2005.b.tt: "Hayatınız hiçbir altın değerinde değil..."
-  
- ########################### 
- #  Village: Sacrifice     # 
- ########################### 
-  
- agot_reaving.2006.t: "Köy: Kurban"
- agot_reaving.2006.desc: "Gece karanlığında, kürekleri susturarak küçük sahil köyüne ulaştık. Yaklaşmamız fark edilmemişti çünkü köy bir etkinliği kutluyordu. Kahkahalar, şarkılar duyabiliyor ve yanan birkaç odun yığınının ışığını görebiliyorduk. Biz Demirdoğumlular kutlamanın ortasına daldığımızda, odun yığınlarının ne olduğunu gördüm. Üçü bir zamanlar bir insanın kömürleşmiş kalıntılarıyla yanıyordu, dördüncüsü yakılmamıştı ve bir kadın bir ağacın gövdesine bağlanmış, ayaklarının etrafında bu ateş tanrısına yakacak ve değerli adaklar bırakıyordu. Festivale gelenlerin çoğu kaçmaya çalışıyordu, bazıları silahlanmıştı, çoğunlukla Kırmızı Cüppe giyenler. Kırmızı Cüppelilerden biri bir silah kapmış ve yakılması gereken kadını koruyor gibiydi..."
- agot_reaving.2006.a: "Elimden geldiğince değerli eşyalarımı arayacağım!"
- agot_reaving.2006.a.tt: "Kadına değil, altına önem veriyorum!"
- agot_reaving.2006.b: "Kadını serbest bırakacağım!"
- agot_reaving.2006.b.tt: "Kadını serbest bırakacağım ve onu tuz karım olarak alacağım!"
- agot_reaving.2006.a.success_title: "Kızıl rahibi öldürdü ve altına karşılık demir bedelini ödedi!"
- agot_reaving.2006.a.failure_title: "Kızıl rahip seni kaçmaya zorladı..."
- agot_reaving.2006.b.success_title: "Kızıl rahibi öldürüp kadının demir bedelini ödedi!"
- agot_reaving.2006.b.failure_title: "Kızıl rahip seni kaçmaya zorladı..."
-  
- ################## 
- #The Leviathan   # 
- ################## 
-  
- agot_reaving.2007.t: "Leviathan: Saldırı"
- agot_reaving.2007.desc: "Adamlar son birkaç gündür bizi takip eden büyük bir balina gördüler. Canavar mesafesini korudu, ancak adamlar yüzeye çıktığında üzerinde yara izleri görebildiklerini söylüyorlar. Acaba balina Ibben gemilerinin saldırılarından sağ kurtuldu mu? Bu düşünce bende uzun süredir yoktu, canavar saldırmaya karar verdiğinde. Adamlar ve ben kendimizi silahlandırmak ve canavarı aşağı indirmek veya gemimizi batırmadan önce onu uzaklaştırmak için çabalıyoruz!"
- agot_reaving.2007.a: "Lanet olsun o Ibbenli balinacılara!"
- agot_reaving.2007.a.tt: "Canavar artık av olmadığına karar verdi ve geminizi bir Ibben Balina Avcısı sanarak saldırıya geçti!"
-  
-  
- ########################### 
- #  Pursuit: Ibbenese      # 
- ########################### 
-  
- agot_reaving.2008.t: "Takipçi: İbbenli"
- agot_reaving.2008.desc: "Gemiyi görmeden önce kokusunu alabiliyorduk. Önümüzde bir İbbenli Balina Gemisi vardı, adamlar peşimizden gelip gelmememiz konusunda karışıktı. Bazıları baskın yapmaya değmeyeceğini düşündü, diğerleri ise sıkılmış ya da kavga etmek için can atıyor gibi görünüyordu, sonuçta böyle bir gemiyi yakalamak kolay olurdu. Adamlar nasıl davranacağımıza karar vermem için bana bakıyorlardı."
- agot_reaving.2008.a: "Duraklar, onu yakalayacağız!"
- agot_reaving.2008.a.tt: "Altın Altındır ve Demirfiyatını ödeyeceğiz!"
- agot_reaving.2008.b: "Kokusuna değmez..."
- agot_reaving.2008.b.tt: "Böyle bir koku bir süre sizin ve ekibinizin üzerinde kalacaktır..."
-  
- ########################### 
- #   No Wind               # 
- ########################### 
-  
- agot_reaving.2009.t: "Rüzgarsız Bir Gün"
- agot_reaving.2009.desc: "Bugün yelkenlerimiz rüzgardan söndü, bizi sürüklenmekten biraz daha fazlasına sürükledi. Adamlar gemi güvertesinde dolaşıp, sakin suların monotonluğuyla savaşmanın yollarını arıyor, bazıları "Parmak Dansı" oynamaya başladı, diğerleri ise zarlara bahis koymaya başladı."
- agot_reaving.2009.a: "Herkes bir Küreğe! Fırtına Tanrısı bizi Yırtmaktan alıkoyamayacak"
- agot_reaving.2009.a.tt: "Rüzgar hızınızı çalamaz! Kıyılar ve yağmalanacak ganimet var..."
- agot_reaving.2009.b: "Parmaklı herhangi bir erkek kadar iyi dans edebilirim"
- agot_reaving.2009.b.tt: "Demir Adalar'da sevilen ama tehlikeli bir balta atma oyunu."
- agot_reaving.2009.c: "Belki zarla şansım yaver gider"
- agot_reaving.2009.c.tt: "Altınınızı kumarda riske atın!"
- agot_reaving.2009.a.success_title: "Parmak Dansı'nda kazandın!"
- agot_reaving.2009.a.failure_title: "Balta ellerinin arasından kaydı..."
- agot_reaving.2009.b.success_title: "Zarlar senin lehine çıktı!"
- agot_reaving.2009.b.failure_title: "Zarlar nazik değildi..."
-  
- ########################### 
- #  Pursuit: Pentoshi Ship # 
- ########################### 
-  
- agot_reaving.2010.t: "Takip: Pentoslu Gemisi"
- agot_reaving.2010.desc: "Adamlar tarafından bir Pentoslu Gemisi görüldü Rüzgarlar bizim lehimize ve dolu bir kargodan dolayı yavaş görünüyor. Pentos'un bildiği ve geminin taşıyabileceği Peynirleri ve Soluk Amber Şaraplarını düşününce ağzım sulanıyor."
- agot_reaving.2010.a: "Duraklar, onu yakalayacağız!"
- agot_reaving.2010.a.tt: "Gemiyi kovalamaya başlayın! Sonuçta siz Deniz Kurtlarısınız!"
- agot_reaving.2010.b: "Zamanımıza değmez"
- agot_reaving.2010.b.tt: "Daha iyi bir oyun var."
- agot_reaving.2010.a.success_title: "Gemiyi Yakaladın!"
- agot_reaving.2010.a.failure_title: "Gemi kaçtı..."
-  
-  
-  
- ########################### 
- #  Pursuit: Lys Ship # 
- ########################### 
- agot_reaving.2011.t: "Takip: Lys Gemisi"
- agot_reaving.2011.desc: "Ufukta bir Lys gemisi görüldü. Böyle bir gemi değerli eşyalar ve belki de memleketinin yastık evleri için köleler taşıyor olabilir. Adamlar takip edip etmeyeceğimize karar vermek için bana bakıyorlar."
- agot_reaving.2011.a: "Ben bir tuz karısı edinmeyi düşünüyorum!"
- agot_reaving.2011.a.tt: "Gemiyi kovalamaya başlayın! Sonuçta siz Deniz Kurtlarısınız!"
- agot_reaving.2011.b: "Duraklar, onu yakalayacağız!"
- agot_reaving.2011.b.tt: "Gemiyi kovalamaya başlayın! Sonuçta siz Deniz Kurtlarısınız!"
- agot_reaving.2011.c: "Zamanımıza değmez"
- agot_reaving.2011.c.tt: "Daha iyi bir oyun var."
- agot_reaving.2011.a.success_title: "Gemiye binip tuzdan bir eş aldın!"
- agot_reaving.2011.a.failure_title: "Gemi kaçtı..."
- agot_reaving.2011.b.success_title: "Gemiyi yakaladın!"
- agot_reaving.2011.b.failure_title: "Gemi kaçtı..."
-  
- ########################### 
- #  Tyroshi War Gallon     # 
- ########################### 
- agot_reaving.2012.t: "Tyroshi Savaş Galonu"
- agot_reaving.2012.desc: "Bir Tyroshi Savaş Galonu görüldü, şüphesiz Basamak Taşları'ndaki ticaret yollarında sorun çıkaran bir korsan lordunu temizlemek için yola çıkmıştı."
- agot_reaving.2012.a: "Acaba Blades'lerimizi onlara satabilir miyiz?"
- agot_reaving.2012.a.tt: "Tyrosh'lular için Paralı Asker olarak çalışmayı teklif edin, bazıları sizi küçümseyebilir ama altın kazanabilirsiniz!"
- agot_reaving.2012.b: "Bunlardan uzak durmak en iyisidir."
- agot_reaving.2012.b.tt: "Onlarla karşılaşmaktan hiçbir hayır çıkmaz..."
- agot_reaving.2012.a.success_title: "Paralı Asker Olarak Çalışmak"
- agot_reaving.2012.a.failure_title: "Teklif reddedildi..."
-  
- ########################### 
- #   Fishing Village       # 
- ########################### 
- agot_reaving.2013.t: "Küçük Balıkçı Köyü"
- agot_reaving.2013.desc: "Küçük bir Balıkçı Köyü'ne baskın düzenledik, kıyıya çıktığımızda bize karşı hiçbir direniş olmadı. Çoğu kaçmaya ve saklanmaya çalıştı, birkaçı biraz mücadele etti, ancak eğitilmemişlerdi ve hemen düştüler. Alınan ganimet azdı."
- agot_reaving.2013.a: "Burada ne altın var?"
- agot_reaving.2013.a.tt: "Burada değerli şeyler olmalı..."
- agot_reaving.2013.b: "O benim tuz karım olacak."
- agot_reaving.2013.b.tt: "İyi bir tuz karısı olacak."
- agot_reaving.2013.c: "O benim tuz karım olacak."
- agot_reaving.2013.c.tt: "İyi bir tuz karısı olacak."
- agot_reaving.2013.d: "O benim tuz karım olacak."
- agot_reaving.2013.d.tt: "İyi bir tuz karısı olacak."
-  
- ########################### 
- #   Pirate Hide Out        # 
- ########################### 
- agot_reaving.2014.t: "Küçük Korsan Sığınağı"
- agot_reaving.2014.desc: "Basamak Taşları'nda küçük bir Korsan lordunun saklandığı yere rastladık. Biz onlardan daha iyi silahlanmış olsak da, onlar kıyı şeridindeki müstahkem bir mağarada dayandılar. Bir hücuma öncülük edip savunmayı kırabilir veya belki birkaç adam sokup bir yol açabiliriz"
- agot_reaving.2014.a: "İçeriye girmek için savaşmamız gerekecek!"
- agot_reaving.2014.a.tt: "Mağaranın surlarına doğru hücum edin, silahlarınızın gücüyle onu yıkmaya çalışın!"
- agot_reaving.2014.b: "Belki de gizlilik en iyi seçeneğimizdir..."
- agot_reaving.2014.b.tt: "Başka bir giriş yolu olmalı..."
- agot_reaving.2014.a.success_title: "Korsan Sığınağına Girdik!!"
- agot_reaving.2014.a.failure_title: "İçeri giremedik... Geri döneceğiz!"
- agot_reaving.2014.b.success_title: "Bir yol buldum!"
- agot_reaving.2014.b.failure_title: "Başka yol bulamadık.. Geri döneceğiz!"
-  
-  ########################### 
- #   A Meal for the Crabs   # 
- ########################### 
- agot_reaving.2015.t: "Yengeçler İçin Bir Yemek"
- agot_reaving.2015.desc: "Yardım çağrıları, bölgeye Merling Kralı Mızrakları adını kazandıran denizden fışkıran taş kütleye dikkatimizi çekti. Bu taş mızraklardan birinin üzerinde mahsur kalmış bir adam vardı, pozisyonlarımızdan bile yengeçlerin onu istila etmeye çalıştığını anlayabiliyordum. İlk düşüncem onun bir gemi kazasından kurtulan olduğuydu, ancak bir diğer mürettebat üyesi adamın aslında taşa bağlı olduğunu ve işlediği her ne suç varsa bunun iğrenç bir suç olması gerektiğini söyledi."
- agot_reaving.2015.a: "Mürettebat arkadaşım haklı, aptalı bırakmak en iyisi"
- agot_reaving.2015.a.tt: "Birisi bu adama acımasızca bir ölüm vermek için çabalamış, bunu hak eden nasıl bir adamdır, ben bunu istemem."
- agot_reaving.2015.b: "Adamı kurtaracağım"
- agot_reaving.2015.b.tt: "Adamı yengeçlerin yemeği olmaktan kurtaracağım, bana hayatını borçlu olacak!"
-  
- ########################### 
- #  A Ironborn in Need     # 
- ########################### 
- agot_reaving.2016.t: "Muhtaç Bir Demirdoğumlu"
- agot_reaving.2016.desc: "Bir köyü yağmalarken bir mızrakçı adamlarımızdan birine sert bir şekilde baskı yapıyordu ve durumun sonu pek iyi görünmüyordu. Mızrakçı tamamen Demirdoğumlu'ya odaklanmış durumda ve bana açık bir açıklığı var, bu hızlı bir ölüm olurdu."
- agot_reaving.2016.a: "Adama saldır"
- agot_reaving.2016.a.tt: "Hızlı bir saldırı mızrakçıların baskısını kıracak ve Demirdoğumlu dostlarınızın toparlanmasını sağlayacaktır."
-  
- ################################### 
- #    Shieldmaiden in Disguise     # 
- #             Badger              # 
- ################################### 
- agot_reaving.2017.t: "Yıkım: [GetTrait('shieldmaiden').GetName(GetNullCharacter)]"
- agot_reaving.2017.desc: "Açık denizdeki son karşılaşmadan bu yana günler geçti ve ana güvertede arbede çıktı. Gürültüyü kontrol altına aldığınızda, gürültü konusu etrafında bir çember oluştu.\n\n "[shieldmaiden.GetName], bu süre boyunca [shieldmaiden.GetWomanMan]'di, Kaptan!" Mürettebatınızdan biri, [shieldmaiden.GetWomanMan], mürettebatı uzak tutmak için [shieldmaiden.GetHerHim]'ün etrafında bir biniş baltası savururken homurdandı. [shieldmaiden.GetSheHe]'ün silahı, bir kaçak yolcudan bekleyeceğiniz becerinin ötesinde akıcı bir şekilde kullandığı açıktı.\n\n"[ROOT.Char.GetTitledFirstName]," diyor [shieldmaiden.GetSheHe]. "Hayatım boyunca Demir Bedelini ödemek için eğitildim ve sadece size hizmet etmek ve Boğulmuş Tanrı'nın iyiliğini kazanmak istiyorum. Lütfen bu büyük çabada size katılmama izin verin!""
- agot_reaving.2017.a: "Bir sonraki baskınımızda [GetTrait('shieldmaiden').GetName(GetNullCharacter)] iyi bir arkadaş olacak!"
- agot_reaving.2017.b: "Hiçbir kadının benim için dövüşmesine izin vermeyeceğim."
- agot_reaving.2017.c: "Boğulmuş Tanrı'ya başka bir şekilde hizmet edebilirsiniz."
- agot_reaving.2017.d: "Belki benimle kamaramda buluşabilirsin... ve zırhını giymeye devam edebilirsin."
-  
-  
- ################################ 
- # Return Events 
- # 9001-9999 
- # by Badger 
- ################################ 
-  
- agot_reaving.9002.t: "Harika Bir Dönüş"
- agot_reaving.9002.desc: ""
- agot_reaving.9002.a: "Biz gerçek demirdoğumluyuz"
-  
-  
-  
+#mustafa
+activity_reaving:0 "Yağma"
+activity_reaving_owner:0 "Yağmacı"
+activity_reaving_name:0 "Büyük Yağma"
+reaving_header:0 "[ROOT.Char.Custom('reavingHeader')]"
+very_long_reaving_tt:0 "Bu #V olağanüstü uzunlukta#! bir yağma"
+long_reaving_tt:0 "Bu #V çok uzun#! bir yağma"
+medium_reaving_tt:0 "Bu #V uzun#! bir yağma"
+short_reaving_tt:0 "Bu #V kısa#! bir yağma"
+
+reaving_return_home:0 "[start_location.GetNameNoTier]'e eve dönüyorum"
+
+# Generic reaving Start Events
+
+agot_reaving.0001.t:0 "[ROOT.Char.GetFaith.GetAdjectiveNoTooltip] Yağması"
+agot_reaving.0001.desc:0 "Uzun gemileri hazırlama ve yeşil topraklıların çocuklarına fısıldayacağı türden bir Büyük Yağma'ya çıkma zamanı geldi. Ama hangi tarladan samanı biçeceğiz?"
+agot_reaving.0001.a:0 "İhtilaftaki Topraklar yağmalamak için olgunlaşmış."
+agot_reaving.0001.b:0 "Kuzey Essos acı çekecek."
+agot_reaving.0001.c:0 "Yaz Denizi toprakları zayıf."
+agot_reaving.0001.d:0 "Köle Körfezi'nde çok ganimet var!"
+agot_reaving.0001.e:0 "Fikrimi değiştirdim. Şimdi uygun zaman değil."
+
+agot_reaving.0010.desc:0 "Davetimi neden sadece [other_host.GetTitledFirstNamePossessive]'nin sarayına katılmak için kabul ettiğini bilmiyorum ama bunu hatırlayacağımı bil."
+agot_reaving.0010.a:0 "Talihsiz."
+
+#Reaving Invitations 
+
+agot_reaving.1002.opening:0 "[sender.Custom2('AppropriateGreeting', ROOT.Char)]"
+agot_reaving.1002.opening_desc:0 "Seni [barony.GetNameNoTier]'deki sarayımda vereceğim bir ziyafete davet ediyorum!"
+agot_reaving.1002.host_likes_me:0 "Umarım katılırsın, çünkü aksi takdirde varlığın çok özlenecek."
+agot_reaving.1002.host_gets_along_with_me:0 "Önemli bir [ROOT.Char.GetTitleTierName] olarak, katılımınız beni onurlandıracaktır."
+agot_reaving.1002.host_dislikes_me:0 "Önemli herkesin orada olmasını bekliyorum, bu da maalesef seni de kapsıyor."
+agot_reaving.1002.a:0 "Elbette katılacağım."
+agot_reaving.1002.b:0 "Katılacağım. İsteksizce de olsa."
+agot_reaving.1002.c:0 "Maalesef meşgul olduğumu söylemek zorundayım."
+agot_reaving.1002.d:0 "Hayır, reddediyorum!"
+
+agot_reaving.1003.desc:0 "Seni [barony.GetNameNoTier]'deki sarayımda düzenlenecek Büyük Yağma'ya davet ediyorum! Saygıdeğer varlığınıza layık, büyük bir olay olacak."
+agot_reaving.1003.a:0 "Memnuniyetle."
+agot_reaving.1003.b:0 "Katılmam gereken daha önemli işlerim var."
+
+agot_reaving.1004.desc:0 "Seni [barony.GetNameNoTier]'deki sarayımda düzenlenecek yağmaya davet ediyorum! Lezzetli yiyecekler ve eğlencelerle dolu, büyük bir olay olacak."
+agot_reaving.1004.a:0 "Memnuniyetle."
+agot_reaving.1004.b:0 "Katılmam gereken daha önemli işlerim var."
+
+
+agot_reaving.1008.t:0 "Büyük Yağma: Kalkış"
+agot_reaving.1008.desc.opening:0 "[ROOT.Char.GetCapitalLocation.GetName] limanını bir direk ve seren kalabalığı dolduruyor. Bu güçlü uzun gemi filosu, [ROOT.Char.GetFaith.GetAdjectiveNoTooltip]'in çağrısına cevap veren sadık ve cesur Demir Adamlar tarafından yönetiliyor. Dar Deniz'in karşısındaki yeşil toprakları yağmalayarak kanlarındaki tuzu kanıtlama şansına can atıyorlar. \n\n[ROOT.Char.Custom('ReavingDestination')]'a yapılacak Büyük [reaving|E]'ye hazırlanırken, [ROOT.Char.GetFaith.PantheonTerm]'in yelkenlerimizi dolduracağını ve kılıçlarımıza rehberlik edeceğini biliyorum."
+agot_reaving.1008.desc.short:0 "\n\nKendimizi kan ve zaferle örterken, diyarın refahını ev halkıma bırakıyorum."
+agot_reaving.1008.desc.medium:0 "\n\n[ROOT.Char.GetFaith.HighGodNameAlternate] ile giderken, diyarım ne kadar uzun olursa olsun beklemek zorunda."
+agot_reaving.1008.desc.long:0 "\n\nHedefim evimden uzakta, ancak [ROOT.Char.GetFaith.DivineRealm]'e hizmet ederken, kendi diyarım bile beklemek zorunda."
+agot_reaving.1008.desc.very_long:0 "\n\nUzun süre uzakta kalacağım ve sadece [ROOT.Char.GetFaith.HighGodNameAlternate]'in diyarımı da koruması için dua edebilirim."
+agot_reaving.1008.a:0 "Demir Bedeli'ni ödeyeceğiz."
+
+agot_reaving.1009.t:0 "Sıcak bir Karşılama"
+agot_reaving.1009.likes_host:0 "Tüm konuklar büyük salonda toplandı ve cömert ev sahibimiz [activity.GetOwner.GetTitledFirstName] hepimizi ziyafete davet etti!"
+agot_reaving.1009.dislikes_host:0 "Tüm konuklar büyük salonda toplandı ve [activity.GetOwner.Custom('InsultAdjective')] ev sahibimiz [activity.GetOwner.GetTitledFirstName] sonunda hepimizi ziyafete davet etti."
+agot_reaving.1009.a.gluttonous:0 "Mutfağın kokusunu buradan alabiliyorum!"
+agot_reaving.1009.a.drunkard:0 "Fıçılar nerede!"
+agot_reaving.1009.a.gregarious:0 "Herkesle konuşmak için sabırsızlanıyorum!"
+agot_reaving.1009.a.shy:0 "Burada çok insan var..."
+agot_reaving.1009.a:0 "Bunu dört gözle bekliyorum!"
+agot_reaving.1009.b:0 "Umarım zamanıma değer."
+
+agot_reaving.2001.t:0 "Test"
+agot_reaving.2001.desc:0 "Buzdağları"
+
+###########################
+#   Crippled Ship:Cannibal#
+###########################
+agot_reaving.2002.t:0 "Sakat Gemi: Yamyam"
+agot_reaving.2002.desc:0 "Mürettebat ufukta yelkeni sakatlanmış bir gemi gördü. Gemiye yaklaşırken bizi ölüm kokusu karşıladı. Güverteye adım attığımda neler olduğunu anladım ve parçalanmış bedenleri gördüm. Çaresiz adamlar çaresiz hareketler yapar, gemi sakatlanıp erzaklar azalmaya başlayınca adamlar birbirlerine saldırdı. Adamlarımla birlikte değerli eşyalar aramak için cesetleri karıştırmaya başladığımızda bir çığlık duyduk ve elinde kılıçla bize doğru koşan açlıktan delirmiş bir adam gördük!"
+agot_reaving.2002.a:0 "Silahlanın!"
+agot_reaving.2002.a.tt:0 "Çeliği çekin ve deli adamla yüzleşin!"
+agot_reaving.2002.b:0 "Ne delilik! Gemiye geri dönün!"
+agot_reaving.2002.b.tt:0 "Hiçbir altın buna değmez!"
+agot_reaving.2002.a.success_title:0 "Yamyam Öldürüldü"
+agot_reaving.2002.a.failure_title:0 "Kaçmak Zorunda Kaldık!"
+
+################################
+# Crippled Ship:Captains Gamble#
+################################
+agot_reaving.2003.t:0 "Sakat Gemi: Kaptanın Kumarı"
+agot_reaving.2003.desc:0 "Mürettebat ufukta yelkeni sakatlanmış bir gemi gördü. Gemiye yaklaştıkça, bekleyen bir adam ve mürettebatını gördük. Sakat gemiye binmemizi engellemek için hiçbir hamlede bulunmadılar, bunun yerine gözlerini ortadaki bir adama diktiler. Onun Kaptanları olduğunu hemen anladım. Kaptan yaklaştı ve gözlerimin içine baktı \"Demirdoğumlu olduğunuzu ve bizi kurtarmak veya ihtiyacımız olan şeyleri takas etmek için burada olmadığınızı biliyorum. Bunun yerine bir teklifte bulunuyorum.\" Kaptan, geminin korkuluğunda büyük bir sandığı kaldıran iki adama işaret etti ve denize atmakla tehdit etti. \"O sandık gemideki tüm değerli eşyalarımızı içeriyor, zar atma oyunu oynamamızı öneriyorum, kazanırsan sandığı alırsın, kazanırsam fazladan yelken ve erzak alırım...\""
+agot_reaving.2003.a:0 "Demir Bedeli'ni ödeyeceğim, ikimiz arasında bir düello"
+agot_reaving.2003.a.tt:0 "Kaptanla kendin savaş ve hazine için Demir Bedeli'ni öde!"
+agot_reaving.2003.b:0 "Oyununu oynayacağım..."
+agot_reaving.2003.b.tt:0 "Kaptanla zar atacaksın, kazanan hepsini alsın!"
+agot_reaving.2003.c:0 "Fırtına Tanrısı tüm insanların düşmanıdır"
+agot_reaving.2003.c.tt:0 "Fırtına Tanrısı tüm insanların düşmanıdır, Boğulmuş Tanrı'nın oğullarının onun girişimlerini engellemek görevi değil midir? Onlara Fırtına Tanrısı'na karşı koymak için gereken malzemeleri vereceksiniz!"
+agot_reaving.2003.a.success_title:0 "Kaptanı Öldürdük ve Hazineyi Kazandık!"
+agot_reaving.2003.a.failure_title:0 "Kaptana yenildin..."
+agot_reaving.2003.b.success_title:0 "Zarlar seni kazanan yaptı!"
+agot_reaving.2003.b.failure_title:0 "Zarlar senin lehine değildi..."
+ 
+################################
+# Crippled Ship:IronBorn        #
+################################
+agot_reaving.2004.t:0 "Sakat Gemi: Demirdoğumlu"
+agot_reaving.2004.desc:0 "Mürettebat ufukta yelkeni sakatlanmış bir gemi gördü. Yaklaştıkça ve bunun bir Demirdoğumlu gemisi olduğunu gördükçe içimiz burkuldu! Mürettebat, kardeşlerimize kıyıya ulaşabilmeleri için erzak vermek ve gemilerini onarmaya yardım etmek konusunda tartışıyor."
+agot_reaving.2004.a:0 "Erzak katkıda bulunacağım"
+agot_reaving.2004.a.tt:0 "Kardeşlerinize yardım etmek için erzak veya ganimet gibi malzemelerinizden bazılarını vereceksiniz."
+agot_reaving.2004.b:0 "Benden hiçbir şey alamayacaklar"
+agot_reaving.2004.b.tt:0 "Neden benim olanı vereyim ki, daha iyi hazırlanmış olmaları gerekirdi!"
+
+
+###########################
+#   Empty Village         #
+###########################
+
+agot_reaving.2005.t:0 "Boş Köy"
+agot_reaving.2005.desc:0 "Gece karanlığında, susturulmuş küreklerle küçük bir sahil köyüne çıktık. Karaya çıkışımızın fark edilmemiş olmasına sevindik, sonra nedenini anladıkça içimize bir ürperti düştü. Köy boştu. Değerli eşyaların olduğu gibi bırakıldığı köyün görüntüsü adamlarımdan bazılarını huzursuz etti, diğerleri ise sorgulamadan yağmalamaya başladı. Köyün kenarında adamlardan biri büyük bir çukur buldu, içinde köylülerin cesetleri vardı, yüzleri hastalıktan çarpılmıştı."
+agot_reaving.2005.a:0 "Altın riske değer..."
+agot_reaving.2005.a.tt:0 "Ölülerin buna ihtiyacı yok, neden almayasın ki?"
+agot_reaving.2005.b:0 "Yağmalamayı bırakın ve gidin."
+agot_reaving.2005.b.tt:0 "Hayatınız hiçbir miktarda altına değmez..."
+
+###########################
+#  Village: Sacrifice     #
+###########################
+
+agot_reaving.2006.t:0 "Köy: Kurban"
+agot_reaving.2006.desc:0 "Gece karanlığında, susturulmuş küreklerle küçük bir sahil köyüne çıktık. Köy bir etkinlik kutladığı için yaklaşmamız fark edilmedi. Kahkahalar, şarkılar duyabiliyor ve yanan birkaç odun yığınının ışığını görebiliyorduk. Biz Demirdoğumlular kutlamanın ortasına doğru hücum ederken, odun yığınlarının ne olduğunu gördüm. Üçü bir zamanlar insan olanların kömürleşmiş kalıntılarıyla alev alev yanıyordu, dördüncüsü ise bir ağaca bağlı bir kadınla yanmıyordu, ayaklarının etrafında çıra ve bu ateş tanrısına değerli adaklar vardı. Festival katılımcılarının çoğu kaçmaya çalıştı, bazıları kendilerini silahlandırdı, çoğunlukla Kırmızı Cüppe giyenler. Kırmızı Cüppelerden biri bir silah kapıp yakılmak üzere olan kadını koruyor gibiydi..."
+agot_reaving.2006.a:0 "Alabildiğim kadar değerli eşya arayacağım!"
+agot_reaving.2006.a.tt:0 "Kadını umursamıyorum ama altını umursarım!"
+agot_reaving.2006.b:0 "Kadını kurtaracağım!"
+agot_reaving.2006.b.tt:0 "Kadını kurtaracağım ve onu tuz karım olarak alacağım!"
+agot_reaving.2006.a.success_title:0 "Kırmızı rahibi öldürdük ve altın için demir bedelini ödedik!"
+agot_reaving.2006.a.failure_title:0 "Kırmızı rahip seni kaçmaya zorladı..."
+agot_reaving.2006.b.success_title:0 "Kırmızı rahibi öldürdük ve kadın için demir bedelini ödedik!"
+agot_reaving.2006.b.failure_title:0 "Kırmızı rahip seni kaçmaya zorladı..."
+
+##################
+#The Leviathan   #
+##################
+
+agot_reaving.2007.t:0 "Leviathan: Saldırı"
+agot_reaving.2007.desc:0 "Adamlar son birkaç gündür bizi takip eden büyük bir balina gördüler. Canavar mesafeli durdu, ancak adamlar yüzeye çıktığında üzerinde yaralar görebildiklerini söylüyorlar. Acaba balina Ibbenli gemilerinin saldırılarından sağ kurtulmuş olabilir mi? Bu düşünce uzun süre aklımdan çıkmadı, ta ki canavar saldırmaya karar verene kadar. Adamlarla birlikte kendimizi silahlandırmaya ve canavarı gemimizi batırmadan önce alt etmeye veya uzaklaştırmaya çalışıyoruz!"
+agot_reaving.2007.a:0 "Kahretsin o Ibbenli Balina Avcıları'nı!"
+agot_reaving.2007.a.tt:0 "Canavar artık av olmadığına karar verdi ve gemimizi bir Ibbenli Balina Avcısı sanarak saldırdı!"
+
+
+###########################
+#  Pursuit: Ibbenese      #
+###########################
+
+agot_reaving.2008.t:0 "Takip: Ibbenli"
+agot_reaving.2008.desc:0 "Gemiyi görmeden önce kokusunu aldık. Önümüzde bir Ibbenli Balina Avcısı gemisi vardı, adamlar takip edip etmememiz konusunda kararsızdı. Bazıları yağmalamaya değmeyeceğini düşünürken, diğerleri sıkılmış ya da kavgaya susamış gibiydi, sonuçta böyle bir gemiyi yakalamak kolay olurdu. Adamlar nasıl davranacağımıza karar vermemi bekliyor."
+agot_reaving.2008.a:0 "Yerlerinize, onu yakalayacağız!"
+agot_reaving.2008.a.tt:0 "Altın altındır ve Demir Bedeli'ni ödeyeceğiz!"
+agot_reaving.2008.b:0 "Kokusuna değmez..."
+agot_reaving.2008.b.tt:0 "Böyle bir koku size ve mürettebatınıza bir süre yapışır...."
+
+###########################
+#   No Wind               #
+###########################
+
+agot_reaving.2009.t:0 "Rüzgarsız Bir Gün"
+agot_reaving.2009.desc:0 "Bugün rüzgarlar yelkenlerimizi terk etti ve bizi sürüklenmekten biraz daha fazlasını yapmaya bıraktı. Adamlar geminin güvertesinde dolaşıyor, sakin suların monotonluğuyla savaşmanın yollarını arıyor, bazıları \"Parmak Dansı\" oynamaya başladı, bazıları da zarlara bahis oynamaya başladı."
+agot_reaving.2009.a:0 "Herkes küreklere! Fırtına Tanrısı bizi yağmalamamızı engelleyemeyecek"
+agot_reaving.2009.a.tt:0 "Rüzgar hızınızı çalmayacak! Yağmalanacak kıyılar ve ganimetler var..."
+agot_reaving.2009.b:0 "Ben de Parmak Dansı'nı her adam kadar iyi dans edebilirim"
+agot_reaving.2009.b.tt:0 "Demir Adaları'nda sevilen ancak tehlikeli olan balta fırlatma oyunu."
+agot_reaving.2009.c:0 "Belki zarlarda şansım yaver gider"
+agot_reaving.2009.c.tt:0 "Kumar oynayarak altınınızı riske atın!"
+agot_reaving.2009.a.success_title:0 "Parmak Dansı'nda kazandın!"
+agot_reaving.2009.a.failure_title:0 "Balta elinden kaydı..."
+agot_reaving.2009.b.success_title:0 "Zarlar senin lehineydi!"
+agot_reaving.2009.b.failure_title:0 "Zarlar nazik davranmadı..."
+
+###########################
+#  Pursuit: Pentoshi Ship #
+###########################
+
+agot_reaving.2010.t:0 "Takip: Pentoslu Gemi"
+agot_reaving.2010.desc:0 "Adamlar tarafından bir Pentoslu gemisi görüldü. Rüzgarlar bizim lehimize ve dolu bir kargodan dolayı yavaş görünüyor. Pentos'a özgü peynirleri ve Soluk Kehribar Şarabı'nın geminin ambarında olacağını düşünerek ağzım sulandı."
+agot_reaving.2010.a:0 "Yerlerinize, onu yakalayacağız!"
+agot_reaving.2010.a.tt:0 "Gemiyi kovalamaya başlayın! Sonuçta siz Deniz Kurtları'sınız!"
+agot_reaving.2010.b:0 "Zamanımıza değmez"
+agot_reaving.2010.b.tt:0 "Dışarıda daha iyi avlar var.."
+agot_reaving.2010.a.success_title:0 "Gemiyi Yakaladınız!"
+agot_reaving.2010.a.failure_title:0 "Gemi kaçtı..."
+
+
+
+###########################
+#  Pursuit: Lys Ship #
+###########################
+agot_reaving.2011.t:0 "Takip: Lys Gemisi"
+agot_reaving.2011.desc:0 "Ufukta bir Lys gemisi görüldü. Böyle bir gemi değerli eşyalar ve belki de anavatanının randevu evleri için köleler taşıyor olabilir. Adamlar takip edip etmememiz konusunda karar vermemi bekliyor."
+agot_reaving.2011.a:0 "Bir tuz karısı edinmeyi düşünüyorum!"
+agot_reaving.2011.a.tt:0 "Gemiyi kovalamaya başlayın! Sonuçta siz Deniz Kurtları'sınız!"
+agot_reaving.2011.b:0 "Yerlerinize, onu yakalayacağız!"
+agot_reaving.2011.b.tt:0 "Gemiyi kovalamaya başlayın! Sonuçta siz Deniz Kurtları'sınız!"
+agot_reaving.2011.c:0 "Zamanımıza değmez"
+agot_reaving.2011.c.tt:0 "Dışarıda daha iyi avlar var.."
+agot_reaving.2011.a.success_title:0 "Gemiyi yakaladınız ve bir tuz karısı edindiniz!"
+agot_reaving.2011.a.failure_title:0 "Gemi kaçtı..."
+agot_reaving.2011.b.success_title:0 "Gemiyi Yakaladınız!"
+agot_reaving.2011.b.failure_title:0 "Gemi kaçtı..."
+
+###########################
+#  Tyroshi War Gallon     #
+###########################
+agot_reaving.2012.t:0 "Tyroslu Savaş Kadırgası"
+agot_reaving.2012.desc:0 "Bir Tyroslu Savaş Kadırgası görüldü, hiç şüphesiz ticaret yollarında sorun yaratan bir korsan lordunu Basamak Taşları'ndan temizlemek için yola çıkmış."
+agot_reaving.2012.a:0 "Belki de onlara Kılıçlarımızı satabiliriz?"
+agot_reaving.2012.a.tt:0 "Tyroslular için Paralı Asker olarak çalışmayı teklif edin, bazıları tarafından aşağılanacaksınız ama altın kazanacaksınız!"
+agot_reaving.2012.b:0 "Onlardan uzak durmak en iyisi.."
+agot_reaving.2012.b.tt:0 "Onlarla karşılaşmaktan hiçbir hayır gelmez..."
+agot_reaving.2012.a.success_title:0 "Paralı Asker olarak çalışın"
+agot_reaving.2012.a.failure_title:0 "Teklif reddedildi..."
+ 
+###########################
+#   Fishing Village       #
+###########################
+agot_reaving.2013.t:0 "Küçük Balıkçı Köyü"
+agot_reaving.2013.desc:0 "Küçük bir Balıkçı Köyü'ne baskın düzenledik, karaya çıktığımızda bize karşı hiçbir direniş olmadı. Çoğu kaçıp saklanmaya çalıştı, birkaçı mücadele etti ama eğitimsiz oldukları için çabucak düştüler. Ele geçirilen ganimet azdı."
+agot_reaving.2013.a:0 "Burada ne kadar altın var?"
+agot_reaving.2013.a.tt:0 "Burada değerli bazı şeyler olmalı..."
+agot_reaving.2013.b:0 "O benim tuz karım olacak."
+agot_reaving.2013.b.tt:0 "Güzel bir tuz karısı olur."
+agot_reaving.2013.c:0 "O benim tuz karım olacak."
+agot_reaving.2013.c.tt:0 "Güzel bir tuz karısı olur."
+agot_reaving.2013.d:0 "O benim tuz karım olacak."
+agot_reaving.2013.d.tt:0 "Güzel bir tuz karısı olur."
+
+###########################
+#   Pirate Hide Out        #
+###########################
+agot_reaving.2014.t:0 "Küçük Korsan Sığınağı"
+agot_reaving.2014.desc:0 "Basamak Taşları'nda küçük bir korsan lordunun sığınağına rastladık. Onlardan daha iyi silahlanmış olsak da, kıyı şeridindeki müstahkem bir mağaraya sığınmışlar. Bir saldırı düzenleyip savunmayı kırabiliriz ya da belki birkaç adamı gizlice içeri sokup bir yol açabiliriz."
+agot_reaving.2014.a:0 "İçeriye doğru savaşarak girmemiz gerekecek!"
+agot_reaving.2014.a.tt:0 "Müstahkem mağaraya karşı bir saldırıya liderlik edin, silahlarınızın gücü içeri girmeye çalışacak!"
+agot_reaving.2014.b:0 "Belki de gizlilik en iyi seçeneğimizdir..."
+agot_reaving.2014.b.tt:0 "İçeri girmenin başka bir yolu olmalı..."
+agot_reaving.2014.a.success_title:0 "Korsan Sığınağı'na girdik!!"
+agot_reaving.2014.a.failure_title:0 "İçeri giremedik... Geri döneceğiz!"
+agot_reaving.2014.b.success_title:0 "İçeri girmenin bir yolunu bulduk!"
+agot_reaving.2014.b.failure_title:0 "Başka bir yol bulamadık.. Geri döneceğiz!"
+
+###########################
+#   A Meal for the Crabs   #
+###########################
+agot_reaving.2015.t:0 "Yengeçlere Ziyafet"
+agot_reaving.2015.desc:0 "Yardım çığlıkları, dikkatimizi bölgeye Denizkızı Kralı'nın Mızrakları adını kazandıran, denizden fışkıran taş yığınına çekti. Bu taş mızraklardan birinde bir adam mahsur kalmıştı, bizim bulunduğumuz yerden bile yengeçlerin onu ele geçirmeye çalıştığını görebiliyordum. İlk düşüncem gemi enkazından kurtulan biri olduğuydu, ancak başka bir mürettebat arkadaşı adamın aslında taşa bağlı olduğunu ve işlediği suçun her neyse iğrenç olması gerektiğini belirtti."
+agot_reaving.2015.a:0 "Mürettebat arkadaşım haklı, aptalı bırakmak en iyisi"
+agot_reaving.2015.a.tt:0 "Birileri bu adama acımasız bir ölüm vermek için çaba sarf etmiş, ne tür bir adam bunu hak ediyor bilmek istemiyorum."
+agot_reaving.2015.b:0 "Adamı kurtaracağım"
+agot_reaving.2015.b.tt:0 "Adamı yengeçlere yem olmaktan kurtaracağım, bana hayatını borçlu olacak!"
+
+###########################
+#  A Ironborn in Need     #
+###########################
+agot_reaving.2016.t:0 "Muhtaç Bir Demirdoğumlu"
+agot_reaving.2016.desc:0 "Bir köye baskın düzenlerken, bir mızrakçı adamlarımızdan birine çok fazla baskı yapıyordu ve durumun iyi biteceği yoktu. Mızrakçı tamamen baskı yaptığı Demirdoğumlu'ya odaklanmış ve bana açık bir nokta bırakmış, çabuk bir öldürme olurdu."
+agot_reaving.2016.a:0 "Adama saldır"
+agot_reaving.2016.a.tt:0 "Hızlı bir saldırı mızrakçının baskısını kıracak ve Demirdoğumlu arkadaşınızın toparlanmasını sağlayacaktır."
+
+###################################
+#    Shieldmaiden in Disguise     #
+#             Badger              #
+###################################
+agot_reaving.2017.t:0 "Yağma: [GetTrait('shieldmaiden').GetName(GetNullCharacter)]"
+agot_reaving.2017.desc:0 "Açık denizdeki son karşılaşmadan bu yana günler geçtiğinde ana güvertede bir arbede çıktı. Gürültüyü kontrol altına aldığınızda, gürültünün konusu olan kişinin etrafında bir daire oluşmuştu.\n\n \"[shieldmaiden.GetName] bunca zaman bir [shieldmaiden.GetWomanMan]miş, Kaptan!\" Mürettebatınızdan biri homurdanırken, [shieldmaiden.GetWomanMan] mürettebatı uzakta tutmak için etrafında bir borda baltası savuruyor. [shieldmaiden.GetSheHe]'nin silaha hakim olduğu açık, bir kaçak yolcudan bekleyeceğiniz becerinin ötesinde.\n\n\"[ROOT.Char.GetTitledFirstName],\" diyor [shieldmaiden.GetSheHe]. \"Tüm hayatım boyunca Demir Bedeli'ni ödemek için eğitim gördüm ve sadece size hizmet etmek ve Boğulmuş Tanrı'nın beğenisini kazanmak istiyorum. Lütfen bu büyük çabada size katılmama izin verin!\""
+agot_reaving.2017.a:0 "Bir [GetTrait('shieldmaiden').GetName(GetNullCharacter)] bir sonraki baskınımızda iyi bir arkadaş olur!"
+agot_reaving.2017.b:0 "Benim için hiçbir kadın savaşmayacak."
+agot_reaving.2017.c:0 "Boğulmuş Tanrı'ya başka bir şekilde hizmet edebilirsin."
+agot_reaving.2017.d:0 "Belki kamarama katılabilirsin... ve zırhını çıkarmana gerek yok."
+
+
+################################
+# Return Events
+# 9001-9999
+# by Badger
+################################
+
+agot_reaving.9002.t:0 "Büyük Dönüş"
+agot_reaving.9002.desc:0 ""
+agot_reaving.9002.a:0 "Biz gerçek demirdoğumlularız"
+
+
+

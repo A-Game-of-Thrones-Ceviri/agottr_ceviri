@@ -1,138 +1,139 @@
 ﻿l_english:
- ACTIVITY_LOG_ENTRY_EFFECT: "#S Efektler#!\n$EFFECT$"
- activity_tournament_province_desc: "[ROOT.Province.GetName]\n'da bir Turnuva düzenlerseniz, uygun binalara sahip olan eyaletler [gold_i][gold|E] kadar indirim verir"
- activity_tournament_conclusion_desc: "#D Lütfen beni doldurun ve beni doğru dosya tasarımcısına koyun senpai UwU#!"
- activity_feast_guest_desc: "$BULLET_WITH_TAB$Katılımcılar diğer katılanlardan [opinion|E] kazanabilir.\n$BULLET_WITH_TAB$Katılımcılar [stress_loss_i][stress|E] kaybedebilir.\n$BULLET_WITH_TAB$Katılımcılar [GetTrait('lifestyle_reveler').GetName( GetNullCharacter )] [trait|E] kazanabilir."
- activity_tournament_guest_desc: "#weak Uygun olmanız durumunda, bir turnuvaya katılmak yarışmalar ve dolayısıyla ödüller kazanma şansı sunacak, ayrıca dinlenip manzaranın ve seslerin tadını çıkarmanızı sağlayacaktır. Ayrıca dövüş becerilerinizi geliştirmeniz için bir fırsat da sağlar.#!"
-  
- guest_friendship_title: "$activity_pulse_action_guest_friendship$"
- activity_pulse_action_guest_friendship: "[second.GetShortUINameNoTooltip|U] Mükâfat [first.GetShortUINameNoTooltip|U]"
- guest_insulted_title: "$activity_pulse_action_guest_insulted$"
- activity_pulse_action_guest_insulted: "[second.GetShortUINameNoTooltip|U], [first.GetShortUINameNoTooltip|U] adlı karaktere hakaret etti."
-  
-  # Tournament - Activity Invalidated 
- activity_system.0040.t: "Turnuva Sona Erdi"
- activity_system.0040.desc: "Ah! Turnuvayı çevreleyen yeni koşullarla, organizatörlerle kısa bir sohbet korkularınızı doğruluyor: Turnuva iptal edilmeli.\n\nÜmitsiz insanların belgeleri bir oraya bir buraya savruluyor, hıçkırıklar ve hayal kırıklığına uğramış çocuklar ebeveynlerinin ellerini sıkıyor. Umarım yakın gelecekte bu şenliklerin yeniden başlaması için başka bir şans olabilir."
- activity_system.0040.a: "Gerçekten yazık."
-  
-  # New Host after Character Death 
- activity_system.0080.t: "Yeni Bir Ev Sahibi"
- activity_system.0080.desc: "Önceki ev sahibinin ölümüyle, ilgili organizatörler arasında telaşlı fısıltılar hız kazanıyor. Sahne arkasında yaşanan panikten neredeyse habersiz, orada bulunan herkes mutlu bir şekilde etrafta dolaşıyor.\n\nSonunda bir anlaşmaya varılıyor."
- activity_system.0080.desc_other: "Şenlikler devam edecek ama artık başlarında [host.GetTitledFirstName] olacak!"
- activity_system.0080.desc_me: "Şenlikler devam edecek, ben de onların başında duracağım!"
- activity_system.0080.a: "Şimdi konumuza dönelim."
-  
-  #Pilgrimages: New Host after Character Death 
+#mustafa
+ ACTIVITY_LOG_ENTRY_EFFECT:1 "#S Etkileri#!\n$EFFECT$"
+ activity_tournament_province_desc:2 "[ROOT.Province.GetName]'de bir Turnuva düzenliyorsunuz.\nUygun binalara sahip Bölgeler, [gold_i][gold|E] indirim sağlar."
+ activity_tournament_conclusion_desc:0 "#D Lütfen beni doldurun ve doğru dosyaya koyun tasarımcı senpai UwU#!"
+ activity_feast_guest_desc:0 "$BULLET_WITH_TAB$Katılımcılar, katılan karakterlerin [opinion|E]'ini kazanabilir.\n$BULLET_WITH_TAB$Katılımcılar [stress_loss_i][stress|E] kaybedebilir.\n$BULLET_WITH_TAB$Katılımcılar [GetTrait('lifestyle_reveler').GetName( GetNullCharacter )] [trait|E]'ini kazanabilir."
+ activity_tournament_guest_desc:1 "#weak Eğer uygun şartları karşılıyorsanız, bir Turnuva'ya katılmak, yarışmaları kazanma ve dolayısıyla ödüller kazanma, ayrıca rahatlama ve manzaraların ve seslerin tadını çıkarma şansı sunacaktır. Ayrıca dövüş becerilerinizi geliştirmeniz için bir fırsat sunar. #!"
+
+ guest_friendship_title:0 "$activity_pulse_action_guest_friendship$"
+ activity_pulse_action_guest_friendship:0 "[second.GetShortUINameNoTooltip|U], [first.GetShortUINameNoTooltip|U]'a İltifat Eder."
+ guest_insulted_title:0 "$activity_pulse_action_guest_insulted$"
+ activity_pulse_action_guest_insulted:0 "[second.GetShortUINameNoTooltip|U], [first.GetShortUINameNoTooltip|U]'a Hakaret Eder."
+
+ # Tournament - Activity Invalidated
+ activity_system.0040.t:1 "Turnuva Sona Erdi"
+ activity_system.0040.desc:1 "Ne yazık ki! Turnuvayı çevreleyen yeni koşullar nedeniyle, organizatörlerle yapılan kısa bir görüşme korkularınızı doğruluyor: Turnuva iptal edilmeli.\n\nÜzgün insanların dosyaları, burnunu çeken ve ebeveynlerinin ellerini tutan hayal kırıklığına uğramış çocuklarla dolu. Umarım yakın gelecekte bu şenliklerin yeniden başlaması için bir şans daha olur."
+ activity_system.0040.a:1 "Gerçekten üzücü."
+
+ # New Host after Character Death
+ activity_system.0080.t:1 "Yeni Bir Ev Sahibi"
+ activity_system.0080.desc:2 "Önceki ev sahibinin ölümüyle birlikte, ilgili organizatörler arasında aceleyle fısıldaşmalar hız kazanıyor. Oradaki herkes, perde arkasında yaşanan paniğin farkında değil, mutlu bir şekilde etrafta dolanıyor.\n\nSonunda bir anlaşmaya varılır."
+ activity_system.0080.desc_other:0 "Şenlikler devam edecek, ancak şimdi başlarında [host.GetTitledFirstName] ile!"
+ activity_system.0080.desc_me:0 "Şenlikler devam edecek ve ben onların başında duracağım!"
+ activity_system.0080.a:0 "Hadi geri dönelim."
+
+ #Pilgrimages: New Host after Character Death
  activity_system.0081.t:1 "Son Durak"
  activity_system.0081.desc.relation_family_liked:0 "Sevgili [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('old_host'))] [old_host.GetTitledFirstName] ne yazık ki bu dünyadan göçtü ve,"
  activity_system.0081.desc.relation_liked:0 "Sevgili [old_host.GetTitledFirstName] ne yazık ki bu dünyadan göçtü ve,"
  activity_system.0081.desc.relation_family:0 "[ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('old_host'))] [old_host.GetTitledFirstName] ne yazık ki bu dünyadan göçtü ve,"
  activity_system.0081.desc.relation_neutral:0 "Ne yazık ki [old_pilgrimage_host.GetTitledFirstName] bu dünyadan göçtü ve,"
- activity_system.0081.desc.outro:0 "[old_host.GetHerHis] varisi olarak, sorumluluk bana kaldı.\n\nBu nedenle, kendi hislerim ne olursa olsun, [old_host.GetHerHis] bedeninin nasıl ele alınacağına ve son ayinlerine nasıl karar vermemiz gerektiğine karar vermem gerekiyor."
- activity_system.0081.a:0 "[ROOT.Char.GetTravelPlan.GetData.GetFinalDestination.GetProvince.GetNameNoTooltip], [old_host.GetHerHis] eviydi."
- activity_system.0081.a.tt:0 "[old_host.GetShortUIName], [THIS.Char.GetTravelPlan.GetData.GetFinalDestination.GetProvince.GetNameNoTooltip]'da ebedi istirahatine kavuşturulacak."
- activity_system.0081.b:0 "[old_host.GetSheHe|U], [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip]'ın kutsallığında dinlenmeyi hak ediyor."
- activity_system.0081.b.tt:0 "[old_host.GetShortUIName], [THIS.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip]'da ebedi istirahatine kavuşturulacak."
- activity_system.0081.c:0 "[old_host.GetHerHim]'i [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip]'a, sonra da evine götüreceğiz."
- activity_system.0081.c.tt:0 "[THIS.Char.GetInvolvedActivity.GetName] devam edecek ve [old_host.GetShortUIName], [THIS.Char.GetTravelPlan.GetData.GetFinalDestination.GetProvince.GetNameNoTooltip]'da ebedi istirahatine kavuşturulacak."
-  
-  # Intent Invalidated 
- activity_system.0090.t: "Geçersiz Niyet"
- activity_system.0090.desc: "Mevcut koşulların değişmesiyle, önceki niyetimin takip edilemeyeceği açık. Durumumu düşünürken diğerleri yanımdan mutlu bir şekilde geçip gidiyor, hafif şaşkınlığımı tamamen görmezden geliyorlar.\n\nKalbim başka ne istiyor? Belki de bunun yerine biraz rahatlamalıyım?"
- activity_system.0090.a: "Dikkatimi başka yere vermenin zamanı geldi."
-  
-  # Intent Target Invalidated 
- activity_system.0091.t: "Geçersiz Amaç Hedefi"
- activity_system.0091.desc: "Mevcut koşulların değişmesiyle, önceki niyet hedefimin artık hedeflerim için geçerli olmadığı açık. Durumumu düşünürken diğerleri yanımdan mutlu bir şekilde geçip gidiyor, hafif şaşkınlığımı tamamen görmezden geliyorlar.\n\nBaşka kime odaklanmalıyım? Belki de sadece kendime odaklanmalıyım?"
- activity_system.0091.a: "Hadi bakalım, yeni bir ilham perisi bulmanın zamanı geldi..."
-  
-  # Activity Conclusion 
- activity_system.0100.t: "Kötü Bir Kutlama"
- activity_system.0100.desc: "İnanılmaz! Birçok davet ve hazırlığıma rağmen [activity_type.GetNameNoTooltip()]'ıma tek bir kişi bile gelmedi. Belki de [location.GetName]'e giden yol tahmin ettiğimden daha fazla tehlikeyle dolu.\n\n"
- activity_system.0100.outro_away: "Sanırım [ROOT.Char.GetCapitalLocation.GetName]'a evime dönüş yolculuğuma başlama zamanı geldi."
- activity_system.0100.outro_home: "En azından evden uzaklara seyahat etme zahmetinden kurtuldum."
- activity_system.0100.a: "Ama neden... neden kimse gelmiyordu?"
-  
- activity_system.1010.t: "Kısa Kesilmiş Bir Seyahat"
- activity_system.1010.desc: "Selefim [host.GetNameRegnal], diyarı gezerken ölümlü bedeninden ayrıldı. Ne yazık ki, [host.GetSheHe] [host.GetDeathReason].\n\n"
- activity_system.1010.desc.entourage: "[host.GetFirstNamePossessiveNoTooltip] maiyeti, [ROOT.Char.Custom2('RelationToMePossessive',SCOPE.sC('host'))] bedenimi taşıyarak, hüzünlü bir yolculuğa başlayacaktır mutlaka."
- activity_system.1010.desc.ruler: "Düşen [host.GetTitleAsName] evinden bu kadar uzakta ölmeyi hak etmiyordu."
- activity_system.1010.a: "Rahat uyu, [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('host'))]."
- activity_system.1010.tt: "[host.GetShortUINamePossessiveNoTooltip] [activity|E] iptal edildi"
-  
- activity_system.1011.desc: "Efendim, [host.GetNameRegnal], diyarı gezerken [host.GetHerHis] ölümlü bedeninden ayrıldı. Ne yazık ki, [host.GetSheHe] [host.GetDeathReason].\n\nTurun geri kalanı iptal edildi çünkü [host.GetFirstNamePossessiveNoTooltip] maiyeti, [host.GetHerHis] bedenini son dinlenme yerine taşıyarak hüzünlü yolculuklarına başladı."
-  
+ activity_system.0081.desc.outro:0 "[old_host.GetHerHis]'nin varisi olarak sorumlu ben kaldım.\n\nBu nedenle, kendi duygularımdan bağımsız olarak, [old_host.GetHerHis]'nin bedensel kalıntıları ve son ayinleriyle nasıl başa çıkacağımıza karar vermem gerekiyor."
+ activity_system.0081.a:0 "[ROOT.Char.GetTravelPlan.GetData.GetFinalDestination.GetProvince.GetNameNoTooltip], [old_host.GetHerHis]'nin eviydi."
+ activity_system.0081.a.tt:0 "[old_host.GetShortUIName], [THIS.Char.GetTravelPlan.GetData.GetFinalDestination.GetProvince.GetNameNoTooltip]'de ebedi istirahate kavuşturulacak."
+ activity_system.0081.b:0 "[old_host.GetSheHe|U], [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip]'nin kutsallığında dinlenmeyi hak ediyor."
+ activity_system.0081.b.tt:0 "[old_host.GetShortUIName], [THIS.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip]'de ebedi istirahate kavuşturulacak."
+ activity_system.0081.c:0 "[old_host.GetHerHim]'i [ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetProvince.GetNameNoTooltip]'ye, ardından eve götürüyoruz."
+ activity_system.0081.c.tt:0 "[THIS.Char.GetInvolvedActivity.GetName] devam edecek ve [old_host.GetShortUIName], [THIS.Char.GetTravelPlan.GetData.GetFinalDestination.GetProvince.GetNameNoTooltip]'de ebedi istirahate kavuşturulacak."
+
+ # Intent Invalidated
+ activity_system.0090.t:0 "Geçersiz Niyet"
+ activity_system.0090.desc:1 "Mevcut koşulların değişmesiyle birlikte, önceki niyetime ulaşılamayacağı açık. Diğerleri benim hafif telaşımın tamamen farkında olmadan, durumumu düşünürken mutlu bir şekilde yanımdan geçiyor.\n\nKalbimin başka ne istediğini? Belki de biraz dinlenmeliyim."
+ activity_system.0090.a:1 "Odak noktamı başka yöne çevirme zamanı."
+
+ # Intent Target Invalidated
+ activity_system.0091.t:1 "Geçersiz Niyet Hedefi"
+ activity_system.0091.desc:1 "Mevcut koşulların değişmesiyle, önceki niyet hedefimin artık hedeflerimle alakalı olmadığı açık. Diğerleri, durumumu düşünürken, hafif bir telaş içinde olduğumun farkında olmadan, mutlu bir şekilde yanımdan geçiyor.\n\nBaşka kimlere odaklanmalıyım? Belki de sadece kendime odaklanmalıyım?"
+ activity_system.0091.a:1 "Pekala, yeni bir ilham perisi bulma zamanı..."
+
+ # Activity Conclusion
+ activity_system.0100.t:2 "Kötü Bir Kutlama"
+ activity_system.0100.desc:0 "İnanılmaz! Çok sayıda davetiyeye ve hazırlığa rağmen, [activity_type.GetNameNoTooltip()]'ıma tek bir kişi bile gelmedi. Belki de [location.GetName]'e giden yol, tahmin ettiğimden daha tehlikelidir.\n\n"
+ activity_system.0100.outro_away:0 "Sanırım [ROOT.Char.GetCapitalLocation.GetName]'deki evime geri dönme zamanı geldi."
+ activity_system.0100.outro_home:0 "En azından kendimi evden uzaklaşma zahmetinden kurtardım."
+ activity_system.0100.a:1 "Ama neden... neden kimse gelmez ki?"
+
+ activity_system.1010.t:0 "Yarıda Kesilen Seyahat"
+ activity_system.1010.desc:0 "Selefim [host.GetNameRegnal], diyarı gezerken ölümlü bedenini terk etti. Trajik bir şekilde, [host.GetSheHe] [host.GetDeathReason].\n\n"
+ activity_system.1010.desc.entourage:0 "[host.GetFirstNamePossessiveNoTooltip] maiyeti, [ROOT.Char.Custom2('RelationToMePossessive',SCOPE.sC('host'))] bedenimi taşıyarak eve doğru kederli bir yolculuğa çıkacak."
+ activity_system.1010.desc.ruler:0 "Düşmüş [host.GetTitleAsName], evinden bu kadar uzakta ölmeyi hak etmedi."
+ activity_system.1010.a:0 "Huzur içinde yat, [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('host'))]."
+ activity_system.1010.tt:0 "[host.GetShortUINamePossessiveNoTooltip] [activity|E] iptal edildi"
+
+ activity_system.1011.desc:0 "Efendim [host.GetNameRegnal], diyarı gezerken ölümlü bedenini terk etti. Trajik bir şekilde, [host.GetSheHe] [host.GetDeathReason].\n\nTurun geri kalanı iptal edildi ve [host.GetFirstNamePossessiveNoTooltip] maiyeti, Onun bedenini son dinlenme yerine götürmek için kederli yolculuklarına başladılar."
+
  # Host has joined a war and has the opportunity to cancel the activity 
- activity_system.0300.t: "Savaş [ROOT.Char.GetWomanMan|U]'ı bekler"
- activity_system.0300.desc.intro.traveling: "Savaş borularının sesi, [target_activity_location.GetName]'da [target_activity_type.GetNameNoTooltip]'ime katılmak üzere yolda olduğumdan beri bana kadar ulaştı."
- activity_system.0300.desc.intro.activity: "[target_activity_type.GetNameNoTooltip]'e ev sahipliği yaptığım şu anda, [target_activity_location.GetName]'da bile savaş borularının sesi bana ulaştı."
- activity_system.0300.desc.attacker: "[war_opponent.GetNameRegnal|U]'a karşı mücadeleye katıldım."
- activity_system.0300.desc.defender: "O [attacker.Custom('InsultNoun')] [attacker.GetNameRegnal|U] bana savaş açtı!\n\n"
- activity_system.0300.desc.outro: "Bu [target_activity_type.GetNameNoTooltip]'ı ağırlamak için çok fazla planlama yaptım ve misafirlerimi evlerine göndermekten nefret ediyorum. Ancak bu çatışmanın önemi hafife alınmamalı.\n\nBelki de tüm çabalarımı savaşa hazırlanmaya odaklamak en iyisi olur..."
- activity_system.0300.a: "Buradan işlerimi halledebilirim."
-  #AGOT Modified, fixing Paradox oops 
- #activity_system.0300.a.tt: "[target_activity.GetNameNoTooltip] devam edecek"
- activity_system.0300.a.tt: "[target_activity_type.GetNameNoTooltip] devam edecek"
- activity_system.0300.b: "Bu savaş tüm dikkatimi gerektiriyor."
-  #AGOT Modified, fixing Paradox oops 
- #activity_system.0300.b.tt: "[target_activity.GetNameNoTooltip] iptal edilecek ve tüm katılımcılar evlerine doğru yola çıkacak"
- activity_system.0300.b.tt: "[target_activity_type.GetNameNoTooltip] iptal edilecek ve tüm katılımcılar evlerine doğru yola çıkacak"
- activity_system.0300.b.tt.cost: "Bazı maliyetler geri kazanılabilir"
-  
- activity_system.0301.t: "[target_activity_type.GetNameNoTooltip] İptal edildi"
- activity_system.0301.desc: "#EMP "Savaşa! Savaşa!"#! gürleyerek geçerken [target_activity_host.GetTitledFirstNamePossessive] [knights|l]'ü arayın, boruları ötüyor ve sancakları gökyüzünde parıldayarak parlıyor.\n\nO [war_opponent.Custom('InsultNoun')] [war_opponent.GetNameRegnal]'in bizim [target_activity_type.GetNameNoTooltip]'yı hiç umursamadığı, öyle gibi! [target_activity_host.GetTitleAsNameNoTooltip]'nin vergilerini göndermesi ve zafer için [target_activity_host.GetFaith.WarGodName]'e dua etmesi nedeniyle etkinlik iptal edilecek.\n\n [target_activity_type.GetNameNoTooltip] asil ve değerli bir eğlencedir, ancak silahlanma çağrısı diğerlerinden daha yüksek sesle duyulur."
- activity_system.0301.a: "Ne büyük bir rezalet..."
-  
-  #AGOT Modified, fixing Paradox oops 
- #activity_system.0310.desc.intro: "Savaş borularının sesi bana [target_activity_location.GetName]'da ulaştı çünkü [target_activity_host.GetPossessiveNameRegnal|U] [target_activity_type.GetNameNoTooltip]'ye katılıyorum. [attacker.GetTitledFirstName|U] ile [defender.GetTitledFirstName|U] arasındaki savaşa yardım etmek için çağrıldım."
- activity_system.0310.desc.intro: "Savaş borularının sesi bana [target_activity_location.GetName]'da ulaştı çünkü [target_activity_host.GetNamePossessiveRegnal|U] [target_activity_type.GetNameNoTooltip]'ye katılıyorum. [attacker.GetTitledFirstName|U] ile [defender.GetTitledFirstName|U] arasındaki savaşa yardım etmek için çağrıldım."
- activity_system.0310.a.tt: "[target_activity_type.GetNameNoTooltip]'a katılmaya devam edin"
- activity_system.0310.b.tt: "[target_activity_type.GetNameNoTooltip]'dan ayrılıp eve doğru yolculuğa başlıyorsunuz"
-  
- activity_system.0320.t: "Beklenmedik Bir Sonuç"
- activity_system.0320.desc: "Ev sahibimiz [host.GetName], [province.GetNameNoTooltip()]'nin [host.GetHerHis] mülkiyetini kaybetti ve böylece [activity_type.GetNameNoTooltip()] zamansız bir şekilde sona erdi.\n\nBu davet ve hazırlıkların tüm şatafatından sonra bu olayın bu şekilde sonuçlanmasını kesinlikle beklemiyordum. Sanırım geriye sadece maiyetim ve benim [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]'e eve dönmemiz kaldı..."
- activity_system.0320.a: "Olan oldu."
-  
-  # If you have gained the incapable trait 
- activity_system.0330.t: "Aciz"
- activity_system.0330.desc.intro: "Kendi işlerimi, [activity_type.GetNameNoTooltip()]!\n\n de dahil olmak üzere, idare edemeyecek kadar yetersiz görüldüm ve bu konuda tamamen yetersiz görüldüm."
- activity_system.0330.desc.memory: "Ne yazık ki, [incapable_memory.GetDescription].\n\n"
- activity_system.0330.desc.outro: "Yapılacak başka bir şey kalmadı, [home.GetName]'a geri dönmek."
- activity_system.0330.a: "Misafirlerimin sağ salim evlerine dönmesini dilerim."
-  
- activity_system.0331.t: "Aciz"
- activity_system.0331.desc: "Ev sahibimiz [host.GetName], [host.GetHerHim] etrafındakiler tarafından yetersiz görüldü ve [host.GetHerHis] kendi işlerini, [host.GetHerHis] [activity_type.GetNameNoTooltip()] dahil, idare edemeyecek kadar yetersiz görülüyor!\n\nNe yazık ki hepimiz eve eli boş dönmek zorundayız."
- activity_system.0331.a: "Ne ayıp."
-  
-  # Late to the activity 
- activity_system.0400.t: "Programın Gerisinde Kalmak"
- activity_system.0400.desc_leader: "[travel_leader.Custom2('MyCharacterIntroduction', ROOT.Char)], [travel_leader.GetHerHis]'in yüzünde utanç ve endişe karışımı bir ifadeyle bana yaklaştığında, [travel_leader.GetSheHe]'nin kötü haberler getirdiğini biliyorum.\n\n"Programın yaklaşık [GetTimeBetweenDates(ROOT.Char.GetInvolvedActivity.GetActiveStartDate.Self, ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetEstimatedArrivalDate)], yani [ROOT.Char.GetTitleAsNameNoTooltip] kadar gerisinde kaldığımızı ve varış noktasına zamanında varamayabileceğimizi bildirmekten üzgünüm.""
- activity_system.0400.desc_no_leader: "Gökyüzünü ve sahip olduğum tüm haritaları değerlendirmeye devam ediyorum, ancak matematiğin doğru olmadığı açık.\n\nProgramın yaklaşık [GetTimeBetweenDates(ROOT.Char.GetInvolvedActivity.GetActiveStartDate.Self, ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetEstimatedArrivalDate)] gerisindeyiz ve mevcut güzergah boyunca mevcut hızımızla hareket etmeye devam edersek varış noktasına zamanında varamayacağız."
- activity_system.0400.a: "Acele edelim."
- activity_system.0400.a.tt: "Yol boyunca hız kazanmayı umuyorsun"
- activity_system.0400.b: "Gerçekten değmez."
- activity_system.0401.t: "Çok geç"
- activity_system.0401.desc_leader: "[travel_leader.Custom2('MyCharacterIntroduction', ROOT.Char)|U] bana asık suratla [travel_leader.GetHerHis] yaklaşıyor.\n\n"Üzülerek bildiriyorum ki zamanında yetişemedik, [ROOT.Char.GetTitleAsNameNoTooltip]. Etkinlik bugün başladı ve biz orada değiliz.""
- activity_system.0401.desc_no_leader: "Bugün o gün. Etkinlik bugün başladı, ancak tüm çabalarıma rağmen orada değiliz.\n\nGeriye dönüp eve gitmekten başka yapılacak bir şey kalmadı."
- activity_system.0401.a: "Hayal kırıklığı."
-  
- SELECT_ACTIVITY_DECISION_TITLE: "#D Etkinlik Türünü Seçin#!"
- SELECT_ACTIVITY_DECISION_NEXT_STEP_BUTTON: "$SELECT_ACTIVITY_DECISION_TITLE$"
- hold_grand_activity_option_tournament: "$activity_tournament$"
- hold_grand_activity_option_tournament_desc: "$activity_tournament$"
- hold_grand_activity_option_wedding: "$activity_wedding$"
- hold_grand_activity_option_wedding_desc: "$activity_wedding$"
- hold_grand_activity_option_tour: "$activity_tour$"
- hold_grand_activity_option_tour_desc: "$activity_tour$"
-  
-  
- hold_standard_activity_option_feast: "$activity_feast$"
- hold_standard_activity_option_feast_desc: "$activity_feast$"
- hold_standard_activity_option_hunt: "$activity_hunt$"
- hold_standard_activity_option_hunt_desc: "$activity_hunt$"
- hold_standard_activity_option_pilgrimage: "$activity_pilgrimage$"
- hold_standard_activity_option_pilgrimage_desc: "$activity_pilgrimage$"
- hold_standard_activity_option_play_date: "$activity_play_date$"
- hold_standard_activity_option_play_date_desc: "$activity_play_date$"
- hold_standard_activity_option_witch_ritual: "$activity_witch_ritual$"
- hold_standard_activity_option_witch_ritual_desc: "$activity_witch_ritual$"
+ activity_system.0300.t:0 "Savaş Hiçbir [ROOT.Char.GetWomanMan|U]'ı Beklemez"
+ activity_system.0300.desc.intro.traveling:0 "[target_activity_location.GetName]'deki [target_activity_type.GetNameNoTooltip]'ıma katılmak için yoldayken, savaş borularının sesi buraya kadar ulaştı."
+ activity_system.0300.desc.intro.activity:0 "[target_activity_location.GetName]'de bir [target_activity_type.GetNameNoTooltip]'a ev sahipliği yaparken, savaş borularının sesi buraya kadar ulaştı."
+ activity_system.0300.desc.attacker:1 "[war_opponent.GetNameRegnal|U]'a karşı savaşa katıldım."
+ activity_system.0300.desc.defender:0 "Şu [attacker.Custom('InsultNoun')] [attacker.GetNameRegnal|U] bana savaş ilan etti!\n\n"
+ activity_system.0300.desc.outro:0 "Bu [target_activity_type.GetNameNoTooltip]'a ev sahipliği yapmak için birçok planlama yapıldı ve misafirlerimi eve göndermek istemiyorum. Ancak bu çatışmanın önemi küçümsenmemelidir.\n\nBelki de tüm çabalarımı savaşa hazırlanmaya odaklamak en iyisi olur..."
+ activity_system.0300.a:0 "İşleri buradan yönetebilirim."
+ #AGOT Modified, fixing Paradox oops
+ #activity_system.0300.a.tt:0 "The [target_activity.GetNameNoTooltip] will continue"
+ activity_system.0300.a.tt:0 "[target_activity_type.GetNameNoTooltip] devam edecek."
+ activity_system.0300.b:0 "Bu savaş tüm dikkatimi gerektiriyor."
+ #AGOT Modified, fixing Paradox oops
+ #activity_system.0300.b.tt:0 "The [target_activity.GetNameNoTooltip] will be cancelled and all attendees will begin traveling home"
+ activity_system.0300.b.tt:0 "[target_activity_type.GetNameNoTooltip] iptal edilecek ve tüm katılımcılar evlerine doğru yola çıkacak."
+ activity_system.0300.b.tt.cost:0 "Bazı masraflar telafi edilebilir."
+
+ activity_system.0301.t:0 "[target_activity_type.GetNameNoTooltip] İptal Edildi"
+ activity_system.0301.desc:0 "#EMP "Savaşa! Savaşa!"#! [target_activity_host.GetTitledFirstNamePossessive] [knights|l]'ı çağırın, borularını üfleyerek ve bayraklarını gökyüzüne doğru sallayarak geçiyorlar.\n\nGörünüşe göre şu [war_opponent.Custom('InsultNoun')] [war_opponent.GetNameRegnal]'ın [target_activity_type.GetNameNoTooltip]'ımıza saygısı yok! [target_activity_host.GetTitleAsNameNoTooltip], askerlerini toplarken ve zafere ulaşmak için [target_activity_host.GetFaith.WarGodName]'e dua ederken etkinlik iptal ediliyor.\n\nBir [target_activity_type.GetNameNoTooltip], asil ve değerli bir eğlence olsa da, silahlara çağrı diğerlerinden daha yüksek sesle geliyor."
+ activity_system.0301.a:0 "Ne talihsizlik..."
+
+  #AGOT Modified, fixing Paradox oops
+ #activity_system.0310.desc.intro:0 "The blaring of the war horns have reached me here in [target_activity_location.GetName] as I am attending [target_activity_host.GetPossessiveNameRegnal|U] [target_activity_type.GetNameNoTooltip]. I have been summoned to aid in the war between [attacker.GetTitledFirstName|U] and [defender.GetTitledFirstName|U]."
+ activity_system.0310.desc.intro:0 "[target_activity_location.GetName]'de [target_activity_host.GetNamePossessiveRegnal|U]'ın [target_activity_type.GetNameNoTooltip]'ına katılırken savaş borularının sesi bana ulaştı. [attacker.GetTitledFirstName|U] ile [defender.GetTitledFirstName|U] arasındaki savaşta yardım etmek için çağrıldım."
+ activity_system.0310.a.tt:0 "[target_activity_type.GetNameNoTooltip]'a katılmaya devam ediyorsunuz."
+ activity_system.0310.b.tt:0 "[target_activity_type.GetNameNoTooltip]'dan ayrılıp eve doğru yola çıkıyorsunuz."
+ 
+ activity_system.0320.t:0 "Beklenmedik Bir Son"
+ activity_system.0320.desc:1 "Ev sahibimiz [host.GetName], [province.GetNameNoTooltip()]'ın kontrolünü kaybetti ve bu yüzden [activity_type.GetNameNoTooltip()] zamansız bir sona geldi.\n\nTüm bu davet tantanası ve hazırlıktan sonra bu olayın böyle sonuçlanmasını kesinlikle beklemiyordum. Sanırım geriye kalan tek şey, maiyetimle birlikte [ROOT.Char.GetCapitalLocation.GetNameNoTooltip]'e dönmemiz..."
+ activity_system.0320.a:0 "Olan oldu."
+
+ # If you have gained the incapable trait 
+ activity_system.0330.t:0 "Yetersiz"
+ activity_system.0330.desc.intro:0 "Yetersiz görüldüm ve [activity_type.GetNameNoTooltip()]'ım da dahil olmak üzere kendi işlerimi yönetmek için tamamen elverişsiz olarak görülüyorum!\n\n"
+ activity_system.0330.desc.memory:0 "Ne yazık ki, [incapable_memory.GetDescription].\n\n"
+ activity_system.0330.desc.outro:0 "Geriye [home.GetName]'e dönmekten başka yapacak bir şey kalmadı."
+ activity_system.0330.a:0 "Umarım misafirlerim evlerine sağ salim ulaşırlar."
+
+ activity_system.0331.t:0 "Yetersiz"
+ activity_system.0331.desc:0 "Ev sahibimiz [host.GetName], çevresindekiler tarafından yetersiz görüldü ve [activity_type.GetNameNoTooltip()]'ı da dahil olmak üzere kendi işlerini yönetmek için tamamen elverişsiz olarak görülüyor!\n\nNe yazık ki, hepimiz eli boş eve dönmek zorundayız."
+ activity_system.0331.a:0 "Ne utanç verici."
+
+ # Late to the activity
+ activity_system.0400.t:0 "Programın Gerisinde Kalmak"
+ activity_system.0400.desc_leader:0 "[travel_leader.Custom2('MyCharacterIntroduction', ROOT.Char)], yüzünde utanç ve endişe karışımıyla bana yaklaştığında, kötü haberler getirdiğini anlıyorum.\n\n"Üzgünüm ama programın yaklaşık [GetTimeBetweenDates(ROOT.Char.GetInvolvedActivity.GetActiveStartDate.Self, ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetEstimatedArrivalDate)] gerisindeyiz [ROOT.Char.GetTitleAsNameNoTooltip]'ım ve hedefe zamanında varamayabiliriz.""
+ activity_system.0400.desc_no_leader:0 "Gökyüzünü ve sahip olduğum tüm haritaları değerlendiriyorum ama hesapların tutmadığı açık.\n\nProgramın yaklaşık [GetTimeBetweenDates(ROOT.Char.GetInvolvedActivity.GetActiveStartDate.Self, ROOT.Char.GetTravelPlan.GetData.GetNextDestination.GetEstimatedArrivalDate)] gerisindeyiz ve mevcut güzergah boyunca mevcut hızda ilerlemeye devam edersek, hedefe zamanında varamayacağız."
+ activity_system.0400.a:0 "Acele edelim."
+ activity_system.0400.a.tt:0 "Yol boyunca hızlanmayı umuyorsunuz."
+ activity_system.0400.b:0 "Buna değmez."
+ activity_system.0401.t:0 "Çok Geç"
+ activity_system.0401.desc_leader:0 "[travel_leader.Custom2('MyCharacterIntroduction', ROOT.Char)|U] bana sert bir bakışla yaklaşıyor.\n\n"Üzgünüm ama zamanında yetişemedik [ROOT.Char.GetTitleAsNameNoTooltip]'ım. Etkinlik bugün başladı ve biz orada değiliz.""
+ activity_system.0401.desc_no_leader:0 "Bugün günlerden o gün. Etkinlik bugün başladı ama tüm çabalarıma rağmen orada değiliz.\n\nGeriye dönüp eve gitmekten başka yapacak bir şey kalmadı."
+ activity_system.0401.a:0 "Hayal kırıklığı."
+
+ SELECT_ACTIVITY_DECISION_TITLE:0 "#D Etkinlik Türünü Seçin#!"
+ SELECT_ACTIVITY_DECISION_NEXT_STEP_BUTTON:0 "$SELECT_ACTIVITY_DECISION_TITLE$"
+ hold_grand_activity_option_tournament:0 "$activity_tournament$"
+ hold_grand_activity_option_tournament_desc:0 "$activity_tournament$"
+ hold_grand_activity_option_wedding:0 "$activity_wedding$"
+ hold_grand_activity_option_wedding_desc:0 "$activity_wedding$"
+ hold_grand_activity_option_tour:0 "$activity_tour$"
+ hold_grand_activity_option_tour_desc:0 "$activity_tour$"
+
+
+ hold_standard_activity_option_feast:0 "$activity_feast$"
+ hold_standard_activity_option_feast_desc:0 "$activity_feast$"
+ hold_standard_activity_option_hunt:0 "$activity_hunt$"
+ hold_standard_activity_option_hunt_desc:0 "$activity_hunt$"
+ hold_standard_activity_option_pilgrimage:0 "$activity_pilgrimage$"
+ hold_standard_activity_option_pilgrimage_desc:0 "$activity_pilgrimage$"
+ hold_standard_activity_option_play_date:0 "$activity_play_date$"
+ hold_standard_activity_option_play_date_desc:0 "$activity_play_date$"
+ hold_standard_activity_option_witch_ritual:0 "$activity_witch_ritual$"
+ hold_standard_activity_option_witch_ritual_desc:0 "$activity_witch_ritual$"
