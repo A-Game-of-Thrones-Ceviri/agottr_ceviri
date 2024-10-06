@@ -81,7 +81,7 @@
  game_concept_pirate_den_holding_desc: "Korsan inleri, korsanların karaya çıkmaya zorlandıklarında toplandıkları standart [holding_type|E], hafif tahkimli kamplardır. [GetGovernment( 'pirate_government' ).GetName] [rulers|E] için mevcut olan tek tutma türüdür."  
   
  game_concept_dragon: "Ejderha"  
- game_concept_dragons: "Ejderhalar"  
+ game_concept_dragons_plural: "Ejderhalar"  
  game_concept_dragon_desc: "$game_concept_dragons$, bilinen dünyayı fethetmelerinde eski Valyria'nın ejderha efendileri tarafından kullanılan büyülü canavarlardır. Birini görmek, ateşin ete büründüğünü görmek, birine binmek ise kaderinizin efendisi ve dünyanın şekillendiricisi olmaktır.\n\nHer ejderhanın kendi [personality|E], [traits|E] ve [education|E]'ü olacak ve bunlar [draconic_dread|E], [temperament|E] ve [taming_chance|E]'sını etkileyecektir. Bir ejderhanın [dragon_combat_effectiveness|E]'si savaştaki kullanımını etkileyecek ve yaşlandıkça ve [dragon_size|E] kazandıkça artacaktır.\n\nÜç tane [dragon_type|E] vardır: Bunlar [wild_dragons|E], [owned_dragons|E] ve [tamed_dragons|E]'dır.Evcilleştirilmiş ve sahip olunan ejderhalar, varsa bir [dragonpit|E]'nda saklanabilir."  
   
  game_concept_dragon_type: "Ejderha Türleri"  
@@ -122,13 +122,13 @@
  game_concept_dragon_pit_desc: "$game_concept_dragonpit_desc$"  
  game_concept_natural_dragonpit: "Doğal Ejderha Çukuru"  
  game_concept_natural_dragonpits: "Doğal Ejderha Çukurları"  
- game_concept_natural_dragonpit_desc: "$game_concept_natural_dragonpit$, [dragonkeepers|E] sırasının [dragons|E]'ü saklamak ve korumak için doğal mağaraları kullandığı [dragonpit|E]'dir. [dragons_size|E], insan yapımı bir ejderha çukuruna kilitlenmiş bir ejderha kadar acı çekmeyecektir."  
+ game_concept_natural_dragonpit_desc: "$game_concept_natural_dragonpit$, [dragonkeepers|E] sırasının [dragons_plural|E]'ı saklamak ve korumak için doğal mağaraları kullandığı [dragonpit|E]'dir. [dragons_size|E], insan yapımı bir ejderha çukuruna kilitlenmiş bir ejderha kadar acı çekmeyecektir."  
   
  game_concept_anti_dragon_maa: "Anti-Ejderha"  
- game_concept_anti_dragon_maa_desc: "[dragons|E] tehdidine karşı mücadele etmek için özel olarak inşa edilmiş [men_at_arms|E]. Bu alaylar, hedeflenen düşmanlarıyla karşılaşmadıkları sürece değerlerini ortaya koymayacaklardır, ancak bir ejderhayla karşı karşıya kaldığında [army|E]'yi korumak için başka pek az şey umut edebilir."  
+ game_concept_anti_dragon_maa_desc: "[dragons_plural|E]ın tehdidine karşı mücadele etmek için özel olarak inşa edilmiş [men_at_arms|E]. Bu alaylar, hedeflenen düşmanlarıyla karşılaşmadıkları sürece değerlerini ortaya koymayacaklardır, ancak bir ejderhayla karşı karşıya kaldığında [army|E]'yi korumak için başka pek az şey umut edebilir."  
   
  game_concept_dragon_gender: "Ejderha Cinsiyeti"  
- game_concept_dragon_gender_desc: "Hisar'ın [maesters|E]'ı [dragons|E]'in gerçek doğasını uzun süredir tartışıyor, bazıları erkek ve dişi arasında ihtiyaç duyulduğu şekilde değiştiklerine inanıyor, diğerleri ise belirli bir cinsiyetleri olmadığına inanıyor. Tarihsel olarak, yumurtladığı gözlemlenen ejderhalar dişi olarak anılırken, dişi olarak bilinen bazıları bunu yapmamıştır.\n\nNe olursa olsun, erkeklerin gelenekleri ejderhaların gerçekten cinsiyetlerine göre ayırt edildiğini ve bu nedenle binici veya bir yumurta kümesi durumu aksi yönde olana kadar bu şekilde anıldıklarını savunur."  
+ game_concept_dragon_gender_desc: "Hisar'ın [maesters|E]'ı [dragons_plural|E]ın gerçek doğasını uzun süredir tartışıyor, bazıları erkek ve dişi arasında ihtiyaç duyulduğu şekilde değiştiklerine inanıyor, diğerleri ise belirli bir cinsiyetleri olmadığına inanıyor. Tarihsel olarak, yumurtladığı gözlemlenen ejderhalar dişi olarak anılırken, dişi olarak bilinen bazıları bunu yapmamıştır.\n\nNe olursa olsun, erkeklerin gelenekleri ejderhaların gerçekten cinsiyetlerine göre ayırt edildiğini ve bu nedenle binici veya bir yumurta kümesi durumu aksi yönde olana kadar bu şekilde anıldıklarını savunur."  
   
  game_concept_dragonblood: "Ejderha Kanı"  
  game_concept_dragonblood_desc:0 "$game_concept_dragonblood$, bir [character|e]'ın 3 kuşak içinde ya bir [GetTrait('dragonrider').GetName( GetNullCharacter )|LV]'dan ya da [GetModifier('dragonrider_house_modifier').GetNameWithTooltip|L] değiştiricisine sahip bir [house|E]'den geldiğini gösteren bir belirteçtir."
@@ -138,6 +138,70 @@
   
  game_concept_dragonkeeper: "Ejderha Korucusu"  
  game_concept_dragonkeepers: "Ejder Korucuları"  
- game_concept_dragonkeeper_desc: "$game_concept_dragonkeepers$ Düzeni, [dragonpits|E]nun ve barındırılan herhangi bir [dragons|E]nın bakımını denetlemekle görevlidir. Düzen, kullanıldığında birkaç [dragonpit_interactions|E]un kilidini açan bir $head_dragonkeeper_court_position$ tarafından yönetilir."  
+ game_concept_dragonkeeper_desc: "$game_concept_dragonkeepers$ Düzeni, [dragonpits|E]nun ve barındırılan herhangi bir [dragons_plural|E]ın bakımını denetlemekle görevlidir. Düzen, kullanıldığında birkaç [dragonpit_interactions|E]un kilidini açan bir $head_dragonkeeper_court_position$ tarafından yönetilir."  
  game_concept_dragonpit_interactions: "Ejderha Çukuru Etkileşimleri"  
- game_concept_dragonpit_interactions_desc: "$game_concept_dragonpit_interactions$, [character|E], $head_dragonkeeper_court_position$, [court_position|E] kullanıldığında açılan [interactions|E] kümesidir. Bu etkileşimler [dragonpit|e] sahibine daha iyi bir kontrol derecesi sağlar.\n\n$EFFECT_LIST_BULLET$#V Ejderha Bilgisini Öğret #!Interaction - Çocuklara, torunlara veya [house|E] üyelere Ejderha Bilgisini öğret.\n$EFFECT_LIST_BULLET$#V Ejderha Çukuruna Erişimi Yasakla #!Interaction - Normalde bir ejderha çukuruna erişimi olan bir karakteri o çukurun [interactions|E]3 erişimi nedeniyle kısıtla.\n$EFFECT_LIST_BULLET$#V Ejderha Çukuru Yasağını Kaldır #!Interaction - Bir karakterin yasaklandığı ejderha çukuruna erişimini geri yükle.\n$EFFECT_LIST_BULLET$#V Ejderha Çukuruna Erişim Ver #!Interaction - Bir karakteri belirli bir ejderha çukurunun [character|E]0'si yap.\n$EFFECT_LIST_BULLET$#V Yumurtayı Ejderha Çukuruna Gönder #!Interaction - Bir ejderha yumurtasını [character|E]4 çukura gönder, burada kendi kendine çatlayabilir veya güvenli saklama için.\n$EFFECT_LIST_BULLET$#V Ejderha Çukurundan Yumurtayı Al #!Interaction - Ejderha çukurundan çekirdeksiz bir yumurtayı al."  
+ game_concept_dragonpit_interactions_desc: "$game_concept_dragonpit_interactions$, [character|E], $head_dragonkeeper_court_position$, [court_position|E] kullanıldığında açılan [interactions|E] kümesidir. Bu etkileşimler [dragonpit|e] sahibine daha iyi bir kontrol derecesi sağlar.\n\n$EFFECT_LIST_BULLET$#V Ejderha Bilgisini Öğret #!Interaction - Çocuklara, torunlara veya [house|E] üyelere Ejderha Bilgisini öğret.\n$EFFECT_LIST_BULLET$#V Ejderha Çukuruna Erişimi Yasakla #!Interaction - Normalde bir ejderha çukuruna erişimi olan bir karakteri o çukurun [interactions|E]3 erişimi nedeniyle kısıtla.\n$EFFECT_LIST_BULLET$#V Ejderha Çukuru Yasağını Kaldır #!Interaction - Bir karakterin yasaklandığı ejderha çukuruna erişimini geri yükle.\n$EFFECT_LIST_BULLET$#V Ejderha Çukuruna Erişim Ver #!Interaction - Bir karakteri belirli bir ejderha çukurunun [character|E]0'si yap.\n$EFFECT_LIST_BULLET$#V Yumurtayı Ejderha Çukuruna Gönder #!Interaction - Bir ejderha yumurtasını [character|E]4 çukura gönder, burada kendi kendine çatlayabilir veya güvenli saklama için.\n$EFFECT_LIST_BULLET$#V Ejderha Çukurundan Yumurtayı Al #!Interaction - Ejderha çukurundan çekirdeksiz bir yumurtayı al."
+
+ ## GAME CONCEPTS LOC
+game_concept_story_content_robert_baratheon_282:0 "$game_concept_story_generic_prefix$ $bookmark_282_robert_baratheon$"
+game_concept_story_content_robert_baratheon_282_desc:0 "#tooltip_heading Hikaye Tarzı: Kapsamlı#!\n\nRobert Baratheon olarak, Yedi Krallık iç savaşa sürüklenirken 'Deli Kral' Aerys Targaryen ve sadıklarına karşı savaşacaksınız.\n\nSavaş boyunca senaryolu hikaye olayları gerçekleşecek ve hikayeniz Targaryen hanedanına karşı başarınız veya başarısızlığınızla doruk noktasına ulaşacak."
+
+game_concept_story_content_rhaegar_targaryen_282:0 "$game_concept_story_generic_prefix$ $bookmark_282_rhaegar_targaryen$"
+game_concept_story_content_rhaegar_targaryen_282_desc:0 "#tooltip_heading Hikaye Tarzı: Orta#!\n\nRhaegar Targaryen olarak, babanız ve hükümdarınız Aerys Targaryen II'nin emriyle Robert Baratheon'un isyancılarına karşı savaşacaksınız.\n\nAerys Targaryen'in oğlu olarak, devam eden savaşla ilgili hikaye olaylarına maruz kalacaksınız. Siz veya babanız düşmanlarınıza karşı zafer kazanırsanız, Lyanna Stark'ın ve krallığın kaderi ile ilgili senaryolu hikaye olayları takip edecek."
+
+game_concept_story_content_aerys_targaryen_282:0 "$game_concept_story_generic_prefix$ $bookmark_282_aerys_targaryen$"
+game_concept_story_content_aerys_targaryen_282_desc:0 "#tooltip_heading Hikaye Tarzı: Kapsamlı#!\n\nAerys Targaryen olarak, Robert Baratheon ve müttefiklerinin güçlerine karşı savaşacaksınız.\n\nSavaş, krallık ve ailenizle ilgili senaryolu hikaye olayları çatışma boyunca gerçekleşecek ve hikayeniz isyancılara karşı zaferiniz veya yenilginizle sonuçlanacak."
+
+game_concept_story_content_tywin_lannister_282:0 "$game_concept_story_generic_prefix$ $bookmark_282_tywin_lannister$"
+game_concept_story_content_tywin_lannister_282_desc:0 "#tooltip_heading Hikaye Tarzı: Kapsamlı#!\n\nTywin Lannister olarak, arkadaşınızdan rakibinize dönüşen Aerys Targaryen, Robert Baratheon liderliğindeki bir grup asi lorda karşı savaşırken tarafsız bir gözlemcisiniz.\n\nSavaş ilerledikçe, tarafsızlığınız ve savaşa katılma isteğinizle ilgili hikaye olayları yaşayabilirsiniz."
+
+game_concept_story_content_eddard_stark_282:0 "$game_concept_story_generic_prefix$ $bookmark_282_eddard_stark$"
+game_concept_story_content_eddard_stark_282_desc:0 "#tooltip_heading Hikaye Tarzı: Orta#!\n\nEddard Stark olarak, Robert Baratheon'un yanında 'Deli Kral' Aerys Targaryen'e karşı savaşacaksınız.\n\nÇatışmadan sağ çıkarsanız, kayıp kız kardeşiniz Lyanna Stark'ın kaderi ile ilgili senaryolu hikaye olayları yaşayacaksınız."
+
+game_concept_story_content_aegon_targaryen_259:0 "$game_concept_story_generic_prefix$ $bookmark_259_aegon_targaryen$"
+game_concept_story_content_aegon_targaryen_259_desc:0 "#tooltip_heading Hikaye Tarzı: Kapsamlı#!\n\nAegon Targaryen olarak aileniz, krallığınız ve en derin hayalleriniz arasında denge kurmalısınız.\n\nOrtaya çıkan bir Blackfyre tehdidinin haberleri netleştikçe, aileniz ve krallığınızla ilgili senaryolu hikaye olayları yaşayacaksınız."
+
+game_concept_story_content_maelys_blackfyre_259:0 "$game_concept_story_generic_prefix$ $bookmark_259_maelys_blackfyre$"
+game_concept_story_content_maelys_blackfyre_259_desc:0 "#tooltip_heading Hikaye Tarzı: Kapsamlı#!\n\nMaelys Blackfyre olarak, size ait olanı geri almak için müttefiklerinizle birlikte savaşacaksınız: Yedi Krallık.\n\nFetihleriniz ve Westeros'u ve çevresindeki krallıkları işgal etme hırslarınızla ilgili senaryolu hikaye olayları yaşayacaksınız."
+
+game_concept_story_content_viserys_targaryen_109:0 "$game_concept_story_generic_prefix$ $bookmark_106_viserys_targaryen$"
+game_concept_story_content_viserys_targaryen_109_desc:0 "#tooltip_heading Hikaye Tarzı: Hafif#!\n\nViserys Targaryen olarak, barış içinde bir krallığın hükümdarısınız.\n\nAileniz ve onların başarılarıyla ilgili senaryolu hikaye olayları yaşayacaksınız; yani, varisiniz Rhaenyra Targaryen ve erkek kardeşiniz Prens Daemon Targaryen."
+
+game_concept_story_content_daemon_targaryen_109:0 "$game_concept_story_generic_prefix$ $bookmark_106_daemon_targaryen$"
+game_concept_story_content_daemon_targaryen_109_desc:0 "#tooltip_heading Hikaye Tarzı: Kapsamlı#!\n\nDaemon Targaryen olarak, Basamak Taşları'nda hak iddia eden kötü adamlar ve korsanlarla savaşacaksınız.\n\nFetihleriniz ilerledikçe, krallığınız, Demir Taht prensi olarak konumunuz ve Basamak Taşları ile ilgili senaryolu hikaye olayları yaşayacaksınız."
+
+game_concept_story_content_corlys_velaryon_109:0 "$game_concept_story_generic_prefix$ $bookmark_106_corlys_velaryon$"
+game_concept_story_content_corlys_velaryon_109_desc:0 "#tooltip_heading Hikaye Tarzı: Orta#!\n\nCorlys Velaryon olarak, Daemon Targaryen'in yanında Basamak Taşları'nda hak iddia eden kötü adamlar ve korsanlarla savaşacaksınız.\n\nFetihleriniz ilerledikçe, Basamak Taşları'nın durumu ve Daemon Targaryen'in savaşlarındaki rolünüzle ilgili senaryolu hikaye olayları yaşayacaksınız."
+
+game_concept_story_content_craghas_drahar_109:0 "$game_concept_story_generic_prefix$ $bookmark_106_craghas_drahar$"
+game_concept_story_content_craghas_drahar_109_desc:0 "#tooltip_heading Hikaye Tarzı: Hafif#!\n\nCraghas Drahar olarak, Daemon Targaryen ve Corlys Velaryon'un işgalci gücüne karşı savaşacaksınız.\n\nSavaşla ilgili senaryolu hikaye olayları yaşayacaksınız."
+
+game_concept_story_content_tytos_lannister_259:0 "$game_concept_story_generic_prefix$ $bookmark_259_tytos_lannister$"
+game_concept_story_content_tytos_lannister_259_desc:0 "#tooltip_heading Hikaye Tarzı: Orta#!\n\nTytos Lannister olarak, hırslı ve kibirli vasallarla uğraşan bir lordsunuz.\n\nBirkaç vasalınızın statüsü ve konumu ile ilgili senaryolu hikaye olayları yaşayacaksınız."
+
+game_concept_story_content_roger_reyne_259:0 "$game_concept_story_generic_prefix$ $bookmark_259_roger_reyne$"
+game_concept_story_content_roger_reyne_259_desc:0 "#tooltip_heading Hikaye Tarzı: Hafif#!\n\nRoger Reyne olarak, hükümdarınız Tytos Lannister'a pek saygı duymayan hırslı bir lordsunuz.\n\nBatı Toprakları'ndaki rolünüzle ilgili senaryolu hikaye olayları yaşayacaksınız."
+
+game_concept_nw_govt:0 "Gece Nöbetçileri"
+game_concept_nw_govt_desc:0 "$game_concept_nw_govt$ [government_form|E] altında, en üstteki [liege|E], yönetmek ve korumak için [vassals|E] arasında [land|E] dağıtır. Yalnızca Gece Nöbetçileri'nin yeminli kardeşleri bu hükümet altında unvan alabilir ve öldüklerinde unvanları hükümdarlarına geri döner."
+game_concept_nw_govt_i:0 "@nights_watch_government!"
+
+game_concept_pirate_govt:0 "Korsan"
+game_concept_pirate_govt_desc:0 "$game_concept_pirate_govt$ [government_form|E] altında, [rulers|E] seçmeli bir [succession|E] biçimiyle, benzersiz korsan [buildings|E] ile sınırlıdır ve [pirate_den_holdings|E] ile sınırlıdır. Bu kısıtlamalara rağmen, korsan yöneticiler [raid|E] yapabilir ve fetih [casus_belli|E]'i kullanabilirler."
+game_concept_pirate_govt_i:0 "@pirate_government!"
+
+game_concept_citadel_govt:0 "Üstatlar Meclisi"
+game_concept_citadel_govt_desc:0 "$game_concept_citadel_govt$, üstatlar tarikatını temsil eden oynanamayan bir hükümettir."
+game_concept_citadel_govt_i:0 "@the_citadel_government!"
+
+game_concept_kg_govt:0 "Kraliyet Muhafızları"
+game_concept_kg_govt_desc:0 "$game_concept_kg_govt$, Demir Taht hükümdarının seçkin korumalar tarikatını temsil eden oynanamayan bir hükümettir."
+game_concept_kg_govt_i:0 "@kingsguard_government!"
+
+game_concept_silent_sisters_govt:0 "Sessiz Rahibeler"
+game_concept_silent_sisters_govt_desc:0 "$game_concept_silent_sisters_govt$, Yedi İnancı dininde ölülere bakan kadın tarikatını temsil eden oynanamayan bir hükümettir."
+game_concept_silent_sisters_govt_i:0 "@silent_sisters_government!"
+
+game_concept_ruins_govt:0 "Harabe"
+game_concept_ruins_govt_desc:0 "$game_concept_ruins_govt$, harabeye dönmüş ve şimdi geri yüklenene kadar Muhafızlar tarafından bakılan krallıkları temsil eden oynanamayan bir hükümettir."
+game_concept_ruins_govt_i:0 "@ruins_government!"
