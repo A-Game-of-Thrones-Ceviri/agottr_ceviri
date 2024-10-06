@@ -33,6 +33,7 @@ coronation.0001.waiting_for_officiant:0 "[lower_right_portrait.GetTitledFirstNam
 
 coronation.0001.a.good:0 "Ne şanlı bir gün!"
 coronation.0001.a.bad:0 "Bu günün bitmesini sabırsızlıkla bekliyorum."
+coronation.0001.a.sabotage:0 "[center_portrait.GetFirstNamePossessiveNoTooltip] gününü mahvetme zamanı!"
 coronation.0001.after.tt:0 "Davet edilen herkese kuzgunlar gönderilecek."
 
 # Officiant Replacement
@@ -132,6 +133,11 @@ coronation.0150.desc_guests_self_crowner_intro:1 "Tören sonunda doruk noktasın
 
 coronation.0150.desc_guests_self_crowner_no_crown_intro:1 "Tören sonunda doruk noktasına ulaştı. [coronation_target.GetTitledFirstName|U], [coronation_target.GetFaith.GetNameNoTooltip]'in geleneksel ayinlerine göre meshedildi, ancak ortada taç yok.\n\nBize doğru dönerken, basitçe şunları ilan ediyor:"
  
+# Coronation Saboteur
+coronation.0150.desc_saboteur_no_crown_intro:1 "Tören sonunda doruk noktasına ulaştı. [officiant.GetTitledFirstName|U], [coronation_target.GetTitledFirstName|U]'i [coronation_target.GetFaith.GetNameNoTooltip]'in geleneksel ayinlerine göre kutsadı, ancak ortada taç yok. Etrafımdakiler şaşkın bakışlar atarken [officiant.GetTitledFirstNameNoTooltip|U] sadece şunları ilan ediyor:"
+
+coronation.0150.desc_saboteur_self_crowner_no_crown_intro:1 "Tören sonunda doruk noktasına ulaştı. [coronation_target.GetTitledFirstName|U], [coronation_target.GetFaith.GetNameNoTooltip]'in geleneksel ayinlerine göre kutsandı, ancak ortada taç yok.\n\nBize dönerek, [coronation_target.GetSheHe|l] sadece şunları ilan ediyor:"
+
 #Ruler's proclamation
 coronation.0150.desc_proclaimation_seven_kingdoms:0 "\n\n#italic "Tanrılar ve İnsanlar önünde, [coronation_target.GetHouse.GetNameNoTooltip|U] Hanedanı'ndan [coronation_target.GetFirstNameNoTooltipRegnal|U]'yu, Andalların, Rhoynarların ve İlk İnsanların [coronation_target.GetTitleAsNameNoTooltip|U]'su, Yedi Krallık'ın [coronation_target.GetLadyLord|U]'su ve Diyarın Koruyucusu ilan ediyorum! Hükümdarlığı uzun olsun!" #!"
 coronation.0150.desc_proclaimation_seven_kingdoms_self:0 "\n\n#italic "Ben, [coronation_target.GetHouse.GetNameNoTooltip|U] Hanedanı'ndan [coronation_target.GetFirstNameNoTooltipRegnal|U], Andalların, Rhoynarların ve İlk İnsanların [coronation_target.GetTitleAsNameNoTooltip|U]'su, Yedi Krallık'ın [coronation_target.GetLadyLord|U]'su ve Diyarın Koruyucusuyum! Hükümdarlığım uzun olsun!" #!"
@@ -149,6 +155,7 @@ coronation.0150.desc_guests_outro:0 "\n\nKalabalık tezahürat yapmaya başlıyo
 coronation.0150.desc_guests_no_crown_outro:0 "\n\nUzun bir süre sessizlik hakim oluyor, ta ki biri çekinerek alkışlamaya başlayana kadar ve biz de tereddütle ona katılıyoruz."
 coronation.0150.desc_guests_self_crowner_outro:0 "$coronation.0150.desc_officiant_outro$"
 coronation.0150.desc_guests_self_crowner_no_crown_outro:0 "\n\nUzun bir süre sessizlik hakim oluyor, ta ki biri çekinerek alkışlamaya başlayana kadar ve biz de tereddütle ona katılıyoruz."
+coronation.0150.desc_saboteur_no_crown_outro:0 "\n\nUzun bir süre boyunca kimse ses çıkarmıyor. Bunun benim eserim olduğunu bildiğim için yüzümde yavaşça bir gülümseme beliriyor. Sonra biri çekinerek alkışlamaya başlıyor ve diğerleri tereddüt ederek katılıyor."
 
 coronation.0150.a:0 "Hükümdarlığı uzun olsun!"
 coronation.0150.b:0 "Hükümdarlığı uzun olsun!"
@@ -677,3 +684,9 @@ coronation.1143.b:0 "Bu aptalca bir fikir"
 coronation.1143.b.tt:0 "Tören boyunca bu konuda sessiz kalacaksınız"
 coronation.1143.b_failure:0 "[coronation_claimant.GetShortUIName|U], [coronation_claimant.GetShortUINamePossessive|U] [claim|E]'nı talep etmemeye karar verdi"
 coronation.1143.c:0 "[coronation_target.GetFirstNameNoTooltip] daha iyi bir hükümdar; bunun yerine hak taleplerimden vazgeçeceğim"
+
+coronation.1144.t:0 "Reddetme"
+coronation.1144.desc:0 "Tüm çabalarıma rağmen, [coronation_claimant.GetShortUINameNoFormat], [coronation_target.GetPrimaryTitle.GetNameNoTierNoTooltip] üzerindeki hakkını savunmak ve iddiasını sürdürmek konusunda mantıklı davranmadı. Bu beklenmedik bir aksilikti. Günü mahvetmek için başka bir yol bulmam gerekecek."
+coronation.1144.a:0 "Lanet olsun sana [coronation_claimant.GetFirstNameNoTooltip]"
+coronation.1144.b:0 "Her neyse, çok da önemli değil"
+coronation.1144.b_failure:0 "[coronation_claimant.GetShortUINameNoFormat], [coronation_claimant.GetHerHis|l] [claim|E]'ını savunmamaya karar verdi"
