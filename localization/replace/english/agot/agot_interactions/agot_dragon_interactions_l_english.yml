@@ -1,10 +1,10 @@
 ﻿l_english:
-
+#mustafa+
 # Taming
 tame_dragon_interaction:0 "Ejderhayı Ehlileştir"
 tame_dragon_interaction_desc:0 "[recipient.GetNameNoTooltip] adlı ejderhayı ehlileştirmeyi deneyeceksin."
-tame_dragon_interaction_desc_warning:0 "[recipient.GetNameNoTooltip] adlı ejderhayı ehlileştirmeyi deneyeceksin.\n\n@warning_icon! #warning Bir ejderhayı bağ kurmadan önce ehlileştirmek son derece risklidir.#!"
-tame_dragon_no_active_bond_schemes:0 "Bir [GetScheme('bond_with_dragon_scheme').GetTypeName] [scheme|e] sahibi değilsin."
+tame_dragon_interaction_desc_warning:0 "[recipient.GetNameNoTooltip] adlı ejderhayı ehlileştirmeyi deneyeceksin.\n\n@warning_icon! #warning Bir ejderhayı bağ kurmadan önce ehlileştirmek son derece tehlikelidir.#!"
+tame_dragon_no_active_bond_schemes:0 "Bir [GetScheme('bond_with_dragon_scheme').GetTypeName] [scheme|e]nın yok."
 tame_dragon_notification:0 "Ejderhayı Ehlileştirme Girişimi"
 tame_dragon_interaction_tt1:0 "[recipient.GetName] adlı ejderhayı ehlileştirebilirsin veya yaralanabilir ya da ölebilirsin."
 tame_dragon_interaction_tt2:0 "#warning Bir ejderhayı bağ kurmadan önce ehlileştirmek son derece risklidir.#!"
@@ -12,11 +12,11 @@ tame_dragon_interaction_tt2:0 "#warning Bir ejderhayı bağ kurmadan önce ehlil
 # Bonding
 bond_with_dragon_interaction:0 "Ejderha ile Bağ Kur"
 bond_with_dragon_interaction_desc:0 "[recipient.GetNameNoTooltip] ile bağ kurmayı deneyeceksin."
-bond_dragon_notification:0 "[recipient.GetNameNoTooltip] ile Bağ Kuruluyor"
+bond_dragon_notification:0 "[recipient.GetNameNoTooltip] ile bağ Kuruluyor"
 deepen_bond_with_dragon_interaction:0 "Bağı Güçlendir"
 deepen_bond_with_dragon_interaction_desc:0 "[recipient.GetNameNoTooltip] ile bağını güçlendirmeyi deneyeceksin."
-deepen_bond_dragon_notification:0 "[recipient.GetNameNoTooltip] ile Bağ Güçlendiriliyor"
-blow_dragon_horn_interaction:0 "Ejderhayı Yeniden Bağla"
+deepen_bond_dragon_notification:0 "[recipient.GetNameNoTooltip] ile bağ güçlendiriliyor"
+blow_dragon_horn_interaction:0 "Ejderha ile Yeniden Bağ Kur"
 blow_dragon_horn_interaction_desc:0 "[recipient.GetNamePossessiveNoTooltip] bağı zayıfladı. Ejderha boynuzuyla bu bağı tekrar güçlendirmeyi deneyeceksin."
 must_equip_dragon_horn:0 "Bir ejderha boynuzu kuşanmış" 
 binding_is_unstable:0 "Bu ejderha üzerindeki bağın gücü azaldı."
@@ -62,7 +62,7 @@ SCHEME_BOND_DRAGON_DRACONIC_DREAD:0 "[target.GetFirstNamePossessive] [draconic_d
 SCHEME_BOND_DRAGON_TEMPERAMENT:0 "[target.GetFirstNamePossessive] [temperament|E] özelliği: $VALUE|+0=-+$" #Mizacı
 SCHEME_BOND_DRAGON_TAMING_CHANCE:0 "[target.GetFirstNamePossessive] [taming_chance|E] özelliği: $VALUE|+0=-+$" #Ehlileştirme Şansı
 BOND_DRAGON_SUCCESS_DESC:0 "Bu [dragon|E] ile bağ kuracaksınız." #Ejderha
-DEEPEN_BOND_DRAGON_SUCCESS_DESC:0 "[GetTrait('dragonrider').GetName(GetNullCharacter)] bağınızın deneyimini #P artıracaksınız#!." #Ejderha Sürücüsü
+DEEPEN_BOND_DRAGON_SUCCESS_DESC:0 "[GetTrait('dragonrider').GetName(GetNullCharacter)] bağınızı #P artıracaksınız#!." #Ejderha Sürücüsü
 SCHEME_BOND_VALYRIAN_BLOOD:0 "Ejderha Kanı'na sahipsiniz: $VALUE|+0=-+$"
 SCHEME_BOND_DYNASTY_LEGACY:0 "[GetDynastyPerk( 'dragonrider_dynasty_legacy_2' ).GetName]: $VALUE|+0=-+$" 
 SCHEME_EX_DRAGONRIDER:0 "Daha önce bir [dragon|E] ile bağ kurdunuz: $VALUE|+0=-+$" #Ejderha
@@ -115,40 +115,40 @@ agot_teach_dragonlore_increased_dragonlore_preview_tt:0 "[recipient.GetName], ej
 agot_teach_dragonlore_increased_dragonlore_interface_tt:0 "[recipient.GetName], ejderha İlmini #P [TopScope.GetValue('hdk_aptitude')]# kadar artırdı!"
 
 agot_send_to_dragonpit:0 "Yapay Zeka Ejderha Çukuruna Gönder"
-agot_send_to_dragonpit_desc:0 "Yapay Zeka, [recipient.GetName] adlı kişiyi [recipient.GetHerHis] [dragonpit|E]'ine gönderecek." #ejderha çukuru
+agot_send_to_dragonpit_desc:0 "Yapay Zeka, [recipient.GetName] adlı kişiyi Onun [dragonpit|E]na gönderecek." #ejderha çukuru
 
 agot_remove_from_dragonpit:0 "Yapay Zeka Ejderha Çukurundan Çıkar"
-agot_remove_from_dragonpit_desc:0 "Yapay Zeka, [recipient.GetName] adlı kişiyi [recipient.GetHerHis] [dragonpit|E]'inden çıkaracak." #ejderha çukuru
+agot_remove_from_dragonpit_desc:0 "Yapay Zeka, [recipient.GetName] adlı kişiyi Onun [dragonpit|E]ndan çıkaracak." #ejderha çukuru
 
 agot_grant_dragonpit_permission:0 "Ejderha Çukuruna Erişim İzni Verin"
-agot_grant_dragonpit_permission_desc:0 "[recipient.GetName] adlı kişiye [dragonpit|e]'inize ve içinde kilitli bulunan tüm [dragons_plural|e]a erişim izni verin. Bu, [recipient.GetNameNoTooltip] adlı kişiyi o ejderha çukurunun [authorized_tamer|e]'ı yapacaktır." 
-agot_grant_dragonpit_permission_effect_tt:0 "[recipient.GetName], [dragon_pit_location.GetNameNoTier] [dragonpit|e]'nun [authorized_tamer|e]'ı olacaktır."
+agot_grant_dragonpit_permission_desc:0 "[recipient.GetName] adlı kişiye [dragonpit|e]nuza ve içinde kilitli bulunan tüm [dragons_plural|e]a erişim izni verin. Bu, [recipient.GetNameNoTooltip] adlı kişiyi o ejderha çukurunun [authorized_tamer|e]i yapacaktır." 
+agot_grant_dragonpit_permission_effect_tt:0 "[recipient.GetName], [dragon_pit_location.GetNameNoTier] [dragonpit|e]nun [authorized_tamer|e]i olacaktır."
 
 agot_ban_from_dragonpit:0 "Ejderha Çukuruna Erişimini Yasaklayın"
-agot_ban_from_dragonpit_desc:0 "[recipient.GetName] şu anda ejderha çukuru [laws|e]'larınız nedeniyle [dragonpit|e]'inize erişebiliyor. Bu, belirtilen ejderha çukuruna erişimini kaldıracaktır."
-agot_banned_from_dragonpit_permission_effect_tt:0 "[recipient.GetName], [dragon_pit_location.GetNameNoTier] [dragonpit|e]'inden yasaklanacaktır."
-agot_banned_from_dragonpit_interface_tt:0 "[recipient.GetName], [dragon_pit_location.GetNameNoTier]'deki [dragonpit|e]'inize erişimden yasaklandı." 
+agot_ban_from_dragonpit_desc:0 "[recipient.GetName] şu anda ejderha çukuru [laws|e]ınız nedeniyle [dragonpit|e]nuza erişebiliyor. Bu, belirtilen ejderha çukuruna erişimini kaldıracaktır."
+agot_banned_from_dragonpit_permission_effect_tt:0 "[recipient.GetName], [dragon_pit_location.GetNameNoTier] [dragonpit|E]undan yasaklanacaktır."
+agot_banned_from_dragonpit_interface_tt:0 "[recipient.GetName], [dragon_pit_location.GetNameNoTier] [dragonpit|e]nuza erişimden yasaklandı." 
 
 agot_reverse_dragonpit_ban:0 "Ejderha Çukuru Yasağını Kaldırın"
-agot_reverse_dragonpit_ban_desc:0 "[recipient.GetName] şu anda [domain|e]'nizdeki bir [dragonpit|e]'den yasaklanmış durumda, bu eylem o yasağı kaldıracaktır." #topraklarınız #ejderha çukuru
-agot_reversed_ban_from_dragonpit_interface_tt:0 "[recipient.GetNamePossessive]'in [dragonpit|e]'inize erişim yasağı kaldırıldı." #ejderha çukuru
-agot_ban_lifted_from_dragonpit_effect_tt:0 "[recipient.GetNamePossessive]'in [target.GetNameNoTier] [dragonpit|e]'inden yasağı kaldırılacaktır." #ejderha çukuru
+agot_reverse_dragonpit_ban_desc:0 "[recipient.GetName] şu anda [domain|e]ünüzdeki bir [dragonpit|e]ndan yasaklanmış durumda, bu eylem o yasağı kaldıracaktır." #topraklarınız #ejderha çukuru
+agot_reversed_ban_from_dragonpit_interface_tt:0 "[recipient.GetName] adlı kişinin [dragonpit|e]nuza erişim yasağı kaldırıldı." #ejderha çukuru
+agot_ban_lifted_from_dragonpit_effect_tt:0 "[recipient.GetName] adlı kişinin [target.GetNameNoTier] [dragonpit|e]ndan yasağı kaldırılacaktır." #ejderha çukuru
 
 agot_request_dragonpit_permission:0 "Ejderha Çukuruna Erişim İzni Talep Edin"
-agot_request_dragonpit_permission_desc:0 "[recipient.GetShortUINamePossessive]'in [dragonpit|e]'ine erişim izni talep edebilirsiniz." #ejderha çukuru
-agot_request_dragonpit_permission_effect_tt:0 "[actor.GetShortUIName], [dragon_pit_location.GetNameNoTier] [dragonpit|e]'inin [authorized_tamer|e]'ı olacaktır." #ejderha çukuru #yetkili ehlileştirici
+agot_request_dragonpit_permission_desc:0 "[recipient.GetShortUINamePossessive] [dragonpit|e]na erişim izni talep edebilirsiniz." #ejderha çukuru
+agot_request_dragonpit_permission_effect_tt:0 "[actor.GetShortUIName], [dragon_pit_location.GetNameNoTier] [dragonpit|e]nun [authorized_tamer|e]i olacaktır." #ejderha çukuru #yetkili ehlileştirici
 
 agot_dragonpit_access_gained:0 "Ejderha Çukuruna Erişim İzni Verildi"
-agot_dragonpit_access_gained_interface_tt:0 "[actor.GetShortUIName], sizi [actor.GetHerHis] [dragonpit|E]'inin [authorized_tamer|E]'ı yaptı!" #ejderha çukuru #yetkili ehlileştirici
+agot_dragonpit_access_gained_interface_tt:0 "[actor.GetShortUIName], sizi onun [dragonpit|E]nun [authorized_tamer|e]i yaptı!" #ejderha çukuru #yetkili ehlileştirici
 agot_dragonpit_access_denied:0 "Ejderha Çukuruna Erişim Reddedildi"
-agot_dragonpit_access_denied_interface_tt:0 "[recipient.GetShortUIName], [recipient.GetHerHis] [dragonpit|E]'ine erişiminizi reddetti!" #ejderha çukuru
+agot_dragonpit_access_denied_interface_tt:0 "[recipient.GetShortUIName], onun [dragonpit|E]na erişiminizi reddetti!" #ejderha çukuru
 agot_request_dragonpit_permission_ai_modifier_i_am_blood_of_the_dragon:0 "Ejderhalarının önemini kabul ediyor."
 
 agot_send_egg_to_pit:0 "Yumurtayı Ejderha Çukuruna Gönderin"
-agot_send_egg_to_pit_desc:0 "Ejderha yumurtalarınızdan birini kuluçka için bir [dragonpit|e]'e gönderin." #ejderha çukuru
+agot_send_egg_to_pit_desc:0 "Ejderha yumurtalarınızdan birini kuluçka için bir [dragonpit|e]na gönderin." #ejderha çukuru
 
 agot_retrieve_egg_from_pit:0 "Yumurtayı Ejderha Çukurundan Alın"
-agot_retrieve_egg_from_pit_desc:0 "[dragonpits|e]'lerinizden birinde saklanan bir yumurtayı alın." #ejderha çukurları
+agot_retrieve_egg_from_pit_desc:0 "[dragonpits|e]larınızdan birinde saklanan bir yumurtayı alın." #ejderha çukurları
 
 rename_dragon_interaction:0 "Ejderhayı Yeniden Adlandırın"
 rename_dragon_interaction_desc:0 "[recipient.GetName] adlı ejderhayı yeniden adlandırın."
