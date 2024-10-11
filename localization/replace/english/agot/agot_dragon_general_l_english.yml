@@ -1,12 +1,12 @@
 ﻿l_english:
-#MUSTAFA
+#MUSTAFA+
 # Portraits / GUI
 MATES_LABEL:0 "Eş"
 CURRENT_HOST_LABEL:0 "Sahip"
 CURRENT_RIDER_LABEL:0 "Binici"
 CURRENT_BONDED_HUMAN_LABEL:0 "Bağlı"
 PAST_RIDERS_LABEL:0 "Geçmiş Biniciler #weak ([GetDataModelSize(CharacterWindow.GetCharacter.MakeScope.GetList('past_riders'))])#!"
-UNKNOWN_DRAGON_TOOLTIP:0 "Cinsiyet: Erkek ([Concept('dragon_gender','Assumed')|E])" 
+UNKNOWN_DRAGON_TOOLTIP:0 "Cinsiyet: Erkek ([Concept('dragon_gender','Varsayılan')|E])" 
 MALE_DRAGON_TOOLTIP:0 "Cinsiyet: Erkek"
 FEMALE_DRAGON_TOOLTIP:0 "Cinsiyet: Dişi"
 DRAGON_TYPE_TOOLTIP:0 "[dragon_type|E]" 
@@ -25,28 +25,28 @@ dragon_owner_landed:0 "[ROOT.Char.GetTitledFirstNamePossessive]"
 agot_dragon_healed.t:0 "[dragon.GetName] İyileşti" 
 agot_dragon_healed.tt:0 "[dragon.GetName] yarasından iyileşti."
 agot_dragon_same_location.t:0 "Ejderhaya Dönüldü"
-agot_dragon_same_location.tt:0 "[current_location.GetName]'daki ordudan ayrıldınız ve [dragon_location.GetName]'daki ejderhanıza geri döndünüz."
+agot_dragon_same_location.tt:0 "[current_location.GetName] konumundan ordudan ayrıldınız ve [dragon_location.GetName]konumundaki ejderhanıza geri döndünüz."
 
 # Wild dragon notifications
 wild_dragon_returned_home.t:0 "[dragon.GetName] Geri Döndü"
-wild_dragon_returned_home.desc:0 "[dragon.GetName], [lair.GetName]'daki inine dönerken görüldü."
+wild_dragon_returned_home.desc:0 "[dragon.GetName], [lair.GetName] konumundaki inine dönerken görüldü."
 wild_dragon_returned_home_from.t:0 "[dragon.GetName] Yuvasına Uçtu"
-wild_dragon_returned_home_from.desc:0 "[dragon.GetName], [lair.GetName]'daki inine geri uçarken görüldü."
+wild_dragon_returned_home_from.desc:0 "[dragon.GetName], [lair.GetName] konumundaki inine geri uçarken görüldü."
 wild_dragon_travelling_arrived.t:0 "[dragon.GetName] Yakınlarda Dolaşıyor"
 wild_dragon_travelling_arrived.desc:0 "[lair.GetName] bölgesindeki ininde yaşadığı bilinen [dragon.GetName], [destination.GetName] yakınlarında dolaşırken görüldü."
 wild_dragon_left.t:0 "[dragon.GetName] Başka Yerde Dolaşıyor"
 wild_dragon_left.desc:0 "[dragon.GetName], [destination.GetName] bölgesine doğru uçarken görüldü."
 wild_dragon_left_lair.t:0 "[dragon.GetName] Dolaşıyor"
-wild_dragon_left_lair.desc:0 "[dragon.GetName], [lair.GetName]'daki ininden ayrılıp [destination.GetName] bölgesine doğru uçarken görüldü."
+wild_dragon_left_lair.desc:0 "[dragon.GetName], [lair.GetName] konumundaki ininden ayrılıp [destination.GetName] bölgesine doğru uçarken görüldü."
 
 # Effects
 agot_spawn_dragon_effect.interface.t:0 "Ejderha Saraya Katıldı"
 agot_spawn_dragon_effect.interface.desc:0 "[dragon.GetName] saraya katıldı."
 agot_spawn_wild_dragon_effect.interface.t:0 "Vahşi Bir Ejderha Ortaya Çıktı"
-agot_spawn_wild_dragon_effect.interface.desc:0 "[dragon.GetName], [dragon.GetCurrentLocation.GetName]'da ortaya çıktı."
+agot_spawn_wild_dragon_effect.interface.desc:0 "[dragon.GetName], [dragon.GetCurrentLocation.GetName] konumunda ortaya çıktı."
 agot_reveal_dragon_gender_effect_tt_male:0 "[dragon.GetNamePossessive] cinsiyetinin erkek olduğu ortaya çıktı."
 agot_reveal_dragon_gender_effect_tt_female:0 "[dragon.GetNamePossessive] cinsiyetinin dişi olduğu ortaya çıktı."
-dragonpit_was_ruinized_tt:0 "Bu diyardaki [dragonpit|E] yok edilecek. İçeride kilitli olan tüm dragons_pluralE] serbest bırakılacak."
+dragonpit_was_ruinized_tt:0 "Bu diyardaki [dragonpit|E] yok edilecek. İçeride kilitli olan tüm [dragons_plural|E] serbest bırakılacak."
 free_dragon_tt:0 "[free_dragon_for_effect.GetFirstName] bir [wild_dragon|E] olacak."
 #Dragon Mil Tooltip Stuff
 realm_dragons_faux_tt:0 "Diyar [dragons_plural|E]ı:"
@@ -57,7 +57,7 @@ dragons_versus_war_overview_attacker_text:0 "Saldıranların Ejderhaları:"
 dragons_versus_war_overview_defender_text:0 "Savunanların Ejderhaları:"
 
 building_dragonpit_effect:0 "Bu bina bir [dragonpit|e] görevi görür ve [county|e] sahibinin [dragons_plural|e]ı beslemesine olanak tanır. Ancak, içinde tutulan ejderhalar sağlık ve büyüme cezaları çekecektir."
-building_dragonmont_dragonpit_effect:0 "Bu bina bir [natural_dragonpit|e] görevi görür ve [county|e] sahibinin [dragons_plural|e]ıı beslemesine olanak tanır. İçeride kilitli olan ejderhalar, yapay bir ejderha çukurunda bulunan bir ejderhaya göre çok daha az acı çekecektir."
+building_dragonmont_dragonpit_effect:0 "Bu bina bir [natural_dragonpit|e] görevi görür ve [county|e] sahibinin [dragons_plural|e]ı beslemesine olanak tanır. İçeride kilitli olan ejderhalar, yapay bir ejderha çukurunda bulunan bir ejderhaya göre çok daha az acı çekecektir."
 
 GET_DRAGON:0 "[TARGET_CHARACTER.GetShortUINamePossessive] ejderha binicisi olur"
 GOT_DRAGON:0 "[TARGET_CHARACTER.GetShortUINamePossessive] ejderha binicisi oldu"
@@ -118,9 +118,9 @@ dragon_darkest_key_F:0 "dark"
 
 tame_unbonded_dragon_scheme_scheme_power_mult:1 "[GetScheme('tame_unbonded_dragon_scheme').GetTypeName] [scheme_power|E]"
 
-title_is_dragonpit_warning:0 "@warning_icon! #warning [target.GetNameNoTier]'ın bir [dragonpit|e]'i var, burayı vermek, kontrolünü dışarıdan bir hükümdara bırakmak anlamına gelir!#!"
-title_is_dragonpit_and_ruler_is_not_king_warning:0 "@warning_icon! #warning [target.GetNameNoTier]'ın bir [dragonpit|e]'i var, [recipient.GetShortUIName] kral seviyesinde bir hükümdar değil, bu da ejderha çukuruna erişimini sınırlayacaktır!#!"
+title_is_dragonpit_warning:0 "@warning_icon! #warning [target.GetNameNoTier], bir [dragonpit|e]na sahip, burayı vermek, kontrolünü dışarıdan bir hükümdara bırakmak anlamına gelir!#!"
+title_is_dragonpit_and_ruler_is_not_king_warning:0 "@warning_icon! #warning [target.GetNameNoTier], bir [dragonpit|e]na sahip, [recipient.GetShortUIName] kral seviyesinde bir hükümdar değil, bu da ejderha çukuruna erişimini sınırlayacaktır!#!"
 
-has_a_relation_dragon_trigger_tooltip:0 "Bir [tamed_dragon|E]'ı var" 
-has_a_dragon_egg_artifact_tooltip:0 "Bir [dragon|E] yumurtası [artifact|e]'ı var"
+has_a_relation_dragon_trigger_tooltip:0 "Bir [tamed_dragon|E]sı var" 
+has_a_dragon_egg_artifact_tooltip:0 "Bir [dragon|E] yumurtası var"
 dragons_are_extant_desc_tooltip:0 "[dragons_plural|E] dünyada mevcut"
