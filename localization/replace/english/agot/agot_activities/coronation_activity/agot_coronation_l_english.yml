@@ -1,4 +1,5 @@
 ﻿l_english:
+#mustafa+
  #Tooltips
 agot_is_coronated_crown_tooltip_desc:0 "Taç Giydirilmiş"
 agot_was_crowned_third_tooltip:0 "[officiant.GetShortUIName|U], [coronation_target.GetShortUIName] adlı kişiyi taçlandırdı"
@@ -43,10 +44,10 @@ coronation_officiant_desc:0 "Bazen, bir hükümdarın başına tacı koyan kişi
 coronation_officiant_desc_for_host:0 "$coronation_officiant_desc$"
 
 
-TRAVEL_NAME_FOR_activity_coronation:1 "[Character.GetFirstNamePossessiveNoTooltip]'ın [Activity.GetNameNoTooltip]'a yolculuğu"
-HEAD_OF_FAITH_REASON:0 "[ROOT.Char.GetSheHe|U] sizin İnanç Lideriniz: $VALUE|=+0$"
-CORONATION_ALLY_REASON:0 "[allies|E]sınız: $VALUE|=+0$"
-CORONATION_OFFICIANT_REASON:0 "[ROOT.Char.GetSheHe|U] Tören Görevlisi olacak: $VALUE|=+0$"
+TRAVEL_NAME_FOR_activity_coronation:1 "[Character.GetFirstNamePossessiveNoTooltip] [Activity.GetNameNoTooltip]ne yolculuğu"
+HEAD_OF_FAITH_REASON:0 "O sizin İnanç Lideriniz: $VALUE|=+0$"
+CORONATION_ALLY_REASON:0 "[allies|E]iniz: $VALUE|=+0$"
+CORONATION_OFFICIANT_REASON:0 "O Tören Görevlisi olacak: $VALUE|=+0$"
 
 ACTIVITY_GUEST_OPTION_CORONATION_POMP_GRANDIOSE:0 "Görkemli Debdebe: $VALUE|=+0$"
 ACTIVITY_GUEST_OPTION_CORONATION_POMP_IMPRESSIVE:0 "Etkileyici Debdebe: $VALUE|=+0$"
@@ -55,20 +56,20 @@ ACTIVITY_GUEST_OPTION_CORONATION_POMP_HUMBLE:0 "Mütevazı Debdebe: $VALUE|=+0$"
 
 activity_coronation_destination_selection:0 "Seçilen kontluk 5 yıl boyunca [GetModifier( 'recent_coronation_modifier' ).GetNameWithTooltip|L] değiştiricisini alacak."
 activity_coronation_host_desc:0 "\n$BULLET_WITH_TAB$[legitimacy_i][legitimacy|E]\n$BULLET_WITH_TAB$[prestige_i][prestige|E]\n$BULLET_WITH_TAB$[piety_i][piety|E]\n$BULLET_WITH_TAB$[opinion_i][opinion|E]\n$BULLET_WITH_TAB$[stress_loss_i][stress|E] Kaybı\n$BULLET_WITH_TAB$[GetVassalStance( 'glory_hound' ).GetTextIcon][GetVassalStance( 'glory_hound' ).GetName] [vassals|E] [opinion|E]\n$BULLET_WITH_TAB$[GetVassalStance( 'courtly' ).GetTextIcon][GetVassalStance( 'courtly' ).GetName] [vassals|E] [opinion|E]\n$BULLET_WITH_TAB$[GetVassalStance( 'parochial' ).GetTextIcon][GetVassalStance( 'parochial' ).GetName] [vassals|E] [opinion|E]\n$BULLET_WITH_TAB$[GetVassalStance( 'zealot' ).GetTextIcon][GetVassalStance( 'zealot' ).GetName] [vassals|E] [opinion|E]\n$BULLET_WITH_TAB$[GetTrait('lifestyle_reveler').GetName( GetNullCharacter )] [trait_level_track_xp|E] kazanabilirsiniz\n\n@alert_icon! #alert_trial Taç Giyme Törenleri ömür boyu #V yalnızca bir kez#! düzenlenebilir#!"
-activity_coronation_guest_desc:0 "$BULLET_WITH_TAB$ Katılımcılar, katılan karakterlerin [opinion|E]nı kazanabilirler\n$BULLET_WITH_TAB$ Katılımcılar [stress_loss_i][stress|E] kaybedebilirler"
+activity_coronation_guest_desc:0 "$BULLET_WITH_TAB$ Katılımcılar, katılan karakterlerin [opinion|E]ünü kazanabilirler\n$BULLET_WITH_TAB$ Katılımcılar [stress_loss_i][stress|E] kaybedebilirler"
 activity_coronation_conclusion_desc:1 "[GetActivityType( 'activity_coronation' ).GetName] sona erdi"
-activity_coronation_guest_help_text:0 "Davet edilen herhangi bir [guests|E], sizin hakkındaki [opinion|E]nı artırma fırsatına sahip olacaktır.\nTaç Giyme Törenleri ayrıca [prestige|E] kazanmak, biraz [stress|E] kaybetmek, [piety|E] kazanmak ve [legitimacy|E]nizi artırmak için bir fırsattır."
+activity_coronation_guest_help_text:0 "Davet edilen herhangi bir [guest|E], sizin hakkındaki [opinion|E]ünü artırma fırsatına sahip olacaktır.\nTaç Giyme Törenleri ayrıca [prestige|E] kazanmak, biraz [stress|E] kaybetmek, [piety|E] kazanmak ve [legitimacy|E]inizi artırmak için bir fırsattır."
 coronation_positive_increase:0 "#P artış#!"
 coronation_negative_decrease:0 "#N azalış#!"
 coronation_option_pomp:0 "Debdebe"
 coronation_pomp_humble:0 "Mütevazı"
-coronation_pomp_humble_desc:1 "$EFFECT_LIST_BULLET$ [GetVassalStance( 'zealot' ).GetName] ve [GetVassalStance( 'parochial' ).GetName] [vassal|E] [opinion|E]nı $coronation_positive_increase$ edecektir.\n$EFFECT_LIST_BULLET$ [GetVassalStance( 'courtly' ).GetName] ve [GetVassalStance( 'glory_hound' ).GetName] [vassal|E] [opinion|E]nı $coronation_negative_decrease$ edecektir.\n$EFFECT_LIST_BULLET$ Tamamlandığında çok daha fazla [piety|E] kazanılır, ancak daha az [legitimacy|E] ve [prestige|E] kazanılır.\n\n#weak Gösterişsiz, sadece başınıza bir taç yerleştirilmesi. Taç giyme töreni, tanrılara olan saygınızı kanıtlama zamanıdır; egonuzu şişirmek için değil.#!"
+coronation_pomp_humble_desc:1 "$EFFECT_LIST_BULLET$ [GetVassalStance( 'zealot' ).GetName] ve [GetVassalStance( 'parochial' ).GetName] [vassal|E] [opinion|E]ünü $coronation_positive_increase$ edecektir.\n$EFFECT_LIST_BULLET$ [GetVassalStance( 'courtly' ).GetName] ve [GetVassalStance( 'glory_hound' ).GetName] [vassal|E] [opinion|E]ünü $coronation_negative_decrease$ edecektir.\n$EFFECT_LIST_BULLET$ Tamamlandığında çok daha fazla [piety|E] kazanılır, ancak daha az [legitimacy|E] ve [prestige|E] kazanılır.\n\n#weak Gösterişsiz, sadece başınıza bir taç yerleştirilmesi. Taç giyme töreni, tanrılara olan saygınızı kanıtlama zamanıdır; egonuzu şişirmek için değil.#!"
 coronation_pomp_appropriate:0 "Uygun"
-coronation_pomp_appropriate_desc:0 "$EFFECT_LIST_BULLET$ [GetVassalStance( 'parochial' ).GetName] ve [GetVassalStance( 'zealot' ).GetName] [vassal|E] [opinion|E]nı $coronation_positive_increase$ edecektir.\n$EFFECT_LIST_BULLET$ [GetVassalStance( 'courtly' ).GetName] ve [GetVassalStance( 'glory_hound' ).GetName] [vassal|E] [opinion|E]nı $coronation_negative_decrease$ edecektir.\n$EFFECT_LIST_BULLET$ Tamamlandığında [piety|E], [legitimacy|E] ve [prestige|E] ödülleri etkilenmez\n\n#weak Diyarın hem büyük hem de küçük hanedanları, yalnızca başınıza bir taç konulduğunda sizi meşru olarak görecektir. Ancak o zaman diz çökecekler.#!"
+coronation_pomp_appropriate_desc:0 "$EFFECT_LIST_BULLET$ [GetVassalStance( 'parochial' ).GetName] ve [GetVassalStance( 'zealot' ).GetName] [vassal|E] [opinion|E]ünü $coronation_positive_increase$ edecektir.\n$EFFECT_LIST_BULLET$ [GetVassalStance( 'courtly' ).GetName] ve [GetVassalStance( 'glory_hound' ).GetName] [vassal|E] [opinion|E]ünü $coronation_negative_decrease$ edecektir.\n$EFFECT_LIST_BULLET$ Tamamlandığında [piety|E], [legitimacy|E] ve [prestige|E] ödülleri etkilenmez\n\n#weak Diyarın hem büyük hem de küçük hanedanları, yalnızca başınıza bir taç konulduğunda sizi meşru olarak görecektir. Ancak o zaman diz çökecekler.#!"
 coronation_pomp_impressive:0 "Etkileyici"
-coronation_pomp_impressive_desc:0 "$EFFECT_LIST_BULLET$ [GetVassalStance( 'courtly' ).GetName] ve [GetVassalStance( 'glory_hound' ).GetName] [vassal|E] [opinion|E]nı $coronation_positive_increase$ edecektir.\n$EFFECT_LIST_BULLET$ [GetVassalStance( 'parochial' ).GetName] ve [GetVassalStance( 'zealot' ).GetName] [vassal|E] [opinion|E]nı $coronation_negative_decrease$ edecektir.\n$EFFECT_LIST_BULLET$ Tamamlandığında daha az [piety|E] kazanılır.\n$EFFECT_LIST_BULLET$ Tamamlandığında daha fazla [legitimacy|E] ve [prestige|E] kazanılır.\n\n#weak Uygun bir taç giyme töreni resmiyet gerektirir, bunlar hüküm sürenlerden beklenen şeylerdir. Diyarın tüm lordlarının yeminlerine sadık kalmasını sağlamak için hiçbir masraftan kaçınmadınız.#!"
+coronation_pomp_impressive_desc:0 "$EFFECT_LIST_BULLET$ [GetVassalStance( 'courtly' ).GetName] ve [GetVassalStance( 'glory_hound' ).GetName] [vassal|E] [opinion|E]ünü $coronation_positive_increase$ edecektir.\n$EFFECT_LIST_BULLET$ [GetVassalStance( 'parochial' ).GetName] ve [GetVassalStance( 'zealot' ).GetName] [vassal|E] [opinion|E]ünü $coronation_negative_decrease$ edecektir.\n$EFFECT_LIST_BULLET$ Tamamlandığında daha az [piety|E] kazanılır.\n$EFFECT_LIST_BULLET$ Tamamlandığında daha fazla [legitimacy|E] ve [prestige|E] kazanılır.\n\n#weak Uygun bir taç giyme töreni resmiyet gerektirir, bunlar hüküm sürenlerden beklenen şeylerdir. Diyarın tüm lordlarının yeminlerine sadık kalmasını sağlamak için hiçbir masraftan kaçınmadınız.#!"
 coronation_pomp_grandiose:0 "Görkemli"
-coronation_pomp_grandiose_desc:0 "$EFFECT_LIST_BULLET$ [GetVassalStance( 'glory_hound' ).GetName] ve [GetVassalStance( 'courtly' ).GetName] [vassal|E] [opinion|E]nı $coronation_positive_increase$ edecektir.\n$EFFECT_LIST_BULLET$ [GetVassalStance( 'parochial' ).GetName] ve [GetVassalStance( 'zealot' ).GetName] [vassal|E] [opinion|E]nı $coronation_negative_decrease$ edecektir.\n$EFFECT_LIST_BULLET$ Tamamlandığında çok daha az [piety|E] kazanılır.\n$EFFECT_LIST_BULLET$ Tamamlandığında çok daha fazla [legitimacy|E] ve [prestige|E] kazanılır.\n\n#weak Gösteriş yapamazsanız hüküm sürmenin ne anlamı var? En azından bu, gösterişli kibrinizin yaşayan bir anıtı olacak.#!"
+coronation_pomp_grandiose_desc:0 "$EFFECT_LIST_BULLET$ [GetVassalStance( 'glory_hound' ).GetName] ve [GetVassalStance( 'courtly' ).GetName] [vassal|E] [opinion|E]ünü $coronation_positive_increase$ edecektir.\n$EFFECT_LIST_BULLET$ [GetVassalStance( 'parochial' ).GetName] ve [GetVassalStance( 'zealot' ).GetName] [vassal|E] [opinion|E]ünü $coronation_negative_decrease$ edecektir.\n$EFFECT_LIST_BULLET$ Tamamlandığında çok daha az [piety|E] kazanılır.\n$EFFECT_LIST_BULLET$ Tamamlandığında çok daha fazla [legitimacy|E] ve [prestige|E] kazanılır.\n\n#weak Gösteriş yapamazsanız hüküm sürmenin ne anlamı var? En azından bu, gösterişli kibrinizin yaşayan bir anıtı olacak.#!"
 
 activity_window_character_coronation_target:1 "[Character.Custom('GetQueenKing')|U]\n[Character.GetShortUINameNoTooltip|U]"
 activity_window_character_travel_coronation_target:1 "[Character.Custom('GetQueenKing')|U]\n[Character.GetShortUINameNoTooltip|U]"
@@ -98,32 +99,32 @@ performed_coronation_desc_1:1 "[coronation_target.GetTitledFirstNameNicknamedPos
 performed_coronation_desc_second_perspective_1:1 "[coronation_target.GetTitledFirstNameNicknamedPossessive] taç giyme törenini gerçekleştirdiniz"
 performed_coronation_desc_third_perspective_1:1 "[owner.GetTitledFirstNameNicknamed], [coronation_target.GetTitledFirstNameNicknamedPossessive] taç giyme törenini gerçekleştirdi"
 
-witnessed_coronation:1 "[officiant.GetTitledFirstNameNicknamed]'ın [coronation_target.GetTitledFirstNameNicknamed]'ı taçlandırmasına tanık oldu"
-witnessed_coronation_desc_1:1 "[officiant.GetTitledFirstNameNicknamed]'ın [coronation_target.GetTitledFirstNameNicknamed]'ı taçlandırmasına tanık oldum"
-witnessed_coronation_desc_second_perspective_1:1 "[officiant.GetTitledFirstNameNicknamed]'ın [coronation_target.GetTitledFirstNameNicknamed]'ı taçlandırmasına tanık oldunuz"
-witnessed_coronation_desc_third_perspective_1:1 "[owner.GetTitledFirstName], [officiant.GetTitledFirstNameNicknamed]'ın [coronation_target.GetTitledFirstNameNicknamed]'ı taçlandırmasına tanık oldu"
+witnessed_coronation:1 "[officiant.GetTitledFirstNameNicknamed] adlı kişinin [coronation_target.GetTitledFirstNameNicknamed] adlı kişiyi taçlandırmasına tanık oldu"
+witnessed_coronation_desc_1:1 "[officiant.GetTitledFirstNameNicknamed] adlı kişinin [coronation_target.GetTitledFirstNameNicknamed] adlı kişiyi taçlandırmasına tanık oldum"
+witnessed_coronation_desc_second_perspective_1:1 "[officiant.GetTitledFirstNameNicknamed] adlı kişinin [coronation_target.GetTitledFirstNameNicknamed] adlı kişiyi taçlandırmasına tanık oldunuz"
+witnessed_coronation_desc_third_perspective_1:1 "[owner.GetTitledFirstName], [officiant.GetTitledFirstNameNicknamed] adlı kişinin [coronation_target.GetTitledFirstNameNicknamed] adlı kişiyi taçlandırmasına tanık oldu"
 
 #Opinions
-came_to_my_coronation_opinion:0 "[GetActivityType( 'activity_coronation' ).GetName]'ıma Geldi"
-chose_me_to_crown_opinion:0 "Beni [GetActivityType( 'activity_coronation' ).GetName] Tören Görevlisi Olarak Seçti"
+came_to_my_coronation_opinion:0 "[GetActivityType( 'activity_coronation' ).GetName]me Geldi"
+chose_me_to_crown_opinion:0 "Beni [GetActivityType( 'activity_coronation' ).GetName] için Tören Görevlisi Olarak Seçti"
 
 hosted_grandiose_coronation_opinion:0 "Görkemli [GetActivityType( 'activity_coronation' ).GetName] Düzenledi"
 hosted_impressive_coronation_opinion:0 "Etkileyici [GetActivityType( 'activity_coronation' ).GetName] Düzenledi"
 hosted_appropriate_coronation_opinion:0 "Uygun [GetActivityType( 'activity_coronation' ).GetName] Düzenledi"
 hosted_humble_coronation_opinion:0 "Mütevazı [GetActivityType( 'activity_coronation' ).GetName] Düzenledi"
-refused_to_be_officiant_opinion:0 "[GetActivityType( 'activity_coronation' ).GetName]'ımı Yönetmeyi Reddetti"
+refused_to_be_officiant_opinion:0 "[GetActivityType( 'activity_coronation' ).GetName]mi Yönetmeyi Reddetti"
 hof_officiated_coronation_opinion:0 "İnanç Lideri Tarafından Yönetilen [GetActivityType( 'activity_coronation' ).GetName] Düzenledi"
 
 legitimized_my_house_member_opinion:0 "Hanedan Üyemi Meşrulaştırdı"
 refused_to_legitimize_my_house_member_opinion:0 "Hanedan Üyemi Meşrulaştırmayı Reddetti"
 coronation_treachery_opinion:0 "$treachery_opinion$"
 
-best_friend_great_time_at_coronation:0 "[CHARACTER.GetShortUIName] ve [TARGET_CHARACTER.GetShortUIName], bir taç giyme töreni ziyafetinde birbirlerinin arkadaşlığından zevk almak için herkesi görmezden geldi."
-best_friend_great_time_at_coronation_corresponding:0 "[TARGET_CHARACTER.GetShortUIName] ve [CHARACTER.GetShortUIName], bir taç giyme töreni ziyafetinde birbirlerinin arkadaşlığından zevk almak için herkesi görmezden geldi."
+best_friend_great_time_at_coronation:0 "[CHARACTER.GetShortUIName] ve [TARGET_CHARACTER.GetShortUIName], bir taç giyme töreni ziyafetinde birbirleriyle olan arkadaşlıklarından diğer herkesi görmezden geldi."
+best_friend_great_time_at_coronation_corresponding:0 "[TARGET_CHARACTER.GetShortUIName] ve [CHARACTER.GetShortUIName], bir taç giyme töreni ziyafetinde birbirleriyle olan arkadaşlıklarından diğer herkesi görmezden geldi."
 
 
-friend_coronation_made_officiant:0 "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'ı [CHARACTER.GetHerHim|l]'ı taçlandırması için seçti."
-friend_coronation_made_officiant_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'ı [TARGET_CHARACTER.GetHerHim|l]'ı taçlandırması için seçti."
+friend_coronation_made_officiant:0 "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName] adlı kişiyi onu taçlandırması için seçti."
+friend_coronation_made_officiant_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName] adlı kişiyi onu taçlandırması için seçti."
  
 friend_great_time_at_coronation:0 "[CHARACTER.GetShortUIName] ve [TARGET_CHARACTER.GetShortUIName], bir taç giyme töreni ziyafetinde sohbet ederek zaman geçirdi ve birbirlerinin arkadaşlığından keyif aldı."
 friend_great_time_at_coronation_corresponding:0 "[TARGET_CHARACTER.GetShortUIName] ve [CHARACTER.GetShortUIName], bir taç giyme töreni ziyafetinde sohbet ederek zaman geçirdi ve birbirlerinin arkadaşlığından keyif aldı."
@@ -134,23 +135,23 @@ rival_bad_time_at_wedding_coronation:0 "[TARGET_CHARACTER.GetShortUIName], bir t
 friend_reconciled_at_coronation:0 "Bir zamanlar zorlu rakipler olan [CHARACTER.GetShortUIName] ve [TARGET_CHARACTER.GetShortUIName], bir taç giyme töreninde barıştı."
 friend_reconciled_at_coronation_corresponding:0 "$friend_reconciled_at_coronation$"
 
-nemesis_spurned_reconciliation_at_coronation:0 "[TARGET_CHARACTER.GetShortUIName] barışmak istediğinde, [CHARACTER.GetShortUIName], [TARGET_CHARACTER.GetHerHim]'ı küçük düşürdü."
-nemesis_spurned_reconciliation_at_coronation_corresponding:0 "[CHARACTER.GetShortUIName] barışmak istediğinde, [TARGET_CHARACTER.GetShortUIName], [CHARACTER.GetHerHim]'ı küçük düşürdü."
+nemesis_spurned_reconciliation_at_coronation:0 "[TARGET_CHARACTER.GetShortUIName] barışmak istediğinde, [CHARACTER.GetShortUIName], onu küçük düşürdü."
+nemesis_spurned_reconciliation_at_coronation_corresponding:0 "[CHARACTER.GetShortUIName] barışmak istediğinde, [TARGET_CHARACTER.GetShortUIName], onu küçük düşürdü."
 
 friend_coronation_enjoyable_chat:0 "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName], bir taç giyme töreni ziyafetinde birbirlerinin arkadaşlığından büyük keyif aldı."
 
-lover_coronation_saved_from_flames:0 "[CHARACTER.GetShortUIName|U], ters giden bir taç giyme töreni sırasında [TARGET_CHARACTER.GetShortUIName|U]'ı alevlerden kurtardı."
-lover_coronation_saved_from_flames_corresponding: "[CHARACTER.GetShortUIName|U], ters giden bir taç giyme töreni sırasında [TARGET_CHARACTER.GetShortUIName|U]'ı alevlerden kurtardı."
+lover_coronation_saved_from_flames:0 "[CHARACTER.GetShortUIName|U], ters giden bir taç giyme töreni sırasında [TARGET_CHARACTER.GetShortUIName|U] adlı kişiyi alevlerden kurtardı."
+lover_coronation_saved_from_flames_corresponding: "[CHARACTER.GetShortUIName|U], ters giden bir taç giyme töreni sırasında [TARGET_CHARACTER.GetShortUIName|U] adlı kişiyi alevlerden kurtardı."
 
-friend_coronation_saved_from_beasts:0 "[CHARACTER.GetShortUIName|U], bir taç giyme töreni ziyafetinde [TARGET_CHARACTER.GetShortUIName]'ı kaçan hayvanlardan kurtardı."
-friend_coronation_saved_from_beasts_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], bir taç giyme töreni ziyafetinde [CHARACTER.GetShortUIName]'ı kaçan hayvanlardan kurtardı."
+friend_coronation_saved_from_beasts:0 "[CHARACTER.GetShortUIName|U], bir taç giyme töreni ziyafetinde [TARGET_CHARACTER.GetShortUIName] adlı kişiyi kaçan vahşi hayvanlardan kurtardı."
+friend_coronation_saved_from_beasts_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], bir taç giyme töreni ziyafetinde [CHARACTER.GetShortUIName] adlı kişiyi kaçan vahşi hayvanlardan kurtardı."
 
-rival_dishonored_coronation_banquet:0 "[CHARACTER.GetShortUIName], [TARGET_CHARACTER.GetShortUIName]'ın [CHARACTER.GetHerHim]'dan kaçınmak için bir taç giyme töreni ziyafetinden gizlice ayrılmasından dolayı gücendi."
-rival_dishonored_coronation_banquet_corresponding:0 "[TARGET_CHARACTER.GetShortUIName], [CHARACTER.GetShortUIName]'ın [TARGET_CHARACTER.GetHerHim]'dan kaçınmak için bir taç giyme töreni ziyafetinden gizlice ayrılmasından dolayı gücendi."
+rival_dishonored_coronation_banquet:0 "[CHARACTER.GetShortUIName], [TARGET_CHARACTER.GetShortUIName] adlı kişinin ondan kaçınmak için bir taç giyme töreni ziyafetinden gizlice ayrılmasından dolayı gücendi."
+rival_dishonored_coronation_banquet_corresponding:0 "[TARGET_CHARACTER.GetShortUIName], [CHARACTER.GetShortUIName] adlı kişinin ondan kaçınmak için bir taç giyme töreni ziyafetinden gizlice ayrılmasından dolayı gücendi."
 
 friend_coronation:0 "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName|U], bir taç giyme töreninde yakınlaştı"
 
-friend_promised_to_support_claim:0 "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName|U]'ın hak iddiasını destekleme sözü verdi"
+friend_promised_to_support_claim:0 "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName|U] adlı kişinin hak iddiasını destekleme sözü verdi"
 
 rival_betrayed_confidence:0 "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUINamePossessive|U] güvenini sarstı"
 
@@ -164,14 +165,14 @@ legitimate_ruler_opinion:0 "Meşru Hükümdar"
 
 #Modifiers
 coronation_grandiose_modifier:0 "Görkemli Bir Taç Giyme Töreni Düzenledi"
-coronation_grandiose_modifier_desc:1 "Bu karakter görkemli bir [GetActivityType( 'activity_coronation' ).GetName]'da taçlandırıldı"
+coronation_grandiose_modifier_desc:1 "Bu karakter görkemli bir [GetActivityType( 'activity_coronation' ).GetName] ile taçlandırıldı"
 coronation_impressive_modifier:0 "Etkileyici Bir Taç Giyme Töreni Düzenledi"
-coronation_impressive_modifier_desc:1 "Bu karakter etkileyici bir [GetActivityType( 'activity_coronation' ).GetName]'da taçlandırıldı"
+coronation_impressive_modifier_desc:1 "Bu karakter etkileyici bir [GetActivityType( 'activity_coronation' ).GetName] ile taçlandırıldı"
 coronation_appropriate_modifier:0 "Uygun Bir Taç Giyme Töreni Düzenledi"
-coronation_appropriate_modifier_desc:1 "Bu karakter uygun bir [GetActivityType( 'activity_coronation' ).GetName]'da taçlandırıldı"
+coronation_appropriate_modifier_desc:1 "Bu karakter uygun bir [GetActivityType( 'activity_coronation' ).GetName] ile taçlandırıldı"
 coronation_humble_modifier:0 "Mütevazı Bir Taç Giyme Töreni Düzenledi"
-coronation_humble_modifier_desc:1 "Bu karakter mütevazı bir [GetActivityType( 'activity_coronation' ).GetName]'da taçlandırıldı"
-travel_to_coronation_modifier:0 "Kişisel Muhafız Birliği ile Seyahat Ediyor"
+coronation_humble_modifier_desc:1 "Bu karakter mütevazı bir [GetActivityType( 'activity_coronation' ).GetName] ile taçlandırıldı"
+travel_to_coronation_modifier:0 "Şahsi Muhafız Birliği ile Seyahat Ediyor"
 travel_to_coronation_modifier_desc:0 "Bu karakter önemli bir yolculukta. Sonuç olarak, güvenli bir şekilde varmalarını sağlamak için ekstra önlemler aldılar"
 
 coronation_rushed_modifier:0 "Aceleye Getirilmiş Taç Giyme Töreni"
@@ -228,26 +229,26 @@ every_glory_hound_vassal_coronation:0 "Her $glory_hound_vassal$"
 every_parochial_vassal_coronation:0 "Her $parochial_vassal$"
 every_zealot_vassal_coronation:0 "Her $zealot_vassal$"
 
-coronation_start_log_title:0 "[host.GetShortUINamePossessiveNoTooltip]'ın Taç Giyme Töreni Başlıyor"
-coronation_start_log:0 "Kuzgunlar gönderildi ve diyarın lordları, Yedi Krallık'ın yeni [host.GetTitleAsNameNoTooltip]'ı olarak [host.GetFirstNamePossessiveNoTooltip]'ın taç giyme törenine tanık olmak için yola koyuldu."
+coronation_start_log_title:0 "[host.GetShortUINamePossessiveNoTooltip] Taç Giyme Töreni Başlıyor"
+coronation_start_log:0 "Kuzgunlar gönderildi ve diyarın lordları, Yedi Krallık'ın yeni [host.GetTitleAsNameNoTooltip] olarak [host.GetFirstNamePossessiveNoTooltip] taç giyme törenine tanık olmak için yola koyuldu."
 
 coronation_officiant_arrives_log_title:0 "[ROOT.Char.GetShortUINameNoTooltip] Geliyor"
-coronation_officiant_arrives_log:0 "[ROOT.Char.GetShortUIName], tören görevlisi olarak [ROOT.Char.GetHerHis|l] görevini yerine getirmek için [county.GetNameNoTier]'a geldi."
+coronation_officiant_arrives_log:0 "[ROOT.Char.GetShortUIName], tören görevlisi olarak görevini yerine getirmek için [county.GetNameNoTier] konumuna geldi."
 
 coronation_slip_log_title:0 "[coronation_target.GetShortUINameNoTooltip|U], [sabotage_target_throne.GetNameNoTooltip] Üzerinde Kayıyor"
 coronation_slip_title:0 "[coronation_target.GetShortUINameNoTooltip|U], [sabotage_target_throne.GetNameNoTooltip] Üzerinde Kaydı"
-coronation_slip_log:0 "[coronation_target.GetShortUIName|U], [sabotage_target_throne.GetNameNoTooltip]'ın en üst basamağında kayarak yere yuvarlandı."
+coronation_slip_log:0 "[coronation_target.GetShortUIName|U], [sabotage_target_throne.GetNameNoTooltip] en üst basamağında kayarak yere yuvarlandı."
 
 coronation_recovery_log_title:0 "[coronation_target.GetShortUINameNoTooltip|U] Kaymadan Kurtuluyor"
 coronation_recovery_title:0 "[coronation_target.GetShortUINameNoTooltip|U] Kaymadan Kurtuldu"
-coronation_recovery_log:0 "[coronation_target.GetShortUIName|U], [sabotage_target_throne.GetNameNoTooltip]'ın en üst basamağında ayağının kaymasından kurtulmayı başardı."
+coronation_recovery_log:0 "[coronation_target.GetShortUIName|U], [sabotage_target_throne.GetNameNoTooltip] en üst basamağında ayağının kaymasından kurtulmayı başardı."
 
 coronation_homage_submission_log_title:0 "[vassal.GetShortUINameNoTooltip|U] Diz Çöküyor"
-coronation_homage_submission_log:0 "[vassal.GetShortUIName|U] yalnızca [vassal.GetHerHis|l] sadakatini sundu."
+coronation_homage_submission_log:0 "[vassal.GetShortUIName|U] yalnızca sadakatini sundu."
 coronation_homage_gold_log_title:0 "[vassal.GetShortUINameNoTooltip|U] Diz Çöküyor"
 coronation_homage_gold_log:0 "[vassal.GetShortUIName|U] altın hediye etti."
 coronation_homage_hook_log_title:0 "[vassal.GetShortUINameNoTooltip|U] Diz Çöküyor"
-coronation_homage_hook_log:0 "[vassal.GetShortUIName|U], tacı gelecekte bir iyilik yapacağına söz verdi."
+coronation_homage_hook_log:0 "[vassal.GetShortUIName|U], taca gelecekte bir iyilik yapacağına söz verdi."
 coronation_homage_contract_log_title:0 "[vassal.GetShortUINameNoTooltip|U] Diz Çöküyor"
 coronation_homage_contract_log:0 "[vassal.GetShortUIName|U], taca olan vergilerini artırdı."
 coronation_homage_refusal_log_title:0 "[vassal.GetShortUINameNoTooltip|U] Diz Çökmeyi Reddediyor"
