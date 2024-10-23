@@ -96,7 +96,7 @@ agot_crown_theft.0110.a.tt:0 "Savaşın eşiğindeyim..."
 agot_crown_theft.0110.b:0 "Yeni [Select_CString(crown_thief.IsFemale,'kraliçeyi','kralı')] kışkırtmamalıyım."
 
  #USURPER RECEIVES LETTER FROM LEGITIMATE HEIR: TO STEP DOWN, USURPER OFFERS SOME ARTIFACT OR LAND, OR NOTHING FOR LEGITIMATE HEIR AS A PRICE OF PEACE
-agot_crown_theft.0111.opening:0 "Gasapçı [Select_CString(crown_thief.IsFemale,'Kraliçe','Kral')] [crown_thief.GetTitledFirstNameNoTooltip],"
+agot_crown_theft.0111.opening:0 "[crown_thief.Custom('UsurperName')] için,"
 agot_crown_theft.0211.opening:0 "Hain [usurper_guardian.GetTitledFirstNameNoTooltip],"
 agot_crown_theft.0311.opening:0 "Piç [Select_CString(crown_thief.IsFemale,'Kraliçe','Kral')] [crown_thief.GetTitledFirstNameNoTooltip],"
 agot_crown_theft.0411.opening:0 "Gayrımeşru [Select_CString(crown_thief.IsFemale,'Kraliçe','Kral')] [crown_thief.GetTitledFirstNameNoTooltip],"
@@ -127,7 +127,7 @@ agot_crown_theft.0113.a:0 "Makul bir teklif."
 agot_crown_theft.0113.b:0 "Ya tahttan çekilirsin ya da savaşla karşılaşırsın!" 
 
  #USURPER RECEIVES LETTER FROM LEGITIMATE HEIR: ULTIMATUM RECEIVED: WAR OR ABDICATION
-agot_crown_theft.0114.opening:0 "Gasapçı [crown_thief.GetTitledFirstNameNoTooltip],"
+agot_crown_theft.0114.opening:0 "[crown_thief.Custom('UsurperName')] için,"
 agot_crown_theft.0114.desc:0 "Derhal tahttan çekil, aksi takdirde savaşın alevleri seni ve hırsını yok edecektir. Akıllıca davran, bu son uyarım."
 agot_crown_theft.0114.a:0 "Öyleyse savaş kaçınılmaz!"
 agot_crown_theft.0114.b:0 "Ne pahasına olursa olsun barışı sağlamalıyım."
@@ -216,13 +216,13 @@ agot_crown_theft.0418.desc:0 "Soylu geleneklerine meydan okuyarak, mirastan mahr
 agot_crown_theft.0418.a:0 "Taht artık benim."
 
  #REALM NOTIFIED: BASTARD KING
-agot_crown_theft.0422.t:0 "Gasapçı"
+agot_crown_theft.0422.t:0 "[crown_thief.Custom('UsurperName')]" 
 agot_crown_theft.0422.desc:0 "Şaşırtıcı gerçek, rüzgarda savrulan bir bayrak gibi tüm krallığa yayıldıkça, fısıltılar her yeri kaplıyor; kraliyet ailesinin mirastan mahrum bırakılmış bir üyesi, soylu doğum hakkının geleneklerine meydan okuyarak tahtı ele geçirdi.\n\nŞok dalgaları sarayın duvarlarında yankılanıyor ve sıradan halkın kulağına kadar ulaşıyor, ateşli tartışmalara yol açıyor ve yeni hükümdarın meşruiyeti konusunda şüpheler uyandırıyor."
 agot_crown_theft.0422.a:0 "Gayrımeşru bir [Select_CString(crown_thief.IsFemale,'kraliçe','kral')] mı dediniz?"
 
  #The prince arrives
 agot_crown_theft.0523.t:0 "Düşmüş Varisin Sığınağı"
-agot_crown_theft.0523.desc:0 "[crown_theft_king_legit_heir.GetTitledFirstName] ve eşi [legit_spouse.GetTitledFirstName], başkentten kaçtıktan sonra yorgun ve bitkin bir halde sarayıma sığındılar. Gaspçı tahtı ele geçirdi ve onları sürgüne zorladı.\n\nŞimdi, haklı olarak kendilerine ait olanı geri almak için destek toplamayı umarak, benden tavsiye ve yardım istiyorlar."
+agot_crown_theft.0523.desc:0 "[crown_theft_king_legit_heir.GetTitledFirstName] ve eşi [legit_spouse.GetTitledFirstName], başkentten kaçtıktan sonra yorgun ve bitkin bir halde sarayıma sığındılar. [crown_thief.Custom('UsurperName')] tahtı ele geçirdi ve onları sürgüne zorladı.\n\nŞimdi, haklı olarak kendilerine ait olanı geri almak için destek toplamayı umarak, benden tavsiye ve yardım istiyorlar."
 agot_crown_theft.0523.a:0 "Artık emin ellerdeler."
 
  #Spouse's House Head decides about support
@@ -235,7 +235,7 @@ agot_crown_theft.0518.b.tt:0 "Eğer [crown_theft_king_legit_heir.GetTitledFirstN
 
  #No Support
 agot_crown_theft.0519.t:0 "Kırılan Bir Umut"
-agot_crown_theft.0519.desc:0 "[landed_helper.GetTitledFirstName] adlı kişinin tahtımı geri almam için yardım talebimi reddetmesiyle kalbim paramparça oldu. Bu ret, gaspçıya karşı koymak ve haklı yerimi geri almak için gerekli desteği almamı engelledi.\n\nTahtıma giden yol şimdi kapanmış gibi görünüyor ve bu başarısızlığın ağır yükü omuzlarıma çöküyor. Adalet ve doğuştan gelen hakkımı geri alma hayali şimdilik rafa kalkmalı."
+agot_crown_theft.0519.desc:0 "[landed_helper.GetTitledFirstName] adlı kişinin tahtımı geri almam için yardım talebimi reddetmesiyle kalbim paramparça oldu. Bu ret, [crown_thief.Custom('UsurperName')] ve kuvvetlerine karşı koymak ve haklı yerimi geri almak için gerekli desteği almamı engelledi.\n\nTahtıma giden yol şimdi kapanmış gibi görünüyor ve bu başarısızlığın ağır yükü omuzlarıma çöküyor. Adalet ve doğuştan gelen hakkımı geri alma hayali şimdilik rafa kalkmalı."
 agot_crown_theft.0519.a:0 "Buna dayanacağım ve asla pes etmeyeceğim." 
 
  #Usurper Won
@@ -247,7 +247,7 @@ agot_crown_theft.0522.a:0 "Ve şimdi, gerçek saltanatım başlıyor."
 agot_crown_theft.0520.t:0 "Veraset Savaşı"
 agot_crown_theft.0520.desc:0 "Kuzgunlar kara haberlerle gökyüzünü kaplıyor, krallığın dört bir yanına savaşın haberini ulaştırıyor. Ufukta savaş davullarının gürültüsüyle yaklaşan bir fırtına var ve rakip taht talipleri [crown_thief.GetTitledFirstName] ile [crown_theft_king_legit_heir.GetTitledFirstName] arasında kanlı bir mücadelenin başlamak üzere olduğunu gösteriyor.\n\n[crown_theft_king.GetTitledFirstName] adlı kişinin ölüm döşeğindeyken [crown_thief.GetTitledFirstNameNoTooltip] adlı kişinin tacı ele geçirmesiyle başlayan gasp olayı, tüm kalelerde yankılanıyor. Şimdi, haklı varis [crown_theft_king_legit_heir.GetTitledFirstNameNoTooltip], [landed_helper.GetTitledFirstName] adlı kişinin desteğiyle savaş borazanlarını öttürdü ve kendisine ait olanı geri almak için amansız bir savaşa girdiğini ilan etti."
 
-agot_crown_theft.0623.desc:0 "[crown_theft_king_legit_heir.GetTitledFirstName], başkentten kaçtıktan sonra yorgun ve bitkin bir halde sarayıma sığındı. Gaspçı tahtı ele geçirdi ve onu sürgüne zorladı.\n\nŞimdi, haklı olarak kendisine ait olanı geri almak için destek toplamayı umarak, benden tavsiye ve yardım istiyor."
+agot_crown_theft.0623.desc:0 "[crown_theft_king_legit_heir.GetTitledFirstName], başkentten kaçtıktan sonra yorgun ve bitkin bir halde sarayıma sığındı. [crown_thief.Custom('UsurperName')] tahtı ele geçirdi ve onu sürgüne zorladı.\n\nŞimdi, haklı olarak kendisine ait olanı geri almak için destek toplamayı umarak, benden tavsiye ve yardım istiyor."
 agot_crown_theft.0623.a:0 "Artık güvende."
 
 agot_crown_theft.0618.desc:0 "Gasp edilen varis sarayıma sığındığında, bana tahtını geri alma arzusunu dile getirdi. Krallığın geleceğinin yükü şimdi omuzlarımda.\n\nBenim desteğim olmadan, davası kaybedilmiş bir dava gibi görünüyor. Ona yardım edip topraklarımın istikrarını riske mi atacağım, yoksa onu reddedip kendi krallığımın barışını mı koruyacağım?"
@@ -280,7 +280,7 @@ agot_crown_theft.9977.a:0 "[attacker.GetTitledFirstNameNoTooltip], tüm toprakla
 agot_crown_theft.9977.b:0 "Şimdilik onları elinde tutmasına izin verebilirim."
 
 agot_crown_theft.9978.t:0 "Teslimiyet"
-agot_crown_theft.9978.desc:0 "Gaspçı [defender.GetTitledFirstName] savaşı kazandı ve şimdi tüm topraklarımı teslim etmemi talep ediyor.\n\nOnun gücüne karşı koyabilecek hiçbir imkanım olmadığı için, bu talebi kabul etmek zorundayım."
+agot_crown_theft.9978.desc:0 "[defender.Custom('UsurperName')] [defender.GetFirstName] savaşı kazandı ve şimdi tüm topraklarımı teslim etmemi talep ediyor.\n\nOnun gücüne karşı koyabilecek hiçbir imkanım olmadığı için, bu talebi kabul etmek zorundayım."
 agot_crown_theft.9978.a:0 "Dünya ne kadar adaletsiz bir yer..."
 
 agot_crown_theft.9990.t:0 "Haklı Toprakların Geri Kazanılması"
