@@ -1,32 +1,32 @@
 ﻿l_english:
-#MUSTAFA+
+#MUSTAFA++
  small_councillor: "Küçük Konsey Üyesi"  
  invite_to_small_council: "Küçük Konsey'e Davet"  
- invite_to_small_council_prompt: "Bu vesileyle sizden [recipient.Custom2('RelationToMe',SCOPE.sC('secondary_recipient'))], [secondary_recipient.GetName] adlı kişiyi Küçük Konseyimde hizmet etmek üzere serbest bırakmanızı rica ediyorum. Bir akran vasal olarak, elbette bir müttefik olarak size bağlı kalacaklar."  
- recipient_secondary_invite_to_small_council: "Küçük Konsey Üyesi"  
- invite_to_small_council_accepted: "[secondary_recipient.GetShortUIName|U] konseyinize katılabilmek için doğrudan vasalınız olacak."  
- invite_to_small_council_declined: "[secondary_recipient.GetShortUIName|U] konseyinize katılmaz."  
+ invite_to_small_council_prompt: "Bu vesileyle sizden [recipient.Custom2('RelationToMe',SCOPE.sC('secondary_recipient'))], [secondary_recipient.GetName] adlı kişiyi Küçük Konseyimde görevlendirilmek üzere serbest bırakmanızı rica ediyorum. Doğrudan vasalınız olsa da, elbette bir müttefik olarak size sadık kalacaktır."  
+ recipient_secondary_invite_to_small_council: "Küçük Konsey Üyeliği"  
+ invite_to_small_council_accepted:0 "[secondary_recipient.GetShortUIName|U], konseyinize katılabilmek için doğrudan vasalınız olacaktır."  
+ invite_to_small_council_declined:0 "[secondary_recipient.GetShortUIName|U], konseyinize katılmayı reddetti."  
   
- small_council_vassal_retained_desc: "Zaten [TARGET_CHARACTER.GetShortUIName] Vasal'dan birini kullanıyorsunuz."  
-  
-  
- demanded_my_vassal_opinion: "Vasalımı İstedim"  
- refused_vassal_appointment_opinion: "Vasal'dan vazgeçmeyi reddetti"  
+ small_council_vassal_retained_desc:0 "Küçük Konsey'inizde zaten [TARGET_CHARACTER.GetShortUIName] tarafından atanmış bir vasalı görev yapıyor."   
   
   
- SMALL_COUNCIL_ON_THE_COUNCIL: "[secondary_recipient.GetShortUIName] benim Danışmanım: $VALUE|=+0$"  
- SMALL_COUNCIL_MY_KNIGHT: "[secondary_recipient.GetShortUIName], bana [recipient.GetLiege.Custom('KnightCulture')] olarak hizmet ediyor: $VALUE|=+0$"  
- SMALL_COUNCIL_THEIR_RELATIVE: "[secondary_recipient.GetShortUIName] benim akrabam: $VALUE|=+0$"  
-  
- small_councillor_custom: "[CHARACTER.Custom('small_councillor_custom')]"  
- small_councillor_custom_input: "[ROOT.Char.GetLocalizedText('small_council_title')]"  
-  
- set_relation_small_councillor: "[TARGET_CHARACTER.GetTitledFirstName|V] küçük konseyinizde hizmet vermeye başlar."  
+ demanded_my_vassal_opinion:0 "Vasalımı Talep Ettim"  
+ refused_vassal_appointment_opinion:0 "Vasalımı Vermeyi Reddetti"  
+   
+   
+ SMALL_COUNCIL_ON_THE_COUNCIL:0 "[secondary_recipient.GetShortUIName] benim Danışmanım: $VALUE|=+0$"  
+ SMALL_COUNCIL_MY_KNIGHT:0 "[secondary_recipient.GetShortUIName] bana [recipient.GetLiege.Custom('KnightCulture')] olarak hizmet ediyor: $VALUE|=+0$"  
+ SMALL_COUNCIL_THEIR_RELATIVE:0 "[secondary_recipient.GetShortUIName] benim akrabam: $VALUE|=+0$"  
+   
+ small_councillor_custom:0 "[CHARACTER.Custom('small_councillor_custom')]" 
+ small_councillor_custom_input:0 "[ROOT.Char.GetLocalizedText('small_council_title')]"  
+   
+ set_relation_small_councillor: "[TARGET_CHARACTER.GetTitledFirstName|V] Küçük Konsey'inizde görev almaya başladı."  
   
  ### MODIFIERS ###   
   
- small_council_vassal_repatriation:0 "Vassal Geri Çağırma"
- small_council_vassal_repatriation_desc:0 "Bu karakterin vassallarından biri, kendi hükümdarının konseyinde görev yapıyor, ancak onlara asker ve vergi göndermeye devam ediyor."
+ small_council_vassal_repatriation:0 "Vasalı Geri Çağırma"
+ small_council_vassal_repatriation_desc:0 "Bu karakterin vasallarından biri, başka bir hükümdarın Küçük Konsey'inde görev yapıyor; ancak size hala asker ve vergi gönderiyor."
   
  small_council_vassal_low_tax_low_levies_modifier:0 "$small_council_vassal_repatriation$"
  small_council_vassal_low_tax_low_levies_modifier_desc:0 "$small_council_vassal_repatriation_desc$"
