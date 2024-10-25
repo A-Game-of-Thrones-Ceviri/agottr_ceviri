@@ -1,5 +1,5 @@
 ﻿l_english:
-#MUSTAFA+
+#MUSTAFA++
 # Portraits / GUI
 MATES_LABEL:0 "Eş"
 CURRENT_HOST_LABEL:0 "Sahip"
@@ -22,21 +22,21 @@ dragon_owner_landed:0 "[ROOT.Char.GetTitledFirstNamePossessive]"
 
 # Notifications
 # Healing
-agot_dragon_healed.t:0 "[dragon.GetName] İyileşti" 
-agot_dragon_healed.tt:0 "[dragon.GetName] yarasından iyileşti."
-agot_dragon_same_location.t:0 "Ejderhaya Dönüldü"
-agot_dragon_same_location.tt:0 "[current_location.GetName] konumundan ordudan ayrıldınız ve [dragon_location.GetName]konumundaki ejderhanıza geri döndünüz."
+agot_dragon_healed.t:0 "[dragon.GetName] İyileşti"
+agot_dragon_healed.tt:0 "[dragon.GetName] yaralarından tamamen kurtuldu."
+agot_dragon_same_location.t:0 "Ejderhaya Dönüş"
+agot_dragon_same_location.tt:0 "[current_location.GetName] konumundaki ordudan ayrıldınız ve [dragon_location.GetName] konumunda bulunan ejderhanıza geri döndünüz."
 
 # Wild dragon notifications
-wild_dragon_returned_home.t:0 "[dragon.GetName] Geri Döndü"
-wild_dragon_returned_home.desc:0 "[dragon.GetName], [lair.GetName] konumundaki inine dönerken görüldü."
+wild_dragon_returned_home.t:0 "[dragon.GetName] Yuvasına Döndü"
+wild_dragon_returned_home.desc:0 "[dragon.GetName], [lair.GetName] konumundaki inine geri dönerken görüldü."
 wild_dragon_returned_home_from.t:0 "[dragon.GetName] Yuvasına Uçtu"
 wild_dragon_returned_home_from.desc:0 "[dragon.GetName], [lair.GetName] konumundaki inine geri uçarken görüldü."
-wild_dragon_travelling_arrived.t:0 "[dragon.GetName] Yakınlarda Dolaşıyor"
+wild_dragon_travelling_arrived.t:0 "[dragon.GetName] Yakınlarda Görüldü"
 wild_dragon_travelling_arrived.desc:0 "[lair.GetName] bölgesindeki ininde yaşadığı bilinen [dragon.GetName], [destination.GetName] yakınlarında dolaşırken görüldü."
-wild_dragon_left.t:0 "[dragon.GetName] Başka Yerde Dolaşıyor"
-wild_dragon_left.desc:0 "[dragon.GetName], [destination.GetName] bölgesine doğru uçarken görüldü."
-wild_dragon_left_lair.t:0 "[dragon.GetName] Dolaşıyor"
+wild_dragon_left.t:0 "[dragon.GetName] Uzaklara Uçtu"
+wild_dragon_left.desc:0 "[dragon.GetName], bilinmeyen bir nedenle [destination.GetName] bölgesine doğru uçarken görüldü."
+wild_dragon_left_lair.t:0 "[dragon.GetName] Yuvasını Terk Etti"
 wild_dragon_left_lair.desc:0 "[dragon.GetName], [lair.GetName] konumundaki ininden ayrılıp [destination.GetName] bölgesine doğru uçarken görüldü."
 
 # Effects
@@ -44,8 +44,8 @@ agot_spawn_dragon_effect.interface.t:0 "Ejderha Saraya Katıldı"
 agot_spawn_dragon_effect.interface.desc:0 "[dragon.GetName] saraya katıldı."
 agot_spawn_wild_dragon_effect.interface.t:0 "Vahşi Bir Ejderha Ortaya Çıktı"
 agot_spawn_wild_dragon_effect.interface.desc:0 "[dragon.GetName], [dragon.GetCurrentLocation.GetName] konumunda ortaya çıktı."
-agot_reveal_dragon_gender_effect_tt_male:0 "[dragon.GetNamePossessive] cinsiyetinin erkek olduğu ortaya çıktı."
-agot_reveal_dragon_gender_effect_tt_female:0 "[dragon.GetNamePossessive] cinsiyetinin dişi olduğu ortaya çıktı."
+agot_reveal_dragon_gender_effect_tt_male:0 "[dragon.GetName] adlı ejderhanın cinsiyetinin erkek olduğu ortaya çıktı."
+agot_reveal_dragon_gender_effect_tt_female:0 "[dragon.GetName] adlı ejderhanın cinsiyetinin dişi olduğu ortaya çıktı."
 dragonpit_was_ruinized_tt:0 "Bu diyardaki [dragonpit|E] yok edilecek. İçeride kilitli olan tüm [dragons_plural|E] serbest bırakılacak."
 free_dragon_tt:0 "[free_dragon_for_effect.GetFirstName] bir [wild_dragon|E] olacak."
 #Dragon Mil Tooltip Stuff
@@ -75,6 +75,17 @@ recipient_dragon_size_at_least_10:0 "[recipient.GetFirstName] en az 10 [dragon_s
 recipient_dragon_size_at_least_20:0 "[recipient.GetFirstName] en az 20 [dragon_size|E] büyüklüğünde"
 recipient_dragon_size_at_least_30:0 "[recipient.GetFirstName] en az 30 [dragon_size|E] büyüklüğünde"
 recipient_dragon_size_at_least_40:0 "[recipient.GetFirstName] en az 40 [dragon_size|E] büyüklüğünde"
+
+#Aşadaki kodlar deneme, eğer "[recipient.GetFirstName]" kodu sahipli insanı temsil ediyorsa aşadakiler kullanılacak yukardaki kodlar silinecek.
+
+#dragon_size_at_least_10:0 "[dragon_size|E] en az 10"
+#dragon_size_at_least_20:0 "[dragon_size|E] en az 20"
+#dragon_size_at_least_30:0 "[dragon_size|E] en az 30"
+#dragon_size_at_least_40:0 "[dragon_size|E] en az 40"
+#recipient_dragon_size_at_least_10:0 "[recipient.GetFirstName] adlı kişinin ejderhası en az 10 [dragon_size|E] büyüklüğünde"
+#recipient_dragon_size_at_least_20:0 "[recipient.GetFirstName] adlı kişinin ejderhası en az 20 [dragon_size|E] büyüklüğünde"
+#recipient_dragon_size_at_least_30:0 "[recipient.GetFirstName] adlı kişinin ejderhası en az 30 [dragon_size|E] büyüklüğünde"
+#recipient_dragon_size_at_least_40:0 "[recipient.GetFirstName] adlı kişinin ejderhası en az 40 [dragon_size|E] büyüklüğünde"
 
 # Color CusLoc Keys
 dragon_black_key:0 "siyah"
