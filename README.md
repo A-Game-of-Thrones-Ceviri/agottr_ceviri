@@ -1,20 +1,34 @@
-# A Game of Thrones Türkçe Çeviri 
+![AGOT Logo](https://i.imgur.com/wiysg2W.png)
 
-Batıdiyar'ın karmaşık siyasetini ve entrikalarını Crusader Kings 3'e taşıyan A Game of Thrones modunun Türkçe çevirisine hoş geldiniz! Bu proje, George R.R. Martin'in eşsiz _Buz ve Ateşin Şarkısı_ evrenini Türk oyun severler için daha da erişilebilir kılmak için başlatıldı. Çevirimiz, yüksek oranda makine çevirisi içermekle birlikte, zaman buldukça dosyaları gözden geçirerek anlam bozukluklarını düzeltmeye çalışıyorum. Bu süreç, modun kapsamı nedeniyle uzun sürebilir, bu yüzden sabrınız ve anlayışınız için teşekkür ederim.
+Batıdiyar'ın görkemli taht oyunlarına ve entrikalarla dolu saray koridorlarına adım atmaya hazır olun! Crusader Kings 3 için geliştirilmiş A Game of Thrones Türkçe modu sayesinde, artık George R.R. Martin’in efsanevi "Buz ve Ateşin Şarkısı" evrenini, Crusader Kings III'te Türkçe olarak deneyimleyebileceksiniz. Güç mücadeleleri, unutulmaz karakterler, ve stratejik savaşlarla dolu bu evren, modun Türkçe çevirisi ile kendinizi tam anlamıyla Kral Toprakları'nda, Kuzey'in soğuk rüzgarlarında ya da Demir Adalar'ın acımasız fırtınalarında hissetmenizi sağlayacak.
 
-### Yardımlarınızı Bekliyorum! 
-**Eğer bu projeye katkıda bulunmak isterseniz, lütfen benimle Discord üzerinden iletişime geçin.
-__Discord Adresim:__ [becel](https://discordapp.com/users/898443908042883082)**   
-Gözümden kaçan kısımlar için ise tartışmalar kısmındaki Hatalar sayfasına yada Discord üzerinden benimle paylaşmaktan çekinmeyin. 
+Bu projeyle Batıdiyar’ın karmaşık siyasi oyunları, entrikaları ve soylu hanedanlar arasındaki bitmeyen mücadeleler artık Türk oyuncular için çok daha erişilebilir. Lannister'lar, Stark'lar, Targaryen'ler ve daha fazlası arasında yaşanacak bu benzersiz taht oyunlarında siz de kendi stratejinizle hükmünüzü sürebileceksiniz.
 
-## Mevcut Durum: 
-Alfa - Test Sürümü   
-Son gelen ejderhalar ile ilgili güncellemeyle uyumludur. 
+**Kış geliyor** – ve taht oyununda ya kazanacaksınız ya da yok olacaksınız!
 
-## Yükleme Sırası: 
-1. Strategyturk Türkçe Çeviri 
-2. A Game of Thrones 
-3. Submodlar 
-4. AGOT Turkish Localization 
+![AGOT Türkçe Mod](https://i.imgur.com/eVl0wWC.png)
 
-**Bu çeviri çalışmamda ModTranslationHelper'ı sağlayan ReimiS'e ve AGOT modunun geliştiricilerine içten teşekkürlerimi sunarım. <3** 
+![Destek GIF](https://i.imgur.com/NrstAKw.gif)
+**Projenin daha fazla insana ulaşması için, oy verip favorilere ekleyebilirsiniz!**
+
+![Destek Banner](https://i.imgur.com/RCVeg6U.png)
+
+**Eğer bu projeye katkıda bulunmak isterseniz, lütfen benimle Discord üzerinden iletişime geçin.**  
+[Discord Adresim](https://discordapp.com/users/898443908042883082)
+
+**Her türlü hata, lore ile ilgili sorunlar, çeviri önerileriniz için:**  
+[A Game of Thrones Türkçe Yama Discord Adresi](https://discord.gg/xAXC9U7t)
+
+[Açık Kaynak Dosyası](https://github.com/A-Game-of-Thrones-Ceviri/agottr_ceviri)
+
+![Beta Sürümü](https://i.imgur.com/1qyq2mY.png)
+
+### Beta - Test Sürümü
+**1.13.* ile uyumlu değildir.** (Önce StrategyTurk'ün kendi modunu sonra da AGOT'un kendi modunu güncellemesi gerekiyor.)  
+Son gelen ejderhalar ile ilgili güncellemeyle uyumludur.
+
+![Yükleme Talimatları](https://i.imgur.com/V8EbBni.png)
+
+Yükleme sırası sayfanın en başında bulunan koleksiyonda belirtildiği gibi olmalıdır.
+
+### Bu çeviri çalışmamda Mustafa'ya, ModTranslationHelper'ı sağlayan ReimiS'e, AGOT modunun geliştiricilerine ve StrategyTurk'e içten teşekkürlerimi sunarım. <3
