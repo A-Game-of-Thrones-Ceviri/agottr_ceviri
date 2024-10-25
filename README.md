@@ -4,7 +4,7 @@ Batıdiyar'ın görkemli taht oyunlarına ve entrikalarla dolu saray koridorlar�
 
 Bu projeyle Batıdiyar’ın karmaşık siyasi oyunları, entrikaları ve soylu hanedanlar arasındaki bitmeyen mücadeleler artık Türk oyuncular için çok daha erişilebilir. Lannister'lar, Stark'lar, Targaryen'ler ve daha fazlası arasında yaşanacak bu benzersiz taht oyunlarında siz de kendi stratejinizle hükmünüzü sürebileceksiniz.
 
-**Kış geliyor** – ve taht oyununda ya kazanacaksınız ya da yok olacaksınız! <br><br>
+**Kış geliyor** – ve taht oyununda ya kazanacaksınız ya da yok olacaksınız!  
 
 
 ![Destek Banner](https://i.imgur.com/RCVeg6U.png)
@@ -13,16 +13,16 @@ Bu projeyle Batıdiyar’ın karmaşık siyasi oyunları, entrikaları ve soylu 
 [Discord Adresim](https://discordapp.com/users/898443908042883082)
 
 **Her türlü hata, lore ile ilgili sorunlar, çeviri önerileriniz için:**  
-[A Game of Thrones Türkçe Yama Discord Adresi](https://discord.gg/xAXC9U7t)
+[A Game of Thrones Türkçe Yama Discord Adresi](https://discord.gg/xAXC9U7t)  
 
-**Modu Steam'den indirmek için:**
-[Steam Atölye Adresi](https://steamcommunity.com/sharedfiles/filedetails/?id=3302953201) <br><br>
+**Modu Steam'den indirmek için:**  
+[Steam Atölye Adresi](https://steamcommunity.com/sharedfiles/filedetails/?id=3302953201)  
 
 ![Beta Sürümü](https://i.imgur.com/1qyq2mY.png)
 
 ### Beta - Test Sürümü
 **1.13.* ile uyumlu değildir.** (Önce StrategyTurk'ün kendi modunu sonra da AGOT'un kendi modunu güncellemesi gerekiyor.)  
-Son gelen ejderhalar ile ilgili güncellemeyle uyumludur. <br><br>
+Son gelen ejderhalar ile ilgili güncellemeyle uyumludur.  
 
 
 ### Bu çeviri çalışmamda Mustafa'ya, ModTranslationHelper'ı sağlayan ReimiS'e, AGOT modunun geliştiricilerine ve StrategyTurk'e içten teşekkürlerimi sunarım. <3
