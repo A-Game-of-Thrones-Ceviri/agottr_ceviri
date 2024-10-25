@@ -13,8 +13,10 @@ Bu projeyle Batıdiyar’ın karmaşık siyasi oyunları, entrikaları ve soylu 
 [Discord Adresim](https://discordapp.com/users/898443908042883082)
 
 **Her türlü hata, lore ile ilgili sorunlar, çeviri önerileriniz için:**  
-[A Game of Thrones Türkçe Yama Discord Adresi](https://discord.gg/xAXC9U7t) <br><br>
+[A Game of Thrones Türkçe Yama Discord Adresi](https://discord.gg/xAXC9U7t)
 
+**Modu Steam'den indirmek için:**
+[Steam Atölye Adresi](https://steamcommunity.com/sharedfiles/filedetails/?id=3302953201) <br><br>
 
 ![Beta Sürümü](https://i.imgur.com/1qyq2mY.png)
 
