@@ -4,7 +4,7 @@ struggle_btw_ending_hostility_decision:1 "[ROOT.Char.GetPrimaryTitle.GetAdjectiv
 struggle_btw_ending_hostility_decision_desc:0 "Güçlü bir liderin nihayet Özgür Halk'ı savaş ve bölünme bataklığından çıkarmasının zamanı geldi. Gerçek kuzey, [ROOT.Char.GetFaith.GetAdjectiveNoTooltip] [ROOT.Char.Custom('GetQueenKing')|l] yönetiminde [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] sancağı altında birleşecek!"
 struggle_btw_ending_hostility_decision_tooltip:0 "Surun Ötesindeki [struggle|E]yi Sonlandır" 
 struggle_btw_ending_hostility_decision_confirm:1 "Surun Ötesindeki Mücadeleyi Sonlandır"
-struggle_btw_ending_hostility_decision_kingdom_tt:0 "[GetTitleByKey('e_beyond_the_wall').GetNameNoTier] bölgesinde en az 2 [de_jure|E] [Concept( 'kingdom', 'Krallığa' )|E] [Concept( 'hold', 'Sahip Oluyor' )|E] ve [completely_control|E] ediyorsunuz ([SCOPE.ScriptValue('fp2_struggle_ending_kingdom_counter_value')|0]/[SCOPE.ScriptValue('fp2_struggle_hostility_kingdom_total_value')|0])"
+struggle_btw_ending_hostility_decision_kingdom_tt:0 "[GetTitleByKey('e_beyond_the_wall').GetNameNoTier] bölgesinde en az 2 [de_jure|E] [Concept( 'kingdom', 'Krallığa' )|E] [Concept( 'hold', 'Sahip Oldunuz' )|E] ve [completely_control|E] ediyorsunuz ([SCOPE.ScriptValue('fp2_struggle_ending_kingdom_counter_value')|0]/[SCOPE.ScriptValue('fp2_struggle_hostility_kingdom_total_value')|0])"
 struggle_btw_ending_hostility_decision_united_wildling_tribe_tt:0 "Yabanıl kabilelerini [primary_title|E]ınız altında birleştirdiniz"
 struggle_btw_ending_hostility_decision_county_tt:0 "[Concept( 'capital', 'Başkentinizin' )|E] bulunduğu [Concept( 'kingdom', 'Krallığın' )|E] ([THIS.Char.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetNameNoTier]) her [de_jure|E] [Concept( 'county', 'Kontluğunun' )|E] [THIS.Char.GetCulture.GetName] kültürüne ve [THIS.Char.GetFaith.GetAdjective] inancına sahip olması gerekir ([SCOPE.ScriptValue('fp2_struggle_hostility_county_counter_value')|0]/[SCOPE.ScriptValue('fp2_struggle_hostility_county_total_value')|0])"
 struggle_btw_ending_hostility_decision_county_light_tt:0 "[Concept( 'capital', 'Başkentinizin' )|E] bulunduğu [Concept( 'kingdom', 'Krallığın' )|E] ([THIS.Char.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetNameNoTier]) [de_jure|E] [Concept( 'county', 'Kontluklarının' )|E] %75'i [THIS.Char.GetCulture.GetName] kültüründe ve [THIS.Char.GetFaith.GetAdjective] inancında olmalıdır ([SCOPE.ScriptValue('fp2_struggle_hostility_county_counter_value')|0]/[SCOPE.ScriptValue('fp2_struggle_hostility_county_total_light_value')|0])"
@@ -21,7 +21,7 @@ fp2_struggle_hostility_culture_large_tt:0 "Tüm [struggle_involved|E] [cultures|
 fp2_struggle_hostility_acceptance_tt:0 "Surun Ötesinde Düşmanlık" 
 # Modifiers
 fp2_struggle_hostility_house_faith_modifier:1 "İnanç Düşmanlığı"
-fp2_struggle_hostility_house_faith_modifier_desc:0 "Bu hanedan, Yabanıl kabilelerinin çoğunu inançları adına fethetti."
+fp2_struggle_hostility_house_faith_modifier_desc:0 "Bu hanedan, Yabanıl kabilelerinin çoğunu kendi inançları adına fethetti ve boyun eğdirdi."
 fp2_struggle_hostility_house_culture_modifier:1 "Kültürel Düşmanlık"
 fp2_struggle_hostility_house_culture_modifier_desc:0 "Bu hanedan, Yabanıl kabilelerinin çoğunu halkları adına fethetti."
 fp2_struggle_hostility_house_combined_modifier:1 "Hakimiyet Düşmanlığı"
@@ -29,8 +29,8 @@ fp2_struggle_hostility_house_combined_modifier_desc:0 "Bu hanedan, Yabanıl kabi
 fp2_struggle_hostility_faith_conversion_task_desc:0 "$fp2_struggle_hostility_house_faith_modifier$"
 fp2_struggle_hostility_culture_conversion_task_desc:0 "$fp2_struggle_hostility_house_culture_modifier$"
 ##### Compromise #####
-struggle_btw_ending_compromise_decision:1 "Statüko"
-struggle_btw_ending_compromise_decision_desc:0 "Kuzeydeki bu bitmek bilmeyen çatışmalar hepimizi zayıflatıyor. Kuzeyin asla birleşmek için yaratılmadığını kabul etmenin ve bunun yerine [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip] ile yetinmenin zamanı geldi."
+struggle_btw_ending_compromise_decision:1 "Statükoyu Koru"
+struggle_btw_ending_compromise_decision_desc:0 "Kuzeydeki bu bitmek bilmeyen çatışmalar, tüm tarafları zayıflatıyor. Belki de Kuzey'in hiçbir zaman birleşmek için yaratılmadığını kabul etmenin ve bunun yerine mevcut durumla yetinmenin zamanı gelmiştir. [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip], kazanımlarını koruyacak ve diğer yöneticilerde bağımsızlıklarını sürdürecekler. Bu, barış ve istikrarın en azından bir süreliğine hüküm sürmesini sağlayabilir."
 struggle_btw_ending_compromise_decision_tooltip:0 "$struggle_btw_ending_hostility_decision_tooltip$"
 struggle_btw_ending_compromise_decision_confirm:0 "$struggle_btw_ending_hostility_decision_confirm$"
 # Triggers
@@ -51,12 +51,12 @@ fp2_struggle_compromise_truce_tt:1 "Her [independent|E] [struggle_involved|E] [r
 TRUCE_FP2_COMPROMISE:0 "Surun Ötesinde Uzlaşma"
 # Modifiers
 fp2_struggle_compromise_house_reward_modifier:0 "Uzlaşma"
-fp2_struggle_compromise_house_reward_modifier_desc:0 "Bu hanedan, topraklarını gerçek kuzey mücadelesinden çıkardı."
+fp2_struggle_compromise_house_reward_modifier_desc:0 "Bu hanedan, topraklarını gerçek kuzey mücadelesinin yıkıcı etkisinden kurtarmayı başardı."
 fp2_struggle_compromise_defensive_reward_modifier:0 "Bölgesel Kale"
 fp2_struggle_compromise_defensive_reward_modifier_desc:1 "Bu kontluk, binlerce yıllık mücadeleden sağ kurtulan Yabanıl kabilelerinden birinin tarihi başkentidir."
 ##### Conciliation ######
-struggle_btw_ending_conciliation_decision:1 "Détente" 
-struggle_btw_ending_conciliation_decision_desc:0 "Geçtiğimiz bin yılın yaraları kolay kolay iyileşmeyecek, ancak gerçek kuzeyin kalıcı bir barış bulması için denemeliyiz. Gerçekten de, surun ötesindeki topraklar hepimizin."
+struggle_btw_ending_conciliation_decision:1 "Barış"
+struggle_btw_ending_conciliation_decision_desc:0 "Geçtiğimiz bin yılın açtığı yaralar kolay kolay iyileşmeyecek, ancak gerçek kuzeyde kalıcı bir barış inşa etmek için çaba göstermeliyiz. Sur'un ötesindeki topraklar, hepimizin ortak mirası ve sorumluluğudur. Yabanıllar ve Gece Nöbetçileri arasında bir barış anlaşması, bu topraklara istikrar ve refah getirebilir. Ancak bu barışın sağlam temellere oturması için karşılıklı güven ve anlayış inşa etmek gerekecektir."
 struggle_btw_ending_conciliation_decision_tooltip:0 "$struggle_btw_ending_hostility_decision_tooltip$"
 struggle_btw_ending_conciliation_decision_confirm:0 "$struggle_btw_ending_hostility_decision_confirm$"
 # Triggers
@@ -65,7 +65,7 @@ struggle_btw_ending_conciliation_decision_alliance_tt:0 "Diğer tüm [independen
 fp2_struggle_conciliation_marriage_unlocked_tt:1 "[struggle_involved|E] [cultures|E] arasında kalıcı olarak inançlar arası [Concept( 'marriage', 'Evliliğe' )|E] #positive_value izin ver#! "
 fp2_struggle_conciliation_acceptance_tt:0 "Surun Ötesinde Uzlaşma"
 fp2_struggle_conciliation_culture_tt:0 "Tüm [struggle_involved|E] [cultures|E], birbirlerine karşı #positive_value +%[SCOPE.ScriptValue('fp2_struggle_conciliation_culture_acceptance_value')|0]#! [cultural_acceptance|E] kazanır"
-fp2_struggle_conciliation_join_war_tt:1 "[struggle_involved|E] [culture|E] ve [faith|E]lerin içinde yer alan [rulers|E]ın [GetGeographicalRegion('world_westeros_beyond_the_wall').GetName] bölgesinin dışından gelen işgalcilerine karşı birbirlerinin savunma [wars|E]ına katılmalarına kalıcı olarak izin verir"
+fp2_struggle_conciliation_join_war_tt:1 "[struggle_involved|E] [culture|E] ve [faith|E]lerin içinde yer alan [rulers|E]ın, [GetGeographicalRegion('world_westeros_beyond_the_wall').GetName] bölgesinin dışından gelen işgalcilere karşı birbirlerinin savunma [wars|E]ına katılmalarına kalıcı olarak izin verir"
 # Modifiers
 fp2_struggle_conciliation_house_reward_modifier:0 "Uzlaşma"
 fp2_struggle_conciliation_house_reward_modifier_desc:0 "Bu hanedan, surun ötesinde kalıcı bir barışa giden yolun barış ve hoşgörüden geçtiğini kabul etti."
