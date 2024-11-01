@@ -1,8 +1,8 @@
 ![AGOT Logo](https://i.imgur.com/wiysg2W.png)
 
-Batıdiyar'ın görkemli taht oyunlarına ve entrikalarla dolu saray koridorlarına adım atmaya hazır olun! Crusader Kings 3 için geliştirilmiş A Game of Thrones Türkçe modu sayesinde, artık George R.R. Martin’in efsanevi "Buz ve Ateşin Şarkısı" evrenini, Crusader Kings III'te Türkçe olarak deneyimleyebileceksiniz. Güç mücadeleleri, unutulmaz karakterler, ve stratejik savaşlarla dolu bu evren, modun Türkçe çevirisi ile kendinizi tam anlamıyla Kral Toprakları'nda, Kuzey'in soğuk rüzgarlarında ya da Demir Adalar'ın acımasız fırtınalarında hissetmenizi sağlayacak.
+Batıdiyar'ın görkemli taht oyunlarına ve entrikalarla dolu saray koridorlarına adım atmaya hazır olun! Crusader Kings 3 için geliştirilmiş A Game of Thrones Türkçe modu sayesinde, artık George R.R. Martin'in efsanevi "Buz ve Ateşin Şarkısı" evrenini, Crusader Kings III'te Türkçe olarak deneyimleyebileceksiniz. Güç mücadeleleri, unutulmaz karakterler, ve stratejik savaşlarla dolu bu evren, modun Türkçe çevirisi ile kendinizi tam anlamıyla Kral Toprakları'nda, Kuzey'in soğuk rüzgarlarında ya da Demir Adalar'ın acımasız fırtınalarında hissetmenizi sağlayacak.
 
-Bu projeyle Batıdiyar’ın karmaşık siyasi oyunları, entrikaları ve soylu hanedanlar arasındaki bitmeyen mücadeleler artık Türk oyuncular için çok daha erişilebilir. Lannister'lar, Stark'lar, Targaryen'ler ve daha fazlası arasında yaşanacak bu benzersiz taht oyunlarında siz de kendi stratejinizle hükmünüzü sürebileceksiniz.
+Bu projeyle Batıdiyar'ın karmaşık siyasi oyunları, entrikaları ve soylu hanedanlar arasındaki bitmeyen mücadeleler artık Türk oyuncular için çok daha erişilebilir. Lannister'lar, Stark'lar, Targaryen'ler ve daha fazlası arasında yaşanacak bu benzersiz taht oyunlarında siz de kendi stratejinizle hükmünüzü sürebileceksiniz.
 
 **Kış geliyor** – ve taht oyununda ya kazanacaksınız ya da yok olacaksınız!  
 
