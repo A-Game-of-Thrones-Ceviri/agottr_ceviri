@@ -1,0 +1,891 @@
+﻿l_english:
+  ##### TOURNAMENT ##### 
+  
+ tournament_events.0050.t: "Turnuva Gelişi" #NT!
+ tournament_events.0050.desc: "Turnuva alanına geldim, [activity.GetCurrentPhase.GetLocation.GetName]!\n\nHenüz tüm eğlence düşkünleri gelmemiş olsa da, kalabalıklar renkli çevrede dolaşıyor, hepsi de yaklaşan beceri ve kahramanlık gösterilerini dört gözle bekliyor.\n\n" #NT!
+ tournament_events.0050.murder: "Benim, sadece eğlenmekten daha büyük hırslarım var. Eğer kartlarımı doğru oynarsam, [starting_intent.GetFirstName] bitiş törenini görmeyecek..." #NT!
+ tournament_events.0050.seduce: "Benim için ilk iş elbette [starting_intent.GetFirstName]'ın kalbini kazanmak olacak!" #NT!
+ tournament_events.0050.befriend: "[starting_intent.GetFirstName] ile sıkı bir dostluk kurmak için bundan daha iyi bir ortam olabilir mi?" #NT!
+ tournament_events.0050.win: "Kaybedecek zaman yok: Hazırlanmaya başlamalıyım! Kesinlikle her ne pahasına olursa olsun galip gelmeliyim!" #NT!
+ tournament_events.0050.recruit: "[ROOT.Char.Custom('KnightCulturePluralNoTooltipLowercase')]'ımın saflarına katılmaya hazır birçok aday gördüm!" #NT!
+ tournament_events.0050.relax: "Turnuvada stres atmak ve eğlenmek için bu kadar mükemmel yerler çok azdır ve ben bundan sonuna kadar faydalanmayı düşünüyorum!" #NT!
+ tournament_events.0050.a: "Başlamasını sabırsızlıkla bekliyorum!" #NT!
+  
+  # START 
+ tournament_events.0100.t: "$tournament_header$ Açılış" #NT!
+ tournament_events.0100.desc: "Turnuva nihayet geldi!\n\n" #NT!
+ tournament_events.0100.host: "[activity.GetCurrentPhase.GetLocation.GetName]'daki arazime, değerlerini kanıtlamak veya sadece gösterinin tadını çıkarmak isteyen birçok kişi akın etti." #NT!
+ tournament_events.0100.contestant: "Yarışmaların gelmesini heyecanla bekleyen [activity.GetCurrentPhase.GetLocation.GetName]'a akın eden birçok kişi gibi ben de sosyalleşmek ve ekipmanlarımı hazırlamakla meşgulüm." #NT!
+ tournament_events.0100.spectator: ""Birçok kişi hem yarışmak hem de benim gibi eğlenmek için [activity.GetCurrentPhase.GetLocation.GetName]'deki [host.GetTitledFirstNamePossessive] sahasına akın etti." #NT!
+ tournament_events.0100.closing: "\n\nGüneş gökyüzünde daha da yükseliyor ve gölgeler kısalıyor. [activity.GetCurrentPhase.GetPhase.GetName] yarışmasında yarışacaksam, yeterlilik kazandığımdan emin olmalıyım. Yakında başlayacak." #NT!
+ tournament_events.0100.a: "Kaybedecek zaman yok!" #NT!
+  
+  # END 
+ tournament_events.0150.t: "$tournament_header$ Sonuç" #NT!
+ tournament_events.0150.desc: "Turnuvanın son gününde güneş batıyor ve kalabalıklar dağılmaya başlıyor. Kendimi sonuçları düşünürken buluyorum:\n\n" #NT!
+ tournament_events.0150.melee: "[melee_winner.GetTitledFirstNamePossessive|U] takımı Melee'de günü kazandı.\n" #NT!
+ tournament_events.0150.melee_self: "Takımım Melee'de zafer kazandı." #NT!
+ tournament_events.0150.archery: "[archery_winner.GetTitledFirstName|U] Okçulukta en iyi nişana sahipti.\n" #NT!
+ tournament_events.0150.archery_self: "Okçulukta en iyi nişanı ben alırdım." #NT!
+ tournament_events.0150.recital: "[recital_winner.GetTitledFirstNamePossessive|U] şiir ustalığı onları Resital'de değerli bir kazanan yaptı.\n" #NT!
+ tournament_events.0150.recital_self: "Şiirdeki ustalığım beni Resital'de layık görülen birinciliğe taşıdı." #NT!
+ tournament_events.0150.joust: "[joust_winner.GetTitledFirstName|U], Mızrak Dövüşü'nde kalitesini kanıtlamak için sayısız mızrak kırdı.\n" #NT!
+ tournament_events.0150.joust_self: "Mızrak dövüşünde kendimi kanıtlamak için sayısız mızrak kırdım." #NT!
+ tournament_events.0150.wrestling: "[wrestling_winner.GetTitledFirstName|U] Güreşte birinci olarak yenilmez bir rakipti.\n" #NT!
+ tournament_events.0150.wrestling_self: "Ben yenilmez bir rakiptim ve Güreşte birinci oldum." #NT!
+ tournament_events.0150.duel: "[duel_winner.GetTitledFirstNamePossessive|U] Bıçakla üstünlük, onların Düello'da ödülü eve götürmelerini sağladı.\n" #NT!
+ tournament_events.0150.duel_self: "Kılıçtaki üstünlüğüm sayesinde Düello'da ödülü eve götürdüm." #NT!
+ tournament_events.0150.board_game: "[board_game_winner.GetTitledFirstNamePossessive|U] keskin zekası ile Masa Oyunlarını kazanmak için tüm rakiplerini alt etti.\n" #NT!
+ tournament_events.0150.board_game_self: "Keskin zekamla Masa Oyunlarını kazanmak için tüm rakipleri alt ettim.\n" #NT!
+ tournament_events.0150.horse_race: "[horse_race_winner.GetTitledFirstNamePossessive|U] at At Yarışı'nda birinci oldu.\n" #NT!
+ tournament_events.0150.horse_race_self: "Atım At Yarışı'nda birinci oldu." #NT!
+ tournament_events.0150.murdersuccess: "\n[finishing_intent.GetFirstName] hak ettiği sonu buldu.\n" #NT!
+ tournament_events.0150.murderfailure: "\n[finishing_intent.GetFirstName] bu sefer elimden kurtuldu.\n" #NT!
+ tournament_events.0150.seducesuccess: "\n[finishing_intent.GetFirstName]'a yönelik şehvetli iknalarım başarılı oldu.\n" #NT!
+ tournament_events.0150.seducefailure: "\n[finishing_intent.GetFirstName] şehvetli iknalarıma direndi.\n" #NT!
+ tournament_events.0150.befriendsuccess: "\n[finishing_intent.GetFirstName] ve ben iyi arkadaş olduk!\n" #NT!
+ tournament_events.0150.befriendfailure: "\n[finishing_intent.GetFirstName] ile henüz sağlam bir dostluk kuramadık.\n" #NT!
+ tournament_events.0150.winsuccess: "\nYarışmayı kazanma hedefimi gerçekleştirdim!\n" #NT!
+ tournament_events.0150.winfailure: "\nYarışmayı kazanamadım.\n" #NT!
+ tournament_events.0150.knightsuccess: "\n[ROOT.Char.Custom('KnightCulturePluralNoTooltipLowercase')]'ımın saflarını güçlendirdim.\n" #NT!
+ tournament_events.0150.knightfailure: "\n[ROOT.Char.Custom('KnightCulturePluralNoTooltipLowercase')]'ımın saflarına katılacak iyi bir aday bulamadım.\n" #NT!
+ tournament_events.0150.end: "\nBir sonrakini sabırsızlıkla bekliyorum!" #NT!
+ tournament_events.0150.a: "Ne güzel bir fırsat!" #NT!
+ tournament_events.0150.b: "Belki birkaç kelime, ev sahibi ben olduğum için..." #NT!
+ tournament_events.0150.c: "[tournament_champion.GetFirstNameNoTooltip], [tournament_champion.GetHerHis] zaferi için bir bonusu hak ediyor!" #NT!
+ tournament_events.0150.b.success: "Sözleriniz size biraz övgü getiriyor" #NT!
+ tournament_events.0150.b.failure: "Kimse pek dikkat etmiyor" #NT!
+ tournament_events.0150.legendseeddrop: "\nÜçüncü kez bir Yarışma kazandım. Başarılarımın hikayeleri şimdiden her yere yayılıyor.\n" #NT!
+  
+ tournament_events.0160.t: "$tournament_header$ Ganimet" #NT!
+ tournament_events.0160.desc: "Yarışmalar nihayet sona erdi ve [marriage_prize.GetTitledFirstNamePossessive]'ın layık bir kazananla evlenmesi için ilan ettiğim ödül yarışmacılar tarafından unutulmadı — ya da [ROOT.Char.Custom2('RelationToMeShort', marriage_prize)]'im...\n\n" #NT!
+ tournament_events.0160.a: "Sanırım seni ben kazandım, [ROOT.Char.Custom2('RelationToMeShort', marriage_prize)]!" #NT!
+ tournament_events.0160.b: "Tebrikler, [bachelor_1.GetFirstNameNoTooltip]!" #NT!
+ tournament_events.0160.c: "[bachelor_2.GetFirstNameNoTooltip] güzel bir [marriage_prize.Custom('GetBrideGroom')], [bachelor_2.GetFirstNameNoTooltip] yapacak!" #NT!
+ tournament_events.0160.d: "[marriage_prize.GetHerHim], [bachelor_3.GetFirstNameNoTooltip]'e dikkat edin!" #NT!
+ tournament_events.0160.e: "Ben... fikrimi değiştirdim." #NT!
+ tournament_events.0160.f: "Kendimi kastetmedim..." #NT!
+ tournament_events.0160.g: "Oh iyi..." #NT!
+  
+ tournament_events.0161.desc: "Yarışmalar nihayet sona erdi ve [host.GetTitledFirstNamePossessive], layık bir kazananla evlenme ödülünün [marriage_prize.GetTitledFirstNamePossessive] olduğunu duyurdu ve yarışmacılar bunu unutmadı — ya da [host.GetHerHis] [ROOT.Char.Custom2('RelationToMeShort', marriage_prize)]...\n\n" #NT!
+ tournament_events.0161.a: "Gel canım!" #NT!
+ tournament_events.0161.b: "Çok saçma." #NT!
+ tournament_events.0161.c: "Oh iyi..." #NT!
+  # ACCIDENT PING 
+ tournament_events.0701.t: "$tournament_contest_header$ Kaza" #NT!
+ tournament_events.0701.desc: "[ROOT.Char.Custom2('RelationToMeShort', accident_victim)], [accident_victim.GetName], [activity.GetCurrentPhase.GetPhase.GetName|l] yarışması sırasında meydana gelen garip bir topuz kazasında hayatını kaybetti!" #NT!
+ tournament_events.0701.a: "Trajik..." #NT!
+ tournament_accident_death_msg_title: "Kaza Sonucu Ölüm" #NT!
+  
+  # CONTESTANT INVALIDATION 
+ tournament_events.0800.t: "$tournament_contest_header$ Para Çekme" #NT!
+ tournament_events.0800.wounded: "Korkarım yaralarım bu turnuvada devam edemeyecek kadar büyük. Bu durumda iyi bir performans gösteremeyeceğim ve daha fazla sakatlığa yol açmamalıyım..." #NT!
+ tournament_events.0800.disease: "Hastalığımın bu turnuvada devam etmem için çok ciddi olduğundan korkuyorum. Bu durumda iyi bir gösteri yapamayacağım ve fiziğin öfkesini kışkırtmamalıyım..." #NT!
+ tournament_events.0800.health: "Mizahımın bu turnuvada devam etmemi engelleyeceğinden korkuyorum. Bu durumda iyi bir gösteri yapmayacağım ve fiziğin öfkesini kışkırtmamalıyım..." #NT!
+ tournament_events.0800.a: "Devam edemiyorum." #NT!
+ tournament_events.0800.b: "Asla, bunu başaramam!" #NT!
+  
+ tournament_events.0801.t: "$tournament_events.0800.t$" #NT!
+ tournament_events.0801.desc: "[contest_withdrawal.GetTitledFirstName] yarışmalardan resmen çekildi." #NT!
+ tournament_events.0801.wounded: "Görünüşe göre [contest_withdrawal.GetHerHis] yara devam etme riskine giremeyecek kadar ciddi." #NT!
+ tournament_events.0801.disease: "Görünüşe göre [contest_withdrawal.GetHerHis]'ın hastalığı devam edemeyecek kadar şiddetli hale geldi." #NT!
+ tournament_events.0801.health: "[contest_withdrawal.GetHerHis] mizahın devam edemeyecek kadar dengesiz olduğu anlaşılıyor." #NT!
+ tournament_events.0801.a: "Bir utanç." #NT!
+  
+  # WAGERING 
+ tournament_events.1000.t: "$tournament_contest_header$ Bahislerinizi Yerleştirin" #NT!
+ tournament_events.1000.desc: "Meyhanenin loş ışığında bahisçiye bakarken, etrafta dolaşan bahisçilerin başlarının üzerinden bağırarak söylediği bahis oranlarını düşünüyorum." #NT!
+ tournament_events.1000.horse_race: ""[wager_top_contestant.GetTitledFirstNamePossessive] [wager_top_contestant.Custom('ContestHorseRaceGender')], #EMP [wager_top_contestant.Custom('GetContestHorseRaceName')]#!, favori! #EMP [wager_top_contestant.Custom('GetContestHorseRaceName')]#!! için dört-bir"" #NT!
+ tournament_events.1000.fallback: ""[wager_top_contestant.GetTitledFirstName], [activity.GetCurrentPhase.GetPhase.GetName] favori! [wager_top_contestant.GetNameNoTooltip] için dört-bir!"" #NT!
+ tournament_events.1000.a: "Pah, kendime bahse girerim!" #NT!
+ tournament_events.1000.a.horse: "En iyi atım, #EMP [ROOT.Char.Custom('GetContestHorseRaceName')]#!, kazanabilir." #NT!
+ tournament_events.1000.a.best_horse: "Evet, #EMP [ROOT.Char.Custom('GetContestHorseRaceName')]#! kazanacak!" #NT!
+ tournament_events.1000.b: "[wager_top_contestant.GetFirstNameNoTooltip] güvenli bir bahistir." #NT!
+ tournament_events.1000.b.horse: "#EMP [wager_top_contestant.Custom('GetContestHorseRaceName')]#! gerçekten de güvenli bir bahis." #NT!
+ tournament_events.1000.c: "Yine de [wager_second_contestant.GetFirstNameNoTooltip] hemen ardından geliyor." #NT!
+ tournament_events.1000.c.horse: "Yine de [wager_second_contestant.GetFirstNamePossessiveNoTooltip] '[wager_second_contestant.Custom('GetContestHorseRaceName')]' hemen ardından geliyor." #NT!
+ tournament_events.1000.d: "Şampiyonum [wager_champion_contestant.GetFirstNameNoTooltip] zafer kazanacak!" #NT!
+ tournament_events.1000.e: "Hm, [wager_underdog_contestant.GetFirstNameNoTooltip]'ın olası bir zayıf taraf olması pek olası değil." #NT!
+ tournament_events.1000.e.horse: "[wager_underdog_contestant.GetFirstNamePossessiveNoTooltip] #EMP [wager_underdog_contestant.Custom('GetContestHorseRaceName')]#!'ün olası bir zayıf taraf olmadığı görülüyor." #NT!
+ tournament_events.1000.f: "[ROOT.Char.Custom2('RelationToMeShort', wager_flavor_contestant)], [wager_flavor_contestant.GetFirstNameNoTooltip]'ime ne alabilirim?" #NT!
+ tournament_events.1000.f.horse: "[ROOT.Char.Custom2('RelationToMePossessive', wager_flavor_contestant)] atıma ne alabilirim, #EMP [wager_flavor_contestant.Custom('GetContestHorseRaceName')]#!?" #NT!
+ tournament_events.1000.g: "Bu '[mysterious_stranger.GetFirstNameNoTooltip] / [attending_barony.GetNameNoTierNoTooltip]' hakkında iyi bir his var içimde." #NT!
+ tournament_events.1000.g.horse: "[mysterious_stranger.GetFirstNamePossessiveNoTooltip] #EMP [mysterious_stranger.Custom('GetContestHorseRaceName')]#!. hakkında iyi bir his var içimde" #NT!
+ tournament_events.1000.h: "Hayır bu kötü bir fikir..." #NT!
+  
+ tournament_events.1000.bet_debug_tt: "#D turnuva_bahisi_hedef_puan_değeri#!: [SCOPE.ScriptValue('tournament_wager_target_score_value')|V]\n#D turnuva_bahisi_en_yüksek_puan_değeri#!: [SCOPE.ScriptValue('tournament_wager_top_score_value')|V]\n#D turnuva_bahisi_en_düşük_puan_değeri#!: [SCOPE.ScriptValue('tournament_wager_bottom_score_value')|V]\n#D turnuva_bahisi_en_düşük_alt_puan_değeri:#!:0 #!:1\n#D turnuva_bahisi_hedef_düşük_alt_değeri#!: #!:4\n#D turnuva_bahisi_oranları_yüzde_değeri#!: #!:7\n#D turnuva_bahisi_ödeme_değeri#!: [SCOPE.ScriptValue('tournament_wager_target_score_value')|V]0" #NT!
+  
+ tournament_events.1000.winnings_tt: "Eğer kazanan [wager_target.GetShortUIName] ise:\n@gold_icon kazanın! #positive_value [SCOPE.ScriptValue('tournament_wager_payout_value')|0]#!" #NT!
+ tournament_events.1000.horse_winnings_tt: "Eğer [wager_target.GetShortUINamePossessive] at, [wager_target.Custom('GetContestHorseRaceName')|V], yarışı kazanırsa:\n@gold_icon kazan! #positive_value [SCOPE.ScriptValue('tournament_wager_payout_value')|0]#!" #NT!
+  
+  # PASSAGE OF ARMS 
+ tournament_events.1100.t: "Silahların Geçişi" #NT!
+ tournament_events.1100.desc: "Yarışmaların başlamasını beklerken huzursuz olan veya sadece [pas_darmes_instigator.GetHerHis] becerimi sergilemek için can atan [ROOT.Char.Custom2('RelationToMeShort', pas_darmes_instigator)], [pas_darmes_instigator.GetFullName], [activity.GetCurrentPhase.GetLocation.GetName]'ün eteklerinde bir 'silah geçişi' ilan etti.\n\n"#EMP Herhangi bir sağlam [pas_darmes_instigator.Custom('MountedWarriorTerm')] geçmek isterse, benimle yüzleşsin, yoksa rezil olur!#!"\n\nIt [pas_darmes_instigator.GetSheHe] tüm yenilgilerin mahmuzlarını sakladığı ve refakatsiz geçmek isteyen herhangi bir hanımın daha sonra kendisi adına geri alınmak üzere bir jeton bırakması gerektiği söyleniyor." #NT!
+ tournament_events.1100.a: "Şimdi #EMP o#! bir [ROOT.Char.Custom('MountedWarriorTerm')]!" #NT!
+ tournament_events.1100.b: "Ne kadar eğlenceli!" #NT!
+ tournament_events.1100.c: "Bunu görmem lazım [pas_darmes_instigator.GetWomanMan]!" #NT!
+ tournament_events.1100.d: "Bu akılsızlık yasaktır." #NT!
+ pas_darmes_token_claim_tt: "Her [spouse|E], ebeveyn ve [pas_darmes_victim.GetName]'nin [child|E]'i" #NT!
+  
+ tournament_events.1101.t: "$tournament_events.1100.t$" #NT!
+ tournament_events.1101.desc: "Hiç şüphesiz, zafer vaadi ve düşman bolluğu ile turnuvama çekilen yabancı bir [pas_darmes_instigator.Custom('MountedWarriorTerm')], [activity.GetCurrentPhase.GetLocation.GetName] yakınlarında bir 'silah geçişi' ilan etti.\n\n[pas_darmes_instigator.GetSheHe|U], [pas_darmes_instigator.GetHerselfHimself]'ü '[pas_darmes_instigator.GetFullName]' olarak adlandırıyor ve uzak [exotic_origin.GetDeJureLiege.GetAdjectiveNoTooltip] topraklarından geldiğini iddia ediyor. Kampı geçmek isteyen herhangi bir [ROOT.Char.Custom('MountedWarriorTerm')], [pas_darmes_instigator.GetHerHim] ile mızraklarını kırmalıdır - aksi takdirde gururlarını kaybederler.\n\nYabancı bir maceracı tarafından böyle muamele görmek, [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] soylularını kesinlikle kızdıracaktır." #NT!
+ tournament_events.1101.a: "Güzel, savaşçılarımızın tetikte olması gerekiyor." #NT!
+ tournament_events.1101.b: "Sanmıyorum, bu serseriyi kovun." #NT!
+ tournament_events.1101.c: "Bu gerçek bir $knight_culture_player_no_tooltip_lowercase$! Ne büyük bir ilham!" #NT!
+  
+ tournament_events.1102.t: "$tournament_events.1100.t$" #NT!
+ tournament_events.1102.desc: "[pas_darmes_instigator.GetHerselfHimself]'ı kanıtlamaya hevesli olan [ROOT.Char.Custom2('RelationToMeShort', pas_darmes_instigator)], [pas_darmes_instigator.GetFullName]'m, [activity.GetCurrentPhase.GetLocation.GetName]'e giden ana yolu kapatarak bir 'silah geçişi' ilan etti.\n\n[pas_darmes_instigator.GetSheHe|U]'e [ROOT.Char.Custom2('RelationToMeShort', pas_darmes_2)], [pas_darmes_2.GetFullName]'m ve kanıtlayacak bir şeyleri olan bir grup küçük [pas_darmes_instigator.GetLiege.GetPrimaryTitle.GetAdjectiveNoTooltip] soylu eşlik ediyor.\n\nGörevlerinin tamamlandığını düşünmeden önce üç yüz mızrak kırmaya yemin ettikleri söylendi." #NT!
+ tournament_events.1102.a: "Onlara bol şans." #NT!
+ tournament_events.1102.a.tt: "[activity.GetCurrentPhase.GetLocation.GetName]'daki pas d'armes devam edecek" #NT!
+ tournament_events.1102.b: "#EMP benim #! [ROOT.Char.GetPrimaryTitle.GetTierAsNameNoTooltip|l]'de değil." #NT!
+ tournament_pas_darmes_forbidden_tt: "[activity.GetCurrentPhase.GetLocation.GetName]'daki pas d'armes sona erecek" #NT!
+  
+ tournament_events.1120.t: "Zor Kazanılan" #NT!
+ tournament_events.1120.desc: "[pas_darmes_instigator.GetTitledFirstName], tüm gelenlere meydan okuyarak [pas_darmes_instigator.GetHerHis] geçişini koruyan gösterişli [pas_darmes_instigator.Custom('MountedWarriorTerm')], bir dövüş fazlasına maruz kalmıştır.\n\n[pas_darmes_victim.GetTitledFirstName]'ün korkunç bir [pas_darmes_victim.GetHerHim] yaralanmaya neden olduğu ve soyluların bir kez daha serbestçe geçebilmeleri için yolu açtığı söylenir." #NT!
+ tournament_events.1120.a: "İşte yiğit bir hayatın riskleri." #NT!
+ tournament_events.1120.a.dead: "Şerefli bir gidiş." #NT!
+  
+ tournament_events.1130.opening: "[pas_darmes_victim.Custom2('AppropriateGreeting', ROOT.Char)]" #NT!
+ tournament_events.1130.desc: "Hizmetçilerimle [activity.GetCurrentPhase.GetLocation.GetName]'a seyahat ederken, [pas_darmes_instigator.GetFullName] şirketimizi durdurdu ve küstahça kişisel bir hatıra istedi...\n\nLanet jetonu [pas_darmes_instigator.GetHerHim]'ye vermekten başka çarem yoktu... [pas_darmes_instigator.GetSheHe|U] eğer onu geri istiyorsam bir meydan okuyucuyu [pas_darmes_instigator.GetHerHis] yollamam gerektiğini söyledi." #NT!
+ tournament_events.1130.a: "Bir şeyler yapılmalı." #NT!
+  
+ tournament_events.1140.t: "[ROOT.Char.GetTitleAsNamePossessiveNoTooltip] Gurur" #NT!
+ tournament_events.1140.desc: "Atımın üzerinde havayı seyrederken, [activity.GetCurrentPhase.GetLocation.GetName]'ın telaşını hayranlıkla izlerken, [pas_darmes_instigator.GetHerHis] 'silah geçişi' kampını savunan o övülen savaşçıyı, '[pas_darmes_instigator.GetFullName]'i görüyorum.\n\n" #NT!
+ tournament_events.1140.skilled: "[pas_darmes_instigator.Custom('MountedWarriorTerm')], [pas_darmes_instigator.GetHerHis] koltuğuna memnuniyetle dönerken, küçük bir meydan okuyucu yol boyunca topallayarak ilerliyor ve [pas_darmes_instigator.GetSheHe]'nin yeni topladığı mahmuzlara hayranlıkla bakıyor.\n\n" #NT!
+ tournament_events.1140.unskilled: "Çok memnun bir [pas_darmes_instigator.Custom('MountedWarriorTerm')] yanımdan geçiyor, saygılarını sunuyor, [pas_darmes_instigator.GetFirstNameNoTooltip] ise [pas_darmes_instigator.GetHerHis] koltuğundan izliyor, yenilgiden açıkça acı çekiyor.\n\n" #NT!
+ tournament_events.1140.wounded: "Yıpranmış ve morarmış [pas_darmes_instigator.GetSheHe], yaklaştığımda [pas_darmes_instigator.GetHerHis] acısıyla yüzünü buruşturuyor. "Hepsini kazanamazsın," [pas_darmes_instigator.GetSheHe] kıkırdayarak bana gözlerini kısarak bakıyor." #NT!
+ tournament_events.1140.fallback: "[pas_darmes_instigator.GetSheHe|U], [pas_darmes_instigator.GetSheHe] beni gördüğünde ayağa fırlıyor, bir başka dövüş için can atıyor, ama kim olduğumu hemen anlıyor. Gülümseyerek bana gözlerini kısarak bakan [pas_darmes_instigator.GetFirstNameNoTooltip], "Tanıştık, [ROOT.Char.GetLadyLord]'ün [ROOT.Char.GetPrimaryTitle.GetBaseNameNoTierNoTooltip]'ü." diye eğiliyor." #NT!
+ tournament_events.1140.a: "Size #EMP [ROOT.Char.GetTitleAsNameNoTooltip|l]#!'nin nasıl eğildiğini göstereyim." #NT!
+ tournament_events.1140.a.wounded: "Bunu da kazanamayacaksın." #NT!
+ tournament_events.1140.a.success: "[pas_darmes_instigator.GetNameNoTooltip]'ı yendin" #NT!
+ tournament_events.1140.a.failure: "[pas_darmes_instigator.GetNameNoTooltip] seni en iyi şekilde değerlendirir" #NT!
+ tournament_events.1140.b: "Sen çok güçlü bir savaşçısın, sana ihtiyacım var." #NT!
+ tournament_events.1140.b.success: "İkna ediyorsun [pas_darmes_instigator.GetNameNoTooltip]" #NT!
+ tournament_events.1140.b.failure: "[pas_darmes_instigator.GetNameNoTooltip] teklifinizi reddediyor" #NT!
+ tournament_events.1140.c: "Sanırım bu kadar yeter." #NT!
+ tournament_events.1140.d: "Aynen böyle devam!" #NT!
+  
+ tournament_events.1141.t: "$tournament_events.1140.t$" #NT!
+ tournament_events.1141.desc: "[pas_darmes_instigator.GetFirstName] ve ben atlarımıza binip pozisyon aldığımızda bir grup izleyici toplanıyor. Tereddüt etmeden, [pas_darmes_instigator.GetSheHe] aniden mızrağı alçaltılmış bir şekilde, toz ve gürleyen toynaklarla hücum ediyor!\n\nİleriye doğru koşuyorum, tüm dikkatimi [pas_darmes_instigator.GetHerHim] ile buluşmak için acele eden sallanan mızrak ucuna yoğunlaştırıyorum." #NT!
+ tournament_events.1141.win: "\n\nŞaftım [pas_darmes_instigator.GetHerHis] kalkanına karşı güçlü bir çatırtı ile parçalandı ve uçarak geçerken [pas_darmes_instigator.GetHerHim] eyerinde geriye doğru sendeledi." #NT!
+ tournament_events.1141.lose: "\n\n[pas_darmes_instigator.GetHerHis]'ın oklarının kalkanıma çarparak parçalandığını ve [pas_darmes_instigator.GetSheHe]'in uçup gittiği sırada eyerimde geriye doğru savrulduğumu hissediyorum." #NT!
+ tournament_events.1141.kill_me: "\n\nYüzüm aniden çok sıcak ve çok ıslak. Konuşmaya çalışıyorum ama gözlerimi açık tutamıyorum. [pas_darmes_instigator.GetFirstNamePossessiveNoTooltip] endişeli bir ifade dünya kararırken görüş alanıma giriyor..." #NT!
+ tournament_events.1141.beat_me: "\n\n[pas_darmes_instigator.GetSheHe|U] beni ayağa kaldırıyor, zırhımdan kıymıklar temizliyor. "İyi savaştın - ama kaybettin." [pas_darmes_instigator.GetSheHe|U] sırıtıyor, elini uzatıyor." #NT!
+ tournament_events.1141.kill_them: "\n\nKoşunun sonuna ulaştığımda, sırıtarak atımı etrafıma getiriyorum ve [pas_darmes_sinstigator.GetFirstNameNoTooltip]'ı arıyorum. Tozun içinde yüzüstü yatan [pas_darmes_instigator.GetHerHis]'i görüyorum, at [pas_darmes_instigator.GetHerHis] ayağa sokuluyor." #NT!
+ tournament_events.1141.beat_them: "\n\nHızla geri dönüyorum, [pas_darmes_instigator.GetHerHim]'ı dik tutuyorum ve yaraları kontrol ediyorum. "İyi olacağım," diye homurdanıyor [pas_darmes_instigator.GetHerHis], "İşte, mahmuzlarım."" #NT!
+ tournament_events.1141.a: "Sadece bir çizik..." #NT!
+ tournament_events.1141.a.death: "#weak *gırtlak sesi*#!" #NT!
+ tournament_events.1141.b: "Sana göstereceğimi söylemiştim!" #NT!
+ tournament_events.1141.b.death: "[pas_darmes_instigator.GetFirstNameNoTooltip]? #EMP [pas_darmes_instigator.GetFirstNameNoTooltip]?!#!" #NT!
+  
+ tournament_events.1150.t: "$tournament_header$ Şeref Geri Kazandırma" #NT!
+ tournament_events.1150.desc: "[pas_darmes_instigator.GetTitledFirstName], [pas_darmes_instigator.GetHerHis] bıçağını bileyerek yol kenarında oturuyor, ben de [pas_darmes_instigator.GetHerHis] yetersiz kampa yaklaşıyorum.\n\n"Ah, ne zaman yüzünü göstereceğini merak ediyordum, iyi [ROOT.Char.GetTitleAsNameNoTooltip]." [pas_darmes_instigator.GetSheHe] sırıtıyor, [pas_darmes_instigator.GetHerHis] kemerinden bir giysi çıkarıyor. "Bunu geri almaya mı geldin, sanırım?"\n\n" #NT!
+ tournament_events.1150.skilled: "Bu [pas_darmes_instigator.GetWomanMan]'ın savaşçı itibarının gayet farkındayım, ancak [pas_darmes_instigator.GetHerHis] egosu [pas_darmes_instigator.GetHerHis] çöküşü olarak ortaya çıkacaktır." #NT!
+ tournament_events.1150.unskilled: "[pas_darmes_instigator.GetWomanMan]'ın beceriden çok cesarete sahip olduğu biliniyor, ama [pas_darmes_instigator.GetHerHim]'i hafife almamalıyım." #NT!
+ tournament_events.1150.wounded: "Her halükarda [pas_darmes_instigator.GetHerHis] yara bana kesinlikle avantaj sağlardı..." #NT!
+ tournament_events.1150.fallback: "Onurum sadece [ROOT.Char.Custom('MountedWarriorTerm')]... kadar bir şeyle tehlikeye atıldı." #NT!
+ tournament_events.1150.a: "Gelin, eğilelim." #NT!
+ tournament_events.1150.a.wounded: "Sana bir yara daha vereceğim: hatırlayacağın bir yara #EMP ben#! tarafından." #NT!
+ tournament_events.1150.a.success: "[pas_darmes_instigator.GetTitledFirstNameNoTooltip]'ı yendin" #NT!
+ tournament_events.1150.a.failure: "[pas_darmes_instigator.GetTitledFirstNameNoTooltip] seni en iyi şekilde değerlendirir" #NT!
+ tournament_events.1150.b: "Kumaş parçanızı saklayın, iyi [pas_darmes_instigator.Custom('MountedWarriorTerm')]." #NT!
+  # FLAVOR 
+ tournament_events.1200.t: "Dini sitem" #NT!
+ tournament_events.1200.desc: "Soylular ve avam heyecanla önlerindeki yarışmalara ve eğlenceye hazırlanırken, [angry_clergy.GetTitledFirstName] [angry_clergy.GetFaith.AltPriestTermPlural]'in onaylamamasını açıkça ortaya koyuyor.\n\n"Bu turnuva günahın bir aracıdır; iyi [angry_clergy.GetFaith.GetAdherentNamePluralNoTooltip] gurur uğruna ölecek; biblolar uğruna birbirlerinin kanını dökecek; şöhret uğruna [angry_clergy.GetFaith.PositiveAfterLife] vazgeçecek."\n\n"Bu eğilimler dizginlenmeli, [angry_clergy.GetFaith.HighGodNamePossessive] düşmanlara karşı kullanılmalı, övünçle körüklenip söndürülmemelidir."" #NT!
+ tournament_events.1200.a: "Biraz pratik yapmadan [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip]'ı savunamazlar!" #NT!
+ tournament_events.1200.a.success: "[angry_clergy.GetTitledFirstNameNoTooltip] ikna oldu" #NT!
+ tournament_events.1200.a.failure: "[angry_clergy.GetTitledFirstNamePossessiveNoTooltip]'ın fikrini değiştiremezsin" #NT!
+ tournament_events.1200.b: "Kutumdan rekabetin erdemlerini göreceksiniz." #NT!
+ tournament_events.1200.b.success: "[angry_clergy.GetTitledFirstNameNoTooltip] kazanıldı" #NT!
+ tournament_events.1200.b.failure: "[angry_clergy.GetTitledFirstNameNoTooltip] küçümseyici" #NT!
+ tournament_events.1200.c: "İyi bir noktaya değindin, ben yarışmam." #NT!
+ tournament_events.1200.d: "Aman boş verin [angry_clergy.GetFaith.PriestNeuter], eğlensinler." #NT!
+ tournament_events.1230.t: "Paçavralardan Postaya" #NT!
+ tournament_events.1230.desc: "Turnuva sahasında tur atarken, atmosferi içime çekerken ve çeşitli pratik yarışmacıların tekniklerini tartışırken, belirli bir [battle_peasant.GetWomanMan] gözüme çarptı.\n\n[battle_peasant.GetHerHis|U] her hareket zarafet, verimlilik ve dengeyle doluydu, hem çöpçatanlık işini hem de dövüş partnerini kısa sürede halletti.\n\nHangi asil evden [battle_peasant.GetSheHe] geldiğini açıklamak için [battle_peasant.GetHerHim]'yi çağırdığımda, [battle_peasant.GetHerHis] yere düşmeden önce gözleri kocaman açıldı. "A-benim [ROOT.Char.GetLadyLord]! Ben sadece bir köylüyüm, daha fazlası değil." diye kekeledi, derin bir şekilde eğilerek." #NT!
+ tournament_events.1230.a: "Hayır, sen benim şampiyonum olacaksın!" #NT!
+ tournament_events.1230.b: "Yıldızların değişti, [battle_peasant.Custom('MountedWarriorTerm')]." #NT!
+ tournament_events.1230.b.tt: "[battle_peasant.Custom('KnightCulture')]'ınız olur" #NT!
+ tournament_events.1230.c: "Seni yarışırken görmeliyim! Sana sponsor olurum." #NT!
+ tournament_events.1230.c.tt: "[activity.GetShortName]'ınıza katılır" #NT!
+ tournament_events.1230.d: "Ah, #EMP köylü mü?!#! Ne yazık..." #NT!
+ tournament_events.1230.d.tt: "[battle_peasant.GetName] kaybolur" #NT!
+ tournament_events.1240.t: "$tournament_header$ Galip Gelene" #NT!
+ tournament_events.1240.desc: "[activity.GetCurrentPhase.GetPhase.GetName] yarışmasının kazananına verebileceğim olası ödülleri düşündüğümde, aklıma evlenmemiş [ROOT.Char.Custom2('RelationToMe', prize_child_1)], [prize_child_1.GetFirstName]'nin eli geliyor.\n\nYine de... eğer sıradan biri kazanırsa..." #NT!
+ tournament_events.1240.a: "Kazananla [prize_child_1.GetFirstNameNoTooltip]'ın evlenmesine karar verdim." #NT!
+ tournament_events.1240.b: "[prize_child_2.GetFirstNameNoTooltip] daha uygundur." #NT!
+ tournament_events.1240.c: "[prize_child_3.GetFirstNameNoTooltip] olmalı." #NT!
+ tournament_events.1240.d: "Biz bu işleri böyle yapmayız." #NT!
+ tournament_events.1240.betrothal_tt: "Geçerliyse, kazanan [marriage_prize.GetTitledFirstName] ile nişanlanacak" #NT!
+ tournament_events.1240.marry_tt: "Geçerliyse, kazanan [marriage_prize.GetTitledFirstName] ile evlenecek" #NT!
+  
+ tournament_events.1250.t: "$tournament_header$ İyilik Nişanı" #NT!
+ tournament_events.1250.desc: "Sevdiklerinizin moralini, turnuva boyunca herkesin görebileceği şekilde taşıyacakları küçük bir hatıra eşyasıyla güçlendirmek gelenekseldir.\n\nTek soru, hangi yarışmacının sevgimi daha çok hak ettiğidir..." #NT!
+ tournament_events.1250.a: "Bunu [favor_recipient_1.GetFirstNameNoTooltip]'a vereceğim." #NT!
+ tournament_events.1250.b: "[favor_recipient_2.GetFirstNameNoTooltip] layıktır." #NT!
+ tournament_events.1250.c: "[favor_recipient_3.GetFirstNameNoTooltip]'a gidecek." #NT!
+ tournament_events.1250.d: "Benim lütfumu hak eden yok..." #NT!
+ tournament_events.1250.favor_tt: "[favor_recipient.GetUIName] sizin iyiliğinizi alır" #NT!
+ tournament_favor_accepted_title: "İyilik Kabul Edildi" #NT!
+ tournament_favor_rejected_title: "İyilik reddedildi" #NT!
+ tournament_favor_accepted_desc: "[THIS.Char.GetSheHe|U] iyiliğinizi kabul ediyor" #NT!
+ tournament_favor_rejected_desc: "[THIS.Char.GetSheHe|U] iyiliğinizi reddediyor" #NT!
+ tournament_events.1251.t: "$tournament_events.1250.t$" #NT!
+ tournament_events.1251.discrete: "Turnuvanın ana sahasından uzakta, nispeten sakin bir anda, kendimi [favor_recipient.Custom2('RelationToMe', favor_giver)], [favor_giver.GetTitledFirstName]'imle baş başa buluyorum; onun yaramaz bakışlarına karşı koymak zor.\n\n" #NT!
+ tournament_events.1251.open: "Bahçede durup antrenmanları ve hazırlıkları izlerken arkamdan bir güvercin sesi duydum. "[ROOT.Char.GetTitledFirstName]!" [favor_recipient.Custom2('RelationToMe', favor_giver)], [favor_giver.GetTitledFirstName], bir giysiyi kavrayarak bana doğru koştu.\n\n" #NT!
+ tournament_events.1251.many: "[favor_recipient.GetFaith.HouseholdGodName] ile aldığım iyiliklerin sayısını unuttum - keşke birbirlerini bilselerdi..." #NT!
+ tournament_events.1251.two: "Bana teklif edilen ikinci iyilik bu! Tüm bu kumaş parçalarıyla ne yapacağım?" #NT!
+ tournament_events.1251.one: "[favor_giver.GetSheHe|U] koluma bir jeton bağlayıp gülümsüyor, "Yarışırken bunu tak, sana iyi şans getirecek!"" #NT!
+ tournament_events.1251.favor_tt: "Her donatılmış iyilik kazanma şansını hafifçe #positive_value artırır#! [contests|E]" #NT!
+ tournament_events.1251.a.spouse: "Teşekkür ederim canım." #NT!
+ tournament_events.1251.a.consort: "Aman ne kadar dokunaklı." #NT!
+ tournament_events.1251.a.lover: "Sen çok fazlasın sevgilim." #NT!
+ tournament_events.1251.a: "Gururla taşıyacağım, [favor_giver.GetLadyLord]'ım." #NT!
+ tournament_events.1251.b: "Şu şeyi üzerimden çek." #NT!
+ tournament_events_equip_favor_tt: "İyiliğinizi donatır" #NT!
+ tournament_events_destroy_favor_tt: "[THIS.Char.GetShortUIName|U] sizin iyiliğinizi reddeder" #NT!
+ tournament_events.1252.t: "Tanıdık Bir İyilik" #NT!
+ tournament_events.1252.desc: "Dün bir hayranın [favor_recipient.GetTitledFirstNamePossessive] koluna bağlı iyiliğini gördüğümden beri, bunun neden bu kadar tanıdık geldiğini anlamaya çalışarak beynimi patlatıyorum...\n\nBu sabah [ROOT.Char.Custom2('RelationToMe', favor_giver)], [favor_giver.GetTitledFirstName]'m beni karşıladığında, aniden fark ettim ki - sanırım bu [favor_giver.GetHerHim]'e ait!" #NT!
+ tournament_events.1252.a: "Bilmem lazım!" #NT!
+ tournament_events.1252.a.tt: "[favor_giver.GetFirstNameNoTooltip] ile iyilik hakkında yüzleşiyorsun" #NT!
+ tournament_events.1252.b: "Hayır... saçma..." #NT!
+ tournament_events.1253.t: "$tournament_events.1252.t$" #NT!
+ tournament_events.1253.desc: "[favor_investigator.GetTitledFirstName] odama fırtına gibi giriyor. Odanın etrafına bakınırken, [favor_investigator.GetHerHis] huzursuz bakışı sonunda bana odaklanıyor.\n\n"Bana gerçeği söyle, kolundan sarkan iyilik sana mı ait?"" #NT!
+ tournament_events.1253.a: "#weak ...evet.#!" #NT!
+ tournament_events.1253.b: "Ne? Saçmalama!" #NT!
+ tournament_events.1254.t: "$tournament_events.1252.t$" #NT!
+ tournament_events.1254.desc:0 "[favor_giver.GetFirstName] turned away during my torrent of questions, leaning on the table weakly.\n\nAt last, [favor_recipient.GetSheHe] slowly turns, and breaks the silence delicately: "[favor_giver.GetFirstName], soru selim sırasında başını çevirdi, masaya zayıfça yaslandı.\n\nSonunda, [favor_recipient.GetSheHe] yavaşça döndü ve sessizliği nazikçe bozdu: "Doğru - benim iyiliğim [favor_recipient.GetTitledFirstName] giyiyor..."" #NT!
+ tournament_events.1254.a: "Öyle mi?" #NT!
+ tournament_events.1254.b: "#EMP Öyle mi?!#!" #NT!
+ tournament_events.1255.t: "$tournament_events.1252.t$" #NT!
+ tournament_events.1255.desc: "[favor_giver.GetTitledFirstName], [favor_recipient.GetTitledFirstName] ile herhangi bir bağlantısı olduğunu reddediyor ve suçlamadan açıkça bıkmış durumda. "[favor_recipient.GetWomanMan]'yi bile zor tanıyorum!"\n\n[favor_giver.GetSheHe] ne derse desin, şüphe tohumları çoktan ekilmiş..." #NT!
+ tournament_events.1255.a: "Daha ne yapabilirim?" #NT!
+ tournament_events.1255.a.tt: ""Bunu ancak zaman gösterecek..."" #NT!
+ tournament_events.1260.t: "Barışı Korumak" #NT!
+ tournament_events.1260.desc: "Sayısız lord ve [ROOT.Char.Custom('MountedWarriorTermPlural')]'ın bir arada olduğu bir yerde, eski anlaşmazlıkların yeniden alevlenmesi ve kibrin sürtüşmeleri körüklemesiyle sürekli çekişmelerin yaşanması şaşırtıcı değildir.\n\n" #NT!
+ tournament_events.1260.rival: ""Dinle beni, kaypak [duelist_2.Custom('InsultNoun')]!" [duelist_1.GetFirstName] hırlıyor, [duelist_2.GetTitledFirstName] parmak [duelist_2.GetHerHis] [duelist_2.Custom('SignatureWeaponNameOrType')] tehditkar bir şekilde kavrıyor. Kimse neyin başlattığından emin değil.\n\nGenellikle bu küçük cesaret gösterileri en kötü ihtimalle morarmış bir gözle sonlanıyor, ancak [duelist_1.GetTitledFirstNamePossessive] [duelist_2.GetTitledFirstName] ile olan korkunç bir kavga tüm etkinliği lekelemekle tehdit ediyor." #NT!
+ tournament_events.1260.fallback: ""Dinle bakalım, kaypak [duelist_2.Custom('InsultNoun')]!" [duelist_1.GetFirstName] hırlıyor, [duelist_2.GetFirstNameNoTooltip] parmak [duelist_2.GetHerHis] tehditkar bir şekilde kılıç tutuyor.\n\nGenellikle bu küçük cesaret gösterileri en kötü ihtimalle morarmış bir gözle sonuçlanıyor, ancak bu korkutucu kavga tüm etkinliği lekelemekle tehdit ediyor. Kimse neyin başlattığını söyleyemiyor." #NT!
+ tournament_events.1260.a: "Bu kadar yeter! Burası bir haydut kampı değil!" #NT!
+ tournament_events.1260.b: "Gelin, ev sahibinizi mahcup etmeyin." #NT!
+ tournament_events.1260.c: "Dışarı! Bu baş belalarını uzaklaştırın!" #NT!
+ tournament_events.1260.d: "Deste [second_duelist.GetHerHim], [preferred_duelist.GetFirstNameNoTooltip]!" #NT!
+ tournament_events.1260.duel_toast: "[duel_winner.GetTitledFirstName] düelloyu kazandı" #NT!
+ tournament_events.1260.peace_toast: "Düellocular geri çekildi" #NT!
+ tournament_events.1260.duel_tt: "Düello devam ediyor, [duelist_1.GetFirstName] veya [duelist_2.GetFirstName] kişi yaralanıyor" #NT!
+ tournament_events.1270.t: "$tournament_header$ İyi Spor" #NT!
+ tournament_events.1270.winner: "Büyük pavyonda hayranlarıyla çevrili [congratulate_winner.GetTitledFirstName]'ı görüyorum, şüphesiz [congratulate_winner.Custom('GetRandomWonContest')|l] yarışmasında [congratulate_winner.GetHerHis] zaferi ve [congratulate_winner.GetSheHe]'ün kazandığı ödülle övünüyor." #NT!
+ tournament_events.1270.matcher: "Büyük pavyonda [congratulate_winner.GetTitledFirstName]'ı görüyorum, şüphesiz maçımızda beni yendiğiyle övünüyor." #NT!
+ tournament_events.1270.desc: "\n\nNezaket kuralları gereği, geçerken [congratulate_winner.GetHerHim]'ı kabul etmem gerekiyor - dizili misafirlerin önünde bir açıklama yapma şansı..." #NT!
+ tournament_events.1270.a: "Şampiyona üç alkış!" #NT!
+ tournament_events.1270.b: "Tebrikler [congratulate_winner.GetFirstNameNoTooltip], fazlasıyla hak ettin!" #NT!
+ tournament_events.1270.c: "Ah [congratulate_winner.GetFirstNameNoTooltip], şans gerçekten de gizemli işliyor..." #NT!
+ tournament_events.1270.d: "Şimdi hatırladım, başka bir yerde olmam gerekiyor." #NT!
+ tournament_events.1270.nickname_toast: "İsim akılda kalıcı" #NT!
+ tournament_events.1280.t: "$tournament_header$ Dağınık Standartlar" #NT!
+ tournament_events.1280.desc:1 "Streams of commoners and nobles alike flock to the contest grounds, vying to secure a good view of the [activity.GetCurrentPhase.GetPhase.GetName].\n\nA horrendous groan pierces the excited hubbub — a stand overloaded with spectators gives way with a #EMP crash#!! Its mass of screaming victims are sent tumbling from view.\n\nAs recriminations fly, my [ROOT.Char.Custom2('RelationToMeShort', intercessor)] [intercessor.GetName] staunchly discourages punishing the stand's builders: "Hem sıradan insanlar hem de soylular, [activity.GetCurrentPhase.GetPhase.GetName]'ı iyi bir şekilde görebilmek için yarışma alanına akın ediyor.\n\nKorkunç bir inilti, heyecanlı kargaşayı deliyor — seyircilerle dolu bir tribün #EMP bir çarpışmayla çöküyor#!! Çığlık atan kurbanların kütlesi görüş alanından düşüyor.\n\nSuçlamalar havada uçuşurken, [ROOT.Char.Custom2('RelationToMeShort', intercessor)] [intercessor.GetName] tribün inşaatçılarını cezalandırmayı kesin bir şekilde engelliyor: "Bu bir [intercessor.GetFaith.HighGodName] eylemiydi, başka bir şey değil!"" #NT!
+ tournament_events.1280.a: "Bu sözde '#EMP oluşturucuları#!'!'i yürütün" #NT!
+ tournament_events.1280.b: "Bizim bakmamız gereken yas tutanlardır." #NT!
+ tournament_events.1280.c: "Bazen felaketlerden kaçış olmaz..." #NT!
+ tournament_events.1290.t: "Yönetilemeyen Yaramazlar" #NT!
+ tournament_events.1290.desc: "Çalan alarmla erken uyandım, şimdi çaresiz kasaba halkının [fire_holding.GetBaronyNameExplicitly]'ın alev alev yanan binalarına kova kova su yönlendirdiğini izliyorum, [fire_holder.GetTitledFirstName] öfkeyle açıklıyor.\n\n"[ROOT.Char.Custom('RegionalAlcoholicDrink')]'den sarhoş olmuş ve yarışmalardan etkilenen bir grup beyefendi, bir anlaşmazlıktan sonra bir tüccarın tezgahını ateşe verdi..." [fire_holder.GetSheHe] öfkeyle konuşuyor. "Bunun yeniden inşa edilmesi aylar alacak!"\n\nTurnuvamın böyle hatırlanmasını istemiyorum..." #NT!
+ tournament_events.1290.a: "Efendiler eğlencelerinin bedelini ödemelidir." #NT!
+ tournament_events.1290.b: "Ben tamirat masraflarını karşılarım." #NT!
+ tournament_events.1290.c: "Korkarım ki bu da bunlardan biri..." #NT!
+  
+ tournament_events.1300.t: "$tournament_header$ Altında [old_knight.GetHerHis|U] Kanat" #NT!
+ tournament_events.1300.desc: ""Hayır, tam olarak değil. Dengenizi sağlamak ve hedefi #EMP'dan#!'e savurmak için ayağınızı biraz geriye doğru hareket ettirin ve... evet! Mükemmel! Aferin [young_knight.Custom('GetLassLad')]!"\n\nÖnümde, gri saçlı yaşlı gazi [old_knight.GetFirstName] eğitim alıyor [young_knight.GetFirstName], edindiği bilgiyi birinden diğerine [ROOT.Char.Custom('KnightCultureNoTooltipLowercase')] açıkça aktarıyor. [old_knight.GetFirstNameNoTooltip] yaklaşırken beni görüyor.\n\n"Günaydın, [ROOT.Char.GetTitleAsNameNoTooltip]'m! Burada [young_knight.GetFirstNameNoTooltip]'in mükemmel [young_knight.GetHerHis] duruşlarına yardım ediyorum. Elinizde zaten yetenekli genç bir savaşçı var!" [young_knight.GetFirstNameNoTooltip], [young_knight.GetHerHis] akıl hocasından gelen övgü karşısında mahcup ama memnun bir sırıtmayı gizlemeye çalışıyor ve başaramıyor." #NT!
+ tournament_events.1300.a: "Harika! Devam et!" #NT!
+ tournament_events.1300.b: "Aslında belki de #EMP I#! bunu üstlenmeli." #NT!
+ tournament_events.1300.b.success: "[young_knight.GetFirstNameNoTooltip] kazanç #color_white 10#! [GetTrait('tourney_participant').GetName( GetNullCharacter )] $game_concept_trait_level_track_xp$ rastgele $game_concept_trait_level_track$" #NT!
+ tournament_events.1300.b.failure: "[young_knight.GetFirstNameNoTooltip] kaybeder #color_white 5#! [GetTrait('tourney_participant').GetName( GetNullCharacter )] $game_concept_trait_level_track_xp$ rastgele $game_concept_trait_level_track$" #NT!
+ tournament_events.1300.c: "Bana da öğretir misin?" #NT!
+  
+ tournament_events.1310.t: "Muhteşem Bir Misafir" #NT!
+  #AGOT Modified 
+ #tournament_events.1310.desc: "Muhteşem bir fanfar havayı yırtıyor. Yanımdan koşarak geçen atlı bir haberci bir parşömeni açıyor.\n\n"Duyun, duyun! Bu en güzel günlerde, gerçek bir virtüözün varlığıyla kutsanmış durumdayız. [famous_knight.GetSheHe|U] İrlanda'dan Cathay'a gelen herkesi yendi! Dünyanın en yetenekli, en görkemli, en iyilerini tanıtmak benim için bir onur ve ayrıcalıktır: [famous_knight.GetTitledFirstName]!"\n\nBir figür habercinin yanından hızla geçiyor, atı [famous_knight.GetHerHis] durduruyor, kırılan bir güneş ışını bir hale gibi [famous_knight.GetHerHim] aydınlatıyor, kalabalığın kükremesi neredeyse yeri sallıyor." #NT!
+ tournament_events.1310.desc: "Muhteşem bir fanfar havayı yırtıyor. Yanımdan koşarak geçen atlı bir haberci bir parşömeni açıyor.\n\n"Duyun, duyun! Bu en güzel günlerde, gerçek bir virtüözün varlığıyla kutsanmış durumdayız. [famous_knight.GetSheHe|U] Duvar'dan Asshai'ye kadar gelen herkesi yendi! Dünyanın en yetenekli, en görkemli, en iyilerini tanıtmak benim için bir onur ve ayrıcalıktır: [famous_knight.GetTitledFirstName]!"\n\nBir figür habercinin yanından hızla geçiyor, atı [famous_knight.GetHerHis] durduruyor, kırılan bir güneş ışını bir hale gibi [famous_knight.GetHerHim] aydınlatıyor, kalabalığın kükremesi neredeyse yeri sallıyor." #NT!
+ tournament_events.1310.a: "Seni burada görmek ne güzel, [famous_knight.GetFirstNameNoTooltip]!" #NT!
+ tournament_events.1310.b: "Belki bana bir iki şey öğretebilirler?" #NT!
+ tournament_events.1310.b.critsuccess: "[famous_knight.GetFirstNameNoTooltip] size bazı teknikler öğretiyor" #NT!
+ tournament_events.1310.b.success: "Birkaç ipucu topla" #NT!
+ tournament_events.1310.b.failure: "[famous_knight.GetFirstNamePossessiveNoTooltip] öğretiyi anlamıyorsun" #NT!
+ tournament_events.1310.c: "Pardon, kim?" #NT!
+  
+ tournament_events.1311.t: "Karmakarışık" #NT!
+ tournament_events.1311.desc: ""Burada dolaşan herkesin dikkatine!" Bir habercinin sesi turnuvanın etrafında dolaşan kalabalığın arasından duyulur ve birkaç kişiden fazlası gürültüye doğru döner.\n\n"Şu anda sahaya girmenin... olduğunu bilin..." Haberci hafifçe soluk soluğa kalır, kalabalığın içinde açıkça unutulmuş bir ismi arar.\n\n"Benim... iyi hanımım- şey, benim iyi #EMP efendim#!- şey..." Habercinin elleri spazmodik olarak sıkılır ve açılır, tanıtılan [forgotten_knight.Custom('KnightCultureNoTooltipLowercase')]'nin adını unutmanın verdiği panik gün gibi ortadadır. [forgotten_knight.Custom('KnightCultureNoTooltipLowercase')], [forgotten_knight.GetTitledFirstName] dedi, korkudan titreyen haberciye gök gürültüsü gibi bir yüzle yaklaşır." #NT!
+ tournament_events.1311.a: "[forgotten_knight.GetFirstNameNoTooltip]! Sana başka bir müjdeci sunabilir miyim?" #NT!
+ tournament_events.1311.b: "O habercinin muhtemelen yeni bir işe ihtiyacı olacak..." #NT!
+ tournament_events.1311.b.tt: "Tüm [GetTrait('compassionate').GetName( GetNullCharacter )] katılımcı sizin hakkınızda #color_green +25#! görüş kazanır" #NT!
+ tournament_events.1311.c: "Hah! [forgotten_knight.GetHerHis] #EMP ismini unuttular!#!" #NT!
+ tournament_events.1312.t: "Yabancı Flair" #NT!
+ tournament_events.1312.desc: "Oohs ve aahs, ardından alkışlar, küçük bir kalabalığın yanından geçerken dikkatimi çekiyor. İlgim artmış bir şekilde aralarına doğru ilerliyorum.\n\nOrtalarında, kınından yarı çekilmiş bir kılıç olan [foreign_knight.GetWomanMan] duruyor ve silahın alışılmadık kabzasını hayrete düşmüş sıradan insanlara gösteriyor. [foreign_knight.GetSheHe]'in buralardan olmadığı açık: [foreign_knight.GetHerHis] aksanı hafif ve yabancı. [foreign_knight.GetSheHe] beni görünce, [foreign_knight.GetSheHe] saygıyla başını eğiyor ve ardından kalabalığa geri dönüyor.\n\n"Şimdi, size topraklarımdan bir kılıç numarası göstereyim mi?" Kalabalık yine gürültülü bir şekilde tezahürat ediyor." #NT!
+ tournament_events.1312.a: "Yeni bir hükümdarın nasıl olmasını isterdiniz?" #NT!
+ tournament_events.1312.a.success: "[foreign_knight.GetFirstNameNoTooltip] katılmayı kabul ediyor" #NT!
+ tournament_events.1312.a.failure: "[foreign_knight.GetFirstNameNoTooltip] seni reddediyor" #NT!
+ tournament_events.1312.b: "Ne kadar ilgi çekici bir karakter!" #NT!
+ tournament_events.1312.c: "[foreign_knight.GetSheHe|U] sadece yabancı, ne olmuş yani?" #NT!
+  
+ tournament_events.1320.t: "Kırmızı Madeni Para" #NT!
+ tournament_events.1320.desc: "Tuvaletten geri dönüyorum, iki çadırın arasından kıvrılarak gidiyorum, sadece arkamdan bir el ağzıma sertçe vuruyor.\n\n"Konuşmana izin verdiğimde sessiz ol. Bunu yapabilir misin?" Boğuk kabul edişim sesi tatmin ediyor ve topuklarımın üzerinde dönerek alışılmadık kıyafetler giymiş bir yabancı buluyorum. Küçük bir şey anında elime bastırılıyor.\n\n"Bununla ilgilenmem gerekiyor. Benim için çok önemli. Bunun için geri döneceğim. Eğer yapmazsam..." Yabancının ağzında garip bir şekilde yorgun bir gülümseme beliriyor. "...o zaman bunu sana hediyem olarak kabul et.\n\nAşağı bakıyorum. Avucumun içinde altın rengi ama tuhaf bir şekilde #EMP kırmızı#! bir madeni para var. Orada donuk bir şekilde yatıyor, dokununca biraz sıcak." #NT!
+ tournament_events.1320.a: "Bunu senin için saklayacağım." #NT!
+ tournament_events.1320.b: "Ben bundan hiçbir şey istemiyorum!" #NT!
+  
+ tournament_events.1321.t: "Ödünç alınan para" #NT!
+ tournament_events.1321.desc: "Yarışmalar arasında kendimi tazelerken kupamın üzerinden baktığımda, pelerinli ama garip bir şekilde tanıdık bir figürün bana yaklaştığını görüyorum.\n\n"Sanırım sende bana ait bir şey var." Kişi sanki parıltısına alışkın değilmiş gibi ışığa doğru adım atıyor. "Madeni para, benim [ROOT.Char.GetLadyLord]. Hala sende, değil mi?\n\nCebimden çıkardığımda, metal güneş ışığında parlıyor. Neredeyse eskisinden daha kırmızı görünüyor, zengin bir garnet tonu. Figür başlığının altından gülümsüyor.\n\n"En derin teşekkürlerimi, kalbimin en derinlerinden. Lütfen, zahmetleriniz için." Ellerini uzatıp alıyorlar, ama diğerinde altınla dolu ağır bir kese sunuyorlar." #NT!
+ tournament_events.1321.a: "Benim sarayıma gel. Yeteneklerini kullanabilirim." #NT!
+ tournament_events.1321.b: "İş yapmak keyifliydi dostum." #NT!
+ tournament_events.1321.c: "Hmm. Sanmıyorum." #NT!
+ tournament_events.1321.c.tt: "Bu riskli görünüyor..." #NT!
+  
+ tournament_events.1322.t: "Riske Değer mi?" #NT!
+ tournament_events.1322.desc: "Yabancının yüzünde beliren öfke beni afallatıyor ve muhafızlarımın bir adım öne çıkıp silahlarını çekmelerine neden oluyor. Figürün dudakları, başlıklarını indirirken tiksinti ve alaycı bir şekilde kıvrılıyor.\n\n"Yüzümü görebilirsin." [unusual_stranger.GetSheHe|U] diyor. "Ayrıca sana adımı da söyleyeceğim. Şimdiki en büyük dileğim, geceleri uyanık kalıp [unusual_stranger.GetFirstName]'in senden nasıl adil bir intikam alacağını düşünmen. Yıllar geçebilir ama ben asla unutmam ve umarım ki sadece şimdi sen de asla unutmazsın."\n\n"Şunu unutma: #EMP hesaplaşma olacak.#!" [unusual_stranger.GetSheHe|U] başlığını tekrar yukarı kaldırır, [unusual_stranger.GetHerHis] pelerinini vücudunun etrafına daha sıkı sarar ve kalabalığın içinde kaybolur." #NT!
+ tournament_events.1322.a: "Ben... Ben iyi olacağından eminim." #NT!
+  
+ tournament_events.1330.t: "Yeni Nesil" #NT!
+ tournament_events.1330.desc: ""İyi şanslar, [ROOT.Char.GetLadyLord]'ım!" Toplanan kalabalığın bir üyesinin bağırışını minnettar bir el sallamayla kabul ediyorum. "Ve sana da iyi şanslar, [heir.GetFirstName]!"\n\n"Bununla ne demek istediler?" diye soruyorum [heir.GetFirstNameNoTooltip], yanımda yürürken. "Sana neden şans dilemeleri gereksin ki?" [heir.GetHerHis|U] gergin bakışı hemen bu sorunun cevabını verdi.\n\n"Ben... Ben yarışmak istiyorum!" [heir.GetSheHe|U] ısrar ediyor. "Sen katılıyorsan, ben neden katılamıyorum?" Duraksıyorum, [heir.GetFirstNameNoTooltip] tereddütle yanımda durmaya çalışıyorum, [heir.GetHerHis] cesaretim tepkim karşısında biraz dağılıyor." #NT!
+ tournament_events.1330.a: "Anlamanız gerekiyor. Riske atılmayacak kadar değerlisiniz." #NT!
+ tournament_events.1330.b: "Böyle bir [heir.Custom('GetDaughterSon')]'a sahip olmak ne büyük bir ayrıcalık!" #NT!
+ tournament_events.1330.c: "Bunu yasaklıyorum! Hemen git istifa et!" #NT!
+ tournament_events.1330.d: "...[spouse.GetMotherFather]'ına söyleme." #NT!
+  
+ tournament_events.1331.t: "Aile İçin mi?" #NT!
+ tournament_events.1331.desc: ""[ROOT.Char.GetFirstName]! Tam da karşılaşmak istediğim [ROOT.Char.GetWomanMan]!" [dynast.GetFirstName] yanıma koştu. "Konuşmamız gerek. Bak, yaklaşan yarışmaya kaydolduğunu duymuştum ve, şey..."\n\nDuygusuz bakışım açıkça [dynast.GetFirstNamePossessiveNoTooltip] duruma karşı duruşumu sertleştiriyor. [dynast.GetSheHe|U] [dynast.GetHerselfHimself]'i [dynast.GetHerHis] tam boyuna çekiyor.\n\n"Geri çekilmen gerek. Ben [dynast.GetDynastyName]'nin başıyım ve bunu talep ediyorum! Soyumuzun iyiliği için!" [dynast.GetSheHe] beni azarlarken, katılımcı yarışmacıların renklerinin asıldığı yere geri bakıyorum. Tahmin edilebileceği gibi, [dynast.GetFirstNamePossessiveNoTooltip] de dahil." #NT!
+ tournament_events.1331.a: "Korkutma bana işlemez, [dynast.GetFirstNameNoTooltip]." #NT!
+ tournament_events.1331.b: "Elbette. #EMP 'aile'#!. için her şey" #NT!
+ tournament_events.1331.c: "Sözlerini yeniden gözden geçirmek ister misin, [dynast.GetFirstNameNoTooltip]?" #NT!
+ tournament_events.1331.d: "Senin menfaatin için zorlanmam!" #NT!
+ tournament_events.1331.e: "Gerekirse çekilirim." #NT!
+  
+ tournament_events.1332.t: "Vermek ve Almak" #NT!
+ tournament_events.1332.desc: "[powerful_vassal.GetFirstName]'ın bana doğru yürüdüğünü görüyorum ve dehşet içinde kısa bir süreliğine gözlerimi kapatıyorum. Gözlerimi tekrar açtığımda, [powerful_vassal.GetSheHe] tam önümde, bana sert bir gülümsemeyle bakıyor ve bakışlarını kötü bir şekilde gizliyor.\n\n"[ROOT.Char.GetFirstName], [ROOT.Char.GetLadyLord], seni burada ve yarışırken görmek ne kadar #EMP harika#!!" [powerful_vassal.GetSheHe|U] kolumdan tutuyor ve komplo kurmak için bizi kalabalığın biraz uzağına götürüyor. "Bak. Bir iyiliğe ihtiyacım var." [powerful_vassal.GetHerHis|U] Gözlerimi devirdiğimde neredeyse çatırdıyor.\n\n"Bu yarışmada başarılı olmak istiyorum ve en güçlü ve #EMP sadık#! vasallarından biri olarak yardımına güvenip güvenemeyeceğimi merak ediyordum."" #NT!
+ tournament_events.1332.a: "Gerçekten sadıksın, değil mi?" #NT!
+ tournament_events.1332.b: "En sadık mı diyorsun?" #NT!
+ tournament_events.1332.c: "Son zamanlarda ceplerim biraz boş gibi hissediyorum..." #NT!
+ tournament_events.1332.d: "Senin için [powerful_vassal.GetFirstNameNoTooltip]? Herhangi bir şey." #NT!
+ tournament_events.1332.e: "Kendi başının çaresine bakmak zorunda kalacaksın." #NT!
+  
+  # SPECTATOR EVENTS 
+ tournament_events.1400.t: "$tournament_header$ Küçük Hikayeler" #NT!
+ tournament_events.1400.desc: "Bir spor etkinliğinde kalabalığın bir parçası olmak gerçek bir şölen olabilir. Atmosfer, ses ve manzaralar. Tek sorun, bazen nimetleri kadar dezavantajları da beraberinde getirebilmesidir.\n\nBöyle bir dezavantaj, [tall_person.GetFirstName]'ın büyük çerçevesinin arkasında sıkışıp kaldığımı fark ettiğimde ortaya çıktı. Önce bir tarafa, sonra diğer tarafa eğiliyorum, ancak [tall_person.GetHerHis]'in muazzam büyüklüğü aksiyonu neredeyse mükemmel bir şekilde örtüyor.\n\nYüksek sesle iç çekiyorum ve ayağımı yere vuruyorum. [tall_person.GetFirstNameNoTooltip] kıpırdamıyor. Büyük ve heyecan verici bir şey olurken tezahüratlar duyuluyor. Öfkem yükselmeye başlıyor." #NT!
+ tournament_events.1400.a: "İzlemeniz için #EMP diz çökmenizi#! sağlayacağım!" #NT!
+ tournament_events.1400.a.fight: "Kavga en azından sorunu bir şekilde çözecektir..." #NT!
+ tournament_events.1400.b: "Affedersiniz. Lütfen #EMP hareket ettirebilir misiniz#!?" #NT!
+ tournament_events.1400.b.success: "[tall_person.GetFirstNameNoTooltip] isteksizce boyun eğer" #NT!
+ tournament_events.1400.b.failure: "[tall_person.GetFirstNameNoTooltip] reddediyor" #NT!
+ tournament_events.1400.c: "Benim için savaşmaya ne dersin?" #NT!
+ tournament_events.1400.c.success: "[tall_person.GetFirstNameNoTooltip] sana katılıyor" #NT!
+ tournament_events.1400.c.failure: "[tall_person.GetFirstNameNoTooltip] reddediyor" #NT!
+ tournament_events.1400.d: "Boş ver." #NT!
+  
+ tournament_events.1401.t: "$tournament_header$ Uzun Hikayeler" #NT!
+ tournament_events.1401.desc: "Ne gün ama! Kalabalığın en önündeki yerim bana aksiyonun eşsiz bir görüntüsünü sağlıyor. Giysilerimde hafif bir çekiş hissedene kadar her şey yolunda. Harekete baktığımda, benden çok daha küçük bir figür görüyorum, geçmeye çalışıyor.\n\nBakışlarımı [smol_person.GetHerHim]'a doğrulttuklarını fark ettiklerinde, [smol_person.GetFirstName] doğruluyor ve [smol_person.GetHerHis] davası için yalvarmaya başlıyor.\n\n"Sen sadece... çok #EMP büyük#!!" [smol_person.GetSheHe] deniyor, zıt duruşlarımızı işaret ediyor. "Hiçbir şey göremiyorum! Lütfen, sadece önünüzde durabilir miyim?"" #NT!
+ tournament_events.1401.a: "Hah ha! Hayır." #NT!
+ tournament_events.1401.a.success: "Onları başarılı bir şekilde kutuladın" #NT!
+ tournament_events.1401.a.failure: "[smol_person.GetFirstNameNoTooltip] gizlice geçiyor" #NT!
+ tournament_events.1401.b: "Tamam, hadi geçin." #NT!
+  
+ tournament_events.1402.t: "$tournament_header$ Boşa Harcanan İmtiyazlar" #NT!
+ tournament_events.1402.desc: "Önümdeki yarışma doruk noktasına ulaşıyor, katılımcılar eşit derecede. Önümdeki tahta korkuluğa tutunuyorum ve kalabalığın geri kalanıyla birlikte takdirimi haykırıyorum. Ancak bu haykırış, omurgamdan aşağı bir şeyin sızdığını hissettiğimde hızla boğuk bir çığlığa dönüşüyor. Bir tür sıvı... hem sıcak #EMP hem de #! soğuk bir şey, bir şekilde?\n\nTopuğumun üzerinde dönerek kendimi şu anda sırtımdan aşağı doğru sürünen kimliği belirsiz içeceğin kalıntılarıyla çalkalanan [drinking_spectator.GetFirstName], [drinking_spectator.GetHerHis] kadehiyle karşı karşıya buluyorum.\n\n"Şimdi, nereye gittiğine dikkat et!" [drinking_spectator.GetSheHe] gevezelik ediyor, kupayla beni suçlarcasına işaret ediyor. "Daha dikkatli olmalısın!" #NT!
+ tournament_events.1402.a: "İkimize de birer tane alsam nasıl olur?" #NT!
+ tournament_events.1402.b: "Muhafızlar! Şunu [drinking_spectator.Custom('InsultAdjective')] [drinking_spectator.Custom('InsultNoun')] gözümün önünden kaldırın!" #NT!
+ tournament_events.1402.c: "Haklısın. Benim hatam!" #NT!
+  
+ tournament_events.1403.t: "$tournament_header$ Korkmuş Kalabalık" #NT!
+ tournament_events.1403.desc: "Kalabalık, bir yarışmacı hazırlanırken eğiliyor, ancak atmosfer tiz bir sesle keskin bir şekilde kesiliyor. [realm_priest.GetFirstName] sahaya fırladı.\n\n"Nasıl #EMP#! bu boş, zaman kaybı #EMP pisliği#! izliyor olabilirsin!" [realm_priest.GetSheHe] homurdanıyor, kişiden kişiye dönüyor, [realm_priest.GetHerHis] dudaklarından tükürükler [realm_priest.GetSheHe] onlara nutuk çekerken. "Burada daha az zaman geçirip daha çok ibadet etmelisin!"\n\nİnsan denizi biraz dalgalanıyor, kelimelerde hissedilen bir parça gerçeklik, ardından birkaç cesur ve öfkeli ses karşılık veriyor. Kamuoyunun dalgası [realm_priest.GetFirstNameNoTooltip] vahşice akıyor, ancak [realm_priest.GetSheHe] [realm_priest.GetHerHis] yerde duruyor, gürleyen [realm_priest.GetHerHis] nutuk." #NT!
+ tournament_events.1403.a: "[realm_priest.GetFirstNameNoTooltip] haklısınız, şerefsizler!" #NT!
+ tournament_events.1403.b: "Ühü ..." #NT!
+ tournament_events.1403.c: "Belki de bunun kendi kendine sönmesine izin vermeliyim." #NT!
+  
+ tournament_events.1404.t: "$tournament_header$ Potansiyel Talip" #NT!
+ tournament_events.1404.desc: "Kalabalığın ön tarafına [ROOT.Char.Custom2('RelationToMeShort', gossip_friend)] [gossip_friend.GetFirstName] ile yerleşirken, yarışmacılar önümüzdeki sahada dörtnala koşuyor. [gossip_friend.GetFirstNameNoTooltip] beni birkaç kez dürterek, çok da belli etmeyen bir baş hareketiyle iki yarışmacıyı işaret ediyor.\n\n"Bu ikisi hakkında ne düşünüyorsun?" [gossip_friend.GetSheHe], keyifli bir kıkırdamayı bastırarak diyor. "Hangisi #EMP senin#! tercihin?" [gossip_friend.GetHerHis] aşırı hareketli kaşlarından [gossip_friend.GetSheHe]'ün kimin kazanacağını düşündüğümü sormadığı açık.\n\n"Bak, bak, yaklaşıyorlar! Bir şey söyle! Duyacakları kadar yüksek sesle!"" #NT!
+ tournament_events.1404.a: ""Hiçbiri senin #EMP güzelliğinle kıyaslanamaz."" #NT!
+ tournament_events.1404.b: ""Hah! Aşkın savaş meydanında ikisinden de daha iyisini yaparsın!"" #NT!
+ tournament_events.1404.c: ""#BOL Aman Tanrım, bu ne güzel bir örnek [knight_1.GetFirstNameNoTooltip]?!#!"" #NT!
+ tournament_events.1404.d: ""#BOL Vay canına, sadece #EMP bak#! [knight_2.GetFirstNameNoTooltip]'e!#!"" #NT!
+ tournament_events.1404.e: ""#EMP Şşş, şşş!#! #DIE1 Bu #EMP yeter #!, [gossip_friend.GetFirstName]!#!"" #NT!
+  
+ tournament_events.1405.t: "$tournament_header$ Şanslı [flirty_onlooker.Custom('GetLassLad')|U]" #NT!
+ tournament_events.1405.desc: "Bakışlarım kalabalığın üzerinde geziniyor. Genel karmaşa etrafımda akıyor, tüm seyirciler sohbet ediyor veya yarışmacıları neşelendiriyor. Bir tanesi hariç hepsini fark ediyorum.\n\n[flirty_onlooker.GetFirstName] doğrudan bana bakıyor. Bakışlarımız [flirty_onlooker.GetSheHe] hemen göz temasını kesip [flirty_onlooker.GetHerHis] benden başka her yere bakmadan önce kilitleniyor. Normalde şüphelenirdim ama ısırılmış dudak ve hala izleyip izlemediğimi kontrol etmek için sürekli arkaya atılan kaçamak bakışlar bu durumda farklı bir hikaye anlatıyor." #NT!
+ tournament_events.1405.a: "Gelecek için faydalı bilgiler!" #NT!
+ tournament_events.1405.b: "Vay vay vay..." #NT!
+ tournament_events.1405.b.tt: "Karşılığında [flirty_onlooker.GetFirstNameNoTooltip]'a küçük bir gülümseme ve göz kırpma verin." #NT!
+ tournament_events.1405.c: "Ben seyretmeye geldim, flört etmeye değil!" #NT!
+  
+ tournament_events.1406.t: "$tournament_header$ Yeni Deneyimler" #NT!
+ tournament_events.1406.desc: "Kalabalığın arasından yolumuzu açarken, küçük [root_child.GetFirstNamePossessive] sürekli başını hızla çevirip tüm manzarayı ve sesleri içine çekiyor. [root_child.GetSheHe|U] heyecanla titriyor, elimi çekiştiriyor ve aceleyle geçen katılımcıları işaret ediyor.\n\nBen [root_child.GetHerHim]'yi yavaşça dizginliyorum ama [root_child.GetSheHe] geri çekilmeye devam ediyor, böylesine yeni bir dizi koşul karşısında heyecanını [root_child.GetHerHis] dizginleyemiyor." #NT!
+ tournament_events.1406.a: ""Derslerine odaklan, çocuğum."" #NT!
+ tournament_events.1406.b: ""Hadi, omuzlarıma çık!"" #NT!
+ tournament_events.1406.c: ""Ben de heyecanlıyım, [root_child.GetFirstNameNoTooltip]!"" #NT!
+  
+ tournament_events.1407.t: "$tournament_header$ Onur Savunuluyor" #NT!
+ tournament_events.1407.desc: "İşte [competing_family.GetSheHe]! Benim [ROOT.Char.Custom2('RelationToMeShort', competing_family)] [competing_family.GetFirstName]'im bu yarışmada yarışıyor ve yarışmacıların kalabalığında sonunda [competing_family.GetHerHim]'ü görmeyi başardım. Destek istemek için ağzımı açtığım anda başka bir ses duydum.\n\n"Hey, [competing_family.GetFirstNameNoTooltip]! Hemen git ve bize bütün dertten kurtar!"\n\nKıkırdayan seyircilerin arasında etrafa bakındığımda [shouting_fan.GetFirstName]'in bir hakaretler yağmuruna daha hazırlandığını gördüm." #NT!
+ tournament_events.1407.a: "Ne dedin sen şimdi?!" #NT!
+ tournament_events.1407.a.success: "Dövüşü sen kazandın" #NT!
+ tournament_events.1407.a.failure: "Mücadeleyi kaybedersin" #NT!
+ tournament_events.1407.b: "Hadi [competing_family.GetFirstNameNoTooltip]! Kazanmak senin elinde!" #NT!
+ tournament_events.1407.b.success: "Başarılı bir şekilde bastırdın [shouting_fan.GetFirstNameNoTooltip]" #NT!
+ tournament_events.1407.b.failure: "Boğulmayı başaramıyorsun [shouting_fan.GetFirstNameNoTooltip]" #NT!
+ tournament_events.1407.c: "Umarım [competing_family.GetFirstNameNoTooltip] bunu ciddiye almaz..." #NT!
+  
+ tournament_events.1408.t: "$tournament_header$ Sönmüş" #NT!
+ tournament_events.1408.desc: "Güneş, kalabalığın önündeki bakış açımdan yarışmanın devam ettiğini izlerken tepede parlıyor. Bugün hava çok sıcak. Ya da belki de sadece fazla giyinmişimdir?\n\nBunu düşünürken girişimci bir genç tüccarın bir omzunda belirsiz bir içecekle dolu bir kadeh taşıdığını ve bunu açıkça yoldan geçenlere para karşılığında sunduğunu görüyorum. Ağzım anında kuruyor. Keşke yerimi kaybetmeden oraya gidebilseydim...\n\nÇaresizce cevaplar arıyorum ama kalabalığın içinde sadece [drinking_fan.GetFirstName]'ın [drinking_fan.GetHerHis] noktasına doğru geri döndüğünü görüyorum, içki elinde sıkıca." #NT!
+ tournament_events.1408.a: ""Bunu sizden satın alabilir miyim?"" #NT!
+ tournament_events.1408.a.tt: "Bunu ikna etmek biraz zaman alabilir..." #NT!
+ tournament_events.1408.b: "Belki çabuk olursam..." #NT!
+ tournament_events.1408.b.success: "Bir içki almak için uzaklaşıyorsun ve kolayca geri dönüyorsun" #NT!
+ tournament_events.1408.b.failure: "Bir içki satın alırsın ama yerini kaybedersin" #NT!
+ tournament_events.1408.b.criticalfailure: "Yerini kaybedersin ve satıcı uzaklaşır" #NT!
+ tournament_events.1408.c: "Buna katlanmak zorundayım." #NT!
+  
+ tournament_events.1409.t: "$tournament_header$ Desteklenecek Biri" #NT!
+ tournament_events.1409.desc: "Birinin geçmesine izin vermek için kenara çekiliyorum, ama bunu yapar yapmaz konuşmaya başlıyorlar.\n\n"Ah, [ROOT.Char.GetTitledFirstName]! Seni burada görmek ne güzel!" Cevap vermek için ağzımı açıyorum, ama [friendly_fan.GetFirstName] çok hızlı. "Sanırım favorin yok? Galibiyeti eve götüreceğini düşündüğün biri mi? Ben, [fan_favourite.GetFirstName] hakkında iyi bir his var içimde!"\n\nBir an seçeneklerimi düşünüyorum. Belki de sadece kabul etmek en iyisidir?" #NT!
+ tournament_events.1409.a: ""Elbette! [fan_favourite.GetFirstNameNoTooltip] olmak zorunda!"" #NT!
+ tournament_events.1409.b: ""Elbette [other_favourite.GetFirstNameNoTooltip] olacak, sen [friendly_fan.Custom('InsultNoun')]!"" #NT!
+ tournament_events.1409.c: "Belki sadece gülümseyip başımı sallasam..." #NT!
+  
+ tournament_events.1410.t: "$tournament_header$ Mutsuz Hayranlar" #NT!
+ tournament_events.1410.desc: "Kalabalığın ulumalarının üstünde, bir kavganın hazırlandığını oldukça net duyabiliyorum. Arkama bakmak için boynumu uzattığımda, her biri diğerinin giysilerinden bir avuç taşıyan iki figür seçebiliyorum. Bu anlaşmazlığın tam olarak ne hakkında olduğu belirsiz, ancak gürültücü izleyicilerden oluşan küçük bir daire çoktan oluşmuş durumda.\n\n"Sen [fan_2.Custom('InsultAdjective')] [fan_2.Custom('InsultNoun')]!" [fan_1.GetFirstName] tükürür, [fan_1.GetSheHe] tam boyuna [fan_1.GetHerHis] yükselirken küfür eder. [fan_2.GetFirstName] de aynı şekilde karşılık verir.\n\n"Sen bir kaba ve bir [fan_1.Custom('InsultNoun')]'sın! Bağırsaklarını sökerim!" İkisi oldukça net bir şekilde karşı karşıya geliyor." #NT!
+ tournament_events.1410.a: ""Yeter artık!"" #NT!
+ tournament_events.1410.a.tt: "Aralarına girmeye çalışmak riskli olabilir ama yapmalıyım #EMP biraz#!thing..." #NT!
+ tournament_events.1410.a.success: "Başarılı bir şekilde parçaladın" #NT!
+ tournament_events.1410.a.failure: "Çıkan kavgada yaralanırsınız" #NT!
+ tournament_events.1410.b: ""Hadi bakalım! Kavga etmenin ne zamanı ne de yeri burası!"" #NT!
+ tournament_events.1410.b.success: "Sakinleştirici sözlerin işe yarıyor" #NT!
+ tournament_events.1410.b.failure: "Çift mücadelelerine devam ediyor" #NT!
+ tournament_events.1410.c: "Evet! [fan_1.GetHerHim]'a bas!" #NT!
+ tournament_events.1410.c.fan1: "[fan_1.GetFirstNameNoTooltip] dövüşü kazanır" #NT!
+ tournament_events.1410.c.fan2: "[fan_2.GetFirstNameNoTooltip] dövüşü kazanır" #NT!
+  
+  # INTENT EVENTS 
+ tournament_events.6000.t: "$tournament_header$ Elbette" #NT!
+ tournament_events.6000.desc: "Bir turnuva, kendimi ve dünyayı her köşede gizlenen [murder_target.Custom('InsultNoun')], [murder_target.GetTitledFirstName] tehlikelerinden kurtarmak ve kazaların sıklığıyla şüpheleri dağıtmak için mükemmel bir yerdir.\n\n" #NT!
+ tournament_events.6000.again: "[murder_target.GetTitledFirstName] can daha...\n\n" #NT!
+ tournament_events.6000.deferred: "Övgüye değer bir sabırla zamanımı bekledim... [murder_target.GetTitledFirstName]'a basmak için mükemmel anı bekledim..." #NT!
+ tournament_events.6000.foot: "[activity.GetCurrentPhase.GetPhase.GetName|l] yaklaşıyor ve doğru ellerde zehirli bir bıçak [murder_target.GetHerHim]'i anında mahvedebilir...\n\n" #NT!
+ tournament_events.6000.joust: "[activity.GetCurrentPhase.GetPhase.GetName|l] mızrakları köreltilmiş uçlarıyla güvenli hale getirilmiştir, ancak daha ölümcül kuzenleriyle dikkatlice hazırlanmış bir yedek fark edilmeyebilir...\n\n" #NT!
+ tournament_events.6000.self_match: "Ekipmanıma müdahale etmek, turnuvanın getirdiği güvenlik önlemlerini geçersiz kılmak ve kalabalığın önünde [murder_target.GetFirstNameNoTooltip] bitirmek çok kolay olurdu..." #NT!
+ tournament_events.6000.patsy_match: "[murder_match.GetSheHe], [murder_target.GetFirstNameNoTooltip] ile karşılaşmadan önce sadece [murder_match.GetFirstNamePossessive] ekipmanıyla oynamam ve yıldızların hizalanması için dua etmem gerekiyor..." #NT!
+ tournament_events.6000.injuries: "Olası Yaralanmalar" #NT!
+ tournament_events.6000.a: "İlginç bir fırsat." #NT!
+ tournament_events.6000.b: "Evet, suç [murder_match.GetFirstNameNoTooltip]'a yüklenecek." #NT!
+ tournament_events.6000.c: "Aptalı bitireceğim!" #NT!
+ tournament_events.6000.d: "Henüz değil..." #NT!
+ tournament_events.6000.e: "Çok riskli..." #NT!
+ tournament_events.6000.success: "Sabotajınız başarılı oldu" #NT!
+ tournament_events.6000.failure: "Sabotajınız hiçbir işe yaramıyor" #NT!
+ tournament_events.6000.success_tt: "[murder_target.GetFirstNameNoTooltip], [murder_match.GetFirstNameNoTooltip] tarafından öldürüldü" #NT!
+ tournament_events.6000.blame: "Herhangi bir suçlama [murder_match.GetShortUIName]'a düşecektir" #NT!
+ tournament_events.6000.imprisonment_tt: "[murder_target.GetFirstNameNoTooltip] Ev Sahibi olduğundan, [murder_match.GetFirstNameNoTooltip] hapsedilebilir" #NT!
+ tournament_events.6001.t: "$tournament_events.6050.t$" #NT!
+ tournament_events.6001.foot: "Kılıcımı zehirli bir zehirle ovuşturuyorum, bana iğrenç karışımı satan simyacının vaatlerini düşünüyorum, sonra da onu dikkatlice kınına koyuyorum." #NT!
+ tournament_events.6001.horse: "Silahlıktaki mızrakları gece vakti yerine koyuyorum, karanlıkta yatıyorlar, şafak vaktinin trompetini bekliyorlar." #NT!
+ tournament_events.6001.success_patsy: "\n\nKalp çarpıntısı yaratan bir gerginliğin ardından, ben gidiyorum! Şanslıyım ki, [murder_match.GetFirstName] çok geç olana kadar fark etmeyecek..." #NT!
+ tournament_events.6001.success: "\n\nSinsi bir şekilde modifiye ettiğim ekipmanım [activity.GetCurrentPhase.GetPhase.GetName|l] için hazır, tek yapmam gereken onu doğru kullandığımdan emin olmak..." #NT!
+ tournament_events.6001.failure: "\n\nNe yazık ki ertesi sabah döndüğümde, kurnaz bir hizmetkarın el işimi fark ettiği açıktı - bu girişimler sadece kötü niyetli bir oyun şüphesini uyandırdı ve uşaklar her zamankinden daha dikkatliydi." #NT!
+ tournament_events.6001.closing: "\n\nGünün sandığından daha çabuk gelecek, [murder_target.GetFirstName]..." #NT!
+ tournament_events.6001.a: "Ve sabırsızlanıyorum..." #NT!
+ tournament_events.6001.b: "Ah..." #NT!
+ tournament_events.6010.t: "$tournament_header$ Cinayet Rakibi" #NT!
+ tournament_events.6010.desc: "Gün sonunda, rakibim [murder_target.GetName]'ı açıkça rahat, arkadaşlarıyla birlikte gevşerken görüyorum. Bu rekabet, #EMP kaza#!'nin [murder_target.GetHerHim]...\n\n başına gelmesi için mükemmel bir fırsat sunuyor. Bu rahat ortamda, bir şeyi [murder_target.GetHerHis] fincana sıkıştırmak zor olmamalı." #NT!
+ tournament_events.6010.a: "Yakınlarda bir eczane biliyorum." #NT!
+ tournament_events.6010.a.flavor: "[murder_target.GetFirstNameNoTooltip] başka bir zehirle karşılaşacak!" #NT!
+ tournament_events.6010.a.success: "Rakibiniz son içkiyi [murder_target.GetHerHis] içiyor" #NT!
+ tournament_events.6010.a.ill: "Rakibinizin mizah anlayışı bozuldu" #NT!
+ tournament_events.6010.a.failure: "Rakibiniz görünüşte etkilenmemiş" #NT!
+ tournament_events.6010.b: "Az önce gördüğüm o perişanlar nerede?" #NT!
+ tournament_events.6010.b.flavor: "Çaresiz bir adamdan daha faydalı hiçbir şey yoktur..." #NT!
+ tournament_events.6010.b.success: "Rakibiniz öldürüldü" #NT!
+ tournament_events.6010.b.caught: "Rakibiniz haydutu alt ediyor" #NT!
+ tournament_events.6010.b.failure: "Rakibiniz hayduttan kurtuluyor" #NT!
+ tournament_events.6010.c: "Bu işe yaramayacak..." #NT!
+  
+ tournament_events.6011.t: "$tournament_events.6010.t$" #NT!
+ tournament_events.6011.poison: "Ahırdaki farelerle ilgili hikayemi hemen satın alan iksir satıcısından aceleyle geri dönüyorum.\n\nMeşgul barmen kadehleri ​​yeniden doldururken, karışımı gizlice [murder_target.GetFirstNamePossessive] fincana kaydırmak korkutucu derecede kolay oluyor.\n\n" #NT!
+ tournament_events.6011.thug: "Serseri paramı alıyor, sert bir istifayla şartlarımı kabul ediyor ve [murder_target.GetTitledFirstName] yönündeki ince baş sallamamı onaylıyor.\n\n" #NT!
+ tournament_events.6011.death: "Belki de daha sinir bozucu olan, [murder_target.GetSheHe]'ın içeceği içtikten sonra ne kadar çabuk yere yığıldığı, acı içinde kıvrandığı ve yardım için boğulmaya çalıştığıdır." #NT!
+ tournament_events.6011.ill: "[murder_target.GetSheHe], kupayı [murder_target.GetHerHis]'in dudaklarına götürürken nefesimi tutuyorum ve kısa bir süreliğine başarının tadını çıkarıyorum, ama olmayacak. [murder_target.Custom('InsultNoun')] sadece ateşli ve muhtemelen yaşayacak." #NT!
+ tournament_events.6011.second_chance: "Sinir bozucu bir şekilde, zehir sadece [murder_target.GetWomanMan]'ı sersemletiyor gibi görünüyor, ancak [murder_target.GetHerHim]'i dışarıda takip ettiğimde, turnuva alanının içinde tenha bir noktada yalnız olduğumuzu görüyorum.\n\nBu, amacıma ulaşmak için son şansım olabilir..." #NT!
+ tournament_events.6011.ache: "Etkisi çabuk ortaya çıkıyor: Müşterilerin inleyen [murder_target.Custom('InsultNoun')]'ın etrafını sardığını görüyorum, ama şişenin vaat edilen güce sahip olmadığı hemen anlaşılıyor.\n\nEn iyi ihtimalle [murder_target.GetSheHe] tuvalette kötü bir gece geçirecek..." #NT!
+ tournament_events.6011.slain: "Haberleri beklerken neredeyse uyuyamıyorum ama içimde rakibimden kurtulduğum için şimdiden rahatlamış durumdayım.\n\nŞafak vakti, tüm [activity.GetCurrentPhase.GetLocation.GetNameNoTooltip], sokakta bir bekçi tarafından bağırsakları çıkarılmış halde bulunan [murder_target.GetFirstNameNoTooltip]'e yapılan korkunç saldırıdan bahsediyor, [murder_target.GetHerHis] tarafında kanlı bir hançer var." #NT!
+ tournament_events.6011.caught: "Haberleri beklerken uyuyamıyorum, biçimsiz bir korku sabaha kadar yüreğimi kemiriyor.\n\nGörevlilerim şafak vakti kapıyı çalıp bana [murder_target.GetFirstNameNoTooltip] iddia [murder_target.GetSheHe] gece yarısı cinayete teşebbüs eden bir haydutu alt ettiğimi ve [murder_target.GetHerHim] bunun arkasında benim olduğumu söylüyorlar." #NT!
+ tournament_events.6011.escape: "Haberleri beklerken neredeyse uyuyamıyorum, bir şeylerin ters gittiğinden eminim.\n\nKalbim yerinde, [murder_target.GetFirstNameNoTooltip] hala yaşıyor ve kapüşonlu bir yabancının [murder_target.GetHerHis] hayatına kastettiği haberi [activity.GetCurrentPhase.GetLocation.GetNameNoTooltip]'ye yayılmış." #NT!
+ tournament_events.6011.a.death: "Bu neredeyse #EMP fazla#! kolaydı..." #NT!
+ tournament_events.6011.a.ill: "Umut hala var..." #NT!
+ tournament_events.6011.a.slain: "Çok pis bir iş bu." #NT!
+ tournament_events.6011.a.caught: "Lanet olası serseriler." #NT!
+ tournament_events.6011.a: "Ne lanet bir talih." #NT!
+ tournament_events.6011.b: "Şimdi harekete geçmeliyim." #NT!
+ tournament_events.6011.b.success: "Rakibini öldürüyorsun" #NT!
+ tournament_events.6011.b.failure: "Rakibiniz kaçar" #NT!
+ tournament_events.6011.c: "Bitti..." #NT!
+ tournament_events.6012.t: "$tournament_events.6010.t$" #NT!
+ tournament_events.6012.poison: "Yaklaşan yarışmalar hakkında bazı katılımcılarla sohbet etmekten keyif alırken, birden içimde bir takla attığını ve nefesimin daraldığını hissettim." #NT!
+ tournament_events.6012.thug: "Akşamı diğer katılımcılarla favoriler hakkında sohbet ederek geçirdikten sonra çadırıma doğru yola koyuldum ki arkamda birinin belirdiğini hissettim." #NT!
+ tournament_events.6012.death: "Tanrım, içimdeki bu ateş ne! "Y-yardım!" diye geveledim, tanıdıklarımın aptal yüzleri bana dik dik bakıyordu." #NT!
+ tournament_events.6012.ill: "Endişeli izleyiciler tarafından çevrelenirken, bağırsaklarımı tutarak yere yığılıyorum. "Yardım edin, f-getirin fizik!" diye gevelemeyi başarıyorum." #NT!
+ tournament_events.6012.slain: "Daha dönemeden, sanki bir at beni yere sermiş gibi. Kapşonlu bir form beni sıkıştırıyor, kalbime bir hançer saplıyor!" #NT!
+ tournament_events.6012.caught: "Adam bana doğru hamle yaparken ben de kenara çekiliyorum, onu dengesinden çıkarıp yere sabitliyorum. Parıldayan bir hançer çamurdan dışarı çıkıyor." #NT!
+ tournament_events.6012.escape: "Kapşonlu bir figürün ağır adımları üzerime iniyor. Yaklaştıklarında ağır bir şekilde dönüyorum, onları yere deviriyorum ve çadırların kalabalığına doğru kaçıyorum." #NT!
+ tournament_events.6012.a.death: "#EMP *boğulma*#! H- #weak yardım et...!" #NT!
+ tournament_events.6012.a.ill: "Sadece uzanmaya y-ihtiyacım var." #NT!
+ tournament_events.6012.a.poison: "Bu içkiler günahtır!" #NT!
+ tournament_events.6012.a.slain: "#weak Kim...?!#!" #NT!
+ tournament_events.6012.a.caught: "#EMP Seni kim gönderdi?!" #NT!
+ tournament_events.6012.a: "İyi olacağım..." #NT!
+ tournament_events.6013.t: "$tournament_events.6010.t$" #NT!
+ tournament_events.6013.death: "[murder_target.GetHerHim]'ın arkasına olabildiğince sessizce koşup [murder_target.GetHerHis]'in kafasını yakaladım ve bıçağımı [murder_target.GetHerHis]'in boynuna geçirdim.\n\n[murder_target.GetSheHe|U] çadır labirentine doğru koşarken gevezelikler ve tekmeler attı." #NT!
+ tournament_events.6013.fallback: "Mümkün olduğunca sessizce [murder_target.GetHerHim]'ın arkasına doğru koşuyorum, ama [murder_target.GetFirstName] geldiğimi duyuyor ve dönüp kocaman gözlerle parlayan hançerime bakıyor.\n\n[murder_target.GetSheHe|U] yeni bulduğu enerjiyle fırlayıp beni yere seriyor ve çadır labirentinde kayboluyor." #NT!
+ tournament_events.6013.a.death: "Bu yeterli olmalı!" #NT!
+ tournament_events.6013.a: "Hayır!" #NT!
+ tournament_events.6014.t: "$tournament_events.6010.t$" #NT!
+ tournament_events.6014.desc: "Çadırıma doğru geri dönerken, yan tarafımı güç bela tutarken, arkamdan bir [murder_target.GetHerHis] hızla yaklaşıyor!" #NT!
+ tournament_events.6014.death: "Tepki verebilmemden önce, [murder_target.GetSheHe] başımı geriye çekip boynuma bir hançer dayadı!" #NT!
+ tournament_events.6014.fallback: "Dönüp [murder_target.GetHerHim]'ı inleyerek yere seriyorum ve çadır labirentine doğru hızla koşuyorum." #NT!
+ tournament_events.6014.a.death: "Ne- #EMP N-!#! *gırtlak sesi*" #NT!
+ tournament_events.6014.a: "Bu... hayır... #EMP [murder_actor.GetFirstNameNoTooltip]#!!" #NT!
+  
+ tournament_events.6050.t: "$tournament_contest_header$ Sabotaj" #NT!
+ tournament_events.6050.desc: "Bu turnuvada bir yarışma kazanacağıma kendi kendime yemin ettim ve yarışmanın ödülünü kazanmak için daha az... #EMP 'adil'#! bir yaklaşımı düşünmekten kendimi alamıyorum. [activity.GetCurrentPhase.GetPhase.GetName|l]\n\nRakiplerimin de aynısını yapacağından eminim, eğer bir fikirleri olsaydı - kim bilir, belki de çoktan vardır?" #NT!
+ tournament_events.6050.a: "[sabotage_target_1.GetFirstNameNoTooltip] tehdittir." #NT!
+ tournament_events.6050.a.horse_race: "[sabotage_target_1.GetFirstNamePossessiveNoTooltip] #EMP [sabotage_target_1.Custom('GetContestHorseRaceName')]#! tehdittir." #NT!
+ tournament_events.6050.b: "[sabotage_target_2.GetFirstNameNoTooltip]'ın kazanmasına tahammül edemiyorum." #NT!
+ tournament_events.6050.b.horse_race: "[sabotage_target_2.GetFirstNameNoTooltip]'ın #EMP [sabotage_target_2.Custom('GetContestHorseRaceName')]#!. ile kazanmasına tahammül edemiyorum" #NT!
+ tournament_events.6050.c: "[sabotage_target_3.GetFirstNameNoTooltip] sakinleştirilmeli." #NT!
+ tournament_events.6050.c.horse_race: "[sabotage_target_3.GetFirstNamePossessiveNoTooltip] #EMP [sabotage_target_3.Custom('GetContestHorseRaceName')]#! yatıştırılmalıdır." #NT!
+ tournament_events.6050.d: "Bu kazanmanın yolu değil..." #NT!
+ tournament_events.6050.success: "Sabotajınız başarılı oldu" #NT!
+ tournament_events.6050.detected: "Sabotajınız tespit edildi" #NT!
+ tournament_events.6050.failure: "Sabotajınız başarısız oldu" #NT!
+ tournament_host_disqualification_tt: "[host.GetTitledFirstName] onları sabote etmeye çalıştığınız için diskalifiye olabilirsiniz" #NT!
+ tournament_contestant_disqualification_tt: "[host.GetTitledFirstName], bir yarışmacı arkadaşınızı sabote etmeye çalışmanız durumunda diskalifiye olmanıza neden olabilir" #NT!
+ contest_sabotage_score_diff_far_behind_horse_race_tt: "[sabotage_target.GetShortUINamePossessive] #EMP [sabotage_target.Custom('GetContestHorseRaceName')]#! #EMP [sabotage_actor.Custom('GetContestHorseRaceName')]#!'den #negative_value çok daha iyidir#!" #NT!
+ contest_sabotage_score_diff_behind_horse_race_tt: "[sabotage_target.GetShortUINamePossessive] #EMP [sabotage_target.Custom('GetContestHorseRaceName')]#! senin #EMP [sabotage_actor.Custom('GetContestHorseRaceName')]#!'ünden #negative_value daha iyidir#!" #NT!
+ contest_sabotage_score_diff_close_horse_race_tt: "[sabotage_target.GetShortUINamePossessive] #EMP [sabotage_target.Custom('GetContestHorseRaceName')]#! sizin #EMP [sabotage_actor.Custom('GetContestHorseRaceName')]#!'ünüze yakın" #NT!
+ contest_sabotage_score_diff_ahead_horse_race_tt: "[sabotage_target.GetShortUINamePossessive] #EMP [sabotage_target.Custom('GetContestHorseRaceName')]#! #EMP [sabotage_actor.Custom('GetContestHorseRaceName')]#!'ten #positive_value daha kötüdür#!" #NT!
+ contest_sabotage_score_diff_far_ahead_horse_race_tt: "[sabotage_target.GetShortUINamePossessive] #EMP [sabotage_target.Custom('GetContestHorseRaceName')]#! #EMP [sabotage_actor.Custom('GetContestHorseRaceName')]#!'den #positive_value çok daha kötü#!" #NT!
+ contest_sabotage_score_diff_far_behind_tt: "[sabotage_target.GetShortUIName] senden #negative_value çok daha iyi#!" #NT!
+ contest_sabotage_score_diff_behind_tt: "[sabotage_target.GetShortUIName] senden #negative_value daha iyi#!" #NT!
+ contest_sabotage_score_diff_close_tt: "[sabotage_target.GetShortUIName] yetenek olarak sana yakın" #NT!
+ contest_sabotage_score_diff_ahead_tt: "[sabotage_target.GetShortUIName] senden #positive_value daha kötü#!" #NT!
+ contest_sabotage_score_diff_far_ahead_tt: "[sabotage_target.GetShortUIName] senden #positive_value çok daha kötü#!" #NT!
+ tournament_events.6051.t: "$tournament_events.6050.t$" #NT!
+ tournament_events.6051.foot: "[activity.GetCurrentPhase.GetPhase.GetName|l] devam etmeden önce [sabotage_target.GetTitledFirstNamePossessive] zırhını sabote etmeye çalıştım, bileşenleri sabitleyen deri noktaları zayıflatarak aşınmalarını umdum." #NT!
+ tournament_events.6051.archery: "[activity.GetCurrentPhase.GetPhase.GetName|l] devam etmeden önce [sabotage_target.GetTitledFirstNamePossessive] yayını sabote etmeye çalıştım, ipin çekişini gizlice değiştirerek [sabotage_target.GetHerHim]'yi düşürdüm." #NT!
+ tournament_events.6051.pugilism: "[activity.GetCurrentPhase.GetPhase.GetName|l] devam etmeden önce [sabotage_target.GetTitledFirstNamePossessive] sargılarını sabote etmeye çalıştım, [sabotage_target.GetHerHim]'yi atmak için onları tahriş edici bir merhemle kapladım." #NT!
+ tournament_events.6051.horse: "[activity.GetCurrentPhase.GetPhase.GetName|l] devam etmeden önce [sabotage_target.GetTitledFirstNamePossessive] atını zehirlemeye çalıştım, süvariler uyurken ahır yemlerini kirli partilerle değiştirdim." #NT!
+ tournament_events.6051.horse_race: "[sabotage_target.GetTitledFirstNamePossessive] yarış atını, #EMP [sabotage_target.Custom('GetContestHorseRaceName')]#!, [activity.GetCurrentPhase.GetPhase.GetName|l] başlamadan önce zehirlemeye çalıştım, efendiler uyurken ahır yemlerini kirli partilerle değiştirdim." #NT!
+ tournament_events.6051.falconry: "[activity.GetCurrentPhase.GetPhase.GetName|l] başlamadan önce [sabotage_target.GetTitledFirstNamePossessive] kuşunu zehirlemeye çalıştım, uşaklar uyurken yemini kirlettim." #NT!
+ tournament_events.6051.success: "\n\nSabrım sonunda karşılığını verdi; şüphe uyandırmadan geçişi yaptım ve geceye doğru yola koyuldum. Sabah olduğunda, entrikalarımın fısıltısının bile olmadığını görerek rahatladım." #NT!
+ tournament_events.6051.detected: "\n\nTam ayrılmak üzereyken, dikkatli çalışmam tamamlanmak üzereyken, [sabotage_target.GetFirstNamePossessiveNoTooltip] hizmetçisini ağzı açık bir şekilde buldum. Tepki verebilmemden önce, [sabotage_target.GetSheHe] koşarak [sabotage_target.GetHerHis] ustaya haber vermeye gitmişti!" #NT!
+ tournament_events.6051.failure: "\n\nNe yazık ki, [sabotage_target.GetHerHis] kurnazlığım ve benim talihsizliğim yüzünden bu girişimler, yarışmacılar arasında bir kötülük yapıldığına dair şüpheleri artırmaktan başka bir işe yaramadı; yarışmacılar artık her zamankinden daha dikkatliler." #NT!
+ tournament_events.6051.disqualified: "\n\nDiskalifiye olmam uzun sürmüyor..." #NT!
+ tournament_events.6051.forgiven: "\n\nNeyse ki katılmaya devam etmeme izin verildi..." #NT!
+ tournament_events.6051.a: "Her şey mübahtır." #NT!
+ tournament_events.6051.a.disqualified: "Aman Allah aşkına..." #NT!
+ tournament_events.6051.a.detected: "Ne talihsizlik..." #NT!
+ tournament_events.6051.a.failure: "Saçmalık..." #NT!
+  
+ tournament_events.6052.t: "$tournament_events.6050.t$" #NT!
+ tournament_events.6052.host: "Katılımcılarım, yaklaşan [activity.GetCurrentPhase.GetPhase.GetName] yarışmasındaki yarışmacılardan biri olan [sabotage_actor.GetTitledFirstName]'ı, etkinlikte beni sabote etmeye çalışırken yakaladıklarını iddia ediyorlar!\n\n" #NT!
+ tournament_events.6052.guest: "Yaklaşan [activity.GetCurrentPhase.GetPhase.GetName|l] yarışmasının yarışmacılarından [sabotage_target.GetTitledFirstName], etkinlik gününden önce bile [sabotage_actor.GetTitledFirstName]'yi kötü niyetli olmakla suçladı!\n\n" #NT!
+ tournament_events.6052.foot: ""[sabotage_actor.GetSheHe|U], [sabotage_target.GetShortUINamePossessiveNoTooltipNoFormat] zırhını bozuyordu, bileşenleri sabitleyen deri noktaları zayıflatıyordu ve bunların maç sırasında aşınmasını umuyordu!"" #NT!
+ tournament_events.6052.archery: ""[sabotage_actor.GetSheHe|U], [sabotage_target.GetShortUINamePossessiveNoTooltipNoFormat] yayı ile oynuyordu, telin çekişini gizlice değiştiriyordu."" #NT!
+ tournament_events.6052.pugilism: ""[sabotage_actor.GetSheHe|U], [sabotage_target.GetShortUINamePossessiveNoTooltipNoFormat] ambalajlarını tahriş edici bir merhemle kaplayarak kurcalıyordu."" #NT!
+ tournament_events.6052.horse: ""[sabotage_actor.GetSheHe|U], [sabotage_target.GetShortUINamePossessiveNoTooltipNoFormat] atı zehirlemeye çalışıyordu, uşaklar uyurken ahır yemlerini kirli yemlerle değiştiriyordu."" #NT!
+ tournament_events.6052.horse_race: ""[sabotage_actor.GetSheHe|U], [sabotage_target.GetShortUINamePossessiveNoTooltipNoFormat] yarış atını zehirlemeye çalışıyordu, #EMP [sabotage_target.Custom('GetContestHorseRaceName')]#!, ise, beyler uyurken ahır yemlerini kirli yemlerle değiştiriyordu."" #NT!
+ tournament_events.6052.a: "Hile yapılmasına asla müsamaha gösterilmeyecektir." #NT!
+ tournament_events.6052.a.host: "Hile diskalifiye olmayı gerektirir!" #NT!
+ tournament_events.6052.b: "Hadi, zararsızdı." #NT!
+ tournament_events.6053.t: "$tournament_events.6050.t$" #NT!
+ tournament_events.6053.desc: "[activity.GetCurrentPhase.GetPhase.GetName|l] yarışması başlamadan önce, biri sabotaj yaparken suçüstü yakalandı!" #NT!
+ tournament_events.6053.foot: ""[sabotage_actor.GetTitledFirstName], [sabotage_target.GetTitledFirstNamePossessive] zırhını bozuyordu, bileşenleri sabitleyen deri noktaları zayıflatıyordu ve bunların maç sırasında aşınmasını umuyordu!"" #NT!
+ tournament_events.6053.archery: ""[sabotage_actor.GetTitledFirstName], [sabotage_target.GetTitledFirstNamePossessive]'in yayını kurcalıyordu, beni şaşırtmak için ipin çekişini gizlice değiştiriyordu."" #NT!
+ tournament_events.6053.pugilism: ""[sabotage_actor.GetTitledFirstName], [sabotage_target.GetTitledFirstNamePossessive] ambalajlarını karıştırıyordu, beni şaşırtmak için onları tahriş edici bir merhemle kaplıyordu."" #NT!
+ tournament_events.6053.horse: ""[sabotage_actor.GetTitledFirstName], [sabotage_target.GetTitledFirstNamePossessive] atı zehirlemeye çalışıyordu, uşaklar uyurken ahır yemlerini kirli yemlerle değiştiriyordu."" #NT!
+ tournament_events.6053.horse_race: ""[sabotage_actor.GetTitledFirstName], [sabotage_target.GetTitledFirstNamePossessive] yarış atını zehirlemeye çalışıyordu, #EMP [sabotage_target.Custom('GetContestHorseRaceName')]#!, ise, beyler uyurken ahır yemlerini kirli yemlerle değiştiriyordu."" #NT!
+ tournament_events.6053.disqualified_target: "\n\n[host.GetTitledFirstName] o zavallı köpeği yarışmadan diskalifiye etti. Küstahlık!" #NT!
+ tournament_events.6053.disqualified: "\n\nAnlaşılabilir bir şekilde, [host.GetTitledFirstName], [sabotage_actor.GetHerHim]'i yarışmadan diskalifiye etti ve bu durum [host.GetHerHis]'nin hedeflediği kurbanın hoşuna gitti." #NT!
+ tournament_events.6053.forgiven_target: "\n\n[host.GetTitledFirstName], hala yarışmasına izin verilecek olan zavallı köpeği affetti! Ne cesaret!" #NT!
+ tournament_events.6053.forgiven: "\n\nŞaşırtıcı bir şekilde, [host.GetTitledFirstName], [sabotage_actor.GetHerHim]'e karşı herhangi bir işlem yapmadı ve ilişkiyi reddetti." #NT!
+ tournament_events.6053.a: "Utanmaz!" #NT!
+ tournament_events.6500.t: "$tournament_header$ Aşk İçin Yaptığımız Şeyler" #NT!
+ tournament_events.6500.desc:0 "My attempts to win the attention of [woo_target.GetTitledFirstName] have not gone unnoticed, but [woo_target.GetHerHis] heart is not yet open to me.\n\n"I am not some [woo_target.Custom('GirlBoy')], a naive thing for a noble to chase and discard. Show me — prove to me — your affections, and we will talk..."\n\n"Show you?" I enquire, "...how would you have me do that?"\n\n[woo_target.GetFirstNamePossessiveNoTooltip] reply comes quickly: "[woo_target.GetTitledFirstName]'ın dikkatini çekme çabalarım fark edilmeden kalmadı, ancak [woo_target.GetHerHis]'in kalbi henüz bana açık değil.\n\n"Ben bir asilzadenin kovalayıp atacağı naif bir [woo_target.Custom('GirlBoy')] değilim. Bana sevgini göster — kanıtla — ve konuşalım..."\n\n"Sana göstereyim mi?" diye soruyorum, "...bunu nasıl yapmamı istersin?"\n\n[woo_target.GetFirstNamePossessiveNoTooltip] cevabı hemen geliyor: "Yarışmayı kaybet."" #NT!
+ tournament_events.6500.a: "Dediğin gibi canım [woo_target.GetFirstNameNoTooltip]." #NT!
+ tournament_events.6500.b: "Yenilgide onur yoktur!" #NT!
+ tournament_events.6510.t: "Zaferin Cazibesi" #NT!
+ tournament_events.6510.opening: "Turnuvadaki şenliklerdeki durgunluk bana [woo_target.GetFirstName] ile bir karşılaşma planlamak için bolca zaman veriyor." #NT!
+ tournament_events.6510.married: "[woo_target.GetHerHis] [woo_target.GetPrimarySpouse.GetWifeHusband], [woo_target.GetPrimarySpouse.GetTitledFirstName]'nin başka bir yerde olmasını sağlamak kolaydı." #NT!
+ tournament_events.6510.currentspouse: "[woo_target.GetWomanMan]'ıma olan bağlılığımı kanıtlama şansı!" #NT!
+ tournament_events.6510.desc: "\n\n"[ROOT.Char.Custom('GetRandomWonContest')|l], [ROOT.Char.GetTitledFirstName]'i kazandığın için tebrikler," [woo_target.GetSheHe] nazikçe teklifte bulundu. "Gerçekten muhteşem bir gösteriydi."\n\n[woo_target.GetHerHis]'ün gözünde gerçek bir ışıltı var, bundan eminim." #NT!
+ tournament_events.6510.a: "Hepsini #EMP senin için#!, benim [woo_target.GetLadyLord] için yaptım." #NT!
+ tournament_events.6510.a.tt: "#F Duygusal tarafa [woo_target.GetFirstNamePossessiveNoTooltip] hitap edin.#!" #NT!
+ tournament_events.6510.b: "Ha, o mu? Hiçbir şey değildi aslında." #NT!
+ tournament_events.6510.b.tt: "#F Kibirli tarafa [woo_target.GetFirstNamePossessiveNoTooltip] hitap.#!" #NT!
+ tournament_events.6510.c: "Şanslıydım; rakiplerim iyi mücadele etti." #NT!
+ tournament_events.6510.c.tt: "#F Mütevazı tarafa [woo_target.GetFirstNamePossessiveNoTooltip] hitap edin.#!" #NT!
+ tournament_events.6510.d: "[ROOT.Char.GetFaith.HighGodName] dualarıma [ROOT.Char.GetFaith.HighGodHerHis] iyilikle cevap verdi." #NT!
+ tournament_events.6510.d.tt: "#F Dini tarafa [woo_target.GetFirstNamePossessiveNoTooltip] hitap.#!" #NT!
+ tournament_events.6511.reply_dedicate: "[woo_actor.GetSheHe|U] utanmadan [woo_actor.GetSheHe]'in benim için her şeyi yaptığını söylüyor!\n\n" #NT!
+ tournament_events.6511.reply_dismiss: "[woo_actor.GetSheHe|U] umursamazca böyle bir önemsiz şeyden bahsetmemem gerektiğini söylüyor.\n\n" #NT!
+ tournament_events.6511.reply_praise: "[woo_actor.GetSheHe|U] hemen [woo_actor.GetSheHe]'in sadece şanslı olduğunu söyler; [woo_actor.GetHerHis] rakipleri [woo_actor.GetSheHe]'den daha az güçlü değildir.\n\n" #NT!
+ tournament_events.6511.reply_god: "[woo_actor.GetSheHe|U] içtenlikle [woo_actor.GetSheHe]'in [woo_actor.GetFaith.HighGodName] tarafından kayırıldığı için minnettar olduğunu söyler.\n\n" #NT!
+ tournament_events.6511.opening: "Pavyonda [woo_actor.GetTitledFirstName] ile karşılaşıyorum ve [ROOT.Char.Custom('GetRandomWonContest')|l]'deki [woo_actor.GetHerHis] zaferi için tebriklerimi sunuyorum.\n\n" #NT!
+ tournament_events.6511.dedicate: "$tournament_events.6511.reply_dedicate$Bu küstahça flört karşısında kızarmaktan kendimi alamıyorum..." #NT!
+ tournament_events.6511.dismiss: "$tournament_events.6511.reply_dismiss$Ne kadar da cesur bir [woo_actor.GetWomanMan]..." #NT!
+ tournament_events.6511.praise: "$tournament_events.6511.reply_praise$Ne kadar alçakgönüllülük..." #NT!
+ tournament_events.6511.god: "$tournament_events.6511.reply_god$A [woo_actor.GetWomanMan] İnancın, gerçekten." #NT!
+ tournament_events.6511.fallback: "[woo_actor.GetSheHe|U] bana sadece bilmiş bir şekilde gülümsüyor ve ben de bakışlarımı ondan ayırmakta zorlanıyorum." #NT!
+ tournament_events.6511.a: "[woo_actor.GetSheHe]'ın kendine has bir çekiciliği olduğunu inkar edemem..." #NT!
+  
+ tournament_events.6512.dedicate: "$tournament_events.6511.reply_dedicate$İçimden bir burukluk geliyor içimden..." #NT!
+ tournament_events.6512.dismiss: "$tournament_events.6511.reply_dismiss$Ne kadar da kibirli..." #NT!
+ tournament_events.6512.praise: "$tournament_events.6511.praise$Gerçekten iltifat almayı öğrenin!" #NT!
+ tournament_events.6512.god: "$tournament_events.6511.god$Ne kadar sıkıcı..." #NT!
+ tournament_events.6512.fallback: "[woo_actor.GetSheHe|U] bana sadece bilerek gülümsüyor ve bu beni #EMP derinden#! rahatsız ediyor." #NT!
+ tournament_events.6512.a: "Ne saçma bir [woo_actor.GetWomanMan]." #NT!
+ tournament_events.6513.reply: "[woo_target.GetTitledFirstName] cevabıma sıcak tepki vermiş gibi görünüyor" #NT!
+ tournament_events.6513.dedicate: "$tournament_events.6513.reply$, [woo_target.GetSheHe] utangaçça gülerken kızarıyor." #NT!
+ tournament_events.6513.dismiss: "$tournament_events.6513.reply$, sanki bana yeni gözlerle bakıyormuş gibi." #NT!
+ tournament_events.6513.praise: "$tournament_events.6513.reply$, [woo_target.GetSheHe] cevabında bunun şanstan daha fazlası olduğundan emin olduğunu söylüyor." #NT!
+ tournament_events.6513.god: "$tournament_events.6513.reply$, [woo_target.GetFaith.HighGodName]'in bunu gerçekten istemiş olması gerektiğini söylüyor." #NT!
+ tournament_events.6513.fallback: "$tournament_events.6513.reply$, gözlerimin içine uzun uzun ve derin derin bakıyor." #NT!
+ tournament_events.6513.desc: "\n\n[woo_target.GetSheHe] gittiğinde, gerginlik her nezaket ifadesinde elle tutulur haldeydi — [woo_target.GetHerHim]'i ikna edecek doğru kelimeleri bulacağımı biliyordum!" #NT!
+ tournament_events.6513.a: "Sanırım [woo_target.GetSheHe] kancada..." #NT!
+ tournament_events.6514.reply: "Cevabım pek etkileyici görünmüyor [woo_target.GetTitledFirstName]" #NT!
+ tournament_events.6514.dedicate: "$tournament_events.6514.reply$, çünkü [woo_target.GetSheHe], [woo_target.GetSheHe] bana teşekkür ettiğinde bakışlarını kaçırıyor ve hemen [woo_target.GetHerHis] gidiyor." #NT!
+ tournament_events.6514.dismiss: "$tournament_events.6514.reply$, [woo_target.GetSheHe] için [woo_target.GetHerHis] bakışı küçümseyici bir şekilde atar." #NT!
+ tournament_events.6514.praise: "$tournament_events.6514.reply$, çünkü [woo_target.GetSheHe] sözlerim karşısında hemen ilgisini kaybediyor, morali bozuluyor." #NT!
+ tournament_events.6514.god: "$tournament_events.6514.reply$, [woo_target.GetSheHe] ise sadece yarım yamalak dinliyormuş gibi görünerek donuklaşır." #NT!
+ tournament_events.6514.fallback: "$tournament_events.6513.reply$, çünkü [woo_target.GetSheHe] şirketimden daha erken ayrılamaz." #NT!
+ tournament_events.6514.desc: "\n\n[woo_target.GetHerHis]'ın [woo_target.GetHerHis]'a veda etmesinden sonra tek başıma kalırken, böylesine büyük bir yanlış adım attığım için kendimi aptal gibi hissetmeden edemiyorum..." #NT!
+ tournament_events.6514.a: "Ne düşünüyordum ki...?" #NT!
+ tournament_events.6900.t: "$tournament_header$ Yerel Mızrakçı" #NT!
+ tournament_events.6900.desc: "[activity.GetCurrentPhase.GetLocation.GetNameNoTooltip]'da toplanmış küçük soyluları incelediğimde, tam da ihtiyacım olan [local_lancer.GetWomanMan]'i görüyorum.\n\n" #NT!
+ tournament_events.6900.new: "[local_lancer.GetFullName] yerel bir attır[local_lancer.GetWomanMan], buralarda [local_lancer.GetHerHis] düşük bir konumda olmasına rağmen cesaretiyle tanınır — unutulmuş bir taşra hattının [ROOT.Char.Custom('MountedWarriorTerm')] atıdır." #NT!
+ tournament_events.6900.pool: "[local_lancer.GetFullName], bir miktar deneyime sahip, saraydan saraya seyahat ederek hizmet edecek bir [ROOT.Char.GetLadyLord] arayan asi bir atlıdır. Bu tür [local_lancer.GetWomenMen]'lere normalde güvenilmez, ancak [local_lancer.GetHerHis] yetenekleri hemen belli olur." #NT!
+ tournament_events.6900.closing: "\n\nTanıtımımı yapmak üzere yaklaştığımda, [local_lancer.GetHerHim]'in yanında [bidder.GetTitledFirstName] beliriyor ve fikrimi açıkça paylaşıyor..." #NT!
+ tournament_events.6900.a: "Emin olun, daha iyi ücret ödeyeceğim." #NT!
+ tournament_events.6900.a.success: "[local_lancer.GetFirstNameNoTooltip], coin tarafından yönetiliyor" #NT!
+ tournament_events.6900.a.failure: "[local_lancer.GetFirstNameNoTooltip] tercih ediyor [bidder.GetFirstNameNoTooltip]" #NT!
+ tournament_events.6900.b: "[local_lancer.GetFirstNameNoTooltip], sen benim büyük pavyonumda oturacaksın!" #NT!
+ tournament_events.6900.b.success: "[local_lancer.GetFirstNameNoTooltip] dünyevi tatmin arar" #NT!
+ tournament_events.6900.c: "Gel, sen sadece #EMP [bidder.GetTitleAsNameNoTooltip]#!?'ye hizmet etmeyi tercih edersin" #NT!
+ tournament_events.6900.c.success: "[local_lancer.GetFirstNameNoTooltip] hırslı bir türdür" #NT!
+ tournament_events.6900.d: "Kenara çekil [bidder.GetFirstNameNoTooltip], senin [ROOT.Char.GetTitleAsNameNoTooltip]'in önce gelir." #NT!
+ tournament_events.6900.e: "[ROOT.Char.Custom('MountedWarriorTerm')] için pazarlık yapmam." #NT!
+  
+ tournament_events.7000.t: "$tournament_header$ Ol [ROOT.Char.GetWomanMan|U]!" #NT!
+ tournament_events.7000.desc: "Yanımdan geçerken bir grup [ROOT.GetCharacter.Custom('KnightCulturePluralNoTooltipLowercase')]'ı selamlıyorum. Diğerlerinin arkasında kalan biri duraklamama neden oluyor. Topuklarımın üzerinde dönerek figüre sesleniyorum.\n\nŞekilsiz, üzerlerine tam oturmayan bir zırh giymişler, gözleri kocaman açılmış ve miğferlerinin altında açıkça dehşete düşmüşler. #EMP Burada bir şey#! doğru değil. Öne doğru bir adım atıp, tepki vermelerine fırsat vermeden miğferi çıkarıyorum.\n\nÖnümde duran, başka birinin fark edip etmediğini görmek için gizlice etrafa bakan, [mulan.GetWomanMan]'ten başkası değil! [ROOT.GetCharacter.Custom('KnightCultureNoTooltipLowercase')] gibi giyinmiş, daha ne olsun. Hatta [ROOT.GetCharacter.Custom('KnightCultureNoTooltipLowercase')] olarak #EMP yarışmayı#! planlıyor!" #NT!
+ tournament_events.7000.a: "Sırrını saklayacağım." #NT!
+ tournament_events.7000.a.tt: "[activity.GetShortName]'a katılır" #NT!
+ tournament_events.7000.b: "Sizin gibi birinin hizmetlerinden faydalanabilirim." #NT!
+ tournament_events.7000.b.tt: "[mulan.Custom('KnightCulture')]'ınız olur" #NT!
+ tournament_events.7000.c: "Muhafızlar! #EMP Muhafızlar!#! Turnuvamızda #EMP [mulan.GetWomanMan]#! var!" #NT!
+  
+  # TOOLTIPS 
+ tournament_not_competing_tt: "[THIS.Char.GetShortUIName|U] herhangi bir [contests|E] yarışmasında yarışmayacak" #NT!
+ tournament_prize_template_tt: "Ödül alana kadar [GetActivityType( 'activity_tournament' ).GetName] [prize|E] donatılamaz" #NT!
+  
+  # ACTIVITY LOG 
+ tournament_placed_joust_wager_log_title: "Mızrak Dövüşü Bahsi Yapıldı" #NT!
+ tournament_placed_joust_wager_log: "[CHARACTER.GetTitledFirstName], [TARGET_CHARACTER.GetTitledFirstName]'in Joust yarışmasını kazanması için bahis oynadı" #NT!
+ tournament_placed_archery_wager_log_title: "Okçuluk Bahsi Yapıldı" #NT!
+ tournament_placed_archery_wager_log: "[CHARACTER.GetTitledFirstName], [TARGET_CHARACTER.GetTitledFirstName]'in Okçuluk yarışmasını kazanması için bahis oynadı" #NT!
+ tournament_pas_darmes_spurs_won_log_title: "Pas D'Armes Mücadelesi" #NT!
+ tournament_pas_darmes_spurs_won_log: "[TARGET_CHARACTER.GetTitledFirstName] yenildi ve [PROVINCE.GetBaronyNameExplicitly]'ten geçerken [CHARACTER.GetTitledFirstName]'ye [TARGET_CHARACTER.GetHerHis] mahmuz verdi." #NT!
+ tournament_pas_darmes_spurs_lost_log_title: "$tournament_pas_darmes_spurs_won_log_title$" #NT!
+ tournament_pas_darmes_spurs_lost_log: "[TARGET_CHARACTER.GetTitledFirstName], [PROVINCE.GetBaronyNameExplicitly]'ten geçerken [TARGET_CHARACTER.GetHerHis] onurunu [CHARACTER.GetTitledFirstName]'ye karşı savundu" #NT!
+ tournament_pas_darmes_token_log_title: "Jeton Getirisi" #NT!
+ tournament_pas_darmes_token_log: "[TARGET_CHARACTER.GetTitledFirstName], [PROVINCE.GetBaronyNameExplicitly]'ten geçerken [TARGET_CHARACTER.GetHerHis] atkıyı [CHARACTER.GetTitledFirstName]'ye verdi." #NT!
+ tournament_pas_darmes_refused_log_title: "Pas D'Armes Reddedildi" #NT!
+ tournament_pas_darmes_refused_log: "[TARGET_CHARACTER.GetTitledFirstName] [CHARACTER.GetTitledFirstNamePossessive] meydan okumasını [PROVINCE.GetBaronyNameExplicitly]'den geçerken reddetti." #NT!
+ tournament_favor_given_log_title: "Verilen İyilik" #NT!
+ tournament_favor_given_log: "[CHARACTER.GetTitledFirstName] bir iyilik aldı" #NT!
+  
+ tournament_accident_melee_log_title: "Yarışmacı Öldürüldü" #NT!
+ tournament_accident_melee_log: "[CHARACTER.GetTitledFirstName], $tournament_phase_melee$ yarışması sırasında bir kazada öldü" #NT!
+ tournament_accident_melee_killer_log_title: "Yarışmacı Öldürüldü" #NT!
+ tournament_accident_melee_killer_log: "[CHARACTER.GetTitledFirstName], $tournament_phase_melee$ yarışması sırasında bir kazada [TARGET_CHARACTER.GetTitledFirstName] tarafından öldürüldü" #NT!
+  
+ tournament_sabotage_log_title: "[CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName] Sabotaj girişimi" #NT!
+ tournament_sabotage_log: "[CHARACTER.GetTitledFirstName], [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName] yarışmasında [TARGET_CHARACTER.GetTitledFirstName]'i sabote etmeye çalıştı" #NT!
+ tournament_murder_attempt_log_title: "Cinayete teşebbüs" #NT!
+ tournament_murder_attempt_log: "[CHARACTER.GetTitledFirstName] cinayete teşebbüs etti [TARGET_CHARACTER.GetTitledFirstName]" #NT!
+ tournament_poison_ill_log_title: "Zehirlenmiş Rakip" #NT!
+ tournament_poison_ill_log: "[TARGET_CHARACTER.GetTitledFirstName], [CHARACTER.GetTitledFirstName] onları zehirledikten sonra hastalandı" #NT!
+ tournament_poison_death_log_title: "Zehirlenmiş Rakip" #NT!
+ tournament_poison_death_log: "[TARGET_CHARACTER.GetTitledFirstName], [CHARACTER.GetTitledFirstName] tarafından zehirlendikten sonra öldü" #NT!
+ tournament_murder_death_log_title: "Öldürülen Rakip" #NT!
+ tournament_murder_death_log: "[TARGET_CHARACTER.GetTitledFirstName], [CHARACTER.GetTitledFirstName] tarafından öldürüldü" #NT!
+ tournament_murder_wound_log_title: "$tournament_murder_attempt_log_title$" #NT!
+ tournament_murder_wound_log: "[TARGET_CHARACTER.GetTitledFirstName], [CHARACTER.GetTitledFirstName] onları öldürmeye çalıştığında yaralandı" #NT!
+ tournament_thug_death_log_title: "$tournament_murder_death_log_title$" #NT!
+ tournament_thug_death_log: "[CHARACTER.GetTitledFirstName] [TARGET_CHARACTER.GetTitledFirstName]'i öldürdü" #NT!
+ tournament_thug_caught_log_title: "Başarısız Cinayet" #NT!
+ tournament_thug_caught_log: "[TARGET_CHARACTER.GetTitledFirstName] ortaya çıktı [CHARACTER.GetTitledFirstName] sahip olmaya çalıştı [TARGET_CHARACTER.GetHerHim] öldürüldü" #NT!
+ tournament_contest_withdrawal_log_title: "[CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName] Para Çekme" #NT!
+ tournament_contest_withdrawal_log: "[CHARACTER.GetTitledFirstName], sağlık sorunları nedeniyle [CHARACTER.GetInvolvedActivity.GetCurrentPhase.GetPhase.GetName] yarışmasından çekildi" #NT!
+ tournament_collapsed_stand_log_title: "Çökmüş Stand" #NT!
+ tournament_collapsed_stand_log: "[CHARACTER.GetTitledFirstName] turnuva standlarından birinin ani ve trajik çöküşüyle ​​ilgiliydi" #NT!
+ tournament_failed_defuse_duel_log_title: "Bir Düelloyu Etkisiz Hale Getirmek Başarısız Oldu" #NT!
+ tournament_failed_defuse_duel_log: "[CHARACTER.GetTitledFirstName], [TARGET_CHARACTER.GetTitledFirstName]'in yaralanmasına neden olan bir düelloyu durdurmaya çalıştı ve başarısız oldu" #NT!
+ tournament_encouraged_duel_log_title: "Teşvik Edilen Düello" #NT!
+ tournament_encouraged_duel_log: "[CHARACTER.GetTitledFirstName], [TARGET_CHARACTER.GetTitledFirstName]'in yaralanmasına neden olan bir düelloyu teşvik etti" #NT!
+ tournament_defused_duel_log_title: "Etkisiz hale getirilen düello" #NT!
+ tournament_defused_duel_log: "[CHARACTER.GetTitledFirstName], ateşli turnuva yarışmacıları arasındaki düelloyu engelledi" #NT!
+ tournament_squire_fire_log_title: "Pazar Ateşi" #NT!
+ tournament_squire_fire_log: "Gürültülü beyler sarhoşluk yüzünden çıkan bir anlaşmazlıktan sonra [PROVINCE.GetName] pazarında yangına sebep oldu" #NT!
+ tournament_squire_fire_punished_log_title: "Squires Cezalandırıldı" #NT!
+ tournament_squire_fire_punished_log: "[CHARACTER.GetTitledFirstName], [PROVINCE.GetName]'de yangın çıkaran beyleri cezalandırdı" #NT!
+ tournament_squire_fire_donate_log_title: "Yangın Onarımları Bağışlandı" #NT!
+ tournament_squire_fire_donate_log: "[CHARACTER.GetTitledFirstName], [PROVINCE.GetName]'deki onarımlar için yapı malzemeleri bağışladı" #NT!
+ tournament_squire_fire_dismiss_log_title: "Yangın söndürüldü" #NT!
+ tournament_squire_fire_dismiss_log: "[CHARACTER.GetTitledFirstName], [PROVINCE.GetName]'deki yangını bir talihsizlik olarak nitelendirdi" #NT!
+ tournament_champion_battle_peasant_log_title: "Köylü Şampiyonu" #NT!
+ tournament_champion_battle_peasant_log: "[CHARACTER.GetTitledFirstName] atandı [TARGET_CHARACTER.GetTitledFirstName], bir köylü, [CHARACTER.GetHerHis] şampiyon" #NT!
+ tournament_recruited_battle_peasant_log_title: "Köylü Şövalye" #NT!
+ tournament_recruited_battle_peasant_log: "[CHARACTER.GetTitledFirstName] şövalye ilan edildi [TARGET_CHARACTER.GetTitledFirstName], bir köylü" #NT!
+ tournament_sponsored_battle_peasant_log_title: "Köylü Sponsor" #NT!
+ tournament_sponsored_battle_peasant_log: "[CHARACTER.GetTitledFirstName] sponsor oldu [TARGET_CHARACTER.GetTitledFirstName], bir köylü, rekabet etmek için" #NT!
+  # MODIFIERS 
+ tournament_allow_foreign_pas_darmes_modifier: "Hoşgörülen Müdahaleci" #NT!
+ tournament_allow_foreign_pas_darmes_modifier_desc: "Bu karakterin yabancı bir şövalyeye onay vermesi ve soyluları askeri meydan okumalarla kuşatması kaşların kalkmasına neden oldu." #NT!
+ tournament_butt_tragedy_modifier: "Popüler Dehşet" #NT!
+ tournament_butt_tragedy_modifier_desc: "Kazara vurulan bir yerel köylünün hayatının ne kadar ucuza mal edildiği, halkı dehşete düşürdü." #NT!
+ tournament_battle_peasant_modifier: "Yeni Başlayan Avam" #NT!
+ tournament_battle_peasant_modifier_desc: "Bu karakterin sıradan bir insandan şövalyelik mertebesine yükselişi, mevcut soyluları rahatsız etti." #NT!
+ tournament_battle_peasant_county_modifier: "Sosyal Hareketlilik" #NT!
+ tournament_battle_peasant_county_modifier_desc: "Mahalleden gelen alt tabakadan bir köylünün terfi etmesi, halkta büyük bir umut yeşermesine sebep oldu." #NT!
+ tournament_favor_scheme_modifier: "Hediye Edilen İyilik" #NT!
+ tournament_favor_rejected_scheme_modifier: "Reddedilen İyilik" #NT!
+ tournament_thug_escape_modifier: "Yükseltilmiş Tüyler" #NT!
+ tournament_thug_escape_modifier_desc: "Bu karakter yakın zamanda hayatına yönelik kötü niyetli bir saldırıdan kurtulmuştur." #NT!
+ tournament_poison_tummy_ache_modifier: "Karın Ağrısı" #NT!
+ tournament_poison_tummy_ache_modifier_desc: "Bu karakter kötü bir deneyim yaşadı ve hâlâ biraz dengesiz." #NT!
+ tournament_attempted_sabotage_modifier: "Bilinen Sabotajcı" #NT!
+ tournament_attempted_sabotage_modifier_desc: "Bu karakter bir turnuvada diğer yarışmacıları sabote etmeye çalışırken yakalandı." #NT!
+ tournament_stands_collapsed_modifier: "Çökmüş Standlar" #NT!
+ tournament_stands_collapsed_modifier_desc: "Bu ülke, bir turnuva standının aniden çökmesi sonucu hem can kaybının hem de taca olan güvenin kaybının acısını yaşıyor." #NT!
+ tournament_stands_compensated_modifier: "Telafi Edilmiş Çöküş" #NT!
+ tournament_stands_compensated_modifier_desc: "Bu ülke trajik bir felaket yaşadı, ancak çöken stantların zararlarının karşılanması beklenmedik bir merhametti." #NT!
+ tournament_executed_builders_modifier: "İcra Edilen İnşaatçılar" #NT!
+ tournament_executed_builders_modifier_desc: "Bu karakterin inşaatçılara karşı hızlı bir ceza vermesi, halkın öfkesini bir nebze olsun yatıştırdı, ama ne pahasına?" #NT!
+ tournament_compensated_stands_modifier: "Tazmin Edilen Mağdurlar" #NT!
+ tournament_compensated_stands_modifier_desc: "Bu karakterin çöken bir mevzideki mağdurlara tazminat ödemesi, halkın hayırsever yönetime olan güvenini yeniden tesis etti." #NT!
+ tournament_punished_arsonists_modifier: "Cezalandırılmış Kundakçılar" #NT!
+ tournament_punished_arsonists_modifier_desc: "Bu karakterin itaatsiz uşaklara verdiği sert ceza, kendi şövalyeleri arasında kin tohumları ekmiş, ancak onlara diğer birçok kişinin saygısını kazandırmıştır." #NT!
+ tournament_coddled_arsonists_modifier: "Şımartılmış Kundakçılar" #NT!
+ tournament_coddled_arsonists_modifier_desc: "Bu karakterin asi uşaklara olan şefkati onları [ROOT.Char.Custom('KnightCulture')]'larına sevdirmiş, ancak birçok kişiyi dehşete düşürmüştür." #NT!
+ tournament_squire_riot_modifier: "Squire Ateşi" #NT!
+ tournament_squire_riot_modifier_desc: "Bu il, bir turnuvada eğlenen asi toprak sahiplerinin çıkardığı yangınla sarsıldı." #NT!
+ tournament_tyrannical_disqualification_modifier: "Zalimce Diskalifiye" #NT!
+ tournament_tyrannical_disqualification_modifier_desc: "Bu karakterin kurallara göre oynamadığı yönünde bir ün kazanmıştır." #NT!
+  
+ tournament_melee_winner_modifier: "Yakın Dövüş Galibi" #NT!
+ tournament_melee_winner_modifier_desc: "Bu karakterin takımı Yakın Dövüş Yarışması'nda galip gelerek büyük şöhret ve beğeni kazandı." #NT!
+ tournament_joust_winner_modifier: "Şampiyon Mızrak Dövüşçüsü" #NT!
+ tournament_joust_winner_modifier_desc: "Bu karakter bir Turnuvada Mızrak Dövüşü'nü kazanarak şöhret ve servet kazandı." #NT!
+ tournament_wrestling_winner_modifier: "Başarılı Grappler" #NT!
+ tournament_wrestling_winner_modifier_desc: "Bu karakter bir Turnuvada Güreş Müsabakasını kazanarak gücünü ve kudretini kanıtladı." #NT!
+ tournament_duel_winner_modifier: "Yetenekli Düellocu" #NT!
+ tournament_duel_winner_modifier_desc: "Bu karakterin kılıç kullanma yeteneği, bir Turnuvada Düello Yarışması'nı kazanmasını sağladı." #NT!
+ tournament_archery_winner_modifier: "Neşeli Amaç" #NT!
+ tournament_archery_winner_modifier_desc: "Bu karakterin kusursuz nişanı, bir Turnuvada Okçuluk Yarışması'nı kazanmasını sağladı." #NT!
+ tournament_recital_winner_modifier: "İambik Virtüöz" #NT!
+ tournament_recital_winner_modifier_desc: "Bu karakterin tatlı dili, bir Turnuvada Resital Yarışması'nı kazanmasını sağladı." #NT!
+ tournament_horse_race_winner_modifier: "Şampiyon Yarış Atı" #NT!
+ tournament_horse_race_winner_modifier_desc: "Bu karakterin atı bir Turnuvadaki At Yarışı Yarışmasında galip gelmiştir." #NT!
+ tournament_board_game_winner_modifier: "Büyük Üstat" #NT!
+ tournament_board_game_winner_modifier_desc: "Bu karakterin masa üstü oyunlarındaki ustalığı, bir turnuvada Masa Oyunları Yarışması'nı kazanmasıyla kanıtlandı." #NT!
+  
+ tournament_melee_participant_modifier: "Yakın Dövüş Katılımcısı" #NT!
+ tournament_melee_participant_modifier_desc: "Bu karakter bir Turnuvada Yakın Dövüşe katılarak bir miktar şöhret ve servet kazandı." #NT!
+ tournament_joust_participant_modifier: "Mızrak dövüşçüsü" #NT!
+ tournament_joust_participant_modifier_desc: "Bu karakter bir Turnuvada Mızrak Dövüşüne katılarak bir miktar şöhret ve servet kazandı." #NT!
+ tournament_wrestling_participant_modifier: "Güreşçi" #NT!
+ tournament_wrestling_participant_modifier_desc: "Bu karakter bir turnuvada güreşe katılarak bir miktar şöhret ve servet kazandı." #NT!
+ tournament_duel_participant_modifier: "Düellocu" #NT!
+ tournament_duel_participant_modifier_desc: "Bu karakter bir Turnuvada Düelloya katılarak bir miktar şöhret ve servet kazandı." #NT!
+ tournament_archery_participant_modifier: "Okçu" #NT!
+ tournament_archery_participant_modifier_desc: "Bu karakter bir turnuvada okçuluk yaparak bir miktar şöhret ve servet kazandı." #NT!
+ tournament_recital_participant_modifier: "Şair bozuntusu" #NT!
+ tournament_recital_participant_modifier_desc: "Bu karakter bir Turnuvadaki Resitale katılarak bir miktar şöhret ve servet kazandı." #NT!
+ tournament_horse_race_participant_modifier: "At yarışçısı" #NT!
+ tournament_horse_race_participant_modifier_desc: "Bu karakter bir turnuvada at yarışına katılarak bir miktar şöhret ve servet kazanmıştır." #NT!
+ tournament_board_game_participant_modifier: "Masaüstü Oyuncusu" #NT!
+ tournament_board_game_participant_modifier_desc: "Bu karakter bir turnuvada masa oyunlarına katılarak bir miktar şöhret ve servet kazandı." #NT!
+  
+ tournament_contest_spectator_modifier: "Turnuva katılımcısı" #NT!
+ tournament_contest_spectator_modifier_desc: "Bu karakter bir Turnuvayı ziyaret ederek manzaranın ve seslerin tadını çıkardı." #NT!
+ tournament_refreshed_modifier: "Yenilenmiş" #NT!
+ tournament_parched_modifier: "Kavrulmuş" #NT!
+  
+  # OPINIONS 
+ tournament_disqualified_opinion: "Yarışmadan diskalifiye edildi" #NT!
+ tournament_upset_crowd_opinion: "Üzgün ​​Kalabalık" #NT!
+ tournament_host_pas_darmes_opinion: "Bana meydan okudu" #NT!
+ tournament_ejected_interloper_opinion: "Kovulan Müdahaleci" #NT!
+ tournament_ejected_opinion: "Turnuvadan ihraç edildi" #NT!
+ tournament_stole_knight_opinion: "İşe Alınan Şövalye" #NT!
+ tournament_pas_darmes_forbidden_opinion: "Silahsızlanmayı yasakladı" #NT!
+ tournament_compensated_tragedy_opinion: "Telafi Edilmiş Trajedi" #NT!
+ tournament_forgave_tragedy_opinion: "Affedilmiş Trajedi" #NT!
+ tournament_replaced_champion_opinion: "Değiştirilen Şampiyon" #NT!
+ tournament_marriage_prize_opinion: "Ödül olarak sunuldu" #NT!
+ tournament_marriage_prize_parent_opinion: "Ödül Olarak Sunulan Çocuk" #NT!
+ tournament_received_favor_opinion: "Verilen Lütuf" #NT!
+ tournament_spurned_favor_opinion: "Reddedilen iyilik" #NT!
+ tournament_refused_to_lose_opinion: "Yarışmayı Kaybetmeyi Reddetti" #NT!
+ tournament_vowed_to_lose_opinion: "Kaybetmeye yeminli yarışma" #NT!
+ tournament_lost_for_love_opinion: "Benim İçin Kayıp Yarışma" #NT!
+ tournament_convinced_priest_opinion: "Turnuvanın Değerine İnanıyorum" #NT!
+ tournament_unconvinced_priest_opinion: "Turnuvayı Onaylamıyor" #NT!
+ tournament_not_competing_opinion: "Turnuvada Yarışmamak" #NT!
+ tournament_dismissed_priest_opinion: "Dinsiz Turnuva" #NT!
+ tournament_elevated_peasant_knight_opinion: "Yükseltilmiş Köylü Şövalyesi" #NT!
+ tournament_mocked_opinion: "Alay konusu oldu" #NT!
+ tournament_confused_opinion: "Kafası karışmış" #NT!
+ tournament_respected_wishes_opinion: "Saygıdeğer Dilekler" #NT!
+ tournament_mercy_opinion: "Merhamet Gösterdi" #NT!
+ tournament_agreed_opinion: "Benimle aynı fikirde" #NT!
+ tournament_savagely_beaten_opinion: "Vahşice dövüldü" #NT!
+ tournament_savagely_beaten_friend_opinion: "Vahşice Dövülen Arkadaş" #NT!
+ tournament_savagely_beaten_lover_opinion: "Vahşice Dövülen Sevgili" #NT!
+ tournament_savagely_beaten_consort_opinion: "Vahşice Dövülen Eş" #NT!
+ tournament_savagely_beaten_family_opinion: "Vahşice Dövülen Yakın Aile" #NT!
+ tournament_savagely_beaten_liege_opinion: "Vahşice Dövülen Konu" #NT!
+ tournament_failed_woo_opinion: "Garip Flört" #NT!
+ tournament_attempted_sabotage_opinion: "Sabotaj Girişimi" #NT!
+ tournament_tolerated_sabotage_opinion: "Tolere Edilen Sabotaj" #NT!
+ tournament_lancer_vassal_tyranny_opinion: "Zalimce İşe Alma" #NT!
+ tournament_lancer_gazumped_opinion: "Gazumped Şövalye" #NT!
+ tournament_congratulate_opinion: "Tebrikler Zafer" #NT!
+ tournament_congratulate_toast_opinion: "İçtenlikle tebrikler" #NT!
+ tournament_congratulate_vague_opinion: "Görevden alınan zafer" #NT!
+ tournament_dishonorable_gamer_opinion: "Şerefsiz Oyuncu" #NT!
+ tournament_rubbed_in_board_game_opinion: "Kayıpla Sürtünmek" #NT!
+ tournament_insult_to_injury_board_game_opinion: "Hakarete Tecavüz" #NT!
+ tournament_take_back_board_game_opinion: "Verilen Geri Alım" #NT!
+ tournament_shared_vulnerability_board_game_opinion: "Güvenlik Açığı Belirtildi" #NT!
+ tournament_admonished_duelist_opinion: "Uyarılan Düellocu" #NT!
+ tournament_failed_pas_darmes_reclaim_opinion: "Yıpranmış Onur" #NT!
+ tournament_expelled_opinion: "Turnuvadan ihraç edildi" #NT!
+ tournament_executed_workers_opinion: "İcra Edilen İnşaatçılar" #NT!
+ tournament_spared_workers_opinion: "Kurtarılmış İnşaatçılar" #NT!
+ tournament_compensated_victims_opinion: "Tazmin Edilen Mağdurlar" #NT!
+ tournament_collapse_victim_family_opinion: "Aile Çöküşte Öldü" #NT!
+ tournament_tyrannical_disqualification_opinion: "Zalimce Diskalifiye" #NT!
+ tournament_punished_arsonists_opinion: "Cezalandırılmış Kundakçılar" #NT!
+ tournament_donated_materials_opinion: "Bağışlanan Malzemeler" #NT!
+ tournament_fire_uncompensated_opinion: "Kundakçılar Kontrol Edilmiyor" #NT!
+ tournament_reneged_marriage_prize_opinion: "Dönek Evlilik Ödülü" #NT!
+ tournament_honored_marriage_prize_opinion: "Onurlu Evlilik Ödülü" #NT!
+ tournament_bought_round_opinion: "Yuvarlak satın alındı" #NT!
+ tournament_streaker_opinion: "Halka açık çıplaklık" #NT!
+ tournament_dragged_off_opinion: "Sürüklenerek Uzaklaştırıldı" #NT!
+ tournament_bribed_replacement_opinion: "Nitelikli Değiştirme" #NT!
+ tournament_liege_concession_opinion: "Zorla İmtiyaz" #NT!
+  # OTHER 
+ cultural_acceptance_expelled_contestant: "İhraç Edilen Yarışmacı" #NT!
+ cultural_acceptance_accepted_contestant: "Kabul Edilen Yarışmacı" #NT!
+ tournament_contest_versus_battle_win_tt: "[activity.GetCurrentPhase.GetPhase.GetName] turunu kazandın" #NT!
+ tournament_contest_versus_battle_lose_tt: "[versus_contestant.GetTitledFirstNameNoTooltip], [activity.GetCurrentPhase.GetPhase.GetName] turunu kazanır" #NT!

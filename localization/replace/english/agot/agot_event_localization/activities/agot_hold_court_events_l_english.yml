@@ -1,35 +1,36 @@
 ﻿l_english:
-#mustafa++
-# Guest offers to share rumors from a nearby foreign realm.
-agot_hold_court.1001.t:0 "$hold_court_header$ Üstünlük Hakkı Teklifi"
-agot_hold_court.1001.desc:0 "Vassalım [paramount_petitioner.GetTitledFirstName] tahtıma yaklaşıyor ve derin bir saygı gösteriyor.\n\n\"Selamlar majesteleri. [paramount_title.GetName] tacdan ayrı bir sahibi yok. Bu bölgeyi sizin adınıza yönetmek için kendimi aday göstermek istiyorum.\""
-agot_hold_court.1001.a:0 "Benim için [paramount_title.GetName] denetleyeceksin."
-agot_hold_court.1001.b:0 "Kaybettin! Hiçbir şey alamazsın! İyi günler, efendim!"
-
-agot_hold_court.1011.t:0 "$hold_court_header$ Toprak Davası"
-agot_hold_court.1011.desc_paramount:0 "[aggressor_vassal.GetName], [defender_vassal.GetName] adlı kişiyi haklı olarak kendisine bağlılık borcu olan topraklar ve lordlar üzerinde yasa dışı bir şekilde hakimiyet kurmakla suçluyor. Özellikle [vassal_claim.GetName], onun öfkesinin ana sebebi. [defender_vassal_vassal.GetName] adlı kişinin [defender_vassal.GetName] adlı kişiye bağlılık yemini etmesinin bölgede bir dengesizliğe neden olduğunu ve bu toprakların ve gelirlerinin kendisine ait olması gerektiğini savunuyor.\n\n"
-agot_hold_court.1011.desc_direct:0 "[aggressor_vassal.GetName], [defender_vassal.GetName] tarafından yönetilen ve doğrudan size bağlılık yemini etmiş olan [vassal_claim.GetName] ünvanının kendi De Jure topraklarının bir parçası olduğunu ve bu toprakları kendisine iade etmenizin bölgenin yararına olacağını iddia ediyor.\n\n"
-
-agot_hold_court.1011.desc_historic_claimant:0 "Ayrıca, [defender_vassal.GetTitledFirstName] adlı kişinin [vassal_claim.GetName] ünvanının gerçek lordu bile olmadığını ve aslında [dynasty.GetName] Hanedanı'nın uzun yıllar boyunca meşru bir şekilde [aggressor_vassal.GetPrimaryTitle.GetName] için bağlılık yemini ederek yönettiğini belirtiyor. Bu nedenle, tarihi topraklarından haksız yere mahrum bırakılmış olan [historic_claimant.GetName] adlı kişiye yeniden verilmesini talep ediyor."
-agot_hold_court.1011.desc_historic_same:0 "[dynasty.GetName] Hanedanı, [vassal_claim.GetName] ünvanının geleneksel sahibidir, bu nedenle [defender_vassal.GetName] adlı kişinin topraklara sahip olma hakkı olduğunu savunuyor."
-agot_hold_court.1011.desc_default:0 "[vassal_claim.GetName], [dynasty.GetName] Hanedanı'na aittir."
-agot_hold_court.1011.desc_paramount_titles:0 "Durumu daha da karmaşık hale getiren ise, [defender_vassal_vassal.GetTitledFirstName] adlı kişinin diyar genelinde unvanlara sahip olması."
-agot_hold_court.1011.desc_titles:0 "Durumu daha da karmaşık hale getiren ise, [defender_vassal.GetTitledFirstName] adlı kişinin diyar genelinde unvanlara sahip olması."
-
-
-agot_hold_court.1011.a.direct:0 "[defender_vassal.GetTitleAsNameNoTooltip], toprakları sizin kontrolünüze geçecek."
-agot_hold_court.1011.a.indirect:0 "[defender_vassal_vassal.GetTitleAsNameNoTooltip], toprakları sizin kontrolünüze geçecek."
-agot_hold_court.1011.b.direct:0 "[defender_vassal.GetFirstNamePossessive] toprakları çok genişledi ve bölünmesi gerekiyor."
-agot_hold_court.1011.b.indirect:0 "[defender_vassal_vassal.GetFirstNamePossessive] toprakları çok genişledi ve bölünmesi gerekiyor."
-
-agot_hold_court.1011.c:0 "Bu fazla unvanları senin için ele geçireceğim!"
-agot_hold_court.1011.d:0 "[vassal_claim.GetNameNoTier] tarihsel olarak [historic_claimant.GetHouse.GetName] Hanedanı'nın merkeziydi, bu topraklar [historic_claimant.GetFirstName] adlı kişiye ait olmalı!"
-
-##################################################
-# Dispossessed Character asks for land return
-# Badger
-# 1021 - 29
-##################################################
-
-agot_hold_court.1021.t:0 "Tarihi Hak Talebi"
-agot_hold_court.1021.desc:0 "[historic_claimant.GetName], huzurunuza çıkıyor ve [claim_title.GetName] üzerindeki tarihi haklarını dile getiriyor:\n\n"Dostum, [claim_title.GetName] şu anda sizin kontrolünüzde, ancak [dynasty.GetName] Hanedanı onu nesiller boyunca yönetti. Şu anda hiçbir toprağımız yok ve atamızın topraklarını bize iade etmenizi rica ediyorum.""
+  
+  # Guest offers to share rumors from a nearby foreign realm. 
+ agot_hold_court.1001.t: "$hold_court_header$ Üstünlük Hakkı Teklifi"
+ agot_hold_court.1001.desc: "Vassalım [paramount_petitioner.GetTitledFirstName] tahtıma yaklaşıyor ve derin bir saygı gösteriyor.\n\n\"Selamlar majesteleri. [paramount_title.GetName] tacdan ayrı bir sahibi yok. Bu bölgeyi sizin adınıza yönetmek için kendimi aday göstermek istiyorum.\""
+ agot_hold_court.1001.a: "Benim için [paramount_title.GetName] denetleyeceksin."
+ agot_hold_court.1001.b: "Kaybettin! Hiçbir şey alamazsın! İyi günler, efendim!"
+  
+ agot_hold_court.1011.t: "$hold_court_header$ Toprak Davası"
+ agot_hold_court.1011.desc_paramount: "[aggressor_vassal.GetName], [defender_vassal.GetName] adlı kişiyi haklı olarak kendisine bağlılık borcu olan topraklar ve lordlar üzerinde yasa dışı bir şekilde hakimiyet kurmakla suçluyor. Özellikle [vassal_claim.GetName], onun öfkesinin ana sebebi. [defender_vassal_vassal.GetName] adlı kişinin [defender_vassal.GetName] adlı kişiye bağlılık yemini etmesinin bölgede bir dengesizliğe neden olduğunu ve bu toprakların ve gelirlerinin kendisine ait olması gerektiğini savunuyor.\n\n"
+ agot_hold_court.1011.desc_direct: "[aggressor_vassal.GetName], [defender_vassal.GetName] tarafından yönetilen ve doğrudan size bağlılık yemini etmiş olan [vassal_claim.GetName] ünvanının kendi De Jure topraklarının bir parçası olduğunu ve bu toprakları kendisine iade etmenizin bölgenin yararına olacağını iddia ediyor.\n\n"
+  
+ agot_hold_court.1011.desc_historic_claimant: "Ayrıca, [defender_vassal.GetTitledFirstName] adlı kişinin [vassal_claim.GetName] ünvanının gerçek lordu bile olmadığını ve aslında [dynasty.GetName] Hanedanı'nın uzun yıllar boyunca meşru bir şekilde [aggressor_vassal.GetPrimaryTitle.GetName] için bağlılık yemini ederek yönettiğini belirtiyor. Bu nedenle, tarihi topraklarından haksız yere mahrum bırakılmış olan [historic_claimant.GetName] adlı kişiye yeniden verilmesini talep ediyor."
+ agot_hold_court.1011.desc_historic_same: "[dynasty.GetName] Hanedanı, [vassal_claim.GetName] ünvanının geleneksel sahibidir, bu nedenle [defender_vassal.GetName] adlı kişinin topraklara sahip olma hakkı olduğunu savunuyor."
+ agot_hold_court.1011.desc_default: "[vassal_claim.GetName], [dynasty.GetName] Hanedanı'na aittir."
+ agot_hold_court.1011.desc_paramount_titles: "Durumu daha da karmaşık hale getiren ise, [defender_vassal_vassal.GetTitledFirstName] adlı kişinin diyar genelinde unvanlara sahip olması."
+ agot_hold_court.1011.desc_titles: "Durumu daha da karmaşık hale getiren ise, [defender_vassal.GetTitledFirstName] adlı kişinin diyar genelinde unvanlara sahip olması."
+  
+  
+ agot_hold_court.1011.a.direct: "[defender_vassal.GetTitleAsNameNoTooltip], toprakları sizin kontrolünüze geçecek."
+ agot_hold_court.1011.a.indirect: "[defender_vassal_vassal.GetTitleAsNameNoTooltip], toprakları sizin kontrolünüze geçecek."
+ agot_hold_court.1011.b.direct: "[defender_vassal.GetFirstNamePossessive] toprakları çok genişledi ve bölünmesi gerekiyor."
+ agot_hold_court.1011.b.indirect: "[defender_vassal_vassal.GetFirstNamePossessive] toprakları çok genişledi ve bölünmesi gerekiyor."
+  
+ agot_hold_court.1011.c: "Bu fazla unvanları senin için ele geçireceğim!"
+ agot_hold_court.1011.d: "[vassal_claim.GetNameNoTier] tarihsel olarak [historic_claimant.GetHouse.GetName] Hanedanı'nın merkeziydi, bu topraklar [historic_claimant.GetFirstName] adlı kişiye ait olmalı!"
+  
+   ################################################## 
+   # Dispossessed Character asks for land return 
+   # Badger 
+   # 1021 - 29 
+   ################################################## 
+  
+ agot_hold_court.1021.t: "Tarihi Hak Talebi"
+ agot_hold_court.1021.desc: "[historic_claimant.GetName], huzurunuza çıkıyor ve [claim_title.GetName] üzerindeki tarihi haklarını dile getiriyor:\n\n"Dostum, [claim_title.GetName] şu anda sizin kontrolünüzde, ancak [dynasty.GetName] Hanedanı onu nesiller boyunca yönetti. Şu anda hiçbir toprağımız yok ve atamızın topraklarını bize iade etmenizi rica ediyorum.""
+  

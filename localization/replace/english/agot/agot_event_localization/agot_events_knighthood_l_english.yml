@@ -1,134 +1,133 @@
 ﻿l_english:
-#mustafa+
-#########################
-## Hedge Knight Events ##
-#########################
-
-# Hedge knight wants to squire your heir
-agot_knighthood.0016.t:0 "Başıboş Şövalye"
-agot_knighthood.0016.desc:0 "Son birkaç gecedir salonlarımda bir Başıboş şövalye uyuyor. Görünüşe göre oğlum [potential_child_squire.GetName], ondan hoşlanmış. Aynı şekilde Başıboş şövalye de oğluma ısınmış. Oğlum, Başıboş şövalyenin şövalyelik ve yiğitlik üzerine anlattığı heyecan verici hikayeleri dinledikten sonra ona hayran kaldı.\n\nBaşıboş şövalyenin son günü ve artık gitmek için hazırlık yapıyor gitmeden önce sarayımda kalmayı ve oğlumun yaveri olmasına izin vermemi teklif ediyor.\n\nAdam yeterince onurlu görünüyor ve onay vermem  oğlumu çok, çok mutlu edecek. Bunu düşünmem gerek."
-agot_knighthood.0016.a:0 "Evet, kalmalısın ve onu yaverin olarak almalısın!"
-agot_knighthood.0016.a.tt:0 "[hedge_knight.GetName] sarayınıza katılacak ve oğlunuzu [Concept( 'squire', 'Yaveri' )|e] olarak alacak."
-agot_knighthood.0016.b:0 "Hayır, sanırım sen doğru şövalye değilsin."
-agot_knighthood.0016.b.tt:0 "[hedge_knight.GetName] sarayınızdan ayrılacak."
-
-# Hedge knight wants to knight your non-heir son
-agot_knighthood.0700.t:0 "Başıboş Şövalye ve Yedek Varis"
-agot_knighthood.0700.desc:0 "[hedge_knight.GetName] adında bir Başıboş şövalye son zamanlarda sarayımı ziyaret etti. Doğuştan bir [hedge_knight.GetCulture.GetName] olan bu şövalye, bir lordun hizmetine girmek için diyarı dolaşıyor. Bu adam hakkında, Batı Toprakları'nın küçük bir soylu ailesinden geldiği iddiası ve elbette bir şövalye olduğu dışında pek bir şey bilmiyorum.\n\nOna pek dikkat etmedim ve bu nedenle yakında yoluna devam edeceğini bekliyordum. Ancak bana güven içinde geldi ve oğlum [potential_child_knight.GetName] için şövalyelik ünvanı vereceğine ama bunun karşılığında dilediği kadar sarayda kalmasına izin vermemi teklif etti!"
-agot_knighthood.0700.a:0 "Sanırım böyle bir anlaşma yapılabilir."
-agot_knighthood.0700.b:0 "Hayır, buna razı olmayacağım."
-
-# Hedge knight wants to knight you
-agot_knighthood.0701.t:0 "Başıboş Şövalye ve Lord"
-agot_knighthood.0701.desc:0 "[hedge_knight.GetName] adında bir Başıboş şövalye son zamanlarda sarayımı ziyaret etti. Doğuştan bir [hedge_knight.GetCulture.GetName] olan bu şövalye, bilinmeyen nedenlerle diyarı dolaşıyor.\n\nOna dikkat etmesem de, görünüşe göre o bana dikkat etmiş. Bu sabah erken saatlerde hizmetçilerimden birine, [hedge_knight.GetFirstName] tarafından imzalanmış, bana şövalyelik teklif eden kabaca yazılmış bir not ulaştırıldı. Notta, doğru bir bedel karşılığında şövalye olabileceğim iddia ediliyor."
-agot_knighthood.0701.a:0 "Bu anlaşmayı kabul edeceğim."
-agot_knighthood.0701.b:0 "Hayır, parayla şövalye olunmaz."
-
-#####################
-# Dynasty Knighting #
-#####################
-
-#0017-19
-agot_knighthood.0017.t:0 "Hanedan Şövalyeliği"
-agot_knighthood.0017.desc:0 "[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('potential_squire'))] [potential_squire.GetName] henüz bir yaver değil. Belki de onu yaverim yapmayı teklif ederek aramızda daha iyi bir ilişki kurabilirim?"
-agot_knighthood.0017.a:0 "Evet, ona yaverlik teklif edeceğim."
-agot_knighthood.0017.a.tt:0 "[potential_squire.GetName] adlı kişinin [Concept( 'squire', 'Yaveri' )|e]niz olmasını istiyorsunuz."
-agot_knighthood.0017.b:0 "Hayır, bu zaman kaybı."
-agot_knighthood.0017.b.tt:0 "[potential_squire.GetName] adlı kişiden  yaveriniz olmasını istemediniz."
-
-agot_knighthood.0018.opening:0 "Sayın [potential_knight_for_child.GetName],"
-agot_knighthood.0018.desc:0 "Henüz bir yaver olmadığınızı fark ettim! Birgün şövalye olmak isterseniz, kendinize gönüllü bir şövalye bulmanız gerekiyor...\n\nNeyse ki kader bizi kan bağıyla birbirine bağladı! İsterseniz sizi yaverim yaparım ve bir gün, hak ederseniz, sizi şövalye ilan ederim."
-agot_knighthood.0018.a:0 "Vay canına, kabul ediyorum!"
-agot_knighthood.0018.b:0 "Üzgünüm ama hayır."
-agot_knighthood.0018.b_toast:0 "[potential_squire.GetName] Yanıtlıyor"
-agot_knighthood.0018.b_toast_tt:0 "[potential_squire.GetName] teklifinizi reddetti."
-
-agot_knighthood.0019.opening:0 "Sayın [knight_offerer.GetName],"
-agot_knighthood.0019.desc:0 "Yaveriniz olma teklifinizi kabul ediyorum. Damarlarımızda aynı kan akıyor, bu yüzden bu bağları güçlendirmeliyiz!"
-agot_knighthood.0019.a:0 "Harika!"
-
-##############################
-# Squire Notification Events #
-##############################
-
-agot_knighthood.became_a_squire_toast.t:0 "Yaverlik"
-agot_knighthood.became_a_squire_toast.tt:0 "[my_knight.GetName] adlı şövalyenin yaveri olacak"
-
-agot_knighthood.0300.t:0 "Bir Yaverin Gelişimi"
-agot_knighthood.0300.desc:0 "Yaverim [my_squire.GetName], değerini kanıtladı! Bir yaver olarak çok yol kat etti ve onun şövalye ilan edilmesinin zamanının geldiğine inanıyorum."
-agot_knighthood.0300.a:0 "Onu şövalye ilan edeceğim."
-agot_knighthood.0300.a.tt:0 "[my_squire.GetName] şövalye ilan edilecek!"
-
-agot_knighthood.0320.t:0 "[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('my_relation'))|U] Şövalye İlan Edildi!"
-agot_knighthood.0320.desc_same_house:0 "Biricik [ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('my_relation'))] [my_relation.GetTitledFirstName], şövalye ilan edildi! Bu haberi almak  [ROOT.GetCharacter.GetHouse.GetName] Hanesi'ni çok gururlandırdı."
-agot_knighthood.0320.desc_not_same_house:0 "Biricik [ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('my_relation'))] [my_relation.GetTitledFirstName], şövalye ilan edildi! Bu haberi almak hepimizi çok gururlandırdı."
-agot_knighthood.0320.a:0 "Onunla gurur duyuyorum!"
-
-##################
-# Toast Tooltips #
-##################
-
-agot_knighthood.increase_progtoknighthood_toast.tt:0 "Şövalyelik ilerlemeniz artıyor."
-agot_knighthood.decrease_progtoknighthood_toast.tt:0 "Şövalyelik ilerlemeniz azalıyor."
-
-agot_knighthood.0021.a_toast:0 "Yaverlik Verildi"
-agot_knighthood.0021.a_toast.tt:0 "[potential_knight.GetNamePossessive] yaveri oldunuz."
-agot_knighthood.0021.b_toast:0 "[nearby_knight.GetName] Yanıtlıyor"
-agot_knighthood.0021.b_toast.tt:0 "[nearby_knight.GetName] isteğinizi reddetti."
-
-##Used in the Squire Interaction (Via char menu)
-agot_knighthood_squire_offer_accept_toast:0 "Yaverlik Teklifi Kabul Edildi"
-agot_knighthood_squire_offer_accept_toast.tt:0 "Bir Yaver Kazandınız!"
-agot_knighthood_squire_offer_reject_toast:0 "Yaverlik Teklifi Reddedildi"
-agot_knighthood_squire_offer_reject_toast.tt:0 "Yaverlik teklifiniz reddedildi!"
-
-##Used In the Knighting Interactions (Via char menu)
-agot_knighthood_made_a_knight_toast:0 "Birini Şövalye İlan Ettiniz!"
-agot_knighthood_made_a_knight_toast.tt:0 "[recipient.GetNameNoTooltip] sizin tarafınızdan şövalye ilan edildi!"
-
-agot_knighthood_youve_been_made_a_knight_toast:0 "Şövalye İlan Edildiniz!"
-agot_knighthood_youve_been_made_a_knight_toast.tt:0 "Şövalye ilan edildiniz!"
-agot_knighthood_offer_rejected_toast:0 "Şövalyelik Teklifi Reddedildi"
-agot_knighthood_offer_rejected_toast.tt:0 "Şövalyelik teklifiniz reddedildi!"
-
-#Used in places outside the 'grant knighthood' interaction
-agot_knighthood_made_a_knight_generic_toast:0 "Birini Şövalye İlan Ettiniz!"
-agot_knighthood_made_a_knight_generic_toast.tt:0 "Birini Şövalye İlan Ettiniz"
-
-#################################
-## Battlefield Knighting Event ##
-#################################
-
-agot_knighthood.0601.t:0 "Savaş Alanında Şövalyelik"
-agot_knighthood.0601.desc:0 "[battle_province.GetName]  savaşından sonra, yardımcılarımdan biri bana son derece iyi performans gösteren askerlerin bir listesini sunuyor. [soldier_to_be_knighted.GetNamePossessive] ismi özellikle dikkatimi çekiyor.\n\nYardımcım, onları aceleyle, savaş alanında düzenlenen bir törenle şövalye ilan etmemi tavsiye ediyor; ona göre, bu askerleri savaşın katliamı ve yıkımı arasında şövalye ilan etmek, saflarımızda morali artıracaktır."
-agot_knighthood.0601.a:0 "Evet, [soldier_to_be_knighted.GetFirstName] şövalye olmayı hak etti."
-agot_knighthood.0601.a.tt:0 "[soldier_to_be_knighted.GetName] şövalye olacak."
-agot_knighthood.0601.b:0 "Hayır, onları şövalye ilan etmeyeceğim."
-
-agot_knighthood.0602.t:0 "Savaş Alanında Şövalyelik"
-agot_knighthood.0602.desc:0 "[battle_province.GetName] savaşından sonra, ben de dahil olmak üzere bir avuç adam, komutan [side_commander.GetName] tarafından çağrıldı.\n\nSavaş alanındaki cesaretimizden etkilendiğini ve eylemlerimizden dolayı şövalye ilan edileceğimizi bildirdi!"
-agot_knighthood.0602.a:0 "Artık bir şövalyeyim!"
-agot_knighthood.0602.a.tt:0 "Şövalye ilan edildiniz!"
-
-######################################
-## Special Squire Assignment Events ##
-######################################
-
-agot_knighthood.0800.t:0 "Çocukları Şövalye Yapmak"
-agot_knighthood.0800.desc:0 "Çocuğum [squire.GetName], artık yaverlik çağına geldi. Belki de Kral Muhafızlarımdan birine ona eğitim vermesini emredebilirim? [knight.GetName], bu iş için iyi bir aday olduğuna inanıyorum."
-agot_knighthood.0800.a:0 "Evet!"
-agot_knighthood.0800.b:0 "Hayır!"
-
-agot_knighthood.0801.t:0 "Çocukları Şövalye Yapmak"
-agot_knighthood.0801.desc:0 "Çocuğum [squire.GetName], artık yaverlik yaşına erişti. Belki de diyarımdaki bir vasalıma, ona savaş ve soyluluk eğitimini vermesi için talimat verebilirim. [knight.GetName], bu görev için uygun bir aday gibi görünüyor."
-agot_knighthood.0801.a:0 "Evet!"
-agot_knighthood.0801.b:0 "Hayır!"
-
-agot_knighthood.0802.opening:0 "Sadık tebaama,"
-agot_knighthood.0802.desc:0 "[squire.GetName] yaverin olarak yanında eğitime başlayacak! Umarım ona şövalye olmanın ne demek olduğunu öğretirsin!"
-agot_knighthood.0802.a:0 "Emir demiri keser."
-
-
-##LOC KEYS FOR KNIGHTING
-
-contest_winner_ceremony_knighthood_tt:0 "[host.GetShortUIName|U] Tarafından Şövalyelik Verildi"
+  
+  ######################### 
+  ## Hedge Knight Events ## 
+  ######################### 
+  
+  # Hedge knight wants to squire your heir 
+ agot_knighthood.0016.t: "Başıboş Şövalye"
+ agot_knighthood.0016.desc: "Son birkaç gecedir salonlarımda bir Başıboş şövalye uyuyor. Görünüşe göre oğlum [potential_child_squire.GetName], ondan hoşlanmış. Aynı şekilde Başıboş şövalye de oğluma ısınmış. Oğlum, Başıboş şövalyenin şövalyelik ve yiğitlik üzerine anlattığı heyecan verici hikayeleri dinledikten sonra ona hayran kaldı.\n\nBaşıboş şövalyenin son günü ve artık gitmek için hazırlık yapıyor gitmeden önce sarayımda kalmayı ve oğlumun yaveri olmasına izin vermemi teklif ediyor.\n\nAdam yeterince onurlu görünüyor ve onay vermem  oğlumu çok, çok mutlu edecek. Bunu düşünmem gerek."
+ agot_knighthood.0016.a: "Evet, kalmalısın ve onu yaverin olarak almalısın!"
+ agot_knighthood.0016.a.tt: "[hedge_knight.GetName] sarayınıza katılacak ve oğlunuzu [Concept( 'squire', 'Yaveri' )|e] olarak alacak."
+ agot_knighthood.0016.b: "Hayır, sanırım sen doğru şövalye değilsin."
+ agot_knighthood.0016.b.tt: "[hedge_knight.GetName] sarayınızdan ayrılacak."
+  
+  # Hedge knight wants to knight your non-heir son 
+ agot_knighthood.0700.t: "Başıboş Şövalye ve Yedek Varis"
+ agot_knighthood.0700.desc: "[hedge_knight.GetName] adında bir Başıboş şövalye son zamanlarda sarayımı ziyaret etti. Doğuştan bir [hedge_knight.GetCulture.GetName] olan bu şövalye, bir lordun hizmetine girmek için diyarı dolaşıyor. Bu adam hakkında, Batı Toprakları'nın küçük bir soylu ailesinden geldiği iddiası ve elbette bir şövalye olduğu dışında pek bir şey bilmiyorum.\n\nOna pek dikkat etmedim ve bu nedenle yakında yoluna devam edeceğini bekliyordum. Ancak bana güven içinde geldi ve oğlum [potential_child_knight.GetName] için şövalyelik ünvanı vereceğine ama bunun karşılığında dilediği kadar sarayda kalmasına izin vermemi teklif etti!"
+ agot_knighthood.0700.a: "Sanırım böyle bir anlaşma yapılabilir."
+ agot_knighthood.0700.b: "Hayır, buna razı olmayacağım."
+  
+  # Hedge knight wants to knight you 
+ agot_knighthood.0701.t: "Başıboş Şövalye ve Lord"
+ agot_knighthood.0701.desc: "[hedge_knight.GetName] adında bir Başıboş şövalye son zamanlarda sarayımı ziyaret etti. Doğuştan bir [hedge_knight.GetCulture.GetName] olan bu şövalye, bilinmeyen nedenlerle diyarı dolaşıyor.\n\nOna dikkat etmesem de, görünüşe göre o bana dikkat etmiş. Bu sabah erken saatlerde hizmetçilerimden birine, [hedge_knight.GetFirstName] tarafından imzalanmış, bana şövalyelik teklif eden kabaca yazılmış bir not ulaştırıldı. Notta, doğru bir bedel karşılığında şövalye olabileceğim iddia ediliyor."
+ agot_knighthood.0701.a: "Bu anlaşmayı kabul edeceğim."
+ agot_knighthood.0701.b: "Hayır, parayla şövalye olunmaz."
+  
+  ##################### 
+  # Dynasty Knighting # 
+  ##################### 
+  
+  #0017-19 
+ agot_knighthood.0017.t: "Hanedan Şövalyeliği"
+ agot_knighthood.0017.desc: "[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('potential_squire'))] [potential_squire.GetName] henüz bir yaver değil. Belki de onu yaverim yapmayı teklif ederek aramızda daha iyi bir ilişki kurabilirim?"
+ agot_knighthood.0017.a: "Evet, ona yaverlik teklif edeceğim."
+ agot_knighthood.0017.a.tt: "[potential_squire.GetName] adlı kişinin [Concept( 'squire', 'Yaveri' )|e]niz olmasını istiyorsunuz."
+ agot_knighthood.0017.b: "Hayır, bu zaman kaybı."
+ agot_knighthood.0017.b.tt: "[potential_squire.GetName] adlı kişiden  yaveriniz olmasını istemediniz."
+  
+ agot_knighthood.0018.opening: "Sayın [potential_knight_for_child.GetName],"
+ agot_knighthood.0018.desc: "Henüz bir yaver olmadığınızı fark ettim! Birgün şövalye olmak isterseniz, kendinize gönüllü bir şövalye bulmanız gerekiyor...\n\nNeyse ki kader bizi kan bağıyla birbirine bağladı! İsterseniz sizi yaverim yaparım ve bir gün, hak ederseniz, sizi şövalye ilan ederim."
+ agot_knighthood.0018.a: "Vay canına, kabul ediyorum!"
+ agot_knighthood.0018.b: "Üzgünüm ama hayır."
+ agot_knighthood.0018.b_toast: "[potential_squire.GetName] Yanıtlıyor"
+ agot_knighthood.0018.b_toast_tt: "[potential_squire.GetName] teklifinizi reddetti."
+  
+ agot_knighthood.0019.opening: "Sayın [knight_offerer.GetName],"
+ agot_knighthood.0019.desc: "Yaveriniz olma teklifinizi kabul ediyorum. Damarlarımızda aynı kan akıyor, bu yüzden bu bağları güçlendirmeliyiz!"
+ agot_knighthood.0019.a: "Harika!"
+  
+  ############################## 
+  # Squire Notification Events # 
+  ############################## 
+  
+ agot_knighthood.became_a_squire_toast.t: "Yaverlik"
+ agot_knighthood.became_a_squire_toast.tt: "[my_knight.GetName] adlı şövalyenin yaveri olacak"
+  
+ agot_knighthood.0300.t: "Bir Yaverin Gelişimi"
+ agot_knighthood.0300.desc: "Yaverim [my_squire.GetName], değerini kanıtladı! Bir yaver olarak çok yol kat etti ve onun şövalye ilan edilmesinin zamanının geldiğine inanıyorum."
+ agot_knighthood.0300.a: "Onu şövalye ilan edeceğim."
+ agot_knighthood.0300.a.tt: "[my_squire.GetName] şövalye ilan edilecek!"
+  
+ agot_knighthood.0320.t: "[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('my_relation'))|U] Şövalye İlan Edildi!"
+ agot_knighthood.0320.desc_same_house: "Biricik [ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('my_relation'))] [my_relation.GetTitledFirstName], şövalye ilan edildi! Bu haberi almak  [ROOT.GetCharacter.GetHouse.GetName] Hanesi'ni çok gururlandırdı."
+ agot_knighthood.0320.desc_not_same_house: "Biricik [ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('my_relation'))] [my_relation.GetTitledFirstName], şövalye ilan edildi! Bu haberi almak hepimizi çok gururlandırdı."
+ agot_knighthood.0320.a: "Onunla gurur duyuyorum!"
+  
+  ################## 
+  # Toast Tooltips # 
+  ################## 
+  
+ agot_knighthood.increase_progtoknighthood_toast.tt: "Şövalyelik ilerlemeniz artıyor."
+ agot_knighthood.decrease_progtoknighthood_toast.tt: "Şövalyelik ilerlemeniz azalıyor."
+  
+ agot_knighthood.0021.a_toast: "Yaverlik Verildi"
+ agot_knighthood.0021.a_toast.tt: "[potential_knight.GetNamePossessive] yaveri oldunuz."
+ agot_knighthood.0021.b_toast: "[nearby_knight.GetName] Yanıtlıyor"
+ agot_knighthood.0021.b_toast.tt: "[nearby_knight.GetName] isteğinizi reddetti."
+  
+  ##Used in the Squire Interaction (Via char menu) 
+ agot_knighthood_squire_offer_accept_toast: "Yaverlik Teklifi Kabul Edildi"
+ agot_knighthood_squire_offer_accept_toast.tt: "Bir Yaver Kazandınız!"
+ agot_knighthood_squire_offer_reject_toast: "Yaverlik Teklifi Reddedildi"
+ agot_knighthood_squire_offer_reject_toast.tt: "Yaverlik teklifiniz reddedildi!"
+  
+  ##Used In the Knighting Interactions (Via char menu) 
+ agot_knighthood_made_a_knight_toast: "Birini Şövalye İlan Ettiniz!"
+ agot_knighthood_made_a_knight_toast.tt: "[recipient.GetNameNoTooltip] sizin tarafınızdan şövalye ilan edildi!"
+  
+ agot_knighthood_youve_been_made_a_knight_toast: "Şövalye İlan Edildiniz!"
+ agot_knighthood_youve_been_made_a_knight_toast.tt: "Şövalye ilan edildiniz!"
+ agot_knighthood_offer_rejected_toast: "Şövalyelik Teklifi Reddedildi"
+ agot_knighthood_offer_rejected_toast.tt: "Şövalyelik teklifiniz reddedildi!"
+  
+  #Used in places outside the 'grant knighthood' interaction 
+ agot_knighthood_made_a_knight_generic_toast: "Birini Şövalye İlan Ettiniz!"
+ agot_knighthood_made_a_knight_generic_toast.tt: "Birini Şövalye İlan Ettiniz"
+  
+  ################################# 
+  ## Battlefield Knighting Event ## 
+  ################################# 
+  
+ agot_knighthood.0601.t: "Savaş Alanında Şövalyelik"
+ agot_knighthood.0601.desc: "[battle_province.GetName]  savaşından sonra, yardımcılarımdan biri bana son derece iyi performans gösteren askerlerin bir listesini sunuyor. [soldier_to_be_knighted.GetNamePossessive] ismi özellikle dikkatimi çekiyor.\n\nYardımcım, onları aceleyle, savaş alanında düzenlenen bir törenle şövalye ilan etmemi tavsiye ediyor; ona göre, bu askerleri savaşın katliamı ve yıkımı arasında şövalye ilan etmek, saflarımızda morali artıracaktır."
+ agot_knighthood.0601.a: "Evet, [soldier_to_be_knighted.GetFirstName] şövalye olmayı hak etti."
+ agot_knighthood.0601.a.tt: "[soldier_to_be_knighted.GetName] şövalye olacak."
+ agot_knighthood.0601.b: "Hayır, onları şövalye ilan etmeyeceğim."
+  
+ agot_knighthood.0602.t: "Savaş Alanında Şövalyelik"
+ agot_knighthood.0602.desc: "[battle_province.GetName] savaşından sonra, ben de dahil olmak üzere bir avuç adam, komutan [side_commander.GetName] tarafından çağrıldı.\n\nSavaş alanındaki cesaretimizden etkilendiğini ve eylemlerimizden dolayı şövalye ilan edileceğimizi bildirdi!"
+ agot_knighthood.0602.a: "Artık bir şövalyeyim!"
+ agot_knighthood.0602.a.tt: "Şövalye ilan edildiniz!"
+  
+ ###################################### 
+ ## Special Squire Assignment Events ## 
+ ###################################### 
+  
+ agot_knighthood.0800.t: "Çocukları Şövalye Yapmak"
+ agot_knighthood.0800.desc: "Çocuğum [squire.GetName], artık yaverlik çağına geldi. Belki de Kral Muhafızlarımdan birine ona eğitim vermesini emredebilirim? [knight.GetName], bu iş için iyi bir aday olduğuna inanıyorum."
+ agot_knighthood.0800.a: "Evet!"
+ agot_knighthood.0800.b: "Hayır!"
+  
+ agot_knighthood.0801.t: "Çocukları Şövalye Yapmak"
+ agot_knighthood.0801.desc: "Çocuğum [squire.GetName], artık yaverlik yaşına erişti. Belki de diyarımdaki bir vasalıma, ona savaş ve soyluluk eğitimini vermesi için talimat verebilirim. [knight.GetName], bu görev için uygun bir aday gibi görünüyor."
+ agot_knighthood.0801.a: "Evet!"
+ agot_knighthood.0801.b: "Hayır!"
+  
+ agot_knighthood.0802.opening: "Sadık tebaama,"
+ agot_knighthood.0802.desc: "[squire.GetName] yaverin olarak yanında eğitime başlayacak! Umarım ona şövalye olmanın ne demek olduğunu öğretirsin!"
+ agot_knighthood.0802.a: "Emir demiri keser."
+  
+ ##LOC KEYS FOR KNIGHTING 
+  
+ contest_winner_ceremony_knighthood_tt: "[host.GetShortUIName|U] Tarafından Şövalyelik Verildi"

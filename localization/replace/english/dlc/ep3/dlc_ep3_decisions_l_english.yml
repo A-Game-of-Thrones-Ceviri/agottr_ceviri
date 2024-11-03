@@ -1,0 +1,1324 @@
+﻿l_english:
+  # Estate Decisions 
+ estate_hire_agents_decisions: "Kiralama Acenteleri" #NT!
+ estate_hire_agents_decisions_desc: "Siyasi konum ve etki istediğimi elde etmem için yeterli olmadığında, sadece #EMP diğer#! alternatifi aramam gerekiyor. Ancak, bunu daha verimli bir şekilde yapmak için aracılara ihtiyacım var." #NT!
+ estate_hire_agents_decisions_confirm: "Bu ajanları bana getirin!" #NT!
+ estate_hire_agents_decisions_tooltip: "Potansiyel acenteleri arayın ve işe alın, böylece [schemes|E]'ınızı daha iyi bir şekilde ilerletin" #NT!
+ estate_governor_patrols_decision: "Valilikte Devriye Yürütmek" #NT!
+ estate_governor_patrols_decision_desc: "Valiliğimdeki halkı güvende ve sağlam tutmak için, olası haydutları uzak tutmak için düzenli devriyeler kurabilirim. Bu, savaşlarda da faydalı olabilir, çünkü iş oraya geldiğinde her zaman hazırda askerlerimiz olacak." #NT!
+ estate_governor_patrols_decision_confirm: "Hemen devriyeye başlayın!" #NT!
+ estate_governor_patrols_decision_tooltip: "[governorship|E]'ınızda devriyeler kurun" #NT!
+ estate_bolster_security_decision: "Emlak Güvenliğini Artırın" #NT!
+ estate_bolster_security_decision_desc: "Paranoyak olmuyorum, değil mi? Sanki herkes beni avlamak için peşindeymiş gibi hissediyorum. Sırtıma bıçak saplamaları veya itibarımı zedelemeleri muhtemel. Güvenlik ekibimin artırılması kafamı rahatlatacaktır. #EMP Değil mi?#!" #NT!
+ estate_bolster_security_decision_confirm: "Daha fazla muhafız atayalım." #NT!
+ estate_bolster_security_decision_tooltip: "[schemes|E]'a karşı kişisel güvenliğinizi artırın" #NT!
+ estate_granary_decision: "Tahıl Piyasasını Manipüle Etmek" #NT!
+ estate_granary_decision_desc: "Kişisel ambarlarım önemli miktarda tahıl bulunduruyor. İhtiyaç zamanlarında tahılımı yavaş yavaş, birer çuval, büyük ölçüde artan fiyatlara satabilirim. Piyasayı kendi lehime yönlendirmek için birkaç ipi çekmem gerekecek, ancak bundan büyük fayda sağlayacağım." #NT!
+ estate_granary_decision_confirm: "Tahılı satmaya başla. #EMP Yavaşça#!." #NT!
+ estate_granary_decision_tooltip: "Ambarlarınızda depoladığınız tahılı satarak, öngörülebilir gelecekte aylık [gold_i|E][gold|E] [income|E] gelirinizi artırın" #NT!
+ estate_unlock_granary_decision_factors_tt: "\nEtkiyi artıran katkıda bulunan faktörler:" #NT!
+ estate_unlock_granary_decision_no_factors_tt: "#weak Ek faktör yok#!" #NT!
+ estate_unlock_granary_decision_grain_building_tt: "#weak [estate|E]'iniz [GetDomicileBuilding('grain_field_01').GetName]'ye sahiptir [domicile_building|E] — Her seviyede artar #!" #NT!
+ estate_unlock_granary_decision_capital_tt: "#weak [estate|E]'iniz [capital|E]#!'te yer almaktadır" #NT!
+ estate_unlock_granary_decision_terrain_tt: "#weak [estate|E]'iniz [domicile_owner.GetDomicile.GetLocation.GetTerrain.GetName] [terrain|E]#! konumunda bulunuyor" #NT!
+ estate_unlock_granary_decision_control_tt: "#weak [domicile_owner.GetDomicile.GetLocation.GetCounty.GetName] azalmış [county_control|E]#!'ten muzdariptir" #NT!
+ estate_unlock_granary_decision_development_1_tt: "#weak [domicile_owner.GetDomicile.GetLocation.GetCounty.GetName] en az [EmptyScope.ScriptValue('estate_granary_development_bonus_1_value')|V0] [development|E]#!'e sahiptir" #NT!
+ estate_unlock_granary_decision_development_2_tt: "#weak [domicile_owner.GetDomicile.GetLocation.GetCounty.GetName] en az [EmptyScope.ScriptValue('estate_granary_development_bonus_2_value')|V0] [development|E]#!'e sahiptir" #NT!
+ estate_unlock_granary_decision_epidemic_tt: "#weak [domicile_owner.GetDomicile.GetLocation.GetName]'de [epidemic|E] vardır ki bu yerel vatandaşların tahılınız için daha fazla ödeme yapmasına neden olur#!" #NT!
+  
+  # Hold a Triumph Decision 
+ hold_triumph_decision: "Bir Zafer Tutun" #NT!
+ hold_triumph_decision_desc: "Zaferler en eski ve en saygı duyulan Roma gelenekleri arasındadır. Eskiden, muzaffer general Roma'ya coşkulu bir kalabalık ve en büyük onurla dönerdi — bir günlüğüne, sadece ismiyle bir tanrıya eşit. Bugün, insanlar benim en büyük başarılarımı ve onlara getirdiğim refahı kutlayacak!$ep3_triumph_influence_cost_desc$" #NT!
+ hold_triumph_decision_tooltip: "Başarılarınızı kutlamak ve kamuoyundaki imajınızı desteklemek için görkemli bir geçit töreni düzenleyin" #NT!
+ hold_triumph_decision_confirm: "Hazır ol atım!" #NT!
+ ep3_triumph_influence_cost_desc: "\n\n@alert_icon! #alert_trial 5 yıldır [war|E] kazanmadıysanız Zaferi Tutmanın maliyeti artar!#!" #NT!
+ hold_triumph_decision_effects: "Triumph'unuz sırasında, tebaanız üzerinde kalıcı bir izlenim bırakmak ve [legitimacy|E], [influence|E], [prestige|E], [piety|E] ve daha fazlasını kazanmak için size çeşitli seçenekler sunulacak." #NT!
+  
+ ep3_decisions_event_triumph: "Zafer:" #NT!
+ ep3_decisions_event.0001.t: "$ep3_decisions_event_triumph$ Etkileyici Bir Geçit Töreni" #NT!
+ ep3_decisions_event.0001.intro: "Atımın üzerinde yüksekte oturuyorum, en görkemli kıyafetimle ışıl ışıl parlıyorum, coşkulu kalabalığın iki kanadının arasından görkemli bir alayı yönetiyorum." #NT!
+ ep3_decisions_event.0001.desc_const: "\n\nBenden önceki en saygıdeğer seleflerimin yaptığı gibi, [Glossary( 'Golden Gate', 'GOLDEN_GATE_GLOSS' )]'den kutsal [ROOT.Char.GetCurrentLocation.GetBaronyNameExplicitly] şehrine giriyorum, geçmişin ihtişamlarının antik heykelleri ve anıtları arasında şehir merkezinde yürüyüşe geçiyorum ve imparatorluktaki tüm ölçümlerin başladığı [Glossary( 'Milion', 'MILION_GLOSS' )]'de duruyorum." #NT!
+ GOLDEN_GATE_GLOSS: "#bold Altın Kapı#!, Konstantinopolis'i çevreleyen Theodosius Surları'nın bir parçasıdır ve başkentin ana caddesi olan Mese'nin başlangıcını işaret eder." #NT!
+ MILION_GLOSS: "#bold milyon#!, [GetTitleByKey('e_byzantium').GetBaseName]'nin merkezini işaretler ve imparatorluğun şehirlerine olan tüm mesafelerin ölçüldüğü başlangıç ​​noktasıdır." #NT!
+ ep3_decisions_event.0001.desc_other: "\n\nAna kapıdan [t_location.GetNameNoTier]'a girdikten sonra ana caddeyi takip ederek şehrin kalbine doğru ilerliyoruz." #NT!
+ ep3_decisions_event.0001.desc: "Askerlerim gururla beni takip ediyor, [triumph_enemy_defeated.GetTitledFirstName]'a karşı kazanılan zaferin ihtişamını paylaşıyorlar, vatandaşlar ise esirlerle alay ediyor ve savaş ganimetlerine hayranlıkla bakıyorlar." #NT!
+ ep3_decisions_event.0001.desc_no_war: "Askerler, servet taşıyan hizmetçiler ve resmi kılıkları içindeki yüksek memurlar, saltanatımın kudretinin ve azametinin canlı kanıtı olarak gururla beni takip ediyorlar." #NT!
+ ep3_decisions_event.0001.desc_end: "\n\nPeki zafer geçidi nerede son bulmalı?" #NT!
+ ep3_decisions_event.0001.a: "En güzel yer Hipodrom'dur." #NT!
+ ep3_decisions_event.0001.b: "[ROOT.Char.Custom('TriumphReligiousLocation')]'a!" #NT!
+ ep3_decisions_event.0001.a.flavor: "Konularım üzerinde gerçekten etkili bir izlenim bırakmak istiyorum!" #NT!
+ ep3_decisions_event.0001.a.tt: "Zafer Hipodrom'a doğru ilerleyecek" #NT!
+ ep3_decisions_event.0001.b.flavor: "Din benim gücümün temelidir." #NT!
+ ep3_decisions_event.0001.b.tt: "Zafer Ayasofya'ya doğru ilerleyecek" #NT!
+ ep3_decisions_event.0002.t: "$ep3_decisions_event_triumph$ Hipodromda" #NT!
+ ep3_decisions_event.0002.desc_enemy: "Hipodrom'a, yerleşik iktidarın halkla iletişim kurmasının doğal yeri olan yere muzaffer girişimi yaparken, yalnızca bir şeyi iletmeyi amaçlıyorum: #EMP Zafer#!." #NT!
+ ep3_decisions_event.0002.desc_no_war: "Hipodrom, insanların beni görmelerine izin verilen tek yerdir, bu yüzden tam olarak ihtiyaç duyduğum şeyleri görmeleri önemlidir: güç, zenginlik ve kontrol." #NT!
+ ep3_decisions_event.0002.desc_prisoner: "\n\nSonu gelmeyen bir tutuklu geçidi, bağlanmış ve paçavralara bürünmüş, ardından gelir. Çoğu sıradan askerdir, ancak sıranın başında, kalabalığın eğlencesine eşeğe binen [valid_prisoner.GetTitledFirstName] vardır." #NT!
+ ep3_decisions_event.0002.desc_no_prisoner: "\n\nAslında, kalabalığın etkileyici tezahüratlarını almaya yetecek kadar zenginlik, eser, savaş ganimetleri ve kraliyet sembolleri sergileniyor." #NT!
+ ep3_decisions_event.0002.desc_artifact: "Savaş ganimetleri arasında en önemlisi, kuşatma sırasında yağmalanan [sacked_artifact.GetName]'dır." #NT!
+ ep3_decisions_event.0002.desc_hostage: "İmparatorluk locasında ekşi suratlı [enemy_hostage.Custom2('MyCharacterIntroduction', ROOT.Char)]'ı görüyorum." #NT!
+ ep3_decisions_event.0002.desc_conclusion: "\n\nKitleler beklenti içinde ve hava heyecan ve haykırışların kakofonisiyle gürlüyor. İnsanlara özlediklerini vereceğim." #NT!
+ ep3_decisions_event.0002.a: "Tutukluların halk önünde cezalandırılması!" #NT!
+ ep3_decisions_event.0002.a.tt: "Onlarla nasıl baş etmek istersem öyle davranacağım!" #NT!
+ ep3_decisions_event.0002.b: "Savaş ganimetlerinin halka dağıtılması." #NT!
+ ep3_decisions_event.0002.b.tt: "Herkes zaferin bir parçası olduğunu hissetmeyi sever!" #NT!
+ ep3_decisions_event.0002.c: "Hayran kitlesine yiyecek ve altın dağıtılacak!" #NT!
+ ep3_decisions_event.0002.c.tt: "Herkes bedava şeyleri sever, değil mi?" #NT!
+ ep3_decisions_event.0002.d: "Ama benim konuşmam tabii ki!" #NT!
+ ep3_decisions_event.0002.d.tt: "Kendimi tebaama nasıl sunacağımı dikkatli seçmem gerekiyor." #NT!
+ ep3_decisions_event.0002.d.custom_tooltip: "Konuşmanız için bir konu seçin" #NT!
+ ep3_decisions_event.0002.e: "[sacked_artifact.GetNameNoTooltip]'ı yakın ve ganimetleri dağıtın." #NT!
+ ep3_decisions_event.0002.e.tt: "Herkes düşmanın zaferinin ve tam bir aşağılanmasının bir parçası olduğunu hissetmelidir!" #NT!
+ ep3_decisions_event.0003.t: "$ep3_decisions_event_triumph$ [ROOT.Char.Custom('TriumphReligiousLocationCapitalized')]'de" #NT!
+ ep3_decisions_event.0003.desc: ""İnsanlar kırılgan varlıklardır ve en büyük zaferler bile [ROOT.Char.GetFaith.HighGodName]'ın büyüklüğü karşısında kaybolur," diye düşünüyorum kendi kendime, kapıdan içeri adım atarken. Binanın görkemi ve ihtişamı beni hemen etkiliyor.\n\nİnsanlar, [triumph_enemy_defeated.GetTitledFirstName]'e karşı kazandığım parlak zaferin bir sonucu olarak benden gelen mütevazı ve özverili bir hareketi kesinlikle takdir edeceklerdir." #NT!
+ ep3_decisions_event.0003.desc_no_war: "Kibir, güçlü ve kudretli olanların en büyük düşmanıdır.\n\nAma daha da kötüsü, tebaanıza kibir izlenimi #EMP vermektir#!! Sonuçta, [ROOT.Char.GetTitleAsNameNoTooltip|U], [ROOT.Char.GetFaith.HighGodName]'ün yeryüzündeki temsilcisidir. Güç, zenginlik ve ihtişam, İlahi Mahkeme'nin ihtişamının bir yansımasıdır, bu yüzden hiyerarşiye saygı göstermek önemlidir." #NT!
+ ep3_decisions_event.0003.desc_hostage: "İşte bu yüzden [enemy_hostage.Custom2('MyCharacterIntroduction', ROOT.Char)]'dan buraya katılmasını rica ettim." #NT!
+ ep3_decisions_event.0003.a: "[ROOT.Char.GetFaith.HighGodNameAlternate]'ın bereketini memnuniyetle karşılıyorum." #NT!
+ ep3_decisions_event.0003.b: "Zaferimi [ROOT.Char.GetFaith.HighGodName]'a adayacağım." #NT!
+ ep3_decisions_event.0003.c: "Selam sana ve halkına olsun, [enemy_hostage.GetFirstNameNoTooltip]." #NT!
+ ep3_decisions_event.0003.d: "Ganimetleri [ROOT.Char.GetFaith.HighGodNameAlternate]'a ithaf edeceğim." #NT!
+ ep3_decisions_event.0003.c.tt: "Dini açıdan onaylanmış bir barış jesti, [triumph_enemy_defeated.GetTitledFirstNamePossessiveNoTooltip] kişiyle aranızdaki gerginliğin azalmasına kesinlikle katkıda bulunacaktır." #NT!
+ ep3_decisions_event.0003.d.tt_artifact: "Sunağın üzerindeki [sacked_artifact.GetName]'ı bağışlayacağım." #NT!
+ ep3_decisions_event.0004.t: "$ep3_decisions_event_triumph$ Mahkumların Geçit Töreni" #NT!
+ ep3_decisions_event.0004.desc: "Sıra sıra tutuklular Hipodrom'a giriyor. Kirli, zayıf, başları kazınmış, eğer yakın zamanda savaş alanında aşağıladığımız nefret edilen düşmanlar olmasalardı, insan onlara neredeyse acıyabilirdi.\n\n[valid_prisoner.GetTitledFirstName|U] şimdi onları [valid_prisoner.GetSheHe]'in savaşta yaptığı gibi rezilliğe sürüklüyor, ancak paçavralar içinde yanlış yöne bakan bir eşeğe binmek [valid_prisoner.GetHerHim]'yi çok daha az korkutucu gösteriyor." #NT!
+ ep3_decisions_event.0004.desc_hostage: "[enemy_hostage.Custom2('MyCharacterIntroduction', ROOT.Char)]'ın yüzündeki ifade daha da kararıyor." #NT!
+ ep3_decisions_event.0004.a: "Onlar kör edilecekler." #NT!
+ ep3_decisions_event.0004.b: "Bunları alenen idam edin." #NT!
+ ep3_decisions_event.0004.c: "Onlara imparatorluğun merhameti erişti: Bırakın serbest dolaşsınlar." #NT!
+ ep3_decisions_event.0005.t: "$ep3_decisions_event_triumph$ İmparatorluk Konuşması" #NT!
+ ep3_decisions_event.0005.desc_victory: "Hipodrom'un imparatorluk locasına adım attığımda, [triumph_enemy_defeated.GetTitledFirstName]'a karşı kazanılan zaferden en iyi şekilde nasıl yararlanacağımı tartışıyorum." #NT!
+ ep3_decisions_event.0005.desc_no_war: "Kalabalıklar kararsızdır ve zaferimi haklı çıkaracak veya konuşmamı inşa edebileceğim herhangi bir güvenilirlik sunacak büyük bir zaferimin olmadığı da gözümden kaçmıyor. Yine de, onları bir şekilde etkilemem gerekiyor çünkü saltanatımın istikrarı büyük ölçüde halk desteğine dayanıyor." #NT!
+ ep3_decisions_event.0005.desc_prisoner: "\n\nBelki de savaşta kazanılan zengin ganimetlere ve sınırlarımızdaki yenilenen güvenliğe işaret etmeliyim, savaş sırasında ele geçirilen birçok tutsak, örneğin [valid_prisoner.GetTitledFirstName], kalabalığın önünde sergilenmiş olsa da, kendi adına konuşuyor. Belki de bunun yerine iç politikaya odaklanmalıyım?" #NT!
+ ep3_decisions_event.0005.desc_politics: "\n\nSavaşlar abartılıyor, bu yüzden belki de dikkatlerini başka bir yere, örneğin iç istikrara veya refaha çekmeliyim." #NT!
+ ep3_decisions_event.0005.desc_hostage: "Gözümün ucuyla [enemy_hostage.Custom2('MyCharacterIntroduction', ROOT.Char)]'ın hareketsiz ve taş gibi bir yüzle oturduğunu görüyorum." #NT!
+ ep3_decisions_event.0005.a: "[ROOT.Char.GetFaith.WarGodName]'ın rehberliğinde nice zaferler gelecek!" #NT!
+ ep3_decisions_event.0005.tt: "Başkentinizdeki insanlar bunu hatırlayacak ve sizi buna göre yargılayacak!" #NT!
+ ep3_decisions_event.0005.b: "[ROOT.Char.GetFaith.HealthGodName] İmparatorluğu her zaman güvenliğe götürsün!" #NT!
+ ep3_decisions_event.0005.c: "[ROOT.Char.GetFaith.HighGodName]'ın koruması altında İmparatorluk refaha kavuşacak!" #NT!
+ ep3_decisions_event.0005.a.success: "Onlar sizin vaadinize inanırlar ve sizden askeri zaferler beklerler" #NT!
+ ep3_decisions_event.0005.a.failure: "Onlar senin bal gibi sözlerine ikna olmuyorlar" #NT!
+ ep3_decisions_event.0005.b.success: "Onlar sizin vaadinize inanırlar ve iç huzuru beklerler" #NT!
+ ep3_decisions_event.0005.c.success: "Onlar senin vaadine inanırlar ve imparatorluğun refah içinde olmasını beklerler" #NT!
+ ep3_decisions_event.a.tt: "Zafer gelmezse Başkentinizde huzursuzluk çıkacak" #NT!
+ ep3_decisions_event.a.tt_no: "Bir savaşı kazanarak onları yine de etkileyebilirsiniz" #NT!
+ ep3_decisions_event.b.tt: "Başkentinizde isyanlar çıkarsa huzursuzluk çıkar" #NT!
+ ep3_decisions_event.b.tt_no: "Hiçbir isyanla karşılaşmayarak onları yine de etkileyebilirsiniz" #NT!
+ ep3_decisions_event.c.tt: "İmparatorluk iyi performans göstermezse Başkentinizde huzursuzluk çıkacak" #NT!
+ ep3_decisions_event.c.tt_no: "İmparatorluğun iyi performans göstermesini sağlayarak onları yine de etkileyebilirsiniz" #NT!
+ ep3_decisions_event.success: "Kalabalık sana inanıyor" #NT!
+ ep3_decisions_event.failure: "Kalabalık ikna olmadı" #NT!
+ cultural_acceptance_triumph_offensive: "Hücum Zaferi Gösterisi" #NT!
+ cultural_acceptance_triumph_peace: "Yeminli Zeytin Dalı" #NT!
+ fervor_gain_triumph_of_god: "Dini Zafer" #NT!
+ ep3_decisions_event.0006.t: "$ep3_decisions_event_triumph$ Sözünü Tutmak" #NT!
+ ep3_decisions_event.0006.desc: "Son zaferim yıllar önce gerçekleşti ve o zamanlar verdiğim sözler artık aklımın bir köşesinde bile değil. Ancak [t_location.GetName] vatandaşları, [talker.Custom2('MyCharacterIntroduction', ROOT.Char)]'in bana hatırlattığı gibi, unutmadı.\n\n"İnsanlar dedikodu yapıyor, benim [ROOT.Char.GetTitleAsNameNoTooltip|U]." #NT!
+ ep3_decisions_event.0006.desc_victory: "Onlara büyük askeri zaferler vaat ettiğinizi hatırlıyor musunuz?"" #NT!
+ ep3_decisions_event.0006.desc_stability: "Onlara istikrar ve barış dolu bir ülke vaat ettiğinizi hatırlıyor musunuz?"" #NT!
+ ep3_decisions_event.0006.desc_prosperity: "Onlara müreffeh ve başarılı bir imparatorluk vaat ettiğinizi hatırlıyor musunuz?"" #NT!
+ ep3_decisions_event.0006.desc_yes: "\n\nHatırlıyorum. Ve bence gayet iyi oldu!" #NT!
+ ep3_decisions_event.0006.desc_no: "\n\nHatırlıyorum. Ve başarısız olduğumu biliyorum. Ama sadece daha fazla zamana ihtiyacım vardı! Sonuçta, her zaman sözümü tutarım." #NT!
+ ep3_decisions_event.0006.a: "Ben her zaman sözümü tutarım." #NT!
+ ep3_decisions_event.0006.b: "Tabii ki yapmadığım zamanlar hariç." #NT!
+  
+ ep3_decisions_event.0007.t: "$ep3_decisions_event_triumph$ Sonuç" #NT!
+ ep3_decisions_event.0007.desc: "Ve bununla birlikte, [Glossary('hoi polloi', 'HOI_POLLOI_GLOSS' )] bir kez daha yatıştırıldı. Gücüm ve gücümün meşruiyeti yeniden teyit edildi.\n\n" #NT!
+ ep3_decisions_event.0007.hippodrome: "Hipodrom'dan ayrılmak üzere hareket ettiğimde, halkımın tezahüratları havayı dolduruyor, geçmiş imparatorların ihtişamına tanıklık eden antik taşlardan yankılanıyor. Tarihin ağırlığını üzerimde hissediyorum, Konstantinopolis'in gözleri imparatorlarına dikilmiş.\n\nBugün, batan güneşin parıltısı altında, zaferim sadece bir kutlama değil, aynı zamanda imparatorluğun kalıcı ruhuna ve gücüne bir tanıklık.\n\n"[Glossary( 'Aien aristeuein', 'TRIUMPH_HIPPODROME_CONC_GLOSS')]," diye fısıldıyorum." #NT!
+ ep3_decisions_event.0007.hagia_sophia: "Ayasofya'nın kutsal duvarları içinde, ciddi bir ihtişamla çevriliyim. Halkımın ilahileri uyum içinde yükseliyor, geniş, kutsal alanda yankılanıyor. Burada, bu mimari harikanın ilahi kucaklamasında, kendimden daha büyük bir şeye bağlı hissediyorum. \n\nBu kutsal mekandaki zaferim, salt dünyevi gücün ötesindedir - inanç ve liderliğin bir birleşimidir, hükümdarlığım üzerindeki ilahi bereketin bir sembolüdür.\n\nGörkemli kubbenin altında dururken, yalnızca Konstantinopolis'in imparatoru değil, aynı zamanda manevi kalbinin bir koruyucusuyum.\n\n"[Glossary( 'Hyper tes basileias soterias', 'TRIUMPH_HAGIA_SOPHIA_CONC_GLOSS')]," diye fısıldıyorum." #NT!
+ TRIUMPH_HIPPODROME_CONC_GLOSS: ""#bold Aien aristeuein#!" Homeros'un #EMP İlyada#! adlı eserinde geçen "Daima üstün olmak" anlamına gelen eski bir Yunanca cümledir." #NT!
+ TRIUMPH_HAGIA_SOPHIA_CONC_GLOSS: ""#bold Hyper tes basileias soterias#!" Antik Yunancada "İmparatorluğun kurtuluşu için" anlamına gelen yaygın bir formülasyondur." #NT!
+ ep3_decisions_event.0007.a: "Yaşasın [ROOT.Char.GetCurrentLocation.GetBaronyNameExplicitlyNoTooltip]'ın ihtişamı." #NT!
+ ep3_decisions_event.0007.a.tt: "Zaferiniz sona eriyor" #NT!
+  
+  # Find a Charioteer 
+ ep3_decisions_event.1000.t: "Benim [GetCourtPositionType('charioteer_court_position').GetNameNoTooltip|U]" #NT!
+ ep3_decisions_event.1000.desc: "Hizmetkarlarım, Hipodrom'daki muhteşem temsilcim olacak Charioteer'ım olarak işe almak üzere bir aday seçkisi getirdiler.\n\n[mediocre_charioteer.GetFirstName] deneyimden yoksun, ancak yine de olumlu bir seçim olabilir. Öte yandan, [good_charioteer.GetFirstName] kanıtlanmış bir rakiptir." #NT!
+ ep3_decisions_event.1000.desc.stolen_charioteer: "\n\nBen #EMP arabacıya #! ikna edici bir teklifte bulunabilirim [stolen_charioteer.GetEmployer.GetTitledFirstNamePossessive], [stolen_charioteer.GetFirstName]. Belki [stolen_charioteer.GetSheHe] daha cömert bir işveren istiyordur..." #NT!
+ ep3_decisions_event.1000.a: "[mediocre_charioteer.GetFirstNameNoTooltip] inancımı... ve paramı hak ediyor." #NT!
+ ep3_decisions_event.1000.a.aptitude: "[mediocre_charioteer.GetUINamePossessive] [aptitude|E] [mediocre_charioteer.GetCourtPositionAptitude( GetCourtPositionType( 'charioteer_court_position' ) )]'dir" #NT!
+ ep3_decisions_event.1000.b: "[good_charioteer.GetFirstNameNoTooltip] aradığım deneyime sahip!" #NT!
+ ep3_decisions_event.1000.b.aptitude: "[good_charioteer.GetUINamePossessive] [aptitude|E] [good_charioteer.GetCourtPositionAptitude( GetCourtPositionType( 'charioteer_court_position' ) )]'dir" #NT!
+ ep3_decisions_event.1000.c: "Bir süredir [stolen_charioteer.GetFirstNameNoTooltip]'ı gözüme kestirmiştim." #NT!
+ ep3_decisions_event.1000.c.aptitude: "[stolen_charioteer.GetUINamePossessive] [aptitude|E] [stolen_charioteer.GetCourtPositionAptitude( GetCourtPositionType( 'charioteer_court_position' ) )]'dir" #NT!
+ ep3_decisions_event.1000.d: "Tekrar düşündüm de..." #NT!
+  
+  # Find a Bookmaker 
+ ep3_decisions_event.1010.t: "Benim [GetCourtPositionType('bookmaker_court_position').GetNameNoTooltip|U]" #NT!
+ ep3_decisions_event.1010.desc: "Hizmetkarlarım, Hipodrom'daki araba yarışlarının bahislerini ve finansallarını yönetecek Bahisçim olarak işe almak üzere bir aday seçkisi getirdiler.\n\n[mediocre_bookmaker.GetFirstName] deneyimden yoksun, ancak yine de olumlu bir seçim olabilir. Öte yandan, [good_bookmaker.GetFirstName]'i seçmek çok tedbirli olurdu." #NT!
+ ep3_decisions_event.1010.a: "[mediocre_bookmaker.GetFirstNameNoTooltip] inancımı... ve paramı hak ediyor." #NT!
+ ep3_decisions_event.1010.a.aptitude: "[mediocre_bookmaker.GetUINamePossessive] [aptitude|E] [mediocre_bookmaker.GetCourtPositionAptitude( GetCourtPositionType( 'bookmaker_court_position' ) )]'dir" #NT!
+ ep3_decisions_event.1010.b: "[good_bookmaker.GetFirstNameNoTooltip] aradığım deneyime sahip!" #NT!
+ ep3_decisions_event.1010.b.aptitude: "[good_bookmaker.GetUINamePossessive] [aptitude|E] [good_bookmaker.GetCourtPositionAptitude( GetCourtPositionType( 'bookmaker_court_position' ) )]'dir" #NT!
+  
+  # Decision Menu Localization 
+ admin_confirmation_decision: "Valilik Onayı" #NT!
+ admin_confirmation_decision_desc: "[ROOT.Char.GetTopLiege.GetTitleAsNameNoTooltip]'ın, [ROOT.Char.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip] mahkemesi önünde düzenlenen bir törenle vali atamalarını resmen onaylaması gelenekseldir." #NT!
+ admin_confirmation_decision_tooltip: "[liege|E]'inizin düzenlediği [admin_confirmation|E] törenine katılın" #NT!
+ admin_confirmation_decision_effects: "[governorship|E]'inizin onaylanması için [THIS.Char.GetLiege.GetTitledFirstNamePossessiveRegnal] mahkemesine seyahat ediyorsunuz" #NT!
+ admin_confirmation_decision_confirm: "Tören için ayrılış" #NT!
+ admin_confirmation_grace_tt: "#weak $admin_confirmation_decision$'i birden fazla kez alamazsınız#!" #NT!
+ admin_confirmation_grace_valid_tt: "Daha önce [admin_confirmation|E] almadınız" #NT!
+ admin_confirmation_costs_refunded: "$admin_confirmation_decision$ masraf iade edildi" #NT!
+ admin_confirmation_rank_tt: "Sen bir [governor|E]'sın" #NT!
+ admin_confirmation_liege_tt: "Sen [THIS.Char.GetTopLiege.GetTitleAsNameNoTooltip]'in ([THIS.Char.GetTopLiege.GetFirstNameRegnal]) [direct_vassal|E]'ısın" #NT!
+ admin_confirmation_time_tt: "[primary_title|E]'ınızı en az #V 1#! yıl ([THIS.Char.GetPrimaryTitle.GetNameNoTier]) boyunca tuttunuz" #NT!
+ admin_confirmation_decision.tt.if_accepted: "Eğer [CHARACTER.GetLiege.GetTitledFirstName] izleyicilerinizi kabul ediyorsa:" #NT!
+  
+  # General Loc Strings 
+ admin_confirmation_event_header: "Onay:" #NT!
+  
+  # Activity Start: Liege welcomes Governor 
+ ep3_decisions_event.2001.opening: "Selamlar, muhteşem [ROOT.Char.GetTitleAsNameNoTooltip]," #NT!
+ ep3_decisions_event.2001.desc: "[confirmation_liege.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip]'a geldim ve [confirmation_vassal.GetPrimaryTitle.GetName]'nin [confirmation_vassal.GetTitleAsNameNoTooltip]'i olarak görevimin devam etmesini onaylamanızı rica ediyorum.\n\nElbette en kısa sürede sizi bekliyorum." #NT!
+ ep3_decisions_event.2001.a: "Hemen töreni ayarlayın." #NT!
+ ep3_decisions_event.2001.a.tt.court: "[royal_court|E]'inizde [confirmation_vassal.GetTitledFirstName] alırsınız" #NT!
+ ep3_decisions_event.2001.a.tt: "[confirmation_vassal.GetTitledFirstName] aldınız" #NT!
+ ep3_decisions_event.2001.b: "#EMP [confirmation_vassal.GetHerHim]#!.'yi görmek için çok meşgulüm" #NT!
+ ep3_decisions_event.2001.b.tt: "[confirmation_vassal.GetTitledFirstName]'ı gönderiyorsun" #NT!
+  
+ ep3_decisions_event.2002.opening: "[confirmation_liege.Custom2('AppropriateGreeting', ROOT.Char )]" #NT!
+ ep3_decisions_event.2002.desc: "Korkarım şu anda bir onay töreni düzenlemek için çok meşgulüm. Zamanımı birçok sorumluluk kaplıyor, eminim anlayabilirsiniz.\n\n[confirmation_vassal.GetCapitalLocation.GetBaronyNameExplicitlyNoTooltip]'a güvenli yolculuklar." #NT!
+ ep3_decisions_event.2002.a: "#EMP Ne?!#!" #NT!
+  
+  # Liege Event 
+ ep3_decisions_event.2010.t: "$admin_confirmation_event_header$ İmparatorluğun Hizmetkarı" #NT!
+ ep3_decisions_event.2010.desc: "Saray görevlilerim [ROOT.Char.Custom('GetThroneRoom')]'ı dolduruyor, orada imparatorluk görevlilerinin sonsuz bir kuyruğu bekliyor.\n\nBunların en dikkat çekeni, [confirmation_vassal.GetCapitalLocation.GetNameNoTooltip]'ten buraya gelen [confirmation_vassal.GetTitledFirstName] [confirmation_vassal.GetDynastyHouseName]. Benim [ROOT.Char.Custom2('RelationToMeShort', confirmation_vassal)]'üm [confirmation_vassal.GetPrimaryTitle.GetName]'i yönetiyor:" #NT!
+ ep3_decisions_event.2010.desc_theme_civilian: "canlı bir üretim ve ticaret merkezi," #NT!
+ ep3_decisions_event.2010.desc_theme_military: "gürültücü kışlaların ve tatbikat birliklerinin hakim olduğu bir bölge," #NT!
+ ep3_decisions_event.2010.desc_theme_frontier: "engebeli bir sınır bölgesi ve krallığın en büyük siperlerinden biri," #NT!
+ ep3_decisions_event.2010.desc_theme_imperial: "krallığın mücevheri, pek çok nadir ayrıcalığa sahip," #NT!
+ ep3_decisions_event.2010.desc_theme_naval: "tersaneler ve limanların bulunduğu bir kıyı bölgesi," #NT!
+ ep3_decisions_event.2010.desc_theme_small: "önemsiz bir öneme sahip küçük bir yerleşim yeri," #NT!
+ ep3_decisions_event.2010.desc_theme_big: "önemli bir ithalata sahip geniş bir yargı alanı," #NT!
+ ep3_decisions_event.2010.desc_theme_balanced: "krallık için çok çeşitli değere sahip makul büyüklükte bir bölge," #NT!
+ ep3_decisions_event.2010.desc_cool_foreigners: "güvenilir ev, [confirmation_vassal.GetCapitalLocation.GetCounty.GetCulture.GetEthos.GetNameNoTooltip|l] [confirmation_vassal.GetCapitalLocation.GetCounty.GetCulture.GetCollectiveNoun]" #NT!
+ ep3_decisions_event.2010.desc_weird_foreigners: "garip ev, [confirmation_vassal.GetCapitalLocation.GetCounty.GetCulture.GetEthos.GetNameNoTooltip|l] [confirmation_vassal.GetCapitalLocation.GetCounty.GetCulture.GetCollectiveNoun]" #NT!
+ ep3_decisions_event.2010.desc_same_culture: "il merkezine ev sahipliği yapıyor [ROOT.Char.GetCulture.GetCollectiveNoun]" #NT!
+ ep3_decisions_event.2010.desc_state_faith: "ve [ROOT.Char.GetPrimaryTitle.GetAdjective] [confirmation_vassal.GetCapitalLocation.GetCounty.GetFaith.GetName] taraftarları" #NT!
+ ep3_decisions_event.2010.desc_heretic_faith: "— iğrenç [confirmation_vassal.GetCapitalLocation.GetCounty.GetFaith.GetAdjective] kâfirler!" #NT!
+ ep3_decisions_event.2010.desc_accepted_faith: "— ve onların [confirmation_vassal.GetCapitalLocation.GetCounty.GetFaith.GetAdjective] inancının [ROOT.Char.GetFaith.HouseOfWorshipPlural]'ı." #NT!
+ ep3_decisions_event.2010.desc_my_faith: "— ve gerçek [ROOT.Char.GetFaith.GetAdjective] inancın güzel [ROOT.Char.GetFaith.HouseOfWorshipPlural]'ı." #NT!
+ ep3_decisions_event.2010.desc_hate: "\n\n[confirmation_vassal.GetTitledFirstNamePossessiveNoTooltip]'ın başının arkasına baktığımda bile, onun yakıcı küçümsemesini hissedebiliyorum. [confirmation_vassal.GetWomanMan] küfürler mırıldanıyor [second.Custom('quirk_neg_adverb')]... beni makam asasıyla [confirmation_vassal.GetHerHis] döverek öldürmeyi hayal ediyor." #NT!
+ ep3_decisions_event.2010.desc_love: "\n\n[second.Custom('quirk_pos_adverb')|U], [confirmation_vassal.GetTitledFirstNameNoTooltip] ritüelleri gerçekleştirir. [confirmation_vassal.GetHerHis] makam asasını alır ve [second.Custom('quirk_pos_pp')], [second.GetSheHe] sadık hizmet vermeye yemin eder." #NT!
+ ep3_decisions_event.2010.desc_decrepit: "\n\n[confirmation_vassal.GetHerHis|U] yıl değirmen taşı gibi [confirmation_vassal.GetHerHis] sırtı bükülmüş, [confirmation_vassal.GetTitledFirstNameNoTooltip] yalvarıştan ayağa kalkmaya çabalıyor. Buruşuk ihtiyarın yararlanabileceği çok fazla deneyimi var... ve umarım bunu yapmak için birkaç iyi yılı var." #NT!
+ ep3_decisions_event.2010.desc_young: "\n\nDaha yeni yeni genç olan [confirmation_vassal.GetTitledFirstNameNoTooltip], yumuşak ellerde sıkıca tutulan [confirmation_vassal.GetHerHis] makam asasıyla ayinleri seslendiriyor. Bununla birlikte, kanıtlanması gereken çok şey var..." #NT!
+ ep3_decisions_event.2010.desc_skilled: "\n\nÖnümde yalvarılan [confirmation_vassal.GetWomanMan], [confirmation_vassal.Custom('ComplimentAdjective')] dokunuşuyla hükmeder. [confirmation_vassal.GetSheHe]'nin benimsediği siyaset ne olursa olsun, [confirmation_vassal.GetHerHis]'ün kalbinde ne varsa: [confirmation_vassal.GetTitledFirstNameNoTooltip], [ROOT.Char.GetPrimaryTitle.GetTierAsNameNoTooltip]'e bir itibardır." #NT!
+ ep3_decisions_event.2010.desc_incompetent: "\n\nHerkese göre, kötü idare eden birinin, [second.Custom('quirk_neg_adverb')], atanmasını onaylıyorum. Fakat [confirmation_vassal.GetTitledFirstNameNoTooltip]'i reddetmek, çünkü [confirmation_vassal.GetSheHe], veremeyeceği mükemmel hizmeti yemin ediyor, [confirmation_vassal.GetSheHe], pek işe yaramayacak..." #NT!
+ ep3_decisions_event.2010.desc_generic_outro: "\n\n[confirmation_vassal.GetTitledFirstNameNoTooltip] derin bir şekilde eğilir, [confirmation_vassal.GetHerHis] sembolik otorite asasını alır ve [confirmation_vassal.GetHerHis] [ROOT.Char.GetTitleAsNameNoTooltip]'e sadakatle hizmet edeceğine yemin eder." #NT!
+ ep3_decisions_event.2010.a: ""İyi yönet, [confirmation_vassal.GetTitleAsNameNoTooltip]."" #NT!
+  
+  # Vassal Event 
+ ep3_decisions_event.2011.desc: "[confirmation_liege.Custom('GetThroneRoom')]'ın [confirmation_liege.GetCapitalLocation.GetTitle.GetNameNoTierPossessive] baş sarayında, [confirmation_liege.GetTitledFirstNameRegnal] — Dünya'daki [confirmation_liege.GetFaith.HighGodNamePossessive] naip — ihtişamla oturuyor.\n\n" #NT!
+ ep3_decisions_event.2011.desc_child: "Diğer üst düzey yetkililerin arasında, sivilceli yüzlü bir gencin [confirmation_liege.GetHerHis] tahtında sızlanıp kıpırdanmasını beklemek... oldukça tuhaf." #NT!
+ ep3_decisions_event.2011.desc_heretic: "[confirmation_liege.GetCapitalLocation.GetCounty.GetFaith.GetAdherentNamePlural]'in [confirmation_liege.GetPrimaryTitle.GetTierAsName]'ını yöneten putperest. Burada bile, saray [confirmation_liege.GetFaith.PriestNeuterPlural] ve din adamlarının arasında, ruh hali gergin." #NT!
+ ep3_decisions_event.2011.desc_war: "Biz yetkililer diz çöküp törenimiz başladığında, askeri görevliler sabırsızlıkla homurdanıyor. Görünüşe göre, onların savaşı bizim onurumuza pek saygı duymuyor." #NT!
+ ep3_decisions_event.2011.desc_poorly_run: "Ve kaos içinde. Saray yaratıkları kıkırdarken biz yetkililer yerimize zorla sokuluyoruz ve çok az ritüel uygulanıyor." #NT!
+ ep3_decisions_event.2011.desc_well_run: "Sonsuz bir memur kuyruğu bekliyor; hepsi hayranlık içinde, hepsi hükümdarımızın önünde diz çökmek için can atıyor." #NT!
+ ep3_decisions_event.2011.desc_gender: "A [confirmation_liege.GetWomanMan], tahtta. Ziyaret eden yetkililerin hükümdarımıza bakmasının yasak olması iyi oldu!" #NT!
+ ep3_decisions_event.2011.desc_typical_palace: "Üst düzey yetkililerden oluşan bir sıraya katılmam için karşılandım. Herkesin, müzisyenlerin ve müjdecilerin haykırışlarıyla görkemli törenlerimiz başladı." #NT!
+  
+ ep3_decisions_event.2011.desc_hate: "[confirmation_liege.GetTitleAsNameNoTooltip] bana hitap ediyor [second.Custom('quirk_neg_adverb')]; [confirmation_liege.GetSheHe] yalvaran başıma alay damlatıyor, çünkü benim regalilerim yukarıda sallanıyor.\n\n" #NT!
+ ep3_decisions_event.2011.desc_love: "Ama [confirmation_liege.GetTitleAsNamePossessiveNoTooltip] sesi sıcak ve [second.Custom('quirk_pos_adjective')], [confirmation_liege.GetSheHe] bana hitap ediyor ve kıyafetlerimi sunuyor.\n\n" #NT!
+ ep3_decisions_event.2011.desc_meh: "[confirmation_liege.GetTitleAsNameNoTooltip] sırayla her atanan kişiye hitap eder, onlara nişanlarını takdim eder ve yeminlerini alır, ta ki [confirmation_liege.GetSheHe] bana gelene kadar.\n\n" #NT!
+  
+ ep3_decisions_event.2011.desc_theme_civilian: ""[confirmation_liege.GetFaith.PositiveAfterLife]'ın huzuru [confirmation_vassal.GetPrimaryTitle.GetNameNoTier]'de yaşayabilir," diyor [confirmation_liege.GetSheHe], "o, şefkatle bakılması gereken bir bahçedir."" #NT!
+ ep3_decisions_event.2011.desc_theme_military: ""[confirmation_vassal.GetPrimaryTitle.GetNameNoTier]'ın kılıcını bileyeceksin," diyor [confirmation_liege.GetSheHe], "ve onu yalnızca doğru kişiler kullanacak."" #NT!
+ ep3_decisions_event.2011.desc_theme_frontier: ""Uyu biraz," diye emreder [confirmation_liege.GetSheHe], "Yerini koru. [confirmation_vassal.GetPrimaryTitle.GetNameNoTier], var olan her şeyin [confirmation_liege.GetPrimaryTitle.GetAdjective] yaşadığı veya öldüğü yerdir."" #NT!
+ ep3_decisions_event.2011.desc_theme_imperial: ""[confirmation_vassal.GetPrimaryTitle.GetNameNoTier]'da," der [confirmation_liege.GetSheHe], "sen [confirmation_liege.GetPrimaryTitle.GetTierAsNameNoTooltip]'nin kendisinin görüntüsü olacaksın. Kötüler hariç, çok az kişi bu tür özgürlükleri bilebilir."" #NT!
+ ep3_decisions_event.2011.desc_theme_naval: ""[confirmation_vassal.GetPrimaryTitle.GetNameNoTierPossessive] kıyılarının tuzunda," diyor [confirmation_liege.GetSheHe], "bu [confirmation_liege.GetPrimaryTitle.GetTierAsNameNoTooltip]'nin kanını kokla; dullarının gözyaşlarını gör."" #NT!
+ ep3_decisions_event.2011.desc_theme_small: ""Mütevazı bir yargı yetkisi, [confirmation_vassal.GetPrimaryTitle.GetNameNoTier]" diyor [confirmation_liege.GetSheHe], "ama değerli bir yargı yetkisi."" #NT!
+ ep3_decisions_event.2011.desc_theme_big: ""[confirmation_vassal.GetPrimaryTitle.GetNameNoTier] gibi geniş bir alan," diyor [confirmation_liege.GetSheHe], formaliteler arasında, "sadece doğru efendi tarafından evcilleştirilebilecek kudretli bir canavar..."" #NT!
+ ep3_decisions_event.2011.desc_theme_balanced: ""Göreviniz [confirmation_liege.GetFaith.HighGodName] ve [confirmation_liege.GetTitleAsNameNoTooltip] tarafından verildi," diyor [confirmation_liege.GetSheHe], "Bunu aklınızda tutun ve [confirmation_vassal.GetPrimaryTitle.GetNameNoTier]'ü iyi yönetin."" #NT!
+ ep3_decisions_event.2011.desc_outro: "\n\nTüm uygun yanıtları dile getiriyorum. Ve, hükümdarımın önünde derin bir şekilde eğilerek, sonunda eyalet otoritesinin asasını alıyorum." #NT!
+ ep3_decisions_event.2011.a: "Selam sana, [confirmation_liege.GetTitleAsNameNoTooltip]." #NT!
+  
+  # Invalidated event 
+ ep3_decisions_event.2080.t: "$admin_confirmation_event_header$ Geçersiz kılındı" #NT!
+ ep3_decisions_event.2080.desc.court: "Artık [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]'den [ROOT.Char.GetTitleAsNameNoTooltip]'ım, yolculuğuma gerek kalmadı..." #NT!
+ ep3_decisions_event.2080.desc.imprisoned_me: "$ep3_decisions_event.2080_shared_intro$ [ROOT.Char.GetImprisonedBy.GetTitledFirstName] beni hapse attı." #NT!
+ ep3_decisions_event.2080.desc.imprisoned: "$ep3_decisions_event.2080_shared_intro$ [ROOT.Char.GetImprisonedBy.GetTitledFirstName] tarafından yakalandım." #NT!
+ ep3_decisions_event.2080.desc.liege_dead_me: "$ep3_decisions_event.2080_shared_intro$ [confirmation_liege.GetTitledFirstName]'i öldürdüm... \n\n" #NT!
+ ep3_decisions_event.2080.desc.liege_dead: "$ep3_decisions_event.2080_shared_intro$ [confirmation_liege.GetTitledFirstName] [confirmation_liege.GetDeathReasonHideKiller]... \n\n" #NT!
+ ep3_decisions_event.2080.desc.liege_imprisoned_me: "$ep3_decisions_event.2080_shared_intro$ Sonunda [confirmation_liege.GetTitledFirstName]'i yakaladım!" #NT!
+ ep3_decisions_event.2080.desc.liege_imprisoned: "$ep3_decisions_event.2080_shared_intro$ [confirmation_liege.GetTitledFirstName], [confirmation_liege.GetImprisonedBy.GetTitledFirstName] tarafından ele geçirildi." #NT!
+ ep3_decisions_event.2080.desc.new_liege: "Eğer onaylanacaksam, bu yeni hükümdarım [ROOT.Char.GetLiege.GetTitledFirstNameRegnal] tarafından yapılmalıdır." #NT!
+ ep3_decisions_event.2080_shared_intro: "Onay törenim için yaptığım tüm hazırlıklardan sonra," #NT!
+ ep3_decisions_event.2080.desc: "\n\nBu kesinlikle durumu değiştiriyor." #NT!
+ ep3_decisions_event.2080.a_court: "İleriye, daha büyük şeylere." #NT!
+ ep3_decisions_event.2080.a_prison: "Kahretsin." #NT!
+ ep3_decisions_event.2080.a_liege: "En sinir bozucu..." #NT!
+ ep3_decisions_event.2080.a: "Bir şeyleri yeniden düşünmenin zamanı geldi..." #NT!
+  
+ ep3_decisions_event_costs_refunded: "$ep3_decisions_event_decision$ masraf iade edildi" #NT!
+  
+ become_landless_adventurer_decision: "Maceracı Olun" #NT!
+ become_landless_adventurer_decision_desc: "Tehlikelerini aşmak ve fırsatlarını yakalamak için yeterince cesur ve dayanıklı olanlar için geniş dünya çok şey sunabilir." #NT!
+ become_landless_adventurer_decision_tooltip: "[landed|E] [realm|E]'inizi terk edin ve bir [adventurer|E] [camp|E] oluşturun" #NT!
+ become_landless_adventurer_decision_confirm: "Hadi, ileri!" #NT!
+ become_landless_adventurer_decision_hof_tt: "[head_of_faith|E] olmamalısın" #NT!
+ become_landless_adventurer_decision_tier_tt: "[count|E] veya [duke|E] olmalısınız" #NT!
+ become_landless_adventurer_decision_domain_size_tt: "[domain|E]'ınız #V 3#! [counties|E]'ten büyük olmamalıdır" #NT!
+ become_landless_adventurer_decision_title_scope_tt: "#negative_value Tüm [landed|E] [titles|E] ve [vassals|E]'leriniz [THIS.Char.GetName]#!'e geçer" #NT!
+ become_landless_adventurer_decision_title_created_tt: "#negative_value Tüm [landed|E] [titles|E] geçişiniz yeni bir yerel [ruler|E]#!" #NT!
+  
+ wipe_slate_decision: "Silinecek Tahta" #NT!
+ wipe_slate_decision_desc: "Bir [ROOT.Char.GetWomanMan] en kötü koşullarda işlenen suçlar için sonsuza dek acı çekmek zorunda mıdır? Tüm [ROOT.Char.GetFaith.GetAdherentNamePlural]'ler kurtuluşa giden bir yola hak kazanmıyor mu?\n\nZamanla, enerjiyle ve — en önemlisi — #EMP coin#!, her türlü günah dünya tarafından affedilebilir." #NT!
+ wipe_slate_decision_tooltip: "[GetTrait('gallowsbait').GetName( GetNullCharacter )] [trait|E]'inizin olumsuz etkilerini azaltın" #NT!
+ wipe_slate_decision_confirm: "Her geçen gün daha da iyiye gidiyoruz!" #NT!
+ WIPE_SLATE_DECISION_NEXT_STEP_BUTTON: "Kurtarmak için bir Alan Seçin" #NT!
+ wipe_slate_decision_option_bandit: "Haydutluğun Temiz Lekesi" #NT!
+ wipe_slate_decision_option_trickster: "Sözünüzü Rehabilite Edin" #NT!
+ wipe_slate_decision_option_thief: "Eski Alışkanlıkların Ölmesine İzin Verin" #NT!
+ wipe_slate_decision_option_poacher: "Asil Işıkta Döküm" #NT!
+ wipe_slate_decision_option_marauder: "Vahşet Hikayelerini Bastırın" #NT!
+ wipe_slate_decision_option_gallowsbait: "Geçmişi, Geçmişi Unut" #NT!
+ wipe_slate_decision_option_gallowsbait.tt.must_have_below_max_in_all_values: "Kaldırabilmeniz için tüm [GetTrait('gallowsbait').GetName( GetNullCharacter )] parçada [EmptyScope.ScriptValue('wipe_slate_min_xp_to_remove_trait_value')]'dan az deneyime sahip olmanız gerekir" #NT!
+ wipe_slate_decision.tt.slate_wiped: "Temizlenmiş Bir Sayfa" #NT!
+ wipe_slate_decision.tt.remove_bandit: "Haydutluğa Odaklanma" #NT!
+ wipe_slate_decision.tt.remove_trickster: "Hilelere Odaklanın" #NT!
+ wipe_slate_decision.tt.remove_thief: "Hırsızlığa Odaklanma" #NT!
+ wipe_slate_decision.tt.remove_poacher: "Kaçak avcılığa odaklanın" #NT!
+ wipe_slate_decision.tt.remove_marauder: "Yağmaya Odaklanın" #NT!
+ wipe_slate_decision.tt.remove_gallowsbait: "Kalıcı Suçlara Odaklanın" #NT!
+ track_bandit_tooltip: "#WEAK Buradan birkaç vahşi doğa katliamı fersahı ve *ne kadar* zaman önce?#!\n\nLower senin [GetTrait( 'gallowsbait' ).GetTraitTrackByKey( 'bandit' ).GetName] deneyimin" #NT!
+ track_trickster_tooltip: "#WEAK Yeni bir sayfa açtım — bana güvenin.#!\n\nLower sizin [GetTrait( 'gallowsbait' ).GetTraitTrackByKey( 'trickster' ).GetName] deneyiminiz" #NT!
+ track_thief_tooltip: "#WEAK *Yıllardır* benim olmayan bir madeni paraya dokunmadım.#!\n\nLower senin [GetTrait( 'gallowsbait' ).GetTraitTrackByKey( 'thief' ).GetName] deneyimin" #NT!
+ track_poacher_tooltip: "#WEAK Elimde imkân varken açları doyurduğum için suçlanabilir miyim?#!\n\nLower senin [GetTrait( 'gallowsbait' ).GetTraitTrackByKey( 'poacher' ).GetName] deneyimin" #NT!
+ track_marauder_tooltip: "#WEAK Açıkça karalamak ve küçümsemek için tasarlanmış hayal ürünü bir hikaye. #!\n\nLower sizin [GetTrait( 'gallowsbait' ).GetTraitTrackByKey( 'marauder' ).GetName] deneyiminiz" #NT!
+ trait_gallowsbait_tooltip: "#WEAK Adım vicdanım kadar açık olsun.#!\n\nRemove Senin [GetTrait('gallowsbait').GetName( GetNullCharacter )] [trait|E]" #NT!
+  
+  #Visit Local Settlement 
+ visit_local_settlement_decision: "Ziyaret edin [ROOT.Char.Custom('LocalHoldingTypeCapitalized')]" #NT!
+ visit_local_settlement_decision_desc: "[ROOT.Char.GetWomanMan] bir adadır. [ROOT.Char.GetCurrentLocation.GetBaronyNameExplicitly]'nin yerel [ROOT.Char.Custom('LocalHoldingTypeConcept')]'ini ziyaret edelim ve bizim için neler sakladığını görelim." #NT!
+ visit_local_settlement_decision_tooltip: "Yerel [ROOT.Char.Custom('LocalHoldingTypeConcept')]'ı keşfedin" #NT!
+ visit_local_settlement_effect_intro: "Fırsatı yakalayacaksınız" #NT!
+ visit_local_settlement_effect_supplies: "\n$EFFECT_LIST_BULLET$@provisions_icon'ı satın alın![provisions|E]" #NT!
+ visit_local_settlement_effect_artifacts: "\n$EFFECT_LIST_BULLET$@artifact_icon'ı sat![artifacts|E]" #NT!
+ visit_local_settlement_effect_contracts: "\n$EFFECT_LIST_BULLET$@task_contract_icon'ı inceleyin![task_contracts|E]" #NT!
+ visit_local_settlement_effect_tavern: "\n$EFFECT_LIST_BULLET$Egzotik hikayeler dinleyin veya @followers_icon'u üye yapın![followers|E]" #NT!
+ visit_local_settlement_effect_church: "\n$EFFECT_LIST_BULLET$@health_icon'unuzu koruyun![health|E] veya @stress_loss_icon'u düşünün![THIS.Char.GetCurrentLocation.GetCounty.GetFaith.GetName]" #NT!
+ visit_local_settlement_effect_castle: "\n$EFFECT_LIST_BULLET$[THIS.Char.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTierPossessiveNoTooltip] seçkin muhafızla eğitim alın veya savaşçı @knight_icon'ı işe alın![followers|E]" #NT!
+ visit_local_settlement_effect_cheaper_supplies: "\n$EFFECT_LIST_BULLET$@provisions_icon'ı daha ucuza satın alın![provisions|E]" #NT!
+ visit_local_settlement_effect_expensive_artifacts: "\n$EFFECT_LIST_BULLET$@artifact_icon![artifacts|E] ürününü daha yüksek bir oranda sat" #NT!
+ visit_local_settlement_effect_city: "\n$EFFECT_LIST_BULLET$@rare_artifact_icon satın alın![artifacts|E] [THIS.Char.GetCurrentLocation.GetBaronyNameExplicitlyNoTooltip]'nin usta zanaatkarları tarafından yapılmıştır" #NT!
+ visit_local_settlement_tribal_holding_decision_tt: "$visit_local_settlement_effect_intro$$visit_local_settlement_effect_tavern$$visit_local_settlement_effect_supplies$$visit_local_settlement_effect_artifacts$$visit_local_settlement_effect_contracts$" #NT!
+ visit_local_settlement_church_holding_decision_tt: "$visit_local_settlement_effect_intro$$visit_local_settlement_effect_tavern$$visit_local_settlement_effect_church$$visit_local_settlement_effect_supplies$$visit_local_settlement_effect_artifacts$$visit_local_settlement_effect_contracts$" #NT!
+ visit_local_settlement_castle_holding_decision_tt: "$visit_local_settlement_effect_intro$$visit_local_settlement_effect_tavern$$visit_local_settlement_effect_castle$$visit_local_settlement_effect_supplies$$visit_local_settlement_effect_artifacts$$visit_local_settlement_effect_contracts$" #NT!
+ visit_local_settlement_city_holding_decision_tt: "$visit_local_settlement_effect_intro$$visit_local_settlement_effect_tavern$$visit_local_settlement_effect_city$$visit_local_settlement_effect_cheaper_supplies$$visit_local_settlement_effect_expensive_artifacts$$visit_local_settlement_effect_contracts$" #NT!
+ visit_local_settlement_decision_confirm: "Bu ilginç olmalı." #NT!
+ DECISION_ALREADY_VISITING_LOCAL_SETTLEMENT: "Zaten bir yerleşim yerini ziyaret ediyorsunuz" #NT!
+ DECISION_LOCAL_SETTLEMENT_SIEGED: "[CHARACTER.GetDomicile.GetLocation.GetName] [besieged|E]'dir" #NT!
+  #Excavate Treasure — Contract Decision 
+ treasure_map_contract_decision: "Hazineyi Kazmak" #NT!
+ treasure_map_contract_decision_desc: "Emekli bir maceracının son yalvarışıyla bir hazine haritası:\n\n#EMP "Yaşlanıyorum ve vücudum iflas ediyor.\nBu ulaşılması zor hazineyi bul ve bana geri getir.\nZamanım daralıyor."#!" #NT!
+ treasure_map_contract_decision_tooltip: "Hazine haritasını kullan" #NT!
+ treasure_map_contract_decision_effect_tooltip: "[travel|E]'dan [task_contract.MakeScope.Var('contract_treasure_location').GetProvince.GetBaronyNameExplicitly]'e kadar olan başlangıç, [task_contract.MakeScope.Var('contract_treasure_location').GetProvince.GetCounty.GetTitle.GetBaseNameNoTier]'ün [county|E]'sinde yer almaktadır" #NT!
+ TREASURE_MAP_CONTRACT_DECISION_NEXT_STEP_BUTTON: "Seyahati Düzenle" #NT!
+ option_travel_with_camp: "Kampla Seyahat" #NT!
+ travel_with_camp_tooltip: "$EFFECT_LIST_BULLET$[travel|E] daha pahalıdır [provisions|E]\n$EFFECT_LIST_BULLET$ [camp|E]'ünüzü [vassal_contract|E] konumuna taşımanıza olanak tanır" #NT!
+ option_travel_without_camp: "Kampsız Seyahat" #NT!
+ travel_without_camp_tooltip: "$EFFECT_LIST_BULLET$[travel|E] daha az maliyetlidir [provisions|E]\n$EFFECT_LIST_BULLET$#alert_trial #bold #! [camp|E] konumunuza [vassal_contract|E] taşıyamazsınız#!" #NT!
+ treasure_map_contract_decision_confirm: "Bakalım neler bulacağız!" #NT!
+ DECISION_ALREADY_EXCAVATING_TREASURE: "Zaten bir hazineyi kazıyorsunuz" #NT!
+  
+  
+  # Restore Backwater Counties Decision 
+ restore_backwater_counties_decision: "Geri Yükle [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]" #NT!
+ restore_backwater_counties_decision_desc: "Geçen yüzyıllar boyunca, [ROOT.Char.GetPrimaryTitle.GetNameNoTier] rezilliğe düştü ve bir zamanlar önemli olan geçmişinin utanç verici bir gölgesini temsil ediyor.\n\nAncak, atalarımızın topraklarını eski durumlarına getirmek için yorulmadan çalıştık. [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]'in ihtişamı geri getirilecek!" #NT!
+ restore_backwater_counties_decision_tooltip: "#V 50#! veya daha fazla [development|E] ile tüm [counties|E]'lerden [GetModifier('backwater_county_modifier').GetNameWithTooltip] [county_modifier|E]'i kaldırın" #NT!
+ restore_backwater_counties_decision_confirm: "Onaylamak" #NT!
+ greek_backwater_modifier_removal_tt: "[GetModifier('backwater_county_modifier').GetNameWithTooltip] ile [county|E] ve #HIGH'den büyük 50#! [development|E], [county_modifier|E]'i kaybedecektir" #NT!
+ no_backwater_counties_meet_criteria_tt: "@alert_icon! #alert_trial Şu anda hiçbir ilçe bu kriteri karşılamıyor!#!" #NT!
+  
+ greek_backwater_modifier_region: "Yunanistan" #NT!
+ backwater_county_eligible_modifier_removal_tt: "En az bir alt alemin [development|E]'ı [county|E] ile [GetModifier('backwater_county_modifier').GetName] [county_modifier|E] #V 50#! veya daha yüksektir" #NT!
+ restored_greek_theme_modifier: "Geri yüklenen tema" #NT!
+ restored_greek_theme_modifier_desc: "Bu karakter eski altın günleri geride bırakacak bir Temayı geri yükledi.\n[governor_efficiency|E]: @governor_efficiency!#P +10%#!" #NT!
+  
+ ep3_theme_not_backwater.t: "[target_theme.GetNameNoTierNoTooltip] Geri yüklendi" #NT!
+ ep3_theme_not_backwater.desc: "[target_theme.GetNameNoTierNoTooltip]'deki her [county|E], [GetModifier('backwater_county_modifier').GetName] [county_modifier|E]'ü kaybetti" #NT!
+  
+ ep3_decisions_event.3001.opening: "[ROOT.Char.GetTopLiege.Custom2('AppropriateGreeting', ROOT.Char)]" #NT!
+ ep3_decisions_event.3000.desc: "[ROOT.Char.GetPrimaryTitle.GetNameNoTier] topraklarını eski ihtişamına kavuşturmak için mükemmel bir çalışma! Gerçekten etkilendim.\n\nArtık [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] imparatorluğun itibarını zedelemeyecek." #NT!
+ ep3_decisions_event.3000.a: "Şan olsun [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]'a!" #NT!
+ restored_greek_theme_gov_efficiency_tt: "Vali Verimliliğiniz #P %10#! oranında artar" #NT!
+  
+ ep3_decisions_event.3001.t: "Yunanistan restore edildi" #NT!
+ ep3_decisions_event.3001.desc: "Konseyim ve bazı seçkin stratejistlerim ülke hakkında haber verdikçe, [ROOT.Char.Custom2('RelationToMeShort', interlocutor)] [interlocutor.GetFirstName]'im konuşuyor.\n\n"İmparatorluğun Yunan topraklarını medeniyetin kaleleri olarak tarihi statülerine geri döndürme çabalarının başarılı olduğunu belirtmekte kusur ederim, [interlocutor.Custom2('RelationToMeShort', ROOT.Char)]."\n\n"Strategoiler topraklarını geliştirmek ve böylece [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip|l]'ün şanını artırmak için durmaksızın çalıştılar!"" #NT!
+ ep3_decisions_event.3001.a: "Ülkemizin şanı bilinsin!" #NT!
+ every_county_in_greece_tt: "Yunanistan'daki her [county|E]" #NT!
+  
+ adopt_a_kennel_dog: "Bir Kulübe Köpeği Evlat Edinin" #NT!
+ adopt_a_kennel_dog_desc: "Köpek kulübesi sahibinin bu muhteşem hayvanlara söz ve hareketleriyle emir vermesini izlemek, kendimi sadık köpek arkadaşımın yanında dururken görmemi sağlıyor." #NT!
+ adopt_a_kennel_dog_tooltip: "Rahatlatmak için bir evcil köpek sahiplenin [stress|E]" #NT!
+ adopt_a_kennel_dog_confirm: "Olumlu!" #NT!
+  
+ prepare_greek_fire_dromons_decision: "Yunan Ateş Dromonlarını Hazırlayın" #NT!
+ prepare_greek_fire_dromons_decision_desc: "Boğaz'ı ateşe vermek [GetTitleByKey('b_constantinople').GetNameNoTier]'ı daha önce yıkımdan kurtardı ve bunu tekrar yapabilir. Korunaklı su kütlesi, gizli maddemiz olan sıvı ateşin güvenilir bir şekilde konuşlandırılabileceği birkaç yerden biridir.\n\nBüyük yangın sifonları üretilsin ve bir garnizon filosu silahlandırılsın." #NT!
+ prepare_greek_fire_dromons_decision_tooltip: "En öngörülemez ve kıskançlıkla korunan silahla [GetTitleByKey('b_constantinople').GetNameNoTier]'ın yakındaki [embarked|E] [armies|E]'yi tahrip etmesini sağla." #NT!
+ prepare_greek_fire_dromons_decision_confirm: "Simyacılar, çalışın — ama dikkatli olun!" #NT!
+  
+ prepare_greek_fire_dromons_constantinople_tt: "[capital|E] [GetTitleByKey('c_byzantion').GetName]'dir" #NT!
+ prepare_greek_fire_dromons_capital_unoccupied_tt: "[capital|E] [occupied|E] değildir" #NT!
+ prepare_greek_fire_dromons_no_modifier_tt: "[capital|E] zaten [GetModifier('defensive_fire_dromons_modifier').GetNameWithTooltip]'e sahip değil" #NT!
+ defensive_fire_dromons_3_years_tooltip: "Eğer [GetScheme('prepare_fire_dromons_scheme').GetTypeName] [scheme|E]'i tamamlarsanız, [GetTitleByKey('c_byzantion').GetNameNoTier] 30 yıl boyunca #high [GetModifier('defensive_fire_dromons_modifier').GetNameWithTooltip] kazanacaktır.#!" #NT!
+ defensive_fire_dromons_success_tooltip: "Başarılı olursa, [GetTitleByKey('c_byzantion').GetNameNoTier] 30 yıl boyunca #high [GetModifier('defensive_fire_dromons_modifier').GetNameWithTooltip] kazanacak#!" #NT!
+ defensive_fire_dromons_custom_desc: "[GetModifier('defensive_fire_dromons_modifier').GetNameWithTooltip] sürdüğü sürece, [GetTitleByKey('c_byzantion').GetNameNoTier] yakınındaki [embarked|E] [armies|E] düşmanı hasar görebilir" #NT!
+ defensive_fire_dromons_buildings_desc: "#weak [GetTitleByKey('b_constantinople').GetNameNoTier]'teki [GetBuilding('common_tradeport_01').GetName] ve [GetBuilding('curtain_walls_01').GetName] [building|E] satırlarını oluşturmak bu etkiyi artıracaktır#!" #NT!
+  
+ defensive_fire_dromons_modifier: "Savunma Ateş Dromonları" #NT!
+ defensive_fire_dromons_modifier_desc: "Bu limanda, devasa Yunan Ateşi sifonlarıyla donatılmış bir gemi filosu bulunmakta ve bakımı yapılmaktadır." #NT!
+ defensive_fire_dromons_modifier_custom_desc: "@alert_icon! #alert_trial Düşman [embarked|E] [armies|E] [GetTitleByKey('c_byzantion').GetNameNoTier] yakınında hasar görebilir.#!" #NT!
+  
+ ep3_decisions_event.3100.t: "Nafta, Kireç... ve Cesaret" #NT!
+ ep3_decisions_event.3100.desc: "[ROOT.Char.GetTitleAsName] olarak, kendi sularımın tartışmasız efendisi olmalıyım. Bu, [ROOT.Char.GetFaith.HighGodName] tarafından verilen bir haktır ve [ROOT.Char.GetFaith.PositiveAfterLife]'den gelen alevleri dizginlememiz, sıvı ateşe hakim olmamızla kuşatma ve saldırı yoluyla güvence altına alınmıştır.\n\nKonstantinopolis korunacaksa, rıhtımlarımız çaresiz ticaret gemilerinden daha fazlasına ev sahipliği yapmalıdır!\n\nBenim hızlı [Glossary( 'dromons', 'DROMONS_GLOSS' )]'üm nerede? Gemilerimin pruvalarına kıvılcımlar saçacak büyük alev projektörleri yapacak [Glossary( 'Kallinikos of Heliopolis', 'KALLINIKOS_GLOSS' )] gibi akıllı zanaatkarlar nerede?" #NT!
+ DROMONS_GLOSS: "Kürek ve yelkenle çalışan Bizans kadırgaları Akdeniz'de savaşmaya çok uygundu." #NT!
+ KALLINIKOS_GLOSS: "Yunan ateşinin doğru biçimini icat edenin 7. yüzyıl mimarı #bold Kallinikos#! olduğu kabul edilir." #NT!
+ ep3_decisions_event.3100.a: "Konstantinopolis'i çalıştıracağım." #NT!
+ ep3_decisions_event.3100.b: "Latinler gemilerimizi memnuniyetle inşa edeceklerdir." #NT!
+ ep3_decisions_event.3100.c: "Kendini yakmaya meyilli bir filo mu inşa edeceksin? Hayır." #NT!
+  
+  #Retake Eastern Provinces 
+ retake_eastern_provinces_decision: "Theodosius Sınırlarını Yeniden Oluşturmak" #NT!
+ retake_eastern_provinces_decision_desc: "İmparator [GetScriptedCharacterByHistoryID( '70534' ).GetFirstName] Roma İmparatorluğunu iki idari yarıya böldüğünde, Doğu kısmı en büyük oğlu [GetScriptedCharacterByHistoryID( '70519' ).GetFirstName]'e gitti. Biz onun doğrudan halefleriyiz. Ancak, [Glossary( 'Pars', 'PARS_ORIENTIS_GLOSS' )]'mizin sınırları o günlerden beri büyük ölçüde daraldı; bir Basileus'un [GetScriptedCharacterByHistoryID( '70534' ).GetFirstNameNoTooltip]'ün bize başlangıçta bıraktığı sınırları yeniden kurması büyük bir şan ve şerefe vesile olacaktır." #NT!
+ retake_eastern_provinces_decision_tooltip: "Doğu Roma'nın orijinal sınırlarını yeniden tesis etmek" #NT!
+ retake_eastern_provinces_decision_confirm: "Yeni sınırları resmileştirin" #NT!
+ eastern_kingdoms_held_or_vassals_tt: "Aşağıdaki [kingdom|E] unvan oluşturulursa, bunları elinizde tutmalısınız veya sahipleri sizin [vassals|E]'iniz olmalıdır: \n$EFFECT_LIST_BULLET$ [GetTitleByKey('k_bulgaria').GetName] \n$EFFECT_LIST_BULLET$ [GetTitleByKey('k_epirus').GetName] \n$EFFECT_LIST_BULLET$ [GetTitleByKey('k_hellas').GetName] \n$EFFECT_LIST_BULLET$ [GetTitleByKey('k_thessalonika').GetName] \n$EFFECT_LIST_BULLET$ [vassals|E]1 \n$EFFECT_LIST_BULLET$ [vassals|E]3 \n$EFFECT_LIST_BULLET$ [vassals|E]5 \n$EFFECT_LIST_BULLET$ [vassals|E]7 \n$EFFECT_LIST_BULLET$ [vassals|E]9 \n$EFFECT_LIST_BULLET$ $EFFECT_LIST_BULLET$1 \n$EFFECT_LIST_BULLET$ $EFFECT_LIST_BULLET$3 \n$EFFECT_LIST_BULLET$ $EFFECT_LIST_BULLET$5" #NT!
+ every_county_in_theodosian_region: "[GetTitleByKey('e_byzantium').GetName], [GetGeographicalRegion('custom_theodosian_ere').GetName]'teki her [kingdom|E] unvanının [de_jure|E] hükümdarı olur" #NT!
+ ep3_decisions_event.4000.t: "Theodosius'un Sınırları" #NT!
+ ep3_decisions_event.4000.desc: "Yüzyıllar boyunca, İkinci Roma - bizim görkemli Bizans'ımız - geri çekildi, Eyalet üstüne Eyalet kaybetti, ama artık değil!\n\nBugün kutlanacak bir gün, çünkü [Glossary( 'Pars Orientis', 'PARS_ORIENTIS_GLOSS' )] eski ihtişamına ve genişlemesine geri döndü. Tıpkı Büyük [GetScriptedCharacterByHistoryID( '70534' ).GetFirstName]'in ilk oğluna verdiği gibi, Konstantinopolis'in saltanatı Moesia'dan Mısır'a ve Sirenayka'dan Suriye'ye kadar uzanıyor.\n\nMuzaffer bir [ROOT.Char.GetTitleAsNameNoTooltip] için birleşik bir imparatorluk!" #NT!
+ ep3_decisions_event.4000.a: "Her yerdeki Romalılar için muhteşem bir gün!" #NT!
+ PARS_ORIENTIS_GLOSS: "#bold Pars Orientis#! — "Doğu Parçası" — Doğu Roma İmparatorluğu'nun orijinal Latince adıdır. Bu ad, resmi veya siyasi bir bölünme olmaksızın yalnızca idari bir bölünmeyi ima eder." #NT!
+  #Pandidakterion 
+ refound_pandidakterion_decision: "Pandidakterion'u yeniden kurdu" #NT!
+ refound_pandidakterion_decision_desc: "İmparator [GetScriptedCharacterByHistoryID( '70533' ).GetFirstName], MS 425'te dünyanın en büyük çalışma merkezlerinden biri olan [Glossary( 'Pandidakterion', 'PANDIDAKTERION_GLOSS' )]'i kurdu. O zamandan bu yana yüzyıllar geçti ve zaman değişti. Pandidakterion'un insan bilgisinin ön saflarında olmaya devam etmesini istiyorsak, kurumun yenilenmesi ve yeniden düzenlenmesi gerekiyor." #NT!
+ refound_pandidakterion_decision_tooltip: "Eski Konstantinopolis Üniversitesi'ni genişletin ve yeniden düzenleyin" #NT!
+ refound_pandidakterion_decision_confirm: "Başlayın" #NT!
+ chancellor_domestic_affairs_opinion_pandidakterion_bonus_desc: "\n$TAB$$pandidakterion_university_modifier$: #P +[SCOPE.ScriptValue('chancellor_domestic_affairs_opinion_pandidakterion_bonus')|2]#!" #NT!
+ task_organize_levies_pandidakterion_bonus_desc: "\n$TAB$$pandidakterion_university_modifier$: #P +[SCOPE.ScriptValue('marshal_organize_levies_pandidakterion_bonus')|1]%#!" #NT!
+ task_organize_levies_maintenance_pandidakterion_bonus_desc: "\n$TAB$$pandidakterion_university_modifier$: #P -[SCOPE.ScriptValue('task_organize_levies_maintenance_pandidakterion_bonus')|1]%#!" #NT!
+ PANDIDAKTERION_GLOSS: ""Tüm öğretilerin yeri" anlamına gelen #bold Pandidakterion#!,, MS 425'te II. Theodosius tarafından kurulmuş ve yarısı Latince, yarısı Yunanca olmak üzere 31 kürsüye ev sahipliği yapmıştır. 1046'da IX. Constantinus tarafından yeniden kurulmuş ve 1453'teki Osmanlı fethine kadar varlığını sürdürmüştür." #NT!
+ pandidakterion_tt: "[GetTitleByKey('c_byzantion').GetName]'a sahipsin" #NT!
+  #Crusades 
+ ask_western_help_decision: "Destek İsteyin" #NT!
+ ask_western_help_decision_desc: "Bizans her zaman Hristiyanlığın en doğudaki kalesi olmuştur, ancak Gerçek İnancın düşmanlarına karşı verilen mevcut savaş bizi güç ve kaynaklardan mahrum bırakıyor. Hristiyanlığın diğer dallarıyla ilişkilerimiz kolay olmasa da, gururumuzu yutup Mesih'teki kardeşlerimizden yardım istemenin zamanı gelmiş olabilir." #NT!
+ ask_western_help_decision_tooltip: "Başka bir dine mensup Hristiyan kardeşlerimizle iletişime geçin ve onlardan destek isteyin" #NT!
+ ask_western_help_decision_confirm: "Mektubu gönder" #NT!
+ ep3_decisions_event.4010.t: "[caller.Custom2('AppropriateGreeting', called )]" #NT!
+ ep3_decisions_event.4010.desc: "[called.Custom('SisterBrother')|U] Mesih'te, Hristiyanlığın Doğu kalesi olarak konumumuz, sadakatsizlere karşı yürütülen mevcut savaşın kaynaklarımızı zorlaması nedeniyle tehlike altındadır.\n\nLütfen ortak düşmanı püskürtmemize yardım edin." #NT!
+ ep3_decisions_event.4010.a: "Doğru teşvik için size yardımcı olacağız!" #NT!
+ ep3_decisions_event.4010.b: "Sizi [ROOT.Char.GetFaith.GetReligiousHeadTitle.GetNameNoTooltip]'ın otoritesine emanet etmeliyiz." #NT!
+ ep3_decisions_event.4010.b.tt_2: "Hıristiyan âleminin sapkın kardeşlerine ne tür bir yardım sunabileceğine yalnızca [ROOT.Char.GetFaith.GetReligiousHead.GetSheHe] karar verebilir." #NT!
+ ep3_decisions_event.4010.b.tt: "[ROOT.Char.GetTitledFirstNameNoTooltip] soruyor [ROOT.Char.GetHerHis] İnancın Başı" #NT!
+ ep3_decisions_event.4010.c: "Üzgünüz, size yardımcı olamıyoruz." #NT!
+ ep3_decisions_event.4010.c.tt: "[called.GetTitledFirstNameNoTooltip|U] yardım etmeyi reddetti" #NT!
+ ep3_decisions_event.4011.b: "Eğer siz de onlara destek olmayı taahhüt ederseniz, Mesih'in Ordusu sizinle birlikte yürüyecektir!" #NT!
+ ep3_decisions_event.4011.c: "Biz sapık müminlere yardım edemeyiz." #NT!
+ ep3_decisions_event.4012.t: "[sponsor.Custom2('AppropriateGreeting', called )]" #NT!
+ ep3_decisions_event.4012.desc: "[caller.GetTitledFirstName]'dan yardım çağrısı aldım. İnançlarında sapkın olsalar da, [caller.GetHerHis] halkı hala Mesih'teki kardeşlerimizdir ve uzun zamandır Hristiyanlığın Doğu kalesi olarak hareket etmektedirler.\n\nOnlara yardım eli uzatmanın bir yolu var mı?" #NT!
+ ep3_decisions_event.4012.a: "Yardım edeceğiz ama bedava değil." #NT!
+ ep3_decisions_event.4012.a.tt: "[pope.GetTitledFirstNameNoTooltip] yardım gönderecek" #NT!
+ ep3_decisions_event.4012.b: "Destek sözü verirlerse, Mesih Ordusu onlarla birlikte yürüyecektir!" #NT!
+ ep3_decisions_event.4012.b.tt: "[pope.GetTitledFirstNameNoTooltip] yerine [pope.GetFaith.Custom('GHWName')] gerekebilir!" #NT!
+ ep3_decisions_event.4013.t: "[called.Custom2('AppropriateGreeting', caller )]" #NT!
+ ep3_decisions_event.4013.desc: "Mesih'teki kardeşlerimizin yalvarışını duyduk ve yardım etmek istiyoruz. Desteğinizi taahhüt ederseniz, Hristiyanlık orduları kutsal bir [pope.GetFaith.Custom('GHWName')]'da savunmanızda birleşecektir!" #NT!
+ ep3_decisions_event.4013.a: "Teklifinizi kabul ediyorum." #NT!
+ ep3_decisions_event.4013.a.tt: "@gold_icon![caller.MakeScope.ScriptValue('massive_gold_value')|V0]'ı [pope.GetFaith.Custom('GHWName')] savaş sandığına göndermeyi taahhüt ediyorsunuz." #NT!
+ ep3_decisions_event.4013.b: "Benim istediğim bu değildi!" #NT!
+ ep3_decisions_event.4013.b.tt: "[caller.GetTitledFirstNameNoTooltip|U] geri çekildi" #NT!
+ ep3_decisions_event.4014.desc: "Minnettar bir kalple, yardım teklifinizi kabul ediyoruz ve destek ordularının gelişini sabırsızlıkla bekliyoruz.\n\nLütfen acele edin." #NT!
+ ep3_decisions_event.4014.a: "#EMP Tanrı'nın Gücü!#!" #NT!
+ ep3_decisions_event.4014.a.tt: "[pope.GetTitledFirstNameNoTooltip], [pope.GetFaith.Custom('GHWName')] çağrısı yaptı!" #NT!
+ ep3_decisions_event.4015.desc: "Mesih'teki kardeşlerimizin yalvarışını duyduk ve çektiğiniz acılar için yüreğimiz kan ağlıyor. Ancak yardım ucuza gelmez.\n\nEğer çabalarımızı maddi bir tazminatla desteklerseniz, size yardım için birlikler göndermeyi taahhüt ederiz." #NT!
+ ep3_decisions_event.4015.a: "Öyle olsun." #NT!
+ ep3_decisions_event.4015.b: "Ben herhangi bir koşul istemedim." #NT!
+ ep3_decisions_event.4015.a.tt: "[caller.GetTitledFirstNameNoTooltip|U] teklifinizi kabul etti" #NT!
+ called_for_help_fervor: "İhtiyaç İçindeki Hristiyan Kardeşler" #NT!
+ ep3_religious_volunteers_army: "Dini Gönüllüler" #NT!
+ valid_primary_war_enemy_for_crusade: "Düşman [war_leader|E] Hristiyan değildir ve ya [kingdom|E] unvanına sahiptir ya da [kingdom|E]'in bir parçasıdır" #NT!
+ ask_western_help_decision_effect_desc: "Farklı bir dine mensup bir Hristiyan lidere askeri yardım için bir dilekçe göndereceksiniz. Asker karşılığında altın isteyebilirler veya reddedebilirler. Eğer bir [head_of_faith|E] dahil olursa, mesele Büyük Kutsal Savaş'a dönüşebilir!\n\nKararın 20 yıllık bir bekleme süresi vardır." #NT!
+ valid_realm_size_for_help: "[realm_size|E]'ınız #N'den az 84#! ilçe" #NT!
+ recently_asked_for_help: "Zaten 20 yıldır kararını vermişsin!" #NT!
+ there_is_someone_to_ask_for_help: "Hala yardım isteyebileceğiniz biri var" #NT!
+  #Proselytize 
+ evangelize_the_slavs_decision: "Paganları Evanjelize Etmek" #NT!
+ evangelize_the_slavs_decision_desc: "Tek Gerçek İnancın emanetçisi olarak, putperestleri müjdelemek ve onları Mesih'teki genç kardeşlerimiz olarak Kilisemizin katına kabul etmek [GetTitleByKey('e_byzantium').GetNamePossessive] görevimizdir. Bu, sınırlarımızın hemen ötesinde yaşadıkları ve imparatorluğun bütünlüğünü ve güvenliğini tehdit ettikleri için daha da önemlidir." #NT!
+ evangelize_the_slavs_decision_tooltip: "Komşu putperestleri dönüştürmek için bir misyoner gönderin" #NT!
+ evangelize_the_slavs_decision_confirm: "Misyoneri gönder" #NT!
+ evangelize_the_slavs_decision_effect: "Pagan inancına sahip komşu bir yöneticiyi döndürmeye çalışmak için bir misyoner göndereceksin.\n$EFFECT_LIST_BULLET$Eğer misyoner başarılı olursa, senin [faith|E]'ine dönüşecek ve senin [allies|E]'n olacak. [legend_seed|E] kazanacaksın.\n$EFFECT_LIST_BULLET$Müjdeleme çabasına katılmak o kadar prestijli bir çaba olarak görülüyor ki misyonerin başarısız olsa bile sen [influence|E] ve [prestige|E] kazanacaksın." #NT!
+ ep3_decisions_event.4020.t: "[pagan.GetCulture.GetCollectiveNounNoTooltip]'ı müjdelemek" #NT!
+ ep3_decisions_event.4020.desc: "Cennetin Krallığı sadık olanlara aittir, ancak komşumuz [pagan.GetTitledFirstName] bundan habersizdir ve [pagan.GetHerHis] hurafelere ve sahte tanrılara inanmaya devam etmektedir.\n\n[pagan.GetHerHis] ruhu ve [pagan.GetHerHis] kişinin ruhunu kurtarmak kendi başına asil bir çabadır, ancak onların dönüşümünün #EMP dünyevi#! avantajları da vardır — başlangıç ​​olarak, bize karşı düşmanlıklarını azaltmak ve onları kendi etki alanımıza dahil etmek.\n\nSeçtiğim misyoner [evangelizer.GetFirstName] gitmeye hazır." #NT!
+ ep3_decisions_event.4020.a: "[ROOT.Char.GetFaith.HighGodName] sana yol göstersin!" #NT!
+ ep3_decisions_event.4020.a.tt: "[evangelizer.GetFirstNameNoTooltip], [pagan.GetTitledFirstNamePossessiveNoTooltip] başkentine hareket ediyor." #NT!
+ ep3_decisions_event.4022.desc: "Komşularımızdan gelen elçiler yeterince sık gelip gidiyorlar ki hepsi zihnimde birbirine karışıyor. Ancak, bugünün [GetTitleByKey('e_byzantium').GetName]'dan gelen elçisi daha önce hiç olmadığı kadar göze çarpıyor.\n\n[evangelizer.GetSheHe|U], başlangıç ​​olarak bir tür kutsal [evangelizer.GetWomanMan] gibi görünüyor ve bu [evangelizer.GetFirstName], siyasi talepleri ilerletmek yerine, her zaman tütsü kokan altın ve gümüş tapınaklarda onurlandırılan her şeye gücü yeten bir Tanrı'dan bahsediyor." #NT!
+ ep3_decisions_event.4022.a: "Lütfen bana daha fazlasını anlat." #NT!
+ ep3_decisions_event.4022.a.tt: "[evangelizer.GetTitledFirstNamePossessiveNoTooltip] ile [alliance|E] yaratırsınız efendim, [sender.GetTitledFirstName]" #NT!
+ ep3_decisions_event.4022.b: "Yeni tanrılara ihtiyacımız yok." #NT!
+ ep3_decisions_event.4022.c: "Gülünç bir küfür!" #NT!
+ ep3_decisions_event.4022.c.tt: "Bu kesinlikle bir mesaj gönderecektir: Vaizleriniz burada hoş karşılanmıyor! Ancak misillemeye hazır olmalıyız..." #NT!
+ ep3_decisions_event.4025.desc_new: "Benden önceki [sender.GetFirstName], [pagan.GetCulture.GetCollectiveNounNoTooltip]'in evanjelizmine yatırım yapmıştı ama ne yazık ki [sender.GetHerHim] için, [sender.GetHerHis] çabalarının meyvelerini toplayacak olan ben olacağım. [sender.GetHerHis|U] misyoneri [evangelizer.GetFirstName] ise, aslında yeni döndü." #NT!
+ ep3_decisions_event.4025.desc_old: "Aylar önce, Tanrı bilgisini [pagan.GetCulture.GetCollectiveNounNoTooltip]'e getirmesi için güvenilir [evangelizer.GetFirstName]'ımı gönderdim. [evangelizer.GetHerHis] raporunu sabırsızlıkla beklediğim için bugün [sender.GetHerHim]'yi geri karşılamaktan büyük bir mutluluk duyuyorum." #NT!
+ ep3_decisions_event.4025.desc_success: "\n\n"Harika haberler getirdim efendim! [pagan.GetTitledFirstName|U], Müjdeli Haber'i duymaya can atıyordu ve [evangelizer.GetFaith.GetName]'e dönüştü, beraberinde [pagan.GetHerHis] kişiden birçoğu da vardı."" #NT!
+ ep3_decisions_event.4025.desc_failure: "\n\n"Kötü haberler getirdim efendim. Ne yazık ki, [pagan.GetTitledFirstName] Tanrı'nın Sözü'ne karşı duyarsızdı ve beni eli boş gönderdi."" #NT!
+ ep3_decisions_event.4025.a: "Harika!" #NT!
+ ep3_decisions_event.4025.b: "Bu sadece geçici bir aksilik." #NT!
+ ep3_decisions_event.4026.desc: "Korkunç haberler!\n\n[pagan.GetCulture.GetCollectiveNounNoTooltip] ülkesinden haberler geldi ve görünüşe göre misyonerim [evangelizer.GetFirstName] öldürüldü ancak herhangi bir din değiştirme girişimini azarlamakla yetinmeyen ve hatta Tanrı'ya karşı son saygısızlığı ve cinayeti işleyen barbar [pagan.GetTitledFirstName] [evangelizer.GetWomanMan]!" #NT!
+ ep3_decisions_event.4026.a: "Çok çirkin!" #NT!
+ valid_neighboring_and_across_water_top_liege: "Herhangi bir komşu büyük yönetici: $valid_for_conversion_tt$" #NT!
+ valid_neighboring_and_across_water_realm_same_rank: "Aynı rütbedeki herhangi bir komşu hükümdar: $valid_for_conversion_tt$" #NT!
+ valid_for_conversion_tt: "\n$EFFECT_LIST_BULLET$[GetFaithDoctrine('unreformed_faith_doctrine').GetBaseName] [GetReligionFamily('rf_pagan').GetName] [faith|E]\n$EFFECT_LIST_BULLET$[war|E]'te değil\n$EFFECT_LIST_BULLET$Daha önce bir dönüşüm girişimini şiddetle reddetmedi" #NT!
+ negotiated_alliance_delay_tt: "İttifak, [evangelizer.GetNameNoTooltip]'ın [evangelizer.GetHerHis] hükümdarına dönmesiyle birlikte yürürlüğe girecek." #NT!
+ ep3_decisions_event.4025.a.tt: "Yeni dönüştürülmüş [pagan.GetTitledFirstName] ile bir [alliance|E] yaratırsınız." #NT!
+ ep3_decisions_event.4023.t: ""
+ ep3_decisions_event.4023.desc: ""
+ ep3_decisions_event.4023.a: ""
+  #Recreate the ERE 
+ recreate_byzantine_empire_decision: "Bizans İmparatorluğunu yeniden kurmak" #NT!
+ recreate_byzantine_empire_decision_desc: "[GetTitleByKey('e_byzantium').GetName]'ın parçalanması halkımız için eşi benzeri görülmemiş bir trajediydi, ancak mücadele etmeye devam ettik. Sonuçta, tek bir [Glossary( 'Romaios', 'ROMAIOS_GLOSS' )] ayakta kaldığı sürece, Roma ayakta kalır.\n\nBir gün, meşru bir hükümdar tekrar Konstantinopolis tahtına oturacak ve İmparatorluk yeniden yükselecek." #NT!
+ recreate_byzantine_empire_decision_tooltip: "[GetTitleByKey('e_byzantium').GetName]'ı yaratın ve eski geleneklerini yeniden canlandırın" #NT!
+ recreate_byzantine_empire_decision_confirm: "Roma yükseliyor!" #NT!
+ ep3_decisions_event.4030.t: "Yeniden Doğan Bir İmparatorluk" #NT!
+ ep3_decisions_event.4030.desc: "İnananların ölümüyle, retorik ateşiyle, [ROOT.Char.GetFaith.HighGodName] — #EMP [GetTitleByKey('e_byzantium').GetName|U]'nin iradesiyle bir kez daha canlanıyor!#!\n\nI Kentlerin Kraliçesi'ne bakıyorum, Marmara'dan gelen ılık bir esinti, saltanat cübbemle oynuyor. Kutsal Bilgeliğin büyük evinden güzel şarkılar yankılanıyor. Vatandaşlar sokaklarda dans ediyor, minnettarlığa ve neşeye ses veriyor.\n\nDünyanın düşmüş [Glossary( 'Romaioi', 'ROMAIOS_GLOSS' )]'ü hor gördüğü utanç günlerimiz kesinlikle sona ermeli. Meşru bir [ROOT.Char.GetTitleAsNameNoTooltip] bir kez daha [GetScriptedCharacterByHistoryID( '70523' ).GetFirstName]'nın tahtına oturuyor.\n\n#EMP Ben.#!" #NT!
+ ep3_decisions_event.4030.a: "Roma'nın ihtişamı büyümeye devam edecek!" #NT!
+ ROMAIOS_GLOSS: "#bold Romaioi#! (tekil #bold Romaios#!), Romalıların kendilerine verdiği ad olan #bold Romani#!'in Yunanca çevirisidir. Orta Çağ boyunca Bizanslılar kendilerini Romalı olarak tanımladılar ve imparatorluklarına #EMP Basileia ton Romaion#!, yani Romalıların İmparatorluğu adını verdiler." #NT!
+  #Varangian Guard 
+ found_varangian_guard_decision: "Varangian Muhafızlarını buldu" #NT!
+ found_varangian_guard_decision_desc: "Yıllardır, Kuzey'in en ücra köşelerinden gelen savaşçılar, zenginliklerimiz tarafından cezbedilerek Konstantinopolis'te toplandılar. Paralı asker olarak hizmetlerini sunuyorlar, bu sanatta çok iyiler ve para kazanmaktan ve kendi gururlarından başka hiçbir sadakatleri yok. Onların varlığını İmparator'un etrafında organize edebilseydik, kişisel hizmetimizde yenilmez bir askeri güç elde ederdik!" #NT!
+ found_varangian_guard_decision_tooltip: "$found_varangian_guard_decision$" #NT!
+ found_varangian_guard_decision_confirm: "İşe alıma başlayın" #NT!
+ unlocked_varangian_guard_desc: "[GetTitleByKey('e_byzantium').GetName] karşılığında [court_position|E] $akolouthos_court_position$ ve [GetMaA('varangian_guards').GetName] [men_at_arms|E]'ü açar." #NT!
+ unlocked_varangian_guard_desc_tt: "Varangian Muhafızları Kuruldu" #NT!
+  #Grain Dole 
+ reinstitute_grain_dole_decision: "Tahıl Yardımını Yeniden Başlatın" #NT!
+ reinstitute_grain_dole_decision_desc: "Yüzyıllar boyunca, Roma ve daha sonra Konstantinopolis vatandaşları, Dünya Başkenti'nde yaşamanın en büyük avantajından yararlandılar: düzenli olarak ücretsiz veya fiyat kontrollü ekmek dağıtımı. Bu gelenek, Roma'nın Ambarı olan Mısır ile birlikte kayboldu, ancak onu yeniden canlandıracak herhangi bir İmparator, kitleler arasındaki popülerliklerini hemen artıracaktı." #NT!
+ reinstitute_grain_dole_decision_tooltip: "Başkent halkına ekmek dağıtımı başlatıldı" #NT!
+ reinstitute_grain_dole_decision_confirm: "Ambarları açın!" #NT!
+ constantinople_is_capital: "[GetTitleByKey('c_byzantion').GetName|U] sizin [capital|E]'inizdir" #NT!
+ enough_granaries_in_egypt: "[GetGeographicalRegion('custom_roman_aegyptus').GetName] bölgesindeki en az 3 ilçe [GetBuilding('cereal_fields_05').GetName] veya daha yüksek inşa etti" #NT!
+ MODIFIER_DEFINITION_VALUE_PER_EGYPT_GRANARY: "_t#weak [GetBuilding('cereal_fields_05').GetName] inşa başına artış [GetGeographicalRegion('custom_roman_aegyptus').GetName]#!" #NT!
+ MODIFIER_DEFINITION_MAIN_DESC_PER_EGYPT_GRANARY: "Bu değiştirici [GetGeographicalRegion('custom_roman_aegyptus').GetName] ($MULTIPLIER|+=0$)'de inşa edilen [GetBuilding('cereal_fields_05').GetName] başına artar, #V 10#!'te maksimuma ulaşır" #NT!
+ grain_dole_already_active: "Tahıl Yardımı zaten aktif!" #NT!
+ unlocked_grain_dole: "Tahıl Yardımını yenilemek daha ucuz" #NT!
+ ep3_decisions_event.4040.t: "Tahıl Yardımı" #NT!
+ ep3_decisions_event.4040.desc: "Halkın, kadim ve sevilen Tahıl Yardımı geleneğinin Konstantinopolis'e geri dönmesiyle kutlama yapmak için her türlü nedeni var!\n\n#EMP my#! çabaları sayesinde bir kez daha dünyanın başkenti olan Konstantinopolis, tıpkı yüzyıllar önce olduğu gibi Mısır'dan sürekli olarak ucuz tahıl akışı alıyor.\n\nVe kadim şairin yerinde bir şekilde söylediği gibi, sıradan insanları mutlu etmek için ihtiyacımız olan tek şey ekmek ve oyunlar!" #NT!
+ ep3_decisions_event.4040.a: "Ekmek yesinler!" #NT!
+ reconfirm_grain_dole_decision: "Tahıl Yardımını Yeniden Onaylayın" #NT!
+ reconfirm_grain_dole_decision_desc: "Resmen yeniden tanıtılmasının ardından, Konstantinopolis vatandaşları Grain Dole'un sunduğu lükslere alıştılar - ücretsiz veya fiyat kontrollü ekmeğin düzenli dağıtımı. Herhangi bir İmparatorun elinde halkının üretkenliğini ve kendi popülerliğini garanti altına almak için güçlü bir araçtır." #NT!
+ reconfirm_grain_dole_decision_tooltip: "Başkent halkına ekmek dağıtımını yeniden teyit edin" #NT!
+ reconfirm_grain_dole_decision_confirm: "$reinstitute_grain_dole_decision_confirm$" #NT!
+ reconfirm_grain_dole_decision_tt: "Tahıl Yardımı Yeniden Onaylandı" #NT!
+  
+  # Consolidate Rule 
+ consolidate_rule_decision: "Kuralı Birleştir" #NT!
+ consolidate_rule_decision_desc: "[head_of_faith|E]'ınızdan taht iddianızı tekrarlamasını isteyin. Sonuçta, siz onların en büyük destekçisisiniz." #NT!
+ consolidate_rule_decision_tooltip: "[legitimacy|E]'inizi artırmak için [head_of_faith|E]'ınıza dilekçe verin" #NT!
+ ep3_consolidated_rule_modifier: "Bütünleşik Kural" #NT!
+ consolidate_rule_decision_effect_tt: "#V 15#! yıl boyunca [GetModifier( 'ep3_consolidated_rule_modifier' ).GetNameWithTooltip] kazanın veya #positive_value [legitimacy_i][EmptyScope.ScriptValue('major_legitimacy_gain')|0]#!" #NT!
+ consolidate_rule_decision_confirm: "Halkı toplayın!" #NT!
+ ep3_decisions_event.4050.t: "Kural: Konsolidasyon" #NT!
+ ep3_decisions_event.4050.desc.intro: "[ROOT.Char.GetFaith.HouseOfWorship]'ın sakinliği, burada kutlama yapmak için toplanmış bir sürü saray mensubu, vali ve köylü tarafından bozuldu... #EMP ben!#!\n\n" #NT!
+ ep3_decisions_event.4050.desc.hate: "[head_of_faith.GetTitledFirstName] bana büyük bir hoşnutsuzlukla bakıyor — kükreyen hakaretlerin [head_of_faith.GetHerHis] ağzından çıkmasını engelleyen tek şey en temel nezaket kuralları." #NT!
+ ep3_decisions_event.4050.desc.other: "[head_of_faith.GetTitledFirstName] bana doğru işaret ediyor, [head_of_faith.GetHerHis]'in yüzünde hoş geldiniz gülümsemesi var ve ben [head_of_faith.GetHerHim]'ye yaklaşıyorum. "En sevgili [ROOT.Char.GetTitleAsNameNoTooltip]'üm," [head_of_faith.GetSheHe] beni selamlıyor." #NT!
+ ep3_decisions_event.4050.desc.outro: "\n\n"Bugün [ROOT.Char.GetFaith.HighGodName]'a bizi koruyan böylesine nazik bir koruyucuya sahip olduğu için teşekkür ediyoruz," diye devam ediyor [head_of_faith.GetSheHe], kalabalığa hitap ederek, "[ROOT.Char.GetHerHis]'nin saltanatı uzun ve müreffeh olsun!"" #NT!
+ ep3_decisions_event.4050.a: "#EMP uzunluğunda olmasını isterim#!." #NT!
+ ep3_decisions_event.4050.b: "Ben refahın ateşli bir savunucusuyum." #NT!
+ ep3_decisions_event.4050.c: "Sadece kime hizmet ettiğinizi hatırlayın." #NT!
+  
+ change_state_faith: "Devlet İnancını Değiştir" #NT!
+ change_state_faith_decision_desc: "[state_faith|E]'ı yeniden şekillendirmek cesur bir hareket. [ROOT.Char.GetPrimaryTitle.GetTierAsNamePossessiveNoTooltip|l] manevi geleneğini vizyonuma uyacak şekilde yeniden şekillendirmek... Şüphesiz ki alemin kimliğini ve [ROOT.Char.GetTitleAsNameNoTooltip] olarak mirasımı yeniden tanımlayacak." #NT!
+ change_state_faith_decision_selection_tooltip: "[ROOT.Char.GetPrimaryTitle.GetName|l] için yeni bir [state_faith|E] oluşturun" #NT!
+ change_state_faith_confirm: "[ROOT.Char.GetPrimaryTitle.GetNameNoTooltip|l]'ın [ROOT.Char.GetFaith.GetNameNoTooltip]'i kucaklamasına izin verin!" #NT!
+ change_state_faith_effect_tt: "[THIS.Char.GetPrimaryTitle.GetName|l]'in [state_faith|E]'ı [THIS.Char.GetFaith.GetName|V]'ye dönüşür" #NT!
+ vassals_change_state_faith: "En az #P 30#! [opinion|E]'ünüzle birlikte her [GetVassalStance( 'zealot' ).GetName] [vassal|E] olmayan ([THIS.ScriptValue('number_vassals_converting_to_new_state_faith')|V0])" #NT!
+  
+ adopt_state_faith: "Devlet İnancını Benimse" #NT!
+ adopt_state_faith_decision_desc: "[ROOT.Char.GetTopLiege.GetPrimaryTitle.GetTierAsNameNoTooltip|l]'in [state_faith|E]'ını benimsemek bir dönüm noktasıdır. Ruhsal yolumu [ROOT.Char.GetTopLiege.GetPrimaryTitle.GetTierAsNamePossessiveNoTooltip|l] ile hizalamak, [ROOT.Char.GetTitleAsNameNoTooltip] olarak konumumu güçlendirecek ve şüphesiz öznelerimle daha derin bir bağ kuracaktır." #NT!
+ adopt_state_faith_decision_selection_tooltip: "[ROOT.Char.GetTopLiege.GetPrimaryTitle.GetName|l]'in [state_faith|E]'ını benimseyin" #NT!
+ adopt_state_faith_confirm: "İnançla da hizmet edeyim [ROOT.Char.GetTopLiege.GetPrimaryTitle.GetNameNoTooltip|l]." #NT!
+ every_governor_of_state_faith: "Her [THIS.Char.GetTopLiege.GetPrimaryTitle.MakeScope.Var('state_faith').Faith.GetAdjective] [vassal|E]" #NT!
+  
+  # Found Salon 
+ found_salon_decision: "Bulunan Salon" #NT!
+ found_salon_decision_desc: "En iyi ve en parlak beyinleri yetiştirmek için [ROOT.Char.GetCurrentLocation.GetBaronyNameExplicitly]'da kalıcı bir şiir salonu kurun." #NT!
+ found_salon_decision_tooltip: "Kalıcı bir şiir salonu kurun" #NT!
+ found_salon_decision_trigger_tt: "En azından #V 5#! [followers|E] ile [GetTrait('poet').GetName( GetNullCharacter )] [trait|E]'e sahipsiniz" #NT!
+ found_salon_decision_effect_tt: "Kazanç [GetModifier( 'ep3_founded_salon_modifier' ).GetNameWithTooltip]" #NT!
+ found_salon_decision_confirm: "Tapuları imzala" #NT!
+ ep3_decisions_event.4080.t: "Salon Kuruldu" #NT!
+ ep3_decisions_event.4080.desc.intro: "Neredeyse bitti. Şairlerin bir araya gelip kaynaşabileceği ve bir sonraki nesli yetiştirebileceği kalıcı bir yer gözlerimin önünde inşa ediliyor.\n\n" #NT!
+ ep3_decisions_event.4080.wallada: "Benim hayalim," #NT!
+ ep3_decisions_event.4080.heir: "Hocamın hayali," #NT!
+ ep3_decisions_event.4080.desc.outro: "[location.GetName]'da sanatlar için müreffeh ve hareketli bir merkez nihayet meyvesini veriyor.\n\nSon tahta çıtaları zemine döşenirken, taze boyanmış tuğla işçiliğinin kokusu avluya yayılıyor. Yerel yetimhaneleri derslerine başlamaları için içeri alırken izleyen kalabalıktan bir tezahürat yükseliyor.\n\nTek dileğim, gelecek nesiller için ayakta kalması." #NT!
+ ep3_decisions_event.4080.a: "Benim ve diğer pek çok kişinin çalışmalarının doruk noktası." #NT!
+  
+ mass_arrests_decision: "Toplu Tutuklamalar Emri Verin" #NT!
+ mass_arrests_decision_desc: "Bir [powerful_family|E] biraz #EMP çok güçlü#!, olduğunda daha aşırı önlemlere başvurmak gerekebilir. Güçlü bir evin bana karşı hareket edememesini sağlamak zor bir iştir ve bunun tek bir kesin yolu vardır: #EMP hepsini zincire vurmak.#!" #NT!
+ mass_arrests_decision_tooltip: "[powerful_family|E]'ın tüm üyelerinin aynı anda tutuklanması emrini verin" #NT!
+ mass_arrests_decision_confirm: "Hedef Seçin" #NT!
+ choose_a_powerful_family: "Seçtiğiniz [powerful_family|E]'ın her üyesi" #NT!
+ imprisoned_by_you: "Senin tarafından hapsedildi" #NT!
+ house_loses_power_rating: "Seçilen [house|E]'ın Aile Puanı #N -15#! azaltılır" #NT!
+ every_house_member_tt: "Meclis'in her üyesi [THIS.House.GetName]" #NT!
+ ep3_decisions_event.3200.t: "Toplu Tutuklamalar" #NT!
+ ep3_decisions_event.3200.desc: "Avlarını çevreleyen bir kurt sürüsü gibi, diyarın güçlü evleri beni takip ediyor. Boynumun etrafındaki ilmiğin sıkıldığını hissedebiliyorum.\n\nBir aileyi hapse atmak, geri kalanına otoritemi hatırlatacaktır. Bir örnek olmalı..." #NT!
+ ep3_decisions_event.3200.a: "Ev [pf_1.GetNameNoTooltip]" #NT!
+ ep3_decisions_event.3200.b: "Ev [pf_2.GetNameNoTooltip]" #NT!
+ ep3_decisions_event.3200.c: "Ev [pf_3.GetNameNoTooltip]" #NT!
+ ep3_decisions_event.3200.d: "Ev [pf_4.GetNameNoTooltip]" #NT!
+ ep3_decisions_event.3200.e: "Ev [pf_5.GetNameNoTooltip]" #NT!
+ ep3_decisions_event.3200.f: "Diğer taraftan..." #NT!
+ ep3_mass_arrests_house_power_malus: "[liege|E] Tarafından Yakın Zamanda Hapsedildi" #NT!
+  
+ ep3_decisions_event.3201.t: "Toplu Tutuklamalar: Bir İtiraz" #NT!
+ ep3_decisions_event.3201.desc: "[imprisoned_house_head.GetName] zincirlerle önüme getiriliyor. Bir zamanlar nüfuzlu olan [imprisoned_house_head.GetHouse.GetName] Hanesi reisi önümde diz çöküyor, [imprisoned_house_head.GetHerHis] ifade meydan okuma ve çaresizliğin bir karışımını yansıtıyor.\n\n"Majesteleri," [imprisoned_house_head.GetSheHe] başlıyor, [imprisoned_house_head.GetHerHis] sesi utançtan çatlıyor, "Size yalvarıyorum, beni bu zincirlerden kurtarın. Hırs kör eder, ama şimdi gerçek yerimin bu olduğunu görüyorum."\n\n"Bana merhamet gösterin, eski gururumdan sıyrılıp en sadık tebaanız olmaya yemin ediyorum."" #NT!
+ ep3_decisions_event.3201.a: "Ben merhametli olmaktan başka bir şey değilim." #NT!
+ ep3_decisions_event.3201.b: "HAYIR." #NT!
+  
+ renounce_vows_decision: "Yeminlerden Vazgeçmek" #NT!
+ renounce_vows_decision_desc: "Yeminlerim artık yaşamadığım bir hayata beni zincirleyen zincirlerdir. Gerçekten başarılı olmak, gerçekten #EMP özgür#!, olmak için onları atmalıyım." #NT!
+ renounce_vows_decision_tooltip: "[GetTrait('devoted').GetName( GetNullCharacter )] [trait|E]'i kaldırın ki tekrar [marry|E] yapabilesiniz" #NT!
+ renounce_vows_decision_confirm: "Artık bir hizmetçi değilim." #NT!
+  
+ reject_inheritance_decision: "Mirası Reddet" #NT!
+ reject_inheritance_decision_desc: "Yeni ünvanlar benim için ne gibi bir cazibeye sahip? Ruhumu sıkıca bağlayan görev zincirlerinden ve kazanılmamış zenginlikten başka bir şey değil.\n\nBu tür süs eşyalarına ihtiyacım olduğunda, onları kendim alırım." #NT!
+ reject_inheritance_decision_tooltip: "Miras almayı iptal et [titles|E]" #NT!
+ reject_inheritance_decision_confirm: "Bana kaytarıcı deyin ama ben özgürüm" #NT!
+ reject_inheritance_decision.tt.is_heir_to_higher_tier_title: "Siz [heir|E]'dan kendi [title_tier|E] [title|E]'nizden daha yüksek herhangi bir değere sahipsiniz" #NT!
+ reject_inheritance_decision.tt.is_heir_to_any_title: "Herhangi bir [title|E]'e karşı [heir|E]'sınız" #NT!
+ reject_inheritance_decision.tt.heir_rejects_inheritance: "[ROOT.Character.GetTitledFirstName], [ROOT.Character.GetHerHis] mirasını reddeder" #NT!
+ reject_inheritance_decision.tt.newb_explainer: "@alert_icon! #alert_trial [succession|E] dışındaki yöntemlerle, örneğin [war|E] veya $purchase_land_interaction|V$ [character_interaction|E]#! gibi, arazi kazanmaya devam edebileceksiniz." #NT!
+ recently_added_gallivanter: "Son Gezinti" #NT!
+ has_embraced_responsibilities: "Kucaklanmış Sorumluluklar" #NT!
+ embrace_responsibilities_decision.tt.recently_added_gallivanter: "Sen #BOL değil#! yakın zamanda [GetTrait('gallivanter').GetName( GetNullCharacter )] oldun" #NT!
+ embrace_responsibilities_decision.tt.has_embraced_responsibilities: "Zaten #BOL değil#! var #V Sorumlulukları benimsedin#!" #NT!
+  
+ embrace_responsibilities_decision: "Sorumlulukları kucaklayın" #NT!
+ embrace_responsibilities_decision_desc: "Kaygısız bir hayatın bana bir zamanlar uygun olduğunu inkar edemem, ancak görev gereksinimleri zamanla hepimizi bağlıyor. Keşke biraz daha fazlasına sahip olsaydım..." #NT!
+ embrace_responsibilities_decision_tooltip: "Kendinize tekrar [titles|E] miras alma izni verin" #NT!
+ embrace_responsibilities_decision_confirm: "Ben değirmen taşına gidiyorum" #NT!
+ embrace_responsibilities_decision.tt.possible_heir_embraces_inheritance: "[ROOT.Character.GetTitledFirstName], [ROOT.Character.GetHerHis] mirasını bir kez daha kabul eder" #NT!
+ embrace_responsibilities_decision.tt.effects_delayed: "#WEAK [succession|E]'in yeni yerine yerleşmesi birkaç ay sürebilir#!" #NT!
+  
+ change_election_candidacy_status_decision: "Seçim Adaylığı Durumunu Değiştir" #NT!
+ change_election_candidacy_status_decision_desc.reject: "#EMP Hükmetmek için seçim mi?#! Bu bir seçim değil, zehirli bir kadeh için kura çekmek. Tüm bu iğrenç karmaşaya evimi ve ocağımı tercih ederim." #NT!
+ change_election_candidacy_status_decision_desc.embrace: "Düşündükçe, daha büyük bir taç olasılığını reddetmekte belki de biraz #EMP fazla#! aceleci davrandığımı fark ettim. Eğer akranlarım beni desteklemek isterlerse, ben kimim ki onları reddedeyim?" #NT!
+ change_election_candidacy_status_decision_tooltip: "Daha yüksek bir makama seçilme konusundaki pozisyonunuzu değiştirin" #NT!
+ change_election_candidacy_status_decision_confirm: "İşte, bu sorunu çözer." #NT!
+ change_election_candidacy_status_decision.tt.you_are_an_election_candidate: "[liege_possessive|E] seçmeli dersinizden [titles|E]'i için adaysınız" #NT!
+ change_election_candidacy_status_decision.tt.embraces_candidacy: "Daha yüksek bir makama seçilmeyi kabul edeceğinizi duyurdunuz [title|E]" #NT!
+ change_election_candidacy_status_decision.tt.renounces_candidacy: "Daha yüksek bir [title|E] #WEAK krallığa seçilmek istemediğinizi #BOL bildirdiniz (krallığın çok büyük bir kısmına sahip olmanız yine de seçilmenize yol açabilir)#!" #NT!
+  
+ convert_to_administrative_decision: "Merkezi Yönetimi Benimseyin" #NT!
+ convert_to_administrative_decision_desc: "[ROOT.Char.GetPrimaryTitle.GetNameNoTooltip|U] yasalar, kurumlar ve liyakatle yönetilmelidir; aile, miras ve kişisel bağlılıklarla değil!\n\nBu kadar büyük bir krallık, güzel başkentimizin etrafında merkezlenmiş yetenekli bürokratlardan oluşan bir yönetim olmadan asla etkili bir şekilde yönetilemez." #NT!
+ convert_to_administrative_decision_confirm: "İdari Yolları Benimseyin" #NT!
+ convert_to_administrative_decision_tooltip: "[government|E] türünü [administrative|E] olarak değiştir" #NT!
+ king_tier_tt: "Sen bir [king|E]'sın" #NT!
+ empire_tier_tt: "Sen bir [emperor|E]'sın" #NT!
+ small_realm_size_tt: "[realm|E]'ınız #V'ten #EMP daha#!'den oluşuyor [EmptyScope.ScriptValue('small_empire_size_value')|0]#! [counties|E] #! #weak (#color_white #EMP0#!)#!" #NT!
+ all_powerful_vassals_required_tt: "[powerful_vassals|E]'ların hepsinin yanında 50 veya daha fazla sayıda [opinion|E] bulunmalıdır." #NT!
+  
+  
+ dukes_become_governors: "Herhangi bir [duchy|E] [title_tier|E] [vassal|E], [governor|E] olacaktır" #NT!
+ vassals_can_become_administrative: "\n[de_jure|E] [realm|E]'ünüzdeki ve [faith|E]'inizdeki her [feudal|E] veya [clan|E] [vassal|E], aşağıdakilerden birini yerine getirirse [government|E]'sını [administrative|E]'ye değiştirebilir:" #NT!
+ powerful_vassals_become_administrative: "Onlar bir [powerful_vassal|E]" #NT!
+ vassals_become_administrative: "Sizden 25 veya daha fazla kişide [opinion|E] var." #NT!
+ vassals_who_may_switch_to_administrative: "Ayrıca sizin hakkınızda olumlu görüşe sahip olan herhangi bir vasalın [administrative|E] [government|E] tipini benimseme şansı vardır." #NT!
+  
+ vassal_did_not_become_administrative: "Bazı [vassals|E]'lar idari kurala dönüşmedi ve daha sonra [administrative|E] [government|E]'yi benimsemeye ikna edilmeleri veya zorlanmaları gerekecek." #NT!
+ governors_become_dukes: "Herhangi bir [governors|E], [duchy|E] [title_tier|E] [vassal|E] olacaktır" #NT!
+ kings_become_feudal: "Herhangi bir [kingdom|E] [title_tier|E] [vassal|E], [government|E] tipini [feudal|E]'e değiştirir" #NT!
+ kings_become_clan: "Herhangi bir [kingdom|E] [title_tier|E] [vassal|E], [government|E] tipini [clan|E]'e değiştirir" #NT!
+ estates_get_bought: "[estate|E]'li herhangi bir [noble_families|E], [gold|E][gold_i]'lük bir toplam elde edecektir" #NT!
+ first_admin_emperor: "Kanun koyucu" #NT!
+ first_admin_emperor_desc: "Bu karakter bu alemde [government|E]'in [administrative|E] biçimini başlattı. Bu, kuralların ve bürokrasinin artık hüküm sürdüğü anlamına gelse de, herkes hala çerçeveyi kimin koyduğunu hatırlıyor. Bu, gelecekteki halefler için olduğundan çok daha kolay yönetmeyi sağlıyor" #NT!
+  
+ ep3_decisions_event.4060.t: "$major_decisions.0001.t$" #NT!
+ ep3_decisions_event.4060.desc: "[ROOT.Char.GetPrimaryTitle.GetDefinitiveNameNoTooltip|l] büyüklüğündeki bir diyarı yeniden düzenlemek kolay bir iş değil. Bir zamanlar kişisel sadakatlerin bir ağı olan şey artık valileri ve yetkilileri olan bir devlet.\n\n" #NT!
+ ep3_decisions_event.4060.resistance.desc: "Diyarın bazı kısımları bu reformdan etkilenmemiş durumda. [obstinate_vassal.GetName] hem bana hem de reformlarıma güvenmiyor. Buna uzun süre tahammül edemeyiz.\n\n" #NT!
+ ep3_decisions_event.4060.state_faith.desc: "Krallığın bazı kısımları bu reformdan etkilenmemiş durumda. [non_state_faith_vassal.GetName] bir devlet inancının fikrine bile güvenmiyor ve benim reformlarımı reddediyor. Bu uzun süre tolere edilemez.\n\n" #NT!
+ ep3_decisions_event.4060.de_jure.desc: "Krallığın bazı kısımları bu reformdan etkilenmemiş durumda. [non_de_jure_vassal.GetPrimaryTitle.GetNameNoTooltip|U], inşa ettiğimiz yeni devletin dışında. Buna uzun süre tahammül edemeyiz.\n\n" #NT!
+ ep3_decisions_event.4060.outro.desc: "Yasacılık tüm ülkeye yayıldıkça şüphesiz aile ve vasallık kavramları yerini medeni gurur ve merkezileşmeye bırakacaktır." #NT!
+ ep3_decisions_event.4060.a: "Bu topraklarda artık hukuk geçerli!" #NT!
+  
+ ep3_decisions_event.4065.opening: "[actor.Custom2('AppropriateGreeting', ROOT.Char)]" #NT!
+ ep3_decisions_event.4065.desc: "Krallık, rehber ilkesi liyakat olan yeniden düzenleniyor. Artık kalıtsal toprak sahiplerine yer yok.\nHer vasalın buna göre uyum sağlamasını ve Valilerimin saflarına katılmasını bekliyorum." #NT!
+ ep3_decisions_event.4065.a: "[actor.GetPrimaryTitle.GetNameNoTierNoTooltip|l] için!" #NT!
+ ep3_decisions_event.4065.b: "Haklarımdan vazgeçmeyeceğim." #NT!
+ ep3_decisions_event.4065.c: "İlginç" #NT!
+  
+ convert_to_feudalism_from_administrative_decision: "[ROOT.Char.Custom('GetTribalReformGovernment')|U] Yöntemi benimseyin" #NT!
+ convert_to_feudalism_from_administrative_decision_desc: "Daha az bürokrasi ve daha fazla #EMP yapma#! bu alemin ihtiyacı olan şeydir. [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip|l] çiçek açacaksa, bizi engelleyen şeylerle bağlarımızı kesmeliyiz." #NT!
+ convert_to_feudalism_from_administrative_decision_confirm: "[ROOT.Char.Custom('GetTribalReformGovernment')|U] yolu benimseyin" #NT!
+ convert_to_feudalism_from_administrative_decision_tooltip: "[government|E] türünü değiştir" #NT!
+  
+ ep3_decisions_event.4070.t: "$major_decisions.0200.t$" #NT!
+ ep3_decisions_event.4070.desc: "Bazen denenmiş ve doğru olana geri dönmek daha iyidir.\n\nİdari yaklaşım [actor.GetPrimaryTitle.GetNameNoTierNoTooltip|l]'a yalnızca engel teşkil ederken, eski yaşam biçimlerinin yadsınamaz faydaları ve geleneksel yapısı yeni zirvelere ulaşmamıza yardımcı oluyor." #NT!
+ ep3_decisions_event.4070.a: "Değişen koşullara uyum sağlamalıyız." #NT!
+  
+ ep3_decisions_event.4075.opening: "[actor.Custom2('AppropriateGreeting', ROOT.Char)]" #NT!
+ ep3_decisions_event.4075.a: "$ep3_decisions_event.4065.a$" #NT!
+  # Gather Provisions 
+ gather_provisions_decision: "Erzakları Topla" #NT!
+ gather_provisions_decision_desc: "Tıpkı bir ordu gibi, bir kamp da midesi üzerinde yürür. Gerekirse, [ROOT.Char.GetCurrentLocation.GetName]'ın vahşi doğası yiyecek için taranabilir." #NT!
+ gather_provisions_decision_tooltip: "[provisions|E] için toprağı araştırın" #NT!
+ gather_provisions_decision_confirm: "Lütfen bir daha ısırgan çorbası olmasın..." #NT!
+ gather_provisions_decision_effect_tt: "Siz, [GetCourtPositionType('chief_forager_camp_officer').GetName()]'ınız veya [GetCourtPositionType('huntperson_camp_officer').GetName()]'iniz, [provisions|E]'yi arayabilirsiniz" #NT!
+ gather_provisions_decision_unlock_tt: "[GetDomicileBuilding('mess_tent_01').GetName] [domicile_building|E] gerektirir" #NT!
+ ep3_decisions_event.7000.t: "[forage_province.GetNameNoTooltip]'ın Bereketi" #NT!
+ ep3_decisions_event.7000.desc: "Kampımın dışına çıkıp etrafımdaki [forage_province.Custom('TerrainTypeProvince')]'ı inceliyor, herhangi bir av veya yem belirtisi arıyorum.\n\n" #NT!
+ ep3_decisions_event.7000.winter_forage: "[forage_province.GetName] ılıman mevsimlerde daha fazlasını sunabilir, ancak kışın acımasız soğuğu [forage_province.Custom('GetProvinceGroundDesc')]'i sertleştirir ve [forage_province.Custom('GetTerrainTypePlural')]'yi donla sarar. Burada pek bir şey bulamayacağız..." #NT!
+ ep3_decisions_event.7000.difficult_forage: "[forage_province.GetName]'nin [forage_province.Custom('GetProvinceGroundDesc')] ve [forage_province.Custom('GetTerrainTypePlural')]'ini taramak pek cesaret vermiyor: yer midelerimize layık hiçbir şeyden yoksun. En iyi umudumuz avlanmak." #NT!
+ ep3_decisions_event.7000.difficult_hunt: "[forage_province.GetName] civarında bol miktarda mantar, kök ve meyve bulunsa da, burası avcıların cenneti değil. Tek bir tavşan bile görülmüyor." #NT!
+ ep3_decisions_event.7000.good: "Şanslıyız: [forage_province.GetName]'ın iklimi adil ve zengindir. Nereye bakılırsa bakılsın, doğanın armağanları [forage_province.Custom('GetTerrainTypePlural')]'e yayılıyor. Burada iyi iş çıkaracağız." #NT!
+ ep3_decisions_event.7000.fallback: "[forage_province.GetName] bize iyi davranmalı. [forage_province.Custom('GetTerrainTypePlural')] hayat dolu ve burada yiyecek bulmak için sadece uygun zamanı ve özeni göstermek gerekiyor." #NT!
+ ep3_decisions_event.7000.a: "Bize yiyecek bir şeyler bulabilirim." #NT!
+ ep3_decisions_event.7000.a_foraging: "[SelectLocalization(ObjectsEqual(ROOT.Char.MakeScope.Var('has_golden_aplomb_perk').GetFlagName,'yes'),'ep3_decisions_event.7000.a_flavor_golden_aplomb','ep3_decisions_event.7000.a_flavor')]" #NT!
+ ep3_decisions_event.7000.a_flavor: "#medium Yiyecek arama [terrain|E] ve [winter|E] tarafından etkilenir\n#flavor Çok etkili olduğu yerler:#!\n $EFFECT_LIST_BULLET$Tarım arazileri, ormanlar, tepeler, ovalar, vahalar, taşkın yatakları\n#flavor Biraz etkili olduğu yerler:#!\n $EFFECT_LIST_BULLET$Kurak araziler, dağlar, orman, sulak alanlar, bozkır\n#flavor Etkili olmadığı yerler:#!\n $EFFECT_LIST_BULLET$Çöller, çöl dağları, tayga[terrain|E]2" #NT!
+ ep3_decisions_event.7000.a_flavor_golden_aplomb: "#medium Yiyecek arama [terrain|E] ve [winter|E] tarafından etkilenir\n#flavor Çok etkili olduğu yerler:#!\n $EFFECT_LIST_BULLET$Tarım arazileri, ormanlar, tepeler, ovalar, vaha,\n $EFFECT_LIST_BULLET$Taşkın ovaları, kurak alanlar, dağlar, orman, sulak alanlar, bozkır ([GetPerk('golden_aplomb_perk').GetName(GetPlayer)] [perk|e]'e teşekkürler)\n#flavor Etkili olmadığı yerler:#!\n $EFFECT_LIST_BULLET$Çöller, çöl dağları, tayga[terrain|E]2" #NT!
+ ep3_decisions_event.7000.b_trapping: "[SelectLocalization(ObjectsEqual(ROOT.Char.MakeScope.Var('has_golden_aplomb_perk').GetFlagName,'yes'),'ep3_decisions_event.7000.a_flavor_golden_aplomb','ep3_decisions_event.7000.a_flavor')]" #NT!
+ ep3_decisions_event.7000.b_flavor: "#medium Tuzaklama şunlardan etkilenir: [terrain|E]\n#flavor Çok etkili: #!\n $EFFECT_LIST_BULLET$Orman, Ormanlar, Tepeler, Ovalar, Vaha, Kurak Topraklar\n#flavor Biraz etkili: #!\n $EFFECT_LIST_BULLET$Çöller, Çöl Dağları, Dağlar, Tayga, Bozkır\n#flavor Etkili değil: #!\n $EFFECT_LIST_BULLET$Çiftlik Arazileri, Taşkın Ovaları, Sulak Alanlar[terrain|E]1" #NT!
+ ep3_decisions_event.7000.b_flavor_golden_aplomb: "#medium Tuzaklama şunlardan etkilenir: [terrain|E]\n#flavor Çok etkili: #!\n$EFFECT_LIST_BULLET$Jungle, Ormanlar, Tepeler, Ovalar, Vahalar, Kurak Topraklar, Çöller, Çöl Dağları, Dağlar, Tayga, Bozkır ([GetPerk('golden_aplomb_perk').GetName(GetPlayer)] [perk|e]'e teşekkürler)\n#flavor Etkili değil: #!\n $EFFECT_LIST_BULLET$Tarım Arazileri, Taşkın Ovaları, Sulak Alanlar#!" #NT!
+ ep3_decisions_event.7000.a.crit_success: "Çok fazla yiyecek getiriyorsun" #NT!
+ ep3_decisions_event.7000.a.success: "Sen yiyecek getir" #NT!
+ ep3_decisions_event.7000.a.failure: "Hiçbir şey bulamıyorsun" #NT!
+ ep3_decisions_event.7000.a.crit_failure: "Yaralısın" #NT!
+ ep3_decisions_event.7000.b: "Tuzaklarımla hepimizi doyuracağım." #NT!
+ ep3_decisions_event.7000.c: "Toplayıcıları gönderin." #NT!
+ ep3_decisions_event.7000.c.named: "Bir toplayıcı ekibi topla, [chief_forager.GetFirstNameNoTooltip]." #NT!
+ ep3_decisions_event.7000.c.crit_success: "[chief_forager.GetFirstNameNoTooltip] çok yiyecek getirir" #NT!
+ ep3_decisions_event.7000.c.success: "[chief_forager.GetFirstNameNoTooltip] yiyecek getiriyor" #NT!
+ ep3_decisions_event.7000.c.failure: "[chief_forager.GetFirstNameNoTooltip] hiçbir şey bulamadı" #NT!
+ ep3_decisions_event.7000.c.crit_failure: "[chief_forager.GetFirstNameNoTooltip] incindi" #NT!
+ ep3_decisions_event.7000.d: "Avcımız bize bir av tuzağı kuracak." #NT!
+ ep3_decisions_event.7000.d.named: "Sen bir avcısın, [huntperson.GetFirstNameNoTooltip]: git ve avlan!" #NT!
+ ep3_decisions_event.7000.d.crit_success: "[huntperson.GetFirstNameNoTooltip] çok yiyecek getirir" #NT!
+ ep3_decisions_event.7000.d.success: "[huntperson.GetFirstNameNoTooltip] yiyecek getiriyor" #NT!
+ ep3_decisions_event.7000.d.failure: "[huntperson.GetFirstNameNoTooltip] hiçbir şey bulamadı" #NT!
+ ep3_decisions_event.7000.d.crit_failure: "[huntperson.GetFirstNameNoTooltip] incindi" #NT!
+ ep3_decisions_event.7000.no_provisions_tt: "[provisions|E] bulunamadı" #NT!
+  
+  # EP3 Split the Empire 
+ split_roman_empire_decision: "İmparatorluğu parçala" #NT!
+ split_roman_empire_decision_desc: "Atalarımızın yıllarında böylesine büyük bir imparatorluğun bölünmesinin birçok nedeni vardı ve bu nedenler günümüze kadar geçerliliğini korudu. Güç bir kez daha bölünmelidir." #NT!
+ split_roman_empire_decision_selection_tooltip: "[GetPlayer.GetPrimaryTitle.GetName] ikiye bölünecek ve böylece [eastern_roman_empire|E] oluşacak" #NT!
+ split_roman_empire_decision_confirm: "Öyle yap." #NT!
+ form_eastern_roman_empire_tt: "#HIGH [new_holder.GetName]#!:\n$EFFECT_LIST_BULLET$Gets [eastern_roman_empire|E]\n$EFFECT_LIST_BULLET$[GetTitleByKey( 'c_byzantion' ).GetBaseNameNoTier] onların yeni [realm_capital|E]'sı olur" #NT!
+ ending_of_restore_rome_trials_tt: "Başlangıçta Roma'yı restore etmenin etkileri geri alınacak:\n$EFFECT_LIST_BULLET$[realm|E]'nizdeki tüm [peasant_factions|E]'ler artık sizi hedef almayacak\n$EFFECT_LIST_BULLET$Diğer krallıktan [wars|E] azaltıldı [titles|E]\n$EFFECT_LIST_BULLET$[epidemic|E] sıklığı azaltıldı\n$EFFECT_LIST_BULLET$Moğol İstilası zaman çizelgesi normale dönecek#!" #NT!
+  
+ seasoned_visitor_decision: "[ROOT.Char.GetFirstNameNoTooltip] [ROOT.Char.GetHouse.GetNameNoTooltip]'in Seyahatleri" #NT!
+ seasoned_visitor_decision_desc: "Uzaklara ve genişlere seyahat ettim, garip ve tuhaf yerlere gittim. Kazandığım bilgelik eşsizdir, meraklı ve bilgili her ruh için bir hazinedir." #NT!
+ seasoned_visitor_decision_tooltip: "Seyahatlerinize geri dönüp bakın" #NT!
+ seasoned_visitor_decision_reward_desc: "Yeni [lifestyle|E] [perks|E] #EMP kilidini açacaksın veya #! gelecekteki sahiplerinin [lifestyle_experience|E] kazancını artıracak bir Kitap [artifact|E] yaratacaksın\n#i Ziyaret edilen her #V 12#! $game_concept_points_of_interest$, #V 60#!'e kadar, ödülleri artıracaktır#!" #NT!
+ seasoned_visitor_decision_confirm: "Harika şeyler gördüm" #NT!
+ seasoned_visitor_decision_not_enough_poi: "#color_white 26#! [points_of_interest|E] #weak (Şu anki: [THIS.Var('poi_visited').GetValue|V0])#! adresini ziyaret ettiniz" #NT!
+ seasoned_visitor_decision_not_enough_poi_advanced: "#color_white 42#! [points_of_interest|E] #weak (Şu anki: [THIS.Var('poi_visited').GetValue|V0])#! adresini ziyaret ettiniz" #NT!
+ NOT_ARTIFACT_CREATOR: "Bu Eser Yaratıcısı değil mi?" #NT!
+  
+ ep3_laamp_decision_event.1100.t: "$seasoned_visitor_decision$" #NT!
+ ep3_laamp_decision_event.1100.desc: "Karlı dağ zirvelerinin üzerinden yükselen parlak güneş, genişleyen şehirlerin köpüren olukları, en dindar ve en sefil ruhları barındıran tapınaklar.\n\nYüzyıllar boyunca insanların eserleri, [ROOT.Char.GetFaith.HighGodName] Yüce'nin eliyle yaratılan Doğanın harikaları. Hepsini gördüm.\n\nHem soylu hem de soysuz insanlarla konuştum, insanların binbir türlü şekilde yaşadığını gördüm. Kusursuz anılarımdan oluşan böylesine zekice gözlemler hazinesi, merak kıvılcımı olan herkes için değerli bir harika olurdu... eğer yazmaya karar verirsem." #NT!
+ ep3_laamp_decision_event.1100.a: "Anılarım yalnızca bana aittir." #NT!
+ ep3_laamp_decision_event.1100.a.flavor: "Ben konuşup duruyorum, ama dinleyen sadece beklediği sözcükleri hatırlıyor." #NT!
+ ep3_laamp_decision_event.1100.a.desc: "[THIS.Var('poi_visited').GetValue] $game_concept_points_of_interest$ adresini ziyaret ettiğinizden beri:" #NT!
+ ep3_laamp_decision_event.1100.b: ""Gördüklerimin yarısını bile anlatmadım..."" #NT!
+ ep3_laamp_decision_event.1100.b.flavor: "...çünkü bana inanılamayacağını biliyorum." #NT!
+ ep3_laamp_decision_event.1100.b.desc: "#weak Bu eser, #color_yellow gelecekteki sahiplerine [lifestyle_experience|E] sağlayacaktır#!, kalitesi, ziyaret edilen her düzine için artacaktır $game_concept_points_of_interest$.#!" #NT!
+ ep3_laamp_decision_event.1100.c: "Kalemim şimdilik kuru kalacak." #NT!
+ ep3_laamp_decision_event.1100.c.desc: "Seyahatinizin öyküsünü yazma kararını ertelersiniz." #NT!
+ ep3_laamp_decision_event.1100.c.flavor: "Taş olmazsa kemer olmaz." #NT!
+  
+ marco_polo_book_title: "$seasoned_visitor_decision$" #NT!
+ marco_polo_book_desc: "[newly_created_artifact.Custom('ArtifactMarcoPoloIntro')]\n\n[newly_created_artifact.Custom('ArtifactMarcoPoloDesc')]\n\n[newly_created_artifact.Custom('ArtifactMarcoPoloEnd')]" #NT!
+  
+ zealous_missionary_prep_decision: "[ROOT.Char.GetFaith.GetAdherentNameNoTooltip] Yolu — Yükseliş" #NT!
+ zealous_missionary_prep_decision_desc: "Aşağılık sapkınların ve sapkın dinsizlerin varlığını sürdürmesi her türlü iyiliğe karşı bir suçtur [ROOT.Char.GetFaith.GetAdherentNameNoTooltip]'dan [ROOT.Char.GetFaith.HighGodName]'e [ROOT.Char.GetFaith.HighGodHerselfHimself|U]!" #NT!
+ zealous_missionary_prep_decision_tooltip: "Vaizin zamanıdır" #NT!
+ zealous_missionary_prep_decision_holy_site: "Mevcut [location|E]'ınız [THIS.Char.GetFaith.GetAdjective] [holy_site|E] olmalı, ardından [THIS.Char.GetFaith.GetName] gelmeli ve [THIS.Char.GetFaith.GetAdjective] [top_liege|E] tarafından yönetilmelidir." #NT!
+ zealous_missionary_prep_decision_holy_sites_visited_req: "En az iki benzersiz [holy_sites|E]'den [pilgrimages|E]'ı tamamladınız" #NT!
+ zealous_missionary_prep_decision_reward_desc: "Önümüzdeki on yıl boyunca, dindar bir [THIS.Char.GetFaith.GetAdjectiveNoTooltip] misyonerinin yolunda yürüyeceksin:\n#weak Ziyaret ettiğin ülkeleri, ya sözlerindeki doğrulukla ya da kılıcının gücüyle [THIS.Char.GetFaith.GetName] dönüştürebileceksin.\n#bold Yol boyunca başarısız olanları büyük bir tehlike#! bekliyor, çünkü sadece layık olanlar [THIS.Char.GetFaith.PositiveAfterLife|U]'da ödül alacak.\n\n$EFFECT_LIST_BULLET$ @alert_icon! $ep3_laamp_decision_event.1103.difficulty.desc$\n$EFFECT_LIST_BULLET$ #weak0 #weak1\n$EFFECT_LIST_BULLET$ #weak3 #weak4" #NT!
+ zealous_missionary_prep_decision_confirm: "[ROOT.Char.GetFaith.HighGodName] harika!" #NT!
+  
+ ep3_laamp_decision_event.1101.t: "$zealous_missionary_prep_decision$" #NT!
+ ep3_laamp_decision_event.1101.desc: "Bu Dünya'da [ROOT.Char.GetFaith.HighGodName] Yüce'nin gücünün [holy_site_location.GetNameNoTooltip]'deki gibi tanık olunabileceği çok az yer vardır. [ROOT.Char.GetFaith.HighGodHerHis|U] kudretini hissetmek için buraya seyahat eden sadıklar kutsanmıştır.\n\nÇoğu kişi için bu kutsal zemin yolculuklarının sonu, hayatlarının en yüksek zirvesidir. Ancak benim için bu sadece yolumun başlangıcıdır.\n\nVe [ROOT.Char.GetFaith.HighGodHerHis|U] ışık getirmek üzere olduğum kişiler için kurtuluşun tek şansı." #NT!
+ ep3_laamp_decision_event.1101.a: "[ROOT.Char.GetFaith.HighGodName|U]'ın ihtişamının tadını çıkarıyorum!" #NT!
+ ep3_laamp_decision_event.1101.a.desc: "$zealous_missionary_prep_decision_reward_desc$\nDindar yolunda devam etmek için kâfir diyarlarına göçmen gerekir." #NT!
+  
+ zealous_missionary_start_decision: "[ROOT.Char.GetFaith.GetAdherentNameNoTooltip] Yolu — Önsöz" #NT!
+ zealous_missionary_start_decision_desc: "[ROOT.Char.GetFaith.HighGodName|U]'ın tüm işi yapmasını bekleyemeyiz. [ROOT.Char.GetFaith.HighGodNameSheHe|U]'in kaybolanlara çobanlık etmesi için sadıklara ihtiyacı vardır... isterlerse istesinler." #NT!
+ zealous_missionary_start_decision_other_faith_location: "Mevcut konumunuzun farklı bir [faith|E] olması gerekiyor" #NT!
+ zealous_missionary_start_decision_tooltip: "İyilerden biri olmam gerek [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip]" #NT!
+ zealous_missionary_start_decision_reward_desc: "$zealous_missionary_prep_decision_reward_desc$" #NT!
+ zealous_missionary_start_decision_confirm: "Ey ruhum, [ROOT.Char.GetFaith.HighGodHerHis|U] çağrısına cevap vermek için çabuk ol!" #NT!
+  
+ ep3_laamp_decision_event.1102.t: "$zealous_missionary_start_decision$" #NT!
+ ep3_laamp_decision_event.1102.desc: "[ROOT.Var('holy_site_ascension').Province.GetName]'ın kutsal toprakları çok uzakta. Yine de içimde [ROOT.Char.GetFaith.HighGodName]'in kudretini her zamankinden daha güçlü hissediyorum.\n\nKaderim, her zaman olduğu gibi, [ROOT.Char.GetFaith.HighGodHerHis|U] çalışmak, o toprakları ve burada yaşayan ruhları [ROOT.Char.GetFaith.HighGodHerHis|U] ışıkla doldurmaktı. Kurtuluş onları bekliyor ve ben [ROOT.Char.GetFaith.HighGodHerHis|U] mütevazı bir aracım." #NT!
+ ep3_laamp_decision_event.1102.a: "Ve [ROOT.Char.GetFaith.HighGodName]'ın adını bilecekler!" #NT!
+ ep3_laamp_decision_event.1102.a.desc: "$zealous_missionary_prep_decision_reward_desc$\n#weak Seyahat ederken [faith|E]'nizi yaymak için 10 yılınız olacak." #NT!
+ ep3_laamp_decision_event.1102.b: "Hazırlanmak için hala zamana ihtiyacım var." #NT!
+ ep3_laamp_decision_event.1102.b.desc: "Kararı daha sonraya ertelersin" #NT!
+  
+ ep3_laamp_decision_event.1103.t: "[ROOT.Char.GetFaith.GetAdherentNameNoTooltip] Yolu — Başarı" #NT!
+ ep3_laamp_decision_event.1103.desc: "[current_location.GetCounty.GetName] için en önemli an benim gelişimle geldi, çünkü bugün [ROOT.Char.GetFaith.HighGodName|U]'in ışığını getiriyorum ve [ROOT.Char.GetFaith.HighGodNameSheHe|U] onların kalplerine girecek ve gelecek nesiller boyunca orada kalacak.\n\nYerel soylular, [current_location.GetCounty.GetTitle.GetHolder.GetName] ve onun çarpık çevresi çok inatçı, [current_location.GetCounty.GetFaith.GetName]'ün sahte ritüelleriyle çok kirlenmiş. Ama zavallı [current_location.GetCounty.GetCulture.GetCollectiveNoun]'in ruhları bana ağlıyor, [ROOT.Char.GetFaith.HighGodHerHis|U] lütuf için can atıyor. Ve onlar lütfa sahip olacaklar!" #NT!
+ ep3_laamp_decision_event.1103.desc.alternative: "Dindar bir [ROOT.Char.GetFaith.GetAdherentNameNoTooltip]'ın yolu kolay değildir, [ROOT.Char.GetHerHis] zahmetler uzundur ve Dünyevi bir ödül yoktur. Beni ayakta tutacak tek umut vardır. [ROOT.Char.GetSheHe|U] saf inançla yürüyen kişi, annesinin kollarındaki bir çocuk gibi kendini [ROOT.Char.GetFaith.HighGodName|U]'ün ellerine bırakır.\n\nİleriye doğru yürüyorum, çünkü [ROOT.Char.GetFaith.HighGodHerHis|U] iş ve şan eksik kalıyor, çünkü buradaki [current_location.GetCounty.GetFaith.GetAdherentNamePlural] kalpleri yalanlar ve sahte hurafelerle dolu.\n\nAma uzun sürmeyecek. Bugün, benim denemem devam ediyor ve onlarınki başlıyor." #NT!
+ ep3_laamp_decision_event.1103.difficulty.desc: "#weak Yüksek gelişmişlik düzeyine sahip ülkelerin dönüştürülmesi daha zordur." #NT!
+ ep3_laamp_decision_event.1103.a.desc: "#weak Yerel dili konuşmak başarı şansını artırır." #NT!
+ ep3_laamp_decision_event.1103.a: "[ROOT.Char.GetFaith.HighGodName]'ın sesine kulak vereceksin!" #NT!
+ ep3_laamp_decision_event.1103.a.alternative: "[current_location.GetCounty.GetCulture.GetNameNoTooltip] kurtuluşu için dua edelim." #NT!
+ ep3_laamp_decision_event.1103.a.success: "Dönüşüm başarılı" #NT!
+ ep3_laamp_decision_event.1103.a.failure: "Dönüştürme başarısız oldu" #NT!
+ ep3_laamp_decision_event.1103.b: "Yalnızca sadıklar kalacak!" #NT!
+ ep3_laamp_decision_event.1103.b.alternative: "Ya [ROOT.Char.GetFaith.HighGodNameSheHe|U] ya da kılıcım yüreğinize girecek!" #NT!
+ ep3_laamp_decision_event.1103.b.desc: "#weak Yerel garnizondan daha fazla asker ve şövalyeye sahip olmak da başarı şansını artırır." #NT!
+ ep3_laamp_decision_event.1103.b.flavor: "İnsanları cesetlere dönüştürmek [ROOT.Char.GetFaith.GetAdherentNamePlural]'dan daha kolaydır" #NT!
+ ep3_laamp_decision_event.1103.c: "Ne pis bir yer burası." #NT!
+ ep3_laamp_decision_event.1103.c.alternative: "[current_location.GetCounty.GetName]'a zaman harcamayalım" #NT!
+ ep3_laamp_decision_event.1103.c.desc: "Yerel halkı dönüştürmeye çalışmayacaksınız." #NT!
+ ep3_laamp_decision_event.1103.c.flavor: "Eğer [ROOT.Char.GetFaith.DevilName], bazılarının iddia ettiği gibi [current_location.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetNameNoTierNoTooltip]'i yarattıysa, yedinci günde burada dinlenmiştir." #NT!
+  
+ ep3_laamp_decision_event.1104.t: "[ROOT.Char.GetFaith.GetAdherentNameNoTooltip] Yolu — Son" #NT!
+ ep3_laamp_decision_event.1104.desc: "Kutsanmış durumdayım! On yıl önce, [ROOT.Var('holy_site_ascension').Province.GetName]'da, [ROOT.Char.GetFaith.HighGodName] bana geldi, kalbime girdi ve onu sonsuz sevinç ve güzellikle doldurdu. Ve o zamandan beri, [ROOT.Char.GetFaith.HighGodHerHis|U] Dünya'da dolaştım, vaaz [ROOT.Char.GetFaith.HighGodHerHis|U] verdim.\n\nGittiğim her yerde, [ROOT.Char.GetFaith.HighGodHerHis|U] kudret benimleydi, topraklara ve insanların kalplerine yayılıyordu.\n\nVe bugün, bir misyoner olarak yolum, [ROOT.Char.GetFaith.HighGodName]'in ihtişamıyla, [ROOT.Char.GetFaith.HighGodHerHis|U] büyük planın kendi payıma düşen kısmını yerine getirdiğimi bilerek sona eriyor." #NT!
+ ep3_laamp_decision_event.1104.desc.failure: "Kutsanmıştım! On yıl önce, [ROOT.Var('holy_site_ascension').Province.GetName]'da, [ROOT.Char.GetFaith.HighGodName] bana geldi, kalbime girdi ve onu sonsuz sevinç ve güzellikle doldurdu. Ve [ROOT.Char.GetFaith.HighGodNameSheHe|U]'nin karşılığında istediği tek şey, dışarı çıkıp son nefesime kadar onu paylaşmamdı.\n\nYine de, [ROOT.Char.GetFaith.HighGodHerHis|U] tarafından dokunulmamış zavallı bir ruh gibi, onu kendim için sakladım. Onu yeterince paylaşmaya çalıştım mı? Beni yolumdan çıkaran zavallı [ROOT.Char.GetFaith.DevilName] miydi? Ruhumdaki leke, başarısızlığın lekesi, dinsizliğin lekesi, sonsuza dek orada kalacak." #NT!
+ ep3_laamp_decision_event.1104.a: "[ROOT.Char.GetFaith.HighGodNamePossessive] ödülü [ROOT.Char.GetFaith.PositiveAfterLife|U]'de beni bekliyor." #NT!
+ ep3_laamp_decision_event.1104.b: "[ROOT.Char.GetFaith.HighGodName] Beni affet, çünkü başarısız oldum." #NT!
+  
+ become_conqueror_decision: "Büyük Bir Fatih Olun" #NT!
+ become_conqueror_decision_desc: "Kılıcım çok uzun zamandır başkalarına zenginlik getirdi, şimdi Dünya #EMP benim#! şanım için bir kan okyanusunun altında boğulacak. Zamanın başlangıcından beri görülmemiş büyük bir sıkıntı zamanı başlayacak!" #NT!
+ become_conqueror_decision_tooltip: "#WEAK Savaştan ve savaştaki bir adamdan bahsediyorum#!" #NT!
+ become_conqueror_decision_confirm: "Ben [ROOT.Char.GetFaith.HighGodName]'ın cezasıyım!" #NT!
+ become_conqueror_decision_reward: "Karaya çıktığınızda, #V [GetTrait('conqueror').GetName( GetNullCharacter )]#! [trait|E] alacaksınız" #NT!
+ become_conqueror_decision_troops: "[GetMaA('accolade_maa_lancers').GetName] ve [GetMaA('accolade_maa_vanguards').GetName]'den oluşan deneyimli gazilerden oluşan bir orduya sahip olacaksınız" #NT!
+ become_conqueror_decision_legend_seed: "#EMP $legend_chronicle_conqueror_chronicle$#! [legend_seed|E] alacaksınız" #NT!
+ become_conqueror_decision_war_participation: "En az 20 savaşa katıldınız" #NT!
+ become_conqueror_decision_war_participation_kingdom: "[kings|E] veya [emperors|E]'e karşı en az 5 savaşa katıldınız" #NT!
+ become_conqueror_decision_two_commander_traits: "En az 2 [commander_traits|E]'ınız var" #NT!
+ become_conqueror_decision_enough_troops: "En az 4000'iniz var [soldiers|E]" #NT!
+ become_conqueror_decision_enough_battle_kills: "En az 12 kişiyi öldürdün [characters|E]" #NT!
+ become_conqueror_decision_enough_war_contracts: "En az 20 $laamp_raid_contract_contract$ veya $laamp_join_war_contract_contract$ [task_contracts|E] tamamladınız" #NT!
+ become_conqueror_decision_enough_high_level_knights: "En az 18 [prowess|E] veya üzeri puana sahip 6 şövalyeniz var" #NT!
+ become_conqueror_decision_enough_mediocre_knights: "En az 12 şövalyeniz var ve 12 [prowess|E] veya üzeri" #NT!
+ become_conqueror_decision_war: "[conq_war_target.GetName]'a karşı bir savaş başlatacaksın" #NT!
+  
+ ep3_laamp_decision_event.1110.t: "$become_conqueror_decision$" #NT!
+ ep3_laamp_decision_event.1110.desc.has_kill: "Hala [first_kill.GetTitledFirstNamePossessive] ölümünü hatırlıyorum, benim kaprisimle ölen ilk kişiyi. O zaman bile buna karşı bir ilgim var mıydı? Bu... #EMP açlık#! içimde, daha fazlasına olan bu ihtiyaç, o anda mı alevlendi yoksa sonunda görülebilecek kadar mı parlak yandı?\n\nO zamandan beri [first_kill.GetHerHim]'e daha birçok kişi katıldı." #NT!
+ ep3_laamp_decision_event.1110.desc.hasnt_kill: "Gerçekten tuhaf bir düşünce. Emrimle öldürülen ilk kişiyi, hele ki benim elimle öldürülen kişiyi hiç hatırlamıyorum. [ROOT.Char.GetWomanMan] olarak kalacağını düşünürdünüz ama ölülerin yüzlerini veya isimlerini hiç umursamadım.\n\nKaç kişiyi mezarlarına gönderdiğimi sayamam, tam olarak #EMP kim#!." #NT!
+ ep3_laamp_decision_event.1110.desc.outro: "Çoğu kişi için böyle bir katliam yeterli olurdu — ama benim için değil.\n\nUfka baktığımda gülümsemeden edemiyorum. Ölenler için değil. Ölecek olanlar için gülümsüyorum." #NT!
+ ep3_laamp_decision_event.1110.desc: "Yıllar önce, savaşta [first_kill.GetName]'ı öldürdüm. O zamandan beri hatırası bende kaldı. [first_kill.GetHerHis|U] darbemle parçalanan göğüs, [first_kill.GetHerHis] şaşkınlıkla kocaman açılan gözler, [first_kill.GetHerHis] yere damlayan kan, toprağı bereketli hale getiriyor.\n\nO zamandan beri çok daha fazlası [first_kill.GetHerHim]'e katıldı. Çoğu kişi için böyle bir katliam yeterli olurdu. Ama benim için değil.\n\nUfka bakarken gülümsemekten kendimi alamıyorum. Ölenler için değil. Ölecek olanlar için gülümsüyorum." #NT!
+ #ep3_laamp_decision_event.1110.desc: "Yıllar önce, savaşta [first_kill.GetName]'ı öldürdüm. O zamandan beri hatırası bende kaldı. [first_kill.GetHerHis|U] darbemle parçalanan göğüs, [first_kill.GetHerHis] şaşkınlıkla kocaman açılan gözler, [first_kill.GetHerHis] yere damlayan kan, toprağı bereketli hale getiriyor.\n\nO zamandan beri çok daha fazlası [first_kill.GetHerHim]'e katıldı. Çoğu kişi için böyle bir katliam yeterli olurdu. Ama benim için değil.\n\nUfka bakarken gülümsemekten kendimi alamıyorum. Ölenler için değil. Ölecek olanlar için gülümsüyorum." #NT!
+ ep3_laamp_decision_event.1110.a: "At sırtında dünyayı fethetmek kolaydır..." #NT!
+ ep3_laamp_decision_event.1110.a.flavor: "...zor olan inip yönetmektir." #NT!
+ ep3_laamp_decision_event.1110.a.desc: "$become_conqueror_decision_reward$" #NT!
+  
+ bandit_king_decision: "Dışlanmışları Tahliye Et" #NT!
+ bandit_king_decision_desc: "Ben, lağım çukurlarının oğullarının ve kızlarının efendisi olacağım. En iğrenç alçaklardan oluşan bir ordu, benim davama ve hevesime bağlı, hem zayıflara hem de güçlülere aynı şekilde zarar vermek için." #NT!
+ bandit_king_decision_reward: "#Bold Her #! seferde [criminal_task_contract|E]'yi tamamladığınızda, benzersiz [men_at_arms|E] elde edersiniz.\n#weak Miktar, [GetTrait('gallowsbait').GetName(GetNullCharacter)] [trait_level_track|E]'daki ilerlemenize bağlı olarak 100'den 1000 kişiye kadar değişir." #NT!
+ bandit_king_decision_tooltip: "Korkakları sayın, satılık olanları sayın, hayatta kalmak için savaşanlar" #NT!
+ bandit_king_decision_confirm: "Toplanın bana, yeryüzünün sefihleri!" #NT!
+  
+ ep3_gallowsbait_army: "Darağacı Balığı Köpüğü" #NT!
+ ep3_bandits_army: "Sefiller ve Kayıplar" #NT!
+ ep3_poachers_army: "Neşeli Adamlar" #NT!
+ maa_bandits: "Haydutlar" #NT!
+ maa_bandits_flavor: "#F Bu dünyanın aşağılıkları, kanunları terk edip suç dolu bir hayata yelken açtılar." #NT!
+ maa_poachers: "Kaçak avcılar" #NT!
+ maa_poachers_flavor: "$maa_bandits_flavor$" #NT!
+ maa_thieves: "Yağmacılar" #NT!
+ maa_thieves_flavor: "$maa_bandits_flavor$" #NT!
+ maa_marauders: "Yağmacılar" #NT!
+ maa_marauders_flavor: "$maa_bandits_flavor$" #NT!
+ bandit_king_maa_spawn_effect_desc: "$maa_marauders$ ve $maa_poachers$ veya $maa_thieves$ ve $maa_bandits$'ten oluşan küçük bir orduya sahip olacaksınız" #NT!
+  
+ bandit_king_modifier: "Haydutların Hayırseveri" #NT!
+ bandit_king_modifier_desc: "Bu karakter, her fırsatta toplumun alt tabakasından takipçi topluyor.\n\n#Bold Bu karakter bir #! #weak [intrigue|E] [task_contract|E] tamamladığında, benzersiz [men_at_arms|E] elde ediyor.\nMiktar, [GetTrait('gallowsbait').GetName(GetNullCharacter)] [trait_level_track|E]'deki ilerlemeye bağlı.#!" #NT!
+  
+ ep3_laamp_decision_event.1120.t: "$bandit_king_decision$" #NT!
+ ep3_laamp_decision_event.1120.desc: "Paslı bir hançer kalbinizi bıçakladığında, onu kullananın soyunu umursamazsınız. Yaratılış'ın dört bir yanından ithal edilmiş değerli silahlarıyla parlayan zırhlı şövalyeler mi? Tıpkı paçavralar giymiş, en yakın ağaçtan koparılmış keskin dalları tutan yoksullar gibi ölürler.\n\nSüslü unvanlara sahip lordlar ve leydiler, pahalı ücretlilerini tutabilirler — ve daha büyük bir kese taşıyan biri her geçtiğinde ihanete uğramaktan korkarlar.\n\nDuyun beni ve toplanın, hayat yolunu seçemeyenler, çünkü şiddet ve kan sizi doğuştan damgalamıştır!" #NT!
+ ep3_laamp_decision_event.1120.a: "$bandit_king_decision_confirm$" #NT!
+ ep3_laamp_decision_event.1120.a.flavor: "Sadece onları düzgün bir şekilde giydirmemiz gerekiyor, böylece bu gece donarak ölmeyecekler. Ve belki de çubukları uygun kargılarla değiştirebiliriz." #NT!
+  
+ start_city_construction_decision: "Bir Holding Bulundu" #NT!
+ start_city_construction_decision_desc: "Seyahatlerim sırasında önemli miktarda servet biriktirdim. Bu verimli, bozulmamış topraklar, yatırım yapmak ve önümüzdeki yıllarda faydalarını toplamak için iyi bir yer gibi görünüyor." #NT!
+ start_city_construction_decision_tooltip: "Dünyaya vur!" #NT!
+ start_city_construction_decision_confirm: "Kürekleri alın!" #NT!
+ start_city_construction_decision_empty_holding: "Bir holdinge sahip olmayan bir [barony|E]'da olmanız gerekir" #NT!
+ start_city_construction_decision_more_rewards: "Daha fazla isteğe bağlı gereksinimi yerine getirmek, şehir kuruluşu sırasında benzersiz [buildings|E]\n\n#weak inşa etmek de dahil olmak üzere ek seçenekler sunacaktır. Bundan sonra daha fazla şehir inşa edebileceksiniz.\nİnşaat sırasında, şehri zorla kendiniz için alma şansınız olacak.\n\nAksi takdirde, şehir her yıl temettü ödeyecektir. Miktar, bu [barony|E]'teki birleşik [building|E] seviyelerinin sayısına ve ilçenin [development|E]'üne bağlıdır, [gold_i]25'ten [gold_i]200'e kadar. Bu miktar, inşaat tamamlandıktan sonra her geçen yıl yavaş yavaş azalacaktır.#!" #NT!
+  
+ ep3_laamp_decision_event.1130.t: "[city_location.GetNameNoTooltip] Şehri — Başlangıç" #NT!
+ ep3_laamp_decision_event.1130.desc: "Altımdaki zemin insan eliyle dokunulmamış. Yine de.\n\nAma belediye binasının nerede duracağını şimdiden görebiliyorum. Tüccarlar mallarını tartıp vergileri muhafızların dikkatli gözleri altında ödeyecekler. Kulede çanların çaldığını duyabiliyorum.\n\nMalzemeler toplandı, takipçilerim huzursuz. Tek gereken benim sözüm." #NT!
+ ep3_laamp_decision_event.1130.a: "Hadi başlayalım!" #NT!
+ ep3_laamp_decision_event.1130.a.desc: "$start_city_construction_decision_more_rewards$" #NT!
+ ep3_laamp_decision_event.1130.b: "Fikrimi değiştirdim, özür dilerim." #NT!
+ ep3_laamp_decision_event.1130.b.desc: "İnşaatı terk edersiniz. Harcanan altının bir kısmı iade edilir." #NT!
+  
+ ep3_laamp_decision_event.1131.t: "[city_location.GetNameNoTooltip] Şehri — Son" #NT!
+ ep3_laamp_decision_event.1131.desc: "Yıllar önce burada duruyordum, o zamanlar burası vahşi doğanın ortasındaki bir yerdi. Şimdi, gururlu bir şehir. Ne kadar muhteşem! Ama acaba [city_location.GetCounty.GetTitle.GetHolder.GetName] yeni yerleşimimin geleceğini güvence altına alacak doğru kişi mi diye merak ediyorum.\n\nOn yıllar sonra, [city_location.GetNameNoTooltip]'e nasıl geldiğim, potansiyelini nasıl ortaya çıkardığım ve... hakkında hikayeler anlatılacak." #NT!
+ ep3_laamp_decision_event.1131.a: "...Ben fethettim!" #NT!
+ ep3_laamp_decision_event.1131.b: "...Daha fazlasını başarmak için başka bir yere gittim." #NT!
+ ep3_laamp_decision_event.1131.b.desc: "Şehir her yıl temettü ödeyecek. Miktar, [city_location.GetName]'deki toplam [building|E] seviyesi sayısına ve [city_location.GetCounty.GetName]'teki [development|E] seviyesine bağlıdır." #NT!
+  
+ ep3_laamp_decision_event.1133.t: "[city_location.GetName] Şehri — Suyun Gücü" #NT!
+ ep3_laamp_decision_event.1133.desc: "Yakınlarda tembelce akan bir dere var. Benimki gibi doğru uzmanlık ve takipçileriminki gibi doğru çalışmayla onu şehre daha yakın bir yere yönlendirebiliriz.\n\nDaha sonra, tepesine bir su değirmeni inşa etmek önemsiz olmalı. Eğer tasarruf edilecek kaynaklar varsa, daha büyük bir değirmen bile olabilir." #NT!
+ ep3_laamp_decision_event.1133.a: "Görkemli!" #NT!
+ ep3_laamp_decision_event.1133.b: "Ben buna yatırım yapacağım." #NT!
+ ep3_laamp_decision_event.1133.c: "Bunu karşılayamam." #NT!
+  
+ ep3_laamp_decision_event.1134.t: "[city_location.GetNameNoTooltip] Şehri — Yerleşimciler" #NT!
+ ep3_laamp_decision_event.1134.desc: "İnşaat güzel bir şekilde ilerliyor, şehrin iskeleti şimdiden görünüyor. Binaları inşa etmeye devam edecek kadar inşaatçımız var, ancak her bir binayı, ihtiyaç duyulabilecek her işi dolduracak kadarımız yok.\n\nNeyse ki, otoritemi daha fazla yerleşimci çekmek için kullanabilirim. Elbette mütevazı bir altın ve gümüş teşvikiyle." #NT!
+ ep3_laamp_decision_event.1134.a: "Müthiş!" #NT!
+ ep3_laamp_decision_event.1134.b: "Çantamı alayım." #NT!
+ ep3_laamp_decision_event.1134.c: "Belki de hayır." #NT!
+  
+ ep3_laamp_decision_event.1135.t: "[city_location.GetNameNoTooltip] Şehri — Ormanların Yok Edilmesi" #NT!
+ ep3_laamp_decision_event.1135.desc: "Burada yaşayacak insanların uygun gıda tedarikine ihtiyacı olacak. Başlangıçta ekim için işaretlenen topraklar başlangıç ​​için yeterli olmalı, ancak daha fazla tarla önümüzdeki on yıllar boyunca refahını garantileyecektir.\n\nBir fırsat var — [city_location.GetCounty.GetTitle.GetHolder.GetName] orman tarlalarımın sınırında, ekilebilir araziye dönüştürülmeyi bekliyor. [city_location.GetCounty.GetTitle.GetHolder.GetHerHim] ile iyi ilişkiler kurma öngörüsüne sahiptim, bu yüzden birkaç mansi satın almak sorun olmamalı. Daha sonra ağaçların yakılıp sökülmesi gerekiyor ve verimli toprak ortaya çıkacak." #NT!
+ ep3_laamp_decision_event.1135.a: "Meşaleleri alın!" #NT!
+ ep3_laamp_decision_event.1135.b: "Herkes toplansın, ağaç kalmasın!" #NT!
+ ep3_laamp_decision_event.1135.c: "Bir kez daha düşündüm de, hayır." #NT!
+  
+ ep3_laamp_decision_event.1136.t: "[city_location.GetNameNoTooltip] Şehri — Ticaret Bağlantıları" #NT!
+ ep3_laamp_decision_event.1136.desc: "Kırsalın sunduğu şeyleri tüketmek, uzak diyarların en iyilerini tatmak, benzersiz mal ve hizmetler üretmek — her müreffeh şehrin doğal döngüsüdür.\n\nBekleyip ticaret bağlantılarının zamanla doğal olarak gelişmesine izin verebiliriz — ya da önceden hareket ederek, son tuğla duvarlarına yerleştirildiğinde ilk ticaret vagonunun şehir kapılarından aşağı inmesini sağlayabiliriz.\n\nBunu başarabilecek birkaç tüccar tanıyorum. Şimdi benden altın istiyorlar — yakında buraya akacak olan servete kıyasla çok cüzi bir miktar!" #NT!
+ ep3_laamp_decision_event.1136.a: "İnanılmaz!" #NT!
+ ep3_laamp_decision_event.1136.b: "Biz bir anlaşma yaptık." #NT!
+ ep3_laamp_decision_event.1136.c: "Kesinlikle hayır." #NT!
+  
+ ep3_laamp_decision_event.1137.t: "[city_location.GetName] Şehri — Dindar Bağlantılar" #NT!
+ ep3_laamp_decision_event.1137.desc: "On yıllar, hatta yüzyıllar boyunca ayakta kalabilen bir şehrin, şehre ve kendilerine inanan güçlü vatandaşlara ihtiyacı vardır. Ve zayıflık anında onları yönlendirecek çobanlara. Bu şehrin daha dindar [ROOT.Char.GetFaith.GetAdherentNamePlural].\n\nBen önemli miktarda maddi güce sahip dindar bir [ROOT.Char.GetWomanMan] olarak algılanıyorum. Tam olarak doğru miktarda altın ve ikna edici vaizlerden gelen dualarla, sürüm burada olacak ve onu sıkı bir şekilde iyi niyetle [ROOT.Char.GetFaith.HighGodNamePossessive] tutacak dini aygıtla birlikte." #NT!
+ ep3_laamp_decision_event.1137.a: "[ROOT.Char.GetFaith.HighGodName] mübarek olsun!" #NT!
+ ep3_laamp_decision_event.1137.b: "Bu amaç uğruna bağışta bulunacağım." #NT!
+ ep3_laamp_decision_event.1137.c: "Ne yazık ki hayır." #NT!
+  
+ ep3_laamp_decision_event.1140.toast: "[city_location.GetName] temettü ödüyor" #NT!
+  
+  # Renounce Governorship 
+ renounce_governorship_decision: "Valilikten Emekli Olmak" #NT!
+ renounce_governorship_decision_desc: "Ailene çekil [estate|E] ve [governorship|E].\n\nGölgelerde çürü, yanan bir anka kuşu olarak geri dön." #NT!
+ renounce_governorship_decision_tooltip: "[governor|E] olmayı bırak" #NT!
+ renounce_governorship_decision_confirm: "Çok memnun oldum." #NT!
+ renounce_governorship_decision_effect_tt: "[governor|E] olmaktan vazgeç" #NT!
+ ep3_renounced_governorship: "Gölgelerde" #NT!
+ ep3_renounced_governorship_desc: "Bu karakter valilikten vazgeçip doğru zamanı beklemeyi seçti." #NT!
+  
+ ep3_decisions_event.4090.t: "Bir Adım Geri" #NT!
+ ep3_decisions_event.4090.desc: "Arazinin duvarlarının ötesinde, çocuklar oyun oynarken bağırıyor, arabalar büyük kayalara çarpıyor, bir tüccar mallarını bağırıyor.\n\n[liege.GetTitledFirstName]'a yeterince uzun süre hizmet ettim.\n\nBu duvarlar kendi kendine inşa edilmeyecek ve bir evin her şeyden çok sağlam temellere ihtiyacı var." #NT!
+ ep3_decisions_event.4090.a: "Bekliyor olacağım." #NT!
+  
+  # Change Imperial Aspirations 
+ change_imperial_aspirations_decision: "Değiştir [GetPlayer.GetTopLiege.Custom('GetRoyalCourtRank')|U] Arzular" #NT!
+ change_imperial_aspirations_decision_desc: "Herkes tahta oturmak için merdiveni yeterince tırmanmaya uygun değil, hatta bunu istemiyor bile. Mevcut pozisyonumdan tamamen memnunken neden risk alayım ki? Diğerleri bu engerekler yuvasında savaşabilir!" #NT!
+ change_imperial_aspirations_decision_tooltip: "Tahtı isteyip istemediğinizi belli edecek bir duruş sergileyin" #NT!
+ change_imperial_aspirations_decision_confirm: "Niyetim belli olsun" #NT!
+ admin_renounce_throne_personal_name: "Kişisel hırstan vazgeç" #NT!
+ admin_renounce_throne_personal_desc: "Taht için yarışmak istemediğinizi #bold istemediğinizi#! bilin." #NT!
+ admin_renounce_throne_personal_tooltip: "$admin_renounce_throne_personal_desc$" #NT!
+ admin_desire_throne_personal_name: "Kişisel hırsınızı ilan edin" #NT!
+ admin_desire_throne_personal_desc: "Taht için yarışacaksınız." #NT!
+ admin_desire_throne_personal_tooltip: "$admin_desire_throne_personal_desc$" #NT!
+ admin_renounce_throne_house_name: "Ev hırsından vazgeç" #NT!
+ admin_renounce_throne_house_desc: "Bilinsin ki, #bold asla#! #EMP hiç kimsenin#! taht için yarışmasına izin vermiyorsunuz." #NT!
+ admin_renounce_throne_house_tooltip: "$admin_renounce_throne_house_desc$" #NT!
+ admin_desire_throne_house_name: "Ev hırsını ilan et" #NT!
+ admin_desire_throne_house_desc: "[house|E] [GetPlayer.GetHouse.GetName]'in hepsi taht için yarışmaya hak kazanır." #NT!
+ admin_desire_throne_house_tooltip: "$admin_desire_throne_house_desc$" #NT!
+  
+  # The Knight of the Swan 
+ knight_errant_decision: "[ROOT.Char.CustomFixedRandom('GetKnightErrantAnimal')|U]'in $knight_culture_player_no_tooltip$'ı" #NT!
+  #AGOT Modified 
+ #: "#"
+ knight_errant_decision_desc: "Tehlikede olanları kurtarmak için yaldızlı bir [ROOT.Char.CustomFixedRandom('GetKnightErrantAnimal')]'in üzerine binmiş gizemli bir $knight_culture_player_no_tooltip_lowercase$'ın geldiği söylenir.\n\nIşıltılı bir asil at ve üzerinde görkemli bir $knight_culture_player_no_tooltip_lowercase$ oturuyordu." #NT!
+ knight_errant_decision_tooltip: "[GetTrait('knight_errant').GetName( GetNullCharacter )] Ol" #NT!
+ knight_errant_decision_confirm: "[ROOT.Char.GetHerHis] türünün en iyisi." #NT!
+ knight_errant_decision_effect_tt: "$knight_errant_decision_tooltip$" #NT!
+ camp_purpose_mercenaries_tt: "[GetLaw('camp_purpose_mercenaries').GetName] [camp_purpose|E]'e sahip olmalısınız" #NT!
+ GetKnightErrantAnimal_swan: "kuğu" #NT!
+ GetKnightErrantAnimal_tiger: "kaplan" #NT!
+ GetKnightErrantAnimal_lion: "aslan"
+ GetKnightErrantAnimal_hart: "kalp" #NT!
+ ep3_knight_of_the_swan_house_modifier: "Kuğu şarkısı" #NT!
+ ep3_knight_of_the_swan_house_modifier_desc: "Bu ev, güçlü şövalyelik ve onur duygusuyla ünlüdür." #NT!
+ knight_errant_decision_tt: "#V [contract_tally]/10#! [martial|E] veya [prowess|E] [task_contracts|E]'i tamamladınız [criminal|E] doğa" #NT!
+ task_contract_justicar_contract_tracker_effect.tt: "[GetPlayer.CustomFixedRandom('GetKnightErrantAnimal')|U] [decision|E]'nin $knight_culture_player_no_tooltip$'ında ilerleme kaydediyorsunuz" #NT!
+ knight_errant_decision_armor_tt: ""[GetPlayer.CustomFixedRandom('GetKnightErrantAnimal')|U] Altın Ceketi" Zırh türü [artifact|E]'i kazanırsınız" #NT!
+ ep3_decisions_event.5001.t: "[ROOT.Char.CustomFixedRandom('GetKnightErrantAnimal')|U]'in $knight_culture_player_no_tooltip$'ı" #NT!
+ ep3_decisions_event.5001.desc.spouse: ""En asil [ROOT.Char.GetHerHis] türü," sevgili [adoring_fan.GetFirstNamePossessiveNoTooltip] sesimi omzuma nazik bir öpücük takip ediyor. "Her yerde seni arıyordum."\n\n"Kampta senin hakkında anlamsız hikayeler anlatıyorlar," [adoring_fan.GetSheHe] eğilip fısıldadı," #NT!
+ ep3_decisions_event.5001.desc.intro: ""En asil [ROOT.Char.GetHerHis] türü," [adoring_fan.GetFirstNamePossessiveNoTooltip] sesi beni ürkütüyor. "Her yerde seni arıyordum."\n\n"Kampta senin hakkında anlamsız hikayeler anlatıyorlar," [adoring_fan.GetSheHe] kıkırdar," #NT!
+ ep3_decisions_event.5001.desc: ""bir zamanlar kılıçlardan yapılmış bir köprüden geçtiğini, büyülü bir ormana girdiğini ve orada güzel bir [dummy_opposite_gender.GetWomanMan]'ı kurtardığını söylüyorlar... harikulade bir [ROOT.Char.CustomFixedRandom('GetKnightErrantAnimal')] sana mucizevi paltosunu verdi."\n\n[adoring_fan.GetSheHe|U] bir hizmetçiye incili bir zırh getirmesini işaret ediyor.\n\n"Yardım ettiğin herkesin bir hediyesi."" #NT!
+ ep3_decisions_event.5001.a: ""Ve hâlâ yeterince yardım edemedim."" #NT!
+ ep3_decisions_event.5001.b: ""#EMP Çok sayıda#! çeşit yardım sunabilirim."" #NT!
+ ep3_courteous_knight_modifier: "Nazik Şövalye" #NT!
+ ep3_courteous_knight_modifier_desc: "Bu karakter, aşkın hayattaki en büyük mutluluk olduğunu anlıyor." #NT!
+ ep3_valiant_knight_modifier: "Cesur Şövalye" #NT!
+ ep3_valiant_knight_modifier_desc: "Bu karakter, masumların savunulmasını birinci önceliği haline getirmiştir." #NT!
+ ep3_courteous_knight_var_tt: "[GetScheme('courting').GetTypeName] [schemes|E]'deki [success_chance|E]'ınız büyük ölçüde artacaktır" #NT!
+ SCHEME_COURTEOUS_KNIGHT: "Sen nazik bir şövalyesin: $VALUE|+0=$" #NT!
+ artifact_knight_of_the_swan_tt: "[newly_created_artifact.GetName]'ın sahibi olacaksın" #NT!
+ artifact_knight_of_the_swan_name: "[ROOT.Char.CustomFixedRandom('GetKnightErrantAnimal')|U]'ın Altın Paltosu" #NT!
+ artifact_knight_of_the_swan: "Çiçek motifleriyle süslenmiş bir zırh. Taşıyıcının asla ismini açıklamaması gerektiği söylenir." #NT!
+ swan_knight_title: "$knight_errant_decision$" #NT!
+ swan_knight_desc: "Ve sonra, inci parlaklığında küçük bir tekneyi çekerek gelen kar beyazı bir hayvan gördüler ve teknenin içinde, sanki onun yolunu gösteriyormuş gibi duran görkemli bir $knight_culture_player_no_tooltip_lowercase$ vardı." #NT!
+ legend_chapter_opening_swan_knight: "[ROOT.Legend.GetProtagonist.GetNameNoTooltip], [ROOT.Legend.GetProtagonist.GetHerHis] sadık takipçisiyle birlikte topraklarda dolaştı, haydutlarla savaştı ve ihtiyacı olanları kurtardı." #NT!
+ legend_chapter_motivation_swan_knight: "Bir sabah, sisli bir ormana girerken [ROOT.Legend.GetProtagonist.GetSheHe] bir yardım çığlığı duydu, [ROOT.Legend.GetProtagonist.GetSheHe] bu çağrıyı görmezden gelemedi." #NT!
+ legend_chapter_famous_deed_swan_knight: "Güzel bir kız, kötü bir şövalye tarafından tehdit ediliyordu, ancak [ROOT.Legend.GetProtagonist.GetFirstNameNoTooltip] onu tek bir savaşta yendi ve kan birikintisinden beyaz bir [ROOT.Legend.GetProperty( 'friendly_animal' ).GetFlagName] doğdu." #NT!
+ legend_chapter_conclusion_swan_knight: "[ROOT.Legend.GetProtagonist.GetSheHe|U] ona 'Adımı sorma, çünkü onu vermek bana düşmez' dedi." #NT!
+  
+ ep3_decisions_event.5002.t: "Aileye Bir Utanç" #NT!
+ ep3_decisions_event.5002.desc: ""Böyle bir rezilliğe uysalca katlanacağınızı hiç tahmin etmezdim." Bir at kampımızın hemen yanında duruyor. Binicisini #EMP canım#! [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('my_rival'))], [my_rival.GetTitledFirstName] olarak tanıyorum.\n\n"Ne oldu sana? $knight_culture_player_plural_no_tooltip_lowercase$ oynuyorsun, bir masalda yaşıyormuş gibi davranıyorsun," [my_rival.GetSheHe] yere tükürerek atından iniyor.\n\n"Ne zaman aklını başına toplayacaksın? Ailemizin iyi adını lekelemeye devam etmeden önce kendine biraz toprak al."" #NT!
+ ep3_decisions_event.5002.a: ""Belki de yerleşmenin zamanı gelmiştir..."" #NT!
+ ep3_decisions_event.5002.b: ""Onursuz [my_rival.GetWomenMen]'a ayıracak vaktim yok."" #NT!
+ rival_called_me_a_disgrace: "[TARGET_CHARACTER.GetShortUIName|U] suçlandı [CHARACTER.GetShortUIName] ailelerine karşı bir utanç olmakla" #NT!
+ rival_called_me_a_disgrace_corresponding: "[CHARACTER.GetShortUIName|U] suçlandı [TARGET_CHARACTER.GetShortUIName] ailelerine karşı bir utanç olmakla" #NT!
+ ep3_black_sheep: "Kara koyun" #NT!
+ ep3_black_sheep_desc: "Bu karakter, gezgin yaşam tarzları nedeniyle bir aile üyesinin kendisini aileleri için bir utanç kaynağı olarak nitelendirmesine karşı çıktı." #NT!
+ ep3_decisions_event_5002_a_tt: "#bold Arazi satın almak#! #high %50#! daha ucuz olacak" #NT!
+  
+  # Commission Icon 
+ commission_artifact_decision_option_trinket_icon_desc: "[AddTextIf( Not( ROOT.Char.GetInventory.GetSlot( 'miscellaneous' ).IsEmpty ), Concatenate( 'Currently Equipped:\n', ROOT.Char.GetInventory.GetEquippedArtifactsInSlotTypeString( 'miscellaneous', 'NEWLINE', 'NEWLINE', 'NEWLINE' ) ) )]" #NT!
+ commission_trinket_icon_tooltip: "#T Simgesi#! \n$DESC$" #NT!
+ commission_court_icon_large_tooltip: "#T Simgesi#! \n$DESC$" #NT!
+ commission_court_icon_small_tooltip: "#T Simgesi#! \n$DESC$" #NT!
+ commission_artifact_decision_option_trinket_icon: "Trinket_n#low Sahip olunan: [ROOT.Char.GetInventory.GetNumberOfArtifactsForSlotTypeString( 'miscellaneous' )]#!" #NT!
+ commission_artifact_decision_option_court_icon_large: "Büyük Duvar Askısı_n#low Sahip olunan: [ROOT.Char.GetInventory.GetNumberOfArtifactsForSlotTypeString( 'wall_big' )]#!" #NT!
+ commission_artifact_decision_option_court_icon_small_desc: "[AddTextIf( ROOT.Char.GetInventory.HasEquippedArtifactsInSlotType( 'wall_small' ), Concatenate( 'Currently Displayed:\n', ROOT.Char.GetInventory.GetEquippedArtifactsInSlotTypeString( 'wall_small', 'NEWLINE', 'NEWLINE', 'NEWLINE' ) ) )]" #NT!
+ commission_artifact_decision_option_court_icon_small: "Küçük Duvar Askısı_n#low Sahip olunan: [ROOT.Char.GetInventory.GetNumberOfArtifactsForSlotTypeString( 'wall_small' )]#!" #NT!
+ artifact_wall_court_icon_large_name: "Büyük Simge" #NT!
+  #AGOT MODIFIED 
+ #artifact_wall_court_icon_large_description: "Ortodoks kilisesinin geleneksel stilinde boyanmış, ciddi bir dini sahneyi tasvir eden etkileyici bir ikon: [owner.Custom('RandomIconTopic')]." #NT!
+ artifact_wall_court_icon_large_description: "Geleneksel [ROOT.Char.GetFaith.GetName] stilinde boyanmış, ciddi bir dini sahneyi tasvir eden etkileyici bir ikon." #NT!
+ artifact_wall_court_icon_small_name: "Küçük Simge" #NT!
+  #AGOT MODIFIED 
+ #artifact_wall_court_icon_small_description: "Ortodoks kilisesinin geleneksel stilinde boyanmış, canlı renklerle dini bir sahneyi tasvir eden küçük ama çağrışımlı bir ikon: [owner.Custom('RandomIconTopic')]" #NT!
+ artifact_wall_court_icon_small_description: "Geleneksel [ROOT.Char.GetFaith.GetName] stilinde boyanmış, canlı renklerle dini bir sahneyi tasvir eden küçük ama çağrışımlı bir ikon." #NT!
+ artifact_trinket_icon_name: "Taşınabilir Simge" #NT!
+  #AGOT MODIFIED 
+ #artifact_trinket_icon_description: "Ortodoks kilisesinin olağan stilinde boyanmış, geleneksel bir dini sahneyi tasvir eden taşınabilir bir ikon: [owner.Custom('RandomIconTopic')]. Küçük boyutuna rağmen, resimsel özellikler temiz, renkler canlı ve ton ciddi." #NT!
+ artifact_trinket_icon_description: "Geleneksel bir dini sahneyi tasvir eden, [ROOT.Char.GetFaith.GetName] stilinde boyanmış taşınabilir bir simge. Küçük boyutuna rağmen, resimsel özellikler düzgün, renkler canlı ve ton ciddi." #NT!
+ commission_icon_decision_effect: "Yerel bir ressam bir İkon [artifact|E] üretmek üzere çağrılır" #NT!
+ ep3_decisions_event.5000.t: "Simge Gerçekleştirildi" #NT!
+ ep3_decisions_event.5000.desc: "[local_artisan.GetFirstName], ikona görevimi emanet ettiğim ressam, bana [local_artisan.GetHerHis] emeğinin meyvesini sunmak üzere saraya geri döndü.\n\n"[ROOT.Char.GetFaith.HighGodName]-kutsanmış [ROOT.Char.GetTitleAsNameNoTooltip], geleneğe ve [ROOT.Char.GetFaith.HighGodNameAlternate]'ün bana verdiği becerilere göre çizdiğim bu kutsal ikonayı alçakgönüllülükle sunuyorum. Bu ikona, her zaman bağlılık ve doğruluk yolunda size ilham versin."" #NT!
+ ep3_decisions_event.5000.a: "Teşekkür ederim." #NT!
+ theotokos: "[Glossary( 'Theotokos', 'THEOTOKOS_GLOSS')]" #NT!
+ ladder_heaven: "Cennet Merdiveni" #NT!
+ pantokrator: "Mesih [Glossary( 'Pantokrator', 'PANTOKRATOR_GLOSS')]" #NT!
+ annunciation: "Başmelek Cebrail'in Meryem Ana'ya Müjdelemesi" #NT!
+ saint_peter: "Aziz Petrus, gözlemciye sert bir şekilde bakıyor" #NT!
+ saint_paul: "Aziz Paul, sade bir öğretim pozisyonunda" #NT!
+ saint_theodore: "Tam zırhlı Aziz Theodore" #NT!
+ saint_basil: "Aziz Basil kitaplarıyla" #NT!
+ moses: "Musa'nın Yanan Çalıdan Tevrat tabletlerini alması" #NT!
+ archangel_michael: "Başmelek Mikail Lucifer'i yendi" #NT!
+ crucifixion: "Çarmıha Gerilme" #NT!
+ commission_icon_decision: "Komisyon Simgesi" #NT!
+ commission_icon_decision_desc: "Güzel sanatın tefekkür ve hayranlığı bizi Tanrı'ya yaklaştırır ve inancımızı güçlendirir. Bu yüzden yeni bir kutsal ikona üretimi için yerel bir ressama himayemi sunmalıyım!" #NT!
+ commission_icon_decision_tooltip: "Yerel bir ressamdan dini bir ikon [artifact|E] siparişi verin" #NT!
+ commission_icon_decision_confirm: "Ressam çağrısı" #NT!
+ THEOTOKOS_GLOSS: ""Tanrı'nın Annesi", Meryem. İkonografide, bu tanım Bizans sanatının çok sevdiği bir sahneyi tanımlar: Meryem'in emzirmesi veya genel olarak kucağında bebek İsa'yı tutması." #NT!
+ PANTOKRATOR_GLOSS: ""Her Şeye Gücü Yeten Mesih" veya "Her Şeyin Hükümdarı". Bizans ikonografisinde çok yaygın olan bu, İsa'nın bir elinde Yeni Ahit tutarken diğer eliyle de izleyenleri kutsadığı bir tasvirdir." #NT!
+  
+  # Hire Chief Eunuch 
+ hire_eunuch_decision: "$chief_eunuch_court_position$ için ara" #NT!
+ hire_eunuch_decision_desc: "[GetCourtPositionType('chief_eunuch_court_position').GetDescription|U]" #NT!
+ hire_eunuch_decision_tooltip: "Hizmetçileriniz [GetCourtPositionType('chief_eunuch_court_position').GetName()] pozisyonu için uygun adaylar önerecektir." #NT!
+ ep3_decisions_event.5010.t: "Değerli [GetCourtPositionType('chief_eunuch_court_position').GetNameNoTooltip|U]" #NT!
+ ep3_decisions_event.5010.desc: "Hizmetkarlarım sarayıma katılacak değerli bir $chief_eunuch_court_position$ bulmak için her yeri aradılar.\n\nÖzellikle iki aday dikkatimi çekti: [mediocre_eunuch.GetFirstName] kendini kanıtlamak konusunda çok kararlı, ancak [good_eunuch.GetFirstName] daha yetenekli görünüyor." #NT!
+ ep3_decisions_event.5010.a: "[mediocre_eunuch.GetFirstNameNoTooltip] doğru tutuma sahip!" #NT!
+ ep3_decisions_event.5010.a.aptitude: "[mediocre_eunuch.GetUINamePossessive] [aptitude|E] [mediocre_eunuch.GetCourtPositionAptitude( GetCourtPositionType( 'chief_eunuch_court_position' ) )]'dir" #NT!
+ ep3_decisions_event.5010.b: "[good_eunuch.GetFirstNameNoTooltip] bana daha fazla güven veriyor." #NT!
+ ep3_decisions_event.5010.b.aptitude: "[good_eunuch.GetUINamePossessive] [aptitude|E] [good_eunuch.GetCourtPositionAptitude( GetCourtPositionType( 'chief_eunuch_court_position' ) )]'dir" #NT!
+  
+  # Embrace Heresy 
+ embrace_heresy_decision: "Sapkınlığı benimseyin" #NT!
+ embrace_heresy_decision_desc: "[ROOT.Char.GetTopLiege.GetPrimaryTitle.GetNameNoTooltip] tarafından onaylanan resmi bir inancın varlığına rağmen, sapkın inançlar ülkemizde çoğalıyor. Bunlardan birini alenen benimseyip kendimi onun başına koysaydım, dizginsiz bir inancın ham potansiyelini gücümü artırmak ve siyasi gündemimi takip etmek için kullanabilirdim." #NT!
+ embrace_heresy_decision_tooltip: "Bir sapkınlığı benimse ve onun başı ol" #NT!
+ heresy_in_empire_or_bordering_tt: "En az 3 [counties|E]'in takip ettiği, [top_liege|E] [realm|E]'ünüzün [state_faith|E]'i ile aynı [religion|E]'ye ait ancak [faith_hostile|E] olarak kabul edilen bir [faith|E], [top_liege|E]'ünüzün [realm|E]'ü içinde en az 1 ilçede veya yabancı bir sınır komşusu ilçede mevcut olmalıdır." #NT!
+ ep3_decisions_event.5020.t: "Sapkınlığı kucaklamak" #NT!
+ ep3_decisions_event.5020.desc: "Fırsat açık ve benim tek yapmam gereken onu yakalamak.\n\n[heresy_1.GetAdjective|U] inancı [ROOT.Char.GetTopLiege.GetPrimaryTitle.GetNameNoTooltip]'de yükselişte ve onu siyasi sahnede temsil edecek güçlü, etkili bir rehbere ihtiyaç duyuyor. Elbette, kendimi sapkın olarak görülme pozisyonuna sokmak bir risk, ancak zulüm gören bir azınlığı ortak bir bayrak etrafında toplamanın kullanılmayan potansiyeli cezbedici." #NT!
+ ep3_decisions_event.5020.desc_more: "\n\n[ROOT.Char.GetTopLiege.GetPrimaryTitle.GetTierAsNameNoTooltip]'ın dini sahnesi o kadar parçalı ki ilk tercihime bağlı kalmak zorunda değilim." #NT!
+ ep3_decisions_event.5020.a: "[heresy_1.GetNameNoTooltip|U] yoldur." #NT!
+ ep3_decisions_event.5020.b: "Belki [heresy_2.GetNameNoTooltip] daha umut verici görünüyor?" #NT!
+ ep3_decisions_event.5020.c: "[heresy_3.GetNameNoTooltip|U] en fazla potansiyele sahip." #NT!
+ ep3_decisions_event.5020.d: "Belki de çok aceleci davranıyorum..." #NT!
+ embrace_heresy_tt: "Seçilmiş sapkını kucaklayacaksın [faith|E]" #NT!
+ leverage_position_tt: "[hooks|E] ve [influence|E]'de, [top_liege|E]'lerinizde [realm|E] aynı sapkın [faith|E]'yı takip eden [vassals|E] ve [counties|E] arkadaşlarının sayısına orantılı olarak faydalar elde edeceksiniz." #NT!
+ unlocks_demand_state_faith_decision: "[GetDecisionWithKey('push_heresy_as_state_faith').GetName] [decision|E]'in kilidini aç" #NT!
+ has_embraced_heresy_tt: "[GetDecisionWithKey('embrace_heresy_decision').GetName] [decision|E] aracılığıyla [faith|E]'ı benimsediniz ve hala onu takip ediyorsunuz" #NT!
+ push_heresy_as_state_faith: "Devlet İnanç Değişimini Zorla" #NT!
+ push_heresy_as_state_faith_desc: "Rehberlik ettiğim inancın halk desteği [ROOT.Char.GetTopLiege.GetPrimaryTitle.GetNameNoTooltip] boyunca artıyor. [ROOT.Char.GetTopLiege.GetTitleAsNameNoTooltip]'in gücümüzü tanıması ve [ROOT.Char.GetFaith.GetName]'nin [ROOT.Char.GetTopLiege.GetPrimaryTitle.GetTierAsNameNoTooltip]'ün resmi inancı olarak tek geçerli seçim olduğunu kabul etmesinin zamanı geldi!" #NT!
+ push_heresy_as_state_faith_tooltip: "Efendinizi inancınızı devlet inancı olarak tanımaya zorlamaya çalışın" #NT!
+ try_to_push_faith_with_emperor_tt: "Efendiniz isteğinizi değerlendirecektir. Politik ve dini konumunuz ne kadar güçlüyse, kabul etme olasılıkları o kadar yüksektir. Başarı şansınızı artırmak için [influence|E]'ınızı ve [top_liege|E]'lerinizde [realm|E] aynı [faith|E]'inizi takip eden [vassals|E] ve [counties|E] olanların sayısını artırın." #NT!
+ ep3_decisions_event.5021.t: ""
+ ep3_decisions_event.5021.desc: ""
+ ep3_decisions_event.5021.a: ""
+ ep3_decisions_event.5021.a.tt: "Devlet İnancı Değişti" #NT!
+ ep3_decisions_event.5021.b: ""
+ ep3_decisions_event.5021.c: ""
+ ep3_decisions_event.5021.c.tt: "Devlet İnancı Değişmedi" #NT!
+ embrace_heresy_decision_confirm: "Sapkınlığı benimse" #NT!
+ push_heresy_as_state_faith_confirm: "[ROOT.Char.GetTopLiege.GetTitleAsNameNoTooltip]'a basın" #NT!
+  
+  # Establish Silk Production 
+ establish_silk_production_decision: "İpek Üretimi Kurmak" #NT!
+ establish_silk_production_decision_desc.boilerplate: "Antik çağlarda ipekböceklerinin Doğu'nun en ücra köşelerinden İstanbul'a kaçırıldığı günden bu yana, ipek üretimi ve satışı her zaman imparatorluğun tekelinde olmuştur." #NT!
+ establish_silk_production_decision_desc: "$establish_silk_production_decision_desc.boilerplate$\n\nPahalı bir girişim olurdu, ancak aile mülkümüzde kendi ipek üretimimizi kurmamıza izin verilmesi için imparatorluk muafiyeti satın alabilirdik." #NT!
+ establish_silk_production_decision_desc.emperor: "$establish_silk_production_decision_desc.boilerplate$\n\nİmparatorluk ailesinin başı olarak, kendime ve haleflerime, tek bir el hareketiyle, bu eserin imalatının ayrıcalığını tanıyabilirim." #NT!
+ establish_silk_production_decision_tooltip: "[estate|E]'ınızdaki ipek üretim binalarının kilidini açmak için imparatorluk izni satın alın" #NT!
+ establish_silk_production_decision_confirm: "Ödemeyi gönder" #NT!
+ unlocked_estate_silk_buildings: "[GetDomicileBuilding('silk_01').GetName] [estate|E] [building|E]'nin kilidini açar" #NT!
+ unlocked_estate_silk_buildings_t: "[GetDomicileBuilding('silk_01').GetName] Kilidi Açıldı" #NT!
+ has_unlocked_estate_silk: "[GetModifier('ep3_unlocked_silk').GetNameWithTooltip] ile [GetDecisionWithKey('establish_silk_production_decision').GetName] arasındakiler açıldı [decision|E]" #NT!
+ commission_silk_regalia_decision: "Komisyon İpek Regalia" #NT!
+ commission_silk_regalia_decision_desc: "Ailem, en iyi Bizans ipeğinin imparatorluk tarafından yetkilendirilmiş birkaç üreticisi ve satıcısından biridir. Faaliyetimiz bize altın ve nüfuz getiriyor — ve daha fazla #EMP avantaj#! — ancak nadiren doğrudan faydalarından yararlanıyoruz. Sanırım kendim için bir kereliğine #EMP ekstra güzel#! bir şeyi hak ediyorum!" #NT!
+ commission_silk_regalia_decision_tooltip: "Kendiniz için ipekten yapılmış bir [artifact|E] siparişi verin" #NT!
+ commission_silk_regalia_decision_confirm: "Zanaatkar çağrısı" #NT!
+ commission_silk_regalia_decision_effect: "Mülkünüzdeki bir zanaatkar sizin için ipek bir Regalia [artifact|E] üretecek" #NT!
+ ep3_decisions_event.5030.t: "İpek Regalia Tamamlandı" #NT!
+ ep3_decisions_event.5030.desc: "Ailemizin Magnanery'sindeki usta zanaatkar [local_artisan.GetFirstName], bana en kaliteli ipek bornoz takımını zarif bir gösterişle sunuyor.\n\n"Siparişiniz hazır, [ROOT.Char.GetLadyLord]. Umarım standartlarınıza uygundur."\n\nİpek, parmaklarımın arasında su gibi akıyor, gözlerim dekorasyonun tüm küçük ayrıntılarını kavramaya çalışıyor." #NT!
+ ep3_decisions_event.5030.a: "Çok güzel!" #NT!
+ silk_regalia_name: "İnce İpek Kıyafetler" #NT!
+ silk_regalia_description: "Hanedanlık [owner.GetHouse.GetName]'daki Bizans stilinin en iyi zanaatkarları tarafından yapılmış, bir imparatora layık ipek cübbe seti.\n\nRenkler parlak ve karmaşık tasarımların öne çıkmasını sağlamak için altın iplikler zarif bir şekilde işlenmiştir." #NT!
+  
+  # Foster Integration 
+ foster_integration_decision: "Entegrasyonu Teşvik Etmek" #NT!
+ foster_integration_decision_desc: "Ailemin mülkü biraz çalkantılı bir bölgede yer alıyor. Bu mutlaka bir dezavantaj değil, çünkü hükümdarımın yerel halkı [ROOT.Char.GetTopLiege.GetPrimaryTitle.GetNameNoTooltip]'ın hakimiyeti altına daha sıkı bir şekilde sokmasına yardımcı olabilirken aynı zamanda politik ve finansal pozisyonumu da destekleyebilirim." #NT!
+ foster_integration_decision_tooltip: "[estate|E]'larınızın [county|E] de jure ve kültürel entegrasyonunu teşvik edin" #NT!
+ foster_integration_decision_confirm: "Hadi başlayalım" #NT!
+ improve_promote_culture_tt: "Efendiniz bu ilçeyi hedef aldığında [promote_culture|E] [councillor_task|E] bonusu kazanacak." #NT!
+ improve_de_jure_integration_tt: "Efendiniz bu ilçeyi hedef aldığında [integrate_title|E] [councillor_task|E] bonusu kazanacak." #NT!
+ improve_promote_culture_modifier_tt: "[ROOT.Char.GetTitledFirstName], [target_county.GetName]'de Kültürel Entegrasyonu teşvik etmeye başladı.\nBu ilçeyi hedefleyen [promote_culture|E] [councillor_task|E]'e bonus." #NT!
+ improve_de_jure_integration_modifier_tt: "[ROOT.Char.GetTitledFirstName], [target_county.GetName]'in De Jure Entegrasyonunu teşvik etmeye başladı.\nBu ilçeyi hedefleyen [integrate_title|E] [councillor_task|E]'e bonus." #NT!
+  
+  # Gather Faction Support 
+ gather_faction_support_decision: "Fraksiyon Desteği Topla" #NT!
+ gather_faction_support_decision_desc: "Ailemin mülkü, [ROOT.Char.GetHouse.GetName] evinin etkisinin her yöne yayıldığı bir düzen ve güç merkezidir. Bu elverişli konumdan yararlanarak fraksiyonum için yerel destekçiler toplayabilirim." #NT!
+ gather_faction_support_decision_tooltip: "Katıldığınız [faction|E] için destek toplayın" #NT!
+ gather_faction_support_decision_confirm: "Destekçileri Topla" #NT!
+ gathered_support_for_faction_army: "Yerel Destek Toplandı" #NT!
+ gathered_support_for_faction_get_army_tt: "Eğer bu [faction|E] önümüzdeki 5 yıl içinde [claim|E]'ine basarsa ve savaşa girerse, yerel askerlerden oluşan ekstra bir orduya sahip olacaksın ve $light_footmen$" #NT!
+ belong_to_claimant_liberty_faction_tt: "[claimant_faction|E] veya [liberty_faction|E]'e katılmış olmanız gerekir" #NT!
+  
+  # Separatist Uprising 
+ separatist_uprising_decision: "[ROOT.Char.GetCulture.GetNameNoTooltip] Kültürünün Şampiyonu Ol" #NT!
+ separatist_uprising_decision_desc: "Toprak, üzerinde yaşayanlara aittir. [ROOT.Char.GetCurrentLocation.GetCounty.GetTitle.GetDeJureLiege.GetDefinitiveNameNoTooltip|U], gerçek bir [ROOT.Char.GetCulture.GetNameNoTooltip] tarafından yönetilmelidir." #NT!
+ separatist_uprising_decision_tooltip: "[culture|E]'iniz için [duchy|E]'ı güvence altına alın" #NT!
+ separatist_uprising_decision_war_tt: "[war|E]'ı [GetModifier('ep3_separatist_uprising').GetNameWithTooltip] değiştiricisiyle #V 15#! yıl, [levies|E] ve bazı #high Özenle Seçilmiş Sadıklar#! [men_at_arms|E] #high #EMP veya#!#! için başlatırsınız. Hemen [war|E] başlatmazsınız, ancak [GetModifier('ep3_separatist_uprising').GetNameWithTooltip]2'yi korursunuz." #NT!
+ separatist_uprising_decision_pacifist_option_common_tt: "En azından #V 3#!'i tamamlarsanız [duchy|E] #V'ı barışçıl bir şekilde elde edersiniz#!:\n$EFFECT_LIST_BULLET$Highborn [GetPlayer.GetCurrentLocation.GetCounty.GetCulture.GetName] [spouse|E]\n$EFFECT_LIST_BULLET$[GetPlayer.GetCurrentLocation.GetCounty.GetFaith.GetAdjective] [faith|E]\n$EFFECT_LIST_BULLET$#!1 @weak_hook_icon! #!2'de" #NT!
+ separatist_uprising_decision_pacifist_option_friend_lover_tt: "$separatist_uprising_decision_pacifist_option_common_tt$\n$EFFECT_LIST_BULLET$[friend|E] veya [lover|E] / [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetHolder.GetLiege.GetTitledFirstName]$separatist_uprising_decision_pacifist_option_ending_tt$" #NT!
+ separatist_uprising_decision_pacifist_option_friend_tt: "$separatist_uprising_decision_pacifist_option_common_tt$\n$EFFECT_LIST_BULLET$[friend|E] / [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetHolder.GetLiege.GetTitledFirstName]$separatist_uprising_decision_pacifist_option_ending_tt$" #NT!
+ separatist_uprising_decision_pacifist_option_ending_tt: "\n$EFFECT_LIST_BULLET$1 daha fazla [prestige_level|E] [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetHolder.GetLiege.GetTitledFirstName]'den" #NT!
+ separatist_uprising_decision_confirm: "Silahlara, [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip]!" #NT!
+ ep3_separatist_uprising: "Ayrılıkçı Ayaklanma" #NT!
+ ep3_separatist_uprising_desc: "Bu karakter, tüm çabasını kültürüne toprak sağlamak için harcamıştır." #NT!
+ separatist_uprising_culture_county_tt: "[GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetName] #weak ([GetPlayer.GetCurrentLocation.GetCounty.GetCulture.GetName])#! ile aynı [culture|E]'a sahipsiniz" #NT!
+ separatist_uprising_capital_county_tt: "[camp|E]'ınız [capital|E] [county|E]'de bulunmuyor" #NT!
+ culture_separatists: "[ROOT.Char.GetCulture.GetNameNoTooltip] Ayrılıkçılar" #NT!
+  
+ ep3_decisions_event.6001.t: "[ROOT.Char.GetCulture.GetCollectiveNounNoTooltip] Şampiyonu" #NT!
+ ep3_decisions_event.6001.desc.intro: "Kamptan manzaraya soğuk bir esinti eşlik ediyor. [county.Custom('TerrainTypeCountyScope')] sonsuz gibi görünüyor. Benim ait olduğum yer burası, halkımın ait olduğu yer burası. Derin bir nefes alıyorum.\n\n" #NT!
+ ep3_decisions_event.6001.desc.spouse_common: ""Hepsi senin olabilir, biliyorsun," [spouse.GetFirstName]'ın tatlı sesi düşüncelerimi bölüyor." #NT!
+ ep3_decisions_event.6001.desc.spouse_same_culture: "$ep3_decisions_event.6001.desc.spouse_common$ "Sana hayranlık duyuyorlar, seni sonuna kadar takip ederler."" #NT!
+ ep3_decisions_event.6001.desc.spouse_diff_culture: ""Ben de [spouse.GetCulture.GetName] olsam bile bu insanların sana hayran olduğunu biliyorum. Seni kahramanları olarak görüyorlar. Onları hayal kırıklığına uğratma."" #NT!
+ ep3_decisions_event.6001.desc.no_spouse: "[liege.GetCulture.GetName] mı? [ROOT.Char.GetCulture.GetName] halkının hükümdarı mı? Sadece fikri bile beni iğrendiriyor. Ve tek olmadığımı biliyorum.\n\n" #NT!
+ ep3_decisions_event.6001.desc.outro: "Nereye baksam [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip]'ın sessiz kalmayacağını biliyorum. Bizim olanı geri alma zamanı." #NT!
+ ep3_decisions_event.6001.a: "Silahlara. #EMP Şimdi.#!" #NT!
+ ep3_decisions_event.6001.b: "Önce hazırlık yapmamız lazım." #NT!
+ ep3_decisions_event.6001.c: "[liege.GetShortUINameNoTooltip|U] benim için yabancı değil. [liege.GetSheHe|U] dinleyecektir." #NT!
+ ep3_decisions_event.6001.d: "Bu konu üzerinde daha fazla düşünmem gerekiyor." #NT!
+  
+ ep3_decisions_event.6002.t: "Popüler Bir Lider" #NT!
+ ep3_decisions_event.6002.desc: ""[ROOT.Char.GetCulture.GetCollectiveNoun] için! [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip] için! #EMP [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip] için, arghhh#!!"\n\nI nefes almak için bir an dur, göğsüm duyguyla sarsılıyor, sesim hala titriyor. [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip], [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip], [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip]. Kimin için savaştığımı unutmamalıyım.\n\n"[loser.GetTitledFirstName] düştü, benim [ROOT.Char.GetLadyLord]'um!" Duyuru, toprakla kaplı genç bir oğlandan geliyor. "Kazandık!"" #NT!
+ ep3_decisions_event.6002.a: "Biz özgürüz." #NT!
+  
+ trait_populist_leader: "Popülist Lider" #NT!
+ trait_populist_leader_desc: "Bu karakter, halkının bağımsızlığı için mücadele ettikten sonra iktidara geldi." #NT!
+ trait_populist_leader_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip], [ROOT.GetCharacter.GetHerHis] halkının bağımsızlığı için mücadele ettikten sonra iktidara geldi." #NT!
+  
+ ep3_master_todor_modifier: "Yerel Simge" #NT!
+ ep3_master_todor_modifier_desc: "Bu karakter, kültürlerinden vazgeçmeye direnmesi nedeniyle halkı tarafından hayranlıkla karşılanmaktadır." #NT!
+  
+ legitimize_latin_dominion_decision: "Latin hakimiyetini meşrulaştırın" #NT!
+ legitimize_latin_dominion_decision_desc: "Topraklarımın sakinleri Yunanlıların İmparatorlarını hatırlasalar da, olanlara boyun eğecekler. Biz Latinler geldik ve sonsuz bir saltanat için buradayız." #NT!
+ legitimize_latin_dominion_decision_confirm: "Sonsuza dek bizim olacak bir krallık!" #NT!
+ control_byzantine_kingdom_tt: "[realm|E]'ınız #high 80%#!'nin [de_jure|E]'ünün [kingdom|E]'ünü içerir" #NT!
+ hold_byz_kingdom_title_tt: "Siz veya [vassals|E]'larınızdan biri [kingdom|E] [title|E]'yi tutuyor" #NT!
+ latin_capital_byzantine_kingdom_tt: "[capital|E]'ınız [GetTitleByKey('e_byzantium').GetName]'ün [de_jure|E] [kingdom|E]'si içindedir" #NT!
+ is_latin_emperor_tt: "[primary_title|E]'ınız [GetTitleByKey('e_latin_empire').GetName]'dir" #NT!
+ gain_byz_kingdom_de_jure_tt: "[GetTitleByKey('e_latin_empire').GetName], [realm|E] içindeki [GetTitleByKey('e_byzantium').GetAdjective] [kingdom|E]'ün [de_jure|E] mülkiyetini kazanır" #NT!
+ legitimize_latin_control_tt: "[county_control|E] yeni [GetTitleByKey('e_latin_empire').GetAdjective] boyunca artar [kingdom|E]" #NT!
+ legitimize_latin_cultural_acceptance_tt: "[cultural_acceptance|E], yeni [GetTitleByKey('e_latin_empire').GetAdjective] [kingdom|E]'ün tüm [county|E] [cultures|E]'siyle artar" #NT!
+ legitimize_latin_dominion_decision_tooltip: "[de_jure|E]'in [GetTitleByKey('e_latin_empire').GetName] topraklarına bir [kingdom|E] ekleyin" #NT!
+  
+ is_greek_tt: "Sen $greek$'sın" #NT!
+ is_greek_descendent_tt: "[culture|E]'ınız $greek$'den türemiştir" #NT!
+ no_byz_emp_exists_tt: "Hayır [ruler|E] [GetTitleByKey('e_byzantium').GetName]'i tutar" #NT!
+  
+ expunge_latin_dominion_decision: "Latin Hakimiyetini Sil" #NT!
+ expunge_latin_dominion_decision_desc: "Roma kasapları, Latin haçı takan iblisler, ateş ve kanla bir imparatorluk tacını ele geçirdiler. Şimdi, kadim topraklarımız üzerinde kalıcı haklar talep etmeye #EMP cesaret ediyorlar#!.\n\nKrallık krallık — bu kaba iddiacıları mahrum edin! Onları dışarı atın!" #NT!
+ expunge_latin_dominion_decision_confirm: "Latin kibrini tarihten çıkarın!" #NT!
+ expunge_latin_dominion_decision_tooltip: "[de_jure|E] [GetTitleByKey('e_latin_empire').GetAdjective] [kingdom|E]'yi [GetTitleByKey('e_byzantium').GetName]'e döndür" #NT!
+ remove_latin_kingdom_de_jure_tt: "[de_jure|E] [GetTitleByKey('e_latin_empire').GetAdjective] [kingdom|E]'nin mülkiyeti [GetTitleByKey('e_byzantium').GetName]'e iade edilir" #NT!
+ legitimize_byz_control_tt: "[county_control|E] yeni [GetTitleByKey('e_byzantium').GetAdjective] boyunca artar [kingdom|E]" #NT!
+ control_latin_kingdom_tt: "[realm|E]'ınız [de_jure|E] [GetTitleByKey('e_latin_empire').GetAdjective] [kingdom|E]'ün her [county|E]'ini içerir" #NT!
+ has_latin_kingdom_title_tt: "[GetTitleByKey('e_latin_empire').GetName]'ye ait [kingdom|E] [title|E]'i ve [de_jure|E] [counties|E]'nın en az %50'sini #high #! tutuyorsunuz" #NT!
+ liege_isnt_latin_emp_tt: "[liege|E]'ınızın [primary_title|E]'i [GetTitleByKey('e_latin_empire').GetName] değildir" #NT!
+ you_arent_an_emp_tt: "[primary_title|E]'ınız [GetTitleByKey('e_byzantium').GetName] olmayan bir [empire|E] değildir" #NT!
+  
+ holds_roman_emp_tt: "[GetTitleByKey('e_roman_empire').GetName]'ı tutuyorsunuz" #NT!
+ legitimize_latin_holder_influence_tt: "Ya @influence_icon![influence|E] kazanacaksınız ya da [kingdom|E]'ler [holder|E] ile [opinion|E] kazanacaksınız" #NT!
+ legitimize_latin_holder_legitimacy_tt: "Ya @legitimacy_icon![legitimacy|E] kazanacaksınız ya da [kingdom|E]'ler [holder|E] ile [opinion|E] kazanacaksınız" #NT!
+  
+  # Go Fishing 
+ go_fishing_decision: "Balık Tutmaya Git" #NT!
+ go_fishing_decision_desc: "Herkes bazen bir molayı hak eder. Bir an durun ve oltanızı [ROOT.Char.GetCurrentLocation.GetBaronyNameExplicitly] su kıyısına atın ve dünyanın endişelerinin akıntıya kapılmasına izin verin. Kim bilir, belki sizin için de bir şeyler vardır." #NT!
+ go_fishing_decision_tooltip: "Biraz mola verin ve [stress_loss_i|E][stress|E] kayıp yaşayın" #NT!
+ go_fishing_decision_confirm: "Balık tutmak için güzel bir gün!" #NT!
+ go_fishing_decision_effect_tt: "[stress_loss_i|E][stress|E] kaybedin ve biraz [provisions|E] kazanma şansı yakalayın" #NT!
+ go_fishing_decision_unlock_tt: "Kampınızın kıyı veya nehir kenarında olması gerekir [barony|E]" #NT!
+ ep3_decisions_event.9001.t: "Balığa Gittim" #NT!
+ ep3_decisions_event.9001.desc: "Su kıyısına doğru ilerlerken, tuz ve balık kokusu burnuma doluyor. Birkaç kişi işini bitiriyor ve tüm kıyı şeridini kullanmam için bana bırakıyorlar. Böyle bir gün her gün gelmiyor ve ben de bundan en iyi şekilde yararlanmalıyım." #NT!
+ ep3_decisions_event.9001.friend: "\n\nBenim [ROOT.Char.Custom2('RelationToMeShort', potential_friend)] [potential_friend.GetName]'im bugün bana katılmaya karar verdi. Bağlanmak için bir fırsat kendini gösteriyor ya da tek başıma balık tutmayı seçebilirim." #NT!
+ ep3_decisions_event.9001.fishing: "\n\nRahatlama dolu bir gün sizi bekliyor!" #NT!
+ ep3_decisions_event.9001.ice_fishing: "Uçsuz bucaksız donmuş bir su kütlesi bizi bekliyor, yapmam gereken tek şey küçük bir delik açabileceğim iyi bir yer bulmak." #NT!
+ ep3_decisions_event.9001.a: "Sular beni ve sadece beni çağırıyor." #NT!
+ ep3_decisions_event.9001.a.tt: "#weak Biraz yalnız kalıp düşüneceğim.#!" #NT!
+ ep3_decisions_event.9001.b: "[potential_friend.GetNameNoTooltip] ile vakit geçirme fırsatı!" #NT!
+ ep3_decisions_event.9001.b.tt: "#weak [potential_friend.GetNameNoTooltip] ile baş başa geçirilen bir an ilişkimizi derinleştirebilir.#!" #NT!
+ ep3_decisions_event.9001.c: "Yakınlarda kiralayabileceğimiz bir tekne var mı acaba?" #NT!
+ ep3_decisions_event.9001.c.tt: "#weak Kıyıdan balık tutmaya kıyasla su üzerindeki bir teknenin büyük bir balık yakalama olasılığı daha yüksektir.#!" #NT!
+  
+ ep3_decisions_event.9010.t: "Düşünmek İçin Bir An" #NT!
+ ep3_decisions_event.9010.desc: "Derin bir nefes alıyorum ve oltamı suya atarken nefes veriyorum. Kanca sessiz bir 'plop' sesiyle yere iniyor ve dünya sessizleşiyor. \n\nGörüşüm kıyı şeridi boyunca geziniyor, düşüncelerimi işlemek için yalnız bir an geçiriyorum. Bir maceracı olarak hayat o kadar da kötü değil, ancak hiçbir hayat stressiz değildir. Bir şeyin oltayı ellerimden çekmesiyle aniden uyandığımda dinlenmek için bir an gözlerimi kapatıyorum." #NT!
+ ep3_decisions_event.9010.a: "Sıkıca tut ve çek!" #NT!
+ ep3_decisions_event.9010.b: "Çubuğun parmaklarınızın arasından kaymasına izin verin." #NT!
+ ep3_decisions_event.9010.b.trait: "Huzur zihninizi kavrar" #NT!
+ ep3_decisions_event.9010.b.nothing: "Direk senden uzağa doğru yüzüyor" #NT!
+  
+ ep3_decisions_event.9020.t: "Şüpheli Bağlantılar" #NT!
+ ep3_decisions_event.9020.desc: "Ben ve [potential_friend.GetNameNoTooltip] son zamanlarda iyi anlaşıyoruz gibi görünüyor. Aynı şakalara gülüyoruz, aynı konular hakkında endişeleniyoruz ve aramızdaki bağ sadece bir [ROOT.Char.GetTitleAsNameNoTooltip|U] ve onların [ROOT.Char.Custom2('RelationToMeShort', potential_friend)]'sinden daha büyük gibi görünüyor.\n\nHer birimiz oltalarımızı suya atıyoruz ve sabırla bir ısırık bekliyoruz, bu arada konuşuyor ve gülüyoruz. \n\nBu gezi birlikte harika çalıştığımızı kanıtladı ve gelecekte onlarla daha fazla zaman geçirmek istiyorum." #NT!
+ ep3_decisions_event.9020.a: "O kadar eğleniyorsun ki neredeyse buraya ne için geldiğini unutuyorsun." #NT!
+ ep3_decisions_event.9020.b: "Neyse, oltada bir balık var!" #NT!
+  
+ ep3_decisions_event.9030.t: "Sorunsuz Değil" #NT!
+ ep3_decisions_event.9030.desc: "Bir süre kürek çektikten sonra [ROOT.Char.GetCurrentLocation.GetBaronyNameExplicitly] kıyı şeridi görüş alanından kayboluyor. Ancak şimdi sadece bir deneme için yeterli yem getirdiğimi fark ediyorum." #NT!
+ ep3_decisions_event.9030.friend: "\n\n[potential_friend.GetNameNoTooltip]'a bakıyorum ve itiraf ediyorum, ama onlar rahatsız görünmüyorlar.\n\n"Ne olmuş yani!" diye bağırıyorlar. "Rahatlamak için buradayız. Hadi oltanı at, bakalım orada neler var!"" #NT!
+ ep3_decisions_event.9030.a: "Hadi bunu değerlendirelim!" #NT!
+ ep3_decisions_event.9030.a.fish: "#weak Bir [ROOT.Char.Custom('GetRegionalFish')] yakaladın! #!" #NT!
+ ep3_decisions_event.9030.a.fishfriend: "#weak [potential_friend.GetNameNoTooltip] bir [ROOT.Char.Custom('GetRegionalFish')] yakalar! #!" #NT!
+ ep3_decisions_event.9030.a.nofish: "#weak Hiçbir şey ısırmaz... #!" #NT!
+ ep3_decisions_event.9030.b: "Denemeni istiyorum, [potential_friend.GetNameNoTooltip]." #NT!
+  
+ butcher_animals_decision_name: "#warning Çaresiz Önlemler — Kasap Hayvanlar#!" #NT!
+ butcher_animals_decision_desc: "Çok, çok açız... ama etrafımızda bizi takip eden, stoklarımızın geri kalanını tüketen, sadakatle bizi takip edip kendi sonunu hazırlayan hazır et var. Bu kadar çaresiz zamanlarda, #EMP tüm#! alternatifleri düşünmeliyiz." #NT!
+ butcher_animals_decision_tooltip: "[modifiers|E] ve [domicile_buildings|E] hayvanını [provisions|E] karşılığında takas et" #NT!
+ BUTCHER_ANIMALS_DECISION_NEXT_STEP_BUTTON: "Lezzetli... #EMP et#!..." #NT!
+ butcher_animals_decision_confirm: "Bu son hizmeti onlar yapsınlar." #NT!
+ butcher_animals_decision.tt.you_have_no_dogs: "[camp|E]'ınızda köpek yok" #NT!
+ butcher_animals_decision_option_dogs: "Köpekleri yiyeceğiz." #NT!
+ butcher_animals_decision.tt.you_have_no_cats: "[camp|E]'ınızda kedi yok" #NT!
+ butcher_animals_decision_option_cats: "Kedilerin boyunlarını sıkın." #NT!
+ butcher_animals_decision.tt.you_have_no_horses: "[camp|E]'ınızın atı yok #WEAK ([men_at_arms|E] sayılmaz)#!" #NT!
+ butcher_animals_decision_option_horses: "#EMP Atlar#!, Atlar gitmeli." #NT!
+ butcher_animals_decision.tt.you_have_no_elephants: "[camp|E]'ınızda fil yok #WEAK ([men_at_arms|E] sayılmaz)#!" #NT!
+ butcher_animals_decision_option_elephants: "Fillerin çok fazla eti var..." #NT!
+ butcher_animals_decision.tt.dogs: "Köpeklerinizi yiyin" #NT!
+ butcher_animals_decision.tt.provisions_gain.per_dog_mod: "[character|E]'ün köpeği kesildiğinde [EmptyScope.ScriptValue('butcher_animals_decision_dog_provision_value')|0] [provisions_i][provisions|E] kazan" #NT!
+ butcher_animals_decision.tt.provisions_gain.building.dog: "[GetDomicileBuilding('baggage_train_kennel').GetName]'ünüzdeki birçok köpeği katlettiğinizde [EmptyScope.ScriptValue('butcher_animals_decision_dog_building_provision_value')|0] [provisions_i][provisions|E] kazanın" #NT!
+ butcher_animals_decision.tt.cooldown.dogs: "[EmptyScope.ScriptValue('butcher_animals_decision_regular_cooldown_value')|0] yıl boyunca köpeklerinizi bir daha yiyemezsiniz" #NT!
+ butcher_animals_decision.tt.cats: "Kedilerinizi yiyin" #NT!
+ butcher_animals_decision.tt.provisions_gain.per_cat_mod: "[character|E]'ün kedisi kesildiğinde [EmptyScope.ScriptValue('butcher_animals_decision_cat_provision_value')|0] [provisions_i][provisions|E] kazan" #NT!
+ butcher_animals_decision.tt.cooldown.cats: "[EmptyScope.ScriptValue('butcher_animals_decision_regular_cooldown_value')|0] yıl boyunca kedilerinizi bir daha yiyemezsiniz" #NT!
+ butcher_animals_decision.tt.horses: "Atlarınızı yiyin" #NT!
+ butcher_animals_decision.tt.provisions_gain.your_horse_mod: "Atınızı parçalayarak [EmptyScope.ScriptValue('butcher_animals_decision_horse_provision_value')|0] [provisions_i][provisions|E] kazanın" #NT!
+ butcher_animals_decision.tt.provisions_gain.building.horse: "Birçok [GetDomicileBuilding('baggage_train_ample_steeds').GetName]'ünüzü katlettiğiniz için [EmptyScope.ScriptValue('butcher_animals_decision_horse_building_provision_value')|0] [provisions_i][provisions|E] kazanın" #NT!
+ butcher_animals_decision.tt.cooldown.horses: "[EmptyScope.ScriptValue('butcher_animals_decision_regular_cooldown_value')|0] yıl boyunca atlarınızı bir daha yiyemezsiniz" #NT!
+ butcher_animals_decision.tt.elephants: "Fillerinizi yiyin" #NT!
+ butcher_animals_decision.tt.provisions_gain.building.elephant: "[GetDomicileBuilding('proving_grounds_elephantry_reserve').GetName]'ünüzün kalın derili hayvanlarını doğrayarak [EmptyScope.ScriptValue('butcher_animals_decision_elephant_building_provision')|0] [provisions_i][provisions|E] kazanın" #NT!
+ butcher_animals_decision.tt.cooldown.elephants: "[EmptyScope.ScriptValue('butcher_animals_decision_elephant_cooldown_value')|0] yıl boyunca fillerinizi bir daha yiyemezsiniz" #NT!
+ butcher_animals_decision.tt.dog.you: "Bir köpeğin var" #NT!
+ butcher_animals_decision.tt.dog.courtier: "[followers|E]'ınızdan herhangi birinin köpeği var mı?" #NT!
+ butcher_animals_decision.tt.recently_ate_dogs: "Yakın zamanda köpeklerinizi yediniz" #NT!
+ butcher_animals_decision.tt.cat.you: "Bir kediniz var" #NT!
+ butcher_animals_decision.tt.cat.courtier: "[followers|E]'ınızdan herhangi birinin kedisi var mı?" #NT!
+ butcher_animals_decision.tt.recently_ate_cats: "Yakın zamanda kedilerinizi yediniz" #NT!
+ butcher_animals_decision.tt.horse.you: "Kişisel bir atınız var" #NT!
+ butcher_animals_decision.tt.recently_ate_horses: "Yakın zamanda atlarınızı yediniz" #NT!
+ butcher_animals_decision.tt.recently_ate_elephants: "Yakın zamanda atlarınızı yediniz" #NT!
+ butcher_dogs_tooltip: "Onlar iyi çocuklardı ama daha iyi yemekler yapacaklar" #NT!
+ butcher_cats_tooltip: "Kedide pek et yoktur ama #EMP güzel#! çorba yaparlar." #NT!
+ butcher_horses_tooltip: "Hiçbir şey bir at kadar çığlık atamaz." #NT!
+ butcher_elephants_tooltip: "Güçlü yanlarından zeki gözlerine kadar her şeyiyle yenilebilir." #NT!
+  
+ ep3_laamp_decision_event.1201.t: "[ROOT.Char.GetPrimaryTitle.GetDefinitiveNameNoTooltip|l]'ın Son Kabuğu" #NT!
+ ep3_laamp_decision_event.1201.desc.intro: "Yiyecek olarak yetiştirmediğiniz bir hayvanı öldürmek korkunç bir şeydir. Özellikle de bir tazı, herhangi bir [ROOT.Char.GetWomanMan]'ın muhtemelen tanıyacağı en sadık yoldaş.\n\n" #NT!
+ ep3_laamp_decision_event.1201.desc.eaten.kennels.have_dog: "Köpekler katliama götürülürken şeytanlar gibi havlıyor, kan, ölüm ve arkadaşlarının yığılmış bedenlerinin kokusunu alıyorlar. [ROOT.Char.Custom('DogStoryName')]'a kendim bakacağım, [ROOT.Char.Custom('DogStoryHerHim')]'e bu kadarını borçluyum." #NT!
+ ep3_laamp_decision_event.1201.desc.eaten.kennels.no_dog: "Köpekler katliama götürülürken şeytanlar gibi havlıyor, kan, ölüm ve arkadaşlarının yığılmış bedenlerini kokluyorlar. Bazılarını ismen tanıyordum ama en azından kendimi hiçbirine [ROOT.Char.Custom('MistressMaster')] olarak sayamam." #NT!
+ ep3_laamp_decision_event.1201.desc.eaten.one.have_dog: "Elimde sadece sevgili [ROOT.Char.Custom('DogStoryName')] varken, kesilecek sadece bir boğaz var. Yine de, [ROOT.Char.Custom('DogStorySheHe')] bir şeylerin yanlış olduğunu, benimle ilgili #EMP off#! bir şeylerin olduğunu hissediyor gibi." #NT!
+ ep3_laamp_decision_event.1201.desc.eaten.one.no_dog: "Kampta yalnızca bir köpek olduğu için çok büyük bir katliam yaşanmasa da, canavar yine de sonunun yaklaştığını anlıyor gibi görünüyor." #NT!
+ ep3_laamp_decision_event.1201.desc.eaten.some.have_dog: "Bizim için çok az köpek varken, benim [ROOT.Char.Custom('DogStoryName')]'ımın katliama katılması gerektiği konusunda hiç şüphe yok. İlki temiz bir şekilde doğranır, ancak kalanlar kısa sürede avın kokusunu alır ve inlemeye ve sızlanmaya başlar." #NT!
+ ep3_laamp_decision_event.1201.desc.eaten.some.no_dog: "Bizim için çok az köpek varken, gerçekten de yiyecek için çaresiz olmalıyız. İlki temiz bir şekilde doğranır, ancak kalanlar kısa sürede avın kokusunu alır ve inlemeye ve sızlanmaya başlar." #NT!
+ ep3_laamp_decision_event.1201.desc.eaten.many.have_dog: "Şanslıyız ki, benim [ROOT.Char.Custom('DogStoryName')]'ım da dahil olmak üzere bol miktarda köpeğimiz var, ancak gergin görünüyorlar — sanki onları neyin beklediğinden şüpheleniyorlarmış gibi. İlki ölmek üzere götürüldükten sonra, ağlamaya başlıyorlar." #NT!
+ ep3_laamp_decision_event.1201.desc.eaten.many.no_dog: "Şanslıyız ki bol miktarda köpeğimiz var, bizi besleyecek bol miktarda potansiyel yiyecek, ama gergin görünüyorlar — sanki onları neyin beklediğinden şüpheleniyorlarmış gibi. İlki ölmek üzere götürüldükten sonra, ağlamaya başlıyorlar." #NT!
+ ep3_laamp_decision_event.1201.desc.outro: "\n\nTakipçilerimin çoğu bana iğrenerek bakıyor, ama bazıları bunun bir gereklilik olduğunu anlıyor gibi görünüyor.\n\nEn azından yakında sessizleşecek." #NT!
+  
+ ep3_laamp_decision_event.1201.tt.dog_lost: "[THIS.Char.GetTitledFirstNameNicknamedPossessive] köpek, [THIS.Char.Custom('DogStoryName')], katledildi" #NT!
+ ep3_laamp_decision_event.1201.tt.your_dog_lost: "Köpeğiniz [THIS.Char.Custom('DogStoryName')], katledildi" #NT!
+ ep3_laamp_decision_event.1201.tt.followers_with_dogs: "Her [follower|E] bir köpekle" #NT!
+ ep3_laamp_decision_event.1201.a.own_dog: "Hoşça kalın iyi çocuklar." #NT!
+ ep3_laamp_decision_event.1201.a: "Uluyan, yaslı #EMP uluyan#!..." #NT!
+ ep3_laamp_decision_event.1201.b.own_dog: "Eh, bir tane daha alabilirim." #NT!
+ ep3_laamp_decision_event.1201.b: "Etin eti." #NT!
+  
+ ep3_laamp_decision_event.1202.t: "Kedisiz Bir Kamp" #NT!
+ ep3_laamp_decision_event.1202.desc.intro: "Bir kediyi öldürmek zor değil, hatta biraz da sportif bile değil.\n\n" #NT!
+ ep3_laamp_decision_event.1202.desc.eaten.one.have_cat: "Gerçekten [ROOT.Char.Custom('CatStoryName')] ile işlerin böyle bitmesini istemezdim ama toplayabildiğimiz her lokma yiyeceğe ihtiyacımız var.\n\nBu benim sadık, güvendiğim küçük [ROOT.Char.Custom('CatStoryGirlBoy')] olsa bile." #NT!
+ ep3_laamp_decision_event.1202.desc.eaten.one.no_cat: "Özellikle kampta sadece bir kedi varken, ama bizim #EMP ihtiyacımız#! yiyecek varsa, #EMP herhangi#! yiyecek varsa." #NT!
+ ep3_laamp_decision_event.1202.desc.eaten.some.have_cat: "Yakalayabileceğimiz kadar çok bile değiller ve onları bir kez yakaladığımızda, zavallı şeyler büyük ölçüde savunmasız kalıyor. Hapsedildiklerinde, sinirle tıslamaktan veya şaşkın bir şekilde mırıldanmaktan başka bir şey yapamazlar." #NT!
+ ep3_laamp_decision_event.1202.desc.eaten.some.no_cat: "$ep3_laamp_decision_event.1202.desc.eaten.some.have_cat$\n\nHatta [ROOT.Char.Custom('CatStoryName')]." #NT!
+ ep3_laamp_decision_event.1202.desc.eaten.many.have_cat: "Çoğunun bizden kaçabileceğini düşünürdünüz ama hayır, tehlike hissi baskın geldiğinde çoğu [ROOT.Char.GetPrimaryTitle.GetDefinitiveNamePossessive] kedi efendilerine güvenir.\n\nHatta [ROOT.Char.Custom('CatStoryName')]." #NT!
+ ep3_laamp_decision_event.1202.desc.eaten.many.no_cat: "Çoğunun bizden kaçabileceğini düşünürdünüz ama hayır, tehlike hissi baskın çıktığında çoğu [ROOT.Char.GetPrimaryTitle.GetDefinitiveNamePossessive] kedi efendilerine güvenir.\n\nAptalca bir hata." #NT!
+ ep3_laamp_decision_event.1202.desc.outro: "\n\nBir kez yakalanıp kafese kapatıldıktan sonra, takipçilerimin hiçbiri yaptıklarıyla gurur duymuyor gibi görünse bile, kolayca alt edilirler." #NT!
+ ep3_laamp_decision_event.1202.tt.cat_lost: "[THIS.Char.GetTitledFirstNameNicknamedPossessive] kedi, [THIS.Char.Custom('CatStoryName')], katledildi" #NT!
+ ep3_laamp_decision_event.1202.tt.your_cat_lost: "Kediniz [THIS.Char.Custom('CatStoryName')], katledildi" #NT!
+ ep3_laamp_decision_event.1201.tt.followers_with_cats: "Her [follower|E] bir kediyle" #NT!
+ ep3_laamp_decision_event.1202.a.own_cat: "Muhteşem yoldaşlığımız sona erdi, [ROOT.Char.Custom('CatStoryName')]." #NT!
+ ep3_laamp_decision_event.1202.a: "Başka çaremiz yok." #NT!
+ ep3_laamp_decision_event.1202.b.own_cat: "Eh, bu sadece bir kedi." #NT!
+ ep3_laamp_decision_event.1202.b: "Evet, evet, çat çat. Heh." #NT!
+  
+ ep3_laamp_decision_event.1203.t: "Açlar İçin At Eti" #NT!
+ ep3_laamp_decision_event.1203.desc.intro: "At eti yağsız ve bol miktarda bulunur, birçok diyete yabancı değildir — #EMP eğer#! tüketimini karşılayabiliyorsanız.\n\nKendimizi içinde bulduğumuz bu zor durumdan dolayı, [ROOT.Char.GetPrimaryTitle.GetDefinitiveName] sürüyü ayıklamamayı göze alamayız," #NT!
+ ep3_laamp_decision_event.1203.desc.eaten.both: "sadece yedek atlarımızı değil, kendi atlarımı da katlediyorum [ROOT.Char.Custom('WarhorseStoryName')]." #NT!
+ ep3_laamp_decision_event.1203.desc.eaten.own_horse: "tek ayırabileceğimiz at benimki olsa bile [ROOT.Char.Custom('WarhorseStoryName')]." #NT!
+ ep3_laamp_decision_event.1203.desc.eaten.reserve_steeds: "şaşkınlık ve paniğe rağmen yedek atlarımızı toplu halde katlediyoruz." #NT!
+ ep3_laamp_decision_event.1203.desc.outro: "\n\nBu ödül, hızımızın bir kısmını kaybetmemize neden olacak, ancak bize daha güvenilir bir geçim kaynağı bulmak için zaman kazandırmalı.\n\nEn azından, umarım öyle olur." #NT!
+ ep3_laamp_decision_event.1203.a.many_steeds: "Öldüğümüzde bile bizi ileriye taşırlar." #NT!
+ ep3_laamp_decision_event.1203.a.single_steed: "Öldüğümde bile [ROOT.Char.Custom('HorseStorySheHe')] beni ileriye taşıyor." #NT!
+ ep3_laamp_decision_event.1203.b: "Dürüst olmak gerekirse, bunları yemeliyiz #EMP daha fazla#!, bu lezzetli." #NT!
+  
+ ep3_laamp_decision_event.1204.t: "Fil Mezarlığı" #NT!
+ ep3_laamp_decision_event.1204.desc: "İlk birkaç kişiden sonra sürü bir şeylerin ters gittiğini anlıyor gibi görünüyor.\n\nOnları kontrol altına alabilmek ve gerçekten ayıklamaya başlayabilmek için önemli bir çekişme gerekiyor; doğal olarak yaşlılara, sakatlara, güçsüzlere ve gençlere odaklanıyoruz.\n\nBirer birer, önce fil rezervimizi kılıca, sonra kasabın satırına koyuyoruz.\n\nPaniklemiş, gırtlaktan gelen çığlıkları ve trompet gibi yaydıkları dehşetle daha da zorlaşan korkunç, kanlı bir iş.\n\nYine de ya onlar ya da biz." #NT!
+ ep3_laamp_decision_event.1204.a: "Onların ölümü bizim kurtuluşumuzdur." #NT!
+ ep3_laamp_decision_event.1204.b: "[ROOT.Char.GetFaith.HealthGodName] ile, o #EMP bifteğin#!. büyüklüğü" #NT!
+  
+ ep3_laamp_decision_event.1205.t: "$ep3_laamp_decision_event.1204.t$: Sonuçlar" #NT!
+ ep3_laamp_decision_event.1205.desc: "Yolculuğumuzun umutsuzluğunun bizi... sert önlemler almaya zorlamasının üzerinden bir yıl geçti.\n\nNe kadar akıllı yaratıklar olsalar da, bir filde çok fazla et vardır ve hayatları ile bizimkiler söz konusu olduğunda seçim yeterince basit çıktı.\n\nSürümüze satır ve balta aldık, yaşlı ve gençleri acımasız bir kararlılıkla biçtik, fedakarlıklarının gerekli olduğunu biliyorduk.\n\nYine de görünen o ki, savaşçılarımız tarafından istihdam edilen fillerimizin geri kalanı katliamı #EMP hatırlıyor#!. Canavarlar sorunlu, emirlerimizi reddediyorlar ve kendini koruma veya beslenmeyle ilgili olmayan her şeyi yapıyorlar.\n\nHatta bana karşı #EMP sinir bozucu bir şekilde#! düşmanca davranıyorlar, insan sürüsünün lideri olarak beni sorumlu tutuyorlar." #NT!
+ ep3_laamp_decision_event.1205.a: "Lanet olsun bu inatçı canavarlara!" #NT!
+ ep3_laamp_decision_event.1205.a.tt: "Filleri bir daha asla etkili bir şekilde kullanamayacaksınız" #NT!
+ ep3_laamp_decision_event_1205_modifier: "Filler Asla Unutmaz" #NT!
+ ep3_laamp_decision_event_1205_modifier_desc: "Ve affetmiyorlar." #NT!
+  
+ ascendant_byz_reclaimant_ortho_modifier: "Yükselen Bizans Geri Kazanıcısı" #NT!
+ ascendant_byz_reclaimant_ortho_modifier_desc: "Müminlerin duaları, Bizans'ın yeniden kurulmasını isteyenlerin umutları bu kararlı hükümdarın omuzlarındadır." #NT!
+ ascendant_byz_reclaimant_modifier: "Yükselen Bizans Geri Kazanıcısı" #NT!
+ ascendant_byz_reclaimant_modifier_desc: "Bizans'ın yeniden kurulmasını isteyenlerin umutları bu kararlı hükümdardaydı." #NT!
+ holds_byz_emp_tt: "[GetTitleByKey('e_byzantium').GetName]'ı tutuyorsunuz" #NT!
+ legitimize_byz_claim_tt: "[kingdom|E] [title|E]'i tutmazsanız, [pressed_claim|E] kazanırsınız" #NT!
+  
+ humiliate_the_stooge_decision: "$stooge_camp_officer$'ı aşağıla" #NT!
+ humiliate_the_stooge_decision_desc: "Çürük yumurta olsun, çürümüş sebzeler olsun, kırıcı sözler olsun, halk her zaman bir miktar kamusal aşağılanmaya ihtiyaç duyar." #NT!
+ humiliate_the_stooge_decision_confirm: "Ha, #EMP ha!#!" #NT!
+ humiliate_the_stooge_decision_tooltip: "Güzel bir [stress|E] bedava hayat için biraz [prestige|E] takas edin" #NT!
+ humiliate_the_stooge_decision_rewards: "$stooge_camp_officer$:\n$EFFECT_LIST_BULLET$'inizi alenen küçük düşürürsünüz. [stress_i] [stress|E]\n$EFFECT_LIST_BULLET$'inizi kaybedersiniz. [dread_i] [dread|E]\n$EFFECT_LIST_BULLET$'inizi kazanırsınız. $EFFECT_LIST_BULLET$0 2$EFFECT_LIST_BULLET$1 yıl boyunca [GetModifier( 'stooge_humiliated_modifier' ).GetNameWithTooltip] [modifier|E] kazanırsınız." #NT!
+ stooge_humiliated_modifier: "Kuklayı aşağıladı" #NT!
+ stooge_humiliated_modifier_desc: "Ah. Kötü insanlara kötü şeyler olduğunda kendimi iyi hissediyorum." #NT!
+ humiliate_the_stooge_decision_tt: "Sen Aşağılıyorsun [stooge.GetShortUIName]" #NT!
+ humiliate_the_stooge_decision_2_tt: "[stooge.GetShortUIName] Sinirli Görünüyor..." #NT!
+ humiliate_the_stooge_decision_3_tt: "[stooge.GetShortUIName] Ağlıyor" #NT!
+ humiliate_the_stooge_decision_4_tt: "[stooge.GetShortUIName] Gözyaşları İçinde Kaçıyor" #NT!
+ stooge_humiliated_fourth_time_modifier: "Kuklayı Uzaklaştır" #NT!
+ stooge_humiliated_fourth_time_modifier_desc: "Bu karakter aynı $stooge_camp_officer$'ı o kadar uzun süre aşağıladı ki kaçtılar." #NT!
+ latin_de_jure_lost_on_title_loss_tt: "@warning_icon! #X Eğer [GetTitleByKey('e_latin_empire').GetName] yok edilirse, [de_jure|E] [titles|E] [GetTitleByKey('e_byzantium').GetAdjective]'e geri döner" #NT!
+ byzantines_threaten_latin_titles_tt: "@warning_icon! #X [GetTitleByKey('e_byzantium').GetAdjective] [rulers|E] geri dönebilir [GetTitleByKey('e_latin_empire').GetAdjective] [de_jure|E] [titles|E] sahip oldukları" #NT!

@@ -1,185 +1,186 @@
 ﻿l_english:
-#mustafa+
-#AGOT COURT POSITIONS
-
-#King's Justice - Executioner re-flavour
-#King's Counter/Sclaes?
-#Keeper of Keys?
-#Wardens of Mint?
-#Lord Confessor/Keeper of the Cells
-#Gold Cloaks
-#Head Dragonkeeper
-
-
-## TRAITS ##
-
-court_position_education_martial_1_trait:0 "[GetTrait('education_martial_1').GetName( ROOT.Char )]"
-court_position_education_martial_2_trait:0 "[GetTrait('education_martial_2').GetName( ROOT.Char )]"
-court_position_education_martial_3_trait:0 "[GetTrait('education_martial_3').GetName( ROOT.Char )]"
-court_position_education_martial_4_trait:0 "[GetTrait('education_martial_4').GetName( ROOT.Char )]"
-court_position_unyielding_defender_trait:0 "[GetTrait('unyielding_defender').GetName( ROOT.Char )]"
-court_position_flexible_leader_trait:0 "[GetTrait('flexible_leader').GetName( ROOT.Char )]"
-court_position_organizer_trait:0 "[GetTrait('organizer').GetName( ROOT.Char )]"
-court_position_reckless_trait:0 "[GetTrait('reckless').GetName( ROOT.Char )]"
-court_position_strong_trait:0 "[GetTrait('strong').GetName( ROOT.Char )]"
-
-court_position_authoritative_trait:0 "[GetTrait('authoritative').GetName( ROOT.Char )]"
-court_position_inquisitve_trait:0 "[GetTrait('inquisitive').GetName( ROOT.Char )]"
-court_position_honorable_trait:0 "[GetTrait('honorable').GetName( ROOT.Char )]"
-court_position_rude_trait:0 "[GetTrait('rude').GetName( ROOT.Char )]"
-court_position_callous_trait:0 "[GetTrait('callous').GetName( ROOT.Char )]"
-court_position_ruthless_trait:0 "[GetTrait('ruthless').GetName( ROOT.Char )]"
-
-
-
-#Positions
-
-maester_court_position:0 "Üstat" #[CharacterWindow.GetCourtOwner.Custom('MaesterCourtPosition')]
-maester_tradition_bonus:0 "[culture_tradition|E]ten"
-maester_court_position_desc:1 "$maester_court_position$, hizmet verdiği [court|E]ın sağlık ve esenliğinden sorumludur. Hastalıkları tedavi edecek ve yaraları yeteneklerinin elverdiği en iyi şekilde dikecektir."
-maester_employer_custom_effect_description:1 "[medical_treatments|E] gerçekleştirir#!\n[education|E] sonuçlarını iyileştirir\n#V $make_child_learn_language_interaction$#! [interaction|E]ini açar\n@warning_icon!#X Size karşı [hostile_schemes|E]da güçlü bir [agent|E]olabilir#!"
-
-grandmaester_court_position:0 "Büyük Üstat" #[CharacterWindow.GetCourtOwner.Custom('MaesterCourtPosition')]
-grandmaester_tradition_bonus:0 "[culture_tradition|E]ten"
-grandmaester_court_position_desc:1 "$grandmaester_court_position$, kraliyet ailesinin sağlık ve esenliğinden sorumludur. Hastalıkları tedavi edecek ve yaraları yeteneklerinin elverdiği en iyi şekilde dikecektir."
-grandmaester_employer_custom_effect_description:1 "[medical_treatments|E] gerçekleştirir#!\n[education|E] sonuçlarını iyileştirir\n#V $make_child_learn_language_interaction$#! [interaction|E]ini açar\n@warning_icon!#X Size karşı [hostile_schemes|E]da güçlü bir [agent|E] olabilir#!"
-
-household_guard_court_position:0 "Hane Muhafızları Kaptanı"
-household_guard_tradition_bonus:0 "[culture_tradition|E]ten"
-household_guard_court_position_desc:0 "$household_guard_court_position$, hizmet ettiği [house|E]nin korunmasını düzenlemekten sorumludur."
-household_guard_employer_custom_effect_description:2 "İkinizin de savaştığı savaşlarda ölme veya esir düşme riskinizi azaltır #!\n@warning_icon!#X Size karşı [hostile_schemes|E]da güçlü bir [agent|E] olabilir#!"
-
-septon_court_position:0 "Septon" 
-speton_tradition_bonus:0 "[culture_tradition|E]ten"
-septon_court_position_desc:1 "$septon_court_position$, [court|E]ınızda Yedi İnancı'na mensup üyeler için dini hizmetler sağlar."
-
-septa_court_position:0 "Septa"
-speta_tradition_bonus:0 "[culture_tradition|E]ten"
-septa_court_position_desc:1 "$septa_court_position$, [guardian|E]si olmayan kız [children|E]ınızı eğitmekle sorumludur."
-
-gaoler_court_position:0 "Zindan Bekçisi"
-gaoler_court_position_desc:1 "Kalenin loş karanlığında zindanlar uzanır; mahkumların inlediği ve $gaoler_court_position$nin nöbet tuttuğu yer."
-
-harbormaster_court_position:0 "Liman Şefi"
-harbormaster_tradition_bonus:0 "[culture_tradition|E]ten"
-harbormaster_court_position_desc:0 "$harbormaster_court_position$, limanlarınızda deniz ticaretini düzenleyen ve gümrüklere denetleyen yetkilidir."
-
-warden_of_the_north_court_position:0 "Kuzey Muhafızı"
-warden_of_the_north_court_position_desc:1 "Kuzey Muhafızı, dış tehditler veya istilalar durumunda Kuzey'in savunmasından sorumludur."
-warden_of_the_east_court_position:0 "Doğu Muhafızı"
-warden_of_the_east_court_position_desc:1 "Doğu Muhafızı, dış tehditler veya istilalar durumunda Doğu'nun savunmasından sorumludur."
-warden_of_the_west_court_position:0 "Batı Muhafızı"
-warden_of_the_west_court_position_desc:1 "Batı Muhafızı, dış tehditler veya istilalar durumunda Batı'nın savunmasından sorumludur."
-warden_of_the_south_court_position:0 "Güney Muhafızı"
-warden_of_the_south_court_position_desc:1 "Güney Muhafızı, dış tehditler veya istilalar durumunda Güney'in savunmasından sorumludur."
-
-goldcloaks_court_position:0 "Şehir Gözcüsü Komutanı"
-goldcloaks_tradition_bonus:0 "[culture_tradition|E]ten"
-goldcloaks_court_position_desc:0 "$goldcloaks_court_position$, Kralın Şehri'nin Şehir Gözcüsü'nün komutanıdır, önemli bir prestij ve öneme sahip bir konumdur."
-goldcloaks_employer_custom_effect_description:2 "#!\n@warning_icon!#X Size karşı [hostile_schemes|E]da güçlü bir [agent|E] olabilir#!"
-
-master_at_arms_court_position:0 "Arma Ustası"
-master_at_arms_court_position_desc:1 "$master_at_arms_court_position$, krallığın veya imparatorluğun resmi armalarını ve heraldik simgelerini yöneten önemli bir kurumdur. Bu mahkeme, soylu ailelerin armalarını tasarlar, kaydeder ve denetler. Aynı zamanda heraldik kuralları belirler ve uygular. Mahkemenin üyeleri, genellikle sarayda resmi duyurucu (herald) olarak da görev yaparlar. Bu kurum, krallığın simgesel gücünün ve geleneklerinin korunmasında kilit rol oynar."
-
-court_smith_court_position:0 "Saray Demircisi"
-court_smith_court_position_desc:2 "$court_smith_court_position$, metal işlerinin bakım ve onarımından sorumludur."
-
-#NIGHTS WATCH
-
-nw_septon:0 "Septon"
-nw_septon_desc:0 "Yedi İnancı'nı takip eden Gece Nöbetçileri kardeşlerine hizmet eden yerleşik septon."
-
-COURT_POSITION_CATEGORY_CASTLE_KEEPER:0 "Kale Muhafızları"
-b_the_shadow_tower_keeper:0 "Gölge Kulesi Komutanı"
-b_the_shadow_tower_keeper_employer_custom_effect_description:0 "Gölge Kule'yi korur ve muhafaza eder"
-b_the_shadow_tower_keeper_desc:0 "Gölge Kulesi'ni korur ve muhafaza eder"
-
-b_eastwatch_by_the_sea_keeper:0 "Kıyıdaki Doğugözcüsü Komutanı"
-b_eastwatch_by_the_sea_keeper_employer_custom_effect_description:0 "Kıyıdaki Doğugözcüsü'nü korur ve muhafaza eder"
-b_eastwatch_by_the_sea_keeper_desc:0 "Kıyıdaki Doğugözcüsü'nü korur ve muhafaza eder"
-
-b_the_nightfort_keeper:0 "Gece Kalesi Komutanı"
-b_the_nightfort_keeper_employer_custom_effect_description:0 "Gece Kalesi'ni korur ve muhafaza eder"
-b_the_nightfort_keeper_desc:0 "Gece Kalesi'ni korur ve muhafaza eder"
-
-b_icemark_keeper:0 "Buz İzi Komutanı"
-b_icemark_keeper_employer_custom_effect_description:0 "Buz İzi'ni korur ve muhafaza eder"
-b_icemark_keeper_desc:0 "Buz İzi'ni korur ve muhafaza eder"
-
-b_deep_lake_keeper:0 "Derin Göl Komutanı"
-b_deep_lake_keeper_employer_custom_effect_description:0 "Derin Göl'ü korur ve muhafaza eder"
-b_deep_lake_keeper_desc:0 "Derin Göl'ü korur ve muhafaza eder"
-
-b_queensgate_keeper:0 "Kraliçe Geçidi Komutanı"
-b_queensgate_keeper_employer_custom_effect_description:0 "Kraliçe Geçidi'ni korur ve muhafaza eder"
-b_queensgate_keeper_desc:0 "Kraliçe Geçidi'ni korur ve muhafaza eder"
-
-b_oakenshield_keeper:0 "Meşe Kalkanı Komutanı"
-b_oakenshield_keeper_employer_custom_effect_description:0 "Meşe Kalkanı'nı korur ve muhafaza eder"
-b_oakenshield_keeper_desc:0 "Meşe Kalkanı'nı korur ve muhafaza eder"
-
-b_woodswatch_by_the_pool_keeper:0 "Ormangözcüsü Komutanı"
-b_woodswatch_by_the_pool_keeper_employer_custom_effect_description:0 "Ormangözcüsü'nü korur ve muhafaza eder"
-b_woodswatch_by_the_pool_keeper_desc:0 "Ormangözcüsü'nü korur ve muhafaza eder"
-
-b_westwatch_by_the_bridge_keeper:0 "Köprübaşı Batıgözcüsü Komutanı"
-b_westwatch_by_the_bridge_keeper_employer_custom_effect_description:0 "Köprübaşı Batıgözcüsü'nü korur ve muhafaza eder"
-b_westwatch_by_the_bridge_keeper_desc:0 "Köprübaşı Batıgözcüsü'nü korur ve muhafaza eder"
-
-b_sentinel_stand_keeper:0 "Nöbetçi Tepesi Komutanı"
-b_sentinel_stand_keeper_employer_custom_effect_description:0 "Nöbetçi Tepesi'ni korur ve muhafaza eder"
-b_sentinel_stand_keeper_desc:0 "Nöbetçi Tepesi'ni korur ve muhafaza eder"
-
-b_greyguard_keeper:0 "Grikoru Komutanı"
-b_greyguard_keeper_employer_custom_effect_description:0 "Grikoru'yu korur ve muhafaza eder"
-b_greyguard_keeper_desc:0 "Grikoru'yu korur ve muhafaza eder"
-
-b_stonedoor_keeper:0 "Taşkapı Komutanı"
-b_stonedoor_keeper_employer_custom_effect_description:0 "Taşkapı'yı korur ve muhafaza eder"
-b_stonedoor_keeper_desc:0 "Taşkapı'yı korur ve muhafaza eder"
-
-b_hoarfrost_hill_keeper:0 "Kırağı Tepesi Komutanı"
-b_hoarfrost_hill_keeper_employer_custom_effect_description:0 "Kırağı Tepesi'ni korur ve muhafaza eder"
-b_hoarfrost_hill_keeper_desc:0 "Kırağı Tepesi'ni korur ve muhafaza eder"
-
-b_sable_hall_keeper:0 "Samur Yurdu Komutanı"
-b_sable_hall_keeper_employer_custom_effect_description:0 "Samur Yurdu'nu korur ve muhafaza eder"
-b_sable_hall_keeper_desc:0 "Samur Yurdu'nu korur ve muhafaza eder"
-
-b_rimegate_keeper:0 "Kabuk Geçidi Komutanı"
-b_rimegate_keeper_employer_custom_effect_description:0 "Kabuk Geçidi'ni korur ve muhafaza eder"
-b_rimegate_keeper_desc:0 "Kabuk Geçidi'ni korur ve muhafaza eder"
-
-b_long_barrow_keeper:0 "Uzun Höyük Komutanı"
-b_long_barrow_keeper_employer_custom_effect_description:0 "Uzun Höyük'ü korur ve muhafaza eder"
-b_long_barrow_keeper_desc:0 "Uzun Höyük'ü korur ve muhafaza eder"
-
-b_the_torches_keeper:0 "Meşaleler Komutanı"
-b_the_torches_keeper_employer_custom_effect_description:0 "Meşaleler'i korur ve muhafaza eder"
-b_the_torches_keeper_desc:0 "Meşaleler'i korur ve muhafaza eder"
-
-b_greenguard_keeper:0 "Yeşilkoru Komutanı"
-b_greenguard_keeper_employer_custom_effect_description:0 "Yeşilkoru'yu korur ve muhafaza eder"
-b_greenguard_keeper_desc:0 "Yeşilkoru'yu korur ve muhafaza eder"
-
-################
-# DRAGONKEEPER #
-################
-
-head_dragonkeeper_court_position:0 "Baş Ejderha Korucusu"
-head_dragonkeeper_court_position_desc:1 "$head_dragonkeeper_court_position$, hizmet verdiği [dragonkeepers|E] grubunun başıdır. [dragonpit|e]nda ki [dragons_plural|e]ı yeteneklerinin elverdiği en iyi şekilde koruyacak ve yetiştireceklerdir."
-head_dragonkeeper_court_position_custom_effect_description:1 "[dragonpit_interactions|E]ni açar"
-court_position_knows_valyrian_language:0 "Valyria Dilini Biliyor"
-court_position_valyrian_heritage:0 "Valyria Mirasına Sahip"
-court_position_blood_of_old_valyria:0 "Eski Valyria Kanı"
-deepen_bond_with_dragon_scheme_scheme_power_mult:0 "#V Ejderhanla Bağını Derinleştir#! [scheme|E] gücü"
-bond_with_dragon_scheme_scheme_power_mult:0 "#V Ejderha ile Bağ Kur#! [scheme|E] gücü"
-court_position_professional_dragonkeeper_training:0 "Profesyonel Ejderha Korucusu Eğitimi"
-court_position_standarized_dragonkeeper_training:0 "Standartlaştırılmış Ejderha Korucusu Eğitimi"
-
-#cost descs
-agot_laamp_cost_reduction:0 "Topraksızsınız"
-
-#Maester VS Physician for event loc
-agot_physician_essos:0 "hekim"
-agot_physician_maester:0 "üstat"
+  
+ #AGOT COURT POSITIONS 
+  
+ #King's Justice - Executioner re-flavour 
+ #King's Counter/Sclaes? 
+ #Keeper of Keys? 
+ #Wardens of Mint? 
+ #Lord Confessor/Keeper of the Cells 
+ #Gold Cloaks 
+ #Head Dragonkeeper 
+  
+  
+  ## TRAITS ## 
+  
+ court_position_education_martial_1_trait: "[GetTrait('education_martial_1').GetName( ROOT.Char )]"
+ court_position_education_martial_2_trait: "[GetTrait('education_martial_2').GetName( ROOT.Char )]"
+ court_position_education_martial_3_trait: "[GetTrait('education_martial_3').GetName( ROOT.Char )]"
+ court_position_education_martial_4_trait: "[GetTrait('education_martial_4').GetName( ROOT.Char )]"
+ court_position_unyielding_defender_trait: "[GetTrait('unyielding_defender').GetName( ROOT.Char )]"
+ court_position_flexible_leader_trait: "[GetTrait('flexible_leader').GetName( ROOT.Char )]"
+ court_position_organizer_trait: "[GetTrait('organizer').GetName( ROOT.Char )]"
+ court_position_reckless_trait: "[GetTrait('reckless').GetName( ROOT.Char )]"
+ court_position_strong_trait: "[GetTrait('strong').GetName( ROOT.Char )]"
+  
+ court_position_authoritative_trait: "[GetTrait('authoritative').GetName( ROOT.Char )]"
+ court_position_inquisitve_trait: "[GetTrait('inquisitive').GetName( ROOT.Char )]"
+ court_position_honorable_trait: "[GetTrait('honorable').GetName( ROOT.Char )]"
+ court_position_rude_trait: "[GetTrait('rude').GetName( ROOT.Char )]"
+ court_position_callous_trait: "[GetTrait('callous').GetName( ROOT.Char )]"
+ court_position_ruthless_trait: "[GetTrait('ruthless').GetName( ROOT.Char )]"
+  
+  
+  
+  #Positions 
+  
+ maester_court_position: "Üstat"
+ maester_tradition_bonus: "[culture_tradition|E]ten"
+ maester_court_position_desc: "$maester_court_position$, hizmet verdiği [court|E]ın sağlık ve esenliğinden sorumludur. Hastalıkları tedavi edecek ve yaraları yeteneklerinin elverdiği en iyi şekilde dikecektir."
+ maester_employer_custom_effect_description: "[medical_treatments|E] gerçekleştirir#!\n[education|E] sonuçlarını iyileştirir\n#V $make_child_learn_language_interaction$#! [interaction|E]ini açar\n@warning_icon!#X Size karşı [hostile_schemes|E]da güçlü bir [agent|E]olabilir#!"
+  
+ grandmaester_court_position: "Büyük Üstat"
+ grandmaester_tradition_bonus: "[culture_tradition|E]ten"
+ grandmaester_court_position_desc: "$grandmaester_court_position$, kraliyet ailesinin sağlık ve esenliğinden sorumludur. Hastalıkları tedavi edecek ve yaraları yeteneklerinin elverdiği en iyi şekilde dikecektir."
+ grandmaester_employer_custom_effect_description: "[medical_treatments|E] gerçekleştirir#!\n[education|E] sonuçlarını iyileştirir\n#V $make_child_learn_language_interaction$#! [interaction|E]ini açar\n@warning_icon!#X Size karşı [hostile_schemes|E]da güçlü bir [agent|E] olabilir#!"
+  
+ household_guard_court_position: "Hane Muhafızları Kaptanı"
+ household_guard_tradition_bonus: "[culture_tradition|E]ten"
+ household_guard_court_position_desc: "$household_guard_court_position$, hizmet ettiği [house|E]nin korunmasını düzenlemekten sorumludur."
+ household_guard_employer_custom_effect_description: "İkinizin de savaştığı savaşlarda ölme veya esir düşme riskinizi azaltır #!\n@warning_icon!#X Size karşı [hostile_schemes|E]da güçlü bir [agent|E] olabilir#!"
+  
+ septon_court_position: "Septon"
+ speton_tradition_bonus: "[culture_tradition|E]ten"
+ septon_court_position_desc: "$septon_court_position$, [court|E]ınızda Yedi İnancı'na mensup üyeler için dini hizmetler sağlar."
+  
+ septa_court_position: "Septa"
+ speta_tradition_bonus: "[culture_tradition|E]ten"
+ septa_court_position_desc: "$septa_court_position$, [guardian|E]si olmayan kız [children|E]ınızı eğitmekle sorumludur."
+  
+ gaoler_court_position: "Zindan Bekçisi"
+ gaoler_court_position_desc: "Kalenin loş karanlığında zindanlar uzanır; mahkumların inlediği ve $gaoler_court_position$nin nöbet tuttuğu yer."
+  
+ harbormaster_court_position: "Liman Şefi"
+ harbormaster_tradition_bonus: "[culture_tradition|E]ten"
+ harbormaster_court_position_desc: "$harbormaster_court_position$, limanlarınızda deniz ticaretini düzenleyen ve gümrüklere denetleyen yetkilidir."
+  
+ warden_of_the_north_court_position: "Kuzey Muhafızı"
+ warden_of_the_north_court_position_desc: "Kuzey Muhafızı, dış tehditler veya istilalar durumunda Kuzey'in savunmasından sorumludur."
+ warden_of_the_east_court_position: "Doğu Muhafızı"
+ warden_of_the_east_court_position_desc: "Doğu Muhafızı, dış tehditler veya istilalar durumunda Doğu'nun savunmasından sorumludur."
+ warden_of_the_west_court_position: "Batı Muhafızı"
+ warden_of_the_west_court_position_desc: "Batı Muhafızı, dış tehditler veya istilalar durumunda Batı'nın savunmasından sorumludur."
+ warden_of_the_south_court_position: "Güney Muhafızı"
+ warden_of_the_south_court_position_desc: "Güney Muhafızı, dış tehditler veya istilalar durumunda Güney'in savunmasından sorumludur."
+  
+ goldcloaks_court_position: "Şehir Gözcüsü Komutanı"
+ goldcloaks_tradition_bonus: "[culture_tradition|E]ten"
+ goldcloaks_court_position_desc: "$goldcloaks_court_position$, Kralın Şehri'nin Şehir Gözcüsü'nün komutanıdır, önemli bir prestij ve öneme sahip bir konumdur."
+ goldcloaks_employer_custom_effect_description: "#!\n@warning_icon!#X Size karşı [hostile_schemes|E]da güçlü bir [agent|E] olabilir#!"
+  
+ master_at_arms_court_position: "Arma Ustası"
+ master_at_arms_court_position_desc: "$master_at_arms_court_position$, krallığın veya imparatorluğun resmi armalarını ve heraldik simgelerini yöneten önemli bir kurumdur. Bu mahkeme, soylu ailelerin armalarını tasarlar, kaydeder ve denetler. Aynı zamanda heraldik kuralları belirler ve uygular. Mahkemenin üyeleri, genellikle sarayda resmi duyurucu (herald) olarak da görev yaparlar. Bu kurum, krallığın simgesel gücünün ve geleneklerinin korunmasında kilit rol oynar."
+  
+ court_smith_court_position: "Saray Demircisi"
+ court_smith_court_position_desc: "$court_smith_court_position$, metal işlerinin bakım ve onarımından sorumludur."
+  
+  #NIGHTS WATCH 
+  
+ nw_septon: "Septon"
+ nw_septon_desc: "Yedi İnancı'nı takip eden Gece Nöbetçileri kardeşlerine hizmet eden yerleşik septon."
+  
+ COURT_POSITION_CATEGORY_CASTLE_KEEPER: "Kale Muhafızları"
+ b_the_shadow_tower_keeper: "Gölge Kulesi Komutanı"
+ b_the_shadow_tower_keeper_employer_custom_effect_description: "Gölge Kule'yi korur ve muhafaza eder"
+ b_the_shadow_tower_keeper_desc: "Gölge Kulesi'ni korur ve muhafaza eder"
+  
+ b_eastwatch_by_the_sea_keeper: "Kıyıdaki Doğugözcüsü Komutanı"
+ b_eastwatch_by_the_sea_keeper_employer_custom_effect_description: "Kıyıdaki Doğugözcüsü'nü korur ve muhafaza eder"
+ b_eastwatch_by_the_sea_keeper_desc: "Kıyıdaki Doğugözcüsü'nü korur ve muhafaza eder"
+  
+ b_the_nightfort_keeper: "Gece Kalesi Komutanı"
+ b_the_nightfort_keeper_employer_custom_effect_description: "Gece Kalesi'ni korur ve muhafaza eder"
+ b_the_nightfort_keeper_desc: "Gece Kalesi'ni korur ve muhafaza eder"
+  
+ b_icemark_keeper: "Buz İzi Komutanı"
+ b_icemark_keeper_employer_custom_effect_description: "Buz İzi'ni korur ve muhafaza eder"
+ b_icemark_keeper_desc: "Buz İzi'ni korur ve muhafaza eder"
+  
+ b_deep_lake_keeper: "Derin Göl Komutanı"
+ b_deep_lake_keeper_employer_custom_effect_description: "Derin Göl'ü korur ve muhafaza eder"
+ b_deep_lake_keeper_desc: "Derin Göl'ü korur ve muhafaza eder"
+  
+ b_queensgate_keeper: "Kraliçe Geçidi Komutanı"
+ b_queensgate_keeper_employer_custom_effect_description: "Kraliçe Geçidi'ni korur ve muhafaza eder"
+ b_queensgate_keeper_desc: "Kraliçe Geçidi'ni korur ve muhafaza eder"
+  
+ b_oakenshield_keeper: "Meşe Kalkanı Komutanı"
+ b_oakenshield_keeper_employer_custom_effect_description: "Meşe Kalkanı'nı korur ve muhafaza eder"
+ b_oakenshield_keeper_desc: "Meşe Kalkanı'nı korur ve muhafaza eder"
+  
+ b_woodswatch_by_the_pool_keeper: "Ormangözcüsü Komutanı"
+ b_woodswatch_by_the_pool_keeper_employer_custom_effect_description: "Ormangözcüsü'nü korur ve muhafaza eder"
+ b_woodswatch_by_the_pool_keeper_desc: "Ormangözcüsü'nü korur ve muhafaza eder"
+  
+ b_westwatch_by_the_bridge_keeper: "Köprübaşı Batıgözcüsü Komutanı"
+ b_westwatch_by_the_bridge_keeper_employer_custom_effect_description: "Köprübaşı Batıgözcüsü'nü korur ve muhafaza eder"
+ b_westwatch_by_the_bridge_keeper_desc: "Köprübaşı Batıgözcüsü'nü korur ve muhafaza eder"
+  
+ b_sentinel_stand_keeper: "Nöbetçi Tepesi Komutanı"
+ b_sentinel_stand_keeper_employer_custom_effect_description: "Nöbetçi Tepesi'ni korur ve muhafaza eder"
+ b_sentinel_stand_keeper_desc: "Nöbetçi Tepesi'ni korur ve muhafaza eder"
+  
+ b_greyguard_keeper: "Grikoru Komutanı"
+ b_greyguard_keeper_employer_custom_effect_description: "Grikoru'yu korur ve muhafaza eder"
+ b_greyguard_keeper_desc: "Grikoru'yu korur ve muhafaza eder"
+  
+ b_stonedoor_keeper: "Taşkapı Komutanı"
+ b_stonedoor_keeper_employer_custom_effect_description: "Taşkapı'yı korur ve muhafaza eder"
+ b_stonedoor_keeper_desc: "Taşkapı'yı korur ve muhafaza eder"
+  
+ b_hoarfrost_hill_keeper: "Kırağı Tepesi Komutanı"
+ b_hoarfrost_hill_keeper_employer_custom_effect_description: "Kırağı Tepesi'ni korur ve muhafaza eder"
+ b_hoarfrost_hill_keeper_desc: "Kırağı Tepesi'ni korur ve muhafaza eder"
+  
+ b_sable_hall_keeper: "Samur Yurdu Komutanı"
+ b_sable_hall_keeper_employer_custom_effect_description: "Samur Yurdu'nu korur ve muhafaza eder"
+ b_sable_hall_keeper_desc: "Samur Yurdu'nu korur ve muhafaza eder"
+  
+ b_rimegate_keeper: "Kabuk Geçidi Komutanı"
+ b_rimegate_keeper_employer_custom_effect_description: "Kabuk Geçidi'ni korur ve muhafaza eder"
+ b_rimegate_keeper_desc: "Kabuk Geçidi'ni korur ve muhafaza eder"
+  
+ b_long_barrow_keeper: "Uzun Höyük Komutanı"
+ b_long_barrow_keeper_employer_custom_effect_description: "Uzun Höyük'ü korur ve muhafaza eder"
+ b_long_barrow_keeper_desc: "Uzun Höyük'ü korur ve muhafaza eder"
+  
+ b_the_torches_keeper: "Meşaleler Komutanı"
+ b_the_torches_keeper_employer_custom_effect_description: "Meşaleler'i korur ve muhafaza eder"
+ b_the_torches_keeper_desc: "Meşaleler'i korur ve muhafaza eder"
+  
+ b_greenguard_keeper: "Yeşilkoru Komutanı"
+ b_greenguard_keeper_employer_custom_effect_description: "Yeşilkoru'yu korur ve muhafaza eder"
+ b_greenguard_keeper_desc: "Yeşilkoru'yu korur ve muhafaza eder"
+  
+  ################ 
+  # DRAGONKEEPER # 
+  ################ 
+  
+ head_dragonkeeper_court_position: "Baş Ejderha Korucusu"
+ head_dragonkeeper_court_position_desc: "$head_dragonkeeper_court_position$, hizmet verdiği [dragonkeepers|E] grubunun başıdır. [dragonpit|e]nda ki [dragons_plural|e]ı yeteneklerinin elverdiği en iyi şekilde koruyacak ve yetiştireceklerdir."
+ head_dragonkeeper_court_position_custom_effect_description: "[dragonpit_interactions|E]ni açar"
+ court_position_knows_valyrian_language: "Valyria Dilini Biliyor"
+ court_position_valyrian_heritage: "Valyria Mirasına Sahip"
+ court_position_blood_of_old_valyria: "Eski Valyria Kanı"
+ deepen_bond_with_dragon_scheme_scheme_power_mult: "#V Ejderhanla Bağını Derinleştir#! [scheme|E] gücü"
+ bond_with_dragon_scheme_scheme_power_mult: "#V Ejderha ile Bağ Kur#! [scheme|E] gücü"
+ court_position_professional_dragonkeeper_training: "Profesyonel Ejderha Korucusu Eğitimi"
+ court_position_standarized_dragonkeeper_training: "Standartlaştırılmış Ejderha Korucusu Eğitimi"
+  
+  #cost descs 
+ agot_laamp_cost_reduction: "Topraksızsınız"
+  
+  #Maester VS Physician for event loc 
+ agot_physician_essos: "hekim"
+ agot_physician_maester: "üstat"
+  

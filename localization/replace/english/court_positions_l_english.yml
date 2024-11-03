@@ -1,119 +1,122 @@
 ﻿l_english:
- APPOINT_COURT_POSITION_VIEW_replace_character_header:2 "[AppointCourtPositionView.GetCourtPositionToReplace.GetEmployee.GetShortUINameNoTooltip] yerine yeni bir [AppointCourtPositionView.GetCourtPositionType.GetName] bul"
- APPOINT_COURT_POSITION_VIEW_select_character_header:2 "[AppointCourtPositionView.GetCourtPositionType.GetName] Ata"
- APPOINT_COURT_POSITION_VIEW_salary:3 "Aylık maaş: [CourtPositionType.GetSalaryTextFor( Character.Self )]"
- APPOINT_COURT_POSITION_VIEW_salary_per_travel:0 "Seyahat başladığında maaş: [Character.GetTravelLeaderCost|U]"
- APPOINT_COURT_POSITION_VIEW_header:2 "Saray Pozisyonuna Ata"
- APPOINT_COURT_POSITION_VIEW_back_button:1 "Geri"
- APPOINT_COURT_POSITION_VIEW_appoint_button:1 "Ata"
- APPOINT_COURT_POSITION_VIEW_appoint_button_no_eligible_courtiers_tooltip:0 "@warning_icon! #X Sarayınızdaki hiçbir karakter bu [court_positions|E] için uygun değil.#!"
- APPOINT_COURT_POSITION_VIEW_search_for_position_button:1 "Aday ara"
- APPOINT_COURT_POSITION_VIEW_search_for_position_button_tooltip:0 "Bu [court_position|E] için bir aday arayın."
- APPOINT_COURT_POSITION_VIEW_appoint_courtier_or_vassal_button:2 "Ata"
- APPOINT_COURT_POSITION_VIEW_REVOKE_CONSEQUENCES_HEADER:0 "@warning_icon! Bu saray pozisyonunu almak aşağıdakilere sebep olacak:"
- APPOINT_COURT_POSITION_VIEW_REVOKE_COST:0 "• $COST$ prestije mal olacak."
- APPOINT_COURT_POSITION_VIEW_COURTIER_SORT_APTITUDE:0 "Yatkınlık"
- APPOINT_COURT_POSITION_VIEW_COURTIER_SORT_TRAVEL_SPEED:0 "Seyahat Hızı"
- APPOINT_COURT_POSITION_VIEW_COURTIER_SORT_TRAVEL_SAFETY:0 "Seyahat Güvenliği"
- APPOINT_COURT_POSITION_VIEW_NO_SELECTED_COURTIER:0 "Bu [court_position|E] için bir karakter seçin"
- APPOINT_COURT_POSITION_VIEW_CANNOT_AFFORD:1 "@warning_icon! #X Bu pozisyona birini getirmeniz giderlerinizin gelirinizi geçmesine sebep olacak ve her ay $RESOURCES$ zarara gireceksiniz.#!"
- APPOINT_COURT_POSITION_VIEW_REVOKE_CONSEQUENCE_FOR_APPOINTMENT:0 "#T Daha sonra bu pozisyonu feshetmenizin etkileri: #!"
- APPOINT_COURT_POSITION_VIEW_REVOKE_CONSEQUENCE_FOR_APPOINTMENT_TOOLTIP:0 "#X [AppointCourtPositionView.AppointingRevokeText] #!"
- APPOINT_COURT_POSITION_VIEW_REPLACE_CURRENTLY_APPOINTED:0 "Mevcut [CourtPosition.GetNameNoTooltip]"
- APPOINT_COURT_POSITION_VIEW_REPLACE_FIRE_CURRENT_HOLDER:0 "Kov"
- APPOINT_COURT_POSITION_VIEW_REPLACE_CURRENT_SALARY:0 "Aylık Maaş: #L [CourtPosition.GetSalaryText]#!"
- APPOINT_COURT_POSITION_VIEW_REPLACE_CONSEQUENCE_FOR_REVOKE:0 "#T Bu pozisyonu almanızın etkileri: #!"
- APPOINT_COURT_POSITION_VIEW_REPLACE_CONSEQUENCE_FOR_REVOKE_TOOLTIP:0 "#X [AppointCourtPositionView.ReplaceRevokeText] #!"
- APPOINT_COURT_POSITION_VIEW_APTITUDE:1 "[aptitude|e]: #L [AppointCourtPositionView.GetAptitudeTextFor(Character.Self)]#!"
- APPOINT_COURT_POSITION_VIEW_OPINION_BONUS:0 "[AppointCourtPositionView.GetSelectedCharacter.GetShortUINameNoTooltip] ile [opinion|e]: [AppointCourtPositionView.GetOpinionBonusForSelectedEmployee|=+]"
-
- COURT_POSITION_FOR_EMPLOYER:0 "[CourtPosition.GetEmployer.GetUINameNoTooltip] için"
-
- COURT_WINDOW_COURT_POSITIONS:0 "Saray Pozisyonları"
- COURT_POSITION_REPLACE:0 "#T [Character.GetShortUINameNoTooltip] adlı kişiyi Değiştir#!"
- COURT_POSITION_REVOKE:0 "#T [Character.GetShortUINameNoTooltip] adlı kişiyi Kov#!"
- COURT_POSITION_POWERFUL_AGENT:0 "@alert_icon! #alert_trial Size karşı kurulan [Concept( 'hostile_schemes', 'Düşmancıl Planlarda' )|E] tehlikeli birer [agent|E] olurlar#!"
- COURT_POSITION_OPINION_BONUS:0 "[opinion|e] Bonusu: [CourtPosition.GetOpinionBonus|=+]"
- 
- COURT_POSITIONS_WINDOW_EMPTY_POSITION_NO_ADD_TT:1 "[SelectLocalization( Not( CourtPositionType.CanHirePosition( Character.Self ) ), 'COURT_POSITIONS_WINDOW_EMPTY_POSITION_YOU_DONT_MEET_REQUIREMENTS', '' )]\n[SelectLocalization( Not( CourtPositionType.HasValidCourtiersForCharacter( Character.Self ) ), 'COURT_POSITIONS_WINDOW_EMPTY_POSITION_NO_ELIGIBLE_COURTIERS', '' )]"
-
- COURT_POSITIONS_WINDOW_EMPTY_POSITION_HEADER:0 "Sarayınızdaki boş [court_positions|E]"
- COURT_POSITIONS_WINDOW_EMPTY_POSITION_EFFECTS_VARY:0 "Etkiler karakterin [Concept( 'aptitude', 'Yatkınlığına' )|E] bağlı olarak değişir:"
- COURT_POSITIONS_WINDOW_EMPTY_POSITION_YOU_DONT_MEET_REQUIREMENTS:0 "@warning_icon! #X Bu [Concept( 'court_position', 'Saray Pozisyonuna' )|E] birini almak için gerekli şartları sağlamıyorsunuz#!"
- COURT_POSITIONS_WINDOW_EMPTY_POSITION_YOU_DONT_MEET_REQUIREMENTS_TT:0 "#T $COURT_POSITION_TOOLTIP_LIEGE_REQUIREMENT$#!\n[CourtPositionType.GetLiegeRequirementDescriptionText]"
- COURT_POSITIONS_WINDOW_EMPTY_POSITION_NO_ELIGIBLE_COURTIERS:0 "@warning_icon! #X Hiçbir Saray Mensubu [Concept( 'court_position', 'Saray Pozisyonunun' )|E] şartlarını karşılamıyor#!"
- COURT_POSITIONS_WINDOW_EMPTY_POSITION_NO_ELIGIBLE_COURTIERS_TT:0 "#T $COURT_POSITION_TOOLTIP_EMPLOYEE_REQUIREMENT$#!\n[CourtPositionType.GetEmployeeRequirementDescriptionText]"
- COURT_POSITIONS_WINDOW_FILTER_ALL:0 "Hepsi"
- COURT_POSITIONS_WINDOW_FILTER_TAB_ALL_NUM_HIRES:0 "[CourtPositionsWindow.NumHiredPositions]/[CourtPositionsWindow.MaxNumAvailablePositions]"
- COURT_POSITIONS_WINDOW_FILTER_TAB_CATEGORY_NUM_HIRES:0 "[CourtPositionsWindow.NumHiredInCategory(CourtPositionCategory.Self)]/[CourtPositionsWindow.MaxNumHirableInCategory(CourtPositionCategory.Self)]"
-
- COURT_POSITIONS_COURT_VIEW_appoint_court_position_button:2 "Saray Pozisyonuna Ata"
- COURT_POSITIONS_COURT_VIEW_appoint_court_position_button_tooltip:1 "#T Saray Pozisyonuna Ata#!\n\nBir [Concept( 'vassal', 'vasalı' )|E] veya saray mensubunu bir [Concept( 'court_position', 'Saray Pozisyonuna' )|E] ata."
- COURT_POSITIONS_COURT_VIEW_positions_in_your_court:1 "Sarayınızdaki [court_positions|E]"
- COURT_POSITIONS_COURT_VIEW_salaries_gained:1 "Aylık Maaş Geliri:"
- COURT_POSITIONS_COURT_VIEW_salaries_paid:2 "Aylık Maaş Gideri:"
- COURT_POSITIONS_SALARY_FOR:0 "$EMPLOYEE$ ($COURT_POSITION$)"
- COURT_POSITIONS_INCOME:0 "[court_positions|E] Geliri"
- COURT_POSITIONS_EXPENSES:0 "[court_positions|E] Gideri"
- COURT_POSITIONS_SALARIES_PAID:0 "Ödenen maaşlar"
- COURT_POSITIONS_SALARIES_GAINED:0 "Kazanılan maaşlar"
- COURT_POSITION_TYPE_SCALING_MODIFIER_DESCRIPTION:0 "$MODIFIER$: $RANGED_MODIFIER$ ([Concept( 'aptitude', 'Yatkınlığa' )|E] bağlı olarak)"
-
- COURT_POSITIONS_your_positions_in_liege_court:2 "[Concept( 'liege', 'Süzereninizin' )|E] Sarayındaki [Concept( 'court_position', 'Pozisyonunuz' )|E]"
- COURT_POSITIONS_no_positions_with_liege:2 "[Concept( 'liege', 'Süzereninizin' )|E] Sarayında bir [Concept( 'court_position', 'Pozisyon' )|E] sahibi değilsiniz"
- COURT_POSITIONS_no_positions_in_your_court:1 "Sarayınızda [court_position|E] sahibi biri bulunmuyor."
- COURT_POSITIONS_cannot_hire_more_positions:2 "Herhangi bir [court_position|E] için atama yapamazsınız."
- COURT_POSITIONS_cannot_hire_more_positions_in_category:2 "Bu kategorideki herhangi bir [court_position|E] için atama yapamazsınız."
-
- COURT_POSITIONS_revoke_confirm_header:2 "[court_position|E] Alınmasını Onayla"
- COURT_POSITIONS_revoke_confirm_accept:1 "Al"
- COURT_POSITIONS_revoke_position_cost:1 "Bunu yapmak $COSTS$ prestije mal olacak"
- COURT_POSITIONS_revoke_position_cost_cannot_afford:1 "Bunu yapmak $COSTS$ prestije mal olacak. Bu miktarı karşılayamadığınız için borca gireceksiniz"
- COURT_POSITIONS_revoke_position_confirmation:1 "[CHARACTER.GetShortUINameNoTooltip], $COURT_POSITION$ pozisyonundan alınacak."
- COURT_POSITIONS_revoke_position_confirmation_with_cost:1 "[CHARACTER.GetShortUINameNoTooltip], $COURT_POSITION$ pozisyonundan alınacak. $COSTS$"
- COURT_POSITIONS_revoke_position_confirmation_with_effect:1 "[CHARACTER.GetShortUINameNoTooltip], $COURT_POSITION$ pozisyonundan alınacak. Bunu yapmak aşağıdaki etkilere sebep olacak:\n$EFFECT$"
- COURT_POSITIONS_revoke_position_confirmation_with_cost_and_effect:1 "[CHARACTER.GetShortUINameNoTooltip], $COURT_POSITION$ pozisyonundan alınacak. $COSTS$ ve aşağıdaki etkilere sebep olacak:\n$EFFECT$"
-
- COURT_POSITIONS_replace_confirm_header:2 "[court_position|E] Değiştirmeyi Onayla"
- COURT_POSITIONS_replace_confirm_accept:1 "Değiştir"
- COURT_POSITIONS_replace_position_confirmation:1 "[CHARACTER.GetShortUINameNoTooltip], $COURT_POSITION$ pozisyonundan alınacak ve yerine [TARGET_CHARACTER.GetShortUINameNoTooltip] getirilecek."
- COURT_POSITIONS_replace_position_confirmation_with_cost:1 "[CHARACTER.GetShortUINameNoTooltip], $COURT_POSITION$ pozisyonundan alınacak ve yerine [TARGET_CHARACTER.GetShortUINameNoTooltip] getirilecek. $COSTS$"
- COURT_POSITIONS_replace_position_confirmation_with_effect:1 "[CHARACTER.GetShortUINameNoTooltip], $COURT_POSITION$ pozisyonundan alınacak ve yerine [TARGET_CHARACTER.GetShortUINameNoTooltip] getirilecek. Bunu yapmak aşağıdaki etkilere sebep olacak:\n$EFFECT$"
- COURT_POSITIONS_replace_position_confirmation_with_cost_and_effect:1 "[CHARACTER.GetShortUINameNoTooltip], $COURT_POSITION$ pozisyonundan alınacak ve yerine [TARGET_CHARACTER.GetShortUINameNoTooltip] getirilecek. $COSTS$ ve aşağıdaki etkilere sebep olacak:\n$EFFECT$"
-
- COURT_POSITION_CATEGORY_COMMON_NAME:0 "Sıradan"
- COURT_POSITION_CATEGORY_ROYAL_NAME:0 "Kraliyet"
- COURT_POSITION_CATEGORY_SPECIAL_NAME:0 "Özel"
- COURT_POSITIONS_category_day_to_day:0 "Gündelik"
- COURT_POSITIONS_category_honorary:0 "Onursal"
- COURT_POSITIONS_category_personal_servants:0 "Kişisel Hizmetçiler"
- COURT_POSITIONS_category_frivolous:0 "Önemsiz"
- COURT_POSITIONS_category_fighters:0 "Dövüşçüler"
- COURT_POSITIONS_months_of_service:1 "$MONTHS$ aydır hizmet veriyor"
- COURT_POSITIONS_years_of_service:1 "$YEARS$ yıldır hizmet veriyor"
-
- COURT_POSITION_TOOLTIP_EFFECT_ON_YOUR_LIEGE:0 "[Concept( 'liege', 'Süzereniniz' )|E] üzerindeki Etkileri:"
- COURT_POSITION_TOOLTIP_EFFECT_ON_LIEGE:0 "[liege|e] üzerindeki Etkileri:"
- COURT_POSITION_TOOLTIP_SCALED_EFFECT_ON_LIEGE:0 "[Concept( 'aptitude', 'Yatkınlığa' )|E] bağlı olarak [liege|e] üzerindeki Etkileri:"
- COURT_POSITION_TOOLTIP_LIEGE_REQUIREMENT:0 "[liege|e] koşulları:"
- COURT_POSITION_TOOLTIP_EFFECT_ON_YOU:0 "Sizin üzerinizdeki Etkisi:"
- COURT_POSITION_TOOLTIP_EFFECT_ON_EMPLOYEE:1 "[CourtPosition.GetNameNoTooltip] üzerindeki Etkisi:"
- COURT_POSITION_TOOLTIP_EMPLOYEE_REQUIREMENT:1 "[CourtPositionType.GetNameNoTooltip] koşulları:"
- COURT_POSITION_TOOLTIP_SALARY:1 "Salary: [CourtPosition.GetSalaryText]"
- COURT_POSITION_TOOLTIP_SALARIES_GOLD_PAID:0 "Ödenen Altın maaş"
- COURT_POSITION_TOOLTIP_SALARIES_GOLD_EARNED:0 "Kazanılan Altın maaş"
- COURT_POSITION_TOOLTIP_SALARIES_PRESTIGE_PAID:0 "Ödenen Prestij bazında maaş"
- COURT_POSITION_TOOLTIP_SALARIES_PRESTIGE_EARNED:0 "Kazanılan Prestij bazında maaş"
- COURT_POSITION_TOOLTIP_SALARIES_PIETY_PAID:0 "Ödenen Dindarlık bazında maaş"
- COURT_POSITION_TOOLTIP_SALARIES_PIETY_EARNED:0 "Kazanılan Dindarlık bazında maaş"
- COURT_POSITION_TOOLTIP_REVOKE_COST:1 "• Size olan maliyeti: [CourtPosition.GetRevokeCostText]"
- COURT_POSITION_TOOLTIP_REVOKE_EFFECT_HEADER:0 "Bu [Concept( 'court_position', 'Saray Pozisyonunu' )|E] almanın etkileri:"
- COURT_POSITION_TYPE_TOOLTIP_EFFECT_ON_EMPLOYEE:0 "[CourtPositionType.GetNameNoTooltip] üzerindeki Etkisi:"
- COURT_POSITION_TYPE_TOOLTIP_SALARY:0 "Maaş: [CourtPositionType.GetSalaryText]"
- COURT_POSITION_TYPE_TOOLTIP_REVOKE_COST:0 "• Size olan maliyeti: [CourtPositionType.GetRevokeCostText]"
-
- COURT_POSITION_SALARY_BREAKDOWN_BASE:0 "Temel Maaş"
- 
+ APPOINT_COURT_POSITION_VIEW_replace_character_header: "[AppointCourtPositionView.GetCourtPositionToReplace.GetEmployee.GetShortUINameNoTooltip] yerine yeni bir [AppointCourtPositionView.GetCourtPositionType.GetName] bul"
+ APPOINT_COURT_POSITION_VIEW_select_character_header: "[AppointCourtPositionView.GetCourtPositionType.GetName] Ata"
+ APPOINT_COURT_POSITION_VIEW_salary: "Aylık maaş: [CourtPositionType.GetSalaryTextFor( Character.Self )]"
+ APPOINT_COURT_POSITION_VIEW_salary_per_travel: "Seyahat başladığında maaş: [Character.GetTravelLeaderCost|U]"
+ APPOINT_COURT_POSITION_VIEW_header: "Saray Pozisyonuna Ata"
+ APPOINT_COURT_POSITION_VIEW_back_button: "Geri"
+ APPOINT_COURT_POSITION_VIEW_appoint_button: "Ata"
+ APPOINT_COURT_POSITION_VIEW_appoint_button_no_eligible_courtiers_tooltip: "@warning_icon! #X Sarayınızdaki hiçbir karakter bu [court_positions|E] için uygun değil.#!"
+ APPOINT_COURT_POSITION_VIEW_search_for_position_button: "Aday ara"
+ APPOINT_COURT_POSITION_VIEW_search_for_position_button_tooltip: "Bu [court_position|E] için bir aday arayın."
+ APPOINT_COURT_POSITION_VIEW_appoint_courtier_or_vassal_button: "Ata"
+ APPOINT_COURT_POSITION_VIEW_REVOKE_CONSEQUENCES_HEADER: "@warning_icon! Bu saray pozisyonunu almak aşağıdakilere sebep olacak:"
+ APPOINT_COURT_POSITION_VIEW_REVOKE_COST: "• $COST$ prestije mal olacak."
+ APPOINT_COURT_POSITION_VIEW_COURTIER_SORT_APTITUDE: "Yatkınlık"
+ APPOINT_COURT_POSITION_VIEW_COURTIER_SORT_TRAVEL_SPEED: "Seyahat Hızı"
+ APPOINT_COURT_POSITION_VIEW_COURTIER_SORT_TRAVEL_SAFETY: "Seyahat Güvenliği"
+ APPOINT_COURT_POSITION_VIEW_NO_SELECTED_COURTIER: "Bu [court_position|E] için bir karakter seçin"
+ APPOINT_COURT_POSITION_VIEW_CANNOT_AFFORD: "@warning_icon! #X Bu pozisyona birini getirmeniz giderlerinizin gelirinizi geçmesine sebep olacak ve her ay $RESOURCES$ zarara gireceksiniz.#!"
+ APPOINT_COURT_POSITION_VIEW_REVOKE_CONSEQUENCE_FOR_APPOINTMENT: "#T Daha sonra bu pozisyonu feshetmenizin etkileri: #!"
+ APPOINT_COURT_POSITION_VIEW_REVOKE_CONSEQUENCE_FOR_APPOINTMENT_TOOLTIP: "#X [AppointCourtPositionView.AppointingRevokeText] #!"
+ APPOINT_COURT_POSITION_VIEW_REPLACE_CURRENTLY_APPOINTED: "Mevcut [CourtPosition.GetNameNoTooltip]"
+ APPOINT_COURT_POSITION_VIEW_REPLACE_FIRE_CURRENT_HOLDER: "Kov"
+ APPOINT_COURT_POSITION_VIEW_REPLACE_CURRENT_SALARY: "Aylık Maaş: #L [CourtPosition.GetSalaryText]#!"
+ APPOINT_COURT_POSITION_VIEW_REPLACE_CONSEQUENCE_FOR_REVOKE: "#T Bu pozisyonu almanızın etkileri: #!"
+ APPOINT_COURT_POSITION_VIEW_REPLACE_CONSEQUENCE_FOR_REVOKE_TOOLTIP: "#X [AppointCourtPositionView.ReplaceRevokeText] #!"
+ APPOINT_COURT_POSITION_VIEW_APTITUDE: "[aptitude|e]: #L [AppointCourtPositionView.GetAptitudeTextFor(Character.Self)]#!"
+ APPOINT_COURT_POSITION_VIEW_OPINION_BONUS: "[AppointCourtPositionView.GetSelectedCharacter.GetShortUINameNoTooltip] ile [opinion|e]: [AppointCourtPositionView.GetOpinionBonusForSelectedEmployee|=+]"
+  
+ COURT_POSITION_FOR_EMPLOYER: "[CourtPosition.GetEmployer.GetUINameNoTooltip] için"
+  
+ COURT_WINDOW_COURT_POSITIONS: "Saray Pozisyonları"
+ COURT_POSITION_REPLACE: "#T [Character.GetShortUINameNoTooltip] adlı kişiyi Değiştir#!"
+ COURT_POSITION_REVOKE: "#T [Character.GetShortUINameNoTooltip] adlı kişiyi Kov#!"
+ COURT_POSITION_POWERFUL_AGENT: "@alert_icon! #alert_trial Size karşı kurulan [Concept( 'hostile_schemes', 'Düşmancıl Planlarda' )|E] tehlikeli birer [agent|E] olurlar#!"
+ COURT_POSITION_OPINION_BONUS: "[opinion|e] Bonusu: [CourtPosition.GetOpinionBonus|=+]"
+  
+ COURT_POSITIONS_WINDOW_EMPTY_POSITION_NO_ADD_TT: "[SelectLocalization( Not( CourtPositionType.CanHirePosition( Character.Self ) ), 'COURT_POSITIONS_WINDOW_EMPTY_POSITION_YOU_DONT_MEET_REQUIREMENTS', '' )]\n[SelectLocalization( Not( CourtPositionType.HasValidCourtiersForCharacter( Character.Self ) ), 'COURT_POSITIONS_WINDOW_EMPTY_POSITION_NO_ELIGIBLE_COURTIERS', '' )]"
+  
+ COURT_POSITIONS_WINDOW_EMPTY_POSITION_HEADER: "Sarayınızdaki boş [court_positions|E]"
+ COURT_POSITIONS_WINDOW_EMPTY_POSITION_EFFECTS_VARY: "Etkiler karakterin [Concept( 'aptitude', 'Yatkınlığına' )|E] bağlı olarak değişir:"
+ COURT_POSITIONS_WINDOW_EMPTY_POSITION_YOU_DONT_MEET_REQUIREMENTS: "@warning_icon! #X Bu [Concept( 'court_position', 'Saray Pozisyonuna' )|E] birini almak için gerekli şartları sağlamıyorsunuz#!"
+ COURT_POSITIONS_WINDOW_EMPTY_POSITION_YOU_DONT_MEET_REQUIREMENTS_TT: "#T $COURT_POSITION_TOOLTIP_LIEGE_REQUIREMENT$#!\n[CourtPositionType.GetLiegeRequirementDescriptionText]"
+ COURT_POSITIONS_WINDOW_EMPTY_POSITION_NO_ELIGIBLE_COURTIERS: "@warning_icon! #X Hiçbir Saray Mensubu [Concept( 'court_position', 'Saray Pozisyonunun' )|E] şartlarını karşılamıyor#!"
+ COURT_POSITIONS_WINDOW_EMPTY_POSITION_NO_ELIGIBLE_COURTIERS_TT: "#T $COURT_POSITION_TOOLTIP_EMPLOYEE_REQUIREMENT$#!\n[CourtPositionType.GetEmployeeRequirementDescriptionText]"
+ COURT_POSITIONS_WINDOW_FILTER_ALL: "Hepsi"
+ COURT_POSITIONS_WINDOW_FILTER_TAB_ALL_NUM_HIRES: "[CourtPositionsWindow.NumHiredPositions]/[CourtPositionsWindow.MaxNumAvailablePositions]"
+ COURT_POSITIONS_WINDOW_FILTER_TAB_CATEGORY_NUM_HIRES: "[CourtPositionsWindow.NumHiredInCategory(CourtPositionCategory.Self)]/[CourtPositionsWindow.MaxNumHirableInCategory(CourtPositionCategory.Self)]"
+  
+ COURT_POSITIONS_COURT_VIEW_appoint_court_position_button: "Saray Pozisyonuna Ata"
+ COURT_POSITIONS_COURT_VIEW_appoint_court_position_button_tooltip: "#T Saray Pozisyonuna Ata#!\n\nBir [Concept( 'vassal', 'vasalı' )|E] veya saray mensubunu bir [Concept( 'court_position', 'Saray Pozisyonuna' )|E] ata."
+ COURT_POSITIONS_COURT_VIEW_positions_in_your_court: "Sarayınızdaki [court_positions|E]"
+ COURT_POSITIONS_COURT_VIEW_salaries_gained: "Aylık Maaş Geliri:"
+ COURT_POSITIONS_COURT_VIEW_salaries_paid: "Aylık Maaş Gideri:"
+ COURT_POSITIONS_SALARY_FOR: "$EMPLOYEE$ ($COURT_POSITION$)"
+ COURT_POSITIONS_INCOME: "[court_positions|E] Geliri"
+ COURT_POSITIONS_EXPENSES: "[court_positions|E] Gideri"
+ COURT_POSITIONS_SALARIES_PAID: "Ödenen maaşlar"
+ COURT_POSITIONS_SALARIES_GAINED: "Kazanılan maaşlar"
+ COURT_POSITION_TYPE_SCALING_MODIFIER_DESCRIPTION: "$MODIFIER$: $RANGED_MODIFIER$ ([Concept( 'aptitude', 'Yatkınlığa' )|E] bağlı olarak)"
+  
+ COURT_POSITIONS_your_positions_in_liege_court: "[Concept( 'liege', 'Süzereninizin' )|E] Sarayındaki [Concept( 'court_position', 'Pozisyonunuz' )|E]"
+ COURT_POSITIONS_no_positions_with_liege: "[Concept( 'liege', 'Süzereninizin' )|E] Sarayında bir [Concept( 'court_position', 'Pozisyon' )|E] sahibi değilsiniz"
+ COURT_POSITIONS_no_positions_in_your_court: "Sarayınızda [court_position|E] sahibi biri bulunmuyor."
+ COURT_POSITIONS_cannot_hire_more_positions: "Herhangi bir [court_position|E] için atama yapamazsınız."
+ COURT_POSITIONS_cannot_hire_more_positions_in_category: "Bu kategorideki herhangi bir [court_position|E] için atama yapamazsınız."
+  
+ COURT_POSITIONS_revoke_confirm_header: "[court_position|E] Alınmasını Onayla"
+ COURT_POSITIONS_revoke_confirm_accept: "Al"
+ COURT_POSITIONS_revoke_position_cost: "Bunu yapmak $COSTS$ prestije mal olacak"
+ COURT_POSITIONS_revoke_position_cost_cannot_afford: "Bunu yapmak $COSTS$ prestije mal olacak. Bu miktarı karşılayamadığınız için borca gireceksiniz"
+ COURT_POSITIONS_revoke_position_confirmation: "[CHARACTER.GetShortUINameNoTooltip], $COURT_POSITION$ pozisyonundan alınacak."
+ COURT_POSITIONS_revoke_position_confirmation_with_cost: "[CHARACTER.GetShortUINameNoTooltip], $COURT_POSITION$ pozisyonundan alınacak. $COSTS$"
+ COURT_POSITIONS_revoke_position_confirmation_with_effect: "[CHARACTER.GetShortUINameNoTooltip], $COURT_POSITION$ pozisyonundan alınacak. Bunu yapmak aşağıdaki etkilere sebep olacak:\n$EFFECT$"
+ COURT_POSITIONS_revoke_position_confirmation_with_cost_and_effect: "[CHARACTER.GetShortUINameNoTooltip], $COURT_POSITION$ pozisyonundan alınacak. $COSTS$ ve aşağıdaki etkilere sebep olacak:\n$EFFECT$"
+  
+ COURT_POSITIONS_replace_confirm_header: "[court_position|E] Değiştirmeyi Onayla"
+ COURT_POSITIONS_replace_confirm_accept: "Değiştir"
+ COURT_POSITIONS_replace_position_confirmation: "[CHARACTER.GetShortUINameNoTooltip], $COURT_POSITION$ pozisyonundan alınacak ve yerine [TARGET_CHARACTER.GetShortUINameNoTooltip] getirilecek."
+ COURT_POSITIONS_replace_position_confirmation_with_cost: "[CHARACTER.GetShortUINameNoTooltip], $COURT_POSITION$ pozisyonundan alınacak ve yerine [TARGET_CHARACTER.GetShortUINameNoTooltip] getirilecek. $COSTS$"
+ COURT_POSITIONS_replace_position_confirmation_with_effect: "[CHARACTER.GetShortUINameNoTooltip], $COURT_POSITION$ pozisyonundan alınacak ve yerine [TARGET_CHARACTER.GetShortUINameNoTooltip] getirilecek. Bunu yapmak aşağıdaki etkilere sebep olacak:\n$EFFECT$"
+ COURT_POSITIONS_replace_position_confirmation_with_cost_and_effect: "[CHARACTER.GetShortUINameNoTooltip], $COURT_POSITION$ pozisyonundan alınacak ve yerine [TARGET_CHARACTER.GetShortUINameNoTooltip] getirilecek. $COSTS$ ve aşağıdaki etkilere sebep olacak:\n$EFFECT$"
+  
+ COURT_POSITION_CATEGORY_COMMON_NAME: "Sıradan"
+ COURT_POSITION_CATEGORY_OFFICER_NAME: "Memur" #NT!
+ COURT_POSITION_CATEGORY_ROYAL_NAME: "Kraliyet"
+ COURT_POSITION_CATEGORY_SPECIAL_NAME: "Özel"
+ COURT_POSITIONS_category_day_to_day: "Gündelik"
+ COURT_POSITIONS_category_honorary: "Onursal"
+ COURT_POSITIONS_category_personal_servants: "Kişisel Hizmetçiler"
+ COURT_POSITIONS_category_frivolous: "Önemsiz"
+ COURT_POSITIONS_category_fighters: "Dövüşçüler"
+ COURT_POSITIONS_months_of_service: "$MONTHS$ aydır hizmet veriyor"
+ COURT_POSITIONS_years_of_service: "$YEARS$ yıldır hizmet veriyor"
+  
+ COURT_POSITION_TOOLTIP_EFFECT_ON_YOUR_LIEGE: "[Concept( 'liege', 'Süzereniniz' )|E] üzerindeki Etkileri:"
+ COURT_POSITION_TOOLTIP_EFFECT_ON_LIEGE: "[liege|e] üzerindeki Etkileri:"
+ COURT_POSITION_TOOLTIP_SCALED_EFFECT_ON_LIEGE: "[Concept( 'aptitude', 'Yatkınlığa' )|E] bağlı olarak [liege|e] üzerindeki Etkileri:"
+ COURT_POSITION_TOOLTIP_LIEGE_REQUIREMENT: "[liege|e] koşulları:"
+ COURT_POSITION_TOOLTIP_EFFECT_ON_YOU: "Sizin üzerinizdeki Etkisi:"
+ COURT_POSITION_TOOLTIP_EFFECT_ON_EMPLOYEE: "[CourtPosition.GetNameNoTooltip] üzerindeki Etkisi:"
+ COURT_POSITION_TOOLTIP_EMPLOYEE_REQUIREMENT: "[CourtPositionType.GetNameNoTooltip] koşulları:"
+ COURT_POSITION_TOOLTIP_SALARY: "Salary: [CourtPosition.GetSalaryText]"
+ COURT_POSITION_TOOLTIP_SALARIES_GOLD_PAID: "Ödenen Altın maaş"
+ COURT_POSITION_TOOLTIP_SALARIES_GOLD_EARNED: "Kazanılan Altın maaş"
+ COURT_POSITION_TOOLTIP_SALARIES_PRESTIGE_PAID: "Ödenen Prestij bazında maaş"
+ COURT_POSITION_TOOLTIP_SALARIES_PRESTIGE_EARNED: "Kazanılan Prestij bazında maaş"
+ COURT_POSITION_TOOLTIP_SALARIES_PIETY_PAID: "Ödenen Dindarlık bazında maaş"
+ COURT_POSITION_TOOLTIP_SALARIES_PIETY_EARNED: "Kazanılan Dindarlık bazında maaş"
+ COURT_POSITION_TOOLTIP_REVOKE_COST: "• Size olan maliyeti: [CourtPosition.GetRevokeCostText]"
+ COURT_POSITION_TOOLTIP_REVOKE_EFFECT_HEADER: "Bu [Concept( 'court_position', 'Saray Pozisyonunu' )|E] almanın etkileri:"
+ COURT_POSITION_TOOLTIP_REVOKE_EFFECT_HEADER.COURT_POSITION: "[court_position|E]" #NT!
+ COURT_POSITION_TOOLTIP_REVOKE_EFFECT_HEADER.CAMP_OFFICER: "[officer|E]" #NT!
+ COURT_POSITION_TYPE_TOOLTIP_EFFECT_ON_EMPLOYEE: "[CourtPositionType.GetNameNoTooltip] üzerindeki Etkisi:"
+ COURT_POSITION_TYPE_TOOLTIP_SALARY: "Maaş: [CourtPositionType.GetSalaryText]"
+ COURT_POSITION_TYPE_TOOLTIP_REVOKE_COST: "• Size olan maliyeti: [CourtPositionType.GetRevokeCostText]"
+  
+ COURT_POSITION_SALARY_BREAKDOWN_BASE: "Temel Maaş"
+  
  COURT_POSITION_TASK_COST_BREAKDOWN_BASE: "[court_position_task_short|E] maliyeti"
  COURT_POSITION_TASK: "[court_position_task_short|E]"
  COURT_POSITION_TASK_TT: "#T [CourtPositionTaskType.GetName]#!\n[SelectLocalization( CourtPosition.IsActiveTask( CourtPositionTaskType.Self ), 'ACTIVE_COURT_POSITION_TASK_TT', 'POTENTIAL_COURT_POSITION_TASK_TT' )]"
@@ -122,7 +125,7 @@
  COURT_POSITION_NO_ACTIVE_TASK: "#weak Normal görevler #!"
  COURT_POSITION_NO_ACTIVE_TASK_DESCRIPTION: "#T Normal görevler#!\n[CourtPosition.GetNameNoTooltip] sadece normal görevlerini yapacak."
  COURT_POSITION_NO_ACTIVE_TASK_COST: "@gold_icon! #weak 0 #!"
-
+  
  COURT_POSITION_TASK_EFFECTS_HEADER: "#S Etkiler#!\n"
  COURT_POSITION_TASK_EMPLOYER_EFFECTS: "#S [liege|E] üzerindeki etkisi:#!#indent_newline:2 \n[CourtPositionTaskType.GetEmployerModifierDescription( CourtPosition.Self )]#!"
  COURT_POSITION_TASK_EMPLOYER_COURT_EFFECTS: "#S [Concept( 'liege', 'Süzerenin' )|E] [Concept( 'court', 'Sarayı' )|E] üzerindeki etkisi:#!#indent_newline:2 \n[CourtPositionTaskType.GetEmployerCourtModifierDescription( CourtPosition.Self )]#!"
@@ -130,7 +133,7 @@
  COURT_POSITION_TASK_START_EFFECTS: "#S Başlatıldığında:#!#indent_newline:2 \n[CourtPositionTaskType.GetOnStartEffectDesc( CourtPosition.Self )]#!"
  COURT_POSITION_TASK_END_EFFECTS: "#S Durdurulduğunda:#!#indent_newline:2 \n[CourtPositionTaskType.GetOnEndEffectDesc( CourtPosition.Self )]#!"
  COURT_POSITION_TASK_COST: "#S Maliyet (aylık):#!#indent_newline:2 \n[CourtPositionTaskType.GetCostText( CourtPosition.GetEmployer.Self )]#!"
-
+  
  COURT_POSITION_TASK_HINT: "#weak Bu [court_position|E] [Concept( 'court_position_tasks_short', 'görevler' )|E] yapabilir#!"
  COURT_POSITION_TASK_GENERIC_TT: "#T [CourtPositionTaskType.GetName]#!\nEmrimdeki [CourtPositionType.GetNameNoTooltip], [CourtPositionTaskType.GetName|V] [Concept( 'court_position_task_short', 'görevini' )|e] yapmaya başlayacak."
  COURT_POSITION_TASK_EMPLOYER_GENERIC_EFFECTS: "#S [liege|E] üzerindeki etkisi:#!#indent_newline:2 \n[CourtPositionTaskType.GetEmployerModifierGenericDescription]#!"
@@ -138,11 +141,11 @@
  COURT_POSITION_TASK_START_GENERIC_EFFECTS: "#S Başlatıldığında:#!#indent_newline:2 \n[CourtPositionTaskType.GetOnStartEffectGenericDesc]#!"
  COURT_POSITION_TASK_END_GENERIC_EFFECTS: "#S Durdurulduğunda:#!#indent_newline:2 \n[CourtPositionTaskType.GetOnEndEffectGenericDesc]#!"
  COURT_POSITION_TASK_GENERIC_COST: "#S Maliyet (aylık):#!#indent_newline:2 \n[CourtPositionTaskType.GetCostText( GetPlayer )]#!"
-
+  
  COURT_POSITION_TYPE_EMPLOYER_COURT_EFFECTS: "#S [Concept( 'liege', 'Süzerenin' )|E] [Concept( 'court', 'Sarayı' )|E] üzerindeki etkisi:#!#indent_newline:2 \n[CourtPositionType.GetEmployerCourtModifierDescription]#!"
  COURT_POSITION_EMPLOYER_COURT_EFFECTS: "#S [Concept( 'liege', 'Süzerenin' )|E] [Concept( 'court', 'Sarayı' )|E] üzerindeki etkisi:#!#indent_newline:2 \n[CourtPosition.GetEmployerCourtBonuses]#!"
  COURT_POSITION_APPOINT_EMPLOYER_COURT_EFFECTS: "#S [Concept( 'liege', 'Süzerenin' )|E] [Concept( 'court', 'Sarayı' )|E] üzerindeki etkisi:#!#indent_newline:2 \n[AppointCourtPositionView.GetLiegeCourtModifierForPositionType( AppointCourtPositionView.GetSelectedCharacter.Self )]#!"
-
+  
  physician_treat_epidemic: "Salgın Kontrolü"
  physician_treat_epidemic_desc: "Bu karakter, [Concept( 'liege', 'süzereninin' )|E] sahip olduğu her [Concept( 'barony', 'baronluktaki' )|E] [Concept( 'epidemic_resistance', 'Salgın Direncini' )|E] arttırmakla görevlendirilmiştir."
  physician_guard_family: "İleri Öğrenim"
@@ -151,223 +154,256 @@
  physician_attend_poor_desc: "Bu karakter yoksullar ile ilgilenip [Concept( 'liege', 'süzereninin' )|E] dindarlığını arttırmakla görevlendirilmiştir."
  chronicler_promote_legend_realm: "Yerel Destanı Yücelt"
  chronicler_promote_legend_realm_desc: "Bu karakter [Concept( 'liege', 'süzereninin' )|E] [Concept( 'legend', 'destanını' )|E] yüceltmekle ve yaymakla görevlendirilmiştir."
- culture_era_late_medieval_salary_mod:0 "#V $culture_era_late_medieval$#! [Concept( 'era', 'Dönemi' )|E]"
- culture_era_high_medieval_salary_mod:0 "#V $culture_era_high_medieval$#! [Concept( 'era', 'Dönemi' )|E]"
- culture_era_early_medieval_salary_mod:0 "#V $culture_era_early_medieval$#! [Concept( 'era', 'Dönemi' )|E]"
- esteemed_hospitality_salary_mod:0 "#V $tradition_esteemed_hospitality_name$#! [Concept( 'tradition', 'Geleneği' )|E]"
- empire_salary_mod:0 "[emperor|E]"
- tribal_salary_mod:0 "[tribal|E]"
- small_realm_salary_mod:0 "Kayda Değer [realm_size|E] #low (30+)#!"
- medium_realm_salary_mod:0 "Yüksek [realm_size|E] #low (60+)#!"
- large_realm_salary_mod:0 "Çok Yüksek [realm_size|E] #low (90+)#!"
- enormous_realm_salary_mod:0 "Aşırı [realm_size|E] #low (120+)#!"
- holds_court_position_opinion:0 "$POSITION$: $VALUE|=+$"
-
- COURT_POSITION_APTITUDE_TOOLTIP_HEADER:0 "Yatkınlık"
- COURT_POSITION_aptitude_description_position:1 "[aptitude|e]: [CourtPosition.GetAptitudeText|V]"
- COURT_POSITION_aptitude_breakdown:0 "[CHARACTER.GetShortUINameNoTooltip] adlı karakterin $COURT_POSITION$ pozisyonuna olan [Concept( 'aptitude', 'Yatkınlığını' )|E] etkileyen unsurlar:"
- COURT_POSITION_aptitude_character_possessive:0 "[Character.GetShortUINameNoTooltip] adlı karakterin [Concept( 'aptitude', 'Yatkınlığı' )|E]:"
-
- court_position_skill_learning:0 "[learning|E] Becerisi"
- court_position_skill_martial:0 "[martial|E] Becerisi"
- court_position_skill_prowess:0 "[prowess|E] Becerisi"
- court_position_skill_diplomacy:0 "[diplomacy|E] Becerisi"
- court_position_skill_stewardship:0 "[stewardship|E] Becerisi"
- court_position_skill_intrigue:0 "[intrigue|E] Becerisi"
- court_position_languages:0 "Bildiği [languages|E]"
- court_position_landed_penalty:0 "Hükmetmekle meşgul"
+ culture_era_late_medieval_salary_mod: "#V $culture_era_late_medieval$#! [Concept( 'era', 'Dönemi' )|E]"
+ culture_era_high_medieval_salary_mod: "#V $culture_era_high_medieval$#! [Concept( 'era', 'Dönemi' )|E]"
+ culture_era_early_medieval_salary_mod: "#V $culture_era_early_medieval$#! [Concept( 'era', 'Dönemi' )|E]"
+ esteemed_hospitality_salary_mod: "#V $tradition_esteemed_hospitality_name$#! [Concept( 'tradition', 'Geleneği' )|E]"
+ empire_salary_mod: "[emperor|E]"
+ tribal_salary_mod: "[tribal|E]"
+ small_realm_salary_mod: "Kayda Değer [realm_size|E] #low (30+)#!"
+ medium_realm_salary_mod: "Yüksek [realm_size|E] #low (60+)#!"
+ large_realm_salary_mod: "Çok Yüksek [realm_size|E] #low (90+)#!"
+ enormous_realm_salary_mod: "Aşırı [realm_size|E] #low (120+)#!"
+ holds_court_position_opinion: "$POSITION$: $VALUE|=+$"
+  
+ COURT_POSITION_APTITUDE_TOOLTIP_HEADER: "Yatkınlık"
+ COURT_POSITION_aptitude_description_position: "[aptitude|e]: [CourtPosition.GetAptitudeText|V]"
+ COURT_POSITION_aptitude_breakdown: "[CHARACTER.GetShortUINameNoTooltip] adlı karakterin $COURT_POSITION$ pozisyonuna olan [Concept( 'aptitude', 'Yatkınlığını' )|E] etkileyen unsurlar:"
+ COURT_POSITION_aptitude_character_possessive: "[Character.GetShortUINameNoTooltip] adlı karakterin [Concept( 'aptitude', 'Yatkınlığı' )|E]:"
+  
+ court_position_skill_learning: "[learning|E] Becerisi"
+ court_position_skill_martial: "[martial|E] Becerisi"
+ court_position_skill_prowess: "[prowess|E] Becerisi"
+ court_position_skill_diplomacy: "[diplomacy|E] Becerisi"
+ court_position_skill_stewardship: "[stewardship|E] Becerisi"
+ court_position_skill_intrigue: "[intrigue|E] Becerisi"
+ court_position_skill_all: "Tüm [skills|E]'ın toplamı" #NT!
+ court_position_languages: "Bildiği [languages|E]"
+ court_position_landed_penalty: "Hükmetmekle meşgul"
  court_position_imprisoned_penalty: "Hapiste"
- court_position_skill_health_good:0 "Mükemmel [health|E]"
- court_position_skill_health:0 "İyi [health|E]"
- court_position_skill_health_low:0 "Kötü [health|E]"
- court_position_physician_3_trait:1 "$court_position_physician_1_trait$"
- court_position_physician_2_trait:1 "$court_position_physician_1_trait$"
- court_position_physician_1_trait:1 "[GetTrait('lifestyle_physician').GetName( ROOT.Char )]"
- court_position_mystic_3_trait:1 "$court_position_mystic_1_trait$"
- court_position_mystic_2_trait:1 "$court_position_mystic_1_trait$"
- court_position_mystic_1_trait:1 "[GetTrait('lifestyle_mystic').GetName( ROOT.Char )]"
- court_position_hunter_3_trait:1 "$court_position_hunter_1_trait$"
- court_position_hunter_2_trait:1 "$court_position_hunter_1_trait$"
- court_position_hunter_1_trait:1 "[GetTrait('lifestyle_hunter').GetName( ROOT.Char )]"
- court_position_reveler_3_trait:0 "$court_position_reveler_1_trait$"
- court_position_reveler_2_trait:0 "$court_position_reveler_1_trait$"
- court_position_reveler_1_trait:0 "[GetTrait('lifestyle_reveler').GetName( ROOT.Char )]"
- court_position_intellect_good_3_trait:0 "[GetTrait('intellect_good_3').GetName( ROOT.Char )]"
- court_position_intellect_good_2_trait:0 "[GetTrait('intellect_good_2').GetName( ROOT.Char )]"
- court_position_intellect_good_1_trait:0 "[GetTrait('intellect_good_1').GetName( ROOT.Char )]"
+ court_position_skill_health_good: "Mükemmel [health|E]"
+ court_position_skill_health: "İyi [health|E]"
+ court_position_skill_health_low: "Kötü [health|E]"
+ court_position_physician_3_trait: "$court_position_physician_1_trait$"
+ court_position_physician_2_trait: "$court_position_physician_1_trait$"
+ court_position_physician_1_trait: "[GetTrait('lifestyle_physician').GetName( ROOT.Char )]"
+ court_position_mystic_3_trait: "$court_position_mystic_1_trait$"
+ court_position_mystic_2_trait: "$court_position_mystic_1_trait$"
+ court_position_mystic_1_trait: "[GetTrait('lifestyle_mystic').GetName( ROOT.Char )]"
+ court_position_hunter_3_trait: "$court_position_hunter_1_trait$"
+ court_position_hunter_2_trait: "$court_position_hunter_1_trait$"
+ court_position_hunter_1_trait: "[GetTrait('lifestyle_hunter').GetName( ROOT.Char )]"
+ court_position_reveler_3_trait: "$court_position_reveler_1_trait$"
+ court_position_reveler_2_trait: "$court_position_reveler_1_trait$"
+ court_position_reveler_1_trait: "[GetTrait('lifestyle_reveler').GetName( ROOT.Char )]"
+ court_position_intellect_good_3_trait: "[GetTrait('intellect_good_3').GetName( ROOT.Char )]"
+ court_position_intellect_good_2_trait: "[GetTrait('intellect_good_2').GetName( ROOT.Char )]"
+ court_position_intellect_good_1_trait: "[GetTrait('intellect_good_1').GetName( ROOT.Char )]"
  court_position_physique_good_3_trait: "[GetTrait('physique_good_3').GetName( ROOT.Char )]"
  court_position_physique_good_2_trait: "[GetTrait('physique_good_2').GetName( ROOT.Char )]"
  court_position_physique_good_1_trait: "[GetTrait('physique_good_1').GetName( ROOT.Char )]"
  court_position_strong_trait: "[GetTrait('strong').GetName( ROOT.Char )]"
  court_position_loyal_trait: "[GetTrait('loyal').GetName( ROOT.Char )]"
- court_position_patient_trait:0 "[GetTrait('patient').GetName( ROOT.Char )]"
- court_position_impatient_trait:0 "[GetTrait('impatient').GetName( ROOT.Char )]"
- court_position_generous_trait:0 "[GetTrait('generous').GetName( ROOT.Char )]"
- court_position_greedy_trait:0 "[GetTrait('greedy').GetName( ROOT.Char )]"
- court_position_profligate_trait:0 "[GetTrait('profligate').GetName( ROOT.Char )]"
- court_position_scholar_trait:0 "[GetTrait('scholar').GetName( ROOT.Char )]"
- court_position_shrewd_trait:0 "[GetTrait('shrewd').GetName( ROOT.Char )]"
+ court_position_patient_trait: "[GetTrait('patient').GetName( ROOT.Char )]"
+ court_position_impatient_trait: "[GetTrait('impatient').GetName( ROOT.Char )]"
+ court_position_generous_trait: "[GetTrait('generous').GetName( ROOT.Char )]"
+ court_position_greedy_trait: "[GetTrait('greedy').GetName( ROOT.Char )]"
+ court_position_profligate_trait: "[GetTrait('profligate').GetName( ROOT.Char )]"
+ court_position_scholar_trait: "[GetTrait('scholar').GetName( ROOT.Char )]"
+ court_position_shrewd_trait: "[GetTrait('shrewd').GetName( ROOT.Char )]"
  court_position_theologian_trait: "[GetTrait('theologian').GetName( ROOT.Char )]"
- court_position_architect_trait:0 "[GetTrait('architect').GetName( ROOT.Char )]"
- court_position_architect_study_experience:0 "Mimarlığa dair kitaplar okudu"
- court_position_gregarious_trait:0 "[GetTrait('gregarious').GetName( ROOT.Char )]"
- court_position_diplomat_trait:0 "[GetTrait('diplomat').GetName( ROOT.Char )]"
- court_position_poet_trait:0 "[GetTrait('poet').GetName( ROOT.Char )]"
- court_position_blademaster_3_trait:1 "$court_position_blademaster_1_trait$"
- court_position_blademaster_2_trait:1 "$court_position_blademaster_1_trait$"
- court_position_blademaster_1_trait:1 "[GetTrait('lifestyle_blademaster').GetName( ROOT.Char )]"
- court_position_shieldmaiden_trait:0 "[GetTrait('shieldmaiden').GetName( ROOT.Char )]"
- court_position_brave_trait:0 "[GetTrait('brave').GetName( ROOT.Char )]"
- court_position_craven_trait:0 "[GetTrait('craven').GetName( ROOT.Char )]"
- court_position_blind_trait:0 "[GetTrait('blind').GetName( ROOT.Char )]"
- court_position_infirm_trait:0 "[GetTrait('infirm').GetName( ROOT.Char )]"
- court_position_maimed_trait:0 "[GetTrait('maimed').GetName( ROOT.Char )]"
- court_position_wounded_3_trait:0 "[GetTrait('wounded_3').GetName( ROOT.Char )]"
- court_position_wounded_2_trait:0 "[GetTrait('wounded_2').GetName( ROOT.Char )]"
- court_position_administrator_trait:0 "[GetTrait('administrator').GetName( ROOT.Char )]"
- court_position_shy_trait:0 "[GetTrait('shy').GetName( ROOT.Char )]"
- court_position_gluttonous_trait:0 "[GetTrait('gluttonous').GetName( ROOT.Char )]"
- court_position_comfort_eater_trait:0 "[GetTrait('comfort_eater').GetName( ROOT.Char )]"
- court_position_inappetetic_trait:0 "[GetTrait('inappetetic').GetName( ROOT.Char )]"
- court_position_torturer_trait:0 "[GetTrait('torturer').GetName( ROOT.Char )]"
- court_position_sadistic_trait:0 "[GetTrait('sadistic').GetName( ROOT.Char )]"
- court_position_clergy_trait:0 "[clergy|E] sınıfına mensup"
- court_position_completed_inspiration:0 "[inspiration|E] tamamladı"
- court_position_high_skills_trait:0 "Çok yetenekli"
- court_position_gardener_trait:0 "[GetTrait('lifestyle_gardener').GetName( ROOT.Char )]"
- court_position_herbalist_trait:0 "[GetTrait('lifestyle_herbalist').GetName( ROOT.Char )]"
- court_position_overseer_trait:0 "[GetTrait('overseer').GetName( ROOT.Char )]"
- court_position_gallant_trait:0 "[GetTrait('gallant').GetName( ROOT.Char )]"
- court_position_tradition_music_theory:0 "$tradition_music_theory_name$ [culture_tradition|E]"
- court_position_just_trait:0 "[GetTrait('just').GetName( ROOT.Char )]"
- court_position_arbitrary_trait:0 "[GetTrait('arbitrary').GetName( ROOT.Char )]"
- court_position_temperate_trait:0 "[GetTrait('temperate').GetName( ROOT.Char )]"
- court_position_tradition_culinary_art:0 "$tradition_culinary_art_name$ [culture_tradition|E]"
- court_position_compassionate_trait:0 "[GetTrait('compassionate').GetName( ROOT.Char )]"
- court_position_avaricious_trait:0 "[GetTrait('avaricious').GetName( ROOT.Char )]"
- court_position_trusting_trait:0 "[GetTrait('trusting').GetName( ROOT.Char )]"
- court_position_deceitful_trait:0 "[GetTrait('deceitful').GetName( ROOT.Char )]"
- court_position_honest_trait:0 "[GetTrait('honest').GetName( ROOT.Char )]"
- court_position_stubborn_trait:0 "[GetTrait('stubborn').GetName( ROOT.Char )]"
- court_position_paranoid_trait:0 "[GetTrait('paranoid').GetName( ROOT.Char )]"
- court_position_reclusive_trait:0 "[GetTrait('reclusive').GetName( ROOT.Char )]"
- court_position_athletic_trait:0 "[GetTrait('athletic').GetName( ROOT.Char )]"
+ court_position_architect_trait: "[GetTrait('architect').GetName( ROOT.Char )]"
+ court_position_architect_study_experience: "Mimarlığa dair kitaplar okudu"
+ court_position_gregarious_trait: "[GetTrait('gregarious').GetName( ROOT.Char )]"
+ court_position_diplomat_trait: "[GetTrait('diplomat').GetName( ROOT.Char )]"
+ court_position_poet_trait: "[GetTrait('poet').GetName( ROOT.Char )]"
+ court_position_blademaster_3_trait: "$court_position_blademaster_1_trait$"
+ court_position_blademaster_2_trait: "$court_position_blademaster_1_trait$"
+ court_position_blademaster_1_trait: "[GetTrait('lifestyle_blademaster').GetName( ROOT.Char )]"
+ court_position_shieldmaiden_trait: "[GetTrait('shieldmaiden').GetName( ROOT.Char )]"
+ court_position_brave_trait: "[GetTrait('brave').GetName( ROOT.Char )]"
+ court_position_craven_trait: "[GetTrait('craven').GetName( ROOT.Char )]"
+ court_position_blind_trait: "[GetTrait('blind').GetName( ROOT.Char )]"
+ court_position_infirm_trait: "[GetTrait('infirm').GetName( ROOT.Char )]"
+ court_position_maimed_trait: "[GetTrait('maimed').GetName( ROOT.Char )]"
+ court_position_wounded_3_trait: "[GetTrait('wounded_3').GetName( ROOT.Char )]"
+ court_position_wounded_2_trait: "[GetTrait('wounded_2').GetName( ROOT.Char )]"
+ court_position_administrator_trait: "[GetTrait('administrator').GetName( ROOT.Char )]"
+ court_position_shy_trait: "[GetTrait('shy').GetName( ROOT.Char )]"
+ court_position_gluttonous_trait: "[GetTrait('gluttonous').GetName( ROOT.Char )]"
+ court_position_comfort_eater_trait: "[GetTrait('comfort_eater').GetName( ROOT.Char )]"
+ court_position_inappetetic_trait: "[GetTrait('inappetetic').GetName( ROOT.Char )]"
+ court_position_torturer_trait: "[GetTrait('torturer').GetName( ROOT.Char )]"
+ court_position_sadistic_trait: "[GetTrait('sadistic').GetName( ROOT.Char )]"
+ court_position_callous_trait: "[GetTrait('callous').GetName( ROOT.Char )]"
+ court_position_fickle_trait: "[GetTrait('fickle').GetName( ROOT.Char )]" #NT!
+ court_position_clergy_trait: "[clergy|E] sınıfına mensup"
+ court_position_completed_inspiration: "[inspiration|E] tamamladı"
+ court_position_high_skills_trait: "Çok yetenekli"
+ court_position_gardener_trait: "[GetTrait('lifestyle_gardener').GetName( ROOT.Char )]"
+ court_position_herbalist_trait: "[GetTrait('lifestyle_herbalist').GetName( ROOT.Char )]"
+ court_position_overseer_trait: "[GetTrait('overseer').GetName( ROOT.Char )]"
+ court_position_gallant_trait: "[GetTrait('gallant').GetName( ROOT.Char )]"
+ court_position_tradition_music_theory: "$tradition_music_theory_name$ [culture_tradition|E]"
+ court_position_just_trait: "[GetTrait('just').GetName( ROOT.Char )]"
+ court_position_arbitrary_trait: "[GetTrait('arbitrary').GetName( ROOT.Char )]"
+ court_position_temperate_trait: "[GetTrait('temperate').GetName( ROOT.Char )]"
+ court_position_tradition_culinary_art: "$tradition_culinary_art_name$ [culture_tradition|E]"
+ court_position_compassionate_trait: "[GetTrait('compassionate').GetName( ROOT.Char )]"
+ court_position_avaricious_trait: "[GetTrait('avaricious').GetName( ROOT.Char )]"
+ court_position_schemer_trait: "[GetTrait('schemer').GetName( ROOT.Char )]" #NT!
+ court_position_trusting_trait: "[GetTrait('trusting').GetName( ROOT.Char )]"
+ court_position_deceitful_trait: "[GetTrait('deceitful').GetName( ROOT.Char )]"
+ court_position_honest_trait: "[GetTrait('honest').GetName( ROOT.Char )]"
+ court_position_stubborn_trait: "[GetTrait('stubborn').GetName( ROOT.Char )]"
+ court_position_paranoid_trait: "[GetTrait('paranoid').GetName( ROOT.Char )]"
+ court_position_reclusive_trait: "[GetTrait('reclusive').GetName( ROOT.Char )]"
+ court_position_athletic_trait: "[GetTrait('athletic').GetName( ROOT.Char )]"
  court_position_zealous_trait: "[GetTrait('zealous').GetName( ROOT.Char )]"
  court_position_murderer_trait: "[GetTrait('murderer').GetName( ROOT.Char )]"
  court_position_order_member_trait: "[GetTrait('order_member').GetName( ROOT.Char )]"
- court_position_faith_warrior_trait: "[GetTrait('faith_warrior').GetName( ROOT.Char )]" 
- court_position_diligent_trait:0 "[GetTrait('diligent').GetName( ROOT.Char )]"
- court_position_lazy_trait:0 "[GetTrait('lazy').GetName( ROOT.Char )]"
- court_position_logistician_trait:0 "[GetTrait('logistician').GetName( ROOT.Char )]"
- court_position_forder_trait:0 "[GetTrait('forder').GetName( ROOT.Char )]"
- court_position_lots_of_travel:0 "Seyahat Tecrübesi"
- court_position_pilgrim_trait:0 "[GetTrait('pilgrim').GetName( ROOT.Char )]"
- court_position_hajjaj_trait:0 "[GetTrait('hajjaj').GetName( ROOT.Char )]"
- court_position_adventurer_trait:0 "[GetTrait('adventurer').GetName( ROOT.Char )]"
- court_position_clubfooted_trait:0 "[GetTrait('clubfooted').GetName( ROOT.Char )]"
- court_position_incapable_trait:0 "[GetTrait('incapable').GetName( ROOT.Char )]"
- court_position_flexible_leader_trait:0 "[GetTrait('flexible_leader').GetName( ROOT.Char )]"
- court_position_forest_fighter_trait:0 "[GetTrait('forest_fighter').GetName( ROOT.Char )]"
- court_position_open_terrain_expert_trait:0 "[GetTrait('open_terrain_expert').GetName( ROOT.Char )]"
- court_position_rough_terrain_expert_trait:0 "[GetTrait('rough_terrain_expert').GetName( ROOT.Char )]"
- court_position_desert_warrior_trait:0 "[GetTrait('desert_warrior').GetName( ROOT.Char )]"
- court_position_jungle_stalker_trait:0 "[GetTrait('jungle_stalker').GetName( ROOT.Char )]"
- court_position_winter_soldier_trait:0 "[GetTrait('winter_soldier').GetName( ROOT.Char )]"
- court_position_whole_of_body_trait:0 "[GetTrait('whole_of_body').GetName( ROOT.Char )]"
- court_position_traveler_trait:0 "[GetTrait('lifestyle_traveler').GetName( ROOT.Char )]"
- court_position_traveler_trait_experienced:0 "[GetTrait('lifestyle_traveler').GetName( ROOT.Char )]"
- court_position_traveler_trait_experienced_danger:0 "[GetTrait('lifestyle_traveler').GetName( ROOT.Char )]"
- court_position_beastmaster_modifier:0 "$ep2_beastmaster_modifier$"
- court_position_speed:0 "[travel_speed|E] Katkısı"
- court_position_safety:0 "[travel_safety|E] Katkısı"
-
- court_position_tradition_poetry:0 "$tradition_poetry_name$ [culture_tradition|E]"
- court_position_tradition_horse_lords:0 "$tradition_horse_lords_name$ [culture_tradition|E]"
- court_position_tradition_caravaneers:0 "$tradition_caravaneers_name$ [culture_tradition|E]"
- court_position_tradition_saharan_nomads:0 "$tradition_saharan_nomads_name$ [culture_tradition|E]"
- court_position_tradition_desert_nomads:0 "$tradition_desert_nomads_name$ [culture_tradition|E]"
-
- court_physician_court_position:0 "Saray Hekimi"
- court_physician_tradition_bonus:0 "[Concept( 'culture_tradition', 'Kültürel Geleneğinden' )|E]"
- court_physician_court_position_desc:1 "$court_physician_court_position$, bulunduğu [Concept( 'court', 'Sarayın' )|E] sağlığından ve zindeliğinden sorumludur. Ellerinden geldiğince hastalıkları tedavi eder, yaralara müdahale ederler."
- court_physician_employer_custom_effect_description:4 "$BULLET$[medical_treatments|E] gerçekleştirir.#!"
+ court_position_faith_warrior_trait: "[GetTrait('faith_warrior').GetName( ROOT.Char )]"
+ court_position_diligent_trait: "[GetTrait('diligent').GetName( ROOT.Char )]"
+ court_position_lazy_trait: "[GetTrait('lazy').GetName( ROOT.Char )]"
+ court_position_reveler_trait: "[GetTrait('lifestyle_reveler').GetName( ROOT.Char )]" #NT!
+ court_position_flagellant_trait: "[GetTrait('flagellant').GetName( ROOT.Char )]" #NT!
+ court_position_seducer_trait: "[GetTrait('seducer').GetName( ROOT.Char )]" #NT!
+ court_position_improvident_trait: "[GetTrait('improvident').GetName( ROOT.Char )]" #NT!
+ court_position_strategist_trait: "[GetTrait('strategist').GetName( ROOT.Char )]" #NT!
+ court_position_logistician_trait: "[GetTrait('logistician').GetName( ROOT.Char )]"
+ court_position_forder_trait: "[GetTrait('forder').GetName( ROOT.Char )]"
+ court_position_lots_of_travel: "Seyahat Tecrübesi"
+ court_position_pilgrim_trait: "[GetTrait('pilgrim').GetName( ROOT.Char )]"
+ court_position_hajjaj_trait: "[GetTrait('hajjaj').GetName( ROOT.Char )]"
+ court_position_adventurer_trait: "[GetTrait('adventurer').GetName( ROOT.Char )]"
+ court_position_clubfooted_trait: "[GetTrait('clubfooted').GetName( ROOT.Char )]"
+ court_position_incapable_trait: "[GetTrait('incapable').GetName( ROOT.Char )]"
+ court_position_flexible_leader_trait: "[GetTrait('flexible_leader').GetName( ROOT.Char )]"
+ court_position_forest_fighter_trait: "[GetTrait('forest_fighter').GetName( ROOT.Char )]"
+ court_position_open_terrain_expert_trait: "[GetTrait('open_terrain_expert').GetName( ROOT.Char )]"
+ court_position_rough_terrain_expert_trait: "[GetTrait('rough_terrain_expert').GetName( ROOT.Char )]"
+ court_position_desert_warrior_trait: "[GetTrait('desert_warrior').GetName( ROOT.Char )]"
+ court_position_jungle_stalker_trait: "[GetTrait('jungle_stalker').GetName( ROOT.Char )]"
+ court_position_winter_soldier_trait: "[GetTrait('winter_soldier').GetName( ROOT.Char )]"
+ court_position_commander_traits: "Herhangi bir [commander_trait|E] var mı?" #NT!
+ court_position_whole_of_body_trait: "[GetTrait('whole_of_body').GetName( ROOT.Char )]"
+ court_position_traveler_trait: "[GetTrait('lifestyle_traveler').GetName( ROOT.Char )]"
+ court_position_traveler_trait_experienced: "[GetTrait('lifestyle_traveler').GetName( ROOT.Char )]"
+ court_position_traveler_trait_experienced_danger: "[GetTrait('lifestyle_traveler').GetName( ROOT.Char )]"
+ court_position_beastmaster_modifier: "$ep2_beastmaster_modifier$"
+ court_position_speed: "[travel_speed|E] Katkısı"
+ court_position_safety: "[travel_safety|E] Katkısı"
+ court_position_soulmate: "[soulmate|E]'ınız mı?" #NT!
+ court_position_best_friend: "[best_friend|E]'ınız mı?" #NT!
+ court_position_friend: "[friend|E]'ınız mı?" #NT!
+ court_position_improved_by_camp_fire_capering_fools: "[GetDomicileBuilding('camp_fire_capering_fools').GetName]" #NT!
+  
+ court_position_tradition_poetry: "$tradition_poetry_name$ [culture_tradition|E]"
+ court_position_tradition_horse_lords: "$tradition_horse_lords_name$ [culture_tradition|E]"
+ court_position_tradition_caravaneers: "$tradition_caravaneers_name$ [culture_tradition|E]"
+ court_position_tradition_saharan_nomads: "$tradition_saharan_nomads_name$ [culture_tradition|E]"
+ court_position_tradition_desert_nomads: "$tradition_desert_nomads_name$ [culture_tradition|E]"
+  
+ court_physician_court_position: "Saray Hekimi"
+ court_physician_tradition_bonus: "[Concept( 'culture_tradition', 'Kültürel Geleneğinden' )|E]"
+ court_physician_court_position_desc: "$court_physician_court_position$, bulunduğu [Concept( 'court', 'Sarayın' )|E] sağlığından ve zindeliğinden sorumludur. Ellerinden geldiğince hastalıkları tedavi eder, yaralara müdahale ederler."
+ court_physician_employer_custom_effect_description: "$BULLET$[medical_treatments|E] gerçekleştirir.#!"
  court_physician_not_employed_or_away_tt: "[GetCourtPositionType('court_physician_court_position').GetName()] sahibi değilsiniz veya sizin yanınızda değil"
-
- hire_physician_decision:0 "Hekim Ara"
- hire_physician_decision_tooltip:3 "Hizmetkârlarınız [GetCourtPositionType('court_physician_court_position').GetName()] pozisyonu için uygun birkaç aday önerecek"
- hire_physician_decision_desc:1 "Saraydaki hasta ve yaralılarla ilgilenmesi için bir saray hekiminin varlığı elzemdir. Hizmetkârlarımdan bu iş için uygun birkaç aday getirmelerini isteyeceğim."
- hire_physician_decision_effect_tooltip:4 "[GetCourtPositionType('court_physician_court_position').GetName()] pozisyonu için bir dizi aday karşınıza getirilecek, bunlardan dilediğinizi belli bir ücret ve aylık [gold_i][SCOPE.ScriptValue('court_position_physician_salary')] maaş karşılığında işe alabileceksiniz."
- hire_physician_decision_confirm:0 "Aramaya başla"
- 
- antiquarian_employer_custom_effect_description:1 "$BULLET$[Concept( 'artifacts', 'Eserlerde' )|E] $repair_or_reforge_and_repair$ yapabilmenizi sağlar\n$BULLET$#V $commission_artifact_decision$#! [Concept( 'decision', 'Kararını' )|E] açar\n$BULLET$[sieges|E] ve [raids|E] esnasında [Concept( 'artifacts', 'Eserleri' )|E] korur"
-
- chief_eunuch_court_position:1 "Baş Hadım"
- chief_eunuch_court_position_desc:1 "$chief_eunuch_court_position$, saray hadımlarından sorumlu güvenilir bir hizmetkârdır. Hem hizmetçiler arasında hem de hükümdarın çevresindekiler arasında onun bilgisi dışında çok az şey olur."
- keeper_of_swans_court_position:0 "Kuğu Bakıcısı"
- keeper_of_swans_court_position_desc:1 "$keeper_of_swans_court_position$, krallığın kuğularından sorumludur. Süzerenlerinin tüylü cevherlerine bakar ve onlarla ilgilenir. Bu oldukça büyük bir sorumluluktur."
- master_of_horse_court_position:0 "Seyisbaşı"
- master_of_horse_court_position_desc:1 "$master_of_horse_court_position$, Süzereninin ihtişamlı beygirlerinin ve ahırlarının bakımından sorumludur. Bakımlı bir at hem muharebe alanında hem de seyahat esnasında fark yaratabileceğinden bu görev oldukça önemlidir."
- court_jester_court_position:0 "Saray Soytarısı"
- court_jester_employer_custom_effect_description:1 "$BULLET$[stress|E] azaltan olayları tetikleyebilir"
- court_jester_court_position_desc:1 "$court_jester_court_position$, Süzerenini ve saraydaki misafirleri eğlendirir. Zekice kelime oyunları kimi zaman takdir edilse de, kötü bir düşüş her zaman kahkaha atılmasını sağlar."
- master_of_hunt_court_position:0 "Avcıbaşı"
- master_of_hunt_employer_custom_effect_description:4 "$BULLET$[GetActivityType('activity_hunt').GetName] [hunt_success_chance_no_prefix|E] ve [hunt_sightings_no_prefix|E] sıklığı [aptitude|E] ile doğru orantıdadır."
- master_of_hunt_court_position_desc:1 "$master_of_hunt_court_position$, Süzereninin sarayı tarafından düzenlenen av partilerinden, kulübeler ve bu kulübelerdeki köpeklerden sorumludur."
- high_almoner_court_position:0 "Sadakacı"
- high_almoner_court_position_desc:1 "$high_almoner_court_position$, yoksullara ve ihtiyaç sahibi diğer kişilere sadaka dağıtmaktan sorumludur."
- cupbearer_court_position:0 "Saki"
- cupbearer_employer_custom_effect_description:3 "$BULLET$Zehir içeren [GetScheme('murder').GetTypeName] [Concept( 'schemes', 'Planlarına' )|E] mani olabilir#!"
- cupbearer_court_position_desc:1 "$cupbearer_court_position$, kraliyet masasına içki dağıtır ve bardakların boş olmamasından sorumludur."
- seneschal_court_position:0 "Kâhya"
- seneschal_court_position_desc:1 "$seneschal_court_position$ kraliyet hanesini idare etmede, hizmetçileri yönlendirmede ve düzeni sağlamada önemli bir rol oynar."
- antiquarian_court_position:0 "Antikacı"
- antiquarian_court_position_desc:2 "$antiquarian_court_position$ eserlerin korunmasından, bakımından ve bulunmasından sorumludur."
- court_tutor_court_position:0 "Saray Öğretmeni"
- court_tutor_employer_custom_effect_description:3 "$BULLET$Karakterlerin daha iyi bir [education|E] almalarını sağlar\n$BULLET$#V $make_child_learn_language_interaction$#! [Concept( 'interaction', 'Etkileşimini' )|E] açar"
- court_tutor_court_position_desc:1 "$court_tutor_court_position$, saraydaki tüm çocukların [Concept( 'education', 'Eğitiminden' )|E] sorumludur. Çocuklar ek olarak [guardian|E] sahibi olabilirler."
- royal_architect_court_position:0 "Saray Mimarı"
- royal_architect_court_position_desc:1 "$royal_architect_court_position$, ülke genelindeki ihtişamlı inşaat projelerini denetler; döşenen her tuğlayı ve harcanan her saniyeyi kontrol eder."
- court_poet_court_position:0 "Saray Şairi"
- court_poet_employer_custom_effect_description:2 "$BULLET$Rastgele bir şekilde [Concept( 'inspired', 'İlham' )|E] sahibi olabilir"
- court_poet_court_position_desc:1 "$court_poet_court_position$ kelimelerin ve kafiyelerin ustasıdır. Dinleyicilerin duygularına hitap eder, kimi zaman onları düşünmeye sevkeder."
- poet_inspired_message:0 "İlham Geldi!"
- poet_inspired_effect:0 "Sarayınızdaki [GetCourtPositionType('court_poet_court_position').GetName()] [inspired_poet.GetFirstName], bir [inspiration|E] kazandı"
- bodyguard_court_position:0 "Koruma"
- bodyguard_employer_custom_effect_description:3 "$BULLET$Suikast içeren [GetScheme('murder').GetTypeName] [Concept( 'schemes', 'Planlarına' )|E] mani olabilir#!\n$BULLET$İkinizin de bulunduğu [Concept( 'battles', 'Muharebelerde' )|E] ölme veya yakalanma riskinizi azaltır#!"
- bodyguard_court_position_desc:1 "$bodyguard_court_position$, krallığın tüm saldırganlara karşı sahip olduğu nihai savunma hattıdır. Tereddüt etmeden her hücumu takip eder, onları her türlü tehdide karşı korurlar."
- champion_court_position:1 "Kişisel Şampiyon"
- champion_employer_custom_effect_description:3 "$BULLET$Bazı [Concept( 'single_combat_duel_plural', 'Düellolarda' )|E] sizin yerinizi alabilir\n[AddLocalizationIf( HasDlcFeature( 'tours_and_tournaments' ), 'champion_employer_custom_effect_description_TOTO_DLC' )]"
- champion_employer_custom_effect_description_TOTO_DLC:1 "$BULLET$[GetActivityType( 'activity_tournament' ).GetName] esnasında sizin adınıza [prestige|E] kazanır."
- champion_court_position_desc:1 "$champion_court_position$, Süzerenini düellolarda temsil eden yetenekli ve ölümcül bir savaşçıdır."
- court_musician_court_position:0 "Saray Müzisyeni"
- court_musician_employer_custom_effect_description:2 "$BULLET$[GetActivityType('activity_feast').GetName] esnasında kazanılan [opinion|E] artışını yükseltir"
- court_musician_court_position_desc:1 "$court_musician_court_position$ Süzerenini ve diğer saray mensuplarını eğlendirmek için şarkılar söyler ve çalgılar çalar."
- food_taster_court_position:0 "Çeşnicibaşı"
- food_taster_employer_custom_effect_description:3 "$BULLET$Zehir içeren [GetScheme('murder').GetTypeName] [Concept( 'schemes', 'Planlarına' )|E] mani olabilir#!\n$BULLET$Daha hızlı bir şekilde kilo verirsiniz#!"
- food_taster_court_position_desc:1 "$food_taster_court_position$, Süzereninin tabağına zehir değmemesinden sorumludur. Olur da zehirli bir toz veya sıvı yiyecekle temas ederse... İşte tam olarak bu yüzden Çeşnicibaşı yemekten önce her yemeği tadar."
- lady_in_waiting_court_position:0 "Nedime"
- lady_in_waiting_court_position_desc:1 "$lady_in_waiting_court_position$, Kraliçe veya İmparatoriçenin yardımcısı ve yoldaşıdır, onun ihtiyaçlarını ve taleplerini karşılar."
- executioner_court_position:0 "Cellat"
- executioner_employer_custom_effect_description:2 "$BULLET$[control|E] ve [county_opinion|E] artışı için [Concept( 'prisoners', 'Tutsakları' )|E] halka açık bir şekilde [Concept( 'execute', 'İdam Edebilir' )|E]\n@warning_icon! #X Bu karakterin suçları affedilir#!"
- executioner_court_position_desc:1 "Cellatlar, özgürlükleri karşılığında tahtın düşmanlarını idam etmeyi kabul etmiş suçlulardır. Kimileri bunu bir onur olarak görürken, kimileri için çok büyük bir yüktür."
- garuda_court_position:0 "Garuda"
- garuda_employer_custom_effect_description:1 "$BULLET$İkinizin de yer aldığı muharebelerde ölme veya yakalanma riskinizi azaltır"
- garuda_court_position_desc:0 "Bu şövalye, kendi hayatının pahasına bile olsa süzereninin dileğini yerine getirmeye yemin etmiştir. Tıpkı Vişnu'yu taşıyan mitolojik $garuda_court_position$ kuşu gibi, $garuda_court_position$ savaşçıları hükümdarının egemenliğini taşır."
- court_gardener_court_position:0 "Saray Bahçıvanı"
- court_gardener_court_position_desc:0 "$court_gardener_court_position$, süzerenine ait bahçeleri canlı tutmaktan sorumludur ve bu bahçeleri geliştirmek için elinden gelenin en iyisini yapar."
- chief_qadi_court_position:0 "Başkadı"
- chief_qadi_court_position_desc:0 "$chief_qadi_court_position$ ülkenin nihai yargıcıdır, İslam hukuku doğrultusunda çeşitli anlaşmazlıkları ve hukuki meseleleri çözmekten sorumludur."
- cultural_emissary_court_position:0 "Kültür Elçisi"
- cultural_emissary_court_position_desc:0 "$cultural_emissary_court_position$ kültürler arası ilişkiler kurmak, bu ilişkileri güçlendirmek ve karşılıklı saygı oluşturmakla görevlidir."
- court_artificer_court_position:0 "Saray Zanaatkârı"
- court_artificer_court_position_desc:0 "$court_artificer_court_position$, güzel bir eşya ortaya çıkararak yeteneğini kanıtlamış bir kişidir. Genellikle sarayda boş boş dolaşıyor gibi görünseler de, tekrar bir ilham geldiğinde harikalar yaratabilirler."
- court_artificer_employer_custom_effect_description:2 "$BULLET$Yeniden [Concept( 'inspired', 'İlham' )|E] kazanma şansı vardır ([aptitude|E] doğrultusunda)\n@alert_icon! #alert_trial Kovulursa [Concept( 'court', 'Saraydan' )|E] ayrılır#!"
- court_artificer_inspired_effect:0 "Sarayınızdaki [GetCourtPositionType('court_artificer_court_position').GetName()] [artificer.GetFirstName] [Concept( 'inspired', 'İlham' )|E] kazandı"
- has_an_inspiration:0 "Aktif bir [inspiration|E] sahibi"
- has_a_completed_inspiration:0 "Daha önce [inspiration|E] tamamlamış"
- COURT_POSITIONS_YOUR_SALARY:0 "$COURT_POSITION$"
- does_not_have_a_full_time_job:0 "Hâlihazırda tam zamanlı bir [court_position|E] sahibi veya [councillor|E] #bold değil#!"
-
+  
+ hire_physician_decision: "Hekim Ara"
+ hire_physician_decision_tooltip: "Hizmetkârlarınız [GetCourtPositionType('court_physician_court_position').GetName()] pozisyonu için uygun birkaç aday önerecek"
+ hire_physician_decision_desc: "Saraydaki hasta ve yaralılarla ilgilenmesi için bir saray hekiminin varlığı elzemdir. Hizmetkârlarımdan bu iş için uygun birkaç aday getirmelerini isteyeceğim."
+ hire_physician_decision_effect_tooltip: "[GetCourtPositionType('court_physician_court_position').GetName()] pozisyonu için bir dizi aday karşınıza getirilecek, bunlardan dilediğinizi belli bir ücret ve aylık [gold_i][SCOPE.ScriptValue('court_position_physician_salary')] maaş karşılığında işe alabileceksiniz."
+ hire_physician_decision_confirm: "Aramaya başla"
+  
+ antiquarian_employer_custom_effect_description: "$BULLET$[Concept( 'artifacts', 'Eserlerde' )|E] $repair_or_reforge_and_repair$ yapabilmenizi sağlar\n$BULLET$#V $commission_artifact_decision$#! [Concept( 'decision', 'Kararını' )|E] açar\n$BULLET$[sieges|E] ve [raids|E] esnasında [Concept( 'artifacts', 'Eserleri' )|E] korur"
+ antiquarian_employer_custom_effect_reforge_description: "$BULLET$Şunu yapmanıza olanak tanır [reforge|E] [artifacts|E]\n" #NT!
+  
+ chief_eunuch_court_position: "Baş Hadım"
+ chief_eunuch_court_position_desc: "$chief_eunuch_court_position$, saray hadımlarından sorumlu güvenilir bir hizmetkârdır. Hem hizmetçiler arasında hem de hükümdarın çevresindekiler arasında onun bilgisi dışında çok az şey olur."
+ keeper_of_swans_court_position: "Kuğu Bakıcısı"
+ keeper_of_swans_court_position_desc: "$keeper_of_swans_court_position$, krallığın kuğularından sorumludur. Süzerenlerinin tüylü cevherlerine bakar ve onlarla ilgilenir. Bu oldukça büyük bir sorumluluktur."
+ master_of_horse_court_position: "Seyisbaşı"
+ master_of_horse_court_position_desc: "$master_of_horse_court_position$, Süzereninin ihtişamlı beygirlerinin ve ahırlarının bakımından sorumludur. Bakımlı bir at hem muharebe alanında hem de seyahat esnasında fark yaratabileceğinden bu görev oldukça önemlidir."
+  #AGOT Modified 
+ #court_jester_court_position: "Saray soytarısı" #NT!
+ court_jester_court_position: "Saray Soytarısı"
+ court_jester_employer_custom_effect_description: "$BULLET$[stress|E] azaltan olayları tetikleyebilir"
+  #AGOT Modified 
+ #court_jester_court_position_desc: "Bir $court_jester_court_position$ – bir aptal – hem kendi Efendisini hem de sarayı ziyaret eden herhangi bir misafiri eğlendirmek için oradadır. Zaman zaman akıllıca bir ifade takdir edilebilirken, kötü bir düşüş her zaman kahkaha kazandırır." #NT!
+ court_jester_court_position_desc: "$court_jester_court_position$, Süzerenini ve saraydaki misafirleri eğlendirir. Zekice kelime oyunları kimi zaman takdir edilse de, kötü bir düşüş her zaman kahkaha atılmasını sağlar."
+ master_of_hunt_court_position: "Avcıbaşı"
+ master_of_hunt_employer_custom_effect_description: "$BULLET$[GetActivityType('activity_hunt').GetName] [hunt_success_chance_no_prefix|E] ve [hunt_sightings_no_prefix|E] sıklığı [aptitude|E] ile doğru orantıdadır."
+ master_of_hunt_court_position_desc: "$master_of_hunt_court_position$, Süzereninin sarayı tarafından düzenlenen av partilerinden, kulübeler ve bu kulübelerdeki köpeklerden sorumludur."
+ high_almoner_court_position: "Sadakacı"
+ high_almoner_court_position_desc: "$high_almoner_court_position$, yoksullara ve ihtiyaç sahibi diğer kişilere sadaka dağıtmaktan sorumludur."
+ cupbearer_court_position: "Saki"
+ cupbearer_employer_custom_effect_description: "$BULLET$Zehir içeren [GetScheme('murder').GetTypeName] [Concept( 'schemes', 'Planlarına' )|E] mani olabilir#!"
+ cupbearer_court_position_desc: "$cupbearer_court_position$, kraliyet masasına içki dağıtır ve bardakların boş olmamasından sorumludur."
+ seneschal_court_position: "Kâhya"
+ seneschal_court_position_desc: "$seneschal_court_position$ kraliyet hanesini idare etmede, hizmetçileri yönlendirmede ve düzeni sağlamada önemli bir rol oynar."
+ antiquarian_court_position: "Antikacı"
+ antiquarian_court_position_desc: "$antiquarian_court_position$ eserlerin korunmasından, bakımından ve bulunmasından sorumludur."
+ court_tutor_court_position: "Saray Öğretmeni"
+ court_tutor_employer_custom_effect_description: "$BULLET$Karakterlerin daha iyi bir [education|E] almalarını sağlar\n$BULLET$#V $make_child_learn_language_interaction$#! [Concept( 'interaction', 'Etkileşimini' )|E] açar"
+ court_tutor_court_position_desc: "$court_tutor_court_position$, saraydaki tüm çocukların [Concept( 'education', 'Eğitiminden' )|E] sorumludur. Çocuklar ek olarak [guardian|E] sahibi olabilirler."
+  #AGOT Modified 
+ # royal_architect_court_position: "Kraliyet Mimarı" #NT!
+ royal_architect_court_position: "Saray Mimarı"
+ royal_architect_court_position_desc: "$royal_architect_court_position$, ülke genelindeki ihtişamlı inşaat projelerini denetler; döşenen her tuğlayı ve harcanan her saniyeyi kontrol eder."
+ court_poet_court_position: "Saray Şairi"
+ court_poet_employer_custom_effect_description: "$BULLET$Rastgele bir şekilde [Concept( 'inspired', 'İlham' )|E] sahibi olabilir"
+ court_poet_court_position_desc: "$court_poet_court_position$ kelimelerin ve kafiyelerin ustasıdır. Dinleyicilerin duygularına hitap eder, kimi zaman onları düşünmeye sevkeder."
+ poet_inspired_message: "İlham Geldi!"
+ poet_inspired_effect: "Sarayınızdaki [GetCourtPositionType('court_poet_court_position').GetName()] [inspired_poet.GetFirstName], bir [inspiration|E] kazandı"
+  #AGOT Modified 
+ # bodyguard_court_position: "Koruma" #NT!
+ bodyguard_court_position: "Koruma"
+ bodyguard_employer_custom_effect_description: "$BULLET$Suikast içeren [GetScheme('murder').GetTypeName] [Concept( 'schemes', 'Planlarına' )|E] mani olabilir#!\n$BULLET$İkinizin de bulunduğu [Concept( 'battles', 'Muharebelerde' )|E] ölme veya yakalanma riskinizi azaltır#!"
+ bodyguard_court_position_desc: "$bodyguard_court_position$, krallığın tüm saldırganlara karşı sahip olduğu nihai savunma hattıdır. Tereddüt etmeden her hücumu takip eder, onları her türlü tehdide karşı korurlar."
+ champion_court_position: "Kişisel Şampiyon"
+ champion_employer_custom_effect_description: "$BULLET$Bazı [Concept( 'single_combat_duel_plural', 'Düellolarda' )|E] sizin yerinizi alabilir\n[AddLocalizationIf( HasDlcFeature( 'tours_and_tournaments' ), 'champion_employer_custom_effect_description_TOTO_DLC' )]"
+ champion_employer_custom_effect_description_TOTO_DLC: "$BULLET$[GetActivityType( 'activity_tournament' ).GetName] esnasında sizin adınıza [prestige|E] kazanır."
+ champion_court_position_desc: "$champion_court_position$, Süzerenini düellolarda temsil eden yetenekli ve ölümcül bir savaşçıdır."
+  #AGOT Modified 
+ # court_musician_court_position: "Saray müzisyeni" #NT!
+ court_musician_court_position: "Saray Müzisyeni"
+ court_musician_employer_custom_effect_description: "$BULLET$[GetActivityType('activity_feast').GetName] esnasında kazanılan [opinion|E] artışını yükseltir"
+ court_musician_court_position_desc: "$court_musician_court_position$ Süzerenini ve diğer saray mensuplarını eğlendirmek için şarkılar söyler ve çalgılar çalar."
+ food_taster_court_position: "Çeşnicibaşı"
+ food_taster_employer_custom_effect_description: "$BULLET$Zehir içeren [GetScheme('murder').GetTypeName] [Concept( 'schemes', 'Planlarına' )|E] mani olabilir#!\n$BULLET$Daha hızlı bir şekilde kilo verirsiniz#!"
+ food_taster_court_position_desc: "$food_taster_court_position$, Süzereninin tabağına zehir değmemesinden sorumludur. Olur da zehirli bir toz veya sıvı yiyecekle temas ederse... İşte tam olarak bu yüzden Çeşnicibaşı yemekten önce her yemeği tadar."
+ lady_in_waiting_court_position: "Nedime"
+  #AGOT Modified 
+ #lady_in_waiting_court_position_desc: "$lady_in_waiting_court_position$, bir Kraliçe veya İmparatoriçe'nin yardımcısı ve yoldaşıdır; onun her ihtiyacını karşılar ve her kaprisini yerine getirir." #NT!
+ lady_in_waiting_court_position_desc: "$lady_in_waiting_court_position$, Kraliçe veya İmparatoriçenin yardımcısı ve yoldaşıdır, onun ihtiyaçlarını ve taleplerini karşılar."
+  #AGOT Modified 
+ # executioner_court_position: "Cellat" #NT!
+ executioner_court_position: "Cellat"
+  #AGOT Modified 
+ # executioner_employer_custom_effect_description: "Herkese açık olarak [execute|E] [prisoners|E] ile [control|E] ve [county_opinion|E] artırılabilir\n@warning_icon!#X Karakterin suçları affedilir#!" #NT!
+ executioner_employer_custom_effect_description: "$BULLET$[control|E] ve [county_opinion|E] artışı için [Concept( 'prisoners', 'Tutsakları' )|E] halka açık bir şekilde [Concept( 'execute', 'İdam Edebilir' )|E]\n@warning_icon! #X Bu karakterin suçları affedilir#!"
+  #AGOT Modified 
+ # executioner_court_position_desc: "Cellatlar, özgürlükleri karşılığında tahtın tüm düşmanlarını idam etmek zorunda olan suçlulardır. Bazıları buna bir onur, bazıları ise bir yük der." #NT!
+ executioner_court_position_desc: "Cellatlar, özgürlükleri karşılığında tahtın düşmanlarını idam etmeyi kabul etmiş suçlulardır. Kimileri bunu bir onur olarak görürken, kimileri için çok büyük bir yüktür."
+ garuda_court_position: "Garuda"
+ garuda_employer_custom_effect_description: "$BULLET$İkinizin de yer aldığı muharebelerde ölme veya yakalanma riskinizi azaltır"
+ garuda_court_position_desc: "Bu şövalye, kendi hayatının pahasına bile olsa süzereninin dileğini yerine getirmeye yemin etmiştir. Tıpkı Vişnu'yu taşıyan mitolojik $garuda_court_position$ kuşu gibi, $garuda_court_position$ savaşçıları hükümdarının egemenliğini taşır."
+ court_gardener_court_position: "Saray Bahçıvanı"
+ court_gardener_court_position_desc: "$court_gardener_court_position$, süzerenine ait bahçeleri canlı tutmaktan sorumludur ve bu bahçeleri geliştirmek için elinden gelenin en iyisini yapar."
+ chief_qadi_court_position: "Başkadı"
+ chief_qadi_court_position_desc: "$chief_qadi_court_position$ ülkenin nihai yargıcıdır, İslam hukuku doğrultusunda çeşitli anlaşmazlıkları ve hukuki meseleleri çözmekten sorumludur."
+ cultural_emissary_court_position: "Kültür Elçisi"
+ cultural_emissary_court_position_desc: "$cultural_emissary_court_position$ kültürler arası ilişkiler kurmak, bu ilişkileri güçlendirmek ve karşılıklı saygı oluşturmakla görevlidir."
+ court_artificer_court_position: "Saray Zanaatkârı"
+ court_artificer_court_position_desc: "$court_artificer_court_position$, güzel bir eşya ortaya çıkararak yeteneğini kanıtlamış bir kişidir. Genellikle sarayda boş boş dolaşıyor gibi görünseler de, tekrar bir ilham geldiğinde harikalar yaratabilirler."
+ court_artificer_employer_custom_effect_description: "$BULLET$Yeniden [Concept( 'inspired', 'İlham' )|E] kazanma şansı vardır ([aptitude|E] doğrultusunda)\n@alert_icon! #alert_trial Kovulursa [Concept( 'court', 'Saraydan' )|E] ayrılır#!"
+ court_artificer_inspired_effect: "Sarayınızdaki [GetCourtPositionType('court_artificer_court_position').GetName()] [artificer.GetFirstName] [Concept( 'inspired', 'İlham' )|E] kazandı"
+ has_an_inspiration: "Aktif bir [inspiration|E] sahibi"
+ has_a_completed_inspiration: "Daha önce [inspiration|E] tamamlamış"
+ COURT_POSITIONS_YOUR_SALARY: "$COURT_POSITION$"
+ does_not_have_a_full_time_job: "Hâlihazırda tam zamanlı bir [court_position|E] sahibi veya [councillor|E] #bold değil#!"
+  
  clan_tax_collector_court_position: "Tahsildar"
  clan_tax_collector_court_position_desc: "$clan_tax_collector_court_position$, vergilerin tahsil edilmesinden sorumludur. [clan|E] [vassals|E]ının sorumluluklarını zamanında yerine getirmesini sağlar."
  court_position_khvarenah_legacy_4: "İşverenin [Concept( 'dynasty', 'Hanedanı' )|E] [GetDynastyPerk( 'fp3_khvarenah_legacy_4' ).GetName] sahibi"
@@ -375,30 +411,30 @@
  court_position_innovation_mural_sextant: "[dynasty|E] [GetInnovation('fp3_innovation_mural_sextant').GetName] sahibi"
  capable_magistrates_modifier: "Becerikli Hakimler"
  opinion_of_liege: "[liege|E] Görüşü"
-
- court_cave_hermit_position:0 "Bahçe Keşişi"
- court_cave_hermit_position_desc:0 "$court_cave_hermit_position$ sarayınızın etrafındaki yeşilliklerde yaşar ve ziyaretçilerinizi kehanetler ve bilmecelerle eğlendirir. Kimileri kehanetlerinin gerçek çıktığına inanır."
- court_cave_hermit_position_tt:0 "Seyahatleriniz esnasında bir $court_cave_hermit_position$ buldunuz"
-
- travel_leader_court_position:0 "Kervanbaşı"
- travel_leader_court_position_desc:0 "$travel_leader_court_position$ seyahatleriniz esnasında size yoldaşlık eder ve izlenecek rotayı belirler. Varacağınız noktaya vaktinde ve güvenli bir şekilde varmanızdan sorumludur."
- hire_travel_leader_decision:0 "$travel_leader_court_position$ Ara"
- hire_travel_leader_decision_effect_tooltip:0 "Hizmetkârlarınız [GetCourtPositionType('travel_leader_court_position').GetName()] pozisyonu için uygun adaylar önerecekler."
- hire_travel_leader_decision_desc:0 "Tecrübeli bir $travel_leader_court_position$, seyahatin başarılı olması için elzemdir. Uygun adayların huzuruma getirilmesini talep edeceğim."
- hire_travel_leader_decision_confirm:0 "Aramayı Başlat"
+  
+ cave_hermit_court_position: "Bahçe Münzevisi" #NT!
+ cave_hermit_court_position_desc: "$cave_hermit_court_position$, kale arazinizde yaşayacak ve misafirlerinizi kehanetlerle ve bilmecelerle eğlendirecek kişidir. Bazıları bunların gerçek mistikler olabileceğini söylüyor." #NT!
+ cave_hermit_court_position_tt: "Seyahatlerinizde bir $cave_hermit_court_position$ buldunuz" #NT!
+  
+ travel_leader_court_position: "Kervanbaşı"
+ travel_leader_court_position_desc: "$travel_leader_court_position$ seyahatleriniz esnasında size yoldaşlık eder ve izlenecek rotayı belirler. Varacağınız noktaya vaktinde ve güvenli bir şekilde varmanızdan sorumludur."
+ hire_travel_leader_decision: "$travel_leader_court_position$ Ara"
+ hire_travel_leader_decision_tooltip: "Hizmetçileriniz [GetCourtPositionType('travel_leader_court_position').GetName()] pozisyonu için uygun adaylar önerecektir." #NT!
+ hire_travel_leader_decision_desc: "Tecrübeli bir $travel_leader_court_position$, seyahatin başarılı olması için elzemdir. Uygun adayların huzuruma getirilmesini talep edeceğim."
+ hire_travel_leader_decision_confirm: "Aramayı Başlat"
  wet_nurse_court_position: "Sütanne"
  wet_nurse_court_position_desc: "$wet_nurse_court_position$, [Concept( 'children', 'Çocuklarınızın' )|E] ve çocuk [Concept( 'hostages', 'Rehinelerinizin' )|E] bakıcısıdır."
  wet_nurse_employer_custom_effect_description: "$BULLET$[Concept( 'children', 'Çocukların' )|E] [Concept( 'illnesses', 'Hastalığa' )|E] yakalanma olasılığını azaltır.\n$BULLET$Çeşitli [child|E] gelişimi olaylarını mümkün kılar"
  find_wet_nurse_decision: "$wet_nurse_court_position$ Ara"
  find_wet_nurse_decision_desc: "$wet_nurse_court_position$, bir sarayın zenginliğinin ve refahının göstergesidir. Çocuklara bakmak, yetiştirmek ve onları hastalıklardan korumakla görevli bir kadın. Zinde ve sağlıklı biri olması gerekiyor."
- find_wet_nurse_decision_effect_tooltip: "Hizmetkârlarınız [GetCourtPositionType('wet_nurse_court_position').GetName()] pozisyonu için uygun adaylar önerecekler."
+ find_wet_nurse_decision_tooltip: "Hizmetçileriniz [GetCourtPositionType('wet_nurse_court_position').GetName()] pozisyonu için uygun adaylar önerecektir." #NT!
  find_wet_nurse_decision_confirm: "Aramayı Başlat"
  court_position_has_child: "Çocuğu var"
-
+  
  COURT_POSITION_CATEGORY_FILTER: "Kategori"
  ALL_COURT_POSITIONS_FILTER: "Tüm pozisyonlar"
  COURT_POSITION_HAS_TASKS_FILTER: "Görevli Pozisyonlar"
-
+  
  chronicler_court_position: "Vakanüvis"
  court_position_chronicler: "[GetCourtPositionType('chronicler_court_position').GetName()]"
  chronicler_court_position_desc: "$chronicler_court_position$, hükümdarın yaptıklarını kağıda dökmekle yükümlüdür."
@@ -408,5 +444,126 @@
  chronicler_espouse_legend: "Diyarda Destanı Yay"
  chronicler_espouse_legend_desc: "Bu karakter, sizin destanınızı kendi [Concept( 'promoted_legend', 'destekledikleri destan' )|E] yapmaları için ülkenizi gezip [Concept( 'vassals', 'vasallarınızı' )|E] ve komşu diyarları gezip [Concept( 'rulers', 'hükümdarları' )|E] ikna etmeye çalışacak."
  yearly_legend_spread_tt: "Her yıl [Concept( 'vassals', 'vasallarınızdan' )|E] veya komşu [Concept( 'rulers', 'hükümdarlardan' )|E] biri sizin destanınızı kendi [Concept( 'promoted_legend', 'desteklediği destan' )|E] yapabilir. [aptitude|E] seviyesi yükseldikçe bu olasılık da artar."
-
-### STRATEGYTURK'TEN DUMAN TARAFINDAN ÇEVRİLMİŞTİR.
+  
+ court_position_tourney_participant_trait: "$tourney_participant_horse$" #NT!
+ charioteer_court_position: "Şampiyon Arabacı" #NT!
+ charioteer_court_position_desc: "$charioteer_court_position$, işvereni tarafından desteklenen profesyonel bir araba yarışçısıdır." #NT!
+ charioteer_employer_custom_effect_description: "$BULLET$ [GetActivityType( 'activity_chariot_race' ).GetName] sırasında 3. veya daha üst sırada yer almak [influence|E] kazandırır" #NT!
+  
+ bookmaker_court_position: "Bahisçi" #NT!
+ bookmaker_court_position_desc: "$bookmaker_court_position$, [GetActivityType( 'activity_chariot_race' ).GetName]'deki kumar işlerini yöneten profesyonel bir muhasebecidir." #NT!
+ bookmaker_employer_custom_effect_description: "$BULLET$ [GetActivityType( 'activity_chariot_race' ).GetName]'e ev sahipliği yapmanın maliyetini azaltır ([aptitude|E]'ye dayalı)\n$BULLET$ [GetActivityType( 'activity_chariot_race' ).GetName] sırasında yapılan bahislerden [gold|E] sağlar" #NT!
+  
+ bookmaker_cook_the_books: "Kitapları Pişir" #NT!
+ bookmaker_cook_the_books_desc: "Bu karakter, [GetActivityType('activity_chariot_race').GetName]'da bahis sonuçlarının her zaman sizin lehinize olmasını sağlayacaktır" #NT!
+ bookmaker_cook_the_books.tt: "Bir sonraki [GetActivityType('activity_chariot_race').GetName] ev sahipliğinizde, [GetCourtPositionType('bookmaker_court_position').GetName()]'iniz başarılı bahisler için ödenen [gold|E] miktarını düşürmek için yaratıcı aritmetikler kullanacak; bu da taç için daha fazla para anlamına geliyor." #NT!
+  
+ bookmaker_distribute_bribes: "Rüşvet Dağıtmak" #NT!
+ bookmaker_distribute_bribes_desc: "Bu karakter sizin adınıza gizlice rüşvet dağıtacak ve krallık genelindeki nüfuzunuzu artıracaktır." #NT!
+  
+ charioteer_training: "Araba Eğitimi" #NT!
+ charioteer_training_desc: "Bu karakter, arabacı olarak becerilerini geliştirmek ve değerli deneyimler kazanmak için gece gündüz eğitim alacak." #NT!
+ charioteer_training_tt: "$charioteer_court_position$, #high Charioteer#! [trait|E]'te zamanla deneyim kazanacak" #NT!
+  
+ court_position_fickle: "[GetTrait('fickle').GetName( ROOT.Char )]" #NT!
+  #AGOT Disabled, Errors 
+ # court_position_varangian_trait: "[GetTrait('varangian').GetName( ROOT.Char )]" #NT!
+ court_position_fp1_coastal_warriors: "[GetCultureTradition('tradition_fp1_coastal_warriors').GetName] [tradition|E]" #NT!
+ court_position_hird: "[GetCultureTradition('tradition_hird').GetName] [tradition|E]" #NT!
+ court_position_fp1_performative_honour: "[GetCultureTradition('tradition_fp1_performative_honour').GetName] [tradition|E]" #NT!
+  
+ akolouthos_court_position: "Akolouthos" #NT!
+  #AGOT Modified, Errors 
+ # akolouthos_employer_custom_effect_description: "$BULLET$Artışlar [GetTrait('varangian').GetName( GetNullCharacter )] [GetCourtPositionType('bodyguard_court_position').GetName()] [aptitude|E] ([aptitude|E]'e göre)\n$BULLET$Daha uygun [courtiers|E] [GetTrait('varangian').GetName( GetNullCharacter )] ve [GetTrait('loyal').GetName( GetNullCharacter )] kazanır [traits|E]\n$BULLET$Daha fazla Varangian belirecek\n@warning_icon! [GetTrait('varangian').GetName( GetNullCharacter )]1 Varangianlar Basileus'un ölümünden sonra yaklaşık [GetTrait('varangian').GetName( GetNullCharacter )]2 Altın talep edecekler.[GetTrait('varangian').GetName( GetNullCharacter )]3" #NT!
+ akolouthos_employer_custom_effect_description: ""
+ akolouthos_court_position_desc: "$akolouthos_court_position$, efendileri için onurlu bir şekilde ölmeye en istekli olan ünlü Varegler de dahil olmak üzere Bizans imparatorluk muhafızlarının çoğunu komuta eder." #NT!
+  
+ court_position_akolouthos_bonus: "[GetCourtPositionType('akolouthos_court_position').GetName()]" #NT!
+  
+ court_position_palace_politics: "[GetCultureTradition('tradition_ep3_palace_politics').GetName]" #NT!
+ court_position_north_germanic: "$heritage_north_germanic_name$ [heritage|E]" #NT!
+ court_position_west_germanic: "$heritage_west_germanic_name$ [heritage|E]" #NT!
+ court_position_not_same_culture_heritage: "[heritage|E], [liege|E]'in [culture|E]'sinden farklıdır" #NT!
+ court_position_not_same_culture_language: "[language|E], [liege|E]'in [culture|E]'sinden farklıdır" #NT!
+ COURT_POSITION_LOYAL_TRAIT: "[GetTrait('loyal').GetName( GetNullCharacter )] [trait|E]" #NT!
+  
+ #CAMP OFFICERS 
+ officer_positions: "[officer|E] pozisyon" #NT!
+ second_camp_officer: "Saniye" #NT!
+ second_camp_officer_desc: "$second_camp_officer$, kamptaki en güvenilir subaydır ve lidere bir sonraki komutan olarak yardım eder. Liderin yokluğunda emir ve organizasyondan sorumludurlar." #NT!
+ quartermaster_camp_officer: "Malzeme Sorumlusu" #NT!
+ quartermaster_camp_officer_desc: "$quartermaster_camp_officer$, kampın iyi beslenmesini ve sulanmasını sağlamaktan sorumludur. Gerektiğinde erzakları yönetir, korur ve dağıtırlar." #NT!
+ armorer_camp_officer: "Silah ustası" #NT!
+ armorer_camp_officer_desc: "$armorer_camp_officer$, miğfer ve zırh konusunda uzmanlaşmış bir demircidir. Silahlı adamların ve atların kıyafetlerini yapmaktan ve onarmaktan sorumludurlar." #NT!
+ chief_forager_camp_officer: "Baş Toplayıcı" #NT!
+ chief_forager_camp_officer_desc: "$chief_forager_camp_officer$, kampın erzaklarını tamamlamakla görevlidir. Yerel bölgeden yiyecek toplamak için partiler düzenlemekten sorumludurlar." #NT!
+ chief_forager_camp_officer_employer_custom_effect_description: "$BULLET$Erzak Toplama'ya yardım edebilir [decisions|E]" #NT!
+ master_thief_camp_officer: "Usta Hırsız" #NT!
+ master_thief_camp_officer_desc: "$master_thief_camp_officer$, çeşitli ve ahlaki açıdan şüpheli hırsızlık sanatlarıyla görevli bir hayduttur. Aksi takdirde erişilemeyen nesnelere erişimi garantileyebilirler." #NT!
+ master_thief_camp_officer_employer_custom_effect_description: "$BULLET$Kilidi açar $steal_back_artifact$ [interaction|E]" #NT!
+ head_porter_camp_officer: "Baş Kapıcı" #NT!
+ head_porter_camp_officer_desc: "$head_porter_camp_officer$, kampı ve tüm erzaklarını taşımaktan sorumludur. Her şeyin bir sonraki varış noktasına tek parça halinde ulaşmasını sağlarlar." #NT!
+ head_groom_camp_officer: "Baş Damat" #NT!
+ head_groom_camp_officer_desc: "$head_groom_camp_officer$, kampın atlarının ve yük hayvanlarının bakımıyla görevlidir. Hayvanların yemi, bakımı ve koşumundan sorumludurlar." #NT!
+ huntperson_camp_officer: "Avcı" #NT!
+ huntperson_camp_officer_desc: "$huntperson_camp_officer$, boynuz, tazı ve yay yollarında bir yardımcıdır. Kampın av gezilerini planlamaktan ve yönetmekten sorumludurlar." #NT!
+ huntperson_camp_officer_employer_custom_effect_description: "$BULLET$[GetActivityType('activity_hunt').GetName] [hunt_success_chance_no_prefix|E] [aptitude|E] ile artar\n$BULLET$Tüm [children|E]'niz için [martial|E] [education|E] sonuçlarını iyileştirir [camp|E]\n$BULLET$Hediyeleri Toplamada yardımcı olabilir [GetActivityType('activity_hunt').GetName]0" #NT!
+ kennelperson_camp_officer: "Kulübe sahibi" #NT!
+ kennelperson_camp_officer_desc: "$kennelperson_camp_officer$, kampın tazı sürüsünün bakımı ve eğitimiyle görevlidir. Köpeklerin sağlıklı ve iyi beslenmiş olmasını sağlarlar — çoğu zaman." #NT!
+ kennelperson_camp_officer_employer_custom_effect_description: "$BULLET$Köpeklere Atma [execution|E] [prisoners|E] yöntemini etkinleştirir" #NT!
+ chief_engineer_camp_officer: "Baş Mühendis" #NT!
+ chief_engineer_camp_officer_desc: "$chief_engineer_camp_officer$, mekanizmalar ve makineler hakkında bilgi gerektiren tüm görevlerden sorumludur. Kuşatma silahları yapar ve onarırlar ve adamlara bunların kullanımı konusunda talimat verirler." #NT!
+ witness_camp_officer: "Tanık" #NT!
+ witness_camp_officer_desc: "$witness_camp_officer$'ın kamp liderinin eylemlerini ve haklı iddialarını kaydetme gibi ciddi bir görevi vardır. Kampın büyük eylemlerine ve mücadelelerine tanıklık ederler." #NT!
+ person_haggler_camp_officer: "Pazarlıkçı Adam" #NT!
+ person_haggler_camp_officer_desc: "$person_haggler_camp_officer$ değerli esirlerden sorumludur ve onlardan mümkün olan en büyük karı elde eder. Esirlere bakar ve fidye müzakerelerini yönetir." #NT!
+ person_haggler_camp_officer_employer_custom_effect_description: "$BULLET$[gold|E] fidyeden kazanç [prisoners|E]: [gold_i]#P +7%#! ila [gold_i]#P +33%#! ([aptitude|E]'a göre)\n$BULLET$[gold|E] fidye ödemek için [gold|E]2: [gold_i]#P -9%#! ila [gold_i]#P -33%#! ([aptitude|E]'a göre)" #NT!
+ person_haggler_aptitude_effect_1: "$BULLET$ [gold_i][gold|E] fidye için [prisoners|E]: #P +7%#!\n$BULLET$[gold_i][gold|E] fidye için [followers|E]: #P -9%#!" #NT!
+ person_haggler_aptitude_effect_2: "$BULLET$ [gold_i][gold|E] fidye ödemekten [prisoners|E]: #P +13%#!\n$BULLET$[gold_i][gold|E] fidye ödemekten [followers|E]: #P -17%#!" #NT!
+ person_haggler_aptitude_effect_3: "$BULLET$ [gold_i][gold|E] fidye için [prisoners|E]: #P +20%#!\n$BULLET$[gold_i][gold|E] fidye için [followers|E]: #P -23%#!" #NT!
+ person_haggler_aptitude_effect_4: "$BULLET$ [gold_i][gold|E] fidye ödemekten [prisoners|E]: #P +27%#!\n$BULLET$[gold_i][gold|E] fidye ödemekten [followers|E]: #P -29%#!" #NT!
+ person_haggler_aptitude_effect_5: "$BULLET$ [gold_i][gold|E] fidye ödemekten [prisoners|E]: #P +33%#!\n$BULLET$[gold_i][gold|E] fidye ödemekten [followers|E]: #P -33%#!" #NT!
+  
+ camp_cook_camp_officer: "Baş aşçı" #NT!
+ camp_cook_camp_officer_desc: "$camp_cook_camp_officer$, kampı iyi beslenmiş ve iyi bir ruh halinde tutarak doyurucu yemekler hazırlar. Ayrıca subayların yemeklerini hazırlamaktan da sorumludurlar." #NT!
+ master_bard_camp_officer: "Usta Ozan" #NT!
+ master_bard_camp_officer_desc: "$master_bard_camp_officer$ kampı ve subaylarını baladlar ve uzun hikayelerle eğlendirir. Onların çabaları bir maceracının büyük işlerini ölümsüzleştirmeye de bir nebze yardımcı olabilir." #NT!
+ master_bard_camp_officer_employer_custom_effect_description: "$BULLET$Kilidi açar $send_poem_interaction$ [interaction|E]" #NT!
+ stooge_camp_officer: "Kukla" #NT!
+ stooge_camp_officer_desc: "$stooge_camp_officer$, kampın sinirliliğinin ve acımasız mizahının istemsiz odak noktasıdır. Onlara yapılan kötü muamele büyük bir moral kaynağı ve birçok gülünç şömine başı hikayesinin kaynağıdır." #NT!
+ master_of_arms_camp_officer: "Silahların Ustası" #NT!
+ master_of_arms_camp_officer_desc: "$master_of_arms_camp_officer$, hem kampta hem de savaş alanında savaşan adamları hizaya getirmekle görevlidir. Disiplin ve eğitimden sorumludurlar." #NT!
+ master_of_arms_employer_custom_effect_description: "$BULLET$Kilidi açar $train_for_tournament_decision_name$ [decision|E]#!" #NT!
+ light_cavalry_captain_camp_officer: "Hafif Süvari Yüzbaşısı" #NT!
+ light_cavalry_captain_camp_officer_desc: "$light_cavalry_captain_camp_officer$, kampın en hızlı atlılarının komutanıdır. Birliğin liderliğinden, eğitiminden ve taktiklerinden sorumludurlar." #NT!
+ camelry_captain_camp_officer: "Deve Kaptanı" #NT!
+ camelry_captain_camp_officer_desc: "$camelry_captain_camp_officer$, kampın devecilerini yönetir. Birliğin liderliğinden, eğitiminden ve taktiklerinden sorumludurlar." #NT!
+ elephantry_captain_camp_officer: "Fil Kaptanı" #NT!
+ elephantry_captain_camp_officer_desc: "$elephantry_captain_camp_officer$ kampın mahutlarını yönetir. Birliğin liderliğinden, eğitiminden ve taktiklerinden sorumludurlar." #NT!
+ heavy_cavalry_captain_camp_officer: "Ağır Süvari Yüzbaşısı" #NT!
+ heavy_cavalry_captain_camp_officer_desc: "$heavy_cavalry_captain_camp_officer$, kampın zırhlı araçlarını yönetir. Birliğin liderliğinden, eğitiminden ve taktiklerinden sorumludurlar." #NT!
+ horse_archer_captain_camp_officer: "Atlı Okçu Kaptanı" #NT!
+ horse_archer_captain_camp_officer_desc: "$horse_archer_captain_camp_officer$, kampın atlı muharebe birliklerini yönetir. Birliğin liderliğinden, eğitiminden ve taktiklerinden sorumludurlar." #NT!
+ archer_captain_camp_officer: "Okçu Kaptan" #NT!
+ archer_captain_camp_officer_desc: "$archer_captain_camp_officer$, kampın okçularını yönetir. Birliğin liderliğinden, eğitiminden ve taktiklerinden sorumludurlar." #NT!
+ heavy_infantry_captain_camp_officer: "Ağır Piyade Yüzbaşısı" #NT!
+ heavy_infantry_captain_camp_officer_desc: "$heavy_infantry_captain_camp_officer$, kampın zırhlı savaş hattını yönetir. Birliğin liderliğinden, eğitiminden ve taktiklerinden sorumludurlar." #NT!
+ light_infantry_captain_camp_officer: "Hafif Piyade Yüzbaşısı" #NT!
+ light_infantry_captain_camp_officer_desc: "$light_infantry_captain_camp_officer$, kampın muharebe birliklerini yönetir. Birliğin liderliğinden, eğitiminden ve taktiklerinden sorumludurlar." #NT!
+ pike_captain_camp_officer: "Pike Kaptanı" #NT!
+ pike_captain_camp_officer_desc: "Mızrak hatlarının $pike_captain_camp_officer$ komutaları. Birliğin liderliğinden, eğitiminden ve taktiklerinden sorumludurlar." #NT!
+ master_of_spoils_camp_officer: "Ganimetlerin Efendisi" #NT!
+ master_of_spoils_camp_officer_desc: "$master_of_spoils_camp_officer$, kampın ganimetinin toplanması ve dağıtımından sorumludur. Savaş ganimetlerinin erkekler arasında düzgün bir şekilde paylaşılmasını sağlarlar." #NT!
+ master_of_spoils_camp_officer_employer_custom_effect_description: "$BULLET$ [battles|E] ve [sieges|E]'i kazanmaktan [gold_i][gold|E], [prestige_i][prestige|E] ve [piety_i][piety|E] kazanç sağlar ([aptitude|E]'a göre)\n$BULLET$ [gold_i]2'den sonra [gold_i]1 çalma şansını artırır ([aptitude|E]'a göre)" #NT!
+ court_position_eunuch_trait: "[GetTrait('eunuch_1').GetName( ROOT.Char )]" #NT!
+ court_position_beardless_eunuch_trait: "[GetTrait('beardless_eunuch').GetName( ROOT.Char )]" #NT!
+ court_position_eunuch_falsetto: "[GetTrait('beardless_eunuch').GetName( ROOT.Char )]'ın Falsetto'su" #NT!
+ court_position_traveling_friend: "Seyahat eden yoldaş bir tane daha tutuyor [court_position|E]" #NT!
+ camp_priest_camp_officer: "Kamp Rahibi" #NT!
+ camp_priest_camp_officer_desc: "$camp_priest_camp_officer$ kampa manevi destek sağlıyor." #NT!
+ laureate_camp_officer: "Ödül sahibi" #NT!
+ laureate_camp_officer_desc: "$laureate_camp_officer$ her durum için canlı bir şiir yazarıdır. Eserleri her yerde bilinir ve ayaklarının dibinde öğrenmek için birçok hevesli şair getirir." #NT!
+ laureate_camp_officer_employer_custom_effect_description: "$master_bard_camp_officer_employer_custom_effect_description$\n$BULLET$Şairleri Davet Etmeyi Etkinleştirir [decision|E]" #NT!
+  
+ court_position_bodyguard_modifier: "[GetPerk('praetorian_guard_perk').GetName( GetNullCharacter )]" #NT!
+ court_position_bodyguard_liege_modifier: "İşveren [GetPerk('praetorian_guard_perk').GetName( GetNullCharacter )]'a sahip" #NT!

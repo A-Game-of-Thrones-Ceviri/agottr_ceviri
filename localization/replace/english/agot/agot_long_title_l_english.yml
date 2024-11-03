@@ -1,47 +1,47 @@
 ﻿l_english:
- # Stuff that references THIS: Used by custom_tooltip   
- # Stuff that references ROOT: Returned by Custom   
- # Stuff that references Character: Used by the GUI.   
+ # Stuff that references THIS: Used by custom_tooltip 
+ # Stuff that references ROOT: Returned by Custom 
+ # Stuff that references Character: Used by the GUI. 
   
- long_title: "[THIS.Char.Custom('LongTitle')]"  
- long_title.character: "[THIS.Char.Custom('LongTitleWithName')]"  
- long_title.house: "[THIS.Char.Custom('LongTitleWithNameAndHouse')]"  
- long_title.character.start: "$long_title.character.fallback$[ROOT.Char.GetPrimaryTitle.MakeScope.Var('previous_title').Title.Custom('LongTitleRecursive')][ROOT.Char.Custom('LongTitleEnding')]"  
- long_title.character.fallback: "[ROOT.Char.GetFullNameNicknamedNoTooltip]"  
- long_title.house.start: "$long_title.house.fallback$[ROOT.Char.GetPrimaryTitle.MakeScope.Var('previous_title').Title.Custom('LongTitleRecursive')]"  
- long_title.house.fallback: "[ROOT.Char.GetTitledFirstNameNicknamedNoTooltip] [ROOT.Char.GetHouse.GetBaseNameNoTooltip] / [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]"  
- long_title.tier: "[ROOT.Title.Custom('LongTitleTierName')]"  
- long_title.title: "[ROOT.Title.GetNameNoTierNoTooltip]"  
- long_title.title.definite: "[ROOT.Title.GetNameNoTooltip] Tahtı'nın"  
- long_title.next: "[ROOT.Var('previous_title').Title.Custom('LongTitleRecursive')]"  
- long_title.title.definite: "[ROOT.Title.GetNameNoTooltip] Tahtı'nın"  
- long_title.start: "[ROOT.Char.GetTitleAsNameNoTooltip] / [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip][ROOT.Char.GetPrimaryTitle.MakeScope.Var('previous_title').Title.Custom('LongTitleRecursive')]"  
- long_title.fallback: "Geri çekilmek"  
- long_title.recursive: "$long_title.title$, $long_title.next$"  
- long_title.recursive.definite: "$long_title.title$$long_title.next$"  
- long_title.recursive.new_tier: ", $long_title.tier$ / $long_title.title$$long_title.next$"  
- long_title.recursive.same_tier: ", $long_title.title$$long_title.next$"  
- long_title.recursive.end_tier: "ve $long_title.title$$long_title.next$"  
- long_title.end.same_tier: "ve $long_title.title$"  
- long_title.end.new_tier: "ve $long_title.tier$ / $long_title.title$"  
- long_title.generation: "Başlatıldı [THIS.Title.GetNameNoTooltip]"  
- # long_title.custom: "[ROOT.Title.Custom('LongTitleCustom')]"  
+ long_title: "[THIS.Char.Custom('LongTitle')]"
+ long_title.character: "[THIS.Char.Custom('LongTitleWithName')]"
+ long_title.house: "[THIS.Char.Custom('LongTitleWithNameAndHouse')]"
+ long_title.character.start: "$long_title.character.fallback$[ROOT.Char.GetPrimaryTitle.MakeScope.Var('previous_title').Title.Custom('LongTitleRecursive')][ROOT.Char.Custom('LongTitleEnding')]"
+ long_title.character.fallback: "[ROOT.Char.GetFullNameNicknamedNoTooltip]"
+ long_title.house.start: "$long_title.house.fallback$[ROOT.Char.GetPrimaryTitle.MakeScope.Var('previous_title').Title.Custom('LongTitleRecursive')]"
+ long_title.house.fallback: "[ROOT.Char.GetTitledFirstNameNicknamedNoTooltip] [ROOT.Char.GetHouse.GetBaseNameNoTooltip] / [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]"
+ long_title.tier: "[ROOT.Title.Custom('LongTitleTierName')]"
+ long_title.title: "[ROOT.Title.GetNameNoTierNoTooltip]"
+ long_title.title.definite: "[ROOT.Title.GetNameNoTooltip] Tahtı'nın"
+ long_title.next: "[ROOT.Var('previous_title').Title.Custom('LongTitleRecursive')]"
+ long_title.title.definite: "[ROOT.Title.GetNameNoTooltip] Tahtı'nın"
+ long_title.start: "[ROOT.Char.GetTitleAsNameNoTooltip] / [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip][ROOT.Char.GetPrimaryTitle.MakeScope.Var('previous_title').Title.Custom('LongTitleRecursive')]"
+ long_title.fallback: "Geri çekilmek"
+ long_title.recursive: "$long_title.title$, $long_title.next$"
+ long_title.recursive.definite: "$long_title.title$$long_title.next$"
+ long_title.recursive.new_tier: ", $long_title.tier$ / $long_title.title$$long_title.next$"
+ long_title.recursive.same_tier: ", $long_title.title$$long_title.next$"
+ long_title.recursive.end_tier: "ve $long_title.title$$long_title.next$"
+ long_title.end.same_tier: "ve $long_title.title$"
+ long_title.end.new_tier: "ve $long_title.tier$ / $long_title.title$"
+ long_title.generation: "Başlatıldı [THIS.Title.GetNameNoTooltip]"
+ # long_title.custom: "[ROOT.Title.Custom('LongTitleCustom')]"
   
- long_title.tier.primary: "[ROOT.Title.GetHolder.GetTitleAsNameNoTooltip]"  
- long_title.tier.nonexistent: "[ROOT.Title.GetTierAsNameNoTooltip]"  
- long_title.tier.ruler: "Hükümdar"  
+ long_title.tier.primary: "[ROOT.Title.GetHolder.GetTitleAsNameNoTooltip]"
+ long_title.tier.nonexistent: "[ROOT.Title.GetTierAsNameNoTooltip]"
+ long_title.tier.ruler: "Hükümdar"
   
- long_title.council_position.start: "$long_title.character.start$, [ROOT.Char.GetCouncilTitle] ila [ROOT.Char.GetLiege.GetFullNameNoTooltip]"  
- long_title.relation_and_council_position.start: "$long_title.character.start$, [ROOT.Char.GetLiege.Custom2('RelationToMe',ROOT.Char)|U] ve [ROOT.Char.GetCouncilTitle] ila [ROOT.Char.GetLiege.GetFullNameNoTooltip]"  
- long_title.liege.start: "[ROOT.Char.GetLiege.Custom2('RelationToMe',ROOT.Char)|U] ila [ROOT.Char.GetLiege.GetFullNameNoTooltip], $long_title.character.start$"  
- long_title.courtier.start: "[ROOT.Char.GetLiege.Custom2('RelationToMe',ROOT.Char)|U] ila [ROOT.Char.GetLiege.GetTitledFirstNameNicknamedNoTooltip], $long_title.character.fallback$[ROOT.Char.Custom('LongTitleEnding')]"  
+ long_title.council_position.start: "$long_title.character.start$, [ROOT.Char.GetCouncilTitle] ila [ROOT.Char.GetLiege.GetFullNameNoTooltip]"
+ long_title.relation_and_council_position.start: "$long_title.character.start$, [ROOT.Char.GetLiege.Custom2('RelationToMe',ROOT.Char)|U] ve [ROOT.Char.GetCouncilTitle] ila [ROOT.Char.GetLiege.GetFullNameNoTooltip]"
+ long_title.liege.start: "[ROOT.Char.GetLiege.Custom2('RelationToMe',ROOT.Char)|U] ila [ROOT.Char.GetLiege.GetFullNameNoTooltip], $long_title.character.start$"
+ long_title.courtier.start: "[ROOT.Char.GetLiege.Custom2('RelationToMe',ROOT.Char)|U] ila [ROOT.Char.GetLiege.GetTitledFirstNameNicknamedNoTooltip], $long_title.character.fallback$[ROOT.Char.Custom('LongTitleEnding')]"
   
   
- long_title_ending_variable: "[ROOT.Var('long_title_ending_variable').GetFlagName]"  
+ long_title_ending_variable: "[ROOT.Var('long_title_ending_variable').GetFlagName]"
   
-long_title_mod_name: "Özyinelemeli ve Potansiyel Olarak Çok Uzun Unvan Oluşturucu, Crusader Kings 3 için Oyun Modifikasyonu, Agamidae'nin Tam Ekran Berber Dükkanı'nın Alt Modülü, Paradox Geliştiricilerinin ve kod kalitesi için yüksek standartlara sahip herkesin İşkencecisi, Way of Kings modu Ekip Lideri, Janker Extraordinaire ve Ejderhalar Modder'ı Tobbzn tarafından size sunulmuştur."
-
-print_flag: "[THIS.GetFlagName]"
-
-en_garde_name: "Gardınızı Alın"
-en_garde_abb_name: "Gardınızı Alın (Kol arkada)"
+ long_title_mod_name: "Özyinelemeli ve Potansiyel Olarak Çok Uzun Unvan Oluşturucu, Crusader Kings 3 için Oyun Modifikasyonu, Agamidae'nin Tam Ekran Berber Dükkanı'nın Alt Modülü, Paradox Geliştiricilerinin ve kod kalitesi için yüksek standartlara sahip herkesin İşkencecisi, Way of Kings modu Ekip Lideri, Janker Extraordinaire ve Ejderhalar Modder'ı Tobbzn tarafından size sunulmuştur."
+  
+ print_flag: "[THIS.GetFlagName]"
+  
+ en_garde_name: "Gardınızı Alın"
+ en_garde_abb_name: "Gardınızı Alın (Kol arkada)"

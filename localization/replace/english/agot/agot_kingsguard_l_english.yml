@@ -1,79 +1,78 @@
 ﻿l_english:
-#mustafa+
-kingsguard_lord_commander_flavor: "Lord Kumandan"
-kingsguard_lord_commander_flavors: "Lord Kumandan"
-kingsguard_lord_commander: "Kral Muhafızları Lord Kumandanı"
-kingsguard_lord_commander_name: "$kingsguard_lord_commander$"
-kingsguard_lord_commander_tooltip: "$kingsguard_lord_commander$"
-
-queensguard_lord_commander_name:0 "Kraliçe Muhafızları Lord Kumandanı"
-
- 
-KINGSGUARD:1 "[CHARACTER.Custom('KingsguardName')]"
- 
- 
-Kingsguard_possesive:0 "[CHARACTER.Custom('KingsguardName')] birliğinin"
-
-#GUI
-kingsguard: "Kral Muhafızları"
-Kingsguard_possesive: "Kral Muhafızlarının"
-kingsguard_1: "Kral Muhafızları" # $KINGSGUARD$
-kingsguard_2: "Kral Muhafızları"
-kingsguard_3: "Kral Muhafızları"
-kingsguard_4: "Kral Muhafızları"
-kingsguard_5: "Kral Muhafızları"
-kingsguard_6: "Kral Muhafızları"
-kingsguard_1_possessive: "$Kingsguard_possesive$"
-kingsguard_2_possessive: "$Kingsguard_possesive$"
-kingsguard_3_possessive: "$Kingsguard_possesive$"
-kingsguard_4_possessive: "$Kingsguard_possesive$"
-kingsguard_5_possessive: "$Kingsguard_possesive$"
-kingsguard_6_possessive: "$Kingsguard_possesive$"
-
-KINGSGUARD_CLICK_TO_HIRE:0 "Bir [ActiveCouncilTask.GetPositionName|E] atamak için \nKarakterlerle etkileşime geçin"
-
-KINGSGUARD_TAB_BUTTON_TEXT:0 "[GetPlayer.Custom('KingsguardName')] Birliğiniz"
-
-#Adlandırma 
-kingsguard_name:0 "Kral Muhafızı" 
-queensguard_name:0 "Kraliçe Muhafızı"
-
-# Değiştiriciler
-kingsguard_lord_commander_modifier:0 "Süzeren'in Lord Kumandanı"
-kingsguard_modifier:0 "Süzeren'in Kral Muhafızları"
-
-training_for_kingsguard:0 "Kral Muhafızlarına Katılmak İçin Eğitim"
-training_for_kingsguard_desc:0 "Bu karakter Kral Muhafızlarına katılmak için eğitim görüyor."
-
-kingsguard_oathbreaker:0 "Kral Muhafızları Yemin Bozan"
-kingsguard_oathbreaker_desc:0 "Bu karakter kutsal yeminini lekeledi ve Kral Muhafızlarını terk etti."
-
-kingsguard_protection: "[councillor.GetModifierDescForTask('kingsguard_default_1')]"
-task_kingsguard_bodyguard_effect_desc: "[Select_CString(councillor.GetRelationOfType(GetRelation('bodyguard_target')).IsValid, councillor.GetRelationOfType(GetRelation('bodyguard_target')).GetUIName, 'Guarded dynasty member')] [GetModifier('kingsguard_bodyguard').GetNameWithTooltip] alır"
-
-valid_kingsguard_bodyguard_court: "Bu sarayda korumasız hanedan üyesi yok."
- 
-kingsguard_bodyguard: "Koruma"
-kingsguard_bodyguard_desc: "Bu karakter Kral Muhafızlarının bir üyesi tarafından korunuyor"
-
-kingsguard_bodyguard_1: "Hanedan Üyesini Koru"
-kingsguard_bodyguard_2: "$kingsguard_bodyguard_1$"
-kingsguard_bodyguard_3: "$kingsguard_bodyguard_1$"
-kingsguard_bodyguard_4: "$kingsguard_bodyguard_1$"
-kingsguard_bodyguard_5: "$kingsguard_bodyguard_1$"
-kingsguard_bodyguard_6: "$kingsguard_bodyguard_1$"
- 
-kingsguard_lord_commander_default: "Koruma"
-kingsguard_default_1: "Koruma"
-kingsguard_default_2: "Koruma"
-kingsguard_default_3: "Koruma"
-kingsguard_default_4: "Koruma"
-kingsguard_default_5: "Koruma"
-kingsguard_default_6: "Koruma"
-
-task_protection_modifier:1 "Kral Muhafızları Koruması"
-
-you_agot_kingsguard_can_fire:0 "Kral Muhafızları, belirli gereksinimler karşılanırsa kovulabilir veya yeniden atanabilir."
-you_dont_agot_kingsguard_can_fire:0 "Bir kral muhafızı, bu geleneği bozmadığınız sürece ömür boyu hizmet eder."
-you_agot_kingsguard_fire_requirements:0 "PLACEHOLDER"
-you_dont_agot_kingsguard_fire_requirements:0 "PLACEHOLDER gereksinimleri karşılamıyor"
+ kingsguard_lord_commander_flavor: "Lord Kumandan"
+ kingsguard_lord_commander_flavors: "Lord Kumandan"
+ kingsguard_lord_commander: "Kral Muhafızları Lord Kumandanı"
+ kingsguard_lord_commander_name: "$kingsguard_lord_commander$"
+ kingsguard_lord_commander_tooltip: "$kingsguard_lord_commander$"
+  
+ queensguard_lord_commander_name: "Kraliçe Muhafızları Lord Kumandanı"
+  
+  
+ KINGSGUARD: "[CHARACTER.Custom('KingsguardName')]"
+  
+  
+ Kingsguard_possesive: "Kral Muhafızlarının"
+  
+ #GUI 
+ kingsguard: "Kral Muhafızları"
+ Kingsguard_possesive: "Kral Muhafızlarının"
+ kingsguard_1: "Kral Muhafızları"
+ kingsguard_2: "Kral Muhafızları"
+ kingsguard_3: "Kral Muhafızları"
+ kingsguard_4: "Kral Muhafızları"
+ kingsguard_5: "Kral Muhafızları"
+ kingsguard_6: "Kral Muhafızları"
+ kingsguard_1_possessive: "$Kingsguard_possesive$"
+ kingsguard_2_possessive: "$Kingsguard_possesive$"
+ kingsguard_3_possessive: "$Kingsguard_possesive$"
+ kingsguard_4_possessive: "$Kingsguard_possesive$"
+ kingsguard_5_possessive: "$Kingsguard_possesive$"
+ kingsguard_6_possessive: "$Kingsguard_possesive$"
+  
+ KINGSGUARD_CLICK_TO_HIRE: "Bir [ActiveCouncilTask.GetPositionName|E] atamak için \nKarakterlerle etkileşime geçin"
+  
+ KINGSGUARD_TAB_BUTTON_TEXT: "[GetPlayer.Custom('KingsguardName')] Birliğiniz"
+  
+  #Naming 
+ kingsguard_name: "Kral Muhafızı"
+ queensguard_name: "Kraliçe Muhafızı"
+  
+  # Modifiers 
+ kingsguard_lord_commander_modifier: "Süzeren'in Lord Kumandanı"
+ kingsguard_modifier: "Süzeren'in Kral Muhafızları"
+  
+ training_for_kingsguard: "Kral Muhafızlarına Katılmak İçin Eğitim"
+ training_for_kingsguard_desc: "Bu karakter Kral Muhafızlarına katılmak için eğitim görüyor."
+  
+ kingsguard_oathbreaker: "Kral Muhafızları Yemin Bozan"
+ kingsguard_oathbreaker_desc: "Bu karakter kutsal yeminini lekeledi ve Kral Muhafızlarını terk etti."
+  
+ kingsguard_protection: "[councillor.GetModifierDescForTask('kingsguard_default_1')]"
+ task_kingsguard_bodyguard_effect_desc: "[Select_CString(councillor.GetRelationOfType(GetRelation('bodyguard_target')).IsValid, councillor.GetRelationOfType(GetRelation('bodyguard_target')).GetUIName, 'Guarded dynasty member')] [GetModifier('kingsguard_bodyguard').GetNameWithTooltip] alır"
+  
+ valid_kingsguard_bodyguard_court: "Bu sarayda korumasız hanedan üyesi yok."
+  
+ kingsguard_bodyguard: "Koruma"
+ kingsguard_bodyguard_desc: "Bu karakter Kral Muhafızlarının bir üyesi tarafından korunuyor"
+  
+ kingsguard_bodyguard_1: "Hanedan Üyesini Koru"
+ kingsguard_bodyguard_2: "$kingsguard_bodyguard_1$"
+ kingsguard_bodyguard_3: "$kingsguard_bodyguard_1$"
+ kingsguard_bodyguard_4: "$kingsguard_bodyguard_1$"
+ kingsguard_bodyguard_5: "$kingsguard_bodyguard_1$"
+ kingsguard_bodyguard_6: "$kingsguard_bodyguard_1$"
+  
+ kingsguard_lord_commander_default: "Koruma"
+ kingsguard_default_1: "Koruma"
+ kingsguard_default_2: "Koruma"
+ kingsguard_default_3: "Koruma"
+ kingsguard_default_4: "Koruma"
+ kingsguard_default_5: "Koruma"
+ kingsguard_default_6: "Koruma"
+  
+ task_protection_modifier: "Kral Muhafızları Koruması"
+  
+ you_agot_kingsguard_can_fire: "Kral Muhafızları, belirli gereksinimler karşılanırsa kovulabilir veya yeniden atanabilir."
+ you_dont_agot_kingsguard_can_fire: "Bir kral muhafızı, bu geleneği bozmadığınız sürece ömür boyu hizmet eder."
+ you_agot_kingsguard_fire_requirements: "PLACEHOLDER"
+ you_dont_agot_kingsguard_fire_requirements: "PLACEHOLDER gereksinimleri karşılamıyor"

@@ -1,201 +1,215 @@
 ﻿l_english:
- feudal_government:0 "Feodal"
+ feudal_government: "Feodal"
  feudal_government_with_icon: "@government_type_feudal! $feudal_government$"
- feudal_government_adjective:0 "Feodal"
- feudal_government_realm:0 "Feodal Diyar"
- feudal_government_vassals_label:1 "Feodal [obligations|E] her vasalın [Concept( 'feudal_contract', 'Feodal Sözleşmesine' )|E] göre belirlenir."
- feudal_government_desc:1 "$game_concept_feudal_desc$\n\n#F Feodalizm 9. ila 15. yüzyıllar arasında Avrupa'da en yaygın yönetim biçimidir. Feodal sistem toprak sahibiyle orada yaşamak için hizmet ve işçilik sunanlar arasındaki ilişkiye dayanır. Bu sistemde toprak sahibi hükümdarlar vasallar atayarak onlara yönetme hakkı tanır, bunun karşılığında vasallar süzerenlerine [soldier|E] ve [tax|E] sağlarlar.#!"
- feudal_government_obligations:0 "[GetGovernment( 'feudal_government' ).GetName] [Concept( 'obligations', 'Yükümlülükleri' )|E]"
- feudal_obligation_low:3 "Düşük $feudal_government_obligations$"
- feudal_obligation_low_short:0 "Düşük"
- feudal_obligation_normal:3 "Normal $feudal_government_obligations$"
- feudal_obligation_normal_short:0 "Normal"
- feudal_obligation_high:3 "Yüksek $feudal_government_obligations$"
- feudal_obligation_high_short:0 "Yüksek"
- can_wage_wars:0 "Savaş Açabilirliği"
- wage_war_realm_law:0 "Diyar Yasasına Göre"
- wage_war_realm_law_short:0 "Diyar"
- wage_war_allowed_internal:0 "İçeriye Savaş Açabilir"
- wage_war_allowed_internal_short:0 "İç"
- wage_war_allowed_external:0 "Dışarıya Savaş Açabilir"
- wage_war_allowed_external_short:0 "Dış"
- wage_war_disallowed:0 "Vasal Savaşları Yasaklandı"
- wage_war_disallowed_short:0 "Yasak"
- scutage:0 "Asker Vergisi"
- scutage_enabled_short:0 "Açık"
- scutage_enabled:0 "$scutage$ $scutage_enabled_short$"
- scutage_disabled_short:0 "Kapalı"
- scutage_disabled:1 "$scutage$ $scutage_disabled_short$"
- scutage_levies_overwrite_postfix:0 " #weak (üstüne geçer)#!"
- feudal_government_taxes:2 "[GetGovernment( 'feudal_government' ).GetNameNoTooltip] [Concept( 'taxes', 'Vergi Yükümlülüğü' )|E]"
- feudal_tax_exempt:0 "[tax|E] Muafiyeti"
- feudal_tax_exempt_short:0 "Muaf"
- feudal_tax_low:0 "Düşük $game_concept_taxation$"
- feudal_tax_low_short:0 "Düşük"
- feudal_tax_normal:0 "Normal $game_concept_taxation$"
- feudal_tax_normal_short:0 "Normal"
- feudal_tax_high:0 "Yüksek $game_concept_taxation$"
- feudal_tax_high_short:0 "Yüksek"
- feudal_tax_extortionate:0 "Aşırı $game_concept_taxation$"
- feudal_tax_extortionate_short:0 "Aşırı"
- feudal_government_levies:2 "[GetGovernment( 'feudal_government' ).GetNameNoTooltip] [Concept( 'levies', 'Milis Yükümlülüğü' )|E]"
- feudal_levies_exempt:0 "Yükümlülüksüz"
- feudal_levies_exempt_short:0 "Sıfır"
- feudal_levies_low:0 "Düşük $game_concept_levy$ Katkısı"
- feudal_levies_low_short:0 "Düşük" #krutygetarts
- feudal_levies_normal:0 "Normal $game_concept_levy$ Katkısı"
- feudal_levies_normal_short:0 "Normal"
- feudal_levies_high:0 "Yüksek $game_concept_levy$ Katkısı"
- feudal_levies_high_short:0 "Yüksek"
- feudal_levies_extortionate:0 "Devasa $game_concept_levy$ Katkısı"
- feudal_levies_extortionate_short:0 "Devasa"
- 
- special_contract:3 "#color_black [Concept( 'feudal_contract', 'Özel Sözleşme' )|BU]"
- special_contract_none:0 "Özel Sözleşme Yok"
- special_contract_scutage:0 "Asker Vergisi Sözleşmesi"
- special_contract_scutage_desc:1 "#flavor $special_contract_scutage$ne tabi olan [vassals|E] [Concept( 'obligation', 'Yükümlülüklerinin' )|E] öngördüğü miktardan #high %[EmptyScope.ScriptValue('scutage_contract_tax_tooltip')|0]#! daha fazla [tax|E] öderler. Öte yandan [Concept( 'obligation', 'Yükümlülüklerinin' )|E] öngördüğünden #high %[EmptyScope.ScriptValue('scutage_contract_levies_tooltip')|0]#! daha az [levy|E] Katkısında bulunurlar.#!"
- special_contract_march:0 "Sınır Beyliği Sözleşmesi"
- special_contract_march_desc:2 "#flavor $special_contract_march$ne tabi olan [vassals|E], [levy] ve savunma odaklı çeşitli bonuslar elde ederler fakat [Concept( 'obligation', 'Yükümlülüklerinin' )|E] öngördüğünden #high %[EmptyScope.ScriptValue('march_contract_taxes_tooltip')|0]#! daha az [tax|E] öderler.#!"
- special_contract_palatinate:0 "Palatinlik Sözleşmesi"
- special_contract_palatinate_desc:2 "#flavor $special_contract_palatinate$ne tabi olan [vassals|E] ülke içerisindeki saygınlıklarını arttıran çeşitli siyasi ayrıcalıklara sahip olurlar. $special_contract_palatinate_short$ [vassals|E] [Concept( 'liege', 'Süzerenlerinin' )|E] [Concept( 'prestige', 'Prestijini' )|E] arttırırlar fakat [Concept( 'obligation', 'Yükümlülüklerinin' )|E] öngördüğünden #high %[EmptyScope.ScriptValue('palatinate_contract_taxes_tooltip')|0]#! daha az [tax|E] ve [levy|E] sağlarlar.#!"
- special_contract_none_short:0 "Yok"
- special_contract_scutage_short:0 "Asker Vergisi"
- special_contract_march_short:0 "Sınır Beyliği"
- special_contract_palatinate_short:0 "Palatinlik"
- 
- religious_rights:0 "Dinî İmtiyazlar"
- religious_rights_none:0 "Dinî İmtiyaz Sahibi Değil"
- religious_rights_none_short:0 "İmtiyazsız"
- religious_rights_protected:0 "Dinî İmtiyaz Sahibi"
- religious_rights_protected_desc:3 "#emphasis #bold [vassal|E] Ayrıcalıkları:#!#!\n[liege|E], [Concept( 'vassal', 'Vasaldan' )|E] [Concept( 'demand_conversion', 'Dinî Değişim Talebinde' )|E] bulunamaz.\n[liege|E], [Concept( 'vassal', 'Vasalın' )|E] topraklarında [Concept( 'convert_county', 'Din Değiştirme' )|E] yapamaz.\n[liege|E] unvan feshi esnasında [faith|E] farklılığını bahane ederek [Concept( 'tyranny', 'Tiranlıktan' )|E] kaçamaz\n\n#flavor [vassal|E] imtiyazlı bir statüye sahiptir, ülke vasalın kendi dinini yaşama hakkını tanımıştır.#!"
- religious_rights_protected_short:0 "İmtiyazlı"
- 
- fortification_rights:0 "Tahkimat Hakları"
- fortification_rights_none:0 "$fortification_rights$ Yok"
- fortification_rights_none_short:0 "Yok"
- fortification_rights_granted:0 "$fortification_rights$ Tanınmış"
- fortification_rights_granted_desc:0 "#flavor [vassal] [Concept( 'liege', 'Süzereninin' )|E] desteğiyle yeni kaleler ve tahkimatlar inşa etme hakkına sahiptir. Bu destek [Concept( 'vassal', 'Vasalın' )|E] [Concept( 'obligation', 'Yükümlülüklerinin' )|E] öngördüğünden #high %[EmptyScope.ScriptValue('fortification_rights_contract_taxes_tooltip')|0]#! daha az [tax] ödemesiyle sonuçlanır.#!"
- fortification_rights_granted_short:0 "Tanınmış"
- 
- succession_rights:0 "Veraset Hakları"
- succession_rights_default:0 "Varsayılan $succession_rights$"
- succession_rights_default_short:0 "Varsayılan"
- succession_rights_forced_partition:0 "Zoraki Bölünme"
- succession_rights_forced_partition_desc:0 "#emphasis #bold [vassal|E] Kısıtlamaları:#!#!\n[vassal|E] Bölünme harici [succession_law|E] sahibi olamaz.\n[vassal|E] [law|E] değiştirmek için #high %[EmptyScope.ScriptValue('succession_rights_contract_law_cost_tooltip')|0]#! daha fazla [prestige|E] öder.\n\n#flavor [vassal|E] [Concept( 'realm', 'Diyarı' )|E] Bölünme Veraseti dışında hiçbir farklı veraset biçimine sahip olamaz. Bu idari engeller aynı zamanda [Concept( 'vassal', 'Vasalın' )|E] [law] değiştirme maliyetini #high %[EmptyScope.ScriptValue('succession_rights_contract_law_cost_tooltip')|0] pahalılaştırır.#!#!"
- succession_rights_forced_partition_short:0 "Zoraki Bölünme"
- 
- coinage_rights:0 "Para Basma Hakkı"
- coinage_rights_none:0 "$coinage_rights$ Yok"
- coinage_rights_none_short:0 "Yok"
- coinage_rights_granted:0 "$coinage_rights$ Tanınmış"
- coinage_rights_granted_desc:0 "#flavor [vassal] yeni paralar basma ve kullanma hakkına sahiptir, bu [Concept( 'liege', 'Süzerenin' )|E] kaybı pahasına onların [development|E] değerini güçlendirir.#!"
- coinage_rights_granted_short:0 "Tanınmış"
- 
- war_declaration_rights:0 "Savaş İlanı"
- war_declaration_rights_default:0 "Varsayılan $war_declaration_rights$"
- war_declaration_rights_default_short:0 "Varsayılan"
- war_declaration_rights_allowed:0 "Destekli $war_declaration_rights$"
- war_declaration_rights_allowed_desc:1 "#emphasis #bold [vassal|E] Ayrıcalıkları:#!#!\n[vassal|E], [Concept( 'liege', 'Süzerenin' )|E] [crown_authority|E] seviyesi fark etmeksizin [war|E] ilan edebilir.\n[vassal|E], [realm|E] içi [casus_bellis|E] için #high %[EmptyScope.ScriptValue('war_declaration_rights_allowed_cost_reduction_tooltip')|0]#! daha az öder.\n\n#flavor [Concept( 'liege', 'Süzerenin' )|E] [Concept( 'crown_authority', 'Taht Otoritesinin' )|E] savaş açmayı engellemesi durumunda [Concept( 'vassal', 'Vasalın' )|E] [hook] kullanmasına gerek kalmaz. Bu ayrıcalık sunduğu #high %[EmptyScope.ScriptValue('war_declaration_rights_allowed_cost_reduction_tooltip')|0]#! maliyet düşüşü üzerinden [Concept( 'vassal', 'Vasalın' )|E] [realm|E] içi savaşlar açabilmesini kolaylaştırır.#!" #krutygetarts
- war_declaration_rights_allowed_short:0 "Destekli"
- 
- council_rights:0 "Konsey Hakları"
- council_rights_none:0 "$council_rights$ Yok"
- council_rights_none_desc:0 "#flavor [vassal] [council] odaklı herhangi bir olağanüstü ayrıcalığa sahip değildir.#!"
- council_rights_none_short:0 "Yok"
- council_rights_guaranteed:0 "$council_rights$ Garantilenmiş"
- council_rights_guaranteed_desc:0 "#emphasis #bold [vassal|E] Ayrıcalığı:#!#!\n#high $force_onto_council$#! [Concept( 'interaction', 'Etkileşimi' )|E] kullanılabilir.\n\n#flavor [vassal] sahip olduğu özel [council] ayrıcalığı çerçevesinde [Concept( 'council', 'Konseyde' )|E] daimî bir makam sahibi olma beklentisindedir. Bu ayrıcalığı çok fazla [Concept( 'vassal', 'Vasala' )|E] tanımanız bir noktadan sonra [Concept( 'realm', 'Diyardaki' )|E] [Concept( 'powerful_vassals', 'Önemli Vasalları' )|E] gücendirir.#!"
- council_rights_guaranteed_short:0 "Garantilenmiş"
- 
- title_revocation_rights:0 "Unvan Feshi"
- title_revocation_rights_default:0 "Varsayılan $title_revocation_rights$"
- title_revocation_rights_default_short:0 "Varsayılan"
- title_revocation_rights_protected:0 "Korunmuş $title_revocation_rights$"
- title_revocation_rights_protected_desc:0 "#emphasis #bold [vassal|E] Ayrıcalığı:#!#!\n[liege|E], [vassals_possessive|E] [Concept( 'titles', 'Unvanlarını' )|E] feshedemez.\n\n#flavor [Concept( 'vassal', 'Vasalın' )|E] [title] sahipliği garanti altındadır, [liege|E] [Concept( 'revoke_title_reason', 'Fesih Sebebine' )|E] sahip olsa bile unvan feshedemez.#!"
- title_revocation_rights_protected_short:0 "Korunmuş"
- 
- clan_government:0 "Aşiret"
+ feudal_government_adjective: "Feodal"
+ feudal_government_realm: "Feodal Diyar"
+ feudal_government_vassals_label: "Feodal [obligations|E] her vasalın [Concept( 'feudal_contract', 'Feodal Sözleşmesine' )|E] göre belirlenir."
+  #AGOT Modified 
+ #feudal_government_desc: "$game_concept_feudal_desc$\n\n#F Feodalizm, 9. ve 15. yüzyıllar arasında Avrupa'da baskın hükümet biçimiydi. Feodal sistem, toprak sahibi ile orada yaşamak için hizmet ve emek sağlayanlar arasındaki ilişkiye dayanır. Toprağı elinde tutan yöneticiler, yönetmeleri için fief'ler verilen vasallar atar. Karşılığında, vasallar da hükümdarlarına [soldiers|E] ve [taxes|E] sağlar.#!" #NT!
+ feudal_government_desc: "$game_concept_feudal_desc$\n\n#F Feodalizm 9. ila 15. yüzyıllar arasında Avrupa'da en yaygın yönetim biçimidir. Feodal sistem toprak sahibiyle orada yaşamak için hizmet ve işçilik sunanlar arasındaki ilişkiye dayanır. Bu sistemde toprak sahibi hükümdarlar vasallar atayarak onlara yönetme hakkı tanır, bunun karşılığında vasallar süzerenlerine [soldier|E] ve [tax|E] sağlarlar.#!"
+ feudal_government_obligations: "[GetGovernment( 'feudal_government' ).GetName] [Concept( 'obligations', 'Yükümlülükleri' )|E]"
+ feudal_obligation_low: "Düşük $feudal_government_obligations$"
+ feudal_obligation_low_short: "Düşük"
+ feudal_obligation_normal: "Normal $feudal_government_obligations$"
+ feudal_obligation_normal_short: "Normal"
+ feudal_obligation_high: "Yüksek $feudal_government_obligations$"
+ feudal_obligation_high_short: "Yüksek"
+ can_wage_wars: "Savaş Açabilirliği"
+ wage_war_realm_law: "Diyar Yasasına Göre"
+ wage_war_realm_law_short: "Diyar"
+ wage_war_allowed_internal: "İçeriye Savaş Açabilir"
+ wage_war_allowed_internal_short: "İç"
+ wage_war_allowed_external: "Dışarıya Savaş Açabilir"
+ wage_war_allowed_external_short: "Dış"
+ wage_war_disallowed: "Vasal Savaşları Yasaklandı"
+ wage_war_disallowed_short: "Yasak"
+ scutage: "Asker Vergisi"
+ scutage_enabled_short: "Açık"
+ scutage_enabled: "$scutage$ $scutage_enabled_short$"
+ scutage_disabled_short: "Kapalı"
+ scutage_disabled: "$scutage$ $scutage_disabled_short$"
+ scutage_levies_overwrite_postfix: " #weak (üstüne geçer)#!"
+ feudal_government_taxes: "[GetGovernment( 'feudal_government' ).GetNameNoTooltip] [Concept( 'taxes', 'Vergi Yükümlülüğü' )|E]"
+ feudal_tax_exempt: "[tax|E] Muafiyeti"
+ feudal_tax_exempt_short: "Muaf"
+ feudal_tax_low: "Düşük $game_concept_taxation$"
+ feudal_tax_low_short: "Düşük"
+ feudal_tax_normal: "Normal $game_concept_taxation$"
+ feudal_tax_normal_short: "Normal"
+ feudal_tax_high: "Yüksek $game_concept_taxation$"
+ feudal_tax_high_short: "Yüksek"
+ feudal_tax_extortionate: "Aşırı $game_concept_taxation$"
+ feudal_tax_extortionate_short: "Aşırı"
+ feudal_government_levies: "[GetGovernment( 'feudal_government' ).GetNameNoTooltip] [Concept( 'levies', 'Milis Yükümlülüğü' )|E]"
+ feudal_levies_exempt: "Yükümlülüksüz"
+ feudal_levies_exempt_short: "Sıfır"
+ feudal_levies_low: "Düşük $game_concept_levy$ Katkısı"
+ feudal_levies_low_short: "Düşük"
+ feudal_levies_normal: "Normal $game_concept_levy$ Katkısı"
+ feudal_levies_normal_short: "Normal"
+ feudal_levies_high: "Yüksek $game_concept_levy$ Katkısı"
+ feudal_levies_high_short: "Yüksek"
+ feudal_levies_extortionate: "Devasa $game_concept_levy$ Katkısı"
+ feudal_levies_extortionate_short: "Devasa"
+  
+ special_contract: "#color_black [Concept( 'feudal_contract', 'Özel Sözleşme' )|BU]"
+ special_contract_none: "Özel Sözleşme Yok"
+ special_contract_scutage: "Asker Vergisi Sözleşmesi"
+ special_contract_scutage_desc: "#flavor $special_contract_scutage$ne tabi olan [vassals|E] [Concept( 'obligation', 'Yükümlülüklerinin' )|E] öngördüğü miktardan #high %[EmptyScope.ScriptValue('scutage_contract_tax_tooltip')|0]#! daha fazla [tax|E] öderler. Öte yandan [Concept( 'obligation', 'Yükümlülüklerinin' )|E] öngördüğünden #high %[EmptyScope.ScriptValue('scutage_contract_levies_tooltip')|0]#! daha az [levy|E] Katkısında bulunurlar.#!"
+ special_contract_march: "Sınır Beyliği Sözleşmesi"
+ special_contract_march_desc: "#flavor $special_contract_march$ne tabi olan [vassals|E], [levy] ve savunma odaklı çeşitli bonuslar elde ederler fakat [Concept( 'obligation', 'Yükümlülüklerinin' )|E] öngördüğünden #high %[EmptyScope.ScriptValue('march_contract_taxes_tooltip')|0]#! daha az [tax|E] öderler.#!"
+ special_contract_march_border_trigger: "[vassal.GetName] yabancı bir [realm|E] ile sınır oluşturmaz" #NT!
+ special_contract_palatinate: "Palatinlik Sözleşmesi"
+ special_contract_palatinate_desc: "#flavor $special_contract_palatinate$ne tabi olan [vassals|E] ülke içerisindeki saygınlıklarını arttıran çeşitli siyasi ayrıcalıklara sahip olurlar. $special_contract_palatinate_short$ [vassals|E] [Concept( 'liege', 'Süzerenlerinin' )|E] [Concept( 'prestige', 'Prestijini' )|E] arttırırlar fakat [Concept( 'obligation', 'Yükümlülüklerinin' )|E] öngördüğünden #high %[EmptyScope.ScriptValue('palatinate_contract_taxes_tooltip')|0]#! daha az [tax|E] ve [levy|E] sağlarlar.#!"
+ special_contract_castellan: "Castellan Sözleşmesi" #NT!
+ special_contract_castellan_desc: "#flavor $special_contract_castellan$'e tabi iken, [vassal|E] [levies] ve savunma yeteneklerine bonuslar alacaktır. #high [EmptyScope.ScriptValue('march_contract_taxes_tooltip')|0]%#! daha az [tax|E], ancak #high [EmptyScope.ScriptValue('castellan_contract_levies_tooltip')0]%#! daha fazla $special_contract_castellan$1 sağlarlar $special_contract_castellan$2 $special_contract_castellan$3'lerinin emrettiğinden.#!" #NT!
+ special_contract_none_short: "Yok"
+ special_contract_scutage_short: "Asker Vergisi"
+ special_contract_march_short: "Sınır Beyliği"
+ special_contract_palatinate_short: "Palatinlik"
+ special_contract_castellan_short: "Kale muhafızı" #NT!
+  
+ religious_rights: "Dinî İmtiyazlar"
+ religious_rights_none: "Dinî İmtiyaz Sahibi Değil"
+ religious_rights_none_short: "İmtiyazsız"
+ religious_rights_protected: "Dinî İmtiyaz Sahibi"
+ religious_rights_protected_desc: "#emphasis #bold [vassal|E] Ayrıcalıkları:#!#!\n[liege|E], [Concept( 'vassal', 'Vasaldan' )|E] [Concept( 'demand_conversion', 'Dinî Değişim Talebinde' )|E] bulunamaz.\n[liege|E], [Concept( 'vassal', 'Vasalın' )|E] topraklarında [Concept( 'convert_county', 'Din Değiştirme' )|E] yapamaz.\n[liege|E] unvan feshi esnasında [faith|E] farklılığını bahane ederek [Concept( 'tyranny', 'Tiranlıktan' )|E] kaçamaz\n\n#flavor [vassal|E] imtiyazlı bir statüye sahiptir, ülke vasalın kendi dinini yaşama hakkını tanımıştır.#!"
+ religious_rights_protected_short: "İmtiyazlı"
+  
+ fortification_rights: "Tahkimat Hakları"
+ fortification_rights_none: "$fortification_rights$ Yok"
+ fortification_rights_none_short: "Yok"
+ fortification_rights_granted: "$fortification_rights$ Tanınmış"
+ fortification_rights_granted_desc: "#flavor [vassal] [Concept( 'liege', 'Süzereninin' )|E] desteğiyle yeni kaleler ve tahkimatlar inşa etme hakkına sahiptir. Bu destek [Concept( 'vassal', 'Vasalın' )|E] [Concept( 'obligation', 'Yükümlülüklerinin' )|E] öngördüğünden #high %[EmptyScope.ScriptValue('fortification_rights_contract_taxes_tooltip')|0]#! daha az [tax] ödemesiyle sonuçlanır.#!"
+ fortification_rights_granted_short: "Tanınmış"
+  
+ succession_rights: "Veraset Hakları"
+ succession_rights_default: "Varsayılan $succession_rights$"
+ succession_rights_default_short: "Varsayılan"
+ succession_rights_forced_partition: "Zoraki Bölünme"
+ succession_rights_forced_partition_desc: "#emphasis #bold [vassal|E] Kısıtlamaları:#!#!\n[vassal|E] Bölünme harici [succession_law|E] sahibi olamaz.\n[vassal|E] [law|E] değiştirmek için #high %[EmptyScope.ScriptValue('succession_rights_contract_law_cost_tooltip')|0]#! daha fazla [prestige|E] öder.\n\n#flavor [vassal|E] [Concept( 'realm', 'Diyarı' )|E] Bölünme Veraseti dışında hiçbir farklı veraset biçimine sahip olamaz. Bu idari engeller aynı zamanda [Concept( 'vassal', 'Vasalın' )|E] [law] değiştirme maliyetini #high %[EmptyScope.ScriptValue('succession_rights_contract_law_cost_tooltip')|0] pahalılaştırır.#!#!"
+ succession_rights_forced_partition_short: "Zoraki Bölünme"
+  
+ coinage_rights: "Para Basma Hakkı"
+ coinage_rights_none: "$coinage_rights$ Yok"
+ coinage_rights_none_short: "Yok"
+ coinage_rights_granted: "$coinage_rights$ Tanınmış"
+ coinage_rights_granted_desc: "#flavor [vassal] yeni paralar basma ve kullanma hakkına sahiptir, bu [Concept( 'liege', 'Süzerenin' )|E] kaybı pahasına onların [development|E] değerini güçlendirir.#!"
+ coinage_rights_granted_short: "Tanınmış"
+  
+ war_declaration_rights: "Savaş İlanı"
+ war_declaration_rights_default: "Varsayılan $war_declaration_rights$"
+ war_declaration_rights_default_short: "Varsayılan"
+ war_declaration_rights_allowed: "Destekli $war_declaration_rights$"
+ war_declaration_rights_allowed_desc: "#emphasis #bold [vassal|E] Ayrıcalıkları:#!#!\n[vassal|E], [Concept( 'liege', 'Süzerenin' )|E] [crown_authority|E] seviyesi fark etmeksizin [war|E] ilan edebilir.\n[vassal|E], [realm|E] içi [casus_bellis|E] için #high %[EmptyScope.ScriptValue('war_declaration_rights_allowed_cost_reduction_tooltip')|0]#! daha az öder.\n\n#flavor [Concept( 'liege', 'Süzerenin' )|E] [Concept( 'crown_authority', 'Taht Otoritesinin' )|E] savaş açmayı engellemesi durumunda [Concept( 'vassal', 'Vasalın' )|E] [hook] kullanmasına gerek kalmaz. Bu ayrıcalık sunduğu #high %[EmptyScope.ScriptValue('war_declaration_rights_allowed_cost_reduction_tooltip')|0]#! maliyet düşüşü üzerinden [Concept( 'vassal', 'Vasalın' )|E] [realm|E] içi savaşlar açabilmesini kolaylaştırır.#!"
+ war_declaration_rights_allowed_short: "Destekli"
+  
+ council_rights: "Konsey Hakları"
+ council_rights_none: "$council_rights$ Yok"
+ council_rights_none_desc: "#flavor [vassal] [council] odaklı herhangi bir olağanüstü ayrıcalığa sahip değildir.#!"
+ council_rights_none_short: "Yok"
+ council_rights_guaranteed: "$council_rights$ Garantilenmiş"
+ council_rights_guaranteed_desc: "#emphasis #bold [vassal|E] Ayrıcalığı:#!#!\n#high $force_onto_council$#! [Concept( 'interaction', 'Etkileşimi' )|E] kullanılabilir.\n\n#flavor [vassal] sahip olduğu özel [council] ayrıcalığı çerçevesinde [Concept( 'council', 'Konseyde' )|E] daimî bir makam sahibi olma beklentisindedir. Bu ayrıcalığı çok fazla [Concept( 'vassal', 'Vasala' )|E] tanımanız bir noktadan sonra [Concept( 'realm', 'Diyardaki' )|E] [Concept( 'powerful_vassals', 'Önemli Vasalları' )|E] gücendirir.#!"
+ council_rights_guaranteed_short: "Garantilenmiş"
+  
+ title_revocation_rights: "Unvan Feshi"
+ title_revocation_rights_default: "Varsayılan $title_revocation_rights$"
+ title_revocation_rights_default_short: "Varsayılan"
+ title_revocation_rights_protected: "Korunmuş $title_revocation_rights$"
+ title_revocation_rights_protected_desc: "#emphasis #bold [vassal|E] Ayrıcalığı:#!#!\n[liege|E], [vassals_possessive|E] [Concept( 'titles', 'Unvanlarını' )|E] feshedemez.\n\n#flavor [Concept( 'vassal', 'Vasalın' )|E] [title] sahipliği garanti altındadır, [liege|E] [Concept( 'revoke_title_reason', 'Fesih Sebebine' )|E] sahip olsa bile unvan feshedemez.#!"
+ title_revocation_rights_protected_short: "Korunmuş"
+  
+ clan_government: "Aşiret"
  clan_government_with_icon: "@government_type_clan! $clan_government$"
- clan_government_adjective:0 "Aşiret"
- clan_government_realm:0 "Aşiret"
- clan_government_desc:0 "$game_concept_clan_desc$\n\n#F Aşiret kan yoluyla veya sembolik bir ortak ata üzerinden birbirine bağlanmış kişilerden oluşur. Aşiret reisinin aşiret desteğine ihtiyacı vardır. Birlik olmayı başaran aşiretler ciddi bir güce ulaşabileceği gibi karmaşa içerisindeki aşiretler de kendi kendilerine dağılabilirler.#!"
- clan_government_vassals_label:1 "Aşiret [Concept( 'obligations', 'Yükümlülükleri' )|E] [Concept( 'opinion', 'Görüşe' )|E] bağlıdır"
- clan_government_obligations:0 "[Concept( 'opinion', 'Görüşten' )|E]"
- clan_government_tax_contribution_postfix:0 " (en fazla [FixedPointToProgressbarValue(EmptyScope.ScriptValue('clan_government_tax_max_possible'))|1V])"
- clan_government_levies_contribution_postfix:0 " (en fazla [FixedPointToProgressbarValue(EmptyScope.ScriptValue('clan_government_levies_max_possible'))|1V])"
- clan_government_unclamped_contribution_label:0 "Bana olan [Concept( 'opinion', 'Görüşüne' )|E] göre"
- clan_government_min_contribution_label:0 "En düşük [crown_authority|E]"
-
- republic_government:0 "Cumhuriyet"
+ clan_government_adjective: "Aşiret"
+ clan_government_realm: "Aşiret"
+ clan_government_desc: "$game_concept_clan_desc$\n\n#F Aşiret kan yoluyla veya sembolik bir ortak ata üzerinden birbirine bağlanmış kişilerden oluşur. Aşiret reisinin aşiret desteğine ihtiyacı vardır. Birlik olmayı başaran aşiretler ciddi bir güce ulaşabileceği gibi karmaşa içerisindeki aşiretler de kendi kendilerine dağılabilirler.#!"
+ clan_government_vassals_label: "Aşiret [Concept( 'obligations', 'Yükümlülükleri' )|E] [Concept( 'opinion', 'Görüşe' )|E] bağlıdır"
+ clan_government_obligations: "[Concept( 'opinion', 'Görüşten' )|E]"
+ clan_government_tax_contribution_postfix: " (en fazla [FixedPointToProgressbarValue(EmptyScope.ScriptValue('clan_government_tax_max_possible'))|1V])"
+ clan_government_levies_contribution_postfix: " (en fazla [FixedPointToProgressbarValue(EmptyScope.ScriptValue('clan_government_levies_max_possible'))|1V])"
+ clan_government_unclamped_contribution_label: "Bana olan [Concept( 'opinion', 'Görüşüne' )|E] göre"
+ clan_government_min_contribution_label: "En düşük [crown_authority|E]"
+  
+ republic_government: "Cumhuriyet"
  republic_government_with_icon: "@government_type_republic! $republic_government$"
- republic_government_adjective:0 "Cumhuriyet"
- republic_government_realm:0 "Cumhuriyet"
- republic_government_desc:0 "$game_concept_republic_desc$\n\n#F Kasabalar şehirli statüsüne sahip ayrıcalıklı vatandaşlar tarafından yönetilir, bunların arasından seçilen Vali önemli yetkilere sahip olsa da, yeniden seçilebilmek için popülariteye ihtiyaç duyar.#!"
- republic_government_vassals_label:1 "Cumhuriyet [Concept( 'obligations', 'Yükümlülükleri' )|E] tüm Cumhuriyet [vassals|E] için aynıdır"
- republic_government_obligations:1 "Cumhuriyet [Concept( 'obligations', 'Yükümlülükleri' )|E]"
- republican_vassals_pay_more_parameter:0 "[Concept( 'liege', 'Süzerenin' )|E] [Concept( 'culture_traditions', 'Kültürel Gelenekleri' )|E]"
-
- tribal_government:0 "Kabile"
+ republic_government_adjective: "Cumhuriyet"
+ republic_government_realm: "Cumhuriyet"
+ republic_government_desc: "$game_concept_republic_desc$\n\n#F Kasabalar şehirli statüsüne sahip ayrıcalıklı vatandaşlar tarafından yönetilir, bunların arasından seçilen Vali önemli yetkilere sahip olsa da, yeniden seçilebilmek için popülariteye ihtiyaç duyar.#!"
+ republic_government_vassals_label: "Cumhuriyet [Concept( 'obligations', 'Yükümlülükleri' )|E] tüm Cumhuriyet [vassals|E] için aynıdır"
+ republic_government_obligations: "Cumhuriyet [Concept( 'obligations', 'Yükümlülükleri' )|E]"
+ republican_vassals_pay_more_parameter: "[Concept( 'liege', 'Süzerenin' )|E] [Concept( 'culture_traditions', 'Kültürel Gelenekleri' )|E]"
+  
+ tribal_government: "Kabile"
  tribal_government_with_icon: "@government_type_tribal! $tribal_government$"
- tribal_government_adjective:0 "Kabile"
- tribal_government_realm:0 "Kabile"
- tribal_government_desc:0 "$game_concept_tribal_desc$\n\n#F Kabilelerde güç her şeydir. Kabile liderinin topraklarını geliştirmek ve ordusuna ödeme yapmak için altından ziyade, saygı ve şöhrete ihtiyacı vardır.#!"
-
- tribal_government_obligations:0 "[Concept( 'liege', 'Süzerenin' )|E] [Concept( 'prestige_level', 'Şöhret Seviyesinden' )|E]"
- tribal_government_vassals_label:1 "Kabile [Concept( 'obligations', 'Yükümlülükleri' )|E] [Concept( 'liege', 'Süzerenin' )|E] [Concept( 'prestige_level', 'Şöhret Seviyesine' )|E] bağlıdır"
- tribal_liege_inefficiency_plus_perk:0 "[liege|E] bir [tribal|E] reisi ve [GetPerk( 'detailed_ledgers_perk' ).GetName( GetPlayer )] özelliğine sahip"
- tribal_liege_inefficiency:0 "[liege|E] bir [tribal|E] reisi"
- has_detailed_ledgers_perk:0 "[liege|E] [GetPerk( 'detailed_ledgers_perk' ).GetName( GetPlayer )] özelliğine sahip"
- 
- theocracy_government:0 "Teokrasi"
+ tribal_government_adjective: "Kabile"
+ tribal_government_realm: "Kabile"
+ tribal_government_desc: "$game_concept_tribal_desc$\n\n#F Kabilelerde güç her şeydir. Kabile liderinin topraklarını geliştirmek ve ordusuna ödeme yapmak için altından ziyade, saygı ve şöhrete ihtiyacı vardır.#!"
+  
+ tribal_government_obligations: "[Concept( 'liege', 'Süzerenin' )|E] [Concept( 'prestige_level', 'Şöhret Seviyesinden' )|E]"
+ tribal_government_vassals_label: "Kabile [Concept( 'obligations', 'Yükümlülükleri' )|E] [Concept( 'liege', 'Süzerenin' )|E] [Concept( 'prestige_level', 'Şöhret Seviyesine' )|E] bağlıdır"
+ tribal_liege_inefficiency_plus_perk: "[liege|E] bir [tribal|E] reisi ve [GetPerk( 'detailed_ledgers_perk' ).GetName( GetPlayer )] özelliğine sahip"
+ tribal_liege_inefficiency: "[liege|E] bir [tribal|E] reisi"
+ has_detailed_ledgers_perk: "[liege|E] [GetPerk( 'detailed_ledgers_perk' ).GetName( GetPlayer )] özelliğine sahip"
+  
+ theocracy_government: "Teokrasi"
  theocracy_government_with_icon: "@government_type_theocracy! $theocracy_government$"
- theocracy_government_adjective:0 "Teokratik"
- theocracy_government_realm:0 "Teokrasi"
- theocracy_government_desc:1 "$game_concept_theocracy_desc$\n\n#F Teokratik yönetimlerde tüm güç dinî kurumlardadır. İlahi iradeyi dünyaya yansıtmakla mükellef bir rahip veya rahibe tarafından yönetilirler.#!"
- theocracy_government_vassals_label:1 "Teokratik [obligations|E] [Concept( 'liege', 'Süzerenin' )|E] [piety_level|E]ne bağlıdır"
- theocracy_government_obligations:1 "Teokratik [obligations|E]"
- theocracy_government_vassal_contribution_wrong_faith:0 "@warning_icon! #X [liege|E] yanlış [Concept( 'faith', 'Mezhepten' )|E]#!"
- theocracy_government_vassal_contribution_piety_level:0 "[liege|E] bir [GetPietyLevelName(liege.GetPietyLevel)|L]"
-
- holy_order_government:0 "Kutsal Tarikat"
+ theocracy_government_adjective: "Teokratik"
+ theocracy_government_realm: "Teokrasi"
+ theocracy_government_desc: "$game_concept_theocracy_desc$\n\n#F Teokratik yönetimlerde tüm güç dinî kurumlardadır. İlahi iradeyi dünyaya yansıtmakla mükellef bir rahip veya rahibe tarafından yönetilirler.#!"
+ theocracy_government_vassals_label: "Teokratik [obligations|E] [Concept( 'liege', 'Süzerenin' )|E] [piety_level|E]ne bağlıdır"
+ theocracy_government_obligations: "Teokratik [obligations|E]"
+ theocracy_government_vassal_contribution_wrong_faith: "@warning_icon! #X [liege|E] yanlış [Concept( 'faith', 'Mezhepten' )|E]#!"
+ theocracy_government_vassal_contribution_piety_level: "[liege|E] bir [GetPietyLevelName(liege.GetPietyLevel)|L]"
+  
+ holy_order_government: "Kutsal Tarikat"
  holy_order_government_with_icon: "@government_type_holy_order! $holy_order_government$"
- holy_order_government_desc:0 "Kutsal tarikatların savaşçılarını hayatlarını inançlarına hizmet etmeye ve kâfirlerle savaşmaya adamıştır. Dindar toprak sahipleri tarafından onlara verilen kaleleri yönetebilirler. Tarikatın lideri tarikat kademeleri arasından seçilir."
- holy_order_government_adjective:0 "Kutsal Tarikat"
- holy_order_government_realm:0 "Kutsal Tarikat"
-
- mercenary_government:0 "Paralı Asker Bölüğü"
+ holy_order_government_desc: "Kutsal tarikatların savaşçılarını hayatlarını inançlarına hizmet etmeye ve kâfirlerle savaşmaya adamıştır. Dindar toprak sahipleri tarafından onlara verilen kaleleri yönetebilirler. Tarikatın lideri tarikat kademeleri arasından seçilir."
+ holy_order_government_adjective: "Kutsal Tarikat"
+ holy_order_government_realm: "Kutsal Tarikat"
+  
+ mercenary_government: "Paralı Asker Bölüğü"
  mercenary_government_with_icon: "@government_type_mercenary! $mercenary_government$"
- mercenary_government_realm:0 "Paralı Asker Bölüğü"
- mercenary_government_desc:1 "Paralı Asker bölükleri kendilerini kiralayacak biri bulmak üzere sürekli hareket hâlindedir. Sadakatleri itibarları için elzemdir ancak bu sadakatleri sadece sözleşmelerinin sonuna kadar sürer. Paralı Asker bölüğünün lideri bölüğün kademeleri arasından seçilir."
- mercenary_government_adjective:0 "Paralı Asker Bölüğü"
-
- create_cadet_branches_trigger:0 "[cadet_branches|E] oluşturulabilir"
- create_cadet_branches_rule:0 "[cadet_branches|E] oluşturulabilir"
- GOVERNMENT_RULE_INFO:1 "$EFFECT_LIST_BULLET$ $RULE|V$"
- GOVERNMENT_HOLDING_INFO:1 "$EFFECT_LIST_BULLET$ [HOLDING_TYPE.GetName|V] [holdings|E]ı elinde tutabilir"
- GOVERNMENT_CLAN_NOT_ALLIED:0 "[vassal|E] aşiret olmasına rağmen [Concept( 'alliance', 'Müttefik' )|E] değil"
- GOVERNMENT_CLAN_NOT_ALLIED_POWERFUL:0 "Önemli [vassal|E] aşiret olmasına rağmen [Concept( 'alliance', 'Müttefik' )|E] değil"
- government_can_raid_rule:1 "[government|E] biçimi [raid_loot|E] için yabancı [Concept( 'counties', 'Kontlukların' )|E] [Concept( 'raiding', 'Yağmalanmasına' )|E] izin veriyor"
- government_is_feudal:0 "[government|E] biçimi [GetGovernment( 'feudal_government' ).GetName]"
- government_is_republic:0 "[government|E] biçimi [GetGovernment( 'republic_government' ).GetName]"
- government_is_theocracy:0 "[government|E] biçimi [GetGovernment( 'theocracy_government' ).GetName]"
- government_is_clan:0 "[government|E] biçimi [GetGovernment( 'clan_government' ).GetName]"
- government_is_tribal:0 "[government|E] biçimi [GetGovernment( 'tribal_government' ).GetName]"
- government_is_mercenary:0 "[government|E] biçimi [GetGovernment( 'mercenary_government' ).GetName]"
- government_is_holy_order:0 "[government|E] biçimi [GetGovernment( 'holy_order_government' ).GetName]"
+ mercenary_government_realm: "Paralı Asker Bölüğü"
+ mercenary_government_desc: "Paralı Asker bölükleri kendilerini kiralayacak biri bulmak üzere sürekli hareket hâlindedir. Sadakatleri itibarları için elzemdir ancak bu sadakatleri sadece sözleşmelerinin sonuna kadar sürer. Paralı Asker bölüğünün lideri bölüğün kademeleri arasından seçilir."
+ mercenary_government_adjective: "Paralı Asker Bölüğü"
+  
+ create_cadet_branches_trigger: "[cadet_branches|E] oluşturulabilir"
+ create_cadet_branches_rule: "[cadet_branches|E] oluşturulabilir"
+ GOVERNMENT_RULE_INFO: "$EFFECT_LIST_BULLET$ $RULE|V$"
+ GOVERNMENT_HOLDING_INFO: "$EFFECT_LIST_BULLET$ [HOLDING_TYPE.GetName|V] [holdings|E]ı elinde tutabilir"
+ GOVERNMENT_CLAN_NOT_ALLIED: "[vassal|E] aşiret olmasına rağmen [Concept( 'alliance', 'Müttefik' )|E] değil"
+ GOVERNMENT_CLAN_NOT_ALLIED_POWERFUL: "Önemli [vassal|E] aşiret olmasına rağmen [Concept( 'alliance', 'Müttefik' )|E] değil"
+ government_can_raid_rule: "[government|E] biçimi [raid_loot|E] için yabancı [Concept( 'counties', 'Kontlukların' )|E] [Concept( 'raiding', 'Yağmalanmasına' )|E] izin veriyor"
+ may_elevate_co_monarch: "#indent_newline:3 En az [kingdom|E]-[title_tier|E]'ten [rulers|E]'inin yetişkin [children|E]#! arasından bir [co_monarch|E]'ü yükseltmesine izin verir" #NT!
+ government_is_feudal: "[government|E] biçimi [GetGovernment( 'feudal_government' ).GetName]"
+ government_is_republic: "[government|E] biçimi [GetGovernment( 'republic_government' ).GetName]"
+ government_is_theocracy: "[government|E] biçimi [GetGovernment( 'theocracy_government' ).GetName]"
+ government_is_clan: "[government|E] biçimi [GetGovernment( 'clan_government' ).GetName]"
+ government_is_tribal: "[government|E] biçimi [GetGovernment( 'tribal_government' ).GetName]"
+ government_is_mercenary: "[government|E] biçimi [GetGovernment( 'mercenary_government' ).GetName]"
+ government_is_holy_order: "[government|E] biçimi [GetGovernment( 'holy_order_government' ).GetName]"
+ government_is_landless_adventurer: "[camp|E]'a erişimi var" #NT!
+ government_is_administrative: "[estate|E]'a erişimi var" #NT!
+ government_has_influence: "Kullanımlar [influence_i|E][influence|E]" #NT!
+ government_has_title_men_at_arms: "[title_men_at_arms|E]'ın işe alınmasına izin verir" #NT!
+ government_has_powerful_families: "[noble_families|E]'ı etkinleştirir" #NT!
  may_appoint_viziers: "[vizier|E] atayabilir"
-
- SUPPLY_MULT_DIFERENT_GOVERNMENT:0 "[GOVERNMENT_TYPE.GetAdjective] Toprakları"
-
- CONTRACT_LIEGE_SIGNATURE:0 "Süzeren,\n[VassalContract.GetLiege.GetTitledFirstNameNoTooltip]\n[VassalContract.GetLiege.GetHouse.GetBaseNameNoTooltip] Hanesi"
- CONTRACT_VASSAL_SIGNATURE:0 "Vasal,\n[VassalContract.GetVassal.GetTitledFirstNameNoTooltip]\n[VassalContract.GetVassal.GetHouse.GetBaseNameNoTooltip] Hanesi"
-
- marriage_favor_rights:0 "Evlilik Lütfu"
- marriage_favor_rights_default:0 "Varsayılan $marriage_favor_rights$"
- marriage_favor_rights_default_short:0 "Varsayılan"
- marriage_favor_rights_granted:0 "$marriage_favor_rights$ Tanındı"
- marriage_favor_rights_granted_desc:0 "#emphasis #bold [vassal|E] Ayrıcalığı:#!#!\n[liege|E], yakın ailesinden birini başkasıyla evlendirmeden önce bu vasal ile müttefiklik kurmak için evlendirme sözü verir.\n\n#flavor [vassal|E], [Concept( 'liege', 'süzereni' )|E] tarafından sevilir ve evlilik yoluyla ittifak kurabilir.#!"
- marriage_favor_rights_granted_short:0 "Tanınmış"
-
+  
+ government_is_not_republic_or_admin_desc: "[government|E] #bold'dir #! değil [GetGovernment('republic_government').GetName] veya [GetGovernment('administrative_government').GetName]" #NT!
+  
+ SUPPLY_MULT_DIFERENT_GOVERNMENT: "[GOVERNMENT_TYPE.GetAdjective] Toprakları"
+  
+ CONTRACT_LIEGE_SIGNATURE: "Süzeren,\n[VassalContract.GetLiege.GetTitledFirstNameNoTooltip]\n[VassalContract.GetLiege.GetHouse.GetBaseNameNoTooltip] Hanesi"
+ CONTRACT_VASSAL_SIGNATURE: "Vasal,\n[VassalContract.GetVassal.GetTitledFirstNameNoTooltip]\n[VassalContract.GetVassal.GetHouse.GetBaseNameNoTooltip] Hanesi"
+  
+ marriage_favor_rights: "Evlilik Lütfu"
+ marriage_favor_rights_default: "Varsayılan $marriage_favor_rights$"
+ marriage_favor_rights_default_short: "Varsayılan"
+ marriage_favor_rights_granted: "$marriage_favor_rights$ Tanındı"
+ marriage_favor_rights_granted_desc: "#emphasis #bold [vassal|E] Ayrıcalığı:#!#!\n[liege|E], yakın ailesinden birini başkasıyla evlendirmeden önce bu vasal ile müttefiklik kurmak için evlendirme sözü verir.\n\n#flavor [vassal|E], [Concept( 'liege', 'süzereni' )|E] tarafından sevilir ve evlilik yoluyla ittifak kurabilir.#!"
+ marriage_favor_rights_granted_short: "Tanınmış"
+  
  antagonistic: "Düşmancıl"
  antagonistic_desc: "Düşmanlık ve kıskançlık kadar insanları hırslandırabilecek pek az şey vardır. Bu hanenin üyelerinin her zaman dikkatli olması gerekir zira hiç beklenmedik bir anda bir hançer darbesi her şeyi sonlandırabilir."
  competitive: "Rekabetçi"
@@ -205,14 +219,14 @@
  friendly: "Dostane"
  friendly_desc: "Bu ailenin üyeleri her zaman yanyana durmasalar da, birbirlerine karşı her zaman dostane bir tavır sergilerler."
  harmonious: "Uyumlu"
- harmonious_desc: "Tamamen uyumlu bir hane. Bu hanenin üyeleri birlik olarak hareket ederler ve birbirlerine ellerinden gelen her türlü yardımı yaparlar." 
+ harmonious_desc: "Tamamen uyumlu bir hane. Bu hanenin üyeleri birlik olarak hareket ederler ve birbirlerine ellerinden gelen her türlü yardımı yaparlar."
  antagonistic_house_approves_war_victory: "[Select_CString( attacker.IsLocalPlayer, '', attacker.GetShortUIName )][Select_CString( attacker.IsLocalPlayer, '', ' adlı kişinin ' )][Select_CString( attacker.IsLocalPlayer, 'Tüm', 'tüm' )] [house|E] [Concept( 'vassals', 'Vasalları' )|E][Select_CString( attacker.IsLocalPlayer, 'nız', '' )] [Select_CString( attacker.IsLocalPlayer, 'size', 'ona' )] karşı #V 10 yıllığına#! #P 10#! [opinion|E] kazanacak #weak (Saldırı Savaşında Alınan Zaferden Etkilendi)#!"
  antagonistic_house_approves_war_victory_defensive: "[Select_CString( defender.IsLocalPlayer, '', defender.GetShortUIName )][Select_CString( defender.IsLocalPlayer, '', ' adlı kişinin ' )][Select_CString( defender.IsLocalPlayer, 'Tüm', 'tüm' )] [house|E] [Concept( 'vassals', 'Vasalları' )|E][Select_CString( defender.IsLocalPlayer, 'nız', '' )] [Select_CString( defender.IsLocalPlayer, 'size', 'ona' )] karşı #V 10 yıllığına#! #P 15#! [opinion|E] kazanacak #weak (Savunma Savaşında Alınan Zaferden Etkilendi)#!"
  antagonistic_house_disapproves_war_white_peace: "[Select_CString( attacker.IsLocalPlayer, '', attacker.GetShortUIName )][Select_CString( attacker.IsLocalPlayer, '', ' adlı kişinin ' )][Select_CString( attacker.IsLocalPlayer, 'Tüm', 'tüm' )] [house|E] [Concept( 'vassals', 'Vasalları' )|E][Select_CString( attacker.IsLocalPlayer, 'nız', '' )] [Select_CString( attacker.IsLocalPlayer, 'size', 'ona' )] karşı #V 10 yıllığına#! #N 10#! [opinion|E] kaybedecek #weak (Beyaz Barışı Yetersiz Buldu)#!"
  antagonistic_house_disapproves_war_white_peace_defender: "[Select_CString( defender.IsLocalPlayer, '', defender.GetShortUIName )][Select_CString( defender.IsLocalPlayer, '', ' adlı kişinin ' )][Select_CString( defender.IsLocalPlayer, 'Tüm', 'tüm' )] [house|E] [Concept( 'vassals', 'Vasalları' )|E][Select_CString( defender.IsLocalPlayer, 'nız', '' )] [Select_CString( defender.IsLocalPlayer, 'size', 'ona' )] karşı #V 10 yıllığına#! #N 10#! [opinion|E] kaybedecek #weak (Beyaz Barışı Yetersiz Buldu)#!"
  antagonistic_house_disapproves_war_defeat: "[Select_CString( attacker.IsLocalPlayer, '', attacker.GetShortUIName )][Select_CString( attacker.IsLocalPlayer, '', ' adlı kişinin ' )][Select_CString( attacker.IsLocalPlayer, 'Tüm', 'tüm' )] [house|E] [Concept( 'vassals', 'Vasalları' )|E][Select_CString( attacker.IsLocalPlayer, 'nız', '' )] [Select_CString( attacker.IsLocalPlayer, 'size', 'ona' )] karşı #V 10 yıllığına#! #N 20#! [opinion|E] kaybedecek #weak (Yenilgiden Utanç Duydu)#!"
  antagonistic_house_disapproves_war_defeat_defender: "[Select_CString( defender.IsLocalPlayer, '', defender.GetShortUIName )][Select_CString( defender.IsLocalPlayer, '', ' adlı kişinin ' )][Select_CString( defender.IsLocalPlayer, 'Tüm', 'tüm' )] [house|E] [Concept( 'vassals', 'Vasalları' )|E][Select_CString( defender.IsLocalPlayer, 'nız', '' )] [Select_CString( defender.IsLocalPlayer, 'size', 'ona' )] karşı #V 10 yıllığına#! #N 20#! [opinion|E] kaybedecek #weak (Yenilgiden Utanç Duydu)#!"
-
+  
  house_unity_parameter_unity_antagonistic_cb_cost: "[casus_belli|E] Maliyeti: @war_icon!#P [EmptyScope.ScriptValue('unity_antagonistic_cb_cost_display_value')|0]%#!"
  house_unity_parameter_unity_competitive_cb_cost: "[casus_belli|E] Maliyeti: @war_icon!#P [EmptyScope.ScriptValue('unity_competitive_cb_cost_display_value')|0]%#!"
  house_unity_parameter_unity_friendly_cb_cost: "[casus_belli|E] Maliyeti: @war_icon!#N +[EmptyScope.ScriptValue('unity_friendly_cb_cost_display_value')|0]%#!"
@@ -233,46 +247,46 @@
  house_unity_parameter_unity_can_challenge_house_head: "[house|E] üyeleri, yerini almak üzere [Concept( 'house_head', 'Hane Reislerine' )|E] meydan okuyabilir"
  house_unity_parameter_unity_can_create_cadet_branches: "[independent|E] [house|E] üyeleri [cadet_branches|E] oluşturabilir"
  house_unity_can_create_cadet_branches_tt: "[house_unity|E] @dynasty_house_unity_antagonistic! $antagonistic$"
-
+  
  house_unity_parameter_unity_succession_clan_antagonistic_partition_succession: "[house_succession_law|E] [GetLaw('clan_antagonistic_partition_succession_law').GetName]"
  house_unity_parameter_unity_succession_clan_competitive_partition_succession: "[house_succession_law|E] [GetLaw('clan_competitive_partition_succession_law').GetName]"
  house_unity_parameter_unity_succession_clan_impassive_partition_succession: "[house_succession_law|E] [GetLaw('clan_impassive_partition_succession_law').GetName]"
  house_unity_parameter_unity_succession_clan_friendly_partition_succession: "[house_succession_law|E] [GetLaw('clan_friendly_partition_succession_law').GetName]"
  house_unity_parameter_unity_succession_clan_harmonious_partition_succession: "[house_succession_law|E] [GetLaw('clan_harmonious_partition_succession_law').GetName]"
-
+  
  house_unity_parameter_unity_has_liberate_house_members_cb: "[fp3_free_house_member_cb|E] [casus_belli|E] açılır"
  unity_has_liberate_house_members_cb_name: "[fp3_free_house_member_cb|E]"
-
+  
  house_unity_parameter_unity_has_unify_house_cb: "[fp3_unify_house_cb|E] [casus_belli|E] açılır"
  unity_has_unify_house_cb_name: "[fp3_unify_house_cb|E]"
-
+  
  HAS_HOUSE_UNITY_STAGE_GLOBAL: "[house_unity|E] @dynasty_house_unity_[HouseUnityStage.GetKey]! [HouseUnityStage.GetName|V]"
  I_HAVE_HOUSE_UNITY_STAGE_GLOBAL: "[Concept( 'house_unity', 'Hane Birliğim' )|E] @dynasty_house_unity_[HouseUnityStage.GetKey]! [HouseUnityStage.GetName|V]"
  THEY_HAVE_HOUSE_UNITY_STAGE_GLOBAL: "[DYNASTY_HOUSE.GetBaseName|V] [Concept( 'house', 'Hanesinin' )|E] [house_unity|E] @dynasty_house_unity_[HouseUnityStage.GetKey]! [HouseUnityStage.GetName|V]"
  NOT_HAS_HOUSE_UNITY_STAGE_GLOBAL: "[house_unity|E] @dynasty_house_unity_[HouseUnityStage.GetKey]! [HouseUnityStage.GetName|V] #bold değil#!"
  NOT_I_HAVE_HOUSE_UNITY_STAGE_GLOBAL: "[Concept( 'house_unity', 'Hane Birliğim' )|E] @dynasty_house_unity_[HouseUnityStage.GetKey]! [HouseUnityStage.GetName|V] #bold değil#!"
  NOT_THEY_HAVE_HOUSE_UNITY_STAGE_GLOBAL: "[DYNASTY_HOUSE.GetBaseName|V] [Concept( 'house', 'Hanesinin' )|E] [house_unity|E] @dynasty_house_unity_[HouseUnityStage.GetKey]! [HouseUnityStage.GetName|V] #bold değil#!"
-
+  
  active_unity_level_description_tt: "#weak Bu mevcut [Concept( 'house_unity_level', 'Hane Birlik Seviyeniz' )|E] sebebiyledir#!"
-
+  
  ADD_UNITY_VALUE_GLOBAL: "[DynastyHouse.GetBaseName|V] [Concept( 'house', 'Hanesinin' )|E] [house_unity|E] $VALUE|=+0$ @dynasty_house_unity! değişecek"
  AI_HOUSE_UNITY: "[Concept( 'house_unity', 'Hane Birliğiniz' )|E]: $VALUE|=+0$"
-
+  
  unity_reinforce_army_decision: "Sadık Subaylar ile Orduyu Güçlendir"
  unity_reinforce_army_decision_desc: "Bir ordu ancak ona liderlik eden subaylar kadar güçlü olabilir. Hane üyelerimden tecrübeli askerler talep ederek ordumu güçlendirebilirim. Bu askerler daha sonraları ordunun verimliliğini arttırmak adına çeşitli konumlara gelebilirler. Orduya tüm hanenin katkıda bulunması herkesin faydasına sonuçlar yaratır!"
  unity_reinforce_army_decision_tooltip: "Hane üyelerinizden ordunuza yetenekli subaylar göndermelerini talep edin"
  unity_reinforce_army_decision_confirm: "Mektubu gönder."
-
+  
  unity_establish_network_decision: "Entrika Ağı Oluştur"
  unity_establish_network_decision_desc: "Hane üyelerimin her biri birbirinden kurnaz. Benim önderliğimde, en ufak bir hareketi dahi tespit edebilecek bir entrika ağı kurabiliriz."
  unity_establish_network_decision_tooltip: "Hane üyelerinizden düşmancıl planlara karşı koruma talep edin"
  unity_establish_network_decision_confirm: "Mektubu gönder."
-
+  
  unity_improve_taxation_decision: "Vergilendirmeyi Güçlendir"
  unity_improve_taxation_decision_desc: "Hane üyelerim arasında vergi toplama ve ülke idaresinde çok tecrübeli kişiler bulunuyor. Birbirimizle fikir alışverişinde bulunarak, artan gelirden hep birlikte faydalanabiliriz."
  unity_improve_taxation_decision_tooltip: "Hane üyelerinizle birlikte çalışarak ülkenin vergi sistemini güçlendirin"
  unity_improve_taxation_decision_confirm: "Görüşme ayarla."
-
+  
  unity_search_for_administrators_decision: "Tahsildar Ara"
  unity_search_for_administrators_decision_desc: "Vergi, her devletin omurgasıdır. Yetenekli idareciler ve eski askerleri tahsildar olarak görevlendirmek, harcanan çabaya değecektir."
  unity_search_for_administrators_decision_tooltip: "Tahsildar olarak atanmak üzere yetenekli idareciler ve askerler arayın"
@@ -280,37 +294,37 @@
  search_administors_decision.tt: "Farklı becerilere sahip en fazla 3 [character|E] [Concept( 'court', 'Sarayınıza' )|E] gelecek"
  unity_search_for_administrators_decision.msg.t: "İdareci Göreve Hazır"
  unity_search_for_administrators_decision.msg.desc: "[new_administrator.GetName] isminde yeni bir idareci sarayınıza geldi ve görevlendirilmeyi bekliyor."
-
+  
  unity_send_bailiffs_decision: "Temsilciler Gönder"
  unity_send_bailiffs_decision_desc: "Onlara emirlerimi uygulayacak temsilciler göndererek hane üyelerimin benimle uyum içerisinde hareket etmelerini sağlayabilir, böylelikle ülke genelinde barışı güçlendirebilirim."
  unity_send_bailiffs_decision_tooltip: "Diyar genelinde kontrolü arttırmak adına hane üyelerinizle iş birliği yapın"
  unity_send_bailiffs_decision_confirm: "Temsilciler gönder."
-
+  
  unity_placate_vassals_decision: "Vasalları Yatıştır"
  unity_placate_vassals_decision_desc: "En uyumlu haneler bile zamanı geldiğinde çeşitli zorluklarla karşılaşır. Hane reisi olarak nüfuzumu kullanmalı, büyük krizlere dönüşmeden evvel kırgınlıkları önlemeliyim."
  unity_placate_vassals_decision_tooltip: "Hane üyelerinize süzeren olarak otoritenizi hatırlatın"
  unity_placate_vassals_decision_confirm: "Vasalları yatıştırın"
-
+  
  unity_organize_house_for_war_decision: "Hane Üyelerini Savaşa Hazırla"
  unity_organize_house_for_war_decision_desc: "Bir ülkenin güçlenebilmesi için kendini adamış bir lidere ve daha da önemlisi bu liderin önderliğinde yapılan başarılı fetihlere ihtiyaç vardır. Hane üyelerine rehberlik ederek onların savaşlar açıp yeni topraklar fethetmelerini sağlayabilirim."
  unity_organize_house_for_war_decision_tooltip: "Hane üyelerinize daha sık savaş ilan etmeleri için rehberlik edin"
  unity_organize_house_for_war_decision_confirm: "Savaş ve kan!"
-
+  
  unity_encourage_house_economy_decision: "Hane Üyelerini Ekonomiyi Güçlendirmeleri için Teşvik Et"
  unity_encourage_house_economy_decision_desc: "Bir ülke ancak sahip olduğu topraklar kadar güçlüdür. Tüm hane üyelerimin gerekli bütçeleri ayırarak daha güçlü bir ülke oluşturmayı hedeflediğinden emin olmalıyım."
  unity_encourage_house_economy_decision_tooltip: "Hane üyelerinize ekonomiye odaklanmaları için rehberlik edin"
  unity_encourage_house_economy_decision_confirm: "Daha güçlü bir ekonomi!"
-
+  
  unity_promote_development_decision: "Gelişmişliği Teşvik Et"
  unity_promote_development_decision_desc: "Kültürümüz, nesillerdir mükemmel idari yetenekleriyle bilinir. Hanemizde çok sayıda becerikli denetimci yer alıyor. Bu durumdan faydalanarak ülkemizi güçlendirebiliriz."
  unity_promote_development_decision_tooltip: "Hane üyelerinize ülkeyi geliştirmeleri için rehberlik edin"
  unity_promote_development_decision_confirm: "Gelişmişliği teşvik et"
-
+  
  unity_improve_logistics_decision: "Ordu Lojistik Paylaşımı Talep Et"
  unity_improve_logistics_decision_desc: "Savaşlarda birçok farklı faktör vardır. İyi bir lojistik ağı ve erzak tedariki, en az güçlü askerlere sahip olmak kadar önemlidir. Hane içerisinde her üyenin birbiriyle erzak ve ekipman paylaşımında bulunmasını zorunlu hâle getirerek ordularımızın daha etkili olmasını sağlayabilirim."
  unity_improve_logistics_decision_tooltip: "Hane üyelerinizden lojistik ve erzak paylaşımını talep ederek ordunun ihtiyaçlarını karşılayın"
  unity_improve_logistics_decision_confirm: "Lojistik paylaşımı talep et"
-
+  
  unity_steer_house_direction_decision: "Hane Birliğine Yön Ver"
  unity_steer_house_direction_decision_desc: "Hane reisi olarak, sözlerim hane üyeleri arasında büyük bir etkiye sahiptir. Doğru kelimeleri kullanarak hane üyelerimin istediğim şekilde hareket etmelerini sağlayabilir, birliğimize yön verebilirim."
  unity_steer_house_direction_decision_confirm: "$unity_steer_house_direction_decision$"
@@ -331,7 +345,7 @@
  steer_unity_towards_antagonistic_passive_loss_tt: "[house_unity|E] #V 10#! yıl boyunca yıllık olarak #N azalma eğiliminde olacak#!"
  steer_unity_towards_antagonistic_toast: "[Select_CString( ROOT.Char.IsLocalPlayer, '', ROOT.Char.GetShortUINameNoTooltip )][Select_CString( ROOT.Char.IsLocalPlayer, '', ' ' )][Concept( 'house_unity', 'Hane Birliğini' )|E][Select_CString( ROOT.Char.IsLocalPlayer, 'zi', '' )] $antagonistic$ olmaya yaklaştırdı[Select_CString( ROOT.Char.IsLocalPlayer, 'nız', '' )]"
  steer_unity_notification_title: "[house_head|E] [Concept( 'unity', 'Birliği' )|E] değiştirdi"
-
+  
  unity_consult_house_decision: "Hane Üyelerine Tavsiyelerde Bulun"
  unity_consult_house_decision_desc: "Konsey birlik olması durumunda daha hızlı ve güvenli bir şekilde hareket edebilir. Biraz uğraşla, hane üyelerimin konseydeki görevlerini daha etkili bir şekilde yerine getirmelerini sağlayabilirim."
  unity_consult_house_decision.tt_house_council_bonus: "[Concept( 'council', 'Konseyde' )|E] yer alan [house|E] üyelerinin [Concept( 'councillor_tasks', 'Konsey Görevlerinde' )|E] temel ilerleme ve [skill|E] etkisi #P +10%#! artar"
@@ -341,7 +355,7 @@
  unity_consult_house_decision_tooltip: "Hane üyelerinize daha iyi birer konsey üyeleri olmaları için rehberlik edin"
  unity_consult_house_decision_confirm: "Hane üyelerine tavsiyelerde bulun"
  unity_consulted_house_member_desc: "Hane Üyelerine Tavsiyelerde Bulunuldu"
-
+  
  unity_establish_futuwaa_lodges_decision: "Fütüvvet Teşkilâtını Kur"
  unity_establish_futuwaa_lodges_decision_desc_intro: "Gençler"
  unity_establish_futuwaa_lodges_decision_desc_outro: "[ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] sokaklarında enerjilerini yönlendirebilecekleri bir aktivite bulmakta zorlanıyor, çeteler oluşturarak etrafa zarar veriyorlar. Bunun yerine bir #italic fütüvvet#! teşkilâtı kurarak boş zamanlarını dövüş becerisi ve ahlâk eğitimiyle değerlendirmelerini sağlayabiliriz."
@@ -357,7 +371,7 @@
  unity_establish_futuwaa_lodges_decision.tt_num_men: "$unity_establish_futuwaa_lodges_decision.tt_num_intro$ erkek $unity_establish_futuwaa_lodges_decision.tt_num_outro$"
  unity_establish_futuwaa_lodges_decision_tooltip: "Başkentteki gençliğe rehberlik et"
  unity_establish_futuwaa_lodges_decision_confirm: "Teşkilâta destek ol"
-
+  
  unity_educate_youth_in_madrasas_decision.t_intro: "Gençleri"
  unity_educate_youth_in_madrasas_decision.t_madrasas: "Medreselerde Eğit"
  unity_educate_youth_in_madrasas_decision.t_houses_of_worship: "İbadethanelerde Eğit"
@@ -375,45 +389,52 @@
  unity_educate_youth_in_madrasas_decision.tt_num_men: "$unity_educate_youth_in_madrasas_decision.tt_num_intro$ erkek $unity_educate_youth_in_madrasas_decision.tt_num_outro$"
  unity_educate_youth_in_madrasas_decision_tooltip: "Başkentteki gençliğe felsefe ve tıp eğitimi ver"
  unity_educate_youth_in_madrasas_decision_confirm: "[ROOT.Char.GetFaith.PriestNeuterPlural] eğitime başlasın"
-
+  
  default_tax_collector: "Temel Vergiler"
  default_tax_collector_desc: "Temel [obligations|E], [Concept( 'tax_collector', 'Tahsildarın' )|E] [Concept( 'aptitude', 'Yatkınlığı' )|E] doğrultusunda uygulanır"
  default_tax_collector_flavor_desc: "Standart vergilendirme. Vergi mükellefleri mükellef olduklarından ne fazla vergi verirler ne de az."
-
+  
  jizya_special_rights_tax_collector: "Cizye Statüsü"
  jizya_special_rights_tax_collector_desc: "#emphasis #bold [vassal|E] Ayrıcalıkları:#!#!\n[liege|E], [Concept( 'vassal', 'Vasaldan' )|E] [Concept( 'demand_conversion', 'din değiştirmesini' )|E] talep edemez\n[liege|E], [Concept( 'vassal', 'Vasalın' )|E] topraklarındaki [Concept( 'convert_county', 'kontluklarda din değiştiremez' )|E]\n[liege|E], unvan feshederken [Concept( 'tyranny', 'tiranlıktan' )|E] kaçınmak için [Concept( 'faith', 'mezhebi' )|E] gerekçe gösteremez\n\n#flavor [Concept( 'vassal', 'Vasalın' )|E] [Concept( 'titles', 'unvanları' )|E] üzerindeki sahipliği garantiye alınır; [liege|E], [Concept( 'revoke_title_reason', 'unvan fesih sebebine' )|E] sahip olsa bile unvanları feshedemez.\nVasal ayrıca korunan, özel bir statüdedir. Diyar onların kendi [Concept( 'faith', 'mezheplerine' )|E] inanma hakkını tanır.#!"
  jizya_special_rights_tax_collector_flavor_desc: "Cizye, dini azınlıklar olan #italic zimmiler#! için, inançlarını yaşama özgürlüğü karşısında ödedikleri özel bir vergi türüdür."
  unlock_jizya_contract_name: "[GetFaithDoctrine('tenet_tax_nonbelievers').GetBaseName] [core_tenet|E]"
-
-
+  
+ jizya_special_rights: "$jizya_special_rights_tax_collector$" #NT!
+ jizya_special_rights_default: "Varsayılan $jizya_special_rights$" #NT!
+ jizya_special_rights_default_short: "Varsayılan" #NT!
+ jizya_special_rights_granted: "Uygulandı $jizya_special_rights$" #NT!
+ jizya_special_rights_granted_desc: "$jizya_special_rights_tax_collector_desc$" #NT!
+ jizya_special_rights_granted_short: "İmtiyazlı" #NT!
+  
+  
  iqta_special_rights_tax_collector: "İkta"
  iqta_special_rights_tax_collector_desc: "#flavor [vassal|E] daha az yükümlülüğe sahiptir fakat [Concept( 'liege', 'süzerenine' )|E], [men_at_arms|E] konusunda katkı sağlar.#!"
  iqta_special_rights_tax_collector_flavor_desc: "İkta, yerel yöneticilerin devlet adına vergi toplama yetkisinin olduğu vergilendirme sistemidir."
-
-
+  
+  
  ghazi_special_rights_tax_collector: "Gazi Statüsü"
  ghazi_special_rights_tax_collector_desc: "#emphasis #bold [vassal|E] Ayrıcalıkları:#!#!\n[vassal|E], [holy_war|E] ilan ederken daha az [piety|E] harcar fakat diğer [Concept( 'casus_bellis', 'Savaş Sebeplerinde' )|E] daha fazla [prestige_i][prestige|E] kaybeder\n\n#flavor [vassal|E], [liege|E] tarafından [Concept( 'faith', 'Mezhebin' )|E] savaşçısı olarak seçilmiştir, [holy_wars|E] açarak kâfirlere karşı fetihler yapması beklenir.#!"
  ghazi_special_rights_tax_collector_flavor_desc: "Gaziler yaptıkları yağmalarla gelir elde eder, devletin dini düşmanlarına karşı bitmek bilmeyen bir savaş yürütürler."
-
-
+  
+  
  deqhan_special_rights_tax_collector: "Dihkan"
  deqhan_special_rights_tax_collector_flavor_desc: "Antik, merkeziyetçilikten uzak bu vergi sisteminde dihkanlar kendi topraklarını yöneterek itibarlarını yükseltmeye çalışır."
-
+  
  maguh_special_rights_tax_collector: "Maguh Statüsü"
  maguh_special_rights_tax_collector_flavor_desc: "Sasanilere dayanan bu vergi sisteminde Maguhlar daha az vergi ödeme karşılığında bölgenin gelişmişliğine katkıda bulunurlar."
-
+  
  muqata_special_rights_tax_collector: "Mukata Statüsü"
  muqata_special_rights_tax_collector_flavor_desc: "Mukata vergi sisteminde başkente uzak topraklara özerklik tanınıp daha az vergi alınır, bunun karşılığında istikrar ve uzun vadeli bir gelişmişlik sağlanır."
-
+  
  strict_taxation_tax_collector: "Zekât"
  strict_taxation_tax_collector_flavor_desc: "Zekât vergisi, genellikle varlıklı kişilerin devlete ve ihtiyaç sahiplerine ödediği vergidir."
-
+  
  clan_tax_slot: "Vergi Grubu"
-
+  
  has_house_unity_parameter: "$PARAMETER_NAME$ sahibi"
  not_has_house_unity_parameter: "$PARAMETER_NAME$ erişilebilir değil"
-
- # Administrative
+  
+  # Administrative 
  administrative_government: "İdari"
  administrative_government_with_icon: "@government_type_administrative! $administrative_government$"
  administrative_government_adjective: "İdari"
@@ -456,8 +477,8 @@
  admin_theme_imperial_valid_desc: "Sadece bir [vassal.Custom( 'GetProvinceConceptNoTooltip' )] bu yönetimi aktif hale getirebilir"
  admin_theme_naval_valid_desc: "[vassal.Custom( 'GetProvinceConceptNoTooltip' )] denize kıyı olmalıdır"
  admin_contract_forbids_revocation_desc: "You cannot revoke [titles|E] or Appointments from a [vassal|E] governing with the [GetVassalContractType( 'administrative_themes' ).GetObligationName( 'admin_theme_imperial' )] unless you have a [revoke_title_reason|E]"
- 
- # Landless Adventurer Camps
+  
+  # Landless Adventurer Camps 
  landless_adventurer_government: "Maceracı"
  landless_adventurer_government_with_icon: "@government_type_adventurer! $landless_adventurer_government$"
  landless_adventurer_government_adjective: "Maceracı"
@@ -467,4 +488,3 @@
  adventurer_rule: "[gold|E] ve [prestige|E], [task_contracts|E] tamamlanarak kazanılabilir"
  mercenary_rule: "[landed|E] [rulers|E] tarafından [mercenaries|E] olarak kiralanabilirler"
  adult_rulers_only: "#N Sadece [adults|E] yönetebilir#!"
- 

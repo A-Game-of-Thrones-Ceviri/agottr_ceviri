@@ -1,108 +1,112 @@
 ﻿l_english:
-#MUSTAFA++
-agot_trial_by_combat.0000.t:0 "Dövüşle Yargılanma"
-
-agot_trial_by_combat.0001.opening:0 "[recipient.Custom2('AppropriateGreeting',actor)]"
-agot_trial_by_combat.0001.desc:0 "Suçların için yargılanmayacaksın, burada çürüyerek öleceksin."
-agot_trial_by_combat.0001.a:0 "Sen, şu [recipient.Custom('InsultAdjective')] [recipient.Custom('InsultNoun')]!"
-
-agot_trial_by_combat.0002.trigger_failure.actor:0 "Dövüşle yargılanmam geçersiz sayıldı."
-agot_trial_by_combat.0002.trigger_failure.recipient:0 "[actor.GetFirstNameNoTooltipPossessive] dövüşle yargılanması geçersiz sayıldı."
-
-agot_trial_by_combat.1000.t:0 "$agot_trial_by_combat.0000.t$: Şampiyon Seçimi"
-agot_trial_by_combat.1000.desc:0 "[actor.GetTitledFirstNamePossessive] dövüşle yargılanma talebini kabul ettim. \n\nGelenek gereği, benim adıma dövüşecek bir şampiyon seçmem gerekiyor, ancak kimi seçmeliyim?"
-agot_trial_by_combat.1000.bout_moves_forward:0 "Dövüşle yargılanma devam ediyor..."
-agot_trial_by_combat.1000.a:0 "...en uygun seçimdir."
-agot_trial_by_combat.1000.a.tt:0 "Seçtiğiniz şampiyon sizin için dövüşecek."
-agot_trial_by_combat.1000.b:0 "Şampiyonum olması için bir paralı asker tutacağım."
-agot_trial_by_combat.1000.b.tt:0 "Sizin için savaşması için yerel bir paralı askere ödeme yapacaksınız."
-agot_trial_by_combat.1000.c:0 "Kendim dövüşeceğim."
-agot_trial_by_combat.1000.c.tt:0 "Dövüşle yargılanmada kendinizi savunacaksınız." 
-agot_trial_by_combat.1000.d:0 "Ateş benim şampiyonum olacak!"
-agot_trial_by_combat.1000.d.targ:0 "Ateş, Targaryen Hanesi'nin kadim şampiyonudur!"
-agot_trial_by_combat.1000.d.tt:0 "[actor.GetTitledFirstName] ve şampiyonu alevler içinde can verecek."
-agot_trial_by_combat.1000.e:0 "[dragon.GetFirstName] benim şampiyonum olacak!"
-agot_trial_by_combat.1000.e.targ:0 "Ejderha, Targaryen Hanesi'nin kudretli şampiyonudur!"
-agot_trial_by_combat.1000.e.tt:0 "[actor.GetTitledFirstName] ve şampiyonu [dragon.GetName] tarafından diri diri yakılacak." 
-
-agot_trial_by_combat.1001.desc:0 "Özgürlüğümü kazanmak için önce bu dövüşle yargılanmayı kazanmalıyım.\n\nBenim adıma savaşacak bir şampiyon seçebilirim, ancak kimi seçmeliyim?" 
-
-# Dövüşle yargılanma başlamak üzere, savunma yapanın bakış açısı
-agot_trial_by_combat.2000.t:0 "$agot_trial_by_combat.0000.t$: [duel_location.GetBaseNameNoTierNoTooltip] konumunda Dövüşle Yargılanma"
-agot_trial_by_combat.2000.desc.intro:0 "[duel_location.GetBaseNameNoTier] yakınlarındaki dövüş alanına, zincirlerimle getiriliyorum. [recipient.GetTitledFirstName] ve az sayıda tanık orada beni bekliyor."
-agot_trial_by_combat.2000.desc.recipient_fighting:0 "Suçlamaları reddediyorum ve [recipient.GetTitledFirstName], bu yargılamayı bizzat üstleneceğini ilan ediyor. Gözlerinde kararlı bir parıltı var."
-agot_trial_by_combat.2000.desc.recipient_has_champion:0 "Şampiyonu [recipient_champion.GetFirstNameNoTooltip], zırhlarıyla parıldayarak yanında duruyor."
-agot_trial_by_combat.2000.desc.actor_fighting:0 "Kendi adıma savaşacağım. Zincirlerim çözülürken, elime tutuşturulan silahın ağırlığını hissediyorum. Zırhım bedenime ağırca oturuyor."
-agot_trial_by_combat.2000.desc.actor_has_champion:0 "Şampiyonum [actor_champion.GetFirstNameNoTooltip] hazır. Zırhı ışıldıyor, bakışları keskin."
-agot_trial_by_combat.2000.desc.outro:0 "\n\nGergin bir sessizlik çöküyor. Tören kısa. Hepimiz neden burada olduğumuzu biliyoruz. Sözler bitti, şimdi çelik konuşacak."
-agot_trial_by_combat.2000.a:0 "Kazanan Haklı Olan Olsun."
-agot_trial_by_combat.2000.a.tt:0 "Dövüşle yargılanma başlıyor!" 
-
-# Dövüşle yargılanma başlamak üzere, suçlayanın bakış açısı
-agot_trial_by_combat.2001.t:0 "$agot_trial_by_combat.0000.t$: [duel_location.GetBaseNameNoTierNoTooltip]"
-agot_trial_by_combat.2001.desc.intro:0 "[actor.GetTitledFirstName], yargılanması için [duel_location.GetBaseNameNoTier] yakınlarındaki dövüş alanına zincirlenmiş olarak getirildi."
-agot_trial_by_combat.2001.desc.actor_fighting:0 "Bu yargılamayı şahsen yapmayı seçti, bu yüzden bir şampiyon beklememize gerek yok."
-agot_trial_by_combat.2001.desc.actor_has_champion:0 "Seçtiği şampiyon [actor_champion.GetTitledFirstName] kısa süre sonra alana geliyor."
-agot_trial_by_combat.2001.desc.recipient_fighting:0 "[actor.GetTitledFirstNamePossessive] suçluluğunu şahsen kanıtlama şansını sabırsızlıkla bekliyorum."
-agot_trial_by_combat.2001.desc.recipient_has_champion:0 "[recipient.GetTitledFirstName] yanımda duruyor ve düellonun başlamasını bekliyor, böylece [actor.GetTitledFirstNamePossessive] suçluluğunu kanıtlayabilirim." 
-agot_trial_by_combat.2001.desc.outro:0 "\n\nResmiyet kısa sürüyor. Hepimiz neden burada olduğumuzu biliyoruz ve konuşmanın bir anlamı kalmadı." 
-agot_trial_by_combat.2001.a:0 "Kazanan Haklı Olan Olsun."
-agot_trial_by_combat.2001.a.tt:0 "Dövüşle yargılanma başlıyor!" 
-
-# Savunan/oyuncu kazanır, savunan/oyuncunun bakış açısı
-agot_trial_by_combat.3001.t:0 "$agot_trial_by_combat.0000.t$: Zafer!"
-agot_trial_by_combat.3001.desc.intro:0 "[actor.GetFaith.PantheonTerm|U] dün bana kesin bir zafer bahşetti!"
-agot_trial_by_combat.3001.desc.both_fighting:0 "Silahımı indirdiğimde, [recipient.GetName] yere yığılıyor. Nefes nefese bir süre öylece duruyorum, zafer kazandığımı anlayana kadar! Tanrılar duamı kabul etti ve haklılığımı tüm dünyaya gösterdi!"
-agot_trial_by_combat.3001.desc.actor_own_champion:0 "Silahımı indirdiğimde, [recipient_champion.GetName] yere yığılıyor. Nefes nefese, ayrılmadan önce bir an duruyorum ve başımı kaldırdığımda [recipient.GetName] adlı kişinin bana baktığını görüyorum. Gözlerinin içine bakarak zaferimin tadını çıkarıyorum ve ardından oradan ayrılıyorum." 
-agot_trial_by_combat.3001.desc.recipient_own_champion:0 "[recipient.GetName], şampiyonum [actor_champion.GetName] tarafından öldürüldüğünde, İnsanların ve Tanrıların önünde haklılığım kanıtlanmış bir şekilde dimdik ayakta duruyorum!"
-agot_trial_by_combat.3001.desc.both_champion:0 "[recipient_champion.GetName], [actor_champion.GetName] tarafından mağlup edildiğinde, İnsanların ve Tanrıların huzurunda masumiyetim kanıtlanmış olarak gururla ayakta duruyorum! [recipient.GetName] bana bakarken, yüzüne zafer dolu bir sırıtış gönderiyorum."
-agot_trial_by_combat.3001.desc.outro:0 "\n\n[actor.GetFaith.PantheonTerm], elbette aramızdaki bu anlaşmazlığa adil bir şekilde hüküm verecekti. Bu yüzden davayı onun önüne getirdik. Ve O, bilgece cevap verdi."
-agot_trial_by_combat.3001.a:0 "Adalet yerini buldu." 
-
-# Savunan/oyuncu kazanır, suçlayan/alıcının bakış açısı
-agot_trial_by_combat.3002.t:0 "$agot_trial_by_combat.0000.t$: Yenilgi!"
-agot_trial_by_combat.3002.desc.intro:0 "[recipient.GetFaith.PantheonTerm|U] dün bana yüz çevirdi." agot_trial_by_combat.3002.desc.actor_own_champion:0 "Soylu şampiyonum [recipient_champion.GetName], alçak [actor.GetName] tarafından acımasızca yere serildiğinde içimden derin bir inilti yükseliyor. Tanrılar beni neden terk etti? Yere çökmüş, bitkin bedenime doğru eğilen [actor.GetNamePossessive] yüzünde alaycı bir sırıtış görüyorum. Zafer sarhoşu bir şekilde eğilip saygılarını sunuyor, ardından beni kaderimle baş başa bırakıp uzaklaşıyor." agot_trial_by_combat.3002.desc.both_champion:0 "Cesur şampiyonum [recipient_champion.GetName], alçak [actor.GetNamePossessive] şampiyonu [actor_champion.GetName] adlı kişinin kudreti karşısında yere serildiğinde, içimi derin bir umutsuzluk kaplıyor. Tanrılar neden dualarıma cevap vermedi? \n\n[actor.GetName], zaferinin tadını çıkararak yanıma yaklaşıyor. Yüzünde zaferden doğan kibirli bir sırıtışla bana doğru eğiliyor ve soğuk bir nezaketle saygılarını sunuyor, ardından arkasını dönüp zaferinin coşkusuyla uzaklaşıyor." agot_trial_by_combat.3002.desc.outro:0 "\n\n[actor.GetFaith.PantheonTerm], önüne serdiğimiz bu kutsal mücadelede tarafını belli etti ve kararını aleyhimize verdi. Hanemiz, Tanrıların gazabına uğrayacak kadar ne gibi bir günah işlemiş olabilir?" agot_trial_by_combat.3002.a:0 "Böyle bir adaletsizlik olamaz! Bu düelloda hak yerini bulmadı!"
-
-# Suçlayan/alıcı kazanır, suçlayan/alıcının bakış açısı
-agot_trial_by_combat.3003.t:0 "$agot_trial_by_combat.0000.t$: Zafer!"
-agot_trial_by_combat.3003.desc.intro:0 "[recipient.GetFaith.PantheonTerm|U] dün bana kesin bir zafer bahşetti!" agot_trial_by_combat.3003.desc.both_fighting:0 "Silahımı indirdiğimde, [actor.GetName] yere yığılıyor. Nefes nefese bir süre öylece duruyorum, zafer kazandığımı anlayana kadar! Tanrılar duamı kabul etti ve haklılığımı kanıtladı!"
-agot_trial_by_combat.3003.desc.actor_own_champion:0 "[actor.GetName], şampiyonum [recipient_champion.GetName] tarafından öldürüldüğünde, İnsanların ve Tanrıların önünde haklılığım kanıtlanmış bir şekilde dimdik ayakta duruyorum!"
-agot_trial_by_combat.3003.desc.recipient_own_champion:0 "Silahımı indirdiğimde, [actor_champion.GetName] yere yığılıyor. Nefes nefese, ayrılmadan önce bir an duruyorum ve başımı kaldırdığımda [actor.GetName] adlı kişinin bana baktığını görüyorum. Gözlerinin içine bakarak zaferimin tadını çıkarıyorum." 
-agot_trial_by_combat.3003.desc.both_champion:0 "[actor_champion.GetName], [recipient_champion.GetName] tarafından mağlup edildiğinde, İnsanların ve Tanrıların huzurunda masumiyetim kanıtlanmış olarak gururla ayakta duruyorum! Ayrılırken, [actor.GetName] adlı kişinin bana baktığını fark ediyorum. Göz göze geldiğimizde, yüzünde beliren ifadeye karşılık hafif bir tebessümle karşılık veriyorum."
-agot_trial_by_combat.3003.desc.outro:0 "\n\nDün, [actor.GetFaith.PantheonTerm], aramızdaki anlaşmazlığa adil bir şekilde hüküm verdi."
-agot_trial_by_combat.3003.a:0 "Adalet yerini buldu."
-
-# Suçlayan/alıcı kazanır, savunan/oyuncunun bakış açısı
-agot_trial_by_combat.3004.t:0 "$agot_trial_by_combat.0000.t$: Yenilgi!"
-agot_trial_by_combat.3004.desc.intro:0 "Bu nasıl olabilir? Adalet için [actor.GetFaith.PantheonTerm], aramızda hüküm verecekti!" 
-agot_trial_by_combat.3004.desc.recipient_own_champion:0 "Şampiyonum [actor_champion.GetName], [recipient_champion.GetName] tarafından öldürüldüğünde, lanet olası [recipient.GetName] hala ayaktaydı ve bana sırıtıyordu."
-agot_trial_by_combat.3004.desc.both_champion:0 "Şampiyonum [actor_champion.GetName], [recipient_champion.GetName] tarafından öldürüldüğünde, lanet olası [recipient.GetName] dimdik ayaktaydı ve yüzüme sırıtıyordu."
-agot_trial_by_combat.3004.desc.outro:0 "\n\nŞimdi tüm dünya meselelerimizin çözüldüğünü ve adaletin yerini bulduğunu sanıyor."
-agot_trial_by_combat.3004.a:0 "Burada adalet falan yok!" 
-
-agot_trial_by_combat.9000.t:0 "Dövüşle Yargılama"
-agot_trial_by_combat.9000.desc:0 "Dövüşle yargılanmamın yapılacağı yere, ellerim zincirlerle bağlı bir şekilde hapishaneden getiriliyorum. Ancak beni bir savaş alanı değil, iki odun yığını karşılıyor; şampiyonum [actor_champion.GetTitledFirstName] çoktan bunlardan birine bağlanmış.\n\n"Bugün şampiyonun olarak ateşi seçtim!" diye haykırıyor [recipient.GetTitledFirstName], delice bir kahkaha atarak." 
-agot_trial_by_combat.9000.desc.self_champion:0 "Dövüşle yargılanmamın yapılacağı yere zincirlenmiş olarak hapishaneden getiriliyorum. Ancak bir savaş alanı yerine hazır bir odun yığını buluyorum ve gardiyanlar beni ona doğru sürüklemeye başlıyor.\n\n"Bugün şampiyonum olarak ateşi seçtim," diyor [recipient.GetTitledFirstName] çılgınca kahkaha atarak."
-agot_trial_by_combat.9000.a:0 "Orospu çocuğu!!!"
-
-agot_trial_by_combat.9001.t:0 "Dövüşle Yargılama"
-agot_trial_by_combat.9001.desc:0 "[actor_champion.GetTitledFirstName] geldiğinde, hazırlıklarım tamamlanmıştı. Muhafızlarıma onu önceden hazırlattığım iki odun yığınından birine bağlamalarını emrediyorum ve ardından [actor.GetTitledFirstName] içeri giriyor.\n\nKarşısındaki manzarayı idrak ettiğinde yüzünde beliren ifade görülmeye değerdi.\n\n"Bugün şampiyonun olarak ateşi seçtim!" diye ilan ediyorum. "Artık başlayabiliriz."" 
-agot_trial_by_combat.9001.desc.self_champion:0 "Odun yığını hazırlanır hazırlanmaz, [actor.GetTitledFirstName] huzuruma getiriliyor.\n\nOdun yığınını ve alevleri gördüğünde yüzündeki ifade görülmeye değerdi.\n\n"Bugün şampiyonun olarak ateşi seçtim!" diye bildiriyorum. "Başlayabiliriz.""
-agot_trial_by_combat.9001.a:0 "Muhteşem!"
-agot_trial_by_combat.9001.tt:0 "[actor.GetTitledFirstName] ve şampiyonu [actor_champion.GetTitledFirstName] alevler içinde can veriyor."
-agot_trial_by_combat.9001.tt.self_champion:0 "[actor.GetTitledFirstName] alevler içinde can veriyor."
-
-agot_trial_by_combat.9100.t:0 "Dövüşle Yargılama"
-agot_trial_by_combat.9100.desc:0 "Dövüşle yargılanmamın yapılacağı yere zincirlenmiş olarak hapishaneden getiriliyorum. Ancak vardığımda, [dragon.GetName] ve [recipient.GetTitledFirstName] yan yana duruyorlar!\n\n"Bugün şampiyonum [dragon.GetFirstNameNoTooltip] olacak!" diye ilan ediyor [recipient.GetTitledFirstNameNoTooltip] alaycı bir sırıtışla. Şampiyonum [actor_champion.GetFirstName], karşısında bir ejderha görünce dehşete kapılıyor."
-agot_trial_by_combat.9100.desc.self_champion:0 "Dövüşle yargılanmamın yapılacağı yere zincirlenmiş olarak hapishaneden getiriliyorum. Ancak vardığımda, [dragon.GetName] ve [recipient.GetTitledFirstName] yan yana duruyorlar!\n\n"Bugün şampiyonum [dragon.GetFirstNameNoTooltip] olacak!" diye ilan ediyor [recipient.GetTitledFirstNameNoTooltip] alaycı bir sırıtışla. Bir ejderhayla yüzleşmek zorunda kalacağımı fark ettiğimde, dehşet içimi kaplıyor."
-agot_trial_by_combat.9100.a:0 "Lanet olsun!!!"
-
-agot_trial_by_combat.9101.t:0 "Dövüşle Yargılama"
-agot_trial_by_combat.9101.desc:0 "[dragon.GetFirstName], avının kokusunu aldığında hafifçe homurdanıyor ve havayı büyük burun delikleriyle süzüyor. [actor_champion.GetTitledFirstName] geldiğinde yüzündeki ifade her şeyi anlatıyor. Umut ikisinin de gözlerinden hızla kayboluyor, geriye sadece korku ve umutsuzluk kalıyor.\n\n"[dragon.GetFirstNameNoTooltip] bugün benim şampiyonum olacak!" diye ilan ediyorum, elimle ejderhayı işaret ederek. "Artık başlayabiliriz."" 
-agot_trial_by_combat.9101.desc.self_champion:0 "[dragon.GetFirstName], avının kokusunu aldığında hafifçe homurdanıyor ve havayı büyük burun delikleriyle süzüyor. [actor.GetTitledFirstName] geldiğinde yüzündeki ifade her şeyi anlatıyor. Umut gözlerinden hızla kayboluyor, geriye sadece korku ve umutsuzluk kalıyor.\n\n"[dragon.GetFirstNameNoTooltip] bugün benim şampiyonum olacak!" diye ilan ediyorum, elimle ejderhayı işaret ederek. "Artık başlayabiliriz."
-agot_trial_by_combat.9101.a:0 "Sonuç başından belliydi, ama yine de izlenmesi keyifliydi." 
-agot_trial_by_combat.9101.tt:0 "[actor.GetTitledFirstName] ve şampiyonu [actor_champion.GetTitledFirstName], [dragon.GetName] adlı ejderhanın alevleri tarafından diri diri yakılıyor." 
-agot_trial_by_combat.9101.tt.self_champion:0 "[actor.GetTitledFirstName], [dragon.GetName] adlı ejderhanın alevleri tarafından diri diri yakılıyor."
-
-lost_trial_by_combat_opinion:0 "Dövüşle Yargılamayı Kaybetti"
-denied_trial_by_combat_opinion:0 "Dövüşle Yargılanmamı Reddetti"
+ agot_trial_by_combat.0000.t: "Dövüşle Yargılanma"
+  
+ agot_trial_by_combat.0001.opening: "[recipient.Custom2('AppropriateGreeting',actor)]"
+ agot_trial_by_combat.0001.desc: "Suçların için yargılanmayacaksın, burada çürüyerek öleceksin."
+ agot_trial_by_combat.0001.a: "Sen, şu [recipient.Custom('InsultAdjective')] [recipient.Custom('InsultNoun')]!"
+  
+ agot_trial_by_combat.0002.trigger_failure.actor: "Dövüşle yargılanmam geçersiz sayıldı."
+ agot_trial_by_combat.0002.trigger_failure.recipient: "[actor.GetFirstNameNoTooltipPossessive] dövüşle yargılanması geçersiz sayıldı."
+  
+ agot_trial_by_combat.1000.t: "$agot_trial_by_combat.0000.t$: Şampiyon Seçimi"
+ agot_trial_by_combat.1000.desc: "[actor.GetTitledFirstNamePossessive] dövüşle yargılanma talebini kabul ettim. \n\nGelenek gereği, benim adıma dövüşecek bir şampiyon seçmem gerekiyor, ancak kimi seçmeliyim?"
+ agot_trial_by_combat.1000.bout_moves_forward: "Dövüşle yargılanma devam ediyor..."
+ agot_trial_by_combat.1000.a: "...en uygun seçimdir."
+ agot_trial_by_combat.1000.a.tt: "Seçtiğiniz şampiyon sizin için dövüşecek."
+ agot_trial_by_combat.1000.b: "Şampiyonum olması için bir paralı asker tutacağım."
+ agot_trial_by_combat.1000.b.tt: "Sizin için savaşması için yerel bir paralı askere ödeme yapacaksınız."
+ agot_trial_by_combat.1000.c: "Kendim dövüşeceğim."
+ agot_trial_by_combat.1000.c.tt: "Dövüşle yargılanmada kendinizi savunacaksınız."
+ agot_trial_by_combat.1000.d: "Ateş benim şampiyonum olacak!"
+ agot_trial_by_combat.1000.d.targ: "Ateş, Targaryen Hanesi'nin kadim şampiyonudur!"
+ agot_trial_by_combat.1000.d.tt: "[actor.GetTitledFirstName] ve şampiyonu alevler içinde can verecek."
+ agot_trial_by_combat.1000.e: "[dragon.GetFirstName] benim şampiyonum olacak!"
+ agot_trial_by_combat.1000.e.targ: "Ejderha, Targaryen Hanesi'nin kudretli şampiyonudur!"
+ agot_trial_by_combat.1000.e.tt: "[actor.GetTitledFirstName] ve şampiyonu [dragon.GetName] tarafından diri diri yakılacak."
+  
+ agot_trial_by_combat.1001.desc: "Özgürlüğümü kazanmak için önce bu dövüşle yargılanmayı kazanmalıyım.\n\nBenim adıma savaşacak bir şampiyon seçebilirim, ancak kimi seçmeliyim?"
+  
+  # TbC about to begin, defender POV 
+ agot_trial_by_combat.2000.t: "$agot_trial_by_combat.0000.t$: [duel_location.GetBaseNameNoTierNoTooltip] konumunda Dövüşle Yargılanma"
+ agot_trial_by_combat.2000.desc.intro: "[duel_location.GetBaseNameNoTier] yakınlarındaki dövüş alanına, zincirlerimle getiriliyorum. [recipient.GetTitledFirstName] ve az sayıda tanık orada beni bekliyor."
+ agot_trial_by_combat.2000.desc.recipient_fighting: "Suçlamaları reddediyorum ve [recipient.GetTitledFirstName], bu yargılamayı bizzat üstleneceğini ilan ediyor. Gözlerinde kararlı bir parıltı var."
+ agot_trial_by_combat.2000.desc.recipient_has_champion: "Şampiyonu [recipient_champion.GetFirstNameNoTooltip], zırhlarıyla parıldayarak yanında duruyor."
+ agot_trial_by_combat.2000.desc.actor_fighting: "Kendi adıma savaşacağım. Zincirlerim çözülürken, elime tutuşturulan silahın ağırlığını hissediyorum. Zırhım bedenime ağırca oturuyor."
+ agot_trial_by_combat.2000.desc.actor_has_champion: "Şampiyonum [actor_champion.GetFirstNameNoTooltip] hazır. Zırhı ışıldıyor, bakışları keskin."
+ agot_trial_by_combat.2000.desc.outro: "\n\nGergin bir sessizlik çöküyor. Tören kısa. Hepimiz neden burada olduğumuzu biliyoruz. Sözler bitti, şimdi çelik konuşacak."
+ agot_trial_by_combat.2000.a: "Kazanan Haklı Olan Olsun."
+ agot_trial_by_combat.2000.a.tt: "Dövüşle yargılanma başlıyor!"
+  
+   # TbC about to begin, accuser POV 
+ agot_trial_by_combat.2001.t: "$agot_trial_by_combat.0000.t$: [duel_location.GetBaseNameNoTierNoTooltip]"
+ agot_trial_by_combat.2001.desc.intro: "[actor.GetTitledFirstName], yargılanması için [duel_location.GetBaseNameNoTier] yakınlarındaki dövüş alanına zincirlenmiş olarak getirildi."
+ agot_trial_by_combat.2001.desc.actor_fighting: "Bu yargılamayı şahsen yapmayı seçti, bu yüzden bir şampiyon beklememize gerek yok."
+ agot_trial_by_combat.2001.desc.actor_has_champion: "Seçtiği şampiyon [actor_champion.GetTitledFirstName] kısa süre sonra alana geliyor."
+ agot_trial_by_combat.2001.desc.recipient_fighting: "[actor.GetTitledFirstNamePossessive] suçluluğunu şahsen kanıtlama şansını sabırsızlıkla bekliyorum."
+ agot_trial_by_combat.2001.desc.recipient_has_champion: "[recipient.GetTitledFirstName] yanımda duruyor ve düellonun başlamasını bekliyor, böylece [actor.GetTitledFirstNamePossessive] suçluluğunu kanıtlayabilirim."
+ agot_trial_by_combat.2001.desc.outro: "\n\nResmiyet kısa sürüyor. Hepimiz neden burada olduğumuzu biliyoruz ve konuşmanın bir anlamı kalmadı."
+ agot_trial_by_combat.2001.a: "Kazanan Haklı Olan Olsun."
+ agot_trial_by_combat.2001.a.tt: "Dövüşle yargılanma başlıyor!"
+  
+  #Defender/actor wins, defender/actor POV 
+ agot_trial_by_combat.3001.t: "$agot_trial_by_combat.0000.t$: Zafer!"
+ agot_trial_by_combat.3001.desc.intro: "[actor.GetFaith.PantheonTerm|U] dün bana kesin bir zafer bahşetti!"
+ agot_trial_by_combat.3001.desc.both_fighting: "Silahımı indirdiğimde, [recipient.GetName] yere yığılıyor. Nefes nefese bir süre öylece duruyorum, zafer kazandığımı anlayana kadar! Tanrılar duamı kabul etti ve haklılığımı tüm dünyaya gösterdi!"
+ agot_trial_by_combat.3001.desc.actor_own_champion: "Silahımı indirdiğimde, [recipient_champion.GetName] yere yığılıyor. Nefes nefese, ayrılmadan önce bir an duruyorum ve başımı kaldırdığımda [recipient.GetName] adlı kişinin bana baktığını görüyorum. Gözlerinin içine bakarak zaferimin tadını çıkarıyorum ve ardından oradan ayrılıyorum."
+ agot_trial_by_combat.3001.desc.recipient_own_champion: "[recipient.GetName], şampiyonum [actor_champion.GetName] tarafından öldürüldüğünde, İnsanların ve Tanrıların önünde haklılığım kanıtlanmış bir şekilde dimdik ayakta duruyorum!"
+ agot_trial_by_combat.3001.desc.both_champion: "[recipient_champion.GetName], [actor_champion.GetName] tarafından mağlup edildiğinde, İnsanların ve Tanrıların huzurunda masumiyetim kanıtlanmış olarak gururla ayakta duruyorum! [recipient.GetName] bana bakarken, yüzüne zafer dolu bir sırıtış gönderiyorum."
+ agot_trial_by_combat.3001.desc.outro: "\n\n[actor.GetFaith.PantheonTerm], elbette aramızdaki bu anlaşmazlığa adil bir şekilde hüküm verecekti. Bu yüzden davayı onun önüne getirdik. Ve O, bilgece cevap verdi."
+ agot_trial_by_combat.3001.a: "Adalet yerini buldu."
+  
+  #Defender/actor wins, accuser/recipient POV 
+ agot_trial_by_combat.3002.t: "$agot_trial_by_combat.0000.t$: Yenilgi!"
+ agot_trial_by_combat.3002.desc.intro: "[recipient.GetFaith.PantheonTerm|U] dün bana gülmedi." #NT!
+ agot_trial_by_combat.3002.desc.actor_own_champion: "Aşağılık [actor.GetName], [recipient_champion.GetName]'i yarıp geçerken iç çekiyorum. Tanrılar beni neden terk etti? Aşağıya bakan [actor.GetName] bana genişçe sırıtıyor ve ayrılmadan önce alaycı bir şekilde eğiliyor." #NT!
+ agot_trial_by_combat.3002.desc.both_champion: "Aşağılık [actor.GetName]'ın şampiyonu olarak, [actor_champion.GetName] [recipient_champion.GetName]'yi yarıp geçiyor. İç çekiyorum. Tanrılar beni neden terk etti? \n\n[actor.GetName]'a bakan [actor.GetSheHe] sırıtıyor ve ayrılmadan önce alaycı bir şekilde eğiliyor." #NT!
+ agot_trial_by_combat.3002.desc.outro: "\n\nDün, kavgamızı [actor.GetFaith.PantheonTerm]'ın önüne koyduk ve Tanrılar bana karşı cephe aldılar. Evim onların hoşnutsuzluğunu kazanmak için ne yaptı?" #NT!
+ agot_trial_by_combat.3002.a: "Pah, burada adalet yoktu." #NT!
+  
+  #Accuser wins/recipient , accuser/recipient  POV 
+ agot_trial_by_combat.3003.t: "$agot_trial_by_combat.0000.t$: Zafer!"
+ agot_trial_by_combat.3003.desc.intro: "[recipient.GetFaith.PantheonTerm|U] dün bana içtenlikle gülümsedi!" #NT!
+ agot_trial_by_combat.3003.desc.both_fighting: "Silahımı indirdiğimde, [actor.GetName] düşüyor. Kazandığımı fark etmeden önce orada soluk soluğa duruyorum! Tanrılar beni bağışladı ve her zaman haklı olduğumu gösterdi!" #NT!
+ agot_trial_by_combat.3003.desc.actor_own_champion: "[actor.GetName], şampiyonum [recipient_champion.GetName] tarafından öldürüldüğünde, İnsanların ve Tanrıların önünde haklılığım kanıtlanmış bir şekilde dimdik ayakta duruyorum!"
+ agot_trial_by_combat.3003.desc.recipient_own_champion: "Silahımı indirdiğimde, [actor_champion.GetName] yere yığılıyor. Nefes nefese, ayrılmadan önce bir an duruyorum ve başımı kaldırdığımda [actor.GetName] adlı kişinin bana baktığını görüyorum. Gözlerinin içine bakarak zaferimin tadını çıkarıyorum."
+ agot_trial_by_combat.3003.desc.both_champion: "[actor_champion.GetName], [recipient_champion.GetName] tarafından mağlup edildiğinde, İnsanların ve Tanrıların huzurunda masumiyetim kanıtlanmış olarak gururla ayakta duruyorum! Ayrılırken, [actor.GetName] adlı kişinin bana baktığını fark ediyorum. Göz göze geldiğimizde, yüzünde beliren ifadeye karşılık hafif bir tebessümle karşılık veriyorum."
+ agot_trial_by_combat.3003.desc.outro: "\n\nDün, [actor.GetFaith.PantheonTerm], aramızdaki anlaşmazlığa adil bir şekilde hüküm verdi."
+ agot_trial_by_combat.3003.a: "Adalet yerini buldu."
+  
+  #Accuser wins/recipient , defender/actor POV 
+ agot_trial_by_combat.3004.t: "$agot_trial_by_combat.0000.t$: Yenilgi!"
+ agot_trial_by_combat.3004.desc.intro: "Bu nasıl olabilir? Adalet için [actor.GetFaith.PantheonTerm], aramızda hüküm verecekti!"
+ agot_trial_by_combat.3004.desc.recipient_own_champion: "Şampiyonum [actor_champion.GetName], [recipient_champion.GetName] tarafından öldürüldüğünde, lanet olası [recipient.GetName] hala ayaktaydı ve bana sırıtıyordu."
+ agot_trial_by_combat.3004.desc.both_champion: "Şampiyonum [actor_champion.GetName], [recipient_champion.GetName] tarafından öldürüldüğünde, lanet olası [recipient.GetName] dimdik ayaktaydı ve yüzüme sırıtıyordu."
+ agot_trial_by_combat.3004.desc.outro: "\n\nŞimdi tüm dünya meselelerimizin çözüldüğünü ve adaletin yerini bulduğunu sanıyor."
+ agot_trial_by_combat.3004.a: "Burada adalet falan yok!"
+  
+ agot_trial_by_combat.9000.t: "Dövüşle Yargılama"
+ agot_trial_by_combat.9000.desc: "Dövüşle yargılanmamın yapılacağı yere, ellerim zincirlerle bağlı bir şekilde hapishaneden getiriliyorum. Ancak beni bir savaş alanı değil, iki odun yığını karşılıyor; şampiyonum [actor_champion.GetTitledFirstName] çoktan bunlardan birine bağlanmış.\n\n"Bugün şampiyonun olarak ateşi seçtim!" diye haykırıyor [recipient.GetTitledFirstName], delice bir kahkaha atarak."
+ agot_trial_by_combat.9000.desc.self_champion: "Dövüşle yargılanmamın yapılacağı yere zincirlenmiş olarak hapishaneden getiriliyorum. Ancak bir savaş alanı yerine hazır bir odun yığını buluyorum ve gardiyanlar beni ona doğru sürüklemeye başlıyor.\n\n"Bugün şampiyonum olarak ateşi seçtim," diyor [recipient.GetTitledFirstName] çılgınca kahkaha atarak."
+ agot_trial_by_combat.9000.a: "Orospu çocuğu!!!"
+  
+ agot_trial_by_combat.9001.t: "Dövüşle Yargılama"
+ agot_trial_by_combat.9001.desc: "[actor_champion.GetTitledFirstName] geldiğinde, hazırlıklarım tamamlanmıştı. Muhafızlarıma onu önceden hazırlattığım iki odun yığınından birine bağlamalarını emrediyorum ve ardından [actor.GetTitledFirstName] içeri giriyor.\n\nKarşısındaki manzarayı idrak ettiğinde yüzünde beliren ifade görülmeye değerdi.\n\n"Bugün şampiyonun olarak ateşi seçtim!" diye ilan ediyorum. "Artık başlayabiliriz.""
+ agot_trial_by_combat.9001.desc.self_champion: "Odun yığını hazırlanır hazırlanmaz, [actor.GetTitledFirstName] huzuruma getiriliyor.\n\nOdun yığınını ve alevleri gördüğünde yüzündeki ifade görülmeye değerdi.\n\n"Bugün şampiyonun olarak ateşi seçtim!" diye bildiriyorum. "Başlayabiliriz.""
+ agot_trial_by_combat.9001.a: "Muhteşem!"
+ agot_trial_by_combat.9001.tt: "[actor.GetTitledFirstName] ve şampiyonu [actor_champion.GetTitledFirstName] alevler içinde can veriyor."
+ agot_trial_by_combat.9001.tt.self_champion: "[actor.GetTitledFirstName] alevler içinde can veriyor."
+  
+ agot_trial_by_combat.9100.t: "Dövüşle Yargılama"
+ agot_trial_by_combat.9100.desc: "Dövüşle yargılanmamın yapılacağı yere zincirlenmiş olarak hapishaneden getiriliyorum. Ancak vardığımda, [dragon.GetName] ve [recipient.GetTitledFirstName] yan yana duruyorlar!\n\n"Bugün şampiyonum [dragon.GetFirstNameNoTooltip] olacak!" diye ilan ediyor [recipient.GetTitledFirstNameNoTooltip] alaycı bir sırıtışla. Şampiyonum [actor_champion.GetFirstName], karşısında bir ejderha görünce dehşete kapılıyor."
+ agot_trial_by_combat.9100.desc.self_champion: "Dövüşle yargılanmamın yapılacağı yere zincirlenmiş olarak hapishaneden getiriliyorum. Ancak vardığımda, [dragon.GetName] ve [recipient.GetTitledFirstName] yan yana duruyorlar!\n\n"Bugün şampiyonum [dragon.GetFirstNameNoTooltip] olacak!" diye ilan ediyor [recipient.GetTitledFirstNameNoTooltip] alaycı bir sırıtışla. Bir ejderhayla yüzleşmek zorunda kalacağımı fark ettiğimde, dehşet içimi kaplıyor."
+ agot_trial_by_combat.9100.a: "Lanet olsun!!!"
+  
+ agot_trial_by_combat.9101.t: "Dövüşle Yargılama"
+ agot_trial_by_combat.9101.desc: "[dragon.GetFirstName], avının kokusunu aldığında hafifçe homurdanıyor ve havayı büyük burun delikleriyle süzüyor. [actor_champion.GetTitledFirstName] geldiğinde yüzündeki ifade her şeyi anlatıyor. Umut ikisinin de gözlerinden hızla kayboluyor, geriye sadece korku ve umutsuzluk kalıyor.\n\n"[dragon.GetFirstNameNoTooltip] bugün benim şampiyonum olacak!" diye ilan ediyorum, elimle ejderhayı işaret ederek. "Artık başlayabiliriz.""
+ agot_trial_by_combat.9101.desc.self_champion: "[dragon.GetFirstName], avının kokusunu aldığında hafifçe homurdanıyor ve havayı büyük burun delikleriyle süzüyor. [actor.GetTitledFirstName] geldiğinde yüzündeki ifade her şeyi anlatıyor. Umut gözlerinden hızla kayboluyor, geriye sadece korku ve umutsuzluk kalıyor.\n\n"[dragon.GetFirstNameNoTooltip] bugün benim şampiyonum olacak!" diye ilan ediyorum, elimle ejderhayı işaret ederek. "Artık başlayabiliriz."
+ agot_trial_by_combat.9101.a: "Sonuç başından belliydi, ama yine de izlenmesi keyifliydi."
+ agot_trial_by_combat.9101.tt: "[actor.GetTitledFirstName] ve şampiyonu [actor_champion.GetTitledFirstName], [dragon.GetName] adlı ejderhanın alevleri tarafından diri diri yakılıyor."
+ agot_trial_by_combat.9101.tt.self_champion: "[actor.GetTitledFirstName], [dragon.GetName] adlı ejderhanın alevleri tarafından diri diri yakılıyor."
+  
+ lost_trial_by_combat_opinion: "Dövüşle Yargılamayı Kaybetti"
+ denied_trial_by_combat_opinion: "Dövüşle Yargılanmamı Reddetti"
