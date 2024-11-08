@@ -106,25 +106,25 @@
  END_SCHEME_EFFECT: "[Select_CString(SCHEME.GetOwner.IsLocalPlayer, '', SCHEME.GetOwner.GetShortUIName )][Select_CString(SCHEME.GetOwner.IsLocalPlayer, '', ' adlı karakterin ' )][SCHEME.GetFullActionName] sonlandırılacak"
  ENDED_SCHEME_EFFECT: "[Select_CString(SCHEME.GetOwner.IsLocalPlayer, '', SCHEME.GetOwner.GetShortUIName )][Select_CString(SCHEME.GetOwner.IsLocalPlayer, '', ' adlı karakterin ' )][SCHEME.GetFullActionName] sonlandırıldı"
   
- START_SCHEME_AGAINST_CHARACTER_EFFECT_FIRST: "[TARGET_CHARACTER.GetShortUIName]'ye karşı $TYPE$ [scheme|E] başlatıyorum" #NT!
- THEY_START_SCHEME_AGAINST_CHARACTER_EFFECT: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'ye karşı $TYPE$ Planı başlatır" #NT!
- START_SCHEME_AGAINST_CHARACTER_EFFECT_GLOBAL: "[TARGET_CHARACTER.GetShortUIName]'ye karşı $TYPE$ [scheme|E] başlatır" #NT!
- STARTED_SCHEME_AGAINST_CHARACTER_EFFECT: "$TYPE$ [scheme|E]'e karşı [TARGET_CHARACTER.GetShortUIName] başlattım" #NT!
- THEY_STARTED_SCHEME_AGAINST_CHARACTER_EFFECT: "[CHARACTER.GetShortUIName|U], $TYPE$'e [scheme|E]'ye karşı [TARGET_CHARACTER.GetShortUIName]'e başladı" #NT!
- STARTED_SCHEME_AGAINST_CHARACTER_EFFECT_GLOBAL: "$TYPE$ [scheme|E]'e karşı [TARGET_CHARACTER.GetShortUIName] başladı" #NT!
+ START_SCHEME_AGAINST_CHARACTER_EFFECT_FIRST: "[TARGET_CHARACTER.GetShortUIName]'ye karşı $TYPE$ [scheme|E] başlatıyorum"
+ THEY_START_SCHEME_AGAINST_CHARACTER_EFFECT: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'ye karşı $TYPE$ Planı başlatır"
+ START_SCHEME_AGAINST_CHARACTER_EFFECT_GLOBAL: "[TARGET_CHARACTER.GetShortUIName]'ye karşı $TYPE$ [scheme|E] başlatır"
+ STARTED_SCHEME_AGAINST_CHARACTER_EFFECT: "$TYPE$ [scheme|E]'e karşı [TARGET_CHARACTER.GetShortUIName] başlattım"
+ THEY_STARTED_SCHEME_AGAINST_CHARACTER_EFFECT: "[CHARACTER.GetShortUIName|U], $TYPE$'e [scheme|E]'ye karşı [TARGET_CHARACTER.GetShortUIName]'e başladı"
+ STARTED_SCHEME_AGAINST_CHARACTER_EFFECT_GLOBAL: "$TYPE$ [scheme|E]'e karşı [TARGET_CHARACTER.GetShortUIName] başladı"
   
- START_SCHEME_AGAINST_TITLE_EFFECT: "[TARGET_TITLE.GetName]'ye karşı $TYPE$ [scheme|E] başlatır" #NT!
- THEY_START_SCHEME_AGAINST_TITLE_EFFECT: "[CHARACTER.GetShortUIName|U], [TARGET_TITLE.GetName]'ye karşı $TYPE$ Planı başlatır" #NT!
- STARTED_SCHEME_AGAINST_TITLE_EFFECT: "$TYPE$ [scheme|E]'e karşı [TARGET_TITLE.GetName] başladı" #NT!
- START_SCHEME_AGAINST_CULTURE_EFFECT: "[TARGET_CULTURE.GetName]'ye karşı $TYPE$ [scheme|E] başlatır" #NT!
- THEY_START_SCHEME_AGAINST_CULTURE_EFFECT: "[CHARACTER.GetShortUIName|U], [TARGET_CULTURE.GetName]'ye karşı $TYPE$ Planı başlatır" #NT!
- STARTED_SCHEME_AGAINST_CULTURE_EFFECT: "$TYPE$ [scheme|E]'e karşı [TARGET_CULTURE.GetName] başladı" #NT!
- START_SCHEME_AGAINST_FAITH_EFFECT: "[FAITH.GetName]'ye karşı $TYPE$ [scheme|E] başlatır" #NT!
- THEY_START_SCHEME_AGAINST_FAITH_EFFECT: "[CHARACTER.GetShortUIName|U], [FAITH.GetName]'ye karşı $TYPE$ Planı başlatır" #NT!
- STARTED_SCHEME_AGAINST_FAITH_EFFECT: "$TYPE$ [scheme|E]'e karşı [FAITH.GetName] başladı" #NT!
- START_SCHEME_AGAINST_NOTHING_EFFECT: "$TYPE$ [scheme|E] başlatır" #NT!
- THEY_START_SCHEME_AGAINST_NOTHING_EFFECT: "[CHARACTER.GetShortUIName|U] bir $TYPE$ Şeması başlatır" #NT!
- STARTED_SCHEME_AGAINST_NOTHING_EFFECT: "$TYPE$ [scheme|E] başlatıldı" #NT!
+ START_SCHEME_AGAINST_TITLE_EFFECT: "[TARGET_TITLE.GetName]'ye karşı $TYPE$ [scheme|E] başlatır"
+ THEY_START_SCHEME_AGAINST_TITLE_EFFECT: "[CHARACTER.GetShortUIName|U], [TARGET_TITLE.GetName]'ye karşı $TYPE$ Planı başlatır"
+ STARTED_SCHEME_AGAINST_TITLE_EFFECT: "$TYPE$ [scheme|E]'e karşı [TARGET_TITLE.GetName] başladı"
+ START_SCHEME_AGAINST_CULTURE_EFFECT: "[TARGET_CULTURE.GetName]'ye karşı $TYPE$ [scheme|E] başlatır"
+ THEY_START_SCHEME_AGAINST_CULTURE_EFFECT: "[CHARACTER.GetShortUIName|U], [TARGET_CULTURE.GetName]'ye karşı $TYPE$ Planı başlatır"
+ STARTED_SCHEME_AGAINST_CULTURE_EFFECT: "$TYPE$ [scheme|E]'e karşı [TARGET_CULTURE.GetName] başladı"
+ START_SCHEME_AGAINST_FAITH_EFFECT: "[FAITH.GetName]'ye karşı $TYPE$ [scheme|E] başlatır"
+ THEY_START_SCHEME_AGAINST_FAITH_EFFECT: "[CHARACTER.GetShortUIName|U], [FAITH.GetName]'ye karşı $TYPE$ Planı başlatır"
+ STARTED_SCHEME_AGAINST_FAITH_EFFECT: "$TYPE$ [scheme|E]'e karşı [FAITH.GetName] başladı"
+ START_SCHEME_AGAINST_NOTHING_EFFECT: "$TYPE$ [scheme|E] başlatır"
+ THEY_START_SCHEME_AGAINST_NOTHING_EFFECT: "[CHARACTER.GetShortUIName|U] bir $TYPE$ Şeması başlatır"
+ STARTED_SCHEME_AGAINST_NOTHING_EFFECT: "$TYPE$ [scheme|E] başlatıldı"
   
  REMOVE_TERRAIN_MODIFIER_EFFECT: "$TYPE$ Arazi etkisini kaldır"
  ADD_TERRAIN_MODIFIER_EFFECT: "$TYPE$ Arazi etkisi ekle"
@@ -160,11 +160,11 @@
  THEY_HAVE_BEEN_EXPOSED_AS_AGENT_IN_SCHEME_NAME: "[Select_CString(SCHEME.GetTarget.IsLocalPlayer, 'Size', SCHEME.GetTarget.GetShortUIName )][Select_CString(SCHEME.GetTarget.IsLocalPlayer, '', ' adlı karaktere' )] karşı olan [SCHEME.GetName] Planında [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', TARGET_CHARACTER.GetShortUIName )][Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', ' adlı karakterin ' )][agent|E][Select_CString(TARGET_CHARACTER.IsLocalPlayer, ' olduğunuz', ' olduğu' )] ortaya çıkarıldı"
   
  SCHEME_COOLDOWN_EFFECT: "[Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'Size', TARGET_CHARACTER.GetShortUIName )][Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', ' adlı karaktere' )] karşı $DURATION|V$ tarihine kadar $TYPE|V$ başlatamaz"
- SCHEME_COOLDOWN_EFFECT_PAST: "$DURATION|V$'e kadar [TARGET_CHARACTER.GetShortUIName]'ye karşı $TYPE|V$ [scheme|E] başlatılamaz" #NT!
- add_scheme_cooldown_third: "$SCHEME_COOLDOWN_EFFECT$" #NT!
- add_scheme_cooldown_global: "$SCHEME_COOLDOWN_EFFECT$" #NT!
- add_scheme_cooldown_third_past: "$SCHEME_COOLDOWN_EFFECT_PAST$" #NT!
- add_scheme_cooldown_global_past: "$SCHEME_COOLDOWN_EFFECT_PAST$" #NT!
+ SCHEME_COOLDOWN_EFFECT_PAST: "$DURATION|V$'e kadar [TARGET_CHARACTER.GetShortUIName]'ye karşı $TYPE|V$ [scheme|E] başlatılamaz"
+ add_scheme_cooldown_third: "$SCHEME_COOLDOWN_EFFECT$"
+ add_scheme_cooldown_global: "$SCHEME_COOLDOWN_EFFECT$"
+ add_scheme_cooldown_third_past: "$SCHEME_COOLDOWN_EFFECT_PAST$"
+ add_scheme_cooldown_global_past: "$SCHEME_COOLDOWN_EFFECT_PAST$"
  SCHEME_EXPOSE_CHARACTER_EFFECT: "[CHARACTER.GetShortUIName] adlı karakterin [SCHEME.GetName|V]na dâhil olduğunu açığa çıkartacak."
  REMOVE_CHARACTER_FLAG_EFFECT: "$FLAG$ bayrağını kaybedecek"
  REMOVE_CHARACTER_MODIFIER_EFFECT: "$MODIFIER$ etkisini kaybedecek"
@@ -222,28 +222,28 @@
  START_WAR_EFFECT_FIRST: "[TARGET_CHARACTER.GetShortUIName] adlı karaktere karşı "$CASUS_BELLI$" [casus_belli|E] ile bir savaş başlatacaksınız"
  START_WAR_EFFECT_THIRD: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName] adlı karaktere karşı "$CASUS_BELLI$" [casus_belli|E] ile bir savaş başlatacak"
  START_WAR_EFFECT: "[Select_CString(CHARACTER.IsLocalPlayer, '', CHARACTER.GetShortUIName )][Select_CString(CHARACTER.IsLocalPlayer, '', ', ' )][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'size', TARGET_CHARACTER.GetShortUIName )][Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', ' adlı karaktere' )] karşı "$CASUS_BELLI$" [casus_belli|E] ile bir savaş başlatacak[Select_CString(CHARACTER.IsLocalPlayer, 'sınız', '' )]"
- START_WAR_EFFECT_FIRST_PAST: "$CASUS_BELLI$ [casus_belli|E] ile [TARGET_CHARACTER.GetShortUIName]'a karşı bir savaş başlattın" #NT!
- START_WAR_EFFECT_THIRD_PAST: "[CHARACTER.GetShortUIName|U], $CASUS_BELLI$ [casus_belli|E] ile [TARGET_CHARACTER.GetShortUIName]'e karşı bir savaş başlattı" #NT!
- START_WAR_EFFECT_PAST: "[CHARACTER.GetShortUIName|U], $CASUS_BELLI$ [casus_belli|E] ile [TARGET_CHARACTER.GetShortUIName]'e karşı bir savaş başlattı" #NT!
+ START_WAR_EFFECT_FIRST_PAST: "$CASUS_BELLI$ [casus_belli|E] ile [TARGET_CHARACTER.GetShortUIName]'a karşı bir savaş başlattın"
+ START_WAR_EFFECT_THIRD_PAST: "[CHARACTER.GetShortUIName|U], $CASUS_BELLI$ [casus_belli|E] ile [TARGET_CHARACTER.GetShortUIName]'e karşı bir savaş başlattı"
+ START_WAR_EFFECT_PAST: "[CHARACTER.GetShortUIName|U], $CASUS_BELLI$ [casus_belli|E] ile [TARGET_CHARACTER.GetShortUIName]'e karşı bir savaş başlattı"
   
  END_WAR_ATTACKER_VICTORY: "[Select_CString(WAR.GetActiveCB.GetAttacker.IsLocalPlayer, '', WAR.GetActiveCB.GetAttacker.GetUIName )][Select_CString(WAR.GetActiveCB.GetAttacker.IsLocalPlayer, '', ' ' )][WAR.GetName] adlı savaşı kazanacak[Select_CString(WAR.GetActiveCB.GetAttacker.IsLocalPlayer, 'sınız', '' )]"
- END_WAR_ATTACKER_VICTORY_FIRST: "[WAR.GetActiveCB.GetAttacker.GetUIName|U] kazan [WAR.GetName]" #NT!
- END_WAR_ATTACKER_VICTORY_THIRD: "[WAR.GetActiveCB.GetAttacker.GetUIName], [WAR.GetName]'i kazanır" #NT!
- ENDED_WAR_ATTACKER_VICTORY: "[WAR.GetActiveCB.GetAttacker.GetUIName|U] [WAR.GetName]'i kazandı" #NT!
- ENDED_WAR_ATTACKER_VICTORY_FIRST: "[WAR.GetActiveCB.GetAttacker.GetUIName|U] [WAR.GetName]'i kazandı" #NT!
- ENDED_WAR_ATTACKER_VICTORY_THIRD: "[WAR.GetActiveCB.GetAttacker.GetUIName|U] [WAR.GetName]'i kazandı" #NT!
+ END_WAR_ATTACKER_VICTORY_FIRST: "[WAR.GetActiveCB.GetAttacker.GetUIName|U] kazan [WAR.GetName]"
+ END_WAR_ATTACKER_VICTORY_THIRD: "[WAR.GetActiveCB.GetAttacker.GetUIName], [WAR.GetName]'i kazanır"
+ ENDED_WAR_ATTACKER_VICTORY: "[WAR.GetActiveCB.GetAttacker.GetUIName|U] [WAR.GetName]'i kazandı"
+ ENDED_WAR_ATTACKER_VICTORY_FIRST: "[WAR.GetActiveCB.GetAttacker.GetUIName|U] [WAR.GetName]'i kazandı"
+ ENDED_WAR_ATTACKER_VICTORY_THIRD: "[WAR.GetActiveCB.GetAttacker.GetUIName|U] [WAR.GetName]'i kazandı"
  END_WAR_EFFECT_WHITE_PEACE: "[WAR.GetName|V] savaşı [white_peace|E] ile bitecek"
- END_WAR_EFFECT_WHITE_PEACE_FIRST: "$END_WAR_EFFECT_WHITE_PEACE$" #NT!
- END_WAR_EFFECT_WHITE_PEACE_THIRD: "$END_WAR_EFFECT_WHITE_PEACE$" #NT!
- ENDED_WAR_EFFECT_WHITE_PEACE: "[WAR.GetName|V], [white_peace|E] ile sona erdi" #NT!
- ENDED_WAR_EFFECT_WHITE_PEACE_FIRST: "$ENDED_WAR_EFFECT_WHITE_PEACE$" #NT!
- ENDED_WAR_EFFECT_WHITE_PEACE_THIRD: "$ENDED_WAR_EFFECT_WHITE_PEACE$" #NT!
+ END_WAR_EFFECT_WHITE_PEACE_FIRST: "$END_WAR_EFFECT_WHITE_PEACE$"
+ END_WAR_EFFECT_WHITE_PEACE_THIRD: "$END_WAR_EFFECT_WHITE_PEACE$"
+ ENDED_WAR_EFFECT_WHITE_PEACE: "[WAR.GetName|V], [white_peace|E] ile sona erdi"
+ ENDED_WAR_EFFECT_WHITE_PEACE_FIRST: "$ENDED_WAR_EFFECT_WHITE_PEACE$"
+ ENDED_WAR_EFFECT_WHITE_PEACE_THIRD: "$ENDED_WAR_EFFECT_WHITE_PEACE$"
  END_WAR_DEFENDER_VICTORY: "[Select_CString(WAR.GetActiveCB.GetDefender.IsLocalPlayer, '', WAR.GetActiveCB.GetDefender.GetUIName )][Select_CString(WAR.GetActiveCB.GetDefender.IsLocalPlayer, '', ' ' )][WAR.GetName] adlı savaşı kazanacak[Select_CString(WAR.GetActiveCB.GetDefender.IsLocalPlayer, 'sınız', '' )]"
- END_WAR_DEFENDER_VICTORY_FIRST: "[WAR.GetActiveCB.GetDefender.GetUIName|U] kazan [WAR.GetName]" #NT!
- END_WAR_DEFENDER_VICTORY_THIRD: "[WAR.GetActiveCB.GetDefender.GetUIName], [WAR.GetName]'i kazanır" #NT!
- ENDED_WAR_DEFENDER_VICTORY: "[WAR.GetActiveCB.GetDefender.GetUIName|U] [WAR.GetName]'i kazandı" #NT!
- ENDED_WAR_DEFENDER_VICTORY_FIRST: "[WAR.GetActiveCB.GetDefender.GetUIName|U] [WAR.GetName]'i kazandı" #NT!
- ENDED_WAR_DEFENDER_VICTORY_THIRD: "[WAR.GetActiveCB.GetDefender.GetUIName|U] [WAR.GetName]'i kazandı" #NT!
+ END_WAR_DEFENDER_VICTORY_FIRST: "[WAR.GetActiveCB.GetDefender.GetUIName|U] kazan [WAR.GetName]"
+ END_WAR_DEFENDER_VICTORY_THIRD: "[WAR.GetActiveCB.GetDefender.GetUIName], [WAR.GetName]'i kazanır"
+ ENDED_WAR_DEFENDER_VICTORY: "[WAR.GetActiveCB.GetDefender.GetUIName|U] [WAR.GetName]'i kazandı"
+ ENDED_WAR_DEFENDER_VICTORY_FIRST: "[WAR.GetActiveCB.GetDefender.GetUIName|U] [WAR.GetName]'i kazandı"
+ ENDED_WAR_DEFENDER_VICTORY_THIRD: "[WAR.GetActiveCB.GetDefender.GetUIName|U] [WAR.GetName]'i kazandı"
   
  END_WAR_INVALIDATED: "[WAR.GetName|V] savaşı sonuçsuz bitecek"
  SET_CASUS_BELLI_EFFECT: "[WAR.GetName|V] savaşı $CASUS_BELLI|V$ Savaşı'na dönüşecek"
@@ -376,20 +376,20 @@
  THEY_GAINED_DREAD_EFFECT: "[CHARACTER.GetShortUIName|U], $VALUE|V0$ [dread|E] kazandı"
  THEY_LOST_DREAD_EFFECT: "[CHARACTER.GetShortUIName|U], $VALUE|V0$ [dread|E] kaybetti"
   
- ADD_PROVISIONS_EFFECT_POSITIVE: "$NAME$ alır [provisions_i]$VALUE|+0$ [provisions|E]" #NT!
- ADD_PROVISIONS_EFFECT_NEGATIVE: "$NAME$ kaybeder [provisions_i]$VALUE|-0$ [provisions|E]" #NT!
- I_GAIN_PROVISIONS_EFFECT: "[provisions_i]$VALUE|+0$ [provisions|E] kazanırsınız" #NT!
- I_LOSE_PROVISIONS_EFFECT: "Kaybedersin [provisions_i]$VALUE|-0$ [provisions|E]" #NT!
- GAIN_PROVISIONS_EFFECT: "Kazançlar [provisions_i]$VALUE|+0$ [provisions|E]" #NT!
- LOSE_PROVISIONS_EFFECT: "Kaybeder [provisions_i]$VALUE|-0$ [provisions|E]" #NT!
- GAINED_PROVISIONS_EFFECT: "Kazanıldı [provisions_i]$VALUE|+0$ [provisions|E]" #NT!
- LOST_PROVISIONS_EFFECT: "Kayıp [provisions_i]$VALUE|-0$ [provisions|E]" #NT!
- THEY_GAIN_PROVISIONS_EFFECT: "[DOMICILE.GetOwner.GetShortUIName|U] kazanç[_s(DOMICILE.GetOwner)] [provisions_i]$VALUE|+0$ [provisions|E]" #NT!
- THEY_LOSE_PROVISIONS_EFFECT: "[DOMICILE.GetOwner.GetShortUIName|U] kaybetme[_s(DOMICILE.GetOwner)] [provisions_i]$VALUE|-0$ [provisions|E]" #NT!
- I_GAINED_PROVISIONS_EFFECT: "[provisions_i]$VALUE|+0$ [provisions|E] kazandınız" #NT!
- I_LOST_PROVISIONS_EFFECT: "Kaybettin [provisions_i]$VALUE|-0$ [provisions|E]" #NT!
- THEY_GAINED_PROVISIONS_EFFECT: "[DOMICILE.GetOwner.GetShortUIName|U] kazanıldı [provisions_i]$VALUE|+0$ [provisions|E]" #NT!
- THEY_LOST_PROVISIONS_EFFECT: "[DOMICILE.GetOwner.GetShortUIName|U] kayıp [provisions_i]$VALUE|-0$ [provisions|E]" #NT!
+ ADD_PROVISIONS_EFFECT_POSITIVE: "$NAME$ alır [provisions_i]$VALUE|+0$ [provisions|E]"
+ ADD_PROVISIONS_EFFECT_NEGATIVE: "$NAME$ kaybeder [provisions_i]$VALUE|-0$ [provisions|E]"
+ I_GAIN_PROVISIONS_EFFECT: "[provisions_i]$VALUE|+0$ [provisions|E] kazanırsınız"
+ I_LOSE_PROVISIONS_EFFECT: "Kaybedersin [provisions_i]$VALUE|-0$ [provisions|E]"
+ GAIN_PROVISIONS_EFFECT: "Kazançlar [provisions_i]$VALUE|+0$ [provisions|E]"
+ LOSE_PROVISIONS_EFFECT: "Kaybeder [provisions_i]$VALUE|-0$ [provisions|E]"
+ GAINED_PROVISIONS_EFFECT: "Kazanıldı [provisions_i]$VALUE|+0$ [provisions|E]"
+ LOST_PROVISIONS_EFFECT: "Kayıp [provisions_i]$VALUE|-0$ [provisions|E]"
+ THEY_GAIN_PROVISIONS_EFFECT: "[DOMICILE.GetOwner.GetShortUIName|U] kazanç[_s(DOMICILE.GetOwner)] [provisions_i]$VALUE|+0$ [provisions|E]"
+ THEY_LOSE_PROVISIONS_EFFECT: "[DOMICILE.GetOwner.GetShortUIName|U] kaybetme[_s(DOMICILE.GetOwner)] [provisions_i]$VALUE|-0$ [provisions|E]"
+ I_GAINED_PROVISIONS_EFFECT: "[provisions_i]$VALUE|+0$ [provisions|E] kazandınız"
+ I_LOST_PROVISIONS_EFFECT: "Kaybettin [provisions_i]$VALUE|-0$ [provisions|E]"
+ THEY_GAINED_PROVISIONS_EFFECT: "[DOMICILE.GetOwner.GetShortUIName|U] kazanıldı [provisions_i]$VALUE|+0$ [provisions|E]"
+ THEY_LOST_PROVISIONS_EFFECT: "[DOMICILE.GetOwner.GetShortUIName|U] kayıp [provisions_i]$VALUE|-0$ [provisions|E]"
   
  RANDOM_LIST_EFFECT_HEADER: "#S $DESC$:#!"
  RANDOM_LIST_DEFAULT_DESC: "Gerçekleşebilecek Sonuçlar"
@@ -704,21 +704,21 @@
  THEY_GAIN_POTENTIAL_RIVAL: "[CHARACTER.GetShortUIName|U], [Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'sizinle', TARGET_CHARACTER.GetShortUIName )][Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', ' ile' )] rakip olmaya daha da yaklaşacak[Select_CString(CHARACTER.IsLocalPlayer, 'sınız', '' )]"
  THEY_GAINED_POTENTIAL_RIVAL: "[CHARACTER.GetShortUIName|U], [Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'sizinle', TARGET_CHARACTER.GetShortUIName )][Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', ' ile' )] rakip olmaya daha da yaklaştı[Select_CString(CHARACTER.IsLocalPlayer, 'nız', '' )]"
   
- GAINS_GRUDGE: "[TARGET_CHARACTER.GetShortUIName]'a karşı kin geliştirir" #NT!
- I_GAIN_GRUDGE: "[TARGET_CHARACTER.GetShortUIName]'a karşı kin besliyorsunuz" #NT!
- THEY_GAIN_GRUDGE: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'e karşı kin besler" #NT!
+ GAINS_GRUDGE: "[TARGET_CHARACTER.GetShortUIName]'a karşı kin geliştirir"
+ I_GAIN_GRUDGE: "[TARGET_CHARACTER.GetShortUIName]'a karşı kin besliyorsunuz"
+ THEY_GAIN_GRUDGE: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'e karşı kin besler"
   
- GAINED_GRUDGE: "[TARGET_CHARACTER.GetShortUIName]'a karşı kin geliştirdi" #NT!
- I_GAINED_GRUDGE: "[TARGET_CHARACTER.GetShortUIName]'a karşı bir kin geliştirdin" #NT!
- THEY_GAINED_GRUDGE: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'e karşı kin besledi" #NT!
+ GAINED_GRUDGE: "[TARGET_CHARACTER.GetShortUIName]'a karşı kin geliştirdi"
+ I_GAINED_GRUDGE: "[TARGET_CHARACTER.GetShortUIName]'a karşı bir kin geliştirdin"
+ THEY_GAINED_GRUDGE: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'e karşı kin besledi"
   
- LOSES_GRUDGE: "[TARGET_CHARACTER.GetShortUIName]'a karşı kin bırakır" #NT!
- I_LOSE_GRUDGE: "[TARGET_CHARACTER.GetShortUIName]'a olan kininizi bırakın" #NT!
- THEY_LOSE_GRUDGE: "[CHARACTER.GetShortUIName|U] düşer [CHARACTER.GetHerHis] kin [TARGET_CHARACTER.GetShortUIName]" #NT!
+ LOSES_GRUDGE: "[TARGET_CHARACTER.GetShortUIName]'a karşı kin bırakır"
+ I_LOSE_GRUDGE: "[TARGET_CHARACTER.GetShortUIName]'a olan kininizi bırakın"
+ THEY_LOSE_GRUDGE: "[CHARACTER.GetShortUIName|U] düşer [CHARACTER.GetHerHis] kin [TARGET_CHARACTER.GetShortUIName]"
   
- LOST_GRUDGE: "[TARGET_CHARACTER.GetShortUIName]'a karşı kin düştü" #NT!
- I_LOST_GRUDGE: "[TARGET_CHARACTER.GetShortUIName]'a olan kininizi düşürdünüz" #NT!
- THEY_LOST_GRUDGE: "[CHARACTER.GetShortUIName|U] düştü [CHARACTER.GetHerHis] kin [TARGET_CHARACTER.GetShortUIName]" #NT!
+ LOST_GRUDGE: "[TARGET_CHARACTER.GetShortUIName]'a karşı kin düştü"
+ I_LOST_GRUDGE: "[TARGET_CHARACTER.GetShortUIName]'a olan kininizi düşürdünüz"
+ THEY_LOST_GRUDGE: "[CHARACTER.GetShortUIName|U] düştü [CHARACTER.GetHerHis] kin [TARGET_CHARACTER.GetShortUIName]"
   
  I_GAIN_WEDDING_GOOD_FERTILITY: "[TARGET_CHARACTER.GetShortUIName] ile olan evliliğizden birçok çocuk doğacak gibi görünüyor"
  I_GAINED_WEDDING_GOOD_FERTILITY: "[TARGET_CHARACTER.GetShortUIName] ile olan evliliğizden birçok çocuk doğacak gibi görünüyordu"
@@ -772,7 +772,7 @@
   
  GET_CRUSH: "[Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'Size', TARGET_CHARACTER.GetShortUIName )][Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', ' adlı karaktere' )] âşık olacak[Select_CString(CHARACTER.IsLocalPlayer, 'sınız', '' )]"
  I_GET_CRUSH: "[TARGET_CHARACTER.GetShortUIName] adlı karaktere âşık olacaksınız"
- THEY_GET_CRUSH: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName] üzerinde [crush|E] geliştirir" #NT!
+ THEY_GET_CRUSH: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName] üzerinde [crush|E] geliştirir"
  LOSE_CRUSH: "[Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'Size', TARGET_CHARACTER.GetShortUIName )][Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', ' adlı karaktere' )] âşık olmayı bırakacak[Select_CString(CHARACTER.IsLocalPlayer, 'sınız', '' )]"
  I_LOSE_CRUSH: "[TARGET_CHARACTER.GetShortUIName] adlı karaktere âşık olmayı bırakacaksınız"
   
@@ -1127,10 +1127,10 @@
  FORCE_ADD_TO_SCHEME_THIRD: "[CHARACTER.GetShortUIName|U], $DURATION$ tarihine kadar [Select_CString(SCHEME.GetTarget.IsLocalPlayer, 'size', SCHEME.GetTarget.GetShortUIName )][Select_CString(SCHEME.GetTarget.IsLocalPlayer, '', ' adlı karaktere' )] karşı [SCHEME.GetName] Planına katılmaya zorlandı"
  ADD_TO_SCHEME_THIRD: "[CHARACTER.GetShortUIName|U], [Select_CString(SCHEME.GetTarget.IsLocalPlayer, 'size', SCHEME.GetTarget.GetShortUIName )][Select_CString(SCHEME.GetTarget.IsLocalPlayer, '', ' adlı karaktere' )] karşı gerçekleştirilen [SCHEME.GetName] Planına katılacak"
   
- ADD_AGENT_SLOT: "$CONTRIBUTION_ICON$ $AGENT_SLOT$ [agent|E] yuvasını ekle" #NT!
+ ADD_AGENT_SLOT: "$CONTRIBUTION_ICON$ $AGENT_SLOT$ [agent|E] yuvasını ekle"
   
- ADD_SCHEME_OPPORTUNITIES_THIRD: "[scheme|E] @scheme_opportunity_icon'u elde eder!$VALUE|+0$ [scheme_opportunity_opportunities|E]" #NT!
- REMOVE_SCHEME_OPPORTUNITIES_THIRD: "[scheme|E] harcama @scheme_opportunity_icon!$VALUE|-0$ [scheme_opportunity_opportunities|E]" #NT!
+ ADD_SCHEME_OPPORTUNITIES_THIRD: "[scheme|E] @scheme_opportunity_icon'u elde eder!$VALUE|+0$ [scheme_opportunity_opportunities|E]"
+ REMOVE_SCHEME_OPPORTUNITIES_THIRD: "[scheme|E] harcama @scheme_opportunity_icon!$VALUE|-0$ [scheme_opportunity_opportunities|E]"
   
  DE_JURE_PRESTIGE: "[CHARACTER.GetShortUIName|U], [prestige_i]$VALUE|V0$ prestij kazanacak"
  DE_JURE_PRESTIGE_LOSS: "[CHARACTER.GetShortUIName|U], [prestige_i]$VALUE|V0$ prestij kaybedecek"
@@ -1178,8 +1178,8 @@
   # Yes I know the below is disgusting but I'm sick of the other way not working & staring at that bloody perspective false positive for months on end. 
  CHANGE_COUNTY_CONTROL_NEG: "[control|E] seviyesi #N -#!$VALUE|-0$ değişecek"
  CHANGE_COUNTY_CONTROL_THIRD_NEG: "[TITLE.GetName] yerleşimindeki [control|E] seviyesi #N -#!$VALUE|-0$ değişecek"
- CHANGE_COUNTY_CONTROL_PAST_NEG: "[control|E] seviyesi #N -#!$VALUE|-0$ ile değiştirildi" #NT!
- CHANGE_COUNTY_CONTROL_THIRD_PAST_NEG: "[TITLE.GetName]'deki [control|E] seviyesi #N -#!$VALUE|-0$ ile değiştirildi" #NT!
+ CHANGE_COUNTY_CONTROL_PAST_NEG: "[control|E] seviyesi #N -#!$VALUE|-0$ ile değiştirildi"
+ CHANGE_COUNTY_CONTROL_THIRD_PAST_NEG: "[TITLE.GetName]'deki [control|E] seviyesi #N -#!$VALUE|-0$ ile değiştirildi"
   
  IT_RECEIVES_COUNTY_MODIFIER: "[TITLE.GetName] yerleşimi $MODIFIER|V$ etkisine sahip olacak"
  RECEIVES_COUNTY_MODIFIER: "$MODIFIER|V$ etkisine sahip olacak"
@@ -1323,8 +1323,8 @@
  REMOVE_JOINED_FACTION_DISCONTENT_EFFECT: "Bu karakterin bulunduğu [Concept( 'faction', 'Örgütleşmenin' )|E] [Concept( 'faction_discontent', 'Hoşnutsuzluğu' )|E] $VALUE|V0$ azalacak"
  ADD_JOINED_FACTION_DISCONTENT_EFFECT_THIRD: "[Select_CString(CHARACTER.IsLocalPlayer, '', CHARACTER.GetShortUIName )][Select_CString(CHARACTER.IsLocalPlayer, 'Bulunduğunuz', ' adlı karakterin bulunduğu' )] [Concept( 'factions', 'Örgütleşmelerin' )|E] [Concept( 'faction_discontent', 'Hoşnutsuzluğu' )|E] $VALUE|V0$ artacak"
  REMOVE_JOINED_FACTION_DISCONTENT_EFFECT_THIRD: "[Select_CString(CHARACTER.IsLocalPlayer, '', CHARACTER.GetShortUIName )][Select_CString(CHARACTER.IsLocalPlayer, 'Bulunduğunuz', ' adlı karakterin bulunduğu' )] [Concept( 'factions', 'Örgütleşmelerin' )|E] [Concept( 'faction_discontent', 'Hoşnutsuzluğu' )|E] $VALUE|V0$ azalacak"
- ADD_JOINED_FACTION_DISCONTENT_EFFECT_FIRST: "[CHARACTER.GetShortUINamePossessive|U] [faction|E] kazanç $VALUE|V0$ [faction_discontent|E]" #NT!
- REMOVE_JOINED_FACTION_DISCONTENT_EFFECT_FIRST: "[CHARACTER.GetShortUINamePossessive|U] [faction|E] kaybeder $VALUE|V0$ [faction_discontent|E]" #NT!
+ ADD_JOINED_FACTION_DISCONTENT_EFFECT_FIRST: "[CHARACTER.GetShortUINamePossessive|U] [faction|E] kazanç $VALUE|V0$ [faction_discontent|E]"
+ REMOVE_JOINED_FACTION_DISCONTENT_EFFECT_FIRST: "[CHARACTER.GetShortUINamePossessive|U] [faction|E] kaybeder $VALUE|V0$ [faction_discontent|E]"
   
  ADD_TARGETING_FACTIONS_DISCONTENT_EFFECT: "[Select_CString(CHARACTER.IsLocalPlayer, 'Sizi', CHARACTER.GetShortUIName )][Select_CString(CHARACTER.IsLocalPlayer, '', ' adlı karakteri' )] hedef alan [Concept( 'factions', 'Örgütleşmelerin' )|E] [Concept( 'faction_discontent', 'Hoşnutsuzluğu' )|E] $VALUE|V0$ artacak"
  REMOVE_TARGETING_FACTIONS_DISCONTENT_EFFECT: "Bu karakteri hedef alan [Concept( 'faction', 'Örgütleşmenin' )|E] [Concept( 'faction_discontent', 'Hoşnutsuzluğu' )|E] $VALUE|V0$ azalacak"
@@ -1336,8 +1336,8 @@
  I_JOIN_FACTION_EFFECT: "[FACTION.GetName|V] adlı örgütleşmeye katılacaksınız"
  I_JOINED_FACTION_EFFECT: "[FACTION.GetName|V] adlı örgütleşmeye katıldınız"
  JOIN_FACTION_EFFECT: "[FACTION.GetName|V] adlı örgütleşmeye katılacak[Select_CString(CHARACTER.IsLocalPlayer, 'sınız', '' )]"
- THEY_JOIN_FACTION_EFFECT: "[CHARACTER.GetShortUIName|U], [FACTION.GetName|V]'e katılıyor [faction|E]" #NT!
- THEY_JOINED_FACTION_EFFECT: "[CHARACTER.GetShortUIName|U] [FACTION.GetName|V] [faction|E]'ye katıldı" #NT!
+ THEY_JOIN_FACTION_EFFECT: "[CHARACTER.GetShortUIName|U], [FACTION.GetName|V]'e katılıyor [faction|E]"
+ THEY_JOINED_FACTION_EFFECT: "[CHARACTER.GetShortUIName|U] [FACTION.GetName|V] [faction|E]'ye katıldı"
  JOINED_FACTION_EFFECT: "[FACTION.GetName|V] adlı örgütleşmeye katıldı[Select_CString(CHARACTER.IsLocalPlayer, 'nız', '' )]"
  JOIN_FACTION_FORCED_EFFECT: "[CHARACTER.GetShortUIName|U], [Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'sizin', TARGET_CHARACTER.GetShortUIName )][Select_CString(TARGET_CHARACTER.IsLocalPlayer, ' tarafınızdan', ' tarafından' )] $DURATION|V$ tarihine kadar [FACTION.GetName|V] adlı örgütleşmeye katılmaya zorlandı"
   
@@ -1350,7 +1350,7 @@
  CREATED_FACTION_EFFECT: "[Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'Size', TARGET_CHARACTER.GetShortUIName )][Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', ' adlı karaktere' )] karşı $TYPE|V$ başlattı[Select_CString(CHARACTER.IsLocalPlayer, 'nız', '' )]"
   
  FACTION_STARTS_WAR: "[FACTION.GetName|V] bir savaş başlatacak"
- faction_starts_war.tt.replacement: "[faction.GetName|V] [faction|E] [war|E]'yi başlatır" #NT!
+ faction_starts_war.tt.replacement: "[faction.GetName|V] [faction|E] [war|E]'yi başlatır"
   
  TITLE_JOIN_FACTION: "[TITLE.GetName], [FACTION.GetName|V] adlı örgütleşmeye katılacak"
  TITLE_LEAVE_FACTION: "[TITLE.GetName], [FACTION.GetName|V] adlı örgütleşmeden ayrılacak"
@@ -1380,11 +1380,11 @@
  REMOVE_PARTICIPANT_EFFECT_THIRD: "[CHARACTER.GetUIName], [WAR.GetName|V] adlı savaştan ayrılacak"
   
  ENTERS_SERVICE: "[TARGET_CHARACTER.GetShortUIName|U], [Select_CString(CHARACTER.IsLocalPlayer, 'Sarayınıza', CHARACTER.GetShortUIName )][Select_CString(CHARACTER.IsLocalPlayer, '', ' adlı karakterin Sarayına' )] katılacak[Select_CString(CHARACTER.IsLocalPlayer, 'sınız', '' )]"
- ENTERS_SERVICE_PAST: "[TARGET_CHARACTER.GetShortUIName|U] katıldı [CHARACTER.GetShortUINamePossessive] [court|E]" #NT!
+ ENTERS_SERVICE_PAST: "[TARGET_CHARACTER.GetShortUIName|U] katıldı [CHARACTER.GetShortUINamePossessive] [court|E]"
  ENTERS_MY_SERVICE: "[TARGET_CHARACTER.GetShortUIName|U] Sarayınıza katılacak"
- ENTERS_MY_SERVICE_PAST: "[TARGET_CHARACTER.GetShortUIName|U] [court|E]'inize katıldı" #NT!
+ ENTERS_MY_SERVICE_PAST: "[TARGET_CHARACTER.GetShortUIName|U] [court|E]'inize katıldı"
  ENTERS_THEIR_SERVICE: "[CHARACTER.GetShortUIName|U], [Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'Sarayınıza', TARGET_CHARACTER.GetShortUIName )][Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', ' adlı karakterin Sarayına' )] katılacak"
- ENTERS_THEIR_SERVICE_PAST: "[CHARACTER.GetShortUIName|U] katıldı [TARGET_CHARACTER.GetShortUINamePossessive] [court|E]" #NT!
+ ENTERS_THEIR_SERVICE_PAST: "[CHARACTER.GetShortUIName|U] katıldı [TARGET_CHARACTER.GetShortUINamePossessive] [court|E]"
   
  GIVE_NICKNAME_GLOBAL: "#V '$NICKNAME|U$'#! [Concept( 'nickname', 'Lakabını' )|E] alacak[Select_CString(CHARACTER.IsLocalPlayer, 'sınız', '' )]"
  GIVE_NICKNAME_FIRST: "#V '$NICKNAME|U$'#! [Concept( 'nickname', 'Lakabını' )|E] alacaksınız"
@@ -1418,9 +1418,9 @@
  SET_DESIGNATED_HEIR_FIRST: "[TARGET_CHARACTER.GetShortUIName], belirlenmiş vârisiniz olacak"
  SET_DESIGNATED_HEIR_FIRST_PAST: "[TARGET_CHARACTER.GetShortUIName], sizin belirlenmiş vârisiniz"
  SET_DESIGNATED_HEIR_THIRD: "[Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', TARGET_CHARACTER.GetShortUIName )][Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', ', ' )][CHARACTER.GetShortUIName|U] adlı karakterin belirlenmiş vârisi olacak[Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'sınız', '' )]"
- CLEAR_DESIGNATED_HEIR_GLOBAL: "Artık [designated_heir|E] olmayacak" #NT!
- CLEAR_DESIGNATED_HEIR_FIRST: "Artık [designated_heir|E]'ınız olmayacak" #NT!
- CLEAR_DESIGNATED_HEIR_THIRD: "[CHARACTER.GetShortUIName|U] artık [designated_heir|E]'e sahip olmayacak" #NT!
+ CLEAR_DESIGNATED_HEIR_GLOBAL: "Artık [designated_heir|E] olmayacak"
+ CLEAR_DESIGNATED_HEIR_FIRST: "Artık [designated_heir|E]'ınız olmayacak"
+ CLEAR_DESIGNATED_HEIR_THIRD: "[CHARACTER.GetShortUIName|U] artık [designated_heir|E]'e sahip olmayacak"
   
  DIVORCE_GLOBAL: "[TARGET_CHARACTER.GetUIName] adlı karakterden boşanacak[Select_CString(CHARACTER.IsLocalPlayer, 'sınız', '' )]"
  DIVORCE_FIRST: "[TARGET_CHARACTER.GetUIName] adlı karakterden boşanacaksınız"
@@ -1459,12 +1459,12 @@
  ADD_PRESTIGE_FROM_CONTRIBUTION_THIRD_PAST: "[CHARACTER.GetShortUIName] adlı karakterin müttefikleri [prestige_i]$VALUE|V0$ prestiji katkılarına göre paylaştılar"
  ADD_PRESTIGE_FROM_CONTRIBUTION_PAST: "Müttefikler [prestige_i]$VALUE|V0$ prestiji katkılarına göre paylaştılar"
   
- ADD_PRESTIGE_FROM_CONTRIBUTION_FIRST_NEG: "Katkılarına göre [allies|E] payınız [prestige_i]$VALUE|-0$" #NT!
- ADD_PRESTIGE_FROM_CONTRIBUTION_THIRD_NEG: "[allies|E] / [CHARACTER.GetShortUIName] paylaşım [prestige_i]$VALUE|V0$ katkılarına göre" #NT!
- ADD_PRESTIGE_FROM_CONTRIBUTION_NEG: "[allies|E] paylaşım [prestige_i]$VALUE|V0$ katkılarına göre" #NT!
- ADD_PRESTIGE_FROM_CONTRIBUTION_FIRST_PAST_NEG: "[allies|E]'ınız katkılarına göre [prestige_i]$VALUE|-0$ paylaştı" #NT!
- ADD_PRESTIGE_FROM_CONTRIBUTION_THIRD_PAST_NEG: "[allies|E] / [CHARACTER.GetShortUIName] kişi, katkılarına göre [prestige_i]$VALUE|V0$ kişi paylaştı" #NT!
- ADD_PRESTIGE_FROM_CONTRIBUTION_PAST_NEG: "[allies|E] kişi [prestige_i]$VALUE|V0$ kişi kendi katkılarına göre paylaştı" #NT!
+ ADD_PRESTIGE_FROM_CONTRIBUTION_FIRST_NEG: "Katkılarına göre [allies|E] payınız [prestige_i]$VALUE|-0$"
+ ADD_PRESTIGE_FROM_CONTRIBUTION_THIRD_NEG: "[allies|E] / [CHARACTER.GetShortUIName] paylaşım [prestige_i]$VALUE|V0$ katkılarına göre"
+ ADD_PRESTIGE_FROM_CONTRIBUTION_NEG: "[allies|E] paylaşım [prestige_i]$VALUE|V0$ katkılarına göre"
+ ADD_PRESTIGE_FROM_CONTRIBUTION_FIRST_PAST_NEG: "[allies|E]'ınız katkılarına göre [prestige_i]$VALUE|-0$ paylaştı"
+ ADD_PRESTIGE_FROM_CONTRIBUTION_THIRD_PAST_NEG: "[allies|E] / [CHARACTER.GetShortUIName] kişi, katkılarına göre [prestige_i]$VALUE|V0$ kişi paylaştı"
+ ADD_PRESTIGE_FROM_CONTRIBUTION_PAST_NEG: "[allies|E] kişi [prestige_i]$VALUE|V0$ kişi kendi katkılarına göre paylaştı"
   
  ADD_PIETY_FROM_CONTRIBUTION_FIRST: "Müttefikleriniz [piety_i]$VALUE|+0$ dindarlığı katkılarına göre paylaşacaklar"
  ADD_PIETY_FROM_CONTRIBUTION_THIRD: "[CHARACTER.GetShortUIName] adlı karakterin müttefikleri [piety_i]$VALUE|V0$ dindarlığı katkılarına göre paylaşacaklar"
@@ -1488,7 +1488,7 @@
  ADD_OPINION_FROM_CONTRIBUTION_PAST: "Müttefiklerine karşı olan görüşü onların katkılarına göre arttı"
   
  I_CREATE_CADET_BRANCH: "Mevcut Hanenize ait bir [cadet_branch|E] oluşturacaksınız"
- CREATE_CADET_BRANCH: "Mevcut Evin [cadet_branch|E]'ını oluşturur" #NT!
+ CREATE_CADET_BRANCH: "Mevcut Evin [cadet_branch|E]'ını oluşturur"
  DYNASTY_NO_NAME_GAINS_PRESTIGE_LEVEL_EFFECT: "[dynasty_prestige_level|E] $VALUE|+0$ artacak"
  DYNASTY_NO_NAME_LOSES_PRESTIGE_LEVEL_EFFECT: "[dynasty_prestige_level|E] $VALUE|-0$ azalacak"
   
@@ -1686,9 +1686,9 @@
  ADDED_TITLE_LAW: "[TITLE.GetName|U] unvanı [LAW.GetName|V] verasetini elde etti"
   
  #AGOT Modified 
- #leave_faction_with_cooldown_effect_third.tt: "[CHARACTER.GetShortUIName], #V $VALUE|0$ yıl boyunca başka bir [faction|E]'e katılamaz#!" #NT!
- #leave_faction_with_cooldown_effect_first.tt: "Başka bir [faction|E]'a #V $VALUE|0$ yıl boyunca katılamazsınız#!" #NT!
- #leave_faction_with_cooldown_effect_global.tt: "#V $VALUE|0$ yıl boyunca başka bir [faction|E]'a katılamazsınız#!" #NT!
+ #leave_faction_with_cooldown_effect_third.tt: "[CHARACTER.GetShortUIName], #V $VALUE|0$ yıl boyunca başka bir [faction|E]'e katılamaz#!"
+ #leave_faction_with_cooldown_effect_first.tt: "Başka bir [faction|E]'a #V $VALUE|0$ yıl boyunca katılamazsınız#!"
+ #leave_faction_with_cooldown_effect_global.tt: "#V $VALUE|0$ yıl boyunca başka bir [faction|E]'a katılamazsınız#!"
  leave_faction_with_cooldown_effect_third.tt: "[Select_CString( CHARACTER.IsLocalPlayer, '', CHARACTER.GetShortUIName )][Select_CString( CHARACTER.IsLocalPlayer, '', ' ' )]#V $VALUE|0$ yıl#! boyunca başka bir [Concept( 'faction', 'Örgütleşmeye' )|E] katılamayacak[Select_CString(CHARACTER.IsLocalPlayer, 'sınız', '' )]"
  leave_faction_with_cooldown_effect_first.tt: "#V $VALUE|0$ yıl#! boyunca başka bir [Concept( 'faction', 'Örgütleşmeye' )|E] katılamayacaksınız"
  leave_faction_with_cooldown_effect_global.tt: "#V $VALUE|0$ yıl#! boyunca başka bir [Concept( 'faction', 'Örgütleşmeye' )|E] katılamayacak[Select_CString(CHARACTER.IsLocalPlayer, 'sınız', '' )]"
@@ -1940,7 +1940,7 @@
  I_CAN_USE_CELIBACY_DECISIONS: "[embrace_celibacy|E] ve [abandon_celibacy|E] [Concept( 'decisions', 'Kararlarını' )|E] alabilirsiniz"
  THEY_CAN_USE_CELIBACY_DECISIONS: "[CHARACTER.GetShortUIName|U], [embrace_celibacy|E] ve [abandon_celibacy|E] [Concept( 'decisions', 'Kararlarını' )|E] alabilir"
   
- CAREFREE_PERK_EFFECT: "[GetDecisionWithKey('reject_inheritance_decision').GetName] [decision|E]'i alabilirsiniz" #NT!
+ CAREFREE_PERK_EFFECT: "[GetDecisionWithKey('reject_inheritance_decision').GetName] [decision|E]'i alabilirsiniz"
   
  RECEIVE_WARNING_OF_NATURAL_DEATH: "Doğal sebepler ile [character_death_death|E]e 1 yıl kaldığında bir uyarı alacak"
  I_WILL_RECEIVE_WARNING_OF_NATURAL_DEATH: "Doğal sebepler ile [character_death_death|E]e #V 1#! yıl kaldığında bir uyarı alacaksınız"
@@ -2277,7 +2277,7 @@
  custom.every_same_culture_vassal: "Her [root_culture.GetName] [vassal|E]"
  custom.every_different_culture_vassal: "Her [root_culture.GetName] olmayan [vassal|E]"
  custom.every_vassal_of_liege.tt: "Her eş-[vassal|E]"
- custom.every_admin_vassal: "Her [administrative|E] [vassal|E]" #NT!
+ custom.every_admin_vassal: "Her [administrative|E] [vassal|E]"
  custom.every_attending_character: "Katılan her karakter"
  custom.every_attending_character_but_courtly: "Katılan her [GetVassalStance( 'courtly' ).GetTextIcon][GetVassalStance( 'courtly' ).GetName] olmayan [vassal|E]"
  custom.every_non_callous_or_sadistic_courtier_and_guest: "Duygusuz veya sadist olmayan her [courtier|E] ve [guest|E]"
@@ -2304,23 +2304,23 @@
  custom.every_opposed_interloper_struggle_ruler.supporter: "[GetTrait('fp3_struggle_supporter').GetName( GetNullCharacter )] [struggle_interloper|E] her [ruler|E]"
  custom.every_opposed_involved_struggle_ruler.detractor: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] [struggle_involved|E] her [ruler|E]"
  custom.every_opposed_interloper_struggle_ruler.detractor: "[GetTrait('fp3_struggle_detractor').GetName( GetNullCharacter )] [struggle_interloper|E] her [ruler|E]"
- custom.every_domain_county: "Her [domain|E] [county|E]" #NT!
- custom.every_dynasty_member: "[dynasty|E]'inizin her [character|E]'ı" #NT!
- custom.every_close_or_extended_family_member: "Her [close_family|E] veya [extended_family|E] [character|E]" #NT!
- custom.every_judgemental_close_or_extended_family_member: "Her yargılayıcı [close_family|E] veya [extended_family|E] [character|E]" #NT!
- custom.every_co_vassal_not_arrogant_or_ambitious: "[GetTrait('arrogant').GetName( GetNullCharacter )] veya [GetTrait('ambitious').GetName( GetNullCharacter )] olmayan her akran [vassal|E]" #NT!
- custom.every_co_vassal_not_humble_or_content: "[GetTrait('humble').GetName( GetNullCharacter )] veya [GetTrait('content').GetName( GetNullCharacter )] olmayan her akran [vassal|E]" #NT!
- custom.recipient_every_vassal: "Her [vassal|E] / [recipient.GetTitledFirstName]" #NT!
- custom.every_target_de_jure_vassal: "Her [de_jure|E] [vassal|E] / [target.GetDefinitiveName]" #NT!
- custom.every_scheme_agent_character: "[scheme.GetName] [scheme|E]'deki her [agent|E]" #NT!
- custom.every_adult_follower: "Her [adult|E] [follower|E]" #NT!
- custom.every_follower: "Her [follower|E]" #NT!
- custom.every_callous_follower: "Her [GetTrait('callous').GetName( GetNullCharacter )] [follower|E]" #NT!
- custom.every_compassionate_follower: "Her [GetTrait('compassionate').GetName( GetNullCharacter )] [follower|E]" #NT!
- custom.every_non_callous_or_sadistic_follower: "Her [GetTrait('callous').GetName( GetNullCharacter )] veya [GetTrait('sadistic').GetName( GetNullCharacter )] olmayan [follower|E]" #NT!
- custom.every_other_follower: "Her diğer [follower|E]" #NT!
- custom.every_contact_with_positive_opinion: "Her [contact_list_contact|E] pozitif [opinion|E] ile" #NT!
- custom.every_contact_with_negative_opinion: "Her [contact_list_contact|E] ile negatif [opinion|E]" #NT!
+ custom.every_domain_county: "Her [domain|E] [county|E]"
+ custom.every_dynasty_member: "[dynasty|E]'inizin her [character|E]'ı"
+ custom.every_close_or_extended_family_member: "Her [close_family|E] veya [extended_family|E] [character|E]"
+ custom.every_judgemental_close_or_extended_family_member: "Her yargılayıcı [close_family|E] veya [extended_family|E] [character|E]"
+ custom.every_co_vassal_not_arrogant_or_ambitious: "[GetTrait('arrogant').GetName( GetNullCharacter )] veya [GetTrait('ambitious').GetName( GetNullCharacter )] olmayan her akran [vassal|E]"
+ custom.every_co_vassal_not_humble_or_content: "[GetTrait('humble').GetName( GetNullCharacter )] veya [GetTrait('content').GetName( GetNullCharacter )] olmayan her akran [vassal|E]"
+ custom.recipient_every_vassal: "Her [vassal|E] / [recipient.GetTitledFirstName]"
+ custom.every_target_de_jure_vassal: "Her [de_jure|E] [vassal|E] / [target.GetDefinitiveName]"
+ custom.every_scheme_agent_character: "[scheme.GetName] [scheme|E]'deki her [agent|E]"
+ custom.every_adult_follower: "Her [adult|E] [follower|E]"
+ custom.every_follower: "Her [follower|E]"
+ custom.every_callous_follower: "Her [GetTrait('callous').GetName( GetNullCharacter )] [follower|E]"
+ custom.every_compassionate_follower: "Her [GetTrait('compassionate').GetName( GetNullCharacter )] [follower|E]"
+ custom.every_non_callous_or_sadistic_follower: "Her [GetTrait('callous').GetName( GetNullCharacter )] veya [GetTrait('sadistic').GetName( GetNullCharacter )] olmayan [follower|E]"
+ custom.every_other_follower: "Her diğer [follower|E]"
+ custom.every_contact_with_positive_opinion: "Her [contact_list_contact|E] pozitif [opinion|E] ile"
+ custom.every_contact_with_negative_opinion: "Her [contact_list_contact|E] ile negatif [opinion|E]"
   
  guest_and_family_move_to_specific_pool_effect.tt.family: "[character|E] ve onunla seyahat eden [family|E] üyeleri"
   
@@ -2498,10 +2498,10 @@
   
  PAUSE_TRAVEL_PLAN_EFFECT: "Seyahat planı durdurulacak"
  PAUSE_TRAVEL_PLAN_EFFECT_PAST: "Seyahat planı durduruldu"
- FIRST_PAUSE_TRAVEL_PLAN_EFFECT: "[travel|E]'ınız duraklatılacak" #NT!
- FIRST_PAUSE_TRAVEL_PLAN_EFFECT_PAST: "[travel|E]'ınız duraklatıldı" #NT!
- THIRD_PAUSE_TRAVEL_PLAN_EFFECT: "[CHARACTER.GetNamePossessive] [travel|E] duraklatılacak" #NT!
- THIRD_PAUSE_TRAVEL_PLAN_EFFECT_PAST: "[CHARACTER.GetNamePossessive] [travel|E] duraklatıldı" #NT!
+ FIRST_PAUSE_TRAVEL_PLAN_EFFECT: "[travel|E]'ınız duraklatılacak"
+ FIRST_PAUSE_TRAVEL_PLAN_EFFECT_PAST: "[travel|E]'ınız duraklatıldı"
+ THIRD_PAUSE_TRAVEL_PLAN_EFFECT: "[CHARACTER.GetNamePossessive] [travel|E] duraklatılacak"
+ THIRD_PAUSE_TRAVEL_PLAN_EFFECT_PAST: "[CHARACTER.GetNamePossessive] [travel|E] duraklatıldı"
   
  RESUME_TRAVEL_PLAN_EFFECT: "Seyahat planına devam edilecek"
  RESUME_TRAVEL_PLAN_EFFECT_PAST: "Seyahat planına devam edildi"
@@ -2557,14 +2557,14 @@
   
  I_DESIGNATE_DIARCH: "[TARGET_CHARACTER.GetName] adlı karakteri bir sonraki [CHARACTER.GetDiarchTitle] olarak belirleyeceğim"
  THEY_DESIGNATE_DIARCH: "[CHARACTER.GetName], [TARGET_CHARACTER.GetName] adlı karakteri bir sonraki [CHARACTER.GetDiarchTitle] olarak belirleyecek"
- GLOBAL_DESIGNATE_DIARCH: "[TARGET_CHARACTER.GetName], [CHARACTER.GetNamePossessive] geleceği [CHARACTER.GetDiarchTitle] olarak belirlenmiştir" #NT!
+ GLOBAL_DESIGNATE_DIARCH: "[TARGET_CHARACTER.GetName], [CHARACTER.GetNamePossessive] geleceği [CHARACTER.GetDiarchTitle] olarak belirlenmiştir"
   
  I_DESIGNATED_DIARCH: "[TARGET_CHARACTER.GetName] adlı karakteri bir sonraki [CHARACTER.GetDiarchTitle] olarak belirledim"
  THEY_DESIGNATED_DIARCH: "[CHARACTER.GetName], [TARGET_CHARACTER.GetName] adlı karakteri bir sonraki [CHARACTER.GetDiarchTitle] olarak belirledi"
   
  I_START_DIARCHY: "Diyarımda [CHARACTER.GetDiarchyTypeName] başlayacak"
  THEY_START_DIARCHY: "[CHARACTER.GetName] adlı karakterin ülkesinde [CHARACTER.GetDiarchyTypeName] başlayacak"
- GLOBAL_START_DIARCHY: "$THEY_START_DIARCHY$" #NT!
+ GLOBAL_START_DIARCHY: "$THEY_START_DIARCHY$"
   
  I_STARTED_DIARCHY: "Diyarımda [CHARACTER.GetDiarchyTypeName] başladı"
  THEY_STARTED_DIARCHY: "[CHARACTER.GetName] adlı karakterin ülkesinde [CHARACTER.GetDiarchyTypeName] başladı"
@@ -2587,7 +2587,7 @@
   
  I_SET_DIARCH: "[TARGET_CHARACTER.GetName] ülkemdeki yeni [CHARACTER.GetDiarchTitle] olacak"
  THEY_SET_DIARCH: "[CHARACTER.GetName] adlı karakterin ülkesinde [TARGET_CHARACTER.GetName] yeni [CHARACTER.GetDiarchTitle] olacak"
- GLOBAL_SET_DIARCHY: "$THEY_SET_DIARCH$" #NT!
+ GLOBAL_SET_DIARCHY: "$THEY_SET_DIARCH$"
   
  I_CHANGED_DIARCH: "[TARGET_CHARACTER.GetName] ülkemdeki yeni [CHARACTER.GetDiarchTitle] oldu"
  THEY_CHANGED_DIARCH: "[CHARACTER.GetName] adlı karakterin ülkesinde [TARGET_CHARACTER.GetName] yeni [CHARACTER.GetDiarchTitle] oldu"
@@ -2740,104 +2740,104 @@
  add_legitimacy_increase_level_global_past: "[legitimacy_level|E] artarak $legitmacy_flavor_and_level$ oldu"
  add_legitimacy_increase_level_global_past_neg: "[legitimacy_level|E] azalarak $legitmacy_flavor_and_level$ oldu"
   
- GLOBAL_SET_DOMICILE_OWNER: "#HIGH [DOMICILE.GetName]#! sahibi [TARGET_CHARACTER.GetName] olarak değiştirildi" #NT!
- GLOBAL_SET_DOMICILE_OWNER_PAST: "#HIGH [DOMICILE.GetName]#! sahibi [TARGET_CHARACTER.GetName] olarak değiştirildi" #NT!
+ GLOBAL_SET_DOMICILE_OWNER: "#HIGH [DOMICILE.GetName]#! sahibi [TARGET_CHARACTER.GetName] olarak değiştirildi"
+ GLOBAL_SET_DOMICILE_OWNER_PAST: "#HIGH [DOMICILE.GetName]#! sahibi [TARGET_CHARACTER.GetName] olarak değiştirildi"
   
- I_MOVE_DOMICILE_EFFECT: "[DOMICILE.GetName] [camp|E], [DOMICILE.GetLocation.GetBaronyNameExplicitly] [barony|E]'te kurulmuştur" #NT!
- THEY_MOVE_DOMICILE_EFFECT: "[DOMICILE.GetName] [camp|E] [DOMICILE.GetLocation.GetBaronyNameExplicitly] [barony|E]'te kurulacak" #NT!
- MOVE_DOMICILE_EFFECT: "[DOMICILE.GetName] [camp|E] [PROVINCE.GetName]'ye hareket eder" #NT!
- MOVED_DOMICILE_EFFECT: "[DOMICILE.GetName] [camp|E] [PROVINCE.GetName]'ye taşındı" #NT!
+ I_MOVE_DOMICILE_EFFECT: "[DOMICILE.GetName] [camp|E], [DOMICILE.GetLocation.GetBaronyNameExplicitly] [barony|E]'te kurulmuştur"
+ THEY_MOVE_DOMICILE_EFFECT: "[DOMICILE.GetName] [camp|E] [DOMICILE.GetLocation.GetBaronyNameExplicitly] [barony|E]'te kurulacak"
+ MOVE_DOMICILE_EFFECT: "[DOMICILE.GetName] [camp|E] [PROVINCE.GetName]'ye hareket eder"
+ MOVED_DOMICILE_EFFECT: "[DOMICILE.GetName] [camp|E] [PROVINCE.GetName]'ye taşındı"
   
- investment_cap_warning_tooltip: "[investment_cap|E]'a ulaşılması nedeniyle katkı daha küçük olacaktır" #NT!
- investment_cap_warning: "#TOOLTIP:investment_cap_warning_tooltip @uyarı_simgesi! #!" #NT!
+ investment_cap_warning_tooltip: "[investment_cap|E]'a ulaşılması nedeniyle katkı daha küçük olacaktır"
+ investment_cap_warning: "#TOOLTIP:investment_cap_warning_tooltip @uyarı_simgesi! #!"
   
- change_appointment_investment_global_no_investor: "[TARGET_CHARACTER.GetShortUINamePossessive|U] [candidate_score|E] #HIGH [TITLE.GetName]#! için $VALUE|P0+$ artar" #NT!
- change_appointment_investment_global_investor: "[CHARACTER.GetShortUIName|U] [CharSupportSupports(CHARACTER)] [TARGET_CHARACTER.GetShortUINamePossessive] [candidate_score|E] #HIGH [TITLE.GetName]#! için $EFFECTIVE_CHANGE|P0+$#!$YATIRIM_SERMAYE_UYARISI$ ile" #NT!
- change_appointment_investment_global_no_investor_neg: "[TARGET_CHARACTER.GetShortUINamePossessive|U] [candidate_score|E] #HIGH [TITLE.GetName]#! için #N -#!$VALUE|N0$ kadar azalır" #NT!
- change_appointment_investment_global_investor_neg: "[CHARACTER.GetShortUIName|U] [CharOpposeOpposes(CHARACTER)] [TARGET_CHARACTER.GetShortUINamePossessive] [candidate_score|E] #HIGH [TITLE.GetName]#! için #N -#!$DEĞER|N0$" #NT!
- change_appointment_investment_third_no_investor: "[TARGET_CHARACTER.GetShortUINamePossessive|U] [candidate_score|E] #HIGH [TITLE.GetName]#! için #P +#!$VALUE|P0$ artar" #NT!
- change_appointment_investment_third_investor: "[CHARACTER.GetShortUIName|U] [CharSupportSupports(CHARACTER)] [TARGET_CHARACTER.GetShortUINamePossessive] [candidate_score|E] #HIGH [TITLE.GetName]#! için #P ile +#!$ETKİLİ_DEĞİŞİKLİK|P0$#!$YATIRIM_SERMAYE_UYARISI$" #NT!
- change_appointment_investment_third_no_investor_neg: "[TARGET_CHARACTER.GetShortUINamePossessive|U] [candidate_score|E] #HIGH [TITLE.GetName]#! için #N -#!$VALUE|N0$ kadar azalır" #NT!
- change_appointment_investment_third_investor_neg: "[CHARACTER.GetShortUIName|U] [CharOpposeOpposes(CHARACTER)] [TARGET_CHARACTER.GetShortUINamePossessive] [candidate_score|E] #HIGH [TITLE.GetName]#! ile #N -#!$DEĞER|N0$" #NT!
- change_appointment_investment_third_past_no_investor: "[TARGET_CHARACTER.GetShortUINamePossessive|U] [candidate_score|E] #HIGH [TITLE.GetName]#! için #P +#!$VALUE|P0$ artırıldı" #NT!
- change_appointment_investment_third_past_investor: "[CHARACTER.GetShortUIName|U], #HIGH için [TARGET_CHARACTER.GetShortUINamePossessive] [candidate_score|E] [TITLE.GetName]#! için #P ile desteklendi +#!$EFFECTIVE_CHANGE|P0$#!$INVESTMENT_CAP_WARNING$" #NT!
- change_appointment_investment_third_past_no_investor_neg: "[TARGET_CHARACTER.GetShortUINamePossessive|U] [candidate_score|E] #HIGH [TITLE.GetName]#! için #N -#!$VALUE|N0$ azaltıldı" #NT!
- change_appointment_investment_third_past_investor_neg: "[CHARACTER.GetShortUIName|U] karşı çıktı [TARGET_CHARACTER.GetShortUINamePossessive|U] [candidate_score|E] #HIGH için [TITLE.GetName]#! #N ile -#!$VALUE|N0$" #NT!
+ change_appointment_investment_global_no_investor: "[TARGET_CHARACTER.GetShortUINamePossessive|U] [candidate_score|E] #HIGH [TITLE.GetName]#! için $VALUE|P0+$ artar"
+ change_appointment_investment_global_investor: "[CHARACTER.GetShortUIName|U] [CharSupportSupports(CHARACTER)] [TARGET_CHARACTER.GetShortUINamePossessive] [candidate_score|E] #HIGH [TITLE.GetName]#! için $EFFECTIVE_CHANGE|P0+$#!$YATIRIM_SERMAYE_UYARISI$ ile"
+ change_appointment_investment_global_no_investor_neg: "[TARGET_CHARACTER.GetShortUINamePossessive|U] [candidate_score|E] #HIGH [TITLE.GetName]#! için #N -#!$VALUE|N0$ kadar azalır"
+ change_appointment_investment_global_investor_neg: "[CHARACTER.GetShortUIName|U] [CharOpposeOpposes(CHARACTER)] [TARGET_CHARACTER.GetShortUINamePossessive] [candidate_score|E] #HIGH [TITLE.GetName]#! için #N -#!$DEĞER|N0$"
+ change_appointment_investment_third_no_investor: "[TARGET_CHARACTER.GetShortUINamePossessive|U] [candidate_score|E] #HIGH [TITLE.GetName]#! için #P +#!$VALUE|P0$ artar"
+ change_appointment_investment_third_investor: "[CHARACTER.GetShortUIName|U] [CharSupportSupports(CHARACTER)] [TARGET_CHARACTER.GetShortUINamePossessive] [candidate_score|E] #HIGH [TITLE.GetName]#! için #P ile +#!$ETKİLİ_DEĞİŞİKLİK|P0$#!$YATIRIM_SERMAYE_UYARISI$"
+ change_appointment_investment_third_no_investor_neg: "[TARGET_CHARACTER.GetShortUINamePossessive|U] [candidate_score|E] #HIGH [TITLE.GetName]#! için #N -#!$VALUE|N0$ kadar azalır"
+ change_appointment_investment_third_investor_neg: "[CHARACTER.GetShortUIName|U] [CharOpposeOpposes(CHARACTER)] [TARGET_CHARACTER.GetShortUINamePossessive] [candidate_score|E] #HIGH [TITLE.GetName]#! ile #N -#!$DEĞER|N0$"
+ change_appointment_investment_third_past_no_investor: "[TARGET_CHARACTER.GetShortUINamePossessive|U] [candidate_score|E] #HIGH [TITLE.GetName]#! için #P +#!$VALUE|P0$ artırıldı"
+ change_appointment_investment_third_past_investor: "[CHARACTER.GetShortUIName|U], #HIGH için [TARGET_CHARACTER.GetShortUINamePossessive] [candidate_score|E] [TITLE.GetName]#! için #P ile desteklendi +#!$EFFECTIVE_CHANGE|P0$#!$INVESTMENT_CAP_WARNING$"
+ change_appointment_investment_third_past_no_investor_neg: "[TARGET_CHARACTER.GetShortUINamePossessive|U] [candidate_score|E] #HIGH [TITLE.GetName]#! için #N -#!$VALUE|N0$ azaltıldı"
+ change_appointment_investment_third_past_investor_neg: "[CHARACTER.GetShortUIName|U] karşı çıktı [TARGET_CHARACTER.GetShortUINamePossessive|U] [candidate_score|E] #HIGH için [TITLE.GetName]#! #N ile -#!$VALUE|N0$"
   
- I_GAINED_INFLUENCE_EFFECT: "[influence_i]$VALUE|+0$ kazandınız" #NT!
- I_LOST_INFLUENCE_EFFECT: "[influence_i]$VALUE|-0$ harcadınız" #NT!
- THEY_GAINED_INFLUENCE_EFFECT: "[CHARACTER.GetShortUIName|U] kazanıldı [influence_i]$VALUE|+0$" #NT!
- THEY_LOST_INFLUENCE_EFFECT: "[CHARACTER.GetShortUIName|U] harcandı [influence_i]$VALUE|-0$" #NT!
- GAINED_INFLUENCE_EFFECT: "Kazanılan [influence_i]$VALUE|+0$" #NT!
- LOST_INFLUENCE_EFFECT: "Harcanan [influence_i]$VALUE|-0$" #NT!
- I_GAIN_INFLUENCE_EFFECT: "[influence_i]$VALUE|+0$ kazanırsınız" #NT!
- I_LOSE_INFLUENCE_EFFECT: "[influence_i]$VALUE|-0$ harcıyorsunuz" #NT!
- THEY_GAIN_INFLUENCE_EFFECT: "[CHARACTER.GetShortUIName|U] kazanç [influence_i]$VALUE|+0$" #NT!
- THEY_LOSE_INFLUENCE_EFFECT: "[CHARACTER.GetShortUIName|U] harcama [influence_i]$VALUE|-0$" #NT!
- GAIN_INFLUENCE_EFFECT: "Kazançlar [influence_i]$VALUE|+0$" #NT!
- LOSE_INFLUENCE_EFFECT: "Harcamalar [influence_i]$VALUE|-0$" #NT!
+ I_GAINED_INFLUENCE_EFFECT: "[influence_i]$VALUE|+0$ kazandınız"
+ I_LOST_INFLUENCE_EFFECT: "[influence_i]$VALUE|-0$ harcadınız"
+ THEY_GAINED_INFLUENCE_EFFECT: "[CHARACTER.GetShortUIName|U] kazanıldı [influence_i]$VALUE|+0$"
+ THEY_LOST_INFLUENCE_EFFECT: "[CHARACTER.GetShortUIName|U] harcandı [influence_i]$VALUE|-0$"
+ GAINED_INFLUENCE_EFFECT: "Kazanılan [influence_i]$VALUE|+0$"
+ LOST_INFLUENCE_EFFECT: "Harcanan [influence_i]$VALUE|-0$"
+ I_GAIN_INFLUENCE_EFFECT: "[influence_i]$VALUE|+0$ kazanırsınız"
+ I_LOSE_INFLUENCE_EFFECT: "[influence_i]$VALUE|-0$ harcıyorsunuz"
+ THEY_GAIN_INFLUENCE_EFFECT: "[CHARACTER.GetShortUIName|U] kazanç [influence_i]$VALUE|+0$"
+ THEY_LOSE_INFLUENCE_EFFECT: "[CHARACTER.GetShortUIName|U] harcama [influence_i]$VALUE|-0$"
+ GAIN_INFLUENCE_EFFECT: "Kazançlar [influence_i]$VALUE|+0$"
+ LOSE_INFLUENCE_EFFECT: "Harcamalar [influence_i]$VALUE|-0$"
   
- I_GAIN_INFLUENCE_LEVEL_EFFECT: "$VALUE|V0$ [influence_levels|E] kazanırsınız" #NT!
- I_LOSE_INFLUENCE_LEVEL_EFFECT: "Kaybettin $VALUE|V0$ [influence_levels|E]" #NT!
- THEY_GAIN_INFLUENCE_LEVEL_EFFECT: "[CHARACTER.GetShortUIName|U] kazanç $VALUE|V0$ [influence_levels|E]" #NT!
- THEY_LOSE_INFLUENCE_LEVEL_EFFECT: "[CHARACTER.GetShortUIName|U] kaybet $VALUE|V0$ [influence_levels|E]" #NT!
- GAIN_INFLUENCE_LEVEL_EFFECT: "Kazançlar $VALUE|V0$ [influence_levels|E]" #NT!
- LOSE_INFLUENCE_LEVEL_EFFECT: "Kaybeder $VALUE|V0$ [influence_levels|E]" #NT!
- I_GAINED_INFLUENCE_LEVEL_EFFECT: "$VALUE|V0$ [influence_levels|E] kazandınız" #NT!
- I_LOST_INFLUENCE_LEVEL_EFFECT: "Kaybettin $VALUE|V0$ [influence_levels|E]" #NT!
- THEY_GAINED_INFLUENCE_LEVEL_EFFECT: "[CHARACTER.GetShortUIName|U] kazanıldı $VALUE|V0$ [influence_levels|E]" #NT!
- THEY_LOST_INFLUENCE_LEVEL_EFFECT: "[CHARACTER.GetShortUIName|U] kayıp $VALUE|V0$ [influence_levels|E]" #NT!
- GAINED_INFLUENCE_LEVEL_EFFECT: "Kazanıldı $VALUE|V0$ [influence_levels|E]" #NT!
- LOST_INFLUENCE_LEVEL_EFFECT: "Kayıp $VALUE|V0$ [influence_levels|E]" #NT!
+ I_GAIN_INFLUENCE_LEVEL_EFFECT: "$VALUE|V0$ [influence_levels|E] kazanırsınız"
+ I_LOSE_INFLUENCE_LEVEL_EFFECT: "Kaybettin $VALUE|V0$ [influence_levels|E]"
+ THEY_GAIN_INFLUENCE_LEVEL_EFFECT: "[CHARACTER.GetShortUIName|U] kazanç $VALUE|V0$ [influence_levels|E]"
+ THEY_LOSE_INFLUENCE_LEVEL_EFFECT: "[CHARACTER.GetShortUIName|U] kaybet $VALUE|V0$ [influence_levels|E]"
+ GAIN_INFLUENCE_LEVEL_EFFECT: "Kazançlar $VALUE|V0$ [influence_levels|E]"
+ LOSE_INFLUENCE_LEVEL_EFFECT: "Kaybeder $VALUE|V0$ [influence_levels|E]"
+ I_GAINED_INFLUENCE_LEVEL_EFFECT: "$VALUE|V0$ [influence_levels|E] kazandınız"
+ I_LOST_INFLUENCE_LEVEL_EFFECT: "Kaybettin $VALUE|V0$ [influence_levels|E]"
+ THEY_GAINED_INFLUENCE_LEVEL_EFFECT: "[CHARACTER.GetShortUIName|U] kazanıldı $VALUE|V0$ [influence_levels|E]"
+ THEY_LOST_INFLUENCE_LEVEL_EFFECT: "[CHARACTER.GetShortUIName|U] kayıp $VALUE|V0$ [influence_levels|E]"
+ GAINED_INFLUENCE_LEVEL_EFFECT: "Kazanıldı $VALUE|V0$ [influence_levels|E]"
+ LOST_INFLUENCE_LEVEL_EFFECT: "Kayıp $VALUE|V0$ [influence_levels|E]"
   
- accept_task_contract_global: "Kabul et [TASK_CONTRACT.GetName] \n" #NT!
- invalidate_task_contract_global: "[TASK_CONTRACT.GetType.GetName] [GetPlayer.Custom('GetContractOrIssueGameConcept')]'i geçersiz kıl" #NT!
- invalidate_task_contract_global_past: "[TASK_CONTRACT.GetType.GetName] [GetPlayer.Custom('GetContractOrIssueGameConcept')] geçersiz kılındı" #NT!
- GLOBAL_CREATE_TASK_CONTRACT: "[TASK_CONTRACT_TYPE.GetName] [GetPlayer.Custom('GetContractOrIssueGameConcept')] oluştur" #NT!
+ accept_task_contract_global: "Kabul et [TASK_CONTRACT.GetName] \n"
+ invalidate_task_contract_global: "[TASK_CONTRACT.GetType.GetName] [GetPlayer.Custom('GetContractOrIssueGameConcept')]'i geçersiz kıl"
+ invalidate_task_contract_global_past: "[TASK_CONTRACT.GetType.GetName] [GetPlayer.Custom('GetContractOrIssueGameConcept')] geçersiz kılındı"
+ GLOBAL_CREATE_TASK_CONTRACT: "[TASK_CONTRACT_TYPE.GetName] [GetPlayer.Custom('GetContractOrIssueGameConcept')] oluştur"
   
- I_CHOOSE_FAVORITE_CHILD: "[TARGET_CHARACTER.GetShortUIName]'ı [favorite_child|E] olarak seçiyorsunuz" #NT!
- THEY_CHOOSE_FAVORITE_CHILD: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'i [favorite_child|E] olarak seçer" #NT!
- CHOOSES_FAVORITE_CHILD: "[TARGET_CHARACTER.GetShortUIName]'ı [favorite_child|E] olarak seçer" #NT!
- I_CHOSE_FAVORITE_CHILD: "[TARGET_CHARACTER.GetShortUIName]'ı [favorite_child|E] olarak seçtiniz" #NT!
- THEY_CHOSE_FAVORITE_CHILD: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'i [favorite_child|E] olarak seçti" #NT!
- CHOSE_FAVORITE_CHILD: "[TARGET_CHARACTER.GetShortUIName]'ı [favorite_child|E] olarak seçin" #NT!
+ I_CHOOSE_FAVORITE_CHILD: "[TARGET_CHARACTER.GetShortUIName]'ı [favorite_child|E] olarak seçiyorsunuz"
+ THEY_CHOOSE_FAVORITE_CHILD: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'i [favorite_child|E] olarak seçer"
+ CHOOSES_FAVORITE_CHILD: "[TARGET_CHARACTER.GetShortUIName]'ı [favorite_child|E] olarak seçer"
+ I_CHOSE_FAVORITE_CHILD: "[TARGET_CHARACTER.GetShortUIName]'ı [favorite_child|E] olarak seçtiniz"
+ THEY_CHOSE_FAVORITE_CHILD: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'i [favorite_child|E] olarak seçti"
+ CHOSE_FAVORITE_CHILD: "[TARGET_CHARACTER.GetShortUIName]'ı [favorite_child|E] olarak seçin"
   
- I_LOSE_FAVORITE_CHILD: "[TARGET_CHARACTER.GetShortUIName]'ı [favorite_child|E] olarak kaldırıyorsunuz" #NT!
- THEY_LOSE_FAVORITE_CHILD: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'i [favorite_child|E] olarak kaldırır" #NT!
- LOSES_FAVORITE_CHILD: "[TARGET_CHARACTER.GetShortUIName]'ı [favorite_child|E] olarak kaldır" #NT!
- I_LOST_FAVORITE_CHILD: "[TARGET_CHARACTER.GetShortUIName]'ı [favorite_child|E] olarak kaldırdınız" #NT!
- THEY_LOST_FAVORITE_CHILD: "[CHARACTER.GetShortUIName|U] [TARGET_CHARACTER.GetShortUIName]'i [favorite_child|E] olarak kaldırdı" #NT!
- LOST_FAVORITE_CHILD: "[TARGET_CHARACTER.GetShortUIName], [favorite_child|E] olarak kaldırıldı" #NT!
+ I_LOSE_FAVORITE_CHILD: "[TARGET_CHARACTER.GetShortUIName]'ı [favorite_child|E] olarak kaldırıyorsunuz"
+ THEY_LOSE_FAVORITE_CHILD: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'i [favorite_child|E] olarak kaldırır"
+ LOSES_FAVORITE_CHILD: "[TARGET_CHARACTER.GetShortUIName]'ı [favorite_child|E] olarak kaldır"
+ I_LOST_FAVORITE_CHILD: "[TARGET_CHARACTER.GetShortUIName]'ı [favorite_child|E] olarak kaldırdınız"
+ THEY_LOST_FAVORITE_CHILD: "[CHARACTER.GetShortUIName|U] [TARGET_CHARACTER.GetShortUIName]'i [favorite_child|E] olarak kaldırdı"
+ LOST_FAVORITE_CHILD: "[TARGET_CHARACTER.GetShortUIName], [favorite_child|E] olarak kaldırıldı"
   
- deplete_army_third: "[ARMY.GetName] kuvvetlerinin $VALUE|-%0$'ini kaybeder" #NT!
- deplete_army_third_past: "[ARMY.GetName] kuvvetlerinin $VALUE|-%0$'ini kaybetti" #NT!
+ deplete_army_third: "[ARMY.GetName] kuvvetlerinin $VALUE|-%0$'ini kaybeder"
+ deplete_army_third_past: "[ARMY.GetName] kuvvetlerinin $VALUE|-%0$'ini kaybetti"
   
- ARMY_IS_DEPLETED: "$VALUE|-%0$ / [ARMY.GetName] kayıp" #NT!
- ARMY_IS_DEPLETED_GLOBAL: "$VALUE|-%0$ / [ARMY.GetName] kayıp" #NT!
- ARMY_WAS_DEPLETED: "$VALUE|-%0$ / [ARMY.GetName] kayboldu" #NT!
- ARMY_WAS_DEPLETED_GLOBAL: "$VALUE|-%0$ / [ARMY.GetName] kayboldu" #NT!
+ ARMY_IS_DEPLETED: "$VALUE|-%0$ / [ARMY.GetName] kayıp"
+ ARMY_IS_DEPLETED_GLOBAL: "$VALUE|-%0$ / [ARMY.GetName] kayıp"
+ ARMY_WAS_DEPLETED: "$VALUE|-%0$ / [ARMY.GetName] kayboldu"
+ ARMY_WAS_DEPLETED_GLOBAL: "$VALUE|-%0$ / [ARMY.GetName] kayboldu"
   
- ARMY_ADD_SUPPLY: "[ARMY.GetName] kazanç $VALUE|-%0$ [supplies|e]" #NT!
- ARMY_ADDED_SUPPLY: "[ARMY.GetName] kazanıldı $VALUE|-%0$ [supplies|e]" #NT!
- ARMY_SUBTRACT_SUPPLY: "[ARMY.GetName] kaybeder $VALUE|-%0$ [supplies|e]" #NT!
- ARMY_SUBTRACTED_SUPPLY: "[ARMY.GetName] kayıp $VALUE|-%0$ [supplies|e]" #NT!
- ARMY_CLEAR_SUPPLY: "[ARMY.GetName] tüm [supplies|e]'i kaybeder" #NT!
- ARMY_CLEARED_SUPPLY: "[ARMY.GetName] hepsini kaybetti [supplies|e]" #NT!
- ARMY_REFILL_SUPPLY: "[ARMY.GetName] hepsini yeniden doldurur [supplies|e]" #NT!
- ARMY_REFILLED_SUPPLY: "[ARMY.GetName] hepsini yeniden doldurdu [supplies|e]" #NT!
+ ARMY_ADD_SUPPLY: "[ARMY.GetName] kazanç $VALUE|-%0$ [supplies|e]"
+ ARMY_ADDED_SUPPLY: "[ARMY.GetName] kazanıldı $VALUE|-%0$ [supplies|e]"
+ ARMY_SUBTRACT_SUPPLY: "[ARMY.GetName] kaybeder $VALUE|-%0$ [supplies|e]"
+ ARMY_SUBTRACTED_SUPPLY: "[ARMY.GetName] kayıp $VALUE|-%0$ [supplies|e]"
+ ARMY_CLEAR_SUPPLY: "[ARMY.GetName] tüm [supplies|e]'i kaybeder"
+ ARMY_CLEARED_SUPPLY: "[ARMY.GetName] hepsini kaybetti [supplies|e]"
+ ARMY_REFILL_SUPPLY: "[ARMY.GetName] hepsini yeniden doldurur [supplies|e]"
+ ARMY_REFILLED_SUPPLY: "[ARMY.GetName] hepsini yeniden doldurdu [supplies|e]"
   
   # EP3 - Rebalancing Old Perks 
- praetorian_guard_perk_effect: "Arttırıldı [GetCourtPositionType('bodyguard_court_position').GetName()] [aptitude|E]" #NT!
- INFLUENCE_CHILDREN_GROOMED_TO_RULE: "[influence_ward_personality|E] Kabul: #P +[EmptyScope.ScriptValue('groomed_to_rule_value')|0]#!" #NT!
+ praetorian_guard_perk_effect: "Arttırıldı [GetCourtPositionType('bodyguard_court_position').GetName()] [aptitude|E]"
+ INFLUENCE_CHILDREN_GROOMED_TO_RULE: "[influence_ward_personality|E] Kabul: #P +[EmptyScope.ScriptValue('groomed_to_rule_value')|0]#!"
   
- set_state_faith_third: "[TITLE.GetName]'in [state_faith|E]'ı [FAITH.GetName] olur" #NT!
+ set_state_faith_third: "[TITLE.GetName]'in [state_faith|E]'ı [FAITH.GetName] olur"
   
- transfer_owned_maa_control_global: "[TITLE.GetHolder.GetShortUIName|U] transferi[_s(TITLE.GetHolder)] [TITLE.GetAdjective] [army|E] [TARGET_TITLE.GetNameNoTier] altında [TARGET_TITLE.GetHolder.GetShortUINamePossessive] komutu" #NT!
- transfer_owned_maa_control_global_past: "[TITLE.GetHolder.GetShortUIName|U], [TITLE.GetAdjective] [army|E]'yi [TARGET_TITLE.GetHolder.GetShortUINamePossessive] komutu altında [TARGET_TITLE.GetNameNoTier]'e aktardı" #NT!
+ transfer_owned_maa_control_global: "[TITLE.GetHolder.GetShortUIName|U] transferi[_s(TITLE.GetHolder)] [TITLE.GetAdjective] [army|E] [TARGET_TITLE.GetNameNoTier] altında [TARGET_TITLE.GetHolder.GetShortUINamePossessive] komutu"
+ transfer_owned_maa_control_global_past: "[TITLE.GetHolder.GetShortUIName|U], [TITLE.GetAdjective] [army|E]'yi [TARGET_TITLE.GetHolder.GetShortUINamePossessive] komutu altında [TARGET_TITLE.GetNameNoTier]'e aktardı"
   
- force_step_down_landed_titles_first: "İstifa edersin ve tüm toprak mülkiyetini kaybedersin" #NT!
- force_step_down_landed_titles_third: "[CHARACTER.GetUIName] bir adım geri çekilir ve elde edilen tüm unvanları kaybeder" #NT!
- force_step_down_landed_titles_global: "Will istifa edecek ve tüm mülkiyet haklarını kaybedecek" #NT!
- force_step_down_landed_titles_first_past: "İstifa ettin ve tüm toprak mülkiyetini kaybettin" #NT!
- force_step_down_landed_titles_third_past: "[CHARACTER.GetUIName] istifa etti ve tüm toprak mülkiyetini kaybetti" #NT!
- force_step_down_landed_titles_global_past: "İstifa etti ve tüm toprak mülkiyetini kaybetti" #NT!
+ force_step_down_landed_titles_first: "İstifa edersin ve tüm toprak mülkiyetini kaybedersin"
+ force_step_down_landed_titles_third: "[CHARACTER.GetUIName] bir adım geri çekilir ve elde edilen tüm unvanları kaybeder"
+ force_step_down_landed_titles_global: "Will istifa edecek ve tüm mülkiyet haklarını kaybedecek"
+ force_step_down_landed_titles_first_past: "İstifa ettin ve tüm toprak mülkiyetini kaybettin"
+ force_step_down_landed_titles_third_past: "[CHARACTER.GetUIName] istifa etti ve tüm toprak mülkiyetini kaybetti"
+ force_step_down_landed_titles_global_past: "İstifa etti ve tüm toprak mülkiyetini kaybetti"

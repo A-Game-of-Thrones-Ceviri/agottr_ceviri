@@ -3,7 +3,7 @@
  health.1015.t: "[SCOPE.Custom('EventTitleDisease')]: Kaşıntı"
  health.1015.desc: "#EMP Sürekli bir kaşıntı!#! Gecenin bir yarısı uyandığımda parmaklarımdaki kan dikkatimi çekiyor. Bir süre sonra kanın az önce kaşıdığım bacağımdan geldiğini görüyorum. Öyle şiddetli kaşınıyor ki, kendime hâkim olamıyorum.\n\nYüzümü soğuk suya batırarak kaşınma duygusunun geçmesini umuyorum. Aynaya baktığımda gözlerimin kan çanağına döndüğünü görüyorum."
   #AGOT Modified 
- #health.1015.court_physician.desc: "\n\n"Benim [ROOT.Char.GetLadyLord]'ım, bu kızamık denen hastalık."" #NT!
+ #health.1015.court_physician.desc: "\n\n"Benim [ROOT.Char.GetLadyLord]'ım, bu kızamık denen hastalık.""
  health.1015.court_physician.desc: "\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], siz kızamık olmuşsunuz.""
  health.1015.a: "Artık dayanamıyorum!"
  health.1016.t: "[SCOPE.Custom('EventTitleDisease')]: Kızıl Çeşme"
@@ -44,7 +44,7 @@
  disease_desc_short_dysentery: "kanlı ishalin etkisinde"
  disease_desc_short_ergotism: "istemsiz kasılmalardan muzdarip"
   #AGOT Modified 
- #disease_desc_short_typhus: "kamp ateşiyle eziyet çeken" #NT!
+ #disease_desc_short_typhus: "kamp ateşiyle eziyet çeken"
  disease_desc_short_typhus: "lekeli hummadan muzdarip"
  disease_desc_short_consumption: "kanlı öksürüklerin etkisinde"
  disease_desc_short_smallpox: "yaralar ve döküntülerle kaplı"
@@ -74,7 +74,7 @@
  epidemic_events.1010.a: ""Ne cüretle!""
  epidemic_events.1010.b: "Ya haklıysa..."
  epidemic_events.1010.c: "Tüm tabutlara çivi çakın!"
- all_realm_county_epidemic_scope: "Her [realm|E] [county|E] ile [epidemic_scope.GetName]" #NT!
+ all_realm_county_epidemic_scope: "Her [realm|E] [county|E] ile [epidemic_scope.GetName]"
  epidemic_events.1020.t: "[epidemic_county.GetNameNoTierNoTooltip|U] Dolaylarında Kötü Kokular"
  epidemic_events.1020.desc: "[epidemic_scope.GetName|U], [epidemic_county.GetNameNoTier] halkı üzerinde yıkıcı etkilere sebep oldu. [miasma_courtier.Custom2('MyCharacterIntroduction', ROOT.Char)|U], halkın evlerine çekilerek [ROOT.Char.GetFaith.DeathDeityName|U] için dualar ettiğini, bu sebeple yerel üretimin ve ticaretin durma noktasına geldiğini bildiriyor.\n\nTopraklarımıza musallat olan bu vebanın asıl sebebinin ölülerin yaydığı kötü kokular olduğunu, etrafa bolca [epidemic_province.Custom('get_region_flower_type_plural')] ekerek kötü kokuları dağıtabileceğimizi, dolayısıyla vebayı bertaraf edebileceğimizi söylüyor."
  epidemic_events.1020.a: "Denemeye değer."
@@ -310,7 +310,7 @@
  epidemic_events.2005.c: "Öyle diyorsan öyle olsun."
   
  epidemic_events.2006.t: "Dans Hastalığı"
- epidemic_events.2006.desc: "Kapımın önünde dans eden bir köylü mü? Etrafında bir sürü meraklı toplanmışken?\n\n"Affet [dance_victim.GetFirstName], efendim." Seyircilerden biri konuşuyor." [dance_victim.GetSheHe|U] birkaç gün önce dans etmeye başladı ve o zamandan beri durmadı. Sonra bazıları bile [dance_victim.GetHerHim|U]'ye bu çarpık dansta katıldı!" Seyirci yere tükürüyor ama izlemeye devam ediyor, hem büyülenmiş hem de dehşete düşmüş bir şekilde. [dance_victim.GetHerHis|U] inleyerek yüzünü çeviriyor, açıkça deliliğin eşiğinde, ama dans devam ediyor." #NT!
+ epidemic_events.2006.desc: "Kapımın önünde dans eden bir köylü mü? Etrafında bir sürü meraklı toplanmışken?\n\n"Affet [dance_victim.GetFirstName], efendim." Seyircilerden biri konuşuyor." [dance_victim.GetSheHe|U] birkaç gün önce dans etmeye başladı ve o zamandan beri durmadı. Sonra bazıları bile [dance_victim.GetHerHim|U]'ye bu çarpık dansta katıldı!" Seyirci yere tükürüyor ama izlemeye devam ediyor, hem büyülenmiş hem de dehşete düşmüş bir şekilde. [dance_victim.GetHerHis|U] inleyerek yüzünü çeviriyor, açıkça deliliğin eşiğinde, ama dans devam ediyor."
  epidemic_events.2006.a: "Sebepsiz yere dans etmek mi? #EMP Harikulade!#!"
  epidemic_events.2006.b: "Her dansın bir sonu vardır. #EMP Değil mi?#!"
  epidemic_events.2006.c: "Halat getirin de şunu bağlayalım!"
@@ -348,7 +348,7 @@
  ce1_meat_shower_desc_third_perspective: "[flinger.GetName] [owner.GetNameNotMe] adlı karakterin topraklarına mancınıkla ceset fırlattı, şehrine et ve kemik parçaları yağdı"
   
  epidemic_events.5000.t: "Bir Şeyler Yap!"
- epidemic_events.5000.desc: "[epidemic.GetName] öfkesini sürdürürken [infected_county.GetName]'dan daha fazla rapor geliyor. Bana son mektupları bizzat getiren [church_person.GetTitledFirstName], masama elini çarpıyor.\n\n"İnsanlar bizden onlara yardım etmek için bazı şeyler yapmamızı bekliyor!" [church_person.GetSheHe|U] ısrar ediyor, mesajı işaret ederek.\n\n"Şimdi, bu tiplerden daha önce de gördüm. Tek yapmamız gereken, bölgeyi rahatsız eden pis hayvanlardan bazılarını temizlemek. Bu bela onlarsız kesinlikle devam etmeyecek!" [church_person.GetFirstNameNoTooltip|U], ben düşünürken memnuniyetle arkasına yaslanıyor. "Bu [ROOT.Char.GetFaith.HighGodName]'in isteği."" #NT!
+ epidemic_events.5000.desc: "[epidemic.GetName] öfkesini sürdürürken [infected_county.GetName]'dan daha fazla rapor geliyor. Bana son mektupları bizzat getiren [church_person.GetTitledFirstName], masama elini çarpıyor.\n\n"İnsanlar bizden onlara yardım etmek için bazı şeyler yapmamızı bekliyor!" [church_person.GetSheHe|U] ısrar ediyor, mesajı işaret ederek.\n\n"Şimdi, bu tiplerden daha önce de gördüm. Tek yapmamız gereken, bölgeyi rahatsız eden pis hayvanlardan bazılarını temizlemek. Bu bela onlarsız kesinlikle devam etmeyecek!" [church_person.GetFirstNameNoTooltip|U], ben düşünürken memnuniyetle arkasına yaslanıyor. "Bu [ROOT.Char.GetFaith.HighGodName]'in isteği.""
  epidemic_events.5000.a: "Şu fareler yeterince pis görünüyorlar..."
  epidemic_events.5000.b: "Kediler #EMP her yere#! giriyor, kesin onların işi!"
  epidemic_events.5000.c: "Köpekler sürekli çamur içerisinde, onlardan kurtulalım!"
@@ -459,10 +459,10 @@
  epidemic_events.5010.b.lose: "Dehşete kapılıyorsunuz"
   
   #AGOT Modified 
- #epidemic_events.5900.t: "Kara Ölüm" #NT!
+ #epidemic_events.5900.t: "Kara Ölüm"
  epidemic_events.5900.t: "Büyük Bahar Hastalığı"
   #AGOT Modified 
- #epidemic_events.5900.desc: "Veba ülkeyi istila ediyor.\n\nKurbanların üzerinde tüyler ürpertici, köpüren hıyarcıklar büyüyor, yardım için acınası çığlıkları kendi irin dolu boğazlarında boğulurken yavaş yavaş bastırılıyor.\n\nEn alçak serseriden en çok kutlanan imparatora kadar herkes acımasız vebanın ayrım gözetmeyen tırpanından korkuyor. Hayatta kalanlar, etraflarındaki herkes yok olurken çaresizce izlemek zorunda kalıyor.\n\nAdanmışlar bir kurtarıcı için ilahi olana, güçlüler ise zenginliklerine bakıyor, ancak hiçbiri gerçekten güvende olamaz. Korkunç sarmaşıklar ülkeye yayılıyor, artık nefes alamayacak hale gelene kadar onu sıkıştırıyor.\n\nBüyük Bahar Hastalığı üzerimizde. [ROOT.Char.GetFaith.HighGodName] hepimizi kurtar." #NT!
+ #epidemic_events.5900.desc: "Veba ülkeyi istila ediyor.\n\nKurbanların üzerinde tüyler ürpertici, köpüren hıyarcıklar büyüyor, yardım için acınası çığlıkları kendi irin dolu boğazlarında boğulurken yavaş yavaş bastırılıyor.\n\nEn alçak serseriden en çok kutlanan imparatora kadar herkes acımasız vebanın ayrım gözetmeyen tırpanından korkuyor. Hayatta kalanlar, etraflarındaki herkes yok olurken çaresizce izlemek zorunda kalıyor.\n\nAdanmışlar bir kurtarıcı için ilahi olana, güçlüler ise zenginliklerine bakıyor, ancak hiçbiri gerçekten güvende olamaz. Korkunç sarmaşıklar ülkeye yayılıyor, artık nefes alamayacak hale gelene kadar onu sıkıştırıyor.\n\nBüyük Bahar Hastalığı üzerimizde. [ROOT.Char.GetFaith.HighGodName] hepimizi kurtar."
  epidemic_events.5900.desc: "Salgın tüm diyara musallat olmuş durumda.\n\nKurbanların derilerinde ürkütücü hıyarcıklar büyüyor, boğazlarındaki irin yardım çığlığı atmalarına mani oluyor.\n\nEn alt tabakadaki köylüden şımarık imparatorlara kadar herkes bu acımasız vebanın tırpanından korkuyor. Hayatta kalmayı başarabilenler, etraflarındaki her şeyin ölümünü çaresizce izliyor.\n\nDindar olanlar rablerine, zenginler servetlerine sığınırken kimse gerçek anlamda güvende değil. Salgının kolları toprağı sarıyor ve nefes alamayacak hâle getirene kadar onu boğuyor.\n\nBüyük Bahar Hastalığı kapımızda. [ROOT.Char.GetFaith.HighGodName] yardımcımız olsun..."
  epidemic_events.5900.christian: ""Yedi adına, yardım edin.""
  epidemic_events.5900.fallback: "Bu zorlu günleri de atlatacağız."
@@ -514,7 +514,7 @@
  epidemic_events.5906.b: "Belki de haklılık payı vardır..."
  epidemic_events.5906.c: ""[marshal.GetFirstNameNoTooltip], tık bunu içeriye.""
  epidemic_events.5906.d: "Bırakın gitsin, kendisinden başkasına zararı yok."
- epidemic_events.5906.d.tt: "[doomsday_province.GetName]'ı çevreleyen tüm baronlukların aynı değiştiriciyi kazanma şansı #color_white %25#!'dir" #NT!
+ epidemic_events.5906.d.tt: "[doomsday_province.GetName]'ı çevreleyen tüm baronlukların aynı değiştiriciyi kazanma şansı #color_white %25#!'dir"
  fervor_loss_flagellants: "Kırbaççılar serbest bırakıldı"
   
  epidemic_events.5907.t: "Sabah Güneşi"

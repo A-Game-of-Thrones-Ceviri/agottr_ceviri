@@ -19,7 +19,7 @@
  CHARACTER_ACTIVITY_TOOLTIP: "[CHARACTER.GetUIName] bu etkinliğe katılıyor"
  CHARACTER_AT_LOCATION: "Konum: [PROVINCE.GetName|V]"
   #AGOT Modified 
- #CHARACTER_AT_ACTIVITY: "[PROVINCE.GetName|V]'de [ACTIVITY.GetName|V]'a katılıyor" #NT!
+ #CHARACTER_AT_ACTIVITY: "[PROVINCE.GetName|V]'de [ACTIVITY.GetName|V]'a katılıyor"
  CHARACTER_AT_ACTIVITY: "[PROVINCE.GetName|V] toprağında [ACTIVITY.GetName|V] yapıyor"
  CHARACTER_AT_ARMY: "[PROVINCE.GetName|V] toprağında [army|E] komuta ediyor"
  CHARACTER_TRAVEL_TO_LOCATION: "[PROVINCE.GetName|V] toprağına seyahat ediyor"
@@ -27,7 +27,7 @@
  CHARACTER_AT_COURT_VISITING: "[PROVINCE.GetName|V] toprağında [CHARACTER.GetShortUINamePossessive|V] [Concept( 'court', 'Sarayını' )|E] ziyaret ediyor"
  CHARACTER_AT_COURT: "[PROVINCE.GetName|V] toprağında [CHARACTER.GetShortUINamePossessive|V] [Concept( 'court', 'Sarayında' )|E]"
   #AGOT Modified 
- #CHARACTER_TRAVELING_OWNER: "Seyahat ederken [PROVINCE.GetName|V]'da" #NT!
+ #CHARACTER_TRAVELING_OWNER: "Seyahat ederken [PROVINCE.GetName|V]'da"
  CHARACTER_TRAVELING_OWNER: "[PROVINCE.GetName|V] topraklarında seyahat hâlinde"
  CHARACTER_TRAVELING_ENTOURAGE: "[PROVINCE.GetName|V] topraklarında [Select_CString( TRAVEL_PLAN.GetData.GetOwner.IsLocalPlayer, 'sizin', TRAVEL_PLAN.GetData.GetOwner.GetShortUIName )][Select_CString( TRAVEL_PLAN.GetData.GetOwner.IsLocalPlayer, '', ' adlı kişinin' )] [entourage|E][Select_CString( TRAVEL_PLAN.GetData.GetOwner.IsLocalPlayer, 'inizde', 'inde' )]"
  FORD_TOOLTIP: "$FROM$ ile $TO$ arasındaki geçit"
@@ -44,9 +44,9 @@
  MAP_REALM_TT_RELATION_OTHER: "Bağımsız Diyar"
   
   #AGOT Modified 
- #IMPASSIBLE_PROVINCE_TOOLTIP: "#T Geçilmez arazi#!" #NT!
+ #IMPASSIBLE_PROVINCE_TOOLTIP: "#T Geçilmez arazi#!"
  IMPASSIBLE_PROVINCE_TOOLTIP: "#T Geçilemez Arazi#!"
- #IMPASSPABLE_SEA_PROVINCE_TOOLTIP: "#T Bilinmeyen Deniz#!" #NT!
+ #IMPASSPABLE_SEA_PROVINCE_TOOLTIP: "#T Bilinmeyen Deniz#!"
  IMPASSPABLE_SEA_PROVINCE_TOOLTIP: "#T Bilinmeyen Deniz#!"
  SEA_PROVINCE_TOOLTIP: "#T [PROVINCE.GetName]#!\n[PROVINCE.GetTerrain.GetNameNoTooltip|V]"
  LAKE_PROVINCE_TOOLTIP: "#T Göl#!"
@@ -166,18 +166,18 @@
  LEGEND_QUALITY_OWNER_MODIFIER: "Sahibin etkisi: $MOD|%/+2=$"
  LEGEND_QUALITY_OWNER_MULTIPLIER: "Sahibin çarpanı: $BREAKDOWN_MULTIPLICATION_PREFIX$$MULT|2V$"
   
- ADMIN_VASSAL_TYPES_MAP_MODE_TT_HEADER: "#T [TITLE.GetNameNoTooltip]#!" #NT!
- ADMIN_VASSAL_TYPES_MAP_MODE_TT_HOLDER: "Yöneten: [CHARACTER.GetNameNoTooltip]" #NT!
- ADMIN_VASSAL_TYPES_MAP_MODE_TT_TYPE: "Yönetim: [CHARACTER.GetVassalContract.GetShortObligationLevelNameWithHighlightFor( 'administrative_themes' )]" #NT!
- ADMIN_VASSAL_TYPES_MAP_MODE_TT_EFFICIENCY: "[governor_efficiency|E]: @governor_efficiency!$ADMIN_WINDOW_THEME_GOVERNOR_EFFICIENCY_VALUE$" #NT!
- ADMIN_VASSAL_TYPES_MAP_MODE_TT_TAXES: "Vergiler: @gold_icon! #high $TAXES|2$ #!" #NT!
- ADMIN_VASSAL_TYPES_MAP_MODE_TT_TITLE_TROOPS_LABEL: "[TITLE.GetNameNoTooltip] Ordular:" #NT!
- ADMIN_VASSAL_TYPES_MAP_MODE_TT_TROOP_ENTRY: "$TAB$[MenAtArmsType.GetBaseTypeName]: $CURRENT$/$MAX$" #NT!
- ADMIN_VASSAL_TYPES_MAP_MODE_TT_HELD_BY_TOP_LIEGE: "#X [TITLE.GetName], [CHARACTER.GetTitleTierName|V]#! tarafından tutuluyor" #NT!
- ADMIN_VASSAL_TYPES_MAP_MODE_TT_NOT_HELD_BY_GOVERNOR: "#X [TITLE.GetName], [governor|E]#! tarafından tutulmaz" #NT!
- ADMIN_VASSAL_TYPES_MAP_MODE_TT_NOT_IN_REALM: "#X [TITLE.GetName] [TARGET_TITLE.GetNameNoTooltip]#!'ün parçası değildir" #NT!
- ADMIN_VASSAL_TYPES_MAP_MODE_TT_NOT_ADMIN_VASSAL: "#X [CHARACTER.GetShortUIName] of [TITLE.GetName] bir [administrative|E] [governor|E]#! değildir" #NT!
- ADMIN_VASSAL_TYPES_MAP_MODE_TT_NOT_ASSIGNED: "#X [TITLE.GetName] Oluşturulmadı#!" #NT!
- ADMIN_VASSAL_TYPES_MAP_MODE_TT_TOP_REALM: "En İyi Diyar: [TITLE.GetName]" #NT!
- ADMIN_VASSAL_TYPES_MAP_MODE_TT_LEFT_CLICK: "#I Ayrıntıları açmak için sol tıklayın#!" #NT!
- ADMIN_VASSAL_TYPES_MAP_MODE_TT_RIGHT_CLICK: "#I Görüntülemek için sağ tıklayın [CHARACTER.GetShortUINameNoTooltip]#!" #NT!
+ ADMIN_VASSAL_TYPES_MAP_MODE_TT_HEADER: "#T [TITLE.GetNameNoTooltip]#!"
+ ADMIN_VASSAL_TYPES_MAP_MODE_TT_HOLDER: "Yöneten: [CHARACTER.GetNameNoTooltip]"
+ ADMIN_VASSAL_TYPES_MAP_MODE_TT_TYPE: "Yönetim: [CHARACTER.GetVassalContract.GetShortObligationLevelNameWithHighlightFor( 'administrative_themes' )]"
+ ADMIN_VASSAL_TYPES_MAP_MODE_TT_EFFICIENCY: "[governor_efficiency|E]: @governor_efficiency!$ADMIN_WINDOW_THEME_GOVERNOR_EFFICIENCY_VALUE$"
+ ADMIN_VASSAL_TYPES_MAP_MODE_TT_TAXES: "Vergiler: @gold_icon! #high $TAXES|2$ #!"
+ ADMIN_VASSAL_TYPES_MAP_MODE_TT_TITLE_TROOPS_LABEL: "[TITLE.GetNameNoTooltip] Ordular:"
+ ADMIN_VASSAL_TYPES_MAP_MODE_TT_TROOP_ENTRY: "$TAB$[MenAtArmsType.GetBaseTypeName]: $CURRENT$/$MAX$"
+ ADMIN_VASSAL_TYPES_MAP_MODE_TT_HELD_BY_TOP_LIEGE: "#X [TITLE.GetName], [CHARACTER.GetTitleTierName|V]#! tarafından tutuluyor"
+ ADMIN_VASSAL_TYPES_MAP_MODE_TT_NOT_HELD_BY_GOVERNOR: "#X [TITLE.GetName], [governor|E]#! tarafından tutulmaz"
+ ADMIN_VASSAL_TYPES_MAP_MODE_TT_NOT_IN_REALM: "#X [TITLE.GetName] [TARGET_TITLE.GetNameNoTooltip]#!'ün parçası değildir"
+ ADMIN_VASSAL_TYPES_MAP_MODE_TT_NOT_ADMIN_VASSAL: "#X [CHARACTER.GetShortUIName] of [TITLE.GetName] bir [administrative|E] [governor|E]#! değildir"
+ ADMIN_VASSAL_TYPES_MAP_MODE_TT_NOT_ASSIGNED: "#X [TITLE.GetName] Oluşturulmadı#!"
+ ADMIN_VASSAL_TYPES_MAP_MODE_TT_TOP_REALM: "En İyi Diyar: [TITLE.GetName]"
+ ADMIN_VASSAL_TYPES_MAP_MODE_TT_LEFT_CLICK: "#I Ayrıntıları açmak için sol tıklayın#!"
+ ADMIN_VASSAL_TYPES_MAP_MODE_TT_RIGHT_CLICK: "#I Görüntülemek için sağ tıklayın [CHARACTER.GetShortUINameNoTooltip]#!"

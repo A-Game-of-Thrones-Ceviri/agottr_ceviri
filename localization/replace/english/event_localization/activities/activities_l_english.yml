@@ -5,7 +5,7 @@
  ACTIVITY_OWNED_BY: "#D Sahibi: $NAME$#!"
   
   #AGOT Modified 
- #ACTIVITY_FULL_NAME: "[Character.GetShortUINamePossessiveNoTooltip] [ActivityType.GetNameNoTooltip]" #NT!
+ #ACTIVITY_FULL_NAME: "[Character.GetShortUINamePossessiveNoTooltip] [ActivityType.GetNameNoTooltip]"
  ACTIVITY_FULL_NAME: "[Character.GetShortUINameNotMeNoTooltip] tarafından düzenlenen [ActivityType.GetNameNoTooltip]"
  ACTIVITY_SHORT_NAME: "[ActivityType.GetNameNoTooltip]"
   
@@ -157,8 +157,8 @@
  hunt_phase_desc: "Avınızı takip edin ve nasıl öldüreceğinizi seçin"
  activity_hunt_name: "Av"
  activity_hunt_desc: "Av kovalamak kadar tehlike ve heyecan hissi yaratan etkinlik pek yoktur. Ayrıca ata binme ve okçuluk yeteneklerizi de kullanmanızı sağlar.\n\nAvlar [GetCourtPositionType('master_of_hunt_court_position').GetName()] tarafından gözetlenir; yaygın, nadir ve vahşi hayvanların [Concept( 'hunt_sightings_no_prefix', 'izleri yakalanınca' )|E] haber verir."
- activity_hunt_desc_regular: "Kovalamaca bol miktarda heyecan ve tehlike sunar ve binicilik ve okçulukta sağlam bir temel sağlamaya yarar.\n\nAvlar, yaygın, nadir ve vahşi hayvanların [hunt_sightings_no_prefix|E]'ini duyuracak olan [GetCourtPositionType('master_of_hunt_court_position').GetName()] tarafından denetlenir." #NT!
- activity_hunt_desc_adventurer: "Kovalamaca bol miktarda heyecan ve tehlike sunar ve binicilik ve okçulukta sağlam bir temel sağlamaya yarar.\n\n[GetGovernment('landless_adventurer_government').GetName] avcılık daha az [prestige_i][prestige|E] verir ancak [provisions_i][provisions|E] sağlar. Avlar [GetCourtPositionType('huntperson_camp_officer').GetName()] tarafından denetlenir.\n\nBir avın başında [gold_i][gold|E] karşılığında avlanma haklarını satın alma fırsatı elde edersiniz, aksi takdirde [GetTrait('gallowsbait').GetName( GetNullCharacter )] [GetTrait( 'gallowsbait' ).GetTraitTrackByKey( 'poacher' ).GetName] [prestige_i]0 alırsınız." #NT!
+ activity_hunt_desc_regular: "Kovalamaca bol miktarda heyecan ve tehlike sunar ve binicilik ve okçulukta sağlam bir temel sağlamaya yarar.\n\nAvlar, yaygın, nadir ve vahşi hayvanların [hunt_sightings_no_prefix|E]'ini duyuracak olan [GetCourtPositionType('master_of_hunt_court_position').GetName()] tarafından denetlenir."
+ activity_hunt_desc_adventurer: "Kovalamaca bol miktarda heyecan ve tehlike sunar ve binicilik ve okçulukta sağlam bir temel sağlamaya yarar.\n\n[GetGovernment('landless_adventurer_government').GetName] avcılık daha az [prestige_i][prestige|E] verir ancak [provisions_i][provisions|E] sağlar. Avlar [GetCourtPositionType('huntperson_camp_officer').GetName()] tarafından denetlenir.\n\nBir avın başında [gold_i][gold|E] karşılığında avlanma haklarını satın alma fırsatı elde edersiniz, aksi takdirde [GetTrait('gallowsbait').GetName( GetNullCharacter )] [GetTrait( 'gallowsbait' ).GetTraitTrackByKey( 'poacher' ).GetName] [prestige_i]0 alırsınız."
  activity_hunt_owner: "Avcı"
   #Meditation 
  activity_meditation: "Münzevi Meditasyon"
@@ -216,7 +216,7 @@
  activity_invite_rule_vassals: "Vasallar"
  activity_invite_rule_vassals_no_default: "$activity_invite_rule_vassals$"
  activity_invite_rule_fellow_vassals: "Diğer Vasallar"
- activity_invite_rule_vassals_and_below: "Tüm Konular" #NT!
+ activity_invite_rule_vassals_and_below: "Tüm Konular"
  activity_invite_neighbouring_rulers: "Komşu Hükümdarlar"
  activity_invite_rule_knights: "Şövalyeler"
  activity_invite_rule_knights_no_default: "$activity_invite_rule_knights$"
@@ -252,7 +252,7 @@
  activity_pilgrimage.is_valid.islam.mandatory_or_impatient: "Bunlardan en az biri:\n$EFFECT_LIST_BULLET$ [Concept( 'faith', 'Mezhebiniz' )|E] [GetFaithDoctrine('doctrine_pilgrimage_mandatory_hajj').GetBaseName] [Concept( 'doctrine', 'İlkesine' )|E] sahip\n$EFFECT_LIST_BULLET$ [GetTrait('impatient').GetName(GetNullCharacter)]sınız"
  activity_pilgrimage.is_valid.other.mandatory_or_impatient: "Bunlardan en az biri:\n$EFFECT_LIST_BULLET$ [Concept( 'faith', 'Mezhebiniz' )|E] [GetFaithDoctrine('doctrine_pilgrimage_mandatory').GetBaseName] [Concept( 'doctrine', 'İlkesine' )|E] sahip\n$EFFECT_LIST_BULLET$ [GetTrait('impatient').GetName(GetNullCharacter)]sınız"
   # AGOT Modified 
- #activity_pilgrimage.is_valid.pilgrim_or_patient: "En azından şunlardan biri:\n$EFFECT_LIST_BULLET$ Sen [GetTrait('patient').GetName(GetNullCharacter)]'sin\n$EFFECT_LIST_BULLET$ Sen [GetTrait('pilgrim').GetName(GetNullCharacter)] [trait|E]'e sahipsin\n$EFFECT_LIST_BULLET$ Sen [GetTrait('hajjaj').GetName(GetNullCharacter)] [trait|E]'e sahipsin" #NT!
+ #activity_pilgrimage.is_valid.pilgrim_or_patient: "En azından şunlardan biri:\n$EFFECT_LIST_BULLET$ Sen [GetTrait('patient').GetName(GetNullCharacter)]'sin\n$EFFECT_LIST_BULLET$ Sen [GetTrait('pilgrim').GetName(GetNullCharacter)] [trait|E]'e sahipsin\n$EFFECT_LIST_BULLET$ Sen [GetTrait('hajjaj').GetName(GetNullCharacter)] [trait|E]'e sahipsin"
  activity_pilgrimage.is_valid.pilgrim_or_patient: "Bunlardan en az biri:\n$EFFECT_LIST_BULLET$ [GetTrait('patient').GetName(GetNullCharacter)]sınız\n$EFFECT_LIST_BULLET$ [GetTrait('pilgrim').GetName(GetNullCharacter)] [Concept( 'trait', 'Özelliğine' )|E] sahipsiniz\n$EFFECT_LIST_BULLET$ [GetTrait('hajjaj').GetName(GetNullCharacter)] [Concept( 'trait', 'Özelliğine' )|E] sahipsiniz"
   
  activity_pilgrimage.is_valid.hajjed_recently: "Hacca her [EmptyScope.ScriptValue('hajj_cooldown_value')|0] yılda bir gidebilirsiniz"
@@ -314,5 +314,5 @@
  liege_accolades_glory_reward_tour: "[root_scope.GetShortUINameNameNotMe] emrindeki [root_scope.Custom('KnightCulturePluralNoTooltip')|l] görkemli bir şekilde toprakları gezdiler"
   
   # Chariot Race 
- activity_chariot_race_province_constantinople: "\n#P +++ Konstantinopolis#!" #NT!
- activity_chariot_race_province_capital: "\n#P ++ Başkentiniz#!" #NT!
+ activity_chariot_race_province_constantinople: "\n#P +++ Konstantinopolis#!"
+ activity_chariot_race_province_capital: "\n#P ++ Başkentiniz#!"

@@ -135,10 +135,10 @@
  create_cadet_branch_decision_desc: "Belki de artık ailemle beraber [ROOT.Char.GetHouse.GetNameNoTooltip] Hanesinin mirasını terk edip, yüce hanedanımızda başında benim olduğum yeni bir haneyle tarihte kendi yolumuzu çizmemizin vakti gelmiştir."
  create_cadet_branch_decision_confirm: "Alt Hane Oluştur"
   #AGOT MODIFED 
- #I_CREATE_CADET_BRANCH_DECISION_SUCCESSION_LINE: "[house_head|E]'larınızdan birinin varislik sıralamasında üçüncü veya daha yakınsınız [titles|E]" #NT!
+ #I_CREATE_CADET_BRANCH_DECISION_SUCCESSION_LINE: "[house_head|E]'larınızdan birinin varislik sıralamasında üçüncü veya daha yakınsınız [titles|E]"
  I_CREATE_CADET_BRANCH_DECISION_SUCCESSION_LINE: "[Concept( 'house_head', 'Hane Reisinin' )|E] [Concept( 'titles', 'Unvanlarından' )|E] birinin veraset sırasında üçüncü ya da daha öndesiniz"
   #AGOT Modified 
- #I_NOT_CREATE_CADET_BRANCH_DECISION_SUCCESSION_LINE: "[house_head|E]'lerinizden birinin halefiyet sırasında üçüncü veya daha yakın olan #bold değil#!'siniz [titles|E]" #NT!
+ #I_NOT_CREATE_CADET_BRANCH_DECISION_SUCCESSION_LINE: "[house_head|E]'lerinizden birinin halefiyet sırasında üçüncü veya daha yakın olan #bold değil#!'siniz [titles|E]"
  I_NOT_CREATE_CADET_BRANCH_DECISION_SUCCESSION_LINE: "[Concept( 'house_head', 'Hane Reisinin' )|E] [Concept( 'titles', 'Unvanlarından' )|E] birinin veraset sırasında üçüncü ya da daha önde #bold değilsiniz#!"
  I_CREATE_CADET_BRANCH_DECISION_ANCESTOR_IN_HOUSE: "Atalarınızdan birisi mevcut [Concept( 'house', 'Hanenize' )|E] mensup"
  I_NOT_CREATE_CADET_BRANCH_DECISION_ANCESTOR_IN_HOUSE: "Hayattaki atalarınızdan hiçbiri mevcut [Concept( 'house', 'Hanenize' )|E] mensup değil"
@@ -170,8 +170,8 @@
  seek_aid_of_the_spirits_decision: "Ruhlardan Yardım İste"
  seek_aid_of_the_spirits_decision_tooltip: "Ruhlara ulaşmaya çalış"
  seek_aid_of_the_spirits_decision_desc: "#F Kimileri yardımsever, kimileri art niyetli, kimileri insanlardan farksız olan ruhlar dünyanın her yanına yayılmış durumda.\n\nBu ruhların, uğraşlarımda bana yardımcı olmaları için [ROOT.Char.Custom('MyPriestTitle')] tarafından çağrılmalarını isteyebilirim. Fakat sonucun ne olduğunu kimse bilemez...#!"
- seek_aid_of_the_spirits_decision_desc_landless: "\n\nÇabalarımda bana yardım etmeleri için onları çağırmak üzere bir ritüel gerçekleştirebilirim, ancak sonucun ne olacağını bilemem...#!" #NT!
- seek_aid_of_the_spirits_decision_desc_landed: "\n\nÇabalarımda bana yardım etmeleri için [ROOT.Char.Custom('MyPriestTitle')]'ımdan yardım isteyebilirim, ancak sonucun ne olacağını bilemem...#!" #NT!
+ seek_aid_of_the_spirits_decision_desc_landless: "\n\nÇabalarımda bana yardım etmeleri için onları çağırmak üzere bir ritüel gerçekleştirebilirim, ancak sonucun ne olacağını bilemem...#!"
+ seek_aid_of_the_spirits_decision_desc_landed: "\n\nÇabalarımda bana yardım etmeleri için [ROOT.Char.Custom('MyPriestTitle')]'ımdan yardım isteyebilirim, ancak sonucun ne olacağını bilemem...#!"
  seek_aid_of_the_spirits_decision_effect.tt: "Görünmeyenden yardım isteyeceksiniz..."
  seek_aid_of_the_spirits_decision_confirm: "Ruhlardan yardım iste"
   
@@ -338,8 +338,8 @@
  embrace_english_culture_decision_confirm: "İngiliz Kültürünü Benimse"
  decision_embrace_english_culture_get_innovations: "İngiliz [Concept( 'culture', 'Kültürü' )|E] tüm Norman ve Anglosakson [Concept( 'innovations', 'Buluşları' )|E] elde edecek"
  MY_CAPITAL_IS_IN_ENGLAND: "[Concept( 'realm_capital', 'Diyar Başkentiniz' )|E] İngiltere'de"
- HARRYING_ENDED: "Kuzey'in Harry'lenmesi sona erdi" #NT!
- HIGH_PACIFICATION: "Kuzey'in Harrying'i [harrying_pacification|E] olmuştur:\n$EFFECT_LIST_BULLET$[harrying_resistance|E]'den yüksek\n$EFFECT_LIST_BULLET$En az #V 1#! yıl boyunca #V 16#!'in üzerinde" #NT!
+ HARRYING_ENDED: "Kuzey'in Harry'lenmesi sona erdi"
+ HIGH_PACIFICATION: "Kuzey'in Harrying'i [harrying_pacification|E] olmuştur:\n$EFFECT_LIST_BULLET$[harrying_resistance|E]'den yüksek\n$EFFECT_LIST_BULLET$En az #V 1#! yıl boyunca #V 16#!'in üzerinde"
   
  restore_dumnonia_decision: "Cornwall Krallığını Yeniden Kur"
  restore_dumnonia_decision_desc: "Antik Dumnonia'nın ruhunun ateşi, Brutus Britanya'nın sisli kıyılarına indiği ilk andan beri sinemizde yanmaya devam etmekte. Artık bu ateş daha da kuvvetli yanacak."
@@ -447,17 +447,17 @@
  convert_to_feudalism_liege_converted_decision_confirm: "[ROOT.Char.GetLiege.GetGovernment.GetNameNoTooltip|U] Yöntemleri Benimse"
  convert_to_feudalism_liege_converted_decision_tooltip: "[government|E] şeklini [feudal|E] ya da [clan|E] olarak değiştir"
   
- convert_clan_to_feudalism_through_liege_decision: "Liege'de [ROOT.Char.GetLiege.GetGovernment.GetNameNoTooltip] Yolu Benimseyin" #NT!
- convert_clan_to_feudalism_through_liege_decision_desc: "[ROOT.Char.GetGovernment.GetNameNoTooltip] hükümetim, hükümdarımın [ROOT.Char.GetLiege.GetGovernment.GetNameNoTooltip] sistemine kıyasla güncelliğini yitirmiş durumda; benzer şekilde krallığımı yeniden yapılandırmak için [ROOT.Char.GetLiege.GetHerHis]'den yardım isteyebilirim." #NT!
- convert_clan_to_feudalism_through_liege_decision_confirm: "[ROOT.Char.GetLiege.GetGovernment.GetNameNoTooltip|U] Yöntemi benimseyin" #NT!
- convert_clan_to_feudalism_through_liege_decision_tooltip: "[government|E] türünü [feudal|E] olarak değiştir" #NT!
+ convert_clan_to_feudalism_through_liege_decision: "Liege'de [ROOT.Char.GetLiege.GetGovernment.GetNameNoTooltip] Yolu Benimseyin"
+ convert_clan_to_feudalism_through_liege_decision_desc: "[ROOT.Char.GetGovernment.GetNameNoTooltip] hükümetim, hükümdarımın [ROOT.Char.GetLiege.GetGovernment.GetNameNoTooltip] sistemine kıyasla güncelliğini yitirmiş durumda; benzer şekilde krallığımı yeniden yapılandırmak için [ROOT.Char.GetLiege.GetHerHis]'den yardım isteyebilirim."
+ convert_clan_to_feudalism_through_liege_decision_confirm: "[ROOT.Char.GetLiege.GetGovernment.GetNameNoTooltip|U] Yöntemi benimseyin"
+ convert_clan_to_feudalism_through_liege_decision_tooltip: "[government|E] türünü [feudal|E] olarak değiştir"
   
- convert_feudalism_to_clan_through_liege_decision: "Liege'de [ROOT.Char.GetLiege.GetGovernment.GetNameNoTooltip] Yolu Benimseyin" #NT!
- convert_feudalism_to_clan_through_liege_decision_desc: "[ROOT.Char.GetGovernment.GetNameNoTooltip] hükümetim, hükümdarımın [ROOT.Char.GetLiege.GetGovernment.GetNameNoTooltip] sistemine kıyasla güncelliğini yitirmiş durumda; benzer şekilde krallığımı yeniden yapılandırmak için [ROOT.Char.GetLiege.GetHerHis]'den yardım isteyebilirim." #NT!
- convert_feudalism_to_clan_through_liege_decision_confirm: "[ROOT.Char.GetLiege.GetGovernment.GetNameNoTooltip|U] Yöntemi benimseyin" #NT!
- convert_feudalism_to_clan_through_liege_decision_tooltip: "[government|E] türünü [clan|E] olarak değiştir" #NT!
- same_faith_as_liege: "Aynı [religion|E], [liege|E] veya [faith_righteous|E] [faith|E]" #NT!
- same_culture_as_liege: "Aynı [culture|E], [liege|E] veya [cultural_acceptance|E] #P +90%#!" #NT!
+ convert_feudalism_to_clan_through_liege_decision: "Liege'de [ROOT.Char.GetLiege.GetGovernment.GetNameNoTooltip] Yolu Benimseyin"
+ convert_feudalism_to_clan_through_liege_decision_desc: "[ROOT.Char.GetGovernment.GetNameNoTooltip] hükümetim, hükümdarımın [ROOT.Char.GetLiege.GetGovernment.GetNameNoTooltip] sistemine kıyasla güncelliğini yitirmiş durumda; benzer şekilde krallığımı yeniden yapılandırmak için [ROOT.Char.GetLiege.GetHerHis]'den yardım isteyebilirim."
+ convert_feudalism_to_clan_through_liege_decision_confirm: "[ROOT.Char.GetLiege.GetGovernment.GetNameNoTooltip|U] Yöntemi benimseyin"
+ convert_feudalism_to_clan_through_liege_decision_tooltip: "[government|E] türünü [clan|E] olarak değiştir"
+ same_faith_as_liege: "Aynı [religion|E], [liege|E] veya [faith_righteous|E] [faith|E]"
+ same_culture_as_liege: "Aynı [culture|E], [liege|E] veya [cultural_acceptance|E] #P +90%#!"
   
  convert_whole_realm_to_feudalism_decision: "[ROOT.Char.Custom('GetTribalReformGovernment')|U] Yöntemleri Benimse"
  convert_whole_realm_to_feudalism_decision_desc: "Eğer [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip], genişlemeye devam etmek ve gelişmek istiyorsa, birlikte eski yöntemleri geride bırakıp yeni bir yönetim metodunu benimsemeliyiz."
@@ -465,7 +465,7 @@
  convert_whole_realm_to_feudalism_decision_tooltip: "[government|E] şeklini [feudalism|E] benimsemek kaydıyla değiştir"
   
   #AGOT Modified 
- # islamic_vassals_will_convert: "Ben İslami olduğum için [tribal|E] vasallarım [clan|E] hükümeti olarak değişecek" #NT!
+ # islamic_vassals_will_convert: "Ben İslami olduğum için [tribal|E] vasallarım [clan|E] hükümeti olarak değişecek"
  islamic_vassals_will_convert: "Müslüman olduğum için tüm [tribal|E] vasallarım [clan|E] yönetimine geçecek"
  other_vassals_will_convert: "[tribal|E] vasallarım [feudalism|E] yönetimine geçecek"
  clan_liege_vassals_will_convert: "[liege|E]im [clan_government|E]ne sahip olduğu için benim [tribal|E] vasallarım $game_concept_clan$ olacak"
@@ -773,11 +773,11 @@
  declare_canarias_decision_tooltip: "Kanarya [Concept( 'kingdom', 'Krallığını' )|E] Kur"
  canarias_must_be_developed_tt: "[GetTitleByKey('d_canarias').GetNameNoTier] içerisindeki her [county|E] en az 10 [Concept( 'development', 'Gelişmişliğe' )|E] sahip olmalı"
  canarias_must_be_filled_tt: "[GetTitleByKey('d_canarias').GetNameNoTier] içerisindeki her [Concept( 'barony', 'Baronlukta' )|E] bir [holding|E] olmalı"
- government_is_feudal_tt: "[government|E]'ınız [GetGovernment('feudal_government').GetNameWithIcon]'dir" #NT!
- government_is_clan_tt: "[government|E]'ınız [GetGovernment('clan_government').GetNameWithIcon]'dir" #NT!
- government_is_tribal_tt: "[government|E]'ınız [GetGovernment('tribal_government').GetNameWithIcon]'dir" #NT!
- government_is_adventurer_tt: "[government|E]'ınız [GetGovernment('landless_adventurer_government').GetNameWithIcon]'dir" #NT!
- you_are_an_adventurer_tt: "Sen bir [GetGovernment('landless_adventurer_government').GetNameWithIcon]'sın" #NT!
+ government_is_feudal_tt: "[government|E]'ınız [GetGovernment('feudal_government').GetNameWithIcon]'dir"
+ government_is_clan_tt: "[government|E]'ınız [GetGovernment('clan_government').GetNameWithIcon]'dir"
+ government_is_tribal_tt: "[government|E]'ınız [GetGovernment('tribal_government').GetNameWithIcon]'dir"
+ government_is_adventurer_tt: "[government|E]'ınız [GetGovernment('landless_adventurer_government').GetNameWithIcon]'dir"
+ you_are_an_adventurer_tt: "Sen bir [GetGovernment('landless_adventurer_government').GetNameWithIcon]'sın"
   
   
   #Form custom kingdom or empire 
@@ -809,13 +809,13 @@
  minor_decisions.0001.desc: "[knight.GetTitledFirstName] çağrıma uyup sarayıma misafir olarak geldi"
  invite_knights_decision_tooltip: "Sarayınıza $knight_culture_player_plural$ çağrılacak"
   
- invite_poets_decision: "Şairleri Davet Et" #NT!
- invite_poets_decision_desc: "Güzel sanatların besleyicisi ve kelimelere değer veren herkesin koruyucusu olarak, salonuma daha fazla şair katmam uygun olur. Konularıma yetenekli söz ustaları aradığımı bildirmek için bir haberci göndereceğim." #NT!
- invite_poets_decision.tt: "Önümüzdeki aylarda Kampınıza en az #P 3#! şair ve #V [SCOPE.ScriptValue('invite_poets_decision_standard_value')|0]#! veya daha fazla [diplomacy|E] şair gelecektir\n$EFFECT_LIST_BULLET$Bazı nadir durumlarda, son derece yetenekli adaylar gelecektir" #NT!
- invite_poets_decision_tooltip: "Şairler sarayınıza davet ediliyor" #NT!
- minor_decisions.0004.t: "Şair Geldi" #NT!
- minor_decisions.0004.desc: "[poet.GetTitledFirstName] çağrımı duydu ve misafirim olarak geldi" #NT!
- invite_poets_decision_confirm: "$invite_knights_decision_confirm$" #NT!
+ invite_poets_decision: "Şairleri Davet Et"
+ invite_poets_decision_desc: "Güzel sanatların besleyicisi ve kelimelere değer veren herkesin koruyucusu olarak, salonuma daha fazla şair katmam uygun olur. Konularıma yetenekli söz ustaları aradığımı bildirmek için bir haberci göndereceğim."
+ invite_poets_decision.tt: "Önümüzdeki aylarda Kampınıza en az #P 3#! şair ve #V [SCOPE.ScriptValue('invite_poets_decision_standard_value')|0]#! veya daha fazla [diplomacy|E] şair gelecektir\n$EFFECT_LIST_BULLET$Bazı nadir durumlarda, son derece yetenekli adaylar gelecektir"
+ invite_poets_decision_tooltip: "Şairler sarayınıza davet ediliyor"
+ minor_decisions.0004.t: "Şair Geldi"
+ minor_decisions.0004.desc: "[poet.GetTitledFirstName] çağrımı duydu ve misafirim olarak geldi"
+ invite_poets_decision_confirm: "$invite_knights_decision_confirm$"
   
  invite_claimants_decision: "Hak Sahiplerini Davet Et"
  invite_claimants_decision_desc: "Diyarmi genişletmek için yabancı topraklarda meşru hak iddialarına sahip olmam gerekiyor. Neyse ki onlara vereceğim askerî destek karşılığında benim vasalım olacak birçok hak iddiası sahibi var."
@@ -857,7 +857,7 @@
  revoke_false_conversion_decision.tt: "Resmî olarak eski [Concept( 'faith', 'mezhebinize' )|E] geri dönün"
  revoke_false_conversion_decision.desc: "#F Resmî olarak [ROOT.Char.GetFaith.GetAdjectiveNoTooltip] inancına sahip olsam da atalarımın kurallarından ve inançlarından vazgeçemiyorum. Belki de eski inancım gerçekten de daha iyiydi?#!"
  revoke_false_conversion_decision.desc.tt: "Açık bir şekilde eski [Concept( 'faith', 'mezhebinize' )|E] geri döneceksiniz. [Concept( 'vassals', 'Vasallarınız' )|E] ve [close_family|E]niz sizinle beraber dinlerini değiştirebilir"
- revoke_false_conversion_decision.desc.tt_landless: "Önceki [faith|E]'ınıza geri dönersiniz. [close_family|E]'iniz sizinle birlikte dönüşebilir." #NT!
+ revoke_false_conversion_decision.desc.tt_landless: "Önceki [faith|E]'ınıza geri dönersiniz. [close_family|E]'iniz sizinle birlikte dönüşebilir."
  revoke_false_conversion_decision.desc.tt_own_faith_counties: "[independent|E] iseniz, [Concept( 'realm', 'Diyarınızda' )|E] [GetModifier('false_convert_modifier').GetNameWithTooltip] etkisine sahip olan [counties|E] gizliden gizliye sizin [Concept( 'faith', 'mezhebinizdense' )|E] sizinle birlikte dinini değiştirebilirler"
  revoke_false_conversion_decision_confirm: "Herkese ilan et"
  encourage_confession_of_false_conversions_decision: "Yalan Din Değişimleri için Af"
@@ -942,22 +942,22 @@
  secede_from_empire_decision_notification_tt: "Aşırı borcum nedeniyle oldu"
  secede_from_empire_decision_debug: "[ROOT.Char.GetPrimaryTitle.GetNmae], [ROOT.Char.GetLiege.GetPrimaryTitle.GetNameNoTooltip] ülkesinden ayrılarak borcu [debt_cleared.GetValue] kadar azalttı"
   
-  #DECISIONS TO "USE" YOUR STRESS COPING TRAITS TO LOSE STRESS "USE"
+  #DECISIONS TO "USE" YOUR STRESS COPING TRAITS TO LOSE STRESS
  stress_loss_drunkard_decision: "İçki İç"
  stress_loss_drunkard_decision_desc: "İçki masasındaki arkadaşlık ve bulanıklığın getirdiği huzur... Âlem yapma zamanı geldi!"
- stress_loss_drunkard_decision_tooltip: "Rahatla ve biraz stres kaybet"
+ stress_loss_drunkard_decision_tooltip: "Rahatla ve biraz stresten arın"
  stress_loss_drunkard_decision_effect_tooltip: "Biraz [stress|E] kaybedeceksiniz"
  stress_loss_drunkard_decision_confirm: "Şerefe!"
   
   #AGOT Modified 
- # stress_loss_hashishiyah_decision: "Haşhaş Kekleri Tüketin" #NT!
+ # stress_loss_hashishiyah_decision: "Haşhaş Kekleri Tüketin"
  stress_loss_hashishiyah_decision: "Haşişli Keklere Yumul"
   #AGOT Modified 
- # stress_loss_hashishiyah_decision_desc: "Sadece birkaç ısırık ve stres vücudumdan akıp gidiyor gibi görünüyor. Zihnim sislenmeye başlıyor ve bir huzur ve dinginlik hissi beni ele geçiriyor. İyi esrar kadar rahatlatıcı hiçbir şey yok!" #NT!
+ # stress_loss_hashishiyah_decision_desc: "Sadece birkaç ısırık ve stres vücudumdan akıp gidiyor gibi görünüyor. Zihnim sislenmeye başlıyor ve bir huzur ve dinginlik hissi beni ele geçiriyor. İyi esrar kadar rahatlatıcı hiçbir şey yok!"
  stress_loss_hashishiyah_decision_desc: "Birkaç lokmadan sonra stres bedenimden akıp gidiyor gibi. Zihnim bulanmaya başlıyor, bir huzur ve rahatlık hissiyle doluyor. Bence haşiş kadar rahatlatıcı bir şey yok!"
  stress_loss_hashishiyah_decision_tooltip: "Uyuşturucunun getirdiği bulanıklıkta stresinizi azaltın"
   #AGOT Modified 
- # stress_loss_hashishiyah_decision_confirm: "Bana bir tepsi getir!" #NT!
+ # stress_loss_hashishiyah_decision_confirm: "Bana bir tepsi getir!"
  stress_loss_hashishiyah_decision_confirm: "Bir tabak getirin!"
   
  stress_loss_rakish_decision: "Genelevi Ziyaret Et"
@@ -975,7 +975,7 @@
  stress_loss_irritable_decision: "Birine Bağır"
  stress_loss_irritable_decision_desc: "İçimde tuttuğum kızgınlıktan ve rahatsızlıktan kurtulmak kadar zihni açan bir şey yok. Bulduğum ilk fırsatta dilimi ısırmak yerine istediğimi diyeceğim."
  stress_loss_irritable_decision_effect_tooltip: "Rastgele bir vasala hakaret edersiniz"
- stress_loss_irritable_decision_effect_courtier_tooltip: "Rastgele birine hakaret ediyorsun [THIS.Char.Custom('GetCourtier')|l]" #NT!
+ stress_loss_irritable_decision_effect_courtier_tooltip: "Rastgele birine hakaret ediyorsun [THIS.Char.Custom('GetCourtier')|l]"
  stress_loss_irritable_decision_tooltip: "İstediğinizi diyerek zihninizi sakinleştirin"
  stress_loss_irritable_decision_confirm: "Bana mı dedin?"
   
@@ -1316,7 +1316,7 @@
  clear_ground_for_legendary_building_tooltip: "Topraklarınızdan birinde [special_building|E] bölmesi açın"
  clear_ground_for_legendary_building_desc: "Destanım tamamlandı ve halkıma ilham verdi. Topraklarım destanım anısına yeni bir anıt için hazır bekliyor ama tam olarak ne inşa etmeli?"
  clear_ground_for_legendary_building_confirm: "Alan aç"
- clear_ground_for_legendary_building_no_barony_tt: "[county|E]'inin başkenti olan, [leased|E] olmayan ve halihazırda [special_building|E] Slotu#! olmayan bir [barony|E]'a sahip olmalısınız" #NT!
+ clear_ground_for_legendary_building_no_barony_tt: "[county|E]'inin başkenti olan, [leased|E] olmayan ve halihazırda [special_building|E] Slotu#! olmayan bir [barony|E]'a sahip olmalısınız"
  clear_ground_legendary_hunting_lodge_tt: "Bir canavar hakkında Efsanevi veya Şanlı bir [legend|E] tamamlamış olmalısınız veya [GetTrait('lifestyle_hunter').GetName( GetNullCharacter )] [Concept( 'trait', 'Özelliğinde' )|E] #V 50#! tecrübeye ya da [GetCultureTradition('tradition_hunters').GetName] ve [GetCultureTradition('tradition_ep2_avid_falconers').GetName] [Concept( 'tradition', 'Geleneklerinden' )|E] birine sahip olmalısınız"
  clear_ground_legendary_watchtower_tt: "[GetDynastyPerk('ce1_legitimacy_legacy_5').GetName] [Concept( 'dynasty_perk', 'Hanedan Mirasına' )|E] sahipken bir Efsanevi veya Şanlı [legend|E] tamamlamış olmalısınız"
  clear_ground_legendary_shrine_tt: "Efsanevi veya Şanlı bir İlahilik [Concept( 'legend', 'Destanı' )|E] tamamlamış olmalısınız"
@@ -1329,12 +1329,12 @@
  can_build_legendary_hunting_lodge_tt: "#EMP $clear_ground_for_legendary_building$#! [Concept( 'decision', 'kararında' )|E] [GetBuilding('legendary_hunting_lodge').GetName] seçeneğine erişim kazanacaksınız"
  CHOOSE_LEGENDARY_BUILDING: "Bina seçin"
  clear_ground_for_legendary_building.toast: "Alan açıldı"
- pick_legendary_barony_decision: "$clear_ground_for_legendary_building$" #NT!
- pick_legendary_barony_decision_desc: "$clear_ground_for_legendary_building_desc$" #NT!
- pick_legendary_barony_decision_tooltip: "$clear_ground_for_legendary_building_tooltip$" #NT!
- pick_legendary_barony_decision_confirm: "Alanları temizleyin" #NT!
- clear_ground_for_legendary_building_custom_tt: "Şimdi efsanevi [building|E]\n#weak'niz için tutulan bir [barony|E] seçeceksiniz. Bu, [county|E]'ün başkenti olmalı, [leased|E] olmamalı ve halihazırda bir [special_building|E] Yuvası#! olmamalıdır." #NT!
- PICK_LEGENDARY_BARONY_DECISION_LABEL: "Konum:" #NT!
+ pick_legendary_barony_decision: "$clear_ground_for_legendary_building$"
+ pick_legendary_barony_decision_desc: "$clear_ground_for_legendary_building_desc$"
+ pick_legendary_barony_decision_tooltip: "$clear_ground_for_legendary_building_tooltip$"
+ pick_legendary_barony_decision_confirm: "Alanları temizleyin"
+ clear_ground_for_legendary_building_custom_tt: "Şimdi efsanevi [building|E]\n#weak'niz için tutulan bir [barony|E] seçeceksiniz. Bu, [county|E]'ün başkenti olmalı, [leased|E] olmamalı ve halihazırda bir [special_building|E] Yuvası#! olmamalıdır."
+ PICK_LEGENDARY_BARONY_DECISION_LABEL: "Konum:"
   
   
  isolate_family_decision: "İnzivaya Çekil"
@@ -1361,87 +1361,87 @@
   
  SELECT_ACTION: "Bir eylem seçin"
   
- restore_old_vasconia_decision: "Eski Vasconia'yı Onarın" #NT!
- restore_old_vasconia_decision_desc: "Baskların kadim vatanları uzun süredir yabancı işgalciler tarafından baskı altına alındı, atalarımızın toprakları üzerindeki iddiamızın onlara açıkça anlatılmasının zamanı geldi." #NT!
- restore_old_vasconia_decision_tooltip: "[GetTitleByKey('k_navarra').GetNameNoTier] Vasconia Krallığı olur." #NT!
- restore_old_vasconia_decision_effects_de_jure_tt: "Tamamen kontrol altına alınırsa, [GetTitleByKey('d_gascogne').GetNameNoTier], [GetTitleByKey('d_armagnac').GetNameNoTier], [GetTitleByKey('d_languedoc').GetNameNoTier], [GetTitleByKey('d_barcelona').GetNameNoTier], [GetTitleByKey('d_aragon').GetNameNoTier], [GetTitleByKey('d_castilla').GetNameNoTier] ve [GetTitleByKey('d_cantabria').GetNameNoTier]'nin [duchies|E]'ı her biri [de_jure|E] Vasconia olacaktır." #NT!
- restore_old_vasconia_decision_confirm: "Topraklarımız geri verildi!" #NT!
- restore_old_vasconia_decision_navarra_tt: "[GetTitleByKey('k_navarra').GetNameNoTier]'in [kingdom|E]'ına sahipsiniz veya mevcut değil" #NT!
- restore_old_vasconia_decision_vasconia_tt: "[kingdom|E] / [GetTitleByKey('k_navarra').GetNameNoTier] yeniden adlandırıldı #V Vasconia#!" #NT!
- restore_old_vasconia_decision_vasconia_past_tt: "[kingdom|E] Navarra'nın adı #V Vasconia olarak değiştirildi#!" #NT!
- restore_old_vasconia_decision_superseded_tt: "Bu sayede gereksiz hale getirilen herhangi bir tutulan [de_jure|E] [kingdoms|E] yok edilecektir" #NT!
- restore_old_vasconia_decision_counties_tt: "En az 4 [realm|E] [counties|E]'inizin [culture|E]'si olması gerekir" #NT!
- restore_old_vasconia_decision_culture_tt: "[culture|E]'ınız $basque$ veya $heritage_iberian_name$ Miraslı [divergent_culture|E] olmalıdır" #NT!
+ restore_old_vasconia_decision: "Eski Vasconia'yı Onarın"
+ restore_old_vasconia_decision_desc: "Baskların kadim vatanları uzun süredir yabancı işgalciler tarafından baskı altına alındı, atalarımızın toprakları üzerindeki iddiamızın onlara açıkça anlatılmasının zamanı geldi."
+ restore_old_vasconia_decision_tooltip: "[GetTitleByKey('k_navarra').GetNameNoTier] Vasconia Krallığı olur."
+ restore_old_vasconia_decision_effects_de_jure_tt: "Tamamen kontrol altına alınırsa, [GetTitleByKey('d_gascogne').GetNameNoTier], [GetTitleByKey('d_armagnac').GetNameNoTier], [GetTitleByKey('d_languedoc').GetNameNoTier], [GetTitleByKey('d_barcelona').GetNameNoTier], [GetTitleByKey('d_aragon').GetNameNoTier], [GetTitleByKey('d_castilla').GetNameNoTier] ve [GetTitleByKey('d_cantabria').GetNameNoTier]'nin [duchies|E]'ı her biri [de_jure|E] Vasconia olacaktır."
+ restore_old_vasconia_decision_confirm: "Topraklarımız geri verildi!"
+ restore_old_vasconia_decision_navarra_tt: "[GetTitleByKey('k_navarra').GetNameNoTier]'in [kingdom|E]'ına sahipsiniz veya mevcut değil"
+ restore_old_vasconia_decision_vasconia_tt: "[kingdom|E] / [GetTitleByKey('k_navarra').GetNameNoTier] yeniden adlandırıldı #V Vasconia#!"
+ restore_old_vasconia_decision_vasconia_past_tt: "[kingdom|E] Navarra'nın adı #V Vasconia olarak değiştirildi#!"
+ restore_old_vasconia_decision_superseded_tt: "Bu sayede gereksiz hale getirilen herhangi bir tutulan [de_jure|E] [kingdoms|E] yok edilecektir"
+ restore_old_vasconia_decision_counties_tt: "En az 4 [realm|E] [counties|E]'inizin [culture|E]'si olması gerekir"
+ restore_old_vasconia_decision_culture_tt: "[culture|E]'ınız $basque$ veya $heritage_iberian_name$ Miraslı [divergent_culture|E] olmalıdır"
   
- recruit_court_position_decision: "Mahkeme Pozisyonu İçin İşe Alım" #NT!
- recruit_court_position_decision_desc: "İyi işleyen bir [ROOT.Char.Custom('RealmType')] birçok elin çalışmasını gerektirir. Mahkememdeki boş pozisyonlar için uygun adaylar bulmak üzere hizmetkarlarımı her yere göndereceğim." #NT!
- recruit_court_position_decision_tooltip: "Ücret karşılığında [court|E]'inizde [court_position|E] veya diğer gerekli rolü dolduracak bir karakter arayın\n\n#weak Örneğin, bir [GetCourtPositionType('court_physician_court_position').GetName]#! kiralayabilirsiniz" #NT!
- CHOOSE_CHARACTER_ROLE_DECISION_NEXT_STEP_BUTTON: "Pozisyon Türünü Seçin" #NT!
- recruit_court_position_decision_confirm: "Onaylamak" #NT!
- find_wet_nurse_decision.tt: "Mahkemede $wet_nurse_court_position$'a ihtiyacı olan hiçbir çocuk yok" #NT!
- recruit_court_physician_cooldown_tt: "[GetCourtPositionType('court_physician_court_position').GetName]'ı işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_court_physician_cooldown' ))]'dir" #NT!
- recruit_travel_leader_cooldown_tt: "[GetCourtPositionType('travel_leader_court_position').GetName]'ı işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_travel_leader_cooldown' ))]'dir" #NT!
- recruit_wet_nurse_cooldown_tt: "[GetCourtPositionType('wet_nurse_court_position').GetName]'ı işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_wet_nurse_cooldown' ))]'dir" #NT!
- recruit_charioteer_cooldown_tt: "[GetCourtPositionType('charioteer_court_position').GetName]'ı işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_charioteer_cooldown' ))]'dir" #NT!
- recruit_bookmaker_cooldown_tt: "[GetCourtPositionType('bookmaker_court_position').GetName]'ı işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_bookmaker_cooldown' ))]'dir" #NT!
- recruit_court_gardener_cooldown_tt: "[GetCourtPositionType('court_gardener_court_position').GetName]'ı işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_court_gardener_cooldown' ))]'dir" #NT!
- recruit_chief_eunuch_cooldown_tt: "[GetCourtPositionType('chief_eunuch_court_position').GetName]'ı işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_chief_eunuch_cooldown' ))]'dir" #NT!
- recruit_linguist_self_cooldown_tt: "Bir Dilbilimci işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_linguist_self_cooldown' ))]" #NT!
- recruit_linguist_liege_cooldown_tt: "Bir Dilbilimci işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_linguist_liege_cooldown' ))]" #NT!
- recruit_court_position_decision_tt: "Seçilen [court_position|E] için seçebileceğiniz iki uygun aday alacaksınız" #NT!
+ recruit_court_position_decision: "Mahkeme Pozisyonu İçin İşe Alım"
+ recruit_court_position_decision_desc: "İyi işleyen bir [ROOT.Char.Custom('RealmType')] birçok elin çalışmasını gerektirir. Mahkememdeki boş pozisyonlar için uygun adaylar bulmak üzere hizmetkarlarımı her yere göndereceğim."
+ recruit_court_position_decision_tooltip: "Ücret karşılığında [court|E]'inizde [court_position|E] veya diğer gerekli rolü dolduracak bir karakter arayın\n\n#weak Örneğin, bir [GetCourtPositionType('court_physician_court_position').GetName]#! kiralayabilirsiniz"
+ CHOOSE_CHARACTER_ROLE_DECISION_NEXT_STEP_BUTTON: "Pozisyon Türünü Seçin"
+ recruit_court_position_decision_confirm: "Onaylamak"
+ find_wet_nurse_decision.tt: "Mahkemede $wet_nurse_court_position$'a ihtiyacı olan hiçbir çocuk yok"
+ recruit_court_physician_cooldown_tt: "[GetCourtPositionType('court_physician_court_position').GetName]'ı işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_court_physician_cooldown' ))]'dir"
+ recruit_travel_leader_cooldown_tt: "[GetCourtPositionType('travel_leader_court_position').GetName]'ı işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_travel_leader_cooldown' ))]'dir"
+ recruit_wet_nurse_cooldown_tt: "[GetCourtPositionType('wet_nurse_court_position').GetName]'ı işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_wet_nurse_cooldown' ))]'dir"
+ recruit_charioteer_cooldown_tt: "[GetCourtPositionType('charioteer_court_position').GetName]'ı işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_charioteer_cooldown' ))]'dir"
+ recruit_bookmaker_cooldown_tt: "[GetCourtPositionType('bookmaker_court_position').GetName]'ı işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_bookmaker_cooldown' ))]'dir"
+ recruit_court_gardener_cooldown_tt: "[GetCourtPositionType('court_gardener_court_position').GetName]'ı işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_court_gardener_cooldown' ))]'dir"
+ recruit_chief_eunuch_cooldown_tt: "[GetCourtPositionType('chief_eunuch_court_position').GetName]'ı işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_chief_eunuch_cooldown' ))]'dir"
+ recruit_linguist_self_cooldown_tt: "Bir Dilbilimci işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_linguist_self_cooldown' ))]"
+ recruit_linguist_liege_cooldown_tt: "Bir Dilbilimci işe almanın bekleme süresi [GetGameTimeDifferenceForDiffDays( THIS.VarRemaining( 'recruit_linguist_liege_cooldown' ))]"
+ recruit_court_position_decision_tt: "Seçilen [court_position|E] için seçebileceğiniz iki uygun aday alacaksınız"
   
- write_muwashshah_poem_decision: "Muvaşşah Şiiri Yaz" #NT!
- write_muwashshah_poem_decision_desc: "Etrafımda tuttuğum tüm büyük beyinlerle, popüler Muwashshah tarzında yeni bir şiir yazmak oldukça basit olurdu. Eserlerimi okumaya istekli bu kadar çok insan varken, onun son dinlenme yeri için de birden fazla seçeneğim var." #NT!
- write_muwashshah_poem_decision_tooltip: "Para karşılığında satmak, kendinize saklamak veya ücretsiz dağıtmak için yeni bir şiir yazın.\n\n$EFFECT_LIST_BULLET$Şiiri satmak [gold_i][gold|E] tutarında bir kazanç sağlayacaktır.\n$EFFECT_LIST_BULLET$Şiiri saklamak Çift Ay Kitabına bir değiştirici ekler. [artifact|E]\n$EFFECT_LIST_BULLET$Şiiri dağıtmak ekstra [prestige_i][prestige|E] ile sonuçlanacaktır." #NT!
- sell_poem_decision: "Şiir Sat" #NT!
- sell_poem_decision_tooltip: "Şiiri sat, getir [gold_i][gold|E]" #NT!
- keep_poem_decision: "Şiiri sakla" #NT!
- keep_poem_decision_tooltip: "Şiiri saklayın, Çift Ay Kitabınızı düzenleyin [artifact|E]" #NT!
- distribute_poem_decision: "Şiiri Dağıt" #NT!
- distribute_poem_decision_tooltip: "Şiiri kitlelere ücretsiz dağıtın, size [prestige_i][prestige|E] kazandırsın" #NT!
- CHOOSE_POEM_DECISION_NEXT_STEP_BUTTON: "Şiirin Kaderini Seçin" #NT!
- write_muwashshah_poem_decision_confirm: "Çalışmaya başla" #NT!
+ write_muwashshah_poem_decision: "Muvaşşah Şiiri Yaz"
+ write_muwashshah_poem_decision_desc: "Etrafımda tuttuğum tüm büyük beyinlerle, popüler Muwashshah tarzında yeni bir şiir yazmak oldukça basit olurdu. Eserlerimi okumaya istekli bu kadar çok insan varken, onun son dinlenme yeri için de birden fazla seçeneğim var."
+ write_muwashshah_poem_decision_tooltip: "Para karşılığında satmak, kendinize saklamak veya ücretsiz dağıtmak için yeni bir şiir yazın.\n\n$EFFECT_LIST_BULLET$Şiiri satmak [gold_i][gold|E] tutarında bir kazanç sağlayacaktır.\n$EFFECT_LIST_BULLET$Şiiri saklamak Çift Ay Kitabına bir değiştirici ekler. [artifact|E]\n$EFFECT_LIST_BULLET$Şiiri dağıtmak ekstra [prestige_i][prestige|E] ile sonuçlanacaktır."
+ sell_poem_decision: "Şiir Sat"
+ sell_poem_decision_tooltip: "Şiiri sat, getir [gold_i][gold|E]"
+ keep_poem_decision: "Şiiri sakla"
+ keep_poem_decision_tooltip: "Şiiri saklayın, Çift Ay Kitabınızı düzenleyin [artifact|E]"
+ distribute_poem_decision: "Şiiri Dağıt"
+ distribute_poem_decision_tooltip: "Şiiri kitlelere ücretsiz dağıtın, size [prestige_i][prestige|E] kazandırsın"
+ CHOOSE_POEM_DECISION_NEXT_STEP_BUTTON: "Şiirin Kaderini Seçin"
+ write_muwashshah_poem_decision_confirm: "Çalışmaya başla"
   
- rebuke_roman_revanchism_sicily: "Sicilya'ya Karşı Roma İntikamını Kınamak" #NT!
- rebuke_roman_revanchism_sicily_desc: "Bu Doğuluların güney yarımadasının güzel topraklarına ne iddiaları var? Buraya sadece yıkım ve beceriksiz bürokrasi getirdiler ve onların görevden alınması kesinlikle sadece iyiye yarayabilir." #NT!
- rebuke_roman_revanchism_sicily_tooltip: "[GetTitleByKey('k_sicily').GetNameNoTier]'ı [GetTitleByKey('e_byzantium').GetDefinitiveName]'den kaldır" #NT!
- rebuke_roman_revanchism_sicily_confirm: "Justinianus'un anısını parçalayın!" #NT!
- rebuke_roman_revanchism_sicily.tt.requirements.lower_tally: "[GetGeographicalRegion('custom_sicily').GetName] içinde en az [EmptyScope.ScriptValue('rebuke_roman_revanchism_sicily_requirements_no_ere_county_value')|V0] [counties|E]'i kontrol ediyorsunuz" #NT!
- rebuke_roman_revanchism_sicily.tt.requirements.ere_booted: "[GetTitleByKey('e_byzantium').GetDefinitiveName], #V 0#! [counties|E]'ü [GetGeographicalRegion('custom_sicily').GetName] içinde kontrol eder" #NT!
- rebuke_roman_revanchism_sicily.tt.requirements.higher_tally: "[GetGeographicalRegion('custom_sicily').GetName] içinde en az [EmptyScope.ScriptValue('rebuke_roman_revanchism_sicily_requirements_some_ere_county_value')|V0] [counties|E]'i kontrol ediyorsunuz" #NT!
- rebuke_roman_revanchism_sicily.tt.sicily_has_no_holder: "Hayır [ruler|E] [GetTitleByKey('k_sicily').GetNameNoTier]'i tutar" #NT!
- rebuke_roman_revanchism_sicily.tt.requirements.ere_cant_be_revanchising: "Ya [GetTitleByKey('e_byzantium').GetBaseNameNoTier] [GetDecisionWithKey('retake_eastern_provinces_decision').GetName] [decision|E]'yi almamış ya da mevcut değil" #NT!
- rebuke_roman_revanchism_sicily.tt.requirements.ere_not_in_italy: "[GetTitleByKey('e_byzantium').GetDefinitiveName], [EmptyScope.ScriptValue('rebuke_roman_revanchism_sicily_requirements_no_ere_in_italy_county_value')|V0]'den azını kontrol eder [counties|E], [GetGeographicalRegion('world_europe_south_italy').GetName] içinde" #NT!
- rebuke_roman_revanchism_sicily.tt.effects.option.1: "Eğer [GetTitleByKey('k_sicily').GetNameNoTier]'ı kuzeyle yeniden birleştirirseniz" #NT!
- rebuke_roman_revanchism_sicily.tt.effects.option.2: "Eğer Akdeniz komşularıyla [GetTitleByKey('k_sicily').GetNameNoTier] hizalanırsanız" #NT!
- rebuke_roman_revanchism_sicily.tt.effects.option.3: "[GetTitleByKey('k_sicily').GetNameNoTier]'ı eklemeyi seçerseniz" #NT!
+ rebuke_roman_revanchism_sicily: "Sicilya'ya Karşı Roma İntikamını Kınamak"
+ rebuke_roman_revanchism_sicily_desc: "Bu Doğuluların güney yarımadasının güzel topraklarına ne iddiaları var? Buraya sadece yıkım ve beceriksiz bürokrasi getirdiler ve onların görevden alınması kesinlikle sadece iyiye yarayabilir."
+ rebuke_roman_revanchism_sicily_tooltip: "[GetTitleByKey('k_sicily').GetNameNoTier]'ı [GetTitleByKey('e_byzantium').GetDefinitiveName]'den kaldır"
+ rebuke_roman_revanchism_sicily_confirm: "Justinianus'un anısını parçalayın!"
+ rebuke_roman_revanchism_sicily.tt.requirements.lower_tally: "[GetGeographicalRegion('custom_sicily').GetName] içinde en az [EmptyScope.ScriptValue('rebuke_roman_revanchism_sicily_requirements_no_ere_county_value')|V0] [counties|E]'i kontrol ediyorsunuz"
+ rebuke_roman_revanchism_sicily.tt.requirements.ere_booted: "[GetTitleByKey('e_byzantium').GetDefinitiveName], #V 0#! [counties|E]'ü [GetGeographicalRegion('custom_sicily').GetName] içinde kontrol eder"
+ rebuke_roman_revanchism_sicily.tt.requirements.higher_tally: "[GetGeographicalRegion('custom_sicily').GetName] içinde en az [EmptyScope.ScriptValue('rebuke_roman_revanchism_sicily_requirements_some_ere_county_value')|V0] [counties|E]'i kontrol ediyorsunuz"
+ rebuke_roman_revanchism_sicily.tt.sicily_has_no_holder: "Hayır [ruler|E] [GetTitleByKey('k_sicily').GetNameNoTier]'i tutar"
+ rebuke_roman_revanchism_sicily.tt.requirements.ere_cant_be_revanchising: "Ya [GetTitleByKey('e_byzantium').GetBaseNameNoTier] [GetDecisionWithKey('retake_eastern_provinces_decision').GetName] [decision|E]'yi almamış ya da mevcut değil"
+ rebuke_roman_revanchism_sicily.tt.requirements.ere_not_in_italy: "[GetTitleByKey('e_byzantium').GetDefinitiveName], [EmptyScope.ScriptValue('rebuke_roman_revanchism_sicily_requirements_no_ere_in_italy_county_value')|V0]'den azını kontrol eder [counties|E], [GetGeographicalRegion('world_europe_south_italy').GetName] içinde"
+ rebuke_roman_revanchism_sicily.tt.effects.option.1: "Eğer [GetTitleByKey('k_sicily').GetNameNoTier]'ı kuzeyle yeniden birleştirirseniz"
+ rebuke_roman_revanchism_sicily.tt.effects.option.2: "Eğer Akdeniz komşularıyla [GetTitleByKey('k_sicily').GetNameNoTier] hizalanırsanız"
+ rebuke_roman_revanchism_sicily.tt.effects.option.3: "[GetTitleByKey('k_sicily').GetNameNoTier]'ı eklemeyi seçerseniz"
   
- roman_restoration.1211.t: "Justinianus'un Hayali Gerçekleşmedi" #NT!
- roman_restoration.1211.desc.intro: "Yüzlerce yıldır Bizanslılar, İtalyan Yarımadası'ndaki son dayanaklarına tutundular, kanlı çivileri toprağa çaktılar ve ne kadar tekmelersek tekmeleyelim bırakmayı reddettiler.\n\nArtık yok. Bugün, kontrolleri sonunda sonsuza dek serbest bırakılacak kadar gevşedi ve bunu tüm dünyanın bilmesini sağlayacağım.\n\n" #NT!
- roman_restoration.1211.desc.body.emperor_exists: "[emperor.GetTitledFirstNameNicknamed], tüm [emperor.GetSheHe] beğenilerine öfkelenip homurdanabilir — eğer [emperor.GetSheHe], rahat bir saraydan çok uzakta olan bir ayrılıkçı eyaleti fark etmeye bile zahmet edebiliyorsa — ama [emperor.GetSheHe] beni durdurmak için hiçbir şey yapamaz." #NT!
- roman_restoration.1211.desc.body.emperor_absent: "İlanımı protesto edecek bir imparator bile yok. Zavallı." #NT!
- roman_restoration.1211.desc.outro: "\n\nTek soru şu... adil [GetTitleByKey('k_sicily').GetNameNoTier]'ı artık nereye ait görüyorum?" #NT!
- roman_restoration.1211.a: "Biz kuzeyli kardeşlerimize sonsuza dek bağlıyız." #NT!
- roman_restoration.1211.b: "Sicilya'nın kaderi her zaman olduğu gibi denizin ötesindedir." #NT!
- roman_restoration.1211.c: "Elbette [ROOT.Char.GetPrimaryTitle.GetBaseNameNoTierNoTooltip] ile!" #NT!
+ roman_restoration.1211.t: "Justinianus'un Hayali Gerçekleşmedi"
+ roman_restoration.1211.desc.intro: "Yüzlerce yıldır Bizanslılar, İtalyan Yarımadası'ndaki son dayanaklarına tutundular, kanlı çivileri toprağa çaktılar ve ne kadar tekmelersek tekmeleyelim bırakmayı reddettiler.\n\nArtık yok. Bugün, kontrolleri sonunda sonsuza dek serbest bırakılacak kadar gevşedi ve bunu tüm dünyanın bilmesini sağlayacağım.\n\n"
+ roman_restoration.1211.desc.body.emperor_exists: "[emperor.GetTitledFirstNameNicknamed], tüm [emperor.GetSheHe] beğenilerine öfkelenip homurdanabilir — eğer [emperor.GetSheHe], rahat bir saraydan çok uzakta olan bir ayrılıkçı eyaleti fark etmeye bile zahmet edebiliyorsa — ama [emperor.GetSheHe] beni durdurmak için hiçbir şey yapamaz."
+ roman_restoration.1211.desc.body.emperor_absent: "İlanımı protesto edecek bir imparator bile yok. Zavallı."
+ roman_restoration.1211.desc.outro: "\n\nTek soru şu... adil [GetTitleByKey('k_sicily').GetNameNoTier]'ı artık nereye ait görüyorum?"
+ roman_restoration.1211.a: "Biz kuzeyli kardeşlerimize sonsuza dek bağlıyız."
+ roman_restoration.1211.b: "Sicilya'nın kaderi her zaman olduğu gibi denizin ötesindedir."
+ roman_restoration.1211.c: "Elbette [ROOT.Char.GetPrimaryTitle.GetBaseNameNoTierNoTooltip] ile!"
   
- roman_restoration.1212.t: "$roman_restoration.1211.t$" #NT!
- roman_restoration.1212.desc.intro: "Yüzyıllarca süren inatçı, kararlı direnişin ardından, her türden barbar ordularının kadim vatanımızın son kalıntılarını yağmalamasıyla, [taker.GetTitledFirstName] sonunda diğerlerinin başarısız olduğu yerde başarılı oldu.\n\nKorsan, Roma'nın batı yarımadasındaki son kontrolünü ortadan kaldırdı." #NT!
- roman_restoration.1212.desc.new_empire.italia: "Bunun yerine bölgeyi güçlü bir şekilde [GetTitleByKey('e_italy').GetNameNoTier] ile hizalayın." #NT!
- roman_restoration.1212.desc.new_empire.maghreb: "[GetTitleByKey('e_maghreb').GetNameNoTier] ile birlikte onu Afrika dünyasına getiriyoruz." #NT!
- roman_restoration.1212.desc.new_empire.own: "[taker.GetHerHis] topraklarını [taker.GetPrimaryTitle.GetBaseNameNoTier]'in kendi krallığına dahil etmek." #NT!
- roman_restoration.1212.desc.outro.territory_left: "\n\nGeriye kalan dağınık, az sayıdaki karakolumuz bu rezalete karşı gerçek bir direniş gösteremiyor." #NT!
- roman_restoration.1212.desc.outro.no_territory_left: "\n\nGüneyde bize ait tek bir liman bile yokken, bu adaletsizliğe karşı koyabileceğimiz hiçbir şey yok." #NT!
- roman_restoration.1212.a: "O küstah herif!" #NT!
+ roman_restoration.1212.t: "$roman_restoration.1211.t$"
+ roman_restoration.1212.desc.intro: "Yüzyıllarca süren inatçı, kararlı direnişin ardından, her türden barbar ordularının kadim vatanımızın son kalıntılarını yağmalamasıyla, [taker.GetTitledFirstName] sonunda diğerlerinin başarısız olduğu yerde başarılı oldu.\n\nKorsan, Roma'nın batı yarımadasındaki son kontrolünü ortadan kaldırdı."
+ roman_restoration.1212.desc.new_empire.italia: "Bunun yerine bölgeyi güçlü bir şekilde [GetTitleByKey('e_italy').GetNameNoTier] ile hizalayın."
+ roman_restoration.1212.desc.new_empire.maghreb: "[GetTitleByKey('e_maghreb').GetNameNoTier] ile birlikte onu Afrika dünyasına getiriyoruz."
+ roman_restoration.1212.desc.new_empire.own: "[taker.GetHerHis] topraklarını [taker.GetPrimaryTitle.GetBaseNameNoTier]'in kendi krallığına dahil etmek."
+ roman_restoration.1212.desc.outro.territory_left: "\n\nGeriye kalan dağınık, az sayıdaki karakolumuz bu rezalete karşı gerçek bir direniş gösteremiyor."
+ roman_restoration.1212.desc.outro.no_territory_left: "\n\nGüneyde bize ait tek bir liman bile yokken, bu adaletsizliğe karşı koyabileceğimiz hiçbir şey yok."
+ roman_restoration.1212.a: "O küstah herif!"
   
- roman_restoration.1213.t: "$roman_restoration.1211.t$" #NT!
- roman_restoration.1213.desc.intro: "Yüzyıllar boyunca İtalyan toprakları için bir okyanus dolusu kan dökmelerine rağmen, [taker.GetTitledFirstNameNicknamed] sonunda Romalıları [GetTitleByKey('k_sicily').GetNameNoTier]'in onlar için kaybedildiğini kabul etmeye zorladı.\n\nBunun yerine, topraklar artık" #NT!
- roman_restoration.1213.desc.new_empire.italia: "Yarımadanın geri kalanını yardıma çağırdı." #NT!
- roman_restoration.1213.desc.new_empire.maghreb: "kendilerini okyanusun ötesindeki Afrikalı komşularının bir parçası olarak görüyorlar ve [GetTitleByKey('e_maghreb').GetNameNoTier]'ın ötesindeki kadim kuzenlerinin bir parçası olarak görüyorlar." #NT!
- roman_restoration.1213.desc.new_empire.own: "[taker.GetHerHis] kendi [taker.GetPrimaryTitle.GetBaseName]'ini #EMP yeni#! imparatorluğu olarak kur." #NT!
- roman_restoration.1213.desc.body.emperor_exists: "[emperor.GetTitledFirstName] Daha küçük bir eyaletin kaybı için beklenebilecek kadar protesto var, ama bundan fazlası değil." #NT!
- roman_restoration.1213.desc.body.emperor_absent: "Karşı çıkacak bir imparator bile olmayınca, Roma İtalyası inleyerek ölüyor." #NT!
- roman_restoration.1213.desc.outro.territory_left: "\n\nİmparatorluğun Adriyatik'in öte yakasında kalan son birkaç direnişçisi şimdi her zamankinden daha fazla tehlike altında görünüyor." #NT!
- roman_restoration.1213.desc.outro.no_territory_left: "\n\nKayıp topraklarda tek bir Roma şehri bile kalmayınca, Justinianus'un hayalinin ölümü için yas tutacak kimse kalmadı." #NT!
- roman_restoration.1213.a: "İyi ki kurtulmuşuz!" #NT!
- roman_restoration.1213.b: "Ne karanlık zamanlarda yaşıyoruz..." #NT!
+ roman_restoration.1213.t: "$roman_restoration.1211.t$"
+ roman_restoration.1213.desc.intro: "Yüzyıllar boyunca İtalyan toprakları için bir okyanus dolusu kan dökmelerine rağmen, [taker.GetTitledFirstNameNicknamed] sonunda Romalıları [GetTitleByKey('k_sicily').GetNameNoTier]'in onlar için kaybedildiğini kabul etmeye zorladı.\n\nBunun yerine, topraklar artık"
+ roman_restoration.1213.desc.new_empire.italia: "Yarımadanın geri kalanını yardıma çağırdı."
+ roman_restoration.1213.desc.new_empire.maghreb: "kendilerini okyanusun ötesindeki Afrikalı komşularının bir parçası olarak görüyorlar ve [GetTitleByKey('e_maghreb').GetNameNoTier]'ın ötesindeki kadim kuzenlerinin bir parçası olarak görüyorlar."
+ roman_restoration.1213.desc.new_empire.own: "[taker.GetHerHis] kendi [taker.GetPrimaryTitle.GetBaseName]'ini #EMP yeni#! imparatorluğu olarak kur."
+ roman_restoration.1213.desc.body.emperor_exists: "[emperor.GetTitledFirstName] Daha küçük bir eyaletin kaybı için beklenebilecek kadar protesto var, ama bundan fazlası değil."
+ roman_restoration.1213.desc.body.emperor_absent: "Karşı çıkacak bir imparator bile olmayınca, Roma İtalyası inleyerek ölüyor."
+ roman_restoration.1213.desc.outro.territory_left: "\n\nİmparatorluğun Adriyatik'in öte yakasında kalan son birkaç direnişçisi şimdi her zamankinden daha fazla tehlike altında görünüyor."
+ roman_restoration.1213.desc.outro.no_territory_left: "\n\nKayıp topraklarda tek bir Roma şehri bile kalmayınca, Justinianus'un hayalinin ölümü için yas tutacak kimse kalmadı."
+ roman_restoration.1213.a: "İyi ki kurtulmuşuz!"
+ roman_restoration.1213.b: "Ne karanlık zamanlarda yaşıyoruz..."

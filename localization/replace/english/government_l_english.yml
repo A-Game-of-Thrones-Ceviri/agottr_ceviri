@@ -5,7 +5,7 @@
  feudal_government_realm: "Feodal Diyar"
  feudal_government_vassals_label: "Feodal [obligations|E] her vasalın [Concept( 'feudal_contract', 'Feodal Sözleşmesine' )|E] göre belirlenir."
   #AGOT Modified 
- #feudal_government_desc: "$game_concept_feudal_desc$\n\n#F Feodalizm, 9. ve 15. yüzyıllar arasında Avrupa'da baskın hükümet biçimiydi. Feodal sistem, toprak sahibi ile orada yaşamak için hizmet ve emek sağlayanlar arasındaki ilişkiye dayanır. Toprağı elinde tutan yöneticiler, yönetmeleri için fief'ler verilen vasallar atar. Karşılığında, vasallar da hükümdarlarına [soldiers|E] ve [taxes|E] sağlar.#!" #NT!
+ #feudal_government_desc: "$game_concept_feudal_desc$\n\n#F Feodalizm, 9. ve 15. yüzyıllar arasında Avrupa'da baskın hükümet biçimiydi. Feodal sistem, toprak sahibi ile orada yaşamak için hizmet ve emek sağlayanlar arasındaki ilişkiye dayanır. Toprağı elinde tutan yöneticiler, yönetmeleri için fief'ler verilen vasallar atar. Karşılığında, vasallar da hükümdarlarına [soldiers|E] ve [taxes|E] sağlar.#!"
  feudal_government_desc: "$game_concept_feudal_desc$\n\n#F Feodalizm 9. ila 15. yüzyıllar arasında Avrupa'da en yaygın yönetim biçimidir. Feodal sistem toprak sahibiyle orada yaşamak için hizmet ve işçilik sunanlar arasındaki ilişkiye dayanır. Bu sistemde toprak sahibi hükümdarlar vasallar atayarak onlara yönetme hakkı tanır, bunun karşılığında vasallar süzerenlerine [soldier|E] ve [tax|E] sağlarlar.#!"
  feudal_government_obligations: "[GetGovernment( 'feudal_government' ).GetName] [Concept( 'obligations', 'Yükümlülükleri' )|E]"
  feudal_obligation_low: "Düşük $feudal_government_obligations$"
@@ -58,16 +58,16 @@
  special_contract_scutage_desc: "#flavor $special_contract_scutage$ne tabi olan [vassals|E] [Concept( 'obligation', 'Yükümlülüklerinin' )|E] öngördüğü miktardan #high %[EmptyScope.ScriptValue('scutage_contract_tax_tooltip')|0]#! daha fazla [tax|E] öderler. Öte yandan [Concept( 'obligation', 'Yükümlülüklerinin' )|E] öngördüğünden #high %[EmptyScope.ScriptValue('scutage_contract_levies_tooltip')|0]#! daha az [levy|E] Katkısında bulunurlar.#!"
  special_contract_march: "Sınır Beyliği Sözleşmesi"
  special_contract_march_desc: "#flavor $special_contract_march$ne tabi olan [vassals|E], [levy] ve savunma odaklı çeşitli bonuslar elde ederler fakat [Concept( 'obligation', 'Yükümlülüklerinin' )|E] öngördüğünden #high %[EmptyScope.ScriptValue('march_contract_taxes_tooltip')|0]#! daha az [tax|E] öderler.#!"
- special_contract_march_border_trigger: "[vassal.GetName] yabancı bir [realm|E] ile sınır oluşturmaz" #NT!
+ special_contract_march_border_trigger: "[vassal.GetName] yabancı bir [realm|E] ile sınır oluşturmaz"
  special_contract_palatinate: "Palatinlik Sözleşmesi"
  special_contract_palatinate_desc: "#flavor $special_contract_palatinate$ne tabi olan [vassals|E] ülke içerisindeki saygınlıklarını arttıran çeşitli siyasi ayrıcalıklara sahip olurlar. $special_contract_palatinate_short$ [vassals|E] [Concept( 'liege', 'Süzerenlerinin' )|E] [Concept( 'prestige', 'Prestijini' )|E] arttırırlar fakat [Concept( 'obligation', 'Yükümlülüklerinin' )|E] öngördüğünden #high %[EmptyScope.ScriptValue('palatinate_contract_taxes_tooltip')|0]#! daha az [tax|E] ve [levy|E] sağlarlar.#!"
- special_contract_castellan: "Castellan Sözleşmesi" #NT!
- special_contract_castellan_desc: "#flavor $special_contract_castellan$'e tabi iken, [vassal|E] [levies] ve savunma yeteneklerine bonuslar alacaktır. #high [EmptyScope.ScriptValue('march_contract_taxes_tooltip')|0]%#! daha az [tax|E], ancak #high [EmptyScope.ScriptValue('castellan_contract_levies_tooltip')0]%#! daha fazla $special_contract_castellan$1 sağlarlar $special_contract_castellan$2 $special_contract_castellan$3'lerinin emrettiğinden.#!" #NT!
+ special_contract_castellan: "Castellan Sözleşmesi"
+ special_contract_castellan_desc: "#flavor $special_contract_castellan$'e tabi iken, [vassal|E] [levies] ve savunma yeteneklerine bonuslar alacaktır. #high [EmptyScope.ScriptValue('march_contract_taxes_tooltip')|0]%#! daha az [tax|E], ancak #high [EmptyScope.ScriptValue('castellan_contract_levies_tooltip')0]%#! daha fazla $special_contract_castellan$1 sağlarlar $special_contract_castellan$2 $special_contract_castellan$3'lerinin emrettiğinden.#!"
  special_contract_none_short: "Yok"
  special_contract_scutage_short: "Asker Vergisi"
  special_contract_march_short: "Sınır Beyliği"
  special_contract_palatinate_short: "Palatinlik"
- special_contract_castellan_short: "Kale muhafızı" #NT!
+ special_contract_castellan_short: "Kale muhafızı"
   
  religious_rights: "Dinî İmtiyazlar"
  religious_rights_none: "Dinî İmtiyaz Sahibi Değil"
@@ -181,7 +181,7 @@
  GOVERNMENT_CLAN_NOT_ALLIED: "[vassal|E] aşiret olmasına rağmen [Concept( 'alliance', 'Müttefik' )|E] değil"
  GOVERNMENT_CLAN_NOT_ALLIED_POWERFUL: "Önemli [vassal|E] aşiret olmasına rağmen [Concept( 'alliance', 'Müttefik' )|E] değil"
  government_can_raid_rule: "[government|E] biçimi [raid_loot|E] için yabancı [Concept( 'counties', 'Kontlukların' )|E] [Concept( 'raiding', 'Yağmalanmasına' )|E] izin veriyor"
- may_elevate_co_monarch: "#indent_newline:3 En az [kingdom|E]-[title_tier|E]'ten [rulers|E]'inin yetişkin [children|E]#! arasından bir [co_monarch|E]'ü yükseltmesine izin verir" #NT!
+ may_elevate_co_monarch: "#indent_newline:3 En az [kingdom|E]-[title_tier|E]'ten [rulers|E]'inin yetişkin [children|E]#! arasından bir [co_monarch|E]'ü yükseltmesine izin verir"
  government_is_feudal: "[government|E] biçimi [GetGovernment( 'feudal_government' ).GetName]"
  government_is_republic: "[government|E] biçimi [GetGovernment( 'republic_government' ).GetName]"
  government_is_theocracy: "[government|E] biçimi [GetGovernment( 'theocracy_government' ).GetName]"
@@ -189,14 +189,14 @@
  government_is_tribal: "[government|E] biçimi [GetGovernment( 'tribal_government' ).GetName]"
  government_is_mercenary: "[government|E] biçimi [GetGovernment( 'mercenary_government' ).GetName]"
  government_is_holy_order: "[government|E] biçimi [GetGovernment( 'holy_order_government' ).GetName]"
- government_is_landless_adventurer: "[camp|E]'a erişimi var" #NT!
- government_is_administrative: "[estate|E]'a erişimi var" #NT!
- government_has_influence: "Kullanımlar [influence_i|E][influence|E]" #NT!
- government_has_title_men_at_arms: "[title_men_at_arms|E]'ın işe alınmasına izin verir" #NT!
- government_has_powerful_families: "[noble_families|E]'ı etkinleştirir" #NT!
+ government_is_landless_adventurer: "[camp|E]'a erişimi var"
+ government_is_administrative: "[estate|E]'a erişimi var"
+ government_has_influence: "Kullanımlar [influence_i|E][influence|E]"
+ government_has_title_men_at_arms: "[title_men_at_arms|E]'ın işe alınmasına izin verir"
+ government_has_powerful_families: "[noble_families|E]'ı etkinleştirir"
  may_appoint_viziers: "[vizier|E] atayabilir"
   
- government_is_not_republic_or_admin_desc: "[government|E] #bold'dir #! değil [GetGovernment('republic_government').GetName] veya [GetGovernment('administrative_government').GetName]" #NT!
+ government_is_not_republic_or_admin_desc: "[government|E] #bold'dir #! değil [GetGovernment('republic_government').GetName] veya [GetGovernment('administrative_government').GetName]"
   
  SUPPLY_MULT_DIFERENT_GOVERNMENT: "[GOVERNMENT_TYPE.GetAdjective] Toprakları"
   
@@ -399,12 +399,12 @@
  jizya_special_rights_tax_collector_flavor_desc: "Cizye, dini azınlıklar olan #italic zimmiler#! için, inançlarını yaşama özgürlüğü karşısında ödedikleri özel bir vergi türüdür."
  unlock_jizya_contract_name: "[GetFaithDoctrine('tenet_tax_nonbelievers').GetBaseName] [core_tenet|E]"
   
- jizya_special_rights: "$jizya_special_rights_tax_collector$" #NT!
- jizya_special_rights_default: "Varsayılan $jizya_special_rights$" #NT!
- jizya_special_rights_default_short: "Varsayılan" #NT!
- jizya_special_rights_granted: "Uygulandı $jizya_special_rights$" #NT!
- jizya_special_rights_granted_desc: "$jizya_special_rights_tax_collector_desc$" #NT!
- jizya_special_rights_granted_short: "İmtiyazlı" #NT!
+ jizya_special_rights: "$jizya_special_rights_tax_collector$"
+ jizya_special_rights_default: "Varsayılan $jizya_special_rights$"
+ jizya_special_rights_default_short: "Varsayılan"
+ jizya_special_rights_granted: "Uygulandı $jizya_special_rights$"
+ jizya_special_rights_granted_desc: "$jizya_special_rights_tax_collector_desc$"
+ jizya_special_rights_granted_short: "İmtiyazlı"
   
   
  iqta_special_rights_tax_collector: "İkta"

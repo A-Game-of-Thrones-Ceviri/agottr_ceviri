@@ -2,15 +2,15 @@
   #Those clearly are placeholders for now, please send loc help - Typical 
   
  faegon_landing.0002.opening: "[faegon.Custom2('AppropriateGreeting', ROOT.Char)]"
- faegon_landing.0002.d: "[ROOT.Char.GetLadyLord]'ım, senin bilge ve asil bir [ROOT.Char.GetLadyLord] olduğunu biliyorum. Benim adım [faegon.GetTitledFirstName], [faegon.Custom('GetDaughterSon')]/[rogort.GetTitledFirstName] ve Demir Taht hakkımdır. Sancaklarını davam için adayıp tahtı gaspçılardan geri almama yardım eder misin?" #NT!
+ faegon_landing.0002.d: "[ROOT.Char.GetLadyLord]'ım, senin bilge ve asil bir [ROOT.Char.GetLadyLord] olduğunu biliyorum. Benim adım [faegon.GetTitledFirstName], [faegon.Custom('GetDaughterSon')]/[rogort.GetTitledFirstName] ve Demir Taht hakkımdır. Sancaklarını davam için adayıp tahtı gaspçılardan geri almama yardım eder misin?"
  faegon_landing.0002.opt.a: "Size sadakatle hizmet edeceğim. Yaşasın Ejderha Hanedanı!"
  faegon_landing.0002.opt.b: "Hayır, defol, Dilenci [faegon.GetTitleTierName]."
   
   #This event states character thoughts about landing in westeros again, their hopes dreams and ambitions after taking the throne also it includes some short banter with Captain General of Golden Company (only if they dont land after losing throne to blackfyres) and Jon Con (Faegon and Jae only) 
   #saved scopes faegon_loc, faegon_story_loc (variable agot_faegon_landing_title stored on this story holds value of county in which Faegon landed), strickland and, jon_con 
- faegon_landing.0003.t: "Ejderha'nın İnişi"
+ faegon_landing.0003.t: "Ejderha'nın İstilası"
  faegon_landing.0003.d.faegon: "Ben Targaryen Hanedanı'ndan [faegon_loc.GetTitledFirstNameNicknamed], adımın altıncısı ve Ejderha Kayası Prensi [rogort.GetFirstNamePossessive] ilk doğan oğluyum. Andalların, Rhoynarların ve İlk İnsanların Kralı, Yedi Krallığın Lordu ve Diyarın Koruyucusuyum. Babamın ölümünün intikamını alacağım ve Demir Tahtı hem hanedanım hem de diyar için geri alacağım."
-  #Aegon "Young Griff" Targaryen "Genç Griff" #NT!
+  #Aegon "Young Griff" Targaryen
  faegon_landing.0003.d.dany: "Ben Targaryen Hanedanı'ndan [faegon_loc.GetTitledFirstNameNicknamed], adımın ilki ve Kral Aerys II'nin kızıyım. Andalların, Rhoynarların ve İlk İnsanların Kraliçesi, Yedi Krallığın Leydisi ve Diyarın Koruyucusuyum. Demir Tahtı ateş ve kanla geri alacağım."
  faegon_landing.0003.d.viserys: "Ben Targaryen Hanedanı'ndan [faegon_loc.GetTitledFirstName], adımın üçüncüsü ve Kral Aerys II'nin hayatta kalan son oğluyum! Yedi Krallığın haklı Lordu, Andalların, Rhoynarların ve İlk İnsanların Kralı, Ejderha Kayası Prensi ve Diyarın Koruyucusuyum! Ben ejderhayım ve Demir Tahtı geri alacağım!"
  faegon_landing.0004.d.jae: "Bir Targaryen taht talibi olan [faegon_loc.GetTitledFirstName], Altın Mürettebat'ın komutanı [strickland.GetTitledFirstName] komutasındaki on bin adamla birlikte [faegon_story_loc.MakeScope.Var('agot_faegon_landing_title').Title.GetName] konumuna çıktı. Fatih Aegon'un tahttan indirilen hanedanının anısı yeniden su yüzüne çıkarken, Batıdiyar bir kez daha savaş halinde. Yabancı, Yedi Krallığa geri dönerken sancaklar çağrılacak, kılıçlarla yemin edilecek ve sözler verilecek."

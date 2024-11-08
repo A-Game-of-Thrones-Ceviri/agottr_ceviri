@@ -32,20 +32,20 @@
  TITLE_VIEW_CLEAR_LAWS_TOOTLIP_TITLE: "#T [title_succession|E] Yasasını Temizle#!"
  TITLE_VIEW_CLEAR_CLICK: "#I [title_succession|E] Yasasını temizlemek için tıklayın#!"
  TITLE_VIEW_CLEAR_LAWS_TITLE: "[TITLE.GetNameNoTooltip] unvanından Yasayı Kaldırın"
- TITLE_VIEW_CLEAR_LAWS_TEXT: "[TITLE.GetName] için Veraset artık kendi Ünvan Verasetine sahip olmayacak, bunun yerine [realm|E]'inizin [succession_law|E]\n\nMaliyet:\n$COST|0V$\n$EFFECTS$'ü boyunca miras alınacak" #NT!
+ TITLE_VIEW_CLEAR_LAWS_TEXT: "[TITLE.GetName] için Veraset artık kendi Ünvan Verasetine sahip olmayacak, bunun yerine [realm|E]'inizin [succession_law|E]\n\nMaliyet:\n$COST|0V$\n$EFFECTS$'ü boyunca miras alınacak"
  TITLE_VIEW_CLEAR_LAWS_ACCEPT: "Kaldır"
  CREATE_TITLE_TITLE: "[TITLE.GetBaseNameNoTooltip] Unvanını Oluştur"
  DESTROY_TITLE_TITLE: "[TITLE.GetBaseNameNoTooltip] Unvanını Yok Et"
- DESTROY_TITLE_TEXT: "Başlık yok edilecek\n\n$OPINION$\n$LEGITIMACY$\n\nMaliyet: [prestige_i]$PRESTIGE|0V$" #NT!
- DESTROY_TITLE_ACCEPT: "Tahrip etmek" #NT!
+ DESTROY_TITLE_TEXT: "Başlık yok edilecek\n\n$OPINION$\n$LEGITIMACY$\n\nMaliyet: [prestige_i]$PRESTIGE|0V$"
+ DESTROY_TITLE_ACCEPT: "Tahrip etmek"
  DESTROY_TITLE_TOOLTIP_TITLE: "#T [TITLE.GetBaseName] Unvanını Yok Et#!"
  DESTROY_TITLE_LEGITIMACY_LOSS: "$BULLET$ [legitimacy|E]: [legitimacy_i]$LEGITIMACY|0+$"
  DESTROY_TITLE_COST: "Maliyet: [prestige_i]$PRESTIGE|0V$"
  DESTROY_TITLE_BLOCKER_PRIMARY_TITLE: "@warning_icon! #X Kendi [primary_title]ınızı yok edemezsiniz.#!"
  DESTROY_TITLE_REASON_CONTESTED: "@warning_icon! #X Üzerinde savaşılıyorken yok edilemez#!"
  CREATE_TITLE_TOOLTIP_TITLE: "#T [TITLE.GetBaseNameNoTooltip] Unvanını Oluştur#!"
- CREATE_TITLE_TEXT: "[prestige_i]$PRESTIGE|0V$ ve [legitimacy_i]$LEGITIMACY|0V$ kazanacaksınız\n\nMaliyet: [gold_i]$GOLD|0V$" #NT!
- CREATE_TITLE_ACCEPT: "$CREATE$" #NT!
+ CREATE_TITLE_TEXT: "[prestige_i]$PRESTIGE|0V$ ve [legitimacy_i]$LEGITIMACY|0V$ kazanacaksınız\n\nMaliyet: [gold_i]$GOLD|0V$"
+ CREATE_TITLE_ACCEPT: "$CREATE$"
  CREATE_TITLE_HAS_HOLDER: "[CHARACTER.GetUIName] zaten bu unvana [Select_CString( CHARACTER.IsLocalPlayer, 'sahipsiniz', 'sahip' )]"
  CREATE_TITLE_NO_DEJURE_COUNTIES: "@warning_icon! #X [TITLE.GetName] herhangi bir [de_jure|E] [Concept( 'county', 'Kontluğa' )|E] sahip değil.#!"
  CREATE_TITLE_OR_CONDITION: "@warning_icon! #X Aşağıdaki koşullardan birini sağlamalısınız:#!"
@@ -58,8 +58,8 @@
  TITLE_VIEW_USURP_TITLE: "Gasp Et"
  USURP_TITLE_TITLE: "[TITLE.GetBaseNameNoTooltip] unvanını Gasp Et"
  USURP_TITLE_TOOLTIP_TITLE: "#T [TITLE.GetBaseName] unvanını Gasp Et#!"
- USURP_TITLE_TEXT: "Gasp [TITLE.GetName]'dan [TITLE.GetHolder.GetUIName].\n Maliyet:\n[gold_i]$GOLD|0V$\n\n[prestige_i]$PRESTIGE|0V$ kazanacağım\n\n[TITLE.GetHolder.GetUIName] [legitimacy|E] kaybedeceğim." #NT!
- USURP_TITLE_ACCEPT: "Gasp etmek" #NT!
+ USURP_TITLE_TEXT: "Gasp [TITLE.GetName]'dan [TITLE.GetHolder.GetUIName].\n Maliyet:\n[gold_i]$GOLD|0V$\n\n[prestige_i]$PRESTIGE|0V$ kazanacağım\n\n[TITLE.GetHolder.GetUIName] [legitimacy|E] kaybedeceğim."
+ USURP_TITLE_ACCEPT: "Gasp etmek"
  CREATE_TITLE_HOLDER_HAS_LAND: "@warning_icon! #X [Concept( 'faith', 'Mezhebinizi' )|E] [Concept( 'faith_hostility', 'düşmancıl' )|E] veya daha kötü gören birinin [Concept( 'title', 'unvanını' )|E] feshetmek istiyorsanız unvanın [de_jure|E] topraklarının hiçbirini kontrol etmemeli.#! "
  DESTROY_TITLE_VASSAL_OPINION: "[TITLE.GetName] [de_jure|E] [Concept( 'vassals', 'Vasallarının' )|E] size karşı görüşleri $TIME|V$ yıl boyunca $OPINION_CHANGE|N$ azalacak."
  CREATE_TITLE_TOOLTIP_GAIN: "Oluşturulduğunda [prestige_i]$PRESTIGE|0V$ ve [legitimacy_i]$LEGITIMACY|0V$ kazanırsınız"
@@ -75,8 +75,8 @@
  granted_history: "Verilmiş"
  usurped_history: "Gasp etmiş"
  created_history: "Oluşturmuş"
- appointment_history: "[liege|E] tarafından atandı" #NT!
- appointment_succession_history: "Atanmış" #NT!
+ appointment_history: "[liege|E] tarafından atandı"
+ appointment_succession_history: "Atanmış"
  inheritance_history: "Miras alınmış"
  abdication_history: "Tahttan çekilme ile miras alınmış"
  elected_history: "Seçilmiş"
@@ -93,7 +93,7 @@
  faction_demand_history: "Örgütleşme talebi ile getirilmiş"
  independency_history: "Bağımsız olmuş"
  swear_fealty_history: "Bağlılık yemini etmiş"
- stepped_down_history: "Önceki [holder|E] İstifa etti" #NT!
+ stepped_down_history: "Önceki [holder|E] İstifa etti"
  CLAIMANT_SORT_STRENGTH: "Askerî Güç"
  CLAIMANT_SORT_NAME: "Ad"
  TITLE_CLAIMANTS_HEADER: "Hak Sahipleri"
@@ -171,7 +171,7 @@
  FIND_VASSAL_BUTTON_TOOLTIP: "#T $FIND_VASSAL_HEADER$#!\nBu [Concept( 'title', 'Unvanı' )|E] vermek için birini seçin.\n\n$FIND_VASSAL_BUTTON_TOOLTIP_SEGMENT$"
  FIND_VASSAL_BUTTON_TOOLTIP_SEGMENT: "[Concept( 'vassals', 'Vasallarınıza' )|E], [Concept( 'realm', 'Diyarınızdaki' )|E] [guests|E]e veya [Concept( 'courtiers', 'Saray Mensuplarınıza' )|E] [title|E] verebilirsiniz"
   #AGOT Modified, HV Conversion rules 
- # GRANT_TO_SAME_CULTURE_NOBLE_HEADER: "[GetPlayer.GetCulture.GetNameNoTooltip] Kültürünün Asilzadesi" #NT!
+ # GRANT_TO_SAME_CULTURE_NOBLE_HEADER: "[GetPlayer.GetCulture.GetNameNoTooltip] Kültürünün Asilzadesi"
  GRANT_TO_SAME_CULTURE_NOBLE_HEADER: "[GetPlayer.GetCulture.GetNameNoTooltip] Kültüründen bir Soylu"
  GRANT_TO_SAME_CULTURE_NOBLE_INFO: "Bu unvanı #V Kültürünüzden#! [GetPlayer.GetFaith.GetAdjectiveNoTooltip] bir Soyluya verin"
  GRANT_TO_SAME_CULTURE_NOBLE_BUTTON_HOLDING_VIEW_TOOLTIP: "#T [GetPlayer.GetCulture.GetName] Kültüründen bir Soyluya verin#!\nYerel [culture|E]den olmayan bir [Concept( 'ruler', 'Hükümdara' )|E] sahip [county|E]lar düşük [county_opinion|E]ne sahip olur.\n\nAynı [culture|E]deki [Concept( 'vassals', 'Vasalların' )|E] [liege|E]lerine karşı [Concept( 'opinion', 'Görüşü' )|E] daha fazla olur.\n\n#I Vermek için tıklayın#!"
@@ -191,7 +191,7 @@
  CREATE_TITLE_PERCENTAGE_LEGITIMACY_DISCOUNT_VERY_REDUCED: "[legitimacy_level|E] indirimi"
  CREATE_TITLE_PERCENTAGE_LEGITIMACY_DISCOUNT_REDUCED: "Küçük [legitimacy_level|E] indirimi"
  CREATE_TITLE_PERCENTAGE_LEGITIMACY_DISCOUNT_NONE: "[legitimacy_level|E] indirimi"
- TITLE_VIEW_APPOINTMENT: "Veraset Görünümü" #NT!
- TITLE_VIEW_APPOINTMENT_TOOLTIP: "#T Randevu ardışıklığını görüntüle#!\nTitle takip edecek [Title.GetHolder.GetPrimaryTitle.GetName]" #NT!
- ADD_LAWS_TOOLTIP: "#T Miras Hukuku Ekle" #NT!
- CREATE_TITLE_FAIL_REASON_ADMIN_VASSAL: "@warning_icon! #X [CHARACTER.GetShortUINameNoTooltip|U] [Select_CString( CHARACTER.IsLocalPlayer, 'are', 'is' )] ve [administrative|e] [governor|e]#!" #NT!
+ TITLE_VIEW_APPOINTMENT: "Veraset Görünümü"
+ TITLE_VIEW_APPOINTMENT_TOOLTIP: "#T Randevu ardışıklığını görüntüle#!\nTitle takip edecek [Title.GetHolder.GetPrimaryTitle.GetName]"
+ ADD_LAWS_TOOLTIP: "#T Miras Hukuku Ekle"
+ CREATE_TITLE_FAIL_REASON_ADMIN_VASSAL: "@warning_icon! #X [CHARACTER.GetShortUINameNoTooltip|U] [Select_CString( CHARACTER.IsLocalPlayer, 'are', 'is' )] ve [administrative|e] [governor|e]#!"

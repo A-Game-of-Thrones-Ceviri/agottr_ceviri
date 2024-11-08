@@ -225,7 +225,7 @@
  tradition_desert_nomads_desc: "Çölün zorlu koşullarına yabancı olmayan bu kültür, seyahat, savaş ve günlük yaşamda develeri kullanmada ustalaşmıştır."
  tradition_gardening_name: "Bahçe Mimarları"
  tradition_gardening_desc: "Bu kültürün, kendilerine küçük bir cennet inşa ederek çeşitli bahçeler inşa etme ve koruma konusunda uzun bir geleneği vardır."
- can_appoint_court_gardener_name: "$tradition_gardening_name$" #NT!
+ can_appoint_court_gardener_name: "$tradition_gardening_name$"
  tradition_monogamous_name: "Tek eşli"
  tradition_monogamous_desc: "Bu kültürde, kişi inancına bakılmaksızın tek eşle yaşamaya devam ediyor."
  tradition_polygamous_name: "Çok eşli"
@@ -376,7 +376,7 @@
  culture_parameter_prowess_from_religious_traits: "[traits|E] örneğin [GetTrait('education_learning_3').GetName( GetNullCharacter )], [GetTrait('devoted').GetName( GetNullCharacter )] veya [GetTrait('theologian').GetName( GetNullCharacter )] [prowess|E] verir"
  culture_parameter_prowess_traits_more_valued: "[GetTrait('education_martial_prowess_1').GetName( GetNullCharacter )], [GetTrait('education_martial_prowess_2').GetName( GetNullCharacter )], [GetTrait('education_martial_prowess_3').GetName( GetNullCharacter )] ve [GetTrait('education_martial_prowess_4').GetName( GetNullCharacter )] [traits|E] daha değerlidir"
  culture_parameter_culture_clergy_can_fight: "$doctrine_parameter_clergy_can_fight$"
- culture_parameter_monastery_prowess_martial_bonus: "[buildings|E]'ün #V $building_type_monastic_schools_01$#! satırı ek [prowess|E] ve [martial|E] bonusları sağlar" #NT!
+ culture_parameter_monastery_prowess_martial_bonus: "[buildings|E]'ün #V $building_type_monastic_schools_01$#! satırı ek [prowess|E] ve [martial|E] bonusları sağlar"
  culture_parameter_can_recruit_prisoners_easily: "[prisoners|E] işe alınmayı kabul etme olasılığı daha yüksektir, işe alındıklarında pozitif [opinion|E] [modifier|E] kazanırlar ve işe alan kişi [strong_hook|E] alır"
  culture_parameter_better_knights_from_decision: "Daha iyi ol [knights|E] #V $invite_knights_decision$#! [decision|E]"
  culture_parameter_pardoning_gives_loyalty: "#V $pardon_interaction$#! [interaction|E] çok daha olumlu [opinion|E] ve [strong_hook|E] verir"
@@ -420,8 +420,8 @@
  culture_parameter_jungle_trait_bonuses: "Bazı [commander_traits|E] ve [personality_traits|E]'in ekstra Orman bonusları var"
  culture_parameter_eunuch_trait_bonuses: "[GetTrait('eunuch').GetName( GetNullCharacter )] [trait|E]'in bazı ek bonusları var"
  culture_parameter_can_appoint_chief_eunuch: "#high $chief_eunuch_court_position$#! [court_position|E] atayabilir"
- culture_parameter_palace_politics_trait_bonuses: "[GetTrait('loyal').GetName( GetNullCharacter )], [GetTrait('deceitful').GetName( GetNullCharacter )], [GetTrait('ambitious').GetName( GetNullCharacter )], [GetTrait('arbitrary').GetName( GetNullCharacter )] ve [GetTrait('paranoid').GetName( GetNullCharacter )] [characters|E] aylık ek kazanç [influence|E]" #NT!
- culture_parameter_palace_politics_trait_maluses: "[GetTrait( 'shy' ).GetName( GetNullCharacter )], [GetTrait( 'trusting' ).GetName( GetNullCharacter )], [GetTrait( 'maimed' ).GetName( GetNullCharacter )], [GetTrait( 'one_eyed' ).GetName( GetNullCharacter )], [GetTrait( 'one_legged' ).GetName( GetNullCharacter )] ve [GetTrait( 'disfigured' ).GetName( GetNullCharacter )] [characters|E] aylık [influence|E] azaldı" #NT!
+ culture_parameter_palace_politics_trait_bonuses: "[GetTrait('loyal').GetName( GetNullCharacter )], [GetTrait('deceitful').GetName( GetNullCharacter )], [GetTrait('ambitious').GetName( GetNullCharacter )], [GetTrait('arbitrary').GetName( GetNullCharacter )] ve [GetTrait('paranoid').GetName( GetNullCharacter )] [characters|E] aylık ek kazanç [influence|E]"
+ culture_parameter_palace_politics_trait_maluses: "[GetTrait( 'shy' ).GetName( GetNullCharacter )], [GetTrait( 'trusting' ).GetName( GetNullCharacter )], [GetTrait( 'maimed' ).GetName( GetNullCharacter )], [GetTrait( 'one_eyed' ).GetName( GetNullCharacter )], [GetTrait( 'one_legged' ).GetName( GetNullCharacter )] ve [GetTrait( 'disfigured' ).GetName( GetNullCharacter )] [characters|E] aylık [influence|E] azaldı"
  culture_parameter_physical_disfigurement_blocks_inheritance: "Fiziksel olarak sakat ve kısır [claimants|E], [claims|E]'ini bu [culture|E]'ün [rulers|E]'sine karşı kullanamaz"
  culture_parameter_infertility_blocks_inheritance: "Kısır karakterler [titles|E]'ı miras alamaz"
  culture_parameter_can_recruit_winter_specialist: "Kış [commanders|E]'i işe almak için [decision|E] kazanın"
@@ -475,7 +475,7 @@
  culture_parameter_plantations_building_bonuses: "#V $building_type_plantations_01$#! [buildings|E] satırının bu [culture|E] satırının [counties|E] satırında ek bonuslar var"
  culture_parameter_outposts_building_bonuses: "#V $building_type_outposts_01$#! [buildings|E] satırının bu [culture|E] satırının [counties|E] satırında ek bonuslar var"
  culture_parameter_introverted_trait_bonuses: "[GetTrait('chaste').GetName( GetNullCharacter )], [GetTrait('content').GetName( GetNullCharacter )], [GetTrait('humble').GetName( GetNullCharacter )], [GetTrait('shy').GetName( GetNullCharacter )] ve [GetTrait('temperate').GetName( GetNullCharacter )] [traits|E] bonus verir"
- culture_parameter_knight_errant_trait_bonuses: "[GetTrait('knight_errant').GetName( GetNullCharacter )] [trait|E]'in ek bonusları var" #NT!
+ culture_parameter_knight_errant_trait_bonuses: "[GetTrait('knight_errant').GetName( GetNullCharacter )] [trait|E]'in ek bonusları var"
  culture_parameter_poorly_educated_leaders_distrusted: "[rulers|E] ile zayıf [education_traits|E], örneğin [GetTrait('education_stewardship_1').GetName( GetNullCharacter )] veya [GetTrait('education_diplomacy_1').GetName( GetNullCharacter )], güvenilmezdir"
  culture_parameter_city_buildings_more_powerful: "[city_holdings|E] daha fazlasını ver [taxes|E], [development|E] ve [levies|E]"
  culture_parameter_city_buildings_less_control: "[city_holdings|E] [control|E] kazancını önemli ölçüde azaltır"
@@ -490,10 +490,10 @@
  culture_parameter_can_levy_longbowmen: "[levy_longbowmen_decision|E]'ın kilidini açar"
  culture_parameter_archer_era_improvement: "[GetMaA('longbowmen').GetName] [men_at_arms|E] her [era|E]'de giderek daha iyi hale geliyor"
  culture_parameter_next_level_trade_ports: "[buildings|E]'ün #V $building_type_common_tradeport_01$#! satırı [era|E] erken inşa edilebilir"
- culture_parameter_next_level_military_camps: "[buildings|E]'ün #V $building_type_military_camps_01$#! satırı bir [era|E] erken inşa edilebilir" #NT!
- culture_parameter_next_level_barracks: "[buildings|E]'ün #V $building_type_barracks_01$#! satırı bir [era|E] erken inşa edilebilir" #NT!
- culture_parameter_next_level_stables: "[buildings|E]'ün #V $building_type_stables_01$#! satırı bir [era|E] erken inşa edilebilir" #NT!
- culture_parameter_formation_fighting_strategist: "[GetTrait('strategist').GetName( GetNullCharacter )] [trait|E]'in ek bonusları var" #NT!
+ culture_parameter_next_level_military_camps: "[buildings|E]'ün #V $building_type_military_camps_01$#! satırı bir [era|E] erken inşa edilebilir"
+ culture_parameter_next_level_barracks: "[buildings|E]'ün #V $building_type_barracks_01$#! satırı bir [era|E] erken inşa edilebilir"
+ culture_parameter_next_level_stables: "[buildings|E]'ün #V $building_type_stables_01$#! satırı bir [era|E] erken inşa edilebilir"
+ culture_parameter_formation_fighting_strategist: "[GetTrait('strategist').GetName( GetNullCharacter )] [trait|E]'in ek bonusları var"
  culture_parameter_maritime_mercantilism_coastal_holdings: "Kıyı [holdings|E]'ın [counties|E]'inde bu [culture|E] ek #P +[EmptyScope.ScriptValue('maritime_mercantilism_coastal_holdings_value_tt')|0]%#! [gold_i][tax|E] sağlar"
  culture_parameter_coastal_holdings_give_defensive_bonus: "Kıyı [holdings|E]'da [counties|E]'den bu [culture|E]'ye ek Defender [advantage|E] sağlar"
  culture_parameter_castle_fortifications_increase: "[castles|E] in [counties|E] of this [culture|E] is a additional #V 5#! $MOD_DEFENDER_HOLDING_ADVANTAGE$ per [holding|E] level"
@@ -529,53 +529,53 @@
  culture_parameter_characters_are_better_food_tasters: "[characters|E]'dan [culture|E]'i #high $food_taster_court_position$#! [court_position|E]'e atandığında daha iyi performans gösterir"
  culture_parameter_characters_are_better_court_poets: "[characters|E]'dan [culture|E]'i #high $court_poet_court_position$#! [court_position|E]'e atandığında daha iyi performans gösterir"
   
- culture_parameter_frugal_blacksmith_maa_size: "[buildings|E]'ün #V $building_type_smiths_01$#! satırı, [knight_i][knights|E]#!'nin #V Sayısını ve [men_at_arms|E] $building_type_smiths_01$0#!'nin #V Boyutunu artırır" #NT!
- culture_parameter_warrior_lodges_lift_restrictions: "[buildings|E]'ün #V $building_type_warrior_lodges_01$#! satırı her zaman bu [culture|E]'in [counties|E]'ünde inşa edilebilir" #NT!
- culture_parameter_strength_in_numbers_maa_limit_bonus: "[buildings|E]'nın #V $building_type_barracks_01$#! ve #V $building_type_war_camps_01$#! hatları #V [men_at_arms|E] Alay Sınırı#!'yi artırır" #NT!
- culture_parameter_strength_in_numbers_heavy_maa_ban: "@warning_icon! #X [heavy_infantry|E], [heavy_cavalry|E] ve [elephant_cavalry|E] [men_at_arms|E] bu [culture|E]#!'nin [rulers|E]'i tarafından işe alınamaz" #NT!
- culture_parameter_next_level_w_mills: "[buildings|E]'nın #V $building_type_watermills_01$#! ve #V $building_type_windmills_01$#! satırları bir [era|E] erken inşa edilebilir" #NT!
- culture_parameter_next_level_smiths: "[buildings|E]'ün #V $building_type_smiths_01$#! satırı bir [era|E] erken inşa edilebilir" #NT!
- culture_parameter_astute_diplomat_bonus: "[GetTrait('diplomat').GetName( GetNullCharacter )] [trait|E] ek bonuslar sağlar" #NT!
- culture_parameter_collective_lands_farms_bonuses: "#V $building_type_cereal_fields_01$#! [buildings|E] satırı [stationed|E] [men_at_arms|E] bonus sağlar" #NT!
- culture_parameter_peasant_leader_is_inherited: "[GetTrait('peasant_leader').GetName( GetNullCharacter )] [trait|E] yetişkinliğe ulaşıldığında miras alınır" #NT!
- culture_parameter_watermills_windmills_cities: "#V $building_type_watermills_01$#! veya #V $building_type_windmills_01$#! veya #V $building_type_caravanserai_01$#! #V $building_type_watermills_01$2#! $building_type_watermills_01$4 keşfedildikten sonra $building_type_watermills_01$0'da [buildings|E]'un $building_type_watermills_01$2#! satırları oluşturulabilir" #NT!
- culture_parameter_temple_next_level: "[temple_holdings|E] bir [era|E] erken yükseltilebilir" #NT!
- culture_parameter_tribals_can_into_temples: "[temple_holdings|E], [tribal|E] [rulers|E] ile oluşturulabilir" #NT!
- culture_parameter_legalistic_administrator_bonuses: "[GetTrait('administrator').GetName( GetNullCharacter )] [trait|E]'in ek bonusları var" #NT!
- culture_parameter_next_level_monasteries: "[buildings|E]'ün #V $building_type_monastic_schools_01$#! hattı bir [era|E] erken inşa edilebilir" #NT!
- culture_parameter_monastic_monastery_learning_bonus: "#V $building_type_monastic_schools_01$#! [buildings|E] satırı ek [learning|E] bonus sağlar" #NT!
- culture_parameter_next_level_fortification: "#V Tahkimat#! [buildings|E] hatları bir [era|E] daha erken inşa edilebilir" #NT!
- culture_parameter_next_level_cities: "#V [city|E]#! ana [buildings|E] bir önceki [era|E] inşa edilebilir" #NT!
- culture_parameter_maritime_mercantilism_avaricious_bonus: "[GetTrait('avaricious').GetName( GetNullCharacter )] [trait|E] ek bonuslar sağlar" #NT!
- culture_parameter_vegetarian_building_ban: "[buildings|E] #X'ün #V $building_type_hunting_grounds_01$#! satırı bu [culture|E]'nin [counties|E]'sında inşa edilemez#!" #NT!
- culture_parameter_vegetarian_next_level_cereal_fields: "[buildings|E]'ün #V $building_type_cereal_fields_01$#! hattı bir [era|E] erken inşa edilebilir" #NT!
- culture_parameter_vegetarian_fruit_orchard_allowed: "[buildings|E]'ün #V $building_type_orchards_01$#! satırı her zaman bu [culture|E]'in [counties|E]'ünde inşa edilebilir" #NT!
- culture_parameter_ancient_miners_quarries_building_bonuses: "#V $building_type_quarries_01$#! [buildings|E] satırı ek bonuslar sağlar" #NT!
+ culture_parameter_frugal_blacksmith_maa_size: "[buildings|E]'ün #V $building_type_smiths_01$#! satırı, [knight_i][knights|E]#!'nin #V Sayısını ve [men_at_arms|E] $building_type_smiths_01$0#!'nin #V Boyutunu artırır"
+ culture_parameter_warrior_lodges_lift_restrictions: "[buildings|E]'ün #V $building_type_warrior_lodges_01$#! satırı her zaman bu [culture|E]'in [counties|E]'ünde inşa edilebilir"
+ culture_parameter_strength_in_numbers_maa_limit_bonus: "[buildings|E]'nın #V $building_type_barracks_01$#! ve #V $building_type_war_camps_01$#! hatları #V [men_at_arms|E] Alay Sınırı#!'yi artırır"
+ culture_parameter_strength_in_numbers_heavy_maa_ban: "@warning_icon! #X [heavy_infantry|E], [heavy_cavalry|E] ve [elephant_cavalry|E] [men_at_arms|E] bu [culture|E]#!'nin [rulers|E]'i tarafından işe alınamaz"
+ culture_parameter_next_level_w_mills: "[buildings|E]'nın #V $building_type_watermills_01$#! ve #V $building_type_windmills_01$#! satırları bir [era|E] erken inşa edilebilir"
+ culture_parameter_next_level_smiths: "[buildings|E]'ün #V $building_type_smiths_01$#! satırı bir [era|E] erken inşa edilebilir"
+ culture_parameter_astute_diplomat_bonus: "[GetTrait('diplomat').GetName( GetNullCharacter )] [trait|E] ek bonuslar sağlar"
+ culture_parameter_collective_lands_farms_bonuses: "#V $building_type_cereal_fields_01$#! [buildings|E] satırı [stationed|E] [men_at_arms|E] bonus sağlar"
+ culture_parameter_peasant_leader_is_inherited: "[GetTrait('peasant_leader').GetName( GetNullCharacter )] [trait|E] yetişkinliğe ulaşıldığında miras alınır"
+ culture_parameter_watermills_windmills_cities: "#V $building_type_watermills_01$#! veya #V $building_type_windmills_01$#! veya #V $building_type_caravanserai_01$#! #V $building_type_watermills_01$2#! $building_type_watermills_01$4 keşfedildikten sonra $building_type_watermills_01$0'da [buildings|E]'un $building_type_watermills_01$2#! satırları oluşturulabilir"
+ culture_parameter_temple_next_level: "[temple_holdings|E] bir [era|E] erken yükseltilebilir"
+ culture_parameter_tribals_can_into_temples: "[temple_holdings|E], [tribal|E] [rulers|E] ile oluşturulabilir"
+ culture_parameter_legalistic_administrator_bonuses: "[GetTrait('administrator').GetName( GetNullCharacter )] [trait|E]'in ek bonusları var"
+ culture_parameter_next_level_monasteries: "[buildings|E]'ün #V $building_type_monastic_schools_01$#! hattı bir [era|E] erken inşa edilebilir"
+ culture_parameter_monastic_monastery_learning_bonus: "#V $building_type_monastic_schools_01$#! [buildings|E] satırı ek [learning|E] bonus sağlar"
+ culture_parameter_next_level_fortification: "#V Tahkimat#! [buildings|E] hatları bir [era|E] daha erken inşa edilebilir"
+ culture_parameter_next_level_cities: "#V [city|E]#! ana [buildings|E] bir önceki [era|E] inşa edilebilir"
+ culture_parameter_maritime_mercantilism_avaricious_bonus: "[GetTrait('avaricious').GetName( GetNullCharacter )] [trait|E] ek bonuslar sağlar"
+ culture_parameter_vegetarian_building_ban: "[buildings|E] #X'ün #V $building_type_hunting_grounds_01$#! satırı bu [culture|E]'nin [counties|E]'sında inşa edilemez#!"
+ culture_parameter_vegetarian_next_level_cereal_fields: "[buildings|E]'ün #V $building_type_cereal_fields_01$#! hattı bir [era|E] erken inşa edilebilir"
+ culture_parameter_vegetarian_fruit_orchard_allowed: "[buildings|E]'ün #V $building_type_orchards_01$#! satırı her zaman bu [culture|E]'in [counties|E]'ünde inşa edilebilir"
+ culture_parameter_ancient_miners_quarries_building_bonuses: "#V $building_type_quarries_01$#! [buildings|E] satırı ek bonuslar sağlar"
   
- next_level_trade_ports_name: "#V $tradition_maritime_mercantilism_name$#!" #NT!
- next_level_military_camps_name: "#V $tradition_adaptive_skirmishing_name$#!" #NT!
- next_level_barracks_name: "#V $tradition_formation_fighting_name$#!" #NT!
- next_level_stables_name: "#V $tradition_horse_breeder_name$#!" #NT!
- next_level_guild_halls_name: "#V $tradition_city_keepers_name$#!" #NT!
- next_level_w_mills_name: "#V $tradition_hard_working_name$#!" #NT!
- next_level_smiths_name: "#V $tradition_metal_craftsmanship_name$#!" #NT!
- temple_next_level_name: "#V $tradition_fervent_temple_builders_name$#!" #NT!
- next_level_monasteries_name: "#V $tradition_monastic_communities_name$#!" #NT!
- next_level_fortification_name: "#V $tradition_stalwart_defenders_name$#!" #NT!
- next_level_cities_name: "#V $tradition_republican_legacy_name$#!" #NT!
- vegetarian_next_level_cereal_fields_name: "#V $tradition_vegetarianism_name$#!" #NT!
- vegetarian_building_ban_name: "#V $tradition_vegetarianism_name$#!" #NT!
- warrior_lodges_lift_restrictions_name: "#V $tradition_reverence_for_veterans_name$#!" #NT!
- farm_estates_pastures_unlock_name: "#V $tradition_pastoralists_name$#!" #NT!
- watermills_forestries_unlock_name: "#V $tradition_forest_wardens_name$#!" #NT!
- windmills_hill_farms_unlock_name: "#V $tradition_hill_dwellers_name$#!" #NT!
- second_caravanserai_name: "#V $tradition_caravaneers_name$#!" #NT!
+ next_level_trade_ports_name: "#V $tradition_maritime_mercantilism_name$#!"
+ next_level_military_camps_name: "#V $tradition_adaptive_skirmishing_name$#!"
+ next_level_barracks_name: "#V $tradition_formation_fighting_name$#!"
+ next_level_stables_name: "#V $tradition_horse_breeder_name$#!"
+ next_level_guild_halls_name: "#V $tradition_city_keepers_name$#!"
+ next_level_w_mills_name: "#V $tradition_hard_working_name$#!"
+ next_level_smiths_name: "#V $tradition_metal_craftsmanship_name$#!"
+ temple_next_level_name: "#V $tradition_fervent_temple_builders_name$#!"
+ next_level_monasteries_name: "#V $tradition_monastic_communities_name$#!"
+ next_level_fortification_name: "#V $tradition_stalwart_defenders_name$#!"
+ next_level_cities_name: "#V $tradition_republican_legacy_name$#!"
+ vegetarian_next_level_cereal_fields_name: "#V $tradition_vegetarianism_name$#!"
+ vegetarian_building_ban_name: "#V $tradition_vegetarianism_name$#!"
+ warrior_lodges_lift_restrictions_name: "#V $tradition_reverence_for_veterans_name$#!"
+ farm_estates_pastures_unlock_name: "#V $tradition_pastoralists_name$#!"
+ watermills_forestries_unlock_name: "#V $tradition_forest_wardens_name$#!"
+ windmills_hill_farms_unlock_name: "#V $tradition_hill_dwellers_name$#!"
+ second_caravanserai_name: "#V $tradition_caravaneers_name$#!"
   
  ### Decision loc 
- recruit_terrain_specialist_decision: "Arazi Uzmanı İşe Alımı" #NT!
- CHOOSE_TERRAIN_SPECIALIST_DECISION_NEXT_STEP_BUTTON: "Arazi Uzmanını Seçin" #NT!
- recruit_terrain_specialist_decision_confirm: "İyileştirmek" #NT!
- recruit_terrain_specialist_decision_tooltip: "Seçtiğiniz [commander_trait|E] ile birlikte [court|E]\n\n#weak ekibinize katılacak son derece yetenekli bir [commander|E] ararsınız. [culture_traditions|E] ekibiniz işe alabileceğiniz komutan türlerini etkiler#!" #NT!
+ recruit_terrain_specialist_decision: "Arazi Uzmanı İşe Alımı"
+ CHOOSE_TERRAIN_SPECIALIST_DECISION_NEXT_STEP_BUTTON: "Arazi Uzmanını Seçin"
+ recruit_terrain_specialist_decision_confirm: "İyileştirmek"
+ recruit_terrain_specialist_decision_tooltip: "Seçtiğiniz [commander_trait|E] ile birlikte [court|E]\n\n#weak ekibinize katılacak son derece yetenekli bir [commander|E] ararsınız. [culture_traditions|E] ekibiniz işe alabileceğiniz komutan türlerini etkiler#!"
   
  recruit_winter_specialist_decision: "Kış Uzmanı İşe Alımı"
  recruit_winter_specialist_decision_desc: "Dayanıklı halkım [ROOT.Char.GetCulture.GetCollectiveNoun], soğuğun ustalarıdır. Askerlerime acımasız kış boyunca rehberlik edecek uzman bir komutana ihtiyacım olursa, sadece haber göndermem gerekir — çağrıma kulak vermeye istekli, donmuş gazilerden bolca var."
@@ -713,7 +713,7 @@
  culture_parameter_cannot_fire_court_chaplain: "[court_chaplain|E]'ınızı ateşleyemezsiniz"
  culture_parameter_extra_piety_from_temple_construction: "[temple|E] [holdings|E] inşa ederek önemli miktarda ekstra [piety_i][piety|E] kazanın"
  culture_parameter_renown_from_temple_construction: "[temple|E] [holdings|E] inşa ederken ve yükseltirken [dynasty_prestige_i][dynasty_prestige|E] kazan"
- culture_parameter_consolidate_rule_decision: "[empires|E] karşılığında #high $consolidate_rule_decision$#! [decision|E]'e erişim sağlayın" #NT!
+ culture_parameter_consolidate_rule_decision: "[empires|E] karşılığında #high $consolidate_rule_decision$#! [decision|E]'e erişim sağlayın"
  culture_parameter_prestige_from_temple_construction: "[temple|E] [holdings|E] inşa ederek önemli [prestige_i][prestige|E] kazanın"
  culture_parameter_less_likely_to_force_conversion: "[rulers|E]'ın [vassals|E]'den Dönüşüm Talep etme olasılığı daha düşüktür"
  culture_parameter_enables_unite_africa_decision: "Afrika'lı olmayan kültürler için Unite Africa [decision|E]'ı etkinleştirir [heritage|E]"
@@ -780,7 +780,7 @@
  culture_parameter_marriage_acceptance_bonus: "[marriage|E] Kabul: #P +10#!"
  culture_parameter_tribal_holding_fort_level_in_jungle_bonus: "Ormanda [tribes|E] için [fort_level|E] [terrain|E]: [fort_level_i]#P +[EmptyScope.ScriptValue('tribal_holding_fort_level_in_jungle_bonus_value')|0]#!"
  culture_parameter_castle_holding_fort_level_in_jungle_bonus: "Ormanda [castles|E] için [fort_level|E] [terrain|E]: [fort_level_i]#P +[EmptyScope.ScriptValue('castle_holding_fort_level_in_jungle_bonus_value')|0]#!"
- culture_parameter_tribal_holding_stationed_bonus: "#V $building_type_tribe_01$#! [buildings|E] satırı ek [stationed|E] [men_at_arms|E] bonus sağlar" #NT!
+ culture_parameter_tribal_holding_stationed_bonus: "#V $building_type_tribe_01$#! [buildings|E] satırı ek [stationed|E] [men_at_arms|E] bonus sağlar"
   
  culture_parameter_close_family_better_councillors: "Temel ilerleme ve [councillor_tasks|E] üzerindeki [skill|E] etkisi, [close_family|E] üye için #P +10%#! oranında artırıldı"
  culture_parameter_close_family_better_court_positions: "[court_position|E] [aptitude|E] [close_family|E] üyeleri için: #P +20#!"
@@ -825,7 +825,7 @@
  has_other_cultures_in_council_desc: "Kendi [culture|E]'inizden farklı bir [councillors|E]'ınız olmamalıdır."
  20_percent_churches: "[culture|E], [counties|E]'ünün #V'sinde [temple|E]'e sahip değildir. #V'sinin [counties|E]'ünün %20'si#!'üdür."
  must_be_feudal_or_clan: "[feudal|E] veya [clan|E] [government|E]'ye sahip olmalısınız"
- must_be_feudal_clan_or_admin: "[feudal|E], [clan|E] veya [administrative|E] [government|E]'e sahip olmalısınız" #NT!
+ must_be_feudal_clan_or_admin: "[feudal|E], [clan|E] veya [administrative|E] [government|E]'e sahip olmalısınız"
  only_one_marriage_tradition_allowed: "Sadece bir [marriage|E] [tradition|E]'e izin verilir ve aşağıdakiler birleştirilemez: $tradition_monogamous_name$, $tradition_polygamous_name$ ve $tradition_concubines_name$"
  no_warrior_culture: "$tradition_fp3_beacon_of_learning_name$, $tradition_warrior_culture$ ile uyumsuzdur"
  no_philosopher_culture: "$tradition_fp3_beacon_of_learning_name$, $tradition_philosopher_culture_name$ ile uyumsuzdur"
@@ -909,8 +909,8 @@
  not_bureaucratic_courtly_or_egalitarian_desc: "[culture|E]'ın $ethos_bureaucratic_name$, $ethos_courtly_name$ veya $ethos_egalitarian_name$ [ethos|E]'ü yoktur"
  not_bureaucratic_spiritual_or_egalitarian_desc: "[culture|E]'da $ethos_bureaucratic_name$, $ethos_spiritual_name$ veya $ethos_egalitarian_name$ [ethos|E] yok"
  not_bureaucratic_courtly_or_spiritual_desc: "[culture|E]'ın $ethos_bureaucratic_name$, $ethos_courtly_name$ veya $ethos_spiritual_name$ [ethos|E]'ü yoktur"
- culture_parameter_can_adopt_administrative_government_as_kingdom_tier: "[SelectLocalization( HasDlcFeature( 'royal_court' ), 'can_adopt_administrative_government_as_kingdom_tier_text', '' )]" #NT!
- can_adopt_administrative_government_as_kingdom_tier_text: "Yöneticiler [emperors|E] olduklarında [administrative|E] [government|E] tipini [king|E] olarak da benimseyebilirler" #NT!
+ culture_parameter_can_adopt_administrative_government_as_kingdom_tier: "[SelectLocalization( HasDlcFeature( 'royal_court' ), 'can_adopt_administrative_government_as_kingdom_tier_text', '' )]"
+ can_adopt_administrative_government_as_kingdom_tier_text: "Yöneticiler [emperors|E] olduklarında [administrative|E] [government|E] tipini [king|E] olarak da benimseyebilirler"
   
   ## Spiritual. 
   
@@ -1008,7 +1008,7 @@
  rulers_with_lifestyle_herbalist_desc: "[culture|E]'ın #V 3#! [rulers|E]'ü [GetTrait('lifestyle_herbalist').GetName( GetNullCharacter )] [trait|E] ile yoktur"
  rulers_following_different_faiths_desc: "En azından [culture|E]'ünüzden farklı bir [faith|E]'ü takip eden #V 5#! [vassals|E]'niz yok"
  culture_head_cavalry_desc: "En az #V 8#! boyutunda [light_cavalry|E], [heavy_cavalry|E] veya [archer_cavalry|E]'ünüz yok"
- culture_head_heavy_cavalry_desc: "En az #V 8#! boyutunda [regiment|E]'dan [heavy_cavalry|E]'e sahip değilsiniz" #NT!
+ culture_head_heavy_cavalry_desc: "En az #V 8#! boyutunda [regiment|E]'dan [heavy_cavalry|E]'e sahip değilsiniz"
  tradition_cultural_head_affinity_penalty_desc: "[culture_head|E]'ın herhangi bir [traits|E]'e karşılık gelen bir değeri yok"
  tradition_cultural_head_trait_bonus: "[traits|E] / [culture_head|E]"
  tradition_cultural_head_learning_penalty: "[culture_head|E] düşük [learning_skill|E]'e sahiptir"
@@ -1230,7 +1230,7 @@
  culture_parameter_always_unlock_legendary_hunting_lodge: "[SelectLocalization( HasDlcFeature( 'legends' ), 'culture_parameter_always_unlock_legendary_hunting_lodge_HAS_LEGENDS_DLC', 'culture_parameter_always_unlock_legendary_hunting_lodge_NO_LEGENDS_DLC' )]"
  culture_parameter_always_unlock_legendary_hunting_lodge_NO_LEGENDS_DLC: ""
  culture_parameter_always_unlock_legendary_hunting_lodge_HAS_LEGENDS_DLC: "Bu [culture|E]'in [rulers|E]'ı, [legend|E]'ü tamamladıktan sonra her zaman $building_type_legendary_hunting_lodge$ inşa edebilir"
- culture_parameter_less_plague_spread_culture: "[characters|E]'dan [culture|E]'inin [epidemics|E]'sinin topraklarına yayılmama şansı daha yüksektir" #NT!
+ culture_parameter_less_plague_spread_culture: "[characters|E]'dan [culture|E]'inin [epidemics|E]'sinin topraklarına yayılmama şansı daha yüksektir"
   
   
   #BP2 Traditions 
@@ -1244,76 +1244,76 @@
  culture_parameter_more_hostage_acceptance_for_vassals: "[characters|E]'ı bu [culture|E]'i göndermeye, almaya ve geri göndermeye daha istekli [hostages|E] kendi [liege|E]'leriyle birlikte"
   
  #EP3 Traditions 
- tradition_ep3_indomitable_azatani_name: "Yenilmez Azatani" #NT!
- tradition_ep3_indomitable_azatani_desc: "Bu kültürün son derece gururlu soyluları, yüksek kalelerinden gürültüyle aşağı inerken, "Hançer yarası iyileşir, ama dil yarası asla!" diyorlardı." #NT!
- culture_parameter_house_hostility_more_common: "[rulers|E] Diğerlerine karşı daha saldırgan davranır [houses|E]" #NT!
- culture_parameter_vassals_more_likely_to_refuse_demands: "[characters|E]'ın [imprisonment|E], [retractions|E] ve [revocations|E]'ü reddetme olasılığı daha yüksektir" #NT!
+ tradition_ep3_indomitable_azatani_name: "Yenilmez Azatani"
+ tradition_ep3_indomitable_azatani_desc: "Bu kültürün son derece gururlu soyluları, yüksek kalelerinden gürültüyle aşağı inerken, "Hançer yarası iyileşir, ama dil yarası asla!" diyorlardı."
+ culture_parameter_house_hostility_more_common: "[rulers|E] Diğerlerine karşı daha saldırgan davranır [houses|E]"
+ culture_parameter_vassals_more_likely_to_refuse_demands: "[characters|E]'ın [imprisonment|E], [retractions|E] ve [revocations|E]'ü reddetme olasılığı daha yüksektir"
   
- tradition_ep3_audacious_cadets_name: "Cüretkar Kadetler" #NT!
- tradition_ep3_audacious_cadets_desc: "Bu kültürü, huzursuz genç oğullar topluluğu tanımlar. Cesaretli ve vicdansız bu atlılar, uzaklardaki maceraların, paralı askerlerin zulmünün ve görkemli fetihlerin hayallerini kovalarlar." #NT!
+ tradition_ep3_audacious_cadets_name: "Cüretkar Kadetler"
+ tradition_ep3_audacious_cadets_desc: "Bu kültürü, huzursuz genç oğullar topluluğu tanımlar. Cesaretli ve vicdansız bu atlılar, uzaklardaki maceraların, paralı askerlerin zulmünün ve görkemli fetihlerin hayallerini kovalarlar."
   
- culture_parameter_ambitious_trait_more_common: "[GetTrait('ambitious').GetName( GetNullCharacter )] [trait|E] daha yaygındır" #NT!
- culture_parameter_reduced_bodyguard_aptitude: "Azaltılmış [GetCourtPositionType('bodyguard_court_position').GetName()] [aptitude|E]" #NT!
+ culture_parameter_ambitious_trait_more_common: "[GetTrait('ambitious').GetName( GetNullCharacter )] [trait|E] daha yaygındır"
+ culture_parameter_reduced_bodyguard_aptitude: "Azaltılmış [GetCourtPositionType('bodyguard_court_position').GetName()] [aptitude|E]"
   
- tradition_ep3_imperial_tagmata_name: "İmparatorluk Tagmata'sı" #NT!
- tradition_ep3_imperial_tagmata_desc: "Seçkin, iyi zırhlı alaylar bu kültürün askeri kampanyalarının omurgasını oluşturur. Onların kibirli birlikleri, küçük savaşçı soylularına ve pervasız kişisel cesaret eylemlerine pek önem vermez; bunun yerine disiplini ve birliklerinin kutsal adlarını onurlandırırlar. #EMP Exkoubitoi! Scholai! Hikanatoi!#!" #NT!
+ tradition_ep3_imperial_tagmata_name: "İmparatorluk Tagmata'sı"
+ tradition_ep3_imperial_tagmata_desc: "Seçkin, iyi zırhlı alaylar bu kültürün askeri kampanyalarının omurgasını oluşturur. Onların kibirli birlikleri, küçük savaşçı soylularına ve pervasız kişisel cesaret eylemlerine pek önem vermez; bunun yerine disiplini ve birliklerinin kutsal adlarını onurlandırırlar. #EMP Exkoubitoi! Scholai! Hikanatoi!#!"
   
- domain_counties_with_stables_desc: "[culture_head|E], #high 8#! [counties|E]'ü tutmaz, [holdings|E]'lerinden birinde $building_type_stables_01$ bulunur" #NT!
+ domain_counties_with_stables_desc: "[culture_head|E], #high 8#! [counties|E]'ü tutmaz, [holdings|E]'lerinden birinde $building_type_stables_01$ bulunur"
   
- tradition_ep3_roman_ceremonies_name: "Roma Törenleri" #NT!
- tradition_ep3_roman_ceremonies_desc: "Geçmişin imparatorları bu kültüre kalıcı bir ihtişam, gösterişli törenler, imparatorluk makamına duyulan hayranlık... ve huzursuzluklarla dolu bir kamusal yaşam bahşetmişlerdir." #NT!
+ tradition_ep3_roman_ceremonies_name: "Roma Törenleri"
+ tradition_ep3_roman_ceremonies_desc: "Geçmişin imparatorları bu kültüre kalıcı bir ihtişam, gösterişli törenler, imparatorluk makamına duyulan hayranlık... ve huzursuzluklarla dolu bir kamusal yaşam bahşetmişlerdir."
   
- tradition_ep3_palace_politics_name: "Saray Siyaseti" #NT!
- tradition_ep3_palace_politics_desc: "Güçlü hadımlar ve ipek cübbeli dalkavuklar, geniş bir siyasi aygıtı yönetiyor, gösterişle etkiliyor, onurla iltifat ediyor ve ilerleme adına kötü niyetli planlar kuruyorlar." #NT!
- culture_head_court_grandeur_desc: "[culture_head|E]'ın [court_grandeur_level|E]'i #high 8#! veya daha yüksek değil" #NT!
- culture_parameter_unlock_akolouthos: "$e_byzantium$ [title|E]'ü tuttuğunuzda ve Varangian Muhafızları kurulduğunda [GetCourtPositionType('akolouthos_court_position').GetName()] [court_position|E]'i atayabilirsiniz." #NT!
+ tradition_ep3_palace_politics_name: "Saray Siyaseti"
+ tradition_ep3_palace_politics_desc: "Güçlü hadımlar ve ipek cübbeli dalkavuklar, geniş bir siyasi aygıtı yönetiyor, gösterişle etkiliyor, onurla iltifat ediyor ve ilerleme adına kötü niyetli planlar kuruyorlar."
+ culture_head_court_grandeur_desc: "[culture_head|E]'ın [court_grandeur_level|E]'i #high 8#! veya daha yüksek değil"
+ culture_parameter_unlock_akolouthos: "$e_byzantium$ [title|E]'ü tuttuğunuzda ve Varangian Muhafızları kurulduğunda [GetCourtPositionType('akolouthos_court_position').GetName()] [court_position|E]'i atayabilirsiniz."
   
- capital_province_development_level_desc: "[culture_head|E]'ın büyük harfi [county_development|E] veya #high'ye sahip değil 30#! veya daha yüksek" #NT!
+ capital_province_development_level_desc: "[culture_head|E]'ın büyük harfi [county_development|E] veya #high'ye sahip değil 30#! veya daha yüksek"
   
- culture_parameter_other_cultures_more_likely_to_hybridize: "Diğer-[culture|E] [rulers|E] bu [culture|E] ile [hybridize|E] olma olasılığı daha yüksektir" #NT!
- culture_parameter_estate_building_upgrade_development_gain: "[estate_buildings|E]'ı inşa etmek veya yükseltmek, [estate|E]'lere [county|E]'ya #P [EmptyScope.ScriptValue('cultivated_sophistication_development_gain')|=+0]#! [development_growth|E] sağlar" #NT!
+ culture_parameter_other_cultures_more_likely_to_hybridize: "Diğer-[culture|E] [rulers|E] bu [culture|E] ile [hybridize|E] olma olasılığı daha yüksektir"
+ culture_parameter_estate_building_upgrade_development_gain: "[estate_buildings|E]'ı inşa etmek veya yükseltmek, [estate|E]'lere [county|E]'ya #P [EmptyScope.ScriptValue('cultivated_sophistication_development_gain')|=+0]#! [development_growth|E] sağlar"
   
- tradition_ep3_cultivated_sophistication_name: "Yetiştirilmiş Karmaşıklık" #NT!
- tradition_ep3_cultivated_sophistication_desc: "Barbarlar bu kültürün görkemli lükslerine, toplumlarının gelişmişliğine kıskançlıkla bakarlar. Birincillik duygusuyla beslenen bu kültür, kozmopolit etki alanının dışında kalan tüm çelişkileri reddeder." #NT!
- must_have_administrative_government_tt: "[culture_head|E]'ın [government|E] tipi [administrative|E] olmalıdır" #NT!
+ tradition_ep3_cultivated_sophistication_name: "Yetiştirilmiş Karmaşıklık"
+ tradition_ep3_cultivated_sophistication_desc: "Barbarlar bu kültürün görkemli lükslerine, toplumlarının gelişmişliğine kıskançlıkla bakarlar. Birincillik duygusuyla beslenen bu kültür, kozmopolit etki alanının dışında kalan tüm çelişkileri reddeder."
+ must_have_administrative_government_tt: "[culture_head|E]'ın [government|E] tipi [administrative|E] olmalıdır"
   
- hosts_chariot_races_name: "Dörtlü" #NT!
- culture_parameter_hosts_chariot_races: "[GetActivityType('activity_chariot_race').GetName] [activity|E]'e ev sahipliği yapabilir ve hem [GetCourtPositionType('charioteer_court_position').GetName]'yi hem de [GetCourtPositionType('bookmaker_court_position').GetName]'ü kiralayabilir" #NT!
- culture_parameter_unlock_voluntary_laampdom: "[SelectLocalization( HasDlcFeature( 'landless_playable' ), 'culture_parameter_unlock_voluntary_laampdom_DLC', 'culture_parameter_unlock_voluntary_laampdom_NO_DLC' )]" #NT!
- culture_parameter_unlock_voluntary_laampdom_DLC: "[GetDecisionWithKey('become_landless_adventurer_decision').GetName] [decision|E]'e izin verir" #NT!
+ hosts_chariot_races_name: "Dörtlü"
+ culture_parameter_hosts_chariot_races: "[GetActivityType('activity_chariot_race').GetName] [activity|E]'e ev sahipliği yapabilir ve hem [GetCourtPositionType('charioteer_court_position').GetName]'yi hem de [GetCourtPositionType('bookmaker_court_position').GetName]'ü kiralayabilir"
+ culture_parameter_unlock_voluntary_laampdom: "[SelectLocalization( HasDlcFeature( 'landless_playable' ), 'culture_parameter_unlock_voluntary_laampdom_DLC', 'culture_parameter_unlock_voluntary_laampdom_NO_DLC' )]"
+ culture_parameter_unlock_voluntary_laampdom_DLC: "[GetDecisionWithKey('become_landless_adventurer_decision').GetName] [decision|E]'e izin verir"
  culture_parameter_unlock_voluntary_laampdom_NO_DLC: ""
- unlock_voluntary_laampdom_name: "[GetCultureTradition('tradition_swords_for_hire').GetName], [GetCultureTradition('tradition_horse_lords').GetName], [GetCultureTradition('tradition_futuwaa').GetName], [GetCultureTradition('tradition_ep3_audacious_cadets').GetName], [GetCultureTradition('tradition_hird').GetName], [GetCultureTradition('tradition_caravaneers').GetName], [GetCultureTradition('tradition_diasporic').GetName] veya [GetCultureTradition('tradition_fp1_coastal_warriors').GetName]" #NT!
+ unlock_voluntary_laampdom_name: "[GetCultureTradition('tradition_swords_for_hire').GetName], [GetCultureTradition('tradition_horse_lords').GetName], [GetCultureTradition('tradition_futuwaa').GetName], [GetCultureTradition('tradition_ep3_audacious_cadets').GetName], [GetCultureTradition('tradition_hird').GetName], [GetCultureTradition('tradition_caravaneers').GetName], [GetCultureTradition('tradition_diasporic').GetName] veya [GetCultureTradition('tradition_fp1_coastal_warriors').GetName]"
   
- unlock_junior_emperors_name: "[nominal_duumvirates|E]" #NT!
- culture_parameter_unlock_junior_emperors: "[administrative|E] [emperors|E], [children|E]'lerinden birini [junior_emperor|E] olarak atayabilir ve $game_concept_child$ reşit olana kadar [nominal_duumvirate|E]'e girebilir" #NT!
- unlock_co_emperors_name: "[duumvirates|E]" #NT!
- culture_parameter_unlock_co_emperors: "[administrative|E] [emperors|E], [duumvirates|E]'ye gönüllü olarak girebilir [sharing_power|E], güçlü bonuslar için başka bir [character|E] ile" #NT!
+ unlock_junior_emperors_name: "[nominal_duumvirates|E]"
+ culture_parameter_unlock_junior_emperors: "[administrative|E] [emperors|E], [children|E]'lerinden birini [junior_emperor|E] olarak atayabilir ve $game_concept_child$ reşit olana kadar [nominal_duumvirate|E]'e girebilir"
+ unlock_co_emperors_name: "[duumvirates|E]"
+ culture_parameter_unlock_co_emperors: "[administrative|E] [emperors|E], [duumvirates|E]'ye gönüllü olarak girebilir [sharing_power|E], güçlü bonuslar için başka bir [character|E] ile"
   
- holds_triumphs_name: "Zaferler barındırır" #NT!
- culture_parameter_holds_triumphs: "Zaferi elde etmek için [decision|E] kazanın" #NT!
+ holds_triumphs_name: "Zaferler barındırır"
+ culture_parameter_holds_triumphs: "Zaferi elde etmek için [decision|E] kazanın"
   
- culture_parameter_farm_estates_pastures_unlock: "#V $building_pastures_04$#! [building|E]'ün inşası, #V $building_type_farm_estates_01$#!'nin ilk dört kademesinin kilidini açar [buildings|E] hattı" #NT!
- culture_parameter_watermills_forestries_unlock: "#V $building_logging_camps_04$#! [building|E]'ün inşası, #V $building_type_watermills_01$#!'nin ilk dört kademesinin kilidini açar [buildings|E] hattı" #NT!
- culture_parameter_windmills_hill_farms_unlock: "#V $building_hill_farms_04$#! [building|E]'ün inşası, #V $building_type_windmills_01$#!'nin ilk dört kademesinin kilidini açar [buildings|E] hattı" #NT!
- culture_parameter_second_caravanserai: "Bu [culture|E]'ün [counties|E]'ünde ikinci bir #V $building_type_caravanserai_01$#! inşa edilebilir" #NT!
+ culture_parameter_farm_estates_pastures_unlock: "#V $building_pastures_04$#! [building|E]'ün inşası, #V $building_type_farm_estates_01$#!'nin ilk dört kademesinin kilidini açar [buildings|E] hattı"
+ culture_parameter_watermills_forestries_unlock: "#V $building_logging_camps_04$#! [building|E]'ün inşası, #V $building_type_watermills_01$#!'nin ilk dört kademesinin kilidini açar [buildings|E] hattı"
+ culture_parameter_windmills_hill_farms_unlock: "#V $building_hill_farms_04$#! [building|E]'ün inşası, #V $building_type_windmills_01$#!'nin ilk dört kademesinin kilidini açar [buildings|E] hattı"
+ culture_parameter_second_caravanserai: "Bu [culture|E]'ün [counties|E]'ünde ikinci bir #V $building_type_caravanserai_01$#! inşa edilebilir"
   
- culture_parameter_family_castration: "$castrate_child_interaction$ [interaction|E]'i kullanabilirsiniz" #NT!
+ culture_parameter_family_castration: "$castrate_child_interaction$ [interaction|E]'i kullanabilirsiniz"
   
- EVENT_BONUS_INTERMARRYING_ADMIN: "[houses|E]: $VALUE|+=0$ arasındaki uzun süreli bağlar" #NT!
+ EVENT_BONUS_INTERMARRYING_ADMIN: "[houses|E]: $VALUE|+=0$ arasındaki uzun süreli bağlar"
   
- culture_parameter_allows_noble_family_adoption: "[administrative|E] [noble_family|E] [house_heads|E] #V $noble_family_adoption_interaction$#! [interaction|E] kullanabilir" #NT!
+ culture_parameter_allows_noble_family_adoption: "[administrative|E] [noble_family|E] [house_heads|E] #V $noble_family_adoption_interaction$#! [interaction|E] kullanabilir"
   
- culture_parameter_much_more_likely_to_be_laamps: "[SelectLocalization( HasDlcFeature( 'landless_playable' ), 'culture_parameter_much_more_likely_to_be_laamps_DLC', 'culture_parameter_much_more_likely_to_be_laamps_NO_DLC' )]" #NT!
- culture_parameter_much_more_likely_to_be_laamps_DLC: "[characters|E]'ın [adventurers|E] olma olasılığı çok daha yüksektir" #NT!
+ culture_parameter_much_more_likely_to_be_laamps: "[SelectLocalization( HasDlcFeature( 'landless_playable' ), 'culture_parameter_much_more_likely_to_be_laamps_DLC', 'culture_parameter_much_more_likely_to_be_laamps_NO_DLC' )]"
+ culture_parameter_much_more_likely_to_be_laamps_DLC: "[characters|E]'ın [adventurers|E] olma olasılığı çok daha yüksektir"
  culture_parameter_much_more_likely_to_be_laamps_NO_DLC: ""
- culture_parameter_more_likely_to_be_laamps: "[SelectLocalization( HasDlcFeature( 'landless_playable' ), 'culture_parameter_more_likely_to_be_laamps_DLC', 'culture_parameter_more_likely_to_be_laamps_NO_DLC' )]" #NT!
- culture_parameter_more_likely_to_be_laamps_DLC: "[characters|E]'ın [adventurers|E] olma olasılığı çok daha yüksektir" #NT!
+ culture_parameter_more_likely_to_be_laamps: "[SelectLocalization( HasDlcFeature( 'landless_playable' ), 'culture_parameter_more_likely_to_be_laamps_DLC', 'culture_parameter_more_likely_to_be_laamps_NO_DLC' )]"
+ culture_parameter_more_likely_to_be_laamps_DLC: "[characters|E]'ın [adventurers|E] olma olasılığı çok daha yüksektir"
  culture_parameter_more_likely_to_be_laamps_NO_DLC: ""
   
- culture_parameter_frontier_themes_borrow_neighbor_troops: "Sınır İdaresi [governorships|E], Sınır komşusu olmayanların [title_men_at_arms|E]'ini ödünç alabilir" #NT!
+ culture_parameter_frontier_themes_borrow_neighbor_troops: "Sınır İdaresi [governorships|E], Sınır komşusu olmayanların [title_men_at_arms|E]'ini ödünç alabilir"
   
- culture_parameter_less_likely_to_culture_convert: "#high Yerel Kültüre Dönüştür#! [decision|E] [stress|E] kazanıma neden olur ve [rulers|E] tarafından önlenir" #NT!
- culture_parameter_less_likely_to_promote_culture: "[rulers|E] nadiren #V $task_promote_culture$#! [councillor_task|E] kullanacaktır" #NT!
+ culture_parameter_less_likely_to_culture_convert: "#high Yerel Kültüre Dönüştür#! [decision|E] [stress|E] kazanıma neden olur ve [rulers|E] tarafından önlenir"
+ culture_parameter_less_likely_to_promote_culture: "[rulers|E] nadiren #V $task_promote_culture$#! [councillor_task|E] kullanacaktır"
   
  culture_parameter_resistant_to_desert_privation: ""
  culture_parameter_resistant_to_mountain_privation: ""

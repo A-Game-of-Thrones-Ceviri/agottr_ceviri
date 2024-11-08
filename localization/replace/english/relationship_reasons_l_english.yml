@@ -11,8 +11,8 @@
  test_rival_desc_corresponding: "[CHARACTER.GetShortUINameNotMe|U], köpeğinin [TARGET_CHARACTER.GetShortUINameNotMe] tarafından öldürülmesi üzerine intikam yemini etti."
  test_nemesis_desc: "[TARGET_CHARACTER.GetShortUINameNotMe|U], favori köpeğinin [CHARACTER.GetShortUINameNotMe] tarafından öldürülüp, pişirilip, üstüne bir de yenmesi üzerine intikam yemini etti."
  test_nemesis_desc_corresponding: "[CHARACTER.GetShortUINameNotMe|U], favori köpeğinin [TARGET_CHARACTER.GetShortUINameNotMe] tarafından öldürülüp, pişirilip, üstüne bir de yenmesi üzerine intikam yemini etti."
- grudge_imprisonment_desc: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetHerHis] hapishanesinde geçirdiği uzun ve işkence dolu yılların ardından [TARGET_CHARACTER.GetShortUIName]'e karşı nefret dolu bir kin beslemeye başladı." #NT!
- grudge_imprisonment_desc_corresponding: "[TARGETCHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetHerHis] hapishanesinde geçirdiği uzun ve işkence dolu yılların ardından [CHARACTER.GetShortUIName]'e karşı nefret dolu bir kin geliştirdi" #NT!
+ grudge_imprisonment_desc: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetHerHis] hapishanesinde geçirdiği uzun ve işkence dolu yılların ardından [TARGET_CHARACTER.GetShortUIName]'e karşı nefret dolu bir kin beslemeye başladı."
+ grudge_imprisonment_desc_corresponding: "[TARGETCHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetHerHis] hapishanesinde geçirdiği uzun ve işkence dolu yılların ardından [CHARACTER.GetShortUIName]'e karşı nefret dolu bir kin geliştirdi"
  test_lover_desc: "[TARGET_CHARACTER.GetShortUINameNotMe|U], etkileyici bacaklarıyla [CHARACTER.GetShortUINameNotMe] adlı karakteri baştan çıkardı."
  test_lover_desc_corresponding: "[CHARACTER.GetShortUINameNotMe|U], etkileyici bacaklarıyla [TARGET_CHARACTER.GetShortUINameNotMe] adlı karakteri baştan çıkardı."
  test_soulmate_desc: "[TARGET_CHARACTER.GetShortUINameNotMe|U], [CHARACTER.GetShortUINameNotMe] için dağa tırmanıp nadir rastlanan çiçeği getirerek ona olan ebedi bağlılığını ilan etti."
@@ -198,7 +198,7 @@
  friend_shared_rivals: "[CHARACTER.GetShortUINameNotMe|U] ve [TARGET_CHARACTER.GetShortUINameNotMe], [TARGET_CHARACTER_2.GetShortUINameNotMe] adlı karaktere karşı ortak bir nefret besledikleri için aralarında bir bağ kuruldu."
  friend_bonfire_bonding: "[CHARACTER.GetShortUINameNotMe|U] ve [TARGET_CHARACTER.GetShortUINameNotMe] bir kamp ateşi etrafında birbirlerine tatlılar ikram ettiler."
  friend_generic_history: "[CHARACTER.GetShortUINameNotMe|U] ve [TARGET_CHARACTER.GetShortUINameNotMe] çok uzun süredir çok iyi arkadaşlar."
- friend_history_helped_fathers_campaigned_together: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] babalar birlikte kampanya yürüttüler ve çocukları bu bağı hatırlıyor." #NT!
+ friend_history_helped_fathers_campaigned_together: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] babalar birlikte kampanya yürüttüler ve çocukları bu bağı hatırlıyor."
  friend_stole_clothes_together: "[CHARACTER.GetShortUINameNotMe|U] ve [TARGET_CHARACTER.GetShortUINameNotMe] çocukken [TARGET_CHARACTER_2.GetShortUINameNotMe] adlı karakterin giysilerini zekice tasarlanmış bir şakada çaldılar."
  friend_children_stole_alcohol: "[CHARACTER.GetShortUINameNotMe|U] ve [TARGET_CHARACTER.GetShortUINameNotMe] çocukken bir fıçı içki çaldılar ve beraber içtiler!"
  friend_bonded_after_reading_book: "[CHARACTER.GetShortUINameNotMe|U] ve [TARGET_CHARACTER.GetShortUINameNotMe] çocukken beraber [CHARACTER.GetFaith.ReligiousText] okuduktan sonra aralarında bir bağ kuruldu."
@@ -257,8 +257,8 @@
  friend_motivated_by_parent: "[CHARACTER.GetShortUINameNotMe|U], [TARGET_CHARACTER.GetShortUINameNotMe] ile arkadaş olması için [TARGET_CHARACTER_2.GetShortUINameNotMe] adlı karakter tarafından teşvik edildi."
  friend_motivated_by_parent_corresponding: "[TARGET_CHARACTER.GetShortUINameNotMe|U], [CHARACTER.GetShortUINameNotMe] ile arkadaş olması için [TARGET_CHARACTER_2.GetShortUINameNotMe] adlı karakter tarafından teşvik edildi."
   
- friend_helped_me_marry: "[TARGET_CHARACTER.GetShortUIName|U] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'were', 'was' )], [CHARACTER.GetShortUIName]'nin [TARGET_CHARACTER_2.GetShortUIName] ile evlenmesine yardım etti." #NT!
- friend_helped_me_marry_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'in [TARGET_CHARACTER_2.GetShortUIName] ile evlenmesine yardımcı oldu." #NT!
+ friend_helped_me_marry: "[TARGET_CHARACTER.GetShortUIName|U] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'were', 'was' )], [CHARACTER.GetShortUIName]'nin [TARGET_CHARACTER_2.GetShortUIName] ile evlenmesine yardım etti."
+ friend_helped_me_marry_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'in [TARGET_CHARACTER_2.GetShortUIName] ile evlenmesine yardımcı oldu."
   
  friend_good_chats: "[CHARACTER.GetShortUINameNotMe|U] henüz bir çocukken [TARGET_CHARACTER.GetShortUINameNotMe] ile konuşarak ondan çok şey öğrendi."
  friend_good_chats_corresponding: "[TARGET_CHARACTER.GetShortUINameNotMe|U] henüz bir çocukken [CHARACTER.GetShortUINameNotMe] ile konuşarak ondan çok şey öğrendi."
@@ -869,17 +869,17 @@
  rival_imprisoned_and_robbed_me: "[TARGET_CHARACTER.GetShortUINameNotMe|U], [CHARACTER.GetShortUINameNotMe] adlı karaktere zulmetti ve onu hapse attı."
  rival_imprisoned_and_robbed_me_corresponding: "[CHARACTER.GetShortUINameNotMe|U], [TARGET_CHARACTER.GetShortUINameNotMe] adlı karaktere zulmetti ve onu hapse attı."
   
- rival_robbed_me: "[TARGET_CHARACTER.GetShortUIName|U] yolda soyuldu [CHARACTER.GetShortUIName]." #NT!
- rival_robbed_me_corresponding: "[CHARACTER.GetShortUIName|U] yolda soyuldu [TARGET_CHARACTER.GetShortUIName]." #NT!
+ rival_robbed_me: "[TARGET_CHARACTER.GetShortUIName|U] yolda soyuldu [CHARACTER.GetShortUIName]."
+ rival_robbed_me_corresponding: "[CHARACTER.GetShortUIName|U] yolda soyuldu [TARGET_CHARACTER.GetShortUIName]."
   
- rival_attempted_to_rob_me: "[TARGET_CHARACTER.GetShortUIName|U] yolda [CHARACTER.GetShortUIName]'i soymaya çalıştı." #NT!
- rival_attempted_to_rob_me_corresponding: "[CHARACTER.GetShortUIName|U] yolda [TARGET_CHARACTER.GetShortUIName]'i soymaya çalıştı." #NT!
+ rival_attempted_to_rob_me: "[TARGET_CHARACTER.GetShortUIName|U] yolda [CHARACTER.GetShortUIName]'i soymaya çalıştı."
+ rival_attempted_to_rob_me_corresponding: "[CHARACTER.GetShortUIName|U] yolda [TARGET_CHARACTER.GetShortUIName]'i soymaya çalıştı."
   
- rival_mugged_me: "[TARGET_CHARACTER.GetShortUIName|U] yolda [CHARACTER.GetShortUIName]'i soymuş." #NT!
- rival_mugged_me_corresponding: "[CHARACTER.GetShortUIName|U] yolda [TARGET_CHARACTER.GetShortUIName]'i soymuş." #NT!
+ rival_mugged_me: "[TARGET_CHARACTER.GetShortUIName|U] yolda [CHARACTER.GetShortUIName]'i soymuş."
+ rival_mugged_me_corresponding: "[CHARACTER.GetShortUIName|U] yolda [TARGET_CHARACTER.GetShortUIName]'i soymuş."
   
- rival_attempted_to_mug_me: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName] adlı kişiyi şehrin arka sokaklarında soymaya çalıştı." #NT!
- rival_attempted_to_mug_me_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName] adlı kişiyi şehrin arka sokaklarında soymaya çalıştı." #NT!
+ rival_attempted_to_mug_me: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName] adlı kişiyi şehrin arka sokaklarında soymaya çalıştı."
+ rival_attempted_to_mug_me_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName] adlı kişiyi şehrin arka sokaklarında soymaya çalıştı."
   
  rival_forced_to_socialize: "[CHARACTER.GetShortUINameNotMe|U] ve [TARGET_CHARACTER.GetShortUINameNotMe] birbirleriyle zaman geçirmek zorunda kaldıktan sonra düşman olmaya başladılar."
  rival_spouses_do_not_get_along: "[CHARACTER.GetShortUINameNotMe|U] ve [TARGET_CHARACTER.GetShortUINameNotMe] eşlerinin sarayında sık sık birbirlerine zıt düştükleri için düşman olmaya başladılar."
@@ -927,8 +927,8 @@
  rival_had_relative_freed: "[CHARACTER.GetShortUINameNotMe|U] kendi hapishanesinden [TARGET_CHARACTER.GetShortUINameNotMe] adlı karakterin bir akrabasını zorla serbest bırakmak zorunda kaldı."
  rival_had_relative_freed_corresponding: "[TARGET_CHARACTER.GetShortUINameNotMe|U] kendi hapishanesinden [CHARACTER.GetShortUINameNotMe] adlı karakterin bir akrabasını zorla serbest bırakmak zorunda kaldı."
   # AGOT Modified - fixed error 
- #rival_executed_relative: "[CHARACTER.GetShortUIName|U] tutuklu [TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip] yakınını idam etti." #NT!
- #rival_executed_relative_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] tutuklu [CHARACTER.GetShortUINamePossessiveNoTooltip] yakınını idam etti." #NT!
+ #rival_executed_relative: "[CHARACTER.GetShortUIName|U] tutuklu [TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip] yakınını idam etti."
+ #rival_executed_relative_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] tutuklu [CHARACTER.GetShortUINamePossessiveNoTooltip] yakınını idam etti."
  rival_executed_relative: "[CHARACTER.GetShortUINameNotMe|U], [TARGET_CHARACTER.GetShortUINameNotMeNoTooltip] adlı karakterin tutsak olan akrabasını infaz etti."
  rival_executed_relative_corresponding: "[TARGET_CHARACTER.GetShortUINameNotMe|U], [CHARACTER.GetShortUINameNotMeNoTooltip] adlı karakterin tutsak olan akrabasını infaz etti."
   # End of AGOT Modified 
@@ -1840,7 +1840,7 @@
  rival_tried_to_embezzle: "[CHARACTER.GetShortUINameNotMe|U], [TARGET_CHARACTER.GetShortUINameNotMe] adlı karakterin altınlarını zimmetine geçirmeye çalışırken yakalandı."
  rival_tried_to_embezzle_corresponding: "[TARGET_CHARACTER.GetShortUINameNotMe|U], [CHARACTER.GetShortUINameNotMe] adlı karakterin altınlarını zimmetine geçirmeye çalışırken yakalandı."
   
- lover_covered_excreta:0 "[CHARACTER.GetShortUIName|U]: "[CHARACTER.GetShortUIName|U]: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'nin [CHARACTER.GetShortUINamePossessiveNoTooltip] başına bir kova dışkı dökmesine oldukça aşk dolu bir şekilde tepki verdi." #NT!
+ lover_covered_excreta:0 "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName] bir kova dışkıyı [CHARACTER.GetShortUINamePossessiveNoTooltip] kafasına boşaltmasına oldukça şehvetli bir şekilde karşılık verdi."
  lover_covered_excreta_corresponding: "[CHARACTER.GetShortUINameNotMe], [TARGET_CHARACTER.GetShortUINameNotMe|U] adlı karakterin başından aşağıya bir kova dolusu dışkı dökünce [TARGET_CHARACTER.GetShortUINameNotMeNoTooltip] ona sevgiyle yaklaştı."
   
  lover_festival_dancing: "[CHARACTER.GetShortUINameNotMe|U] bir Kültür Festivali sırasında dans partneri olarak [TARGET_CHARACTER.GetShortUINameNotMe] adlı karakteri seçti."
@@ -1940,8 +1940,8 @@
  lover_adventurer_thirst_corresponding: "[CHARACTER.GetShortUINameNotMe] mektuplarında [TARGET_CHARACTER.GetShortUINameNotMe] adlı karakteri ne kadar özlediğini yazdı, o da karşılık verdi."
   
  #AGOT Modified, Lady Godiva to Jonquil the Maid 
- # lover_court_godiva: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUINamePossessive] güzelliğini ünlü Leydi Godiva'nın güzelliğiyle karşılaştırdı." #NT!
- # lover_court_godiva_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUINamePossessive] güzelliğini ünlü Leydi Godiva'nın güzelliğiyle karşılaştırdı." #NT!
+ # lover_court_godiva: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUINamePossessive] güzelliğini ünlü Leydi Godiva'nın güzelliğiyle karşılaştırdı."
+ # lover_court_godiva_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUINamePossessive] güzelliğini ünlü Leydi Godiva'nın güzelliğiyle karşılaştırdı."
  lover_court_godiva: "[TARGET_CHARACTER.GetShortUINameNotMe|U], [CHARACTER.GetShortUINameNotMe] adlı karakterin güzelliğini ünlü Leydi Godiva'nın güzelliğiyle karşılaştırdı."
  lover_court_godiva_corresponding: "[CHARACTER.GetShortUINameNotMe|U], [TARGET_CHARACTER.GetShortUINameNotMe] adlı karakterin güzelliğini ünlü Leydi Godiva'nın güzelliğiyle karşılaştırdı."
   
@@ -2909,9 +2909,9 @@
  friend_comforting_words_corresponding: "[TARGET_CHARACTER.GetShortUINameNotMe|U] ile [CHARACTER.GetShortUINameNotMe|U], [TARGET_CHARACTER.GetShortUINameNotMe|U] kötü gününde [CHARACTER.GetShortUINameNotMe|U] adlı karakterin yanında olması sebebiyle arkadaş oldu."
   
   #AGOT Modified fixing vanilla errors 
- #best_friend_imaginary_friend: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName], [ CHARACTER.GetShortUINamePossessiveNoTooltip]'nin hayali arkadaşının teşvikiyle en iyi arkadaş oldular." #NT!
- #best_friend_imaginary_friend_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName], [TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip]'nin hayali arkadaşının teşvikiyle en iyi arkadaş oldular." #NT!
- #lover_imaginary_friend: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName], [ CHARACTER.GetShortUINamePossessiveNoTooltip]'nin hayali arkadaşının teşvikiyle sevgili oldular." #NT!
+ #best_friend_imaginary_friend: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName], [ CHARACTER.GetShortUINamePossessiveNoTooltip]'nin hayali arkadaşının teşvikiyle en iyi arkadaş oldular."
+ #best_friend_imaginary_friend_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName], [TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip]'nin hayali arkadaşının teşvikiyle en iyi arkadaş oldular."
+ #lover_imaginary_friend: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName], [ CHARACTER.GetShortUINamePossessiveNoTooltip]'nin hayali arkadaşının teşvikiyle sevgili oldular."
  best_friend_imaginary_friend: "[CHARACTER.GetShortUINameNotMe|U] ile [TARGET_CHARACTER.GetShortUINameNotMe|U], [CHARACTER.GetShortUINameNotMeNoTooltip] adlı karakterin hayali arkadaşının cesaret vermesi sonucu en iyi arkadaş hâline geldiler."
  best_friend_imaginary_friend_corresponding: "[TARGET_CHARACTER.GetShortUINameNotMe|U] ile [CHARACTER.GetShortUINameNotMe|U], [TARGET_CHARACTER.GetShortUINameNotMeNoTooltip] adlı karakterin hayali arkadaşının cesaret vermesi sonucu en iyi arkadaş hâline geldiler."
   
@@ -2932,227 +2932,227 @@
  friend_legend_agreement: "[TARGET_CHARACTER.GetShortUINameNotMe|U], [CHARACTER.GetShortUINameNotMe] adlı karakterin destanını övdükten sonra arkadaş hâline geldiler"
  friend_legend_agreement_corresponding: "[CHARACTER.GetShortUINameNotMe|U], [TARGET_CHARACTER.GetShortUINameNotMe] adlı karakterin destanını övdükten sonra arkadaş hâline geldiler"
   
- rival_accused_of_stealing_land: "[TARGET_CHARACTER.GetShortUIName] vergi ödeyen küçük çiftlikleri satın aldıktan sonra, [CHARACTER.GetShortUIName] [TARGET_CHARACTER.GetShortUIName]'ı toprak hırsızı bir suçlu olarak suçladı." #NT!
- rival_accused_of_stealing_land_corresponding: "[CHARACTER.GetShortUIName] vergi ödeyen küçük çiftlikleri satın aldıktan sonra, [TARGET_CHARACTER.GetShortUIName] [CHARACTER.GetShortUIName]'ı toprak hırsızı bir suçlu olarak suçladı." #NT!
+ rival_accused_of_stealing_land: "[TARGET_CHARACTER.GetShortUIName] vergi ödeyen küçük çiftlikleri satın aldıktan sonra, [CHARACTER.GetShortUIName] [TARGET_CHARACTER.GetShortUIName]'ı toprak hırsızı bir suçlu olarak suçladı."
+ rival_accused_of_stealing_land_corresponding: "[CHARACTER.GetShortUIName] vergi ödeyen küçük çiftlikleri satın aldıktan sonra, [TARGET_CHARACTER.GetShortUIName] [CHARACTER.GetShortUIName]'ı toprak hırsızı bir suçlu olarak suçladı."
   
- rival_denigrated_in_the_hippodrome: "[CHARACTER.GetShortUIName|U], binlerce seyirci önünde yaptığı bir konuşmada [TARGET_CHARACTER.GetShortUIName]'i taht adayı olarak küçümseyerek aşağıladı." #NT!
- rival_denigrated_in_the_hippodrome_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], binlerce seyirci önünde yaptığı bir konuşmada [CHARACTER.GetShortUIName]'i taht adayı olarak küçümseyerek aşağıladı." #NT!
+ rival_denigrated_in_the_hippodrome: "[CHARACTER.GetShortUIName|U], binlerce seyirci önünde yaptığı bir konuşmada [TARGET_CHARACTER.GetShortUIName]'i taht adayı olarak küçümseyerek aşağıladı."
+ rival_denigrated_in_the_hippodrome_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], binlerce seyirci önünde yaptığı bir konuşmada [CHARACTER.GetShortUIName]'i taht adayı olarak küçümseyerek aşağıladı."
   
- rival_fired_at_chariot_race: "[CHARACTER.GetShortUIName], bir araba yarışında tezahürat eden kalabalığı yatıştırmak için [TARGET_CHARACTER.GetShortUIName]'in [TARGET_CHARACTER.GetHerHis] pozisyonunu alenen elinden aldı." #NT!
- rival_fired_at_chariot_race_corresponding: "[TARGET_CHARACTER.GetShortUIName], bir araba yarışında tezahürat eden kalabalığı yatıştırmak için [CHARACTER.GetShortUIName]'in [CHARACTER.GetHerHis] pozisyonunu alenen elinden aldı." #NT!
+ rival_fired_at_chariot_race: "[CHARACTER.GetShortUIName], bir araba yarışında tezahürat eden kalabalığı yatıştırmak için [TARGET_CHARACTER.GetShortUIName]'in [TARGET_CHARACTER.GetHerHis] pozisyonunu alenen elinden aldı."
+ rival_fired_at_chariot_race_corresponding: "[TARGET_CHARACTER.GetShortUIName], bir araba yarışında tezahürat eden kalabalığı yatıştırmak için [CHARACTER.GetShortUIName]'in [CHARACTER.GetHerHis] pozisyonunu alenen elinden aldı."
   
- friend_honored_in_the_hippodrome: "[CHARACTER.GetShortUIName|U] onurlandırıldı [TARGET_CHARACTER.GetShortUIName] binlerce seyircinin önünde coşkulu bir konuşma yaparak neşeli övgü dalgasını davet etti." #NT!
- friend_honored_in_the_hippodrome_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] onurlandırıldı [CHARACTER.GetShortUIName] binlerce seyircinin önünde coşkulu bir konuşma yaparak neşeli övgü dalgasını davet etti." #NT!
+ friend_honored_in_the_hippodrome: "[CHARACTER.GetShortUIName|U] onurlandırıldı [TARGET_CHARACTER.GetShortUIName] binlerce seyircinin önünde coşkulu bir konuşma yaparak neşeli övgü dalgasını davet etti."
+ friend_honored_in_the_hippodrome_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] onurlandırıldı [CHARACTER.GetShortUIName] binlerce seyircinin önünde coşkulu bir konuşma yaparak neşeli övgü dalgasını davet etti."
   
- lover_romantic_speech_in_the_hippodrome: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'i zamansız Hipodrom havasında seslendirdiği karşı konulmaz şiirsel bir konuşmayla muhteşem bir şekilde baştan çıkardı." #NT!
- lover_romantic_speech_in_the_hippodrome_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'i zamansız Hipodrom havasında seslendirdiği karşı konulmaz şiirsel bir konuşmayla muhteşem bir şekilde baştan çıkardı." #NT!
+ lover_romantic_speech_in_the_hippodrome: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'i zamansız Hipodrom havasında seslendirdiği karşı konulmaz şiirsel bir konuşmayla muhteşem bir şekilde baştan çıkardı."
+ lover_romantic_speech_in_the_hippodrome_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'i zamansız Hipodrom havasında seslendirdiği karşı konulmaz şiirsel bir konuşmayla muhteşem bir şekilde baştan çıkardı."
   
- rival_forced_me_step_down: "[TARGET_CHARACTER.GetShortUIName], [CHARACTER.GetShortUIName]'i bir komplo ile Valilik görevinden [CHARACTER.GetHerHis] pozisyonundan istifa etmeye zorladı." #NT!
- rival_forced_me_step_down_corresponding: "[CHARACTER.GetShortUIName], [TARGET_CHARACTER.GetShortUIName]'i bir komplo ile Valilik görevinden [TARGET_CHARACTER.GetHerHis] pozisyonundan istifa etmeye zorladı." #NT!
+ rival_forced_me_step_down: "[TARGET_CHARACTER.GetShortUIName], [CHARACTER.GetShortUIName]'i bir komplo ile Valilik görevinden [CHARACTER.GetHerHis] pozisyonundan istifa etmeye zorladı."
+ rival_forced_me_step_down_corresponding: "[CHARACTER.GetShortUIName], [TARGET_CHARACTER.GetShortUIName]'i bir komplo ile Valilik görevinden [TARGET_CHARACTER.GetHerHis] pozisyonundan istifa etmeye zorladı."
   
- friend_moved_estate: "[CHARACTER.GetShortUINamePossessive] daveti üzerine [TARGET_CHARACTER.GetShortUIName], [TARGET_CHARACTER.GetHouse.GetName] ailesinin mülkünü [CHARACTER.GetShortUINamePossessive] sermayeye taşıdı ve çok değerli bir sırdaş oldu." #NT!
- friend_moved_estate_corresponding: "[TARGET_CHARACTER.GetShortUINamePossessive] daveti üzerine [CHARACTER.GetShortUIName], [CHARACTER.GetHouse.GetName] ailesinin mülkünü [TARGET_CHARACTER.GetShortUINamePossessive] sermayeye taşıdı ve çok değerli bir sırdaş oldu." #NT!
+ friend_moved_estate: "[CHARACTER.GetShortUINamePossessive] daveti üzerine [TARGET_CHARACTER.GetShortUIName], [TARGET_CHARACTER.GetHouse.GetName] ailesinin mülkünü [CHARACTER.GetShortUINamePossessive] sermayeye taşıdı ve çok değerli bir sırdaş oldu."
+ friend_moved_estate_corresponding: "[TARGET_CHARACTER.GetShortUINamePossessive] daveti üzerine [CHARACTER.GetShortUIName], [CHARACTER.GetHouse.GetName] ailesinin mülkünü [TARGET_CHARACTER.GetShortUINamePossessive] sermayeye taşıdı ve çok değerli bir sırdaş oldu."
   
- lover_chariot_races_rendezvous: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] imparatorluk araba yarışları sırasında birlikte gizlice uzaklaşıp kalabalığın coşkuyla haykırışları arasında sevgili oldular." #NT!
- lover_chariot_races_rendezvous_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] imparatorluk araba yarışları sırasında birlikte gizlice uzaklaşıp kalabalığın coşkuyla haykırışları arasında sevgili oldular." #NT!
+ lover_chariot_races_rendezvous: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] imparatorluk araba yarışları sırasında birlikte gizlice uzaklaşıp kalabalığın coşkuyla haykırışları arasında sevgili oldular."
+ lover_chariot_races_rendezvous_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] imparatorluk araba yarışları sırasında birlikte gizlice uzaklaşıp kalabalığın coşkuyla haykırışları arasında sevgili oldular."
   
- cid_lover_refused_to_left_behind: "[CHARACTER.GetShortUIName|U] geride kalmayı reddetti [TARGET_CHARACTER.GetShortUIName] [CHARACTER.GetHerHis] hükümdarının emirlerine itaatsizlik etti." #NT!
- cid_lover_refused_to_left_behind_corresponding: "$cid_lover_refused_to_left_behind$" #NT!
+ cid_lover_refused_to_left_behind: "[CHARACTER.GetShortUIName|U] geride kalmayı reddetti [TARGET_CHARACTER.GetShortUIName] [CHARACTER.GetHerHis] hükümdarının emirlerine itaatsizlik etti."
+ cid_lover_refused_to_left_behind_corresponding: "$cid_lover_refused_to_left_behind$"
   
- friend_chariot_invited_to_join: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'i [CHARACTER.GetHerHim]'yi hipodroma davet etti" #NT!
- friend_chariot_invited_to_join_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'e hipodromda katılmaya davet edildi" #NT!
- friend_chariot_mingling: "[CHARACTER.GetShortUIName|U] hipodromda [TARGET_CHARACTER.GetShortUIName] ile karıştı" #NT!
- friend_chariot_mingling_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] hipodromda [CHARACTER.GetShortUIName] ile karıştı" #NT!
- lover_chariot_mingling: "[CHARACTER.GetShortUIName|U] büyülendim [TARGET_CHARACTER.GetShortUIName] hipodromda" #NT!
- lover_chariot_mingling_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], hipodromda [CHARACTER.GetShortUIName] tarafından büyülendi" #NT!
- friend_chariot_convincing_display: "[CHARACTER.GetShortUIName|U], hipodromda [TARGET_CHARACTER.GetShortUIName] ile bağ kurdu" #NT!
- friend_chariot_convincing_display_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], hipodromda [CHARACTER.GetShortUIName] ile bağ kurdu" #NT!
- rival_chariot_race: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName], hipodromda yaşanan hararetli bir tartışmanın ardından rakip oldular" #NT!
- rival_chariot_race_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName], hipodromda yaşanan hararetli bir tartışmanın ardından rakip oldular" #NT!
+ friend_chariot_invited_to_join: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'i [CHARACTER.GetHerHim]'yi hipodroma davet etti"
+ friend_chariot_invited_to_join_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'e hipodromda katılmaya davet edildi"
+ friend_chariot_mingling: "[CHARACTER.GetShortUIName|U] hipodromda [TARGET_CHARACTER.GetShortUIName] ile karıştı"
+ friend_chariot_mingling_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] hipodromda [CHARACTER.GetShortUIName] ile karıştı"
+ lover_chariot_mingling: "[CHARACTER.GetShortUIName|U] büyülendim [TARGET_CHARACTER.GetShortUIName] hipodromda"
+ lover_chariot_mingling_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], hipodromda [CHARACTER.GetShortUIName] tarafından büyülendi"
+ friend_chariot_convincing_display: "[CHARACTER.GetShortUIName|U], hipodromda [TARGET_CHARACTER.GetShortUIName] ile bağ kurdu"
+ friend_chariot_convincing_display_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], hipodromda [CHARACTER.GetShortUIName] ile bağ kurdu"
+ rival_chariot_race: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName], hipodromda yaşanan hararetli bir tartışmanın ardından rakip oldular"
+ rival_chariot_race_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName], hipodromda yaşanan hararetli bir tartışmanın ardından rakip oldular"
   
- friend_mentored_in_governance: "[CHARACTER.GetShortUIName|U] [TARGET_CHARACTER.GetShortUIName]'e yönetim hakkında bir iki şey öğretti" #NT!
- friend_mentored_in_governance_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] [CHARACTER.GetShortUIName]'e yönetim hakkında bir iki şey öğretti" #NT!
+ friend_mentored_in_governance: "[CHARACTER.GetShortUIName|U] [TARGET_CHARACTER.GetShortUIName]'e yönetim hakkında bir iki şey öğretti"
+ friend_mentored_in_governance_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] [CHARACTER.GetShortUIName]'e yönetim hakkında bir iki şey öğretti"
   
- friend_cid_liege_repentance: "[CHARACTER.GetShortUIName|U] [TARGET_CHARACTER.GetShortUIName] [CHARACTER.GetHerHis] [CHARACTER.GetHerHis] sadakatsizlik için pişmanlık gösterdi" #NT!
- friend_cid_liege_repentance_corresponding: "[TARGET_CHARACTER.GetShortUIName] memnuniyetle gözlemlendi [CHARACTER.GetShortUINamePossessive|U] pişmanlık [CHARACTER.GetHerHis] sadakatsizlik" #NT!
+ friend_cid_liege_repentance: "[CHARACTER.GetShortUIName|U] [TARGET_CHARACTER.GetShortUIName] [CHARACTER.GetHerHis] [CHARACTER.GetHerHis] sadakatsizlik için pişmanlık gösterdi"
+ friend_cid_liege_repentance_corresponding: "[TARGET_CHARACTER.GetShortUIName] memnuniyetle gözlemlendi [CHARACTER.GetShortUINamePossessive|U] pişmanlık [CHARACTER.GetHerHis] sadakatsizlik"
   
- friend_cid_lent_gold: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'e büyük ihtiyaç anında biraz altın ödünç verdi" #NT!
- friend_cid_lent_gold_corresponding: "$friend_cid_lent_gold$" #NT!
+ friend_cid_lent_gold: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'e büyük ihtiyaç anında biraz altın ödünç verdi"
+ friend_cid_lent_gold_corresponding: "$friend_cid_lent_gold$"
   
- rival_escortee_died: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName], [CHARACTER.GetShortUIName|U]'ın gözetiminde bir refakatçinin ölmesinin ardından rakip oldular" #NT!
- rival_escortee_died_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName], [TARGET_CHARACTER.GetShortUIName|U]'ın gözetiminde bir refakatçinin ölmesinin ardından rakip oldular" #NT!
+ rival_escortee_died: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName], [CHARACTER.GetShortUIName|U]'ın gözetiminde bir refakatçinin ölmesinin ardından rakip oldular"
+ rival_escortee_died_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName], [TARGET_CHARACTER.GetShortUIName|U]'ın gözetiminde bir refakatçinin ölmesinin ardından rakip oldular"
   
- rival_ep3_province_claim: "[TARGET_CHARACTER.GetShortUIName|U], daha önce [TARGET_CHARACTER.GetHerHis] ailesi tarafından yönetilen bir Eyaletin [CHARACTER.GetShortUIName] yönetimine karşı çıktı" #NT!
- rival_ep3_province_claim_corresponding: "[CHARACTER.GetShortUIName] daha önce [TARGET_CHARACTER.GetShortUINamePossessive] ailesi tarafından yönetilen bir eyaletin yönetimine karşı çıkıldı" #NT!
- rival_ep3_governor_friction: "[TARGET_CHARACTER.GetShortUINamePossessive|U] kuralı [CHARACTER.GetShortUINamePossessive] komşu eyaletle sürtüşmeye girdi" #NT!
- rival_ep3_governor_friction_corresponding: "[CHARACTER.GetShortUINamePossessive|U] kuralı [TARGET_CHARACTER.GetShortUINamePossessive] komşu eyaletle sürtüşmeye girdi" #NT!
+ rival_ep3_province_claim: "[TARGET_CHARACTER.GetShortUIName|U], daha önce [TARGET_CHARACTER.GetHerHis] ailesi tarafından yönetilen bir Eyaletin [CHARACTER.GetShortUIName] yönetimine karşı çıktı"
+ rival_ep3_province_claim_corresponding: "[CHARACTER.GetShortUIName] daha önce [TARGET_CHARACTER.GetShortUINamePossessive] ailesi tarafından yönetilen bir eyaletin yönetimine karşı çıkıldı"
+ rival_ep3_governor_friction: "[TARGET_CHARACTER.GetShortUINamePossessive|U] kuralı [CHARACTER.GetShortUINamePossessive] komşu eyaletle sürtüşmeye girdi"
+ rival_ep3_governor_friction_corresponding: "[CHARACTER.GetShortUINamePossessive|U] kuralı [TARGET_CHARACTER.GetShortUINamePossessive] komşu eyaletle sürtüşmeye girdi"
   
- rival_stole_artifact: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'den bir eser çaldı" #NT!
- rival_stole_artifact_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName] tarafından bir eserden mahrum bırakıldı" #NT!
- rival_family_estate_fined: "[TARGET_CHARACTER.GetShortUINamePossessive|U] emlak [CHARACTER.GetShortUIName] tarafından para cezasına çarptırıldı" #NT!
- rival_family_estate_fined_corresponding: "[CHARACTER.GetShortUIName|U] para cezası [TARGET_CHARACTER.GetShortUINamePossessive] emlak" #NT!
- friend_family_estate_permission: "[TARGET_CHARACTER.GetShortUINamePossessive|U] mülkü [CHARACTER.GetShortUIName] tarafından serbest bırakıldı" #NT!
- friend_family_estate_permission_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUINamePossessive] mülküne serbestlik tanıdı" #NT!
+ rival_stole_artifact: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'den bir eser çaldı"
+ rival_stole_artifact_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName] tarafından bir eserden mahrum bırakıldı"
+ rival_family_estate_fined: "[TARGET_CHARACTER.GetShortUINamePossessive|U] emlak [CHARACTER.GetShortUIName] tarafından para cezasına çarptırıldı"
+ rival_family_estate_fined_corresponding: "[CHARACTER.GetShortUIName|U] para cezası [TARGET_CHARACTER.GetShortUINamePossessive] emlak"
+ friend_family_estate_permission: "[TARGET_CHARACTER.GetShortUINamePossessive|U] mülkü [CHARACTER.GetShortUIName] tarafından serbest bırakıldı"
+ friend_family_estate_permission_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUINamePossessive] mülküne serbestlik tanıdı"
   
- rival_attempted_castration: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'in hadım edilmesini emretti, [CHARACTER.GetShortUIName]'in korkutulup kaçmasını sağladı." #NT!
- rival_attempted_castration_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'in hadım edilmesini emretti, [TARGET_CHARACTER.GetShortUIName]'in korkutulup kaçmasını sağladı." #NT!
+ rival_attempted_castration: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'in hadım edilmesini emretti, [CHARACTER.GetShortUIName]'in korkutulup kaçmasını sağladı."
+ rival_attempted_castration_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'in hadım edilmesini emretti, [TARGET_CHARACTER.GetShortUIName]'in korkutulup kaçmasını sağladı."
   
- favorite_child_chosen: "[CHARACTER.GetShortUIName|U] [TARGET_CHARACTER.GetShortUIName]'i [CHARACTER.GetHerHis] favori çocuğu olarak seçti" #NT!
- rival_killed_religious_emissary: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName|U] tarafından gönderilen dini elçiyi idam etti." #NT!
- rival_killed_religious_emissary_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName|U] tarafından gönderilen dini elçiyi idam etti." #NT!
+ favorite_child_chosen: "[CHARACTER.GetShortUIName|U] [TARGET_CHARACTER.GetShortUIName]'i [CHARACTER.GetHerHis] favori çocuğu olarak seçti"
+ rival_killed_religious_emissary: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName|U] tarafından gönderilen dini elçiyi idam etti."
+ rival_killed_religious_emissary_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName|U] tarafından gönderilen dini elçiyi idam etti."
   
- rival_seized_realm_reason: "[CHARACTER.GetShortUIName|U] ele geçirildi [TARGET_CHARACTER.GetShortUINamePossessive] diyar" #NT!
- rival_seized_realm_reason_corresponding: "[TARGET_CHARACTER.GetShortUINamePossessive|U] diyarı [CHARACTER.GetShortUIName] tarafından ele geçirildi" #NT!
+ rival_seized_realm_reason: "[CHARACTER.GetShortUIName|U] ele geçirildi [TARGET_CHARACTER.GetShortUINamePossessive] diyar"
+ rival_seized_realm_reason_corresponding: "[TARGET_CHARACTER.GetShortUINamePossessive|U] diyarı [CHARACTER.GetShortUIName] tarafından ele geçirildi"
   
- rival_traded_away_child: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'i kamp malzemesi karşılığında takas etti." #NT!
- rival_traded_away_child_corresponding: "[TARGET_CHARACTER.GetShortUIName], [CHARACTER.GetShortUIName|U] tarafından kamp malzemesi karşılığında takas edildi." #NT!
- rival_tried_to_intimidate_merchant: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'i [CHARACTER.GetHerHim]'ye kamp malzemelerini ücretsiz vermesi için tehdit etmeye çalıştı." #NT!
- rival_tried_to_intimidate_merchant_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName] tarafından [CHARACTER.GetHerHim]'ye kamp malzemelerini ücretsiz vermesi yönünde tehdit edildi." #NT!
- rival_tried_to_steal_supplies: "[CHARACTER.GetShortUIName|U], bir suç ortağı kullanarak [TARGET_CHARACTER.GetShortUIName]'den kamp malzemelerini çalmaya çalıştı." #NT!
- rival_tried_to_steal_supplies_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName] tarafından organize edilen bir kamp malzemesi hırsızlığının kurbanıydı." #NT!
+ rival_traded_away_child: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'i kamp malzemesi karşılığında takas etti."
+ rival_traded_away_child_corresponding: "[TARGET_CHARACTER.GetShortUIName], [CHARACTER.GetShortUIName|U] tarafından kamp malzemesi karşılığında takas edildi."
+ rival_tried_to_intimidate_merchant: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'i [CHARACTER.GetHerHim]'ye kamp malzemelerini ücretsiz vermesi için tehdit etmeye çalıştı."
+ rival_tried_to_intimidate_merchant_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName] tarafından [CHARACTER.GetHerHim]'ye kamp malzemelerini ücretsiz vermesi yönünde tehdit edildi."
+ rival_tried_to_steal_supplies: "[CHARACTER.GetShortUIName|U], bir suç ortağı kullanarak [TARGET_CHARACTER.GetShortUIName]'den kamp malzemelerini çalmaya çalıştı."
+ rival_tried_to_steal_supplies_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName] tarafından organize edilen bir kamp malzemesi hırsızlığının kurbanıydı."
   
- friend_allowed_to_treat: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'in [CHARACTER.GetHerHim] üzerinde yeni bir tıbbi prosedür denemesine izin verdi." #NT!
- friend_allowed_to_treat_corresponding: "[TARGET_CHARACTER.GetShortUIName|U]'ın [CHARACTER.GetShortUIName|U] üzerinde yeni bir tıbbi prosedür denemesine izin verildi." #NT!
- friend_got_treatment: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'in tıbbi tedavi aldığından emin oldu." #NT!
- friend_got_treatment_corresponding: "[TARGET_CHARACTER.GetShortUIName], [CHARACTER.GetShortUIName|U]'in bakımı sayesinde tıbbi tedaviye erişim imkânına sahipti." #NT!
+ friend_allowed_to_treat: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'in [CHARACTER.GetHerHim] üzerinde yeni bir tıbbi prosedür denemesine izin verdi."
+ friend_allowed_to_treat_corresponding: "[TARGET_CHARACTER.GetShortUIName|U]'ın [CHARACTER.GetShortUIName|U] üzerinde yeni bir tıbbi prosedür denemesine izin verildi."
+ friend_got_treatment: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'in tıbbi tedavi aldığından emin oldu."
+ friend_got_treatment_corresponding: "[TARGET_CHARACTER.GetShortUIName], [CHARACTER.GetShortUIName|U]'in bakımı sayesinde tıbbi tedaviye erişim imkânına sahipti."
   
- lover_contemplative_sex: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] kutsal bir bahçede birlikte yaşadıkları birkaç 'aydınlanma'nın ardından sevgili oldular." #NT!
- lover_contemplative_sex_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] kutsal bir bahçede birlikte yaşadıkları birkaç 'aydınlanma'nın ardından sevgili oldular." #NT!
+ lover_contemplative_sex: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] kutsal bir bahçede birlikte yaşadıkları birkaç 'aydınlanma'nın ardından sevgili oldular."
+ lover_contemplative_sex_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] kutsal bir bahçede birlikte yaşadıkları birkaç 'aydınlanma'nın ardından sevgili oldular."
   
- friend_castle_sparring: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] birlikte dostça bir antrenman yaptılar." #NT!
- friend_castle_sparring_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] birlikte dostça bir antrenman yaptılar." #NT!
+ friend_castle_sparring: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] birlikte dostça bir antrenman yaptılar."
+ friend_castle_sparring_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] birlikte dostça bir antrenman yaptılar."
   
- rival_mia_contract: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName] tarafından istihdam edilirken görev sırasında kayboldu" #NT!
- rival_mia_contract_corresponding: "[CHARACTER.GetShortUIName|U], bir sözleşmeyi tamamlamak için [CHARACTER.GetShortUIName]'e dönmeyi ihmal etti" #NT!
+ rival_mia_contract: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName] tarafından istihdam edilirken görev sırasında kayboldu"
+ rival_mia_contract_corresponding: "[CHARACTER.GetShortUIName|U], bir sözleşmeyi tamamlamak için [CHARACTER.GetShortUIName]'e dönmeyi ihmal etti"
   
- lover_tavern_hookup: "[CHARACTER.GetShortUIName|U] süpürüldü [TARGET_CHARACTER.GetShortUIName] pis bir meyhaneden" #NT!
- lover_tavern_hookup_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] baştan çıkarıldı [CHARACTER.GetShortUIName] pis bir meyhanede" #NT!
+ lover_tavern_hookup: "[CHARACTER.GetShortUIName|U] süpürüldü [TARGET_CHARACTER.GetShortUIName] pis bir meyhaneden"
+ lover_tavern_hookup_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] baştan çıkarıldı [CHARACTER.GetShortUIName] pis bir meyhanede"
   
- rival_challenged_weak_emperor: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'i zayıf yönetmekle suçladı ve tahta daha layık bir hükümdarın geçmesini istedi." #NT!
- rival_challenged_weak_emperor_corresponding: "[TARGET_CHARACTER.GetShortUIName], [CHARACTER.GetShortUIName|U] tarafından zayıf yönetmekle, görevini yerine getirmemekle suçlandı." #NT!
+ rival_challenged_weak_emperor: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'i zayıf yönetmekle suçladı ve tahta daha layık bir hükümdarın geçmesini istedi."
+ rival_challenged_weak_emperor_corresponding: "[TARGET_CHARACTER.GetShortUIName], [CHARACTER.GetShortUIName|U] tarafından zayıf yönetmekle, görevini yerine getirmemekle suçlandı."
   
- rival_forced_my_resignation_reason: "[TARGET_CHARACTER.GetShortUIName|U] [CHARACTER.GetShortUIName|U]'i [CHARACTER.GetHerHis] valiliğinden istifa etmeye zorladı." #NT!
- rival_forced_my_resignation_reason_corresponding: "[CHARACTER.GetShortUIName|U] [TARGET_CHARACTER.GetShortUIName|U]'i [TARGET_CHARACTER.GetHerHis] valiliğinden istifa etmeye zorladı." #NT!
+ rival_forced_my_resignation_reason: "[TARGET_CHARACTER.GetShortUIName|U] [CHARACTER.GetShortUIName|U]'i [CHARACTER.GetHerHis] valiliğinden istifa etmeye zorladı."
+ rival_forced_my_resignation_reason_corresponding: "[CHARACTER.GetShortUIName|U] [TARGET_CHARACTER.GetShortUIName|U]'i [TARGET_CHARACTER.GetHerHis] valiliğinden istifa etmeye zorladı."
   
- rival_attempted_to_force_my_resignation_reason: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName|U]'in [CHARACTER.GetHerHis] valiliğinden istifa etmesini zorlamaya çalıştı." #NT!
- rival_attempted_to_force_my_resignation_reason_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName|U]'in [TARGET_CHARACTER.GetHerHis] valiliğinden istifa etmesini zorlamaya çalıştı." #NT!
+ rival_attempted_to_force_my_resignation_reason: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName|U]'in [CHARACTER.GetHerHis] valiliğinden istifa etmesini zorlamaya çalıştı."
+ rival_attempted_to_force_my_resignation_reason_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName|U]'in [TARGET_CHARACTER.GetHerHis] valiliğinden istifa etmesini zorlamaya çalıştı."
   
- friend_helped_poetry: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName|U]'e bazı zor şiirlerde yardımcı oldu." #NT!
- friend_helped_poetry_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName|U]'e bazı zor şiirlerde yardımcı oldu." #NT!
+ friend_helped_poetry: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName|U]'e bazı zor şiirlerde yardımcı oldu."
+ friend_helped_poetry_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName|U]'e bazı zor şiirlerde yardımcı oldu."
   
- lover_old_flame: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] daha önce uykuda olan sevgili statülerini yeniden canlandırdılar." #NT!
- lover_old_flame_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] daha önce uykuda olan sevgili statülerini yeniden canlandırdılar." #NT!
+ lover_old_flame: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] daha önce uykuda olan sevgili statülerini yeniden canlandırdılar."
+ lover_old_flame_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] daha önce uykuda olan sevgili statülerini yeniden canlandırdılar."
   
- friend_grew_over_secret_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] bir şey üzerinde çalışırken bağ kurdular." #NT!
- friend_grew_over_secret_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] bir şey üzerinde çalışırken bağ kurdular." #NT!
- friend_grew_over_open_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] ortak bir hedefe doğru çalışırken birbirlerine bağlandılar." #NT!
- friend_grew_over_open_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] ortak bir hedefe doğru çalışırken birbirlerine bağlandılar." #NT!
- friend_grew_over_task_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] bir macera kampını sürdürmek için yapılan sözleşmeyi tamamlarken bağ kurdular." #NT!
- friend_grew_over_task_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] bir macera kampını sürdürmek için yapılan sözleşmeyi tamamlarken bağ kurdular." #NT!
+ friend_grew_over_secret_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] bir şey üzerinde çalışırken bağ kurdular."
+ friend_grew_over_secret_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] bir şey üzerinde çalışırken bağ kurdular."
+ friend_grew_over_open_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] ortak bir hedefe doğru çalışırken birbirlerine bağlandılar."
+ friend_grew_over_open_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] ortak bir hedefe doğru çalışırken birbirlerine bağlandılar."
+ friend_grew_over_task_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] bir macera kampını sürdürmek için yapılan sözleşmeyi tamamlarken bağ kurdular."
+ friend_grew_over_task_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] bir macera kampını sürdürmek için yapılan sözleşmeyi tamamlarken bağ kurdular."
   
- lover_grew_over_secret_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName]... bir şey üzerinde işbirliği yaparken bir ilişki başlattılar." #NT!
- lover_grew_over_secret_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName]... bir şey üzerinde işbirliği yaparken bir ilişki başlattılar." #NT!
- lover_grew_over_open_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] ortak bir hedefe doğru ilerlerken bir ilişkiyi ateşlediler." #NT!
- lover_grew_over_open_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] ortak bir hedefe doğru ilerlerken bir ilişkiyi ateşlediler." #NT!
- lover_grew_over_task_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName], bir macera kampını sürdürmek için yapılan bir sözleşmeyi tamamlarken bir ilişkinin fitilini ateşlediler." #NT!
- lover_grew_over_task_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName], bir macera kampını sürdürmek için yapılan bir sözleşmeyi tamamlarken bir ilişkinin fitilini ateşlediler." #NT!
+ lover_grew_over_secret_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName]... bir şey üzerinde işbirliği yaparken bir ilişki başlattılar."
+ lover_grew_over_secret_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName]... bir şey üzerinde işbirliği yaparken bir ilişki başlattılar."
+ lover_grew_over_open_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] ortak bir hedefe doğru ilerlerken bir ilişkiyi ateşlediler."
+ lover_grew_over_open_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] ortak bir hedefe doğru ilerlerken bir ilişkiyi ateşlediler."
+ lover_grew_over_task_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName], bir macera kampını sürdürmek için yapılan bir sözleşmeyi tamamlarken bir ilişkinin fitilini ateşlediler."
+ lover_grew_over_task_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName], bir macera kampını sürdürmek için yapılan bir sözleşmeyi tamamlarken bir ilişkinin fitilini ateşlediler."
   
- rival_grew_over_secret_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] bir şey üzerinde işbirliği yaparken birbirlerinden nefret etmeye başladılar." #NT!
- rival_grew_over_secret_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] bir şey üzerinde işbirliği yaparken birbirlerinden nefret etmeye başladılar." #NT!
- rival_grew_over_open_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] ortak bir hedefe doğru ilerlerken birbirlerinden nefret etmeye başladılar." #NT!
- rival_grew_over_open_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] ortak bir hedefe doğru ilerlerken birbirlerinden nefret etmeye başladılar." #NT!
- rival_grew_over_task_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName], bir macera kampını sürdürmek için yapılan sözleşmeyi tamamlarken birbirlerinden nefret etmeye başladılar." #NT!
- rival_grew_over_task_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName], bir macera kampını sürdürmek için yapılan sözleşmeyi tamamlarken birbirlerinden nefret etmeye başladılar." #NT!
+ rival_grew_over_secret_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] bir şey üzerinde işbirliği yaparken birbirlerinden nefret etmeye başladılar."
+ rival_grew_over_secret_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] bir şey üzerinde işbirliği yaparken birbirlerinden nefret etmeye başladılar."
+ rival_grew_over_open_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] ortak bir hedefe doğru ilerlerken birbirlerinden nefret etmeye başladılar."
+ rival_grew_over_open_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] ortak bir hedefe doğru ilerlerken birbirlerinden nefret etmeye başladılar."
+ rival_grew_over_task_scheme: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName], bir macera kampını sürdürmek için yapılan sözleşmeyi tamamlarken birbirlerinden nefret etmeye başladılar."
+ rival_grew_over_task_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName], bir macera kampını sürdürmek için yapılan sözleşmeyi tamamlarken birbirlerinden nefret etmeye başladılar."
   
- nemesis_grew_over_secret_scheme: "$rival_grew_over_secret_scheme$" #NT!
- nemesis_grew_over_secret_scheme_corresponding: "$rival_grew_over_secret_scheme_corresponding$" #NT!
- nemesis_grew_over_open_scheme: "$rival_grew_over_open_scheme$" #NT!
- nemesis_grew_over_open_scheme_corresponding: "$rival_grew_over_open_scheme_corresponding$" #NT!
- nemesis_grew_over_task_scheme: "$rival_grew_over_task_scheme$" #NT!
- nemesis_grew_over_task_scheme_corresponding: "$rival_grew_over_task_scheme_corresponding$" #NT!
+ nemesis_grew_over_secret_scheme: "$rival_grew_over_secret_scheme$"
+ nemesis_grew_over_secret_scheme_corresponding: "$rival_grew_over_secret_scheme_corresponding$"
+ nemesis_grew_over_open_scheme: "$rival_grew_over_open_scheme$"
+ nemesis_grew_over_open_scheme_corresponding: "$rival_grew_over_open_scheme_corresponding$"
+ nemesis_grew_over_task_scheme: "$rival_grew_over_task_scheme$"
+ nemesis_grew_over_task_scheme_corresponding: "$rival_grew_over_task_scheme_corresponding$"
   
- rival_forced_into_scheme_scheme: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'in [CHARACTER.GetHerHim]'yi kötü niyetli gizli bir meseleye katılmaya zorlamasından nefret ediyor." #NT!
- rival_forced_into_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CharYouHerHim(CHARACTER)]'i kötü niyetli gizli bir meseleye katılmaya zorladığı için nefret ediyor." #NT!
-  
-  
- rival_subsumed_province: "[TARGET_CHARACTER.GetShortUIName|U] [CHARACTER.GetShortUINamePossessive] valiliği bünyesine kattı" #NT!
- rival_subsumed_province_corresponding: "[CHARACTER.GetShortUINamePossessive|U] valilik [TARGET_CHARACTER.GetShortUIName] tarafından devralındı" #NT!
-  
- rival_raid_estate: "[TARGET_CHARACTER.GetShortUIName|U] [CHARACTER.GetShortUINamePossessive] malikaneye baskın düzenledi." #NT!
- rival_raid_estate_corresponding: "[CHARACTER.GetShortUINamePossessive|U] malikanesi [TARGET_CHARACTER.GetShortUIName] tarafından basıldı." #NT!
-  
- friend_ingratiate_family: "[CHARACTER.GetShortUIName|U], [CHARACTER.GetHerselfHimself]'i [TARGET_CHARACTER.GetShortUINamePossessive] Evi'ne sevdirdi." #NT!
- friend_ingratiate_family_corresponding: "[TARGET_CHARACTER.GetShortUINamePossessive|U] Ev, [CHARACTER.GetShortUIName] tarafından beğenildi." #NT!
-  
- friend_supported_candidacy: "[TARGET_CHARACTER.GetShortUIName|U] alenen açıklandı [CHARACTER.GetShortUINamePossessive] onurlu bir göreve layık görüldü." #NT!
- friend_supported_candidacy_corresponding: "[CHARACTER.GetShortUIName|U] onurlu bir göreve layık olduğunu kamuoyuna açıkladı." #NT!
-  
- rival_harmed_candidacy: "[TARGET_CHARACTER.GetShortUIName|U] kişinin [CHARACTER.GetShortUINamePossessive] onurlu bir göreve gelme ihtimalini sabote etti." #NT!
- rival_harmed_candidacy_corresponding: "[CHARACTER.GetShortUIName|U] kişinin [TARGET_CHARACTER.GetShortUINamePossessive] onurlu bir göreve gelme ihtimalini sabote etti." #NT!
-  
- rival_ignored_candidacy_support: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUINamePossessive] randevu desteği için herhangi bir minnettarlık eylemini reddetti." #NT!
- rival_ignored_candidacy_support_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUINamePossessive] randevu desteği için herhangi bir minnettarlık eylemini reddetti." #NT!
-  
- rival_poor_court_position_holder: "[TARGET_CHARACTER.GetShortUINamePossessive|U] Mahkeme pozisyonunun beceriksizce ele alınması canımı sıktı [CHARACTER.GetShortUIName]." #NT!
- rival_poor_court_position_holder_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'in mahkeme pozisyonunun beceriksizce ele alınmasından rahatsız oldu." #NT!
+ rival_forced_into_scheme_scheme: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'in [CHARACTER.GetHerHim]'yi kötü niyetli gizli bir meseleye katılmaya zorlamasından nefret ediyor."
+ rival_forced_into_scheme_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CharYouHerHim(CHARACTER)]'i kötü niyetli gizli bir meseleye katılmaya zorladığı için nefret ediyor."
   
   
- friend_children_grew_up_in_same_camp: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] aynı macera kampında birlikte büyüdüler." #NT!
- friend_children_grew_up_in_same_camp_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] aynı macera kampında birlikte büyüdüler." #NT!
+ rival_subsumed_province: "[TARGET_CHARACTER.GetShortUIName|U] [CHARACTER.GetShortUINamePossessive] valiliği bünyesine kattı"
+ rival_subsumed_province_corresponding: "[CHARACTER.GetShortUINamePossessive|U] valilik [TARGET_CHARACTER.GetShortUIName] tarafından devralındı"
   
- lover_childhood_sweatheart: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] çocukluk aşkı olduktan sonra sevgili oldular." #NT!
- lover_childhood_sweatheart_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] çocukluk aşkı olduktan sonra sevgili oldular." #NT!
+ rival_raid_estate: "[TARGET_CHARACTER.GetShortUIName|U] [CHARACTER.GetShortUINamePossessive] malikaneye baskın düzenledi."
+ rival_raid_estate_corresponding: "[CHARACTER.GetShortUINamePossessive|U] malikanesi [TARGET_CHARACTER.GetShortUIName] tarafından basıldı."
   
- rival_drowned_dog: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUINameNoTooltip] adlı köpeği boğduktan sonra [TARGET_CHARACTER.GetShortUIName]'den intikam almaya yemin etti." #NT!
- rival_drowned_dog_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CharYouSheHe(CHARACTER)] adlı köpeği boğduktan sonra [CHARACTER.GetShortUIName]'den intikam almaya yemin etti." #NT!
+ friend_ingratiate_family: "[CHARACTER.GetShortUIName|U], [CHARACTER.GetHerselfHimself]'i [TARGET_CHARACTER.GetShortUINamePossessive] Evi'ne sevdirdi."
+ friend_ingratiate_family_corresponding: "[TARGET_CHARACTER.GetShortUINamePossessive|U] Ev, [CHARACTER.GetShortUIName] tarafından beğenildi."
+  
+ friend_supported_candidacy: "[TARGET_CHARACTER.GetShortUIName|U] alenen açıklandı [CHARACTER.GetShortUINamePossessive] onurlu bir göreve layık görüldü."
+ friend_supported_candidacy_corresponding: "[CHARACTER.GetShortUIName|U] onurlu bir göreve layık olduğunu kamuoyuna açıkladı."
+  
+ rival_harmed_candidacy: "[TARGET_CHARACTER.GetShortUIName|U] kişinin [CHARACTER.GetShortUINamePossessive] onurlu bir göreve gelme ihtimalini sabote etti."
+ rival_harmed_candidacy_corresponding: "[CHARACTER.GetShortUIName|U] kişinin [TARGET_CHARACTER.GetShortUINamePossessive] onurlu bir göreve gelme ihtimalini sabote etti."
+  
+ rival_ignored_candidacy_support: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUINamePossessive] randevu desteği için herhangi bir minnettarlık eylemini reddetti."
+ rival_ignored_candidacy_support_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUINamePossessive] randevu desteği için herhangi bir minnettarlık eylemini reddetti."
+  
+ rival_poor_court_position_holder: "[TARGET_CHARACTER.GetShortUINamePossessive|U] Mahkeme pozisyonunun beceriksizce ele alınması canımı sıktı [CHARACTER.GetShortUIName]."
+ rival_poor_court_position_holder_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'in mahkeme pozisyonunun beceriksizce ele alınmasından rahatsız oldu."
+  
+  
+ friend_children_grew_up_in_same_camp: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] aynı macera kampında birlikte büyüdüler."
+ friend_children_grew_up_in_same_camp_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] aynı macera kampında birlikte büyüdüler."
+  
+ lover_childhood_sweatheart: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] çocukluk aşkı olduktan sonra sevgili oldular."
+ lover_childhood_sweatheart_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] çocukluk aşkı olduktan sonra sevgili oldular."
+  
+ rival_drowned_dog: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUINameNoTooltip] adlı köpeği boğduktan sonra [TARGET_CHARACTER.GetShortUIName]'den intikam almaya yemin etti."
+ rival_drowned_dog_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CharYouSheHe(CHARACTER)] adlı köpeği boğduktan sonra [CHARACTER.GetShortUIName]'den intikam almaya yemin etti."
   # Split out from the test key in case someone changes it at some point, little realising that you actually can eat their dog. 
- rival_ate_dog: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'in [TARGET_CHARACTER.GetShortUINameNoTooltip]'nin [CHARACTER.GetShortUINamePossessiveNoTooltip]'ün en sevdiği köpeğini öldürüp pişirmesinin ardından, [TARGET_CHARACTER.GetShortUIName]'e ebedi intikam yemini etti." #NT!
- rival_ate_dog_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'in [CHARACTER.GetShortUINameNoTooltip] en sevdiği köpeği öldürüp, pişirip yemesinin ardından [TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip]'e karşı ebedi intikam yemini etti." #NT!
+ rival_ate_dog: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'in [TARGET_CHARACTER.GetShortUINameNoTooltip]'nin [CHARACTER.GetShortUINamePossessiveNoTooltip]'ün en sevdiği köpeğini öldürüp pişirmesinin ardından, [TARGET_CHARACTER.GetShortUIName]'e ebedi intikam yemini etti."
+ rival_ate_dog_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'in [CHARACTER.GetShortUINameNoTooltip] en sevdiği köpeği öldürüp, pişirip yemesinin ardından [TARGET_CHARACTER.GetShortUINamePossessiveNoTooltip]'e karşı ebedi intikam yemini etti."
   
- best_friend_childhood_ritual: "[TARGET_CHARACTER.GetShortUI_Name|U] ve [CHARACTER.GetShortUIName] çocukluklarından beri özel küçük ritüelleri paylaşıyorlar ve bu onları birbirlerine çok yakın bırakıyor." #NT!
- best_friend_childhood_ritual_corresponding: "[CHARACTER.GetShortUI_Name|U] ve [TARGET_CHARACTER.GetShortUIName] çocukluklarından beri özel küçük ritüelleri paylaşıyorlar ve bu onları birbirlerine çok yakın bırakıyor." #NT!
+ best_friend_childhood_ritual: "[TARGET_CHARACTER.GetShortUI_Name|U] ve [CHARACTER.GetShortUIName] çocukluklarından beri özel küçük ritüelleri paylaşıyorlar ve bu onları birbirlerine çok yakın bırakıyor."
+ best_friend_childhood_ritual_corresponding: "[CHARACTER.GetShortUI_Name|U] ve [TARGET_CHARACTER.GetShortUIName] çocukluklarından beri özel küçük ritüelleri paylaşıyorlar ve bu onları birbirlerine çok yakın bırakıyor."
   
- friend_adventurer_watched_sunset: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName], güzel bir gün batımını izlerken bir anı paylaştılar." #NT!
+ friend_adventurer_watched_sunset: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName], güzel bir gün batımını izlerken bir anı paylaştılar."
   
- friend_mutual_traits: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] benzer kişilikleri ve hayata bakış açılarındaki benzerlikler sayesinde birbirlerine bağlandılar." #NT!
+ friend_mutual_traits: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] benzer kişilikleri ve hayata bakış açılarındaki benzerlikler sayesinde birbirlerine bağlandılar."
   
- rival_stole_petty_sum: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'den küçük ama dikkat çekici miktarda para çaldı." #NT!
- rival_stole_petty_sum_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'den küçük ama dikkat çekici miktarda para çaldı." #NT!
- rival_played_cruel_pranks: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'e bir dizi acımasız şaka yaptı ve [CharYouSheHe(TARGET_CHARACTER)] [CharWereWas(TARGET_CHARACTER)] sonunda yakalanana kadar bunları kazalar gibi gizledi." #NT!
- rival_played_cruel_pranks_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'e bir dizi acımasız şaka yaptı ve [CharYouSheHe(CHARACTER)] [CharWereWas(CHARACTER)] sonunda yakalanana kadar bunları kazalar gibi gizledi." #NT!
- rival_spread_rumours: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName] hakkında akıl almaz miktarda yaratıcı yalanlar yayıyor." #NT!
- rival_spread_rumours_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName] hakkında akıl almaz miktarda yaratıcı yalanlar yayıyor." #NT!
+ rival_stole_petty_sum: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'den küçük ama dikkat çekici miktarda para çaldı."
+ rival_stole_petty_sum_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'den küçük ama dikkat çekici miktarda para çaldı."
+ rival_played_cruel_pranks: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'e bir dizi acımasız şaka yaptı ve [CharYouSheHe(TARGET_CHARACTER)] [CharWereWas(TARGET_CHARACTER)] sonunda yakalanana kadar bunları kazalar gibi gizledi."
+ rival_played_cruel_pranks_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName]'e bir dizi acımasız şaka yaptı ve [CharYouSheHe(CHARACTER)] [CharWereWas(CHARACTER)] sonunda yakalanana kadar bunları kazalar gibi gizledi."
+ rival_spread_rumours: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName] hakkında akıl almaz miktarda yaratıcı yalanlar yayıyor."
+ rival_spread_rumours_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName] hakkında akıl almaz miktarda yaratıcı yalanlar yayıyor."
   
- friend_petty_criminals_together: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] yıllarca küçük suçlulardan oluşan bir çeteyi birlikte yönettiler." #NT!
+ friend_petty_criminals_together: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] yıllarca küçük suçlulardan oluşan bir çeteyi birlikte yönettiler."
   
- friend_encouraged_tale: "[TARGET_CHARACTER.GetShortUIName|U] [CHARACTER.GetShortUIName]'i bir partide başka bir hikaye anlatmaya teşvik etti" #NT!
- friend_encouraged_tale_corresponding: "[CHARACTER.GetShortUIName|U] [TARGET_CHARACTER.GetShortUIName]'i bir partide başka bir hikaye anlatmaya teşvik etti" #NT!
+ friend_encouraged_tale: "[TARGET_CHARACTER.GetShortUIName|U] [CHARACTER.GetShortUIName]'i bir partide başka bir hikaye anlatmaya teşvik etti"
+ friend_encouraged_tale_corresponding: "[CHARACTER.GetShortUIName|U] [TARGET_CHARACTER.GetShortUIName]'i bir partide başka bir hikaye anlatmaya teşvik etti"
   
- friend_listened_to_story: "[CHARACTER.GetShortUIName|U] bir partide [TARGET_CHARACTER.GetShortUINamePossessive] çocukluk hikayesi dinledi" #NT!
- friend_listened_to_story_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] bir partide [CHARACTER.GetShortUINamePossessive] çocukluk hikayesi dinledi" #NT!
+ friend_listened_to_story: "[CHARACTER.GetShortUIName|U] bir partide [TARGET_CHARACTER.GetShortUINamePossessive] çocukluk hikayesi dinledi"
+ friend_listened_to_story_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] bir partide [CHARACTER.GetShortUINamePossessive] çocukluk hikayesi dinledi"
   
- friend_bonded_over_story: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] çocukluklarından beri birbirlerinin hikayelerini dinliyorlardı" #NT!
- friend_bonded_over_story_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] çocukluklarından beri birbirlerinin hikayelerini dinliyorlardı" #NT!
+ friend_bonded_over_story: "[CHARACTER.GetShortUIName|U] ve [TARGET_CHARACTER.GetShortUIName] çocukluklarından beri birbirlerinin hikayelerini dinliyorlardı"
+ friend_bonded_over_story_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] ve [CHARACTER.GetShortUIName] çocukluklarından beri birbirlerinin hikayelerini dinliyorlardı"
   
- nemesis_killed_brother: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUINamePossessive] kardeşini öldürdü ve bu da ömür boyu sürecek bir kan düşmanlığına yol açtı." #NT!
- nemesis_killed_brother_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUINamePossessive] kardeşini öldürdü ve bu da ömür boyu sürecek bir kan düşmanlığına yol açtı." #NT!
+ nemesis_killed_brother: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUINamePossessive] kardeşini öldürdü ve bu da ömür boyu sürecek bir kan düşmanlığına yol açtı."
+ nemesis_killed_brother_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUINamePossessive] kardeşini öldürdü ve bu da ömür boyu sürecek bir kan düşmanlığına yol açtı."
   
- rival_deposed_governor: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUINamePossessive]'in görevden alınmasını talep etti." #NT!
- rival_deposed_governor_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUINamePossessive]'in görevden alınmasını talep etti." #NT!
+ rival_deposed_governor: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUINamePossessive]'in görevden alınmasını talep etti."
+ rival_deposed_governor_corresponding: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUINamePossessive]'in görevden alınmasını talep etti."
   
- friend_boosted_gov_efficiency: "[CHARACTER.GetShortUIName|U] devlet gemisinin halatlarını [TARGET_CHARACTER.GetShortUIName|U] gösterdi." #NT!
- friend_boosted_gov_efficiency_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] devlet gemisinin halatlarını [CHARACTER.GetShortUIName|U] gösterdi." #NT!
+ friend_boosted_gov_efficiency: "[CHARACTER.GetShortUIName|U] devlet gemisinin halatlarını [TARGET_CHARACTER.GetShortUIName|U] gösterdi."
+ friend_boosted_gov_efficiency_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] devlet gemisinin halatlarını [CHARACTER.GetShortUIName|U] gösterdi."
   
- friend_my_biggest_fan: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName|U]'e karşı tam bir hayranlık gösterdi." #NT!
- friend_my_biggest_fan_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName|U]'e karşı tam bir hayranlık gösterdi." #NT!
+ friend_my_biggest_fan: "[CHARACTER.GetShortUIName|U], [TARGET_CHARACTER.GetShortUIName|U]'e karşı tam bir hayranlık gösterdi."
+ friend_my_biggest_fan_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName|U]'e karşı tam bir hayranlık gösterdi."
   
- rival_latin_emp_refused_alliance: "[TARGET_CHARACTER.GetShortUIName|U] Yunanlılara karşı [CHARACTER.GetShortUINamePossessive] türden ittifak teklifini küçümsedi." #NT!
- rival_latin_emp_refused_alliance_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'i neredeyse kandırarak [GetTitleByKey('e_latin_empire').GetName|U]'yi [TARGET_CHARACTER.GetPrimaryTitle.GetAdjective]'ün bozuk para kesesi olarak görmesini sağlayacaktı." #NT!
+ rival_latin_emp_refused_alliance: "[TARGET_CHARACTER.GetShortUIName|U] Yunanlılara karşı [CHARACTER.GetShortUINamePossessive] türden ittifak teklifini küçümsedi."
+ rival_latin_emp_refused_alliance_corresponding: "[TARGET_CHARACTER.GetShortUIName|U], [CHARACTER.GetShortUIName]'i neredeyse kandırarak [GetTitleByKey('e_latin_empire').GetName|U]'yi [TARGET_CHARACTER.GetPrimaryTitle.GetAdjective]'ün bozuk para kesesi olarak görmesini sağlayacaktı."
   
- rival_tried_to_have_me_disinherited: "[CHARACTER.GetShortUIName|U] keşfedildi [TARGET_CHARACTER.GetShortUIName|U] onları mirastan mahrum bırakmaya, hatta öldürmeye çalıştı." #NT!
- rival_tried_to_have_me_disinherited_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] keşfedildi [CHARACTER.GetShortUIName|U] onları mirastan mahrum bırakmaya, hatta öldürmeye çalıştı." #NT!
+ rival_tried_to_have_me_disinherited: "[CHARACTER.GetShortUIName|U] keşfedildi [TARGET_CHARACTER.GetShortUIName|U] onları mirastan mahrum bırakmaya, hatta öldürmeye çalıştı."
+ rival_tried_to_have_me_disinherited_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] keşfedildi [CHARACTER.GetShortUIName|U] onları mirastan mahrum bırakmaya, hatta öldürmeye çalıştı."
   
- rival_conquered_me: "[CHARACTER.GetShortUINamePossessive|U] diyarı [TARGET_CHARACTER.GetShortUIName|U] tarafından fethedildi." #NT!
- rival_conquered_me_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] [CHARACTER.GetShortUINamePossessive|U] diyarı fethetti." #NT!
+ rival_conquered_me: "[CHARACTER.GetShortUINamePossessive|U] diyarı [TARGET_CHARACTER.GetShortUIName|U] tarafından fethedildi."
+ rival_conquered_me_corresponding: "[TARGET_CHARACTER.GetShortUIName|U] [CHARACTER.GetShortUINamePossessive|U] diyarı fethetti."
   
   

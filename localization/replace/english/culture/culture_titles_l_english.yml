@@ -339,12 +339,12 @@
  emperor_theocracy_female_christianity_religion: "İmparatoriçe-Piskopos"
  empire_theocracy_christianity_religion: "İmparatorluk Kilisesi"
   
- king_theocracy_male_christianity_religion_orthodox: "$king_clan_male$" #NT!
- king_theocracy_female_christianity_religion_orthodox: "$king_clan_female$" #NT!
- kingdom_theocracy_christianity_religion_orthodox: "Patrikhane" #NT!
- emperor_theocracy_male_christianity_religion_orthodox: "$emperor_clan_male$" #NT!
- emperor_theocracy_female_christianity_religion_orthodox: "$emperor_clan_female$" #NT!
- empire_theocracy_christianity_religion_orthodox: "Büyük Patrikhane" #NT!
+ king_theocracy_male_christianity_religion_orthodox: "$king_clan_male$"
+ king_theocracy_female_christianity_religion_orthodox: "$king_clan_female$"
+ kingdom_theocracy_christianity_religion_orthodox: "Patrikhane"
+ emperor_theocracy_male_christianity_religion_orthodox: "$emperor_clan_male$"
+ emperor_theocracy_female_christianity_religion_orthodox: "$emperor_clan_female$"
+ empire_theocracy_christianity_religion_orthodox: "Büyük Patrikhane"
   
  # Dualism 
  #Same as Christianity 
@@ -1215,96 +1215,96 @@
   
  ### Administrative 
   
- baron_administrative_male_byzantine_group: "Başrahip" #NT!
- baron_administrative_female_byzantine_group: "Başrahip" #NT!
- barony_administrative_byzantine_group: "Arhontia" #NT!
- count_administrative_male_byzantine_group: "Turmarchēs" #NT!
- count_administrative_female_byzantine_group: "Turmarchēs" #NT!
- county_administrative_byzantine_group: "Turma" #NT!
- count_administrative_male: "Hakim" #NT!
- count_administrative_female: "Hakim" #NT!
- county_administrative: "Yargıçlık" #NT!
- duke_administrative_male: "Vali" #NT!
- duke_administrative_female: "Mürebbiye" #NT!
- duchy_administrative: "Vilayet" #NT!
- duke_administrative_male_byzantine_group: "Stratejiler" #NT!
- duke_administrative_female_byzantine_group: "Stratejik" #NT!
- duchy_administrative_byzantine_group: "Tema" #NT!
+ baron_administrative_male_byzantine_group: "Başrahip"
+ baron_administrative_female_byzantine_group: "Başrahip"
+ barony_administrative_byzantine_group: "Arhontia"
+ count_administrative_male_byzantine_group: "Turmarchēs"
+ count_administrative_female_byzantine_group: "Turmarchēs"
+ county_administrative_byzantine_group: "Turma"
+ count_administrative_male: "Hakim"
+ count_administrative_female: "Hakim"
+ county_administrative: "Yargıçlık"
+ duke_administrative_male: "Vali"
+ duke_administrative_female: "Mürebbiye"
+ duchy_administrative: "Vilayet"
+ duke_administrative_male_byzantine_group: "Stratejiler"
+ duke_administrative_female_byzantine_group: "Stratejik"
+ duchy_administrative_byzantine_group: "Tema"
   
- king_administrative_male: "Vali" #NT!
- king_administrative_female: "Vali yardımcısı" #NT!
- kingdom_administrative: "Kral Naipliği" #NT!
- kingdom_administrative_independent: "$kingdom_feudal$" #NT!
- king_administrative_independent_male: "$king_feudal_male$" #NT!
- king_administrative_independent_female: "$king_feudal_female$" #NT!
- king_administrative_male_byzantine_group: "Katip" #NT!
- king_administrative_female_byzantine_group: "Catepanissa" #NT!
- king_administrative_independent_male_byzantine_group: "Despot" #NT!
- king_administrative_independent_female_byzantine_group: "Despotça" #NT!
- kingdom_administrative_byzantine_group: "Katepanat" #NT!
- kingdom_administrative_independent_byzantine_group: "Despotluk" #NT!
- emperor_administrative_male_greek: "Basileus" #NT!
- emperor_administrative_female_greek: "Basilissa" #NT!
+ king_administrative_male: "Vali"
+ king_administrative_female: "Vali yardımcısı"
+ kingdom_administrative: "Kral Naipliği"
+ kingdom_administrative_independent: "$kingdom_feudal$"
+ king_administrative_independent_male: "$king_feudal_male$"
+ king_administrative_independent_female: "$king_feudal_female$"
+ king_administrative_male_byzantine_group: "Katip"
+ king_administrative_female_byzantine_group: "Catepanissa"
+ king_administrative_independent_male_byzantine_group: "Despot"
+ king_administrative_independent_female_byzantine_group: "Despotça"
+ kingdom_administrative_byzantine_group: "Katepanat"
+ kingdom_administrative_independent_byzantine_group: "Despotluk"
+ emperor_administrative_male_greek: "Basileus"
+ emperor_administrative_female_greek: "Basilissa"
   
- king_administrative_male_roman: "Başkan" #NT!
- king_administrative_female_roman: "Başkan" #NT!
- king_administrative_independent_male_roman: "Kral" #NT!
- king_administrative_independent_female_roman: "Kraliçe" #NT!
- kingdom_administrative_roman: "Valilik" #NT!
- kingdom_administrative_independent_roman: "Regnum" #NT!
- emperor_administrative_male_roman: "İmparator" #NT!
- emperor_administrative_female_roman: "İmparator" #NT!
- empire_administrative_roman: "İmparatorluk" #NT!
+ king_administrative_male_roman: "Başkan"
+ king_administrative_female_roman: "Başkan"
+ king_administrative_independent_male_roman: "Kral"
+ king_administrative_independent_female_roman: "Kraliçe"
+ kingdom_administrative_roman: "Valilik"
+ kingdom_administrative_independent_roman: "Regnum"
+ emperor_administrative_male_roman: "İmparator"
+ emperor_administrative_female_roman: "İmparator"
+ empire_administrative_roman: "İmparatorluk"
   
- co_ruler_male: "Ortak-[SelectLocalization( Character.GetLiege.IsFemale, 'co_ruler_male_gender_fallback', 'co_ruler_actual')]" #NT!
- co_ruler_female: "Ortak-[SelectLocalization( Character.GetLiege.IsFemale, 'co_ruler_actual', 'co_ruler_female_gender_fallback')]" #NT!
- co_ruler_actual: "[Character.GetLiege.GetTitleAsNameNoTooltip]" #NT!
- co_ruler_male_gender_fallback: "[Character.Custom('GetCoRulerDiffGenderBestTitle')]" #NT!
- co_ruler_female_gender_fallback: "[Character.Custom('GetCoRulerDiffGenderBestTitle')]" #NT!
- GetCoRulerDiffGenderBestTitle_Spouse: "[Character.GetLiege.GetPrimarySpouse.GetTitleAsNameNoTooltip]" #NT!
+ co_ruler_male: "Ortak-[SelectLocalization( Character.GetLiege.IsFemale, 'co_ruler_male_gender_fallback', 'co_ruler_actual')]"
+ co_ruler_female: "Ortak-[SelectLocalization( Character.GetLiege.IsFemale, 'co_ruler_actual', 'co_ruler_female_gender_fallback')]"
+ co_ruler_actual: "[Character.GetLiege.GetTitleAsNameNoTooltip]"
+ co_ruler_male_gender_fallback: "[Character.Custom('GetCoRulerDiffGenderBestTitle')]"
+ co_ruler_female_gender_fallback: "[Character.Custom('GetCoRulerDiffGenderBestTitle')]"
+ GetCoRulerDiffGenderBestTitle_Spouse: "[Character.GetLiege.GetPrimarySpouse.GetTitleAsNameNoTooltip]"
   
- custom_imperator_caesar_augustus: "İmparator Sezar Augustus" #NT!
+ custom_imperator_caesar_augustus: "İmparator Sezar Augustus"
   
   ### Landless Adventurer Camps 
- duke_landless_adventurer_male_camp: "Kaptan" #NT!
- duke_landless_adventurer_female_camp: "Kaptan" #NT!
- duchy_landless_adventurer_camp: "Kamp" #NT!
- spouse_landless_adventurer_male: "Usta" #NT!
- spouse_landless_adventurer_holder_female: "Metres" #NT!
+ duke_landless_adventurer_male_camp: "Kaptan"
+ duke_landless_adventurer_female_camp: "Kaptan"
+ duchy_landless_adventurer_camp: "Kamp"
+ spouse_landless_adventurer_male: "Usta"
+ spouse_landless_adventurer_holder_female: "Metres"
   
- duke_landless_adventurer_camp_mercenaries: "Kaptan" #NT!
- duke_landless_adventurer_camp_wanderers: "[Character.Custom('MistressMaster')|U]" #NT!
- duke_landless_adventurer_camp_scholars: "[Character.Custom('MistressMaster')|U]" #NT!
- duke_landless_adventurer_camp_explorers: "Lider" #NT!
- duke_landless_adventurer_camp_brigands: "Patron" #NT!
- duke_landless_adventurer_camp_legitimists: "[Character.GetLadyLord|U]" #NT!
+ duke_landless_adventurer_camp_mercenaries: "Kaptan"
+ duke_landless_adventurer_camp_wanderers: "[Character.Custom('MistressMaster')|U]"
+ duke_landless_adventurer_camp_scholars: "[Character.Custom('MistressMaster')|U]"
+ duke_landless_adventurer_camp_explorers: "Lider"
+ duke_landless_adventurer_camp_brigands: "Patron"
+ duke_landless_adventurer_camp_legitimists: "[Character.GetLadyLord|U]"
   
   ### Estates 
- spouse_estate_holder_male: "Rabbim" #NT!
- spouse_estate_holder_female: "Bayan" #NT!
+ spouse_estate_holder_male: "Rabbim"
+ spouse_estate_holder_female: "Bayan"
   
   ### Easter Eggs 
- lady_in_shadows: "Gölgedeki Kadın" #NT!
+ lady_in_shadows: "Gölgedeki Kadın"
   
   ### Additional Flavor Titles 
   # Margraves 
- feudal_margrave_male: "Marki" #NT!
- feudal_margrave_male_german_group: "Margrave" #NT!
- feudal_margrave_female: "Markiz" #NT!
- feudal_margrave_female_german_group: "Uç beyinin karısı" #NT!
- feudal_margrave_title: "Mart" #NT!
- feudal_margrave_title_german_group: "Margravat" #NT!
+ feudal_margrave_male: "Marki"
+ feudal_margrave_male_german_group: "Margrave"
+ feudal_margrave_female: "Markiz"
+ feudal_margrave_female_german_group: "Uç beyinin karısı"
+ feudal_margrave_title: "Mart"
+ feudal_margrave_title_german_group: "Margravat"
   # Palatins 
- feudal_palatinate_county_male: "Palatine Kontu" #NT!
- feudal_palatinate_county_female: "Kontes Palatine" #NT!
- feudal_palatinate_county_title: "Kont Palatinate" #NT!
- feudal_palatinate_duchy_male: "Palatin" #NT!
- feudal_palatinate_duchy_female: "Palatin" #NT!
- feudal_palatinate_duchy_title: "Pfalz" #NT!
+ feudal_palatinate_county_male: "Palatine Kontu"
+ feudal_palatinate_county_female: "Kontes Palatine"
+ feudal_palatinate_county_title: "Kont Palatinate"
+ feudal_palatinate_duchy_male: "Palatin"
+ feudal_palatinate_duchy_female: "Palatin"
+ feudal_palatinate_duchy_title: "Pfalz"
   # Burgraves 
- feudal_castellan_male: "Kale muhafızı" #NT!
- feudal_castellan_male_german_group: "Burgrave" #NT!
- feudal_castellan_female: "Kale muhafızı" #NT!
- feudal_castellan_female_german_group: "Burgravine" #NT!
- feudal_castellan_title: "Şato" #NT!
- feudal_castellan_title_german_group: "Burgravate" #NT!
+ feudal_castellan_male: "Kale muhafızı"
+ feudal_castellan_male_german_group: "Burgrave"
+ feudal_castellan_female: "Kale muhafızı"
+ feudal_castellan_female_german_group: "Burgravine"
+ feudal_castellan_title: "Şato"
+ feudal_castellan_title_german_group: "Burgravate"

@@ -16,7 +16,7 @@
  death_management.1001.t: "[Select_CString(GetPlayer.IsFemale, 'Anneler', 'Babalar' )] [Select_CString(dead_character.IsFemale, 'Kızlarını', 'Oğullarını' )] Gömmemeli"
  death_management.1001.murder: "[dead_character.GetTitledFirstName] öldürüldü!\n\n"
   #AGOT Modified 
- #death_management.1001.tt: "[THIS.Char.Custom2('RelationToMeShort', SCOPE.sC('dead_character'))], [dead_character.GetTitledFirstName]'iniz [THIS.Char.Custom('DiedHouse_arrest')]'ye sahip." #NT!
+ #death_management.1001.tt: "[THIS.Char.Custom2('RelationToMeShort', SCOPE.sC('dead_character'))], [dead_character.GetTitledFirstName]'iniz [THIS.Char.Custom('DiedHouse_arrest')]'ye sahip."
  death_management.1001.tt: "Karakterinizin [THIS.Char.Custom2('RelationToMeShort', SCOPE.sC('dead_character'))] [dead_character.GetTitledFirstName] [THIS.Char.Custom('DiedHouse_arrest')]."
  death_management.1001.plaguechild: "[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('dead_character'))|U] [dead_character.GetFirstName] yanımdan götürülürken içim sessiz bir acıyla kıvrılıyor. Hekimler ve şifacılar sabahtan akşama kadar çalıştılar ama onu kurtaramadılar.\n\nÇok da gençti, kim bilir gelecekte neler yapacaktı. Onun gibi ölen daha niceleri var.\n\nYüce [ROOT.Char.GetFaith.HighGodName] kurtar bizi."
  death_management.1001.child: "Senden çok fazla beklentim vardı benim sevimli çocuğum. Öğreneceğin, deneyimleyeceğin her şey. Hayatta yapabileceğin çok fazla şey vardı. Belki de bir gün kendi çocuğuna sahip olacaktın. Ama şimdi, bunların hiçbiri gerçekleşemeyecek..."
@@ -60,7 +60,7 @@
   
  death_management.betrothed.desc: "Nişanlınız [dead_character.GetFirstNameNoTooltip], [dead_character.GetDeathReason]."
   #AGOT Modified 
- #death_management.liege_councillor.desc: "Senin [councillor|E], [dead_character.GetFirstNameNoTooltip], [dead_character.GetDeathReason]." #NT!
+ #death_management.liege_councillor.desc: "Senin [councillor|E], [dead_character.GetFirstNameNoTooltip], [dead_character.GetDeathReason]."
  death_management.liege_councillor.desc: "[councillor|E] [dead_character.GetFirstNameNoTooltip], [dead_character.GetDeathReason]."
   
  death_management.liege_councillor.desc: "[councillor|E] [dead_character.GetFirstNameNoTooltip], [dead_character.GetDeathReason]."
@@ -231,7 +231,7 @@
  death_management.4007.start: "Bugün [dead_character.GetTitledFirstName] [house_arrest_holder.GetTitledFirstName] tarafından tutulduğu zindanda hayatını kaybetti. [dead_character.GetTitledFirstName] topraklarının geleceği de böylece değişti. Nasıl bir"
  death_management.4007.mytitle: "[ROOT.Char.GetTitleTierName]"
  death_management.4007.ruler: "süzeren"
- death_management.4007.end_adventurer: "[dead_character.GetSheHe] olurdu ya da [dead_character.GetHerHis] ise ölüm [dead_character.GetHerHis] takipçileri için bir lütuf ya da lanet olurdu." #NT!
+ death_management.4007.end_adventurer: "[dead_character.GetSheHe] olurdu ya da [dead_character.GetHerHis] ise ölüm [dead_character.GetHerHis] takipçileri için bir lütuf ya da lanet olurdu."
  death_management.4007.end: "olacağını hiç bilemeyeceğiz. Ölümünün [ROOT.Char.GetPrimaryTitle.GetType.GetName] için bir nimet mi yoksa lanet mi olduğunu da."
  death_management.4007.end.heir: "\n\nUmarım yeni vârisim [new_heir.GetTitledFirstName] bu görevi için uygundur."
  death_management.4007.a: "Bir hikâye biter ötekisi başlar..."
@@ -313,15 +313,15 @@
   # Killer 
  death_management.killer.witnessed.enemy: "Önemsiz bir anda [battle_death_killer.GetLiege.GetTitledFirstName] adlı kişinin [battle_death_killer.GetLiege.Custom2('RelationToMe', SCOPE.sC('battle_death_killer'))] [battle_death_killer.GetTitledFirstName], elinde [battle_death_killer.Custom('signature_weapon')] ile birlikte kararlı haliyle öne atılıyor ve kolayca geri kalan gücünü tüketip son darbeyi indiriyor."
   # AGOT Added 
- death_management.killer.witnessed.enemy_dragon: "[battle_death_killer.GetFirstName]'ın gücüne karşı kimse duramadı. [battle_death_killer_rider.GetTitledFirstName] tarafından sürülen bu yaratıklar düşman hatlarını parçaladılar ve [dead_character.GetFirstNameNoTooltip] de onların kurbanlarından biriydi." #NT!
+ death_management.killer.witnessed.enemy_dragon: "[battle_death_killer.GetFirstName]'ın gücüne karşı kimse duramadı. [battle_death_killer_rider.GetTitledFirstName] tarafından sürülen bu yaratıklar düşman hatlarını parçaladılar ve [dead_character.GetFirstNameNoTooltip] de onların kurbanlarından biriydi."
   # 
  death_management.killer.witnessed.friendly: "[battle_death_killer.Custom('signature_weapon')] gözlerimi kamaştırırken [battle_death_killer.GetLiege.GetTitledFirstName] adlı kişinin [battle_death_killer.GetLiege.Custom2('RelationToMe', SCOPE.sC('battle_death_killer'))] [battle_death_killer.GetTitledFirstName] tarafından öldürücü darbenin indirildiğini görüyorum."
   # AGOT Added 
- death_management.killer.witnessed.friendly_dragon: "[battle_death_killer.GetFirstName]'ın terörüne karşı kimse duramadı. [battle_death_killer_rider.GetTitledFirstName] tarafından sürülen bu yaratıklar, hatlarımızı parçaladılar ve [dead_character.GetFirstNameNoTooltip] de ateş ve alevler içinde düşenlerden biriydi." #NT!
+ death_management.killer.witnessed.friendly_dragon: "[battle_death_killer.GetFirstName]'ın terörüne karşı kimse duramadı. [battle_death_killer_rider.GetTitledFirstName] tarafından sürülen bu yaratıklar, hatlarımızı parçaladılar ve [dead_character.GetFirstNameNoTooltip] de ateş ve alevler içinde düşenlerden biriydi."
   # 
  death_management.killer: "O [battle_death_killer.GetLiege.GetTitledFirstName] adlı kişinin [battle_death_killer.GetLiege.Custom2('RelationToMe', SCOPE.sC('battle_death_killer'))] [battle_death_killer.GetTitledFirstName] tarafından ilk karşılaşmada katledilmiş.'#!"
   # AGOT Added 
- death_management.killer_dragon: "[dead_character.GetSheHe|U], [battle_death_killer_rider.GetTitledFirstName]'nin ejderhası [battle_death_killer.GetFirstName]'in önünde düşenlerden biriydi.'#!" #NT!
+ death_management.killer_dragon: "[dead_character.GetSheHe|U], [battle_death_killer_rider.GetTitledFirstName]'nin ejderhası [battle_death_killer.GetFirstName]'in önünde düşenlerden biriydi.'#!"
   # 
  death_management.no_killer: "O haşin çarpmışma sırasında serseri bir ok tarafından vurulmuş'#!"
   # Spouse 
@@ -329,10 +329,10 @@
  death_management.1200.desc_sad: "\n\nOnun böyle gitmesine izin vermemeliydim..."
  death_management.1200.desc_happy: "\n\nSonunda o [dead_character.Custom('InsultNoun')] öldü!"
   # AGOT Modified - vanilla scope error 
- #death_management.1200.a: "[battle_death_killer.GetFirstNameNoTooltip] ölü [dead_character.GetWomanMan]! Ölü!" #NT!
+ #death_management.1200.a: "[battle_death_killer.GetFirstNameNoTooltip] ölü [dead_character.GetWomanMan]! Ölü!"
  death_management.1200.a: "[battle_death_killer.GetFirstNameNoTooltip] artık ölü!"
   # AGOT Added 
- death_management.1200.a_dragon: "[battle_death_killer_rider.GetFirstNameNoTooltip] ölü [battle_death_killer_rider.GetWomanMan]! Ölü!" #NT!
+ death_management.1200.a_dragon: "[battle_death_killer_rider.GetFirstNameNoTooltip] ölü [battle_death_killer_rider.GetWomanMan]! Ölü!"
   # 
  death_management.1200.b: "Seni asla unutmayacağım..."
  death_management.1200.c: "Sevgilim, yiğitliğini kanıtladın..."
@@ -342,7 +342,7 @@
  death_management.1201.desc: "\n\nOnu kurtaramazdım... ama yine de hiç bir ebeveyn çocuklarından uzun yaşamamalı..."
  death_management.1201.a: "[battle_death_killer.GetFirstNameNoTooltip] bundan paçasını kurtaramayacak!"
   # AGOT Added 
- death_management.1201.a_dragon: "[battle_death_killer_rider.GetFirstNameNoTooltip] bundan sıyrılamayacak!" #NT!
+ death_management.1201.a_dragon: "[battle_death_killer_rider.GetFirstNameNoTooltip] bundan sıyrılamayacak!"
   # 
  death_management.1201.b: "#EMP Benim cesur evladım...#!"
  death_management.1201.c: "İyi savaştın çocuğum..."
@@ -353,7 +353,7 @@
  death_management.1202.a: "#EMP [dead_character.Custom('GetMamaPapa')], neden öldün?#!"
  death_management.1202.b: "[battle_death_killer.GetFirstNameNoTooltip] bunun bedelini ödeyecek."
   # AGOT Added 
- death_management.1202.b_dragon: "[battle_death_killer_rider.GetFirstNameNoTooltip] ödeyecek." #NT!
+ death_management.1202.b_dragon: "[battle_death_killer_rider.GetFirstNameNoTooltip] ödeyecek."
   # 
   # Lover 
  death_management.1204.t: "Sevgilinin Ölümü"
@@ -366,7 +366,7 @@
  death_management.1205.a: "[dead_character.GetFirstNameNoTooltip]!"
  death_management.1205.b: "[battle_death_killer.GetFirstNameNoTooltip] bunun bedelini ödeyecek!"
   # AGOT Added 
- death_management.1205.b_dragon: "[battle_death_killer_rider.GetFirstNameNoTooltip] bunun bedelini ödeyecek!" #NT!
+ death_management.1205.b_dragon: "[battle_death_killer_rider.GetFirstNameNoTooltip] bunun bedelini ödeyecek!"
   # 
   # Rival 
  death_management.1206.t: "Düşmanın Ölümü"
@@ -375,7 +375,7 @@
  death_management.1206.b: "[dead_character.GetFirstNameNoTooltip] son nefesini benim elimde vermeliydi!"
  death_management.1206.c: "#EMP Kahramanım#! [battle_death_killer.GetFirstNameNoTooltip]! Sana bir [ROOT.Char.GetCurrentLocation.Custom('get_region_flower_type')] göndereceğim!"
   # AGOT Added 
- death_management.1206.c_dragon: "#EMP kahramanım!#! [battle_death_killer_rider.GetFirstNameNoTooltip]'ye [ROOT.Char.GetCurrentLocation.Custom('get_region_flower_type')] göndereceğim!" #NT!
+ death_management.1206.c_dragon: "#EMP kahramanım!#! [battle_death_killer_rider.GetFirstNameNoTooltip]'ye [ROOT.Char.GetCurrentLocation.Custom('get_region_flower_type')] göndereceğim!"
   # 
   # Heir 
  death_management.1207.t: "Vârisin Ölümü"
@@ -383,7 +383,7 @@
  death_management.1207.a: "Buna hazır değildin..."
  death_management.1207.b: "[battle_death_killer.GetFirstNameNoTooltip] onu neyin beklediği hakkında hiç bir fikri yok!"
   # AGOT Added 
- death_management.1207.b_dragon: "...ama [battle_death_killer_rider.GetFirstNameNoTooltip] da değil!" #NT!
+ death_management.1207.b_dragon: "...ama [battle_death_killer_rider.GetFirstNameNoTooltip] da değil!"
   # 
  death_battle_new_rivalry_title: "[avenger.GetTitledFirstNameNoTooltip] intikam istiyor"
   # Family Feud 

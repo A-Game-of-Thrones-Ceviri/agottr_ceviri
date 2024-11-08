@@ -48,8 +48,8 @@
  msg_multiple_agents_removed_my_scheme: "Yardakçılar Plandan Çıktı"
  msg_multiple_agents_removed_my_scheme_desc: "[LEFT_CHARACTER.GetUINameNoTooltip] ve $OTHER|V$ [agent|E] daha artık [SCHEME.GetFullActionName] [Concept( 'scheme', 'planınızda' )|E] bulunmuyor"
  msg_scheme_froze_title: "Planınız donduruldu"
- msg_scheme_pulse_effect: "Nabız Etkisi" #NT!
- msg_scheme_pulse_effect_desc: "$EFFECT$" #NT!
+ msg_scheme_pulse_effect: "Nabız Etkisi"
+ msg_scheme_pulse_effect_desc: "$EFFECT$"
  msg_scheme_froze_desc: "[SCHEME.GetFullActionName] [Concept( 'scheme', 'planınız' )|E] donduruldu. Çünkü $REASON$"
  msg_scheme_froze_until_desc: "[SCHEME.GetFullActionName] [Concept( 'scheme', 'planınız' )|E] [DATE.GetString|V] tarihine kadar donduruldu. Çünkü $REASON$"
  msg_council_task_finished_location: "Görev Tamamlandı"
@@ -117,14 +117,14 @@
  msg_liege_war_ended_invalid: "#D KULLANILMAYAN MESAJ#!"
  msg_liege_war_ended_invalid_desc: "#D KULLANILMAYAN MESAJ#!"
   
- msg_domicile_moved.title: "Kamp [CHARACTER.GetCurrentLocation.GetBaronyNameExplicitlyNoTooltip]'a taşındı" #NT!
- msg_domicile_moved.desc: "[camp|E]'ınız [CHARACTER.GetCurrentLocation.GetBaronyNameExplicitly]'e taşındı" #NT!
- msg_domicile_building_started.title: "#high [CHARACTER.GetDomicile.GetBuildingUnderConstruction.GetName]#! Başladı" #NT!
- msg_domicile_building_started.desc: "[CHARACTER.GetDomicile.GetBuildingUnderConstruction.GetName], [CHARACTER.GetDomicile.GetType.GetTitleText( CHARACTER.Self )]'de yapım aşamasındadır" #NT!
- msg_domicile_building_cancelled.title: "#high [CHARACTER.GetDomicile.GetBuildingUnderConstruction.GetNameNoTooltip]#! İptal edildi" #NT!
- msg_domicile_building_cancelled.desc: "[CHARACTER.GetDomicile.GetBuildingUnderConstruction.GetName] [CHARACTER.GetDomicile.GetType.GetTitleText( CHARACTER.Self )]'de yapım aşamasında olan iptal edildi" #NT!
- msg_domicile_building_completed.title: "#high [CHARACTER.GetDomicile.GetBuildingUnderConstruction.GetNameNoTooltip]#! Tamamlandı" #NT!
- msg_domicile_building_completed.desc: "[CHARACTER.GetDomicile.GetBuildingUnderConstruction.GetName], [CHARACTER.GetDomicile.GetType.GetTitleText( CHARACTER.Self )]'de inşa edildi" #NT!
+ msg_domicile_moved.title: "Kamp [CHARACTER.GetCurrentLocation.GetBaronyNameExplicitlyNoTooltip]'a taşındı"
+ msg_domicile_moved.desc: "[camp|E]'ınız [CHARACTER.GetCurrentLocation.GetBaronyNameExplicitly]'e taşındı"
+ msg_domicile_building_started.title: "#high [CHARACTER.GetDomicile.GetBuildingUnderConstruction.GetName]#! Başladı"
+ msg_domicile_building_started.desc: "[CHARACTER.GetDomicile.GetBuildingUnderConstruction.GetName], [CHARACTER.GetDomicile.GetType.GetTitleText( CHARACTER.Self )]'de yapım aşamasındadır"
+ msg_domicile_building_cancelled.title: "#high [CHARACTER.GetDomicile.GetBuildingUnderConstruction.GetNameNoTooltip]#! İptal edildi"
+ msg_domicile_building_cancelled.desc: "[CHARACTER.GetDomicile.GetBuildingUnderConstruction.GetName] [CHARACTER.GetDomicile.GetType.GetTitleText( CHARACTER.Self )]'de yapım aşamasında olan iptal edildi"
+ msg_domicile_building_completed.title: "#high [CHARACTER.GetDomicile.GetBuildingUnderConstruction.GetNameNoTooltip]#! Tamamlandı"
+ msg_domicile_building_completed.desc: "[CHARACTER.GetDomicile.GetBuildingUnderConstruction.GetName], [CHARACTER.GetDomicile.GetType.GetTitleText( CHARACTER.Self )]'de inşa edildi"
   
  event_message_title: "$TITLE$"
  event_message_text: "$DESCRIPTION$"
@@ -241,8 +241,8 @@
  msg_become_culture_head_desc: "[CULTURE.GetName] kültürünün yeni [culture_head|E] oldunuz!"
  msg_new_theocracy_lesse: "Yeni [LEFT_CHARACTER.GetCouncilTitle]"
   #AGOT Modified 
- #msg_new_theocracy_lesee_approve_desc: "[LEFT_CHARACTER.GetShortUIName|U] sizi destekliyor #weak ([church_property|E])#!" #NT!
- #msg_new_theocracy_lesee_disapprove_desc: "[LEFT_CHARACTER.GetShortUIName|U] sizi desteklemiyor #weak ([church_property|E])#!" #NT!
+ #msg_new_theocracy_lesee_approve_desc: "[LEFT_CHARACTER.GetShortUIName|U] sizi destekliyor #weak ([church_property|E])#!"
+ #msg_new_theocracy_lesee_disapprove_desc: "[LEFT_CHARACTER.GetShortUIName|U] sizi desteklemiyor #weak ([church_property|E])#!"
  msg_new_theocracy_lesee_approve_desc: "[LEFT_CHARACTER.GetShortUIName|U] sizi onaylıyor #weak ([church_property|E])#!"
  msg_new_theocracy_lesee_disapprove_desc: "[LEFT_CHARACTER.GetShortUIName|U] sizi onaylamıyor #weak ([church_property|E])#!"
  msg_mercenary_company_dismissed: "Paralı Askerler Terhis Edildi"
@@ -277,7 +277,7 @@
  msg_raid_war_invalidated_message: "[war.GetName] sona erdi: [Select_CString( defender.IsLocalPlayer, '', defender.GetShortUIName )][Select_CString( defender.IsLocalPlayer, '', ' ' )]artık yağmalanamaz[Select_CString( defender.IsLocalPlayer, 'sınız', '' )]."
  msg_free_house_member_war_invalidated_message: "[war.GetName] sona erdi: [Select_CString( defender.IsLocalPlayer, '', defender.GetShortUIName )][Select_CString( defender.IsLocalPlayer, '', ' ' )][attacker.GetHouse.GetBaseNameNoTooltip] [Concept( 'house', 'Hanesinden' )|E] birini esir tutmuyor[Select_CString( defender.IsLocalPlayer, 'sunuz', '' )]."
  msg_unify_house_war_invalidated_message: "[war.GetName] sona erdi: [Select_CString( defender.IsLocalPlayer, '', defender.GetShortUIName )][Select_CString( defender.IsLocalPlayer, '', ' ' )][attacker.GetHouse.GetBaseNameNoTooltip] [Concept( 'house', 'Hanesinden' )|E] vasal sahibi değil[Select_CString( defender.IsLocalPlayer, 'siniz', '' )]."
- msg_laamp_raid_contract_war_invalidated_message: "[war.GetName] sona erdi: [attacker.GetShortUINamePossessive] [GetTaskContractType('laamp_raid_contract').GetName] [task_contract|E] artık geçerli değil." #NT!
+ msg_laamp_raid_contract_war_invalidated_message: "[war.GetName] sona erdi: [attacker.GetShortUINamePossessive] [GetTaskContractType('laamp_raid_contract').GetName] [task_contract|E] artık geçerli değil."
   
  msg_my_hook_replaced: "Koz Değişti"
  msg_my_hook_replaced_desc: "[LEFT_CHARACTER.GetShortUIName] üzerindeki [Concept( 'hook', 'kozunuz' )|E], [HOOK.GetName] kozu ile değiştirildi"
@@ -297,10 +297,10 @@
  lover_death_notification_title: "Sevgiliniz #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Hayatını Kaybetti"
  friend_death_notification_title: "Arkadaşınız #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Hayatını Kaybetti"
   #AGOT Modified 
- #councillor_death_notification_title: "Danışmanınız #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Öldü" #NT!
+ #councillor_death_notification_title: "Danışmanınız #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Öldü"
  councillor_death_notification_title: "Konsey Üyeniz #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Hayatını Kaybetti"
- prisoner_death_notification_title: "Mahkumunuz #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Öldü" #NT!
- notable_death_notification_title: "#high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Öldü" #NT!
+ prisoner_death_notification_title: "Mahkumunuz #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Öldü"
+ notable_death_notification_title: "#high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Öldü"
   
  msg_perk_point_added: "[LIFESTYLE.GetName] Yeteneği Seçilebilir"
  msg_perk_point_added_desc: "[LIFESTYLE.GetName] Yaşam Tarzı için yeni bir Yetenek açabilirsiniz"
@@ -324,10 +324,10 @@
  prestige_level_gain.desc: "Şanınız her yerde biliniyor"
  prestige_level_loss.message: "[prestige_level|E] Azaldı"
  prestige_level_loss.desc: "Onursuzluğun bir bedeli var"
- influence_level_gain.message: "Kazanıldı [influence_level|E]" #NT!
- influence_level_gain.desc: "Bağlantı ağınız genişliyor" #NT!
- influence_level_loss.message: "Kayıp [influence_level|E]" #NT!
- influence_level_loss.desc: "Lütuf kuyunuz kurudu" #NT!
+ influence_level_gain.message: "Kazanıldı [influence_level|E]"
+ influence_level_gain.desc: "Bağlantı ağınız genişliyor"
+ influence_level_loss.message: "Kayıp [influence_level|E]"
+ influence_level_loss.desc: "Lütuf kuyunuz kurudu"
  stress_level_reduced.message: "[stress_level|E] Azaldı"
  stress_level_reduced.text: "Artık [stress|E] ile boğuşmuyorsunuz"
  msg_holy_order_patronage_lost: "[holy_order|E] Hamiliği Kaybedildi"
@@ -441,8 +441,8 @@
  msg_set_relation_rival_desc: "[GetRelation( 'rival' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]"
  msg_set_relation_nemesis_title: "@nemesis_icon! Can Düşmanı Kazandınız"
  msg_set_relation_nemesis_desc: "[GetRelation( 'nemesis' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]"
- msg_set_relation_grudge_title: "@grudge_icon! Kin Tutmaya Başladım" #NT!
- msg_set_relation_grudge_desc: "[GetRelation( 'grudge' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]" #NT!
+ msg_set_relation_grudge_title: "@grudge_icon! Kin Tutmaya Başladım"
+ msg_set_relation_grudge_desc: "[GetRelation( 'grudge' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]"
   
  msg_set_relation_lover_title: "@lover_icon! Sevgili Kazandınız"
  msg_set_relation_lover_desc: "[GetRelation( 'lover' ).GetReasonFor( LEFT_CHARACTER.Self, RIGHT_CHARACTER.Self )]"
@@ -513,45 +513,45 @@
  msg_legend_library_added_desc: "[Legend.GetName], [Concept( 'legend_library', 'Destan Kütüphanenize' )|E] eklendi."
  message_consolidation_names: "#T Diğerleri#!\n[PlayerMessageItem.GetConsolidationNames]"
  message_consolidation_others: "#tooltip:message_consolidation_names #L [Subtract_int32( PlayerMessageItem.GetConsolidationCount, '(int32)2' )|V] [Select_CString( GreaterThan_int32( PlayerMessageItem.GetConsolidationCount, '(int32)3' ), 'diğer', 'diğer' )]#!#!"
- msg_raid_completed_title: "Baskın [RIGHT_TITLE.GetNameNoTierNoTooltip]" #NT!
- msg_raid_completed_desc: "Sen [raided|E] [RIGHT_TITLE.GetName] ([RIGHT_TITLE.GetHolder.GetShortUIName])" #NT!
- msg_raid_lost_title: "[RIGHT_TITLE.GetNameNoTierNoTooltip] Baskın Yapıldı" #NT!
- msg_raid_lost_desc: "[LEFT_CHARACTER.GetUIName]'ın [raided|E]'i [RIGHT_TITLE.GetName] ([RIGHT_TITLE.GetHolder.GetShortUIName]) vardır" #NT!
- msg_known_pregnancy: "[LEFT_CHARACTER.GetTitledFirstNameNoTooltip] Hamile Kaldı" #NT!
+ msg_raid_completed_title: "Baskın [RIGHT_TITLE.GetNameNoTierNoTooltip]"
+ msg_raid_completed_desc: "Sen [raided|E] [RIGHT_TITLE.GetName] ([RIGHT_TITLE.GetHolder.GetShortUIName])"
+ msg_raid_lost_title: "[RIGHT_TITLE.GetNameNoTierNoTooltip] Baskın Yapıldı"
+ msg_raid_lost_desc: "[LEFT_CHARACTER.GetUIName]'ın [raided|E]'i [RIGHT_TITLE.GetName] ([RIGHT_TITLE.GetHolder.GetShortUIName]) vardır"
+ msg_known_pregnancy: "[LEFT_CHARACTER.GetTitledFirstNameNoTooltip] Hamile Kaldı"
   
- msg_government_changed: "Hükümet Değişti" #NT!
+ msg_government_changed: "Hükümet Değişti"
   
- msg_poem_sold_title: "Muwashşah Şiiri Satıldı" #NT!
- msg_poem_kept_title: "Muvaşşah Şiiri Saklandı" #NT!
- msg_poem_kept_message: "[double_moon_book.GetName] rastgele bir Değiştirici alır" #NT!
- msg_poem_distributed_title: "Muvaşşah Şiiri Dağıtıldı" #NT!
+ msg_poem_sold_title: "Muwashşah Şiiri Satıldı"
+ msg_poem_kept_title: "Muvaşşah Şiiri Saklandı"
+ msg_poem_kept_message: "[double_moon_book.GetName] rastgele bir Değiştirici alır"
+ msg_poem_distributed_title: "Muvaşşah Şiiri Dağıtıldı"
   
- msg_contract_completion_reward: "[GetPlayer.Custom('GetContractOrIssue')] Tamamlandı" #NT!
- msg_contract_completion_reward_desc: "$REWARD_TYPE$" #NT!
+ msg_contract_completion_reward: "[GetPlayer.Custom('GetContractOrIssue')] Tamamlandı"
+ msg_contract_completion_reward_desc: "$REWARD_TYPE$"
   
- msg_governor_candidate_promoted_leading: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self)|U] [CharAreIs(LEFT_CHARACTER)] [TITLE.GetNameNoTierNoTooltip|V] Sırasında" #NT!
- msg_governor_candidate_promoted_leading_desc: "[LEFT_CHARACTER.GetShortUIName|U], [TITLE.GetName] için bir sonraki sıradaki [RIGHT_CHARACTER.GetShortUIName]'i geçti" #NT!
- msg_governor_candidate_demoted_leading: "[GetPlayer.Custom2('RelationToMeShort', RIGHT_CHARACTER.Self)|U] [CharAreIs(RIGHT_CHARACTER)] Kaybetmek [TITLE.GetNameNoTierNoTooltip|V]" #NT!
- msg_governor_candidate_demoted_leading_desc: "[LEFT_CHARACTER.GetShortUIName|U] [CharHaveHas(LEFT_CHARACTER)], [TITLE.GetName] için bir sonraki sıradaki [RIGHT_CHARACTER.GetShortUIName]'yi geçti" #NT!
- msg_provincial_army_reassigned: "[TITLE.GetAdjectiveNoTooltip|V] Ordu Yeniden Atandı" #NT!
- msg_provincial_army_reassigned_desc: "[LEFT_CHARACTER.GetShortUINameNotMe], [TITLE.GetNameNoTier]'ün [provincial|E] [army|E]'sini [RIGHT_TITLE.GetName]'e yeniden atadı" #NT!
+ msg_governor_candidate_promoted_leading: "[GetPlayer.Custom2('RelationToMeShort', LEFT_CHARACTER.Self)|U] [CharAreIs(LEFT_CHARACTER)] [TITLE.GetNameNoTierNoTooltip|V] Sırasında"
+ msg_governor_candidate_promoted_leading_desc: "[LEFT_CHARACTER.GetShortUIName|U], [TITLE.GetName] için bir sonraki sıradaki [RIGHT_CHARACTER.GetShortUIName]'i geçti"
+ msg_governor_candidate_demoted_leading: "[GetPlayer.Custom2('RelationToMeShort', RIGHT_CHARACTER.Self)|U] [CharAreIs(RIGHT_CHARACTER)] Kaybetmek [TITLE.GetNameNoTierNoTooltip|V]"
+ msg_governor_candidate_demoted_leading_desc: "[LEFT_CHARACTER.GetShortUIName|U] [CharHaveHas(LEFT_CHARACTER)], [TITLE.GetName] için bir sonraki sıradaki [RIGHT_CHARACTER.GetShortUIName]'yi geçti"
+ msg_provincial_army_reassigned: "[TITLE.GetAdjectiveNoTooltip|V] Ordu Yeniden Atandı"
+ msg_provincial_army_reassigned_desc: "[LEFT_CHARACTER.GetShortUINameNotMe], [TITLE.GetNameNoTier]'ün [provincial|E] [army|E]'sini [RIGHT_TITLE.GetName]'e yeniden atadı"
   
- msg_admin_title_gained_house.tt: "Temsilciler Meclisi Üyesi Görev Kazandı" #NT!
- msg_admin_title_gained_investor.tt: "Desteklenen Aday Randevu Alır" #NT!
- msg_admin_title_gained_foe.tt: "Karşıt Aday Göreve Geldi" #NT!
- msg_admin_title_gained.desc: "[GetPlayer.Custom2('RelationToMeShort', SCOPE.sC('title_gainer'))], [title_gainer.GetShortUIName|U] artık [title.GetName]'yi yönetiyor" #NT!
+ msg_admin_title_gained_house.tt: "Temsilciler Meclisi Üyesi Görev Kazandı"
+ msg_admin_title_gained_investor.tt: "Desteklenen Aday Randevu Alır"
+ msg_admin_title_gained_foe.tt: "Karşıt Aday Göreve Geldi"
+ msg_admin_title_gained.desc: "[GetPlayer.Custom2('RelationToMeShort', SCOPE.sC('title_gainer'))], [title_gainer.GetShortUIName|U] artık [title.GetName]'yi yönetiyor"
   
- msg_admin_title_lost_house.tt: "Temsilciler Meclisi Üyesi Randevusunu Kaybetti" #NT!
- msg_admin_title_lost_investor.tt: "Desteklenen Sahip Kayıp Randevu" #NT!
- msg_admin_title_lost_foe.tt: "Karşıt Sahip Randevuyu Kaybetti" #NT!
- msg_admin_title_lost.desc: "[GetPlayer.Custom2('RelationToMeShort', SCOPE.sC('title_loser'))], [title_loser.GetShortUIName|U]'iniz artık [title.GetName]'yi yönetmiyor" #NT!
+ msg_admin_title_lost_house.tt: "Temsilciler Meclisi Üyesi Randevusunu Kaybetti"
+ msg_admin_title_lost_investor.tt: "Desteklenen Sahip Kayıp Randevu"
+ msg_admin_title_lost_foe.tt: "Karşıt Sahip Randevuyu Kaybetti"
+ msg_admin_title_lost.desc: "[GetPlayer.Custom2('RelationToMeShort', SCOPE.sC('title_loser'))], [title_loser.GetShortUIName|U]'iniz artık [title.GetName]'yi yönetmiyor"
   
- msg_estate_damaged.title: "$game_concept_estate$ Hasarlı" #NT!
- msg_estate_damaged.desc: "[estate|E]'ınız hasar gördü ve bir veya daha fazla [estate_buildings|E] seviye kaybetti veya yok edildi.\n\n[estate|E], [new_estate_location.GetName]'e taşındı." #NT!
+ msg_estate_damaged.title: "$game_concept_estate$ Hasarlı"
+ msg_estate_damaged.desc: "[estate|E]'ınız hasar gördü ve bir veya daha fazla [estate_buildings|E] seviye kaybetti veya yok edildi.\n\n[estate|E], [new_estate_location.GetName]'e taşındı."
   
- msg_admin_provincial_army_request_accepted.title: "Asker Talebi Kabul Edildi" #NT!
- msg_admin_provincial_army_request_denied.title: "Asker Talebi Reddedildi" #NT!
- msg_admin_provincial_army_request_denied.desc: "[recipient.GetShortUIName|U] asker talebinizi reddetti" #NT!
+ msg_admin_provincial_army_request_accepted.title: "Asker Talebi Kabul Edildi"
+ msg_admin_provincial_army_request_denied.title: "Asker Talebi Reddedildi"
+ msg_admin_provincial_army_request_denied.desc: "[recipient.GetShortUIName|U] asker talebinizi reddetti"
   
- msg_dynasty_child_of_age_title: "Hanedan Çocuğu Reşit Oluyor" #NT!
- msg_dynasty_child_of_age_desc: "[relative.Custom2('RelationToMeShort', SCOPE.sC('educated_child'))], [educated_child.GetShortUIName|U], [relative.Custom('GetCourt')|l]'nizde reşit oldu" #NT!
+ msg_dynasty_child_of_age_title: "Hanedan Çocuğu Reşit Oluyor"
+ msg_dynasty_child_of_age_desc: "[relative.Custom2('RelationToMeShort', SCOPE.sC('educated_child'))], [educated_child.GetShortUIName|U], [relative.Custom('GetCourt')|l]'nizde reşit oldu"

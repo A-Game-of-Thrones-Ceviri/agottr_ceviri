@@ -37,10 +37,10 @@
  became_nemesis_desc: "[nemesis.GetFullName] ve ben can düşmanı olduk"
  became_nemesis_desc_second_perspective: "[nemesis.GetFullName] ve siz can düşmanı oldunuz"
  became_nemesis_desc_third_perspective: "[nemesis.GetName] ve [owner.GetFullName] can düşmanı oldu"
- became_grudge: "kin tutmaya başladı" #NT!
- became_grudge_desc: "[grudge.GetFullName]'a karşı kin beslemeye başladım" #NT!
- became_grudge_desc_second_perspective: "[grudge.GetFullName]'a karşı kin beslemeye başladın" #NT!
- became_grudge_desc_third_perspective: "[owner.GetFullName], [grudge.GetName]'e karşı kin beslemeye başladı ve rakip oldular" #NT!
+ became_grudge: "kin tutmaya başladı"
+ became_grudge_desc: "[grudge.GetFullName]'a karşı kin beslemeye başladım"
+ became_grudge_desc_second_perspective: "[grudge.GetFullName]'a karşı kin beslemeye başladın"
+ became_grudge_desc_third_perspective: "[owner.GetFullName], [grudge.GetName]'e karşı kin beslemeye başladı ve rakip oldular"
  became_soulmates_desc: "[new_soulmate.GetFullName] adlı kişinin ruh eşim olduğunu fark ettim"
  became_soulmates_desc_second_perspective: "[new_soulmate.GetFullName] adlı kişinin ruh eşiniz olduğunu fark ettiniz"
  became_soulmates_desc_third_perspective: "[owner.GetName], [new_soulmate.GetFullName] adlı kişinin ruh eşi olduğunu fark etti"
@@ -126,7 +126,7 @@
  first_born_desc_third_perspective_mother: "[owner.GetName] adlı kişinin ilk çocuğu [child.GetFirstName] dünyaya geldi"
  first_born_desc_third_perspective_bastard: "[owner.GetName], [child.GetMother.GetFirstName] ile olan evlilik dışı ilişkisinden ilk çocuğu [child.GetFirstName] dünyaya geldi"
   #AGOT Modified, Vanilla Error 
- #first_born_desc_third_perspective_1: "[owner.GetNamePossessive] ilk çocuk, [child.GetFirstName], güzel bir [child.Custom('GirlBoy')], [owner.GetHerHis] [owner.Custom2('RelationToMeShort', SCOPE.sC('child').GetMother)], [child.GetMother.GetFirstName]"" #NT!
+ #first_born_desc_third_perspective_1: "[owner.GetNamePossessive] ilk çocuk, [child.GetFirstName], güzel bir [child.Custom('GirlBoy')], [owner.GetHerHis] [owner.Custom2('RelationToMeShort', SCOPE.sC('child').GetMother)], [child.GetMother.GetFirstName]""
  first_born_desc_third_perspective_1: "[owner.GetName], [child.GetMother.GetFirstName] ile olan ilişkisinden ilk çocuğu [child.GetFirstName] dünyaya geldi"
  met_friend_first_time_desc_1: "[friend.GetFirstName] ile iyi arkadaş olduk"
  met_friend_first_time_desc_second_perspective_1: "[friend.GetFirstName] ile iyi arkadaş oldunuz"
@@ -507,10 +507,10 @@
  stopped_being_rivals_desc_second_perspective: "[old_rival.GetName] ile rakip olmayı bıraktınız"
  stopped_being_rivals_desc_third_perspective: "[owner.GetName] ve [old_rival.GetName] rakip olmayı bıraktılar"
   
- stopped_being_grudge: "kin tutmayı bıraktı" #NT!
- stopped_being_grudge_desc: "[old_grudge.GetName]'a karşı kin beslemeyi bıraktım" #NT!
- stopped_being_grudge_desc_second_perspective: "[old_grudge.GetName]'a karşı kin beslemeyi bıraktın" #NT!
- stopped_being_grudge_desc_third_perspective: "[owner.GetName] [old_grudge.GetName]'e karşı kin beslemeyi bıraktı" #NT!
+ stopped_being_grudge: "kin tutmayı bıraktı"
+ stopped_being_grudge_desc: "[old_grudge.GetName]'a karşı kin beslemeyi bıraktım"
+ stopped_being_grudge_desc_second_perspective: "[old_grudge.GetName]'a karşı kin beslemeyi bıraktın"
+ stopped_being_grudge_desc_third_perspective: "[owner.GetName] [old_grudge.GetName]'e karşı kin beslemeyi bıraktı"
   
  was_shown_execution_memory_desc: "[victim.GetName] adlı kişinin [guardian.GetName] tarafından infaz edilmesini izlemek zorunda bırakıldım"
  was_shown_execution_memory_desc_second_perspective: "[victim.GetName] adlı kişinin [guardian.GetName] tarafından infaz edilmesini izlemek zorunda bırakıldınız"
@@ -630,109 +630,109 @@
  witnessed_death_battle_bad_killer: "$witnessed_death_battle_good$"
  married: "evlendi"
  ascended_throne_memory: "tahta çıktı"
- ascended_throne_memory_desc_intro: "[ROOT.Var('landed_title').Title.GetBaseName] kazandım" #NT!
- ascended_throne_memory_desc_intro_conquest: "[ROOT.Var('landed_title').Title.GetBaseName]'ı fethettim" #NT!
- ascended_throne_memory_desc_intro_inheritance: "[ROOT.Var('landed_title').Title.GetBaseName]'ı miras aldım" #NT!
- ascended_throne_memory_desc_intro_created: "[ROOT.Var('landed_title').Title.GetBaseName]'ı ben yarattım" #NT!
- ascended_throne_memory_desc_intro_usurped: "[ROOT.Var('landed_title').Title.GetBaseName]'ı gasp ettim" #NT!
- ascended_throne_memory_desc_intro_granted: "Bana [ROOT.Var('landed_title').Title.GetBaseName] verildi" #NT!
- ascended_throne_memory_desc_intro_election: "[ROOT.Var('landed_title').Title.GetBaseName]'ı yönetmek için seçildim" #NT!
- ascended_throne_memory_desc_intro_faction_demand: "[ROOT.Var('landed_title').Title.GetBaseName]'ı talep ettim" #NT!
- ascended_throne_memory_desc_intro_purchased: "[ROOT.Var('landed_title').Title.GetBaseName]'ı satın aldım" #NT!
- ascended_throne_memory_desc_intro_appointment: "[ROOT.Var('landed_title').Title.GetBaseName]'ı yönetmek üzere atandım" #NT!
- ascended_throne_memory_desc_intro_appointment_succession: "$ascended_throne_memory_desc_intro_appointment$" #NT!
- ascended_throne_memory_desc_intro_stepped_down: "$ascended_throne_memory_desc_intro_appointment$" #NT!
- ascended_throne_memory_desc_intro_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName] kazandınız" #NT!
- ascended_throne_memory_desc_intro_conquest_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName]'ı fethettiniz" #NT!
- ascended_throne_memory_desc_intro_inheritance_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName]'ı miras aldın" #NT!
- ascended_throne_memory_desc_intro_created_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName]'ı sen yarattın" #NT!
- ascended_throne_memory_desc_intro_usurped_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName]'ı gasp ettin" #NT!
- ascended_throne_memory_desc_intro_granted_second_perspective: "Size [ROOT.Var('landed_title').Title.GetBaseName] verildi" #NT!
- ascended_throne_memory_desc_intro_election_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName]'ı yönetmek için seçildiniz" #NT!
- ascended_throne_memory_desc_intro_faction_demand_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName]'ı istedin" #NT!
- ascended_throne_memory_desc_intro_purchased_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName]'ı satın aldınız" #NT!
- ascended_throne_memory_desc_intro_appointment_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName]'ı yönetmek için atandınız" #NT!
- ascended_throne_memory_desc_intro_appointment_succession_second_perspective: "$ascended_throne_memory_desc_intro_appointment_second_perspective$" #NT!
- ascended_throne_memory_desc_intro_stepped_down_second_perspective: "$ascended_throne_memory_desc_intro_appointment_second_perspective$" #NT!
- ascended_throne_memory_desc_intro_third_perspective: "[owner.GetTitledFirstName] [ROOT.Var('landed_title').Title.GetBaseName] kazandı" #NT!
- ascended_throne_memory_desc_intro_conquest_third_perspective: "[owner.GetTitledFirstName] [ROOT.Var('landed_title').Title.GetBaseName]'i fethetti" #NT!
- ascended_throne_memory_desc_intro_inheritance_third_perspective: "[owner.GetTitledFirstName], [ROOT.Var('landed_title').Title.GetBaseName]'i miras aldı" #NT!
- ascended_throne_memory_desc_intro_created_third_perspective: "[owner.GetTitledFirstName] [ROOT.Var('landed_title').Title.GetBaseName]'i yarattı" #NT!
- ascended_throne_memory_desc_intro_usurped_third_perspective: "[owner.GetTitledFirstName], [ROOT.Var('landed_title').Title.GetBaseName]'i gasp etti" #NT!
- ascended_throne_memory_desc_intro_granted_third_perspective: "[owner.GetTitledFirstName]'a [ROOT.Var('landed_title').Title.GetBaseName] verildi" #NT!
- ascended_throne_memory_desc_intro_election_third_perspective: "[owner.GetTitledFirstName], [ROOT.Var('landed_title').Title.GetBaseName]'i yönetmek üzere seçildi" #NT!
- ascended_throne_memory_desc_intro_faction_demand_third_perspective: "[owner.GetTitledFirstName], [ROOT.Var('landed_title').Title.GetBaseName]'i talep etti" #NT!
- ascended_throne_memory_desc_intro_purchased_third_perspective: "[owner.GetTitledFirstName] [ROOT.Var('landed_title').Title.GetBaseName]'i satın aldı" #NT!
- ascended_throne_memory_desc_intro_appointment_third_perspective: "[owner.GetTitledFirstName], [ROOT.Var('landed_title').Title.GetBaseName]'i yönetmek üzere atandı" #NT!
- ascended_throne_memory_desc_intro_appointment_succession_third_perspective: "$ascended_throne_memory_desc_intro_appointment_third_perspective$" #NT!
- ascended_throne_memory_desc_intro_stepped_down_third_perspective: "$ascended_throne_memory_desc_intro_appointment_third_perspective$" #NT!
- ascended_throne_memory_desc_conquest: "[flavor_character.GetTitledFirstName]'dan" #NT!
- ascended_throne_memory_desc_conquest_second_perspective: "[flavor_character.GetTitledFirstName]'dan" #NT!
- ascended_throne_memory_desc_conquest_third_perspective: "[flavor_character.GetTitledFirstName]'dan" #NT!
- ascended_throne_memory_desc_conquest_holy_war: "[flavor_character.GetTitledFirstName]'dan kutsal bir savaşta" #NT!
- ascended_throne_memory_desc_conquest_holy_war_second_perspective: "[flavor_character.GetTitledFirstName]'dan kutsal bir savaşta" #NT!
- ascended_throne_memory_desc_conquest_holy_war_third_perspective: "[flavor_character.GetTitledFirstName]'dan kutsal bir savaşta" #NT!
- ascended_throne_memory_desc_conquest_claim: "[flavor_character.GetTitledFirstName]'a karşı iddiamı öne sürerek" #NT!
- ascended_throne_memory_desc_conquest_claim_second_perspective: "iddianızı [flavor_character.GetTitledFirstName]'a karşı ileri sürerek" #NT!
- ascended_throne_memory_desc_conquest_claim_third_perspective: "[flavor_character.GetTitledFirstName]'a karşı iddiamı öne sürerek" #NT!
- ascended_throne_memory_desc_conquest_populist: "[flavor_character.GetTitledFirstName]'a karşı popülist bir isyana öncülük etmek" #NT!
- ascended_throne_memory_desc_conquest_populist_second_perspective: "[flavor_character.GetTitledFirstName]'a karşı popülist bir isyana öncülük ederek" #NT!
- ascended_throne_memory_desc_conquest_populist_third_perspective: "[flavor_character.GetTitledFirstName]'a karşı popülist bir isyana öncülük ederek" #NT!
- ascended_throne_memory_desc_conquest_support: "[flavor_character.GetTitledFirstName]'dan [ROOT.Var('ascended_throne_extra').Char.GetTitledFirstNamePossessive] desteğiyle" #NT!
- ascended_throne_memory_desc_conquest_support_second_perspective: "[flavor_character.GetTitledFirstName]'dan [ROOT.Var('ascended_throne_extra').Char.GetTitledFirstNamePossessive] desteğiyle" #NT!
- ascended_throne_memory_desc_conquest_support_third_perspective: "[flavor_character.GetTitledFirstName]'dan [ROOT.Var('ascended_throne_extra').Char.GetTitledFirstNamePossessive] desteğiyle" #NT!
- ascended_throne_memory_desc_inheritance: "benim [owner.Custom2('RelationToMeShort', flavor_character)], [flavor_character.GetTitledFirstName]'imden" #NT!
- ascended_throne_memory_desc_inheritance_second_perspective: "[owner.Custom2('RelationToMeShort', flavor_character)], [flavor_character.GetTitledFirstName]'inizden" #NT!
- ascended_throne_memory_desc_inheritance_third_perspective: "[owner.GetHerHis] [owner.Custom2('RelationToMeShort', flavor_character)], [flavor_character.GetTitledFirstName]'den" #NT!
- ascended_throne_memory_desc_double: "ve [ROOT.Var('title_count').GetValue] diğer" #NT!
- ascended_throne_memory_desc_multi: "ve [ROOT.Var('title_count').GetValue] diğer" #NT!
- ascended_throne_memory_desc_abdication: "[flavor_character.GetTitledFirstNamePossessive] tahttan indirildikten sonra" #NT!
- ascended_throne_memory_desc_abdication_second_perspective: "[flavor_character.GetTitledFirstNamePossessive] tahttan indirildikten sonra" #NT!
- ascended_throne_memory_desc_abdication_third_perspective: "[flavor_character.GetTitledFirstNamePossessive] tahttan indirildikten sonra" #NT!
- ascended_throne_memory_desc_created_first: "yeni bir başlık olarak" #NT!
- ascended_throne_memory_desc_created_first_second_perspective: "yeni bir başlık olarak" #NT!
- ascended_throne_memory_desc_created_first_third_perspective: "yeni bir başlık olarak" #NT!
- ascended_throne_memory_desc_created: "bir süre kullanılmadıktan sonra" #NT!
- ascended_throne_memory_desc_created_second_perspective: "bir süre kullanılmadıktan sonra" #NT!
- ascended_throne_memory_desc_created_third_perspective: "bir süre kullanılmadıktan sonra" #NT!
- ascended_throne_memory_desc_usurped: "[flavor_character.GetTitledFirstName]'dan" #NT!
- ascended_throne_memory_desc_usurped_second_perspective: "[flavor_character.GetTitledFirstName]'dan" #NT!
- ascended_throne_memory_desc_usurped_third_perspective: "[flavor_character.GetTitledFirstName]'dan" #NT!
- ascended_throne_memory_desc_granted: "[flavor_character.GetTitledFirstName] tarafından" #NT!
- ascended_throne_memory_desc_granted_second_perspective: "[flavor_character.GetTitledFirstName] tarafından" #NT!
- ascended_throne_memory_desc_granted_third_perspective: "[flavor_character.GetTitledFirstName] tarafından" #NT!
- ascended_throne_memory_desc_election: "[flavor_character.GetTitledFirstNamePossessive] halefi olarak" #NT!
- ascended_throne_memory_desc_election_second_perspective: "[flavor_character.GetTitledFirstNamePossessive] halefi olarak" #NT!
- ascended_throne_memory_desc_election_third_perspective: "[flavor_character.GetTitledFirstNamePossessive] halefi olarak" #NT!
- ascended_throne_memory_desc_faction_demand: "[flavor_character.GetTitledFirstNamePossessive]'dan" #NT!
- ascended_throne_memory_desc_faction_demand_second_perspective: "[flavor_character.GetTitledFirstNamePossessive]'dan" #NT!
- ascended_throne_memory_desc_faction_demand_third_perspective: "[flavor_character.GetTitledFirstNamePossessive]'dan" #NT!
- ascended_throne_memory_desc_purchased: "[flavor_character.GetTitledFirstName]'dan" #NT!
- ascended_throne_memory_desc_purchased_second_perspective: "[flavor_character.GetTitledFirstName]'dan" #NT!
- ascended_throne_memory_desc_purchased_third_perspective: "[flavor_character.GetTitledFirstName]'dan" #NT!
- ascended_throne_memory_desc_negotiated: "[flavor_character.GetTitledFirstName] ile müzakereden sonra" #NT!
- ascended_throne_memory_desc_negotiated_second_perspective: "[flavor_character.GetTitledFirstName] ile müzakereden sonra" #NT!
- ascended_throne_memory_desc_negotiated_third_perspective: "[flavor_character.GetTitledFirstName] ile müzakereden sonra" #NT!
- ascended_throne_memory_desc_seize_realm: "[flavor_character.GetTitledFirstNamePossessive] diyarını ele geçirerek" #NT!
- ascended_throne_memory_desc_seize_realm_second_perspective: "[flavor_character.GetTitledFirstNamePossessive] diyarını ele geçirerek" #NT!
- ascended_throne_memory_desc_seize_realm_third_perspective: "[flavor_character.GetTitledFirstNamePossessive] diyarını ele geçirerek" #NT!
- ascended_throne_memory_desc_appointment: "[flavor_character.GetTitledFirstNameRegnal] tarafından" #NT!
- ascended_throne_memory_desc_appointment_second_perspective: "[flavor_character.GetTitledFirstNameRegnal] tarafından" #NT!
- ascended_throne_memory_desc_appointment_third_perspective: "[flavor_character.GetTitledFirstNameRegnal] tarafından" #NT!
- ascended_throne_memory_desc_appointment_succession: "[flavor_character.GetTitledFirstNamePossessive] sırada" #NT!
- ascended_throne_memory_desc_appointment_succession_second_perspective: "[flavor_character.GetTitledFirstNamePossessive] sırada" #NT!
- ascended_throne_memory_desc_appointment_succession_third_perspective: "[flavor_character.GetTitledFirstNamePossessive] sırada" #NT!
- ascended_throne_memory_desc_stepped_down: "[flavor_character.GetTitledFirstName] istifa ettikten sonra" #NT!
- ascended_throne_memory_desc_stepped_down_second_perspective: "[flavor_character.GetTitledFirstName] istifa ettikten sonra" #NT!
- ascended_throne_memory_desc_stepped_down_third_perspective: "[flavor_character.GetTitledFirstName] istifa ettikten sonra" #NT!
+ ascended_throne_memory_desc_intro: "[ROOT.Var('landed_title').Title.GetBaseName] kazandım"
+ ascended_throne_memory_desc_intro_conquest: "[ROOT.Var('landed_title').Title.GetBaseName]'ı fethettim"
+ ascended_throne_memory_desc_intro_inheritance: "[ROOT.Var('landed_title').Title.GetBaseName]'ı miras aldım"
+ ascended_throne_memory_desc_intro_created: "[ROOT.Var('landed_title').Title.GetBaseName]'ı ben yarattım"
+ ascended_throne_memory_desc_intro_usurped: "[ROOT.Var('landed_title').Title.GetBaseName]'ı gasp ettim"
+ ascended_throne_memory_desc_intro_granted: "Bana [ROOT.Var('landed_title').Title.GetBaseName] verildi"
+ ascended_throne_memory_desc_intro_election: "[ROOT.Var('landed_title').Title.GetBaseName]'ı yönetmek için seçildim"
+ ascended_throne_memory_desc_intro_faction_demand: "[ROOT.Var('landed_title').Title.GetBaseName]'ı talep ettim"
+ ascended_throne_memory_desc_intro_purchased: "[ROOT.Var('landed_title').Title.GetBaseName]'ı satın aldım"
+ ascended_throne_memory_desc_intro_appointment: "[ROOT.Var('landed_title').Title.GetBaseName]'ı yönetmek üzere atandım"
+ ascended_throne_memory_desc_intro_appointment_succession: "$ascended_throne_memory_desc_intro_appointment$"
+ ascended_throne_memory_desc_intro_stepped_down: "$ascended_throne_memory_desc_intro_appointment$"
+ ascended_throne_memory_desc_intro_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName] kazandınız"
+ ascended_throne_memory_desc_intro_conquest_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName]'ı fethettiniz"
+ ascended_throne_memory_desc_intro_inheritance_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName]'ı miras aldın"
+ ascended_throne_memory_desc_intro_created_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName]'ı sen yarattın"
+ ascended_throne_memory_desc_intro_usurped_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName]'ı gasp ettin"
+ ascended_throne_memory_desc_intro_granted_second_perspective: "Size [ROOT.Var('landed_title').Title.GetBaseName] verildi"
+ ascended_throne_memory_desc_intro_election_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName]'ı yönetmek için seçildiniz"
+ ascended_throne_memory_desc_intro_faction_demand_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName]'ı istedin"
+ ascended_throne_memory_desc_intro_purchased_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName]'ı satın aldınız"
+ ascended_throne_memory_desc_intro_appointment_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName]'ı yönetmek için atandınız"
+ ascended_throne_memory_desc_intro_appointment_succession_second_perspective: "$ascended_throne_memory_desc_intro_appointment_second_perspective$"
+ ascended_throne_memory_desc_intro_stepped_down_second_perspective: "$ascended_throne_memory_desc_intro_appointment_second_perspective$"
+ ascended_throne_memory_desc_intro_third_perspective: "[owner.GetTitledFirstName] [ROOT.Var('landed_title').Title.GetBaseName] kazandı"
+ ascended_throne_memory_desc_intro_conquest_third_perspective: "[owner.GetTitledFirstName] [ROOT.Var('landed_title').Title.GetBaseName]'i fethetti"
+ ascended_throne_memory_desc_intro_inheritance_third_perspective: "[owner.GetTitledFirstName], [ROOT.Var('landed_title').Title.GetBaseName]'i miras aldı"
+ ascended_throne_memory_desc_intro_created_third_perspective: "[owner.GetTitledFirstName] [ROOT.Var('landed_title').Title.GetBaseName]'i yarattı"
+ ascended_throne_memory_desc_intro_usurped_third_perspective: "[owner.GetTitledFirstName], [ROOT.Var('landed_title').Title.GetBaseName]'i gasp etti"
+ ascended_throne_memory_desc_intro_granted_third_perspective: "[owner.GetTitledFirstName]'a [ROOT.Var('landed_title').Title.GetBaseName] verildi"
+ ascended_throne_memory_desc_intro_election_third_perspective: "[owner.GetTitledFirstName], [ROOT.Var('landed_title').Title.GetBaseName]'i yönetmek üzere seçildi"
+ ascended_throne_memory_desc_intro_faction_demand_third_perspective: "[owner.GetTitledFirstName], [ROOT.Var('landed_title').Title.GetBaseName]'i talep etti"
+ ascended_throne_memory_desc_intro_purchased_third_perspective: "[owner.GetTitledFirstName] [ROOT.Var('landed_title').Title.GetBaseName]'i satın aldı"
+ ascended_throne_memory_desc_intro_appointment_third_perspective: "[owner.GetTitledFirstName], [ROOT.Var('landed_title').Title.GetBaseName]'i yönetmek üzere atandı"
+ ascended_throne_memory_desc_intro_appointment_succession_third_perspective: "$ascended_throne_memory_desc_intro_appointment_third_perspective$"
+ ascended_throne_memory_desc_intro_stepped_down_third_perspective: "$ascended_throne_memory_desc_intro_appointment_third_perspective$"
+ ascended_throne_memory_desc_conquest: "[flavor_character.GetTitledFirstName]'dan"
+ ascended_throne_memory_desc_conquest_second_perspective: "[flavor_character.GetTitledFirstName]'dan"
+ ascended_throne_memory_desc_conquest_third_perspective: "[flavor_character.GetTitledFirstName]'dan"
+ ascended_throne_memory_desc_conquest_holy_war: "[flavor_character.GetTitledFirstName]'dan kutsal bir savaşta"
+ ascended_throne_memory_desc_conquest_holy_war_second_perspective: "[flavor_character.GetTitledFirstName]'dan kutsal bir savaşta"
+ ascended_throne_memory_desc_conquest_holy_war_third_perspective: "[flavor_character.GetTitledFirstName]'dan kutsal bir savaşta"
+ ascended_throne_memory_desc_conquest_claim: "[flavor_character.GetTitledFirstName]'a karşı iddiamı öne sürerek"
+ ascended_throne_memory_desc_conquest_claim_second_perspective: "iddianızı [flavor_character.GetTitledFirstName]'a karşı ileri sürerek"
+ ascended_throne_memory_desc_conquest_claim_third_perspective: "[flavor_character.GetTitledFirstName]'a karşı iddiamı öne sürerek"
+ ascended_throne_memory_desc_conquest_populist: "[flavor_character.GetTitledFirstName]'a karşı popülist bir isyana öncülük etmek"
+ ascended_throne_memory_desc_conquest_populist_second_perspective: "[flavor_character.GetTitledFirstName]'a karşı popülist bir isyana öncülük ederek"
+ ascended_throne_memory_desc_conquest_populist_third_perspective: "[flavor_character.GetTitledFirstName]'a karşı popülist bir isyana öncülük ederek"
+ ascended_throne_memory_desc_conquest_support: "[flavor_character.GetTitledFirstName]'dan [ROOT.Var('ascended_throne_extra').Char.GetTitledFirstNamePossessive] desteğiyle"
+ ascended_throne_memory_desc_conquest_support_second_perspective: "[flavor_character.GetTitledFirstName]'dan [ROOT.Var('ascended_throne_extra').Char.GetTitledFirstNamePossessive] desteğiyle"
+ ascended_throne_memory_desc_conquest_support_third_perspective: "[flavor_character.GetTitledFirstName]'dan [ROOT.Var('ascended_throne_extra').Char.GetTitledFirstNamePossessive] desteğiyle"
+ ascended_throne_memory_desc_inheritance: "benim [owner.Custom2('RelationToMeShort', flavor_character)], [flavor_character.GetTitledFirstName]'imden"
+ ascended_throne_memory_desc_inheritance_second_perspective: "[owner.Custom2('RelationToMeShort', flavor_character)], [flavor_character.GetTitledFirstName]'inizden"
+ ascended_throne_memory_desc_inheritance_third_perspective: "[owner.GetHerHis] [owner.Custom2('RelationToMeShort', flavor_character)], [flavor_character.GetTitledFirstName]'den"
+ ascended_throne_memory_desc_double: "ve [ROOT.Var('title_count').GetValue] diğer"
+ ascended_throne_memory_desc_multi: "ve [ROOT.Var('title_count').GetValue] diğer"
+ ascended_throne_memory_desc_abdication: "[flavor_character.GetTitledFirstNamePossessive] tahttan indirildikten sonra"
+ ascended_throne_memory_desc_abdication_second_perspective: "[flavor_character.GetTitledFirstNamePossessive] tahttan indirildikten sonra"
+ ascended_throne_memory_desc_abdication_third_perspective: "[flavor_character.GetTitledFirstNamePossessive] tahttan indirildikten sonra"
+ ascended_throne_memory_desc_created_first: "yeni bir başlık olarak"
+ ascended_throne_memory_desc_created_first_second_perspective: "yeni bir başlık olarak"
+ ascended_throne_memory_desc_created_first_third_perspective: "yeni bir başlık olarak"
+ ascended_throne_memory_desc_created: "bir süre kullanılmadıktan sonra"
+ ascended_throne_memory_desc_created_second_perspective: "bir süre kullanılmadıktan sonra"
+ ascended_throne_memory_desc_created_third_perspective: "bir süre kullanılmadıktan sonra"
+ ascended_throne_memory_desc_usurped: "[flavor_character.GetTitledFirstName]'dan"
+ ascended_throne_memory_desc_usurped_second_perspective: "[flavor_character.GetTitledFirstName]'dan"
+ ascended_throne_memory_desc_usurped_third_perspective: "[flavor_character.GetTitledFirstName]'dan"
+ ascended_throne_memory_desc_granted: "[flavor_character.GetTitledFirstName] tarafından"
+ ascended_throne_memory_desc_granted_second_perspective: "[flavor_character.GetTitledFirstName] tarafından"
+ ascended_throne_memory_desc_granted_third_perspective: "[flavor_character.GetTitledFirstName] tarafından"
+ ascended_throne_memory_desc_election: "[flavor_character.GetTitledFirstNamePossessive] halefi olarak"
+ ascended_throne_memory_desc_election_second_perspective: "[flavor_character.GetTitledFirstNamePossessive] halefi olarak"
+ ascended_throne_memory_desc_election_third_perspective: "[flavor_character.GetTitledFirstNamePossessive] halefi olarak"
+ ascended_throne_memory_desc_faction_demand: "[flavor_character.GetTitledFirstNamePossessive]'dan"
+ ascended_throne_memory_desc_faction_demand_second_perspective: "[flavor_character.GetTitledFirstNamePossessive]'dan"
+ ascended_throne_memory_desc_faction_demand_third_perspective: "[flavor_character.GetTitledFirstNamePossessive]'dan"
+ ascended_throne_memory_desc_purchased: "[flavor_character.GetTitledFirstName]'dan"
+ ascended_throne_memory_desc_purchased_second_perspective: "[flavor_character.GetTitledFirstName]'dan"
+ ascended_throne_memory_desc_purchased_third_perspective: "[flavor_character.GetTitledFirstName]'dan"
+ ascended_throne_memory_desc_negotiated: "[flavor_character.GetTitledFirstName] ile müzakereden sonra"
+ ascended_throne_memory_desc_negotiated_second_perspective: "[flavor_character.GetTitledFirstName] ile müzakereden sonra"
+ ascended_throne_memory_desc_negotiated_third_perspective: "[flavor_character.GetTitledFirstName] ile müzakereden sonra"
+ ascended_throne_memory_desc_seize_realm: "[flavor_character.GetTitledFirstNamePossessive] diyarını ele geçirerek"
+ ascended_throne_memory_desc_seize_realm_second_perspective: "[flavor_character.GetTitledFirstNamePossessive] diyarını ele geçirerek"
+ ascended_throne_memory_desc_seize_realm_third_perspective: "[flavor_character.GetTitledFirstNamePossessive] diyarını ele geçirerek"
+ ascended_throne_memory_desc_appointment: "[flavor_character.GetTitledFirstNameRegnal] tarafından"
+ ascended_throne_memory_desc_appointment_second_perspective: "[flavor_character.GetTitledFirstNameRegnal] tarafından"
+ ascended_throne_memory_desc_appointment_third_perspective: "[flavor_character.GetTitledFirstNameRegnal] tarafından"
+ ascended_throne_memory_desc_appointment_succession: "[flavor_character.GetTitledFirstNamePossessive] sırada"
+ ascended_throne_memory_desc_appointment_succession_second_perspective: "[flavor_character.GetTitledFirstNamePossessive] sırada"
+ ascended_throne_memory_desc_appointment_succession_third_perspective: "[flavor_character.GetTitledFirstNamePossessive] sırada"
+ ascended_throne_memory_desc_stepped_down: "[flavor_character.GetTitledFirstName] istifa ettikten sonra"
+ ascended_throne_memory_desc_stepped_down_second_perspective: "[flavor_character.GetTitledFirstName] istifa ettikten sonra"
+ ascended_throne_memory_desc_stepped_down_third_perspective: "[flavor_character.GetTitledFirstName] istifa ettikten sonra"
   
  lost_title_memory: "önemli unvan kaybedildi"
  lost_title_memory_desc: "[ROOT.Var('landed_title').Title.GetBaseName] unvanını [new_holder.GetFullName] adlı kişiye kaptırdım"
  lost_title_memory_desc_second_perspective: "[ROOT.Var('landed_title').Title.GetBaseName] unvanını [new_holder.GetFullName] adlı kişiye kaptırdınız"
  lost_title_memory_desc_third_perspective: "[owner.GetFirstName], [ROOT.Var('landed_title').Title.GetBaseName] unvanını [new_holder.GetFullName] adlı kişiye kaptırdı"
- lost_title_memory_desc_double: "ve [ROOT.Var('title_count').GetValue] diğer başlık" #NT!
- lost_title_memory_desc_multi: "ve [ROOT.Var('title_count').GetValue] diğer başlıklar" #NT!
- lost_title_memory_ending: "[new_holder.GetFullName]'a" #NT!
+ lost_title_memory_desc_double: "ve [ROOT.Var('title_count').GetValue] diğer başlık"
+ lost_title_memory_desc_multi: "ve [ROOT.Var('title_count').GetValue] diğer başlıklar"
+ lost_title_memory_ending: "[new_holder.GetFullName]'a"
   
   # Debug Interaction Title 
  give_memories_interaction: "Anı Ver"
@@ -760,20 +760,20 @@
  twins_born_desc_third_perspective_bastard: "[owner.GetName] [child.GetMother.GetFirstName] ile olan evlilik dışı ilişkisinden [child.GetFirstName] ve [child_2.GetFirstName] isminde ikiz çocuk sahibi oldu"
  twins_born_desc_third_perspective_1: "[owner.GetName] [child.GetMother.GetFirstName] ile olan ilişkisinden [child.GetFirstName] ve [child_2.GetFirstName] isminde ikiz çocuk sahibi oldu"
   
- child_stillborn: "ölü doğan çocuk" #NT!
- child_stillborn_desc_1_mother: "Ölü bir bebek doğurdum" #NT!
- child_stillborn_desc_1: "[owner.Custom2('RelationToMeShort', SCOPE.sC('mother'))], [mother.GetFirstName]'im ölü doğum yaptı" #NT!
- child_stillborn_desc_second_perspective_1_mother: "Ölü bir bebek doğurdun" #NT!
- child_stillborn_desc_second_perspective_1: "[owner.Custom2('RelationToMeShort', SCOPE.sC('mother'))], [mother.GetFirstName]'iniz ölü bir bebek doğurdu" #NT!
- child_stillborn_desc_third_perspective_1_mother: "[mother.GetName] ölü doğum yaptı" #NT!
- child_stillborn_desc_third_perspective_1: "[owner.GetNamePossessive] [owner.Custom2('RelationToMeShort', SCOPE.sC('mother'))], [mother.GetFirstName], ölü doğum yaptı" #NT!
- child_premature: "erken doğan çocuk" #NT!
- child_premature_desc_1_mother: "Hamileliğim erken sona erdi" #NT!
- child_premature_desc_1: "[owner.Custom2('RelationToMeShort', SCOPE.sC('mother'))], [mother.GetFirstNamePossessive] hamileliğim erken sona erdi" #NT!
- child_premature_desc_second_perspective_1_mother: "Hamileliğiniz erken sona erdi" #NT!
- child_premature_desc_second_perspective_1: "[owner.Custom2('RelationToMeShort', SCOPE.sC('mother'))], [mother.GetFirstNamePossessive], hamileliğiniz erken sona erdi" #NT!
- child_premature_desc_third_perspective_1_mother: "[owner.GetNamePossessive] gebelik erken sona erdi" #NT!
- child_premature_desc_third_perspective_1: "[owner.GetNamePossessive] [owner.Custom2('RelationToMeShort', SCOPE.sC('mother'))], [mother.GetFirstNamePossessive], gebelik erken sona erdi" #NT!
+ child_stillborn: "ölü doğan çocuk"
+ child_stillborn_desc_1_mother: "Ölü bir bebek doğurdum"
+ child_stillborn_desc_1: "[owner.Custom2('RelationToMeShort', SCOPE.sC('mother'))], [mother.GetFirstName]'im ölü doğum yaptı"
+ child_stillborn_desc_second_perspective_1_mother: "Ölü bir bebek doğurdun"
+ child_stillborn_desc_second_perspective_1: "[owner.Custom2('RelationToMeShort', SCOPE.sC('mother'))], [mother.GetFirstName]'iniz ölü bir bebek doğurdu"
+ child_stillborn_desc_third_perspective_1_mother: "[mother.GetName] ölü doğum yaptı"
+ child_stillborn_desc_third_perspective_1: "[owner.GetNamePossessive] [owner.Custom2('RelationToMeShort', SCOPE.sC('mother'))], [mother.GetFirstName], ölü doğum yaptı"
+ child_premature: "erken doğan çocuk"
+ child_premature_desc_1_mother: "Hamileliğim erken sona erdi"
+ child_premature_desc_1: "[owner.Custom2('RelationToMeShort', SCOPE.sC('mother'))], [mother.GetFirstNamePossessive] hamileliğim erken sona erdi"
+ child_premature_desc_second_perspective_1_mother: "Hamileliğiniz erken sona erdi"
+ child_premature_desc_second_perspective_1: "[owner.Custom2('RelationToMeShort', SCOPE.sC('mother'))], [mother.GetFirstNamePossessive], hamileliğiniz erken sona erdi"
+ child_premature_desc_third_perspective_1_mother: "[owner.GetNamePossessive] gebelik erken sona erdi"
+ child_premature_desc_third_perspective_1: "[owner.GetNamePossessive] [owner.Custom2('RelationToMeShort', SCOPE.sC('mother'))], [mother.GetFirstNamePossessive], gebelik erken sona erdi"
   
  feral_child_found_memory: "vahşi çocuk bulundu"
  feral_child_found_memory_desc: "[feral_child.GetFirstName] adlı vahşi bir çocuk buldum"
@@ -931,7 +931,7 @@
  house_feud_started_family_broken_grand_wedding: "[owner.Custom2('RelationToMePossessive', SCOPE.sC('victim'))] [victim.GetFirstName] ile [attacker.GetFirstName] arasındaki nişan bozuldu"
  house_feud_started_murder_feast: "[attacker.GetFirstName] tarafından düzenlenen bir ziyafette [owner.Custom2('RelationToMePossessive', SCOPE.sC('victim'))] [victim.GetFirstName] vahşice öldürüldü"
  house_feud_started_bloody_wedding: "[attacker.GetFirstName], [owner.Custom2('RelationToMePossessive', SCOPE.sC('victim'))] [victim.GetFirstName] için düzenlenen düğünde onu korumayı başaramadı"
- house_feud_started_raid_estate: "mülküm [attacker.GetFirstName] tarafından basıldı" #NT!
+ house_feud_started_raid_estate: "mülküm [attacker.GetFirstName] tarafından basıldı"
   
  house_feud_started_memory_desc_second_perspective: "[house_head.GetHouse.GetBaseName] hanesinden [house_head.GetTitledFirstName] ile aranızda kan davası başladı çünkü"
  house_feud_started_head_rivalry_second_perspective: "onunla olan rekabetiniz çığrından çıktı"
@@ -954,7 +954,7 @@
  house_feud_started_family_broken_grand_wedding_second_perspective: "majestelerinin [owner.Custom2('RelationToMeShort', SCOPE.sC('victim'))] [victim.GetFirstName] ile [attacker.GetFirstName] arasındaki nişan bozuldu"
  house_feud_started_murder_feast_second_perspective: "[attacker.GetFirstName] tarafından düzenlenen bir ziyafette majestelerinin [owner.Custom2('RelationToMeShort', SCOPE.sC('victim'))] [victim.GetFirstName] vahşice öldürüldü"
  house_feud_started_bloody_wedding_second_perspective: "[attacker.GetFirstName], [owner.Custom2('RelationToMeShort', SCOPE.sC('victim'))] [victim.GetFirstName] için düzenlenen düğünde onu korumayı başaramadı"
- house_feud_started_raid_estate_second_perspective: "mülkünüz [attacker.GetFirstName] tarafından basıldı" #NT!
+ house_feud_started_raid_estate_second_perspective: "mülkünüz [attacker.GetFirstName] tarafından basıldı"
   
  house_feud_started_memory_desc_third_perspective: "[owner.GetTitledFirstName] ile [house_head.GetHouse.GetBaseName] hanesinden [house_head.GetTitledFirstName] ile aralarında kan davası başladı çünkü"
  house_feud_started_head_rivalry_third_perspective: "onunla olan rekabeti çığrından çıktı"
@@ -977,7 +977,7 @@
  house_feud_started_family_broken_grand_wedding_third_perspective: "[owner.Custom2('RelationToMeShort', SCOPE.sC('victim'))], [victim.GetFirstNamePossessive] ile [attacker.GetFirstName] arasındaki nişan bozuldu"
  house_feud_started_murder_feast_third_perspective: "[attacker.GetFirstName] tarafından düzenlenen bir ziyafette vahşice öldürüldü"
  house_feud_started_bloody_wedding_third_perspective: "[attacker.GetFirstName], [owner.GetFirstName] için düğüne gelen aile üyelerini koruyamadı"
- house_feud_started_raid_estate_third_perspective: "[victim.GetFirstNamePossessive] mülkü [attacker.GetFirstName] tarafından basıldı" #NT!
+ house_feud_started_raid_estate_third_perspective: "[victim.GetFirstNamePossessive] mülkü [attacker.GetFirstName] tarafından basıldı"
   
  house_feud_ended_memory: "Kan Davası Sona Erdi"
  house_feud_ended_memory_desc: "ailemin [house_head.GetHouse.GetBaseName] Hanesi ile olan kan davasına son verdim"
@@ -1170,11 +1170,11 @@
   
  childhood_education_guardian: "Çocuk Eğitimi"
  childhood_education_guardian_desc: "vasim [guardian.GetTitledFirstName] ve [ROOT.Var('education_realm').Title.GetNameNoTier] sarayı nihayet beni yetişkin bir [Select_CString(owner.IsFemale, 'kadın', 'erkek' )]olarak görmeye başladı"
- childhood_education_guardian_landless_desc: "koruyucum [guardian.GetTitledFirstName], sonunda beni tam yetişkin [owner.GetWomanMan] olarak kabul etti" #NT!
+ childhood_education_guardian_landless_desc: "koruyucum [guardian.GetTitledFirstName], sonunda beni tam yetişkin [owner.GetWomanMan] olarak kabul etti"
  childhood_education_guardian_desc_second_perspective: "vasiniz [guardian.GetTitledFirstName] ve [ROOT.Var('education_realm').Title.GetNameNoTier] sarayı nihayet sizi yetişkin bir [Select_CString(owner.IsFemale, 'kadın', 'erkek' )] olarak görmeye başladı"
- childhood_education_guardian_landless_desc_second_perspective: "koruyucum [guardian.GetTitledFirstName], sonunda beni tam yetişkin [owner.GetWomanMan] olarak kabul etti" #NT!
+ childhood_education_guardian_landless_desc_second_perspective: "koruyucum [guardian.GetTitledFirstName], sonunda beni tam yetişkin [owner.GetWomanMan] olarak kabul etti"
  childhood_education_guardian_desc_third_perspective: "[owner.GetTitledFirstNamePossessive] vasisi [guardian.GetTitledFirstName] ve [ROOT.Var('education_realm').Title.GetNameNoTier] sarayı nihayet kendisini yetişkin bir [Select_CString(owner.IsFemale, 'kadın', 'erkek' )] olarak görmeye başladı"
- childhood_education_guardian_landless_desc_third_perspective: "[owner.GetTitledFirstNamePossessive] koruyucusu, [guardian.GetTitledFirstName], sonunda [owner.GetHerHim]'yi tam yetişkin [owner.GetWomanMan] olarak kabul etti" #NT!
+ childhood_education_guardian_landless_desc_third_perspective: "[owner.GetTitledFirstNamePossessive] koruyucusu, [guardian.GetTitledFirstName], sonunda [owner.GetHerHim]'yi tam yetişkin [owner.GetWomanMan] olarak kabul etti"
   
  childhood_education_no_guardian: "Çocuk Eğitimi"
  childhood_education_no_guardian_desc: "tüm [ROOT.Var('education_realm').Title.GetNameNoTier] sarayı nihayet beni yetişkin bir [Select_CString(owner.IsFemale, 'kadın', 'erkek' )] olarak görmeye başladı"
@@ -1248,7 +1248,7 @@
   
  ward_returned_home_title: "Eğitim Tamamlandı"
   #AGOT Modified, vanilla error 
- #ward_returned_home_desc_guardian: "[ward.GetTitledFirstName], [ward.GetHerHis] eğitimden [guardian.GetTitledFirstName]'den [ realm.GetNameNoTier]'e döndü" #NT!
+ #ward_returned_home_desc_guardian: "[ward.GetTitledFirstName], [ward.GetHerHis] eğitimden [guardian.GetTitledFirstName]'den [ realm.GetNameNoTier]'e döndü"
  ward_returned_home_desc_guardian: "[ward.GetTitledFirstName], [realm.GetNameNoTier] topraklarında [guardian.GetTitledFirstName] tarafından aldığı eğitimi tamamladı"
  ward_returned_home_desc: "[ward.GetTitledFirstName] yurtdışındaki eğitimini tamamlayarak geri döndü"
  guardian_returned_home_title: "$ward_returned_home_title$"
@@ -1286,99 +1286,99 @@
  ce1_contracted_epidemic_desc_second_perspective: "[ROOT.Var('epidemic_infected').Trait.GetNameNoTooltip( GetNullCharacter )] hastalığına yakalandınız"
  ce1_contracted_epidemic_desc_third_perspective: "[owner.GetTitledFirstName], [ROOT.Var('epidemic_infected').Trait.GetNameNoTooltip( GetNullCharacter )] hastalığına yakalandı"
   #AGOT Modified 
- #ce1_contracted_black_death: "Kara Ölüm'e yakalandı" #NT!
+ #ce1_contracted_black_death: "Kara Ölüm'e yakalandı"
  ce1_contracted_black_death: "Büyük Bahar Hastalığına Yakalandı"
  ce1_contracted_black_death_desc: "[GetTrait('bubonic_plague').GetNameNoTooltip( GetNullCharacter )] hastalığına yakalandım"
  ce1_contracted_black_death_desc_second_perspective: "[GetTrait('bubonic_plague').GetNameNoTooltip( GetNullCharacter )] hastalığına yakalandınız"
  ce1_contracted_black_death_desc_third_perspective: "[owner.GetTitledFirstName], [GetTrait('bubonic_plague').GetNameNoTooltip( GetNullCharacter )] hastalığına yakalandı"
   
- byz_held_triumph: "Zafer" #NT!
- byz_held_triumph_desc: "[ROOT.Var('triumph_location').GetProvince.GetNameNoTier]'da bir imparatorluk zaferi düzenledim" #NT!
- byz_held_triumph_desc_second_perspective: "[ROOT.Var('triumph_location').GetProvince.GetNameNoTier]'da imparatorluk zaferi düzenlediniz" #NT!
- byz_held_triumph_desc_third_perspective: "[owner.GetTitledFirstName], [ROOT.Var('triumph_location').GetProvince.GetNameNoTier]'de imparatorluk zaferi düzenledi" #NT!
- byz_theodosian_border_memory: "Theodosian Sınırları Yeniden Düzenlendi" #NT!
- byz_theodosian_border_memory_desc: "Theodosius'un Doğu İmparatorluğunun sınırlarını yeniden belirledim" #NT!
- byz_theodosian_border_memory_desc_second_perspective: "Theodosius'un Doğu İmparatorluğunun sınırlarını yeniden tesis ettin" #NT!
- byz_theodosian_border_memory_desc_third_perspective: "[owner.GetTitledFirstName] Theodosius'un Doğu İmparatorluğunun sınırlarını yeniden belirledi" #NT!
- refounded_pandidakterion_memory: "Pandidakterion'u yeniden kurdu" #NT!
- refounded_pandidakterion_memory_desc: "Konstantinopolis Üniversitesi'ni, Pandidakterion'u yeniden kurdum" #NT!
- refounded_pandidakterion_memory_desc_second_perspective: "Konstantinopolis Üniversitesi'ni, Pandidakterion'u yeniden kurdun" #NT!
- refounded_pandidakterion_memory_desc_third_perspective: "[owner.GetTitledFirstName] Konstantinopolis Üniversitesi'ni yeniden kurdu, Pandidakterion" #NT!
- western_help_pope: "Kutsal bir savaş kışkırttı" #NT!
- western_help_pope_desc: "[pope.GetTitledFirstName]'dan [enemy.GetTitledFirstName]'e karşı Kutsal Savaş çağrısı şeklinde yardım aldım" #NT!
- western_help_pope_desc_second_perspective: "[pope.GetTitledFirstName]'dan [enemy.GetTitledFirstName]'e karşı Kutsal Savaş çağrısı şeklinde yardım aldınız" #NT!
- western_help_pope_desc_third_perspective: "[owner.GetTitledFirstName], [pope.GetTitledFirstName]'den [enemy.GetTitledFirstName]'ye karşı Kutsal Savaş çağrısı şeklinde yardım aldı" #NT!
- western_help_ally: "Yardım Alındı" #NT!
- western_help_ally_desc: "[enemy.GetTitledFirstName]'e karşı verdiğim savaşta [ally.GetTitledFirstName]'dan askeri yardım aldım" #NT!
- western_help_ally_desc_second_perspective: "[enemy.GetTitledFirstName]'e karşı savaşınızda [ally.GetTitledFirstName]'dan askeri yardım aldınız" #NT!
- western_help_ally_desc_third_perspective: "[owner.GetTitledFirstName], [ally.GetTitledFirstName]'den [owner.GetHerHis]'ye karşı [enemy.GetTitledFirstName] savaşında askeri yardım aldı" #NT!
- evangelized_memory: "Başarılı Dönüşüm" #NT!
- evangelized_memory_desc: "Misyonerim [missionary.GetTitledFirstName] [pagan.GetTitledFirstName]'i [missionary.GetFaith.GetNameNoTooltip]'ye dönüştürdü" #NT!
- evangelized_memory_desc_second_perspective: "misyoneriniz [missionary.GetTitledFirstName] [pagan.GetTitledFirstName]'i [missionary.GetFaith.GetNameNoTooltip]'ye dönüştürdü" #NT!
- evangelized_memory_desc_third_perspective: "[owner.GetTitledFirstNamePossessive] misyoner [missionary.GetTitledFirstName] dönüştürülmüş [pagan.GetTitledFirstName] ila [missionary.GetFaith.GetNameNoTooltip]" #NT!
- was_evangelized_memory: "Dönüşüm" #NT!
- was_evangelized_memory_desc: "[sender.GetTitledFirstNamePossessive] misyoner tarafından [missionary.GetFaith.GetNameNoTooltip]'a dönüştürüldüm, [missionary.GetTitledFirstName]" #NT!
- was_evangelized_memory_desc_second_perspective: "[sender.GetTitledFirstNamePossessive] misyoner tarafından [missionary.GetFaith.GetNameNoTooltip]'a dönüştürüldünüz, [missionary.GetTitledFirstName]" #NT!
- was_evangelized_memory_desc_third_perspective: "[owner.GetTitledFirstName], [sender.GetTitledFirstNamePossessive] misyoneri tarafından [missionary.GetFaith.GetNameNoTooltip]'e dönüştürüldü, [missionary.GetTitledFirstName]" #NT!
- reformed_ere_memory: "Yeniden yaratıldı [GetTitleByKey('e_byzantium').GetName]" #NT!
- reformed_ere_memory_desc: "[GetTitleByKey('e_byzantium').GetName]'ı parçalandıktan sonra yeniden yarattım" #NT!
- reformed_ere_memory_desc_second_perspective: "[GetTitleByKey('e_byzantium').GetName]'ı parçalandıktan sonra yeniden yarattın" #NT!
- reformed_ere_memory_desc_third_perspective: "[owner.GetTitledFirstName] parçalanmasından sonra [GetTitleByKey('e_byzantium').GetName] yeniden yaratıldı" #NT!
- found_varangian_memory: "Varangian Muhafızlarını kurdu" #NT!
- found_varangian_memory_desc: "Varangian Muhafızlarını kurdum" #NT!
- found_varangian_memory_desc_second_perspective: "Varangian Muhafızlarını kurdun" #NT!
- found_varangian_memory_desc_third_perspective: "[owner.GetTitledFirstName] Varangian Muhafızlarını kurdu" #NT!
- grain_dole_memory: "İstanbul'da Tahıl Yardımı'nı yeniden kurdu" #NT!
- grain_dole_memory_desc: "Tahıl Yardımını Konstantinopolis'te yeniden kurdum" #NT!
- grain_dole_memory_desc_second_perspective: "Konstantinopolis'te Tahıl Yardımını yeniden kurdunuz" #NT!
- grain_dole_memory_desc_third_perspective: "[owner.GetTitledFirstName] Konstantinopolis'te Tahıl Yardımı'nı yeniden kurdu" #NT!
+ byz_held_triumph: "Zafer"
+ byz_held_triumph_desc: "[ROOT.Var('triumph_location').GetProvince.GetNameNoTier]'da bir imparatorluk zaferi düzenledim"
+ byz_held_triumph_desc_second_perspective: "[ROOT.Var('triumph_location').GetProvince.GetNameNoTier]'da imparatorluk zaferi düzenlediniz"
+ byz_held_triumph_desc_third_perspective: "[owner.GetTitledFirstName], [ROOT.Var('triumph_location').GetProvince.GetNameNoTier]'de imparatorluk zaferi düzenledi"
+ byz_theodosian_border_memory: "Theodosian Sınırları Yeniden Düzenlendi"
+ byz_theodosian_border_memory_desc: "Theodosius'un Doğu İmparatorluğunun sınırlarını yeniden belirledim"
+ byz_theodosian_border_memory_desc_second_perspective: "Theodosius'un Doğu İmparatorluğunun sınırlarını yeniden tesis ettin"
+ byz_theodosian_border_memory_desc_third_perspective: "[owner.GetTitledFirstName] Theodosius'un Doğu İmparatorluğunun sınırlarını yeniden belirledi"
+ refounded_pandidakterion_memory: "Pandidakterion'u yeniden kurdu"
+ refounded_pandidakterion_memory_desc: "Konstantinopolis Üniversitesi'ni, Pandidakterion'u yeniden kurdum"
+ refounded_pandidakterion_memory_desc_second_perspective: "Konstantinopolis Üniversitesi'ni, Pandidakterion'u yeniden kurdun"
+ refounded_pandidakterion_memory_desc_third_perspective: "[owner.GetTitledFirstName] Konstantinopolis Üniversitesi'ni yeniden kurdu, Pandidakterion"
+ western_help_pope: "Kutsal bir savaş kışkırttı"
+ western_help_pope_desc: "[pope.GetTitledFirstName]'dan [enemy.GetTitledFirstName]'e karşı Kutsal Savaş çağrısı şeklinde yardım aldım"
+ western_help_pope_desc_second_perspective: "[pope.GetTitledFirstName]'dan [enemy.GetTitledFirstName]'e karşı Kutsal Savaş çağrısı şeklinde yardım aldınız"
+ western_help_pope_desc_third_perspective: "[owner.GetTitledFirstName], [pope.GetTitledFirstName]'den [enemy.GetTitledFirstName]'ye karşı Kutsal Savaş çağrısı şeklinde yardım aldı"
+ western_help_ally: "Yardım Alındı"
+ western_help_ally_desc: "[enemy.GetTitledFirstName]'e karşı verdiğim savaşta [ally.GetTitledFirstName]'dan askeri yardım aldım"
+ western_help_ally_desc_second_perspective: "[enemy.GetTitledFirstName]'e karşı savaşınızda [ally.GetTitledFirstName]'dan askeri yardım aldınız"
+ western_help_ally_desc_third_perspective: "[owner.GetTitledFirstName], [ally.GetTitledFirstName]'den [owner.GetHerHis]'ye karşı [enemy.GetTitledFirstName] savaşında askeri yardım aldı"
+ evangelized_memory: "Başarılı Dönüşüm"
+ evangelized_memory_desc: "Misyonerim [missionary.GetTitledFirstName] [pagan.GetTitledFirstName]'i [missionary.GetFaith.GetNameNoTooltip]'ye dönüştürdü"
+ evangelized_memory_desc_second_perspective: "misyoneriniz [missionary.GetTitledFirstName] [pagan.GetTitledFirstName]'i [missionary.GetFaith.GetNameNoTooltip]'ye dönüştürdü"
+ evangelized_memory_desc_third_perspective: "[owner.GetTitledFirstNamePossessive] misyoner [missionary.GetTitledFirstName] dönüştürülmüş [pagan.GetTitledFirstName] ila [missionary.GetFaith.GetNameNoTooltip]"
+ was_evangelized_memory: "Dönüşüm"
+ was_evangelized_memory_desc: "[sender.GetTitledFirstNamePossessive] misyoner tarafından [missionary.GetFaith.GetNameNoTooltip]'a dönüştürüldüm, [missionary.GetTitledFirstName]"
+ was_evangelized_memory_desc_second_perspective: "[sender.GetTitledFirstNamePossessive] misyoner tarafından [missionary.GetFaith.GetNameNoTooltip]'a dönüştürüldünüz, [missionary.GetTitledFirstName]"
+ was_evangelized_memory_desc_third_perspective: "[owner.GetTitledFirstName], [sender.GetTitledFirstNamePossessive] misyoneri tarafından [missionary.GetFaith.GetNameNoTooltip]'e dönüştürüldü, [missionary.GetTitledFirstName]"
+ reformed_ere_memory: "Yeniden yaratıldı [GetTitleByKey('e_byzantium').GetName]"
+ reformed_ere_memory_desc: "[GetTitleByKey('e_byzantium').GetName]'ı parçalandıktan sonra yeniden yarattım"
+ reformed_ere_memory_desc_second_perspective: "[GetTitleByKey('e_byzantium').GetName]'ı parçalandıktan sonra yeniden yarattın"
+ reformed_ere_memory_desc_third_perspective: "[owner.GetTitledFirstName] parçalanmasından sonra [GetTitleByKey('e_byzantium').GetName] yeniden yaratıldı"
+ found_varangian_memory: "Varangian Muhafızlarını kurdu"
+ found_varangian_memory_desc: "Varangian Muhafızlarını kurdum"
+ found_varangian_memory_desc_second_perspective: "Varangian Muhafızlarını kurdun"
+ found_varangian_memory_desc_third_perspective: "[owner.GetTitledFirstName] Varangian Muhafızlarını kurdu"
+ grain_dole_memory: "İstanbul'da Tahıl Yardımı'nı yeniden kurdu"
+ grain_dole_memory_desc: "Tahıl Yardımını Konstantinopolis'te yeniden kurdum"
+ grain_dole_memory_desc_second_perspective: "Konstantinopolis'te Tahıl Yardımını yeniden kurdunuz"
+ grain_dole_memory_desc_third_perspective: "[owner.GetTitledFirstName] Konstantinopolis'te Tahıl Yardımı'nı yeniden kurdu"
   
- seized_realm_memory: "Ele geçirilen diyar" #NT!
- seized_realm_memory_desc: "[deposed.GetTitledFirstNameRegnal]'den [ROOT.Var('realm').GetLandedTitle.GetName]'ı aldım" #NT!
- seized_realm_memory_desc_second_perspective: "[deposed.GetTitledFirstNameRegnal]e'den [ROOT.Var('realm').GetLandedTitle.GetName]'ı aldın" #NT!
- seized_realm_memory_desc_third_perspective: "[owner.GetTitledFirstName], [ROOT.Var('realm').GetLandedTitle.GetName]'i [deposed.GetTitledFirstNameRegnal]'den ele geçirdi" #NT!
- realm_seized_memory: "Ele geçirilen krallık" #NT!
- realm_seized_memory_desc: "[deposer.GetTitledFirstNameRegnal] benden [ROOT.Var('realm').GetLandedTitle.GetName]'i aldı" #NT!
- realm_seized_memory_desc_second_perspective: "[deposer.GetTitledFirstNameRegnal] senden [ROOT.Var('realm').GetLandedTitle.GetName]'i aldı" #NT!
- realm_seized_memory_desc_third_perspective: "[deposer.GetTitledFirstNameRegnal], [ROOT.Var('realm').GetLandedTitle.GetName]'i [owner.GetShortUIName]'den ele geçirdi" #NT!
- seized_realm_failed_memory: "Krallığı Ele Geçirmek Başarısız Oldu" #NT!
- seized_realm_failed_memory_desc: "[deposed.GetTitledFirstNameRegnal]'den [ROOT.Var('realm').GetLandedTitle.GetName]'ı ele geçirme girişimim başarısız oldu" #NT!
- seized_realm_failed_memory_desc_second_perspective: "[deposed.GetTitledFirstNameRegnal]'den [ROOT.Var('realm').GetLandedTitle.GetName]'ı ele geçirme girişiminizde başarısız oldunuz" #NT!
- seized_realm_failed_memory_desc_third_perspective: "[owner.GetShortUIName|U], [deposed.GetTitledFirstNameRegnal]'ten [ROOT.Var('realm').GetLandedTitle.GetName]'yi ele geçirmeye yönelik [owner.GetHerHis] girişiminde başarısız oldu" #NT!
- realm_seized_failed_memory: "Realm Ele Geçirme Girişimi" #NT!
- realm_seized_failed_memory_desc: "[deposer.GetTitledFirstNameRegnal] benden [ROOT.Var('realm').GetLandedTitle.GetName]'i almaya çalıştı" #NT!
- realm_seized_failed_memory_desc_second_perspective: "[deposer.GetTitledFirstNameRegnal] sizden [ROOT.Var('realm').GetLandedTitle.GetName]'i almaya çalıştı" #NT!
- realm_seized_failed_memory_desc_third_perspective: "[deposer.GetTitledFirstNameRegnal], [ROOT.Var('realm').GetLandedTitle.GetName]'i [owner.GetShortUIName]'den almaya çalıştı" #NT!
+ seized_realm_memory: "Ele geçirilen diyar"
+ seized_realm_memory_desc: "[deposed.GetTitledFirstNameRegnal]'den [ROOT.Var('realm').GetLandedTitle.GetName]'ı aldım"
+ seized_realm_memory_desc_second_perspective: "[deposed.GetTitledFirstNameRegnal]e'den [ROOT.Var('realm').GetLandedTitle.GetName]'ı aldın"
+ seized_realm_memory_desc_third_perspective: "[owner.GetTitledFirstName], [ROOT.Var('realm').GetLandedTitle.GetName]'i [deposed.GetTitledFirstNameRegnal]'den ele geçirdi"
+ realm_seized_memory: "Ele geçirilen krallık"
+ realm_seized_memory_desc: "[deposer.GetTitledFirstNameRegnal] benden [ROOT.Var('realm').GetLandedTitle.GetName]'i aldı"
+ realm_seized_memory_desc_second_perspective: "[deposer.GetTitledFirstNameRegnal] senden [ROOT.Var('realm').GetLandedTitle.GetName]'i aldı"
+ realm_seized_memory_desc_third_perspective: "[deposer.GetTitledFirstNameRegnal], [ROOT.Var('realm').GetLandedTitle.GetName]'i [owner.GetShortUIName]'den ele geçirdi"
+ seized_realm_failed_memory: "Krallığı Ele Geçirmek Başarısız Oldu"
+ seized_realm_failed_memory_desc: "[deposed.GetTitledFirstNameRegnal]'den [ROOT.Var('realm').GetLandedTitle.GetName]'ı ele geçirme girişimim başarısız oldu"
+ seized_realm_failed_memory_desc_second_perspective: "[deposed.GetTitledFirstNameRegnal]'den [ROOT.Var('realm').GetLandedTitle.GetName]'ı ele geçirme girişiminizde başarısız oldunuz"
+ seized_realm_failed_memory_desc_third_perspective: "[owner.GetShortUIName|U], [deposed.GetTitledFirstNameRegnal]'ten [ROOT.Var('realm').GetLandedTitle.GetName]'yi ele geçirmeye yönelik [owner.GetHerHis] girişiminde başarısız oldu"
+ realm_seized_failed_memory: "Realm Ele Geçirme Girişimi"
+ realm_seized_failed_memory_desc: "[deposer.GetTitledFirstNameRegnal] benden [ROOT.Var('realm').GetLandedTitle.GetName]'i almaya çalıştı"
+ realm_seized_failed_memory_desc_second_perspective: "[deposer.GetTitledFirstNameRegnal] sizden [ROOT.Var('realm').GetLandedTitle.GetName]'i almaya çalıştı"
+ realm_seized_failed_memory_desc_third_perspective: "[deposer.GetTitledFirstNameRegnal], [ROOT.Var('realm').GetLandedTitle.GetName]'i [owner.GetShortUIName]'den almaya çalıştı"
   
- frankokratia_installed_byz_claimant_memory: "Kurulmuş Bizans Talep Edeni" #NT!
- frankokratia_installed_byz_claimant_memory_desc: "Haçlı arkadaşlarım ve ben [GetTitleByKey('e_byzantium').GetNameNoTier]'de [claimant.GetTitledFirstNamePossessive] iddiası için başarıyla savaştık" #NT!
- frankokratia_installed_byz_claimant_memory_desc_second_perspective: "siz ve diğer Haçlılar [GetTitleByKey('e_byzantium').GetNameNoTier]'de [claimant.GetTitledFirstNamePossessive] iddiası için başarıyla savaştınız" #NT!
- frankokratia_installed_byz_claimant_memory_desc_third_perspective: "[owner.GetTitledFirstName] ve [owner.GetHerHis] Haçlı yoldaşları [GetTitleByKey('e_byzantium').GetNameNoTier]'te [claimant.GetTitledFirstNamePossessive] iddiası için başarıyla savaştı" #NT!
+ frankokratia_installed_byz_claimant_memory: "Kurulmuş Bizans Talep Edeni"
+ frankokratia_installed_byz_claimant_memory_desc: "Haçlı arkadaşlarım ve ben [GetTitleByKey('e_byzantium').GetNameNoTier]'de [claimant.GetTitledFirstNamePossessive] iddiası için başarıyla savaştık"
+ frankokratia_installed_byz_claimant_memory_desc_second_perspective: "siz ve diğer Haçlılar [GetTitleByKey('e_byzantium').GetNameNoTier]'de [claimant.GetTitledFirstNamePossessive] iddiası için başarıyla savaştınız"
+ frankokratia_installed_byz_claimant_memory_desc_third_perspective: "[owner.GetTitledFirstName] ve [owner.GetHerHis] Haçlı yoldaşları [GetTitleByKey('e_byzantium').GetNameNoTier]'te [claimant.GetTitledFirstNamePossessive] iddiası için başarıyla savaştı"
   
- sacked_byzantium_memory: "Yağmalanmış Bizans" #NT!
- sacked_byzantium_memory_desc: "[GetTitleByKey('e_byzantium').GetNameNoTier]'ın yıkılışına ve yağmalanmasına ve [GetTitleByKey('e_latin_empire').GetName]'in doğuşuna katıldım" #NT!
- sacked_byzantium_memory_desc_second_perspective: "[GetTitleByKey('e_byzantium').GetNameNoTier]'ın yıkılmasına ve yağmalanmasına ve [GetTitleByKey('e_latin_empire').GetName]'in doğuşuna katıldınız" #NT!
- sacked_byzantium_memory_desc_third_perspective: "[owner.GetTitledFirstName], [GetTitleByKey('e_byzantium').GetNameNoTier]'in yıkılmasına ve yağmalanmasına ve [GetTitleByKey('e_latin_empire').GetName]'nin doğuşuna katıldı" #NT!
+ sacked_byzantium_memory: "Yağmalanmış Bizans"
+ sacked_byzantium_memory_desc: "[GetTitleByKey('e_byzantium').GetNameNoTier]'ın yıkılışına ve yağmalanmasına ve [GetTitleByKey('e_latin_empire').GetName]'in doğuşuna katıldım"
+ sacked_byzantium_memory_desc_second_perspective: "[GetTitleByKey('e_byzantium').GetNameNoTier]'ın yıkılmasına ve yağmalanmasına ve [GetTitleByKey('e_latin_empire').GetName]'in doğuşuna katıldınız"
+ sacked_byzantium_memory_desc_third_perspective: "[owner.GetTitledFirstName], [GetTitleByKey('e_byzantium').GetNameNoTier]'in yıkılmasına ve yağmalanmasına ve [GetTitleByKey('e_latin_empire').GetName]'nin doğuşuna katıldı"
   
- noble_family_adopted: "Soylu Aile Evlat Edinme" #NT!
- noble_family_adopted_desc_1: "[adoptee.GetTitledFirstName]'ı [ROOT.Var('adopted_house').House.GetBaseName] Evi'ne evlat edindim" #NT!
- noble_family_adopted_desc_second_perspective_1: "[adoptee.GetTitledFirstName]'ı [ROOT.Var('adopted_house').House.GetBaseName]'e evlat edindin" #NT!
- noble_family_adopted_desc_third_perspective_1: "[owner.GetFirstName] kabul edildi [adoptee.GetTitledFirstName] Meclise [ROOT.Var('adopted_house').House.GetBaseName]" #NT!
- was_noble_family_adopted: "Soylu Aileye Evlat Edinildi" #NT!
- was_noble_family_adopted_desc_1: "[house_head.GetTitledFirstName] tarafından [ROOT.Var('adopted_house').House.GetBaseName] Evi'ne evlat edinildim" #NT!
- was_noble_family_adopted_desc_second_perspective_1: "[ROOT.Var('adopted_house').House.GetBaseName] tarafından [house_head.GetTitledFirstName] tarafından Evlat Edinildin" #NT!
- was_noble_family_adopted_desc_third_perspective_1: "[owner.GetFirstName], [house_head.GetTitledFirstName] tarafından [ROOT.Var('adopted_house').House.GetBaseName] Evi'ne kabul edildi" #NT!
+ noble_family_adopted: "Soylu Aile Evlat Edinme"
+ noble_family_adopted_desc_1: "[adoptee.GetTitledFirstName]'ı [ROOT.Var('adopted_house').House.GetBaseName] Evi'ne evlat edindim"
+ noble_family_adopted_desc_second_perspective_1: "[adoptee.GetTitledFirstName]'ı [ROOT.Var('adopted_house').House.GetBaseName]'e evlat edindin"
+ noble_family_adopted_desc_third_perspective_1: "[owner.GetFirstName] kabul edildi [adoptee.GetTitledFirstName] Meclise [ROOT.Var('adopted_house').House.GetBaseName]"
+ was_noble_family_adopted: "Soylu Aileye Evlat Edinildi"
+ was_noble_family_adopted_desc_1: "[house_head.GetTitledFirstName] tarafından [ROOT.Var('adopted_house').House.GetBaseName] Evi'ne evlat edinildim"
+ was_noble_family_adopted_desc_second_perspective_1: "[ROOT.Var('adopted_house').House.GetBaseName] tarafından [house_head.GetTitledFirstName] tarafından Evlat Edinildin"
+ was_noble_family_adopted_desc_third_perspective_1: "[owner.GetFirstName], [house_head.GetTitledFirstName] tarafından [ROOT.Var('adopted_house').House.GetBaseName] Evi'ne kabul edildi"
   
- adventurer_family_adopted: "Maceracı Evlat Edinme" #NT!
- adventurer_family_adopted_desc_1: "[adoptee.GetFullName]'ı [ROOT.Var('adopted_dynasty').Dynasty.GetBaseName] Hanedanlığına kabul ettim" #NT!
- adventurer_family_adopted_desc_second_perspective_1: "[adoptee.GetFullName]'ı [ROOT.Var('adopted_dynasty').Dynasty.GetBaseName] Hanedanlığına kabul ettin" #NT!
- adventurer_family_adopted_desc_third_perspective_1: "[owner.GetFirstName] [adoptee.GetFullName]'i [ROOT.Var('adopted_dynasty').Dynasty.GetBaseName] Hanedanlığına kabul etti" #NT!
- was_adventurer_family_adopted: "Soylu Aileye Evlat Edinildi" #NT!
- was_adventurer_family_adopted_desc_1: "[adopter.GetFullName] tarafından [ROOT.Var('adopted_dynasty').Dynasty.GetBaseName] Hanedanlığına evlat edinildim" #NT!
- was_adventurer_family_adopted_desc_second_perspective_1: "[adopter.GetFullName] tarafından [ROOT.Var('adopted_dynasty').Dynasty.GetBaseName] Hanedanlığına evlat edinildin" #NT!
- was_adventurer_family_adopted_desc_third_perspective_1: "[owner.GetFirstName], [adopter.GetFullName] tarafından [ROOT.Var('adopted_dynasty').Dynasty.GetBaseName] Hanedanlığına kabul edildi" #NT!
+ adventurer_family_adopted: "Maceracı Evlat Edinme"
+ adventurer_family_adopted_desc_1: "[adoptee.GetFullName]'ı [ROOT.Var('adopted_dynasty').Dynasty.GetBaseName] Hanedanlığına kabul ettim"
+ adventurer_family_adopted_desc_second_perspective_1: "[adoptee.GetFullName]'ı [ROOT.Var('adopted_dynasty').Dynasty.GetBaseName] Hanedanlığına kabul ettin"
+ adventurer_family_adopted_desc_third_perspective_1: "[owner.GetFirstName] [adoptee.GetFullName]'i [ROOT.Var('adopted_dynasty').Dynasty.GetBaseName] Hanedanlığına kabul etti"
+ was_adventurer_family_adopted: "Soylu Aileye Evlat Edinildi"
+ was_adventurer_family_adopted_desc_1: "[adopter.GetFullName] tarafından [ROOT.Var('adopted_dynasty').Dynasty.GetBaseName] Hanedanlığına evlat edinildim"
+ was_adventurer_family_adopted_desc_second_perspective_1: "[adopter.GetFullName] tarafından [ROOT.Var('adopted_dynasty').Dynasty.GetBaseName] Hanedanlığına evlat edinildin"
+ was_adventurer_family_adopted_desc_third_perspective_1: "[owner.GetFirstName], [adopter.GetFullName] tarafından [ROOT.Var('adopted_dynasty').Dynasty.GetBaseName] Hanedanlığına kabul edildi"
   
- procured_estate_memory: "Tedarik edilen mülk" #NT!
- procured_estate_memory_desc: "[benefactor.GetTitledFirstNamePossessive] yardımıyla maceradan vazgeçip güzel bir mülke ve idari siyaset hayatına geçtim" #NT!
- procured_estate_memory_desc_second_perspective: "[benefactor.GetTitledFirstNamePossessive] yardımıyla maceradan vazgeçip güzel bir mülke ve idari siyaset hayatına geçtin" #NT!
- procured_estate_memory_desc_third_perspective: "[benefactor.GetTitledFirstNamePossessive] yardımıyla, [owner.GetFirstName] maceraperestliği bırakıp güzel bir mülk ve idari siyaset hayatı için yola çıktı" #NT!
+ procured_estate_memory: "Tedarik edilen mülk"
+ procured_estate_memory_desc: "[benefactor.GetTitledFirstNamePossessive] yardımıyla maceradan vazgeçip güzel bir mülke ve idari siyaset hayatına geçtim"
+ procured_estate_memory_desc_second_perspective: "[benefactor.GetTitledFirstNamePossessive] yardımıyla maceradan vazgeçip güzel bir mülke ve idari siyaset hayatına geçtin"
+ procured_estate_memory_desc_third_perspective: "[benefactor.GetTitledFirstNamePossessive] yardımıyla, [owner.GetFirstName] maceraperestliği bırakıp güzel bir mülk ve idari siyaset hayatı için yola çıktı"

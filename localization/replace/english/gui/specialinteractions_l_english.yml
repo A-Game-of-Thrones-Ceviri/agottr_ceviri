@@ -13,7 +13,7 @@
  CREATE_MARRIAGE: "[CHARACTER.LocalPlayerString( 'Ben', 'CHARACTER_UI_NAME' )] ve [TARGET_CHARACTER.LocalPlayerString( 'Ben', 'CHARACTER_UI_NAME' )] arasında [marriage|E] yapılmasını öner."
  BETROTHAL_ONE_CHARACTER: "İkisinden biri [child|E] olduğu için [CHARACTER.LocalPlayerString( 'Ben', 'CHARACTER_UI_NAME' )] ve [TARGET_CHARACTER.LocalPlayerString( 'Ben', 'CHARACTER_UI_NAME' )] arasında [betrothal|E] yapılmasını öner."
   #AGOT Modified, Vanilla typo 
- #BETROTHAL_BOTH_CHARACTERS: "[CHARACTER.GetUIName] ve [TARGET_CHARACTER.GetUIName]'in [betrothed|E]'yi elde ettiğini, çünkü her ikisinin de [children|E] olduğunu varsayalım" #NT!
+ #BETROTHAL_BOTH_CHARACTERS: "[CHARACTER.GetUIName] ve [TARGET_CHARACTER.GetUIName]'in [betrothed|E]'yi elde ettiğini, çünkü her ikisinin de [children|E] olduğunu varsayalım"
  BETROTHAL_BOTH_CHARACTERS: "İkisi de [child|E] olduğu için [CHARACTER.LocalPlayerString( 'Ben', 'CHARACTER_UI_NAME' )] ve [TARGET_CHARACTER.LocalPlayerString( 'Ben', 'CHARACTER_UI_NAME' )] arasında [betrothal|E] yapılmasını öner."
  CREATE_GRAND_WEDDING_PROMISE: "[CHARACTER.LocalPlayerString( 'Ben', 'CHARACTER_UI_NAME' )] ve [TARGET_CHARACTER.LocalPlayerString( 'Ben', 'CHARACTER_UI_NAME' )] arasında, söz verilen [GetActivityType( 'activity_wedding' ).GetName] düzenlenene kadar [betrothal|E] yapılmasını öner."
  CREATE_GRAND_WEDDING_PROMISE_ONE_CHILD: "$BETROTHAL_ONE_CHARACTER$ [GetActivityType( 'activity_wedding' ).GetName] düzenleme sözü de verilecek."
@@ -24,7 +24,7 @@
  DESIRES_ALLIANCE: "[recipient.GetShortUIName|U] [alliance|E] istiyor: $VALUE|=+0$"
  DOES_NOT_WANT_ALLIANCE: "[recipient.GetShortUIName|U] ittifak istemiyor: $VALUE|=+0$"
  YOU_HAVE_TOO_MANY_ALLIANCES: "Hâlihazırda çok fazla [Concept( 'alliances', 'Müttefikiniz' )|E] var: $VALUE|=+0$"
- YOU_ARE_AT_WAR: "[war|E]: $VALUE|=+0$ adresindesiniz" #NT!
+ YOU_ARE_AT_WAR: "[war|E]: $VALUE|=+0$ adresindesiniz"
  INTIMIDATED_REASON: "Sizden [intimidated_i][Concept( 'alliances', 'Gözü Korkmuş' )|E]: $VALUE|=+0$"
  COWED_REASON: "Sizin karşınızda [terrified_i][cowed|E]: $VALUE|=+0$"
  GRANDEUR_REASON: "[Concept( 'court_grandeur', 'Saray Görkeminiz' )|E]: $VALUE|=+0$"
@@ -104,19 +104,19 @@
  WAR_WITH_ALLY_REASON: "Başka bir Müttefike Saldırı: $VALUE|=+0$"
  WONT_FIGHT_HEIR_REASON: "Vârisle savaşmayacak: $VALUE|=+0$"
  WONT_FIGHT_SPOUSE_REASON: "Eşiyle savaşmayacak: $VALUE|=+0$"
- WONT_FIGHT_FRIEND_REASON: "Dövüşmeyecek [friend|E]: $VALUE|=+0$" #NT!
- WONT_FIGHT_BEST_FRIEND_REASON: "Dövüşmeyecek [best_friend|E]: $VALUE|=+0$" #NT!
- WONT_FIGHT_LOVER_REASON: "Dövüşmeyecek [lover|E]: $VALUE|=+0$" #NT!
- WONT_FIGHT_SOULMATE_REASON: "Dövüşmeyecek [soulmate|E]: $VALUE|=+0$" #NT!
+ WONT_FIGHT_FRIEND_REASON: "Dövüşmeyecek [friend|E]: $VALUE|=+0$"
+ WONT_FIGHT_BEST_FRIEND_REASON: "Dövüşmeyecek [best_friend|E]: $VALUE|=+0$"
+ WONT_FIGHT_LOVER_REASON: "Dövüşmeyecek [lover|E]: $VALUE|=+0$"
+ WONT_FIGHT_SOULMATE_REASON: "Dövüşmeyecek [soulmate|E]: $VALUE|=+0$"
  WONT_FIGHT_MEANINGLESS_REASON: "Lüzumsuz çatışmalarda yer almayacak: $VALUE|=+0$"
  HAS_YOUR_SUPPORT_REASON: "Desteğinize sahip: $VALUE|=+0$"
  ENTRENCHED_REGENT_WILL_SUPPORT_LIEGE: "[entrenched_regent|E] [Concept( 'realm', 'Diyarı' )|E] koruyor: $VALUE|=+0$"
  NO_CHARACTERS_TO_SELECT: "#weak Uygun karakter bulunamadı#!"
  NO_VASSALS_TO_DISPLAY: "[Concept( 'vassals', 'Vasalınız' )|E] yok"
  ALREADY_AT_WAR: "Zaten [Concept( 'war', 'Savaşta' )|E]: $VALUE|=+0$"
- RECIPIENT_MILITARY_STRENGTH: "[recipient.GetShortUINamePossessive|U] [military_power|E]: $VALUE|=+0$" #NT!
- SECONDARY_RECIPIENT_MILITARY_STRENGTH: "[secondary_recipient.GetShortUINamePossessive|U] [military_power|E]: $VALUE|=+0$" #NT!
- PROMISED_TITLE_MAA: "Söz verildi [title|E] [men_at_arms|E]: $VALUE|=+0$" #NT!
+ RECIPIENT_MILITARY_STRENGTH: "[recipient.GetShortUINamePossessive|U] [military_power|E]: $VALUE|=+0$"
+ SECONDARY_RECIPIENT_MILITARY_STRENGTH: "[secondary_recipient.GetShortUINamePossessive|U] [military_power|E]: $VALUE|=+0$"
+ PROMISED_TITLE_MAA: "Söz verildi [title|E] [men_at_arms|E]: $VALUE|=+0$"
  MARRY_PROMPT_SOMEONE: "#I Evlendirmek için birini seçin#!"
  MARRY_PROMPT_BUILDING_LIST: "#I [CHARACTER.GetShortUIName] için potansiyel eşler bulunuyor#!"
  MARRY_PROMPT_CHARACTER: "#I [Select_CString( CHARACTER.IsLocalPlayer, 'Evlenmeniz', CHARACTER.GetShortUIName )][Select_CString( CHARACTER.IsLocalPlayer, '', ' adlı kişinin evlenmesi' )] için birini seçin#!"
@@ -175,8 +175,8 @@
  MARRIAGE_PRESTIGE_TOOLTIP_OUR: "[Character.GetShortUINameNotMe], [prestige_i] [MatchOffer.GetActorPrestige|+0] elde edecek:\n[MatchOffer.GetActorPrestigeDesc]"
  MARRIAGE_PRESTIGE_TOOLTIP_THEIR: "[Character.GetShortUINameNotMe], [prestige_i] [MatchOffer.GetRecipientPrestige|+0] elde edecek:\n[MatchOffer.GetRecipientPrestigeDesc]"
   #AGOT Modified 
- #MARRIAGE_INBREEDING_RISK_WE: "Biz akraba sayılırız ve çocuklarımızın [inbred|E] olma riski [MatchOffer.GetInbreedingChance|V%^1]'dır." #NT!
- #MARRIAGE_INBREEDING_THEY: "Bunlar akraba ve çocuklarının [inbred|E] olma riski [MatchOffer.GetInbreedingChance|V%^1]" #NT!
+ #MARRIAGE_INBREEDING_RISK_WE: "Biz akraba sayılırız ve çocuklarımızın [inbred|E] olma riski [MatchOffer.GetInbreedingChance|V%^1]'dır."
+ #MARRIAGE_INBREEDING_THEY: "Bunlar akraba ve çocuklarının [inbred|E] olma riski [MatchOffer.GetInbreedingChance|V%^1]"
  MARRIAGE_INBREEDING_RISK_WE: "Akrabayız ve çocuklarımızın [inbred|E] olmaları için [MatchOffer.GetInbreedingChance|V%^1] risk var"
  MARRIAGE_INBREEDING_THEY: "Akrabalar ve çocuklarının [inbred|E] olmaları için [MatchOffer.GetInbreedingChance|V%^1] risk var"
  NO_INBREEDING_RISK_WE: "Akraba değiliz ve bu nedenle çocuklarımızın [inbred|E] olma riski yok"
@@ -266,9 +266,9 @@
  GRANT_TITLES_ITEM_CANT_CAPITAL: "@warning_icon! #X [Concept( 'realm_capital', 'Diyar Başkentinizi' )|E] veremezsiniz#!"
  GRANT_TITLES_ITEM_CANT_HEAD_OF_FAITH: "Mezhep Lideri unvanlarını veremezsiniz"
  GRANT_TITLES_ITEM_CANT_HEAD_OF_FAITH_TO_INFIDEL: "Sizinle aynı Mezhep Liderine sahip olmayan karakterlere Mezhep Lideri unvanları veremezsiniz"
- GRANT_TITLES_ITEM_CANT_GIVE_NOBLE_FAMILY: "[noble_family|E] ünvanınızı başkalarına veremezsiniz" #NT!
- GRANT_TITLES_ITEM_CANT_GIVE_ADMIN_PRIMARY: "Birincil [governorship|E]'ınızı veremezsiniz" #NT!
- GRANT_TITLES_ITEM_ADMIN_CANT_GIVE_MORE_THAN_ONE: "Aynı anda yalnızca bir [governorship|E] verebilirsiniz" #NT!
+ GRANT_TITLES_ITEM_CANT_GIVE_NOBLE_FAMILY: "[noble_family|E] ünvanınızı başkalarına veremezsiniz"
+ GRANT_TITLES_ITEM_CANT_GIVE_ADMIN_PRIMARY: "Birincil [governorship|E]'ınızı veremezsiniz"
+ GRANT_TITLES_ITEM_ADMIN_CANT_GIVE_MORE_THAN_ONE: "Aynı anda yalnızca bir [governorship|E] verebilirsiniz"
  GRANT_TITLE_BARONY_HAS_COUNTY_SELECTED: "Verilecek çünkü [TITLE.GetName] unvanı da verliyor"
  CANNOT_GRANT_LEASED_OUT_TITLE: "@warning_icon! #X [leased|E] bir unvanı veremezsiniz#!"
  CANNOT_GRANT_TITLE_OF_LESSEE: "@warning_icon! #X Bu unvanı veremezsiniz, [Concept( 'court_chaplain', 'Saray Rahibinize' )|E] [Concept( 'leased', 'Kiralanması' )|E] lazım. [Concept( 'council', 'Konseyinizde' )|E] saray rahibi yoksa yeni bir tane seçin.#!"
@@ -368,11 +368,11 @@
  REVOKE_BARONY_TITLE_CANT_GIVE_REASON_OCCUPIED: "@warning_icon! #X [TITLE.GetName] [occupied|E]#!"
  REVOKE_TITLE_CANT_REVOKE_REASON_BARONY_WITHOUT_COUNTY: "@warning_icon! #X Sadece [TITLE.GetName] yerine [TITLE_2.GetName] unvanının hepsini feshetmelisiniz#!"
  REVOKE_TITLE_CANT_REVOKE_REASON_NON_DOMAIN_BARONY: "@warning_icon! #X [TITLE.GetName] sizin [Concept( 'domain', 'Mülkünüzün' )|E] parçası olmayan bir [barony|E], bu nedenle [CHARACTER.GetShortUIName] adlı kişiden feshedilemez#!"
- REVOKE_TITLE_CANT_REVOKE_NOBLE_FAMILY: "#X [TITLE.GetName] bir [noble_family|E] unvanıdır ve bu nedenle iptal edilemez#!" #NT!
+ REVOKE_TITLE_CANT_REVOKE_NOBLE_FAMILY: "#X [TITLE.GetName] bir [noble_family|E] unvanıdır ve bu nedenle iptal edilemez#!"
   
- create_noble_family_title: "[THIS.GetCharacter.GetNameNoTooltip] için asil aile unvanını oluştur" #NT!
- create_noble_family_tt: "Yeni bir [noble_family|E]'ın başkanı olur" #NT!
- create_noble_family_tt_past: "Yeni bir [noble_family|E]'ın başkanı oldu" #NT!
+ create_noble_family_title: "[THIS.GetCharacter.GetNameNoTooltip] için asil aile unvanını oluştur"
+ create_noble_family_tt: "Yeni bir [noble_family|E]'ın başkanı olur"
+ create_noble_family_tt_past: "Yeni bir [noble_family|E]'ın başkanı oldu"
   
  REVOKE_TITLE_SELECT: "@warning_icon! #X Unvan seçilmemiş#!"
  REVOKE_TITLE_REVOKE: "#T Seçilen unvanı [CHARACTER.GetShortUIName] adlı kişiden feshet#!"
@@ -426,15 +426,15 @@
  WE_ARE_BEST_FRIENDS: "En iyi arkadaşlarsınız: $VALUE|=+0$"
  YOU_ARE_MY_RELATIVE: "Ailesiniz: $VALUE|=+0$"
  THEY_ARE_MY_CLOSE_KIN: "[secondary_recipient.GetShortUINameNoTooltip] aileden: $VALUE|=+0$"
- THEY_ARE_MY_CLOSE_FAMILY: "[secondary_recipient.GetShortUINameNoTooltip] = [recipient.GetHerHis] [close_family|E]: $VALUE|=+0$" #NT!
+ THEY_ARE_MY_CLOSE_FAMILY: "[secondary_recipient.GetShortUINameNoTooltip] = [recipient.GetHerHis] [close_family|E]: $VALUE|=+0$"
  YOU_ARE_MY_HOUSE_MEMBER: "Onun [Concept( 'house', 'Hanesindensiniz' )|E]: $VALUE|=+0$"
  YOU_ARE_MY_DYNASTY_MEMBER: "Onun [Concept( 'dynasty', 'Hanedanındansınız' )|E]: $VALUE|=+0$"
  THEY_ARE_MY_HOUSE_MEMBER: "[secondary_recipient.GetShortUINameNoTooltip] onun [Concept( 'house', 'Hanesinden' )|E]: $VALUE|=+0$"
  THEY_ARE_MY_DYNASTY_MEMBER: "[secondary_recipient.GetShortUINameNoTooltip] [Concept( 'dynasty', 'Hanedanından' )|E]: $VALUE|=+0$"
  I_AM_A_KINSLAYER: "Ben bir [kinslayer|E]yim: $VALUE|=+0$"
  THEY_ARE_A_KINSLAYER: "[secondary_recipient.GetShortUINameNoTooltip] bir [kinslayer|E]: $VALUE|=+0$"
- SECONDARY_RECIPIENT_GOVERNOR_EFFICIENCY: "[secondary_recipient.GetShortUINamePossessiveNoTooltip|U] [governor_efficiency|E]: $VALUE|=+0$" #NT!
- RECIPIENT_GOVERNOR_EFFICIENCY: "[recipient.GetShortUINamePossessiveNoTooltip|U] [governor_efficiency|E]: $VALUE|=+0$" #NT!
+ SECONDARY_RECIPIENT_GOVERNOR_EFFICIENCY: "[secondary_recipient.GetShortUINamePossessiveNoTooltip|U] [governor_efficiency|E]: $VALUE|=+0$"
+ RECIPIENT_GOVERNOR_EFFICIENCY: "[recipient.GetShortUINamePossessiveNoTooltip|U] [governor_efficiency|E]: $VALUE|=+0$"
   # Divorce interaction loc 
  DIVORCE_GIVEN_CHILDREN: "[secondary_recipient.GetShortUINameNoTooltip] size birçok sağlıklı çocuk verdi: $VALUE|=+0$"
  I_DIVORCED_X: "[recipient.GetShortUINameNoTooltip], [actor.GetShortUINameNoTooltip] ile [secondary_recipient.GetShortUINameNoTooltip] adlı kişiyi boşadı!"
@@ -567,12 +567,12 @@
  INTRIGUE_SKILL_REASON: "İdare Becerisi: $VALUE|=+0$"
  LEARNING_SKILL_REASON: "Öğrenim Becerisi: $VALUE|=+0$"
  PROWESS_SKILL_REASON: "Dövüş Becerisi: $VALUE|=+0$"
- SCHEME_TARGET_LEARNING: "[target.GetShortUINamePossessive|U] [learning|E]: $VALUE|+=0$" #NT!
+ SCHEME_TARGET_LEARNING: "[target.GetShortUINamePossessive|U] [learning|E]: $VALUE|+=0$"
  AI_I_AM_INCAPABLE: "[GetTrait('incapable').GetName(GetNullCharacter)] özelliğine sahibim: $VALUE|=+0$"
  AI_I_AM_IMPRISONED: "[imprisoned|E] durumdayım: $VALUE|=+0$"
  AI_LACKS_POLITICAL_CAPITAL: "Karşı koyabilecek [Concept( 'prestige', 'Prestijim' )|E] yok: $VALUE|=+0$"
- SPYMASTER_INTRIGUE_SKILL_REASON: "[owner.GetShortUINamePossessive|U] [owner.GetCouncillorPosition( 'councillor_spymaster' ).GetPositionNamePossesive ] Entrika Becerisi: $VALUE|=+0$" #NT!
- SECOND_INTRIGUE_SKILL_REASON: "[owner.GetShortUINamePossessive|U] [GetCourtPositionType( 'second_camp_officer' ).GetName ]'in Entrika Becerisi: $VALUE|=+0$" #NT!
+ SPYMASTER_INTRIGUE_SKILL_REASON: "[owner.GetShortUINamePossessive|U] [owner.GetCouncillorPosition( 'councillor_spymaster' ).GetPositionNamePossesive ] Entrika Becerisi: $VALUE|=+0$"
+ SECOND_INTRIGUE_SKILL_REASON: "[owner.GetShortUINamePossessive|U] [GetCourtPositionType( 'second_camp_officer' ).GetName ]'in Entrika Becerisi: $VALUE|=+0$"
   
  HAS_DIPLOMACY_SKILL_REASON: "[Concept( 'diplomacy_skill', 'Diplomasi Becerisine' )|E] sahip: $VALUE|=+0$"
  HAS_MARTIAL_SKILL_REASON: "[Concept( 'martial_skill', 'Askeriye Becerisine' )|E] sahip: $VALUE|=+0$"
@@ -586,32 +586,32 @@
  LOW_LEGITIMACY_REASON: "[Select_CString( actor.IsLocalPlayer, 'Sahip olduğunuz', actor.GetShortUIName )][Select_CString( actor.IsLocalPlayer, '', ' adlı kişinin sahip olduğu' )] düşük [legitimacy|E]: $VALUE|=+0$"
  HIGH_LEGITIMACY_REASON: "[Select_CString( actor.IsLocalPlayer, 'Sahip olduğunuz', actor.GetShortUIName )][Select_CString( actor.IsLocalPlayer, '', ' adlı kişinin sahip olduğu' )] yüksek [legitimacy|E]: $VALUE|=+0$"
   
- INFLUENCE_REASON: "[influence|E]: $VALUE|=+0$ #weak ([influence_level]'ünüze göre)#!" #NT!
- RECIPIENT_SECRET: "[recipient.GetShortUINamePossessive] [secret|E]'i kullanarak: $VALUE|=+0$" #NT!
- SECONDARY_RECIPIENT_SECRET: "[secondary_recipient.GetShortUINamePossessive] [secret|E]'i kullanarak: $VALUE|=+0$" #NT!
+ INFLUENCE_REASON: "[influence|E]: $VALUE|=+0$ #weak ([influence_level]'ünüze göre)#!"
+ RECIPIENT_SECRET: "[recipient.GetShortUINamePossessive] [secret|E]'i kullanarak: $VALUE|=+0$"
+ SECONDARY_RECIPIENT_SECRET: "[secondary_recipient.GetShortUINamePossessive] [secret|E]'i kullanarak: $VALUE|=+0$"
   
- AI_OPINION_INFLUENCE_LEVEL_IMPOTENT: "[GetInfluenceLevelName('(int32)0')] [influence_level|E]: $VALUE|=+0$" #NT!
- AI_OPINION_INFLUENCE_LEVEL_PERSUASIVE: "[GetInfluenceLevelName('(int32)2')] [influence_level|E]: $VALUE|=+0$" #NT!
- AI_OPINION_INFLUENCE_LEVEL_CONTROLLING: "[GetInfluenceLevelName('(int32)3')] [influence_level|E]: $VALUE|=+0$" #NT!
- AI_OPINION_INFLUENCE_LEVEL_AUTHORITATIVE: "[GetInfluenceLevelName('(int32)4')] [influence_level|E]: $VALUE|=+0$" #NT!
- AI_OPINION_INFLUENCE_LEVEL_IMPERIOUS: "[GetInfluenceLevelName('(int32)5')] [influence_level|E]: $VALUE|=+0$" #NT!
+ AI_OPINION_INFLUENCE_LEVEL_IMPOTENT: "[GetInfluenceLevelName('(int32)0')] [influence_level|E]: $VALUE|=+0$"
+ AI_OPINION_INFLUENCE_LEVEL_PERSUASIVE: "[GetInfluenceLevelName('(int32)2')] [influence_level|E]: $VALUE|=+0$"
+ AI_OPINION_INFLUENCE_LEVEL_CONTROLLING: "[GetInfluenceLevelName('(int32)3')] [influence_level|E]: $VALUE|=+0$"
+ AI_OPINION_INFLUENCE_LEVEL_AUTHORITATIVE: "[GetInfluenceLevelName('(int32)4')] [influence_level|E]: $VALUE|=+0$"
+ AI_OPINION_INFLUENCE_LEVEL_IMPERIOUS: "[GetInfluenceLevelName('(int32)5')] [influence_level|E]: $VALUE|=+0$"
   
- AI_OPINION_PRESTIGE_LEVEL_DISGRACED: "[GetPrestigeLevelName('(int32)0')] [prestige_level|E]: $VALUE|=+0$" #NT!
- AI_OPINION_PRESTIGE_LEVEL_ESTABLISHED: "[GetPrestigeLevelName('(int32)1')] [prestige_level|E]: $VALUE|=+0$" #NT!
- AI_OPINION_PRESTIGE_LEVEL_DISTINGUISHED: "[GetPrestigeLevelName('(int32)2')] [prestige_level|E]: $VALUE|=+0$" #NT!
- AI_OPINION_PRESTIGE_LEVEL_ILLUSTRIOUS: "[GetPrestigeLevelName('(int32)3')] [prestige_level|E]: $VALUE|=+0$" #NT!
- AI_OPINION_PRESTIGE_LEVEL_EXALTED: "[GetPrestigeLevelName('(int32)4')] [prestige_level|E]: $VALUE|=+0$" #NT!
- AI_OPINION_PRESTIGE_LEVEL_LEGENDARY: "[GetPrestigeLevelName('(int32)5')] [prestige_level|E]: $VALUE|=+0$" #NT!
+ AI_OPINION_PRESTIGE_LEVEL_DISGRACED: "[GetPrestigeLevelName('(int32)0')] [prestige_level|E]: $VALUE|=+0$"
+ AI_OPINION_PRESTIGE_LEVEL_ESTABLISHED: "[GetPrestigeLevelName('(int32)1')] [prestige_level|E]: $VALUE|=+0$"
+ AI_OPINION_PRESTIGE_LEVEL_DISTINGUISHED: "[GetPrestigeLevelName('(int32)2')] [prestige_level|E]: $VALUE|=+0$"
+ AI_OPINION_PRESTIGE_LEVEL_ILLUSTRIOUS: "[GetPrestigeLevelName('(int32)3')] [prestige_level|E]: $VALUE|=+0$"
+ AI_OPINION_PRESTIGE_LEVEL_EXALTED: "[GetPrestigeLevelName('(int32)4')] [prestige_level|E]: $VALUE|=+0$"
+ AI_OPINION_PRESTIGE_LEVEL_LEGENDARY: "[GetPrestigeLevelName('(int32)5')] [prestige_level|E]: $VALUE|=+0$"
   
- TRADE_INFLUENCE_FOR_BETTER_AI_ACCEPTANCE: "Kabulü artırmak için @influence_icon![influence|E] kullanın" #NT!
- INFLUENCE_INTERACTION_ACCEPTANCE_SEND_OPTION: "Harcama [influence|E]: $VALUE|=+0$" #NT!
- not_same_realm_tt: "Sen ve [recipient.GetShortUIName] aynı alemde #BOLD değil#!'siniz" #NT!
- INFLUENCE_SEND_OPTION: "@influence_icon'u harcayın![influence|E]" #NT!
- HISTORICAL_ADMIN_REASON: "Tarihsel [recipient.GetCulture.GetName], [administrative|E] [government|E]: $VALUE|=+0$ ile bağlantılıdır" #NT!
- WILL_BE_VASSALIZED_REASON: "[vassal|E]: $VALUE|=+0$ olacak" #NT!
- RIVAL_VASSAL_REASON: "[realm|E] içindeki [vassal|E] rakibi: $VALUE|=+0$" #NT!
+ TRADE_INFLUENCE_FOR_BETTER_AI_ACCEPTANCE: "Kabulü artırmak için @influence_icon![influence|E] kullanın"
+ INFLUENCE_INTERACTION_ACCEPTANCE_SEND_OPTION: "Harcama [influence|E]: $VALUE|=+0$"
+ not_same_realm_tt: "Sen ve [recipient.GetShortUIName] aynı alemde #BOLD değil#!'siniz"
+ INFLUENCE_SEND_OPTION: "@influence_icon'u harcayın![influence|E]"
+ HISTORICAL_ADMIN_REASON: "Tarihsel [recipient.GetCulture.GetName], [administrative|E] [government|E]: $VALUE|=+0$ ile bağlantılıdır"
+ WILL_BE_VASSALIZED_REASON: "[vassal|E]: $VALUE|=+0$ olacak"
+ RIVAL_VASSAL_REASON: "[realm|E] içindeki [vassal|E] rakibi: $VALUE|=+0$"
   
- negotiate_settlement_title_cant_receive_reason_higher_tier_without_county: "[recipient.GetShortUINameNotMe], [target.GetName] ile birlikte en az bir ilçeyi elinde tutmalı veya almalıdır" #NT!
+ negotiate_settlement_title_cant_receive_reason_higher_tier_without_county: "[recipient.GetShortUINameNotMe], [target.GetName] ile birlikte en az bir ilçeyi elinde tutmalı veya almalıdır"
   
- STATE_FAITH_CREATE_FAITH_REASON: "[realm|E]: $VALUE|=+0$ içinde çok fazla nüfuzunuz var" #NT!
- HAS_PERK_PROPHET_REASON: "[GetPerk('prophet_perk').GetName(GetPlayer)] [perk|E]: $VALUE|=+0$'ye sahipsiniz" #NT!
+ STATE_FAITH_CREATE_FAITH_REASON: "[realm|E]: $VALUE|=+0$ içinde çok fazla nüfuzunuz var"
+ HAS_PERK_PROPHET_REASON: "[GetPerk('prophet_perk').GetName(GetPlayer)] [perk|E]: $VALUE|=+0$'ye sahipsiniz"

@@ -50,12 +50,12 @@
  hold_court.6050.b: "Zaten biliyorum. Evliya rüyamda bana geldi."
  hold_court.6050.c: "Bu küfür dolu saçmalıkları hemen ortadan kaldıracağım!"
  hold_court.6050.d: "Köylülerin hurafeleri umurumda değil."
- tougher_to_convert: "Güçlü Dini Topluluk" #NT!
- tougher_to_convert_desc: "Bu ülkenin dini kimliği son zamanlarda güçlendirildi ve bu da onları dönüştürmeyi daha zor hale getirdi.\n\n#N -25%#! İnanç Dönüşüm Hızı" #NT!
- easier_to_convert: "Zayıflamış Dini Topluluk" #NT!
- easier_to_convert_desc: "Bu ülkenin dini kimliği son zamanlarda zayıfladı ve bu durum onları yeni inançlara karşı daha duyarlı hale getirdi.\n\n#P +25%#! İnanç Dönüşüm Hızı" #NT!
- easier_to_culture_convert: "Zayıflamış Dini Topluluk" #NT!
- easier_to_culture_convert_desc: "Bu ülkenin dini kimliği son zamanlarda zayıfladı ve bu durum onları yeni inançlara karşı daha duyarlı hale getirdi.\n\n#P +25%#! Kültür Dönüşüm Hızı" #NT!
+ tougher_to_convert: "Güçlü Dini Topluluk"
+ tougher_to_convert_desc: "Bu ülkenin dini kimliği son zamanlarda güçlendirildi ve bu da onları dönüştürmeyi daha zor hale getirdi.\n\n#N -25%#! İnanç Dönüşüm Hızı"
+ easier_to_convert: "Zayıflamış Dini Topluluk"
+ easier_to_convert_desc: "Bu ülkenin dini kimliği son zamanlarda zayıfladı ve bu durum onları yeni inançlara karşı daha duyarlı hale getirdi.\n\n#P +25%#! İnanç Dönüşüm Hızı"
+ easier_to_culture_convert: "Zayıflamış Dini Topluluk"
+ easier_to_culture_convert_desc: "Bu ülkenin dini kimliği son zamanlarda zayıfladı ve bu durum onları yeni inançlara karşı daha duyarlı hale getirdi.\n\n#P +25%#! Kültür Dönüşüm Hızı"
   #A Convenient offer 
  hold_court.6060.t: "Uygun Bir Teklif"
  hold_court.6060.desc: "[6060_rich.Custom2('MyCharacterIntroduction', ROOT.Char)|U], yüzünde umutlu bir ifadeyle önümde duruyor.\n\n"Benim [ROOT.Char.GetLadyLord]'im,"
@@ -66,8 +66,8 @@
  hold_court.6060.b.tt.success: "[6060_rich.GetFirstNameNoTooltip] daha fazla ödeme yapmayı kabul ediyor"
  hold_court.6060.b.tt.failure: "[6060_rich.GetFirstNameNoTooltip], [6060_rich.GetHerHis] son teklifin arkasında duruyor ve sen açgözlü bir aptal gibi görünüyorsun"
  hold_court.6060.c: "Altınlarınıza ihtiyacım yok."
- character_title_cannot_be_revoked_tt: "25 yıl boyunca tapuyu geri alamazsınız." #NT!
- protected_from_revocation.tt: "Bu karakterin unvanları iptalden korunmaktadır" #NT!
+ character_title_cannot_be_revoked_tt: "25 yıl boyunca tapuyu geri alamazsınız."
+ protected_from_revocation.tt: "Bu karakterin unvanları iptalden korunmaktadır"
   #Budding Ally 
  hold_court.6070.t: "Yetişen Müttefik"
  hold_court.6070.desc: ""Benim [ROOT.Char.GetLadyLord]'ım, adım [6070_embassy.GetTitledFirstName] ve müttefikiniz [6070_sender.GetTitledFirstName]'nin elçisiyim. Size [6070_sender.GetHerHis] dostça selamlar ve bir teklif getiriyorum.\n\n"Efendim her şeyden önce dostluğunuzu önemsiyor, bu yüzden iyi niyet göstergesi olarak [6070_sender.GetSheHe] size bu çocuğu gönderiyor — [6070_sender.GetHerHis] [6070_child.Custom('GetDaughterSon')] [6070_child.GetFirstName] — istediğiniz gibi eğitmeniz için.\n\n"Benim [6070_sender.GetLadyLord]'im bu hareketin ittifakınızı güçlendireceğini umuyor ve [6070_child.GetFirstNameNoTooltip]'un iyi ellerde olacağından emin.""
@@ -93,13 +93,13 @@
  hold_court.6090.a: "[court_chaplain.GetFirstNameNicknamedNoTooltip], neler yapabileceğine bak."
  hold_court.6090.b: "[high_almoner.GetFirstNameNoTooltip], yerel sadakalar organize edin."
  hold_court.6090.c: "Barış içinde bir arada yaşamak her zaman en iyi çözümdür."
- title_granted_to_local_leader_tt: "[6090_main_county.GetName], [6090_main_county.GetCountyData.GetFaith.GetName] inancına sahip bir yerel kişiye verilecektir. Onlarda [hook|E]'niz olacak." #NT!
+ title_granted_to_local_leader_tt: "[6090_main_county.GetName], [6090_main_county.GetCountyData.GetFaith.GetName] inancına sahip bir yerel kişiye verilecektir. Onlarda [hook|E]'niz olacak."
  hold_court.6090.d: "[executioner.GetFirstNameNoTooltip], bazı kâfirleri örnek göster."
  hold_court.6090.e: "Bu benim değil, senin sorunun gibi görünüyor."
   #A Land at War 
  hold_court.6100.t: "Savaştaki Bir Diyar"
  hold_court.6100.desc: "Karşımda [6100_vassal_1.Custom2('MyCharacterIntroduction', ROOT.Char)] ve [6100_vassal_2.Custom2('MyCharacterIntroduction', ROOT.Char)] duruyor.\n\n"Efendim" başlıyor [6100_vassal_1.GetFirstNameNoTooltip] "kendimle [6100_vassal_2.GetTitledFirstNameNoTooltip] arasındaki savaş, mantığı görmeyi inatla reddetmemiz yüzünden [6100_vassal_2.GetHerHis] uzuyor, bu yüzden arabuluculuk için sana geliyoruz."\n\n"Yani şimdi #EMP benim hatam#!!?" diye araya giriyor [6100_vassal_2.GetFirstNameNoTooltip] "Sen inanılmaz bir köpeksin! Efendim, lütfen [6100_vassal_2.Custom2('MyCharacterIntroduction', ROOT.Char)]0'a söyle!""
- hold_court.6100.desc.jester:0 "\n\n[jester.Custom2('MyCharacterIntroduction', ROOT.Char)|U] perks up: "\n\n[jester.Custom2('MyCharacterIntroduction', ROOT.Char)|U] neşelenir: "Ah, ben küçük kavgaları #EMP severim#!! Bunlar... KOMİK KAFİYELERLE iyi gider!"" #NT!
+ hold_court.6100.desc.jester:0 "\n\n[jester.Custom2('MyCharacterIntroduction', ROOT.Char)|U] perks up: "\n\n[jester.Custom2('MyCharacterIntroduction', ROOT.Char)|U] neşelenir: "Ohh, ben #EMP#! küçük kavgaları seviyorum! Onlar iyi gider... KOMİK RİTİMLERLE!"" #NT!
  hold_court.6100.a: "[6100_vassal_1.GetFirstNameNoTooltip]'ın doğru olduğunu herkes görebilir."
  hold_court.6100.b: "[6100_vassal_2.GetFirstNamePossessiveNoTooltip] pozisyonu meşrudur."
  hold_court.6100.c: "Derhal dövüşü durdurun, yoksa..."
@@ -157,15 +157,15 @@
  hold_court.6130.a.tt: "[6130_proposer.GetFirstNameNoTooltip] Kadastro çalışmasına başlanıyor. Tamamlanması birkaç ay sürecek."
  hold_court.6130.d: "Haritalar abartılıyor."
  hold_court.6131.t: "Kadastro: Tamamlandı!"
- hold_court.6131.desc:0 "[6131_proposer.Custom2('MyCharacterIntroduction', ROOT.Char)|U] bows briefly before me and explains with a satisfied smile: "[6131_proposer.Custom2('MyCharacterIntroduction', ROOT.Char)|U] önümde kısaca eğiliyor ve memnun bir gülümsemeyle açıklıyor: "Sevgili [ROOT.Char.GetLadyLord], hatırlarsan birkaç ay önce, ilçelerinin kadastrosuna büyük miktarda altın yatırmıştın. \n\n"Konuyu bizzat ben denetledim ve gururla söyleyebilirim ki iş bitti!"" #NT!
+ hold_court.6131.desc:0 "[6131_proposer.Custom2('MyCharacterIntroduction', ROOT.Char)|U] bows briefly before me and explains with a satisfied smile: "[6131_proposer.Custom2('MyCharacterIntroduction', ROOT.Char)|U] Önümde kısaca eğildi ve memnun bir gülümsemeyle açıkladı: " [ROOT.Char.GetLadyLord], birkaç ay önce ilçelerinizin kadastrosu için büyük miktarda altın yatırdığınızı hatırlarsınız. \Konuyu bizzat ben denetledim ve gururla söyleyebilirim ki iş tamamlandı!"" #NT!
  hold_court.6131.desc_tutor: "Ayrıca [6130_helper.Custom2('MyCharacterIntroduction', ROOT.Char)]'in rehberliğinde [6130_tutored.GetTitledFirstNamePossessive] öğreniminin detaylı raporunu duymaktan da memnuniyet duydum."
  hold_court.6131.desc_hunt: "\n\n[6130_helper.Custom2('MyCharacterIntroduction', ROOT.Char)]'ın sunduğu büyük yardımın ayrıntılı raporunu duyduğuma da sevindim."
  hold_court.6131.desc_dead: "\n\nNe yazık ki [6130_helper.GetTitledFirstName], [6130_helper.GetSheHe]'in yardım etmeye yemin ettiği kadastronun tamamlanmasını görmeye yetecek kadar uzun yaşamadı."
  hold_court.6131.a: "Altın iyi harcanmış!"
- all_realm_county: "Her [realm|E] [county|E]" #NT!
+ all_realm_county: "Her [realm|E] [county|E]"
   #A Cumbersome Gift 
  hold_court.6140.t: "Zahmetli Bir Hediye"
- hold_court.6140.desc:2 "The whole throne room falls silent as [6140_gifter.Custom2('MyCharacterIntroduction', ROOT.Char)] enters triumphantly, followed by two struggling servants who are dragging #EMP a chained [ROOT.Char.Custom('GetAnimalType')]#!.\n\nSmiling proudly, [6140_gifter.GetFirstNameNoTooltip] exclaims: "[6140_gifter.Custom2('MyCharacterIntroduction', ROOT.Char)] zaferle içeri girdiğinde tüm taht odası sessizliğe bürünür, ardından zincirlenmiş bir [ROOT.Char.Custom('GetAnimalType')]#!.\n\nSmiling'ü gururla sürükleyen iki mücadeleci hizmetkar gelir, [6140_gifter.GetFirstNameNoTooltip] haykırır: "Benim [ROOT.Char.GetLadyLord]'im, sana dünyanın en güçlü hükümdarına layık bir hediye sunuyorum! Bu muhteşem canavar [6140_province.GetCounty.GetName]'nin [6140_province.GetTerrain.GetNameNoTooltip]'sında avlandı ve şimdi onu sana bağlılığımın ve senin eşsiz gücünün bir sembolü olarak sunuyorum!"" #NT!
+ hold_court.6140.desc:2 "The whole throne room falls silent as [6140_gifter.Custom2('MyCharacterIntroduction', ROOT.Char)] enters triumphantly, followed by two struggling servants who are dragging #EMP a chained [ROOT.Char.Custom('GetAnimalType')]#!.\n\nSmiling proudly, [6140_gifter.GetFirstNameNoTooltip] exclaims: "[6140_gifter.Custom2('MyCharacterIntroduction', ROOT.Char)] muzaffer bir edayla içeri girdiğinde tüm taht odası sessizliğe bürünür, ardından zincirlenmiş bir #EMP [ROOT.Char.Custom('GetAnimalType')] #!.\n\nSmiling sürükleyen iki hizmetkâr gururla [6140_gifter.GetFirstNameNoTooltip] haykırır: " [ROOT.Char.GetLadyLord], size dünyanın en kudretli hükümdarına layık bir hediye sunuyorum! Bu muhteşem canavar [6140_province.GetTerrain.GetNameNoTooltip] [6140_province.GetCounty.GetName] 'da avlandı ve şimdi onu sana bağlılığımın ve eşsiz gücünün bir sembolü olarak sunuyorum!"" #NT!
  6140_bear: "ayı"
  6140_tiger: "kaplan"
  6140_lion: "aslan"
@@ -189,7 +189,7 @@
  6140_every_prisoner: "Hücrelerinizdeki her mahkum"
   #The End Is Nigh! 
  hold_court.6150.t: "Son yakındır!"
- hold_court.6150.desc:0 "As soon as it is [6150_preacher.GetHerHis] turn to speak, the agitated [6150_preacher.GetWomanMan] in front of me screams: "Konuşma sırası [6150_preacher.GetHerHis]'a geldiğinde, karşımdaki telaşlı [6150_preacher.GetWomanMan] bağırıyor: "#EMP SON YAKLAŞIYOR!#!\n\n"The İşaretler her yerde açık ve net:" #NT!
+ hold_court.6150.desc:0 "As soon as it is [6150_preacher.GetHerHis] turn to speak, the agitated [6150_preacher.GetWomanMan] in front of me screams: "Konuşma sırası [6150_preacher.GetHerHis] 'a gelir gelmez, önümdeki heyecanlı [6150_preacher.GetWomanMan] çığlık atıyor: "#EMP SON YAKIN!#!\n\n"The işaretler açık ve her yerde:" #NT!
  hold_court.6150.desc_county: "[6150_county.GetName] halkı bunu çok iyi biliyor —"
  hold_court.6150.desc_unsafety: "karışıklıklar, eşkıyalar, hırsızlar, şiddet ve insanlar arasında adaletin kaybolması!"
  hold_court.6150.desc_nature: "Mahsuller tükeniyor, çekirgeler tarlaları istila ediyor, bitmek bilmeyen soğuk, seller ve aramızda dolaşan Veba!"
