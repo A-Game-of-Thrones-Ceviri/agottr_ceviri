@@ -3,6 +3,7 @@ tags={
 	"Translation"
 }
 name="A Game of Thrones - Türkçe"
-supported_version="1.12.5"
+picture="thumbnail.png"
+supported_version="1.14.*"
 remote_file_id="3302953201"
 path="mod/agottr_ceviri"
