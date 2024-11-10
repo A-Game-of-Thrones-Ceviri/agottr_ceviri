@@ -116,8 +116,8 @@
  choose_show_valyrian_steel_tooltip: "Bilinen tüm Valyrian Çeliği sahiplerinin bir listesi görüntülenecektir"
  #choose_show_valyrian_steel_desc: "Bilinen tüm Valyrian çelik kullanıcılarının bir listesi size sunulacak"
  choose_mute_epidemics_name: "Salgın Hastalıklar"
- #choose_mute_epidemics_desc: "[epidemics|E] yayıldığında bilgilendirilmek isteyip istemediğinizi seçin"
- choose_mute_epidemics_tooltip: "[epidemics|E] yayıldığında haberdar olmak isteyip istemediğinizi seçin"
+ #choose_mute_epidemics_desc: "[Concept( 'epidemics', 'Salgınların' )|E] yayıldığında bilgilendirilmek isteyip istemediğinizi seçin"
+ choose_mute_epidemics_tooltip: "[Concept( 'epidemics', 'Salgınların' )|E] yayıldığında haberdar olmak isteyip istemediğinizi seçin"
  choose_dragons_name: "Ejderhalar"
  choose_dragons_tooltip: "[dragons_plural|E] ile ilgili haberlerden haberdar olmak mı yoksa tüm ejderhaların ve yumurtalarının bir listesinin size getirilmesini mi istediğinizi seçin"
   
@@ -198,47 +198,47 @@
   ## Epidemic Isolate Realm Decision ## 
   ##################################### 
   ########### Close Option 
- control_realm_borders_close_decision: "İzole Bölge" #NT!
- control_realm_borders_decision: "İzolasyona Başlayın" #NT!
- control_realm_borders_decision_desc: "$control_realm_borders_decision$" #NT!
- control_realm_borders_decision_tooltip: "Diyarınıza seyahati kısıtlayın ve [plague_apocalyptic|E] [epidemic|E] yayılmasını önleyin." #NT!
- control_realm_borders_decision_alert_tt: "Diyarınız [plague_apocalyptic|E] [epidemics|E] adresinden arınmış olmalıdır." #NT!
- control_realm_borders_decision_confirm: "$control_realm_borders_decision$" #NT!
+ control_realm_borders_close_decision: "Bölgeyi Karantinaya Al"
+ control_realm_borders_decision: "Karantinaya Başla"
+ control_realm_borders_decision_desc: "$control_realm_borders_decision$"
+ control_realm_borders_decision_tooltip: "Diyarınıza seyahati kısıtlayın ve [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılmasını önleyin."
+ control_realm_borders_decision_alert_tt: "Diyarınızda [plague_apocalyptic|E] [Concept( 'epidemics', 'Salgın' )|E] olmamalıdır."
+ control_realm_borders_decision_confirm: "$control_realm_borders_decision$"
   # Opening Description 
- control_realm_borders_close_decision_opening_desc.dorne: "Enfeksiyonun etki alanıma yayılmasını önlemek için yollarda ve [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] limanlarında seyahati kısıtlayabilirim. Bu normalde çok etkilidir." #NT!
- control_realm_borders_close_decision_opening_desc.vale: "Enfeksiyonun etki alanıma yayılmasını önlemek için yollarda ve [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] limanlarında seyahati kısıtlayabilirim. Bu normalde çok etkilidir." #NT!
- control_realm_borders_close_decision_opening_desc.north: "Enfeksiyonun etki alanıma yayılmasını önlemek için yollarda ve [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] limanlarında seyahati kısıtlayabilirim. Bu normalde çok etkilidir." #NT!
- control_realm_borders_close_decision_opening_desc.iron_islands: "Enfeksiyonun etki alanıma yayılmasını önlemek için [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] portlarına seyahati kısıtlayabilirim. Bu normalde çok etkilidir." #NT!
+ control_realm_borders_close_decision_opening_desc.dorne: "Salgının bölgeme yayılmasını önlemek için yollarda ve [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] limanlarında seyahati kısıtlayabilirim. Bu normalde çok etkilidir."
+ control_realm_borders_close_decision_opening_desc.vale: "Salgının bölgeme yayılmasını önlemek için yollarda ve [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] limanlarında seyahati kısıtlayabilirim. Bu normalde çok etkilidir."
+ control_realm_borders_close_decision_opening_desc.north: "Salgının bölgeme yayılmasını önlemek için yollarda ve [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] limanlarında seyahati kısıtlayabilirim. Bu normalde çok etkilidir."
+ control_realm_borders_close_decision_opening_desc.iron_islands: "Salgının bölgeme yayılmasını önlemek için [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] portlarına seyahati kısıtlayabilirim. Bu normalde çok etkilidir."
   # Tooltip Description 
- control_realm_borders_close_decision_tooltip.dorne: "[ROOT.Char.GetPrimaryTitle.GetName] adresine seyahatleri kısıtlayın ve [plague_apocalyptic|E] [epidemic|E] yayılmasını önleyin." #NT!
- control_realm_borders_close_decision_tooltip.vale: "[ROOT.Char.GetPrimaryTitle.GetName] adresine seyahatleri kısıtlayın ve [plague_apocalyptic|E] [epidemic|E] yayılmasını önleyin." #NT!
- control_realm_borders_close_decision_tooltip.north: "[ROOT.Char.GetPrimaryTitle.GetName] adresine seyahatleri kısıtlayın ve [plague_apocalyptic|E] [epidemic|E] yayılmasını önleyin." #NT!
- control_realm_borders_close_decision_tooltip.iron_islands: "[ROOT.Char.GetPrimaryTitle.GetName] adresine seyahatleri kısıtlayın ve [plague_apocalyptic|E] [epidemic|E] yayılmasını önleyin." #NT!
+ control_realm_borders_close_decision_tooltip.dorne: "[ROOT.Char.GetPrimaryTitle.GetName] bölgesine seyahatleri kısıtlayın ve [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılmasını önleyin."
+ control_realm_borders_close_decision_tooltip.vale: "[ROOT.Char.GetPrimaryTitle.GetName] bölgesine seyahatleri kısıtlayın ve [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılmasını önleyin."
+ control_realm_borders_close_decision_tooltip.north: "[ROOT.Char.GetPrimaryTitle.GetName] bölgesine seyahatleri kısıtlayın ve [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılmasını önleyin."
+ control_realm_borders_close_decision_tooltip.iron_islands: "[ROOT.Char.GetPrimaryTitle.GetName] bölgesine seyahatleri kısıtlayın ve [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılmasını önleyin."
   # Effect Description 
- control_realm_borders_close_effect_tt.dorne: "[title.GetName] adresine seyahati kısıtlayacak ve [plague_apocalyptic|E] [epidemic|E] yayılmasına karşı oldukça dirençli olacaksınız." #NT!
- control_realm_borders_close_effect_tt.vale: "[title.GetName] adresine seyahati kısıtlayacak ve [plague_apocalyptic|E] [epidemic|E] yayılmasına karşı oldukça dirençli olacaksınız." #NT!
- control_realm_borders_close_effect_tt.north: "[title.GetName] adresine seyahati kısıtlayacak ve [plague_apocalyptic|E] [epidemic|E] yayılmasına karşı oldukça dirençli olacaksınız." #NT!
- control_realm_borders_close_effect_tt.iron_islands: "[title.GetName] adresine seyahati kısıtlayacak ve [plague_apocalyptic|E] [epidemic|E] yayılmasına karşı oldukça dirençli olacaksınız." #NT!
+ control_realm_borders_close_effect_tt.dorne: "[title.GetName] bölgesine seyahati kısıtlayacak ve [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılmasına karşı direnç göstereceksiniz."
+ control_realm_borders_close_effect_tt.vale: "[title.GetName] bölgesine seyahati kısıtlayacak ve [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılmasına karşı direnç göstereceksiniz."
+ control_realm_borders_close_effect_tt.north: "[title.GetName] bölgesine seyahati kısıtlayacak ve [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılmasına karşı direnç göstereceksiniz."
+ control_realm_borders_close_effect_tt.iron_islands: "[title.GetName] bölgesine seyahati kısıtlayacak ve [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılmasına karşı direnç göstereceksiniz."
   
   ########### Open Option 
- control_realm_borders_open_decision: "Uç Bölge İzolasyonu" #NT!
- uncontrol_realm_borders_decision: "Son İzolasyon" #NT!
- uncontrol_realm_borders_decision_desc: "$uncontrol_realm_borders_decision$" #NT!
- uncontrol_realm_borders_decision_tooltip: "Bölgenize seyahat edilmesine izin verin ve [plague_apocalyptic|E] [epidemic|E] yayılma riskini göze alın." #NT!
- uncontrol_realm_borders_decision_alert_tt: "Bölgeniz daha önce [plague_apocalyptic|E] [epidemics|E] adresinden izole edilmiş olmalıdır." #NT!
- uncontrol_realm_borders_decision_confirm: "$uncontrol_realm_borders_decision$" #NT!
+ control_realm_borders_open_decision: "Uç Bölge İzolasyonu"
+ uncontrol_realm_borders_decision: "Karantinaya Son Ver"
+ uncontrol_realm_borders_decision_desc: "$uncontrol_realm_borders_decision$"
+ uncontrol_realm_borders_decision_tooltip: "Bölgenize seyahat edilmesine izin verin ve [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılma riskini göze alın."
+ uncontrol_realm_borders_decision_alert_tt: "Bölgeniz daha önce [plague_apocalyptic|E] [Concept( 'epidemics', 'Salgınların' )|E] adresinden izole edilmiş olmalıdır."
+ uncontrol_realm_borders_decision_confirm: "$uncontrol_realm_borders_decision$"
   # Opening Description 
- control_realm_borders_open_decision_opening_desc.dorne: "Yollarda ve [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] limanlarında tekrar seyahate izin verebilirim, ancak bulaşıcı yayılma riski daha yüksek olacaktır." #NT!
- control_realm_borders_open_decision_opening_desc.vale: "Yollarda ve [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] limanlarında tekrar seyahate izin verebilirim, ancak bulaşıcı yayılma riski daha yüksek olacaktır." #NT!
- control_realm_borders_open_decision_opening_desc.north: "Yollarda ve [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] limanlarında tekrar seyahate izin verebilirim, ancak bulaşıcı yayılma riski daha yüksek olacaktır." #NT!
- control_realm_borders_open_decision_opening_desc.iron_islands: "[ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] limanlarına tekrar seyahat edilmesine izin verebilirim, ancak bulaşıcı yayılma riski daha yüksek olacaktır." #NT!
+ control_realm_borders_open_decision_opening_desc.dorne: "Yollarda ve [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] limanlarında tekrar seyahate izin verebilirim, ancak salgının yayılma riski daha yüksek olacaktır."
+ control_realm_borders_open_decision_opening_desc.vale: "Yollarda ve [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] limanlarında tekrar seyahate izin verebilirim, ancak salgının yayılma riski daha yüksek olacaktır."
+ control_realm_borders_open_decision_opening_desc.north: "Yollarda ve [ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] limanlarında tekrar seyahate izin verebilirim, ancak salgının yayılma riski daha yüksek olacaktır."
+ control_realm_borders_open_decision_opening_desc.iron_islands: "[ROOT.Char.GetPrimaryTitle.GetNameNoTooltip] limanlarına tekrar seyahat edilmesine izin verebilirim, ancak salgının yayılma riski daha yüksek olacaktır."
   # Tooltip Description 
- control_realm_borders_open_decision_tooltip.dorne: "[ROOT.Char.GetPrimaryTitle.GetName] adresine seyahat edilmesine izin verin ve [plague_apocalyptic|E] [epidemic|E] yayılma riskini göze alın." #NT!
- control_realm_borders_open_decision_tooltip.vale: "[ROOT.Char.GetPrimaryTitle.GetName] adresine seyahat edilmesine izin verin ve [plague_apocalyptic|E] [epidemic|E] yayılma riskini göze alın." #NT!
- control_realm_borders_open_decision_tooltip.north: "[ROOT.Char.GetPrimaryTitle.GetName] adresine seyahat edilmesine izin verin ve [plague_apocalyptic|E] [epidemic|E] yayılma riskini göze alın." #NT!
- control_realm_borders_open_decision_tooltip.iron_islands: "[ROOT.Char.GetPrimaryTitle.GetName] adresine seyahat edilmesine izin verin ve [plague_apocalyptic|E] [epidemic|E] yayılma riskini göze alın." #NT!
+ control_realm_borders_open_decision_tooltip.dorne: "[ROOT.Char.GetPrimaryTitle.GetName] bölgesine seyahat edilmesine izin verin ve [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılma riskini göze alın."
+ control_realm_borders_open_decision_tooltip.vale: "[ROOT.Char.GetPrimaryTitle.GetName] bölgesine seyahat edilmesine izin verin ve [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılma riskini göze alın."
+ control_realm_borders_open_decision_tooltip.north: "[ROOT.Char.GetPrimaryTitle.GetName] bölgesine seyahat edilmesine izin verin ve [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılma riskini göze alın."
+ control_realm_borders_open_decision_tooltip.iron_islands: "[ROOT.Char.GetPrimaryTitle.GetName] bölgesine seyahat edilmesine izin verin ve [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılma riskini göze alın."
   # Effect Description 
- control_realm_borders_open_effect_tt.dorne: "Tekrar [title.GetName] adresine seyahat edilmesine izin vereceksiniz, ancak [plague_apocalyptic|E] [epidemic|E] yayılmasına karşı duyarlı olacaksınız." #NT!
- control_realm_borders_open_effect_tt.vale: "Tekrar [title.GetName] adresine seyahat edilmesine izin vereceksiniz, ancak [plague_apocalyptic|E] [epidemic|E] yayılmasına karşı duyarlı olacaksınız." #NT!
- control_realm_borders_open_effect_tt.north: "Tekrar [title.GetName] adresine seyahat edilmesine izin vereceksiniz, ancak [plague_apocalyptic|E] [epidemic|E] yayılmasına karşı duyarlı olacaksınız." #NT!
- control_realm_borders_open_effect_tt.iron_islands: "Tekrar [title.GetName] adresine seyahat edilmesine izin vereceksiniz, ancak [plague_apocalyptic|E] [epidemic|E] yayılmasına karşı duyarlı olacaksınız." #NT!
+ control_realm_borders_open_effect_tt.dorne: "Tekrar [title.GetName] bölgesine seyahat edilmesine izin vereceksiniz, ancak [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılmasına karşı duyarlı olacaksınız."
+ control_realm_borders_open_effect_tt.vale: "Tekrar [title.GetName] bölgesine seyahat edilmesine izin vereceksiniz, ancak [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılmasına karşı duyarlı olacaksınız."
+ control_realm_borders_open_effect_tt.north: "Tekrar [title.GetName] bölgesine seyahat edilmesine izin vereceksiniz, ancak [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılmasına karşı duyarlı olacaksınız."
+ control_realm_borders_open_effect_tt.iron_islands: "Tekrar [title.GetName] bölgesine seyahat edilmesine izin vereceksiniz, ancak [plague_apocalyptic|E] [Concept( 'epidemic', 'Salgının' )|E] yayılmasına karşı duyarlı olacaksınız."
