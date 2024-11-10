@@ -1759,6 +1759,13 @@
  TARGET_GAINS_LEARNING_LIFESTYLE_XP: "[CHARACTER.GetShortUIName|U], $VALUE|V0$ [learning_lifestyle|E] Tecrübesi kazanacak"
  TARGET_GAINED_LEARNING_LIFESTYLE_XP: "[CHARACTER.GetShortUIName|U], $VALUE|V0$ [learning_lifestyle|E] Tecrübesi kazandı"
   
+ GAINS_WANDERER_LIFESTYLE_XP: "Kazançlar $VALUE|V0$ [wanderer_lifestyle|E] Deneyim" #NT!
+ GAINED_WANDERER_LIFESTYLE_XP: "Kazanılan $VALUE|V0$ [wanderer_lifestyle|E] Deneyim" #NT!
+ I_GAIN_WANDERER_LIFESTYLE_XP: "$VALUE|V0$ [wanderer_lifestyle|E] Deneyimi kazanırsınız" #NT!
+ I_GAINED_WANDERER_LIFESTYLE_XP: "$VALUE|V0$ [wanderer_lifestyle|E] Deneyimi kazandınız" #NT!
+ TARGET_GAINS_WANDERER_LIFESTYLE_XP: "[CHARACTER.GetShortUIName|U] kazançlar $VALUE|V0$ [wanderer_lifestyle|E] Deneyim" #NT!
+ TARGET_GAINED_WANDERER_LIFESTYLE_XP: "[CHARACTER.GetShortUIName|U] $VALUE|V0$ [wanderer_lifestyle|E] Deneyimi kazandı" #NT!
+  
  GAINS_A_DIPLOMACY_LIFESTYLE_PERKPOINT: "$VALUE|V0$ [diplomacy_lifestyle|E] [Concept( 'perk', 'Yeteneği' )|E] kazanacak[Select_CString(CHARACTER.IsLocalPlayer, 'sınız', '' )]"
  GAINED_A_DIPLOMACY_LIFESTYLE_PERKPOINT: "$VALUE|V0$ [diplomacy_lifestyle|E] [Concept( 'perk', 'Yeteneği' )|E] kazandı[Select_CString(CHARACTER.IsLocalPlayer, 'nız', '' )]"
  I_GAIN_A_DIPLOMACY_LIFESTYLE_PERKPOINT: "$VALUE|V0$ [diplomacy_lifestyle|E] [Concept( 'perk', 'Yeteneği' )|E] kazanacaksınız"
@@ -1793,6 +1800,13 @@
  I_GAINED_A_LEARNING_LIFESTYLE_PERKPOINT: "$VALUE|V0$ [learning_lifestyle|E] [Concept( 'perk', 'Yeteneği' )|E] kazandınız"
  TARGET_GAINS_A_LEARNING_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName|U], $VALUE|V0$ [learning_lifestyle|E] [martial_lifestyle|E] [Concept( 'perk', 'Yeteneği' )|E] kazanacak"
  TARGET_GAINED_A_LEARNING_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName|U], $VALUE|V0$ [learning_lifestyle|E] [Concept( 'perk', 'Yeteneği' )|E] kazandı"
+  
+ GAINS_A_WANDERER_LIFESTYLE_PERKPOINT: "Kazançlar $VALUE|V0$ [wanderer_lifestyle|E] [perk|E] Kilit Açma" #NT!
+ GAINED_A_WANDERER_LIFESTYLE_PERKPOINT: "Kazanıldı $VALUE|V0$ [wanderer_lifestyle|E] [perk|E] Kilit Açma" #NT!
+ I_GAIN_WANDERER_A_LIFESTYLE_PERKPOINT: "$VALUE|V0$ [wanderer_lifestyle|E] [perk|E] Kilit Açma kazanırsınız" #NT!
+ I_GAINED_A_WANDERER_LIFESTYLE_PERKPOINT: "$VALUE|V0$ [wanderer_lifestyle|E] [perk|E] Unlock kazandınız" #NT!
+ TARGET_GAINS_A_WANDERER_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName|U] kazançlar $VALUE|V0$ [wanderer_lifestyle|E] [perk|E] Kilit açma" #NT!
+ TARGET_GAINED_A_WANDERER_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName|U] kazanıldı $VALUE|V0$ [wanderer_lifestyle|E] [perk|E] Kilidi aç" #NT!
   
  REFUND_ALL_PERKS_EFFECT: "Açılmış tüm [perks|E]iniz iade edilecek"
   
@@ -2841,3 +2855,75 @@
  force_step_down_landed_titles_first_past: "İstifa ettin ve tüm toprak mülkiyetini kaybettin"
  force_step_down_landed_titles_third_past: "[CHARACTER.GetUIName] istifa etti ve tüm toprak mülkiyetini kaybetti"
  force_step_down_landed_titles_global_past: "İstifa etti ve tüm toprak mülkiyetini kaybetti"
+  
+  # BP3 - New Perks 
+ well_prepared_perk_effect: "Azalan [travel_option|E] Maliyet: [gold_i|E]#P -25%#!" #NT!
+ far_and_wide_perk_effect: "Her ziyaret için [prestige_experience_i|E][prestige_experience|E] adresini #P 10#! ile artırın [holding|E]" #NT!
+ first_far_and_wide_perk_effect: "[prestige_experience_i|E][prestige_experience|E] adresiniz, ziyaret ettiğiniz her [holding|E] için #P 10#! kadar artar" #NT!
+ just_one_more_hill_perk_effect: "Çocuklar $game_concept_prowess_i$[prowess|E] ve [GetTrait('lifestyle_traveler').GetName]" #NT!
+ first_just_one_more_hill_perk_effect: "Çocuklarınız $game_concept_prowess_i$[prowess|E] ve [GetTrait('lifestyle_traveler').GetName( GetNullCharacter )] kazanma şansına sahiptir. [trait|E]" #NT!
+ roaming_perk_effect: "[travel|E] ve @activity_hike'dan [prestige_experience_i|E] [prestige_experience] kazanabilirsiniz![GetActivityType('activity_roaming').GetName] events\n @activity_hike'a erişim kazanın![GetActivityType('activity_roaming').GetName] [activity|E]" #NT!
+ first_roaming_perk_effect: "[travel|E] ve @activity_hike'dan [prestige_experience_i|E][prestige_experience|E] kazanabilirsiniz![GetActivityType('activity_roaming').GetName] etkinlikleri\n @activity_hike'a erişim kazanıyorsunuz![GetActivityType('activity_roaming').GetName] [activity|E]" #NT!
+ of_the_people_perk_effect: "[accept_culture|E] Etkililik: #P +30%#!\nIncrease bir [county_opinion|E] 'un [realm|E] [county|E] 'a [traveling|E] olduğunda" #NT!
+ first_of_the_people_perk_effect: "[accept_culture|E] Etkililik: #P +30%#!\nIncrease [county_opinion|E] herhangi bir [realm|E] [county|E] için [travel|E] " #NT!
+ of_the_people_perk_2_effect: "[adventurer_i] [camp|E] adresinizi her hareket ettirdiğinizde, [prestige_experience_i][prestige_experience|E] adresinizin 15 katına eşit [diplomacy|E] [skill|E] #weak adresi kazanırsınız (her 3 ayda bir)#!" #NT!
+ travel_companion_perk_effect: "[GetCourtPositionType('travel_leader_court_position').GetName()] [aptitude|E]: #P +15#!" #NT!
+ the_home_away_from_home_perk_effect: "Aktivite_yürüyüşünün kilidini açar![GetActivityType('activity_roaming').GetName] [activity_option|E] [roaming_longer_length_travel|E]\n[stress_loss_i|E] [stress_loss|E] #P +50#! tarafından artırılırken [traveling|E]" #NT!
+ first_the_home_away_from_home_perk_effect: "Aktivite_yürüyüşünün kilidini açar![GetActivityType('activity_roaming').GetName] [activity_option|E] [roaming_longer_length_travel|E]\n[stress_loss_i|E] [stress_loss|E] #P tarafından artırıldı +%50#! iken [traveling|E]" #NT!
+ local_arbitration_perk_effect: "[local_arbitration|E] 'un kilidini açar [decision|E]" #NT!
+ local_arbitration_perk_2_effect: "[GetCourtPositionType('second_camp_officer').GetName()] [aptitude|E]: #P +15#!" #NT!
+ local_arbitration_purpose_short: "Aşağıdakilere göre [skill|E] puanı kazanın [camp_purpose|E]" #NT!
+ local_arbitration_bullet: "\n\t\t$BULLET_WITH_TAB$" #NT!
+ local_arbitration_wanderers_purpose: "$local_arbitration_purpose_short$ #weak (Wanderers)#!:$local_arbitration_bullet$Your [diplomacy|E] tarafından artar #P [diplomacy_i]1#!$local_arbitration_bullet$Your [martial|E] tarafından artar #P [martial_i]1#!$local_arbitration_bullet$Your [stewardship|E] tarafından artar #P [stewardship_i]1#!$local_arbitration_bullet$Your [intrigue|E] tarafından artar #P [intrigue_i]1#!$local_arbitration_bullet$Your [learning|E] tarafından artar #P [learning_i]1#!" #NT!
+ local_arbitration_mercenaries_purpose: "$local_arbitration_purpose_short$ #weak (Kiralık Kılıçlar)#!:$local_arbitration_bullet$Your [martial|E] tarafından artar #P [martial_i]2#!$local_arbitration_bullet$Your [prowess|E] tarafından artar #P [prowess_i]2#!" #NT!
+ local_arbitration_scholar_purpose: "$local_arbitration_purpose_short$ #weak (Bilginler)#!:$local_arbitration_bullet$Your [learning|E] tarafından artar #P [learning_i]2#!$local_arbitration_bullet$Your [stewardship|E] tarafından artar #P [stewardship_i]2#!" #NT!
+ local_arbitration_explorers_purpose: "$local_arbitration_purpose_short$ #weak (Kaşifler)#!:$local_arbitration_bullet$Your [diplomacy|E] tarafından artar #P [diplomacy_i]2#!$local_arbitration_bullet$Your [intrigue|E] tarafından artar #P [intrigue_i]2#!" #NT!
+ local_arbitration_brigands_purpose: "$local_arbitration_purpose_short$ #weak (Freebooters)#!:$local_arbitration_bullet$Your [prowess|E] tarafından artar #P [prowess_i]2#!$local_arbitration_bullet$Your [intrigue|E] tarafından artar #P [intrigue_i]2#!" #NT!
+ local_arbitration_legitimists_purpose: "$local_arbitration_purpose_short$ #weak (Meşruiyetçiler)#!:$local_arbitration_bullet$Your [diplomacy|E] tarafından artar #P [diplomacy_i]2#!$local_arbitration_bullet$Your [martial|E] tarafından artar #P [martial_i]2#!" #NT!
+ power_at_home_perk_effect: "[swing_scales_of_power|E] [travel|E] sırasında verimliliği artırmıştır \n[diarchs|E], [liege|E] olduğunda daha sadıktır [traveling|E]" #NT!
+ first_power_at_home_perk_effect: "[swing_scales_of_power|E] verimliliği artırmıştır ve [diarchs|E] daha sadıktır. [traveling|E]" #NT!
+ journey_planner_perk_effect: "[activity_options|E] Maliyet: @gold_icon!#P -20%#!" #NT!
+ finally_there_perk_effect: "[prestige_i] [prestige|E] adresini kazanın ve [destination|E] adresine ulaştığınızda [stress_loss_i] [stress|E] adresini azaltın. [travel|E]" #NT!
+ first_finally_there_perk_effect: "[prestige_i] [prestige|E] adresini kazanın ve [destination|E] adresinize vardığınızda [stress_loss_i] [stress|E] adresini azaltın. [travel|E]" #NT!
+ finally_there_perk_2_effect: "[point_of_interest|E] [stress_loss|E]: [stress_loss_i]-#p 5#!\n[point_of_interest|E] [prestige|E] : [prestige_i]#P +10#!" #NT!
+ mercenary_contacts_perk_effect: "[GetTravelOption('hire_allied_mercenaries_option').GetName] 'un kilidini açar [travel_option|E]" #NT!
+ been_there_done_that_perk_effect: "[point_of_interest|E] Ödüller: #P +30%#!\nCan#V 1#! ek [language|E] herhangi bir ceza olmadan öğrenin" #NT!
+ souvenirs_aplenty_perk_effect: "[capital|E] sahibi [traveled|E] daha gelişmiş bir adresine giderse [development|E] kazanacaktır. [destination|E]" #NT!
+ first_souvenirs_aplenty_perk_effect: "[capital|E] adresiniz daha gelişmiş bir [travel|E] adresine [development|E] kazanacaktır. [destination|E]" #NT!
+ souvenirs_aplenty_perk_2_effect: "[adventurer_i] [camp|E] adresinizi her hareket ettirdiğinizde, #p +10#! [opinion|E] ile [courtiers|E] ve [guests|E]" #NT!
+ souvenirs_aplenty_perk_3_effect: "[adventurer_i] [camp|E] adresinizi her hareket ettirdiğinizde #p +25 kazanabilirsiniz.#! [gold|E] ve #color_yellow +5#! [GetTrait('gallowsbait').GetName( GetNullCharacter )] [trait_level_track_xp|E] #weak (her 3 ayda bir)#!" #NT!
+ gracious_host_impeccable_guest_perk_effect: "Kazanç #P 10#![traveling|E] ile [capital|E] arasında görüş alışverişinde bulunmak ve #P 10#! başkalarının başkentine seyahat ederken görüş" #NT!
+ gracious_host_impeccable_guest_perk_2_effect: "Gain #P 10#! Birinin evini ziyaret ederken görüş [capital|E]" #NT!
+ gracious_host_impeccable_guest_perk_3_effect: "[adventurer_i] Bonus [modifiers|E] #P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$ #! [camp_temperament|E] artık bilinen sayıya göre de ölçeklendiriliyor [languages|E]" #NT!
+ gracious_host_impeccable_guest_perk_4_effect: "[court_position|E] [aptitude|E] Bilinen başına #p +3#! tarafından artırıldı [language|E]" #NT!
+ first_gracious_host_impeccable_guest_perk_effect: "Kazanç #P 10#! Herhangi biriyle görüşmek için [traveling|E] adresine [capital|E]\nKazanç #P 10#! Birinin evini ziyaret ederken görüş [capital|E]" #NT!
+ journey_perk_effect: "activity_monument_expedition'a erişim kazanın![GetActivityType('activity_journey').GetName] [activity|E]" #NT!
+ first_journey_perk_effect: "activity_monument_expedition'a erişim kazandınız![GetActivityType('activity_journey').GetName] [activity|E]" #NT!
+ journey_perk_2_effect: "Artan [GetTrait('lifestyle_traveler').GetName( GetNullCharacter )] [trait_level_track_xp|E] adresini ziyaret ettiğinizde [point_of_interest|E]" #NT!
+ local_inspection_perk_effect: "Aktivite_incelemesine erişim kazanın![GetActivityType('activity_survey').GetName] [activity|E]" #NT!
+ first_local_inspection_perk_effect: "Faaliyet_incelemesine erişim kazanırsınız![GetActivityType('activity_survey').GetName] [activity|E]" #NT!
+ local_inspection_perk_2_effect: "[designated_terrain|E] [provisions|E] Kullanın: [provisions_i]#P -25%#!\nUnlocks ve [GetCourtPositionType('quartermaster_camp_officer').GetName] [officer|E]\n[GetCourtPositionType('quartermaster_camp_officer').GetName] [aptitude|E]: #P +10#!\nUnlocks ve [GetCourtPositionType('head_porter_camp_officer').GetName] [officer|E]\n[GetCourtPositionType('head_porter_camp_officer').GetName] [aptitude|E]: #P +10#!" #NT!
+  
+ local_hero_perk_effect: "[GetTravelOption('leisurely_option').GetName ( GetPlayer )] 'un kilidini açar [travel_option|E]\n [GetTravelOption('appeasement_option').GetName ( GetPlayer )] 'un kilidini açar [travel_option|E]" #NT!
+  
+  
+ travel_logs_effect: "Gain [GetTrait('lifestyle_traveler').GetName( GetNullCharacter )] $trait_track_danger$ [trait_level_track_xp|E] adresinize ulaştığınızda [destination|E]" #NT!
+ travel_logs_2_effect: "[GetTrait('lifestyle_traveler').GetName( GetNullCharacter )] adresini edinin [trait|E]" #NT!
+ know_your_land_know_your_people_perk_effect: "Aynı Diyar [marriage|E] Kendini kabullenme: #P +[EmptyScope.ScriptValue('promising_prospects_self_value')|0]#!\nSame Realm [marriage|E][close_family|E] &amp; [extended_family|E] için kabul: #P +[EmptyScope.ScriptValue('promising_prospects_other_value')|0]#!" #NT!
+ know_your_land_know_your_people_perk_2_effect: "[GetTravelOption('tutor_child_option').GetName ( GetPlayer )] 'un kilidini açar [travel_option|E]" #NT!
+ know_your_land_know_your_people_perk_3_effect: "[GetDecisionWithKey('gather_provisions_decision').GetName] [designated_terrain|E] adresinde: [provisions_i]#P +50%#!" #NT!
+ mustering_the_troops_perk_effect: "[traveling|E] [domain|E] [holdings|E] aracılığıyla [stationed|E] adresinizin etkinliğini artırır. [men_at_arms|E]" #NT!
+ mustering_the_troops_perk_2_effect: "Kilidi açar [designated_terrain|E] [decision|E]\n[designated_terrain|E] [travel_danger|E]: [travel_danger_i]#p -20#!" #NT!
+ surveyor_no_stone_unturned_perk_effect: "[activities|E] 'u barındırırken sahip olunan [counties|E] 'da [development|E] ve [control|E] kazanın" #NT!
+ no_stone_unturned_perk_2_effect: "[command_modifier_i][designated_terrain|E] [advantage|E]: advantage_icon!#P +5#!\n[command_modifier_i]Maksimum [combat_roll|E] içinde [designated_terrain|E]: #P +2#!\n[command_modifier_i]Minimum [combat_roll|E] içinde [designated_terrain|E]: #P +2#!" #NT!
+ personal_touch_effect: "[GetActivityType('activity_survey').GetName] [activity|E] adresinde bir @activity_inspection! [county|E]\n[GetPerk('no_stone_unturned_perk').GetName(GetPlayer)] Etkileri bulunan bir [GetDecisionWithKey('local_arbitration_decision').GetName] adresinin etkilerini de uygulayacaktır: #p +50%#!" #NT!
+ personal_touch_2_effect: "[master_terrain|E] adresinin kilidini açın [decision|E]" #NT!
+ personal_touch_3_effect: "[master_terrain|E]:\n$BULLET_WITH_TAB$[travel_danger|E] için etkiler: [travel_danger_i]#P -20#!\n$BULLET_WITH_TAB$[provisions|E] Kullanım: [provisions_i]#P -25%#!\n$BULLET_WITH_TAB$#color_white Refill Men-at-Arms#! Maliyet: [gold_i][provisions_i]#P -25%#!\n$BULLET_WITH_TAB$[prestij|E] ve [battles|E] adresinden [prestige_experience|E]: [prestige_i]#P +50%#!\n$BULLET_WITH_TAB$[command_modifier_i][advantage|E]: @advantage_icon!#P +5#!\n$BULLET_WITH_TAB$[command_modifier_i]Maksimum [combat_roll|E]: #P +1#!\n$BULLET_WITH_TAB$[command_modifier_i]Minimum [combat_roll|E]: #P +1#!\n$BULLET_WITH_TAB$[command_modifier_i]Negate [supply_limit|E] Penalty: #P Evet#!\n$BULLET_WITH_TAB$[command_modifier_i][attrition|E] Alındı: #P -50%#!" #NT!
+ local_adjudicate_location_tt: "Aşağıdaki efektler bulunduğunuz konumda uygulanacaktır:" #NT!
+ realm_charts_perk_effect: "Same Realm Scheme Secrecy @scheme_secrecy_icon!#P +[EmptyScope.ScriptValue('realm_charts_perk_value')|+0%/]#!" #NT!
+ realm_charts_perk_2_effect: "[draw_up_new_charts|E] 'un kilidini açar [decision|E]" #NT!
+  
+ random_economic_building_tt: "[building_scope.GetName] adresinin tutulması rastgele bir [economic_building|E]" #NT!
+ random_fortification_building_tt: "[building_scope.GetName] adresinin tutulması rastgele bir [fortification_building|E]" #NT!
+ random_military_building_tt: "[building_scope.GetName] adresinin tutulması rastgele bir [military_building|E]" #NT!
+  
