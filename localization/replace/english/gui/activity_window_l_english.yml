@@ -1,0 +1,129 @@
+﻿l_english:
+ ACTIVITY_HOST_HEADER: "Ev sahibi" #NT!
+ ACTIVITY_CURRENT_LOCATION: "[Activity.GetCurrentPhase.GetLocation.GetBaronyNameExplicitly]" #NT!
+ TT_ACTIVITY_WIDGET: "[Activity.GetInvolvementText( Character.Self, 'hud' )]\n\n#I Görüntülemek için Tıklayın#!" #NT!
+  
+ activity_intent_event_widget: "Niyetim: [Character.GetInvolvedActivityIntent.GetName]" #NT!
+  #AGOT Modified 
+ #activity_intent_target_event_widget: "Hedef: [Character.GetIntentTarget.GetShortUIName]" #NT!
+ activity_intent_target_event_widget: "Hedef: [Character.GetIntentTarget.Custom('AGOTCustomGetShortUIName')]" #NT!
+  
+ ACTIVITY_WINDOW_HEADER: "[Activity.GetNameNoTooltip|U]" #NT!
+ ACTIVITY_WINDOW_EVENT_HEADER: "[Activity.GetShortNameNoTooltip]: [EventWindowData.GetTitle]" #NT!
+  
+ ACTIVITY_LOG_HEADER: "[Activity.GetShortNameNoTooltip] Günlük" #NT!
+ ACTIVITY_LOG_NO_ENTRIES: "Günlük girişi yok" #NT!
+  
+ ACTIVITY_TIMELINE_START: "#T Planlama#!" #NT!
+ ACTIVITY_TIMELINE_CONCLUSION: "#T Sonuç#!" #NT!
+ ACTIVITY_WINDOW_GUEST_LIST: "Misafir Listesi ([GetDataModelSize( Activity.GetAttendingCharacters )])" #NT!
+ ACTIVITY_WINDOW_LOG: "Faaliyet Günlüğü ([GetDataModelSize( Activity.GetLogEntries )])" #NT!
+ ACTIVITY_WINDOW_YOUR_INTENT: "Niyetiniz" #NT!
+  
+ ACTIVITY_INTENT_SELECTION_HEADER: "Değiştir [ActivityType.GetNameNoTooltip] Niyet" #NT!
+ ACTIVITY_INTENT_SELECTION_TEXT: "için [intent|E] adresinizi seçin. [ActivityType.GetName]" #NT!
+ ACTIVITY_CHANGE_INTENT_TOOLTIP: "#T [ActivityIntent.GetName]#!\n[ActivityIntent.GetDescription][AddParagraph( ActivityIntentSelectionWindow.GetCanPickIntentDesc( ActivityIntent.Self )]" #NT!
+ ACTIVITY_INTENT_TARGET_LABEL: "[ActivityIntent.GetName] Hedef" #NT!
+ ACTIVITY_SINGLE_INTENT_TOOLTIP: "#T [ActivityIntent.GetName]#!\n[ActivityIntent.GetDescription]" #NT!
+ ACTIVITY_OPEN_INTENT_WINDOW: "$ACTIVITY_SINGLE_INTENT_TOOLTIP$\n\n#I Değiştirmek için tıklayın [intent|E]#!" #NT!
+ ACTIVITY_OPEN_INTENT_WINDOW_DISABLED: "$ACTIVITY_SINGLE_INTENT_TOOLTIP$\n\n#X Etkin etkinlikler sırasında [intent|E] değiştirilemez!#!" #NT!
+ ACTIVITY_SELECT_INTENT_NO_VALID_TARGET: "@warning_icon! #X İçin geçerli bir hedef yok [ACTIVITY_INTENT.GetName]#!" #NT!
+ ACTIVITY_CHANGE_INTENT_TARGET_TOOLTIP: "#T Değiştir [intent|E] hedef#!" #NT!
+ ACTIVITY_CHANGE_INTENT_POTENTIAL_TARGET_HEADER: "Potansiyel Hedefler" #NT!
+ ACTIVITY_CHANGE_INTENT_SELECT_TARGET: "#I Devam etmek için bir [intent|E] Hedefi seçin" #NT!
+ ACTIVITY_CHANGE_INTENT_SELECT_TARGET_FOR_ACTIVITY: "[ActivityIntentData.GetType.GetName] adresiniz için bir hedef seçin [intent|E]" #NT!
+ ACTIVITY_CHANGE_INTENT_TT: "#T Niyet Değişikliği#!" #NT!
+ ACTIVITY_CONCLUSION_HEADER: "$ACTIVITY_WINDOW_HEADER$: Sonuç" #NT!
+ ACTIVITY_CONCLUSION_COMPLETED_INTENT_MULTI: "#P Başarılı oldu#! [intents|E]" #NT!
+ ACTIVITY_CONCLUSION_COMPLETED_INTENT: "#P Başarılı oldu#! [intent|E]" #NT!
+ ACTIVITY_CONCLUSION_FAILED_INTENT: "#N Başarısız#! [intent|E]" #NT!
+ ACTIVITY_CONCLUSION_EFFECTS_HEADER: "Etkileri [Activity.GetShortNameNoTooltip]" #NT!
+ ACTIVITY_CONCLUSION_CLOSE: "Bitirmek [Activity.GetShortNameNoTooltip]" #NT!
+  
+ ACTIVITY_GUEST_LIST_HEADER: "[ActivityGuestListWindow.GetActivityType.GetNameNoTooltip] Misafirlerimiz" #NT!
+ ACTIVITY_GUEST_LIST_INFO: "[SelectLocalization( ActivityGuestListWindow.IsSelectingSpecialGuest, 'ACTIVITY_GUEST_LIST_INFO_SPECIAL', 'ACTIVITY_GUEST_LIST_INFO_REGULAR' )]" #NT!
+ ACTIVITY_GUEST_LIST_INFO_REGULAR: "Misafir Kategorilerini kullanarak [activity_guests|E] adresini davet edin" #NT!
+ ACTIVITY_GUEST_LIST_INFO_SPECIAL: "Davet edilecek bir Misafir seçin [ActivityGuestListWindow.GetSelectingSpecialGuest.GetType.GetNameIfHost( ActivityGuestListWindow.GetHost )]" #NT!
+ ACTIVITY_GUEST_LIST_INVITE_GROUP: "Konuk Kategorileri" #NT!
+ ACTIVITY_GUEST_LIST_INVITING_OVER_MAX: "@alert_icon! #alert_trial [ActivityType.GetMaxNumGuests|V] adresinden daha fazla konuk davet edilmiştir. Bazıları davetinizi reddetmeyi seçecek#!" #NT!
+ ACTIVITY_GUEST_LIST_SPECIAL_GUEST_TT: "#T [ActivitySpecialGuest.GetType.GetNameIfHost( ActivityGuestListWindow.GetHost )]#!\n[ActivitySpecialGuest.GetType.GetDescriptionIfHost( ActivityGuestListWindow.GetHost )]\n[ConcatIfNeitherEmpty('On invitation:\n', ActivityGuestListWindow.GetSpecialGuestOnInviteEffectDesc( ActivitySpecialGuest.Self ) )]" #NT!
+ ACTIVITY_SPECIAL_GUESTS_DEFAULT: "Özel Konuklar" #NT!
+ ACTIVITY_SPECIAL_GUESTS: "[ActivityType.GetLocalizedTextWithFallback( 'special_guests', 'ACTIVITY_SPECIAL_GUESTS_DEFAULT' )]" #NT!
+ ACTIVITY_GUEST_LIST_HOST: "[ActivityType.GetNameNoTooltip] [activity_host_short|E]" #NT!
+ ACTIVITY_GUEST_LIST_TRAVEL_TIME_INFO: "Seyahat: ~[ActivityGuestListWindow.GetTravelTimeEstimation( CharacterListItem.Self )] gün" #NT!
+ ACTIVITY_GUEST_WILL_ACCEPT: "#T @check_icon! Daveti kabul edeceğim#!\n#indent_newline:3 Toplam: [ActivityGuestListWindow.GetJoinChance( CharacterListItem.Self )|+=0]\n[ActivityGuestListWindow.GetJoinChanceBreakdown( CharacterListItem.Self )]#!" #NT!
+ ACTIVITY_GUEST_WILL_DECLINE: "#T @cross_icon! Daveti reddedecek#!\n#indent_newline:3 Toplam: [ActivityGuestListWindow.GetJoinChance( CharacterListItem.Self )|+=0] (yalnızca toplam pozitifse kabul edilecektir)\n[ActivityGuestListWindow.GetJoinChanceBreakdown( CharacterListItem.Self )]#!" #NT!
+ ACTIVITY_GUEST_MAY_NOT_ARRIVE: "@warning_icon! #X Mayıs #bold değil#! zamanında varmak#!" #NT!
+ ACTIVITY_SPECIAL_GUEST_ACCEPTANCE: "[Character.GetSheHe] seçilirse davetinizi kabul etme olasılığı daha yüksektir" #NT!
+ ACTIVITY_GUEST_LIST_SELECT_HONORARY_GUEST: "#T Seçiniz [ActivityGuestListWindow.GetSelectingSpecialGuest.GetType.GetNameIfHost( ActivityGuestListWindow.GetHost )]#!\nSelect [Character.GetShortUINameNoTooltip] olmak [ActivityGuestListWindow.GetSelectingSpecialGuest.GetType.GetNameIfHost( ActivityGuestListWindow.GetHost )], [ActivityType.GetLocalizedTextWithFallback( 'special_guest_acceptance', 'ACTIVITY_SPECIAL_GUEST_ACCEPTANCE' )]." #NT!
+  
+ ACTIVITY_SPECIAL_OPTION_SELECTED: "#P Seçilmiş#!" #NT!
+ ESTIMATED_ARRIVAL: "Tahmini Varış" #NT!
+ JOIN_CHANCE: "Kabul edilme şansı" #NT!
+  
+ ACTIVITY_PHASE_TOOLTIP: "#T [ActivityPhase.GetName]#!\n[ActivityPhase.GetDescription]" #NT!
+  
+ activity_waiting_for_guests: "[activity_guests|E] adresini bekliyor, [Activity.GetNumWaitingForCharacters] kaldı" #NT!
+ activity_waiting_for_phase: "[Activity.GetCurrentPhase.GetPhase.GetName] 'un başlamasını bekliyor" #NT!
+  
+ activity_travel_state_short: "[Concept( 'travel', 'Travelling' )|E]" #NT!
+ activity_travel_state_full: "[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] [Concept( 'travel', 'Travelling' )|E] için [Activity.GetShortNameNoTooltip]" #NT!
+ activity_passive_state_short: "Bekliyorum" #NT!
+ activity_passive_state_full: "[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] [SelectLocalization( Or( Activity.GetType.IsOpenInvite, EqualTo_int32( Activity.GetNumWaitingForCharacters, '(int32)0') ), 'activity_waiting_for_phase', 'activity_waiting_for_guests' )]" #NT!
+ activity_active_state_short: "Nişanlı" #NT!
+ activity_active_state_full: "[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] meşgul [Activity.GetCurrentPhase.GetPhase.GetName]" #NT!
+ activity_uninvolved_state_short: "Karışmamış" #NT!
+ activity_uninvolved_state_full: "[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] dahil olmayan [Activity.GetCurrentPhase.GetPhase.GetName]" #NT!
+  
+ activity_travel_state_verb: "[Concept( 'travel', 'Travelling' )|E]" #NT!
+ activity_passive_state_verb: "Geldi" #NT!
+ activity_active_state_verb: "Geldi" #NT!
+ activity_uninvolved_state_verb: "Karışmamış" #NT!
+  
+ ACTIVITY_WINDOW_CURRENT_LOCATION: "#T Konum#!\nThe [Activity.GetShortNameNoTooltip] şu anda $ACTIVITY_CURRENT_LOCATION$\n\n#I adresinde bulunmaktadır. $GO_TO_CLICK$#!" #NT!
+ ACTIVITY_IN_CURRENT_LOCATION: "İçinde $ACTIVITY_CURRENT_LOCATION$" #NT!
+ ACTIVITY_INVOLVED_HOST_status: "[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] Buna ev sahipliği yapmak [Activity.GetShortNameNoTooltip]" #NT!
+ ACTIVITY_INVOLVED_SPECIAL_GUEST_status: "[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] [activity_attending|E] bu [Activity.GetShortNameNoTooltip] olarak [ACTIVITY_SPECIAL_GUEST.GetNameIfHost( Activity.GetHost )]" #NT!
+ ACTIVITY_INVITED_SPECIAL_GUEST_status: "[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] olarak bu [Activity.GetShortNameNoTooltip] adresine davet edildi. [ACTIVITY_SPECIAL_GUEST.GetNameIfHost( Activity.GetHost )]" #NT!
+ ACTIVITY_INVOLVED_GUEST_status: "[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] [activity_attending|E] Bu [Activity.GetShortNameNoTooltip]" #NT!
+ ACTIVITY_INVITED_GUEST_status: "[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] bu davete [Activity.GetShortNameNoTooltip]" #NT!
+ ACTIVITY_UNINVOLVED_status: "[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] bu işle alakası yok [Activity.GetShortNameNoTooltip]" #NT!
+  
+ ACTIVITY_INVOLVED_HOST_hud: "#T Ev Sahipliği Faaliyeti#!\n[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] $ACTIVITY_CURRENT_LOCATION$ .\n[Character.GetActivityStateText( 'full' )] içinde bir [Activity.GetShortNameNoTooltip] barındırmak." #NT!
+ ACTIVITY_INVOLVED_SPECIAL_GUEST_hud: "#T Dahil Olunan Faaliyet#!\n[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] [activity_attending|E] [Activity.GetNameNoTooltip] içinde $ACTIVITY_CURRENT_LOCATION$ olarak [ACTIVITY_SPECIAL_GUEST.GetNameIfHost( Activity.GetHost )].\n[Character.GetActivityStateText( 'full' )]." #NT!
+ ACTIVITY_INVITED_SPECIAL_GUEST_hud: "#T Davetli Faaliyet#!\n[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] [ACTIVITY_SPECIAL_GUEST.GetNameIfHost( Activity.GetHost )] olarak [Activity.GetNameNoTooltip] 'a $ACTIVITY_CURRENT_LOCATION$'da davet edildi." #NT!
+ ACTIVITY_INVOLVED_GUEST_hud: "#T Dahil Olunan Faaliyet#!\n[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] [activity_attending|E] [Activity.GetNameNoTooltip] içinde $ACTIVITY_CURRENT_LOCATION$.\n[Character.GetActivityStateText( 'full' )]." #NT!
+ ACTIVITY_INVITED_GUEST_hud: "#T Davetli Etkinlik#!\n[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] [Activity.GetNameNoTooltip] $ACTIVITY_CURRENT_LOCATION$ 'a davet edildi." #NT!
+ ACTIVITY_UNINVOLVED_hud: "#T#!\n[Activity.GetHost.GetUIName] etkinliği $ACTIVITY_CURRENT_LOCATION$ adresinde bir [Activity.GetShortName] etkinliğine ev sahipliği yapmaktadır." #NT!
+  
+ ACTIVITY_INVOLVED_HOST_tooltip: "[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] $ACTIVITY_CURRENT_LOCATION$ .\n[Character.GetActivityStateText( 'full' )] adresinde bir [Activity.GetShortNameNoTooltip] barındırmak." #NT!
+ ACTIVITY_INVOLVED_SPECIAL_GUEST_tooltip: "[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] [activity_attending|E] [Activity.GetShortNameNoTooltip] $ACTIVITY_CURRENT_LOCATION$ adresinde [ACTIVITY_SPECIAL_GUEST.GetNameIfHost( Activity.GetHost )].\n[Character.GetActivityStateText( 'full' )] olarak yer almaktadır." #NT!
+ ACTIVITY_INVITED_SPECIAL_GUEST_tooltip: "[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] [ACTIVITY_SPECIAL_GUEST.GetNameIfHost( Activity.GetHost )] olarak $ACTIVITY_CURRENT_LOCATION$ adresindeki [Activity.GetShortNameNoTooltip] adresine davet edilmiştir." #NT!
+ ACTIVITY_INVOLVED_GUEST_tooltip: "[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] [activity_attending|E] [Activity.GetShortNameNoTooltip] $ACTIVITY_CURRENT_LOCATION$ .\n[Character.GetActivityStateText( 'full' )]." #NT!
+ ACTIVITY_INVITED_GUEST_tooltip: "[Character.GetUIName|U] [Character.LocalPlayerString( 'are', 'is' )] [Activity.GetShortNameNoTooltip] $ACTIVITY_CURRENT_LOCATION$ adresine davet edilmiştir." #NT!
+ ACTIVITY_UNINVOLVED_tooltip: "[Activity.GetHost.GetUIName] $ACTIVITY_CURRENT_LOCATION$ adresinde bir [Activity.GetShortNameNoTooltip] sitesine ev sahipliği yapıyor." #NT!
+  
+ ACTIVITY_JOIN_ACTIVITY: "Etkinliğe Katıl" #NT!
+  
+ activity_window_character_host: "[activity_host_short|E]\n[Character.GetShortUINameNoTooltip|U]" #NT!
+ activity_window_character_tour_host: "[Concept('activity_host_short', 'Itinerant Liege' )|E]" #NT!
+ activity_window_character_officiant: "Görevli\n[Character.GetShortUINameNoTooltip|U]" #NT!
+ activity_window_character_travel_tour_host: "$activity_window_character_tour_host$\n[Character.GetShortUINameNoTooltip|U]\n[traveling|E] in [Character.GetCurrentLocation.GetName]\n ~[Character.GetTravelPlan.GetData.GetNextDestination.GetEstimatedArrivalDate.GetStringLong|V]" #NT!
+ activity_window_character_travel_host: "[activity_host_short|E]\n[Character.GetShortUINameNoTooltip|U]\n[traveling|E] in [Character.GetCurrentLocation.GetName]\n ~[Character.GetTravelPlan.GetData.GetNextDestination.GetEstimatedArrivalDate.GetStringLong|V]" #NT!
+ activity_window_character_honorary_guest_regular_traveling: "$honorary_guest$\n[Character.GetShortUINameNoTooltip|U]\n[traveling|E] in [Character.GetCurrentLocation.GetName]\n ~[Character.GetTravelPlan.GetData.GetNextDestination.GetEstimatedArrivalDate.GetStringLong|V]" #NT!
+ honorary_guest_traveling_murder: "$activity_window_character_honorary_guest$\n[Character.GetShortUINameNoTooltip|U]\n[traveling|E] in [Character.GetCurrentLocation.GetName]\n ~[Character.GetTravelPlan.GetData.GetNextDestination.GetEstimatedArrivalDate.GetStringLong|V]" #NT!
+ activity_window_character_travel_spouse_1: "[Character.Custom('GetBrideGroom')|U]\n[Character.GetShortUINameNoTooltip|U]\n[traveling|E] in [Character.GetCurrentLocation.GetName]\n ~[Character.GetTravelPlan.GetData.GetNextDestination.GetEstimatedArrivalDate.GetStringLong|V]" #NT!
+ activity_window_character_travel_spouse_2: "[Character.Custom('GetBrideGroom')|U]\n[Character.GetShortUINameNoTooltip|U]\n[traveling|E] in [Character.GetCurrentLocation.GetName]\n ~[Character.GetTravelPlan.GetData.GetNextDestination.GetEstimatedArrivalDate.GetStringLong|V]" #NT!
+ activity_window_character_guest: "[activity_guest_short|E]\n[Character.GetShortUINameNoTooltip|U]" #NT!
+ activity_window_character_player: "[SelectLocalization( IsActivityHost( Activity, Character ), 'activity_window_character_host', 'activity_window_character_guest' )]" #NT!
+  
+ activity_window_character_travel_noble_student: "Noble Student\n[Character.GetShortUINameNoTooltip|U]\n[traveling|E] in [Character.GetCurrentLocation.GetName]\n ~[Character.GetTravelPlan.GetData.GetNextDestination.GetEstimatedArrivalDate.GetStringLong|V]" #NT!
+ activity_window_character_noble_student: "Asil Öğrenci\n[Character.GetShortUINameNoTooltip|U]" #NT!
+ activity_window_character_student: "Öğrenci\n[Character.GetShortUINameNoTooltip|U]" #NT!
+ activity_window_character_teacher: "Öğretmen\n[Character.GetShortUINameNoTooltip|U]" #NT!
+  
+ ACTIVITY_WINDOW_SPECIAL_PROGRESS_TOOLTIP: "Skor: [ActivityWindow.GetSpecialProgressValue|^V]" #NT!
+  
+ ACTIVITY_WINDOW_PHASE_IN_PROGRESS_TOOLTIP: "#T [ActivityPhase.GetName]#!\nLast eylem: [ActivityWindow.GetLastWeeklyPulseEffectData.GetTitle|V][AddLine( ActivityWindow.GetLastWeeklyPulseEffectData.GetEffectText )]\n\n Bir sonraki [activity_phase_action|E] şansına kadar[Subtract_int32( DaysPerWeek, GetTicksSinceLastProgress( Activity.GetID, DaysPerWeek ) )|V] gün.\n\n[ActivityPhase.GetDescription]" #NT!
+ ACTIVITY_PULSE_ACTION_NONE: "Hiçbiri" #NT!
+ ACTIVITY_TIME_UNTIL_PROGRESS: " ([Activity.GetEstimatedProgressPhaseDate.GetTimeToDate] kadar [Select_CString(Activity.IsCurrentPhaseActive, 'ends', 'begins')])" #NT!
