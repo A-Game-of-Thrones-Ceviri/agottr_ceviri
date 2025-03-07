@@ -42,6 +42,11 @@
  hoare_revival_decision: "Hoare Hanesi'ni Dirilt"
  hoare_revival_desc: "Soylu atalarım, binlerce yıl boyunca Demir Adalar'a hükmetti ve Batıdiyar'ın tüm kıyılarında korku ve saygı uyandırdı. Sadece ejderha ateşi, kudretli Hoare Hanesi'ni dize getirebildi, ancak bizler asla yok olmadık. Atalarımın evi olan Orkmont'u geri aldım. Şimdi, Zalim Qhored'in kurduğu [dynasty|E]ı, benim liderliğimde yeniden kurmanın ve Demir Adaları eski ihtişamına kavuşturmanın zamanı geldi."
  hoare_revival_decision_confirm: "Denizler Yeniden Kanla Kırbaçlanacak!"
+ dynamic_bastard_house_revival_decision: "Revive House [ROOT.Char.GetHouse.MakeScope.Var('bastard_house_of').House.GetName]" #NT!
+ dynamic_bastard_house_revival_decision_desc: "[ROOT.Char.GetHouse.MakeScope.Var('bastard_house_of').House.GetName] Hanesi'nin soyu tükendi. Bu evin doğrudan soyundan gelen biri olarak, mirasını ve adını geri alabilirim." #NT!
+ dynamic_bastard_house_revival_decision_confirm: "Ev [ROOT.Char.GetHouse.MakeScope.Var('bastard_house_of').House.GetName], yeniden doğacak!" #NT!
+ dynamic_bastard_house_revival_decision_bastard: "[house|e] adresiniz bir [bastard_branch|e]" #NT!
+ dynamic_bastard_house_revival_decision_westeros_needs_legitimization: "[top_liege.GetName] [bastard_house_of.GetName] Evi'nin adını, sözlerini ve kollarını üstlenmek için verdiğiniz dilekçeyi dinleyecektir." #NT!
   
  set_capital_kingslanding_decision: "Kral Toprakları'nı Geri Al"
  set_capital_kingslanding_decision_confirm: "Yedi Krallığın Haklı Merkezini Geri Kazanın!"
@@ -120,7 +125,9 @@
  choose_mute_epidemics_tooltip: "[Concept( 'epidemics', 'Salgınların' )|E] yayıldığında haberdar olmak isteyip istemediğinizi seçin"
  choose_dragons_name: "Ejderhalar"
  choose_dragons_tooltip: "[dragons_plural|E] ile ilgili haberlerden haberdar olmak mı yoksa tüm ejderhaların ve yumurtalarının bir listesinin size getirilmesini mi istediğinizi seçin"
-  
+ choose_house_feuds: "Ev Kavgaları" #NT!
+ choose_house_feuds_desc: "Bilinen tüm Evlerin bir listesi size sunulacaktır. [house_feuds|E]" #NT!
+ choose_house_feuds_tooltip: "Bilinen tüm Evlerin bir listesi size sunulacaktır. [house_feuds|E]" #NT!
   #Fallback event 
  global_events_settings.0001.t: "Krallığın İşleri"
  global_events_settings.0001.desc: "Son zamanlarda, ülkenin günlük işleriyle ilgilenmek çok fazla vaktimi alıyor...\n\nHizmetkarlarım her yeni bir sorunla geldiğinde, tüm bu ufak tefek meselelerle bizzat ilgilenmem gerekip gerekmediğini sorguluyorum."
@@ -148,6 +155,7 @@
  global_events_settings.0001.nw_elections: "Gece Nöbetçileri seçimleri hakkında..."
  global_events_settings.0001.mute_plagues: "Salgın Hastalıklar Hakkında..."
  global_events_settings.0001.dragon_categories: "Ejderhalar ve ejderha yumurtaları hakkında..."
+ global_events_settings.0001.house_feuds: "Ev kavgaları hakkında." #NT!
  global_events_settings.main_screen: "Başka bir konu var..."
  global_events_settings.dismiss: "Hepsi bu kadar."
   #Petitioners & Homage 
@@ -189,10 +197,22 @@
  adopt_personal_coa_confirm: "Benimseyin"
  adopt_personal_coa_tooltip: "Kişisel Bir Sancak Benimseyin ve Kimliğinizi Vurgulayın"
  adopt_personal_coa_effect_tt: "Hanenizin armasının yanında gururla sergilenecek kişisel bir armanız olacak."
+ pcoa_plain: "Sade Kollar" #NT!
+ pcoa_plain_tooltip: "Evinizle özdeş kişisel bir arma kazanacaksınız. Özelleştirme için mükemmel." #NT!
+ pcoa_nickname: "Takma Ad Tabanlı Silahlar" #NT!
+ pcoa_nickname_tooltip: "Takma adınıza göre kişisel bir arma kazanacaksınız." #NT!
+ pcoa_ancestral_quartering: "Atalara Ait Çeyrek Armalar" #NT!
+ pcoa_ancestral_quartering_tooltip: "Atalarınızın ev armalarıyla dörde bölünmüş kişisel bir arma kazanacaksınız." #NT!
+ pcoa_religious: "İnanç Temelli Silahlar" #NT!
+ pcoa_religious_tooltip: "İnancınıza dayalı kişisel bir arma kazanacaksınız." #NT!
+ pcoa_fourth_child: "Dördüncü [CHARACTER.Custom('GetDaughterSon')|U]- Tabanlı Silahlar" #NT!
+ pcoa_fourth_child_tooltip: "Dört kez tekrarlanan ev armalarınızdan oluşan kişisel bir arma kazanacaksınız." #NT!
+ adopt_personal_coa_decision_next_stop_button: "Devam et" #NT!
  personal_coa_name_gui: "Kişisel Sancaklar"
  coa_new_name: "[GetGlobalVariable('coa_new_name').Char.GetFirstNamePossessive] Kişisel Sancağı"
+ pcoa_random: "Rastgele Silahlar" #NT!
+ pcoa_random_tooltip: "Rastgele oluşturulmuş kişisel bir arma kazanacaksınız." #NT!
  CUSTOMIZE_PERSONAL_ARMS: "#T[agot_personal_coa|e] Özelleştir#!\nKişisel sancağınızı düzenlemek için özelleştirme menüsünü kullanın."
- agot_dylan_house_name_key: "[GetGlobalVariable('coa_new_name').Char.GetDynastyNameNoTooltip]"
   
   ##################################### 
   ## Epidemic Isolate Realm Decision ## 

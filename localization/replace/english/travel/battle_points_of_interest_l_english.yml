@@ -1,0 +1,124 @@
+﻿l_english:
+  ### Battle Poi - BP3 
+ TRAVEL_POINT_OF_INTEREST_TT_poi_battles: "#T Savaşı $BattlePoiProvince$#!\n$BattlePoiInfo$\n$BattlePoiDescription$\n\n" #NT!
+ BattlePoiInfo: "#emp $BattlePoiVictoriousSide$\n$BattlePoiLosingSide$\n$BattlePoiDate$#!" #NT!
+ BattlePoiVictoriousSide: "Victor: [Province.MakeScope.Var('battle_poi_winner').Char.GetName]" #NT!
+ BattlePoiLosingSide: "Yenildi: [Province.MakeScope.Var('battle_poi_loser').Char.GetName]" #NT!
+  #AGOT Modified 
+ #BattlePoiDate: "Tarih: [Province.Custom('OrdinalIndicatorPoI')] of [Province.Custom('MonthBattlePoI')], [Province.MakeScope.Var('battle_poi_date_year').GetValue] AD" #NT!
+ BattlePoiDate: "Tarih: [Province.Custom('OrdinalIndicatorPoI')] of [Province.Custom('MonthBattlePoI')], [Province.MakeScope.Var('battle_poi_date_year').GetValue] [Province.Custom('EraBattlePoI')]" #NT!
+ BattlePoiDescription: "#weak [Province.Custom('BattlePoIDescriptionLocIntro')] [Province.Custom('BattlePoIDescriptionLocMid')] [Province.Custom('BattlePoIDescriptionLocOutcome')] [Province.Custom('BattlePoIDescriptionLocOutro')]#!" #NT!
+  
+  
+ poi_battles.visit: "Ziyaret Edilen Savaş Alanı [province.GetNameNoTooltip] " #NT!
+ poi_battles.learn: "Savaşından öğrendim [province.GetNameNoTooltip]" #NT!
+ OrdinalIndicatorPoIST: "[Province.MakeScope.Var('battle_poi_date_day').GetValue]st" #NT!
+ OrdinalIndicatorPoIND: "[Province.MakeScope.Var('battle_poi_date_day').GetValue]nd" #NT!
+ OrdinalIndicatorPoIRD: "[Province.MakeScope.Var('battle_poi_date_day').GetValue]rd" #NT!
+ OrdinalIndicatorPoIFallback: "[Province.MakeScope.Var('battle_poi_date_day').GetValue]inci" #NT!
+  
+ BattlePoiProvince: "[Province.GetNameNoTooltip]" #NT!
+  
+ BattlePoiCommander: "[Province.MakeScope.Var('battle_poi_winner').Char.GetTitledFirstNameNoTooltip]" #NT!
+ BattlePoiCommanderHisHer: "[Province.MakeScope.Var('battle_poi_winner').Char.GetHerHis]" #NT!
+ BattlePoiCommanderCulture: "[Province.MakeScope.Var('battle_poi_winner').Char.GetCulture.GetNameNoTooltip]" #NT!
+ BattlePoiEnemyCommander: "[Province.MakeScope.Var('battle_poi_loser').Char.GetTitledFirstNameNoTooltip]" #NT!
+ BattlePoiEnemyCommanderSheHe: "[Province.MakeScope.Var('battle_poi_loser').Char.GetSheHe]" #NT!
+ BattlePoiEnemyCommanderHisHer: "[Province.MakeScope.Var('battle_poi_loser').Char.GetHerHis]" #NT!
+ BattlePoiEnemyCommanderCulture: "[Province.MakeScope.Var('battle_poi_loser').Char.GetCulture.GetNameNoTooltip]" #NT!
+  
+ BattlePoiBraveKnight: "[Province.MakeScope.Var('battle_poi_brave_knight').Char.GetName]" #NT!
+  
+  # Intro 
+ BattlePoiDescriptionIntro1: "İki taraf, biri $BattlePoiCommander$ diğeri $BattlePoiEnemyCommander$ tarafından yönetilen $BattlePoiProvince$ adresinde çatıştı." #NT!
+ BattlePoiDescriptionIntroAttacker2: "$BattlePoiCommander$ $BattlePoiEnemyCommander$ ordusuna göz korkutucu bir saldırı başlattı." #NT!
+ BattlePoiDescriptionIntroDefender2: "$BattlePoiCommander$ gelen $BattlePoiEnemyCommander$ ordusuna karşı uzman bir savunma gerçekleştirdi." #NT!
+ BattlePoiDescriptionIntroAttackerFallback: "$BattlePoiCommander$ $BattlePoiCommanderHisHer$ birliklerine $BattlePoiEnemyCommander$'nin $BattlePoiEnemyCommanderCulture$ ordusuna karşı cesurca bir hücumda liderlik etti." #NT!
+ BattlePoiDescriptionIntroDefenderFallback: "$BattlePoiCommander$ $BattlePoiEnemyCommander$ 'nin $BattlePoiEnemyCommanderCulture$ ordusuna karşı savunmada $BattlePoiCommanderHisHer$ birliklerine cesurca liderlik etti." #NT!
+  
+  # Key Moment 
+ BattlePoiDescriptionLocArchers: "Savaşın en önemli anı $BattlePoiCommanderCulture$ okçularının düşmanın etrafından dolaşmayı başardığı andı, " #NT!
+ BattlePoiDescriptionLocHeavyInfantry: "Muharebeye $BattlePoiCommanderCulture$ ağır piyade alayının düşman hatlarını yarmasıyla karar verildi," #NT!
+ BattlePoiDescriptionLocLightCavalry: "Sonuç, $BattlePoiCommanderCulture$ süvarileri düşman birliklerinin arkasına geçmeyi başardığında belirlendi," #NT!
+ BattlePoiDescriptionLocHeavyCavalry: "Savaş, $BattlePoiCommanderCulture$ süvarilerinin savaş hatlarını yararak düşman düzeninin kalbine girmesiyle sona erdi," #NT!
+ BattlePoiDescriptionLocPikemen: "$BattlePoiCommanderCulture$ mızraklıları düşman hücumunu geri püskürttüğünde zaferleri kesinleşti," #NT!
+ BattlePoiDescriptionLocArchersKnight: "Savaşın en önemli anı $BattlePoiBraveKnight$ önderliğindeki $BattlePoiCommanderCulture$ okçularının düşmanın etrafından dolaşmayı başardığı andı, " #NT!
+ BattlePoiDescriptionLocHeavyInfantryKnight: "Savaş, $BattlePoiBraveKnight$ liderliğindeki $BattlePoiCommanderCulture$ ağır piyade alayının düşman hatlarını yarmasıyla sonuçlandı," #NT!
+ BattlePoiDescriptionLocLightCavalryKnight: "Sonuç, $BattlePoiBraveKnight$ önderliğindeki $BattlePoiCommanderCulture$ süvarileri düşman birliklerinin arkasına geçmeyi başardığında belirlendi," #NT!
+ BattlePoiDescriptionLocHeavyCavalryKnight: "Savaş, $BattlePoiBraveKnight$ önderliğindeki $BattlePoiCommanderCulture$ süvarilerinin savaş hatlarını yararak düşman düzeninin kalbine girmesiyle sona erdi," #NT!
+ BattlePoiDescriptionLocPikemenKnight: "$BattlePoiBraveKnight$ önderliğindeki $BattlePoiCommanderCulture$ mızrakçıları düşman hücumunu geri püskürttüğünde zaferleri kesinleşti," #NT!
+ BattlePoiDescriptionLocVarangian: "Savaş, $BattlePoiBraveKnight$ önderliğindeki bir grup Vareg'in savaş hatlarını yararak düşman düzeninin derinliklerine girmesiyle sona erdi," #NT!
+ BattlePoiDescriptionLocBerserker: "Savaş $BattlePoiBraveKnight$ $BattlePoiEnemyCommanderCulture$ hatlarından geçtiğinde beklenmedik bir hal aldı," #NT!
+ BattlePoiDescriptionLocMidFallback: "Birbirlerini yordular ve sonunda $BattlePoiCommanderCulture$ düşmanı kuşattı." #NT!
+  
+  # Outcome 
+ BattlePoiDescriptionLocOutcomeBerserker: "düzinelerce düşman savaşçısını öldürerek düşmanın moralini tek başına çökertti," #NT!
+ BattlePoiDescriptionLocOutcomeBerserkerFled: "ve onlarca düşman savaşçısını öldürerek düşmanın moralini tek başına çökertti." #NT!
+ BattlePoiDescriptionLocOutcomeDevastation: "düşmanlarını yok ettiler," #NT!
+ BattlePoiDescriptionLocOutcomeDevastationFled: "ve karşı orduyu yok etti." #NT!
+ BattlePoiDescriptionLocOutcomeChaos: "düşmanlarına önemli kayıplar verdirmiştir," #NT!
+ BattlePoiDescriptionLocOutcomeChaosFled: "ve düşmanlarına önemli kayıplar verdirmiştir." #NT!
+ BattlePoiDescriptionLocOutcomeLoss: "rakiplerinin moralini bozdu," #NT!
+ BattlePoiDescriptionLocOutcomeLossFled: "ve rakiplerinin moralini yerle bir etti." #NT!
+  
+  # Outro 
+ BattlePoiDescriptionLocOutroImprisoned: "ve $BattlePoiEnemyCommander$ adresini ele geçirdi." #NT!
+ BattlePoiDescriptionLocOutroSlain: "ve $BattlePoiEnemyCommander$'u öldürdü." #NT!
+ BattlePoiDescriptionLocOutroFledChaos: "Kaosun ortasında $BattlePoiEnemyCommander$ $BattlePoiCommanderHisHer$ en yakın hizmetkârlarıyla birlikte kaçmayı başardı." #NT!
+ BattlePoiDescriptionLocOutroFledOrganized: "Önemli kayıplara rağmen $BattlePoiEnemyCommander$ stratejik bir geri çekilme organize etmeyi başardı." #NT!
+  
+  
+ MonthBattlePoIJanuary: "Ocak" #NT!
+ MonthBattlePoIFebruary: "Şubat" #NT!
+ MonthBattlePoIMarch: "Mart" #NT!
+ MonthBattlePoIApril: "Nisan" #NT!
+ MonthBattlePoIMay: "Mayıs" #NT!
+ MonthBattlePoIJune: "Haziran" #NT!
+ MonthBattlePoIJuly: "Temmuz" #NT!
+ MonthBattlePoIAugust: "Ağustos" #NT!
+ MonthBattlePoISeptember: "Eylül" #NT!
+ MonthBattlePoIOctober: "Ekim" #NT!
+ MonthBattlePoINovember: "Kasım" #NT!
+ MonthBattlePoIDecember: "Aralık" #NT!
+  
+  # Historical Battles 
+ TRAVEL_POINT_OF_INTEREST_TT_poi_battles_historical: "#T $TRAVEL_POINT_OF_INTEREST_TT_poi_battles_historical_name$#!\n$TRAVEL_POINT_OF_INTEREST_TT_poi_battles_historical_desc$\n\n" #NT!
+  
+ TRAVEL_POINT_OF_INTEREST_TT_poi_battles_historical_name: "[Province.Custom('BattlePoiNameHistorical')]" #NT!
+ TRAVEL_POINT_OF_INTEREST_TT_poi_battles_historical_desc: "[Province.Custom('BattlePoIDescriptionHistorical')]" #NT!
+  
+ travel_point_historical_name_visit_message: "[ROOT.Char.GetCurrentLocation.Custom('BattlePoiNameHistorical')]" #NT!
+  
+  
+ BattlePoIHistoricalNameTours: "Tours Savaşı" #NT!
+ BattlePoIHistoricalDescTours: "#emp Victor: [GetScriptedCharacterByHistoryID( '131721' ).GetFirstNameNicknamed]\nYenildi: Abd al-Rahman al-Ghafiqi\nTarih: 10 Ekim, MS 732#!\n#weak Çekiç Karl'ın Emevilerin Fransa'yı işgalini Clain ve Vienne nehirlerinde geri püskürttüğü savaş. Karl'ın adamlarının bir duvar gibi kıpırdamadan durduğu ve saldıran Emevi ağır süvarilerini kestiği söylenir. Düşman komutanının izini bulup onu öldürdükten sonra, rakipleri sahadan kaçtı.#!" #NT!
+  
+ BattlePoIHistoricalNameLechfeld: "Lechfeld Savaşı" #NT!
+ BattlePoIHistoricalDescLechfeld: "#emp Victor: [GetScriptedCharacterByHistoryID( '1282' ).GetTitledFirstName]\nYenildi: [GetScriptedCharacterByHistoryID( '460' ).GetFirstName] [GetScriptedCharacterByHistoryID( '460' ).GetDynastyName]\nTarih: 10 Ağustos, MS 955#!\n#weak Saksonya Kralı Otto'nun kuvvetleri ile Macaristan kuvvetleri arasında geçen acımasız bir savaş. Her iki taraf da büyük kayıplar verdikten sonra Macarlar kuşatılmak üzereyken kaçtılar ve savaşın akışının aleyhlerine döndüğünü gördüler.\n\nSavaş sona erdikten sonra Macar komutanların çoğu yakalanıp idam edildi ve Batı Avrupa'ya yönelik süregelen Macar tehdidi nihayet sona erdi.#!" #NT!
+  
+ BattlePoIHistoricalNameHastings: "Hastings Savaşı" #NT!
+ BattlePoIHistoricalDescHastings: "#emp Victor: [GetScriptedCharacterByHistoryID( '140' ).GetFirstName] [GetScriptedCharacterByHistoryID( '140' ).GetDynastyName]\nYenildi: [GetScriptedCharacterByHistoryID( '122' ).GetFullName]\nTarih: 14 Ekim, MS 1066#!\n#weak Hastings Savaşı, William'ın İngiltere üzerinde güç kazanmasındaki kilit savaşlardan biriydi. Yokuş yukarı savaşmak zorunda kalan Norman ordusu ilerleme kaydetmekte zorlanıyordu ve hatta bir noktada geri çekilmeye başladı, ancak William İngiliz birliklerine karşı bir karşı saldırı düzenlemeyi başardı.\n\nDüşman kuvvetleri tarafından ezilen Harold, iki kardeşi [GetScriptedCharacterByHistoryID( '132' ).GetFirstNameNoTooltip] ve [GetScriptedCharacterByHistoryID( '130' ).GetFirstNameNoTooltip] ile birlikte öldü ve İngiliz tahtını boş bıraktı.#!" #NT!
+  
+ BattlePoIHistoricalNameStamfordBridge: "Stamford Köprüsü Savaşı" #NT!
+ BattlePoIHistoricalDescStamfordBridge: "#emp Victor: [GetScriptedCharacterByHistoryID( '122' ).GetFullName]\nYenildi: [GetScriptedCharacterByHistoryID( '102531' ).GetNameNicknamed]\nTarih: 25 Eylül, MS 1066#!\n#weak Stamford Köprüsü Savaşı, İngiliz tahtının üç adayı Normandiyalı William, Norveçli Harald ve İngiliz Harold arasındaki en önemli savaşlardan biriydi. Adamlarıyla birlikte kuzeye doğru ilerleyen Harold, Norveç birliklerini şaşırtmayı ve onları hazırlıklı olmadıkları bir savaşa zorlamayı başardı.\n\nHarald nefes borusuna saplanan bir okla öldürüldü ve İngiliz müttefiki [GetScriptedCharacterByHistoryID( '124' ).GetFirstNameNoTooltip], Harold'un kardeşi de katledildi. Norveç ordusu, komutanları olmadan, savaşın ardından yok edildi.#!" #NT!
+  
+ BattlePoIHistoricalNameManzikert: "Malazgirt Savaşı" #NT!
+ BattlePoIHistoricalDescManzikert: "#emp Victor: [GetScriptedCharacterByHistoryID( '3040' ).GetFirstName] [GetScriptedCharacterByHistoryID( '3040' ).GetDynastyName]\nYenildi: [GetScriptedCharacterByHistoryID( '1734' ).GetFullName]\nTarih: 26 Ağustos, MS 1071#!\n#weak 1068'de Bizans İmparatoru olarak taç giyen Romanos, Türklerin Anadolu'ya akınlarına karşı bir sefer düzenledi. Sınırlı bir başarının ardından, Malazgirt yakınlarında Selçuklu İmparatorluğu'ndan Arp Arslan'a karşı bir savaşta kesin bir zafer kazanmaya çalıştı.\n\nOrdusunun büyük bir bölümüyle geri çekilen komutanlarından biri tarafından ihanete uğrayan Romanos, Müslüman birlikler tarafından esir alındı. Daha sonra düşmanı tarafından serbest bırakılsa da tahttan indirildi, kör edildi, sürgüne gönderildi ve yaralarından dolayı öldü.#!" #NT!
+  
+ BattlePoIHistoricalNameYarmuk: "Yarmuk Savaşı" #NT!
+ BattlePoIHistoricalDescYarmuk: "#emp Victor: [GetScriptedCharacterByHistoryID( '163015' ).GetFullName]\nYenildi: [GetScriptedCharacterByHistoryID( '145071' ).GetFullName]\nTarih: 20 Ağustos, MS 636#!\n#weak Yermük Savaşı Bizans tarihinin en önemli savaşlarından biridir. Kesin bir yenilgi, Suriye ve Mısır'daki kayıplarına ve Arap imparatorluğunun büyük ölçüde genişlemesine yol açtı.\n\n6 gün süren savaşın akışı başlangıçta Müslüman işgalcilerin aleyhine döndü, ancak Yarmuk'ta beşinci gün doğduğunda, savunma stratejisinden saldırı stratejisine geçtiler. 6. günde süvarilerini Bizans ordusunu bozguna uğratan cesur bir hücuma geçirdiler.\n\nMoralleri bozulan Bizans askerleri savaş alanından kaçarken vadilere düştüler, boğuldular ya da düşman askerleri tarafından ezildiler.#!" #NT!
+  
+ BattlePoIHistoricalNameDandanaqan: "Dandanaqan Savaşı" #NT!
+ BattlePoIHistoricalDescDandanaqan: "#emp Victor: [GetScriptedCharacterByHistoryID( '3036' ).GetFullName]\nYenildi: [GetScriptedCharacterByHistoryID( '144129' ).GetFullName]\nTarih: 23 Mayıs, MS 1040#!\n#weak Kuzey İran'ın büyüyen Selçuklu gücü ile Gazneli İmparatorluğu arasındaki önemli bir savaş. İlk savaşlarında Selçuklu kuvvetlerini geri püskürten Gazneli kuvvetleri, geride bıraktıkları ganimetler için çekişmeye başladılar.\n\nDağınık ve savaşa hazırlıksız olan Gazneli kuvvetleri, Selçuklu kuvvetlerinin geri dönüşüyle gafil avlandılar. Taciz edilen, aç bırakılan ve moralleri bozulan Gazneli kuvvetleri rakipleri tarafından ezildi.#!" #NT!
+  
+ BattlePoIHistoricalNameAror: "Aror Savaşı" #NT!
+ BattlePoIHistoricalDescAror: "#emp Galip: Muhammed ibn el-Kasım\nYenildi: Raja Dahir\nTarih: MS 711#!\n#weak Emevilerin Hindistan'ı istilası sırasında Sind Racası ile Emevi İmparatorluğu arasında meydana gelen bir savaş.\n\nRakipleri başlangıçta sayıca daha kalabalık bir güç olmasına rağmen, Emevi komutanı savaşa girmeden önce ordusu için daha iyi bir konum elde etmeyi başarmıştı. Çatışma boyunca bu dengesizlik Müslüman güçlerin savaşın akışını yavaş yavaş kontrol altına almasına yol açtı ve Raja Dahir'in ölümüyle zaferleri güvence altına alındı.#!" #NT!
+  
+ BattlePoIHistoricalNameSvolder: "Svolder Savaşı" #NT!
+ BattlePoIHistoricalDescSvolder: "#emp Victor: [GetScriptedCharacterByHistoryID( '101505' ).GetFullName]\nYenildi: [GetScriptedCharacterByHistoryID( '144004' ).GetFullName]\nTarih: 9 Eylül, MS 999#!\n#weak Bir tarafta Olafr Tryggvason'un Norveç kuvvetleri, diğer tarafta Danimarka Kralı Sveinn liderliğindeki Danimarka ve İsveç kuvvetleri koalisyonu arasında bir savaş.\n\nSayıca çok üstün olmasına rağmen, Norveç kralı düşman koalisyondan kaçmayı reddetti ve İsveçliler ile Danimarkalılarla savaşa girdi, onlara 'at yiyenler' ve 'orman keçileri' dedi.\n\nSonunda, düşmanlarına ağır bir darbe indirmesine rağmen, Norveç ordusu ezildi. Olafr savaşta kayboldu ve büyük olasılıkla vefat etti.#!" #NT!
+  
+ BattlePoIHistoricalNameCivitate: "Civitate Savaşı" #NT!
+ BattlePoIHistoricalDescCivitate: "#emp Victor: [GetScriptedCharacterByHistoryID( '1126' ).GetFullName]\nYenildi: [GetScriptedCharacterByHistoryID( '1338' ).GetFullName]\nTarih: 18 Haziran, MS 1053#!\n#weak Bir tarafta Normanlar, diğer tarafta Papa liderliğinde Almanlar ve yerel İtalyanların da dahil olduğu bir koalisyon arasındaki savaş.\n\nSayısal üstünlüklerine rağmen Papalık koalisyonu savaşın merkezindeki Norman piyadelerini geçemedi ve süvari kanatları Norman süvarilerine karşı savaşı kaybetti.\n\nSavaştan kısa bir süre sonra Papa'nın kendisi Normanlar tarafından esir alındı ve çatışma sona erdi.#!" #NT!
+  
+ BattlePoIHistoricalNameTalas: "Talas Savaşı" #NT!
+ BattlePoIHistoricalDescTalas: "#emp Galip: Abbasi Halifeliği\nYenildi: Tang Hanedanlığı\nTarih: MS 751#!\n#weak Güneybatıdan Maveraünnehir'e doğru genişleyen Abbasi Halifeliği ile doğudan Maveraünnehir'e doğru genişleyen Tang Hanedanlığı arasında uzun süreli bir çatışma.\Başlangıçta Tang Hanedanlığı'nın ağır piyadeleri ve Türk paralı askerleri Abbasi güçlerinin geri püskürtülmesinde önemli bir rol oynadı, ancak paralı askerlerin taraf değiştirmesi ve müttefiklerinin çoğunun onlara ihanet etmesiyle Tang geri çekilmek zorunda kaldı.\n\nBu çatışma Tang'ın batıya doğru genişlemesinin sonunu getirdi ve Maveraünnehir öngörülebilir bir gelecek için Müslümanların eline geçti.#!" #NT!

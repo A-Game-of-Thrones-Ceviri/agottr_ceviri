@@ -12,8 +12,8 @@
   
  reluctant_bride_modifier: "Gönülsüz Gelin"
  reluctant_bride_modifier_desc: "Bu karakter, zorla dayatılan bir evliliğin eşiğinde bulunuyor ve kaderine boyun eğmek istemiyor. Kalbi başka birine ait olabilir veya özgürlüğüne düşkün olabilir. Her ne sebeple olursa olsun, yaklaşan düğüne karşı büyük bir isteksizlik duyuyor ve nişanını bozmak için elinden gelen her şeyi yapmaya hazır."
- agot_precarious_reputation: "Güvencesiz İtibar" #NT!
- agot_precarious_reputation_desc: "İçinde bulundukları koşullar göz önünde bulundurulduğunda, diğerleri bu karakterin işlerine karışmaktan çekiniyor." #NT!
+ agot_precarious_reputation: "Güvencesiz İtibar"
+ agot_precarious_reputation_desc: "İçinde bulundukları koşullar göz önünde bulundurulduğunda, diğerleri bu karakterin işlerine karışmaktan çekiniyor."
   
  ################# 
  # Filler Events # 
@@ -342,7 +342,7 @@
  drowned_god_religion_opinion: "$drowned_god_religion$ Görüşü"
  rhllor_religion_opinion: "$rhllor_religion$ Görüşü"
  valyrian_religion_opinion: "$valyrian_religion$ Görüşü"
- rhoynish_religion_opinion: "$rhoynish_religion$ Görüş" #NT!
+ rhoynish_religion_opinion: "$rhoynish_religion$ Görüş"
   
  ## Riverlands Filler Modifiers ## 
  agot_heard_good_tales: "Güzel Hikayeler Dinledi"
@@ -1384,10 +1384,10 @@
  stepstones_adventurer_modifier: "Basamak Taşları Maceracısı"
  stepstones_adventurer_modifier_desc: "Bu karakter, macera ve zenginlik arayışı içinde, Basamak Taşları'nda kendi krallığını kurmak amacıyla yola koyulmuştur. Yanında topladığı haydutlar ve maceracılarla birlikte, bu tehlikeli bölgede yeni bir düzen kurmayı hedefliyor."
   
- castle_storming_event_modifier: "Saldırı Devam Ediyor" #NT!
- castle_storming_event_modifier_desc: "Bu karakter şu anda büyük bir kaleye yapılan saldırıyı yönetiyor." #NT!
- castle_storming_fort_level_event_modifier: "Saldırı Devam Ediyor" #NT!
- castle_storming_fort_level_event_modifier_desc: "Bu mevzi şu anda kararlı bir düşman kuvveti tarafından saldırıya uğruyor." #NT!
+ castle_storming_event_modifier: "Saldırı Devam Ediyor"
+ castle_storming_event_modifier_desc: "Bu karakter şu anda büyük bir kaleye yapılan saldırıyı yönetiyor."
+ castle_storming_fort_level_event_modifier: "Saldırı Devam Ediyor"
+ castle_storming_fort_level_event_modifier_desc: "Bu mevzi şu anda kararlı bir düşman kuvveti tarafından saldırıya uğruyor."
   
   #################### 
   # SCHEME MODIFIERS # 
@@ -1396,3 +1396,7 @@
  bond_with_dragon_scheme_scheme_phase_duration_add: "[GetScheme('bond_with_dragon_scheme').GetTypeName] [scheme_speed_single|E]"
  deepen_bond_with_dragon_scheme_scheme_phase_duration_add: "[GetScheme('deepen_bond_with_dragon_scheme').GetTypeName] [scheme_speed_single|E]"
  steal_back_artifact_enemy_scheme_phase_duration_add: "[GetScheme('steal_back_artifact').GetTypeName] [scheme_speed_single|E]"
+  ############################# 
+  # MISSING VANILLA MODIFIERS # 
+  ############################# 
+ republic_government_levy_contribution_add: "[republican|E] [vassal|E] [levy|E] [modifier_base_contribution|E]" #NT!
