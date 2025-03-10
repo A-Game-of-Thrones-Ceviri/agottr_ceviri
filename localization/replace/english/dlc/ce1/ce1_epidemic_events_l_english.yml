@@ -1,10 +1,10 @@
 ﻿l_english:
-  
+
  health.1015.t: "[SCOPE.Custom('EventTitleDisease')]: Kaşıntı"
  health.1015.desc: "#EMP Sürekli bir kaşıntı!#! Gecenin bir yarısı uyandığımda parmaklarımdaki kan dikkatimi çekiyor. Bir süre sonra kanın az önce kaşıdığım bacağımdan geldiğini görüyorum. Öyle şiddetli kaşınıyor ki, kendime hâkim olamıyorum.\n\nYüzümü soğuk suya batırarak kaşınma duygusunun geçmesini umuyorum. Aynaya baktığımda gözlerimin kan çanağına döndüğünü görüyorum."
-  #AGOT Modified 
+   #AGOT Modified 
  #health.1015.court_physician.desc: "\n\n"Benim [ROOT.Char.GetLadyLord]'ım, bu kızamık denen hastalık.""
- health.1015.court_physician.desc: "\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], siz kızamık olmuşsunuz.""
+ health.1015.court_physician.desc: "\n\n\"Efendim, bu, benekli humma olarak bilinen hastalık.\""
  health.1015.a: "Artık dayanamıyorum!"
  health.1016.t: "[SCOPE.Custom('EventTitleDisease')]: Kızıl Çeşme"
  health.1016.desc: "#EMP Ahhh.#! Acı içerisinde karnımı tutuyorum. Ne kadardır tuvalette olduğumu artık hatırlayamıyorum bile. Kaç saattir? Kaç gündür tuvaletteyim? #EMP Yoksa hafta mı?#! Ahhhhhh. Her seferinde daha çok acıdığını hissediyorum. O rezil kokudan da bıktım.\n\nBayılacak gibiyim..."
@@ -43,9 +43,9 @@
  disease_desc_short_measles: "kırmızı lekelerle kaplı"
  disease_desc_short_dysentery: "kanlı ishalin etkisinde"
  disease_desc_short_ergotism: "istemsiz kasılmalardan muzdarip"
-  #AGOT Modified 
+   #AGOT Modified 
  #disease_desc_short_typhus: "kamp ateşiyle eziyet çeken"
- disease_desc_short_typhus: "lekeli hummadan muzdarip"
+ disease_desc_short_typhus: "yeşil humma tarafından eziyet görüyor"
  disease_desc_short_consumption: "kanlı öksürüklerin etkisinde"
  disease_desc_short_smallpox: "yaralar ve döküntülerle kaplı"
  disease_desc_short_cancer: "gücünü yitirmiş vaziyette"
@@ -57,7 +57,7 @@
  disease_desc_short_incapable: "hareket etme yetisini yitirmiş hâlde"
  disease_desc_short_infirm: "gücünü yitirmiş hâlde"
  disease_desc_short_ill: "gücünü yitirmiş hâlde"
-  
+
  epidemic_events.1000.t: "[cult_epidemic.GetNameNoTooltip] Tarikatı"
  epidemic_events.1000.desc.intro: "[cult_epidemic.GetName] [infected_county.GetName] topraklarında yayılmaya devam ederken beraberinde tehlikeli bir tarikat kendisini gösteriyor.\n\n[charismatic_priest.GetFirstName] isminde bir vaiz tarafından yönetilen bu tarikat, salgının"
  epidemic_events.1000.desc.mid.unreformed: "esas sebebinin [charismatic_priest.GetFaith.HighGodName|U] yolundan sapmış günahkâr kişiler olduğunu, ancak ve ancak bu tanrıtanımaz davranışlardan uzaklaşılmasıyla topraklarımıza musallat olan bu vebadan kurtulabileceğimizi iddia ediyor."
@@ -74,14 +74,14 @@
  epidemic_events.1010.a: ""Ne cüretle!""
  epidemic_events.1010.b: "Ya haklıysa..."
  epidemic_events.1010.c: "Tüm tabutlara çivi çakın!"
- all_realm_county_epidemic_scope: "Her [realm|E] [county|E] ile [epidemic_scope.GetName]"
+ all_realm_county_epidemic_scope: "[epidemic_scope.GetName] bulunan tüm [realm|E] [Concept( 'county', 'Kontlukları' )|E]"
  epidemic_events.1020.t: "[epidemic_county.GetNameNoTierNoTooltip|U] Dolaylarında Kötü Kokular"
  epidemic_events.1020.desc: "[epidemic_scope.GetName|U], [epidemic_county.GetNameNoTier] halkı üzerinde yıkıcı etkilere sebep oldu. [miasma_courtier.Custom2('MyCharacterIntroduction', ROOT.Char)|U], halkın evlerine çekilerek [ROOT.Char.GetFaith.DeathDeityName|U] için dualar ettiğini, bu sebeple yerel üretimin ve ticaretin durma noktasına geldiğini bildiriyor.\n\nTopraklarımıza musallat olan bu vebanın asıl sebebinin ölülerin yaydığı kötü kokular olduğunu, etrafa bolca [epidemic_province.Custom('get_region_flower_type_plural')] ekerek kötü kokuları dağıtabileceğimizi, dolayısıyla vebayı bertaraf edebileceğimizi söylüyor."
  epidemic_events.1020.a: "Denemeye değer."
  epidemic_events.1020.b: "Hadi canım oradan."
  epidemic_events.1030.t: "Sülükler!"
- epidemic_events.1030.desc: "Sarayın önde gelen isimleri, sülüklerin doğru kullanıldıklarında hastalıkları önleyebileceklerini iddia ediyor. [leeched_courtier.GetFirstName], avucunun içinde bir düzine sülük ve soğuk bir gülümsemeyle huzuruma çıktığında, acaba çok mu abartıyorlar diye düşünüyorum.\n\n"Sülükler! [epidemic_scope.GetName] için tek çaremiz sülükler!"\n\nTüm bu durum sülüklerin ancak hekim denetiminde kısıtlı bir şekilde kullanılması yönündeki kabule zıt düşüyor fakat çaresiz zamanlarda bekleme şansımız olmayabilir."
- epidemic_events.1030.a: "Saraydaki herkese sülük dağıtalım!"
+ epidemic_events.1030.desc: "[ROOT.Char.Custom('GetCourt')]ın önde gelen isimleri, sülüklerin doğru kullanıldıklarında hastalıkları önleyebileceklerini iddia ediyor. [leeched_courtier.GetFirstName], avucunun içinde bir düzine sülük ve soğuk bir gülümsemeyle huzuruma çıktığında, acaba çok mu abartıyorlar diye düşünüyorum.\n\n"Sülükler! [epidemic_scope.GetName] için tek çaremiz sülükler!"\n\nTüm bu durum sülüklerin ancak hekim denetiminde kısıtlı bir şekilde kullanılması yönündeki kabule zıt düşüyor fakat çaresiz zamanlarda bekleme şansımız olmayabilir."
+ epidemic_events.1030.a: "Herkese sülük dağıtalım!"
  epidemic_events.1030.a.success: "Sülükler başarılı oldu"
  epidemic_events.1030.a.failure: "Sülükler zarar verdi"
  epidemic_events.1030.b: "Hekimlerin sözünden çıkmamalıyız."
@@ -175,8 +175,8 @@
  epidemic_events.1067.b: "Salgına kapımızı açamayız."
  epidemic_events.1067.c: "Başkentte onlar için bir yer ayarlayacağım."
  every_bordering_county: "[bigoted_ruler_that_everyone_hates.GetName] ile sınır tüm kontluklar"
- epidemic_events.1068.t: "Borçlu"
- epidemic_events.1068.desc: "Diyarımdaki [faith_blamed.GetAdherentNamePlural] bir süredir salgından dolayı hedef tahtasında duruyor. Bu durum ister istemez ülkede ekonomik birtakım sıkıntılara sebep olmuş vaziyette. [loneless_vassal.Custom2('MyCharacterIntroduction', ROOT.Char)|U] sıradan bir dilenciyi andırır edayla saraya girdiğinde bu durum bir kez daha hissediliyor.\n\n"İşler çok kötü [Select_CString(ROOT.Char.IsFemale, 'leydim', 'lordum' )]. [faith_blamed.GetAdjectiveNoTooltip|U] karşıtı yapılan bu hareketler farklı mezheplere mensup tüm tüccarların topraklarımdan kaçmasına sebep oldu. Kimse ticaret yapmıyor, hazinemde neredeyse hiç para kalmadı. Bu duruma acilen bir çözüm bulmalıyız!""
+ epidemic_events.1068.t: "Borçlu" # I tried to think of something better but Ewan absolutely insisted I call it Loanly
+ epidemic_events.1068.desc: "Ülkemdeki [faith_blamed.GetAdherentNamePlural] bir süredir salgından dolayı hedef tahtasında duruyor. Bu durum ister istemez ülkede ekonomik birtakım sıkıntılara sebep olmuş vaziyette. [loneless_vassal.Custom2('MyCharacterIntroduction', ROOT.Char)|U] sıradan bir dilenciyi andırır edayla saraya girdiğinde bu durum bir kez daha hissediliyor.\n\n"İşler çok kötü [Select_CString(ROOT.Char.IsFemale, 'leydim', 'lordum' )]. [faith_blamed.GetAdjectiveNoTooltip|U] karşıtı yapılan bu hareketler farklı mezheplere mensup tüm tüccarların topraklarımdan kaçmasına sebep oldu. Kimse ticaret yapmıyor, hazinemde neredeyse hiç para kalmadı. Bu duruma acilen bir çözüm bulmalıyız!""
  epidemic_events.1068.a: "[loneless_vassal.GetPrimaryTitle.GetNameNoTierNoTooltip|U] herkes için güvenli bir yer olacak."
  epidemic_events.1068.b: "Sana biraz borç verebilirim."
  epidemic_events.1068.c: "Kötü olmuş."
@@ -215,7 +215,7 @@
  look_for_physician_epidemic_tt: "[Concept( 'epidemic', 'Salgının' )|E] etkilerini azaltmak adına bir [GetCourtPositionType('court_physician_court_position').GetName()] arayacaksınız"
  physician_will_help_epidemic_tt: "[GetCourtPositionType('court_physician_court_position').GetName()] [Concept( 'epidemic', 'Salgının' )|E] etkilerini azaltmak adına bazı çözümler sunacak"
  epidemic_events.1110.t: "Sokaklardaki Bedenler"
- epidemic_events.1110.desc: "[chaplain.Custom2('MyCharacterIntroduction', ROOT.Char)|U] gergin bir yüz ifadesiyle huzuruma çıkıyor.\n\n"[ROOT.Char.GetName|U], size kötü haberlerim var. [ROOT.Char.GetPrimaryTitle.GetTierAsNameNoTooltip] sokaklarında cansız bedenler öyle bir hızda artıyor ki, insanlar yakınlarını defnetmeye fırsat bulamadan bir cesetin üstüne yenisi ekleniyor. Sokaklarda biriken bu cesetler kötü kokulara sebep oldukları gibi salgının da daha hızlı yayılmasına sebep oluyorlar. Belki de [graveyard_county.GetName] topraklarındaki $building_type_burial_site_01$ alanından yararlanabiliriz.""
+ epidemic_events.1110.desc: "[chaplain.Custom2('MyCharacterIntroduction', ROOT.Char)|U] gergin bir yüz ifadesiyle huzuruma çıkıyor.\n\n"[ROOT.Char.GetName|U], size kötü haberlerim var. Sokaklarda cansız bedenler öyle bir hızda artıyor ki, insanlar yakınlarını defnetmeye fırsat bulamadan bir cesetin üstüne yenisi ekleniyor. Sokaklarda biriken bu cesetler kötü kokulara sebep oldukları gibi salgının da daha hızlı yayılmasına sebep oluyorlar. Belki de [graveyard_county.GetName] topraklarındaki $building_type_burial_site_01$ alanından yararlanabiliriz.""
  epidemic_events.1110.a: "Pekala."
  epidemic_events.1110.b: "Orası sadece benim için.."
  epidemic_events.1120.t: "Şeytani Fikir"
@@ -240,7 +240,7 @@
  epidemic_events.1123.t: "Et Yağmuru"
  epidemic_events.1123.desc: "Penceremden gelen, yağmuru andıran tuhaf bir ses dikkatimi çekiyor. En son baktığımda gökyüzünde bulut yoktu, tekrar pencerenin yanına gittiğimde ilk olarak masmavi gökyüzünün tadını çıkarıyorum.\n\nArdından elimde bir ıslaklık hissi oluşuyor, tutunduğum yere baktığımda parmaklarımın kahverengi kana boyandığını görüyorum. Evlerin çatıları et ve kemik parçalarıyla dolu. Anlaşılan cesetler bir kere daha mancınıkla şehre fırlatılmış ve artık tamamen ayırt edilemez bir et yığınına dönüşmüşler."
  epidemic_events.1123.a: "Felaket."
-  
+
  burning_animals_does_nothing_tt: "Hayvanları yakmanın bir etkisi olmadı"
  cats_and_dogs_trial_will_end_tt: "Mahkemeler sona erecek"
  friend_plague_financial_help: "[CHARACTER.GetShortUINameNotMe|U], [TARGET_CHARACTER.GetShortUINameNotMe] adlı karaktere salgın esnasında maddi destekte bulundu."
@@ -251,17 +251,17 @@
  friend_walk_of_shame_corresponding: "[TARGET_CHARACTER.GetShortUINameNotMe|U], [CHARACTER.GetShortUINameNotMe] yerine halkın gözü önünde kendisini küçük düşürdü."
  rival_walk_of_shame: "[CHARACTER.GetShortUINameNotMe|U], [TARGET_CHARACTER.GetShortUINameNotMe] adlı karakteri halkın gözü önünde kendisini küçük düşürmeye zorladı."
  rival_walk_of_shame_corresponding: "[TARGET_CHARACTER.GetShortUINameNotMe|U], [CHARACTER.GetShortUINameNotMe] adlı karakteri halkın gözü önünde kendisini küçük düşürmeye zorladı."
-  
+
  every_family_member_of_lover: "[dead_lover.GetFirstName] adlı karakterin tüm aile üyeleri"
  every_infected_county: "Hastalıklı her kontluk"
- every_infected_courtier_and_guest: "Hastalıklı her saray mensubu ve misafir"
-  
+ every_infected_courtier_and_guest: "Hastalıklı her [THIS.Char.Custom('GetCourtierConcept')] ve [guest|E]"
+
  friend_revenants_nailed: "[CHARACTER.GetShortUINameNotMe|U], [TARGET_CHARACTER.GetShortUINameNotMe] adlı karakterin tavsiyesine uyarak ülkedeki tabutlara çivi çaktırdı"
  friend_revenants_nailed_corresponding: "[TARGET_CHARACTER.GetShortUINameNotMe|U], [CHARACTER.GetShortUINameNotMe] adlı karakterin tavsiyesine uyarak ülkedeki tabutlara çivi çaktırdı"
  friend_flagellating_together: "[CHARACTER.GetShortUINamNotMe|U], [TARGET_CHARACTER.GetShortUINameNotMe] ile birlikte salgından korunmak için kendilerini kırbaçlattı."
  rival_kinkshamed_my_flagellating: "[CHARACTER.GetShortUINameNotMe|U], [TARGET_CHARACTER.GetShortUINameNotMe] adlı karakteri kendini kırbaçlamaktan haz almakla suçladı."
  rival_kinkshamed_my_flagellating_corresponding: "[TARGET_CHARACTER.GetShortUINameNotMe|U], [CHARACTER.GetShortUINameNotMe] adlı karakteri kendini kırbaçlamaktan haz almakla suçladı."
-  
+
  ragnarok: "Ragnarok"
  the_second_coming: "İkinci Geliş"
  revelation: "Vahiy"
@@ -274,7 +274,7 @@
  the_apocalypse: "Kıyamet"
  doomsday: "Kıyamet Günü"
  third_impact: "Üçüncü Darbe"
-  
+
  epidemic_events.2001.t: "İki Cepheli Savaş"
  epidemic_events.2001.desc: "[pleading_vassal.GetName|U] çaresiz bir yüz ifadesiyle önümde eğiliyor. Konuşurken dudakları titremeye başlıyor.\n\n"Süzerenim, topraklarımda iki farklı düşman birbiriyle savaşıyor. Sizden müdahale etmenizi talep ediyorum. [epidemic_scope.GetName|U] içeriden saldırırken, o [attacking_vassal.Custom('InsultAdjective')] [attacking_vassal.GetName] fırsat kollarcasına taarruza geçiyor. Korkarım bu düşmanlardan sadece biriyle yüzleşmeye yetecek gücüm var. Halkım iki cephede verdiği bu savaştan sağ çıkamayacak.\n\nSandıklarımda ne kadar altın kaldıysa hepsini size getirdim. Halkımın ve topraklarımın kaderi sizin elinizdedir."
  epidemic_events.2001.a: "Bu saçmalığa derhal bir son vereceğim."
@@ -285,11 +285,11 @@
  epidemic_events.2001.c.failure: "[vassal_war.GetName] devam ediyor"
  epidemic_events.2001.epidemic_spread.t: "[epidemic_scope.GetName] yayılmaya başladı!"
  epidemic_events.2001.danger: "#color_red Eğer savaş bir an önce sona ermezse, büyük bedelleri olabilir...#!"
-  
+
  epidemic_events.2002.t: "İki Cepheli Savaş: Bedel"
  epidemic_events.2002.desc: "[attacking_vassal.GetName] ile [pleading_vassal.GetName] arasındaki [vassal_war.GetName|U] devam ederken, iki taraf da moralini yüksek tutmaya çalışıyor. Ek olarak bu savaşın üçüncü, görünmez bir tarafı daha var ki o da [epidemic_scope.GetName].\n\nBelki [ROOT.Char.GetFaith.HighGodName] tarafından bir ceza olarak, belki de savaş sebebiyle üst üste biriken cesetlerin etkisiyle, [epidemic_scope.GetName] çok daha şiddetli bir hâl almaya başladı. İnsanların fetih ve yıkım güdüsünü taklit eden bu salgının açlığı bir türlü dinmiyor."
  epidemic_events.2002.a: "Yazık."
-  
+
  epidemic_events.2003.t: "Görünmez Düşman"
  epidemic_events.2003.desc: ""Daha bu sabah en iyi 5 adamımı kaybettim. Hepsi [epidemic_scope.GetName] sebebiyle hayatını kaybetti. Dün de 3 adam ölmüştü, üstelik hafta daha yeni başladı! Artık bıçak kemiğe dayandı! Yakında elimizde tek kalan sokaklara yığılan cesetler olacak ve hiçbir şekilde zafer elde edemeyeceğiz."\n\nBiraz küstahça olsa da [marshal.GetName] doğruları söylüyor. Savaş alanında çok yetenekli askerlerim, görünmez bir düşmanla savaşıyor.\n\n"Bunlar sadece [first_epidemic_province.GetName] bölgesindekiler, [second_epidemic_province.GetName] bölgesinde daha fazla ölen olduğu söyleniyor. Artık orduya adam bulamıyoruz. Elimizde sadece çaresiz köylüler ve cesetler kaldı.""
  epidemic_events.2003.a: "Maaşları yükseltelim, insanlar orduya katılmak isteyecektir.."
@@ -298,7 +298,7 @@
  epidemic_events.2003.b.flavor: "Köylüler kimi zaman yetenekli savaşçıların yerine geçebilir - özellikle çok dikkat verilmiyorsa.."
  epidemic_events.2003.c: "Kışlaların kapısını kapatın!"
  epidemic_events.2003.c.flavor: "Günlük talimleri olmadan askerlerim daha verimsiz olacaktır fakat bu önlem onların hayatta kalmalarını sağlayabilir."
-  
+
  epidemic_events.2005.t: "İlaç Kavanozu"
  epidemic_events.2005.desc: "[epidemic_scope.GetName] ve onun oluşturduğu tehlike her saat, her gün aklımda. Kendimi sık sık [physician.GetName] ile konuşurken buluyorum. Onun çalışma odasına yakın olmak bir nebze rahatlık sağlıyor.\n\nTüm alet edevatlarının yanında güzel boyanmış bir kavanoza diğerlerinden daha fazla özen gösterdiğini fark ediyorum. Gözlerimle kavanozu incelediğimi fark ediyor.\n\n"Anlaşılan [physician.GetCulture.GetName] [medicine_jar.GetName] dikkatinizi çekmiş. Gerçekten de sanat eseri bir kavanoz fakat asıl mucize kavanozun içinde! Bu kavanoz sizin vasallarınızın hayatlarını kurtarırken bana koruma sağlıyor.""
  epidemic_events.2005.a: "Tehlikelerden asıl korunması gereken kişi ben değil miyim?"
@@ -308,21 +308,21 @@
  epidemic_events.2005.b.success: "Boğuşarak kavanozu alıyorsunuz"
  epidemic_events.2005.b.failure: "Kavanoz kırılıyor!"
  epidemic_events.2005.c: "Öyle diyorsan öyle olsun."
-  
+
  epidemic_events.2006.t: "Dans Hastalığı"
- epidemic_events.2006.desc: "Kapımın önünde dans eden bir köylü mü? Etrafında bir sürü meraklı toplanmışken?\n\n"Affet [dance_victim.GetFirstName], efendim." Seyircilerden biri konuşuyor." [dance_victim.GetSheHe|U] birkaç gün önce dans etmeye başladı ve o zamandan beri durmadı. Sonra bazıları bile [dance_victim.GetHerHim|U]'ye bu çarpık dansta katıldı!" Seyirci yere tükürüyor ama izlemeye devam ediyor, hem büyülenmiş hem de dehşete düşmüş bir şekilde. [dance_victim.GetHerHis|U] inleyerek yüzünü çeviriyor, açıkça deliliğin eşiğinde, ama dans devam ediyor."
+ epidemic_events.2006.desc: "Dans eden bir köylü kapıma dayanmış, yanında da bir sürü meraklı insan.\n\nDans edenin yanındakilerden biri konuşmaya başlıyor: "Kusura bakmayın efendim, [dance_victim.GetFirstName] aslında böyle biri değildir. Birkaç gün evvel bir anda dans etmeye başladı, ne yaptıysak ne ettiysek onu durduramadık. Bu ettiği dansa katılmaya başlayanlar dâhi oldu!" Yanındakiler hem etkilenmiş hem de korkmuş bir yüz ifadesiyle izlemeye devam ediyor. [dance_victim.GetFirstName] inleyerek dansına devam ederken delirmenin eşiğinde olduğu anlaşılıyor."
  epidemic_events.2006.a: "Sebepsiz yere dans etmek mi? #EMP Harikulade!#!"
  epidemic_events.2006.b: "Her dansın bir sonu vardır. #EMP Değil mi?#!"
  epidemic_events.2006.c: "Halat getirin de şunu bağlayalım!"
  epidemic_events.2006.d: "[ROOT.Char.GetFaith.HighGodName] aşkına yerinde dur be [Select_CString(dance_victim.IsFemale, 'kadın', 'adam' )]!"
-  
+ 
  epidemic_events.3000.t: "$travel_danger_prefix$ Kapıdaki Kan"
  epidemic_events.3000.desc: "[epidemic_location.GetName] boydan boya kırmızıya boyanmış. Öksürükten başka bir şeyin sesi duyulmuyor. Atlarımızla ilerliyoruz fakat [companion.GetTitledFirstName] özellikle düne nazaran daha solgun görünüyor, dudaklarında hiç kan kalmamış gibi.\n\n"Yardım edin..." Ceset zannettiğimiz bedenlerden birisi hareket ediyor, vücudu tamamen [sick_peasant.Custom('disease_desc_short')]."
  epidemic_events.3000.a: ""Görmezden gelemem.""
  epidemic_events.3000.b: ""[companion.GetFirstNameNoTooltip], onlara yardım edin.""
  epidemic_events.3000.c: ""Vaktimiz yok.""
  epidemic_events.3000.b.sick: "[companion.GetShortUIName] hasta oluyor"
-  
+ 
  epidemic_events.3010.t: "$travel_danger_prefix$ Leş"
  epidemic_events.3010.desc: "[epidemic_location.GetName] dolaylarına vardığımızda su kaynaklarımızın azaldığını fark ediyoruz. Terk edilmiş gibi görünen bu köyün merkezinde bir su kuyusu var gibi görünüyor. Bineklerimizle birlikte kuyuya doğru ilerliyoruz.\n\nÇok geçmeden köyün neden terk edildiği anlaşılıyor.\n\nSokaklarda hastaların vücutları tamamen [sick_peasant.Custom('disease_desc_short')], leş yiyen kuşlar üzerlerinde tur atıyor. Ürkütücü bir görüntü."
  epidemic_events.3010.a: "Kirli suya dair bir şeyler okumuştum..."
@@ -333,7 +333,7 @@
  humour_knowledge_modifier_desc: "Bu karakter, köylülerin su kuyusundan su içtikten sonra hastalandığını fark etti."
  no_water_modifier: "Yetersiz Su Kaynağı"
  no_water_modifier_desc: "Bu karakter su kuyusundan içmek için durmadı."
-  
+
  ce1_flung_corpse: "mancınıkla ceset fırlattı"
  ce1_flung_corpse_desc: "[flingee.GetNameNotMe] adlı karakterin topraklarına mancınıkla ceset fırlattım"
  ce1_flung_corpse_desc_second_perspective: "[flingee.GetNameNotMe] adlı karakterin topraklarına mancınıkla ceset fırlattınız"
@@ -346,23 +346,23 @@
  ce1_meat_shower_desc: "[flinger.GetName] topraklarıma mancınıkla ceset fırlattı, şehre et ve kemik parçaları yağdı"
  ce1_meat_shower_desc_second_perspective: "[flinger.GetName] topraklarınıza mancınıkla ceset fırlattı, şehrinize et ve kemik parçaları yağdı"
  ce1_meat_shower_desc_third_perspective: "[flinger.GetName] [owner.GetNameNotMe] adlı karakterin topraklarına mancınıkla ceset fırlattı, şehrine et ve kemik parçaları yağdı"
-  
+
  epidemic_events.5000.t: "Bir Şeyler Yap!"
- epidemic_events.5000.desc: "[epidemic.GetName] öfkesini sürdürürken [infected_county.GetName]'dan daha fazla rapor geliyor. Bana son mektupları bizzat getiren [church_person.GetTitledFirstName], masama elini çarpıyor.\n\n"İnsanlar bizden onlara yardım etmek için bazı şeyler yapmamızı bekliyor!" [church_person.GetSheHe|U] ısrar ediyor, mesajı işaret ederek.\n\n"Şimdi, bu tiplerden daha önce de gördüm. Tek yapmamız gereken, bölgeyi rahatsız eden pis hayvanlardan bazılarını temizlemek. Bu bela onlarsız kesinlikle devam etmeyecek!" [church_person.GetFirstNameNoTooltip|U], ben düşünürken memnuniyetle arkasına yaslanıyor. "Bu [ROOT.Char.GetFaith.HighGodName]'in isteği.""
+ epidemic_events.5000.desc: "[epidemic.GetName] son hızıyla yayılmaya devam ederken [infected_county.GetName] dolaylarından yeni haberler gelmeye devam ediyor. Huzuruma çıkan [church_person.GetTitledFirstName], endişeli bir yüz ifadesiyle konuşmaya başlamadan evvel elini masaya vurarak etraftakilerin dikkatini çekmeyi başarıyor.\n\n"İnsanlar bizden bir şeyler yapmamızı bekliyor! Bir an evvel harekete geçmeliyiz! Tek yapmamız gereken bölgede bol rastlanan pis bir hayvan türünü tespit edip onları ortadan kaldırmak. Salgını ancak bu şekilde zayıflatabiliriz!" [church_person.GetFirstNameNoTooltip|U] rahatlamış bir yüz ifadesiyle konuşmasına noktayı koyuyor: "Üstelik [ROOT.Char.GetFaith.HighGodNamePossessive] buyruğu da bu şekildedir.""
  epidemic_events.5000.a: "Şu fareler yeterince pis görünüyorlar..."
  epidemic_events.5000.b: "Kediler #EMP her yere#! giriyor, kesin onların işi!"
  epidemic_events.5000.c: "Köpekler sürekli çamur içerisinde, onlardan kurtulalım!"
  epidemic_events.5000.d: "Koyunları kesmenin vakti geldi."
  epidemic_events.5000.e: ""Saçmalıyorsun, [church_person.GetFirstNameNoTooltip].""
-  
+
  epidemic_events.5001.t: "Kapıları Kapatın!"
- epidemic_events.5001.desc: "Telaşlı ayak seslerinin ardından [courtier.GetFirstName] kapıyı kırarcasına iterek odaya giriyor.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )]!" diyor kekeleyerek, elindeki parşömenleri masama bıraktıktan sonra cümlesine devam ediyor. "[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )]! [province.GetName] topraklarından geliyorum, oradaki yıkımı görseniz #EMP inanmazsınız#!! Ölüm ve yıkım bölgeye hüküm sürüyor! Sokaklar cesetlerle dolu!"\n\nMasanın üzerindeki parşömenleri inceleyerek anlatılanı mantıklı bir zemine oturtmaya çalışıyorum. Son duyduğumda [province.GetName] topraklarındaki salgın çok da şiddetli değildi..."
+ epidemic_events.5001.desc: "Telaşlı ayak seslerinin ardından [courtier.GetFirstName] kapıyı kırarcasına iterek odaya giriyor.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )]!" diyor kekeleyerek, elindeki parşömenleri masama bıraktıktan sonra cümlesine devam ediyor. "[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )]! [epidemic_county.GetNameNoTier] topraklarından geliyorum, oradaki yıkımı görseniz #EMP inanmazsınız#!! Ölüm ve yıkım bölgeye hüküm sürüyor! Sokaklar cesetlerle dolu!"\n\nMasanın üzerindeki parşömenleri inceleyerek anlatılanı mantıklı bir zemine oturtmaya çalışıyorum. Son duyduğumda [epidemic_county.GetNameNoTierNoTooltip] topraklarındaki salgın çok da şiddetli değildi..."
  epidemic_events.5001.a: ""Kapatın! Bütün kapıları #EMP kapatın!#!""
- epidemic_events.5001.b: "[province.GetName] topraklarının yöneticileri gereğini yapacaktır."
+ epidemic_events.5001.b: "[epidemic_county.GetName] topraklarının yöneticileri gereğini yapacaktır."
  epidemic_events.5001.c: ""İşim yeterince başımdan aşkın!""
  epidemic_events.5001.d: "Biraz yardım göndersek iyi olur."
  epidemic_events.5001.e: "Yapacak bir şey yok."
-  
+
  epidemic_events.5002.t: "Kıyıların Sessizliği"
  epidemic_events.5002.desc: "Birlikte yürürken [steward.GetFirstName], [coastal_province.GetName] topraklarındaki salgına dair bazı bilgiler veriyor. Uzaktan baktığımızda kıyıya dizilmiş bedenleri görebiliyoruz. Yanında ise terk edilmiş bir bot kıyıya vurmuş bir şekilde bekliyor. Bir anda ona dönmemle beraber, meraklı bir yüz ifadesiyle bana baktığını görüyorum.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], isterseniz şu bedenlerden kolaylıkla kurtulabiliriz."\n\nTekrardan yüzünü bota çevirmesiyle neyi kastettiğini anlıyorum. Nihayetinde bot terk edilmiş ve bir şekilde bu bedenleri ortadan kaldırmak gerekiyor..."
  epidemic_events.5002.a: "Bu su hangi yöne akıyordur acaba?"
@@ -373,7 +373,7 @@
  epidemic_events.5002.b.criticalfailure: "Bot batıyor, cansız bedenler kıyıya vuruyor"
  epidemic_events.5002.c: "Düzgün bir şekilde defnedilmeyi hak ediyorlar."
  epidemic_events.5002.d: "En azından bot yüzebilir gibi duruyor..."
-  
+
  epidemic_events.5003.t: "İyileştirici Eller"
  epidemic_events.5003.desc: "[location.GetName] sokaklarında ilerlerken yoldaki pislikler benden ve atımdan uzak tutulsa da, aynı şeyleri yolda yürüyenler için söylemek pek mümkün değil. Bir anda köylünün teki bana doğru hareket ediyor, bir eliyle küçük bir bebeği tuttuğunu görüyorum.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], yalvarırım size! O çok hasta, dokunuşlarınızla onu iyileştiremez misiniz?""
  epidemic_events.5003.a: ""O #EMP şeyi#! benden uzak tut!""
@@ -383,7 +383,7 @@
  epidemic_events.5003.b.success: "Bebek hâlâ hasta fakat artık daha mutlular"
  epidemic_events.5003.b.failure: "Bebek daha da fenalaşıyor"
  epidemic_events.5003.c: "İlerlemeye devam edelim, göz göze gelmemeye çalışalım..."
-  
+
  epidemic_events.5004.t: "Akın Akın"
  epidemic_events.5004.desc: "Uzaklardan gelen gürültüyü fark etmemle beraber bir anda kapı açılıyor. Muhafızlar saraya akın eden kalabalık köylülerin karşısında çaresiz bir şekilde kendilerini kurtarmaya çalışıyorlar.\n\nGenci, yaşlısı, erkeği, kadını, halkın her kesiminden kişiler bir anda önümde toplanıyor. Aralarından birisi bir adım ileri atarak konuşmaya başlıyor.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )]!" [peasant_1.GetFirstName], arkasındaki kalabalığı gösterdikten sonra konuşmasına devam ediyor. "[epidemic_scope.GetName] karşısında sizden yardım ve koruma talep ediyoruz. Unutmayın ki bizi korumak hükümdarımız olarak sizin sorumluluğunuzdur."\n\nMuhafızlarım kendilerini toparlamış bir şekilde ağzımdan çıkacak sözü bekliyor."
  epidemic_events.5004.a: ""Gelin, hoş geldiniz!""
@@ -393,7 +393,7 @@
  epidemic_events.5004.b.success: "Köylüler ikna oluyorlar"
  epidemic_events.5004.b.failure: "Köylüleri zorla dışarı çıkartmak zorunda kalıyorsunuz"
  epidemic_events.5004.c: "Muhafızlar! Götürün bunları karşımdan!"
-  
+
  epidemic_events.5005.t: "Sağlık mı Para mı?"
  epidemic_events.5005.desc: "Altın bir ülkenin can damarıdır ve bu zenginliğin çoğunluğu tüccarlar aracılığıyla gelir. [epidemic_scope.GetName] o topraklarda tüm gücüyle etkisini göstermeye devam ederken, [steward.GetFirstName] ticaret açısından elverişli kıyı bölgelerinden gelen mektupları sunuyor.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], biz bu salgınla baş edebiliriz. Tek yapmamız gereken, tüm tüccarların mallarını pazarlara koymadan önce bir süreliğine karantinada durmalarını sağlamak, böylelikle hastalık yayılmayacaktır."\n\nVekilharcın konuşma biçiminden bu fikrin maddi bir takım sonuçlarının olacağı anlaşılıyor..."
  epidemic_events.5005.a: "Kırk gün karantinada kalsınlar, zorluk çıkaranı geri gönderin."
@@ -403,7 +403,7 @@
  epidemic_events.5005.b.success: "Karantinanın gerekliliğini anlıyorlar"
  epidemic_events.5005.b.failure: "Zor kullanarak geri gönderiliyorlar"
  epidemic_events.5005.c: "Ekonomiyi riske atamayız."
-  
+
  epidemic_events.5006.t: "Gülüşmeler"
  epidemic_events.5006.desc: "Son zamanlarda saray odalarında sık sık gülüşmeler duyuyorum. [epidemic_scope.GetName] gözönünde bulundurulduğunda, bu gülüşmeler tuhaf bir durum teşkil ediyor. Yanımdan geçerken [councillor.GetFirstName] ile konuşarak ona ne olduğunu soruyorum.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], haberiniz yok mu? Hekimlerin son tavsiyesi bu. Söylediklerine göre [epidemic_scope.GetNameNoTooltip] moralsizlikten ve üzüntüden yayılıyormuş, hastalıktan korunmak için herkes #EMP çok mutlu#!!"\n\n[councillor.GetFirstNameNoTooltip] cümlesini bitirdiği gibi bir kahkaha patlatıyor."
  epidemic_events.5006.a: "Yapma yahu! Öyle miymiş! Hahaha!"
@@ -412,7 +412,7 @@
  epidemic_events.5006.c.success: "Daha iyi hissediyorsunuz"
  epidemic_events.5006.c.failure: "Pek bir faydası olmuyor"
  epidemic_events.5006.d: "Yok artık daha neler."
-  
+
  epidemic_events.5007.t: "Cadılık ve Kurtuluş"
  epidemic_events.5007.desc: "Bu kargaşa da neyin nesi? [accuser.GetFirstName] tarafından önderlik edilen bir güruh, zavallının birinin etrafını sarmış gibi görünüyor. Dikkatlice baktığımda kalabalığın ortasında [herbalist.GetFirstName] gözüme çarpıyor. [accuser.GetFirstName] tarafından yapılan tüm suçlamalara kendince yanıt vermeye çalışıyor.\n\n"-yani dediğim odur ki, [epidemic_scope.GetName] bu şekilde yayılabiliyorsa bir sebebi de sen #EMP marifetini#! yerine getirebil diye topladığın bitkiler! Bu salgından #EMP sen#! sorumlusun!"\n\n[herbalist.GetFirstNameNoTooltip] parmağını uzatarak yapılan suçlamalara aynı seviyeden cevap vermeye çalışıyor. Anlaşılan müdahale etmezsem işler büyüyecek."
  epidemic_events.5007.a: ""Yeter! Bitkisel tedaviler önemli bir sanattır.""
@@ -422,23 +422,23 @@
  epidemic_events.5007.c.failure: "Kalabalık argümanlarınızı duymazdan geliyor"
  epidemic_events.5007.d: ""Yeter! Yersiz suçlamalarına derhâl son ver [accuser.GetFirstNameNoTooltip].""
  epidemic_events.5007.e: "Belki de [herbalist.GetFirstNameNoTooltip] bir daha yapmamaya söz verebilir?"
-  
+
  epidemic_events.5008.t: "Gözden Irak"
  epidemic_events.5008.desc: "Tam anlamıyla #EMP iyi#! bir şey olduğu söylenemez fakat [epidemic_scope.GetName] başladığından beri birtakım faydalarını fark etmeye başlıyorum.\n\nGelen misafirlerin sayısı tam da istediğim gibi iyice azaldı, hizmetkârlar bile tek tük karşıma çıkıyorlar. Tüm bunların hastalığı kapmama engel olup olmayacağı bilinmez fakat şimdilik salgının etkilerinden memnunum diyebilirim.\n\nHer şeye rağmen, belki de kendimi göstermem gerekiyordur. Böyle bir #EMP riski#! almaya cüret edebilir miyim?"
  epidemic_events.5008.a: "Kimse benim iznim olmadan beni göremez!"
  epidemic_events.5008.b: "Kullarım beni görmeli."
  epidemic_events.5008.c: "[epidemic_scope.GetNameNoTooltip] iyi denk geldi!"
-  
+
  epidemic_events.5009.t: "Şifalı Koku"
- epidemic_events.5009.desc: "Bu gibi zamanlarda, alışılmışın dışındaki kokulardan uzak durmak en iyisidir. Ona rağmen pazarın köşesinden gelen güzel bir koku dikkatimi çekiyor.\n\n"Keselerinizi benden alın! Sadece en taze ve en kaliteli bitkiler kullanıldı!" Tezgahın etrafı güzel kokulu bitkilerle dolu ve mallarını satarken iki elinde bitkilerle dolu bir kese tutuyor. Bir süre sonra beni fark ederek denemem için birini uzatıyor. "Sadece en iyi bitkileri kullandım efendim, bunu alın ve [epidemic_scope.GetName] yokmuş gibi davranın!"\n\nİncelemek için uzattığı keseyi alıyorum. #EMP Gerçekten de#! hastalığı defedecek bir şeymiş gibi görünüyor..."
+ epidemic_events.5009.desc: "Bu gibi zamanlarda, alışılmışın dışındaki kokulardan uzak durmak en iyisidir. Ona rağmen pazarın köşesinden gelen güzel bir koku dikkatimi çekiyor.\n\n"Keselerinizi benden alın! Sadece en taze ve en kaliteli bitkiler kullanıldı!" Tezgâhın etrafı güzel kokulu bitkilerle dolu ve mallarını satarken iki elinde bitkilerle dolu bir kese tutuyor. Bir süre sonra beni fark ederek denemem için birini uzatıyor. "Sadece en iyi bitkileri kullandım efendim, bunu alın ve [epidemic_scope.GetName] yokmuş gibi davranın!"\n\nİncelemek için uzattığı keseyi alıyorum. #EMP Gerçekten de#! hastalığı defedecek bir şeymiş gibi görünüyor..."
  epidemic_events.5009.a: ""Elinde bundan kaç tane var?""
  epidemic_events.5009.b: ""Alacağım ama indirim yaparsan.""
- epidemic_events.5009.b.success: "Tezgahtar indirim yapmaya razı oluyor"
- epidemic_events.5009.b.failure: "Tezgahtar indirim yapmaya razı olmuyor"
- epidemic_events.5009.b.criticalfailure: "Tezgahtar satmamaya karar veriyor"
+ epidemic_events.5009.b.success: "Tezgâhtar indirim yapmaya razı oluyor"
+ epidemic_events.5009.b.failure: "Tezgâhtar indirim yapmaya razı olmuyor"
+ epidemic_events.5009.b.criticalfailure: "Tezgâhtar satmamaya karar veriyor"
  epidemic_events.5009.c: "Bir tane alsam bir şey olmaz."
  epidemic_events.5009.d: "Gereksiz işler."
-  
+
  epidemic_events.5010.t: "[capital.GetBaseNameNoTierNoTooltip] Sokaklarında Salgın"
  epidemic_events.5010.opening: "Nihayet geldi. Salgın [capital.GetBaseNameNoTier] sokaklarında dolaşıyor, tırpanıyla yoluna çıkan herkesi kurban ediyor.\n\n"
  epidemic_events.5010.santiago: "Artık pek azı Aziz James'in Yolundan yürüyor. Sadece en dayanıklı ve en dindar olanlar hastalıktan kırılan bu şehirden geçmeye cüret ediyor.\n\nKahkahalar ve çalgı sesleriyle çınlayan meydanlar hastalıktan kırılanların sığınma alanı hâline gelmiş durumda. Ölüler ve ölmek üzere olanlar, yalnızlık içerisinde sokakları dolduruyorlar."
@@ -457,16 +457,15 @@
  epidemic_events.5010.b.win: "Şehri ayağa kaldırmakta kararlısınız"
  epidemic_events.5010.b.neutral: "Zorluklar karşısında çekiniyorsunuz"
  epidemic_events.5010.b.lose: "Dehşete kapılıyorsunuz"
-  
-  #AGOT Modified 
+
+   #AGOT Modified 
  #epidemic_events.5900.t: "Kara Ölüm"
- epidemic_events.5900.t: "Büyük Bahar Hastalığı"
   #AGOT Modified 
  #epidemic_events.5900.desc: "Veba ülkeyi istila ediyor.\n\nKurbanların üzerinde tüyler ürpertici, köpüren hıyarcıklar büyüyor, yardım için acınası çığlıkları kendi irin dolu boğazlarında boğulurken yavaş yavaş bastırılıyor.\n\nEn alçak serseriden en çok kutlanan imparatora kadar herkes acımasız vebanın ayrım gözetmeyen tırpanından korkuyor. Hayatta kalanlar, etraflarındaki herkes yok olurken çaresizce izlemek zorunda kalıyor.\n\nAdanmışlar bir kurtarıcı için ilahi olana, güçlüler ise zenginliklerine bakıyor, ancak hiçbiri gerçekten güvende olamaz. Korkunç sarmaşıklar ülkeye yayılıyor, artık nefes alamayacak hale gelene kadar onu sıkıştırıyor.\n\nBüyük Bahar Hastalığı üzerimizde. [ROOT.Char.GetFaith.HighGodName] hepimizi kurtar."
  epidemic_events.5900.desc: "Salgın tüm diyara musallat olmuş durumda.\n\nKurbanların derilerinde ürkütücü hıyarcıklar büyüyor, boğazlarındaki irin yardım çığlığı atmalarına mani oluyor.\n\nEn alt tabakadaki köylüden şımarık imparatorlara kadar herkes bu acımasız vebanın tırpanından korkuyor. Hayatta kalmayı başarabilenler, etraflarındaki her şeyin ölümünü çaresizce izliyor.\n\nDindar olanlar rablerine, zenginler servetlerine sığınırken kimse gerçek anlamda güvende değil. Salgının kolları toprağı sarıyor ve nefes alamayacak hâle getirene kadar onu boğuyor.\n\nBüyük Bahar Hastalığı kapımızda. [ROOT.Char.GetFaith.HighGodName] yardımcımız olsun..."
  epidemic_events.5900.christian: ""Yedi adına, yardım edin.""
  epidemic_events.5900.fallback: "Bu zorlu günleri de atlatacağız."
-  
+
  epidemic_events.5901.t: "Dirsek Derinliği"
  epidemic_events.5901.desc: "Kadavra bir masanın üzerine yerleştirilmiş, masanın etrafında ürkütücü ekipmanlar, ben ve hekimim [physician.GetFirstName] duruyor.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], emin değilim..." diyor [physician.GetFirstNameNoTooltip] gözleri ayaklarına sabitlenmiş bir şekilde, gerginliğini gizleyemiyor. "Bu kadavradan ne öğrenebileceğimizi bilmiyorum..."\n\nNe öğrenebileceğimizi o çok iyi biliyor, sadece bunu ondan sormamı istemiyor. Hastalık taşıyan birinin kadavrasını incelemek hastalıkla başetmede çok önemli bilgiler verebilir. Tek mesele, bu incelemeyi yaparken hastalığı kapma ihtimalinin olup olmadığı..."
  epidemic_events.5901.a: ""Gel birlikte yapalım.""
@@ -474,19 +473,19 @@
  epidemic_events.5901.a.tt.plague: "Hastalık Kapıldı"
  epidemic_events.5901.b: "İncelemeye başlayın."
  epidemic_events.5901.c: "Yapmasak da olur."
-  
+
  epidemic_events.5902.t: "Sınır Geçişleri"
  epidemic_events.5902.desc: "Aceleyle atımdan inip, [border_county.GetNameNoTier] kontluğunun sınır bölgesi olan [border_province.GetName] topraklarında askerlerin arasından geçiyorum. Mareşalim [marshal.GetFirstName], son verdiği raporda bölgeyi bizzat görmem gerektiğinden bahsetmişti ve etrafı biraz kolaçan ettiğimde bunun neden olduğunu anlıyorum.\n\nYorgun ve aç görünen, giysileri paçavraya dönmüş insanlar. Görünen o ki uzak topraklardaki bir salgından kaçarak buraya sığınmışlar. Bu salgını beraberlerinde getirip getirmediklerinin garantisini kimse veremez.\n\nDüşünceli bir şekilde önümdeki manzarayı izlerken aralarından birinin öksürdüğünü fark ediyorum. [marshal.GetFirstNameNoTooltip] hızlıca ağzını kapatıyor."
  epidemic_events.5902.a: "Risk alamayız. Herkesi öldürün."
  epidemic_events.5902.b: "Belki de geçici kamplar kurabiliriz."
  epidemic_events.5902.c: "Geri gönderin."
  epidemic_events.5902.d: "Bırakın kalsınlar."
-  
+
  epidemic_events.5903.t: "Basit Zevkler Bir Kenara"
- epidemic_events.5903.desc: ""[ROOT.Char.GetFirstName]! Olmaz!" [family.GetFirstName] atımla beraber dışarı yönelmişken bir anda karşıma çıkıyor.\n\n"Anlatılanları biliyorsun. Her yerde salgın ve hastalık varmış..." Ellerini mutsuz bir şekilde sıkıyor. "Burada, surların arkasında kalmalısın. Ancak bu şekilde güvende olabilirsin. Lütfen beni dinle."\n\nİç geçiriyorum. Biraz daha hızlı davransaydım fark edilmeden kapıdan geçip gitmiştim bile."
+ epidemic_events.5903.desc: ""[ROOT.Char.GetFirstName]! Olmaz!" [family.GetFirstName] atımla beraber dışarı yönelmişken bir anda karşıma çıkıyor.\n\n"Anlatılanları biliyorsun. Her yerde salgın ve hastalık varmış..." Ellerini mutsuz bir şekilde sıkıyor. "Burada, [SelectLocalization( IsLandlessAdventurer( ROOT.Char ), 'kampın içinde', 'surların arkasında')] kalmalısın. Ancak bu şekilde güvende olabilirsin. Lütfen beni dinle."\n\nİç geçiriyorum. Biraz daha hızlı davransaydım fark edilmeden kapıdan geçip gitmiştim bile." 
  epidemic_events.5903.a: "Büyük ihtimalle haklı."
  epidemic_events.5903.b: ""Bana bir şey olmaz canım.""
-  
+
  epidemic_events.5904.t: "Kıyamet Tellalı"
  epidemic_events.5904.desc: "Pazarlar her zaman gürültü ve koşuşturmacayla doludur fakat bugün etrafın normalden daha da kargaşa içerisinde olduğunu fark ediyorum. Çok geçmeden suçlu kendini belli ediyor, uzaklarda bir yerde avazı çıktığı kadar bağırıyor.\n\n"Kıyamet vakti geldi! Hepimiz helak olacağız! Her şey nasıl yazdıysa öyle gerçekleşiyor!"\n\nVaizin ağzından uçuşan tükürükler oldukça rahatsız edici olsa da, etrafında toplanan insan sayısı sürekli artıyor."
  epidemic_events.5904.a: "Haklı! Kıyamete hazırlanmalıyız!"
@@ -496,7 +495,7 @@
  epidemic_events.5904.c.tt.failure: "Tartışmayı kaybediyorsunuz"
  epidemic_events.5904.d: ""Onu dinlemeyin!""
  epidemic_events.5904.d.tt: "[doomsday_province.GetName] ile komşu tüm baronluklar #color_white 15%#! ihtimalle aynı etkiye sahip olur"
-  
+
  epidemic_events.5905.t: "Sinirleri Yatıştırma"
  epidemic_events.5905.desc: "Beni görmelerinin yarattığı şok insanlar üzerindeki etkisini yitirdikten sonra, bu meyhane dinlenmek için oldukça güzel bir yer hâline geldi. Her şeye rağmen hancı biraz gergin görünüyor.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], büyük salgını duydunuz değil mi? İnsanlara neler yaptığını duydunuz mu? Söylenene göre hastalığa kapılanlar #EMP [ROOT.GetCharacter.Custom('GetPlagueEffect')]!#!" Hancının içerisinde olduğu panik hâli yüzünden okunuyor. "Yani dediklerine göre öyleymiş! Eğer doğruysa, nasıl hayatta kalacağız?!"\n\nHancı tüm bu konuşmasıyla meyhanedekilerin dikkatini çekmeyi başarmış, herkes benim ne diyeceğimi bekliyor..."
  epidemic_events.5905.a: ""Panik yapmanıza gerek yok. Bana güvenebilirsiniz, ben hekimim.""
@@ -505,7 +504,7 @@
  epidemic_events.5905.b.tt.success: "Onları başarıyla ikna ediyorsunuz"
  epidemic_events.5905.b.tt.failure: "İkna olmuyorlar"
  epidemic_events.5905.c: "Onunla tartışmamın bir faydası olacağını sanmıyorum."
-  
+
  epidemic_events.5906.t: "Kırbaççılar"
  epidemic_events.5906.desc: "Muhafızlar konsey odasına girmeden evvel genelde birkaç kere düşünürler fakat bugün önlerinde mareşalim [marshal.GetFirstName] ile birlikte bir anda rahatlıkla içeriye dalıyorlar. Arkalarında elinde kırbaç taşıyan çekik gözlü tuhaf biri dikkatimi çekiyor.\n\n"Onu [doomsday_province.GetName] dolaylarında bulduk, elindeki şeyle kendini dövüyordu." [marshal.GetFirstNameNoTooltip|U] gözleriyle kırbacı işaret ediyordu. "Bölge halkında ciddi bir rahatsızlığa sebep olmuş, herkese büyük bir salgının geldiğini ve herkesin tövbe edip günahlarından arınması gerektiğini söylüyormuş.""
  epidemic_events.5906.a: ""Sen ve senin gibiler [ROOT.Char.GetFaith.GetAdjectiveNoTooltip] inancına zarar veriyor!""
@@ -514,9 +513,9 @@
  epidemic_events.5906.b: "Belki de haklılık payı vardır..."
  epidemic_events.5906.c: ""[marshal.GetFirstNameNoTooltip], tık bunu içeriye.""
  epidemic_events.5906.d: "Bırakın gitsin, kendisinden başkasına zararı yok."
- epidemic_events.5906.d.tt: "[doomsday_province.GetName]'ı çevreleyen tüm baronlukların aynı değiştiriciyi kazanma şansı #color_white %25#!'dir"
+ epidemic_events.5906.d.tt: "[doomsday_province.GetName] etrafındaki tüm baronlukların aynı etkiye sahip olması için #color_white %25'lik#! bir olasılık var"
  fervor_loss_flagellants: "Kırbaççılar serbest bırakıldı"
-  
+
  epidemic_events.5907.t: "Sabah Güneşi"
  epidemic_events.5907.desc: "Sabah güneşi yüzüme vururken göz kapaklarım titreyerek açılıyor. Biraz geriniyorum, biraz esniyorum derken... #EMP bir öksürük!#!\n\nÖnce boğazımın kuruduğunu fark ediyorum. Gözlerim kızarmış, sanki burnum akıyor...\n\nOlamaz... Kesinlikle olamaz... Ey yüce [ROOT.Char.GetFaith.HighGodName], beni bu kaderden kurtar. Yoksa bu korkunç veba topraklarıma kadar geldi de beni de kurbanı hâline mi getirdi?"
  epidemic_events.5907.a: "Hekimim bana en doğru tedavileri uygulayacaktır."
@@ -524,13 +523,13 @@
  epidemic_events.5907.b.success: "Bir şeyiniz yok"
  epidemic_events.5907.b.failure: "Sadece biraz rahatsızlanmışsınız"
  epidemic_events.5907.b.criticalfailure: "Gerçekten hastalanıyorsunuz"
-  
+
  epidemic_events.5908.t: "Mezarcılar"
  epidemic_events.5908.desc: "Arzuhâlcilerden ilki öne doğru bir adım atıyor. Hâlinden çok da üst tabakadan biri olmadığı anlaşılıyor. Özellikle tırnaklarının kirliliği, görünümüne ne kadar az özen gösterdiğini kanıtlar nitelikte.\n\n"Efendim, bendeniz [province.GetName] bölgesindeki mezarcıları temsilen burada bulunuyorum. Mezarcılar olarak sizden bir talebimiz vardır. Biliyorsunuz, korkunç bir veba sınırımıza kadar geldi. Salgının yayılması durumunda bize büyük bir iş düşeceği ortadadır."\n\n"Salgın durumunda hastalıklı cesetlerle biz muhatap olacağız, bu da canımızı tehlikeye atacağımız anlamına gelir. Sizden talebimiz, ücretlerimizde bu durumu gözönünde bulundurarak artış yapmanızdır. Anlayış göstereceğinizi umuyoruz.""
  epidemic_events.5908.a: ""Bir daha böyle bir şey sorarsan sana kendi mezarını kazdıracağım.""
  epidemic_events.5908.b: "Haklılar, gerekli artışı yapalım."
  epidemic_events.5908.c: ""Hadi oradan! Sanki mezarcı bulamayacağız.""
-  
+
  epidemic_events.5999.t: "Kararan Ufuk"
  epidemic_events.5999.desc: "Masamın üzerinde biriken parşömenlerin her biri aynı konudan bahsediyor. Cümlelere panik hâkim, anlatılanlar midemin kalkmasına sebep oluyor.\n\nHastalığın önce bir üşümeyle kendisini gösterdiğini, ardından kurbanların koltuk altlarında hıyarcıklar oluştuğunu, nefes alırken kan kustuklarını, dudakların ve parmakların karardığını ve en sonunda zengin veya fakir ayırt etmeksizin işin ölümle sonuçlandığını bildiriyorlar. Yazan kim olursa olsun, anlatılanlar değişmiyor.\n\nBu raporlar şimdilik uzak topraklardan gelse de, raporların tarihlerine baktıkça ürperiyorum.\n\nSalgın topraklarıma doğru yaklaşıyor."
  epidemic_events.5999.a: "Hah! Ölüyorlarsa ölsünler."
@@ -539,7 +538,7 @@
  epidemic_events.5999.b.tt: "Kapıları kapatalım, güller dikelim!"
  epidemic_events.5999.c.christian: "#EMP "Baktım ve soluk bir at gördüm..."#!"
  epidemic_events.5999.c.notchristian: "Bizleri karanlık günler bekliyor..."
-  
+
  epidemic_events.0110.t: "Küllerimiz"
  epidemic_events.0110.desc: "Nihayet salgın ülkeyi terk etti ve bunu ardında bıraktığı kaosun ardından küllerimizden doğmak için bir fırsat olarak değerlendirebiliriz.\n\nEski dünyanın enkazını ardımızda bırakıp, geleceğe odaklanmanın vakti geldi."
  epidemic_events.0110.desc.new_capital: "\n\nHayatta kalanların birçoğu yeni evleri olarak [new_preferred_capital.GetName] topraklarına göç etmeye başladı. Bu durum yeni bir başkent için heyecan verici bir fırsat olabilir."
@@ -547,10 +546,10 @@
  epidemic_events.0110.b: "Hiçbir masraftan kaçınmayacağız."
  epidemic_events.0110.c: "Yapabileceğim bir şey yok."
  every_county_infected_10_years: "Son 10 yıl içerisinde hastalık kapan her [county|E]"
-  
- epidemic_events.alert_title: "[infected_county.GetName] Topraklarında Salgın"
- epidemic_events.alert_description: "[infected_county.GetName] topraklarında salgın belirdi"
+
+ epidemic_events.alert_title: "[infected_county.GetNameNoTierNoTooltip] Topraklarında Salgın"
+ epidemic_events.alert_description: "[infected_county.GetName] topraklarında [epidemic.GetName] denilen bir [epidemic|E] belirdi"
  msg_epidemic_infection: "[epidemic.GetNameNoTooltip] Yayılıyor"
- msg_epidemic_infection_desc_1: "[epidemic.GetName], [LEFT_TITLE.GetName] topraklarına yayıldı"
- msg_epidemic_infection_desc_2: "[epidemic.GetName], [LEFT_TITLE.GetName] ve [RIGHT_TITLE.GetName] topraklarına yayıldı"
- msg_epidemic_infection_desc: "[epidemic.GetName]; [LEFT_TITLE.GetName], [RIGHT_TITLE.GetName] ve $message_consolidation_others$ toprağa yayıldı"
+ msg_epidemic_infection_desc_1: "[epidemic.GetName] denilen bir [epidemic|E], [LEFT_TITLE.GetProvince.GetBaronyNameExplicitly] topraklarına yayıldı"
+ msg_epidemic_infection_desc_2: "[epidemic.GetName]denilen bir [epidemic|E], [LEFT_TITLE.GetProvince.GetBaronyNameExplicitly] ve [RIGHT_TITLE.GetProvince.GetBaronyNameExplicitly] topraklarına yayıldı"
+ msg_epidemic_infection_desc: "[epidemic.GetName]denilen bir [epidemic|E]; [LEFT_TITLE.GetProvince.GetBaronyNameExplicitly], [RIGHT_TITLE.GetProvince.GetBaronyNameExplicitly] ve $message_consolidation_others$ toprağa yayıldı"
