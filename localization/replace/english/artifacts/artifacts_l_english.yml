@@ -1,48 +1,48 @@
 ﻿l_english:
- artifact_type_helmet:0 "taç"
- artifact_type_primary_armament:0 "silah"
- artifact_type_armor:0 "zırh"
- artifact_type_regalia:0 "kraliyet sembolü"
- artifact_type_trinket:0 "biblo"
- artifact_type_wall_big:0 "asılı dekorasyon"
- artifact_type_wall_small:0 "$artifact_type_wall_big$"
- artifact_type_throne:0 "taht"
- artifact_type_sculpture:0 "heykel"
- artifact_type_book:0 "kitap"
- artifact_type_pedestal:0 "$artifact_type_sculpture$"
- artifact_type_elixir:0 "iksir"
-
-# These are used for when we generate the title at the same time as we create the artifact
- artifact_name_prefix:1 "[SCOPE.Custom('ArtifactPrefixGeneric')|U]"
- artifact_name_prefix_owner_name:0 "[owner.GetTitledFirstNamePossessiveNoTooltip]"
- artifact_name_prefix_inspiration_owner_name:0 "[inspiration_owner.GetTitledFirstNamePossessiveNoTooltip]"
- artifact_name_prefix_owner_culture:0 "[owner.GetCulture.GetNameNoTooltip]"
- artifact_name_prefix_location_culture:1 "[owner.MakeScope.Var('adventure_artifact_location').Province.GetHolder.GetCulture.GetNameNoTooltip]"
- artifact_name_prefix_owner_dynasty:1 "[owner.GetDynasty.GetBaseNameNoTooltip]"
- artifact_name_prefix_descriptor_high_quality:0 "Görkemli"
- artifact_name_prefix_descriptor_medium_quality:0 "Sağlam"
- artifact_name_prefix_descriptor_medium_alt_version_quality:0 "Kusursuz"
- artifact_name_prefix_descriptor_low_quality:1 "Güzel"
-
-# These are used for when we generate the title after the artifact is already created since we have to use different scopes then
- artifact_name_prefix_artifact_scope:0 "[Artifact.GetOwner.Custom('ArtifactPrefixGenericAfterCreation')|U]"
- artifact_name_prefix_artifact_scope_owner_name:0 "[Artifact.GetOwner.GetTitledFirstNamePossessiveNoTooltip]"
- artifact_name_prefix_artifact_scope_owner_culture:0 "[Artifact.GetOwner.GetCulture.GetNameNoTooltip]"
- artifact_name_prefix_artifact_scope_owner_dynasty:1 "[Artifact.GetOwner.GetDynasty.GetBaseNameNoTooltip]"
-
- placeholder:0 "$holderplace$"
- holder_place:0 "#D Holderplace#!"
-
- ##########
- # Metals #
- ##########
-
- # Irons and steels for use in arms and armor. All steels are just regional names for wootz steel, which is only known to have been manufactured in Southern India (but ingots of it traveled the silk road).
- metal_iron:0 "demir"
- metal_wrought_iron:0 "işlenmiş demir"
- metal_folded_iron:0 "katlanmış demir"
- metal_steel:0 "çelik"
-   #AGOT Modified 
+ artifact_type_helmet: "taç"
+ artifact_type_primary_armament: "silah"
+ artifact_type_armor: "zırh"
+ artifact_type_regalia: "kraliyet sembolü"
+ artifact_type_trinket: "biblo"
+ artifact_type_wall_big: "asılı dekorasyon"
+ artifact_type_wall_small: "$artifact_type_wall_big$"
+ artifact_type_throne: "taht"
+ artifact_type_sculpture: "heykel"
+ artifact_type_book: "kitap"
+ artifact_type_pedestal: "$artifact_type_sculpture$"
+ artifact_type_elixir: "iksir"
+  
+ # These are used for when we generate the title at the same time as we create the artifact 
+ artifact_name_prefix: "[SCOPE.Custom('ArtifactPrefixGeneric')|U]"
+ artifact_name_prefix_owner_name: "[owner.GetTitledFirstNamePossessiveNoTooltip]"
+ artifact_name_prefix_inspiration_owner_name: "[inspiration_owner.GetTitledFirstNamePossessiveNoTooltip]"
+ artifact_name_prefix_owner_culture: "[owner.GetCulture.GetNameNoTooltip]"
+ artifact_name_prefix_location_culture: "[owner.MakeScope.Var('adventure_artifact_location').Province.GetHolder.GetCulture.GetNameNoTooltip]"
+ artifact_name_prefix_owner_dynasty: "[owner.GetDynasty.GetBaseNameNoTooltip]"
+ artifact_name_prefix_descriptor_high_quality: "Görkemli"
+ artifact_name_prefix_descriptor_medium_quality: "Sağlam"
+ artifact_name_prefix_descriptor_medium_alt_version_quality: "Kusursuz"
+ artifact_name_prefix_descriptor_low_quality: "Güzel"
+  
+ # These are used for when we generate the title after the artifact is already created since we have to use different scopes then 
+ artifact_name_prefix_artifact_scope: "[Artifact.GetOwner.Custom('ArtifactPrefixGenericAfterCreation')|U]"
+ artifact_name_prefix_artifact_scope_owner_name: "[Artifact.GetOwner.GetTitledFirstNamePossessiveNoTooltip]"
+ artifact_name_prefix_artifact_scope_owner_culture: "[Artifact.GetOwner.GetCulture.GetNameNoTooltip]"
+ artifact_name_prefix_artifact_scope_owner_dynasty: "[Artifact.GetOwner.GetDynasty.GetBaseNameNoTooltip]"
+  
+ placeholder: "$holderplace$"
+ holder_place: "#D Holderplace#!"
+  
+  ########## 
+  # Metals # 
+  ########## 
+  
+  # Irons and steels for use in arms and armor. All steels are just regional names for wootz steel, which is only known to have been manufactured in Southern India (but ingots of it traveled the silk road). 
+ metal_iron: "demir"
+ metal_wrought_iron: "işlenmiş demir"
+ metal_folded_iron: "katlanmış demir"
+ metal_steel: "çelik"
+  #AGOT Modified 
  #metal_wootz_steel: "wootz steel"
  metal_wootz_steel: "YiTish çeliği"
   #AGOT Modified 
@@ -51,44 +51,44 @@
   #AGOT Modified 
  #metal_damascus_steel: "Damascus steel"
  metal_damascus_steel: "Valyrian çeliği"
-
- # Metal Feature Derivatives 
- feature_blade_metal_wrought_iron:0 "$metal_wrought_iron$"
- feature_blade_metal_folded_iron:0 "$metal_folded_iron$"
- feature_blade_metal_wootz_steel:0 "$metal_wootz_steel$"
- feature_blade_metal_damascus_steel:1 "$metal_damascus_steel$"
- feature_blade_metal_bulat_steel:1 "$metal_bulat_steel$"
-
- feature_head_metal_wrought_iron:0 "$metal_wrought_iron$"
- feature_head_metal_folded_iron:0 "$metal_folded_iron$"
- feature_head_metal_wootz_steel:0 "$metal_wootz_steel$"
- feature_head_metal_damascus_steel:1 "$metal_damascus_steel$"
- feature_head_metal_bulat_steel:1 "$metal_bulat_steel$"
-
- feature_handle_metal_wrought_iron:0 "$metal_wrought_iron$"
- feature_handle_metal_folded_iron:0 "$metal_folded_iron$"
- feature_handle_metal_wootz_steel:0 "$metal_wootz_steel$"
- feature_handle_metal_damascus_steel:1 "$metal_damascus_steel$"
- feature_handle_metal_bulat_steel:1 "$metal_bulat_steel$"
-
- # Precious/decorative metals and metal-based compounds
- metal_gold:0 "altın"
- metal_electrum:0 "gümüşlü altın"
- metal_silver:0 "gümüş"
- metal_brass:0 "pirinç"
- metal_bronze:0 "bronz"
- metal_copper:0 "bakır"
- metal_pewter:0 "kalaylı kurşun"
- metal_latten:0 "kalaylı pirinç"
-
- # Pure black 'alloy' of sulfur, copper, silver, and lead. Commonly used as an inlay in engraved or etched metals, or sometimes as a background in reliefs.
- metal_niello:0 "savat"
- # Golden (gold-leafed) bronze. More common in East Asia but could be found in Europe.
- metal_gilt_bronze:0 "yaldızlı bronz"
- # Gilded (gold-leafed) silver. More common in Europe but could be found in East Asia.
- metal_silver_gilt:0 "yaldızlı gümüş"
- # Extremely rare bronze alloy from antiquity. Manufacturing process unknomwn, statues made from it were more valuable than gold.
-   #AGOT Modified 
+  
+  # Metal Feature Derivatives 
+ feature_blade_metal_wrought_iron: "$metal_wrought_iron$"
+ feature_blade_metal_folded_iron: "$metal_folded_iron$"
+ feature_blade_metal_wootz_steel: "$metal_wootz_steel$"
+ feature_blade_metal_damascus_steel: "$metal_damascus_steel$"
+ feature_blade_metal_bulat_steel: "$metal_bulat_steel$"
+  
+ feature_head_metal_wrought_iron: "$metal_wrought_iron$"
+ feature_head_metal_folded_iron: "$metal_folded_iron$"
+ feature_head_metal_wootz_steel: "$metal_wootz_steel$"
+ feature_head_metal_damascus_steel: "$metal_damascus_steel$"
+ feature_head_metal_bulat_steel: "$metal_bulat_steel$"
+  
+ feature_handle_metal_wrought_iron: "$metal_wrought_iron$"
+ feature_handle_metal_folded_iron: "$metal_folded_iron$"
+ feature_handle_metal_wootz_steel: "$metal_wootz_steel$"
+ feature_handle_metal_damascus_steel: "$metal_damascus_steel$"
+ feature_handle_metal_bulat_steel: "$metal_bulat_steel$"
+  
+  # Precious/decorative metals and metal-based compounds 
+ metal_gold: "altın"
+ metal_electrum: "gümüşlü altın"
+ metal_silver: "gümüş"
+ metal_brass: "pirinç"
+ metal_bronze: "bronz"
+ metal_copper: "bakır"
+ metal_pewter: "kalaylı kurşun"
+ metal_latten: "kalaylı pirinç"
+  
+  # Pure black 'alloy' of sulfur, copper, silver, and lead. Commonly used as an inlay in engraved or etched metals, or sometimes as a background in reliefs. 
+ metal_niello: "savat"
+  # Golden (gold-leafed) bronze. More common in East Asia but could be found in Europe. 
+ metal_gilt_bronze: "yaldızlı bronz"
+  # Gilded (gold-leafed) silver. More common in Europe but could be found in East Asia. 
+ metal_silver_gilt: "yaldızlı gümüş"
+  # Extremely rare bronze alloy from antiquity. Manufacturing process unknomwn, statues made from it were more valuable than gold. 
+  #AGOT Modified 
  #metal_corinthian_bronze: "Corinthian bronze"
  metal_corinthian_bronze: "rünik bronz"
   # Alloy of gold, silver, copper, zinc, and iron. Sacred in Hinduism, used for making jewelery and decorating statues. 
@@ -97,628 +97,628 @@
  metal_panchaloha: "Qaathi metali"
   # High-purity iron collected from meteorites. Auspicious in Tibetan culture, where it was known as 'thokcha'. 
  metal_meteoric_iron: "göktaşı demiri"
-
- feature_decoration_material_inlay_gold:0 "$metal_gold$"
- feature_decoration_material_inlay_electrum:0 "$metal_electrum$"
- feature_decoration_material_inlay_silver:0 "$metal_silver$"
- feature_decoration_material_inlay_copper:0 "$metal_copper$"
- feature_decoration_material_inlay_pewter:0 "$metal_pewter$"
- feature_decoration_material_inlay_niello:0 "$metal_niello$"
-
- feature_decoration_material_wire_gold:0 "$metal_gold$"
- feature_decoration_material_wire_electrum:0 "$metal_electrum$"
- feature_decoration_material_wire_silver:0 "$metal_silver$"
- feature_decoration_material_wire_brass:0 "$metal_brass$"
- feature_decoration_material_wire_bronze:0 "$metal_bronze$"
- feature_decoration_material_wire_copper:0 "$metal_copper$"
- feature_decoration_material_wire_pewter:0 "$metal_pewter$"
- feature_decoration_material_wire_latten:0 "$metal_latten$"
-
- #############
- # Earthware #
- #############
-
- earthware_clay:0 "kil"
- earthware_stone:0 "taş"
- earthware_terracotta:0 "terakota"
- earthware_porcelain:0 "porselen"
-
- #########
- # Woods #
- #########
- wood:0 "ahşap"
-
- # Found Everywhere
- wood_ash:0 "dişbudak"
- wood_oak:0 "meşe"
-
- # Widespread Regional - Elm (Found all over Europe except southern Spain, Italy, and Greece)
- wood_elm:0 "karaağaç"
-
- # Widespread Regional - Walnut (found all over Europe excluding Scotland and Scandinavia, but including Northern Anatolia/Persia)
- wood_walnut:0 "ceviz"
-
- # Widespread Regional - Maple (found all over Europe excluding Scotland and northern Scandinavia, as well as northern Morocco/Tunisia/Persia and all of Anatolia)
- wood_maple:0 "akçaağaç"
-
- # Widespread Regional - Pines and Firs (found all over Europe except northern France/Germany and the Balkans, but spreads East through Anatolia, Scandinavia, Russia, China, and Tibet)
- wood_pine:0 "çam"
- wood_fir:0 "köknar"
-
- # Widespread Regional - Subsaharan Africa
- wood_fleroya:0 "fleroya"
- wood_sycomore:0 "çınar"
-   #AGOT Modified 
+  
+ feature_decoration_material_inlay_gold: "$metal_gold$"
+ feature_decoration_material_inlay_electrum: "$metal_electrum$"
+ feature_decoration_material_inlay_silver: "$metal_silver$"
+ feature_decoration_material_inlay_copper: "$metal_copper$"
+ feature_decoration_material_inlay_pewter: "$metal_pewter$"
+ feature_decoration_material_inlay_niello: "$metal_niello$"
+  
+ feature_decoration_material_wire_gold: "$metal_gold$"
+ feature_decoration_material_wire_electrum: "$metal_electrum$"
+ feature_decoration_material_wire_silver: "$metal_silver$"
+ feature_decoration_material_wire_brass: "$metal_brass$"
+ feature_decoration_material_wire_bronze: "$metal_bronze$"
+ feature_decoration_material_wire_copper: "$metal_copper$"
+ feature_decoration_material_wire_pewter: "$metal_pewter$"
+ feature_decoration_material_wire_latten: "$metal_latten$"
+  
+  ############# 
+  # Earthware # 
+  ############# 
+  
+ earthware_clay: "kil"
+ earthware_stone: "taş"
+ earthware_terracotta: "terakota"
+ earthware_porcelain: "porselen"
+  
+  ######### 
+  # Woods # 
+  ######### 
+ wood: "ahşap"
+  
+  # Found Everywhere 
+ wood_ash: "dişbudak"
+ wood_oak: "meşe"
+  
+  # Widespread Regional - Elm (Found all over Europe except southern Spain, Italy, and Greece) 
+ wood_elm: "karaağaç"
+  
+  # Widespread Regional - Walnut (found all over Europe excluding Scotland and Scandinavia, but including Northern Anatolia/Persia) 
+ wood_walnut: "ceviz"
+  
+  # Widespread Regional - Maple (found all over Europe excluding Scotland and northern Scandinavia, as well as northern Morocco/Tunisia/Persia and all of Anatolia) 
+ wood_maple: "akçaağaç"
+  
+  # Widespread Regional - Pines and Firs (found all over Europe except northern France/Germany and the Balkans, but spreads East through Anatolia, Scandinavia, Russia, China, and Tibet) 
+ wood_pine: "çam"
+ wood_fir: "köknar"
+  
+  # Widespread Regional - Subsaharan Africa 
+ wood_fleroya: "fleroya"
+ wood_sycomore: "çınar"
+  #AGOT Modified 
  #wood_padauk: "padauk"
  wood_padauk: "altınkalp"
-
- # Widespread Regional - India
- wood_sal:0 "akasya"
- wood_teak:0 "tik"
- wood_rosewood:0 "gül"
- wood_satinwood:0 "atlasağacı"
-
- # Regional - France, England, Wales, Ireland
- wood_yew:0 "porsuk ağacı"
-
- # Regional - Mediterranean
- wood_olivewood:0 "zeytin ağacı"
-
- # Regional - Sri Lanka
- wood_coromandel:0 "koromandel"
- wood_ebony:0 "abanoz"
-
- # Wood Feature Derivatives 
- feature_generic_material_wood_ash:0 "$wood_ash$"
- feature_generic_material_wood_oak:0 "$wood_oak$"
- feature_generic_material_wood_elm:0 "$wood_elm$"
- feature_generic_material_wood_walnut:0 "$wood_walnut$"
- feature_generic_material_wood_maple:0 "$wood_maple$"
- feature_generic_material_wood_pine:0 "$wood_pine$"
- feature_generic_material_wood_fir:0 "$wood_fir$"
- feature_generic_material_wood_fleroya:0 "$wood_fleroya$"
- feature_generic_material_wood_sycomore:0 "$wood_sycomore$"
- feature_generic_material_wood_padauk:0 "$wood_padauk$"
- feature_generic_material_wood_sal:0 "$wood_sal$"
- feature_generic_material_wood_teak:0 "$wood_teak$"
- feature_generic_material_wood_rosewood:0 "$wood_rosewood$"
- feature_generic_material_wood_satinwood:0 "$wood_satinwood$"
- feature_generic_material_wood_yew:0 "$wood_yew$"
- feature_generic_material_wood_olivewood:0 "$wood_olivewood$"
- feature_generic_material_wood_coromandel:0 "$wood_coromandel$"
- feature_generic_material_wood_ebony:0 "$wood_ebony$"
-
- feature_shaft_wood_ash:0 "$wood_ash$"
- feature_shaft_wood_oak:0 "$wood_oak$"
- feature_shaft_wood_elm:0 "$wood_elm$"
- feature_shaft_wood_walnut:0 "$wood_walnut$"
- feature_shaft_wood_maple:0 "$wood_maple$"
- feature_shaft_wood_pine:0 "$wood_pine$"
- feature_shaft_wood_fir:0 "$wood_fir$"
- feature_shaft_wood_fleroya:0 "$wood_fleroya$"
- feature_shaft_wood_sycomore:0 "$wood_sycomore$"
- feature_shaft_wood_padauk:0 "$wood_padauk$"
- feature_shaft_wood_sal:0 "$wood_sal$"
- feature_shaft_wood_teak:0 "$wood_teak$"
- feature_shaft_wood_rosewood:0 "$wood_rosewood$"
- feature_shaft_wood_satinwood:0 "$wood_satinwood$"
- feature_shaft_wood_yew:0 "$wood_yew$"
- feature_shaft_wood_olivewood:0 "$wood_olivewood$"
- feature_shaft_wood_coromandel:0 "$wood_coromandel$"
- feature_shaft_wood_ebony:0 "$wood_ebony$"
-
- ##########
- # Cloths #
- ##########
-
- # Simple wool fabric, can vary wildly in quality and appearance depending on the yarn used to wave it as well as the weaver's skill. 
- cloth_wool:0 "yün"
-
- # Wool from the very first shearing of a sheep. Soft, elastic, and slippery, used in high-grade textiles.
- cloth_lambswool:0 "kuzu yünü"
-
- # A fine, dense wool yarn or fabric. Originated in 12th century England, considered to be one of the highest quality wools. Suits are made from it today.
- cloth_worsted_wool:0 "penye yünü"
-
- # Generic plain weave cotton
- cloth_cotton:0 "pamuk"
-
- # cotton plain weave from Bangladesh, but common as far out as Iraq. Can be either coarse or very fine.
- cloth_muslin:0 "tülbent"
-
- # twill cotton-linen blend. As it a mixed fabric, practicing Jews are forbidden to wear it.
- cloth_fustian:0 "pamuklu kadife"
-
- # plain weave flax fibers. Consistently average in quality and price, saw widespread use throughout the medieval era.
- cloth_linen:0 "keten"
-
- # Plain(?) silk weave.
- cloth_silk:0 "ipek"
-
- # satin weave, most commonly made of silk, becoming famous in 12th century Europe after the Crusades. 
- cloth_satin:0 "saten"
-
- # piled silk weave popular in the Middle East. Must be woven on a special loom. Due to its difficulty of manufacture, it is associated with nobility. Arrived in western Europe after the Crusades.
- cloth_velvet:0 "kadife"
-
- # twill silk weave popular in Byzantium, which originated in Sassanid Persia. Commonly restricted to royalty or clergy.
- cloth_samite:0 "brokar"
-
- # cloth woven from silk wrapped in silver. Similar to the cloth-of-gold below, but less expensive.
- cloth_of_silver:0 "gümüş brokar"
-
- # cloth woven from silk wrapped in gold. In addition to being expensive, it was almost always outlawed for any non-royalty or non-clergy to wear.
- cloth_of_gold:0 "altın brokar"
-
- # sturdy fabric
- cloth_canvas:0 "yelken bezi"
-
- feature_generic_material_cloth_wool:0 "$cloth_wool$"
- feature_generic_material_cloth_lambswool:0 "$cloth_lambswool$"
- feature_generic_material_cloth_worsted_wool:0 "$cloth_worsted_wool$"
- feature_generic_material_cloth_cotton:0 "$cloth_cotton$"
- feature_generic_material_cloth_fustian:0 "$cloth_fustian$"
- feature_generic_material_cloth_linen:0 "$cloth_linen$"
- feature_generic_material_cloth_silk:0 "$cloth_silk$"
- feature_generic_material_cloth_satin:0 "$cloth_satin$"
- feature_generic_material_cloth_velvet:0 "$cloth_velvet$"
- feature_generic_material_cloth_samite:0 "$cloth_samite$"
-
- feature_generic_material_cordage_wool:0 "$cloth_wool$"
- feature_generic_material_cordage_cotton:0 "$cloth_cotton$"
- feature_generic_material_cordage_linen:0 "$cloth_linen$"
- feature_generic_material_cordage_silk:0 "$cloth_silk$"
-
- feature_decoration_material_embroidery_wool:0 "$cloth_wool$"
- feature_decoration_material_embroidery_linen:0 "$cloth_linen$"
- feature_decoration_material_embroidery_cotton:0 "$cloth_cotton$"
- feature_decoration_material_embroidery_silk:0 "$cloth_silk$"
- feature_decoration_material_embroidery_silver_thread:0 "$metal_silver$"
- feature_decoration_material_embroidery_gold_thread:0 "$metal_gold$"
-
- ########
- # Gems #
- ########
-
- # Common Everywhere
- gem_rock_crystal:0 "kaya kristali"
- gem_rock_crystal_plural:0 "kaya kristalleri"
- gem_jet:0 "oltu taşı"
- gem_jet_plural:0 "oltu taşları"
- gem_agate:0 "akik"
- gem_agate_plural:0 "akikler"
- gem_onyx:0 "oniks"
- gem_onyx_plural:0 "oniksler"
-
- # Uncommon Everywhere
- gem_garnet:0 "granat"
- gem_garnet_plural:0 "granatlar"
- gem_jasper:0 "jasper"
- gem_jasper_plural:0 "jasperler"
- gem_zircon:0 "zirkon"
- gem_zircon_plural:0 "zirkonlar"
-
- # Common Regional/Uncommon Elsewhere
- gem_turquoise:0 "turkuaz"
- gem_turquoise_plural:0 "turkuazlar"
- gem_amber:0 "kehribar"
- gem_amber_plural:0 "kehribarlar"
- gem_moonstone:0 "aytaşı"
- gem_moonstone_plural:0 "aytaşları"
- gem_flourite:0 "florit"
- gem_flourite_plural:0 "floritler"
- gem_adventurine:0 "adventurin"
- gem_adventurine_plural:0 "adventurinler"
- gem_amethyst:0 "ametist"
- gem_amethyst_plural:0 "ametistler"
- gem_carnelian:0 "karnalin"
- gem_carnelian_plural:0 "karnalin"
-
- # Uncommon Regional/Rare Elsewhere
- gem_spinel:0 "spinel"
- gem_spinel_plural:0 "spineller"
- gem_opal:0 "opal"
- gem_opal_plural:0 "opaller"
- gem_lapis_lazuli:0 "laciverttaşı"
- gem_lapis_lazuli_plural:0 "laciverttaşları"
- gem_peridot:0 "yılantaşı"
- gem_peridot_plural:0 "yılantaşları"
- gem_jade:0 "yeşimtaşı"
- gem_jade_plural:0 "yeşimtaşları"
-
- # Rare
- gem_sapphire:0 "gökyakut"
- gem_sapphire_plural:0 "gökyakut"
- gem_ruby:0 "yakut"
- gem_ruby_plural:0 "yakutlar"
- gem_emerald:0 "zümrüt"
- gem_emerald_plural:0 "zümrütler"
-
- feature_decoration_material_gem_rock_crystal:0 "$gem_rock_crystal$"
- feature_decoration_material_gem_jet:0 "$gem_jet$"
- feature_decoration_material_gem_agate:0 "$gem_agate$"
- feature_decoration_material_gem_onyx:0 "$gem_onyx$"
- feature_decoration_material_gem_garnet:0 "$gem_garnet$"
- feature_decoration_material_gem_jasper:0 "$gem_jasper$"
- feature_decoration_material_gem_zircon:0 "$gem_zircon$"
- feature_decoration_material_gem_turquoise:0 "$gem_turquoise$"
- feature_decoration_material_gem_amber:0 "$gem_amber$"
- feature_decoration_material_gem_moonstone:0 "$gem_moonstone$"
- feature_decoration_material_gem_flourite:0 "$gem_flourite$"
- feature_decoration_material_gem_adventurine:0 "$gem_adventurine$"
- feature_decoration_material_gem_amethyst:0 "$gem_amethyst$"
- feature_decoration_material_gem_carnelian:0 "$gem_carnelian$"
- feature_decoration_material_gem_spinel:0 "$gem_spinel$"
- feature_decoration_material_gem_opal:0 "$gem_opal$"
- feature_decoration_material_gem_lapis_lazuli:0 "$gem_lapis_lazuli$"
- feature_decoration_material_gem_peridot:0 "$gem_peridot$"
- feature_decoration_material_gem_jade:0 "$gem_jade$"
- feature_decoration_material_gem_sapphire:0 "$gem_sapphire$"
- feature_decoration_material_gem_ruby:0 "$gem_ruby$"
- feature_decoration_material_gem_emerald:0 "$gem_emerald$"
-
- ############################
- # Horns, Shells, and Bones #
- ############################
-
- hsb_ivory:0 "fildişi"
- hsb_mother_of_pearl:0 "sedef"
- hsb_tortoiseshell:0 "bağa"
- hsb_seashell:0 "denizkabuğu"
- hsb_deer_antler:0 "geyik boynuzu"
- hsb_boar_tusk:0 "domuz dişi"
- hsb_camel_bone:0 "deve kemiği"
- 
- feature_decoration_material_inlay_HSB_camel_bone:0 "$hsb_camel_bone$"
- feature_decoration_material_inlay_HSB_deer_antler:0 "$hsb_deer_antler$"
- feature_decoration_material_inlay_HSB_boar_tusk:0 "$hsb_boar_tusk$"
- feature_decoration_material_inlay_HSB_seashell:0 "$hsb_seashell$"
- feature_decoration_material_inlay_HSB_tortoiseshell:0 "$hsb_tortoiseshell$"
- feature_decoration_material_inlay_HSB_mother_of_pearl:0 "$hsb_mother_of_pearl$"
- feature_decoration_material_inlay_HSB_ivory:0 "$hsb_ivory$"
-
- #Other
- material_bone:0 "kemik"
- material_horn:0 "boynuz"
- material_pangolin_scales:0 "pangolin pulları"
- material_glass:0 "cam"
- material_leather:0 "deri"
- material_hardened_leather:0 "sertleştirilmiş deri"
-
- ############
- # Patterns # BEZENMİŞ ŞEKLİNDE DEVAM EDEN SATIRLAR
- ############
-
- feature_decoration_pattern_roses:0 "gül deseniyle"
- feature_decoration_pattern_floral:0 "çiçek deseniyle"
- feature_decoration_pattern_geometric:0 "geometrik çizimlerle"
- feature_decoration_pattern_wolf:0 "kurt deseniyle"
- feature_decoration_pattern_local_animal:1 "[Artifact.GetOwner.Custom('GetAnimalType')] deseniyle"
- feature_decoration_pattern_war_god:0 "[Artifact.GetOwner.GetFaith.WarGodName] sembolleri ve yazılarıyla"
- feature_decoration_pattern_religious_symbol:0 "[Artifact.GetOwner.GetFaith.ReligiousSymbol] deseniyle"
- feature_decoration_pattern_gibberish:0 "yaratandan başka kimsenin anlamını bilmediği sembollerle"
- feature_decoration_pattern_bodies:0 "kıvrımlı beden çizimleriyle"
- feature_decoration_pattern_culture_symbol:0 "[Artifact.GetOwner.GetCulture.GetNameNoTooltip] kültürüne has sembollerle"
- feature_decoration_pattern_culture_style:0 "[Artifact.GetOwner.GetCulture.GetNameNoTooltip] tarzı olarak bilinen desenler ve süslemelerle"
- feature_decoration_pattern_shield:0 "[Artifact.GetOwner.GetHouse.GetBaseName] armasıyla"
- feature_decoration_pattern_dynasty_shield:0 "$feature_decoration_pattern_shield$ deseniyle"
- feature_decoration_pattern_dynasty_motifs:0 "[Artifact.GetOwner.GetHouse.GetBaseName] sözü ve armasıyla"
-   #AGOT Modified 
+  
+  # Widespread Regional - India 
+ wood_sal: "akasya"
+ wood_teak: "tik"
+ wood_rosewood: "gül"
+ wood_satinwood: "atlasağacı"
+  
+  # Regional - France, England, Wales, Ireland 
+ wood_yew: "porsuk ağacı"
+  
+  # Regional - Mediterranean 
+ wood_olivewood: "zeytin ağacı"
+  
+  # Regional - Sri Lanka 
+ wood_coromandel: "koromandel"
+ wood_ebony: "abanoz"
+  
+  # Wood Feature Derivatives 
+ feature_generic_material_wood_ash: "$wood_ash$"
+ feature_generic_material_wood_oak: "$wood_oak$"
+ feature_generic_material_wood_elm: "$wood_elm$"
+ feature_generic_material_wood_walnut: "$wood_walnut$"
+ feature_generic_material_wood_maple: "$wood_maple$"
+ feature_generic_material_wood_pine: "$wood_pine$"
+ feature_generic_material_wood_fir: "$wood_fir$"
+ feature_generic_material_wood_fleroya: "$wood_fleroya$"
+ feature_generic_material_wood_sycomore: "$wood_sycomore$"
+ feature_generic_material_wood_padauk: "$wood_padauk$"
+ feature_generic_material_wood_sal: "$wood_sal$"
+ feature_generic_material_wood_teak: "$wood_teak$"
+ feature_generic_material_wood_rosewood: "$wood_rosewood$"
+ feature_generic_material_wood_satinwood: "$wood_satinwood$"
+ feature_generic_material_wood_yew: "$wood_yew$"
+ feature_generic_material_wood_olivewood: "$wood_olivewood$"
+ feature_generic_material_wood_coromandel: "$wood_coromandel$"
+ feature_generic_material_wood_ebony: "$wood_ebony$"
+  
+ feature_shaft_wood_ash: "$wood_ash$"
+ feature_shaft_wood_oak: "$wood_oak$"
+ feature_shaft_wood_elm: "$wood_elm$"
+ feature_shaft_wood_walnut: "$wood_walnut$"
+ feature_shaft_wood_maple: "$wood_maple$"
+ feature_shaft_wood_pine: "$wood_pine$"
+ feature_shaft_wood_fir: "$wood_fir$"
+ feature_shaft_wood_fleroya: "$wood_fleroya$"
+ feature_shaft_wood_sycomore: "$wood_sycomore$"
+ feature_shaft_wood_padauk: "$wood_padauk$"
+ feature_shaft_wood_sal: "$wood_sal$"
+ feature_shaft_wood_teak: "$wood_teak$"
+ feature_shaft_wood_rosewood: "$wood_rosewood$"
+ feature_shaft_wood_satinwood: "$wood_satinwood$"
+ feature_shaft_wood_yew: "$wood_yew$"
+ feature_shaft_wood_olivewood: "$wood_olivewood$"
+ feature_shaft_wood_coromandel: "$wood_coromandel$"
+ feature_shaft_wood_ebony: "$wood_ebony$"
+  
+  ########## 
+  # Cloths # 
+  ########## 
+  
+  # Simple wool fabric, can vary wildly in quality and appearance depending on the yarn used to wave it as well as the weaver's skill. 
+ cloth_wool: "yün"
+  
+  # Wool from the very first shearing of a sheep. Soft, elastic, and slippery, used in high-grade textiles. 
+ cloth_lambswool: "kuzu yünü"
+  
+  # A fine, dense wool yarn or fabric. Originated in 12th century England, considered to be one of the highest quality wools. Suits are made from it today. 
+ cloth_worsted_wool: "penye yünü"
+  
+  # Generic plain weave cotton 
+ cloth_cotton: "pamuk"
+  
+  # cotton plain weave from Bangladesh, but common as far out as Iraq. Can be either coarse or very fine. 
+ cloth_muslin: "tülbent"
+  
+  # twill cotton-linen blend. As it a mixed fabric, practicing Jews are forbidden to wear it. 
+ cloth_fustian: "pamuklu kadife"
+  
+  # plain weave flax fibers. Consistently average in quality and price, saw widespread use throughout the medieval era. 
+ cloth_linen: "keten"
+  
+  # Plain(?) silk weave. 
+ cloth_silk: "ipek"
+  
+  # satin weave, most commonly made of silk, becoming famous in 12th century Europe after the Crusades. 
+ cloth_satin: "saten"
+  
+  # piled silk weave popular in the Middle East. Must be woven on a special loom. Due to its difficulty of manufacture, it is associated with nobility. Arrived in western Europe after the Crusades. 
+ cloth_velvet: "kadife"
+  
+  # twill silk weave popular in Byzantium, which originated in Sassanid Persia. Commonly restricted to royalty or clergy. 
+ cloth_samite: "brokar"
+  
+  # cloth woven from silk wrapped in silver. Similar to the cloth-of-gold below, but less expensive. 
+ cloth_of_silver: "gümüş brokar"
+  
+  # cloth woven from silk wrapped in gold. In addition to being expensive, it was almost always outlawed for any non-royalty or non-clergy to wear. 
+ cloth_of_gold: "altın brokar"
+  
+  # sturdy fabric 
+ cloth_canvas: "yelken bezi"
+  
+ feature_generic_material_cloth_wool: "$cloth_wool$"
+ feature_generic_material_cloth_lambswool: "$cloth_lambswool$"
+ feature_generic_material_cloth_worsted_wool: "$cloth_worsted_wool$"
+ feature_generic_material_cloth_cotton: "$cloth_cotton$"
+ feature_generic_material_cloth_fustian: "$cloth_fustian$"
+ feature_generic_material_cloth_linen: "$cloth_linen$"
+ feature_generic_material_cloth_silk: "$cloth_silk$"
+ feature_generic_material_cloth_satin: "$cloth_satin$"
+ feature_generic_material_cloth_velvet: "$cloth_velvet$"
+ feature_generic_material_cloth_samite: "$cloth_samite$"
+  
+ feature_generic_material_cordage_wool: "$cloth_wool$"
+ feature_generic_material_cordage_cotton: "$cloth_cotton$"
+ feature_generic_material_cordage_linen: "$cloth_linen$"
+ feature_generic_material_cordage_silk: "$cloth_silk$"
+  
+ feature_decoration_material_embroidery_wool: "$cloth_wool$"
+ feature_decoration_material_embroidery_linen: "$cloth_linen$"
+ feature_decoration_material_embroidery_cotton: "$cloth_cotton$"
+ feature_decoration_material_embroidery_silk: "$cloth_silk$"
+ feature_decoration_material_embroidery_silver_thread: "$metal_silver$"
+ feature_decoration_material_embroidery_gold_thread: "$metal_gold$"
+  
+  ######## 
+  # Gems # 
+  ######## 
+  
+  # Common Everywhere 
+ gem_rock_crystal: "kaya kristali"
+ gem_rock_crystal_plural: "kaya kristalleri"
+ gem_jet: "oltu taşı"
+ gem_jet_plural: "oltu taşları"
+ gem_agate: "akik"
+ gem_agate_plural: "akikler"
+ gem_onyx: "oniks"
+ gem_onyx_plural: "oniksler"
+  
+  # Uncommon Everywhere 
+ gem_garnet: "granat"
+ gem_garnet_plural: "granatlar"
+ gem_jasper: "jasper"
+ gem_jasper_plural: "jasperler"
+ gem_zircon: "zirkon"
+ gem_zircon_plural: "zirkonlar"
+  
+  # Common Regional/Uncommon Elsewhere 
+ gem_turquoise: "turkuaz"
+ gem_turquoise_plural: "turkuazlar"
+ gem_amber: "kehribar"
+ gem_amber_plural: "kehribarlar"
+ gem_moonstone: "aytaşı"
+ gem_moonstone_plural: "aytaşları"
+ gem_flourite: "florit"
+ gem_flourite_plural: "floritler"
+ gem_adventurine: "adventurin"
+ gem_adventurine_plural: "adventurinler"
+ gem_amethyst: "ametist"
+ gem_amethyst_plural: "ametistler"
+ gem_carnelian: "karnalin"
+ gem_carnelian_plural: "karnalin"
+  
+  # Uncommon Regional/Rare Elsewhere 
+ gem_spinel: "spinel"
+ gem_spinel_plural: "spineller"
+ gem_opal: "opal"
+ gem_opal_plural: "opaller"
+ gem_lapis_lazuli: "laciverttaşı"
+ gem_lapis_lazuli_plural: "laciverttaşları"
+ gem_peridot: "yılantaşı"
+ gem_peridot_plural: "yılantaşları"
+ gem_jade: "yeşimtaşı"
+ gem_jade_plural: "yeşimtaşları"
+  
+  # Rare 
+ gem_sapphire: "gökyakut"
+ gem_sapphire_plural: "gökyakut"
+ gem_ruby: "yakut"
+ gem_ruby_plural: "yakutlar"
+ gem_emerald: "zümrüt"
+ gem_emerald_plural: "zümrütler"
+  
+ feature_decoration_material_gem_rock_crystal: "$gem_rock_crystal$"
+ feature_decoration_material_gem_jet: "$gem_jet$"
+ feature_decoration_material_gem_agate: "$gem_agate$"
+ feature_decoration_material_gem_onyx: "$gem_onyx$"
+ feature_decoration_material_gem_garnet: "$gem_garnet$"
+ feature_decoration_material_gem_jasper: "$gem_jasper$"
+ feature_decoration_material_gem_zircon: "$gem_zircon$"
+ feature_decoration_material_gem_turquoise: "$gem_turquoise$"
+ feature_decoration_material_gem_amber: "$gem_amber$"
+ feature_decoration_material_gem_moonstone: "$gem_moonstone$"
+ feature_decoration_material_gem_flourite: "$gem_flourite$"
+ feature_decoration_material_gem_adventurine: "$gem_adventurine$"
+ feature_decoration_material_gem_amethyst: "$gem_amethyst$"
+ feature_decoration_material_gem_carnelian: "$gem_carnelian$"
+ feature_decoration_material_gem_spinel: "$gem_spinel$"
+ feature_decoration_material_gem_opal: "$gem_opal$"
+ feature_decoration_material_gem_lapis_lazuli: "$gem_lapis_lazuli$"
+ feature_decoration_material_gem_peridot: "$gem_peridot$"
+ feature_decoration_material_gem_jade: "$gem_jade$"
+ feature_decoration_material_gem_sapphire: "$gem_sapphire$"
+ feature_decoration_material_gem_ruby: "$gem_ruby$"
+ feature_decoration_material_gem_emerald: "$gem_emerald$"
+  
+  ############################ 
+  # Horns, Shells, and Bones # 
+  ############################ 
+  
+ hsb_ivory: "fildişi"
+ hsb_mother_of_pearl: "sedef"
+ hsb_tortoiseshell: "bağa"
+ hsb_seashell: "denizkabuğu"
+ hsb_deer_antler: "geyik boynuzu"
+ hsb_boar_tusk: "domuz dişi"
+ hsb_camel_bone: "deve kemiği"
+  
+ feature_decoration_material_inlay_HSB_camel_bone: "$hsb_camel_bone$"
+ feature_decoration_material_inlay_HSB_deer_antler: "$hsb_deer_antler$"
+ feature_decoration_material_inlay_HSB_boar_tusk: "$hsb_boar_tusk$"
+ feature_decoration_material_inlay_HSB_seashell: "$hsb_seashell$"
+ feature_decoration_material_inlay_HSB_tortoiseshell: "$hsb_tortoiseshell$"
+ feature_decoration_material_inlay_HSB_mother_of_pearl: "$hsb_mother_of_pearl$"
+ feature_decoration_material_inlay_HSB_ivory: "$hsb_ivory$"
+  
+  #Other 
+ material_bone: "kemik"
+ material_horn: "boynuz"
+ material_pangolin_scales: "pangolin pulları"
+ material_glass: "cam"
+ material_leather: "deri"
+ material_hardened_leather: "sertleştirilmiş deri"
+  
+  ############ 
+  # Patterns # 
+  ############ 
+  
+ feature_decoration_pattern_roses: "gül deseniyle"
+ feature_decoration_pattern_floral: "çiçek deseniyle"
+ feature_decoration_pattern_geometric: "geometrik çizimlerle"
+ feature_decoration_pattern_wolf: "kurt deseniyle"
+ feature_decoration_pattern_local_animal: "[Artifact.GetOwner.Custom('GetAnimalType')] deseniyle"
+ feature_decoration_pattern_war_god: "[Artifact.GetOwner.GetFaith.WarGodName] sembolleri ve yazılarıyla"
+ feature_decoration_pattern_religious_symbol: "[Artifact.GetOwner.GetFaith.ReligiousSymbol] deseniyle"
+ feature_decoration_pattern_gibberish: "yaratandan başka kimsenin anlamını bilmediği sembollerle"
+ feature_decoration_pattern_bodies: "kıvrımlı beden çizimleriyle"
+ feature_decoration_pattern_culture_symbol: "[Artifact.GetOwner.GetCulture.GetNameNoTooltip] kültürüne has sembollerle"
+ feature_decoration_pattern_culture_style: "[Artifact.GetOwner.GetCulture.GetNameNoTooltip] tarzı olarak bilinen desenler ve süslemelerle"
+ feature_decoration_pattern_shield: "[Artifact.GetOwner.GetHouse.GetBaseName] armasıyla"
+ feature_decoration_pattern_dynasty_shield: "$feature_decoration_pattern_shield$ deseniyle"
+ feature_decoration_pattern_dynasty_motifs: "[Artifact.GetOwner.GetHouse.GetBaseName] sözü ve armasıyla"
+  #AGOT Modified 
  #feature_decoration_pattern_beasts: "mythological beasts"
- feature_decoration_pattern_beasts:0 "antik yaratık çizimleriyle"
- feature_decoration_pattern_religion:0 "dinî sembollerle"
- feature_decoration_pattern_quotes:0 "ilham verici sözlerle"
- feature_decoration_pattern_eschatology:0 "eskatolojik çizimlerle"
- feature_decoration_pattern_knots:0 "iç içe geçmiş düğüm desenleriyle"
- feature_decoration_pattern_animals:0 "hayvan çizimleriyle"
- feature_decoration_pattern_bird:0 "ihtişamlı kuş çizimleriyle"
-
- feature_decoration_material_inlay_HSB_placeholder:0 "#D PLACEHOLDER#!"
-
+ feature_decoration_pattern_beasts: "antik yaratık çizimleriyle"
+ feature_decoration_pattern_religion: "dinî sembollerle"
+ feature_decoration_pattern_quotes: "ilham verici sözlerle"
+ feature_decoration_pattern_eschatology: "eskatolojik çizimlerle"
+ feature_decoration_pattern_knots: "iç içe geçmiş düğüm desenleriyle"
+ feature_decoration_pattern_animals: "hayvan çizimleriyle"
+ feature_decoration_pattern_bird: "ihtişamlı kuş çizimleriyle"
+  
+ feature_decoration_material_inlay_HSB_placeholder: "#D PLACEHOLDER#!"
+  
  feature_icon_decoration_pattern_saint: "[Artifact.GetOwner.Custom('PredeterminedSaintName')]"
-
- ###########
- # Quality and wealth #
- ###########
-
- quality_fine:0 "güzel"
- quality_very_fine:0 "çok güzel"
- quality_excellent:0 "harika"
- quality_masterful:0 "kusursuz"
-
- adverb_quality_masterful:0 "kusursuz"
- adverb_quality_excellent:0 "harika"
- adverb_quality_fine:0 "güzel"
-
- wealth_extravagant:0 "şatafatlı"
- wealth_opulent:0 "gösterişli"
- wealth_beautiful:0 "güzel"
- wealth_elegant:0 "zarif"
- wealth_ornate:0 "süslü"
- wealth_fancy:0 "hoş"
- wealth_plain:0 "sade"
-
- article_wealth_plain:0 "sade"
- article_wealth_fancy:0 "hoş"
- article_wealth_ornate:0 "süslü"
- article_wealth_elegant:0 "zarif"
- article_wealth_beautiful:0 "güzel"
- article_wealth_opulent:0 "gösterişli"
- article_wealth_extravagant:0 "ihtişamlı"
-
- adverb_wealth_extravagant:0 "şatafatlı"
- adverb_wealth_masterful:0 "kusursuz"
- adverb_wealth_opulent:0 "gösterişli"
- adverb_wealth_wonderful:0 "harika"
- adverb_wealth_elegant:0 "zarif"
- adverb_wealth_lavish:0 "şaşaalı"
- adverb_wealth_beautiful:0 "güzel"
- adverb_wealth_rich:0 "süslü"
- adverb_wealth_ornate:0 "süslü"
- adverb_wealth_fancy:0 "hoş"
- adverb_wealth_plain:0 "sade"
-
- ############################
- # Weapon Descriptions 		#
- ############################
- create_artifact_weapon_tooltip:0 "[inspiration_owner.GetShortUIName], [SCOPE.Custom('ArtifactQuality')] kalitede [SCOPE.Custom('ArtifactWeaponType')] yarattı"
- # Sword and Dagger components (Blades, Hilts, and Pommels) 
- feature_hilt_decoration_carved_pattern:0 "kabzası, basitleştirilmiş de olsa [Artifact.GetFeatureText( 'decoration_pattern' )] oyulmuş"
- feature_hilt_decoration_inlay_pattern:0 "kabzası, [Artifact.GetFeatureText( 'decoration_material_inlay' )] gövdeden oluşuyor ve üzeri [Artifact.GetFeatureText( 'decoration_pattern' )] oyulmuş"
- feature_hilt_decoration_filigree:0 "kabzası, karmaşık [Artifact.GetFeatureText( 'decoration_material_wire' )] telkari ile süslenmiş"
- feature_hilt_decoration_rounded_pommels:0 "topuz yuvarlatılmış ve [Artifact.GetFeatureText( 'decoration_material_inlay' )] kakılmış"
- feature_hilt_decoration_wires:0 "kabzası, [Artifact.GetFeatureText( 'decoration_material_wire' )] sarmal bir kaplama ile kaplanmış"
- feature_hilt_decoration_circles:0 "kabzası, deri kayışlar arasında eşit aralıklarla yerleştirilmiş bir dizi süslü [Artifact.GetFeatureText( 'decoration_material_wire' )] halka ile bezenmiş"
- feature_hilt_decoration_twisting:0 "kabza ve topuz, karmaşık bir büküm motifli [Artifact.GetFeatureText( 'decoration_material_inlay' )] kakma ile süslenmiş"
- feature_blade_decoration_etched_pattern:0 "bıçağının üzeri [Artifact.GetFeatureText( 'decoration_pattern' )] kazınmış"
- feature_blade_decoration_etched_motto:0 "bıçağının üzerine "[Artifact.GetOwner.GetHouse.GetMotto]" sözleri kazınmış"
- feature_blade_decoration_etched_owner:1 "bıçağının üzerine "[Artifact.GetOwner.GetPrimaryTitle.GetNameNoTierNoTooltip] topraklarından [Artifact.GetOwner.GetTitledFirstName]" sözleri kazınmış"
-
- # Swords
- artifact_sword_name:0 "$artifact_name_prefix$ Kılıcı"
- artifact_longsword_name:0 "$artifact_name_prefix$ Uzun Kılıcı"
- artifact_sword_description:3 "[SCOPE.Custom('ArtifactQuality')|U] kalitede [newly_created_artifact.GetFeatureText( 'blade_metal' )] bir kılıç. [newly_created_artifact.Custom('ArtifactSwordDecoration')|U]"
- sword_decoration_hilt_and_blade:1 "[ROOT.Artifact.GetFeatureText( 'hilt_decoration' )|U] ve [ROOT.Artifact.GetFeatureText( 'blade_decoration' )]."
- sword_decoration_hilt:1 "[ROOT.Artifact.GetFeatureText( 'hilt_decoration' )|U]."
- sword_decoration_blade:1 "[ROOT.Artifact.GetFeatureText( 'blade_decoration' )|U]."
- sword_decoration_none:0 "Oldukça sade ve süslemesiz olmasına rağmen yine de etkileyici bir görünüşü var."
- sword_decoration_none_alt:0 "Üzerindeki her şey bir amaca hizmet ediyor. Gösterişten yoksun olması, sahibine bir faydacı havası verir."
-
- # Daggers
- artifact_dagger_name:0 "[owner.GetTitledFirstNamePossessiveNoTooltip] Hançeri"
- artifact_dagger_description:1 "[SCOPE.Custom('ArtifactQuality')|U] kalitede [newly_created_artifact.GetFeatureText( 'blade_metal' )] bir hançer. [newly_created_artifact.Custom('ArtifactDaggerDecoration')|U]"
- dagger_decoration_hilt_and_blade:0 "$sword_decoration_hilt_and_blade$"
- dagger_decoration_hilt:0 "$sword_decoration_hilt$"
- dagger_decoration_blade:0 "$sword_decoration_blade$"
- dagger_decoration_none:0 "$sword_decoration_none$"
-
- # Axe, Spear, Hammer, and Mace components (Heads, Shafts/Hafts)
- feature_head_decoration_etched_pattern:0 "üzerine [Artifact.GetFeatureText( 'decoration_pattern' )] oyulmuş"
- feature_head_decoration_religious_motifs:0 "üzerine farklı [Artifact.GetOwner.GetFaith.GetAdjective] motifleri oyulmuş"
- feature_shaft_decoration_painted_pattern:0 "üzeri [Artifact.GetFeatureText( 'decoration_pattern' )] boyanmış"
- feature_shaft_decoration_inlay:0 "[Artifact.GetFeatureText( 'decoration_material_inlay_HSB' )] ile kakılmış"
- feature_shaft_decoration_varnish:0 "zengin, koyu bir parlaklık vermek için verniklenmiş"
- feature_shaft_decoration_grooves:0 "rahat bir tutuş için sapı hafifçe oyulmuş"
- feature_shaft_decoration_wavelets:0 "elden kaymaması için sapına küçük tepecikler oyulmuş"
- feature_shaft_decoration_lines:0 "malzemenin görüntüsünü güzelleştirmek, dokulu ve hoş bir tutuş sağlamak için ince oymalarla süslenmiş"
- feature_metal_handle_decoration_inlay:0 "[Artifact.GetFeatureText( 'decoration_material_inlay' )] ile kakılmış"
- feature_metal_handle_decoration_etched_pattern:0 "sürekli tekrar eden [Artifact.GetFeatureText( 'decoration_pattern' )] oyulmuş"
-
- # Axes
- artifact_axe_name:0 "$artifact_name_prefix$ Baltası"
- artifact_axe_description:2 "[SCOPE.Custom('ArtifactQuality')|U] kalitede bir savaş baltası. [newly_created_artifact.Custom('ArtifactAxeHeadDescription')|U] [newly_created_artifact.Custom('ArtifactAxeHaftDescription')]"
- artifact_axe_head_undecorated:1 "[ROOT.Artifact.GetFeatureText( 'head_metal' )] kafası"
- artifact_axe_head_decorated:1 "Silahın [ROOT.Artifact.GetFeatureText( 'head_metal' )] kafası [ROOT.Artifact.GetFeatureText( 'head_decoration' )]"
- artifact_axe_haft_undecorated:2 "sağlam bir [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] sapın üzerine monte edilmiş. Dengesi çok iyi ve fazlasıyla keskin."
- artifact_axe_haft_decorated:1 "[ROOT.Artifact.GetFeatureText( 'shaft_decoration' )] zarif bir [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] sapın üzerine monte edilmiş."
- 
- # Hammers
- artifact_hammer_name:1 "$artifact_name_prefix$ Çekici"
- artifact_hammer_description:3 "[SCOPE.Custom('ArtifactQuality')|U] kalitede bir savaş çekici. [newly_created_artifact.Custom('ArtifactHammerHeadDescription')|U] [newly_created_artifact.Custom('ArtifactHammerShaftDescription')]"
- artifact_hammer_head_undecorated:0 "$artifact_axe_head_undecorated$"
- artifact_hammer_head_decorated:0 "$artifact_axe_head_decorated$"
- artifact_hammer_shaft_undecorated:1 "sağlam bir [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] sapın üzerine monte edilmiş."
- artifact_hammer_shaft_decorated:1 "[ROOT.Artifact.GetFeatureText( 'shaft_decoration' )] zarif bir [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] sapın üzerine monte edilmiş."
-
- # Spears
- artifact_spear_name:0 "$artifact_name_prefix$ Mızrağı"
- artifact_spear_description:2 "[SCOPE.Custom('ArtifactQuality')|U] kalitede uzun bir mızrak. [newly_created_artifact.Custom('ArtifactSpearHeadDescription')|U] [newly_created_artifact.Custom('ArtifactSpearShaftDescription')]"
- artifact_spear_head_undecorated:0 "$artifact_axe_head_undecorated$"
- artifact_spear_head_decorated:0 "$artifact_axe_head_decorated$"
- artifact_spear_head_decorated_flanked:1 "Mızrağa tanınabilir ve ölümcül bir siluet veren çift kenarlı bıçağı, ince uzun kanatçıklara çevrelenmiş ve"
- artifact_spear_shaft_undecorated:1 "sağlam bir [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] gövde üzerine takılmış."
- artifact_spear_shaft_undecorated_alt:2 "sağlam bir [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] gövde üzerine takılmış. Ölümcül olduğu kadar zarif bir silahtır."
- artifact_spear_shaft_decorated:1 "[ROOT.Artifact.GetFeatureText( 'shaft_decoration' )] zarif bir [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] gövde üzerine takılmış."
-
- # Maces
- artifact_mace_name:0 "$artifact_name_prefix$ Gürzü"
- artifact_mace_description:2 "[SCOPE.Custom('ArtifactQuality')|U] kalitede bir gürz. [newly_created_artifact.Custom('ArtifactMaceHeadDescription')|U] [newly_created_artifact.Custom('ArtifactMaceHandleDescription')]"
- artifact_mace_head_undecorated:0 "$artifact_axe_head_undecorated$"
- artifact_mace_head_decorated:0 "$artifact_axe_head_decorated$"
- artifact_mace_handle_undecorated:1 "tek parça [ROOT.Artifact.GetFeatureText( 'handle_metal' )] sap üzerine yerleştirilmiş."
- artifact_mace_handle_decorated:2 "[ROOT.Artifact.GetFeatureText( 'metal_handle_decoration' )] zarif bir [ROOT.Artifact.GetFeatureText( 'handle_metal' )] sap üzerine yerleştirilmiş."
-
- ############################
- # Wearable Descriptions	#
- ############################
-
- # Armor
- artifact_armor_name:0 "[SCOPE.Custom('ArtifactArmorArtifactName')]"
- artifact_armor_name_basic:1 "$artifact_name_prefix$ [newly_created_artifact.GetFeatureText( 'armor_property' )|U] [SCOPE.Custom('ArtifactArmorTypeUppercase')|U]"
- artifact_armor_name_culture:0 "[ROOT.Char.GetCulture.GetNameNoTooltip] [SCOPE.Custom('ArtifactArmorTypeUppercase')|U]"
- artifact_armor_name_dynasty:1 "[ROOT.Char.GetDynasty.GetBaseNameNoTooltip] [SCOPE.Custom('ArtifactArmorTypeUppercase')|U]"
- artifact_armor_name_descriptor:1 "[newly_created_artifact.GetFeatureText( 'armor_property' )|U] [SCOPE.Custom('ArtifactArmorTypeUppercase')|U]"
-
- artifact_armor_mail_lowercase:0 "örgü zırh"
- artifact_armor_mail_uppercase:0 "Örgü Zırh"
- artifact_armor_plate_lowercase:0 "plaka zırh"
- artifact_armor_plate_uppercase:0 "Plaka Zırh"
- artifact_armor_scale_lowercase:0 "pullu zırh"
- artifact_armor_scale_uppercase:0 "Pullu Zırh"
- artifact_armor_lamellar_lowercase:0 "katmanlı zırh"
- artifact_armor_lamellar_uppercase:0 "Katmanlı Zırh"
- artifact_armor_laminar_lowercase:0 "levhalı Zırh"
- artifact_armor_laminar_uppercase:0 "levhalı Zırh"
- artifact_armor_brigandine_lowercase:1 "parçalı zırh"
- artifact_armor_brigandine_uppercase:1 "Parçalı Zırh"
- artifact_armor_shield_lowercase:0 "bir kalkan"
- artifact_armor_shield_uppercase:0 "bir Kalkan"
-
- artifact_armor_descriptor_shiny:0 "parlak"
- artifact_armor_descriptor_flexible:0 "esnek"
- artifact_armor_descriptor_powerful:0 "güçlü"
- 
- feature_artifact_armor_descriptor_shiny:0 "$artifact_armor_descriptor_shiny$"
- feature_artifact_armor_descriptor_lustrous:0 "Cilalı"
- feature_artifact_armor_descriptor_burnished:0 "Perdahlanmış"
- feature_artifact_armor_descriptor_flexible:0 "$artifact_armor_descriptor_flexible$"
- feature_artifact_armor_descriptor_powerful:0 "$artifact_armor_descriptor_powerful$"
- feature_artifact_armor_descriptor_silver_inlaid:0 "Gümüş"
- feature_artifact_armor_descriptor_gold_inlaid:0 "Altın"
- feature_artifact_armor_descriptor_bronze_inlaid:0 "Bronz Kaplama"
- feature_artifact_armor_descriptor_armor_material_hardened_leather:0 "Sertleştirilmiş"
- feature_artifact_armor_descriptor_armor_material_steel:0 "Çelik"
- feature_artifact_armor_descriptor_armor_gold_decorated:0 "Altın Süslemeli"
- feature_artifact_armor_descriptor_armor_silver_decorated:0 "Gümüş Kakma"
- feature_artifact_armor_descriptor_armor_copper_decorated:0 "Bakır Kakma"
-
- feature_armor_material_iron:0 "$metal_iron$"
- feature_armor_material_steel:0 "$metal_steel$"
- feature_armor_material_gold:0 "$metal_gold$"
- feature_armor_material_bronze:0 "$metal_bronze$"
- feature_armor_material_canvas:0 "$cloth_canvas$"
- feature_armor_material_horn:0 "$material_horn$"
- feature_armor_material_pangolin_scales:0 "$material_pangolin_scales$"
- feature_armor_material_leather:0 "$material_leather$"
- feature_armor_material_hardened_leather:0 "$material_hardened_leather$"
-
- feature_armor_helmet_spangenhelm:0 "Takım bir spangenhelm ve bir aventail içerir"
- feature_armor_helmet_crested:0 "Takım bir tepeli miğfer ile bir dekoratif miğfer süsü içerir"
- feature_armor_helmet_nasal:0 "Takım bir nazal miğfer ve içi [Artifact.GetFeatureText( 'generic_material_cloth' )] dolu baş örgüsü içerir"
- feature_armor_helmet_enclosed:0 "Takım bir kapalı miğfer ve içi [Artifact.GetFeatureText( 'generic_material_cloth' )] dolu baş örgüsü içerir"
- feature_armor_helmet_great_helmet:0 "Takım bir büyük miğfer ve içi [Artifact.GetFeatureText( 'generic_material_cloth' )] dolu baş örgüsü içerir"
- feature_armor_helmet_great_helmet_bascinet:0 "Takım bir büyük miğfer ve altına giyilmesi için vizörlü miğfer içerir"
- feature_armor_helmet_great_helmet_cervelliere:0 "Takım bir büyük miğfer ve altına giyilmesi için yarım daire miğfer içerir"
-   #AGOT Modified 
+  
+  ########### 
+  # Quality and wealth # 
+  ########### 
+  
+ quality_fine: "güzel"
+ quality_very_fine: "çok güzel"
+ quality_excellent: "harika"
+ quality_masterful: "kusursuz"
+  
+ adverb_quality_masterful: "kusursuz"
+ adverb_quality_excellent: "harika"
+ adverb_quality_fine: "güzel"
+  
+ wealth_extravagant: "şatafatlı"
+ wealth_opulent: "gösterişli"
+ wealth_beautiful: "güzel"
+ wealth_elegant: "zarif"
+ wealth_ornate: "süslü"
+ wealth_fancy: "hoş"
+ wealth_plain: "sade"
+  
+ article_wealth_plain: "sade"
+ article_wealth_fancy: "hoş"
+ article_wealth_ornate: "süslü"
+ article_wealth_elegant: "zarif"
+ article_wealth_beautiful: "güzel"
+ article_wealth_opulent: "gösterişli"
+ article_wealth_extravagant: "ihtişamlı"
+  
+ adverb_wealth_extravagant: "şatafatlı"
+ adverb_wealth_masterful: "kusursuz"
+ adverb_wealth_opulent: "gösterişli"
+ adverb_wealth_wonderful: "harika"
+ adverb_wealth_elegant: "zarif"
+ adverb_wealth_lavish: "şaşaalı"
+ adverb_wealth_beautiful: "güzel"
+ adverb_wealth_rich: "süslü"
+ adverb_wealth_ornate: "süslü"
+ adverb_wealth_fancy: "hoş"
+ adverb_wealth_plain: "sade"
+  
+  ############################ 
+  # Weapon Descriptions 		# 
+  ############################ 
+ create_artifact_weapon_tooltip: "[inspiration_owner.GetShortUIName], [SCOPE.Custom('ArtifactQuality')] kalitede [SCOPE.Custom('ArtifactWeaponType')] yarattı"
+  # Sword and Dagger components (Blades, Hilts, and Pommels) 
+ feature_hilt_decoration_carved_pattern: "kabzası, basitleştirilmiş de olsa [Artifact.GetFeatureText( 'decoration_pattern' )] oyulmuş"
+ feature_hilt_decoration_inlay_pattern: "kabzası, [Artifact.GetFeatureText( 'decoration_material_inlay' )] gövdeden oluşuyor ve üzeri [Artifact.GetFeatureText( 'decoration_pattern' )] oyulmuş"
+ feature_hilt_decoration_filigree: "kabzası, karmaşık [Artifact.GetFeatureText( 'decoration_material_wire' )] telkari ile süslenmiş"
+ feature_hilt_decoration_rounded_pommels: "topuz yuvarlatılmış ve [Artifact.GetFeatureText( 'decoration_material_inlay' )] kakılmış"
+ feature_hilt_decoration_wires: "kabzası, [Artifact.GetFeatureText( 'decoration_material_wire' )] sarmal bir kaplama ile kaplanmış"
+ feature_hilt_decoration_circles: "kabzası, deri kayışlar arasında eşit aralıklarla yerleştirilmiş bir dizi süslü [Artifact.GetFeatureText( 'decoration_material_wire' )] halka ile bezenmiş"
+ feature_hilt_decoration_twisting: "kabza ve topuz, karmaşık bir büküm motifli [Artifact.GetFeatureText( 'decoration_material_inlay' )] kakma ile süslenmiş"
+ feature_blade_decoration_etched_pattern: "bıçağının üzeri [Artifact.GetFeatureText( 'decoration_pattern' )] kazınmış"
+ feature_blade_decoration_etched_motto: "bıçağının üzerine "[Artifact.GetOwner.GetHouse.GetMotto]" sözleri kazınmış"
+ feature_blade_decoration_etched_owner: "bıçağının üzerine "[Artifact.GetOwner.GetPrimaryTitle.GetNameNoTierNoTooltip] topraklarından [Artifact.GetOwner.GetTitledFirstName]" sözleri kazınmış"
+  
+  # Swords 
+ artifact_sword_name: "$artifact_name_prefix$ Kılıcı"
+ artifact_longsword_name: "$artifact_name_prefix$ Uzun Kılıcı"
+ artifact_sword_description: "[SCOPE.Custom('ArtifactQuality')|U] kalitede [newly_created_artifact.GetFeatureText( 'blade_metal' )] bir kılıç. [newly_created_artifact.Custom('ArtifactSwordDecoration')|U]"
+ sword_decoration_hilt_and_blade: "[ROOT.Artifact.GetFeatureText( 'hilt_decoration' )|U] ve [ROOT.Artifact.GetFeatureText( 'blade_decoration' )]."
+ sword_decoration_hilt: "[ROOT.Artifact.GetFeatureText( 'hilt_decoration' )|U]."
+ sword_decoration_blade: "[ROOT.Artifact.GetFeatureText( 'blade_decoration' )|U]."
+ sword_decoration_none: "Oldukça sade ve süslemesiz olmasına rağmen yine de etkileyici bir görünüşü var."
+ sword_decoration_none_alt: "Üzerindeki her şey bir amaca hizmet ediyor. Gösterişten yoksun olması, sahibine bir faydacı havası verir."
+  
+  # Daggers 
+ artifact_dagger_name: "[owner.GetTitledFirstNamePossessiveNoTooltip] Hançeri"
+ artifact_dagger_description: "[SCOPE.Custom('ArtifactQuality')|U] kalitede [newly_created_artifact.GetFeatureText( 'blade_metal' )] bir hançer. [newly_created_artifact.Custom('ArtifactDaggerDecoration')|U]"
+ dagger_decoration_hilt_and_blade: "$sword_decoration_hilt_and_blade$"
+ dagger_decoration_hilt: "$sword_decoration_hilt$"
+ dagger_decoration_blade: "$sword_decoration_blade$"
+ dagger_decoration_none: "$sword_decoration_none$"
+  
+  # Axe, Spear, Hammer, and Mace components (Heads, Shafts/Hafts) 
+ feature_head_decoration_etched_pattern: "üzerine [Artifact.GetFeatureText( 'decoration_pattern' )] oyulmuş"
+ feature_head_decoration_religious_motifs: "üzerine farklı [Artifact.GetOwner.GetFaith.GetAdjective] motifleri oyulmuş"
+ feature_shaft_decoration_painted_pattern: "üzeri [Artifact.GetFeatureText( 'decoration_pattern' )] boyanmış"
+ feature_shaft_decoration_inlay: "[Artifact.GetFeatureText( 'decoration_material_inlay_HSB' )] ile kakılmış"
+ feature_shaft_decoration_varnish: "zengin, koyu bir parlaklık vermek için verniklenmiş"
+ feature_shaft_decoration_grooves: "rahat bir tutuş için sapı hafifçe oyulmuş"
+ feature_shaft_decoration_wavelets: "elden kaymaması için sapına küçük tepecikler oyulmuş"
+ feature_shaft_decoration_lines: "malzemenin görüntüsünü güzelleştirmek, dokulu ve hoş bir tutuş sağlamak için ince oymalarla süslenmiş"
+ feature_metal_handle_decoration_inlay: "[Artifact.GetFeatureText( 'decoration_material_inlay' )] ile kakılmış"
+ feature_metal_handle_decoration_etched_pattern: "sürekli tekrar eden [Artifact.GetFeatureText( 'decoration_pattern' )] oyulmuş"
+  
+  # Axes 
+ artifact_axe_name: "$artifact_name_prefix$ Baltası"
+ artifact_axe_description: "[SCOPE.Custom('ArtifactQuality')|U] kalitede bir savaş baltası. [newly_created_artifact.Custom('ArtifactAxeHeadDescription')|U] [newly_created_artifact.Custom('ArtifactAxeHaftDescription')]"
+ artifact_axe_head_undecorated: "[ROOT.Artifact.GetFeatureText( 'head_metal' )] kafası"
+ artifact_axe_head_decorated: "Silahın [ROOT.Artifact.GetFeatureText( 'head_metal' )] kafası [ROOT.Artifact.GetFeatureText( 'head_decoration' )]"
+ artifact_axe_haft_undecorated: "sağlam bir [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] sapın üzerine monte edilmiş. Dengesi çok iyi ve fazlasıyla keskin."
+ artifact_axe_haft_decorated: "[ROOT.Artifact.GetFeatureText( 'shaft_decoration' )] zarif bir [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] sapın üzerine monte edilmiş."
+  
+  # Hammers 
+ artifact_hammer_name: "$artifact_name_prefix$ Çekici"
+ artifact_hammer_description: "[SCOPE.Custom('ArtifactQuality')|U] kalitede bir savaş çekici. [newly_created_artifact.Custom('ArtifactHammerHeadDescription')|U] [newly_created_artifact.Custom('ArtifactHammerShaftDescription')]"
+ artifact_hammer_head_undecorated: "$artifact_axe_head_undecorated$"
+ artifact_hammer_head_decorated: "$artifact_axe_head_decorated$"
+ artifact_hammer_shaft_undecorated: "sağlam bir [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] sapın üzerine monte edilmiş."
+ artifact_hammer_shaft_decorated: "[ROOT.Artifact.GetFeatureText( 'shaft_decoration' )] zarif bir [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] sapın üzerine monte edilmiş."
+  
+  # Spears 
+ artifact_spear_name: "$artifact_name_prefix$ Mızrağı"
+ artifact_spear_description: "[SCOPE.Custom('ArtifactQuality')|U] kalitede uzun bir mızrak. [newly_created_artifact.Custom('ArtifactSpearHeadDescription')|U] [newly_created_artifact.Custom('ArtifactSpearShaftDescription')]"
+ artifact_spear_head_undecorated: "$artifact_axe_head_undecorated$"
+ artifact_spear_head_decorated: "$artifact_axe_head_decorated$"
+ artifact_spear_head_decorated_flanked: "Mızrağa tanınabilir ve ölümcül bir siluet veren çift kenarlı bıçağı, ince uzun kanatçıklara çevrelenmiş ve"
+ artifact_spear_shaft_undecorated: "sağlam bir [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] gövde üzerine takılmış."
+ artifact_spear_shaft_undecorated_alt: "sağlam bir [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] gövde üzerine takılmış. Ölümcül olduğu kadar zarif bir silahtır."
+ artifact_spear_shaft_decorated: "[ROOT.Artifact.GetFeatureText( 'shaft_decoration' )] zarif bir [ROOT.Artifact.GetFeatureText( 'shaft_wood' )] gövde üzerine takılmış."
+  
+  # Maces 
+ artifact_mace_name: "$artifact_name_prefix$ Gürzü"
+ artifact_mace_description: "[SCOPE.Custom('ArtifactQuality')|U] kalitede bir gürz. [newly_created_artifact.Custom('ArtifactMaceHeadDescription')|U] [newly_created_artifact.Custom('ArtifactMaceHandleDescription')]"
+ artifact_mace_head_undecorated: "$artifact_axe_head_undecorated$"
+ artifact_mace_head_decorated: "$artifact_axe_head_decorated$"
+ artifact_mace_handle_undecorated: "tek parça [ROOT.Artifact.GetFeatureText( 'handle_metal' )] sap üzerine yerleştirilmiş."
+ artifact_mace_handle_decorated: "[ROOT.Artifact.GetFeatureText( 'metal_handle_decoration' )] zarif bir [ROOT.Artifact.GetFeatureText( 'handle_metal' )] sap üzerine yerleştirilmiş."
+  
+  ############################ 
+  # Wearable Descriptions	# 
+  ############################ 
+  
+  # Armor 
+ artifact_armor_name: "[SCOPE.Custom('ArtifactArmorArtifactName')]"
+ artifact_armor_name_basic: "$artifact_name_prefix$ [newly_created_artifact.GetFeatureText( 'armor_property' )|U] [SCOPE.Custom('ArtifactArmorTypeUppercase')|U]"
+ artifact_armor_name_culture: "[ROOT.Char.GetCulture.GetNameNoTooltip] [SCOPE.Custom('ArtifactArmorTypeUppercase')|U]"
+ artifact_armor_name_dynasty: "[ROOT.Char.GetDynasty.GetBaseNameNoTooltip] [SCOPE.Custom('ArtifactArmorTypeUppercase')|U]"
+ artifact_armor_name_descriptor: "[newly_created_artifact.GetFeatureText( 'armor_property' )|U] [SCOPE.Custom('ArtifactArmorTypeUppercase')|U]"
+  
+ artifact_armor_mail_lowercase: "örgü zırh"
+ artifact_armor_mail_uppercase: "Örgü Zırh"
+ artifact_armor_plate_lowercase: "plaka zırh"
+ artifact_armor_plate_uppercase: "Plaka Zırh"
+ artifact_armor_scale_lowercase: "pullu zırh"
+ artifact_armor_scale_uppercase: "Pullu Zırh"
+ artifact_armor_lamellar_lowercase: "katmanlı zırh"
+ artifact_armor_lamellar_uppercase: "Katmanlı Zırh"
+ artifact_armor_laminar_lowercase: "levhalı Zırh"
+ artifact_armor_laminar_uppercase: "levhalı Zırh"
+ artifact_armor_brigandine_lowercase: "parçalı zırh"
+ artifact_armor_brigandine_uppercase: "Parçalı Zırh"
+ artifact_armor_shield_lowercase: "bir kalkan"
+ artifact_armor_shield_uppercase: "bir Kalkan"
+  
+ artifact_armor_descriptor_shiny: "parlak"
+ artifact_armor_descriptor_flexible: "esnek"
+ artifact_armor_descriptor_powerful: "güçlü"
+  
+ feature_artifact_armor_descriptor_shiny: "$artifact_armor_descriptor_shiny$"
+ feature_artifact_armor_descriptor_lustrous: "Cilalı"
+ feature_artifact_armor_descriptor_burnished: "Perdahlanmış"
+ feature_artifact_armor_descriptor_flexible: "$artifact_armor_descriptor_flexible$"
+ feature_artifact_armor_descriptor_powerful: "$artifact_armor_descriptor_powerful$"
+ feature_artifact_armor_descriptor_silver_inlaid: "Gümüş"
+ feature_artifact_armor_descriptor_gold_inlaid: "Altın"
+ feature_artifact_armor_descriptor_bronze_inlaid: "Bronz Kaplama"
+ feature_artifact_armor_descriptor_armor_material_hardened_leather: "Sertleştirilmiş"
+ feature_artifact_armor_descriptor_armor_material_steel: "Çelik"
+ feature_artifact_armor_descriptor_armor_gold_decorated: "Altın Süslemeli"
+ feature_artifact_armor_descriptor_armor_silver_decorated: "Gümüş Kakma"
+ feature_artifact_armor_descriptor_armor_copper_decorated: "Bakır Kakma"
+  
+ feature_armor_material_iron: "$metal_iron$"
+ feature_armor_material_steel: "$metal_steel$"
+ feature_armor_material_gold: "$metal_gold$"
+ feature_armor_material_bronze: "$metal_bronze$"
+ feature_armor_material_canvas: "$cloth_canvas$"
+ feature_armor_material_horn: "$material_horn$"
+ feature_armor_material_pangolin_scales: "$material_pangolin_scales$"
+ feature_armor_material_leather: "$material_leather$"
+ feature_armor_material_hardened_leather: "$material_hardened_leather$"
+  
+ feature_armor_helmet_spangenhelm: "Takım bir spangenhelm ve bir aventail içerir"
+ feature_armor_helmet_crested: "Takım bir tepeli miğfer ile bir dekoratif miğfer süsü içerir"
+ feature_armor_helmet_nasal: "Takım bir nazal miğfer ve içi [Artifact.GetFeatureText( 'generic_material_cloth' )] dolu baş örgüsü içerir"
+ feature_armor_helmet_enclosed: "Takım bir kapalı miğfer ve içi [Artifact.GetFeatureText( 'generic_material_cloth' )] dolu baş örgüsü içerir"
+ feature_armor_helmet_great_helmet: "Takım bir büyük miğfer ve içi [Artifact.GetFeatureText( 'generic_material_cloth' )] dolu baş örgüsü içerir"
+ feature_armor_helmet_great_helmet_bascinet: "Takım bir büyük miğfer ve altına giyilmesi için vizörlü miğfer içerir"
+ feature_armor_helmet_great_helmet_cervelliere: "Takım bir büyük miğfer ve altına giyilmesi için yarım daire miğfer içerir"
+  #AGOT Modified 
  #feature_armor_helmet_turban_helmet: "The set includes a turban helmet and an aventail"
- feature_armor_helmet_turban_helmet:0 "Set, bir Qaathi miğferi ve bir aventail içerir"
- feature_armor_helmet_lamellar:0 "Takım, üzerinde dekoratif tüyü olan bir lamellar miğfer ve bir aventail içerir"
- feature_armor_helmet_kettle:0 "Takım bir siperlikli miğfer içerir"
- feature_armor_helmet_cervelliere:0 "Takım bir yarım daire miğfer ve içi [Artifact.GetFeatureText( 'generic_material_cloth' )] dolu baş örgüsü içerir"
-   #AGOT Modified 
+ feature_armor_helmet_turban_helmet: "Set, bir Qaathi miğferi ve bir aventail içerir"
+ feature_armor_helmet_lamellar: "Takım, üzerinde dekoratif tüyü olan bir lamellar miğfer ve bir aventail içerir"
+ feature_armor_helmet_kettle: "Takım bir siperlikli miğfer içerir"
+ feature_armor_helmet_cervelliere: "Takım bir yarım daire miğfer ve içi [Artifact.GetFeatureText( 'generic_material_cloth' )] dolu baş örgüsü içerir"
+  #AGOT Modified 
  #feature_armor_helmet_kulah_khud: "The set includes a Khula Khud helmet and an aventail"
  feature_armor_helmet_kulah_khud: "Set bir Rhoynish miğferi ve bir aventail içerir"
-
- feature_armor_decoration_etched_pattern:0 "Zırhın tamamına kendini tekrar eden [Artifact.GetFeatureText( 'decoration_pattern' )] oyulmuş"
- feature_armor_decoration_inlay_pattern:0 "Zırhın tamamına [Artifact.GetFeatureText( 'decoration_material_inlay' )] kakılmış ve kendini tekrar eden [Artifact.GetFeatureText( 'decoration_pattern' )] oyulmuş"
- feature_armor_decoration_painted_pattern:0 "Zırhın tamamı [Artifact.GetFeatureText( 'decoration_pattern' )] boyanmış"
- feature_armor_decoration_lines:0 "Zırhın tamamı, malzemenin görüntüsünü güzelleştirmek için ince oymalarla süslenmiş"
- feature_armor_decoration_gold_plating:0 "Zırhın tamamı kalın bir altın tabakasıyla kaplanmış"
- feature_armor_decoration_lining:0 "En alttaki bağlantılar, tüm zırhı kaplayan dekoratif [Artifact.GetFeatureText( 'decoration_material_wire' )] ile süslenmiş"
- feature_armor_decoration_embossed:0 "Plakaları kumaşa bağlayan [Artifact.GetFeatureText( 'decoration_material_wire' )] perçinler dekoratif bir kabartma deseni ile süslenmiş"
- feature_armor_decoration_grouped_rivets:0 "Plakaları zırhın kumaşına bağlayan [Artifact.GetFeatureText( 'decoration_material_wire' )] perçinler, süs olacak şekilde gruplanmışlar"
-
- artifact_armor_description:0 "[SCOPE.Custom('ArtifactArmorDesc')]. [newly_created_artifact.GetFeatureText('armor_helmet')]. [newly_created_artifact.GetFeatureText('armor_decoration')]."
- 
- artifact_armor_mail_description:2 "Zincir bağlantıları üzerinde süslemek için yer yok ancak perçinlenmesindeki [SCOPE.Custom('ArtifactQuality')] işçilik bu parçayı sıradan bir örme zırhtan ayırıyor"
- artifact_armor_plate_description:2 "Zırh, kullanıcıyı tamamen kaplayacak biçimde [SCOPE.Custom('ArtifactAdverbQuality')] şekilde dövülmüş büyük [newly_created_artifact.GetFeatureText( 'armor_material' )] plakalardan yapılmış"
- artifact_armor_scale_description:2 "Zırh, deri bir desteğe sabitlenmiş ve [SCOPE.Custom('ArtifactAdverbQuality')] şekilde hazırlanmış [newly_created_artifact.GetFeatureText( 'armor_material' )] pullardan yapılmış"
- artifact_armor_lamellar_description:2 "Zırh, [newly_created_artifact.GetFeatureText( 'generic_material_cordage' )] kordonlarla [SCOPE.Custom('ArtifactAdverbQuality')] bir şekilde birbirine tutturulmuş [newly_created_artifact.GetFeatureText( 'armor_material' )] plakalardan yapılırken, astar ince kesilmiş [newly_created_artifact.GetFeatureText( 'generic_material_cloth' )] ile yapılmış"
- artifact_armor_laminar_description:2 "Zırh, [newly_created_artifact.GetFeatureText( 'generic_material_cordage' )] kordonlarla [SCOPE.Custom('ArtifactAdverbQuality')] bir şekilde birbirine tutturulan, yatay olarak üst üste bindirilmiş [newly_created_artifact.GetFeatureText( 'armor_material' )] bantlardan yapılırken, aster ince kesilmiş [newly_created_artifact.GetFeatureText( 'generic_material_cloth' )] ile yapılmış"
- artifact_armor_brigandine_description:2 "Zırhın [newly_created_artifact.GetFeatureText( 'armor_material' )] içi dikdörtgen çelik plakalarla [SCOPE.Custom('ArtifactAdverbQuality')] bir şekilde döşenmiş ve üzeri [newly_created_artifact.GetFeatureText( 'generic_material_cloth' )] ile kaplanmış"
- artifact_armor_fallback_description:2 "[SCOPE.Custom('ArtifactDecorationArmor')]."
-
- create_artifact_armor_tooltip:1 "[inspiration_owner.GetShortUIName], [SCOPE.Custom('ArtifactQuality')] kalitede bir [SCOPE.Custom('ArtifactArmorTypeLowercase')] yarattı"
-
- # Regalia
- artifact_regalia_name:0 "$artifact_name_prefix$ Kraliyet Sembolü"
- artifact_regalia_description:1 "[SCOPE.Custom('ArtifactQuality')|U] kalitede [SCOPE.Custom('ArtifactArticleWealth')] bir kraliyet sembolü takımı. [newly_created_artifact.GetFeatureText( 'regalia_scepter' )|U], [newly_created_artifact.GetFeatureText( 'regalia_clothes' )] ve [newly_created_artifact.GetFeatureText( 'regalia_accessory' )] içeriyor."
-
- feature_regalia_scepter_gemstone:0 "[Artifact.GetFeatureText( 'decoration_material_gem' )] ile süslenmiş bir [Artifact.GetFeatureText( 'decoration_material_wire' )] kraliyet asası"
- feature_regalia_accessory_orb:0 "bir [Artifact.GetFeatureText( 'decoration_material_wire' )] haçlı küre"
- feature_regalia_accessory_necklace:0 "büyük bir [Artifact.GetFeatureText( 'decoration_material_gem' )] kabaşon kolye"
- feature_regalia_clothes_robe:0 "[Artifact.GetFeatureText( 'decoration_material_embroidery' )] ile işlenmiş ince [Artifact.GetFeatureText( 'generic_material_cloth' )] cübbeler"
- feature_regalia_clothes_cloak:0 "[Artifact.GetFeatureText( 'decoration_material_embroidery' )] ipliği ile işlenmiş bir [Artifact.GetFeatureText( 'generic_material_cloth' )] pelerin"
-
- create_artifact_regalia_tooltip:1 "[inspiration_owner.GetShortUIName], [SCOPE.Custom('ArtifactQuality')] kalitede bir kraliyet sembolü takımı yarattı"
-
- # Crowns
- artifact_crown_name:0 "$artifact_name_prefix$ Tacı"
- artifact_crown_description:1 "[SCOPE.Custom('ArtifactQuality')|U] kalitede [SCOPE.Custom('ArtifactArticleWealth')] bir taç. Taç [newly_created_artifact.GetFeatureText( 'decoration_material_wire' )] ile üretilmiş ve [newly_created_artifact.GetFeatureText( 'crown_decoration' )]."
-
- feature_crown_decoration_gems:1 "küçük [Artifact.GetFeatureText( 'decoration_material_gem' )] ile süslenmiş"
- feature_crown_decoration_filigree:0 "karmaşık telkari ile süslenmiş"
- feature_crown_decoration_filigree_and_gem:0 "merkeze konulan büyük bir [Artifact.GetFeatureText( 'decoration_material_gem' )] ve karmaşık telkari ile süslenmiş"
-
- create_artifact_crown_tooltip:1 "[inspiration_owner.GetShortUIName], [SCOPE.Custom('ArtifactQuality')] kalitede bir taç yarattı"
-
- # Icons
+  
+ feature_armor_decoration_etched_pattern: "Zırhın tamamına kendini tekrar eden [Artifact.GetFeatureText( 'decoration_pattern' )] oyulmuş"
+ feature_armor_decoration_inlay_pattern: "Zırhın tamamına [Artifact.GetFeatureText( 'decoration_material_inlay' )] kakılmış ve kendini tekrar eden [Artifact.GetFeatureText( 'decoration_pattern' )] oyulmuş"
+ feature_armor_decoration_painted_pattern: "Zırhın tamamı [Artifact.GetFeatureText( 'decoration_pattern' )] boyanmış"
+ feature_armor_decoration_lines: "Zırhın tamamı, malzemenin görüntüsünü güzelleştirmek için ince oymalarla süslenmiş"
+ feature_armor_decoration_gold_plating: "Zırhın tamamı kalın bir altın tabakasıyla kaplanmış"
+ feature_armor_decoration_lining: "En alttaki bağlantılar, tüm zırhı kaplayan dekoratif [Artifact.GetFeatureText( 'decoration_material_wire' )] ile süslenmiş"
+ feature_armor_decoration_embossed: "Plakaları kumaşa bağlayan [Artifact.GetFeatureText( 'decoration_material_wire' )] perçinler dekoratif bir kabartma deseni ile süslenmiş"
+ feature_armor_decoration_grouped_rivets: "Plakaları zırhın kumaşına bağlayan [Artifact.GetFeatureText( 'decoration_material_wire' )] perçinler, süs olacak şekilde gruplanmışlar"
+  
+ artifact_armor_description: "[SCOPE.Custom('ArtifactArmorDesc')]. [newly_created_artifact.GetFeatureText('armor_helmet')]. [newly_created_artifact.GetFeatureText('armor_decoration')]."
+  
+ artifact_armor_mail_description: "Zincir bağlantıları üzerinde süslemek için yer yok ancak perçinlenmesindeki [SCOPE.Custom('ArtifactQuality')] işçilik bu parçayı sıradan bir örme zırhtan ayırıyor"
+ artifact_armor_plate_description: "Zırh, kullanıcıyı tamamen kaplayacak biçimde [SCOPE.Custom('ArtifactAdverbQuality')] şekilde dövülmüş büyük [newly_created_artifact.GetFeatureText( 'armor_material' )] plakalardan yapılmış"
+ artifact_armor_scale_description: "Zırh, deri bir desteğe sabitlenmiş ve [SCOPE.Custom('ArtifactAdverbQuality')] şekilde hazırlanmış [newly_created_artifact.GetFeatureText( 'armor_material' )] pullardan yapılmış"
+ artifact_armor_lamellar_description: "Zırh, [newly_created_artifact.GetFeatureText( 'generic_material_cordage' )] kordonlarla [SCOPE.Custom('ArtifactAdverbQuality')] bir şekilde birbirine tutturulmuş [newly_created_artifact.GetFeatureText( 'armor_material' )] plakalardan yapılırken, astar ince kesilmiş [newly_created_artifact.GetFeatureText( 'generic_material_cloth' )] ile yapılmış"
+ artifact_armor_laminar_description: "Zırh, [newly_created_artifact.GetFeatureText( 'generic_material_cordage' )] kordonlarla [SCOPE.Custom('ArtifactAdverbQuality')] bir şekilde birbirine tutturulan, yatay olarak üst üste bindirilmiş [newly_created_artifact.GetFeatureText( 'armor_material' )] bantlardan yapılırken, aster ince kesilmiş [newly_created_artifact.GetFeatureText( 'generic_material_cloth' )] ile yapılmış"
+ artifact_armor_brigandine_description: "Zırhın [newly_created_artifact.GetFeatureText( 'armor_material' )] içi dikdörtgen çelik plakalarla [SCOPE.Custom('ArtifactAdverbQuality')] bir şekilde döşenmiş ve üzeri [newly_created_artifact.GetFeatureText( 'generic_material_cloth' )] ile kaplanmış"
+ artifact_armor_fallback_description: "[SCOPE.Custom('ArtifactDecorationArmor')]."
+  
+ create_artifact_armor_tooltip: "[inspiration_owner.GetShortUIName], [SCOPE.Custom('ArtifactQuality')] kalitede bir [SCOPE.Custom('ArtifactArmorTypeLowercase')] yarattı"
+  
+  # Regalia 
+ artifact_regalia_name: "$artifact_name_prefix$ Kraliyet Sembolü"
+ artifact_regalia_description: "[SCOPE.Custom('ArtifactQuality')|U] kalitede [SCOPE.Custom('ArtifactArticleWealth')] bir kraliyet sembolü takımı. [newly_created_artifact.GetFeatureText( 'regalia_scepter' )|U], [newly_created_artifact.GetFeatureText( 'regalia_clothes' )] ve [newly_created_artifact.GetFeatureText( 'regalia_accessory' )] içeriyor."
+  
+ feature_regalia_scepter_gemstone: "[Artifact.GetFeatureText( 'decoration_material_gem' )] ile süslenmiş bir [Artifact.GetFeatureText( 'decoration_material_wire' )] kraliyet asası"
+ feature_regalia_accessory_orb: "bir [Artifact.GetFeatureText( 'decoration_material_wire' )] haçlı küre"
+ feature_regalia_accessory_necklace: "büyük bir [Artifact.GetFeatureText( 'decoration_material_gem' )] kabaşon kolye"
+ feature_regalia_clothes_robe: "[Artifact.GetFeatureText( 'decoration_material_embroidery' )] ile işlenmiş ince [Artifact.GetFeatureText( 'generic_material_cloth' )] cübbeler"
+ feature_regalia_clothes_cloak: "[Artifact.GetFeatureText( 'decoration_material_embroidery' )] ipliği ile işlenmiş bir [Artifact.GetFeatureText( 'generic_material_cloth' )] pelerin"
+  
+ create_artifact_regalia_tooltip: "[inspiration_owner.GetShortUIName], [SCOPE.Custom('ArtifactQuality')] kalitede bir kraliyet sembolü takımı yarattı"
+  
+  # Crowns 
+ artifact_crown_name: "$artifact_name_prefix$ Tacı"
+ artifact_crown_description: "[SCOPE.Custom('ArtifactQuality')|U] kalitede [SCOPE.Custom('ArtifactArticleWealth')] bir taç. Taç [newly_created_artifact.GetFeatureText( 'decoration_material_wire' )] ile üretilmiş ve [newly_created_artifact.GetFeatureText( 'crown_decoration' )]."
+  
+ feature_crown_decoration_gems: "küçük [Artifact.GetFeatureText( 'decoration_material_gem' )] ile süslenmiş"
+ feature_crown_decoration_filigree: "karmaşık telkari ile süslenmiş"
+ feature_crown_decoration_filigree_and_gem: "merkeze konulan büyük bir [Artifact.GetFeatureText( 'decoration_material_gem' )] ve karmaşık telkari ile süslenmiş"
+  
+ create_artifact_crown_tooltip: "[inspiration_owner.GetShortUIName], [SCOPE.Custom('ArtifactQuality')] kalitede bir taç yarattı"
+  
+  # Icons 
  artifact_icon_name: "[newly_created_artifact.GetFeatureText('icon_decoration')] İkonası"
  artifact_icon_description: "[newly_created_artifact.GetFeatureText('icon_decoration')] tasvirinin bulunduğu [SCOPE.Custom('ArtifactQuality')] kalitede [SCOPE.Custom('ArtifactArticleWealth')] bir ikona."
-
- # Brooches
- artifact_brooch:0 "Broş"
- artifact_brooch_pedestal:0 "$artifact_brooch$"
- artifact_brooch_name:0 "$artifact_name_prefix$ Broşu"
- artifact_brooch_description:1 "[SCOPE.Custom('ArtifactQuality')|U] kalitede [SCOPE.Custom('ArtifactArticleWealth')] bir broş. Broş [newly_created_artifact.GetFeatureText( 'brooch_decoration' )]."
-
- feature_brooch_decoration_centerpiece_and_adornment:0 "[Artifact.GetFeatureText( 'brooch_adornment' )] [Artifact.GetFeatureText( 'brooch_centerpiece' )] içeriyor"
- feature_brooch_decoration_centerpiece:0 "[Artifact.GetFeatureText( 'decoration_material_wire' )] iğneye tutturulmuş [Artifact.GetFeatureText( 'brooch_centerpiece' )] içeriyor"
- feature_brooch_decoration_adornment:0 "[Artifact.GetFeatureText( 'brooch_adornment' )|U] [Artifact.GetFeatureText( 'decoration_material_wire' )] iğneden oluşuyor "
- feature_brooch_centerpiece_cabochon:0 "bir [Artifact.GetFeatureText( 'decoration_material_gem' )] kabaşon"
- feature_brooch_centerpiece_cross:0 "bir [Artifact.GetFeatureText( 'decoration_material_wire' )] haç"
- feature_brooch_centerpiece_sword:0 "bir [Artifact.GetFeatureText( 'decoration_material_wire' )] kılıç figürü"
- feature_brooch_adornment_filigree:0 "karmaşık telkari ile süslenmiş"
- feature_brooch_adornment_gems:0 "küçük [Artifact.GetFeatureText( 'decoration_material_gem' )] ile süslenmiş"
- feature_brooch_adornment_runes:0 "rünler ile mühürlenmiş [Artifact.GetFeatureText( 'decoration_material_wire' )] halkalar ile süslenmiş"
- create_artifact_brooch_tooltip:0 "[inspiration_owner.GetShortUIName], [SCOPE.Custom('ArtifactQuality')] kalitede [SCOPE.Custom('ArtifactArticleWealth')|l] bir broş yarattı"
-
- # Rings
- artifact_ring:0 "Yüzük"
- artifact_ring_name:0 "$artifact_name_prefix$ Yüzüğü"
- artifact_ring_description:0 "[SCOPE.Custom('ArtifactQuality')] kalitede [SCOPE.Custom('ArtifactArticleWealth')] bir yüzük. Yüzük [newly_created_artifact.GetFeatureText( 'generic_material_metal' )] ile üretilmiş ve [newly_created_artifact.GetFeatureText( 'ring_decoration' )]."
- feature_ring_decoration_centerpiece_and_adornment:0 "ortası [Artifact.GetFeatureText( 'ring_centerpiece' )] ile süslenmiş ve [Artifact.GetFeatureText( 'ring_adornment' )]"
- feature_ring_decoration_centerpiece:0 "bir [Artifact.GetFeatureText( 'ring_centerpiece' )]"
- feature_ring_decoration_adornment:0 "bir [Artifact.GetFeatureText( 'ring_adornment' )]"
- feature_ring_centerpiece_cabochon:0 "bir [Artifact.GetFeatureText( 'decoration_material_gem' )] kabaşon"
- feature_ring_centerpiece_signet:0 "[Artifact.GetFeatureText( 'decoration_material_wire' )] kaplama [Artifact.GetOwner.GetHouse.GetBaseNameNoTooltip] mührü"
- feature_ring_centerpiece_religious:0 "[Artifact.GetFeatureText( 'decoration_material_wire' )] kaplama [Artifact.GetOwner.GetFaith.GetAdjective] [Artifact.GetOwner.GetFaith.ReligiousSymbol] sembolü"
- feature_ring_adornment_filigree:0 "$feature_brooch_adornment_filigree$"
- feature_ring_adornment_motto:0 "etrafında [Artifact.GetOwner.GetHouse.GetBaseNameNoTooltip] hanedan sözü işlenmiş: '#EMP [Artifact.GetOwner.GetHouse.GetMotto]#!'"
- feature_ring_adornment_religious:0 "etrafında [Artifact.GetOwner.GetFaith.GetAdjective] dini metinler işlenmiş"
- feature_ring_adornment_gems:0 "$feature_brooch_adornment_gems$"
- feature_ring_adornment_runes:0 "$feature_brooch_adornment_runes$"
-
- ## fund_inspiration.6001-6006 trinkets from your adventurer
-   #AGOT Modified 
+  
+  # Brooches 
+ artifact_brooch: "Broş"
+ artifact_brooch_pedestal: "$artifact_brooch$"
+ artifact_brooch_name: "$artifact_name_prefix$ Broşu"
+ artifact_brooch_description: "[SCOPE.Custom('ArtifactQuality')|U] kalitede [SCOPE.Custom('ArtifactArticleWealth')] bir broş. Broş [newly_created_artifact.GetFeatureText( 'brooch_decoration' )]."
+  
+ feature_brooch_decoration_centerpiece_and_adornment: "[Artifact.GetFeatureText( 'brooch_adornment' )] [Artifact.GetFeatureText( 'brooch_centerpiece' )] içeriyor"
+ feature_brooch_decoration_centerpiece: "[Artifact.GetFeatureText( 'decoration_material_wire' )] iğneye tutturulmuş [Artifact.GetFeatureText( 'brooch_centerpiece' )] içeriyor"
+ feature_brooch_decoration_adornment: "[Artifact.GetFeatureText( 'brooch_adornment' )|U] [Artifact.GetFeatureText( 'decoration_material_wire' )] iğneden oluşuyor "
+ feature_brooch_centerpiece_cabochon: "bir [Artifact.GetFeatureText( 'decoration_material_gem' )] kabaşon"
+ feature_brooch_centerpiece_cross: "bir [Artifact.GetFeatureText( 'decoration_material_wire' )] haç"
+ feature_brooch_centerpiece_sword: "bir [Artifact.GetFeatureText( 'decoration_material_wire' )] kılıç figürü"
+ feature_brooch_adornment_filigree: "karmaşık telkari ile süslenmiş"
+ feature_brooch_adornment_gems: "küçük [Artifact.GetFeatureText( 'decoration_material_gem' )] ile süslenmiş"
+ feature_brooch_adornment_runes: "rünler ile mühürlenmiş [Artifact.GetFeatureText( 'decoration_material_wire' )] halkalar ile süslenmiş"
+ create_artifact_brooch_tooltip: "[inspiration_owner.GetShortUIName], [SCOPE.Custom('ArtifactQuality')] kalitede [SCOPE.Custom('ArtifactArticleWealth')|l] bir broş yarattı"
+  
+  # Rings 
+ artifact_ring: "Yüzük"
+ artifact_ring_name: "$artifact_name_prefix$ Yüzüğü"
+ artifact_ring_description: "[SCOPE.Custom('ArtifactQuality')] kalitede [SCOPE.Custom('ArtifactArticleWealth')] bir yüzük. Yüzük [newly_created_artifact.GetFeatureText( 'generic_material_metal' )] ile üretilmiş ve [newly_created_artifact.GetFeatureText( 'ring_decoration' )]."
+ feature_ring_decoration_centerpiece_and_adornment: "ortası [Artifact.GetFeatureText( 'ring_centerpiece' )] ile süslenmiş ve [Artifact.GetFeatureText( 'ring_adornment' )]"
+ feature_ring_decoration_centerpiece: "bir [Artifact.GetFeatureText( 'ring_centerpiece' )]"
+ feature_ring_decoration_adornment: "bir [Artifact.GetFeatureText( 'ring_adornment' )]"
+ feature_ring_centerpiece_cabochon: "bir [Artifact.GetFeatureText( 'decoration_material_gem' )] kabaşon"
+ feature_ring_centerpiece_signet: "[Artifact.GetFeatureText( 'decoration_material_wire' )] kaplama [Artifact.GetOwner.GetHouse.GetBaseNameNoTooltip] mührü"
+ feature_ring_centerpiece_religious: "[Artifact.GetFeatureText( 'decoration_material_wire' )] kaplama [Artifact.GetOwner.GetFaith.GetAdjective] [Artifact.GetOwner.GetFaith.ReligiousSymbol] sembolü"
+ feature_ring_adornment_filigree: "$feature_brooch_adornment_filigree$"
+ feature_ring_adornment_motto: "etrafında [Artifact.GetOwner.GetHouse.GetBaseNameNoTooltip] hanedan sözü işlenmiş: '#EMP [Artifact.GetOwner.GetHouse.GetMotto]#!'"
+ feature_ring_adornment_religious: "etrafında [Artifact.GetOwner.GetFaith.GetAdjective] dini metinler işlenmiş"
+ feature_ring_adornment_gems: "$feature_brooch_adornment_gems$"
+ feature_ring_adornment_runes: "$feature_brooch_adornment_runes$"
+  
+  ## fund_inspiration.6001-6006 trinkets from your adventurer 
+  #AGOT Modified 
  #morin_khuur_ornament_name: "Morin Khuur At Süslemesi"
  morin_khuur_ornament_name: "Khalasar At Süsü"
-   #AGOT Modified 
+  #AGOT Modified 
  #morin_khuur_ornament_description: "At kemiğinden oyulmuş bir at başı, genellikle bir Morin Khuur kemanının tepesinde bir dekorasyon. [inspiration_owner.GetHerHis] maceraları sırasında [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından [owner.GetTitledFirstNameNoTooltip] adresine gönderilmiştir."
  morin_khuur_ornament_description: "Genellikle bir eyer üzerinde süs olarak kullanılan, at kemiğinden oyulmuş bir at başı. [inspiration_owner.GetTitledFirstNameNoTooltip] adlı kişinin maceraları sırasında [owner.GetTitledFirstNameNoTooltip] adlı kişiye gönderildi."
- animal_ring_name:0 "Parlak Kaplan Yüzük"
- animal_ring_description:1 "Mücevher kaplı, parlak ve rengarek bir yüzük. Saray mensuplarınızı etkilemek yerine kör edebilirsiniz. Maceraları sırasında [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından [owner.GetTitledFirstNameNoTooltip] için gönderildi."
- ostrich_shell_necklace_name:0 "Devekuşu Yumurtası Kabuğundan Kolye"
- ostrich_shell_necklace_description:1 "Parlak beyaz renk tonunda zarif bir mücevher parçası. Maceraları sırasında [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından [owner.GetTitledFirstNameNoTooltip] için gönderildi."
-   #AGOT Modified 
+ animal_ring_name: "Parlak Kaplan Yüzük"
+ animal_ring_description: "Mücevher kaplı, parlak ve rengarek bir yüzük. Saray mensuplarınızı etkilemek yerine kör edebilirsiniz. Maceraları sırasında [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından [owner.GetTitledFirstNameNoTooltip] için gönderildi."
+ ostrich_shell_necklace_name: "Devekuşu Yumurtası Kabuğundan Kolye"
+ ostrich_shell_necklace_description: "Parlak beyaz renk tonunda zarif bir mücevher parçası. Maceraları sırasında [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından [owner.GetTitledFirstNameNoTooltip] için gönderildi."
+  #AGOT Modified 
  #pilgrimage_figurine_name: "Mürekkep balığı kemiğinden Aziz Vardan Figürü"
  pilgrimage_figurine_name: "Mürekkepbalığı Kemiği Figürü"
-   #AGOT Modified 
+  #AGOT Modified 
  #pilgrimage_figurine_description: "451'de Avarayr Savaşı'nda Ermenilerin Hıristiyanlığı uygulama hakkını güvence altına alan Ermeni general Vardan Mamikonyan'ın heykelciği. Miğferi bronz detaylarla doludur. [inspiration_owner.GetHerHis] maceraları sırasında [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından [owner.GetTitledFirstNameNoTooltip] adresine gönderilmiştir."
  pilgrimage_figurine_description: "Eski bir Ghiscari savaşçısının figürü. Miğferi bronz detaylarla dolu. [inspiration_owner.GetTitledFirstNameNoTooltip] adlı kişinin maceraları sırasında [owner.GetTitledFirstNameNoTooltip] adlı kişiye gönderildi."
   #AGOT Modified 
  #saint_margaret_fingernails_name: "Aziz Margaret'in Tırnakları"
- saint_margaret_fingernails_name:0 "Desen Yaratıcının Tırnakları"
+ saint_margaret_fingernails_name: "Desen Yaratıcının Tırnakları"
   #AGOT Modified 
  #saint_margaret_fingernails_description: "Antakyalı Azize Margaret, sadece ayakkabılarının topuklarını kullanarak bir ejderhayı öldürmesiyle ünlüydü. Rivayete göre, bu eski iğrenç tırnak kesikleri ona aitti. [inspiration_owner.GetHerHis] maceraları sırasında [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından [owner.GetTitledFirstNameNoTooltip] adresine gönderilmiştir."
- saint_margaret_fingernails_description:1 "Desen Yaratıcının Labirenti, bilgelik kazanmak için yürünen bir Braavos labirentidir. Rivayete göre, bu eski ve iğrenç tırnak kesimleri, bunun arkasındaki dahi zekaya aitti. [inspiration_owner.GetTitledFirstNameNoTooltip], onun maceraları sırasında bu tırnakları [owner.GetTitledFirstNameNoTooltip] adlı kişiye gönderdi."
- seahorse_brooch_name:0 "Altın Denizatı Broş"
- seahorse_brooch_description:1 "Üzerinde hem kanatları hem de yüzgeç kuyruğu olan bir at bulunan narin zincirli püsküllü bir broş. Maceraları sırasında [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından [owner.GetTitledFirstNameNoTooltip] için gönderildi."
-
-
- #fund_inspiration.6500- trinkets from your adventurer
- leopard_hat_name:0 "Leopar Şapka"
- leopard_hat_description:0 "[inspiration_owner.GetTitledFirstName] tarafından öldürülmüş bir leoparın kafasından yapılmış şapka."
+ saint_margaret_fingernails_description: "Desen Yaratıcının Labirenti, bilgelik kazanmak için yürünen bir Braavos labirentidir. Rivayete göre, bu eski ve iğrenç tırnak kesimleri, bunun arkasındaki dahi zekaya aitti. [inspiration_owner.GetTitledFirstNameNoTooltip], onun maceraları sırasında bu tırnakları [owner.GetTitledFirstNameNoTooltip] adlı kişiye gönderdi."
+ seahorse_brooch_name: "Altın Denizatı Broş"
+ seahorse_brooch_description: "Üzerinde hem kanatları hem de yüzgeç kuyruğu olan bir at bulunan narin zincirli püsküllü bir broş. Maceraları sırasında [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından [owner.GetTitledFirstNameNoTooltip] için gönderildi."
+  
+  
+  #fund_inspiration.6500- trinkets from your adventurer 
+ leopard_hat_name: "Leopar Şapka"
+ leopard_hat_description: "[inspiration_owner.GetTitledFirstName] tarafından öldürülmüş bir leoparın kafasından yapılmış şapka."
   #AGOT Modified 
  #kurgan_ornament_name: "İskit Panter Heykelciği"
  kurgan_ornament_name: "Panter Figürü"
@@ -731,122 +731,122 @@
   #AGOT Modified 
  #kurgan_saddle_description: "Bir İskit mezarından [inspiration_owner.GetTitledFirstName] tarafından çalınmış bir eyer. Bin yıldan daha eski olan bu eyer, mumyalanmış düzinelerce atın cesedinin arasında, mezarın sıkışmış havasında korunmuştur. Belki de antik eyer savaşçılarının yöntemlerinden bir şeyler öğrenebiliriz."
  kurgan_saddle_description: "[inspiration_owner.GetTitledFirstName] tarafından eski bir mezar höyüğünden çalınmış bir eyer. Bin yıldan eski, düzinelerce mumyalanmış atın cesetleri arasında, mezarın hapsolmuş havasında korunmuştur. Belki eski eyer savaşçılarının yöntemlerinden bir şeyler öğrenebiliriz."
- naked_tapestry_name:0 "Erotik Duvar Örtüsü"
- naked_tapestry_description:0 "Bu tasvir, [inspiration_owner.GetTitledFirstName] bir vaha kenarında iken çizilmiş. Üzerinde kristal gibi parlayan su damlacıkları varken kendini bir yelpaze ile serinletiyor."
-
- frogspawn_jar_name:0 "Kurbağa Yumurtası Kavanozu"
- frogspawn_jar_description:0 "Kurbağa yumurtaları ve iribaşlarla dolu bir kavanoz. Dışarıdaki dehşetin bir göstergesi olarak [inspiration_owner.GetTitledFirstName] tarafından [ROOT.Char.GetTitledFirstNameNoTooltip] için gönderildi.\n\nKıpır kıpırlar!"
- beaver_book_name:1 "Kunduzların Sarayları"
- beaver_book_description:0 "Kunduz mimarisi ve inşaat teknikleri üzerine, [inspiration_owner.GetTitledFirstName] tarafından seyahatleri sırasında çizdiği eskizlerle yazılmış bir kitap."
- crocodile_tapestry_name:0 "Timsah Duvar Örtüsü"
- crocodile_tapestry_description:0 "[inspiration_owner.GetTitledFirstName], elinden geldiği en iyi şekilde hazırladığı timsahtan yapılma duvar örtüsü. Yaratık parlak bir kırmızı renkte. Birkaç kat dişe, zehirli püstüllere ve dikenli bir kuyruğa sahiptir. Bir şelalenin arkasındaki bir mağarada bir yumurta yığını ile çevrilidir."
- mountain_rock_name:0 "Dağdan Getirilen Kaya"
- mountain_rock_description:0 "[mountain_location.GetName] tepesinden [inspiration_owner.GetTitledFirstName] tarafından sürüklenerek getirilmiş büyük bir kaya."
- 
- # Game start additional unique artifacts
- reichskrone_name:0 "Reichskrone"
- reichskrone_description:1 "Bu, Kutsal Roma İmparatoru makamının amblemidir. Her geçen dükün dikkatini çekmesi garanti."
- nikephoros_crown_name:0 "II. Nikiforos Fokas'ın Tacı"
- nikephoros_crown_description:2 "Bu, imparatorluk soyunun gördüğü en iyi taktikçilerden birinin tacı. İmparatorluğun batısındaki savaşlarda başarısız olsa da doğuda gerçek bir fatihtir."
- skull_cap_charlemagne_name:0 "Şarlman'ın Kafatası"
- skull_cap_charlemagne_description:0 "Şarlman'ın kafası bu kutunun içinde. Belki de Şarlman'ın bilgeliği bu kutunun sahibine de geçer."
- papal_tiara_name:0 "Papalık Tacı"
- papal_tiara_description:1 "Bu, Papalık Makamı'nı simgeleyen altın taçlı mücevherli piskopos tacıdır. Kafanızın üzerinde çok da görkemli görünmez miydi?"
- essen_crown_name:0 "Kinderkrone"
- essen_crown_description:1 "Kimileri bu tacın III. Otto'nun Essen'deki taç giyme töreni için yapıldığını, kimileri de Bakire heykelini taçlandırmak için üretildiğini söylüyor. Her iki durumda da oldukça küçük bir taç olduğu kesin. Belki kafanıza iyice bastırıp giymeyi deneyebilirsiniz."
- monomachus_crown_name:1 "Monomakos Tacı"
- monomachus_crown_description:1 "Bu; IX. Konstantinos Monomakos, karısı Zoe, kız kardeşi Theodora ve bazı alegorik dans figürlerini betimleyen altın panelli portrelerden oluşan bir taç."
- edmund_head_name:1 "Aziz Edmund'un Kafası"
- edmund_head_description:0 "Edmund, doğduğu andan itibaren bir Aziz olmak isterdi. Efsaneler halkının Vikingler tarafından katledilmesine izin vermek yerine Vikinglere gönüllü olarak kurban olan bir Doğu Angliya Kralı olduğunu söyler."
- dhammapada_name:0 "Dhammapada"
- dhammapada_description:1 "Bu, Buda'nın güzel bir palmiye yaprağı el yazmasında ciltlenmiş sözlerinden oluşan bir koleksiyon."
- excalibur_name:0 "'Ekskalibur'"
- excalibur_description:0 "İngiltere'de gerçek Ekskalibur'a sahip olduğunu iddia etmeyen bir hükümdar yoktur. Savaşlar Ekskaliburların el değiştirmesi ile biter."
- vinaya_pitaka_name:0 "Vinaya Pitaka"
- vinaya_pitaka_description:0 "Pali Derlemesi'nin üç eserinden biri olan Budist kutsal kitabı. Bu metin, keşişler ve rahibeler için manastır davranışları sözleşmesini anlatır."
- sutta_pitaka_name:0 "Sutta Pitaka"
- sutta_pitaka_description:1 "Buda'nın ölümünden sonra düzenlenen ilk Budist konseyine dayanan bir Theravada Budist metni. Buda ve öğrencilerine atfedilen birçok şiir ve vaaz içerir. Pali Derlemesi'nin bir parçası."
- abhidhamma_pitaka_name:0 "Abhidhamma Pitaka"
- abhidhamma_pitaka_description:0 "Buda'nın öğretilerini analiz eden ayrıntılı bir öğretici çalışma. Pali Derlemesi'nin bir parçası."
-
-
-
-
- # Brooches
-
- brooch_decoration_centerpiece_and_adornment:0 "[SCOPE.Custom('BroochDecorationAdornment')] [SCOPE.Custom('BroochDecorationCenterpiece')] içeriyor"
- brooch_decoration_centerpiece:0 "[ROOT.Char.Custom2_Flag('ArtifactMetalType', SCOPE.GetFlagName('fastener_metal'))] iğneye tutturulmuş [SCOPE.Custom('BroochDecorationCenterpiece')] içeriyor"
- brooch_decoration_adornment:0 "[SCOPE.Custom('BroochDecorationAdornment')] [ROOT.Char.Custom2_Flag('ArtifactMetalType', SCOPE.GetFlagName('fastener_metal'))] iğneden oluşuyor"
- brooch_centerpiece_cabochon:0 "bir [ROOT.Char.Custom2_Flag('ArtifactGemType', SCOPE.GetFlagName('centerpiece_gem'))] kabaşon"
- brooch_centerpiece_cross:0 "bir [ROOT.Char.Custom2_Flag('ArtifactMetalType', SCOPE.GetFlagName('centerpiece_metal'))] haç"
- brooch_centerpiece_sword:0 "bir [ROOT.Char.Custom2_Flag('ArtifactMetalType', SCOPE.GetFlagName('centerpiece_metal'))] kılıç figürü"
- brooch_adornment_filigree_primary:0 "karmaşık telkari ile süslenmiş"
- brooch_adornment_filigree_secondary:0 "[ROOT.Char.Custom2_Flag('ArtifactMetalType', SCOPE.GetFlagName('adornment_filigree_metal'))] telkari ile süslenmiş"
- brooch_adornment_gems:0 "küçük [ROOT.Char.Custom2_Flag('ArtifactGemType', SCOPE.GetFlagName('adornment_gem'))] ile süslenmiş"
- brooch_adornment_runes:0 "rünler ile mühürlenmiş [ROOT.Char.Custom2_Flag('ArtifactMetalType', SCOPE.GetFlagName('adornment_runed_ring_metal'))] halkalar ile süslenmiş"
-
- tiny_sculpture_trinket_name:0 "Minyatür Heykel"
- tiny_sculpture_trinket_description:1 "[statue_owner.GetTitledFirstNameNoTooltip] için yapılmış, kendisinin minik heykeli. Cep boy ve hükmetmeye hazır. [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından yapılmış."
- tiny_box_trinket_name:0 "Minyatür Kutu"
- tiny_box_trinket_description:0 "Küçük ama gizemli bir kutu. Belki açıldığında neler olacağını kimse bilemez. [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından yapılmış."
- tiny_chest_trinket_name:0 "Minyatür Sandık"
- tiny_chest_trinket_description:0 "Küçük, kilitli bir sandık ama başparmak büyüklüğünde. Sallandığında tıkırdıyor. [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından yapılmış."
- tiny_cabinet_trinket_name:0 "Minyatür Dolap"
- tiny_cabinet_trinket_description:0 "Minicik bir dolap, üzerine basılmasını önlemek için muhtemelen başka bir dolapta saklanmalıdır. [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından yapılmış."
- tiny_throne_trinket_name:0 "Minyatür Taht"
- tiny_throne_trinket_description:0 "Bir farenin veya başka bir kemirgenin hüküm sürmesi için uygun bir taht. [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından yapılmış."
-
-
-#fund_inspiration.6301 same sex love poems
- prince_archivist_love_poem_name:0 "Ben Ay'ım, Sen de Güneş"
- prince_archivist_love_poem_description:0 "Birbirine aşık iki adamın şarkısı. Bir prens ve bir arşivci. Bir kulenin tepesinde, meraklı gözlerden uzakta ve birlikte yıldızları seyrederken. Söylentilere göre yazar [inspiration_owner.GetTitledFirstNameNoTooltip], arşivci karakteri kendi deneyimlerine dayanarak yazmış."
- witch_queen_love_poem_name:0 "Yıkılan Bir Kalp"
- witch_queen_love_poem_description:0 "Birbirine aşık iki kadını anlatan bir şiir. Bir cadı ve cadının ormandaki kulübesinin etrafında kaybolmuş bir kraliçe. İkisi de toplumdan uzakta rahata eriyorlar. Söylentilere göre yazar [inspiration_owner.GetTitledFirstNameNoTooltip], cadıyı yazarken kendinden ilham almış."
-
- #Books
- book_artifact_title_desc:0 "Cilt deri kaplıdır ve [relevant_title.GetName] için [SCOPE.Custom('ArtifactBookSubject')] konusunda tüm detayları barındırır."
- book_artifact_no_topic_desc:0 "Cilt deri kaplıdır ve [SCOPE.Custom('ArtifactBookSubject')] konusunda her türlü detaya girer. Ayrıntılı çizimler ve dekoratif kenarlıkları bile var."
- book_artifact_other_desc:0 "Cilt deri kaplıdır ve [SCOPE.Custom('ArtifactBookSubject')] konusunda [SCOPE.Custom('ArtifactArticleBookContentQuality')] anlaşılırlığa sahiptir. [SCOPE.Custom('ArtifactBookTopic')|U] gibi konulara da değiniyor."
-
- book_artifact_martial:0 "savaş"
- book_artifact_diplomacy:0 "diplomasi"
- book_artifact_learning:0 "bilim"
- book_artifact_stewardship:0 "yöneticilik"
- book_artifact_intrigue:0 "entrika"
- book_artifact_medicine:0 "tıp"
- book_artifact_reveler:0 "festivaller"
- book_artifact_blademaster:0 "çatışma"
- book_artifact_hunter:0 "avlanma"
- book_artifact_mystic:0 "tasavvuf"
- book_artifact_herbalist:0 "şifalı otlar"
- book_artifact_physician:0 "tıbbi bakım"
- book_artifact_torturer:0 "işlence"
- book_artifact_cannibal:0 "insan eti tüketimi"
- book_artifact_witch:0 "[ROOT.Char.GetFaith.WitchGodName] için tapınma yöntemleri"
- book_artifact_witch_sponsor:0 "[ROOT.Char.GetLiege.GetFaith.WitchGodName] için tapınma yöntemleri"
- book_artifact_deviant:0 "alternatif cinsel arzular"
- book_artifact_lunatic:0 "gerçeklikle tutarsızlıkar"
- book_artifact_unification:0 "birleştirme"
- book_artifact_creation:0 "yaratıcılık"
- book_artifact_restoration:0 "onarım"
-
- book_artifact_topic_herbs_the_art_of_lovemaking:0 "sevişme sanatı"
- book_artifact_topic_medicine:0 "farklı iksir ve merhemlerin uygulaması"
- book_artifact_topic_herbs:0 "şifarlı otların çeşitli kullanımları"
- book_artifact_topic_witch:0 "iksirler, merhemler, şifalı bitkiler ve alternatif ibadet yöntemleri"
-
- book_content_quality_excellent:0 "mükemmel bir"
- book_content_quality_deep:0 "derin bir"
- book_content_quality_good:0 "iyi bir"
- book_content_quality_modest:0 "ortalama bir"
- create_artifact_book_tooltip:0 "[inspiration_owner.GetShortUIName], [SCOPE.Custom('ArtifactQuality')] kalitede bir [SCOPE.Custom('ArtifactArticleWealth')|l] kitap yazdı"
-
- create_artifact_artisan_tooltip:0 "[inspiration_owner.GetShortUIName], [SCOPE.Custom('ArtifactQuality')] kalitede bir [inspiration_owner.Custom('InspirationArtisanType')] yarattı"
-
- create_artifact_smith_tooltip:0 "[inspiration_owner.GetShortUIName], [SCOPE.Custom('ArtifactQuality')] kalitede bir [inspiration_owner.Custom('InspirationSmithType')] yarattı"
- feature_blade_wrought_iron:0 "işlenmiş demir"
- feature_blade_folded_iron:0 "katlanmış demir"
- feature_blade_steel:0 "çelik"
+ naked_tapestry_name: "Erotik Duvar Örtüsü"
+ naked_tapestry_description: "Bu tasvir, [inspiration_owner.GetTitledFirstName] bir vaha kenarında iken çizilmiş. Üzerinde kristal gibi parlayan su damlacıkları varken kendini bir yelpaze ile serinletiyor."
+  
+ frogspawn_jar_name: "Kurbağa Yumurtası Kavanozu"
+ frogspawn_jar_description: "Kurbağa yumurtaları ve iribaşlarla dolu bir kavanoz. Dışarıdaki dehşetin bir göstergesi olarak [inspiration_owner.GetTitledFirstName] tarafından [ROOT.Char.GetTitledFirstNameNoTooltip] için gönderildi.\n\nKıpır kıpırlar!"
+ beaver_book_name: "Kunduzların Sarayları"
+ beaver_book_description: "Kunduz mimarisi ve inşaat teknikleri üzerine, [inspiration_owner.GetTitledFirstName] tarafından seyahatleri sırasında çizdiği eskizlerle yazılmış bir kitap."
+ crocodile_tapestry_name: "Timsah Duvar Örtüsü"
+ crocodile_tapestry_description: "[inspiration_owner.GetTitledFirstName], elinden geldiği en iyi şekilde hazırladığı timsahtan yapılma duvar örtüsü. Yaratık parlak bir kırmızı renkte. Birkaç kat dişe, zehirli püstüllere ve dikenli bir kuyruğa sahiptir. Bir şelalenin arkasındaki bir mağarada bir yumurta yığını ile çevrilidir."
+ mountain_rock_name: "Dağdan Getirilen Kaya"
+ mountain_rock_description: "[mountain_location.GetName] tepesinden [inspiration_owner.GetTitledFirstName] tarafından sürüklenerek getirilmiş büyük bir kaya."
+  
+  # Game start additional unique artifacts 
+ reichskrone_name: "Reichskrone"
+ reichskrone_description: "Bu, Kutsal Roma İmparatoru makamının amblemidir. Her geçen dükün dikkatini çekmesi garanti."
+ nikephoros_crown_name: "II. Nikiforos Fokas'ın Tacı"
+ nikephoros_crown_description: "Bu, imparatorluk soyunun gördüğü en iyi taktikçilerden birinin tacı. İmparatorluğun batısındaki savaşlarda başarısız olsa da doğuda gerçek bir fatihtir."
+ skull_cap_charlemagne_name: "Şarlman'ın Kafatası"
+ skull_cap_charlemagne_description: "Şarlman'ın kafası bu kutunun içinde. Belki de Şarlman'ın bilgeliği bu kutunun sahibine de geçer."
+ papal_tiara_name: "Papalık Tacı"
+ papal_tiara_description: "Bu, Papalık Makamı'nı simgeleyen altın taçlı mücevherli piskopos tacıdır. Kafanızın üzerinde çok da görkemli görünmez miydi?"
+ essen_crown_name: "Kinderkrone"
+ essen_crown_description: "Kimileri bu tacın III. Otto'nun Essen'deki taç giyme töreni için yapıldığını, kimileri de Bakire heykelini taçlandırmak için üretildiğini söylüyor. Her iki durumda da oldukça küçük bir taç olduğu kesin. Belki kafanıza iyice bastırıp giymeyi deneyebilirsiniz."
+ monomachus_crown_name: "Monomakos Tacı"
+ monomachus_crown_description: "Bu; IX. Konstantinos Monomakos, karısı Zoe, kız kardeşi Theodora ve bazı alegorik dans figürlerini betimleyen altın panelli portrelerden oluşan bir taç."
+ edmund_head_name: "Aziz Edmund'un Kafası"
+ edmund_head_description: "Edmund, doğduğu andan itibaren bir Aziz olmak isterdi. Efsaneler halkının Vikingler tarafından katledilmesine izin vermek yerine Vikinglere gönüllü olarak kurban olan bir Doğu Angliya Kralı olduğunu söyler."
+ dhammapada_name: "Dhammapada"
+ dhammapada_description: "Bu, Buda'nın güzel bir palmiye yaprağı el yazmasında ciltlenmiş sözlerinden oluşan bir koleksiyon."
+ excalibur_name: "'Ekskalibur'"
+ excalibur_description: "İngiltere'de gerçek Ekskalibur'a sahip olduğunu iddia etmeyen bir hükümdar yoktur. Savaşlar Ekskaliburların el değiştirmesi ile biter."
+ vinaya_pitaka_name: "Vinaya Pitaka"
+ vinaya_pitaka_description: "Pali Derlemesi'nin üç eserinden biri olan Budist kutsal kitabı. Bu metin, keşişler ve rahibeler için manastır davranışları sözleşmesini anlatır."
+ sutta_pitaka_name: "Sutta Pitaka"
+ sutta_pitaka_description: "Buda'nın ölümünden sonra düzenlenen ilk Budist konseyine dayanan bir Theravada Budist metni. Buda ve öğrencilerine atfedilen birçok şiir ve vaaz içerir. Pali Derlemesi'nin bir parçası."
+ abhidhamma_pitaka_name: "Abhidhamma Pitaka"
+ abhidhamma_pitaka_description: "Buda'nın öğretilerini analiz eden ayrıntılı bir öğretici çalışma. Pali Derlemesi'nin bir parçası."
+  
+  
+  
+  
+  # Brooches 
+  
+ brooch_decoration_centerpiece_and_adornment: "[SCOPE.Custom('BroochDecorationAdornment')] [SCOPE.Custom('BroochDecorationCenterpiece')] içeriyor"
+ brooch_decoration_centerpiece: "[ROOT.Char.Custom2_Flag('ArtifactMetalType', SCOPE.GetFlagName('fastener_metal'))] iğneye tutturulmuş [SCOPE.Custom('BroochDecorationCenterpiece')] içeriyor"
+ brooch_decoration_adornment: "[SCOPE.Custom('BroochDecorationAdornment')] [ROOT.Char.Custom2_Flag('ArtifactMetalType', SCOPE.GetFlagName('fastener_metal'))] iğneden oluşuyor"
+ brooch_centerpiece_cabochon: "bir [ROOT.Char.Custom2_Flag('ArtifactGemType', SCOPE.GetFlagName('centerpiece_gem'))] kabaşon"
+ brooch_centerpiece_cross: "bir [ROOT.Char.Custom2_Flag('ArtifactMetalType', SCOPE.GetFlagName('centerpiece_metal'))] haç"
+ brooch_centerpiece_sword: "bir [ROOT.Char.Custom2_Flag('ArtifactMetalType', SCOPE.GetFlagName('centerpiece_metal'))] kılıç figürü"
+ brooch_adornment_filigree_primary: "karmaşık telkari ile süslenmiş"
+ brooch_adornment_filigree_secondary: "[ROOT.Char.Custom2_Flag('ArtifactMetalType', SCOPE.GetFlagName('adornment_filigree_metal'))] telkari ile süslenmiş"
+ brooch_adornment_gems: "küçük [ROOT.Char.Custom2_Flag('ArtifactGemType', SCOPE.GetFlagName('adornment_gem'))] ile süslenmiş"
+ brooch_adornment_runes: "rünler ile mühürlenmiş [ROOT.Char.Custom2_Flag('ArtifactMetalType', SCOPE.GetFlagName('adornment_runed_ring_metal'))] halkalar ile süslenmiş"
+  
+ tiny_sculpture_trinket_name: "Minyatür Heykel"
+ tiny_sculpture_trinket_description: "[statue_owner.GetTitledFirstNameNoTooltip] için yapılmış, kendisinin minik heykeli. Cep boy ve hükmetmeye hazır. [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından yapılmış."
+ tiny_box_trinket_name: "Minyatür Kutu"
+ tiny_box_trinket_description: "Küçük ama gizemli bir kutu. Belki açıldığında neler olacağını kimse bilemez. [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından yapılmış."
+ tiny_chest_trinket_name: "Minyatür Sandık"
+ tiny_chest_trinket_description: "Küçük, kilitli bir sandık ama başparmak büyüklüğünde. Sallandığında tıkırdıyor. [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından yapılmış."
+ tiny_cabinet_trinket_name: "Minyatür Dolap"
+ tiny_cabinet_trinket_description: "Minicik bir dolap, üzerine basılmasını önlemek için muhtemelen başka bir dolapta saklanmalıdır. [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından yapılmış."
+ tiny_throne_trinket_name: "Minyatür Taht"
+ tiny_throne_trinket_description: "Bir farenin veya başka bir kemirgenin hüküm sürmesi için uygun bir taht. [inspiration_owner.GetTitledFirstNameNoTooltip] tarafından yapılmış."
+  
+  
+ #fund_inspiration.6301 same sex love poems 
+ prince_archivist_love_poem_name: "Ben Ay'ım, Sen de Güneş"
+ prince_archivist_love_poem_description: "Birbirine aşık iki adamın şarkısı. Bir prens ve bir arşivci. Bir kulenin tepesinde, meraklı gözlerden uzakta ve birlikte yıldızları seyrederken. Söylentilere göre yazar [inspiration_owner.GetTitledFirstNameNoTooltip], arşivci karakteri kendi deneyimlerine dayanarak yazmış."
+ witch_queen_love_poem_name: "Yıkılan Bir Kalp"
+ witch_queen_love_poem_description: "Birbirine aşık iki kadını anlatan bir şiir. Bir cadı ve cadının ormandaki kulübesinin etrafında kaybolmuş bir kraliçe. İkisi de toplumdan uzakta rahata eriyorlar. Söylentilere göre yazar [inspiration_owner.GetTitledFirstNameNoTooltip], cadıyı yazarken kendinden ilham almış."
+  
+  #Books 
+ book_artifact_title_desc: "Cilt deri kaplıdır ve [relevant_title.GetName] için [SCOPE.Custom('ArtifactBookSubject')] konusunda tüm detayları barındırır."
+ book_artifact_no_topic_desc: "Cilt deri kaplıdır ve [SCOPE.Custom('ArtifactBookSubject')] konusunda her türlü detaya girer. Ayrıntılı çizimler ve dekoratif kenarlıkları bile var."
+ book_artifact_other_desc: "Cilt deri kaplıdır ve [SCOPE.Custom('ArtifactBookSubject')] konusunda [SCOPE.Custom('ArtifactArticleBookContentQuality')] anlaşılırlığa sahiptir. [SCOPE.Custom('ArtifactBookTopic')|U] gibi konulara da değiniyor."
+  
+ book_artifact_martial: "savaş"
+ book_artifact_diplomacy: "diplomasi"
+ book_artifact_learning: "bilim"
+ book_artifact_stewardship: "yöneticilik"
+ book_artifact_intrigue: "entrika"
+ book_artifact_medicine: "tıp"
+ book_artifact_reveler: "festivaller"
+ book_artifact_blademaster: "çatışma"
+ book_artifact_hunter: "avlanma"
+ book_artifact_mystic: "tasavvuf"
+ book_artifact_herbalist: "şifalı otlar"
+ book_artifact_physician: "tıbbi bakım"
+ book_artifact_torturer: "işlence"
+ book_artifact_cannibal: "insan eti tüketimi"
+ book_artifact_witch: "[ROOT.Char.GetFaith.WitchGodName] için tapınma yöntemleri"
+ book_artifact_witch_sponsor: "[ROOT.Char.GetLiege.GetFaith.WitchGodName] için tapınma yöntemleri"
+ book_artifact_deviant: "alternatif cinsel arzular"
+ book_artifact_lunatic: "gerçeklikle tutarsızlıkar"
+ book_artifact_unification: "birleştirme"
+ book_artifact_creation: "yaratıcılık"
+ book_artifact_restoration: "onarım"
+  
+ book_artifact_topic_herbs_the_art_of_lovemaking: "sevişme sanatı"
+ book_artifact_topic_medicine: "farklı iksir ve merhemlerin uygulaması"
+ book_artifact_topic_herbs: "şifarlı otların çeşitli kullanımları"
+ book_artifact_topic_witch: "iksirler, merhemler, şifalı bitkiler ve alternatif ibadet yöntemleri"
+  
+ book_content_quality_excellent: "mükemmel bir"
+ book_content_quality_deep: "derin bir"
+ book_content_quality_good: "iyi bir"
+ book_content_quality_modest: "ortalama bir"
+ create_artifact_book_tooltip: "[inspiration_owner.GetShortUIName], [SCOPE.Custom('ArtifactQuality')] kalitede bir [SCOPE.Custom('ArtifactArticleWealth')|l] kitap yazdı"
+  
+ create_artifact_artisan_tooltip: "[inspiration_owner.GetShortUIName], [SCOPE.Custom('ArtifactQuality')] kalitede bir [inspiration_owner.Custom('InspirationArtisanType')] yarattı"
+  
+ create_artifact_smith_tooltip: "[inspiration_owner.GetShortUIName], [SCOPE.Custom('ArtifactQuality')] kalitede bir [inspiration_owner.Custom('InspirationSmithType')] yarattı"
+ feature_blade_wrought_iron: "işlenmiş demir"
+ feature_blade_folded_iron: "katlanmış demir"
+ feature_blade_steel: "çelik"
   #AGOT Modified 
  #feature_blade_wootz_steel: "wootz steel"
  feature_blade_wootz_steel: "YiTish çeliği"
@@ -856,62 +856,62 @@
   #AGOT Modified 
  #feature_blade_damascus_steel: "Şam çeliği"
  feature_blade_damascus_steel: "Valyrian çeliği"
-
- ## Character Modifiers made to artifacts ##
-
- # From court_ongoing_1021
- artifact_necklace:2 "Gerdanlık"
- artifact_necklace_pedestal:0 "$artifact_necklace$"
- artifact_necklace_name:1 "[newly_created_artifact.GetFeatureText( 'decoration_material_gem' )|U] [newly_created_artifact.GetFeatureText( 'decoration_material_wire' )|U] Gerdanlık"
- artifact_necklace_description:1 "[SCOPE.Custom('ArtifactQuality')|U] kalitede [SCOPE.Custom('ArtifactArticleWealth')] ancak narin bir gerdanlık. Gerdanlık [newly_created_artifact.GetFeatureText( 'decoration_material_wire' )] ile dövülmüş ve muhteşem bir [newly_created_artifact.GetFeatureText( 'decoration_material_gem' )] süse sahip."
- artifact_pressed_flower_name:1 "Kurutulmuş [SCOPE.Custom('ArtifactFlowerSpecies')|U]"
- artifact_pressed_flower_description:1 "Güzelliğini koruması için preslenmiş ve kurutulmuş güzel bir [SCOPE.Custom('ArtifactFlowerSpecies')]."
-
- # From stewardship_wealth.1061
- stewardship_old_ledger_name:0 "Eski Defter"
- stewardship_old_ledger_description:0 "Karalamalar ve muhasebe notlarıyla dolu eski, tozlu bir defter. Bir defterin nasıl gözüktüğünü bilmiyorsanız, bu deftere bakarak ancak onu öğrenebilirsiniz."
- feature_book_title_stewardship_old_ledger:0 "$stewardship_old_ledger_name$"
- feature_book_topic_stewardship_old_ledger:0 "$stewardship_old_ledger_description$"
-
- # From lover.3219
- lover_keepsake_hair_name:0 "[original_lover.GetFirstNamePossessiveNoTooltip] Saçı"
- lover_keepsake_hair_description:1 "[original_lover.GetTitledFirstName] tarafından uzaktaki sevgilisi [lover.GetTitledFirstName] için gönderilen bir hatıra. Böylelikle kendisinden bir parçayı her daim yanında taşıyabilir."
- lover_keepsake_clothes_male_name:0 "[original_lover.GetFirstNamePossessiveNoTooltip] Pantolonu"
- lover_keepsake_clothes_female_name:0 "[original_lover.GetFirstNamePossessiveNoTooltip] Sutyeni"
- lover_keepsake_clothes_description:1 "[original_lover.GetTitledFirstName] tarafından uzaktaki sevgilisi [lover.GetTitledFirstNameNoTooltip] için gönderilen bir hatıra. Uzakta olsalar bile yatak odasındaki ateşli maceralarını unutmayacaklar."
- lover_keepsake_shell_name:0 "[original_lover.GetFirstNamePossessiveNoTooltip] Deniz Kabuğu"
- lover_keepsake_shell_description:1 "[original_lover.GetTitledFirstNamePossessive] tarafından uzaktaki sevgilisi [lover.GetTitledFirstNameNoTooltip] için gönderilen bir hediye. İlk buluşmalarından bir hatıra."
-
- ## christian_saint_bone pilgrim reward
- christian_saint_bone_name:0 "[saint_bone_owner.Custom('RandomSaintNamePossessive')] [saint_bone_owner.Custom('RandomSaintBone')]"
- christian_saint_bone_description:1 "[saint_bone_owner.GetFaith.GetReligion.GetAdjectiveNoTooltip] bir azizin değerli kalıntıları. [saint_bone_owner.GetFaith.GetAdherentNamePluralNoTooltip] tarafından şansın ve dindarlığın bir simgesi olarak görülen bu kemikler, [saint_bone_owner.GetNameNoTooltip] tarafından [christian_saint_bone_scope.MakeScope.Var('holy_site').GetProvince.GetCounty.GetTitle.GetNameNoTierNoTooltip] topraklarına yapılan hac sırasında alındı."
- # bones
- bone_type_knuckle:0 "Parmak Eklemi"
- bone_type_shin:0 "İncik Kemiği"
- bone_type_kneecap:0 "Dizkapağı"
- bone_type_femur:0 "Kalça Kemiği"
- bone_type_clavicle:0 "Köprücük Kemiği"
- bone_type_rib:0 "Kaburga Kemiği"
- bone_type_vertebra:0 "Omur Kemiği"
- bone_type_jaw:0 "Çene Kemiği"
- bone_type_toe:0 "Ayak Parmağı Kemiği"
- bone_type_scapula:0 "Kürek Kemiği"
- bone_type_finger:0 "Parmak Kemiği"
- bone_type_thumb:0 "Baş Parmağı"
- bone_type_hip:0 "Leğen Kemiği"
- bone_type_humerus:0 "Kol Kemiği"
- bone_type_tibia:0 "Kaval Kemiği"
- bone_type_ankle:0 "Ayak Bileği Kemiği"
-
- # yearly.4081
- translated_arabic_book_de_materia_medica_name:0 "#italic Tıbbi Malzeme Üzerine#!"
+  
+  ## Character Modifiers made to artifacts ## 
+  
+  # From court_ongoing_1021 
+ artifact_necklace: "Gerdanlık"
+ artifact_necklace_pedestal: "$artifact_necklace$"
+ artifact_necklace_name: "[newly_created_artifact.GetFeatureText( 'decoration_material_gem' )|U] [newly_created_artifact.GetFeatureText( 'decoration_material_wire' )|U] Gerdanlık"
+ artifact_necklace_description: "[SCOPE.Custom('ArtifactQuality')|U] kalitede [SCOPE.Custom('ArtifactArticleWealth')] ancak narin bir gerdanlık. Gerdanlık [newly_created_artifact.GetFeatureText( 'decoration_material_wire' )] ile dövülmüş ve muhteşem bir [newly_created_artifact.GetFeatureText( 'decoration_material_gem' )] süse sahip."
+ artifact_pressed_flower_name: "Kurutulmuş [SCOPE.Custom('ArtifactFlowerSpecies')|U]"
+ artifact_pressed_flower_description: "Güzelliğini koruması için preslenmiş ve kurutulmuş güzel bir [SCOPE.Custom('ArtifactFlowerSpecies')]."
+  
+  # From stewardship_wealth.1061 
+ stewardship_old_ledger_name: "Eski Defter"
+ stewardship_old_ledger_description: "Karalamalar ve muhasebe notlarıyla dolu eski, tozlu bir defter. Bir defterin nasıl gözüktüğünü bilmiyorsanız, bu deftere bakarak ancak onu öğrenebilirsiniz."
+ feature_book_title_stewardship_old_ledger: "$stewardship_old_ledger_name$"
+ feature_book_topic_stewardship_old_ledger: "$stewardship_old_ledger_description$"
+  
+  # From lover.3219 
+ lover_keepsake_hair_name: "[original_lover.GetFirstNamePossessiveNoTooltip] Saçı"
+ lover_keepsake_hair_description: "[original_lover.GetTitledFirstName] tarafından uzaktaki sevgilisi [lover.GetTitledFirstName] için gönderilen bir hatıra. Böylelikle kendisinden bir parçayı her daim yanında taşıyabilir."
+ lover_keepsake_clothes_male_name: "[original_lover.GetFirstNamePossessiveNoTooltip] Pantolonu"
+ lover_keepsake_clothes_female_name: "[original_lover.GetFirstNamePossessiveNoTooltip] Sutyeni"
+ lover_keepsake_clothes_description: "[original_lover.GetTitledFirstName] tarafından uzaktaki sevgilisi [lover.GetTitledFirstNameNoTooltip] için gönderilen bir hatıra. Uzakta olsalar bile yatak odasındaki ateşli maceralarını unutmayacaklar."
+ lover_keepsake_shell_name: "[original_lover.GetFirstNamePossessiveNoTooltip] Deniz Kabuğu"
+ lover_keepsake_shell_description: "[original_lover.GetTitledFirstNamePossessive] tarafından uzaktaki sevgilisi [lover.GetTitledFirstNameNoTooltip] için gönderilen bir hediye. İlk buluşmalarından bir hatıra."
+  
+ ## christian_saint_bone pilgrim reward 
+ christian_saint_bone_name: "[saint_bone_owner.Custom('RandomSaintNamePossessive')] [saint_bone_owner.Custom('RandomSaintBone')]"
+ christian_saint_bone_description: "[saint_bone_owner.GetFaith.GetReligion.GetAdjectiveNoTooltip] bir azizin değerli kalıntıları. [saint_bone_owner.GetFaith.GetAdherentNamePluralNoTooltip] tarafından şansın ve dindarlığın bir simgesi olarak görülen bu kemikler, [saint_bone_owner.GetNameNoTooltip] tarafından [christian_saint_bone_scope.MakeScope.Var('holy_site').GetProvince.GetCounty.GetTitle.GetNameNoTierNoTooltip] topraklarına yapılan hac sırasında alındı."
+ # bones 
+ bone_type_knuckle: "Parmak Eklemi"
+ bone_type_shin: "İncik Kemiği"
+ bone_type_kneecap: "Dizkapağı"
+ bone_type_femur: "Kalça Kemiği"
+ bone_type_clavicle: "Köprücük Kemiği"
+ bone_type_rib: "Kaburga Kemiği"
+ bone_type_vertebra: "Omur Kemiği"
+ bone_type_jaw: "Çene Kemiği"
+ bone_type_toe: "Ayak Parmağı Kemiği"
+ bone_type_scapula: "Kürek Kemiği"
+ bone_type_finger: "Parmak Kemiği"
+ bone_type_thumb: "Baş Parmağı"
+ bone_type_hip: "Leğen Kemiği"
+ bone_type_humerus: "Kol Kemiği"
+ bone_type_tibia: "Kaval Kemiği"
+ bone_type_ankle: "Ayak Bileği Kemiği"
+  
+  # yearly.4081 
+ translated_arabic_book_de_materia_medica_name: "#italic Tıbbi Malzeme Üzerine#!"
   #AGOT Modified 
  #translated_arabic_book_de_materia_medica_desc: "Dioscorides'in antik İskenderiye'de çeşitli bitkilerin tıbbi kullanımları üzerine yazdığı beş ciltlik farmakopesinin resimli bir kopyası $translated_arabic_book_shared_desc$"
-translated_arabic_book_de_materia_medica_desc:0 "Maegor Nogarys'in çeşitli bitkilerin tıbbi kullanımına dair beş ciltlik farmakope eserinin, antik Valyria dilinde yazılmış ve resimli bir kopyası $translated_arabic_book_shared_desc$"
-translated_arabic_book_on_ascensions_name:0 "#italic Yükselişler Üzerine#!"
+ translated_arabic_book_de_materia_medica_desc: "Maegor Nogarys'in çeşitli bitkilerin tıbbi kullanımına dair beş ciltlik farmakope eserinin, antik Valyria dilinde yazılmış ve resimli bir kopyası $translated_arabic_book_shared_desc$"
+ translated_arabic_book_on_ascensions_name: "#italic Yükselişler Üzerine#!"
   #AGOT Modified 
  #translated_arabic_book_on_ascensions_desc: "Hypsicles'in burçların gökyüzündeki hareketleri üzerine antik İskenderiye'de yazılmış göksel incelemesinin bir kopyası ve $translated_arabic_book_shared_desc$"
-translated_arabic_book_on_ascensions_desc: "Antik Valyria dilinde yazılmış ve $translated_arabic_book_shared_desc$ Gaemon Belaerys'in yıldızların gökyüzündeki hareketleri üzerine yaptığı gökbilimsel incelemenin bir kopyası."
+ translated_arabic_book_on_ascensions_desc: "Antik Valyria dilinde yazılmış ve $translated_arabic_book_shared_desc$ Gaemon Belaerys'in yıldızların gökyüzündeki hareketleri üzerine yaptığı gökbilimsel incelemenin bir kopyası."
  translated_arabic_book_elements_name: "#italic Elementler#!"
   #AGOT Modified 
  #translated_arabic_book_elements_desc: "Öklid'in geometri, mantık ve bunların kanıtları üzerine antik İskenderiye'de yazdığı on üç ciltlik matematiksel incelemesinin bir kopyası ve $translated_arabic_book_shared_desc$"
@@ -935,185 +935,185 @@ translated_arabic_book_on_ascensions_desc: "Antik Valyria dilinde yazılmış ve
   #AGOT Modified 
  #translated_arabic_book_shared_desc: "[ROOT.Char.GetTitledFirstNameNoTooltipRegnal] için orijinal Yunanca'dan Arapça'ya çevrilmiştir."
  translated_arabic_book_shared_desc: "[ROOT.Char.GetLadyLord] [ROOT.Char.GetHouse.GetNameNoTooltip] için Ortak Dile çevrilmiştir."
- 
- # hold_court.4300
- dress_me_artifact_desc:0 "Tüm görkemiyle sarayı etkilemek için [ROOT.Char.GetTitledFirstNameNoTooltipRegnal] tarafından en yetenekli terzilere sipariş edilen ihtişamlı bir kıyafet."
-
- # martial_authority.4000-5
- improvised_halberd_desc:0 "Bu baltalı kargının ucunda bir keski var, her durumda işe yarayabilecek bir silah."
- improvised_dagger_desc:0 "Bu hançer, tarlada kullanılan bir aleti değiştirerek yapılmış. Kavraması kolay ve hâlâ keskin."
- improvised_billhook_desc:0 "Bu tek elli keski çalılıklardan dal kesmek için kullanılmış. Bir krala yakışmasa da eğri bıçağı zırhtaki savunmasız yerleri bulmada iyi iş çıkarıyor."
-
- # yearly_event.7010-50
- football_cup_desc:0 "Bu kupa kazanılan bir futbol maçını kutlamak için yapılmış."
- participation_trophy_desc:0 "Bu kupa "kazanılan" bir futbol maçını kutlamak için yapılmış."
-
- #bp1_yearly.7200
- perfume_bottle_description:0 "[ROOT.Char.GetFirstNameNoTooltip] bu koku için gereken malzemeleri topladı."
-
- # travel_events.4005
- maritime_trading_handbook:0 "Deniz Ticareti El Kitabı"
- maritime_trading_handbook_description:0 "[merchant_character_scope.GetCulture.GetName] deniz ticaret geleneklerine dair ustalıkla yazılmış bir el kitabı."
- own_holy_text_mid:0 "Mücevherlerle Süslenmiş [ROOT.Char.GetFaith.ReligiousText|U]"
- own_holy_text_mid_description:0 "Değerli taşlarla süslenmiş bir [ROOT.Char.GetFaith.ReligiousText|U]."
- merchants_holy_text_mid:0 "Mücevherlerle Süslenmiş [merchant_character_scope.GetFaith.ReligiousText|U]"
- merchants_holy_text_mid_description:0 "Değerli taşlarla süslenmiş bir [merchant_character_scope.GetFaith.ReligiousText|U]."
- merchants_sword:0 "[merchant_character_scope.GetCulture.GetName] Kılıcı"
- merchants_sword_description:0 "Seyyah bir [merchant_character_scope.GetCulture.GetNameNoTooltip] tüccardan satın alınmış güzel bir kılıç."
- jewelled_slippers:0 "Mücevherli Terlik"
- jewelled_slippers_description:0 "Değerli taşlarla süslenmiş bir çift terlik. Onları giydiğinizde her zaman evin yolunu bulacağınızdan emin olursunuz."
- witchcraft_book:0 "Bitki Tedavisi Kitabı"
- witchcraft_book_description:0 "Bir zamanlar [ROOT.Char.GetCurrentLocation.GetTitle.GetNameNoTier] Cadısına ait olan bu kitabın sayfalarında bitkisel tarifler yer alıyor."
- witchy_holy_text_mid:0 "Mücevherlerle Süslenmiş [witch_scope.GetFaith.ReligiousText|U]"
- witchy_holy_text_mid_description:0 "Değerli taşlarla süslenmiş bir [witch_scope.GetFaith.ReligiousText|U]."
- immaculate_witchy_bones:0 "Korunmuş Cadı Kemikleri"
- immaculate_witchy_bones_description:0 "[ROOT.Char.GetCurrentLocation.GetTitle.GetNameNoTier] Cadısının kemikleri, yakılarak öldürülmesine rağmen kemiklerinde bir çizik bile yok."
- mysterious_lamp:0 "Gizemli Lamba"
- mysterious_lamp_description:0 "Değerli taşlarla süslenmiş altın bir lamba. Lambayı elinize aldığınızda kozmik bir gücün varlığını hissediyorsunuz."
- mysterious_puzzle:0 "Gizemli Yapboz"
- mysterious_puzzle_description:0 "Yabancı dilde yazılar barındıran, altın işlemeli abartılı bir yapboz. Bir zamanlar güçlü bir oyun ustasına ait olduğu söyleniyor."
- lunchbox:0 "Koruyucu Kutu"
- lunchbox_description:0 "İçine konan yemeğin saklanma süresini uzatan hava geçirmez koruyucu kutu."
-
- #Artifact Titles
- artifact_title_valor:0 "Cesur"
- artifact_title_virtue:0 "Erdemli"
- artifact_title_pain:0 "Acı Veren"
- artifact_title_judgement:0 "Yargılı"
- artifact_title_merciless:0 "Acımasız"
- artifact_title_brutal:0 "Zalim"
- artifact_title_victorious:0 "Muzaffer"
- artifact_title_famed:0 "Ünlü"
- artifact_title_lion:0 "Aslan"
- artifact_title_dragon:0 "Ejderha"
- artifact_title_raven:0 "Kuzgun"
- artifact_title_hero:0 "Kahraman"
- artifact_title_legendary:0 "Efsanevi"
- artifact_title_miraculous:0 "Mucizevi"
- artifact_title_mythical:0 "Mitik"
- artifact_title_fabled:0 "Meşhur"
- artifact_title_impenetrable:0 "Delinmez"
- artifact_title_secure:0 "Güvenli"
- artifact_title_solid:0 "Sağlam"
- artifact_title_shiny:0 "Parlak"
- artifact_title_patience:0 "Sabırlı"
- artifact_title_grace:0 "Lütuf Veren"
- artifact_title_mercy:0 "Merhametli"
- artifact_title_strength:0 "Güçlü"
- artifact_title_invincible:0 "Yenilmez"
- artifact_title_glorious:0 "Şanlı"
- artifact_title_sun:0 "Güneş"
- artifact_title_immortal:0 "Ölümsüz"
- artifact_title_brave:0 "Yiğit"
- artifact_title_quick:0 "Çabuk"
- artifact_title_darting:0 "Hızlı"
- artifact_title_flashing:0 "Parlayan"
- artifact_title_flickering:0 "Titreşen"
- artifact_title_shades:0 "Gölge"
- artifact_title_lightning:0 "Yıldırım"
- artifact_title_thunder:0 "Şimşek"
- artifact_title_stream:0 "Akıntılı"
- artifact_title_implacable:0 "Yatıştırılamaz"
- artifact_title_heroic:0 "Kahramanca"
- artifact_title_amazing:0 "Muhteşem"
- artifact_title_fearsome:0 "Korkusuz"
- artifact_title_snakes:0 "Yılan"
- artifact_title_themerciless:0 "Merhametsiz"
- artifact_title_glory:0 "Görkemli"
-# Additional Historical Artifacts
- artifact_pedestal_koh_i_noor_name:0 "Işık Dağı"
- artifact_pedestal_koh_i_noor_description:0 "Benzersiz boyutta ve şeffaflıkta bir elmas. Güneydoğu Hindistan'daki madenlerden geldiği söyleniyor, ancak muhtemelen gerçek kökeni bilinmiyor."
- artifact_jewelled_danda_name:0 "Mücevherli Danda"
- artifact_jewelled_danda_description:0 "Hindistan'dan gelen, Kraliyet otoritesinin ve hükümdarın tebaasını cezalandırabileceğini simgeleyen süslü mücevherli bir asa."
- artifact_aruval_name:0 "Antik Aruval"
- artifact_aruval_description:0 "Söylentiye göre bu uzun Aruval o kadar eski ki Karuppa Sami tarafından bizzat kullanılmış olması mümkün."
- artifact_khanda_name:0 "Tören Khandası"
- artifact_khanda_description:0 "Savaştan ziyade törenler için yapılan bu Khanda nesiller boyunca cehalet perdesini kesmeyi simgelemek için kullanıldı."
- artifact_makarakundala_name:0 "Makarakundala"
- artifact_makarakundala_description:0 "Bu küpeler âdeta tanrılar tarafından kullanılmış gibi. Hatta kimilerine göre bir zamanlar kutsal varlıklardan insanlara hediye edilmiş."
- artifact_cintamani_name:0 "Çintamani Taşı"
- artifact_cintamani_hindu_description:0 "Bir zamanlar gökten geldiği söylenen taş. Bazıları bu taşın Vişnuya veya Naga Kralı'na ait olduğunu söylüyor ve taşa sahip olanın büyük bir refaha kavuştuğu iddia ediliyor."
- artifact_cintamani_buddhist_description:0 "Bir zamanlar gökten geldiği söylenen taş. Bazıları bu taşın Bodisattvas Avalokiteşvara ve Ksitigarba'ya ait olduğunu, taşa sahip olanların dileklerinin yerine getirildiğini iddia ediyor."
- artifact_navaratna_name:0 "Navaratna"
- artifact_navaratna_description:0 "Hinduizm'deki dokuz gök tanrısını simgeleyen, ortasında büyük bir yakut bulunan dokuz mücevherden oluşan bir zincir."
- artifact_shankha_conch_name:0 "Şankha Kabuğu"
- artifact_shankha_conch_description:0 "Tanrı Vişnu'nun simgesi olan eski Şanhka Kabuğu, dinî törenlerde bir borazan olarak kullanılır, ayrıca refah ve erdemi simgelediği söylenir."
- artifact_pedestal_great_diamond_name:0 "Büyük Elmas"
- artifact_pedestal_great_diamond_description:0 "Bu muazzam mücevherin, açgözlü bir misafir tarafından çalınmadan önce bir tapınak heykelinini süslediği söylenir."
- al_taj_crown_name:0 "el-Taç el-Şerif"
- al_taj_crown_description:0 "Fâtımî halifelerinin geleneksel tören tacı olan 'Onurlu Taç' veya 'Saygı Lütfü' muazzam bir mücevher olan 'el Yatima' ile süslenmiştir."
- qadib_al_mulk_name:0 "Kadıb el-Mülk"
- qadib_al_mulk_description:0 "Fâtımî Halifeliğine ait altınla kaplanmış, inci ve mücevherlerle süslenmiş tören asası."
- al_sayf_al_khass_name:0 "el-Saif el-Hass"
- al_sayf_al_khass_description:0 "Bu mücevherli kılıcın yıldırım ile dövüldüğü söylenir. Halife için törensel önemi olduğundan altın işlemeli bir kılıfta muhafaza ediliyor."
- al_dawat_name:0 "el-Davat"
- al_dawat_description:0 "Altın ve mercandan yapılmış bir hokka. Uzun yıllar Hilafet törenlerinde özel bir yeri vardır."
- al_hafir_name:0 "el-Hafir"
- al_hafir_description:0 "El-Hafir veya bilinen adıyla 'Toynak' dünya üzerinde ender görülen bir kalitede yakuttur. Etrafı zümrüt çubuklarla süslenerek bir ipeğe dikilmiştir. Geleneksel olarak Halife'ye ait olan atın yüzünü süslemektedir."
- artifact_wall_banner_thankfulness_name:0 "Minnettarlık Sancağı"
- artifact_wall_banner_thankfulness_description:0 "Bu beyaz ipek sancağın üzerinde altın renkli yazılar vardır ve sancağın kendisi de altın bir mızrağa sarılmıştır. Bu sancak ve ikizi geleneksel olarak Halife törenlerinde kullanılmıştır."
- artifact_arms_of_alex_name:0 "İskender'in Zırhı"
- artifact_arms_of_alex_description:0 "Bu antik, katmanlı ketenden yapılmış zırh takımının bir zamanlar Büyük İskender'e ait olduğu söylenir. Her ne kadar kuşanmaya uygun olmasa da zırhın kendisi Akdeniz'den Hindistan'a uzanan büyük fatihin mirasını taşıyor."
- artifact_pedestal_al_jabal_name:0 "el-Jabal"
- artifact_pedestal_al_jabal_description:0 "El-Jabal veya bilinen adıyla 'Dağ' büyük bir yakutla süslenmiş bir yüzüktür. Yüzüğün üzerindeki taş muazzam büyüklüktedir ve bir zamanlar Sasani imparatorlarının parmağını süslediği söylenir."
- artifact_pedestal_al_yatima_name:0 "el-Yatima"
- artifact_pedestal_al_yatima_description:0 "el-Yatima (Yetim) olarak bilinen bu muazzam incinin dünyada bulunan hiçbir inciye benzemediği söylenir."
- artifact_dagger_of_rostam_name:0 "Rostam'ın Hançeri"
- artifact_dagger_of_rostam_description:0 "Bu giriftli hançerin, bir zamanlar beyaz Daeva'yı öldürmek için Rostam tarafından kullanıldığı söylenir."
- artifact_spear_of_ascalon_name:0 "Ascalon"
- artifact_spear_of_ascalon_description:0 "Bu eski ve kırık mızrak, bir zamanlar Beyrut Ejderhası'nı öldürmek için Aziz George tarafından kullanıldığı söylenir."
- artifact_zomorrodnegar_name:0 "Zomorrodnegar Şemşiri"
- artifact_zomorrodnegar_description:0 "Bu zümrüt işlemeli efsanevi kılıcın, bir zamanlar iblis Fulad-zereh'i öldürmek için Hz. Süleyman tarafından kullanıldığı söylenir."
- artifact_muhammads_epistles_name:0 "Hz. Muhammed'den Gelen Mektup"
- artifact_muhammads_epistles_description:1 "Bu mektup, Hz. Muhammed ile [newly_created_artifact.Custom('EpistleReciever')] hükümdarları arasındaki diplomasinin bir parçasıdır."
- epistle_syria:0 "Suriye"
- epistle_arabia:0 "Arap kabileleri"
- epistle_persia:0 "İran"
- epistle_byzantium:0 "Doğu Roma İmparatorluğu"
- epistle_bahrain:0 "Bahreyn"
- artifact_kaves_apron_name:0 "Kave'nin Önlüğü"
- artifact_kaves_apron_description:0 "Bu yıpranmış bayrağın, İranlı demirci Kave tarafından halkını şeytanı güçlere karşı birlik olması için kendi önlüğünden yaptığı efsanevi sancak olduğu söylenir."
- artifact_joyeuse_name:0 "Joyeuse"
- artifact_joyeuse_description:1 "Şarlman'ın kılıcı, Longinus'un mızrağından bir parça eklenerek dövülmüştür. Joyeuse hem şövalyelik cesaretini hem de Şarlman'ın büyük kraliyet imparatorluğunu simgeler."
- artifact_durendal_name:0 "Durendal"
- artifact_durendal_description:0 "Bu kısa ve ağır kılıcın, Roland tarafından kraliyet tacını düşmanlarından korumak için ölmeden önce sakladığı efsanevi Durendal olduğu söylenir."
- artifact_curtana_name:0 "Curtana"
- artifact_curtana_description:0 "Bu kılıcın Merhametin Kılıcı olan Curtana olduğu iddia ediliyor. Bu efsanevi kılıç, bir zamanlar Morholt ile mücadele etmek için Tristan tarafından kullanılmıştır. Kılıcın kaybolan ucu İrlanda'daki bir devin kafatasının içinde kalmış olabilir."
- artifact_ring_angelica_name:0 "Angelica'nın Yüzüğü"
- artifact_ring_angelica_description:0 "Bu yüzüğün Roland ve Şarlman'ın efsanelerinden bilinen Prenses Angelica'ya ait olduğu söylenir. Takana görünmezlik bahşettiği iddia edilse de zamanla bahşettiği güçler solup gitmiş olmalı. Ancak yine de efsanevi prensesi simgeleyen bir yüzük."
- artifact_olifant_name:0 "Olifant"
- artifact_olifant_description:0 "Detaylı oymalar ile kaplı büyük bir fildişi boru. Kimileri Roncevaux Savaşı'nda Roland tarafından ölmeden önce yardım çağırmak için üflendiği söyler."
- artifact_colada_name:0 "Colada"
- artifact_colada_description:0 "El Cid'in kılıçlarından biri olduğu söylenen bu kılıç, onun şövalyelik düsturuna bağlı olanlar için bir ilham kaynağıdır."
- artifact_aram_name:0 "Aram"
- artifact_aram_description:0 "Bu eski ve kararmış mızrak birçok neslin gelip geçtiğine şahit oldu. O kadar eski ki kimileri onun Jangar'ın hikâyelerinden bilenen efsanevi mızrak Aram olduğuna inanır."
- artifact_ikenga_name:0 "İkenga"
- artifact_ikenga_description:0 "Bu küçük boynuzlu heykelin sahibine başarı ve zafer bahşettiğine inanılıyor."
- artifact_mmaagha_kamalu_name:0 "Mmaagha Kamalu"
- artifact_mmaagha_kamalu_description:0 "Çok eski, süslü bir tören kılıcı. Bir zamanlar İgbo savaş tanrısı olan Kamula'ya ait olduğu iddia ediliyor."
- artifact_bronze_head_name:0 "Bronz Baş"
- artifact_bronze_head_description:0 "Bu natüralist bronz heykel, geçmiş zamanlarda ölmüş bir hükümdarın suratını ayrıntılı bir şekilde göstermektedir. Baş, tasvir ettiği hükümdarın konumunu belirtmek için bir taç ile süslenmiştir."
- artifact_crystal_carving_name:0 "Kristal Oyma"
- artifact_crystal_carving_description:0 "Bu diktörtgen kristal parçası neredeyse şeffaftır ve yüzeyi iç içe girmiş oymalar ile kaplıdır. Ne işe yaradığı bilinmese de hoş bir görüntüye sahiptir."
- artifact_ibeji_name:0 "İbeji"
- artifact_ibeji_description:0 "Bu tahtadan oyulmuş ve zamanında ölmüş ikizleri betimleyen heykel söylenenlere göre ona sahip olanlara büyük bir şans ve zenginlik getirecektir. Özenle ve ayrıntılı bir şekilde işlenmiştir."
- artifact_kantele_name:0 "Antik Kantele"
- artifact_kantele_description:0 "Bu ahşaptan yapılma bir tür telli çalgı olan Kantele nesilden nesile aktarılmıştır. Söylentilere göre geçmişi Väinämöinen'in yaşadığı günlere dayanmaktadır."
- artifact_sledovik_name:0 "Sledovik"
- artifact_sledovik_description:0 "Bu büyük kayanın yüzeyi ayak izleri ile doludur. Uzun yıllar dinî bir mabet olarak kullanılmıştır ve ayak izlerinin yerel din adamlarına ait olduğu söylenir."
- artifact_nagelring_name:0 "Nagelring"
- artifact_nagelring_description:0 "Bu eski kılıç, söylentilere göre efsanevi Dietrich von Bern'e aittir."
- artifact_kladenets_name:0 "Kladenets"
- artifact_kladenets_description:1 "Eski günlerde olduğu kadar güzel gözükmese de bu kılıcın kendi kendine hareket eden efsanevi Kladenets olduğu söyleniyor. Şu anki durumunda onu kullanmak mümkün olmasa da varlığı, doğaüstü geçmişine inanlar arasında büyük bir saygı görmesine neden oluyor."
- artifact_legbiter_name:0 "Bacak Isıran"
- artifact_legbiter_description:0 "Kabzası fildişinden oyulma son derece keskin bir kılıç. Norveç'in büyük kralı Magnus Olafsson'a ait olduğu söyleniyor."
- artifact_quernbiter_name:0 "Değirmen Isıran"
- artifact_quernbiter_description:0 "Bu kılıç bir zamanlar Kral Haakon'a aitti ve söylenenlere göre kılıç o kadar keskindi ki bir taşı ortadan ikiye bölebilirdi."
- artifact_dragvandil_name:0 "Dragvandil"
- artifact_dragvandil_description:0 "Egill Saga'dan bilinen çiftçi, şair ve savaşçı Egil Skallagrimsson'a ait olduğu söylenen kılıç."
- artifact_szczerbiec_name:0 "Szczerbiec"
- artifact_szczerbiec_description:1 "Kiev'in altın kapılarına saldırmak için bir melek tarafından Kral Cesur Boleslaw'a verildiği söylenen kılıç. Sembolik anlamı çok büyüktür."
-   #AGOT Modified 
+  
+  # hold_court.4300 
+ dress_me_artifact_desc: "Tüm görkemiyle sarayı etkilemek için [ROOT.Char.GetTitledFirstNameNoTooltipRegnal] tarafından en yetenekli terzilere sipariş edilen ihtişamlı bir kıyafet."
+  
+  # martial_authority.4000-5 
+ improvised_halberd_desc: "Bu baltalı kargının ucunda bir keski var, her durumda işe yarayabilecek bir silah."
+ improvised_dagger_desc: "Bu hançer, tarlada kullanılan bir aleti değiştirerek yapılmış. Kavraması kolay ve hâlâ keskin."
+ improvised_billhook_desc: "Bu tek elli keski çalılıklardan dal kesmek için kullanılmış. Bir krala yakışmasa da eğri bıçağı zırhtaki savunmasız yerleri bulmada iyi iş çıkarıyor."
+  
+  # yearly_event.7010-50 
+ football_cup_desc: "Bu kupa kazanılan bir futbol maçını kutlamak için yapılmış."
+ participation_trophy_desc: "Bu kupa "kazanılan" bir futbol maçını kutlamak için yapılmış."
+  
+  #bp1_yearly.7200 
+ perfume_bottle_description: "[ROOT.Char.GetFirstNameNoTooltip] bu koku için gereken malzemeleri topladı."
+  
+  # travel_events.4005 
+ maritime_trading_handbook: "Deniz Ticareti El Kitabı"
+ maritime_trading_handbook_description: "[merchant_character_scope.GetCulture.GetName] deniz ticaret geleneklerine dair ustalıkla yazılmış bir el kitabı."
+ own_holy_text_mid: "Mücevherlerle Süslenmiş [ROOT.Char.GetFaith.ReligiousText|U]"
+ own_holy_text_mid_description: "Değerli taşlarla süslenmiş bir [ROOT.Char.GetFaith.ReligiousText|U]."
+ merchants_holy_text_mid: "Mücevherlerle Süslenmiş [merchant_character_scope.GetFaith.ReligiousText|U]"
+ merchants_holy_text_mid_description: "Değerli taşlarla süslenmiş bir [merchant_character_scope.GetFaith.ReligiousText|U]."
+ merchants_sword: "[merchant_character_scope.GetCulture.GetName] Kılıcı"
+ merchants_sword_description: "Seyyah bir [merchant_character_scope.GetCulture.GetNameNoTooltip] tüccardan satın alınmış güzel bir kılıç."
+ jewelled_slippers: "Mücevherli Terlik"
+ jewelled_slippers_description: "Değerli taşlarla süslenmiş bir çift terlik. Onları giydiğinizde her zaman evin yolunu bulacağınızdan emin olursunuz."
+ witchcraft_book: "Bitki Tedavisi Kitabı"
+ witchcraft_book_description: "Bir zamanlar [ROOT.Char.GetCurrentLocation.GetTitle.GetNameNoTier] Cadısına ait olan bu kitabın sayfalarında bitkisel tarifler yer alıyor."
+ witchy_holy_text_mid: "Mücevherlerle Süslenmiş [witch_scope.GetFaith.ReligiousText|U]"
+ witchy_holy_text_mid_description: "Değerli taşlarla süslenmiş bir [witch_scope.GetFaith.ReligiousText|U]."
+ immaculate_witchy_bones: "Korunmuş Cadı Kemikleri"
+ immaculate_witchy_bones_description: "[ROOT.Char.GetCurrentLocation.GetTitle.GetNameNoTier] Cadısının kemikleri, yakılarak öldürülmesine rağmen kemiklerinde bir çizik bile yok."
+ mysterious_lamp: "Gizemli Lamba"
+ mysterious_lamp_description: "Değerli taşlarla süslenmiş altın bir lamba. Lambayı elinize aldığınızda kozmik bir gücün varlığını hissediyorsunuz."
+ mysterious_puzzle: "Gizemli Yapboz"
+ mysterious_puzzle_description: "Yabancı dilde yazılar barındıran, altın işlemeli abartılı bir yapboz. Bir zamanlar güçlü bir oyun ustasına ait olduğu söyleniyor."
+ lunchbox: "Koruyucu Kutu"
+ lunchbox_description: "İçine konan yemeğin saklanma süresini uzatan hava geçirmez koruyucu kutu."
+  
+  #Artifact Titles 
+ artifact_title_valor: "Cesur"
+ artifact_title_virtue: "Erdemli"
+ artifact_title_pain: "Acı Veren"
+ artifact_title_judgement: "Yargılı"
+ artifact_title_merciless: "Acımasız"
+ artifact_title_brutal: "Zalim"
+ artifact_title_victorious: "Muzaffer"
+ artifact_title_famed: "Ünlü"
+ artifact_title_lion: "Aslan"
+ artifact_title_dragon: "Ejderha"
+ artifact_title_raven: "Kuzgun"
+ artifact_title_hero: "Kahraman"
+ artifact_title_legendary: "Efsanevi"
+ artifact_title_miraculous: "Mucizevi"
+ artifact_title_mythical: "Mitik"
+ artifact_title_fabled: "Meşhur"
+ artifact_title_impenetrable: "Delinmez"
+ artifact_title_secure: "Güvenli"
+ artifact_title_solid: "Sağlam"
+ artifact_title_shiny: "Parlak"
+ artifact_title_patience: "Sabırlı"
+ artifact_title_grace: "Lütuf Veren"
+ artifact_title_mercy: "Merhametli"
+ artifact_title_strength: "Güçlü"
+ artifact_title_invincible: "Yenilmez"
+ artifact_title_glorious: "Şanlı"
+ artifact_title_sun: "Güneş"
+ artifact_title_immortal: "Ölümsüz"
+ artifact_title_brave: "Yiğit"
+ artifact_title_quick: "Çabuk"
+ artifact_title_darting: "Hızlı"
+ artifact_title_flashing: "Parlayan"
+ artifact_title_flickering: "Titreşen"
+ artifact_title_shades: "Gölge"
+ artifact_title_lightning: "Yıldırım"
+ artifact_title_thunder: "Şimşek"
+ artifact_title_stream: "Akıntılı"
+ artifact_title_implacable: "Yatıştırılamaz"
+ artifact_title_heroic: "Kahramanca"
+ artifact_title_amazing: "Muhteşem"
+ artifact_title_fearsome: "Korkusuz"
+ artifact_title_snakes: "Yılan"
+ artifact_title_themerciless: "Merhametsiz"
+ artifact_title_glory: "Görkemli"
+ # Additional Historical Artifacts 
+ artifact_pedestal_koh_i_noor_name: "Işık Dağı"
+ artifact_pedestal_koh_i_noor_description: "Benzersiz boyutta ve şeffaflıkta bir elmas. Güneydoğu Hindistan'daki madenlerden geldiği söyleniyor, ancak muhtemelen gerçek kökeni bilinmiyor."
+ artifact_jewelled_danda_name: "Mücevherli Danda"
+ artifact_jewelled_danda_description: "Hindistan'dan gelen, Kraliyet otoritesinin ve hükümdarın tebaasını cezalandırabileceğini simgeleyen süslü mücevherli bir asa."
+ artifact_aruval_name: "Antik Aruval"
+ artifact_aruval_description: "Söylentiye göre bu uzun Aruval o kadar eski ki Karuppa Sami tarafından bizzat kullanılmış olması mümkün."
+ artifact_khanda_name: "Tören Khandası"
+ artifact_khanda_description: "Savaştan ziyade törenler için yapılan bu Khanda nesiller boyunca cehalet perdesini kesmeyi simgelemek için kullanıldı."
+ artifact_makarakundala_name: "Makarakundala"
+ artifact_makarakundala_description: "Bu küpeler âdeta tanrılar tarafından kullanılmış gibi. Hatta kimilerine göre bir zamanlar kutsal varlıklardan insanlara hediye edilmiş."
+ artifact_cintamani_name: "Çintamani Taşı"
+ artifact_cintamani_hindu_description: "Bir zamanlar gökten geldiği söylenen taş. Bazıları bu taşın Vişnuya veya Naga Kralı'na ait olduğunu söylüyor ve taşa sahip olanın büyük bir refaha kavuştuğu iddia ediliyor."
+ artifact_cintamani_buddhist_description: "Bir zamanlar gökten geldiği söylenen taş. Bazıları bu taşın Bodisattvas Avalokiteşvara ve Ksitigarba'ya ait olduğunu, taşa sahip olanların dileklerinin yerine getirildiğini iddia ediyor."
+ artifact_navaratna_name: "Navaratna"
+ artifact_navaratna_description: "Hinduizm'deki dokuz gök tanrısını simgeleyen, ortasında büyük bir yakut bulunan dokuz mücevherden oluşan bir zincir."
+ artifact_shankha_conch_name: "Şankha Kabuğu"
+ artifact_shankha_conch_description: "Tanrı Vişnu'nun simgesi olan eski Şanhka Kabuğu, dinî törenlerde bir borazan olarak kullanılır, ayrıca refah ve erdemi simgelediği söylenir."
+ artifact_pedestal_great_diamond_name: "Büyük Elmas"
+ artifact_pedestal_great_diamond_description: "Bu muazzam mücevherin, açgözlü bir misafir tarafından çalınmadan önce bir tapınak heykelinini süslediği söylenir."
+ al_taj_crown_name: "el-Taç el-Şerif"
+ al_taj_crown_description: "Fâtımî halifelerinin geleneksel tören tacı olan 'Onurlu Taç' veya 'Saygı Lütfü' muazzam bir mücevher olan 'el Yatima' ile süslenmiştir."
+ qadib_al_mulk_name: "Kadıb el-Mülk"
+ qadib_al_mulk_description: "Fâtımî Halifeliğine ait altınla kaplanmış, inci ve mücevherlerle süslenmiş tören asası."
+ al_sayf_al_khass_name: "el-Saif el-Hass"
+ al_sayf_al_khass_description: "Bu mücevherli kılıcın yıldırım ile dövüldüğü söylenir. Halife için törensel önemi olduğundan altın işlemeli bir kılıfta muhafaza ediliyor."
+ al_dawat_name: "el-Davat"
+ al_dawat_description: "Altın ve mercandan yapılmış bir hokka. Uzun yıllar Hilafet törenlerinde özel bir yeri vardır."
+ al_hafir_name: "el-Hafir"
+ al_hafir_description: "El-Hafir veya bilinen adıyla 'Toynak' dünya üzerinde ender görülen bir kalitede yakuttur. Etrafı zümrüt çubuklarla süslenerek bir ipeğe dikilmiştir. Geleneksel olarak Halife'ye ait olan atın yüzünü süslemektedir."
+ artifact_wall_banner_thankfulness_name: "Minnettarlık Sancağı"
+ artifact_wall_banner_thankfulness_description: "Bu beyaz ipek sancağın üzerinde altın renkli yazılar vardır ve sancağın kendisi de altın bir mızrağa sarılmıştır. Bu sancak ve ikizi geleneksel olarak Halife törenlerinde kullanılmıştır."
+ artifact_arms_of_alex_name: "İskender'in Zırhı"
+ artifact_arms_of_alex_description: "Bu antik, katmanlı ketenden yapılmış zırh takımının bir zamanlar Büyük İskender'e ait olduğu söylenir. Her ne kadar kuşanmaya uygun olmasa da zırhın kendisi Akdeniz'den Hindistan'a uzanan büyük fatihin mirasını taşıyor."
+ artifact_pedestal_al_jabal_name: "el-Jabal"
+ artifact_pedestal_al_jabal_description: "El-Jabal veya bilinen adıyla 'Dağ' büyük bir yakutla süslenmiş bir yüzüktür. Yüzüğün üzerindeki taş muazzam büyüklüktedir ve bir zamanlar Sasani imparatorlarının parmağını süslediği söylenir."
+ artifact_pedestal_al_yatima_name: "el-Yatima"
+ artifact_pedestal_al_yatima_description: "el-Yatima (Yetim) olarak bilinen bu muazzam incinin dünyada bulunan hiçbir inciye benzemediği söylenir."
+ artifact_dagger_of_rostam_name: "Rostam'ın Hançeri"
+ artifact_dagger_of_rostam_description: "Bu giriftli hançerin, bir zamanlar beyaz Daeva'yı öldürmek için Rostam tarafından kullanıldığı söylenir."
+ artifact_spear_of_ascalon_name: "Ascalon"
+ artifact_spear_of_ascalon_description: "Bu eski ve kırık mızrak, bir zamanlar Beyrut Ejderhası'nı öldürmek için Aziz George tarafından kullanıldığı söylenir."
+ artifact_zomorrodnegar_name: "Zomorrodnegar Şemşiri"
+ artifact_zomorrodnegar_description: "Bu zümrüt işlemeli efsanevi kılıcın, bir zamanlar iblis Fulad-zereh'i öldürmek için Hz. Süleyman tarafından kullanıldığı söylenir."
+ artifact_muhammads_epistles_name: "Hz. Muhammed'den Gelen Mektup"
+ artifact_muhammads_epistles_description: "Bu mektup, Hz. Muhammed ile [newly_created_artifact.Custom('EpistleReciever')] hükümdarları arasındaki diplomasinin bir parçasıdır."
+ epistle_syria: "Suriye"
+ epistle_arabia: "Arap kabileleri"
+ epistle_persia: "İran"
+ epistle_byzantium: "Doğu Roma İmparatorluğu"
+ epistle_bahrain: "Bahreyn"
+ artifact_kaves_apron_name: "Kave'nin Önlüğü"
+ artifact_kaves_apron_description: "Bu yıpranmış bayrağın, İranlı demirci Kave tarafından halkını şeytanı güçlere karşı birlik olması için kendi önlüğünden yaptığı efsanevi sancak olduğu söylenir."
+ artifact_joyeuse_name: "Joyeuse"
+ artifact_joyeuse_description: "Şarlman'ın kılıcı, Longinus'un mızrağından bir parça eklenerek dövülmüştür. Joyeuse hem şövalyelik cesaretini hem de Şarlman'ın büyük kraliyet imparatorluğunu simgeler."
+ artifact_durendal_name: "Durendal"
+ artifact_durendal_description: "Bu kısa ve ağır kılıcın, Roland tarafından kraliyet tacını düşmanlarından korumak için ölmeden önce sakladığı efsanevi Durendal olduğu söylenir."
+ artifact_curtana_name: "Curtana"
+ artifact_curtana_description: "Bu kılıcın Merhametin Kılıcı olan Curtana olduğu iddia ediliyor. Bu efsanevi kılıç, bir zamanlar Morholt ile mücadele etmek için Tristan tarafından kullanılmıştır. Kılıcın kaybolan ucu İrlanda'daki bir devin kafatasının içinde kalmış olabilir."
+ artifact_ring_angelica_name: "Angelica'nın Yüzüğü"
+ artifact_ring_angelica_description: "Bu yüzüğün Roland ve Şarlman'ın efsanelerinden bilinen Prenses Angelica'ya ait olduğu söylenir. Takana görünmezlik bahşettiği iddia edilse de zamanla bahşettiği güçler solup gitmiş olmalı. Ancak yine de efsanevi prensesi simgeleyen bir yüzük."
+ artifact_olifant_name: "Olifant"
+ artifact_olifant_description: "Detaylı oymalar ile kaplı büyük bir fildişi boru. Kimileri Roncevaux Savaşı'nda Roland tarafından ölmeden önce yardım çağırmak için üflendiği söyler."
+ artifact_colada_name: "Colada"
+ artifact_colada_description: "El Cid'in kılıçlarından biri olduğu söylenen bu kılıç, onun şövalyelik düsturuna bağlı olanlar için bir ilham kaynağıdır."
+ artifact_aram_name: "Aram"
+ artifact_aram_description: "Bu eski ve kararmış mızrak birçok neslin gelip geçtiğine şahit oldu. O kadar eski ki kimileri onun Jangar'ın hikâyelerinden bilenen efsanevi mızrak Aram olduğuna inanır."
+ artifact_ikenga_name: "İkenga"
+ artifact_ikenga_description: "Bu küçük boynuzlu heykelin sahibine başarı ve zafer bahşettiğine inanılıyor."
+ artifact_mmaagha_kamalu_name: "Mmaagha Kamalu"
+ artifact_mmaagha_kamalu_description: "Çok eski, süslü bir tören kılıcı. Bir zamanlar İgbo savaş tanrısı olan Kamula'ya ait olduğu iddia ediliyor."
+ artifact_bronze_head_name: "Bronz Baş"
+ artifact_bronze_head_description: "Bu natüralist bronz heykel, geçmiş zamanlarda ölmüş bir hükümdarın suratını ayrıntılı bir şekilde göstermektedir. Baş, tasvir ettiği hükümdarın konumunu belirtmek için bir taç ile süslenmiştir."
+ artifact_crystal_carving_name: "Kristal Oyma"
+ artifact_crystal_carving_description: "Bu diktörtgen kristal parçası neredeyse şeffaftır ve yüzeyi iç içe girmiş oymalar ile kaplıdır. Ne işe yaradığı bilinmese de hoş bir görüntüye sahiptir."
+ artifact_ibeji_name: "İbeji"
+ artifact_ibeji_description: "Bu tahtadan oyulmuş ve zamanında ölmüş ikizleri betimleyen heykel söylenenlere göre ona sahip olanlara büyük bir şans ve zenginlik getirecektir. Özenle ve ayrıntılı bir şekilde işlenmiştir."
+ artifact_kantele_name: "Antik Kantele"
+ artifact_kantele_description: "Bu ahşaptan yapılma bir tür telli çalgı olan Kantele nesilden nesile aktarılmıştır. Söylentilere göre geçmişi Väinämöinen'in yaşadığı günlere dayanmaktadır."
+ artifact_sledovik_name: "Sledovik"
+ artifact_sledovik_description: "Bu büyük kayanın yüzeyi ayak izleri ile doludur. Uzun yıllar dinî bir mabet olarak kullanılmıştır ve ayak izlerinin yerel din adamlarına ait olduğu söylenir."
+ artifact_nagelring_name: "Nagelring"
+ artifact_nagelring_description: "Bu eski kılıç, söylentilere göre efsanevi Dietrich von Bern'e aittir."
+ artifact_kladenets_name: "Kladenets"
+ artifact_kladenets_description: "Eski günlerde olduğu kadar güzel gözükmese de bu kılıcın kendi kendine hareket eden efsanevi Kladenets olduğu söyleniyor. Şu anki durumunda onu kullanmak mümkün olmasa da varlığı, doğaüstü geçmişine inanlar arasında büyük bir saygı görmesine neden oluyor."
+ artifact_legbiter_name: "Bacak Isıran"
+ artifact_legbiter_description: "Kabzası fildişinden oyulma son derece keskin bir kılıç. Norveç'in büyük kralı Magnus Olafsson'a ait olduğu söyleniyor."
+ artifact_quernbiter_name: "Değirmen Isıran"
+ artifact_quernbiter_description: "Bu kılıç bir zamanlar Kral Haakon'a aitti ve söylenenlere göre kılıç o kadar keskindi ki bir taşı ortadan ikiye bölebilirdi."
+ artifact_dragvandil_name: "Dragvandil"
+ artifact_dragvandil_description: "Egill Saga'dan bilinen çiftçi, şair ve savaşçı Egil Skallagrimsson'a ait olduğu söylenen kılıç."
+ artifact_szczerbiec_name: "Szczerbiec"
+ artifact_szczerbiec_description: "Kiev'in altın kapılarına saldırmak için bir melek tarafından Kral Cesur Boleslaw'a verildiği söylenen kılıç. Sembolik anlamı çok büyüktür."
+  #AGOT Modified 
  #artifact_chinese_caligraphy_name: "Çin Kaligrafisi"
  artifact_chinese_caligraphy_name: "YiTish Kaligrafisi"
   #AGOT Modified 
@@ -1125,62 +1125,62 @@ translated_arabic_book_on_ascensions_desc: "Antik Valyria dilinde yazılmış ve
   #AGOT Modified 
  #artifact_ruyi_description: "Bu, Çin sembolleri ve süslemeleriyle kaplı küçük bir yeşim asadır."
  artifact_ruyi_description: "Bu, YiTish sembolleri ve süslemelerle kaplı küçük bir yeşim asası."
- turquoise_throne_name:0 "Turkuaz Taht"
- turquoise_throne_description:0 "Bu mücevherler ile kaplı kraliyet tahtı, Şahname'nin Pers krallarına ait olan efsanevi tahta benzetilerek yapılmıştır. Abanozdan yapılma iskeleti, turkuazın dışında saf altından yapılma plakalarla dekore edilmiştir. Bakanın nefesini kesen bu güzellik ancak alanında ustalaşmış zanaatkârların elinden çıkabilirdi."
- peacock_throne_name:0 "Tavuskuşu Tahtı"
- peacock_throne_description:0 "Hiçbir masraftan kaçınılmadan yapılan bu taht, Cemşit'in kraliyet tahtına benzetilmeye çalışmıştır. Dünyanın dört bir yanından getirtilen zanaatkârlar bir araya gelerek altın, gümüş ve sayısız değerli taşı şimdi karşımızda duran tahtta bir araya getirdikleri söylenir."
- artifact_banner_islam_name:0 "Hz. Muhammed'in Kutsal Sancağı"
- artifact_banner_islam_description:0 "Müslüman inancının sembolü olan bu eski bayrağın Hz. Muhammed'in Kutsal Sancağı olduğu iddia edilir."
- artifact_spear_of_the_prophet_name:0 "Peygamber'in Mızrağı"
- artifact_spear_of_the_prophet_description:0 "Söylentilere göre Habeş hükümdarı al-Zubayr bin al-Awwam tarafından hediye edilen Hz. Muhammed'in Mızrağı."
- artifact_mantle_of_the_prophet_islam_name:0 "Peygamber'in Hırkası"
- artifact_mantle_of_the_prophet_description:0 "Peygamber'in Hırkası, asırlarca bir halifeden diğerine miras kalmıştır. Halife tarafından tüm bayramlarda üzerine giyilir, ona şeref ve huzur havası katar. "
- afarganyu_name:0 "Afarganyu"
- artifact_afarganyu_description:0 "Bu büyük tas, Zerdüşt inancının törenlerinde merkezî olan ateşin yakıldığı yerdir. Üzerindeki eski yazı, tasın kimin tarafından hediye edildiğinden bahseder."
- siddhachakra_name:0 "Siddhachakra"
- artifact_siddhachakra_description:0 "Jainler tarafından ibadet için kullanılan mistik bir diyagram. Kral Şripala ve karısı Mayanasundari'nin efsanesiyle bağlantılı olan bu eser, merkezinde bir nilüfer barındırır ve etrafı taç yaprakları üzerine çizilmiş tanrılar ile çevrilidir."
- artifact_staff_kakusandha:0 "Kakusandha'nın Asası"
- artifact_staff_kakusandha_desc:0 "Şimdiki Kalpa'nın ilk budası olan Kakusandha, sahip olduğu bu asa ile tehlikeli hayvanları savuşturur. Aynı zamanda diğer keşişler tarafından ezilmesinler diye küçük hayvanları kovalar."
- water_filter_konagamana:1 "Koṇāgamana'nın Su Filtresi"
- water_filter_konagamana_desc:0 "Şimdiki Kalpa'nın ikinci budası olan Koṇāgamana yolculuğa çıktığı zaman yanında bu su filtresini taşırdı. Basit bir bez parçası olan bu filtre ona hem temiz su verir hem de suyun içindeki böcekleri ayırmasını sağlardı."
- robe_kassapa:2 "Kassapa'nın Cübbesinden Parça"
- robe_kassapa_desc:0 "Şimdiki Kalpa'nın üçüncü Budası olan Kassappa günlük yaşamının büyük bölümünü bu cübbeyi giyerek geçirirdi. Tuhaf bir şekilde kaba kumaştan yapılmış cübbe, bir Buda tarafından giyildiği bilenen tek cübbedir ve bu cübbeye büyük bir saygı duyulmasına neden olur."
- ##Trinket Generation
- #Bad/Trash
- gilded_rats_tail:0 "Altın Kaplamalı Fare Kuyruğu"
- gilded_rats_tail.desc:0 "Fakir adamın mücevheri."
- quail_eggshell_gem:0 "Bıldırcın Yumurta Kabuğundan Yapılma "Mücevher""
- quail_eggshell_gem.desc:0 "Bir mücevher olarak sayılan renkli bir yumurta kabuğu."
- stained_glass_shard:0 "Kutsal "Lekeli" Cam Parçası"
- stained_glass_shard.desc:0 "Üzerinde ilginç bir şekilde kan rengine benzeyen lekeler var..."
- xylospongium:0 "Süngerli Çubuk"
- xylospongium.desc:1 "Nereden geldiği ve ne işe yaradığı belirsizdir. Ancak güzel bir koku yayar."
- #Common
-   #AGOT Modified 
+ turquoise_throne_name: "Turkuaz Taht"
+ turquoise_throne_description: "Bu mücevherler ile kaplı kraliyet tahtı, Şahname'nin Pers krallarına ait olan efsanevi tahta benzetilerek yapılmıştır. Abanozdan yapılma iskeleti, turkuazın dışında saf altından yapılma plakalarla dekore edilmiştir. Bakanın nefesini kesen bu güzellik ancak alanında ustalaşmış zanaatkârların elinden çıkabilirdi."
+ peacock_throne_name: "Tavuskuşu Tahtı"
+ peacock_throne_description: "Hiçbir masraftan kaçınılmadan yapılan bu taht, Cemşit'in kraliyet tahtına benzetilmeye çalışmıştır. Dünyanın dört bir yanından getirtilen zanaatkârlar bir araya gelerek altın, gümüş ve sayısız değerli taşı şimdi karşımızda duran tahtta bir araya getirdikleri söylenir."
+ artifact_banner_islam_name: "Hz. Muhammed'in Kutsal Sancağı"
+ artifact_banner_islam_description: "Müslüman inancının sembolü olan bu eski bayrağın Hz. Muhammed'in Kutsal Sancağı olduğu iddia edilir."
+ artifact_spear_of_the_prophet_name: "Peygamber'in Mızrağı"
+ artifact_spear_of_the_prophet_description: "Söylentilere göre Habeş hükümdarı al-Zubayr bin al-Awwam tarafından hediye edilen Hz. Muhammed'in Mızrağı."
+ artifact_mantle_of_the_prophet_islam_name: "Peygamber'in Hırkası"
+ artifact_mantle_of_the_prophet_description: "Peygamber'in Hırkası, asırlarca bir halifeden diğerine miras kalmıştır. Halife tarafından tüm bayramlarda üzerine giyilir, ona şeref ve huzur havası katar. "
+ afarganyu_name: "Afarganyu"
+ artifact_afarganyu_description: "Bu büyük tas, Zerdüşt inancının törenlerinde merkezî olan ateşin yakıldığı yerdir. Üzerindeki eski yazı, tasın kimin tarafından hediye edildiğinden bahseder."
+ siddhachakra_name: "Siddhachakra"
+ artifact_siddhachakra_description: "Jainler tarafından ibadet için kullanılan mistik bir diyagram. Kral Şripala ve karısı Mayanasundari'nin efsanesiyle bağlantılı olan bu eser, merkezinde bir nilüfer barındırır ve etrafı taç yaprakları üzerine çizilmiş tanrılar ile çevrilidir."
+ artifact_staff_kakusandha: "Kakusandha'nın Asası"
+ artifact_staff_kakusandha_desc: "Şimdiki Kalpa'nın ilk budası olan Kakusandha, sahip olduğu bu asa ile tehlikeli hayvanları savuşturur. Aynı zamanda diğer keşişler tarafından ezilmesinler diye küçük hayvanları kovalar."
+ water_filter_konagamana: "Koṇāgamana'nın Su Filtresi"
+ water_filter_konagamana_desc: "Şimdiki Kalpa'nın ikinci budası olan Koṇāgamana yolculuğa çıktığı zaman yanında bu su filtresini taşırdı. Basit bir bez parçası olan bu filtre ona hem temiz su verir hem de suyun içindeki böcekleri ayırmasını sağlardı."
+ robe_kassapa: "Kassapa'nın Cübbesinden Parça"
+ robe_kassapa_desc: "Şimdiki Kalpa'nın üçüncü Budası olan Kassappa günlük yaşamının büyük bölümünü bu cübbeyi giyerek geçirirdi. Tuhaf bir şekilde kaba kumaştan yapılmış cübbe, bir Buda tarafından giyildiği bilenen tek cübbedir ve bu cübbeye büyük bir saygı duyulmasına neden olur."
+  ##Trinket Generation 
+  #Bad/Trash 
+ gilded_rats_tail: "Altın Kaplamalı Fare Kuyruğu"
+ gilded_rats_tail.desc: "Fakir adamın mücevheri."
+ quail_eggshell_gem: "Bıldırcın Yumurta Kabuğundan Yapılma "Mücevher""
+ quail_eggshell_gem.desc: "Bir mücevher olarak sayılan renkli bir yumurta kabuğu."
+ stained_glass_shard: "Kutsal "Lekeli" Cam Parçası"
+ stained_glass_shard.desc: "Üzerinde ilginç bir şekilde kan rengine benzeyen lekeler var..."
+ xylospongium: "Süngerli Çubuk"
+ xylospongium.desc: "Nereden geldiği ve ne işe yaradığı belirsizdir. Ancak güzel bir koku yayar."
+  #Common 
+  #AGOT Modified 
  #st_davids_morsel: "Aziz David'in Morseli"
  st_davids_morsel: "Tepe Hugor'un Lokması"
- st_davids_morsel.desc:0 "Kurutulmuş et parçası olarak görünüyor. Yaşı ve kökeni belirsizdir."
- platypus_figurine:0 "Hayvan Heykelciği"
- platypus_figurine.desc:0 "Bu minik hayvanın geniş bir gagası, parlak bir kürkü ve yüzgeçleri var gibi görünüyor. Ne kadar tuhaf."
- terracotta_toy_fowl:0 "Çömlekten Yapılma Oyuncak Tavuk"
- terracotta_toy_fowl.desc:0 "Aşınmış bir yüzey, bir zamanlar sevilerek oynanmış bir oyuncağın hikâyesini anlatıyor."
- #This one uses a scope local to the stewardship_general.2001-event
- stewardship_general.2001.artifact.potsherd_holy:0 "Kırık Çömlek Parçası"
- stewardship_general.2001.artifact.potsherd_holy.desc:0 "Eski bir çömlek parçası. Söylentilere [trinket_holy_site.GetNameNoTierNoTooltip] kutsal bölgesinden geliyor."
- small_bell_beaker:0 "Küçük Çan Biçimli Çömlek"
- small_bell_beaker.desc:0 "Karmaşık desenlere sahip çan biçimli bir çömlek."
-   #AGOT Modified 
+ st_davids_morsel.desc: "Kurutulmuş et parçası olarak görünüyor. Yaşı ve kökeni belirsizdir."
+ platypus_figurine: "Hayvan Heykelciği"
+ platypus_figurine.desc: "Bu minik hayvanın geniş bir gagası, parlak bir kürkü ve yüzgeçleri var gibi görünüyor. Ne kadar tuhaf."
+ terracotta_toy_fowl: "Çömlekten Yapılma Oyuncak Tavuk"
+ terracotta_toy_fowl.desc: "Aşınmış bir yüzey, bir zamanlar sevilerek oynanmış bir oyuncağın hikâyesini anlatıyor."
+  #This one uses a scope local to the stewardship_general.2001-event 
+ stewardship_general.2001.artifact.potsherd_holy: "Kırık Çömlek Parçası"
+ stewardship_general.2001.artifact.potsherd_holy.desc: "Eski bir çömlek parçası. Söylentilere [trinket_holy_site.GetNameNoTierNoTooltip] kutsal bölgesinden geliyor."
+ small_bell_beaker: "Küçük Çan Biçimli Çömlek"
+ small_bell_beaker.desc: "Karmaşık desenlere sahip çan biçimli bir çömlek."
+  #AGOT Modified 
  #serpentine_budai: "Serpentine Budai"
  serpentine_budai: "Yeşim Aslan"
   #AGOT Modified 
  #serpentine_budai.desc: "Tombul, gülen, kel bir adamın küçük bir görüntüsü."
  serpentine_budai.desc: "Şiddetli, homurdanan, doğu aslanının minik bir tasviri."
- #Uncommon
- mythical_creature_horn:0 "[ROOT.Char.Custom('HornedMythicalCreature')|U] Boynuzu"
- mythical_creature_horn.desc:0 "Mitolojik [ROOT.Char.Custom('HornedMythicalCreature')] yaratığına ait olduğu iddia edilen boynuz."
- mythical_creature_figurine:0 "[ROOT.Char.Custom('TrinketLookAdjective')|U] [ROOT.Char.Custom('RegionalMythicalCreature')] Heykeli"
- mythical_creature_figurine.desc:1 "[new_trinket.Custom('ArtifactAnimalAdjective')|U] bir [SCOPE.Custom('RegionalMythicalCreatureLower')] tasvir eden bu heykel, [ROOT.Char.GetCurrentLocation.GetNameNoTooltip] topraklarından toplanan küçük mücevher taşlarıyla [ROOT.Char.Custom('TrinketLookAdverbFollowup')] [ROOT.Char.Custom('TrinketLookAdjective')]."
-   #AGOT Modified 
+  #Uncommon 
+ mythical_creature_horn: "[ROOT.Char.Custom('HornedMythicalCreature')|U] Boynuzu"
+ mythical_creature_horn.desc: "Mitolojik [ROOT.Char.Custom('HornedMythicalCreature')] yaratığına ait olduğu iddia edilen boynuz."
+ mythical_creature_figurine: "[ROOT.Char.Custom('TrinketLookAdjective')|U] [ROOT.Char.Custom('RegionalMythicalCreature')] Heykeli"
+ mythical_creature_figurine.desc: "[new_trinket.Custom('ArtifactAnimalAdjective')|U] bir [SCOPE.Custom('RegionalMythicalCreatureLower')] tasvir eden bu heykel, [ROOT.Char.GetCurrentLocation.GetNameNoTooltip] topraklarından toplanan küçük mücevher taşlarıyla [ROOT.Char.Custom('TrinketLookAdverbFollowup')] [ROOT.Char.Custom('TrinketLookAdjective')]."
+  #AGOT Modified 
  #st_davids_taper: "Aziz David'in Konikliği"
  st_davids_taper: "Yaşlı Kadın Mumu"
  st_davids_taper.desc: "Sanki biri onu her iki ucundan yakmaya çalışmış gibi görünüyor."
@@ -1190,172 +1190,172 @@ translated_arabic_book_on_ascensions_desc: "Antik Valyria dilinde yazılmış ve
   #AGOT Modified 
  #jira_stick.desc: "Çok kullanılmış olmasına rağmen sivri ucu hala güçlüdür."
  jira_stick.desc: "Savaşan bir örümcek ve yılanı tasvir eden antik bir asa."
- lucky_coin:0 "Şanslı [ROOT.Char.GetCurrentLocation.GetCulture.GetNameNoTooltip] Sikkesi"
- lucky_coin.desc:1 "[ROOT.Char.GetCurrentLocation.GetNameNoTooltip] bölgesine özgü bir [ROOT.Char.GetCurrentLocation.GetCulture.GetNameNoTooltip] sikkesi.\n\nÇok kullanıldığı için yüzeyi pürüzsüz hâle gelmiş."
- lavender_jade_pendant:0 "Eflatun Renginde Yeşim Kolye"
- lavender_jade_pendant.desc:0 "Zengin mor rengiyle bezenmiş şeritler çarpıcı görünüyor."
- #Rare
- sekhmet_ring:0 "Eski Mühür Yüzüğü"
- sekhmet_ring.desc:0 "Altın yüzüğün üzerinde tuhaf bir miğferle poz veren bir insan motifi bulunmaktadır."
- scarab_brooch:0 "Antik Bokböceği Broşu"
- scarab_brooch.desc:0 "Bokböceği şeklinde narin bir broş. Üzerinde bulunan zümrüt işlemelerin sağlığa iyi geldiği söylenir."
- 
- # Easter eggs
- easteregg_artifact_elisabeth_plush:0 "Elisabeth'in Doldurdulmuş Tilkisi"
- easteregg_artifact_elisabeth_plush_description:0 "Elisabeth'in doldurulmuş tilkisi en sevdiği oyuncaktı ve hayatı boyunca arkadaş olmuşlardı. İşverenleri için karmaşık sözler yazarken sık sık tilkisiyle konuşurdu. Huzur verir ve sahibine tilki gibi kurnaz olmayı hatırlatır."
+ lucky_coin: "Şanslı [ROOT.Char.GetCurrentLocation.GetCulture.GetNameNoTooltip] Sikkesi"
+ lucky_coin.desc: "[ROOT.Char.GetCurrentLocation.GetNameNoTooltip] bölgesine özgü bir [ROOT.Char.GetCurrentLocation.GetCulture.GetNameNoTooltip] sikkesi.\n\nÇok kullanıldığı için yüzeyi pürüzsüz hâle gelmiş."
+ lavender_jade_pendant: "Eflatun Renginde Yeşim Kolye"
+ lavender_jade_pendant.desc: "Zengin mor rengiyle bezenmiş şeritler çarpıcı görünüyor."
+  #Rare 
+ sekhmet_ring: "Eski Mühür Yüzüğü"
+ sekhmet_ring.desc: "Altın yüzüğün üzerinde tuhaf bir miğferle poz veren bir insan motifi bulunmaktadır."
+ scarab_brooch: "Antik Bokböceği Broşu"
+ scarab_brooch.desc: "Bokböceği şeklinde narin bir broş. Üzerinde bulunan zümrüt işlemelerin sağlığa iyi geldiği söylenir."
+  
+  # Easter eggs 
+ easteregg_artifact_elisabeth_plush: "Elisabeth'in Doldurdulmuş Tilkisi"
+ easteregg_artifact_elisabeth_plush_description: "Elisabeth'in doldurulmuş tilkisi en sevdiği oyuncaktı ve hayatı boyunca arkadaş olmuşlardı. İşverenleri için karmaşık sözler yazarken sık sık tilkisiyle konuşurdu. Huzur verir ve sahibine tilki gibi kurnaz olmayı hatırlatır."
  easteregg_artifact_nicks_redolence: "Son Koku"
  easteregg_artifact_nicks_redolence_description: "İçinde [ROOT.Char.Custom('GetComplexColor')] renkte bir sıvı bulunan küçük bir şişe. Şişenin kapağı açıldığında o kadar keskin bir koku yayılıyor ki kadınlar kadar erkeklerin de dikkatini çekiyor. Şişenin üzerinde #EMP "Ve şimdi, sonunuz yakın..."#! yazıyor."
-#AGOT Modified
-#easteregg_artifact_chad_book:0 "The Annotated Aeneid"
-easteregg_artifact_chad_book:0 "Dünyanın Kenarı Üzerine Notlar"
-#AGOT Modified
-#easteregg_artifact_chad_book_description:0 "A well-loved and illuminated copy of Virgil's Aeneid clouded by many scribblings — some inane, some insightful."
-easteregg_artifact_chad_book_description:0 "Ustabaşı Balder'in Dünyanın Kenarı adlı eserinin, sayfalar boyunca notlarla ve resimlerle zenginleştirilmiş bir kopyası — bazı notlar anlamsız ve mizahi, bazıları ise derin ve düşündürücü."
- easteregg_artifact_chad_dagger:0 "Hançer"
- easteregg_artifact_chad_dagger_description:0 "Kurumuş kan izleriyle ışıltısını kaybetmiş. Yine de daha fazlasına aç."
- easteregg_artifact_veronica_book:0 "Efendinin Yüzükleri"
-   #AGOT Modified 
+  #AGOT Modified 
+ #easteregg_artifact_chad_book: "The Annotated Aeneid"
+ easteregg_artifact_chad_book: "Dünyanın Kenarı Üzerine Notlar"
+  #AGOT Modified 
+ #easteregg_artifact_chad_book_description: "A well-loved and illuminated copy of Virgil's Aeneid clouded by many scribblings — some inane, some insightful."
+ easteregg_artifact_chad_book_description: "Ustabaşı Balder'in Dünyanın Kenarı adlı eserinin, sayfalar boyunca notlarla ve resimlerle zenginleştirilmiş bir kopyası — bazı notlar anlamsız ve mizahi, bazıları ise derin ve düşündürücü."
+ easteregg_artifact_chad_dagger: "Hançer"
+ easteregg_artifact_chad_dagger_description: "Kurumuş kan izleriyle ışıltısını kaybetmiş. Yine de daha fazlasına aç."
+ easteregg_artifact_veronica_book: "Efendinin Yüzükleri"
+  #AGOT Modified 
  #easteregg_artifact_veronica_book_description: "Kitap formunda, üstü örtülü bir referans. En iyi Portekizce ile yazılmış."
  easteregg_artifact_veronica_book_description: "Kitap biçiminde ince örtülü bir referans. Denizin ötesinde uzun zaman önce kaybolmuş bir dilde yazılmış."
  easteregg_artifact_map_lohmander: "Eski Seyahatname"
  easteregg_artifact_map_lohmander_description: "Bu deri ciltli küçük kitapta, İskandinav bir kâtibin Batı'dan Hindistan'a yaptığı yolculuğun hikâyeleri yer alıyor. Tehlikeleri, yolları, yolculuğu yapan kişilerin hangi aletlere ihtiyaç duyucağını, nereden su getireceğini ve nerede hangi çizmelerin giyilmesi gerektiğine dair ayrıntılarıyla anlatıyor. Ayrıca yerel yemekler veya danslar hakkında da birçok bilgi içeriyor.\n\nİçinde ayrıca Hindistan'ın yanı sıra diğer birçok yeri tasvir eden, uzak yerler ve geçmiş çağlardaki isimleri hakkında notlar içeren bir dizi katlanmış harita bulunuyor."
-
- easteregg_artifact_jason_sword:0 "Aziz Martin'in Kılıcı"
- easteregg_artifact_jason_sword_description:0 "Kılıcın oluğuna birisi beceriksiz bir şekilde bu kelimeleri kazımış: "Ben olduğum gibiyim.""
-
- child_toy_template_tt:0 "[inventory_artifact|E] olarak giyebilmek için [child|E] olmak gerekir."
-
- # Blessed Junk
- fp2_blessed_junk:0 "[ROOT.Char.Custom('TrinketLookAdjective')|U] $blessed_artifact_modifier$"
- fp2_blessed_junk_desc:0 "[ROOT.Char.Custom('TrinketLookAdverbFollowup')|U] [ROOT.Char.Custom('TrinketLookAdjective')] ama bunun dışında anlamsız bir eser. $blessed_artifact_modifier_desc$."
-
- local_artisan_modifier:0 "Yerel Zanaatkâr"
- local_artisan_modifier_desc:0 "Bu karakter soylu bir hükümdara hizmet etmeye ikna edilmiş yerel bir zanatkâr.\n#weak Edindikleri [inspirations|E] daha düşük kalitede olur.#!"
-
- # EP2
- # TOURNAMENT
- artifact_pas_darmes_token:0 "Pas D'Armes Yadigarı"
- artifact_pas_darmes_token_name:0 "[owner.GetFirstNamePossessiveNoTooltip] Yadigarı"
- artifact_pas_darmes_token_description:0 "[owner.GetFullName] adlı kişinin, [newly_created_artifact.GetFeatureText( 'decoration_pattern' )] ile süslenmiş [SCOPE.Custom('ArtifactQuality')] kalitede [newly_created_artifact.GetFeatureText( 'generic_material_cloth' )] bir [owner.Custom('GetTournamentFavor')]. [location.GetName] topraklarında yapılan Pas D'Armes'te [winner.GetFullName] adlı kişiye verildi."
- artifact_pas_darmes_spurs:0 "Pas D'Armes Ödülü"
- artifact_pas_darmes_spurs_name:0 "[owner.GetFirstNamePossessiveNoTooltip] Mahmuzu"
- artifact_pas_darmes_spurs_description:0 "[owner.GetFullName] adlı kişinin [SCOPE.Custom('ArtifactQuality')] kalitede [newly_created_artifact.GetFeatureText( 'generic_material_metal' )] mahmuzları. [location.GetName] topraklarında yapılan Pas D'Armes'te [winner.GetFullName] adlı kişiye verildi."
- artifact_tournament_favor:0 "Turnuva Desteği"
- artifact_tournament_favor_name:0 "Bir [Select_CString(owner.IsFemale, 'Leydinin', 'Lordun' )] Desteği"
- artifact_tournament_favor_description:0 "[newly_created_artifact.GetFeatureText( 'decoration_pattern' )|U] ile süslenmiş, [SCOPE.Custom('ArtifactQuality')] kalitede [newly_created_artifact.GetFeatureText( 'generic_material_cloth' )] bir [owner.Custom('GetTournamentFavor')]. Onu destekleyen biri tarafından [recipient.GetFullName] adlı kişiye verildi."
- # BOWS
- artifact_longbow:0 "Uzun Yay"
- artifact_longbow_name:0 "$artifact_name_prefix_owner_culture$ Uzun Yayı"
- artifact_longbow_description:1 "[newly_created_artifact.GetFeatureText( 'longbow_wood' )|U] ağacından yapılma, [SCOPE.Custom('ArtifactQuality')] kalitede bir uzun yay. Ortalama bir insandan daha uzun olan bu yayın çekiş ağırlığına pek az yay rakip olabilir."
- artifact_composite:0 "Bileşik Yay"
- artifact_composite_name:0 "$artifact_name_prefix$ Bileşik Yayı"
- artifact_composite_description:0 "[newly_created_artifact.GetFeatureText( 'composite_wood' )|U] ağacından yapılma, [SCOPE.Custom('ArtifactQuality')] kalitede bir bileşik yay. [newly_created_artifact.GetFeatureText( 'composite_horn' )|U] boynuzlarla ve [newly_created_artifact.GetFeatureText( 'bow_string' )] ip ile güçlendirilmiş. Kısa olması sebebiyle at üzerinde kullanıma elverişlidir."
- artifact_bow:0 "Yay"
- artifact_bow_name:0 "$artifact_name_prefix$ Yayı"
- artifact_bow_description:1 "[newly_created_artifact.GetFeatureText( 'bow_wood' )|U] ağacından yapılma, [SCOPE.Custom('ArtifactQuality')] kalitede bir yay. Hem avlanmada hem de savaşta kullanışlıdır."
- artifact_crossbow:0 "Arbalet"
- artifact_crossbow_name:0 "$artifact_name_prefix$ Arbaleti"
- artifact_crossbow_description:0 "[newly_created_artifact.GetFeatureText( 'bow_wood' )|U] ağacından yapılma, [SCOPE.Custom('ArtifactQuality')] kalitede bir arbalet. Çok kuvvetli olduğu gibi hazırda bekletilebilme özelliğine sahiptir, yeniden doldurulması zaman alır."
- feature_longbow_wood_elm:0 "$feature_bow_wood_elm$"
- feature_longbow_wood_yew:0 "$feature_bow_wood_yew$"
- feature_composite_wood_bamboo:1 "$feature_bow_wood_bamboo$"
- feature_composite_wood_maple:0 "$feature_bow_wood_maple$"
- feature_composite_wood_mulberry:0 "$feature_bow_wood_mulberry$"
- feature_composite_horn_antelope:1 "$animal_type_antelope_plural$"
- feature_composite_horn_bison:1 "$animal_type_bison_plural$"
- feature_composite_horn_deer:1 "$animal_type_buck_plural$"
- feature_composite_horn_gazelle:0 "$animal_type_gazelle_plural$"
- feature_composite_horn_aurochs:0 "$animal_type_aurochs_plural$"
- feature_bow_wood_ash:0 "$wood_ash$"
- feature_bow_wood_bamboo:0 "bambu"
- feature_bow_wood_cherry:0 "kiraz"
- feature_bow_wood_dogwood:0 "kızılcık"
- feature_bow_wood_elm:0 "$wood_elm$"
- feature_bow_wood_hazel:0 "fındık"
- feature_bow_wood_hickory:0 "ceviz"
- feature_bow_wood_maple:0 "$wood_maple$"
- feature_bow_wood_mulberry:0 "dut"
- feature_bow_wood_palm:0 "palmiye"
- feature_bow_wood_oak:0 "$wood_oak$"
- feature_bow_wood_walnut:0 "$wood_walnut$"
- feature_bow_wood_yew:0 "$wood_yew$"
- feature_bow_string_hemp:0 "kenevir lifi"
- feature_bow_string_horse_hair:0 "at saçı"
- feature_bow_string_linen:0 "$cloth_linen$"
- feature_bow_string_rawhide:0 "işlenmemiş deri"
- feature_bow_string_silk:0 "$cloth_silk$"
- feature_bow_string_sinew:0 "kas teli"
-
- tournament_favor_glove:0 "eldiven"
- tournament_favor_sleeve:0 "eldiven"
- tournament_favor_scarf:0 "eşarp"
-
- blooded_blade:0 "Kanlı Bıçak"
- blooded_blade_description:0 "Bıçağın üzerindeki izler bıçağın kırılganlığını belli ediyor. Bu bıçak [ROOT.Char.GetTitledFirstName] adlı kişinin kanına bulanmış."
- sullied_blooded_blade:0 "Lekeli Bıçak"
- sullied_blooded_blade_description:0 "Bıçağın üzerindeki izler bıçağın kalitesizliğini belli ediyor. Bu bıçak [ROOT.Char.GetTitledFirstName] adlı kişinin kanına bulanmış."
-
- fake_papal_tiara_name:0 "Sahte Papalık Tacı"
- fake_papal_tiara_description:0 "Papalık tacının bir kopyası olan bu tacın kusurları yakın incelemede rahatlıkla göze çarpıyor. Sahte de olsa güzel vakit geçirmenizi sağlayabilir."
-
- artisanal_sword:0 "[ROOT.Char.GetFirstNamePossessive] Kılıcı"
- artisanal_sword_description:0 "Mücevherlerle süslenmiş, sağlam bir kabzaya sahip bu kılıç kusursuz bir dengeye ve şekle sahip."
- feature_generic_material_metal_gold:0 "$metal_gold$"
- feature_generic_material_metal_silver:0 "$metal_silver$"
- feature_generic_material_metal_electrum:0 "$metal_electrum$"
- feature_generic_material_metal_iron:0 "$metal_iron$"
- feature_generic_material_metal_pewter:0 "$metal_pewter$"
- feature_generic_material_metal_brass:0 "$metal_brass$"
- feature_generic_material_metal_steel:0 "$metal_steel$"
- feature_generic_material_metal_bronze:0 "$metal_bronze$"
- feature_generic_material_metal_copper:0 "$metal_copper$"
- feature_generic_material_earthware_clay:0 "$earthware_clay$"
- feature_generic_material_earthware_terracotta:0 "$earthware_terracotta$"
- feature_generic_material_earthware_stone:0 "$earthware_stone$"
- feature_generic_material_earthware_porcelain:0 "$earthware_porcelain$"
-
- # FP3 artifacts
-   #AGOT Modified 
+  
+ easteregg_artifact_jason_sword: "Aziz Martin'in Kılıcı"
+ easteregg_artifact_jason_sword_description: "Bıçağın dolgusu boyunca, birisi dağınık bir şekilde "Ben buyum" sözcüklerini kazımış." #NT!
+  
+ child_toy_template_tt: "[inventory_artifact|E] olarak giyebilmek için [child|E] olmak gerekir."
+  
+  # Blessed Junk 
+ fp2_blessed_junk: "[ROOT.Char.Custom('TrinketLookAdjective')|U] $blessed_artifact_modifier$"
+ fp2_blessed_junk_desc: "[ROOT.Char.Custom('TrinketLookAdverbFollowup')|U] [ROOT.Char.Custom('TrinketLookAdjective')] ama bunun dışında anlamsız bir eser. $blessed_artifact_modifier_desc$."
+  
+ local_artisan_modifier: "Yerel Zanaatkâr"
+ local_artisan_modifier_desc: "Bu karakter soylu bir hükümdara hizmet etmeye ikna edilmiş yerel bir zanatkâr.\n#weak Edindikleri [inspirations|E] daha düşük kalitede olur.#!"
+  
+  # EP2 
+  # TOURNAMENT 
+ artifact_pas_darmes_token: "Pas D'Armes Yadigarı"
+ artifact_pas_darmes_token_name: "[owner.GetFirstNamePossessiveNoTooltip] Yadigarı"
+ artifact_pas_darmes_token_description: "[owner.GetFullName] adlı kişinin, [newly_created_artifact.GetFeatureText( 'decoration_pattern' )] ile süslenmiş [SCOPE.Custom('ArtifactQuality')] kalitede [newly_created_artifact.GetFeatureText( 'generic_material_cloth' )] bir [owner.Custom('GetTournamentFavor')]. [location.GetName] topraklarında yapılan Pas D'Armes'te [winner.GetFullName] adlı kişiye verildi."
+ artifact_pas_darmes_spurs: "Pas D'Armes Ödülü"
+ artifact_pas_darmes_spurs_name: "[owner.GetFirstNamePossessiveNoTooltip] Mahmuzu"
+ artifact_pas_darmes_spurs_description: "[owner.GetFullName] adlı kişinin [SCOPE.Custom('ArtifactQuality')] kalitede [newly_created_artifact.GetFeatureText( 'generic_material_metal' )] mahmuzları. [location.GetName] topraklarında yapılan Pas D'Armes'te [winner.GetFullName] adlı kişiye verildi."
+ artifact_tournament_favor: "Turnuva Desteği"
+ artifact_tournament_favor_name: "Bir [Select_CString(owner.IsFemale, 'Leydinin', 'Lordun' )] Desteği"
+ artifact_tournament_favor_description: "[newly_created_artifact.GetFeatureText( 'decoration_pattern' )|U] ile süslenmiş, [SCOPE.Custom('ArtifactQuality')] kalitede [newly_created_artifact.GetFeatureText( 'generic_material_cloth' )] bir [owner.Custom('GetTournamentFavor')]. Onu destekleyen biri tarafından [recipient.GetFullName] adlı kişiye verildi."
+  # BOWS 
+ artifact_longbow: "Uzun Yay"
+ artifact_longbow_name: "$artifact_name_prefix_owner_culture$ Uzun Yayı"
+ artifact_longbow_description: "[newly_created_artifact.GetFeatureText( 'longbow_wood' )|U] ağacından yapılma, [SCOPE.Custom('ArtifactQuality')] kalitede bir uzun yay. Ortalama bir insandan daha uzun olan bu yayın çekiş ağırlığına pek az yay rakip olabilir."
+ artifact_composite: "Bileşik Yay"
+ artifact_composite_name: "$artifact_name_prefix$ Bileşik Yayı"
+ artifact_composite_description: "[newly_created_artifact.GetFeatureText( 'composite_wood' )|U] ağacından yapılma, [SCOPE.Custom('ArtifactQuality')] kalitede bir bileşik yay. [newly_created_artifact.GetFeatureText( 'composite_horn' )|U] boynuzlarla ve [newly_created_artifact.GetFeatureText( 'bow_string' )] ip ile güçlendirilmiş. Kısa olması sebebiyle at üzerinde kullanıma elverişlidir."
+ artifact_bow: "Yay"
+ artifact_bow_name: "$artifact_name_prefix$ Yayı"
+ artifact_bow_description: "[newly_created_artifact.GetFeatureText( 'bow_wood' )|U] ağacından yapılma, [SCOPE.Custom('ArtifactQuality')] kalitede bir yay. Hem avlanmada hem de savaşta kullanışlıdır."
+ artifact_crossbow: "Arbalet"
+ artifact_crossbow_name: "$artifact_name_prefix$ Arbaleti"
+ artifact_crossbow_description: "[newly_created_artifact.GetFeatureText( 'bow_wood' )|U] ağacından yapılma, [SCOPE.Custom('ArtifactQuality')] kalitede bir arbalet. Çok kuvvetli olduğu gibi hazırda bekletilebilme özelliğine sahiptir, yeniden doldurulması zaman alır."
+ feature_longbow_wood_elm: "$feature_bow_wood_elm$"
+ feature_longbow_wood_yew: "$feature_bow_wood_yew$"
+ feature_composite_wood_bamboo: "$feature_bow_wood_bamboo$"
+ feature_composite_wood_maple: "$feature_bow_wood_maple$"
+ feature_composite_wood_mulberry: "$feature_bow_wood_mulberry$"
+ feature_composite_horn_antelope: "$animal_type_antelope_plural$"
+ feature_composite_horn_bison: "$animal_type_bison_plural$"
+ feature_composite_horn_deer: "$animal_type_buck_plural$"
+ feature_composite_horn_gazelle: "$animal_type_gazelle_plural$"
+ feature_composite_horn_aurochs: "$animal_type_aurochs_plural$"
+ feature_bow_wood_ash: "$wood_ash$"
+ feature_bow_wood_bamboo: "bambu"
+ feature_bow_wood_cherry: "kiraz"
+ feature_bow_wood_dogwood: "kızılcık"
+ feature_bow_wood_elm: "$wood_elm$"
+ feature_bow_wood_hazel: "fındık"
+ feature_bow_wood_hickory: "ceviz"
+ feature_bow_wood_maple: "$wood_maple$"
+ feature_bow_wood_mulberry: "dut"
+ feature_bow_wood_palm: "palmiye"
+ feature_bow_wood_oak: "$wood_oak$"
+ feature_bow_wood_walnut: "$wood_walnut$"
+ feature_bow_wood_yew: "$wood_yew$"
+ feature_bow_string_hemp: "kenevir lifi"
+ feature_bow_string_horse_hair: "at saçı"
+ feature_bow_string_linen: "$cloth_linen$"
+ feature_bow_string_rawhide: "işlenmemiş deri"
+ feature_bow_string_silk: "$cloth_silk$"
+ feature_bow_string_sinew: "kas teli"
+  
+ tournament_favor_glove: "eldiven"
+ tournament_favor_sleeve: "eldiven"
+ tournament_favor_scarf: "eşarp"
+  
+ blooded_blade: "Kanlı Bıçak"
+ blooded_blade_description: "Bıçağın üzerindeki izler bıçağın kırılganlığını belli ediyor. Bu bıçak [ROOT.Char.GetTitledFirstName] adlı kişinin kanına bulanmış."
+ sullied_blooded_blade: "Lekeli Bıçak"
+ sullied_blooded_blade_description: "Bıçağın üzerindeki izler bıçağın kalitesizliğini belli ediyor. Bu bıçak [ROOT.Char.GetTitledFirstName] adlı kişinin kanına bulanmış."
+  
+ fake_papal_tiara_name: "Sahte Papalık Tacı"
+ fake_papal_tiara_description: "Papalık tacının bir kopyası olan bu tacın kusurları yakın incelemede rahatlıkla göze çarpıyor. Sahte de olsa güzel vakit geçirmenizi sağlayabilir."
+  
+ artisanal_sword: "[ROOT.Char.GetFirstNamePossessive] Kılıcı"
+ artisanal_sword_description: "Mücevherlerle süslenmiş, sağlam bir kabzaya sahip bu kılıç kusursuz bir dengeye ve şekle sahip."
+ feature_generic_material_metal_gold: "$metal_gold$"
+ feature_generic_material_metal_silver: "$metal_silver$"
+ feature_generic_material_metal_electrum: "$metal_electrum$"
+ feature_generic_material_metal_iron: "$metal_iron$"
+ feature_generic_material_metal_pewter: "$metal_pewter$"
+ feature_generic_material_metal_brass: "$metal_brass$"
+ feature_generic_material_metal_steel: "$metal_steel$"
+ feature_generic_material_metal_bronze: "$metal_bronze$"
+ feature_generic_material_metal_copper: "$metal_copper$"
+ feature_generic_material_earthware_clay: "$earthware_clay$"
+ feature_generic_material_earthware_terracotta: "$earthware_terracotta$"
+ feature_generic_material_earthware_stone: "$earthware_stone$"
+ feature_generic_material_earthware_porcelain: "$earthware_porcelain$"
+  
+  # FP3 artifacts 
+  #AGOT Modified 
  #artifact_oxus_bracelet_name: "Oxus Bracelet"
  #artifact_oxus_bracelet_description: "This bracelet of wonderful craftmanship is said to hail from the land of $k_transoxiana$. Though its inlay of enamel and semi-precious stones is long lost, the gold retain its luster. Bracelets like this were gifts of honor at the courts of the King of Kings in antiquity, so perhaps it was once worn by a great Iord in Babylon."
  artifact_oxus_bracelet_name: "Hyrkooni Bileziği"
  artifact_oxus_bracelet_description: "Bu harika işçilikle yapılmış bilezik, Hyrkoon topraklarından geldiğine inanılıyor. Yarı değerli taşlar ve emayla bezeli kısmı artık kaybolmuş olsa da, altın parıltısını koruyor. Bu tür bilezikler, eski zamanlarda Sarnor krallarının saraylarında şeref nişanı olarak verilirdi, bu yüzden bir zamanlar büyük bir lord tarafından takılmış olabilir."
  fp3_incense_burner_sculpture: "Tütsü Yakıcı"
  fp3_incense_burner_sculpture_desc: "Kedi şeklindeki bu tütsü yakıcı, sahip olduğu deliklerden hoş kokulu dumanlar çıkarır. Mücevher işlemeli gözlere sahip kafa kısmında, içine yanan tütsü yerleştirilebilmesi için özel bir bölme yer almaktadır."
- #AGOT Modified
+  #AGOT Modified 
  #fp3_ancient_drinking_vessel: "Achaemenid Drinking Vessel"
  fp3_ancient_drinking_vessel: "Qohorik İçki Kabı"
-fp3_ancient_drinking_vessel_desc: "Bu süslü kupa, bir keçi şeklini andırarak son buluyor. Unutulmuş zamanlarda yapılmış olsa da güzelliği solmamış."
- #AGOT Modified
+ fp3_ancient_drinking_vessel_desc: "Bu süslü kupa, bir keçi şeklini andırarak son buluyor. Unutulmuş zamanlarda yapılmış olsa da güzelliği solmamış."
+  #AGOT Modified 
  #artifact_sassanian_sword_name: "Sassanian Sword"
  #artifact_sassanian_sword_description: "Said to be a remnant of the old Sassanian era, this sword $sassanian_sword_description_base$, making it a magnificent sight to behold. Though nowadays it is too fragile to be taken into battle, perhaps this sword was once held by a hero now lost to time?"
  #artifact_sassanian_replica_sword_name: "Sassanian Style Sword"
  artifact_sassanian_sword_name: "Sarnori Kılıcı"
-artifact_sassanian_sword_description: "Sarnori dönemiyle ilgili olduğu söylenen bu kılıç $sassanian_sword_description_base$, onu görkemli bir görüntüye sahip kılıyor. Günümüzde savaşta kullanılmak için fazla kırılgan olsa da, belki de bu kılıç zaman içinde kaybolmuş bir kahraman tarafından bir zamanlar taşınmıştır."
+ artifact_sassanian_sword_description: "Sarnori dönemiyle ilgili olduğu söylenen bu kılıç $sassanian_sword_description_base$, onu görkemli bir görüntüye sahip kılıyor. Günümüzde savaşta kullanılmak için fazla kırılgan olsa da, belki de bu kılıç zaman içinde kaybolmuş bir kahraman tarafından bir zamanlar taşınmıştır."
  artifact_sassanian_replica_sword_name: "Sarnori Tarzındaki Kılıç"
  sassanian_sword_description_base: "titizlikle işlenmiş süslemeleriyle"
  famed_replica_sassanian_sword_description: "Geçmişin görkemli dönemlerinden alınan ilhamla ortaya çıkarılan bu kılıç, yaratıcısının atalarının kahramanlık dolu hikâyelerini anımsatır. Kılıç $sassanian_sword_description_base$ kusursuz bir görüntüye sahiptir. Eski çağın efsanevi kralları tarafından kuşanılacak güzelliktedir."
  masterwork_replica_sassanian_sword_description: "Antik çağdaki silahlardan esinlenerek ortaya çıkarılan bu kılıç, yaratıcısının atalarının tarihî kahramanlıklarına atıfta bulunur. Kılıç $sassanian_sword_description_base$ kusursuz bir görüntüye sahiptir. Kuşananı unutulmuş bir dönemin önemli bir hükümdarı gibi hissettirebilir."
  common_replica_sassanian_sword_description: "Yaratıcısının atalarının kuşandığı silahlardan esinlenerek ortaya çıkardığı bu kılıç ucuz taşlar ve özensiz süslemelere sahiptir. Bu kılıcı taşıyanlar, kılıçla beraber çoktan geride kalmış bir döneme geri dönmeyi arzulayan budalalar gibi görünme riskini de taşır."
- 
- #CE1 Artifacts
+  
+ #CE1 Artifacts 
  artifact_magnificent_crown_name: "Muhteşem Taç"
  artifact_magnificent_crown_description: "Bu tacın telkari işlemeleri ve ince işlenmiş desenleri, varlığının gerçek sebebini yansıtma amacı güdüyor: [ROOT.Char.GetFirstNamePossessive] ataları sahip oldukları kudreti ona bahşediyor ve onun kudreti sergileniyor."
  artifact_splendid_necklace_name: "Görkemli Kolye"
  artifact_splendid_necklace_description: "[artifact.GetOwner.GetHouse.GetBaseName] hanesinin armasını taşıyan bu kolye, kolyeyi takanın meşruluğunun en büyük kanıtı."
  artifact_fine_brooch_name: "Güzel Broş"
  artifact_fine_brooch_description: "Bu broşun köşelerinde süslü harflerle [artifact.GetOwner.GetHouse.GetBaseName] hanesinin adı yer alıyor, bu da broşu takanın meşruluğunu gösteriyor."
-
+  
  medicine_jar: "İlaç Kavanozu"
  medicine_jar_desc: "Bu kavanozun içerisinde nadir bulunan fakat bir o kadar da etkili şifalı bitkiler, iyileştirici taşlar ve kurutulmuş hayvan parçaları bulunuyor. Hekimler bu parçaları hastalıkları tedavi etmek için kullanıyorlar."
  whale_fat_candles_name: "Balina Yağı Mumları"
  whale_fat_candles_description: "Bu mumlar korkunç bir deniz canavarının yağından üretilmiştir. Sivri uçlarıyla korkutucu duruyor."
-
+  
  warenne_coin: "Warenne Sikkesi"
  warenne_coin_description: "Bu sikkenin ön yüzünde Warenne hanedanının mavi-sarı damalı amblemi yer alır. Kenarında ise koyu bir kan lekesi."
-
+  
  traitors_head: "Hainin Kafası"
  traitors_head_description: "Sahibinden özenle kesilmiş, bedensiz bir kafa. Süsten çok mesaj işlevi görüyor."
-
+  
  artifact_: "Yok Edilmiş Eser"
  artifact_slot_untyped: "Yok Edilmiş Eser             "

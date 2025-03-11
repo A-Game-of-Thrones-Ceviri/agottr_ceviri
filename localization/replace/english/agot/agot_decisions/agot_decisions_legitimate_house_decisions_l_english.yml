@@ -1,75 +1,66 @@
 ﻿l_english:
- # Decision loc
- # Generic
-# Genel Meşru Hanedan Kararı
-agot_become_legitimate_house_decision_generic:0 "Meşru Hanedan Ol"
-agot_become_legitimate_house_decision_desc_generic:0 "Bölgedeki bir unvanı nesiller boyu elde tuttuğunuz için, [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı artık bölgenin [agot_legitimate_house|E] olarak kabul ediliyor. Artık halkın gözünde bu toprakların gerçek hükümdarı sizsiniz ve soyunuz bu toprakları sonsuza dek elinde tutacak!"
-agot_become_legitimate_house_decision_generic_tooltip:0 "[ROOT.Char.GetHouse.GetName] Hanedanı, unvanlarımızı yeterince uzun süre elde tutarsa, bölgenin [agot_legitimate_house|E]si haline gelebileceğiz."
-agot_become_legitimate_house_decision_generic_effect:0 "Bölgenin [agot_legitimate_house|E] olacaksınız."
-agot_become_legitimate_house_decision_has_doesnt_have_own_decision_trigger:0 "Kendi [decision|E]'ınıza sahip değil; [agot_legitimate_house|E] olmak için adanmış bir karar yok."
-agot_become_legitimate_house_decision_generic_confirm:0 "Biz Gerçek Hükümdarız!"
-
-# Tetikleyiciler
-agot_become_legitimate_house_decision_100_percent_trigger:0 "[agot_legitimate_house|E] olma yolunda %100 ilerleme sağladı."
-
-# Kuzey
-agot_become_legitimate_house_decision_north:0 "Kuzey'in Meşru Hanedanı Ol"
-agot_become_legitimate_house_decision_desc_north:0 "Nesiller boyu Kuzey'in geniş topraklarını hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('e_the_north').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık soğuğa karşı bir bekçi olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; Boyun'dan Sur'a kadar, Kuzey sonsuza dek bizimdir!"
-agot_become_legitimate_house_decision_north_tooltip:0 "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Kuzey unvanını yeterince uzun süre elde tutarsa, Kuzey'in [agot_legitimate_house|E]si haline gelebiliriz."
-agot_become_legitimate_house_decision_north_confirm:0 "Biz Kışın Gerçek Kralıyız!"
-
-# Vadiler
-agot_become_legitimate_house_decision_vale:0 "Vadi'nin Meşru Hanedanı Ol"
-agot_become_legitimate_house_decision_desc_vale:0 "Nesiller boyu Vadi'nin dağlarını hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('e_the_vale').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Vadi'nin gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; Kanlı Kapı'dan Parmaklar'a kadar, Vadi sonsuza dek bizimdir!"
-agot_become_legitimate_house_decision_vale_tooltip:0 "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Vadi unvanını yeterince uzun süre elde tutarsa, Vadi'nin [agot_legitimate_house|E]si haline gelebiliriz."
-agot_become_legitimate_house_decision_vale_confirm:0 "Bu Dağlar Bizimdir!"
-# Nehir Toprakları
-agot_become_legitimate_house_decision_riverlands:0 "Nehir Toprakları'nın Meşru Hanedanı Ol"
-agot_become_legitimate_house_decision_desc_riverlands:0 "Nesiller boyu Nehir Toprakları'nın verimli tarlalarını ve sularını hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('e_the_riverlands').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Nehir Toprakları'nın gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; İkizler'den Kavşak'a kadar, Nehir Toprakları sonsuza dek bizimdir!"
-agot_become_legitimate_house_decision_riverlands_tooltip:0 "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Nehir Toprakları unvanını yeterince uzun süre elde tutarsa, Nehir Toprakları'nın [agot_legitimate_house|E]si haline gelebiliriz."
-agot_become_legitimate_house_decision_riverlands_confirm:0 "Nehirimiz, Topraklarımız!"
-
-# Batı Toprakları
-agot_become_legitimate_house_decision_westerlands:0 "Batı Toprakları'nın Meşru Hanedanı Ol"
-agot_become_legitimate_house_decision_desc_westerlands:0 "Nesiller boyu Batı Toprakları'nın tepelerini hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('e_the_westerlands').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Batı Toprakları'nın gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; Casterly Kayası'nın zirvesinden Derin İn'in derinliklerine kadar, Batı Toprakları'nın serveti sonsuza dek bizimdir!"
-agot_become_legitimate_house_decision_westerlands_tooltip:0 "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Batı Toprakları unvanını yeterince uzun süre elde tutarsa, Batı Toprakları'nın [agot_legitimate_house|E]si haline gelebiliriz."
-agot_become_legitimate_house_decision_westerlands_confirm:0 "Altın Topraklar, Altın Hanedan!"
-# Demir Adaları
-agot_become_legitimate_house_decision_iron_islands:0 "Demir Adaları'nın Meşru Hanedanı Ol"
-agot_become_legitimate_house_decision_desc_iron_islands:0 "Nesiller boyu Demir Adaları'nın kayalık kıyılarını hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('e_the_iron_islands').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Demir Adaları'nın gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; tüm dünya bayraklarımızın kıyılarına ulaşmasını korkuyla bekleyecek!"
-agot_become_legitimate_house_decision_iron_islands_tooltip:0 "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Demir Adaları unvanını yeterince uzun süre elde tutarsa, Demir Adaları'nın [agot_legitimate_house|E]si haline gelebiliriz."
-agot_become_legitimate_house_decision_iron_islands_confirm:0 "Biz Hakiki Demirdoğumluyuz!"
-
-# Menzil
-agot_become_legitimate_house_decision_reach:0 "Menzil'in Meşru Hanedanı Ol"
-agot_become_legitimate_house_decision_desc_reach:0 "Nesiller boyu Menzil'in tarlalarını hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('e_the_reach').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Menzil'in gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; dört küçük ada olan Dört Kalkandan muhteşem Altın Bahçe'ye kadar, her şey bizim korumamız altında büyüyor!"
-agot_become_legitimate_house_decision_reach_tooltip:0 "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Diyar unvanını yeterince uzun süre elde tutarsa, Menzil'in [agot_legitimate_house|E]sisi haline gelebiliriz."
-agot_become_legitimate_house_decision_reach_confirm:0 "Gücümüz Büyüyor!"
-
-# Fırtına Toprakları
-agot_become_legitimate_house_decision_stormlands:0 "Fırtına Toprakları'nın Meşru Hanedanı Ol"
-agot_become_legitimate_house_decision_desc_stormlands:0 "Nesiller boyu Fırtına Toprakları'nın çeşitli bölgelerini hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('e_the_stormlands').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Fırtına Toprakları'nın gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; Kızıl Dağ'dan Karasu'ya kadar, Fırtına Toprakları sonsuza dek bizimdir!"
-agot_become_legitimate_house_decision_stormlands_tooltip:0 "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Fırtına Toprakları unvanını yeterince uzun süre elde tutarsa, Fırtına Toprakları'nın [agot_legitimate_house|E]si haline gelebiliriz."
-agot_become_legitimate_house_decision_stormlands_confirm:0 "Hiçbir Fırtına Bizi Yıkamaz!"
-# Dorne
-agot_become_legitimate_house_decision_dorne:0 "Dorne'un Meşru Hanedanı Ol"
-agot_become_legitimate_house_decision_desc_dorne:0 "Nesiller boyu Dorne'un kumlarını hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('e_dorne').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Dorne'un gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; Kızıl Dağların çöllerinden Yaz Denizi'nin kıyılarına kadar, Dorne sonsuza dek bizimdir!"
-agot_become_legitimate_house_decision_dorne_tooltip:0 "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Dorne unvanını yeterince uzun süre elde tutarsa, Dorne'un [agot_legitimate_house|E]si haline gelebiliriz."
-agot_become_legitimate_house_decision_dorne_confirm:0 "Bu Kumlar Bizimdir!"
-
-# Tac Toprakları
-agot_become_legitimate_house_decision_crownlands:0 "Tac Toprakları'nın Meşru Hanedanı Ol"
-agot_become_legitimate_house_decision_desc_crownlands:0 "Nesiller boyu Tac Toprakları'nın topraklarını hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('k_the_crownlands').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Tac Toprakları'nın gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; Karasu'dan Kral Ormanı'na kadar, Tac Toprakları sonsuza dek bizimdir!"
-agot_become_legitimate_house_decision_crownlands_tooltip:0 "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Tac Toprakları unvanını yeterince uzun süre elde tutarsa, Tac Toprakları'nın [agot_legitimate_house|E]si haline gelebiliriz."
-agot_become_legitimate_house_decision_crownlands_confirm:0 "Kanımız Karasu'yu Yönetsin!"
-# Demir Taht
-agot_become_legitimate_house_decision_iron_throne:0 "Demir Taht'ın Meşru Hanedanı Ol"
-agot_become_legitimate_house_decision_desc_iron_throne:0 "Nesiller boyu Demir Taht'ı hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('k_the_iron_throne').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Demir Taht'ın gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; Batıdiyar artık sonsuza dek bizim!"
-agot_become_legitimate_house_decision_iron_throne_tooltip:0 "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Demir Taht unvanını yeterince uzun süre elde tutarsa, Demir Taht'ın [agot_legitimate_house|E]si haline gelebiliriz."
-agot_become_legitimate_house_decision_iron_throne_confirm:0 "Batıdiyar Bizimdir!"
-
-# Ejderha Kayası
-agot_become_legitimate_house_decision_dragonstone:0 "Ejderha Kayası'nın Meşru Hanedanı Ol"
-agot_become_legitimate_house_decision_desc_dragonstone:0 "Nesiller boyu Ejderha Kayası adasını hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('k_dragonstone').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Ejderha Kayası'nın gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; ada krallığı artık sonsuza dek bizim!"
-agot_become_legitimate_house_decision_dragonstone_tooltip:0 "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Dragonstone unvanını yeterince uzun süre elde tutarsa, Ejderha Kayası'nın [agot_legitimate_house|E]si haline gelebiliriz."
-agot_become_legitimate_house_decision_dragonstone_confirm:0 "Biz Ejderha'nın Hanedanıyız!"
+  # Decision loc 
+  # Generic 
+ agot_become_legitimate_house_decision_generic: "Meşru Hanedan Ol"
+ agot_become_legitimate_house_decision_desc_generic: "Bölgedeki bir unvanı nesiller boyu elde tuttuğunuz için, [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı artık bölgenin [agot_legitimate_house|E] olarak kabul ediliyor. Artık halkın gözünde bu toprakların gerçek hükümdarı sizsiniz ve soyunuz bu toprakları sonsuza dek elinde tutacak!"
+ agot_become_legitimate_house_decision_generic_tooltip: "[ROOT.Char.GetHouse.GetName] Hanedanı, unvanlarımızı yeterince uzun süre elde tutarsa, bölgenin [agot_legitimate_house|E]si haline gelebileceğiz."
+ agot_become_legitimate_house_decision_generic_effect: "Bölgenin [agot_legitimate_house|E] olacaksınız."
+ agot_become_legitimate_house_decision_has_doesnt_have_own_decision_trigger: "Kendi [decision|E]'ınıza sahip değil; [agot_legitimate_house|E] olmak için adanmış bir karar yok."
+ agot_become_legitimate_house_decision_generic_confirm: "Biz Gerçek Hükümdarız!"
+  # Triggers 
+ agot_become_legitimate_house_decision_100_percent_trigger: "[agot_legitimate_house|E] olma yolunda %100 ilerleme sağladı."
+  # North 
+ agot_become_legitimate_house_decision_north: "Kuzey'in Meşru Hanedanı Ol"
+ agot_become_legitimate_house_decision_desc_north: "Nesiller boyu Kuzey'in geniş topraklarını hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('e_the_north').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık soğuğa karşı bir bekçi olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; Boyun'dan Sur'a kadar, Kuzey sonsuza dek bizimdir!"
+  agot_become_legitimate_house_decision_north_tooltip:0 "Should House [ROOT.Char.GetHouse.GetNameNoTooltip] hold the title of the North for long enough, we will be able to become the [agot_legitimate_house|E] of the North. 
+ agot_become_legitimate_house_decision_north_confirm: "Biz Kışın Gerçek Kralıyız!"
+  # Vale 
+ agot_become_legitimate_house_decision_vale: "Vadi'nin Meşru Hanedanı Ol"
+ agot_become_legitimate_house_decision_desc_vale: "Nesiller boyu Vadi'nin dağlarını hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('e_the_vale').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Vadi'nin gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; Kanlı Kapı'dan Parmaklar'a kadar, Vadi sonsuza dek bizimdir!"
+ agot_become_legitimate_house_decision_vale_tooltip: "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Vadi unvanını yeterince uzun süre elde tutarsa, Vadi'nin [agot_legitimate_house|E]si haline gelebiliriz."
+ agot_become_legitimate_house_decision_vale_confirm: "Bu Dağlar Bizimdir!"
+  # Riverlands 
+ agot_become_legitimate_house_decision_riverlands: "Nehir Toprakları'nın Meşru Hanedanı Ol"
+ agot_become_legitimate_house_decision_desc_riverlands: "Nesiller boyu Nehir Toprakları'nın verimli tarlalarını ve sularını hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('e_the_riverlands').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Nehir Toprakları'nın gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; İkizler'den Kavşak'a kadar, Nehir Toprakları sonsuza dek bizimdir!"
+ agot_become_legitimate_house_decision_riverlands_tooltip: "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Nehir Toprakları unvanını yeterince uzun süre elde tutarsa, Nehir Toprakları'nın [agot_legitimate_house|E]si haline gelebiliriz."
+ agot_become_legitimate_house_decision_riverlands_confirm: "Nehirimiz, Topraklarımız!"
+  # Westerlands 
+ agot_become_legitimate_house_decision_westerlands: "Batı Toprakları'nın Meşru Hanedanı Ol"
+ agot_become_legitimate_house_decision_desc_westerlands: "Nesiller boyu Batı Toprakları'nın tepelerini hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('e_the_westerlands').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Batı Toprakları'nın gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; Casterly Kayası'nın zirvesinden Derin İn'in derinliklerine kadar, Batı Toprakları'nın serveti sonsuza dek bizimdir!"
+ agot_become_legitimate_house_decision_westerlands_tooltip: "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Batı Toprakları unvanını yeterince uzun süre elde tutarsa, Batı Toprakları'nın [agot_legitimate_house|E]si haline gelebiliriz."
+ agot_become_legitimate_house_decision_westerlands_confirm: "Altın Topraklar, Altın Hanedan!"
+  # Iron Islands 
+ agot_become_legitimate_house_decision_iron_islands: "Demir Adaları'nın Meşru Hanedanı Ol"
+ agot_become_legitimate_house_decision_desc_iron_islands: "Nesiller boyu Demir Adaları'nın kayalık kıyılarını hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('e_the_iron_islands').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Demir Adaları'nın gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; tüm dünya bayraklarımızın kıyılarına ulaşmasını korkuyla bekleyecek!"
+ agot_become_legitimate_house_decision_iron_islands_tooltip: "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Demir Adaları unvanını yeterince uzun süre elde tutarsa, Demir Adaları'nın [agot_legitimate_house|E]si haline gelebiliriz."
+ agot_become_legitimate_house_decision_iron_islands_confirm: "Biz Hakiki Demirdoğumluyuz!"
+  # Reach 
+ agot_become_legitimate_house_decision_reach: "Menzil'in Meşru Hanedanı Ol"
+ agot_become_legitimate_house_decision_desc_reach: "Nesiller boyu Menzil'in tarlalarını hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('e_the_reach').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Menzil'in gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; dört küçük ada olan Dört Kalkandan muhteşem Altın Bahçe'ye kadar, her şey bizim korumamız altında büyüyor!"
+ agot_become_legitimate_house_decision_reach_tooltip: "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Diyar unvanını yeterince uzun süre elde tutarsa, Menzil'in [agot_legitimate_house|E]sisi haline gelebiliriz."
+ agot_become_legitimate_house_decision_reach_confirm: "Gücümüz Büyüyor!"
+  # Stormlands 
+ agot_become_legitimate_house_decision_stormlands: "Fırtına Toprakları'nın Meşru Hanedanı Ol"
+ agot_become_legitimate_house_decision_desc_stormlands: "Nesiller boyu Fırtına Toprakları'nın çeşitli bölgelerini hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('e_the_stormlands').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Fırtına Toprakları'nın gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; Kızıl Dağ'dan Karasu'ya kadar, Fırtına Toprakları sonsuza dek bizimdir!"
+ agot_become_legitimate_house_decision_stormlands_tooltip: "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Fırtına Toprakları unvanını yeterince uzun süre elde tutarsa, Fırtına Toprakları'nın [agot_legitimate_house|E]si haline gelebiliriz."
+ agot_become_legitimate_house_decision_stormlands_confirm: "Hiçbir Fırtına Bizi Yıkamaz!"
+  # Dorne 
+ agot_become_legitimate_house_decision_dorne: "Dorne'un Meşru Hanedanı Ol"
+ agot_become_legitimate_house_decision_desc_dorne: "Nesiller boyu Dorne'un kumlarını hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('e_dorne').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Dorne'un gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; Kızıl Dağların çöllerinden Yaz Denizi'nin kıyılarına kadar, Dorne sonsuza dek bizimdir!"
+ agot_become_legitimate_house_decision_dorne_tooltip: "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Dorne unvanını yeterince uzun süre elde tutarsa, Dorne'un [agot_legitimate_house|E]si haline gelebiliriz."
+ agot_become_legitimate_house_decision_dorne_confirm: "Bu Kumlar Bizimdir!"
+  # Crownlands 
+ agot_become_legitimate_house_decision_crownlands: "Tac Toprakları'nın Meşru Hanedanı Ol"
+ agot_become_legitimate_house_decision_desc_crownlands: "Nesiller boyu Tac Toprakları'nın topraklarını hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('k_the_crownlands').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Tac Toprakları'nın gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; Karasu'dan Kral Ormanı'na kadar, Tac Toprakları sonsuza dek bizimdir!"
+ agot_become_legitimate_house_decision_crownlands_tooltip: "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Tac Toprakları unvanını yeterince uzun süre elde tutarsa, Tac Toprakları'nın [agot_legitimate_house|E]si haline gelebiliriz."
+ agot_become_legitimate_house_decision_crownlands_confirm: "Kanımız Karasu'yu Yönetsin!"
+  # Iron Throne 
+ agot_become_legitimate_house_decision_iron_throne: "Demir Taht'ın Meşru Hanedanı Ol"
+ agot_become_legitimate_house_decision_desc_iron_throne: "Nesiller boyu Demir Taht'ı hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('k_the_iron_throne').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Demir Taht'ın gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; Batıdiyar artık sonsuza dek bizim!"
+ agot_become_legitimate_house_decision_iron_throne_tooltip: "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Demir Taht unvanını yeterince uzun süre elde tutarsa, Demir Taht'ın [agot_legitimate_house|E]si haline gelebiliriz."
+ agot_become_legitimate_house_decision_iron_throne_confirm: "Batıdiyar Bizimdir!"
+  # Dragonstone 
+ agot_become_legitimate_house_decision_dragonstone: "Ejderha Kayası'nın Meşru Hanedanı Ol"
+ agot_become_legitimate_house_decision_desc_dragonstone: "Nesiller boyu Ejderha Kayası adasını hanenizin kontrolünde tuttuğunuz için, [GetTitleByKey('k_dragonstone').MakeScope.Var('legitimate_house').House.GetNameNoTooltip] Hanedanı artık Ejderha Kayası'nın gerçek hükümdarı olarak görülmemektedir. [ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, lordlar ve küçük halk tarafından bu toprakların gerçek hükümdarı olarak kabul ediliyor; ada krallığı artık sonsuza dek bizim!"
+ agot_become_legitimate_house_decision_dragonstone_tooltip: "[ROOT.Char.GetHouse.GetNameNoTooltip] Hanedanı, Dragonstone unvanını yeterince uzun süre elde tutarsa, Ejderha Kayası'nın [agot_legitimate_house|E]si haline gelebiliriz."
+ agot_become_legitimate_house_decision_dragonstone_confirm: "Biz Ejderha'nın Hanedanıyız!"

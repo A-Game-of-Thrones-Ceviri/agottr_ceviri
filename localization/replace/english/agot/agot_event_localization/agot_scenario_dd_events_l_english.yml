@@ -388,9 +388,11 @@
   
  agot_scenario_dd.0201.opt.a: "Topraklar Lannister Hanesi'ne gitmeli."
  agot_scenario_dd.0201.opt.b: "Onu bir Targaryen holdingi yapacağım."
+ agot_scenario_dd.0201.opt.c: "Araziyi kendim için alacağım." #NT!
   
  agot_scenario_dd.0201.a.tt: "Duskendale'in yeni sahibi olması için [chosen_sibling.GetUINameNoTooltip] adresini seçiyor ve Denys'i Duvar'a gönderiyorsunuz."
  agot_scenario_dd.0201.b.tt: "Duskendale'in yeni sahibi olması için [viserys.GetUINameNoTooltip] adresini seçiyor ve Denys'i Duvar'a gönderiyorsunuz."
+ agot_scenario_dd.0201.c.tt: "Duskendale'in yeni sahibi olmaya karar veriyorsunuz ve Denys'i Duvar'a gönderiyorsunuz." #NT!
   
   ## Tywin requests his family gets Duskendale after wars fail to resolve(rare) 
   # available scopes: aerys/viserys/tywin/denys/renfred/duskendale 
@@ -570,43 +572,41 @@
   
   ## Rhaegar can decide if he agrees to the chosen spouse 
   # availabe scopes: tywin/cersei/lyanna/elia/ashara/bachelor(to be betrothed)/bachelorette 
-agot_scenario_dd.0315.t.c:0 "Aslan ve Ejderha"
-agot_scenario_dd.0315.t.l:0 "Kurt Dişi"
-agot_scenario_dd.0315.t.e:0 "Güneş ve Mızrak"
-agot_scenario_dd.0315.t.a:0 "Mor Yıldız"
-
-agot_scenario_dd.0315.desc.start:0 "Babam, benim onayımı ya da düşüncemi almadan, bir karganın bile kanat çırpmasına gerek duymadan, benim nişanım konusunda karar vermiş ve kararı duyurmuş bulunuyor. Şimdi ise bu nişanı kabul edip etmeyeceğimi ya da babamın emrine karşı gelerek kendi yoluma gitmeyi seçeceğimi düşünmek zorundayım.\n\n"
-
-# Cersei
-agot_scenario_dd.0315.desc.c:0 "Eğer hiçbir şey yapmazsam, [bachelorette.GetName], [tywin.GetName] adlı kişinin kızı ile nişanlı olacağım. Lannister Hanedanı’nın gücü ve güzelliği tartışılmaz; ancak o soğuk bakışlarının ardında yatan hırs, krallığın alevler içinde kaldığı ürkütücü rüyalar görüyorum. Belki de mükemmel bir gelecek vaat eden bir kraliçe adayıdır, ancak içime bu kadar derin kuşkular salan biriyle evlenmek, tahtın yükünü paylaşmak için doğru bir adım mı olacaktır?\n\n"
-
-# Lyanna
-agot_scenario_dd.0315.desc.l:0 "Eğer hiçbir şey yapmazsam, Kuzey’den [bachelorette.GetName] ile nişanlı olacağım. Özgürlüğü ve cesaretiyle tanınan bir ruh taşıyor, ileride büyüleyici bir kadın olacağı söyleniyor. Hiçbir Stark daha önce Targaryen soyundan biriyle evlenmedi; bu nedenle Kuzey’le yeni bağlar kurmak akıllıca bir hamle olabilir. Ancak o henüz genç, ve benim konumumda olan biri için en kısa sürede evlenip bir varis sahibi olmak hayati önem taşıyor.\n\n"
-# Elia
-agot_scenario_dd.0315.desc.e:0 "Eğer hiçbir şey yapmazsam, güneşin öpüşlerinin sardığı Dorne topraklarının kırılgan prensesi [bachelorette.GetName] ile nişanlı olacağım. Martell Hanedanı uzun zamandır Targaryenlerle bağlarını koruyor ve güçlü bir aileden geliyor; ancak bir kral için, kırılgan bir prenses demek aynı zamanda kırılgan bir krallık demektir.\n\n"
-
-# Ashara
-agot_scenario_dd.0315.desc.a:0 "Eğer hiçbir şey yapmazsam, Starfall’un mor gözlü incisi [bachelorette.GetName] ile nişanlı olacağım. Dayne Hanedanı siyasi olarak en güçlü olmasa da, diyarın en yetenekli şövalyelerini yetiştiriyorlar. O, herhangi bir kral için uygun bir kraliçe olacaktır; ancak benim için yeterli mi?\n\n"
-
-agot_scenario_dd.0315.desc.finish:0 "[bachelorette.GetNameNoTooltip] ile evlenmeli miyim, yoksa babamın iradesine karşı gelip kendi yolumu mu çizmeliyim?"
-
-agot_scenario_dd.0315.opt.a:0 "Aslan dişisiyle evleneceğim."
-agot_scenario_dd.0315.opt.b:0 "Kurt ve ejderha birleşecek."
-agot_scenario_dd.0315.opt.c:0 "Dorne’la olan bağlarımızı güçlendireceğim."
-agot_scenario_dd.0315.opt.d:0 "Starfall’un ışığı Ashara ile evleneceğim."
-agot_scenario_dd.0315.opt.e:0 "Başka bir eş arayacağım."
-
-agot_scenario_dd.0315.e.tt:0 "Babana karşı çıkacak ve kendi eşini kendin seçeceksin."
- 
-## Aerys, Rhaegar'ın seçimini beğenmediği ve kendisinin kötü hissetmesi gerektiği haberini alır.
-# Kullanılabilir kapsam: tywin/cersei/lyanna/elia/ashara/bachelor(nişanlı olacak)/bachelorette
-agot_scenario_dd.0316.t:0 "İsyankâr Prens"
-
-agot_scenario_dd.0316.desc:0 "Dragonstone’dan gelen haberler beni öfkeyle titretti; oğlum Rhaegar, onu [bachelorette.GetName] ile nişanlamak için özenle hazırladığım planımı reddetmiş. Bu sadece [bachelorette.GetHerHis] Hanedanı’na karşı bir hakaret değil, aynı zamanda kral olarak irademizin açıkça reddedildiğinin kanıtı. Zaten Rhaegar’ın bana karşı komplo kurduğunu, hatta tahtı ele geçirmeye çalıştığını düşünüyordum. Şimdi bu isyanla ihanet şüphelerim daha da güçleniyor.\n\nNe yazık ki, elimden pek bir şey gelmiyor. Kararını kabullenip dikkatli bir gözle izlemekten başka seçeneğim kalmadı..."
-
-agot_scenario_dd.0316.opt.a:0 "Öyle olsun! İstediği lanet olası gelini kendisi seçsin!"
-
-agot_scenario_dd.0316.a.tt:0 "Oğlun şu anda nişanlanmayacak."
+ agot_scenario_dd.0315.t.c: "Aslan ve Ejderha"
+ agot_scenario_dd.0315.t.l: "Kurt Dişi"
+ agot_scenario_dd.0315.t.e: "Güneş ve Mızrak"
+ agot_scenario_dd.0315.t.a: "Mor Yıldız"
+  
+ agot_scenario_dd.0315.desc.start: "Babam, benim onayımı ya da düşüncemi almadan, bir karganın bile kanat çırpmasına gerek duymadan, benim nişanım konusunda karar vermiş ve kararı duyurmuş bulunuyor. Şimdi ise bu nişanı kabul edip etmeyeceğimi ya da babamın emrine karşı gelerek kendi yoluma gitmeyi seçeceğimi düşünmek zorundayım.\n\n"
+  # Cersei 
+ agot_scenario_dd.0315.desc.c: "Eğer hiçbir şey yapmazsam, [bachelorette.GetName], [tywin.GetName] adlı kişinin kızı ile nişanlı olacağım. Lannister Hanedanı’nın gücü ve güzelliği tartışılmaz; ancak o soğuk bakışlarının ardında yatan hırs, krallığın alevler içinde kaldığı ürkütücü rüyalar görüyorum. Belki de mükemmel bir gelecek vaat eden bir kraliçe adayıdır, ancak içime bu kadar derin kuşkular salan biriyle evlenmek, tahtın yükünü paylaşmak için doğru bir adım mı olacaktır?\n\n"
+  # Lyanna 
+ agot_scenario_dd.0315.desc.l: "Eğer hiçbir şey yapmazsam, Kuzey’den [bachelorette.GetName] ile nişanlı olacağım. Özgürlüğü ve cesaretiyle tanınan bir ruh taşıyor, ileride büyüleyici bir kadın olacağı söyleniyor. Hiçbir Stark daha önce Targaryen soyundan biriyle evlenmedi; bu nedenle Kuzey’le yeni bağlar kurmak akıllıca bir hamle olabilir. Ancak o henüz genç, ve benim konumumda olan biri için en kısa sürede evlenip bir varis sahibi olmak hayati önem taşıyor.\n\n"
+  # Elia 
+ agot_scenario_dd.0315.desc.e: "Eğer hiçbir şey yapmazsam, güneşin öpüşlerinin sardığı Dorne topraklarının kırılgan prensesi [bachelorette.GetName] ile nişanlı olacağım. Martell Hanedanı uzun zamandır Targaryenlerle bağlarını koruyor ve güçlü bir aileden geliyor; ancak bir kral için, kırılgan bir prenses demek aynı zamanda kırılgan bir krallık demektir.\n\n"
+  # Ashara 
+ agot_scenario_dd.0315.desc.a: "Eğer hiçbir şey yapmazsam, Starfall’un mor gözlü incisi [bachelorette.GetName] ile nişanlı olacağım. Dayne Hanedanı siyasi olarak en güçlü olmasa da, diyarın en yetenekli şövalyelerini yetiştiriyorlar. O, herhangi bir kral için uygun bir kraliçe olacaktır; ancak benim için yeterli mi?\n\n"
+  
+ agot_scenario_dd.0315.desc.finish: "[bachelorette.GetNameNoTooltip] ile evlenmeli miyim, yoksa babamın iradesine karşı gelip kendi yolumu mu çizmeliyim?"
+  
+  
+ agot_scenario_dd.0315.opt.a: "Aslan dişisiyle evleneceğim."
+ agot_scenario_dd.0315.opt.b: "Kurt ve ejderha birleşecek."
+ agot_scenario_dd.0315.opt.c: "Dorne’la olan bağlarımızı güçlendireceğim."
+ agot_scenario_dd.0315.opt.d: "Starfall’un ışığı Ashara ile evleneceğim."
+ agot_scenario_dd.0315.opt.e: "Başka bir eş arayacağım."
+  
+ agot_scenario_dd.0315.e.tt: "Babana karşı çıkacak ve kendi eşini kendin seçeceksin."
+  
+  ## Aerys gets the news that Rhaegar thinks his choice is bad and he should feel bad 
+  # availabe scopes: tywin/cersei/lyanna/elia/ashara/bachelor(to be betrothed)/bachelorette 
+ agot_scenario_dd.0316.t: "İsyankâr Prens"
+  
+ agot_scenario_dd.0316.desc: "Dragonstone’dan gelen haberler beni öfkeyle titretti; oğlum Rhaegar, onu [bachelorette.GetName] ile nişanlamak için özenle hazırladığım planımı reddetmiş. Bu sadece [bachelorette.GetHerHis] Hanedanı’na karşı bir hakaret değil, aynı zamanda kral olarak irademizin açıkça reddedildiğinin kanıtı. Zaten Rhaegar’ın bana karşı komplo kurduğunu, hatta tahtı ele geçirmeye çalıştığını düşünüyordum. Şimdi bu isyanla ihanet şüphelerim daha da güçleniyor.\n\nNe yazık ki, elimden pek bir şey gelmiyor. Kararını kabullenip dikkatli bir gözle izlemekten başka seçeneğim kalmadı..."
+  
+ agot_scenario_dd.0316.opt.a: "Öyle olsun! İstediği lanet olası gelini kendisi seçsin!"
+  
+ agot_scenario_dd.0316.a.tt: "Oğlun şu anda nişanlanmayacak."
   
   
   
