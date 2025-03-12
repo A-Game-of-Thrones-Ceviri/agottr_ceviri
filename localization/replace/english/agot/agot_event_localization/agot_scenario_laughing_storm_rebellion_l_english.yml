@@ -3,83 +3,81 @@
  ## 0001-0010 LAUGHING STORM EVENTS - Canon Scenario         ##
  ##############################################################
 
- #Lyonel's Fury
- ### POV: Lyonel Baratheon
- ### Bookmark starter event
- agot_laughing_storm_rebellion.0001.t:0 "The Laughing Storm Is Brewing"
- agot_laughing_storm_rebellion.0001.desc:0 "The betrayal cuts deeper than any blade. [duncansmall.GetTitledFirstNameNicknamed], once betrothed to my beloved daughter [cassandra.GetFirstName], has forsaken his vows and taken up with that mysterious girl, [jenny.GetNameNicknamed]. This affront to House [lyonel.GetHouse.GetBaseName] cannot stand.\n\nThe honor of my family lies in ruin, trampled beneath the whims of the Iron Throne. House [lyonel.GetHouse.GetBaseNameNoTooltip] will brook no insult. Independence is my recourse, and should it come to war, so be it.\n\nThe Stormlands shall stand alone, and I shall reclaim my family's honor with all the strength we can muster."
- agot_laughing_storm_rebellion.0001.a:0 "Ours is the Fury!"
-
- #The King's Trouble
- ### POV: Aegon V
- ### Bookmark starter event
- #### Triggers: 0003
- agot_laughing_storm_rebellion.0002.t:0 "A Storm on the Horizon"
- agot_laughing_storm_rebellion.0002.desc:0 "The weight of the crown has never felt heavier. My son, [duncansmall.GetTitledFirstNameNicknamed], has shattered a betrothal, forsaking [cassandra.GetFullName] for [jenny.GetFirstNameNicknamed].\n\nThe fury of [lyonel.GetFullNameNicknamed] now threatens the realm. He has demanded independence from the Iron Throne, ready to plunge the kingdom into war to reclaim his family's honor. As the king, I must act swiftly to avert disaster.\n\nA proposal of trial by combat between [lyonel.GetTitledFirstNameNoTooltip] and [duncantall.GetTitledFirstName] 'the Tall' may offer a path to peace. It is a gamble, but one that might save the realm from needless bloodshed."
- agot_laughing_storm_rebellion.0002.a:0 "Let the Lord Commander settle this."
-
- #The King's Offer
- ### POV: Lyonel
- ### Pre-event for the Lyonel v Duncan Tall duel.
- #### Option A: will lead to duel (Triggers: 0004)
- #### Option B: might lead to immediate war of independence (Triggers: 0025)
- agot_laughing_storm_rebellion.0003.t:0 "The Duel of Honor"
- agot_laughing_storm_rebellion.0003.desc:0 "A raven arrives bearing the king's proposal, an offer to settle this conflict with a single duel, a trial by combat against [duncantall.GetTitledFirstName] 'the Tall.' I remember fighting alongside him in battles past — comrades once, now potential foes. This duel is more than a clash of steel; it is a battle for honor, the very soul of House [lyonel.GetHouse.GetBaseName].\n\nTo refuse would mean independence, but at what cost? The time has come to decide our fate."
- agot_laughing_storm_rebellion.0003.a:0 "Let the gods decide; we settle this in #bold trial by combat#!."
- agot_laughing_storm_rebellion.0003.b:0 "I shall not comply with a false king's demands."
-
- #A Trial
- ### POV: Lyonel
- ### Duel event.
- #### If Lyonel wins triggers 0020
- #### If Duncan wins and Lyonel is alive triggers 0007 and 0008
- #### If Duncan wins and Lyonel has died triggers 0009
- agot_laughing_storm_rebellion.0004.t:0 "The Clash of Storm and Steel"
- agot_laughing_storm_rebellion.0004.desc:0 "The journey to King's Landing has been long and fraught with anticipation. Now, I stand before the Red Keep, facing [duncantall.GetFirstName] 'the Tall,' the Lord Commander of the Kingsguard. Memories of past battles fought together flash through my mind, but today, camaraderie is cast aside.\n\nThis is a fight for honor, for the name of House [lyonel.GetHouse.GetBaseName]. The eyes of the realm are upon us, and only one shall emerge victorious.\n\nLet the clash of steel ring louder than my laughter, and may the better fighter win this fateful duel."
+ #Lyonel'in Öfkesi
+ ### Bakış Açısı: Lyonel Baratheon
+ ### Senaryo başlangıç etkinliği
+ agot_laughing_storm_rebellion.0001.t:0 "Gülen Fırtına Kopuyor"
+ agot_laughing_storm_rebellion.0001.desc:0 "Bu ihanet, en keskin kılıçtan bile derin kesiyor. [duncansmall.GetTitledFirstNameNicknamed], sevgili kızım [cassandra.GetFirstName] ile nişanlıyken yeminlerini bozdu ve o gizemli kız, [jenny.GetNameNicknamed] ile birlikte oldu. [lyonel.GetHouse.GetBaseName] Hanesine yapılan bu hakaret cezasız kalamaz.\n\nAilemin onuru ayaklar altına alındı, Demir Taht’ın kaprisleriyle çiğnendi. [lyonel.GetHouse.GetBaseNameNoTooltip] Hanesi hiçbir hakareti affetmez. Bağımsızlık benim yolumdur ve eğer bu savaş demekse, öyle olsun.\n\nFırtına Toprakları tek başına ayakta duracak ve tüm gücümüzle ailemin onurunu geri alacağım."
+ agot_laughing_storm_rebellion.0001.a:0 "Öfke Bizimdir!"
+ 
+ #Kralın Sıkıntısı
+ ### Bakış Açısı: Aegon V
+ ### Senaryo başlangıç etkinliği
+ #### Tetikleyici: 0003
+ agot_laughing_storm_rebellion.0002.t:0 "Ufukta Bir Fırtına"
+ agot_laughing_storm_rebellion.0002.desc:0 "Taç hiç bu kadar ağır gelmemişti. Oğlum, [duncansmall.GetTitledFirstNameNicknamed], bir nişanı bozdu ve [cassandra.GetFullName]’i terk ederek [jenny.GetFirstNameNicknamed]’i seçti.\n\nŞimdi [lyonel.GetFullNameNicknamed]’in öfkesi diyarı tehdit ediyor. Demir Taht’tan bağımsızlık talep ediyor, ailesinin onurunu geri almak için krallığı savaşa sürüklemeye hazır. Bir kral olarak, felaketi önlemek için hızlı hareket etmeliyim.\n\n[lyonel.GetTitledFirstNameNoTooltip] ve [duncantall.GetTitledFirstName] 'Uzun Duncan' arasında bir düello, bir yargı savaşını teklif etmek barışa giden bir yol olabilir. Bu bir kumar, ancak diyarı gereksiz kan dökülmesinden kurtarabilir."
+ agot_laughing_storm_rebellion.0002.a:0 "Lord Kumandan bu meseleyi çözsün."
+ 
+ #Kralın Teklifi
+ ### Bakış Açısı: Lyonel
+ ### Lyonel ile Duncan Tall arasındaki düello öncesi etkinlik.
+ #### Seçenek A: Düelloya yol açar (Tetikleyici: 0004)
+ #### Seçenek B: Hemen bağımsızlık savaşı başlatabilir (Tetikleyici: 0025)
+ agot_laughing_storm_rebellion.0003.t:0 "Onur Düellosu"
+ agot_laughing_storm_rebellion.0003.desc:0 "Kralın önerisini taşıyan bir kuzgun ulaştı, bu çatışmayı tek bir düelloyla çözme teklifi, [duncantall.GetTitledFirstName] 'Uzun Duncan' ile bir yargı savaşına girme önerisi. Geçmişte onunla yan yana savaştığımı hatırlıyorum — bir zamanlar yoldaştık, şimdi ise olası düşmanlar. Bu düello yalnız
+ 
+ # Bir Yargılama
+ ### Bakış Açısı: Lyonel
+ ### Düello olayı.
+ #### Eğer Lyonel kazanırsa 0020 tetiklenir
+ #### Eğer Duncan kazanır ve Lyonel hayatta kalırsa 0007 ve 0008 tetiklenir
+ #### Eğer Duncan kazanır ve Lyonel ölürse 0009 tetiklenir
+ agot_laughing_storm_rebellion.0004.t:0 "Fırtına ve Çeliğin Çarpışması"
+ agot_laughing_storm_rebellion.0004.desc:0 "Kral Toprakları'na giden yol uzun ve büyük bir beklentiyle doluydu. Şimdi Kızıl Kale’nin önünde, Kralkoruma Lord Kumandanı [duncantall.GetFirstName] 'Uzun Duncan’ ile yüzleşiyorum. Birlikte savaştığımız geçmiş savaşların anıları zihnimde canlanıyor, ancak bugün dostluk bir kenara bırakıldı.\n\nBu, onur için, [lyonel.GetHouse.GetBaseName] Hanesi’nin adı için verilen bir mücadeledir. Diyarın gözleri üzerimizde ve yalnızca birimiz zaferle çıkacak.\n\nÇelik sesleri kahkahamdan daha gür çıksın ve bu kader düellosunda en iyi dövüşçü kazansın."
  agot_laughing_storm_rebellion.0004.a:0 "#bold Ha ha ha!#!"
+ 
+ # Düello Açıklamaları
+ agot_laughing_storm_rebellion.t:0 "Çarpışarak Yargılama"
+ agot_laughing_storm_rebellion.duncan_won:0 "[duncantall.GetTitledFirstNameNoTooltip], [lyonel.GetTitledFirstNameNoTooltip] ile olan düelloyu kazandı."
+ agot_laughing_storm_rebellion.lyonel_won:0 "[lyonel.GetTitledFirstNameNoTooltip], [duncantall.GetTitledFirstNameNoTooltip] ile olan düelloyu kazandı."
+ 
+ # Lyonel Kaybetti
+ ### Bakış Açısı: Lyonel
+ ### Düello sonrası olay.
+ agot_laughing_storm_rebellion.0007.t:0 "Fırtınanın Düşüşü"
+ agot_laughing_storm_rebellion.0007.desc:0 "Düello sona erdi ve çarpışan kılıçların sesi artık bir hatıraya dönüştü. Tüm yeteneklerime rağmen [duncantall.GetTitledFirstName] galip geldi. Yenilgi, yutması acı bir lokma ve kaybın ağırlığı omuzlarıma çökmüş durumda.\n\n[lyonel.GetHouse.GetBaseName] Hanesi'nin onuru, sarsılmış ve hırpalanmış olarak artık [aegonv.GetTitledFirstNameRegnal]’in ellerinde. Demir Taht’ın önünde diz çökerken, kralın hükmünü beklerken, Fırtına Toprakları’nın geleceği belirsizlik içinde sallanıyor. Kral benim ve hanemin kaderi hakkında ne karar verecek?"
+ agot_laughing_storm_rebellion.0007.a:0 "Kaderimi onurla kabul edeceğim."
+ 
+ # Lyonel Kaybetti
+ ### Bakış Açısı: Aegon V
+ ### Düello sonrası olay.
+ #### Tetiklenir: 0010 (seçilen seçenekten bağımsız olarak)
+ agot_laughing_storm_rebellion.0008.t:0 "Kralın Merhameti"
+ agot_laughing_storm_rebellion.0008.desc:0 "[lyonel.GetFullNameNicknamed], mağlup ancak kırılmamış şekilde önümde duruyor. [duncantall.GetTitledFirstName] karşısında aldığı yenilgiye rağmen, diyardaki gerilim hâlâ sürüyor. Bir kral olarak, barış ve istikrarın gerekliliğini biliyorum. Ağır bir ceza isyanın ateşini körükleyebilir, ancak merhamet bu yarayı iyileştirebilir.\n\nBu hassas dengeyi korumak adına, Baratheonları tahta daha sıkı bağlayacak bir evlilik ittifakı sunmayı düşünüyorum.\n\nKızımı oğluyla evlendirmeyi mi teklif etmeliyim, yoksa sadece sadakat yemini etmesini istemek yeterli mi olur?"
+ agot_laughing_storm_rebellion.0008.a:0 "Rhaelle’in elini oğluna teklif ediyorum."
+ agot_laughing_storm_rebellion.0008.b:0 "Vaella’nın elini oğluna teklif ediyorum."
+ agot_laughing_storm_rebellion.0008.c:0 "Hiçbir şey teklif etmiyorum."
+ 
+ # Lyonel Kaybetti - Lyonel öldü
+ ### Bakış Açısı: Aegon V
+ ### Düello sonrası olay.
+ #### Tetiklenir: 0031
+ agot_laughing_storm_rebellion.0009.t:0 "Fırtına'nın Sonu"
+ agot_laughing_storm_rebellion.0009.desc:0 "[lyonel.GetFullNameNicknamed], [duncantall.GetTitledFirstName] ile yaptığı çarpışarak yargılama düellosunda hayatını kaybetti. Bir zamanlar korkutucu bir tehdit olan meydan okuması ve cesareti artık sonsuza kadar susturuldu. Diyarı parçalamakla tehdit eden isyan, liderinin düşmesiyle sona erdi.\n\nBarışın bedeli ağır oldu ve bu çatışmanın yankıları tarih boyunca hatırlanacak. Fırtına Toprakları boyun eğdi, diyar iyileşmeye başlayabilir, ancak bu olayın gölgesi yıllarca Demir Taht’ın üzerinde kalacak."
+ agot_laughing_storm_rebellion.0009.a:0 "Savaştı, kaybetti ve şimdi huzur içinde yatıyor."
 
- #Duel Tooltips
- agot_laughing_storm_rebellion.t:0 "Trial by Combat"
- agot_laughing_storm_rebellion.duncan_won:0 "[duncantall.GetTitledFirstNameNoTooltip] has won the duel against [lyonel.GetTitledFirstNameNoTooltip]."
- agot_laughing_storm_rebellion.lyonel_won:0 "[lyonel.GetTitledFirstNameNoTooltip] has won the duel against [duncantall.GetTitledFirstNameNoTooltip]."
-
- #Lyonel Lost
- ### POV: Lyonel
- ### Post-duel event.
- agot_laughing_storm_rebellion.0007.t:0 "The Fall of the Storm"
- agot_laughing_storm_rebellion.0007.desc:0 "The duel is over, and the clang of swords has faded into memory. Despite my prowess, [duncantall.GetTitledFirstName] has emerged victorious. Defeat is a bitter pill to swallow, the weight of loss settling heavily upon my shoulders.\n\nThe honor of House [lyonel.GetHouse.GetBaseName], bruised and battered, now lies in the hands of [aegonv.GetTitledFirstNameRegnal]. As I kneel before the Iron Throne, awaiting the king's judgment, the future of the Stormlands hangs in the balance. What fate shall the king decree for me and my house?"
- agot_laughing_storm_rebellion.0007.a:0 "I shall accept my fate with honor."
-
- #Lyonel Lost
- ### POV: Aegon V
- ### Post-duel event.
- #### Triggers: 0010 (regardless the selected option)
- agot_laughing_storm_rebellion.0008.t:0 "King's Mercy"
- agot_laughing_storm_rebellion.0008.desc:0 "[lyonel.GetFullNameNicknamed] stands before me, defeated but unbroken. Despite his loss to [duncantall.GetTitledFirstName], the tension in the realm lingers. As king, I recognize the need for peace and stability. Severe punishment could fan the flames of rebellion, but mercy might mend the rift.\n\nTo preserve the fragile harmony, I contemplate offering a marriage alliance to bind the Baratheons closer to the throne.\n\nShall I offer the hand of my daughter to his son, or simply demand his renewed loyalty without further gesture?"
- agot_laughing_storm_rebellion.0008.a:0 "I offer Rhaelle's hand to his son."
- agot_laughing_storm_rebellion.0008.b:0 "I offer Vaella's hand to his son."
- agot_laughing_storm_rebellion.0008.c:0 "I offer nothing."
-
- #Lyonel Lost - Lyonel died
- ### POV: Aegon V
- ### Post-duel event.
- #### Triggers: 0031
- agot_laughing_storm_rebellion.0009.t:0 "The Storm's End"
- agot_laughing_storm_rebellion.0009.desc:0 "[lyonel.GetFullNameNicknamed] has met his end in the trial by combat against [duncantall.GetTitledFirstName]. His defiance and valor, once a formidable threat, is now silenced. The rebellion that threatened to tear the realm apart has been cut short with its leader fallen.\n\nThe cost of peace has been steep, and the echoes of this conflict will linger in the annals of history. With the Stormlands subdued, the realm can begin to heal, but the shadow of this event will loom over the Iron Throne for years to come."
- agot_laughing_storm_rebellion.0009.a:0 "He fought, he lost, and now he rests."
-
- #A new betrothal
- ### POV: Lyonel
- ### Betrothal offer from Egg
- #### Option A: Leads to betrothal (Triggers: 0028)
- #### Option B: Leads to end of story (Triggers: 0030)
- #### Option C: Leads to end of story (Triggers: 0030)
- agot_laughing_storm_rebellion.0010.t:0 "The Storm's Aftermath"
- agot_laughing_storm_rebellion.0010.betrothal.desc:0 "In the aftermath of my defeat in the trial by combat, [aegonv.GetTitledFirstNameRegnal] extends an olive branch, offering his daughter, [targ_betrothed.GetTitledFirstNamePossessive] hand in marriage to my son, [bara_betrothed.GetTitledFirstName]. This gesture, meant to heal the rift between House [lyonel.GetHouse.GetBaseName] and the Iron Throne, carries the weight of potential peace and unity.\n\nThe honor of my house may be restored through this union, forging a bond that could secure the future of the Stormlands."
- agot_laughing_storm_rebellion.0010.nobetrothal.desc:0 "In the aftermath of my defeat in the trial by combat, the silence from the Iron Throne is deafening. [aegonv.GetTitledFirstNameRegnal] offers no hand in marriage, no gesture of peace, only the cold reality of my loss.\n\nThe honor of House [lyonel.GetHouse.GetBaseName] remains tarnished, and the future of the Stormlands is uncertain. I stand alone, contemplating the next steps for my house, knowing that the path ahead is fraught with challenges and the shadow of this defeat looms large."
- agot_laughing_storm_rebellion.0010.a:0 "I accept the king's proposal."
- agot_laughing_storm_rebellion.0010.b:0 "I have to refuse this proposal."
- agot_laughing_storm_rebellion.0010.c:0 "I accept my fate."
+ # Yeni Bir Nişan
+ ### Bakış Açısı: Lyonel
+ ### Egg'den gelen nişan teklifi
+ #### Seçenek A: Nişan gerçekleşir (Tetikler: 0028)
+ #### Seçenek B: Hikâyenin sonu (Tetikler: 0030)
+ #### Seçenek C: Hikâyenin sonu (Tetikler: 0030)
+ agot_laughing_storm_rebellion.0010.t:0 "Fırtınanın Ardından"
+ agot_laughing_storm_rebellion.0010.betrothal.desc:0 "Çarpışarak yargılamadaki yenilgimin ardından, [aegonv.GetTitledFirstNameRegnal] bana bir zeytin dalı uzatarak kızını, [targ_betrothed.GetTitledFirstNamePossessive] elini oğlum [bara_betrothed.GetTitledFirstName] ile birleştirmeyi teklif ediyor. Bu jest, [lyonel.GetHouse.GetBaseName] Hanesi ile Demir Taht arasındaki çatışmayı sona erdirerek barış ve birlik getirme amacını taşıyor.\n\nHanemin onuru bu evlilik ile geri kazanılabilir ve bu bağ, Fırtına Toprakları’nın geleceğini güvence altına alabilir."
+ agot_laughing_storm_rebellion.0010.nobetrothal.desc:0 "Çarpışarak yargılamadaki yenilgimin ardından, Demir Taht’tan gelen sessizlik kulakları sağır edecek kadar derin. [aegonv.GetTitledFirstNameRegnal] ne bir evlilik teklifi sunuyor ne de bir barış jesti—yalnızca soğuk ve değiştirilemez bir yenilgi gerçeği var.\n\n[lyonel.GetHouse.GetBaseName] Hanesi’nin onuru hâlâ lekelidir ve Fırtına Toprakları’nın geleceği belirsizdir. Hanemin bir sonraki adımını düşünerek yalnız başıma duruyorum; yolun engebeli olduğu aşikâr ve bu yenilginin gölgesi uzun süre üzerimizde kalacak."
+ agot_laughing_storm_rebellion.0010.a:0 "Kralın teklifini kabul ediyorum."
+ agot_laughing_storm_rebellion.0010.b:0 "Bu teklifi reddetmek zorundayım."
+ agot_laughing_storm_rebellion.0010.c:0 "Kaderimi kabul ediyorum."
 
  ##############################################################
  ## 0011-0018 LAUGHING STORM EVENTS - Canon Breakups         ##
@@ -90,20 +88,20 @@
  ### Breaking betrothals between Jaeharys+Celia Tully and Shaera+Luthor Tyrell
  #### Option A: Parents notified about the breakup (Triggers: 0013)
  #### Option B: End of story
- agot_laughing_storm_rebellion.0011.t:0 "Heart's Dilemma"
- agot_laughing_storm_rebellion.0011.desc:0 "The actions of my older brother [duncansmall.GetFirstName] have stirred thoughts deep within me. His choice to leave [cassandra.GetTitledFirstName] for [jenny.GetFirstNameNicknamed], following the call of true love, has made me question my own path. Bound in a marriage with [celia.GetTitledFirstName], my heart yearns for [shaera.GetFirstName], my true love.\n\nThe weight of duty and the pull of love wage a fierce battle within me. Should I follow my brother's footsteps and pursue my heart's desire, or remain bound by the vows I have made?"
- agot_laughing_storm_rebellion.0011.a:0 "Yes, I should follow my heart."
- agot_laughing_storm_rebellion.0011.b:0 "No, duty must prevail."
+ agot_laughing_storm_rebellion.0011.t:0 "Kalbin İkilemi"
+ agot_laughing_storm_rebellion.0011.desc:0 "Ağabeyim [duncansmall.GetFirstName]’in yaptığı seçimler içimde derin düşünceleri harekete geçirdi. [cassandra.GetTitledFirstName]’i terk edip [jenny.GetFirstNameNicknamed] ile aşk uğruna evlenme kararı, kendi yolumu sorgulamama neden oldu. [celia.GetTitledFirstName] ile bir evlilik bağına hapsolmuşken, kalbim gerçek aşkım olan [shaera.GetFirstName] için yanıyor.\n\nGörev duygusu ile aşkın çekimi içimde büyük bir mücadeleye sebep oluyor. Ağabeyimin izinden gidip kalbimin sesini mi dinlemeliyim, yoksa verdiğim yemine sadık mı kalmalıyım?"
+ agot_laughing_storm_rebellion.0011.a:0 "Evet, kalbimin sesini dinlemeliyim."
+ agot_laughing_storm_rebellion.0011.b:0 "Hayır, görev ağır basmalı."
 
  #Daeron
  ### POV: Daeron Targaryen
  ### Breaking betrothal between Daeron+Olenna Redwyne
  #### Option A: Parents notified about the breakup (Triggers: 0014)
  #### Option B: End of story
- agot_laughing_storm_rebellion.0012.t:0 "Questioning the Path Ahead"
- agot_laughing_storm_rebellion.0012.desc:0 "Witnessing the choices of my older brothers, who followed their hearts and divorced to marry for love, I find myself in turmoil. Bound by an impending marriage to [olenna.GetTitledFirstName], a girl I hardly know, doubt clouds my thoughts. [olenna.GetTitledFirstName] may appear pleasant, but my mind and heart are elsewhere.\n\nThe expectations of duty weigh heavily, yet the desire for true happiness beckons. Should I forge my own path and seek love, or adhere to the obligations set before me?"
- agot_laughing_storm_rebellion.0012.a:0 "Yes, I should follow my own heart."
- agot_laughing_storm_rebellion.0012.b:0 "No, duty must guide me."
+ agot_laughing_storm_rebellion.0012.t:0 "Önümdeki Yolu Sorgulamak"
+ agot_laughing_storm_rebellion.0012.desc:0 "Ağabeylerimin kalplerinin sesini dinleyerek aşk için evliliklerini bozduğunu görmek beni büyük bir karmaşaya sürüklüyor. [olenna.GetTitledFirstName] ile yaklaşan bir evliliğe bağlıyım, ancak onu neredeyse hiç tanımıyorum. [olenna.GetTitledFirstName] hoş biri gibi görünebilir, fakat aklım ve kalbim bambaşka bir yerde.\n\nGörev duygusunun ağırlığı omuzlarımı eziyor, ancak gerçek mutluluğun çağrısı da bir o kadar güçlü. Kendi yolumu mu çizmeli ve aşkı mı aramalıyım, yoksa önüme konan görevleri mi yerine getirmeliyim?"
+ agot_laughing_storm_rebellion.0012.a:0 "Evet, kalbimin sesini dinlemeliyim."
+ agot_laughing_storm_rebellion.0012.b:0 "Hayır, görevime sadık kalmalıyım."
 
  #Jaehaerys & Shaera - notification
  ## Can be triggered via event 0021 (or can trigger after some time in historical game ruler)
@@ -111,10 +109,10 @@
  ### Jaeharys+Celia Tully and Shaera+Luthor Tyrell broke up
  #### Option A: End of story
  #### Option B (only for Egg): End of story + Jaehaerys and Shaera are disinherited
- agot_laughing_storm_rebellion.0013.t:0 "Unions Defied"
- agot_laughing_storm_rebellion.0013.desc:0 "A grievous turn of events has unfolded. [jaehaerys.GetTitledFirstName] has broken his betrothal with [celia.GetTitledFirstName], and [shaera.GetTitledFirstName] has severed her engagement with [luthor.GetTitledFirstName]. Defying tradition and duty, they now claim to be married to each other.\n\nThis reckless act has sown discord and disappointment, shaking the foundations of alliances and expectations. The consequences of their union will echo through the realms, leaving house heads to grapple with the ramifications of these unexpected and unfortunate decisions."
- agot_laughing_storm_rebellion.0013.a:0 "This is a grave misstep."
- agot_laughing_storm_rebellion.0013.b:0 "They must be punished."
+ agot_laughing_storm_rebellion.0013.t:0 "İsyan Eden Birliktelikler"
+ agot_laughing_storm_rebellion.0013.desc:0 "Ağır sonuçlar doğuracak bir gelişme yaşandı. [jaehaerys.GetTitledFirstName], [celia.GetTitledFirstName] ile olan nişanını bozdu ve [shaera.GetTitledFirstName], [luthor.GetTitledFirstName] ile olan nişanını sona erdirdi. Geleneklere ve görevlerine meydan okuyarak, artık birbirleriyle evli olduklarını iddia ediyorlar.\n\nBu düşüncesizce yapılan hareket, hüsran ve kargaşa yaratmış, ittifakların ve beklentilerin temellerini sarsmıştır. Bu evliliğin sonuçları diyarın dört bir yanında yankılanacak ve hane reisleri bu beklenmedik ve talihsiz kararın doğuracağı sonuçlarla yüzleşmek zorunda kalacaktır."
+ agot_laughing_storm_rebellion.0013.a:0 "Bu büyük bir hata."
+ agot_laughing_storm_rebellion.0013.b:0 "Cezalandırılmalılar."
 
  #Daeron - notification
  ## Can be triggered via event 0021 (or can trigger after some time in historical game ruler)
@@ -123,48 +121,48 @@
  #### Option A (only for Egg): End of story
  #### Option B (only for Runceford if Luthor Tyrell is NOT betrothed): Luthor and Olenna betrothal might happen (Triggers: 0015)
  #### Option C (only for Runceford if Luthor Tyrell is betrothed): End of story
- agot_laughing_storm_rebellion.0014.t:0 "Betrothal Broken"
- agot_laughing_storm_rebellion.0014.desc:0 "The news arrives with a heavy heart. [daeron.GetTitledFirstName] has broken his betrothal with [olenna.GetTitledFirstName], casting aside the carefully laid plans for their union. This unforeseen turn of events is most unfortunate, causing disappointment and uncertainty.\n\nThe ramifications of this broken promise are sure to ripple through both houses, challenging alliances and expectations."
- agot_laughing_storm_rebellion.0014.aegonv.a:0 "This is a grave disappointment."
- agot_laughing_storm_rebellion.0014.runceford.a:0 "Perhaps it is time to reach out to Garlan with a betrothal offer."
- agot_laughing_storm_rebellion.0014.runceford.a.tt:0 "A betrothal between [olenna.GetTitledFirstName] and [luthor.GetTitledFirstName] will be proposed"
- agot_laughing_storm_rebellion.0014.runcefordx.a:0 "This is a grave disappointment."
-
+ agot_laughing_storm_rebellion.0014.t:0 "Bozulan Nişan"
+ agot_laughing_storm_rebellion.0014.desc:0 "Bu haber, ağır bir yürekle ulaştı. [daeron.GetTitledFirstName], [olenna.GetTitledFirstName] ile olan nişanını bozdu ve onların birliği için özenle hazırlanmış planları bir kenara attı. Bu beklenmedik gelişme büyük bir hayal kırıklığı ve belirsizlik yarattı.\n\nBu kırılan sözün etkileri kesinlikle hem haneler hem de ittifaklar üzerinde uzun süre yankılanacak ve mevcut dengeleri zorlayacaktır."
+ agot_laughing_storm_rebellion.0014.aegonv.a:0 "Bu büyük bir hayal kırıklığı."
+ agot_laughing_storm_rebellion.0014.runceford.a:0 "Belki de Garlan’a bir nişan teklifi götürmenin zamanı gelmiştir."
+ agot_laughing_storm_rebellion.0014.runceford.a.tt:0 "[olenna.GetTitledFirstName] ve [luthor.GetTitledFirstName] arasında bir nişan önerilecek."
+ agot_laughing_storm_rebellion.0014.runcefordx.a:0 "Bu büyük bir hayal kırıklığı."
+  
  #Luthor + Olenna = ?
  ### POV: Garlan Tyrell
  ### Betrothal offer from Runceford Redwyne
  #### Option A: Agrees to the betrothal (Triggers: 0016)
  #### Option B: Refuses the betrothal (Triggers: 0018)
- agot_laughing_storm_rebellion.0015.t:0 "A New Proposal"
- agot_laughing_storm_rebellion.0015.desc:0 "In the wake of [daeron.GetTitledFirstName] breaking his betrothal with [olenna.GetTitledFirstName], her father [runceford.GetTitledFirstName] has approached me with a new proposal. He suggests a betrothal between [olenna.GetTitledFirstName] and my son, [luthor.GetTitledFirstName].\n\nThis alliance could prove to be very valuable, strengthening ties and fortifying the future of House [garlan.GetHouse.GetBaseName]. It is an opportunity that demands careful consideration."
- agot_laughing_storm_rebellion.0015.a:0 "This union will benefit our house."
- agot_laughing_storm_rebellion.0015.b:0 "I must decline this offer."
+ agot_laughing_storm_rebellion.0015.t:0 "Yeni Bir Teklif"
+ agot_laughing_storm_rebellion.0015.desc:0 "[daeron.GetTitledFirstName]’in [olenna.GetTitledFirstName] ile olan nişanını bozmasının ardından, babası [runceford.GetTitledFirstName] bana yeni bir teklif ile yaklaştı. [olenna.GetTitledFirstName] ile oğlum [luthor.GetTitledFirstName] arasında bir nişan öneriyor.\n\nBu ittifak, hanelerimiz arasındaki bağları güçlendirebilir ve [garlan.GetHouse.GetBaseName] Hanesi’nin geleceğini sağlamlaştırabilir. Bu, dikkatlice değerlendirilmesi gereken bir fırsat."
+ agot_laughing_storm_rebellion.0015.a:0 "Bu birliktelik hanemize fayda sağlayacaktır."
+ agot_laughing_storm_rebellion.0015.b:0 "Bu teklifi reddetmek zorundayım."
 
  #Luthor + Olenna = betrothal
  ### POV: Runceford Redwyne
  ### Betrothal between Olenna and Luthor
  #### Option A: Final confirmation on the betrothal (Triggers: 0017)
  #### Option B: Refuses the betrothal (Triggers: 0018)
- agot_laughing_storm_rebellion.0016.t:0 "A Father's Decision"
- agot_laughing_storm_rebellion.0016.desc:0 "[garlan.GetTitledFirstName] has accepted the offer to betroth [olenna.GetTitledFirstName] and [luthor.GetTitledFirstName]. This alliance holds the promise of great value and strengthened ties between our houses. However, as [olenna.GetFirstNamePossessiveNoTooltip] father, it is my duty to ensure that this union will also be beneficial for her.\n\nThe final decision rests with me, and I must carefully weigh the advantages for our family against my daughter's future happiness."
- agot_laughing_storm_rebellion.0016.a:0 "Let us proceed with the betrothal."
- agot_laughing_storm_rebellion.0016.b:0 "I must decline for Olenna's sake."
+ agot_laughing_storm_rebellion.0016.t:0 "Bir Babanın Kararı"
+ agot_laughing_storm_rebellion.0016.desc:0 "[garlan.GetTitledFirstName], [olenna.GetTitledFirstName] ile [luthor.GetTitledFirstName]’in nişanlanma teklifini kabul etti. Bu ittifak, hanelerimiz arasındaki bağları güçlendirecek ve büyük bir değer taşıyacaktır. Ancak, [olenna.GetFirstNamePossessiveNoTooltip]’nin babası olarak, bu birlikteliğin onun için de hayırlı olmasını sağlamak benim görevimdir.\n\nSon karar bana ait ve ailemiz için doğacak faydaları kızımın gelecekteki mutluluğuyla dikkatlice tartmalıyım."
+ agot_laughing_storm_rebellion.0016.a:0 "Nişan sürecini başlatalım."
+ agot_laughing_storm_rebellion.0016.b:0 "Olenna’nın iyiliği için bu teklifi reddetmeliyim."
 
  #Luthor + Olenna = betrothal notification
  ### POV: Garlan Tyrell
  ### Olenna and Luthor betrothed, alliance made
  #### Option A: End of story
- agot_laughing_storm_rebellion.0017.t:0 "Alliance Forged"
- agot_laughing_storm_rebellion.0017.desc:0 "At last, the betrothal between [olenna.GetTitledFirstName] and [luthor.GetTitledFirstName] has been finalized. This union promises to strengthen the bonds between our houses, bringing mutual benefits and fortifying our future alliances.\n\nWith this partnership, both families stand to gain in power and influence, paving the way for a prosperous future."
- agot_laughing_storm_rebellion.0017.a:0 "This calls for a celebration."
+ agot_laughing_storm_rebellion.0017.t:0 "Kurulan İttifak"
+ agot_laughing_storm_rebellion.0017.desc:0 "Sonunda, [olenna.GetTitledFirstName] ve [luthor.GetTitledFirstName] arasındaki nişan resmiyet kazandı. Bu birliktelik, hanelerimiz arasındaki bağları güçlendirerek karşılıklı faydalar sağlayacak ve gelecekteki ittifaklarımızı sağlamlaştıracaktır.\n\nBu ortaklık sayesinde, her iki aile de güç ve nüfuz açısından kazanç sağlayacak ve refah dolu bir geleceğin temelleri atılacaktır."
+ agot_laughing_storm_rebellion.0017.a:0 "Bu kutlanması gereken bir olay!"
 
  #Luthor + Olenna = refused
  ### POV: Garlan Tyrell OR Runceford Redwyne (depending who refused it)
  ### Olenna and Luthor betrothal negotiation failed
  #### Option A: End of story
- agot_laughing_storm_rebellion.0018.t:0 "An Opportunity Lost"
- agot_laughing_storm_rebellion.0018.desc:0 "The betrothal between [olenna.GetTitledFirstName] and [luthor.GetTitledFirstName] has been refused. It is a shame, as this union would have been greatly beneficial for both our houses, strengthening our ties and securing our futures.\n\nDespite the setback, we must look forward and consider other paths to fortify our alliances and the prosperity of our family."
- agot_laughing_storm_rebellion.0018.a:0 "My child will find [my_child.GetHerHis] love elsewhere."
+ agot_laughing_storm_rebellion.0018.t:0 "Kaçırılan Bir Fırsat"
+ agot_laughing_storm_rebellion.0018.desc:0 "[olenna.GetTitledFirstName] ve [luthor.GetTitledFirstName] arasındaki nişan reddedildi. Bu büyük bir kayıp, zira bu birliktelik her iki haneye de büyük fayda sağlayacak, bağlarımızı güçlendirecek ve geleceğimizi güvence altına alacaktı.\n\nBu aksiliğe rağmen, ileriye bakmalı ve ittifaklarımızı güçlendirecek, ailemizin refahını artıracak başka yolları değerlendirmeliyiz."
+ agot_laughing_storm_rebellion.0018.a:0 "Çocuğum gerçek aşkını başka bir yerde bulacaktır."
 
  ##############################################################
  ## 0020-0035 LAUGHING STORM EVENTS - Non-Canon Scenarios    ##
@@ -175,185 +173,188 @@
  ### Lyonel beats Duncan Tall in the duel
  #### Option A: Lyonel remains a vassal if Egg agrees to sending Duncan Targaryen to the wall and a marriage between Rhaella and Ormund Baratheon (or Herbert if Ormund died somehow) (Triggers: 0021)
  #### Option B: Declares independence (Triggers: 0026)
- agot_laughing_storm_rebellion.0020.t:0 "The Storm's Victory"
- agot_laughing_storm_rebellion.0020.desc:0 "The trial by combat is over, and [duncantall.GetTitledFirstName] lies defeated by my hand. The honor of House [lyonel.GetHouse.GetBaseName] has been restored, and the thrill of victory pulses through my veins. Now, I stand at a crossroads.\n\n"
- agot_laughing_storm_rebellion.0020.desc.both:0 "I can choose to remain independent, carving out my own path free from the Iron Throne. Alternatively, I could swear fealty once more, but only under the condition of a new betrothal from [aegonv.GetTitledFirstNameRegnal] and the exile of [duncansmall.GetTitledFirstNameNicknamed] to the Wall."
- agot_laughing_storm_rebellion.0020.desc.only_banishment:0 "I can choose to remain independent, carving out my own path free from the Iron Throne. Alternatively, I could swear fealty once more, but only under the condition of the exile of [duncansmall.GetTitledFirstNameNicknamed] to the Wall."
- agot_laughing_storm_rebellion.0020.desc.only_betrothal:0 "I can choose to remain independent, carving out my own path free from the Iron Throne. Alternatively, I could swear fealty once more, but only under the condition of a new betrothal from [aegonv.GetTitledFirstNameRegnal]."
- agot_laughing_storm_rebellion.0020.desc.none:0 "I can choose to remain independent, carving out my own path free from the Iron Throne. Alternatively, I could swear fealty once more, but I shall not do so blindly."
- agot_laughing_storm_rebellion.0020.a:0 "I swear fealty, but I demand justice."
- agot_laughing_storm_rebellion.0020.a.simple:0 "There is no need for further strife — I swear my fealty."
- agot_laughing_storm_rebellion.0020.b:0 "The Stormlands shall stand alone."
+ agot_laughing_storm_rebellion.0020.t:0 "Fırtınanın Zaferi"
+ agot_laughing_storm_rebellion.0020.desc:0 "Çarpışarak yargılama sona erdi ve [duncantall.GetTitledFirstName] elimden mağlup düştü. [lyonel.GetHouse.GetBaseName] Hanesi’nin onuru yeniden kazanıldı ve zaferin coşkusu damarlarımda hissediliyor. Şimdi, bir yol ayrımında duruyorum.\n\n"
+ agot_laughing_storm_rebellion.0020.desc.both:0 "Bağımsız kalmayı seçebilir, kendi yolumu Demir Taht’tan uzak bir şekilde çizebilirim. Alternatif olarak, yeniden sadakat yemini edebilirim, ancak sadece [aegonv.GetTitledFirstNameRegnal]’den yeni bir nişan teklifi ve [duncansmall.GetTitledFirstNameNicknamed]’in Sur’a sürgün edilmesi şartıyla."
+ agot_laughing_storm_rebellion.0020.desc.only_banishment:0 "Bağımsız kalmayı seçebilir, kendi yolumu Demir Taht’tan uzak bir şekilde çizebilirim. Alternatif olarak, yeniden sadakat yemini edebilirim, ancak sadece [duncansmall.GetTitledFirstNameNicknamed]’in Sur’a sürgün edilmesi şartıyla."
+ agot_laughing_storm_rebellion.0020.desc.only_betrothal:0 "Bağımsız kalmayı seçebilir, kendi yolumu Demir Taht’tan uzak bir şekilde çizebilirim. Alternatif olarak, yeniden sadakat yemini edebilirim, ancak sadece [aegonv.GetTitledFirstNameRegnal]’den yeni bir nişan teklifi gelmesi şartıyla."
+ agot_laughing_storm_rebellion.0020.desc.none:0 "Bağımsız kalmayı seçebilir, kendi yolumu Demir Taht’tan uzak bir şekilde çizebilirim. Alternatif olarak, yeniden sadakat yemini edebilirim, ancak bunu körü körüne yapmayacağım."
+ agot_laughing_storm_rebellion.0020.a:0 "Sadakat yemini ederim, ancak adalet talep ediyorum."
+ agot_laughing_storm_rebellion.0020.a.simple:0 "Daha fazla kargaşaya gerek yok—sadakatimi sunuyorum."
+ agot_laughing_storm_rebellion.0020.b:0 "Fırtına Toprakları kendi başına duracak."
 
  #Lyonel Won
  ### POV: Aegon V
  ### Lyonel demanded to send Prince Duncan to the wall and a marriage between Rhaella and Ormund Baratheon in order for him to remain loyal
  #### Option A: Demand refused - might lead to the break of betrothals (Triggers: 0013, 0014, 0023, 0024 and 0032)
  #### Option B: Demand accepted (Triggers: 0028)
- agot_laughing_storm_rebellion.0021.t:0 "Demands of the Storm"
- agot_laughing_storm_rebellion.0021.no_demand.t:0 "Victory of the Storm"
- agot_laughing_storm_rebellion.0021.desc:0 "[lyonel.GetFullNameNicknamed] has emerged victorious in the trial by combat, defeating [duncantall.GetTitledFirstName].\n\n"
- agot_laughing_storm_rebellion.0021.desc.both:0 "He now offers to swear fealty once more, but his loyalty comes at a price: a new betrothal from the Crown and the exile of my son, [duncansmall.GetTitledFirstNameNicknamed], to the Wall. The decision is a weighty one, balancing the honor of the realm and the demands of a powerful vassal.\n\nI must carefully consider the implications of accepting or refusing his terms."
- agot_laughing_storm_rebellion.0021.desc.only_banishment:0 "He now offers to swear fealty once more, but his loyalty comes at a price: the exile of my son, [duncansmall.GetTitledFirstNameNicknamed], to the Wall. The decision is a weighty one, balancing the honor of the realm and the demands of a powerful vassal.\n\nI must carefully consider the implications of accepting or refusing his terms."
- agot_laughing_storm_rebellion.0021.desc.only_betrothal:0 "He now offers to swear fealty once more, but his loyalty comes at a price: a new betrothal from the Crown. The decision is a weighty one, balancing the honor of the realm and the demands of a powerful vassal.\n\nI must carefully consider the implications of accepting or refusing his terms."
- agot_laughing_storm_rebellion.0021.desc.none:0 "He now offers to swear fealty once more, without demand or condition. His oath restores a measure of peace to the realm, yet past strife is not so easily forgotten.\n\nFor now, the realm stands whole again."
- agot_laughing_storm_rebellion.0021.a:0 "I reject this audacious demand."
- agot_laughing_storm_rebellion.0021.a.no_demand:0 "Let peace endure."
- agot_laughing_storm_rebellion.0021.b:0 "This offer could restore peace."
-
+ agot_laughing_storm_rebellion.0021.t:0 "Fırtınanın Talepleri"
+ agot_laughing_storm_rebellion.0021.no_demand.t:0 "Fırtınanın Zaferi"
+ agot_laughing_storm_rebellion.0021.desc:0 "[lyonel.GetFullNameNicknamed], çarpışarak yargılamada zafer kazandı ve [duncantall.GetTitledFirstName]’i mağlup etti.\n\n"
+ agot_laughing_storm_rebellion.0021.desc.both:0 "Şimdi yeniden sadakat yemini etmeyi teklif ediyor, ancak bağlılığı bir bedelle geliyor: Kraliyet tarafından yeni bir nişan ve oğlum [duncansmall.GetTitledFirstNameNicknamed]’in Sur’a sürgün edilmesi. Bu karar, hem diyarın onurunu hem de güçlü bir vasalın taleplerini dengeleme meselesidir.\n\nBu şartları kabul etmenin ya da reddetmenin sonuçlarını dikkatlice değerlendirmeliyim."
+ agot_laughing_storm_rebellion.0021.desc.only_banishment:0 "Şimdi yeniden sadakat yemini etmeyi teklif ediyor, ancak bağlılığı bir bedelle geliyor: Oğlum [duncansmall.GetTitledFirstNameNicknamed]’in Sur’a sürgün edilmesi. Bu karar, hem diyarın onurunu hem de güçlü bir vasalın taleplerini dengeleme meselesidir.\n\nBu şartları kabul etmenin ya da reddetmenin sonuçlarını dikkatlice değerlendirmeliyim."
+ agot_laughing_storm_rebellion.0021.desc.only_betrothal:0 "Şimdi yeniden sadakat yemini etmeyi teklif ediyor, ancak bağlılığı bir bedelle geliyor: Kraliyet tarafından sunulacak yeni bir nişan. Bu karar, hem diyarın onurunu hem de güçlü bir vasalın taleplerini dengeleme meselesidir.\n\nBu şartları kabul etmenin ya da reddetmenin sonuçlarını dikkatlice değerlendirmeliyim."
+ agot_laughing_storm_rebellion.0021.desc.none:0 "Şimdi hiçbir şart sunmadan yeniden sadakat yemini etmeyi teklif ediyor. Onun yemini diyara bir nebze huzur getirse de geçmişteki çekişmeler öyle kolay unutulmaz.\n\nŞimdilik diyar yeniden bir bütün halinde duruyor."
+ agot_laughing_storm_rebellion.0021.a:0 "Bu küstah talebi reddediyorum."
+ agot_laughing_storm_rebellion.0021.a.no_demand:0 "Bırakın barış hüküm sürsün."
+ agot_laughing_storm_rebellion.0021.b:0 "Bu teklif barışı sağlayabilir."
+ 
  #Lyonel Refused the marriage
  ### POV: Aegon V
  #### Option A: End of story
- agot_laughing_storm_rebellion.0022.t:0 "The Stag's Defiance"
- agot_laughing_storm_rebellion.0022.desc:0 "[lyonel.GetTitledFirstNamePossessive] response arrives swift and blunt — he refuses the match. No apology, no courtesy, only the ironclad will of a man who will not see his house bound to mine, not even in peace.\n\nHe lost the duel, yet in this, he stands unyielding. The storm will not be tamed so easily."
- agot_laughing_storm_rebellion.0022.a:0 "So be it."
- agot_laughing_storm_rebellion.0022.a.tt:0 "So it be."
-
+ agot_laughing_storm_rebellion.0022.t:0 "Geyik'in Direnişi"
+ agot_laughing_storm_rebellion.0022.desc:0 "[lyonel.GetTitledFirstNamePossessive]’in cevabı hızlı ve net geldi — bu evliliği reddetti. Ne bir özür, ne bir nezaket, sadece hanesinin benimle, hatta barış adına bile bağlanmasına izin vermeyecek demir gibi bir irade.\n\nDüelloyu kaybetti, ancak bu konuda geri adım atmıyor. Fırtına, öyle kolay dizginlenmeyecek."
+ agot_laughing_storm_rebellion.0022.a:0 "Öyle olsun."
+ agot_laughing_storm_rebellion.0022.a.tt:0 "Öyle olsun."
+ 
  #creating the alliance
  ### POV: Runceford Redwyne, Steffon Tully, Garlan Tyrell (only if their children are involved in Targaryen betrothal break ups)
  ### Lyonel offers alliance for the coming war
  #### Option A: Ally with Lyonel
  #### Option B: End of story
- agot_laughing_storm_rebellion.0023.t:0 "Call to Rebellion"
- agot_laughing_storm_rebellion.0023.desc:0 "The dishonor brought upon House [lyonel.GetHouse.GetBaseName] by [duncansmall.GetTitledFirstNameNicknamedPossessive] broken betrothal now fuels [lyonel.GetTitledFirstNameNicknamedPossessive] rebellion against the Iron Throne. [lyonel.GetTitledFirstNameNoTooltip] gathers his allies, seeking to fight for independence.\n\nMy child, too, suffered at the hands of the Targaryens, making it seem just to join [lyonel.GetFirstNameNoTooltip] in his struggle. Yet, I have always been loyal to the Iron Throne, and the consequences of rebellion weigh heavily. This is a momentous decision that will shape the future of our house."
- agot_laughing_storm_rebellion.0023.a:0 "We stand with 'the Laughing Storm.'"
- agot_laughing_storm_rebellion.0023.b:0 "We remain loyal to the Iron Throne."
-
+ agot_laughing_storm_rebellion.0023.t:0 "İsyan Çağrısı"
+ agot_laughing_storm_rebellion.0023.desc:0 "[duncansmall.GetTitledFirstNameNicknamedPossessive]’in bozulmuş nişanı, [lyonel.GetHouse.GetBaseName] Hanesi’nin onurunu lekelemiş ve şimdi [lyonel.GetTitledFirstNameNicknamedPossessive]’in Demir Taht’a karşı isyanını körüklüyor. [lyonel.GetTitledFirstNameNoTooltip] müttefiklerini topluyor ve bağımsızlık için savaşmaya hazırlanıyor.\n\nBenim çocuğum da Targaryenler’in elinde acı çekti, bu yüzden [lyonel.GetFirstNameNoTooltip]’in mücadelesine katılmak haklı bir karar gibi görünüyor. Ancak ben her zaman Demir Taht’a sadık oldum ve bir isyanın sonuçları ağır olabilir. Bu, hanemin geleceğini belirleyecek önemli bir karar."
+ agot_laughing_storm_rebellion.0023.a:0 "'Gülen Fırtına’nın' yanında duruyoruz."
+ agot_laughing_storm_rebellion.0023.b:0 "Demir Taht’a sadık kalıyoruz."
+ 
  #WAR
  ### POV: Lyonel
  ### War event (desc depends on who accepted the call)
  #### Option A: The war begins
- agot_laughing_storm_rebellion.0024.t:0 "The Storm Begins"
- agot_laughing_storm_rebellion.0024.garlan_steffon_runceford.desc:0 "The time has come. My army stands ready, banners flying high and hearts steeled for battle. With [runceford.GetTitledFirstName], [garlan.GetTitledFirstName], and [steffon.GetTitledFirstName] by my side, the call to war echoes across the Stormlands. The dishonor inflicted upon House [lyonel.GetHouse.GetBaseName] will be answered with the fury of a storm.\n\nWe march forth to reclaim our honor and independence, prepared to face whatever challenges lie ahead. Let the Iron Throne tremble, for the wrath of the storm is upon them."
- agot_laughing_storm_rebellion.0024.steffon_runceford.desc:0 "The time has come. My army stands ready, banners flying high and hearts steeled for battle. With [steffon.GetTitledFirstName] and [runceford.GetTitledFirstName] by my side, the call to war echoes across the Stormlands. The dishonor inflicted upon House [lyonel.GetHouse.GetBaseName] will be answered with the fury of a storm.\n\nWe march forth to reclaim our honor and independence, prepared to face whatever challenges lie ahead. Let the Iron Throne tremble, for the wrath of the storm is upon them."
- agot_laughing_storm_rebellion.0024.garlan_runceford.desc:0 "The time has come. My army stands ready, banners flying high and hearts steeled for battle. With [garlan.GetTitledFirstName] and [runceford.GetTitledFirstName] by my side, the call to war echoes across the Stormlands. The dishonor inflicted upon House [lyonel.GetHouse.GetBaseName] will be answered with the fury of a storm.\n\nWe march forth to reclaim our honor and independence, prepared to face whatever challenges lie ahead. Let the Iron Throne tremble, for the wrath of the storm is upon them."
- agot_laughing_storm_rebellion.0024.garlan_steffon.desc:0 "The time has come. My army stands ready, banners flying high and hearts steeled for battle. With [garlan.GetTitledFirstName] and [steffon.GetTitledFirstName] by my side, the call to war echoes across the Stormlands. The dishonor inflicted upon House [lyonel.GetHouse.GetBaseName] will be answered with the fury of a storm.\n\nWe march forth to reclaim our honor and independence, prepared to face whatever challenges lie ahead. Let the Iron Throne tremble, for the wrath of the storm is upon them."
- agot_laughing_storm_rebellion.0024.garlan.desc:0 "The time has come. My army stands ready, banners flying high and hearts steeled for battle. With [garlan.GetTitledFirstName] by my side, the call to war echoes across the Stormlands. The dishonor inflicted upon House [lyonel.GetHouse.GetBaseName] will be answered with the fury of a storm.\n\nWe march forth to reclaim our honor and independence, prepared to face whatever challenges lie ahead. Let the Iron Throne tremble, for the wrath of the storm is upon them."
- agot_laughing_storm_rebellion.0024.steffon.desc:0 "The time has come. My army stands ready, banners flying high and hearts steeled for battle. With [steffon.GetTitledFirstName] by my side, the call to war echoes across the Stormlands. The dishonor inflicted upon House [lyonel.GetHouse.GetBaseName] will be answered with the fury of a storm.\n\nWe march forth to reclaim our honor and independence, prepared to face whatever challenges lie ahead. Let the Iron Throne tremble, for the wrath of the storm is upon them."
- agot_laughing_storm_rebellion.0024.runceford.desc:0 "The time has come. My army stands ready, banners flying high and hearts steeled for battle. With [runceford.GetTitledFirstName] by my side, the call to war echoes across the Stormlands. The dishonor inflicted upon House [lyonel.GetHouse.GetBaseName] will be answered with the fury of a storm.\n\nWe march forth to reclaim our honor and independence, prepared to face whatever challenges lie ahead. Let the Iron Throne tremble, for the wrath of the storm is upon them."
- agot_laughing_storm_rebellion.0024.none.desc:0 "The time has come. My army stands ready, banners flying high and hearts steeled for battle. With loyal allies by my side, the call to war echoes across the Stormlands. The dishonor inflicted upon House [lyonel.GetHouse.GetBaseName] will be answered with the fury of a storm.\n\nWe march forth to reclaim our honor and independence, prepared to face whatever challenges lie ahead. Let the Iron Throne tremble, for the wrath of the storm is upon them."
- agot_laughing_storm_rebellion.0024.a:0 "To war!"
-
+ agot_laughing_storm_rebellion.0024.t:0 "Fırtına Başlıyor"
+ agot_laughing_storm_rebellion.0024.garlan_steffon_runceford.desc:0 "Zamanı geldi. Ordum hazır, sancaklar gökyüzüne yükselmiş ve yürekler çelik gibi sertleşmiş. Yanımda [runceford.GetTitledFirstName], [garlan.GetTitledFirstName] ve [steffon.GetTitledFirstName] varken, savaş çağrısı Fırtına Toprakları'nda yankılanıyor. House [lyonel.GetHouse.GetBaseName]’a yapılan hakaret, fırtınanın öfkesiyle yanıtlanacak.\n\nOnurumuzu ve bağımsızlığımızı geri almak için ilerliyoruz, önümüzde hangi zorluklar olursa olsun hazırız. Demir Taht titreyecek, çünkü fırtınanın gazabı onların üzerine çökecek."
+ agot_laughing_storm_rebellion.0024.steffon_runceford.desc:0 "Zamanı geldi. Ordum hazır, sancaklar gökyüzüne yükselmiş ve yürekler çelik gibi sertleşmiş. Yanımda [steffon.GetTitledFirstName] ve [runceford.GetTitledFirstName] varken, savaş çağrısı Fırtına Toprakları'nda yankılanıyor. House [lyonel.GetHouse.GetBaseName]’a yapılan hakaret, fırtınanın öfkesiyle yanıtlanacak.\n\nOnurumuzu ve bağımsızlığımızı geri almak için ilerliyoruz, önümüzde hangi zorluklar olursa olsun hazırız. Demir Taht titreyecek, çünkü fırtınanın gazabı onların üzerine çökecek."
+ agot_laughing_storm_rebellion.0024.garlan_runceford.desc:0 "Zamanı geldi. Ordum hazır, sancaklar gökyüzüne yükselmiş ve yürekler çelik gibi sertleşmiş. Yanımda [garlan.GetTitledFirstName] ve [runceford.GetTitledFirstName] varken, savaş çağrısı Fırtına Toprakları'nda yankılanıyor. House [lyonel.GetHouse.GetBaseName]’a yapılan hakaret, fırtınanın öfkesiyle yanıtlanacak.\n\nOnurumuzu ve bağımsızlığımızı geri almak için ilerliyoruz, önümüzde hangi zorluklar olursa olsun hazırız. Demir Taht titreyecek, çünkü fırtınanın gazabı onların üzerine çökecek."
+ agot_laughing_storm_rebellion.0024.garlan_steffon.desc:0 "Zamanı geldi. Ordum hazır, sancaklar gökyüzüne yükselmiş ve yürekler çelik gibi sertleşmiş. Yanımda [garlan.GetTitledFirstName] ve [steffon.GetTitledFirstName] varken, savaş çağrısı Fırtına Toprakları'nda yankılanıyor. House [lyonel.GetHouse.GetBaseName]’a yapılan hakaret, fırtınanın öfkesiyle yanıtlanacak.\n\nOnurumuzu ve bağımsızlığımızı geri almak için ilerliyoruz, önümüzde hangi zorluklar olursa olsun hazırız. Demir Taht titreyecek, çünkü fırtınanın gazabı onların üzerine çökecek."
+ agot_laughing_storm_rebellion.0024.garlan.desc:0 "Zamanı geldi. Ordum hazır, sancaklar gökyüzüne yükselmiş ve yürekler çelik gibi sertleşmiş. Yanımda [garlan.GetTitledFirstName] varken, savaş çağrısı Fırtına Toprakları'nda yankılanıyor. House [lyonel.GetHouse.GetBaseName]’a yapılan hakaret, fırtınanın öfkesiyle yanıtlanacak.\n\nOnurumuzu ve bağımsızlığımızı geri almak için ilerliyoruz, önümüzde hangi zorluklar olursa olsun hazırız. Demir Taht titreyecek, çünkü fırtınanın gazabı onların üzerine çökecek."
+ agot_laughing_storm_rebellion.0024.steffon.desc:0 "Zamanı geldi. Ordum hazır, sancaklar gökyüzüne yükselmiş ve yürekler çelik gibi sertleşmiş. Yanımda [steffon.GetTitledFirstName] varken, savaş çağrısı Fırtına Toprakları'nda yankılanıyor. House [lyonel.GetHouse.GetBaseName]’a yapılan hakaret, fırtınanın öfkesiyle yanıtlanacak.\n\nOnurumuzu ve bağımsızlığımızı geri almak için ilerliyoruz, önümüzde hangi zorluklar olursa olsun hazırız. Demir Taht titreyecek, çünkü fırtınanın gazabı onların üzerine çökecek."
+ agot_laughing_storm_rebellion.0024.runceford.desc:0 "Zamanı geldi. Ordum hazır, sancaklar gökyüzüne yükselmiş ve yürekler çelik gibi sertleşmiş. Yanımda [runceford.GetTitledFirstName] varken, savaş çağrısı Fırtına Toprakları'nda yankılanıyor. House [lyonel.GetHouse.GetBaseName]’a yapılan hakaret, fırtınanın öfkesiyle yanıtlanacak.\n\nOnurumuzu ve bağımsızlığımızı geri almak için ilerliyoruz, önümüzde hangi zorluklar olursa olsun hazırız. Demir Taht titreyecek, çünkü fırtınanın gazabı onların üzerine çökecek."
+ agot_laughing_storm_rebellion.0024.none.desc:0 "Zamanı geldi. Ordum hazır, sancaklar gökyüzüne yükselmiş ve yürekler çelik gibi sertleşmiş. Sadık müttefiklerim yanımda, savaş çağrısı Fırtına Toprakları'nda yankılanıyor. House [lyonel.GetHouse.GetBaseName]’a yapılan hakaret, fırtınanın öfkesiyle yanıtlanacak.\n\nOnurumuzu ve bağımsızlığımızı geri almak için ilerliyoruz, önümüzde hangi zorluklar olursa olsun hazırız. Demir Taht titreyecek, çünkü fırtınanın gazabı onların üzerine çökecek."
+ agot_laughing_storm_rebellion.0024.a:0 "Savaşa!"
+ 
  #Lyonel refused the trial
  ### POV: Aegon V
  ### Lyoned refused the trial
  #### Option A: Leads to war (Triggers: 0027)
  #### Option B: Grant him independence anyway (Triggers: 0026)
- agot_laughing_storm_rebellion.0025.t:0 "The King's Dilemma"
- agot_laughing_storm_rebellion.0025.desc:0 "[lyonel.GetTitledFirstName] has refused the trial by combat against [duncantall.GetTitledFirstName], a move I did not anticipate. This unexpected turn of events leaves me with a difficult decision.\n\nShould I grant him the independence he seeks, risking the precedent it sets for other lords, or should I enforce the consequences for his defiance, potentially plunging the realm into further conflict? The fate of the Stormlands and the stability of the Iron Throne hang in the balance."
- agot_laughing_storm_rebellion.0025.a:0 "He must face the consequences."
- agot_laughing_storm_rebellion.0025.b:0 "I should grant him independence."
+ agot_laughing_storm_rebellion.0025.t:0 "Kralın İkilemi"
+ agot_laughing_storm_rebellion.0025.desc:0 "[lyonel.GetTitledFirstName], [duncantall.GetTitledFirstName] ile düello yapmayı reddetti, bu hiç beklemediğim bir hamleydi. Bu beklenmedik gelişme beni zor bir karar ile karşı karşıya bırakıyor.\n\nOna arzuladığı bağımsızlığı vererek diğer lordlar için tehlikeli bir emsal mi oluşturmalıyım, yoksa isyanının sonuçlarını ona hissettirerek krallığı daha büyük bir savaşa mı sürüklemeliyim? Fırtına Toprakları'nın kaderi ve Demir Taht’ın istikrarı bu karara bağlı."
+ agot_laughing_storm_rebellion.0025.a:0 "Yaptıklarının bedelini ödemeli."
+ agot_laughing_storm_rebellion.0025.b:0 "Ona bağımsızlık vermeliyim."
 
  #The Storm King
  ### POV: Lyonel
  ### The Stormlands became independent
  #### Option A: Leads to end of story (Triggers: 0029)
- agot_laughing_storm_rebellion.0026.t:0 "The Storm King"
- agot_laughing_storm_rebellion.0026.desc:0 "Victory is ours. I have earned our independence, and the Stormlands shall once again rule autonomously, just as the Durrandons did before us. Our banners fly high, proclaiming our sovereignty and the restoration of our ancient rights.\n\nThe honor of House [lyonel.GetHouse.GetBaseName] is restored, and we stand ready to forge our own destiny, free from the yoke of the Iron Throne. Let all know that the Storm King reigns supreme."
- agot_laughing_storm_rebellion.0026.a:0 "Glory to the Stormlands!"
+ agot_laughing_storm_rebellion.0026.t:0 "Fırtına Kralı"
+ agot_laughing_storm_rebellion.0026.desc:0 "Zafer bizimdir. Bağımsızlığımızı kazandım ve Fırtına Toprakları, tıpkı bizden önce Durrandonlar gibi, yeniden özgürce hükmedecek. Sancaklarımız gökyüzünde dalgalanıyor, egemenliğimizi ve kadim haklarımızın geri kazanıldığını ilan ediyor.\n\nHouse [lyonel.GetHouse.GetBaseName]’in onuru geri kazanıldı ve biz, Demir Taht’ın boyunduruğundan kurtulmuş bir şekilde kendi kaderimizi belirlemeye hazırız. Bütün dünya bilsin ki Fırtına Kralı hüküm sürüyor!"
+ agot_laughing_storm_rebellion.0026.a:0 "Fırtına Toprakları'na zafer!"
 
  #The Early War
  ### POV: Lyonel
  ### Pre-War event
  #### Option A: Leads to war (Triggers: 0024)
- agot_laughing_storm_rebellion.0027.t:0 "The Gathering Storm"
- agot_laughing_storm_rebellion.0027.desc:0 "Having refused the trial by combat, I now stand on the brink of war. The tension is palpable, and the Stormlands prepare for the inevitable conflict. To secure our independence and defend our honor, I must seek out allies who will stand with us in the face of the Iron Throne's wrath.\n\nThe path ahead is fraught with danger, but with loyal supporters, we can weather any storm."
- agot_laughing_storm_rebellion.0027.a:0 "Rally the allies."
+ agot_laughing_storm_rebellion.0027.t:0 "Toplanan Fırtına"
+ agot_laughing_storm_rebellion.0027.desc:0 "Dövüşle yargılanmayı reddettikten sonra artık savaşın eşiğinde duruyorum. Gerilim hissedilir derecede artıyor ve Fırtına Toprakları kaçınılmaz çatışmaya hazırlanıyor. Bağımsızlığımızı güvence altına almak ve onurumuzu savunmak için, Demir Taht’ın gazabına karşı bizimle duracak müttefikler bulmalıyım.\n\nÖnümüzdeki yol tehlikelerle dolu, ancak sadık destekçilerle her fırtınaya karşı koyabiliriz."
+ agot_laughing_storm_rebellion.0027.a:0 "Müttefikleri toplayın."
 
  #Fin
  ### POV: Lyonel
  ### Everything goes back to normal (canon-ish timeline)
  #### Option A: Leads to end of story (Triggers: 0030)
- agot_laughing_storm_rebellion.0028.t:0 "Peace Restored"
- agot_laughing_storm_rebellion.0028.desc:0 "After a period of struggle, a new betrothal from the king has been arranged, and peace is once again within our grasp. The Stormlands can now look to the future with hope, our honor intact and our bonds with the Iron Throne mended.\n\nThis alliance promises stability and a renewed sense of unity, allowing us to focus on prosperity and the well-being of our people."
- agot_laughing_storm_rebellion.0028.desc.no_betrothal:0 "After a period of struggle peace is once again within our grasp. The Stormlands can now look to the future with hope, our honor intact and our bonds with the Iron Throne mended.\n\nThis alliance promises stability and a renewed sense of unity, allowing us to focus on prosperity and the well-being of our people."
- agot_laughing_storm_rebellion.0028.a:0 "We shall embrace this newfound peace."
+ agot_laughing_storm_rebellion.0028.t:0 "Barış Yeniden Sağlandı"
+ agot_laughing_storm_rebellion.0028.desc:0 "Mücadele dolu bir dönemin ardından, kral tarafından yeni bir nişan düzenlendi ve barış yeniden ulaşılabilir hale geldi. Fırtına Toprakları artık onurumuz yerinde ve Demir Taht ile bağlarımız düzelmiş şekilde geleceğe umutla bakabilir.\n\nBu ittifak, istikrar ve yeniden sağlanan birlik duygusu vaat ediyor, böylece halkımızın refahına ve huzuruna odaklanabiliriz."
+ agot_laughing_storm_rebellion.0028.desc.no_betrothal:0 "Mücadele dolu bir dönemin ardından barış yeniden ulaşılabilir hale geldi. Fırtına Toprakları artık onurumuz yerinde ve Demir Taht ile bağlarımız düzelmiş şekilde geleceğe umutla bakabilir.\n\nBu ittifak, istikrar ve yeniden sağlanan birlik duygusu vaat ediyor, böylece halkımızın refahına ve huzuruna odaklanabiliriz."
+ agot_laughing_storm_rebellion.0028.a:0 "Bu yeni bulunan barışı kucaklayacağız."
+
 
  #The Storm King
  ### POV: Everyone
  ### The Stormlands became independent
  #### Option A: End of story
- agot_laughing_storm_rebellion.0029.t:0 "The Storm King"
- agot_laughing_storm_rebellion.0029.desc:0 "Victory has been claimed by House [lyonel.GetHouse.GetBaseName] in their fight for independence. The Stormlands shall once again rule autonomously, just as the Durrandons did before them. Their banners now fly high, proclaiming their sovereignty and the restoration of their ancient rights.\n\nThe honor of House [lyonel.GetHouse.GetBaseName] has been restored, and they stand ready to forge their own destiny, free from the Iron Throne."
- agot_laughing_storm_rebellion.0029.a:0 "The Laughing Storm has the last laugh?"
+ agot_laughing_storm_rebellion.0029.t:0 "Fırtına Kralı"
+ agot_laughing_storm_rebellion.0029.desc:0 "Bağımsızlık mücadelesinde zafer, House [lyonel.GetHouse.GetBaseName] tarafından kazanıldı. Fırtına Toprakları, tıpkı Durrandonlar döneminde olduğu gibi yeniden bağımsız şekilde hüküm sürecek. Onların sancakları şimdi yükseklerde dalgalanıyor, egemenliklerini ve kadim haklarının geri kazanıldığını ilan ediyor.\n\nHouse [lyonel.GetHouse.GetBaseName]’in onuru yeniden sağlandı ve onlar, Demir Taht’ın boyunduruğundan kurtulmuş şekilde kendi kaderlerini şekillendirmeye hazırlar."
+ agot_laughing_storm_rebellion.0029.a:0 "Gülen Fırtına en son gülen mi olacak?"
 
  #Fin
  ### POV: Everyone
  ### Everything goes back to normal (canon-ish timeline)
  #### Option A: End of story
- agot_laughing_storm_rebellion.0030.t:0 "Peace Restored"
- agot_laughing_storm_rebellion.0030.desc:0 "After a period of struggle, a resolution has been reached, bringing stability back to the realm. The Stormlands must now look to the future, their recent turmoil a reminder of the high cost of conflict.\n\nWith peace restored, the realm can begin the process of healing. The focus now shifts to rebuilding and ensuring the well-being of all its people.\n\nLet this moment serve as a lesson in the importance of unity and the fragile nature of peace."
- agot_laughing_storm_rebellion.0030.a:0 "Let's hope the peace endures."
-
-
+ agot_laughing_storm_rebellion.0030.t:0 "Barış Yeniden Sağlandı"
+ agot_laughing_storm_rebellion.0030.desc:0 "Zorlu bir dönemin ardından bir çözüm bulundu ve krallığa yeniden istikrar getirildi. Fırtına Toprakları artık geleceğe bakmalı, yakın geçmişlerindeki çalkantılar çatışmanın yüksek bedelini hatırlatıyor.\n\nBarış yeniden sağlandığında, krallık iyileşme sürecine başlayabilir. Artık odak noktası, yeniden inşa etmek ve tüm halkın refahını sağlamak olmalıdır.\n\nBu an, birliğin önemine ve barışın ne kadar kırılgan olduğuna dair bir ders olarak hizmet etsin."
+ agot_laughing_storm_rebellion.0030.a:0 "Umarız bu barış uzun sürer."
+ 
  #Lyonel died
  ### POV: Everyone
  ### Lyonel died in the trial by combat
  #### Option A: End of story
- agot_laughing_storm_rebellion.0031.t:0 "The Storm's End"
- agot_laughing_storm_rebellion.0031.desc:0 "[lyonel.GetFullNameNicknamed] has met his end in the trial by combat against [duncantall.GetTitledFirstName]. His defiance and valor, once a formidable threat, are now silenced. The rebellion that threatened to tear the realm apart has been cut short with its leader fallen.\n\nThe cost of peace has been steep, and the echoes of this conflict will linger in the annals of history. With the Stormlands subdued, the realm can begin to heal, but the shadow of this event will loom over the Iron Throne for years to come."
- agot_laughing_storm_rebellion.0031.a:0 "He fought, he lost, and now he rests."
-
+ agot_laughing_storm_rebellion.0031.t:0 "Fırtına'nın Sonu"
+ agot_laughing_storm_rebellion.0031.desc:0 "[lyonel.GetFullNameNicknamed], [duncantall.GetTitledFirstName] ile yaptığı düelloda son nefesini verdi. Bir zamanlar büyük bir tehdit oluşturan meydan okuması ve cesareti artık sessiz kaldı. Krallığı parçalamakla tehdit eden isyan, liderinin düşmesiyle sona erdi.\n\nBarışın bedeli ağır oldu ve bu çatışmanın yankıları tarihin sayfalarında uzun süre yer alacak. Fırtına Toprakları bastırılmış olsa da, krallık iyileşmeye başlayabilir. Ancak bu olayın gölgesi Demir Taht’ın üzerinde yıllarca kalacaktır."
+ agot_laughing_storm_rebellion.0031.a:0 "Savaştı, kaybetti ve şimdi huzur buldu."
+ 
  #Lyonel's Demand refused
  ### POV: Lyonel
  ### Aegon refused Lyonel's demand of new betrothal and sending Duncan Small to the wall
  #### Option A: Escalating the situation
- agot_laughing_storm_rebellion.0032.t:0 "The Fury of the Storm"
- agot_laughing_storm_rebellion.0032.desc:0 "After besting [duncantall.GetTitledFirstName] in trial by combat, I demand justice from the king: his son, [duncansmall.GetTitledFirstNameNicknamed], sent to the Wall, and a new betrothal to bind our houses. Yet, the king has refused my rightful demands!\n\nThis affront is outrageous and intolerable. Now, there is no choice but to take up arms and fight for our independence.\n\nThe Stormlands will no longer bow to the Iron Throne. War is upon us, and we shall see our honor restored through victory."
- agot_laughing_storm_rebellion.0032.a:0 "He will rue the day he defied me."
- agot_laughing_storm_rebellion.0032.b:0 "Perhaps it would be wise to seek peace instead."
+ agot_laughing_storm_rebellion.0032.t:0 "Fırtına'nın Öfkesi"
+ agot_laughing_storm_rebellion.0032.desc:0 "[duncantall.GetTitledFirstName] ile yaptığım düelloda galip geldikten sonra, kraldan adalet talep ettim: Oğlu [duncansmall.GetTitledFirstNameNicknamed]'ın Duvar’a sürülmesi ve hanımlarımızı birbirine bağlayacak yeni bir nişan. Ancak kral, haklı taleplerimi reddetti!\n\nBu hakaret affedilemez ve kabul edilemez. Artık silaha sarılmaktan başka çaremiz yok.\n\nFırtına Toprakları artık Demir Taht’a boyun eğmeyecek. Savaş kapımızda ve onurumuzu zaferle geri alacağız."
+ agot_laughing_storm_rebellion.0032.a:0 "Beni karşısına aldığı güne lanet edecek."
+ agot_laughing_storm_rebellion.0032.b:0 "Belki de barış aramak daha akıllıca olur."
 
  #Reconquest
  ### POV: Jaehaerys, Daeron or Duncan Targaryen
  ### Triggers in the future for either Jaehaerys, Daeron or Duncan if they inherit the throne AND if any of The Stormlands LP title gained independent
  #### Option A: Declare reconquest war against The Stormlands
  #### Option A: No reconquest
- agot_laughing_storm_rebellion.0034.t:0 "The Dragon's Reckoning"
- agot_laughing_storm_rebellion.0034.desc:0 "The Stormlands, once bound to the Iron Throne, now stand apart, a kingdom forged in rebellion under [lyonel.GetNamePossessive] banner.\n\nMy father's reign saw the realm divided, a mistake I cannot let stand. The might of the Targaryens is not so easily broken, and the Stormlands are ours by right. War comes at a cost. Blood, gold, and lives — the choice I make now will echo through the ages."
- agot_laughing_storm_rebellion.0034.a:0 "I will take the Stormlands with fire and blood."
- agot_laughing_storm_rebellion.0034.b:0 "Let them have their freedom, for now."
-
+ agot_laughing_storm_rebellion.0034.t:0 "Ejderha'nın Hesaplaşması"
+ agot_laughing_storm_rebellion.0034.desc:0 "Bir zamanlar Demir Taht’a bağlı olan Fırtına Toprakları, artık [lyonel.GetNamePossessive] sancağı altında isyanla şekillenen bağımsız bir krallık haline geldi.\n\nBabamın yönetimi sırasında krallık bölündü ve bu hatanın sürmesine izin veremem. Targaryenlerin gücü öyle kolayca kırılmaz ve Fırtına Toprakları bizim hakkımızdır. Savaşın bedeli ağırdır: Kan, altın ve hayatlar—şimdi vereceğim karar, çağlar boyunca yankılanacak."
+ agot_laughing_storm_rebellion.0034.a:0 "Fırtına Topraklarını ateş ve kanla geri alacağım."
+ agot_laughing_storm_rebellion.0034.b:0 "Şimdilik özgür kalsınlar."
+ 
  #Realm Reconquest
  ### POV: Jaehaerys, Daeron or Duncan Targaryen
  ### Triggers in the future for either Jaehaerys, Daeron or Duncan if they inherit the throne AND if any of the LP titles gained independent
  #### Option A: Declare reconquest war against the next independent kingdom
  #### Option A: No reconquest
- agot_laughing_storm_rebellion.0037.t:0 "A Throne Divided"
- agot_laughing_storm_rebellion.0037.desc:0 "[reconquest_target_title.GetName], once bound to the Iron Throne, now stand as a defiant realm, their independence a bitter reminder of my father's failure. Every day they grow bolder, their wealth swelling, their power unchecked. The kingdom feels fractured, the throne lessened by their absence.\n\nThe weight of their rebellion gnaws at me, and I cannot abide it any longer. The Iron Throne must be whole, its dominion unquestioned. To leave [reconquest_target_title.GetNameNoTooltip] free is to leave our enemies with a weapon in their hands."
- agot_laughing_storm_rebellion.0037.a:0 "The Iron Throne must be whole. Prepare for war."
- agot_laughing_storm_rebellion.0037.b:0 "Perhaps now is not the time for war."
-
+ agot_laughing_storm_rebellion.0037.t:0 "Bölünmüş Bir Taht"
+ agot_laughing_storm_rebellion.0037.desc:0 "[reconquest_target_title.GetName], bir zamanlar Demir Taht’a bağlıydı, ancak artık inatçı bir krallık olarak bağımsızlıklarını ilan ettiler. Onların özgürlüğü, babamın başarısızlığının acı bir hatırlatıcısı. Her geçen gün daha da cesurlaşıyorlar, zenginlikleri artıyor, güçleri sınırsız hale geliyor. Krallık bölünmüş gibi hissediliyor, taht ise onların yokluğuyla eksilmiş durumda.\n\nBu isyanın yükü içimi kemiriyor ve artık buna daha fazla tahammül edemem. Demir Taht bir bütün olmalı, onun hâkimiyeti sorgulanamaz olmalıdır. [reconquest_target_title.GetNameNoTooltip]'un özgür bırakılması, düşmanlarımıza ellerine bir silah vermek demektir."
+ agot_laughing_storm_rebellion.0037.a:0 "Demir Taht bir bütün olmalı. Savaşa hazırlanın."
+ agot_laughing_storm_rebellion.0037.b:0 "Belki de şimdi savaş için doğru zaman değil."
+ 
  #Redwyne Independence
  ### POV: Redwyne
- agot_laughing_storm_rebellion.0038.t:0 "A Crown of Vine"
- agot_laughing_storm_rebellion.0038.desc:0 "For generations, the Arbor has bent the knee to lords greater in name, though never in worth. Our ships filled their coffers, our wine graced their tables, and yet we were but another branch upon their tree. No longer.\n\n[stormlands.GetNameNoTier] stand free of the dragon's rule, and so too does [arbor.GetNameNoTier]. Let the world know — I am no mere lord of vineyards and fleets, but a king in my own right. The Arbor bows to no master."
- agot_laughing_storm_rebellion.0038.a:0 "Let the Arbor rule itself, as it always should have."
-
+ agot_laughing_storm_rebellion.0038.t:0 "Asma Tacı"
+ agot_laughing_storm_rebellion.0038.desc:0 "Nesiller boyunca Arbor, adı büyük olan lordlara boyun eğdi, ancak hiçbir zaman değer bakımından onlardan aşağı olmadı. Gemilerimiz onların kasalarını doldurdu, şaraplarımız sofralarını süsledi, ama biz sadece onların ağacındaki bir başka dal olarak görüldük. Artık değil.\n\n[stormlands.GetNameNoTier] ejderhanın hükmünden kurtuldu, ve şimdi [arbor.GetNameNoTier] de aynı yolu izliyor. Dünya bilsin ki — ben yalnızca üzüm bağlarının ve filoların bir lordu değilim, kendi hakkıyla bir kralım. Arbor artık hiçbir efendiye boyun eğmeyecek."
+ agot_laughing_storm_rebellion.0038.a:0 "Arbor, her zaman olması gerektiği gibi, kendi kendini yönetecek."
+ 
  #Reach informed about PK Arbor
  ### POV: Reach
  #Option A: accept
  #Option B: inform Redwyne that Olenna will be execute if Redwyne won't swear fealty (active only if Olenna is at Reach court)
- agot_laughing_storm_rebellion.0039.t:0 "The Vine Breaks Free"
- agot_laughing_storm_rebellion.0039.desc:0 "For as long as men have remembered, [arbor.GetNameNoTierPossessive] wealth and fleets served [reach.GetNameNoTier], its lords sworn and bound as dutiful vassals.\n\nYet now, with the dragon cast aside and our own rule secured, they claim a crown of their own. [k_arbor_holder.GetTitledFirstNameNicknamed] styles [k_arbor_holder.GetHerselfHimself] a [Select_CString(k_arbor_holder.IsFemale,'queen','king')], his banners no longer ours to call."
- agot_laughing_storm_rebellion.0039.desc.olenna:0 "\n\n[olenna.GetTitledFirstName] lingers within my halls, a guest in name, a hostage in truth. [k_arbor_holder.GetTitledFirstNameNoTooltip] may call [k_arbor_holder.GetHerselfHimself] a [Select_CString(k_arbor_holder.IsFemale,'queen','king')], may claim the Arbor stands apart from the Reach, but blood is a stronger chain than pride."
- agot_laughing_storm_rebellion.0039.a:0 "The Reach stands alone."
- agot_laughing_storm_rebellion.0039.b:0 "Send word to the Arbor — [k_arbor_holder.GetHerHis] crown for her life."
-
+ agot_laughing_storm_rebellion.0039.t:0 "Asma Zincirlerini Kırıyor"
+ agot_laughing_storm_rebellion.0039.desc:0 "İnsanların hatırladığı sürece, [arbor.GetNameNoTierPossessive] zenginliği ve filoları [reach.GetNameNoTier]'e hizmet etti, lordları sadık ve bağlı vasallar olarak yemin etti.\n\nAncak şimdi, ejderha bir kenara atılmış ve kendi yönetimimiz sağlanmışken, onlar kendi tahtlarını talep ediyor. [k_arbor_holder.GetTitledFirstNameNicknamed], kendini bir [Select_CString(k_arbor_holder.IsFemale,'kraliçe','kral')] olarak adlandırıyor, bayrakları artık bizim çağırabileceğimiz bayraklar değil."
+ 
+ agot_laughing_storm_rebellion.0039.desc.olenna:0 "\n\n[olenna.GetTitledFirstName] benim salonlarımda kalıyor, adı konulmamış bir misafir, gerçekte ise bir rehine. [k_arbor_holder.GetTitledFirstNameNoTooltip] kendine bir [Select_CString(k_arbor_holder.IsFemale,'kraliçe','kral')] diyebilir, Arbor’un Reach’ten ayrıldığını iddia edebilir, ancak kan, gururdan daha güçlü bir bağdır."
+ 
+ agot_laughing_storm_rebellion.0039.a:0 "Reach yalnız başına kalıyor."
+ agot_laughing_storm_rebellion.0039.b:0 "Arbor’a haber gönderin — tacı, onun hayatı karşılığında."
+ 
  #Arbor: Reach Threat
  ### POV: Redwyne
  #Option A: swear fealty - Triggers 0041
  #Option B: don't swear fealty - Triggers 0042
- agot_laughing_storm_rebellion.0040.t:0 "The Price of a Crown"
- agot_laughing_storm_rebellion.0040.desc:0 "A message arrives with the weight of a sword at my throat. [olenna.GetTitledFirstName] is in [e_reach_holder.GetTitledFirstName] dungeons, a pawn in [e_reach_holder.GetHerHis] bid to break my crown before it can take root. [e_reach_holder.GetSheHe|U] offers a simple choice — swear fealty, bow as [arbor.GetNameNoTier] has always bowed, or watch [olenna.GetTitledFirstNameNoTooltip] suffer for my defiance.\n\nTo kneel is to undo all we have won. To refuse is to condemn my own blood. There is no right choice, only the one I must live with."
- agot_laughing_storm_rebellion.0040.a:0 "The Arbor bends — Olenna must live."
- agot_laughing_storm_rebellion.0040.b:0 "I am sorry, Olenna."
+ agot_laughing_storm_rebellion.0040.t:0 "Bir Tacın Bedeli"
+ agot_laughing_storm_rebellion.0040.desc:0 "Boğazımda bir kılıcın ağırlığını taşıyan bir mesaj ulaşıyor. [olenna.GetTitledFirstName], [e_reach_holder.GetTitledFirstName]'in zindanlarında, [e_reach_holder.GetHerHis] tacımı kök salmadan önce kırmak için oynadığı oyunun bir piyonu. [e_reach_holder.GetSheHe|U] basit bir seçim sunuyor — sadakat yemini et, [arbor.GetNameNoTier]'in her zaman eğildiği gibi eğil, ya da [olenna.GetTitledFirstNameNoTooltip]'ın benim isyanım yüzünden acı çekmesine tanık ol.\n\nDiz çökmek, kazandığımız her şeyi yok etmek demektir. Reddetmek ise kendi kanımı mahkum etmektir. Doğru bir seçim yok, sadece yaşamak zorunda olduğum bir karar var."
+ agot_laughing_storm_rebellion.0040.a:0 "Arbor eğilir — Olenna yaşamalı."
+ agot_laughing_storm_rebellion.0040.b:0 "Üzgünüm, Olenna."
+
 
  ##Arbor remains loyal
  ### POV: Reach
  #Option A: Olenna released, Redwyne vassalized
- agot_laughing_storm_rebellion.0041.t:0 "A Crown Cast Aside"
- agot_laughing_storm_rebellion.0041.desc:0 "[k_arbor_holder.GetTitledFirstName] has seen reason. [k_arbor_holder.GetHerHis|U] crown is cast aside, [k_arbor_holder.GetHerHis] banners lowered, and [arbor.GetNameNoTier] bends once more to [reach.GetNameNoTier]. A throne abandoned, a life reclaimed. A fair trade — or perhaps the only one [k_arbor_holder.GetSheHe] could make.\n\nWith [k_arbor_holder.GetHerHis] surrender, [olenna.GetTitledFirstNamePossessive] place in my dungeons serves no further purpose. The Arbor is mine once more, as it always should have been."
- agot_laughing_storm_rebellion.0041.a:0 "Release her — this matter is settled."
+ agot_laughing_storm_rebellion.0041.t:0 "Bir Kenara Atılan Taç"
+ agot_laughing_storm_rebellion.0041.desc:0 "[k_arbor_holder.GetTitledFirstName] mantıklı bir karar verdi. [k_arbor_holder.GetHerHis|U] tacı bir kenara atıldı, [k_arbor_holder.GetHerHis] sancakları indirildi ve [arbor.GetNameNoTier] tekrar [reach.GetNameNoTier]'e boyun eğdi. Bir taht terk edildi, bir hayat kurtarıldı. Adil bir anlaşma mı — yoksa [k_arbor_holder.GetSheHe]'in yapabileceği tek seçim mi?\n\n[k_arbor_holder.GetHerHis] teslimiyetiyle birlikte, [olenna.GetTitledFirstNamePossessive]'in benim zindanlarımda bulunmasının artık bir anlamı kalmadı. Arbor tekrar benim oldu, her zaman olması gerektiği gibi."
+ agot_laughing_storm_rebellion.0041.a:0 "Onu serbest bırakın — bu mesele kapanmıştır."
 
  ##Arbor remains independent
  ### POV: Reach
