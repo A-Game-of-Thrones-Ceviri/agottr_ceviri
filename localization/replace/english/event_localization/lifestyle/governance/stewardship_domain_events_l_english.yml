@@ -1,589 +1,589 @@
 ﻿l_english:
-  ################# 
-  # Normal Events # 
-  ################# 
-  
-  # Guild Dispute, by Sean Hughes 
- stewardship_domain.1041.t: "Lonca Anlaşmazlığı"
- stewardship_domain.1041.desc: "[guild_county.GetName]'daki hem Demirciler hem de Tüccarlar Loncaları benimle görüşmek üzere bir temsilci gönderdi. İki lonca, il içindeki ham demir ticareti konusunda bir çıkmaza girdi ve anlaşmazlıklarını çözmemi istiyorlar.\n\nHer temsilci, beni kendi taraflarına çekmek için loncalarıyla gizlice kazançlı bir anlaşma teklif etti."
- stewardship_domain.1041.a: "Eğer işbirliği yaparlarsa her ikisi de bundan faydalanabilir."
- stewardship_domain.1041.a.success: "İki loncanın birlikte çalışmasını sağlıyorum"
- stewardship_domain.1041.a.success.tt: "[guild_county.GetNameNoTier]'daki loncalar artık silah üretimini desteklemek için iş birliği yapıyor"
- stewardship_domain.1041.a.failure: "Loncaların anlaşmaya varmasını sağlayamıyorum"
- stewardship_domain.1041.a.failure.tt: "[guild_county.GetNameNoTier]'daki loncalar demir üretiminin nasıl yapılacağı konusunda anlaşamadı"
- stewardship_domain.1041.b: "İyi demiri kötü demirden ancak demirciler ayırt edebilir..."
- stewardship_domain.1041.b.flavor: "...ve Demirciler Loncası askerlerime bedava silah verecek!"
- stewardship_domain.1041.c: "Ticaret açıkça tüccarların alanıdır..."
- stewardship_domain.1041.c.flavor: "...ve Tüccarlar Loncası bana kârlarının bir kısmını ödeyecek!"
- stewardship_domain.1041.d: "[guild_county.GetNameNoTierNoTooltip] #EMP benimdir#!! Ticaretini sadece ben kontrol ediyorum!"
-  
-  # Domineering Guild, by Sean Hughes 
- stewardship_domain.1042.t: "Egemen Lonca"
- stewardship_domain.1042.desc: "[guild_county.GetName]'deki [guild_county.Custom('Governance_1041_GuildType')], oradaki demir satışını sıkı bir şekilde kontrol altına aldı.\n\nŞimdi güçlerini kullanarak mallarına fahiş fiyatlar koyuyorlar, loncanın yöneticilerini zenginleştiriyorlar ama ticareti kontlukden uzaklaştırıyorlar."
- stewardship_domain.1042.a: "Onlarla pazarlık yaparak fiyatlarını düşürün."
- stewardship_domain.1042.a.success: "Fiyatlarını düşürmek için [guild_county.Custom('Governance_1041_GuildType')] alıyorum"
- stewardship_domain.1042.a.failure: "[guild_county.Custom('Governance_1041_GuildType')] fiyatlarını düşürmeyi reddediyor"
- stewardship_domain.1042.b: "Yeter ki bana gerekli vergiyi ödesinler..."
- stewardship_domain.1042.c: "Adil oynamazlarsa hiç oynamazlar!"
-  
-  # Granary Infestation, by Sean Hughes 
- stewardship_domain.1052.t: "Ambar istilası"
- stewardship_domain.1052.desc: "[target_county.GetName]'daki birkaç ambarı haşere istila etti ve içlerinde depolanan tohum tahıllarını yok etti. Gelecek yılın mahsulleri için ekecek hiçbir şeyleri olmayan orada yaşayan özgür kiracılar bana yardım istemek için geldiler.\n\nBu çiftçiler, içinde bulundukları vahim durum göz önüne alındığında, sonunda onlara sunduğum şartları kabul etmek zorunda kalacaklar."
- stewardship_domain.1052.a: "Benim bol miktarda tahılım var, eğer onlar benim kölem olurlarsa..."
- stewardship_domain.1052.b: "Onlara acıyın ve zahire depolarımı açın."
- stewardship_domain.1052.c: "[ROOT.Char.Custom('DefaultPriestTitlePlural')]'a onlara sadaka vermesini emret."
- stewardship_domain.1052.d: "[ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('almoner'))]'ım onlara tahıl dağıtacak."
-  
-  # Corrupt Tax Collector, by Sean Hughes 
- stewardship_domain.1053.t: "Yolsuz Vergi Tahsildarı"
- stewardship_domain.1053.desc: "[target_county.GetNameNoTier] için vergi kayıtlarında çeşitli tutarsızlıklar ve eksiklikler fark ettim. Bu hataların basit hatalar olamayacağı açık — birileri para zimmete geçirmiş!\n\nNe yazık ki, bu gizemli suçlunun izi o kadar düzensiz ki, tam olarak hangi vergi tahsildarının sorumlu olduğunu belirlemem zor."
- stewardship_domain.1053.a: "Konuyu gizlice araştırın..."
- stewardship_domain.1053.a.success: "Suçluyu bulup adalete teslim ediyorum"
- stewardship_domain.1053.a.failure: "Suçlu hala benden kaçıyor"
- stewardship_domain.1053.c: "[target_county.GetNameNoTierNoTooltip]'da vergilendirme üzerinde doğrudan kontrol sahibi olun."
- stewardship_domain.1053.d: "Birçoğunu infaz edin ve yeni koleksiyoncular getirin!"
-  
-  # Culture Clash, by Sean Hughes 
- stewardship_domain.1073.t: "Kültür çatışması"
-  #AGOT Modified 
- #stewardship_domain.1073.desc: "[target_county.GetName]'da yaşayan halkın çoğu [target_ruler.GetCulture.GetName] soyundan geliyor. Geleneklerinden gurur duyuyorlar ve komşum [target_ruler.GetTitledFirstName] kendi kültür ve tarihlerini paylaştığında benim gibi bir yabancıya hizmet etmek zorunda olmaları onlara pek yakışmıyor."
- stewardship_domain.1073.desc: "[target_county.GetName]'da yaşayan halkın çoğu [new_culture.GetName] soyundan geliyor. Geleneklerinden gurur duyuyorlar ve komşum [target_ruler.GetTitledFirstName] kendi kültür ve tarihlerini paylaştığında benim gibi bir yabancıya hizmet etmek zorunda olmaları onlara pek yakışmıyor."
-  #AGOT Modified 
- #stewardship_domain.1073.a: "Onlara [me.GetCulture.GetNameNoTooltip] kültürünün üstünlüğünü öğretin!"
- stewardship_domain.1073.a: "Onlara [new_culture.GetNameNoTooltip] kültürünün üstünlüğünü öğretin!"
-  #AGOT Modified 
- #stewardship_domain.1073.a.success: "Halk [me.GetCulture.GetNameNoTooltip] adetini benimsiyor"
- stewardship_domain.1073.a.success: "Halk [new_culture.GetNameNoTooltip] adetini benimsiyor"
- stewardship_domain.1073.a.failure: "Halk uygar olmayı reddediyor"
- stewardship_domain.1073.c: "Tuhaf geleneklerini sürdürmeleri umurumda değil."
- stewardship_domain.1073.c.warning: "Kültür Hızını Teşvik Et: #N -75%#!"
- stewardship_domain.1073.d: "Köylünün duygularının bir önemi yok, ben onların hükümdarıyım."
-  
-  # Reduce revolt risk by being diligent, by Linnéa Thimrén 
- stewardship_domain.5031.t: "İhtiyaç Sahibi Bir Kontlkuk"
- stewardship_domain.5031.desc: "Bunlar [county.GetName] için çalkantılı zamanlar. Bölgedeki vahim durumları ayrıntılarıyla anlatan raporlar geliyor ve köylüler #EMP alternatif#! çözümler hakkında mırıldanmaya başlıyor..."
- stewardship_domain.5031.a: "Sorunları kişisel olarak ele alın."
- stewardship_domain.5031.b: "Ceza olarak vergiyi artırın."
-  
-  # Marshland Clearing, by Petter Vilberg 
- stewardship_domain.6001.t: "Drenaj"
- stewardship_domain.6001.desc: "Birkaç ay önce [baron.GetTitledFirstName], [barony.GetNameNoTier]'de yerleşim için bataklıkları temizlemek için ayrıntılı bir çaba başlattı. Ağır pulluklar ve taze hendekler zemini sağlamlaştırıyor, ancak yavaş bir iş.\n\n[baron.GetFirstName] şimdi [steward.GetCouncilTitle]'e [baron.GetHerHis] vergilerinin azaltılmasını talep etmek için yazdı. Bir sonraki hasattan önce işleri tamamlamak için endişeli olan [baron.GetSheHe], bunun yerine işgücü için asker toplamayı umuyor."
- stewardship_domain.6001.a: "İhtiyacınız olan tüm halkı alın, [baron.GetFirstNameNoTooltip]!"
- stewardship_domain.6001.b: "[county.GetNameNoTier]'ın tamamı buna ihtiyaç duyabilir."
- stewardship_domain.6001.c: "Hayır, bu yıl savaş meydanlarında çok sayıda cana ihtiyaç olacak!"
-  
-  # Forest Clearing, by Petter Vilberg 
- stewardship_domain.6002.t: "Temizleme"
- stewardship_domain.6002.desc: "Birkaç ay önce [baron.GetTitledFirstName], yerleşime hazırlanmak için [barony.GetNameNoTier] ormanlarındaki araziyi temizlemeye başladı. Ağaçlar kökünden söküldü, yollar kesildi ve toprak süpürüldü.\n\n[baron.GetFirstName] şimdi [steward.GetCouncilTitle] [steward.GetFirstName] yazdı ve [baron.GetHerHis] vergilerinin azaltılmasını talep etti. Bir sonraki hasattan önce işleri tamamlamak için endişelenen [baron.GetSheHe], bunun yerine iş gücü için asker toplamayı umuyor."
-  
-  # Haggle with Masons, by Petter Vilberg 
- stewardship_domain.6011.t: "Masonik İşlemler"
- stewardship_domain.6011.desc: "[county.GetName]'da bir taş ustaları loncası kuruldu. Kişisel hizmetimde özel zanaatkarların olması bölgenin gelişmesine yardımcı olabilir."
- stewardship_domain.6011.a: "Baş duvarcıyla bir anlaşma yapacağım."
- stewardship_domain_6011_great_deal: "Harika bir anlaşma"
- stewardship_domain.6011.offer_tt: "Bana teklif edilen:"
- stewardship_domain_6011_fair_deal: "Adil Bir Anlaşma"
- stewardship_domain_6011_bad_deal: "Talihsiz Bir Anlaşma"
- stewardship_domain.6011.b: "[steward.GetTitledFirstNameNoTooltip], onların sadakatini kazan!"
- stewardship_domain.6011.c: "Serflerim varken neden onların yardımına ihtiyacım olsun ki?"
-  
- stewardship_domain.6012.desc: "Masonların lideri, lonca adına herhangi bir anlaşma yapmaya isteksiz görünüyordu, ta ki ben bunun ikimiz için de ne kadar faydalı olacağını tam olarak belirtene kadar."
- stewardship_domain.6012.a: "Şiddet tehditlerine bile başvurmak zorunda kalmadım!"
-  
- stewardship_domain.6013.desc: "Uzun bir görüşmeden sonra baş duvarcı daha fazla geri adım atmaz.\n\n"Bundan daha düşük bir fiyata bu iş yapılamaz.""
- stewardship_domain.6013.a: ""O zaman anlaştık.""
- stewardship_domain.6013.b: "Elbette başka bir yerde daha ucuz ustalar bulabilirim."
-  
- stewardship_domain.6014.desc: ""Bana ve tüm mesleğime hakaret ediyorsun, [ROOT.Char.GetLadyLord]'ım!" Baş duvarcı, yapmaya istekli olduğum tekliflerden hiç memnun değil. "Aslında fiyatlar artıyor. Elbette sadece işçilik maliyeti. [ROOT.Char.GetTitleTierName]'in anlayacağından eminim.""
- stewardship_domain.6014.a: ""Çok iyi anlıyorum.""
- stewardship_domain.6014.b: "[county.GetTierAsNameNoTooltip|l] bana hizmet ediyor ve loncalar da bana hizmet edecek!"
-  
- stewardship_domain.6015.desc: "Baş duvarcı benim [steward.GetCouncilTitle] [steward.GetTitledFirstName]'imin arkadaşlığından keyif almış olmalı, çünkü [steward.GetSheHe], duvarcılardan benim taleplerimi bile aşan bir anlaşmayla geri döndü."
- stewardship_domain.6015.a: "Ben kendim bundan daha iyi pazarlık yapamazdım herhalde!"
-  
- stewardship_domain.6016.desc: "[steward.GetTitledFirstName], masonlar loncasından bir teklifle bana geri döndü.\n\n"Kayıtlarını inceledim efendim. Daha iyi bir anlaşma yapılabileceğine inanmıyorum.""
- stewardship_domain.6016.a: "Bu kulağa çok hoş geliyor."
- stewardship_domain.6016.b: "O zaman sana [steward.GetFirstNameNoTooltip] göndermekle aptallık ettim!"
-  
- stewardship_domain.6017.desc: ""Görüşmeler... tamamen planlandığı gibi gitmedi efendim." [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('steward'))]'ım özür diler gibi duyuluyor. "Ancak, mason loncası benimle daha fazla konuşmayı reddetse bile bir teklifim var.""
- stewardship_domain.6017.a: "Kullarımın neler başardığını kabul etmem gerekiyor."
- stewardship_domain.6017.b: "O zaman ben onlarla konuşayım! Ben onlara emir vereyim!"
-  
-  
-  ################## 
-  # Special Events # 
-  ################## 
-  
-  # Bad harvest, by Linnéa Thimrén and Sean Hughes 
- stewardship_domain_special.1001.t: "[development_county.GetNameNoTier|U]'da Hasat"
- stewardship_domain_special.1001.desc: "Bunlar zor zamanlar ve [county_holder.Custom2('MyCharacterIntroduction', ROOT.Char)]'daki [development_county.GetNameNoTier] toprakları çoğundan daha fazla acı çekti.\n\nBana kötü hasadı ayrıntılarıyla anlatan raporlar getiriliyor ve bu yıl onlardan vergi payımı alıp alamayacağımı merak etmeye başlıyorum..."
- stewardship_domain_special.1001.a: "Kontlkuknin sorunlarını araştırın."
- stewardship_domain_special.1001.a.tt: "[development_county.GetNameNoTier]'ın kaderi benim ellerimde olacak..."
- stewardship_domain_special.1001.b: "Hakkım olanı zorla alın!"
- stewardship_domain_special.1001.c: "Bu [county_holder.GetFirstNamePossessiveNoTooltip] sorumluluğundadır, benim değil."
-  
- stewardship_domain_special.1002.desc: "Görünüşe göre [development_county.GetName] talihsizliğini kısmen kötü yönetimden almış. Arazi gerektiği gibi temizlenmedi, tohumlar mevsimi dışında ekildi ve meralar aşırı otlatıldı."
- stewardship_domain_special.1002.desc.repentant: "\n\nPişman bir [county_holder.GetTitledFirstName] önümde duruyor, [county_holder.GetHerHis] ellerini sıkıyor. "Lütfen [ROOT.Char.Custom2('RelationToMeAddress', county_holder)], bana bir şans daha ver! Bunu düzeltebilirim, yemin ederim!""
- stewardship_domain_special.1002.desc.uncaring: "\n\nSıkılmış görünen bir [county_holder.GetTitledFirstName] önümde duruyor, umursamaz görünüyor. "Köylüler sonunda bunu çözecekler. Her zaman yaparlar. Bu onların işi, değil mi?""
- stewardship_domain_special.1002.desc.blaming: "\n\nÖnümde sinirli bir [county_holder.GetTitledFirstName] duruyor, açıkça stresli. "Bu köylüler bunu nasıl bu kadar kötü becerebildiler? Onlar toprak kazıcıları! Tek yaptıkları bu!""
-  
- stewardship_domain_special.1002.a: "Bunun sorumluluğunu sana yüklüyorum, [county_holder.GetFirstNameNoTooltip]."
- stewardship_domain_special.1002.a.success: "[county_holder.GetTitledFirstName] ve ben [county_holder.GetHerHis] hatalarından ders çıkarıyoruz"
- stewardship_domain_special.1002.a.failure: "[county_holder.GetTitledFirstName], [development_county.GetNameNoTier]'deki sorunları çözemiyor"
- stewardship_domain_special.1002.b: "Bunu şahsen düzelteceğim, ne gerekiyorsa yapacağım!"
- stewardship_domain_special.1002.b.success: "[development_county.GetNameNoTier]'daki sorunları başarıyla çözdüm"
- stewardship_domain_special.1002.b.failure: "[development_county.GetNameNoTier]'daki sorunları çözemedim"
- stewardship_domain_special.1002.c: "[development_county.GetNameNoTierNoTooltip] üzerindeki hakkınızı kaybettiniz!"
- stewardship_domain_special.1002.c.tt: "[county_holder.GetTitledFirstName]'den [development_county.GetName]'ı alıyorum"
-  
- stewardship_domain_special.1003.desc: ""Bana inandığın için teşekkür ederim, [ROOT.Char.Custom2('RelationToMeAddress', county_holder)]!"\n\n[county_holder.Custom2('MyCharacterIntroduction', ROOT.Char)|U] krizi çözmeyi başardı [county_holder.GetSheHe] bulundu [county_holder.GetHerselfHimself] içinde. Bazen en iyi hareket tarzı başkalarının becerilerine güvenmek ve sonra onlardan öğrenmektir!"
- stewardship_domain_special.1003.a: "Bunu nasıl yaptığını bana anlat!"
-  
- stewardship_domain_special.1004.desc: "[development_county.GetName]'dan gelen raporlar giderek daha da feci bir hal alıyor ve kısa süre sonra [county_holder.GetTitledFirstName]'in durumu daha da kötüleştirdiği ortaya çıkıyor."
- stewardship_domain_special.1004.a: "[county_holder.GetSheHe] nasıl bir [county_holder.GetTitleTierName]'dır?!"
-  
- stewardship_domain_special.1005.desc: "[development_county.GetName]'ın benim rehberliğim altında geliştiğini gördüğümde başardığım şeyle gurur duymaktan kendimi alamıyorum. Zaman zaman daha az yöneticilikle uğraşmak öğrenmek için iyi bir yoldur!"
- stewardship_domain_special.1005.a: "Bu bilgi gerçekten işinize yarayacak!"
-  
- stewardship_domain_special.1006.desc: "Ne denersem deneyeyim [development_county.GetName] bir rahatlama bulamıyor. Eskisi kadar kötü durumda değil ama önümde kalan görevleri nasıl çözeceğimi bilemiyorum."
- stewardship_domain_special.1006.a: "Her zaman başarılı olamıyorum..."
-  
-  # Charter fair, by Linnéa Thimrén 
- stewardship_domain_special.1101.t: "Adil [county.GetNameNoTierNoTooltip|U]"
- stewardship_domain_special.1101.desc: "[county.GetName]'da büyük bir yıllık fuar için mükemmel olabilecek bir alan bulunuyor.\n\nİki yerel soylu, [local_baron.GetTitledFirstName] ve [second_local_baron.GetTitledFirstName], fuarı benim adıma düzenlemelerine izin verecek tüzüğün alıcısı olmam için benden dilekçe veriyor."
- stewardship_domain_special.1101.a: "[second_barony.Custom('BaronyTownType')]'a [second_barony.GetNameNoTierNoTooltip]'de tüzük verilecektir."
- stewardship_domain_special.1101.all_goes_well: "Eğer her şey iyi giderse:"
- stewardship_domain_special.1101.b: "[barony.GetNameNoTierNoTooltip] içindeki [local_baron.GetFaith.HouseOfWorship]'a tüzük verilecektir."
- stewardship_domain_special.1101.c: "Tarlayı otlatmak için kullanın."
-  
- stewardship_domain_special.1102.desc: "[second_local_baron.GetTitledFirstName] bana dünyanın dört bir yanından ürünler sunuyor; İpek Yolu'nun en uzak noktalarından gelen kumaşlar, yerel olarak yetiştirilen ürünler, doğudan gelen teknolojik harikalar...\n\n"Sevgili [ROOT.Char.GetLadyLord], yeni fuarda hangi ürünleri tanıtmalıyız?""
- stewardship_domain_special.1102.a: "Mümkün olduğu kadar çok ipek ithal edeceğiz!"
- stewardship_domain_special.1102.a.tt: "Bölge istikrarlı ve müreffeh ise, insanların bunu takdir etme olasılığı daha yüksektir"
- stewardship_domain_special.1102.b: "Yerel olarak yetiştirilen ürünlere odaklanacağız!"
- stewardship_domain_special.1102.b.tt: "Bölge karışıklık içindeyse, insanlar bunu daha çok takdir edebilirler"
- stewardship_domain_special.1102.c: "Teknolojik harikalar ön planda olacak!"
- stewardship_domain_special.1102.c.tt: "Bölgedeki gelişme düzeyi düşükse, insanların bunu takdir etme olasılığı daha yüksektir"
-  
- stewardship_domain_special.1103.desc_silk: "Zengin halkı pazara çekmek için kaliteli ipekler [county.GetNameNoTier]'da, köylüler de çok geride kalmadı — kutlama ve ticaret dolu bir hafta oldu!"
- stewardship_domain_special.1103.desc_crops: "Köylüleri pazara çekecek bol miktarda yiyecek ve tüm tezgahlardaki birinci sınıf ürünler onları tekrar gelmeye teşvik etti; kutlama ve ticaret dolu bir hafta oldu!"
- stewardship_domain_special.1103.desc_technology: "İnsanları büyüleyen teknolojik harikalar ve tüm tezgahlarda birinci sınıf ürünlerle dolu bir kutlama ve ticaret haftası yaşandı!"
- stewardship_domain_special.1103.a: "Bundan sonra her yıl bunu yapmana izin veriyorum."
-  
- stewardship_domain_special.1104.desc_silk: ""Benim [ROOT.Char.GetLadyLord], bütün bu ipeği ne yapacağız?"\n\nGörünüşe göre, bölgede ipeğe olan talep yüksek değilmiş ve [second_local_baron.GetTitledFirstName]'in elinde satılmamış pahalı kumaşlar kalmış."
- stewardship_domain_special.1104.desc_crops: ""Benim [ROOT.Char.GetLadyLord], ürünler bayatlıyor ve küfleniyor, bunlarla ne yapacağız?"\n\nGörünüşe göre, bölgede yerel ürünlere olan talep yüksek değilmiş ve [second_local_baron.GetTitledFirstName]'in elinde bunların çoğu satılmamış."
- stewardship_domain_special.1104.desc_technology: ""Benim [ROOT.Char.GetLadyLord], bu biblolarla ne yapacağız?"\n\nGörünüşe göre, bölgede harika teknolojiye olan talep yüksek değilmiş ve [second_local_baron.GetTitledFirstName] bunların çoğunu satamamış durumda."
- stewardship_domain_special.1104.a: "Çalkantılı bir başlangıç ​​oldu ama eminim ki yerel halk artık bunun üstesinden gelebilir!"
-  
- stewardship_domain_special.1105.desc: "[local_baron.GetTitledFirstName] bana dünyanın dört bir yanından eşyalar sunuyor; kutsal şehirlerden dini nesneler, bölgedeki [local_baron.GetFaith.DevoteeMalePlural] ve [local_baron.GetFaith.DevoteeFemalePlural] tarafından yetiştirilen yiyecekler, yabancı dinlerden harikalar...\n\n"Sevgili [ROOT.Char.GetLadyLord], yeni fuarda hangi eşyaları tanıtmalıyız?""
- stewardship_domain_special.1105.a: "Dini objelere odaklanarak yerel evliyaları onurlandıracağız!"
- stewardship_domain_special.1105.a.tt: "İnsanlar dini coşkuları güçlüyse bunu daha çok takdir ederler."
- stewardship_domain_special.1105.b: "Mümkün olduğunca çok yiyecek getirin!"
- stewardship_domain_special.1105.b.tt: "Bölgenin desteğe ihtiyacı varsa, insanlar bunu daha çok takdir edecektir."
- stewardship_domain_special.1105.c: "Başka dinleri öne çıkarırsak yeniliklerini kaybederler!"
- stewardship_domain_special.1105.c.tt: "İnsanlar dini coşkuları zayıfsa bunu daha çok takdir ederler"
-  
- stewardship_domain_special.1106.desc_religious_objects: "Kutsal şehirlerden gelen dini objeler insanları büyüleyip büyüledi, tüm tezgahlarda birinci sınıf ürünler vardı; dindar kutlama ve ticaretle dolu bir hafta oldu!"
- stewardship_domain_special.1106.desc_religious_food: "Bölgedeki [local_baron.GetFaith.DevoteeMalePlural] ve [local_baron.GetFaith.DevoteeFemalePlural] tarafından sağlanan yiyecekler fuardaki neredeyse her şeyden daha iyi satıldı - bu, dindar bir kutlama ve ticaret haftasıydı!"
- stewardship_domain_special.1106.desc_religious_other: "Yabancı dinlerle karşı karşıya kalan [county.GetNameNoTier] halkı her zamankinden daha fazla dua etti ve topluluklarına daha fazla değer verdi; bu, dindar kutlamaların ve ticaretin olduğu bir hafta oldu!"
- stewardship_domain_special.1106.a: "Bundan sonra her yıl bunu yapmana izin veriyorum."
-  
- stewardship_domain_special.1107.desc_religious_objects: ""Benim [ROOT.Char.GetLadyLord]'ım, bu kutsal biblolarla ne yapacağız?"\n\nGörünüşe göre, kutsal nesneler dindarların ilgisini umduğum kadar çekmemiş ve [local_baron.GetTitledFirstName]'in elinde satılmamış çok şey kalmış."
- stewardship_domain_special.1107.desc_religious_food: ""Benim [ROOT.Char.GetLadyLord]'ım, bütün bu yiyeceklerle ne yapacağız?"\n\nGörünüşe göre, bölgedeki [local_baron.GetFaith.DevoteeMalePlural] ve [local_baron.GetFaith.DevoteeFemalePlural]'nin hazırladığı yemekler ilahi bir müdahaleden faydalanmış olmalı - neredeyse hiçbir şey satılmadı."
- stewardship_domain_special.1107.desc_religious_other: ""Benim [ROOT.Char.GetLadyLord], bu küfür dolu biblolarla ne yapacağız?"\n\nYabancı eşyalar sadece insanları itti — onları pazara gitmekten caydırdı. [local_baron.GetTitledFirstName] kısa süre sonra onları yakması talimatını alır, ancak zarar çoktan verilmiştir."
- stewardship_domain_special.1107.a: "Çalkantılı bir başlangıç ​​oldu ama eminim ki yerel halk artık bunun üstesinden gelebilir!"
-  
-  
-  # Building a Road chain, by Petter Vilberg 
- stewardship_domain_special.1301.increase_road_progress_1: "#V Yol İlerlemesi#! #P 1#! oranında artar"
- stewardship_domain_special.1301.increase_road_progress_2: "#V Yol İlerlemesi#! #P 2#! oranında artar"
- stewardship_domain_special.1301.increase_road_quality_1: "#V Yol Kalitesi#! #P 1#! oranında artar"
- stewardship_domain_special.1301.increase_road_quality_2: "#V Yol Kalitesi#! #P 2#! oranında artar"
- stewardship_domain_special.1301.decrease_road_quality_1: "#V Yol Kalitesi#! #N 1#! azalır"
-  
- stewardship_domain_special.1301.t: "Yol"
- stewardship_domain_special.1301.steward_opening: "Kâhyam [steward.GetTitledFirstName] bana bildiriyor"
- stewardship_domain_special.1301.no_steward_opening: "Belediye başkanlarım bana bilgi veriyor"
- stewardship_domain_special.1301.desc: "[project_county.GetName]'ı geçmek için yeni bir yola acil ihtiyaç duyulduğu. Eski yolların çoğu harap ve hatta tehlikeli!\n\n[peasant_leader.GetTitledFirstName] adında bir halktan biri, inşaat çabasının doğal lideri olarak öne sürüldü."
- stewardship_domain_special.1301.a: "Yapıldığını görün."
- stewardship_domain_special.1301.a.peasant_leader_tt: "Proje, [peasant_leader.GetTitledFirstName] tarafından denetlenerek başlıyor"
- stewardship_domain_special.1301.b: "Bu işi kâhyam halledecek."
- stewardship_domain_special.1301.a.steward_tt: "Proje, [steward.GetTitledFirstName] tarafından denetlenerek başlıyor"
- stewardship_domain_special.1301.c: "Atalarımıza o yollar yeterdi!"
- stewardship_domain_special.1301.c.tt: "Onlar bizim için de yeterince iyiler!"
-  
-  
- stewardship_domain_special.1311.t: "Yol: Uzak Bir Derebeylik"
- stewardship_domain_special.1311.desc: "[project_county.GetNameNoTier]'daki yol üzerindeki çalışmalar ilerliyor, ancak şu anda hazırlanmakta olan arazi parçası, her iki taraftaki köylerden çok uzakta, bir tepenin ötesine uzanıyor.\n\nHer iki köy de işçi sağlama konusunda isteksiz ve tepenin ötesindeki arazinin kime ait olduğu konusunda bile belirsizlik var!"
- stewardship_domain_special.1311.a: "Daha sonra her iki köyden de işçi alıyoruz."
- stewardship_domain_special.1311.b: "Oradaki işin parasını kendim ödeyeceğim."
- stewardship_domain_special.1311.c: "Belirsizlik varsa, derebeylik bana döner!"
-  
- stewardship_domain_special.1312.t: "Yol: Düzenli Kullanım"
- stewardship_domain_special.1312.desc: "Henüz tamamlanmamış olmasına rağmen, tüccarlar [project_county.GetNameNoTier]'da yeni yol boyunca seyahat etmeye başladılar.\n\n[project_leader.GetTitledFirstName], yolu kullananların yapımına katkıda bulunmaları gerektiğini öne sürüyor."
- stewardship_domain_special.1312.a: "Ya da kasama katkıda bulunabilirler."
- stewardship_domain_special.1312.b: "Çok orijinal bir fikir... Çok beğendim!"
-  
- stewardship_domain_special.1313.t: "Yol: Soyguncular"
- stewardship_domain_special.1313.desc: "Bitmemiş bir otoyolda bile yol kesiciler varmış gibi görünüyor. [project_leader.GetTitledFirstName]'ın asla gelmeyen erzakları ve köylerini terk etmekten korkan işçilerle sorunları var. Bu gidişle [project_county.GetNameNoTier]'deki yol asla bitmeyecek."
- stewardship_domain_special.1313.a: "Yol boyunca nöbetçiler dikin."
- stewardship_domain_special.1313.b: "Umurumda değil. #EMP Bitir. Benim. Yolum.#!"
-  
- stewardship_domain_special.1314.t: "Yol: Yürüyüş Botları"
- stewardship_domain_special.1314.war: "Savaş devam ederken, askerler [project_county.GetNameNoTier]'da yolun tamamlanan kısımlarını kullanarak ilerlemelerini hızlandırıyorlar."
- stewardship_domain_special.1314.end: "\n\nZaten yıpranmış ve hasar görmüş olan [project_leader.GetTitledFirstName], işçilerin iş bitmeden önce geri dönüp güçlendirmeleri gerekeceğini iddia ediyor."
- stewardship_domain_special.1314.a: "Uğraşmaya değmez."
- stewardship_domain_special.1314.b: "Talihsiz ama gerekli."
-  
- stewardship_domain_special.1315.t: "Yol: Yürüyüş Botları"
- stewardship_domain_special.1315.end: "\n\nNeyse ki, zemini şekillendirmek için tam olarak gereken şey yoğun kullanımdır! Biraz şansla, çoğu levy de geri dönebilir."
- stewardship_domain_special.1315.a: "Onları ön saflara taşıyın!"
- stewardship_domain_special.1315.b: "[project_leader.GetTitledFirstName]'ın emrettiği şekilde yürüyecekler."
-  
- stewardship_domain_special.1316.t: "Yol: Görevlendirilmiş İyileştirme"
- stewardship_domain_special.1316.desc: "Yeni yolun tamamlanmış kısımlarını oldukça faydalı bulan [project_county.GetNameNoTier]'daki tüccar loncası, yolun daha da genişletilmesi amacıyla bağışta bulundu."
- stewardship_domain_special.1316.a: "Bu yola yardımcı olacaktır."
- stewardship_domain_special.1316.b: "Bu benim cebime yarayacak."
-  
- stewardship_domain_special.1317.t: "Yol: Bir Taverna"
- stewardship_domain_special.1317.desc: "[project_county.GetNameNoTier]'daki yol inşaatı gecikmeyle karşılaştı. [project_leader.GetTitledFirstName], işçilerin bir hancı adayı tarafından köşeye sıkıştırıldığını bildiriyor. Kendi ruhlarını ve diğer gezginlerin ruhlarını rahatlatmak için yol kenarına bir meyhane inşa ediyorlar."
- stewardship_domain_special.1317.a: "Kraliyete ait elbette."
- stewardship_domain_special.1317.b: "Onları tekrar yola koyun!"
-  
- stewardship_domain_special.1318.t: "Yol: İlerleme"
- stewardship_domain_special.1318.desc: "[project_leader.GetTitledFirstName]'a göre, [project_county.GetNameNoTier]'deki yoldaki çalışmalar iyi gidiyor.\n\n"Zemin daha sert ve bölümler umduğumuzdan daha düz, efendim.""
- stewardship_domain_special.1318.a: "Yolu daha da genişletin!"
- stewardship_domain_special.1318.b: "Her şey tam istediğim gibi gidiyor."
- stewardship_domain_special.1318.c: "Maliyetleri düşürmek için mükemmel bir fırsat!"
-  
- stewardship_domain_special.1319.t: "Yol: İş Ahlakı"
- stewardship_domain_special.1319.desc: "Kâhyam neredeyse şok olmuş gibi görünüyor. "[project_county.GetNameNoTier]'daki yol inşaatını inceliyordum ve köylü işçiler beklediğimden çok daha verimliydi... Hatta ben bile onlardan bir iki şey öğrenebilirim.""
- stewardship_domain_special.1319.a: "Bu bilgiyi başka yerlerde kullanabilir miyiz?"
- stewardship_domain_special.1319.b: "Köylülerden öğrenmek mi? Düşüncesi bile iğrenç."
-  
- stewardship_domain_special.1320.t: "Yol: [peasant_leader.GetTitledFirstNamePossessiveNoTooltip] Uzmanlık"
- stewardship_domain_special.1320.desc: "Bir halktan birinin bana doğrudan hitap etmesi pek sık rastlanan bir durum değil, ancak [peasant_leader.GetTitledFirstName], [project_county.GetNameNoTier]'deki inşaat çalışmaları hakkında bilgi veriyor.\n\n"Yolun planı bu tarladan geçmekti, efendim, ancak üzerinde çalıştığımız toprağın türünü biliyorum. Belki köylülerim bunu talep edebilir - yolu yakındaki ormandan geçirmemizi?""
- stewardship_domain_special.1320.a: "Yargınıza güveniyorum."
- stewardship_domain_special.1320.b: "Çok uzak ve çok pahalı. Planladığım gibi yapalım."
-  
- stewardship_domain_special.1321.t: "Yol: Uzmanlık Eksikliği"
- stewardship_domain_special.1321.desc: ""Onlara tarladan düz gitmelerini söylüyorum ama [peasant_leader.GetTitledFirstName] onları yakındaki ormandan geçirmekte ısrar ediyor!" [steward.GetTitledFirstName], [project_county.GetNameNoTier]'deki yol çalışmasından açıkça rahatsız.\n\nAncak, [peasant_leader.GetTitledFirstName] [peasant_leader.GetHerHis] yaklaşımında ısrar etmeye devam ediyor. "Tarladaki toprak engebeli ve yeterince yoğun değil, efendim! Orman çok daha iyi bir yol.""
- stewardship_domain_special.1321.a: "Sen üstlerinin sözünü dinle, köylü!"
- stewardship_domain_special.1321.b: "[peasant_leader.GetTitledFirstName] en iyisini biliyor gibi görünüyor..."
-  
- stewardship_domain_special.1391.t: "Yol: Eksik Liderlik"
- stewardship_domain_special.1391.desc: "[project_leader.GetTitledFirstName] gittiğinde, [project_county.GetNameNoTier]'deki yoldaki çalışmalar net bir yöne sahip değildir. Eğer bir gün tamamlanacaksa, başka birinin sorumlu olması gerekir."
- stewardship_domain_special.1391.a: "[peasant_leader.GetTitledFirstName] iyi bir yedek gibi görünüyor."
- stewardship_domain_special.1391.b: "[steward.GetTitledFirstName]'ın devralma zamanı geldi."
-  
- stewardship_domain_special.1392.t: "Yol: Kayıpları Kesmek"
- stewardship_domain_special.1392.desc: "[project_county.GetName]'ın kaybıyla, oradaki yolu tamamlamak benim için pek faydalı olmazdı. En azından proje için toplanan vergiler yolda israf edilmek yerine hazinemde kalır."
- stewardship_domain_special.1392.a: "Her şey kaybedilmiş değil."
-  
- stewardship_domain_special.1396.t: "Yolun sonu"
- stewardship_domain_special.1396.desc: "[project_county.GetNameNoTier]'daki yol nihayet tamamlandı.\n\n"Çok... işlevsel," diyor [project_leader.GetTitledFirstName] bana."
- stewardship_domain_special.1396.a: "Bir yolun lüks olması gerekmez. Bu yeterince iyi."
-  
- stewardship_domain_special.1397.desc: "[project_county.GetNameNoTier] üzerinden geçen karayolu ağı nihayet tamamlandı.\n\n"Bu, insanları önümüzdeki on yıllar boyunca gitmeleri gereken yere taşıyacak" diyor [project_leader.GetTitledFirstName] bana."
- stewardship_domain_special.1397.a: "Faydalarını görmek için sabırsızlanıyorum!"
- stewardship_domain_special.1397.b: "[peasant_leader.GetTitledFirstNameNoTooltip]! Senin için daha çok işim var!"
-  
- stewardship_domain_special.1398.desc: "[project_county.GetNameNoTier]'dan geçen yol ağı nihayet tamamlandı.\n\n"Bu yollar nesiller boyunca ülkenin damarları olacak!" [project_leader.GetTitledFirstName] büyük bir gururla duyuruyor."
- stewardship_domain_special.1398.a: "Faydalarını görmek için sabırsızlanıyorum!"
- stewardship_domain_special.1398.b: "[peasant_leader.GetTitledFirstNameNoTooltip]! Senin için daha çok işim var!"
-  
- stewardship_domain_special.1399.desc: "[project_county.GetNameNoTier] üzerinden geçen yol ağı nihayet tamamlandı.\n\n"Bu, tüm diyardaki en iyi yollar olabilir, efendimiz!" [project_leader.GetTitledFirstName] gururla duyuruyor."
- stewardship_domain_special.1399.a: "Faydalarını görmek için sabırsızlanıyorum!"
- stewardship_domain_special.1399.b: "[peasant_leader.GetTitledFirstNameNoTooltip]! Senin için daha çok işim var!"
-  
-  # A Missing Village, by Petter Vilberg 
- stewardship_domain_special.1401.t: "Kayıp Bir Köy"
- stewardship_domain_special.1401.desc: "Sadece tek bir mumla aydınlatılmış parmağım, defterdeki bir girişte duruyor. Bir şeyler pek de doğru değil... Kısa süre sonra [county.GetName]'dan bulabildiğim her kaydı arıyorum.\n\nSonunda, gün gibi ortada. Sanki vergi kayıtlarından bütün bir köy kaybolmuş gibi görünüyor!"
- stewardship_domain_special.1401.a: "[county.GetNameNoTierNoTooltip]'daki vergi tahsildarı araştırmalı!"
- stewardship_domain_special.1401.a.tt: "Tahsildar soruşturmayı yönetecek"
- stewardship_domain_special.1401.b: "Ben şahsen köye gideceğim."
- stewardship_domain_special.1401.b.tt: "Soruşturmayı kendim yönetiyorum"
- stewardship_domain_special.1401.c: "Köyler hep kayboluyor, aldırmayın."
-  
- stewardship_domain_special.1411.desc: "[county.GetName]'deki vergi tahsildarı [collector.GetTitledFirstName], "kayıp" köyü kendim görmem için bana ne kadar önemli olduğunu ısrarla vurguladı.\n\nGünlerce süren yolculuğun ardından sonunda köye vardım. Herhangi bir yerleşim yerinin toprak parçası gibi görünüyordu. [collector.GetTitledFirstName] yine de ısrarcıydı. "Efendim, size burayı göstermeme izin verin, yalvarıyorum. Burası benim evim.""
- stewardship_domain_special.1411.a: "Tamam, bana etrafı gezdir."
- stewardship_domain_special.1411.a.tt: "[collector.GetTitledFirstName] bana [collector.GetHerHis] köyü gösteriyor"
- stewardship_domain_special.1411.b: "Zaten vaktimin çoğunu boşa harcadın!"
- stewardship_domain_special.1411.b.tt: "Ben buraya neden geldim ki!?"
-  
- stewardship_domain_special.1412.desc: "Köy yeşilliğinin üzerinde [collector.GetTitledFirstNamePossessive] feet sallanırken, muhafızlarımla birlikte ayrılmaya karar verdim. İlk binaları geride bıraktığımızda, bir kız atımın yanına koşarak geldi.\n\n"Ah sevgili [ROOT.Char.GetLadyLord], bize ne olacak? Hiçbirimiz bize ödememizi istediğin cezayı karşılayamayız.""
- stewardship_domain_special.1412.a: "Gelecek yılın tahsildarı borcunuzu ödeyecek."
- stewardship_domain_special.1412.b: "Borcunuzu tamamen tahsil ediyorum. Şimdi."
- stewardship_domain_special.1412.b.flavor: "Değerli olan her şeyi ele geçir, gerisini yak!"
-  
- stewardship_domain_special.1413.desc: "[collector.GetTitledFirstName] bana köyü gezdirirken gördüğüm tek şey zayıf inekler, toprağı eşeleyen tavuklar ve tarladan hafif yüklerle dönen köylüler. Bunu yorumladığımda, [collector.GetSheHe] [collector.GetHerHis] puan alıyor.\n\n"Bu insanlar hayvanlarını bile zor besliyorlar. Eğer onlardan daha fazlasını talep edersem açlıktan ölürler.""
- stewardship_domain_special.1413.a: "Sanırım vergi rehni koyabilirim..."
- stewardship_domain_special.1413.b: "Bu şartlar altında bile bedelini ödemeleri gerekir."
- stewardship_domain_special.1413.c: "Bana göstermek istediğin şey bu muydu? İhanet!"
- stewardship_domain_special.1413.c.tt: "Köyle nasıl başa çıkacağıma ben karar vereceğim"
-  
- stewardship_domain_special.1414.desc: "Muhafızlarım ve ben ayrılırken köy hâlâ için için yanıyordu.\n\nBazen yeniye yer açmak için eskinin temizlenmesi gerekir."
- stewardship_domain_special.1414.a: "Yönetmenin birçok yolu vardır."
-  
- stewardship_domain_special.1421.collector_opening: "Kayıp köyü teftiş etmek için gönderilen vergi tahsildarı asla geri dönmedi. Ağır bir gözetim altında, kendim araştırmaya karar verdim ve sonunda bunun neden böyle olduğunu keşfettim..."
- stewardship_domain_special.1421.self_opening: "Muhafızlarım eşliğinde köye vardığımda, yerli halkın neden vergi ödemeyi bıraktığını nihayet öğreniyorum."
- stewardship_domain_special.1421.desc: "\n\nHer ev terk edilmiş ve bakımsız duruyor. Hiçbir insana dair hiçbir iz yok, koleksiyoncum bile.\n\nMuhafızlarım sessiz evlerin arasında dolaşırken yavaşça artan bir korku hissi beni ele geçiriyor, içlerinden biri aniden bağırdığında hızla paniğe dönüşüyor."
- stewardship_domain_special.1421.a: "Ne buldun!?!"
- stewardship_domain_special.1421.a.tt: "Burada her şey olabilir"
- stewardship_domain_special.1421.b: "Gidiyoruz. Şimdi."
-  
- stewardship_domain_special.1422.desc: "Bağıran gardiyan, bir kolunun altında bir çocukla çürüyen bir kapıdan çıkıyor. [foundling.Custom('GirlBoy')] evin arkasında tespit edilmekten kaçınmaya çalışıyor.\n\nCevap talep etmeme rağmen, çocuk köye ne olduğu hakkında hiçbir şey söylemiyor — ya da bu konuda herhangi bir kelime bile söylemiyor."
- stewardship_domain_special.1422.a: "Zavallı [foundling.Custom('GirlBoy')]'ın artık bir evi yok... [foundling.GetHerHim]'i evlat edineceğim!"
- stewardship_domain_special.1422.b: "Çocuğu en yakın köye bırakın."
- stewardship_domain_special.1422.c: "Köyü ve bu lanetli çocuğu da yakın."
-  
- stewardship_domain_special.1423.foundling: "Küçük [foundling.GetTitledFirstName] artık güvenli bir şekilde sarayda, diğer çocuklarla oynuyor ve hatta konuşuyor.\n\n"
- stewardship_domain_special.1423.no_foundling: "Saraydaki gürültü ve gevezelik beni gördüklerimden uzaklaştırmaya pek yardımcı olmuyor."
- stewardship_domain_special.1423.desc: "Sessiz köyün anıları hala aklımdan çıkmıyor. Sonunda orada yaşayan hiç kimsenin izine rastlamadık."
- stewardship_domain_special.1423.a: "O lanetli topraklara asla yeniden yerleşilmemelidir."
- stewardship_domain_special.1423.b: "Zaman her şeyi geri aldığı gibi o köyü de geri alacaktır."
-  
- stewardship_domain_special.1424.desc: "Terk edilmiş evde beni bekleyen şey kötü bir koku ve bir ceset yığını. Çürüme, nasıl öldüklerini söylemeyi imkansız hale getiriyor."
- stewardship_domain_special.1424.collector_end: "ama duvara yaslanmış olan son cesette bile -vergi tahsildarımda- fark edilir bir iz yok."
- stewardship_domain_special.1424.self_end: "ama en az çürümüş cesetlerde bile herhangi bir öldürme izi bulunmuyor."
- stewardship_domain_special.1424.a: "Bu cehennem çukurunu yerle bir edin."
- stewardship_domain_special.1424.b: "Cesetleri gömün ve yeniden yerleşimlerini emredin."
-  
- stewardship_domain_special.1425.desc: "Cesetlerden kurtulmak yeterince kolaydır. Daha büyük bir zorluk ise ölülerin köyüne yerleşmeye istekli aileler bulmaktır. Ancak hiçbir köylü uzun süre sağlıklı bir arazi parçasının cazibesine karşı koyamaz. Ya da bu konuda dürten bir mızrağın ucuna karşı.\n\nYeniden yapılanmanın başlangıcını denetlemek bana da çok şey öğretti!"
- stewardship_domain_special.1425.a: "Ah şu lanet öksürük bir geçse!"
-  
- stewardship_domain_special.1426.desc: "Belirsiz ama ateş yapılması gerekeni yapıyor. Alevlerin uzun süredir terk edilmiş evleri yakmasını izliyorum ama çok uzun sürmüyor. Burada görmem gereken her şeyi gördüm."
- stewardship_domain_special.1426.a: "Eve dönüş zamanı geldi."
-  
- stewardship_domain_special.1431.desc: "Günlerce süren yolculuğun ardından, kayıtlarımda eksik olan köyü buluyorum. Sadece gelişmekte değil - kesinlikle gelişmekte! - aynı zamanda köylüler vergilerini #EMP ödediklerinde ısrar ediyorlar.\n\n[collector.GetTitledFirstName], baronluğun vergi tahsildarı, tamamen dürüst değil."
- stewardship_domain_special.1431.a: "[collector.GetFirstNameNoTooltip]'ın cevaplaması gereken soruları var..."
- stewardship_domain_special.1431.a.tt: "Karşılaşacağım [collector.GetFirstName]"
- stewardship_domain_special.1431.b: "Köylüleri toplayın. Onlar yine ödeyecekler."
-  
-  
- stewardship_domain_special.1432.desc: ""Bu fonlar, [county.GetNameNoTier]'ın savunması için hayati önem taşıyordu!" [collector.GetTitledFirstName], [barony.GetNameNoTier]'deki vergi tahsildarı, [collector.GetHerHis] malikanesine getirdiğim iri yarı askerler yüzünden dehşete kapılmıştı.\n\n"Ah, lütfen, affınızı kazanmak için her şeyi yapacağım!""
- stewardship_domain_special.1432.a: "Karanlıkta unutulacaksın."
- stewardship_domain_special.1432.b: "Bana hayatını borçlu olan birine ihtiyacım var."
- stewardship_domain_special.1432.b.collector_loyal: "Minnettarlık ve Sadakat"
- stewardship_domain_special.1432.b.collector_bad: "Kaçış Şansı"
- stewardship_domain_special.1432.b.collector_bad.tt: "[collector.GetFirstNameNoTooltip] kaçış!"
- stewardship_domain_special.1432.c: "Herhangi bir şey? Solucanları saymaya ne dersiniz?!"
-  
- stewardship_domain_special.1433.desc: "O hain kurtçuk! Affederim ve hemen bir sonraki anda [collector.GetTitledFirstName], elinde bir bıçak ve yüzünde [collector.GetHerHis] kötü bir bakışla üzerime gelir.\n\nBir gardiyan [collector.GetHerHim]'nin üzerine gelmeden önce kendimi savunmak için bir an mücadele ederim."
- stewardship_domain_special.1433.a: "[collector.GetHerHim]'ı hemen boğ."
- stewardship_domain_special.1433.b: "Bir daha asla ışığı göremeyeceksin, [collector.GetFirstNameNoTooltip]!"
-  
- stewardship_domain_special.1441.desc: "Köylülerime uygulanan vergiler bazen zor olabiliyor. Ancak, son olayların bana gösterdiği gibi, hayat #EMP #! zordur. Gösterebileceğim hiçbir nezaket bunu değiştiremez."
- stewardship_domain_special.1441.a: "Çok fazla şey öğrendim."
-  
- stewardship_domain_special.1442.desc: "Krallığımdaki köylülere uygulanan vergiler bazen o kadar sert olabilir ki hayat bile engellenir. Bunu hafifletmek çoğu zaman sabırlı bir [ROOT.Char.GetTitleTierName] için daha da büyük bir refaha giden yol olabilir."
-  
- stewardship_domain_special.1443.t: "$stewardship_domain_special.1401.t$: İyileştirilmiş Vergilendirme"
- stewardship_domain_special.1443.opening: "Vergi kayıtlarını incelerken, [barony.GetNameNoTier]'daki kayıp köy meselesine geri dönüyorum."
- stewardship_domain_special.1443.end: "\n\nO zamandan bu yana durum çok gelişti ve [barony.GetNameNoTier]'dan elde edilen gelir artık her zamankinden daha yüksek!"
- stewardship_domain_special.1443.a: "Müthiş!"
-  
- stewardship_domain_special.1444.t: "$stewardship_domain_special.1401.t$: Kapsamlı Vergi Kaçakçılığı"
- stewardship_domain_special.1444.end: "\n\nŞimdi işler farklı, ancak merhamet ve hoşgörünün zaman zaman daha büyük kayıplara yol açtığını öğrendim. Vergilerden kaçınmanın herhangi bir yolu köylüler arasında pireler gibi yayılacak."
- stewardship_domain_special.1444.a: "Ne felaket."
-  
- stewardship_domain_special.1445.t: "$stewardship_domain_special.1401.t$: Devam Eden Terk"
- stewardship_domain_special.1445.end: "\n\nŞimdi daha fazla köy kayıp, ancak koleksiyoncularım bariz bir açıklama biliyorlar. Yüksek vergiler, açlıktan veya diğer kontluklare kaçıştan dolayı mükemmel durumdaki toprakların çoğunun terk edilmesine yol açtı."
- stewardship_domain_special.1445.a: "Peki, hayatlarını idame ettiremiyorlarsa..."
-  
- stewardship_domain_special.1451.t: "$stewardship_domain_special.1401.t$: Hafızalara Kazınmış"
- stewardship_domain_special.1451.desc: "Gece yarısı uyanıyorum, [barony.GetNameNoTier] köyü yerle bir olurken çocuğun suçlayıcı bakışlarını hâlâ hatırlıyorum."
- stewardship_domain_special.1451.a: "Neden bu kadar ağır geliyor bana?"
- stewardship_domain_special.1451.b: "Ah, neredeyse unutuyordum!"
-  
-  # Domesday Book, by Stephen Arthur and Sean Hughes 
- stewardship_domain_special.1500.t.a: "Büyük Araştırma"
- stewardship_domain_special.1500.t.b: "Kıyamet Günü Kitabı"
- stewardship_domain_special.1500.desc: "[domesday_steward.GetCouncilTitle] [domesday_steward.GetTitledFirstName]'im, krallığımdaki tüm mülkleri tek bir büyük anketle değerlendirerek, varlıklarım hakkında kesin bir kayıt oluşturma gibi cesur bir fikir buldu.\n\nBu bilgiyi derleyerek, idari konularda ve vergi toplama konusunda daha iyi bir denetim elde edecektim; ancak ilk yatırım ucuz olmayacaktı."
- stewardship_domain_special.1500.a: "Her dönümü, her serfi ve her hayvan başını bileceğim."
- stewardship_domain_special.1500.a.tt: "#F Kapsamlı bir değerlendirme pahalıdır, ancak daha kaliteli olacaktır.#!"
- stewardship_domain_special.1500.b: "Elimdeki varlıkların bir özeti yeterli olacaktır."
- stewardship_domain_special.1500.b.tt: "#F Yüzeysel bir değerlendirme daha ucuzdur, ancak o kadar yüksek kalitede olmayabilir.#!"
- stewardship_domain_special.1500.c: "Neden uğraşayım ki? Tebaam bana ne borçlu olduklarını biliyor."
- stewardship_domain_special.1500.c.tt: "Diğer tüm vasallarım"
- stewardship_domain_special.1500.quality_increase.tt: "Anketin kalitesi #P artacak#!"
- stewardship_domain_special.1500.quality_decrease.tt: "Anketin kalitesi #N düşecek#!"
- stewardship_domain_special.1500.quality_based_taxes: "Tamamlanan anketin kalitesine göre"
- stewardship_domain_special.1500.every_county_control: "[control|E] anket kalitesine göre artış"
- stewardship_domain_special.1500.every_county_summary: "Orantılı olarak daha yüksek [holding|E] Vergiler verir #V 5 Yıl#!"
- stewardship_domain_special.1500.survey_not_completed: "Anket tamamlanmadıysa"
-  
- stewardship_domain_special.1501.desc: "Mareşal [domesday_marshal.GetTitledFirstName], değerlendiricilerimin haydutlar ve hırsızlar için birincil hedef olacağından endişe ediyor. Eksik bir anket bile suçlulara saldırabilecekleri potansiyel hedefler hakkında değerli bilgiler verebilir!\n\nTebaamı güvende tutmak için, [domesday_marshal.GetFirstNameNoTooltip] her değerlendiriciyle birlikte silahlı bir muhafız göndermeyi öneriyor."
- stewardship_domain_special.1501.a: "Benim kanunum tebaam için yeterli bir korumadır!"
- stewardship_domain_special.1501.a.tt: "Değerlendiricilerim [control|E]'ın düşük olduğu kontluklarde saldırıya uğrayabilir."
- stewardship_domain_special.1501.b: "Değerlendiricilerimi koruyacak bir milis örgütle."
- stewardship_domain_special.1501.b.success: "Milislerim değerlendiricilerimi güvende tutabiliyor"
- stewardship_domain_special.1501.b.failure: "Milislerim değerlendiricilerimi koruyamıyor"
- stewardship_domain_special.1501.c: "Her değerlendirici grubuna [ROOT.Char.Custom('MountedWarriorTerm')] gönderin."
- stewardship_domain_special.1501.c.tt: "Değerlendiricilerim yoldaki saldırılardan korunacak."
-  
- stewardship_domain_special.1510.opening: "[upset_priest.Custom2('AppropriateGreeting', ROOT.Char)]"
- stewardship_domain_special.1510.desc_opening: "Bu sabah ayinime gelen tek kişilerin vergi tahsildarlarınız olması beni çok şaşırttı! Görünüşe göre kapımın dışında bekleyen sert bakışlı görevliler birçok sadık [upset_priest.GetFaith.GetAdherentNamePluralNoTooltip]'ın ayinime katılmasını engellemiş."
- stewardship_domain_special.1510.desc_ending: "\n\nSize aidatımı ödemekten mutluluk duyuyorum, ancak kilisenin işleri doğası gereği manevi bir meseledir, dünyevi bir mesele değildir ve sizin arazi ölçümcülerinizin burada bulunup hizmetlerimi aksatmalarının hiçbir hakkı yoktur!"
- stewardship_domain_special.1510.desc_ending_not_endorsed: "\n\nKilise işleri özünde ruhsal bir meseledir, dünyevi bir mesele değildir ve sizin uşaklarınızın burada bulunup benim ibadetlerimi engellemeye hakkı yoktur!"
- stewardship_domain_special.1510.a: "[upset_priest.GetSheHe] beğense de beğenmese de [upset_priest.GetFaith.HouseOfWorshipPlural] değerlendirilecektir!"
- stewardship_domain_special.1510.b: "[upset_priest.GetSheHe|U] doğrudur, [upset_priest.GetFaith.HouseOfWorshipPlural]'ler [upset_priest.GetFaith.HighGodNamePossessive] etki alanıdır."
- stewardship_domain_special.1510.b.tt: "Değerlendirmeden [upset_priest.GetTitledFirstNamePossessive] adet varlığı hariç tutuyorum"
- stewardship_domain_special.1510.c: "Değerlendirmeyi gerekçelendirmek için [upset_priest.GetFaith.ReligiousText] kullanacağım."
- stewardship_domain_special.1510.c.success: "İkna ediyorum [upset_priest.GetTitledFirstName]"
- stewardship_domain_special.1510.c.success.tt: "[upset_priest.GetTitledFirstName]'ı değerlendirmenin haklı olduğuna ikna ediyorum"
- stewardship_domain_special.1510.c.failure: "İkna etmeyi başaramadım [upset_priest.GetTitledFirstName]"
- stewardship_domain_special.1510.c.failure.tt: "[upset_priest.GetTitledFirstName]'ı değerlendirmenin haklı olduğuna ikna edemedim"
-  
- stewardship_domain_special.1520.opening: "[concerned_noble.Custom2('AppropriateGreeting', ROOT.Char)]"
- stewardship_domain_special.1520.desc: "Her yıl kraliyete olan borcumu sadakatle ödüyorum, ancak daha geçen gün vergi eksperleriniz mal varlığımı incelemek için kapıma geldiler!\n\nBana o kadar az güveniyor musunuz ki mahremiyetimi ihlal etmek için adam göndermek zorunda kalıyorsunuz? ?"
- stewardship_domain_special.1520.a: "Elbette sana güveniyorum! Adamlarım hemen ayrılacaklar."
- stewardship_domain_special.1520.a.tt: "Değerlendirmeden [concerned_noble.GetTitledFirstNamePossessive] adet varlığı hariç tutuyorum"
- stewardship_domain_special.1520.b: "Topraklarımın ne içerdiğini bileceğim. İstisnasız."
- stewardship_domain_special.1520.c: "Bir şey mi saklıyorsun, [concerned_noble.GetSheHe]? Değerlendiricilerimi casuslarla değiştir!"
- stewardship_domain_special.1520.c.tt: "[concerned_noble.GetTitledFirstNamePossessive] [secrets|E]'den birini keşfediyorum"
-  
- stewardship_domain_special.1530.desc: "[city_mayor.GetTitledFirstName] bana [guild_town.GetNameNoTierNoTooltip] Marangozlar Loncası'nın [guild_county.GetName]'de kendilerinin değerlendirmeye dahil edilmesine karşı çıktığını söyleyerek geldi.\n\nDeğerlendirmenin kendi işlerinin yönetimi konusunda kendilerine tanınan ayrıcalıkları ihlal ettiğini iddia ediyorlar ve değerlendiricilerimin kontlukden geri çağrılmasını, böylece özgürce çalışabilmelerini istiyorlar."
- stewardship_domain_special.1530.a: "Loncalar değerlendirilecek, ayrıcalıklar lanet olsun!"
- stewardship_domain_special.1530.b: "Hizmetleri karşılığında onları muaf tutabilirdim..."
- stewardship_domain_special.1530.c: "Otoritemi reddediyorlar!? Sözleşmelerini iptal edin!"
-  
- stewardship_domain_special.1540.desc.a: "[domesday_robbed_county.GetName]'da seyahat ederken, bir grup haydut değerlendiricilerime saldırdı. Birkaç değerlendirici öldürüldü ve taşıdıkları kayıtlar kayboldu."
- stewardship_domain_special.1540.desc.b: "[domesday_robbed_county.GetName]'da seyahat ederken, bir grup haydut değerlendiricilerime saldırdı. Neyse ki değerlendiricilerimi koruyan askerlerim soyguncuları etkisiz hale getirebildi."
- stewardship_domain_special.1540.a: "[domesday_robbed_county.GetNameNoTierNoTooltip]'ı yok sayın. Değerlendirmeden çıkarılacaktır."
- stewardship_domain_special.1540.b: "Oradaki yollardaki devriyeleri artırın ve daha fazla değerlendirici gönderin!"
- stewardship_domain_special.1540.c: "Bu, bana karşı çıkacak [domesday_robbed_county.GetNameNoTierNoTooltip]'lılara bir ders olsun!"
-  
- stewardship_domain_special.1550.desc: "Geçtiğimiz yıl bana ödenen vergileri gelen anket bilgileriyle karşılaştırırken birkaç büyük tutarsızlık fark ettim... ya deneklerim bana sürekli olarak fazla ödeme yapıyordu ya da bu ankette çok yanlış bir şeyler vardı!\n\nDaha fazla araştırma yaptığımda, [domesday_steward.GetCouncilTitle] [domesday_steward.GetTitledFirstName]'imin, arazi sahiplerinden, arazilerini değerlendirmenin dışında bırakmaları karşılığında rüşvet kabul ederek anketi tehlikeye attığını keşfettim!"
- stewardship_domain_special.1550.a: "Anketi iptal edin ve [domesday_steward.GetHerHim]'ı masraflarının karşılığını bana geri ödemeye zorlayın."
- stewardship_domain_special.1550.b: "Rüşvet parasını, söz konusu varlıkların uygun şekilde yeniden değerlendirilmesi için kullanın."
- stewardship_domain_special.1550.c: "[domesday_steward.GetTitledFirstNameNoTooltip], [domesday_steward.GetHerHis]'in hapis süresi [domesday_steward.GetCouncilTitle] olarak sona erdi."
-  
- stewardship_domain_special.1560.desc: "[city_mayor.GetTitledFirstName] bana gezici tüccarların [trade_county.GetName]'deki değerlendiricilerim hakkında şikayette bulunduğunu söylüyor.\n\nGezici tüccarlar, [ROOT.Char.GetPrimaryTitle.GetName]'de ikamet etmedikleri halde mallarının değerlendirilmesinin adil olmadığını düşünüyor gibi görünüyor ve birçoğu ayrılıp bir daha asla geri dönmemekle tehdit ediyor."
- stewardship_domain_special.1560.a: "İkamet eden veya etmeyen herkes ankete tabi tutulacak!"
- stewardship_domain_special.1560.b: "Bana ücret öderlerse onları muaf tutarım."
- stewardship_domain_special.1560.c: "Tüccarlar güzel bir noktaya değinmişler."
-  
- stewardship_domain_special.1590.desc.start: "Aylarca süren uzun arazi araştırmalarımdan sonra, artık bitti."
- stewardship_domain_special.1590.perfect.desc: "Rehberliğim altında, erişimcilerim varlıklarımın kesinlikle mükemmel bir kaydını derlediler. Her şey son tavuğa kadar ayrıntılı olarak, bu her yıl bana borçlu olunan tam ve eksiksiz vergiyi tahsil etmemi sağlayacak!"
- stewardship_domain_special.1590.excellent: "Değerlendiricilerim, varlıklarımla ilgili kesin bir kayıt oluştururlar"
- stewardship_domain_special.1590.excellent.desc: "Değerlendiricilerim, varlıklarım hakkında olağanüstü kesin bir kayıt oluşturdular. Bu, her yıl bana borçlu olunan tam ve eksiksiz vergiyi tahsil etmemi sağlayacak!"
- stewardship_domain_special.1590.good: "Değerlendiricilerim, varlıklarım hakkında doğru bir tahminde bulunuyorlar"
- stewardship_domain_special.1590.good.desc: "Değerlendiricilerim, varlıklarım hakkında doğru bir tahmin derlediler. Bu, vergi tahsildarlarımın bana ne kadar borcum olduğunu hesaplarken önemli bir şeyi kaçırmamasını sağlayacaktır."
- stewardship_domain_special.1590.mediocre: "Değerlendiricilerim, varlıklarım hakkında belirsiz bir tahminde bulunuyorlar"
- stewardship_domain_special.1590.mediocre.desc: "Değerlendiricilerim varlıklarım hakkında yalnızca belirsiz bir tahmin derlediler. Her ne kadar hâlâ yardımcı olsalar da, vergi tahsildarlarım bana olan borçları hesaplarken neredeyse kesinlikle bazı şeyleri gözden kaçıracaklar."
- stewardship_domain_special.1590.poor: "Anket o kadar yanlış ki kullanılamaz durumda"
- stewardship_domain_special.1590.poor.desc: "Ne yazık ki değerlendiricilerim o kadar yanlış bir anket hazırladılar ki tamamen kullanılamaz! Vergi tahsildarlarım bu yıl kendi başlarına kalacaklar..."
- stewardship_domain_special.1590.none.desc: "\n\nŞaşırtıcı bir şekilde, benim bölgemdeki her bir il bir şekilde kendisini anketin dışında bırakan bir muafiyet elde etmeyi başardı. Sonuç olarak, tamamlanmış kayıtlar, benim bölgemin varlıkları hakkında kelimenin tam anlamıyla hiçbir bilgi içermiyor."
- stewardship_domain_special.1590.every_county: "[THIS.Char.GetPrimaryTitle.GetName]'daki her kontluk"
- stewardship_domain_special.1590.every_nonexcluded_county: "[THIS.Char.GetPrimaryTitle.GetName]'daki hariç tutulmayan her kontluk"
- stewardship_domain_special.1590.high_quality.desc: "\n\nGururla parlayan [domesday_final_steward.GetCouncilTitle] [domesday_final_steward.GetFirstName]'im, tamamlanan kayıtların artık nereye saklanması gerektiğini soruyor."
- stewardship_domain_special.1590.low_quality.desc: "\n\n[domesday_final_steward.GetCouncilTitle] [domesday_final_steward.GetFirstName]'im dehşete düşerek bunun beklediğim sonuç olmadığını [domesday_final_steward.GetSheHe] söylüyor."
- stewardship_domain_special.1590.no_steward.desc: "\n\nKeşke hala [ROOT.GetCouncillorPosition( 'councillor_steward' ).GetPositionName]'ım olsaydı, bu anket daha iyi olabilirdi."
- stewardship_domain_special.1590.high_quality.a: "Erişimi yalnızca vergi tahsildarlarımla kısıtla."
- stewardship_domain_special.1590.high_quality.a.tt: "#F Bu kayıtlara erişimi kısıtlamak bana topraklarım hakkında yararlanabileceğim özel bilgiler verecek.#!"
- stewardship_domain_special.1590.high_quality.b: "Kayıtları halka dağıtın!"
- stewardship_domain_special.1590.high_quality.b.tt: "#F Kayıtların kamuoyunun bilgisine sunulması halkı hayrete düşürecek ve ilham verecek, topraklarımdaki kalkınmayı artıracak.#!"
- stewardship_domain_special.1590.poor_quality.a: "Ne kadar zaman ve para kaybı..."
- stewardship_domain_special.1590.poor_quality.b: "[domesday_final_steward.GetHerHis] beceriksizliğe [domesday_final_steward.GetFirstNameNoTooltip] ateş!"
- stewardship_domain_special.1590.poor_quality.d.tt: "[council|E]'ımdan kovuldu"
- stewardship_domain_special.1590.poor_quality.c: "[domesday_final_steward.GetSheHe|U] bu başarısızlığın bedelini [domesday_final_steward.GetHerHis] canla ödeyecek!"
-  
-  # Visit displeased county, by Stephen Arthur 
- stewardship_domain_special.3010.t: "[stewardship_domain_special_3010_county.GetNameNoTier]'da huzursuzluk"
- stewardship_domain_special.3010.desc: "[stewardship_domain_special_3010_county.GetNameNoTier] halkı benim kuralımdan pek memnun değil gibi görünüyor.\n\nEğer o bölgeyi bizzat ziyaret etseydim, onlara otoritemin... öhöm, #EMP gerekliliği#! konusunda telkinde bulunabilirdim."
- stewardship_domain_special.3010.a: "Onlara nelerden yapıldığımı göstereceğim!"
- stewardship_domain_special.3010.b: "Zamanım onların fikirleriyle boşa harcanmayacak kadar önemli."
-  
- stewardship_domain_special.3012.t: "[stewardship_domain_special_3010_county.GetNameNoTier] Ziyaret edin"
- stewardship_domain_special.3012.desc.a: "[stewardship_domain_special_3010_baron.GetTitledFirstName] özür dileyerek buradaki insanların asi bir grup olduğunu ve benim kurallarımın sorgulanmayacağını anlamalarının sağlanması gerektiğini açıklıyor. Pasif kabulleri yeterli değil, sadakate ve itaate ihtiyacım var.\n\nOnları uymaya nasıl ikna edebilirim?"
- stewardship_domain_special.3012.desc.b: "Buradaki insanlar itaatsiz bir topluluk. Benim yönetimimin sorgulanmayacağını anlamaları gerekiyor. Pasif kabulleri yeterli değil, sadakat ve itaate ihtiyacım var.\nOnları uymaya nasıl ikna edebilirim?"
- stewardship_domain_special.3012.a: "Cömertliğimi altınla göstereceğim."
- stewardship_domain_special.3012.b: "Onları yönetimim hakkında görkemli bir konuşmayla etkile."
- stewardship_domain_special.3012.b.success: "Konuşmamla insanları etkiliyorum"
- stewardship_domain_special.3012.b.failure: "Sözlerim etkisiz kalıyor ve insanlar etkilenmiyor"
- stewardship_domain_special.3012.c: "Köylüler küstahlıklarının acısını çekecekler!"
-  
- stewardship_domain_special.3014.t.a: "[stewardship_domain_special_3010_county.GetNameNoTier]'da düzen sağlandı"
- stewardship_domain_special.3014.t.b: "[stewardship_domain_special_3010_county.GetNameNoTier]'da huzursuzluk"
- stewardship_domain_special.3014.spent_gold.desc: "İyi harcanmış para. Cömertliğim halkın benim kuralıma uymasını satın aldı."
- stewardship_domain_special.3014.popular_appeal_fail_learn_success.desc: "[stewardship_domain_special_3010_county.GetNameNoTier] her zamanki gibi asi. İlk başlarda konuşmalarım sertti ama ziyaretimin sonuna doğru düzeldiğini düşünüyorum."
- stewardship_domain_special.3014.popular_appeal_fail_learn_fail.desc: "Konuşmalarım sağır kulaklara düştü. Neyi yanlış yaptığımı bilmiyorum. [stewardship_domain_special_3010_county.GetNameNoTier] her zamanki gibi asi."
- stewardship_domain_special.3014.popular_appeal_success.desc: "Konuşmalarım yankı uyandırdı ve şimdi [stewardship_domain_special_3010_county.GetNameNoTier] kuralıma daha fazla uyduğunu gösteriyor."
- stewardship_domain_special.3014.intimidate_success.desc: "[stewardship_domain_special_3010_county.GetNameNoTier]'ın etrafında ağırlığımı koymak işe yaramış gibi görünüyor. Gücümün önünde sindiler ve şimdi daha iyi tebaa olacaklar."
-  
- stewardship_domain_special.3014.a: "Altın her zaman boş el bulur."
- stewardship_domain_special.3014.b: "En azından bir şey öğrendim."
- stewardship_domain_special.3014.c: "Sözlerim âlemi harekete geçirir."
- stewardship_domain_special.3014.e: "Korktukları sürece nefret etsinler."
- stewardship_domain_special.3014.f: "Bu çok sinir bozucu. Diplomasi yeteneğimi geliştirebilecek miyim?"
- stewardship_domain_special.3014.f.tt: "Ben emanetçilikle ilgili hiçbir şey öğrenmedim."
-  
- stewardship_domain_special.8031.t: "$stewardship_domain_special.8001.t$: Hayat Getirmek"
- stewardship_domain_special.8031.aqueduct: "[county.GetName]'daki yeni su kemerime son taşların yerleştirilmesine tanık olmak için buradayım. Hizmetçim bir fincan uzatıyor ve bana sunmadan önce akan suyun ilk birkaç damlasını tutuyor."
- stewardship_domain_special.8031.irrigation: "[county.GetName]'daki yeni hendek ağıma su getirmek için setlerin yıkılacağı gün oradayım. Suyun düzgün bir şekilde yayılması saatler alıyor,"
- stewardship_domain_special.8031.interlude: "\n\nZemin hala sert ve misafirperver değil ve yapılacak çok iş var,"
- stewardship_domain_special.8031.full_scope: "ama su tatlıdır,"
- stewardship_domain_special.8031.scoped_down: "özellikle projem hayal ettiğim kadar büyük olmasa da. Yine de su tatlı,"
- stewardship_domain_special.8031.conclusion: "ve zamanla bu toprağa yeni bir hayat getirecek. Dereler bir dereye dönüşürken, işimin bana öğrettiği her şeyi düşünüyorum."
- stewardship_domain_special.8031.a: "Bunun mükafatını onlarca yıl sonra da alacağız."
-  
-  # The Irrigation Project, by Petter Vilberg 
- stewardship_domain_special.8001.progress_is_made: "Önemli gelişme"
- stewardship_domain_special.8001.continued_problems: "Devam Eden Sorunlar"
- stewardship_domain_special.8001.troubled_construction: "Sorunlu İnşaat"
- stewardship_domain_special.8001.slow_progress: "Yavaş ilerleme"
- stewardship_domain_special.8001.high_death_count: "Yüksek Ölüm Oranı"
- stewardship_domain_special.8001.project_continues: "#V Proje devam ediyor#!"
- stewardship_domain_special.8001.project_completed: "#P Proje tamamlandı#!"
-  
- stewardship_domain_special.8001.t: "Sulama"
- stewardship_domain_special.8001.desc: "[county.GetName]'da, çoğunlukla uygunsuz arazi yapısı nedeniyle yerleşime açılmamış epeyce arazi parçası var.\n\n[steward.Custom2('MyCharacterIntroduction', ROOT.Char)|U], bir sulama projesinin bu arazileri ekilebilir ve dolayısıyla değerli hale getirebileceğini öne sürdü."
- stewardship_domain_special.8001.a: "Bir su kemeri tasarlayacağım!"
- stewardship_domain_special.8001.b: "Bir hendek-toprak ağına ihtiyacımız var."
- stewardship_domain_special.8001.c: "Bu topraklar iyi bir sebepten dolayı huzursuz."
- stewardship_domain_special.8001.if_successful: "Başarılıysa:"
-  
- stewardship_domain_special.8011.t: "$stewardship_domain_special.8001.t$: Bütçeyi Aşmak"
- stewardship_domain_special.8011.desc: "Atanmış yardımcı mimarım yanıma geldi ve [county.GetName]'daki su kemeri projem için daha fazla harcama yapmamı istedi.\n\n"Bu koşullar altında herhangi bir inşaat projesinin pahalı olacağını sen de görebilirsin, [ROOT.Char.GetLadyLord].""
- stewardship_domain_special.8011.a: "[steward.GetFirstNameNoTooltip], bana bir yedek bul!"
- stewardship_domain_special.8011.a.tt: "#F Bundan o kadar büyük umutlarım vardı ki...#!"
- stewardship_domain_special.8011.b: "Haklısın. İhtiyacın olanı al."
-  
- stewardship_domain_special.8012.t: "$stewardship_domain_special.8001.t$: Devam Eden Sorunlar"
- stewardship_domain_special.8012.desc: "Benim krallığımda yetenekli mimar yok mu?! [county.GetNameNoTier]'daki su kemerinin inşasını denetleyen yeni yardımcı mimarım da bütçeyi aşıyor!\n\n"Bu yapılamaz efendim" gibi saçma bahanelerden bıktım!"
- stewardship_domain_special.8012.a: "Altını al ama şununla tamamlasan iyi olur!"
- stewardship_domain_special.8012.a.tt: "#F Basit bir su kemeri inşa etmenin maliyeti nasıl bu kadar yüksek olabilir?#!"
- stewardship_domain_special.8012.b: "Angarya için daha fazla köylü topla."
-  
- stewardship_domain_special.8013.t: "$stewardship_domain_special.8001.t$: Sorunlu İnşaat"
- stewardship_domain_special.8013.desc: "Yanlış yere gönderilen kaynaklar, aklımdakiyle uyuşmayan yapılar... "İstediğim şekilde bir su kemeri inşa edin" emrinin hangi kısmını takip etmek bu kadar zor?"
- stewardship_domain_special.8013.a: "İşleri kendim yürüteceğim."
- stewardship_domain_special.8013.b: "Kaybedilen zamanı telafi etmek için köylüleri askere alın."
-  
- stewardship_domain_special.8021.t: "$stewardship_domain_special.8001.t$: Öngörülemeyen Zorluklar"
- stewardship_domain_special.8021.desc: "[county.GetNameNoTier]'daki sulama projem ilerliyor, ancak beklediğimden daha zor.\n\n[steward.Custom2('MyCharacterIntroduction', ROOT.Char)]'e göre, zemin "düşündüğümüzden iki kat daha kayalık ve iki kat daha gözenekli.""
- stewardship_domain_special.8021.a: "O zaman köylünün iki kat daha fazla çalışması gerekecek!"
- stewardship_domain_special.8021.b: "Zaman ayırıp bu işi doğru yapmamız lazım."
- stewardship_domain_special.8021.c: "Tekrar yola girmek için her zaman kestirme yollar vardır!"
-  
- stewardship_domain_special.8022.t: "$stewardship_domain_special.8001.t$: Talihsiz Koşullar"
- stewardship_domain_special.8022.desc: "[county.GetNameNoTier]'daki sulama projesi hızla devam ediyor, benim [ROOT.Char.GetLadyLord]'im," diye bildiriyor kâhyam. Ancak, kibirliliğim kısa sürede kayboluyor. "Ne yazık ki, köylü işçiler endişe verici bir oranda ölüyor.""
- stewardship_domain_special.8022.a: "Bundan sonra her şeyi biraz daha yakından takip etmem gerekebilir."
- stewardship_domain_special.8022.b: "Bana hizmet etmek için yaşamıyorlar mı?"
- stewardship_domain_special.8022.c: "Ah... Gerektiğinde yedekleri görevlendirin."
- stewardship_domain_special.8022.c.tt: "#F Onlara neden ihtiyaç duyulduğunu söylemeyin.#!"
-  
- stewardship_domain_special.8023.t: "$stewardship_domain_special.8001.t$: Durgun İlerleme"
- stewardship_domain_special.8023.desc: "[steward.Custom2('MyCharacterIntroduction', ROOT.Char)], "Efendim, [county.GetNameNoTier]'daki sulama projesi programın gerisinde gidiyor" diye rapor ediyor. "Çok geride. Çalışmayı inceledikten sonra, ömrüm boyunca tamamlanıp tamamlanmayacağından endişeleniyorum."\n\n[steward.GetSheHe]'nin ciddi olup olmadığını söyleyemem."
- stewardship_domain_special.8023.a: "Görevlileri değiştirin. Ve onlara yeni kırbaçlar verin."
- stewardship_domain_special.8023.b: "Ne kadar işçiye ihtiyaç varsa o kadar işçi alın!"
- stewardship_domain_special.8023.c: "Belki biraz daha aşağıyı hedeflemenin zamanı gelmiştir..."
- stewardship_domain_special.8023.c.tt: "Bu projemin etkisini azaltacaktır"
-  
-  #Localisation for completion of the governance lifestyle. 
- stewardship_domain_special.9999.t: "Hepsi Defterimde"
- stewardship_domain_special.9999.desc_opening: "Her işte parmağım, her konuda gözüm, her kararda fikrim olan biri olarak uzun zamandır idari konulara odaklanıyorum."
- stewardship_domain_special.9999.desc_education_4: "\n\nBaşarılarıma baktığımda öğreneceğim hiçbir şeyin kalmadığını fark ediyorum!"
- stewardship_domain_special.9999.desc_not_education: "\n\nBaşarılarıma baktığımda, hesaba katılması gereken bir idari güç haline geldiğimi fark ediyorum!"
- stewardship_domain_special.9999.a: "Yönetim biliminde hiçbir şey gözümden kaçmadı!"
- stewardship_domain_special.9999.a.tt: "[stewardship_lifestyle|E] çalışmasında sanki ulaşabileceğim en ileri noktaya ulaştığımı hissediyorum."
+ #################
+ # Normal Events #
+ #################
+
+ # Guild Dispute, by Sean Hughes
+ stewardship_domain.1041.t:0 "Lonca Çatışması"
+ stewardship_domain.1041.desc:0 "[guild_county.GetNameNoTier], ticari huzursuzluk yaşıyor. Demirci ve tüccar loncaları benimle buluşmak için bir temsilci gönderdiler. Görünüşe göre iki lonca, ülke içindeki ham demir ticareti konusunda bir çıkmaza girmiş durumda ve benden aralarındaki bu ihtilafı çözmemi istiyorlar.\n\nHer iki temsilci de bana onların yanında yer almam için loncaları aracılığıyla el altından kazançlı bir anlaşma teklif ediyor.."
+ stewardship_domain.1041.a:0 "Eğer iş birliği yaparlarsa her ikisi de bundan kazanç sağlayabilir."
+ stewardship_domain.1041.a.success:0 "İki loncanın birlikte çalışmasını sağlıyorum"
+ stewardship_domain.1041.a.success.tt:0 "Loncalar bir süre [guild_county.GetNameNoTier] bölgesinde silah üretimini desteklemek için iş birliği yapıyorlar"
+ stewardship_domain.1041.a.failure:0 "Loncaların bir anlaşmaya varmasını sağlayamıyorum"
+ stewardship_domain.1041.a.failure.tt:0 "Loncalar [guild_county.GetNameNoTier] bölgesinde demir üretiminin nasıl ele alınacağı konusunda anlaşamadılar"
+ stewardship_domain.1041.b:0 "Sadece demirciler iyi demiri kötü olandan ayırabilir..."
+ stewardship_domain.1041.b.flavor:0 "...ve demirci loncası askerlerime bedava silah verebilir!"
+ stewardship_domain.1041.c:0 "Ticaret açıkça tüccarların alanıdır..."
+ stewardship_domain.1041.c.flavor:0 "...ve tüccar loncası bana kârlarından pay verecek!"
+ stewardship_domain.1041.d:0 "[guild_county.GetNameNoTierNoTooltip] #EMP benimdir#!! Onun ticaretini sadece ben kontrol ederim."
+
+ # Domineering Guild, by Sean Hughes
+ stewardship_domain.1042.t:0 "Hükmeden Lonca"
+ stewardship_domain.1042.desc:0 "[guild_county.GetNameNoTier] bölgesindeki [guild_county.Custom('Governance_1041_GuildType')], demir satışında bir engel teşkil ediyor.\n\nGörünen o ki malları için aşırı yüksek fiyatlar talep ediyorlar. Böylelikle lonca ustaları zenginleşirken memlekette ticaret azalıyor."
+ stewardship_domain.1042.a:0 "Fiyatını düşürmek için onlarla pazarlık et."
+ stewardship_domain.1042.a.success:0 "[guild_county.Custom('Governance_1041_GuildType')] fiyatlarını düşürme konusunda ikna oluyor"
+ stewardship_domain.1042.a.failure:0 "[guild_county.Custom('Governance_1041_GuildType')] fiyatlarını düşürmeyi reddediyor"
+ stewardship_domain.1042.b:0 "Vergilerini ödedikleri sürece..."
+ stewardship_domain.1042.c:0 "Adil bir şekilde iş yapmazlarsa, hiç iş yapamayacaklar!"
+ 
+ # Granary Infestation, by Sean Hughes
+ stewardship_domain.1052.t:0 "Tahıl Ambarı İstilası"
+ stewardship_domain.1052.desc:0 "Görünen o ki [target_county.GetNameNoTier] bölgesindeki birkaç tahıl ambarı haşaratlar tarafından istila edilmiş. Önümüzdeki yılın ekinleri için ekecek bir tohum kalmadığını gören insanlar gelip benden yardım istediler.\n\nDurumları göz önüne alındığında, çiftçiler sunduğum tüm şartları kabul etmek zorunda kalacaklar."
+ stewardship_domain.1052.a:0 "Tahıldan bol bir şey yok, tabii serfim olurlarsa..."
+ stewardship_domain.1052.b:0 "Onlara merhamet et ve tahıl ambarlarımızdan yararlanmalarına izin ver."
+ stewardship_domain.1052.c:0 "Sadaka verilmesi için [ROOT.Char.Custom('DefaultPriestTitlePlural')] ile konuş."
+ stewardship_domain.1052.d:0 "[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('almoner'))] onlara tahıl dağıtacaktır."
+
+ # Corrupt Tax Collector, by Sean Hughes
+ stewardship_domain.1053.t:0 "Yozlaşmış Vergi Tahsildarı"
+ stewardship_domain.1053.desc:0 "[target_county.GetNameNoTier] vergi kayıtlarında çeşitli uyuşmazlıklar ve atlanmış detaylar fark ediyorum. Çok bariz ki bunlar basit birer hata olamaz. — birileri kaynakları zimmetine geçiriyor.\n\nMaalesef, bu gizemli suçlunun bıraktığı izler o kadar karışık ki tam olarak hangi vergi tahsildarının sorumlu olduğunu belirlemek benim için oldukça zor."
+ stewardship_domain.1053.a:0 "Meseleyi gizlice araştır..."
+ stewardship_domain.1053.a.success:0 "Suçluları bulur ve onları adalete teslim ederim."
+ stewardship_domain.1053.a.failure:0 "Suçlu benden kaçmaya devam ediyor."
+ stewardship_domain.1053.c:0 "[target_county.GetNameNoTierNoTooltip] bölgesindeki vergilendirmeyi üstlen."
+ stewardship_domain.1053.d:0 "Çoğunu idam et ve yeni tahsildarlar bul."
+
+ # Culture Clash, by Sean Hughes
+ stewardship_domain.1073.t:0 "Kültür Çatışması"
+  #AGOT Modified
+ #stewardship_domain.1073.desc:0 "Most of the commoners living in [target_county.GetName] are of [target_ruler.GetCulture.GetName] descent. Proud of their traditions, it does not sit well with them that they must serve a foreigner like myself when my neighbor [target_ruler.GetTitledFirstName] shares their culture and history."
+ stewardship_domain.1073.desc:0 "[target_county.GetName] bölgesinde yaşayan halkın çoğu [new_culture.GetName] köklerine sahip. Geleneklerine sıkı sıkıya bağlılar ve komşuları [target_ruler.GetTitledFirstName] aynı kültürü ve tarihi paylaşırken, benim gibi bir yabancıya boyun eğmek zorunda kalmalarını istemiyorlar."
+ #AGOT Modified
+ #stewardship_domain.1073.a:0 "Teach them the superiority of the [me.GetCulture.GetNameNoTooltip] culture!"
+ stewardship_domain.1073.a:0 "Onlara [new_culture.GetNameNoTooltip] kültürünün üstünlüğünü öğret!"
+ #AGOT Modified
+ #stewardship_domain.1073.a.success:0 "The commoners adopt [me.GetCulture.GetNameNoTooltip] customs"
+ stewardship_domain.1073.a.success:0 "Halk, [new_culture.GetNameNoTooltip] geleneklerini benimsedi"
+ stewardship_domain.1073.a.failure:0 "Halk medeni olmayı reddediyor."
+ stewardship_domain.1073.c:0 "Tuhaf gelenekleriyle ne yaptıkları hiç umurumda değil."
+ stewardship_domain.1073.c.warning:0 "Kültür Değiştirme Hızı: #N -75%#!"
+ stewardship_domain.1073.d:0 "Köylülerin ne düşündüğünün hiçbir önemi yok. Onların hükümdarı benim."
+
+ # Reduce revolt risk by being diligent, by Linnéa Thimrén
+ stewardship_domain.5031.t:0 "Zor Durumdaki Eyalet"
+ stewardship_domain.5031.desc:0 "[county.GetNameNoTier] çalkantılı zamanlardan geçiyor. Bölgedeki huzursuzluğu detaylandıran raporlar ardı ardına geliyor, görünen o ki köylüler #EMP alternatif#! çözümler düşünmeye başlamış..."
+ stewardship_domain.5031.a:0 "İpleri eline al."
+ stewardship_domain.5031.b:0 "Ceza olarak vergileri arttır."
+
+ # Marshland Clearing, by Petter Vilberg
+ stewardship_domain.6001.t:0 "Su Çekme"
+ stewardship_domain.6001.desc:0 "Birkaç ay önce [baron.GetTitledFirstName], [barony.GetNameNoTier] düzlüklerinde yerleşim yeri kurma amacıyla bölgedeki bataklık araziyi kurutmak için titiz bir çaba başlattı. Ağır sabanlar ve yeni yapılmış hendekler zemini sıkılaştırsa da bu iş ciddi bir zaman alacağa benziyor.\n\n[baron.GetFirstName], vergilerinin düşürülmesi için [steward.GetCouncilTitle] ile bir yazışma gerçekleştirmiş. Bir sonraki hasattan önce işleri tamamlama kaygısıyla bana sunması gereken askerlerden işçi olarak yararlanmayı umuyor."
+ stewardship_domain.6001.a:0 "İhtiyacınız olanı alın, [baron.GetFirstNameNoTooltip]!"
+ stewardship_domain.6001.b:0 "Elindeki adamlar [county.GetNameNoTier] için yeterli."
+ stewardship_domain.6001.c:0 "Hayır, adamlar bana lazım."
+
+ # Forest Clearing, by Petter Vilberg
+ stewardship_domain.6002.t:0 "Ormanı Açma"
+ stewardship_domain.6002.desc:0 "Birkaç ay önce [baron.GetTitledFirstName], [barony.GetNameNoTier] bölgesinde yerleşim yeri kurmak için ormanlardaki araziyi temizlemeye başladı. Ağaçlar söküldü, yollar temizlendi ve zemin düzeltildi.\n\n[baron.GetFirstName] şimdi [steward.GetCouncilTitle] [steward.GetFirstName] ile yazışarak vergilerinin düşürülmesini talep ediyor. Bir sonraki hasattan önce işleri tamamlama kaygısıyla bana sunması gereken askerlerden işçi olarak yararlanmayı umuyor."
+
+ # Haggle with Masons, by Petter Vilberg
+ stewardship_domain.6011.t:0 "Taş Ustalarıyla İlişkiler"
+ stewardship_domain.6011.desc:0 "Taş ustaları loncası [county.GetNameNoTier] bölgesinde kendisini kanıtladı. Kişisel hizmetimde kendini işine adamış zanaatkârlara sahip olmak bölgenin gelişmesine yardımcı olabilir."
+ stewardship_domain.6011.a:0 "Taş ustalarının şefiyle karşılıklı bir anlaşma yapacağım."
+ stewardship_domain_6011_great_deal:0 "Harika Bir Anlaşma"
+ stewardship_domain.6011.offer_tt:0 "Bana teklif edildi:"
+ stewardship_domain_6011_fair_deal:0 "Adil Bir Anlaşma"
+ stewardship_domain_6011_bad_deal:0 "Talihsiz Bir Anlaşma"
+ stewardship_domain.6011.b:1 "[steward.GetTitledFirstNameNoTooltip], bana onların sadakatini kazan!"
+ stewardship_domain.6011.c:0 "Serflerim varken neden onların yardımına ihtiyacım olsun ki?"
+
+ stewardship_domain.6012.desc:0 "Taş ustalarının şefi, lonca adına herhangi bir anlaşmaya varma konusunda isteksiz gözüküyordu, ta ki benim ona ikimiz için de bunun ne kadar fayda sağlayacağını anlatana dek."
+ stewardship_domain.6012.a:0 "Kendisini tehdit etmem bile gerekmedi!"
+
+ stewardship_domain.6013.desc:0 "Bitmek bilmez bir toplantıdan sonra, taş ustalarının şefinin daha fazla taviz vermeye niyetinin olmadığı anlaşılıyor.\n\n"Fiyatı daha fazla indirmem mümkün değil.""
+ stewardship_domain.6013.a:0 ""O zaman anlaştık.""
+ stewardship_domain.6013.b:0 "Şüphesiz başka bir yerden daha ucuz taş ustaları bulabilirim."
+
+ stewardship_domain.6014.desc:0 ""Sadece beni değil, mesleğimi de aşağılıyorsunuz!" diye yakardı taş ustası. Ona yaptığım tekliflerden hiç de memnun gözükmüyor. "Maliyetlerimiz her geçen gün artıyor. Yapılan işin de bir değeri var. Eminim ki bir [ROOT.Char.GetTitleTierName] olarak bunlardan anlarsınız.""
+ stewardship_domain.6014.a:0 ""Gayet iyi anlıyorum.""
+ stewardship_domain.6014.b:1 "Toprak benimse, oradaki loncalar da benim demektir!"
+
+ stewardship_domain.6015.desc:1 "Taş ustalarının şefi [steward.GetCouncilTitle] [steward.GetTitledFirstName] ile bir hayli iyi anlaşıyor olmalı keza ona sunduğum taleplerden de iyisini kabul etmiş gibi gözüküyor."
+ stewardship_domain.6015.a:0 "[steward.GetTitledFirstName] işini bilir."
+
+ stewardship_domain.6016.desc:0 "[steward.GetTitledFirstName] taş ustası loncasından bir teklifle bana döndü.\n\n"Kayıtlarını inceledim lordum. Daha iyi bir anlaşmaya varabileceğimize inanmıyorum.""
+ stewardship_domain.6016.a:0 "Elimizdekiyle yetineceğiz."
+ stewardship_domain.6016.b:0 "Seni göndermekle hata etmişim, [steward.GetFirstNameNoTooltip]!"
+
+ stewardship_domain.6017.desc:0 ""Görüşmelerin tam olarak istediğim gibi gittiğini söyleyemeyeceğim efendim...." diyor [steward.GetTitledFirstName], mahcup bir yüz ifadesiyle. "Buna rağmen her ne kadar taş ustası bir daha yüzümü görmek istemediğini söylese de, elimde bir teklif var.""
+ stewardship_domain.6017.a:0 "Elinden geleni yaptın, teklif benim için uygundur."
+ stewardship_domain.6017.b:0 "Onlarla konuşacağım, laftan anlamazlarsa onlara emredeceğim!"
+
+
+ ##################
+ # Special Events #
+ ##################
+
+ # Bad harvest, by Linnéa Thimrén and Sean Hughes
+ stewardship_domain_special.1001.t:0 "[development_county.GetNameNoTier|U] Bölgesinde Hasat"
+ stewardship_domain_special.1001.desc:0 "Zor zamanlardan geçiyoruz ve [development_county.GetNameNoTier] bölgesinde [county_holder.Custom2('MyCharacterIntroduction', ROOT.Char)] hâkimiyetindeki topraklar birçoğundan daha fazla acı çekti.\n\nKötü hasadı detaylandıran raporların ardı arkası kesilmedi ve bu sene onlardan vergi payımı alabilip alamayacağımı merak etmeye başladım..."
+ stewardship_domain_special.1001.a:0 "Bölgedeki sorunları araştırmalıyım."
+ stewardship_domain_special.1001.a.tt:0 "[development_county.GetNameNoTier] bölgesinin kaderi ellerimde olacak..."
+ stewardship_domain_special.1001.b:0 "Hakkım olanı zor kullanarak da olsa alacağım!"
+ stewardship_domain_special.1001.c:0 "Bırakalım da [county_holder.GetFirstNameNoTooltip] ilgilensin, benim daha önemli işlerim var."
+
+ stewardship_domain_special.1002.desc:0 "Görünen o ki [development_county.GetNameNoTier] kötü yönetimden kaynaklı sorunlar yaşıyor. Arazi düzgün bir şekilde temizlenmemiş, tohumlar yanlış vakitte ekilmiş ve otlaklar aşırı otlanmıştı."
+ stewardship_domain_special.1002.desc.repentant:1 "\n\n[county_holder.GetTitledFirstName] pişman ve mahcup bir şekilde, elleri titreyerek önümde duruyor. "İstirham ediyorum [ROOT.Char.Custom2('RelationToMeAddress', county_holder)], bana bir şans daha verin! Yemin ederim bunu düzeltebilirim!""
+ stewardship_domain_special.1002.desc.uncaring:0 "\n\n[county_holder.GetTitledFirstName] canı sıkkın ve kayıtsız bir şekilde önümde duruyor."Köylüler eninde sonunda bunu çözecekler. Hep yaptıkları şey. Bu onların işi, değil mi?""
+ stewardship_domain_special.1002.desc.blaming:0 "\n\n[county_holder.GetTitledFirstName] sinirli ve endişeli bir şekilde önümde duruyor. "Bu köylüler bunu nasıl bu kadar berbat ederler? Onlar sadece maraba! Tüm yaptıkları iş bu!""
+
+ stewardship_domain_special.1002.a:0 "Seni bundan sorumlu tutuyorum, [county_holder.GetFirstNameNoTooltip]."
+ stewardship_domain_special.1002.a.success:0 "[county_holder.GetTitledFirstName] ve ben, yapılan hatalardan ders çıkardık"
+ stewardship_domain_special.1002.a.failure:0 "[county_holder.GetTitledFirstName], [development_county.GetNameNoTier] bölgesindeki sorunları çözemiyor"
+ stewardship_domain_special.1002.b:0 "Bu sorunla şahsi olarak ilgileneceğim, ne pahasına olursa olsun!"
+ stewardship_domain_special.1002.b.success:0 "[development_county.GetNameNoTier] bölgesindeki sorunları başarıyla çözüyorum"
+ stewardship_domain_special.1002.b.failure:0 "[development_county.GetNameNoTier] bölgesindeki sorunları çözemiyorum"
+ stewardship_domain_special.1002.c:0 "[development_county.GetNameNoTierNoTooltip] üzerinde olan hakkını kaybettin!"
+ stewardship_domain_special.1002.c.tt:0 "[development_county.GetNameNoTier] kontluğunu [county_holder.GetTitledFirstName] hâkimiyetinden çıkaracağım"
+ 
+ stewardship_domain_special.1003.desc:1 ""Bana inandığınız için teşekkür ederim, [ROOT.Char.Custom2('RelationToMeAddress', county_holder)]!"\n\n[county_holder.Custom2('MyCharacterIntroduction', ROOT.Char)|U] içinde bulunduğu beladan kurtuldu. Bazen yapılacak en iyi şey başkalarının becerilerine güvenmek ve sonra onlardan bir şeyler öğrenmektir!"
+ stewardship_domain_special.1003.a:0 "Bana bunu nasıl yaptığını anlat!"
+
+ stewardship_domain_special.1004.desc:0 "[development_county.GetNameNoTier] bölgesinden gelen raporlar iyice kötüleşiyor ve gün geçtikçe asıl sorumlunun [county_holder.GetTitledFirstName] daha iyi anlaşılıyor."
+ stewardship_domain_special.1004.a:0 "Böyle [county_holder.GetTitleTierName] düşman başına!"
+
+ stewardship_domain_special.1005.desc:0 "[development_county.GetNameNoTier] bölgesinin komutam altında gelişmesini gördükçe başardığım şeyle gurur duymaktan kendimi alamıyorum. Yönetim işleriyle daha az vakit geçirmek bazen öğrenmek için iyi bir yoldur!"
+ stewardship_domain_special.1005.a:0 "Bu bilgi gerçekten faydalı olacak!"
+
+ stewardship_domain_special.1006.desc:0 "Ne kadar denersem deneyeyim [development_county.GetNameNoTier] rahat bir nefes alamıyor. Durum eskisi kadar kötü olmasa da, önümde duran görevleri nasıl çözeceğimi bilemiyorum."
+ stewardship_domain_special.1006.a:0 "Ben her zaman başarılı olamam..."
+
+ # Charter fair, by Linnéa Thimrén
+ stewardship_domain_special.1101.t:0 "[county.GetNameNoTierNoTooltip|U] Panayırı"
+ stewardship_domain_special.1101.desc:0 "[county.GetNameNoTier] içerisinde, yıl boyunca sürecek olan bir panayır için mükemmel gözüken bir arazi var.\n\n[local_baron.GetTitledFirstName] ve [second_local_baron.GetTitledFirstName] isminde iki yerel soylu, panayırı bu arazide yapmalarına izin verecek şartnameyi onaylamam için bana dilekçe veriyor."
+ stewardship_domain_special.1101.a:0 "[second_barony.GetNameNoTierNoTooltip] topraklarındaki [second_barony.Custom('BaronyTownType')] daha uygun."
+ stewardship_domain_special.1101.all_goes_well:0 "Her şey yolunda giderse:"
+ stewardship_domain_special.1101.b:0 "[barony.GetNameNoTierNoTooltip] topraklarındaki [local_baron.GetFaith.HouseOfWorship] araziyi daha iyi değerlendirecektir."
+ stewardship_domain_special.1101.c:0 "Araziyi hayvanları otlatmak için kullanın."
+
+ stewardship_domain_special.1102.desc:0 "[second_local_baron.GetTitledFirstName] bana dünyanın dört bir köşesinden ürünler sunuyor; İpek yolunun en uzak noktalarından giysiler, yerel olarak yetiştirilen ürünler, doğudan teknolojik harikalar...\n\n"Efendim, önümüzdeki panayır için hangi ürünleri tanıtmalıyız?""
+ stewardship_domain_special.1102.a:0 "Elimizden geldiğince ipek ithal edeceğiz!"
+ stewardship_domain_special.1102.a.tt:0 "Bölge istikrarlı ve müreffehse, halkın bunu takdir etme olasılığı daha fazladır."
+ stewardship_domain_special.1102.b:0 "Yerel olarak yetiştirilen mahsullere odaklanacağız!"
+ stewardship_domain_special.1102.b.tt:0 "Bölge kargaşa içindeyse, insanların bunu takdir etme olasılığı daha yüksektir."
+ stewardship_domain_special.1102.c:0 "Teknolojik harikalar, ana planda ve merkezde olacak!"
+ stewardship_domain_special.1102.c.tt:0 "Bölgedeki kalkınma seviyesi ne kadar düşükse, insanların bunu takdir etme ihtimali o kadar yüksektir."
+
+ stewardship_domain_special.1103.desc_silk:0 "[county.GetNameNoTier] bölgesinin zengin halkı baştan çıkarıcı ipeği piyasaya sürünce — arkadan köylüler de izlerken — kutlama ve ticaret dolu bir hafta geçirdiler!"
+ stewardship_domain_special.1103.desc_crops:0 "Köylüleri pazara çekmek için bol miktarda mahsul ve tohum piyasaya sürüldü, tezgâhlardaki birinci sınıf mallar onların geri gelmelerini sağladı. — kutlama ve ticaret dolu bir hafta geçirdiler!"
+ stewardship_domain_special.1103.desc_technology:0 "İnsanları kendisine hayran bırakan teknolojik harikalar ve tüm tezgâhlardaki birinci sınıf ürünler... — kutlama ve ticaret dolu bir hafta geçirdiler!"
+ stewardship_domain_special.1103.a:0 "Bundan sonra bunu yıllık olarak yapman için iznin var."
+
+ stewardship_domain_special.1104.desc_silk:0 ""[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], tüm bu ipeklerle ne yapacağız?"\n\nGörünüşe bakılırsa bölgede ipeğe olan talep pek yüksek değildi ve [second_local_baron.GetTitledFirstName] satılmamış pahalı kumaşların çoğunu öylece bıraktı."
+ stewardship_domain_special.1104.desc_crops:0 "" [Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], ürünler bayatlayıp küfleniyor, tüm bunlarla ne yapmamız gerekiyor?"\n\nGörünüşe bakılırsa bölgede yerel ürünlere olan talep pek yüksek değildi ve [second_local_baron.GetTitledFirstName] birçoğunu satılmamış bir şekilde bıraktı."
+ stewardship_domain_special.1104.desc_technology:0 ""[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], tüm bu ıvır zıvırlarla ne yapacağız?"\n\nGörünüşe bakılırsa, bölgede olağanüstü teknolojiye olan talep pek yüksek değildi ve [second_local_baron.GetTitledFirstName] birçoğunu satılmamış bir şekilde bıraktı."
+ stewardship_domain_special.1104.a:0 "Çalkantılı bir başlangıç ama eminim ki yerel halk bunu halledebilir!"
+
+ stewardship_domain_special.1105.desc:0 "[local_baron.GetTitledFirstName] bana dünyanın dört bir köşesinden ürünler sunuyor; kutsal şehirlerden dinî eşyalar, [local_baron.GetFaith.DevoteeFemalePlural] tarafından yetiştirilmiş yiyecekler, yabancı inançlardan harika şeyler...\n\n"[Select_CString(ROOT.Char.IsFemale, 'leydim', 'lordum' )], önümüzdeki panayır için hangi ürünleri tanıtmalıyız?""
+ stewardship_domain_special.1105.a:0 "Dinî nesnelere odaklanarak yerel azizleri onurlandıracağız!"
+ stewardship_domain_special.1105.a.tt:1 "İnsanların itikatleri ne kadar kuvvetliyse, bunu takdir etme olasılıkları o kadar yüksektir."
+ stewardship_domain_special.1105.b:0 "Olabildiğince çok yiyecek getirin!"
+ stewardship_domain_special.1105.b.tt:0 "Bölge halkının desteğe ihtiyacı varsa, insanların bunu takdir etme olasılığı daha yüksektir."
+ stewardship_domain_special.1105.c:0 "Diğer dinlere ait kutsal malları gösterirsek inançları zayıflayabilir!"
+ stewardship_domain_special.1105.c.tt:1 "İnsanların itikatleri ne kadar zayıfsa bunu takdir etme olasılıkları o kadar yüksektir."
+
+ stewardship_domain_special.1106.desc_religious_objects:0 "Kutsal şehirlerden gelen; insanları cezbeden ve büyüleyen dinî nesneler, ayrıca tüm tezgâhlarda birinci sınıf ürünler — dinî bir kutlama ve ticaret dolu bir hafta oldu!"
+ stewardship_domain_special.1106.desc_religious_food:0 "[local_baron.GetFaith.DevoteeMalePlural] tarafından sağlanan yiyecekler ve [local_baron.GetFaith.DevoteeFemalePlural] fuarda neredeyse her şeyden daha iyi sattırdı. — dinî bir kutlama ve ticaret dolu bir hafta oldu!"
+ stewardship_domain_special.1106.desc_religious_other:0 "[county.GetNameNoTier] halkı, yabancı dinlerle karşılaştı ve kendi toplumlarına her zamankinden daha fazla dua etme fırsatı buldular — dinî bir kutlama ve ticaret dolu bir hafta oldu!"
+ stewardship_domain_special.1106.a:0 "Bundan sonra bunu yıllık olarak yapman için iznin var."
+
+ stewardship_domain_special.1107.desc_religious_objects:0 ""[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], bu kutsal zımbırtılarla ne yapmamız gerekiyor?"\n\nGörünüşe göre, kutsal nesneler dindarlara beklediğim kadar çekici gelmedi ve [local_baron.GetTitledFirstName] birçoğunu satılmamış bir şekilde bıraktı."
+ stewardship_domain_special.1107.desc_religious_food:0 ""[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], bütün bu yiyeceklerle ne yapmamız gerekiyor?"\n\nGörünüşe göre, [local_baron.GetFaith.DevoteeFemalePlural] tarafından hazırlanan yemeklerin bölgeye ilahi bir etkisi olmadı. — ve neredeyse hiçbir şey satılmadı."
+ stewardship_domain_special.1107.desc_religious_other:0 ""[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], bu lanet zımbırtılarla ne yapmamız gerekiyor?"\n\nYabancı mallar sadece insanları pazarı ziyaret etmekten caydırdı. [local_baron.GetTitledFirstName] en kısa sürede onların yakması talimatı verdi ancak olan oldu zaten."
+ stewardship_domain_special.1107.a:0 "Çalkantılı bir başlangıç ama eminim ki yerel halk bunu halledebilir!"
+
+
+ # Building a Road chain, by Petter Vilberg
+ stewardship_domain_special.1301.increase_road_progress_1:0 "#V Yolun İlerlemesi#! #P 1#! artacak"
+ stewardship_domain_special.1301.increase_road_progress_2:0 "#V Yolun İlerlemesi#! #P 2#! artacak"
+ stewardship_domain_special.1301.increase_road_quality_1:0 "#V Yolun Kalitesi#! #P 1#! artacak"
+ stewardship_domain_special.1301.increase_road_quality_2:0 "#V Yolun Kalitesi#! #P 2#! artacak"
+ stewardship_domain_special.1301.decrease_road_quality_1:0 "#V Yolun Kalitesi#! #N 1#! azalacak"
+
+ stewardship_domain_special.1301.t:0 "Yol Projesi"
+ stewardship_domain_special.1301.steward_opening:0 "Vekilharcımın söylediğine göre"
+ stewardship_domain_special.1301.no_steward_opening:0 "Valilerimin söylediğine göre"
+ stewardship_domain_special.1301.desc:0 "[project_county.GetNameNoTier] bölgesinde yeni yollara ihtiyaç duyuluyor. Eski yolların birçoğu harap hâlde ve hatta kullanımı tehlikeli bir hâl almış durumda!\n\n[peasant_leader.GetTitledFirstName] isminde bir [Select_CString(peasant_leader.IsFemale, 'kadın', 'adam' )], bu inşaat projesinin doğal lideri olarak öne çıkarıldı."
+ stewardship_domain_special.1301.a:0 "Oldu bil."
+ stewardship_domain_special.1301.a.peasant_leader_tt:0 "[peasant_leader.GetTitledFirstName] gözetiminde proje başlıyor."
+ stewardship_domain_special.1301.b:0 "Vekilharcım bu meseleyi halledecek."
+ stewardship_domain_special.1301.a.steward_tt:0 "[steward.GetTitledFirstName] gözetiminde proje başlıyor."
+ stewardship_domain_special.1301.c:0 "Bu yollar atalarımız için yeterince iyiydi!"
+ stewardship_domain_special.1301.c.tt:0 "Bu, bizim için de yeterince iyi oldukları anlamına gelir!"
+
+
+ stewardship_domain_special.1311.t:0 "Yol: Uzak Bir Tımar"
+ stewardship_domain_special.1311.desc:0 "[project_county.GetNameNoTier] yolundaki çalışmalarda ilerleme kaydediliyor ancak şu anda yapımda olan kısım, her iki taraftaki iki köyden uzaktaki bir tepenin ötesine uzanıyor.\n\nHer iki köy de işçi sağlamak konusunda isteksiz ve tepenin ötesindeki arazinin kime ait olduğu konusunda bile bir belirsizlik söz konusu!"
+ stewardship_domain_special.1311.a:0 "O zaman her iki köyden de işçi alırız."
+ stewardship_domain_special.1311.b:0 "Oradaki işin ücretini kendim ödeyeceğim."
+ stewardship_domain_special.1311.c:0 "Bir belirsizlik varsa, arazi benim demektir!"
+
+ stewardship_domain_special.1312.t:0 "Yol: Düzenli Kullanım"
+ stewardship_domain_special.1312.desc:0 "Henüz tamamlanmasa da, tüccarlar yeni [project_county.GetNameNoTier] yolunda seyahat etmeye başladı bile.\n\n[project_leader.GetTitledFirstName] yolu kullananların yolun yapımına katkıda bulunması gerektiğini öneriyor."
+ stewardship_domain_special.1312.a:0 "Ya da hazineme katkıda bulunabilirler."
+ stewardship_domain_special.1312.b:0 "Ne özgün bir fikir... Bunu beğendim!"
+
+ stewardship_domain_special.1313.t:0 "Yol: Soyguncular"
+ stewardship_domain_special.1313.desc:0 "Tamamlanmamış bir yolun bile eşkıyası oluyormuş. [project_leader.GetTitledFirstName], köylerini terk etmekten korkan işçiler ve asla ulaşmayan malzemelerle ile ilgili sorunlar yaşıyor. İşler böyle giderse [project_county.GetNameNoTier] yolu hiç bitmeyecek."
+ stewardship_domain_special.1313.a:0 "Yol boyunca muhafızlar görevlendirin."
+ stewardship_domain_special.1313.b:0 "Umurumda değil. #EMP O yol bitirilecek#!!"
+
+ stewardship_domain_special.1314.t:0 "Yol: Askerin Ayak Sesleri"
+ stewardship_domain_special.1314.war:0 "Devam eden savaşla birlikte askerler ilerleyişlerini hızlandırmak için [project_county.GetNameNoTier] yolunun tamamlanmış kısımlarını kullanıyor."
+ stewardship_domain_special.1314.end:0 "\n\n[project_leader.GetTitledFirstName] yolun aşındığını ve hasar gördüğünü, takviye için işçilerin ikiye katlanması gerektiğini iddia ediyor."
+ stewardship_domain_special.1314.a:0 "Uğraşmamıza değmez."
+ stewardship_domain_special.1314.b:0 "Üzücü bir durum ama gerekli."
+
+ stewardship_domain_special.1315.t:0 "Yol: Askerin Ayak Sesleri"
+ stewardship_domain_special.1315.end:0 "\n\nÇok şükür ki ağır adımlarla yolu ezmek, yolun bozuk kısımlarını şekillendirmek için tam olarak gerekli olan şeymiş! Şansımız yaver giderse bu işi hızlıca bitirebiliriz ve askerler evlerine varabilir."
+ stewardship_domain_special.1315.a:0 "Onları cepheye yollayın!"
+ stewardship_domain_special.1315.b:0 "[project_leader.GetTitledFirstName] onlara ne emrediyorsa onu yapacaklar."
+
+ stewardship_domain_special.1316.t:0 "Yol: Yetkili Genişleme"
+ stewardship_domain_special.1316.desc:0 "Yeni yolun zaten tamamlanmış kısımları dahi büyük bir fark yaratmış durumda. Bunu gören [project_county.GetNameNoTier] bölgesindeki bir tüccar loncası yolu daha da genişletmek için bağışta bulunuyor."
+ stewardship_domain_special.1316.a:0 "Bu para yol çalışmalarına yardımcı olacak."
+ stewardship_domain_special.1316.b:0 "Bu para bana maddi anlamda iyi gelecek."
+
+ stewardship_domain_special.1317.t:0 "Yol: Bir Taverna"
+ stewardship_domain_special.1317.desc:0 "[project_county.GetNameNoTier] bölgesindeki yol çalışmaları gecikmeye uğradı. [project_leader.GetTitledFirstName] işçilerin, muhtemelen hancı olan biri tarafından ayartıldığı bildiriyor. Kendi ruhlarını ve diğer gezginlerin ruhunu yatıştırmak için yol kenarında bir taverna inşa ediyorlar." 
+ stewardship_domain_special.1317.a:0 "Devlet malı olarak mı? Tabii ki yapabilirler."
+ stewardship_domain_special.1317.b:0 "Onları yola geri gönderin!"
+
+ stewardship_domain_special.1318.t:0 "Yol: İlerleme"
+ stewardship_domain_special.1318.desc:0 "[project_leader.GetTitledFirstName], [project_county.GetNameNoTier] bölgesindeki yol çalışmasının gayet iyi gittiğini söylüyor.\n\n"Zemin daha sert ve beklediğimizden daha düz, [Select_CString(ROOT.Char.IsFemale, 'leydim', 'lordum' )].""
+ stewardship_domain_special.1318.a:0 "Yolu daha da genişletin!"
+ stewardship_domain_special.1318.b:0 "İşler tam da istediğim gibi gidiyor."
+ stewardship_domain_special.1318.c:0 "Maliyetleri düşürmek için mükemmel bir fırsat!"
+
+ stewardship_domain_special.1319.t:0 "Yol: Çalışma Etiği"
+ stewardship_domain_special.1319.desc:0 "Vekilharcım neredeyse şok olmuş gibi. "[project_county.GetNameNoTier] bölgesindeki yol yapımını inceliyordum. Köylüler beklediğimden çok daha verimliler. Öyle ki onları izlesem ben bile birkaç yeni şey öğrenebilirim!""
+ stewardship_domain_special.1319.a:0 "Bu bilgiyi başka bir yerde kullanabilir miyiz?"
+ stewardship_domain_special.1319.b:0 "Köylülerden bir şeyler öğrenmek mi? Düşüncesi bile iğrenç."
+
+ stewardship_domain_special.1320.t:0 "Yol: [peasant_leader.GetTitledFirstNamePossessiveNoTooltip] Marifetleri"
+ stewardship_domain_special.1320.desc:0 "Halktan birinin bana doğrudan hitap etmesi çok sık karşılaştığım bir durum değil fakat [peasant_leader.GetTitledFirstName], [project_county.GetNameNoTier] yol inşaatıyla ilgili rapor vermek üzere huzuruma çıkıyor.\n\n"İlk çizimlerde yolun bu alandan geçmesi planlanıyordu efendim. Ben oradaki araziyi iyi tanırım, orada sıkıntı yaşarız. Sadık bir köylünüz olarak size yolu yakındaki şu ormandan geçirmenizi öneriyorum.""
+ stewardship_domain_special.1320.a:0 "Senin kararına güveniyorum."
+ stewardship_domain_special.1320.b:0 "Çok uzak ve çok pahalı. Planladığım gibi yapacağız."
+
+ stewardship_domain_special.1321.t:0 "Yol: Uzmanlık Eksikliği"
+ stewardship_domain_special.1321.desc:0 ""Onlara doğruca tarlanın içinden geçmelerini söyleyip duruyorum ama [peasant_leader.GetTitledFirstName] yolu yakındaki ormandan geçirmek için ısrar ediyor!" diye şikâyetleniyor [steward.GetTitledFirstName]. [project_county.GetNameNoTier] yol çalışmasının verdiği yorgunluk gözlerinden okunuyor.\n\nAncak, [peasant_leader.GetTitledFirstName] ısrar etmeyi sürdürüyor "Bu alandaki toprak düzensiz ve yeterince yoğun değil efendim! Ormanlık arazi bir yol için çok daha iyi.""
+ stewardship_domain_special.1321.a:0 "Haddini bil, köylü!"
+ stewardship_domain_special.1321.b:0 "[peasant_leader.GetTitledFirstName] en iyisini biliyor gibi görünüyor..."
+
+ stewardship_domain_special.1391.t:0 "Yol: Eksik Liderlik"
+ stewardship_domain_special.1391.desc:0 "[project_leader.GetTitledFirstName] ayrılınca, [project_county.GetNameNoTier] içindeki yol çalışması da ilerlemeyi durdurdu. Eğer bu iş bitirilecekse, başka birisi görevlendirilmeli."
+ stewardship_domain_special.1391.a:0 "[peasant_leader.GetTitledFirstName] yetenekli biri gibi görünüyor."
+ stewardship_domain_special.1391.b:0 "[steward.GetTitledFirstName] için ipleri ele alma zamanı."
+
+ stewardship_domain_special.1392.t:0 "Yol: Kayıpları Önleme"
+ stewardship_domain_special.1392.desc:0 "[project_county.GetNameNoTier] bölgesinin kaybıyla, yolu tamamlamanın bana pek faydası olmayacak. En azından proje için toplanan vergiler yolda boşa harcanmak yerine hazinemde duruyor."
+ stewardship_domain_special.1392.a:0 "Hepsi kaybolmadı."
+
+ stewardship_domain_special.1396.t:0 "Yolun Sonu"
+ stewardship_domain_special.1396.desc:0 "[project_county.GetNameNoTier] yolu sonunda tamamlandı.\n\n[project_leader.GetTitledFirstName] söze giriyor: "Bu yol... sanki biraz fazla işlev odaklı oldu efendim.""
+ stewardship_domain_special.1396.a:0 "Yolun lüks olmasına gerek yok. Bu gayet iyi."
+
+ stewardship_domain_special.1397.desc:0 "[project_county.GetNameNoTier] boyunca yol ağı sonunda tamamlandı.\n\n"Bu yollar, insanları uzun yıllar boyunca gitmeleri gereken yere taşıyacak." diyor [project_leader.GetTitledFirstName]."
+ stewardship_domain_special.1397.a:0 "Faydasını görmek için sabırsızlanıyorum!"
+ stewardship_domain_special.1397.b:0 "[peasant_leader.GetTitledFirstNameNoTooltip]! Sana vereceğim daha çok iş var!"
+
+ stewardship_domain_special.1398.desc:0 "[project_county.GetNameNoTier] boyunca yol ağı sonunda tamamlandı.\n\n"Bu yollar, kontluk için âdeta hayat damarı niteliğinde olacak!" diyor [project_leader.GetTitledFirstName], mütevazılıktan uzak bir biçimde."
+ stewardship_domain_special.1398.a:0 "Faydasını görmek için sabırsızlanıyorum!"
+ stewardship_domain_special.1398.b:0 "[peasant_leader.GetTitledFirstNameNoTooltip]! Sana vereceğim daha çok iş var!"
+
+ stewardship_domain_special.1399.desc:0 "[project_county.GetNameNoTier] boyunca yol ağı sonunda tamamlandı.\n\n"Bu yollar tüm krallıktaki en iyi yollar, [Select_CString(ROOT.Char.IsFemale, 'leydim', 'lordum' )]!" diye [project_leader.GetTitledFirstName], gururlu olduğu her hâlinden belli bir şekilde."
+ stewardship_domain_special.1399.a:0 "Bu yolu kullanmak için sabırsızlanıyorum!"
+ stewardship_domain_special.1399.b:0 "[peasant_leader.GetTitledFirstNameNoTooltip]! Sana vereceğim daha çok iş var!"
+
+ # A Missing Village, by Petter Vilberg
+ stewardship_domain_special.1401.t:0 "Kayıp Bir Köy"
+ stewardship_domain_special.1401.desc:0 "Parmaklarım, evraklardaki az bir mum ışığıyla aydınlanan yere geldi. Bir şeyler doğru değil... [county.GetNameNoTier] bölgesinden elime geçirebildiğim bütün kayıtları araştırıyorum.\n\nSonunda her şey açığa çıkıyor. Görünen o ki koca bir köyü vergi kayıtlarında es geçmişiz!"
+ stewardship_domain_special.1401.a:0 "[county.GetNameNoTierNoTooltip] bölgesindeki tahsildar durumu araştırmalı!"
+ stewardship_domain_special.1401.a.tt:0 "Tahsildar soruşturmayı yapacak"
+ stewardship_domain_special.1401.b:0 "Köyü bizzat ben ziyaret etmeliyim."
+ stewardship_domain_special.1401.b.tt:0 "Soruşturmayı ben kendim yapacağım"
+ stewardship_domain_special.1401.c:0 "Köyler sürekli kayboluyor zaten, sorun değil."
+
+ stewardship_domain_special.1411.desc:0 "[county.GetNameNoTier] bölgesindeki tahsildarım [collector.GetTitledFirstName], mevzubahis "kayıp" köyü gidip bizzat görmem gerektiğini söylüyor.\n\nGünlerce süren yolculuktan sonra köye varıyorum. Sıradan bir köy gibi duruyor. Buna rağmen [collector.GetTitledFirstName] ısrarlarına devam ediyor. "Efendim, izin verin köyü size biraz gezdireyim. Burası benim memleketim.""
+ stewardship_domain_special.1411.a:0 "Pekâlâ, gezdir bakalım."
+ stewardship_domain_special.1411.a.tt:0 "[collector.GetTitledFirstName] köyünü gezdirecek"
+ stewardship_domain_special.1411.b:0 "Yeterince zamanımı çaldın zaten!"
+ stewardship_domain_special.1411.b.tt:0 "Niye buraya geldim ki!?"
+
+ stewardship_domain_special.1412.desc:0 "[collector.GetTitledFirstName] çimenliklerde dolaşırken, muhafızlarımla birlikte köye doğru ilerliyoruz. İlk binayı geçtikten sonra bir kız kendisini atımın önüne savuruyor.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], bize ne olacak? Bahsettiğiniz miktarı ödememizin mümkünatı yok.""
+ stewardship_domain_special.1412.a:0 "Meselenizi önümüzdeki senenin tahsildarıyla çözeceksiniz."
+ stewardship_domain_special.1412.b:0 "Borçlarını ödeme vaktiniz geldi. Şimdi."
+ stewardship_domain_special.1412.b.flavor:0 "Değerli her şeye el koyun, kalanını da yakın!"
+
+ stewardship_domain_special.1413.desc:0 "[collector.GetTitledFirstName] bana köyü gösterirken sadece cılız inekleri, toprak kazan tavukları ve tarladan neredeyse eli boş dönen köylüleri görüyorum. Bundan bahsettiğimde o da kendi görüşünü belirtiyor.\n\n"Bu insanlar besi hayvanlarını zor besliyorlar. Eğer onlardan daha fazlasını istersem açlıktan ölürler.""
+ stewardship_domain_special.1413.a:0 "Sanırım bir vergi muafiyeti çıkartabilirim..."
+ stewardship_domain_special.1413.b:0 "Ödeyecekler, başka çare yok."
+ stewardship_domain_special.1413.c:0 "Bana bunu mu göstermek istiyordun? Hain!"
+ stewardship_domain_special.1413.c.tt:0 "Bu köye ne yapılması gerektiğine karar vereceğim"
+
+ stewardship_domain_special.1414.desc:0 "Muhafızlarımla beraber ayrılırken arkamızda kalan köyden dumanlar yükseliyor.\n\nBazen yenilere yol açmak için eskileri ortadan kaldırmanız gerekir."
+ stewardship_domain_special.1414.a:0 "Yönetmenin farklı yolları var."
+
+ stewardship_domain_special.1421.collector_opening:0 "Kayıp köyü teftiş etmesi için gönderdiğimiz tahsildar dönmedi. Sıkı güvenlikle teftişi kendim yapmaya karar verdim ve çok geçmeden sorunun ne olduğunu anladım..."
+ stewardship_domain_special.1421.self_opening:0 "Muhafızlarımın eşliğinde köye vardığımda halkın niye vergi ödemeyi bıraktığını öğreniyorum."
+ stewardship_domain_special.1421.desc:0 "\n\nEvler terk edilmiş... Ortalıkta bir tane bile insan yok. Yolladığım tahsildarın nerede olduğu muamma.\n\nMuhafızlarım harabe evlerin etrafında dolaşırken etrafı bir ürperti sarıyor. Muhafızlarımdan birinin bağırmasıyla bu ürperti yerini paniğe bırakıyor."
+ stewardship_domain_special.1421.a:0 "Ne buldunuz!?!"
+ stewardship_domain_special.1421.a.tt:0 "Burada her şey olabilir"
+ stewardship_domain_special.1421.b:0 "Ayrılıyoruz. Hemen."
+
+ stewardship_domain_special.1422.desc:0 "Bağıran muhafız kapıdan kolunun altıda bir çocukla beraber çıkıyor. Görünen o ki çocuk evin içinde saklanmaya çalışıyormuş.\n\nYönelttiğim sorulara rağmen çocuk köyün başına gelenler hakkında hiçbir şey söylemiyor — hatta bir kelime dahi etmiyor."
+ stewardship_domain_special.1422.a:0 "Zavallı çocuk, bir evi bile yok... Onu evlatlık edinmeliyim!"
+ stewardship_domain_special.1422.b:0 "Çocuğu en yakın köye bırakın."
+ stewardship_domain_special.1422.c:0 "Köyü bu lanetli çocukla beraber yakın."
+
+ stewardship_domain_special.1423.foundling:0 "Küçük [foundling.GetTitledFirstName] artık sarayda güven içerisinde. Öbür çocuklarla oyun oynuyor ve hatta onlarla konuşuyor.\n\n"
+ stewardship_domain_special.1423.no_foundling:0 "Sarayın her zamanki gürültüsü gördüklerimi unutturmaya yetmiyor."
+ stewardship_domain_special.1423.desc:0 "O sessiz köyün görüntüsü hâlâ dün gibi aklımda. Ne kadar uğraşsak da daha önce orada yaşamış bir kişi dahi bulamadık."
+ stewardship_domain_special.1423.a:0 "Bu lanetli topraklara bir daha kimse yerleşmemeli."
+ stewardship_domain_special.1423.b:0 "Zaman, her şeye olduğu gibi bu köye de tekrar yaşam verecektir."
+
+ stewardship_domain_special.1424.desc:0 "Terk edilmiş evde beni bekleyen yegâne şey kötü bir koku ve istiflenmiş cesetler. Çürüdükleri için ölüm sebeplerini anlaşılamaz hâle gelmiş vaziyette,"
+ stewardship_domain_special.1424.collector_end:0 "aralarında en yeni ceset ise tahsildarıma ait. Bedeni herhangi bir iz olmaksızın duvara yaslanmış bir hâlde duruyor."
+ stewardship_domain_special.1424.self_end:0 "en yeni cesetler bile bir ipucu vermiyor."
+ stewardship_domain_special.1424.a:0 "Yakın bu lanetli yeri."
+ stewardship_domain_special.1424.b:0 "Cesetleri gömün ve yeniden yerleşim kurun."
+
+ stewardship_domain_special.1425.desc:0 "Cesetleri ortadan kaldırması kolaydı. Asıl zorluk sakinlerinin tamamı ölmüş bir köye yerleştirilecek aileler bulmak. Neyse ki yeni toprakların cazibesine hayır deme gafleti gösteren köylüler genellikle mızrağın ucunda durduklarında fikirlerini değiştiriyorlar.\n\nTüm bu macera bana çok şey kattı!"
+ stewardship_domain_special.1425.a:0 "Ah bir de şu öksürükten kurtulsam!"
+ 
+ stewardship_domain_special.1426.desc:0 "Belki biraz kaba bir yöntem ama ateş iş görüyor. Bir süre alevlerin terk edilmiş evleri yutmasını izliyorum. Sanırım burada görmem gereken her şeyi gördüm."
+ stewardship_domain_special.1426.a:0 "Eve dönme vakti."
+
+ stewardship_domain_special.1431.desc:0 "Günler süren yolculuktan sonra kayıtlarda olmayan köyü buldum. Dışarıdan baktığında işler gayet de yolunda gözüküyor. İlginçtir, köylüler oldukça samimi bir şekilde vergilerini ödediklerini iddia ediyorlar.\n\nAnlaşılan baronluğun tahsildarı [collector.GetTitledFirstName], benden bir şeyler saklıyor..."
+ stewardship_domain_special.1431.a:0 "[collector.GetFirstNameNoTooltip], seninle bir görüşmemiz gerek..."
+ stewardship_domain_special.1431.a.tt:0 "[collector.GetFirstName] ile yüzleşeceğim"
+ stewardship_domain_special.1431.b:0 "Köylüleri toplayın. Tekrar vergi ödeyecekler."
+
+
+ stewardship_domain_special.1432.desc:0 ""Vergiler mi? #EMP Hangi vergi?#! [Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )] oturun bir sakinleşin, konuşalım. #EMP Hangi kontluk?#! [county.GetNameNoTier]? Ah, #EMP o vergiler#!... O vergiler #EMP şeyde#! yahu... Kontluğun savunmasına harcandı bildiğim kadarıyla!" [barony.GetNameNoTier] baronluğunun tahsildarı [collector.GetTitledFirstName], karşısında bulduğu askerlerin de etkisiyle dehşete kapılmıştı.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )] lütfen, kendimi affettirmek için her şeyi yaparım!""
+ stewardship_domain_special.1432.a:0 "Bir daha gün ışığı görmeyeceksin."
+ stewardship_domain_special.1432.b:0 "Bana hayatını borçlu olan birisini kullanabilirim."
+ stewardship_domain_special.1432.b.collector_loyal:0 "Şükran ve Sadakat"
+ stewardship_domain_special.1432.b.collector_bad:0 "Kaçma Şansı"
+ stewardship_domain_special.1432.b.collector_bad.tt:0 "[collector.GetFirstNameNoTooltip] kaçıyor!"
+ stewardship_domain_special.1432.c:0 "Her şey mi? Solucan saymaya ne dersin?!"
+
+ stewardship_domain_special.1433.desc:0 "Hain pislik! Onu bağışlamayı teklif etmeme rağmen bir süre sonra elinde bir bıçakla bana saldırıyor.\n\nNeyse ki muhafızlar bana zarar vermeden onun icabına bakıyor."
+ stewardship_domain_special.1433.a:0 "Onu hemen boğun."
+ stewardship_domain_special.1433.b:0 "Bir daha gün ışığı görmeyeceksin, [collector.GetFirstNameNoTooltip]!"
+
+ stewardship_domain_special.1441.desc:0 "Vergi ödemek köylüler için kimi zaman çok zor bir hâle gelebiliyor. Ancak unutulmamalı ki, bu zorluklar da hayatın bir parçası. Ne kadar nezaket göstersem de bu durum değişmeyecek."
+ stewardship_domain_special.1441.a:0 "Çok şey öğrendim."
+
+ stewardship_domain_special.1442.desc:0 "Köylülerimden istediğim vergiler bazen o kadar fazla oluyor ki hayatı durma noktasına getiriyor. Sabırlı bir [ROOT.Char.GetTitleTierName], gerektiğinde vergileri düşürerek daha müreffeh bir ülkeye sahip olmasını bilir."
+
+ stewardship_domain_special.1443.t:1 "$stewardship_domain_special.1401.t$: Geliştirilmiş Vergilendirme"
+ stewardship_domain_special.1443.opening:0 "Yine bir gün vergi defterlerini incelerken aklım [barony.GetNameNoTier] bölgesindeki kayıp köye takılıyor."
+ stewardship_domain_special.1443.end:0 "\n\nNeyse ki o zamandan bu yana çok ilerleme katettik, [barony.GetNameNoTier] ise hiç olmadığı kadar yüksek gelir getiriyor!"
+ stewardship_domain_special.1443.a:0 "Mükemmel!"
+
+ stewardship_domain_special.1444.t:1 "$stewardship_domain_special.1401.t$: Vergi Kaçırma"
+ stewardship_domain_special.1444.end:0 "\n\nİşler artık daha farklı olsa da, hoşgörü ve müsamahanın daha büyük kayıplara sebep olabildiğini öğrendim. Bir köy dahi vergilerden muaf olmanın yolunu bulsa, bu durum hızlıca tüm ülkeye yayılabiliyor."
+ stewardship_domain_special.1444.a:0 "Felaket."
+
+ stewardship_domain_special.1445.t:1 "$stewardship_domain_special.1401.t$: Terk Edilmiş"
+ stewardship_domain_special.1445.end:0 "\n\nHer geçen gün yeni kayıp köyler ortaya çıkıyor. Tahsildarlarımın bu konuda tek bir açıklaması var. Yüksek vergiler sonucu köylüler açlıktan kırılıyor, durumu olanlar ise farklı kontluklara kaçıyorlar."
+ stewardship_domain_special.1445.a:0 "Eğer yaşamsal ihtiyaçlarını karşılayamıyorlarsa..."
+
+ stewardship_domain_special.1451.t:1 "$stewardship_domain_special.1401.t$: Hafızalara Kazınmış"
+ stewardship_domain_special.1451.desc:0 "Gecenin ortasında uyanıyorum. Ne yaparsam yanayım [barony.GetNameNoTier] baronluğundaki o köy yanarken çocuğun suçlayıcı bakışları aklımdan çıkmıyor."
+ stewardship_domain_special.1451.a:0 "Niye bu olay üstümde bu kadar baskı yapıyor?"
+ stewardship_domain_special.1451.b:0 "Tam da unuttum derken!"
+
+ # Domesday Book, by Stephen Arthur and Sean Hughes
+ stewardship_domain_special.1500.t.a:0 "Büyük Sayım"
+ stewardship_domain_special.1500.t.b:0 "Tapu Kitabı"
+ stewardship_domain_special.1500.desc:1 "[domesday_steward.GetCouncilTitle] [domesday_steward.GetTitledFirstName] harika bir fikir buldu; ülkemdeki bütün mülklerin kaydını bir sayım ile kayda geçirmek ve arazilerimin kesin bir kaydını tutmak.\n\nBu bilgileri derleyerek ülkedeki yönetim ve vergilendirme işlerinde daha çok bilgi sahibi olabilirim — tabii ilk kez kayda geçirmeye başlayacağımız için bu sayım biraz masraflı olabilir."
+ stewardship_domain_special.1500.a:0 "Her dönüm, her baş hayvan kayda geçirilecek."
+ stewardship_domain_special.1500.a.tt:0 "#F Etraflı bir sayım pahalı ancak yüksek kalitede olacaktır.#!"
+ stewardship_domain_special.1500.b:0 "Arazilerimin basit bir özeti yeterli olacaktır."
+ stewardship_domain_special.1500.b.tt:0 "#F Üstünkörü bir sayım ucuz olacak ancak nispeten düşük kalitede olacaktır.#!"
+ stewardship_domain_special.1500.c:0 "Niye uğraşayım? Tebaam bana ne borçlu olduğunu bilir."
+ stewardship_domain_special.1500.c.tt:0 "Diğer bütün vasallarım"
+ stewardship_domain_special.1500.quality_increase.tt:0 "Sayımın #P kalitesi artacak#!"
+ stewardship_domain_special.1500.quality_decrease.tt:0 "Sayımın #N kalitesi azalacak#!"
+ stewardship_domain_special.1500.quality_based_taxes:0 "Tamamlanmış sayımın kalitesine göre"
+ stewardship_domain_special.1500.every_county_control:0 "[control|E] sayım kalitesine göre artacak"
+ stewardship_domain_special.1500.every_county_summary:0 "Orantılı olarak #V 5 Sene#! daha yüksek [holding|E] vergisi alacağız!"
+ stewardship_domain_special.1500.survey_not_completed:0 "Sayım tamamlanmadıysa"
+
+ stewardship_domain_special.1501.desc:0 "Mareşalim [domesday_marshal.GetTitledFirstName] memurlarımın, hırsızlar ve eşkıyalar tarafından öldürüleceğinden endişe duyuyor. Tamamlanmamış bir sayım defteri bile suçlular için gelecek hedefler listesi görevi görebilir!\n\nMemurlarımı güvenli tutmak için, [domesday_marshal.GetFirstNameNoTooltip] her memur grubunun yanına bir muhafız birliği göndermeyi teklif ediyor."
+ stewardship_domain_special.1501.a:0 "Memurlarım için en iyi koruma kanunlardır!"
+ stewardship_domain_special.1501.a.tt:0 "Memurlarım düşük [control|E] sahibi kontluklarda saldırıya uğrayabilir."
+ stewardship_domain_special.1501.b:0 "Memurlarımı korumak için milisler oluşturun."
+ stewardship_domain_special.1501.b.success:0 "Milisler memurlarımı koruyabiliyor"
+ stewardship_domain_special.1501.b.failure:0 "Milisler memurlarımı koruyamıyor"
+ stewardship_domain_special.1501.c:0 "Her memur grubuna bir [ROOT.Char.Custom('MountedWarriorTerm')] gönder."
+ stewardship_domain_special.1501.c.tt:0 "Memurlarım yollardaki tehditlerden kurtulacak."
+
+ stewardship_domain_special.1510.opening:0 "[upset_priest.Custom2('AppropriateGreeting', ROOT.Char)]"
+ stewardship_domain_special.1510.desc_opening:0 "Emin ol sabah kalkınca gördüğün ilk şeyin vergi memuru olması güzel bir olay değil! Üstelik kapımda aksi suratlı memurları gören çok sayıda [upset_priest.GetFaith.GetAdherentNameNoTooltip], onları gördükten hizmetlerimden yararlanmaktan vazgeçmiş!"
+ stewardship_domain_special.1510.desc_ending:0 "\n\nSize olan borcumu ödemek beni memnun etse de, kilisenin işleri ruhanidir; dünyevi değil ve sizin memurlarınızın benim işime karışmaya en ufak bir hakkı yoktur!"
+ stewardship_domain_special.1510.desc_ending_not_endorsed:0 "\n\nKilisenin işleri ruhanidir, dünyevi değil ve sizin dalkavuklarınızın benim işime karışmaya en ufak bir hakkı yoktur!"
+ stewardship_domain_special.1510.a:0 "Beğense de, beğenmese de [upset_priest.GetFaith.HouseOfWorshipPlural] hakkında sayım yapılacak!"
+ stewardship_domain_special.1510.b:0 "Haklı, [upset_priest.GetFaith.HouseOfWorshipPlural] bizzat [upset_priest.GetFaith.HighGodNamePossessive] idaresindedir."
+ stewardship_domain_special.1510.b.tt:0 "[upset_priest.GetTitledFirstNamePossessive] topraklarını sayımdan muaf tutacağım"
+ stewardship_domain_special.1510.c:0 "Dinî metinler aracılığıyla onu ikna edeceğim."
+ stewardship_domain_special.1510.c.success:0 "[upset_priest.GetTitledFirstName] ikna oluyor"
+ stewardship_domain_special.1510.c.success.tt:0 "[upset_priest.GetTitledFirstName] sayımın haklılığına ikna oluyor"
+ stewardship_domain_special.1510.c.failure:0 "[upset_priest.GetTitledFirstName] ikna olmuyor"
+ stewardship_domain_special.1510.c.failure.tt:0 "[upset_priest.GetTitledFirstName] sayımın haklılığına ikna olmuyor"
+ 
+ stewardship_domain_special.1520.opening:0 "[concerned_noble.Custom2('AppropriateGreeting', ROOT.Char)]"
+ stewardship_domain_special.1520.desc:0 "Her sene tahta karşı olan yükümlülüklerimi içtenlikle yerine getiriyorum fakat her geçen gün bir başka memur kapımda bitip sayım yapmak istediğini söylüyor!\n\nMahremiyetimi işgal edecek kadar mı bana güvenmiyorsunuz?"
+ stewardship_domain_special.1520.a:0 "Tabii ki size güveniyoruz! Adamlarım bir daha sizi rahatsız etmeyecek."
+ stewardship_domain_special.1520.a.tt:0 "[concerned_noble.GetTitledFirstNamePossessive] topraklarını sayımdan muaf tutacağım"
+ stewardship_domain_special.1520.b:0 "Topraklarımda ne olduğunu bilmem gerekiyor. Bu işin istisnası yok."
+ stewardship_domain_special.1520.c:0 "Ne oldu bir şey mi saklıyorsun? En iyisi memur yerine ajan yollayayım."
+ stewardship_domain_special.1520.c.tt:0 "[concerned_noble.GetTitledFirstNamePossessive] bir [Concept( 'secret', 'sırrını' )|E] keşfedeceğim"
+
+ stewardship_domain_special.1530.desc:0 "[city_mayor.GetTitledFirstName], [guild_county.GetNameNoTier] bölgesindeki [guild_town.GetNameNoTierNoTooltip] Marangoz Loncasının sayıma rıza göstermediğini belirtiyor.\n\nOnlar, bunun kendilerine verilen imtiyazların bir ihlali olduğunu ve kendi işlerine karışılamayacağını belirtiyorlar. Bunun yanında işlerini özgürce idare edebilmek için memurlarımın geri dönmesini istiyorlar."
+ stewardship_domain_special.1530.a:0 "İmtiyaz umurumda değil, loncalar da sayıma katılacak!"
+ stewardship_domain_special.1530.b:0 "Onları hizmetleri karşılığında sayımdan muaf tutabilirim..."
+ stewardship_domain_special.1530.c:0 "Otoriteme karşı mı çıkıyorlar!? Derhâl sözleşmelerini iptal edin!"
+
+ stewardship_domain_special.1540.desc.a:0 "[domesday_robbed_county.GetNameNoTier] yakınlarında memurlarım bir grup eşkıya tarafından saldırıya uğradı. Memurlarımın bir kısmı hayatını kaybederken, taşıdıkları sayım defterleri de kayboldu."
+ stewardship_domain_special.1540.desc.b:0 "[domesday_robbed_county.GetNameNoTier] yakınlarında memurlarım bir grup eşkıya tarafından saldırıya uğradı. Yanlarına gönderdiğim muhafızlar sayesinde bu eşkıyalar memurlarıma en ufak bir zarar dahi veremediler."
+ stewardship_domain_special.1540.a:0 "[domesday_robbed_county.GetNameNoTierNoTooltip] bölgesini boş ver. Orayı saymasak da olur..."
+ stewardship_domain_special.1540.b:0 "Yollardaki güvenliği arttır ve daha çok memur yolla!"
+ stewardship_domain_special.1540.c:0 "[domesday_robbed_county.GetNameNoTierNoTooltip] bölgesinin tüm sakinleri bana karşı çıkmanın sonucunu öğrenmiştir!"
+
+ stewardship_domain_special.1550.desc:1 "Sayım bilgilerini geçen senenin vergileriyle karşılaştırdığımda bazı tuhaflıklar gözüme çarpıyor. Ya tebaam bana vermesi gerekenden fazla vergi veriyor, ya da sayımda bir şeyler feci bir şekilde yanlış!\n\nAraştırmama devam etmemle birlikte öğreniyorum ki [domesday_steward.GetCouncilTitle] [domesday_steward.GetTitledFirstName], topraklarının sayıma dâhil olmaması için toprak ağalarından rüşvet alıyormuş!"
+ stewardship_domain_special.1550.a:0 "Sayımı iptal edin ve onun bütün masrafları geri ödemesini sağlayın."
+ stewardship_domain_special.1550.b:0 "Rüşvet parasını o arazileri doğru tasniflemede kullanın."
+ stewardship_domain_special.1550.c:1 "[domesday_steward.GetTitledFirstNameNoTooltip] tutuklanacak,[domesday_steward.GetCouncilTitle] günleri sona erdi."
+
+ stewardship_domain_special.1560.desc:0 "[city_mayor.GetTitledFirstName],[trade_county.GetNameNoTier] bölgesindeki seyyar tüccarların sayımdan şikâyet ettiğini söylüyor.\n\nTüccarların önemli bir kısmı [ROOT.Char.GetPrimaryTitle.GetNameNoTier] içerisinde yaşamadıklarını, dolayısıyla sayıma dâhil edilmelerinin bir saçmalık olduğunu söylerken, önemli bir kısmı ayrılıp bir daha geri dönmeyeceğini ifade ediyor."
+ stewardship_domain_special.1560.a:0 "Herkes, yaşasa da yaşamasa da sayılacak!"
+ stewardship_domain_special.1560.b:0 "Eğer bana harç öderlerse onları muaf tutabilirim."
+ stewardship_domain_special.1560.c:0 "Güzel bir noktaya değinmişler."
+
+ stewardship_domain_special.1590.desc.start:0 "Topraklarımda aylar süren sayım nihayet sona erdi."
+ stewardship_domain_special.1590.perfect.desc:0 "Gözetimim altında, memurlarım arazilerimin mükemmel bir kaydını derledi. En son tavuğa kadar yazılmış bu kayıt benim her sene tam ve eksiksiz vergi toplamamı sağlayacak!"
+ stewardship_domain_special.1590.excellent:0 "Memurlarım harfi harfine kayıtları derliyor"
+ stewardship_domain_special.1590.excellent.desc:0 "Memurlarım arazilerimim neredeyse mükemmel bir kaydını derledi. Bu kayıt benim her sene tam ve eksiksiz vergi toplamamı sağlayacak!"
+ stewardship_domain_special.1590.good:0 "Memurlarım yaklaşık doğru olan bir kayıt derliyor"
+ stewardship_domain_special.1590.good.desc:0 "Memurlarım arazilerimim yaklaşık doğru olan bir kaydını derledi. Bu, tahsildarlarım vergi toplarken önemli bir şey kaçırmamalarını sağlayacak."
+ stewardship_domain_special.1590.mediocre:0 "Memurlarım kabaca doğru bir kayıt derliyor"
+ stewardship_domain_special.1590.mediocre.desc:0 "Memurlarım kabaca doğru bir kayıt derleyebildi. Az çok işe yarasa da tahsildarların vergi toplarken bir şeyleri gözden kaçıracağı kesin."
+ stewardship_domain_special.1590.poor:0 "Bu sayım o kadar yanlış ki kullanılamaz bile"
+ stewardship_domain_special.1590.poor.desc:0 "Ne yazık ki memurlarım öyle bir kayıt derledi ki hiçbir işe yaramıyor! Bu sene tahsildarlarım yine kendi bildikleri gibi devam edecekler..."
+ stewardship_domain_special.1590.none.desc:0 "\n\nŞaşırtıcı bir şekilde, ülkemdeki her toprak kendisini bir şekilde sayımdan muaf tutmayı başarmış. Sonuç olarak bu kayıt ülkemdeki topraklar hakkında hiçbir bilgi içermiyor."
+ stewardship_domain_special.1590.every_county:0 "[THIS.Char.GetPrimaryTitle.GetName] içindeki her kontluk"
+ stewardship_domain_special.1590.every_nonexcluded_county:0 "[THIS.Char.GetPrimaryTitle.GetName] içindeki, muaf tutulmamış her kontluk"
+ stewardship_domain_special.1590.high_quality.desc:1 "\n\n[domesday_final_steward.GetCouncilTitle] [domesday_final_steward.GetFirstName] gururlu bir edayla bitmiş kayıtları nerede saklayacağımızı soruyor."
+ stewardship_domain_special.1590.low_quality.desc:1 "\n\n[domesday_final_steward.GetCouncilTitle] [domesday_final_steward.GetFirstName] mahcup bir edayla ortaya çıkan sonucun kendisini de şaşırttığını dile getiriyor."
+ stewardship_domain_special.1590.no_steward.desc:1 "\n\nBelki de bir [ROOT.GetCouncillorPosition( 'councillor_steward' ).GetPositionName] sahibi olsaydım, bu sayım daha iyi olabilirdi."
+ stewardship_domain_special.1590.high_quality.a:0 "Sadece tahsildarlarım erişebilsin."
+ stewardship_domain_special.1590.high_quality.a.tt:0 "#F Kayıtlara erişimi kısıtlamak, hangi topraklardan faydalanabileceğim konusunda sadece benim bilgi edinmemi sağlar.#!"
+ stewardship_domain_special.1590.high_quality.b:0 "Kayıtları halka dağıtın!"
+ stewardship_domain_special.1590.high_quality.b.tt:0 "#F Kayıtların halka açık olması onları bilgilendirecek ve onlara ilham kaynağı olacaktır. Bu da topraklarımdaki gelişmişlik oranını yükseltir.#!"
+ stewardship_domain_special.1590.poor_quality.a:0 "Para ve zaman kaybından başka bir şey değil..."
+ stewardship_domain_special.1590.poor_quality.b:0 "[domesday_final_steward.GetFirstNameNoTooltip], beceriksizliğinden ötürü kovulsun!"
+ stewardship_domain_special.1590.poor_quality.d.tt:0 "[domesday_final_steward.GetFirstNameNoTooltip] kovulacak"
+ stewardship_domain_special.1590.poor_quality.c:0 "Bu başarısızlığını canıyla ödeyecek!"
+
+ # Visit displeased county, by Stephen Arthur
+ stewardship_domain_special.3010.t:0 "[stewardship_domain_special_3010_county.GetNameNoTier] Bölgesinde Ayaklanma"
+ stewardship_domain_special.3010.desc:0 "[stewardship_domain_special_3010_county.GetNameNoTier] bölgesindeki insanlar benim yönetimimden hoşnutsuz görünüyor.\n\nEğer kontluğu kendim gidip görseydim, onları otoritemin gerekliliği konusunda #EMP aydınlatabilirdim.#!"
+ stewardship_domain_special.3010.a:0 "Onlara nasıl birisi olduğumu göstereceğim!"
+ stewardship_domain_special.3010.b:0 "Zamanımı israf edemem."
+
+ stewardship_domain_special.3012.t:0 "[stewardship_domain_special_3010_county.GetNameNoTier] Ziyareti"
+ stewardship_domain_special.3012.desc.a:0 "[stewardship_domain_special_3010_baron.GetTitledFirstName] özür dileyerek buradaki insanların raydan çıktığını ve otoritemi sorgulamamayı öğrenmeleri gerektiğini söylüyor.Sadece sorgulamamaları değil, aynı zamanda sadakat göstermeli ve itaat etmeliler.\n\nOnları boyun eğmeye nasıl razı edebilirim?"
+ stewardship_domain_special.3012.desc.b:0 "Görünen o ki buradaki insanlar raydan çıkmış durumda. Otoritemi sorgulamamayı öğrenmeleri gerekiyor. Sadece sorgulamamaları değil, aynı zamanda sadakat göstermeli ve itaat etmeliler.\n\nOnları boyun eğmeye nasıl razı edebilirim?"
+ stewardship_domain_special.3012.a:0 "Altınla onlara cömertliğimi göstermeliyim."
+ stewardship_domain_special.3012.b:0 "Onları yapacağım bir konuşmayla etkilemeliyim."
+ stewardship_domain_special.3012.b.success:0 "İnsanlar konuşmamdan etkileniyor"
+ stewardship_domain_special.3012.b.failure:0 "Sözlerim onları etkilemedi"
+ stewardship_domain_special.3012.c:0 "Köylüler küstahlıklarının cezasını çekecekler!"
+
+ stewardship_domain_special.3014.t.a:0 "[stewardship_domain_special_3010_county.GetNameNoTier] bölgesinde otorite sağlandı"
+ stewardship_domain_special.3014.t.b:0 "[stewardship_domain_special_3010_county.GetNameNoTier] bölgesinde huzursuzluk"
+ stewardship_domain_special.3014.spent_gold.desc:0 "Harcadığımıza değdi. Onlara yaptığım cömert bağışlar bölge halkının otoriteme saygı duymasını sağlamışa benziyor."
+ stewardship_domain_special.3014.popular_appeal_fail_learn_success.desc:0 "[stewardship_domain_special_3010_county.GetNameNoTier] ahalisi bana itaat etmemeye ant içmiş gibi gözüküyor. Konuşma yaparken ilk başta zorlansam da, sonlara doğru kendimi bulduğumu düşünüyorum."
+ stewardship_domain_special.3014.popular_appeal_fail_learn_fail.desc:0 "Söylediklerim resmen bir kulaktan girip diğerinden çıktı. Neyi yanlış yapıyorum bilmiyorum. [stewardship_domain_special_3010_county.GetNameNoTier] halkı bana itaat etmemeye ant içmiş gibi gözüküyor."
+ stewardship_domain_special.3014.popular_appeal_success.desc:0 "Söylediklerim onları etkilemiş olmalı keza [stewardship_domain_special_3010_county.GetNameNoTier] halkı az da olsa otoriteme saygı duymaya başlamış durumda."
+ stewardship_domain_special.3014.intimidate_success.desc:0 "[stewardship_domain_special_3010_county.GetNameNoTier] halkı nihayet laftan anlamaya başlamış gibi gözüküyor. Benim gücümden korkmaları onları bana daha bağlı hâle getiriyor."
+
+ stewardship_domain_special.3014.a:0 "Altın her zaman boş eller bulur."
+ stewardship_domain_special.3014.b:0 "En azından birkaç şey öğrendim."
+ stewardship_domain_special.3014.c:0 "Ülkeyi sözlerimle yönetiyorum."
+ stewardship_domain_special.3014.e:0 "Korkmaya devam ettikleri müddetçe sıkıntı yok demektir."
+ stewardship_domain_special.3014.f:0 "Bu çok can sıkıcı, diplomasimi iyileştiremeyecek miyim?"
+ stewardship_domain_special.3014.f.tt:0 "Devlet yönetimi hakkında hiçbir şey öğrenmedim."
+
+ stewardship_domain_special.8031.t:0 "$stewardship_domain_special.8001.t$: Yaşam Getirme"
+ stewardship_domain_special.8031.aqueduct:0 "[county.GetNameNoTier] kontluğundaki su kemerinin son taşlarının dizilmesine şahitlik ediyorum. Vekilharcım ilk birkaç damla suyu yakalayıp bardağı uzatıyor."
+ stewardship_domain_special.8031.irrigation:0 "[county.GetNameNoTier] kontluğunda yağmur suyunu hendeklere taşıyacak düzeneğin bitişine şahitlik ediyorum. Suyun etraflıca dağılması saatler alıyor,"
+ stewardship_domain_special.8031.interlude:0 "\n\nYer hâlâ elverişsiz ve yapılacak daha çok iş var,"
+ stewardship_domain_special.8031.full_scope:0 "fakat su hâlâ taze"
+ stewardship_domain_special.8031.scoped_down:0 "özellikle de projem beklediğim kadar iyi gitmedi. Yine de su hâlâ taze"
+ stewardship_domain_special.8031.conclusion:0 "ve yeri gelince bu topraklara yaşam getirecek. Dereler ırmaklara dönüşünce, bu işin bana öğrettiklerini unutmayacağım."
+ stewardship_domain_special.8031.a:0 "Yıllar sonra bile bunun faydasını göreceğiz."
+
+ # The Irrigation Project, by Petter Vilberg
+ stewardship_domain_special.8001.progress_is_made:0 "Kayda Değer İlerleme"
+ stewardship_domain_special.8001.continued_problems:0 "Devam Eden Sorunlar"
+ stewardship_domain_special.8001.troubled_construction:0 "Sorunlu İnşaat"
+ stewardship_domain_special.8001.slow_progress:0 "Yavaş İlerleme"
+ stewardship_domain_special.8001.high_death_count:0 "Yüksek Ölüm Oranı"
+ stewardship_domain_special.8001.project_continues:0 "#V Proje devam ediyor#!"
+ stewardship_domain_special.8001.project_completed:0 "#P Proje tamamlandı#!"
+
+ stewardship_domain_special.8001.t:0 "Sulama"
+ stewardship_domain_special.8001.desc:2 "[county.GetNameNoTier] etrafındaki arazinin elverişsiz olmasından dolayı bayağı boş kalmış toprak var.\n\n[steward.GetCouncilTitle] [steward.GetFirstNameNoTooltip] bir sulama projesinin toprağı işlenebilir hâle getirebileceğini, dolayısıyla toprağın değerini arttırabileceğini söylüyor."
+ stewardship_domain_special.8001.a:0 "Bir su kemeri tasarlayacağım!"
+ stewardship_domain_special.8001.b:0 "Bir hendek ağına ihtiyacımız var."
+ stewardship_domain_special.8001.c:0 "Bir sebebi var ki o topraklar boş."
+ stewardship_domain_special.8001.if_successful:0 "Eğer başarılı olursa:"
+
+ stewardship_domain_special.8011.t:1 "$stewardship_domain_special.8001.t$: Bütçeyi Aşmak"
+ stewardship_domain_special.8011.desc:0 "Atadığım yardımcı mimar huzuruma çıkarak [county.GetNameNoTier] bölgesindeki su kemeri inşaatının planlanandan daha yüksek bir bütçeye sahip olması gerektiğini söylüyor.\n\n"Bu şartlar altında her inşaat projesinin normalden pahalıya patlayacağını görüyorsunuzdur efendim.""
+ stewardship_domain_special.8011.a:1 "[steward.GetFirstNameNoTooltip], bana bunun yerine başkasını bul!"
+ stewardship_domain_special.8011.a.tt:0 "#F Bu seferkinden umutluydum...#!"
+ stewardship_domain_special.8011.b:0 "Haklısın. Ne lazımsa al."
+
+ stewardship_domain_special.8012.t:1 "$stewardship_domain_special.8001.t$: Devam Eden Sorunlar"
+ stewardship_domain_special.8012.desc:0 "Benim ülkemde bir tane bile mi işini bilen bir mimar yok?! [county.GetNameNoTier] bölgesindeki su kemeri inşaatını yöneten yeni yardımcı mimarım da bütçeyi aşmamız gerektiğini söylüyor!\n\nBıktım artık "bitirilemez, mümkün değil" tarzı bahanelerden!"
+ stewardship_domain_special.8012.a:0 "Al parayı ama bu sefer bitsin istiyorum!"
+ stewardship_domain_special.8012.a.tt:0 "#F Basit bir su kemeri inşa etmek ne kadar tutabilir ki?#!"
+ stewardship_domain_special.8012.b:0 "Daha çok köylü bul."
+
+ stewardship_domain_special.8013.t:1 "$stewardship_domain_special.8001.t$: Sorunlu İnşaat"
+ stewardship_domain_special.8013.desc:0 "Malzemeler yanlış yere bırakılmış, ortaya çıkan görüntü aklımdakiyle uyuşmuyor... Halbuki onlara her şeyi çok net bir şekilde anlatmıştım. "Benim isteyeceğim tarzda bir su kemeri" emrimin hangi kısmını anlamamış olabilirler ki?"
+ stewardship_domain_special.8013.a:0 "İpleri ele almanın vakti geldi."
+ stewardship_domain_special.8013.b:0 "Kaybedilen zaman için daha köylüleri işe alalım."
+
+ stewardship_domain_special.8021.t:1 "$stewardship_domain_special.8001.t$: Beklenmedik Zorluklar"
+ stewardship_domain_special.8021.desc:2 "[county.GetNameNoTier] bölgesindeki sulama projesi beklediğimden çok daha zor bir şekilde ilerliyor.\n\n[steward.GetFirstNameNoTooltip] zeminin "düşünülenden iki kat daha taşlı ve delikli." olduğunu söylüyor."
+ stewardship_domain_special.8021.a:0 "Köylüler de iki kat daha çok çalışsınlar o zaman!"
+ stewardship_domain_special.8021.b:0 "Sabretmeli ve işi doğru bir şekilde yapmalıyız."
+ stewardship_domain_special.8021.c:0 "Bitiş tarihine yetiştirmek için yapabileceğiniz bir şeyler olmalı!"
+
+ stewardship_domain_special.8022.t:1 "$stewardship_domain_special.8001.t$: Talihsiz Koşullar"
+ stewardship_domain_special.8022.desc:0 ""[county.GetNameNoTier] bölgesindeki sulama projesi hızla devam ediyor efendim" diye rapor ediyor vekilharcım. Nihayet her şey yolunda diye düşünürken cümlesine kaldığı yerden devam ediyor. "Tek sıkıntı, bazı köylüler bu çalışma koşullarını kaldıramıyorlar gibi gözüküyor.""
+ stewardship_domain_special.8022.a:0 "Bundan sonra bazı işleri daha yakından takip etmem gerekebilir."
+ stewardship_domain_special.8022.b:0 "Bana hizmet etmek için yaşamıyorlar mı zaten?"
+ stewardship_domain_special.8022.c:0 "Ah... İşçi değişiklikeri gerekebilir."
+ stewardship_domain_special.8022.c.tt:0 "#F Onlara ne için ihtiyaç olduğunu söyleme.#!"
+
+ stewardship_domain_special.8023.t:1 "$stewardship_domain_special.8001.t$: Yavaş İlerleme"
+ stewardship_domain_special.8023.desc:1 ""Efendim, [county.GetNameNoTier] bölgesindeki sulama projesi beklenenden daha yavaş ilerliyor" diye bilgilendiriyor vekilharcım. "Hatta biraz... Fazla yavaş. Şöyle düşünün, bu hızla giderse projenin tamamlandığını ancak torunlarımız görebilecek."\n\nAcaba dalga mı geçiyor diye düşünmeden edemiyorum..."
+ stewardship_domain_special.8023.a:0 "Şefleri değiştirin ve onlara yeni kırbaçlar verin."
+ stewardship_domain_special.8023.b:0 "Ne kadar işçi lazımsa işe alın!"
+ stewardship_domain_special.8023.c:0 "Belki de beklentileri düşürmemiz gerekiyordur..."
+ stewardship_domain_special.8023.c.tt:0 "Bu işe verilen gayreti düşürecek"
+
+ #Localisation for completion of the governance lifestyle.
+ stewardship_domain_special.9999.t:0 "Hepsi Kayıt Altında"
+ stewardship_domain_special.9999.desc_opening:0 "Yönetimin her alanında bir fikrim, görüşüm ve daha önemlisi bilgim var. Uzun zamandır bu alanlara odaklanmam artık daha güvenle karar verebilmemi sağlıyor."
+ stewardship_domain_special.9999.desc_education_4:0 "\n\nBaşarılarımı değerlendirirken daha öğrenebileceğim bir şey kalmadığını fark ediyorum!"
+ stewardship_domain_special.9999.desc_not_education:0 "\n\nBaşarılarımı değerlendirirken yönetim sanatında ciddi yol katettiğimi fark ediyorum!"
+ stewardship_domain_special.9999.a:0 "Yönetim eğitiminde hiçbir şey elimden kaçmadı!"
+ stewardship_domain_special.9999.a.tt:1 "[Concept( 'stewardship_lifestyle', 'İdare Yaşam Tarzında' )|E] ulaşabileceğim en yüksek noktaya ulaşmışım gibi hissediyorum."
