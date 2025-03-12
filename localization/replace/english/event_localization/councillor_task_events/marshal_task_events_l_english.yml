@@ -1,16 +1,16 @@
 ﻿l_english:
- marshal_task.0301.t: "Yeni Komutan"
- marshal_task.0301.desc: "[councillor.GetCouncilTitle] [councillor.GetTitledFirstName] gelecek vaadeden birini tanıtıyor.\n\n"Efendim, kendisi sizin kadar soylu olmayabilir ama [commander.GetTitledFirstName] yanınızda tutmak isteyeceğiniz biri.""
- marshal_task.0301.a: "Peki, [commander.GetFirstNameNoTooltip] bana hizmet edecek."
- marshal_task.0301.b: "Benim sarayım böyle serserilerin yeri değildir!"
-  
- marshal_task.0302.opening: "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
- marshal_task.0302.desc: "[commander.GetTitledFirstName], [commander.Custom('CommanderTraitSkillDescription')] konusuna yatkın."
- marshal_task.0302.desc.known: "Ben de bu konuda uzman olduğum için becerilerini en iyi nasıl kullanabileceğini öğretebilirim."
- marshal_task.0302.desc.unknown: "Bu konuda pek tecrübem olmasa da yeteneklerini geliştirmesi için yardım etmeye çalışabilirim."
- marshal_task.0302.a: "Elbette, hemen eğitime başlayın."
- marshal_task.0302.b: "Hayır, [commander.GetFirstNameNoTooltip] dövüş becerisine odaklanmalı."
-  
+ marshal_task.0301.t:0 "Yeni Komutan"
+ marshal_task.0301.desc:0 "[councillor.GetCouncilTitle] [councillor.GetTitledFirstName] gelecek vaadeden birini tanıtıyor.\n\n"Efendim, kendisi sizin kadar soylu olmayabilir ama [commander.GetTitledFirstName] yanınızda tutmak isteyeceğiniz biri.""
+ marshal_task.0301.a:0 "Peki, [commander.GetFirstNameNoTooltip] bana hizmet edecek."
+ marshal_task.0301.b:0 "Benim sarayım böyle serserilerin yeri değildir!"
+ 
+ marshal_task.0302.opening:0 "[councillor.Custom2('AppropriateGreeting', ROOT.Char)]"
+ marshal_task.0302.desc:1 "[commander.GetTitledFirstName], [commander.Custom('CommanderTraitSkillDescription')] konusuna yatkın."
+ marshal_task.0302.desc.known:0 "Ben de bu konuda uzman olduğum için becerilerini en iyi nasıl kullanabileceğini öğretebilirim."
+ marshal_task.0302.desc.unknown:0 "Bu konuda pek tecrübem olmasa da yeteneklerini geliştirmesi için yardım etmeye çalışabilirim."
+ marshal_task.0302.a:0 "Elbette, hemen eğitime başlayın."
+ marshal_task.0302.b:0 "Hayır, [commander.GetFirstNameNoTooltip] dövüş becerisine odaklanmalı."
+
  marshal_task.0304.t: "Komutan Terfisi"
  marshal_task.0304.desc: "[councillor.GetCouncilTitle] [councillor.GetTitledFirstName], tereddütlü bir yüz ifadesiyle [beneficiary_of_nepotism.GetTitledFirstNameNoTooltip] ile birlikte huzuruma çıkıyor.\n\n"Efendim, [advocate_of_nepotism.GetTitledFirstName|U], [beneficiary_of_nepotism.GetTitledFirstNameNoTooltip] için iyi bir komutan olacağı konusunda fikirlerini belirtti ve onun ordularımıza komutan olarak atanması gerektiğini ifade etti. Elbette son karar sizin olacaktır..."\n\n[beneficiary_of_nepotism.GetTitledFirstNameNoTooltip] bu durumdan pek de memnun görünmüyordu."
  marshal_task.0304.a_clan: "[ROOT.Char.GetHouse.GetBaseNameNoTooltip] ailesinin tüm fertlerine ordunun kapısı açıktır."
@@ -20,103 +20,103 @@
  marshal_task.0304.b.success: "[advocate_of_nepotism.GetTitledFirstNameNoTooltip] teklifinizi makul buldu"
  marshal_task.0304.b.failure: "[advocate_of_nepotism.GetTitledFirstNameNoTooltip] teklifinizi hakaret olarak algıladı"
  marshal_task.0304.c: "Benim ordum çocuk yuvası #EMP değildir#!!"
-  
+
  marshal_task.0306.opening: "[advocate_of_nepotism.Custom2('AppropriateGreetingNegative', SCOPE.sC('councillor_liege'))]"
  marshal_task.0306.desc: "[beneficiary_of_nepotism.GetTitledFirstNameNoTooltip] için [ROOT.Char.Custom('KnightCultureNoTooltipLowercase')] olarak atanacağını söylediğinizde sözünüze itibar etmiştim fakat görüyorum ki yanılmışım. Ağzınızdan çıkanlara değer verme gafletine düştüğüm için beni affedin."
  marshal_task.0306.a: "Her şey bir yanlış anlaşılmadan ibaret!"
-  
- marshal_task.1001.t: "Milisler Firar Etti"
- marshal_task.1001.desc: "[councillor.GetCouncilTitle] [councillor.GetTitledFirstName] tarafından uygulanan katı askere alma taktikleri ters tepti.\n\nKöylerden ve kasabalardan daha fazla asker toplanırken birçok kişi de askere girmemek için askerlerimizden kaçıyor!"
- marshal_task.1001.a: "Daha fazla askere ihtiyacım var, daha aza değil!"
- marshal_task.1001.notification: "Milisler Firar Etti"
-  
- marshal_task.1002.t: "Kullanılamayan Tarlalar"
- marshal_task.1002.desc: "[councillor.GetCouncilTitle] tarafından hizmetinize alınan milislerin çoğunluğu bazı beklenmedik sorunlara sebep oldu.\n\n[councillor.GetTitledFirstName] önüne gelen herkesi askere aldığı için [county.GetNameNoTier] topraklarındaki birçok tarla boş kaldı."
- marshal_task.1002.a: "Böyle bir şey yaşanmamalı."
- marshal_task.1002.notification: "Milisler Tarlaları Boş Bıraktı"
-  
- marshal_task.1003.t: "Muhafız Azlığı"
- marshal_task.1003.desc: "[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('councillor'))|U] [councillor.GetTitledFirstName] tarafından gerçekleştirilen büyük ölçekli askere alım çalışmaları nedeniyle [county.GetNameNoTier] topraklarında eli ayağı tutan pek erkek kalmadı.\n\nYerel muhafız sayısının azalmasıyla da suç artışa geçti."
- marshal_task.1003.a: "[councillor.GetFirstNameNoTooltip], ne yaptın..."
- marshal_task.1003.notification: "Muhafızlar Askere Alındı"
-  
- marshal_task.1101.t: "Düzenli Askerî Hizmet"
- marshal_task.1101.desc: "Milislerin [councillor.GetCouncilTitle] [councillor.GetTitledFirstName] tarafından dikkatli bir şekilde seçilmesi sayesinde [county.GetNameNoTier] topraklarında hiçbir tarla insan gücü eksikliği nedeniyle boş kalmadı.\n\nTuttuğu kayıtlar da vergi dönemi geldiğinde oldukça faydalı olacak..."
- marshal_task.1101.a: "Aferin, [councillor.GetFirstNameNoTooltip]."
- marshal_task.1101.notification: "Düzenli Milis Hizmeti"
-  
- marshal_task.1102.t: "Artan Asker Varlığı"
- marshal_task.1102.desc: "[councillor.GetTitledFirstName], [county.GetNameNoTier] topraklarında milisleri düzene sokmak için uğraşıyor ve görünüşe göre artan asker sayısının bölge üzerinde çeşitli faydalar olmuş.\n\nHaydutlar azalmış, kaçakçılar ise korkularından hareket edemiyor."
- marshal_task.1102.a: "Benim hükmüm altında olanlar her zaman güvende hissedebilir."
- marshal_task.1102.notification: "Artan Asker Varlığı"
- marshal_task.1103.notification: "Milisler Muharebeye Hazır"
-  #### END (Jonas W) 
-  
- marshal_task.2001.t: "Komutan Yaralandı"
- marshal_task.2001.opening: "[commander.GetTitledFirstName] düello eğitimi sırasında yaralandı!"
- marshal_task.2001.ending: "\n\n[councillor.GetCouncilTitle] [councillor.GetTitledFirstName] kanamayı durdurmayı başardı ama [commander.GetFirstName] bir süre daha istirahat etmeli."
- marshal_task.2001.a: "Gerçek silahlar mı kullanıyorlar?!"
- marshal_task.2001.notification: "Savaşçı Talim Sırasında Yaralandı"
-  
- marshal_task.2101.notification: "[commander.GetShortUINameNoTooltip] özellik kazandı: [commander.Custom('CommanderTraitBeingTaught')]"
-  #AGOT Modified 
- #marshal_task.2102.notification: "Şövalye Gelişti: [commander.GetShortUIName]"
- marshal_task.2102.notification: "Kaptan Gelişti: [commander.GetShortUIName]"
- marshal_task.2103.notification: "Dövüşçüler Talim Yaptı: [trained_knight.GetShortUIName]"
- marshal_task.0302.notification.a: "Komutan Çok Gelişti: [commander.GetShortUIName]"
- marshal_task.0302.notification.b: "Komutan Gelişti: [commander.GetShortUIName]"
-  #AGOT Modified 
- #marshal_task.0303.notification.a: "Şövalye Çok Gelişti: [commander.GetShortUIName]"
- marshal_task.0303.notification.a: "Kaptan Çok Gelişti: [commander.GetShortUIName]"
-  #AGOT Modified 
- #marshal_task.0303.notification.c: "Şövalye Kılıç Ustası Oldu: [commander.GetShortUIName]"
- marshal_task.0303.notification.c: "Kaptan Kılıç Ustası Oldu: [commander.GetShortUIName]"
-  
- marshal_task.2002.t: "Komutan Ağır Yaralandı"
- marshal_task.2002.eye: "\n\n[councillor.GetCouncilTitle] hemen bir hekim çağırdı ama gözünü kurtarmayı başaramadılar."
- marshal_task.2002.leg: "\n\n[councillor.GetCouncilTitle] hemen bir hekim çağırdı ama bacağını kurtarmayı başaramadılar."
- marshal_task.2002.hand: "\n\n[councillor.GetCouncilTitle] hemen bir hekim çağırdı ama kolunu kurtarmayı başaramadılar."
- marshal_task.2002.a: "En azından akli dengesi yerinde."
- marshal_task.2002.b: "Savaşa atıyla girmek zorunda kalacak."
- marshal_task.2002.c: "Lütfen kılıç tutan elini hâlâ kullanabildiğini söyleyin!"
- marshal_task.2002.generic_title: "Savaşçı Talim Sırasında Yaralandı"
- marshal_task.2002.notification_eye: "[commander.GetTitledFirstName], [councillor.GetCouncilTitle] tarafından eğitilirken düelloda bir gözünü kaybetti!"
- marshal_task.2002.notification_leg: "[commander.GetTitledFirstName], [councillor.GetCouncilTitle] tarafından eğitilirken düelloda bir bacağını kaybetti!"
- marshal_task.2002.notification_hand: "[commander.GetTitledFirstName], [councillor.GetCouncilTitle] tarafından eğitilirken düelloda bir elini kaybetti!"
-  
- marshal_task.2003.t: "Komutanın Ölümü"
- marshal_task.2003.ending: "\n\n[councillor.GetCouncilTitle] hemen bir hekim çağırdı ama [commander.GetFirstName] kısa süre içerisinde kan kaybından öldü."
- marshal_task.2003.a: "Ordum için büyük bir kayıp."
-  
- marshal_task.2101.desc: "[councillor.GetCouncilTitle] [councillor.GetTitledFirstName] bir teklif getiriyor.\n\n"[commander.Custom('CommanderTraitSkillDescription')] konusunda [commander.GetTitledFirstName] ile [teacher.GetTitledFirstName] birkaç ortak noktaya sahip. [commander.GetFirstName] belki [teacher.GetFirstName] tarafından sıkı bir şekilde eğitilirse çok güzel şeyler öğrenebilir.""
- marshal_task.2101.a: "Öyle yapalım."
- marshal_task.2101.b: "[commander.GetFirstName] dövüş becerisine odaklanmalı!"
-  
- marshal_task.3001.t: "Yerel Direniş"
- marshal_task.3001.desc: "Sayın efendim,\n[county.GetNameNoTier] topraklarını düzene koyma çalışmalarım sürerken karşı çıkanlar olmaya başladı.\nBirkaç kişiyi rahatsız etmiş olabilirim. Bunlarına arasında tüm önemli valiler ve köy yaşlıları da var."
- marshal_task.3001.a: "Nasıl böyle bir şey yaptın [councillor.GetFirstNameNoTooltip]..."
- marshal_task.3001.notification: "Halk İtibarı Kaybedildi"
-  
- marshal_task.3002.desc: "Sayın efendim...\n\nİstemeden bazı hatalar yapmışım. Bölgedeki kontrolünüzü arttırmak amacıyla [county.GetNameNoTier] topraklarında reformlar yapıyordum fakat görünüşe göre halk [ROOT.Char.GetTitleTierName] kim onu bile bilmiyor..."
- marshal_task.3002.a: "İşleri #EMP daha da#! kötü mü yaptın?!"
- marshal_task.3002.notification: "[councillor.GetCouncilTitle] Kontrol Kaybediyor"
-  
- marshal_task.3003.t: "Hayal Kırıklığı"
- marshal_task.3003.desc: "Selamlar, efendim,\n[councillor.GetCouncilTitle] [councillor.GetTitledFirstName] adlı kişiden şikâyetçiyim!\n[county.GetNameNoTier] topraklarına geldiğinden beri ne geleneklerimize ne de inançlarımıza uymadan kafasına göre değişiklikler yapmaya başladı."
- marshal_task.3003.a: "Biraz daha yumuşak davranabilir misin [councillor.GetFirstNameNoTooltip]?"
- marshal_task.3003.notification: "Mutsuz Baron"
-  
- marshal_task.3101.t: "Yerel Faydalar"
- marshal_task.3101.desc: "Sayın efendim,\n[county.GetNameNoTier] topraklarını düzene sokma çalışmalarım devam ediyor.\nTabii ki yaptıklarımdan yararlanan sadece siz değilsiniz. [ROOT.Char.GetTitleTierName] için sonsuz sadakatini göstermiş olan [county.GetNameNoTier] halkı daha önce bu kadar minnettarlık sergilememişti."
- marshal_task.3101.a: "Aferin, [councillor.GetCouncilTitle]!"
- marshal_task.3101.notification: "[councillor.GetCouncilTitle] Saygı Kazandı"
-  
- marshal_task.3102.t: "Minnettarlık"
- marshal_task.3102.desc: "Selamlar, efendim,\n[councillor.GetCouncilTitle] [councillor.GetTitledFirstName] gece gündüz demeden [county.GetNameNoTier] topraklarını düzene sokmak için çalışıyor ve faydalarını şimdiden görmeye başladık.\nBize bu kadar becerikli birini gönderdiğiniz için size teşekkür ediyorum!"
- marshal_task.3102.a: "Güzel işler yapmaya devam et [councillor.GetFirstNameNoTooltip]."
- marshal_task.3102.notification: "[councillor.GetCouncilTitle] Vasalı Etkiledi"
-  
- marshal_task.3103.notification: "[acclaimed_knight] Köylüleri Yatıştırdı"
-  
- marshal_task.4002.notification: "Düzensiz Kraliyet Muhafızları"
- task_manage_guards_disorganized_modifier: "$marshal_task.4002.notification$"
+
+ marshal_task.1001.t:0 "Milisler Firar Etti"
+ marshal_task.1001.desc:0 "[councillor.GetCouncilTitle] [councillor.GetTitledFirstName] tarafından uygulanan katı askere alma taktikleri ters tepti.\n\nKöylerden ve kasabalardan daha fazla asker toplanırken birçok kişi de askere girmemek için askerlerimizden kaçıyor!"
+ marshal_task.1001.a:0 "Daha fazla askere ihtiyacım var, daha aza değil!"
+ marshal_task.1001.notification:0 "Milisler Firar Etti"
+
+ marshal_task.1002.t:0 "Kullanılamayan Tarlalar"
+ marshal_task.1002.desc:0 "[councillor.GetCouncilTitle] tarafından hizmetinize alınan milislerin çoğunluğu bazı beklenmedik sorunlara sebep oldu.\n\n[councillor.GetTitledFirstName] önüne gelen herkesi askere aldığı için [county.GetNameNoTier] topraklarındaki birçok tarla boş kaldı."
+ marshal_task.1002.a:0 "Böyle bir şey yaşanmamalı."
+ marshal_task.1002.notification:0 "Milisler Tarlaları Boş Bıraktı"
+
+ marshal_task.1003.t:0 "Muhafız Azlığı"
+ marshal_task.1003.desc:0 "[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('councillor'))|U] [councillor.GetTitledFirstName] tarafından gerçekleştirilen büyük ölçekli askere alım çalışmaları nedeniyle [county.GetNameNoTier] topraklarında eli ayağı tutan pek erkek kalmadı.\n\nYerel muhafız sayısının azalmasıyla da suç artışa geçti."
+ marshal_task.1003.a:0 "[councillor.GetFirstNameNoTooltip], ne yaptın..."
+ marshal_task.1003.notification:0 "Muhafızlar Askere Alındı"
+
+ marshal_task.1101.t:0 "Düzenli Askerî Hizmet"
+ marshal_task.1101.desc:0 "Milislerin [councillor.GetCouncilTitle] [councillor.GetTitledFirstName] tarafından dikkatli bir şekilde seçilmesi sayesinde [county.GetNameNoTier] topraklarında hiçbir tarla insan gücü eksikliği nedeniyle boş kalmadı.\n\nTuttuğu kayıtlar da vergi dönemi geldiğinde oldukça faydalı olacak..."
+ marshal_task.1101.a:0 "Aferin, [councillor.GetFirstNameNoTooltip]."
+ marshal_task.1101.notification:0 "Düzenli Milis Hizmeti"
+
+ marshal_task.1102.t:0 "Artan Asker Varlığı"
+ marshal_task.1102.desc:0 "[councillor.GetTitledFirstName], [county.GetNameNoTier] topraklarında milisleri düzene sokmak için uğraşıyor ve görünüşe göre artan asker sayısının bölge üzerinde çeşitli faydalar olmuş.\n\nHaydutlar azalmış, kaçakçılar ise korkularından hareket edemiyor."
+ marshal_task.1102.a:0 "Benim hükmüm altında olanlar her zaman güvende hissedebilir."
+ marshal_task.1102.notification:0 "Artan Asker Varlığı"
+ marshal_task.1103.notification:0 "Milisler Muharebeye Hazır"
+ #### END (Jonas W)
+
+ marshal_task.2001.t:0 "Komutan Yaralandı"
+ marshal_task.2001.opening:0 "[commander.GetTitledFirstName] düello eğitimi sırasında yaralandı!"
+ marshal_task.2001.ending:0 "\n\n[councillor.GetCouncilTitle] [councillor.GetTitledFirstName] kanamayı durdurmayı başardı ama [commander.GetFirstName] bir süre daha istirahat etmeli."
+ marshal_task.2001.a:0 "Gerçek silahlar mı kullanıyorlar?!"
+ marshal_task.2001.notification:0 "Savaşçı Talim Sırasında Yaralandı"
+ 
+ marshal_task.2101.notification:0 "[commander.GetShortUINameNoTooltip] özellik kazandı: [commander.Custom('CommanderTraitBeingTaught')]"
+ #AGOT Modified
+ #marshal_task.2102.notification:0 "Şövalye Gelişti: [commander.GetShortUIName]"
+ marshal_task.2102.notification:0 "Kaptan Gelişti: [commander.GetShortUIName]"
+ marshal_task.2103.notification:0 "Dövüşçüler Talim Yaptı: [trained_knight.GetShortUIName]"
+ marshal_task.0302.notification.a:0 "Komutan Çok Gelişti: [commander.GetShortUIName]"
+ marshal_task.0302.notification.b:0 "Komutan Gelişti: [commander.GetShortUIName]"
+ #AGOT Modified
+ #marshal_task.0303.notification.a:0 "Şövalye Çok Gelişti: [commander.GetShortUIName]"
+ marshal_task.0303.notification.a:0 "Kaptan Çok Gelişti: [commander.GetShortUIName]"
+ #AGOT Modified
+ #marshal_task.0303.notification.c:0 "Şövalye Kılıç Ustası Oldu: [commander.GetShortUIName]"
+ marshal_task.0303.notification.c:0 "Kaptan Kılıç Ustası Oldu: [commander.GetShortUIName]"
+
+ marshal_task.2002.t:0 "Komutan Ağır Yaralandı"
+ marshal_task.2002.eye:0 "\n\n[councillor.GetCouncilTitle] hemen bir hekim çağırdı ama gözünü kurtarmayı başaramadılar."
+ marshal_task.2002.leg:0 "\n\n[councillor.GetCouncilTitle] hemen bir hekim çağırdı ama bacağını kurtarmayı başaramadılar."
+ marshal_task.2002.hand:0 "\n\n[councillor.GetCouncilTitle] hemen bir hekim çağırdı ama kolunu kurtarmayı başaramadılar."
+ marshal_task.2002.a:0 "En azından akli dengesi yerinde."
+ marshal_task.2002.b:0 "Savaşa atıyla girmek zorunda kalacak."
+ marshal_task.2002.c:0 "Lütfen kılıç tutan elini hâlâ kullanabildiğini söyleyin!"
+ marshal_task.2002.generic_title:0 "Savaşçı Talim Sırasında Yaralandı"
+ marshal_task.2002.notification_eye:0 "[commander.GetTitledFirstName], [councillor.GetCouncilTitle] tarafından eğitilirken düelloda bir gözünü kaybetti!"
+ marshal_task.2002.notification_leg:0 "[commander.GetTitledFirstName], [councillor.GetCouncilTitle] tarafından eğitilirken düelloda bir bacağını kaybetti!"
+ marshal_task.2002.notification_hand:0 "[commander.GetTitledFirstName], [councillor.GetCouncilTitle] tarafından eğitilirken düelloda bir elini kaybetti!"
+
+ marshal_task.2003.t:0 "Komutanın Ölümü"
+ marshal_task.2003.ending:0 "\n\n[councillor.GetCouncilTitle] hemen bir hekim çağırdı ama [commander.GetFirstName] kısa süre içerisinde kan kaybından öldü."
+ marshal_task.2003.a:0 "Ordum için büyük bir kayıp."
+
+ marshal_task.2101.desc:0 "[councillor.GetCouncilTitle] [councillor.GetTitledFirstName] bir teklif getiriyor.\n\n"[commander.Custom('CommanderTraitSkillDescription')] konusunda [commander.GetTitledFirstName] ile [teacher.GetTitledFirstName] birkaç ortak noktaya sahip. [commander.GetFirstName] belki [teacher.GetFirstName] tarafından sıkı bir şekilde eğitilirse çok güzel şeyler öğrenebilir."" #krutygetarts
+ marshal_task.2101.a:0 "Öyle yapalım."
+ marshal_task.2101.b:0 "[commander.GetFirstName] dövüş becerisine odaklanmalı!"
+
+ marshal_task.3001.t:0 "Yerel Direniş"
+ marshal_task.3001.desc:0 "Sayın efendim,\n[county.GetNameNoTier] topraklarını düzene koyma çalışmalarım sürerken karşı çıkanlar olmaya başladı.\nBirkaç kişiyi rahatsız etmiş olabilirim. Bunlarına arasında tüm önemli valiler ve köy yaşlıları da var."
+ marshal_task.3001.a:0 "Nasıl böyle bir şey yaptın [councillor.GetFirstNameNoTooltip]..."
+ marshal_task.3001.notification:0 "Halk İtibarı Kaybedildi"
+
+ marshal_task.3002.desc:0 "Sayın efendim...\n\nİstemeden bazı hatalar yapmışım. Bölgedeki kontrolünüzü arttırmak amacıyla [county.GetNameNoTier] topraklarında reformlar yapıyordum fakat görünüşe göre halk [ROOT.Char.GetTitleTierName] kim onu bile bilmiyor..."
+ marshal_task.3002.a:0 "İşleri #EMP daha da#! kötü mü yaptın?!"
+ marshal_task.3002.notification:0 "[councillor.GetCouncilTitle] Kontrol Kaybediyor"
+
+ marshal_task.3003.t:0 "Hayal Kırıklığı"
+ marshal_task.3003.desc:0 "Selamlar, efendim,\n[councillor.GetCouncilTitle] [councillor.GetTitledFirstName] adlı kişiden şikâyetçiyim!\n[county.GetNameNoTier] topraklarına geldiğinden beri ne geleneklerimize ne de inançlarımıza uymadan kafasına göre değişiklikler yapmaya başladı."
+ marshal_task.3003.a:0 "Biraz daha yumuşak davranabilir misin [councillor.GetFirstNameNoTooltip]?"
+ marshal_task.3003.notification:0 "Mutsuz Baron"
+
+ marshal_task.3101.t:0 "Yerel Faydalar"
+ marshal_task.3101.desc:0 "Sayın efendim,\n[county.GetNameNoTier] topraklarını düzene sokma çalışmalarım devam ediyor.\nTabii ki yaptıklarımdan yararlanan sadece siz değilsiniz. [ROOT.Char.GetTitleTierName] için sonsuz sadakatini göstermiş olan [county.GetNameNoTier] halkı daha önce bu kadar minnettarlık sergilememişti."
+ marshal_task.3101.a:0 "Aferin, [councillor.GetCouncilTitle]!"
+ marshal_task.3101.notification:0 "[councillor.GetCouncilTitle] Saygı Kazandı"
+
+ marshal_task.3102.t:0 "Minnettarlık"
+ marshal_task.3102.desc:0 "Selamlar, efendim,\n[councillor.GetCouncilTitle] [councillor.GetTitledFirstName] gece gündüz demeden [county.GetNameNoTier] topraklarını düzene sokmak için çalışıyor ve faydalarını şimdiden görmeye başladık.\nBize bu kadar becerikli birini gönderdiğiniz için size teşekkür ediyorum!"
+ marshal_task.3102.a:0 "Güzel işler yapmaya devam et [councillor.GetFirstNameNoTooltip]."
+ marshal_task.3102.notification:0 "[councillor.GetCouncilTitle] Vasalı Etkiledi"
+
+ marshal_task.3103.notification:0 "[acclaimed_knight] Köylüleri Yatıştırdı"
+
+ marshal_task.4002.notification:0 "Düzensiz Kraliyet Muhafızları"
+ task_manage_guards_disorganized_modifier:0 "$marshal_task.4002.notification$"

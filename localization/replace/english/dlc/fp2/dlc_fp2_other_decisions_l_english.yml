@@ -1,336 +1,336 @@
 ﻿l_english:
- improve_city_province_decision: "$improve_city_province_decision_name$"
- improve_city_province_decision_name: "Şehirleri Genişlet"
- improve_city_province_decision_desc: "Şehrinizde inşa edilecek abartılı yeni mahallelerin parasını ödeyin"
- improve_city_province_decision_confirm: "Genişlemeyi başlat"
- improve_city_province_decision_tooltip: "[cities|E]'inizde yeni [building|E] yuva elde etmek için para yatırın"
- improve_city_province_decision_decision_no_effect: "Hayır [city|E] uygun değil"
- improve_city_province_decision_at_least_one_city_tt: "En az bir şehirde 5'ten az bina yuvası var"
+ improve_city_province_decision:1 "$improve_city_province_decision_name$"
+ improve_city_province_decision_name:0 "Şehirleri Genişlet"
+ improve_city_province_decision_desc:1 "Şehrinizde inşa edilecek şatafatlı yeni mahalleler için ödeme yapın"
+ improve_city_province_decision_confirm:0 "Genişlemeyi başlat"
+ improve_city_province_decision_tooltip:0 "[Concept( 'cities', 'Şehirlerinizde' )|E] yeni [building|E] bölmeleri açmak için yatırım yapın"
+ improve_city_province_decision_decision_no_effect:1 "Hiçbir [city|E] uygun değil"
+ improve_city_province_decision_at_least_one_city_tt:0 "En az bir şehirdeki bina bölme sayısı 5'ten az olmalı"
+
+  #AGOT Disabled
+ #fp2_secure_mediterranean.t:0 "Secure the Mediterranean"
+ #AGOT Disabled
+ #fp2_secure_mediterranean.desc:0 "With key islands across the Mediterranean secured and acting as watchtowers of the sea, it is time for us to claim ownership over the waves."
+ #AGOT Disabled
+ #fp2_secure_mediterranean.tip:0 "Claim ownership over the Mediterranean"
+
+  #AGOT Modified
+ secure_btw_foothold_decision_title:0 "Sur Ötesi Kalkan"
+secure_btw_foothold_decision_desc:0 "Kuzeydeki savaşta zayıflamış vahşi kabileler, bölgenin kapılarını dışarıdan gelenlere açtı. Eğer birisi kendisini bu bölgenin yeni [ROOT.Char.GetFaith.GetReligion.GetAdjectiveNoTooltip] lideri olarak ilan edebilir veya şanlı bir istilacı olarak kabul ettirebilirse, büyük kazanımlar elde edilebilir."
+ #AGOT Modified
+ secure_btw_foothold_decision_tooltip:0 "Sur Ötesindeki toprakların bir kısmını entegre et"
+ #AGOT Modified
+ secure_btw_foothold_decision_confirm:0 "En güçlü olanındır."
+ #AGOT Modified
+ fp2_struggle_uninvolved_or_external_tt:0 "Şu anki [capital|E]iniz, [GetGeographicalRegion('world_westeros_beyond_the_wall').GetName] [region|E]sinin dışında."
+ #AGOT Modified
+ fp2_struggle_secure_btw_foothold_empire_tt:0 "Sahip olduğunuz [empire|E] [Concept( 'title', 'Unvanını' )|E], [GetTitleByKey('e_beyond_the_wall').GetNameNoTier] değil."
+
+  #AGOT Modified
+ fp2_struggle_phase_hostility_or_opportunity_tt:1 "Sur Ötesi [struggle_phase|E], şu anda [struggle_phase_btw_hostility|E] veya [struggle_phase_btw_opportunity|E] aşamasında. (Şu anki: [GetStruggle('btw_struggle').GetCurrentPhase.GetName])"
+ #AGOT Modified
+ fp2_struggle_secure_btw_foothold_kingdom_btw_tt:0 "Sahip olduğunuz ve tamamen kontrol ettiğiniz bir [de_jure|E] [kingdom|E], [GetTitleByKey('e_beyond_the_wall').GetNameNoTier] bölgesinde yer alıyor."
+
+  #AGOT Modified
+ fp2_struggle_secure_btw_foothold_kingdom_faith_tt:0 "Bu [titlepossessive|E] [de_jure|E] [Concept( 'counties', 'Kontlukların' )|E] en az #Z [SCOPE.ScriptValue('fp2_struggle_secure_btw_foothold_faith_target_percent_value')|0]%#!'i [THIS.Char.GetFaith.GetAdjective] inancına sahip."
+ #AGOT Modified
+ fp2_struggle_secure_btw_foothold_kingdom_border_tt:0 "Bu [title|E], sahip olduğunuz ve [GetTitleByKey('e_beyond_the_wall').GetNameNoTier] olmayan bir [Concept( 'empires', 'imparatorluğun' )|E] elinde tuttuğu [de_jure|E] topraklarla sınır komşusu."
+ #AGOT Modified
+ fp2_struggle_secure_btw_foothold_kingdom_held_tt:0 "Bu [title|E]ı en az [SCOPE.ScriptValue('fp2_struggle_secure_btw_foothold_years_value')|0Z] yıldır elde tutuyorsunuz."
+
+  #AGOT Modified
+ fp2_struggle_secure_btw_foothold_religion_tt:0 "Şu anda [GetGeographicalRegion('world_westeros_beyond_the_wall').GetName] [region|E]sindeki [THIS.Char.GetFaith.GetReligion.GetAdjective] [faith|E] [Concept( 'counties', 'Kontlukların' )|E] en az #Z [SCOPE.ScriptValue('fp2_struggle_secure_btw_foothold_religion_target_percent_value')|0]%#!'ine sahipsiniz. (Şu anki: [SCOPE.ScriptValue('fp2_struggle_secure_btw_foothold_religion_percent_value')|1]%)\n"
+ #AGOT Modified
+ fp2_struggle_secure_btw_foothold_outsider_tt:0 "Şu anda [GetGeographicalRegion('world_westeros_beyond_the_wall').GetName] [region|E]sindeki [Concept( 'counties', 'Kontlukların' )|E] en az #Z [SCOPE.ScriptValue('fp2_struggle_secure_btw_foothold_outsider_target_percent_value')|0]%#!'ine sahipsiniz. (Şu anki: [SCOPE.ScriptValue('fp2_struggle_secure_btw_foothold_outsider_percent_value')|0]%)\n"
+
+  #AGOT Modified
+ fp2_struggle_secure_btw_foothold_empire_held_effect_tt:0 "[GetTitleByKey('e_beyond_the_wall').GetNameNoTier] bölgesinin aşağıda belirtilen koşulları karşılayan her [de_jure|E] [Concept( 'kingdom', 'Krallığı' )|E], [THIS.Char.GetPrimaryTitle.GetNameNoTier] bölgesinin [de_jure|E] bir parçası haline gelecek."
+ #AGOT Modified
+ fp2_struggle_secure_btw_foothold_empire_dejure_effect_tt:0 "[GetTitleByKey('e_beyond_the_wall').GetNameNoTier] bölgesinin aşağıda belirtilen koşulları karşılayan her [de_jure|E] [Concept( 'kingdom', 'Krallığı' )|E], [THIS.Char.GetPrimaryTitle.GetDeJureLiege.GetNameNoTier] [Concept( 'empires', 'imparatorluğun' )|E] [de_jure|E] bir parçası haline gelecek."
+
+  #AGOT Modified
+ fp2_struggle_secure_btw_foothold_ends_the_struggle_tt:0 "[btw_struggle|E] sona erer."
   
-  #AGOT Disabled 
- #fp2_secure_mediterranean.t: "Akdeniz'i güvence altına alın"
-  #AGOT Disabled 
- #fp2_secure_mediterranean.desc: "Akdeniz'deki önemli adaların güvence altına alınması ve deniz gözetleme kuleleri olarak görev yapmasıyla birlikte, dalgalar üzerinde hak iddia etmemizin zamanı geldi."
-  #AGOT Disabled 
- #fp2_secure_mediterranean.tip: "Akdeniz üzerinde mülkiyet iddiasında bulunun"
-  
-  #AGOT Modified 
- secure_btw_foothold_decision_title: "Sur'un Ötesinde Dayanak Noktası"
- secure_btw_foothold_decision_desc: "Uzak kuzeydeki zayıflamış savaşan Yabanıl kabileler, bölgelerin kapılarını dışarıya açtı. Eğer biri kendisini bölgenin yeni [ROOT.Char.GetFaith.GetReligion.GetAdjectiveNoTooltip] lideri veya sadece şanlı bir istilacı olarak ilan edebilirse çok şey kazanılabilir."
-  #AGOT Modified 
- secure_btw_foothold_decision_tooltip: "Arazilerin bir kısmını duvarın ötesine entegre edin"
-  #AGOT Modified 
- secure_btw_foothold_decision_confirm: "En güçlüye."
-  #AGOT Modified 
- fp2_struggle_uninvolved_or_external_tt: "[capital|E]'ınız [GetGeographicalRegion('world_westeros_beyond_the_wall').GetName] [region|E]'nin dışındadır"
-  #AGOT Modified 
- fp2_struggle_secure_btw_foothold_empire_tt: "Sen [hold|E] ve [empire|E] [title|E] [GetTitleByKey('e_beyond_the_wall').GetNameNoTier] olmayan"
-  
-  #AGOT Modified 
- fp2_struggle_phase_hostility_or_opportunity_tt: "Sur'un Ötesinde [struggle_phase|E] [struggle_phase_btw_hostility|E] veya [struggle_phase_btw_opportunity|E]'dir (Güncel: [GetStruggle('btw_struggle').GetCurrentPhase.GetName])"
-  #AGOT Modified 
- fp2_struggle_secure_btw_foothold_kingdom_btw_tt: "Siz [hold|E] ve [completely_control|E] [de_jure|E] [kingdom|E] [GetTitleByKey('e_beyond_the_wall').GetNameNoTier]"
-  
-  #AGOT Modified 
- fp2_struggle_secure_btw_foothold_kingdom_faith_tt: "En azından bu [titlepossessive|E] [de_jure|E] [counties|E]'in #Z [SCOPE.ScriptValue('fp2_struggle_secure_btw_foothold_faith_target_percent_value')|0]%#!'si [THIS.Char.GetFaith.GetAdjective]'dır"
-  #AGOT Modified 
- fp2_struggle_secure_btw_foothold_kingdom_border_tt: "Bu [title|E] sınırları, [de_jure|E]'in [empire|E] topraklarını tutuyordu, [hold|E] ki bu [GetTitleByKey('e_beyond_the_wall').GetNameNoTier] değil"
-  #AGOT Modified 
- fp2_struggle_secure_btw_foothold_kingdom_held_tt: "Bu [title|E]'ı en az [SCOPE.ScriptValue('fp2_struggle_secure_btw_foothold_years_value')|0Z] yıldır tutuyorsunuz"
-  
-  #AGOT Modified 
- fp2_struggle_secure_btw_foothold_religion_tt: "Sen [hold|E] en az #Z [SCOPE.ScriptValue('fp2_struggle_secure_btw_foothold_religion_target_percent_value')|0]%#! [THIS.Char.GetFaith.GetReligion.GetAdjective] [faith|E] [counties|E] [GetGeographicalRegion('world_westeros_beyond_the_wall').GetName] [region|E]'de (Şu anda: [SCOPE.ScriptValue('fp2_struggle_secure_btw_foothold_religion_percent_value')|1]%)\n"
-  #AGOT Modified 
- fp2_struggle_secure_btw_foothold_outsider_tt: "[hold|E] En az #Z [SCOPE.ScriptValue('fp2_struggle_secure_btw_foothold_outsider_target_percent_value')|0]%#! [counties|E]'ün [GetGeographicalRegion('world_westeros_beyond_the_wall').GetName] [region|E]'sı (Mevcut: [SCOPE.ScriptValue('fp2_struggle_secure_btw_foothold_outsider_percent_value')|0]%)\n"
-  
-  #AGOT Modified 
- fp2_struggle_secure_btw_foothold_empire_held_effect_tt: "Aşağıdaki koşulları sağlayan [GetTitleByKey('e_beyond_the_wall').GetNameNoTier]'nin her [de_jure|E] [kingdom|E]'i [THIS.Char.GetPrimaryTitle.GetNameNoTier]'ün [de_jure|E] parçası haline gelecektir"
-  #AGOT Modified 
- fp2_struggle_secure_btw_foothold_empire_dejure_effect_tt: "Aşağıdaki koşulları sağlayan her [de_jure|E] [kingdom|E] of [GetTitleByKey('e_beyond_the_wall').GetNameNoTier], [empire|E] of [THIS.Char.GetPrimaryTitle.GetDeJureLiege.GetNameNoTier]'in [de_jure|E] parçası haline gelecektir."
-  
-  #AGOT Modified 
- fp2_struggle_secure_btw_foothold_ends_the_struggle_tt: "[btw_struggle|E] biter"
-  
-  #AGOT Modified 
- btw_footholder_transfer_tt: "[THIS] [THIS.Title.GetName] [THIS.GetName]"
-  
-  #AGOT Modified 
- fp2_other_decisions.1000.t: "$secure_btw_foothold_decision_title$: [btw_footholder.GetPrimaryTitle.GetAdjectiveNoTooltip] Konsolidasyon"
-  #AGOT Modified 
- fp2_other_decisions.1000.involved_religion: "Sur'un ötesindeki topraklardaki bölücü kabilelerin savaşları, bölgedeki [ROOT.Char.GetFaith.GetReligion.GetAdjective] diyarını neredeyse diz çöktürüyordu.\n\nBizim müdahalemiz olmasaydı, [ROOT.Char.GetFaith.HighGodNamePossessive] sadık sonunda egemen kâfirler tarafından duvarın ötesindeki topraklardan sürülecekti.\n\n"
-  #AGOT Modified 
- fp2_other_decisions.1000.desc: "Bölünmüş Yabanıl kabileleri bize büyük bir fırsat verdi, kuzeyin [ROOT.Char.GetFaith.GetReligion.GetAdjective] işgaline karşı koymak yerine birbirleriyle savaşmakla meşguldüler."
- fp2_other_decisions.1000.involved_faith: "Biz batının [ROOT.Char.GetFaith.GetAdherentNamePlural]'ının meşru savunucularıyız, artık [ROOT.Char.GetPrimaryTitle.GetDefinitiveName]'in koruması altındayız."
- fp2_other_decisions.1000.uninvolved_faith: "[ROOT.Char.GetFaith.GetName]'ın ışığını getirmek bize düştü; [ROOT.Char.GetPrimaryTitle.GetDefinitiveName]'in bir parçası olarak bu topraklar bir kez daha müreffeh ve huzurlu olacak."
- fp2_other_decisions.1000.closing: "\n\nZamanla sahte tanrılarının zamanının sona erdiğini görecekler ve [ROOT.Char.GetFaith.HighGodName]'ın [ROOT.Char.GetPrimaryTitle.GetDefinitiveName]'i bölgenin kurtuluşuna yönlendirmesine sevinecekler."
-  #AGOT Modified 
- fp2_other_decisions.1000.a: "Sur'un ötesinde taze kana ihtiyaç vardı."
-  
-  #AGOT Modified 
- fp2_other_decisions.1001.involved_religion: "Yüzyıllardır süren kadim inançlar arasındaki savaşlardan sonra, mücadelemiz şimdi buyurgan [btw_footholder.GetPrimaryTitle.GetAdjective] davetsiz misafirler tarafından istismar ediliyor.\n\n"
-  #AGOT Modified 
- fp2_other_decisions.1001.desc: "Dikkat dağıtma, kıskançlık ve ihmalkarlık yoluyla biz özgür insanlar, [btw_footholder.GetPrimaryTitle.GetAdjective]'ın vatanımızı bölüşmesine ve kuzeyin tarihi kabilelerini istila etmesine izin verdik."
-  #AGOT Modified 
- fp2_other_decisions.1001.involved_faith: "[btw_footholder.GetTitledFirstName], [btw_footholder.GetHerselfHimself]'i kuzeyin meşru [btw_footholder.GetFaith.GetAdjectiveNoTooltip] lideri ilan etti ve [btw_footholder.GetHerHis] zaferlerini, [btw_footholder.GetFaith.GetReligion.GetAdjective] Yabanıl kabileleri üzerindeki meşruiyetinin kanıtı olarak kullandı."
-  #AGOT Modified 
- fp2_other_decisions.1001.same_uninvolved_faith: "Onlar bizim başarısızlıklarımızın [btw_footholder.GetFaith.GetName]'in doğru yolundan sapmamızın cezası olduğunu ve [btw_footholder.GetTitledFirstName]'nin [ROOT.Char.GetFaith.GetReligion.GetAdjective] Yabanıllar'ın meşru lideri olduğunu iddia ediyorlar..."
-  #AGOT Modified 
- fp2_other_decisions.1001.uninvolved_faith: "[btw_footholder.GetHerHis] zaferin kanıtı olarak [btw_footholder.GetTitledFirstName], [btw_footholder.GetHerHis] [btw_footholder.GetFaith.GetAdjective] inancın gerçek [btw_footholder.GetFaith.GetReligion.GetAdjective] yol olduğunu ilan etti; bu yol tüm Yabanıl kabilelerini [btw_footholder.GetFaith.HighGodName] altında birleştirecek."
-  #AGOT Modified 
- fp2_other_decisions.1001.closing: "\n\n[btw_footholder.GetTitledFirstName], [btw_footholder.GetHerHis] varlığı birleştirirken, eski inançların geçmişteki farklılıkları bu [btw_footholder.GetFaith.GetAdjective] işgaliyle karşılaştırıldığında sönük görünüyor..."
- fp2_other_decisions.1001.a: "Lanet olasıcalar."
-  
-  ### Council of Toledo Decision 
-  #AGOT Disabled 
- #council_of_toledo_decision_title: "Toledo Konseyini Toplayın"
-  #AGOT Disabled 
- #council_of_toledo_decision_desc_count: "[SCOPE.ScriptValue('council_of_toledo_counter_value')][ROOT.Char.Custom('get_council_of_toledo_count_suffix')] [GetTitleByKey('c_toledo').GetNameNoTier] Konseyi'ni toplama ve [ROOT.Char.GetFaith.GetAdherentNamePlural]'ün dini meselelerini bir kez daha çözme zamanı gelecek."
-  #AGOT Disabled 
- #council_of_toledo_decision_desc: "Yüzyıllar boyunca, [GetTitleByKey('c_toledo').GetNameNoTier]'da, Hristiyan dünyasının dört bir yanından din adamlarının günün anlaşmazlıklarını çözdüğü dini konseyler düzenlendi. 19. konsey düzenlenerek, bu Vizigot geleneği yeniden canlandırılabilir."
-  #AGOT Disabled 
- #council_of_toledo_decision_tooltip: "Toledo'da [ROOT.Char.GetFaith.GetReligion.GetAdjective] din adamının bir araya gelmesini sağlayın"
-  #AGOT Disabled 
- #council_of_toledo_decision_confirm: "Vakit geldi."
-  #AGOT Disabled 
- #council_of_toledo_decision_toledo_holder_trigger: "Sen [hold|E]'sın ya da [GetTitleByKey('c_toledo').GetName]'in üzerinde hüküm sürüyorsun ve onun [ruler|E]'si [THIS.Char.GetFaith.GetName] inancına sahipsin"
-  #AGOT Disabled 
- #council_of_toledo_decision_toledo_faith_trigger: "[faith|E], [THIS.Char.GetLiege.GetFaith.GetName]'dir"
-  #AGOT Disabled 
- #council_of_toledo_decision_catalyst_tt: "[struggle_catalyst|E] oluşabilir"
-  #AGOT Disabled 
- #council_of_toledo_decision_tt: "Ödüller Konsey'in sonucuna bağlıdır"
-  # Event - Organization 
-  #AGOT Disabled 
- #fp2_other_decisions.0700.council: "[SCOPE.ScriptValue('council_of_toledo_counter_value')][ROOT.Char.Custom('get_council_of_toledo_count_suffix')] Toledo Konseyi"
-  #AGOT Disabled 
- #fp2_other_decisions.0700.t: "$fp2_other_decisions.0700.council$: Organizasyon"
-  #AGOT Disabled 
- #fp2_other_decisions.0700.19: "[council_priest.GetTitledFirstName], eski Vizigot sinodlarına uyması için [GetTitleByKey('c_toledo').GetNameNoTier]'de on dokuzuncu bir dini konsey için düzenlemelere başladı.\n\n[GetTitleByKey('k_papal_state').GetDefinitiveName]'nin etkisi Mağribi istilasından bu yana artmış olsa da, din adamlarımız hala kendi geleneklerini ve özerkliklerini koruyorlar. İberia'nın dini diyalog alanı olarak önemini yeniden belirtmenin zamanı geldi.\n\nÖnceki toplantılara Hristiyan dünyasının dört bir yanından [ROOT.Char.GetFaith.BishopNeuterPlural] kişi katıldı, ancak artık durum böyle olmak zorunda değil..."
-  #AGOT Disabled 
- #fp2_other_decisions.0700.desc: "İberya'nın [ROOT.Char.GetFaith.BishopNeuterPlural] halkı, Toledo geleneğinin yeniden canlandırıldığı günden bu yana bir sonraki konseyi heyecanla bekliyordu.\n\n[council_priest.GetCouncilTitleFirstName] hazırlıklara başladı, ancak diğer geleneklerden rahiplerin katılmaya davet edilip edilmeyeceği henüz kararlaştırılmadı."
-  #AGOT Disabled 
- #fp2_other_decisions.0700.a: "Mozarab sinodu olacak."
-  #AGOT Disabled 
- #fp2_other_decisions.0700.b: "[ROOT.Char.GetFaith.HighGodNamePossessive] bakanın hepsi Toledo'da hoş karşılanıyor."
-  #AGOT Disabled 
- #fp2_other_decisions.0700.b.success: "Ekümenik piskoposlar katılıyor"
-  #AGOT Disabled 
- #fp2_other_decisions.0700.b.failure: "Toledo'ya yapılan çağrı görmezden geliniyor"
-  #AGOT Disabled 
- #fp2_other_decisions.0700.tt: "[SCOPE.ScriptValue('council_of_toledo_counter_value')][THIS.Char.Custom('get_council_of_toledo_count_suffix')] Toledo Konseyi birkaç hafta içinde başlayacak"
-  # Event - Arrival 
-  #AGOT Disabled 
- #fp2_other_decisions.0701.t: "$fp2_other_decisions.0700.council$: Katılımcılar"
-  #AGOT Disabled 
- #fp2_other_decisions.0701.opening.success: "Görünüşe göre daha geniş [ROOT.Char.GetFaith.GetReligion.GetAdjective] [ROOT.Char.GetFaith.AltPriestTermPlural] daveti olumlu karşılanmış; yabancı ülkelerden pek çok saygın [ROOT.Char.GetFaith.BishopNeuterPlural] hevesle [GetTitleByKey('c_toledo').GetNameNoTier]'e akın etmiş."
-  #AGOT Disabled 
- #fp2_other_decisions.0701.opening.failure: "Ekümenik cemaatten gelen davetimize gelen yanıt soğuk oldu; çok sayıda [ROOT.Char.GetFaith.BishopNeuterPlural] kötü hava koşullarının [GetTitleByKey('c_toledo').GetNameNoTier]'e ulaşmayı engellediğini, sadece yerel din adamlarının katıldığını belirtti...."
-  #AGOT Disabled 
- #fp2_other_decisions.0701.opening.catastrophe: "[GetTitleByKey('c_toledo').GetNameNoTier]'deki diğer [ROOT.Char.GetFaith.GetReligion.GetAdjective] mezheplerinden tek bir piskopos, diyakoz veya Baş Rahip görmedik; konseyimizin ekümenik kardeşliğimiz tarafından hor görülme veya öfkeyle karşılandığı ve yalnızca yerel din adamlarının katıldığı anlaşılıyor."
-  #AGOT Disabled 
- #fp2_other_decisions.0701.opening: "Büyükler ve iyiler [GetTitleByKey('c_toledo').GetNameNoTier]'a indiler, bu [ROOT.Char.GetFaith.GetAdherentNamePlural]'in tüm denizlerini ve manastırlarını temsil ediyor."
-  #AGOT Disabled 
- #fp2_other_decisions.0701.religious_head_bishop: "\n\nAlçakgönüllü din adamları arasında [portrait_bishop.GetTitledFirstName], [portrait_bishop.Custom('get_council_of_toledo_attendee_description')], [portrait_bishop.GetFaith.GetAdjective] kilisesinin başı vardır."
-  #AGOT Disabled 
- #fp2_other_decisions.0701.powerful_bishop: "\n\nBunların arasında belki de en dikkat çekeni, büyük etkiye sahip [portrait_bishop.GetFaith.GetAdjective] piskoposu [portrait_bishop.GetTitledFirstName], [portrait_bishop.Custom('get_council_of_toledo_attendee_description')]'dir."
-  #AGOT Disabled 
- #fp2_other_decisions.0701.saint_bishop: "\n\nKatılımcılar, aralarında [portrait_bishop.GetFirstName], [portrait_bishop.Custom('get_council_of_toledo_attendee_description')] ve [portrait_bishop.GetFaith.GetAdjective] azizinin bulunmasından dolayı çok şanslılar!"
-  #AGOT Disabled 
- #fp2_other_decisions.0701.theologian_bishop: "\n\nBunların arasında özellikle saygı duyulan bir [portrait_bishop.GetFaith.GetAdjective] ilahiyatçısı olan [portrait_bishop.GetFirstName], [portrait_bishop.Custom('get_council_of_toledo_attendee_description')] yer alıyor."
-  #AGOT Disabled 
- #fp2_other_decisions.0701.bad_bishop: "\n\nEn bilinenlerden biri, Hıristiyanlık aleminde küfürleri alay konusu olan [portrait_bishop.GetFirstName], [portrait_bishop.Custom('get_council_of_toledo_attendee_description')]'dir."
-  #AGOT Disabled 
- #fp2_other_decisions.0701.senior_bishop: "\n\nBütün din adamlarının en kıdemlisi [portrait_bishop.GetFirstName], [portrait_bishop.Custom('get_council_of_toledo_attendee_description')], din adamlarının saygıdeğer [portrait_bishop.GetWomanMan]'sidir."
-  #AGOT Disabled 
- #fp2_other_decisions.0701.failure: "\n\nSurlu şehrin tüccarları, çok sayıda din adamının ziyaretine hazırlandıkları için düşük katılımdan dolayı hayal kırıklığına uğradılar. Yazık."
-  #AGOT Disabled 
- #fp2_other_decisions.0701.desc: "\n\nSurlarla çevrili şehir, tüccarların ticaret ve misafirperverliğinden yararlandığı din adamlarının ziyaretlerinden fayda sağlıyor."
-  #AGOT Disabled 
- #fp2_other_decisions.0701.a: "Harika."
-  #AGOT Disabled 
- #fp2_other_decisions.0701.b: "Gurur gider..."
-  #AGOT Disabled 
- #fp2_other_decisions.0701.c: "İyi."
-  #AGOT Disabled 
- #fp2_other_decisions.0701.tt: "[SCOPE.ScriptValue('council_of_toledo_counter_value')][THIS.Char.Custom('get_council_of_toledo_count_suffix')] Toledo Konseyi başlıyor"
-  # Event - Debate 
-  #AGOT Disabled 
- #fp2_other_decisions.0702.t: "$fp2_other_decisions.0700.council$: Tartışma"
-  #AGOT Disabled 
- #fp2_other_decisions.0702.19: "Başpiskopos Gunderic'in Kral Wittiza yönetimindeki son konseyinden yüzyıllar sonra, [council_priest.GetCouncilTitleFirstName], efsanevi [GetTitleByKey('c_toledo').GetNameNoTier]'de on dokuzuncu toplantıyı açarak geleneğimizi yeniden canlandırmıştır.\n\n"
-  #AGOT Disabled 
- #fp2_other_decisions.0702.opening: "[GetTitleByKey('c_toledo').GetNameNoTier]'da başka bir konsey başladı, bu sefer [council_priest.GetCouncilTitleFirstName] tarafından açıldı.\n\n"
-  #AGOT Disabled 
- #fp2_other_decisions.0702.present: "\n\nHaftanın sonunda, [debate_bishop.GetTopLiege.GetPrimaryTitle.GetNameNoTierNoTooltip] kişiden [debate_bishop.GetTitledFirstName]'ının bu konuda odadakilerin kulağına gittiği, $fp2_other_decisions.0702.closing$'nin ise"
-  #AGOT Disabled 
- #fp2_other_decisions.0702.second_hand: "\n\nGörüşmeler sona ererken, [debate_bishop.GetTopLiege.GetPrimaryTitle.GetNameNoTierNoTooltip]'den [debate_bishop.GetTitledFirstName]'ın bu görüşün lideri olarak görüldüğü açık, $fp2_other_decisions.0702.closing$"
-  #AGOT Disabled 
- #fp2_other_decisions.0702.conversion: "Kafirlerin ve kâfirlerin din değiştirmesinin barışı sağlamanın ve [ROOT.Char.GetFaith.GetAdherentNamePlural]'ı korumanın tek yolu olduğu şeklindeki genel tema hızla ortaya çıktı."
-  #AGOT Disabled 
- #fp2_other_decisions.0702.reform: "Ana tema, İber Kilisesi'nin konumunun artık güvence altına alınmış olması nedeniyle [ROOT.Char.GetFaith.GetAdherentNamePlural]'ın büyük reformlardan korkmaması gerektiğidir."
-  #AGOT Disabled 
- #fp2_other_decisions.0702.tolerance: "[ROOT.Char.GetFaith.GetAdherentNamePlural]'ın barışçıl kâfirlere karşı daha hoşgörülü olması gerektiği fikri, görüşmelerin odak noktası haline geldi."
-  #AGOT Disabled 
- #fp2_other_decisions.0702.rights: "Ana tema, [ROOT.Char.GetFaith.GetAdjective] din adamlarının eski haklarının korunması ve kiliselerin onarılması konusundaki endişelerdi."
-  #AGOT Disabled 
- #fp2_other_decisions.0702.hof: "Şaşırtıcı bir şekilde, [ROOT.Char.GetFaith.GetAdherentNamePlural]'ın kendi ruhani liderine ihtiyaç duyduğu duygusu, piskoposlarımızın çoğunun en acil endişesiydi."
-  #AGOT Disabled 
- #fp2_other_decisions.0702.pope: "Pek çok piskoposun [ROOT.Char.GetFaith.GetAdherentNamePlural] ile ekümenik kardeşleri arasında daha fazla işbirliği yapılmasını savunmasıyla işbirliği havası düştü."
-  #AGOT Disabled 
- #fp2_other_decisions.0702.heresy: "Geçmişteki Priscillianlar ve Ariusçular gibi [heretic_faith.GetAdherentNamePlural] sapkınlarının oluşturduğu tehdit gündeme geldikçe, görüşmelerde acil bir enerji hakimdi."
-  #AGOT Disabled 
- #fp2_other_decisions.0702.closing: "[counter_bishop.GetTopLiege.GetPrimaryTitle.GetNameNoTierNoTooltip]'den [counter_bishop.GetTitledFirstName|U]'ı [debate_bishop.GetHerHis] argümanına en güçlü şekilde karşılık verdi."
-  #AGOT Disabled 
- #fp2_other_decisions.0702.a: "Kesinlikle katılıyorum."
-  #AGOT Disabled 
- #fp2_other_decisions.0702.b.hof: "[ROOT.Char.GetFaith.HighGodNamePossessive] olmayacak."
-  #AGOT Disabled 
- #fp2_other_decisions.0702.b: "[debate_bishop.GetSheHe|U] bağırılarak susturulacaktır."
-  #AGOT Disabled 
- #council_of_toledo_ruler_effect_tt: "Her [council_toledo_faith.GetAdjective] [ruler|E]"
-  # Event - Invalidated 
-  #AGOT Disabled 
- #fp2_other_decisions.0703.t: "$fp2_other_decisions.0700.council$: Ertelendi"
-  #AGOT Disabled 
- #fp2_other_decisions.0703.war: "Savaşın başlamasıyla birlikte [council_priest.GetCouncilTitleFirstName], yaklaşan Toledo Konseyi'ni şimdilik erteledi."
-  #AGOT Disabled 
- #fp2_other_decisions.0703.control: "[GetTitleByKey('c_toledo').GetNameNoTier]'ın kaybıyla, yaklaşan Toledo Konseyi'ne ev sahipliği yapmak artık mümkün olmayacak..."
-  #AGOT Disabled 
- #fp2_other_decisions.0703.desc: "\n\n[ROOT.Char.GetFaith.GetAdherentNamePlural]'ın bu aksilikten yakında döneceğine şüphe yok..."
-  #AGOT Disabled 
- #fp2_other_decisions.0703.a: "Hayal kırıklığı."
-  # Event - Ping 
-  #AGOT Disabled 
- #fp2_other_decisions.0704.t: "$fp2_other_decisions.0700.council$"
-  #AGOT Disabled 
- #fp2_other_decisions.0704.success: "\n\n[council_toledo_host.GetTitledFirstNamePossessive] desteğiyle [ROOT.Char.GetFaith.GetAdherentNamePlural] din adamı sesini duyurdu."
-  #AGOT Disabled 
- #fp2_other_decisions.0704.failure: "Görünüşe göre [council_toledo_host.GetTitledFirstName]'ın başka fikirleri vardı ve bu tekliflere karşı güçlü bir şekilde lobi faaliyeti yürüttü."
-  #AGOT Disabled 
- #fp2_other_decisions.0704.a: "İlginç."
-  # Custom Loc 
-  #AGOT Disabled 
- #council_toledo_landed_desc: "[ROOT.Char.GetTitleAsNameNoTooltip] / [ROOT.Char.GetPrimaryTitle.GetNameNoTier]"
-  #AGOT Disabled 
- #council_toledo_unlanded_desc: "[ROOT.Char.GetLiege.GetPrimaryTitle.GetNameNoTier] Başpiskoposu"
-  # Tooltips 
-  #AGOT Disabled 
- #fp2_council_culture_tt: "İber [cultures|E] kazanç #positive_value [SCOPE.ScriptValue('council_toledo_culture_acceptance_value')|0]#! [cultural_acceptance|E] / [THIS.Char.GetCulture.GetName]"
-  #AGOT Disabled 
- #fp2_council_opinion_mozarabic_effect_tt: "Her Mozarabic katılımcısı"
-  #AGOT Disabled 
- #fp2_council_opinion_other_effect_tt: "Mozarabik olmayan her katılımcı"
-  #AGOT Disabled 
- #fp2_council_conversion_modifier_tt: "Bu değiştirici mevcutken Kontlkukdeki İnancı Dönüştürme diğer [religions|E]'a karşı daha hızlı ilerleyecektir"
-  #AGOT Disabled 
- #fp2_council_heresies_modifier_tt: "Kontlkukde İnanç Dönüştürme, aynı-[religion|E] [faiths|E] ile [head_of_faiths|E]'ye karşı daha hızlı ilerleyecek, bu değiştirici mevcut"
-  #AGOT Disabled 
- #excluded_from_council_toledo_tt: "Her diğer [THIS.Char.GetFaith.GetReligion.GetAdjective] [head_of_faith|E] in [diplomatic_range|E]"
-  #AGOT Disabled 
- #fp2_council_end_tt: "[SCOPE.ScriptValue('council_of_toledo_counter_value')][THIS.Char.Custom('get_council_of_toledo_count_suffix')] Toledo Konseyi sona eriyor"
-  # Modifiers 
-  #AGOT Disabled 
- #fp2_small_council_modifier: "Toledo Konseyi"
-  #AGOT Disabled 
- #fp2_small_council_modifier_desc: "Toledo'da yerel din adamlarından oluşan bir konsey toplandı ve bu toplantı şehre refah getirdi."
-  #AGOT Disabled 
- #fp2_big_council_modifier: "$fp2_small_council_modifier$"
-  #AGOT Disabled 
- #fp2_big_council_modifier_desc: "Toledo'da büyük bir piskoposlar konseyi toplandı ve bu toplantı şehre büyük refah getirdi."
-  #AGOT Disabled 
- #fp2_disappointing_council_modifier: "$fp2_small_council_modifier$"
-  #AGOT Disabled 
- #fp2_disappointing_council_modifier_desc: "Toledo'da toplanan piskoposlar konseyi hayal kırıklığı yarattı ve kasabanın tüccarlarına pahalıya mal oldu."
-  #AGOT Disabled 
- #fp2_stifled_council_modifier: "Bastırılmış Konsey"
-  #AGOT Disabled 
- #fp2_stifled_council_modifier_desc: "Dini bir konseyle çelişmesi, bu karakteri din adamları arasında sevilmeyen biri haline getirmiştir."
-  #AGOT Disabled 
- #fp2_council_conversion_modifier: "Dönüşüm Konseyi"
-  #AGOT Disabled 
- #fp2_council_conversion_modifier_desc: "Son Toledo Konseyi, Mozarab ülkelerindeki kâfirlerin din değiştirmesini teşvik etti."
-  #AGOT Disabled 
- #fp2_council_tolerance_modifier: "Hoşgörü Konseyi"
-  #AGOT Disabled 
- #fp2_council_tolerance_modifier_desc: "Son Toledo Konseyi, İber Yarımadası'ndaki dinler arasında hoşgörüyü teşvik etti."
-  #AGOT Disabled 
- #fp2_council_reform_modifier: "Reform Konseyi"
-  #AGOT Disabled 
- #fp2_council_reform_modifier_desc: "Son Toledo Konseyi, yeni gücü göz önüne alındığında Mozarab kilisesinin reformunu teşvik etti."
-  #AGOT Disabled 
- #fp2_council_rights_modifier: "Haklar Konseyi"
-  #AGOT Disabled 
- #fp2_council_rights_modifier_desc: "Son Toledo Konseyi, din adamlarının haklarının korunmasını ve kiliselerin onarımını teşvik etti."
-  #AGOT Disabled 
- #fp2_council_hof_modifier: "Liderlik Konseyi"
-  #AGOT Disabled 
- #fp2_council_hof_modifier_desc: "Son Toledo Konseyi, Mozarabları kendi din başkanlarını atamaya teşvik etti."
-  #AGOT Disabled 
- #fp2_council_pope_modifier: "İşbirliği Konseyi"
-  #AGOT Disabled 
- #fp2_council_pope_modifier_desc: "Son Toledo Konsili, Mozarablar ile daha geniş Hıristiyan dünyası arasında işbirliğini teşvik etti."
-  #AGOT Disabled 
- #fp2_council_heresy_modifier: "Engizisyon Konseyi"
-  #AGOT Disabled 
- #fp2_council_heresy_modifier_desc: "Son Toledo Konseyi, İberya'da ortaya çıkan sapkınlıkların kökünün kazınmasını teşvik etti."
-  # Opinions 
-  #AGOT Disabled 
- #fp2_council_toledo_opinion: "$fp2_small_council_modifier$"
-  #AGOT Disabled 
- #fp2_excluded_from_council_toledo_opinion: "Toledo'dan dışlandı"
-  #AGOT Disabled 
- #fp2_council_toledo_new_hof_opinion: "$fp2_council_hof_modifier$"
-  #AGOT Disabled 
- #fp2_council_toledo_pope_opinion: "$fp2_council_pope_modifier$"
-  # Tasks 
-  #AGOT Disabled 
- #council_toledo_conversion_task_desc: "$fp2_council_conversion_modifier$"
-  #AGOT Disabled 
- #council_toledo_heresies_task_desc: "$fp2_council_heresy_modifier$"
-  # Other 
-  #AGOT Disabled 
- #fervor_gain_council_toledo: "$fp2_small_council_modifier$"
-  #AGOT Disabled 
- #fp2_council_toledo_culture_acceptance_desc: "$fp2_small_council_modifier$"
-  
-  #AGOT Disabled 
- #found_kingdom_toledo_decision_title: "Toledo Krallığını Kurmak"
-  #AGOT Disabled 
- #found_kingdom_toledo_decision_desc: "Vizigot krallığının Mağribiler tarafından yıkılmasından bu yana, [GetTitleByKey('c_toledo').GetNameNoTier] küçültüldü. Yeni bir [ROOT.Char.GetFaith.GetAdjective] diyarının başkenti olarak, bir kez daha kralların merkezi olacak."
-  #AGOT Disabled 
- #found_kingdom_toledo_decision_confirm: "Toledo, Iberia'nın kalbidir!"
-  #AGOT Disabled 
- #found_kingdom_toledo_decision_tooltip: "[GetTitleByKey('k_toledo').GetNameNoTier] merkezli yeni bir [GetFaithByKey('mozarabic_church').GetAdjective] [kingdom|E] kurun"
-  #AGOT Disabled 
- #found_kingdom_toledo_culture_tt: "[culture|E]'ınız İberya [heritage|E]'dir"
-  #AGOT Disabled 
- #found_kingdom_toledo_faith_tt: "[faith|E]'ınız [GetFaithByKey('mozarabic_church').GetName] veya ondan oluşturuldu"
-  #AGOT Disabled 
- #found_kingdom_toledo_duchy_tt: "Siz [hold|E] ve [completely_control|E], [GetTitleByKey('d_toledo').GetName]'e [de_jure|E] sınır olan ve iki [de_jure|E] [duchies|E]'den fazla olan bir [kingdom|E]'in parçası olan herhangi bir [duchy|E]"
-  #AGOT Disabled 
- #found_kingdom_toledo_capital_tt: "[GetTitleByKey('c_toledo').GetNameNoTier] senin [realm_capital|E]'in"
-  
-  #AGOT Disabled 
- #fp2_other_decisions.1100.t: "Toledo Krallığı"
-  #AGOT Disabled 
- #fp2_other_decisions.1100.desc: "Artık konumumun gücü her türlü şüphenin ötesinde olduğundan, [GetTitleByKey('c_toledo').GetNameNoTier]'daki taç giyme töreni nihayet planlandığı gibi gerçekleşti.\n\nKüçük tayfalardan ve kuzeyin egemenlik alanlarından farklı, eski Vizigot krallığına rakip olacak kendi alanımızı oluşturmamızın [ROOT.Char.GetFaith.GetAdherentNamePlural] zamanı geldi!"
-  #AGOT Disabled 
- #fp2_other_decisions.1100.a: "Krallığımız uzun süre refah içinde olsun."
-  
-  #AGOT Disabled 
- #fp2_other_decisions.1101.desc: "Güçten güce giden [toledo_former.GetTitledFirstName], [GetTitleByKey('c_toledo').GetNameNoTier]'de [toledo_former.GetHerselfHimself]'i resmen taçlandırdı.\n\nEski İberya topraklarını da içine alan bu yeni [toledo_former.GetFaith.GetAdjective] krallığının gücü artık şüphe götürmez.\n\n"
-  #AGOT Disabled 
- #fp2_other_decisions.1101.stolen: "Bu sinir bozucu yeni yetmelerle er ya da geç hesaplaşmak zorunda kalacağız!"
-  #AGOT Disabled 
- #fp2_other_decisions.1101.mozarab: "Bu durum inancımız açısından iyiye işaret olsa da, iki ucu keskin bir kılıç da olabilir..."
-  #AGOT Disabled 
- #fp2_other_decisions.1101.a: "Çok uzun süre dayanamazlar!"
-  #AGOT Disabled 
- #fp2_other_decisions.1101.b: "Dikkat edilmesi gereken bir şey."
-  #AGOT Disabled 
- #fp2_other_decisions.1101.c: "İlginç."
-  
-  #AGOT Disabled 
- #fp2_form_kingdom_toledo_modifier: "$fp2_other_decisions.1100.t$"
-  #AGOT Disabled 
- #fp2_form_kingdom_toledo_modifier_desc: "Bu karakter eski Vizigot başkentini merkez alarak yeni bir krallık kurmuştur."
+ #AGOT Modified
+ btw_footholder_transfer_tt:0 "[THIS] [THIS.Title.GetName] [THIS.GetName]"
+
+  #AGOT Modified
+ fp2_other_decisions.1000.t:0 "$secure_btw_foothold_decision_title$: [btw_footholder.GetPrimaryTitle.GetAdjectiveNoTooltip] Birleştirme""
+ #AGOT Modified
+ fp2_other_decisions.1000.involved_religion:0 "Sur Ötesi topraklarının bölünmüş kabilelerinin savaşları, bölgenin [ROOT.Char.GetFaith.GetReligion.GetAdjective] krallıklarını neredeyse dizlerine getirdi.\n\nBizim müdahale etmemiz olmasaydı, [ROOT.Char.GetFaith.HighGodNamePossessive] inananları, kendini beğenmiş kâfirler tarafından Sur Ötesi topraklarından sonunda sürülmüş olurdu.\n\n"
+ #AGOT Modified
+ fp2_other_decisions.1000.desc:0 "Bölünmüş Vahşi kabileleri, bize büyük bir fırsat sundu; kuzeydeki [ROOT.Char.GetFaith.GetReligion.GetAdjective] istilasına karşı koymak için çok meşgullar, kendi aralarında savaşıyorlar."
+fp2_other_decisions.1000.involved_faith:0 "Biz, artık [ROOT.Char.GetPrimaryTitle.GetDefinitiveName] koruması altında güvenli olan batının [ROOT.Char.GetFaith.GetAdherentNamePlural] meşru savunucularıyız."
+fp2_other_decisions.1000.uninvolved_faith:0 "[ROOT.Char.GetFaith.GetName]'in ışığını getirmek bize düştü; [ROOT.Char.GetPrimaryTitle.GetDefinitiveName] parçası olarak bu topraklar bir kez daha bereketli ve huzurlu olacak."
+fp2_other_decisions.1000.closing:0 "\n\Zamanla, sahte tanrılarının zamanının sona erdiğini görecekler ve [ROOT.Char.GetFaith.HighGodName] tarafından bölge kurtuluşa ulaştırılması için [ROOT.Char.GetPrimaryTitle.GetDefinitiveName] gönderdiğini sevinçle karşılayacaklar."
+ #AGOT Modified
+ fp2_other_decisions.1000.a:0 "Sur Ötesi'nde yeni kan gerekiyordu."
+
+  #AGOT Modified
+ fp2_other_decisions.1001.involved_religion:0 "Yüzyıllar boyunca devam eden eski inançlar arasındaki savaş, şimdi kendini beğenmiş [btw_footholder.GetPrimaryTitle.GetAdjective] müdahaleciler tarafından istismar ediliyor.\n\n"
+#AGOT Modified
+fp2_other_decisions.1001.desc:0 "Dikkatin dağılması, kıskançlık ve ihmalkârlık yüzünden, biz özgür halk, [btw_footholder.GetPrimaryTitle.GetAdjective] müdahalecilerin anavatanımızın bölünmüşlüğünden faydalanarak kuzeyin tarihi kabilelerine saldırmasını sağladık."
+ #AGOT Modified
+ fp2_other_decisions.1001.involved_faith:0 "[btw_footholder.GetTitledFirstName], [btw_footholder.GetHerselfHimself] kazanımlarını delil göstererek kuzeyin meşru [btw_footholder.GetFaith.GetAdjectiveNoTooltip] lideri olduğunu ilan etti; bu kazanımlar, güç kaybeden [btw_footholder.GetFaith.GetReligion.GetAdjective] Vahşi kabileleri üzerindeki meşruiyetini kanıtlamak için kullanılıyor."
+#AGOT Modified
+fp2_other_decisions.1001.same_uninvolved_faith:0 "Onlar, bizim başarısızlıklarımızın [ROOT.Char.GetFaith.HighGodNamePossessive] cezası olduğunu ve [btw_footholder.GetFaith.GetName] yolundan sapmamızın sonucu olduğunu iddia ediyorlar. Ayrıca, [btw_footholder.GetTitledFirstName] adlı kişinin [ROOT.Char.GetFaith.GetReligion.GetAdjective] Vahşileri'nin meşru lideri olduğunu söylüyorlar..."
+ #AGOT Modified
+ fp2_other_decisions.1001.uninvolved_faith:0 "[btw_footholder.GetTitledFirstName], kazanımlarını delil göstererek [btw_footholder.GetFaith.GetAdjective] inancının, tüm Vahşi kabileleri [btw_footholder.GetFaith.HighGodName] altında birleştirecek gerçek [btw_footholder.GetFaith.GetReligion.GetAdjective] yolu olduğunu ilan etti."
+ #AGOT Modified
+ fp2_other_decisions.1001.closing:0 "\n\n[btw_footholder.GetTitledFirstName], topraklarını birleştirirken, eski inançların eskiden barındırdığı farklılıklar, bu [btw_footholder.GetFaith.GetAdjective] işgali karşısında gölgede kalmış gibi görünüyor..."
+ fp2_other_decisions.1001.a:0 "Lanetli işgalciler."
+
+  ### Council of Toledo Decision
+ #AGOT Disabled
+ #council_of_toledo_decision_title:0 "Convene Council of Toledo"
+ #AGOT Disabled
+ #council_of_toledo_decision_desc_count:0 "A time will come to convene the [SCOPE.ScriptValue('council_of_toledo_counter_value')][ROOT.Char.Custom('get_council_of_toledo_count_suffix')] Council of [GetTitleByKey('c_toledo').GetNameNoTier], and settle the religious questions of the [ROOT.Char.GetFaith.GetAdherentNamePlural] once more."
+ #AGOT Disabled
+ #council_of_toledo_decision_desc:0 "For centuries, religious councils were held in [GetTitleByKey('c_toledo').GetNameNoTier], where clergy from across Christendom settled the disputes of the day. By holding a 19th council, this Visigothic tradition can be restored."
+ #AGOT Disabled
+ #council_of_toledo_decision_tooltip:0 "Hold a gathering of [ROOT.Char.GetFaith.GetReligion.GetAdjective] clerics in Toledo"
+ #AGOT Disabled
+ #council_of_toledo_decision_confirm:0 "It is time."
+ #AGOT Disabled
+ #council_of_toledo_decision_toledo_holder_trigger:0 "You [hold|E] or rule over the [GetTitleByKey('c_toledo').GetName], and its [ruler|E] is [THIS.Char.GetFaith.GetName] faith"
+ #AGOT Disabled
+ #council_of_toledo_decision_toledo_faith_trigger:0 "[faith|E] is [THIS.Char.GetLiege.GetFaith.GetName]"
+ #AGOT Disabled
+ #council_of_toledo_decision_catalyst_tt:0 "A [struggle_catalyst|E] may occur"
+ #AGOT Disabled
+ #council_of_toledo_decision_tt:0 "Rewards depend on the outcome of the Council"
+ # Event - Organization
+ #AGOT Disabled
+ #fp2_other_decisions.0700.council:0 "[SCOPE.ScriptValue('council_of_toledo_counter_value')][ROOT.Char.Custom('get_council_of_toledo_count_suffix')] Council of Toledo"
+ #AGOT Disabled
+ #fp2_other_decisions.0700.t:0 "$fp2_other_decisions.0700.council$: Organization"
+ #AGOT Disabled
+ #fp2_other_decisions.0700.19:0 "[council_priest.GetTitledFirstName] has begun the arrangements for a nineteenth religious council in [GetTitleByKey('c_toledo').GetNameNoTier], to match the Visigothic synods of old.\n\nWhile the reach of [GetTitleByKey('k_papal_state').GetDefinitiveName] has grown since the Moorish invasion, our clergy still retain their own tradition and autonomy. It is time to restate Iberia's importance as a site of religious dialogue.\n\nPrevious meetings included [ROOT.Char.GetFaith.BishopNeuterPlural] from across Christendom, but that need not be the case anymore..."
+ #AGOT Disabled
+ #fp2_other_decisions.0700.desc:0 "The [ROOT.Char.GetFaith.BishopNeuterPlural] of Iberia have been eagerly awaiting the next council ever since the tradition of Toledo was revived.\n\n[council_priest.GetCouncilTitleFirstName] has begin the preparations, though it remains to be decided whether priests form other traditions will be invited to attend."
+ #AGOT Disabled
+ #fp2_other_decisions.0700.a:0 "It shall be a Mozarab synod."
+ #AGOT Disabled
+ #fp2_other_decisions.0700.b:0 "All of [ROOT.Char.GetFaith.HighGodNamePossessive] ministers are welcome in Toledo."
+ #AGOT Disabled
+ #fp2_other_decisions.0700.b.success:0 "Ecumenical bishops attend"
+ #AGOT Disabled
+ #fp2_other_decisions.0700.b.failure:0 "The call to Toledo is ignored"
+ #AGOT Disabled
+ #fp2_other_decisions.0700.tt:0 "The [SCOPE.ScriptValue('council_of_toledo_counter_value')][THIS.Char.Custom('get_council_of_toledo_count_suffix')] Council of Toledo will begin in several weeks"
+ # Event - Arrival
+ #AGOT Disabled
+ #fp2_other_decisions.0701.t:0 "$fp2_other_decisions.0700.council$: Attendees"
+ #AGOT Disabled
+ #fp2_other_decisions.0701.opening.success:0 "It seems the invitation to the wider [ROOT.Char.GetFaith.GetReligion.GetAdjective] [ROOT.Char.GetFaith.AltPriestTermPlural] has been met positively; many esteemed [ROOT.Char.GetFaith.BishopNeuterPlural] from foreign lands have eagerly flocked to [GetTitleByKey('c_toledo').GetNameNoTier]."
+ #AGOT Disabled
+ #fp2_other_decisions.0701.opening.failure:0 "The response to our invitation to the ecumenical community has been cold; numerous [ROOT.Char.GetFaith.BishopNeuterPlural] cited poor weather preventing from reaching [GetTitleByKey('c_toledo').GetNameNoTier], leaving only local prelates in attendance...."
+ #AGOT Disabled
+ #fp2_other_decisions.0701.opening.catastrophe:0 "We have not seen a single bishop, deacon, or abbot from any of the other [ROOT.Char.GetFaith.GetReligion.GetAdjective] denominations in [GetTitleByKey('c_toledo').GetNameNoTier]; it seems our council is viewed with contempt or anger by our ecumenical fraternity, and only local prelates are in attendance."
+ #AGOT Disabled
+ #fp2_other_decisions.0701.opening:0 "The great and the good have descended upon [GetTitleByKey('c_toledo').GetNameNoTier], representing all the sees and abbeys of the [ROOT.Char.GetFaith.GetAdherentNamePlural]."
+ #AGOT Disabled
+ #fp2_other_decisions.0701.religious_head_bishop:0 "\n\nAmongst the lowly prelates is [portrait_bishop.GetTitledFirstName], [portrait_bishop.Custom('get_council_of_toledo_attendee_description')], head of the [portrait_bishop.GetFaith.GetAdjective] church."
+ #AGOT Disabled
+ #fp2_other_decisions.0701.powerful_bishop:0 "\n\nPerhaps most notable among them is [portrait_bishop.GetTitledFirstName], [portrait_bishop.Custom('get_council_of_toledo_attendee_description')], a [portrait_bishop.GetFaith.GetAdjective] prelate of great influence."
+ #AGOT Disabled
+ #fp2_other_decisions.0701.saint_bishop:0 "\n\nThe attendees are blessed to have among them [portrait_bishop.GetFirstName], [portrait_bishop.Custom('get_council_of_toledo_attendee_description')], a [portrait_bishop.GetFaith.GetAdjective] saint!"
+ #AGOT Disabled
+ #fp2_other_decisions.0701.theologian_bishop:0 "\n\nNotably among them is [portrait_bishop.GetFirstName], [portrait_bishop.Custom('get_council_of_toledo_attendee_description')], a widely respected [portrait_bishop.GetFaith.GetAdjective] theologian."
+ #AGOT Disabled
+ #fp2_other_decisions.0701.bad_bishop:0 "\n\nOne of the most well-known is [portrait_bishop.GetFirstName], [portrait_bishop.Custom('get_council_of_toledo_attendee_description')], whose impiety is the butt of jokes known throughout Christendom."
+ #AGOT Disabled
+ #fp2_other_decisions.0701.senior_bishop:0 "\n\nMost senior of all the clerics is [portrait_bishop.GetFirstName], [portrait_bishop.Custom('get_council_of_toledo_attendee_description')], a venerable [portrait_bishop.GetWomanMan] of the cloth. "
+ #AGOT Disabled
+ #fp2_other_decisions.0701.failure:0 "\n\nThe walled city's merchants are disappointed by the low turn-out, having prepared for visitations of a great number of clerics. A pity."
+ #AGOT Disabled
+ #fp2_other_decisions.0701.desc:0 "\n\nThe walled city is already seeing the benefits of the visiting clerics, whose commerce and hospitality is looked to by the merchants."
+ #AGOT Disabled
+ #fp2_other_decisions.0701.a:0 "Excellent."
+ #AGOT Disabled
+ #fp2_other_decisions.0701.b:0 "Pride goeth..."
+ #AGOT Disabled
+ #fp2_other_decisions.0701.c:0 "Good."
+ #AGOT Disabled
+ #fp2_other_decisions.0701.tt:0 "The [SCOPE.ScriptValue('council_of_toledo_counter_value')][THIS.Char.Custom('get_council_of_toledo_count_suffix')] Council of Toledo begins"
+ # Event - Debate
+ #AGOT Disabled
+ #fp2_other_decisions.0702.t:0 "$fp2_other_decisions.0700.council$: Debate"
+ #AGOT Disabled
+ #fp2_other_decisions.0702.19:0 "Centuries after Archbishop Gunderic's last council under King Wittiza, [council_priest.GetCouncilTitleFirstName] has restored our tradition by opening the nineteenth gathering in storied [GetTitleByKey('c_toledo').GetNameNoTier].\n\n"
+ #AGOT Disabled
+ #fp2_other_decisions.0702.opening:0 "Another council has begun in [GetTitleByKey('c_toledo').GetNameNoTier], this time opened by [council_priest.GetCouncilTitleFirstName].\n\n"
+ #AGOT Disabled
+ #fp2_other_decisions.0702.present:0 "\n\nBy the week's end, it quickly became clear that [debate_bishop.GetTitledFirstName] of [debate_bishop.GetTopLiege.GetPrimaryTitle.GetNameNoTierNoTooltip] had the room's ear on the matter, $fp2_other_decisions.0702.closing$"
+ #AGOT Disabled
+ #fp2_other_decisions.0702.second_hand:0 "\n\nAs the talks come to a close, it is clear that [debate_bishop.GetTitledFirstName] of [debate_bishop.GetTopLiege.GetPrimaryTitle.GetNameNoTierNoTooltip] is seen as the leader of this view, $fp2_other_decisions.0702.closing$"
+ #AGOT Disabled
+ #fp2_other_decisions.0702.conversion:0 "An overarching theme that conversion of heretics and infidels is the only way to ensure peace and protect [ROOT.Char.GetFaith.GetAdherentNamePlural] quickly emerged."
+ #AGOT Disabled
+ #fp2_other_decisions.0702.reform:0 "The key theme has been that [ROOT.Char.GetFaith.GetAdherentNamePlural] should not be afraid of major reform, now that the position of the Iberian church is secure."
+ #AGOT Disabled
+ #fp2_other_decisions.0702.tolerance:0 "The dominating theme has been that [ROOT.Char.GetFaith.GetAdherentNamePlural] should be more tolerant of peaceful infidels, an idea which fast became the focus of the talks."
+ #AGOT Disabled
+ #fp2_other_decisions.0702.rights:0 "The chief theme has been concern over safeguarding the ancient rights of the [ROOT.Char.GetFaith.GetAdjective] clergy, and repairing churches."
+ #AGOT Disabled
+ #fp2_other_decisions.0702.hof:0 "Surprisingly, the sense that [ROOT.Char.GetFaith.GetAdherentNamePlural] needed their own spiritual leader was the most pressing concern of many of our bishops."
+ #AGOT Disabled
+ #fp2_other_decisions.0702.pope:0 "A mood of collaboration fell, with many bishops arguing for more cooperation between [ROOT.Char.GetFaith.GetAdherentNamePlural] and their ecumenical brothers."
+ #AGOT Disabled
+ #fp2_other_decisions.0702.heresy:0 "An urgent energy gripped the talks, as the threat posed by the [heretic_faith.GetAdherentNamePlural], heretics like the Priscillians and Arians of the past, was broached."
+ #AGOT Disabled
+ #fp2_other_decisions.0702.closing:0 "while [counter_bishop.GetTitledFirstName|U] of [counter_bishop.GetTopLiege.GetPrimaryTitle.GetNameNoTierNoTooltip] most vigorously countered [debate_bishop.GetHerHis] arguments."
+ #AGOT Disabled
+ #fp2_other_decisions.0702.a:0 "I couldn't agree more."
+ #AGOT Disabled
+ #fp2_other_decisions.0702.b.hof:0 "It is not [ROOT.Char.GetFaith.HighGodNamePossessive] will."
+ #AGOT Disabled
+ #fp2_other_decisions.0702.b:0 "[debate_bishop.GetSheHe|U] will be shouted down."
+ #AGOT Disabled
+ #council_of_toledo_ruler_effect_tt:0 "Every [council_toledo_faith.GetAdjective] [ruler|E]"
+ # Event - Invalidated
+ #AGOT Disabled
+ #fp2_other_decisions.0703.t:0 "$fp2_other_decisions.0700.council$: Postponed"
+ #AGOT Disabled
+ #fp2_other_decisions.0703.war:0 "With the onset of war, [council_priest.GetCouncilTitleFirstName] has postponed the upcoming Council of Toledo for the time being."
+ #AGOT Disabled
+ #fp2_other_decisions.0703.control:0 "With the loss of [GetTitleByKey('c_toledo').GetNameNoTier], it will no longer possible to host the upcoming Council of Toledo..."
+ #AGOT Disabled
+ #fp2_other_decisions.0703.desc:0 "\n\nThe [ROOT.Char.GetFaith.GetAdherentNamePlural] will no doubt soon return from this setback..."
+ #AGOT Disabled
+ #fp2_other_decisions.0703.a:0 "Disappointing."
+ # Event - Ping
+ #AGOT Disabled
+ #fp2_other_decisions.0704.t:0 "The $fp2_other_decisions.0700.council$"
+ #AGOT Disabled
+ #fp2_other_decisions.0704.success:0 "\n\nWith [council_toledo_host.GetTitledFirstNamePossessive] support, the [ROOT.Char.GetFaith.GetAdherentNamePlural] clergy have made their voices heard."
+ #AGOT Disabled
+ #fp2_other_decisions.0704.failure:0 "It seems [council_toledo_host.GetTitledFirstName] had other ideas however, and vigorously lobbied against these overtures."
+ #AGOT Disabled
+ #fp2_other_decisions.0704.a:0 "Interesting."
+ # Custom Loc
+ #AGOT Disabled
+ #council_toledo_landed_desc:0 "[ROOT.Char.GetTitleAsNameNoTooltip] of [ROOT.Char.GetPrimaryTitle.GetNameNoTier]"
+ #AGOT Disabled
+ #council_toledo_unlanded_desc:0 "Archbishop of [ROOT.Char.GetLiege.GetPrimaryTitle.GetNameNoTier]"
+ # Tooltips
+ #AGOT Disabled
+ #fp2_council_culture_tt:0 "Iberian [cultures|E] gain #positive_value [SCOPE.ScriptValue('council_toledo_culture_acceptance_value')|0]#! [cultural_acceptance|E] of [THIS.Char.GetCulture.GetName]"
+ #AGOT Disabled
+ #fp2_council_opinion_mozarabic_effect_tt:0 "Every Mozarabic attendee"
+ #AGOT Disabled
+ #fp2_council_opinion_other_effect_tt:0 "Every non-Mozarabic attendee"
+ #AGOT Disabled
+ #fp2_council_conversion_modifier_tt:0 "Convert Faith in County will progress faster against other [religions|E] while this modifier is present"
+ #AGOT Disabled
+ #fp2_council_heresies_modifier_tt:0 "Convert Faith in County will progress faster against same-[religion|E] [faiths|E] with [head_of_faiths|E] this modifier is present"
+ #AGOT Disabled
+ #excluded_from_council_toledo_tt:0 "Every other [THIS.Char.GetFaith.GetReligion.GetAdjective] [head_of_faith|E] in [diplomatic_range|E]"
+ #AGOT Disabled
+ #fp2_council_end_tt:0 "The [SCOPE.ScriptValue('council_of_toledo_counter_value')][THIS.Char.Custom('get_council_of_toledo_count_suffix')] Council of Toledo ends"
+ # Modifiers
+ #AGOT Disabled
+ #fp2_small_council_modifier:0 "Council of Toledo"
+ #AGOT Disabled
+ #fp2_small_council_modifier_desc:0 "A local council of prelates has been held in Toledo, bringing prosperity to the town."
+ #AGOT Disabled
+ #fp2_big_council_modifier:0 "$fp2_small_council_modifier$"
+ #AGOT Disabled
+ #fp2_big_council_modifier_desc:0 "A large council of prelates has been held in Toledo, bringing great prosperity to the town."
+ #AGOT Disabled
+ #fp2_disappointing_council_modifier:0 "$fp2_small_council_modifier$"
+ #AGOT Disabled
+ #fp2_disappointing_council_modifier_desc:0 "A disappointingly attended council of prelates has been held in Toledo, costing the towns merchants."
+ #AGOT Disabled
+ #fp2_stifled_council_modifier:0 "Stifled Council"
+ #AGOT Disabled
+ #fp2_stifled_council_modifier_desc:0 "Contradicting a religious council has made this character unpopular among the clergy."
+ #AGOT Disabled
+ #fp2_council_conversion_modifier:0 "Council of Conversion"
+ #AGOT Disabled
+ #fp2_council_conversion_modifier_desc:0 "The last Council of Toledo encouraged the conversion of infidels in Mozarab realms."
+ #AGOT Disabled
+ #fp2_council_tolerance_modifier:0 "Council of Tolerance"
+ #AGOT Disabled
+ #fp2_council_tolerance_modifier_desc:0 "The last Council of Toledo encouraged tolerance among the religions of Iberia."
+ #AGOT Disabled
+ #fp2_council_reform_modifier:0 "Council of Reform"
+ #AGOT Disabled
+ #fp2_council_reform_modifier_desc:0 "The last Council of Toledo encouraged reform of the Mozarab church given its new power."
+ #AGOT Disabled
+ #fp2_council_rights_modifier:0 "Council of Rights"
+ #AGOT Disabled
+ #fp2_council_rights_modifier_desc:0 "The last Council of Toledo encouraged protection of clerical rights and repair of churches."
+ #AGOT Disabled
+ #fp2_council_hof_modifier:0 "Council of Leadership"
+ #AGOT Disabled
+ #fp2_council_hof_modifier_desc:0 "The last Council of Toledo encouraged Mozarabs to appoint their own head of faith."
+ #AGOT Disabled
+ #fp2_council_pope_modifier:0 "Council of Cooperation"
+ #AGOT Disabled
+ #fp2_council_pope_modifier_desc:0 "The last Council of Toledo encouraged cooperation between Mozarabs and the wider Christian world."
+ #AGOT Disabled
+ #fp2_council_heresy_modifier:0 "Council of Inquisition"
+ #AGOT Disabled
+ #fp2_council_heresy_modifier_desc:0 "The last Council of Toledo encouraged rooting out heresies which have sprung up in Iberia."
+ # Opinions
+ #AGOT Disabled
+ #fp2_council_toledo_opinion:0 "$fp2_small_council_modifier$"
+ #AGOT Disabled
+ #fp2_excluded_from_council_toledo_opinion:0 "Excluded from Toledo"
+ #AGOT Disabled
+ #fp2_council_toledo_new_hof_opinion:0 "$fp2_council_hof_modifier$"
+ #AGOT Disabled
+ #fp2_council_toledo_pope_opinion:0 "$fp2_council_pope_modifier$"
+ # Tasks
+ #AGOT Disabled
+ #council_toledo_conversion_task_desc:0 "$fp2_council_conversion_modifier$"
+ #AGOT Disabled
+ #council_toledo_heresies_task_desc:0 "$fp2_council_heresy_modifier$"
+ # Other
+ #AGOT Disabled
+ #fervor_gain_council_toledo:0 "$fp2_small_council_modifier$"
+ #AGOT Disabled
+ #fp2_council_toledo_culture_acceptance_desc:0 "$fp2_small_council_modifier$"
+
+ #AGOT Disabled
+ #found_kingdom_toledo_decision_title:0 "Establish Kingdom of Toledo"
+ #AGOT Disabled
+ #found_kingdom_toledo_decision_desc:0 "Since the fall of the Visigothic kingdom to the Moors, [GetTitleByKey('c_toledo').GetNameNoTier] has been relegated. As the capital of a new [ROOT.Char.GetFaith.GetAdjective] realm, it will once more be a seat of kings."
+ #AGOT Disabled
+ #found_kingdom_toledo_decision_confirm:0 "Toledo is the heart of Iberia!"
+ #AGOT Disabled
+ #found_kingdom_toledo_decision_tooltip:0 "Establish a new [GetFaithByKey('mozarabic_church').GetAdjective] [kingdom|E] based in [GetTitleByKey('k_toledo').GetNameNoTier]"
+ #AGOT Disabled
+ #found_kingdom_toledo_culture_tt:0 "Your [culture|E] has Iberian [heritage|E]"
+ #AGOT Disabled
+ #found_kingdom_toledo_faith_tt:0 "Your [faith|E] is [GetFaithByKey('mozarabic_church').GetName], or was created from it"
+ #AGOT Disabled
+ #found_kingdom_toledo_duchy_tt:0 "You [hold|E] and [completely_control|E] any [duchy|E] which [de_jure|E] borders the [GetTitleByKey('d_toledo').GetName], and which is part of a [kingdom|E] with more than two [de_jure|E] [duchies|E]"
+ #AGOT Disabled
+ #found_kingdom_toledo_capital_tt:0 "[GetTitleByKey('c_toledo').GetNameNoTier] is your [realm_capital|E]"
+
+ #AGOT Disabled
+ #fp2_other_decisions.1100.t:0 "The Kingdom of Toledo"
+ #AGOT Disabled
+ #fp2_other_decisions.1100.desc:0 "With the strength of my position now beyond all doubt, the coronation in [GetTitleByKey('c_toledo').GetNameNoTier] has at last gone ahead as planned.\n\nIt is high time we [ROOT.Char.GetFaith.GetAdherentNamePlural] carved out our own domain, distinct from the petty taifas and the dominions of the north; a realm to rival the Visigothic kingdom of old!"
+ #AGOT Disabled
+ #fp2_other_decisions.1100.a:0 "Long may our kingdom prosper."
+
+ #AGOT Disabled
+ #fp2_other_decisions.1101.desc:0 "Going from strength to strength, [toledo_former.GetTitledFirstName] has had [toledo_former.GetHerselfHimself] formally crowned in [GetTitleByKey('c_toledo').GetNameNoTier].\n\nThe strength of this new [toledo_former.GetFaith.GetAdjective] kingdom, incorporating the lands of the old dominions of Iberia, is now beyond doubt.\n\n"
+ #AGOT Disabled
+ #fp2_other_decisions.1101.stolen:1 "These vexatious upstarts will have to be dealt with sooner rather than later!"
+ #AGOT Disabled
+ #fp2_other_decisions.1101.mozarab:0 "Though this bodes well for our faith, it may be a double-edged sword..."
+ #AGOT Disabled
+ #fp2_other_decisions.1101.a:0 "They will not last long!"
+ #AGOT Disabled
+ #fp2_other_decisions.1101.b:0 "Something to keep an eye on."
+ #AGOT Disabled
+ #fp2_other_decisions.1101.c:0 "Interesting."
+ 
+ #AGOT Disabled
+ #fp2_form_kingdom_toledo_modifier:0 "$fp2_other_decisions.1100.t$"
+ #AGOT Disabled
+ #fp2_form_kingdom_toledo_modifier_desc:0 "This character has established a new kingdom centered in the old Visigothic capital."
