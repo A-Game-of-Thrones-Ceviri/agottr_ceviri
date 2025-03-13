@@ -1,47 +1,47 @@
 ﻿l_english:
- FP2_BORDER_RAID_CB_NAME:0 "[DEFENDER.GetPrimaryTitle.GetNameNoTier] Topraklarında [border_raid|E]"
- FP2_BORDER_RAID_CB_SPECIFIC_NAME:0 "[TITLE.GetBaseNameNoTier] [Concept( 'border_raid', 'Sınırı Yağması' )|E]"
- FP2_BORDER_RAID_WAR_NAME:0 "[TITLE.GetBaseNameNoTier] Topraklarında [ATTACKER.GetPrimaryTitle.GetAdjective] [border_raid|E]"
- FP2_BORDER_RAID_WAR_NAME_BASE:0 "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
- fp2_border_raid:0 "[border_raid|E]"
-
- border_raid_cb_desc_victory_attacker:0 "Hedef [Concept( 'county', 'kontluğun' )|E] [Concept( 'development', 'Gelişmişliğine' )|E] göre [gold|E] kazanırsınız. Kontluğun gelişmişliği de azalır.\n$border_raid_building_tt$\n$border_raid_warning_tt$"
- border_raid_cb_desc_victory_defender:0 "[attacker.GetName] [Concept( 'county', 'kontluğun' )|E] [Concept( 'development', 'Gelişmişliğine' )|E] göre [gold|E] kazanır. Kontluğun gelişmişliği de azalır.\n$border_raid_building_tt$\n$border_raid_warning_tt$"
- border_raid_cb_desc_white_peace_attacker:0 "Yağmanız başarısız olacak."
- border_raid_cb_desc_white_peace_defender:0 "[attacker.GetName] yağmasında başarısız olacak."
- border_raid_cb_desc_defeat_attacker:0 "Yağma yapmaya çalıştığınız için savaş tazminatı olarak [gold|E] vermelisiniz."
- border_raid_cb_desc_defeat_defender:1 "[attacker.GetName] yağma yapmaya çalıştığı için savaş tazminatı olarak [gold|E] vermeli."
- destroy_random_building_tt:0 "[raid_county.GetName] topraklarındaki rastgele bir [building|E] yok edildi, fazladan [gold_i] verdi."
- border_raid_building_tt:0 "Bir [building|E] da yok edilebilir."
- border_raid_warning_tt:0 "@warning_icon! #X Herhangi bir [title|E] el değiştirmeyecek.#!"
- border_raid_message_title:0 "Sınır Kontluğu Yağmalandı"
-
-#AGOT Modified
-#FP2_EXPEL_INTERLOPER_CB_NAME:0 "[iberian_reclamation|E] karşı [DEFENDER.GetPrimaryTitle.GetNameNoTier] "
-FP2_EXPEL_INTERLOPER_CB_NAME:0 "[btw_reclamation|E] karşı [DEFENDER.GetPrimaryTitle.GetNameNoTier] "
-#AGOT Modified
-#FP2_EXPEL_INTERLOPER_CB_SPECIFIC_NAME:0 "[iberian_reclamation|E] [TITLE.GetBaseNameNoTier]"
-FP2_EXPEL_INTERLOPER_CB_SPECIFIC_NAME:0 "[btw_reclamation|E] [TITLE.GetBaseNameNoTier]"
-#AGOT Modified
-#FP2_EXPEL_INTERLOPER_WAR_NAME:0 "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjectiveNoTooltip] [iberian_reclamation|E] [TITLE.GetBaseNameNoTier]"
-FP2_EXPEL_INTERLOPER_WAR_NAME:0 "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjectiveNoTooltip] [btw_reclamation|E] [TITLE.GetBaseNameNoTier]"
-FP2_EXPEL_INTERLOPER_WAR_NAME_BASE:0 "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
-
- iberian_reclamation_cb_victory_desc_attacker_vassalize:0 "[defender.GetShortUIName|U] vasallaştırılacak"
- iberian_reclamation_cb_victory_desc_defender_vassalize:0 "[attacker.GetShortUIName|U] sizi vasallaştıracak"
- iberian_reclamation_cb_victory_desc_attacker_conquer_1:0 "$EFFECT_LIST_BULLET$[defender.GetShortUIName|U] adlı kişinin hedef [Concept( 'duchy', 'düklükteki' )|E] [struggle_involved|E] düşük [Concept( 'rank', 'kademeli' )|E] [Concept( 'vassals', 'vasallarının' )|E] [Concept( 'liege', 'Süzereni' )|E] olacaksınız."
- iberian_reclamation_cb_victory_desc_attacker_conquer_2:0 "$EFFECT_LIST_BULLET$Üzerinde savaşılan, [struggle_uninvolved|E] karakterlerin ve [duchy|E] dışarısında toprağı olanların [Concept( 'holders', 'sahip' )|E] olduğu üzerinde savaşılan [Concept( 'counties', 'Kontlukları' )|E] alacaksınız.\n"
- iberian_reclamation_cb_victory_desc_defender_conquer_1:0 "$EFFECT_LIST_BULLET$[attacker.GetShortUIName|U], hedef [Concept( 'duchy', 'düklükteki' )|E] [Select_CString( defender.IsLocalPlayer, '', defender.GetShortUIName )][Select_CString( defender.IsLocalPlayer, '', ' adlı kişinin ' )][struggle_involved|E] düşük [Concept( 'rank', 'kademeli' )|E] [Concept( 'vassals', 'vasallarını' )|E]#E [Select_CString( defender.IsLocalPlayer, 'zın', 'n' )]#! [Concept( 'liege', 'Süzereni' )|E] olacak."
- iberian_reclamation_cb_victory_desc_defender_conquer_2:0 "$EFFECT_LIST_BULLET$[attacker.GetShortUIName|U] [struggle_uninvolved|E] karakterlerin ve [duchy|E] dışarısında toprağı olanların [Concept( 'holders', 'sahip' )|E] olduğu üzerinde savaşılan [Concept( 'counties', 'Kontlukları' )|E] alacak\n"
-  #AGOT Modified
- #fp2_expel_interloper:0 "[iberian_reclamation|E]"
- fp2_expel_interloper:0 "[btw_reclamation|E]"
-
-
- iberian_reclamation_cb_white_peace_desc_vassalize:0 "[Select_CString( defender.IsLocalPlayer, '', defender.GetShortUIName )][Select_CString( defender.IsLocalPlayer, '', ' ' )][independent|E] kalmaya devam edecek[Select_CString( defender.IsLocalPlayer, 'siniz', '' )]"
- iberian_reclamation_cb_white_peace_desc_conquer:0 "[Select_CString( defender.IsLocalPlayer, '', defender.GetShortUIName )][Select_CString( defender.IsLocalPlayer, 'Üzerinde', ' üzerinde' )] savaşılan [Concept( 'titles', 'Unvanlara' )|E] sahip olmaya devam edecek[Select_CString( defender.IsLocalPlayer, 'siniz', '' )]"
- iberian_reclamation_cb_defeat_desc_vassalize:0 "$iberian_reclamation_cb_white_peace_desc_vassalize$"
- iberian_reclamation_cb_defeat_desc_conquer:0 "$iberian_reclamation_cb_white_peace_desc_conquer$"
- iberian_reclamation_cb_defeat_desc:0 "$iberian_reclamation_cb_white_peace_desc$"
- 
- CB_COST_IBERIAN_RECLAMATION:0 "[county|E] başına maliyeti [SCOPE.ScriptValue('fp2_expel_interloper_county_cost_value')] [Concept( 'prestige', 'Prestijdir' )|E]"
+ FP2_BORDER_RAID_CB_NAME: "[DEFENDER.GetPrimaryTitle.GetNameNoTier] Topraklarında [border_raid|E]"
+ FP2_BORDER_RAID_CB_SPECIFIC_NAME: "[TITLE.GetBaseNameNoTier] [Concept( 'border_raid', 'Sınırı Yağması' )|E]"
+ FP2_BORDER_RAID_WAR_NAME: "[TITLE.GetBaseNameNoTier] Topraklarında [ATTACKER.GetPrimaryTitle.GetAdjective] [border_raid|E]"
+ FP2_BORDER_RAID_WAR_NAME_BASE: "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
+ fp2_border_raid: "[border_raid|E]"
+  
+ border_raid_cb_desc_victory_attacker: "Hedef [Concept( 'county', 'kontluğun' )|E] [Concept( 'development', 'Gelişmişliğine' )|E] göre [gold|E] kazanırsınız. Kontluğun gelişmişliği de azalır.\n$border_raid_building_tt$\n$border_raid_warning_tt$"
+ border_raid_cb_desc_victory_defender: "[attacker.GetName] [Concept( 'county', 'kontluğun' )|E] [Concept( 'development', 'Gelişmişliğine' )|E] göre [gold|E] kazanır. Kontluğun gelişmişliği de azalır.\n$border_raid_building_tt$\n$border_raid_warning_tt$"
+ border_raid_cb_desc_white_peace_attacker: "Yağmanız başarısız olacak."
+ border_raid_cb_desc_white_peace_defender: "[attacker.GetName] yağmasında başarısız olacak."
+ border_raid_cb_desc_defeat_attacker: "Yağma yapmaya çalıştığınız için savaş tazminatı olarak [gold|E] vermelisiniz."
+ border_raid_cb_desc_defeat_defender: "[attacker.GetName] yağma yapmaya çalıştığı için savaş tazminatı olarak [gold|E] vermeli."
+ destroy_random_building_tt: "[raid_county.GetName] topraklarındaki rastgele bir [building|E] yok edildi, fazladan [gold_i] verdi."
+ border_raid_building_tt: "Bir [building|E] da yok edilebilir."
+ border_raid_warning_tt: "@warning_icon! #X Herhangi bir [title|E] el değiştirmeyecek.#!"
+ border_raid_message_title: "Sınır Kontluğu Yağmalandı"
+  
+  #AGOT Modified 
+ #FP2_EXPEL_INTERLOPER_CB_NAME: "[iberian_reclamation|E] karşı [DEFENDER.GetPrimaryTitle.GetNameNoTier] "
+ FP2_EXPEL_INTERLOPER_CB_NAME: "[btw_reclamation|E] karşı [DEFENDER.GetPrimaryTitle.GetNameNoTier] "
+  #AGOT Modified 
+ #FP2_EXPEL_INTERLOPER_CB_SPECIFIC_NAME: "[iberian_reclamation|E] [TITLE.GetBaseNameNoTier]"
+ FP2_EXPEL_INTERLOPER_CB_SPECIFIC_NAME: "[btw_reclamation|E] [TITLE.GetBaseNameNoTier]"
+  #AGOT Modified 
+ #FP2_EXPEL_INTERLOPER_WAR_NAME: "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjectiveNoTooltip] [iberian_reclamation|E] [TITLE.GetBaseNameNoTier]"
+ FP2_EXPEL_INTERLOPER_WAR_NAME: "$ORDER$ [ATTACKER.GetPrimaryTitle.GetAdjectiveNoTooltip] [btw_reclamation|E] [TITLE.GetBaseNameNoTier]"
+ FP2_EXPEL_INTERLOPER_WAR_NAME_BASE: "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
+  
+ iberian_reclamation_cb_victory_desc_attacker_vassalize: "[defender.GetShortUIName|U] vasallaştırılacak"
+ iberian_reclamation_cb_victory_desc_defender_vassalize: "[attacker.GetShortUIName|U] sizi vasallaştıracak"
+ iberian_reclamation_cb_victory_desc_attacker_conquer_1: "$EFFECT_LIST_BULLET$[defender.GetShortUIName|U] adlı kişinin hedef [Concept( 'duchy', 'düklükteki' )|E] [struggle_involved|E] düşük [Concept( 'rank', 'kademeli' )|E] [Concept( 'vassals', 'vasallarının' )|E] [Concept( 'liege', 'Süzereni' )|E] olacaksınız."
+ iberian_reclamation_cb_victory_desc_attacker_conquer_2: "$EFFECT_LIST_BULLET$Üzerinde savaşılan, [struggle_uninvolved|E] karakterlerin ve [duchy|E] dışarısında toprağı olanların [Concept( 'holders', 'sahip' )|E] olduğu üzerinde savaşılan [Concept( 'counties', 'Kontlukları' )|E] alacaksınız.\n"
+ iberian_reclamation_cb_victory_desc_defender_conquer_1: "$EFFECT_LIST_BULLET$[attacker.GetShortUIName|U], hedef [Concept( 'duchy', 'düklükteki' )|E] [Select_CString( defender.IsLocalPlayer, '', defender.GetShortUIName )][Select_CString( defender.IsLocalPlayer, '', ' adlı kişinin ' )][struggle_involved|E] düşük [Concept( 'rank', 'kademeli' )|E] [Concept( 'vassals', 'vasallarını' )|E]#E [Select_CString( defender.IsLocalPlayer, 'zın', 'n' )]#! [Concept( 'liege', 'Süzereni' )|E] olacak."
+ iberian_reclamation_cb_victory_desc_defender_conquer_2: "$EFFECT_LIST_BULLET$[attacker.GetShortUIName|U] [struggle_uninvolved|E] karakterlerin ve [duchy|E] dışarısında toprağı olanların [Concept( 'holders', 'sahip' )|E] olduğu üzerinde savaşılan [Concept( 'counties', 'Kontlukları' )|E] alacak\n"
+  #AGOT Modified 
+ #fp2_expel_interloper: "[iberian_reclamation|E]"
+ fp2_expel_interloper: "[btw_reclamation|E]"
+  
+  
+ iberian_reclamation_cb_white_peace_desc_vassalize: "[Select_CString( defender.IsLocalPlayer, '', defender.GetShortUIName )][Select_CString( defender.IsLocalPlayer, '', ' ' )][independent|E] kalmaya devam edecek[Select_CString( defender.IsLocalPlayer, 'siniz', '' )]"
+ iberian_reclamation_cb_white_peace_desc_conquer: "[Select_CString( defender.IsLocalPlayer, '', defender.GetShortUIName )][Select_CString( defender.IsLocalPlayer, 'Üzerinde', ' üzerinde' )] savaşılan [Concept( 'titles', 'Unvanlara' )|E] sahip olmaya devam edecek[Select_CString( defender.IsLocalPlayer, 'siniz', '' )]"
+ iberian_reclamation_cb_defeat_desc_vassalize: "$iberian_reclamation_cb_white_peace_desc_vassalize$"
+ iberian_reclamation_cb_defeat_desc_conquer: "$iberian_reclamation_cb_white_peace_desc_conquer$"
+ iberian_reclamation_cb_defeat_desc: "$iberian_reclamation_cb_white_peace_desc$"
+  
+ CB_COST_IBERIAN_RECLAMATION: "[county|E] başına maliyeti [SCOPE.ScriptValue('fp2_expel_interloper_county_cost_value')] [Concept( 'prestige', 'Prestijdir' )|E]"

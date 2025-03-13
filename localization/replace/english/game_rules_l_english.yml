@@ -246,6 +246,8 @@
  setting_extreme_conquerors_bonuses_desc: "[conqueror_i] [ai_conquerors_personality|E] #V [GetTrait('conqueror').GetName( GetNullCharacter )]#! [trait|E] ve [GetModifier('ai_extreme_conqueror_modifier').GetNameWithTooltip] [modifier|E] kazan."
  setting_random_conquerors_bonuses: "#high Rastgele#!"
  setting_random_conquerors_bonuses_desc: "[conqueror_i] [ai_conquerors_personality|E] #V [GetTrait('conqueror').GetName( GetNullCharacter )]#! [trait|E] kazan ve [GetModifier('ai_extreme_conqueror_modifier').GetNameWithTooltip] [modifier|E] kazanma şansın #V %5#! olsun."
+ setting_reduced_random_conquerors_bonuses: "#high Düşük Rastgele#!" #NT!
+ setting_reduced_random_conquerors_bonuses_desc: "[conqueror_i] [ai_conquerors_personality|E] kazanmak #V [GetTrait('conqueror').GetName( GetNullCharacter )]#! [trait|E] ve bir #V 0.5%#![GetModifier('ai_extreme_conqueror_modifier').GetNameWithTooltip] [modifier|E] adresini kazanma şansı." #NT!
   
  rule_conquerors_inheritance: "[conqueror_i] Fatihler: Miras"
  setting_default_conquerors_inheritance: "#high Tüm Mirasçılar#!"
@@ -292,6 +294,25 @@
  setting_higher_realm_stability_desc: "Daha düşük miktarda [factions|E] ortaya çıkacaktır."
  setting_extreme_realm_stability: "#high Aşırı İstikrar#!"
  setting_extreme_realm_stability_desc: "Son derece düşük miktarda [factions|E] ortaya çıkacaktır."
+ setting_default_realm_stability_ai_only_desc: "Varsayılan [factions|E] tutarı ortaya çıkacaktır." #NT!
+ setting_lesser_realm_stability_ai_only: "#high Sadece yapay zeka: Daha az#!" #NT!
+ setting_lesser_realm_stability_ai_only_desc: "Daha yüksek miktarda [factions|E] ortaya çıkacaktır, ancak yalnızca yapay zeka yöneticileri için." #NT!
+ setting_higher_realm_stability_ai_only: "#high Sadece Yapay Zeka: Daha yüksek#!" #NT!
+ setting_higher_realm_stability_ai_only_desc: "Daha düşük miktarda [factions|E] ortaya çıkacaktır, ancak yalnızca yapay zeka yöneticileri için." #NT!
+ setting_extreme_realm_stability_ai_only: "#high Sadece Yapay Zeka: Ekstrem#!" #NT!
+ setting_extreme_realm_stability_ai_only_desc: "Son derece düşük miktarda [factions|E] ortaya çıkacaktır, ancak bu sadece yapay zeka yöneticileri için geçerli olacaktır." #NT!
+ setting_lesser_realm_stability_regular_factions: "#high Lesser Limited#!" #NT!
+ setting_lesser_realm_stability_regular_factions_desc: "Daha yüksek miktarda [factions|E] ortaya çıkacaktır. Popülist ve Köylü Grupları etkilenmez." #NT!
+ setting_higher_realm_stability_regular_factions: "#high Daha Yüksek Sınırlı#!" #NT!
+ setting_higher_realm_stability_regular_factions_desc: "Daha düşük miktarda [factions|E] ortaya çıkacaktır. Popülist ve Köylü Grupları etkilenmez." #NT!
+ setting_extreme_realm_stability_regular_factions: "#high Extreme Limited#!" #NT!
+ setting_extreme_realm_stability_regular_factions_desc: "Son derece düşük miktarda [factions|E] ortaya çıkacaktır. Popülist ve Köylü Grupları etkilenmez." #NT!
+ setting_lesser_realm_stability_regular_factions_ai_only: "#high Sadece Yapay Zeka: Daha Az Sınırlı#!" #NT!
+ setting_lesser_realm_stability_regular_factions_ai_only_desc: "Daha yüksek miktarda [factions|E] ortaya çıkacaktır, ancak yalnızca YZ yöneticileri için. Popülist ve Köylü Gruplar bundan etkilenmez." #NT!
+ setting_higher_realm_stability_regular_factions_ai_only: "#high Sadece Yapay Zeka: Daha Yüksek Sınırlı#!" #NT!
+ setting_higher_realm_stability_regular_factions_ai_only_desc: "Daha düşük miktarda [factions|E] ortaya çıkacaktır, ancak yalnızca yapay zeka yöneticileri için. Popülist ve Köylü Gruplar bundan etkilenmez." #NT!
+ setting_extreme_realm_stability_regular_factions_ai_only: "#high Sadece Yapay Zeka: Aşırı Sınırlı#!" #NT!
+ setting_extreme_realm_stability_regular_factions_ai_only_desc: "Son derece düşük miktarda [factions|E] ortaya çıkacaktır, ancak yalnızca AI yöneticileri için. Popülist ve Köylü Gruplar etkilenmez." #NT!
   
  rule_custom_kingdoms: "Özel Krallıklar"
  setting_on_custom_kingdoms: "Açık"
@@ -917,4 +938,13 @@
  setting_advantage_damage_effect_7_desc: "Rakibinize karşı [battles|E]'de sahip olduğunuz her [advantage|E] puan, [damage|E]'yi #V 7%#! oranında artıracaktır"
  setting_advantage_damage_effect_10: "10"
  setting_advantage_damage_effect_10_desc: "Rakibinize karşı [battles|E]'de sahip olduğunuz her [advantage|E] puan, [damage|E]'yi #V %10#! oranında artıracaktır"
+  
+ rule_custom_duchies: "Özel Dükalıklar" #NT!
+ setting_on_custom_duchies: "Açık" #NT!
+ setting_on_custom_duchies_player: "Sadece Oyuncu" #NT!
+ setting_off_custom_duchies: "Kapalı" #NT!
+ setting_on_custom_duchies_desc: "Tarihi olmayan özel Dükalıkların oluşturulmasına ve Kontlukların bunlara entegre edilmesine izin verilmektedir." #NT!
+ setting_on_custom_duchies_player_desc: "Tarihsel olmayan özel Dükalıkların oluşturulmasına ve Kontlukların bunlara entegre edilmesine sadece oyuncular izin verir." #NT!
+ setting_off_custom_duchies_desc: "Tarihi olmayan özel Dükalıkların oluşturulmasına ve Kontlukların bunlara entegre edilmesine izin verilmemektedir." #NT!
+  
   

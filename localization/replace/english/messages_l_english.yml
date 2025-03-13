@@ -37,6 +37,10 @@
  msg_siege_won_desc: "[PROVINCE.GetName] artık sizin kontrolünüzde"
  msg_siege_loot: "Kuşatma Kazanıldı"
  msg_siege_loot_desc: "[PROVINCE.GetName] artık sizin kontrolünüzde\n[PROVINCE.GetName] işgalinden [gold_i]$VALUE|V0$ kazandınız"
+ msg_scheme_opportunity_threshold_1_desc: "[scheme.GetName|V] [scheme|E] adresiniz [scheme_opportunity_i|E][EmptyScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t1_value')|P0] adresine sahiptir. [scheme_opportunities|E]" #NT!
+ msg_scheme_opportunity_threshold_2_desc: "[scheme.GetName|V] [scheme|E] adresiniz [scheme_opportunity_i|E][EmptyScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t2_value')|P0] adresine sahiptir. [scheme_opportunities|E]" #NT!
+ msg_scheme_opportunity_threshold_3_desc: "[scheme.GetName|V] [scheme|E] adresiniz [scheme_opportunity_i|E][EmptyScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t3_value')|P0] adresine sahiptir. [scheme_opportunities|E]" #NT!
+ msg_scheme_opportunity_threshold_4_desc: "[scheme.GetName|V] [scheme|E] adresiniz [scheme_opportunity_i|E][EmptyScope.ScriptValue('multi_ending_scheme_charge_to_advance_threshold_t4_value')|P0] adresine sahiptir. [scheme_opportunities|E]" #NT!
  msg_scheme_abandoned: "Plandan Vazgeçildi"
  msg_scheme_abandoned_desc: "[Select_CString(CHARACTER.IsLocalPlayer,'Sizin',CHARACTER.GetUINameNoTooltip)][Select_CString(CHARACTER.IsLocalPlayer,' üzerinizdeki',' üzerindeki')] $SCHEME_NAME|V$ planından vazgeçildi"
  msg_agent_joined_my_scheme: "Yardakçı Plana Katıldı: [LEFT_CHARACTER.GetShortUINameNoTooltip]"
@@ -390,6 +394,8 @@
  msg_court_position_invalidated_employee_desc: "[LEFT_CHARACTER.GetShortUIName] artık sizi [COURT_POSITION_TYPE.GetNameNoTooltip] olarak çalıştıramaz"
  msg_court_position_invalidated_employer: "[COURT_POSITION_TYPE.GetNameNoTooltip] Pozisyonundan Ayrıldı"
  msg_court_position_invalidated_employer_desc: "[LEFT_CHARACTER.GetShortUIName] artık [COURT_POSITION_TYPE.GetNameNoTooltip] pozisyonunuzda değil"
+ msg_court_position_invalidated_and_replaced_employer: "[COURT_POSITION_TYPE.GetNameNoTooltip] Değiştirildi" #NT!
+ msg_court_position_invalidated_and_replaced_employer_desc: "[LEFT_CHARACTER.GetShortUIName] artık [COURT_POSITION_TYPE.GetNameNoTooltip] adresiniz değildir. [LEFT_CHARACTER.GetSheHe|U] adresinin yerini [RIGHT_CHARACTER.GetShortUIName] almıştır (Aptitude: #glow_color:{0,0,0,1} [RIGHT_CHARACTER.GetHeldCourtPositionByType( COURT_POSITION_TYPE.Self ).GetAptitudeText]#!)" #NT!
   
  msg_becomes_obese: "Obez Olundu"
  msg_becomes_obese_desc: "[GetModifier( 'obese_modifier' ).GetNameWithTooltip] oldunuz"
@@ -553,5 +559,6 @@
  msg_admin_provincial_army_request_denied.title: "Asker Talebi Reddedildi"
  msg_admin_provincial_army_request_denied.desc: "[recipient.GetShortUIName|U] asker talebinizi reddetti"
   
+ msg_courtier_child_of_age_title: "Courtier Yaşlanıyor" #NT!
  msg_dynasty_child_of_age_title: "Hanedan Çocuğu Reşit Oluyor"
  msg_dynasty_child_of_age_desc: "[relative.Custom2('RelationToMeShort', SCOPE.sC('educated_child'))], [educated_child.GetShortUIName|U], [relative.Custom('GetCourt')|l]'nizde reşit oldu"

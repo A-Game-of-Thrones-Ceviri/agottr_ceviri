@@ -306,6 +306,8 @@
  visit_local_settlement_city_holding_decision_tt: "$visit_local_settlement_effect_intro$$visit_local_settlement_effect_tavern$$visit_local_settlement_effect_city$$visit_local_settlement_effect_cheaper_supplies$$visit_local_settlement_effect_expensive_artifacts$$visit_local_settlement_effect_contracts$"
  visit_local_settlement_decision_confirm: "Bu ilginç olacak."
  DECISION_ALREADY_VISITING_LOCAL_SETTLEMENT: "Hâlihazırda bir yerleşimi ziyaret ediyorsunuz"
+ DECISION_ALREADY_VISITING_LOCAL_SETTLEMENT_TIME: "Bu eylem şu tarihte tekrar kullanılabilir olacaktır [GetCurrentDateWithDiff( GetVarTimeRemaining( ROOT.Char.MakeScope, 'ep3_laamp_decision_1000_is_visiting') )]" #NT!
+ DECISION_ALREADY_VISITING_LOCAL_SETTLEMENT_NO_TIME: "Zaten bir yerleşim yerini ziyaret ediyorsunuz" #NT!
  DECISION_LOCAL_SETTLEMENT_SIEGED: "[CHARACTER.GetDomicile.GetLocation.GetName] [besieged|E]"
   #Excavate Treasure — Contract Decision 
  treasure_map_contract_decision: "Define Kaz"
@@ -649,6 +651,8 @@
  convert_to_feudalism_from_administrative_decision_desc: "Daha az bürokrasi ve daha çok #EMP iş#! tam da bu ülkenin ihtiyacı olan şey. [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip|l] eğer gelişecekse bize engel olanlarla bağımızı kesmeliyiz."
  convert_to_feudalism_from_administrative_decision_confirm: "[ROOT.Char.Custom('GetTribalReformGovernment')|U] Yönetimini Benimse"
  convert_to_feudalism_from_administrative_decision_tooltip: "[government|E] biçimini değiştirin"
+ you_have_governorship_rights_tt: "Sahip olduğunuz [liege|E] tarafından #high İl Evi Hakları#! size verilmiştir. [GetPlayer.Custom('GetProvinceConcept')]" #NT!
+ governorship_is_on_the_border_tt: "[GetPlayer.Custom('GetProvinceConcept')] adresiniz farklı bir [realm|E]" #NT!
   
  ep3_decisions_event.4070.t: "$major_decisions.0200.t$"
  ep3_decisions_event.4070.desc: "Bazen tecrübe ile sabit olana dönmek daha iyidir.\n\nİdari yaklaşım [actor.GetPrimaryTitle.GetNameNoTierNoTooltip|l] için zarardan başka bir şeye neden olmazken eski hayat tarzının inkâr edilemez faydaları vardı, geleneksel yapı yeni doruklara çıkmamızı sağlayacaktır."

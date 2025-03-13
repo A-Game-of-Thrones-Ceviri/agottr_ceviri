@@ -347,6 +347,14 @@
  restore_dumnonia_decision_effects_de_jure_tt: "Eğer sahip olunmuş durumdalarsa [cornwall_somerset.GetNameNoTier] ve [cornwall_gloucester.GetNameNoTier] [duchies|E]i [de_jure|E] Cornwall olacak."
  restore_dumnonia_decision_confirm: "Onen hag oll!"
   
+ found_the_empire_of_hindustan_decision: "Hindustan İmparatorluğu'nu kurdu" #NT!
+ found_the_empire_of_hindustan_decision_desc: "İslam Hind topraklarına yüzlerce yıl önce gelmiş olsa da, alt kıta yerli hanedanların egemenliği altında kalmıştır. Gelin yeni bir imparatorluk mirasının, kuzey Hindistan'ın büyük ovalarında kök salmış bir İslam devletinin temellerini atalım!" #NT!
+ found_the_empire_of_hindustan_decision_tooltip: "Hindustan bir [de_jure|E] [empire|E] haline geldi." #NT!
+ found_empire_of_hindustan_decision_effects_de_jure_tt: "[GetTitleByKey('e_rajastan').GetName], [GetTitleByKey('e_bengal').GetName] ve [GetTitleByKey('e_deccan').GetName] 'da sahip olunan herhangi bir [kingdoms|E], [de_jure|E] Hindustan olacaktır." #NT!
+ found_the_empire_of_hindustan_decision_confirm: "el-sultan zi̇l allah fi̇ ardi̇h!" #NT!
+ found_the_empire_of_hindustan_decision_effects_vassal_opinion.tt: "Tüm doğrudan vasallar" #NT!
+ found_the_empire_of_hindustan_opinion: "İmparatorluğu'nu kurdu. $e_hindustan$" #NT!
+  
  restore_roman_empire_decision: "Roma İmparatorluğu'nu Yeniden Kur"
  restore_roman_empire_decision_confirm: "İmparatorluğu yeniden kuracağım"
  restore_roman_empire_decision_tooltip: "Roma İmparatorluğu yeniden kurulacak"
@@ -1516,3 +1524,35 @@
  major_decisions.3200.desc: "Olarak [rightful_liege.Custom('GetQueenKing')|l][rightful_title.GetNameNoTier] ve [destroyed_title.GetNameNoTier] tahtlarının sahibi olan [rightful_liege.GetTitledFirstName], her ikisini de [rightful_liege.GetCapitalLocation.GetTitle.GetNameNoTier] adresinden yönetme zamanının geldiğine karar vermiştir.\n\nArtık [rightful_liege.GetHerHis] vasalları bir kişi tarafından yönetilen iki kişi olarak görülmeyecektir. [rightful_liege.Custom('GetQueenKing')|l]daha ziyade tek bir krallığın halkı olarak."
  major_decisions.3200.a: "Ve böylece [rightful_liege.GetCulture.GetNameNoTooltip] tiranının yönetimi devam ediyor..."
  major_decisions.3200.b: "Tüm [rightful_title.GetNameNoTierNoTooltip]'un iyiliği için."
+  
+ found_duchy_decision: "Yeni Bir Dükalık Kurdum" #NT!
+ found_duchy_decision_desc: "Komşularıma, akranlarıma, sözde eşitlerime bakıyorum. Ben onlardan daha büyüğüm ve dünyanın benim değerimi fark etmesinin zamanı geldi. Bir krallık kuracağım, böylece hepsi benim haklı yönetimime diz çökebilecek." #NT!
+ found_duchy_decision_tooltip: "Bu toprakları yönetmek için yeni bir [duchy|E] kuracağım. [ROOT.Char.GetPrimaryTitle.GetNameNoTier]" #NT!
+ found_duchy_decision_confirm: "Hükmetmek benim hakkım" #NT!
+ create_new_duchy: "[duchy|E] adresini oluşturursunuz. [root_scope.GetPrimaryTitle.GetNameNoTierNoTooltip]" #NT!
+ create_custom_duchy_de_jure_changes: "[root_scope.GetPrimaryTitle.GetName]:\n$EFFECT_LIST_BULLET$ olur [de_jure|E] [county|E] yeni [duchy|E]" #NT!
+  
+ expand_duchy_decision: "Dükalığı Genişletin" #NT!
+ expand_duchy_decision_desc: "Krallığım büyüdükçe, [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip] 'un çekirdek topraklarının da onunla birlikte büyümesi doğaldır. " #NT!
+ expand_duchy_decision_tooltip: "[ROOT.Char.GetPrimaryTitle.GetNameNoTier] 'u yeni topraklara doğru genişletmenin zamanı geldi" #NT!
+ expand_duchy_decision_confirm: "Vakit Geldi" #NT!
+ expand_duchy_less_than_4: "[duchy_title.GetName] #color_white [root_scope_temporary.MakeScope.ScriptValue('expand_duchy_max_size_value')] #! [de_jure|E] adresinden daha azına sahiptir. [counties|E]" #NT!
+ expand_duchy_capital_tooltip: "[barony.GetProvince.GetCounty.GetName] 'nin [de_jure|E] [capital|E] adresidir. [root_scope_temporary.GetPrimaryTitle.GetName]" #NT!
+  
+ set_de_jure_capital_decision: "De Jure Sermayenin Taşınması" #NT!
+ set_de_jure_capital_decision_desc: "Diyarımızda [ROOT.Char.GetCapitalLocation.GetCounty.GetName] 'un öneminin farkına varmanın zamanı geldi. Burası benim evim ve her yerde gereken saygı gösterilmelidir." #NT!
+ set_de_jure_capital_decision_tooltip: "[ROOT.Char.GetCapitalLocation.GetCounty.GetName] adresini [de_jure_capital|E] adresi yapın. [ROOT.Char.GetPrimaryTitle.GetNameNoTier]" #NT!
+ set_de_jure_capital_decision_confirm: "Öyle yap" #NT!
+ set_de_jure_capital_duchy: "Dükalık" #NT!
+ set_de_jure_capital_kingdom: "Krallık" #NT!
+ set_de_jure_capital_empire: "İmparatorluk" #NT!
+ set_duchy_capital_tooltip: ""
+ set_kingdom_capital_tooltip: ""
+ set_empire_capital_tooltip: ""
+ SET_DE_JURE_CAPITAL_CHOOSE_TYPE: "Başlık Katmanını Seçin" #NT!
+  
+ set_de_jure_not_de_jure_tooltip: "[current_capital.GetName] bir [de_jure|E] [county|E] of [current_de_jure.GetName]" #NT!
+ set_de_jure_capital_already_done_tooltip: "[current_capital.GetName] [de_jure_capital|E] değildir. [current_de_jure.GetName]" #NT!
+ set_de_jure_capital_hold_current_capital_tooltip: "[current_de_jure.GetName] #weak adresindeki mevcut [de_jure_capital|E] (#color_white [title_check.GetName] #!)#! adresinin bir parçasıdır. [realm|E]" #NT!
+ set_de_jure_capital_effect_tooltip: "[current_capital_scope.GetName] 'nin yeni [de_jure_capital|E] adresi olacak. [current_de_jure_scope.GetName]" #NT!
+ set_de_jure_capital_warning: "$set_de_jure_capital_effect_tooltip$\n@uyarı_ikonu! #color_red Akımı yok edecek [duchy_building|E]#!" #NT!

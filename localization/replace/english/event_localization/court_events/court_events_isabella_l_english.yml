@@ -1,389 +1,390 @@
 ﻿l_english:
-
- ##### A diplomat bleeds to death in your throne room by Isabella Welch
- 
- court.4001.t:0 "Sadece Bir Sıyrık"
- court.4001.desc:0 "Müttefikim [bleeding_diplomat_liege.GetName] tarafından gönderilen bir diplomat olan [bleeding_diplomat.GetName] ve onun etrafında oluşan kan havuzuna bakakaldım. Üzerinde durduğu güzelim halım muazzam miktarda bir kan emmesi bile yetmemiş, ortalık kan gölü olmuş. Anlaşılan o ki saatlerdir kanaması vardı.\n\n"Bu karışıklık için özür dilerim. [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] topraklarına yaptığım yolculuk sırasında, bir handayken cücenin teki beni soymaya çalıştı ve biraz itiş kakış yaşadık. Ancak ben hâlâ ayakta durabildiğim sürece diplomatik ziyarete devam edememem için bir sebep yok, kanamanın ölümcül boyuta ulaşmasına daha #EMP günler#! var!""
- court.4001.a:0 "Muhafızlar! Bu [Select_CString(bleeding_diplomat.IsFemale, 'kadını', 'adamı' )] saray hekimine götürün."
- court.4001.b:0 "Önümüzdeki haftaya kadar müsait değilim, o zamana kadar dayanabilir misin?"
- court.4001.c:0 "Şimdi konuşabiliriz ancak halımın parasını efendinin ödemesi gerekiyor."
- court.4001.carpet:0 "Halıyı temizlemeniz gerekiyor"
- court.4001.new_carpet:0 "Kanaması duracak gibi durmuyor, yeni bir halı almanız gerek."
- court.4001.toast:0 "[bleeding_diplomat.GetName] öldü"
- court.4001.toast_desc:0 "[bleeding_diplomat.GetName] kıymetli halınızı kan gölüne çevirdi."
- court.4001.cure_toast:0 "Saray hekimi diplomatı iyileştirdi"
-
-##### All-male-choirs by Isabella Welch
-
- court.4100.t:0 "Alışılmadık Koro"
- court.4100.desc:0 "Saray Müzisyenim bana doğru yaklaşıyor.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], dikkatinizi rica edebilir miyim? Sadece erkeklerden oluşan üst düzey bir koro hazırladım! Sadece şarkı söylemekle kalmıyorlar, tayt giyip, parlak kuşaklarının üstüne kasıklık takıp bir de senkronize bir şekilde dans ediyorlar! Tüm bu gösteri tabii ki [ROOT.GetCharacter.GetFaith.HighGodName] adına minnetimizi ifade etmek için yapılıyor. Eminim bu büyük gösteriyi desteklersiniz, hem böyle gösteriler saray hanımlarının da çok hoşuna gider.""
- court.4100.a:0 "Kusacağım galiba. Bu sapkını zindana atın!"
- court.4100.b:0 "Hanımlar bu taytları görmeye dayanamazlar bence."
- court.4100.c:0 "Aklımı çeldiniz, performansınızı izlemek için sabırsızlanıyorum!"
-
-##### Sneaky passages by Isabella Welch ######
-
- court.4200.t:0 "Gizli Cinayet Geçitleri"
- court.4200.desc:0 "[spymaster.Custom2('MyCharacterIntroduction', ROOT.Char)|U] yakın zamanda saraya yeni birini getirmişti. Tüm hayatını [capital.GetName] topraklarının en karanlık köşelerinde saklanarak geçirmiş gibi görünen bu kişi taht odamın köşesinde gizleniyor."
- court.4200.desc_middle:0 "\n\n"Gizli bir geçide ihtiyacınızın olabileceğini duydum. Sizin günahkâr kalbinizin arzuladığı her türlü gizli geçidi yapabilirim."
- court.4200.desc_oubliette:0 "$court.4200.desc_middle$ Hatta sevgilinizle tutku dolu geceler geçirmek istiyorsanız yatak odanıza zindan bile ekleyebilirim!""
- court.4200.desc_gluttony:0 "$court.4200.desc_middle$ Gecenin bir vakti mutfaktan pasta aşırmak isterseniz, odanız ve mutfak arasında bir yol bile yapabilirim!""
- court.4200.desc_fallback:0 "$court.4200.desc_middle$""
- court.4200.a:0 "Ben her yere yalnızca ön kapıdan girip çıkarım!"
- court.4200.b:0 "Saray mensuplarımın toplandığı odaları gözetleyebileceğim gizli geçitler istiyorum!"
- court.4200.c:0 "Fazlasına gerek yok, gizli bir kaçış kapısı işimi görür."
- court.4200.d:0 "Pasta asansörü mü? Dahice!"
- court.4200.e:0 "İtiraf edeyim, arada bir çırılçıplak bir şekilde zindana atılmak #EMP istiyorum#!."
- court.4200.f:0 "Daha iyi işler çıkarabileceğim gizli bir işkence odası."
- court.4200.g:0 "Hep rahatsız edilmeyeceğim bir oda #EMP istemişimdir#!!"
-
-##### My Spire is Bigger than Yours! by Isabella Welch #####
-
- court.4250.t:0 "Benim Kulem Seninkinden Daha Büyük!"
- court.4250.desc:1 "[tower_challenger_rival.GetTitledFirstName], taht odamın önünde "[ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] ve mıymıy saray mensupları" diye bağırıyor.\n\n"[ROOT.Char.GetTitledFirstNameNoTooltip] çamur birikintisindeki domuz gibi yuvarlanırken, ben [tower_challenger_rival.GetCapitalLocation.GetTitle.GetNameNoTier] topraklarında, bu güne kadar görülmüş en yüksek kuleyi diktim. [tower_challenger_rival.Custom('FortifiedBuilding')|U] üzerindeyken elimi uzatsam yıldızları toplayabilirim. Senin yıldızların nerede [ROOT.Char.GetTitledFirstNameNoTooltip]?"\n\n[concerned_steward.GetCouncilTitle|U] [concerned_steward.GetTitledFirstName], ihtiyatlı bir şekilde elini omzuma koyuyor. "[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], onun kulesi yüz yirmi metre uzunluğunda ve yapısal olarak hiç de sağlam olmayan kil ve hamurdan oluşuyor. Bu hareketlerini görmezden gelin ve kulesinin başına yıkılmasını bekleyin!""
- court.4250.a:0 "Çok beğendiysen kuleni, müsait bir yerine sokabilirsin!"
- court.4250.b:0 "Kulemizi sizinkinden bir metre daha uzun olacak şekilde uzatacağız!"
- court.4250.c:0 "#EMP Yüz elli metrelik#! bir kule yapılmasını emrediyorum!"
- court.4250.b.tt:0 "[THIS.GetCharacter.Custom('FortifiedBuilding')|U] tepesine çok uzun bir bayrak direği yerleştireceksiniz"
- court.4250.c.success.tt:0 "Muazzam bir kule inşa edeceksiniz"
- court.4250.c.failure.tt:0 "Kuleniz inşaat sırasında yıkıldı"
- court.4250.c.failure_toast_title:0 "İnşa ettiğiniz [ROOT.Char.Custom('FortifiedBuilding')] yıkıldı!"
- court.4250.c.accident.tt:0 "Korkunç bir kaza meydana geldi"
- court.4250.c.accident.tt.flavour:0 "Neyin yanlış gidebileceğini kim bilebilirdi ki..."
-
-### Spires part 2
-
- court.4251.desc:0 "Sonunda yükselen kulemin tamamlandığı haberini duyunca tüm sarayı dışarıya, kuleyi seyretmeye davet ediyorum. Kule gökyüzünü delip geçiyor ama bir yandan da rüzgârda hafiften bir sallanıyor."
- court.4251.desc_child_accident:0 "\n\nÇocuğum [crushed_child.GetName], aval aval bakan saray mensuplarımın arasından ulu kulenin dibine doğru ilerliyor ve tam yaklaşmışken bir sebepten dolayı birden gözlerini yuvalardan çıkacakmış kadar açıp öylece kalakalıyor.\n\n[crushed_child.GetNameNoTooltip], çığlık atmaya vakit bile bulamadan temelinden çatlayıp devrilen kulenin altında kalıyor."
- court.4251.desc_rival_accident:0 "\n\n[tower_challenger_rival.GetTitledFirstNameNoTooltip], ben kulenin zirvesine giden yolda ilerlerken bana katılıyor. Yukarı çıkarken birkaç kez ya manzaradan ya da merdivenlerden nefesi kesiliyor. Zirveye ulaştığımızda aşağıdaki saray mensuplarıma el sallıyorum, bu sırada o da korkuluklara yaslanıyor. Ancak yaslandığı anla cennete olan yolculuğuna başlaması bir oluyor."
- court.4251.desc_success:0 "\n\nBön bön kuleye bakan saray mensuplarım, hep birlikte kuleyi güçlü bir alkışla karşılıyorlar. Ancak nedense hepsi kulenin gölgesinde durmaktan kaçınıyor.\n\n[tower_challenger_rival.GetTitledFirstNameNoTooltip], bana doğru fısıldayarak: "Yemin olsun ki bu kulenin #EMP iki katı#! bir kule ile geri döneceğim!""
- court.4251.a:0 "Ah [crushed_child.GetNameNoTooltip], sen benim ufak meleğimdin!"
- court.4251.b:0 "Sonunda uçmayı başardın [tower_challenger_rival.GetTitledFirstNameNoTooltip]."
- court.4251.c:0 "Peki ya şimdi kim çamurda yuvarlanıyor [tower_challenger_rival.GetTitledFirstNameNoTooltip]?"
-
-### Crusades Preaching Tours by Isabella Welch
-
- court.4300.t:0 "Quantum Praedecessores"
- court.4300.preaching_tour_bernard_of_clairvaux_intro:0 "Clairvaux'lu Bernard, dağları denizleri aşarak ilerlediği vaaz turnesi sırasında, devam etmekte olan kutsal savaşın ateşini körüklemek için burada mola veriyor. Sarayımda görevli [bishop.GetCouncilTitle] ona, Tapınak Şövalyeleri'nin Kutsal Tarikatı için doktrinlerin hazırlanmasında merkezî bir rol oynadığımı söyledi.\n\n"
- court.4300.preaching_tour_bernard_of_clairvaux_theology:0 ""Aynı fikirleri paylaştığımız için heyecanlıyım. Askerî tarikatlarımız ile ilgili yeni bir inceleme üzerinde çalışıyorum: 'Yeni Şövalyeliğe Övgü'. Bu çalışmaya bir göz atarsanız, [ghw_sponsor.GetTitledFirstName] tarafından, kendi tarikatınızı onun da desteklediğine dair resmi bir çağrı yapılacağının garantisini verebilirim.""
- court.4300.preaching_tour_bernard_of_clairvaux_flea_excommunication:0 ""Misafirperverliğiniz için minnettarım. Nezaketinize karşılık olarak, saray mensuplarınızdan birkaçının papaza karşılık verdiğini fark ettim. Daha önce bunlar gibi çürük elmalarla çok mücadele ettim, sayısızını aforoz ettim ve fazla vakit kaybetmeden onları toprağın altına gönderdim. Görünüşe göre sarayınızda da aforoz edilmesi gereken bazı çürükler var!""
- court.4300.preaching_tour_bernard_of_clairvaux_standard:0 ""Bir ricada bulunacağım. [ROOT.GetCharacter.GetFaith.HighGodName|U] aklımı kutsamış ancak bağırsaklarım konusunda aynısını söyleyemeyeceğim. Bağırsaklarımı kontrol edemediğim için, tam altıma bir çukur kazılmadan vaaz veremem. Vaaz turnemde benimle gelip, çukur kazacak bir mümin var mı?""
- court.4300.preaching_tour_default:0 "Bir rahip taht odanızın girişini kapatıyor, içeri girenlerin kıyafetlerine yapıştırmaları için haç şeklinde kırmızı rozetler dağıtıyor.\n\n"[ROOT.GetCharacter.GetFaith.HighGodName], sana şükürler olsun! Kutsal savaşta vaat edilen müttefiklerimizin ülkelerinde, askerlerini ve hazinelerini desteklemek için vaaz veriyorum.""
- court.4300.a:0 ""Emrinizdeyim!""
- court.4300.b:0 ""Dönekleri aforoz edelim!""
- court.4300.c:0 ""Emimin ki [possible_latrine_digger.GetTitledFirstNameNoTooltip], size yardımcı olmak için can atıyordur!""
- court.4300.d:0 ""Kesemin ağzı açık!""
- court.4300.e:0 ""Görevinizde kişisel korumalarımdan biri refakatçiniz olacak.""
- court.4300.e.tt:0 "[bernard_guard_1.GetTitledFirstName] ve [bernard_guard_2.GetTitledFirstName], [right_portrait_character.GetTitledFirstName] için korumalık yapacak."
- court.4300.f:0 "Böyle yüce bir [Select_CString(right_portrait_character.IsFemale, 'kadınla', 'adamla' )] konuşmaya layık olmadığım için sessizce diz çöktüm."
- court.4300.g:0 "Haç rozeti oldukça kötü gözüküyor değil mi?"
- court.4300.a.tt:0 "Kutsal Taritak kurmanın [piety|E] ve [gold|E] maliyeti büyük ölçüde azalır"
-
-## Our Caravans are being attacked by Christian Nobles by Isabella Welch
- court.4350.t:0 "Safran Kervanı"
- court.4350.desc:0 "[concerned_marshal.GetCouncilTitle|U], taht odama topallayarak giren, elbiseleri yanmış bir çift tüccar ile yaptığı konuşmayı yeni bitirdi. "[caravan_attacker_liege.GetCapitalLocation.GetTitle.GetNameNoTier|U] topraklarından [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTier] topraklarına safran taşıyan ticaret kervanlarımızdan biri yağmalandı. Bunu yapanlar haydut değildi. Şövalye zırhları olan bir grup topraklı Hristiyan soylulardı."\n\n[concerned_marshal.GetCouncilTitle|U] derin bir iç çekiyor. "Mankafalar halkımızı katlederek bizi savaşa kışkırtmaya çalışıyorlar. Misilleme yaparsak, saray mensuplarının çok sevdiği lüks ürünler sebebiyle [caravan_attacker_liege.GetName] ile yaptığımız anlaşmadan taviz vermek zorunda kalabiliriz.""
- court.4350.a:0 "Bu tür soytarılıkları görmezden gelmek zor ama ticaret daha önemli."
- court.4350.b:0 "Biz de onları yağmalayalım!"
- court.4350.c:0 "Şeker ticaretini durdurduğumuzda bu şebeklerin nasıl zırlayacaklarını göreceksiniz!"
- court.4350.c.tt:0 "#F [caravan_attacker_liege.GetNameNoTooltip] ile olan ticareti durduracaksınız#!"
-
-## Our Nobles are attacking Islamic Caravans by Isabella Welch
-
- court.4355.t:0 "Sarazen ile Savaşmaya Kim Cesaret Eder?"
- court.4355.desc:0 ""Efendim," diye sözüne başlıyor [reporting_marshal.GetCouncilTitle], "[caravan_attacker.GetTitledFirstName|U] ve bir grup soylunun, sıradan haydutlar gibi [attacked_liege.GetCapitalLocation.GetTitle.GetNameNoTier] topraklarından şeker taşıyan kervanları yağmaladıklarıyla övündüklerini işittim. Bu köpeklerin kutsal savaş için salyaları akıyor ve [attacked_liege.GetTitledFirstName] ve ülkesini bize karşı kışkırtmaya çalışıyorlar. Ancak benim önerim şudur ki, şu anda bir savaştan çok ticarete ihtiyacımız v—"\n\n[caravan_attacker.GetTitledFirstNameNoTooltip] taht odasının diğer ucundan "Yemeğe gerek yok, kâfirin kanıyla beslenmek bize yeter!" diye kükrüyor."
- court.4355.a:0 "İyi iş! Kâfirleri yağmalamak ta bir ibadet şeklidir!"
- court.4355.a.tt:0 "Kervanlara daha çok baskın düzenlenmesini teşvik edeceksiniz"
- court.4355.b:0 "Muhafızlar! Şunu tövbe edene kadar şeker kasesiyle dövün."
- court.4355.c:0 "Muhtemelen ben ne söylersem söyleyeyim, yağmalamaya devam edecek."
- court.4355.c.tt:0 "#F Yağmalamaya devam edecek#!"
-
-# Monks/Holy men chasing the decapitated head of their target of worship by Isabella Welch
-# better title please
- court.4400.t:0 "Baş Belası"
- court.4400.desc:0 "Cübbeli [Select_CString(head_chasing_monk.IsFemale, 'kadınlardan', 'adamlardan' )] oluşan bir grup birden taht odamı bastı. Telaşlı bir şekilde yerlere, masaların, sandalyelerin ve eteklerin altlarına bakınmaya başladılar.\n\nİçlerinden biri "[ROOT.Char.GetTitledFirstNameNoTooltip]!" diye bağırdı, "Bizim liderimiz Başsız [the_headless.GetTitledFirstNameNoTooltip]. Kendisi, [ROOT.GetCharacter.GetFaith.HighGodNamePossessive] bir kehaneti sebebiyle kafası kesilmiş kutsal bir adam. Kutsal kişiliklerde sıkça olduğu gibi, kafası döne döne yuvarlanmaya başladı. Tam kafasını takip ediyorduk ki, bir tepeyi aşıp size ait olan [ROOT.GetCharacter.Custom('FortifiedBuilding')] kapısından içeri girdi, burada olduğuna #EMP eminiz#!!""
- court.4400.a:0 "[ROOT.GetCharacter.Custom('FortifiedBuilding')|U] içini aramanız için izin veriyorum."
- court.4400.b:0 "Ben de bulmaya çalışayım!"
- court.4400.c:0 "Bir tarikatın sarayımı didik didik etmesine izin verecek değilim!"
- court.4400.b.discovery:0 "[THIS.GetCharacter.Custom('FortifiedBuilding')|U] içinde, çoktan herkesin unuttuğu bir kalıntı buluyorsunuz"
- court.4400.b.failure:0 "Tarikatçılar bir karışıklığa neden oluyor"
- court.4400.b.severed_head:0 "Kesilen kafa bulundu!"
- court.4400.c.backdown:0 "Tarikatçılar korkup geri çekildi"
- court.4400.c.refusal:0 "Tarikatçılar geri dönecek"
-
-#Rummaging through the castle
- court.4401.desc:0 "[ROOT.GetCharacter.Custom('FortifiedBuilding')|U] bodrumunda kabul etmeliyim ki çok fazla ıvır zıvır var."
- court.4401.desc_arbitrary:0 "[head_chasing_monk.GetName], dahiyane güvenlik planımı dinliyor. Tüm bu ıvır zıvır yığınları arasında neyin nerede olduğunu bilen tek kişi ben olursam nasıl soyulabilirim ki!"
- court.4401.desc_default:0 "[head_chasing_monk.GetName] ne zaman bir kapı açsa, bir antika yığını altında ezilme tehlikesi atlatıyor. Burada [ROOT.Char.Custom('RandomPrivateObject')] olduğunu ben bile unutmuşum!"
- court.4401.desc_object:0 "\n\nEtrafı didik didik aramamıza rağmen kafayı bir türlü bulamıyoruz ancak [head_chasing_monk.GetName] gördükleri karşısında hayran kalmış gibi. Uzun süredir unutulmuş olan [ROOT.Char.Custom('RandomWeirdObject')] elindeyken çok dikkatliydi. Gösterdiği inceliğe bakılırsa kendisi usta bir antikacı bile olabilir."
- court.4401.desc_head:0 "\n\nİğrenç bir kokunun peşinden giderek, yer mantarı arayan bir domuz gibi döküntülerin arasından bir insan kafası çıkarıyor.\n\nAncak bodrumun ve zindanımın birbirine yakınlığını hesaba kattığımda, bunun zindanda unutulmuş bir ruh olduğunu düşünüyorum."
- court.4401.a:0 "Aha, evet! Öhöm. İşte bu [the_headless.GetTitledFirstNameNoTooltip]! [ROOT.GetCharacter.GetFaith.HighGodName], sana şükürler olsun..."
- court.4401.b:0 "Kesik ne kadar da temiz ve ustaca! Bu belli ki benim işim."
- court.4401.c:0 ""Geçinmek için benim çöplüğümde takılmak ister misin?""
- court.4401.d:0 "Burası bakımsız ve pis bir yer. Temizlenmesini emretmeliyim."
-
-## Being threatened by the cultist
-
- court.4402.desc:0 "Bir gece gözlerimi kırpıştırarak uyandığımda birden şok oldum. Bu gördüğüm hedonik bir rüya değildi. Taht odama giren cübbeli tarikat manyaklarından biri boğazıma neşter dayıyordu!\n\n"Kafayı aramamıza engel olmaya devam edersen, seninkini alabiliriz. O kadar yuvarlak ve parlak ki, güzelce yuvarlanacağına bahse girerim!""
- court.4402.a:0 "İstersen hemen şimdi aramaya başlayabiliriz."
- court.4402.a.tt:0 "Beraberce bodruma gideceksiniz"
- court.4402.b:0 "Ne kafası ne yuvarlanması? Çık git buradan!"
- court.4402.b.success:0 "Tarikat üyesi ile boğuştuktan sonra zindana gönderiyorsunuz"
- court.4202.b.success.tt:0 "Onu zindana gönderiyorsunuz"
- court.4402.b.failure:0 "Yaralandınız ya da öldürüldünüz"
- court.4402.c:0 "O meyve bıçağıyla mı kafamı kesebileceksin?"
- court.4402.c2.tt:0 "Kafanızın bir kısmı kesildi"
- court.4402.c3.tt:0 "Kafanız tamamen kesildi"
-
-
-## A series of questionable artifacts are up for sale by Isabella Welch
- #AGOT Modified
- # court.4500.t:0 "Finger-bones of a [ROOT.Char.GetTitleAsNameNoTooltip]"
- court.4500.t:0 "Bir [ROOT.Char.GetTitleAsNameNoTooltip] içinLayık Bir Hediye"
- court.4500.desc:0 "Pelerinli, üzerinde düzinelerce süs ve biblo taşıyan bir seyyar satıcı gözüme çarptı.\n\n"
- court.4500.bleeder:0 ""Zengin aptalların altınlarını almak için eserler yapıyorum. Fazlaca kanınız olduğuna dair bir söylenti kulağıma geldi. İçinde bir damla kanınız olan cam küreli bir broş satın almak isteyecek pek çok hayranınız olduğuna eminim."\n\nBoynumdaki damarlara bakarak, "Hakkıyla ödemesini yapacağım ve bazı zavallılar da majesteleri onlara dokunuyormuş gibi hissedecekler."
- court.4500.psalter:0 ""Elimde muhteşem bir Zebur var. Turkuaz boncuklarla süslenmiş yontulmuş fildişi kaplamaya sahip ve altın varaklı bir el yazması. Birbirlerine aşık bir çiftin hikâyesini anlatıyor. Eminim ki [cheating_character.GetTitledFirstNameNoTooltip], oymalardan etkilenecektir. Bu sayede bir daha asla başkaları ile yatmayı düşünmez!""
- court.4500.chastity_belt:0 ""Ülkedeki herkes biliyor ki, azgın bir boğanınki kadar güçlü arzularla boğuşuyorsunuz. Yükünüzü hafifletecek bir eserim var."\n\nPaslı çivilerle süslenmiş bir bekâret kemeri çıkarıyor."
- #AGOT Modified
- # court.4500.holy_needle:0 ""I have with me a precious weapon only worthy of your hands. The Holy Lance of Antioch, the Spear of Destiny itself! You shall utterly annihilate the infidel on the battlefield with this!"\n\n[artifact_peddler.GetSheHe|U] pulls out a tiny shard of metal which looks rather like a sewing needle."
- court.4500.holy_needle:0 "Yanımda, ancak sizin ellerinize layık, paha biçilmez bir silah taşıyorum. Andalos'un Kudretli Mızrağı, Demircinin Kendi Eliyle Dövdüğü Mızrak! Bu mızrakla savaş meydanındaki tüm düşmanlarınızı yerle bir edeceksiniz!\"\n\nO dikiş iğnesini andıran minik bir metal parçası çıkarır."
-#AGOT Modified
- # court.4500.finger_bones:0 ""You strike me as a seasoned collector." [artifact_peddler.GetSheHe|U] pulls out and opens a battered chest brimming with bones from every limb imaginable.\n\n"I have some of the rarest saintly finger-bones, even some foiled in gold. They are sold as singles, but I will grant a special price for a full set of ten.""
- court.4500.finger_bones:0 ""Göze çarpan bir koleksiyoncu olduğunuzu görüyorum." [artifact_peddler.GetSheHe|U] akla hayale gelmeyecek her uzvun kemikleriyle dolu, eskimiş bir sandığı ortaya çıkarıp açar.\n\n\"Elimde en nadide rahip parmak kemiklerinden bazıları var, hatta altın varaklı olanlar bile mevcut. Tek tek satılıyorlar, ancak onlu set halinde özel bir fiyat teklif edebilirim.""
- court.4500.dead_chicken:0 ""Elimde harika bir parça var! Bunu savaş alanında yanınızda taşıyın ve düşman bir anda zaten çoktan öldüğünüzü düşünsün! Bir nefesle güvenliğiniz garantilenir!"\n\nPelerininin derinliklerinden ölü bir tavuk çıkarır."
- court.4500.worm:0 ""[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], elimde sihirli bir güce sahip olduğunuza herkesi ikna edebileceğiniz bir eser var. Görünüşü sizi yanıltmasın, bununla insanların aklını alacak bir ilizyon oluşturabilirisiniz.\n\nÇok ince bir iplikten ve rengarenk kumaştan yapılmış bir solucan sallıyor. "İlk başta uykuda gibi görünüyor ancak ipliği manipüle ederek solucanın canlandığı yanılsamasını oluşturabilirsiniz! Saraydaki [Select_CString(ROOT.Char.IsFemale, 'leydileri', 'lordları' )] nasıl da etkileyeceğinizi bir düşünün!""
- court.4500.a:0 "Kanım zaten zar zor vücudumda duruyor. Huzurumdan çekil!"
- court.4500.b:0 "Her şeyi denemeye hazırım."
- court.4500.c:0 "$court.4500.b$"
- court.4500.d:0 "Bunun canımı yakmaktan başka bir işe yarayabileceğeini mi sanıyorsun..."
-  #AGOT Modified
- # court.4500.e:0 "The call of Destiny is sounding!"
- court.4500.e:0 "Demircinin çağrısı yankılanıyor!" 
- court.4500.f:0 "Yalanlarını başka yerde sat!"
-  #AGOT Modified
- # court.4500.g:0 "There is charm in using a relic of Christ to mend my socks..."
- court.4500.g:0 "Kahramanlar Çağı'ndan kalma bir yadigârla çoraplarımı yamamanın bir cazibesi var..."
- court.4500.h:0 "Demek #EMP bu#! yüzden günümüzde pek çok köylünün dokuz parmağı var."
- court.4500.i:0 "Tüm bir butu sar bana oradan!"
- court.4500.j:0 "Ah, devam et o zaman."
- court.4500.k:0 "Zaten ölü taklidi yapmakta oldukça ustayım."
- court.4500.l:0 "Kuklacılık oynamayacağım!"
- court.4500.m:0 "Eğlenceli olabilir!"
- court.4500.n:0 "$court.4500.j$"
-
-
-## Your cupbearer is drinking all your wine! By Isabella Welch
- court.4600.t:0 "İnsanlığın İçebileceği En İyi [ROOT.GetCharacter.Custom('RegionalAlcoholicDrink')|U]"
- court.4600.desc:1 "Saray sakisi [cupbearer.GetTitledFirstName] ve arkadaşı [cupbearer_friend.GetTitledFirstName], hafifçe sallanıyorlar. En nadir içki şişelerimden birini açmışlar ve [cupbearer_friend.GetTitledFirstNameNoTooltip] için içki dolduruyorlar.\n\n"[ROOT.GetCharacter.Custom('RegionalAlcoholicDrink')|U] şişeleri tepe tepe birikmiş ve hepsinin de [ROOT.GetCharacter.GetTitledFirstName] için saklanıyor olması çok üzücü."
- court.4600.desc_lover:0 "Sen çok tatlı biri olduğun için her şeyin tatlısını hak ediyorsun."
- court.4600.desc_friend:0 "Benim arkadaşlarım da [ROOT.Char.GetTitleAsNameNoTooltip] gibi içmeyi hak ediyor!""
- court.4600.desc_ending:1 "\n\nBeni gördüklerinde gözlerini bile kırpmıyorlar.\n\n"Ah, [Select_CString(ROOT.Char.IsFemale, 'leydim', 'lordum' )]! Tüm içeceklerinizi sizden önce zehirli mi değil mi diye test ediyoruz. Her damlasında kendimi tehlikeye atarak, yarın çekeceğim baş ağrısını sanki sizin için savaş meydanında çarpışırken aldığım yaradan dolayıymış gibi şerefle çekeceğim!""
- court.4600.a:0 "Mahzenlerim uzunca süredir kapalıydı. Saraydaki herkese benden bir şişe!"
- court.4600.b:0 "Zavallı kıymetlilerim! Seni aşağılık hizmetkar!"
- court.4600.b.tt:0 "Hizmetkarlar içmeyi bırakırsa, bir sonraki ziyafetiniz daha ucuz olacak."
- court.4600.c:0 ""Zehirli [ROOT.GetCharacter.Custom('RegionalAlcoholicDrink')] şişeleri sakladığım için mahzen kapalı!""
- court.4600.c.tt:0 "İkili, saygısızlıklarından ders alacaklar ancak dünya zehirlerinize karşı dikkatli olacak."
- court.4600.c.t:0 "Saki Zehirlendi!"
- court.4600.d:0 "Panzehirin olduğu şişeyi getirin hemen!"
- court.4600.d.tt:0 "Aptalları gizlice iyileştirmeye ve zehirleri gizli tutmaya çalışacaksınız."
- court.4600.d.cure.t:0 "Panzehir zehri çözdü"
- court.4600.d.cure.tt:0 "Zehirleriniz sır olarak kalacak"
- court.4600.e:0 "Sanırım mahzenleri bir süreliğine kilitleyeceğim."
-
-## A special procedure to cure your ailments is suggested... by Isabella Welch
- court.4700.t:0 "Ruh Trepanasyonu"
- court.4700.desc_native_trepanning:0 "Hekim kılığında birisi elinde bir alet çantasıyla gelmiş gibi görünüyor, dikkatlı baktığımda çantanın kenarından sarkan bir çekiç ve kazma gözüme ilişiyor.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], ben trepanasyonda uzman bir hekimim."
- court.4700.desc_foreign_medicine:0 "Yabancı bir ülkeden siyahlara bezenmiş bir kişi, heykeltıraş aletlerine benzeyen gizemli çekiçlerle dolu bir çantayla karşıma geldi.\n\n"Benim ülkemde, trepanasyon olarak bilinen bir uygulama var ve görünüşe göre senin de buna ihtiyacın var."
- court.4700.desc_possessed:0 "Sizi ruh çarpmış, ruhlar zihninizin etrafında yüzer ancak gerçekten kalmak istemezler. $court.4700.desc_passage$ $court.4700.growth$""
- court.4700.desc_witch:0 "Bir okültist olarak güçleriniz kudretli olabilir ancak yine de etrafınızda size yardım edebilecek güçleri engelleyen bir bariyer var. Havanın ruhları kafatasınızın içine girebilseydi, büyüleriniz dünyayı fethedebilirdi.""
- court.4700.desc_melancholic:0 "Tüm ıstıraplarınızın basitçe vücudunuzdan çıkıp havaya karışabileceğini hayal edin. Hissetiğiniz bu acılar size ait değil, dilerseniz buna sebep olan ruhları sizden kovabilirim. $court.4700.growth$""
- court.4700.desc_heavy_mind:0 "Streslisiniz ancak bu yalnızca çok düşündüğünüz için. Kafanız, düşüncelerinizi tek tek kemiren ruhlarla dolu. $court.4700.growth$ $court.4700.desc_passage$""
- court.4700.desc_blind:0 "Siz aslında kör olmadınız, sadece görüşünüz bulutlandı, bulutlandırdılar. Gözlerinizin özünde yüzen ruhlar var. O yüzdükleri suyu kurutup gitmeelerini sağlayabilirim.""
- court.4700.desc_lunatic:0 "Kararlarınızı kendiniz verdiğinizi sansanız da aslında onları kulağınıza fısıldayan birkaç ruh kafanıza sokuyor. $court.4700.growth$ Birkaç çivinin de yardımıyla onları dışarı çıkarabiliriz.""
- court.4700.desc_headache:0 "Dayanılmaz baş ağrılarından muzdarip olduğunuzu duydum. Hayatınız baskılarla dolduğundan, giderek daha fazla ruh bir araya geliyor ve kafanızdaki endişelerle ziyafet çekiyorlar. $court.4700.desc_passage$""
- court.4700.desc_trepanning_vices:0 "Üstüne yıkılan suçlar sana ait değil, sadece bazı kötü ruhların pençesi altındasın. $court.4700.desc_passage$""
- court.4700.growth:0 "Hatta beyninizdeki kıvrımlarını içlerinde gizleniyor bile olabilirler."
- court.4700.desc_passage:0 "Onları özgür kılmak için bir geçit açabilirim."
- court.4700.a:0 "Dalga mı geçiyorsun! Bu batıl inançlarla uğraşacak biri değilim ben!"
- court.4700.b:0 "Buna daha fazla dayanamıyorum, keskiyi getir ve başla!"
- court.4700.b.tt:0 "Trepanasyon operasyonu denenecek..."
- court.4700.c:0 "Ben suçlu değilim. Halkım yobaz!"
- court.4700.d:0 "Reddedeceğim ancak belki saray hekimim sizden nasıl yapıldığını öğrenebilir."
- court.4700.success:0 "Trepanasyondan yaralanmadan kurtuldunuz"
- court.4700.no_success:0 "Trepanasyonun bir etkisi olmadı"
- court.4700.removal:0 "Trepanasyon rahatsızlığınızı ortadan kaldırdı"
- court.4700.headache:0 "Tüm dertleriniz yok oldu"
- court.4700.witch_power:0 "Trepanasyon cadı güçlerinizi arttırdı"
- court.4700.mental_faculties:0 "Trepanasyon zihinsel yeteneklerinize zarar verdi"
- court.4700.physical_faculties:0 "Trepanasyon bedeninize zarar verdi"
-
-## The Trepanning!
-
- court.4701.physician_study:0 "[trepanner.GetTitledFirstName], yetenekli saray hekimim [court_physician.GetTitledFirstName] ve onun yetenekli elleri ile bu işi daha iyi yapabileceğimizi söyledi. [trepanner.GetTitledFirstName] beni sandalyeye bağlarken, [court_physician.GetTitledFirstNameNoTooltip] arkasında gözüküyor."
- court.4701.no_physician:0 "[ROOT.Char.Custom('FortifiedBuilding')|U] derinliklerinde bizi kimselerin göremeyeceği arka odalardan birine geçtik. [trepanner.GetTitledFirstNameNoTooltip], saray mensuplarımın beni bir sandalyeye bağlı hâlde çığlık atarken görmesinin yalnızca sıkıntı doğuracağını söylüyor.\n\n"
- court.4701.physician_excited:0 ""Ah iyi bir trepanasyon gibisi yok!"\n\n"
- court.4701.physician_excited_2:0 ""Heyecanlandım! Bu çok gelecek vadeden bir yöntem!"\n\n"
- court.4701.physician_concerned:0 ""Dikkatli ol!"\n\n"
- court.4701.physician_concerned_2:0 ""Bu kaba uygulama başarısız olursa yardım edeceğim."\n\n"
- court.4701.mental_health_cannot_be_trepanned_away:0 "$court.4701.trepanning_vices_operation$ \n\nHer ne kadar içten içe bu tedavinin ağrılarımı dindirmesini istesem de zihnimin bir iblisin değil de bana ait olduğunu kabul etmek beni daha sağlıklı biri yapar."
- court.4701.trepanning_success:0 "Çekiç, keskiyi kafamın içine gönderiyor. Bir anda bedenimin kapıları açılıyor. Çarpıntı başlıyor, ürperiyorum, titriyorum ve ıstırap veren bir ateşin yükseldiğini hissediyorum. Acı kıvılcımlarından oluşan bir yağmurun ortasından, daha önce hiç olmadığı kadar sakin yeni bir dünyaya çıkıyorum."
- court.4701.trepanning_witch_power:0 "Keski yavaşça kafamın içine çakılırken korkmuyorum. Beynimdeki bu ürpertici acının ortasında hissedebiliyorum ki [ROOT.Char.GetFaith.WitchGodName|U] kahkaha atıyor ve bu aptal tedavi ile dalga geçiyor.\n\nKendime geliyorum. $court.4701.trepanning_no_result$"
- court.4701.trepanning_vices_operation:0 "Çekiç kafatasıma çarpıyor fakat sandalyeyi kavradığım gibi kendime geliyorum. $court.4701.trepanning_no_result$"
- court.4701.trepanning_headache_operation:0 "Kendime geliyorum. $court.4701.trepanning_no_result$ Başımdaki ağrı geçmiş."
- court.4701.trepanning_mental_injury:0 "[trepanner.GetTitledFirstNameNoTooltip], sanki haşlanmış yumurtanın kabuğunu kırıyormuş gibi çekiçle hafifçe kafatasıma vuruyor."
- court.4701.trepanning_incapable_injury:0 "Üzerimden bir parıltı geçiyor. Bir telaş hissediyorum ve geçmiş günleri ve yılları bir anda gözümün önünde görüyorum. Neredeyim? Neden başım ağrıyor? Benim adım ne? En sevdiğim pasta neyli?"
- court.4701.trepanning_possessed_injury:0 "Ruhları kafamdan atacağına söz vermiş olsa da, birdenbire ilk kez bir ruha tanık oluyorum. Yakışıklı kanatlı bir ruh, odanın karanlık köşelerinde dans ediyor ve bana sırıtıyor."
- court.4701.trepanning_deviant_injury:0 "Kafama delik açılmaya başlandığında, boğuk iç organlarımın sesini dinlemeye başladım. Aklımı biraz kurcalandıktan sonra, aniden bir zekâ patlaması yaşadım! Gececi olmalıyım ve sadece ekmek kabuğu yemeliyim! Neden bir at gibi davranarak hiç sevişmedim?"
- court.4701.trepanning_learning_penalty:0 "Keski kafamın içinde dönüp dururken, ağlamamak için kendimi çok zor tutuyorum! Sonunda dönmesi durduğunda, zavallı zihnim bir cümle oluşturmak için çamurun içinden geçmesi gerektiğini hissediyor.""
- court.4701.trepanning_physical_injury:0 "İlk başta kafatasımı delen keski vücuduma öyle bir acı veriyor ki, omurgam ikiye bölünmüş gibi. Kazı derinleştikçe,"
- court.4701.trepanning_no_result:0 "Sonunda keski kafamdan çekildiğinde, açıkta kalan beynime hafif bir hava akımının esmesi dışında hiçbir fark hissetmiyorum."
- court.4701.trepanning_coordination_penalty:0 "Hiçbir şey hissetmemeye başlıyorum. Sonunda keski kafamdan çekildiğinde, bunu hissedemiyorum. Ayağa kalkmaya çalışırken, vücudum zorlukla uyum sağlıyor."
- court.4701.trepanning_blind_injury:0 "gözümün önüne aniden bir sis denizi iniyor. Sonraki an, sonsuz bir alacakaranlık diyarına girerken o sis için bile yas tutuyorum."
- court.4701.a:0 "Hehehehehe! Selamlar!"
- court.4701.b:0 "Seni şerefsiz! Sen n'aptın bana?"
- court.4701.c:0 "Kafatasım ağrıyor!"
- court.4701.d:0 "Kimmiş iyi şeytan? Evet sen!"
- court.4701.e:0 "Tüm iç çamaşırlarımı temizlemeliyim!"
- court.4701.f:0 "Harika! Benim saray hekimim olmaya ne dersin?"
- court.4701.g:0 "Sözde 'kötülüklerin' iblislerin işi olmadığının kanıtı"
- court.4701.h:0 "Sana bir borcum var... kafamdaki deliğe bir tıpa bulduğunda..."
- court.4701.i:0 "Dertli düşüncelerim, tek başıma yüzleşebileceğim bir düşman."
-
-
- court.4750.t:0 "Bir Kahraman Gerek"
- court.4750.desc:0 "Sarayıma yakın zamanda yeni bir misafir geldi, biraz üne sahip tatlı dilli bir şair.\n\n"[Select_CString(ROOT.GetCharacter.IsFemale, 'Leydim', 'Lordum' )], eski zamanların öykücüleri nasıl kadim savaşçıların önünde dizlerine kapandıysa ben de kapanıyorum. Ben, [poet.GetFirstName], sizin korumanız altında yapacak bir iş bulmak istiyorum. Lütfen ne kadar değerli olduğumu göstermeme izin verin! Belki de bir sonraki eserimi size ithaf edebilirim!"\n\n"Büyük destanları severim, yüce [ROOT.Char.GetTitleAsName]. Lütfen söyleyin, hangi kahramanı duymak istiyorsunuz?""
-  #AGOT Modified
- # court.4750.a:0 "Make up a story from the reign of Pope Joan!"
- court.4750.a:0 "Kemik Dağları'nın ötesindeki korkunç savaş lideri Zhea'nın Hikayesi!"
- #AGOT Modified
- # court.4750.b:0 "Lady Godiva! A ballad about her ride!"
- court.4750.b:0 "Bakire Jonquil! Kader banyoşunun bir türküsü!"
- #AGOT Modified
- # court.4750.c:0 "Sinbad is such a daring figure!"
- court.4750.c:0 "Uzunadımlı Lomas ne kadar da harika!"
- #AGOT Modified
- # court.4750.d:0 "Caligula was a man after my own heart."
- court.4750.d:0 "Tyrion II Lannister benim gönlüme göre bir adamdı."
- #AGOT Modified
- # court.4750.e:0 "Nasreddin stories always bring a smile to my lips."
- court.4750.e:0 "Tanıklıkların soytarısı Mantar!"
- #AGOT Modified
- # court.4750.f:0 "Tell me of Valmiki, the harbinger-poet!"
- court.4750.f:0 "Bana SUr'un Ötesindeki Kral Ozan Bael'i anlat!"
- court.4750.g:0 "Neden ki? En sevdiğim kahraman benim!"
- court.4750.h:0 "İsraf edecek ne altınım ne de zamanım var."
-
- court.4751.intro:0 "İsteğim üzerine yeni şair [poet.GetFirstName] bana "
-  #AGOT Modified
- # court.4751.topic.pope_joan:0 "Pope Joan,"
- court.4751.topic.pope_joan:0 "#italic Jhattar#! Zhea,"
- #AGOT Modified
- # court.4751.topic.lady_godiva:0 "Lady Godiva,"
- court.4751.topic.lady_godiva:0 "Fair Jonquil,"
- #AGOT Modified
- # court.4751.topic.sinbad:0 "Sinbad,"
- court.4751.topic.sinbad:0 "Lomas Longstrider,"
- #AGOT Modified
- # court.4751.topic.caligula:0 "Caligula,"
- court.4751.topic.caligula:0 "Tyrion II,"
- #AGOT Modified
- # court.4751.topic.nasreddin:0 "Nasreddin,"
- court.4751.topic.nasreddin:0 "Soytarı Mantar,"
- #AGOT Modified
- # court.4751.topic.valmiki:0 "Valmiki,"
- court.4751.topic.valmiki:0 "Bael the Bard,"
- court.4751.topic.ruler_hero:0 "benim kahramanca hayatımdan ilham aldığı bir eser getiriyor."
- court.4751.topic.unexpected:0 "Ama hiç de beklediğim gibi bir şey değil."
- court.4751.ruler_character:0 "\n\nTezhipli el yazmalarına kısa bir bakış attıktan sonra anlıyorum ki, beni bir kahramanın yanında, yan karakter olarak gösteriyor!\n\n"
-  #AGOT Modified
- # court.4701.pope_joan_desc:0 "\n\nAs I glance at the illustrations, I realize the illuminations of Joan use my features for her face, as if it were my own!\n\n[poet.GetTitledFirstNameNoTooltip|U] leans towards me. "Your charms far exceed that of our Pope. As Joan's lover convinced her to dress as a man and undertake study in Athens, I grant you this text wishing the figure I am #EMP supposed#! to worship were you.""
- court.4701.pope_joan_desc:0 "\n\nResimleri incelerken, Zhea tasvirlerinde benim yüz hatlarımın kullanıldığını fark ediyorum, sanki benim yüzüm çizilmiş gibi! \n\n [poet.GetTitledFirstNameNoTooltip|U] bana doğru eğiliyor. "Sizin güzelliğiniz Yi Ti'nin Belası'nınkini gölgede bırakıyor. Zhea'nın aşığı, imparatorun başını Zhea'ya sunduğu gibi, ben de size #EMP tapınmam#! gereken kişinin siz olduğunu dileyerek bu metni sunuyorum.""
- court.4701.ruler_hero_desc:0 "\n\nŞiir, bazıları diğerlerinden daha az gerçek olan ama hepsi de son derece etkileyici görkemli başarılarım ile ilgili."
-  #AGOT Modified
- # court.4751.topic.lady_godiva_desc:0 "You are riding alongside Lady Godiva in this poem. Just as beautiful — but just as naked!"
- court.4751.topic.lady_godiva_desc:0 "Bu şiirde Jonquil ve kız kardeşleriyle birlikte yıkanıyorum. Tıpkı onlar kadar güzel - ama tıpkı onlar kadar çıplak!"
- #AGOT Modified
- # court.4751.topic.sinbad_desc:0 "I am a mysterious character Sinbad encounters time again in his adventures. I am the creature hatching from the colossal Roc egg. I am the Old Man of the Sea who clings to Sinbad's shoulders for years. I am a captive of the man-eating giant."
- court.4751.topic.sinbad_desc:0 "Ben, Lomas Longstrider'ın seyahatleri boyunca defalarca karşılaştığı esrarengiz bir kişiyim. Norvos'ta Sakallı bir Rahibim. Qarth'ın Üçlü Duvarları'nda nöbet tutan bir muhafızım. Lomas'ın sohbet ettiği o kadim Yaz Adaları bilgesi de benim."
- #AGOT Modified
- # court.4751.topic.caligula_desc:0 "I am a character in the text, but I am but Caligula's weary advisor, not a friend and equal! The Emperor torments me with a whip, or forces me to dress up like Aphrodite and dance for him.\n\nAs I read further, there seem to be rather a lot of scenes where he whips me, indeed."
- court.4751.topic.caligula_desc:0 "Metinde bir karakterim, ancak Tyrion'ın yorgun danışmanı değil, bir dost ve eşiyim! İmparator beni kırbaçlıyor veya Kız kılığına girip kendisi için dans etmemi emrediyor.\n\nDaha fazla okudukça, kırbaçlandığım sahnelerin sayısının bir hayli fazla olduğunu fark ediyorum."
- #AGOT Modified
- # court.4751.topic.nasreddin_desc:0 "The tales show Nasreddin riding behind me as I go about my courtly duties, making snide remarks at my every action from atop his donkey.\n\nI made a speech full of platitudes at a feast, and he yells 'the interlocutor is but breaking wind as he states the obvious!', then jokes at the futility of gorging oneself on food."
- court.4751.topic.nasreddin_desc:0 "Hikayeler, saray görevlerimi yerine getirirken peşimden ayrılmayan Mantar'ı ve her hareketimi alaya alan sözlerini anlatıyor.\n\nBir ziyafette basmakalıp sözlerle dolu bir konuşma yaptığımda, 'konuşmacı malumu ilam ederken sadece gaz çıkarıyor!' diye bağırdı ve ardından kendini yemeğe boğmanın anlamsızlığı hakkında şakalar yaptı."
- #AGOT Modified
- # court.4751.topic.valmiki_desc:0 "\n\nLike the legend, a hunter shoots a beautiful bird and I cannot help but spout out a couplet. I trip over a rock and exclaim a rhyme before hitting the ground.\n\nAs the harbinger-poet composed the first poem by accident, it shows me composing spontaneous verses whenever I am caught off-guard."
- court.4751.topic.valmiki_desc:0 "\n\nHikayelerde anlatıldığı gibi, bir avcı güzel bir kuşu vuruyor ve ben de bir beyit söylemeden edemiyorum. Bir kayaya takılıp yere düşmeden önce de bir tekerleme mırıldanıyorum.\n\nOzankral'ın ilk şiiri kazara yazdığı gibi, bu da ansızın avlandığımda kendiliğinden dizeler döktüğümü gösteriyor."
- court.4751.a:0 "Nedense, hayranlığınızdaki bu saygısızlık onu daha da cezbedici kılıyor..."
- #AGOT Modified
- # court.4751.b:0 "Perhaps I should set my sights on the Papacy..."
- court.4751.b:0 "Belki de gözümü doğuya dikmeliyim..."
- court.4751.c:0 "Normalde kızardım ama bunun bana hayranlar kazandıracağı kesin..."
- court.4751.c.tt:0 "İlgisini çektikleriniz mutlaka fark edeceklerdir..."
- court.4751.d:0 "Bu aklıma bazı saf olmayan düşünceler sokuyor."
- court.4751.e:0 "Onun şakalarının arkasında her zaman öğrenilecek bir şeyler vardır."
- court.4751.f:0 "Çok komikmiş, saray mensupları buna bayılacak."
- court.4751.g:0 "Olması gerektiği gibi!"
- court.4751.h:0 "Bu bir sonraki yangınım için en iyi çıra olacaktır."
-
-#By Isabella Welch
- court.4800.t:0 "Uçuş Denemesi"
- court.4800.desc:0 "Korumam [defenestrating_bodyguard.GetTitledFirstName] "Bir kere daha ses çıkardığını duyarsam soytarı, kendini aşağıda bulursun!" diye bağırıyor. Yanına yaklaştığımda fark ettim ki, [defenestrated_character.GetTitledFirstName] pencereden aşağı sarkıtılmış.\n\n[defenestrating_bodyguard.GetTitledFirstNameNoTooltip] dişlerini gıcırdatıyor. "Nöbet tutarken yüzümdeki ifade ile dalga geçmeye başladı. Yüz ifademi ve sakinliğimi bozmam için soytarılık yapmaya başladı. Güvenliğiniz için bir tehlikte oluşturuyor."\n\nDüşme tehlikesine rağmen kurtulmak için yaptığı hareketlerin ortasında [defenestrated_character.GetTitledFirstNameNoTooltip] kıkırdamaya başlıyor. "#EMP Nanik nanik#!!""
- court.4800.a:0 "Bakalım soytarılar uçabiliyor mu?"
- court.4800.maimed_toast:0 "Kanatsız [defenestrated_character.GetTitledFirstName]"
- court.4800.death_toast:0 "[defenestrated_character.GetTitledFirstName] uçarken öldü"
- court.4800.b:0 "Abartmaya gerek yok! Nazikçe dövebilirsin."
- court.4800.c:0 "[defenestrated_character.GetTitledFirstNameNoTooltip] haklı. İyi bir koruma asla kışkırtmalara gelmez."
-
-#By Isabella Welch
- court.4801.t:0 "Patlamaya Hazır"
- court.4801.desc:0 "Küçük [poopy_child.GetTitledFirstName] taht odamda oyun oynuyor ancak ben bunu görmeden çok önce ne olduğu belli olan bir koku alıyorum.\n\n"Aaa, [ROOT.GetCharacter.Custom('GetMamaPapa')]! Seni gördüğüme çok sevindim!" derken sarılmak için bacağıma doğru atılıyor. Dolu bezinin ağırlığını diğer bacağımda hissediyorum.\n\nİki bacağım arasında sıkıştıkça bezinden sızmaya başlıyor. Kendi kendime soruyorum: Hizmetçi sayımız çok mu az da bez değiştirme gibi bir ayak işi bile bana kaldı?"
- court.4801.a:0 ""Kucağıma gel de seni bir temizleyelim.""
- court.4801.b:0 "Bu pisliğe dokunmaktansa savaş meydanında mağlup olmayı tercih ederim."
-
-#By Isabella Welch
- court.4802.t:0 "Zorla Eğitim"
- court.4802.desc:0 "Saray Öğretmenim [court_tutor.GetTitledFirstName], bir grup öğrencisini etrafına toplamış.\n\n"Öğretmenim, paralelkenar nedir?"\n\n"Öğretmenim 'sevişmek' ne demek?"\n\n"Öğretmenim, flütümün sesi iyi mi yoksa #EMP daha da yüksek#! sesle mi çalmalıyım?"\n\n[court_tutor.GetTitledFirstNameNoTooltip], bana yılmış bir şekilde bakıyor. "[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], daha fazla dayanamıyorum. Lütfen beni bu görevden azat edin.""
- court.4802.a:0 "Çok şeker değiller mi?"
- court.4802.b:1 "Sana bir trompet alacağım [child_2.GetTitledFirstNameNoTooltip]. Bunun sesi #EMP daha çok#! çıkar!"
- court.4802.c:0 "Anlıyorum, yeni bir Öğretmen arayacağız."
-
-#By Isabella Welch
- court.4803.t:0 "Hayalet Kalem"
- court.4803.desc:0 "Şairim, her zaman yaptığı gibi beni görür görmez yüksek sesle konuşmaya başlıyor. "Ah, kıymetli [ROOT.GetCharacter.Custom('PetName')]! İlham perilerinin terk ettiği bir hayatı yaşamak çok zor olmalı."\n\n"Ordulara komuta edersiniz de kelimelere komuta edemezsiniz. İnsanlık daha önce bundan daha büyük bir trajediye tanık oldu mu?"\n\n"Size yardım etmeme izin verin. Sizin için konuşmalarınızdan bazılarını hazırlayabilirim. Bana konuyu söyleyin, ben de güzel bir konuşma hazırlayayım.""
- court.4803.a:0 "Konuşmalarımı güzelleştirmekten zarar gelmez."
- court.4803.b:0 "Bazen kendimi bir [ROOT.GetCharacter.GetTitleAsName] yerine daha çok şair gibi hissediyorum, yardıma gerek yok."
- court.4803.c:0 "Sevgilime benim adıma bir şiir yazmanı tercih ederim."
- court.4803.c.tt:0 "[lover.GetTitledFirstName|U] için şiir göndereceksiniz"
- court.4803.c.intrigue.tt:1 "[lover.GetFirstNameNoTooltip] yüksek [intrigue|E] yeteneğine sahip, başkası tarafından yazıldığını anlayabilir."
- court.4803.c.realize.tt:0 "[lover.GetFirstNameNoTooltip] gerçek yazarın kim olduğunu fark etti"
- court.4803.c.fooled.tt:0 "[lover.GetFirstNameNoTooltip], 'sizin' şiirinizden etkilendi"
- court.4803.d:0 "Kelimelerim çok iyi olmayabilir ancak kalbimden geliyorlar."
-
-#By Isabella Welch
- court.4804.t:0 "Yatak Arkadaşları"
- court.4804.desc:0 "Her ikisinin de gözlerinin altında koyu halkalar olan, aynı odayı paylaşan iki saray mensubunun tartıştığını fark ettim.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], [roomate_2.GetTitledFirstName] ile bir gece daha aynı yatağı paylaşamam. Bütün örtüyü kendine çeken doyumsuz bir domuz."\n\n"Bu hafta [roomate_1.GetTitledFirstName] her gece [ROOT.Char.Custom('RandomBadRoomate')]." [roomate_2.GetTitledFirstName] titriyor. "Yalvarırım [Select_CString(ROOT.Char.IsFemale, 'leydim', 'lordum' )], bize daha iyi kalacak yerler bahşedin. Soğuk, boş bir yataktan başka bir şey istemiyorum.""
- court.4804.a:0 "Hizmetçilere size yeni yataklar bulmalarını söyleyeceğim."
- court.4804.b:0 "Bu odalar bir [ROOT.GetCharacter.GetTitleAsNameNoTooltip] sarayına #EMP yakışmıyor#!."
- court.4804.c:0 "Herkese kendi odasını verecek yerimiz yok."
-
-#By Isabella Welch
- court.4805.t:0 "Mihenk Taşı"
- court.4805.desc:0 "Mimarım [royal_architect.GetTitledFirstName], devasa bir çuvalı taht odama sürükleyerek getiriyor ve bu sırada sırıtıyor. Taht odamın zeminini sıyırıp çizerken irkiliyorum.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], #EMP çok#! haddimi aşan bir şey yaptım ancak bunun sizi memnun edeceğini düşünüyorum."\n\nÇuvalı açarken müstehcen bir şeyler olmasını bekliyorum ancak çuvalın içinden irice, dikdörtgen bir kaya parçası çıkıyor. "Bu, yeminli düşmanınız [rival.GetTitledFirstName] ve onun [rival.Custom('FortifiedBuilding')] dibinden getirdiğim mihenk taşı. Bu sayede yapı tüm kıymetini kaybetti!""
- court.4805.a:0 "Hadi onunla bir domuz ahırı yapalım!"
- court.4805.b:0 "Gururla sergilenmesini istiyorum!"
- court.4805.c:0 "Onunla olan düşmanlığımdan pişmanım. Taşı aldığın yere geri koy."
- court.4805.d:0 "Neden bu pisliği bana getirdin? At gitsin!"
-
-#By Isabella Welch
-
- court.4806.t:0 "[ROOT.Char.GetTitleAsNameNoTooltip] Hayranı"
- court.4806.intro:0 "Taht odamda yeni bir yüz dolaşıyor, [ROOT.Char.GetCulture.GetNameNoTooltip] geleneklerini temsil eden bazı sanat eserlerine baktığında arada bir kıkırdayıp zıplıyor."
- court.4806.hre_desc:0 "\n\n"Kalbim! [ROOT.GetCharacter.GetPrimaryTitle.GetNameNoTierNoTooltip] gerçekten harika bir yer! [adoring_fan_liege.GetCapitalLocation.GetTitle.GetNameNoTier] topraklarında yaşasam da, gerçek bir [ROOT.Char.GetCulture.GetName] olarak doğduğumu düşünüyorum! Her Prens-Piskoposu sayabilirim. Hatta baldırımda [ROOT.GetCharacter.GetTitledFirstNamePossessiveNoTooltip] yüzünün dövmesi var."\n\nÇantasının içine uzanıyor ve Reichskrone'un ucuz bir bronz kopyası gibi görünen bir şey çıkarıyor. "Çoğu gün bunu giyerim ve yanından geçtiğim insanlara 'Elektörlük için oyunuzu bana verin!' derim.""
- court.4806.byzantine_desc:1 "Heyecanlı ziyaretçi yaklaşırken, muhafızlar daha fazla yaklaşmaması için önünü kesiyor.\n\n"[ROOT.Char.GetTitleAsNameNoTooltip]! [adoring_fan_liege.GetCapitalLocation.GetTitle.GetNameNoTier] topraklarında doğsam da, [ROOT.Char.GetCulture.GetCollectiveNoun] kültürünü kalbimin kaldırabileceğinden daha fazla seviyorum."\n\n"Ben hayatımı sizlerden biri gibi yaşamaya adadım, [ROOT.Char.GetCulture.GetLanguage.GetNameNoTooltip] öğrenmeye odaklandım."\n\n"Ben sadece mor iç çamaşırı giyerim. İmparatorluk çökerse, annemin ölümünden daha fazla üzülürüm. Ağlamamın asla sonu gelmez!""
- court.4806.general_desc:1 "Bu ziyaretçide bir tuhaflık olduğu yürüyüşünden belli. Yakınlaştıkça elinde kopya bir [ROOT.Char.Custom('signature_weapon')] taşıdığını görüyorum, ben onun aslı için canımı bile veririm.\n\n"Önünüzde diz çökmeden edemiyorum. [adoring_fan_liege.GetCapitalLocation.GetTitle.GetNameNoTier|u] topraklarında yaşasam da hayatımı [ROOT.Char.GetCulture.GetCollectiveNoun] kültürüne adadım. Sadece [ROOT.Char.GetCulture.GetLanguage.GetNameNoTooltip] konuşurum, [ROOT.Char.GetCulture.GetNameNoTooltip] [ROOT.GetCharacter.Custom('GetExpensiveMeal')] yerim ve [ROOT.Char.GetCulture.GetName] tarzı kılıç eğitimi aldım."\n\n"Ailem beni evden kovdu. Kafayı [ROOT.GetCharacter.GetPrimaryTitle.GetNameNoTooltip] ile bozduysam, orada yaşamam gerektiğini söylediler.""
- court.4806.a:0 "Bu biraz tuhaf hissetirse de aslında bir yandan da gurur verici."
- court.4806.b:0 "Bana o eski püskü şeyi ver! Belki giyerim."
- court.4806.c:0 "Bu kadar hevesli biri sarayımıza katılmalı!"
- court.4806.c.byz:0 "Vatanseverliğinizden dolayı mor giymenize izin vereceğim.."
- court.4806.d:0 "Yalnızca bir [ROOT.Char.GetTitleAsNameNoTooltip] mor giyebilir! Atın şu serseriyi zindana!"
- court.4806.e:0 "[ROOT.Char.Custom('signature_weapon')|U] kopyasını ne cüretle yaparsın! Alın şunun elinden!"
+  
+  ##### A diplomat bleeds to death in your throne room by Isabella Welch 
+  
+ court.4001.t: "Sadece Bir Sıyrık"
+ court.4001.desc: "Müttefikim [bleeding_diplomat_liege.GetName] tarafından gönderilen bir diplomat olan [bleeding_diplomat.GetName] ve onun etrafında oluşan kan havuzuna bakakaldım. Üzerinde durduğu güzelim halım muazzam miktarda bir kan emmesi bile yetmemiş, ortalık kan gölü olmuş. Anlaşılan o ki saatlerdir kanaması vardı.\n\n"Bu karışıklık için özür dilerim. [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] topraklarına yaptığım yolculuk sırasında, bir handayken cücenin teki beni soymaya çalıştı ve biraz itiş kakış yaşadık. Ancak ben hâlâ ayakta durabildiğim sürece diplomatik ziyarete devam edememem için bir sebep yok, kanamanın ölümcül boyuta ulaşmasına daha #EMP günler#! var!""
+ court.4001.a: "Muhafızlar! Bu [Select_CString(bleeding_diplomat.IsFemale, 'kadını', 'adamı' )] saray hekimine götürün."
+ court.4001.b: "Önümüzdeki haftaya kadar müsait değilim, o zamana kadar dayanabilir misin?"
+ court.4001.c: "Şimdi konuşabiliriz ancak halımın parasını efendinin ödemesi gerekiyor."
+ court.4001.carpet: "Halıyı temizlemeniz gerekiyor"
+ court.4001.new_carpet: "Kanaması duracak gibi durmuyor, yeni bir halı almanız gerek."
+ court.4001.toast: "[bleeding_diplomat.GetName] öldü"
+ court.4001.toast_desc: "[bleeding_diplomat.GetName] kıymetli halınızı kan gölüne çevirdi."
+ court.4001.cure_toast: "Saray hekimi diplomatı iyileştirdi"
+  
+ ##### All-male-choirs by Isabella Welch 
+  
+ court.4100.t: "Alışılmadık Koro"
+ court.4100.desc: "Saray Müzisyenim bana doğru yaklaşıyor.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], dikkatinizi rica edebilir miyim? Sadece erkeklerden oluşan üst düzey bir koro hazırladım! Sadece şarkı söylemekle kalmıyorlar, tayt giyip, parlak kuşaklarının üstüne kasıklık takıp bir de senkronize bir şekilde dans ediyorlar! Tüm bu gösteri tabii ki [ROOT.GetCharacter.GetFaith.HighGodName] adına minnetimizi ifade etmek için yapılıyor. Eminim bu büyük gösteriyi desteklersiniz, hem böyle gösteriler saray hanımlarının da çok hoşuna gider.""
+ court.4100.a: "Kusacağım galiba. Bu sapkını zindana atın!"
+ court.4100.b: "Hanımlar bu taytları görmeye dayanamazlar bence."
+ court.4100.c: "Aklımı çeldiniz, performansınızı izlemek için sabırsızlanıyorum!"
+  
+ ##### Sneaky passages by Isabella Welch ###### 
+  
+ court.4200.t: "Gizli Cinayet Geçitleri"
+ court.4200.desc: "[spymaster.Custom2('MyCharacterIntroduction', ROOT.Char)|U] yakın zamanda saraya yeni birini getirmişti. Tüm hayatını [capital.GetName] topraklarının en karanlık köşelerinde saklanarak geçirmiş gibi görünen bu kişi taht odamın köşesinde gizleniyor."
+ court.4200.desc_middle: "\n\n"Gizli bir geçide ihtiyacınızın olabileceğini duydum. Sizin günahkâr kalbinizin arzuladığı her türlü gizli geçidi yapabilirim."
+ court.4200.desc_oubliette: "$court.4200.desc_middle$ Hatta sevgilinizle tutku dolu geceler geçirmek istiyorsanız yatak odanıza zindan bile ekleyebilirim!""
+ court.4200.desc_gluttony: "$court.4200.desc_middle$ Gecenin bir vakti mutfaktan pasta aşırmak isterseniz, odanız ve mutfak arasında bir yol bile yapabilirim!""
+ court.4200.desc_fallback: "$court.4200.desc_middle$""
+ court.4200.a: "Ben her yere yalnızca ön kapıdan girip çıkarım!"
+ court.4200.b: "Saray mensuplarımın toplandığı odaları gözetleyebileceğim gizli geçitler istiyorum!"
+ court.4200.c: "Fazlasına gerek yok, gizli bir kaçış kapısı işimi görür."
+ court.4200.d: "Pasta asansörü mü? Dahice!"
+ court.4200.e: "İtiraf edeyim, arada bir çırılçıplak bir şekilde zindana atılmak #EMP istiyorum#!."
+ court.4200.f: "Daha iyi işler çıkarabileceğim gizli bir işkence odası."
+ court.4200.g: "Hep rahatsız edilmeyeceğim bir oda #EMP istemişimdir#!!"
+  
+ ##### My Spire is Bigger than Yours! by Isabella Welch ##### 
+  
+ court.4250.t: "Benim Kulem Seninkinden Daha Büyük!"
+ court.4250.desc: "[tower_challenger_rival.GetTitledFirstName], taht odamın önünde "[ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTierNoTooltip] ve mıymıy saray mensupları" diye bağırıyor.\n\n"[ROOT.Char.GetTitledFirstNameNoTooltip] çamur birikintisindeki domuz gibi yuvarlanırken, ben [tower_challenger_rival.GetCapitalLocation.GetTitle.GetNameNoTier] topraklarında, bu güne kadar görülmüş en yüksek kuleyi diktim. [tower_challenger_rival.Custom('FortifiedBuilding')|U] üzerindeyken elimi uzatsam yıldızları toplayabilirim. Senin yıldızların nerede [ROOT.Char.GetTitledFirstNameNoTooltip]?"\n\n[concerned_steward.GetCouncilTitle|U] [concerned_steward.GetTitledFirstName], ihtiyatlı bir şekilde elini omzuma koyuyor. "[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], onun kulesi yüz yirmi metre uzunluğunda ve yapısal olarak hiç de sağlam olmayan kil ve hamurdan oluşuyor. Bu hareketlerini görmezden gelin ve kulesinin başına yıkılmasını bekleyin!""
+ court.4250.a: "Çok beğendiysen kuleni, müsait bir yerine sokabilirsin!"
+ court.4250.b: "Kulemizi sizinkinden bir metre daha uzun olacak şekilde uzatacağız!"
+ court.4250.c: "#EMP Yüz elli metrelik#! bir kule yapılmasını emrediyorum!"
+ court.4250.b.tt: "[THIS.GetCharacter.Custom('FortifiedBuilding')|U] tepesine çok uzun bir bayrak direği yerleştireceksiniz"
+ court.4250.c.success.tt: "Muazzam bir kule inşa edeceksiniz"
+ court.4250.c.failure.tt: "Kuleniz inşaat sırasında yıkıldı"
+ court.4250.c.failure_toast_title: "İnşa ettiğiniz [ROOT.Char.Custom('FortifiedBuilding')] yıkıldı!"
+ court.4250.c.accident.tt: "Korkunç bir kaza meydana geldi"
+ court.4250.c.accident.tt.flavour: "Neyin yanlış gidebileceğini kim bilebilirdi ki..."
+  
+ ### Spires part 2 
+  
+ court.4251.desc: "Sonunda yükselen kulemin tamamlandığı haberini duyunca tüm sarayı dışarıya, kuleyi seyretmeye davet ediyorum. Kule gökyüzünü delip geçiyor ama bir yandan da rüzgârda hafiften bir sallanıyor."
+ court.4251.desc_child_accident: "\n\nÇocuğum [crushed_child.GetName], aval aval bakan saray mensuplarımın arasından ulu kulenin dibine doğru ilerliyor ve tam yaklaşmışken bir sebepten dolayı birden gözlerini yuvalardan çıkacakmış kadar açıp öylece kalakalıyor.\n\n[crushed_child.GetNameNoTooltip], çığlık atmaya vakit bile bulamadan temelinden çatlayıp devrilen kulenin altında kalıyor."
+ court.4251.desc_rival_accident: "\n\n[tower_challenger_rival.GetTitledFirstNameNoTooltip], ben kulenin zirvesine giden yolda ilerlerken bana katılıyor. Yukarı çıkarken birkaç kez ya manzaradan ya da merdivenlerden nefesi kesiliyor. Zirveye ulaştığımızda aşağıdaki saray mensuplarıma el sallıyorum, bu sırada o da korkuluklara yaslanıyor. Ancak yaslandığı anla cennete olan yolculuğuna başlaması bir oluyor."
+ court.4251.desc_success: "\Aval aval bakan saraylılarım kuleyi gürültülü bir alkışla karşılıyor, ama nedense hepsi gölgesinde durmaktan kaçınıyor.\n\n[tower_challenger_rival.GetTitledFirstNameNoTooltip] bana fısıldıyor "Köpek, yemin ederim #EMP #!this yüksekliğinin iki katı bir kuleyle geri döneceğim."" #NT!
+ court.4251.a: "Ah [crushed_child.GetNameNoTooltip], sen benim ufak meleğimdin!"
+ court.4251.b: "Sonunda uçmayı başardın [tower_challenger_rival.GetTitledFirstNameNoTooltip]."
+ court.4251.c: "Peki ya şimdi kim çamurda yuvarlanıyor [tower_challenger_rival.GetTitledFirstNameNoTooltip]?"
+  
+ ### Crusades Preaching Tours by Isabella Welch 
+  
+ court.4300.t: "Quantum Praedecessores"
+ court.4300.preaching_tour_bernard_of_clairvaux_intro: "Clairvaux'lu Bernard, dağları denizleri aşarak ilerlediği vaaz turnesi sırasında, devam etmekte olan kutsal savaşın ateşini körüklemek için burada mola veriyor. Sarayımda görevli [bishop.GetCouncilTitle] ona, Tapınak Şövalyeleri'nin Kutsal Tarikatı için doktrinlerin hazırlanmasında merkezî bir rol oynadığımı söyledi.\n\n"
+ court.4300.preaching_tour_bernard_of_clairvaux_theology: ""Aynı fikirleri paylaştığımız için heyecanlıyım. Askerî tarikatlarımız ile ilgili yeni bir inceleme üzerinde çalışıyorum: 'Yeni Şövalyeliğe Övgü'. Bu çalışmaya bir göz atarsanız, [ghw_sponsor.GetTitledFirstName] tarafından, kendi tarikatınızı onun da desteklediğine dair resmi bir çağrı yapılacağının garantisini verebilirim.""
+ court.4300.preaching_tour_bernard_of_clairvaux_flea_excommunication: ""Misafirperverliğiniz için minnettarım. Nezaketinize karşılık olarak, saray mensuplarınızdan birkaçının papaza karşılık verdiğini fark ettim. Daha önce bunlar gibi çürük elmalarla çok mücadele ettim, sayısızını aforoz ettim ve fazla vakit kaybetmeden onları toprağın altına gönderdim. Görünüşe göre sarayınızda da aforoz edilmesi gereken bazı çürükler var!""
+ court.4300.preaching_tour_bernard_of_clairvaux_standard: ""Bir ricada bulunacağım. [ROOT.GetCharacter.GetFaith.HighGodName|U] aklımı kutsamış ancak bağırsaklarım konusunda aynısını söyleyemeyeceğim. Bağırsaklarımı kontrol edemediğim için, tam altıma bir çukur kazılmadan vaaz veremem. Vaaz turnemde benimle gelip, çukur kazacak bir mümin var mı?""
+ court.4300.preaching_tour_default: "Bir rahip taht odanızın girişini kapatıyor, içeri girenlerin kıyafetlerine yapıştırmaları için haç şeklinde kırmızı rozetler dağıtıyor.\n\n"[ROOT.GetCharacter.GetFaith.HighGodName], sana şükürler olsun! Kutsal savaşta vaat edilen müttefiklerimizin ülkelerinde, askerlerini ve hazinelerini desteklemek için vaaz veriyorum.""
+ court.4300.a: ""Emrinizdeyim!""
+ court.4300.b: ""Dönekleri aforoz edelim!""
+ court.4300.c: ""Emimin ki [possible_latrine_digger.GetTitledFirstNameNoTooltip], size yardımcı olmak için can atıyordur!""
+ court.4300.d: ""Kesemin ağzı açık!""
+ court.4300.e: ""Görevinizde kişisel korumalarımdan biri refakatçiniz olacak.""
+ court.4300.e.tt: "[bernard_guard_1.GetTitledFirstName] ve [bernard_guard_2.GetTitledFirstName], [right_portrait_character.GetTitledFirstName] için korumalık yapacak."
+ court.4300.f: "Böyle yüce bir [Select_CString(right_portrait_character.IsFemale, 'kadınla', 'adamla' )] konuşmaya layık olmadığım için sessizce diz çöktüm."
+ court.4300.g: "Haç rozeti oldukça kötü gözüküyor değil mi?"
+ court.4300.a.tt: "Kutsal Taritak kurmanın [piety|E] ve [gold|E] maliyeti büyük ölçüde azalır"
+  
+ ## Our Caravans are being attacked by Christian Nobles by Isabella Welch 
+ court.4350.t: "Safran Kervanı"
+ court.4350.desc: "[concerned_marshal.GetCouncilTitle|U], taht odama topallayarak giren, elbiseleri yanmış bir çift tüccar ile yaptığı konuşmayı yeni bitirdi. "[caravan_attacker_liege.GetCapitalLocation.GetTitle.GetNameNoTier|U] topraklarından [ROOT.Char.GetCapitalLocation.GetTitle.GetNameNoTier] topraklarına safran taşıyan ticaret kervanlarımızdan biri yağmalandı. Bunu yapanlar haydut değildi. Şövalye zırhları olan bir grup topraklı Hristiyan soylulardı."\n\n[concerned_marshal.GetCouncilTitle|U] derin bir iç çekiyor. "Mankafalar halkımızı katlederek bizi savaşa kışkırtmaya çalışıyorlar. Misilleme yaparsak, saray mensuplarının çok sevdiği lüks ürünler sebebiyle [caravan_attacker_liege.GetName] ile yaptığımız anlaşmadan taviz vermek zorunda kalabiliriz.""
+ court.4350.a: "Bu tür soytarılıkları görmezden gelmek zor ama ticaret daha önemli."
+ court.4350.b: "Biz de onları yağmalayalım!"
+ court.4350.c: "Şeker ticaretini durdurduğumuzda bu şebeklerin nasıl zırlayacaklarını göreceksiniz!"
+ court.4350.c.tt: "#F [caravan_attacker_liege.GetNameNoTooltip] ile olan ticareti durduracaksınız#!"
+  
+ ## Our Nobles are attacking Islamic Caravans by Isabella Welch 
+  
+ court.4355.t: "Sarazen ile Savaşmaya Kim Cesaret Eder?"
+ court.4355.desc: ""Efendim," diye sözüne başlıyor [reporting_marshal.GetCouncilTitle], "[caravan_attacker.GetTitledFirstName|U] ve bir grup soylunun, sıradan haydutlar gibi [attacked_liege.GetCapitalLocation.GetTitle.GetNameNoTier] topraklarından şeker taşıyan kervanları yağmaladıklarıyla övündüklerini işittim. Bu köpeklerin kutsal savaş için salyaları akıyor ve [attacked_liege.GetTitledFirstName] ve ülkesini bize karşı kışkırtmaya çalışıyorlar. Ancak benim önerim şudur ki, şu anda bir savaştan çok ticarete ihtiyacımız v—"\n\n[caravan_attacker.GetTitledFirstNameNoTooltip] taht odasının diğer ucundan "Yemeğe gerek yok, kâfirin kanıyla beslenmek bize yeter!" diye kükrüyor."
+ court.4355.a: "İyi iş! Kâfirleri yağmalamak ta bir ibadet şeklidir!"
+ court.4355.a.tt: "Kervanlara daha çok baskın düzenlenmesini teşvik edeceksiniz"
+ court.4355.b: "Muhafızlar! Şunu tövbe edene kadar şeker kasesiyle dövün."
+ court.4355.c: "Muhtemelen ben ne söylersem söyleyeyim, yağmalamaya devam edecek."
+ court.4355.c.tt: "#F Yağmalamaya devam edecek#!"
+  
+ # Monks/Holy men chasing the decapitated head of their target of worship by Isabella Welch 
+ # better title please 
+ court.4400.t: "Baş Belası"
+ court.4400.desc: "Cübbeli [Select_CString(head_chasing_monk.IsFemale, 'kadınlardan', 'adamlardan' )] oluşan bir grup birden taht odamı bastı. Telaşlı bir şekilde yerlere, masaların, sandalyelerin ve eteklerin altlarına bakınmaya başladılar.\n\nİçlerinden biri "[ROOT.Char.GetTitledFirstNameNoTooltip]!" diye bağırdı, "Bizim liderimiz Başsız [the_headless.GetTitledFirstNameNoTooltip]. Kendisi, [ROOT.GetCharacter.GetFaith.HighGodNamePossessive] bir kehaneti sebebiyle kafası kesilmiş kutsal bir adam. Kutsal kişiliklerde sıkça olduğu gibi, kafası döne döne yuvarlanmaya başladı. Tam kafasını takip ediyorduk ki, bir tepeyi aşıp size ait olan [ROOT.GetCharacter.Custom('FortifiedBuilding')] kapısından içeri girdi, burada olduğuna #EMP eminiz#!!""
+ court.4400.a: "[ROOT.GetCharacter.Custom('FortifiedBuilding')|U] içini aramanız için izin veriyorum."
+ court.4400.b: "Ben de bulmaya çalışayım!"
+ court.4400.c: "Bir tarikatın sarayımı didik didik etmesine izin verecek değilim!"
+ court.4400.b.discovery: "[THIS.GetCharacter.Custom('FortifiedBuilding')|U] içinde, çoktan herkesin unuttuğu bir kalıntı buluyorsunuz"
+ court.4400.b.failure: "Tarikatçılar bir karışıklığa neden oluyor"
+ court.4400.b.severed_head: "Kesilen kafa bulundu!"
+ court.4400.c.backdown: "Tarikatçılar korkup geri çekildi"
+ court.4400.c.refusal: "Tarikatçılar geri dönecek"
+  
+ #Rummaging through the castle 
+ court.4401.desc: "[ROOT.GetCharacter.Custom('FortifiedBuilding')|U] bodrumunda kabul etmeliyim ki çok fazla ıvır zıvır var."
+ court.4401.desc_arbitrary: "[head_chasing_monk.GetName], dahiyane güvenlik planımı dinliyor. Tüm bu ıvır zıvır yığınları arasında neyin nerede olduğunu bilen tek kişi ben olursam nasıl soyulabilirim ki!"
+ court.4401.desc_default: "[head_chasing_monk.GetName] ne zaman bir kapı açsa, bir antika yığını altında ezilme tehlikesi atlatıyor. Burada [ROOT.Char.Custom('RandomPrivateObject')] olduğunu ben bile unutmuşum!"
+ court.4401.desc_object: "\n\nEtrafı didik didik aramamıza rağmen kafayı bir türlü bulamıyoruz ancak [head_chasing_monk.GetName] gördükleri karşısında hayran kalmış gibi. Uzun süredir unutulmuş olan [ROOT.Char.Custom('RandomWeirdObject')] elindeyken çok dikkatliydi. Gösterdiği inceliğe bakılırsa kendisi usta bir antikacı bile olabilir."
+ court.4401.desc_head: "\n\nİğrenç bir kokunun peşinden giderek, yer mantarı arayan bir domuz gibi döküntülerin arasından bir insan kafası çıkarıyor.\n\nAncak bodrumun ve zindanımın birbirine yakınlığını hesaba kattığımda, bunun zindanda unutulmuş bir ruh olduğunu düşünüyorum."
+ court.4401.a: "Aha, evet! Öhöm. İşte bu [the_headless.GetTitledFirstNameNoTooltip]! [ROOT.GetCharacter.GetFaith.HighGodName], sana şükürler olsun..."
+ court.4401.b: "Kesik ne kadar da temiz ve ustaca! Bu belli ki benim işim."
+ court.4401.c: ""Geçinmek için benim çöplüğümde takılmak ister misin?""
+ court.4401.d: "Burası bakımsız ve pis bir yer. Temizlenmesini emretmeliyim."
+  
+ ## Being threatened by the cultist 
+  
+ court.4402.desc: "Bir gece gözlerimi kırpıştırarak uyandığımda birden şok oldum. Bu gördüğüm hedonik bir rüya değildi. Taht odama giren cübbeli tarikat manyaklarından biri boğazıma neşter dayıyordu!\n\n"Kafayı aramamıza engel olmaya devam edersen, seninkini alabiliriz. O kadar yuvarlak ve parlak ki, güzelce yuvarlanacağına bahse girerim!""
+ court.4402.a: "İstersen hemen şimdi aramaya başlayabiliriz."
+ court.4402.a.tt: "Beraberce bodruma gideceksiniz"
+ court.4402.b: "Ne kafası ne yuvarlanması? Çık git buradan!"
+ court.4402.b.success: "Tarikat üyesi ile boğuştuktan sonra zindana gönderiyorsunuz"
+ court.4202.b.success.tt: "Onu zindana gönderiyorsunuz"
+ court.4402.b.failure: "Yaralandınız ya da öldürüldünüz"
+ court.4402.c: "O meyve bıçağıyla mı kafamı kesebileceksin?"
+ court.4402.c2.tt: "Kafanızın bir kısmı kesildi"
+ court.4402.c3.tt: "Kafanız tamamen kesildi"
+  
+  
+ ## A series of questionable artifacts are up for sale by Isabella Welch 
+ #AGOT Modified 
+ # court.4500.t: "Finger-bones of a [ROOT.Char.GetTitleAsNameNoTooltip]"
+ court.4500.t: "Bir [ROOT.Char.GetTitleAsNameNoTooltip] içinLayık Bir Hediye"
+ court.4500.desc: "Pelerinli, üzerinde düzinelerce süs ve biblo taşıyan bir seyyar satıcı gözüme çarptı.\n\n"
+ court.4500.bleeder: ""Zengin aptalların altınlarını almak için eserler yapıyorum. Fazlaca kanınız olduğuna dair bir söylenti kulağıma geldi. İçinde bir damla kanınız olan cam küreli bir broş satın almak isteyecek pek çok hayranınız olduğuna eminim."\n\nBoynumdaki damarlara bakarak, "Hakkıyla ödemesini yapacağım ve bazı zavallılar da majesteleri onlara dokunuyormuş gibi hissedecekler."
+ court.4500.psalter: ""Elimde muhteşem bir Zebur var. Turkuaz boncuklarla süslenmiş yontulmuş fildişi kaplamaya sahip ve altın varaklı bir el yazması. Birbirlerine aşık bir çiftin hikâyesini anlatıyor. Eminim ki [cheating_character.GetTitledFirstNameNoTooltip], oymalardan etkilenecektir. Bu sayede bir daha asla başkaları ile yatmayı düşünmez!""
+ court.4500.chastity_belt: ""Ülkedeki herkes biliyor ki, azgın bir boğanınki kadar güçlü arzularla boğuşuyorsunuz. Yükünüzü hafifletecek bir eserim var."\n\nPaslı çivilerle süslenmiş bir bekâret kemeri çıkarıyor."
+ #AGOT Modified 
+ # court.4500.holy_needle: ""I have with me a precious weapon only worthy of your hands. The Holy Lance of Antioch, the Spear of Destiny itself! You shall utterly annihilate the infidel on the battlefield with this!"\n\n[artifact_peddler.GetSheHe|U] pulls out a tiny shard of metal which looks rather like a sewing needle."
+ court.4500.holy_needle: "Yanımda, ancak sizin ellerinize layık, paha biçilmez bir silah taşıyorum. Andalos'un Kudretli Mızrağı, Demircinin Kendi Eliyle Dövdüğü Mızrak! Bu mızrakla savaş meydanındaki tüm düşmanlarınızı yerle bir edeceksiniz!\"\n\nO dikiş iğnesini andıran minik bir metal parçası çıkarır."
+ #AGOT Modified 
+ # court.4500.finger_bones: ""You strike me as a seasoned collector." [artifact_peddler.GetSheHe|U] pulls out and opens a battered chest brimming with bones from every limb imaginable.\n\n"I have some of the rarest saintly finger-bones, even some foiled in gold. They are sold as singles, but I will grant a special price for a full set of ten.""
+ court.4500.finger_bones: ""Göze çarpan bir koleksiyoncu olduğunuzu görüyorum." [artifact_peddler.GetSheHe|U] akla hayale gelmeyecek her uzvun kemikleriyle dolu, eskimiş bir sandığı ortaya çıkarıp açar.\n\n\"Elimde en nadide rahip parmak kemiklerinden bazıları var, hatta altın varaklı olanlar bile mevcut. Tek tek satılıyorlar, ancak onlu set halinde özel bir fiyat teklif edebilirim.""
+ court.4500.dead_chicken: ""Elimde harika bir parça var! Bunu savaş alanında yanınızda taşıyın ve düşman bir anda zaten çoktan öldüğünüzü düşünsün! Bir nefesle güvenliğiniz garantilenir!"\n\nPelerininin derinliklerinden ölü bir tavuk çıkarır."
+ court.4500.worm: ""[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], elimde sihirli bir güce sahip olduğunuza herkesi ikna edebileceğiniz bir eser var. Görünüşü sizi yanıltmasın, bununla insanların aklını alacak bir ilizyon oluşturabilirisiniz.\n\nÇok ince bir iplikten ve rengarenk kumaştan yapılmış bir solucan sallıyor. "İlk başta uykuda gibi görünüyor ancak ipliği manipüle ederek solucanın canlandığı yanılsamasını oluşturabilirsiniz! Saraydaki [Select_CString(ROOT.Char.IsFemale, 'leydileri', 'lordları' )] nasıl da etkileyeceğinizi bir düşünün!""
+ court.4500.a: "Kanım zaten zar zor vücudumda duruyor. Huzurumdan çekil!"
+ court.4500.b: "Her şeyi denemeye hazırım."
+ court.4500.c: "$court.4500.b$"
+ court.4500.d: "Bunun canımı yakmaktan başka bir işe yarayabileceğeini mi sanıyorsun..."
+  #AGOT Modified 
+ # court.4500.e: "The call of Destiny is sounding!"
+ court.4500.e: "Demircinin çağrısı yankılanıyor!"
+ court.4500.f: "Yalanlarını başka yerde sat!"
+  #AGOT Modified 
+ # court.4500.g: "There is charm in using a relic of Christ to mend my socks..."
+ court.4500.g: "Kahramanlar Çağı'ndan kalma bir yadigârla çoraplarımı yamamanın bir cazibesi var..."
+ court.4500.h: "Demek #EMP bu#! yüzden günümüzde pek çok köylünün dokuz parmağı var."
+ court.4500.i: "Tüm bir butu sar bana oradan!"
+ court.4500.j: "Ah, devam et o zaman."
+ court.4500.k: "Zaten ölü taklidi yapmakta oldukça ustayım."
+ court.4500.l: "Kuklacılık oynamayacağım!"
+ court.4500.m: "Eğlenceli olabilir!"
+ court.4500.n: "$court.4500.j$"
+  
+  
+ ## Your cupbearer is drinking all your wine! By Isabella Welch 
+ court.4600.t: "İnsanlığın İçebileceği En İyi [ROOT.GetCharacter.Custom('RegionalAlcoholicDrink')|U]"
+ court.4600.desc: "Saray sakisi [cupbearer.GetTitledFirstName] ve arkadaşı [cupbearer_friend.GetTitledFirstName], hafifçe sallanıyorlar. En nadir içki şişelerimden birini açmışlar ve [cupbearer_friend.GetTitledFirstNameNoTooltip] için içki dolduruyorlar.\n\n"[ROOT.GetCharacter.Custom('RegionalAlcoholicDrink')|U] şişeleri tepe tepe birikmiş ve hepsinin de [ROOT.GetCharacter.GetTitledFirstName] için saklanıyor olması çok üzücü."
+ court.4600.desc_lover: "Sen çok tatlı biri olduğun için her şeyin tatlısını hak ediyorsun."
+ court.4600.desc_friend: "Benim arkadaşlarım da [ROOT.Char.GetTitleAsNameNoTooltip] gibi içmeyi hak ediyor!""
+ court.4600.desc_ending: "\n\nBeni gördüklerinde gözlerini bile kırpmıyorlar.\n\n"Ah, [Select_CString(ROOT.Char.IsFemale, 'leydim', 'lordum' )]! Tüm içeceklerinizi sizden önce zehirli mi değil mi diye test ediyoruz. Her damlasında kendimi tehlikeye atarak, yarın çekeceğim baş ağrısını sanki sizin için savaş meydanında çarpışırken aldığım yaradan dolayıymış gibi şerefle çekeceğim!""
+ court.4600.a: "Mahzenlerim uzunca süredir kapalıydı. Saraydaki herkese benden bir şişe!"
+ court.4600.b: "Zavallı kıymetlilerim! Seni aşağılık hizmetkar!"
+ court.4600.b.tt: "Hizmetkarlar içmeyi bırakırsa, bir sonraki ziyafetiniz daha ucuz olacak."
+ court.4600.c: ""Zehirli [ROOT.GetCharacter.Custom('RegionalAlcoholicDrink')] şişeleri sakladığım için mahzen kapalı!""
+ court.4600.c.tt: "İkili, saygısızlıklarından ders alacaklar ancak dünya zehirlerinize karşı dikkatli olacak."
+ court.4600.c.t: "Saki Zehirlendi!"
+ court.4600.d: "Panzehirin olduğu şişeyi getirin hemen!"
+ court.4600.d.tt: "Aptalları gizlice iyileştirmeye ve zehirleri gizli tutmaya çalışacaksınız."
+ court.4600.d.cure.t: "Panzehir zehri çözdü"
+ court.4600.d.cure.tt: "Zehirleriniz sır olarak kalacak"
+ court.4600.e: "Sanırım mahzenleri bir süreliğine kilitleyeceğim."
+  
+ ## A special procedure to cure your ailments is suggested... by Isabella Welch 
+ court.4700.t: "Ruh Trepanasyonu"
+ court.4700.desc_native_trepanning: "Hekim kılığında birisi elinde bir alet çantasıyla gelmiş gibi görünüyor, dikkatlı baktığımda çantanın kenarından sarkan bir çekiç ve kazma gözüme ilişiyor.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], ben trepanasyonda uzman bir hekimim."
+ court.4700.desc_foreign_medicine: "Yabancı bir ülkeden siyahlara bezenmiş bir kişi, heykeltıraş aletlerine benzeyen gizemli çekiçlerle dolu bir çantayla karşıma geldi.\n\n"Benim ülkemde, trepanasyon olarak bilinen bir uygulama var ve görünüşe göre senin de buna ihtiyacın var."
+ court.4700.desc_possessed: "Sizi ruh çarpmış, ruhlar zihninizin etrafında yüzer ancak gerçekten kalmak istemezler. $court.4700.desc_passage$ $court.4700.growth$""
+ court.4700.desc_witch: "Bir okültist olarak güçleriniz kudretli olabilir ancak yine de etrafınızda size yardım edebilecek güçleri engelleyen bir bariyer var. Havanın ruhları kafatasınızın içine girebilseydi, büyüleriniz dünyayı fethedebilirdi.""
+ court.4700.desc_melancholic: "Tüm ıstıraplarınızın basitçe vücudunuzdan çıkıp havaya karışabileceğini hayal edin. Hissetiğiniz bu acılar size ait değil, dilerseniz buna sebep olan ruhları sizden kovabilirim. $court.4700.growth$""
+ court.4700.desc_heavy_mind: "Streslisiniz ancak bu yalnızca çok düşündüğünüz için. Kafanız, düşüncelerinizi tek tek kemiren ruhlarla dolu. $court.4700.growth$ $court.4700.desc_passage$""
+ court.4700.desc_blind: "Siz aslında kör olmadınız, sadece görüşünüz bulutlandı, bulutlandırdılar. Gözlerinizin özünde yüzen ruhlar var. O yüzdükleri suyu kurutup gitmeelerini sağlayabilirim.""
+ court.4700.desc_lunatic: "Kararlarınızı kendiniz verdiğinizi sansanız da aslında onları kulağınıza fısıldayan birkaç ruh kafanıza sokuyor. $court.4700.growth$ Birkaç çivinin de yardımıyla onları dışarı çıkarabiliriz.""
+ court.4700.desc_headache: "Dayanılmaz baş ağrılarından muzdarip olduğunuzu duydum. Hayatınız baskılarla dolduğundan, giderek daha fazla ruh bir araya geliyor ve kafanızdaki endişelerle ziyafet çekiyorlar. $court.4700.desc_passage$""
+ court.4700.desc_trepanning_vices: "Üstüne yıkılan suçlar sana ait değil, sadece bazı kötü ruhların pençesi altındasın. $court.4700.desc_passage$""
+ court.4700.growth: "Hatta beyninizdeki kıvrımlarını içlerinde gizleniyor bile olabilirler."
+ court.4700.desc_passage: "Onları özgür kılmak için bir geçit açabilirim."
+ court.4700.a: "Dalga mı geçiyorsun! Bu batıl inançlarla uğraşacak biri değilim ben!"
+ court.4700.b: "Buna daha fazla dayanamıyorum, keskiyi getir ve başla!"
+ court.4700.b.tt: "Trepanasyon operasyonu denenecek..."
+ court.4700.c: "Ben suçlu değilim. Halkım yobaz!"
+ court.4700.d: "Reddedeceğim ancak belki saray hekimim sizden nasıl yapıldığını öğrenebilir."
+ court.4700.success: "Trepanasyondan yaralanmadan kurtuldunuz"
+ court.4700.no_success: "Trepanasyonun bir etkisi olmadı"
+ court.4700.removal: "Trepanasyon rahatsızlığınızı ortadan kaldırdı"
+ court.4700.headache: "Tüm dertleriniz yok oldu"
+ court.4700.witch_power: "Trepanasyon cadı güçlerinizi arttırdı"
+ court.4700.mental_faculties: "Trepanasyon zihinsel yeteneklerinize zarar verdi"
+ court.4700.physical_faculties: "Trepanasyon bedeninize zarar verdi"
+  
+ ## The Trepanning! 
+  
+ court.4701.physician_study: "[trepanner.GetTitledFirstName], yetenekli saray hekimim [court_physician.GetTitledFirstName] ve onun yetenekli elleri ile bu işi daha iyi yapabileceğimizi söyledi. [trepanner.GetTitledFirstName] beni sandalyeye bağlarken, [court_physician.GetTitledFirstNameNoTooltip] arkasında gözüküyor."
+ court.4701.no_physician: "[ROOT.Char.Custom('FortifiedBuilding')|U] derinliklerinde bizi kimselerin göremeyeceği arka odalardan birine geçtik. [trepanner.GetTitledFirstNameNoTooltip], saray mensuplarımın beni bir sandalyeye bağlı hâlde çığlık atarken görmesinin yalnızca sıkıntı doğuracağını söylüyor.\n\n"
+ court.4701.physician_excited: ""Ah iyi bir trepanasyon gibisi yok!"\n\n"
+ court.4701.physician_excited_2: ""Heyecanlandım! Bu çok gelecek vadeden bir yöntem!"\n\n"
+ court.4701.physician_concerned: ""Dikkatli ol!"\n\n"
+ court.4701.physician_concerned_2: ""Bu kaba uygulama başarısız olursa yardım edeceğim."\n\n"
+ court.4701.mental_health_cannot_be_trepanned_away: "$court.4701.trepanning_vices_operation$ \n\nHer ne kadar içten içe bu tedavinin ağrılarımı dindirmesini istesem de zihnimin bir iblisin değil de bana ait olduğunu kabul etmek beni daha sağlıklı biri yapar."
+ court.4701.trepanning_success: "Çekiç, keskiyi kafamın içine gönderiyor. Bir anda bedenimin kapıları açılıyor. Çarpıntı başlıyor, ürperiyorum, titriyorum ve ıstırap veren bir ateşin yükseldiğini hissediyorum. Acı kıvılcımlarından oluşan bir yağmurun ortasından, daha önce hiç olmadığı kadar sakin yeni bir dünyaya çıkıyorum."
+ court.4701.trepanning_witch_power: "Keski yavaşça kafamın içine çakılırken korkmuyorum. Beynimdeki bu ürpertici acının ortasında hissedebiliyorum ki [ROOT.Char.GetFaith.WitchGodName|U] kahkaha atıyor ve bu aptal tedavi ile dalga geçiyor.\n\nKendime geliyorum. $court.4701.trepanning_no_result$"
+ court.4701.trepanning_vices_operation: "Çekiç kafatasıma çarpıyor fakat sandalyeyi kavradığım gibi kendime geliyorum. $court.4701.trepanning_no_result$"
+ court.4701.trepanning_headache_operation: "Kendime geliyorum. $court.4701.trepanning_no_result$ Başımdaki ağrı geçmiş."
+ court.4701.trepanning_mental_injury: "[trepanner.GetTitledFirstNameNoTooltip], sanki haşlanmış yumurtanın kabuğunu kırıyormuş gibi çekiçle hafifçe kafatasıma vuruyor."
+ court.4701.trepanning_incapable_injury: "Üzerimden bir parıltı geçiyor. Bir telaş hissediyorum ve geçmiş günleri ve yılları bir anda gözümün önünde görüyorum. Neredeyim? Neden başım ağrıyor? Benim adım ne? En sevdiğim pasta neyli?"
+ court.4701.trepanning_possessed_injury: "Ruhları kafamdan atacağına söz vermiş olsa da, birdenbire ilk kez bir ruha tanık oluyorum. Yakışıklı kanatlı bir ruh, odanın karanlık köşelerinde dans ediyor ve bana sırıtıyor."
+ court.4701.trepanning_deviant_injury: "Kafama delik açılmaya başlandığında, boğuk iç organlarımın sesini dinlemeye başladım. Aklımı biraz kurcalandıktan sonra, aniden bir zekâ patlaması yaşadım! Gececi olmalıyım ve sadece ekmek kabuğu yemeliyim! Neden bir at gibi davranarak hiç sevişmedim?"
+ court.4701.trepanning_learning_penalty: "Keski kafamın içinde dönüp dururken, ağlamamak için kendimi çok zor tutuyorum! Sonunda dönmesi durduğunda, zavallı zihnim bir cümle oluşturmak için çamurun içinden geçmesi gerektiğini hissediyor.""
+ court.4701.trepanning_physical_injury: "İlk başta kafatasımı delen keski vücuduma öyle bir acı veriyor ki, omurgam ikiye bölünmüş gibi. Kazı derinleştikçe,"
+ court.4701.trepanning_no_result: "Sonunda keski kafamdan çekildiğinde, açıkta kalan beynime hafif bir hava akımının esmesi dışında hiçbir fark hissetmiyorum."
+ court.4701.trepanning_coordination_penalty: "Hiçbir şey hissetmemeye başlıyorum. Sonunda keski kafamdan çekildiğinde, bunu hissedemiyorum. Ayağa kalkmaya çalışırken, vücudum zorlukla uyum sağlıyor."
+ court.4701.trepanning_blind_injury: "gözümün önüne aniden bir sis denizi iniyor. Sonraki an, sonsuz bir alacakaranlık diyarına girerken o sis için bile yas tutuyorum."
+ court.4701.a: "Hehehehehe! Selamlar!"
+ court.4701.b: "Seni şerefsiz! Sen n'aptın bana?"
+ court.4701.c: "Kafatasım ağrıyor!"
+ court.4701.d: "Kimmiş iyi şeytan? Evet sen!"
+ court.4701.e: "Tüm iç çamaşırlarımı temizlemeliyim!"
+ court.4701.f: "Harika! Benim saray hekimim olmaya ne dersin?"
+ court.4701.g: "Sözde 'kötülüklerin' iblislerin işi olmadığının kanıtı"
+ court.4701.h: "Sana bir borcum var... kafamdaki deliğe bir tıpa bulduğunda..."
+ court.4701.i: "Dertli düşüncelerim, tek başıma yüzleşebileceğim bir düşman."
+  
+  
+ court.4750.t: "Bir Kahraman Gerek"
+ court.4750.desc:0 "I notice my poet pacing up and down my throne room. [poet.GetSheHe|U] has been yelling at anyone who crosses the line [poet.GetSheHe] treads.\n\nAs I approach, I am met with literary fury: "Şairimin taht odamda bir aşağı bir yukarı volta attığını fark ediyorum. [poet.GetSheHe|U] [poet.GetSheHe] bastığı çizgiyi geçen herkese bağırıyor.\n\nYaklaştığımda edebi bir öfkeyle karşılaşıyorum: "İnen bir ilham perisi değilsen yoluma çıkma! Oh-" şairin yüzü sevinçle aydınlanıyor. "Arzuladığım ilhama sahip olabilirsin. [ROOT.GetCharacter.GetLadyLord] , bir sonraki eserim için bir tema arıyorum."\n\n "Bana en sevdiğiniz kahramanın kim olduğunu söyleyebilir misiniz?"" #NT!
+  #AGOT Modified 
+ # court.4750.a: "Make up a story from the reign of Pope Joan!"
+ court.4750.a: "Kemik Dağları'nın ötesindeki korkunç savaş lideri Zhea'nın Hikayesi!"
+  #AGOT Modified 
+ # court.4750.b: "Lady Godiva! A ballad about her ride!"
+ court.4750.b: "Bakire Jonquil! Kader banyoşunun bir türküsü!"
+  #AGOT Modified 
+ # court.4750.c: "Sinbad is such a daring figure!"
+ court.4750.c: "Uzunadımlı Lomas ne kadar da harika!"
+  #AGOT Modified 
+ # court.4750.d: "Caligula was a man after my own heart."
+ court.4750.d: "Tyrion II Lannister benim gönlüme göre bir adamdı."
+  #AGOT Modified 
+ # court.4750.e: "Nasreddin stories always bring a smile to my lips."
+ court.4750.e: "Tanıklıkların soytarısı Mantar!"
+  #AGOT Modified 
+ # court.4750.f: "Tell me of Valmiki, the harbinger-poet!"
+ court.4750.f: "Bana SUr'un Ötesindeki Kral Ozan Bael'i anlat!"
+ court.4750.g: "Neden ki? En sevdiğim kahraman benim!"
+ court.4750.h: "İsraf edecek ne altınım ne de zamanım var."
+  
+ court.4751.intro: "İsteğim üzerine yeni şair [poet.GetFirstName] bana "
+  #AGOT Modified 
+ # court.4751.topic.pope_joan: "Pope Joan,"
+ court.4751.topic.pope_joan: "#italic Jhattar#! Zhea,"
+  #AGOT Modified 
+ # court.4751.topic.lady_godiva: "Lady Godiva,"
+ court.4751.topic.lady_godiva: "Fair Jonquil,"
+  #AGOT Modified 
+ # court.4751.topic.sinbad: "Sinbad,"
+ court.4751.topic.sinbad: "Lomas Longstrider,"
+  #AGOT Modified 
+ # court.4751.topic.caligula: "Caligula,"
+ court.4751.topic.caligula: "Tyrion II,"
+  #AGOT Modified 
+ # court.4751.topic.nasreddin: "Nasreddin,"
+ court.4751.topic.nasreddin: "Soytarı Mantar,"
+  #AGOT Modified 
+ # court.4751.topic.valmiki: "Valmiki,"
+ court.4751.topic.valmiki: "Bael the Bard,"
+ court.4751.topic.ruler_hero: "benim kahramanca hayatımdan ilham aldığı bir eser getiriyor."
+ court.4751.topic.unexpected: "Ama hiç de beklediğim gibi bir şey değil."
+ court.4751.ruler_character: "\n\nTezhipli el yazmalarına kısa bir bakış attıktan sonra anlıyorum ki, beni bir kahramanın yanında, yan karakter olarak gösteriyor!\n\n"
+  #AGOT Modified 
+ # court.4701.pope_joan_desc: "\n\nAs I glance at the illustrations, I realize the illuminations of Joan use my features for her face, as if it were my own!\n\n[poet.GetTitledFirstNameNoTooltip|U] leans towards me. "Your charms far exceed that of our Pope. As Joan's lover convinced her to dress as a man and undertake study in Athens, I grant you this text wishing the figure I am #EMP supposed#! to worship were you.""
+ court.4701.pope_joan_desc: "\n\nResimleri incelerken, Zhea tasvirlerinde benim yüz hatlarımın kullanıldığını fark ediyorum, sanki benim yüzüm çizilmiş gibi! \n\n [poet.GetTitledFirstNameNoTooltip|U] bana doğru eğiliyor. "Sizin güzelliğiniz Yi Ti'nin Belası'nınkini gölgede bırakıyor. Zhea'nın aşığı, imparatorun başını Zhea'ya sunduğu gibi, ben de size #EMP tapınmam#! gereken kişinin siz olduğunu dileyerek bu metni sunuyorum.""
+ court.4701.ruler_hero_desc: "\n\nŞiir, bazıları diğerlerinden daha az gerçek olan ama hepsi de son derece etkileyici görkemli başarılarım ile ilgili."
+  #AGOT Modified 
+ # court.4751.topic.lady_godiva_desc: "You are riding alongside Lady Godiva in this poem. Just as beautiful — but just as naked!"
+ court.4751.topic.lady_godiva_desc: "Bu şiirde Jonquil ve kız kardeşleriyle birlikte yıkanıyorum. Tıpkı onlar kadar güzel - ama tıpkı onlar kadar çıplak!"
+  #AGOT Modified 
+ # court.4751.topic.sinbad_desc: "I am a mysterious character Sinbad encounters time again in his adventures. I am the creature hatching from the colossal Roc egg. I am the Old Man of the Sea who clings to Sinbad's shoulders for years. I am a captive of the man-eating giant."
+ court.4751.topic.sinbad_desc: "Ben, Lomas Longstrider'ın seyahatleri boyunca defalarca karşılaştığı esrarengiz bir kişiyim. Norvos'ta Sakallı bir Rahibim. Qarth'ın Üçlü Duvarları'nda nöbet tutan bir muhafızım. Lomas'ın sohbet ettiği o kadim Yaz Adaları bilgesi de benim."
+  #AGOT Modified 
+ # court.4751.topic.caligula_desc: "I am a character in the text, but I am but Caligula's weary advisor, not a friend and equal! The Emperor torments me with a whip, or forces me to dress up like Aphrodite and dance for him.\n\nAs I read further, there seem to be rather a lot of scenes where he whips me, indeed."
+ court.4751.topic.caligula_desc: "Metinde bir karakterim, ancak Tyrion'ın yorgun danışmanı değil, bir dost ve eşiyim! İmparator beni kırbaçlıyor veya Kız kılığına girip kendisi için dans etmemi emrediyor.\n\nDaha fazla okudukça, kırbaçlandığım sahnelerin sayısının bir hayli fazla olduğunu fark ediyorum."
+  #AGOT Modified 
+ # court.4751.topic.nasreddin_desc: "The tales show Nasreddin riding behind me as I go about my courtly duties, making snide remarks at my every action from atop his donkey.\n\nI made a speech full of platitudes at a feast, and he yells 'the interlocutor is but breaking wind as he states the obvious!', then jokes at the futility of gorging oneself on food."
+ court.4751.topic.nasreddin_desc: "Hikayeler, saray görevlerimi yerine getirirken peşimden ayrılmayan Mantar'ı ve her hareketimi alaya alan sözlerini anlatıyor.\n\nBir ziyafette basmakalıp sözlerle dolu bir konuşma yaptığımda, 'konuşmacı malumu ilam ederken sadece gaz çıkarıyor!' diye bağırdı ve ardından kendini yemeğe boğmanın anlamsızlığı hakkında şakalar yaptı."
+  #AGOT Modified 
+ # court.4751.topic.valmiki_desc: "\n\nLike the legend, a hunter shoots a beautiful bird and I cannot help but spout out a couplet. I trip over a rock and exclaim a rhyme before hitting the ground.\n\nAs the harbinger-poet composed the first poem by accident, it shows me composing spontaneous verses whenever I am caught off-guard."
+ court.4751.topic.valmiki_desc: "\n\nHikayelerde anlatıldığı gibi, bir avcı güzel bir kuşu vuruyor ve ben de bir beyit söylemeden edemiyorum. Bir kayaya takılıp yere düşmeden önce de bir tekerleme mırıldanıyorum.\n\nOzankral'ın ilk şiiri kazara yazdığı gibi, bu da ansızın avlandığımda kendiliğinden dizeler döktüğümü gösteriyor."
+ court.4751.a: "Nedense, hayranlığınızdaki bu saygısızlık onu daha da cezbedici kılıyor..."
+  #AGOT Modified 
+ # court.4751.b: "Perhaps I should set my sights on the Papacy..."
+ court.4751.b: "Belki de gözümü doğuya dikmeliyim..."
+ court.4751.c: "Normalde kızardım ama bunun bana hayranlar kazandıracağı kesin..."
+ court.4751.c.tt: "İlgisini çektikleriniz mutlaka fark edeceklerdir..."
+ court.4751.d: "Bu aklıma bazı saf olmayan düşünceler sokuyor."
+ court.4751.e: "Onun şakalarının arkasında her zaman öğrenilecek bir şeyler vardır."
+ court.4751.f: "Çok komikmiş, saray mensupları buna bayılacak."
+ court.4751.g: "Olması gerektiği gibi!"
+ court.4751.h: "Bu bir sonraki yangınım için en iyi çıra olacaktır."
+  
+ #By Isabella Welch 
+ court.4800.t: "Uçuş Denemesi"
+ court.4800.desc: "Korumam [defenestrating_bodyguard.GetTitledFirstName] "Bir kere daha ses çıkardığını duyarsam soytarı, kendini aşağıda bulursun!" diye bağırıyor. Yanına yaklaştığımda fark ettim ki, [defenestrated_character.GetTitledFirstName] pencereden aşağı sarkıtılmış.\n\n[defenestrating_bodyguard.GetTitledFirstNameNoTooltip] dişlerini gıcırdatıyor. "Nöbet tutarken yüzümdeki ifade ile dalga geçmeye başladı. Yüz ifademi ve sakinliğimi bozmam için soytarılık yapmaya başladı. Güvenliğiniz için bir tehlikte oluşturuyor."\n\nDüşme tehlikesine rağmen kurtulmak için yaptığı hareketlerin ortasında [defenestrated_character.GetTitledFirstNameNoTooltip] kıkırdamaya başlıyor. "#EMP Nanik nanik#!!""
+ court.4800.a: "Bakalım soytarılar uçabiliyor mu?"
+ court.4800.maimed_toast: "Kanatsız [defenestrated_character.GetTitledFirstName]"
+ court.4800.death_toast: "[defenestrated_character.GetTitledFirstName] uçarken öldü"
+ court.4800.b: "Abartmaya gerek yok! Nazikçe dövebilirsin."
+ court.4800.c: "[defenestrated_character.GetTitledFirstNameNoTooltip] haklı. İyi bir koruma asla kışkırtmalara gelmez."
+  
+ #By Isabella Welch 
+ court.4801.t: "Patlamaya Hazır"
+ court.4801.desc: "Küçük [poopy_child.GetTitledFirstName] taht odamda oyun oynuyor ancak ben bunu görmeden çok önce ne olduğu belli olan bir koku alıyorum.\n\n"Aaa, [ROOT.GetCharacter.Custom('GetMamaPapa')]! Seni gördüğüme çok sevindim!" derken sarılmak için bacağıma doğru atılıyor. Dolu bezinin ağırlığını diğer bacağımda hissediyorum.\n\nİki bacağım arasında sıkıştıkça bezinden sızmaya başlıyor. Kendi kendime soruyorum: Hizmetçi sayımız çok mu az da bez değiştirme gibi bir ayak işi bile bana kaldı?"
+ court.4801.a: ""Kucağıma gel de seni bir temizleyelim.""
+ court.4801.b: "Bu pisliğe dokunmaktansa savaş meydanında mağlup olmayı tercih ederim."
+  
+ #By Isabella Welch 
+ court.4802.t: "Zorla Eğitim"
+ court.4802.desc: "Saray Öğretmenim [court_tutor.GetTitledFirstName], bir grup öğrencisini etrafına toplamış.\n\n"Öğretmenim, paralelkenar nedir?"\n\n"Öğretmenim 'sevişmek' ne demek?"\n\n"Öğretmenim, flütümün sesi iyi mi yoksa #EMP daha da yüksek#! sesle mi çalmalıyım?"\n\n[court_tutor.GetTitledFirstNameNoTooltip], bana yılmış bir şekilde bakıyor. "[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], daha fazla dayanamıyorum. Lütfen beni bu görevden azat edin.""
+ court.4802.a: "Çok şeker değiller mi?"
+ court.4802.b: "Sana bir trompet alacağım [child_2.GetTitledFirstNameNoTooltip]. Bunun sesi #EMP daha çok#! çıkar!"
+ court.4802.c: "Anlıyorum, yeni bir Öğretmen arayacağız."
+  
+ #By Isabella Welch 
+ court.4803.t: "Hayalet Kalem"
+ court.4803.desc: "Şairim, her zaman yaptığı gibi beni görür görmez yüksek sesle konuşmaya başlıyor. "Ah, kıymetli [ROOT.GetCharacter.Custom('PetName')]! İlham perilerinin terk ettiği bir hayatı yaşamak çok zor olmalı."\n\n"Ordulara komuta edersiniz de kelimelere komuta edemezsiniz. İnsanlık daha önce bundan daha büyük bir trajediye tanık oldu mu?"\n\n"Size yardım etmeme izin verin. Sizin için konuşmalarınızdan bazılarını hazırlayabilirim. Bana konuyu söyleyin, ben de güzel bir konuşma hazırlayayım.""
+ court.4803.a: "Konuşmalarımı güzelleştirmekten zarar gelmez."
+ court.4803.b: "Bazen kendimi bir [ROOT.GetCharacter.GetTitleAsName] yerine daha çok şair gibi hissediyorum, yardıma gerek yok."
+ court.4803.c: "Sevgilime benim adıma bir şiir yazmanı tercih ederim."
+ court.4803.c.tt: "[lover.GetTitledFirstName|U] için şiir göndereceksiniz"
+ court.4803.c.intrigue.tt: "[lover.GetFirstNameNoTooltip] yüksek [intrigue|E] yeteneğine sahip, başkası tarafından yazıldığını anlayabilir."
+ court.4803.c.realize.tt: "[lover.GetFirstNameNoTooltip] gerçek yazarın kim olduğunu fark etti"
+ court.4803.c.fooled.tt: "[lover.GetFirstNameNoTooltip], 'sizin' şiirinizden etkilendi"
+ court.4803.d: "Kelimelerim çok iyi olmayabilir ancak kalbimden geliyorlar."
+  
+ #By Isabella Welch 
+ court.4804.t: "Yatak Arkadaşları"
+ court.4804.desc: "Her ikisinin de gözlerinin altında koyu halkalar olan, aynı odayı paylaşan iki saray mensubunun tartıştığını fark ettim.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], [roomate_2.GetTitledFirstName] ile bir gece daha aynı yatağı paylaşamam. Bütün örtüyü kendine çeken doyumsuz bir domuz."\n\n"Bu hafta [roomate_1.GetTitledFirstName] her gece [ROOT.Char.Custom('RandomBadRoomate')]." [roomate_2.GetTitledFirstName] titriyor. "Yalvarırım [Select_CString(ROOT.Char.IsFemale, 'leydim', 'lordum' )], bize daha iyi kalacak yerler bahşedin. Soğuk, boş bir yataktan başka bir şey istemiyorum.""
+ court.4804.a: "Hizmetçilere size yeni yataklar bulmalarını söyleyeceğim."
+ court.4804.b: "Bu odalar bir [ROOT.GetCharacter.GetTitleAsNameNoTooltip] sarayına #EMP yakışmıyor#!."
+ court.4804.c: "Herkese kendi odasını verecek yerimiz yok."
+  
+ #By Isabella Welch 
+ court.4805.t: "Mihenk Taşı"
+ court.4805.desc: "Mimarım [royal_architect.GetTitledFirstName], devasa bir çuvalı taht odama sürükleyerek getiriyor ve bu sırada sırıtıyor. Taht odamın zeminini sıyırıp çizerken irkiliyorum.\n\n"[Select_CString(ROOT.Char.IsFemale, 'Leydim', 'Lordum' )], #EMP çok#! haddimi aşan bir şey yaptım ancak bunun sizi memnun edeceğini düşünüyorum."\n\nÇuvalı açarken müstehcen bir şeyler olmasını bekliyorum ancak çuvalın içinden irice, dikdörtgen bir kaya parçası çıkıyor. "Bu, yeminli düşmanınız [rival.GetTitledFirstName] ve onun [rival.Custom('FortifiedBuilding')] dibinden getirdiğim mihenk taşı. Bu sayede yapı tüm kıymetini kaybetti!""
+ court.4805.a: "Hadi onunla bir domuz ahırı yapalım!"
+ court.4805.b: "Gururla sergilenmesini istiyorum!"
+ court.4805.c: "Onunla olan düşmanlığımdan pişmanım. Taşı aldığın yere geri koy."
+ court.4805.d: "Neden bu pisliği bana getirdin? At gitsin!"
+  
+ #By Isabella Welch 
+  
+ court.4806.t: "[ROOT.Char.GetTitleAsNameNoTooltip] Hayranı"
+ court.4806.intro: "Taht odamda yeni bir yüz dolaşıyor, [ROOT.Char.GetCulture.GetNameNoTooltip] geleneklerini temsil eden bazı sanat eserlerine baktığında arada bir kıkırdayıp zıplıyor."
+ court.4806.hre_desc: "\n\n"Kalbim! [ROOT.GetCharacter.GetPrimaryTitle.GetNameNoTierNoTooltip] gerçekten harika bir yer! [adoring_fan_liege.GetCapitalLocation.GetTitle.GetNameNoTier] topraklarında yaşasam da, gerçek bir [ROOT.Char.GetCulture.GetName] olarak doğduğumu düşünüyorum! Her Prens-Piskoposu sayabilirim. Hatta baldırımda [ROOT.GetCharacter.GetTitledFirstNamePossessiveNoTooltip] yüzünün dövmesi var."\n\nÇantasının içine uzanıyor ve Reichskrone'un ucuz bir bronz kopyası gibi görünen bir şey çıkarıyor. "Çoğu gün bunu giyerim ve yanından geçtiğim insanlara 'Elektörlük için oyunuzu bana verin!' derim.""
+ court.4806.byzantine_desc: "Heyecanlı ziyaretçi yaklaşırken, muhafızlar daha fazla yaklaşmaması için önünü kesiyor.\n\n"[ROOT.Char.GetTitleAsNameNoTooltip]! [adoring_fan_liege.GetCapitalLocation.GetTitle.GetNameNoTier] topraklarında doğsam da, [ROOT.Char.GetCulture.GetCollectiveNoun] kültürünü kalbimin kaldırabileceğinden daha fazla seviyorum."\n\n"Ben hayatımı sizlerden biri gibi yaşamaya adadım, [ROOT.Char.GetCulture.GetLanguage.GetNameNoTooltip] öğrenmeye odaklandım."\n\n"Ben sadece mor iç çamaşırı giyerim. İmparatorluk çökerse, annemin ölümünden daha fazla üzülürüm. Ağlamamın asla sonu gelmez!""
+ court.4806.general_desc: "Bu ziyaretçide bir tuhaflık olduğu yürüyüşünden belli. Yakınlaştıkça elinde kopya bir [ROOT.Char.Custom('signature_weapon')] taşıdığını görüyorum, ben onun aslı için canımı bile veririm.\n\n"Önünüzde diz çökmeden edemiyorum. [adoring_fan_liege.GetCapitalLocation.GetTitle.GetNameNoTier|u] topraklarında yaşasam da hayatımı [ROOT.Char.GetCulture.GetCollectiveNoun] kültürüne adadım. Sadece [ROOT.Char.GetCulture.GetLanguage.GetNameNoTooltip] konuşurum, [ROOT.Char.GetCulture.GetNameNoTooltip] [ROOT.GetCharacter.Custom('GetExpensiveMeal')] yerim ve [ROOT.Char.GetCulture.GetName] tarzı kılıç eğitimi aldım."\n\n"Ailem beni evden kovdu. Kafayı [ROOT.GetCharacter.GetPrimaryTitle.GetNameNoTooltip] ile bozduysam, orada yaşamam gerektiğini söylediler.""
+ court.4806.a: "Bu biraz tuhaf hissetirse de aslında bir yandan da gurur verici."
+ court.4806.b: "Bana o eski püskü şeyi ver! Belki giyerim."
+ court.4806.c: "Bu kadar hevesli biri sarayımıza katılmalı!"
+ court.4806.c.byz: "Vatanseverliğinizden dolayı mor giymenize izin vereceğim.."
+ court.4806.d: "Yalnızca bir [ROOT.Char.GetTitleAsNameNoTooltip] mor giyebilir! Atın şu serseriyi zindana!"
+ court.4806.e: "[ROOT.Char.Custom('signature_weapon')|U] kopyasını ne cüretle yaparsın! Alın şunun elinden!"
+  

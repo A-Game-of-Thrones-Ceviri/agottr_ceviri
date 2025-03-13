@@ -59,9 +59,13 @@
  PROVINCE_TOOLTIP_FAITH: "Mezhep: [COUNTY.GetFaith.GetNameNoTooltip|V]"
  PROVINCE_TOOLTIP_TERRAIN: "Arazi: [PROVINCE.GetTerrain.GetNameNoTooltip|V]"
  PROVINCE_TOOLTIP_DEVELOPMENT: "Gelişmişlik: [COUNTY.GetDevelopmentLevel|V]"
+ PROVINCE_TOOLTIP_NO_HOLDING: "Holding inşa edilmedi" #NT!
+ PROVINCE_TOOLTIP_HOLDING_TITLE: "Holding Unvanı: [PROVINCE.GetTitle.GetNameNoTooltip|V]" #NT!
+ PROVINCE_TOOLTIP_COUNTY_TITLE: "İlçe ünvanı: [TITLE.GetNameNoTooltip|V]" #NT!
  PROVINCE_DEBUG: "\nID: [PROVINCE.GetID] [PROVINCE.GetTag]"
  PROVINCE_TOOLTIP_EMBARKING_IMPLIED: "#I Gemiye binerken para ödeyecek#!"
  PROVINCE_TOOLTIP_NO_PATH_ALL: "@warning_icon! #X Buraya gidemez#!"
+ PROVINCE_TOOLTIP_NOT_ALLOWED_TO_MOVE_AUTOMATED_ARMY: "@warning_icon! #X $ARMY_AUTOMATION_FEATURE_NAME$ Ordularınızı kontrol ederken emir veremezsiniz#!" #NT!
  PROVINCE_TOOLTIP_NO_PATH_SOME: "@warning_icon! #X Seçilen ordulardan bazıları buraya gidemez#!"
  PROVINCE_TOOLTIP_IMPASSABLE: "@warning_icon! #X Bu [Concept( 'barony', 'Baronlukta' )|E] geçilemez arazi var#!"
  PROVINCE_TOOLTIP_NON_TRAVERSIBLE_WATER: "@warning_icon! #X Bu su kütlesinden geçemezsiniz#!"
@@ -84,8 +88,20 @@
  PROVINCE_TOOLTIP_MOVE_RALLY_POINT_CANCEL: "#I İptal etmek için sağ tıklayın#!"
  PROVINCE_TOOLTIP_SELECT_MAA_ORIGIN_HERE: "#I [REGIMENT.GetNameNoTooltip] birliğini burada konuşlandırmak için tıklayın#!"
  PROVINCE_TOOLTIP_SELECT_MAA_ORIGIN_CANCEL: "#I İptal etmek için sağ tıklayın#!"
+ PROVINCE_TOOLTIP_SELECT_RAISE_ARMIES_AT_LOCATION_LAND: "#T [PROVINCE.GetNameNoTooltip]#!\n$PROVINCE_TOOLTIP_TERRAIN$\n[supply_limit|E]: [PROVINCE.GetSupplyLimitFor(GetPlayer)]" #NT!
+ PROVINCE_TOOLTIP_SELECT_RAISE_ARMIES_AT_LOCATION_WATER: "#T [PROVINCE.GetNameNoTooltip]#!\n[PROVINCE.GetTerrain.GetNameNoTooltip]" #NT!
+ PROVINCE_TOOLTIP_SELECT_RAISE_ARMIES_AT_LOCATION_IMPASSABLE: "#T Geçilmez#!" #NT!
+ PROVINCE_TOOLTIP_SELECT_RAISE_ARMIES_AT_LOCATION_VALID: "#I Ordu kurmak için buraya tıklayın#!" #NT!
+ PROVINCE_TOOLTIP_SELECT_RAISE_ARMIES_AT_LOCATION_INVALID: "#X @warning_icon! Burada ordu kuramazsınız#!" #NT!
+ PROVINCE_TOOLTIP_SELECT_RAISE_ARMIES_AT_LOCATION_CANCEL: "#I İptal etmek için sağ tıklayın#!" #NT!
+ SELECT_RAISE_TROOPS_AT_LOCATION: "Bir konumda mevcut [armies|E] adresini yükseltin, atlayın [rally_points|E]" #NT!
+ SELECT_RAISE_TROOPS_CHOOSE_LOCATION: "Harita Üzerinde Bir Konum Seçin" #NT!
+ SELECT_RAISE_TROOPS_MAP_INSTRUCTION: "#I Bir konum seçmek için tıklayın\n #bold için Ctrl tuşuna tıklayın değil#![armies|E] adresini [Concept( 'supply_limit', 'Supply Limits')|E] adresine göre bölmek \nİptal etmek için sağ tıklayın#!" #NT!
+  
  DE_JURE_DRIFT_TARGET_DESCRIPTION: "#high De Jure Kayma:#! [TITLE.GetNameNoTooltip] $DURATION$ içinde [TARGET_TITLE.GetNameNoTooltip] sınırlarından sayılacak"
  DE_JURE_DRIFT_PROGRESS_DESCRIPTION: "[TITLE.GetNameNoTooltip] $DURATION$ içinde [TARGET_TITLE.GetNameNoTooltip] sınırlarından sayılacak"
+ MAP_TOP_REALM_MAIN_TEXT: "Üst Bölge: [TITLE.GetDeFactoTopLiege.GetNameNoTooltip|V]" #NT!
+ MAP_TOP_HOLDER_MAIN_TEXT: "En İyi Diyar Sahibi: [TITLE.GetDeFactoTopLiege.GetHolder.GetNameNoTooltip|V]" #NT!
  MAP_COUNTY_HOLDER_MAIN_TEXT: "\nAna Diyar: [TITLE.GetDeFactoTopLiege.GetNameNoTooltip|V]\nKontluk Sahibi: [CHARACTER.GetUINameNoTooltip|UV]"
  MAP_COUNTY_HOLDER_RIGHT_CLICK: "#I Kontluk Sahibini seçmek için sağ tıklayın#!"
  MAP_COUNTY_REALM_EXPLORE_CLICK: "#I Diyarı genişletmek için CTRL tuşuna basılı tutup sağ tıklayın#!"
@@ -162,9 +178,7 @@
  LEGEND_NO_SPREAD_PROVINCE_TOOLTIP: "#T [Province.GetNameNoTooltip]#!\n[Legend.GetNameNoTooltip] destanını benimseme menzilinde değil"
  LEGEND_SPREAD_PROVINCE_TOOLTIP: "#T [Province.GetNameNoTooltip]#!\n[Legend.GetNameNoTooltip] destanını benimseme olasılığı: $SPREAD_CHANCE|V%/$\n\t$SPREAD_DEBUG_BREAKDOWN$"
  legends_MAP_MODE_TOOLTIP_CLICK_TO_SELECT: "\n#I [Province.GetHighestPriorityLegend.GetNameNoTooltip] seçmek için tıklayın#!"
- LEGEND_QUALITY_SPREAD_CHANCE: "Kalite seviyesinden gelen olasılık: $CHANCE|%/+2=$"
- LEGEND_QUALITY_OWNER_MODIFIER: "Sahibin etkisi: $MOD|%/+2=$"
- LEGEND_QUALITY_OWNER_MULTIPLIER: "Sahibin çarpanı: $BREAKDOWN_MULTIPLICATION_PREFIX$$MULT|2V$"
+ LEGEND_QUALITY_BASE_SPREAD_CHANCE: "Temel Efsane Yayılma Şansı" #NT!
   
  ADMIN_VASSAL_TYPES_MAP_MODE_TT_HEADER: "#T [TITLE.GetNameNoTooltip]#!"
  ADMIN_VASSAL_TYPES_MAP_MODE_TT_HOLDER: "Yöneten: [CHARACTER.GetNameNoTooltip]"

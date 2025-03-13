@@ -36,7 +36,6 @@
  LOBBY: "Lobi"
  START: "Başlat"
  FINISH: "Bitir"
- APPLY: "Onayla"
  DISABLED_BUTTON: "Eklenmemiş..."
  CURRENT_DATE: "[GetCurrentDate.GetStringLong]"
  CURRENT_DATE_TOOLTIP: "[JoinText( '\n', GetCurrentDateStringWithSyncInfo, GetPausedByEventReason )]"
@@ -245,6 +244,7 @@
  RELATION_COUNCIL_POSITION: "[Select_CString( TARGET_CHARACTER.IsLocalPlayer, 'Konseyinizde', TARGET_CHARACTER.GetShortUIName )][Select_CString( TARGET_CHARACTER.IsLocalPlayer, '', ' adlı kişinin konseyinde' )] [CHARACTER.GetCouncilTitle]"
  RELATION_COURTIER: "[Select_CString( CHARACTER.IsLocalPlayer, 'Karakterinizin', CHARACTER.GetShortUIName )][Select_CString( CHARACTER.IsLocalPlayer, '', ' adlı karakterin' )] Saray Mensubu"
  RELATION_GUEST: "[Select_CString( CHARACTER.IsLocalPlayer, 'Karakterinizin', CHARACTER.GetShortUIName )][Select_CString( CHARACTER.IsLocalPlayer, '', ' adlı karakterin' )] Misafiri"
+ RELATION_DIARCH: "$DIARCH_TITLE$. [CHARACTER.GetShortUIName]" #NT!
  THIS_IS_YOU_STATIC: "Bu sizsiniz"
  THIS_IS_YOU: "[CHARACTER.Custom('ThisIsYou')]"
  THIS_IS_YOU_ALLEGEDLY: "Bir rivayete göre bu sizsiniz"
@@ -337,11 +337,13 @@
  DYNASTY_PRESTIGE: "[dynasty_prestige_i] $VALUE|0$"
  DYNASTY_PRESTIGE_COST: "[dynasty_prestige_i] $VALUE|0$"
  DYNASTY_PRESTIGE_COST_LONG: "İhtişam: [dynasty_prestige_i] $VALUE|0$"
+ DYNASTY_PRESTIGE_COST_LONG_MAINTENANCE: "Şöhret: [dynasty_prestige_i] $VALUE|2$" #NT!
  DYNASTY_PRESTIGE_K: "[dynasty_prestige_i] $VALUE|1$B"
  DYNASTY_PRESTIGE_CONCEPT: "[dynasty_prestige|E]"
  DYNASTY_PRESTIGE_LEVEL_CONCEPT: "[dynasty_prestige_level|E]"
  INFLUENCE_COST: "[influence_i] $VALUE|0$"
  INFLUENCE_COST_LONG: "Etkisi: [influence_i] $VALUE|0$"
+ INFLUENCE_COST_LONG_MAINTENANCE: "Etki: [influence_i] $VALUE|2$" #NT!
  INFLUENCE_CONCEPT: "[influence|E]"
  INFLUENCE_LEVEL_CONCEPT: "[influence_level|E]"
  NUMBER_OF_MEN_DESC: "[soldiers|E]"
@@ -447,6 +449,7 @@
  ERROR_HOOF_3: "I am the Bazcat. Sometimes I'm here instead of Errorhoof. Feed me. There are also $ERRORS$ error(s) in your game. $ERROR_ACTION$"
  ERROR_HOOF_4: "I am Reconqat. Sometimes I'm here instead of Errorhoof. Don't call it a Reconquista otherwise I'll get sad. There are also $ERRORS$ error(s) in your game. $ERROR_ACTION$"
  ERROR_HOOF_5: "I am Smug Kid. Sometimes I'm here instead of Errorhoof. I'm looking at your error and looking smug about it. There are also $ERRORS$ error(s) in your game. $ERROR_ACTION$"
+ ERROR_HOOF_6: "Ben Cool Guy'ım. Bazen Errorhoof yerine burada oluyorum. Ben çok havalıyım, ama oyununuzdaki $ERRORS$ hata(lar)ı öyle değil. $ERROR_ACTION$" #NT!
  ENABLED_MODS: "Aktif Modlar:"
  RALLY_POINT_NAME: "[PROVINCE.GetNameNoTooltip] Kontluğundaki Toplanma Noktası"
  CONFIRM: "Kabul Et"

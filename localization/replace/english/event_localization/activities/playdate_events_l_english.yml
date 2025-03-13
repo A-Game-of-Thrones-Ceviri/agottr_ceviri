@@ -1,207 +1,207 @@
 ﻿l_english:
-#Bu dosya güncellendi.
- ### PHASES
- playdate_phase:0 "Tanışma"
-
- ### OPTIONS
-
- ### INTENTS
-
- child_return_from_playdate_title:0 "Çocuk Geri Döndü"
- child_return_from_playdate_desc:0 "[child_scope.GetShortUIName], akranlarıyla eğlendikten sonra [host.GetShortUIName] adlı kişinin sarayından döndü"
-
- playdate_header:0 "Akranlarla Tanışma:"
- playdate.0010.desc:0 "Niye benim davetimi kabul edip sonra [other_host.GetTitledFirstName] tarafından düzenlenen tanışmaya gittin ki?! Bunu unutmayacağım."
- playdate.0010.a:0 "Pardon."
-
- playdate.1001.opening_desc:0 "Lütfen akranlarınla tanışmak için [barony.GetNameNoTier] sarayıma gel!"
- playdate.1001.host_likes_me:0 "Umarım katılırsın. Seni görmek için iyi bir fırsatın doğmasını bekliyordum!"
- playdate.1001.host_dislikes_me:0 "Önemli herkesi davet ediyorum ve maalesef onlara sen de dâhilsin."
- playdate.1001.host_gets_along_with_me:0 "Umarım katılırsın, sen olmadan tadı çıkmaz!"
- playdate.1001.a:0 "Tabii ki gelirim."
- playdate.1001.b:0 "Hayır, istemiyorum!"
-
- playdate.1002.opening_desc:0 "[child_scope.Custom2('YourCharacterIntroduction', ROOT.Char)|U] akranlarıyla tanışabilmek için [barony.GetNameNoTier] sarayımı ziyaret ederse çok mutlu olurum."
- playdate.1002.host_likes_child:0 "Umarım katılır. Kendisini görmek için iyi bir fırsatın doğmasını bekliyordum!"
- playdate.1002.host_dislikes_child:0 "Önemli herkesi davet ediyorum ve maalesef o da dâhil."
- playdate.1002.host_gets_along_with_child:0 "Umarım katılır çünkü o olmadan tadı çıkmaz!"
- playdate.1002.a:0 "Tabii ki katılacak."
- playdate.1002.b:0 "Reddetmem gerekiyor."
-
- playdate.2001.t:1 "Toplanma"
- playdate.2001.desc_opening:0 "Herkes burada!\n\nTüm küçük lordlar ve leydiler odada toplandıkça mutlu oluyorum."
- playdate.2001.desc_guest_of_interest_1_2_3:0 "[guest_of_interest_1.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ve [guest_of_interest_2.Custom2('MyCharacterIntroduction', ROOT.Char)] gelebildiği için çok memnunum. [guest_of_interest_3.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)|U] bile burada!"
- playdate.2001.desc_guest_of_interest_1_and_2:0 "[guest_of_interest_1.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ve [guest_of_interest_2.Custom2('MyCharacterIntroduction', ROOT.Char)] gelebildiği için çok memnunum."
- playdate.2001.desc_guest_of_interest_1:0 "[guest_of_interest_1.Custom2('MyCharacterIntroduction', ROOT.Char)] gelebildiği için çok memnunum."
- playdate.2001.desc:0 "Diğer çocuklarla zaman geçirebileceğim için heyecanlıyım."
- playdate.2001.desc_guest_of_interest_4:0 "Yine de [guest_of_interest_4.Custom2('MyCharacterIntroduction', ROOT.Char)] geldiği için biraz keyfim kaçtı. Neyse, boş ver onu."
- playdate.2001.a:0 "Hoş geldiniz!"
- playdate.2001.a.tt:0 "Akranlarla tanışma başlar"
-
- playdate.2003.t:1 "Kötü Durum"
- playdate.2003.desc:0 "İnanamıyorum! Tüm davetiyelere ve hazırlıklara rağmen kimse akranlarla tanışma etkinliğime gelmedi.\n\nNeyse umurumda değil. Tüm tatlılar bana kaldı. Tüm oyuncaklar da. Hem... Hem... Neden kimse ge-gelmedi ki?"
- playdate.2003.a:0 "Neden kimse gelmedi?"
- 
- playdate.2501.t:1 "Sıcak Karşılama"
- playdate.2501.likes_host:1 "Herkes büyük odada toplanmışken [host.GetTitledFirstNameNoTooltip] hepimizi tanışmaya geldiğimiz için nezaketle karşılıyor."
- playdate.2501.dislikes_host:1 "Herkes büyük odada toplanmışken [host.Custom('InsultAdjective')] [host.GetTitledFirstNameNoTooltip] hepimizi tanışmaya geldiğimiz için karşılıyor."
- playdate.2501.a:0 "Olacakları dört gözle bekliyorum!"
- playdate.2501.a_dislike:0 "Bitsin de gidelim."
-
- playdate.0020.t:1 "Oyunların Sonu"
- playdate.0020.desc:0 "[host.Custom2('MyCharacterIntroduction', ROOT.Char)|U] göçtü diyorlar ama kimse bunun tam olarak ne anlama geldiğini bilmiyor. Yine de tanışma etkinliğinin sona erdiğinin farkındayız."
- playdate.0020.a:0 "Ama çok eğleniyorduk!"
- playdate.0020.a.tt:0 "#F O ortalıktan kaybolana kadar tabii.#!"
-
- playdate.0021.desc:0 "Hapiste olduğuma göre akranlarla tanışma da iptal edilecek. Oysa herkesi görmeyi iple çekiyordum!"
- playdate.0021.a:0 "Çok eğlenecektik..."
-
- playdate.0022.desc:0 "[host.Custom2('MyCharacterIntroduction', ROOT.Char)|U] hapsolduğu için akranlarla tanışma işi de iptal oldu. Şanssızlığa bak!"
-
- playdate.3001.t:1 "İtişip Kakışma"
- playdate.3001.desc:1 "[guest.Custom2('MyCharacterIntroduction', ROOT.Char)|U] bir köylü [peasant_child.Custom('GirlBoy')] ile dövüşme taklidi yapıyor zannediyorduk ama birdenbire kan akmaya başladı.\n\n[guest.GetFirstNameNoTooltip] homurdanarak yere çarpıyor ve başında duran köylü de tekrar saldırmak için harekete geçiyor."
- playdate.3001.a:0 "Kurtaracağım onu!"
- playdate.3001.a_injured:0 "Yaralandınız"
- playdate.3001.b:0 ""Biri yardım etsin!""
- playdate.3001.c:0 "Zevkli görünüyor, sıra bende!"
-
- playdate.3002.t:1 "Sırlar"
- playdate.3002.desc:0 "[secret_holder.Custom2('MyCharacterIntroduction', ROOT.Char)|U] bir şeyler saklıyor.\n\nFakat tam bana söyleyecekken [close_participant.Custom2('MyCharacterIntroduction', ROOT.Char)] gelip satranç oynamak istediğini söylüyor."
- playdate.3002.a:0 "Olur. Saçma sırlardan bana ne?"
- playdate.3002.b:0 "Şşş sus, ne saklıyor bilmek istiyorum!"
-
- playdate.3003.t:1 "[ROOT.Char.Custom('CatStoryName')]"
- playdate.3003.desc_opening:0 "Kedim [ROOT.Char.Custom('CatStoryName')] çok sevimli olduğu için herkesin görmesini istiyorum, o yüzden yanımda getirmeye karar veriyorum.\n\n"
- playdate.3003.desc_bonding_cat_opening:0 ""Kedin çok tatlıymış! Benimkini de görmek ister misin?""
- playdate.3003.desc_bonding_cat:0 "[guest.Custom2('MyCharacterIntroduction', ROOT.Char)|U] [guest.Custom('CatFurColor')] bir kedi uzatıyor bana doğru. "Adı [guest.Custom('CatStoryName')]!""
- playdate.3003.desc_bonding_dog_opening:0 ""Kedin çok tatlıymış! Benim köpeğimi de görmek ister misin?""
- playdate.3003.desc_bonding_dog:0 "[guest.Custom2('MyCharacterIntroduction', ROOT.Char)|U] [guest.Custom('DogFurColor')] bir köpek uzatıyor bana doğru. "Adı [guest.Custom('DogStoryName')]!""
- playdate.3003.a_cat:0 "Kedin çok tatlıymış!"
- playdate.3003.a_dog:0 "Köpeğin çok tatlıymış!"
- playdate.3003.b:0 "Ah, teşekkürler! Gel bakalım, [guest.Custom('DogStoryName')]!"
- playdate.3003.c:0 "Öğğk, çok pis. Hiç benim kedim gibi değil!"
-
- playdate.3004.t:1 "[ROOT.Char.Custom('DogStoryName')]"
- playdate.3004.desc_opening:0 "Köpeğim [ROOT.Char.Custom('DogStoryName')] çok sevimli olduğu için herkesin görmesini istiyorum, o yüzden yanımda getirmeye karar veriyorum.\n\n"
- playdate.3004.desc_bonding_cat_opening:0 ""Köpeğin çok tatlıymış! Benim kedimi de görmek ister misin?""
- playdate.3004.desc_bonding_dog_opening:0 ""Köpeğin çok tatlıymış! Benimkini de görmek ister misin?""
- playdate.3004.b:0 "Ah, teşekkürler! Gel bakalım, [guest.Custom('CatStoryName')]!"
- playdate.3004.c:0 "Öğğk, çok pis. Hiç benim köpeğim gibi değil!"
-
- playdate.3005.t:1 "Sır"
- playdate.3005.desc:0 "[guest.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ile saraydaki hayat ve dedikodular hakkında konuşuyorum.\n\n"[secret_owner.GetTitledFirstName] [secret.Custom('SecretDescriptionThirdPerson')] diye de du–"\n\nDuruyorum ama çok geç; [guest.GetFirstNameNoTooltip] her şeyi duydu."
- playdate.3005.a:0 "Ah... Pardon."
- playdate.3005.b:0 "Lütfen dediğim her şeyi unut! Ne istersen yaparım!"
- playdate.3005.c:0 "Para veririm! Söyleme kimseye!"
- playdate.3005.d:0 "Birine söylersen c-canını yakarım!"
- playdate.3005.d.success:0 "[guest.GetFirstNameNoTooltip] kimseye söylemeyeceğine söz veriyor"
- playdate.3005.d.failure:0 "[guest.GetFirstNameNoTooltip] sizden korkmuyor"
+  
+  ### PHASES 
+ playdate_phase: "Tanışma"
+  
+  ### OPTIONS 
+  
+  ### INTENTS 
+  
+ child_return_from_playdate_title: "Çocuk Geri Döndü"
+ child_return_from_playdate_desc: "[child_scope.GetShortUIName], akranlarıyla eğlendikten sonra [host.GetShortUIName] adlı kişinin sarayından döndü"
+  
+ playdate_header: "Akranlarla Tanışma:"
+ playdate.0010.desc: "Niye benim davetimi kabul edip sonra [other_host.GetTitledFirstName] tarafından düzenlenen tanışmaya gittin ki?! Bunu unutmayacağım."
+ playdate.0010.a: "Pardon."
+  
+ playdate.1001.opening_desc: "Lütfen akranlarınla tanışmak için [barony.GetNameNoTier] sarayıma gel!"
+ playdate.1001.host_likes_me: "Umarım katılırsın. Seni görmek için iyi bir fırsatın doğmasını bekliyordum!"
+ playdate.1001.host_dislikes_me: "Önemli herkesi davet ediyorum ve maalesef onlara sen de dâhilsin."
+ playdate.1001.host_gets_along_with_me: "Umarım katılırsın, sen olmadan tadı çıkmaz!"
+ playdate.1001.a: "Tabii ki gelirim."
+ playdate.1001.b: "Hayır, istemiyorum!"
+  
+ playdate.1002.opening_desc: "[child_scope.Custom2('YourCharacterIntroduction', ROOT.Char)|U] akranlarıyla tanışabilmek için [barony.GetNameNoTier] sarayımı ziyaret ederse çok mutlu olurum."
+ playdate.1002.host_likes_child: "Umarım katılır. Kendisini görmek için iyi bir fırsatın doğmasını bekliyordum!"
+ playdate.1002.host_dislikes_child: "Önemli herkesi davet ediyorum ve maalesef o da dâhil."
+ playdate.1002.host_gets_along_with_child: "Umarım katılır çünkü o olmadan tadı çıkmaz!"
+ playdate.1002.a: "Tabii ki katılacak."
+ playdate.1002.b: "Reddetmem gerekiyor."
+  
+ playdate.2001.t: "Toplanma"
+ playdate.2001.desc_opening: "Herkes burada!\n\nTüm küçük lordlar ve leydiler odada toplandıkça mutlu oluyorum."
+ playdate.2001.desc_guest_of_interest_1_2_3: "[guest_of_interest_1.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ve [guest_of_interest_2.Custom2('MyCharacterIntroduction', ROOT.Char)] gelebildiği için çok memnunum. [guest_of_interest_3.Custom2('MyCharacterIntroductionNoComma', ROOT.Char)|U] bile burada!"
+ playdate.2001.desc_guest_of_interest_1_and_2: "[guest_of_interest_1.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ve [guest_of_interest_2.Custom2('MyCharacterIntroduction', ROOT.Char)] gelebildiği için çok memnunum."
+ playdate.2001.desc_guest_of_interest_1: "[guest_of_interest_1.Custom2('MyCharacterIntroduction', ROOT.Char)] gelebildiği için çok memnunum."
+ playdate.2001.desc: "Diğer çocuklarla zaman geçirebileceğim için heyecanlıyım."
+ playdate.2001.desc_guest_of_interest_4: "Yine de [guest_of_interest_4.Custom2('MyCharacterIntroduction', ROOT.Char)] geldiği için biraz keyfim kaçtı. Neyse, boş ver onu."
+ playdate.2001.a: "Hoş geldiniz!"
+ playdate.2001.a.tt: "Akranlarla tanışma başlar"
+  
+ playdate.2003.t: "Kötü Durum"
+ playdate.2003.desc: "İnanamıyorum! Tüm davetiyelere ve hazırlıklara rağmen kimse akranlarla tanışma etkinliğime gelmedi.\n\nNeyse umurumda değil. Tüm tatlılar bana kaldı. Tüm oyuncaklar da. Hem... Hem... Neden kimse ge-gelmedi ki?"
+ playdate.2003.a: "Neden kimse gelmedi?"
+  
+ playdate.2501.t: "Sıcak Karşılama"
+ playdate.2501.likes_host: "Herkes büyük odada toplanmışken [host.GetTitledFirstNameNoTooltip] hepimizi tanışmaya geldiğimiz için nezaketle karşılıyor."
+ playdate.2501.dislikes_host: "Herkes büyük odada toplanmışken [host.Custom('InsultAdjective')] [host.GetTitledFirstNameNoTooltip] hepimizi tanışmaya geldiğimiz için karşılıyor."
+ playdate.2501.a: "Olacakları dört gözle bekliyorum!"
+ playdate.2501.a_dislike: "Bitsin de gidelim."
+  
+ playdate.0020.t: "Oyunların Sonu"
+ playdate.0020.desc: "[host.Custom2('MyCharacterIntroduction', ROOT.Char)|U] göçtü diyorlar ama kimse bunun tam olarak ne anlama geldiğini bilmiyor. Yine de tanışma etkinliğinin sona erdiğinin farkındayız."
+ playdate.0020.a: "Ama çok eğleniyorduk!"
+ playdate.0020.a.tt: "#F O ortalıktan kaybolana kadar tabii.#!"
+  
+ playdate.0021.desc: "Hapiste olduğuma göre akranlarla tanışma da iptal edilecek. Oysa herkesi görmeyi iple çekiyordum!"
+ playdate.0021.a: "Çok eğlenecektik..."
+  
+ playdate.0022.desc: "[host.Custom2('MyCharacterIntroduction', ROOT.Char)|U] hapsolduğu için akranlarla tanışma işi de iptal oldu. Şanssızlığa bak!"
+  
+ playdate.3001.t: "İtişip Kakışma"
+ playdate.3001.desc: "[guest.Custom2('MyCharacterIntroduction', ROOT.Char)|U] bir köylü [peasant_child.Custom('GirlBoy')] ile dövüşme taklidi yapıyor zannediyorduk ama birdenbire kan akmaya başladı.\n\n[guest.GetFirstNameNoTooltip] homurdanarak yere çarpıyor ve başında duran köylü de tekrar saldırmak için harekete geçiyor."
+ playdate.3001.a: "Kurtaracağım onu!"
+ playdate.3001.a_injured: "Yaralandınız"
+ playdate.3001.b: ""Biri yardım etsin!""
+ playdate.3001.c: "Zevkli görünüyor, sıra bende!"
+  
+ playdate.3002.t: "Sırlar"
+ playdate.3002.desc: "[secret_holder.Custom2('MyCharacterIntroduction', ROOT.Char)|U] bir şeyler saklıyor.\n\nFakat tam bana söyleyecekken [close_participant.Custom2('MyCharacterIntroduction', ROOT.Char)] gelip satranç oynamak istediğini söylüyor."
+ playdate.3002.a: "Olur. Saçma sırlardan bana ne?"
+ playdate.3002.b: "Şşş sus, ne saklıyor bilmek istiyorum!"
+  
+ playdate.3003.t: "[ROOT.Char.Custom('CatStoryName')]"
+ playdate.3003.desc_opening: "Kedim [ROOT.Char.Custom('CatStoryName')] çok sevimli olduğu için herkesin görmesini istiyorum, o yüzden yanımda getirmeye karar veriyorum.\n\n"
+ playdate.3003.desc_bonding_cat_opening: ""Kedin çok tatlıymış! Benimkini de görmek ister misin?""
+ playdate.3003.desc_bonding_cat: "[guest.Custom2('MyCharacterIntroduction', ROOT.Char)|U] [guest.Custom('CatFurColor')] bir kedi uzatıyor bana doğru. "Adı [guest.Custom('CatStoryName')]!""
+ playdate.3003.desc_bonding_dog_opening: ""Kedin çok tatlıymış! Benim köpeğimi de görmek ister misin?""
+ playdate.3003.desc_bonding_dog: "[guest.Custom2('MyCharacterIntroduction', ROOT.Char)|U] [guest.Custom('DogFurColor')] bir köpek uzatıyor bana doğru. "Adı [guest.Custom('DogStoryName')]!""
+ playdate.3003.a_cat: "Kedin çok tatlıymış!"
+ playdate.3003.a_dog: "Köpeğin çok tatlıymış!"
+ playdate.3003.b: "Ah, teşekkürler! Gel bakalım, [guest.Custom('DogStoryName')]!"
+ playdate.3003.c: "Öğğk, çok pis. Hiç benim kedim gibi değil!"
+  
+ playdate.3004.t: "[ROOT.Char.Custom('DogStoryName')]"
+ playdate.3004.desc_opening: "Köpeğim [ROOT.Char.Custom('DogStoryName')] çok sevimli olduğu için herkesin görmesini istiyorum, o yüzden yanımda getirmeye karar veriyorum.\n\n"
+ playdate.3004.desc_bonding_cat_opening: ""Köpeğin çok tatlıymış! Benim kedimi de görmek ister misin?""
+ playdate.3004.desc_bonding_dog_opening: ""Köpeğin çok tatlıymış! Benimkini de görmek ister misin?""
+ playdate.3004.b: "Ah, teşekkürler! Gel bakalım, [guest.Custom('CatStoryName')]!"
+ playdate.3004.c: "Öğğk, çok pis. Hiç benim köpeğim gibi değil!"
+  
+ playdate.3005.t: "Sır"
+ playdate.3005.desc: "[guest.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ile saraydaki hayat ve dedikodular hakkında konuşuyorum.\n\n"[secret_owner.GetTitledFirstName] [secret.Custom('SecretDescriptionThirdPerson')] diye de du–"\n\nDuruyorum ama çok geç; [guest.GetFirstNameNoTooltip] her şeyi duydu."
+ playdate.3005.a: "Ah... Pardon."
+ playdate.3005.b: "Lütfen dediğim her şeyi unut! Ne istersen yaparım!"
+ playdate.3005.c: "Para veririm! Söyleme kimseye!"
+ playdate.3005.d: "Birine söylersen c-canını yakarım!"
+ playdate.3005.d.success: "[guest.GetFirstNameNoTooltip] kimseye söylemeyeceğine söz veriyor"
+ playdate.3005.d.failure: "[guest.GetFirstNameNoTooltip] sizden korkmuyor"
  promise_to_keep_secret: "[guest.GetFirstNameNoTooltip] [secret|E]rı açığa çıkartmayacağına söz veriyor"
-
- playdate.3006.t:1 "Okuma Arkadaşı"
- playdate.3006.desc:0 "Hep yaptığım gibi yanımda küçük bir kitap getirdim. Birkaç sayfa okumuşken [fellow_nerd.Custom2('MyCharacterIntroduction', ROOT.Char)|U] beni buluyor.\n\n"#EMP [SCOPE.Custom('RandomInformativeTextName')|U]#! değil mi o? Daha yeni okudum, nasıl sence?""
- playdate.3006.a:0 "Güzelce konuşalım!"
- playdate.3006.b:0 "Git başımdan, okuyorum."
-
- playdate.3007.t:1 "Tırmanış"
- playdate.3007.desc:0 "[participant.Custom2('MyCharacterIntroduction', ROOT.Char)|U] yakındaki en yüksek [ROOT.Char.Custom('ObjectToClimb')] tırmandı ve kendisini takip etmem için beni çağırıyor.\n\nBir [ROOT.Char.Custom('ObjectToClimb')] ilk kez tırmanmayacağım tabii ama bu gerçekten de yüksek görünüyor..."
- playdate.3007.a:0 "Pes edemem!"
- playdate.3007.a.success:0 "Tırmandınız"
- playdate.3007.a.failure:0 "Kötü bir şekilde düştünüz"
- playdate.3007.b:0 "Yok, burada iyiyim."
-
- playdate.3008.t:1 "Yüzme"
- playdate.3008.desc:0 "[participant.Custom2('MyCharacterIntroduction', ROOT.Char)|U] doğrudan [ROOT.Char.Custom('IndefiniteBodyOfWater')] kıyısına gidip tereddüt etmeden içine atladı.\n\nEğlenirken birden su altında kaybolunca herkes çığlık atmaya başladı. Zaman geçtikçe kendi başına tekrar yukarı yüzemeyeceğini anladım."
- playdate.3008.a:0 "Bekle, geliyorum!"
- playdate.3008.a.success:0 "[participant.GetFirstNameNoTooltip] sizin tarafınızdan kurtarıldı"
- playdate.3008.a.failure:0 "Yetişemediniz"
- playdate.3008.a.critical_failure:0 "Neredeyse boğulacaktınız"
- playdate.3008.b:0 "Lütfen biri yardım etsin!"
- playdate.3008.b.success:0 "Biri duyup geldi"
- playdate.3008.b.failure:0 "Yardım edecek kimse gelmedi"
- playdate.3008.c:0 "Evine gitmiş olmalı..."
-
- playdate.3009.t:1 "Kar"
- playdate.3009.desc_two:0 "[participant.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ve [to_blame.Custom2('MyCharacterIntroduction', ROOT.Char)] arkası dönük dururlarken avuçlarımı karla doldurup sessizce yaklaşıyorum. [participant.GetFirstNameNoTooltip] tam dönecekken saldırıyorum."
- playdate.3009.desc_opening:0 "[participant.Custom2('MyCharacterIntroduction', ROOT.Char)|U] arkası dönük dururken avuçlarımı karla doldurup sessizce yaklaşıyorum, tam dönecekken saldırıyorum."
- playdate.3009.desc:0 "\n\nÇığlık atıyor ama hemen karşılık vermeye hazırlanıyor. Kaçmaya başlıyorum ve elinde koskocaman bir kar topuyla beni takip ediyor!"
- playdate.3009.a:0 "Geri çekilmeyeceğim!"
- playdate.3009.a.success:0 "Kar topu savaşını kazandınız"
- playdate.3009.a.failure:0 "Kafanıza kar topu yediniz"
- playdate.3009.b:0 "Lütfen, acı bana!"
- playdate.3009.c:0 "[to_blame.GetFirstNameNoTooltip] yaptı ben değil!"
- playdate.3009.c.success:0 "[participant.GetFirstNameNoTooltip] size inandı"
- playdate.3009.c.failure:0 "Yalan söylediğinizi anladı"
-
- playdate.3010.t:1 "Pazar"
- playdate.3010.desc:0 "[participant.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ve ben, ticaretin önemli bir beceri olduğu konusunda hemfikiriz. Bu nedenle pazarlardan birini ziyaret etmeye karar verdik.\n\nPara olarak sadece birkaç küçük taşımız var ama #EMP cidden#! parlaklar!"
- playdate.3010.a:0 "Şey, bir eşya satın almak istiyorum lütfen."
- playdate.3010.a.success:0 "Tüccarı ikna ettiniz"
- playdate.3010.a.failure:0 "Tüccar sizi kovaladı"
- playdate.3010.b:0 "Ne istediğimi bana vermek zorundasın! Ben bir #EMP [Select_CString(ROOT.Char.IsFemale, 'leydiyim', 'lordum' )]#!!"
- playdate.3010.c:0 "Kendi tezgâhımızı kuralım!"
- playdate.3010.c.tt:0 "Bazı tüccarlar sizi eğlendirecek ve taşlarınızı birkaç yaprak parçasıyla alacak"
-
- playdate.3011.t:1 "Evcilik"
- playdate.3011.desc:1 "[participant.Custom2('MyCharacterIntroduction', ROOT.Char)|U] elinde bir yığın kumaşla geliyor. Yere attığında yetişkinlerin giydiği kıyafetler olduğunu görüyorum.\n\n"Hadi evcilik oynayalım!""
- playdate.3011.a:0 "Anne baba olursak oynarım!"
- playdate.3011.b:0 "Olur ama [disliked_participant.GetFirstNameNoTooltip] köpek olmak zorunda!"
- playdate.3011.c:0 "Hayır, evcilik çocuk oyunu. Satranç oynayalım."
- playdate.3011.c.tt:1 "[THIS.Char.Custom('education_focus_child')] sanatındaki çalışmalarınızı ilerletiyorsunuz"
-
- playdate.3012.t:1 "Cesur $knight_culture_player_plural_no_tooltip$"
- playdate.3012.desc_knight:0 "$knight_culture_player_plural_no_tooltip$ avluda talim yaparken [participant.Custom2('MyCharacterIntroduction', ROOT.Char)] ve ben de onları izliyoruz. [knight.Custom2('MyCharacterIntroduction', ROOT.Char)|U] gülümseyerek yanımıza geliyor."
- playdate.3012.desc_no_knight:0 "[participant.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ile avluda köylülerin talim yapmasını izlerken aralarından biri gülümseyerek yaklaşıyor."
- playdate.3012.desc:0 "\n\n"Ne dersiniz [participant.Custom('GirlsBoysChildren')], bir şeyler öğrenmek ister misiniz?""
- playdate.3012.a:0 "#EMP Evet!#!"
- playdate.3012.a.success:0 "Başarıyla öğrendiniz"
- playdate.3012.a.neutral:0 "Ne kadar uğraşırsanız uğraşın öğrenemediniz"
- playdate.3012.a.failure:0 "Kafanıza #EMP sert#! bir darbe aldınız"
- playdate.3012.b:0 "Sizi izlemeyi tercih ederim."
-
- playdate.3013.t:1 "Bilge [Select_CString(witch.IsFemale, 'Kadın', 'Adam' )]"
- playdate.3013.desc:0 "Ormanda oynarken birden kendimi yapayalnız buluyorum. Az önce arkamdaydılar, nereye gittiler ki!?\n\nBeni bulmaları için – yoksa #EMP korkak#! değilim – tam çığlık atmaya başlayacakken – siyah pelerinli [witch.Custom2('MyCharacterIntroduction', ROOT.Char)] ile karşılaşıyorum. Eğilip yerdeki garip görünen bir bitkiyi inceliyor, yanındaki büyük siyah ciltli kitaptakiyle karşılaştırıyor.\n\n"Merhaba küçük [Select_CString(ROOT.Char.IsFemale, 'leydim', 'lordum' )]. Bilginin çağrısı mı getirdi buraya sizi?""
- playdate.3013.a:0 "Sadece elindeki bitki ne diye merak ediyorum."
- playdate.3013.a.success:0 "Otlar ve bitkiler hakkında çok şey öğrendiniz"
- playdate.3013.a.failure:0 "Ne dediği hakkında hiçbir fikriniz yok"
- #AGOT Modified
- #playdate.3013.b:0 "Yes, teach me everything you can!"
- playdate.3013.b:0 "Geleceği gördüğün söyleniyor...?"
- playdate.3013.c:0 "Cadısın sen! Kötü birisisin."
-
- playdate.3014.t:1 "[priest.GetCouncilTitle|U]"
- playdate.3014.desc_participant:0 "Yerel [ROOT.Char.GetFaith.HouseOfWorship] içinde [participant.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ile geziyoruz. Bir süre sonra parşömenlerle çevrili olan [priest.Custom2('MyCharacterIntroduction', ROOT.Char)] ile karşılaşıyoruz.\n\n"Çok uzun zaman önce yazılmış günlükler bunlar, ilginizi çekiyor mu?""
- playdate.3014.desc:0 "Yerel [ROOT.Char.GetFaith.HouseOfWorship] içinde gezerken parşömenlerle çevrili olan [priest.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ile karşılaşıyorum.\n\n"Çok uzun zaman önce yazılmış günlükler bunlar, ilgini çekiyor mu?""
- playdate.3014.a:0 "Evet! Öğret bana."
- playdate.3014.a.success:0 "Günlük yazma sanatını öğrendiniz"
- playdate.3014.a.neutral:0 "Birkaç şey öğrendiniz"
- playdate.3014.a.tt:0 "[ROOT.Char.Custom('education_focus_child')] sanatındaki çalışmalarınızı ilerletiyorsunuz"
- playdate.3014.a.tt_participant:0 "[participant.GetFirstNameNoTooltip] ve siz [ROOT.Char.Custom('education_focus_child')] sanatındaki çalışmalarınızı ilerletiyorsunuz"
- playdate.3014.a.failure:0 "Hiçbir şey öğrenmediniz"
- playdate.3014.b:0 "Hayır, maceralar anlat!"
-
- # Learning your child drowned - by Isabella Welch
-
- playdate.4000.t:0 "Gözyaşları İçerisinde"
- playdate.4000.desc:0 "Üzgünlüğü her hâlinden belli olan bir haberci, elinde siyah bir kutuyla huzuruma çıkıyor.\n\n[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('drowned_participant'))|U] [drowned_participant.GetFirstNameNoTooltip], arkadaşı [host.GetTitledFirstName] ile oynarken boğularak hayatını kaybetmiş.\n\nYanında taşıdığı kutunun içinde baktığımda gözyaşlarıma hâkim olamıyorum. Anlık bir bakış, cansız bedeninin kutuda olduğunu anlamama yetiyor."
- playdate.4000.a:0 "Umarım şu an olduğu yerde oyunlar oynuyordur."
- playdate.4000.b:0 "Masumiyet ölümcül bir zehir gibi."
- playdate.4000.c:0 "[host.GetTitledFirstNameNoTooltip] aynı kaderi paylaşmalı."
-
- playdate.4001.t:1 "Dil Engeli"
- playdate.4001.desc.rowdy:0 ""Yahu #EMP "bal"#! diyorum #EMP "bol"#! değil! Off!" [participant.GetTitledFirstName] aramızdaki dil engelinden iyice bıkmışa benziyor. Ellerini havaya kaldırmış bir şekilde, her an patlamaya hazır görünüyor."
- playdate.4001.desc.pensive:0 ""Eh şey... #EMP Konak#! demek istemiştim. Kız mütevazı konağına geri dönmüş, mütecaviz konuğuna değil." Tüm nezaketine rağmen, [participant.GetTitledFirstName] kaşlarını çatmış bir şekilde bana bakıyor."
- playdate.4001.desc:0 "\n\n[ROOT.Char.GetCulture.GetLanguage.GetName] ve [participant.GetCulture.GetLanguage.GetName] dilleri gerçekten de birbirinden çok farklı, bu sebeple anlaşmakta sorunlar yaşıyoruz.\n\nBelki de konuşmadan oynayabileceğimiz bir şeyler bulmalıyım veya sorunun kendi kendine çözülmesini beklemeliyim?"
- playdate.4001.a:0 "Bağırarak yavaşça konuşursam beni anlayacağından eminim!"
- playdate.4001.b:0 "Belki de [participant.GetFirstNameNoTooltip] bana biraz [participant.GetCulture.GetLanguage.GetNameNoTooltip] öğretebilir?"
- playdate.4001.c:0 "Kim uğraşacak şimdi, sadece biraz eğlenmek istiyorum!"
-
+  
+ playdate.3006.t: "Okuma Arkadaşı"
+ playdate.3006.desc: "Hep yaptığım gibi yanımda küçük bir kitap getirdim. Birkaç sayfa okumuşken [fellow_nerd.Custom2('MyCharacterIntroduction', ROOT.Char)|U] beni buluyor.\n\n"#EMP [SCOPE.Custom('RandomInformativeTextName')|U]#! değil mi o? Daha yeni okudum, nasıl sence?""
+ playdate.3006.a: "Güzelce konuşalım!"
+ playdate.3006.b: "Git başımdan, okuyorum."
+  
+ playdate.3007.t: "Tırmanış"
+ playdate.3007.desc: "[participant.Custom2('MyCharacterIntroduction', ROOT.Char)|U] yakındaki en yüksek [ROOT.Char.Custom('ObjectToClimb')] tırmandı ve kendisini takip etmem için beni çağırıyor.\n\nBir [ROOT.Char.Custom('ObjectToClimb')] ilk kez tırmanmayacağım tabii ama bu gerçekten de yüksek görünüyor..."
+ playdate.3007.a: "Pes edemem!"
+ playdate.3007.a.success: "Tırmandınız"
+ playdate.3007.a.failure: "Kötü bir şekilde düştünüz"
+ playdate.3007.b: "Yok, burada iyiyim."
+  
+ playdate.3008.t: "Yüzme"
+ playdate.3008.desc: "[participant.Custom2('MyCharacterIntroduction', ROOT.Char)|U] doğrudan [ROOT.Char.Custom('IndefiniteBodyOfWater')] kıyısına gidip tereddüt etmeden içine atladı.\n\nEğlenirken birden su altında kaybolunca herkes çığlık atmaya başladı. Zaman geçtikçe kendi başına tekrar yukarı yüzemeyeceğini anladım."
+ playdate.3008.a: "Bekle, geliyorum!"
+ playdate.3008.a.success: "[participant.GetFirstNameNoTooltip] sizin tarafınızdan kurtarıldı"
+ playdate.3008.a.failure: "Yetişemediniz"
+ playdate.3008.a.critical_failure: "Neredeyse boğulacaktınız"
+ playdate.3008.b: "Lütfen biri yardım etsin!"
+ playdate.3008.b.success: "Biri duyup geldi"
+ playdate.3008.b.failure: "Yardım edecek kimse gelmedi"
+ playdate.3008.c: "Evine gitmiş olmalı..."
+  
+ playdate.3009.t: "Kar"
+ playdate.3009.desc_two: "[participant.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ve [to_blame.Custom2('MyCharacterIntroduction', ROOT.Char)] arkası dönük dururlarken avuçlarımı karla doldurup sessizce yaklaşıyorum. [participant.GetFirstNameNoTooltip] tam dönecekken saldırıyorum."
+ playdate.3009.desc_opening: "[participant.Custom2('MyCharacterIntroduction', ROOT.Char)|U] arkası dönük dururken avuçlarımı karla doldurup sessizce yaklaşıyorum, tam dönecekken saldırıyorum."
+ playdate.3009.desc: "\n\nÇığlık atıyor ama hemen karşılık vermeye hazırlanıyor. Kaçmaya başlıyorum ve elinde koskocaman bir kar topuyla beni takip ediyor!"
+ playdate.3009.a: "Geri çekilmeyeceğim!"
+ playdate.3009.a.success: "Kar topu savaşını kazandınız"
+ playdate.3009.a.failure: "Kafanıza kar topu yediniz"
+ playdate.3009.b: "Lütfen, acı bana!"
+ playdate.3009.c: "[to_blame.GetFirstNameNoTooltip] yaptı ben değil!"
+ playdate.3009.c.success: "[participant.GetFirstNameNoTooltip] size inandı"
+ playdate.3009.c.failure: "Yalan söylediğinizi anladı"
+  
+ playdate.3010.t: "Pazar"
+ playdate.3010.desc: "[participant.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ve ben, ticaretin önemli bir beceri olduğu konusunda hemfikiriz. Bu nedenle pazarlardan birini ziyaret etmeye karar verdik.\n\nPara olarak sadece birkaç küçük taşımız var ama #EMP cidden#! parlaklar!"
+ playdate.3010.a: "Şey, bir eşya satın almak istiyorum lütfen."
+ playdate.3010.a.success: "Tüccarı ikna ettiniz"
+ playdate.3010.a.failure: "Tüccar sizi kovaladı"
+ playdate.3010.b: "Ne istediğimi bana vermek zorundasın! Ben bir #EMP [Select_CString(ROOT.Char.IsFemale, 'leydiyim', 'lordum' )]#!!"
+ playdate.3010.c: "Kendi tezgâhımızı kuralım!"
+ playdate.3010.c.tt: "Bazı tüccarlar sizi eğlendirecek ve taşlarınızı birkaç yaprak parçasıyla alacak"
+  
+ playdate.3011.t: "Evcilik"
+ playdate.3011.desc: "[participant.Custom2('MyCharacterIntroduction', ROOT.Char)|U] elinde bir yığın kumaşla geliyor. Yere attığında yetişkinlerin giydiği kıyafetler olduğunu görüyorum.\n\n"Hadi evcilik oynayalım!""
+ playdate.3011.a: "Anne baba olursak oynarım!"
+ playdate.3011.b: "Olur ama [disliked_participant.GetFirstNameNoTooltip] köpek olmak zorunda!"
+ playdate.3011.c: "Hayır, evcilik çocuk oyunu. Satranç oynayalım."
+ playdate.3011.c.tt: "[THIS.Char.Custom('education_focus_child')] sanatındaki çalışmalarınızı ilerletiyorsunuz"
+  
+ playdate.3012.t: "Cesur $knight_culture_player_plural_no_tooltip$"
+ playdate.3012.desc_knight: "$knight_culture_player_plural_no_tooltip$ avluda talim yaparken [participant.Custom2('MyCharacterIntroduction', ROOT.Char)] ve ben de onları izliyoruz. [knight.Custom2('MyCharacterIntroduction', ROOT.Char)|U] gülümseyerek yanımıza geliyor."
+ playdate.3012.desc_no_knight: "[participant.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ile avluda köylülerin talim yapmasını izlerken aralarından biri gülümseyerek yaklaşıyor."
+ playdate.3012.desc: "\n\n"Ne dersiniz [participant.Custom('GirlsBoysChildren')], bir şeyler öğrenmek ister misiniz?""
+ playdate.3012.a: "#EMP Evet!#!"
+ playdate.3012.a.success: "Başarıyla öğrendiniz"
+ playdate.3012.a.neutral: "Ne kadar uğraşırsanız uğraşın öğrenemediniz"
+ playdate.3012.a.failure: "Kafanıza #EMP sert#! bir darbe aldınız"
+ playdate.3012.b: "Sizi izlemeyi tercih ederim."
+  
+ playdate.3013.t: "Bilge [Select_CString(witch.IsFemale, 'Kadın', 'Adam' )]"
+ playdate.3013.desc: "Ormanda oynarken birden kendimi yapayalnız buluyorum. Az önce arkamdaydılar, nereye gittiler ki!?\n\nBeni bulmaları için – yoksa #EMP korkak#! değilim – tam çığlık atmaya başlayacakken – siyah pelerinli [witch.Custom2('MyCharacterIntroduction', ROOT.Char)] ile karşılaşıyorum. Eğilip yerdeki garip görünen bir bitkiyi inceliyor, yanındaki büyük siyah ciltli kitaptakiyle karşılaştırıyor.\n\n"Merhaba küçük [Select_CString(ROOT.Char.IsFemale, 'leydim', 'lordum' )]. Bilginin çağrısı mı getirdi buraya sizi?""
+ playdate.3013.a: "Sadece elindeki bitki ne diye merak ediyorum."
+ playdate.3013.a.success: "Otlar ve bitkiler hakkında çok şey öğrendiniz"
+ playdate.3013.a.failure: "Ne dediği hakkında hiçbir fikriniz yok"
+  #AGOT Modified 
+ #playdate.3013.b: "Yes, teach me everything you can!"
+ playdate.3013.b: "Geleceği gördüğün söyleniyor...?"
+ playdate.3013.c: "Cadısın sen! Kötü birisisin."
+  
+ playdate.3014.t: "[priest.GetCouncilTitle|U]"
+ playdate.3014.desc_participant: "Yerel [ROOT.Char.GetFaith.HouseOfWorship] içinde [participant.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ile geziyoruz. Bir süre sonra parşömenlerle çevrili olan [priest.Custom2('MyCharacterIntroduction', ROOT.Char)] ile karşılaşıyoruz.\n\n"Çok uzun zaman önce yazılmış günlükler bunlar, ilginizi çekiyor mu?""
+ playdate.3014.desc: "Yerel [ROOT.Char.GetFaith.HouseOfWorship] içinde gezerken parşömenlerle çevrili olan [priest.Custom2('MyCharacterIntroduction', ROOT.Char)|U] ile karşılaşıyorum.\n\n"Çok uzun zaman önce yazılmış günlükler bunlar, ilgini çekiyor mu?""
+ playdate.3014.a: "Evet! Öğret bana."
+ playdate.3014.a.success: "Günlük yazma sanatını öğrendiniz"
+ playdate.3014.a.neutral: "Birkaç şey öğrendiniz"
+ playdate.3014.a.tt: "[ROOT.Char.Custom('education_focus_child')] sanatındaki çalışmalarınızı ilerletiyorsunuz"
+ playdate.3014.a.tt_participant: "[participant.GetFirstNameNoTooltip] ve siz [ROOT.Char.Custom('education_focus_child')] sanatındaki çalışmalarınızı ilerletiyorsunuz"
+ playdate.3014.a.failure: "Hiçbir şey öğrenmediniz"
+ playdate.3014.b: "Hayır, maceralar anlat!"
+  
+ # Learning your child drowned - by Isabella Welch 
+  
+ playdate.4000.t: "Gözyaşları İçerisinde"
+ playdate.4000.desc: "Üzgünlüğü her hâlinden belli olan bir haberci, elinde siyah bir kutuyla huzuruma çıkıyor.\n\n[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('drowned_participant'))|U] [drowned_participant.GetFirstNameNoTooltip], arkadaşı [host.GetTitledFirstName] ile oynarken boğularak hayatını kaybetmiş.\n\nYanında taşıdığı kutunun içinde baktığımda gözyaşlarıma hâkim olamıyorum. Anlık bir bakış, cansız bedeninin kutuda olduğunu anlamama yetiyor."
+ playdate.4000.a: "Umarım şu an olduğu yerde oyunlar oynuyordur."
+ playdate.4000.b: "Masumiyet ölümcül bir zehir gibi."
+ playdate.4000.c: "[host.GetTitledFirstNameNoTooltip] aynı kaderi paylaşmalı."
+  
+ playdate.4001.t: "Dil Engeli"
+ playdate.4001.desc.rowdy: ""Yahu #EMP "bal"#! diyorum #EMP "bol"#! değil! Off!" [participant.GetTitledFirstName] aramızdaki dil engelinden iyice bıkmışa benziyor. Ellerini havaya kaldırmış bir şekilde, her an patlamaya hazır görünüyor."
+ playdate.4001.desc.pensive: ""Eh şey... #EMP Konak#! demek istemiştim. Kız mütevazı konağına geri dönmüş, mütecaviz konuğuna değil." Tüm nezaketine rağmen, [participant.GetTitledFirstName] kaşlarını çatmış bir şekilde bana bakıyor."
+ playdate.4001.desc: "\n\n[ROOT.Char.GetCulture.GetLanguage.GetName] ve [participant.GetCulture.GetLanguage.GetName] dilleri gerçekten de birbirinden çok farklı, bu sebeple anlaşmakta sorunlar yaşıyoruz.\n\nBelki de konuşmadan oynayabileceğimiz bir şeyler bulmalıyım veya sorunun kendi kendine çözülmesini beklemeliyim?"
+ playdate.4001.a: "Bağırarak yavaşça konuşursam beni anlayacağından eminim!"
+ playdate.4001.b: "Belki de [participant.GetFirstNameNoTooltip] bana biraz [participant.GetCulture.GetLanguage.GetNameNoTooltip] öğretebilir?"
+ playdate.4001.c: "Kim uğraşacak şimdi, sadece biraz eğlenmek istiyorum!"
+  
  playdate.5001.t: "Çık ve Oyna?"
  playdate.5001.desc: "Yanımdan bir top geçiyor ve [participant.GetFirstName] onu tutuyor.\n\n"Bizimle oynamak ister misin? Topumuz var, bir oyuncu daha olsa iyi olurdu."\n\nUfak çocuk grubu beklentili bir şekilde etrafımda toplanıyor."
  playdate.5001.a: "Olur!"
  playdate.5001.a.tt: "Oyun başlıyor!"
  playdate.5001.b: "Pek canım istemiyor aslında..."
-
+  
  playdate.5002.t: "Kötü Vuruş"
  playdate.5002.desc: "Top yanımdan tuhaf bir şekilde geçiyor, duvardan sekiyor... ve bahçeye giriyor! Hemen ardından ise bir kırılma sesi ve çığlık duyuluyor.\n\n[neighbour.GetFirstName] kapıdan çıkıyor elinde ise hasar gören [broken_artifact.GetName] var. Kalabalığa baktıktan sonra beni suçlu olarak görüyor.\n\n"Kendini nasıl savunacaksın seni sümüklü şımarık velet?" diyor. Destek için etrafımdakilere bakıyorum. Kimse yardımcı olmuyor."
  playdate.5002.a: ""[ROOT.Char.Custom2('RelationToMePossessive', SCOPE.sC('parent'))] ödeyecek!""
@@ -213,7 +213,7 @@
  playdate.5002.c: ""Özür dilerim. Topu geri alabilir miyiz?""
  playdate.5002.c.success: "Topu gülümseyerek geri veriyor"
  playdate.5002.c.failure: "Derin bir şekilde iç çektikten sonra topu geri veriyor"
-
+  
  playdate.5003.t: "Yetenekli Çocuk"
  playdate.5003.desc: "[other_child.GetFirstName] çok hızlı ve çok güçlü! Ne zaman onunla başa baş mücadele etmeye çalışsam başarısız oluyorum. Birazcık kenara çekilip onu oynarken izlerken bile kendimi nefes nefese buluyorum o ise avluda futbol topuyla koşuşturuyor.\n\nOnunla mücadele edebileceğim bir yöntem olmalı değil mi?"
  playdate.5003.a: "[other_child.GetFirstNameNoTooltip] bacaklarını korumuyor gibi görünüyor..."
@@ -221,7 +221,7 @@
  playdate.5003.b.success: "Mücadeleyi kazanıyorsunuz"
  playdate.5003.b.failure: "[other_child.GetFirstNameNoTooltip] sizin için fazla güçlü"
  playdate.5003.c: "Belki de izlemeye devam edersem bir şeyler öğrenebilirim."
-
+  
  playdate.5004.t: "Farklı Perspektif"
  playdate.5004.desc: "Topun peşinde güle oynaya koşuştururken yalnız biri gözüme çarpıyor.\n\n[other_child.GetFirstName], bir köşede yalnız başına oturmuş olan biteni utangaç bir şekilde izliyor. Benimle göz göze gelir gelmez bakışlarını kaçırıyor, sanki çiçeklere bakıyormuş gibi yapıyor.\n\nArkadaşlığıma ihtiyacı olabilir."
  playdate.5004.a: ""Sana katılmamda bir sakınca var mı?""
@@ -230,7 +230,7 @@
  playdate.5004.b.success: "Çekingen bir şekilde katılıyor"
  playdate.5004.b.failure: "Çabalarınızdan etkilenmiyor"
  playdate.5004.c: "Kendi hâline bıraksam iyi olur."
-
+  
  playdate.5005.t: "Büyük Duvar"
  playdate.5005.desc: "Top buradaymış! Tam yanımdan geçerken tüm gücümle topa abanıyorum. Biraz #EMP fazla#! abanıyorum.\n\nTop hızla havada dönerek ilerliyor. Seyircilerin üstünden geçiyor ve bir duvarı aşıyor. Düşüşünden gelen ses pek iç açıcı değil.\n\nDuvara bakıyorum. Oldukça uzun, boyumun iki katından fazla."
  playdate.5005.ending: "İstediğimden fazla uzun açıkçası. Yapabileceğim şeyleri düşünürken [bullied_kid.GetFirstName] gözüme çarpıyor, birazcık uzağımızda oturuyor. Duvar dışında her yere bakmak için elinden geldiğince çabalıyor."
@@ -244,7 +244,7 @@
  playdate.5005.b.critfailure: "Tırmanmayı beceremiyor ve düşüyorsunuz"
  playdate.5005.c: "Yapacak başka bir şey bulalım olur mu?"
  playdate.5005.more_balls: "Başka bir top alacağım!"
-
+  
  playdate.5006.t: "Eve Dönüyorum!"
  playdate.5006.desc: "Futbol maçı biraz fazla rekabetçi olmaya başlıyor. Düşünce kafamda oluşmaya başladığında bir olay daha oluyor [ball_kid.GetFirstName], [bully_kid.GetFirstName] tarafından aldığı darbe sonucu yakındaki bir çalıya yuvarlanıyor. [bully_kid.GetFirstNameNoTooltip], gülmeye başlıyor.\n\n"Y- yeter be!" diyor [ball_kid.GetFirstNameNoTooltip] öfkeli bir şekilde kendini çalıdan kurtarırken. Kendini kurtardığı gibi topu eline alıyor. "Eve dönüyorum ve topumu da yanımda götürüyorum!"\n\nBir anda sessizlik çöküyor."
  playdate.5006.a: ""Özür dilerim, [ball_kid.GetFirstNameNoTooltip].""
@@ -254,7 +254,7 @@
  playdate.5006.b.failure: "Yine de gidiyor"
  playdate.5006.c: "Sessiz kalsam iyi olur."
  playdate.5006.d: ""Topu burada bırakıyorsun. Artık bizim.""
-
+  
  playdate.5007.t: "Zorbalığa Uğramak"
  playdate.5007.desc: "Gürültülü bir kahkaha yayılıyor. Avlunun benim için diğer ucunda [sad_kid.GetFirstName], [bully_kid.GetFirstName] tarafından zorbalığa uğruyor.\n\n"Bir futbol topuna bile vuramıyor! Kim bu [sad_kid.Custom('InsultNoun')] ile arkadaş olmak ister ki!"\n\n[sad_kid.GetFirstNameNoTooltip], ağlamak üzere bir şekilde etrafına destek için bakıyor fakat pek bir şey bulamıyor gibi."
  playdate.5007.a: ""Onu yalnız bırak!""
@@ -263,12 +263,12 @@
  playdate.5007.a.failure: "[bully_kid.GetFirstNameNoTooltip] blöfünüzü anlıyor ve sizi dövüyor"
  playdate.5007.b: ""#EMP Ben#! isterdim.""
  playdate.5007.c: "Buna bulaşmasam iyi olur."
-
+  
  playdate.5008.t: "Ah Şu Yetişkinler"
  playdate.5008.desc: ""[old_timer.GetFaith.HighGodName] aşkına, biraz #EMP susar#! mısın artık?" [old_timer.GetFirstName], üstümüzdeki bir pencereden sarkıp elini sallıyor. "Siz veletler o kadar gürültü yapıyorsunuz ki! Ne #EMP düşündüğümü#! bile anlamıyorum!"\n\nBana gelirken topu elime alıyorum ve bize bağıran kişiye bakıyorum. Gerçekten de oldukça #EMP yaşlı:#! belki de otuz ya da kırk yaşında!\n\nSinirli olmamasına şaşmamak lazım."
  playdate.5008.a: ""Kapa çeneni, seni deli bunak!""
  playdate.5008.b: ""Özür dileriz. Daha sessiz olacağız.""
-
+  
  playdate.5009.t: "Şiddetli Ayaklar"
  playdate.5009.desc: "Çocuk olsak da futbol bazen gerçekten de sert bir oyun olabiliyor. Eğlenceli bir maç olarak başlayan şey şimdi bildiğin kavgaya döndü, kendime gelmem birkaç saniye sürüyor.\n\nKendime geldiğimde kavga eden çocukların arasından keskin, acı ve korku dolu bir çığlık duyuyorum. En aşağıda kalan [small_kid.GetFirstName] gözüme çarpıyor, herkesin ayağının altında eziliyor. Acınacak bir şekilde ağlıyor fakat tüm gürültü çok fazla ve diğer herkes maça fazla kendini vermiş durumda."
  playdate.5009.a: ""[small_kid.GetFirstNameNoTooltip]! Dayan, geliyorum!""
@@ -282,7 +282,7 @@
  playdate.5009.c: ""Herkes, #EMP DURSUN!#!""
  playdate.5009.c.success: "Kavga eden futbolcular dikkatini size veriyor"
  playdate.5009.c.failure: "Sözlerinizi kimse umursamıyor"
-
+  
  playdate.5010.t: "Aslanım Benim!"
  playdate.5010.desc: ""Yakala onu! Duvara it! İşte böyle!" [obnoxious_parent.GetFirstName] ve kulak yırtan çığırışları tüm avluda yayılmış durumda. Bir köşeye bekleyen [embarrassed_child.GetFirstName] futbol oynarken onu izliyor, çocuğa olan taraflılığı oldukça bariz.\n\nŞüphe yok ki [obnoxious_parent.GetFirstNameNoTooltip] bu oyunu #EMP biraz#! fazla ciddiye alıyor.\n\n"Hey! İtmek yok, hile yapmayın!" [obnoxious_parent.GetFirstNameNoTooltip] ve tavırları artık can sıkmaya başladı."
  playdate.5010.a: "Kolları biraz fazla savruluyor gibi..."
@@ -297,108 +297,108 @@
  scratched_and_bruised_desc: "Bu çocuk muhtemelen biraz sert bir oyun sonu yara bere içinde kalmış."
  you_perspective_increase_wounds_children_no_death_effect: "[GetModifier('scratched_and_bruised').GetNameWithTooltip] ya da [GetTrait('wounded_1').GetName( GetNullCharacter )] kazanacaksınız"
  other_perspective_increase_wounds_children_no_death_effect: "[wound_target.GetShortUIName], [GetModifier('scratched_and_bruised').GetNameWithTooltip] ya da [GetTrait('wounded_1').GetName( GetNullCharacter )] kazanacak"
-
+  
  playdate.5011.t: "Biraz Kandırmaca"
  playdate.5011.desc: "Etrafımda endişeli çocuklar toplanmışken elimden geldiğince numarayı devam ettirmeye çalışıyorum bu sırada, [obnoxious_parent.GetFirstName] gözleri yuvasından fırlayacakmış gibi bana bakıyor.\n\n"Seni minik... #EMP şarlatan!#!" diye gürlüyor, parmağıyla beni işaret ederken. "Senin—"\n\n"[obnoxious_parent.GetFirstNameNoTooltip]!" diye öfkeli bir çığlık duyuyorsunuz. [responsible_adult.GetFirstName] avluya girerken [obnoxious_parent.GetFirstNameNoTooltip] adlı kişinin beti benzi atıyor. "Neler oluyor burada?"\n\nBu durumu avantajıma kullanıyorum ve böylelikle yüzümdeki aşağılayıcı gülümsemeyi sadece [obnoxious_parent.GetFirstNameNoTooltip] görebiliyor."
  playdate.5011.a: ""Off, çok acıyor! Offff!""
  playdate.5011.b: "Muhtemelen doğruyu söylesem iyi olur..."
-
- playdate.9001.t:1 "Eğlencenin Sonu"
- playdate.9001.desc:0 "Bir süreliğine de olsa sorumluluklarımı unutup diğer çocuklarla vakit geçirmek zevkliydi. Fakat eğlencenin sona erdiğini, artık görevlerime geri dönmem gerektiğini söylediler...\n\nGerçekten de çok iyi vakit geçirdik. Umarım yakın zamanda tekrar toplanabiliriz."
- playdate.9001.a:0 "Görüşmek üzere!"
-
- playdate.9002.t:1 "Eve Dönüş"
- playdate.9002.desc:0 "Ne eğlendik ama! [host.GetTitledFirstName] ile geçirdiğim günleri uzun zaman boyunca unutmayacağım.\n\nEşyalarımı toplayıp görevlerime, evime geri dönmem gerektiğini söylediler ama yakın zamanda tekrar toplanabiliriz diye umuyorum."
- playdate.9002.a:0 "Görüşürüz [host.GetFirstNameNoTooltip]!"
-
+  
+ playdate.9001.t: "Eğlencenin Sonu"
+ playdate.9001.desc: "Bir süreliğine de olsa sorumluluklarımı unutup diğer çocuklarla vakit geçirmek zevkliydi. Fakat eğlencenin sona erdiğini, artık görevlerime geri dönmem gerektiğini söylediler...\n\nGerçekten de çok iyi vakit geçirdik. Umarım yakın zamanda tekrar toplanabiliriz."
+ playdate.9001.a: "Görüşmek üzere!"
+  
+ playdate.9002.t: "Eve Dönüş"
+ playdate.9002.desc: "Ne eğlendik ama! [host.GetTitledFirstName] ile geçirdiğim günleri uzun zaman boyunca unutmayacağım.\n\nEşyalarımı toplayıp görevlerime, evime geri dönmem gerektiğini söylediler ama yakın zamanda tekrar toplanabiliriz diye umuyorum."
+ playdate.9002.a: "Görüşürüz [host.GetFirstNameNoTooltip]!"
+  
  playdate_saved_from_bully_log_title: "Herkese Karşı Birlikte"
  playdate_saved_from_bully_log: "[CHARACTER.GetTitledFirstName], [TARGET_CHARACTER.GetTitledFirstName] adlı kişiyi alt tabakadan birinin zorbalığından kurtardı ve arkadaş oldular"
-
+  
  playdate_joined_beating_log_title: "Zorbalığa Katıldı"
  playdate_joined_beating_log: "[CHARACTER.GetTitledFirstName], köylü bir kız [TARGET_CHARACTER.GetTitledFirstName] adlı kişiye zorbalık yaparken katıldı"
-
+  
  activity_generic_friend_log_title: "Gerçek Arkadaşlık"
  activity_generic_friend_log: "[CHARACTER.GetTitledFirstName] ve [TARGET_CHARACTER.GetTitledFirstName] sıkı arkadaş oldular"
-
+  
  activity_generic_rival_log_title: "Bir Rekabetin Doğuşu"
  activity_generic_rival_log: "[CHARACTER.GetTitledFirstName] ve [TARGET_CHARACTER.GetTitledFirstName] rakip oldular"
-
+  
  playdate_stole_pet_log_title: "Evcil Hayvanı Çalındı"
  playdate_stole_pet_log: "[CHARACTER.GetTitledFirstName], bir evcil hayvanı çaldıktan sonra [TARGET_CHARACTER.GetTitledFirstName] adlı kişinin korkulu rüyası oldu"
-
+  
  playdate_revealed_secret_log_title: "Sır Ortaya Çıkarıldı"
  playdate_revealed_secret_log: "[CHARACTER.GetTitledFirstName], [TARGET_CHARACTER.GetTitledFirstName] adlı kişinin en önemli sırlarından birini ağzından kaçırdı, bu da hemen herkesin arasında yayıldı"
-
+  
  hurt_while_climbing_log_title: "Tırmanma Sakatlığı"
  hurt_while_climbing_log: "[CHARACTER.GetTitledFirstName], boyundan büyük bir işe kalkışıp ağzının payını aldı"
-
+  
  playdate_excellent_climbing_log_title: "Etkileyici Tırmanış"
  playdate_excellent_climbing_log: "[CHARACTER.GetTitledFirstName], o kadar yükseğe tırmandı ki herkesi hayran bıraktı"
-
+  
  playdate_drowned_log_title: "Trajik Boğulma"
  playdate_drowned_log: "[CHARACTER.GetTitledFirstName], yüzmeye çalışırken çırpınmaya başladı ve boğuldu"
-
+  
  playdate_imaginary_currency_log_title: "Yeni Para Birimi"
  playdate_imaginary_currency_log: "[CHARACTER.GetTitledFirstName], bir tüccarı mallarına karşılık parlak taşlarını kabul etmeye ikna ederken ticaret yapmayı öğrendi"
-
+  
  playdate_avid_reader_log_title: "Kitap Kurdu"
  playdate_avid_reader_log: "[CHARACTER.GetTitledFirstName], başkalarıyla zaman geçireceğine tüm vaktini kitap okuyarak geçirdi"
-
+  
  playdate_trained_with_knights_log_title: "Şövalyelerle Talim Yaptı"
  playdate_trained_with_knights_log: "[CHARACTER.GetTitledFirstName] ve [TARGET_CHARACTER.GetTitledFirstName] yeni savaş teknikleri öğrenirken iyi bir eğitim aldılar"
-
+  
  playdate_training_injury_log_title: "Talim Sakatlığı"
  playdate_training_injury_log: "[CHARACTER.GetTitledFirstName], şövalyelere talimlerinde katılmaya çalıştı fakat başını yaraladı"
-
+  
  playdate_observed_knights_log_title: "Şövalyeleri İzledi"
  playdate_observed_knights_log: "[CHARACTER.GetTitledFirstName], talim yapan savaşçıları izledi ve böyle askerlerin nasıl yönetilmesi gerektiğini öğrendi"
-
+  
  playdate_learned_herbalism_log_title: "Botanik Öğrendi"
  playdate_learned_herbalism_log: "[CHARACTER.GetTitledFirstName], dışarıdaki yalnız oyunundan mantarlar hakkında konuşacak bolca şey ile döndü"
-
+  
  playdate_studied_ancient_tomes_log_title: "Antik Tomarlar Üzerine Çalıştı"
  playdate_studied_ancient_tomes_log: "[CHARACTER.GetTitledFirstName], yerel bir ibadethaneyi ziyaretinde tarih hakkında bilgiler edindi"
-
+  
  playdate_studied_ancient_tomes_together_log_title: "Tarih Öğrencileri"
- #AGOT Modified
+ #AGOT Modified 
  #playdate_studied_ancient_tomes_together_log: "[CHARACTER.GetTitledFirstName] ve [TARGET_CHARACTER.GetTitledFirstName], bir din insanından antik meseleler hakkında ders aldı"
- playdate_studied_ancient_tomes_together_log: "[CHARACTER.GetTitledFirstName] ve [TARGET_CHARACTER.GetTitledFirstName], yerel bir bilginden kadim bilgiler hakkında ders aldı" 
-
+ playdate_studied_ancient_tomes_together_log: "[CHARACTER.GetTitledFirstName] ve [TARGET_CHARACTER.GetTitledFirstName], yerel bir bilginden kadim bilgiler hakkında ders aldı"
+  
  playdate_kicked_in_shins_log_title: "Bacağa Tekme"
  playdate_kicked_in_shins_log: "[CHARACTER.GetTitledFirstName], dostane bir maç sırasında [TARGET_CHARACTER.GetTitledFirstName] tarafından tekmelendi"
-
+  
  playdate_outdid_skilled_player_log_title: "Yetenekli Oyuncuyu Yendi"
  playdate_outdid_skilled_player_log: "[CHARACTER.GetTitledFirstName], oldukça yetenekli olduğu bilinen [TARGET_CHARACTER.GetTitledFirstName] adlı kişiyi yenerek diğer tüm futbolcuların gözüne girdi"
-
+  
  playdate_became_friends_watching_football_log_title: "Seyirciler ve Arkadaşlar"
  playdate_became_friends_watching_football_log: "[CHARACTER.GetTitledFirstName] ve [TARGET_CHARACTER.GetTitledFirstName] birlikte heyecanlı bir futbol maçını izlerken arkadaş oldular"
-
+  
  playdate_encouraged_shy_player_log_title: "Utangaç Oyuncuyu Cesaretlendirdi"
  playdate_encouraged_shy_player_log: "[CHARACTER.GetTitledFirstName], kendi içine çekilmiş [TARGET_CHARACTER.GetTitledFirstName] adlı çocuğu oyuna katılması için başarılı bir şekilde ikna etti"
-
+  
  playdate_tricked_climber_log_title: "Topu Alması için Kandırıldı"
  playdate_tricked_climber_log: "[CHARACTER.GetTitledFirstName], [TARGET_CHARACTER.GetTitledFirstName] adlı zavallıyı topu alması için yüksek bir duvara tırmanmaya ikna etti"
-
+  
  playdate_hurt_climbing_wall_log_title: "Kötü Duvar Tırmanıcısı"
  playdate_hurt_climbing_wall_log: "[CHARACTER.GetTitledFirstName], fırlamış bir topu aramak için yüksek bir duvara tırmandı fakat inişi pek yumuşak olmadı"
-
+  
  playdate_convinced_ball_kid_log_title: "Futbol Kavgasını Durdurdu"
  playdate_convinced_ball_kid_log: "[CHARACTER.GetTitledFirstName], [TARGET_CHARACTER.GetTitledFirstName] adlı kişiyi sakinleştirip oyunu tekrar rayına soktu"
-
+  
  playdate_defeated_football_bully_log_title: "Zorbayı Korkuttu"
  playdate_defeated_football_bully_log: "[CHARACTER.GetTitledFirstName], müdahale edip [TARGET_CHARACTER.GetTitledFirstName] adlı kişinin zorbalığına son verdi"
-
+  
  playdate_injured_defending_victim_log_title: "Mağduru Korurken Yaralandı"
  playdate_injured_defending_victim_log: "[CHARACTER.GetTitledFirstName], bir çocuğu zorbalıktan korumaya çalışırken [TARGET_CHARACTER.GetTitledFirstName] tarafından dövüldü"
-
+  
  playdate_crippled_during_game_log_title: "Maç Sırasında Sakatlandı"
  playdate_crippled_during_game_log: "[CHARACTER.GetTitledFirstName], bir futbol maçı sırasında zavallı vücudu kaldıramayana kadar ezildi"
-
+  
  playdate_rescued_from_fray_log_title: "Futbolun Öfkesinden Kurtarıldı"
  playdate_rescued_from_fray_log: "[CHARACTER.GetTitledFirstName], [TARGET_CHARACTER.GetTitledFirstName] adlı kişiyi bir grup öfkeli sporcunun altında ezilmekten kurtardı"
-
+  
  playdate_failed_football_rescue_log_title: "Futbolcu Sürüsünün Altında Kaldı"
  playdate_failed_football_rescue_log: "[CHARACTER.GetTitledFirstName], [TARGET_CHARACTER.GetTitledFirstName] adlı kişiyi bir grup futbolcudan kurtarmaya çalıştı fakat başarısız oldu"
-
+  
  playdate_faked_injury_log_title: "Bilerek Düşmekle Suçlanmış"
  playdate_faked_injury_log: "[TARGET_CHARACTER.GetTitledFirstName] öfkeliyken, [CHARACTER.GetTitledFirstName] adlı kişinin "sakatlığı" yüzünden başı belaya girdikten sonra [CHARACTER.GetTitledFirstName] ve [TARGET_CHARACTER.GetTitledFirstName] rakip oldular"

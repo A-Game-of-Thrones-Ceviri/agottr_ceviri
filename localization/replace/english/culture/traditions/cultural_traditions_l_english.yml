@@ -395,6 +395,7 @@
  culture_parameter_wanderers_gain_extra_economic_skills: "[wanderers|E] zaman içinde [stewardship|E] ya da [lifestyle_traits|E] gibi ekstra ekonomik beceriler edinir"
  culture_parameter_mercenary_courtiers_gain_extra_skills: "[mercenary|E] [Concept( 'courts', 'Saraylarındaki' )|E] [knights|E] hızla [prowess|E] kazanır"
  culture_parameter_more_likely_to_leave_court: "Bir işi olmayan [courtiers|E] [wanderer|E] olmaya daha meyillidir"
+ culture_parameter_unlocks_contract_assistance: "#V $contract_assistance_interaction$ #! adresinin kilidini açar. [interaction|E]" #NT!
  culture_parameter_courtiers_less_likely_to_leave_same_culture_court: "Bir işi olmayan [courtiers|E], [Concept( 'liege', 'Süzerenleri' )|E] aynı kültürdense [wanderer|E] olmaya daha az meyillidir"
  culture_parameter_dislikes_marrying_outside_of_culture: "Diğer [Concept( 'cultures', 'Kültürlerle' )|E] [marriage|E] Kabul Edilirliği: #N -50#!"
  culture_parameter_ai_doesnt_marry_outside_culture: "Başka [Concept( 'cultures', 'Kültürlerle' )|E] [marriage|E] yapma olasılığı çok düşüktür"
@@ -526,8 +527,20 @@
  culture_parameter_can_make_republican_vassals: "Bu [Concept( 'culture', 'Kültürden' )|E] [rulers|E] en fazla #V [EmptyScope.ScriptValue('republican_vassal_interaction_limit')|0]#! olmak kaydıyla Bu [Concept( 'counts', 'Kontları' )|E] yerel şehirlerin yöneticisi olarak atayarak onları [republican|E] [vassal|E] hâline getirebilirler"
  culture_parameter_republican_vassals_pay_more: "[baron|E] ve üzeri seviye cumhuriyetçi [vassals|E] daha fazla [tax|E] ve [levy|E] sağlar"
  culture_parameter_characters_are_better_court_musicians: "Bu [Concept( 'culture', 'Kültürden' )|E] [characters|E] #high $court_musician_court_position$#! [Concept( 'court_position', 'Saray Pozisyonunda' )|E] daha başarılı olur"
+ culture_parameter_better_court_musicians: "[SelectLocalization( HasDlcFeature( 'royal_court' ), 'culture_parameter_better_court_musicians_has_dlc', 'culture_parameter_better_court_musicians_no_dlc' )]" #NT!
+ culture_parameter_better_court_musicians_has_dlc: "Kilidi aç #V [GetCourtPositionType('court_musician_court_position').GetName]#! [court_position|E] bir [title_tier|E] daha önce\n$EFFECT_LIST_BULLET$#V [GetCourtPositionType('court_musician_court_position').GetName]#! [court_position|E] aylık artışlar [prestige_i][prestige|E]" #NT!
+ culture_parameter_better_court_musicians_no_dlc: ""
+ court_position_musicians_free: "Geliştirilmiş #V [GetCourtPositionType('court_musician_court_position').GetName]#!" #NT!
  culture_parameter_characters_are_better_food_tasters: "Bu [Concept( 'culture', 'Kültürden' )|E] [characters|E] #high $food_taster_court_position$#! [Concept( 'court_position', 'Saray Pozisyonunda' )|E] daha başarılı olur"
+ culture_parameter_better_food_tasters: "[SelectLocalization( HasDlcFeature( 'royal_court' ), 'culture_parameter_better_food_tasters_has_dlc', 'culture_parameter_better_food_tasters_no_dlc' )]" #NT!
+ culture_parameter_better_food_tasters_has_dlc: "Kilidi aç #V [GetCourtPositionType('food_taster_court_position').GetName]#! [court_position|E] bir [title_tier|E] daha önce\n$EFFECT_LIST_BULLET$#V [GetCourtPositionType('food_taster_court_position').GetName]#! [court_position|E] aylık artışlar [prestige_i][prestige|E]" #NT!
+ culture_parameter_better_food_tasters_no_dlc: ""
+ court_position_food_tasters_free: "Geliştirilmiş #V [GetCourtPositionType('food_taster_court_position').GetName]#!" #NT!
  culture_parameter_characters_are_better_court_poets: "Bu [Concept( 'culture', 'Kültürden' )|E] [characters|E] #high $court_poet_court_position$#! [Concept( 'court_position', 'Saray Pozisyonunda' )|E] daha başarılı olur"
+ culture_parameter_better_court_poets: "[SelectLocalization( HasDlcFeature( 'royal_court' ), 'culture_parameter_better_court_poets_has_dlc', 'culture_parameter_better_court_poets_no_dlc' )]" #NT!
+ culture_parameter_better_court_poets_has_dlc: "Kilidi aç #V [GetCourtPositionType('court_poet_court_position').GetName]#! [court_position|E] bir [title_tier|E] daha önce\n$EFFECT_LIST_BULLET$#V [GetCourtPositionType('court_poet_court_position').GetName]#! [court_position|E] aylık artışlar [prestige_i][prestige|E]" #NT!
+ culture_parameter_better_court_poets_no_dlc: ""
+ court_position_poets_free: "Geliştirilmiş #V [GetCourtPositionType('court_poet_court_position').GetName]#!" #NT!
   
  culture_parameter_frugal_blacksmith_maa_size: "#V $building_type_smiths_01$#! zincirindeki [buildings|E], #V [knight_i][knight|E]#! ve #V [men_at_arms|E] [regiment|E]#! sayısını arttırır"
  culture_parameter_warrior_lodges_lift_restrictions: "#V $building_type_warrior_lodges_01$#! zincirindeki [buildings|E], her zaman bu [Concept( 'culture', 'Kültürden' )|E] olan [Concept( 'counties', 'Kontluklarda' )|E] inşa edilebilir"
@@ -536,6 +549,7 @@
  culture_parameter_next_level_w_mills: "#V $building_type_watermills_01$#! ve #V $building_type_windmills_01$#! zincirlerindeki [buildings|E] bir [era|E] önceden inşa edilebilir"
  culture_parameter_next_level_smiths: "#V $building_type_smiths_01$#! zincirindeki [buildings|E] bir [era|E] önceden inşa edilebilir"
  culture_parameter_astute_diplomat_bonus: "[GetTrait('diplomat').GetName( GetNullCharacter )] [Concept( 'trait', 'Özelliği' )|E] ek faydalar sağlar"
+ culture_parameter_unlocks_purchase_truce: "#V $purchase_truce_interaction$ #! adresinin kilidini açar. [interaction|E]" #NT!
  culture_parameter_collective_lands_farms_bonuses: "#V $building_type_cereal_fields_01$#! zincirindeki [buildings|E], [stationed|E] [men_at_arms|E] faydaları sağlar"
  culture_parameter_peasant_leader_is_inherited: "Yetişkinliğe erişildiğinde [GetTrait('peasant_leader').GetName( GetNullCharacter )] [Concept( 'trait', 'Özelliği' )|E] alınır"
  culture_parameter_watermills_windmills_cities: "#V $building_type_watermills_01$#!, #V $building_type_windmills_01$#! veya #V $building_type_caravanserai_01$#! zincirlerindeki [buildings|E], #V $innovation_windmills$#! [Concept( 'innovation', 'Buluşu' )|E] açıldığında [Concept( 'city_holdings', 'Şehir Yerleşimlerinde' )|E] inşa edilebilir"
@@ -723,7 +737,7 @@
  culture_parameter_trade_ports_stationed_maa_bonus: "#V $building_type_common_tradeport_01$#! zincirindeki [buildings|E], [stationed|E] [Concept( 'men_at_arms', 'Düzenli Askerlere' )|E] ekstra faydalar sağlar"
   
  culture_parameter_building_barracks_piety_bonuses: "Bu [Concept( 'culture', 'Kültürden' )|E] karakterler #V $building_type_barracks_01$#! zincirindeki [buildings|E]dan [piety_i][piety|E] elde eder"
- culture_parameter_can_build_quarries_in_hills: "#V $building_type_quarries_01$#! zincirindeki [buildings|E] her zaman bu [Concept( 'culture', 'Kültürden' )|E] olan [Concept( 'counties', 'Kontluklarda' )|E] inşa edilebilir"
+ culture_parameter_can_build_quarries_everywhere: "#V $building_type_quarries_01$ #! [buildings|E] satırı her zaman bu [counties|E] içinde oluşturulabilir [culture|E]" #NT!
  culture_parameter_better_armory_buildings: "#V $building_type_royal_armory_01$#! tipi [buildings|E] bu [Concept( 'culture', 'Kültürden' )|E] olan [Concept( 'counties', 'Kontluklarda' )|E] ekstra faydalar sağlar"
  culture_parameter_better_blacksmith_buildings: "#V $building_type_blacksmiths_01$#! tipi [buildings|E] bu [Concept( 'culture', 'Kültürden' )|E] olan [Concept( 'counties', 'Kontluklarda' )|E] ekstra faydalar sağlar"
  CHARACTER_INTERACTION_MYSTICAL_ANCESTORS_DISINHERIT: "[Concept( 'culture', 'Kültürünüzün' )|E] [Concept( 'traditions', 'gelenekleri' )|E], [Concept( 'dynasty_members', 'hanedan mensuplarınızı' )|E] [Concept( 'disinherit', 'verasetten men' )|E] etmenizi engelliyor"
@@ -1323,4 +1337,6 @@
  tradition_brewery_name: "Bira Kültürü"
  tradition_brewery_desc: "Bu kültürde, bira üretmek ve içmek hem şenliklerde hem de günlük hayatta önemli bir rol oynar."
  culture_in_farm_or_mansion_count_desc: "[culture|E], #color_white $building_type_cereal_fields_01$#! veya #color_white $building_type_farm_estates_01$#! [Concept( 'buildings', 'Binalarına' )|E] sahip en az #V 5#! [Concept( 'counties', 'Kontlukta' )|E] yok"
+  
+ can_appoint_chief_eunuch_name_tt: "[root_scope.GetCulture.GetName] [culture|E] aşağıdakilerden birine sahiptir [traditions|E]:\n\t$EFFECT_LIST_BULLET$[GetCultureTradition('tradition_court_eunuchs').GetName]\n\t$EFFECT_LIST_BULLET$[GetCultureTradition('tradition_byzantine_succession').GetName]\n\t$EFFECT_LIST_BULLET$[GetCultureTradition('tradition_ep3_palace_politics').GetName]" #NT!
   

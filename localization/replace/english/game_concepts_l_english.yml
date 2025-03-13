@@ -224,9 +224,9 @@
  game_concept_agent_discovery_desc: "Açığa çıkarılmış [secret_scheme|E] [agents|E] [Concept( 'lieges', 'Süzerenleri' )|E] tarafından [criminals|E] olarak kabul edilir ve [imprisoning|E] muhtemeldir."
  game_concept_scheme_discovery_chance: "Plan Keşfetme Olasılığı"
  game_concept_scheme_discovery_chance_desc: "Size veya sizin saray mensuplarınıza karşı herhangi bir [secret_scheme|E] keşfetme olasılığınız."
- game_concept_scheme_odds: "Plan Oranları"
- game_concept_scheme_odds_odds: "Oranlar"
- game_concept_scheme_odds_desc: "Başarılı bir $game_concept_scheme$'a birçok faktör girer, bunlardan bazıları başlayana ve [agents|E] işe alınana kadar bilinemez.\n\n$game_concept_scheme_odds_odds$, bir $game_concept_scheme$'ın tahmini zorluğunu gösterir — herhangi bir $game_concept_scheme$ mümkün olsa da, çoğu maliyetli olabilir.\n\n$game_concept_scheme_odds_odds$'nin beş seviyesi şunlardır:\n$EFFECT_LIST_BULLET$$scheme_odds_prediction_level_excellent$ #WEAK — kolay, hızlı ve sessiz olma olasılığı yüksektir[agents|E]7\n$EFFECT_LIST_BULLET$$scheme_odds_prediction_level_high$ #WEAK — gereken asgari çabadır[agents|E]7\n$EFFECT_LIST_BULLET$$scheme_odds_prediction_level_medium$ #WEAK — birkaç rüşvet gerekebilir[agents|E]7\n$EFFECT_LIST_BULLET$$scheme_odds_prediction_level_low$ #WEAK — başarı garantili[agents|E]7\n$EFFECT_LIST_BULLET$$plan_oranları_tahmin_seviyesi_berbat$ #WEAK — başarısızlık olasıdır, altın zorunludur[agents|E]7"
+ game_concept_predicted_scheme_difficulty: "Öngörülen Şema Zorluğu" #NT!
+ game_concept_predicted_difficulty: "Tahmini Zorluk" #NT!
+ game_concept_predicted_scheme_difficulty_desc: "Başarılı bir [scheme|E] için birçok faktör vardır ve bunlardan bazıları [agents|E] başlayana ve işe alınana kadar bilinemez.\n\nHerhangi bir $game_concept_scheme$ mümkün olsa da, çoğu maliyetli olabilir.\n\nBeş zorluk seviyesi şunlardır:\n$EFFECT_LIST_BULLET$$scheme_odds_prediction_level_excellent$ #WEAK - kolay, hızlı ve sessiz olması muhtemeldir#!\n$EFFECT_LIST_BULLET$$scheme_odds_prediction_level_high$ #WEAK - minimum çaba gerekli#!\n$EFFECT_LIST_BULLET$$scheme_odds_prediction_level_medium$ #WEAK - birkaç rüşvet gerekebilir#!\n$EFFECT_LIST_BULLET$$scheme_odds_prediction_level_low$ #WEAK - başarı pahalı olacaktır#!\n$EFFECT_LIST_BULLET$$scheme_odds_prediction_level_abysmal$ #WEAK - başarı pek olası değildir ve maliyetlidir#!" #NT!
  game_concept_prevented_murder: "Önlenmiş Cinayet"
  game_concept_prevented_murder_prevent: "Önleme"
  game_concept_prevented_murder_desc: "Nadiren, [GetScheme('murder').GetTypeName] planının hedefinde olan kişinin hayatındaki belli durumlar durumlar [Concept( 'scheme', 'Planın' )|E] son aşamalarında başarısız olmasına sebep olabilir. Böyle durumlar başarı ihtimalini geçersiz sayar."
@@ -630,6 +630,7 @@
  game_concept_mercenary_i: "@government_type_mercenary!"
  game_concept_mercenary_company_desc: "[mercenaries|E] [gold|E] karşılığı kiralanıp savaşan [soldiers|E]dir. Paralı asker [armies|E] farklı büyüklükte olabilir, farklı [men_at_arms|E] türleri içerebilir ve farklı sayıda [knight|E]ye sahip olabilir.\n\nParalı askerler #V [GetDefine('NMercenary', 'HIRE_MONTHS')] aylık#! sözleşmeler ile kiralanır ve hâlâ [Concept( 'war', 'Savaştaysanız' )|E] sözleşmeyi #V [GetDefine('NMercenary', 'HIRE_MONTHS')] ay#! daha uzatabilirsiniz. Paralı asker sözleşmeleri birlikleri terhis etseniz bile devam eder, sözleşme bitene kadar herhangi bir maliyet olmadan tekrar paralı askerleri toplayabilirsiniz.\n\nParalı asker kiralamak için [Concept( 'debt', 'Borca' )|E] girebilirsiniz #weak ([GetDefine('NMercenary', 'ALLOWED_DEBT_MONTHS')] aya kadar)#!."
  game_concept_mercenary_contract: "Paralı Askerl Sözleşmesi"
+ game_concept_mercenary_contracts: "Paralı Asker Sözleşmeleri" #NT!
  game_concept_mercenary_contract_desc: "[mercenary|E] sözleşmesi bir seferlik maliyet karşılığında #V [GetDefine('NMercenary', 'HIRE_MONTHS')] ay#! boyunca askerleri kullanabilmenizi sağlar."
  game_concept_hired_troops: "Kiralık Askerler"
  game_concept_hired_troops_desc: "Kiralık askerler ya [mercenaries|E]dir ya da [holy_orders|E]dandır."
@@ -863,6 +864,7 @@
  game_concept_terrains: "Araziler"
  game_concept_terrain_desc: "Her [barony|E]ta baskın olan bir arazi vardır. Arazi [supply|E], [Concept( 'armies', 'Orduların' )|E] hareket hızı, [Concept( 'battle', 'Muharebede' )|E] çeşitli [men_at_arms|E] [regiments|E]inin verimliliği ve inşa edebilecek binalar gibi şeyleri etkiler.\n\nArazi ile ilgili olan birçok [commander_trait|E] de vardır."
  game_concept_independent_ruler: "Bağımsız Hükümdar"
+ game_concept_independent_rulers: "Bağımsız Yöneticiler" #NT!
  game_concept_independent_ruler_desc: "$game_concept_independent$ [Concept( 'rulers', 'Hükümdarların' )|E] [Concept( 'liege', 'Süzereni' )|E] yoktur ve bunun sayesinde daha çok özgürlüğe ([war|E] ilan etmek gibi) sahiptirler.\n\nFakat [Concept( 'vassals', 'Vasalların' )|E] aksine yabancı [rulers|E] tarafından doğrudan saldırıya uğrayabilirler."
  game_concept_independent: "Bağımsız"
  game_concept_unlanded: "Topraksız"

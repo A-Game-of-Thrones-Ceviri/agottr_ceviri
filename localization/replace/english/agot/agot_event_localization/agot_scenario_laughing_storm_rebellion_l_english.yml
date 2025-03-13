@@ -1,779 +1,774 @@
 ﻿l_english:
- ##############################################################
- ## 0001-0010 LAUGHING STORM EVENTS - Canon Scenario         ##
- ##############################################################
-
- #Lyonel'in Öfkesi
- ### Bakış Açısı: Lyonel Baratheon
- ### Senaryo başlangıç etkinliği
- agot_laughing_storm_rebellion.0001.t:0 "Kahkaha Fırtınası Yükseliyor"
-agot_laughing_storm_rebellion.0001.desc:0 "Bu ihanet, Valyria çeliğinden daha derin kesiyor. [duncansmall.GetTitledFirstNameNicknamed], kanatlarımın altındaki kızım [cassandra.GetFirstName] ile nişanlıyken kutsal yeminlerini çiğnedi ve o gölgedeki kız, [jenny.GetNameNicknamed] ile karanlığa karıştı. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan bu saygısızlık cevapsız kalmayacak.\n\nAilemin şerefi ayaklar altına alındı, Demir Taht'ın oyunlarıyla kirletildi. [lyonel.GetHouse.GetBaseNameNoTooltip] Hanesi bir lekeyi asla unutmaz. Bağımsızlık kaderimizdir ve eğer bu yol savaştan geçiyorsa, öyle olsun.\n\nFırtına Toprakları kendi kanunlarıyla yönetilecek ve atalarımızın hakkını son damla kanımıza kadar savunacağız."
- agot_laughing_storm_rebellion.0001.a:0 "Öfke Bizimdir!"
- 
- #Kralın Sıkıntısı
- ### Bakış Açısı: Aegon V
- ### Senaryo başlangıç etkinliği
- #### Tetikleyici: 0003
- agot_laughing_storm_rebellion.0002.t:0 "Ufukta Kara Bulutlar"
-agot_laughing_storm_rebellion.0002.desc:0 "Demir Taht hiç bu kadar ağır olmamıştı. Delikanlı oğlum, [duncansmall.GetTitledFirstNameNicknamed], verilmiş bir sözü kırdı ve [cassandra.GetFullName] adlı kişiyi reddederek [jenny.GetFirstNameNicknamed] adlı kişiyi seçti.\n\nŞimdi [lyonel.GetFullNameNicknamed] adlı kişinin gazabı Yedi Krallık'ı kasıp kavurmakla tehdit ediyor. Demir Taht'tan bağımsızlık istiyor, ailesinin onurunu geri almak için alevi savaşa atmaya hazır. Hükümdar olarak, bu felaketi önlemek için ivedilikle harekete geçmeliyim.\n\n[lyonel.GetTitledFirstNameNoTooltip] ile [duncantall.GetTitledFirstName] 'Uzun Duncan' arasında bir şampiyon dövüşü, bir yargılama yoluyla savaşı önlemek için bir şans olabilir. Bu bir risk, fakat diyarı gereksiz bir kan gölüne dönmekten kurtarabilir."
-agot_laughing_storm_rebellion.0002.a:0 "Lord Kumandan bu meseleyi çözsün."
- 
- #Kralın Teklifi
- ### Bakış Açısı: Lyonel
- ### Lyonel ile Duncan Tall arasındaki düello öncesi etkinlik.
- #### Seçenek A: Düelloya yol açar (Tetikleyici: 0004)
- #### Seçenek B: Hemen bağımsızlık savaşı başlatabilir (Tetikleyici: 0025)
- agot_laughing_storm_rebellion.0003.t:0 "Şeref Dövüşü"
-agot_laughing_storm_rebellion.0003.desc:0 "Kral'ın mührünü taşıyan bir kuzgun geldi; bu anlaşmazlığı tek bir dövüşle, [duncantall.GetTitledFirstName] 'Uzun' ile bir şampiyon dövüşüyle çözmeyi teklif ediyor. Geçmiş savaşlarda onunla omuz omuza çarpıştığımızı hatırlıyorum — bir zamanlar silah arkadaşlarım olan bizler, şimdi karşı karşıya gelebiliriz. Bu düello sadece kılıçların dansı değil; bu, şeref için, [lyonel.GetHouse.GetBaseName] Hanesi'nin ruhu için bir mücadele.\n\nReddetmek bağımsızlığımız anlamına gelebilir, ancak bedeli ne olacak? Kaderimizi tayin etme vakti geldi."
-agot_laughing_storm_rebellion.0003.a:0 "Yedi Tanrı karar versin; #bold dövüşle yargılanacağız!#!"
-agot_laughing_storm_rebellion.0003.b:0 "Sahte bir hükümdarın emirlerine boyun eğmeyeceğim."
-
- 
- # Bir Yargılama
- ### Bakış Açısı: Lyonel
- ### Düello olayı.
- #### Eğer Lyonel kazanırsa 0020 tetiklenir
- #### Eğer Duncan kazanır ve Lyonel hayatta kalırsa 0007 ve 0008 tetiklenir
- #### Eğer Duncan kazanır ve Lyonel ölürse 0009 tetiklenir
- agot_laughing_storm_rebellion.0004.t:0 "Fırtına ve Çelik Dansı"
-agot_laughing_storm_rebellion.0004.desc:0 "Kral Toprakları'na giden yol uzun ve meşakkatliydi. Şimdi Kızıl Kale'nin gölgesinde, Kraliyet Muhafızları Lord Kumandanı [duncantall.GetFirstName] 'Uzun Duncan' ile karşı karşıyayım. Geçmişte birlikte verdiğimiz savaşların hayaletleri zihnimde dolaşıyor, fakat bugün dostluk yerini göreve bıraktı.\n\nBu, şeref için, [lyonel.GetHouse.GetBaseName] Hanesi'nin namı için verilen bir savaş. Yedi Krallık'ın gözleri üzerimizde ve yalnızca biri hayatta kalacak.\n\nÇelik şarkısı kahkahamdan daha yüksek çıksın ve bu kader düellosunda en güçlü olan kazansın."
-agot_laughing_storm_rebellion.0004.a:0 "#bold Ha ha ha!#!"
- 
- # Düello Açıklamaları
- agot_laughing_storm_rebellion.t:0 "Çelikle Yargılama"
-agot_laughing_storm_rebellion.duncan_won:0 "[duncantall.GetTitledFirstNameNoTooltip], [lyonel.GetTitledFirstNameNoTooltip] adlı kişiyi düelloda yendi."
-agot_laughing_storm_rebellion.lyonel_won:0 "[lyonel.GetTitledFirstNameNoTooltip], [duncantall.GetTitledFirstNameNoTooltip] adlı kişiyi düelloda alt etti."
- 
- # Lyonel Kaybetti
- ### Bakış Açısı: Lyonel
- ### Düello sonrası olay.
- agot_laughing_storm_rebellion.0007.t:0 "Fırtınanın Sonu"
-agot_laughing_storm_rebellion.0007.desc:0 "Düello sona erdi ve çeliğin şarkısı sustu. Tüm gücüme rağmen, [duncantall.GetTitledFirstName] galip geldi. Yenilgi, zehir gibi acı bir gerçek ve kaybın ağırlığı ruhumu eziyor.\n\n[lyonel.GetHouse.GetBaseName] Hanesi'nin onuru lekelendi ve kaderi artık [aegonv.GetTitledFirstNameRegnal] adlı kişinin insafına kaldı. Demir Taht önünde diz çökerken, hükümdarın hükmünü beklerken, Fırtına Toprakları'nın geleceği karanlıkta gizleniyor. Kral, benim ve hanemin kaderi hakkında ne karar verecek?"
-agot_laughing_storm_rebellion.0007.a:0 "Kaderimi başım dik karşılayacağım."
- 
- # Lyonel Kaybetti
- ### Bakış Açısı: Aegon V
- ### Düello sonrası olay.
- #### Tetiklenir: 0010 (seçilen seçenekten bağımsız olarak)
- agot_laughing_storm_rebellion.0008.t:0 "Hükümdarın Lütfu"
-agot_laughing_storm_rebellion.0008.desc:0 "[lyonel.GetFullNameNicknamed], yenilmiş fakat ruhu kırılmamış bir şekilde huzurumda duruyor. [duncantall.GetTitledFirstName] karşısında aldığı yenilgiye rağmen, diyardaki huzursuzluk devam ediyor. Bir hükümdar olarak, barış ve istikrarın önemini biliyorum. Ağır bir ceza isyan ateşini körükleyebilir, ancak merhamet bu yarayı sarabilir.\n\nBu hassas dengeyi korumak için, Baratheon Hanesi'ni tahtıma daha sıkı bağlayacak bir evlilik bağı teklif etmeyi düşünüyorum.\n\nKızımı oğluyla evlendirmeyi mi teklif etmeliyim, yoksa yalnızca sadakat yemini yeterli olur mu?"
-agot_laughing_storm_rebellion.0008.a:0 "Rhaelle'in elini oğluna teklif ediyorum."
-agot_laughing_storm_rebellion.0008.b:0 "Vaella'nın elini oğluna teklif ediyorum."
-agot_laughing_storm_rebellion.0008.c:0 "Bir teklifte bulunmuyorum."
- 
- # Lyonel Kaybetti - Lyonel öldü
- ### Bakış Açısı: Aegon V
- ### Düello sonrası olay.
- #### Tetiklenir: 0031
- agot_laughing_storm_rebellion.0009.t:0 "Fırtınanın Sönüşü"
-agot_laughing_storm_rebellion.0009.desc:0 "[lyonel.GetFullNameNicknamed], [duncantall.GetTitledFirstName] ile yaptığı şampiyon dövüşünde hayatını kaybetti. Bir zamanlar büyük bir tehdit olan meydan okuması ve cesareti sonsuza dek sustu. Yedi Krallık'ı parçalamakla tehdit eden isyan, liderinin ölümüyle sona erdi.\n\nBarış pahalıya mal oldu ve bu çatışmanın yankıları nesiller boyu hatırlanacak. Fırtına Toprakları teslim oldu, diyar yaralarını sarmaya başlayabilir, ancak bu olayın gölgesi uzun yıllar Demir Taht'ın üzerinde kalacak."
-agot_laughing_storm_rebellion.0009.a:0 "Savaştı, düştü ve şimdi ebedi uykusunda."
-
- # Yeni Bir Nişan
- ### Bakış Açısı: Lyonel
- ### Egg'den gelen nişan teklifi
- #### Seçenek A: Nişan gerçekleşir (Tetikler: 0028)
- #### Seçenek B: Hikâyenin sonu (Tetikler: 0030)
- #### Seçenek C: Hikâyenin sonu (Tetikler: 0030)
- agot_laughing_storm_rebellion.0010.t:0 "Fırtınanın Külünden"
-agot_laughing_storm_rebellion.0010.betrothal.desc:0 "Çelikle Yargılama'daki yenilgimizin ardından, [aegonv.GetTitledFirstNameRegnal] bir barış teklifiyle geldi: kızı [targ_betrothed.GetTitledFirstNamePossessive] elini oğlum [bara_betrothed.GetTitledFirstName] adlı kişiye vermeyi teklif ediyor. Bu jest, [lyonel.GetHouse.GetBaseName] Hanesi ile Demir Taht arasındaki husumeti sona erdirmeyi ve kalıcı bir barış sağlamayı amaçlıyor.\n\nAilemin onuru bu evlilikle temizlenebilir ve bu bağ, Fırtına Toprakları'nın geleceğini güvence altına alabilir."
-agot_laughing_storm_rebellion.0010.nobetrothal.desc:0 "Çelikle Yargılama'daki yenilgimizin ardından, Demir Taht'tan gelen sessizlik buz gibi bir bıçak kadar keskin. [aegonv.GetTitledFirstNameRegnal] ne bir evlilik teklif ediyor ne de bir barış jesti—yalnızca soğuk ve acımasız bir yenilgi gerçeği var.\n\n[lyonel.GetHouse.GetBaseName] Hanesi'nin onuru hala lekeli ve Fırtına Toprakları'nın kaderi belirsiz. Ailemin bir sonraki adımını düşünerek yalnız başıma duruyorum; yolumuzun dikenli olduğu aşikar ve bu yenilginin gölgesi uzun süre üzerimizde kalacak."
-agot_laughing_storm_rebellion.0010.a:0 "Kral'ın teklifini kabul ediyorum."
-agot_laughing_storm_rebellion.0010.b:0 "Bu teklifi reddetmeliyim."
-agot_laughing_storm_rebellion.0010.c:0 "Kaderime boyun eğiyorum."
-
- ##############################################################
- ## 0011-0018 LAUGHING STORM EVENTS - Canon Breakups         ##
- ##############################################################
-
- #Jaehaerys & Shaera
- ### POV: Jaehaerys Targaryen
- ### Breaking betrothals between Jaeharys+Celia Tully and Shaera+Luthor Tyrell
- #### Option A: Parents notified about the breakup (Triggers: 0013)
- #### Option B: End of story
- agot_laughing_storm_rebellion.0011.t:0 "Yüreğin Çatışması"
-agot_laughing_storm_rebellion.0011.desc:0 "Kardeşim [duncansmall.GetFirstName] adlı kişinin seçimleri ruhumda derin bir yankı uyandırdı. [cassandra.GetTitledFirstName] adlı kişiyi terk edip [jenny.GetFirstNameNicknamed] ile tutku uğruna evlenme kararı, kendi yolumu sorgulamama neden oldu. [celia.GetTitledFirstName] ile bir evlilik zinciriyle bağlıyken, yüreğim gerçek aşkım [shaera.GetFirstName] için çarpıyor.\n\nGörev ve arzu arasında sıkışıp kaldım. Kardeşimin yolundan gidip kalbimin sesine mi kulak vermeliyim, yoksa yeminlerime mi sadık kalmalıyım?"
-agot_laughing_storm_rebellion.0011.a:0 "Evet, yüreğimin sesini dinlemeliyim."
-agot_laughing_storm_rebellion.0011.b:0 "Hayır, görev her şeyden önce gelir."
-
- #Daeron
- ### POV: Daeron Targaryen
- ### Breaking betrothal between Daeron+Olenna Redwyne
- #### Option A: Parents notified about the breakup (Triggers: 0014)
- #### Option B: End of story
- agot_laughing_storm_rebellion.0012.t:0 "Kaderin Kesiştiği Yol"
-agot_laughing_storm_rebellion.0012.desc:0 "Ağabeylerimin aşk uğruna yeminlerini çiğneyip kalplerinin sesini dinlediğini görmek, ruhumda bir fırtına koparıyor. [olenna.GetTitledFirstName] ile yaklaşan bir evlilik sözleşmesiyle bağlıyım, ancak onu tanıdığımı söyleyemem. [olenna.GetTitledFirstName] nazik bir ruh gibi görünüyor, fakat aklım ve kalbim başka diyarlarda geziyor.\n\nGörevin ağırlığı omuzlarıma çöküyor, ancak gerçek mutluluğun çağrısı da bir o kadar güçlü. Kendi yolumu çizip aşkı mı aramalıyım, yoksa önüme serilen kaderi mi kabul etmeliyim?"
-agot_laughing_storm_rebellion.0012.a:0 "Evet, yüreğimin yolundan gideceğim."
-agot_laughing_storm_rebellion.0012.b:0 "Hayır, görevime bağlı kalacağım."
-
- #Jaehaerys & Shaera - notification
- ## Can be triggered via event 0021 (or can trigger after some time in historical game ruler)
- ### POV: Egg, Steffon Tully, Garlan Tyrell
- ### Jaeharys+Celia Tully and Shaera+Luthor Tyrell broke up
- #### Option A: End of story
- #### Option B (only for Egg): End of story + Jaehaerys and Shaera are disinherited
- agot_laughing_storm_rebellion.0013.t:0 "Başkaldıran Kalpler"
-agot_laughing_storm_rebellion.0013.desc:0 "Beklenmedik ve cüretkar bir olay yaşandı. [jaehaerys.GetTitledFirstName], [celia.GetTitledFirstName] ile olan nişanını bozdu ve [shaera.GetTitledFirstName] da [luthor.GetTitledFirstName] ile olan bağlarını kopardı. Geleneklere ve göreve meydan okuyarak, şimdi birbirleriyle evlendiklerini ilan ettiler.\n\nBu pervasız hareket, öfke ve kaosa neden oldu, ittifakları ve beklentileri altüst etti. Bu evliliğin yankıları Yedi Krallık'ta yankılanacak ve lordlar bu beklenmedik ve sorunlu kararın sonuçlarıyla yüzleşmek zorunda kalacak."
-agot_laughing_storm_rebellion.0013.a:0 "Bu bir felaket."
-agot_laughing_storm_rebellion.0013.b:0 "Bedelini ödemeliler."
-
- #Daeron - notification
- ## Can be triggered via event 0021 (or can trigger after some time in historical game ruler)
- ### POV: Egg, Runceford Redwyne
- ### Daeron+Olenna Redwyne broke up
- #### Option A (only for Egg): End of story
- #### Option B (only for Runceford if Luthor Tyrell is NOT betrothed): Luthor and Olenna betrothal might happen (Triggers: 0015)
- #### Option C (only for Runceford if Luthor Tyrell is betrothed): End of story
- agot_laughing_storm_rebellion.0014.t:0 "Kırılan Söz"
-agot_laughing_storm_rebellion.0014.desc:0 "Bu haber, yüreğime bir hançer gibi saplandı. [daeron.GetTitledFirstName], [olenna.GetTitledFirstName] ile olan nişanını bozdu ve özenle hazırlanmış planları paramparça etti. Bu beklenmedik gelişme, derin bir hayal kırıklığı ve belirsizlik yarattı.\n\nBu kırılan sözün yankıları, haneler ve ittifaklar üzerinde uzun süre hissedilecek ve mevcut güç dengelerini sarsacak."
-agot_laughing_storm_rebellion.0014.aegonv.a:0 "Bu kabul edilemez bir durum."
-agot_laughing_storm_rebellion.0014.runceford.a:0 "Belki de Garlan'a bir evlilik teklifi götürmenin zamanı gelmiştir."
-agot_laughing_storm_rebellion.0014.runceford.a.tt:0 "[olenna.GetTitledFirstName] ve [luthor.GetTitledFirstName] arasında bir nişan teklif edilecek."
-agot_laughing_storm_rebellion.0014.runcefordx.a:0 "Bu üzücü bir haber."
+  ############################################################## 
+  ## 0001-0010 LAUGHING STORM EVENTS - Canon Scenario         ## 
+  ############################################################## 
   
- #Luthor + Olenna = ?
- ### POV: Garlan Tyrell
- ### Betrothal offer from Runceford Redwyne
- #### Option A: Agrees to the betrothal (Triggers: 0016)
- #### Option B: Refuses the betrothal (Triggers: 0018)
- agot_laughing_storm_rebellion.0015.t:0 "Yeni Bir İttifak"
-agot_laughing_storm_rebellion.0015.desc:0 "[daeron.GetTitledFirstName] adlı kişinin [olenna.GetTitledFirstName] ile olan nişanını bozmasının ardından, [runceford.GetTitledFirstName] Lordu bana yeni bir teklifle geldi. [olenna.GetTitledFirstName] adlı kişinin elini oğlum [luthor.GetTitledFirstName] adlı kişiye vermeyi öneriyor.\n\nBu evlilik, hanelerimiz arasındaki bağları güçlendirebilir ve [garlan.GetHouse.GetBaseName] Hanesi'nin geleceğini güvence altına alabilir. Dikkatle değerlendirilmesi gereken bir fırsat."
-agot_laughing_storm_rebellion.0015.a:0 "Bu ittifak hanemize güç katacaktır."
-agot_laughing_storm_rebellion.0015.b:0 "Bu teklifi reddetmeliyim."
-
- #Luthor + Olenna = betrothal
- ### POV: Runceford Redwyne
- ### Betrothal between Olenna and Luthor
- #### Option A: Final confirmation on the betrothal (Triggers: 0017)
- #### Option B: Refuses the betrothal (Triggers: 0018)
- agot_laughing_storm_rebellion.0016.t:0 "Bir Lordun Kararı"
-agot_laughing_storm_rebellion.0016.desc:0 "[garlan.GetTitledFirstName], [olenna.GetTitledFirstName] ile [luthor.GetTitledFirstName] adlı kişinin nişanlanması teklifini kabul etti. Bu ittifak, hanelerimiz arasında güçlü bir bağ kuracak ve büyük faydalar sağlayacak. Ancak, [olenna.GetFirstNamePossessiveNoTooltip] babası olarak, bu birlikteliğin onun için de hayırlı olmasını sağlamak benim görevim.\n\nSon karar bana ait ve ailem için doğacak faydaları kızımın mutluluğuyla dikkatlice tartmalıyım."
-agot_laughing_storm_rebellion.0016.a:0 "Nişan hazırlıklarına başlayalım."
-agot_laughing_storm_rebellion.0016.b:0 "Olenna'nın mutluluğu için bu teklifi reddetmeliyim."
-
- #Luthor + Olenna = betrothal notification
- ### POV: Garlan Tyrell
- ### Olenna and Luthor betrothed, alliance made
- #### Option A: End of story
- agot_laughing_storm_rebellion.0017.t:0 "Sağlam Bir İttifak"
-agot_laughing_storm_rebellion.0017.desc:0 "Nihayet, [olenna.GetTitledFirstName] ve [luthor.GetTitledFirstName] arasındaki nişan resmiyet kazandı. Bu evlilik, hanelerimiz arasında güçlü bir bağ kuracak, karşılıklı fayda sağlayacak ve gelecekteki ittifaklarımızı pekiştirecek.\n\nBu birliktelik sayesinde, her iki aile de güç ve prestij kazanacak ve refah dolu bir geleceğin temelleri atılmış olacak."
-agot_laughing_storm_rebellion.0017.a:0 "Bu kutlu bir olay!" 
-
- #Luthor + Olenna = refused
- ### POV: Garlan Tyrell OR Runceford Redwyne (depending who refused it)
- ### Olenna and Luthor betrothal negotiation failed
- #### Option A: End of story
- agot_laughing_storm_rebellion.0018.t:0 "Yitirilen Bir Şans"
-agot_laughing_storm_rebellion.0018.desc:0 "[olenna.GetTitledFirstName] ve [luthor.GetTitledFirstName] arasındaki nişan reddedildi. Bu büyük bir kayıp, çünkü bu evlilik her iki haneye de önemli avantajlar sağlayacak, bağlarımızı güçlendirecek ve geleceğimizi koruyacaktı.\n\nBu aksilik karşısında, ileriye bakmalı ve ailemizin refahını sağlayacak yeni ittifaklar ve fırsatlar aramalıyız."
-agot_laughing_storm_rebellion.0018.a:0 "Çocuğum kendi yolunu çizecektir."
-
- ##############################################################
- ## 0020-0035 LAUGHING STORM EVENTS - Non-Canon Scenarios    ##
- ##############################################################
-
- #Lyonel Won
- ### POV: Lyonel
- ### Lyonel beats Duncan Tall in the duel
- #### Option A: Lyonel remains a vassal if Egg agrees to sending Duncan Targaryen to the wall and a marriage between Rhaella and Ormund Baratheon (or Herbert if Ormund died somehow) (Triggers: 0021)
- #### Option B: Declares independence (Triggers: 0026)
- agot_laughing_storm_rebellion.0020.t:0 "Fırtınanın Galibiyeti"
-agot_laughing_storm_rebellion.0020.desc:0 "Çelikle Yargılama sona erdi ve [duncantall.GetTitledFirstName] yenik düştü. [lyonel.GetHouse.GetBaseName] Hanesi'nin şerefi geri kazanıldı ve zaferin ateşi damarlarımda akıyor. Şimdi, bir yol ayrımındayım.\n\n"
-agot_laughing_storm_rebellion.0020.desc.both:0 "Bağımsız kalabilir, Demir Taht'tan uzakta kendi kaderimi çizebilirim. Ya da, [aegonv.GetTitledFirstNameRegnal] adlı kişiden yeni bir nişan teklifi ve [duncansmall.GetTitledFirstNameNicknamed] adlı kişinin Sur'a gönderilmesi şartıyla sadakat yemini edebilirim."
-agot_laughing_storm_rebellion.0020.desc.only_banishment:0 "Bağımsız kalabilir, Demir Taht'tan uzakta kendi kaderimi çizebilirim. Ya da, [duncansmall.GetTitledFirstNameNicknamed] adlı kişinin Sur'a gönderilmesi şartıyla sadakat yemini edebilirim."
- agot_laughing_storm_rebellion.0020.desc.only_betrothal:0 "Bağımsız kalabilir, Demir Taht'tan uzakta kendi kaderimi çizebilirim. Ya da, [aegonv.GetTitledFirstNameRegnal] adlı kişiden yeni bir nişan teklifi gelmesi şartıyla sadakat yemini edebilirim."
-agot_laughing_storm_rebellion.0020.desc.none:0 "Bağımsız kalabilir, Demir Taht'tan uzakta kendi kaderimi çizebilirim. Ya da, koşulsuz olarak sadakat yemini edebilirim."
-agot_laughing_storm_rebellion.0020.a:0 "Sadakat yemini ederim, ancak adalet istiyorum."
-agot_laughing_storm_rebellion.0020.a.simple:0 "Daha fazla kan dökülmesine gerek yok—sadakatimi sunuyorum."
-agot_laughing_storm_rebellion.0020.b:0 "Fırtına Toprakları kendi ayakları üzerinde duracak."
-
- #Lyonel Won
- ### POV: Aegon V
- ### Lyonel demanded to send Prince Duncan to the wall and a marriage between Rhaella and Ormund Baratheon in order for him to remain loyal
- #### Option A: Demand refused - might lead to the break of betrothals (Triggers: 0013, 0014, 0023, 0024 and 0032)
- #### Option B: Demand accepted (Triggers: 0028)
- agot_laughing_storm_rebellion.0021.t:0 "Fırtınanın Şartları"
-agot_laughing_storm_rebellion.0021.no_demand.t:0 "Fırtınanın Zaferi"
-agot_laughing_storm_rebellion.0021.desc:0 "[lyonel.GetFullNameNicknamed], Çelikle Yargılama'da zafer kazandı ve [duncantall.GetTitledFirstName] adlı kişiyi alt etti.\n\n"
-agot_laughing_storm_rebellion.0021.desc.both:0 "Şimdi sadakat yemini etmeyi teklif ediyor, ancak bağlılığı bir bedelle geliyor: Kraliyet ailesinden yeni bir nişan ve oğlum [duncansmall.GetTitledFirstNameNicknamed] adlı kişinin Sur'a gönderilmesi. Bu karar, hem krallığın itibarını hem de güçlü bir vasalın taleplerini dengeleme meselesi.\n\nBu şartları kabul etmenin veya reddetmenin sonuçlarını dikkatlice değerlendirmeliyim."
-agot_laughing_storm_rebellion.0021.desc.only_banishment:0 "Şimdi sadakat yemini etmeyi teklif ediyor, ancak bağlılığı bir bedelle geliyor: Oğlum [duncansmall.GetTitledFirstNameNicknamed] adlı kişinin Sur'a gönderilmesi. Bu karar, hem krallığın itibarını hem de güçlü bir vasalın taleplerini dengeleme meselesi.\n\nBu şartları kabul etmenin veya reddetmenin sonuçlarını dikkatlice değerlendirmeliyim."
- agot_laughing_storm_rebellion.0021.desc.only_betrothal:0 "Şimdi sadakat yemini etmeyi teklif ediyor, ancak bağlılığı bir bedelle geliyor: Kraliyet ailesinden yeni bir nişan. Bu karar, hem krallığın itibarını hem de güçlü bir vasalın taleplerini dengeleme meselesi.\n\nBu şartları kabul etmenin veya reddetmenin sonuçlarını dikkatlice değerlendirmeliyim."
-agot_laughing_storm_rebellion.0021.desc.none:0 "Şimdi koşulsuz olarak sadakat yemini etmeyi teklif ediyor. Yemini diyara bir nebze huzur getirse de geçmişteki anlaşmazlıklar kolayca unutulmayacak.\n\nŞimdilik krallık yeniden bir bütün."
-agot_laughing_storm_rebellion.0021.a:0 "Bu küstah talebi reddediyorum."
-agot_laughing_storm_rebellion.0021.a.no_demand:0 "Barış hüküm sürsün."
-agot_laughing_storm_rebellion.0021.b:0 "Bu teklif barışı sağlayabilir."
- 
- #Lyonel Refused the marriage
- ### POV: Aegon V
- #### Option A: End of story
- agot_laughing_storm_rebellion.0022.t:0 "Geyik'in İnadı"
-agot_laughing_storm_rebellion.0022.desc:0 "[lyonel.GetTitledFirstNamePossessive] cevabı hızlı ve kesin geldi — bu evliliği reddediyor. Ne bir özür, ne bir nezaket belirtisi, sadece hanesinin benimle, barış uğruna bile olsa, bağ kurmasına izin vermeyecek çelik gibi bir irade.\n\nDövüşü kaybetti, ancak bu konuda geri adım atmayacak. Fırtına kolayca dinmeyecek."
-agot_laughing_storm_rebellion.0022.a:0 "Öyle olsun."
-agot_laughing_storm_rebellion.0022.a.tt:0 "Öyle olsun."
- 
- #creating the alliance
- ### POV: Runceford Redwyne, Steffon Tully, Garlan Tyrell (only if their children are involved in Targaryen betrothal break ups)
- ### Lyonel offers alliance for the coming war
- #### Option A: Ally with Lyonel
- #### Option B: End of story
- agot_laughing_storm_rebellion.0023.t:0 "İsyan Bayrağı"
-agot_laughing_storm_rebellion.0023.desc:0 "[duncansmall.GetTitledFirstNameNicknamedPossessive] kırılan nişanı, [lyonel.GetHouse.GetBaseName] Hanesi'nin şerefine leke sürdü ve şimdi [lyonel.GetTitledFirstNameNicknamed] adlı kişiyi Demir Taht'a karşı isyana sürüklüyor. [lyonel.GetTitledFirstNameNoTooltip], sancağı altında adam topluyor ve bağımsızlık için savaşmaya hazırlanıyor.\n\nBenim çocuğum da Targaryenlar'ın elinde acı çekti, bu yüzden [lyonel.GetFirstNameNoTooltip] adlı kişinin davasına katılmak haklı bir sebep gibi görünüyor. Ancak ben her zaman Demir Taht'a sadık kaldım ve bir isyanın bedeli ağır olabilir. Bu, hanemin kaderini belirleyecek önemli bir karar."
-agot_laughing_storm_rebellion.0023.a:0 "'Kahkaha Fırtınası'nın yanında yer alıyoruz."
-agot_laughing_storm_rebellion.0023.b:0 "Demir Taht'a sadık kalıyoruz."
- 
- #WAR
- ### POV: Lyonel
- ### War event (desc depends on who accepted the call)
- #### Option A: The war begins
- agot_laughing_storm_rebellion.0024.t:0 "Fırtına Kopuyor"
-agot_laughing_storm_rebellion.0024.garlan_steffon_runceford.desc:0 "Vakti geldi. Ordum hazır, sancaklar dalgalanıyor ve kalpler çelikten sağlam. Yanımda [runceford.GetTitledFirstName], [garlan.GetTitledFirstName] ve [steffon.GetTitledFirstName] ile birlikte, savaş naraları Fırtına Toprakları'nda yankılanıyor. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan hakaret, fırtınanın hiddetiyle karşılık bulacak.\n\nŞerefimiz ve bağımsızlığımız için ilerliyoruz, önümüze çıkacak her engele hazırız. Demir Taht sarsılacak, çünkü fırtınanın gazabı üzerlerine inecek."
- agot_laughing_storm_rebellion.0024.steffon_runceford.desc:0 "Vakti geldi. Ordum hazır, sancaklar dalgalanıyor ve kalpler çelikten sağlam. Yanımda [steffon.GetTitledFirstName] ve [runceford.GetTitledFirstName] ile birlikte, savaş naraları Fırtına Toprakları'nda yankılanıyor. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan hakaret, fırtınanın hiddetiyle karşılık bulacak.\n\nŞerefimiz ve bağımsızlığımız için ilerliyoruz, önümüze çıkacak her engele hazırız. Demir Taht sarsılacak, çünkü fırtınanın gazabı üzerlerine inecek."
- agot_laughing_storm_rebellion.0024.garlan_runceford.desc:0 "Vakti geldi. Ordum hazır, sancaklar dalgalanıyor ve kalpler çelikten sağlam. Yanımda [garlan.GetTitledFirstName] ve [runceford.GetTitledFirstName] ile birlikte, savaş naraları Fırtına Toprakları'nda yankılanıyor. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan hakaret, fırtınanın hiddetiyle karşılık bulacak.\n\nŞerefimiz ve bağımsızlığımız için ilerliyoruz, önümüze çıkacak her engele hazırız. Demir Taht sarsılacak, çünkü fırtınanın gazabı üzerlerine inecek."
- agot_laughing_storm_rebellion.0024.garlan_steffon.desc:0 "Vakti geldi. Ordum hazır, sancaklar dalgalanıyor ve kalpler çelikten sağlam. Yanımda [garlan.GetTitledFirstName] ve [steffon.GetTitledFirstName] ile birlikte, savaş naraları Fırtına Toprakları'nda yankılanıyor. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan hakaret, fırtınanın hiddetiyle karşılık bulacak.\n\nŞerefimiz ve bağımsızlığımız için ilerliyoruz, önümüze çıkacak her engele hazırız. Demir Taht sarsılacak, çünkü fırtınanın gazabı üzerlerine inecek."
- agot_laughing_storm_rebellion.0024.garlan.desc:0 "Vakti geldi. Ordum hazır, sancaklar dalgalanıyor ve kalpler çelikten sağlam. Yanımda [garlan.GetTitledFirstName] ile birlikte, savaş naraları Fırtına Toprakları'nda yankılanıyor. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan hakaret, fırtınanın hiddetiyle karşılık bulacak.\n\nŞerefimiz ve bağımsızlığımız için ilerliyoruz, önümüze çıkacak her engele hazırız. Demir Taht sarsılacak, çünkü fırtınanın gazabı üzerlerine inecek."
- agot_laughing_storm_rebellion.0024.steffon.desc:0 "Vakti geldi. Ordum hazır, sancaklar dalgalanıyor ve kalpler çelikten sağlam. Yanımda [steffon.GetTitledFirstName] ile birlikte, savaş naraları Fırtına Toprakları'nda yankılanıyor. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan hakaret, fırtınanın hiddetiyle karşılık bulacak.\n\nŞerefimiz ve bağımsızlığımız için ilerliyoruz, önümüze çıkacak her engele hazırız. Demir Taht sarsılacak, çünkü fırtınanın gazabı üzerlerine inecek."
- agot_laughing_storm_rebellion.0024.runceford.desc:0 "Vakti geldi. Ordum hazır, sancaklar dalgalanıyor ve kalpler çelikten sağlam. Yanımda [runceford.GetTitledFirstName] ile birlikte, savaş naraları Fırtına Toprakları'nda yankılanıyor. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan hakaret, fırtınanın hiddetiyle karşılık bulacak.\n\nŞerefimiz ve bağımsızlığımız için ilerliyoruz, önümüze çıkacak her engele hazırız. Demir Taht sarsılacak, çünkü fırtınanın gazabı üzerlerine inecek."
- agot_laughing_storm_rebellion.0024.none.desc:0 "Vakti geldi. Ordum hazır, sancaklar dalgalanıyor ve kalpler çelikten sağlam. Sadık yoldaşlarım yanımda, savaş naraları Fırtına Toprakları'nda yankılanıyor. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan hakaret, fırtınanın hiddetiyle karşılık bulacak.\n\nŞerefimiz ve bağımsızlığımız için ilerliyoruz, önümüze çıkacak her engele hazırız. Demir Taht sarsılacak, çünkü fırtınanın gazabı üzerlerine inecek."
-agot_laughing_storm_rebellion.0024.a:0 "Savaşa!"
- 
- #Lyonel refused the trial
- ### POV: Aegon V
- ### Lyoned refused the trial
- #### Option A: Leads to war (Triggers: 0027)
- #### Option B: Grant him independence anyway (Triggers: 0026)
- agot_laughing_storm_rebellion.0025.t:0 "Hükümdarın Tereddüdü"
-agot_laughing_storm_rebellion.0025.desc:0 "[lyonel.GetTitledFirstName], [duncantall.GetTitledFirstName] ile dövüşmeyi reddetti; bu hiç beklemediğim bir hamleydi. Bu beklenmedik durum beni zor bir kararın eşiğine getirdi.\n\nOna istediği bağımsızlığı vererek diğer lordlar için tehlikeli bir örnek mi teşkil etmeliyim, yoksa isyanının bedelini ödeterek krallığı daha büyük bir savaşa mı sürüklemeliyim? Fırtına Toprakları'nın kaderi ve Demir Taht'ın istikrarı bu karara bağlı."
-agot_laughing_storm_rebellion.0025.a:0 "Cüretinin bedelini ödemeli."
-agot_laughing_storm_rebellion.0025.b:0 "Ona bağımsızlık tanımalıyım."
-
- #The Storm King
- ### POV: Lyonel
- ### The Stormlands became independent
- #### Option A: Leads to end of story (Triggers: 0029)
- agot_laughing_storm_rebellion.0026.t:0 "Fırtına Hükümdarı"
-agot_laughing_storm_rebellion.0026.desc:0 "Zafer bizim oldu. Bağımsızlığımızı kazandık ve Fırtına Toprakları, tıpkı atalarımız Durrandonlar gibi, bir kez daha özgürce nefes alacak. Sancaklarımız gururla dalgalanıyor, egemenliğimizi ve kadim haklarımızın geri döndüğünü ilan ediyor.\n\n[lyonel.GetHouse.GetBaseName] Hanesi'nin şerefi geri kazanıldı ve biz, Demir Taht'ın zincirlerinden kurtulmuş olarak kendi kaderimizi tayin etmeye hazırız. Bütün dünya tanık olsun, Fırtına Hükümdarı tahta çıktı!"
-agot_laughing_storm_rebellion.0026.a:0 "Fırtına Toprakları muzaffer!"
-
- #The Early War
- ### POV: Lyonel
- ### Pre-War event
- #### Option A: Leads to war (Triggers: 0024)
- agot_laughing_storm_rebellion.0027.t:0 "Toplanan Bulutlar"
-agot_laughing_storm_rebellion.0027.desc:0 "Çelikle Yargılama'yı reddettikten sonra, artık savaşın kıyısında duruyorum. Gerilim elle tutulurcasına arttı ve Fırtına Toprakları yaklaşan savaşa hazırlanıyor. Bağımsızlığımızı kazanmak ve şerefimiz için savaşmak adına, Demir Taht'ın gazabına karşı bizimle omuz omuza duracak müttefikler bulmalıyım.\n\nÖnümüzdeki yol zorlu, ancak sadık dostlarla her fırtınaya göğüs gerebiliriz."
-agot_laughing_storm_rebellion.0027.a:0 "Müttefiklerimizi çağıralım."
-
- #Fin
- ### POV: Lyonel
- ### Everything goes back to normal (canon-ish timeline)
- #### Option A: Leads to end of story (Triggers: 0030)
- agot_laughing_storm_rebellion.0028.t:0 "Yeniden Kazanılan Barış"
-agot_laughing_storm_rebellion.0028.desc:0 "Çalkantılı bir dönemin ardından, hükümdar tarafından yeni bir nişan ayarlandı ve barış yolu açıldı. Fırtına Toprakları, şerefi temizlenmiş ve Demir Taht ile bağları yenilenmiş bir şekilde geleceğe umutla bakabilir.\n\nBu ittifak, istikrar ve birlik vadediyor, böylece halkımızın refahı ve huzuruna odaklanabiliriz."
-agot_laughing_storm_rebellion.0028.desc.no_betrothal:0 "Çalkantılı bir dönemin ardından barış yolu açıldı. Fırtına Toprakları, şerefi temizlenmiş ve Demir Taht ile bağları yenilenmiş bir şekilde geleceğe umutla bakabilir.\n\nBu uzlaşma, istikrar ve birlik vadediyor, böylece halkımızın refahı ve huzuruna odaklanabiliriz."
-agot_laughing_storm_rebellion.0028.a:0 "Bu barışı koruyacağız."
-
-
- #The Storm King
- ### POV: Everyone
- ### The Stormlands became independent
- #### Option A: End of story
- agot_laughing_storm_rebellion.0029.t:0 "Fırtına Hükümdarı"
-agot_laughing_storm_rebellion.0029.desc:0 "Bağımsızlık mücadelesinde zafer, [lyonel.GetHouse.GetBaseName] Hanesi'nin oldu. Fırtına Toprakları, tıpkı görkemli Durrandonlar döneminde olduğu gibi bir kez daha özgürce hüküm sürecek. Sancakları gururla dalgalanıyor, egemenliklerini ve kadim haklarının geri kazanıldığını ilan ediyor.\n\n[lyonel.GetHouse.GetBaseName] Hanesi'nin şerefi iade edildi ve onlar, Demir Taht'ın zincirlerinden kurtulmuş olarak kendi kaderlerini tayin etmeye hazırlar."
-agot_laughing_storm_rebellion.0029.a:0 "Kahkaha Fırtınası son gülen olacak mı?"
-
- #Fin
- ### POV: Everyone
- ### Everything goes back to normal (canon-ish timeline)
- #### Option A: End of story
- agot_laughing_storm_rebellion.0030.t:0 "Huzur Geri Döndü"
-agot_laughing_storm_rebellion.0030.desc:0 "Çalkantılı bir dönemin ardından bir çözüm bulundu ve krallığa istikrar geri getirildi. Fırtına Toprakları artık geleceğe odaklanmalı, yakın geçmişteki kargaşa çatışmanın ağır bedelini hatırlatıyor.\n\nBarış sağlandığına göre, krallık yaralarını sarmaya başlayabilir. Şimdi öncelik, yeniden yapılanma ve tüm halkın refahını sağlamak olmalı.\n\nBu dönem, birliğin değerini ve barışın ne kadar nadir olduğunu hatırlatmalı."
-agot_laughing_storm_rebellion.0030.a:0 "Bu barışın kalıcı olmasını dilerim."
- 
- #Lyonel died
- ### POV: Everyone
- ### Lyonel died in the trial by combat
- #### Option A: End of story
- agot_laughing_storm_rebellion.0031.t:0 "Fırtınanın Sönüşü"
-agot_laughing_storm_rebellion.0031.desc:0 "[lyonel.GetFullNameNicknamed], [duncantall.GetTitledFirstName] ile yaptığı düelloda hayatını kaybetti. Bir zamanlar büyük bir tehdit olan cüreti ve meydan okuması sonsuza dek sustu. Yedi Krallık'ı parçalamakla tehdit eden isyan, liderinin ölümüyle sona erdi.\n\nBarış pahalıya mal oldu ve bu savaşın yankıları nesiller boyu unutulmayacak. Fırtına Toprakları boyun eğdirilmiş olsa da, krallık yaralarını sarmaya başlayabilir. Ancak bu olayın gölgesi Demir Taht üzerinde uzun yıllar kalacak."
-agot_laughing_storm_rebellion.0031.a:0 "Savaştı, düştü ve şimdi ebedi uykusunda."
- 
- #Lyonel's Demand refused
- ### POV: Lyonel
- ### Aegon refused Lyonel's demand of new betrothal and sending Duncan Small to the wall
- #### Option A: Escalating the situation
- agot_laughing_storm_rebellion.0032.t:0 "Fırtınanın Hiddeti"
-agot_laughing_storm_rebellion.0032.desc:0 "[duncantall.GetTitledFirstName] adlı kişiyi düelloda yendikten sonra, kraldan adalet talep ettim: Oğlu [duncansmall.GetTitledFirstNameNicknamed] adlı kişinin Sur'a gönderilmesi ve hanedanlarımızı birleştirecek yeni bir nişan. Fakat kral, haklı taleplerimi reddetti!\n\nBu hakaret affedilemez. Artık kılıçların konuşmasından başka çare yok.\n\nFırtına Toprakları artık Demir Taht'a boyun eğmeyecek. Savaş başladı ve şerefimizle birlikte zaferi kazanacağız."
-agot_laughing_storm_rebellion.0032.a:0 "Benimle karşı karşıya geldiği güne lanet edecek."
-agot_laughing_storm_rebellion.0032.b:0 "Belki de barış arayışına girmek daha akıllıca olur."
-
- #Reconquest
- ### POV: Jaehaerys, Daeron or Duncan Targaryen
- ### Triggers in the future for either Jaehaerys, Daeron or Duncan if they inherit the throne AND if any of The Stormlands LP title gained independent
- #### Option A: Declare reconquest war against The Stormlands
- #### Option A: No reconquest
- agot_laughing_storm_rebellion.0034.t:0 "Ejderhanın Hükmü"
-agot_laughing_storm_rebellion.0034.desc:0 "Bir zamanlar Demir Taht'a bağlı olan Fırtına Toprakları, şimdi [lyonel.GetNamePossessive] önderliğinde isyan bayrağı altında bağımsız bir krallık olduğunu ilan etti.\n\nBabamın saltanatı sırasında krallık parçalandı ve bu hatanın devam etmesine izin veremem. Targaryenların kudreti kolayca kırılmaz ve Fırtına Toprakları bizim hakkımızdır. Savaşın bedeli ağırdır: Kan, altın ve canlar—vereceğim karar, tarihin akışını değiştirecek."
-agot_laughing_storm_rebellion.0034.a:0 "Fırtına Toprakları'nı ateş ve kanla geri alacağım."
-agot_laughing_storm_rebellion.0034.b:0 "Şimdilik özgürlüklerine dokunmayacağım."
- 
- #Realm Reconquest
- ### POV: Jaehaerys, Daeron or Duncan Targaryen
- ### Triggers in the future for either Jaehaerys, Daeron or Duncan if they inherit the throne AND if any of the LP titles gained independent
- #### Option A: Declare reconquest war against the next independent kingdom
- #### Option A: No reconquest
- agot_laughing_storm_rebellion.0037.t:0 "Parçalanmış Bir Krallık"
-agot_laughing_storm_rebellion.0037.desc:0 "[reconquest_target_title.GetName], bir zamanlar Demir Taht'a bağlıydı, ancak şimdi asi bir krallık olarak bağımsızlıklarını ilan ettiler. Varoluşları, babamın başarısızlığının acı bir anısı. Her geçen gün daha da cüretkarlaşıyorlar, zenginlikleri artıyor, güçleri sınır tanımıyor. Krallık paramparça, taht ise eksikliğini hissediyor.\n\nBu isyanın yükü beni eziyor ve artık buna göz yumamam. Demir Taht bölünmez olmalı, otoritesi sorgulanamaz. [reconquest_target_title.GetNameNoTooltip] yönetimini özgür bırakmak, düşmanlarımıza bir silah vermektir."
-agot_laughing_storm_rebellion.0037.a:0 "Demir Taht bir ve bütün olmalı. Savaşa hazırlanın!"
-agot_laughing_storm_rebellion.0037.b:0 "Belki de henüz savaş zamanı değil."
- 
- #Redwyne Independence
- ### POV: Redwyne
- agot_laughing_storm_rebellion.0038.t:0 "Bağımsızlık Tacı"
-agot_laughing_storm_rebellion.0038.desc:0 "Nesiller boyunca Arbor, kendinden büyük lordlara boyun eğdi, ancak hiçbir zaman onlardan aşağı olmadı. Gemilerimiz hazinelerini doldurdu, şaraplarımız ziyafetlerini süsledi, ama biz sadece onların ağacındaki bir dal olarak görüldük. Artık değil.\n\n[stormlands.GetNameNoTier] ejderhanın pençesinden kurtuldu ve şimdi [arbor.GetNameNoTier] de aynı yolu izliyor. Dünya tanık olsun — ben sadece bağların ve gemilerin lordu değilim, hakkı olan bir kralım. Arbor artık hiçbir hükümdara boyun eğmeyecek."
-agot_laughing_storm_rebellion.0038.a:0 "Arbor, olması gerektiği gibi, özgür olacak."
- 
- #Reach informed about PK Arbor
- ### POV: Reach
- #Option A: accept
- #Option B: inform Redwyne that Olenna will be execute if Redwyne won't swear fealty (active only if Olenna is at Reach court)
- agot_laughing_storm_rebellion.0039.t:0 "Zincirleri Kırmak"
-agot_laughing_storm_rebellion.0039.desc:0 "İnsanların hatırlayabildiği kadarıyla, [arbor.GetNameNoTier] zenginliği ve donanması [reach.GetNameNoTier] için hizmet etti, lordları sadık vasallar olarak yemin etti.\n\nAncak şimdi, ejderha devrilmiş ve kendi kaderimiz elimizde iken, onlar kendi tahtlarını talep ediyorlar. [k_arbor_holder.GetTitledFirstNameNicknamed], kendini [Select_CString(k_arbor_holder.IsFemale,'Kraliçe','Kral')] ilan etti ve artık onun sancağı altında savaşmayacağız."
-
-agot_laughing_storm_rebellion.0039.desc.olenna:0 "\n\n[olenna.GetTitledFirstName] salonlarımda misafir olarak kalıyor, ancak gerçekte bir rehine. [k_arbor_holder.GetTitledFirstNameNoTooltip] kendine [Select_CString(k_arbor_holder.IsFemale,'Kraliçe','Kral')] diyebilir, Arbor'un Menzil'den ayrıldığını iddia edebilir, ancak kan bağı gururdan daha güçlüdür."
-
-agot_laughing_storm_rebellion.0039.a:0 "Menzil kendi yolunda yürüyecek."
-agot_laughing_storm_rebellion.0039.b:0 "Arbor'a haber gönderin — tacı karşılığında hayatını bağışlayacağız."
- 
- #Arbor: Reach Threat
- ### POV: Redwyne
- #Option A: swear fealty - Triggers 0041
- #Option B: don't swear fealty - Triggers 0042
- agot_laughing_storm_rebellion.0040.t:0 "Tacın Ağır Yükü"
-agot_laughing_storm_rebellion.0040.desc:0 "Boğazıma dayanmış bir kılıç gibi bir haber geldi. [olenna.GetTitledFirstName], [e_reach_holder.GetTitledFirstName] zindanlarında, benim tacımı daha kök salmadan kırmak için kullandığı bir piyon. Basit bir seçim sunuyor — sadakat yemini et, [arbor.GetNameNoTier] gibi boyun eğ, ya da [olenna.GetTitledFirstNameNoTooltip] adlı kişinin benim isyanım yüzünden acı çekmesini izle.\n\nDiz çökmek, kazandığımız her şeyi kaybetmek demek. Reddetmek ise kendi kanımı feda etmek. Doğru bir cevap yok, sadece yaşamam gereken bir karar var."
-agot_laughing_storm_rebellion.0040.a:0 "Arbor boyun eğer — Olenna yaşayacak."
-agot_laughing_storm_rebellion.0040.b:0 "Bağışla beni, Olenna."
-
-
- ##Arbor remains loyal
- ### POV: Reach
- #Option A: Olenna released, Redwyne vassalized
- agot_laughing_storm_rebellion.0041.t:0 "Reddedilen Taç"
-agot_laughing_storm_rebellion.0041.desc:0 "[k_arbor_holder.GetTitledFirstName] akıllıca bir karar verdi. Tacını bıraktı, sancaklarını indirdi ve [arbor.GetNameNoTier] tekrar [reach.GetNameNoTier] yönetimine boyun eğdi. Bir taht feda edildi, bir hayat kurtarıldı. Adil bir anlaşma mıydı — yoksa yapabileceği tek seçim miydi?\n\nTeslimiyetiyle birlikte, [olenna.GetTitledFirstName] adlı kişiyi zindanlarımda tutmanın bir anlamı kalmadı. Arbor yeniden benim oldu, olması gerektiği gibi."
-agot_laughing_storm_rebellion.0041.a:0 "Onu serbest bırakın — mesele kapandı."
-
- ##Arbor remains independent
- ### POV: Reach
- #Option A: Olenna executed
- agot_laughing_storm_rebellion.0042.t:0 "Tacın Bedeli Ödendi"
-agot_laughing_storm_rebellion.0042.desc:0 "[k_arbor_holder.GetTitledFirstName] kararını verdi. [arbor.GetNameNoTier] yalnız ve gururlu duruyor, sancakları inmed, tacı kırılmadı. Boyun eğmektense ölümü tercih etti. Öyle olsun.\n\n[olenna.GetTitledFirstNamePossessive] kaderi mühürlendi. Bana karşı gelenlere bir uyarı, bir tahtı çok sıkı tutmanın bedeli. [reach.GetNameNoTier] bu hakareti unutmayacak, ben de unutmayacağım.\n\nArbor dimdik ayakta olabilir, ancak kökleri artık kanla sulandı."
-agot_laughing_storm_rebellion.0042.a:0 "Öyle olsun."
- 
- #Initial event for everyone
- ### POV: Every Seven Kingdoms ruler (except Lyonel and Aegon because they have their own starter event)
- ### Bookmark starter event
- agot_laughing_storm_rebellion.0050.t:0 "Kahkaha Fırtınası İsyanı"
-agot_laughing_storm_rebellion.0050.desc:0 "Diyar kaosa sürüklendi. [lyonel.GetTitledFirstNameNicknamed], Demir Taht'a karşı açıkça isyan bayrağını çekti. Gazabı, veliaht prens [duncansmall.GetTitledFirstNameNicknamed] adlı kişinin, Lyonel'in kızını reddedip düşük soylu bir kızla aşk uğruna evlenmesiyle alevlendi—bu skandal, Baratheon Hanesi'nin şerefine leke sürdü ve Fırtına Burnu ile Kral Toprakları arasındaki ittifakı paramparça etti.\n\nKahkaha Fırtınası hafife alınamaz. Meydan okuması Fırtına Toprakları'nda yankılanıyor ve Targaryen hanedanlığına karşı bir başkaldırı olarak diyarı savaşın eşiğine getiriyor. Lyonel öfkesiyle saldırırken, Demir Taht yaklaşan fırtınaya hazırlanmalı. Savaş rüzgarları esiyor ve her hanedan artık tarafını seçmek zorunda."
-agot_laughing_storm_rebellion.0050.a:0 "Fırtına koptu."
-
- ##############################################################
- ## 0100-0104 MAELYS BLACKFYRE EVENTS                        ##
- ##############################################################
-
- #Maelys Challenging Daemon
- ### POV: Maelys the Monstrous
- ### Triggers in the future. Challenging the ruler of the Golden Company to take over the leadership
- #### Option A: Initiate duel against GC ruler (Triggers: 0101 or 0102)
- #### Option B: End of story
- agot_laughing_storm_rebellion.0100.t:0 "Taht İçin Meydan Okuma"
-agot_laughing_storm_rebellion.0100.desc:0 "[daemonbf_lsr.GetTitledFirstNameNicknamed] adlı kişinin zayıf yönetimini fazlaca tahammül ettim. Demir Taht'a layık bir hükümdar için harekete geçme vakti geldi. Liderlik hakkı, ancak çelik ve ateşle kazanılır; Daemon'ı düelloya davet ediyorum.\n\nAncak kudret ve azimle geleceğimizi güvence altına alabilir, gasp edilen haklarımızı geri alabiliriz."
-agot_laughing_storm_rebellion.0100.a:0 "Taht Benim Olacak."
-agot_laughing_storm_rebellion.0100.b:0 "[daemonbf_lsr.GetFirstNameNoTooltip] adlı kişinin saltanatına boyun eğeceğim."
-
- #the duel
- ### POV: GC Ruler
- ### Duel to death event (triggers if the GC ruler is adult)
- #### Option A: Duel (Triggers: 0104)
- agot_laughing_storm_rebellion.0101.t:0 "Hakimiyet Mücadelesi"
-agot_laughing_storm_rebellion.0101.desc:0 "[maelysbf_lsr.GetTitledFirstNameNicknamed], cüretkar bir hamleyle tahtıma göz dikti. Bu meydan okumayı reddetmek, zayıflık göstergesi olur ve takipçilerimin güvenini sarsar. Yönetim hakkım, çelik ve kanla savunulmalı.  [maelysbf_lsr.GetFirstNameNoTooltip] adlı kişinin haddini bildirme vakti geldi.\n\nBu düelloyu kazanarak, hem tahtımı hem de davanın geleceğini güvence altına alacağım."
-agot_laughing_storm_rebellion.0101.a:0 "Çelik Konuşsun."
-
- #usurpation
- ### POV: GC Ruler
- ### Maelys usurping the GC (triggers if the GC ruler is child)
- #### Option A: Continue to play as Maelys
- #### Option B: Continue to play as a random Targaryen ruler (if any)
- #### Option C: Continue to play as the king of the IT (if Targaryen)
- agot_laughing_storm_rebellion.0102.t:0 "Kara Ateş'in Pençesinde"
-agot_laughing_storm_rebellion.0102.desc:0 "[maelysbf_lsr.GetTitledFirstNameNicknamed], kiralık kılıçlardan oluşan ordusuyla sarayımı kuşattı, gözlerindeki açgözlülük ve kin apaçık.  Yedi Cehennem'in buz gibi nefesi üzerime çökerken,  [maelysbf_lsr.GetFirstNameNicknamed] adlı kişinin heybetli gölgesi, kaderimin üzerine kara bir bulut gibi çöküyor.\n\nDoğuştan gelen haklarım, bildiğim her şey paramparça oluyor.  Fakat daha da korkuncu,  [maelysbf_lsr.GetFirstNameNicknamed] adlı kişinin bakışları, salt bir gaspın ötesinde bir niyet barındırıyor. Beni idam sehpasına göndermeyi, soyumu ve iddiamı sonsuza dek silmeyi planlıyor.  Bu canavarın karşısında yapayalnızım, geleceğim karanlığa gömülmek üzere."
-agot_laughing_storm_rebellion.0102.a:0 "Kaderim Bu."
-agot_laughing_storm_rebellion.0102.b:0 "Mücadele Bitmedi."
-agot_laughing_storm_rebellion.0102.c:0 "[king_house_member.GetTitledFirstName] adlı kişiye haber ulaşmalı."
-
- #Maelys the Monstrous
- ### POV: The old GC Ruler OR Maelys
- ### Conclusion of the duel/usurpation (title, desc and option depending on who won)
- #### Option A: End of story
- agot_laughing_storm_rebellion.0104.maelys.t:0 "Canavarın Yükselişi"
-agot_laughing_storm_rebellion.0104.notmaelys.t:0 "Canavarın Sonu"
-agot_laughing_storm_rebellion.0104.maelys.desc:0 "Taht artık benim. Kudretim ve azmimle halkımı zafere götüreceğim ve gasp edilen haklarımızı geri alacağım. Dava artık benim ellerimde ve zafer için her şeyi feda etmeye hazırım.\n\nBana karşı gelen herkes diz çökecek, zira artık Maelys 'Canavar' hüküm sürüyor."
-agot_laughing_storm_rebellion.0104.notmaelys.desc:0 "Maelys'in saltanatı sona erdi ve hakimiyetim pekişti. Kudretim ve kararlılığımla halkıma zaferi tattıracağım."
-agot_laughing_storm_rebellion.0104.notmaelys.a:0 "Yürüyelim!"
-agot_laughing_storm_rebellion.0104.maelys.a:0 "Saltanatımın Şafağı."
-
- #Aegor Bittersteel Starter Event
- agot_laughing_storm_rebellion.0105.t:0 "Küller ve Yeminler"
-agot_laughing_storm_rebellion.0105.desc:0 "Üç yıl geçti, yenilginin acısı hala dilimde kül tadı bırakıyor. Dördüncü Blackfyre İsyanı, soğuk çelik ve ihanet kanlarıyla boğuldu; sancaklarımız parçalandı, kardeşlerimiz katledildi veya dört bir yana savruldu.\n\n[daemon_blackfyre.GetFirstName] için kan döktüm, oğulları için, çürüyen bir hanedanlığın küllerinden yükseltmeye yemin ettiğimiz hayal için. Ancak tüm bunlar yetmedi.  Altın Şirket hala ayakta.\n\nSürgünde, kırılmış, savaş dışında yuvası olmayan kılıçlarız.  Fakat Blackfyre'lar henüz sönmedi, ben de sönmedim. Bir gün, Dar Deniz'i tekrar aşacağız. Bir gün, ejderha hak ettiğini alacak."
-agot_laughing_storm_rebellion.0105.a:0 "Hiçbir hükümdarlık ebedi değildir."
-
- ##############################################################
- ## 0200 - 0201 SCALY EVENTS                                 ##
- ##############################################################
-
- #Scaly Baby
- ### POV: A random Stormlandler ruler
- ### Birth of Scaly Allard
- #### Option A: End of story
- agot_laughing_storm_rebellion.0201.t:0 "Pullu Bebek"
-agot_laughing_storm_rebellion.0201.desc:0 "Nefes nefese kalmış bir saraylı, avluda yapılan tuhaf bir keşfin haberini getirdi. Terk edilmiş, yapayalnız bir bebek bulunmuş.  Yaklaştığımda, alışılmadık bir manzarayla karşılaştım. Bebek, sanki bir sürüngenin derisi gibi, pullarla kaplıydı.\n\nBu gizemli çocuğun kaderi hem merakımı cezbetti hem de yüreğimi burdu. Onu himayeme almaya karar verdim. Sarayımın güvenliği ve rehberliğinde büyüyecek."
-agot_laughing_storm_rebellion.0201.a:0 "Hoş geldin, küçük yavru."
-
- ##############################################################
- ## 0300 - 0311 TYTOS & ELLYN EVENTS                         ##
- ##############################################################
-
- #Ellyn's Seduction
- ### POV: Ellyn Reyne
- ### Seduction attempt on Tytos Lannister
- #### Option A: Seduction attempt
- agot_laughing_storm_rebellion.0300.t:0 "Casterly Kayası'nın Gölgesi"
-agot_laughing_storm_rebellion.0300.desc:0 "Gözden düşmek acıdır, ancak geri dönüşü olmayan bir kader değildir. [tytos.GetTitledFirstName] zayıf bir adam, tatlı sözlerle kolayca kandırılabilir.  Unutulmuş bir eşin intikamını nasıl alacağımı çok iyi biliyorum.\n\n[jeyne.GetTitledFirstName] mı? Casterly Kayası'nın salonlarında kaybolmuş bir fısıltıdan ibaret. Fakat adımı tekrar saygıyla anmalarını sağlayacağım.\n\nYeterince hor görüldüm. Kendi yolumu açmalıyım ve eğer bu yol [tytos.GetTitledFirstNameNoTooltip] adlı kişinin kalbinden geçiyorsa, olsun varsın."
-agot_laughing_storm_rebellion.0300.a:0 "Aslanın yüreği yakında benim pençemde olacak."
-
- #Tytos: Seduction Outcome
- ### POV: Tytos Lannister
- ### Ellyn's seduction attempt
- #### Option A: Remain loyal to current wife (Triggers: 0302)
- #### Option B: Ellyn becomes lover (Triggers: 0303)
- agot_laughing_storm_rebellion.0301.t:0 "Aslanın Fısıltısı"
-agot_laughing_storm_rebellion.0301.desc:0 "[ellyn.GetFirstName] yanı başımda duruyor, sözleri baldan tatlı, bakışları geçmişin hayaleti ve geleceğin vaadiyle dolu. Aramızdaki hava elektriklenirken, eli usulca benimkine değiyor. Dokunuşu, Casterly Kayası'nın soğuk taşlarını delip geçen bir alev gibi yakıcı.\n\n[jeyne.GetFirstName]... Karım, hayatımın güneşi. Fakat Ellyn'in tutkusu, hırsı... İçimde tehlikeli bir arzuyu uyandırıyor.  Geri mi çekilmeliyim, yoksa bu ateşin bizi kül etmesine mi izin vermeliyim?"
-agot_laughing_storm_rebellion.0301.a:0 "Jeyne karımdır, şerefim ona ait."
-agot_laughing_storm_rebellion.0301.b:0 "Bu risk, belki de alınmaya değer."
-
- #Ellyn: Tytos refused me
- ### POV: Ellyn Reyne
- ### Tytos refused me
- #### Option A: Accept the refusal
- #### Option B: Accept the refusal + Jeyne becomes rival of mine
- agot_laughing_storm_rebellion.0302.t:0 "Aslanın Reddiyesi"
-agot_laughing_storm_rebellion.0302.desc:0 "Tytos bana sırtını döndü. O aciz, zavallı aslan, [jeyne.GetFirstName] adlı kişiyi seçti;  kendisine yalnızca soğuk bir görev sunan, renksiz ve sıkıcı bir kadını. Ben ona güç, ihtişam, bir kraliçenin kudretini sundum, fakat o hala zavallı karısına tutunuyor.\n\nAhmaklar sıklıkla böylesi hatalar yapar, fakat bu ahmaklığın cezasız kalmasına izin vermeyeceğim. Bu hakareti sineye çekebilir veya [jeyne.GetFirstNamePossessiveNoTooltip] adlı kişinin Casterly Kayası Leydisi olarak saltanatının umduğundan çok daha kısa sürmesini sağlayabilirim."
-agot_laughing_storm_rebellion.0302.a:0 "Sabırla bekleyeceğim..."
-agot_laughing_storm_rebellion.0302.b:0 "Jeyne bana karşı geldiğine pişman olacak."
-
- #Ellyn: Tytos became my lover
- ### POV: Ellyn Reyne
- ### Tytos become my lover
- #### Option A: Suggest to Tytos that he should divorce from Jeyne and marry me instead (Triggers: 304)
- agot_laughing_storm_rebellion.0303.t:0 "Aslanın Hakiki Eşi"
-agot_laughing_storm_rebellion.0303.desc:0 "[tytos.GetFirstName] sonunda aklını başına topladı ve her zaman bildiğim gerçeği gördü: Ben onun gerçek kraliçesiyim, onu [jeyne.GetFirstName] adlı kişinin asla yapamayacağı kadar yükseklere taşıyabilecek tek kişi.  Ancak aramızda hala bir engel var: Jeyne.\n\nO, hala karısı olduğu sürece, gerçek anlamda birlikte hüküm süremeyiz. Tytos'u onu bir kenara bırakmaya, beni Casterly Kayası'nın hakiki Leydisi yapmaya ikna etmeliyim.  Birlikte, kaderimizde yazılı olduğu gibi hüküm süreceğiz."
-agot_laughing_storm_rebellion.0303.a:0 "Bu birlikteliği resmiyete dökmeliyiz, sevgilim."
-
- #Tytos: Keeping it as secret, or request divorce from father
- ### POV: Tytos Lannister
- ### Ellyn suggested that we shoud marry
- #### Option A: Relationship remains a secret (Triggers: 0311)
- #### Option B: Request divorce from father (Triggers: 0305)
- #### Option C: Request divorce from the High Septon (Triggers: 0306) (only if Tytos already became LP)
- agot_laughing_storm_rebellion.0304.t:0 "Aslanın İkilemi"
-agot_laughing_storm_rebellion.0304.desc:0 "[ellyn.GetFirstNamePossessive] arzusu içimi yakıp kavuruyor, fakat önümdeki yol dikenlerle dolu. [jeyne.GetFirstName] hala karım ve ilişkimiz gizli kalsa da, Casterly Kayası'nın kadim taşları bile sırları sonsuza dek saklayamaz.\n\nYüce Septon, Jeyne ile olan bağı koparıp Ellyn ile evlenmem için gerekli izni verebilir, ancak böylesi bir talep ağır sonuçlar doğurabilir. Gölgelerde mi kalmalıyım, yoksa her şeyi göze alıp yeni bir geleceğe doğru adım mı atmalıyım?"
-agot_laughing_storm_rebellion.0304.a:0 "Bu sır şimdilik güvende kalmalı..."
-agot_laughing_storm_rebellion.0304.b:0 "Babamın rızasını isteyeceğim."
-agot_laughing_storm_rebellion.0304.c:0 "Yüce Septon'dan kutsama dileyeceğim."
-
- #Gerold: Requests divorce from the High Septon
- ### POV: Gerold Lannister
- ### Tytos asked me to grant divorce
- #### Option A: I ask the High Septon for permission (Triggers: 0306)
- agot_laughing_storm_rebellion.0305.t:0 "Bir Babanın Yükü"
-agot_laughing_storm_rebellion.0305.desc:0 "[tytos.GetFirstName], oğlum... Karşımda duruyor ve aşktan, [ellyn.GetFirstName] adlı kişiden bahsediyor. [jeyne.GetFirstNameadlı kişiyi, karısını terk edip ölen kardeşinin dul eşiyle evlenmek istiyor. Bu, kadim geleneklerimize, Lannisterların yüzyıllardır koruduğu düzene aykırı. Ancak kalbi bu karara mühürlenmiş ve belki de bir çözüm bulunabilir.\n\nEğer hanemin tüm gücünü arkasına alıp Yüce Septon'u ikna edebilirsem, bu evlilik mümkün olabilir."
-agot_laughing_storm_rebellion.0305.a:0 "Yüce Septon'a bir mektup yazacağım."
-
- #Gerold: High Septon asks money for the divorce -> Pay or Refuse
- ### POV: Gerold Lannister OR Tytos Lannister
- ### The High Septon's reply. Desc depends on if the High Septon is greedy.
- #### Option A: No Divorce (Triggers: 0308) (Only if the High septon is not Greedy)
- #### Option B: Bribe the High Septon (Triggers: 0310)
- #### Option C: Can't afford the divorce (Triggers: 0307)
- agot_laughing_storm_rebellion.0306.t:0 "Yüce Septon'un Hükmü"
-agot_laughing_storm_rebellion.0306.desc:0 "Yüce Septon'un cevabı geldi;  geleneğin ve ilahi yasaların ağırlığını taşıyor.  Kararı net: Bu boşanma, evlilik bağlarının kutsallığına karşı kabul edilemez bir hakaret olur."
-agot_laughing_storm_rebellion.0306.greedy.desc:0 "\n\nFakat mektubun satır aralarında,  bir esneklik seziliyor.  Sanki bir fısıltı,  uygun bir "bağış" ile kalbinin yumuşayabileceğini ima ediyor. Dedikodulara göre, altın doğru ellere ulaştığında, Yüce Septon'un kararları değişebiliyor.\n\nŞimdi karar bana ait. Bu meseleyi unutup yolumuza devam mı etmeliyim, yoksa kutsamasını almak için gereken bedeli mi ödemeliyim?"
-agot_laughing_storm_rebellion.0306.a:0 "Bu iş burada bitti. Yolumuza devam etmeliyiz."
-agot_laughing_storm_rebellion.0306.b:0 "Cömert bir bağış, fikrini değiştirebilir."
-agot_laughing_storm_rebellion.0306.c:0 "Şerefim rüşvetle lekelenemez."
-agot_laughing_storm_rebellion.0306.c.tt:0 "Ellyn’in kardeşi Roger da Yüce Septon'u rüşvetle ikna etmeyi deneyebilir."
-
- #Roger: If Gerold resued the payment -> Pay or Refuse
- ### POV: Roger Reyne
- ### Gerold/Tytos couldn't afford the bribery, so i pay the sum to bribe the High Septon
- #### Option A: Not bribing the High Septon (Triggers: 0308)
- #### Option B: Bribe the High Septon (Triggers: 0310)
- agot_laughing_storm_rebellion.0307.t:0 "Bir Kardeşin İkilemi"
-agot_laughing_storm_rebellion.0307.desc:0 "[gerold.GetFirstName], [tytos.GetFirstName] adlı kişinin [jeyne.GetFirstName] adlı kişiden boşanıp [ellyn.GetFirstName] ile evlenmesi için Yüce Septon'dan izin istedi, ancak talebi reddedildi.  Yine de, söylentilere göre yeterince altın, Yüce Septon'un fikrini değiştirebilir.\n\nTuhaftır ki, Lannisterların zenginliğine rağmen, Tytos bu rüşveti ödemedi. Şimdi, [ellyn.GetFirstNamePossessiveNoTooltip] umutları tükenmek üzere ve çaresizce bana, kardeşine başvuruyor.\n\nOnun tekrar yükselişini görmek isterim, ancak bu bedel, Castamere'in hazinesi için bile fazlasıyla ağır."
-agot_laughing_storm_rebellion.0307.a:0 "Bu bedel, Ellyn için bile çok ağır."
-agot_laughing_storm_rebellion.0307.b:0 "Kardeşim için ne gerekiyorsa yapacağım."
-
- #Tytos and Ellyn: Noone funded the divorce -> Keep the secret, or elope
- ### POV: Tytos Lannister
- ### Noone granted us divorce
- #### Option A: Leads to end of story (Triggers: 0311)
- #### Option B: We marry anyway (Triggers: 0309 and 0310)
- agot_laughing_storm_rebellion.0308.t:0 "Kanun ve Arzu Arasında"
-agot_laughing_storm_rebellion.0308.desc:0 "Görünüşe göre yasal bir boşanma yolu yok. Yüce Septon, [jeyne.GetFirstName] ile aramdaki kutsal bağı bozmama izin vermeyecek.  Hem tanrılar hem de insanlar önümüze set çekmiş, ancak kalbim hala [ellyn.GetFirstNameadlı kişiyi arzuluyor.\n\nGelenekler bizi zincire vurabilir, ancak aşk bu kadar kolay boyun eğmez."
-agot_laughing_storm_rebellion.0308.a:0 "Kanunlar ne derse desin, birbirimizi sevebiliriz."
-agot_laughing_storm_rebellion.0308.b:0 "Gelenekler Yedi Cehennem'e kadar yolu var! Ellyn ile evleneceğim!"
-agot_laughing_storm_rebellion.0308.b.tt:0 "Babam beni mirasından men edebilir."
-
- #Gerold's Decision
- ### POV: Gerold Lannister
- ### Tytos ignored the High Septon's word and married Ellyn anyways.
- #### Option A: End of story
- #### Option B: End of story + Disinherit Tytos
- agot_laughing_storm_rebellion.0309.t:0 "Oğlunun İhaneti"
-agot_laughing_storm_rebellion.0309.desc:0 "Tytos, yasaları ve ailemizin şerefini hiçe sayarak [jeyne.GetFirstNameadlı kişiyi terk etti ve o Reyne kızıyla evlendi.  Geleneklere değil, kalbinin zayıf sesine kulak verdi.  Ve ne için? Lannister Hanesi'ne leke sürecek bir anlık heves uğruna.\n\nOnu uyardım,  ancak dünyamızı bir arada tutan kadim düzeni hiçe saymakta ısrar etti."
-agot_laughing_storm_rebellion.0309.a:0 "Tanrılar seni affetsin... Umarım pişman olmazsın."
-agot_laughing_storm_rebellion.0309.b:0 "Artık oğlum değilsin. Mirasından men edildin."
-
- #Tytos & Ellyn: We got married!
- ### POV: Tytos/Ellyn
- ### Marriage (3 descs: "desc" is for Tytos, "ellyn.desc" is for Ellyn, "ellyn_anyway.desc" is for Ellyn married regardless the High Septon's decision)
- #### Option A: End of story
- agot_laughing_storm_rebellion.0310.t:0 "Kaderin Bağrında"
-agot_laughing_storm_rebellion.0310.desc:0 "Sonunda Yüce Septon onayını verdi. [jeyne.GetFirstName] adlı kişiden kurtuluşumun yolu açıldı ve [ellyn.GetFirstName] hakiki eşim olarak yanımda duracak.\n\nYedi Tanrı bize gülümsedi, artık önümüzde hiçbir engel yok. Ellyn ile birlikte geleceğimizi,  belki de Lannister Hanesi'nin kaderini şekillendireceğiz. Dünya fısıldaşsın, dedikodu yapsın; bu büyük bir şeyin başlangıcı."
-agot_laughing_storm_rebellion.0310.ellyn.desc:0 "[tytos.GetTitledFirstNamePossessive] [jeyne.GetFirstName] adlı kişiden kurtuluşu kesinleşti ve artık hak ettiğim yere, onun gerçek eşi olarak kavuşuyorum.\n\nYedi Tanrı bize gülümsedi ve önümde durabilecek hiçbir şey yok. Tytos ve ben birlikte geleceğimizi, belki de Reyne Hanesi'nin kaderini şekillendireceğiz. Bırakın dedikodu yapsınlar, bu daha başlangıç."
-agot_laughing_storm_rebellion.0310.ellyn_anyway.desc:0 "Başardık. Krallığın iradesine, saray dedikodularına ve geleneklerin ağırlığına rağmen, [tytos.GetFirstName] adlı kişinin eşi olarak yerimi aldım. Yedi Tanrı bu birliği kutsamamış olabilir, ancak kudret dindarlıktan değil, hırstan gelir ve bende bundan bolca var.\n\nAsiller endişeyle titresin, Septonlar vaaz versin; ben artık hak ettiğim yerdeyim. Birlikte hüküm süreceğiz ve bize karşı gelenler, isyanın bedelini ağır ödeyecek."
-agot_laughing_storm_rebellion.0310.a:0 "Yeni hayatımızın şafağı."
-
- #Ellyn: No marriage
- ### POV: Ellyn Reyne
- ### No Marriage
- #### Option A: End of story + Rivarly with Jeyne
- agot_laughing_storm_rebellion.0311.t:0 "Aşkın İhaneti"
-agot_laughing_storm_rebellion.0311.desc:0 "[tytos.GetFirstName] adlı kişinin tamamen bana ait olacağını, [jeyne.GetFirstNameadlı kişiyi benim için terk edeceğini sanmıştım. Fakat şimdi, paylaştığımız bunca şeyden sonra tereddüt ediyor.  O silik kadının yanında kalmayı, birlikte sahip olabileceğimiz kudrete tercih ediyor.\n\nNe kadar zayıf, ne kadar kolay pes ediyor göreve ve korkuya. Ondan daha fazlasını beklerdim. Artık planlarımı değiştirmeliyim. Eğer benimle birlikte yükselmeyecekse, belki de başka bir yol çizmeliyim kendime."
-agot_laughing_storm_rebellion.0311.a:0 "Bu kadar kolay pes etmeyeceğim."
-
- ##############################################################
- ## 0400-0469 BLOODRAVEN EVENTS                             ##
- ##############################################################
-
- #Bloodraven Elected
- ### POV: Bloodraven
- ### Bookmark starter event
- agot_laughing_storm_rebellion.0400.t:0 "Sur'un Yeni Lord Kumandanı"
-agot_laughing_storm_rebellion.0400.desc:0 "[jack.GetTitledFirstName] adlı kişinin ani vefatıyla, Gece Nöbetçileri'nin Yeminli Kardeşleri beni yeni Lord Kumandan olarak seçti.  Artık kardeşliği yönetmek ve Sur'un ötesindeki tehditlere karşı alemi korumak benim görevim...\n\n#weak Gece çöküyor ve artık nöbetim başlıyor. Ölüm beni bulana dek sürecek. Eş almayacağım, toprak sahibi olmayacağım, çocuk sahibi olmayacağım. Taç giymeyeceğim, zafer peşinde koşmayacağım. Nöbette yaşayacak ve nöbette öleceğim. Ben karanlıktaki kılıcım. Ben surlardaki bekçiyim. Ben soğuğa karşı kalkan ateşim, şafağı getiren ışık, uykudakileri uyandıran boru, insan alemlerini koruyan kalkanım. Bu gece ve gelecek tüm geceler boyunca, hayatımı ve şerefimi Gece Nöbeti'ne adıyorum.#!"
-agot_laughing_storm_rebellion.0400.a:0 "Nöbetim Başladı."
-
- #Aegon V: Dark Sister
- ### POV: Aegon V
- ### Triggers in the future. Ask Bloodraven to give me back Dark Sister.
- #### Option A: Ask for the sword (Triggers: 0402)
- #### Option B: Do not ask for the sword
- agot_laughing_storm_rebellion.0401.t:0 "Karanlık Kız Kardeş"
-agot_laughing_storm_rebellion.0401.desc:0 "Brynden [bloodraven.GetTitledFirstNameadlı kişiyi Sur'a gönderdiğimden beri yıllar geçti ve onunla birlikte Valyria çeliğinden dövülmüş efsanevi kılıç [dark_sister_sword.GetName] de gitti. Karanlık Kız Kardeş kadar kadim ve güçlü bir silah, o buzlu surlarda çürümemeli; Demir Taht'a layık bir yerde olmalı.\n\nBrynden'a haber gönderip, kılıcı layık olduğu yere, yani bana geri getirmesi için büyük bir servet teklif edebilirim."
-agot_laughing_storm_rebellion.0401.a:0 "Karanlık Kız Kardeş, Demir Taht'ın hakkıdır."
-agot_laughing_storm_rebellion.0401.b:0 "Bu kılıcın benim için bir önemi yok."
-
- #Bloodraven: Aegon V wants Dark Sister LETTER
- ### POV: Bloodraven
- ### Eggs asked for Dark Sister.
- #### Option A: Do not give the sword to Egg (Triggers: 0404)
- #### Option B: Give the sword to Egg (Triggers: 0403)
- agot_laughing_storm_rebellion.0402.opening:0 "[bloodraven.GetTitledFirstNameNoTooltip]’a"
-agot_laughing_storm_rebellion.0402.desc:0 "Sana bir kral olarak değil, Eski Valyria'nın kanını taşıyan bir varis olarak yazıyorum ve tahtın hakkı olan bir şeyi geri vermeni talep ediyorum. [dark_sister_sword.GetName], efsanelere konu olmuş bir kılıç, atalarımızın elinde zaferler ve kan görmüş bir silah; o, Demir Taht'a ait, Sur'un buzlu topraklarına değil.\n\nAğırlığı ve değeri kadar altın teklif ediyorum ki, Karanlık Kız Kardeş layık olduğu yerde asılı dursun.  Söyle Brynden, hanemize şeref getirip Karanlık Kız Kardeş'i iade edecek misin, yoksa o kuzeydeki karların altında mı kaybolacak?"
-agot_laughing_storm_rebellion.0402.a:0 "Karanlık Kız Kardeş benimle kalacak."
-agot_laughing_storm_rebellion.0402.b:0 "Karanlık Kız Kardeş'i layık olduğu yere geri vereceğim."
-
- #Aegon V: Bloodraven gave me Dark Sister LETTER
- ### POV: Aegon V
- ### Bloodraven gave me Dark Sister.
- #### Option A: End of sword story.
- agot_laughing_storm_rebellion.0403.opening:0 "[aegonv.GetTitledFirstNameNoTooltip]’a"
-agot_laughing_storm_rebellion.0403.desc:0 "Mektubun bana Sur'da ulaştı ve talebini uzun uzun düşündüm. [dark_sister_sword.GetName] bana sadık bir dost oldu, tıpkı eski Targaryen krallarına olduğu gibi. Keskinliği düşmanlarımızın kanını tattı ve elimde alemi savundu. Fakat artık ben de eski ben değilim ve kılıç kuşanma günlerim geride kaldı.\n\nKrallığın selameti ve hanemin şerefi için, Karanlık Kız Kardeş'i sana iade ediyorum.  Böylece, layık olduğu yerde, Demir Taht'a tekrar hizmet edebilecek. Umarım onu taşıyabilecek kadar güçlü bir el bulur."
-agot_laughing_storm_rebellion.0403.a:0 "Karanlık Kız Kardeş yuvasına dönüyor."
-
- #Aegon V: No sword for me LETTER
- ### POV: Aegon V
- ### Bloodraven did not gave me Dark Sister.
- #### Option A: End of sword story.
- agot_laughing_storm_rebellion.0404.opening:0 "[aegonv.GetTitledFirstNameNoTooltip]’a"
-agot_laughing_storm_rebellion.0404.desc:0 "Sözlerin bana ulaştı, fakat teklifini reddetmek zorundayım. [dark_sister_sword.GetName], sayısız savaşta yanımda yer aldı, çeliği hainlerin ve bu diyarın düşmanlarının kanıyla kutsandı. Artık o bana ait ve burada, Sur'da, krallığa hizmet etmeye devam ediyor. Kuzey sert ve acımasız, ancak burası benim kefaretimi ödediğim yer ve Karanlık Kız Kardeş'in de amacını yerine getirdiği yer.\n\nTeklif ettiğin altın, bu donmuş topraklarda benim için hiçbir anlam ifade etmiyor ve kılıcımdan ayrılmayacağım. Bazı bağlar, bir kez dövüldükten sonra asla kopmaz."
-agot_laughing_storm_rebellion.0404.a:0 "Bunu unutmayacağım."
-
- #Bloodraven: Following my dreams
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- #### Option A: Travel northwards (leads to end of story. Triggers: 0421).
- #### Option B: End of vision story.
- agot_laughing_storm_rebellion.0420.t:0 "Sur'un Ötesinden Gelen Ses"
-agot_laughing_storm_rebellion.0420.desc:0 "Gördüğüm düşler güçleniyor;  ağaç, soğuk ve Sur'un ötesinden gelen o tuhaf fısıltılar gittikçe netleşiyor. Şimdi her zamankinden daha kuvvetli hissediyorum,  donmuş vahşiliğin içinde beni çağıran bir şey var. Geceleyin uluyan rüzgar,  beni kuzeye, bilinen dünyanın sınırlarının ötesine çeken bir şarkı gibi.\n\nİçgüdülerim bunun tehlikeli olduğunu, belki de bir tuzak olduğunu söylüyor, ancak bu çağrıya karşı koyamıyorum. Sur, benimle orada bekleyen şey arasında bir set gibi duruyor, fakat kaderimin buz ve gölgelerin içinde gizlendiğini hissediyorum."
-agot_laughing_storm_rebellion.0420.a:0 "Cevaplar Sur'un ötesinde. Onları bulmalıyım."
-agot_laughing_storm_rebellion.0420.a.tt:0 "Kuzeye doğru bir yolculuğa çıkacaksınız."
-agot_laughing_storm_rebellion.0420.b:0 "Görevim burada."
-
- #Bloodraven: Following my dreams
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event. Disappeared while ranging story. (Becomes the Three-Eyed Crow)
- #### Option A: End of vision story.
- agot_laughing_storm_rebellion.0421.t:0 "Bloodraven'ın Son Uçuşu"
-agot_laughing_storm_rebellion.0421.desc:0 "Ve işte oradalar, kadim ağacın gölgesinde, düşlerimde gördüğüm yeşil tenli çocuklar. Sessizce bekliyorlar, gözleri üzerimde; sanki en başından beri gelişimizi biliyorlarmış gibi.  Etraflarındaki hava farklı, kadim ve güçlü bir varlıkla yüklü. Ben de hissediyorum bunu, derinlerimde bir değişim, sanki artık eskisi gibi değilim, sanki ruhumun bir parçası dönüşüme uğramış.\n\nOnlara doğru bir adım atıyorum ve ormanın kendisi nefes alıyor gibi. Yapraklar fısıldaşıyor, anlayabileceğim kadar yakın sırları mırıldanıyor. Çocuklar konuşmuyor, ama davetlerini hissediyorum, beni kendi dünyalarına çeken o güçlü çağrıyı. Bu, hayal gücümün sınırlarını aşan,  zamandan daha eski bir şeye adım atmak gibi."
-agot_laughing_storm_rebellion.0421.a:0 "Bu yolun nereye çıktığını görmeliyim."
-agot_laughing_storm_rebellion.0421.a.tt:0 "...ve belki de asla geri dönmeyeceğim."
-
- ### Bloodraven Filler Events
-
- #Dream: A Tree
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0451.t:0 "Ağaç"
-agot_laughing_storm_rebellion.0451.desc:0 "Uyku beni teslim alırken, daha önce defalarca gezindiğim, ancak her seferinde aynı huzursuzluğu hissettiğim bir rüyanın içine düşüyorum. Çevremdeki dünya soluklaşıyor, artık Gece Nöbeti'nin Lord Kumandanı değilim; yalnız bir gölgeyim, tuhaf ve soğuk bir diyarda kaybolmuş. Önümde, bir tepenin zirvesinde, devasa ve kadim bir ağaç yükseliyor. Solgun kabuğu, ay ışığında kemik gibi parlıyor. Altında ise,  bir mağara,  karanlık bir ağız gibi açılıyor.\n\nBeni çağıran bir güç hissediyorum, daha da yaklaşmamı emreden bir irade. Adım atıyorum, ancak ayaklarımın altındaki zemin buz tutmaya başlıyor. Soğuk, parmaklarını yukarı doğru uzatıp beni hapsetmeye çalışıyor.  Çırpınıyorum, ancak donmuş toprak beni daha da sıkı kavrıyor.\n\nAğaca ulaşmak üzereyken,  soğuk tüm benliğimi ele geçiriyor ve aniden uyanıyorum.  Gördüğüm görüntü, zihnimde hala canlı bir şekilde yankılanıyor."
-agot_laughing_storm_rebellion.0451.a:0 "Bu rüya ne anlama geliyor?"
-agot_laughing_storm_rebellion.0451.a.tt:0 "...Ben miyim o yayılan soğukluk? Karanlık mağara mı? Yoksa ağaç mı?"
-
-
- #Dream: A Dark Wolf
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0452.t:0 "Karanlık Kurt"
-agot_laughing_storm_rebellion.0452.desc:0 "Uyku beni yuttuğunda, kendimi bir başka rüyanın içinde buluyorum. Dünya, karla kaplı ve çorak bir diyara dönüşmüş,  rüzgar pelerinimi yırtarcasına esiyor.  Uzakta onu görüyorum: Daha önce gördüğüm hiçbir kurda benzemeyen, devasa bir yaratık. Tüyleri gece kadar siyah, gölgelerin içinde kayboluyor. Gözleri ise kan kırmızısı, bembeyaz karın üzerinde şeytani bir ışıkla parlıyor. O korkunç bakışlarıyla beni izliyor, sanki hakkımda bildiğimden daha fazlasını biliyormuş gibi.\n\nYaklaşmaya çalışıyorum, ancak her adımımda kurt sisin içine çekiliyor, her zaman ulaşılamaz bir mesafede kalıyor. Kaybolmadan önce gördüğüm son şey, o kan kırmızısı gözler oluyor.\n\nBir çığlıkla uyanıyorum, kalbim göğsümü delecek gibi atıyor. Karanlık kurdun görüntüsü zihnime kazınmış."
-agot_laughing_storm_rebellion.0452.a:0 "Kurt benden ne istiyor?"
-agot_laughing_storm_rebellion.0452.a.tt:0 "...ve neden gözleri benimkilere bu kadar benziyor?"
-
- #Dream: A Crow with three eyes
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0453.t:0 "Üç Gözlü Karga"
-agot_laughing_storm_rebellion.0453.desc:0 "Uykuya teslim olurken,  kendimi bir kez daha tuhaf bir rüyanın içinde buluyorum. Issız bir arazideyim, gökyüzü karanlık ve kasvetli. Uzaklardan bir karga süzülüyor, simsiyah kanatları havayı sessizce yarıp geçiyor. Yaklaştıkça,  ürkütücü bir ayrıntı dikkatimi çekiyor: Bu sıradan bir karga değil. Alnının tam ortasında,  üçüncü bir göz var;  göz kırpmadan, her şeyi bilirmişçesine bana bakıyor. Karga tepemde daireler çiziyor, bakışları tedirgin edici; sanki benim kavrayamayacağım kadar derin sırları görebiliyormuş gibi.\n\nTek bir kez ötüyor, sesi ıssız arazide yankılanıyor ve anlıyorum ki, yalnızca o karga tarafından değil, çok daha büyük bir şey tarafından izleniyorum.\n\nUyandığımda kalbim ağır, o üç gözlü karganın bakışları zihnimde yankılanıyor, karanlık düşüncelerime kök salıyor."
-agot_laughing_storm_rebellion.0453.a:0 "Karga, üçüncü gözüyle hangi sırları görüyor?"
-agot_laughing_storm_rebellion.0453.a.tt:0 "...ben de ne görüyor?"
-
- #Dream: A Climber
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0454.t:0 "Tırmanan Çocuk"
-agot_laughing_storm_rebellion.0454.desc:0 "Uyku beni bir kez daha teslim alıyor ve hem tuhaf hem de tanıdık bir rüyaya sürükleniyor.  Kendimi, göğe uzanan devasa bir kalenin gölgesinde buluyorum. Gözümün ucuyla, küçük ve çevik bir çocuğun duvarlara tırmanışını görüyorum; elleri ve ayakları,  taşların arasında imkansız görünen yerlere tutunuyor. Bir gölge gibi hareket ediyor, korkusuz ve çevik,  gittikçe yükseliyor. Çocuk arkasına bakmıyor, düşme korkusunu bilmiyor gibi.\n\nOna sesleniyorum, ancak sesim rüzgarda kayboluyor. O ise tırmanmaya devam ediyor, bir ölümlünün ulaşamayacağı yüksekliklere ulaşıyor ve sonunda kulenin zirvesinde, sislerin arasında kayboluyor.\n\nUyandığımda, çocuğun görüntüsü hala aklımda. O imkansız tırmanış,  düşüncelerimin arasında yankılanıyor."
-agot_laughing_storm_rebellion.0454.a:0 "Bu çocuk kim ve nereye tırmanıyor?"
-agot_laughing_storm_rebellion.0454.a.tt:0 "...ve nasıl geri inecek?"
-
- #Dream: A Tree Part 2
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0455.t:0 "Ağacın Çağrısı"
-agot_laughing_storm_rebellion.0455.desc:0 "Bir kez daha uyku beni aynı rüyaya, aynı görüntüye hapsediyor. Devasa ağaç hala tepenin üzerinde yükseliyor, solgun kabuğuyla tüm manzaraya hükmediyor, dalları gökyüzüne uzanmış pençeler gibi. Altındaki mağara ise eskisinden daha karanlık, sanki birini ya da bir şeyi bekliyor. Ayaklarımın altındaki buz geri dönüyor, yukarı doğru tırmanıyor, ancak bu sefer soğuk beni durduramıyor.\n\nİlerliyorum, her adım daha ağır, daha yavaş, fakat ağacın çağrısı şimdi daha net, daha ısrarcı. Tepenin eteğine yaklaştıkça rüzgar ulumaya başlıyor ve yer ayaklarımın altında titriyor. Ağacın dalları sanki canlıymış gibi sallanıyor, beni kendine çağırıyor.\n\nAniden uyanıyorum, rüyanın soğukluğu hala tenimde. Ağacın çekimi ise her zamankinden daha güçlü."
-agot_laughing_storm_rebellion.0455.a:0 "Ağacın altında ne gizli?"
-agot_laughing_storm_rebellion.0455.a.tt:0 "...ve neden beni çağırıyor?"
-
- #Dream: A White Wolf Part 2
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0456.t:0 "Karlar Altındaki Kurt"
-agot_laughing_storm_rebellion.0456.desc:0 "Bir kez daha rüyanın buzlu kollarına teslim oluyorum. Önümde uzanan donmuş manzara sonsuz görünüyor. Rüzgar tenimi ısırıyor, ancak beni asıl rahatsız eden soğuk değil, uzaktan beni izleyen o gözler. Karanlık kurt yine orada, öncekinden daha büyük, kürkü karın beyazlığı içinde gölgelerle dans ediyor.  Kırmızı gözleri karanlıkta parlıyor,  izliyor, bekliyor.\n\nBu kez yaklaştığımda geri çekilmiyor. Aksine,  yerinde duruyor,  bakışlarını benden ayırmıyor. Bir adım atıyorum, kurt boğuk bir hırıltıyla karşılık veriyor; donmuş havada yankılanan bir uyarı. Sanki benimle iletişim kurmaya, beni uyarmaya ya da belki de sınamaya çalışıyor. Daha da yaklaşıyorum, kurt dişlerini gösteriyor, kırmızı gözleri daha da parlıyor. Yerimde donakalıyorum, ilerlemek ve geri çekilmek arasında sıkışıp kalıyorum.\n\nZaman duruyor ve sonra aniden uyanıyorum. Kurdun bakışları hala zihnimde yakıcı bir iz bırakmış."
-agot_laughing_storm_rebellion.0456.a:0 "Kurt benden ne istiyor?"
-agot_laughing_storm_rebellion.0456.a.tt:0 "...ve neyi bekliyor?"
-
- #Dream: A Crow with three eyes Part 2
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0457.t:0 "Sessiz Bekleyiş"
-agot_laughing_storm_rebellion.0457.desc:0 "Uyku, beni bir kez daha gecelerimi zehirleyen o tuhaf görüntüye götürüyor. Önümde aynı ıssız ova uzanıyor, çorak ve cansız. Bu kez karga neredeyse anında beliriyor;  karanlık gökyüzünden sessiz kanatlarla süzülerek iniyor. Üç gözü soluk ışıkta parlıyor, bakışları her zamankinden daha keskin, daha delici. Özellikle üçüncü gözü,  sadece kim olduğumu değil, kim olabileceğimi de görüyormuş gibi, ruhumun derinliklerine bakıyor.\n\nKarga yakındaki bükülmüş bir dalın üzerine konuyor ve sessizlik içinde beni izliyor. Varlığını hissediyorum, gücünü, anlayışımın ötesinde bir kuvveti. Tekrar ötüyor, öncekinden daha yüksek bir sesle ve o an dünya onun sesiyle titriyor. Karga hala beni izliyor, sanki henüz kavrayamadığım bir gerçeği anlamamı bekliyormuş gibi.\n\nKaranlıkta uyanıyorum, karganın gözleri hala zihnimde; sanki uyanık dünyaya da sızmış gibi."
-agot_laughing_storm_rebellion.0457.a:0 "Karga hangi bilgiyi saklıyor?"
-agot_laughing_storm_rebellion.0457.a.tt:0 "...ve neden beni seçiyor?"
-
- #Dream: A Climber Part 2
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0458.t:0 "Gökyüzündeki Alev"
-agot_laughing_storm_rebellion.0458.desc:0 "Yine aynı rüyanın pençesindeyim. Çocuk orada, kadim kalenin devasa duvarlarına inanılmaz bir çeviklikle tırmanıyor. Bu kez ona daha yaklaşıyorum, kulenin dibine doğru yürüyorum, taşların soğukluğunu ayaklarımın altında hissediyorum. Yaklaştıkça gökyüzü kararıyor ve alev alev yanan bir kılıç gibi, kızıl bir kuyruklu yıldız gökyüzünü ikiye bölüyor. Kuyruklu yıldızın ateşi çocuğun tırmanışını aydınlatıyor, uzun ve ürkütücü gölgeler oluşturuyor. O an duraksıyorum, göktaşının parlaklığı karşısında büyülenmiş gibi. Havada daha büyük bir şeyin kıpırdandığını hissediyorum.\n\nGözlerimi tekrar çocuğa çevirdiğimde, artık yok. Yerinde sadece simsiyah bir karga,  az önce çocuğun durduğu duvara tünemiş, bana bakıyor. Bir an duraksıyor, sonra kanatlarını açıp gökyüzüne yükseliyor ve ufukta kayboluyor.\n\nUyandığımda, kızıl kuyruklu yıldızın ve kaybolan çocuğun görüntüsü zihnime kazınmış."
-agot_laughing_storm_rebellion.0458.a:0 "Kuyruklu yıldız hangi felaketi haber veriyor?"
-agot_laughing_storm_rebellion.0458.a.tt:0 "...ve çocuğa ne oldu?"
-
- #Dream: The Night
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0459.t:0 "Gecenin Kalbinde"
-agot_laughing_storm_rebellion.0459.desc:0 "Uyku beni ele geçiriyor ve mutlak bir karanlığa gömülüyorum; yıldızsız bir gece, iliklerime işleyen bir soğuk. Çevremdeki dünya donmuş, kar ve buzla kaplı. Rüzgar,  binlerce sesle uluyor, korku ve felaket fısıldıyor. Uzakta, hayatta kalmaya çalışan zayıf bir ateşin titrek ışığını görüyorum. Ona doğru yürümeye çalışıyorum, ancak her adımda karanlık daha da koyulaşıyor, ışığı yutuyor.\n\nGölgeler karda kıpırdanıyor ve içlerinde bir şeyin hareket ettiğini fark ediyorum. Kadim, uğursuz bir şey. Başımı kaldırıyorum ve gökyüzünün bomboş olduğunu görüyorum; ne ay var ne yıldızlar, sadece sonsuz bir boşluk.\n\nSoğuk beni daha da sıkı sarıyor ve ateş sönüyor. Karanlık tüm benliğimi yutarken uyanıyorum, tenimde hala o dondurucu soğukluk var."
-agot_laughing_storm_rebellion.0459.a:0 "Gecenin gölgelerinde ne gizleniyor?"
-agot_laughing_storm_rebellion.0459.a.tt:0 "...ve neden bu kadar soğuk?"
-
- #Dream: The Dead
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0460.t:0 "Yürüyen Ölüler"
-agot_laughing_storm_rebellion.0460.desc:0 "Uyku beni yuttuğunda, rahatsız edici derecede tanıdık bir diyara sürükleniyorum. Hava buz gibi, çürümenin keskin kokusuyla boğucu. Çatlamış ve kurumuş bir arazide duruyorum. Uzakta, yavaş ve doğaüstü bir şekilde hareket eden silüetler görüyorum. Önce gölgeler gibi görünüyorlar, ama yaklaştıkça gerçek yüzleri ortaya çıkıyor.\n\nBunlar insan değil, ceset. Ölümde donmuş yüzler, boş göz çukurları, gri ve çürümüş deri; ancak damarlarında hala hayat varmışçasına hareket ediyorlar. Ölüler dirilmiş, korkunç bir sessizlik içinde bana doğru yürüyorlar. Gözleri hiçbir şeyi ve her şeyi aynı anda görüyor gibi. Konuşmaya, bağırmaya çalışıyorum, ancak sesim çıkmıyor. Aniden, ölülerden biri başını çeviriyor ve cansız bakışlarını üzerime dikiyor.\n\nSoğuk terler içinde uyanıyorum, yürüyen ölülerin görüntüsü zihnimde çığlıklar atıyor."
-agot_laughing_storm_rebellion.0460.a:0 "Ölüler neden yürüyor?"
-agot_laughing_storm_rebellion.0460.a.tt:0 "...ve ne istiyorlar?"
-
- #Aemon: Dragon with three heads
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0461.t:0 "Ejderhanın Düşü"
-agot_laughing_storm_rebellion.0461.desc:0 "Sessizce Üstat Aemon'un odasına giriyorum, küçük bir soru sormak niyetindeyim.  Ancak daha konuşamadan,  uykusunda kıpırdandığını, kaşlarını çattığını görüyorum. Gözleri birden açılıyor ve bir an için rüya ile uyanıklık arasında sıkışıp kalmış gibi görünüyor. Doğruluyor, gözlerini kırpıştırıyor; sanki gördüğü düşün izleri hala zihnindeymiş gibi.\n\n#italic “Ejderhanın üç başı vardır,”#! diye fısıldıyor, neredeyse kendi kendine konuşur gibi. Sesi titrek ve belirsiz. #italic “Hep böyleydi... hep böyle olacak. Üç baş, tek beden. Onlar olmadan ejderha... ejderha paramparça olur.”#! Gözlerini ovuşturuyor ve bana bakıyor, sanki o an fark etmiş gibi. #italic “Anlıyor musun? Bir baş yetmez. Diğerleri de yükselmeli.”#!\n\nBaşını sallıyor, sanki uykunun etkisinden kurtulmaya çalışır gibi. Ancak sözleri havada asılı kalıyor, derin bir anlam taşıyor. Onu izliyorum,  söylediklerinin bir kehanet mi yoksa sadece bir rüyanın yankısı mı olduğunu anlamaya çalışıyorum. Sözlerinin ağırlığı odanın havasını dolduruyor."
-agot_laughing_storm_rebellion.0461.a:0 "Bu düşte ne gördü acaba?"
-
- #Aemon: A Targaryen in a distant land
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0462.t:0 "Uzaklardaki Ejderha"
-agot_laughing_storm_rebellion.0462.desc:0 "Gece derinleşirken, kendimi Üstat Aemon'un odasına girerken buluyorum. Uyanık, ancak bakışları uzaklarda, sanki odanın ötesindeki bir şeye odaklanmış gibi. Gözleri benimkilerle buluşuyor, fakat içinde bir belirsizlik seziyorum; sanki hala rüya ile gerçeklik arasında sıkışıp kalmış gibi.\n\n#italic “Uzak bir diyarda bir Targaryen var...”#! diye fısıldıyor, sesi gizemle dolu. #italic “Nerede olduğunu bilmiyorum, ama... kanımızdan biri, çok uzaklarda, kaybolmuş ve amaçsızca dolaşıyor.”#! Ellerinin hafifçe titrediğini görüyorum, alnına bastırarak gördüğü görüntüyü anlamaya çalışıyor. #italic “Tam olarak anlayamıyorum... ama bu kişinin önemli olduğunu biliyorum. Bir şekilde bizimle bağlantılı.”#!\n\nSesi giderek alçalıyor, boşluğa bakıyor; sanki hala vizyonunun etkisindeymiş gibi. Sözleri havada asılı kalıyor, zihnimde bu uzak, bilinmeyen Targaryen hakkında sayısız soru uyandırıyor."
-agot_laughing_storm_rebellion.0462.a:0 "Benden mi bahsediyor?"
-
- #Ranging: A Child
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0463.t:0 "Çocuk"
- agot_laughing_storm_rebellion.0463.desc:0 "Küçük bir keşif gezisinden döndüm, ancak yolculuktan aklımda kalan bir şey var, sanki silinmeyen bir gölge gibi zihnime takılmış durumda. Orada, vahşi doğada, karın ve ıssızlığın ortasında bir şey gördüğümü sandım... ya da birini.\n\nAğaçların arasında hızla hareket eden küçük bir çocuk. Bir an için teni garip göründü... ormanın kendisi gibi yeşilimsi. Bu sadece kısa bir anlıktı ve tekrar baktığımda çoktan kaybolmuştu. Gruptaki diğer hiç kimse bir şey görmemişti. Sordum, ancak verdikleri bakışlar gözlerimin bana oyun oynadığını düşündürdü.\n\nBu sadece bir ışık oyunu muydu, yoksa daha fazlası mı? O yeşil tenli çocuğun görüntüsü beni hala rahatsız ediyor. Gerçekten ne gördüğümden veya bunun ne anlama geldiğinden emin değilim, ama bunun gerçek olduğuna dair içimde bir his var."
- agot_laughing_storm_rebellion.0463.a:0 "Zihnim bana oyun mu oynuyor?"
-
- #Ranging: The Children
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0464.t:0 "Ormanın Çocukları"
-agot_laughing_storm_rebellion.0464.desc:0 "Keşif sırasında,  grubumdan ayrılarak doğanın sessiz cazibesine kapıldım. Ve o anda onları gördüm: Ağaçların arasında duran üç çocuk. Tenleri tuhaf, yeşilimsi bir renkteydi; sanki ormanın bir parçasıymış gibi doğayla bütünleşmişlerdi. Konuşmadılar, fakat gözleri beni sessizce dünyalarına davet ediyordu. Bir adım attım, içimde karşı konulmaz bir çekim hissettim, ancak sonra görevimi hatırladım.\n\nHızla geri dönüp grubumu topladım, gördüklerimi onlara göstermek için yanıp tutuşuyordum.  Ancak geri döndüğümüzde, çocuklar gitmişti. Sanki hiç var olmamış gibi yok olmuşlardı. Diğerleri bana şüpheyle baktı ve ben de gördüklerimi hayal edip etmediğimi sorgulamaya başladım.  Ama onların varlığını hala hissedebiliyordum; sanki gölgelerin arasından beni izliyorlardı."
-agot_laughing_storm_rebellion.0464.a:0 "Orman benimle oyun mu oynuyor?"
-
- #Bloodraven: Brothers
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0465.t:0 "Kardeşler"
-agot_laughing_storm_rebellion.0465.desc:0 "Kuzeyin buz gibi rüzgarı Kara Kale'nin surlarını dövüyor, omuzlarımdaki ağır görevin sert bir hatırlatıcısı. Sur'un üzerinden ufka bakarken, düşüncelerim istemsizce geçmişin derinliklerine sürükleniyor, ruhuma kazınmış izler gibi aklımdan çıkmayan yüzlere. İki kardeş, hatıralarımda en keskin şekilde beliriyor: Biri soylu ve gururlu, bir zamanlar sevdiğim ancak hırsın pençesine düşmüş; diğeri ise intikam ve kinle gölgelenmiş, düşmanlığı ayaklarımın altındaki buz kadar soğuk.\n\nBu düşünceler beni kemiriyor, yıllar geçse de durmaksızın geri dönüyor. Kan bağının ve ihanetin şekillendirdiği bir adamım artık; dünyanın ucunda nöbet tutan yalnız bir figür. Bu görev bana ne huzur sunuyor ne de geçmişin hayaletlerinden kaçış. Belki de burası, sonsuz karlar ve kadim ağaçlar arasında, huzuru bulmam gereken yer... Ya da belki de, geçmişin hayaletlerini sonsuza dek yanımda taşıyacağım yer."
-agot_laughing_storm_rebellion.0465.a:0 "Geçmiş, asla gerçekten geride kalmaz."
-
- #Red Dream: A Girl in the Flames
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0466.t:0 "Alevlerden Doğuş"
-agot_laughing_storm_rebellion.0466.desc:0 "Uyku beni bir kez daha bir görüntüye hapsediyor, güneş kadar parlak yanan bir sahneye. Bir figür önümde duruyor, alevlerle çevrili, bedeni kavurucu sıcaklıkta bükülüyor. Ateş onu yutarken, sıcaklık dayanılmaz hale geliyor ve alevler yükseliyor, figürü tamamen içine alıyor.\n\nOna ulaşmaya çalışıyorum, ancak alevler beni geri püskürtüyor. Tam alevlerin içinde yok olurken, yukarı bakıyorum ve gece gökyüzünün bile yandığını görüyorum. Sanki yıldızlar tutuşmuş, gökler alev alev. Altımdaki toprak titriyor ve alevlerin kalbinde bir gölge kıpırdanıyor. Devasa ve korkunç bir ejderha ateşten doğuyor, pulları erimiş altın gibi parlıyor. Gözleri benimkilerle buluşuyor ve varlığını tüm benliğimde hissediyorum; kadim ve kudretli.\n\nSoğuk terler içinde uyanıyorum, ejderhanın ve figürün görüntüsü zihnime kazınmış; kaderleri gökyüzündeki alevlerle sonsuza dek birbirine bağlanmış."
-agot_laughing_storm_rebellion.0466.a:0 "Ejderha uyandı... peki ya bedeli ne?"
-
- #Red Dream: Wildfire
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0467.t:0 "Alevler İçindeki Taht"
-agot_laughing_storm_rebellion.0467.desc:0 "Uyku beni yuttuğunda, ateş ve yıkımla dolu bir görüntüye sürükleniyorum. Devasa bir şehir önümde uzanıyor, ancak bir şeyler fena halde ters gitmiş. Onu yiyip bitiren alevler sıradan değil; tuhaf, doğaüstü bir yeşille parlıyor, etrafındaki havayı bile büküyor. Vahşi Ateş.\n\nBinalar çatırdıyor ve erirken, yeşil alevler onları yalayıp yutuyor, taşları ve ahşabı grotesk şekillere dönüştürüyor. Bu ateş canlı gibi, açgözlü; sadece şehrin yapılarını değil, altındaki toprağı da tüketiyor.\n\nYanmış taş ve kül kokusu havayı doldururken, şehrin kalbinin yok oluşunu çaresizce izliyorum. Aniden uyanıyorum; yanan şehrin görüntüsü zihnime kazınmış, yeşil vahşi ateş hala düşüncelerimde dans ediyor."
-agot_laughing_storm_rebellion.0467.a:0 "Bu, Aerion'un çarpık bir hatırası mı?"
-agot_laughing_storm_rebellion.0467.a.tt:0 "...yoksa daha büyük bir kötülüğün habercisi mi?"
-
- #Bloodraven: Whispers of the Dragon
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0468.t:0 "Ejderhanın Fısıltıları"
-agot_laughing_storm_rebellion.0468.desc:0 "Sur'un tepesinde duruyor, önümde sonsuza uzanan buzlu topraklara bakıyorum. Rüzgar, uzun zaman önce söylenmiş sözlerin yankısı gibi, buz gibi havada fısıldıyor. Soğuk tenimi yakıyor, ancak geçmişin ağırlığı daha derinden üşütüyor. Zihnim eski efsanelere kayıyor; geleceği gören Targaryenler, kaderin gölgesinde yankılanan rüyalar...\n\nFetih'ten çok önce, ejderhaların zamanın ötesini görebildiği, rüyalarının hem bir lütuf hem de bir lanet olduğu söylenirdi. Ateşin, kanın ve yıkımın kehanetleri titreyen alevler içinde belirirdi; ancak bu görüntüler ağır bir bedelle gelir, rüya görenleri deliliğe ya da umutsuzluğa sürüklerdi.\n\nUzaklara bakarken, karla kaplı dünya dalgalanıyor gibi görünüyor. Bu rüyaların ağırlığını omuzlarımda hissediyorum. Ben de bu mirası mı paylaşıyorum? Geleceğin gölgeleri bana mı sesleniyor, korkunç bir bedelle gelecek olanları mı gösteriyor? Sur sessiz kalıyor; yalnızca soğuk ve sessizlik sunuyor."
-agot_laughing_storm_rebellion.0468.a:0 "Bu rüyalar bir lütuf mu?"
-agot_laughing_storm_rebellion.0468.a.tt:0 "...yoksa açığa çıkmayı bekleyen bir lanet mi?"
-
- #Bloodraven: The Cold Dark Night
- ### POV: Bloodraven
- ### Vision/Dream/Flashback event.
- agot_laughing_storm_rebellion.0469.t:0 "Soğuk ve Karanlık Gece"
-agot_laughing_storm_rebellion.0469.desc:0 "Dışarıda,  soğuk rüzgar uluyarak Kuzey'in bitmek bilmeyen kışını taşıyor. Odamın içinde, tek bir mumun titrek alevi taş duvarlara ürkütücü gölgeler düşürüyor. Siyah pelerinimle sessizce oturuyorum, Gece Nöbeti'nin bir üyesi olarak. İşte böyle gecelerde, eski ihanetlerin hatıraları zihnime musallat oluyor.\n\nGözlerim odanın uzak köşesindeki kuzguna kayıyor; sessizce beni izliyor. Kendi kendime mırıldanıyorum, uzun zaman önce edilmiş bir konuşmayı hatırlayarak: #italic "Hain korkaklık gösterdi diye, ihanet daha az iğrenç olmaz."#! Butterwell bu dersi canıyla ödemişti ve şimdi bu kardeşler de gölgemde dikkatli adımlar atmak zorundalar.\n\nGece derinleşiyor, soğuk Kara Kale'nin duvarlarına baskı yapıyor. Dışarıda, karanlıkta, sırlar uyanıyor olabilir; ancak şimdilik her şey sessiz.  Ben ise nöbetteyim, bekleyişim hiç bitmeyecek."
- agot_laughing_storm_rebellion.0469.a:0 "Gece uzun ve karanlık, ama ben direneceğim."
-agot_laughing_storm_rebellion.0469.a.tt:0 "Ateş hafifçe çatırdıyor, Kuzey'in acımasız soğuğuna karşı zayıf bir sıcaklık sunarak."
-agot_laughing_storm_rebellion.0469.b:0 "İhanet iz bırakır, ancak dikkatim benim zırhımdır."
-agot_laughing_storm_rebellion.0469.b.tt:0 "Kuzgunun gözü mum ışığında parlıyor, hiçbir sırrın benden gizlenemeyeceğini hatırlatır gibi."
-agot_laughing_storm_rebellion.0469.c:0 "Soğuk ısırabilir, ama nöbetim devam ediyor."
-agot_laughing_storm_rebellion.0469.c.tt:0 "Dışarıda rüzgar gece boyunca uluyor. İçeride, sessizlik içinde oturuyorum, daima tetikteyim."
+  #Lyonel's Fury 
+  ### POV: Lyonel Baratheon 
+  ### Bookmark starter event 
+ agot_laughing_storm_rebellion.0001.t: "Kahkaha Fırtınası Yükseliyor"
+ agot_laughing_storm_rebellion.0001.desc: "Bu ihanet, Valyria çeliğinden daha derin kesiyor. [duncansmall.GetTitledFirstNameNicknamed], kanatlarımın altındaki kızım [cassandra.GetFirstName] ile nişanlıyken kutsal yeminlerini çiğnedi ve o gölgedeki kız, [jenny.GetNameNicknamed] ile karanlığa karıştı. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan bu saygısızlık cevapsız kalmayacak.\n\nAilemin şerefi ayaklar altına alındı, Demir Taht'ın oyunlarıyla kirletildi. [lyonel.GetHouse.GetBaseNameNoTooltip] Hanesi bir lekeyi asla unutmaz. Bağımsızlık kaderimizdir ve eğer bu yol savaştan geçiyorsa, öyle olsun.\n\nFırtına Toprakları kendi kanunlarıyla yönetilecek ve atalarımızın hakkını son damla kanımıza kadar savunacağız."
+ agot_laughing_storm_rebellion.0001.a: "Öfke Bizimdir!"
+  
+  #The King's Trouble 
+  ### POV: Aegon V 
+  ### Bookmark starter event 
+  #### Triggers: 0003 
+ agot_laughing_storm_rebellion.0002.t: "Ufukta Kara Bulutlar"
+ agot_laughing_storm_rebellion.0002.desc: "Demir Taht hiç bu kadar ağır olmamıştı. Delikanlı oğlum, [duncansmall.GetTitledFirstNameNicknamed], verilmiş bir sözü kırdı ve [cassandra.GetFullName] adlı kişiyi reddederek [jenny.GetFirstNameNicknamed] adlı kişiyi seçti.\n\nŞimdi [lyonel.GetFullNameNicknamed] adlı kişinin gazabı Yedi Krallık'ı kasıp kavurmakla tehdit ediyor. Demir Taht'tan bağımsızlık istiyor, ailesinin onurunu geri almak için alevi savaşa atmaya hazır. Hükümdar olarak, bu felaketi önlemek için ivedilikle harekete geçmeliyim.\n\n[lyonel.GetTitledFirstNameNoTooltip] ile [duncantall.GetTitledFirstName] 'Uzun Duncan' arasında bir şampiyon dövüşü, bir yargılama yoluyla savaşı önlemek için bir şans olabilir. Bu bir risk, fakat diyarı gereksiz bir kan gölüne dönmekten kurtarabilir."
+ agot_laughing_storm_rebellion.0002.a: "Lord Kumandan bu meseleyi çözsün."
+  
+  #The King's Offer 
+  ### POV: Lyonel 
+  ### Pre-event for the Lyonel v Duncan Tall duel. 
+  #### Option A: will lead to duel (Triggers: 0004) 
+  #### Option B: might lead to immediate war of independence (Triggers: 0025) 
+ agot_laughing_storm_rebellion.0003.t: "Şeref Dövüşü"
+ agot_laughing_storm_rebellion.0003.desc: "Kral'ın mührünü taşıyan bir kuzgun geldi; bu anlaşmazlığı tek bir dövüşle, [duncantall.GetTitledFirstName] 'Uzun' ile bir şampiyon dövüşüyle çözmeyi teklif ediyor. Geçmiş savaşlarda onunla omuz omuza çarpıştığımızı hatırlıyorum — bir zamanlar silah arkadaşlarım olan bizler, şimdi karşı karşıya gelebiliriz. Bu düello sadece kılıçların dansı değil; bu, şeref için, [lyonel.GetHouse.GetBaseName] Hanesi'nin ruhu için bir mücadele.\n\nReddetmek bağımsızlığımız anlamına gelebilir, ancak bedeli ne olacak? Kaderimizi tayin etme vakti geldi."
+ agot_laughing_storm_rebellion.0003.a: "Yedi Tanrı karar versin; #bold dövüşle yargılanacağız!#!"
+ agot_laughing_storm_rebellion.0003.b: "Sahte bir hükümdarın emirlerine boyun eğmeyeceğim."
+  
+  #A Trial 
+  ### POV: Lyonel 
+  ### Duel event. 
+  #### If Lyonel wins triggers 0020 
+  #### If Duncan wins and Lyonel is alive triggers 0007 and 0008 
+  #### If Duncan wins and Lyonel has died triggers 0009 
+ agot_laughing_storm_rebellion.0004.t: "Fırtına ve Çelik Dansı"
+ agot_laughing_storm_rebellion.0004.desc: "Kral Toprakları'na giden yol uzun ve meşakkatliydi. Şimdi Kızıl Kale'nin gölgesinde, Kraliyet Muhafızları Lord Kumandanı [duncantall.GetFirstName] 'Uzun Duncan' ile karşı karşıyayım. Geçmişte birlikte verdiğimiz savaşların hayaletleri zihnimde dolaşıyor, fakat bugün dostluk yerini göreve bıraktı.\n\nBu, şeref için, [lyonel.GetHouse.GetBaseName] Hanesi'nin namı için verilen bir savaş. Yedi Krallık'ın gözleri üzerimizde ve yalnızca biri hayatta kalacak.\n\nÇelik şarkısı kahkahamdan daha yüksek çıksın ve bu kader düellosunda en güçlü olan kazansın."
+ agot_laughing_storm_rebellion.0004.a: "#bold Ha ha ha!#!"
+  
+  #Duel Tooltips 
+ agot_laughing_storm_rebellion.t: "Çelikle Yargılama"
+ agot_laughing_storm_rebellion.duncan_won: "[duncantall.GetTitledFirstNameNoTooltip], [lyonel.GetTitledFirstNameNoTooltip] adlı kişiyi düelloda yendi."
+ agot_laughing_storm_rebellion.lyonel_won: "[lyonel.GetTitledFirstNameNoTooltip], [duncantall.GetTitledFirstNameNoTooltip] adlı kişiyi düelloda alt etti."
+  
+  #Lyonel Lost 
+  ### POV: Lyonel 
+  ### Post-duel event. 
+ agot_laughing_storm_rebellion.0007.t: "Fırtınanın Sonu"
+ agot_laughing_storm_rebellion.0007.desc: "Düello sona erdi ve çeliğin şarkısı sustu. Tüm gücüme rağmen, [duncantall.GetTitledFirstName] galip geldi. Yenilgi, zehir gibi acı bir gerçek ve kaybın ağırlığı ruhumu eziyor.\n\n[lyonel.GetHouse.GetBaseName] Hanesi'nin onuru lekelendi ve kaderi artık [aegonv.GetTitledFirstNameRegnal] adlı kişinin insafına kaldı. Demir Taht önünde diz çökerken, hükümdarın hükmünü beklerken, Fırtına Toprakları'nın geleceği karanlıkta gizleniyor. Kral, benim ve hanemin kaderi hakkında ne karar verecek?"
+ agot_laughing_storm_rebellion.0007.a: "Kaderimi başım dik karşılayacağım."
+  
+  #Lyonel Lost 
+  ### POV: Aegon V 
+  ### Post-duel event. 
+  #### Triggers: 0010 (regardless the selected option) 
+ agot_laughing_storm_rebellion.0008.t: "Hükümdarın Lütfu"
+ agot_laughing_storm_rebellion.0008.desc: "[lyonel.GetFullNameNicknamed], yenilmiş fakat ruhu kırılmamış bir şekilde huzurumda duruyor. [duncantall.GetTitledFirstName] karşısında aldığı yenilgiye rağmen, diyardaki huzursuzluk devam ediyor. Bir hükümdar olarak, barış ve istikrarın önemini biliyorum. Ağır bir ceza isyan ateşini körükleyebilir, ancak merhamet bu yarayı sarabilir.\n\nBu hassas dengeyi korumak için, Baratheon Hanesi'ni tahtıma daha sıkı bağlayacak bir evlilik bağı teklif etmeyi düşünüyorum.\n\nKızımı oğluyla evlendirmeyi mi teklif etmeliyim, yoksa yalnızca sadakat yemini yeterli olur mu?"
+ agot_laughing_storm_rebellion.0008.a: "Rhaelle'in elini oğluna teklif ediyorum."
+ agot_laughing_storm_rebellion.0008.b: "Vaella'nın elini oğluna teklif ediyorum."
+ agot_laughing_storm_rebellion.0008.c: "Bir teklifte bulunmuyorum."
+  
+  #Lyonel Lost - Lyonel died 
+  ### POV: Aegon V 
+  ### Post-duel event. 
+  #### Triggers: 0031 
+ agot_laughing_storm_rebellion.0009.t: "Fırtınanın Sönüşü"
+ agot_laughing_storm_rebellion.0009.desc: "[lyonel.GetFullNameNicknamed], [duncantall.GetTitledFirstName] ile yaptığı şampiyon dövüşünde hayatını kaybetti. Bir zamanlar büyük bir tehdit olan meydan okuması ve cesareti sonsuza dek sustu. Yedi Krallık'ı parçalamakla tehdit eden isyan, liderinin ölümüyle sona erdi.\n\nBarış pahalıya mal oldu ve bu çatışmanın yankıları nesiller boyu hatırlanacak. Fırtına Toprakları teslim oldu, diyar yaralarını sarmaya başlayabilir, ancak bu olayın gölgesi uzun yıllar Demir Taht'ın üzerinde kalacak."
+ agot_laughing_storm_rebellion.0009.a: "Savaştı, düştü ve şimdi ebedi uykusunda."
+  
+  #A new betrothal 
+  ### POV: Lyonel 
+  ### Betrothal offer from Egg 
+  #### Option A: Leads to betrothal (Triggers: 0028) 
+  #### Option B: Leads to end of story (Triggers: 0030) 
+  #### Option C: Leads to end of story (Triggers: 0030) 
+ agot_laughing_storm_rebellion.0010.t: "Fırtınanın Külünden"
+ agot_laughing_storm_rebellion.0010.betrothal.desc: "Çelikle Yargılama'daki yenilgimizin ardından, [aegonv.GetTitledFirstNameRegnal] bir barış teklifiyle geldi: kızı [targ_betrothed.GetTitledFirstNamePossessive] elini oğlum [bara_betrothed.GetTitledFirstName] adlı kişiye vermeyi teklif ediyor. Bu jest, [lyonel.GetHouse.GetBaseName] Hanesi ile Demir Taht arasındaki husumeti sona erdirmeyi ve kalıcı bir barış sağlamayı amaçlıyor.\n\nAilemin onuru bu evlilikle temizlenebilir ve bu bağ, Fırtına Toprakları'nın geleceğini güvence altına alabilir."
+ agot_laughing_storm_rebellion.0010.nobetrothal.desc: "Çelikle Yargılama'daki yenilgimizin ardından, Demir Taht'tan gelen sessizlik buz gibi bir bıçak kadar keskin. [aegonv.GetTitledFirstNameRegnal] ne bir evlilik teklif ediyor ne de bir barış jesti—yalnızca soğuk ve acımasız bir yenilgi gerçeği var.\n\n[lyonel.GetHouse.GetBaseName] Hanesi'nin onuru hala lekeli ve Fırtına Toprakları'nın kaderi belirsiz. Ailemin bir sonraki adımını düşünerek yalnız başıma duruyorum; yolumuzun dikenli olduğu aşikar ve bu yenilginin gölgesi uzun süre üzerimizde kalacak."
+ agot_laughing_storm_rebellion.0010.a: "Kral'ın teklifini kabul ediyorum."
+ agot_laughing_storm_rebellion.0010.b: "Bu teklifi reddetmeliyim."
+ agot_laughing_storm_rebellion.0010.c: "Kaderime boyun eğiyorum."
+  
+  ############################################################## 
+  ## 0011-0018 LAUGHING STORM EVENTS - Canon Breakups         ## 
+  ############################################################## 
+  
+  #Jaehaerys & Shaera 
+  ### POV: Jaehaerys Targaryen 
+  ### Breaking betrothals between Jaeharys+Celia Tully and Shaera+Luthor Tyrell 
+  #### Option A: Parents notified about the breakup (Triggers: 0013) 
+  #### Option B: End of story 
+ agot_laughing_storm_rebellion.0011.t: "Yüreğin Çatışması"
+ agot_laughing_storm_rebellion.0011.desc: "Kardeşim [duncansmall.GetFirstName] adlı kişinin seçimleri ruhumda derin bir yankı uyandırdı. [cassandra.GetTitledFirstName] adlı kişiyi terk edip [jenny.GetFirstNameNicknamed] ile tutku uğruna evlenme kararı, kendi yolumu sorgulamama neden oldu. [celia.GetTitledFirstName] ile bir evlilik zinciriyle bağlıyken, yüreğim gerçek aşkım [shaera.GetFirstName] için çarpıyor.\n\nGörev ve arzu arasında sıkışıp kaldım. Kardeşimin yolundan gidip kalbimin sesine mi kulak vermeliyim, yoksa yeminlerime mi sadık kalmalıyım?"
+ agot_laughing_storm_rebellion.0011.a: "Evet, yüreğimin sesini dinlemeliyim."
+ agot_laughing_storm_rebellion.0011.b: "Hayır, görev her şeyden önce gelir."
+  
+  #Daeron 
+  ### POV: Daeron Targaryen 
+  ### Breaking betrothal between Daeron+Olenna Redwyne 
+  #### Option A: Parents notified about the breakup (Triggers: 0014) 
+  #### Option B: End of story 
+ agot_laughing_storm_rebellion.0012.t: "Kaderin Kesiştiği Yol"
+ agot_laughing_storm_rebellion.0012.desc: "Ağabeylerimin aşk uğruna yeminlerini çiğneyip kalplerinin sesini dinlediğini görmek, ruhumda bir fırtına koparıyor. [olenna.GetTitledFirstName] ile yaklaşan bir evlilik sözleşmesiyle bağlıyım, ancak onu tanıdığımı söyleyemem. [olenna.GetTitledFirstName] nazik bir ruh gibi görünüyor, fakat aklım ve kalbim başka diyarlarda geziyor.\n\nGörevin ağırlığı omuzlarıma çöküyor, ancak gerçek mutluluğun çağrısı da bir o kadar güçlü. Kendi yolumu çizip aşkı mı aramalıyım, yoksa önüme serilen kaderi mi kabul etmeliyim?"
+ agot_laughing_storm_rebellion.0012.a: "Evet, yüreğimin yolundan gideceğim."
+ agot_laughing_storm_rebellion.0012.b: "Hayır, görevime bağlı kalacağım."
+  
+  #Jaehaerys & Shaera - notification 
+  ## Can be triggered via event 0021 (or can trigger after some time in historical game ruler) 
+  ### POV: Egg, Steffon Tully, Garlan Tyrell 
+  ### Jaeharys+Celia Tully and Shaera+Luthor Tyrell broke up 
+  #### Option A: End of story 
+  #### Option B (only for Egg): End of story + Jaehaerys and Shaera are disinherited 
+ agot_laughing_storm_rebellion.0013.t: "Başkaldıran Kalpler"
+ agot_laughing_storm_rebellion.0013.desc: "Beklenmedik ve cüretkar bir olay yaşandı. [jaehaerys.GetTitledFirstName], [celia.GetTitledFirstName] ile olan nişanını bozdu ve [shaera.GetTitledFirstName] da [luthor.GetTitledFirstName] ile olan bağlarını kopardı. Geleneklere ve göreve meydan okuyarak, şimdi birbirleriyle evlendiklerini ilan ettiler.\n\nBu pervasız hareket, öfke ve kaosa neden oldu, ittifakları ve beklentileri altüst etti. Bu evliliğin yankıları Yedi Krallık'ta yankılanacak ve lordlar bu beklenmedik ve sorunlu kararın sonuçlarıyla yüzleşmek zorunda kalacak."
+ agot_laughing_storm_rebellion.0013.a: "Bu bir felaket."
+ agot_laughing_storm_rebellion.0013.b: "Bedelini ödemeliler."
+  
+  #Daeron - notification 
+  ## Can be triggered via event 0021 (or can trigger after some time in historical game ruler) 
+  ### POV: Egg, Runceford Redwyne 
+  ### Daeron+Olenna Redwyne broke up 
+  #### Option A (only for Egg): End of story 
+  #### Option B (only for Runceford if Luthor Tyrell is NOT betrothed): Luthor and Olenna betrothal might happen (Triggers: 0015) 
+  #### Option C (only for Runceford if Luthor Tyrell is betrothed): End of story 
+ agot_laughing_storm_rebellion.0014.t: "Kırılan Söz"
+ agot_laughing_storm_rebellion.0014.desc: "Bu haber, yüreğime bir hançer gibi saplandı. [daeron.GetTitledFirstName], [olenna.GetTitledFirstName] ile olan nişanını bozdu ve özenle hazırlanmış planları paramparça etti. Bu beklenmedik gelişme, derin bir hayal kırıklığı ve belirsizlik yarattı.\n\nBu kırılan sözün yankıları, haneler ve ittifaklar üzerinde uzun süre hissedilecek ve mevcut güç dengelerini sarsacak."
+ agot_laughing_storm_rebellion.0014.aegonv.a: "Bu kabul edilemez bir durum."
+ agot_laughing_storm_rebellion.0014.runceford.a: "Belki de Garlan'a bir evlilik teklifi götürmenin zamanı gelmiştir."
+ agot_laughing_storm_rebellion.0014.runceford.a.tt: "[olenna.GetTitledFirstName] ve [luthor.GetTitledFirstName] arasında bir nişan teklif edilecek."
+ agot_laughing_storm_rebellion.0014.runcefordx.a: "Bu üzücü bir haber."
+  
+  #Luthor + Olenna = ? 
+  ### POV: Garlan Tyrell 
+  ### Betrothal offer from Runceford Redwyne 
+  #### Option A: Agrees to the betrothal (Triggers: 0016) 
+  #### Option B: Refuses the betrothal (Triggers: 0018) 
+ agot_laughing_storm_rebellion.0015.t: "Yeni Bir İttifak"
+ agot_laughing_storm_rebellion.0015.desc: "[daeron.GetTitledFirstName] adlı kişinin [olenna.GetTitledFirstName] ile olan nişanını bozmasının ardından, [runceford.GetTitledFirstName] Lordu bana yeni bir teklifle geldi. [olenna.GetTitledFirstName] adlı kişinin elini oğlum [luthor.GetTitledFirstName] adlı kişiye vermeyi öneriyor.\n\nBu evlilik, hanelerimiz arasındaki bağları güçlendirebilir ve [garlan.GetHouse.GetBaseName] Hanesi'nin geleceğini güvence altına alabilir. Dikkatle değerlendirilmesi gereken bir fırsat."
+ agot_laughing_storm_rebellion.0015.a: "Bu ittifak hanemize güç katacaktır."
+ agot_laughing_storm_rebellion.0015.b: "Bu teklifi reddetmeliyim."
+  
+  #Luthor + Olenna = betrothal 
+  ### POV: Runceford Redwyne 
+  ### Betrothal between Olenna and Luthor 
+  #### Option A: Final confirmation on the betrothal (Triggers: 0017) 
+  #### Option B: Refuses the betrothal (Triggers: 0018) 
+ agot_laughing_storm_rebellion.0016.t: "Bir Lordun Kararı"
+ agot_laughing_storm_rebellion.0016.desc: "[garlan.GetTitledFirstName], [olenna.GetTitledFirstName] ile [luthor.GetTitledFirstName] adlı kişinin nişanlanması teklifini kabul etti. Bu ittifak, hanelerimiz arasında güçlü bir bağ kuracak ve büyük faydalar sağlayacak. Ancak, [olenna.GetFirstNamePossessiveNoTooltip] babası olarak, bu birlikteliğin onun için de hayırlı olmasını sağlamak benim görevim.\n\nSon karar bana ait ve ailem için doğacak faydaları kızımın mutluluğuyla dikkatlice tartmalıyım."
+ agot_laughing_storm_rebellion.0016.a: "Nişan hazırlıklarına başlayalım."
+ agot_laughing_storm_rebellion.0016.b: "Olenna'nın mutluluğu için bu teklifi reddetmeliyim."
+  
+  #Luthor + Olenna = betrothal notification 
+  ### POV: Garlan Tyrell 
+  ### Olenna and Luthor betrothed, alliance made 
+  #### Option A: End of story 
+ agot_laughing_storm_rebellion.0017.t: "Sağlam Bir İttifak"
+ agot_laughing_storm_rebellion.0017.desc: "Nihayet, [olenna.GetTitledFirstName] ve [luthor.GetTitledFirstName] arasındaki nişan resmiyet kazandı. Bu evlilik, hanelerimiz arasında güçlü bir bağ kuracak, karşılıklı fayda sağlayacak ve gelecekteki ittifaklarımızı pekiştirecek.\n\nBu birliktelik sayesinde, her iki aile de güç ve prestij kazanacak ve refah dolu bir geleceğin temelleri atılmış olacak."
+ agot_laughing_storm_rebellion.0017.a: "Bu kutlu bir olay!"
+  
+  #Luthor + Olenna = refused 
+  ### POV: Garlan Tyrell OR Runceford Redwyne (depending who refused it) 
+  ### Olenna and Luthor betrothal negotiation failed 
+  #### Option A: End of story 
+ agot_laughing_storm_rebellion.0018.t: "Yitirilen Bir Şans"
+ agot_laughing_storm_rebellion.0018.desc: "[olenna.GetTitledFirstName] ve [luthor.GetTitledFirstName] arasındaki nişan reddedildi. Bu büyük bir kayıp, çünkü bu evlilik her iki haneye de önemli avantajlar sağlayacak, bağlarımızı güçlendirecek ve geleceğimizi koruyacaktı.\n\nBu aksilik karşısında, ileriye bakmalı ve ailemizin refahını sağlayacak yeni ittifaklar ve fırsatlar aramalıyız."
+ agot_laughing_storm_rebellion.0018.a: "Çocuğum kendi yolunu çizecektir."
+  
+  ############################################################## 
+  ## 0020-0035 LAUGHING STORM EVENTS - Non-Canon Scenarios    ## 
+  ############################################################## 
+  
+  #Lyonel Won 
+  ### POV: Lyonel 
+  ### Lyonel beats Duncan Tall in the duel 
+  #### Option A: Lyonel remains a vassal if Egg agrees to sending Duncan Targaryen to the wall and a marriage between Rhaella and Ormund Baratheon (or Herbert if Ormund died somehow) (Triggers: 0021) 
+  #### Option B: Declares independence (Triggers: 0026) 
+ agot_laughing_storm_rebellion.0020.t: "Fırtınanın Galibiyeti"
+ agot_laughing_storm_rebellion.0020.desc: "Çelikle Yargılama sona erdi ve [duncantall.GetTitledFirstName] yenik düştü. [lyonel.GetHouse.GetBaseName] Hanesi'nin şerefi geri kazanıldı ve zaferin ateşi damarlarımda akıyor. Şimdi, bir yol ayrımındayım.\n\n"
+ agot_laughing_storm_rebellion.0020.desc.both: "Bağımsız kalabilir, Demir Taht'tan uzakta kendi kaderimi çizebilirim. Ya da, [aegonv.GetTitledFirstNameRegnal] adlı kişiden yeni bir nişan teklifi ve [duncansmall.GetTitledFirstNameNicknamed] adlı kişinin Sur'a gönderilmesi şartıyla sadakat yemini edebilirim."
+ agot_laughing_storm_rebellion.0020.desc.only_banishment: "Bağımsız kalabilir, Demir Taht'tan uzakta kendi kaderimi çizebilirim. Ya da, [duncansmall.GetTitledFirstNameNicknamed] adlı kişinin Sur'a gönderilmesi şartıyla sadakat yemini edebilirim."
+ agot_laughing_storm_rebellion.0020.desc.only_betrothal: "Bağımsız kalabilir, Demir Taht'tan uzakta kendi kaderimi çizebilirim. Ya da, [aegonv.GetTitledFirstNameRegnal] adlı kişiden yeni bir nişan teklifi gelmesi şartıyla sadakat yemini edebilirim."
+ agot_laughing_storm_rebellion.0020.desc.none: "Bağımsız kalabilir, Demir Taht'tan uzakta kendi kaderimi çizebilirim. Ya da, koşulsuz olarak sadakat yemini edebilirim."
+ agot_laughing_storm_rebellion.0020.a: "Sadakat yemini ederim, ancak adalet istiyorum."
+ agot_laughing_storm_rebellion.0020.a.simple: "Daha fazla kan dökülmesine gerek yok—sadakatimi sunuyorum."
+ agot_laughing_storm_rebellion.0020.b: "Fırtına Toprakları kendi ayakları üzerinde duracak."
+  
+  #Lyonel Won 
+  ### POV: Aegon V 
+  ### Lyonel demanded to send Prince Duncan to the wall and a marriage between Rhaella and Ormund Baratheon in order for him to remain loyal 
+  #### Option A: Demand refused - might lead to the break of betrothals (Triggers: 0013, 0014, 0023, 0024 and 0032) 
+  #### Option B: Demand accepted (Triggers: 0028) 
+ agot_laughing_storm_rebellion.0021.t: "Fırtınanın Şartları"
+ agot_laughing_storm_rebellion.0021.no_demand.t: "Fırtınanın Zaferi"
+ agot_laughing_storm_rebellion.0021.desc: "[lyonel.GetFullNameNicknamed], Çelikle Yargılama'da zafer kazandı ve [duncantall.GetTitledFirstName] adlı kişiyi alt etti.\n\n"
+ agot_laughing_storm_rebellion.0021.desc.both: "Şimdi sadakat yemini etmeyi teklif ediyor, ancak bağlılığı bir bedelle geliyor: Kraliyet ailesinden yeni bir nişan ve oğlum [duncansmall.GetTitledFirstNameNicknamed] adlı kişinin Sur'a gönderilmesi. Bu karar, hem krallığın itibarını hem de güçlü bir vasalın taleplerini dengeleme meselesi.\n\nBu şartları kabul etmenin veya reddetmenin sonuçlarını dikkatlice değerlendirmeliyim."
+ agot_laughing_storm_rebellion.0021.desc.only_banishment: "Şimdi sadakat yemini etmeyi teklif ediyor, ancak bağlılığı bir bedelle geliyor: Oğlum [duncansmall.GetTitledFirstNameNicknamed] adlı kişinin Sur'a gönderilmesi. Bu karar, hem krallığın itibarını hem de güçlü bir vasalın taleplerini dengeleme meselesi.\n\nBu şartları kabul etmenin veya reddetmenin sonuçlarını dikkatlice değerlendirmeliyim."
+ agot_laughing_storm_rebellion.0021.desc.only_betrothal: "Şimdi sadakat yemini etmeyi teklif ediyor, ancak bağlılığı bir bedelle geliyor: Kraliyet ailesinden yeni bir nişan. Bu karar, hem krallığın itibarını hem de güçlü bir vasalın taleplerini dengeleme meselesi.\n\nBu şartları kabul etmenin veya reddetmenin sonuçlarını dikkatlice değerlendirmeliyim."
+ agot_laughing_storm_rebellion.0021.desc.none: "Şimdi koşulsuz olarak sadakat yemini etmeyi teklif ediyor. Yemini diyara bir nebze huzur getirse de geçmişteki anlaşmazlıklar kolayca unutulmayacak.\n\nŞimdilik krallık yeniden bir bütün."
+ agot_laughing_storm_rebellion.0021.a: "Bu küstah talebi reddediyorum."
+ agot_laughing_storm_rebellion.0021.a.no_demand: "Barış hüküm sürsün."
+ agot_laughing_storm_rebellion.0021.b: "Bu teklif barışı sağlayabilir."
+  
+  #Lyonel Refused the marriage 
+  ### POV: Aegon V 
+  #### Option A: End of story 
+ agot_laughing_storm_rebellion.0022.t: "Geyik'in İnadı"
+ agot_laughing_storm_rebellion.0022.desc: "[lyonel.GetTitledFirstNamePossessive] cevabı hızlı ve kesin geldi — bu evliliği reddediyor. Ne bir özür, ne bir nezaket belirtisi, sadece hanesinin benimle, barış uğruna bile olsa, bağ kurmasına izin vermeyecek çelik gibi bir irade.\n\nDövüşü kaybetti, ancak bu konuda geri adım atmayacak. Fırtına kolayca dinmeyecek."
+ agot_laughing_storm_rebellion.0022.a: "Öyle olsun."
+ agot_laughing_storm_rebellion.0022.a.tt: "Öyle olsun."
+  
+  #creating the alliance 
+  ### POV: Runceford Redwyne, Steffon Tully, Garlan Tyrell (only if their children are involved in Targaryen betrothal break ups) 
+  ### Lyonel offers alliance for the coming war 
+  #### Option A: Ally with Lyonel 
+  #### Option B: End of story 
+ agot_laughing_storm_rebellion.0023.t: "İsyan Bayrağı"
+ agot_laughing_storm_rebellion.0023.desc: "[duncansmall.GetTitledFirstNameNicknamedPossessive] kırılan nişanı, [lyonel.GetHouse.GetBaseName] Hanesi'nin şerefine leke sürdü ve şimdi [lyonel.GetTitledFirstNameNicknamed] adlı kişiyi Demir Taht'a karşı isyana sürüklüyor. [lyonel.GetTitledFirstNameNoTooltip], sancağı altında adam topluyor ve bağımsızlık için savaşmaya hazırlanıyor.\n\nBenim çocuğum da Targaryenlar'ın elinde acı çekti, bu yüzden [lyonel.GetFirstNameNoTooltip] adlı kişinin davasına katılmak haklı bir sebep gibi görünüyor. Ancak ben her zaman Demir Taht'a sadık kaldım ve bir isyanın bedeli ağır olabilir. Bu, hanemin kaderini belirleyecek önemli bir karar."
+ agot_laughing_storm_rebellion.0023.a: "'Kahkaha Fırtınası'nın yanında yer alıyoruz."
+ agot_laughing_storm_rebellion.0023.b: "Demir Taht'a sadık kalıyoruz."
+  
+  #WAR 
+  ### POV: Lyonel 
+  ### War event (desc depends on who accepted the call) 
+  #### Option A: The war begins 
+ agot_laughing_storm_rebellion.0024.t: "Fırtına Kopuyor"
+ agot_laughing_storm_rebellion.0024.garlan_steffon_runceford.desc: "Vakti geldi. Ordum hazır, sancaklar dalgalanıyor ve kalpler çelikten sağlam. Yanımda [runceford.GetTitledFirstName], [garlan.GetTitledFirstName] ve [steffon.GetTitledFirstName] ile birlikte, savaş naraları Fırtına Toprakları'nda yankılanıyor. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan hakaret, fırtınanın hiddetiyle karşılık bulacak.\n\nŞerefimiz ve bağımsızlığımız için ilerliyoruz, önümüze çıkacak her engele hazırız. Demir Taht sarsılacak, çünkü fırtınanın gazabı üzerlerine inecek."
+ agot_laughing_storm_rebellion.0024.steffon_runceford.desc: "Vakti geldi. Ordum hazır, sancaklar dalgalanıyor ve kalpler çelikten sağlam. Yanımda [steffon.GetTitledFirstName] ve [runceford.GetTitledFirstName] ile birlikte, savaş naraları Fırtına Toprakları'nda yankılanıyor. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan hakaret, fırtınanın hiddetiyle karşılık bulacak.\n\nŞerefimiz ve bağımsızlığımız için ilerliyoruz, önümüze çıkacak her engele hazırız. Demir Taht sarsılacak, çünkü fırtınanın gazabı üzerlerine inecek."
+ agot_laughing_storm_rebellion.0024.garlan_runceford.desc: "Vakti geldi. Ordum hazır, sancaklar dalgalanıyor ve kalpler çelikten sağlam. Yanımda [garlan.GetTitledFirstName] ve [runceford.GetTitledFirstName] ile birlikte, savaş naraları Fırtına Toprakları'nda yankılanıyor. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan hakaret, fırtınanın hiddetiyle karşılık bulacak.\n\nŞerefimiz ve bağımsızlığımız için ilerliyoruz, önümüze çıkacak her engele hazırız. Demir Taht sarsılacak, çünkü fırtınanın gazabı üzerlerine inecek."
+ agot_laughing_storm_rebellion.0024.garlan_steffon.desc: "Vakti geldi. Ordum hazır, sancaklar dalgalanıyor ve kalpler çelikten sağlam. Yanımda [garlan.GetTitledFirstName] ve [steffon.GetTitledFirstName] ile birlikte, savaş naraları Fırtına Toprakları'nda yankılanıyor. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan hakaret, fırtınanın hiddetiyle karşılık bulacak.\n\nŞerefimiz ve bağımsızlığımız için ilerliyoruz, önümüze çıkacak her engele hazırız. Demir Taht sarsılacak, çünkü fırtınanın gazabı üzerlerine inecek."
+ agot_laughing_storm_rebellion.0024.garlan.desc: "Vakti geldi. Ordum hazır, sancaklar dalgalanıyor ve kalpler çelikten sağlam. Yanımda [garlan.GetTitledFirstName] ile birlikte, savaş naraları Fırtına Toprakları'nda yankılanıyor. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan hakaret, fırtınanın hiddetiyle karşılık bulacak.\n\nŞerefimiz ve bağımsızlığımız için ilerliyoruz, önümüze çıkacak her engele hazırız. Demir Taht sarsılacak, çünkü fırtınanın gazabı üzerlerine inecek."
+ agot_laughing_storm_rebellion.0024.steffon.desc: "Vakti geldi. Ordum hazır, sancaklar dalgalanıyor ve kalpler çelikten sağlam. Yanımda [steffon.GetTitledFirstName] ile birlikte, savaş naraları Fırtına Toprakları'nda yankılanıyor. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan hakaret, fırtınanın hiddetiyle karşılık bulacak.\n\nŞerefimiz ve bağımsızlığımız için ilerliyoruz, önümüze çıkacak her engele hazırız. Demir Taht sarsılacak, çünkü fırtınanın gazabı üzerlerine inecek."
+ agot_laughing_storm_rebellion.0024.runceford.desc: "Vakti geldi. Ordum hazır, sancaklar dalgalanıyor ve kalpler çelikten sağlam. Yanımda [runceford.GetTitledFirstName] ile birlikte, savaş naraları Fırtına Toprakları'nda yankılanıyor. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan hakaret, fırtınanın hiddetiyle karşılık bulacak.\n\nŞerefimiz ve bağımsızlığımız için ilerliyoruz, önümüze çıkacak her engele hazırız. Demir Taht sarsılacak, çünkü fırtınanın gazabı üzerlerine inecek."
+ agot_laughing_storm_rebellion.0024.none.desc: "Vakti geldi. Ordum hazır, sancaklar dalgalanıyor ve kalpler çelikten sağlam. Sadık yoldaşlarım yanımda, savaş naraları Fırtına Toprakları'nda yankılanıyor. [lyonel.GetHouse.GetBaseName] Hanesi'ne yapılan hakaret, fırtınanın hiddetiyle karşılık bulacak.\n\nŞerefimiz ve bağımsızlığımız için ilerliyoruz, önümüze çıkacak her engele hazırız. Demir Taht sarsılacak, çünkü fırtınanın gazabı üzerlerine inecek."
+ agot_laughing_storm_rebellion.0024.a: "Savaşa!"
+  
+  #Lyonel refused the trial 
+  ### POV: Aegon V 
+  ### Lyoned refused the trial 
+  #### Option A: Leads to war (Triggers: 0027) 
+  #### Option B: Grant him independence anyway (Triggers: 0026) 
+ agot_laughing_storm_rebellion.0025.t: "Hükümdarın Tereddüdü"
+ agot_laughing_storm_rebellion.0025.desc: "[lyonel.GetTitledFirstName], [duncantall.GetTitledFirstName] ile dövüşmeyi reddetti; bu hiç beklemediğim bir hamleydi. Bu beklenmedik durum beni zor bir kararın eşiğine getirdi.\n\nOna istediği bağımsızlığı vererek diğer lordlar için tehlikeli bir örnek mi teşkil etmeliyim, yoksa isyanının bedelini ödeterek krallığı daha büyük bir savaşa mı sürüklemeliyim? Fırtına Toprakları'nın kaderi ve Demir Taht'ın istikrarı bu karara bağlı."
+ agot_laughing_storm_rebellion.0025.a: "Cüretinin bedelini ödemeli."
+ agot_laughing_storm_rebellion.0025.b: "Ona bağımsızlık tanımalıyım."
+  
+  #The Storm King 
+  ### POV: Lyonel 
+  ### The Stormlands became independent 
+  #### Option A: Leads to end of story (Triggers: 0029) 
+ agot_laughing_storm_rebellion.0026.t: "Fırtına Hükümdarı"
+ agot_laughing_storm_rebellion.0026.desc: "Zafer bizim oldu. Bağımsızlığımızı kazandık ve Fırtına Toprakları, tıpkı atalarımız Durrandonlar gibi, bir kez daha özgürce nefes alacak. Sancaklarımız gururla dalgalanıyor, egemenliğimizi ve kadim haklarımızın geri döndüğünü ilan ediyor.\n\n[lyonel.GetHouse.GetBaseName] Hanesi'nin şerefi geri kazanıldı ve biz, Demir Taht'ın zincirlerinden kurtulmuş olarak kendi kaderimizi tayin etmeye hazırız. Bütün dünya tanık olsun, Fırtına Hükümdarı tahta çıktı!"
+ agot_laughing_storm_rebellion.0026.a: "Fırtına Toprakları muzaffer!"
+  
+  #The Early War 
+  ### POV: Lyonel 
+  ### Pre-War event 
+  #### Option A: Leads to war (Triggers: 0024) 
+ agot_laughing_storm_rebellion.0027.t: "Toplanan Bulutlar"
+ agot_laughing_storm_rebellion.0027.desc: "Çelikle Yargılama'yı reddettikten sonra, artık savaşın kıyısında duruyorum. Gerilim elle tutulurcasına arttı ve Fırtına Toprakları yaklaşan savaşa hazırlanıyor. Bağımsızlığımızı kazanmak ve şerefimiz için savaşmak adına, Demir Taht'ın gazabına karşı bizimle omuz omuza duracak müttefikler bulmalıyım.\n\nÖnümüzdeki yol zorlu, ancak sadık dostlarla her fırtınaya göğüs gerebiliriz."
+ agot_laughing_storm_rebellion.0027.a: "Müttefiklerimizi çağıralım."
+  
+  #Fin 
+  ### POV: Lyonel 
+  ### Everything goes back to normal (canon-ish timeline) 
+  #### Option A: Leads to end of story (Triggers: 0030) 
+ agot_laughing_storm_rebellion.0028.t: "Yeniden Kazanılan Barış"
+ agot_laughing_storm_rebellion.0028.desc: "Çalkantılı bir dönemin ardından, hükümdar tarafından yeni bir nişan ayarlandı ve barış yolu açıldı. Fırtına Toprakları, şerefi temizlenmiş ve Demir Taht ile bağları yenilenmiş bir şekilde geleceğe umutla bakabilir.\n\nBu ittifak, istikrar ve birlik vadediyor, böylece halkımızın refahı ve huzuruna odaklanabiliriz."
+ agot_laughing_storm_rebellion.0028.desc.no_betrothal: "Çalkantılı bir dönemin ardından barış yolu açıldı. Fırtına Toprakları, şerefi temizlenmiş ve Demir Taht ile bağları yenilenmiş bir şekilde geleceğe umutla bakabilir.\n\nBu uzlaşma, istikrar ve birlik vadediyor, böylece halkımızın refahı ve huzuruna odaklanabiliriz."
+ agot_laughing_storm_rebellion.0028.a: "Bu barışı koruyacağız."
+  
+  #The Storm King 
+  ### POV: Everyone 
+  ### The Stormlands became independent 
+  #### Option A: End of story 
+ agot_laughing_storm_rebellion.0029.t: "Fırtına Hükümdarı"
+ agot_laughing_storm_rebellion.0029.desc: "Bağımsızlık mücadelesinde zafer, [lyonel.GetHouse.GetBaseName] Hanesi'nin oldu. Fırtına Toprakları, tıpkı görkemli Durrandonlar döneminde olduğu gibi bir kez daha özgürce hüküm sürecek. Sancakları gururla dalgalanıyor, egemenliklerini ve kadim haklarının geri kazanıldığını ilan ediyor.\n\n[lyonel.GetHouse.GetBaseName] Hanesi'nin şerefi iade edildi ve onlar, Demir Taht'ın zincirlerinden kurtulmuş olarak kendi kaderlerini tayin etmeye hazırlar."
+ agot_laughing_storm_rebellion.0029.a: "Kahkaha Fırtınası son gülen olacak mı?"
+  
+  #Fin 
+  ### POV: Everyone 
+  ### Everything goes back to normal (canon-ish timeline) 
+  #### Option A: End of story 
+ agot_laughing_storm_rebellion.0030.t: "Huzur Geri Döndü"
+ agot_laughing_storm_rebellion.0030.desc: "Çalkantılı bir dönemin ardından bir çözüm bulundu ve krallığa istikrar geri getirildi. Fırtına Toprakları artık geleceğe odaklanmalı, yakın geçmişteki kargaşa çatışmanın ağır bedelini hatırlatıyor.\n\nBarış sağlandığına göre, krallık yaralarını sarmaya başlayabilir. Şimdi öncelik, yeniden yapılanma ve tüm halkın refahını sağlamak olmalı.\n\nBu dönem, birliğin değerini ve barışın ne kadar nadir olduğunu hatırlatmalı."
+ agot_laughing_storm_rebellion.0030.a: "Bu barışın kalıcı olmasını dilerim."
+  
+  
+  #Lyonel died 
+  ### POV: Everyone 
+  ### Lyonel died in the trial by combat 
+  #### Option A: End of story 
+ agot_laughing_storm_rebellion.0031.t: "Fırtınanın Sönüşü"
+ agot_laughing_storm_rebellion.0031.desc: "[lyonel.GetFullNameNicknamed], [duncantall.GetTitledFirstName] ile yaptığı düelloda hayatını kaybetti. Bir zamanlar büyük bir tehdit olan cüreti ve meydan okuması sonsuza dek sustu. Yedi Krallık'ı parçalamakla tehdit eden isyan, liderinin ölümüyle sona erdi.\n\nBarış pahalıya mal oldu ve bu savaşın yankıları nesiller boyu unutulmayacak. Fırtına Toprakları boyun eğdirilmiş olsa da, krallık yaralarını sarmaya başlayabilir. Ancak bu olayın gölgesi Demir Taht üzerinde uzun yıllar kalacak."
+ agot_laughing_storm_rebellion.0031.a: "Savaştı, düştü ve şimdi ebedi uykusunda."
+  
+  #Lyonel's Demand refused 
+  ### POV: Lyonel 
+  ### Aegon refused Lyonel's demand of new betrothal and sending Duncan Small to the wall 
+  #### Option A: Escalating the situation 
+ agot_laughing_storm_rebellion.0032.t: "Fırtınanın Hiddeti"
+ agot_laughing_storm_rebellion.0032.desc: "[duncantall.GetTitledFirstName] adlı kişiyi düelloda yendikten sonra, kraldan adalet talep ettim: Oğlu [duncansmall.GetTitledFirstNameNicknamed] adlı kişinin Sur'a gönderilmesi ve hanedanlarımızı birleştirecek yeni bir nişan. Fakat kral, haklı taleplerimi reddetti!\n\nBu hakaret affedilemez. Artık kılıçların konuşmasından başka çare yok.\n\nFırtına Toprakları artık Demir Taht'a boyun eğmeyecek. Savaş başladı ve şerefimizle birlikte zaferi kazanacağız."
+ agot_laughing_storm_rebellion.0032.a: "Benimle karşı karşıya geldiği güne lanet edecek."
+ agot_laughing_storm_rebellion.0032.b: "Belki de barış arayışına girmek daha akıllıca olur."
+  
+  #Reconquest 
+  ### POV: Jaehaerys, Daeron or Duncan Targaryen 
+  ### Triggers in the future for either Jaehaerys, Daeron or Duncan if they inherit the throne AND if any of The Stormlands LP title gained independent 
+  #### Option A: Declare reconquest war against The Stormlands 
+  #### Option A: No reconquest 
+ agot_laughing_storm_rebellion.0034.t: "Ejderhanın Hükmü"
+ agot_laughing_storm_rebellion.0034.desc: "Bir zamanlar Demir Taht'a bağlı olan Fırtına Toprakları, şimdi [lyonel.GetNamePossessive] önderliğinde isyan bayrağı altında bağımsız bir krallık olduğunu ilan etti.\n\nBabamın saltanatı sırasında krallık parçalandı ve bu hatanın devam etmesine izin veremem. Targaryenların kudreti kolayca kırılmaz ve Fırtına Toprakları bizim hakkımızdır. Savaşın bedeli ağırdır: Kan, altın ve canlar—vereceğim karar, tarihin akışını değiştirecek."
+ agot_laughing_storm_rebellion.0034.a: "Fırtına Toprakları'nı ateş ve kanla geri alacağım."
+ agot_laughing_storm_rebellion.0034.b: "Şimdilik özgürlüklerine dokunmayacağım."
+  
+  #Realm Reconquest 
+  ### POV: Jaehaerys, Daeron or Duncan Targaryen 
+  ### Triggers in the future for either Jaehaerys, Daeron or Duncan if they inherit the throne AND if any of the LP titles gained independent 
+  #### Option A: Declare reconquest war against the next independent kingdom 
+  #### Option A: No reconquest 
+ agot_laughing_storm_rebellion.0037.t: "Parçalanmış Bir Krallık"
+ agot_laughing_storm_rebellion.0037.desc: "[reconquest_target_title.GetName], bir zamanlar Demir Taht'a bağlıydı, ancak şimdi asi bir krallık olarak bağımsızlıklarını ilan ettiler. Varoluşları, babamın başarısızlığının acı bir anısı. Her geçen gün daha da cüretkarlaşıyorlar, zenginlikleri artıyor, güçleri sınır tanımıyor. Krallık paramparça, taht ise eksikliğini hissediyor.\n\nBu isyanın yükü beni eziyor ve artık buna göz yumamam. Demir Taht bölünmez olmalı, otoritesi sorgulanamaz. [reconquest_target_title.GetNameNoTooltip] yönetimini özgür bırakmak, düşmanlarımıza bir silah vermektir."
+ agot_laughing_storm_rebellion.0037.a: "Demir Taht bir ve bütün olmalı. Savaşa hazırlanın!"
+ agot_laughing_storm_rebellion.0037.b: "Belki de henüz savaş zamanı değil."
+  
+  #Redwyne Independence 
+  ### POV: Redwyne 
+ agot_laughing_storm_rebellion.0038.t: "Bağımsızlık Tacı"
+ agot_laughing_storm_rebellion.0038.desc: "Nesiller boyunca Arbor, kendinden büyük lordlara boyun eğdi, ancak hiçbir zaman onlardan aşağı olmadı. Gemilerimiz hazinelerini doldurdu, şaraplarımız ziyafetlerini süsledi, ama biz sadece onların ağacındaki bir dal olarak görüldük. Artık değil.\n\n[stormlands.GetNameNoTier] ejderhanın pençesinden kurtuldu ve şimdi [arbor.GetNameNoTier] de aynı yolu izliyor. Dünya tanık olsun — ben sadece bağların ve gemilerin lordu değilim, hakkı olan bir kralım. Arbor artık hiçbir hükümdara boyun eğmeyecek."
+ agot_laughing_storm_rebellion.0038.a: "Arbor, olması gerektiği gibi, özgür olacak."
+  
+  #Reach informed about PK Arbor 
+  ### POV: Reach 
+  #Option A: accept 
+  #Option B: inform Redwyne that Olenna will be execute if Redwyne won't swear fealty (active only if Olenna is at Reach court) 
+ agot_laughing_storm_rebellion.0039.t: "Zincirleri Kırmak"
+ agot_laughing_storm_rebellion.0039.desc: "İnsanların hatırlayabildiği kadarıyla, [arbor.GetNameNoTier] zenginliği ve donanması [reach.GetNameNoTier] için hizmet etti, lordları sadık vasallar olarak yemin etti.\n\nAncak şimdi, ejderha devrilmiş ve kendi kaderimiz elimizde iken, onlar kendi tahtlarını talep ediyorlar. [k_arbor_holder.GetTitledFirstNameNicknamed], kendini [Select_CString(k_arbor_holder.IsFemale,'Kraliçe','Kral')] ilan etti ve artık onun sancağı altında savaşmayacağız."
+ agot_laughing_storm_rebellion.0039.desc.olenna: "\n\n[olenna.GetTitledFirstName] salonlarımda misafir olarak kalıyor, ancak gerçekte bir rehine. [k_arbor_holder.GetTitledFirstNameNoTooltip] kendine [Select_CString(k_arbor_holder.IsFemale,'Kraliçe','Kral')] diyebilir, Arbor'un Menzil'den ayrıldığını iddia edebilir, ancak kan bağı gururdan daha güçlüdür."
+ agot_laughing_storm_rebellion.0039.a: "Menzil kendi yolunda yürüyecek."
+ agot_laughing_storm_rebellion.0039.b: "Arbor'a haber gönderin — tacı karşılığında hayatını bağışlayacağız."
+  
+  #Arbor: Reach Threat 
+  ### POV: Redwyne 
+  #Option A: swear fealty - Triggers 0041 
+  #Option B: don't swear fealty - Triggers 0042 
+ agot_laughing_storm_rebellion.0040.t: "Tacın Ağır Yükü"
+ agot_laughing_storm_rebellion.0040.desc: "Boğazıma dayanmış bir kılıç gibi bir haber geldi. [olenna.GetTitledFirstName], [e_reach_holder.GetTitledFirstName] zindanlarında, benim tacımı daha kök salmadan kırmak için kullandığı bir piyon. Basit bir seçim sunuyor — sadakat yemini et, [arbor.GetNameNoTier] gibi boyun eğ, ya da [olenna.GetTitledFirstNameNoTooltip] adlı kişinin benim isyanım yüzünden acı çekmesini izle.\n\nDiz çökmek, kazandığımız her şeyi kaybetmek demek. Reddetmek ise kendi kanımı feda etmek. Doğru bir cevap yok, sadece yaşamam gereken bir karar var."
+ agot_laughing_storm_rebellion.0040.a: "Arbor boyun eğer — Olenna yaşayacak."
+ agot_laughing_storm_rebellion.0040.b: "Bağışla beni, Olenna."
+  
+  ##Arbor remains loyal 
+  ### POV: Reach 
+  #Option A: Olenna released, Redwyne vassalized 
+ agot_laughing_storm_rebellion.0041.t: "Reddedilen Taç"
+ agot_laughing_storm_rebellion.0041.desc: "[k_arbor_holder.GetTitledFirstName] akıllıca bir karar verdi. Tacını bıraktı, sancaklarını indirdi ve [arbor.GetNameNoTier] tekrar [reach.GetNameNoTier] yönetimine boyun eğdi. Bir taht feda edildi, bir hayat kurtarıldı. Adil bir anlaşma mıydı — yoksa yapabileceği tek seçim miydi?\n\nTeslimiyetiyle birlikte, [olenna.GetTitledFirstName] adlı kişiyi zindanlarımda tutmanın bir anlamı kalmadı. Arbor yeniden benim oldu, olması gerektiği gibi."
+ agot_laughing_storm_rebellion.0041.a: "Onu serbest bırakın — mesele kapandı."
+  
+  ##Arbor remains independent 
+  ### POV: Reach 
+  #Option A: Olenna executed 
+ agot_laughing_storm_rebellion.0042.t: "Tacın Bedeli Ödendi"
+ agot_laughing_storm_rebellion.0042.desc: "[k_arbor_holder.GetTitledFirstName] kararını verdi. [arbor.GetNameNoTier] yalnız ve gururlu duruyor, sancakları inmed, tacı kırılmadı. Boyun eğmektense ölümü tercih etti. Öyle olsun.\n\n[olenna.GetTitledFirstNamePossessive] kaderi mühürlendi. Bana karşı gelenlere bir uyarı, bir tahtı çok sıkı tutmanın bedeli. [reach.GetNameNoTier] bu hakareti unutmayacak, ben de unutmayacağım.\n\nArbor dimdik ayakta olabilir, ancak kökleri artık kanla sulandı."
+ agot_laughing_storm_rebellion.0042.a: "Öyle olsun."
+  
+  #Initial event for everyone 
+  ### POV: Every Seven Kingdoms ruler (except Lyonel and Aegon because they have their own starter event) 
+  ### Bookmark starter event 
+ agot_laughing_storm_rebellion.0050.t: "Kahkaha Fırtınası İsyanı"
+ agot_laughing_storm_rebellion.0050.desc: "Diyar kaosa sürüklendi. [lyonel.GetTitledFirstNameNicknamed], Demir Taht'a karşı açıkça isyan bayrağını çekti. Gazabı, veliaht prens [duncansmall.GetTitledFirstNameNicknamed] adlı kişinin, Lyonel'in kızını reddedip düşük soylu bir kızla aşk uğruna evlenmesiyle alevlendi—bu skandal, Baratheon Hanesi'nin şerefine leke sürdü ve Fırtına Burnu ile Kral Toprakları arasındaki ittifakı paramparça etti.\n\nKahkaha Fırtınası hafife alınamaz. Meydan okuması Fırtına Toprakları'nda yankılanıyor ve Targaryen hanedanlığına karşı bir başkaldırı olarak diyarı savaşın eşiğine getiriyor. Lyonel öfkesiyle saldırırken, Demir Taht yaklaşan fırtınaya hazırlanmalı. Savaş rüzgarları esiyor ve her hanedan artık tarafını seçmek zorunda."
+ agot_laughing_storm_rebellion.0050.a: "Fırtına koptu."
+  
+  ############################################################## 
+  ## 0100-0104 MAELYS BLACKFYRE EVENTS                        ## 
+  ############################################################## 
+  
+  #Maelys Challenging Daemon 
+  ### POV: Maelys the Monstrous 
+  ### Triggers in the future. Challenging the ruler of the Golden Company to take over the leadership 
+  #### Option A: Initiate duel against GC ruler (Triggers: 0101 or 0102) 
+  #### Option B: End of story 
+ agot_laughing_storm_rebellion.0100.t: "Taht İçin Meydan Okuma"
+ agot_laughing_storm_rebellion.0100.desc: "[daemonbf_lsr.GetTitledFirstNameNicknamed] adlı kişinin zayıf yönetimini fazlaca tahammül ettim. Demir Taht'a layık bir hükümdar için harekete geçme vakti geldi. Liderlik hakkı, ancak çelik ve ateşle kazanılır; Daemon'ı düelloya davet ediyorum.\n\nAncak kudret ve azimle geleceğimizi güvence altına alabilir, gasp edilen haklarımızı geri alabiliriz."
+ agot_laughing_storm_rebellion.0100.a: "Taht Benim Olacak."
+ agot_laughing_storm_rebellion.0100.b: "[daemonbf_lsr.GetFirstNameNoTooltip] adlı kişinin saltanatına boyun eğeceğim."
+  
+  #the duel 
+  ### POV: GC Ruler 
+  ### Duel to death event (triggers if the GC ruler is adult) 
+  #### Option A: Duel (Triggers: 0104) 
+ agot_laughing_storm_rebellion.0101.t: "Hakimiyet Mücadelesi"
+ agot_laughing_storm_rebellion.0101.desc: "[maelysbf_lsr.GetTitledFirstNameNicknamed], cüretkar bir hamleyle tahtıma göz dikti. Bu meydan okumayı reddetmek, zayıflık göstergesi olur ve takipçilerimin güvenini sarsar. Yönetim hakkım, çelik ve kanla savunulmalı.  [maelysbf_lsr.GetFirstNameNoTooltip] adlı kişinin haddini bildirme vakti geldi.\n\nBu düelloyu kazanarak, hem tahtımı hem de davanın geleceğini güvence altına alacağım."
+ agot_laughing_storm_rebellion.0101.a: "Çelik Konuşsun."
+  
+  #usurpation 
+  ### POV: GC Ruler 
+  ### Maelys usurping the GC (triggers if the GC ruler is child) 
+  #### Option A: Continue to play as Maelys 
+  #### Option B: Continue to play as a random Targaryen ruler (if any) 
+  #### Option C: Continue to play as the king of the IT (if Targaryen) 
+ agot_laughing_storm_rebellion.0102.t: "Kara Ateş'in Pençesinde"
+ agot_laughing_storm_rebellion.0102.desc: "[maelysbf_lsr.GetTitledFirstNameNicknamed], kiralık kılıçlardan oluşan ordusuyla sarayımı kuşattı, gözlerindeki açgözlülük ve kin apaçık.  Yedi Cehennem'in buz gibi nefesi üzerime çökerken,  [maelysbf_lsr.GetFirstNameNicknamed] adlı kişinin heybetli gölgesi, kaderimin üzerine kara bir bulut gibi çöküyor.\n\nDoğuştan gelen haklarım, bildiğim her şey paramparça oluyor.  Fakat daha da korkuncu,  [maelysbf_lsr.GetFirstNameNicknamed] adlı kişinin bakışları, salt bir gaspın ötesinde bir niyet barındırıyor. Beni idam sehpasına göndermeyi, soyumu ve iddiamı sonsuza dek silmeyi planlıyor.  Bu canavarın karşısında yapayalnızım, geleceğim karanlığa gömülmek üzere."
+ agot_laughing_storm_rebellion.0102.a: "Kaderim Bu."
+ agot_laughing_storm_rebellion.0102.b: "Mücadele Bitmedi."
+ agot_laughing_storm_rebellion.0102.c: "[king_house_member.GetTitledFirstName] adlı kişiye haber ulaşmalı."
+  
+  #Maelys the Monstrous 
+  ### POV: The old GC Ruler OR Maelys 
+  ### Conclusion of the duel/usurpation (title, desc and option depending on who won) 
+  #### Option A: End of story 
+ agot_laughing_storm_rebellion.0104.maelys.t: "Canavarın Yükselişi"
+ agot_laughing_storm_rebellion.0104.notmaelys.t: "Canavarın Sonu"
+ agot_laughing_storm_rebellion.0104.maelys.desc: "Taht artık benim. Kudretim ve azmimle halkımı zafere götüreceğim ve gasp edilen haklarımızı geri alacağım. Dava artık benim ellerimde ve zafer için her şeyi feda etmeye hazırım.\n\nBana karşı gelen herkes diz çökecek, zira artık Maelys 'Canavar' hüküm sürüyor."
+ agot_laughing_storm_rebellion.0104.notmaelys.desc: "Maelys'in saltanatı sona erdi ve hakimiyetim pekişti. Kudretim ve kararlılığımla halkıma zaferi tattıracağım."
+ agot_laughing_storm_rebellion.0104.notmaelys.a: "Yürüyelim!"
+ agot_laughing_storm_rebellion.0104.maelys.a: "Saltanatımın Şafağı."
+  
+  #Aegor Bittersteel Starter Event 
+ agot_laughing_storm_rebellion.0105.t: "Küller ve Yeminler"
+ agot_laughing_storm_rebellion.0105.desc: "Üç yıl geçti, yenilginin acısı hala dilimde kül tadı bırakıyor. Dördüncü Blackfyre İsyanı, soğuk çelik ve ihanet kanlarıyla boğuldu; sancaklarımız parçalandı, kardeşlerimiz katledildi veya dört bir yana savruldu.\n\n[daemon_blackfyre.GetFirstName] için kan döktüm, oğulları için, çürüyen bir hanedanlığın küllerinden yükseltmeye yemin ettiğimiz hayal için. Ancak tüm bunlar yetmedi.  Altın Şirket hala ayakta.\n\nSürgünde, kırılmış, savaş dışında yuvası olmayan kılıçlarız.  Fakat Blackfyre'lar henüz sönmedi, ben de sönmedim. Bir gün, Dar Deniz'i tekrar aşacağız. Bir gün, ejderha hak ettiğini alacak."
+ agot_laughing_storm_rebellion.0105.a: "Hiçbir hükümdarlık ebedi değildir."
+  
+  ############################################################## 
+  ## 0200 - 0201 SCALY EVENTS                                 ## 
+  ############################################################## 
+  
+  #Scaly Baby 
+  ### POV: A random Stormlandler ruler 
+  ### Birth of Scaly Allard 
+  #### Option A: End of story 
+ agot_laughing_storm_rebellion.0201.t: "Pullu Bebek"
+ agot_laughing_storm_rebellion.0201.desc: "Nefes nefese kalmış bir saraylı, avluda yapılan tuhaf bir keşfin haberini getirdi. Terk edilmiş, yapayalnız bir bebek bulunmuş.  Yaklaştığımda, alışılmadık bir manzarayla karşılaştım. Bebek, sanki bir sürüngenin derisi gibi, pullarla kaplıydı.\n\nBu gizemli çocuğun kaderi hem merakımı cezbetti hem de yüreğimi burdu. Onu himayeme almaya karar verdim. Sarayımın güvenliği ve rehberliğinde büyüyecek."
+ agot_laughing_storm_rebellion.0201.a: "Hoş geldin, küçük yavru."
+  
+  ############################################################## 
+  ## 0300 - 0311 TYTOS & ELLYN EVENTS                         ## 
+  ############################################################## 
+  
+  #Ellyn's Seduction 
+  ### POV: Ellyn Reyne 
+  ### Seduction attempt on Tytos Lannister 
+  #### Option A: Seduction attempt 
+ agot_laughing_storm_rebellion.0300.t: "Casterly Kayası'nın Gölgesi"
+ agot_laughing_storm_rebellion.0300.desc: "Gözden düşmek acıdır, ancak geri dönüşü olmayan bir kader değildir. [tytos.GetTitledFirstName] zayıf bir adam, tatlı sözlerle kolayca kandırılabilir.  Unutulmuş bir eşin intikamını nasıl alacağımı çok iyi biliyorum.\n\n[jeyne.GetTitledFirstName] mı? Casterly Kayası'nın salonlarında kaybolmuş bir fısıltıdan ibaret. Fakat adımı tekrar saygıyla anmalarını sağlayacağım.\n\nYeterince hor görüldüm. Kendi yolumu açmalıyım ve eğer bu yol [tytos.GetTitledFirstNameNoTooltip] adlı kişinin kalbinden geçiyorsa, olsun varsın."
+ agot_laughing_storm_rebellion.0300.a: "Aslanın yüreği yakında benim pençemde olacak."
+  
+  #Tytos: Seduction Outcome 
+  ### POV: Tytos Lannister 
+  ### Ellyn's seduction attempt 
+  #### Option A: Remain loyal to current wife (Triggers: 0302) 
+  #### Option B: Ellyn becomes lover (Triggers: 0303) 
+ agot_laughing_storm_rebellion.0301.t: "Aslanın Fısıltısı"
+ agot_laughing_storm_rebellion.0301.desc: "[ellyn.GetFirstName] yanı başımda duruyor, sözleri baldan tatlı, bakışları geçmişin hayaleti ve geleceğin vaadiyle dolu. Aramızdaki hava elektriklenirken, eli usulca benimkine değiyor. Dokunuşu, Casterly Kayası'nın soğuk taşlarını delip geçen bir alev gibi yakıcı.\n\n[jeyne.GetFirstName]... Karım, hayatımın güneşi. Fakat Ellyn'in tutkusu, hırsı... İçimde tehlikeli bir arzuyu uyandırıyor.  Geri mi çekilmeliyim, yoksa bu ateşin bizi kül etmesine mi izin vermeliyim?"
+ agot_laughing_storm_rebellion.0301.a: "Jeyne karımdır, şerefim ona ait."
+ agot_laughing_storm_rebellion.0301.b: "Bu risk, belki de alınmaya değer."
+  
+  #Ellyn: Tytos refused me 
+  ### POV: Ellyn Reyne 
+  ### Tytos refused me 
+  #### Option A: Accept the refusal 
+  #### Option B: Accept the refusal + Jeyne becomes rival of mine 
+ agot_laughing_storm_rebellion.0302.t: "Aslanın Reddiyesi"
+ agot_laughing_storm_rebellion.0302.desc: "Tytos bana sırtını döndü. O aciz, zavallı aslan, [jeyne.GetFirstName] adlı kişiyi seçti;  kendisine yalnızca soğuk bir görev sunan, renksiz ve sıkıcı bir kadını. Ben ona güç, ihtişam, bir kraliçenin kudretini sundum, fakat o hala zavallı karısına tutunuyor.\n\nAhmaklar sıklıkla böylesi hatalar yapar, fakat bu ahmaklığın cezasız kalmasına izin vermeyeceğim. Bu hakareti sineye çekebilir veya [jeyne.GetFirstNamePossessiveNoTooltip] adlı kişinin Casterly Kayası Leydisi olarak saltanatının umduğundan çok daha kısa sürmesini sağlayabilirim."
+ agot_laughing_storm_rebellion.0302.a: "Sabırla bekleyeceğim..."
+ agot_laughing_storm_rebellion.0302.b: "Jeyne bana karşı geldiğine pişman olacak."
+  
+  #Ellyn: Tytos became my lover 
+  ### POV: Ellyn Reyne 
+  ### Tytos become my lover 
+  #### Option A: Suggest to Tytos that he should divorce from Jeyne and marry me instead (Triggers: 304) 
+ agot_laughing_storm_rebellion.0303.t: "Aslanın Hakiki Eşi"
+ agot_laughing_storm_rebellion.0303.desc: "[tytos.GetFirstName] sonunda aklını başına topladı ve her zaman bildiğim gerçeği gördü: Ben onun gerçek kraliçesiyim, onu [jeyne.GetFirstName] adlı kişinin asla yapamayacağı kadar yükseklere taşıyabilecek tek kişi.  Ancak aramızda hala bir engel var: Jeyne.\n\nO, hala karısı olduğu sürece, gerçek anlamda birlikte hüküm süremeyiz. Tytos'u onu bir kenara bırakmaya, beni Casterly Kayası'nın hakiki Leydisi yapmaya ikna etmeliyim.  Birlikte, kaderimizde yazılı olduğu gibi hüküm süreceğiz."
+ agot_laughing_storm_rebellion.0303.a: "Bu birlikteliği resmiyete dökmeliyiz, sevgilim."
+  
+  #Tytos: Keeping it as secret, or request divorce from father 
+  ### POV: Tytos Lannister 
+  ### Ellyn suggested that we shoud marry 
+  #### Option A: Relationship remains a secret (Triggers: 0311) 
+  #### Option B: Request divorce from father (Triggers: 0305) 
+  #### Option C: Request divorce from the High Septon (Triggers: 0306) (only if Tytos already became LP) 
+ agot_laughing_storm_rebellion.0304.t: "Aslanın İkilemi"
+ agot_laughing_storm_rebellion.0304.desc: "[ellyn.GetFirstNamePossessive] arzusu içimi yakıp kavuruyor, fakat önümdeki yol dikenlerle dolu. [jeyne.GetFirstName] hala karım ve ilişkimiz gizli kalsa da, Casterly Kayası'nın kadim taşları bile sırları sonsuza dek saklayamaz.\n\nYüce Septon, Jeyne ile olan bağı koparıp Ellyn ile evlenmem için gerekli izni verebilir, ancak böylesi bir talep ağır sonuçlar doğurabilir. Gölgelerde mi kalmalıyım, yoksa her şeyi göze alıp yeni bir geleceğe doğru adım mı atmalıyım?"
+ agot_laughing_storm_rebellion.0304.a: "Bu sır şimdilik güvende kalmalı..."
+ agot_laughing_storm_rebellion.0304.b: "Babamın rızasını isteyeceğim."
+ agot_laughing_storm_rebellion.0304.c: "Yüce Septon'dan kutsama dileyeceğim."
+  
+  #Gerold: Requests divorce from the High Septon 
+  ### POV: Gerold Lannister 
+  ### Tytos asked me to grant divorce 
+  #### Option A: I ask the High Septon for permission (Triggers: 0306) 
+ agot_laughing_storm_rebellion.0305.t: "Bir Babanın Yükü"
+ agot_laughing_storm_rebellion.0305.desc: "[tytos.GetFirstName], oğlum... Karşımda duruyor ve aşktan, [ellyn.GetFirstName] adlı kişiden bahsediyor. [jeyne.GetFirstNameadlı kişiyi, karısını terk edip ölen kardeşinin dul eşiyle evlenmek istiyor. Bu, kadim geleneklerimize, Lannisterların yüzyıllardır koruduğu düzene aykırı. Ancak kalbi bu karara mühürlenmiş ve belki de bir çözüm bulunabilir.\n\nEğer hanemin tüm gücünü arkasına alıp Yüce Septon'u ikna edebilirsem, bu evlilik mümkün olabilir."
+ agot_laughing_storm_rebellion.0305.a: "Yüce Septon'a bir mektup yazacağım."
+  
+  #Gerold: High Septon asks money for the divorce -> Pay or Refuse 
+  ### POV: Gerold Lannister OR Tytos Lannister 
+  ### The High Septon's reply. Desc depends on if the High Septon is greedy. 
+  #### Option A: No Divorce (Triggers: 0308) (Only if the High septon is not Greedy) 
+  #### Option B: Bribe the High Septon (Triggers: 0310) 
+  #### Option C: Can't afford the divorce (Triggers: 0307) 
+ agot_laughing_storm_rebellion.0306.t: "Yüce Septon'un Hükmü"
+ agot_laughing_storm_rebellion.0306.desc: "Yüce Septon'un cevabı geldi;  geleneğin ve ilahi yasaların ağırlığını taşıyor.  Kararı net: Bu boşanma, evlilik bağlarının kutsallığına karşı kabul edilemez bir hakaret olur."
+ agot_laughing_storm_rebellion.0306.greedy.desc: "\n\nFakat mektubun satır aralarında,  bir esneklik seziliyor.  Sanki bir fısıltı,  uygun bir "bağış" ile kalbinin yumuşayabileceğini ima ediyor. Dedikodulara göre, altın doğru ellere ulaştığında, Yüce Septon'un kararları değişebiliyor.\n\nŞimdi karar bana ait. Bu meseleyi unutup yolumuza devam mı etmeliyim, yoksa kutsamasını almak için gereken bedeli mi ödemeliyim?"
+ agot_laughing_storm_rebellion.0306.a: "Bu iş burada bitti. Yolumuza devam etmeliyiz."
+ agot_laughing_storm_rebellion.0306.b: "Cömert bir bağış, fikrini değiştirebilir."
+ agot_laughing_storm_rebellion.0306.c: "Şerefim rüşvetle lekelenemez."
+ agot_laughing_storm_rebellion.0306.c.tt: "Ellyn’in kardeşi Roger da Yüce Septon'u rüşvetle ikna etmeyi deneyebilir."
+  
+  #Roger: If Gerold resued the payment -> Pay or Refuse 
+  ### POV: Roger Reyne 
+  ### Gerold/Tytos couldn't afford the bribery, so i pay the sum to bribe the High Septon 
+  #### Option A: Not bribing the High Septon (Triggers: 0308) 
+  #### Option B: Bribe the High Septon (Triggers: 0310) 
+ agot_laughing_storm_rebellion.0307.t: "Bir Kardeşin İkilemi"
+ agot_laughing_storm_rebellion.0307.desc: "[gerold.GetFirstName], [tytos.GetFirstName] adlı kişinin [jeyne.GetFirstName] adlı kişiden boşanıp [ellyn.GetFirstName] ile evlenmesi için Yüce Septon'dan izin istedi, ancak talebi reddedildi.  Yine de, söylentilere göre yeterince altın, Yüce Septon'un fikrini değiştirebilir.\n\nTuhaftır ki, Lannisterların zenginliğine rağmen, Tytos bu rüşveti ödemedi. Şimdi, [ellyn.GetFirstNamePossessiveNoTooltip] umutları tükenmek üzere ve çaresizce bana, kardeşine başvuruyor.\n\nOnun tekrar yükselişini görmek isterim, ancak bu bedel, Castamere'in hazinesi için bile fazlasıyla ağır."
+ agot_laughing_storm_rebellion.0307.a: "Bu bedel, Ellyn için bile çok ağır."
+ agot_laughing_storm_rebellion.0307.b: "Kardeşim için ne gerekiyorsa yapacağım."
+  
+  #Tytos and Ellyn: Noone funded the divorce -> Keep the secret, or elope 
+  ### POV: Tytos Lannister 
+  ### Noone granted us divorce 
+  #### Option A: Leads to end of story (Triggers: 0311) 
+  #### Option B: We marry anyway (Triggers: 0309 and 0310) 
+ agot_laughing_storm_rebellion.0308.t: "Kanun ve Arzu Arasında"
+ agot_laughing_storm_rebellion.0308.desc: "Görünüşe göre yasal bir boşanma yolu yok. Yüce Septon, [jeyne.GetFirstName] ile aramdaki kutsal bağı bozmama izin vermeyecek.  Hem tanrılar hem de insanlar önümüze set çekmiş, ancak kalbim hala [ellyn.GetFirstNameadlı kişiyi arzuluyor.\n\nGelenekler bizi zincire vurabilir, ancak aşk bu kadar kolay boyun eğmez."
+ agot_laughing_storm_rebellion.0308.a: "Kanunlar ne derse desin, birbirimizi sevebiliriz."
+ agot_laughing_storm_rebellion.0308.b: "Gelenekler Yedi Cehennem'e kadar yolu var! Ellyn ile evleneceğim!"
+ agot_laughing_storm_rebellion.0308.b.tt: "Babam beni mirasından men edebilir."
+  
+  #Gerold's Decision 
+  ### POV: Gerold Lannister 
+  ### Tytos ignored the High Septon's word and married Ellyn anyways. 
+  #### Option A: End of story 
+  #### Option B: End of story + Disinherit Tytos 
+ agot_laughing_storm_rebellion.0309.t: "Oğlunun İhaneti"
+ agot_laughing_storm_rebellion.0309.desc: "Tytos, yasaları ve ailemizin şerefini hiçe sayarak [jeyne.GetFirstNameadlı kişiyi terk etti ve o Reyne kızıyla evlendi.  Geleneklere değil, kalbinin zayıf sesine kulak verdi.  Ve ne için? Lannister Hanesi'ne leke sürecek bir anlık heves uğruna.\n\nOnu uyardım,  ancak dünyamızı bir arada tutan kadim düzeni hiçe saymakta ısrar etti."
+ agot_laughing_storm_rebellion.0309.a: "Tanrılar seni affetsin... Umarım pişman olmazsın."
+ agot_laughing_storm_rebellion.0309.b: "Artık oğlum değilsin. Mirasından men edildin."
+  
+  #Tytos & Ellyn: We got married! 
+  ### POV: Tytos/Ellyn 
+ ### Marriage (3 descs: "desc" is for Tytos, "ellyn.desc" is for Ellyn, "ellyn_anyway.desc"
+  #### Option A: End of story 
+ agot_laughing_storm_rebellion.0310.t: "Kaderin Bağrında"
+ agot_laughing_storm_rebellion.0310.desc: "Sonunda Yüce Septon onayını verdi. [jeyne.GetFirstName] adlı kişiden kurtuluşumun yolu açıldı ve [ellyn.GetFirstName] hakiki eşim olarak yanımda duracak.\n\nYedi Tanrı bize gülümsedi, artık önümüzde hiçbir engel yok. Ellyn ile birlikte geleceğimizi,  belki de Lannister Hanesi'nin kaderini şekillendireceğiz. Dünya fısıldaşsın, dedikodu yapsın; bu büyük bir şeyin başlangıcı."
+ agot_laughing_storm_rebellion.0310.ellyn.desc: "[tytos.GetTitledFirstNamePossessive] [jeyne.GetFirstName] adlı kişiden kurtuluşu kesinleşti ve artık hak ettiğim yere, onun gerçek eşi olarak kavuşuyorum.\n\nYedi Tanrı bize gülümsedi ve önümde durabilecek hiçbir şey yok. Tytos ve ben birlikte geleceğimizi, belki de Reyne Hanesi'nin kaderini şekillendireceğiz. Bırakın dedikodu yapsınlar, bu daha başlangıç."
+ agot_laughing_storm_rebellion.0310.ellyn_anyway.desc: "Başardık. Krallığın iradesine, saray dedikodularına ve geleneklerin ağırlığına rağmen, [tytos.GetFirstName] adlı kişinin eşi olarak yerimi aldım. Yedi Tanrı bu birliği kutsamamış olabilir, ancak kudret dindarlıktan değil, hırstan gelir ve bende bundan bolca var.\n\nAsiller endişeyle titresin, Septonlar vaaz versin; ben artık hak ettiğim yerdeyim. Birlikte hüküm süreceğiz ve bize karşı gelenler, isyanın bedelini ağır ödeyecek."
+ agot_laughing_storm_rebellion.0310.a: "Yeni hayatımızın şafağı."
+  
+  #Ellyn: No marriage 
+  ### POV: Ellyn Reyne 
+  ### No Marriage 
+  #### Option A: End of story + Rivarly with Jeyne 
+ agot_laughing_storm_rebellion.0311.t: "Aşkın İhaneti"
+ agot_laughing_storm_rebellion.0311.desc: "[tytos.GetFirstName] adlı kişinin tamamen bana ait olacağını, [jeyne.GetFirstNameadlı kişiyi benim için terk edeceğini sanmıştım. Fakat şimdi, paylaştığımız bunca şeyden sonra tereddüt ediyor.  O silik kadının yanında kalmayı, birlikte sahip olabileceğimiz kudrete tercih ediyor.\n\nNe kadar zayıf, ne kadar kolay pes ediyor göreve ve korkuya. Ondan daha fazlasını beklerdim. Artık planlarımı değiştirmeliyim. Eğer benimle birlikte yükselmeyecekse, belki de başka bir yol çizmeliyim kendime."
+ agot_laughing_storm_rebellion.0311.a: "Bu kadar kolay pes etmeyeceğim."
+  
+  ############################################################## 
+  ## 0400-0469 BLOODRAVEN EVENTS                             ## 
+  ############################################################## 
+  
+  #Bloodraven Elected 
+  ### POV: Bloodraven 
+  ### Bookmark starter event 
+ agot_laughing_storm_rebellion.0400.t: "Sur'un Yeni Lord Kumandanı"
+ agot_laughing_storm_rebellion.0400.desc: "[jack.GetTitledFirstName] adlı kişinin ani vefatıyla, Gece Nöbetçileri'nin Yeminli Kardeşleri beni yeni Lord Kumandan olarak seçti.  Artık kardeşliği yönetmek ve Sur'un ötesindeki tehditlere karşı alemi korumak benim görevim...\n\n#weak Gece çöküyor ve artık nöbetim başlıyor. Ölüm beni bulana dek sürecek. Eş almayacağım, toprak sahibi olmayacağım, çocuk sahibi olmayacağım. Taç giymeyeceğim, zafer peşinde koşmayacağım. Nöbette yaşayacak ve nöbette öleceğim. Ben karanlıktaki kılıcım. Ben surlardaki bekçiyim. Ben soğuğa karşı kalkan ateşim, şafağı getiren ışık, uykudakileri uyandıran boru, insan alemlerini koruyan kalkanım. Bu gece ve gelecek tüm geceler boyunca, hayatımı ve şerefimi Gece Nöbeti'ne adıyorum.#!"
+ agot_laughing_storm_rebellion.0400.a: "Nöbetim Başladı."
+  
+  #Aegon V: Dark Sister 
+  ### POV: Aegon V 
+  ### Triggers in the future. Ask Bloodraven to give me back Dark Sister. 
+  #### Option A: Ask for the sword (Triggers: 0402) 
+  #### Option B: Do not ask for the sword 
+ agot_laughing_storm_rebellion.0401.t: "Karanlık Kız Kardeş"
+ agot_laughing_storm_rebellion.0401.desc: "Brynden [bloodraven.GetTitledFirstNameadlı kişiyi Sur'a gönderdiğimden beri yıllar geçti ve onunla birlikte Valyria çeliğinden dövülmüş efsanevi kılıç [dark_sister_sword.GetName] de gitti. Karanlık Kız Kardeş kadar kadim ve güçlü bir silah, o buzlu surlarda çürümemeli; Demir Taht'a layık bir yerde olmalı.\n\nBrynden'a haber gönderip, kılıcı layık olduğu yere, yani bana geri getirmesi için büyük bir servet teklif edebilirim."
+ agot_laughing_storm_rebellion.0401.a: "Karanlık Kız Kardeş, Demir Taht'ın hakkıdır."
+ agot_laughing_storm_rebellion.0401.b: "Bu kılıcın benim için bir önemi yok."
+  
+  #Bloodraven: Aegon V wants Dark Sister LETTER 
+  ### POV: Bloodraven 
+  ### Eggs asked for Dark Sister. 
+  #### Option A: Do not give the sword to Egg (Triggers: 0404) 
+  #### Option B: Give the sword to Egg (Triggers: 0403) 
+ agot_laughing_storm_rebellion.0402.opening: "[bloodraven.GetTitledFirstNameNoTooltip]’a"
+ agot_laughing_storm_rebellion.0402.desc: "Sana bir kral olarak değil, Eski Valyria'nın kanını taşıyan bir varis olarak yazıyorum ve tahtın hakkı olan bir şeyi geri vermeni talep ediyorum. [dark_sister_sword.GetName], efsanelere konu olmuş bir kılıç, atalarımızın elinde zaferler ve kan görmüş bir silah; o, Demir Taht'a ait, Sur'un buzlu topraklarına değil.\n\nAğırlığı ve değeri kadar altın teklif ediyorum ki, Karanlık Kız Kardeş layık olduğu yerde asılı dursun.  Söyle Brynden, hanemize şeref getirip Karanlık Kız Kardeş'i iade edecek misin, yoksa o kuzeydeki karların altında mı kaybolacak?"
+ agot_laughing_storm_rebellion.0402.a: "Karanlık Kız Kardeş benimle kalacak."
+ agot_laughing_storm_rebellion.0402.b: "Karanlık Kız Kardeş'i layık olduğu yere geri vereceğim."
+  
+  #Aegon V: Bloodraven gave me Dark Sister LETTER 
+  ### POV: Aegon V 
+  ### Bloodraven gave me Dark Sister. 
+  #### Option A: End of sword story. 
+ agot_laughing_storm_rebellion.0403.opening: "[aegonv.GetTitledFirstNameNoTooltip]’a"
+ agot_laughing_storm_rebellion.0403.desc: "Mektubun bana Sur'da ulaştı ve talebini uzun uzun düşündüm. [dark_sister_sword.GetName] bana sadık bir dost oldu, tıpkı eski Targaryen krallarına olduğu gibi. Keskinliği düşmanlarımızın kanını tattı ve elimde alemi savundu. Fakat artık ben de eski ben değilim ve kılıç kuşanma günlerim geride kaldı.\n\nKrallığın selameti ve hanemin şerefi için, Karanlık Kız Kardeş'i sana iade ediyorum.  Böylece, layık olduğu yerde, Demir Taht'a tekrar hizmet edebilecek. Umarım onu taşıyabilecek kadar güçlü bir el bulur."
+ agot_laughing_storm_rebellion.0403.a: "Karanlık Kız Kardeş yuvasına dönüyor."
+  
+  #Aegon V: No sword for me LETTER 
+  ### POV: Aegon V 
+  ### Bloodraven did not gave me Dark Sister. 
+  #### Option A: End of sword story. 
+ agot_laughing_storm_rebellion.0404.opening: "[aegonv.GetTitledFirstNameNoTooltip]’a"
+ agot_laughing_storm_rebellion.0404.desc: "Sözlerin bana ulaştı, fakat teklifini reddetmek zorundayım. [dark_sister_sword.GetName], sayısız savaşta yanımda yer aldı, çeliği hainlerin ve bu diyarın düşmanlarının kanıyla kutsandı. Artık o bana ait ve burada, Sur'da, krallığa hizmet etmeye devam ediyor. Kuzey sert ve acımasız, ancak burası benim kefaretimi ödediğim yer ve Karanlık Kız Kardeş'in de amacını yerine getirdiği yer.\n\nTeklif ettiğin altın, bu donmuş topraklarda benim için hiçbir anlam ifade etmiyor ve kılıcımdan ayrılmayacağım. Bazı bağlar, bir kez dövüldükten sonra asla kopmaz."
+ agot_laughing_storm_rebellion.0404.a: "Bunu unutmayacağım."
+  
+  #Bloodraven: Following my dreams 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+  #### Option A: Travel northwards (leads to end of story. Triggers: 0421). 
+  #### Option B: End of vision story. 
+ agot_laughing_storm_rebellion.0420.t: "Sur'un Ötesinden Gelen Ses"
+ agot_laughing_storm_rebellion.0420.desc: "Gördüğüm düşler güçleniyor;  ağaç, soğuk ve Sur'un ötesinden gelen o tuhaf fısıltılar gittikçe netleşiyor. Şimdi her zamankinden daha kuvvetli hissediyorum,  donmuş vahşiliğin içinde beni çağıran bir şey var. Geceleyin uluyan rüzgar,  beni kuzeye, bilinen dünyanın sınırlarının ötesine çeken bir şarkı gibi.\n\nİçgüdülerim bunun tehlikeli olduğunu, belki de bir tuzak olduğunu söylüyor, ancak bu çağrıya karşı koyamıyorum. Sur, benimle orada bekleyen şey arasında bir set gibi duruyor, fakat kaderimin buz ve gölgelerin içinde gizlendiğini hissediyorum."
+ agot_laughing_storm_rebellion.0420.a: "Cevaplar Sur'un ötesinde. Onları bulmalıyım."
+ agot_laughing_storm_rebellion.0420.a.tt: "Kuzeye doğru bir yolculuğa çıkacaksınız."
+ agot_laughing_storm_rebellion.0420.b: "Görevim burada."
+  
+  #Bloodraven: Following my dreams 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. Disappeared while ranging story. (Becomes the Three-Eyed Crow) 
+  #### Option A: End of vision story. 
+ agot_laughing_storm_rebellion.0421.t: "Bloodraven'ın Son Uçuşu"
+ agot_laughing_storm_rebellion.0421.desc: "Ve işte oradalar, kadim ağacın gölgesinde, düşlerimde gördüğüm yeşil tenli çocuklar. Sessizce bekliyorlar, gözleri üzerimde; sanki en başından beri gelişimizi biliyorlarmış gibi.  Etraflarındaki hava farklı, kadim ve güçlü bir varlıkla yüklü. Ben de hissediyorum bunu, derinlerimde bir değişim, sanki artık eskisi gibi değilim, sanki ruhumun bir parçası dönüşüme uğramış.\n\nOnlara doğru bir adım atıyorum ve ormanın kendisi nefes alıyor gibi. Yapraklar fısıldaşıyor, anlayabileceğim kadar yakın sırları mırıldanıyor. Çocuklar konuşmuyor, ama davetlerini hissediyorum, beni kendi dünyalarına çeken o güçlü çağrıyı. Bu, hayal gücümün sınırlarını aşan,  zamandan daha eski bir şeye adım atmak gibi."
+ agot_laughing_storm_rebellion.0421.a: "Bu yolun nereye çıktığını görmeliyim."
+ agot_laughing_storm_rebellion.0421.a.tt: "...ve belki de asla geri dönmeyeceğim."
+  
+  ### Bloodraven Filler Events 
+  
+  #Dream: A Tree 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0451.t: "Ağaç"
+ agot_laughing_storm_rebellion.0451.desc: "Uyku beni teslim alırken, daha önce defalarca gezindiğim, ancak her seferinde aynı huzursuzluğu hissettiğim bir rüyanın içine düşüyorum. Çevremdeki dünya soluklaşıyor, artık Gece Nöbeti'nin Lord Kumandanı değilim; yalnız bir gölgeyim, tuhaf ve soğuk bir diyarda kaybolmuş. Önümde, bir tepenin zirvesinde, devasa ve kadim bir ağaç yükseliyor. Solgun kabuğu, ay ışığında kemik gibi parlıyor. Altında ise,  bir mağara,  karanlık bir ağız gibi açılıyor.\n\nBeni çağıran bir güç hissediyorum, daha da yaklaşmamı emreden bir irade. Adım atıyorum, ancak ayaklarımın altındaki zemin buz tutmaya başlıyor. Soğuk, parmaklarını yukarı doğru uzatıp beni hapsetmeye çalışıyor.  Çırpınıyorum, ancak donmuş toprak beni daha da sıkı kavrıyor.\n\nAğaca ulaşmak üzereyken,  soğuk tüm benliğimi ele geçiriyor ve aniden uyanıyorum.  Gördüğüm görüntü, zihnimde hala canlı bir şekilde yankılanıyor."
+ agot_laughing_storm_rebellion.0451.a: "Bu rüya ne anlama geliyor?"
+ agot_laughing_storm_rebellion.0451.a.tt: "...Ben miyim o yayılan soğukluk? Karanlık mağara mı? Yoksa ağaç mı?"
+  
+  #Dream: A Dark Wolf 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0452.t: "Karanlık Kurt"
+ agot_laughing_storm_rebellion.0452.desc: "Uyku beni yuttuğunda, kendimi bir başka rüyanın içinde buluyorum. Dünya, karla kaplı ve çorak bir diyara dönüşmüş,  rüzgar pelerinimi yırtarcasına esiyor.  Uzakta onu görüyorum: Daha önce gördüğüm hiçbir kurda benzemeyen, devasa bir yaratık. Tüyleri gece kadar siyah, gölgelerin içinde kayboluyor. Gözleri ise kan kırmızısı, bembeyaz karın üzerinde şeytani bir ışıkla parlıyor. O korkunç bakışlarıyla beni izliyor, sanki hakkımda bildiğimden daha fazlasını biliyormuş gibi.\n\nYaklaşmaya çalışıyorum, ancak her adımımda kurt sisin içine çekiliyor, her zaman ulaşılamaz bir mesafede kalıyor. Kaybolmadan önce gördüğüm son şey, o kan kırmızısı gözler oluyor.\n\nBir çığlıkla uyanıyorum, kalbim göğsümü delecek gibi atıyor. Karanlık kurdun görüntüsü zihnime kazınmış."
+ agot_laughing_storm_rebellion.0452.a: "Kurt benden ne istiyor?"
+ agot_laughing_storm_rebellion.0452.a.tt: "...ve neden gözleri benimkilere bu kadar benziyor?"
+  
+  #Dream: A Crow with three eyes 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0453.t: "Üç Gözlü Karga"
+ agot_laughing_storm_rebellion.0453.desc: "Uykuya teslim olurken,  kendimi bir kez daha tuhaf bir rüyanın içinde buluyorum. Issız bir arazideyim, gökyüzü karanlık ve kasvetli. Uzaklardan bir karga süzülüyor, simsiyah kanatları havayı sessizce yarıp geçiyor. Yaklaştıkça,  ürkütücü bir ayrıntı dikkatimi çekiyor: Bu sıradan bir karga değil. Alnının tam ortasında,  üçüncü bir göz var;  göz kırpmadan, her şeyi bilirmişçesine bana bakıyor. Karga tepemde daireler çiziyor, bakışları tedirgin edici; sanki benim kavrayamayacağım kadar derin sırları görebiliyormuş gibi.\n\nTek bir kez ötüyor, sesi ıssız arazide yankılanıyor ve anlıyorum ki, yalnızca o karga tarafından değil, çok daha büyük bir şey tarafından izleniyorum.\n\nUyandığımda kalbim ağır, o üç gözlü karganın bakışları zihnimde yankılanıyor, karanlık düşüncelerime kök salıyor."
+ agot_laughing_storm_rebellion.0453.a: "Karga, üçüncü gözüyle hangi sırları görüyor?"
+ agot_laughing_storm_rebellion.0453.a.tt: "...ben de ne görüyor?"
+  
+  #Dream: A Climber 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0454.t: "Tırmanan Çocuk"
+ agot_laughing_storm_rebellion.0454.desc: "Uyku beni bir kez daha teslim alıyor ve hem tuhaf hem de tanıdık bir rüyaya sürükleniyor.  Kendimi, göğe uzanan devasa bir kalenin gölgesinde buluyorum. Gözümün ucuyla, küçük ve çevik bir çocuğun duvarlara tırmanışını görüyorum; elleri ve ayakları,  taşların arasında imkansız görünen yerlere tutunuyor. Bir gölge gibi hareket ediyor, korkusuz ve çevik,  gittikçe yükseliyor. Çocuk arkasına bakmıyor, düşme korkusunu bilmiyor gibi.\n\nOna sesleniyorum, ancak sesim rüzgarda kayboluyor. O ise tırmanmaya devam ediyor, bir ölümlünün ulaşamayacağı yüksekliklere ulaşıyor ve sonunda kulenin zirvesinde, sislerin arasında kayboluyor.\n\nUyandığımda, çocuğun görüntüsü hala aklımda. O imkansız tırmanış,  düşüncelerimin arasında yankılanıyor."
+ agot_laughing_storm_rebellion.0454.a: "Bu çocuk kim ve nereye tırmanıyor?"
+ agot_laughing_storm_rebellion.0454.a.tt: "...ve nasıl geri inecek?"
+  
+  #Dream: A Tree Part 2 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0455.t: "Ağacın Çağrısı"
+ agot_laughing_storm_rebellion.0455.desc: "Bir kez daha uyku beni aynı rüyaya, aynı görüntüye hapsediyor. Devasa ağaç hala tepenin üzerinde yükseliyor, solgun kabuğuyla tüm manzaraya hükmediyor, dalları gökyüzüne uzanmış pençeler gibi. Altındaki mağara ise eskisinden daha karanlık, sanki birini ya da bir şeyi bekliyor. Ayaklarımın altındaki buz geri dönüyor, yukarı doğru tırmanıyor, ancak bu sefer soğuk beni durduramıyor.\n\nİlerliyorum, her adım daha ağır, daha yavaş, fakat ağacın çağrısı şimdi daha net, daha ısrarcı. Tepenin eteğine yaklaştıkça rüzgar ulumaya başlıyor ve yer ayaklarımın altında titriyor. Ağacın dalları sanki canlıymış gibi sallanıyor, beni kendine çağırıyor.\n\nAniden uyanıyorum, rüyanın soğukluğu hala tenimde. Ağacın çekimi ise her zamankinden daha güçlü."
+ agot_laughing_storm_rebellion.0455.a: "Ağacın altında ne gizli?"
+ agot_laughing_storm_rebellion.0455.a.tt: "...ve neden beni çağırıyor?"
+  
+  #Dream: A White Wolf Part 2 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0456.t: "Karlar Altındaki Kurt"
+ agot_laughing_storm_rebellion.0456.desc: "Bir kez daha rüyanın buzlu kollarına teslim oluyorum. Önümde uzanan donmuş manzara sonsuz görünüyor. Rüzgar tenimi ısırıyor, ancak beni asıl rahatsız eden soğuk değil, uzaktan beni izleyen o gözler. Karanlık kurt yine orada, öncekinden daha büyük, kürkü karın beyazlığı içinde gölgelerle dans ediyor.  Kırmızı gözleri karanlıkta parlıyor,  izliyor, bekliyor.\n\nBu kez yaklaştığımda geri çekilmiyor. Aksine,  yerinde duruyor,  bakışlarını benden ayırmıyor. Bir adım atıyorum, kurt boğuk bir hırıltıyla karşılık veriyor; donmuş havada yankılanan bir uyarı. Sanki benimle iletişim kurmaya, beni uyarmaya ya da belki de sınamaya çalışıyor. Daha da yaklaşıyorum, kurt dişlerini gösteriyor, kırmızı gözleri daha da parlıyor. Yerimde donakalıyorum, ilerlemek ve geri çekilmek arasında sıkışıp kalıyorum.\n\nZaman duruyor ve sonra aniden uyanıyorum. Kurdun bakışları hala zihnimde yakıcı bir iz bırakmış."
+ agot_laughing_storm_rebellion.0456.a: "Kurt benden ne istiyor?"
+ agot_laughing_storm_rebellion.0456.a.tt: "...ve neyi bekliyor?"
+  
+  #Dream: A Crow with three eyes Part 2 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0457.t: "Sessiz Bekleyiş"
+ agot_laughing_storm_rebellion.0457.desc: "Uyku, beni bir kez daha gecelerimi zehirleyen o tuhaf görüntüye götürüyor. Önümde aynı ıssız ova uzanıyor, çorak ve cansız. Bu kez karga neredeyse anında beliriyor;  karanlık gökyüzünden sessiz kanatlarla süzülerek iniyor. Üç gözü soluk ışıkta parlıyor, bakışları her zamankinden daha keskin, daha delici. Özellikle üçüncü gözü,  sadece kim olduğumu değil, kim olabileceğimi de görüyormuş gibi, ruhumun derinliklerine bakıyor.\n\nKarga yakındaki bükülmüş bir dalın üzerine konuyor ve sessizlik içinde beni izliyor. Varlığını hissediyorum, gücünü, anlayışımın ötesinde bir kuvveti. Tekrar ötüyor, öncekinden daha yüksek bir sesle ve o an dünya onun sesiyle titriyor. Karga hala beni izliyor, sanki henüz kavrayamadığım bir gerçeği anlamamı bekliyormuş gibi.\n\nKaranlıkta uyanıyorum, karganın gözleri hala zihnimde; sanki uyanık dünyaya da sızmış gibi."
+ agot_laughing_storm_rebellion.0457.a: "Karga hangi bilgiyi saklıyor?"
+ agot_laughing_storm_rebellion.0457.a.tt: "...ve neden beni seçiyor?"
+  
+  #Dream: A Climber Part 2 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0458.t: "Gökyüzündeki Alev"
+ agot_laughing_storm_rebellion.0458.desc: "Yine aynı rüyanın pençesindeyim. Çocuk orada, kadim kalenin devasa duvarlarına inanılmaz bir çeviklikle tırmanıyor. Bu kez ona daha yaklaşıyorum, kulenin dibine doğru yürüyorum, taşların soğukluğunu ayaklarımın altında hissediyorum. Yaklaştıkça gökyüzü kararıyor ve alev alev yanan bir kılıç gibi, kızıl bir kuyruklu yıldız gökyüzünü ikiye bölüyor. Kuyruklu yıldızın ateşi çocuğun tırmanışını aydınlatıyor, uzun ve ürkütücü gölgeler oluşturuyor. O an duraksıyorum, göktaşının parlaklığı karşısında büyülenmiş gibi. Havada daha büyük bir şeyin kıpırdandığını hissediyorum.\n\nGözlerimi tekrar çocuğa çevirdiğimde, artık yok. Yerinde sadece simsiyah bir karga,  az önce çocuğun durduğu duvara tünemiş, bana bakıyor. Bir an duraksıyor, sonra kanatlarını açıp gökyüzüne yükseliyor ve ufukta kayboluyor.\n\nUyandığımda, kızıl kuyruklu yıldızın ve kaybolan çocuğun görüntüsü zihnime kazınmış."
+ agot_laughing_storm_rebellion.0458.a: "Kuyruklu yıldız hangi felaketi haber veriyor?"
+ agot_laughing_storm_rebellion.0458.a.tt: "...ve çocuğa ne oldu?"
+  
+  #Dream: The Night 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0459.t: "Gecenin Kalbinde"
+ agot_laughing_storm_rebellion.0459.desc: "Uyku beni ele geçiriyor ve mutlak bir karanlığa gömülüyorum; yıldızsız bir gece, iliklerime işleyen bir soğuk. Çevremdeki dünya donmuş, kar ve buzla kaplı. Rüzgar,  binlerce sesle uluyor, korku ve felaket fısıldıyor. Uzakta, hayatta kalmaya çalışan zayıf bir ateşin titrek ışığını görüyorum. Ona doğru yürümeye çalışıyorum, ancak her adımda karanlık daha da koyulaşıyor, ışığı yutuyor.\n\nGölgeler karda kıpırdanıyor ve içlerinde bir şeyin hareket ettiğini fark ediyorum. Kadim, uğursuz bir şey. Başımı kaldırıyorum ve gökyüzünün bomboş olduğunu görüyorum; ne ay var ne yıldızlar, sadece sonsuz bir boşluk.\n\nSoğuk beni daha da sıkı sarıyor ve ateş sönüyor. Karanlık tüm benliğimi yutarken uyanıyorum, tenimde hala o dondurucu soğukluk var."
+ agot_laughing_storm_rebellion.0459.a: "Gecenin gölgelerinde ne gizleniyor?"
+ agot_laughing_storm_rebellion.0459.a.tt: "...ve neden bu kadar soğuk?"
+  
+  #Dream: The Dead 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0460.t: "Yürüyen Ölüler"
+ agot_laughing_storm_rebellion.0460.desc: "Uyku beni yuttuğunda, rahatsız edici derecede tanıdık bir diyara sürükleniyorum. Hava buz gibi, çürümenin keskin kokusuyla boğucu. Çatlamış ve kurumuş bir arazide duruyorum. Uzakta, yavaş ve doğaüstü bir şekilde hareket eden silüetler görüyorum. Önce gölgeler gibi görünüyorlar, ama yaklaştıkça gerçek yüzleri ortaya çıkıyor.\n\nBunlar insan değil, ceset. Ölümde donmuş yüzler, boş göz çukurları, gri ve çürümüş deri; ancak damarlarında hala hayat varmışçasına hareket ediyorlar. Ölüler dirilmiş, korkunç bir sessizlik içinde bana doğru yürüyorlar. Gözleri hiçbir şeyi ve her şeyi aynı anda görüyor gibi. Konuşmaya, bağırmaya çalışıyorum, ancak sesim çıkmıyor. Aniden, ölülerden biri başını çeviriyor ve cansız bakışlarını üzerime dikiyor.\n\nSoğuk terler içinde uyanıyorum, yürüyen ölülerin görüntüsü zihnimde çığlıklar atıyor."
+ agot_laughing_storm_rebellion.0460.a: "Ölüler neden yürüyor?"
+ agot_laughing_storm_rebellion.0460.a.tt: "...ve ne istiyorlar?"
+  
+  #Aemon: Dragon with three heads 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0461.t: "Ejderhanın Düşü"
+ agot_laughing_storm_rebellion.0461.desc: "Sessizce Üstat Aemon'un odasına giriyorum, küçük bir soru sormak niyetindeyim.  Ancak daha konuşamadan,  uykusunda kıpırdandığını, kaşlarını çattığını görüyorum. Gözleri birden açılıyor ve bir an için rüya ile uyanıklık arasında sıkışıp kalmış gibi görünüyor. Doğruluyor, gözlerini kırpıştırıyor; sanki gördüğü düşün izleri hala zihnindeymiş gibi.\n\n#italic “Ejderhanın üç başı vardır,”#! diye fısıldıyor, neredeyse kendi kendine konuşur gibi. Sesi titrek ve belirsiz. #italic “Hep böyleydi... hep böyle olacak. Üç baş, tek beden. Onlar olmadan ejderha... ejderha paramparça olur.”#! Gözlerini ovuşturuyor ve bana bakıyor, sanki o an fark etmiş gibi. #italic “Anlıyor musun? Bir baş yetmez. Diğerleri de yükselmeli.”#!\n\nBaşını sallıyor, sanki uykunun etkisinden kurtulmaya çalışır gibi. Ancak sözleri havada asılı kalıyor, derin bir anlam taşıyor. Onu izliyorum,  söylediklerinin bir kehanet mi yoksa sadece bir rüyanın yankısı mı olduğunu anlamaya çalışıyorum. Sözlerinin ağırlığı odanın havasını dolduruyor."
+ agot_laughing_storm_rebellion.0461.a: "Bu düşte ne gördü acaba?"
+  
+  #Aemon: A Targaryen in a distant land 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0462.t: "Uzaklardaki Ejderha"
+ agot_laughing_storm_rebellion.0462.desc: "Gece derinleşirken, kendimi Üstat Aemon'un odasına girerken buluyorum. Uyanık, ancak bakışları uzaklarda, sanki odanın ötesindeki bir şeye odaklanmış gibi. Gözleri benimkilerle buluşuyor, fakat içinde bir belirsizlik seziyorum; sanki hala rüya ile gerçeklik arasında sıkışıp kalmış gibi.\n\n#italic “Uzak bir diyarda bir Targaryen var...”#! diye fısıldıyor, sesi gizemle dolu. #italic “Nerede olduğunu bilmiyorum, ama... kanımızdan biri, çok uzaklarda, kaybolmuş ve amaçsızca dolaşıyor.”#! Ellerinin hafifçe titrediğini görüyorum, alnına bastırarak gördüğü görüntüyü anlamaya çalışıyor. #italic “Tam olarak anlayamıyorum... ama bu kişinin önemli olduğunu biliyorum. Bir şekilde bizimle bağlantılı.”#!\n\nSesi giderek alçalıyor, boşluğa bakıyor; sanki hala vizyonunun etkisindeymiş gibi. Sözleri havada asılı kalıyor, zihnimde bu uzak, bilinmeyen Targaryen hakkında sayısız soru uyandırıyor."
+ agot_laughing_storm_rebellion.0462.a: "Benden mi bahsediyor?"
+  
+  #Ranging: A Child 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0463.t: "Çocuk"
+ agot_laughing_storm_rebellion.0463.desc: "Küçük bir keşif gezisinden döndüm, ancak yolculuktan aklımda kalan bir şey var, sanki silinmeyen bir gölge gibi zihnime takılmış durumda. Orada, vahşi doğada, karın ve ıssızlığın ortasında bir şey gördüğümü sandım... ya da birini.\n\nAğaçların arasında hızla hareket eden küçük bir çocuk. Bir an için teni garip göründü... ormanın kendisi gibi yeşilimsi. Bu sadece kısa bir anlıktı ve tekrar baktığımda çoktan kaybolmuştu. Gruptaki diğer hiç kimse bir şey görmemişti. Sordum, ancak verdikleri bakışlar gözlerimin bana oyun oynadığını düşündürdü.\n\nBu sadece bir ışık oyunu muydu, yoksa daha fazlası mı? O yeşil tenli çocuğun görüntüsü beni hala rahatsız ediyor. Gerçekten ne gördüğümden veya bunun ne anlama geldiğinden emin değilim, ama bunun gerçek olduğuna dair içimde bir his var."
+ agot_laughing_storm_rebellion.0463.a: "Zihnim bana oyun mu oynuyor?"
+  
+  #Ranging: The Children 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0464.t: "Ormanın Çocukları"
+ agot_laughing_storm_rebellion.0464.desc: "Keşif sırasında,  grubumdan ayrılarak doğanın sessiz cazibesine kapıldım. Ve o anda onları gördüm: Ağaçların arasında duran üç çocuk. Tenleri tuhaf, yeşilimsi bir renkteydi; sanki ormanın bir parçasıymış gibi doğayla bütünleşmişlerdi. Konuşmadılar, fakat gözleri beni sessizce dünyalarına davet ediyordu. Bir adım attım, içimde karşı konulmaz bir çekim hissettim, ancak sonra görevimi hatırladım.\n\nHızla geri dönüp grubumu topladım, gördüklerimi onlara göstermek için yanıp tutuşuyordum.  Ancak geri döndüğümüzde, çocuklar gitmişti. Sanki hiç var olmamış gibi yok olmuşlardı. Diğerleri bana şüpheyle baktı ve ben de gördüklerimi hayal edip etmediğimi sorgulamaya başladım.  Ama onların varlığını hala hissedebiliyordum; sanki gölgelerin arasından beni izliyorlardı."
+ agot_laughing_storm_rebellion.0464.a: "Orman benimle oyun mu oynuyor?"
+  
+  #Bloodraven: Brothers 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0465.t: "Kardeşler"
+ agot_laughing_storm_rebellion.0465.desc: "Kuzeyin buz gibi rüzgarı Kara Kale'nin surlarını dövüyor, omuzlarımdaki ağır görevin sert bir hatırlatıcısı. Sur'un üzerinden ufka bakarken, düşüncelerim istemsizce geçmişin derinliklerine sürükleniyor, ruhuma kazınmış izler gibi aklımdan çıkmayan yüzlere. İki kardeş, hatıralarımda en keskin şekilde beliriyor: Biri soylu ve gururlu, bir zamanlar sevdiğim ancak hırsın pençesine düşmüş; diğeri ise intikam ve kinle gölgelenmiş, düşmanlığı ayaklarımın altındaki buz kadar soğuk.\n\nBu düşünceler beni kemiriyor, yıllar geçse de durmaksızın geri dönüyor. Kan bağının ve ihanetin şekillendirdiği bir adamım artık; dünyanın ucunda nöbet tutan yalnız bir figür. Bu görev bana ne huzur sunuyor ne de geçmişin hayaletlerinden kaçış. Belki de burası, sonsuz karlar ve kadim ağaçlar arasında, huzuru bulmam gereken yer... Ya da belki de, geçmişin hayaletlerini sonsuza dek yanımda taşıyacağım yer."
+ agot_laughing_storm_rebellion.0465.a: "Geçmiş, asla gerçekten geride kalmaz."
+  
+  #Red Dream: A Girl in the Flames 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0466.t: "Alevlerden Doğuş"
+ agot_laughing_storm_rebellion.0466.desc: "Uyku beni bir kez daha bir görüntüye hapsediyor, güneş kadar parlak yanan bir sahneye. Bir figür önümde duruyor, alevlerle çevrili, bedeni kavurucu sıcaklıkta bükülüyor. Ateş onu yutarken, sıcaklık dayanılmaz hale geliyor ve alevler yükseliyor, figürü tamamen içine alıyor.\n\nOna ulaşmaya çalışıyorum, ancak alevler beni geri püskürtüyor. Tam alevlerin içinde yok olurken, yukarı bakıyorum ve gece gökyüzünün bile yandığını görüyorum. Sanki yıldızlar tutuşmuş, gökler alev alev. Altımdaki toprak titriyor ve alevlerin kalbinde bir gölge kıpırdanıyor. Devasa ve korkunç bir ejderha ateşten doğuyor, pulları erimiş altın gibi parlıyor. Gözleri benimkilerle buluşuyor ve varlığını tüm benliğimde hissediyorum; kadim ve kudretli.\n\nSoğuk terler içinde uyanıyorum, ejderhanın ve figürün görüntüsü zihnime kazınmış; kaderleri gökyüzündeki alevlerle sonsuza dek birbirine bağlanmış."
+ agot_laughing_storm_rebellion.0466.a: "Ejderha uyandı... peki ya bedeli ne?"
+  
+  #Red Dream: Wildfire 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0467.t: "Alevler İçindeki Taht"
+ agot_laughing_storm_rebellion.0467.desc: "Uyku beni yuttuğunda, ateş ve yıkımla dolu bir görüntüye sürükleniyorum. Devasa bir şehir önümde uzanıyor, ancak bir şeyler fena halde ters gitmiş. Onu yiyip bitiren alevler sıradan değil; tuhaf, doğaüstü bir yeşille parlıyor, etrafındaki havayı bile büküyor. Vahşi Ateş.\n\nBinalar çatırdıyor ve erirken, yeşil alevler onları yalayıp yutuyor, taşları ve ahşabı grotesk şekillere dönüştürüyor. Bu ateş canlı gibi, açgözlü; sadece şehrin yapılarını değil, altındaki toprağı da tüketiyor.\n\nYanmış taş ve kül kokusu havayı doldururken, şehrin kalbinin yok oluşunu çaresizce izliyorum. Aniden uyanıyorum; yanan şehrin görüntüsü zihnime kazınmış, yeşil vahşi ateş hala düşüncelerimde dans ediyor."
+ agot_laughing_storm_rebellion.0467.a: "Bu, Aerion'un çarpık bir hatırası mı?"
+ agot_laughing_storm_rebellion.0467.a.tt: "...yoksa daha büyük bir kötülüğün habercisi mi?"
+  
+  #Bloodraven: Whispers of the Dragon 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0468.t: "Ejderhanın Fısıltıları"
+ agot_laughing_storm_rebellion.0468.desc: "Sur'un tepesinde duruyor, önümde sonsuza uzanan buzlu topraklara bakıyorum. Rüzgar, uzun zaman önce söylenmiş sözlerin yankısı gibi, buz gibi havada fısıldıyor. Soğuk tenimi yakıyor, ancak geçmişin ağırlığı daha derinden üşütüyor. Zihnim eski efsanelere kayıyor; geleceği gören Targaryenler, kaderin gölgesinde yankılanan rüyalar...\n\nFetih'ten çok önce, ejderhaların zamanın ötesini görebildiği, rüyalarının hem bir lütuf hem de bir lanet olduğu söylenirdi. Ateşin, kanın ve yıkımın kehanetleri titreyen alevler içinde belirirdi; ancak bu görüntüler ağır bir bedelle gelir, rüya görenleri deliliğe ya da umutsuzluğa sürüklerdi.\n\nUzaklara bakarken, karla kaplı dünya dalgalanıyor gibi görünüyor. Bu rüyaların ağırlığını omuzlarımda hissediyorum. Ben de bu mirası mı paylaşıyorum? Geleceğin gölgeleri bana mı sesleniyor, korkunç bir bedelle gelecek olanları mı gösteriyor? Sur sessiz kalıyor; yalnızca soğuk ve sessizlik sunuyor."
+ agot_laughing_storm_rebellion.0468.a: "Bu rüyalar bir lütuf mu?"
+ agot_laughing_storm_rebellion.0468.a.tt: "...yoksa açığa çıkmayı bekleyen bir lanet mi?"
+  
+  #Bloodraven: The Cold Dark Night 
+  ### POV: Bloodraven 
+  ### Vision/Dream/Flashback event. 
+ agot_laughing_storm_rebellion.0469.t: "Soğuk ve Karanlık Gece"
+ agot_laughing_storm_rebellion.0469.desc: "Dışarıda,  soğuk rüzgar uluyarak Kuzey'in bitmek bilmeyen kışını taşıyor. Odamın içinde, tek bir mumun titrek alevi taş duvarlara ürkütücü gölgeler düşürüyor. Siyah pelerinimle sessizce oturuyorum, Gece Nöbeti'nin bir üyesi olarak. İşte böyle gecelerde, eski ihanetlerin hatıraları zihnime musallat oluyor.\n\nGözlerim odanın uzak köşesindeki kuzguna kayıyor; sessizce beni izliyor. Kendi kendime mırıldanıyorum, uzun zaman önce edilmiş bir konuşmayı hatırlayarak: #italic "Hain korkaklık gösterdi diye, ihanet daha az iğrenç olmaz."#! Butterwell bu dersi canıyla ödemişti ve şimdi bu kardeşler de gölgemde dikkatli adımlar atmak zorundalar.\n\nGece derinleşiyor, soğuk Kara Kale'nin duvarlarına baskı yapıyor. Dışarıda, karanlıkta, sırlar uyanıyor olabilir; ancak şimdilik her şey sessiz.  Ben ise nöbetteyim, bekleyişim hiç bitmeyecek."
+ agot_laughing_storm_rebellion.0469.a: "Gece uzun ve karanlık, ama ben direneceğim."
+ agot_laughing_storm_rebellion.0469.a.tt: "Ateş hafifçe çatırdıyor, Kuzey'in acımasız soğuğuna karşı zayıf bir sıcaklık sunarak."
+ agot_laughing_storm_rebellion.0469.b: "İhanet iz bırakır, ancak dikkatim benim zırhımdır."
+ agot_laughing_storm_rebellion.0469.b.tt: "Kuzgunun gözü mum ışığında parlıyor, hiçbir sırrın benden gizlenemeyeceğini hatırlatır gibi."
+ agot_laughing_storm_rebellion.0469.c: "Soğuk ısırabilir, ama nöbetim devam ediyor."
+ agot_laughing_storm_rebellion.0469.c.tt: "Dışarıda rüzgar gece boyunca uluyor. İçeride, sessizlik içinde oturuyorum, daima tetikteyim."
